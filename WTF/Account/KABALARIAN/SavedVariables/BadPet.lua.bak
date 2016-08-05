@@ -1,0 +1,10 @@
+
+BadPetDB = {
+	["profileKeys"] = {
+		["Tonzill - Dalaran"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}

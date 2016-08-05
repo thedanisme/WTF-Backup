@@ -1,0 +1,62 @@
+VER 3 0100000000000104 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod] Hammer of the Righteous; [nomod] Crusader Strike
+END
+VER 3 01000000000001CC " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,help] Cleanse; [help] Cleanse; CLeanse
+END
+VER 3 0100000000000103 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use [@mouseover,help]Hand of Freedom;[help]Hand of Freedom;Hand of Freedom
+END
+VER 3 010000000000005C " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use [@player] Word of Glory
+END
+VER 3 01000000000006AC " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use [@mouseover,help][@target,help][@player][]Lay on Hands
+END
+VER 3 01000000000006DB " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use [@mouseover,help]Hand of Sacrifice;[help]Hand of Sacrifice;Hand of Sacrifice
+END
+VER 3 01000000000006DD " " "INV_MISC_QUESTIONMARK"
+#showtooltip Divine Shield
+/cancelaura Hand of Protection
+/cast Divine Shield
+/cancelaura Divine Shield
+END
+VER 3 01000000000006E3 " " "INV_Misc_QuestionMark"
+#showtooltip
+/use [@mouseover,help]Divine Light;[help]Divine Light;Divine Light
+END
+VER 3 01000000000006E4 " " "INV_Misc_QuestionMark"
+#showtooltip
+/use [@mouseover,help]Holy Light;[help]Holy Light;Holy Light
+END
+VER 3 01000000000006E5 " " "INV_Misc_QuestionMark"
+#showtooltip
+/use [@mouseover,help]Holy Shock;[help]Holy Shock;Holy Shock
+END
+VER 3 01000000000006E6 " " "INV_Misc_QuestionMark"
+#showtooltip
+/use [@mouseover,help]Holy Radiance;[help]Holy Radiance;Holy Radiance
+END
+VER 3 01000000000006E7 " " "INV_Misc_QuestionMark"
+#showtooltip
+/use [@mouseover,help]Flash of Light;[help]Flash of Light;Flash of Light
+END
+VER 3 01000000000006F6 " " "INV_Misc_QuestionMark"
+#showtooltip
+/use [@mouseover,help]Hand of Protection;[help]Hand of Protection;Hand of Protection
+END
+VER 3 01000000000006F7 " " "INV_Misc_QuestionMark"
+#showtooltip
+/use [@mouseover,help]Hand of Salvation;[help]Hand of Salvation;Hand of Salvation
+END
+VER 3 01000000000006F8 " " "INV_Misc_QuestionMark"
+#showtooltip
+/use [@mouseover,harm][]Reckoning
+END

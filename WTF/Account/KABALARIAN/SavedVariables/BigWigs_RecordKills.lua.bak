@@ -1,0 +1,11 @@
+
+RKDatabase = {
+	["profileKeys"] = {
+		["Tonzill - Dalaran"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["firstLoad"] = false,
+		},
+	},
+}

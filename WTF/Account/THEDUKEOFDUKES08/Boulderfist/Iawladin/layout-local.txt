@@ -1,0 +1,8 @@
+Version: 1
+Frame: DragFrame2
+FrameLevel: 1
+Anchor: RIGHT
+X: -218
+Y: 152
+W: 256
+H: 150

@@ -1,0 +1,4 @@
+VER 3 0100000000000001 "ZGVMacro2" "0"
+/target Junter Weiss
+/run ZGV:MRM()
+END

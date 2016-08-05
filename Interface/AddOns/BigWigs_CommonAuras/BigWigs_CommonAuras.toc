@@ -1,0 +1,39 @@
+## Interface: 70000
+
+## Title: Big Wigs |cffff0000+|r|cffffffffCommon Auras|r
+## Title-deDE: Big Wigs |cffff0000+|r|cffffffffHäufige Auren|r
+## Title-esES: Big Wigs |cffff0000+|r|cffffffffAuras Comunes|r
+## Title-esMX: Big Wigs |cffff0000+|r|cffffffffAuras Comunes|r
+## Title-frFR: Big Wigs |cffff0000+|r|cffffffffAuras Habituelles|r
+## Title-itIT: Big Wigs |cffff0000+|r|cffffffffAuree Comuni|r
+## Title-koKR: Big Wigs |cffff0000+|r|cffffffff공통 버프|r
+## Title-ptBR: Big Wigs |cffff0000+|r|cffffffffAuras Comunes|r
+## Title-ruRU: Big Wigs |cffff0000+|r|cffffffffОсновные ауры|r
+## Title-zhCN: Big Wigs |cffff0000+|r|cffffffff普通光环|r
+## Title-zhTW: Big Wigs |cffff0000+|r|cffffffff共同光環|r
+
+## Notes: Notifies you about common raid cooldowns.
+## Notes-deDE: Benachrichtigt dich über häufige Schlachtzugsabklingzeiten.
+## Notes-esES: Notifies you about common raid cooldowns.
+## Notes-esMX: Notifies you about common raid cooldowns.
+## Notes-frFR: Prévient le raid lors de l'utilisation de certains buffs & débuffs habituels.
+## Notes-itIT: Avvisa l'incursione di certi benefici e malefici comuni.
+## Notes-koKR: Notifies you about common raid cooldowns.
+## Notes-ptBR: Notifies you about common raid cooldowns.
+## Notes-ruRU: Предупреждает рейд об основных положительных и отрицательных эффектах.
+## Notes-zhCN: 显示团队通用的增益效果与负面影响。
+## Notes-zhTW: Notifies you about common raid cooldowns.
+
+## Author: Funkydude, Nebula169
+## Version: v7.0.0
+## X-Category: Raid
+## X-Curse-Project-ID: big-wigs_common-auras
+## X-WoWI-ID: 23611
+## Dependencies: BigWigs
+
+## LoadOnDemand: 1
+
+## X-BigWigs-LoadOn-CoreEnabled: 1
+
+Locales.lua
+CommonAuras.lua

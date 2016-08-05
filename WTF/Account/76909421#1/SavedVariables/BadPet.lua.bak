@@ -1,0 +1,10 @@
+
+BadPetDB = {
+	["profileKeys"] = {
+		["Aranduh - Bloodhoof"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}

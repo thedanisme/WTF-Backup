@@ -1,0 +1,37 @@
+
+HNFieldPhotographerDB = {
+	["profileKeys"] = {
+		["Callil - Turalyon"] = "Default",
+		["Knutts - Turalyon"] = "Default",
+		["Pryahprism - Turalyon"] = "Default",
+		["Shaneequa - Turalyon"] = "Default",
+		["Callil - Sargeras"] = "Default",
+		["Aranduh - Bloodhoof"] = "Default",
+		["Squelben - Stormrage"] = "Default",
+		["Titte - Turalyon"] = "Default",
+		["Iphone - Bloodhoof"] = "Default",
+		["Arando - Bloodhoof"] = "Default",
+		["Ranidan - Stormreaver"] = "Default",
+		["Llamama - Stormrage"] = "Default",
+		["Emmarosa - Stormrage"] = "Default",
+		["Brobies - Stormrage"] = "Default",
+		["Titt - Turalyon"] = "Default",
+		["Pastaliar - Stormrage"] = "Default",
+		["Skratch - Turalyon"] = "Default",
+		["Whyfy - Stormrage"] = "Default",
+		["Bruhbies - Stormrage"] = "Default",
+		["Lackteight - Turalyon"] = "Default",
+		["Yanlery - Stormrage"] = "Default",
+		["Brewbies - Turalyon"] = "Default",
+		["Danoh - Stormrage"] = "Default",
+		["Rosabria - Sargeras"] = "Default",
+		["Dalgrens - Bloodhoof"] = "Default",
+		["Beer - Bloodhoof"] = "Default",
+		["Horny - Bloodhoof"] = "Default",
+		["Priaprisum - Stormreaver"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}

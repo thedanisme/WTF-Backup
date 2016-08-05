@@ -1,0 +1,22 @@
+
+SkadaDB = {
+	["namespaces"] = {
+		["LibDualSpec-1.0"] = {
+		},
+	},
+	["hasUpgraded"] = true,
+	["profileKeys"] = {
+		["Knutts - Turalyon"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["windows"] = {
+				{
+					["y"] = 108.999893188477,
+					["point"] = "BOTTOMRIGHT",
+					["x"] = -70.000244140625,
+				}, -- [1]
+			},
+		},
+	},
+}

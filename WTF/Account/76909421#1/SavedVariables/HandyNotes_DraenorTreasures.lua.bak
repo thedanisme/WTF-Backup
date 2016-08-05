@@ -1,0 +1,10 @@
+
+DraenorTreasuresDB = {
+	["profileKeys"] = {
+		["Callil - Turalyon"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}

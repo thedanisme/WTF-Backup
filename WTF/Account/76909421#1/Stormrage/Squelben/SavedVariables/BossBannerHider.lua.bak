@@ -1,0 +1,2 @@
+
+HideBossBanner = "loot"

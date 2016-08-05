@@ -1,0 +1,4 @@
+VER 3 0100000000000003 "ZGVMacro1" "0"
+/target Warsong Recruitment Officer
+/run ZGV:MRM():CG(1,1)
+END

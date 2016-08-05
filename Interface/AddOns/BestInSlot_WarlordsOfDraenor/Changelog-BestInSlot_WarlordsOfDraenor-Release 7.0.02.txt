@@ -1,0 +1,38 @@
+------------------------------------------------------------------------
+r6 | sander3991 | 2016-08-03 17:35:03 +0000 (Wed, 03 Aug 2016) | 1 line
+Changed paths:
+   A /tags/Release 7.0.02 (from /trunk:5)
+
+Tagging as Release 7.0.02
+------------------------------------------------------------------------
+r4 | sander3991 | 2016-08-03 17:27:23 +0000 (Wed, 03 Aug 2016) | 1 line
+Changed paths:
+   M /trunk/.pkgmeta
+
+fix pkgmeta
+------------------------------------------------------------------------
+r2 | sander3991 | 2016-08-03 17:26:00 +0000 (Wed, 03 Aug 2016) | 1 line
+Changed paths:
+   A /trunk/.pkgmeta
+   A /trunk/BestInSlot_WarlordsOfDraenor.toc
+   A /trunk/WarlordsOfDraenor
+   A /trunk/WarlordsOfDraenor/BestInSlot_WarlordsOfDraenor.toc
+   A /trunk/WarlordsOfDraenor/BlackrockFoundry.lua
+   A /trunk/WarlordsOfDraenor/HellfireCitadel.lua
+   A /trunk/WarlordsOfDraenor/Highmaul.lua
+   A /trunk/WarlordsOfDraenorLFR
+   A /trunk/WarlordsOfDraenorLFR/BestInSlot_WarlordsOfDraenorLFR.toc
+   A /trunk/WarlordsOfDraenorLFR/BlackrockFoundryLFR.lua
+   A /trunk/WarlordsOfDraenorLFR/HellfireCitadelLFR.lua
+   A /trunk/WarlordsOfDraenorLFR/HighmaulLFR.lua
+
+- Warlords of Draenor module
+------------------------------------------------------------------------
+r1 | svn | 2014-07-09 14:57:24 +0000 (Wed, 09 Jul 2014) | 1 line
+Changed paths:
+   A /branches
+   A /tags
+   A /trunk
+
+bestinslot-warlords-draenor/mainline: Initial Import
+------------------------------------------------------------------------

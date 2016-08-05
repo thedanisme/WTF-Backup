@@ -1,0 +1,18 @@
+## Interface: 70000
+## Title: Best In Slot
+## Notes: Keep track of your, your raid member, and your guilds Best in Slot list!
+## Author: Beliria @ Moonglade-EU
+## Version: Release 7.0.11
+## SavedVariables: BestInSlotDB
+## X-Curse-Packaged-Version: Release 7.0.11
+## X-Curse-Project-Name: BestInSlot
+## X-Curse-Project-ID: bestinslot
+## X-Curse-Repository-ID: wow/bestinslot/mainline
+
+Libs\Libs.xml
+Locales\Locales.xml
+Include.xml
+Frames\Include.xml
+Modules\Include.xml
+
+

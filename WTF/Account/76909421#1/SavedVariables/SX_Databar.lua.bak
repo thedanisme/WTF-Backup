@@ -1,0 +1,17 @@
+
+TEST_CONFIG = {
+	["money_related_stuff"] = {
+		["Stormrage"] = {
+			["Alliance"] = {
+				["Llamama"] = {
+					["money_on_first_login_today"] = 105039436,
+					["CLASS"] = "HUNTER",
+					["money_on_log_out"] = 105039796,
+					["money_on_session_start"] = 105039436,
+					["lastLoginDate"] = 20160326,
+					["money_on_first_weekday"] = 105039436,
+				},
+			},
+		},
+	},
+}

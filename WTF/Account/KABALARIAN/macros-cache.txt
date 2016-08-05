@@ -1,0 +1,23 @@
+VER 3 0000000000000005 "Dense Stones" "Ability_Druid_Starfall"
+/run f=string.find;for b=0,4 do for s=1,32 do n=GetContainerItemLink(b,s);if n and(f(n,"12365")) then PickupContainerItem(b,s);DeleteCursorItem();end;end;end
+END
+VER 3 0000000000000002 "Frogs" "Spell_DeathKnight_Explode_Ghoul"
+/cleartarget
+/target Lake Frog
+/use Warts-B-Gone Lip Balm
+/kiss
+END
+VER 3 0000000000000004 "Inf Balls" "Ability_Hunter_FocusedAim"
+/script f=CreateFrame("FRAME");t=time();f:SetScript("OnUpdate",function() if t+1<time() then t=time() PeggleWindow.ballTracker.nextValue=1 end end)
+END
+VER 3 0000000000000007 "INFO" "INV_ENCHANT_SHARDGLIMMERINGLARGE"
+/p Please don't DPS before the first stop, unless you are the tank.
+/p Case-sensitive macro to leave the instance almost instantly:
+/p ./script LeaveParty()
+END
+VER 3 0000000000000006 "party" "Ability_Hunter_MasterTactitian"
+/script LeaveParty()
+END
+VER 3 0000000000000003 "SUPER DOOPER" "Ability_DualWieldSpecialization"
+/run local b,d,p,r,a=GetBlockChance(),GetDodgeChance(),GetParryChance(),GetCombatRating(CR_DEFENSE_SKILL) a=1/(.0625+.956/(r/122.9625)) ChatFrame1:AddMessage(format("Unhittable: %.2f%%  Avoidance: %.2f%%  Defense %+.0f rating",b+d+p+5+a,d+p+5+a,r-689))
+END

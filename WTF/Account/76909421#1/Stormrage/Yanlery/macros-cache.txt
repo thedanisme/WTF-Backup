@@ -1,0 +1,21 @@
+VER 3 0100000000000001 " " "SPELL_NATURE_REINCARNATION"
+#showtooltip
+/use [@mouseover,harm][]Taunt
+END
+VER 3 0100000000000002 " " "ABILITY_WARRIOR_VIGILANCE"
+#showtooltip
+/use [@mouseover,help,exists][@focus,help,exists][]Vigilance
+END
+VER 3 0100000000000003 " " "ABILITY_WARRIOR_VICTORYRUSH"
+#showtooltip
+/use [@mouseover,exists][]Intercept
+END
+VER 3 0100000000000004 "DPS CDs" "ABILITY_VEHICLE_DEMOLISHERFLAMECATAPULT"
+#showtooltip
+/use Blood Fury
+/use Bloodbath
+/use Avatar
+/use Recklessness
+/use 13
+/use 14
+END

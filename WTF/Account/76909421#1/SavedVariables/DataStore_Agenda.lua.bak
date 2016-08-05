@@ -1,0 +1,58 @@
+
+DataStore_AgendaDB = {
+	["profileKeys"] = {
+		["Danoh - Stormrage"] = "Danoh - Stormrage",
+	},
+	["global"] = {
+		["Options"] = {
+			["WeeklyResetHour"] = 6,
+			["WeeklyResetDay"] = 2,
+			["NextWeeklyReset"] = "2016-04-19",
+		},
+		["Characters"] = {
+			["Default.Stormrage.Danoh"] = {
+				["LFGDungeons"] = {
+					["846.Count"] = 3,
+					["985.Count"] = 3,
+					["984.Socrethar the Eternal"] = true,
+					["847.Gruul"] = true,
+					["986.Count"] = 1,
+					["986.Archimonde"] = true,
+					["984.Shadow-Lord Iskar"] = true,
+					["846.Kromog, Legend of the Mountain"] = true,
+					["847.Blast Furnace"] = true,
+					["846.Hans'gar & Franzok"] = true,
+					["848.Beastlord Darmac"] = true,
+					["848.Operator Thogar"] = true,
+					["982.Count"] = 1,
+					["983.Gorefiend"] = true,
+					["984.Tyrant Velhari"] = true,
+					["985.Mannoroth"] = true,
+					["985.Fel Lord Zakuun"] = true,
+					["983.Count"] = 3,
+					["846.Flamebender Ka'graz"] = true,
+					["823.Blackhand"] = true,
+					["848.Count"] = 3,
+					["985.Xhul'horac"] = true,
+					["984.Count"] = 3,
+					["847.Count"] = 3,
+					["823.Count"] = 1,
+					["847.Oregorger the Devourer"] = true,
+					["982.Kormrok"] = true,
+					["848.The Iron Maidens"] = true,
+					["983.Hellfire High Council"] = true,
+					["983.Kilrogg Deadeye"] = true,
+				},
+				["lastUpdate"] = 1460976831,
+				["DungeonIDs"] = {
+					["The Everbloom Mythic|221373078"] = "104744|1460976853|0|0",
+					["The Sunwell 25 Player|618687281"] = "104744|1460976853|0|1",
+					["Auchindoun Mythic|619065243"] = "104744|1460976853|0|0",
+					["Hellfire Citadel Heroic|618773805"] = "104744|1460976853|0|1",
+					["Bloodmaul Slag Mines Mythic|167680892"] = "104744|1460976853|0|0",
+					["Hellfire Citadel Normal|618778566"] = "104744|1460976853|0|1",
+				},
+			},
+		},
+	},
+}

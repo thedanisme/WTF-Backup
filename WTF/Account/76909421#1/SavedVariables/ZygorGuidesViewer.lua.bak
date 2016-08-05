@@ -1,0 +1,732 @@
+
+ZygorGuidesViewerSettings = {
+	["char"] = {
+		["Barewbies - Stormrage"] = {
+			["stephistory"] = {
+				1, -- [1]
+				2, -- [2]
+				3, -- [3]
+				4, -- [4]
+				5, -- [5]
+				6, -- [6]
+				7, -- [7]
+				8, -- [8]
+				9, -- [9]
+				10, -- [10]
+				11, -- [11]
+				12, -- [12]
+				13, -- [13]
+				14, -- [14]
+				20, -- [15]
+				21, -- [16]
+				22, -- [17]
+				23, -- [18]
+				24, -- [19]
+				25, -- [20]
+				26, -- [21]
+				27, -- [22]
+				28, -- [23]
+				29, -- [24]
+				30, -- [25]
+				31, -- [26]
+			},
+			["guides_history_ZGV4clear"] = true,
+			["initialFlightPathsLoaded"] = true,
+			["guidename"] = "LEVELING\\Eastern Kingdoms 1-60\\Dun Morogh (1-10)\\Gnome (1-5)",
+			["debuglog"] = {
+				"18:54:19.498.502> [LibRover] - IsDestinationImpossible? false,SAME_MAP,same map (LibRover-1.0.lua:1420:FindPath)", -- [1]
+				"18:54:19.498.502> [LibRover] <- FindPath (LibRover-1.0.lua:1489:FindPath)", -- [2]
+				"18:54:20.511.513> [LibRover] -> InitializePath (LibRover-1.0.lua:1501:InitializePath)", -- [3]
+				"18:54:20.511.514> [LibRover] [LRadv] - InitializePath: cleared old nodes, 2240 left (LibRover-1.0.lua:1517:InitializePath)", -- [4]
+				"18:54:20.511.516> [LibRover] [LRadv] - InitializePath: cleared linkage (LibRover-1.0.lua:1524:InitializePath)", -- [5]
+				"18:54:20.511.521> [LibRover] [LRadv] - Initialized end node #2241 with copy #2242 table: 000000013AE56FB0 (LibRover-1.0.lua:1542:InitializePath)", -- [6]
+				"18:54:20.511.521> [LibRover] - |cffff8844 No idea where player's hearthstone is bound to: |cffff8800Gnomeregan (LibRover-1.0.lua:1240:FindBindLocation)", -- [7]
+				"18:54:20.511.525> [LibRover] [LRadv] - Initialized start node #2243 (LibRover-1.0.lua:1583:InitializePath)", -- [8]
+				"18:54:20.511.530> [LibRover] [LRadv] - InitializePath: cleared temp fields (LibRover-1.0.lua:1624:InitializePath)", -- [9]
+				"18:54:20.511.530> [LibRover] [LRadv] - NodeSetHeap clear (NodeSetHeap.lua:134:Clear)", -- [10]
+				"18:54:20.511.530> [LibRover] <- InitializePath: done (LibRover-1.0.lua:1658:InitializePath)", -- [11]
+				"18:54:20.538.542> [LibRover] StepForever: initialized, proceeding (LibRover-1.0.lua:1751:<local>)", -- [12]
+				"18:54:20.538.543> [LibRover] This pass: [SUCCESS] = |cffffffff1.28|cffff88ddms. Done |cffffff882|cffff88dd calculations over |cff88ffff2|cffff88dd frames:\n compared |cff88ff883|cffff88dd nodes in |cffffffff0.01|cffff88dd ms, opened |cff88ff885|cffff88dd, closed |cff88ff882|cffff88dd \n cheapest |cffffffff0.01|cffff88dd, initial |cffffffff0.01|cffff88dd, overhead |cffffffff0.03|cffff88dd, blah |cffffffff0.01|cffff88dd, scoring |cffffffff0.08|cffff88dd, adding |cffffffff0.04|cffff88dd ms    \n calc total |cffffffff18.68|cffff88dd ms, total time |cffffffff18.70|cffff88dd ms   \n(found: YES) (LibRover-1.0.lua:2919:OnUpdate)", -- [13]
+				"18:54:20.538.543> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddNew Tinkertown 38,42|cffff88dd  (dist 0) |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2751:ReportPath)", -- [14]
+				"18:54:20.538.543> [LibRover] 1. |cff88ff88Clean 5 Toxic Pools|cffff88dd -- |cff88ccddDealing with the Fallout|cffff88dd  (dist 108) |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2751:ReportPath)", -- [15]
+				"18:54:20.538.543> [pointer] -> PathFoundHandler! state=success (Pointer.lua:3929:PathFoundHandler)", -- [16]
+				"18:54:20.538.544> [pointer] - ClearSet route + ants [0.08 ms] (Pointer.lua:3862:ClearSet)", -- [17]
+				"18:54:20.538.544> [pointer] - set_waypoints: 2 points, type=route (Pointer.lua:3643:<local>)", -- [18]
+				"18:54:20.538.545> [pointer] - set_waypoints: arrowpoint=New Tinkertown #895 /0 37.1,50.6, farmpoint=New Tinkertown #895 /0 37.1,50.6 (Pointer.lua:3711:<local>)", -- [19]
+				"18:54:20.538.545> [pointer] - ShowSet route ends [1.74 ms] + ants [0.05 ms] (Pointer.lua:3917:ShowSet)", -- [20]
+				"18:54:20.538.546> [pointer] <- PathFoundHandler done. (Pointer.lua:4042:PathFoundHandler)", -- [21]
+				"18:54:31.469.472> [itemscore] [itemevents] PLAYER_REGEN_DISABLED (Item-Events.lua:153:Debug)", -- [22]
+				"18:54:33.420.425> CacheQuestLog cached 3 quests (QuestTracking.lua:212:QuestTracking_CacheQuestLog)", -- [23]
+				"18:54:33.420.426> Animating completion. (ZygorGuidesViewer.lua:2509:UpdateFrame)", -- [24]
+				"18:54:34.234.236> [step_setup] Preparing goals... (Step.lua:146:PrepareCompletion)", -- [25]
+				"18:54:34.234.236> [step_setup] Goals prepared. (Step.lua:150:PrepareCompletion)", -- [26]
+				"18:54:34.234.236> [step_setup] Step 27 prepared. (Step.lua:189:PrepareCompletion)", -- [27]
+				"18:54:34.234.243> [itemscore] [itemevents] PLAYER_REGEN_ENABLED (Item-Events.lua:153:Debug)", -- [28]
+				"18:54:35.660.663> [itemscore] [itemevents] PLAYER_REGEN_DISABLED (Item-Events.lua:153:Debug)", -- [29]
+				"18:54:35.437.440> [step_setup] Preparing goals... (Step.lua:146:PrepareCompletion)", -- [30]
+				"18:54:35.437.440> [step_setup] Goals prepared. (Step.lua:150:PrepareCompletion)", -- [31]
+				"18:54:35.437.440> [step_setup] Step 27 prepared. (Step.lua:189:PrepareCompletion)", -- [32]
+				"18:54:35.437.446> [itemscore] [itemevents] PLAYER_REGEN_ENABLED (Item-Events.lua:153:Debug)", -- [33]
+				"18:54:37.996.997> [itemscore] [itemevents] ITEM_PUSH (Item-Events.lua:153:Debug)", -- [34]
+				"18:54:37.084.107> [itemscore] [itemevents] BAG_UPDATE_DELAYED (Item-Events.lua:153:Debug)", -- [35]
+				"18:54:46.964.974> CacheQuestLog cached 3 quests (QuestTracking.lua:212:QuestTracking_CacheQuestLog)", -- [36]
+				"18:54:46.964.975> Animating progress: Clean 5 Toxic Pools (ZygorGuidesViewer.lua:2502:UpdateFrame)", -- [37]
+				"18:54:52.589.599> CacheQuestLog cached 3 quests (QuestTracking.lua:212:QuestTracking_CacheQuestLog)", -- [38]
+				"18:54:52.589.600> Animating progress: Clean 5 Toxic Pools (ZygorGuidesViewer.lua:2502:UpdateFrame)", -- [39]
+				"18:54:53.075.080> [LibRover] -> |cff00ff88FindPath|cffff88dd:  |cffaaff88New Tinkertown|cffff88dd/0 |cffffffff38.5|cffff88dd,|cffffffff45.2|cffff88dd --> |cffaaff88New Tinkertown|cffff88dd/0 |cffffffff37.1|cffff88dd,|cffffffff50.6|cffff88dd (LibRover-1.0.lua:1415:FindPath)", -- [40]
+				"18:54:53.075.080> [LibRover] - IsDestinationImpossible? false,SAME_MAP,same map (LibRover-1.0.lua:1420:FindPath)", -- [41]
+				"18:54:53.075.080> [LibRover] <- FindPath (LibRover-1.0.lua:1489:FindPath)", -- [42]
+				"18:54:53.087.089> [LibRover] -> InitializePath (LibRover-1.0.lua:1501:InitializePath)", -- [43]
+				"18:54:53.087.090> [LibRover] [LRadv] - InitializePath: cleared old nodes, 2240 left (LibRover-1.0.lua:1517:InitializePath)", -- [44]
+				"18:54:53.087.092> [LibRover] [LRadv] - InitializePath: cleared linkage (LibRover-1.0.lua:1524:InitializePath)", -- [45]
+				"18:54:53.087.096> [LibRover] [LRadv] - Initialized end node #2241 with copy #2242 table: 000000013AF88C50 (LibRover-1.0.lua:1542:InitializePath)", -- [46]
+				"18:54:53.087.096> [LibRover] - |cffff8844 No idea where player's hearthstone is bound to: |cffff8800Gnomeregan (LibRover-1.0.lua:1240:FindBindLocation)", -- [47]
+				"18:54:53.087.099> [LibRover] [LRadv] - Initialized start node #2243 (LibRover-1.0.lua:1583:InitializePath)", -- [48]
+				"18:54:53.087.103> [LibRover] [LRadv] - InitializePath: cleared temp fields (LibRover-1.0.lua:1624:InitializePath)", -- [49]
+				"18:54:53.087.103> [LibRover] [LRadv] - NodeSetHeap clear (NodeSetHeap.lua:134:Clear)", -- [50]
+				"18:54:53.087.103> [LibRover] <- InitializePath: done (LibRover-1.0.lua:1658:InitializePath)", -- [51]
+				"18:54:53.087.104> [LibRover] StepForever: initialized, proceeding (LibRover-1.0.lua:1751:<local>)", -- [52]
+				"18:54:53.111.114> [LibRover] This pass: [SUCCESS] = |cffffffff0.02|cffff88ddms. Done |cffffff882|cffff88dd calculations over |cff88ffff2|cffff88dd frames:\n compared |cff88ff883|cffff88dd nodes in |cffffffff0.01|cffff88dd ms, opened |cff88ff885|cffff88dd, closed |cff88ff882|cffff88dd \n cheapest |cffffffff0.01|cffff88dd, initial |cffffffff0.00|cffff88dd, overhead |cffffffff0.02|cffff88dd, blah |cffffffff0.01|cffff88dd, scoring |cffffffff0.05|cffff88dd, adding |cffffffff0.02|cffff88dd ms    \n calc total |cffffffff15.02|cffff88dd ms, total time |cffffffff15.03|cffff88dd ms   \n(found: YES) (LibRover-1.0.lua:2919:OnUpdate)", -- [53]
+				"18:54:53.111.115> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddNew Tinkertown 38,45|cffff88dd  (dist 0) |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2751:ReportPath)", -- [54]
+				"18:54:53.111.115> [LibRover] 1. |cff88ff88Clean 5 Toxic Pools|cffff88dd -- |cff88ccddDealing with the Fallout|cffff88dd  (dist 71) |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2751:ReportPath)", -- [55]
+				"18:54:53.111.115> [pointer] -> PathFoundHandler! state=success (Pointer.lua:3929:PathFoundHandler)", -- [56]
+				"18:54:53.111.115> [pointer] - ClearSet route + ants [0.09 ms] (Pointer.lua:3862:ClearSet)", -- [57]
+				"18:54:53.111.116> [pointer] - set_waypoints: 2 points, type=route (Pointer.lua:3643:<local>)", -- [58]
+				"18:54:53.111.116> [pointer] - set_waypoints: arrowpoint=New Tinkertown #895 /0 37.1,50.6, farmpoint=New Tinkertown #895 /0 37.1,50.6 (Pointer.lua:3711:<local>)", -- [59]
+				"18:54:53.111.116> [pointer] - ShowSet route ends [1.35 ms] + ants [0.04 ms] (Pointer.lua:3917:ShowSet)", -- [60]
+				"18:54:53.111.117> [pointer] <- PathFoundHandler done. (Pointer.lua:4042:PathFoundHandler)", -- [61]
+				"18:54:58.124.127> [itemscore] [itemevents] PLAYER_REGEN_DISABLED (Item-Events.lua:153:Debug)", -- [62]
+				"18:55:01.521.523> [step_setup] Preparing goals... (Step.lua:146:PrepareCompletion)", -- [63]
+				"18:55:01.521.523> [step_setup] Goals prepared. (Step.lua:150:PrepareCompletion)", -- [64]
+				"18:55:01.521.523> [step_setup] Step 27 prepared. (Step.lua:189:PrepareCompletion)", -- [65]
+				"18:55:01.521.529> [itemscore] [itemevents] PLAYER_REGEN_ENABLED (Item-Events.lua:153:Debug)", -- [66]
+				"18:55:12.128.128> [itemscore] [itemevents] ITEM_PUSH (Item-Events.lua:153:Debug)", -- [67]
+				"18:55:12.295.296> [itemscore] [itemevents] ITEM_PUSH (Item-Events.lua:153:Debug)", -- [68]
+				"18:55:13.532.562> CacheQuestLog cached 3 quests (QuestTracking.lua:212:QuestTracking_CacheQuestLog)", -- [69]
+				"18:55:13.532.563> Animating progress: Get 6 |cffaaeeffRecovered Possessions|cffff88dd (ZygorGuidesViewer.lua:2502:UpdateFrame)", -- [70]
+				"18:55:13.532.569> [itemscore] [itemevents] BAG_UPDATE_DELAYED (Item-Events.lua:153:Debug)", -- [71]
+				"18:55:25.506.511> [LibRover] -> |cff00ff88FindPath|cffff88dd:  |cffaaff88New Tinkertown|cffff88dd/0 |cffffffff38.0|cffff88dd,|cffffffff51.7|cffff88dd --> |cffaaff88New Tinkertown|cffff88dd/0 |cffffffff37.1|cffff88dd,|cffffffff50.6|cffff88dd (LibRover-1.0.lua:1415:FindPath)", -- [72]
+				"18:55:25.506.511> [LibRover] - IsDestinationImpossible? false,SAME_MAP,same map (LibRover-1.0.lua:1420:FindPath)", -- [73]
+				"18:55:25.506.511> [LibRover] <- FindPath (LibRover-1.0.lua:1489:FindPath)", -- [74]
+				"18:55:26.520.522> [LibRover] -> InitializePath (LibRover-1.0.lua:1501:InitializePath)", -- [75]
+				"18:55:26.520.524> [LibRover] [LRadv] - InitializePath: cleared old nodes, 2240 left (LibRover-1.0.lua:1517:InitializePath)", -- [76]
+				"18:55:26.520.525> [LibRover] [LRadv] - InitializePath: cleared linkage (LibRover-1.0.lua:1524:InitializePath)", -- [77]
+				"18:55:26.520.530> [LibRover] [LRadv] - Initialized end node #2241 with copy #2242 table: 000000013B0FFE80 (LibRover-1.0.lua:1542:InitializePath)", -- [78]
+				"18:55:26.520.531> [LibRover] - |cffff8844 No idea where player's hearthstone is bound to: |cffff8800Gnomeregan (LibRover-1.0.lua:1240:FindBindLocation)", -- [79]
+				"18:55:26.520.533> [LibRover] [LRadv] - Initialized start node #2243 (LibRover-1.0.lua:1583:InitializePath)", -- [80]
+				"18:55:26.520.539> [LibRover] [LRadv] - InitializePath: cleared temp fields (LibRover-1.0.lua:1624:InitializePath)", -- [81]
+				"18:55:26.520.539> [LibRover] [LRadv] - NodeSetHeap clear (NodeSetHeap.lua:134:Clear)", -- [82]
+				"18:55:26.520.539> [LibRover] <- InitializePath: done (LibRover-1.0.lua:1658:InitializePath)", -- [83]
+				"18:55:26.548.550> [LibRover] StepForever: initialized, proceeding (LibRover-1.0.lua:1751:<local>)", -- [84]
+				"18:55:26.548.551> [LibRover] This pass: [SUCCESS] = |cffffffff0.96|cffff88ddms. Done |cffffff882|cffff88dd calculations over |cff88ffff2|cffff88dd frames:\n compared |cff88ff883|cffff88dd nodes in |cffffffff0.01|cffff88dd ms, opened |cff88ff885|cffff88dd, closed |cff88ff882|cffff88dd \n cheapest |cffffffff0.01|cffff88dd, initial |cffffffff0.01|cffff88dd, overhead |cffffffff0.02|cffff88dd, blah |cffffffff0.01|cffff88dd, scoring |cffffffff0.06|cffff88dd, adding |cffffffff0.03|cffff88dd ms    \n calc total |cffffffff17.58|cffff88dd ms, total time |cffffffff17.60|cffff88dd ms   \n(found: YES) (LibRover-1.0.lua:2919:OnUpdate)", -- [85]
+				"18:55:26.548.551> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddNew Tinkertown 37,51|cffff88dd  (dist 0) |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2751:ReportPath)", -- [86]
+				"18:55:26.548.551> [LibRover] 1. |cff88ff88Clean 5 Toxic Pools|cffff88dd -- |cff88ccddDealing with the Fallout|cffff88dd  (dist 21) |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2751:ReportPath)", -- [87]
+				"18:55:26.548.551> [pointer] -> PathFoundHandler! state=success (Pointer.lua:3929:PathFoundHandler)", -- [88]
+				"18:55:26.548.551> [pointer] - ClearSet route + ants [0.07 ms] (Pointer.lua:3862:ClearSet)", -- [89]
+				"18:55:26.548.552> [pointer] - set_waypoints: 2 points, type=route (Pointer.lua:3643:<local>)", -- [90]
+				"18:55:26.548.553> [pointer] - set_waypoints: arrowpoint=New Tinkertown #895 /0 37.1,50.6, farmpoint=New Tinkertown #895 /0 37.1,50.6 (Pointer.lua:3711:<local>)", -- [91]
+				"18:55:26.548.553> [pointer] - ShowSet route ends [1.34 ms] + ants [0.04 ms] (Pointer.lua:3917:ShowSet)", -- [92]
+				"18:55:26.548.554> [pointer] <- PathFoundHandler done. (Pointer.lua:4042:PathFoundHandler)", -- [93]
+				"18:55:26.082.086> [itemscore] [itemevents] PLAYER_REGEN_DISABLED (Item-Events.lua:153:Debug)", -- [94]
+				"18:55:28.861.863> [step_setup] Preparing goals... (Step.lua:146:PrepareCompletion)", -- [95]
+				"18:55:28.861.863> [step_setup] Goals prepared. (Step.lua:150:PrepareCompletion)", -- [96]
+				"18:55:28.861.863> [step_setup] Step 27 prepared. (Step.lua:189:PrepareCompletion)", -- [97]
+				"18:55:28.861.871> [itemscore] [itemevents] PLAYER_REGEN_ENABLED (Item-Events.lua:153:Debug)", -- [98]
+				"18:55:30.152.155> [itemscore] [itemevents] PLAYER_REGEN_DISABLED (Item-Events.lua:153:Debug)", -- [99]
+				"18:55:31.101.104> [step_setup] Preparing goals... (Step.lua:146:PrepareCompletion)", -- [100]
+				"18:55:31.101.104> [step_setup] Goals prepared. (Step.lua:150:PrepareCompletion)", -- [101]
+				"18:55:31.101.104> [step_setup] Step 27 prepared. (Step.lua:189:PrepareCompletion)", -- [102]
+				"18:55:31.101.113> [itemscore] [itemevents] PLAYER_REGEN_ENABLED (Item-Events.lua:153:Debug)", -- [103]
+				"18:55:35.124.125> [itemscore] [itemevents] ITEM_PUSH (Item-Events.lua:153:Debug)", -- [104]
+				"18:55:35.234.235> [itemscore] [itemevents] ITEM_PUSH (Item-Events.lua:153:Debug)", -- [105]
+				"18:55:35.400.401> [itemscore] [itemevents] ITEM_PUSH (Item-Events.lua:153:Debug)", -- [106]
+				"18:55:36.562.567> [itemscore] [itemevents] BAG_UPDATE_DELAYED (Item-Events.lua:153:Debug)", -- [107]
+				"18:55:36.562.577> CacheQuestLog cached 3 quests (QuestTracking.lua:212:QuestTracking_CacheQuestLog)", -- [108]
+				"18:55:36.562.577> Animating progress: Get 6 |cffaaeeffRecovered Possessions|cffff88dd (ZygorGuidesViewer.lua:2502:UpdateFrame)", -- [109]
+				"18:55:41.378.381> [itemscore] [itemevents] PLAYER_REGEN_DISABLED (Item-Events.lua:153:Debug)", -- [110]
+				"18:55:43.768.770> [step_setup] Preparing goals... (Step.lua:146:PrepareCompletion)", -- [111]
+				"18:55:43.768.770> [step_setup] Goals prepared. (Step.lua:150:PrepareCompletion)", -- [112]
+				"18:55:43.768.771> [step_setup] Step 27 prepared. (Step.lua:189:PrepareCompletion)", -- [113]
+				"18:55:43.768.777> [itemscore] [itemevents] PLAYER_REGEN_ENABLED (Item-Events.lua:153:Debug)", -- [114]
+				"18:55:46.467.467> [itemscore] [itemevents] ITEM_PUSH (Item-Events.lua:153:Debug)", -- [115]
+				"18:55:47.616.617> [itemscore] [itemevents] ITEM_PUSH (Item-Events.lua:153:Debug)", -- [116]
+				"18:55:47.807.811> [itemscore] [itemevents] BAG_UPDATE_DELAYED (Item-Events.lua:153:Debug)", -- [117]
+				"18:55:47.807.819> CacheQuestLog cached 3 quests (QuestTracking.lua:212:QuestTracking_CacheQuestLog)", -- [118]
+				"18:55:47.807.820> Animating progress: Get 6 |cffaaeeffRecovered Possessions|cffff88dd (ZygorGuidesViewer.lua:2502:UpdateFrame)", -- [119]
+				"18:55:55.881.883> [itemscore] [itemevents] PLAYER_REGEN_DISABLED (Item-Events.lua:153:Debug)", -- [120]
+				"18:55:56.148.151> [step_setup] Preparing goals... (Step.lua:146:PrepareCompletion)", -- [121]
+				"18:55:56.148.151> [step_setup] Goals prepared. (Step.lua:150:PrepareCompletion)", -- [122]
+				"18:55:56.148.151> [step_setup] Step 27 prepared. (Step.lua:189:PrepareCompletion)", -- [123]
+				"18:55:56.148.158> [itemscore] [itemevents] PLAYER_REGEN_ENABLED (Item-Events.lua:153:Debug)", -- [124]
+				"18:56:00.795.797> [itemscore] [itemevents] ITEM_PUSH (Item-Events.lua:153:Debug)", -- [125]
+				"18:56:01.679.679> [itemscore] [itemevents] ITEM_PUSH (Item-Events.lua:153:Debug)", -- [126]
+				"18:56:01.945.972> CacheQuestLog cached 3 quests (QuestTracking.lua:212:QuestTracking_CacheQuestLog)", -- [127]
+				"18:56:01.945.973> Animating progress: Get 6 |cffaaeeffRecovered Possessions|cffff88dd (ZygorGuidesViewer.lua:2502:UpdateFrame)", -- [128]
+				"18:56:01.945.980> [itemscore] [itemevents] BAG_UPDATE_DELAYED (Item-Events.lua:153:Debug)", -- [129]
+				"18:56:01.945.984> [LibRover] -> |cff00ff88FindPath|cffff88dd:  |cffaaff88New Tinkertown|cffff88dd/0 |cffffffff39.9|cffff88dd,|cffffffff56.3|cffff88dd --> |cffaaff88New Tinkertown|cffff88dd/0 |cffffffff37.1|cffff88dd,|cffffffff50.6|cffff88dd (LibRover-1.0.lua:1415:FindPath)", -- [130]
+				"18:56:01.945.984> [LibRover] - IsDestinationImpossible? false,SAME_MAP,same map (LibRover-1.0.lua:1420:FindPath)", -- [131]
+				"18:56:01.945.984> [LibRover] <- FindPath (LibRover-1.0.lua:1489:FindPath)", -- [132]
+				"18:56:01.003.005> [LibRover] -> InitializePath (LibRover-1.0.lua:1501:InitializePath)", -- [133]
+				"18:56:01.003.006> [LibRover] [LRadv] - InitializePath: cleared old nodes, 2240 left (LibRover-1.0.lua:1517:InitializePath)", -- [134]
+				"18:56:01.003.008> [LibRover] [LRadv] - InitializePath: cleared linkage (LibRover-1.0.lua:1524:InitializePath)", -- [135]
+				"18:56:01.003.012> [LibRover] [LRadv] - Initialized end node #2241 with copy #2242 table: 000000013B363100 (LibRover-1.0.lua:1542:InitializePath)", -- [136]
+				"18:56:01.003.012> [LibRover] - |cffff8844 No idea where player's hearthstone is bound to: |cffff8800Gnomeregan (LibRover-1.0.lua:1240:FindBindLocation)", -- [137]
+				"18:56:01.003.015> [LibRover] [LRadv] - Initialized start node #2243 (LibRover-1.0.lua:1583:InitializePath)", -- [138]
+				"18:56:01.003.019> [LibRover] [LRadv] - InitializePath: cleared temp fields (LibRover-1.0.lua:1624:InitializePath)", -- [139]
+				"18:56:01.003.019> [LibRover] [LRadv] - NodeSetHeap clear (NodeSetHeap.lua:134:Clear)", -- [140]
+				"18:56:01.003.020> [LibRover] <- InitializePath: done (LibRover-1.0.lua:1658:InitializePath)", -- [141]
+				"18:56:01.003.021> [LibRover] StepForever: initialized, proceeding (LibRover-1.0.lua:1751:<local>)", -- [142]
+				"18:56:01.028.033> [LibRover] This pass: [SUCCESS] = |cffffffff0.03|cffff88ddms. Done |cffffff882|cffff88dd calculations over |cff88ffff2|cffff88dd frames:\n compared |cff88ff883|cffff88dd nodes in |cffffffff0.02|cffff88dd ms, opened |cff88ff885|cffff88dd, closed |cff88ff882|cffff88dd \n cheapest |cffffffff0.02|cffff88dd, initial |cffffffff0.01|cffff88dd, overhead |cffffffff0.02|cffff88dd, blah |cffffffff0.01|cffff88dd, scoring |cffffffff0.08|cffff88dd, adding |cffffffff0.05|cffff88dd ms    \n calc total |cffffffff15.89|cffff88dd ms, total time |cffffffff15.91|cffff88dd ms   \n(found: YES) (LibRover-1.0.lua:2919:OnUpdate)", -- [143]
+				"18:56:01.028.033> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddNew Tinkertown 39,56|cffff88dd  (dist 0) |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2751:ReportPath)", -- [144]
+				"18:56:01.028.034> [LibRover] 1. |cff88ff88Clean 5 Toxic Pools|cffff88dd -- |cff88ccddDealing with the Fallout|cffff88dd  (dist 87) |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2751:ReportPath)", -- [145]
+				"18:56:01.028.034> [pointer] -> PathFoundHandler! state=success (Pointer.lua:3929:PathFoundHandler)", -- [146]
+				"18:56:01.028.034> [pointer] - ClearSet route + ants [0.09 ms] (Pointer.lua:3862:ClearSet)", -- [147]
+				"18:56:01.028.035> [pointer] - set_waypoints: 2 points, type=route (Pointer.lua:3643:<local>)", -- [148]
+				"18:56:01.028.036> [pointer] - set_waypoints: arrowpoint=New Tinkertown #895 /0 37.1,50.6, farmpoint=New Tinkertown #895 /0 37.1,50.6 (Pointer.lua:3711:<local>)", -- [149]
+				"18:56:01.028.036> [pointer] - ShowSet route ends [1.84 ms] + ants [0.07 ms] (Pointer.lua:3917:ShowSet)", -- [150]
+				"18:56:01.028.037> [pointer] <- PathFoundHandler done. (Pointer.lua:4042:PathFoundHandler)", -- [151]
+				"18:56:04.736.740> [itemscore] [itemevents] PLAYER_REGEN_DISABLED (Item-Events.lua:153:Debug)", -- [152]
+				"18:56:05.660.662> [step_setup] Preparing goals... (Step.lua:146:PrepareCompletion)", -- [153]
+				"18:56:05.660.662> [step_setup] Goals prepared. (Step.lua:150:PrepareCompletion)", -- [154]
+				"18:56:05.660.662> [step_setup] Step 27 prepared. (Step.lua:189:PrepareCompletion)", -- [155]
+				"18:56:05.660.669> [itemscore] [itemevents] PLAYER_REGEN_ENABLED (Item-Events.lua:153:Debug)", -- [156]
+				"18:56:08.334.334> [itemscore] [itemevents] ITEM_PUSH (Item-Events.lua:153:Debug)", -- [157]
+				"18:56:08.511.511> [itemscore] [itemevents] ITEM_PUSH (Item-Events.lua:153:Debug)", -- [158]
+				"18:56:09.673.684> CacheQuestLog cached 3 quests (QuestTracking.lua:212:QuestTracking_CacheQuestLog)", -- [159]
+				"18:56:09.673.685> Animating completion. (ZygorGuidesViewer.lua:2509:UpdateFrame)", -- [160]
+				"18:56:09.673.694> [itemscore] [itemevents] BAG_UPDATE_DELAYED (Item-Events.lua:153:Debug)", -- [161]
+				"18:56:20.511.517> [LibRover] -> |cff00ff88FindPath|cffff88dd:  |cffaaff88New Tinkertown|cffff88dd/0 |cffffffff41.9|cffff88dd,|cffffffff58.9|cffff88dd --> |cffaaff88New Tinkertown|cffff88dd/0 |cffffffff37.1|cffff88dd,|cffffffff50.6|cffff88dd (LibRover-1.0.lua:1415:FindPath)", -- [162]
+				"18:56:20.511.517> [LibRover] - IsDestinationImpossible? false,SAME_MAP,same map (LibRover-1.0.lua:1420:FindPath)", -- [163]
+				"18:56:20.511.517> [LibRover] <- FindPath (LibRover-1.0.lua:1489:FindPath)", -- [164]
+				"18:56:20.526.529> [LibRover] -> InitializePath (LibRover-1.0.lua:1501:InitializePath)", -- [165]
+				"18:56:20.526.530> [LibRover] [LRadv] - InitializePath: cleared old nodes, 2240 left (LibRover-1.0.lua:1517:InitializePath)", -- [166]
+				"18:56:20.526.532> [LibRover] [LRadv] - InitializePath: cleared linkage (LibRover-1.0.lua:1524:InitializePath)", -- [167]
+				"18:56:20.526.538> [LibRover] [LRadv] - Initialized end node #2241 with copy #2242 table: 000000013B49A2F0 (LibRover-1.0.lua:1542:InitializePath)", -- [168]
+				"18:56:20.526.538> [LibRover] - |cffff8844 No idea where player's hearthstone is bound to: |cffff8800Gnomeregan (LibRover-1.0.lua:1240:FindBindLocation)", -- [169]
+				"18:56:20.526.542> [LibRover] [LRadv] - Initialized start node #2243 (LibRover-1.0.lua:1583:InitializePath)", -- [170]
+				"18:56:20.526.548> [LibRover] [LRadv] - InitializePath: cleared temp fields (LibRover-1.0.lua:1624:InitializePath)", -- [171]
+				"18:56:20.526.548> [LibRover] [LRadv] - NodeSetHeap clear (NodeSetHeap.lua:134:Clear)", -- [172]
+				"18:56:20.526.548> [LibRover] <- InitializePath: done (LibRover-1.0.lua:1658:InitializePath)", -- [173]
+				"18:56:20.557.560> [LibRover] StepForever: initialized, proceeding (LibRover-1.0.lua:1751:<local>)", -- [174]
+				"18:56:20.557.561> [LibRover] This pass: [SUCCESS] = |cffffffff1.13|cffff88ddms. Done |cffffff882|cffff88dd calculations over |cff88ffff2|cffff88dd frames:\n compared |cff88ff883|cffff88dd nodes in |cffffffff0.01|cffff88dd ms, opened |cff88ff885|cffff88dd, closed |cff88ff882|cffff88dd \n cheapest |cffffffff0.01|cffff88dd, initial |cffffffff0.01|cffff88dd, overhead |cffffffff0.07|cffff88dd, blah |cffffffff0.01|cffff88dd, scoring |cffffffff0.08|cffff88dd, adding |cffffffff0.04|cffff88dd ms    \n calc total |cffffffff20.93|cffff88dd ms, total time |cffffffff20.96|cffff88dd ms   \n(found: YES) (LibRover-1.0.lua:2919:OnUpdate)", -- [175]
+				"18:56:20.557.561> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddNew Tinkertown 41,58|cffff88dd  (dist 0) |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2751:ReportPath)", -- [176]
+				"18:56:20.557.561> [LibRover] 1. |cff88ff88Clean 5 Toxic Pools|cffff88dd -- |cff88ccddDealing with the Fallout|cffff88dd  (dist 134) |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2751:ReportPath)", -- [177]
+				"18:56:20.557.561> [pointer] -> PathFoundHandler! state=success (Pointer.lua:3929:PathFoundHandler)", -- [178]
+				"18:56:20.557.562> [pointer] - ClearSet route + ants [0.07 ms] (Pointer.lua:3862:ClearSet)", -- [179]
+				"18:56:20.557.562> [pointer] - set_waypoints: 2 points, type=route (Pointer.lua:3643:<local>)", -- [180]
+				"18:56:20.557.563> [pointer] - set_waypoints: arrowpoint=New Tinkertown #895 /0 37.1,50.6, farmpoint=New Tinkertown #895 /0 37.1,50.6 (Pointer.lua:3711:<local>)", -- [181]
+				"18:56:20.557.563> [pointer] - ShowSet route ends [1.35 ms] + ants [0.05 ms] (Pointer.lua:3917:ShowSet)", -- [182]
+				"18:56:20.557.564> [pointer] <- PathFoundHandler done. (Pointer.lua:4042:PathFoundHandler)", -- [183]
+				"18:56:25.638.647> CacheQuestLog cached 3 quests (QuestTracking.lua:212:QuestTracking_CacheQuestLog)", -- [184]
+				"18:56:25.638.648> Animating progress: Clean 5 Toxic Pools (ZygorGuidesViewer.lua:2502:UpdateFrame)", -- [185]
+				"18:56:31.952.962> CacheQuestLog cached 3 quests (QuestTracking.lua:212:QuestTracking_CacheQuestLog)", -- [186]
+				"18:56:31.952.962> Skipping step: 27 (complete) (ZygorGuidesViewer.lua:1598:TryToCompleteStep)", -- [187]
+				"18:56:31.952.963> Skipped goals were: [1] Killed 6 |cffffaaaaLiving Contaminations|cffff88dd (complete),  [2] Kill |cffffaaaaToxic Sludges|cffff88dd (passive),  [3] Got 6 |cffaaeeffRecovered Possessions|cffff88dd (complete),  [4] Stand next to Toxic Pools (passive),  [5] Clean 5 Toxic Pools (complete),   (ZygorGuidesViewer.lua:1601:TryToCompleteStep)", -- [188]
+				"18:56:31.952.963> Step:GetNext: step 27 says nil so going with +1 (Step.lua:457:GetNext)", -- [189]
+				"18:56:31.952.963> SkipStep to 28 (fast) (ZygorGuidesViewer.lua:1375:SkipStep)", -- [190]
+				"18:56:31.952.964> FocusStep 28 (ZygorGuidesViewer.lua:1118:FocusStep)", -- [191]
+				"18:56:31.952.964> [step_setup] Preparing goals... (Step.lua:146:PrepareCompletion)", -- [192]
+				"18:56:31.952.964> [step_setup] Goals prepared. (Step.lua:150:PrepareCompletion)", -- [193]
+				"18:56:31.952.964> [step_setup] Step 28 prepared. (Step.lua:189:PrepareCompletion)", -- [194]
+				"18:56:31.952.964> [step_setup] Step 28 OnEnter (Step.lua:350:OnEnter)", -- [195]
+				"18:56:31.952.964> [step_setup] Clearing macros (Step.lua:435:OnEnter)", -- [196]
+				"18:56:31.952.967> [step_setup] Running goals' OnEnter (Step.lua:439:OnEnter)", -- [197]
+				"18:56:31.952.967> [step_setup] Step 28 OnEnter ended (Step.lua:445:OnEnter)", -- [198]
+				"18:56:31.952.967> Step:GetNext: step 28 says nil so going with +1 (Step.lua:457:GetNext)", -- [199]
+				"18:56:31.952.969> [waypoints] -> SetWaypoint starts: clearing. (Waypoints.lua:548:setwaypoint)", -- [200]
+				"18:56:31.952.969> [pointer] - ClearWaypoints way (Pointer.lua:567:ClearWaypoints)", -- [201]
+				"18:56:31.952.969> [pointer] - Removed DestinationWaypoint (Pointer.lua:613:RemoveWaypoint)", -- [202]
+				"18:56:31.952.969> [pointer] - ClearSet route + ants [0.07 ms] (Pointer.lua:3862:ClearSet)", -- [203]
+				"18:56:31.952.969> [waypoints] <- SetWaypoint ends [0.59 ms] (Waypoints.lua:823:setwaypoint)", -- [204]
+				"18:56:31.952.970> [waypoints] -> SetWaypoint starts: showing all step waypoints. (Waypoints.lua:563:setwaypoint)", -- [205]
+				"18:56:31.952.970> [waypoints] - Not sticky, clear out way+route: (Waypoints.lua:569:setwaypoint)", -- [206]
+				"18:56:31.952.970> [pointer] - ClearWaypoints way (Pointer.lua:567:ClearWaypoints)", -- [207]
+				"18:56:31.952.970> [waypoints] - -> showing goal(s)... (Waypoints.lua:644:setwaypoint)", -- [208]
+				"18:56:31.952.970> [waypoints] - <- done showing goal(s). (Waypoints.lua:670:setwaypoint)", -- [209]
+				"18:56:31.952.970> [waypoints] - arrowpoint nil, farmpoint nil, waypath empty (Waypoints.lua:678:setwaypoint)", -- [210]
+				"18:56:31.952.970> - Librover: clearing queue (LibRover-1.0.lua:3021:Abort)", -- [211]
+				"18:56:31.952.971> [LibRover] - LibRover aborting (LibRover-1.0.lua:3030:Abort)", -- [212]
+				"18:56:31.952.971> [waypoints] <- SetWaypoint ends [1.03 ms] (Waypoints.lua:823:setwaypoint)", -- [213]
+				"18:56:31.402.403> Skipping step: 28 (complete) (ZygorGuidesViewer.lua:1598:TryToCompleteStep)", -- [214]
+				"18:56:31.402.403> Skipped goals were: [1] You should now be level |cffaaffaa3|cffff88dd.|n    If not, grind a little until you are. (complete),   (ZygorGuidesViewer.lua:1601:TryToCompleteStep)", -- [215]
+				"18:56:31.402.403> Step:GetNext: step 28 says nil so going with +1 (Step.lua:457:GetNext)", -- [216]
+				"18:56:31.402.403> SkipStep to 29 (fast) (ZygorGuidesViewer.lua:1375:SkipStep)", -- [217]
+				"18:56:31.402.403> FocusStep 29 (ZygorGuidesViewer.lua:1118:FocusStep)", -- [218]
+				"18:56:31.402.404> [step_setup] Preparing goals... (Step.lua:146:PrepareCompletion)", -- [219]
+				"18:56:31.402.404> [step_setup] Goals prepared. (Step.lua:150:PrepareCompletion)", -- [220]
+				"18:56:31.402.404> [step_setup] Step 29 prepared. (Step.lua:189:PrepareCompletion)", -- [221]
+				"18:56:31.402.404> [step_setup] Step 29 OnEnter (Step.lua:350:OnEnter)", -- [222]
+				"18:56:31.402.404> [step_setup] Clearing macros (Step.lua:435:OnEnter)", -- [223]
+				"18:56:31.402.404> [step_setup] Running goals' OnEnter (Step.lua:439:OnEnter)", -- [224]
+				"18:56:31.402.404> [step_setup] goal 1 sets makeshift macro... should show up below... (Goal.lua:2439:OnEnter)", -- [225]
+				"18:56:31.402.407> [step_setup] goal 1 macro: set up macro ZGVMacro1 [121]: /target Corporal Fizzwhistle \\n/run ZGV:MRM():CG(29,1) (Goal.lua:2510:OnEnter)", -- [226]
+				"18:56:31.402.407> [step_setup] Step 29 OnEnter ended (Step.lua:445:OnEnter)", -- [227]
+				"18:56:31.402.407> Step:GetNext: step 29 says nil so going with +1 (Step.lua:457:GetNext)", -- [228]
+				"18:56:31.402.408> [step_setup] Preparing goals... (Step.lua:146:PrepareCompletion)", -- [229]
+				"18:56:31.402.408> [step_setup] Goals prepared. (Step.lua:150:PrepareCompletion)", -- [230]
+				"18:56:31.402.408> [step_setup] Step 29 prepared. (Step.lua:189:PrepareCompletion)", -- [231]
+				"18:56:31.402.409> [waypoints] -> SetWaypoint starts: clearing. (Waypoints.lua:548:setwaypoint)", -- [232]
+				"18:56:31.402.409> [pointer] - ClearWaypoints way (Pointer.lua:567:ClearWaypoints)", -- [233]
+				"18:56:31.402.409> [waypoints] <- SetWaypoint ends [0.13 ms] (Waypoints.lua:823:setwaypoint)", -- [234]
+				"18:56:31.402.409> [waypoints] -> SetWaypoint starts: showing all step waypoints. (Waypoints.lua:563:setwaypoint)", -- [235]
+				"18:56:31.402.409> [waypoints] - Not sticky, clear out way+route: (Waypoints.lua:569:setwaypoint)", -- [236]
+				"18:56:31.402.409> [pointer] - ClearWaypoints way (Pointer.lua:567:ClearWaypoints)", -- [237]
+				"18:56:31.402.409> [waypoints] - -> showing goal(s)... (Waypoints.lua:644:setwaypoint)", -- [238]
+				"18:56:31.402.409> [waypoints] - - setting wayps: #ps=1, waypath=nil, destwaypt=nil (Waypoints.lua:666:setwaypoint)", -- [239]
+				"18:56:31.402.409> [pointer] - - set_waypoints: 1 points, type=way (Pointer.lua:3643:set_waypoints)", -- [240]
+				"18:56:31.402.410> [pointer] - - set_waypoints: arrowpoint=New Tinkertown #895 /0 38.2,40.2, farmpoint=New Tinkertown #895 /0 38.2,40.2 (Pointer.lua:3711:set_waypoints)", -- [241]
+				"18:56:31.402.410> [waypoints] - <- done showing goal(s). (Waypoints.lua:670:setwaypoint)", -- [242]
+				"18:56:31.402.410> [waypoints] - arrowpoint New Tinkertown #895 /0 38.2,40.2, farmpoint New Tinkertown #895 /0 38.2,40.2, waypath empty (Waypoints.lua:678:setwaypoint)", -- [243]
+				"18:56:31.402.410> - FTP 3 (Waypoints.lua:725:setwaypoint)", -- [244]
+				"18:56:31.402.410> [pointer] - FindTravelPath to New Tinkertown #895 /0 38.2,40.2 (Pointer.lua:4058:FindTravelPath)", -- [245]
+				"18:56:31.402.418> [LibRover] - -> |cff00ff88FindPath|cffff88dd:  |cffaaff88New Tinkertown|cffff88dd/0 |cffffffff37.4|cffff88dd,|cffffffff56.4|cffff88dd --> |cffaaff88New Tinkertown|cffff88dd/0 |cffffffff38.2|cffff88dd,|cffffffff40.2|cffff88dd (LibRover-1.0.lua:1415:FindPath)", -- [246]
+				"18:56:31.402.418> [LibRover] - - IsDestinationImpossible? false,SAME_MAP,same map (LibRover-1.0.lua:1420:FindPath)", -- [247]
+				"18:56:31.402.420> [LibRover] - <- FindPath (LibRover-1.0.lua:1489:FindPath)", -- [248]
+				"18:56:31.402.420> [waypoints] <- SetWaypoint ends [10.69 ms] (Waypoints.lua:823:setwaypoint)", -- [249]
+				"18:56:31.402.423> [LibRover] -> InitializePath (LibRover-1.0.lua:1501:InitializePath)", -- [250]
+				"18:56:31.402.424> [LibRover] [LRadv] - InitializePath: cleared old nodes, 2240 left (LibRover-1.0.lua:1517:InitializePath)", -- [251]
+				"18:56:31.402.426> [LibRover] [LRadv] - InitializePath: cleared linkage (LibRover-1.0.lua:1524:InitializePath)", -- [252]
+				"18:56:31.402.431> [LibRover] [LRadv] - Initialized end node #2241 with copy #2242 table: 0000000139425B30 (LibRover-1.0.lua:1542:InitializePath)", -- [253]
+				"18:56:31.402.432> [LibRover] - |cffff8844 No idea where player's hearthstone is bound to: |cffff8800Gnomeregan (LibRover-1.0.lua:1240:FindBindLocation)", -- [254]
+				"18:56:31.402.435> [LibRover] [LRadv] - Initialized start node #2243 (LibRover-1.0.lua:1583:InitializePath)", -- [255]
+				"18:56:31.402.440> [LibRover] [LRadv] - InitializePath: cleared temp fields (LibRover-1.0.lua:1624:InitializePath)", -- [256]
+				"18:56:31.402.440> [LibRover] [LRadv] - NodeSetHeap clear (NodeSetHeap.lua:134:Clear)", -- [257]
+				"18:56:31.402.440> [LibRover] <- InitializePath: done (LibRover-1.0.lua:1658:InitializePath)", -- [258]
+				"18:56:31.402.440> [LibRover] Calc pending MAIN, frame 1 (calcs: 0) in 16.44ms. (LibRover-1.0.lua:2915:OnUpdate)", -- [259]
+				"18:56:31.402.440> [pointer] -> PathFoundHandler! state=progress (Pointer.lua:3929:PathFoundHandler)", -- [260]
+				"18:56:31.402.440> [pointer] <- PathFoundHandler done. (Pointer.lua:4042:PathFoundHandler)", -- [261]
+				"18:56:31.449.455> [LibRover] StepForever: initialized, proceeding (LibRover-1.0.lua:1751:<local>)", -- [262]
+				"18:56:31.449.456> [LibRover] This pass: [SUCCESS] = |cffffffff1.84|cffff88ddms. Done |cffffff884|cffff88dd calculations over |cff88ffff2|cffff88dd frames:\n compared |cff88ff886|cffff88dd nodes in |cffffffff0.02|cffff88dd ms, opened |cff88ff886|cffff88dd, closed |cff88ff884|cffff88dd \n cheapest |cffffffff0.02|cffff88dd, initial |cffffffff0.01|cffff88dd, overhead |cffffffff0.71|cffff88dd, blah |cffffffff0.02|cffff88dd, scoring |cffffffff0.09|cffff88dd, adding |cffffffff0.03|cffff88dd ms    \n calc total |cffffffff18.10|cffff88dd ms, total time |cffffffff18.28|cffff88dd ms   \n(found: YES) (LibRover-1.0.lua:2919:OnUpdate)", -- [263]
+				"18:56:31.449.457> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddNew Tinkertown 37,56|cffff88dd  (dist 0) |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2751:ReportPath)", -- [264]
+				"18:56:31.449.457> [LibRover] 1. |cff88ff88Turn in |cffeebbff`Dealing with the Fallout'|cffff88dd|cffff88dd -- |cff88ccddCorporal Fizzwhistle|cffff88dd  (dist 200) |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2751:ReportPath)", -- [265]
+				"18:56:31.449.457> [pointer] -> PathFoundHandler! state=success (Pointer.lua:3929:PathFoundHandler)", -- [266]
+				"18:56:31.449.460> [pointer] - set_waypoints: 2 points, type=route (Pointer.lua:3643:<local>)", -- [267]
+				"18:56:31.449.461> [pointer] - set_waypoints: arrowpoint=New Tinkertown #895 /0 38.2,40.2, farmpoint=New Tinkertown #895 /0 38.2,40.2 (Pointer.lua:3711:<local>)", -- [268]
+				"18:56:31.449.461> [pointer] - ShowSet route ends [2.38 ms] + ants [0.08 ms] (Pointer.lua:3917:ShowSet)", -- [269]
+				"18:56:31.449.461> [pointer] <- PathFoundHandler done. (Pointer.lua:4042:PathFoundHandler)", -- [270]
+				"18:56:55.106.109> [itemscore] [itemevents] ZONE_CHANGED (Item-Events.lua:153:Debug)", -- [271]
+				"18:56:55.106.110> [LibRover] Got event ZONE_CHANGED, updating (LibRover-1.0.lua:3167:<local>)", -- [272]
+				"18:56:55.106.114> [LibRover] -> |cff00ff88FindPath|cffff88dd:  |cffaaff88New Tinkertown|cffff88dd/0 |cffffffff37.4|cffff88dd,|cffffffff56.4|cffff88dd --> |cffaaff88New Tinkertown|cffff88dd/0 |cffffffff38.2|cffff88dd,|cffffffff40.2|cffff88dd (LibRover-1.0.lua:1415:FindPath)", -- [273]
+				"18:56:55.106.114> [LibRover] - IsDestinationImpossible? false,SAME_MAP,same map (LibRover-1.0.lua:1420:FindPath)", -- [274]
+				"18:56:55.106.114> [LibRover] <- FindPath (LibRover-1.0.lua:1489:FindPath)", -- [275]
+				"18:56:55.128.133> [LibRover] -> InitializePath (LibRover-1.0.lua:1501:InitializePath)", -- [276]
+				"18:56:55.128.134> [LibRover] [LRadv] - InitializePath: cleared old nodes, 2240 left (LibRover-1.0.lua:1517:InitializePath)", -- [277]
+				"18:56:55.128.136> [LibRover] [LRadv] - InitializePath: cleared linkage (LibRover-1.0.lua:1524:InitializePath)", -- [278]
+				"18:56:55.128.141> [LibRover] [LRadv] - Initialized end node #2241 with copy #2242 table: 0000000127ED7670 (LibRover-1.0.lua:1542:InitializePath)", -- [279]
+				"18:56:55.128.141> [LibRover] - |cffff8844 No idea where player's hearthstone is bound to: |cffff8800Gnomeregan (LibRover-1.0.lua:1240:FindBindLocation)", -- [280]
+				"18:56:55.128.144> [LibRover] [LRadv] - Initialized start node #2243 (LibRover-1.0.lua:1583:InitializePath)", -- [281]
+				"18:56:55.128.149> [LibRover] [LRadv] - InitializePath: cleared temp fields (LibRover-1.0.lua:1624:InitializePath)", -- [282]
+				"18:56:55.128.149> [LibRover] [LRadv] - NodeSetHeap clear (NodeSetHeap.lua:134:Clear)", -- [283]
+				"18:56:55.128.149> [LibRover] <- InitializePath: done (LibRover-1.0.lua:1658:InitializePath)", -- [284]
+				"18:56:55.162.165> [LibRover] StepForever: initialized, proceeding (LibRover-1.0.lua:1751:<local>)", -- [285]
+				"18:56:55.162.166> [LibRover] This pass: [SUCCESS] = |cffffffff1.11|cffff88ddms. Done |cffffff884|cffff88dd calculations over |cff88ffff2|cffff88dd frames:\n compared |cff88ff886|cffff88dd nodes in |cffffffff0.02|cffff88dd ms, opened |cff88ff886|cffff88dd, closed |cff88ff884|cffff88dd \n cheapest |cffffffff0.02|cffff88dd, initial |cffffffff0.01|cffff88dd, overhead |cffffffff0.04|cffff88dd, blah |cffffffff0.05|cffff88dd, scoring |cffffffff0.08|cffff88dd, adding |cffffffff0.04|cffff88dd ms    \n calc total |cffffffff17.84|cffff88dd ms, total time |cffffffff17.86|cffff88dd ms   \n(found: YES) (LibRover-1.0.lua:2919:OnUpdate)", -- [286]
+				"18:56:55.162.166> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddNew Tinkertown 37,56|cffff88dd  (dist 0) |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2751:ReportPath)", -- [287]
+				"18:56:55.162.166> [LibRover] 1. |cff88ff88Turn in |cffeebbff`Dealing with the Fallout'|cffff88dd|cffff88dd -- |cff88ccddCorporal Fizzwhistle|cffff88dd  (dist 200) |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2751:ReportPath)", -- [288]
+				"18:56:55.162.166> [pointer] -> PathFoundHandler! state=success (Pointer.lua:3929:PathFoundHandler)", -- [289]
+				"18:56:55.162.166> [pointer] - ClearSet route + ants [0.08 ms] (Pointer.lua:3862:ClearSet)", -- [290]
+				"18:56:55.162.167> [pointer] - set_waypoints: 2 points, type=route (Pointer.lua:3643:<local>)", -- [291]
+				"18:56:55.162.168> [pointer] - set_waypoints: arrowpoint=New Tinkertown #895 /0 38.2,40.2, farmpoint=New Tinkertown #895 /0 38.2,40.2 (Pointer.lua:3711:<local>)", -- [292]
+				"18:56:55.162.168> [pointer] - ShowSet route ends [1.45 ms] + ants [0.04 ms] (Pointer.lua:3917:ShowSet)", -- [293]
+				"18:56:55.162.168> [pointer] <- PathFoundHandler done. (Pointer.lua:4042:PathFoundHandler)", -- [294]
+				"18:57:00.506.509> QUEST_COMPLETE Dealing with the Fallout##26265 (QuestTracking.lua:495:func)", -- [295]
+				"18:57:02.608.609> [itemscore] [itemevents] ITEM_PUSH (Item-Events.lua:153:Debug)", -- [296]
+				"18:57:02.608.609> [itemscore] [itemevents] ITEM_PUSH (Item-Events.lua:153:Debug)", -- [297]
+				"18:57:02.640.640> CHAT_MSG_SYSTEM: completed Dealing with the Fallout (QuestTracking.lua:415:func)", -- [298]
+				"18:57:02.640.640> GetQuest: id of quest 'Dealing with the Fallout' = 26265 (QuestTracking.lua:121:GetQuest)", -- [299]
+				"18:57:02.640.640> Completed Quest: Dealing with the Fallout##26265 (QuestTracking.lua:461:CompletedQuestEvent)", -- [300]
+				"18:57:02.089.101> CacheQuestLog cached 2 quests (QuestTracking.lua:212:QuestTracking_CacheQuestLog)", -- [301]
+				"18:57:02.089.101> Skipping step: 29 (complete) (ZygorGuidesViewer.lua:1598:TryToCompleteStep)", -- [302]
+				"18:57:02.089.101> [pointer] Cycling waypoint, delta 1 (Pointer.lua:4169:CycleWaypoint)", -- [303]
+				"18:57:02.089.101> Skipped goals were: [1] Talk to |cffaaffaaCorporal Fizzwhistle|cffff88dd (passive),  [2] Turned in |cffeebbff`Dealing with the Fallout'|cffff88dd (complete),   (ZygorGuidesViewer.lua:1601:TryToCompleteStep)", -- [304]
+				"18:57:02.089.101> Step:GetNext: step 29 says nil so going with +1 (Step.lua:457:GetNext)", -- [305]
+				"18:57:02.089.102> SkipStep to 30 (fast) (ZygorGuidesViewer.lua:1375:SkipStep)", -- [306]
+				"18:57:02.089.102> FocusStep 30 (ZygorGuidesViewer.lua:1118:FocusStep)", -- [307]
+				"18:57:02.089.102> [step_setup] Preparing goals... (Step.lua:146:PrepareCompletion)", -- [308]
+				"18:57:02.089.102> [step_setup] Goals prepared. (Step.lua:150:PrepareCompletion)", -- [309]
+				"18:57:02.089.102> [step_setup] Step 30 prepared. (Step.lua:189:PrepareCompletion)", -- [310]
+				"18:57:02.089.102> [step_setup] Step 30 OnEnter (Step.lua:350:OnEnter)", -- [311]
+				"18:57:02.089.102> [step_setup] Clearing macros (Step.lua:435:OnEnter)", -- [312]
+				"18:57:02.089.102> [step_setup] Running goals' OnEnter (Step.lua:439:OnEnter)", -- [313]
+				"18:57:02.089.102> [step_setup] goal 1 sets makeshift macro... should show up below... (Goal.lua:2439:OnEnter)", -- [314]
+				"18:57:02.089.103> [step_setup] goal 1 macro: set up macro ZGVMacro1 [121]: /target \"Doc\" Cogspin \\n/run ZGV:MRM():CG(30,1) (Goal.lua:2510:OnEnter)", -- [315]
+				"18:57:02.089.103> [step_setup] Step 30 OnEnter ended (Step.lua:445:OnEnter)", -- [316]
+				"18:57:02.089.103> Step:GetNext: step 30 says nil so going with +1 (Step.lua:457:GetNext)", -- [317]
+				"18:57:02.089.104> [step_setup] Preparing goals... (Step.lua:146:PrepareCompletion)", -- [318]
+				"18:57:02.089.104> [step_setup] Goals prepared. (Step.lua:150:PrepareCompletion)", -- [319]
+				"18:57:02.089.104> [step_setup] Step 30 prepared. (Step.lua:189:PrepareCompletion)", -- [320]
+				"18:57:02.089.105> [waypoints] -> SetWaypoint starts: clearing. (Waypoints.lua:548:setwaypoint)", -- [321]
+				"18:57:02.089.105> [pointer] - ClearWaypoints way (Pointer.lua:567:ClearWaypoints)", -- [322]
+				"18:57:02.089.105> [pointer] - Removed DestinationWaypoint (Pointer.lua:613:RemoveWaypoint)", -- [323]
+				"18:57:02.089.105> [pointer] - ClearSet route + ants [0.08 ms] (Pointer.lua:3862:ClearSet)", -- [324]
+				"18:57:02.089.105> [waypoints] <- SetWaypoint ends [0.42 ms] (Waypoints.lua:823:setwaypoint)", -- [325]
+				"18:57:02.089.105> [waypoints] -> SetWaypoint starts: showing all step waypoints. (Waypoints.lua:563:setwaypoint)", -- [326]
+				"18:57:02.089.105> [waypoints] - Not sticky, clear out way+route: (Waypoints.lua:569:setwaypoint)", -- [327]
+				"18:57:02.089.106> [pointer] - ClearWaypoints way (Pointer.lua:567:ClearWaypoints)", -- [328]
+				"18:57:02.089.106> [waypoints] - -> showing goal(s)... (Waypoints.lua:644:setwaypoint)", -- [329]
+				"18:57:02.089.106> [waypoints] - - setting wayps: #ps=1, waypath=nil, destwaypt=nil (Waypoints.lua:666:setwaypoint)", -- [330]
+				"18:57:02.089.106> [pointer] - - set_waypoints: 1 points, type=way (Pointer.lua:3643:set_waypoints)", -- [331]
+				"18:57:02.089.106> [pointer] - - set_waypoints: arrowpoint=New Tinkertown #895 /0 39.4,28.4, farmpoint=New Tinkertown #895 /0 39.4,28.4 (Pointer.lua:3711:set_waypoints)", -- [332]
+				"18:57:02.089.106> [waypoints] - <- done showing goal(s). (Waypoints.lua:670:setwaypoint)", -- [333]
+				"18:57:02.089.106> [waypoints] - arrowpoint New Tinkertown #895 /0 39.4,28.4, farmpoint New Tinkertown #895 /0 39.4,28.4, waypath empty (Waypoints.lua:678:setwaypoint)", -- [334]
+				"18:57:02.089.106> - FTP 3 (Waypoints.lua:725:setwaypoint)", -- [335]
+				"18:57:02.089.107> [pointer] - FindTravelPath to New Tinkertown #895 /0 39.4,28.4 (Pointer.lua:4058:FindTravelPath)", -- [336]
+				"18:57:02.089.109> [LibRover] - -> |cff00ff88FindPath|cffff88dd:  |cffaaff88New Tinkertown|cffff88dd/0 |cffffffff38.1|cffff88dd,|cffffffff40.4|cffff88dd --> |cffaaff88New Tinkertown|cffff88dd/0 |cffffffff39.4|cffff88dd,|cffffffff28.4|cffff88dd (LibRover-1.0.lua:1415:FindPath)", -- [337]
+				"18:57:02.089.109> [LibRover] - - IsDestinationImpossible? false,SAME_MAP,same map (LibRover-1.0.lua:1420:FindPath)", -- [338]
+				"18:57:02.089.109> [LibRover] - <- FindPath (LibRover-1.0.lua:1489:FindPath)", -- [339]
+				"18:57:02.089.109> [waypoints] <- SetWaypoint ends [3.62 ms] (Waypoints.lua:823:setwaypoint)", -- [340]
+				"18:57:02.089.110> [pointer] Cycling waypoint, delta 1 (Pointer.lua:4169:CycleWaypoint)", -- [341]
+				"18:57:02.089.113> [itemscore] [itemevents] BAG_UPDATE_DELAYED (Item-Events.lua:153:Debug)", -- [342]
+				"18:57:02.089.116> [LibRover] -> InitializePath (LibRover-1.0.lua:1501:InitializePath)", -- [343]
+				"18:57:02.089.117> [LibRover] [LRadv] - InitializePath: cleared old nodes, 2240 left (LibRover-1.0.lua:1517:InitializePath)", -- [344]
+				"18:57:02.089.119> [LibRover] [LRadv] - InitializePath: cleared linkage (LibRover-1.0.lua:1524:InitializePath)", -- [345]
+				"18:57:02.089.124> [LibRover] [LRadv] - Initialized end node #2241 with copy #2242 table: 000000013941F9B0 (LibRover-1.0.lua:1542:InitializePath)", -- [346]
+				"18:57:02.089.124> [LibRover] - |cffff8844 No idea where player's hearthstone is bound to: |cffff8800Gnomeregan (LibRover-1.0.lua:1240:FindBindLocation)", -- [347]
+				"18:57:02.089.127> [LibRover] [LRadv] - Initialized start node #2243 (LibRover-1.0.lua:1583:InitializePath)", -- [348]
+				"18:57:02.089.131> [LibRover] [LRadv] - InitializePath: cleared temp fields (LibRover-1.0.lua:1624:InitializePath)", -- [349]
+				"18:57:02.089.131> [LibRover] [LRadv] - NodeSetHeap clear (NodeSetHeap.lua:134:Clear)", -- [350]
+				"18:57:02.089.132> [LibRover] <- InitializePath: done (LibRover-1.0.lua:1658:InitializePath)", -- [351]
+				"18:57:02.089.132> [pointer] -> PathFoundHandler! state=progress (Pointer.lua:3929:PathFoundHandler)", -- [352]
+				"18:57:02.089.132> [pointer] <- PathFoundHandler done. (Pointer.lua:4042:PathFoundHandler)", -- [353]
+				"18:57:02.143.147> [LibRover] StepForever: initialized, proceeding (LibRover-1.0.lua:1751:<local>)", -- [354]
+				"18:57:02.143.147> [LibRover] This pass: [SUCCESS] = |cffffffff1.12|cffff88ddms. Done |cffffff884|cffff88dd calculations over |cff88ffff2|cffff88dd frames:\n compared |cff88ff887|cffff88dd nodes in |cffffffff0.02|cffff88dd ms, opened |cff88ff887|cffff88dd, closed |cff88ff884|cffff88dd \n cheapest |cffffffff0.02|cffff88dd, initial |cffffffff0.01|cffff88dd, overhead |cffffffff0.05|cffff88dd, blah |cffffffff0.02|cffff88dd, scoring |cffffffff0.08|cffff88dd, adding |cffffffff0.04|cffff88dd ms    \n calc total |cffffffff16.85|cffff88dd ms, total time |cffffffff16.87|cffff88dd ms   \n(found: YES) (LibRover-1.0.lua:2919:OnUpdate)", -- [355]
+				"18:57:02.143.147> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddNew Tinkertown 38,40|cffff88dd  (dist 0) |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2751:ReportPath)", -- [356]
+				"18:57:02.143.148> [LibRover] 1. |cff88ff88Accepted |cffeebbff`The Arts of a Priest'|cffff88dd|cffff88dd -- |cff88ccdd\"Doc\" Cogspin|cffff88dd  (dist 150) |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2751:ReportPath)", -- [357]
+				"18:57:02.143.148> [pointer] -> PathFoundHandler! state=success (Pointer.lua:3929:PathFoundHandler)", -- [358]
+				"18:57:02.143.148> [pointer] - set_waypoints: 2 points, type=route (Pointer.lua:3643:<local>)", -- [359]
+				"18:57:02.143.149> [pointer] - set_waypoints: arrowpoint=New Tinkertown #895 /0 39.4,28.4, farmpoint=New Tinkertown #895 /0 39.4,28.4 (Pointer.lua:3711:<local>)", -- [360]
+				"18:57:02.143.149> [pointer] - ShowSet route ends [1.48 ms] + ants [0.06 ms] (Pointer.lua:3917:ShowSet)", -- [361]
+				"18:57:02.143.149> [pointer] <- PathFoundHandler done. (Pointer.lua:4042:PathFoundHandler)", -- [362]
+				"18:57:03.520.521> Skipping step: 30 (complete) (ZygorGuidesViewer.lua:1598:?)", -- [363]
+				"18:57:03.520.522> Skipped goals were: [1] Talk to |cffaaffaa\"Doc\" Cogspin|cffff88dd (passive),  [2] Accepted |cffeebbff`The Arts of a Priest'|cffff88dd (complete),   (ZygorGuidesViewer.lua:1601:?)", -- [364]
+				"18:57:03.520.522> Step:GetNext: step 30 says nil so going with +1 (Step.lua:457:GetNext)", -- [365]
+				"18:57:03.520.522> SkipStep to 31 (fast) (ZygorGuidesViewer.lua:1375:SkipStep)", -- [366]
+				"18:57:03.520.522> FocusStep 31 (ZygorGuidesViewer.lua:1118:FocusStep)", -- [367]
+				"18:57:03.520.522> [step_setup] Preparing goals... (Step.lua:146:PrepareCompletion)", -- [368]
+				"18:57:03.520.522> [step_setup] Goals prepared. (Step.lua:150:PrepareCompletion)", -- [369]
+				"18:57:03.520.522> [step_setup] Step 31 prepared. (Step.lua:189:PrepareCompletion)", -- [370]
+				"18:57:03.520.522> [step_setup] Step 31 OnEnter (Step.lua:350:OnEnter)", -- [371]
+				"18:57:03.520.522> [step_setup] Clearing macros (Step.lua:435:OnEnter)", -- [372]
+				"18:57:03.520.523> [step_setup] Running goals' OnEnter (Step.lua:439:OnEnter)", -- [373]
+				"18:57:03.520.523> [step_setup] Step 31 OnEnter ended (Step.lua:445:OnEnter)", -- [374]
+				"18:57:03.520.523> Step:GetNext: step 31 says nil so going with +1 (Step.lua:457:GetNext)", -- [375]
+				"18:57:03.520.525> [waypoints] -> SetWaypoint starts: clearing. (Waypoints.lua:548:setwaypoint)", -- [376]
+				"18:57:03.520.525> [pointer] - ClearWaypoints way (Pointer.lua:567:ClearWaypoints)", -- [377]
+				"18:57:03.520.525> [pointer] - Removed DestinationWaypoint (Pointer.lua:613:RemoveWaypoint)", -- [378]
+				"18:57:03.520.525> [pointer] - ClearSet route + ants [0.08 ms] (Pointer.lua:3862:ClearSet)", -- [379]
+				"18:57:03.520.526> [waypoints] <- SetWaypoint ends [0.43 ms] (Waypoints.lua:823:setwaypoint)", -- [380]
+				"18:57:03.520.526> [waypoints] -> SetWaypoint starts: showing all step waypoints. (Waypoints.lua:563:setwaypoint)", -- [381]
+				"18:57:03.520.526> [waypoints] - Not sticky, clear out way+route: (Waypoints.lua:569:setwaypoint)", -- [382]
+				"18:57:03.520.526> [pointer] - ClearWaypoints way (Pointer.lua:567:ClearWaypoints)", -- [383]
+				"18:57:03.520.526> [waypoints] - -> showing goal(s)... (Waypoints.lua:644:setwaypoint)", -- [384]
+				"18:57:03.520.526> [waypoints] - - setting wayps: #ps=1, waypath=nil, destwaypt=nil (Waypoints.lua:666:setwaypoint)", -- [385]
+				"18:57:03.520.526> [pointer] - - set_waypoints: 1 points, type=way (Pointer.lua:3643:set_waypoints)", -- [386]
+				"18:57:03.520.526> [pointer] - - set_waypoints: arrowpoint=New Tinkertown #895 /0 41.0,34.9, farmpoint=New Tinkertown #895 /0 41.0,34.9 (Pointer.lua:3711:set_waypoints)", -- [387]
+				"18:57:03.520.526> [waypoints] - <- done showing goal(s). (Waypoints.lua:670:setwaypoint)", -- [388]
+				"18:57:03.520.526> [waypoints] - arrowpoint New Tinkertown #895 /0 41.0,34.9, farmpoint New Tinkertown #895 /0 41.0,34.9, waypath empty (Waypoints.lua:678:setwaypoint)", -- [389]
+				"18:57:03.520.526> - FTP 3 (Waypoints.lua:725:setwaypoint)", -- [390]
+				"18:57:03.520.527> [pointer] - FindTravelPath to New Tinkertown #895 /0 41.0,34.9 (Pointer.lua:4058:FindTravelPath)", -- [391]
+				"18:57:03.520.527> [LibRover] - -> |cff00ff88FindPath|cffff88dd:  |cffaaff88New Tinkertown|cffff88dd/0 |cffffffff38.1|cffff88dd,|cffffffff40.4|cffff88dd --> |cffaaff88New Tinkertown|cffff88dd/0 |cffffffff41.0|cffff88dd,|cffffffff34.9|cffff88dd (LibRover-1.0.lua:1415:FindPath)", -- [392]
+				"18:57:03.520.527> [LibRover] - - IsDestinationImpossible? false,SAME_MAP,same map (LibRover-1.0.lua:1420:FindPath)", -- [393]
+				"18:57:03.520.527> [LibRover] - <- FindPath (LibRover-1.0.lua:1489:FindPath)", -- [394]
+				"18:57:03.520.527> [waypoints] <- SetWaypoint ends [1.59 ms] (Waypoints.lua:823:setwaypoint)", -- [395]
+				"18:57:03.520.532> [LibRover] -> InitializePath (LibRover-1.0.lua:1501:InitializePath)", -- [396]
+				"18:57:03.520.533> [LibRover] [LRadv] - InitializePath: cleared old nodes, 2240 left (LibRover-1.0.lua:1517:InitializePath)", -- [397]
+				"18:57:03.520.534> [LibRover] [LRadv] - InitializePath: cleared linkage (LibRover-1.0.lua:1524:InitializePath)", -- [398]
+				"18:57:03.520.539> [LibRover] [LRadv] - Initialized end node #2241 with copy #2242 table: 0000000139423100 (LibRover-1.0.lua:1542:InitializePath)", -- [399]
+				"18:57:03.520.539> [LibRover] - |cffff8844 No idea where player's hearthstone is bound to: |cffff8800Gnomeregan (LibRover-1.0.lua:1240:FindBindLocation)", -- [400]
+				"18:57:03.520.543> [LibRover] [LRadv] - Initialized start node #2243 (LibRover-1.0.lua:1583:InitializePath)", -- [401]
+				"18:57:03.520.547> [LibRover] [LRadv] - InitializePath: cleared temp fields (LibRover-1.0.lua:1624:InitializePath)", -- [402]
+				"18:57:03.520.547> [LibRover] [LRadv] - NodeSetHeap clear (NodeSetHeap.lua:134:Clear)", -- [403]
+				"18:57:03.520.547> [LibRover] <- InitializePath: done (LibRover-1.0.lua:1658:InitializePath)", -- [404]
+				"18:57:03.520.547> [pointer] -> PathFoundHandler! state=progress (Pointer.lua:3929:PathFoundHandler)", -- [405]
+				"18:57:03.520.548> [pointer] <- PathFoundHandler done. (Pointer.lua:4042:PathFoundHandler)", -- [406]
+				"18:57:03.557.562> [LibRover] StepForever: initialized, proceeding (LibRover-1.0.lua:1751:<local>)", -- [407]
+				"18:57:03.557.562> [LibRover] This pass: [SUCCESS] = |cffffffff0.93|cffff88ddms. Done |cffffff882|cffff88dd calculations over |cff88ffff2|cffff88dd frames:\n compared |cff88ff883|cffff88dd nodes in |cffffffff0.01|cffff88dd ms, opened |cff88ff885|cffff88dd, closed |cff88ff882|cffff88dd \n cheapest |cffffffff0.01|cffff88dd, initial |cffffffff0.00|cffff88dd, overhead |cffffffff0.03|cffff88dd, blah |cffffffff0.01|cffff88dd, scoring |cffffffff0.05|cffff88dd, adding |cffffffff0.02|cffff88dd ms    \n calc total |cffffffff16.39|cffff88dd ms, total time |cffffffff16.40|cffff88dd ms   \n(found: YES) (LibRover-1.0.lua:2919:OnUpdate)", -- [408]
+				"18:57:03.557.562> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddNew Tinkertown 38,40|cffff88dd  (dist 0) |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2751:ReportPath)", -- [409]
+				"18:57:03.557.562> [LibRover] 1. |cff88ff88Practice casting Shadow Word: Pain 5 times|cffff88dd -- |cff88ccddThe Arts of a Priest|cffff88dd  (dist 86) |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2751:ReportPath)", -- [410]
+				"18:57:03.557.562> [pointer] -> PathFoundHandler! state=success (Pointer.lua:3929:PathFoundHandler)", -- [411]
+				"18:57:03.557.563> [pointer] - set_waypoints: 2 points, type=route (Pointer.lua:3643:<local>)", -- [412]
+				"18:57:03.557.564> [pointer] - set_waypoints: arrowpoint=New Tinkertown #895 /0 41.0,34.9, farmpoint=New Tinkertown #895 /0 41.0,34.9 (Pointer.lua:3711:<local>)", -- [413]
+				"18:57:03.557.564> [pointer] - ShowSet route ends [1.31 ms] + ants [0.05 ms] (Pointer.lua:3917:ShowSet)", -- [414]
+				"18:57:03.557.564> [pointer] <- PathFoundHandler done. (Pointer.lua:4042:PathFoundHandler)", -- [415]
+				"18:57:03.879.880> Skipping step: 31 (complete) (ZygorGuidesViewer.lua:1598:TryToCompleteStep)", -- [416]
+				"18:57:03.879.880> Skipped goals were: [1] Use your Shadow Word: Pain ability on the Training Dummies. (passive),  [2] Practice casting Shadow Word: Pain 5 times (complete),  [3] ? (passive),   (ZygorGuidesViewer.lua:1601:TryToCompleteStep)", -- [417]
+				"18:57:03.879.880> Step:GetNext: step 31 says nil so going with +1 (Step.lua:457:GetNext)", -- [418]
+				"18:57:03.879.880> Step:GetNext: step 32 says nil so going with +1 (Step.lua:457:GetNext)", -- [419]
+				"18:57:03.879.881> Step:GetNext: step 33 says nil so going with +1 (Step.lua:457:GetNext)", -- [420]
+				"18:57:03.879.881> Step:GetNext: step 34 says nil so going with +1 (Step.lua:457:GetNext)", -- [421]
+				"18:57:03.879.881> Step:GetNext: step 35 says nil so going with +1 (Step.lua:457:GetNext)", -- [422]
+				"18:57:03.879.881> Step:GetNext: step 36 says nil so going with +1 (Step.lua:457:GetNext)", -- [423]
+				"18:57:03.879.881> Step:GetNext: step 37 says nil so going with +1 (Step.lua:457:GetNext)", -- [424]
+				"18:57:03.879.881> Step:GetNext: step 38 says nil so going with +1 (Step.lua:457:GetNext)", -- [425]
+				"18:57:03.879.881> Step:GetNext: step 39 says nil so going with +1 (Step.lua:457:GetNext)", -- [426]
+				"18:57:03.879.881> Step:GetNext: step 40 says nil so going with +1 (Step.lua:457:GetNext)", -- [427]
+				"18:57:03.879.881> Step:GetNext: step 41 says nil so going with +1 (Step.lua:457:GetNext)", -- [428]
+				"18:57:03.879.881> Step:GetNext: step 42 says nil so going with +1 (Step.lua:457:GetNext)", -- [429]
+				"18:57:03.879.881> SkipStep to 43 (fast) (ZygorGuidesViewer.lua:1375:SkipStep)", -- [430]
+				"18:57:03.879.881> FocusStep 43 (ZygorGuidesViewer.lua:1118:FocusStep)", -- [431]
+				"18:57:03.879.881> [step_setup] Preparing goals... (Step.lua:146:PrepareCompletion)", -- [432]
+				"18:57:03.879.881> [step_setup] Goals prepared. (Step.lua:150:PrepareCompletion)", -- [433]
+				"18:57:03.879.881> [step_setup] Step 43 prepared. (Step.lua:189:PrepareCompletion)", -- [434]
+				"18:57:03.879.882> [step_setup] Step 43 OnEnter (Step.lua:350:OnEnter)", -- [435]
+				"18:57:03.879.882> [step_setup] Clearing macros (Step.lua:435:OnEnter)", -- [436]
+				"18:57:03.879.882> [step_setup] Running goals' OnEnter (Step.lua:439:OnEnter)", -- [437]
+				"18:57:03.879.882> [step_setup] goal 1 sets makeshift macro... should show up below... (Goal.lua:2439:OnEnter)", -- [438]
+				"18:57:03.879.882> [step_setup] goal 1 macro: set up macro ZGVMacro1 [121]: /target Engineer Grindspark \\n/run ZGV:MRM():CG(43,1) (Goal.lua:2510:OnEnter)", -- [439]
+				"18:57:03.879.882> [step_setup] Step 43 OnEnter ended (Step.lua:445:OnEnter)", -- [440]
+				"18:57:03.879.882> Step:GetNext: step 43 says nil so going with +1 (Step.lua:457:GetNext)", -- [441]
+				"18:57:03.879.883> [step_setup] Preparing goals... (Step.lua:146:PrepareCompletion)", -- [442]
+				"18:57:03.879.883> [step_setup] Goals prepared. (Step.lua:150:PrepareCompletion)", -- [443]
+				"18:57:03.879.883> [step_setup] Step 43 prepared. (Step.lua:189:PrepareCompletion)", -- [444]
+				"18:57:03.879.883> [waypoints] -> SetWaypoint starts: showing all step waypoints. (Waypoints.lua:563:setwaypoint)", -- [445]
+				"18:57:03.879.883> [waypoints] - Not sticky, clear out way+route: (Waypoints.lua:569:setwaypoint)", -- [446]
+				"18:57:03.879.883> [pointer] - ClearWaypoints way (Pointer.lua:567:ClearWaypoints)", -- [447]
+				"18:57:03.879.883> [pointer] - Removed DestinationWaypoint (Pointer.lua:613:RemoveWaypoint)", -- [448]
+				"18:57:03.879.884> [pointer] - ClearSet route + ants [0.10 ms] (Pointer.lua:3862:ClearSet)", -- [449]
+				"18:57:03.879.884> [waypoints] - -> showing goal(s)... (Waypoints.lua:644:setwaypoint)", -- [450]
+				"18:57:03.879.884> [waypoints] - - setting wayps: #ps=1, waypath=nil, destwaypt=nil (Waypoints.lua:666:setwaypoint)", -- [451]
+				"18:57:03.879.884> [pointer] - - set_waypoints: 1 points, type=way (Pointer.lua:3643:set_waypoints)", -- [452]
+				"18:57:03.879.884> [pointer] - - set_waypoints: arrowpoint=New Tinkertown #895 /0 40.6,28.1, farmpoint=New Tinkertown #895 /0 40.6,28.1 (Pointer.lua:3711:set_waypoints)", -- [453]
+				"18:57:03.879.884> [waypoints] - <- done showing goal(s). (Waypoints.lua:670:setwaypoint)", -- [454]
+				"18:57:03.879.884> [waypoints] - arrowpoint New Tinkertown #895 /0 40.6,28.1, farmpoint New Tinkertown #895 /0 40.6,28.1, waypath empty (Waypoints.lua:678:setwaypoint)", -- [455]
+				"18:57:03.879.884> - FTP 3 (Waypoints.lua:725:setwaypoint)", -- [456]
+				"18:57:03.879.885> [pointer] - FindTravelPath to New Tinkertown #895 /0 40.6,28.1 (Pointer.lua:4058:FindTravelPath)", -- [457]
+				"18:57:03.879.885> [LibRover] - -> |cff00ff88FindPath|cffff88dd:  |cffaaff88New Tinkertown|cffff88dd/0 |cffffffff38.1|cffff88dd,|cffffffff40.4|cffff88dd --> |cffaaff88New Tinkertown|cffff88dd/0 |cffffffff40.6|cffff88dd,|cffffffff28.1|cffff88dd (LibRover-1.0.lua:1415:FindPath)", -- [458]
+				"18:57:03.879.885> [LibRover] - - IsDestinationImpossible? false,SAME_MAP,same map (LibRover-1.0.lua:1420:FindPath)", -- [459]
+				"18:57:03.879.885> [LibRover] - <- FindPath (LibRover-1.0.lua:1489:FindPath)", -- [460]
+				"18:57:03.879.885> [waypoints] <- SetWaypoint ends [2.01 ms] (Waypoints.lua:823:setwaypoint)", -- [461]
+				"18:57:03.879.886> [waypoints] -> SetWaypoint starts: clearing. (Waypoints.lua:548:setwaypoint)", -- [462]
+				"18:57:03.879.886> [pointer] - ClearWaypoints way (Pointer.lua:567:ClearWaypoints)", -- [463]
+				"18:57:03.879.886> [pointer] - Removed DestinationWaypoint (Pointer.lua:613:RemoveWaypoint)", -- [464]
+				"18:57:03.879.886> [waypoints] <- SetWaypoint ends [0.22 ms] (Waypoints.lua:823:setwaypoint)", -- [465]
+				"18:57:03.879.886> [waypoints] -> SetWaypoint starts: showing all step waypoints. (Waypoints.lua:563:setwaypoint)", -- [466]
+				"18:57:03.879.887> [waypoints] - Not sticky, clear out way+route: (Waypoints.lua:569:setwaypoint)", -- [467]
+				"18:57:03.879.887> [pointer] - ClearWaypoints way (Pointer.lua:567:ClearWaypoints)", -- [468]
+				"18:57:03.879.887> [waypoints] - -> showing goal(s)... (Waypoints.lua:644:setwaypoint)", -- [469]
+				"18:57:03.879.887> [waypoints] - - setting wayps: #ps=1, waypath=nil, destwaypt=nil (Waypoints.lua:666:setwaypoint)", -- [470]
+				"18:57:03.879.887> [pointer] - - set_waypoints: 1 points, type=way (Pointer.lua:3643:set_waypoints)", -- [471]
+				"18:57:03.879.887> [pointer] - - set_waypoints: arrowpoint=New Tinkertown #895 /0 40.6,28.1, farmpoint=New Tinkertown #895 /0 40.6,28.1 (Pointer.lua:3711:set_waypoints)", -- [472]
+				"18:57:03.879.887> [waypoints] - <- done showing goal(s). (Waypoints.lua:670:setwaypoint)", -- [473]
+				"18:57:03.879.887> [waypoints] - arrowpoint New Tinkertown #895 /0 40.6,28.1, farmpoint New Tinkertown #895 /0 40.6,28.1, waypath empty (Waypoints.lua:678:setwaypoint)", -- [474]
+				"18:57:03.879.887> - FTP 3 (Waypoints.lua:725:setwaypoint)", -- [475]
+				"18:57:03.879.888> [pointer] - FindTravelPath to New Tinkertown #895 /0 40.6,28.1 (Pointer.lua:4058:FindTravelPath)", -- [476]
+				"18:57:03.879.888> [LibRover] - -> |cff00ff88FindPath|cffff88dd:  |cffaaff88New Tinkertown|cffff88dd/0 |cffffffff38.1|cffff88dd,|cffffffff40.4|cffff88dd --> |cffaaff88New Tinkertown|cffff88dd/0 |cffffffff40.6|cffff88dd,|cffffffff28.1|cffff88dd (LibRover-1.0.lua:1415:FindPath)", -- [477]
+				"18:57:03.879.888> [LibRover] - - IsDestinationImpossible? false,SAME_MAP,same map (LibRover-1.0.lua:1420:FindPath)", -- [478]
+				"18:57:03.879.888> [LibRover] - <- FindPath (LibRover-1.0.lua:1489:FindPath)", -- [479]
+				"18:57:03.879.888> [waypoints] <- SetWaypoint ends [1.45 ms] (Waypoints.lua:823:setwaypoint)", -- [480]
+				"18:57:03.879.892> [LibRover] -> InitializePath (LibRover-1.0.lua:1501:InitializePath)", -- [481]
+				"18:57:03.879.893> [LibRover] [LRadv] - InitializePath: cleared old nodes, 2240 left (LibRover-1.0.lua:1517:InitializePath)", -- [482]
+				"18:57:03.879.895> [LibRover] [LRadv] - InitializePath: cleared linkage (LibRover-1.0.lua:1524:InitializePath)", -- [483]
+				"18:57:03.879.900> [LibRover] [LRadv] - Initialized end node #2241 with copy #2242 table: 00000001395012A0 (LibRover-1.0.lua:1542:InitializePath)", -- [484]
+				"18:57:03.879.900> [LibRover] - |cffff8844 No idea where player's hearthstone is bound to: |cffff8800Gnomeregan (LibRover-1.0.lua:1240:FindBindLocation)", -- [485]
+				"18:57:03.879.904> [LibRover] [LRadv] - Initialized start node #2243 (LibRover-1.0.lua:1583:InitializePath)", -- [486]
+				"18:57:03.879.909> [LibRover] [LRadv] - InitializePath: cleared temp fields (LibRover-1.0.lua:1624:InitializePath)", -- [487]
+				"18:57:03.879.909> [LibRover] [LRadv] - NodeSetHeap clear (NodeSetHeap.lua:134:Clear)", -- [488]
+				"18:57:03.879.909> [LibRover] <- InitializePath: done (LibRover-1.0.lua:1658:InitializePath)", -- [489]
+				"18:57:03.879.909> [pointer] -> PathFoundHandler! state=progress (Pointer.lua:3929:PathFoundHandler)", -- [490]
+				"18:57:03.879.909> [pointer] <- PathFoundHandler done. (Pointer.lua:4042:PathFoundHandler)", -- [491]
+				"18:57:03.920.925> [LibRover] StepForever: initialized, proceeding (LibRover-1.0.lua:1751:<local>)", -- [492]
+				"18:57:03.920.926> [LibRover] This pass: [SUCCESS] = |cffffffff1.18|cffff88ddms. Done |cffffff884|cffff88dd calculations over |cff88ffff2|cffff88dd frames:\n compared |cff88ff887|cffff88dd nodes in |cffffffff0.02|cffff88dd ms, opened |cff88ff887|cffff88dd, closed |cff88ff884|cffff88dd \n cheapest |cffffffff0.02|cffff88dd, initial |cffffffff0.01|cffff88dd, overhead |cffffffff0.10|cffff88dd, blah |cffffffff0.02|cffff88dd, scoring |cffffffff0.09|cffff88dd, adding |cffffffff0.03|cffff88dd ms    \n calc total |cffffffff17.96|cffff88dd ms, total time |cffffffff17.97|cffff88dd ms   \n(found: YES) (LibRover-1.0.lua:2919:OnUpdate)", -- [493]
+				"18:57:03.920.926> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddNew Tinkertown 38,40|cffff88dd  (dist 0) |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2751:ReportPath)", -- [494]
+				"18:57:03.920.926> [LibRover] 1. |cff88ff88Turn in |cffeebbff`A Job for the Multi-Bot'|cffff88dd|cffff88dd -- |cff88ccddEngineer Grindspark|cffff88dd  (dist 158) |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2751:ReportPath)", -- [495]
+				"18:57:03.920.926> [pointer] -> PathFoundHandler! state=success (Pointer.lua:3929:PathFoundHandler)", -- [496]
+				"18:57:03.920.927> [pointer] - set_waypoints: 2 points, type=route (Pointer.lua:3643:<local>)", -- [497]
+				"18:57:03.920.928> [pointer] - set_waypoints: arrowpoint=New Tinkertown #895 /0 40.6,28.1, farmpoint=New Tinkertown #895 /0 40.6,28.1 (Pointer.lua:3711:<local>)", -- [498]
+				"18:57:03.920.928> [pointer] - ShowSet route ends [1.55 ms] + ants [0.06 ms] (Pointer.lua:3917:ShowSet)", -- [499]
+				"18:57:03.920.928> [pointer] <- PathFoundHandler done. (Pointer.lua:4042:PathFoundHandler)", -- [500]
+			},
+			["guideTurnInsOnly"] = false,
+			["guides_history"] = {
+				{
+					"LEVELING\\Eastern Kingdoms 1-60\\Dun Morogh (1-10)\\Gnome (1-5)", -- [1]
+					43, -- [2]
+				}, -- [1]
+			},
+			["guides_history_ZGV45clear"] = true,
+			["notifications"] = {
+			},
+			["taxis"] = {
+				["Lor'danel"] = true,
+				["Kharanos"] = true,
+				["The Exodar"] = true,
+				["Dolanaar"] = true,
+				["Goldshire"] = true,
+				["Gol'Bolar Quarry"] = true,
+				["Eastvale Logging Camp"] = true,
+				["Azure Watch"] = true,
+				["Darnassus"] = true,
+				["Moonglade"] = true,
+				["Ironforge"] = true,
+				["Rut'theran Village"] = true,
+				["Stormwind"] = true,
+				["Serpent's Overlook"] = false,
+			},
+			["step"] = 43,
+		},
+	},
+	["profileKeys"] = {
+		["Barewbies - Stormrage"] = "Default",
+	},
+	["factionrealm"] = {
+		["Alliance - Stormrage"] = {
+			["altNames"] = {
+				["Barewbies"] = "Barewbies",
+			},
+		},
+	},
+	["realm"] = {
+		["Stormrage"] = {
+			["gold_scan_data"] = {
+			},
+		},
+	},
+	["global"] = {
+		["itemCache"] = {
+		},
+	},
+	["profiles"] = {
+		["Barewbies - Stormrage"] = {
+			["load_im"] = true,
+			["magickey_bind"] = "",
+			["show_ui"] = true,
+			["frame_positions"] = {
+				["ZygorGuidesViewerViewer"] = {
+				},
+			},
+			["load_gold"] = true,
+			["skipauxsteps"] = true,
+			["customcolorants"] = true,
+			["fullness_search"] = 1,
+			["frame_anchor"] = {
+				"CENTER", -- [1]
+				{
+					[0] = nil --[[ skipped userdata ]],
+					["firstTimeLoaded"] = 1,
+					["variablesLoaded"] = true,
+				}, -- [2]
+				"CENTER", -- [3]
+				0, -- [4]
+				0, -- [5]
+			},
+			["im_town_alert"] = false,
+			["im_always_wait"] = false,
+			["minicons"] = true,
+			["Inventory Manager"] = {
+				["lastParentName"] = "Blizzard",
+				["showText"] = false,
+				["isSnapped"] = true,
+				["lastParent"] = {
+					[0] = nil --[[ skipped userdata ]],
+					["PortraitButton"] = {
+						[0] = nil --[[ skipped userdata ]],
+						["Highlight"] = {
+							[0] = nil --[[ skipped userdata ]],
+						},
+					},
+					["Portrait"] = {
+						[0] = nil --[[ skipped userdata ]],
+					},
+					["ClickableTitleFrame"] = {
+						[0] = nil --[[ skipped userdata ]],
+					},
+					["bags"] = {
+					},
+					["FilterDropDown"] = {
+						[0] = nil --[[ skipped userdata ]],
+						["displayMode"] = "MENU",
+						["initialize"] = nil --[[ skipped inline function ]],
+					},
+					["size"] = 16,
+					["bagsShown"] = 0,
+					["allBags"] = false,
+					["Show"] = nil --[[ skipped inline function ]],
+					["FilterIcon"] = {
+						[0] = nil --[[ skipped userdata ]],
+						["Icon"] = {
+							[0] = nil --[[ skipped userdata ]],
+						},
+					},
+					["Hide"] = nil --[[ skipped inline function ]],
+				},
+				["isSnappedSize"] = 169,
+				["im_lastWidth"] = 169,
+			},
+			["Mail"] = {
+				["previousNames"] = {
+				},
+			},
+			["skinstyle"] = "stealth",
+			["tmp__was_sheened"] = true,
+			["stickycolored"] = false,
+			["load_mail"] = true,
+			["skin"] = "default",
+			["visible"] = false,
+			["load_betaguides"] = true,
+			["debug_flags"] = {
+				["LibRover"] = {
+					["enabled"] = true,
+					["color"] = "ffffbb00",
+				},
+				["startup"] = {
+					["enabled"] = true,
+					["color"] = "ffff3300",
+				},
+				["waypoints"] = {
+					["enabled"] = true,
+					["color"] = "ff66ff00",
+				},
+				["display"] = {
+					["enabled"] = false,
+				},
+				["pointer"] = {
+					["enabled"] = true,
+					["color"] = "ff00ff00",
+				},
+				["sticky"] = {
+					["enabled"] = true,
+					["color"] = "ffff5500",
+				},
+			},
+		},
+		["Default"] = {
+			["autosell"] = true,
+			["autogearauto"] = true,
+			["dispprimary"] = {
+				["showborder"] = true,
+			},
+			["frame_positions"] = {
+				["ZygorGuidesViewerPointer_ArrowCtrl"] = {
+					"RIGHT", -- [1]
+					nil, -- [2]
+					"RIGHT", -- [3]
+					-240.566497802734, -- [4]
+					-77.4998092651367, -- [5]
+				},
+			},
+			["autogear"] = false,
+			["autoaccept"] = true,
+			["showmapbutton"] = false,
+			["mv_enabled"] = false,
+			["fixblizzardautoaccept"] = true,
+			["quiet"] = true,
+			["usernamed"] = true,
+			["frame_anchor"] = {
+				"RIGHT", -- [1]
+				nil, -- [2]
+				"RIGHT", -- [3]
+				-455.999725341797, -- [4]
+				-207.999923706055, -- [5]
+			},
+			["autoturnin"] = true,
+			["flashmapnodes"] = false,
+			["ranconfig2"] = true,
+			["auction_enable"] = false,
+			["n_nc_enabled"] = false,
+			["talenton"] = false,
+			["corpsearrowjokes"] = true,
+			["gold_tooltips_show"] = false,
+			["pathfinding_mode"] = "1fastest",
+			["autoselectitem"] = true,
+		},
+	},
+}

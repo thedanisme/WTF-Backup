@@ -1,0 +1,6 @@
+==<<color #ffb100>>BestInSlot PvP Changelog<</color>>
+===<<color #ffb100>>Version 6.0.02<</color>>
+* Bugfix when it is the only enabled module
+
+===<<color #ffb100>>Version 6.0.01<</color>>
+* Initial release of the AddOn containing Warlords Season 1

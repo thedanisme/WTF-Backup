@@ -1,0 +1,23 @@
+
+TomTomDB = {
+	["profileKeys"] = {
+		["Rotator - Turalyon"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["block"] = {
+				["enable"] = false,
+			},
+		},
+	},
+}
+TomTomWaypoints = nil
+TomTomWaypointsMF = {
+	["profileKeys"] = {
+		["Rotator - Turalyon"] = "Rotator - Turalyon",
+	},
+	["profiles"] = {
+		["Rotator - Turalyon"] = {
+		},
+	},
+}

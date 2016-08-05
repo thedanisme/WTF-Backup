@@ -1,0 +1,10 @@
+
+IskarAssistDB = {
+	["profileKeys"] = {
+		["Callil - Turalyon"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}

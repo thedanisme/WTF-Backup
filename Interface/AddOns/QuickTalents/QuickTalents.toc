@@ -1,0 +1,4 @@
+## Interface: 70000
+## Title: Quick Talents
+## SavedVariablesPerCharacter: QT_Settings
+QuickTalents.lua

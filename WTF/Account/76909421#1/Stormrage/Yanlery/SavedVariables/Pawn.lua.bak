@@ -1,0 +1,9 @@
+
+PawnOptions = {
+	["LastPlayerFullName"] = "Yanlery-Stormrage",
+	["LastKeybindingsSet"] = 1,
+}
+PawnWowheadScaleProviderOptions = {
+	["LastClass"] = "WARRIOR",
+	["LastAdded"] = 3,
+}

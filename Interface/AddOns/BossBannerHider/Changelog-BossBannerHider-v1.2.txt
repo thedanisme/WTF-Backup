@@ -1,0 +1,12 @@
+tag v1.2
+d53c6bc2cf71ad796af71c61adcf541b30caa5ce
+LuaKT <luaktt@gmail.com>
+2015-07-07 23:05:38 +0100
+
+v1.2
+
+
+--------------------
+
+LuaKT:
+	- Fixed issue with LFD

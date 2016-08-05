@@ -1,0 +1,9 @@
+
+PawnOptions = {
+	["LastPlayerFullName"] = "Brewbies-Turalyon",
+	["LastKeybindingsSet"] = 1,
+}
+PawnWowheadScaleProviderOptions = {
+	["LastClass"] = "MONK",
+	["LastAdded"] = 3,
+}

@@ -1,0 +1,11 @@
+
+AltoholicDB = {
+	["profileKeys"] = {
+		["Danoh - Stormrage"] = "Danoh - Stormrage",
+	},
+	["global"] = {
+		["options"] = {
+			["UI.Minimap.ShowIcon"] = false,
+		},
+	},
+}

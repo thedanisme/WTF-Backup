@@ -1,0 +1,20 @@
+
+DataStoreDB = {
+	["profileKeys"] = {
+		["Danoh - Stormrage"] = "Danoh - Stormrage",
+	},
+	["global"] = {
+		["Version"] = 1,
+		["Characters"] = {
+			["Default.Stormrage.Danoh"] = {
+				["guildName"] = "Horizon",
+				["faction"] = "Alliance",
+			},
+		},
+		["Guilds"] = {
+			["Default.Stormrage.Horizon"] = {
+				["faction"] = "Alliance",
+			},
+		},
+	},
+}

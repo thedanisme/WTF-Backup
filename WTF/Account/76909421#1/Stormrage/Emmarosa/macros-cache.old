@@ -1,0 +1,13 @@
+VER 3 0100000000000002 " TotT(Focus)" "INV_Misc_QuestionMark"
+#showtooltip Tricks of the Trade
+/cast [@focus] Tricks of the Trade
+END
+VER 3 0100000000000004 "Poisons" "INV_Misc_QuestionMark"
+#showtooltip
+/castsequence Deadly Poison, Crippling Poison
+END
+VER 3 0100000000000003 "SoD/SS" "INV_Misc_QuestionMark"
+#showtooltip Symbols of Death
+/use Symbols of Death
+/use Shadowstrike
+END

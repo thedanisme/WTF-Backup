@@ -1,0 +1,17 @@
+
+Postal3DB = {
+	["global"] = {
+		["BlackBook"] = {
+			["alts"] = {
+				"Brewbies|Turalyon|Horde|100|MONK", -- [1]
+			},
+		},
+	},
+	["profileKeys"] = {
+		["Brewbies - Turalyon"] = "Brewbies - Turalyon",
+	},
+	["profiles"] = {
+		["Brewbies - Turalyon"] = {
+		},
+	},
+}

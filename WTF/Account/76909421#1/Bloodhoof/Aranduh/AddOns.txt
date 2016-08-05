@@ -1,0 +1,6 @@
+ZygorGuidesViewer: disabled
+Storyline: disabled
+Omen: disabled
+QuickTalents: disabled
+SatchelScanner: disabled
+Hekili: disabled

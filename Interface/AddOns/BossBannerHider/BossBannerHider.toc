@@ -1,0 +1,12 @@
+﻿## Interface: 60200
+## Title: Boss Banner Hider
+## Version: 1.09.00
+## Author: LuaKT
+## Notes: Hides boss banner loot frame
+## SavedVariablesPerCharacter: HideBossBanner
+## X-Curse-Packaged-Version: v1.2
+## X-Curse-Project-Name: Boss Banner Hider
+## X-Curse-Project-ID: boss-banner-hider
+## X-Curse-Repository-ID: wow/boss-banner-hider/mainline
+
+BossBannerHider.lua

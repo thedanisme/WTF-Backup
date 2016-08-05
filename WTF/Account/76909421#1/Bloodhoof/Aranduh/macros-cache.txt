@@ -1,0 +1,61 @@
+VER 3 0100000000000001 " " "ABILITY_IMPALINGBOLT"
+#showtooltip
+/petattack
+/use [@mouseover,exists][@target] Arcane Shot
+END
+VER 3 0100000000000002 " " "ABILITY_WHIRLWIND"
+#showtooltip
+/stopcasting
+/stopcasting
+/cancelaura Deterrence
+/use Deterrence
+END
+VER 3 0100000000000003 " " "INV_AMMO_ARROW_03"
+#showtooltip
+/stopcasting
+/stopcasting
+/use Counter Shot
+END
+VER 3 0100000000000004 " " "INV_MISC_TRINKET6OIH_LANTERNB3"
+#showtooltip
+/use 14
+/use Draenic Agility Potion
+END
+VER 3 0100000000000005 " " "ABILITY_HUNTER_MISDIRECTION"
+#showtooltip
+/use [@focus,exists][@pet,exists][]Misdirection
+END
+VER 3 0100000000000006 " " "ABILITY_HUNTER_MISDIRECTION"
+#showtooltip
+/stopcasting
+/stopcasting
+/use [@focus,exists]Misdirection;Misdirection
+END
+VER 3 0100000000000007 " " "ABILITY_ROGUE_FEIGNDEATH"
+#showtooltip
+/stopcasting
+/stopcasting
+/use Feign Death
+/petpassive
+END
+VER 3 010000000000001A "Loque'nahak" "Ability_Mount_SiberianTigerMount"
+/way 58 22
+/way 36 30
+/way 21 70
+/way 30 66
+/way 51 81
+/way 67 80
+/way 71 72
+/tar Loque'nahak
+END
+VER 3 0100000000000008 "OpenerBM" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/castsequence reset=combat Cobra Shot, Cobra Shot, Stampede, 14, Bestial Wrath, Kill Command, Barrage
+END
+VER 3 0100000000000009 "OpenerSurv" "INV_MISC_TRINKET6OIH_LANTERNB3"
+/castsequence reset=combat 14, A Murder of Crows, Explosive Shot, Black Arrow, Arcane Shot
+END
+VER 3 010000000000001B "Spirit Mend" "INV_Misc_QuestionMark"
+#showtooltip
+/use [@player] Spirit Mend
+END

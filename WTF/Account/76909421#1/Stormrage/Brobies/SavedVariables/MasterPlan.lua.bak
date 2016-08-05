@@ -1,0 +1,8 @@
+
+MasterPlanPC = {
+	["version"] = "0.67",
+	["complete"] = {
+	},
+	["availableMissionSort"] = "threats",
+	["goldRewardThreshold"] = 0,
+}

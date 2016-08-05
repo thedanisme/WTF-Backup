@@ -1,0 +1,10 @@
+VER 3 0100000000000001 " " "INV_Misc_QuestionMark"
+#showtooltip Berserk
+/use Berserk
+/use Tiger's Fury
+/use Berserking
+/use Incarnation: Son of Ursoc
+/use Incarnation: King of the Jungle
+/use 13
+/use 14
+END

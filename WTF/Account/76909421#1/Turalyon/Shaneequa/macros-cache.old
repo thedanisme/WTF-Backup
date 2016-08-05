@@ -1,0 +1,51 @@
+VER 3 010000000000005D " " "INV_Misc_QuestionMark"
+#showtooltip
+/stopcasting
+/stopcasting
+/use Wind Shear
+END
+VER 3 010000000000004F " " "INV_Misc_QuestionMark"
+#showtooltip
+/use Ascendance
+/use Rocket Barrage(Racial)
+END
+VER 3 01000000000000C1 " " "INV_Misc_QuestionMark"
+#showtooltip
+/use [@mouseover,help,exists][]Riptide
+END
+VER 3 01000000000000C0 " " "INV_Misc_QuestionMark"
+#showtooltip
+/use [@focus,help,exists][[@mouseover,help,exists][]Earth Shield
+END
+VER 3 01000000000000BF " " "INV_Misc_QuestionMark"
+#showtooltip
+/use [@mouseover,help,exists][]Healing Wave
+END
+VER 3 01000000000000BE " " "INV_Misc_QuestionMark"
+#showtooltip
+/use [@mouseover,help,exists][]Healing Surge
+END
+VER 3 01000000000000BD " " "INV_Misc_QuestionMark"
+#showtooltip
+/use [@mouseover,help,exists][]Chain Heal
+END
+VER 3 01000000000000C2 " " "INV_Misc_QuestionMark"
+#showtooltip
+/use [@mouseover,help,exists][]Unleash Life
+END
+VER 3 0100000000000042 "Cleanse" "INV_Misc_QuestionMark"
+#showtooltip
+/use [@mouseover,help,exists][@focus,help,exists][]Cleanse Spirit
+END
+VER 3 0100000000000041 "LB/CL" "INV_Misc_QuestionMark"
+#showtooltip
+/use [nomod:alt]Lightning Bolt;[mod:alt]Chain Lightning
+END
+VER 3 01000000000000BB "ZGVMacro3" "0"
+/target Lupe
+/run ZGV:MRM():CG(10,3)
+END
+VER 3 01000000000000BC "ZGVMacro4" "0"
+/target Loup
+/run ZGV:MRM():CG(10,4)
+END

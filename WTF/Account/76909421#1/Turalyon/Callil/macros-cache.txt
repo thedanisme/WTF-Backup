@@ -1,0 +1,70 @@
+VER 3 0100000000000001 " " "SPELL_HOLY_POWERWORDSHIELD"
+#showtooltip
+/use [@mouseover,help]Power Word: Shield;[help]Power Word: Shield;Power Word: Shield
+END
+VER 3 0100000000000002 " " "SPELL_HOLY_GREATERHEAL"
+#showtooltip
+/use [@mouseover,help]Heal;[help]Heal;Heal
+END
+VER 3 0100000000000003 " " "SPELL_HOLY_DISPELMAGIC"
+#showtooltip
+/use [@mouseover][]Purify
+END
+VER 3 0100000000000004 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use [@mouseover,exists,nodead][]Penance
+END
+VER 3 0100000000000005 " " "SPELL_HOLY_PRAYEROFHEALING02"
+#showtooltip
+/use [@mouseover,help]Prayer of Healing;[help]Prayer of Healing;Prayer of Healing
+END
+VER 3 0100000000000006 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use [@mouseover,help]Pain Suppression;[help]Pain Suppression;Pain Suppression
+END
+VER 3 0100000000000007 " " "SPELL_HOLY_PRAYEROFMENDINGTGA"
+#showtooltip
+/use [@mouseover,help]Prayer of Mending;[help]Prayer of Mending;Prayer of Mending
+END
+VER 3 0100000000000008 " " "SPELL_HOLY_FLASHHEAL"
+#showtooltip
+/use [@mouseover,help]Flash Heal;[help]Flash Heal;Flash Heal
+END
+VER 3 0100000000000009 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cancelaura Dispersion
+/use Dispersion
+END
+VER 3 010000000000000A " " "PRIEST_SPELL_LEAPOFFAITH_A"
+#showtooltip
+/use [@mouseover]Leap of Faith
+END
+VER 3 010000000000000B " " "SPELL_HOLY_LAYONHANDS"
+#showtooltip
+/cancelaura Levitate
+/use Levitate
+END
+VER 3 010000000000000C " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use [@mouseover,exists,nodead][]Clarity of Will
+END
+VER 3 010000000000000D " " "INV_Misc_QuestionMark"
+#showtooltip
+/use [@mouseover,help][help][]Circle of Healing
+END
+VER 3 010000000000000E " " "INV_Misc_QuestionMark"
+#showtooltip
+/use [@mouseover,help][help][]Renew
+END
+VER 3 010000000000000F " " "INV_Misc_QuestionMark"
+#showtooltip
+/use [@mouseover,help][help][]Binding Heal
+END
+VER 3 0100000000000010 " " "INV_Misc_QuestionMark"
+#showtooltip
+/use [@mouseover,help][help][]Guardian Spirit
+END
+VER 3 0100000000000011 " " "INV_Misc_QuestionMark"
+#showtooltip
+/use [@mouseover,help][help][]Holy Word: Chastise
+END

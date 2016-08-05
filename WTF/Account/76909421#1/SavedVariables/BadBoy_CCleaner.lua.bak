@@ -1,0 +1,23 @@
+
+BADBOY_CCLEANER = {
+	"*freelances*", -- [1]
+	"<blood promise*>", -- [2]
+	"<browncoats>", -- [3]
+	"<from the light>", -- [4]
+	"<journey>", -- [5]
+	"<sacred order>", -- [6]
+	"<tnt>", -- [7]
+	"anal", -- [8]
+	"and many other transmog", -- [9]
+	"imperium", -- [10]
+	"lf guild", -- [11]
+	"offering h-hellfire", -- [12]
+	"offering n-hellfire", -- [13]
+	"offering normal & heroic", -- [14]
+	"offering normal archimonde", -- [15]
+	"rape", -- [16]
+	"sudden clarity", -- [17]
+	"wtb a guild", -- [18]
+	"wtb guild", -- [19]
+}
+BADBOY_NOICONS = true

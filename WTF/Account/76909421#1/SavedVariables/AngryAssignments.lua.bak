@@ -1,0 +1,21 @@
+
+AngryAssign_Pages = {
+}
+AngryAssign_State = {
+	["directionUp"] = true,
+	["locked"] = true,
+	["display"] = {
+		["y"] = -157.000091552734,
+		["x"] = -21.9993896484375,
+		["point"] = "RIGHT",
+		["scale"] = 1,
+	},
+	["tree"] = {
+	},
+	["window"] = {
+	},
+}
+AngryAssign_Config = {
+	["fontName"] = "Expressway",
+	["allowall"] = true,
+}

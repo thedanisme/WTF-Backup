@@ -1,0 +1,106 @@
+
+DataStore_TalentsDB = {
+	["profileKeys"] = {
+		["Danoh - Stormrage"] = "Danoh - Stormrage",
+	},
+	["global"] = {
+		["Characters"] = {
+			["Default.Stormrage.Danoh"] = {
+				["Class"] = "HUNTER",
+				["lastUpdate"] = 1460976832,
+				["GlyphList"] = {
+					11, -- [1]
+					5818, -- [2]
+					16378, -- [3]
+					5642, -- [4]
+					10842, -- [5]
+					5722, -- [6]
+					5738, -- [7]
+					5690, -- [8]
+					5706, -- [9]
+					17674, -- [10]
+					5802, -- [11]
+					5754, -- [12]
+					5770, -- [13]
+					5658, -- [14]
+					11098, -- [15]
+					5914, -- [16]
+					5674, -- [17]
+					11130, -- [18]
+					5786, -- [19]
+					5834, -- [20]
+					5850, -- [21]
+					18090, -- [22]
+					5946, -- [23]
+					17634, -- [24]
+					18098, -- [25]
+					11058, -- [26]
+					13, -- [27]
+					16364, -- [28]
+					11084, -- [29]
+					7100, -- [30]
+					5628, -- [31]
+					16860, -- [32]
+					7068, -- [33]
+					7052, -- [34]
+					7036, -- [35]
+					7084, -- [36]
+					5868, -- [37]
+					18052, -- [38]
+				},
+				["ActiveTalents"] = 1,
+			},
+		},
+		["Reference"] = {
+			["GlyphNames"] = {
+				[353] = "Liberation",
+				[354] = "Mending",
+				[355] = "Distracting Shot",
+				[356] = "Endless Wrath",
+				[357] = "Deterrence",
+				[358] = "Disengage",
+				[359] = "Freezing Trap",
+				[360] = "Ice Trap",
+				[361] = "Misdirection",
+				[362] = "Explosive Trap",
+				[363] = "Animal Bond",
+				[364] = "No Escape",
+				[365] = "Pathfinding",
+				[366] = "Tame Beast",
+				[369] = "Mend Pet",
+				[371] = "Solace",
+				[677] = "Chimaera Shot",
+				[439] = "Revive Pet",
+				[440] = "Lesser Proportion",
+				[1102] = "Lean Pack",
+				[442] = "Stampede",
+				[443] = "Aspect of the Pack",
+				[691] = "Tranquilizing Shot",
+				[693] = "Master's Call",
+				[695] = "Mirrored Blades",
+				[1130] = "Quick Revival",
+				[1022] = "Aspect of the Beast",
+				[1131] = "Snake Trap",
+				[1128] = "Play Dead",
+				[1104] = "Enduring Deceit",
+				[441] = "Fireworks",
+				[1053] = "Fetch",
+				[692] = "Aspect of the Cheetah",
+				[351] = "Aspects",
+				[352] = "Camouflage",
+				[1023] = "Black Ice",
+			},
+		},
+	},
+}
+DataStore_TalentsRefDB = {
+	["profileKeys"] = {
+		["Danoh - Stormrage"] = "Danoh - Stormrage",
+	},
+	["global"] = {
+		["HUNTER"] = {
+			["Locale"] = "enUS",
+			["Version"] = 21463,
+		},
+	},
+}

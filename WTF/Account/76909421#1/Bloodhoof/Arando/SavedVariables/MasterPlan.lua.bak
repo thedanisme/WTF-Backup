@@ -1,0 +1,12 @@
+
+MasterPlanPC = {
+	["moE"] = 0.69,
+	["moN"] = 1,
+	["moV"] = 0.2139,
+	["availableMissionSort"] = "threats",
+	["version"] = "0.67",
+	["moC"] = 0,
+	["complete"] = {
+	},
+	["goldCollected"] = 600000,
+}

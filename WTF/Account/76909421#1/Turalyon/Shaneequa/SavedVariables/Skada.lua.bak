@@ -1,0 +1,257 @@
+
+SkadaPerCharDB = {
+	["total"] = {
+		["healingabsorbed"] = 0,
+		["dispells"] = 0,
+		["ccbreaks"] = 0,
+		["time"] = 0,
+		["interrupts"] = 0,
+		["damage"] = 18429,
+		["players"] = {
+			{
+				["healingabsorbed"] = 0,
+				["class"] = "SHAMAN",
+				["damaged"] = {
+				},
+				["auras"] = {
+					["Glyph of Lightning Shield"] = {
+						["name"] = "Glyph of Lightning Shield",
+						["active"] = 0,
+						["id"] = 142912,
+						["auratype"] = "BUFF",
+						["uptime"] = 103,
+					},
+				},
+				["role"] = "NONE",
+				["time"] = 102,
+				["interrupts"] = 0,
+				["maxhp"] = 69377,
+				["power"] = {
+				},
+				["damage"] = 18429,
+				["damagespells"] = {
+					["Lightning Shield"] = {
+						["min"] = 522,
+						["critical"] = 8,
+						["hit"] = 19,
+						["totalhits"] = 27,
+						["id"] = 26364,
+						["max"] = 1045,
+						["damage"] = 18429,
+					},
+				},
+				["deaths"] = {
+					{
+						["ts"] = 1442697545.01101,
+						["maxhp"] = 69377,
+						["log"] = {
+							{
+								["ts"] = 1442697545.01101,
+								["spellname"] = "Shaneequa dies",
+								["hp"] = 0,
+								["spellid"] = 41220,
+							}, -- [1]
+							{
+								["ts"] = 1442697530.35502,
+								["amount"] = -527,
+								["hp"] = 11140,
+								["spellid"] = 88163,
+								["srcname"] = "Bladespire Mauler",
+							}, -- [2]
+							{
+								["ts"] = 1442697531.85603,
+								["amount"] = -642,
+								["hp"] = 10613,
+								["spellid"] = 88163,
+								["srcname"] = "Bladespire Mauler",
+							}, -- [3]
+							{
+								["ts"] = 1442697532.95504,
+								["amount"] = -750,
+								["hp"] = 9221,
+								["spellid"] = 162127,
+								["srcname"] = "Bladespire Mauler",
+							}, -- [4]
+							{
+								["ts"] = 1442697534.37205,
+								["amount"] = -1094,
+								["hp"] = 9221,
+								["spellid"] = 88163,
+								["srcname"] = "Bladespire Mauler",
+							}, -- [5]
+							{
+								["ts"] = 1442697537.48306,
+								["amount"] = -525,
+								["hp"] = 8127,
+								["spellid"] = 88163,
+								["srcname"] = "Bladespire Mauler",
+							}, -- [6]
+							{
+								["ts"] = 1442697537.48307,
+								["amount"] = -1127,
+								["hp"] = 8127,
+								["spellid"] = 88163,
+								["srcname"] = "Bladespire Mauler",
+							}, -- [7]
+							{
+								["ts"] = 1442697540.49408,
+								["amount"] = -652,
+								["hp"] = 6475,
+								["spellid"] = 88163,
+								["srcname"] = "Bladespire Mauler",
+							}, -- [8]
+							{
+								["ts"] = 1442697540.49409,
+								["amount"] = -1071,
+								["hp"] = 6475,
+								["spellid"] = 88163,
+								["srcname"] = "Bladespire Mauler",
+							}, -- [9]
+							{
+								["ts"] = 1442697541.9681,
+								["amount"] = -640,
+								["hp"] = 4752,
+								["spellid"] = 88163,
+								["srcname"] = "Bladespire Mauler",
+							}, -- [10]
+							{
+								["ts"] = 1442697541.96811,
+								["amount"] = -1571,
+								["hp"] = 4752,
+								["spellid"] = 88163,
+								["srcname"] = "Bladespire Mauler",
+							}, -- [11]
+							{
+								["ts"] = 1442697543.48612,
+								["amount"] = -710,
+								["hp"] = 2541,
+								["spellid"] = 88163,
+								["srcname"] = "Bladespire Mauler",
+							}, -- [12]
+							{
+								["ts"] = 1442697543.48613,
+								["amount"] = -1266,
+								["hp"] = 2541,
+								["spellid"] = 88163,
+								["srcname"] = "Bladespire Mauler",
+							}, -- [13]
+							{
+								["ts"] = 1442697544.88714,
+								["amount"] = -670,
+								["hp"] = 565,
+								["spellid"] = 88163,
+								["srcname"] = "Bladespire Mauler",
+							}, -- [14]
+							{
+								["ts"] = 1442697544.88715,
+								["amount"] = -1702,
+								["hp"] = 565,
+								["spellid"] = 88163,
+								["srcname"] = "Bladespire Mauler",
+							}, -- [15]
+							["pos"] = 2,
+						},
+					}, -- [1]
+				},
+				["damagetaken"] = 71184,
+				["deathlog"] = {
+				},
+				["id"] = "Player-3685-080AA234",
+				["overhealing"] = 0,
+				["damagetakenspells"] = {
+					["Backhand"] = {
+						["crushing"] = 0,
+						["id"] = 162127,
+						["min"] = 742,
+						["absorbed"] = 0,
+						["critical"] = 0,
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["name"] = "Backhand",
+						["blocked"] = 0,
+						["totalhits"] = 6,
+						["resisted"] = 0,
+						["max"] = 805,
+						["damage"] = 4648,
+					},
+					["Wild Flail"] = {
+						["crushing"] = 0,
+						["id"] = 162133,
+						["min"] = 1305,
+						["absorbed"] = 0,
+						["critical"] = 0,
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["name"] = "Wild Flail",
+						["blocked"] = 0,
+						["totalhits"] = 5,
+						["resisted"] = 0,
+						["max"] = 1468,
+						["damage"] = 6993,
+					},
+					["Attack"] = {
+						["crushing"] = 0,
+						["id"] = 6603,
+						["min"] = 486,
+						["absorbed"] = 0,
+						["critical"] = 3,
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["name"] = "Attack",
+						["blocked"] = 0,
+						["totalhits"] = 64,
+						["resisted"] = 0,
+						["max"] = 2683,
+						["damage"] = 59543,
+					},
+				},
+				["healingspells"] = {
+				},
+				["shielding"] = 0,
+				["name"] = "Shaneequa",
+				["healing"] = 0,
+				["healed"] = {
+				},
+				["dispells"] = 0,
+				["ccbreaks"] = 0,
+				["multistrikes"] = 0,
+			}, -- [1]
+		},
+		["deaths"] = 1,
+		["mobs"] = {
+			["Bladespire Mauler"] = {
+				["players"] = {
+					["Shaneequa"] = {
+						["taken"] = 18429,
+						["done"] = 71184,
+						["role"] = "NONE",
+						["class"] = "SHAMAN",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 18429,
+				["done"] = 71184,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+		},
+		["mobtaken"] = 18429,
+		["healing"] = 0,
+		["power"] = {
+		},
+		["multistrikes"] = 0,
+		["overhealing"] = 0,
+		["shielding"] = 0,
+		["name"] = "Total",
+		["starttime"] = 1442697443,
+		["damagetaken"] = 71184,
+		["mobhdone"] = 0,
+		["last_action"] = 1442697443,
+		["mobdone"] = 71184,
+	},
+	["sets"] = {
+	},
+}

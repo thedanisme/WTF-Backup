@@ -1,0 +1,9 @@
+VER 3 0100000000000002 " " "INV_Misc_QuestionMark"
+#showtooltip Tricks of the Trade
+/cast [@focus] Tricks of the Trade
+END
+VER 3 0100000000000001 " " "INV_Misc_QuestionMark"
+#showtooltip Vendetta
+/cast Shadow Reflection
+/cast Vendetta
+END

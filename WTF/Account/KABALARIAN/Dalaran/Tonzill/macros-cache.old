@@ -1,0 +1,4 @@
+VER 3 0100000000000001 "ZGVMacro1" "0"
+/target Skuerto
+/run ZGV:MRM():CG(1,1)
+END

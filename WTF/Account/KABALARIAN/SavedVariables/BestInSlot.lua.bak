@@ -1,0 +1,10 @@
+
+BestInSlotDB = {
+	["profileKeys"] = {
+		["Tonzill - Dalaran"] = "Tonzill - Dalaran",
+	},
+	["profiles"] = {
+		["Tonzill - Dalaran"] = {
+		},
+	},
+}

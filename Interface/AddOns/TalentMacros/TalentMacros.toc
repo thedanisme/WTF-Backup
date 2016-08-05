@@ -1,0 +1,15 @@
+## Interface: 70000
+## Title: TalentMacros
+## Notes: Automagical macros for each talent tier.
+## Author: Neb
+## Version: r27
+## OptionalDeps: Ace3, LibDualSpec-1.0
+## SavedVariables: TalentMacrosDB
+## X-Curse-Packaged-Version: r27
+## X-Curse-Project-Name: TalentMacros
+## X-Curse-Project-ID: talentmacros
+## X-Curse-Repository-ID: wow/talentmacros/mainline
+
+embeds.xml
+
+TalentMacros.lua

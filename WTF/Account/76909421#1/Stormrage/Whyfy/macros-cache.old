@@ -1,0 +1,62 @@
+VER 3 0100000000000001 " " "SPELL_HOLY_PURIFY"
+#showtooltip
+/cast [@mouseover,help] Cleanse; [help] Cleanse; CLeanse
+END
+VER 3 0100000000000002 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use [@mouseover,help]Divine Light;[help]Divine Light;Divine Light
+END
+VER 3 0100000000000003 " " "SPELL_HOLY_UNYIELDINGFAITH"
+#showtooltip
+/use [@mouseover,harm][]Reckoning
+END
+VER 3 0100000000000004 " " "INV_Misc_QuestionMark"
+#showtooltip
+/use [nomod]Crusader Strike;[mod]Hammer of the Righteous
+END
+VER 3 0100000000000005 " " "SPELL_HOLY_LAYONHANDS"
+#showtooltip
+/use [@mouseover,help][@target,help][@player][]Lay on Hands
+END
+VER 3 0100000000000006 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use [@mouseover,help]Holy Light;[help]Holy Light;Holy Light
+END
+VER 3 0100000000000007 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use [@mouseover,help]Holy Shock;[help]Holy Shock;Holy Shock
+END
+VER 3 0100000000000008 " " "INV_HELMET_96"
+#showtooltip
+/use [@player] Word of Glory
+END
+VER 3 0100000000000009 " " "SPELL_HOLY_DIVINESHIELD"
+#showtooltip Divine Shield
+/cancelaura Hand of Protection
+/cast Divine Shield
+/cancelaura Divine Shield
+END
+VER 3 010000000000000A " " "SPELL_HOLY_SEALOFSACRIFICE"
+#showtooltip
+/use [@mouseover,help]Hand of Sacrifice;[help]Hand of Sacrifice;Hand of Sacrifice
+END
+VER 3 010000000000000B " " "SPELL_HOLY_SEALOFSALVATION"
+#showtooltip
+/use [@mouseover,help]Hand of Salvation;[help]Hand of Salvation;Hand of Salvation
+END
+VER 3 010000000000000C " " "SPELL_HOLY_FLASHHEAL"
+#showtooltip
+/use [@mouseover,help]Flash of Light;[help]Flash of Light;Flash of Light
+END
+VER 3 010000000000000D " " "SPELL_HOLY_SEALOFPROTECTION"
+#showtooltip
+/use [@mouseover,help]Hand of Protection;[help]Hand of Protection;Hand of Protection
+END
+VER 3 010000000000000E " " "SPELL_HOLY_SEALOFVALOR"
+#showtooltip
+/use [@mouseover,help]Hand of Freedom;[help]Hand of Freedom;Hand of Freedom
+END
+VER 3 010000000000000F " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use [@mouseover,help]Holy Radiance;[help]Holy Radiance;Holy Radiance
+END

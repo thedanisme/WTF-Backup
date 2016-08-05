@@ -1,0 +1,64 @@
+VER 3 0100000000000010 " " "INV_Misc_QuestionMark"
+#showtooltip Legacy of the White Tiger
+/use Legacy of the White Tiger
+/cancelaura Hand of Protection
+END
+VER 3 010000000000000E " " "INV_Misc_QuestionMark"
+#showtooltip Brawler's Bottomless Draenic Agility Potion
+/use Brawler's Bottomless Draenic Agility Potion
+/use 14
+END
+VER 3 0100000000000001 " Detox" "INV_Misc_QuestionMark"
+#showtooltip
+/use [@mouseover,exists,help][@player][]Detox
+END
+VER 3 0100000000000008 "Despawn Ox" "Ability_Monk_ClashingOxCharge"
+/click TotemFrameTotem1 RightButton
+END
+VER 3 0100000000000004 "Fort Brew" "INV_Misc_QuestionMark"
+#showtooltip
+/use Fortifying Brew
+/use 14
+END
+VER 3 0100000000000005 "Guard/cancel BOP" "INV_Misc_QuestionMark"
+#showtooltip
+/cancelaura Hand of Protection
+/use Guard
+END
+VER 3 0100000000000006 "Jab/Cancel BoP" "INV_Misc_QuestionMark"
+#showtooltip
+/cancelaura Hand of Protection
+/cancelaura Misdirection
+/run SetRaidTarget("PLAYER",0)
+/use Jab
+END
+VER 3 0100000000000003 "Provoke" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [nomod,@mouseover,harm,exists][nomod] Provoke
+/stopmacro [nomod]
+/target Black Ox Statue
+/cast Provoke
+/targetlasttarget
+END
+VER 3 010000000000000B "Serenity Spam" "INV_Misc_QuestionMark"
+#showtooltip Serenity
+/use Serenity
+/use Blackout Kick
+/use Purifying Brew
+END
+VER 3 0100000000000007 "Tiger's Lust" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@mouseover,help][@target,help][@player]Tiger's Lust
+END
+VER 3 010000000000000C "TransferSequence" "INV_Misc_QuestionMark"
+#showtooltip
+/castsequence Transcendence, Transcendence: Transfer
+END
+VER 3 0100000000000002 "Trinket" "INV_Misc_QuestionMark"
+#showtooltip
+/use 14
+END
+VER 3 0100000000000009 "ZS Focus" "ability_monk_forcesphere"
+#showtooltip
+/use [@focus,mod][]Zen Sphere
+END

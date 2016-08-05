@@ -1,0 +1,1 @@
+BetterAddonList: enabled

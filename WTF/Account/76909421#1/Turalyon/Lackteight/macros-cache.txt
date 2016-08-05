@@ -1,0 +1,37 @@
+VER 3 0100000000000006 " " "SPELL_SHADOW_RAINOFFIRE"
+#showtooltip Rain of Fire
+/use Tiny Treasure Chest
+/use Rain of Fire
+END
+VER 3 0100000000000008 " " "INV_Misc_QuestionMark"
+#showtooltip [talent:7/1] Grimoire: Felguard; [talent:7/2] Grimoire: Felguard; [talent:7/3] Grimoire: Doomguard
+/cast [talent:7/1] Grimoire: Felguard; [talent:7/2] Grimoire: Felguard; [talent:7/3] Grimoire: Doomguard
+END
+VER 3 0100000000000007 " " "SPELL_SHADOW_SOULGEM"
+#showtooltip
+/use [@mouseover,help,exists][]Soulstone
+END
+VER 3 010000000000006D " " "INV_Misc_QuestionMark"
+#showtooltip Dark Soul: Misery
+/use Dark Soul: Misery
+/use Grimoire: Doomguard
+/use 14
+/use 13
+END
+VER 3 0100000000000005 " " "ABILITY_WARLOCK_BANEOFHAVOC"
+#showtooltip
+/use [@focus,exists][@mouseover,exists][] Havoc
+END
+VER 3 010000000000001F " PetControl" "Ability_Pet_Baneling"
+/petattack [nomod]
+/petfollow [mod:ctrl]
+/petmoveto [mod:alt]
+END
+VER 3 0100000000000043 "GroupPet" "Spell_ChargePositive"
+/petautocastoff [group]Threatening Presence
+/petautocaston [nogroup]Threatening Presence
+END
+VER 3 010000000000006C "ZGVMacro2" "0"
+/target Invalidus
+/run ZGV:MRM():CG(117,2)
+END

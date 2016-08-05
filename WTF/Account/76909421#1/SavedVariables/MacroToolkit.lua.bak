@@ -1,0 +1,10 @@
+
+MacroToolkitDB = {
+	["profileKeys"] = {
+		["Knutts - Turalyon"] = "profile",
+	},
+	["profiles"] = {
+		["profile"] = {
+		},
+	},
+}

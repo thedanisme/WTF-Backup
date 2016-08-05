@@ -1,0 +1,26 @@
+VER 3 0100000000000006 " " "ABILITY_WARRIOR_VIGILANCE"
+#showtooltip
+/use [@mouseover,help,exists][@focus,help,exists][]Vigilance
+END
+VER 3 0100000000000004 " " "ABILITY_WARRIOR_VICTORYRUSH"
+#showtooltip
+/use [@mouseover,help][] Intervene
+END
+VER 3 0100000000000005 " " "SPELL_NATURE_REINCARNATION"
+#showtooltip
+/use [@mouseover,harm][]Taunt
+END
+VER 3 0100000000000007 "DPS CDs" "Ability_Vehicle_DemolisherFlameCatapult"
+#showtooltip
+/use Recklessness
+/use Blood Fury
+/use Bloodbath
+/use Avatar
+/use 13
+/use 14
+END
+VER 3 0100000000000009 "T7/TC" "INV_Misc_QuestionMark"
+#showtooltip
+/use [nomod]Thunder Clap
+/use [mod,talent:7/1]Anger Management;[mod,talent:7/2]Ravager;[mod,talent:7/3]Gladiator's Resolve
+END

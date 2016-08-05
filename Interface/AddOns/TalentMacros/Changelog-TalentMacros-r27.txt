@@ -1,0 +1,26 @@
+------------------------------------------------------------------------
+r27 | nebula169 | 2016-07-25 21:54:03 +0000 (Mon, 25 Jul 2016) | 1 line
+Changed paths:
+   M /trunk/TalentMacros.lua
+
+fix setting an invalid macro icon
+------------------------------------------------------------------------
+r26 | nebula169 | 2016-07-24 21:35:31 +0000 (Sun, 24 Jul 2016) | 2 lines
+Changed paths:
+   M /trunk/TalentMacros.lua
+
+- don't disable the "Create Macros" button if they are already set, print a message saying they are if clicked again
+- use the talent icon for macros that aren't a valid spell (ie, passives) or if you don't use #show(toolip) in the macro text
+------------------------------------------------------------------------
+r25 | nebula169 | 2016-07-21 17:07:06 +0000 (Thu, 21 Jul 2016) | 1 line
+Changed paths:
+   M /trunk/TalentMacros.toc
+
+Bump TOC for 7.0
+------------------------------------------------------------------------
+r24 | nebula169 | 2015-06-25 01:59:09 +0000 (Thu, 25 Jun 2015) | 1 line
+Changed paths:
+   M /trunk/TalentMacros.toc
+
+bump toc
+------------------------------------------------------------------------

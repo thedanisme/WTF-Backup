@@ -1,0 +1,19 @@
+
+HandyNotesDB = {
+	["profileKeys"] = {
+		["Callil - Turalyon"] = "Callil - Turalyon",
+	},
+	["profiles"] = {
+		["Callil - Turalyon"] = {
+		},
+	},
+}
+HandyNotes_HandyNotesDB = {
+	["profileKeys"] = {
+		["Callil - Turalyon"] = "Callil - Turalyon",
+	},
+	["profiles"] = {
+		["Callil - Turalyon"] = {
+		},
+	},
+}

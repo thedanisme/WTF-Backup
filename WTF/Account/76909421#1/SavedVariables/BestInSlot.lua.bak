@@ -1,0 +1,39 @@
+
+BestInSlotDB = {
+	["char"] = {
+		["Callil - Turalyon"] = {
+			["windowpos"] = {
+				["relativeTo"] = "UIParent",
+				["point"] = "TOPLEFT",
+				["relativePoint"] = "TOPLEFT",
+				["xOffset"] = 200,
+				["yOffset"] = -250.000015258789,
+			},
+			["tutorials"] = {
+				["BiS manager"] = {
+					true, -- [1]
+				},
+			},
+			["selected"] = {
+				"WoD", -- [1]
+				60200, -- [2]
+				"HFC", -- [3]
+				[5] = 2,
+				[6] = 257,
+			},
+			["options"] = {
+				["minimapButton"] = false,
+			},
+		},
+	},
+	["global"] = {
+		["tutorials"] = false,
+	},
+	["profileKeys"] = {
+		["Callil - Turalyon"] = "Callil - Turalyon",
+	},
+	["profiles"] = {
+		["Callil - Turalyon"] = {
+		},
+	},
+}

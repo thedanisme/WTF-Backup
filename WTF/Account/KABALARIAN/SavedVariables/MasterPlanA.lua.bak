@@ -1,0 +1,9 @@
+
+MasterPlanAG = {
+	["Dalaran"] = {
+		["Tonzill"] = {
+			["class"] = "MAGE",
+			["faction"] = "Alliance",
+		},
+	},
+}

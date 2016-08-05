@@ -1,0 +1,17 @@
+
+Postal3DB = {
+	["global"] = {
+		["BlackBook"] = {
+			["alts"] = {
+				"Tonzill|Dalaran|Alliance|28|MAGE", -- [1]
+			},
+		},
+	},
+	["profileKeys"] = {
+		["Tonzill - Dalaran"] = "Tonzill - Dalaran",
+	},
+	["profiles"] = {
+		["Tonzill - Dalaran"] = {
+		},
+	},
+}

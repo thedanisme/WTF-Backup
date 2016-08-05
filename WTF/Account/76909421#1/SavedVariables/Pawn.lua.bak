@@ -1,0 +1,696 @@
+
+PawnCommon = {
+	["Digits"] = 1,
+	["ShowSpace"] = true,
+	["AlignNumbersRight"] = true,
+	["ShowItemID"] = false,
+	["ShowValuesForUpgradesOnly"] = false,
+	["Debug"] = false,
+	["ColorTooltipBorder"] = true,
+	["ShowTooltipIcons"] = true,
+	["ShownGettingStarted"] = true,
+	["ShowSocketingAdvisor"] = true,
+	["Scales"] = {
+		["\"Wowhead\":ShamanEnhancement"] = {
+			["Color"] = "6e95ff",
+			["LocalizedName"] = "Shaman: enhancement",
+			["DoNotShow2HUpgrades"] = true,
+			["DoNotShow1HUpgrades"] = false,
+			["NormalizationFactor"] = 1,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "Wowhead",
+			["UnenchantedColor"] = "526fbf",
+			["PerCharacterOptions"] = {
+			},
+		},
+		["\"Wowhead\":DeathKnightUnholyDps"] = {
+			["Color"] = "ff4d6b",
+			["LocalizedName"] = "DK: unholy",
+			["DoNotShow2HUpgrades"] = false,
+			["DoNotShow1HUpgrades"] = true,
+			["NormalizationFactor"] = 1,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "Wowhead",
+			["UnenchantedColor"] = "bf3950",
+			["PerCharacterOptions"] = {
+			},
+		},
+		["\"Wowhead\":RogueAssassination"] = {
+			["Color"] = "fff569",
+			["LocalizedName"] = "Rogue: assassination",
+			["DoNotShow2HUpgrades"] = true,
+			["DoNotShow1HUpgrades"] = false,
+			["NormalizationFactor"] = 1,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "Wowhead",
+			["UnenchantedColor"] = "bfb74e",
+			["PerCharacterOptions"] = {
+			},
+		},
+		["\"Wowhead\":WarriorArms"] = {
+			["Color"] = "c79c6e",
+			["LocalizedName"] = "Warrior: arms",
+			["DoNotShow2HUpgrades"] = false,
+			["DoNotShow1HUpgrades"] = true,
+			["NormalizationFactor"] = 1,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "Wowhead",
+			["UnenchantedColor"] = "957552",
+			["PerCharacterOptions"] = {
+			},
+		},
+		["\"Wowhead\":WarlockDestruction"] = {
+			["Color"] = "bca5ff",
+			["LocalizedName"] = "Warlock: destruction",
+			["DoNotShow2HUpgrades"] = false,
+			["DoNotShow1HUpgrades"] = false,
+			["NormalizationFactor"] = 1,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "Wowhead",
+			["UnenchantedColor"] = "8d7bbf",
+			["PerCharacterOptions"] = {
+			},
+		},
+		["\"Wowhead\":MonkMistweaver"] = {
+			["Color"] = "00ff96",
+			["LocalizedName"] = "Monk: mistweaver",
+			["DoNotShow2HUpgrades"] = false,
+			["DoNotShow1HUpgrades"] = false,
+			["NormalizationFactor"] = 1,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "Wowhead",
+			["UnenchantedColor"] = "00bf70",
+			["PerCharacterOptions"] = {
+			},
+		},
+		["\"Wowhead\":PaladinTank"] = {
+			["Color"] = "f58cba",
+			["LocalizedName"] = "Paladin: tank",
+			["DoNotShow2HUpgrades"] = true,
+			["DoNotShow1HUpgrades"] = false,
+			["NormalizationFactor"] = 1,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "Wowhead",
+			["UnenchantedColor"] = "b7698b",
+			["PerCharacterOptions"] = {
+			},
+		},
+		["Priest: CoP"] = {
+			["NormalizationFactor"] = 1,
+			["Values"] = {
+				["Intellect"] = 1,
+				["IsFist"] = -1000000,
+				["Is2HMace"] = -1000000,
+				["CritRating"] = 0.76,
+				["HasteRating"] = 0.85,
+				["MasteryRating"] = 0.62,
+				["IsCrossbow"] = -1000000,
+				["IsPolearm"] = -1000000,
+				["IsGun"] = -1000000,
+				["Is2HAxe"] = -1000000,
+				["IsPlate"] = -1000000,
+				["IsBow"] = -1000000,
+				["IsMail"] = -1000000,
+				["IsSword"] = -1000000,
+				["IsLeather"] = -1000000,
+				["Multistrike"] = 0.66,
+				["IsAxe"] = -1000000,
+				["IsOffHand"] = -1000000,
+				["Is2HSword"] = -1000000,
+				["SpellPower"] = 0.91,
+				["IsShield"] = -1000000,
+				["Versatility"] = 0.64,
+			},
+			["Color"] = "e08eb8",
+			["UnenchantedColor"] = "a86a8a",
+			["PerCharacterOptions"] = {
+				["Callil-Turalyon"] = {
+					["Visible"] = true,
+					["BestItems"] = {
+						["INVTYPE_HEAD"] = {
+							98.8345588235294, -- [1]
+							"item:128128:0:0:0:0:0:0:0:0:258:0:4:0:0:0:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_FEET"] = {
+							64.0367647058824, -- [1]
+							"item:113942:0:0:0:0:0:0:0:0:258:0:3:0:0:0:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_2HWEAPON"] = {
+							449.628676470588, -- [1]
+							"item:113134:0:0:0:0:0:0:0:0:258:0:13:3:620:530:31:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_CLOAK"] = {
+							32.9926470588235, -- [1]
+							"item:127221:0:0:0:0:0:0:0:0:258:512:22:1:615:100:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_FINGER"] = {
+							44, -- [1]
+							"item:124195:0:0:0:0:0:0:0:0:258:0:3:1:560:0:0:0", -- [2]
+							0, -- [3]
+							39.0992647058824, -- [4]
+							"item:128114:0:0:0:0:0:0:0:0:258:0:4:0:0:0:0:0", -- [5]
+							0, -- [6]
+						},
+						["INVTYPE_HAND"] = {
+							79.8878676470588, -- [1]
+							"item:128069:0:0:0:0:0:0:0:0:258:0:4:0:0:0:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_WRIST"] = {
+							42.2058823529412, -- [1]
+							"item:116007:0:0:0:0:0:0:0:0:258:0:4:1:40:0:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_WAIST"] = {
+							68.1029411764706, -- [1]
+							"item:128089:0:0:0:0:0:0:0:0:258:0:4:0:0:0:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_NECK"] = {
+							39.5588235294118, -- [1]
+							"item:129885:0:0:0:0:0:0:0:0:258:512:22:1:692:100:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_SHOULDER"] = {
+							69.5, -- [1]
+							"item:128349:0:0:0:0:0:0:0:0:258:0:0:3:136:651:652:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_LEGS"] = {
+							106.707720588235, -- [1]
+							"item:128129:0:0:0:0:0:0:0:0:258:0:4:0:0:0:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_CHEST"] = {
+							120.012867647059, -- [1]
+							"item:114813:0:0:0:0:0:0:0:0:258:0:13:3:617:538:25:0", -- [2]
+							0, -- [3]
+						},
+					},
+				},
+			},
+		},
+		["\"Wowhead\":HunterBeastMastery"] = {
+			["Color"] = "abd473",
+			["LocalizedName"] = "Hunter: beast mastery",
+			["DoNotShow2HUpgrades"] = false,
+			["DoNotShow1HUpgrades"] = false,
+			["NormalizationFactor"] = 1,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "Wowhead",
+			["UnenchantedColor"] = "809f56",
+			["PerCharacterOptions"] = {
+			},
+		},
+		["\"Wowhead\":PaladinHoly"] = {
+			["Color"] = "f58cba",
+			["LocalizedName"] = "Paladin: holy",
+			["DoNotShow2HUpgrades"] = true,
+			["DoNotShow1HUpgrades"] = false,
+			["NormalizationFactor"] = 1,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "Wowhead",
+			["UnenchantedColor"] = "b7698b",
+			["PerCharacterOptions"] = {
+			},
+		},
+		["\"Wowhead\":RogueCombat"] = {
+			["Color"] = "fff569",
+			["LocalizedName"] = "Rogue: combat",
+			["DoNotShow2HUpgrades"] = true,
+			["DoNotShow1HUpgrades"] = false,
+			["NormalizationFactor"] = 1,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "Wowhead",
+			["UnenchantedColor"] = "bfb74e",
+			["PerCharacterOptions"] = {
+			},
+		},
+		["\"Wowhead\":PriestDiscipline"] = {
+			["Color"] = "e0e0e0",
+			["LocalizedName"] = "Priest: discipline",
+			["DoNotShow2HUpgrades"] = false,
+			["DoNotShow1HUpgrades"] = false,
+			["NormalizationFactor"] = 1,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "Wowhead",
+			["UnenchantedColor"] = "a8a8a8",
+			["PerCharacterOptions"] = {
+			},
+		},
+		["\"Wowhead\":DeathKnightBloodTank"] = {
+			["Color"] = "ff4d6b",
+			["LocalizedName"] = "DK: blood",
+			["DoNotShow2HUpgrades"] = false,
+			["DoNotShow1HUpgrades"] = true,
+			["NormalizationFactor"] = 1,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "Wowhead",
+			["UnenchantedColor"] = "bf3950",
+			["PerCharacterOptions"] = {
+			},
+		},
+		["\"Wowhead\":MageFrost"] = {
+			["Color"] = "69ccf0",
+			["LocalizedName"] = "Mage: frost",
+			["DoNotShow2HUpgrades"] = false,
+			["DoNotShow1HUpgrades"] = false,
+			["NormalizationFactor"] = 1,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "Wowhead",
+			["UnenchantedColor"] = "4e99b3",
+			["PerCharacterOptions"] = {
+			},
+		},
+		["\"Wowhead\":ShamanRestoration"] = {
+			["Color"] = "6e95ff",
+			["LocalizedName"] = "Shaman: restoration",
+			["DoNotShow2HUpgrades"] = false,
+			["DoNotShow1HUpgrades"] = false,
+			["NormalizationFactor"] = 1,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "Wowhead",
+			["UnenchantedColor"] = "526fbf",
+			["PerCharacterOptions"] = {
+			},
+		},
+		["\"Wowhead\":MageFire"] = {
+			["Color"] = "69ccf0",
+			["LocalizedName"] = "Mage: fire",
+			["DoNotShow2HUpgrades"] = false,
+			["DoNotShow1HUpgrades"] = false,
+			["NormalizationFactor"] = 1,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "Wowhead",
+			["UnenchantedColor"] = "4e99b3",
+			["PerCharacterOptions"] = {
+			},
+		},
+		["\"Wowhead\":WarriorFury"] = {
+			["Color"] = "c79c6e",
+			["LocalizedName"] = "Warrior: fury",
+			["DoNotShow2HUpgrades"] = false,
+			["DoNotShow1HUpgrades"] = false,
+			["NormalizationFactor"] = 1,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "Wowhead",
+			["UnenchantedColor"] = "957552",
+			["PerCharacterOptions"] = {
+			},
+		},
+		["Priest: AS (20%+ Crit)"] = {
+			["NormalizationFactor"] = 1,
+			["Values"] = {
+				["Intellect"] = 1,
+				["IsFist"] = -1000000,
+				["Is2HMace"] = -1000000,
+				["CritRating"] = 1.07,
+				["HasteRating"] = 0.84,
+				["MasteryRating"] = 0.49,
+				["IsCrossbow"] = -1000000,
+				["IsPolearm"] = -1000000,
+				["IsGun"] = -1000000,
+				["Is2HAxe"] = -1000000,
+				["Versatility"] = 0.65,
+				["IsShield"] = -1000000,
+				["IsBow"] = -1000000,
+				["IsMail"] = -1000000,
+				["IsSword"] = -1000000,
+				["IsLeather"] = -1000000,
+				["Multistrike"] = 0.7,
+				["IsOffHand"] = -1000000,
+				["Is2HSword"] = -1000000,
+				["SpellPower"] = 0.91,
+				["IsAxe"] = -1000000,
+				["IsPlate"] = -1000000,
+			},
+			["UpgradesFollowSpecialization"] = true,
+			["Color"] = "6fcfe0",
+			["UnenchantedColor"] = "539ba8",
+			["PerCharacterOptions"] = {
+				["Callil-Turalyon"] = {
+					["Visible"] = true,
+					["BestItems"] = {
+						["INVTYPE_HEAD"] = {
+							104.197879858657, -- [1]
+							"item:128128:0:0:0:0:0:0:0:0:258:0:4:0:0:0:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_FEET"] = {
+							68.2720848056537, -- [1]
+							"item:113942:0:0:0:0:0:0:0:0:258:0:3:0:0:0:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_2HWEAPON"] = {
+							443.409893992933, -- [1]
+							"item:113134:0:0:0:0:0:0:0:0:258:0:13:3:620:530:31:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_CLOAK"] = {
+							35.708480565371, -- [1]
+							"item:127221:0:0:0:0:0:0:0:0:258:512:22:1:615:100:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_FINGER"] = {
+							40.4982332155477, -- [1]
+							"item:124195:0:0:0:0:0:0:0:0:258:0:3:1:560:0:0:0", -- [2]
+							0, -- [3]
+							37.434628975265, -- [4]
+							"item:128114:0:0:0:0:0:0:0:0:258:0:4:0:0:0:0:0", -- [5]
+							0, -- [6]
+						},
+						["INVTYPE_HAND"] = {
+							83.0194346289753, -- [1]
+							"item:128069:0:0:0:0:0:0:0:0:258:0:4:0:0:0:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_WRIST"] = {
+							45.0318021201413, -- [1]
+							"item:116007:0:0:0:0:0:0:0:0:258:0:4:1:40:0:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_WAIST"] = {
+							61.7420494699647, -- [1]
+							"item:128089:0:0:0:0:0:0:0:0:258:0:4:0:0:0:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_NECK"] = {
+							43.2243816254417, -- [1]
+							"item:129885:0:0:0:0:0:0:0:0:258:512:22:1:692:100:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_SHOULDER"] = {
+							67.530035335689, -- [1]
+							"item:128349:0:0:0:0:0:0:0:0:258:0:0:3:136:651:652:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_LEGS"] = {
+							110.611307420495, -- [1]
+							"item:128129:0:0:0:0:0:0:0:0:258:0:4:0:0:0:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_CHEST"] = {
+							127.731448763251, -- [1]
+							"item:114813:0:0:0:0:0:0:0:0:258:0:13:3:617:538:25:0", -- [2]
+							0, -- [3]
+						},
+					},
+				},
+			},
+		},
+		["\"Wowhead\":WarlockDemonology"] = {
+			["Color"] = "bca5ff",
+			["LocalizedName"] = "Warlock: demonology",
+			["DoNotShow2HUpgrades"] = false,
+			["DoNotShow1HUpgrades"] = false,
+			["NormalizationFactor"] = 1,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "Wowhead",
+			["UnenchantedColor"] = "8d7bbf",
+			["PerCharacterOptions"] = {
+			},
+		},
+		["\"Wowhead\":MonkBrewmaster"] = {
+			["Color"] = "00ff96",
+			["LocalizedName"] = "Monk: brewmaster",
+			["DoNotShow2HUpgrades"] = false,
+			["DoNotShow1HUpgrades"] = false,
+			["NormalizationFactor"] = 1,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "Wowhead",
+			["UnenchantedColor"] = "00bf70",
+			["PerCharacterOptions"] = {
+			},
+		},
+		["\"Wowhead\":DruidRestoration"] = {
+			["Color"] = "ff7d0a",
+			["LocalizedName"] = "Druid: restoration",
+			["DoNotShow2HUpgrades"] = false,
+			["DoNotShow1HUpgrades"] = false,
+			["NormalizationFactor"] = 1,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "Wowhead",
+			["UnenchantedColor"] = "bf5d07",
+			["PerCharacterOptions"] = {
+			},
+		},
+		["\"Wowhead\":DruidFeralTank"] = {
+			["Color"] = "ff7d0a",
+			["LocalizedName"] = "Druid: guardian",
+			["DoNotShow2HUpgrades"] = false,
+			["DoNotShow1HUpgrades"] = true,
+			["NormalizationFactor"] = 1,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "Wowhead",
+			["UnenchantedColor"] = "bf5d07",
+			["PerCharacterOptions"] = {
+			},
+		},
+		["\"Wowhead\":HunterMarksman"] = {
+			["Color"] = "abd473",
+			["LocalizedName"] = "Hunter: marksman",
+			["DoNotShow2HUpgrades"] = false,
+			["DoNotShow1HUpgrades"] = false,
+			["NormalizationFactor"] = 1,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "Wowhead",
+			["UnenchantedColor"] = "809f56",
+			["PerCharacterOptions"] = {
+			},
+		},
+		["\"Wowhead\":RogueSubtlety"] = {
+			["Color"] = "fff569",
+			["LocalizedName"] = "Rogue: subtlety",
+			["DoNotShow2HUpgrades"] = true,
+			["DoNotShow1HUpgrades"] = false,
+			["NormalizationFactor"] = 1,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "Wowhead",
+			["UnenchantedColor"] = "bfb74e",
+			["PerCharacterOptions"] = {
+			},
+		},
+		["\"Wowhead\":ShamanElemental"] = {
+			["Color"] = "6e95ff",
+			["LocalizedName"] = "Shaman: elemental",
+			["DoNotShow2HUpgrades"] = false,
+			["DoNotShow1HUpgrades"] = false,
+			["NormalizationFactor"] = 1,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "Wowhead",
+			["UnenchantedColor"] = "526fbf",
+			["PerCharacterOptions"] = {
+			},
+		},
+		["\"Wowhead\":PaladinRetribution"] = {
+			["Color"] = "f58cba",
+			["LocalizedName"] = "Paladin: retribution",
+			["DoNotShow2HUpgrades"] = false,
+			["DoNotShow1HUpgrades"] = true,
+			["NormalizationFactor"] = 1,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "Wowhead",
+			["UnenchantedColor"] = "b7698b",
+			["PerCharacterOptions"] = {
+			},
+		},
+		["\"Wowhead\":MageArcane"] = {
+			["Color"] = "69ccf0",
+			["LocalizedName"] = "Mage: arcane",
+			["DoNotShow2HUpgrades"] = false,
+			["DoNotShow1HUpgrades"] = false,
+			["NormalizationFactor"] = 1,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "Wowhead",
+			["UnenchantedColor"] = "4e99b3",
+			["PerCharacterOptions"] = {
+			},
+		},
+		["\"Wowhead\":DruidFeralDps"] = {
+			["Color"] = "ff7d0a",
+			["LocalizedName"] = "Druid: feral",
+			["DoNotShow2HUpgrades"] = false,
+			["DoNotShow1HUpgrades"] = true,
+			["NormalizationFactor"] = 1,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "Wowhead",
+			["UnenchantedColor"] = "bf5d07",
+			["PerCharacterOptions"] = {
+			},
+		},
+		["\"Wowhead\":WarriorTank"] = {
+			["Color"] = "c79c6e",
+			["LocalizedName"] = "Warrior: tank",
+			["DoNotShow2HUpgrades"] = true,
+			["DoNotShow1HUpgrades"] = false,
+			["NormalizationFactor"] = 1,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "Wowhead",
+			["UnenchantedColor"] = "957552",
+			["PerCharacterOptions"] = {
+			},
+		},
+		["\"Wowhead\":DeathKnightFrostDps"] = {
+			["Color"] = "ff4d6b",
+			["LocalizedName"] = "DK: frost",
+			["DoNotShow2HUpgrades"] = false,
+			["DoNotShow1HUpgrades"] = false,
+			["NormalizationFactor"] = 1,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "Wowhead",
+			["UnenchantedColor"] = "bf3950",
+			["PerCharacterOptions"] = {
+			},
+		},
+		["\"Wowhead\":DruidBalance"] = {
+			["Color"] = "ff7d0a",
+			["LocalizedName"] = "Druid: balance",
+			["DoNotShow2HUpgrades"] = false,
+			["DoNotShow1HUpgrades"] = false,
+			["NormalizationFactor"] = 1,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "Wowhead",
+			["UnenchantedColor"] = "bf5d07",
+			["PerCharacterOptions"] = {
+			},
+		},
+		["\"Wowhead\":MonkWindwalker"] = {
+			["Color"] = "00ff96",
+			["LocalizedName"] = "Monk: windwalker",
+			["DoNotShow2HUpgrades"] = false,
+			["DoNotShow1HUpgrades"] = false,
+			["NormalizationFactor"] = 1,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "Wowhead",
+			["UnenchantedColor"] = "00bf70",
+			["PerCharacterOptions"] = {
+			},
+		},
+		["\"Wowhead\":HunterSurvival"] = {
+			["Color"] = "abd473",
+			["LocalizedName"] = "Hunter: survival",
+			["DoNotShow2HUpgrades"] = false,
+			["DoNotShow1HUpgrades"] = false,
+			["NormalizationFactor"] = 1,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "Wowhead",
+			["UnenchantedColor"] = "809f56",
+			["PerCharacterOptions"] = {
+			},
+		},
+		["\"Wowhead\":WarlockAffliction"] = {
+			["Color"] = "bca5ff",
+			["LocalizedName"] = "Warlock: affliction",
+			["DoNotShow2HUpgrades"] = false,
+			["DoNotShow1HUpgrades"] = false,
+			["NormalizationFactor"] = 1,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "Wowhead",
+			["UnenchantedColor"] = "8d7bbf",
+			["PerCharacterOptions"] = {
+			},
+		},
+		["\"Wowhead\":PriestHoly"] = {
+			["Color"] = "e0e0e0",
+			["LocalizedName"] = "Priest: holy",
+			["DoNotShow2HUpgrades"] = false,
+			["DoNotShow1HUpgrades"] = false,
+			["NormalizationFactor"] = 1,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "Wowhead",
+			["UnenchantedColor"] = "a8a8a8",
+			["PerCharacterOptions"] = {
+				["Callil-Turalyon"] = {
+					["Visible"] = true,
+					["BestItems"] = {
+						["INVTYPE_HEAD"] = {
+							142.669149240905, -- [1]
+							"item:128128:0:0:0:0:0:0:0:0:258:0:4:0:0:0:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_FEET"] = {
+							91.0607275852191, -- [1]
+							"item:113942:0:0:0:0:0:0:0:0:258:0:3:0:0:0:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_CLOAK"] = {
+							49.7353193927242, -- [1]
+							"item:127221:0:0:0:0:0:0:0:0:258:512:22:1:615:100:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_2HWEAPON"] = {
+							171.871670008594, -- [1]
+							"item:113134:0:0:0:0:0:0:0:0:258:0:13:3:620:529:175:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_FINGER"] = {
+							75.8768261243197, -- [1]
+							"item:124195:0:0:0:0:0:0:0:0:258:0:3:1:560:0:0:0", -- [2]
+							0, -- [3]
+							52.6740189057577, -- [4]
+							"item:128114:0:0:0:0:0:0:0:0:258:0:4:0:0:0:0:0", -- [5]
+							0, -- [6]
+						},
+						["INVTYPE_HAND"] = {
+							88.2767115439702, -- [1]
+							"item:128069:0:0:0:0:0:0:0:0:258:0:4:0:0:0:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_WRIST"] = {
+							52.9212260097393, -- [1]
+							"item:116007:0:0:0:0:0:0:0:0:258:0:4:1:40:0:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_WAIST"] = {
+							86.945287883128, -- [1]
+							"item:128089:0:0:0:0:0:0:0:0:258:0:4:0:0:0:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_NECK"] = {
+							58.4402749928387, -- [1]
+							"item:129885:0:0:0:0:0:0:0:0:258:512:22:1:692:100:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_SHOULDER"] = {
+							88.7785734746491, -- [1]
+							"item:128349:0:0:0:0:0:0:0:0:258:0:0:3:136:651:652:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_LEGS"] = {
+							117.556001145803, -- [1]
+							"item:128129:0:0:0:0:0:0:0:0:258:0:4:0:0:0:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_CHEST"] = {
+							164.365797765683, -- [1]
+							"item:114813:0:0:0:0:0:0:0:0:258:0:13:3:617:538:190:0", -- [2]
+							0, -- [3]
+						},
+					},
+				},
+			},
+		},
+		["\"Wowhead\":PriestShadow"] = {
+			["Color"] = "e0e0e0",
+			["LocalizedName"] = "Priest: shadow",
+			["DoNotShow2HUpgrades"] = false,
+			["DoNotShow1HUpgrades"] = false,
+			["NormalizationFactor"] = 1,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "Wowhead",
+			["UnenchantedColor"] = "a8a8a8",
+			["PerCharacterOptions"] = {
+			},
+		},
+	},
+	["LastVersion"] = 1.918,
+	["ButtonPosition"] = 2,
+	["IgnoreGemsWhileLeveling"] = true,
+	["ShowQuestUpgradeAdvisor"] = true,
+	["ShowLootUpgradeAdvisor"] = true,
+	["ShowUpgradesOnTooltips"] = true,
+}

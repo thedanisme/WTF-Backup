@@ -1,0 +1,12 @@
+## Interface: 60100
+## Title: Best In Slot [|cffff975bPvP|r]
+## Notes: PvP module for Best In Slot
+## Author: Argathia @ Defias Brotherhood-EU
+## Version: Version 6.1.0
+## Dependencies: BestInSlot
+## X-Curse-Packaged-Version: Version 6.1.0
+## X-Curse-Project-Name: BestInSlot PvP
+## X-Curse-Project-ID: bestinslot-pvp
+## X-Curse-Repository-ID: wow/bestinslot-pvp/mainline
+
+WoDSeason1.lua

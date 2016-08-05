@@ -1,0 +1,27 @@
+VER 3 0100000000000026 " " "INV_Misc_QuestionMark"
+#showtooltip Counterspell
+/stopcasting
+/cast Counterspell
+END
+VER 3 0100000000000027 " " "INV_Misc_QuestionMark"
+#showtooltip Slow fall
+/cast [@mouseover, raid] [@player] Slow fall
+END
+VER 3 0100000000000028 " " "INV_Misc_QuestionMark"
+#showtooltip
+/cast [nochanneling] Arcane Missiles
+END
+VER 3 0100000000000024 " " "INV_Misc_QuestionMark"
+#showtooltip
+/use [@mouseover,help,exists][]Remove Curse
+END
+VER 3 0100000000000025 " " "INV_Misc_QuestionMark"
+#showtooltip Ice Block
+/stopcasting
+/cast Ice Block
+END
+VER 3 0100000000000029 "food" "SPELL_MAGE_CONJUREDMANAPUDDING"
+#showtooltip
+/use Conjured Mana Pudding
+/use Conjured Mana Fritter
+END

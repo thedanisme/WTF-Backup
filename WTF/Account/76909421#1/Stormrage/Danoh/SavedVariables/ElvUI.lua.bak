@@ -1,0 +1,36 @@
+
+ElvCharacterDB = {
+	["ChatLog"] = {
+		["1460533873.673"] = {
+			"▓WTS weekly cap,1-75wins,8/8 CM g0ld,4 vicious mount|cffa335ee|Hitem:103533:0:0:0:0:0:0:0:1:0:0:0:0|h[Vicious Saddle]|h|rand|cffffff00|Hachievement:9738:Player-60-0A5DB52E:0:0:0:-1:0:0:0:0|h[Warlord of Draenor]|h|r carry u right now,no accshare▓PST", -- [1]
+			"Racatiandrah-Stormrage", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Racatiandrah", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			749, -- [11]
+			"Player-60-0A5DB52E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			nil, -- [18]
+			nil, -- [19]
+			"CHAT_MSG_CHANNEL", -- [20]
+		},
+	},
+	["ChatEditHistory"] = {
+		"/ec", -- [1]
+	},
+	["BodyGuard"] = {
+		["IsInValidZone"] = false,
+		["MaxHealth"] = 0,
+		["Health"] = 0,
+		["Active"] = false,
+	},
+}

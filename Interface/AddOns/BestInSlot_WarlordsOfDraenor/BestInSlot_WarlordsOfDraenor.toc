@@ -1,0 +1,14 @@
+## Interface: 70000
+## Title: Best In Slot [|cffff975bWarlords of Draenor|r]
+## Notes: Warlords of Draenor Module for BestInSlot
+## Author: Beliria @ Moonglade-EU
+## Version: Release 7.0.02
+## Dependencies: BestInSlot
+## X-Curse-Packaged-Version: Release 7.0.02
+## X-Curse-Project-Name: BestInSlot Warlords of Draenor
+## X-Curse-Project-ID: bestinslot-warlords-draenor
+## X-Curse-Repository-ID: wow/bestinslot-warlords-draenor/mainline
+
+Highmaul.lua
+BlackrockFoundry.lua
+HellfireCitadel.lua
