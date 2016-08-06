@@ -1,12 +1,12 @@
 ## Interface: 70000
-## Version: 1.0
+## Version: 1.0.1
 ## Title: MaxCam
 ## Notes: Max Camera
 ## Author: Ketho @ EU-Boulderfist
 ## SavedVariables: MaxCamDB
 ## OptionalDeps: Ace3
 ## X-Embeds: Ace3
-## X-Curse-Packaged-Version: v1.0
+## X-Curse-Packaged-Version: v1.0.1
 ## X-Curse-Project-Name: MaxCam
 ## X-Curse-Project-ID: maxcam
 ## X-Curse-Repository-ID: wow/maxcam/mainline

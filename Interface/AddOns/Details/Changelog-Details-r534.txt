@@ -1,6 +1,12 @@
 2016-08-05  Tercio  <Tercio>
 
-[387b0b62bd3e] [tip]
+[2f438e929cb7] [tip]
+* images/logotipo.blp, images/logotipo.tga:
+
+- possible file crashing the client, need more tests.
+
+
+[387b0b62bd3e]
 * boot.lua, core/parser.lua:
 
 - Check if the caster is in the raid before trying to get its GUID.
@@ -225,14 +231,5 @@
 * boot.lua, classes/classe_damage.lua, core/parser.lua:
 
 - Fixed a rare issue with raid target counters where sometimes got invalid at the logon.
-
-
-2016-03-04  Tercioo  <Tercioo>
-
-[e3c92ae1438c]
-* boot.lua, plugins/Details_Streamer/Details_Streamer.lua, plugins/Details_TimeAttack/Details_TimeAttack.lua:
-
-- added Dos/Hps display at the Streamer plugin.
-- disabled the timeattack tutorial.
 
 
