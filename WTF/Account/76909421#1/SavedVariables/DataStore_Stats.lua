@@ -1,12 +1,12 @@
 
 DataStore_StatsDB = {
 	["profileKeys"] = {
-		["Callil - Turalyon"] = "Callil - Turalyon",
-		["Brobies - Stormrage"] = "Brobies - Stormrage",
 		["Whyfy - Stormrage"] = "Whyfy - Stormrage",
+		["Brobies - Stormrage"] = "Brobies - Stormrage",
+		["Callil - Turalyon"] = "Callil - Turalyon",
 		["Knutts - Turalyon"] = "Knutts - Turalyon",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
-		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
+		["Ershirley - Stormrage"] = "Ershirley - Stormrage",
 		["Squelben - Stormrage"] = "Squelben - Stormrage",
 		["Ranidan - Stormreaver"] = "Ranidan - Stormreaver",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
@@ -16,17 +16,17 @@ DataStore_StatsDB = {
 		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
 		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
 		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
-		["Ershirley - Stormrage"] = "Ershirley - Stormrage",
+		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
 	},
 	["global"] = {
 		["Characters"] = {
 			["Default.Stormrage.Emmarosa"] = {
-				["lastUpdate"] = 1470443098,
+				["lastUpdate"] = 1470516936,
 				["Stats"] = {
-					["Ranged"] = "2930-2931|0|5053|0|26.87272644043",
+					["Ranged"] = "3428-3429|0|5053|0|26.87272644043",
 					["HealthMax"] = 348060,
-					["Melee"] = "5124-5752|1.6270000934601|7580|0|26.87272644043|0",
-					["MaxPower"] = "3|100",
+					["Melee"] = "4281-5016|1.6270000934601|5053|0|26.87272644043|0",
+					["MaxPower"] = "3|170",
 					["Defense"] = "1226|1|14.899953842163|3|0|0",
 					["PVP"] = "167|0",
 					["Base"] = "1209|5053|5801|708|1226",
@@ -86,16 +86,16 @@ DataStore_StatsDB = {
 				},
 			},
 			["Default.Stormrage.Yanlery"] = {
-				["lastUpdate"] = 1470335626,
+				["lastUpdate"] = 1470516234,
 				["Stats"] = {
-					["Ranged"] = "1-2|0|0|0|31.527275085449",
-					["HealthMax"] = 395280,
-					["Melee"] = "9465-10780|3.4230000972748|5878|0|31.527275085449|0",
+					["Ranged"] = "1-2|0|0|0|22.581817626953",
+					["HealthMax"] = 698175,
+					["Melee"] = "6507-7396|2.3990001678467|6663|0|22.581817626953|3",
 					["MaxPower"] = "1|100",
-					["Spell"] = "711|711|0|31.527275085449|518|0",
+					["Spell"] = "711|711|0|22.581817626953|838|0",
 					["PVP"] = "479|0",
-					["Base"] = "5878|889|6588|711|2396",
-					["Defense"] = "2396|1|3|14.273455619812|3|0",
+					["Base"] = "5229|889|9309|711|3214",
+					["Defense"] = "3214|1|3|19.300716400146|28.461360931396|0",
 				},
 			},
 			["Default.Turalyon.Callil"] = {
@@ -138,7 +138,7 @@ DataStore_StatsDB = {
 				},
 			},
 			["Default.Stormrage.Danoh"] = {
-				["lastUpdate"] = 1470417265,
+				["lastUpdate"] = 1470515282,
 				["Stats"] = {
 					["Ranged"] = "6333-7540|2.5160000324249|5686|0|39.236366271973",
 					["HealthMax"] = 391860,
@@ -164,7 +164,7 @@ DataStore_StatsDB = {
 				},
 			},
 			["Default.Stormrage.Whyfy"] = {
-				["lastUpdate"] = 1469901720,
+				["lastUpdate"] = 1470515388,
 				["Stats"] = {
 					["Ranged"] = "1-2|0|0|0|8.5545454025269",
 					["HealthMax"] = 496380,
@@ -203,16 +203,16 @@ DataStore_StatsDB = {
 				},
 			},
 			["Default.Stormrage.Brobies"] = {
-				["lastUpdate"] = 1470026864,
+				["lastUpdate"] = 1470515788,
 				["Stats"] = {
-					["Ranged"] = "1-2|0|0|0|35.145454406738",
-					["HealthMax"] = 715980,
-					["Melee"] = "8341-9320|3.0010001659393|6348|0|35.145454406738|3",
+					["Ranged"] = "1-2|0|0|0|33.818183898926",
+					["HealthMax"] = 722880,
+					["Melee"] = "8534-9526|3.0490002632141|6430|0|33.818183898926|3",
 					["MaxPower"] = "3|105",
-					["Defense"] = "1272|1|12.787075042725|3|0|0",
+					["Defense"] = "1288|1|12.891043663025|3|0|0",
 					["PVP"] = "17|0",
-					["Base"] = "621|4998|11933|1045|1272",
-					["Spell"] = "1045|1045|0|35.145454406738|888|8000",
+					["Base"] = "621|5046|12048|1045|1288",
+					["Spell"] = "1045|1045|0|33.818183898926|716|8000",
 				},
 			},
 			["Default.Stormrage.Squelben"] = {

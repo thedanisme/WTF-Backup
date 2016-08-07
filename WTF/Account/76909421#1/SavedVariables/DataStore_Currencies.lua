@@ -1,12 +1,12 @@
 
 DataStore_CurrenciesDB = {
 	["profileKeys"] = {
-		["Callil - Turalyon"] = "Callil - Turalyon",
-		["Brobies - Stormrage"] = "Brobies - Stormrage",
 		["Whyfy - Stormrage"] = "Whyfy - Stormrage",
+		["Brobies - Stormrage"] = "Brobies - Stormrage",
+		["Callil - Turalyon"] = "Callil - Turalyon",
 		["Knutts - Turalyon"] = "Knutts - Turalyon",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
-		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
+		["Ershirley - Stormrage"] = "Ershirley - Stormrage",
 		["Squelben - Stormrage"] = "Squelben - Stormrage",
 		["Ranidan - Stormreaver"] = "Ranidan - Stormreaver",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
@@ -16,7 +16,7 @@ DataStore_CurrenciesDB = {
 		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
 		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
 		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
-		["Ershirley - Stormrage"] = "Ershirley - Stormrage",
+		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
 	},
 	["global"] = {
 		["Reference"] = {
@@ -99,16 +99,16 @@ DataStore_CurrenciesDB = {
 			["Default.Stormrage.Emmarosa"] = {
 				["Currencies"] = {
 					3, -- [1]
-					2180, -- [2]
+					5380, -- [2]
 					4486, -- [3]
 					78000, -- [4]
-					1107080, -- [5]
-					57610, -- [6]
+					1144712, -- [5]
+					25610, -- [6]
 					140, -- [7]
 					14, -- [8]
 					17, -- [9]
 					85138, -- [10]
-					25620, -- [11]
+					38420, -- [11]
 					45, -- [12]
 					24228, -- [13]
 					1680936, -- [14]
@@ -121,8 +121,8 @@ DataStore_CurrenciesDB = {
 					0, -- [2]
 					0, -- [3]
 					45, -- [4]
-					15, -- [5]
-					5, -- [6]
+					18, -- [5]
+					13, -- [6]
 					0, -- [7]
 					0, -- [8]
 					0, -- [9]
@@ -136,14 +136,14 @@ DataStore_CurrenciesDB = {
 					0, -- [17]
 					0, -- [18]
 				},
-				["lastUpdate"] = 1470443153,
+				["lastUpdate"] = 1470516334,
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
 					[396] = "0-0-0-0",
 					[390] = "0-0-0-0",
-					[823] = "17-0-0-0",
+					[823] = "42-0-0-0",
 					[392] = "0-0-0-0",
-					[824] = "8649-0-0-10000",
+					[824] = "8943-0-0-10000",
 					[994] = "0-0-0-20",
 				},
 			},
@@ -332,10 +332,10 @@ DataStore_CurrenciesDB = {
 			["Default.Stormrage.Yanlery"] = {
 				["Currencies"] = {
 					3, -- [1]
-					1796228, -- [2]
+					1873028, -- [2]
 					6, -- [3]
-					1056136, -- [4]
-					5130, -- [5]
+					1173640, -- [4]
+					5770, -- [5]
 					1804, -- [6]
 					526, -- [7]
 					17, -- [8]
@@ -369,14 +369,14 @@ DataStore_CurrenciesDB = {
 					0, -- [17]
 					0, -- [18]
 				},
-				["lastUpdate"] = 1470335549,
+				["lastUpdate"] = 1470515960,
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
 					[396] = "0-0-10-3000",
 					[390] = "0-0-0-0",
-					[823] = "14033-0-0-0",
+					[823] = "14633-0-0-0",
 					[392] = "0-0-0-0",
-					[824] = "8251-0-0-10000",
+					[824] = "9169-0-0-10000",
 					[994] = "4-0-0-20",
 				},
 			},
@@ -522,8 +522,8 @@ DataStore_CurrenciesDB = {
 					3, -- [1]
 					3881220, -- [2]
 					6, -- [3]
-					500104, -- [4]
-					618250, -- [5]
+					648968, -- [4]
+					648970, -- [5]
 					2060, -- [6]
 					270, -- [7]
 					17, -- [8]
@@ -559,14 +559,14 @@ DataStore_CurrenciesDB = {
 					0, -- [17]
 					0, -- [18]
 				},
-				["lastUpdate"] = 1470417097,
+				["lastUpdate"] = 1470515296,
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
 					[396] = "0-0-10-3000",
 					[390] = "0-0-0-0",
 					[823] = "30322-0-0-0",
 					[392] = "0-0-0-0",
-					[824] = "3907-0-0-10000",
+					[824] = "5070-0-0-10000",
 					[994] = "2-0-0-20",
 				},
 			},
@@ -615,8 +615,8 @@ DataStore_CurrenciesDB = {
 				["Currencies"] = {
 					3, -- [1]
 					42244, -- [2]
-					773128, -- [3]
-					4490, -- [4]
+					819848, -- [3]
+					10890, -- [4]
 					780, -- [5]
 					17, -- [6]
 					264338, -- [7]
@@ -642,14 +642,14 @@ DataStore_CurrenciesDB = {
 					0, -- [17]
 					0, -- [18]
 				},
-				["lastUpdate"] = 1469901746,
+				["lastUpdate"] = 1470515402,
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
 					[396] = "0-0-0-0",
 					[390] = "0-0-0-0",
 					[823] = "330-0-0-0",
 					[392] = "0-0-0-0",
-					[824] = "6040-0-0-10000",
+					[824] = "6405-0-0-10000",
 					[994] = "0-0-0-0",
 				},
 			},
@@ -720,7 +720,7 @@ DataStore_CurrenciesDB = {
 					3, -- [1]
 					3435908, -- [2]
 					6918, -- [3]
-					880392, -- [4]
+					1091592, -- [4]
 					5130, -- [5]
 					1036, -- [6]
 					1038, -- [7]
@@ -757,7 +757,7 @@ DataStore_CurrenciesDB = {
 					0, -- [17]
 					0, -- [18]
 				},
-				["lastUpdate"] = 1470026844,
+				["lastUpdate"] = 1470515615,
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
 					[396] = "0-0-10-3000",
@@ -765,7 +765,7 @@ DataStore_CurrenciesDB = {
 					[823] = "26843-0-0-0",
 					[392] = "0-0-0-0",
 					[994] = "8-0-0-20",
-					[824] = "6878-0-0-10000",
+					[824] = "8528-0-0-10000",
 				},
 			},
 			["Default.Stormrage.Squelben"] = {

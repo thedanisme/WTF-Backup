@@ -1,12 +1,12 @@
 
 DataStoreDB = {
 	["profileKeys"] = {
-		["Callil - Turalyon"] = "Callil - Turalyon",
-		["Brobies - Stormrage"] = "Brobies - Stormrage",
 		["Whyfy - Stormrage"] = "Whyfy - Stormrage",
+		["Brobies - Stormrage"] = "Brobies - Stormrage",
+		["Callil - Turalyon"] = "Callil - Turalyon",
 		["Knutts - Turalyon"] = "Knutts - Turalyon",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
-		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
+		["Ershirley - Stormrage"] = "Ershirley - Stormrage",
 		["Squelben - Stormrage"] = "Squelben - Stormrage",
 		["Ranidan - Stormreaver"] = "Ranidan - Stormreaver",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
@@ -16,7 +16,7 @@ DataStoreDB = {
 		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
 		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
 		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
-		["Ershirley - Stormrage"] = "Ershirley - Stormrage",
+		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
 	},
 	["global"] = {
 		["Guilds"] = {

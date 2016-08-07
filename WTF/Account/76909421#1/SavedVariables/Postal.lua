@@ -70,8 +70,8 @@ Postal3DB = {
 		["Titt - Turalyon"] = "Titt - Turalyon",
 		["Horny - Bloodhoof"] = "Horny - Bloodhoof",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
-		["Brewbies - Turalyon"] = "Brewbies - Turalyon",
 		["Bloodcox - Stormrage"] = "Bloodcox - Stormrage",
+		["Brewbies - Turalyon"] = "Brewbies - Turalyon",
 		["Fupa - Stormrage"] = "Fupa - Stormrage",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
 		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
@@ -196,11 +196,12 @@ Postal3DB = {
 		["Whyfy - Stormrage"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Danoh|Stormrage|Alliance", -- [1]
-					"Ranidan-Stormreaver|Stormrage|Alliance", -- [2]
-					"Knutts-Turalyon|Stormrage|Alliance", -- [3]
-					"Brobies|Stormrage|Alliance", -- [4]
-					"Freakinfries|Stormrage|Alliance", -- [5]
+					"Emmarosa|Stormrage|Alliance", -- [1]
+					"Danoh|Stormrage|Alliance", -- [2]
+					"Ranidan-Stormreaver|Stormrage|Alliance", -- [3]
+					"Knutts-Turalyon|Stormrage|Alliance", -- [4]
+					"Brobies|Stormrage|Alliance", -- [5]
+					"Freakinfries|Stormrage|Alliance", -- [6]
 				},
 			},
 		},
@@ -256,6 +257,8 @@ Postal3DB = {
 				},
 			},
 		},
+		["Bloodcox - Stormrage"] = {
+		},
 		["Brewbies - Turalyon"] = {
 			["BlackBook"] = {
 				["recent"] = {
@@ -274,8 +277,6 @@ Postal3DB = {
 					"Khloroshue|Turalyon|Horde", -- [13]
 				},
 			},
-		},
-		["Bloodcox - Stormrage"] = {
 		},
 		["Fupa - Stormrage"] = {
 		},
@@ -319,14 +320,15 @@ Postal3DB = {
 		["Brobies - Stormrage"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Danoh|Stormrage|Alliance", -- [1]
-					"Mapledk|Stormrage|Alliance", -- [2]
-					"Ranidan-Stormreaver|Stormrage|Alliance", -- [3]
-					"Knutts-Turalyon|Stormrage|Alliance", -- [4]
-					"Llamama|Stormrage|Alliance", -- [5]
-					"Chåotic-Stormrage|Stormrage|Alliance", -- [6]
-					"Whyfy|Stormrage|Alliance", -- [7]
-					"Kratoshue|Stormrage|Alliance", -- [8]
+					"Emmarosa|Stormrage|Alliance", -- [1]
+					"Danoh|Stormrage|Alliance", -- [2]
+					"Mapledk|Stormrage|Alliance", -- [3]
+					"Ranidan-Stormreaver|Stormrage|Alliance", -- [4]
+					"Knutts-Turalyon|Stormrage|Alliance", -- [5]
+					"Llamama|Stormrage|Alliance", -- [6]
+					"Chåotic-Stormrage|Stormrage|Alliance", -- [7]
+					"Whyfy|Stormrage|Alliance", -- [8]
+					"Kratoshue|Stormrage|Alliance", -- [9]
 				},
 			},
 		},

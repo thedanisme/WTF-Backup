@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0004,
+	["LastVersion"] = 2.0007,
 	["LastPlayerFullName"] = "Whyfy-Stormrage",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,

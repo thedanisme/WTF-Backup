@@ -4,9 +4,9 @@ PawnCommon = {
 	["AlignNumbersRight"] = true,
 	["ShowItemID"] = false,
 	["ShowValuesForUpgradesOnly"] = false,
-	["ShowEnchanted"] = false,
-	["ShownGettingStarted"] = true,
 	["Debug"] = false,
+	["ShownGettingStarted"] = true,
+	["ShowEnchanted"] = false,
 	["ColorTooltipBorder"] = true,
 	["IgnoreItemUpgrades"] = true,
 	["ShowTooltipIcons"] = true,
@@ -242,9 +242,6 @@ PawnCommon = {
 			["UnenchantedColor"] = "bfb74e",
 			["IconTexturePath"] = "Interface\\Icons\\INV_Sword_30",
 			["PerCharacterOptions"] = {
-				["Emmarosa-Stormrage"] = {
-					["Visible"] = true,
-				},
 			},
 			["LocalizedName"] = "Rogue: Outlaw",
 			["UpgradesFollowSpecialization"] = true,
@@ -302,6 +299,9 @@ PawnCommon = {
 			["UnenchantedColor"] = "957552",
 			["IconTexturePath"] = "Interface\\Icons\\Ability_Warrior_DefensiveStance",
 			["PerCharacterOptions"] = {
+				["Yanlery-Stormrage"] = {
+					["Visible"] = true,
+				},
 			},
 			["LocalizedName"] = "Warrior: Protection",
 			["UpgradesFollowSpecialization"] = true,
@@ -595,6 +595,9 @@ PawnCommon = {
 			["UnenchantedColor"] = "bfb74e",
 			["IconTexturePath"] = "Interface\\Icons\\Ability_Rogue_DeadlyBrew",
 			["PerCharacterOptions"] = {
+				["Emmarosa-Stormrage"] = {
+					["Visible"] = true,
+				},
 			},
 			["LocalizedName"] = "Rogue: Assassination",
 			["UpgradesFollowSpecialization"] = true,
@@ -774,9 +777,6 @@ PawnCommon = {
 			["UnenchantedColor"] = "957552",
 			["IconTexturePath"] = "Interface\\Icons\\Ability_Warrior_SavageBlow",
 			["PerCharacterOptions"] = {
-				["Yanlery-Stormrage"] = {
-					["Visible"] = true,
-				},
 			},
 			["LocalizedName"] = "Warrior: Arms",
 			["UpgradesFollowSpecialization"] = true,
@@ -819,6 +819,6 @@ PawnCommon = {
 	["ButtonPosition"] = 2,
 	["IgnoreGemsWhileLeveling"] = true,
 	["ShowQuestUpgradeAdvisor"] = true,
-	["ShowLootUpgradeAdvisor"] = true,
 	["ShowUpgradesOnTooltips"] = true,
+	["ShowLootUpgradeAdvisor"] = true,
 }

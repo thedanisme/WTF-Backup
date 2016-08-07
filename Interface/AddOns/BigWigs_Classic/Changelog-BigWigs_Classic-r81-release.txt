@@ -1,9 +1,36 @@
 ------------------------------------------------------------------------
-r78 | funkydude | 2016-08-05 12:37:52 +0000 (Fri, 05 Aug 2016) | 1 line
+r81 | funkydude | 2016-08-06 17:39:20 +0000 (Sat, 06 Aug 2016) | 1 line
 Changed paths:
-   A /tags/r78-release (from /trunk:77)
+   A /tags/r81-release (from /trunk:80)
 
-Tagging as r78-release
+Tagging as r81-release
+------------------------------------------------------------------------
+r80 | funkydude | 2016-08-06 17:03:34 +0000 (Sat, 06 Aug 2016) | 1 line
+Changed paths:
+   M /trunk/AQ20/Locales/deDE.lua
+   M /trunk/AQ20/Locales/esES.lua
+   M /trunk/AQ20/Locales/frFR.lua
+   M /trunk/AQ20/Locales/itIT.lua
+   M /trunk/AQ20/Locales/koKR.lua
+   M /trunk/AQ20/Locales/ptBR.lua
+   M /trunk/AQ20/Locales/ruRU.lua
+   M /trunk/AQ20/Locales/zhCN.lua
+   M /trunk/AQ20/Locales/zhTW.lua
+
+Fix AQ20 locale errors
+------------------------------------------------------------------------
+r79 | funkydude | 2016-08-06 16:24:26 +0000 (Sat, 06 Aug 2016) | 1 line
+Changed paths:
+   M /trunk/AQ20/Locales/deDE.lua
+   M /trunk/AQ20/Locales/frFR.lua
+   M /trunk/AQ20/Locales/koKR.lua
+   M /trunk/AQ20/Locales/ruRU.lua
+   M /trunk/AQ20/Locales/zhTW.lua
+   M /trunk/AQ20/Moam.lua
+   M /trunk/AQ20/Ossirian.lua
+   M /trunk/AQ20/locales.xml
+
+Locale update
 ------------------------------------------------------------------------
 r77 | funkydude | 2016-08-05 12:33:08 +0000 (Fri, 05 Aug 2016) | 1 line
 Changed paths:

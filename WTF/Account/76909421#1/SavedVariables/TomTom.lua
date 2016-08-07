@@ -27,13 +27,13 @@ TomTomDB = {
 		["Arando - Bloodhoof"] = "Default",
 		["Lackteight - Turalyon"] = "Default",
 		["Danoh - Stormrage"] = "Default",
-		["Bloodcox - Stormrage"] = "Default",
 		["Brewbies - Turalyon"] = "Default",
+		["Bloodcox - Stormrage"] = "Default",
 		["Horny - Bloodhoof"] = "Default",
 		["Dalgrens - Bloodhoof"] = "Default",
 		["Beer - Bloodhoof"] = "Default",
-		["Fupa - Stormrage"] = "Default",
 		["Rosabria - Sargeras"] = "Default",
+		["Fupa - Stormrage"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -75,13 +75,13 @@ TomTomWaypointsMF = {
 		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
 		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
-		["Bloodcox - Stormrage"] = "Bloodcox - Stormrage",
 		["Brewbies - Turalyon"] = "Brewbies - Turalyon",
+		["Bloodcox - Stormrage"] = "Bloodcox - Stormrage",
 		["Horny - Bloodhoof"] = "Horny - Bloodhoof",
 		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
 		["Beer - Bloodhoof"] = "Beer - Bloodhoof",
-		["Fupa - Stormrage"] = "Fupa - Stormrage",
 		["Rosabria - Sargeras"] = "Rosabria - Sargeras",
+		["Fupa - Stormrage"] = "Fupa - Stormrage",
 	},
 	["profiles"] = {
 		["Callil - Sargeras"] = {
@@ -1128,9 +1128,9 @@ TomTomWaypointsMF = {
 		},
 		["Danoh - Stormrage"] = {
 		},
-		["Bloodcox - Stormrage"] = {
-		},
 		["Brewbies - Turalyon"] = {
+		},
+		["Bloodcox - Stormrage"] = {
 		},
 		["Horny - Bloodhoof"] = {
 		},
@@ -1138,9 +1138,9 @@ TomTomWaypointsMF = {
 		},
 		["Beer - Bloodhoof"] = {
 		},
-		["Fupa - Stormrage"] = {
-		},
 		["Rosabria - Sargeras"] = {
+		},
+		["Fupa - Stormrage"] = {
 		},
 	},
 }

@@ -1,12 +1,12 @@
 
 DataStore_MailsDB = {
 	["profileKeys"] = {
-		["Callil - Turalyon"] = "Callil - Turalyon",
-		["Brobies - Stormrage"] = "Brobies - Stormrage",
 		["Whyfy - Stormrage"] = "Whyfy - Stormrage",
+		["Brobies - Stormrage"] = "Brobies - Stormrage",
+		["Callil - Turalyon"] = "Callil - Turalyon",
 		["Knutts - Turalyon"] = "Knutts - Turalyon",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
-		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
+		["Ershirley - Stormrage"] = "Ershirley - Stormrage",
 		["Squelben - Stormrage"] = "Squelben - Stormrage",
 		["Ranidan - Stormreaver"] = "Ranidan - Stormreaver",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
@@ -16,7 +16,7 @@ DataStore_MailsDB = {
 		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
 		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
 		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
-		["Ershirley - Stormrage"] = "Ershirley - Stormrage",
+		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
 	},
 	["global"] = {
 		["Characters"] = {
@@ -61,12 +61,12 @@ DataStore_MailsDB = {
 				["lastVisitDate"] = "2016/07/30 15:03",
 			},
 			["Default.Stormrage.Whyfy"] = {
-				["lastUpdate"] = 1469545473,
-				["lastVisitDate"] = "2016/07/26 11:04",
+				["lastUpdate"] = 1470515489,
+				["lastVisitDate"] = "2016/08/06 16:31",
 			},
 			["Default.Stormrage.Brobies"] = {
-				["lastUpdate"] = 1469216923,
-				["lastVisitDate"] = "2016/07/22 15:48",
+				["lastUpdate"] = 1470515813,
+				["lastVisitDate"] = "2016/08/06 16:36",
 			},
 			["Default.Turalyon.Callil"] = {
 				["lastUpdate"] = 1470029797,
@@ -77,8 +77,8 @@ DataStore_MailsDB = {
 				["lastVisitDate"] = "2016/08/05 17:00",
 			},
 			["Default.Stormrage.Emmarosa"] = {
-				["lastUpdate"] = 1470440085,
-				["lastVisitDate"] = "2016/08/05 19:34",
+				["lastUpdate"] = 1470516889,
+				["lastVisitDate"] = "2016/08/06 16:54",
 			},
 		},
 	},

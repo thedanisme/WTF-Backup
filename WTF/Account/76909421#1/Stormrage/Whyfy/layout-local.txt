@@ -1,11 +1,4 @@
 Version: 1
-Frame: EnemyGrid_ScreenPanel39
-FrameLevel: 20
-Anchor: CENTER
-X: 426
-Y: -218
-W: 80
-H: 18
 Frame: ItemRefTooltip
 FrameLevel: 1
 Anchor: CENTER

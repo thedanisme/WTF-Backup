@@ -1,12 +1,12 @@
 
 DataStore_TalentsDB = {
 	["profileKeys"] = {
-		["Callil - Turalyon"] = "Callil - Turalyon",
-		["Brobies - Stormrage"] = "Brobies - Stormrage",
 		["Whyfy - Stormrage"] = "Whyfy - Stormrage",
+		["Brobies - Stormrage"] = "Brobies - Stormrage",
+		["Callil - Turalyon"] = "Callil - Turalyon",
 		["Knutts - Turalyon"] = "Knutts - Turalyon",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
-		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
+		["Ershirley - Stormrage"] = "Ershirley - Stormrage",
 		["Squelben - Stormrage"] = "Squelben - Stormrage",
 		["Ranidan - Stormreaver"] = "Ranidan - Stormreaver",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
@@ -16,7 +16,7 @@ DataStore_TalentsDB = {
 		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
 		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
 		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
-		["Ershirley - Stormrage"] = "Ershirley - Stormrage",
+		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
 	},
 	["global"] = {
 		["Characters"] = {
@@ -162,7 +162,7 @@ DataStore_TalentsDB = {
 			},
 			["Default.Stormrage.Yanlery"] = {
 				["ActiveTalents"] = 1,
-				["lastUpdate"] = 1470335549,
+				["lastUpdate"] = 1470515976,
 				["GlyphList"] = {
 					11, -- [1]
 					7962, -- [2]
@@ -220,7 +220,7 @@ DataStore_TalentsDB = {
 			},
 			["Default.Stormrage.Danoh"] = {
 				["ActiveTalents"] = 1,
-				["lastUpdate"] = 1470417011,
+				["lastUpdate"] = 1470515217,
 				["Class"] = "HUNTER",
 				["GlyphList"] = {
 					11, -- [1]
@@ -403,7 +403,7 @@ DataStore_TalentsDB = {
 			},
 			["Default.Stormrage.Whyfy"] = {
 				["ActiveTalents"] = 1,
-				["lastUpdate"] = 1469901720,
+				["lastUpdate"] = 1470515348,
 				["GlyphList"] = {
 					11, -- [1]
 					18314, -- [2]
@@ -531,7 +531,7 @@ DataStore_TalentsDB = {
 			},
 			["Default.Stormrage.Brobies"] = {
 				["ActiveTalents"] = 1,
-				["lastUpdate"] = 1470026771,
+				["lastUpdate"] = 1470515531,
 				["Class"] = "MONK",
 				["Specializations"] = {
 					9646, -- [1]
@@ -582,7 +582,7 @@ DataStore_TalentsDB = {
 				},
 			},
 			["Default.Stormrage.Emmarosa"] = {
-				["lastUpdate"] = 1470443097,
+				["lastUpdate"] = 1470516332,
 				["Specializations"] = {
 					16119, -- [1]
 					10839, -- [2]
@@ -894,7 +894,7 @@ DataStore_TalentsDB = {
 				[365] = "Pathfinding",
 				[1201] = "Frostbrand Weapon",
 				[494] = "Bloodthirst",
-				[1209] = "Detoxing",
+				[431] = "Aquatic Form",
 				[183] = "Double Jeopardy",
 				[1203] = "Merciful Wrath",
 				[986] = "Focused Wrath",
@@ -903,27 +903,27 @@ DataStore_TalentsDB = {
 				[1205] = "Savagery",
 				[987] = "Falling Avenger",
 				[1206] = "The Solstice",
-				[495] = "Rude Interruption",
+				[989] = "Bladed Judgment",
 				[1207] = "Purify Spirit",
 				[988] = "Righteous Retreat",
 				[1208] = "Cleanse",
 				[733] = "Disguise",
-				[431] = "Aquatic Form",
-				[989] = "Bladed Judgment",
+				[1209] = "Detoxing",
+				[495] = "Rude Interruption",
 				[1210] = "Nature's Cure",
 				[734] = "Cloak of Shadows",
 				[216] = "Purge",
 				[990] = "Crow Feast",
 				[1212] = "Flying Fists",
 				[735] = "Thunder",
-				[432] = "The Chameleon",
-				[991] = "Burning Anger",
+				[1213] = "Flapping Owl",
+				[496] = "Gag Order",
 				[551] = "Dash",
 				[736] = "Feral Spirit",
 				[1215] = "Ascendance",
 				[521] = "Shifting Presences",
 				[520] = "Death and Decay",
-				[369] = "Mend Pet",
+				[737] = "Riptide",
 				[433] = "Charm Woodland Creature",
 				[497] = "Blitz",
 				[509] = "Raging Wind",
@@ -970,11 +970,11 @@ DataStore_TalentsDB = {
 				[558] = "Corpse Explosion",
 				[276] = "Nightmares",
 				[291] = "Unstable Affliction",
-				[737] = "Riptide",
+				[369] = "Mend Pet",
 				[366] = "Tame Beast",
 				[439] = "Revive Pet",
-				[496] = "Gag Order",
-				[1213] = "Flapping Owl",
+				[991] = "Burning Anger",
+				[432] = "The Chameleon",
 				[188] = "Avenging Wrath",
 				[220] = "Wind Shear",
 				[1116] = "Runic Power",
@@ -1012,12 +1012,12 @@ DataStore_TalentsDB = {
 }
 DataStore_TalentsRefDB = {
 	["profileKeys"] = {
-		["Callil - Turalyon"] = "Callil - Turalyon",
-		["Brobies - Stormrage"] = "Brobies - Stormrage",
 		["Whyfy - Stormrage"] = "Whyfy - Stormrage",
+		["Brobies - Stormrage"] = "Brobies - Stormrage",
+		["Callil - Turalyon"] = "Callil - Turalyon",
 		["Knutts - Turalyon"] = "Knutts - Turalyon",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
-		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
+		["Ershirley - Stormrage"] = "Ershirley - Stormrage",
 		["Squelben - Stormrage"] = "Squelben - Stormrage",
 		["Ranidan - Stormreaver"] = "Ranidan - Stormreaver",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
@@ -1027,7 +1027,7 @@ DataStore_TalentsRefDB = {
 		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
 		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
 		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
-		["Ershirley - Stormrage"] = "Ershirley - Stormrage",
+		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
 	},
 	["global"] = {
 		["DEATHKNIGHT"] = {
@@ -1352,7 +1352,7 @@ DataStore_TalentsRefDB = {
 					["name"] = "Protection",
 				},
 			},
-			["Version"] = 22293,
+			["Version"] = 22345,
 		},
 		["DRUID"] = {
 			["Locale"] = "enUS",
@@ -1420,7 +1420,7 @@ DataStore_TalentsRefDB = {
 					["name"] = "Brewmaster",
 				}, -- [1]
 			},
-			["Version"] = 22293,
+			["Version"] = 22345,
 		},
 		["HUNTER"] = {
 			["Locale"] = "enUS",

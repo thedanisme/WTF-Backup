@@ -34,8 +34,8 @@ TalentMacrosDB = {
 		["Bloodcox - Stormrage"] = "Bloodcox - Stormrage",
 		["Rosabria - Sargeras"] = "Rosabria - Sargeras",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
-		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
 		["Brewbies - Turalyon"] = "Brewbies - Turalyon",
+		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
 		["Fupa - Stormrage"] = "Fupa - Stormrage",
 		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
 		["Beer - Bloodhoof"] = "Beer - Bloodhoof",
@@ -119,9 +119,9 @@ TalentMacrosDB = {
 				[19362] = "#showtooltip stampede\n/startattack\n/cancelaura hand of protection\n/petattack\n/use stampede\n/petattack\n/petattack\n/petattack\n/petattack\n/petattack\n/petattack\n/petattack\n/petattack\n/petattack\n/petattack\n/petattack\n/petattack\n/petattack",
 			},
 		},
-		["Lackteight - Turalyon"] = {
-		},
 		["Brewbies - Turalyon"] = {
+		},
+		["Lackteight - Turalyon"] = {
 		},
 		["Fupa - Stormrage"] = {
 		},

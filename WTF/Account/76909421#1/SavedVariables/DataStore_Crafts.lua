@@ -1,12 +1,12 @@
 
 DataStore_CraftsDB = {
 	["profileKeys"] = {
-		["Callil - Turalyon"] = "Callil - Turalyon",
-		["Brobies - Stormrage"] = "Brobies - Stormrage",
 		["Whyfy - Stormrage"] = "Whyfy - Stormrage",
+		["Brobies - Stormrage"] = "Brobies - Stormrage",
+		["Callil - Turalyon"] = "Callil - Turalyon",
 		["Knutts - Turalyon"] = "Knutts - Turalyon",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
-		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
+		["Ershirley - Stormrage"] = "Ershirley - Stormrage",
 		["Squelben - Stormrage"] = "Squelben - Stormrage",
 		["Ranidan - Stormreaver"] = "Ranidan - Stormreaver",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
@@ -16,12 +16,12 @@ DataStore_CraftsDB = {
 		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
 		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
 		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
-		["Ershirley - Stormrage"] = "Ershirley - Stormrage",
+		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
 	},
 	["global"] = {
 		["Characters"] = {
 			["Default.Stormrage.Emmarosa"] = {
-				["lastUpdate"] = 1470443097,
+				["lastUpdate"] = 1470516926,
 				["Prof2"] = "Inscription",
 				["Professions"] = {
 					["Cooking"] = {
@@ -334,7 +334,7 @@ DataStore_CraftsDB = {
 							210956, -- [251]
 						},
 						["MaxRank"] = 700,
-						["Rank"] = 626,
+						["Rank"] = 630,
 					},
 				},
 				["Prof1"] = "Skinning",
@@ -720,7 +720,15 @@ DataStore_CraftsDB = {
 				["Prof1"] = "Herbalism",
 			},
 			["Default.Stormrage.Yanlery"] = {
-				["lastUpdate"] = 1470335549,
+				["ArcheologyItems"] = {
+					[168303] = true,
+					[168311] = true,
+					[168312] = true,
+					[168293] = true,
+					[168294] = true,
+					[168308] = true,
+					[172459] = true,
+				},
 				["Professions"] = {
 					["Cooking"] = {
 						["FullLink"] = "|cffffd000|Htrade:Player-60-0A0EEC46:158765:185|h[Cooking]|h|r",
@@ -773,6 +781,10 @@ DataStore_CraftsDB = {
 						["MaxRank"] = 700,
 						["Rank"] = 700,
 					},
+					["Fishing"] = {
+						["MaxRank"] = 75,
+						["Rank"] = 2,
+					},
 					["First Aid"] = {
 						["FullLink"] = "|cffffd000|Htrade:Player-60-0A0EEC46:158741:129|h[First Aid]|h|r",
 						["Crafts"] = {
@@ -791,20 +803,8 @@ DataStore_CraftsDB = {
 						["MaxRank"] = 75,
 						["Rank"] = 61,
 					},
-					["Fishing"] = {
-						["MaxRank"] = 75,
-						["Rank"] = 2,
-					},
 				},
-				["ArcheologyItems"] = {
-					[168303] = true,
-					[168311] = true,
-					[168312] = true,
-					[168293] = true,
-					[168294] = true,
-					[168308] = true,
-					[172459] = true,
-				},
+				["lastUpdate"] = 1470515896,
 			},
 			["Default.Turalyon.Callil"] = {
 				["Professions"] = {
@@ -1545,7 +1545,7 @@ DataStore_CraftsDB = {
 					},
 				},
 				["Prof2"] = "Herbalism",
-				["lastUpdate"] = 1470417203,
+				["lastUpdate"] = 1470515217,
 				["Prof1"] = "Alchemy",
 			},
 			["Default.Turalyon.Shaneequa"] = {
@@ -1589,7 +1589,7 @@ DataStore_CraftsDB = {
 						["Rank"] = 61,
 					},
 				},
-				["lastUpdate"] = 1469901720,
+				["lastUpdate"] = 1470515348,
 			},
 			["Default.Turalyon.Skratch"] = {
 				["ArcheologyItems"] = {
@@ -1692,6 +1692,59 @@ DataStore_CraftsDB = {
 					},
 					["Alchemy"] = {
 						["FullLink"] = "|cffffd000|Htrade:Player-60-0A4E1514:156606:171|h[Alchemy]|h|r",
+						["Crafts"] = {
+							"1|Reagents and Research", -- [1]
+							626350, -- [2]
+							626364, -- [3]
+							703520, -- [4]
+							626340, -- [5]
+							"1|Flasks", -- [6]
+							626278, -- [7]
+							626244, -- [8]
+							626252, -- [9]
+							626272, -- [10]
+							626256, -- [11]
+							"1|Transmutation", -- [12]
+							726575, -- [13]
+							726550, -- [14]
+							726534, -- [15]
+							726546, -- [16]
+							726526, -- [17]
+							726530, -- [18]
+							726542, -- [19]
+							726510, -- [20]
+							726502, -- [21]
+							726514, -- [22]
+							726522, -- [23]
+							726518, -- [24]
+							726538, -- [25]
+							"1|Potions and Elixirs", -- [26]
+							626308, -- [27]
+							626324, -- [28]
+							626312, -- [29]
+							626328, -- [30]
+							626316, -- [31]
+							626320, -- [32]
+							703460, -- [33]
+							703468, -- [34]
+							703412, -- [35]
+							703464, -- [36]
+							703476, -- [37]
+							703472, -- [38]
+							649612, -- [39]
+							"1|Trinkets and Trinket Upgrades", -- [40]
+							754707, -- [41]
+							754699, -- [42]
+							726603, -- [43]
+							726599, -- [44]
+							726595, -- [45]
+							726591, -- [46]
+							"1|Potions", -- [47]
+							9320, -- [48]
+							"1|Elixirs", -- [49]
+							9316, -- [50]
+							28732, -- [51]
+						},
 						["MaxRank"] = 700,
 						["Rank"] = 700,
 					},
@@ -1707,7 +1760,7 @@ DataStore_CraftsDB = {
 					},
 				},
 				["Prof2"] = "Engineering",
-				["lastUpdate"] = 1470026771,
+				["lastUpdate"] = 1470515617,
 				["Prof1"] = "Alchemy",
 			},
 			["Default.Stormrage.Squelben"] = {
