@@ -1,22 +1,22 @@
 
 DataStore_MailsDB = {
 	["profileKeys"] = {
+		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
+		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
 		["Whyfy - Stormrage"] = "Whyfy - Stormrage",
-		["Brobies - Stormrage"] = "Brobies - Stormrage",
-		["Callil - Turalyon"] = "Callil - Turalyon",
 		["Knutts - Turalyon"] = "Knutts - Turalyon",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
 		["Ershirley - Stormrage"] = "Ershirley - Stormrage",
-		["Squelben - Stormrage"] = "Squelben - Stormrage",
-		["Ranidan - Stormreaver"] = "Ranidan - Stormreaver",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
+		["Ranidan - Stormreaver"] = "Ranidan - Stormreaver",
+		["Squelben - Stormrage"] = "Squelben - Stormrage",
 		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
 		["Titte - Turalyon"] = "Titte - Turalyon",
 		["Yanlery - Stormrage"] = "Yanlery - Stormrage",
 		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
 		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
-		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
-		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
+		["Brobies - Stormrage"] = "Brobies - Stormrage",
+		["Callil - Turalyon"] = "Callil - Turalyon",
 	},
 	["global"] = {
 		["Characters"] = {
@@ -36,49 +36,60 @@ DataStore_MailsDB = {
 				["lastUpdate"] = 1470334117,
 				["Mails"] = {
 					{
-						["icon"] = 134327,
+						["lastCheck"] = 1470334117,
 						["sender"] = "Brew of the Month Club",
 						["subject"] = "Did You Remember Your Brew?",
 						["returned"] = false,
 						["money"] = 0,
 						["text"] = "Warm wishes Yanlery,\n\n   Sometimes you have to go out of your way to find the best brew.  This month's brew has traveled a long way, but we feel that it is well worth it.\n\n   Remember that if you enjoyed this brew sample, you can purchase more from our vendors.\n\nEnjoy!\n\n- Brew of the Month Club",
-						["lastCheck"] = 1470334117,
+						["icon"] = 134327,
 						["daysLeft"] = 29.9990386962891,
 					}, -- [1]
 				},
 				["lastVisitDate"] = "2016/08/04 14:08",
 			},
 			["Default.Stormrage.Danoh"] = {
-				["lastUpdate"] = 1470417267,
+				["lastUpdate"] = 1470603943,
+				["Mails"] = {
+					{
+						["sender"] = "Emmarosa",
+						["itemID"] = 109127,
+						["link"] = "|cffffffff|Hitem:109127::::::::100:260::::::|h[Starflower]|h|r",
+						["count"] = 200,
+						["lastCheck"] = 1470603943,
+						["icon"] = 959803,
+						["daysLeft"] = 30,
+					}, -- [1]
+				},
 				["lastVisitDate"] = "2016/08/05 13:14",
 			},
 			["Default.Bloodhoof.Arando"] = {
 				["lastUpdate"] = 1469173661,
 				["lastVisitDate"] = "2016/07/22 03:47",
 			},
-			["Default.Turalyon.Skratch"] = {
-				["lastUpdate"] = 1469905437,
-				["lastVisitDate"] = "2016/07/30 15:03",
+			["Default.Stormrage.Emmarosa"] = {
+				["lastUpdate"] = 1470603944,
+				["lastVisitDate"] = "2016/08/07 17:05",
 			},
 			["Default.Stormrage.Whyfy"] = {
 				["lastUpdate"] = 1470515489,
 				["lastVisitDate"] = "2016/08/06 16:31",
 			},
-			["Default.Stormrage.Brobies"] = {
-				["lastUpdate"] = 1470515813,
-				["lastVisitDate"] = "2016/08/06 16:36",
+			["Default.Turalyon.Titte"] = {
+				["lastUpdate"] = 1470430851,
+				["lastVisitDate"] = "2016/08/05 17:00",
 			},
 			["Default.Turalyon.Callil"] = {
 				["lastUpdate"] = 1470029797,
 				["lastVisitDate"] = "2016/08/01 01:36",
 			},
-			["Default.Turalyon.Titte"] = {
-				["lastUpdate"] = 1470430851,
-				["lastVisitDate"] = "2016/08/05 17:00",
+			["Default.Stormrage.Brobies"] = {
+				["lastUpdate"] = 1470515813,
+				["lastVisitDate"] = "2016/08/06 16:36",
 			},
-			["Default.Stormrage.Emmarosa"] = {
-				["lastUpdate"] = 1470516889,
-				["lastVisitDate"] = "2016/08/06 16:54",
+			["Default.Turalyon.Skratch"] = {
+				["lastUpdate"] = 1469905437,
+				["lastVisitDate"] = "2016/07/30 15:03",
 			},
 		},
 	},

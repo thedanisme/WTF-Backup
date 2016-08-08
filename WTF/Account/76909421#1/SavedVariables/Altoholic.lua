@@ -1,22 +1,22 @@
 
 AltoholicDB = {
 	["profileKeys"] = {
+		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
+		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
 		["Whyfy - Stormrage"] = "Whyfy - Stormrage",
-		["Brobies - Stormrage"] = "Brobies - Stormrage",
-		["Callil - Turalyon"] = "Callil - Turalyon",
 		["Knutts - Turalyon"] = "Knutts - Turalyon",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
 		["Ershirley - Stormrage"] = "Ershirley - Stormrage",
-		["Squelben - Stormrage"] = "Squelben - Stormrage",
-		["Ranidan - Stormreaver"] = "Ranidan - Stormreaver",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
+		["Ranidan - Stormreaver"] = "Ranidan - Stormreaver",
+		["Squelben - Stormrage"] = "Squelben - Stormrage",
 		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
 		["Titte - Turalyon"] = "Titte - Turalyon",
 		["Yanlery - Stormrage"] = "Yanlery - Stormrage",
 		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
 		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
-		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
-		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
+		["Brobies - Stormrage"] = "Brobies - Stormrage",
+		["Callil - Turalyon"] = "Callil - Turalyon",
 	},
 	["global"] = {
 		["options"] = {

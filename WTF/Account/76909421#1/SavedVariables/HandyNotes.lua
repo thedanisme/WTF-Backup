@@ -15,7 +15,7 @@ HandyNotesDB = {
 		["Pryahprism - Turalyon"] = "Pryahprism - Turalyon",
 		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
 		["Ershirley - Stormrage"] = "Ershirley - Stormrage",
-		["Brobies - Stormrage"] = "Brobies - Stormrage",
+		["Fupa - Stormrage"] = "Fupa - Stormrage",
 		["Ranidan - Stormreaver"] = "Ranidan - Stormreaver",
 		["Bruhbies - Stormrage"] = "Bruhbies - Stormrage",
 		["Rotator - Turalyon"] = "Rotator - Turalyon",
@@ -23,18 +23,18 @@ HandyNotesDB = {
 		["Barewbies - Stormrage"] = "Barewbies - Stormrage",
 		["Callil - Turalyon"] = "Callil - Turalyon",
 		["Titt - Turalyon"] = "Titt - Turalyon",
-		["Knutts - Turalyon"] = "Knutts - Turalyon",
+		["Rosabria - Sargeras"] = "Rosabria - Sargeras",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
-		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
-		["Bloodcox - Stormrage"] = "Bloodcox - Stormrage",
+		["Horny - Bloodhoof"] = "Horny - Bloodhoof",
+		["Brewbies - Turalyon"] = "Brewbies - Turalyon",
 		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
-		["Brewbies - Turalyon"] = "Brewbies - Turalyon",
-		["Horny - Bloodhoof"] = "Horny - Bloodhoof",
-		["Rosabria - Sargeras"] = "Rosabria - Sargeras",
+		["Bloodcox - Stormrage"] = "Bloodcox - Stormrage",
+		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
+		["Knutts - Turalyon"] = "Knutts - Turalyon",
 		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
 		["Beer - Bloodhoof"] = "Beer - Bloodhoof",
-		["Fupa - Stormrage"] = "Fupa - Stormrage",
+		["Brobies - Stormrage"] = "Brobies - Stormrage",
 		["Jimbo - Ner'zhul"] = "Jimbo - Ner'zhul",
 	},
 	["profiles"] = {
@@ -66,7 +66,7 @@ HandyNotesDB = {
 		},
 		["Ershirley - Stormrage"] = {
 		},
-		["Brobies - Stormrage"] = {
+		["Fupa - Stormrage"] = {
 		},
 		["Ranidan - Stormreaver"] = {
 		},
@@ -82,29 +82,29 @@ HandyNotesDB = {
 		},
 		["Titt - Turalyon"] = {
 		},
-		["Knutts - Turalyon"] = {
+		["Rosabria - Sargeras"] = {
 		},
 		["Skratch - Turalyon"] = {
 		},
-		["Arando - Bloodhoof"] = {
+		["Horny - Bloodhoof"] = {
 		},
-		["Bloodcox - Stormrage"] = {
+		["Brewbies - Turalyon"] = {
 		},
 		["Lackteight - Turalyon"] = {
 		},
 		["Danoh - Stormrage"] = {
 		},
-		["Brewbies - Turalyon"] = {
+		["Bloodcox - Stormrage"] = {
 		},
-		["Horny - Bloodhoof"] = {
+		["Arando - Bloodhoof"] = {
 		},
-		["Rosabria - Sargeras"] = {
+		["Knutts - Turalyon"] = {
 		},
 		["Dalgrens - Bloodhoof"] = {
 		},
 		["Beer - Bloodhoof"] = {
 		},
-		["Fupa - Stormrage"] = {
+		["Brobies - Stormrage"] = {
 		},
 		["Jimbo - Ner'zhul"] = {
 		},
@@ -126,7 +126,7 @@ HandyNotes_HandyNotesDB = {
 		["Pryahprism - Turalyon"] = "Pryahprism - Turalyon",
 		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
 		["Ershirley - Stormrage"] = "Ershirley - Stormrage",
-		["Brobies - Stormrage"] = "Brobies - Stormrage",
+		["Fupa - Stormrage"] = "Fupa - Stormrage",
 		["Ranidan - Stormreaver"] = "Ranidan - Stormreaver",
 		["Bruhbies - Stormrage"] = "Bruhbies - Stormrage",
 		["Rotator - Turalyon"] = "Rotator - Turalyon",
@@ -134,18 +134,18 @@ HandyNotes_HandyNotesDB = {
 		["Barewbies - Stormrage"] = "Barewbies - Stormrage",
 		["Callil - Turalyon"] = "Callil - Turalyon",
 		["Titt - Turalyon"] = "Titt - Turalyon",
-		["Knutts - Turalyon"] = "Knutts - Turalyon",
+		["Rosabria - Sargeras"] = "Rosabria - Sargeras",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
-		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
-		["Bloodcox - Stormrage"] = "Bloodcox - Stormrage",
+		["Horny - Bloodhoof"] = "Horny - Bloodhoof",
+		["Brewbies - Turalyon"] = "Brewbies - Turalyon",
 		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
-		["Brewbies - Turalyon"] = "Brewbies - Turalyon",
-		["Horny - Bloodhoof"] = "Horny - Bloodhoof",
-		["Rosabria - Sargeras"] = "Rosabria - Sargeras",
+		["Bloodcox - Stormrage"] = "Bloodcox - Stormrage",
+		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
+		["Knutts - Turalyon"] = "Knutts - Turalyon",
 		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
 		["Beer - Bloodhoof"] = "Beer - Bloodhoof",
-		["Fupa - Stormrage"] = "Fupa - Stormrage",
+		["Brobies - Stormrage"] = "Brobies - Stormrage",
 		["Jimbo - Ner'zhul"] = "Jimbo - Ner'zhul",
 	},
 	["profiles"] = {
@@ -177,7 +177,7 @@ HandyNotes_HandyNotesDB = {
 		},
 		["Ershirley - Stormrage"] = {
 		},
-		["Brobies - Stormrage"] = {
+		["Fupa - Stormrage"] = {
 		},
 		["Ranidan - Stormreaver"] = {
 		},
@@ -193,29 +193,29 @@ HandyNotes_HandyNotesDB = {
 		},
 		["Titt - Turalyon"] = {
 		},
-		["Knutts - Turalyon"] = {
+		["Rosabria - Sargeras"] = {
 		},
 		["Skratch - Turalyon"] = {
 		},
-		["Arando - Bloodhoof"] = {
+		["Horny - Bloodhoof"] = {
 		},
-		["Bloodcox - Stormrage"] = {
+		["Brewbies - Turalyon"] = {
 		},
 		["Lackteight - Turalyon"] = {
 		},
 		["Danoh - Stormrage"] = {
 		},
-		["Brewbies - Turalyon"] = {
+		["Bloodcox - Stormrage"] = {
 		},
-		["Horny - Bloodhoof"] = {
+		["Arando - Bloodhoof"] = {
 		},
-		["Rosabria - Sargeras"] = {
+		["Knutts - Turalyon"] = {
 		},
 		["Dalgrens - Bloodhoof"] = {
 		},
 		["Beer - Bloodhoof"] = {
 		},
-		["Fupa - Stormrage"] = {
+		["Brobies - Stormrage"] = {
 		},
 		["Jimbo - Ner'zhul"] = {
 		},

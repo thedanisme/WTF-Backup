@@ -1,22 +1,22 @@
 
 DataStore_AuctionsDB = {
 	["profileKeys"] = {
+		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
+		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
 		["Whyfy - Stormrage"] = "Whyfy - Stormrage",
-		["Brobies - Stormrage"] = "Brobies - Stormrage",
-		["Callil - Turalyon"] = "Callil - Turalyon",
 		["Knutts - Turalyon"] = "Knutts - Turalyon",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
 		["Ershirley - Stormrage"] = "Ershirley - Stormrage",
-		["Squelben - Stormrage"] = "Squelben - Stormrage",
-		["Ranidan - Stormreaver"] = "Ranidan - Stormreaver",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
+		["Ranidan - Stormreaver"] = "Ranidan - Stormreaver",
+		["Squelben - Stormrage"] = "Squelben - Stormrage",
 		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
 		["Titte - Turalyon"] = "Titte - Turalyon",
 		["Yanlery - Stormrage"] = "Yanlery - Stormrage",
 		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
 		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
-		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
-		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
+		["Brobies - Stormrage"] = "Brobies - Stormrage",
+		["Callil - Turalyon"] = "Callil - Turalyon",
 	},
 	["global"] = {
 		["Characters"] = {
@@ -628,6 +628,10 @@ DataStore_AuctionsDB = {
 				["lastUpdate"] = 1469900969,
 				["lastVisitDate"] = "2016/07/30 13:49",
 			},
+			["Default.Stormrage.Danoh"] = {
+				["lastUpdate"] = 1469993168,
+				["lastVisitDate"] = "2016/07/31 15:26",
+			},
 			["Default.Stormrage.Brobies"] = {
 				["lastUpdate"] = 1470026604,
 				["lastVisitDate"] = "2016/08/01 00:43",
@@ -635,10 +639,6 @@ DataStore_AuctionsDB = {
 			["Default.Turalyon.Titte"] = {
 				["lastUpdate"] = 1469638742,
 				["lastVisitDate"] = "2016/07/27 12:59",
-			},
-			["Default.Stormrage.Danoh"] = {
-				["lastUpdate"] = 1469993168,
-				["lastVisitDate"] = "2016/07/31 15:26",
 			},
 		},
 	},

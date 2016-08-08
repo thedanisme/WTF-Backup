@@ -110,9 +110,9 @@ BestInSlotDB = {
 			},
 			["windowpos"] = {
 				["xOffset"] = 154.000030517578,
-				["relativePoint"] = "CENTER",
-				["point"] = "CENTER",
 				["yOffset"] = 117.999923706055,
+				["point"] = "CENTER",
+				["relativePoint"] = "CENTER",
 			},
 			["options"] = {
 				["minimapButton"] = false,
@@ -296,6 +296,141 @@ BestInSlotDB = {
 				[6] = 104,
 			},
 		},
+		["Ranidan - Stormreaver"] = {
+			["windowpos"] = {
+				["relativeTo"] = "UIParent",
+				["point"] = "TOPLEFT",
+				["relativePoint"] = "TOPLEFT",
+				["xOffset"] = 200,
+				["yOffset"] = -250.000015258789,
+			},
+			["options"] = {
+				["minimapButton"] = false,
+			},
+			["selected"] = {
+				"WoD", -- [1]
+				60200, -- [2]
+				"HFC", -- [3]
+				[5] = 4,
+				[6] = 62,
+			},
+		},
+		["Emmarosa - Stormrage"] = {
+			["windowpos"] = {
+				["xOffset"] = 247.000289916992,
+				["relativePoint"] = "LEFT",
+				["point"] = "LEFT",
+				["yOffset"] = -95.0000839233399,
+			},
+			["options"] = {
+				["overviewfilter"] = {
+					[259] = true,
+				},
+				["minimapButton"] = false,
+			},
+			[70011] = {
+				{
+					[259] = {
+						138332, -- [1]
+						140894, -- [2]
+						138338, -- [3]
+						[13] = 140802,
+						[7] = 140862,
+						[14] = 140806,
+						[15] = 138371,
+						[8] = 140861,
+						[31] = 140815,
+						[32] = 140818,
+						[5] = 140865,
+						[10] = 138329,
+						[30] = 140821,
+						[11] = 140897,
+						[6] = 140859,
+						[12] = 140906,
+						[9] = 140889,
+					},
+				}, -- [1]
+				{
+					[259] = {
+						138332, -- [1]
+						140894, -- [2]
+						138338, -- [3]
+						nil, -- [4]
+						140865, -- [5]
+						140859, -- [6]
+						140862, -- [7]
+						140861, -- [8]
+						140889, -- [9]
+						138329, -- [10]
+						140897, -- [11]
+						140906, -- [12]
+						140802, -- [13]
+						140806, -- [14]
+						138371, -- [15]
+						nil, -- [16]
+						nil, -- [17]
+						nil, -- [18]
+						nil, -- [19]
+						nil, -- [20]
+						nil, -- [21]
+						nil, -- [22]
+						nil, -- [23]
+						nil, -- [24]
+						nil, -- [25]
+						nil, -- [26]
+						nil, -- [27]
+						nil, -- [28]
+						nil, -- [29]
+						140821, -- [30]
+						140815, -- [31]
+						140818, -- [32]
+					},
+				}, -- [2]
+				{
+					[259] = {
+						138332, -- [1]
+						140894, -- [2]
+						138338, -- [3]
+						nil, -- [4]
+						140865, -- [5]
+						140859, -- [6]
+						140862, -- [7]
+						140861, -- [8]
+						140889, -- [9]
+						138329, -- [10]
+						140897, -- [11]
+						140906, -- [12]
+						140802, -- [13]
+						140806, -- [14]
+						138371, -- [15]
+						nil, -- [16]
+						nil, -- [17]
+						nil, -- [18]
+						nil, -- [19]
+						nil, -- [20]
+						nil, -- [21]
+						nil, -- [22]
+						nil, -- [23]
+						nil, -- [24]
+						nil, -- [25]
+						nil, -- [26]
+						nil, -- [27]
+						nil, -- [28]
+						nil, -- [29]
+						140821, -- [30]
+						140815, -- [31]
+						140818, -- [32]
+					},
+				}, -- [3]
+			},
+			["selected"] = {
+				"Legion", -- [1]
+				70011, -- [2]
+				"NH", -- [3]
+				[5] = 3,
+				[6] = 259,
+			},
+		},
 		["Yanlery - Stormrage"] = {
 			[60200] = {
 				{
@@ -475,9 +610,9 @@ BestInSlotDB = {
 			},
 			["windowpos"] = {
 				["xOffset"] = -76.9999847412109,
-				["relativePoint"] = "CENTER",
-				["point"] = "CENTER",
 				["yOffset"] = 32.9998207092285,
+				["point"] = "CENTER",
+				["relativePoint"] = "CENTER",
 			},
 			["options"] = {
 				["keepHistory"] = true,
@@ -492,6 +627,101 @@ BestInSlotDB = {
 				"HFC", -- [3]
 				[5] = 2,
 				[6] = 71,
+			},
+		},
+		["Brewbies - Turalyon"] = {
+			["windowpos"] = {
+				["relativeTo"] = "UIParent",
+				["point"] = "TOPLEFT",
+				["relativePoint"] = "TOPLEFT",
+				["xOffset"] = 200,
+				["yOffset"] = -250.000015258789,
+			},
+			["options"] = {
+				["minimapButton"] = false,
+			},
+			["selected"] = {
+				"WoD", -- [1]
+				60000, -- [2]
+				"HM", -- [3]
+				[5] = 4,
+				[6] = 268,
+			},
+		},
+		["Lackteight - Turalyon"] = {
+			["windowpos"] = {
+				["relativeTo"] = "UIParent",
+				["point"] = "TOPLEFT",
+				["relativePoint"] = "TOPLEFT",
+				["xOffset"] = 200,
+				["yOffset"] = -250.000015258789,
+			},
+			["options"] = {
+				["minimapButton"] = false,
+			},
+			["selected"] = {
+				"WoD", -- [1]
+				60200, -- [2]
+				"HFC", -- [3]
+				[5] = 4,
+				[6] = 265,
+			},
+		},
+		["Whyfy - Stormrage"] = {
+			["windowpos"] = {
+				["relativeTo"] = "UIParent",
+				["point"] = "TOPLEFT",
+				["relativePoint"] = "TOPLEFT",
+				["xOffset"] = 200,
+				["yOffset"] = -250.000015258789,
+			},
+			["options"] = {
+				["minimapButton"] = false,
+			},
+			["selected"] = {
+				"WoD", -- [1]
+				60001, -- [2]
+				"BrF", -- [3]
+				[5] = 4,
+				[6] = 66,
+			},
+		},
+		["Dalgrens - Bloodhoof"] = {
+			["windowpos"] = {
+				["relativeTo"] = "UIParent",
+				["point"] = "TOPLEFT",
+				["relativePoint"] = "TOPLEFT",
+				["xOffset"] = 200,
+				["yOffset"] = -250.000015258789,
+			},
+			["options"] = {
+				["minimapButton"] = false,
+			},
+			["selected"] = {
+				"WoD", -- [1]
+				60200, -- [2]
+				"HFC", -- [3]
+				[5] = 4,
+				[6] = 253,
+			},
+		},
+		["Pastaliar - Stormrage"] = {
+			["windowpos"] = {
+				["relativeTo"] = "UIParent",
+				["point"] = "TOPLEFT",
+				["relativePoint"] = "TOPLEFT",
+				["xOffset"] = 200,
+				["yOffset"] = -250.000015258789,
+			},
+			["options"] = {
+				["minimapButton"] = false,
+			},
+			["selected"] = {
+				"WoD", -- [1]
+				60200, -- [2]
+				"HFC", -- [3]
+				[5] = 4,
+				[6] = 62,
 			},
 		},
 		["Brobies - Stormrage"] = {
@@ -614,236 +844,6 @@ BestInSlotDB = {
 				"HFC", -- [3]
 				[5] = 2,
 				[6] = 254,
-			},
-		},
-		["Brewbies - Turalyon"] = {
-			["windowpos"] = {
-				["relativeTo"] = "UIParent",
-				["point"] = "TOPLEFT",
-				["relativePoint"] = "TOPLEFT",
-				["xOffset"] = 200,
-				["yOffset"] = -250.000015258789,
-			},
-			["options"] = {
-				["minimapButton"] = false,
-			},
-			["selected"] = {
-				"WoD", -- [1]
-				60000, -- [2]
-				"HM", -- [3]
-				[5] = 4,
-				[6] = 268,
-			},
-		},
-		["Pastaliar - Stormrage"] = {
-			["windowpos"] = {
-				["relativeTo"] = "UIParent",
-				["point"] = "TOPLEFT",
-				["relativePoint"] = "TOPLEFT",
-				["xOffset"] = 200,
-				["yOffset"] = -250.000015258789,
-			},
-			["options"] = {
-				["minimapButton"] = false,
-			},
-			["selected"] = {
-				"WoD", -- [1]
-				60200, -- [2]
-				"HFC", -- [3]
-				[5] = 4,
-				[6] = 62,
-			},
-		},
-		["Whyfy - Stormrage"] = {
-			["windowpos"] = {
-				["relativeTo"] = "UIParent",
-				["point"] = "TOPLEFT",
-				["relativePoint"] = "TOPLEFT",
-				["xOffset"] = 200,
-				["yOffset"] = -250.000015258789,
-			},
-			["options"] = {
-				["minimapButton"] = false,
-			},
-			["selected"] = {
-				"WoD", -- [1]
-				60001, -- [2]
-				"BrF", -- [3]
-				[5] = 4,
-				[6] = 66,
-			},
-		},
-		["Dalgrens - Bloodhoof"] = {
-			["windowpos"] = {
-				["relativeTo"] = "UIParent",
-				["point"] = "TOPLEFT",
-				["relativePoint"] = "TOPLEFT",
-				["xOffset"] = 200,
-				["yOffset"] = -250.000015258789,
-			},
-			["options"] = {
-				["minimapButton"] = false,
-			},
-			["selected"] = {
-				"WoD", -- [1]
-				60200, -- [2]
-				"HFC", -- [3]
-				[5] = 4,
-				[6] = 253,
-			},
-		},
-		["Lackteight - Turalyon"] = {
-			["windowpos"] = {
-				["relativeTo"] = "UIParent",
-				["point"] = "TOPLEFT",
-				["relativePoint"] = "TOPLEFT",
-				["xOffset"] = 200,
-				["yOffset"] = -250.000015258789,
-			},
-			["options"] = {
-				["minimapButton"] = false,
-			},
-			["selected"] = {
-				"WoD", -- [1]
-				60200, -- [2]
-				"HFC", -- [3]
-				[5] = 4,
-				[6] = 265,
-			},
-		},
-		["Emmarosa - Stormrage"] = {
-			["windowpos"] = {
-				["xOffset"] = 247.000289916992,
-				["yOffset"] = -95.0000839233399,
-				["point"] = "LEFT",
-				["relativePoint"] = "LEFT",
-			},
-			["options"] = {
-				["overviewfilter"] = {
-					[259] = true,
-				},
-				["minimapButton"] = false,
-			},
-			["selected"] = {
-				"Legion", -- [1]
-				70011, -- [2]
-				"NH", -- [3]
-				[5] = 3,
-				[6] = 259,
-			},
-			[70011] = {
-				{
-					[259] = {
-						138332, -- [1]
-						140894, -- [2]
-						138338, -- [3]
-						[13] = 140802,
-						[7] = 140862,
-						[14] = 140806,
-						[15] = 138371,
-						[8] = 140861,
-						[31] = 140815,
-						[32] = 140818,
-						[5] = 140865,
-						[10] = 138329,
-						[9] = 140889,
-						[11] = 140897,
-						[6] = 140859,
-						[12] = 140906,
-						[30] = 140821,
-					},
-				}, -- [1]
-				{
-					[259] = {
-						138332, -- [1]
-						140894, -- [2]
-						138338, -- [3]
-						nil, -- [4]
-						140865, -- [5]
-						140859, -- [6]
-						140862, -- [7]
-						140861, -- [8]
-						140889, -- [9]
-						138329, -- [10]
-						140897, -- [11]
-						140906, -- [12]
-						140802, -- [13]
-						140806, -- [14]
-						138371, -- [15]
-						nil, -- [16]
-						nil, -- [17]
-						nil, -- [18]
-						nil, -- [19]
-						nil, -- [20]
-						nil, -- [21]
-						nil, -- [22]
-						nil, -- [23]
-						nil, -- [24]
-						nil, -- [25]
-						nil, -- [26]
-						nil, -- [27]
-						nil, -- [28]
-						nil, -- [29]
-						140821, -- [30]
-						140815, -- [31]
-						140818, -- [32]
-					},
-				}, -- [2]
-				{
-					[259] = {
-						138332, -- [1]
-						140894, -- [2]
-						138338, -- [3]
-						nil, -- [4]
-						140865, -- [5]
-						140859, -- [6]
-						140862, -- [7]
-						140861, -- [8]
-						140889, -- [9]
-						138329, -- [10]
-						140897, -- [11]
-						140906, -- [12]
-						140802, -- [13]
-						140806, -- [14]
-						138371, -- [15]
-						nil, -- [16]
-						nil, -- [17]
-						nil, -- [18]
-						nil, -- [19]
-						nil, -- [20]
-						nil, -- [21]
-						nil, -- [22]
-						nil, -- [23]
-						nil, -- [24]
-						nil, -- [25]
-						nil, -- [26]
-						nil, -- [27]
-						nil, -- [28]
-						nil, -- [29]
-						140821, -- [30]
-						140815, -- [31]
-						140818, -- [32]
-					},
-				}, -- [3]
-			},
-		},
-		["Ranidan - Stormreaver"] = {
-			["windowpos"] = {
-				["relativeTo"] = "UIParent",
-				["point"] = "TOPLEFT",
-				["relativePoint"] = "TOPLEFT",
-				["xOffset"] = 200,
-				["yOffset"] = -250.000015258789,
-			},
-			["options"] = {
-				["minimapButton"] = false,
-			},
-			["selected"] = {
-				"WoD", -- [1]
-				60200, -- [2]
-				"HFC", -- [3]
-				[5] = 4,
-				[6] = 62,
 			},
 		},
 	},
@@ -1033,74 +1033,135 @@ BestInSlotDB = {
 						}, -- [1]
 					},
 				},
-				["Darkravage"] = {
+				["Dalban"] = {
 					[60200] = {
 						[2] = {
-							[104] = {
+							[64] = {
 								{
-									["item"] = 124261,
+									["item"] = 124159,
 									["obtained"] = false,
 								}, -- [1]
 								{
-									["item"] = 124222,
+									["item"] = 124212,
 									["obtained"] = false,
 								}, -- [2]
 								{
-									["item"] = 124272,
-									["obtained"] = false,
+									["item"] = 124177,
+									["obtained"] = 2,
 								}, -- [3]
 								{
-									["item"] = 124147,
+									["item"] = 124138,
 									["obtained"] = false,
 								}, -- [4]
 								{
-									["item"] = 124246,
-									["obtained"] = false,
+									["item"] = 124171,
+									["obtained"] = 2,
 								}, -- [5]
 								{
-									["item"] = 124280,
+									["item"] = 124186,
 									["obtained"] = false,
 								}, -- [6]
 								{
-									["item"] = 124255,
-									["obtained"] = false,
+									["item"] = 124154,
+									["obtained"] = 2,
 								}, -- [7]
 								{
-									["item"] = 124276,
+									["item"] = 124200,
 									["obtained"] = false,
 								}, -- [8]
 								{
-									["item"] = 124267,
-									["obtained"] = false,
+									["item"] = 124165,
+									["obtained"] = 2,
 								}, -- [9]
 								{
-									["item"] = 124250,
+									["item"] = 124149,
 									["obtained"] = false,
 								}, -- [10]
 								{
-									["item"] = 124637,
+									["item"] = 124635,
 									["obtained"] = false,
 								}, -- [11]
 								{
-									["item"] = 124203,
+									["item"] = 124192,
 									["obtained"] = false,
 								}, -- [12]
 								{
-									["item"] = 124240,
+									["item"] = 124516,
 									["obtained"] = false,
 								}, -- [13]
 								{
-									["item"] = 124242,
+									["item"] = 124228,
 									["obtained"] = false,
 								}, -- [14]
 								{
-									["item"] = 124378,
+									["item"] = 124382,
+									["obtained"] = 2,
+								}, -- [15]
+							},
+							[62] = {
+								{
+									["item"] = 124159,
 									["obtained"] = false,
+								}, -- [1]
+								{
+									["item"] = 124391,
+									["obtained"] = 2,
+								}, -- [2]
+								{
+									["item"] = 124177,
+									["obtained"] = false,
+								}, -- [3]
+								{
+									["item"] = 124138,
+									["obtained"] = false,
+								}, -- [4]
+								{
+									["item"] = 124171,
+									["obtained"] = 2,
+								}, -- [5]
+								{
+									["item"] = 124186,
+									["obtained"] = false,
+								}, -- [6]
+								{
+									["item"] = 124154,
+									["obtained"] = 2,
+								}, -- [7]
+								{
+									["item"] = 124181,
+									["obtained"] = false,
+								}, -- [8]
+								{
+									["item"] = 124165,
+									["obtained"] = 2,
+								}, -- [9]
+								{
+									["item"] = 124150,
+									["obtained"] = 2,
+								}, -- [10]
+								{
+									["item"] = 124635,
+									["obtained"] = false,
+								}, -- [11]
+								{
+									["item"] = 124191,
+									["obtained"] = 2,
+								}, -- [12]
+								{
+									["item"] = 124230,
+									["obtained"] = 2,
+								}, -- [13]
+								{
+									["item"] = 124516,
+									["obtained"] = 2,
+								}, -- [14]
+								{
+									["item"] = 124382,
+									["obtained"] = 2,
 								}, -- [15]
 							},
 						},
 					},
-					["activeSpec"] = 104,
 				},
 				["Chozenone"] = {
 					[60200] = {
@@ -1374,135 +1435,74 @@ BestInSlotDB = {
 						}, -- [2]
 					},
 				},
-				["Dalban"] = {
+				["Darkravage"] = {
 					[60200] = {
 						[2] = {
-							[64] = {
+							[104] = {
 								{
-									["item"] = 124159,
+									["item"] = 124261,
 									["obtained"] = false,
 								}, -- [1]
 								{
-									["item"] = 124212,
+									["item"] = 124222,
 									["obtained"] = false,
 								}, -- [2]
 								{
-									["item"] = 124177,
-									["obtained"] = 2,
-								}, -- [3]
-								{
-									["item"] = 124138,
-									["obtained"] = false,
-								}, -- [4]
-								{
-									["item"] = 124171,
-									["obtained"] = 2,
-								}, -- [5]
-								{
-									["item"] = 124186,
-									["obtained"] = false,
-								}, -- [6]
-								{
-									["item"] = 124154,
-									["obtained"] = 2,
-								}, -- [7]
-								{
-									["item"] = 124200,
-									["obtained"] = false,
-								}, -- [8]
-								{
-									["item"] = 124165,
-									["obtained"] = 2,
-								}, -- [9]
-								{
-									["item"] = 124149,
-									["obtained"] = false,
-								}, -- [10]
-								{
-									["item"] = 124635,
-									["obtained"] = false,
-								}, -- [11]
-								{
-									["item"] = 124192,
-									["obtained"] = false,
-								}, -- [12]
-								{
-									["item"] = 124516,
-									["obtained"] = false,
-								}, -- [13]
-								{
-									["item"] = 124228,
-									["obtained"] = false,
-								}, -- [14]
-								{
-									["item"] = 124382,
-									["obtained"] = 2,
-								}, -- [15]
-							},
-							[62] = {
-								{
-									["item"] = 124159,
-									["obtained"] = false,
-								}, -- [1]
-								{
-									["item"] = 124391,
-									["obtained"] = 2,
-								}, -- [2]
-								{
-									["item"] = 124177,
+									["item"] = 124272,
 									["obtained"] = false,
 								}, -- [3]
 								{
-									["item"] = 124138,
+									["item"] = 124147,
 									["obtained"] = false,
 								}, -- [4]
 								{
-									["item"] = 124171,
-									["obtained"] = 2,
+									["item"] = 124246,
+									["obtained"] = false,
 								}, -- [5]
 								{
-									["item"] = 124186,
+									["item"] = 124280,
 									["obtained"] = false,
 								}, -- [6]
 								{
-									["item"] = 124154,
-									["obtained"] = 2,
+									["item"] = 124255,
+									["obtained"] = false,
 								}, -- [7]
 								{
-									["item"] = 124181,
+									["item"] = 124276,
 									["obtained"] = false,
 								}, -- [8]
 								{
-									["item"] = 124165,
-									["obtained"] = 2,
+									["item"] = 124267,
+									["obtained"] = false,
 								}, -- [9]
 								{
-									["item"] = 124150,
-									["obtained"] = 2,
+									["item"] = 124250,
+									["obtained"] = false,
 								}, -- [10]
 								{
-									["item"] = 124635,
+									["item"] = 124637,
 									["obtained"] = false,
 								}, -- [11]
 								{
-									["item"] = 124191,
-									["obtained"] = 2,
+									["item"] = 124203,
+									["obtained"] = false,
 								}, -- [12]
 								{
-									["item"] = 124230,
-									["obtained"] = 2,
+									["item"] = 124240,
+									["obtained"] = false,
 								}, -- [13]
 								{
-									["item"] = 124516,
-									["obtained"] = 2,
+									["item"] = 124242,
+									["obtained"] = false,
 								}, -- [14]
 								{
-									["item"] = 124382,
-									["obtained"] = 2,
+									["item"] = 124378,
+									["obtained"] = false,
 								}, -- [15]
 							},
 						},
 					},
+					["activeSpec"] = 104,
 				},
 			},
 			["_history"] = {
@@ -1512,8 +1512,8 @@ BestInSlotDB = {
 				["Shamwiches"] = {
 					["lastUpdate"] = 1458001970,
 				},
-				["Darkravage"] = {
-					["lastUpdate"] = 1453848682,
+				["Dalban"] = {
+					["lastUpdate"] = 1464308773,
 				},
 				["Chozenone"] = {
 					["lastUpdate"] = 1456798520,
@@ -1524,8 +1524,8 @@ BestInSlotDB = {
 				["Khloroshue"] = {
 					["lastUpdate"] = 1454032016,
 				},
-				["Dalban"] = {
-					["lastUpdate"] = 1464308773,
+				["Darkravage"] = {
+					["lastUpdate"] = 1453848682,
 				},
 			},
 		},
@@ -1541,24 +1541,24 @@ BestInSlotDB = {
 		["Titte - Turalyon"] = "Titte - Turalyon",
 		["Iphone - Bloodhoof"] = "Iphone - Bloodhoof",
 		["Bruhbies - Stormrage"] = "Bruhbies - Stormrage",
-		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
+		["Ranidan - Stormreaver"] = "Ranidan - Stormreaver",
 		["Llamama - Stormrage"] = "Llamama - Stormrage",
-		["Horny - Bloodhoof"] = "Horny - Bloodhoof",
+		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
 		["Brobies - Stormrage"] = "Brobies - Stormrage",
 		["Titt - Turalyon"] = "Titt - Turalyon",
 		["Pastaliar - Stormrage"] = "Pastaliar - Stormrage",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
 		["Whyfy - Stormrage"] = "Whyfy - Stormrage",
+		["Rosabria - Sargeras"] = "Rosabria - Sargeras",
+		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
 		["Brewbies - Turalyon"] = "Brewbies - Turalyon",
 		["Yanlery - Stormrage"] = "Yanlery - Stormrage",
-		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
-		["Rosabria - Sargeras"] = "Rosabria - Sargeras",
 		["Retardar - Stormrage"] = "Retardar - Stormrage",
 		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
 		["Beer - Bloodhoof"] = "Beer - Bloodhoof",
-		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
-		["Ranidan - Stormreaver"] = "Ranidan - Stormreaver",
+		["Horny - Bloodhoof"] = "Horny - Bloodhoof",
+		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
 	},
 	["profiles"] = {
 		["Callil - Turalyon"] = {
@@ -1581,11 +1581,11 @@ BestInSlotDB = {
 		},
 		["Bruhbies - Stormrage"] = {
 		},
-		["Arando - Bloodhoof"] = {
+		["Ranidan - Stormreaver"] = {
 		},
 		["Llamama - Stormrage"] = {
 		},
-		["Horny - Bloodhoof"] = {
+		["Emmarosa - Stormrage"] = {
 		},
 		["Brobies - Stormrage"] = {
 		},
@@ -1597,15 +1597,15 @@ BestInSlotDB = {
 		},
 		["Whyfy - Stormrage"] = {
 		},
+		["Rosabria - Sargeras"] = {
+		},
+		["Lackteight - Turalyon"] = {
+		},
 		["Danoh - Stormrage"] = {
 		},
 		["Brewbies - Turalyon"] = {
 		},
 		["Yanlery - Stormrage"] = {
-		},
-		["Lackteight - Turalyon"] = {
-		},
-		["Rosabria - Sargeras"] = {
 		},
 		["Retardar - Stormrage"] = {
 		},
@@ -1613,9 +1613,9 @@ BestInSlotDB = {
 		},
 		["Beer - Bloodhoof"] = {
 		},
-		["Emmarosa - Stormrage"] = {
+		["Horny - Bloodhoof"] = {
 		},
-		["Ranidan - Stormreaver"] = {
+		["Arando - Bloodhoof"] = {
 		},
 	},
 }
