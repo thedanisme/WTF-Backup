@@ -19,8 +19,9 @@ TalentMacrosDB = {
 		["Pryahprism - Turalyon"] = "Pryahprism - Turalyon",
 		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
 		["Abegar - Turalyon"] = "Abegar - Turalyon",
-		["Ershirley - Stormrage"] = "Ershirley - Stormrage",
+		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
 		["Brobies - Stormrage"] = "Brobies - Stormrage",
+		["Ershirley - Stormrage"] = "Ershirley - Stormrage",
 		["Priaprisum - Stormreaver"] = "Priaprisum - Stormreaver",
 		["Bruhbies - Stormrage"] = "Bruhbies - Stormrage",
 		["Rotator - Turalyon"] = "Rotator - Turalyon",
@@ -30,12 +31,12 @@ TalentMacrosDB = {
 		["Titt - Turalyon"] = "Titt - Turalyon",
 		["Ranidan - Stormreaver"] = "Ranidan - Stormreaver",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
-		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
 		["Bloodcox - Stormrage"] = "Bloodcox - Stormrage",
+		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
 		["Rosabria - Sargeras"] = "Rosabria - Sargeras",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
-		["Brewbies - Turalyon"] = "Brewbies - Turalyon",
 		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
+		["Brewbies - Turalyon"] = "Brewbies - Turalyon",
 		["Fupa - Stormrage"] = "Fupa - Stormrage",
 		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
 		["Beer - Bloodhoof"] = "Beer - Bloodhoof",
@@ -77,13 +78,15 @@ TalentMacrosDB = {
 		},
 		["Abegar - Turalyon"] = {
 		},
-		["Ershirley - Stormrage"] = {
+		["Kateplusnine - Stormrage"] = {
 		},
 		["Brobies - Stormrage"] = {
 			["macrotext"] = {
 				[19818] = "#showtooltip\n/cast [@mouseover,help,exists][@target,help,exists][@player]Tiger's Lust",
 				[19820] = "#showtooltip\n/cast [@player]Zen Sphere",
 			},
+		},
+		["Ershirley - Stormrage"] = {
 		},
 		["Priaprisum - Stormreaver"] = {
 		},
@@ -108,9 +111,9 @@ TalentMacrosDB = {
 		},
 		["Skratch - Turalyon"] = {
 		},
-		["Arando - Bloodhoof"] = {
-		},
 		["Bloodcox - Stormrage"] = {
+		},
+		["Arando - Bloodhoof"] = {
 		},
 		["Rosabria - Sargeras"] = {
 		},
@@ -119,9 +122,9 @@ TalentMacrosDB = {
 				[19362] = "#showtooltip stampede\n/startattack\n/cancelaura hand of protection\n/petattack\n/use stampede\n/petattack\n/petattack\n/petattack\n/petattack\n/petattack\n/petattack\n/petattack\n/petattack\n/petattack\n/petattack\n/petattack\n/petattack\n/petattack",
 			},
 		},
-		["Brewbies - Turalyon"] = {
-		},
 		["Lackteight - Turalyon"] = {
+		},
+		["Brewbies - Turalyon"] = {
 		},
 		["Fupa - Stormrage"] = {
 		},

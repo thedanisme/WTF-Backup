@@ -2,39 +2,36 @@
 DataStore_AuctionsDB = {
 	["profileKeys"] = {
 		["Whyfy - Stormrage"] = "Whyfy - Stormrage",
+		["Knutts - Turalyon"] = "Knutts - Turalyon",
+		["Ershirley - Stormrage"] = "Ershirley - Stormrage",
+		["Ranidan - Stormreaver"] = "Ranidan - Stormreaver",
+		["Squelben - Stormrage"] = "Squelben - Stormrage",
+		["Titte - Turalyon"] = "Titte - Turalyon",
+		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
+		["Skratch - Turalyon"] = "Skratch - Turalyon",
+		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
+		["Yanlery - Stormrage"] = "Yanlery - Stormrage",
+		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
 		["Brobies - Stormrage"] = "Brobies - Stormrage",
 		["Callil - Turalyon"] = "Callil - Turalyon",
-		["Knutts - Turalyon"] = "Knutts - Turalyon",
-		["Skratch - Turalyon"] = "Skratch - Turalyon",
-		["Ershirley - Stormrage"] = "Ershirley - Stormrage",
-		["Squelben - Stormrage"] = "Squelben - Stormrage",
-		["Ranidan - Stormreaver"] = "Ranidan - Stormreaver",
-		["Danoh - Stormrage"] = "Danoh - Stormrage",
-		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
-		["Titte - Turalyon"] = "Titte - Turalyon",
-		["Yanlery - Stormrage"] = "Yanlery - Stormrage",
 		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
-		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
-		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
 		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
+		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
+		["Danoh - Stormrage"] = "Danoh - Stormrage",
 	},
 	["global"] = {
 		["Characters"] = {
-			["Default.Turalyon.Titte"] = {
-				["lastUpdate"] = 1469638742,
-				["lastVisitDate"] = "2016/07/27 12:59",
-			},
 			["Default.Turalyon.Knutts"] = {
 				["lastUpdate"] = 1469908057,
 				["lastVisitDate"] = "2016/07/30 15:47",
 			},
-			["Default.Stormrage.Brobies"] = {
-				["lastUpdate"] = 1470026604,
-				["lastVisitDate"] = "2016/08/01 00:43",
-			},
 			["Default.Stormreaver.Ranidan"] = {
 				["lastUpdate"] = 1461389247,
 				["lastVisitDate"] = "2016/04/23 01:26",
+			},
+			["Default.Stormrage.Yanlery"] = {
+				["lastUpdate"] = 1469890457,
+				["lastVisitDate"] = "2016/07/30 10:54",
 			},
 			["Default.Stormrage.Emmarosa"] = {
 				["lastUpdate"] = 1470731735,
@@ -85,17 +82,21 @@ DataStore_AuctionsDB = {
 				},
 				["lastVisitDate"] = "2016/08/09 04:35",
 			},
-			["Default.Stormrage.Yanlery"] = {
-				["lastUpdate"] = 1469890457,
-				["lastVisitDate"] = "2016/07/30 10:54",
+			["Default.Stormrage.Whyfy"] = {
+				["lastUpdate"] = 1469900969,
+				["lastVisitDate"] = "2016/07/30 13:49",
+			},
+			["Default.Turalyon.Titte"] = {
+				["lastUpdate"] = 1469638742,
+				["lastVisitDate"] = "2016/07/27 12:59",
+			},
+			["Default.Stormrage.Brobies"] = {
+				["lastUpdate"] = 1470026604,
+				["lastVisitDate"] = "2016/08/01 00:43",
 			},
 			["Default.Stormrage.Danoh"] = {
 				["lastUpdate"] = 1469993168,
 				["lastVisitDate"] = "2016/07/31 15:26",
-			},
-			["Default.Stormrage.Whyfy"] = {
-				["lastUpdate"] = 1469900969,
-				["lastVisitDate"] = "2016/07/30 13:49",
 			},
 		},
 	},

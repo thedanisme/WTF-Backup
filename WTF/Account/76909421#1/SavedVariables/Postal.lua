@@ -23,23 +23,24 @@ Postal3DB = {
 				"Horny|Bloodhoof|Horde|7|SHAMAN", -- [18]
 				"Iphone|Bloodhoof|Horde|1|SHAMAN", -- [19]
 				"Jimbo|Ner'zhul|Alliance|13|DRUID", -- [20]
-				"Knutts|Turalyon|Horde|100|ROGUE", -- [21]
-				"Lackteight|Turalyon|Horde|100|WARLOCK", -- [22]
-				"Llamama|Stormrage|Alliance|100|HUNTER", -- [23]
-				"Pastaliar|Stormrage|Alliance|5|MAGE", -- [24]
-				"Pryahprism|Turalyon|Horde|91|MAGE", -- [25]
-				"Ranidan|Stormreaver|Horde|100|MAGE", -- [26]
-				"Retardar|Stormrage|Alliance|8|DRUID", -- [27]
-				"Rosabria|Sargeras|Alliance|62|DRUID", -- [28]
-				"Rotator|Turalyon|Horde|100|WARRIOR", -- [29]
-				"Shaneequa|Turalyon|Horde|100|SHAMAN", -- [30]
-				"Skratch|Turalyon|Horde|100|DRUID", -- [31]
-				"Squelben|Stormrage|Alliance|1|MAGE", -- [32]
-				"Titte|Turalyon|Horde|100|DEATHKNIGHT", -- [33]
-				"Titt|Turalyon|Horde|100|DEATHKNIGHT", -- [34]
-				"Ured|Ner'zhul|Alliance|90|DEATHKNIGHT", -- [35]
-				"Whyfy|Stormrage|Alliance|100|PALADIN", -- [36]
-				"Yanlery|Stormrage|Alliance|100|WARRIOR", -- [37]
+				"Kateplusnine|Stormrage|Alliance|6|MAGE", -- [21]
+				"Knutts|Turalyon|Horde|100|ROGUE", -- [22]
+				"Lackteight|Turalyon|Horde|100|WARLOCK", -- [23]
+				"Llamama|Stormrage|Alliance|100|HUNTER", -- [24]
+				"Pastaliar|Stormrage|Alliance|5|MAGE", -- [25]
+				"Pryahprism|Turalyon|Horde|91|MAGE", -- [26]
+				"Ranidan|Stormreaver|Horde|100|MAGE", -- [27]
+				"Retardar|Stormrage|Alliance|8|DRUID", -- [28]
+				"Rosabria|Sargeras|Alliance|62|DRUID", -- [29]
+				"Rotator|Turalyon|Horde|100|WARRIOR", -- [30]
+				"Shaneequa|Turalyon|Horde|100|SHAMAN", -- [31]
+				"Skratch|Turalyon|Horde|100|DRUID", -- [32]
+				"Squelben|Stormrage|Alliance|1|MAGE", -- [33]
+				"Titte|Turalyon|Horde|100|DEATHKNIGHT", -- [34]
+				"Titt|Turalyon|Horde|100|DEATHKNIGHT", -- [35]
+				"Ured|Ner'zhul|Alliance|90|DEATHKNIGHT", -- [36]
+				"Whyfy|Stormrage|Alliance|100|PALADIN", -- [37]
+				"Yanlery|Stormrage|Alliance|100|WARRIOR", -- [38]
 			},
 		},
 	},
@@ -57,9 +58,10 @@ Postal3DB = {
 		["Knutts - Turalyon"] = "Knutts - Turalyon",
 		["Pryahprism - Turalyon"] = "Pryahprism - Turalyon",
 		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
+		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
 		["Abegar - Turalyon"] = "Abegar - Turalyon",
-		["Ershirley - Stormrage"] = "Ershirley - Stormrage",
 		["Rosabria - Sargeras"] = "Rosabria - Sargeras",
+		["Ershirley - Stormrage"] = "Ershirley - Stormrage",
 		["Ranidan - Stormreaver"] = "Ranidan - Stormreaver",
 		["Whyfy - Stormrage"] = "Whyfy - Stormrage",
 		["Bruhbies - Stormrage"] = "Bruhbies - Stormrage",
@@ -70,8 +72,8 @@ Postal3DB = {
 		["Titt - Turalyon"] = "Titt - Turalyon",
 		["Horny - Bloodhoof"] = "Horny - Bloodhoof",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
-		["Bloodcox - Stormrage"] = "Bloodcox - Stormrage",
 		["Brewbies - Turalyon"] = "Brewbies - Turalyon",
+		["Bloodcox - Stormrage"] = "Bloodcox - Stormrage",
 		["Fupa - Stormrage"] = "Fupa - Stormrage",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
 		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
@@ -179,11 +181,13 @@ Postal3DB = {
 				},
 			},
 		},
+		["Kateplusnine - Stormrage"] = {
+		},
 		["Abegar - Turalyon"] = {
 		},
-		["Ershirley - Stormrage"] = {
-		},
 		["Rosabria - Sargeras"] = {
+		},
+		["Ershirley - Stormrage"] = {
 		},
 		["Ranidan - Stormreaver"] = {
 			["BlackBook"] = {
@@ -258,8 +262,6 @@ Postal3DB = {
 				},
 			},
 		},
-		["Bloodcox - Stormrage"] = {
-		},
 		["Brewbies - Turalyon"] = {
 			["BlackBook"] = {
 				["recent"] = {
@@ -278,6 +280,8 @@ Postal3DB = {
 					"Khloroshue|Turalyon|Horde", -- [13]
 				},
 			},
+		},
+		["Bloodcox - Stormrage"] = {
 		},
 		["Fupa - Stormrage"] = {
 		},

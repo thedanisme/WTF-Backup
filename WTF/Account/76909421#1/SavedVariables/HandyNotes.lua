@@ -14,8 +14,9 @@ HandyNotesDB = {
 		["Priaprisum - Stormreaver"] = "Priaprisum - Stormreaver",
 		["Pryahprism - Turalyon"] = "Pryahprism - Turalyon",
 		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
-		["Ershirley - Stormrage"] = "Ershirley - Stormrage",
+		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
 		["Brobies - Stormrage"] = "Brobies - Stormrage",
+		["Ershirley - Stormrage"] = "Ershirley - Stormrage",
 		["Ranidan - Stormreaver"] = "Ranidan - Stormreaver",
 		["Bruhbies - Stormrage"] = "Bruhbies - Stormrage",
 		["Rotator - Turalyon"] = "Rotator - Turalyon",
@@ -25,8 +26,8 @@ HandyNotesDB = {
 		["Titt - Turalyon"] = "Titt - Turalyon",
 		["Knutts - Turalyon"] = "Knutts - Turalyon",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
-		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
 		["Bloodcox - Stormrage"] = "Bloodcox - Stormrage",
+		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
 		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
 		["Brewbies - Turalyon"] = "Brewbies - Turalyon",
@@ -64,9 +65,11 @@ HandyNotesDB = {
 		},
 		["Shaneequa - Turalyon"] = {
 		},
-		["Ershirley - Stormrage"] = {
+		["Kateplusnine - Stormrage"] = {
 		},
 		["Brobies - Stormrage"] = {
+		},
+		["Ershirley - Stormrage"] = {
 		},
 		["Ranidan - Stormreaver"] = {
 		},
@@ -86,9 +89,9 @@ HandyNotesDB = {
 		},
 		["Skratch - Turalyon"] = {
 		},
-		["Arando - Bloodhoof"] = {
-		},
 		["Bloodcox - Stormrage"] = {
+		},
+		["Arando - Bloodhoof"] = {
 		},
 		["Lackteight - Turalyon"] = {
 		},
@@ -125,8 +128,9 @@ HandyNotes_HandyNotesDB = {
 		["Priaprisum - Stormreaver"] = "Priaprisum - Stormreaver",
 		["Pryahprism - Turalyon"] = "Pryahprism - Turalyon",
 		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
-		["Ershirley - Stormrage"] = "Ershirley - Stormrage",
+		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
 		["Brobies - Stormrage"] = "Brobies - Stormrage",
+		["Ershirley - Stormrage"] = "Ershirley - Stormrage",
 		["Ranidan - Stormreaver"] = "Ranidan - Stormreaver",
 		["Bruhbies - Stormrage"] = "Bruhbies - Stormrage",
 		["Rotator - Turalyon"] = "Rotator - Turalyon",
@@ -136,8 +140,8 @@ HandyNotes_HandyNotesDB = {
 		["Titt - Turalyon"] = "Titt - Turalyon",
 		["Knutts - Turalyon"] = "Knutts - Turalyon",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
-		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
 		["Bloodcox - Stormrage"] = "Bloodcox - Stormrage",
+		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
 		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
 		["Brewbies - Turalyon"] = "Brewbies - Turalyon",
@@ -175,9 +179,11 @@ HandyNotes_HandyNotesDB = {
 		},
 		["Shaneequa - Turalyon"] = {
 		},
-		["Ershirley - Stormrage"] = {
+		["Kateplusnine - Stormrage"] = {
 		},
 		["Brobies - Stormrage"] = {
+		},
+		["Ershirley - Stormrage"] = {
 		},
 		["Ranidan - Stormreaver"] = {
 		},
@@ -197,9 +203,9 @@ HandyNotes_HandyNotesDB = {
 		},
 		["Skratch - Turalyon"] = {
 		},
-		["Arando - Bloodhoof"] = {
-		},
 		["Bloodcox - Stormrage"] = {
+		},
+		["Arando - Bloodhoof"] = {
 		},
 		["Lackteight - Turalyon"] = {
 		},
