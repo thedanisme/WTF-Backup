@@ -83,7 +83,7 @@ SkadaDB = {
 							["a"] = 0.200000047683716,
 							["b"] = 0,
 						},
-						["height"] = 134,
+						["height"] = 110.999984741211,
 						["texture"] = "None",
 					},
 					["barfont"] = "Expressway",

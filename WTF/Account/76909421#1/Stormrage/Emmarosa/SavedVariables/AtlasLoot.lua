@@ -22,9 +22,9 @@ AtlasLootCharDB = {
 		["classFilter"] = true,
 		["selected"] = {
 			"AtlasLoot_Cataclysm", -- [1]
-			"Firelands", -- [2]
-			4, -- [3]
-			2, -- [4]
+			"BlackwingDescent", -- [2]
+			2, -- [3]
+			4, -- [4]
 			0, -- [5]
 		},
 		["point"] = {

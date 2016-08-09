@@ -11,9 +11,9 @@ QT_Settings = {
 	["BarBottom"] = true,
 	["Lock"] = true,
 	["Display"] = true,
-	["Filter"] = {
+	["Equipment"] = {
 	},
 	["Collapsed"] = true,
-	["Equipment"] = {
+	["Filter"] = {
 	},
 }
