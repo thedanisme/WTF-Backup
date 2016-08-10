@@ -10,14 +10,16 @@ DataStore_AgendaDB = {
 		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
 		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
-		["Yanlery - Stormrage"] = "Yanlery - Stormrage",
-		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
 		["Brobies - Stormrage"] = "Brobies - Stormrage",
 		["Callil - Turalyon"] = "Callil - Turalyon",
-		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
-		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
-		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
+		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
+		["Yanlery - Stormrage"] = "Yanlery - Stormrage",
+		["Edgelordshue - Stormrage"] = "Edgelordshue - Stormrage",
+		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
+		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
+		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
+		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
 	},
 	["global"] = {
 		["Options"] = {
@@ -30,10 +32,10 @@ DataStore_AgendaDB = {
 				["lastUpdate"] = 1461389165,
 			},
 			["Default.Stormrage.Emmarosa"] = {
-				["lastUpdate"] = 1470758367,
+				["lastUpdate"] = 1470786691,
 				["LFGDungeons"] = {
-					["823.Blackhand"] = true,
 					["823.Count"] = 1,
+					["823.Blackhand"] = true,
 				},
 			},
 			["Default.Bloodhoof.Arando"] = {
@@ -45,10 +47,16 @@ DataStore_AgendaDB = {
 				["lastUpdate"] = 1469995040,
 			},
 			["Default.Stormrage.Brobies"] = {
-				["lastUpdate"] = 1470682741,
+				["lastUpdate"] = 1470788717,
 			},
 			["Default.Turalyon.Knutts"] = {
 				["lastUpdate"] = 1469912067,
+			},
+			["Default.Turalyon.Skratch"] = {
+				["lastUpdate"] = 1469994525,
+			},
+			["Default.Stormrage.Kateplusnine"] = {
+				["lastUpdate"] = 1470756353,
 			},
 			["Default.Bloodhoof.Dalgrens"] = {
 				["lastUpdate"] = 1469995428,
@@ -56,23 +64,14 @@ DataStore_AgendaDB = {
 			["Default.Stormrage.Yanlery"] = {
 				["lastUpdate"] = 1470515898,
 			},
-			["Default.Turalyon.Skratch"] = {
-				["lastUpdate"] = 1469994525,
+			["Default.Turalyon.Callil"] = {
+				["lastUpdate"] = 1470030037,
 			},
 			["Default.Stormrage.Ershirley"] = {
 				["lastUpdate"] = 1469599252,
 			},
-			["Default.Turalyon.Callil"] = {
-				["lastUpdate"] = 1470030037,
-			},
-			["Default.Stormrage.Kateplusnine"] = {
-				["lastUpdate"] = 1470756353,
-			},
 			["Default.Turalyon.Titte"] = {
 				["lastUpdate"] = 1470432001,
-			},
-			["Default.Stormrage.Whyfy"] = {
-				["lastUpdate"] = 1470682444,
 			},
 			["Default.Turalyon.Lackteight"] = {
 				["lastUpdate"] = 1469994215,
@@ -80,11 +79,26 @@ DataStore_AgendaDB = {
 			["Default.Stormrage.Squelben"] = {
 				["lastUpdate"] = 1470356975,
 			},
-			["Default.Turalyon.Shaneequa"] = {
-				["lastUpdate"] = 1461602628,
+			["Default.Stormrage.Whyfy"] = {
+				["lastUpdate"] = 1470788843,
 			},
 			["Default.Stormrage.Danoh"] = {
 				["lastUpdate"] = 1470682633,
+			},
+			["Default.Stormrage.Edgelordshue"] = {
+				["lastUpdate"] = 1470762217,
+			},
+			["Default.Turalyon.Shaneequa"] = {
+				["lastUpdate"] = 1461602628,
+			},
+			["Default.Stormrage.Talthalador"] = {
+				["lastUpdate"] = 1470808629,
+				["DungeonIDs"] = {
+					["Auchindoun Mythic|302309718"] = "550971|1470808629|0|0",
+					["Hellfire Citadel Heroic|634151367"] = "550971|1470808629|0|1",
+					["Skyreach Mythic|302307796"] = "550971|1470808629|0|0",
+					["Bloodmaul Slag Mines Mythic|302306311"] = "550971|1470808629|0|0",
+				},
 			},
 		},
 	},

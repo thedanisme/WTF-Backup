@@ -10,14 +10,16 @@ DataStore_CraftsDB = {
 		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
 		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
-		["Yanlery - Stormrage"] = "Yanlery - Stormrage",
-		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
 		["Brobies - Stormrage"] = "Brobies - Stormrage",
 		["Callil - Turalyon"] = "Callil - Turalyon",
-		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
-		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
-		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
+		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
+		["Yanlery - Stormrage"] = "Yanlery - Stormrage",
+		["Edgelordshue - Stormrage"] = "Edgelordshue - Stormrage",
+		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
+		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
+		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
+		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
 	},
 	["global"] = {
 		["Characters"] = {
@@ -41,29 +43,279 @@ DataStore_CraftsDB = {
 				["lastUpdate"] = 1461389165,
 			},
 			["Default.Stormrage.Emmarosa"] = {
-				["lastUpdate"] = 1470758367,
+				["lastUpdate"] = 1470786691,
 				["Prof2"] = "Inscription",
 				["Professions"] = {
 					["Inscription"] = {
 						["FullLink"] = "|cffffd000|Htrade:Player-60-0A91880D:158748:773|h[Inscription]|h|r",
 						["Crafts"] = {
-							"0|Merchant Orders", -- [1]
-							706052, -- [2]
+							"1|Reagents and Research", -- [1]
+							728503, -- [2]
+							676326, -- [3]
+							708182, -- [4]
+							671800, -- [5]
+							713988, -- [6]
+							"1|Tools", -- [7]
+							910249, -- [8]
+							910245, -- [9]
+							"1|Mass Milling", -- [10]
+							761528, -- [11]
+							761524, -- [12]
+							761532, -- [13]
+							761540, -- [14]
+							761536, -- [15]
+							761544, -- [16]
+							"1|Item Enhancers", -- [17]
+							750079, -- [18]
+							750075, -- [19]
+							749983, -- [20]
+							749979, -- [21]
+							665731, -- [22]
+							"1|Card", -- [23]
+							653179, -- [24]
+							666679, -- [25]
+							701568, -- [26]
+							701560, -- [27]
+							701556, -- [28]
+							"1|Staves & Wands", -- [29]
+							665427, -- [30]
+							665439, -- [31]
+							663219, -- [32]
+							"1|Off-hand", -- [33]
+							665455, -- [34]
+							"1|Research", -- [35]
+							451984, -- [36]
+							661868, -- [37]
+							661864, -- [38]
+							661860, -- [39]
+							661856, -- [40]
+							661852, -- [41]
+							661844, -- [42]
+							661840, -- [43]
+							661824, -- [44]
+							661216, -- [45]
+							662256, -- [46]
+							"1|Ink", -- [47]
+							446580, -- [48]
+							446584, -- [49]
+							344020, -- [50]
+							344016, -- [51]
+							230864, -- [52]
+							230860, -- [53]
+							230856, -- [54]
+							230852, -- [55]
+							230848, -- [56]
+							230844, -- [57]
+							230840, -- [58]
+							230836, -- [59]
+							230832, -- [60]
+							230828, -- [61]
+							230824, -- [62]
+							230816, -- [63]
+							230812, -- [64]
+							213848, -- [65]
+							211372, -- [66]
+							"1|Shoulder Inscription", -- [67]
+							507980, -- [68]
+							507976, -- [69]
+							507984, -- [70]
+							507988, -- [71]
+							508092, -- [72]
+							508096, -- [73]
+							508084, -- [74]
+							508080, -- [75]
+							508072, -- [76]
+							508076, -- [77]
+							508068, -- [78]
+							508064, -- [79]
+							345612, -- [80]
+							345608, -- [81]
+							345604, -- [82]
+							345500, -- [83]
+							244468, -- [84]
+							244472, -- [85]
+							244476, -- [86]
+							244480, -- [87]
+							"1|Card", -- [88]
+							447320, -- [89]
+							346460, -- [90]
+							238016, -- [91]
+							238012, -- [92]
+							238008, -- [93]
+							237964, -- [94]
+							237948, -- [95]
+							237920, -- [96]
+							192988, -- [97]
+							"1|Quest", -- [98]
+							356976, -- [99]
+							"1|Staves & Wands", -- [100]
+							447672, -- [101]
+							447676, -- [102]
+							447684, -- [103]
+							447680, -- [104]
+							447668, -- [105]
+							346608, -- [106]
+							346612, -- [107]
+							346596, -- [108]
+							346592, -- [109]
+							"1|Off-hand", -- [110]
+							447636, -- [111]
+							447640, -- [112]
+							447632, -- [113]
+							346568, -- [114]
+							346564, -- [115]
+							346572, -- [116]
+							346464, -- [117]
+							346560, -- [118]
+							237992, -- [119]
+							237988, -- [120]
+							256212, -- [121]
+							237984, -- [122]
+							237980, -- [123]
+							237976, -- [124]
+							237972, -- [125]
+							237960, -- [126]
+							237956, -- [127]
+							237944, -- [128]
+							237936, -- [129]
+							237912, -- [130]
+							237900, -- [131]
+							234260, -- [132]
+							"1|Toy", -- [133]
+							507952, -- [134]
+							507956, -- [135]
+							508036, -- [136]
+							508028, -- [137]
+							"1|Attribute Enhancement", -- [138]
+							448180, -- [139]
+							343140, -- [140]
+							357480, -- [141]
+							357476, -- [142]
+							357488, -- [143]
+							357484, -- [144]
+							357492, -- [145]
+							357472, -- [146]
+							277540, -- [147]
+							233932, -- [148]
+							233964, -- [149]
+							202416, -- [150]
+							202444, -- [151]
+							202480, -- [152]
+							233928, -- [153]
+							233960, -- [154]
+							202412, -- [155]
+							202440, -- [156]
+							202476, -- [157]
+							233924, -- [158]
+							233956, -- [159]
+							202408, -- [160]
+							202436, -- [161]
+							202472, -- [162]
+							233920, -- [163]
+							233952, -- [164]
+							202404, -- [165]
+							202432, -- [166]
+							202468, -- [167]
+							233912, -- [168]
+							233948, -- [169]
+							202400, -- [170]
+							202428, -- [171]
+							202464, -- [172]
+							233904, -- [173]
+							233944, -- [174]
+							202396, -- [175]
+							202424, -- [176]
+							202456, -- [177]
+							233892, -- [178]
+							233940, -- [179]
+							202392, -- [180]
+							202448, -- [181]
+							202420, -- [182]
+							233888, -- [183]
+							192456, -- [184]
+							181528, -- [185]
+							233936, -- [186]
+							192464, -- [187]
+							"1|Clear Mind", -- [188]
+							368104, -- [189]
+							"1|Teleportation", -- [190]
+							241348, -- [191]
+							241344, -- [192]
+							192992, -- [193]
+							"1|Glyph - Death Knight", -- [194]
+							228896, -- [195]
+							228836, -- [196]
+							593064, -- [197]
+							"1|Glyph - Druid", -- [198]
+							227860, -- [199]
+							233148, -- [200]
+							524608, -- [201]
+							227792, -- [202]
+							728632, -- [203]
+							"1|Glyph - Hunter", -- [204]
+							233204, -- [205]
+							"1|Glyph - Mage", -- [206]
+							227944, -- [207]
+							593084, -- [208]
+							593080, -- [209]
+							"1|Glyph - Monk", -- [210]
+							449848, -- [211]
+							449876, -- [212]
+							449856, -- [213]
+							449864, -- [214]
+							"1|Glyph - Paladin", -- [215]
+							233264, -- [216]
+							593096, -- [217]
+							228128, -- [218]
+							233248, -- [219]
+							"1|Glyph - Priest", -- [220]
+							593112, -- [221]
+							233280, -- [222]
+							431628, -- [223]
+							507200, -- [224]
+							497864, -- [225]
+							593104, -- [226]
+							506784, -- [227]
+							"1|Glyph - Rogue", -- [228]
+							902195, -- [229]
+							257040, -- [230]
+							"1|Glyph - Shaman", -- [231]
+							257044, -- [232]
+							593128, -- [233]
+							593124, -- [234]
+							233328, -- [235]
+							"1|Glyph - Warlock", -- [236]
+							257000, -- [237]
+							229052, -- [238]
+							233364, -- [239]
+							"1|Glyph - Warrior", -- [240]
+							449720, -- [241]
+							233380, -- [242]
+							449716, -- [243]
+							233388, -- [244]
+							495124, -- [245]
+							593168, -- [246]
+							272664, -- [247]
+							"1|Other", -- [248]
+							586552, -- [249]
+							346436, -- [250]
+							237548, -- [251]
+							210956, -- [252]
 						},
 						["MaxRank"] = 700,
-						["Rank"] = 633,
+						["Rank"] = 642,
 					},
 					["Skinning"] = {
 						["MaxRank"] = 700,
-						["Rank"] = 416,
-					},
-					["Archaeology"] = {
-						["MaxRank"] = 75,
-						["Rank"] = 58,
+						["Rank"] = 417,
 					},
 					["Fishing"] = {
 						["MaxRank"] = 700,
 						["Rank"] = 700,
+					},
+					["Archaeology"] = {
+						["MaxRank"] = 75,
+						["Rank"] = 58,
 					},
 					["First Aid"] = {
 						["FullLink"] = "|cffffd000|Htrade:Player-60-0A91880D:158741:129|h[First Aid]|h|r",
@@ -257,7 +509,7 @@ DataStore_CraftsDB = {
 					},
 				},
 				["Prof2"] = "Engineering",
-				["lastUpdate"] = 1470682740,
+				["lastUpdate"] = 1470788717,
 				["Prof1"] = "Alchemy",
 			},
 			["Default.Turalyon.Knutts"] = {
@@ -522,6 +774,55 @@ DataStore_CraftsDB = {
 				["lastUpdate"] = 1469912067,
 				["Prof1"] = "Skinning",
 			},
+			["Default.Turalyon.Skratch"] = {
+				["ArcheologyItems"] = {
+					[168310] = true,
+					[168318] = true,
+					[168311] = true,
+				},
+				["Professions"] = {
+					["Cooking"] = {
+						["FullLink"] = "|cffffd000|Htrade:Player-3685-080F7AF1:158765:185|h[Cooking]|h|r",
+						["MaxRank"] = 700,
+						["Rank"] = 586,
+					},
+					["Archaeology"] = {
+						["MaxRank"] = 75,
+						["Rank"] = 43,
+					},
+					["Fishing"] = {
+						["MaxRank"] = 700,
+						["Rank"] = 410,
+					},
+					["Mining"] = {
+						["MaxRank"] = 700,
+						["Rank"] = 700,
+					},
+					["First Aid"] = {
+						["FullLink"] = "|cffffd000|Htrade:Player-3685-080F7AF1:158741:129|h[First Aid]|h|r",
+						["MaxRank"] = 700,
+						["Rank"] = 1,
+					},
+					["Engineering"] = {
+						["FullLink"] = "|cffffd000|Htrade:Player-3685-080F7AF1:158739:202|h[Engineering]|h|r",
+						["MaxRank"] = 700,
+						["Rank"] = 657,
+					},
+				},
+				["Prof2"] = "Engineering",
+				["lastUpdate"] = 1469994577,
+				["Prof1"] = "Mining",
+			},
+			["Default.Stormrage.Kateplusnine"] = {
+				["Professions"] = {
+					["First Aid"] = {
+						["FullLink"] = "|cffffd000|Htrade:Player-60-0A986DA2:3273:129|h[First Aid]|h|r",
+						["MaxRank"] = 75,
+						["Rank"] = 1,
+					},
+				},
+				["lastUpdate"] = 1470754780,
+			},
 			["Default.Bloodhoof.Dalgrens"] = {
 				["lastUpdate"] = 1469995429,
 				["Prof2"] = "Engineering",
@@ -615,10 +916,6 @@ DataStore_CraftsDB = {
 						["MaxRank"] = 75,
 						["Rank"] = 61,
 					},
-					["Fishing"] = {
-						["MaxRank"] = 75,
-						["Rank"] = 2,
-					},
 					["First Aid"] = {
 						["FullLink"] = "|cffffd000|Htrade:Player-60-0A0EEC46:158741:129|h[First Aid]|h|r",
 						["Crafts"] = {
@@ -633,50 +930,12 @@ DataStore_CraftsDB = {
 						["MaxRank"] = 700,
 						["Rank"] = 91,
 					},
+					["Fishing"] = {
+						["MaxRank"] = 75,
+						["Rank"] = 2,
+					},
 				},
 				["lastUpdate"] = 1470515896,
-			},
-			["Default.Turalyon.Skratch"] = {
-				["ArcheologyItems"] = {
-					[168310] = true,
-					[168318] = true,
-					[168311] = true,
-				},
-				["Professions"] = {
-					["Cooking"] = {
-						["FullLink"] = "|cffffd000|Htrade:Player-3685-080F7AF1:158765:185|h[Cooking]|h|r",
-						["MaxRank"] = 700,
-						["Rank"] = 586,
-					},
-					["Archaeology"] = {
-						["MaxRank"] = 75,
-						["Rank"] = 43,
-					},
-					["Fishing"] = {
-						["MaxRank"] = 700,
-						["Rank"] = 410,
-					},
-					["Mining"] = {
-						["MaxRank"] = 700,
-						["Rank"] = 700,
-					},
-					["First Aid"] = {
-						["FullLink"] = "|cffffd000|Htrade:Player-3685-080F7AF1:158741:129|h[First Aid]|h|r",
-						["MaxRank"] = 700,
-						["Rank"] = 1,
-					},
-					["Engineering"] = {
-						["FullLink"] = "|cffffd000|Htrade:Player-3685-080F7AF1:158739:202|h[Engineering]|h|r",
-						["MaxRank"] = 700,
-						["Rank"] = 657,
-					},
-				},
-				["Prof2"] = "Engineering",
-				["lastUpdate"] = 1469994577,
-				["Prof1"] = "Mining",
-			},
-			["Default.Stormrage.Ershirley"] = {
-				["lastUpdate"] = 1469599253,
 			},
 			["Default.Turalyon.Callil"] = {
 				["Professions"] = {
@@ -1041,15 +1300,8 @@ DataStore_CraftsDB = {
 				["lastUpdate"] = 1470030037,
 				["Prof1"] = "Tailoring",
 			},
-			["Default.Stormrage.Kateplusnine"] = {
-				["Professions"] = {
-					["First Aid"] = {
-						["FullLink"] = "|cffffd000|Htrade:Player-60-0A986DA2:3273:129|h[First Aid]|h|r",
-						["MaxRank"] = 75,
-						["Rank"] = 1,
-					},
-				},
-				["lastUpdate"] = 1470754780,
+			["Default.Stormrage.Ershirley"] = {
+				["lastUpdate"] = 1469599253,
 			},
 			["Default.Turalyon.Titte"] = {
 				["ArcheologyItems"] = {
@@ -1116,30 +1368,6 @@ DataStore_CraftsDB = {
 				["lastUpdate"] = 1470432001,
 				["Prof1"] = "Blacksmithing",
 			},
-			["Default.Stormrage.Whyfy"] = {
-				["Professions"] = {
-					["Cooking"] = {
-						["FullLink"] = "|cffffd000|Htrade:Player-60-0A4F9924:158765:185|h[Cooking]|h|r",
-						["MaxRank"] = 700,
-						["Rank"] = 1,
-					},
-					["First Aid"] = {
-						["FullLink"] = "|cffffd000|Htrade:Player-60-0A4F9924:158741:129|h[First Aid]|h|r",
-						["Crafts"] = {
-							"0|Cures of Draenor", -- [1]
-							690163, -- [2]
-							690171, -- [3]
-							690167, -- [4]
-							690159, -- [5]
-							"1|Bandages", -- [6]
-							13103, -- [7]
-						},
-						["MaxRank"] = 700,
-						["Rank"] = 61,
-					},
-				},
-				["lastUpdate"] = 1470682442,
-			},
 			["Default.Turalyon.Lackteight"] = {
 				["ArcheologyItems"] = {
 					[168324] = true,
@@ -1177,24 +1405,29 @@ DataStore_CraftsDB = {
 			["Default.Stormrage.Squelben"] = {
 				["lastUpdate"] = 1470356975,
 			},
-			["Default.Turalyon.Shaneequa"] = {
-				["lastUpdate"] = 1461602628,
+			["Default.Stormrage.Whyfy"] = {
 				["Professions"] = {
 					["Cooking"] = {
-						["FullLink"] = "|cffffd000|Htrade:Player-3685-080AA234:158765:185|h[Cooking]|h|r",
+						["FullLink"] = "|cffffd000|Htrade:Player-60-0A4F9924:158765:185|h[Cooking]|h|r",
 						["MaxRank"] = 700,
 						["Rank"] = 1,
 					},
 					["First Aid"] = {
-						["FullLink"] = "|cffffd000|Htrade:Player-3685-080AA234:158741:129|h[First Aid]|h|r",
+						["FullLink"] = "|cffffd000|Htrade:Player-60-0A4F9924:158741:129|h[First Aid]|h|r",
+						["Crafts"] = {
+							"0|Cures of Draenor", -- [1]
+							690163, -- [2]
+							690171, -- [3]
+							690167, -- [4]
+							690159, -- [5]
+							"1|Bandages", -- [6]
+							13103, -- [7]
+						},
 						["MaxRank"] = 700,
-						["Rank"] = 1,
-					},
-					["Archaeology"] = {
-						["MaxRank"] = 75,
-						["Rank"] = 1,
+						["Rank"] = 61,
 					},
 				},
+				["lastUpdate"] = 1470788844,
 			},
 			["Default.Stormrage.Danoh"] = {
 				["ArcheologyItems"] = {
@@ -1540,6 +1773,49 @@ DataStore_CraftsDB = {
 				["Prof2"] = "Herbalism",
 				["lastUpdate"] = 1470682633,
 				["Prof1"] = "Alchemy",
+			},
+			["Default.Stormrage.Edgelordshue"] = {
+				["lastUpdate"] = 1470762116,
+			},
+			["Default.Turalyon.Shaneequa"] = {
+				["lastUpdate"] = 1461602628,
+				["Professions"] = {
+					["Cooking"] = {
+						["FullLink"] = "|cffffd000|Htrade:Player-3685-080AA234:158765:185|h[Cooking]|h|r",
+						["MaxRank"] = 700,
+						["Rank"] = 1,
+					},
+					["First Aid"] = {
+						["FullLink"] = "|cffffd000|Htrade:Player-3685-080AA234:158741:129|h[First Aid]|h|r",
+						["MaxRank"] = 700,
+						["Rank"] = 1,
+					},
+					["Archaeology"] = {
+						["MaxRank"] = 75,
+						["Rank"] = 1,
+					},
+				},
+			},
+			["Default.Stormrage.Talthalador"] = {
+				["Professions"] = {
+					["Cooking"] = {
+						["FullLink"] = "|cffffd000|Htrade:Player-60-0A98990A:158765:185|h[Cooking]|h|r",
+						["MaxRank"] = 700,
+						["Rank"] = 1,
+					},
+					["Leatherworking"] = {
+						["FullLink"] = "|cffffd000|Htrade:Player-60-0A98990A:2108:165|h[Leatherworking]|h|r",
+						["MaxRank"] = 75,
+						["Rank"] = 1,
+					},
+					["First Aid"] = {
+						["FullLink"] = "|cffffd000|Htrade:Player-60-0A98990A:158741:129|h[First Aid]|h|r",
+						["MaxRank"] = 700,
+						["Rank"] = 1,
+					},
+				},
+				["lastUpdate"] = 1470808629,
+				["Prof1"] = "Leatherworking",
 			},
 		},
 	},

@@ -8,18 +8,19 @@ IskarAssistDB = {
 		["Squelben - Stormrage"] = "Default",
 		["Iphone - Bloodhoof"] = "Default",
 		["Bruhbies - Stormrage"] = "Default",
-		["Whyfy - Stormrage"] = "Default",
-		["Emmarosa - Stormrage"] = "Default",
+		["Talthalador - Stormrage"] = "Default",
+		["Rosabria - Sargeras"] = "Default",
+		["Horny - Bloodhoof"] = "Default",
 		["Arando - Bloodhoof"] = "Default",
-		["Yanlery - Stormrage"] = "Default",
 		["Danoh - Stormrage"] = "Default",
+		["Yanlery - Stormrage"] = "Default",
 		["Bloodcox - Stormrage"] = "Default",
 		["Brobies - Stormrage"] = "Default",
 		["Retardar - Stormrage"] = "Default",
 		["Dalgrens - Bloodhoof"] = "Default",
 		["Beer - Bloodhoof"] = "Default",
-		["Horny - Bloodhoof"] = "Default",
-		["Rosabria - Sargeras"] = "Default",
+		["Emmarosa - Stormrage"] = "Default",
+		["Whyfy - Stormrage"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -27,38 +28,39 @@ IskarAssistDB = {
 			["bartexture"] = "Skullflower",
 			["debuff_fel_bomb"] = false,
 			["MainPanel"] = {
-				["IsLocked"] = true,
 				["position"] = {
 					["y"] = 61.9996337890625,
 					["x"] = -620.000122070313,
 				},
+				["IsLocked"] = true,
 			},
-			["group_sorting"] = 1,
+			["archimonde_radar"] = true,
 			["MainPanel_strata"] = "BACKGROUND",
 			["right_side_debuffs"] = true,
 			["textfont"] = "Expressway",
 			["debuff_phantasmal_corruption"] = false,
-			["archimonde_radar"] = true,
+			["group_sorting"] = 1,
 			["textsize"] = 15,
 		},
 	},
 }
 RADataBase = {
 	["profileKeys"] = {
+		["Talthalador - Stormrage"] = "Default",
 		["Callil - Turalyon"] = "Default",
-		["Whyfy - Stormrage"] = "Default",
-		["Emmarosa - Stormrage"] = "Default",
-		["Beer - Bloodhoof"] = "Default",
-		["Squelben - Stormrage"] = "Default",
-		["Aranduh - Bloodhoof"] = "Default",
-		["Danoh - Stormrage"] = "Default",
-		["Horny - Bloodhoof"] = "Default",
-		["Yanlery - Stormrage"] = "Default",
-		["Arando - Bloodhoof"] = "Default",
-		["Dalgrens - Bloodhoof"] = "Default",
-		["Bruhbies - Stormrage"] = "Default",
-		["Rosabria - Sargeras"] = "Default",
 		["Brobies - Stormrage"] = "Default",
+		["Rosabria - Sargeras"] = "Default",
+		["Bruhbies - Stormrage"] = "Default",
+		["Danoh - Stormrage"] = "Default",
+		["Aranduh - Bloodhoof"] = "Default",
+		["Squelben - Stormrage"] = "Default",
+		["Arando - Bloodhoof"] = "Default",
+		["Yanlery - Stormrage"] = "Default",
+		["Horny - Bloodhoof"] = "Default",
+		["Dalgrens - Bloodhoof"] = "Default",
+		["Beer - Bloodhoof"] = "Default",
+		["Emmarosa - Stormrage"] = "Default",
+		["Whyfy - Stormrage"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -68,79 +70,79 @@ RADataBase = {
 					["menu_priority"] = 10,
 					["text_font"] = "Accidental Presidency",
 					["BattleResResFrame"] = {
-						["IsLocked"] = false,
 						["position"] = {
 							["y"] = 0,
 							["x"] = 0,
 						},
+						["IsLocked"] = false,
 					},
 					["background_color"] = {
 						["a"] = 0.3,
-						["b"] = 0,
-						["g"] = 0,
 						["r"] = 0,
+						["g"] = 0,
+						["b"] = 0,
 					},
-					["panel_height"] = 30,
+					["panel_width"] = 130,
 					["RABattleResMainFrame"] = {
-						["IsLocked"] = false,
 						["position"] = {
 							["y"] = 0,
 							["x"] = 0,
 						},
+						["IsLocked"] = false,
 					},
-					["text_anchor"] = "center",
+					["panel_locked"] = false,
 					["panel_show_res"] = true,
 					["text_color"] = {
 						["a"] = 1,
-						["b"] = 1,
-						["g"] = 1,
 						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
 					},
 					["text_size"] = 10,
 					["background_border_color"] = {
 						["a"] = 1,
-						["b"] = 0,
-						["g"] = 0,
 						["r"] = 0,
+						["g"] = 0,
+						["b"] = 0,
 					},
-					["panel_locked"] = false,
-					["panel_width"] = 130,
+					["panel_height"] = 30,
+					["text_anchor"] = "center",
 				},
 				["Aura Bank"] = {
 					["enabled"] = true,
-					["installed_history"] = {
-					},
+					["menu_priority"] = 25,
 					["RAAuraBankMainFrame"] = {
-						["IsLocked"] = false,
 						["position"] = {
 							["y"] = 0,
 							["x"] = 0,
 						},
+						["IsLocked"] = false,
 					},
-					["menu_priority"] = 25,
+					["installed_history"] = {
+					},
 				},
 				["BisListRaid"] = {
 					["enabled"] = true,
 					["latest_raid_map"] = 1448,
 					["menu_priority"] = 14,
-					["saved_lists"] = {
-					},
 					["RABisListRaidMainFrame"] = {
-						["IsLocked"] = false,
 						["position"] = {
 							["y"] = 0,
 							["x"] = 0,
 						},
+						["IsLocked"] = false,
+					},
+					["saved_lists"] = {
 					},
 				},
 				["Ready Check"] = {
 					["enabled"] = false,
 					["RAReadyCheckMainFrame"] = {
-						["IsLocked"] = false,
 						["position"] = {
 							["y"] = 0,
 							["x"] = 0,
 						},
+						["IsLocked"] = false,
 					},
 					["menu_priority"] = 1,
 					["text_shadow"] = false,
@@ -157,72 +159,72 @@ RADataBase = {
 					["invite_msg"] = "[RA]: invites in 5 seconds.",
 					["first_run"] = true,
 					["RAInviteMainFrame"] = {
-						["IsLocked"] = false,
 						["position"] = {
 							["y"] = 0,
 							["x"] = 0,
 						},
+						["IsLocked"] = false,
 					},
-					["auto_accept_invites"] = false,
-					["auto_accept_invites_limited"] = true,
-					["auto_invite_limited"] = true,
 					["menu_priority"] = 16,
+					["auto_accept_invites"] = false,
+					["auto_invite_limited"] = true,
+					["auto_accept_invites_limited"] = true,
 					["auto_invite"] = false,
 				},
 				["Raid Assignments"] = {
 					["notes"] = {
 					},
-					["menu_priority"] = 20,
-					["text_size"] = 12,
-					["currently_shown"] = false,
-					["hide_on_combat"] = false,
-					["RANotepadMainFrame"] = {
-						["IsLocked"] = false,
+					["NotepadScreenFrame"] = {
 						["position"] = {
 							["y"] = 0,
 							["x"] = 0,
 						},
+						["IsLocked"] = false,
 					},
+					["menu_priority"] = 20,
+					["currently_shown"] = false,
+					["hide_on_combat"] = false,
+					["auto_complete"] = true,
 					["text_face"] = "Friz Quadrata TT",
-					["text_shadow"] = false,
-					["text_justify"] = "left",
-					["framestrata"] = "DIALOG",
+					["auto_format"] = true,
+					["locked"] = false,
 					["background"] = {
 						["show"] = false,
 						["r"] = 0,
-						["a"] = 0.5,
-						["g"] = 0,
 						["b"] = 0,
+						["g"] = 0,
+						["a"] = 0.5,
 					},
-					["locked"] = false,
-					["auto_format"] = true,
-					["auto_complete"] = true,
-					["NotepadScreenFrame"] = {
-						["IsLocked"] = false,
+					["framestrata"] = "DIALOG",
+					["text_justify"] = "left",
+					["text_shadow"] = false,
+					["RANotepadMainFrame"] = {
 						["position"] = {
 							["y"] = 0,
 							["x"] = 0,
 						},
+						["IsLocked"] = false,
 					},
+					["text_size"] = 12,
 				},
 				["Player Check"] = {
 					["RAPlayerCheckMainFrame"] = {
-						["IsLocked"] = false,
 						["position"] = {
 							["y"] = 0,
 							["x"] = 0,
 						},
+						["IsLocked"] = false,
 					},
-					["leader_request_interval"] = 180,
 					["menu_priority"] = 19,
+					["leader_request_interval"] = 180,
 				},
 				["Attendance"] = {
 					["RAAttendanceMainFrame"] = {
-						["IsLocked"] = false,
 						["position"] = {
 							["y"] = 0,
 							["x"] = 0,
 						},
+						["IsLocked"] = false,
 					},
 					["raidschedules"] = {
 					},
@@ -243,11 +245,11 @@ RADataBase = {
 					["cores"] = {
 					},
 					["RARaidScheduleMainFrame"] = {
-						["IsLocked"] = false,
 						["position"] = {
 							["y"] = 0,
 							["x"] = 0,
 						},
+						["IsLocked"] = false,
 					},
 				},
 				["Boards"] = {
@@ -258,25 +260,27 @@ RADataBase = {
 					["pin_sets"] = {
 					},
 					["RABoardsMainFrame"] = {
-						["IsLocked"] = false,
 						["position"] = {
 							["y"] = 0,
 							["x"] = 0,
 						},
+						["IsLocked"] = false,
 					},
 				},
-				["BisList"] = {
-					["characters"] = {
-					},
-					["RABisListMainFrame"] = {
-						["IsLocked"] = false,
+				["Aura Check"] = {
+					["enabled"] = true,
+					["menu_priority"] = 26,
+					["RAAuraCheckMainFrame"] = {
 						["position"] = {
 							["y"] = 0,
 							["x"] = 0,
 						},
+						["IsLocked"] = false,
 					},
-					["enabled"] = true,
-					["menu_priority"] = 13,
+					["auto_install_from_trusted"] = false,
+					["only_from_guild"] = true,
+					["installed_history"] = {
+					},
 				},
 				["Iskar Assist"] = {
 					["profile"] = {
@@ -288,51 +292,50 @@ RADataBase = {
 						["archimonde_radar"] = true,
 						["debuff_phantasmal_corruption"] = false,
 						["right_side_debuffs"] = true,
-						["barwidth_grid"] = 55,
-						["stack_count_anchor"] = "top",
-						["show_cooldown_bars"] = false,
-						["bartexture"] = "ElvUI Norm",
 						["MainPanel"] = {
-							["IsLocked"] = true,
 							["position"] = {
 								["y"] = 127.999572753906,
 								["x"] = -561,
 							},
+							["IsLocked"] = true,
 						},
-						["barheight"] = 18,
+						["stack_count_anchor"] = "top",
+						["show_cooldown_bars"] = false,
+						["bartexture"] = "ElvUI Norm",
+						["barwidth_grid"] = 55,
+						["textfont"] = "Expressway",
 						["barheight_grid"] = 55,
 						["barwidth"] = 100,
 						["debuff_phantasmal_winds"] = true,
-						["debuff_phantasmal_bomb"] = false,
-						["MainPanel_strata"] = "BACKGROUND",
 						["debuff_fel_bomb"] = false,
+						["MainPanel_strata"] = "BACKGROUND",
+						["debuff_phantasmal_bomb"] = false,
 						["dispel_ready"] = false,
-						["textfont"] = "Expressway",
+						["barheight"] = 18,
 						["cooldown"] = false,
 						["textsize"] = 15,
 					},
 					["RAIskarAssistFrameMainFrame"] = {
-						["IsLocked"] = false,
 						["position"] = {
 							["y"] = 0,
 							["x"] = 0,
 						},
+						["IsLocked"] = false,
 					},
 					["menu_priority"] = 1,
 				},
-				["Stop Meters"] = {
-					["enabled"] = true,
-					["stop_recount"] = true,
-					["stop_details"] = true,
-					["RAStopMetersMainFrame"] = {
-						["IsLocked"] = false,
+				["BisList"] = {
+					["characters"] = {
+					},
+					["RABisListMainFrame"] = {
 						["position"] = {
 							["y"] = 0,
 							["x"] = 0,
 						},
+						["IsLocked"] = false,
 					},
-					["menu_priority"] = 1,
-					["stop_skada"] = true,
+					["enabled"] = true,
+					["menu_priority"] = 13,
 				},
 				["Raid Groups"] = {
 					["show_class_name"] = true,
@@ -341,27 +344,27 @@ RADataBase = {
 					["show_rank_icons"] = true,
 					["text_face"] = "Friz Quadrata TT",
 					["RARaidGroupsMainFrame"] = {
-						["IsLocked"] = false,
 						["position"] = {
 							["y"] = 0,
 							["x"] = 0,
 						},
+						["IsLocked"] = false,
 					},
+					["menu_priority"] = 23,
 					["show_level"] = true,
-					["filter"] = false,
 					["enabled"] = true,
 					["text_shadow"] = false,
-					["menu_priority"] = 23,
+					["filter"] = false,
 					["show_role_icon"] = true,
 				},
 				["Cooldowns"] = {
 					["bar_grow_inverse"] = false,
 					["RACooldownsMainFrame"] = {
-						["IsLocked"] = false,
 						["position"] = {
 							["y"] = 0,
 							["x"] = 0,
 						},
+						["IsLocked"] = false,
 					},
 					["cooldowns_panels"] = {
 						{
@@ -375,22 +378,22 @@ RADataBase = {
 					["only_in_group"] = true,
 					["bar_fixed_color"] = {
 						["a"] = 1,
-						["b"] = 0.7,
-						["g"] = 0.7,
 						["r"] = 0.7,
+						["g"] = 0.7,
+						["b"] = 0.7,
 					},
 					["panel_background_color"] = {
 						["a"] = 0.3,
-						["b"] = 0,
-						["g"] = 0,
 						["r"] = 0,
+						["g"] = 0,
+						["b"] = 0,
 					},
 					["locked"] = false,
 					["panel_background_border_color"] = {
 						["a"] = 1,
-						["b"] = 0,
-						["g"] = 0,
 						["r"] = 0,
+						["g"] = 0,
+						["b"] = 0,
 					},
 					["enabled"] = true,
 					["only_in_raid_encounter"] = false,
@@ -410,26 +413,26 @@ RADataBase = {
 						[116849] = true,
 						[114030] = true,
 						[15286] = true,
-						[6940] = true,
-						[97462] = true,
+						[740] = true,
+						[62618] = true,
 						[102342] = true,
 						[108280] = true,
-						[62618] = true,
-						[740] = true,
+						[97462] = true,
+						[6940] = true,
 					},
 					["only_in_raid_group"] = false,
 					["bar_height"] = 16,
 					["only_inside_instances"] = true,
 					["bar_class_color"] = true,
-					["text_size"] = 11,
-					["only_in_combat"] = false,
-					["text_shadow"] = false,
 					["text_color"] = {
 						["a"] = 1,
-						["b"] = 1,
-						["g"] = 1,
 						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
 					},
+					["text_shadow"] = false,
+					["only_in_combat"] = false,
+					["text_size"] = 11,
 					["bar_texture"] = "Iskar Serenity",
 				},
 				["Check Addons"] = {
@@ -439,11 +442,11 @@ RADataBase = {
 						["BigWigs"] = true,
 					},
 					["RAAddonsCheckMainFrame"] = {
+						["IsLocked"] = false,
 						["position"] = {
 							["y"] = 0,
 							["x"] = 0,
 						},
-						["IsLocked"] = false,
 					},
 					["menu_priority"] = 24,
 				},
@@ -456,29 +459,28 @@ RADataBase = {
 					["readycheck_timer"] = 35,
 					["hide_not_in_group"] = false,
 					["reverse_order"] = true,
-					["RALeaderToolbarMainFrame"] = {
-						["position"] = {
-							["y"] = 0,
-							["x"] = 0,
-						},
-						["IsLocked"] = false,
-					},
 					["frame_scale"] = 1,
-				},
-				["Aura Check"] = {
-					["enabled"] = true,
-					["menu_priority"] = 26,
-					["installed_history"] = {
-					},
-					["auto_install_from_trusted"] = false,
-					["only_from_guild"] = true,
-					["RAAuraCheckMainFrame"] = {
+					["RALeaderToolbarMainFrame"] = {
 						["IsLocked"] = false,
 						["position"] = {
 							["y"] = 0,
 							["x"] = 0,
 						},
 					},
+				},
+				["Stop Meters"] = {
+					["enabled"] = true,
+					["stop_recount"] = true,
+					["RAStopMetersMainFrame"] = {
+						["position"] = {
+							["y"] = 0,
+							["x"] = 0,
+						},
+						["IsLocked"] = false,
+					},
+					["stop_details"] = true,
+					["menu_priority"] = 1,
+					["stop_skada"] = true,
 				},
 			},
 		},

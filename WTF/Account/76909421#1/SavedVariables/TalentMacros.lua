@@ -18,29 +18,31 @@ TalentMacrosDB = {
 		["Knutts - Turalyon"] = "Knutts - Turalyon",
 		["Pryahprism - Turalyon"] = "Pryahprism - Turalyon",
 		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
+		["Callil - Turalyon"] = "Callil - Turalyon",
+		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
 		["Abegar - Turalyon"] = "Abegar - Turalyon",
+		["Horny - Bloodhoof"] = "Horny - Bloodhoof",
 		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
-		["Brobies - Stormrage"] = "Brobies - Stormrage",
 		["Ershirley - Stormrage"] = "Ershirley - Stormrage",
 		["Priaprisum - Stormreaver"] = "Priaprisum - Stormreaver",
 		["Bruhbies - Stormrage"] = "Bruhbies - Stormrage",
 		["Rotator - Turalyon"] = "Rotator - Turalyon",
 		["Llamama - Stormrage"] = "Llamama - Stormrage",
 		["Barewbies - Stormrage"] = "Barewbies - Stormrage",
-		["Callil - Turalyon"] = "Callil - Turalyon",
+		["Brewbies - Turalyon"] = "Brewbies - Turalyon",
 		["Titt - Turalyon"] = "Titt - Turalyon",
-		["Ranidan - Stormreaver"] = "Ranidan - Stormreaver",
+		["Fupa - Stormrage"] = "Fupa - Stormrage",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
-		["Bloodcox - Stormrage"] = "Bloodcox - Stormrage",
+		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
 		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
 		["Rosabria - Sargeras"] = "Rosabria - Sargeras",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
-		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
-		["Brewbies - Turalyon"] = "Brewbies - Turalyon",
-		["Fupa - Stormrage"] = "Fupa - Stormrage",
+		["Bloodcox - Stormrage"] = "Bloodcox - Stormrage",
+		["Ranidan - Stormreaver"] = "Ranidan - Stormreaver",
+		["Edgelordshue - Stormrage"] = "Edgelordshue - Stormrage",
 		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
 		["Beer - Bloodhoof"] = "Beer - Bloodhoof",
-		["Horny - Bloodhoof"] = "Horny - Bloodhoof",
+		["Brobies - Stormrage"] = "Brobies - Stormrage",
 		["Jimbo - Ner'zhul"] = "Jimbo - Ner'zhul",
 	},
 	["profiles"] = {
@@ -76,15 +78,20 @@ TalentMacrosDB = {
 		},
 		["Shaneequa - Turalyon"] = {
 		},
+		["Callil - Turalyon"] = {
+			["macrotext"] = {
+				[21185] = "#showtooltip\n/use [@mouseover,exists,nodead][]Saving Grace",
+				[21183] = "#showtooltip\n/use [@mouseover,exists,nodead][]Clarity of Will",
+				[19767] = "#showtooltip\n/use [@mouseover,exists,nodead][]Cascade",
+			},
+		},
+		["Talthalador - Stormrage"] = {
+		},
 		["Abegar - Turalyon"] = {
 		},
-		["Kateplusnine - Stormrage"] = {
+		["Horny - Bloodhoof"] = {
 		},
-		["Brobies - Stormrage"] = {
-			["macrotext"] = {
-				[19818] = "#showtooltip\n/cast [@mouseover,help,exists][@target,help,exists][@player]Tiger's Lust",
-				[19820] = "#showtooltip\n/cast [@player]Zen Sphere",
-			},
+		["Kateplusnine - Stormrage"] = {
 		},
 		["Ershirley - Stormrage"] = {
 		},
@@ -98,20 +105,15 @@ TalentMacrosDB = {
 		},
 		["Barewbies - Stormrage"] = {
 		},
-		["Callil - Turalyon"] = {
-			["macrotext"] = {
-				[21185] = "#showtooltip\n/use [@mouseover,exists,nodead][]Saving Grace",
-				[21183] = "#showtooltip\n/use [@mouseover,exists,nodead][]Clarity of Will",
-				[19767] = "#showtooltip\n/use [@mouseover,exists,nodead][]Cascade",
-			},
+		["Brewbies - Turalyon"] = {
 		},
 		["Titt - Turalyon"] = {
 		},
-		["Ranidan - Stormreaver"] = {
+		["Fupa - Stormrage"] = {
 		},
 		["Skratch - Turalyon"] = {
 		},
-		["Bloodcox - Stormrage"] = {
+		["Lackteight - Turalyon"] = {
 		},
 		["Arando - Bloodhoof"] = {
 		},
@@ -122,17 +124,21 @@ TalentMacrosDB = {
 				[19362] = "#showtooltip stampede\n/startattack\n/cancelaura hand of protection\n/petattack\n/use stampede\n/petattack\n/petattack\n/petattack\n/petattack\n/petattack\n/petattack\n/petattack\n/petattack\n/petattack\n/petattack\n/petattack\n/petattack\n/petattack",
 			},
 		},
-		["Lackteight - Turalyon"] = {
+		["Bloodcox - Stormrage"] = {
 		},
-		["Brewbies - Turalyon"] = {
+		["Ranidan - Stormreaver"] = {
 		},
-		["Fupa - Stormrage"] = {
+		["Edgelordshue - Stormrage"] = {
 		},
 		["Dalgrens - Bloodhoof"] = {
 		},
 		["Beer - Bloodhoof"] = {
 		},
-		["Horny - Bloodhoof"] = {
+		["Brobies - Stormrage"] = {
+			["macrotext"] = {
+				[19818] = "#showtooltip\n/cast [@mouseover,help,exists][@target,help,exists][@player]Tiger's Lust",
+				[19820] = "#showtooltip\n/cast [@player]Zen Sphere",
+			},
 		},
 		["Jimbo - Ner'zhul"] = {
 		},

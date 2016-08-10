@@ -1,13 +1,13 @@
-VER 3 000000000000013D " " "INV_Misc_QuestionMark"
-#showtooltip
-/use 12
-END
 VER 3 000000000000013E " " "INV_Misc_QuestionMark"
 #showtooltip
 /use Big Crate of Salvage
 /use Large Crate of Salvage
 /use Bag of Salvaged Goods
 /use Sack of Salvaged Goods
+END
+VER 3 000000000000013D " " "INV_Misc_QuestionMark"
+#showtooltip
+/use 12
 END
 VER 3 000000000000013C "ClearMark" "INV_Hammer_Unique_Sulfuras"
 /run SetRaidTarget("PLAYER",0)
@@ -25,7 +25,7 @@ VER 3 000000000000013F "MountSellers" "Spell_Beastmaster_clefthoof"
 /2 Have 2 accounts or maybe a good friend and don't want to pay for the Mushan Beast mount?  This is how you get it yourself:  http://pastebin.com/h5ip1Duq
 END
 VER 3 0000000000000137 "Pull Timer" "Spell_Fire_FelFlameBolt"
-/rt pull
+/pull 10
 END
 VER 3 0000000000000140 "QuickMacro" "1487016"
 /click StaticPopup1Button1

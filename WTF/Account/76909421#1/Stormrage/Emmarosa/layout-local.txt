@@ -1,11 +1,4 @@
 Version: 1
-Frame: QuickTalents
-FrameLevel: 1
-Anchor: BOTTOMRIGHT
-X: -7
-Y: 183
-W: 83
-H: 16
 Frame: ItemRefTooltip
 FrameLevel: 1
 Anchor: CENTER
@@ -65,7 +58,7 @@ H: 18
 Frame: _NPCScanOverlayKey
 FrameLevel: 121
 Anchor: CENTER
-X: -124
-Y: 24
-W: 245
-H: 364
+X: -137
+Y: -43
+W: 220
+H: 230

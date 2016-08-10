@@ -10,14 +10,16 @@ DataStoreDB = {
 		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
 		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
-		["Yanlery - Stormrage"] = "Yanlery - Stormrage",
-		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
 		["Brobies - Stormrage"] = "Brobies - Stormrage",
 		["Callil - Turalyon"] = "Callil - Turalyon",
-		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
-		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
-		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
+		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
+		["Yanlery - Stormrage"] = "Yanlery - Stormrage",
+		["Edgelordshue - Stormrage"] = "Edgelordshue - Stormrage",
+		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
+		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
+		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
+		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
 	},
 	["global"] = {
 		["Guilds"] = {
@@ -52,6 +54,13 @@ DataStoreDB = {
 				["faction"] = "Horde",
 				["guildName"] = "Viginti",
 			},
+			["Default.Turalyon.Skratch"] = {
+				["faction"] = "Horde",
+				["guildName"] = "Viginti",
+			},
+			["Default.Stormrage.Kateplusnine"] = {
+				["faction"] = "Alliance",
+			},
 			["Default.Bloodhoof.Dalgrens"] = {
 				["faction"] = "Horde",
 			},
@@ -59,26 +68,15 @@ DataStoreDB = {
 				["guildName"] = "Horizon",
 				["faction"] = "Alliance",
 			},
-			["Default.Turalyon.Skratch"] = {
-				["faction"] = "Horde",
-				["guildName"] = "Viginti",
-			},
-			["Default.Stormrage.Ershirley"] = {
-				["faction"] = "Alliance",
-			},
 			["Default.Turalyon.Callil"] = {
 				["faction"] = "Alliance",
 			},
-			["Default.Stormrage.Kateplusnine"] = {
+			["Default.Stormrage.Ershirley"] = {
 				["faction"] = "Alliance",
 			},
 			["Default.Turalyon.Titte"] = {
 				["faction"] = "Horde",
 				["guildName"] = "Viginti",
-			},
-			["Default.Stormrage.Whyfy"] = {
-				["faction"] = "Alliance",
-				["guildName"] = "Horizon",
 			},
 			["Default.Turalyon.Lackteight"] = {
 				["guildName"] = "Viginti",
@@ -87,11 +85,22 @@ DataStoreDB = {
 			["Default.Stormrage.Squelben"] = {
 				["faction"] = "Alliance",
 			},
+			["Default.Stormrage.Whyfy"] = {
+				["faction"] = "Alliance",
+				["guildName"] = "Horizon",
+			},
+			["Default.Stormrage.Danoh"] = {
+				["faction"] = "Alliance",
+				["guildName"] = "Horizon",
+			},
+			["Default.Stormrage.Edgelordshue"] = {
+				["faction"] = "Alliance",
+			},
 			["Default.Turalyon.Shaneequa"] = {
 				["guildName"] = "Viginti",
 				["faction"] = "Horde",
 			},
-			["Default.Stormrage.Danoh"] = {
+			["Default.Stormrage.Talthalador"] = {
 				["faction"] = "Alliance",
 				["guildName"] = "Horizon",
 			},

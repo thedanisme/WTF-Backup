@@ -10,14 +10,16 @@ DataStore_AuctionsDB = {
 		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
 		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
-		["Yanlery - Stormrage"] = "Yanlery - Stormrage",
-		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
 		["Brobies - Stormrage"] = "Brobies - Stormrage",
 		["Callil - Turalyon"] = "Callil - Turalyon",
-		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
-		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
-		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
+		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
+		["Yanlery - Stormrage"] = "Yanlery - Stormrage",
+		["Edgelordshue - Stormrage"] = "Edgelordshue - Stormrage",
+		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
+		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
+		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
+		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
 	},
 	["global"] = {
 		["Characters"] = {
@@ -34,17 +36,17 @@ DataStore_AuctionsDB = {
 				["lastVisitDate"] = "2016/07/30 10:54",
 			},
 			["Default.Stormrage.Emmarosa"] = {
-				["lastUpdate"] = 1470731735,
+				["lastUpdate"] = 1470776595,
 				["Auctions"] = {
 					"1|87508|1||18990500|19990000|4", -- [1]
 					"1|31878|1||379050|399000|4", -- [2]
 					"1|18259|1||156750|165000|4", -- [3]
-					"1|16850|1||115425|121500|4", -- [4]
-					"1|16857|1||185725|195500|4", -- [5]
-					"1|11382|1||3275125|3447500|4", -- [6]
-					"1|13146|1||2313250|2435000|4", -- [7]
-					"1|11302|1||186200|196000|4", -- [8]
-					"1|7909|1||9405|9900|4", -- [9]
+					"1|11382|1||3275125|3447500|4", -- [4]
+					"1|13146|1||2313250|2435000|4", -- [5]
+					"1|11302|1||186200|196000|4", -- [6]
+					"1|7909|1||9405|9900|4", -- [7]
+					"1|8170|1||8455|8900|4", -- [8]
+					"1|8170|1||8455|8900|4", -- [9]
 					"1|8170|1||8455|8900|4", -- [10]
 					"1|8170|1||8455|8900|4", -- [11]
 					"1|8170|1||8455|8900|4", -- [12]
@@ -67,32 +69,42 @@ DataStore_AuctionsDB = {
 					"1|8170|1||8455|8900|4", -- [29]
 					"1|8170|1||8455|8900|4", -- [30]
 					"1|8170|1||8455|8900|4", -- [31]
-					"1|8170|1||8455|8900|4", -- [32]
-					"1|8170|1||8455|8900|4", -- [33]
-					"1|8170|1||8455|8900|4", -- [34]
-					"1|8170|1||8455|8900|4", -- [35]
-					"1|8170|1||8455|8900|4", -- [36]
-					"1|16817|1||161975|170500|4", -- [37]
-					"1|115796|1||275490500|289990000|4", -- [38]
-					"1|115526|1||711550|749000|4", -- [39]
-					"1|115526|1||711550|749000|4", -- [40]
-					"1|115526|1||711550|749000|4", -- [41]
-					"1|115526|1||711550|749000|4", -- [42]
-					"1|115526|1||711550|749000|4", -- [43]
+					"1|16817|1||161975|170500|4", -- [32]
+					"1|115526|1||711550|749000|4", -- [33]
+					"1|115526|1||711550|749000|4", -- [34]
+					"1|115526|1||711550|749000|4", -- [35]
+					"1|115526|1||711550|749000|4", -- [36]
+					"1|115526|1||711550|749000|4", -- [37]
+					"1|112297|1||587100|618000|4", -- [38]
+					"1|112294|1||7533500|7930000|4", -- [39]
+					"1|112287|1||4533875|4772500|4", -- [40]
+					"1|112300|1||330600|348000|4", -- [41]
+					"1|113355|5||209950|221000|4", -- [42]
+					"1|113355|5||209950|221000|4", -- [43]
 				},
-				["lastVisitDate"] = "2016/08/09 04:35",
+				["lastVisitDate"] = "2016/08/09 17:02",
 			},
 			["Default.Stormrage.Whyfy"] = {
 				["lastUpdate"] = 1469900969,
 				["lastVisitDate"] = "2016/07/30 13:49",
 			},
-			["Default.Turalyon.Titte"] = {
-				["lastUpdate"] = 1469638742,
-				["lastVisitDate"] = "2016/07/27 12:59",
-			},
 			["Default.Stormrage.Brobies"] = {
 				["lastUpdate"] = 1470026604,
 				["lastVisitDate"] = "2016/08/01 00:43",
+			},
+			["Default.Stormrage.Talthalador"] = {
+				["lastUpdate"] = 1470808695,
+				["Auctions"] = {
+					"1|115526|1||708700|746000|3", -- [1]
+					"1|115526|1||708700|746000|3", -- [2]
+					"0|115526|1||708700|746000|3", -- [3]
+					"0|115526|1||708700|746000|3", -- [4]
+				},
+				["lastVisitDate"] = "2016/08/10 01:58",
+			},
+			["Default.Turalyon.Titte"] = {
+				["lastUpdate"] = 1469638742,
+				["lastVisitDate"] = "2016/07/27 12:59",
 			},
 			["Default.Stormrage.Danoh"] = {
 				["lastUpdate"] = 1469993168,

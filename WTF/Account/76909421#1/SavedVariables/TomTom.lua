@@ -16,25 +16,27 @@ TomTomDB = {
 		["Ershirley - Stormrage"] = "Default",
 		["Kateplusnine - Stormrage"] = "Default",
 		["Brobies - Stormrage"] = "Default",
+		["Rosabria - Sargeras"] = "Default",
+		["Fupa - Stormrage"] = "Default",
 		["Bruhbies - Stormrage"] = "Default",
 		["Rotator - Turalyon"] = "Default",
 		["Llamama - Stormrage"] = "Default",
 		["Callil - Turalyon"] = "Default",
-		["Shaneequa - Turalyon"] = "Default",
-		["Titt - Turalyon"] = "Default",
-		["Aranduh - Bloodhoof"] = "Default",
-		["Skratch - Turalyon"] = "Default",
 		["Knutts - Turalyon"] = "Default",
+		["Titt - Turalyon"] = "Default",
 		["Lackteight - Turalyon"] = "Default",
-		["Arando - Bloodhoof"] = "Default",
-		["Danoh - Stormrage"] = "Default",
-		["Bloodcox - Stormrage"] = "Default",
-		["Brewbies - Turalyon"] = "Default",
+		["Skratch - Turalyon"] = "Default",
 		["Horny - Bloodhoof"] = "Default",
+		["Arando - Bloodhoof"] = "Default",
+		["Bloodcox - Stormrage"] = "Default",
+		["Danoh - Stormrage"] = "Default",
+		["Brewbies - Turalyon"] = "Default",
+		["Shaneequa - Turalyon"] = "Default",
+		["Edgelordshue - Stormrage"] = "Default",
 		["Dalgrens - Bloodhoof"] = "Default",
 		["Beer - Bloodhoof"] = "Default",
-		["Fupa - Stormrage"] = "Default",
-		["Rosabria - Sargeras"] = "Default",
+		["Talthalador - Stormrage"] = "Default",
+		["Aranduh - Bloodhoof"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -65,25 +67,27 @@ TomTomWaypointsMF = {
 		["Ershirley - Stormrage"] = "Ershirley - Stormrage",
 		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
 		["Brobies - Stormrage"] = "Brobies - Stormrage",
+		["Rosabria - Sargeras"] = "Rosabria - Sargeras",
+		["Fupa - Stormrage"] = "Fupa - Stormrage",
 		["Bruhbies - Stormrage"] = "Bruhbies - Stormrage",
 		["Rotator - Turalyon"] = "Rotator - Turalyon",
 		["Llamama - Stormrage"] = "Llamama - Stormrage",
 		["Callil - Turalyon"] = "Callil - Turalyon",
-		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
-		["Titt - Turalyon"] = "Titt - Turalyon",
-		["Aranduh - Bloodhoof"] = "Aranduh - Bloodhoof",
-		["Skratch - Turalyon"] = "Skratch - Turalyon",
 		["Knutts - Turalyon"] = "Knutts - Turalyon",
+		["Titt - Turalyon"] = "Titt - Turalyon",
 		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
-		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
-		["Danoh - Stormrage"] = "Danoh - Stormrage",
-		["Bloodcox - Stormrage"] = "Bloodcox - Stormrage",
-		["Brewbies - Turalyon"] = "Brewbies - Turalyon",
+		["Skratch - Turalyon"] = "Skratch - Turalyon",
 		["Horny - Bloodhoof"] = "Horny - Bloodhoof",
+		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
+		["Bloodcox - Stormrage"] = "Bloodcox - Stormrage",
+		["Danoh - Stormrage"] = "Danoh - Stormrage",
+		["Brewbies - Turalyon"] = "Brewbies - Turalyon",
+		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
+		["Edgelordshue - Stormrage"] = "Edgelordshue - Stormrage",
 		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
 		["Beer - Bloodhoof"] = "Beer - Bloodhoof",
-		["Fupa - Stormrage"] = "Fupa - Stormrage",
-		["Rosabria - Sargeras"] = "Rosabria - Sargeras",
+		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
+		["Aranduh - Bloodhoof"] = "Aranduh - Bloodhoof",
 	},
 	["profiles"] = {
 		["Callil - Sargeras"] = {
@@ -116,6 +120,10 @@ TomTomWaypointsMF = {
 		},
 		["Brobies - Stormrage"] = {
 		},
+		["Rosabria - Sargeras"] = {
+		},
+		["Fupa - Stormrage"] = {
+		},
 		["Bruhbies - Stormrage"] = {
 		},
 		["Rotator - Turalyon"] = {
@@ -124,9 +132,33 @@ TomTomWaypointsMF = {
 		},
 		["Callil - Turalyon"] = {
 		},
-		["Shaneequa - Turalyon"] = {
+		["Knutts - Turalyon"] = {
 		},
 		["Titt - Turalyon"] = {
+		},
+		["Lackteight - Turalyon"] = {
+		},
+		["Skratch - Turalyon"] = {
+		},
+		["Horny - Bloodhoof"] = {
+		},
+		["Arando - Bloodhoof"] = {
+		},
+		["Bloodcox - Stormrage"] = {
+		},
+		["Danoh - Stormrage"] = {
+		},
+		["Brewbies - Turalyon"] = {
+		},
+		["Shaneequa - Turalyon"] = {
+		},
+		["Edgelordshue - Stormrage"] = {
+		},
+		["Dalgrens - Bloodhoof"] = {
+		},
+		["Beer - Bloodhoof"] = {
+		},
+		["Talthalador - Stormrage"] = {
 		},
 		["Aranduh - Bloodhoof"] = {
 			[950] = {
@@ -1121,30 +1153,6 @@ TomTomWaypointsMF = {
 					["world"] = true,
 				},
 			},
-		},
-		["Skratch - Turalyon"] = {
-		},
-		["Knutts - Turalyon"] = {
-		},
-		["Lackteight - Turalyon"] = {
-		},
-		["Arando - Bloodhoof"] = {
-		},
-		["Danoh - Stormrage"] = {
-		},
-		["Bloodcox - Stormrage"] = {
-		},
-		["Brewbies - Turalyon"] = {
-		},
-		["Horny - Bloodhoof"] = {
-		},
-		["Dalgrens - Bloodhoof"] = {
-		},
-		["Beer - Bloodhoof"] = {
-		},
-		["Fupa - Stormrage"] = {
-		},
-		["Rosabria - Sargeras"] = {
 		},
 	},
 }

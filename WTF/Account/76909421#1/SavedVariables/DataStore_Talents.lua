@@ -10,17 +10,68 @@ DataStore_TalentsDB = {
 		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
 		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
-		["Yanlery - Stormrage"] = "Yanlery - Stormrage",
-		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
 		["Brobies - Stormrage"] = "Brobies - Stormrage",
 		["Callil - Turalyon"] = "Callil - Turalyon",
-		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
-		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
-		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
+		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
+		["Yanlery - Stormrage"] = "Yanlery - Stormrage",
+		["Edgelordshue - Stormrage"] = "Edgelordshue - Stormrage",
+		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
+		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
+		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
+		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
 	},
 	["global"] = {
 		["Characters"] = {
+			["Default.Stormrage.Danoh"] = {
+				["ActiveTalents"] = 1,
+				["lastUpdate"] = 1470682633,
+				["Class"] = "HUNTER",
+				["GlyphList"] = {
+					11, -- [1]
+					5818, -- [2]
+					16378, -- [3]
+					5642, -- [4]
+					10842, -- [5]
+					5722, -- [6]
+					5738, -- [7]
+					5690, -- [8]
+					5706, -- [9]
+					17674, -- [10]
+					5802, -- [11]
+					5754, -- [12]
+					5770, -- [13]
+					5658, -- [14]
+					11098, -- [15]
+					5914, -- [16]
+					5674, -- [17]
+					11130, -- [18]
+					5786, -- [19]
+					5834, -- [20]
+					5850, -- [21]
+					18090, -- [22]
+					5946, -- [23]
+					17634, -- [24]
+					18098, -- [25]
+					11058, -- [26]
+					13, -- [27]
+					16364, -- [28]
+					11084, -- [29]
+					7100, -- [30]
+					5628, -- [31]
+					16860, -- [32]
+					7068, -- [33]
+					7052, -- [34]
+					7036, -- [35]
+					7084, -- [36]
+					5868, -- [37]
+					18052, -- [38]
+				},
+				["Specializations"] = {
+					5534, -- [1]
+					6613, -- [2]
+				},
+			},
 			["Default.Turalyon.Knutts"] = {
 				["ActiveTalents"] = 2,
 				["lastUpdate"] = 1469912067,
@@ -70,6 +121,56 @@ DataStore_TalentsDB = {
 					[3] = 5625,
 				},
 				["Class"] = "ROGUE",
+			},
+			["Default.Turalyon.Titte"] = {
+				["ActiveTalents"] = 1,
+				["lastUpdate"] = 1470432001,
+				["GlyphList"] = {
+					11, -- [1]
+					17754, -- [2]
+					8426, -- [3]
+					12314, -- [4]
+					8330, -- [5]
+					8314, -- [6]
+					8250, -- [7]
+					8394, -- [8]
+					8442, -- [9]
+					8922, -- [10]
+					8506, -- [11]
+					17050, -- [12]
+					17850, -- [13]
+					17866, -- [14]
+					8346, -- [15]
+					8490, -- [16]
+					8906, -- [17]
+					8194, -- [18]
+					8258, -- [19]
+					12290, -- [20]
+					12338, -- [21]
+					17794, -- [22]
+					8402, -- [23]
+					17762, -- [24]
+					17826, -- [25]
+					17010, -- [26]
+					8514, -- [27]
+					13, -- [28]
+					19276, -- [29]
+					8300, -- [30]
+					8476, -- [31]
+					8364, -- [32]
+					8876, -- [33]
+					8860, -- [34]
+					17196, -- [35]
+					12380, -- [36]
+					8932, -- [37]
+					8884, -- [38]
+					8228, -- [39]
+				},
+				["Specializations"] = {
+					15766, -- [1]
+					[3] = 14187,
+				},
+				["Class"] = "DEATHKNIGHT",
 			},
 			["Default.Stormreaver.Ranidan"] = {
 				["ActiveTalents"] = 1,
@@ -219,55 +320,6 @@ DataStore_TalentsDB = {
 				},
 				["Class"] = "WARRIOR",
 			},
-			["Default.Stormrage.Danoh"] = {
-				["ActiveTalents"] = 1,
-				["lastUpdate"] = 1470682633,
-				["Class"] = "HUNTER",
-				["GlyphList"] = {
-					11, -- [1]
-					5818, -- [2]
-					16378, -- [3]
-					5642, -- [4]
-					10842, -- [5]
-					5722, -- [6]
-					5738, -- [7]
-					5690, -- [8]
-					5706, -- [9]
-					17674, -- [10]
-					5802, -- [11]
-					5754, -- [12]
-					5770, -- [13]
-					5658, -- [14]
-					11098, -- [15]
-					5914, -- [16]
-					5674, -- [17]
-					11130, -- [18]
-					5786, -- [19]
-					5834, -- [20]
-					5850, -- [21]
-					18090, -- [22]
-					5946, -- [23]
-					17634, -- [24]
-					18098, -- [25]
-					11058, -- [26]
-					13, -- [27]
-					16364, -- [28]
-					11084, -- [29]
-					7100, -- [30]
-					5628, -- [31]
-					16860, -- [32]
-					7068, -- [33]
-					7052, -- [34]
-					7036, -- [35]
-					7084, -- [36]
-					5868, -- [37]
-					18052, -- [38]
-				},
-				["Specializations"] = {
-					5534, -- [1]
-					6613, -- [2]
-				},
-			},
 			["Default.Turalyon.Callil"] = {
 				["lastUpdate"] = 1470030037,
 				["Class"] = "PRIEST",
@@ -275,64 +327,6 @@ DataStore_TalentsDB = {
 				["Specializations"] = {
 					7062, -- [1]
 				},
-			},
-			["Default.Bloodhoof.Arando"] = {
-				["lastUpdate"] = 1469995040,
-				["Class"] = "PALADIN",
-				["ActiveTalents"] = 1,
-				["Specializations"] = {
-					[2] = 0,
-				},
-			},
-			["Default.Turalyon.Titte"] = {
-				["ActiveTalents"] = 1,
-				["lastUpdate"] = 1470432001,
-				["GlyphList"] = {
-					11, -- [1]
-					17754, -- [2]
-					8426, -- [3]
-					12314, -- [4]
-					8330, -- [5]
-					8314, -- [6]
-					8250, -- [7]
-					8394, -- [8]
-					8442, -- [9]
-					8922, -- [10]
-					8506, -- [11]
-					17050, -- [12]
-					17850, -- [13]
-					17866, -- [14]
-					8346, -- [15]
-					8490, -- [16]
-					8906, -- [17]
-					8194, -- [18]
-					8258, -- [19]
-					12290, -- [20]
-					12338, -- [21]
-					17794, -- [22]
-					8402, -- [23]
-					17762, -- [24]
-					17826, -- [25]
-					17010, -- [26]
-					8514, -- [27]
-					13, -- [28]
-					19276, -- [29]
-					8300, -- [30]
-					8476, -- [31]
-					8364, -- [32]
-					8876, -- [33]
-					8860, -- [34]
-					17196, -- [35]
-					12380, -- [36]
-					8932, -- [37]
-					8884, -- [38]
-					8228, -- [39]
-				},
-				["Specializations"] = {
-					15766, -- [1]
-					[3] = 14187,
-				},
-				["Class"] = "DEATHKNIGHT",
 			},
 			["Default.Turalyon.Shaneequa"] = {
 				["ActiveTalents"] = 2,
@@ -402,64 +396,13 @@ DataStore_TalentsDB = {
 					7620, -- [58]
 				},
 			},
-			["Default.Stormrage.Whyfy"] = {
-				["ActiveTalents"] = 1,
-				["lastUpdate"] = 1470682442,
-				["GlyphList"] = {
-					11, -- [1]
-					18314, -- [2]
-					3018, -- [3]
-					15946, -- [4]
-					11226, -- [5]
-					3210, -- [6]
-					3082, -- [7]
-					19338, -- [8]
-					3034, -- [9]
-					18330, -- [10]
-					8970, -- [11]
-					8954, -- [12]
-					2954, -- [13]
-					2986, -- [14]
-					17082, -- [15]
-					11258, -- [16]
-					18346, -- [17]
-					3178, -- [18]
-					2938, -- [19]
-					3114, -- [20]
-					7290, -- [21]
-					3066, -- [22]
-					18378, -- [23]
-					17098, -- [24]
-					3162, -- [25]
-					11306, -- [26]
-					2970, -- [27]
-					8986, -- [28]
-					18394, -- [29]
-					18362, -- [30]
-					3194, -- [31]
-					16154, -- [32]
-					19258, -- [33]
-					14890, -- [34]
-					3002, -- [35]
-					3130, -- [36]
-					13, -- [37]
-					15836, -- [38]
-					7244, -- [39]
-					17324, -- [40]
-					15804, -- [41]
-					7324, -- [42]
-					15788, -- [43]
-					3052, -- [44]
-					17340, -- [45]
-					15820, -- [46]
-					7308, -- [47]
-					7260, -- [48]
-					7276, -- [49]
-				},
-				["Specializations"] = {
-					[2] = 10846,
-				},
+			["Default.Bloodhoof.Arando"] = {
+				["lastUpdate"] = 1469995040,
 				["Class"] = "PALADIN",
+				["ActiveTalents"] = 1,
+				["Specializations"] = {
+					[2] = 0,
+				},
 			},
 			["Default.Turalyon.Skratch"] = {
 				["ActiveTalents"] = 1,
@@ -530,9 +473,77 @@ DataStore_TalentsDB = {
 					0, -- [1]
 				},
 			},
+			["Default.Stormrage.Whyfy"] = {
+				["ActiveTalents"] = 1,
+				["lastUpdate"] = 1470788843,
+				["GlyphList"] = {
+					11, -- [1]
+					18314, -- [2]
+					3018, -- [3]
+					15946, -- [4]
+					11226, -- [5]
+					3210, -- [6]
+					3082, -- [7]
+					19338, -- [8]
+					3034, -- [9]
+					18330, -- [10]
+					8970, -- [11]
+					8954, -- [12]
+					2954, -- [13]
+					2986, -- [14]
+					17082, -- [15]
+					11258, -- [16]
+					18346, -- [17]
+					3178, -- [18]
+					2938, -- [19]
+					3114, -- [20]
+					7290, -- [21]
+					3066, -- [22]
+					18378, -- [23]
+					17098, -- [24]
+					3162, -- [25]
+					11306, -- [26]
+					2970, -- [27]
+					8986, -- [28]
+					18394, -- [29]
+					18362, -- [30]
+					3194, -- [31]
+					16154, -- [32]
+					19258, -- [33]
+					14890, -- [34]
+					3002, -- [35]
+					3130, -- [36]
+					13, -- [37]
+					15836, -- [38]
+					7244, -- [39]
+					17324, -- [40]
+					15804, -- [41]
+					7324, -- [42]
+					15788, -- [43]
+					3052, -- [44]
+					17340, -- [45]
+					15820, -- [46]
+					7308, -- [47]
+					7260, -- [48]
+					7276, -- [49]
+				},
+				["Specializations"] = {
+					[2] = 10846,
+				},
+				["Class"] = "PALADIN",
+			},
+			["Default.Stormrage.Emmarosa"] = {
+				["lastUpdate"] = 1470786691,
+				["Specializations"] = {
+					16119, -- [1]
+					10839, -- [2]
+					5625, -- [3]
+				},
+				["Class"] = "ROGUE",
+			},
 			["Default.Stormrage.Brobies"] = {
 				["ActiveTalents"] = 1,
-				["lastUpdate"] = 1470682740,
+				["lastUpdate"] = 1470788717,
 				["Class"] = "MONK",
 				["Specializations"] = {
 					9646, -- [1]
@@ -582,14 +593,20 @@ DataStore_TalentsDB = {
 					16884, -- [42]
 				},
 			},
-			["Default.Stormrage.Emmarosa"] = {
-				["lastUpdate"] = 1470758367,
+			["Default.Stormrage.Talthalador"] = {
+				["lastUpdate"] = 1470808629,
 				["Specializations"] = {
-					16119, -- [1]
-					10839, -- [2]
-					5625, -- [3]
+					5, -- [1]
+					6, -- [2]
 				},
-				["Class"] = "ROGUE",
+				["Class"] = "DEMONHUNTER",
+			},
+			["Default.Stormrage.Edgelordshue"] = {
+				["lastUpdate"] = 1470762117,
+				["Specializations"] = {
+					0, -- [1]
+				},
+				["Class"] = "DEMONHUNTER",
 			},
 		},
 		["Reference"] = {
@@ -1022,14 +1039,16 @@ DataStore_TalentsRefDB = {
 		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
 		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
-		["Yanlery - Stormrage"] = "Yanlery - Stormrage",
-		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
 		["Brobies - Stormrage"] = "Brobies - Stormrage",
 		["Callil - Turalyon"] = "Callil - Turalyon",
-		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
-		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
-		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
+		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
+		["Yanlery - Stormrage"] = "Yanlery - Stormrage",
+		["Edgelordshue - Stormrage"] = "Edgelordshue - Stormrage",
+		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
+		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
+		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
+		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
 	},
 	["global"] = {
 		["DEATHKNIGHT"] = {
@@ -1244,7 +1263,7 @@ DataStore_TalentsRefDB = {
 					["name"] = "Subtlety",
 				}, -- [3]
 			},
-			["Version"] = 22345,
+			["Version"] = 22396,
 		},
 		["MAGE"] = {
 			["Locale"] = "enUS",
@@ -1284,6 +1303,10 @@ DataStore_TalentsRefDB = {
 			},
 			["Version"] = 22293,
 		},
+		["SHAMAN"] = {
+			["Locale"] = "enUS",
+			["Version"] = 22345,
+		},
 		["WARLOCK"] = {
 			["Locale"] = "enUS",
 			["Specializations"] = {
@@ -1318,9 +1341,37 @@ DataStore_TalentsRefDB = {
 			},
 			["Version"] = 22293,
 		},
-		["SHAMAN"] = {
+		["DEMONHUNTER"] = {
 			["Locale"] = "enUS",
-			["Version"] = 22345,
+			["Specializations"] = {
+				{
+					["id"] = 577,
+					["talents"] = {
+						21854, -- [1]
+						22493, -- [2]
+						22416, -- [3]
+						21857, -- [4]
+						22765, -- [5]
+						22799, -- [6]
+					},
+					["icon"] = "Interface\\Icons\\ability_demonhunter_specdps",
+					["name"] = "Havoc",
+				}, -- [1]
+				{
+					["id"] = 581,
+					["talents"] = {
+						22502, -- [1]
+						22503, -- [2]
+						22504, -- [3]
+						22505, -- [4]
+						22766, -- [5]
+						22507, -- [6]
+					},
+					["icon"] = "Interface\\Icons\\ability_demonhunter_spectank",
+					["name"] = "Vengeance",
+				}, -- [2]
+			},
+			["Version"] = 22396,
 		},
 		["PALADIN"] = {
 			["Locale"] = "enUS",
@@ -1354,7 +1405,7 @@ DataStore_TalentsRefDB = {
 					["name"] = "Protection",
 				},
 			},
-			["Version"] = 22345,
+			["Version"] = 22396,
 		},
 		["DRUID"] = {
 			["Locale"] = "enUS",
@@ -1422,7 +1473,7 @@ DataStore_TalentsRefDB = {
 					["name"] = "Brewmaster",
 				}, -- [1]
 			},
-			["Version"] = 22345,
+			["Version"] = 22396,
 		},
 		["HUNTER"] = {
 			["Locale"] = "enUS",

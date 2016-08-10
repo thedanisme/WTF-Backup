@@ -10,24 +10,38 @@ DataStore_MailsDB = {
 		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
 		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
-		["Yanlery - Stormrage"] = "Yanlery - Stormrage",
-		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
 		["Brobies - Stormrage"] = "Brobies - Stormrage",
 		["Callil - Turalyon"] = "Callil - Turalyon",
-		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
-		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
-		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
+		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
+		["Yanlery - Stormrage"] = "Yanlery - Stormrage",
+		["Edgelordshue - Stormrage"] = "Edgelordshue - Stormrage",
+		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
+		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
+		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
+		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
 	},
 	["global"] = {
 		["Characters"] = {
-			["Default.Turalyon.Knutts"] = {
-				["lastUpdate"] = 1469907685,
-				["lastVisitDate"] = "2016/07/30 15:41",
-			},
 			["Default.Stormreaver.Ranidan"] = {
 				["lastUpdate"] = 1461389129,
 				["lastVisitDate"] = "2016/04/23 01:25",
+			},
+			["Default.Stormrage.Emmarosa"] = {
+				["lastUpdate"] = 1470785488,
+				["lastVisitDate"] = "2016/08/09 19:31",
+			},
+			["Default.Bloodhoof.Arando"] = {
+				["lastUpdate"] = 1469173661,
+				["lastVisitDate"] = "2016/07/22 03:47",
+			},
+			["Default.Stormrage.Talthalador"] = {
+				["lastUpdate"] = 1470807206,
+				["lastVisitDate"] = "2016/08/10 01:33",
+			},
+			["Default.Turalyon.Knutts"] = {
+				["lastUpdate"] = 1469907685,
+				["lastVisitDate"] = "2016/07/30 15:41",
 			},
 			["Default.Bloodhoof.Dalgrens"] = {
 				["lastUpdate"] = 1469173983,
@@ -49,26 +63,6 @@ DataStore_MailsDB = {
 				},
 				["lastVisitDate"] = "2016/08/04 14:08",
 			},
-			["Default.Stormrage.Danoh"] = {
-				["lastUpdate"] = 1470682695,
-				["lastVisitDate"] = "2016/08/08 14:58",
-			},
-			["Default.Bloodhoof.Arando"] = {
-				["lastUpdate"] = 1469173661,
-				["lastVisitDate"] = "2016/07/22 03:47",
-			},
-			["Default.Turalyon.Skratch"] = {
-				["lastUpdate"] = 1469905437,
-				["lastVisitDate"] = "2016/07/30 15:03",
-			},
-			["Default.Stormrage.Whyfy"] = {
-				["lastUpdate"] = 1470682559,
-				["lastVisitDate"] = "2016/08/08 14:55",
-			},
-			["Default.Stormrage.Brobies"] = {
-				["lastUpdate"] = 1470682747,
-				["lastVisitDate"] = "2016/08/08 14:59",
-			},
 			["Default.Turalyon.Callil"] = {
 				["lastUpdate"] = 1470029797,
 				["lastVisitDate"] = "2016/08/01 01:36",
@@ -77,9 +71,21 @@ DataStore_MailsDB = {
 				["lastUpdate"] = 1470430851,
 				["lastVisitDate"] = "2016/08/05 17:00",
 			},
-			["Default.Stormrage.Emmarosa"] = {
-				["lastUpdate"] = 1470757117,
-				["lastVisitDate"] = "2016/08/09 11:38",
+			["Default.Stormrage.Whyfy"] = {
+				["lastUpdate"] = 1470788863,
+				["lastVisitDate"] = "2016/08/09 20:27",
+			},
+			["Default.Turalyon.Skratch"] = {
+				["lastUpdate"] = 1469905437,
+				["lastVisitDate"] = "2016/07/30 15:03",
+			},
+			["Default.Stormrage.Brobies"] = {
+				["lastUpdate"] = 1470788806,
+				["lastVisitDate"] = "2016/08/09 20:26",
+			},
+			["Default.Stormrage.Danoh"] = {
+				["lastUpdate"] = 1470682695,
+				["lastVisitDate"] = "2016/08/08 14:58",
 			},
 		},
 	},

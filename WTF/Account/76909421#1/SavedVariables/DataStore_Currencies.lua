@@ -10,14 +10,16 @@ DataStore_CurrenciesDB = {
 		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
 		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
-		["Yanlery - Stormrage"] = "Yanlery - Stormrage",
-		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
 		["Brobies - Stormrage"] = "Brobies - Stormrage",
 		["Callil - Turalyon"] = "Callil - Turalyon",
-		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
-		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
-		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
+		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
+		["Yanlery - Stormrage"] = "Yanlery - Stormrage",
+		["Edgelordshue - Stormrage"] = "Edgelordshue - Stormrage",
+		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
+		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
+		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
+		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
 	},
 	["global"] = {
 		["Reference"] = {
@@ -57,11 +59,14 @@ DataStore_CurrenciesDB = {
 				"Illustrious Jewelcrafter's Token|Interface\\Icons\\inv_misc_token_argentdawn3", -- [33]
 				"Mark of the World Tree|Interface\\Icons\\inv_misc_markoftheworldtree", -- [34]
 				"Dalaran Jewelcrafter's Token|Interface\\Icons\\INV_Misc_Gem_Variety_01", -- [35]
+				"Legion|", -- [36]
+				"Nethershard|Interface\\Icons\\inv_datacrystal01", -- [37]
 			},
 			["CurrencyTextRev"] = {
 				["Mark of the World Tree"] = 34,
 				["Elder Charm of Good Fortune"] = 30,
 				["Bloody Coin"] = 29,
+				["Nethershard"] = 37,
 				["Valor"] = 10,
 				["Dungeon and Raid"] = 8,
 				["Seal of Inevitable Fate"] = 6,
@@ -76,21 +81,22 @@ DataStore_CurrenciesDB = {
 				["Oil"] = 5,
 				["Artifact Fragment"] = 3,
 				["Wrath of the Lich King"] = 32,
+				["Dalaran Jewelcrafter's Token"] = 35,
 				["Player vs. Player"] = 13,
 				["Timewarped Badge"] = 9,
 				["Unused"] = 16,
-				["Dalaran Jewelcrafter's Token"] = 35,
 				["Mogu Rune of Fate"] = 31,
 				["Tol Barad Commendation"] = 28,
+				["Mists of Pandaria"] = 22,
 				["Epicurean's Award"] = 27,
 				["Honor Points"] = 15,
+				["Conquest Points"] = 14,
 				["Miscellaneous"] = 11,
-				["Warlords of Draenor"] = 1,
-				["Mists of Pandaria"] = 22,
+				["Legion"] = 36,
 				["Apexis Crystal"] = 2,
 				["Darkmoon Prize Ticket"] = 12,
+				["Warlords of Draenor"] = 1,
 				["Garrison Resources"] = 4,
-				["Conquest Points"] = 14,
 				["Seal of Tempered Fate"] = 7,
 				["Champion's Seal"] = 25,
 				["Illustrious Jewelcrafter's Token"] = 33,
@@ -140,23 +146,25 @@ DataStore_CurrenciesDB = {
 			},
 			["Default.Stormrage.Emmarosa"] = {
 				["Currencies"] = {
-					3, -- [1]
-					495108, -- [2]
-					4486, -- [3]
-					190000, -- [4]
-					1260424, -- [5]
-					66570, -- [6]
-					140, -- [7]
-					14, -- [8]
-					17, -- [9]
-					85138, -- [10]
-					9620, -- [11]
-					45, -- [12]
-					24228, -- [13]
-					1680936, -- [14]
-					53, -- [15]
-					162, -- [16]
-					806, -- [17]
+					73, -- [1]
+					12362, -- [2]
+					17, -- [3]
+					85138, -- [4]
+					9620, -- [5]
+					3, -- [6]
+					546308, -- [7]
+					4486, -- [8]
+					66608, -- [9]
+					987272, -- [10]
+					97930, -- [11]
+					524, -- [12]
+					14, -- [13]
+					45, -- [14]
+					24228, -- [15]
+					1680936, -- [16]
+					53, -- [17]
+					162, -- [18]
+					806, -- [19]
 				},
 				["Archeology"] = {
 					0, -- [1]
@@ -178,14 +186,14 @@ DataStore_CurrenciesDB = {
 					0, -- [17]
 					0, -- [18]
 				},
-				["lastUpdate"] = 1470758367,
+				["lastUpdate"] = 1470786691,
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
 					[396] = "0-0-0-0",
 					[390] = "0-0-0-0",
-					[823] = "3868-0-0-0",
+					[823] = "4268-0-0-0",
 					[392] = "0-0-0-0",
-					[824] = "9847-0-0-10000",
+					[824] = "7713-0-0-10000",
 					[994] = "0-0-0-20",
 				},
 			},
@@ -257,8 +265,8 @@ DataStore_CurrenciesDB = {
 					3, -- [1]
 					3487108, -- [2]
 					6918, -- [3]
-					1268488, -- [4]
-					8330, -- [5]
+					1280008, -- [4]
+					11530, -- [5]
 					1036, -- [6]
 					1038, -- [7]
 					17, -- [8]
@@ -294,7 +302,7 @@ DataStore_CurrenciesDB = {
 					0, -- [17]
 					0, -- [18]
 				},
-				["lastUpdate"] = 1470682787,
+				["lastUpdate"] = 1470788774,
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
 					[396] = "0-0-10-3000",
@@ -302,7 +310,7 @@ DataStore_CurrenciesDB = {
 					[823] = "27243-0-0-0",
 					[392] = "0-0-0-0",
 					[994] = "8-0-0-20",
-					[824] = "9910-0-0-10000",
+					[824] = "10000-0-0-10000",
 				},
 			},
 			["Default.Turalyon.Knutts"] = {
@@ -350,6 +358,88 @@ DataStore_CurrenciesDB = {
 					[392] = "0-0-0-0",
 					[824] = "8600-0-0-10000",
 					[994] = "2-0-0-20",
+				},
+			},
+			["Default.Turalyon.Skratch"] = {
+				["Currencies"] = {
+					3, -- [1]
+					477956, -- [2]
+					1254792, -- [3]
+					192650, -- [4]
+					396, -- [5]
+					1422, -- [6]
+					17, -- [7]
+					26258, -- [8]
+					45, -- [9]
+					3236, -- [10]
+					115240, -- [11]
+					810, -- [12]
+					33, -- [13]
+					7320, -- [14]
+					174, -- [15]
+					294, -- [16]
+				},
+				["Archeology"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					84, -- [4]
+					44, -- [5]
+					56, -- [6]
+					0, -- [7]
+					0, -- [8]
+					0, -- [9]
+					0, -- [10]
+					0, -- [11]
+					0, -- [12]
+					0, -- [13]
+					0, -- [14]
+					0, -- [15]
+					0, -- [16]
+					0, -- [17]
+					0, -- [18]
+				},
+				["lastUpdate"] = 1469994577,
+				["CurrencyInfo"] = {
+					[395] = "0-0-0-0",
+					[396] = "0-0-10-3000",
+					[390] = "0-0-0-0",
+					[823] = "3734-0-0-0",
+					[392] = "0-0-0-0",
+					[824] = "9803-0-0-10000",
+					[994] = "11-0-0-20",
+				},
+			},
+			["Default.Stormrage.Kateplusnine"] = {
+				["lastUpdate"] = 1470754700,
+				["Archeology"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					0, -- [4]
+					0, -- [5]
+					0, -- [6]
+					0, -- [7]
+					0, -- [8]
+					0, -- [9]
+					0, -- [10]
+					0, -- [11]
+					0, -- [12]
+					0, -- [13]
+					0, -- [14]
+					0, -- [15]
+					0, -- [16]
+					0, -- [17]
+					0, -- [18]
+				},
+				["CurrencyInfo"] = {
+					[395] = "0-0-0-0",
+					[396] = "0-0-0-0",
+					[390] = "0-0-0-0",
+					[823] = "0-0-0-0",
+					[392] = "0-0-0-0",
+					[994] = "0-0-0-0",
+					[824] = "0-0-0-0",
 				},
 			},
 			["Default.Bloodhoof.Dalgrens"] = {
@@ -415,68 +505,6 @@ DataStore_CurrenciesDB = {
 					[994] = "4-0-0-20",
 				},
 			},
-			["Default.Turalyon.Skratch"] = {
-				["Currencies"] = {
-					3, -- [1]
-					477956, -- [2]
-					1254792, -- [3]
-					192650, -- [4]
-					396, -- [5]
-					1422, -- [6]
-					17, -- [7]
-					26258, -- [8]
-					45, -- [9]
-					3236, -- [10]
-					115240, -- [11]
-					810, -- [12]
-					33, -- [13]
-					7320, -- [14]
-					174, -- [15]
-					294, -- [16]
-				},
-				["Archeology"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					84, -- [4]
-					44, -- [5]
-					56, -- [6]
-					0, -- [7]
-					0, -- [8]
-					0, -- [9]
-					0, -- [10]
-					0, -- [11]
-					0, -- [12]
-					0, -- [13]
-					0, -- [14]
-					0, -- [15]
-					0, -- [16]
-					0, -- [17]
-					0, -- [18]
-				},
-				["lastUpdate"] = 1469994577,
-				["CurrencyInfo"] = {
-					[395] = "0-0-0-0",
-					[396] = "0-0-10-3000",
-					[390] = "0-0-0-0",
-					[823] = "3734-0-0-0",
-					[392] = "0-0-0-0",
-					[824] = "9803-0-0-10000",
-					[994] = "11-0-0-20",
-				},
-			},
-			["Default.Stormrage.Ershirley"] = {
-				["lastUpdate"] = 1469599252,
-				["CurrencyInfo"] = {
-					[395] = "0-0-0-0",
-					[396] = "0-0-0-0",
-					[390] = "0-0-0-0",
-					[823] = "0-0-0-0",
-					[392] = "0-0-0-0",
-					[824] = "0-0-0-0",
-					[994] = "0-0-0-0",
-				},
-			},
 			["Default.Turalyon.Callil"] = {
 				["Currencies"] = {
 					3, -- [1]
@@ -539,36 +567,16 @@ DataStore_CurrenciesDB = {
 					[824] = "9905-0-0-10000",
 				},
 			},
-			["Default.Stormrage.Kateplusnine"] = {
-				["lastUpdate"] = 1470754700,
-				["Archeology"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					0, -- [4]
-					0, -- [5]
-					0, -- [6]
-					0, -- [7]
-					0, -- [8]
-					0, -- [9]
-					0, -- [10]
-					0, -- [11]
-					0, -- [12]
-					0, -- [13]
-					0, -- [14]
-					0, -- [15]
-					0, -- [16]
-					0, -- [17]
-					0, -- [18]
-				},
+			["Default.Stormrage.Ershirley"] = {
+				["lastUpdate"] = 1469599252,
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
 					[396] = "0-0-0-0",
 					[390] = "0-0-0-0",
 					[823] = "0-0-0-0",
 					[392] = "0-0-0-0",
-					[994] = "0-0-0-0",
 					[824] = "0-0-0-0",
+					[994] = "0-0-0-0",
 				},
 			},
 			["Default.Turalyon.Titte"] = {
@@ -614,48 +622,6 @@ DataStore_CurrenciesDB = {
 					[392] = "0-0-0-0",
 					[824] = "10000-0-0-10000",
 					[994] = "1-0-0-20",
-				},
-			},
-			["Default.Stormrage.Whyfy"] = {
-				["Currencies"] = {
-					3, -- [1]
-					42244, -- [2]
-					814728, -- [3]
-					4490, -- [4]
-					780, -- [5]
-					17, -- [6]
-					264338, -- [7]
-					112020, -- [8]
-				},
-				["Archeology"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					0, -- [4]
-					0, -- [5]
-					0, -- [6]
-					0, -- [7]
-					0, -- [8]
-					0, -- [9]
-					0, -- [10]
-					0, -- [11]
-					0, -- [12]
-					0, -- [13]
-					0, -- [14]
-					0, -- [15]
-					0, -- [16]
-					0, -- [17]
-					0, -- [18]
-				},
-				["lastUpdate"] = 1470682525,
-				["CurrencyInfo"] = {
-					[395] = "0-0-0-0",
-					[396] = "0-0-0-0",
-					[390] = "0-0-0-0",
-					[823] = "330-0-0-0",
-					[392] = "0-0-0-0",
-					[824] = "6365-0-0-10000",
-					[994] = "0-0-0-0",
 				},
 			},
 			["Default.Turalyon.Lackteight"] = {
@@ -719,22 +685,23 @@ DataStore_CurrenciesDB = {
 					[824] = "0-0-0-0",
 				},
 			},
-			["Default.Turalyon.Shaneequa"] = {
+			["Default.Stormrage.Whyfy"] = {
 				["Currencies"] = {
 					3, -- [1]
-					3844, -- [2]
-					658824, -- [3]
-					32010, -- [4]
-					17, -- [5]
-					4498, -- [6]
-					9620, -- [7]
+					42244, -- [2]
+					803848, -- [3]
+					4490, -- [4]
+					780, -- [5]
+					17, -- [6]
+					264338, -- [7]
+					112020, -- [8]
 				},
 				["Archeology"] = {
 					0, -- [1]
 					0, -- [2]
 					0, -- [3]
-					100, -- [4]
-					25, -- [5]
+					0, -- [4]
+					0, -- [5]
 					0, -- [6]
 					0, -- [7]
 					0, -- [8]
@@ -749,15 +716,15 @@ DataStore_CurrenciesDB = {
 					0, -- [17]
 					0, -- [18]
 				},
-				["lastUpdate"] = 1470416961,
+				["lastUpdate"] = 1470788903,
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
 					[396] = "0-0-0-0",
 					[390] = "0-0-0-0",
-					[823] = "30-0-0-0",
+					[823] = "330-0-0-0",
 					[392] = "0-0-0-0",
+					[824] = "6280-0-0-10000",
 					[994] = "0-0-0-0",
-					[824] = "5147-0-0-10000",
 				},
 			},
 			["Default.Stormrage.Danoh"] = {
@@ -811,6 +778,104 @@ DataStore_CurrenciesDB = {
 					[392] = "0-0-0-0",
 					[824] = "5479-0-0-10000",
 					[994] = "2-0-0-20",
+				},
+			},
+			["Default.Stormrage.Edgelordshue"] = {
+				["lastUpdate"] = 1470762117,
+				["CurrencyInfo"] = {
+					[395] = "0-0-0-0",
+					[396] = "0-0-0-0",
+					[390] = "0-0-0-0",
+					[823] = "0-0-0-0",
+					[392] = "0-0-0-0",
+					[824] = "0-0-0-0",
+					[994] = "0-0-0-0",
+				},
+			},
+			["Default.Turalyon.Shaneequa"] = {
+				["Currencies"] = {
+					3, -- [1]
+					3844, -- [2]
+					658824, -- [3]
+					32010, -- [4]
+					17, -- [5]
+					4498, -- [6]
+					9620, -- [7]
+				},
+				["Archeology"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					100, -- [4]
+					25, -- [5]
+					0, -- [6]
+					0, -- [7]
+					0, -- [8]
+					0, -- [9]
+					0, -- [10]
+					0, -- [11]
+					0, -- [12]
+					0, -- [13]
+					0, -- [14]
+					0, -- [15]
+					0, -- [16]
+					0, -- [17]
+					0, -- [18]
+				},
+				["lastUpdate"] = 1470416961,
+				["CurrencyInfo"] = {
+					[395] = "0-0-0-0",
+					[396] = "0-0-0-0",
+					[390] = "0-0-0-0",
+					[823] = "30-0-0-0",
+					[392] = "0-0-0-0",
+					[994] = "0-0-0-0",
+					[824] = "5147-0-0-10000",
+				},
+			},
+			["Default.Stormrage.Talthalador"] = {
+				["lastUpdate"] = 1470808629,
+				["Archeology"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					0, -- [4]
+					0, -- [5]
+					0, -- [6]
+					0, -- [7]
+					0, -- [8]
+					0, -- [9]
+					0, -- [10]
+					0, -- [11]
+					0, -- [12]
+					0, -- [13]
+					0, -- [14]
+					0, -- [15]
+					0, -- [16]
+					0, -- [17]
+					0, -- [18]
+				},
+				["Currencies"] = {
+					73, -- [1]
+					11082, -- [2]
+					17, -- [3]
+					20, -- [4]
+					23, -- [5]
+					664, -- [6]
+					3, -- [7]
+					85252, -- [8]
+					37768, -- [9]
+					83210, -- [10]
+					12, -- [11]
+				},
+				["CurrencyInfo"] = {
+					[395] = "0-0-0-0",
+					[396] = "0-0-0-0",
+					[390] = "0-0-0-0",
+					[823] = "666-0-0-0",
+					[392] = "0-0-0-0",
+					[824] = "295-0-0-10000",
+					[994] = "0-0-0-0",
 				},
 			},
 		},

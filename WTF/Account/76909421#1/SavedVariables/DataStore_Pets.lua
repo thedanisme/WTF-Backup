@@ -10,14 +10,16 @@ DataStore_PetsDB = {
 		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
 		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
-		["Yanlery - Stormrage"] = "Yanlery - Stormrage",
-		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
 		["Brobies - Stormrage"] = "Brobies - Stormrage",
 		["Callil - Turalyon"] = "Callil - Turalyon",
-		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
-		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
-		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
+		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
+		["Yanlery - Stormrage"] = "Yanlery - Stormrage",
+		["Edgelordshue - Stormrage"] = "Edgelordshue - Stormrage",
+		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
+		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
+		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
+		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
 	},
 	["global"] = {
 		["Reference"] = {
@@ -215,7 +217,7 @@ DataStore_PetsDB = {
 				["lastUpdate"] = 1461389165,
 			},
 			["Default.Stormrage.Emmarosa"] = {
-				["lastUpdate"] = 1470758367,
+				["lastUpdate"] = 1470786691,
 				["CRITTER"] = {
 					135261, -- [1]
 					135259, -- [2]
@@ -337,7 +339,7 @@ DataStore_PetsDB = {
 				},
 			},
 			["Default.Stormrage.Brobies"] = {
-				["lastUpdate"] = 1470682751,
+				["lastUpdate"] = 1470788719,
 				["CRITTER"] = {
 					173547, -- [1]
 					184482, -- [2]
@@ -367,41 +369,6 @@ DataStore_PetsDB = {
 					135258, -- [4]
 					135263, -- [5]
 					26529, -- [6]
-				},
-			},
-			["Default.Bloodhoof.Dalgrens"] = {
-				["lastUpdate"] = 1469995429,
-				["CRITTER"] = {
-					69452, -- [1]
-					40614, -- [2]
-					26533, -- [3]
-					95787, -- [4]
-					124660, -- [5]
-					55068, -- [6]
-					28739, -- [7]
-					69541, -- [8]
-					27570, -- [9]
-					65682, -- [10]
-					39709, -- [11]
-				},
-			},
-			["Default.Stormrage.Yanlery"] = {
-				["lastUpdate"] = 1470515898,
-				["CRITTER"] = {
-					135265, -- [1]
-					92397, -- [2]
-					92395, -- [3]
-					179837, -- [4]
-					172998, -- [5]
-					188084, -- [6]
-					141433, -- [7]
-					15048, -- [8]
-					176140, -- [9]
-					42609, -- [10]
-					164212, -- [11]
-					26045, -- [12]
-					135263, -- [13]
-					39709, -- [14]
 				},
 			},
 			["Default.Turalyon.Skratch"] = {
@@ -455,8 +422,43 @@ DataStore_PetsDB = {
 					26529, -- [46]
 				},
 			},
-			["Default.Stormrage.Ershirley"] = {
-				["lastUpdate"] = 1469599456,
+			["Default.Stormrage.Kateplusnine"] = {
+				["lastUpdate"] = 1470755228,
+			},
+			["Default.Bloodhoof.Dalgrens"] = {
+				["lastUpdate"] = 1469995429,
+				["CRITTER"] = {
+					69452, -- [1]
+					40614, -- [2]
+					26533, -- [3]
+					95787, -- [4]
+					124660, -- [5]
+					55068, -- [6]
+					28739, -- [7]
+					69541, -- [8]
+					27570, -- [9]
+					65682, -- [10]
+					39709, -- [11]
+				},
+			},
+			["Default.Stormrage.Yanlery"] = {
+				["lastUpdate"] = 1470515898,
+				["CRITTER"] = {
+					135265, -- [1]
+					92397, -- [2]
+					92395, -- [3]
+					179837, -- [4]
+					172998, -- [5]
+					188084, -- [6]
+					141433, -- [7]
+					15048, -- [8]
+					176140, -- [9]
+					42609, -- [10]
+					164212, -- [11]
+					26045, -- [12]
+					135263, -- [13]
+					39709, -- [14]
+				},
 			},
 			["Default.Turalyon.Callil"] = {
 				["lastUpdate"] = 1470030037,
@@ -548,20 +550,13 @@ DataStore_PetsDB = {
 					10703, -- [85]
 				},
 			},
-			["Default.Stormrage.Kateplusnine"] = {
-				["lastUpdate"] = 1470755228,
+			["Default.Stormrage.Ershirley"] = {
+				["lastUpdate"] = 1469599456,
 			},
 			["Default.Turalyon.Titte"] = {
 				["lastUpdate"] = 1470432001,
 				["CRITTER"] = {
 					164212, -- [1]
-				},
-			},
-			["Default.Stormrage.Whyfy"] = {
-				["lastUpdate"] = 1470682450,
-				["CRITTER"] = {
-					188084, -- [1]
-					194357, -- [2]
 				},
 			},
 			["Default.Turalyon.Lackteight"] = {
@@ -600,10 +595,11 @@ DataStore_PetsDB = {
 			["Default.Stormrage.Squelben"] = {
 				["lastUpdate"] = 1470356975,
 			},
-			["Default.Turalyon.Shaneequa"] = {
-				["lastUpdate"] = 1470416769,
+			["Default.Stormrage.Whyfy"] = {
+				["lastUpdate"] = 1470788844,
 				["CRITTER"] = {
-					173542, -- [1]
+					188084, -- [1]
+					194357, -- [2]
 				},
 			},
 			["Default.Stormrage.Danoh"] = {
@@ -638,6 +634,18 @@ DataStore_PetsDB = {
 					26541, -- [27]
 					179840, -- [28]
 				},
+			},
+			["Default.Stormrage.Edgelordshue"] = {
+				["lastUpdate"] = 1470762186,
+			},
+			["Default.Turalyon.Shaneequa"] = {
+				["lastUpdate"] = 1470416769,
+				["CRITTER"] = {
+					173542, -- [1]
+				},
+			},
+			["Default.Stormrage.Talthalador"] = {
+				["lastUpdate"] = 1470808629,
 			},
 		},
 	},
