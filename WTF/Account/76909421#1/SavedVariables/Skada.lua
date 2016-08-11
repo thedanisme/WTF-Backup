@@ -62,11 +62,11 @@ SkadaDB = {
 							["a"] = 0.200000047683716,
 							["b"] = 0,
 						},
-						["height"] = 134,
+						["height"] = 110.999984741211,
 						["texture"] = "None",
 					},
 					["hidden"] = true,
-					["y"] = 0,
+					["y"] = 10,
 					["barfont"] = "Expressway",
 					["title"] = {
 						["color"] = {
@@ -89,7 +89,7 @@ SkadaDB = {
 					["barwidth"] = 392.999938964844,
 					["point"] = "TOPRIGHT",
 					["barfontsize"] = 12,
-					["x"] = 0,
+					["x"] = 1514.00006103516,
 				}, -- [1]
 			},
 			["icon"] = {
@@ -165,10 +165,10 @@ SkadaDB = {
 					["mode"] = "Damage",
 				}, -- [1]
 			},
+			["tooltippos"] = "topleft",
 			["icon"] = {
 				["hide"] = true,
 			},
-			["tooltippos"] = "topleft",
 			["showranks"] = false,
 		},
 	},
