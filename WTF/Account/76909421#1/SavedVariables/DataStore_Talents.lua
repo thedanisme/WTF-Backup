@@ -81,7 +81,7 @@ DataStore_TalentsDB = {
 				},
 			},
 			["Default.Stormrage.Talthalador"] = {
-				["lastUpdate"] = 1470949032,
+				["lastUpdate"] = 1471021282,
 				["Specializations"] = {
 					5, -- [1]
 					6, -- [2]

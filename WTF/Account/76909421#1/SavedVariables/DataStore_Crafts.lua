@@ -57,13 +57,13 @@ DataStore_CraftsDB = {
 						["MaxRank"] = 700,
 						["Rank"] = 417,
 					},
-					["Archaeology"] = {
-						["MaxRank"] = 75,
-						["Rank"] = 58,
-					},
 					["Fishing"] = {
 						["MaxRank"] = 700,
 						["Rank"] = 700,
+					},
+					["Archaeology"] = {
+						["MaxRank"] = 75,
+						["Rank"] = 58,
 					},
 					["First Aid"] = {
 						["FullLink"] = "|cffffd000|Htrade:Player-60-0A91880D:158741:129|h[First Aid]|h|r",
@@ -525,7 +525,7 @@ DataStore_CraftsDB = {
 				["Prof1"] = "Skinning",
 			},
 			["Default.Stormrage.Talthalador"] = {
-				["lastUpdate"] = 1470949799,
+				["lastUpdate"] = 1471021282,
 				["Prof2"] = "Engineering",
 				["Professions"] = {
 					["Cooking"] = {
@@ -731,7 +731,7 @@ DataStore_CraftsDB = {
 							176628, -- [192]
 							176620, -- [193]
 						},
-						["Rank"] = 632,
+						["Rank"] = 634,
 					},
 					["Leatherworking"] = {
 						["FullLink"] = "|cffffd000|Htrade:Player-60-0A98990A:158752:165|h[Leatherworking]|h|r",
@@ -761,7 +761,7 @@ DataStore_CraftsDB = {
 							36232, -- [23]
 						},
 						["MaxRank"] = 700,
-						["Rank"] = 142,
+						["Rank"] = 143,
 					},
 					["First Aid"] = {
 						["FullLink"] = "|cffffd000|Htrade:Player-60-0A98990A:158741:129|h[First Aid]|h|r",
@@ -884,13 +884,13 @@ DataStore_CraftsDB = {
 						["MaxRank"] = 700,
 						["Rank"] = 700,
 					},
-					["Archaeology"] = {
-						["MaxRank"] = 75,
-						["Rank"] = 61,
-					},
 					["Fishing"] = {
 						["MaxRank"] = 75,
 						["Rank"] = 2,
+					},
+					["Archaeology"] = {
+						["MaxRank"] = 75,
+						["Rank"] = 61,
 					},
 					["First Aid"] = {
 						["FullLink"] = "|cffffd000|Htrade:Player-60-0A0EEC46:158741:129|h[First Aid]|h|r",

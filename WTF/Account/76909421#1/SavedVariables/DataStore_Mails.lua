@@ -36,8 +36,8 @@ DataStore_MailsDB = {
 				["lastVisitDate"] = "2016/07/22 03:47",
 			},
 			["Default.Stormrage.Talthalador"] = {
-				["lastUpdate"] = 1470949659,
-				["lastVisitDate"] = "2016/08/11 17:07",
+				["lastUpdate"] = 1471015708,
+				["lastVisitDate"] = "2016/08/12 11:28",
 			},
 			["Default.Turalyon.Knutts"] = {
 				["lastUpdate"] = 1469907685,
@@ -67,25 +67,25 @@ DataStore_MailsDB = {
 				["lastUpdate"] = 1470029797,
 				["lastVisitDate"] = "2016/08/01 01:36",
 			},
-			["Default.Turalyon.Titte"] = {
-				["lastUpdate"] = 1470430851,
-				["lastVisitDate"] = "2016/08/05 17:00",
+			["Default.Stormrage.Danoh"] = {
+				["lastUpdate"] = 1470863309,
+				["lastVisitDate"] = "2016/08/10 17:08",
 			},
 			["Default.Stormrage.Whyfy"] = {
 				["lastUpdate"] = 1470788863,
 				["lastVisitDate"] = "2016/08/09 20:27",
 			},
-			["Default.Turalyon.Skratch"] = {
-				["lastUpdate"] = 1469905437,
-				["lastVisitDate"] = "2016/07/30 15:03",
-			},
 			["Default.Stormrage.Brobies"] = {
 				["lastUpdate"] = 1470863607,
 				["lastVisitDate"] = "2016/08/10 17:13",
 			},
-			["Default.Stormrage.Danoh"] = {
-				["lastUpdate"] = 1470863309,
-				["lastVisitDate"] = "2016/08/10 17:08",
+			["Default.Turalyon.Titte"] = {
+				["lastUpdate"] = 1470430851,
+				["lastVisitDate"] = "2016/08/05 17:00",
+			},
+			["Default.Turalyon.Skratch"] = {
+				["lastUpdate"] = 1469905437,
+				["lastVisitDate"] = "2016/07/30 15:03",
 			},
 		},
 	},

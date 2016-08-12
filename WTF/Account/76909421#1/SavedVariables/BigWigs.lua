@@ -29,8 +29,6 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Bosses_Rocketspark and Borka"] = {
-		},
 		["BigWigs_Bosses_Mannoroth"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -86,8 +84,6 @@ BigWigs3DB = {
 		},
 		["BigWigs_Plugins_Raid Icons"] = {
 		},
-		["BigWigs_Bosses_Skylord Tovra"] = {
-		},
 		["BigWigs_Plugins_Bars"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -117,24 +113,6 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Bosses_Kormrok"] = {
-			["profiles"] = {
-				["Default"] = {
-					[181296] = 0,
-				},
-			},
-		},
-		["BigWigs_Plugins_HeroesVoices"] = {
-		},
-		["BigWigs_Bosses_Hellfire High Council"] = {
-			["profiles"] = {
-				["Default"] = {
-					[184366] = 0,
-					[184358] = 0,
-					[184355] = 0,
-				},
-			},
-		},
 		["BigWigs_Plugins_Super Emphasize"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -143,21 +121,19 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Bosses_Nitrogg Thundertower"] = {
-		},
-		["BigWigs_Plugins_Proximity"] = {
+		["BigWigs_Bosses_Kormrok"] = {
 			["profiles"] = {
 				["Default"] = {
-					["posx"] = 819.200453864214,
-					["fontSize"] = 20,
-					["width"] = 144.999908447266,
-					["objects"] = {
-						["background"] = false,
-					},
-					["font"] = "Friz Quadrata TT",
-					["lock"] = true,
-					["height"] = 123,
-					["posy"] = 590.222193111313,
+					[181296] = 0,
+				},
+			},
+		},
+		["BigWigs_Bosses_Hellfire High Council"] = {
+			["profiles"] = {
+				["Default"] = {
+					[184366] = 0,
+					[184358] = 0,
+					[184355] = 0,
 				},
 			},
 		},
@@ -176,20 +152,38 @@ BigWigs3DB = {
 				},
 			},
 		},
+		["BigWigs_Plugins_Proximity"] = {
+			["profiles"] = {
+				["Default"] = {
+					["posx"] = 819.200453864214,
+					["fontSize"] = 20,
+					["width"] = 144.999908447266,
+					["objects"] = {
+						["background"] = false,
+					},
+					["font"] = "Friz Quadrata TT",
+					["lock"] = true,
+					["height"] = 123,
+					["posy"] = 590.222193111313,
+				},
+			},
+		},
 		["BigWigs_Plugins_Respawn"] = {
+		},
+		["LibDualSpec-1.0"] = {
 		},
 		["BigWigs_Plugins_Common Auras"] = {
 			["reset"] = true,
 			["profiles"] = {
 				["Default"] = {
+					["repair"] = 515,
 					[2825] = 515,
 					["feast"] = 515,
 					[106898] = 515,
-					["repair"] = 515,
 				},
 			},
 		},
-		["LibDualSpec-1.0"] = {
+		["BigWigs_Plugins_HeroesVoices"] = {
 		},
 	},
 	["profileKeys"] = {

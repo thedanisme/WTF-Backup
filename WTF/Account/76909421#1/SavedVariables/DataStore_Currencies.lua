@@ -90,12 +90,12 @@ DataStore_CurrenciesDB = {
 				["Garrison Resources"] = 4,
 				["Epicurean's Award"] = 27,
 				["Honor Points"] = 15,
+				["Warlords of Draenor"] = 1,
 				["Conquest Points"] = 14,
-				["Miscellaneous"] = 11,
 				["Apexis Crystal"] = 2,
 				["Legion"] = 36,
 				["Darkmoon Prize Ticket"] = 12,
-				["Warlords of Draenor"] = 1,
+				["Miscellaneous"] = 11,
 				["Mists of Pandaria"] = 22,
 				["Tol Barad Commendation"] = 28,
 				["Champion's Seal"] = 25,
@@ -361,7 +361,7 @@ DataStore_CurrenciesDB = {
 				},
 			},
 			["Default.Stormrage.Talthalador"] = {
-				["lastUpdate"] = 1470949032,
+				["lastUpdate"] = 1471021286,
 				["Archeology"] = {
 					0, -- [1]
 					0, -- [2]
@@ -384,14 +384,14 @@ DataStore_CurrenciesDB = {
 				},
 				["Currencies"] = {
 					73, -- [1]
-					6218, -- [2]
+					6474, -- [2]
 					17, -- [3]
-					35220, -- [4]
+					16020, -- [4]
 					23, -- [5]
 					664, -- [6]
 					3, -- [7]
 					85252, -- [8]
-					114696, -- [9]
+					140296, -- [9]
 					83210, -- [10]
 					12, -- [11]
 				},
@@ -402,7 +402,7 @@ DataStore_CurrenciesDB = {
 					[823] = "666-0-0-0",
 					[392] = "0-0-0-0",
 					[994] = "0-0-0-0",
-					[824] = "896-0-0-10000",
+					[824] = "1096-0-0-10000",
 				},
 			},
 			["Default.Turalyon.Shaneequa"] = {

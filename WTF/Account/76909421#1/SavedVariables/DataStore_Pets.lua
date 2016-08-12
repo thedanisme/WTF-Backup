@@ -375,7 +375,7 @@ DataStore_PetsDB = {
 				},
 			},
 			["Default.Stormrage.Talthalador"] = {
-				["lastUpdate"] = 1470949032,
+				["lastUpdate"] = 1471021536,
 				["CRITTER"] = {
 					179834, -- [1]
 					92395, -- [2]

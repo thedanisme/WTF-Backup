@@ -54,13 +54,13 @@ DataStore_AgendaDB = {
 			},
 			["Default.Stormrage.Talthalador"] = {
 				["DungeonIDs"] = {
-					["Bloodmaul Slag Mines Mythic|302306311"] = "410567|1470949032|0|0",
-					["Auchindoun Mythic|302309718"] = "410567|1470949032|0|0",
-					["Skyreach Mythic|302307796"] = "410567|1470949032|0|0",
-					["Hellfire Citadel Heroic|634151367"] = "410567|1470949032|0|1",
-					["Black Temple 25 Player|634234613"] = "410567|1470949032|0|1",
+					["Bloodmaul Slag Mines Mythic|302306311"] = "338068|1471021536|0|0",
+					["Auchindoun Mythic|302309718"] = "338068|1471021536|0|0",
+					["Skyreach Mythic|302307796"] = "338068|1471021536|0|0",
+					["Hellfire Citadel Heroic|634151367"] = "338068|1471021536|0|1",
+					["Black Temple 25 Player|634234613"] = "338068|1471021536|0|1",
 				},
-				["lastUpdate"] = 1470949032,
+				["lastUpdate"] = 1471021282,
 				["LFGDungeons"] = {
 					["823.Count"] = 1,
 					["823.Blackhand"] = true,

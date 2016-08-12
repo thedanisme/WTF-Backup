@@ -1,9 +1,9 @@
 
 HNFieldPhotographerDB = {
 	["profileKeys"] = {
-		["Kateplusnine - Stormrage"] = "Default",
+		["Priaprisum - Stormreaver"] = "Default",
 		["Callil - Turalyon"] = "Default",
-		["Knutts - Turalyon"] = "Default",
+		["Kateplusnine - Stormrage"] = "Default",
 		["Pryahprism - Turalyon"] = "Default",
 		["Shaneequa - Turalyon"] = "Default",
 		["Callil - Sargeras"] = "Default",
@@ -31,7 +31,7 @@ HNFieldPhotographerDB = {
 		["Dalgrens - Bloodhoof"] = "Default",
 		["Beer - Bloodhoof"] = "Default",
 		["Emmarosa - Stormrage"] = "Default",
-		["Priaprisum - Stormreaver"] = "Default",
+		["Knutts - Turalyon"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
