@@ -9,17 +9,17 @@ DataStore_MailsDB = {
 		["Titte - Turalyon"] = "Titte - Turalyon",
 		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
-		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
-		["Brobies - Stormrage"] = "Brobies - Stormrage",
-		["Callil - Turalyon"] = "Callil - Turalyon",
+		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
+		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
+		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
 		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
 		["Yanlery - Stormrage"] = "Yanlery - Stormrage",
 		["Edgelordshue - Stormrage"] = "Edgelordshue - Stormrage",
 		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
-		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
-		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
-		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
+		["Callil - Turalyon"] = "Callil - Turalyon",
+		["Brobies - Stormrage"] = "Brobies - Stormrage",
+		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
 	},
 	["global"] = {
 		["Characters"] = {
@@ -36,8 +36,8 @@ DataStore_MailsDB = {
 				["lastVisitDate"] = "2016/07/22 03:47",
 			},
 			["Default.Stormrage.Talthalador"] = {
-				["lastUpdate"] = 1470866907,
-				["lastVisitDate"] = "2016/08/10 18:08",
+				["lastUpdate"] = 1470949659,
+				["lastVisitDate"] = "2016/08/11 17:07",
 			},
 			["Default.Turalyon.Knutts"] = {
 				["lastUpdate"] = 1469907685,
@@ -51,13 +51,13 @@ DataStore_MailsDB = {
 				["lastUpdate"] = 1470334117,
 				["Mails"] = {
 					{
-						["icon"] = 134327,
+						["lastCheck"] = 1470334117,
 						["sender"] = "Brew of the Month Club",
 						["subject"] = "Did You Remember Your Brew?",
 						["returned"] = false,
 						["money"] = 0,
 						["text"] = "Warm wishes Yanlery,\n\n   Sometimes you have to go out of your way to find the best brew.  This month's brew has traveled a long way, but we feel that it is well worth it.\n\n   Remember that if you enjoyed this brew sample, you can purchase more from our vendors.\n\nEnjoy!\n\n- Brew of the Month Club",
-						["lastCheck"] = 1470334117,
+						["icon"] = 134327,
 						["daysLeft"] = 29.9990386962891,
 					}, -- [1]
 				},
@@ -67,25 +67,25 @@ DataStore_MailsDB = {
 				["lastUpdate"] = 1470029797,
 				["lastVisitDate"] = "2016/08/01 01:36",
 			},
-			["Default.Stormrage.Danoh"] = {
-				["lastUpdate"] = 1470863309,
-				["lastVisitDate"] = "2016/08/10 17:08",
+			["Default.Turalyon.Titte"] = {
+				["lastUpdate"] = 1470430851,
+				["lastVisitDate"] = "2016/08/05 17:00",
 			},
 			["Default.Stormrage.Whyfy"] = {
 				["lastUpdate"] = 1470788863,
 				["lastVisitDate"] = "2016/08/09 20:27",
 			},
-			["Default.Turalyon.Titte"] = {
-				["lastUpdate"] = 1470430851,
-				["lastVisitDate"] = "2016/08/05 17:00",
+			["Default.Turalyon.Skratch"] = {
+				["lastUpdate"] = 1469905437,
+				["lastVisitDate"] = "2016/07/30 15:03",
 			},
 			["Default.Stormrage.Brobies"] = {
 				["lastUpdate"] = 1470863607,
 				["lastVisitDate"] = "2016/08/10 17:13",
 			},
-			["Default.Turalyon.Skratch"] = {
-				["lastUpdate"] = 1469905437,
-				["lastVisitDate"] = "2016/07/30 15:03",
+			["Default.Stormrage.Danoh"] = {
+				["lastUpdate"] = 1470863309,
+				["lastVisitDate"] = "2016/08/10 17:08",
 			},
 		},
 	},

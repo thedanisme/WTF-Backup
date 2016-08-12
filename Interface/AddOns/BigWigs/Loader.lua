@@ -10,9 +10,8 @@ public.isLegion = isLegion
 -- Generate our version variables
 --
 
+local BIGWIGS_VERSION = 7
 local BIGWIGS_RELEASE_STRING = ""
--- Grab the release string from the TOC file.
-local BIGWIGS_VERSION = tonumber(GetAddOnMetadata("BigWigs", "Version")) or 0
 local versionQueryString, versionResponseString = "Q:%d-%s", "V:%d-%s"
 
 do
@@ -22,7 +21,7 @@ do
 	local RELEASE = "RELEASE"
 
 	local releaseType = RELEASE
-	local myGitHash = "af9d30c" -- The ZIP packager will replace this with the Git hash.
+	local myGitHash = "107453b" -- The ZIP packager will replace this with the Git hash.
 	local releaseString = ""
 	--@alpha@
 	-- The following code will only be present in alpha ZIPs.
