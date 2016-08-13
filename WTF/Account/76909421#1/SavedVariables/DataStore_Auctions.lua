@@ -8,18 +8,19 @@ DataStore_AuctionsDB = {
 		["Squelben - Stormrage"] = "Squelben - Stormrage",
 		["Titte - Turalyon"] = "Titte - Turalyon",
 		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
+		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
+		["Brobies - Stormrage"] = "Brobies - Stormrage",
 		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
-		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
 		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
 		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
 		["Yanlery - Stormrage"] = "Yanlery - Stormrage",
 		["Edgelordshue - Stormrage"] = "Edgelordshue - Stormrage",
 		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
+		["Shhbbyisok - Stormrage"] = "Shhbbyisok - Stormrage",
+		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
 		["Callil - Turalyon"] = "Callil - Turalyon",
-		["Brobies - Stormrage"] = "Brobies - Stormrage",
-		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
 	},
 	["global"] = {
 		["Characters"] = {
@@ -43,20 +44,12 @@ DataStore_AuctionsDB = {
 				["lastUpdate"] = 1469900969,
 				["lastVisitDate"] = "2016/07/30 13:49",
 			},
-			["Default.Stormrage.Danoh"] = {
-				["lastUpdate"] = 1469993168,
-				["lastVisitDate"] = "2016/07/31 15:26",
-			},
-			["Default.Turalyon.Titte"] = {
-				["lastUpdate"] = 1469638742,
-				["lastVisitDate"] = "2016/07/27 12:59",
-			},
 			["Default.Stormrage.Brobies"] = {
 				["lastUpdate"] = 1470026604,
 				["lastVisitDate"] = "2016/08/01 00:43",
 			},
 			["Default.Stormrage.Talthalador"] = {
-				["lastUpdate"] = 1470949651,
+				["lastUpdate"] = 1471041081,
 				["Auctions"] = {
 					"1|115526|1||521550|549000|4", -- [1]
 					"1|115526|1||521550|549000|4", -- [2]
@@ -98,42 +91,16 @@ DataStore_AuctionsDB = {
 					"1|116168|1||187625|197500|4", -- [38]
 					"1|116168|1||187625|197500|4", -- [39]
 					"1|116168|1||187625|197500|4", -- [40]
-					"0|115526|1||521550|549000|4", -- [41]
-					"0|115526|1||521550|549000|4", -- [42]
-					"0|22578|1||9880|10400|4", -- [43]
-					"0|22578|1||9880|10400|4", -- [44]
-					"0|22578|1||9880|10400|4", -- [45]
-					"0|22578|1||9880|10400|4", -- [46]
-					"0|22578|1||9880|10400|4", -- [47]
-					"0|22578|1||9880|10400|4", -- [48]
-					"0|22578|1||9880|10400|4", -- [49]
-					"0|21885|1||233700|246000|4", -- [50]
-					"0|32227|1||279300|294000|4", -- [51]
-					"0|32227|1||279300|294000|4", -- [52]
-					"0|32249|1||32300|34000|4", -- [53]
-					"0|32249|1||32300|34000|4", -- [54]
-					"0|32231|1||37430|39400|4", -- [55]
-					"0|32231|1||37430|39400|4", -- [56]
-					"0|32231|1||37430|39400|4", -- [57]
-					"0|31329|1||13889000|14620000|4", -- [58]
-					"0|32230|1||35150|37000|4", -- [59]
-					"0|32230|1||35150|37000|4", -- [60]
-					"0|32230|1||35150|37000|4", -- [61]
-					"0|87508|1||14744000|15520000|4", -- [62]
-					"0|116165|1||521550|549000|4", -- [63]
-					"0|116165|1||521550|549000|4", -- [64]
-					"0|116165|1||521550|549000|4", -- [65]
-					"0|116168|1||187625|197500|4", -- [66]
-					"0|116168|1||187625|197500|4", -- [67]
-					"0|116168|1||187625|197500|4", -- [68]
-					"0|116168|1||187625|197500|4", -- [69]
-					"0|116168|1||187625|197500|4", -- [70]
-					"0|116168|1||187625|197500|4", -- [71]
-					"0|116168|1||187625|197500|4", -- [72]
-					"0|116168|1||187625|197500|4", -- [73]
-					"0|116168|1||187625|197500|4", -- [74]
 				},
-				["lastVisitDate"] = "2016/08/11 17:07",
+				["lastVisitDate"] = "2016/08/12 18:31",
+			},
+			["Default.Turalyon.Titte"] = {
+				["lastUpdate"] = 1469638742,
+				["lastVisitDate"] = "2016/07/27 12:59",
+			},
+			["Default.Stormrage.Danoh"] = {
+				["lastUpdate"] = 1469993168,
+				["lastVisitDate"] = "2016/07/31 15:26",
 			},
 		},
 	},

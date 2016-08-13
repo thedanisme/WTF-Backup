@@ -9,6 +9,7 @@ BadPetDB = {
 		["Pastaliar - Stormrage"] = "Default",
 		["Yanlery - Stormrage"] = "Default",
 		["Retardar - Stormrage"] = "Default",
+		["Shhbbyisok - Stormrage"] = "Default",
 		["Emmarosa - Stormrage"] = "Default",
 		["Whyfy - Stormrage"] = "Default",
 		["Priaprisum - Stormreaver"] = "Default",

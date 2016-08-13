@@ -1,9 +1,3 @@
-VER 3 0100000000000002 " " "INV_Misc_QuestionMark"
-#showtooltip
-/stopcasting
-/stopcasting
-/use Kill Shot
-END
 VER 3 0100000000000003 " " "INV_Misc_QuestionMark"
 #showtooltip
 /stopcasting
@@ -20,4 +14,10 @@ VER 3 0100000000000001 " " "INV_Misc_QuestionMark"
 /stopcasting
 /stopcasting
 /use Counter Shot
+END
+VER 3 0100000000000002 " " "INV_Misc_QuestionMark"
+#showtooltip
+/stopcasting
+/stopcasting
+/use Kill Shot
 END
