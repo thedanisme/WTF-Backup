@@ -8,9 +8,9 @@ DataStore_AgendaDB = {
 		["Squelben - Stormrage"] = "Squelben - Stormrage",
 		["Titte - Turalyon"] = "Titte - Turalyon",
 		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
-		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
+		["Callil - Turalyon"] = "Callil - Turalyon",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
-		["Brobies - Stormrage"] = "Brobies - Stormrage",
+		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
 		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
 		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
@@ -19,8 +19,8 @@ DataStore_AgendaDB = {
 		["Edgelordshue - Stormrage"] = "Edgelordshue - Stormrage",
 		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
 		["Shhbbyisok - Stormrage"] = "Shhbbyisok - Stormrage",
-		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
-		["Callil - Turalyon"] = "Callil - Turalyon",
+		["Brobies - Stormrage"] = "Brobies - Stormrage",
+		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
 	},
 	["global"] = {
 		["Options"] = {
@@ -50,8 +50,38 @@ DataStore_AgendaDB = {
 			["Default.Stormrage.Brobies"] = {
 				["lastUpdate"] = 1471050334,
 			},
-			["Default.Turalyon.Skratch"] = {
-				["lastUpdate"] = 1469994525,
+			["Default.Stormrage.Talthalador"] = {
+				["DungeonIDs"] = {
+					["Icecrown Citadel 25 Player (Heroic)|634586831"] = "239789|1471119811|0|1",
+					["Bloodmaul Slag Mines Mythic|302306311"] = "239789|1471119811|0|0",
+					["Auchindoun Mythic|302309718"] = "239789|1471119811|0|0",
+					["Skyreach Mythic|302307796"] = "239789|1471119811|0|0",
+					["Hellfire Citadel Heroic|634151367"] = "239789|1471119811|0|1",
+					["Black Temple 25 Player|634234613"] = "239789|1471119811|0|1",
+				},
+				["lastUpdate"] = 1471119811,
+				["LFGDungeons"] = {
+					["985.Count"] = 3,
+					["984.Socrethar the Eternal"] = true,
+					["849.Kargath Bladefist"] = true,
+					["986.Count"] = 1,
+					["839.Norushen"] = true,
+					["986.Archimonde"] = true,
+					["985.Mannoroth"] = true,
+					["984.Shadow-Lord Iskar"] = true,
+					["839.Count"] = 3,
+					["849.Count"] = 3,
+					["823.Blackhand"] = true,
+					["984.Tyrant Velhari"] = true,
+					["985.Fel Lord Zakuun"] = true,
+					["839.Immerseus"] = true,
+					["984.Count"] = 3,
+					["839.Fallen Protectors"] = true,
+					["985.Xhul'horac"] = true,
+					["823.Count"] = 1,
+					["849.The Butcher"] = true,
+					["849.Brackenspore"] = true,
+				},
 			},
 			["Default.Turalyon.Knutts"] = {
 				["lastUpdate"] = 1469912067,
@@ -59,8 +89,8 @@ DataStore_AgendaDB = {
 			["Default.Stormrage.Shhbbyisok"] = {
 				["lastUpdate"] = 1471049873,
 			},
-			["Default.Stormrage.Kateplusnine"] = {
-				["lastUpdate"] = 1470756353,
+			["Default.Turalyon.Shaneequa"] = {
+				["lastUpdate"] = 1461602628,
 			},
 			["Default.Bloodhoof.Dalgrens"] = {
 				["lastUpdate"] = 1469995428,
@@ -74,11 +104,11 @@ DataStore_AgendaDB = {
 			["Default.Stormrage.Ershirley"] = {
 				["lastUpdate"] = 1469599252,
 			},
-			["Default.Turalyon.Titte"] = {
-				["lastUpdate"] = 1470432001,
+			["Default.Stormrage.Edgelordshue"] = {
+				["lastUpdate"] = 1470762217,
 			},
-			["Default.Turalyon.Lackteight"] = {
-				["lastUpdate"] = 1471053493,
+			["Default.Stormrage.Danoh"] = {
+				["lastUpdate"] = 1471050193,
 			},
 			["Default.Stormrage.Squelben"] = {
 				["lastUpdate"] = 1470356975,
@@ -86,37 +116,17 @@ DataStore_AgendaDB = {
 			["Default.Stormrage.Whyfy"] = {
 				["lastUpdate"] = 1470788843,
 			},
-			["Default.Stormrage.Danoh"] = {
-				["lastUpdate"] = 1471050193,
+			["Default.Turalyon.Lackteight"] = {
+				["lastUpdate"] = 1471053493,
 			},
-			["Default.Stormrage.Edgelordshue"] = {
-				["lastUpdate"] = 1470762217,
+			["Default.Turalyon.Titte"] = {
+				["lastUpdate"] = 1470432001,
 			},
-			["Default.Turalyon.Shaneequa"] = {
-				["lastUpdate"] = 1461602628,
+			["Default.Stormrage.Kateplusnine"] = {
+				["lastUpdate"] = 1470756353,
 			},
-			["Default.Stormrage.Talthalador"] = {
-				["DungeonIDs"] = {
-					["Icecrown Citadel 25 Player (Heroic)|634586831"] = "305173|1471054426|0|1",
-					["Bloodmaul Slag Mines Mythic|302306311"] = "305173|1471054426|0|0",
-					["Auchindoun Mythic|302309718"] = "305173|1471054426|0|0",
-					["Skyreach Mythic|302307796"] = "305173|1471054426|0|0",
-					["Black Temple 25 Player|634234613"] = "305173|1471054426|0|1",
-					["Hellfire Citadel Heroic|634151367"] = "305173|1471054426|0|1",
-				},
-				["lastUpdate"] = 1471055903,
-				["LFGDungeons"] = {
-					["984.Tyrant Velhari"] = true,
-					["984.Socrethar the Eternal"] = true,
-					["849.Kargath Bladefist"] = true,
-					["984.Shadow-Lord Iskar"] = true,
-					["984.Count"] = 3,
-					["823.Count"] = 1,
-					["849.Count"] = 3,
-					["823.Blackhand"] = true,
-					["849.The Butcher"] = true,
-					["849.Brackenspore"] = true,
-				},
+			["Default.Turalyon.Skratch"] = {
+				["lastUpdate"] = 1469994525,
 			},
 		},
 	},

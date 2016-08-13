@@ -16,33 +16,35 @@ RKDatabase = {
 		["Pryahprism - Turalyon"] = "Default",
 		["Shaneequa - Turalyon"] = "Default",
 		["Callil - Turalyon"] = "Default",
-		["Talthalador - Stormrage"] = "Default",
+		["Horny - Bloodhoof"] = "Default",
 		["Brobies - Stormrage"] = "Default",
 		["Kateplusnine - Stormrage"] = "Default",
 		["Ershirley - Stormrage"] = "Default",
-		["Aranduh - Bloodhoof"] = "Default",
+		["Knutts - Turalyon"] = "Default",
 		["Bruhbies - Stormrage"] = "Default",
 		["Rotator - Turalyon"] = "Default",
 		["Llamama - Stormrage"] = "Default",
 		["Barewbies - Stormrage"] = "Default",
-		["Bloodcox - Stormrage"] = "Default",
+		["Brewbies - Turalyon"] = "Default",
 		["Titt - Turalyon"] = "Default",
 		["Rosabria - Sargeras"] = "Default",
 		["Skratch - Turalyon"] = "Default",
-		["Lackteight - Turalyon"] = "Default",
-		["Arando - Bloodhoof"] = "Default",
 		["Fupa - Stormrage"] = "Default",
+		["Arando - Bloodhoof"] = "Default",
+		["Lackteight - Turalyon"] = "Default",
 		["Danoh - Stormrage"] = "Default",
-		["Brewbies - Turalyon"] = "Default",
-		["Knutts - Turalyon"] = "Default",
+		["Bloodcox - Stormrage"] = "Default",
+		["Aranduh - Bloodhoof"] = "Default",
 		["Edgelordshue - Stormrage"] = "Default",
 		["Dalgrens - Bloodhoof"] = "Default",
 		["Beer - Bloodhoof"] = "Default",
-		["Horny - Bloodhoof"] = "Default",
+		["Talthalador - Stormrage"] = "Default",
 		["Jimbo - Ner'zhul"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
+			["firstLoad"] = false,
+			["prevDiffShown"] = 7,
 			["recordTimes"] = {
 				["Highmaul"] = {
 					["Brackenspore"] = {
@@ -84,24 +86,24 @@ RKDatabase = {
 					["Hans'gar and Franzok"] = {
 						[7] = 136,
 					},
-					["Kromog"] = {
-						[7] = 140,
+					["The Blast Furnace"] = {
+						[7] = 265,
+						[14] = 518,
 					},
 					["Beastlord Darmac"] = {
 						[7] = 182,
 						[14] = 305,
 					},
-					["The Iron Maidens"] = {
-						[7] = 246,
-						[14] = 445,
-					},
 					["Blackhand"] = {
 						[7] = 151,
 						[14] = 294,
 					},
-					["The Blast Furnace"] = {
-						[7] = 265,
-						[14] = 518,
+					["The Iron Maidens"] = {
+						[7] = 246,
+						[14] = 445,
+					},
+					["Kromog"] = {
+						[7] = 140,
 					},
 				},
 				["Hellfire Citadel"] = {
@@ -117,13 +119,13 @@ RKDatabase = {
 					},
 					["Xhul'horac"] = {
 						[14] = 152,
-						[7] = 260,
+						[7] = 224,
 						[15] = 189,
 					},
 					["Fel Lord Zakuun"] = {
 						[14] = 97,
 						[15] = 195,
-						[7] = 149,
+						[7] = 141,
 					},
 					["Iron Reaver"] = {
 						[14] = 55,
@@ -137,7 +139,7 @@ RKDatabase = {
 					},
 					["Mannoroth"] = {
 						[14] = 344,
-						[7] = 396,
+						[7] = 362,
 						[15] = 335,
 					},
 					["Socrethar the Eternal"] = {
@@ -145,38 +147,34 @@ RKDatabase = {
 						[15] = 215,
 						[7] = 236,
 					},
-					["Kormrok"] = {
-						[14] = 104,
-						[7] = 100,
-						[15] = 124,
-					},
-					["Shadow-Lord Iskar"] = {
-						[14] = 351,
-						[15] = 338,
-						[7] = 314,
-					},
-					["Hellfire Assault"] = {
-						[14] = 290,
-						[7] = 267,
-						[15] = 338,
+					["Archimonde"] = {
+						[14] = 315,
+						[7] = 318,
+						[15] = 235,
 					},
 					["Tyrant Velhari"] = {
 						[14] = 196,
 						[15] = 233,
 						[7] = 232,
 					},
-					["Archimonde"] = {
-						[14] = 315,
-						[7] = 318,
-						[15] = 235,
+					["Hellfire Assault"] = {
+						[14] = 290,
+						[7] = 267,
+						[15] = 338,
+					},
+					["Shadow-Lord Iskar"] = {
+						[14] = 351,
+						[15] = 338,
+						[7] = 314,
+					},
+					["Kormrok"] = {
+						[14] = 104,
+						[7] = 100,
+						[15] = 124,
 					},
 				},
 			},
-			["firstLoad"] = false,
 			["diffShown"] = 7,
-			["prevDiffShown"] = 7,
-			["prevTierShown"] = 17,
-			["tierShown"] = 17,
 		},
 	},
 }

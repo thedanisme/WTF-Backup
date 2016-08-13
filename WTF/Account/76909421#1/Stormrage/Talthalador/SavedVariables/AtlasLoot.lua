@@ -4,14 +4,16 @@ AtlasLootCharDB = {
 	["GUI"] = {
 		["classFilter"] = true,
 		["selected"] = {
-			[5] = 0,
-			[2] = "ArgentTournament",
-			[4] = 1,
+			"AtlasLoot_MistsofPandaria", -- [1]
+			"SiegeofOrgrimmar", -- [2]
+			14, -- [3]
+			1, -- [4]
+			0, -- [5]
 		},
 		["point"] = {
 			[3] = "CENTER",
-			[4] = 6.565175135619940e-005,
-			[5] = -3.282587567809970e-005,
+			[4] = -12.9998998641968,
+			[5] = -3.00005507469177,
 		},
 	},
 	["MiniMapButton"] = {
