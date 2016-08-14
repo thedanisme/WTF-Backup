@@ -2,12 +2,11 @@
 AtlasLootCharDB = {
 	["__addonrevision"] = 4325,
 	["GUI"] = {
-		["classFilter"] = true,
 		["selected"] = {
-			"AtlasLoot_MistsofPandaria", -- [1]
-			"SiegeofOrgrimmar", -- [2]
-			14, -- [3]
-			1, -- [4]
+			nil, -- [1]
+			"IronDocks", -- [2]
+			7, -- [3]
+			13, -- [4]
 			0, -- [5]
 		},
 		["point"] = {

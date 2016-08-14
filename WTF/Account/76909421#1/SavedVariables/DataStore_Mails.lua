@@ -8,9 +8,9 @@ DataStore_MailsDB = {
 		["Squelben - Stormrage"] = "Squelben - Stormrage",
 		["Titte - Turalyon"] = "Titte - Turalyon",
 		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
-		["Callil - Turalyon"] = "Callil - Turalyon",
+		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
-		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
+		["Brobies - Stormrage"] = "Brobies - Stormrage",
 		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
 		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
@@ -19,8 +19,8 @@ DataStore_MailsDB = {
 		["Edgelordshue - Stormrage"] = "Edgelordshue - Stormrage",
 		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
 		["Shhbbyisok - Stormrage"] = "Shhbbyisok - Stormrage",
-		["Brobies - Stormrage"] = "Brobies - Stormrage",
-		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
+		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
+		["Callil - Turalyon"] = "Callil - Turalyon",
 	},
 	["global"] = {
 		["Characters"] = {
@@ -32,13 +32,13 @@ DataStore_MailsDB = {
 				["lastUpdate"] = 1471050532,
 				["Mails"] = {
 					{
-						["icon"] = 134327,
+						["lastCheck"] = 1471050532,
 						["sender"] = "Merreck Vonder",
 						["subject"] = "Charting a Course - Alliance",
 						["returned"] = false,
 						["money"] = 0,
 						["text"] = "Admiral,\r\n\r\nYou have proven yourself to be an excellent commander of our fleet.  Take this gift as a token of my appreciation.\r\n\r\nWear it proudly.\r\n\r\n--Merreck Vonder",
-						["lastCheck"] = 1471050532,
+						["icon"] = 134327,
 						["daysLeft"] = 29.999547958374,
 					}, -- [1]
 				},
@@ -56,33 +56,25 @@ DataStore_MailsDB = {
 				["lastUpdate"] = 1469907685,
 				["lastVisitDate"] = "2016/07/30 15:41",
 			},
-			["Default.Turalyon.Lackteight"] = {
-				["lastUpdate"] = 1471051041,
-				["Mails"] = {
-					{
-						["icon"] = 134327,
-						["sender"] = "Rolosh Wavechaser",
-						["subject"] = "Charting a Course - Horde",
-						["returned"] = false,
-						["money"] = 0,
-						["text"] = "Admiral,\r\n\r\nYou have proven yourself to be an excellent commander of our fleet.  Take this gift as a token of my appreciation.\r\n\r\nWear it proudly.\r\n\r\n--Rolosh Wavechaser",
-						["lastCheck"] = 1471051041,
-						["daysLeft"] = 29.9995250701904,
-					}, -- [1]
-				},
-				["lastVisitDate"] = "2016/08/12 21:17",
+			["Default.Turalyon.Titte"] = {
+				["lastUpdate"] = 1470430851,
+				["lastVisitDate"] = "2016/08/05 17:00",
+			},
+			["Default.Bloodhoof.Dalgrens"] = {
+				["lastUpdate"] = 1469173983,
+				["lastVisitDate"] = "2016/07/22 03:53",
 			},
 			["Default.Stormrage.Yanlery"] = {
 				["lastUpdate"] = 1470334117,
 				["Mails"] = {
 					{
-						["lastCheck"] = 1470334117,
+						["icon"] = 134327,
 						["sender"] = "Brew of the Month Club",
 						["subject"] = "Did You Remember Your Brew?",
 						["returned"] = false,
 						["money"] = 0,
 						["text"] = "Warm wishes Yanlery,\n\n   Sometimes you have to go out of your way to find the best brew.  This month's brew has traveled a long way, but we feel that it is well worth it.\n\n   Remember that if you enjoyed this brew sample, you can purchase more from our vendors.\n\nEnjoy!\n\n- Brew of the Month Club",
-						["icon"] = 134327,
+						["lastCheck"] = 1470334117,
 						["daysLeft"] = 29.9990386962891,
 					}, -- [1]
 				},
@@ -92,29 +84,37 @@ DataStore_MailsDB = {
 				["lastUpdate"] = 1470863309,
 				["lastVisitDate"] = "2016/08/10 17:08",
 			},
-			["Default.Stormrage.Talthalador"] = {
-				["lastUpdate"] = 1471111415,
-				["lastVisitDate"] = "2016/08/13 14:03",
-			},
-			["Default.Turalyon.Titte"] = {
-				["lastUpdate"] = 1470430851,
-				["lastVisitDate"] = "2016/08/05 17:00",
+			["Default.Turalyon.Callil"] = {
+				["lastUpdate"] = 1470029797,
+				["lastVisitDate"] = "2016/08/01 01:36",
 			},
 			["Default.Stormrage.Whyfy"] = {
 				["lastUpdate"] = 1470788863,
 				["lastVisitDate"] = "2016/08/09 20:27",
 			},
-			["Default.Bloodhoof.Dalgrens"] = {
-				["lastUpdate"] = 1469173983,
-				["lastVisitDate"] = "2016/07/22 03:53",
+			["Default.Turalyon.Lackteight"] = {
+				["lastUpdate"] = 1471051041,
+				["Mails"] = {
+					{
+						["lastCheck"] = 1471051041,
+						["sender"] = "Rolosh Wavechaser",
+						["subject"] = "Charting a Course - Horde",
+						["returned"] = false,
+						["money"] = 0,
+						["text"] = "Admiral,\r\n\r\nYou have proven yourself to be an excellent commander of our fleet.  Take this gift as a token of my appreciation.\r\n\r\nWear it proudly.\r\n\r\n--Rolosh Wavechaser",
+						["icon"] = 134327,
+						["daysLeft"] = 29.9995250701904,
+					}, -- [1]
+				},
+				["lastVisitDate"] = "2016/08/12 21:17",
 			},
 			["Default.Turalyon.Skratch"] = {
 				["lastUpdate"] = 1469905437,
 				["lastVisitDate"] = "2016/07/30 15:03",
 			},
-			["Default.Turalyon.Callil"] = {
-				["lastUpdate"] = 1470029797,
-				["lastVisitDate"] = "2016/08/01 01:36",
+			["Default.Stormrage.Talthalador"] = {
+				["lastUpdate"] = 1471151002,
+				["lastVisitDate"] = "2016/08/14 01:03",
 			},
 		},
 	},

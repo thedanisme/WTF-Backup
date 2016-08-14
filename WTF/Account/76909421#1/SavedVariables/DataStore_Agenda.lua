@@ -8,9 +8,9 @@ DataStore_AgendaDB = {
 		["Squelben - Stormrage"] = "Squelben - Stormrage",
 		["Titte - Turalyon"] = "Titte - Turalyon",
 		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
-		["Callil - Turalyon"] = "Callil - Turalyon",
+		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
-		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
+		["Brobies - Stormrage"] = "Brobies - Stormrage",
 		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
 		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
@@ -19,8 +19,8 @@ DataStore_AgendaDB = {
 		["Edgelordshue - Stormrage"] = "Edgelordshue - Stormrage",
 		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
 		["Shhbbyisok - Stormrage"] = "Shhbbyisok - Stormrage",
-		["Brobies - Stormrage"] = "Brobies - Stormrage",
-		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
+		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
+		["Callil - Turalyon"] = "Callil - Turalyon",
 	},
 	["global"] = {
 		["Options"] = {
@@ -50,16 +50,66 @@ DataStore_AgendaDB = {
 			["Default.Stormrage.Brobies"] = {
 				["lastUpdate"] = 1471050334,
 			},
+			["Default.Turalyon.Skratch"] = {
+				["lastUpdate"] = 1469994525,
+			},
+			["Default.Turalyon.Knutts"] = {
+				["lastUpdate"] = 1469912067,
+			},
+			["Default.Stormrage.Shhbbyisok"] = {
+				["lastUpdate"] = 1471049873,
+			},
+			["Default.Stormrage.Kateplusnine"] = {
+				["lastUpdate"] = 1470756353,
+			},
+			["Default.Bloodhoof.Dalgrens"] = {
+				["lastUpdate"] = 1469995428,
+			},
+			["Default.Stormrage.Yanlery"] = {
+				["lastUpdate"] = 1471050783,
+			},
+			["Default.Turalyon.Callil"] = {
+				["lastUpdate"] = 1470030037,
+			},
+			["Default.Stormrage.Ershirley"] = {
+				["lastUpdate"] = 1469599252,
+			},
+			["Default.Turalyon.Titte"] = {
+				["lastUpdate"] = 1470432001,
+			},
+			["Default.Turalyon.Lackteight"] = {
+				["lastUpdate"] = 1471053493,
+			},
+			["Default.Stormrage.Squelben"] = {
+				["lastUpdate"] = 1470356975,
+			},
+			["Default.Stormrage.Whyfy"] = {
+				["lastUpdate"] = 1470788843,
+			},
+			["Default.Stormrage.Danoh"] = {
+				["lastUpdate"] = 1471050193,
+			},
+			["Default.Stormrage.Edgelordshue"] = {
+				["lastUpdate"] = 1470762217,
+			},
+			["Default.Turalyon.Shaneequa"] = {
+				["lastUpdate"] = 1461602628,
+			},
 			["Default.Stormrage.Talthalador"] = {
 				["DungeonIDs"] = {
-					["Icecrown Citadel 25 Player (Heroic)|634586831"] = "239789|1471119811|0|1",
-					["Bloodmaul Slag Mines Mythic|302306311"] = "239789|1471119811|0|0",
-					["Auchindoun Mythic|302309718"] = "239789|1471119811|0|0",
-					["Skyreach Mythic|302307796"] = "239789|1471119811|0|0",
-					["Hellfire Citadel Heroic|634151367"] = "239789|1471119811|0|1",
-					["Black Temple 25 Player|634234613"] = "239789|1471119811|0|1",
+					["Icecrown Citadel 25 Player (Heroic)|634586831"] = "207890|1471151711|0|1",
+					["Iron Docks Mythic|634822908"] = "207890|1471151711|0|0",
+					["Grimrail Depot Mythic|634830802"] = "207890|1471151711|0|0",
+					["Hellfire Citadel Heroic|634151367"] = "207890|1471151711|0|1",
+					["The Everbloom Mythic|634827862"] = "207890|1471151711|0|0",
+					["Firelands 25 Player (Heroic)|634814453"] = "207890|1471151711|0|1",
+					["Bloodmaul Slag Mines Mythic|302306311"] = "207890|1471151711|0|0",
+					["Auchindoun Mythic|302309718"] = "207890|1471151711|0|0",
+					["Shadowmoon Burial Grounds Mythic|634834132"] = "207890|1471151711|0|0",
+					["Skyreach Mythic|302307796"] = "207890|1471151711|0|0",
+					["Black Temple 25 Player|634234613"] = "207890|1471151711|0|1",
 				},
-				["lastUpdate"] = 1471119811,
+				["lastUpdate"] = 1471151711,
 				["LFGDungeons"] = {
 					["985.Count"] = 3,
 					["984.Socrethar the Eternal"] = true,
@@ -82,51 +132,6 @@ DataStore_AgendaDB = {
 					["849.The Butcher"] = true,
 					["849.Brackenspore"] = true,
 				},
-			},
-			["Default.Turalyon.Knutts"] = {
-				["lastUpdate"] = 1469912067,
-			},
-			["Default.Stormrage.Shhbbyisok"] = {
-				["lastUpdate"] = 1471049873,
-			},
-			["Default.Turalyon.Shaneequa"] = {
-				["lastUpdate"] = 1461602628,
-			},
-			["Default.Bloodhoof.Dalgrens"] = {
-				["lastUpdate"] = 1469995428,
-			},
-			["Default.Stormrage.Yanlery"] = {
-				["lastUpdate"] = 1471050783,
-			},
-			["Default.Turalyon.Callil"] = {
-				["lastUpdate"] = 1470030037,
-			},
-			["Default.Stormrage.Ershirley"] = {
-				["lastUpdate"] = 1469599252,
-			},
-			["Default.Stormrage.Edgelordshue"] = {
-				["lastUpdate"] = 1470762217,
-			},
-			["Default.Stormrage.Danoh"] = {
-				["lastUpdate"] = 1471050193,
-			},
-			["Default.Stormrage.Squelben"] = {
-				["lastUpdate"] = 1470356975,
-			},
-			["Default.Stormrage.Whyfy"] = {
-				["lastUpdate"] = 1470788843,
-			},
-			["Default.Turalyon.Lackteight"] = {
-				["lastUpdate"] = 1471053493,
-			},
-			["Default.Turalyon.Titte"] = {
-				["lastUpdate"] = 1470432001,
-			},
-			["Default.Stormrage.Kateplusnine"] = {
-				["lastUpdate"] = 1470756353,
-			},
-			["Default.Turalyon.Skratch"] = {
-				["lastUpdate"] = 1469994525,
 			},
 		},
 	},
