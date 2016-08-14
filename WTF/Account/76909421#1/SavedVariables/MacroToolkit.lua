@@ -169,6 +169,12 @@ MacroToolkitDB = {
 				},
 			},
 		},
+		["Dosnutz - Stormrage"] = {
+			["macros"] = {
+			},
+			["backups"] = {
+			},
+		},
 		["Yanlery - Stormrage"] = {
 			["macros"] = {
 				[121] = {
@@ -346,9 +352,9 @@ MacroToolkitDB = {
 		["Pryahprism - Turalyon"] = {
 			["macros"] = {
 				[121] = {
-					["icon"] = "134400",
-					["name"] = " ",
-					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Remove Curse\n",
+					["icon"] = "135841",
+					["name"] = "Ice Block",
+					["body"] = "#showtooltip Ice Block\n/cancelaura Ice Block\n/use Ice Block\n",
 				},
 			},
 			["backups"] = {
@@ -1169,8 +1175,8 @@ MacroToolkitDB = {
 		["Talthalador - Stormrage"] = {
 			["macros"] = {
 				[121] = {
-					["icon"] = "1344654",
 					["name"] = " ",
+					["icon"] = "1344654",
 					["body"] = "#showtooltip\n/use [@mouseover,harm][]Torment\n",
 				},
 			},
@@ -1236,6 +1242,7 @@ MacroToolkitDB = {
 		["Titte - Turalyon"] = "Default",
 		["Iphone - Bloodhoof"] = "profile",
 		["Pastaliar - Stormrage"] = "profile",
+		["Dosnutz - Stormrage"] = "profile",
 		["Yanlery - Stormrage"] = "Default",
 		["Retardar - Stormrage"] = "profile",
 		["Shhbbyisok - Stormrage"] = "profile",

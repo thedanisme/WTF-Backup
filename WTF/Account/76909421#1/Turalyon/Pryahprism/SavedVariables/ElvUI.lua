@@ -1,5 +1,18 @@
 
 ElvCharacterDB = {
+	["ChatEditHistory"] = {
+		"/wa", -- [1]
+		"/xct", -- [2]
+		"/1 they do... on aug 30", -- [3]
+		"/played", -- [4]
+		"/m", -- [5]
+	},
+	["BodyGuard"] = {
+		["Active"] = false,
+		["Health"] = 0,
+		["MaxHealth"] = 0,
+		["IsInValidZone"] = true,
+	},
 	["ChatLog"] = {
 		["1447514172.982"] = {
 			"stand on the elevator", -- [1]
@@ -199,19 +212,19 @@ ElvCharacterDB = {
 			nil, -- [19]
 			"CHAT_MSG_INSTANCE_CHAT", -- [20]
 		},
-		["1447514538.302"] = {
-			"aw shit", -- [1]
-			"Oogabooga-Gurubashi", -- [2]
+		["1447514258.507"] = {
+			"go for it", -- [1]
+			"Rerejuju-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Oogabooga-Gurubashi", -- [5]
+			"Rerejuju-Dalaran", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			706, -- [11]
-			"Player-1136-076334DD", -- [12]
+			661, -- [11]
+			"Player-3683-08BE408E", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
@@ -220,6 +233,28 @@ ElvCharacterDB = {
 			nil, -- [18]
 			nil, -- [19]
 			"CHAT_MSG_INSTANCE_CHAT", -- [20]
+		},
+		["1447511826.006"] = {
+			"again?", -- [1]
+			"Unole-BleedingHollow", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Unole-BleedingHollow", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			248, -- [11]
+			"Player-73-0A161593", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			nil, -- [18]
+			nil, -- [19]
+			"CHAT_MSG_INSTANCE_CHAT_LEADER", -- [20]
 		},
 		["1447514142.927"] = {
 			"ja vouto", -- [1]
@@ -265,41 +300,19 @@ ElvCharacterDB = {
 			nil, -- [19]
 			"CHAT_MSG_INSTANCE_CHAT", -- [20]
 		},
-		["1447511826.006"] = {
-			"again?", -- [1]
-			"Unole-BleedingHollow", -- [2]
+		["1447514538.302"] = {
+			"aw shit", -- [1]
+			"Oogabooga-Gurubashi", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Unole-BleedingHollow", -- [5]
+			"Oogabooga-Gurubashi", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			248, -- [11]
-			"Player-73-0A161593", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			nil, -- [18]
-			nil, -- [19]
-			"CHAT_MSG_INSTANCE_CHAT_LEADER", -- [20]
-		},
-		["1447514258.507"] = {
-			"go for it", -- [1]
-			"Rerejuju-Dalaran", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Rerejuju-Dalaran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			661, -- [11]
-			"Player-3683-08BE408E", -- [12]
+			706, -- [11]
+			"Player-1136-076334DD", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
@@ -308,6 +321,28 @@ ElvCharacterDB = {
 			nil, -- [18]
 			nil, -- [19]
 			"CHAT_MSG_INSTANCE_CHAT", -- [20]
+		},
+		["1471189770.58"] = {
+			"they do... on aug 30", -- [1]
+			"Pryahprism-Turalyon", -- [2]
+			"", -- [3]
+			"1. General - Tanaris", -- [4]
+			"Pryahprism", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Tanaris", -- [9]
+			0, -- [10]
+			21, -- [11]
+			"Player-3685-080A7EC0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			nil, -- [18]
+			nil, -- [19]
+			"CHAT_MSG_CHANNEL", -- [20]
 		},
 		["1447514220.864"] = {
 			"ty", -- [1]
@@ -441,18 +476,5 @@ ElvCharacterDB = {
 			nil, -- [19]
 			"CHAT_MSG_INSTANCE_CHAT_LEADER", -- [20]
 		},
-	},
-	["ChatEditHistory"] = {
-		"/i combat.", -- [1]
-		"/i ....", -- [2]
-		"/ec", -- [3]
-		"/zygor quiet", -- [4]
-		"/wa", -- [5]
-	},
-	["BodyGuard"] = {
-		["Active"] = false,
-		["Health"] = 0,
-		["MaxHealth"] = 0,
-		["IsInValidZone"] = true,
 	},
 }

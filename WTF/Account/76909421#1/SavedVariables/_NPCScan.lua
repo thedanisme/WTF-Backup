@@ -31,6 +31,7 @@ _NPCScanProfiles = {
 		["Squelben - Stormrage"] = "Default",
 		["Titte - Turalyon"] = "Default",
 		["Pastaliar - Stormrage"] = "Default",
+		["Dosnutz - Stormrage"] = "Default",
 		["Yanlery - Stormrage"] = "Default",
 		["Retardar - Stormrage"] = "Default",
 		["Shhbbyisok - Stormrage"] = "Default",

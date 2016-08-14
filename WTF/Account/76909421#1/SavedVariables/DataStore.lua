@@ -3,11 +3,13 @@ DataStoreDB = {
 	["profileKeys"] = {
 		["Whyfy - Stormrage"] = "Whyfy - Stormrage",
 		["Knutts - Turalyon"] = "Knutts - Turalyon",
+		["Pryahprism - Turalyon"] = "Pryahprism - Turalyon",
 		["Ershirley - Stormrage"] = "Ershirley - Stormrage",
 		["Ranidan - Stormreaver"] = "Ranidan - Stormreaver",
 		["Squelben - Stormrage"] = "Squelben - Stormrage",
 		["Titte - Turalyon"] = "Titte - Turalyon",
 		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
+		["Dosnutz - Stormrage"] = "Dosnutz - Stormrage",
 		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
 		["Brobies - Stormrage"] = "Brobies - Stormrage",
@@ -47,8 +49,14 @@ DataStoreDB = {
 			["Default.Bloodhoof.Arando"] = {
 				["faction"] = "Horde",
 			},
-			["Default.Stormrage.Brobies"] = {
+			["Default.Bloodhoof.Dalgrens"] = {
+				["faction"] = "Horde",
+			},
+			["Default.Stormrage.Talthalador"] = {
+				["faction"] = "Alliance",
 				["guildName"] = "Horizon",
+			},
+			["Default.Stormrage.Kateplusnine"] = {
 				["faction"] = "Alliance",
 			},
 			["Default.Turalyon.Skratch"] = {
@@ -61,13 +69,12 @@ DataStoreDB = {
 			},
 			["Default.Stormrage.Shhbbyisok"] = {
 				["faction"] = "Alliance",
-				["guildName"] = "Horizon",
 			},
-			["Default.Stormrage.Kateplusnine"] = {
-				["faction"] = "Alliance",
-			},
-			["Default.Bloodhoof.Dalgrens"] = {
+			["Default.Turalyon.Pryahprism"] = {
 				["faction"] = "Horde",
+			},
+			["Default.Stormrage.Edgelordshue"] = {
+				["faction"] = "Alliance",
 			},
 			["Default.Stormrage.Yanlery"] = {
 				["guildName"] = "Horizon",
@@ -98,16 +105,16 @@ DataStoreDB = {
 				["faction"] = "Alliance",
 				["guildName"] = "Horizon",
 			},
-			["Default.Stormrage.Edgelordshue"] = {
+			["Default.Stormrage.Dosnutz"] = {
 				["faction"] = "Alliance",
 			},
 			["Default.Turalyon.Shaneequa"] = {
 				["guildName"] = "Viginti",
 				["faction"] = "Horde",
 			},
-			["Default.Stormrage.Talthalador"] = {
-				["faction"] = "Alliance",
+			["Default.Stormrage.Brobies"] = {
 				["guildName"] = "Horizon",
+				["faction"] = "Alliance",
 			},
 		},
 		["ShortToLongRealmNames"] = {

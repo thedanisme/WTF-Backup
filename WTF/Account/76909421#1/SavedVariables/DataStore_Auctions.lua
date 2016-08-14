@@ -3,11 +3,13 @@ DataStore_AuctionsDB = {
 	["profileKeys"] = {
 		["Whyfy - Stormrage"] = "Whyfy - Stormrage",
 		["Knutts - Turalyon"] = "Knutts - Turalyon",
+		["Pryahprism - Turalyon"] = "Pryahprism - Turalyon",
 		["Ershirley - Stormrage"] = "Ershirley - Stormrage",
 		["Ranidan - Stormreaver"] = "Ranidan - Stormreaver",
 		["Squelben - Stormrage"] = "Squelben - Stormrage",
 		["Titte - Turalyon"] = "Titte - Turalyon",
 		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
+		["Dosnutz - Stormrage"] = "Dosnutz - Stormrage",
 		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
 		["Brobies - Stormrage"] = "Brobies - Stormrage",
@@ -37,8 +39,23 @@ DataStore_AuctionsDB = {
 				["lastVisitDate"] = "2016/07/30 10:54",
 			},
 			["Default.Stormrage.Emmarosa"] = {
-				["lastUpdate"] = 1470776595,
-				["lastVisitDate"] = "2016/08/09 17:02",
+				["lastUpdate"] = 1471182969,
+				["Auctions"] = {
+					"1|112287|1||6878000|7240000|4", -- [1]
+					"1|112297|1||234650|247000|4", -- [2]
+					"1|112294|1||3227625|3397500|4", -- [3]
+					"1|112300|1||65550|69000|4", -- [4]
+					"1|18259|1||568100|598000|4", -- [5]
+					"1|31878|1||2610125|2747500|4", -- [6]
+					"1|16817|1||103075|108500|4", -- [7]
+					"1|115526|1||121600|128000|4", -- [8]
+					"1|115526|1||121600|128000|4", -- [9]
+				},
+				["lastVisitDate"] = "2016/08/14 09:55",
+			},
+			["Default.Stormrage.Talthalador"] = {
+				["lastUpdate"] = 1471149712,
+				["lastVisitDate"] = "2016/08/14 00:41",
 			},
 			["Default.Stormrage.Whyfy"] = {
 				["lastUpdate"] = 1469900969,
@@ -48,9 +65,9 @@ DataStore_AuctionsDB = {
 				["lastUpdate"] = 1470026604,
 				["lastVisitDate"] = "2016/08/01 00:43",
 			},
-			["Default.Stormrage.Talthalador"] = {
-				["lastUpdate"] = 1471149712,
-				["lastVisitDate"] = "2016/08/14 00:41",
+			["Default.Stormrage.Dosnutz"] = {
+				["lastUpdate"] = 1471203324,
+				["lastVisitDate"] = "2016/08/14 15:35",
 			},
 			["Default.Turalyon.Titte"] = {
 				["lastUpdate"] = 1469638742,

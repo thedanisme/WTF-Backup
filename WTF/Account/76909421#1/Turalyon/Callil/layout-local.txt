@@ -20,10 +20,3 @@ X: -410
 Y: -184
 W: 210
 H: 175
-Frame: TSMDestroyingFrame
-FrameLevel: 0
-Anchor: RIGHT
-X: -269
-Y: 38
-W: 300
-H: 300

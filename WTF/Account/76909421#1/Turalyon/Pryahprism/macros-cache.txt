@@ -1,8 +1,5 @@
-VER 3 0100000000000007 " " "INV_Misc_QuestionMark"
-#showtooltip
-/use [@mouseover,help,nodead][]Remove Curse
-END
-VER 3 0100000000000069 "ZGVMacro3" "0"
-/target Pack Boar
-/run ZGV:MRM():CG(20,3)
+VER 3 010000000000006A "Ice Block" "INV_Misc_QuestionMark"
+#showtooltip Ice Block
+/cancelaura Ice Block
+/use Ice Block
 END

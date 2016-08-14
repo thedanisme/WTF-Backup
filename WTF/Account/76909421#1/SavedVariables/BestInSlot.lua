@@ -258,6 +258,25 @@ BestInSlotDB = {
 				[6] = 253,
 			},
 		},
+		["Dosnutz - Stormrage"] = {
+			["windowpos"] = {
+				["relativeTo"] = "UIParent",
+				["point"] = "TOPLEFT",
+				["relativePoint"] = "TOPLEFT",
+				["xOffset"] = 200,
+				["yOffset"] = -250.000015258789,
+			},
+			["options"] = {
+				["minimapButton"] = false,
+			},
+			["selected"] = {
+				"WoD", -- [1]
+				60200, -- [2]
+				"HFC", -- [3]
+				[5] = 4,
+				[6] = 63,
+			},
+		},
 		["Pastaliar - Stormrage"] = {
 			["windowpos"] = {
 				["relativeTo"] = "UIParent",
@@ -304,15 +323,15 @@ BestInSlotDB = {
 				["xOffset"] = 200,
 				["yOffset"] = -250.000015258789,
 			},
+			["options"] = {
+				["minimapButton"] = false,
+			},
 			["selected"] = {
 				"WoD", -- [1]
 				60200, -- [2]
 				"HFC", -- [3]
 				[5] = 4,
 				[6] = 577,
-			},
-			["options"] = {
-				["minimapButton"] = false,
 			},
 		},
 		["Skratch - Turalyon"] = {
@@ -1588,93 +1607,96 @@ BestInSlotDB = {
 		},
 	},
 	["profileKeys"] = {
-		["Knutts - Turalyon"] = "Knutts - Turalyon",
-		["Horny - Bloodhoof"] = "Horny - Bloodhoof",
-		["Callil - Turalyon"] = "Callil - Turalyon",
-		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
-		["Pryahprism - Turalyon"] = "Pryahprism - Turalyon",
-		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
 		["Callil - Sargeras"] = "Callil - Sargeras",
 		["Ranidan - Stormreaver"] = "Ranidan - Stormreaver",
 		["Squelben - Stormrage"] = "Squelben - Stormrage",
-		["Shhbbyisok - Stormrage"] = "Shhbbyisok - Stormrage",
 		["Titte - Turalyon"] = "Titte - Turalyon",
 		["Iphone - Bloodhoof"] = "Iphone - Bloodhoof",
-		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
-		["Bruhbies - Stormrage"] = "Bruhbies - Stormrage",
-		["Retardar - Stormrage"] = "Retardar - Stormrage",
-		["Llamama - Stormrage"] = "Llamama - Stormrage",
-		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
-		["Brewbies - Turalyon"] = "Brewbies - Turalyon",
-		["Titt - Turalyon"] = "Titt - Turalyon",
-		["Yanlery - Stormrage"] = "Yanlery - Stormrage",
-		["Skratch - Turalyon"] = "Skratch - Turalyon",
-		["Whyfy - Stormrage"] = "Whyfy - Stormrage",
-		["Rosabria - Sargeras"] = "Rosabria - Sargeras",
 		["Pastaliar - Stormrage"] = "Pastaliar - Stormrage",
-		["Danoh - Stormrage"] = "Danoh - Stormrage",
+		["Dosnutz - Stormrage"] = "Dosnutz - Stormrage",
+		["Yanlery - Stormrage"] = "Yanlery - Stormrage",
+		["Retardar - Stormrage"] = "Retardar - Stormrage",
+		["Shhbbyisok - Stormrage"] = "Shhbbyisok - Stormrage",
+		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
+		["Whyfy - Stormrage"] = "Whyfy - Stormrage",
+		["Knutts - Turalyon"] = "Knutts - Turalyon",
+		["Pryahprism - Turalyon"] = "Pryahprism - Turalyon",
+		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
+		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
+		["Llamama - Stormrage"] = "Llamama - Stormrage",
+		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
+		["Horny - Bloodhoof"] = "Horny - Bloodhoof",
+		["Titt - Turalyon"] = "Titt - Turalyon",
+		["Callil - Turalyon"] = "Callil - Turalyon",
+		["Skratch - Turalyon"] = "Skratch - Turalyon",
+		["Aranduh - Bloodhoof"] = "Aranduh - Bloodhoof",
+		["Bruhbies - Stormrage"] = "Bruhbies - Stormrage",
 		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
-		["Brobies - Stormrage"] = "Brobies - Stormrage",
+		["Danoh - Stormrage"] = "Danoh - Stormrage",
+		["Brewbies - Turalyon"] = "Brewbies - Turalyon",
+		["Rosabria - Sargeras"] = "Rosabria - Sargeras",
 		["Edgelordshue - Stormrage"] = "Edgelordshue - Stormrage",
 		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
 		["Beer - Bloodhoof"] = "Beer - Bloodhoof",
+		["Brobies - Stormrage"] = "Brobies - Stormrage",
 		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
-		["Aranduh - Bloodhoof"] = "Aranduh - Bloodhoof",
 	},
 	["profiles"] = {
-		["Knutts - Turalyon"] = {
-		},
-		["Horny - Bloodhoof"] = {
-		},
-		["Callil - Turalyon"] = {
-		},
-		["Kateplusnine - Stormrage"] = {
-		},
-		["Pryahprism - Turalyon"] = {
-		},
-		["Shaneequa - Turalyon"] = {
-		},
 		["Callil - Sargeras"] = {
 		},
 		["Ranidan - Stormreaver"] = {
 		},
 		["Squelben - Stormrage"] = {
 		},
-		["Shhbbyisok - Stormrage"] = {
-		},
 		["Titte - Turalyon"] = {
 		},
 		["Iphone - Bloodhoof"] = {
 		},
-		["Emmarosa - Stormrage"] = {
+		["Pastaliar - Stormrage"] = {
 		},
-		["Bruhbies - Stormrage"] = {
-		},
-		["Retardar - Stormrage"] = {
-		},
-		["Llamama - Stormrage"] = {
-		},
-		["Arando - Bloodhoof"] = {
-		},
-		["Brewbies - Turalyon"] = {
-		},
-		["Titt - Turalyon"] = {
+		["Dosnutz - Stormrage"] = {
 		},
 		["Yanlery - Stormrage"] = {
 		},
-		["Skratch - Turalyon"] = {
+		["Retardar - Stormrage"] = {
+		},
+		["Shhbbyisok - Stormrage"] = {
+		},
+		["Emmarosa - Stormrage"] = {
 		},
 		["Whyfy - Stormrage"] = {
 		},
-		["Rosabria - Sargeras"] = {
+		["Knutts - Turalyon"] = {
 		},
-		["Pastaliar - Stormrage"] = {
+		["Pryahprism - Turalyon"] = {
 		},
-		["Danoh - Stormrage"] = {
+		["Shaneequa - Turalyon"] = {
+		},
+		["Arando - Bloodhoof"] = {
+		},
+		["Llamama - Stormrage"] = {
+		},
+		["Kateplusnine - Stormrage"] = {
+		},
+		["Horny - Bloodhoof"] = {
+		},
+		["Titt - Turalyon"] = {
+		},
+		["Callil - Turalyon"] = {
+		},
+		["Skratch - Turalyon"] = {
+		},
+		["Aranduh - Bloodhoof"] = {
+		},
+		["Bruhbies - Stormrage"] = {
 		},
 		["Lackteight - Turalyon"] = {
 		},
-		["Brobies - Stormrage"] = {
+		["Danoh - Stormrage"] = {
+		},
+		["Brewbies - Turalyon"] = {
+		},
+		["Rosabria - Sargeras"] = {
 		},
 		["Edgelordshue - Stormrage"] = {
 		},
@@ -1682,9 +1704,9 @@ BestInSlotDB = {
 		},
 		["Beer - Bloodhoof"] = {
 		},
-		["Talthalador - Stormrage"] = {
+		["Brobies - Stormrage"] = {
 		},
-		["Aranduh - Bloodhoof"] = {
+		["Talthalador - Stormrage"] = {
 		},
 	},
 }

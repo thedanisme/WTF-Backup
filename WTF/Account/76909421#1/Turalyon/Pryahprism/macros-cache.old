@@ -2,7 +2,7 @@ VER 3 0100000000000007 " " "INV_Misc_QuestionMark"
 #showtooltip
 /use [@mouseover,help,nodead][]Remove Curse
 END
-VER 3 0100000000000055 "ZGVMacro1" "0"
-/target Farseer Drek'Thar
-/run ZGV:MRM():CG(73,1)
+VER 3 0100000000000069 "ZGVMacro3" "0"
+/target Pack Boar
+/run ZGV:MRM():CG(20,3)
 END

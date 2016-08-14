@@ -7,6 +7,6 @@ PawnOptions = {
 	["LastKeybindingsSet"] = 1,
 }
 PawnWowheadScaleProviderOptions = {
-	["LastClass"] = "WARLOCK",
+	["LastClass"] = "DEATHKNIGHT",
 	["LastAdded"] = 5,
 }

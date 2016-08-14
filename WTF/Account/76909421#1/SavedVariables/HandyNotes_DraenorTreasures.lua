@@ -7,6 +7,7 @@ DraenorTreasuresDB = {
 		["Titte - Turalyon"] = "Default",
 		["Iphone - Bloodhoof"] = "Default",
 		["Pastaliar - Stormrage"] = "Default",
+		["Dosnutz - Stormrage"] = "Default",
 		["Yanlery - Stormrage"] = "Default",
 		["Retardar - Stormrage"] = "Default",
 		["Shhbbyisok - Stormrage"] = "Default",

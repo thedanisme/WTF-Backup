@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2,
+	["LastVersion"] = 2.0007,
 	["LastPlayerFullName"] = "Pryahprism-Turalyon",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,

@@ -11,6 +11,7 @@ TalentMacrosDB = {
 		["Titte - Turalyon"] = "Titte - Turalyon",
 		["Iphone - Bloodhoof"] = "Iphone - Bloodhoof",
 		["Pastaliar - Stormrage"] = "Pastaliar - Stormrage",
+		["Dosnutz - Stormrage"] = "Dosnutz - Stormrage",
 		["Yanlery - Stormrage"] = "Yanlery - Stormrage",
 		["Retardar - Stormrage"] = "Retardar - Stormrage",
 		["Shhbbyisok - Stormrage"] = "Shhbbyisok - Stormrage",
@@ -58,6 +59,8 @@ TalentMacrosDB = {
 		["Iphone - Bloodhoof"] = {
 		},
 		["Pastaliar - Stormrage"] = {
+		},
+		["Dosnutz - Stormrage"] = {
 		},
 		["Yanlery - Stormrage"] = {
 		},

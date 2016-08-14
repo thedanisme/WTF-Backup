@@ -7,6 +7,7 @@ HandyNotesDB = {
 		["Titte - Turalyon"] = "Titte - Turalyon",
 		["Iphone - Bloodhoof"] = "Iphone - Bloodhoof",
 		["Pastaliar - Stormrage"] = "Pastaliar - Stormrage",
+		["Dosnutz - Stormrage"] = "Dosnutz - Stormrage",
 		["Yanlery - Stormrage"] = "Yanlery - Stormrage",
 		["Retardar - Stormrage"] = "Retardar - Stormrage",
 		["Shhbbyisok - Stormrage"] = "Shhbbyisok - Stormrage",
@@ -53,6 +54,8 @@ HandyNotesDB = {
 		["Iphone - Bloodhoof"] = {
 		},
 		["Pastaliar - Stormrage"] = {
+		},
+		["Dosnutz - Stormrage"] = {
 		},
 		["Yanlery - Stormrage"] = {
 		},
@@ -130,6 +133,7 @@ HandyNotes_HandyNotesDB = {
 		["Titte - Turalyon"] = "Titte - Turalyon",
 		["Iphone - Bloodhoof"] = "Iphone - Bloodhoof",
 		["Pastaliar - Stormrage"] = "Pastaliar - Stormrage",
+		["Dosnutz - Stormrage"] = "Dosnutz - Stormrage",
 		["Yanlery - Stormrage"] = "Yanlery - Stormrage",
 		["Retardar - Stormrage"] = "Retardar - Stormrage",
 		["Shhbbyisok - Stormrage"] = "Shhbbyisok - Stormrage",
@@ -176,6 +180,8 @@ HandyNotes_HandyNotesDB = {
 		["Iphone - Bloodhoof"] = {
 		},
 		["Pastaliar - Stormrage"] = {
+		},
+		["Dosnutz - Stormrage"] = {
 		},
 		["Yanlery - Stormrage"] = {
 		},

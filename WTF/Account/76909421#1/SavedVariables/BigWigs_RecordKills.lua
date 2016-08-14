@@ -7,6 +7,7 @@ RKDatabase = {
 		["Titte - Turalyon"] = "Default",
 		["Iphone - Bloodhoof"] = "Default",
 		["Pastaliar - Stormrage"] = "Default",
+		["Dosnutz - Stormrage"] = "Default",
 		["Yanlery - Stormrage"] = "Default",
 		["Retardar - Stormrage"] = "Default",
 		["Shhbbyisok - Stormrage"] = "Default",
@@ -50,11 +51,11 @@ RKDatabase = {
 					["Brackenspore"] = {
 						[7] = 86,
 					},
+					["Ko'ragh"] = {
+						[7] = 54,
+					},
 					["The Butcher"] = {
 						[7] = 57,
-					},
-					["Kargath Bladefist"] = {
-						[7] = 67,
 					},
 					["Tectus"] = {
 						[7] = 126,
@@ -62,8 +63,8 @@ RKDatabase = {
 					["Imperator Mar'gok"] = {
 						[7] = 331,
 					},
-					["Ko'ragh"] = {
-						[7] = 54,
+					["Kargath Bladefist"] = {
+						[7] = 67,
 					},
 					["Twin Ogron"] = {
 						[7] = 108,

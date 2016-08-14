@@ -23,7 +23,23 @@ BigWigs3DB = {
 		},
 	},
 	["namespaces"] = {
-		["BigWigs_Bosses_Rocketspark and Borka"] = {
+		["BigWigs_Plugins_Victory"] = {
+			["profiles"] = {
+				["Default"] = {
+					["soundName"] = "None",
+				},
+			},
+		},
+		["BigWigs_Bosses_Mannoroth"] = {
+			["profiles"] = {
+				["Default"] = {
+					[181597] = 0,
+					[190482] = 0,
+					[181557] = 0,
+					[186362] = 0,
+					[181735] = 0,
+				},
+			},
 		},
 		["BigWigs_Plugins_Alt Power"] = {
 			["profiles"] = {
@@ -39,7 +55,14 @@ BigWigs3DB = {
 		},
 		["BigWigs_Plugins_BossBlock"] = {
 		},
-		["BigWigs_Bosses_Fleshrender Nok'gar"] = {
+		["BigWigs_Bosses_Archimonde"] = {
+			["profiles"] = {
+				["Default"] = {
+					[183817] = 0,
+				},
+			},
+		},
+		["BigWigs_Plugins_Sounds"] = {
 		},
 		["BigWigs_Plugins_Statistics"] = {
 			["profiles"] = {
@@ -47,8 +70,6 @@ BigWigs3DB = {
 					["showBar"] = true,
 				},
 			},
-		},
-		["BigWigs_Bosses_Beth'tilac"] = {
 		},
 		["BigWigs_Bosses_Kilrogg Deadeye"] = {
 			["profiles"] = {
@@ -60,92 +81,13 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_Raid Icons"] = {
-		},
-		["BigWigs_Bosses_Ancient Protectors"] = {
-		},
-		["BigWigs_Plugins_HeroesVoices"] = {
-		},
-		["BigWigs_Bosses_Nitrogg Thundertower"] = {
-		},
-		["BigWigs_Bosses_Yalnu"] = {
-		},
-		["BigWigs_Plugins_Messages"] = {
-			["profiles"] = {
-				["Default"] = {
-					["outline"] = "OUTLINE",
-					["fontSize"] = 20,
-					["BWEmphasizeCountdownMessageAnchor_x"] = 665.600102922654,
-					["BWEmphasizeMessageAnchor_y"] = 766.577796339989,
-					["BWMessageAnchor_y"] = 493.511079658401,
-					["BWMessageAnchor_x"] = 1012.62294118671,
-					["BWEmphasizeCountdownMessageAnchor_y"] = 296.533166902591,
-					["font"] = "Expressway",
-					["BWEmphasizeMessageAnchor_x"] = 557.511298222016,
-				},
-			},
-		},
-		["BigWigs_Bosses_Archmage Sol"] = {
-		},
-		["BigWigs_Plugins_Victory"] = {
-			["profiles"] = {
-				["Default"] = {
-					["soundName"] = "None",
-				},
-			},
-		},
-		["BigWigs_Bosses_Alysrazor"] = {
-		},
-		["BigWigs_Bosses_Hellfire High Council"] = {
-			["profiles"] = {
-				["Default"] = {
-					[184366] = 0,
-					[184358] = 0,
-					[184355] = 0,
-				},
-			},
-		},
-		["BigWigs_Bosses_Majordomo Staghelm"] = {
-		},
-		["BigWigs_Bosses_Archimonde"] = {
-			["profiles"] = {
-				["Default"] = {
-					[183817] = 0,
-				},
-			},
-		},
-		["BigWigs_Plugins_Sounds"] = {
-		},
-		["BigWigs_Bosses_Ner'zhul"] = {
-		},
-		["BigWigs_Bosses_Bonemaw"] = {
-		},
-		["BigWigs_Bosses_Nhallish"] = {
-		},
-		["LibDualSpec-1.0"] = {
-		},
-		["BigWigs_Bosses_Sadana Bloodfury"] = {
-		},
-		["BigWigs_Bosses_Ragnaros"] = {
-		},
-		["BigWigs_Bosses_Witherbark"] = {
-		},
-		["BigWigs_Bosses_Mannoroth"] = {
-			["profiles"] = {
-				["Default"] = {
-					[181597] = 0,
-					[190482] = 0,
-					[181557] = 0,
-					[186362] = 0,
-					[181735] = 0,
-				},
-			},
+		["BigWigs_Bosses_Iron Reaver"] = {
 		},
 		["BigWigs_Plugins_Colors"] = {
 		},
-		["BigWigs_Bosses_Grimrail Enforcers"] = {
+		["BigWigs_Plugins_Raid Icons"] = {
 		},
-		["BigWigs_Bosses_Skylord Tovra"] = {
+		["BigWigs_Bosses_Hellfire Assault"] = {
 		},
 		["BigWigs_Plugins_Bars"] = {
 			["profiles"] = {
@@ -176,7 +118,16 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Bosses_Skulloc"] = {
+		["BigWigs_Bosses_Hellfire Citadel Trash"] = {
+		},
+		["BigWigs_Plugins_HeroesVoices"] = {
+		},
+		["BigWigs_Bosses_Kormrok"] = {
+			["profiles"] = {
+				["Default"] = {
+					[181296] = 0,
+				},
+			},
 		},
 		["BigWigs_Plugins_Super Emphasize"] = {
 			["profiles"] = {
@@ -186,11 +137,7 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Bosses_Oshir"] = {
-		},
-		["BigWigs_Bosses_Shannox"] = {
-		},
-		["BigWigs_Bosses_Lord Rhyolith"] = {
+		["LibDualSpec-1.0"] = {
 		},
 		["BigWigs_Plugins_Proximity"] = {
 			["profiles"] = {
@@ -208,9 +155,22 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_Respawn"] = {
+		["BigWigs_Plugins_Messages"] = {
+			["profiles"] = {
+				["Default"] = {
+					["outline"] = "OUTLINE",
+					["fontSize"] = 20,
+					["BWEmphasizeCountdownMessageAnchor_x"] = 665.600102922654,
+					["BWEmphasizeMessageAnchor_y"] = 766.577796339989,
+					["BWMessageAnchor_y"] = 493.511079658401,
+					["BWMessageAnchor_x"] = 1012.62294118671,
+					["BWEmphasizeCountdownMessageAnchor_y"] = 296.533166902591,
+					["font"] = "Expressway",
+					["BWEmphasizeMessageAnchor_x"] = 557.511298222016,
+				},
+			},
 		},
-		["BigWigs_Bosses_Baleroc"] = {
+		["BigWigs_Plugins_Respawn"] = {
 		},
 		["BigWigs_Plugins_Common Auras"] = {
 			["profiles"] = {
@@ -223,10 +183,12 @@ BigWigs3DB = {
 			},
 			["reset"] = true,
 		},
-		["BigWigs_Bosses_Kormrok"] = {
+		["BigWigs_Bosses_Hellfire High Council"] = {
 			["profiles"] = {
 				["Default"] = {
-					[181296] = 0,
+					[184366] = 0,
+					[184358] = 0,
+					[184355] = 0,
 				},
 			},
 		},
@@ -240,9 +202,10 @@ BigWigs3DB = {
 		["Aranduh - Bloodhoof"] = "Default",
 		["Abegar - Turalyon"] = "Default",
 		["Titte - Turalyon"] = "Default",
+		["Ranidan - Stormreaver"] = "Default",
 		["Arando - Bloodhoof"] = "Default",
 		["Rotator - Turalyon"] = "Default",
-		["Ranidan - Stormreaver"] = "Default",
+		["Dosnutz - Stormrage"] = "Default",
 		["Barewbies - Stormrage"] = "Default",
 		["Talthalador - Stormrage"] = "Default",
 		["Titt - Turalyon"] = "Default",
@@ -250,10 +213,10 @@ BigWigs3DB = {
 		["Skratch - Turalyon"] = "Default",
 		["Whyfy - Stormrage"] = "Default",
 		["Yanlery - Stormrage"] = "Default",
-		["Lackteight - Turalyon"] = "Default",
-		["Danoh - Stormrage"] = "Default",
 		["Brewbies - Turalyon"] = "Default",
+		["Danoh - Stormrage"] = "Default",
 		["Bloodcox - Stormrage"] = "Default",
+		["Lackteight - Turalyon"] = "Default",
 		["Edgelordshue - Stormrage"] = "Default",
 		["Dalgrens - Bloodhoof"] = "Default",
 		["Shhbbyisok - Stormrage"] = "Default",
@@ -566,7 +529,7 @@ BigWigsStatisticsDB = {
 			["LFR"] = {
 				["kills"] = 18,
 				["best"] = 99.5589999999502,
-				["wipes"] = 1,
+				["wipes"] = 2,
 			},
 		},
 		[1396] = {
@@ -598,7 +561,7 @@ BigWigsStatisticsDB = {
 			},
 			["LFR"] = {
 				["kills"] = 20,
-				["wipes"] = 14,
+				["wipes"] = 15,
 				["best"] = 318.227000000014,
 			},
 		},
@@ -713,7 +676,7 @@ BigWigsStatisticsDB = {
 				["wipes"] = 9,
 			},
 			["LFR"] = {
-				["kills"] = 14,
+				["kills"] = 15,
 				["best"] = 212.92,
 				["wipes"] = 2,
 			},
@@ -761,7 +724,7 @@ BigWigsStatisticsDB = {
 			},
 			["LFR"] = {
 				["best"] = 267.485000000001,
-				["kills"] = 14,
+				["kills"] = 15,
 			},
 		},
 	},
@@ -769,12 +732,6 @@ BigWigsStatisticsDB = {
 		[866] = {
 			["LFR"] = {
 				["best"] = 403.48599999999,
-				["kills"] = 1,
-			},
-		},
-		[852] = {
-			["LFR"] = {
-				["best"] = 529.452000000005,
 				["kills"] = 1,
 			},
 		},
@@ -786,6 +743,12 @@ BigWigsStatisticsDB = {
 		[849] = {
 			["LFR"] = {
 				["best"] = 201.006999999998,
+				["kills"] = 1,
+			},
+		},
+		[852] = {
+			["LFR"] = {
+				["best"] = 529.452000000005,
 				["kills"] = 1,
 			},
 		},

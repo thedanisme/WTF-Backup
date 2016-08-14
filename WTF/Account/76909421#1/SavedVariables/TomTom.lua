@@ -7,6 +7,7 @@ TomTomDB = {
 		["Titte - Turalyon"] = "Default",
 		["Iphone - Bloodhoof"] = "Default",
 		["Pastaliar - Stormrage"] = "Default",
+		["Dosnutz - Stormrage"] = "Default",
 		["Yanlery - Stormrage"] = "Default",
 		["Retardar - Stormrage"] = "Default",
 		["Shhbbyisok - Stormrage"] = "Default",
@@ -59,6 +60,7 @@ TomTomWaypointsMF = {
 		["Titte - Turalyon"] = "Titte - Turalyon",
 		["Iphone - Bloodhoof"] = "Iphone - Bloodhoof",
 		["Pastaliar - Stormrage"] = "Pastaliar - Stormrage",
+		["Dosnutz - Stormrage"] = "Dosnutz - Stormrage",
 		["Yanlery - Stormrage"] = "Yanlery - Stormrage",
 		["Retardar - Stormrage"] = "Retardar - Stormrage",
 		["Shhbbyisok - Stormrage"] = "Shhbbyisok - Stormrage",
@@ -103,6 +105,8 @@ TomTomWaypointsMF = {
 		["Iphone - Bloodhoof"] = {
 		},
 		["Pastaliar - Stormrage"] = {
+		},
+		["Dosnutz - Stormrage"] = {
 		},
 		["Yanlery - Stormrage"] = {
 		},
