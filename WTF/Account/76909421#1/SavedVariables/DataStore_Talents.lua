@@ -547,7 +547,7 @@ DataStore_TalentsDB = {
 				},
 			},
 			["Default.Stormrage.Talthalador"] = {
-				["lastUpdate"] = 1471241629,
+				["lastUpdate"] = 1471285169,
 				["Specializations"] = {
 					5, -- [1]
 					6, -- [2]
@@ -555,10 +555,10 @@ DataStore_TalentsDB = {
 				["Class"] = "DEMONHUNTER",
 			},
 			["Default.Stormrage.Dosnutz"] = {
-				["lastUpdate"] = 1471266130,
+				["lastUpdate"] = 1471283898,
 				["Specializations"] = {
 					[2] = 14773,
-					[3] = 10613,
+					[3] = 10725,
 				},
 				["Class"] = "MAGE",
 			},

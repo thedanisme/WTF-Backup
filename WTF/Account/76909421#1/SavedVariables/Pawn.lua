@@ -649,10 +649,10 @@ PawnCommon = {
 			["UnenchantedColor"] = "2f95b0",
 			["IconTexturePath"] = "Interface\\Icons\\Spell_Fire_FireBolt02",
 			["PerCharacterOptions"] = {
-				["Pryahprism-Turalyon"] = {
+				["Kateplusnine-Stormrage"] = {
 					["Visible"] = true,
 				},
-				["Kateplusnine-Stormrage"] = {
+				["Pryahprism-Turalyon"] = {
 					["Visible"] = true,
 				},
 			},

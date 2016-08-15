@@ -7,6 +7,6 @@ AdvancedInterfaceOptionsSaved = {
 		["MaxSpellStartRecoveryOffset"] = 80,
 		["nameplateMaxDistance"] = 40,
 		["nameplateOtherAtBase"] = 0,
-		["scriptErrors"] = true,
+		["scriptErrors"] = false,
 	},
 }

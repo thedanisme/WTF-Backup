@@ -172,9 +172,14 @@ MacroToolkitDB = {
 		["Dosnutz - Stormrage"] = {
 			["macros"] = {
 				[121] = {
-					["icon"] = "135841",
 					["name"] = "Ice Block",
+					["icon"] = "135841",
 					["body"] = "#showtooltip Ice Block\n/cancelaura Ice Block\n/use Ice Block\n",
+				},
+				[122] = {
+					["name"] = "Water Jet",
+					["icon"] = "134400",
+					["body"] = "#showtooltip\n/cast Water Jet\n",
 				},
 			},
 			["backups"] = {
@@ -515,8 +520,8 @@ MacroToolkitDB = {
 		["Talthalador - Stormrage"] = {
 			["macros"] = {
 				[121] = {
-					["name"] = " ",
 					["icon"] = "1344654",
+					["name"] = " ",
 					["body"] = "#showtooltip\n/use [@mouseover,harm][]Torment\n",
 				},
 			},
