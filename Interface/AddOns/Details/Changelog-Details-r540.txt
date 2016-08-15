@@ -1,6 +1,14 @@
+2016-08-14  Tercio  <Tercio>
+
+[eac04a6fca0f] [tip]
+* boot.lua, plugins/Details_Streamer/Details_Streamer.lua:
+
+- Fix for Monk's Soothing Mist on Streamer Plugin.
+
+
 2016-08-13  Tercio  <Tercio>
 
-[e6656844f137] [tip]
+[e6656844f137]
 * Libs/DF/cooltip.lua, Libs/DF/fw.lua, boot.lua, classes/classe_instancia.lua, core/control.lua, core/parser.lua, gumps/janela_principal.lua:
 
 - Warlock's Grimoire of Synergy buff uptime fix.
@@ -229,14 +237,5 @@
 * boot.lua, classes/classe_heal.lua, classes/classe_others.lua:
 
 - Ticket 76: fixed an issue with buffs already present on the actor at the beginning of the combat wasn't being counted.
-
-
-2016-04-04  Tercio  <Tercio>
-
-[9e09a588796a]
-* boot.lua, gumps/janela_principal.lua, plugins/Details_CalcLeech/Details_CalcLeech.lua:
-
-- delete window warning for how to fully delete a window.
-- tagging v4.4d as release.
 
 

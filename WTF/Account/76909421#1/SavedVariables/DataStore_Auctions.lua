@@ -53,17 +53,17 @@ DataStore_AuctionsDB = {
 				},
 				["lastVisitDate"] = "2016/08/14 09:55",
 			},
-			["Default.Stormrage.Talthalador"] = {
-				["lastUpdate"] = 1471149712,
-				["lastVisitDate"] = "2016/08/14 00:41",
+			["Default.Stormrage.Brobies"] = {
+				["lastUpdate"] = 1470026604,
+				["lastVisitDate"] = "2016/08/01 00:43",
 			},
 			["Default.Stormrage.Whyfy"] = {
 				["lastUpdate"] = 1469900969,
 				["lastVisitDate"] = "2016/07/30 13:49",
 			},
-			["Default.Stormrage.Brobies"] = {
-				["lastUpdate"] = 1470026604,
-				["lastVisitDate"] = "2016/08/01 00:43",
+			["Default.Stormrage.Talthalador"] = {
+				["lastUpdate"] = 1471149712,
+				["lastVisitDate"] = "2016/08/14 00:41",
 			},
 			["Default.Stormrage.Dosnutz"] = {
 				["lastUpdate"] = 1471203324,

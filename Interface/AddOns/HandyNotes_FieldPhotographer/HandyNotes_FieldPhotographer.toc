@@ -1,9 +1,5 @@
-## Interface: 60200
-## Version: 6.2.0.1
-## X-Curse-Packaged-Version: 6.2.0.1
-## X-Curse-Project-Name: HandyNotes: Field Photographer
-## X-Curse-Project-ID: handynotes-field-photographer
-## X-Curse-Repository-ID: wow/handynotes-field-photographer/mainline
+## Interface: 70000
+## Version: 7.0.3.0
 
 ## Title: HandyNotes: Field Photographer
 ## Notes: Shows you where to take selfies for the achievement.
@@ -13,8 +9,10 @@
 
 ## Author: Phanx
 ## X-Email: addons@phanx.net
-## X-Copyright: Copyright (c) 2015 Phanx. All rights reserved.
+## X-Copyright: Copyright (c) 2015-2016 Phanx. All rights reserved.
 ## X-Website: https://github.com/Phanx/HandyNotes_FieldPhotographer
+## X-Curse-Project-ID: handynotes-field-photographer
+## X-WoWI-ID: 23667
 
 ## Dependencies: HandyNotes
 ## OptionalDependencies: TomTom

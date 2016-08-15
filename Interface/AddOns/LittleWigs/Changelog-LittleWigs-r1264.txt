@@ -1,9 +1,28 @@
 ------------------------------------------------------------------------
-r1263 | funkydude | 2016-08-04 23:38:43 +0000 (Thu, 04 Aug 2016) | 1 line
+r1264 | nebula169 | 2016-08-15 03:43:04 +0000 (Mon, 15 Aug 2016) | 7 lines
 Changed paths:
-   A /tags/r1263-release (from /trunk:1262)
+   M /trunk/MoP/TempleOfTheJadeSerpent/LiuFlameheart.lua
+   M /trunk/MoP/TempleOfTheJadeSerpent/LorewalkerStonestep.lua
+   M /trunk/TBC/SethekkHalls/Ikiss.lua
+   M /trunk/TBC/ShadowLabyrinth/Hellmaw.lua
+   M /trunk/WoD/Auchindoun/Terongor.lua
+   M /trunk/WoD/IronDocks/Enforcers.lua
+   M /trunk/WoD/ShadowmoonBurialGrounds/Bonemaw.lua
+   M /trunk/WoD/TheEverbloom/Xeritac.lua
+   M /trunk/WoD/UpperBlackrockSpire/Tharbek.lua
+   M /trunk/WotLK/HallsOfReflection/Falric.lua
+   M /trunk/WotLK/HallsOfReflection/Marwyn.lua
+   M /trunk/WotLK/HallsOfStone/MaidenOfGrief.lua
+   M /trunk/WotLK/TheVioletHold/Erekem.lua
+   M /trunk/WotLK/TrialOfTheChampion/GrandChampions.lua
 
-Tagging as r1263-release
+Had these changes for who knows how long
+
+- Terongor: Announce Seed of Malevolence for everyone
+- Enforcers: Announce Sanguine Sphere being over normally
+- Bonemaw: Only use Warning on the pre-inhale message
+- Xeritac: Enable when entering the area, add bars for add spawns and when you're fixated
+- Tharbek: Announce when Tharbek is targetable again
 ------------------------------------------------------------------------
 r1262 | funkydude | 2016-08-03 03:12:15 +0000 (Wed, 03 Aug 2016) | 1 line
 Changed paths:

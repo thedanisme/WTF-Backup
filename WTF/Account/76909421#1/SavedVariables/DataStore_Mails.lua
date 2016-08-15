@@ -39,23 +39,12 @@ DataStore_MailsDB = {
 				["lastVisitDate"] = "2016/07/22 03:47",
 			},
 			["Default.Stormrage.Talthalador"] = {
-				["lastUpdate"] = 1471183062,
-				["Mails"] = {
-					{
-						["sender"] = "Emmarosa",
-						["itemID"] = 127796,
-						["link"] = "|cff0070dd|Hitem:127796::::::::100:259::::::|h[Baleful Leather Spaulders]|h|r",
-						["count"] = 1,
-						["lastCheck"] = 1471183062,
-						["icon"] = 1017540,
-						["daysLeft"] = 30,
-					}, -- [1]
-				},
-				["lastVisitDate"] = "2016/08/14 01:03",
+				["lastUpdate"] = 1471214476,
+				["lastVisitDate"] = "2016/08/14 18:41",
 			},
-			["Default.Turalyon.Titte"] = {
-				["lastUpdate"] = 1470430851,
-				["lastVisitDate"] = "2016/08/05 17:00",
+			["Default.Stormrage.Brobies"] = {
+				["lastUpdate"] = 1470863607,
+				["lastVisitDate"] = "2016/08/10 17:13",
 			},
 			["Default.Turalyon.Knutts"] = {
 				["lastUpdate"] = 1469907685,
@@ -101,13 +90,13 @@ DataStore_MailsDB = {
 				},
 				["lastVisitDate"] = "2016/08/04 14:08",
 			},
-			["Default.Stormrage.Danoh"] = {
-				["lastUpdate"] = 1470863309,
-				["lastVisitDate"] = "2016/08/10 17:08",
-			},
 			["Default.Turalyon.Skratch"] = {
 				["lastUpdate"] = 1469905437,
 				["lastVisitDate"] = "2016/07/30 15:03",
+			},
+			["Default.Turalyon.Titte"] = {
+				["lastUpdate"] = 1470430851,
+				["lastVisitDate"] = "2016/08/05 17:00",
 			},
 			["Default.Turalyon.Callil"] = {
 				["lastUpdate"] = 1471190717,
@@ -125,9 +114,9 @@ DataStore_MailsDB = {
 				["lastUpdate"] = 1471203438,
 				["lastVisitDate"] = "2016/08/14 15:37",
 			},
-			["Default.Stormrage.Brobies"] = {
-				["lastUpdate"] = 1470863607,
-				["lastVisitDate"] = "2016/08/10 17:13",
+			["Default.Stormrage.Danoh"] = {
+				["lastUpdate"] = 1470863309,
+				["lastVisitDate"] = "2016/08/10 17:08",
 			},
 		},
 	},

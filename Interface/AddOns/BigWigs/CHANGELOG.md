@@ -1,8 +1,15 @@
 # BigWigs
 
-## [v7.2-14-g015952e](https://github.com/BigWigsMods/BigWigs/tree/015952e5fdeb6ae45ec16008cdd1bbf2b1456ded) (2016-08-13) [](#top)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v7.2...015952e5fdeb6ae45ec16008cdd1bbf2b1456ded)
+## [v7.3](https://github.com/BigWigsMods/BigWigs/tree/v7.3) (2016-08-14) [](#top)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v7.2...v7.3)
 
+-   update travis file
+-   esES update. (#10)
+-   Update deDE.lua
+-   Update deDE.lua (#9)
+-   esES update. (#8)
+-   ruRU update. (#7)
+-   zhCN/zhTW update. (#6)
 -   Tweak dev print.
 -   Note the API docs.
 -   Delete Docs/
