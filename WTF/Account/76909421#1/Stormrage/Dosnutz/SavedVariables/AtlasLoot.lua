@@ -1,6 +1,15 @@
 
 AtlasLootCharDB = {
 	["__addonrevision"] = 4325,
+	["GUI"] = {
+		["selected"] = {
+			"AtlasLoot_Cataclysm", -- [1]
+			"BlackwingDescent", -- [2]
+			nil, -- [3]
+			4, -- [4]
+			0, -- [5]
+		},
+	},
 	["MiniMapButton"] = {
 		["point"] = {
 			"CENTER", -- [1]

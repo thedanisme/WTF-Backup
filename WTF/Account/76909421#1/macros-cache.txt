@@ -1,13 +1,13 @@
-VER 3 000000000000013D " " "INV_Misc_QuestionMark"
-#showtooltip
-/use 12
-END
 VER 3 000000000000013E " " "INV_Misc_QuestionMark"
 #showtooltip
 /use Big Crate of Salvage
 /use Large Crate of Salvage
 /use Bag of Salvaged Goods
 /use Sack of Salvaged Goods
+END
+VER 3 000000000000013D " " "INV_Misc_QuestionMark"
+#showtooltip
+/use 12
 END
 VER 3 000000000000013C "ClearMark" "INV_Hammer_Unique_Sulfuras"
 /run SetRaidTarget("PLAYER",0)

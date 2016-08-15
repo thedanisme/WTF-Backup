@@ -10,9 +10,9 @@ DataStore_TalentsDB = {
 		["Titte - Turalyon"] = "Titte - Turalyon",
 		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
 		["Dosnutz - Stormrage"] = "Dosnutz - Stormrage",
-		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
+		["Callil - Turalyon"] = "Callil - Turalyon",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
-		["Brobies - Stormrage"] = "Brobies - Stormrage",
+		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
 		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
 		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
@@ -21,8 +21,8 @@ DataStore_TalentsDB = {
 		["Edgelordshue - Stormrage"] = "Edgelordshue - Stormrage",
 		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
 		["Shhbbyisok - Stormrage"] = "Shhbbyisok - Stormrage",
-		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
-		["Callil - Turalyon"] = "Callil - Turalyon",
+		["Brobies - Stormrage"] = "Brobies - Stormrage",
+		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
 	},
 	["global"] = {
 		["Characters"] = {
@@ -63,11 +63,11 @@ DataStore_TalentsDB = {
 					17276, -- [31]
 					14772, -- [32]
 				},
+				["Class"] = "MAGE",
 				["Specializations"] = {
 					5461, -- [1]
 					5622, -- [2]
 				},
-				["Class"] = "MAGE",
 			},
 			["Default.Stormrage.Emmarosa"] = {
 				["lastUpdate"] = 1471184073,
@@ -90,9 +90,6 @@ DataStore_TalentsDB = {
 				["ActiveTalents"] = 1,
 				["lastUpdate"] = 1471050332,
 				["Class"] = "MONK",
-				["Specializations"] = {
-					9646, -- [1]
-				},
 				["GlyphList"] = {
 					11, -- [1]
 					16250, -- [2]
@@ -136,6 +133,9 @@ DataStore_TalentsDB = {
 					16716, -- [40]
 					16684, -- [41]
 					16884, -- [42]
+				},
+				["Specializations"] = {
+					9646, -- [1]
 				},
 			},
 			["Default.Turalyon.Knutts"] = {
@@ -182,11 +182,11 @@ DataStore_TalentsDB = {
 					11444, -- [38]
 					7444, -- [39]
 				},
+				["Class"] = "ROGUE",
 				["Specializations"] = {
 					0, -- [1]
 					[3] = 5625,
 				},
-				["Class"] = "ROGUE",
 			},
 			["Default.Stormrage.Shhbbyisok"] = {
 				["lastUpdate"] = 1471197150,
@@ -247,11 +247,11 @@ DataStore_TalentsDB = {
 					4412, -- [37]
 					4452, -- [38]
 				},
-				["Class"] = "WARLOCK",
 				["Specializations"] = {
 					[3] = 9974,
 					[2] = 14233,
 				},
+				["Class"] = "WARLOCK",
 			},
 			["Default.Stormrage.Yanlery"] = {
 				["ActiveTalents"] = 1,
@@ -305,11 +305,11 @@ DataStore_TalentsDB = {
 					17612, -- [46]
 					17620, -- [47]
 				},
+				["Class"] = "WARRIOR",
 				["Specializations"] = {
 					11174, -- [1]
 					[3] = 15353,
 				},
-				["Class"] = "WARRIOR",
 			},
 			["Default.Turalyon.Callil"] = {
 				["lastUpdate"] = 1471190765,
@@ -319,12 +319,54 @@ DataStore_TalentsDB = {
 					7062, -- [1]
 				},
 			},
-			["Default.Stormrage.Edgelordshue"] = {
-				["lastUpdate"] = 1470762117,
+			["Default.Stormrage.Danoh"] = {
+				["ActiveTalents"] = 1,
+				["lastUpdate"] = 1471050193,
+				["Class"] = "HUNTER",
 				["Specializations"] = {
-					0, -- [1]
+					5534, -- [1]
+					6613, -- [2]
 				},
-				["Class"] = "DEMONHUNTER",
+				["GlyphList"] = {
+					11, -- [1]
+					5818, -- [2]
+					16378, -- [3]
+					5642, -- [4]
+					10842, -- [5]
+					5722, -- [6]
+					5738, -- [7]
+					5690, -- [8]
+					5706, -- [9]
+					17674, -- [10]
+					5802, -- [11]
+					5754, -- [12]
+					5770, -- [13]
+					5658, -- [14]
+					11098, -- [15]
+					5914, -- [16]
+					5674, -- [17]
+					11130, -- [18]
+					5786, -- [19]
+					5834, -- [20]
+					5850, -- [21]
+					18090, -- [22]
+					5946, -- [23]
+					17634, -- [24]
+					18098, -- [25]
+					11058, -- [26]
+					13, -- [27]
+					16364, -- [28]
+					11084, -- [29]
+					7100, -- [30]
+					5628, -- [31]
+					16860, -- [32]
+					7068, -- [33]
+					7052, -- [34]
+					7036, -- [35]
+					7084, -- [36]
+					5868, -- [37]
+					18052, -- [38]
+				},
 			},
 			["Default.Bloodhoof.Dalgrens"] = {
 				["lastUpdate"] = 1469995428,
@@ -378,19 +420,72 @@ DataStore_TalentsDB = {
 					8884, -- [38]
 					8228, -- [39]
 				},
+				["Class"] = "DEATHKNIGHT",
 				["Specializations"] = {
 					15766, -- [1]
 					[3] = 14187,
 				},
-				["Class"] = "DEATHKNIGHT",
 			},
-			["Default.Stormrage.Talthalador"] = {
-				["lastUpdate"] = 1471241629,
+			["Default.Turalyon.Skratch"] = {
+				["ActiveTalents"] = 1,
+				["lastUpdate"] = 1469994636,
+				["Class"] = "DRUID",
 				["Specializations"] = {
-					5, -- [1]
-					6, -- [2]
+					[3] = 5869,
 				},
-				["Class"] = "DEMONHUNTER",
+				["GlyphList"] = {
+					11, -- [1]
+					17882, -- [2]
+					10826, -- [3]
+					6954, -- [4]
+					14986, -- [5]
+					17962, -- [6]
+					10810, -- [7]
+					8826, -- [8]
+					2618, -- [9]
+					2906, -- [10]
+					14938, -- [11]
+					14954, -- [12]
+					13306, -- [13]
+					2778, -- [14]
+					10106, -- [15]
+					2602, -- [16]
+					18026, -- [17]
+					17946, -- [18]
+					2682, -- [19]
+					2730, -- [20]
+					2746, -- [21]
+					2762, -- [22]
+					2890, -- [23]
+					19290, -- [24]
+					18010, -- [25]
+					2858, -- [26]
+					10794, -- [27]
+					10746, -- [28]
+					10762, -- [29]
+					17906, -- [30]
+					2834, -- [31]
+					17890, -- [32]
+					17986, -- [33]
+					19362, -- [34]
+					13, -- [35]
+					6908, -- [36]
+					6940, -- [37]
+					19420, -- [38]
+					6972, -- [39]
+					17260, -- [40]
+					17228, -- [41]
+					9820, -- [42]
+					6924, -- [43]
+					16876, -- [44]
+					2828, -- [45]
+					14972, -- [46]
+					2636, -- [47]
+					15004, -- [48]
+					18044, -- [49]
+					2812, -- [50]
+					19300, -- [51]
+				},
 			},
 			["Default.Stormrage.Whyfy"] = {
 				["ActiveTalents"] = 1,
@@ -446,76 +541,24 @@ DataStore_TalentsDB = {
 					7260, -- [48]
 					7276, -- [49]
 				},
+				["Class"] = "PALADIN",
 				["Specializations"] = {
 					[2] = 10846,
 				},
-				["Class"] = "PALADIN",
 			},
-			["Default.Turalyon.Skratch"] = {
-				["ActiveTalents"] = 1,
-				["lastUpdate"] = 1469994636,
-				["Class"] = "DRUID",
-				["GlyphList"] = {
-					11, -- [1]
-					17882, -- [2]
-					10826, -- [3]
-					6954, -- [4]
-					14986, -- [5]
-					17962, -- [6]
-					10810, -- [7]
-					8826, -- [8]
-					2618, -- [9]
-					2906, -- [10]
-					14938, -- [11]
-					14954, -- [12]
-					13306, -- [13]
-					2778, -- [14]
-					10106, -- [15]
-					2602, -- [16]
-					18026, -- [17]
-					17946, -- [18]
-					2682, -- [19]
-					2730, -- [20]
-					2746, -- [21]
-					2762, -- [22]
-					2890, -- [23]
-					19290, -- [24]
-					18010, -- [25]
-					2858, -- [26]
-					10794, -- [27]
-					10746, -- [28]
-					10762, -- [29]
-					17906, -- [30]
-					2834, -- [31]
-					17890, -- [32]
-					17986, -- [33]
-					19362, -- [34]
-					13, -- [35]
-					6908, -- [36]
-					6940, -- [37]
-					19420, -- [38]
-					6972, -- [39]
-					17260, -- [40]
-					17228, -- [41]
-					9820, -- [42]
-					6924, -- [43]
-					16876, -- [44]
-					2828, -- [45]
-					14972, -- [46]
-					2636, -- [47]
-					15004, -- [48]
-					18044, -- [49]
-					2812, -- [50]
-					19300, -- [51]
-				},
+			["Default.Stormrage.Talthalador"] = {
+				["lastUpdate"] = 1471241629,
 				["Specializations"] = {
-					[3] = 5869,
+					5, -- [1]
+					6, -- [2]
 				},
+				["Class"] = "DEMONHUNTER",
 			},
 			["Default.Stormrage.Dosnutz"] = {
-				["lastUpdate"] = 1471205009,
+				["lastUpdate"] = 1471266130,
 				["Specializations"] = {
-					[2] = 5622,
+					[2] = 14773,
+					[3] = 10613,
 				},
 				["Class"] = "MAGE",
 			},
@@ -523,9 +566,6 @@ DataStore_TalentsDB = {
 				["ActiveTalents"] = 2,
 				["lastUpdate"] = 1470416686,
 				["Class"] = "SHAMAN",
-				["Specializations"] = {
-					0, -- [1]
-				},
 				["GlyphList"] = {
 					11, -- [1]
 					3418, -- [2]
@@ -586,55 +626,16 @@ DataStore_TalentsDB = {
 					17444, -- [57]
 					7620, -- [58]
 				},
-			},
-			["Default.Stormrage.Danoh"] = {
-				["ActiveTalents"] = 1,
-				["lastUpdate"] = 1471050193,
-				["Class"] = "HUNTER",
-				["GlyphList"] = {
-					11, -- [1]
-					5818, -- [2]
-					16378, -- [3]
-					5642, -- [4]
-					10842, -- [5]
-					5722, -- [6]
-					5738, -- [7]
-					5690, -- [8]
-					5706, -- [9]
-					17674, -- [10]
-					5802, -- [11]
-					5754, -- [12]
-					5770, -- [13]
-					5658, -- [14]
-					11098, -- [15]
-					5914, -- [16]
-					5674, -- [17]
-					11130, -- [18]
-					5786, -- [19]
-					5834, -- [20]
-					5850, -- [21]
-					18090, -- [22]
-					5946, -- [23]
-					17634, -- [24]
-					18098, -- [25]
-					11058, -- [26]
-					13, -- [27]
-					16364, -- [28]
-					11084, -- [29]
-					7100, -- [30]
-					5628, -- [31]
-					16860, -- [32]
-					7068, -- [33]
-					7052, -- [34]
-					7036, -- [35]
-					7084, -- [36]
-					5868, -- [37]
-					18052, -- [38]
-				},
 				["Specializations"] = {
-					5534, -- [1]
-					6613, -- [2]
+					0, -- [1]
 				},
+			},
+			["Default.Stormrage.Edgelordshue"] = {
+				["lastUpdate"] = 1470762117,
+				["Specializations"] = {
+					0, -- [1]
+				},
+				["Class"] = "DEMONHUNTER",
 			},
 		},
 		["Reference"] = {
@@ -852,7 +853,7 @@ DataStore_TalentsDB = {
 				[706] = "Holy Shock",
 				[354] = "Mending",
 				[482] = "Soulwell",
-				[1097] = "Rain of Frogs",
+				[530] = "Strangulate",
 				[175] = "Untamed Stars",
 				[1159] = "Energy",
 				[937] = "The Treant",
@@ -863,15 +864,15 @@ DataStore_TalentsDB = {
 				[1162] = "Disappearance",
 				[178] = "Skull Bash",
 				[1163] = "Ephemeral Spirits",
-				[769] = "Dark Simulacrum",
+				[935] = "The Predator",
 				[292] = "Falling Meteor",
 				[356] = "Endless Wrath",
 				[1165] = "Grounding",
 				[484] = "Bloodcurdling Shout",
 				[1166] = "Lava Spread",
-				[1104] = "Enduring Deceit",
+				[351] = "Aspects",
 				[1167] = "Reactive Shielding",
-				[1092] = "Spirit Wolf",
+				[557] = "Outbreak",
 				[1168] = "Shamanistic Resolve",
 				[357] = "Deterrence",
 				[1169] = "Shocks",
@@ -879,8 +880,8 @@ DataStore_TalentsDB = {
 				[1170] = "Spiritwalker's Focus",
 				[714] = "Vendetta",
 				[1171] = "Spiritwalker's Aegis",
-				[1164] = "Ghostly Speed",
-				[911] = "Eternal Resolve",
+				[286] = "Shadow Bolt",
+				[1124] = "Maim",
 				[715] = "Killing Spree",
 				[1173] = "Dark Soul",
 				[486] = "Gushing Wound",
@@ -903,7 +904,7 @@ DataStore_TalentsDB = {
 				[1182] = "Drawn Sword",
 				[1069] = "Purging",
 				[1183] = "Heroic Leap",
-				[831] = "Ferocious Bite",
+				[631] = "Master Shapeshifter",
 				[1184] = "Mocking Banner",
 				[361] = "Misdirection",
 				[1185] = "Raging Blow",
@@ -916,46 +917,46 @@ DataStore_TalentsDB = {
 				[362] = "Explosive Trap",
 				[851] = "Thunder Strike",
 				[490] = "Bloody Healing",
-				[754] = "Totemic Vigor",
-				[762] = "Wind and Thunder",
-				[505] = "Sweeping Strikes",
+				[189] = "Consecration",
+				[933] = "Fae Silence",
+				[1009] = "Mass Exorcism",
 				[514] = "Geist",
 				[1093] = "Flaming Serpent",
 				[363] = "Animal Bond",
 				[213] = "Chain Lightning",
 				[491] = "Enraged Speed",
-				[555] = "Death Gate",
-				[553] = "Resilient Grip",
+				[1096] = "Astral Fixation",
+				[773] = "Tranquil Grip",
 				[214] = "Spirit Walk",
 				[1101] = "Weaponmaster",
-				[1110] = "Ice Reaper",
+				[522] = "Horn of Winter",
 				[364] = "No Escape",
-				[211] = "Water Shield",
+				[518] = "Death's Embrace",
 				[492] = "Hindering Strikes",
 				[1112] = "Empowerment",
 				[771] = "Death Coil",
-				[512] = "Anti-Magic Shell",
-				[591] = "Ignite",
-				[215] = "Capacitor Totem",
+				[552] = "Ghost Wolf",
+				[1116] = "Runic Power",
+				[1203] = "Merciful Wrath",
 				[365] = "Pathfinding",
 				[1201] = "Frostbrand Weapon",
-				[494] = "Bloodthirst",
-				[1209] = "Detoxing",
+				[987] = "Falling Avenger",
+				[1213] = "Flapping Owl",
 				[183] = "Double Jeopardy",
-				[1203] = "Merciful Wrath",
+				[215] = "Capacitor Totem",
 				[986] = "Focused Wrath",
 				[1204] = "Army of the Dead",
 				[731] = "Deadly Momentum",
 				[1205] = "Savagery",
-				[987] = "Falling Avenger",
+				[494] = "Bloodthirst",
 				[1206] = "The Solstice",
-				[495] = "Rude Interruption",
+				[496] = "Gag Order",
 				[1207] = "Purify Spirit",
 				[988] = "Righteous Retreat",
 				[1208] = "Cleanse",
 				[733] = "Disguise",
-				[431] = "Aquatic Form",
-				[989] = "Bladed Judgment",
+				[1209] = "Detoxing",
+				[495] = "Rude Interruption",
 				[1210] = "Nature's Cure",
 				[734] = "Cloak of Shadows",
 				[216] = "Purge",
@@ -967,91 +968,91 @@ DataStore_TalentsDB = {
 				[551] = "Dash",
 				[736] = "Feral Spirit",
 				[1215] = "Ascendance",
-				[521] = "Shifting Presences",
-				[520] = "Death and Decay",
+				[366] = "Tame Beast",
+				[737] = "Riptide",
 				[369] = "Mend Pet",
 				[433] = "Charm Woodland Creature",
 				[497] = "Blitz",
-				[509] = "Raging Wind",
+				[291] = "Unstable Affliction",
 				[185] = "Holy Wrath",
 				[217] = "Fire Elemental Totem",
-				[1109] = "Absorb Magic",
+				[276] = "Nightmares",
 				[611] = "Remove Curse",
-				[1083] = "Pillar of Light",
+				[558] = "Corpse Explosion",
 				[434] = "Blooming",
-				[508] = "Victory Rush",
+				[273] = "Conflagrate",
 				[612] = "Thunderstorm",
 				[358] = "Disengage",
-				[507] = "Resonating Power",
+				[281] = "Healthstone",
 				[996] = "Battle Healer",
 				[613] = "Stars",
 				[371] = "Solace",
 				[435] = "Grace",
 				[997] = "Rapid Rolling",
-				[929] = "Blind",
+				[516] = "Chains of Ice",
 				[186] = "Divine Protection",
 				[218] = "Fire Nova",
 				[998] = "Guard",
-				[198] = "Divinity",
-				[499] = "Die by the Sword",
+				[758] = "Demonic Circle",
+				[401] = "Garrote",
 				[871] = "Counterspell",
 				[999] = "Zen Meditation",
 				[352] = "Camouflage",
 				[397] = "Evasion",
-				[466] = "Pick Pocket",
-				[192] = "Burden of Guilt",
-				[515] = "Icebound Fortitude",
-				[194] = "Final Wrath",
-				[392] = "Ambush",
-				[1001] = "Surging Mist",
 				[184] = "Devotion Aura",
+				[192] = "Burden of Guilt",
+				[392] = "Ambush",
+				[194] = "Final Wrath",
+				[515] = "Icebound Fortitude",
+				[1001] = "Surging Mist",
+				[466] = "Pick Pocket",
 				[187] = "Templar's Verdict",
 				[219] = "Flame Shock",
-				[401] = "Garrote",
-				[758] = "Demonic Circle",
-				[516] = "Chains of Ice",
-				[281] = "Healthstone",
+				[499] = "Die by the Sword",
+				[198] = "Divinity",
+				[929] = "Blind",
+				[507] = "Resonating Power",
 				[502] = "Shield Slam",
-				[273] = "Conflagrate",
-				[558] = "Corpse Explosion",
-				[276] = "Nightmares",
-				[291] = "Unstable Affliction",
-				[737] = "Riptide",
-				[366] = "Tame Beast",
+				[508] = "Victory Rush",
+				[1083] = "Pillar of Light",
+				[1109] = "Absorb Magic",
+				[509] = "Raging Wind",
+				[520] = "Death and Decay",
+				[521] = "Shifting Presences",
 				[439] = "Revive Pet",
-				[496] = "Gag Order",
-				[1213] = "Flapping Owl",
+				[989] = "Bladed Judgment",
+				[431] = "Aquatic Form",
 				[188] = "Avenging Wrath",
 				[220] = "Wind Shear",
-				[1116] = "Runic Power",
-				[552] = "Ghost Wolf",
+				[591] = "Ignite",
+				[512] = "Anti-Magic Shell",
 				[751] = "Deluge",
 				[440] = "Lesser Proportion",
-				[518] = "Death's Embrace",
-				[522] = "Horn of Winter",
+				[211] = "Water Shield",
+				[1110] = "Ice Reaper",
 				[752] = "Shamanistic Rage",
-				[773] = "Tranquil Grip",
-				[1096] = "Astral Fixation",
+				[553] = "Resilient Grip",
+				[555] = "Death Gate",
 				[313] = "Arcane Explosion",
 				[753] = "Hex",
 				[441] = "Fireworks",
-				[1009] = "Mass Exorcism",
-				[933] = "Fae Silence",
-				[189] = "Consecration",
+				[505] = "Sweeping Strikes",
+				[762] = "Wind and Thunder",
+				[754] = "Totemic Vigor",
 				[221] = "Frost Shock",
-				[631] = "Master Shapeshifter",
+				[831] = "Ferocious Bite",
 				[314] = "Blink",
 				[755] = "Drain Life",
 				[442] = "Stampede",
 				[1011] = "Transcendence",
-				[1124] = "Maim",
-				[286] = "Shadow Bolt",
-				[557] = "Outbreak",
-				[351] = "Aspects",
-				[935] = "The Predator",
+				[911] = "Eternal Resolve",
+				[1164] = "Ghostly Speed",
+				[1092] = "Spirit Wolf",
+				[1104] = "Enduring Deceit",
+				[769] = "Dark Simulacrum",
 				[757] = "Ember Tap",
 				[443] = "Aspect of the Pack",
-				[530] = "Strangulate",
+				[1097] = "Rain of Frogs",
 			},
 		},
 	},
@@ -1067,9 +1068,9 @@ DataStore_TalentsRefDB = {
 		["Titte - Turalyon"] = "Titte - Turalyon",
 		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
 		["Dosnutz - Stormrage"] = "Dosnutz - Stormrage",
-		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
+		["Callil - Turalyon"] = "Callil - Turalyon",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
-		["Brobies - Stormrage"] = "Brobies - Stormrage",
+		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
 		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
 		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
@@ -1078,8 +1079,8 @@ DataStore_TalentsRefDB = {
 		["Edgelordshue - Stormrage"] = "Edgelordshue - Stormrage",
 		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
 		["Shhbbyisok - Stormrage"] = "Shhbbyisok - Stormrage",
-		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
-		["Callil - Turalyon"] = "Callil - Turalyon",
+		["Brobies - Stormrage"] = "Brobies - Stormrage",
+		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
 	},
 	["global"] = {
 		["DEATHKNIGHT"] = {
@@ -1341,6 +1342,9 @@ DataStore_TalentsRefDB = {
 						22454, -- [16]
 						22449, -- [17]
 						22473, -- [18]
+						21632, -- [19]
+						22309, -- [20]
+						21634, -- [21]
 					},
 					["icon"] = "Interface\\Icons\\Spell_Frost_FrostBolt02",
 					["name"] = "Frost",
@@ -1382,9 +1386,67 @@ DataStore_TalentsRefDB = {
 			},
 			["Version"] = 22423,
 		},
-		["SHAMAN"] = {
+		["HUNTER"] = {
 			["Locale"] = "enUS",
-			["Version"] = 22345,
+			["Specializations"] = {
+				{
+					["id"] = 253,
+					["talents"] = {
+						22291, -- [1]
+						22280, -- [2]
+						22282, -- [3]
+						21997, -- [4]
+						22769, -- [5]
+						22290, -- [6]
+						19347, -- [7]
+						19348, -- [8]
+						22318, -- [9]
+						22441, -- [10]
+						22347, -- [11]
+						22269, -- [12]
+						22284, -- [13]
+						22276, -- [14]
+						22293, -- [15]
+						19357, -- [16]
+						22002, -- [17]
+						22287, -- [18]
+						22273, -- [19]
+						21986, -- [20]
+						22295, -- [21]
+					},
+					["icon"] = "INTERFACE\\ICONS\\ability_hunter_bestialdiscipline",
+					["name"] = "Beast Mastery",
+				}, -- [1]
+				{
+					["id"] = 254,
+					["talents"] = {
+						22279, -- [1]
+						22501, -- [2]
+						22289, -- [3]
+						22495, -- [4]
+						22497, -- [5]
+						22498, -- [6]
+						19347, -- [7]
+						19348, -- [8]
+						22318, -- [9]
+						22267, -- [10]
+						22286, -- [11]
+						21998, -- [12]
+						22284, -- [13]
+						22276, -- [14]
+						22499, -- [15]
+						19357, -- [16]
+						22002, -- [17]
+						22287, -- [18]
+						22274, -- [19]
+						22308, -- [20]
+						22288, -- [21]
+					},
+					["icon"] = "Interface\\Icons\\Ability_Hunter_FocusedAim",
+					["name"] = "Marksmanship",
+				}, -- [2]
+			},
+			["Version"] = 22423,
 		},
 		["WARLOCK"] = {
 			["Locale"] = "enUS",
@@ -1582,67 +1644,9 @@ DataStore_TalentsRefDB = {
 			},
 			["Version"] = 22423,
 		},
-		["HUNTER"] = {
+		["SHAMAN"] = {
 			["Locale"] = "enUS",
-			["Specializations"] = {
-				{
-					["id"] = 253,
-					["talents"] = {
-						22291, -- [1]
-						22280, -- [2]
-						22282, -- [3]
-						21997, -- [4]
-						22769, -- [5]
-						22290, -- [6]
-						19347, -- [7]
-						19348, -- [8]
-						22318, -- [9]
-						22441, -- [10]
-						22347, -- [11]
-						22269, -- [12]
-						22284, -- [13]
-						22276, -- [14]
-						22293, -- [15]
-						19357, -- [16]
-						22002, -- [17]
-						22287, -- [18]
-						22273, -- [19]
-						21986, -- [20]
-						22295, -- [21]
-					},
-					["icon"] = "INTERFACE\\ICONS\\ability_hunter_bestialdiscipline",
-					["name"] = "Beast Mastery",
-				}, -- [1]
-				{
-					["id"] = 254,
-					["talents"] = {
-						22279, -- [1]
-						22501, -- [2]
-						22289, -- [3]
-						22495, -- [4]
-						22497, -- [5]
-						22498, -- [6]
-						19347, -- [7]
-						19348, -- [8]
-						22318, -- [9]
-						22267, -- [10]
-						22286, -- [11]
-						21998, -- [12]
-						22284, -- [13]
-						22276, -- [14]
-						22499, -- [15]
-						19357, -- [16]
-						22002, -- [17]
-						22287, -- [18]
-						22274, -- [19]
-						22308, -- [20]
-						22288, -- [21]
-					},
-					["icon"] = "Interface\\Icons\\Ability_Hunter_FocusedAim",
-					["name"] = "Marksmanship",
-				}, -- [2]
-			},
-			["Version"] = 22423,
+			["Version"] = 22345,
 		},
 	},
 }
