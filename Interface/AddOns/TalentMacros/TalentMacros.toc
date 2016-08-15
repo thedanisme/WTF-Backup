@@ -2,10 +2,10 @@
 ## Title: TalentMacros
 ## Notes: Automagical macros for each talent tier.
 ## Author: Neb
-## Version: r27
+## Version: v1.1.0
 ## OptionalDeps: Ace3, LibDualSpec-1.0
 ## SavedVariables: TalentMacrosDB
-## X-Curse-Packaged-Version: r27
+## X-Curse-Packaged-Version: v1.1.0
 ## X-Curse-Project-Name: TalentMacros
 ## X-Curse-Project-ID: talentmacros
 ## X-Curse-Repository-ID: wow/talentmacros/mainline

@@ -150,7 +150,6 @@ end
 function TalentMacros:OnEnable()
 	self:RegisterEvent("PLAYER_TALENT_UPDATE")
 	self:RegisterEvent("PLAYER_LOGOUT")
-	self:UpdateMacros()
 end
 
 function TalentMacros:Print(...)
