@@ -90,6 +90,8 @@ BigWigs3DB = {
 		},
 		["BigWigs_Plugins_Raid Icons"] = {
 		},
+		["BigWigs_Plugins_BossBlock"] = {
+		},
 		["BigWigs_Plugins_Bars"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -119,10 +121,6 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_HeroesVoices"] = {
-		},
-		["BigWigs_Plugins_BossBlock"] = {
-		},
 		["BigWigs_Plugins_Super Emphasize"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -146,6 +144,8 @@ BigWigs3DB = {
 					["posy"] = 590.222193111313,
 				},
 			},
+		},
+		["BigWigs_Plugins_HeroesVoices"] = {
 		},
 		["BigWigs_Bosses_Hellfire High Council"] = {
 			["profiles"] = {
@@ -178,9 +178,9 @@ BigWigs3DB = {
 			["profiles"] = {
 				["Default"] = {
 					["repair"] = 515,
-					["feast"] = 515,
 					[106898] = 515,
 					[2825] = 515,
+					["feast"] = 515,
 				},
 			},
 		},
@@ -207,10 +207,10 @@ BigWigs3DB = {
 		["Skratch - Turalyon"] = "Default",
 		["Whyfy - Stormrage"] = "Default",
 		["Danoh - Stormrage"] = "Default",
-		["Lackteight - Turalyon"] = "Default",
-		["Yanlery - Stormrage"] = "Default",
-		["Brewbies - Turalyon"] = "Default",
 		["Bloodcox - Stormrage"] = "Default",
+		["Yanlery - Stormrage"] = "Default",
+		["Lackteight - Turalyon"] = "Default",
+		["Brewbies - Turalyon"] = "Default",
 		["Edgelordshue - Stormrage"] = "Default",
 		["Dalgrens - Bloodhoof"] = "Default",
 		["Shhbbyisok - Stormrage"] = "Default",
@@ -554,7 +554,7 @@ BigWigsStatisticsDB = {
 				["wipes"] = 56,
 			},
 			["LFR"] = {
-				["kills"] = 20,
+				["kills"] = 21,
 				["wipes"] = 15,
 				["best"] = 318.227000000014,
 			},
@@ -602,7 +602,7 @@ BigWigsStatisticsDB = {
 				["best"] = 195.839000000007,
 			},
 			["LFR"] = {
-				["kills"] = 17,
+				["kills"] = 18,
 				["wipes"] = 2,
 				["best"] = 232.494000000002,
 			},
@@ -729,6 +729,12 @@ BigWigsStatisticsDB = {
 				["kills"] = 1,
 			},
 		},
+		[849] = {
+			["LFR"] = {
+				["best"] = 201.006999999998,
+				["kills"] = 1,
+			},
+		},
 		[852] = {
 			["LFR"] = {
 				["best"] = 529.452000000005,
@@ -738,12 +744,6 @@ BigWigsStatisticsDB = {
 		[867] = {
 			["LFR"] = {
 				["wipes"] = 1,
-			},
-		},
-		[849] = {
-			["LFR"] = {
-				["best"] = 201.006999999998,
-				["kills"] = 1,
 			},
 		},
 	},

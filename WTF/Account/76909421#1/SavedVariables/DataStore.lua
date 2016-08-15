@@ -108,6 +108,7 @@ DataStoreDB = {
 				["faction"] = "Horde",
 			},
 			["Default.Stormrage.Dosnutz"] = {
+				["guildName"] = "Horizon",
 				["faction"] = "Alliance",
 			},
 			["Default.Stormrage.Kateplusnine"] = {

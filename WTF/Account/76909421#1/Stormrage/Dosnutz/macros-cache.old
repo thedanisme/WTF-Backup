@@ -3,3 +3,7 @@ VER 3 0100000000000001 "Ice Block" "135841"
 /cancelaura Ice Block
 /use Ice Block
 END
+VER 3 0100000000000002 "Water Jet" "INV_Misc_QuestionMark"
+#showtooltip
+/cast Water Jet
+END

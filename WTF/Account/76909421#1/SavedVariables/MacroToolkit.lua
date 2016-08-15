@@ -172,13 +172,18 @@ MacroToolkitDB = {
 		["Dosnutz - Stormrage"] = {
 			["macros"] = {
 				[121] = {
-					["name"] = "Ice Block",
-					["icon"] = "135841",
-					["body"] = "#showtooltip Ice Block\n/cancelaura Ice Block\n/use Ice Block\n",
+					["icon"] = "237508",
+					["name"] = " ",
+					["body"] = "#showtooltip Ancient Portal: Dalaran\n/s Have you ever met Crusader Jorny?  If not, today's your lucky day!\n/use Ancient Portal: Dalaran\n",
 				},
 				[122] = {
-					["name"] = "Water Jet",
+					["icon"] = "135841",
+					["name"] = "Ice Block",
+					["body"] = "#showtooltip Ice Block\n/cancelaura Ice Block\n/use Ice Block\n",
+				},
+				[123] = {
 					["icon"] = "134400",
+					["name"] = "Water Jet",
 					["body"] = "#showtooltip\n/cast Water Jet\n",
 				},
 			},
@@ -520,8 +525,8 @@ MacroToolkitDB = {
 		["Talthalador - Stormrage"] = {
 			["macros"] = {
 				[121] = {
-					["icon"] = "1344654",
 					["name"] = " ",
+					["icon"] = "1344654",
 					["body"] = "#showtooltip\n/use [@mouseover,harm][]Torment\n",
 				},
 			},
@@ -1294,15 +1299,15 @@ MacroToolkitDB = {
 			["visbackup"] = false,
 			["visaddslot"] = false,
 			["visaddscript"] = false,
-			["x"] = 763.667907714844,
-			["y"] = 424.062377929688,
+			["x"] = 1064.66796875,
+			["y"] = 317.062377929688,
 			["viscrest"] = true,
 			["doublewide"] = true,
+			["scale"] = 1,
 			["override"] = true,
 			["viserrors"] = false,
 			["viscustom"] = false,
 			["visconditions"] = true,
-			["scale"] = 1,
 			["fonts"] = {
 				["mfont"] = "Expressway",
 				["mifont"] = "Expressway",

@@ -62,6 +62,7 @@ DataStore_PetsDB = {
 				[141434] = 71015,
 				[67419] = 35398,
 				[36029] = 21063,
+				[210699] = 106278,
 				[59250] = 31575,
 				[139363] = 70259,
 				[10673] = 7385,
@@ -345,7 +346,7 @@ DataStore_PetsDB = {
 				},
 			},
 			["Default.Stormrage.Talthalador"] = {
-				["lastUpdate"] = 1471285170,
+				["lastUpdate"] = 1471292678,
 				["CRITTER"] = {
 					179834, -- [1]
 					92395, -- [2]
@@ -658,7 +659,10 @@ DataStore_PetsDB = {
 				},
 			},
 			["Default.Stormrage.Dosnutz"] = {
-				["lastUpdate"] = 1471283898,
+				["lastUpdate"] = 1471304940,
+				["CRITTER"] = {
+					210699, -- [1]
+				},
 			},
 			["Default.Stormrage.Kateplusnine"] = {
 				["lastUpdate"] = 1470755228,
