@@ -2,10 +2,10 @@ local ADDON_NAME, TalentMacros = ...
 LibStub("AceAddon-3.0"):NewAddon(TalentMacros, ADDON_NAME, "AceEvent-3.0")
 
 local DEFAULT_MACRO = "#showtooltip\n/cast %n"
-local CHECK_TEXTURE = " |T" .. READY_CHECK_READY_TEXTURE .. ":0|t"
+local CHECK_TEXTURE = " |T" .. _G.READY_CHECK_READY_TEXTURE .. ":0|t"
 
-local MAX_TALENT_TIERS = MAX_TALENT_TIERS
-local NUM_TALENT_COLUMNS = NUM_TALENT_COLUMNS
+local MAX_TALENT_TIERS = _G.MAX_TALENT_TIERS
+local NUM_TALENT_COLUMNS = _G.NUM_TALENT_COLUMNS
 
 local GetTalentDescription
 do
@@ -86,7 +86,7 @@ local function GetOptions()
 			options.args[tostring(tier)] = group
 
 			for column = 1, NUM_TALENT_COLUMNS do
-				local id, name, iconTexture, selected, available = GetTalentInfo(tier, column, spec)
+				local id, name, iconTexture, selected = GetTalentInfo(tier, column, spec)
 				local title = ("|T%s:0:0:0:0:64:64:4:60:4:60|t %s%s"):format(iconTexture, name, selected and CHECK_TEXTURE or "")
 				group.desc = group.desc and ("%s\n%s"):format(group.desc, title) or title
 
@@ -145,9 +145,7 @@ function TalentMacros:OnInitialize()
 		InterfaceOptionsFrame_OpenToCategory(ADDON_NAME)
 		InterfaceOptionsFrame_OpenToCategory(ADDON_NAME)
 	end
-end
 
-function TalentMacros:OnEnable()
 	self:RegisterEvent("PLAYER_TALENT_UPDATE")
 	self:RegisterEvent("PLAYER_LOGOUT")
 end

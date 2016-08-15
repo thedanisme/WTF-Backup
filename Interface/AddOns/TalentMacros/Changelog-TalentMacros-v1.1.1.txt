@@ -1,0 +1,12 @@
+tag v1.1.1
+024eba375b516476bd81fc04e4e74a8a58a34ff9
+Kyle Buller <bullerk@gmail.com>
+2016-08-15 14:24:03 -0500
+
+Tagging as v1.1.1
+
+
+--------------------
+
+Kyle Buller:
+	- Register events on init
