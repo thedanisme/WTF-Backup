@@ -2,97 +2,13 @@
 EncounterDetailsDB = {
 	["emotes"] = {
 		{
-			{
-				6.06599999999889, -- [1]
-				"I will freeze you from within until all that remains is an icy husk.", -- [2]
-				"The Lich King", -- [3]
-				7, -- [4]
-			}, -- [1]
-			{
-				10.5360000000001, -- [1]
-				"I will freeze you from within until all that remains is an icy husk.", -- [2]
-				"The Lich King", -- [3]
-				7, -- [4]
-			}, -- [2]
-			{
-				20.2540000000008, -- [1]
-				"No questions remain unanswered. No doubts linger. You ARE Azeroth's greatest champions. You overcame every challenge I laid before you. My mightiest servants have fallen before your relentless onslaught... your unbridled fury... ", -- [2]
-				"The Lich King", -- [3]
-				7, -- [4]
-			}, -- [3]
-			{
-				51.9389999999985, -- [1]
-				"Is it truly righteousness that drives you? I wonder...", -- [2]
-				"The Lich King", -- [3]
-				7, -- [4]
-			}, -- [4]
-			{
-				61.6299999999974, -- [1]
-				"You trained them well, Fordring. You delivered the greatest fighting force this world has ever known... right into my hands - exactly as I intended! You shall be rewarded for your unwitting sacrifice.", -- [2]
-				"The Lich King", -- [3]
-				7, -- [4]
-			}, -- [5]
-			{
-				88.4340000000011, -- [1]
-				"Watch now as I raise them from the dead to become masters of the Scourge. They will shroud this world in chaos and destruction. Azeroth's fall will come at their hands -- and you will be the first to die.", -- [2]
-				"The Lich King", -- [3]
-				7, -- [4]
-			}, -- [6]
-			{
-				117.635999999999, -- [1]
-				"I delight in the irony.", -- [2]
-				"The Lich King", -- [3]
-				7, -- [4]
-			}, -- [7]
-			{
-				125.019, -- [1]
-				"LIGHT GRANT ME ONE FINAL BLESSING! GIVE ME THE STRENGTH... TO SHATTER THESE BONDS!", -- [2]
-				"Highlord Tirion Fordring", -- [3]
-				7, -- [4]
-			}, -- [8]
-			{
-				146.879000000001, -- [1]
-				"Impossible...", -- [2]
-				"The Lich King", -- [3]
-				7, -- [4]
-			}, -- [9]
-			{
-				154.584999999999, -- [1]
-				"No more, Arthas! No more lives will be consumed by your hatred!", -- [2]
-				"Highlord Tirion Fordring", -- [3]
-				7, -- [4]
-			}, -- [10]
-			["boss"] = "The Lich King",
+			["boss"] = "High Sage Viryx",
 		}, -- [1]
 		{
-			{
-				11.114999999998, -- [1]
-				"Suffer, mortals, as your pathetic magic betrays you!", -- [2]
-				"Sindragosa", -- [3]
-				7, -- [4]
-			}, -- [1]
-			{
-				14.3479999999981, -- [1]
-				"Now, feel my master's limitless power and despair!", -- [2]
-				"Sindragosa", -- [3]
-				7, -- [4]
-			}, -- [2]
-			{
-				16.3109999999942, -- [1]
-				"Free... at last....", -- [2]
-				"Sindragosa", -- [3]
-				7, -- [4]
-			}, -- [3]
-			["boss"] = "Sindragosa",
+			["boss"] = "Rukhran",
 		}, -- [2]
 		{
-			{
-				15.1970000000001, -- [1]
-				"Know my hunger!", -- [2]
-				"Blood-Queen Lana'thel", -- [3]
-				7, -- [4]
-			}, -- [1]
-			["boss"] = "Queen Lana'thel",
+			["boss"] = "Araknath",
 		}, -- [3]
 	},
 	["encounter_spells"] = {
@@ -296,6 +212,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Archimonde",
 		},
+		[153810] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Rukhran",
+		},
 		[183449] = {
 			["school"] = 4,
 			["token"] = {
@@ -332,6 +256,14 @@ EncounterDetailsDB = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
 			["source"] = "Kormrok",
+		},
+		[154132] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Araknath",
 		},
 		[150811] = {
 			["school"] = 1,
@@ -401,6 +333,17 @@ EncounterDetailsDB = {
 				["SPELL_CAST_START"] = true,
 			},
 			["source"] = "Ancient Enforcer",
+		},
+		[154135] = {
+			["school"] = 4,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Araknath",
 		},
 		[180260] = {
 			["school"] = 4,
@@ -566,6 +509,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Gug'rokk",
 		},
+		[154396] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "High Sage Viryx",
+		},
 		[71769] = {
 			["school"] = 32,
 			["type"] = "BUFF",
@@ -668,6 +620,16 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Unknown",
 		},
+		[159382] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Rukhran",
+		},
 		[150759] = {
 			["school"] = 1,
 			["type"] = "BUFF",
@@ -678,6 +640,14 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Slave Watcher Crushto",
+		},
+		[160149] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Rukhran",
 		},
 		[212335] = {
 			["school"] = 1,
@@ -813,6 +783,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Calamity",
 		},
+		[154149] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_HEAL"] = true,
+			},
+			["source"] = "Skyreach Sun Construct Prototype",
+		},
 		[181296] = {
 			["school"] = 1,
 			["type"] = "BUFF",
@@ -839,6 +818,15 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Felborne Overfiend",
+		},
+		[154150] = {
+			["school"] = 4,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+			},
+			["source"] = "Skyreach Sun Construct Prototype",
 		},
 		[152170] = {
 			["school"] = 4,
@@ -1131,6 +1119,14 @@ EncounterDetailsDB = {
 				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
 			["source"] = "Ahri'ok Dugru",
+		},
+		[154159] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Sun Construct Energizer",
 		},
 		[123996] = {
 			["school"] = 8,
@@ -1432,6 +1428,21 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Tyrant Velhari",
 		},
+		[159381] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Rukhran",
+		},
+		[153828] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Solar Flare",
+		},
 		[182020] = {
 			["school"] = 8,
 			["type"] = "BUFF",
@@ -1450,12 +1461,52 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Ancient Sovereign",
 		},
+		[154043] = {
+			["school"] = 4,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Arakkoa Magnifying Glass",
+		},
 		[178124] = {
 			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Oshir",
+		},
+		[154110] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Araknath",
+		},
+		[154113] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Araknath",
+		},
+		[70867] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Blood-Queen Lana'thel",
+		},
+		[156793] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Ranjit",
 		},
 		[71465] = {
 			["school"] = 66,
@@ -1466,12 +1517,62 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Sister Svalna",
 		},
+		[165733] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Ranjit",
+		},
+		[165732] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Ranjit",
+		},
+		[165731] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Ranjit",
+		},
+		[153759] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Ranjit",
+		},
 		[59638] = {
 			["school"] = 16,
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Mirror Image",
+		},
+		[153757] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+			},
+			["source"] = "Ranjit",
+		},
+		[153315] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Ranjit",
 		},
 		[182022] = {
 			["school"] = 8,
@@ -1480,13 +1581,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Iron Reaver",
 		},
-		[185090] = {
+		[153544] = {
 			["school"] = 1,
-			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Siegemaster Mar'tak",
+			["source"] = "Ranjit",
 		},
 		[165578] = {
 			["school"] = 32,
@@ -1521,6 +1622,16 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Wild Imp",
 		},
+		[70084] = {
+			["school"] = 16,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Sindragosa",
+		},
 		[77508] = {
 			["school"] = 4,
 			["token"] = {
@@ -1534,15 +1645,16 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 		},
-		[70084] = {
-			["school"] = 16,
+		[184238] = {
+			["school"] = 1,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Sindragosa",
+			["source"] = "Hulking Berserker",
 		},
 		[186750] = {
 			["school"] = 4,
@@ -1558,40 +1670,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Skulloc",
 		},
-		[184238] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Hulking Berserker",
-		},
-		[181321] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Kormrok",
-		},
-		[154175] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "Bonemaw",
-		},
-		[72905] = {
-			["school"] = 16,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Lady Deathwhisper",
-		},
 		[152897] = {
 			["school"] = 4,
 			["type"] = "DEBUFF",
@@ -1600,6 +1678,14 @@ EncounterDetailsDB = {
 				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
 			["source"] = "Heat Wave",
+		},
+		[181321] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Kormrok",
 		},
 		[187819] = {
 			["school"] = 1,
@@ -1619,12 +1705,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Gas Cloud",
 		},
-		[153089] = {
-			["school"] = 32,
+		[185090] = {
+			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Sadana Bloodfury",
+			["source"] = "Siegemaster Mar'tak",
 		},
 		[182280] = {
 			["school"] = 1,
@@ -1633,6 +1720,29 @@ EncounterDetailsDB = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
 			["source"] = "Iron Reaver",
+		},
+		[183254] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Archimonde",
+		},
+		[153089] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Sadana Bloodfury",
+		},
+		[154175] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Bonemaw",
 		},
 		[180300] = {
 			["school"] = 1,
@@ -1643,14 +1753,6 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Tyrant Velhari",
-		},
-		[183254] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "Archimonde",
 		},
 		[159234] = {
 			["school"] = 16,
@@ -1667,6 +1769,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Coldflame",
 		},
+		[181345] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+			},
+			["source"] = "Unknown",
+		},
 		[150032] = {
 			["school"] = 4,
 			["type"] = "DEBUFF",
@@ -1677,15 +1788,6 @@ EncounterDetailsDB = {
 				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
 			["source"] = "Magmolatus",
-		},
-		[181345] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-			},
-			["source"] = "Unknown",
 		},
 		[188888] = {
 			["school"] = 4,
@@ -1713,6 +1815,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Skulloc",
 		},
+		[183598] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Archimonde",
+		},
 		[184964] = {
 			["school"] = 32,
 			["type"] = "DEBUFF",
@@ -1738,13 +1847,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Kor'kron Rocketeer",
 		},
-		[183598] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Archimonde",
-		},
 		[185806] = {
 			["school"] = 8,
 			["type"] = "DEBUFF",
@@ -1755,6 +1857,13 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Contracted Engineer",
+		},
+		[181324] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Kormrok",
 		},
 		[185284] = {
 			["school"] = 4,
@@ -1773,12 +1882,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Kormrok",
 		},
-		[181324] = {
-			["school"] = 4,
+		[72905] = {
+			["school"] = 16,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Kormrok",
+			["source"] = "Lady Deathwhisper",
 		},
 		[163334] = {
 			["school"] = 1,
@@ -1823,14 +1932,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Siegemaster Mar'tak",
 		},
-		[70161] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "Kor'kron Axethrower",
-		},
 		[71420] = {
 			["school"] = 16,
 			["type"] = "DEBUFF",
@@ -1850,13 +1951,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Gas Cloud",
 		},
-		[185282] = {
-			["school"] = 4,
+		[70161] = {
+			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Iron Reaver",
+			["source"] = "Kor'kron Axethrower",
 		},
 		[70670] = {
 			["school"] = 32,
@@ -1864,6 +1965,15 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Cult Fanatic",
+		},
+		[152837] = {
+			["school"] = 4,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Fiery Boulder",
 		},
 		[150023] = {
 			["school"] = 1,
@@ -1898,13 +2008,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Sadana Bloodfury",
 		},
-		[183817] = {
-			["school"] = 32,
+		[186883] = {
+			["school"] = 4,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Archimonde",
+			["source"] = "Felfire Flamebelcher",
 		},
 		[185008] = {
 			["school"] = 32,
@@ -2103,13 +2213,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Felborne Overfiend",
 		},
-		[186883] = {
-			["school"] = 4,
+		[183817] = {
+			["school"] = 32,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Felfire Flamebelcher",
+			["source"] = "Archimonde",
 		},
 		[181306] = {
 			["school"] = 4,
@@ -2139,14 +2249,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Gorebound Felcaster",
 		},
-		[152837] = {
+		[185282] = {
 			["school"] = 4,
-			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Fiery Boulder",
+			["source"] = "Iron Reaver",
 		},
 		[163390] = {
 			["school"] = 1,
@@ -2294,13 +2403,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Ymirjar Frostbinder",
 		},
-		[70867] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
+		[154121] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Blood-Queen Lana'thel",
+			["source"] = "Araknath",
 		},
 		[180246] = {
 			["school"] = 1,

@@ -28,7 +28,7 @@ DataStore_AgendaDB = {
 		["Options"] = {
 			["WeeklyResetHour"] = 6,
 			["WeeklyResetDay"] = 2,
-			["NextWeeklyReset"] = "2016-08-16",
+			["NextWeeklyReset"] = "2016-08-23",
 		},
 		["Characters"] = {
 			["Default.Stormreaver.Ranidan"] = {
@@ -36,10 +36,6 @@ DataStore_AgendaDB = {
 			},
 			["Default.Stormrage.Emmarosa"] = {
 				["lastUpdate"] = 1471184073,
-				["LFGDungeons"] = {
-					["823.Count"] = 1,
-					["823.Blackhand"] = true,
-				},
 			},
 			["Default.Bloodhoof.Arando"] = {
 				["Contacts"] = {
@@ -50,42 +46,7 @@ DataStore_AgendaDB = {
 				["lastUpdate"] = 1469995040,
 			},
 			["Default.Stormrage.Talthalador"] = {
-				["DungeonIDs"] = {
-					["Icecrown Citadel 25 Player (Heroic)|634586831"] = "66917|1471292678|0|1",
-					["Iron Docks Mythic|634822908"] = "66917|1471292678|0|0",
-					["Grimrail Depot Mythic|634830802"] = "66917|1471292678|0|0",
-					["Hellfire Citadel Heroic|634151367"] = "66917|1471292678|0|1",
-					["The Everbloom Mythic|634827862"] = "66917|1471292678|0|0",
-					["Firelands 25 Player (Heroic)|634814453"] = "66917|1471292678|0|1",
-					["Bloodmaul Slag Mines Mythic|302306311"] = "66917|1471292678|0|0",
-					["Auchindoun Mythic|302309718"] = "66917|1471292678|0|0",
-					["Black Temple 25 Player|634234613"] = "66917|1471292678|0|1",
-					["Skyreach Mythic|302307796"] = "66917|1471292678|0|0",
-					["Shadowmoon Burial Grounds Mythic|634834132"] = "66917|1471292678|0|0",
-				},
-				["lastUpdate"] = 1471292678,
-				["LFGDungeons"] = {
-					["985.Count"] = 3,
-					["984.Socrethar the Eternal"] = true,
-					["849.Kargath Bladefist"] = true,
-					["839.Norushen"] = true,
-					["986.Count"] = 1,
-					["986.Archimonde"] = true,
-					["849.Count"] = 3,
-					["823.Blackhand"] = true,
-					["984.Tyrant Velhari"] = true,
-					["985.Mannoroth"] = true,
-					["839.Immerseus"] = true,
-					["839.Fallen Protectors"] = true,
-					["984.Count"] = 3,
-					["849.The Butcher"] = true,
-					["849.Brackenspore"] = true,
-					["823.Count"] = 1,
-					["839.Count"] = 3,
-					["985.Fel Lord Zakuun"] = true,
-					["985.Xhul'horac"] = true,
-					["984.Shadow-Lord Iskar"] = true,
-				},
+				["lastUpdate"] = 1471372828,
 			},
 			["Default.Stormrage.Brobies"] = {
 				["lastUpdate"] = 1471050334,
@@ -140,20 +101,7 @@ DataStore_AgendaDB = {
 				["lastUpdate"] = 1470432001,
 			},
 			["Default.Stormrage.Dosnutz"] = {
-				["DungeonIDs"] = {
-					["Onyxia's Lair 25 Player|635084574"] = "54654|1471304941|0|1",
-					["Icecrown Citadel 25 Player (Heroic)|635172408"] = "54654|1471304941|0|1",
-				},
-				["lastUpdate"] = 1471304940,
-				["LFGDungeons"] = {
-					["984.Tyrant Velhari"] = true,
-					["982.Count"] = 2,
-					["982.Iron Reaver"] = true,
-					["986.Count"] = 1,
-					["984.Count"] = 1,
-					["986.Archimonde"] = true,
-					["982.Hellfire Assault"] = true,
-				},
+				["lastUpdate"] = 1471371913,
 			},
 			["Default.Stormrage.Kateplusnine"] = {
 				["lastUpdate"] = 1470756353,

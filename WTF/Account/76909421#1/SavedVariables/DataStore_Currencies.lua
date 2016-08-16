@@ -93,12 +93,12 @@ DataStore_CurrenciesDB = {
 				["Garrison Resources"] = 4,
 				["Epicurean's Award"] = 27,
 				["Honor Points"] = 15,
+				["Miscellaneous"] = 11,
 				["Warlords of Draenor"] = 1,
-				["Conquest Points"] = 14,
 				["Apexis Crystal"] = 2,
 				["Legion"] = 36,
 				["Darkmoon Prize Ticket"] = 12,
-				["Miscellaneous"] = 11,
+				["Conquest Points"] = 14,
 				["Mists of Pandaria"] = 22,
 				["Tol Barad Commendation"] = 28,
 				["Champion's Seal"] = 25,
@@ -261,7 +261,7 @@ DataStore_CurrenciesDB = {
 				},
 			},
 			["Default.Stormrage.Talthalador"] = {
-				["lastUpdate"] = 1471292678,
+				["lastUpdate"] = 1471373845,
 				["Archeology"] = {
 					0, -- [1]
 					0, -- [2]
@@ -286,23 +286,23 @@ DataStore_CurrenciesDB = {
 					73, -- [1]
 					3786, -- [2]
 					17, -- [3]
-					19220, -- [4]
+					20, -- [4]
 					23, -- [5]
 					3864, -- [6]
 					3, -- [7]
-					299012, -- [8]
-					86792, -- [9]
+					107012, -- [8]
+					112392, -- [9]
 					83210, -- [10]
-					12, -- [11]
+					396, -- [11]
 				},
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
 					[396] = "0-0-0-0",
 					[390] = "0-0-0-0",
-					[823] = "2336-0-0-0",
+					[823] = "836-0-0-0",
 					[392] = "0-0-0-0",
 					[994] = "0-0-0-0",
-					[824] = "678-0-0-10000",
+					[824] = "878-0-0-10000",
 				},
 			},
 			["Default.Stormrage.Brobies"] = {
@@ -915,13 +915,13 @@ DataStore_CurrenciesDB = {
 			["Default.Stormrage.Dosnutz"] = {
 				["Currencies"] = {
 					73, -- [1]
-					6474, -- [2]
+					1226, -- [2]
 					17, -- [3]
-					12820, -- [4]
+					25620, -- [4]
 					3, -- [5]
 					646532, -- [6]
 					4614, -- [7]
-					251144, -- [8]
+					276744, -- [8]
 					118410, -- [9]
 				},
 				["Archeology"] = {
@@ -944,14 +944,14 @@ DataStore_CurrenciesDB = {
 					0, -- [17]
 					0, -- [18]
 				},
-				["lastUpdate"] = 1471304940,
+				["lastUpdate"] = 1471371997,
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
 					[396] = "0-0-0-0",
 					[390] = "0-0-0-0",
 					[823] = "5051-0-0-0",
 					[392] = "0-0-0-0",
-					[824] = "1962-0-0-10000",
+					[824] = "2162-0-0-10000",
 					[994] = "0-0-0-0",
 				},
 			},

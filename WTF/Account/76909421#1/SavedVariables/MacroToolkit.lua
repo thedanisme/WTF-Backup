@@ -525,8 +525,8 @@ MacroToolkitDB = {
 		["Talthalador - Stormrage"] = {
 			["macros"] = {
 				[121] = {
-					["name"] = " ",
 					["icon"] = "1344654",
+					["name"] = " ",
 					["body"] = "#showtooltip\n/use [@mouseover,harm][]Torment\n",
 				},
 			},

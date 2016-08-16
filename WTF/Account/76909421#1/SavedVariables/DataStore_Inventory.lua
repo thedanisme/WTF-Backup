@@ -123,7 +123,7 @@ DataStore_InventoryDB = {
 				},
 				["averageItemLvl"] = 715,
 				["overallAIL"] = 715,
-				["lastUpdate"] = 1471292678,
+				["lastUpdate"] = 1471372828,
 			},
 			["Default.Stormrage.Brobies"] = {
 				["Inventory"] = {
@@ -477,10 +477,10 @@ DataStore_InventoryDB = {
 				["Inventory"] = {
 					"|cff0070dd|Hitem:138184::::::::100:64:512:9:1:3387:100:::|h[Fel-Infused Helm]|h|r", -- [1]
 					"|cff0070dd|Hitem:138160:5317:::::::100:64::14::::|h[Infernal Cord]|h|r", -- [2]
-					"|cff0070dd|Hitem:138186::::::::100:64:512:9:1:3387:100:::|h[Fel-Infused Spaulders]|h|r", -- [3]
+					"|cff0070dd|Hitem:138186::::::::100:64:512:9:2:3387:3389:100:::|h[Fel-Infused Spaulders]|h|r", -- [3]
 					nil, -- [4]
 					"|cffa335ee|Hitem:114813::::::::100:64:4:13:3:617:537:24:531:::|h[Hexweave Robe of the Fireflash]|h|r", -- [5]
-					"|cff0070dd|Hitem:126017::115812::::::100:64::7:1:608:::|h[Warmongering Combatant's Cord of Prowess]|h|r", -- [6]
+					"|cff0070dd|Hitem:126017::115811::::::100:64::7:1:608:::|h[Warmongering Combatant's Cord of Prowess]|h|r", -- [6]
 					"|cff0070dd|Hitem:138185::::::::100:64:512:9:2:3387:3388:100:::|h[Fel-Infused Leggings]|h|r", -- [7]
 					"|cff0070dd|Hitem:138183::::::::100:64:512:9:1:3387:100:::|h[Fel-Infused Boots]|h|r", -- [8]
 					"|cff0070dd|Hitem:138181::::::::100:64:512:9:1:3387:100:::|h[Fel-Infused Bracers]|h|r", -- [9]
@@ -492,9 +492,9 @@ DataStore_InventoryDB = {
 					"|cff0070dd|Hitem:138188:5310:::::::100:64::14::::|h[Demon Commander's Drape]|h|r", -- [15]
 					"|cffa335ee|Hitem:113134:5384:::::::100:64:4:13:3:620:530:139:531:::|h[Crystalfire Spellstaff of the Fireflash]|h|r", -- [16]
 				},
-				["averageItemLvl"] = 705.625,
-				["overallAIL"] = 705.625,
-				["lastUpdate"] = 1471305241,
+				["averageItemLvl"] = 706.875,
+				["overallAIL"] = 706.875,
+				["lastUpdate"] = 1471371913,
 			},
 			["Default.Stormrage.Kateplusnine"] = {
 				["Inventory"] = {
@@ -828,11 +828,11 @@ DataStore_InventoryDB = {
 					["Vidius"] = {
 						["averageItemLvl"] = 673,
 					},
-					["Garavon"] = {
-						["averageItemLvl"] = 640,
-					},
 					["Chakron"] = {
 						["averageItemLvl"] = 709,
+					},
+					["Garavon"] = {
+						["averageItemLvl"] = 640,
 					},
 					["Twofootninja"] = {
 						["averageItemLvl"] = 13,
@@ -880,7 +880,7 @@ DataStore_InventoryDB = {
 						["averageItemLvl"] = 34,
 					},
 					["Dosnutz"] = {
-						["averageItemLvl"] = 705,
+						["averageItemLvl"] = 706,
 					},
 				},
 			},
@@ -968,9 +968,9 @@ DataStore_InventoryDB = {
 					"16/82", -- [5]
 					"34/79", -- [6]
 					"38/352", -- [7]
-					"51/357", -- [8]
+					"53/357", -- [8]
 					"38/383", -- [9]
-					"46/353", -- [10]
+					"47/353", -- [10]
 					"49/400", -- [11]
 					"27/263", -- [12]
 					nil, -- [13]
@@ -978,7 +978,7 @@ DataStore_InventoryDB = {
 					nil, -- [15]
 					"103/499", -- [16]
 					[19] = "50/304",
-					[23] = "134/525",
+					[23] = "135/525",
 				},
 				["PRIEST"] = {
 					"66/394", -- [1]
@@ -1035,10 +1035,10 @@ DataStore_InventoryDB = {
 					nil, -- [12]
 					"37/294", -- [13]
 					"95/448", -- [14]
-					[16] = "102/499",
-					[19] = "50/304",
-					[17] = "30/143",
 					[28] = "3/4",
+					[16] = "102/499",
+					[17] = "30/143",
+					[19] = "50/304",
 				},
 				["PALADIN"] = {
 					"52/344", -- [1]

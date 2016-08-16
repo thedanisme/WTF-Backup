@@ -86,11 +86,27 @@ BigWigs3DB = {
 				},
 			},
 		},
+		["BigWigs_Plugins_BossBlock"] = {
+		},
 		["BigWigs_Plugins_Colors"] = {
 		},
 		["BigWigs_Plugins_Raid Icons"] = {
 		},
-		["BigWigs_Plugins_BossBlock"] = {
+		["BigWigs_Plugins_Proximity"] = {
+			["profiles"] = {
+				["Default"] = {
+					["posx"] = 819.200453864214,
+					["fontSize"] = 20,
+					["width"] = 144.999908447266,
+					["objects"] = {
+						["background"] = false,
+					},
+					["font"] = "Friz Quadrata TT",
+					["lock"] = true,
+					["height"] = 123,
+					["posy"] = 590.222193111313,
+				},
+			},
 		},
 		["BigWigs_Plugins_Bars"] = {
 			["profiles"] = {
@@ -121,32 +137,6 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_Super Emphasize"] = {
-			["profiles"] = {
-				["Default"] = {
-					["outline"] = "OUTLINE",
-					["font"] = "Expressway",
-				},
-			},
-		},
-		["BigWigs_Plugins_Proximity"] = {
-			["profiles"] = {
-				["Default"] = {
-					["posx"] = 819.200453864214,
-					["fontSize"] = 20,
-					["width"] = 144.999908447266,
-					["objects"] = {
-						["background"] = false,
-					},
-					["font"] = "Friz Quadrata TT",
-					["lock"] = true,
-					["height"] = 123,
-					["posy"] = 590.222193111313,
-				},
-			},
-		},
-		["BigWigs_Plugins_HeroesVoices"] = {
-		},
 		["BigWigs_Bosses_Hellfire High Council"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -155,6 +145,20 @@ BigWigs3DB = {
 					[184355] = 0,
 				},
 			},
+		},
+		["BigWigs_Plugins_Super Emphasize"] = {
+			["profiles"] = {
+				["Default"] = {
+					["outline"] = "OUTLINE",
+					["font"] = "Expressway",
+				},
+			},
+		},
+		["BigWigs_Plugins_HeroesVoices"] = {
+		},
+		["BigWigs_Plugins_Respawn"] = {
+		},
+		["LibDualSpec-1.0"] = {
 		},
 		["BigWigs_Plugins_Messages"] = {
 			["profiles"] = {
@@ -171,8 +175,6 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_Respawn"] = {
-		},
 		["BigWigs_Plugins_Common Auras"] = {
 			["reset"] = true,
 			["profiles"] = {
@@ -183,8 +185,6 @@ BigWigs3DB = {
 					["feast"] = 515,
 				},
 			},
-		},
-		["LibDualSpec-1.0"] = {
 		},
 	},
 	["profileKeys"] = {
@@ -207,10 +207,10 @@ BigWigs3DB = {
 		["Skratch - Turalyon"] = "Default",
 		["Whyfy - Stormrage"] = "Default",
 		["Danoh - Stormrage"] = "Default",
-		["Bloodcox - Stormrage"] = "Default",
-		["Yanlery - Stormrage"] = "Default",
-		["Lackteight - Turalyon"] = "Default",
 		["Brewbies - Turalyon"] = "Default",
+		["Yanlery - Stormrage"] = "Default",
+		["Bloodcox - Stormrage"] = "Default",
+		["Lackteight - Turalyon"] = "Default",
 		["Edgelordshue - Stormrage"] = "Default",
 		["Dalgrens - Bloodhoof"] = "Default",
 		["Shhbbyisok - Stormrage"] = "Default",
@@ -729,6 +729,11 @@ BigWigsStatisticsDB = {
 				["kills"] = 1,
 			},
 		},
+		[867] = {
+			["LFR"] = {
+				["wipes"] = 1,
+			},
+		},
 		[849] = {
 			["LFR"] = {
 				["best"] = 201.006999999998,
@@ -739,11 +744,6 @@ BigWigsStatisticsDB = {
 			["LFR"] = {
 				["best"] = 529.452000000005,
 				["kills"] = 1,
-			},
-		},
-		[867] = {
-			["LFR"] = {
-				["wipes"] = 1,
 			},
 		},
 	},

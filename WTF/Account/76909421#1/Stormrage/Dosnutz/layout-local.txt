@@ -6,6 +6,13 @@ X: -395
 Y: -17
 W: 128
 H: 64
+Frame: ColorPickerFrame
+FrameLevel: 21
+Anchor: CENTER
+X: 0
+Y: 0
+W: 365
+H: 240
 Frame: _NPCScanButton
 FrameLevel: 1
 Anchor: BOTTOM
@@ -20,13 +27,6 @@ X: -55
 Y: 1
 W: 136
 H: 18
-Frame: ColorPickerFrame
-FrameLevel: 21
-Anchor: CENTER
-X: 0
-Y: 0
-W: 405
-H: 240
 Frame: TomTomCrazyArrow
 FrameLevel: 1
 Anchor: CENTER
