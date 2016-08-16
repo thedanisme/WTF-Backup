@@ -19,7 +19,7 @@ BestInSlot.defaultModuleState = false
 BestInSlot.options.DEBUG = false
 BestInSlot.Author = ("%s%s @ %s"):format("|c"..RAID_CLASS_COLORS.DEMONHUNTER.colorStr, "Beliria".."|r",ConvertRGBtoColorString(PLAYER_FACTION_COLORS[0]).."Moonglade|r")
 --@non-debug@ 
-BestInSlot.version = 411 
+BestInSlot.version = 414 
 --@end-non-debug@
 BestInSlot.AlphaVersion = not (GetAddOnMetadata("BestInSlot", "Version"):find("Release") and true or false)
 
@@ -1055,25 +1055,18 @@ function BestInSlot:GetItemSources(itemid)
   end
 end
 
-function BestInSlot:AddCustomItem(itemid, dungeon, updatePrevious, warlordsCrafted, stage, suffix)
-  local itemlink
+function BestInSlot:AddCustomItem(itemid, itemstr, dungeon, updatePrevious)--, warlordsCrafted, stage, suffix)
   if updatePrevious then
     local item = itemData[itemid]
     if item then
       itemData[item.dungeon].customitems[itemid] = nil
-      itemData[itemid] = nil
+      rawset(itemData, itemid, nil)
       self.db.global.customitems[item.dungeon][item.customitem] = nil
     end
   end
-  if warlordsCrafted then
-    itemlink = self:GetWarlordsCraftedLink(itemid, stage, suffix)
-  else
-    itemlink = self:GetItemString(itemid)
-  end
   self.db.global.customitems[dungeon] = self.db.global.customitems[dungeon] or {}
-  self.db.global.customitems[dungeon][itemlink] = true
-  self:RegisterCustomItem(dungeon, itemid, itemlink)
-  return itemlink
+  self.db.global.customitems[dungeon][itemstr] = true
+  self:RegisterCustomItem(dungeon, itemid, itemstr)
 end
 
 local function helperGetCustomItems(dungeon)
@@ -1137,7 +1130,7 @@ function BestInSlot:UnregisterCustomItem(itemid)
   end
   self.db.global.customitems[dungeon][item.customitem] = nil
   itemData[dungeon].customitems[itemid] = nil
-  itemData[itemid] = nil
+  rawset(itemData, itemid, nil) --rawSet overrides default prevention of removing item info.
 end
 --- Gets a localized description for the supplied unlocalized identifier
 -- @param #number datatype Optional datatype to query can be BestInSlot.EXPANSION, BestInSlot_TYPE_RAIDTIER, BestInSlot.INSTANCE, BestInSlot.BOSS or BestInSlot.DIFFICULTY

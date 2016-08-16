@@ -5,7 +5,7 @@ function EmeraldNightmare:OnEnable()
   
   local emeraldNightmareName = GetMapNameByID(1094)
   self:RegisterExpansion("Legion", EXPANSION_NAME6)
-  self:RegisterRaidTier("Legion", 70010, (L["Patch %s"].." - %s"):format("7.0", emeraldNightmareName), PLAYER_DIFFICULTY1, PLAYER_DIFFICULTY2, PLAYER_DIFFICULTY6)
+  self:RegisterRaidTier("Legion", 70010, emeraldNightmareName, PLAYER_DIFFICULTY1, PLAYER_DIFFICULTY2, PLAYER_DIFFICULTY6)
   self:RegisterRaidInstance(70010, EN, emeraldNightmareName, {
     bonusids = {
       [1] = {1807, 3407},

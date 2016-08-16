@@ -117,7 +117,7 @@ function CustomItems:IsItemAllowed(itemid)
   if quality < 3 then
     tinsert(errors, ("- "..L["You can only add items of %ssuperior%s quality or higher!"]):format(ITEM_QUALITY_COLORS[3].hex, RED_FONT_COLOR_CODE))
   end
-  if #equipSlot == 0 then --empty string means no equipment slot?
+  if #equipSlot == 0 and not IsArtifactRelicItem(itemid) then --empty string means no equipment slot?
     tinsert(errors, "- "..L["You must be able to equip the item!"])
   elseif equipSlot == "INVTYPE_TABARD" or equipSlot == "INVTYPE_BODY" then
     tinsert(errors, "- "..(L["You cannot add items of type: %s!"]):format(_G[equipSlot]))
@@ -159,6 +159,7 @@ function CustomItems:LoadCustomItem(itemid)
   local item = self:GetItem(itemid)
   if item then 
     self.itemid = itemid
+    self.itemstr = item.customitem
     self:DisableInput(true)
     self:EnablePreviewLabel(item.link, true)
     self.dungeonDropdown:SetValue(item.dungeon)
@@ -265,8 +266,10 @@ function CustomItems:TryGenerateCustomItem(input)
   self:DisableInput(true)
   local name, link, quality, iLevel, reqLevel, class, subclass, maxStack, equipSlot, texture, vendorPrice = GetItemInfo(input)
   if name then
+    local itemStr = link:match("|H(item.-)|h")
     local itemid = GetItemInfoFromHyperlink(link)
     self.itemid = itemid
+    self.itemstr = itemStr
     if failtimer then 
       failtimer:Cancel()
       self:UnregisterEvent("GET_ITEM_INFO_RECEIVED", OnItemInfoReceived)
@@ -298,14 +301,15 @@ end
 
 function CustomItems:SubmitCustomItem()
   local itemid = self.itemid
+  local itemStr = self.itemstr
   local updatePrevious = self.customItemDropdown:GetValue() ~= nil
   local warlordsCrafted = not self.stageDropdown.disabled
   local suffixType = self.suffixDropdown:GetValue()
   local stageType = self.stageDropdown:GetValue()
   local dungeon = self:GetSelected(self.INSTANCE)
-  local link = self:AddCustomItem(itemid, dungeon, updatePrevious, warlordsCrafted, stageType, suffixType)
+  self:AddCustomItem(itemid, itemStr, dungeon, updatePrevious)
   self.inputbox:SetText("")
-  local link = select(2, GetItemInfo(link))
+  local link = select(2, GetItemInfo(itemStr))
   self:ResetCustomItem("|cff00ff00"..(L["Successfully added %s to the custom items of %s!"]):format(link.."|cff00ff00", self:GetDescription(self.INSTANCE, dungeon)))
   self:SetCustomItemDropdown()
 end
@@ -370,14 +374,14 @@ function CustomItems:Draw(container, dungeon)
   suffixDropdown:SetLabel(L["Warlords crafted options:"])
   suffixDropdown:SetCallback("OnValueChanged", warlordsCraftedDropdownChanged)
   suffixDropdown:SetDisabled(true)
-  container:AddChild(suffixDropdown)
+  --container:AddChild(suffixDropdown)
   
   local stageDropdown = AceGUI:Create("Dropdown")
   stageDropdown:SetList(upgradeStages)
   stageDropdown:SetFullWidth(true)
   stageDropdown:SetCallback("OnValueChanged", warlordsCraftedDropdownChanged)
   stageDropdown:SetDisabled(true)
-  container:AddChild(stageDropdown)
+  --container:AddChild(stageDropdown)
   container:SetUserData("stage", stageDropdown)
   
   local dungeonDropdown = AceGUI:Create("Dropdown")
@@ -465,6 +469,7 @@ function CustomItems:Close()
   self.container = nil
   self.notallowedlabel = nil
   self.itemid = nil
+  self.itemstr = nil
   self.stageDropdown = nil
   self.suffixDropdown = nil
   self.dungeonDropdown = nil
@@ -472,7 +477,6 @@ function CustomItems:Close()
   self.cancelButton = nil
   self.deleteButton = nil
   self.customItemDropdown = nil
-  self.itemid = nil
   if failtimer then failtimer:Cancel() failtimer = nil end
   wipe(upgradeNames) --memory saving, user should barely ever use this screen
 end

@@ -105,7 +105,6 @@ local function selectItemLabelOnClick(widget, _, key)
     local item = Manager:GetItem(itemid, difficulty)
     local raidTier = Manager:GetSelected(Manager.RAIDTIER)
     local slotid = itemGroup:GetUserData("slotid")
-    Manager:Print(slotid)
     Manager:SetItemBestInSlot(raidTier, difficulty, list, slotid, itemid)
     local icon = itemGroup:GetUserData("icon")
     local oldItemId = icon:GetUserData("itemid")
@@ -480,13 +479,6 @@ function Manager:PopulateSlots(slotContainer)
     local button = itemGroup:GetUserData("button")
     local label = itemGroup:GetUserData("label")
     local itemid = BiSList[slotId] and BiSList[slotId].item
-    if i == 4 then
-      self:Print({
-        slotid = slotId,
-        bis = BiSList[slotId],
-        list = BiSList
-      })
-    end
     local isLegionWeapon = false
     if (slotId == 16 or slotId == 17) and self:GetSelected(self.RAIDTIER) >= 70000 then
       --Artifact weapons

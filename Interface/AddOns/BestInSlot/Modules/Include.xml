@@ -4,5 +4,4 @@
 	<Script file="ZoneDetection.lua"/>
 	<Script file="Timer.lua"/>
 	<Script file="History.lua"/>
-	<Script file="LegionArtifact.lua"/>
 </Ui>

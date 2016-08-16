@@ -1,4 +1,12 @@
 ==<<color #ffb100>>BestInSlot Changelog<</color>>
+===<<color #ffb100>>Release 7.0.12<</color>>
+<<color #ffb100>>Minor additions<</color>>
+* Custom items now retain their secondary item data like mythic quality and suffix.
+
+<<color #ffb100>>Bug fixes<</color>>
+* Custom items can be edited and removed again
+* Fel relics once again show a loot table
+
 ===<<color #ffb100>>Release 7.0.11<</color>>
 <<color #ffb100>>Bug fixes<</color>>
 * Fixed cloak/waist slots disapearing after picking them.

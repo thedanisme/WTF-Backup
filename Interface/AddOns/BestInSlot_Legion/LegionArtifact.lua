@@ -56,12 +56,12 @@ function Artifact:OnEnable()
     FEL = {
       normal = {135, 565},
       highlight = {135, 687},
-      "Fel",
+      localized = "Fel",
     },
     WATER = {
       normal = {379, 687},
       highlight = {379, 809},
-      "Water",
+      localized = "Water",
     },
   }
   local itemids = {
@@ -144,6 +144,7 @@ function Artifact:GetRelicsForRaidTier(relic, raidTier, difficulty, lowerRaidTie
   local lootTable = self:GetFullLootTableForRaidTier(raidTier, difficulty)
   local relics = {}
   local relicName = self.relics[relic].localized
+  self:Print(relicName)
   for id, iteminfo in pairs(lootTable) do
     if IsArtifactRelicItem(id) and select(3, C_ArtifactUI.GetRelicInfoByItemID(id)) == relicName then
       tinsert(relics, id)

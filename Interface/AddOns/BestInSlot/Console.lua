@@ -26,11 +26,11 @@ end
 --@param #boolean overrideDebug Override the debug setting, if not set, it'll hide this message if the debug setting is disabled
 --@param #boolean second Defines wether this message was part of a previous message.
 function BestInSlot.Print(module, str, overrideDebug, second)
-  local normalColor = module.colorNormal
-  local colorHighlight = module.colorHighlight
-  local textFormatSize = 40
-  local maxSize = 255
   if BestInSlot.options.DEBUG or overrideDebug then
+    local normalColor = module.colorNormal
+    local colorHighlight = module.colorHighlight
+    local textFormatSize = 40
+    local maxSize = 255
     local name = module.Description and "BestInSlot "..module.Description or module.name or "BestInSlot"
     if type(str) == "string" or type(str) == "number" or type(str) == "nil" then
       str = tostring(str)
