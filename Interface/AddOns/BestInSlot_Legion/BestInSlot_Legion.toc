@@ -2,9 +2,9 @@
 ## Title: Best In Slot [|cffff975bLegion|r]
 ## Notes: Warlords of Draenor Module for BestInSlot
 ## Author: Beliria @ Moonglade-EU
-## Version: Release 7.0.12
+## Version: Release 7.0.13
 ## Dependencies: BestInSlot
-## X-Curse-Packaged-Version: Release 7.0.12
+## X-Curse-Packaged-Version: Release 7.0.13
 ## X-Curse-Project-Name: BestInSlot
 ## X-Curse-Project-ID: bestinslot
 ## X-Curse-Repository-ID: wow/bestinslot/mainline

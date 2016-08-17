@@ -1,4 +1,4 @@
-local BestInSlot, L, AceGUI = unpack(select(2, ...))
+local BestInSlot = LibStub("AceAddon-3.0"):GetAddon("BestInSlot")
 local GetItemInfo, tinsert =
       GetItemInfo, table.insert
 local Artifact = BestInSlot:NewModule("Artifacts")
@@ -144,7 +144,6 @@ function Artifact:GetRelicsForRaidTier(relic, raidTier, difficulty, lowerRaidTie
   local lootTable = self:GetFullLootTableForRaidTier(raidTier, difficulty)
   local relics = {}
   local relicName = self.relics[relic].localized
-  self:Print(relicName)
   for id, iteminfo in pairs(lootTable) do
     if IsArtifactRelicItem(id) and select(3, C_ArtifactUI.GetRelicInfoByItemID(id)) == relicName then
       tinsert(relics, id)

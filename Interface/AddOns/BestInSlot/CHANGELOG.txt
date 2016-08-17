@@ -1,4 +1,8 @@
 ==<<color #ffb100>>BestInSlot Changelog<</color>>
+===<<color #ffb100>>Release 7.0.13<</color>>
+<<color #ffb100>>Bug fixes<</color>>
+* Fixes an error where Artifacts didn't load properly
+
 ===<<color #ffb100>>Release 7.0.12<</color>>
 <<color #ffb100>>Minor additions<</color>>
 * Custom items now retain their secondary item data like mythic quality and suffix.

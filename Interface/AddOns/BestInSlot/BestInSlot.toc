@@ -2,9 +2,9 @@
 ## Title: Best In Slot
 ## Notes: Keep track of your, your raid member, and your guilds Best in Slot list!
 ## Author: Beliria @ Moonglade-EU
-## Version: Release 7.0.12
+## Version: Release 7.0.13
 ## SavedVariables: BestInSlotDB
-## X-Curse-Packaged-Version: Release 7.0.12
+## X-Curse-Packaged-Version: Release 7.0.13
 ## X-Curse-Project-Name: BestInSlot
 ## X-Curse-Project-ID: bestinslot
 ## X-Curse-Repository-ID: wow/bestinslot/mainline
