@@ -10,9 +10,9 @@ DataStore_AgendaDB = {
 		["Titte - Turalyon"] = "Titte - Turalyon",
 		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
 		["Dosnutz - Stormrage"] = "Dosnutz - Stormrage",
-		["Callil - Turalyon"] = "Callil - Turalyon",
+		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
-		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
+		["Brobies - Stormrage"] = "Brobies - Stormrage",
 		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
 		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
@@ -21,8 +21,8 @@ DataStore_AgendaDB = {
 		["Edgelordshue - Stormrage"] = "Edgelordshue - Stormrage",
 		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
 		["Shhbbyisok - Stormrage"] = "Shhbbyisok - Stormrage",
-		["Brobies - Stormrage"] = "Brobies - Stormrage",
-		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
+		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
+		["Callil - Turalyon"] = "Callil - Turalyon",
 	},
 	["global"] = {
 		["Options"] = {
@@ -35,7 +35,10 @@ DataStore_AgendaDB = {
 				["lastUpdate"] = 1471191147,
 			},
 			["Default.Stormrage.Emmarosa"] = {
-				["lastUpdate"] = 1471517232,
+				["DungeonIDs"] = {
+					["Dragon Soul 25 Player (Heroic)|635877836"] = "424923|1471539517|0|1",
+				},
+				["lastUpdate"] = 1471539512,
 			},
 			["Default.Bloodhoof.Arando"] = {
 				["Contacts"] = {
@@ -45,17 +48,17 @@ DataStore_AgendaDB = {
 				},
 				["lastUpdate"] = 1469995040,
 			},
-			["Default.Stormrage.Talthalador"] = {
-				["lastUpdate"] = 1471512821,
+			["Default.Stormrage.Edgelordshue"] = {
+				["lastUpdate"] = 1470762217,
 			},
 			["Default.Stormrage.Brobies"] = {
-				["lastUpdate"] = 1471050334,
+				["lastUpdate"] = 1471527266,
 			},
-			["Default.Turalyon.Shaneequa"] = {
-				["lastUpdate"] = 1461602628,
+			["Default.Stormrage.Kateplusnine"] = {
+				["lastUpdate"] = 1470756353,
 			},
-			["Default.Turalyon.Callil"] = {
-				["lastUpdate"] = 1471190765,
+			["Default.Turalyon.Skratch"] = {
+				["lastUpdate"] = 1469994525,
 			},
 			["Default.Turalyon.Knutts"] = {
 				["lastUpdate"] = 1469912067,
@@ -64,8 +67,8 @@ DataStore_AgendaDB = {
 				["Contacts"] = {
 					["Sgtshmitty"] = {
 						["note"] = "",
-						["class"] = "Demon Hunter",
 						["level"] = 100,
+						["class"] = "Demon Hunter",
 					},
 				},
 				["lastUpdate"] = 1471197150,
@@ -73,20 +76,20 @@ DataStore_AgendaDB = {
 			["Default.Turalyon.Pryahprism"] = {
 				["lastUpdate"] = 1471190896,
 			},
-			["Default.Stormrage.Edgelordshue"] = {
-				["lastUpdate"] = 1470762217,
+			["Default.Bloodhoof.Dalgrens"] = {
+				["lastUpdate"] = 1469995428,
 			},
 			["Default.Stormrage.Yanlery"] = {
 				["lastUpdate"] = 1471466297,
 			},
-			["Default.Turalyon.Skratch"] = {
-				["lastUpdate"] = 1469994525,
+			["Default.Turalyon.Callil"] = {
+				["lastUpdate"] = 1471190765,
 			},
 			["Default.Stormrage.Ershirley"] = {
 				["lastUpdate"] = 1469599252,
 			},
-			["Default.Stormrage.Danoh"] = {
-				["lastUpdate"] = 1471050193,
+			["Default.Turalyon.Titte"] = {
+				["lastUpdate"] = 1470432001,
 			},
 			["Default.Turalyon.Lackteight"] = {
 				["lastUpdate"] = 1471053493,
@@ -97,17 +100,25 @@ DataStore_AgendaDB = {
 			["Default.Stormrage.Whyfy"] = {
 				["lastUpdate"] = 1470788843,
 			},
-			["Default.Turalyon.Titte"] = {
-				["lastUpdate"] = 1470432001,
+			["Default.Stormrage.Danoh"] = {
+				["lastUpdate"] = 1471526972,
 			},
 			["Default.Stormrage.Dosnutz"] = {
-				["lastUpdate"] = 1471471305,
+				["lastUpdate"] = 1471536334,
+				["LFGDungeons"] = {
+					["986.Count"] = 1,
+					["985.Count"] = 3,
+					["985.Mannoroth"] = true,
+					["985.Fel Lord Zakuun"] = true,
+					["985.Xhul'horac"] = true,
+					["986.Archimonde"] = true,
+				},
 			},
-			["Default.Stormrage.Kateplusnine"] = {
-				["lastUpdate"] = 1470756353,
+			["Default.Turalyon.Shaneequa"] = {
+				["lastUpdate"] = 1461602628,
 			},
-			["Default.Bloodhoof.Dalgrens"] = {
-				["lastUpdate"] = 1469995428,
+			["Default.Stormrage.Talthalador"] = {
+				["lastUpdate"] = 1471526320,
 			},
 		},
 	},

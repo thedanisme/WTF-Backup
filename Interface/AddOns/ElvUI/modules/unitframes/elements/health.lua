@@ -19,6 +19,9 @@ assert(ElvUF, "ElvUI was unable to locate oUF.")
 
 function UF:Construct_HealthBar(frame, bg, text, textPos)
 	local health = CreateFrame('StatusBar', nil, frame)
+	if frame.unite == 'target' then
+		health:SetReverseFill(true)
+	end
 	UF['statusbars'][health] = true
 
 	health:SetFrameStrata("LOW")
