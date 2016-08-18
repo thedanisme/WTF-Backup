@@ -358,9 +358,9 @@ Postal3DB = {
 		["Talthalador - Stormrage"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Khloroshue|Stormrage|Alliance", -- [1]
-					"Malversion|Stormrage|Alliance", -- [2]
-					"Emmarosa|Stormrage|Alliance", -- [3]
+					"Emmarosa|Stormrage|Alliance", -- [1]
+					"Khloroshue|Stormrage|Alliance", -- [2]
+					"Malversion|Stormrage|Alliance", -- [3]
 				},
 			},
 		},

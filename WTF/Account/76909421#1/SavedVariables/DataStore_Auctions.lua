@@ -39,8 +39,8 @@ DataStore_AuctionsDB = {
 				["lastVisitDate"] = "2016/07/30 10:54",
 			},
 			["Default.Stormrage.Emmarosa"] = {
-				["lastUpdate"] = 1471182969,
-				["lastVisitDate"] = "2016/08/14 09:55",
+				["lastUpdate"] = 1471517307,
+				["lastVisitDate"] = "2016/08/18 06:48",
 			},
 			["Default.Stormrage.Danoh"] = {
 				["lastUpdate"] = 1469993168,
@@ -57,24 +57,18 @@ DataStore_AuctionsDB = {
 			["Default.Stormrage.Dosnutz"] = {
 				["lastUpdate"] = 1471470451,
 				["Auctions"] = {
-					"0|113289|1||9025|9500|3", -- [1]
-					"0|113289|1||9025|9500|3", -- [2]
-					"0|113289|1||9025|9500|3", -- [3]
-					"0|113289|1||9025|9500|3", -- [4]
-					"0|113289|1||9025|9500|3", -- [5]
-					"0|113289|1||9025|9500|3", -- [6]
-					"0|44709|1||26353000|27740000|4", -- [7]
-					"0|4071|1||2180250|2295000|4", -- [8]
+					"0|44709|1||26353000|27740000|4", -- [1]
+					"0|4071|1||2180250|2295000|4", -- [2]
 				},
 				["lastVisitDate"] = "2016/08/17 17:47",
-			},
-			["Default.Stormrage.Talthalador"] = {
-				["lastUpdate"] = 1471373851,
-				["lastVisitDate"] = "2016/08/16 14:57",
 			},
 			["Default.Stormrage.Brobies"] = {
 				["lastUpdate"] = 1470026604,
 				["lastVisitDate"] = "2016/08/01 00:43",
+			},
+			["Default.Stormrage.Talthalador"] = {
+				["lastUpdate"] = 1471373851,
+				["lastVisitDate"] = "2016/08/16 14:57",
 			},
 		},
 	},
