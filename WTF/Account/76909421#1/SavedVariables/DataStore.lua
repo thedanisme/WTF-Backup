@@ -49,13 +49,13 @@ DataStoreDB = {
 			["Default.Bloodhoof.Arando"] = {
 				["faction"] = "Horde",
 			},
-			["Default.Stormrage.Talthalador"] = {
-				["guildName"] = "Horizon",
-				["faction"] = "Alliance",
-			},
 			["Default.Stormrage.Brobies"] = {
 				["faction"] = "Alliance",
 				["guildName"] = "Horizon",
+			},
+			["Default.Stormrage.Talthalador"] = {
+				["guildName"] = "Horizon",
+				["faction"] = "Alliance",
 			},
 			["Default.Turalyon.Shaneequa"] = {
 				["faction"] = "Horde",
@@ -74,8 +74,8 @@ DataStoreDB = {
 			["Default.Turalyon.Pryahprism"] = {
 				["faction"] = "Horde",
 			},
-			["Default.Stormrage.Edgelordshue"] = {
-				["faction"] = "Alliance",
+			["Default.Bloodhoof.Dalgrens"] = {
+				["faction"] = "Horde",
 			},
 			["Default.Stormrage.Yanlery"] = {
 				["faction"] = "Alliance",
@@ -114,8 +114,8 @@ DataStoreDB = {
 			["Default.Stormrage.Kateplusnine"] = {
 				["faction"] = "Alliance",
 			},
-			["Default.Bloodhoof.Dalgrens"] = {
-				["faction"] = "Horde",
+			["Default.Stormrage.Edgelordshue"] = {
+				["faction"] = "Alliance",
 			},
 		},
 		["ShortToLongRealmNames"] = {

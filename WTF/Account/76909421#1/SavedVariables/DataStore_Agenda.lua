@@ -45,11 +45,11 @@ DataStore_AgendaDB = {
 				},
 				["lastUpdate"] = 1469995040,
 			},
-			["Default.Stormrage.Talthalador"] = {
-				["lastUpdate"] = 1471372828,
-			},
 			["Default.Stormrage.Brobies"] = {
 				["lastUpdate"] = 1471050334,
+			},
+			["Default.Stormrage.Talthalador"] = {
+				["lastUpdate"] = 1471372828,
 			},
 			["Default.Turalyon.Shaneequa"] = {
 				["lastUpdate"] = 1461602628,
@@ -73,11 +73,11 @@ DataStore_AgendaDB = {
 			["Default.Turalyon.Pryahprism"] = {
 				["lastUpdate"] = 1471190896,
 			},
-			["Default.Stormrage.Edgelordshue"] = {
-				["lastUpdate"] = 1470762217,
+			["Default.Bloodhoof.Dalgrens"] = {
+				["lastUpdate"] = 1469995428,
 			},
 			["Default.Stormrage.Yanlery"] = {
-				["lastUpdate"] = 1471050783,
+				["lastUpdate"] = 1471466297,
 			},
 			["Default.Turalyon.Skratch"] = {
 				["lastUpdate"] = 1469994525,
@@ -101,13 +101,13 @@ DataStore_AgendaDB = {
 				["lastUpdate"] = 1470432001,
 			},
 			["Default.Stormrage.Dosnutz"] = {
-				["lastUpdate"] = 1471371913,
+				["lastUpdate"] = 1471471305,
 			},
 			["Default.Stormrage.Kateplusnine"] = {
 				["lastUpdate"] = 1470756353,
 			},
-			["Default.Bloodhoof.Dalgrens"] = {
-				["lastUpdate"] = 1469995428,
+			["Default.Stormrage.Edgelordshue"] = {
+				["lastUpdate"] = 1470762217,
 			},
 		},
 	},

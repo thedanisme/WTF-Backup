@@ -2,12 +2,18 @@
 AtlasLootCharDB = {
 	["__addonrevision"] = 4325,
 	["GUI"] = {
+		["classFilter"] = true,
 		["selected"] = {
-			"AtlasLoot_Cataclysm", -- [1]
-			"BlackwingDescent", -- [2]
-			nil, -- [3]
-			4, -- [4]
+			nil, -- [1]
+			"ShadowmoonBurialGrounds", -- [2]
+			2, -- [3]
+			12, -- [4]
 			0, -- [5]
+		},
+		["point"] = {
+			[3] = "CENTER",
+			[4] = 2.00008058547974,
+			[5] = -3.282587567809970e-005,
 		},
 	},
 	["MiniMapButton"] = {
