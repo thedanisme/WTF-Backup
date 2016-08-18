@@ -10,9 +10,9 @@ DataStore_AgendaDB = {
 		["Titte - Turalyon"] = "Titte - Turalyon",
 		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
 		["Dosnutz - Stormrage"] = "Dosnutz - Stormrage",
-		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
+		["Callil - Turalyon"] = "Callil - Turalyon",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
-		["Brobies - Stormrage"] = "Brobies - Stormrage",
+		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
 		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
 		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
@@ -21,8 +21,8 @@ DataStore_AgendaDB = {
 		["Edgelordshue - Stormrage"] = "Edgelordshue - Stormrage",
 		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
 		["Shhbbyisok - Stormrage"] = "Shhbbyisok - Stormrage",
-		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
-		["Callil - Turalyon"] = "Callil - Turalyon",
+		["Brobies - Stormrage"] = "Brobies - Stormrage",
+		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
 	},
 	["global"] = {
 		["Options"] = {
@@ -48,17 +48,25 @@ DataStore_AgendaDB = {
 				},
 				["lastUpdate"] = 1469995040,
 			},
-			["Default.Stormrage.Edgelordshue"] = {
-				["lastUpdate"] = 1470762217,
-			},
 			["Default.Stormrage.Brobies"] = {
 				["lastUpdate"] = 1471527266,
 			},
-			["Default.Stormrage.Kateplusnine"] = {
-				["lastUpdate"] = 1470756353,
+			["Default.Stormrage.Talthalador"] = {
+				["lastUpdate"] = 1471553639,
+				["LFGDungeons"] = {
+					["986.Count"] = 1,
+					["982.Count"] = 3,
+					["982.Iron Reaver"] = true,
+					["982.Kormrok"] = true,
+					["986.Archimonde"] = true,
+					["982.Hellfire Assault"] = true,
+				},
 			},
-			["Default.Turalyon.Skratch"] = {
-				["lastUpdate"] = 1469994525,
+			["Default.Turalyon.Shaneequa"] = {
+				["lastUpdate"] = 1461602628,
+			},
+			["Default.Turalyon.Callil"] = {
+				["lastUpdate"] = 1471190765,
 			},
 			["Default.Turalyon.Knutts"] = {
 				["lastUpdate"] = 1469912067,
@@ -67,8 +75,8 @@ DataStore_AgendaDB = {
 				["Contacts"] = {
 					["Sgtshmitty"] = {
 						["note"] = "",
-						["level"] = 100,
 						["class"] = "Demon Hunter",
+						["level"] = 100,
 					},
 				},
 				["lastUpdate"] = 1471197150,
@@ -82,14 +90,14 @@ DataStore_AgendaDB = {
 			["Default.Stormrage.Yanlery"] = {
 				["lastUpdate"] = 1471466297,
 			},
-			["Default.Turalyon.Callil"] = {
-				["lastUpdate"] = 1471190765,
+			["Default.Turalyon.Skratch"] = {
+				["lastUpdate"] = 1469994525,
 			},
 			["Default.Stormrage.Ershirley"] = {
 				["lastUpdate"] = 1469599252,
 			},
-			["Default.Turalyon.Titte"] = {
-				["lastUpdate"] = 1470432001,
+			["Default.Stormrage.Danoh"] = {
+				["lastUpdate"] = 1471526972,
 			},
 			["Default.Turalyon.Lackteight"] = {
 				["lastUpdate"] = 1471053493,
@@ -100,8 +108,8 @@ DataStore_AgendaDB = {
 			["Default.Stormrage.Whyfy"] = {
 				["lastUpdate"] = 1470788843,
 			},
-			["Default.Stormrage.Danoh"] = {
-				["lastUpdate"] = 1471526972,
+			["Default.Turalyon.Titte"] = {
+				["lastUpdate"] = 1470432001,
 			},
 			["Default.Stormrage.Dosnutz"] = {
 				["lastUpdate"] = 1471536334,
@@ -109,16 +117,16 @@ DataStore_AgendaDB = {
 					["986.Count"] = 1,
 					["985.Count"] = 3,
 					["985.Mannoroth"] = true,
-					["985.Fel Lord Zakuun"] = true,
-					["985.Xhul'horac"] = true,
 					["986.Archimonde"] = true,
+					["985.Xhul'horac"] = true,
+					["985.Fel Lord Zakuun"] = true,
 				},
 			},
-			["Default.Turalyon.Shaneequa"] = {
-				["lastUpdate"] = 1461602628,
+			["Default.Stormrage.Kateplusnine"] = {
+				["lastUpdate"] = 1470756353,
 			},
-			["Default.Stormrage.Talthalador"] = {
-				["lastUpdate"] = 1471526320,
+			["Default.Stormrage.Edgelordshue"] = {
+				["lastUpdate"] = 1470762217,
 			},
 		},
 	},

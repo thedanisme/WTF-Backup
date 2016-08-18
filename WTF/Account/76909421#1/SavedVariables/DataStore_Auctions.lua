@@ -10,9 +10,9 @@ DataStore_AuctionsDB = {
 		["Titte - Turalyon"] = "Titte - Turalyon",
 		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
 		["Dosnutz - Stormrage"] = "Dosnutz - Stormrage",
-		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
+		["Callil - Turalyon"] = "Callil - Turalyon",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
-		["Brobies - Stormrage"] = "Brobies - Stormrage",
+		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
 		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
 		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
@@ -21,8 +21,8 @@ DataStore_AuctionsDB = {
 		["Edgelordshue - Stormrage"] = "Edgelordshue - Stormrage",
 		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
 		["Shhbbyisok - Stormrage"] = "Shhbbyisok - Stormrage",
-		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
-		["Callil - Turalyon"] = "Callil - Turalyon",
+		["Brobies - Stormrage"] = "Brobies - Stormrage",
+		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
 	},
 	["global"] = {
 		["Characters"] = {
@@ -42,17 +42,17 @@ DataStore_AuctionsDB = {
 				["lastUpdate"] = 1471517855,
 				["lastVisitDate"] = "2016/08/18 06:57",
 			},
-			["Default.Stormrage.Brobies"] = {
-				["lastUpdate"] = 1470026604,
-				["lastVisitDate"] = "2016/08/01 00:43",
+			["Default.Stormrage.Danoh"] = {
+				["lastUpdate"] = 1469993168,
+				["lastVisitDate"] = "2016/07/31 15:26",
 			},
 			["Default.Stormrage.Whyfy"] = {
 				["lastUpdate"] = 1469900969,
 				["lastVisitDate"] = "2016/07/30 13:49",
 			},
-			["Default.Stormrage.Talthalador"] = {
-				["lastUpdate"] = 1471373851,
-				["lastVisitDate"] = "2016/08/16 14:57",
+			["Default.Turalyon.Titte"] = {
+				["lastUpdate"] = 1469638742,
+				["lastVisitDate"] = "2016/07/27 12:59",
 			},
 			["Default.Stormrage.Dosnutz"] = {
 				["lastUpdate"] = 1471538955,
@@ -70,13 +70,13 @@ DataStore_AuctionsDB = {
 				},
 				["lastVisitDate"] = "2016/08/18 12:49",
 			},
-			["Default.Turalyon.Titte"] = {
-				["lastUpdate"] = 1469638742,
-				["lastVisitDate"] = "2016/07/27 12:59",
+			["Default.Stormrage.Talthalador"] = {
+				["lastUpdate"] = 1471373851,
+				["lastVisitDate"] = "2016/08/16 14:57",
 			},
-			["Default.Stormrage.Danoh"] = {
-				["lastUpdate"] = 1469993168,
-				["lastVisitDate"] = "2016/07/31 15:26",
+			["Default.Stormrage.Brobies"] = {
+				["lastUpdate"] = 1470026604,
+				["lastVisitDate"] = "2016/08/01 00:43",
 			},
 		},
 	},

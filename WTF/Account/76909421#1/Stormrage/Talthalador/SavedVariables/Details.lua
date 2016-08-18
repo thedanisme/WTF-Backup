@@ -19,631 +19,263 @@ _detalhes_database = {
 		["tabelas"] = {
 			{
 				{
+					["combatId"] = 76,
 					["tipo"] = 2,
-					["combatId"] = 21,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["damage_from"] = {
-								["Shadowy Illusion <[*] Shadow Illusion>"] = true,
-								["Slumber Fog <[*] Slumber Cloud>"] = true,
-								["Malphazel"] = true,
 							},
 							["targets"] = {
-								["Shadowy Illusion <[*] Shadow Illusion>"] = 752861,
-								["Malphazel"] = 1163938,
+								["Undead Excavator"] = 1003074,
+								["Foreman Thistlenettle"] = 1003073,
+								["Skeletal Miner"] = 809713,
+								["Undead Dynamiter"] = 2332769,
 							},
-							["delay"] = 0,
 							["pets"] = {
 							},
-							["custom"] = 0,
-							["tipo"] = 1,
+							["on_hold"] = false,
 							["classe"] = "DEMONHUNTER",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 1916799.004497,
-							["friendlyfire_total"] = 0,
+							["total_without_pet"] = 5148629.00459,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["dps_started"] = false,
-							["end_time"] = 1471525899,
-							["damage_taken"] = 1252853.004497,
+							["end_time"] = 1471553558,
+							["friendlyfire_total"] = 0,
+							["spec"] = 577,
+							["nome"] = "Talthalador",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
-										["c_amt"] = 14,
-										["b_amt"] = 1,
-										["c_dmg"] = 125908,
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 329654,
 										["g_amt"] = 0,
-										["n_max"] = 6395,
+										["n_max"] = 0,
 										["targets"] = {
-											["Shadowy Illusion"] = 0,
-											["Shadowy Illusion <[*] Shadow Illusion>"] = 53484,
-											["Malphazel"] = 143440,
+											["Skeletal Miner"] = 329654,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 71016,
-										["n_min"] = 1734,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 41,
-										["total"] = 196924,
-										["c_max"] = 12775,
-										["c_min"] = 4897,
+										["counter"] = 1,
+										["total"] = 329654,
+										["c_max"] = 329654,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["b_dmg"] = 1734,
+										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 18,
-										["spellschool"] = 1,
-										["MISS"] = 9,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 329654,
 									}, -- [1]
-									[204157] = {
-										["c_amt"] = 0,
+									[192611] = {
+										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 0,
+										["c_dmg"] = 2006147,
 										["g_amt"] = 0,
-										["n_max"] = 7526,
+										["n_max"] = 1003074,
 										["targets"] = {
-											["Malphazel"] = 14346,
+											["Undead Excavator"] = 1003074,
+											["Foreman Thistlenettle"] = 1003073,
+											["Undead Dynamiter"] = 2006147,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 14346,
-										["n_min"] = 6820,
+										["n_dmg"] = 2006147,
+										["n_min"] = 1003073,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 14346,
-										["c_max"] = 0,
-										["id"] = 204157,
+										["counter"] = 3,
+										["total"] = 4012294,
+										["c_max"] = 2006147,
+										["id"] = 192611,
 										["r_dmg"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 127,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									[178741] = {
-										["c_amt"] = 17,
-										["b_amt"] = 0,
-										["c_dmg"] = 217589,
-										["g_amt"] = 0,
-										["n_max"] = 7859,
-										["targets"] = {
-											["Shadowy Illusion <[*] Shadow Illusion>"] = 110315,
-											["Malphazel"] = 183995,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 76721,
-										["n_min"] = 6077,
-										["g_dmg"] = 0,
-										["counter"] = 28,
-										["total"] = 294310,
-										["c_max"] = 14033,
-										["id"] = 178741,
-										["r_dmg"] = 0,
-										["c_min"] = 11883,
 										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 11,
-										["a_dmg"] = 0,
-										["spellschool"] = 4,
+										["c_min"] = 2006147,
 									},
-									[203782] = {
-										["c_amt"] = 12,
-										["b_amt"] = 1,
-										["c_dmg"] = 373047,
-										["g_amt"] = 0,
-										["n_max"] = 17965,
-										["targets"] = {
-											["Shadowy Illusion <[*] Shadow Illusion>"] = 191308,
-											["Malphazel"] = 316424,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 134685,
-										["n_min"] = 10696,
-										["g_dmg"] = 0,
-										["counter"] = 21,
-										["total"] = 507732,
-										["c_max"] = 36499,
-										["id"] = 203782,
-										["r_dmg"] = 0,
-										["c_min"] = 27498,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 10696,
-										["n_amt"] = 9,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									[204021] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 70551,
-										["targets"] = {
-											["Malphazel"] = 70551,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 70551,
-										["n_min"] = 70551,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 70551,
-										["c_max"] = 0,
-										["id"] = 204021,
-										["r_dmg"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 4,
-									},
-									[204598] = {
+									[198813] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 31052,
+										["c_dmg"] = 326622,
 										["g_amt"] = 0,
-										["n_max"] = 15765,
+										["n_max"] = 162635,
 										["targets"] = {
-											["Shadowy Illusion <[*] Shadow Illusion>"] = 33052,
-											["Malphazel"] = 48383,
+											["Skeletal Miner"] = 480059,
+											["Undead Dynamiter"] = 326622,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 50383,
-										["n_min"] = 5629,
+										["n_dmg"] = 480059,
+										["n_min"] = 157364,
 										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 81435,
-										["c_max"] = 31052,
-										["id"] = 204598,
+										["counter"] = 4,
+										["total"] = 806681,
+										["c_max"] = 326622,
+										["id"] = 198813,
 										["r_dmg"] = 0,
-										["c_min"] = 31052,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 7,
+										["spellschool"] = 1,
 										["a_dmg"] = 0,
-										["spellschool"] = 4,
-									},
-									[187727] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 110123,
-										["g_amt"] = 0,
-										["n_max"] = 31610,
-										["targets"] = {
-											["Shadowy Illusion <[*] Shadow Illusion>"] = 82593,
-											["Malphazel"] = 114201,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 86671,
-										["n_min"] = 27530,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 196794,
-										["c_max"] = 55062,
-										["id"] = 187727,
-										["r_dmg"] = 0,
-										["c_min"] = 55061,
-										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
-										["a_dmg"] = 0,
-										["spellschool"] = 4,
-									},
-									[228478] = {
-										["c_amt"] = 6,
-										["b_amt"] = 1,
-										["c_dmg"] = 372582,
-										["g_amt"] = 0,
-										["n_max"] = 36360,
-										["targets"] = {
-											["Shadowy Illusion <[*] Shadow Illusion>"] = 282109,
-											["Malphazel"] = 272598,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 182125,
-										["n_min"] = 20396,
-										["g_dmg"] = 0,
-										["counter"] = 12,
-										["total"] = 554707,
-										["c_max"] = 69473,
-										["id"] = 228478,
-										["r_dmg"] = 0,
-										["c_min"] = 56637,
 										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 20396,
-										["n_amt"] = 6,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
+										["c_min"] = 326622,
 									},
 								},
-								["tipo"] = 2,
 							},
-							["nome"] = "Talthalador",
-							["spec"] = 581,
 							["grupo"] = true,
-							["last_dps"] = 39118.347030551,
-							["friendlyfire"] = {
-							},
-							["colocacao"] = 1,
-							["last_event"] = 1471525898,
-							["on_hold"] = false,
-							["start_time"] = 1471525850,
+							["total"] = 5148629.00459,
 							["serial"] = "Player-60-0A98990A",
-							["total"] = 1916799.004497,
+							["last_dps"] = 514862.900459,
+							["custom"] = 0,
+							["last_event"] = 1471553557,
+							["damage_taken"] = 0.00459,
+							["start_time"] = 1471553552,
+							["delay"] = 0,
+							["tipo"] = 1,
 						}, -- [1]
 					},
 				}, -- [1]
 				{
+					["combatId"] = 76,
 					["tipo"] = 3,
-					["combatId"] = 21,
 					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorb"] = 0.002486,
-							["last_hps"] = 0,
-							["targets_overheal"] = {
-								["Talthalador"] = 734320,
-							},
-							["targets"] = {
-								["Talthalador"] = 579206,
-							},
-							["end_time"] = 1471525899,
-							["pets"] = {
-							},
-							["totalover_without_pet"] = 0.002486,
-							["healing_from"] = {
-								["Fiirix"] = true,
-								["Talthalador"] = true,
-								["Bheem"] = true,
-								["Vainglorian-Ghostlands"] = true,
-							},
-							["healing_taken"] = 519775.002486,
-							["totalover"] = 734320.002486,
-							["total_without_pet"] = 478537.002486,
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["fight_component"] = true,
-							["total"] = 478537.002486,
-							["classe"] = "DEMONHUNTER",
-							["spells"] = {
-								["_ActorTable"] = {
-									[203794] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Talthalador"] = 134374,
-										},
-										["n_max"] = 24504,
-										["targets"] = {
-											["Talthalador"] = 24504,
-										},
-										["n_min"] = 0,
-										["counter"] = 7,
-										["overheal"] = 134374,
-										["total"] = 24504,
-										["c_max"] = 0,
-										["id"] = 203794,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["n_amt"] = 7,
-										["m_healed"] = 0,
-										["n_curado"] = 24504,
-										["c_min"] = 0,
-										["absorbed"] = 0,
-									},
-									[228477] = {
-										["c_amt"] = 2,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Talthalador"] = 490199,
-										},
-										["n_max"] = 105237,
-										["targets"] = {
-											["Talthalador"] = 384158,
-										},
-										["n_min"] = 93904,
-										["counter"] = 7,
-										["overheal"] = 490199,
-										["total"] = 384158,
-										["c_max"] = 175287,
-										["id"] = 228477,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 175287,
-										["m_amt"] = 0,
-										["n_amt"] = 5,
-										["m_healed"] = 0,
-										["n_curado"] = 208871,
-										["c_min"] = 175287,
-										["absorbed"] = 0,
-									},
-									[207693] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Talthalador"] = 109747,
-										},
-										["n_max"] = 12742,
-										["targets"] = {
-											["Talthalador"] = 69875,
-										},
-										["n_min"] = 11097,
-										["counter"] = 15,
-										["overheal"] = 109747,
-										["total"] = 69875,
-										["c_max"] = 0,
-										["id"] = 207693,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["n_amt"] = 15,
-										["m_healed"] = 0,
-										["n_curado"] = 69875,
-										["c_min"] = 0,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["nome"] = "Talthalador",
-							["targets_absorbs"] = {
-							},
-							["grupo"] = true,
-							["delay"] = 0,
-							["heal_enemy"] = {
-							},
-							["spec"] = 581,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["on_hold"] = false,
-							["start_time"] = 1471525863,
-							["serial"] = "Player-60-0A98990A",
-							["last_event"] = 1471525899,
-						}, -- [1]
 					},
 				}, -- [2]
 				{
+					["combatId"] = 76,
 					["tipo"] = 7,
-					["combatId"] = 21,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["resource"] = 493.007502,
+							["resource"] = 4.006193,
 							["targets"] = {
 							},
 							["pets"] = {
 							},
-							["powertype"] = 3,
+							["powertype"] = 1,
 							["classe"] = "DEMONHUNTER",
-							["fight_component"] = true,
-							["total"] = 0.007502,
+							["total"] = 0.006193,
 							["nome"] = "Talthalador",
-							["spec"] = 581,
+							["spec"] = 577,
 							["grupo"] = true,
-							["last_event"] = 1471525899,
+							["resource_type"] = 17,
 							["tipo"] = 3,
-							["received"] = 0.007502,
+							["received"] = 0.006193,
 							["spells"] = {
+								["tipo"] = 7,
 								["_ActorTable"] = {
 								},
-								["tipo"] = 7,
 							},
 							["serial"] = "Player-60-0A98990A",
-							["resource_type"] = 18,
+							["last_event"] = 1471553562,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
+					["combatId"] = 76,
 					["tipo"] = 9,
-					["combatId"] = 21,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
 								["_ActorTable"] = {
-									[204598] = {
-										["uptime"] = 6,
+									[198813] = {
+										["uptime"] = 0,
 										["activedamt"] = 0,
-										["id"] = 204598,
+										["id"] = 198813,
+										["actived"] = false,
 										["targets"] = {
 										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[207744] = {
-										["uptime"] = 8,
-										["activedamt"] = 0,
-										["id"] = 207744,
-										["targets"] = {
-										},
-										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-								["tipo"] = 9,
 							},
-							["buff_uptime"] = 220,
+							["buff_uptime"] = 19,
 							["classe"] = "DEMONHUNTER",
-							["interrupt_spells"] = {
-								["_ActorTable"] = {
-									[183752] = {
-										["id"] = 183752,
-										["counter"] = 1,
-										["targets"] = {
-											["Shadowy Illusion"] = 1,
-										},
-										["interrompeu_oque"] = {
-											[217079] = 1,
-										},
-									},
-								},
-								["tipo"] = 9,
-							},
 							["buff_uptime_spells"] = {
+								["tipo"] = 9,
 								["_ActorTable"] = {
-									[203981] = {
-										["uptime"] = 18,
-										["activedamt"] = 6,
-										["id"] = 203981,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[162915] = {
-										["uptime"] = 20,
-										["activedamt"] = 1,
-										["id"] = 162915,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[218256] = {
-										["uptime"] = 11,
-										["activedamt"] = 2,
-										["id"] = 218256,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
 									[97341] = {
-										["uptime"] = 49,
+										["uptime"] = 6,
 										["activedamt"] = 1,
 										["id"] = 97341,
+										["actived"] = false,
 										["targets"] = {
 										},
-										["actived"] = false,
 										["counter"] = 0,
 									},
-									[187827] = {
-										["uptime"] = 5,
+									[203650] = {
+										["uptime"] = 1,
 										["activedamt"] = 1,
-										["id"] = 187827,
+										["id"] = 203650,
+										["actived"] = false,
 										["targets"] = {
 										},
-										["actived"] = false,
 										["counter"] = 0,
 									},
 									[186404] = {
-										["uptime"] = 49,
+										["uptime"] = 6,
 										["activedamt"] = 1,
 										["id"] = 186404,
+										["actived"] = false,
 										["targets"] = {
 										},
-										["actived"] = false,
 										["counter"] = 0,
 									},
-									[207693] = {
-										["uptime"] = 30,
-										["activedamt"] = 3,
-										["id"] = 207693,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[183926] = {
-										["uptime"] = 20,
+									[193456] = {
+										["uptime"] = 6,
 										["activedamt"] = 1,
-										["id"] = 183926,
+										["id"] = 193456,
+										["actived"] = false,
 										["targets"] = {
 										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[178740] = {
-										["uptime"] = 18,
-										["activedamt"] = 3,
-										["id"] = 178740,
-										["targets"] = {
-										},
-										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-								["tipo"] = 9,
 							},
-							["interrompeu_oque"] = {
-								[217079] = 1,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 14,
-							["tipo"] = 4,
+							["debuff_uptime"] = 0,
 							["buff_uptime_targets"] = {
 							},
-							["interrupt_targets"] = {
-								["Shadowy Illusion"] = 1,
-							},
+							["spec"] = 577,
 							["grupo"] = true,
 							["spell_cast"] = {
-								[203782] = 21,
-								[204596] = 1,
-								[204598] = 1,
-								[178740] = 3,
-								[183752] = 1,
-								[218256] = 2,
-								[228477] = 7,
-								[204255] = 8,
-								[204157] = 1,
-								[204021] = 1,
-								[187827] = 1,
+								[198793] = 1,
 							},
-							["interrupt"] = 1.007111,
-							["pets"] = {
-							},
-							["last_event"] = 1471525899,
-							["nome"] = "Talthalador",
 							["debuff_uptime_targets"] = {
 							},
+							["last_event"] = 1471553558,
+							["nome"] = "Talthalador",
+							["pets"] = {
+							},
 							["serial"] = "Player-60-0A98990A",
-							["spec"] = 581,
+							["tipo"] = 4,
 						}, -- [1]
 					},
 				}, -- [4]
 				{
+					["combatId"] = 76,
 					["tipo"] = 2,
-					["combatId"] = 21,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -651,396 +283,689 @@ _detalhes_database = {
 					["Talthalador"] = true,
 				},
 				["last_events_tables"] = {
-					{
-						{
-							{
-								false, -- [1]
-								222944, -- [2]
-								977, -- [3]
-								1471525886.531, -- [4]
-								562860, -- [5]
-								"Bheem", -- [6]
-								nil, -- [7]
-								0, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [1]
-							{
-								false, -- [1]
-								222944, -- [2]
-								738, -- [3]
-								1471525887.678, -- [4]
-								562860, -- [5]
-								"Bheem", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [2]
-							{
-								false, -- [1]
-								207693, -- [2]
-								11098, -- [3]
-								1471525887.678, -- [4]
-								562860, -- [5]
-								"Talthalador", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [3]
-							{
-								false, -- [1]
-								222944, -- [2]
-								159, -- [3]
-								1471525888.752, -- [4]
-								562860, -- [5]
-								"Bheem", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [4]
-							{
-								false, -- [1]
-								222944, -- [2]
-								908, -- [3]
-								1471525889.473, -- [4]
-								562860, -- [5]
-								"Bheem", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [5]
-							{
-								false, -- [1]
-								207693, -- [2]
-								11098, -- [3]
-								1471525889.57, -- [4]
-								562860, -- [5]
-								"Talthalador", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [6]
-							{
-								false, -- [1]
-								228477, -- [2]
-								187807, -- [3]
-								1471525890.987, -- [4]
-								562860, -- [5]
-								"Talthalador", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [7]
-							{
-								false, -- [1]
-								222944, -- [2]
-								2414, -- [3]
-								1471525891.475, -- [4]
-								562860, -- [5]
-								"Bheem", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [8]
-							{
-								false, -- [1]
-								203794, -- [2]
-								21341, -- [3]
-								1471525891.819, -- [4]
-								562860, -- [5]
-								"Talthalador", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [9]
-							{
-								false, -- [1]
-								203794, -- [2]
-								21341, -- [3]
-								1471525891.906, -- [4]
-								562860, -- [5]
-								"Talthalador", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [10]
-							{
-								true, -- [1]
-								1, -- [2]
-								178848, -- [3]
-								1471525892.431, -- [4]
-								562860, -- [5]
-								"Malphazel", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [11]
-							{
-								false, -- [1]
-								207693, -- [2]
-								11097, -- [3]
-								1471525893.026, -- [4]
-								395109, -- [5]
-								"Talthalador", -- [6]
-								nil, -- [7]
-								0, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [12]
-							{
-								true, -- [1]
-								217079, -- [2]
-								96468, -- [3]
-								1471525893.342, -- [4]
-								298641, -- [5]
-								"Shadowy Illusion <[*] Shadow Illusion>", -- [6]
-								nil, -- [7]
-								32, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [13]
-							{
-								false, -- [1]
-								222944, -- [2]
-								317, -- [3]
-								1471525893.558, -- [4]
-								298958, -- [5]
-								"Bheem", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [14]
-							{
-								true, -- [1]
-								1, -- [2]
-								170072, -- [3]
-								1471525893.717, -- [4]
-								298958, -- [5]
-								"Malphazel", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [15]
-							{
-								false, -- [1]
-								222944, -- [2]
-								411, -- [3]
-								1471525894.534, -- [4]
-								298153, -- [5]
-								"Bheem", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [16]
-							{
-								false, -- [1]
-								73921, -- [2]
-								4741, -- [3]
-								1471525894.862, -- [4]
-								302894, -- [5]
-								"Fiirix", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [17]
-							{
-								false, -- [1]
-								207693, -- [2]
-								11098, -- [3]
-								1471525895.058, -- [4]
-								313992, -- [5]
-								"Talthalador", -- [6]
-								nil, -- [7]
-								0, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [18]
-							{
-								true, -- [1]
-								1, -- [2]
-								206607, -- [3]
-								1471525895.26, -- [4]
-								313992, -- [5]
-								"Malphazel", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [19]
-							{
-								false, -- [1]
-								222944, -- [2]
-								1276, -- [3]
-								1471525895.549, -- [4]
-								108661, -- [5]
-								"Bheem", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [20]
-							{
-								true, -- [1]
-								1, -- [2]
-								2919, -- [3]
-								1471525896.144, -- [4]
-								108661, -- [5]
-								"Shadowy Illusion <[*] Shadow Illusion>", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [21]
-							{
-								false, -- [1]
-								228477, -- [2]
-								93904, -- [3]
-								1471525896.253, -- [4]
-								199646, -- [5]
-								"Talthalador", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [22]
-							{
-								false, -- [1]
-								207693, -- [2]
-								11098, -- [3]
-								1471525897.075, -- [4]
-								210744, -- [5]
-								"Talthalador", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [23]
-							{
-								false, -- [1]
-								222944, -- [2]
-								4015, -- [3]
-								1471525897.467, -- [4]
-								214759, -- [5]
-								"Bheem", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [24]
-							{
-								false, -- [1]
-								228477, -- [2]
-								175287, -- [3]
-								1471525897.578, -- [4]
-								390046, -- [5]
-								"Talthalador", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [25]
-							{
-								true, -- [1]
-								1, -- [2]
-								3051, -- [3]
-								1471525897.67, -- [4]
-								390046, -- [5]
-								"Shadowy Illusion <[*] Shadow Illusion>", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [26]
-							{
-								true, -- [1]
-								1, -- [2]
-								217207, -- [3]
-								1471525898.273, -- [4]
-								386995, -- [5]
-								"Malphazel", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [27]
-							{
-								false, -- [1]
-								222944, -- [2]
-								2557, -- [3]
-								1471525898.461, -- [4]
-								172345, -- [5]
-								"Bheem", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [28]
-							{
-								true, -- [1]
-								217017, -- [2]
-								4502, -- [3]
-								1471525898.764, -- [4]
-								167843, -- [5]
-								"Slumber Fog <[*] Slumber Cloud>", -- [6]
-								nil, -- [7]
-								32, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [29]
-							{
-								false, -- [1]
-								207693, -- [2]
-								11098, -- [3]
-								1471525898.977, -- [4]
-								178941, -- [5]
-								"Talthalador", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [30]
-							{
-								true, -- [1]
-								1, -- [2]
-								201526, -- [3]
-								1471525899.691, -- [4]
-								178941, -- [5]
-								"Malphazel", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								22585, -- [10]
-							}, -- [31]
-							{
-								true, -- [1]
-								217017, -- [2]
-								4502, -- [3]
-								1471525899.691, -- [4]
-								174439, -- [5]
-								"Slumber Fog <[*] Slumber Cloud>", -- [6]
-								nil, -- [7]
-								32, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [32]
-							{
-								3, -- [1]
-								0, -- [2]
-								0, -- [3]
-								0, -- [4]
-								0, -- [5]
-								"Talthalador", -- [6]
-							}, -- [33]
-						}, -- [1]
-						1471525899.797, -- [2]
-						"Talthalador", -- [3]
-						"DEMONHUNTER", -- [4]
-						562860, -- [5]
-						"0m 49s", -- [6]
-						["dead"] = true,
-						["dead_at"] = 49.1540000000005,
-					}, -- [1]
 				},
-				["enemy"] = "Malphazel",
-				["combat_counter"] = 1194,
+				["enemy"] = "Undead Excavator",
+				["combat_counter"] = 1268,
 				["playing_solo"] = true,
 				["totals"] = {
-					1916798.55635899, -- [1]
-					478536.689934, -- [2]
+					5148628.985039, -- [1]
+					0, -- [2]
 					{
-						-0.0298429999999996, -- [1]
-						[0] = -0.104200000017864,
-						[6] = 559.990393,
-						[3] = -560.067953,
+						0, -- [1]
+						[0] = 0,
+						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 1,
-						["cc_break"] = 0,
-						["interrupt"] = 0.994438,
 						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
 						["dispell"] = 0,
-						["cooldowns_defensive"] = -0.0149730000000001,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
-					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["totals_grupo"] = {
+					5148629, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Talthalador"] = 6151702.006652,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 43951.315,
+				["combat_id"] = 76,
+				["instance_type"] = "none",
+				["resincked"] = true,
+				["frags"] = {
+					["Undead Excavator"] = 1,
+					["Foreman Thistlenettle"] = 1,
+					["Skeletal Miner"] = 4,
+					["Undead Dynamiter"] = 2,
+				},
+				["data_fim"] = "16:52:39",
+				["data_inicio"] = "16:52:32",
+				["CombatSkillCache"] = {
+				},
+				["PlayerLeechTrinket"] = {
+				},
+				["start_time"] = 43944.662,
+				["contra"] = "Foreman Thistlenettle",
+				["TimeData"] = {
+				},
+			}, -- [1]
+			{
+				{
+					["combatId"] = 75,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Undead Excavator"] = 1791544,
+								["Undead Dynamiter"] = 2426878,
+								["Skeletal Miner"] = 3334794,
+							},
+							["pets"] = {
+							},
+							["total"] = 7553216.008055,
+							["on_hold"] = false,
+							["classe"] = "DEMONHUNTER",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 7553216.008055,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1471553544,
+							["friendlyfire_total"] = 0,
+							["spec"] = 577,
+							["nome"] = "Talthalador",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 164033,
+										["targets"] = {
+											["Skeletal Miner"] = 325574,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 325574,
+										["n_min"] = 161541,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 325574,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									}, -- [1]
+									[162243] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 420731,
+										["targets"] = {
+											["Undead Dynamiter"] = 420731,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 420731,
+										["n_min"] = 420731,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 420731,
+										["c_max"] = 0,
+										["id"] = 162243,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[185123] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 788470,
+										["targets"] = {
+											["Undead Excavator"] = 788470,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 788470,
+										["n_min"] = 788470,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 788470,
+										["c_max"] = 0,
+										["id"] = 185123,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[192611] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 4012294,
+										["g_amt"] = 0,
+										["n_max"] = 1003074,
+										["targets"] = {
+											["Undead Excavator"] = 1003074,
+											["Undead Dynamiter"] = 2006147,
+											["Skeletal Miner"] = 3009220,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 2006147,
+										["n_min"] = 1003073,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 6018441,
+										["c_max"] = 2006147,
+										["id"] = 192611,
+										["r_dmg"] = 0,
+										["spellschool"] = 127,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 2006147,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-60-0A98990A",
+							["last_dps"] = 629434.667337917,
+							["custom"] = 0,
+							["last_event"] = 1471553543,
+							["damage_taken"] = 0.008055,
+							["start_time"] = 1471553532,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 75,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 75,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 23.00485,
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["powertype"] = 1,
+							["classe"] = "DEMONHUNTER",
+							["total"] = 0.00485,
+							["nome"] = "Talthalador",
+							["spec"] = 577,
+							["grupo"] = true,
+							["resource_type"] = 17,
+							["tipo"] = 3,
+							["received"] = 0.00485,
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+								},
+							},
+							["serial"] = "Player-60-0A98990A",
+							["last_event"] = 1471553540,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["combatId"] = 75,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["nome"] = "Talthalador",
+							["spec"] = 577,
+							["grupo"] = true,
+							["spell_cast"] = {
+								[185123] = 1,
+								[162243] = 1,
+							},
+							["pets"] = {
+							},
+							["buff_uptime_targets"] = {
+							},
+							["buff_uptime"] = 36,
+							["tipo"] = 4,
+							["last_event"] = 1471553544,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[97341] = {
+										["uptime"] = 12,
+										["activedamt"] = 1,
+										["id"] = 97341,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[186404] = {
+										["uptime"] = 12,
+										["activedamt"] = 1,
+										["id"] = 186404,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[193456] = {
+										["uptime"] = 12,
+										["activedamt"] = 1,
+										["id"] = 193456,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-60-0A98990A",
+							["classe"] = "DEMONHUNTER",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 75,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Talthalador"] = true,
+				},
+				["last_events_tables"] = {
+				},
+				["enemy"] = "Undead Excavator",
+				["combat_counter"] = 1266,
+				["playing_solo"] = true,
+				["totals"] = {
+					7553215.985859, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["totals_grupo"] = {
+					7553216, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Talthalador"] = 9081344.016089,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 43937.141,
+				["combat_id"] = 75,
+				["instance_type"] = "none",
+				["resincked"] = true,
+				["frags"] = {
+					["Undead Excavator"] = 2,
+					["Undead Dynamiter"] = 2,
+					["Skeletal Miner"] = 4,
+				},
+				["data_fim"] = "16:52:25",
+				["data_inicio"] = "16:52:13",
+				["CombatSkillCache"] = {
+				},
+				["PlayerLeechTrinket"] = {
+				},
+				["start_time"] = 43925.586,
+				["contra"] = "Skeletal Miner",
+				["TimeData"] = {
+				},
+			}, -- [2]
+			{
+				{
+					["combatId"] = 74,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Undead Excavator"] = 1458708,
+								["Undead Dynamiter"] = 1601002,
+								["Skeletal Miner"] = 1100128,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["classe"] = "DEMONHUNTER",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 4159838.008266,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1471553531,
+							["friendlyfire_total"] = 0,
+							["spec"] = 577,
+							["nome"] = "Talthalador",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 317667,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Skeletal Miner"] = 317667,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 317667,
+										["c_max"] = 317667,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 317667,
+									}, -- [1]
+									[185123] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 3059710,
+										["g_amt"] = 0,
+										["n_max"] = 782461,
+										["targets"] = {
+											["Undead Excavator"] = 1458708,
+											["Undead Dynamiter"] = 1601002,
+											["Skeletal Miner"] = 782461,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 782461,
+										["n_min"] = 782461,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 3842171,
+										["c_max"] = 1601002,
+										["id"] = 185123,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 1458708,
+									},
+								},
+							},
+							["grupo"] = true,
+							["total"] = 4159838.008266,
+							["serial"] = "Player-60-0A98990A",
+							["last_dps"] = 643638.868677677,
+							["custom"] = 0,
+							["last_event"] = 1471553530,
+							["damage_taken"] = 0.008266,
+							["start_time"] = 1471553524,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 74,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 74,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 30.008866,
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["powertype"] = 1,
+							["classe"] = "DEMONHUNTER",
+							["total"] = 0.008866,
+							["nome"] = "Talthalador",
+							["spec"] = 577,
+							["grupo"] = true,
+							["resource_type"] = 17,
+							["tipo"] = 3,
+							["received"] = 0.008866,
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+								},
+							},
+							["serial"] = "Player-60-0A98990A",
+							["last_event"] = 1471553530,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["combatId"] = 74,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["buff_uptime_targets"] = {
+							},
+							["spec"] = 577,
+							["grupo"] = true,
+							["spell_cast"] = {
+								[162243] = 1,
+							},
+							["buff_uptime"] = 21,
+							["nome"] = "Talthalador",
+							["pets"] = {
+							},
+							["last_event"] = 1471553531,
+							["classe"] = "DEMONHUNTER",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[97341] = {
+										["uptime"] = 7,
+										["activedamt"] = 1,
+										["id"] = 97341,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[186404] = {
+										["uptime"] = 7,
+										["activedamt"] = 1,
+										["id"] = 186404,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[193456] = {
+										["uptime"] = 7,
+										["activedamt"] = 1,
+										["id"] = 193456,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-60-0A98990A",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 74,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Talthalador"] = true,
+				},
+				["last_events_tables"] = {
+				},
+				["enemy"] = "Undead Excavator",
+				["combat_counter"] = 1265,
+				["playing_solo"] = true,
+				["totals"] = {
+					4159837.984298, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
 				},
 				["player_last_events"] = {
 				},
@@ -1052,25 +977,26 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage"] = {
-						{
-							["Talthalador"] = 2098753.00773,
-						}, -- [1]
-					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
-							["Talthalador"] = 478537.002486,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
+					["damage"] = {
+						{
+							["Talthalador"] = 4159838.008266,
+						}, -- [1]
+					},
 				},
-				["end_time"] = 16291.96,
+				["end_time"] = 43924.178,
+				["combat_id"] = 74,
+				["instance_type"] = "none",
 				["totals_grupo"] = {
-					1916799, -- [1]
-					478537, -- [2]
+					4159838, -- [1]
+					0, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -1080,561 +1006,513 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 1,
-						["cc_break"] = 0,
-						["interrupt"] = 1,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
 						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 21,
-				["TimeData"] = {
-				},
-				["resincked"] = true,
-				["hasSaved"] = true,
 				["frags"] = {
-					["Gaulkarn-Lothar"] = 1,
-					["Carobean"] = 1,
-					["Muttley-Ravencrest"] = 1,
-					["Fyldras-Ghostlands"] = 1,
-					["Pancheito-Malfurion"] = 1,
-					["Reyaziel-Malygos"] = 1,
-					["Shadowy Illusion"] = 1,
-					["Army of the Dead"] = 12,
-					["Rhavana-Llane"] = 1,
-					["Busttacapp-Dawnbringer"] = 1,
+					["Undead Excavator"] = 1,
+					["Undead Dynamiter"] = 1,
+					["Skeletal Miner"] = 2,
 				},
-				["data_fim"] = "09:11:40",
-				["data_inicio"] = "09:10:51",
+				["data_fim"] = "16:52:12",
+				["data_inicio"] = "16:52:05",
 				["CombatSkillCache"] = {
 				},
 				["PlayerLeechTrinket"] = {
 				},
-				["start_time"] = 16242.806,
-				["contra"] = "Malphazel",
-				["instance_type"] = "none",
-			}, -- [1]
+				["start_time"] = 43916.856,
+				["contra"] = "Undead Excavator",
+				["TimeData"] = {
+				},
+			}, -- [3]
 			{
 				{
+					["combatId"] = 73,
 					["tipo"] = 2,
-					["combatId"] = 20,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["damage_from"] = {
-								["Slumber Fog <[*] Slumber Cloud>"] = true,
-								["Shadowy Illusion <[*] Shadow Illusion>"] = true,
-								["Malphazel"] = true,
+								["Mazgoroth"] = true,
 							},
 							["targets"] = {
-								["Shadowy Illusion <[*] Shadow Illusion>"] = 58316,
-								["Malphazel"] = 870340,
+								["Mazgoroth"] = 1902428,
 							},
-							["delay"] = 0,
 							["pets"] = {
 							},
-							["custom"] = 0,
-							["tipo"] = 1,
+							["total"] = 1902428.002834,
+							["on_hold"] = false,
 							["classe"] = "DEMONHUNTER",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 928656.008093,
-							["friendlyfire_total"] = 0,
+							["total_without_pet"] = 1902428.002834,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["dps_started"] = false,
-							["total"] = 928656.008093,
-							["damage_taken"] = 1487859.008093,
+							["end_time"] = 1471553280,
+							["friendlyfire_total"] = 0,
+							["spec"] = 577,
+							["nome"] = "Talthalador",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
-										["c_amt"] = 7,
+										["c_amt"] = 21,
 										["b_amt"] = 1,
-										["c_dmg"] = 58149,
+										["c_dmg"] = 130094,
 										["g_amt"] = 0,
-										["n_max"] = 5579,
+										["n_max"] = 4607,
 										["targets"] = {
-											["Malphazel"] = 118564,
+											["Mazgoroth"] = 181009,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 60415,
-										["n_min"] = 1838,
+										["n_dmg"] = 50915,
+										["n_min"] = 2071,
 										["g_dmg"] = 0,
-										["counter"] = 29,
-										["total"] = 118564,
-										["c_max"] = 11262,
-										["c_min"] = 5063,
+										["counter"] = 51,
+										["total"] = 181009,
+										["c_max"] = 9450,
+										["MISS"] = 13,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["b_dmg"] = 1838,
+										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 16,
-										["spellschool"] = 1,
-										["MISS"] = 6,
+										["b_dmg"] = 2971,
+										["n_amt"] = 17,
+										["r_amt"] = 0,
+										["c_min"] = 2971,
 									}, -- [1]
-									[178741] = {
-										["c_amt"] = 4,
-										["b_amt"] = 0,
-										["c_dmg"] = 53491,
-										["g_amt"] = 0,
-										["n_max"] = 7214,
-										["targets"] = {
-											["Malphazel"] = 140100,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 86609,
-										["n_min"] = 6274,
-										["g_dmg"] = 0,
-										["counter"] = 17,
-										["total"] = 140100,
-										["c_max"] = 14527,
-										["id"] = 178741,
-										["r_dmg"] = 0,
-										["c_min"] = 12696,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 13,
-										["a_dmg"] = 0,
-										["spellschool"] = 4,
-									},
-									[228478] = {
-										["c_amt"] = 1,
+									[199547] = {
+										["c_amt"] = 5,
 										["b_amt"] = 1,
-										["c_dmg"] = 57465,
+										["c_dmg"] = 176028,
 										["g_amt"] = 0,
-										["n_max"] = 30554,
+										["n_max"] = 18754,
 										["targets"] = {
-											["Malphazel"] = 165993,
+											["Mazgoroth"] = 396834,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 108528,
-										["n_min"] = 21051,
+										["n_dmg"] = 220806,
+										["n_min"] = 12503,
 										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 165993,
-										["c_max"] = 57465,
-										["id"] = 228478,
+										["counter"] = 18,
+										["total"] = 396834,
+										["c_max"] = 37313,
+										["id"] = 199547,
 										["r_dmg"] = 0,
-										["c_min"] = 57465,
-										["r_amt"] = 0,
+										["spellschool"] = 127,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 21051,
-										["n_amt"] = 4,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
+										["b_dmg"] = 12503,
+										["n_amt"] = 13,
+										["r_amt"] = 0,
+										["c_min"] = 33086,
 									},
-									[204021] = {
-										["c_amt"] = 1,
+									[162243] = {
+										["c_amt"] = 6,
+										["b_amt"] = 1,
+										["c_dmg"] = 129929,
+										["g_amt"] = 0,
+										["n_max"] = 11218,
+										["targets"] = {
+											["Mazgoroth"] = 233741,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 103812,
+										["n_min"] = 7478,
+										["g_dmg"] = 0,
+										["counter"] = 16,
+										["total"] = 233741,
+										["c_max"] = 22231,
+										["id"] = 162243,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 7478,
+										["n_amt"] = 10,
+										["r_amt"] = 0,
+										["c_min"] = 20908,
+									},
+									[222031] = {
+										["c_amt"] = 6,
+										["b_amt"] = 2,
+										["c_dmg"] = 259020,
+										["g_amt"] = 0,
+										["n_max"] = 23470,
+										["targets"] = {
+											["Mazgoroth"] = 514460,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 255440,
+										["n_min"] = 15511,
+										["g_dmg"] = 0,
+										["counter"] = 18,
+										["total"] = 514460,
+										["c_max"] = 47008,
+										["id"] = 222031,
+										["r_dmg"] = 0,
+										["spellschool"] = 127,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 31623,
+										["n_amt"] = 12,
+										["r_amt"] = 0,
+										["c_min"] = 41586,
+									},
+									[192611] = {
+										["c_amt"] = 3,
+										["b_amt"] = 1,
+										["c_dmg"] = 213451,
+										["g_amt"] = 0,
+										["n_max"] = 39528,
+										["targets"] = {
+											["Mazgoroth"] = 332034,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 118583,
+										["n_min"] = 39527,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 332034,
+										["c_max"] = 79056,
+										["a_amt"] = 0,
+										["id"] = 192611,
+										["r_dmg"] = 0,
+										["spellschool"] = 127,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 55339,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 55339,
+									},
+									[198030] = {
+										["c_amt"] = 20,
 										["b_amt"] = 0,
-										["c_dmg"] = 131107,
+										["c_dmg"] = 198026,
 										["g_amt"] = 0,
 										["n_max"] = 0,
 										["targets"] = {
-											["Malphazel"] = 131107,
+											["Mazgoroth"] = 198026,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 0,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 131107,
-										["c_max"] = 131107,
-										["id"] = 204021,
+										["counter"] = 20,
+										["total"] = 198026,
+										["c_max"] = 10349,
+										["id"] = 198030,
 										["r_dmg"] = 0,
-										["c_min"] = 131107,
-										["r_amt"] = 0,
+										["spellschool"] = 124,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["spellschool"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 9414,
 									},
-									[187727] = {
-										["c_amt"] = 1,
+									[185123] = {
+										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["c_dmg"] = 58316,
+										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 29158,
+										["n_max"] = 21397,
 										["targets"] = {
-											["Shadowy Illusion <[*] Shadow Illusion>"] = 58316,
-											["Malphazel"] = 87473,
+											["Mazgoroth"] = 21397,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 87473,
-										["n_min"] = 29157,
+										["n_dmg"] = 21397,
+										["n_min"] = 21397,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 21397,
+										["c_max"] = 0,
+										["id"] = 185123,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[198813] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 16383,
+										["g_amt"] = 0,
+										["n_max"] = 4411,
+										["targets"] = {
+											["Mazgoroth"] = 24927,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 8544,
+										["n_min"] = 4133,
 										["g_dmg"] = 0,
 										["counter"] = 4,
-										["total"] = 145789,
-										["c_max"] = 58316,
-										["id"] = 187727,
+										["total"] = 24927,
+										["c_max"] = 8258,
+										["id"] = 198813,
 										["r_dmg"] = 0,
-										["c_min"] = 58316,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["a_dmg"] = 0,
-										["spellschool"] = 4,
-									},
-									[203782] = {
-										["c_amt"] = 3,
-										["b_amt"] = 0,
-										["c_dmg"] = 90320,
-										["g_amt"] = 0,
-										["n_max"] = 15872,
-										["targets"] = {
-											["Malphazel"] = 227103,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 136783,
-										["n_min"] = 14287,
-										["g_dmg"] = 0,
-										["counter"] = 12,
-										["total"] = 227103,
-										["c_max"] = 31019,
-										["id"] = 203782,
-										["r_dmg"] = 0,
-										["c_min"] = 29252,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 9,
-										["a_dmg"] = 0,
 										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 8125,
 									},
 								},
-								["tipo"] = 2,
 							},
-							["nome"] = "Talthalador",
-							["spec"] = 581,
 							["grupo"] = true,
-							["last_dps"] = 24438.3160024474,
-							["end_time"] = 1471525831,
-							["colocacao"] = 1,
-							["last_event"] = 1471525831,
-							["on_hold"] = false,
-							["start_time"] = 1471525793,
 							["serial"] = "Player-60-0A98990A",
-							["friendlyfire"] = {
-							},
+							["last_dps"] = 26794.7606032958,
+							["custom"] = 0,
+							["last_event"] = 1471553279,
+							["damage_taken"] = 644001.002834,
+							["start_time"] = 1471553209,
+							["delay"] = 0,
+							["tipo"] = 1,
 						}, -- [1]
 					},
 				}, -- [1]
 				{
+					["combatId"] = 73,
 					["tipo"] = 3,
-					["combatId"] = 20,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorb"] = 0.007515,
+							["totalabsorb"] = 0.005685,
 							["last_hps"] = 0,
-							["targets_overheal"] = {
-								["Talthalador"] = 265574,
+							["healing_from"] = {
+								["Talthalador"] = true,
+								["Georgemooney-Madoran"] = true,
+								["Timfaildruid"] = true,
+								["Dingoeatbaby-Malygos"] = true,
+								["Marlboroedge"] = true,
 							},
 							["targets"] = {
-								["Talthalador"] = 692199,
+								["Talthalador"] = 51173,
 							},
-							["end_time"] = 1471525831,
+							["targets_absorbs"] = {
+							},
 							["pets"] = {
 							},
-							["iniciar_hps"] = false,
-							["healing_from"] = {
-								["Fiirix"] = true,
-								["Stormecrowe-Norgannon"] = true,
-								["Bheem"] = true,
-								["Talthalador"] = true,
-								["Nightwälker-Madoran"] = true,
-								["Vainglorian-Ghostlands"] = true,
+							["totalover_without_pet"] = 0.005685,
+							["targets_overheal"] = {
 							},
-							["healing_taken"] = 729431.007515,
-							["totalover"] = 265574.007515,
-							["total_without_pet"] = 682492.007515,
-							["totalover_without_pet"] = 0.007515,
+							["classe"] = "DEMONHUNTER",
+							["totalover"] = 0.005685,
+							["total_without_pet"] = 51173.005685,
+							["iniciar_hps"] = false,
 							["heal_enemy_amt"] = 0,
 							["fight_component"] = true,
-							["total"] = 682492.007515,
-							["classe"] = "DEMONHUNTER",
+							["total"] = 51173.005685,
+							["healing_taken"] = 72475.005685,
+							["end_time"] = 1471553280,
+							["nome"] = "Talthalador",
+							["spec"] = 577,
+							["grupo"] = true,
+							["last_event"] = 1471553245,
+							["heal_enemy"] = {
+							},
 							["spells"] = {
+								["tipo"] = 3,
 								["_ActorTable"] = {
-									[203794] = {
-										["c_amt"] = 1,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Talthalador"] = 45206,
-										},
-										["n_max"] = 22604,
-										["targets"] = {
-											["Talthalador"] = 67810,
-										},
-										["n_min"] = 0,
-										["counter"] = 4,
-										["overheal"] = 45206,
-										["total"] = 67810,
-										["c_max"] = 45206,
-										["id"] = 203794,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 45206,
-										["m_amt"] = 0,
-										["n_amt"] = 3,
-										["m_healed"] = 0,
-										["n_curado"] = 22604,
-										["c_min"] = 45206,
-										["absorbed"] = 0,
-									},
-									[228477] = {
-										["c_amt"] = 2,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Talthalador"] = 208614,
-										},
-										["n_max"] = 99453,
-										["targets"] = {
-											["Talthalador"] = 473637,
-										},
-										["n_min"] = 85530,
-										["counter"] = 5,
-										["overheal"] = 208614,
-										["total"] = 473637,
-										["c_max"] = 198907,
-										["id"] = 228477,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 198907,
-										["m_amt"] = 0,
-										["n_amt"] = 3,
-										["m_healed"] = 0,
-										["n_curado"] = 274730,
-										["c_min"] = 198907,
-										["absorbed"] = 0,
-									},
-									[207693] = {
+									[6262] = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
-											["Talthalador"] = 11754,
 										},
-										["n_max"] = 11754,
+										["n_max"] = 51173,
 										["targets"] = {
-											["Talthalador"] = 141045,
+											["Talthalador"] = 51173,
 										},
-										["n_min"] = 11753,
-										["counter"] = 13,
-										["overheal"] = 11754,
-										["total"] = 141045,
+										["n_min"] = 51173,
+										["counter"] = 1,
+										["overheal"] = 0,
+										["total"] = 51173,
 										["c_max"] = 0,
-										["id"] = 207693,
+										["id"] = 6262,
 										["targets_absorbs"] = {
 										},
 										["m_crit"] = 0,
 										["c_curado"] = 0,
 										["m_amt"] = 0,
-										["n_amt"] = 13,
-										["m_healed"] = 0,
-										["n_curado"] = 141045,
 										["c_min"] = 0,
+										["n_curado"] = 51173,
+										["m_healed"] = 0,
+										["n_amt"] = 1,
 										["absorbed"] = 0,
 									},
 								},
-								["tipo"] = 3,
 							},
-							["nome"] = "Talthalador",
-							["targets_absorbs"] = {
-							},
-							["grupo"] = true,
-							["delay"] = 0,
-							["heal_enemy"] = {
-							},
-							["spec"] = 581,
 							["custom"] = 0,
 							["tipo"] = 2,
 							["on_hold"] = false,
-							["start_time"] = 1471525796,
+							["start_time"] = 1471553279,
 							["serial"] = "Player-60-0A98990A",
-							["last_event"] = 1471525830,
+							["delay"] = 1471553245,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
+					["combatId"] = 73,
 					["tipo"] = 7,
-					["combatId"] = 20,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["resource"] = 357.002485,
+							["resource"] = 646.007758,
 							["targets"] = {
 							},
 							["pets"] = {
 							},
-							["powertype"] = 3,
+							["powertype"] = 1,
 							["classe"] = "DEMONHUNTER",
 							["fight_component"] = true,
-							["total"] = 0.002485,
+							["total"] = 0.007758,
 							["nome"] = "Talthalador",
-							["spec"] = 581,
+							["spec"] = 577,
 							["grupo"] = true,
-							["last_event"] = 1471525847,
+							["resource_type"] = 17,
 							["tipo"] = 3,
-							["received"] = 0.002485,
+							["received"] = 0.007758,
 							["spells"] = {
+								["tipo"] = 7,
 								["_ActorTable"] = {
 								},
-								["tipo"] = 7,
 							},
 							["serial"] = "Player-60-0A98990A",
-							["resource_type"] = 18,
+							["last_event"] = 1471553278,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
+					["combatId"] = 73,
 					["tipo"] = 9,
-					["combatId"] = 20,
 					["_ActorTable"] = {
 						{
+							["fight_component"] = true,
 							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[207744] = {
-										["uptime"] = 8,
-										["activedamt"] = 0,
-										["id"] = 207744,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
+							["nome"] = "Talthalador",
+							["spec"] = 577,
+							["grupo"] = true,
+							["buff_uptime_targets"] = {
 							},
-							["buff_uptime"] = 220,
+							["buff_uptime"] = 193,
+							["pets"] = {
+							},
+							["spell_cast"] = {
+								[162794] = 18,
+								[6262] = 1,
+								[162243] = 15,
+								[198793] = 4,
+								[185123] = 1,
+								[198013] = 2,
+							},
 							["classe"] = "DEMONHUNTER",
+							["tipo"] = 4,
 							["buff_uptime_spells"] = {
+								["tipo"] = 9,
 								["_ActorTable"] = {
-									[178740] = {
-										["uptime"] = 17,
-										["activedamt"] = 3,
-										["id"] = 178740,
+									[198013] = {
+										["uptime"] = 2,
+										["activedamt"] = 2,
+										["id"] = 198013,
+										["actived"] = false,
 										["targets"] = {
 										},
-										["actived"] = false,
 										["counter"] = 0,
 									},
-									[207693] = {
-										["uptime"] = 27,
+									[162915] = {
+										["uptime"] = 19,
+										["activedamt"] = 1,
+										["id"] = 162915,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[203650] = {
+										["uptime"] = 20,
 										["activedamt"] = 4,
-										["id"] = 207693,
+										["id"] = 203650,
+										["actived"] = false,
 										["targets"] = {
 										},
-										["actived"] = false,
 										["counter"] = 0,
 									},
-									[193456] = {
-										["uptime"] = 38,
+									[212800] = {
+										["uptime"] = 10,
 										["activedamt"] = 1,
-										["id"] = 193456,
+										["id"] = 212800,
+										["actived"] = false,
 										["targets"] = {
 										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[217984] = {
-										["uptime"] = 38,
-										["activedamt"] = 1,
-										["id"] = 217984,
-										["targets"] = {
-										},
-										["actived"] = false,
 										["counter"] = 0,
 									},
 									[186404] = {
-										["uptime"] = 38,
+										["uptime"] = 71,
 										["activedamt"] = 1,
 										["id"] = 186404,
+										["actived"] = false,
 										["targets"] = {
 										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[203819] = {
-										["uptime"] = 12,
-										["activedamt"] = 2,
-										["id"] = 203819,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[203981] = {
-										["uptime"] = 12,
-										["activedamt"] = 3,
-										["id"] = 203981,
-										["targets"] = {
-										},
-										["actived"] = false,
 										["counter"] = 0,
 									},
 									[97341] = {
-										["uptime"] = 38,
+										["uptime"] = 71,
 										["activedamt"] = 1,
 										["id"] = 97341,
+										["actived"] = false,
 										["targets"] = {
 										},
-										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-								["tipo"] = 9,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 8,
-							["buff_uptime_targets"] = {
-							},
-							["spec"] = 581,
-							["grupo"] = true,
-							["spell_cast"] = {
-								[204255] = 6,
-								[228477] = 5,
-								[203782] = 12,
-								[204021] = 1,
-								[178740] = 3,
-								[203720] = 2,
-							},
-							["tipo"] = 4,
-							["last_event"] = 1471525831,
-							["nome"] = "Talthalador",
-							["pets"] = {
 							},
 							["serial"] = "Player-60-0A98990A",
-							["debuff_uptime_targets"] = {
-							},
+							["last_event"] = 1471553280,
 						}, -- [1]
 					},
 				}, -- [4]
 				{
+					["combatId"] = 73,
 					["tipo"] = 2,
-					["combatId"] = 20,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -1645,349 +1523,57 @@ _detalhes_database = {
 					{
 						{
 							{
-								true, -- [1]
-								217017, -- [2]
-								6431, -- [3]
-								1471525812.477, -- [4]
-								573709, -- [5]
-								"Slumber Fog <[*] Slumber Cloud>", -- [6]
+								false, -- [1]
+								145110, -- [2]
+								896, -- [3]
+								1471553257.471, -- [4]
+								108433, -- [5]
+								"Timfaildruid", -- [6]
 								nil, -- [7]
-								32, -- [8]
-								false, -- [9]
-								-1, -- [10]
+								0, -- [8]
 							}, -- [1]
 							{
-								true, -- [1]
-								217017, -- [2]
-								6432, -- [3]
-								1471525813.506, -- [4]
-								567277, -- [5]
-								"Slumber Fog <[*] Slumber Cloud>", -- [6]
+								false, -- [1]
+								145110, -- [2]
+								8980, -- [3]
+								1471553267.918, -- [4]
+								117413, -- [5]
+								"Marlboroedge", -- [6]
 								nil, -- [7]
-								32, -- [8]
-								false, -- [9]
-								-1, -- [10]
+								0, -- [8]
 							}, -- [2]
 							{
 								false, -- [1]
-								207693, -- [2]
-								11753, -- [3]
-								1471525813.811, -- [4]
-								579030, -- [5]
-								"Talthalador", -- [6]
+								145110, -- [2]
+								540, -- [3]
+								1471553269.747, -- [4]
+								117953, -- [5]
+								"Georgemooney-Madoran", -- [6]
 								nil, -- [7]
 								0, -- [8]
 							}, -- [3]
 							{
-								true, -- [1]
-								217017, -- [2]
-								6431, -- [3]
-								1471525814.396, -- [4]
-								572599, -- [5]
-								"Slumber Fog <[*] Slumber Cloud>", -- [6]
+								false, -- [1]
+								145110, -- [2]
+								10886, -- [3]
+								1471553276.462, -- [4]
+								128839, -- [5]
+								"Dingoeatbaby-Malygos", -- [6]
 								nil, -- [7]
-								32, -- [8]
-								false, -- [9]
-								-1, -- [10]
+								0, -- [8]
 							}, -- [4]
 							{
 								true, -- [1]
-								217017, -- [2]
-								6431, -- [3]
-								1471525815.445, -- [4]
-								566168, -- [5]
-								"Slumber Fog <[*] Slumber Cloud>", -- [6]
+								1, -- [2]
+								227424, -- [3]
+								1471553281.87, -- [4]
+								128839, -- [5]
+								"Mazgoroth", -- [6]
 								nil, -- [7]
-								32, -- [8]
+								1, -- [8]
 								false, -- [9]
-								-1, -- [10]
+								98585, -- [10]
 							}, -- [5]
-							{
-								false, -- [1]
-								207693, -- [2]
-								11754, -- [3]
-								1471525815.826, -- [4]
-								577922, -- [5]
-								"Talthalador", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [6]
-							{
-								false, -- [1]
-								183811, -- [2]
-								1196, -- [3]
-								1471525816.445, -- [4]
-								579118, -- [5]
-								"Vainglorian-Ghostlands", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [7]
-							{
-								false, -- [1]
-								222944, -- [2]
-								339, -- [3]
-								1471525816.562, -- [4]
-								579457, -- [5]
-								"Bheem", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [8]
-							{
-								true, -- [1]
-								1, -- [2]
-								242898, -- [3]
-								1471525817.215, -- [4]
-								579457, -- [5]
-								"Malphazel", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [9]
-							{
-								false, -- [1]
-								222944, -- [2]
-								534, -- [3]
-								1471525817.514, -- [4]
-								337093, -- [5]
-								"Bheem", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [10]
-							{
-								false, -- [1]
-								183811, -- [2]
-								1240, -- [3]
-								1471525817.802, -- [4]
-								338333, -- [5]
-								"Vainglorian-Ghostlands", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [11]
-							{
-								false, -- [1]
-								222944, -- [2]
-								906, -- [3]
-								1471525818.542, -- [4]
-								339239, -- [5]
-								"Bheem", -- [6]
-								nil, -- [7]
-								0, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [12]
-							{
-								false, -- [1]
-								145110, -- [2]
-								511, -- [3]
-								1471525819.16, -- [4]
-								339750, -- [5]
-								"Stormecrowe-Norgannon", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [13]
-							{
-								false, -- [1]
-								183811, -- [2]
-								1239, -- [3]
-								1471525822.66, -- [4]
-								340989, -- [5]
-								"Vainglorian-Ghostlands", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [14]
-							{
-								true, -- [1]
-								1, -- [2]
-								197460, -- [3]
-								1471525822.753, -- [4]
-								342436, -- [5]
-								"Malphazel", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [15]
-							{
-								false, -- [1]
-								228477, -- [2]
-								198907, -- [3]
-								1471525822.877, -- [4]
-								342436, -- [5]
-								"Talthalador", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [16]
-							{
-								true, -- [1]
-								217079, -- [2]
-								96468, -- [3]
-								1471525823.313, -- [4]
-								245968, -- [5]
-								"Shadowy Illusion <[*] Shadow Illusion>", -- [6]
-								nil, -- [7]
-								32, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [17]
-							{
-								false, -- [1]
-								145110, -- [2]
-								722, -- [3]
-								1471525823.386, -- [4]
-								246690, -- [5]
-								"Nightwälker-Madoran", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [18]
-							{
-								false, -- [1]
-								222944, -- [2]
-								873, -- [3]
-								1471525823.522, -- [4]
-								247563, -- [5]
-								"Bheem", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [19]
-							{
-								false, -- [1]
-								228477, -- [2]
-								85530, -- [3]
-								1471525824.118, -- [4]
-								333093, -- [5]
-								"Talthalador", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [20]
-							{
-								false, -- [1]
-								183811, -- [2]
-								1240, -- [3]
-								1471525824.118, -- [4]
-								334333, -- [5]
-								"Vainglorian-Ghostlands", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [21]
-							{
-								true, -- [1]
-								1, -- [2]
-								208825, -- [3]
-								1471525824.302, -- [4]
-								334333, -- [5]
-								"Malphazel", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [22]
-							{
-								false, -- [1]
-								222944, -- [2]
-								801, -- [3]
-								1471525824.485, -- [4]
-								126309, -- [5]
-								"Bheem", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [23]
-							{
-								false, -- [1]
-								207693, -- [2]
-								11754, -- [3]
-								1471525824.818, -- [4]
-								138063, -- [5]
-								"Talthalador", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [24]
-							{
-								false, -- [1]
-								222944, -- [2]
-								234, -- [3]
-								1471525825.515, -- [4]
-								138297, -- [5]
-								"Bheem", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [25]
-							{
-								false, -- [1]
-								183811, -- [2]
-								1239, -- [3]
-								1471525826.226, -- [4]
-								139536, -- [5]
-								"Vainglorian-Ghostlands", -- [6]
-								nil, -- [7]
-								0, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [26]
-							{
-								false, -- [1]
-								222944, -- [2]
-								168, -- [3]
-								1471525826.561, -- [4]
-								139704, -- [5]
-								"Bheem", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [27]
-							{
-								false, -- [1]
-								207693, -- [2]
-								11754, -- [3]
-								1471525826.875, -- [4]
-								151458, -- [5]
-								"Talthalador", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [28]
-							{
-								true, -- [1]
-								1, -- [2]
-								96822, -- [3]
-								1471525828.804, -- [4]
-								151458, -- [5]
-								"Malphazel", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [29]
-							{
-								false, -- [1]
-								207693, -- [2]
-								11754, -- [3]
-								1471525828.804, -- [4]
-								66390, -- [5]
-								"Talthalador", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [30]
-							{
-								false, -- [1]
-								207693, -- [2]
-								11754, -- [3]
-								1471525830.889, -- [4]
-								78144, -- [5]
-								"Talthalador", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [31]
-							{
-								true, -- [1]
-								1, -- [2]
-								230707, -- [3]
-								1471525831.806, -- [4]
-								78144, -- [5]
-								"Malphazel", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								152563, -- [10]
-							}, -- [32]
 							{
 								3, -- [1]
 								0, -- [2]
@@ -1995,91 +1581,61 @@ _detalhes_database = {
 								0, -- [4]
 								0, -- [5]
 								"Talthalador", -- [6]
-							}, -- [33]
+							}, -- [6]
 						}, -- [1]
-						1471525831.806, -- [2]
+						1471553281.87, -- [2]
 						"Talthalador", -- [3]
 						"DEMONHUNTER", -- [4]
-						562860, -- [5]
-						"0m 38s", -- [6]
+						369720, -- [5]
+						"1m 10s", -- [6]
+						["dead_at"] = 70.3080000000045,
 						["dead"] = true,
-						["dead_at"] = 38.5420000000013,
 					}, -- [1]
 				},
-				["enemy"] = "Malphazel",
-				["combat_counter"] = 1193,
+				["enemy"] = "Mazgoroth",
+				["combat_counter"] = 1263,
 				["playing_solo"] = true,
 				["totals"] = {
-					928655.694333997, -- [1]
-					682491.732672001, -- [2]
+					1902427.57683701, -- [1]
+					51172.6244110006, -- [2]
 					{
-						-0.0398979999999511, -- [1]
-						[0] = -0.108849,
-						[6] = -0.0175629999999671,
-						[3] = -0.0323259999999873,
+						-0.0570060000001078, -- [1]
+						[0] = -0.100904999998325,
+						[6] = 189.968729,
+						[3] = -190.032292,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 1,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = -0.0132369999999999,
+						["cooldowns_defensive"] = -0.0489759999999995,
+						["interrupt"] = 0,
+						["dispell"] = -0.00883199999999995,
+						["cc_break"] = 0,
+						["dead"] = 1,
 					}, -- [4]
-					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
 				},
 				["player_last_events"] = {
 					["Talthalador"] = {
 						{
 							true, -- [1]
-							217017, -- [2]
-							6432, -- [3]
-							1471525844.559, -- [4]
-							556428, -- [5]
-							"Slumber Fog <[*] Slumber Cloud>", -- [6]
+							217936, -- [2]
+							103221, -- [3]
+							1471553324.187, -- [4]
+							266499, -- [5]
+							"Mazgoroth", -- [6]
 							nil, -- [7]
-							32, -- [8]
+							4, -- [8]
 							false, -- [9]
 							-1, -- [10]
 						}, -- [1]
 						{
-							true, -- [1]
-							217017, -- [2]
-							6431, -- [3]
-							1471525845.557, -- [4]
-							549997, -- [5]
-							"Slumber Fog <[*] Slumber Cloud>", -- [6]
-							nil, -- [7]
-							32, -- [8]
-							false, -- [9]
-							-1, -- [10]
 						}, -- [2]
 						{
-							true, -- [1]
-							217017, -- [2]
-							6431, -- [3]
-							1471525846.579, -- [4]
-							543566, -- [5]
-							"Slumber Fog <[*] Slumber Cloud>", -- [6]
-							nil, -- [7]
-							32, -- [8]
-							false, -- [9]
-							-1, -- [10]
 						}, -- [3]
 						{
-							true, -- [1]
-							217017, -- [2]
-							6431, -- [3]
-							1471525847.557, -- [4]
-							537135, -- [5]
-							"Slumber Fog <[*] Slumber Cloud>", -- [6]
-							nil, -- [7]
-							32, -- [8]
-							false, -- [9]
-							-1, -- [10]
 						}, -- [4]
 						{
 						}, -- [5]
@@ -2137,39 +1693,12 @@ _detalhes_database = {
 						}, -- [31]
 						{
 						}, -- [32]
-						["n"] = 5,
+						["n"] = 2,
 					},
-				},
-				["frags_need_refresh"] = true,
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Talthalador"] = 928656.008093,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Talthalador"] = 682492.007515,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["end_time"] = 16223.969,
-				["combat_id"] = 20,
-				["TimeData"] = {
 				},
 				["totals_grupo"] = {
-					928656, -- [1]
-					682492, -- [2]
+					1902428, -- [1]
+					51173, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -2179,903 +1708,387 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 1,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
 						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 1,
 					}, -- [4]
 				},
-				["hasSaved"] = true,
-				["frags"] = {
-					["Ironwall"] = 1,
-					["Tomestone-Velen"] = 1,
-					["Soophie-Thrall"] = 1,
-					["Busttacapp-Dawnbringer"] = 1,
+				["frags_need_refresh"] = true,
+				["__call"] = {
 				},
-				["data_fim"] = "09:10:32",
-				["data_inicio"] = "09:09:53",
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Talthalador"] = 51173.005685,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Talthalador"] = 2072826.004509,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 43672.868,
+				["combat_id"] = 73,
+				["instance_type"] = "none",
+				["resincked"] = true,
+				["frags"] = {
+					["Lozarian"] = 1,
+					["Frozenvolt-Ravencrest"] = 1,
+					["Ebon Gargoyle"] = 1,
+					["Bloodlotus-Lothar"] = 1,
+					["Timfaildruid"] = 2,
+					["Opaladris"] = 2,
+					["Uphir-Thrall"] = 1,
+					["Garnabiel-Ghostlands"] = 1,
+					["Freyalise-Madoran"] = 1,
+					["Jhee-Madoran"] = 1,
+					["Wizzad-Ravencrest"] = 1,
+					["Marlboroedge"] = 1,
+					["Georgemooney-Madoran"] = 1,
+					["Aruzu-Ravencrest"] = 1,
+					["Chaenee-Icecrown"] = 1,
+					["Yamineko-Lothar"] = 1,
+					["Siege Engine"] = 1,
+					["Phole-Alexstrasza"] = 1,
+					["Sevoryn"] = 1,
+					["Expløsive-Trollbane"] = 1,
+					["Dastoran"] = 1,
+					["Nesie-Eonar"] = 1,
+					["Mcchoppa-Thrall"] = 2,
+					["Nicova-Blackhand"] = 1,
+					["Mogway-Thrall"] = 1,
+					["Tenavril-Trollbane"] = 1,
+					["Lorisalen-Gilneas"] = 1,
+					["Achillyz-Alexstrasza"] = 1,
+					["Bloodworm"] = 2,
+					["Halfpt-Uldaman"] = 1,
+					["Gilthanis-Elune"] = 1,
+					["Furyhowl-GrizzlyHills"] = 1,
+				},
+				["data_fim"] = "16:48:01",
+				["data_inicio"] = "16:46:50",
 				["CombatSkillCache"] = {
 				},
 				["PlayerLeechTrinket"] = {
 				},
-				["start_time"] = 16185.427,
-				["contra"] = "Malphazel",
-				["instance_type"] = "none",
-			}, -- [2]
+				["start_time"] = 43602.56,
+				["contra"] = "Mazgoroth",
+				["TimeData"] = {
+				},
+			}, -- [4]
 			{
 				{
+					["combatId"] = 72,
 					["tipo"] = 2,
-					["combatId"] = 19,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["damage_from"] = {
-								["Hellfire Infernal"] = true,
-								["Felhound"] = true,
+								["Mazgoroth"] = true,
 							},
 							["targets"] = {
-								["Hellfire Infernal"] = 410409,
-								["Shadowsworn Ritualist"] = 58316,
-								["Felhound"] = 63134,
+								["Mazgoroth"] = 631814,
 							},
-							["delay"] = 0,
 							["pets"] = {
 							},
-							["custom"] = 0,
-							["tipo"] = 1,
 							["classe"] = "DEMONHUNTER",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 531859.006348,
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["total"] = 531859.006348,
-							["damage_taken"] = 6697.006348,
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 4,
-										["b_amt"] = 0,
-										["c_dmg"] = 38225,
-										["g_amt"] = 0,
-										["n_max"] = 5944,
-										["targets"] = {
-											["Hellfire Infernal"] = 50480,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 12255,
-										["n_min"] = 2997,
-										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 50480,
-										["c_max"] = 13713,
-										["c_min"] = 5521,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["b_dmg"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["spellschool"] = 1,
-										["MISS"] = 2,
-									}, -- [1]
-									[204157] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 18545,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Hellfire Infernal"] = 18545,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 18545,
-										["c_max"] = 18545,
-										["id"] = 204157,
-										["r_dmg"] = 0,
-										["c_min"] = 18545,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									[178741] = {
-										["c_amt"] = 8,
-										["b_amt"] = 0,
-										["c_dmg"] = 121808,
-										["g_amt"] = 0,
-										["n_max"] = 8716,
-										["targets"] = {
-											["Hellfire Infernal"] = 83974,
-											["Felhound"] = 63134,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 25300,
-										["n_min"] = 8036,
-										["g_dmg"] = 0,
-										["counter"] = 11,
-										["total"] = 147108,
-										["c_max"] = 16969,
-										["id"] = 178741,
-										["r_dmg"] = 0,
-										["c_min"] = 12620,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["a_dmg"] = 0,
-										["spellschool"] = 4,
-									},
-									[203782] = {
-										["c_amt"] = 4,
-										["b_amt"] = 0,
-										["c_dmg"] = 145391,
-										["g_amt"] = 0,
-										["n_max"] = 19973,
-										["targets"] = {
-											["Hellfire Infernal"] = 165364,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 19973,
-										["n_min"] = 19973,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 165364,
-										["c_max"] = 38580,
-										["id"] = 203782,
-										["r_dmg"] = 0,
-										["c_min"] = 32887,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									[187727] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 116632,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Hellfire Infernal"] = 58316,
-											["Shadowsworn Ritualist"] = 58316,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 116632,
-										["c_max"] = 58316,
-										["id"] = 187727,
-										["r_dmg"] = 0,
-										["c_min"] = 58316,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["spellschool"] = 4,
-									},
-									[228478] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 33730,
-										["targets"] = {
-											["Hellfire Infernal"] = 33730,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 33730,
-										["n_min"] = 33730,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 33730,
-										["c_max"] = 0,
-										["id"] = 228478,
-										["r_dmg"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["nome"] = "Talthalador",
-							["spec"] = 581,
-							["grupo"] = true,
-							["last_dps"] = 53185.9006348,
-							["end_time"] = 1471525772,
-							["colocacao"] = 1,
-							["last_event"] = 1471525771,
+							["total_without_pet"] = 631814.004284,
 							["on_hold"] = false,
-							["start_time"] = 1471525762,
-							["serial"] = "Player-60-0A98990A",
 							["friendlyfire"] = {
 							},
-						}, -- [1]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 19,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorb"] = 0.004252,
-							["last_hps"] = 0,
-							["targets_overheal"] = {
-								["Talthalador"] = 320512,
-							},
-							["targets"] = {
-								["Talthalador"] = 111206,
-							},
-							["end_time"] = 1471525772,
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["healing_from"] = {
-								["Talthalador"] = true,
-							},
-							["healing_taken"] = 6327.004252,
-							["totalover"] = 320512.004252,
-							["total_without_pet"] = 6327.004252,
-							["totalover_without_pet"] = 0.004252,
-							["classe"] = "DEMONHUNTER",
-							["fight_component"] = true,
-							["total"] = 6327.004252,
-							["heal_enemy_amt"] = 0,
-							["spells"] = {
-								["_ActorTable"] = {
-									[210042] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Talthalador"] = 192126,
-										},
-										["n_max"] = 0,
-										["targets"] = {
-											["Talthalador"] = 0,
-										},
-										["n_min"] = 0,
-										["counter"] = 1,
-										["overheal"] = 192126,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 210042,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["n_amt"] = 1,
-										["m_healed"] = 0,
-										["n_curado"] = 0,
-										["c_min"] = 0,
-										["absorbed"] = 0,
-									},
-									[228477] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Talthalador"] = 95754,
-										},
-										["n_max"] = 3699,
-										["targets"] = {
-											["Talthalador"] = 3699,
-										},
-										["n_min"] = 3699,
-										["counter"] = 1,
-										["overheal"] = 95754,
-										["total"] = 3699,
-										["c_max"] = 0,
-										["id"] = 228477,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["n_amt"] = 1,
-										["m_healed"] = 0,
-										["n_curado"] = 3699,
-										["c_min"] = 0,
-										["absorbed"] = 0,
-									},
-									[207693] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Talthalador"] = 32632,
-										},
-										["n_max"] = 2628,
-										["targets"] = {
-											["Talthalador"] = 2628,
-										},
-										["n_min"] = 0,
-										["counter"] = 3,
-										["overheal"] = 32632,
-										["total"] = 2628,
-										["c_max"] = 0,
-										["id"] = 207693,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["n_amt"] = 3,
-										["m_healed"] = 0,
-										["n_curado"] = 2628,
-										["c_min"] = 0,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["nome"] = "Talthalador",
-							["spec"] = 581,
-							["grupo"] = true,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["delay"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1471525772,
-							["on_hold"] = false,
-							["start_time"] = 1471525766,
-							["serial"] = "Player-60-0A98990A",
-							["tipo"] = 2,
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 19,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["resource"] = 70.006865,
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["powertype"] = 3,
-							["classe"] = "DEMONHUNTER",
-							["fight_component"] = true,
-							["total"] = 0.006865,
-							["nome"] = "Talthalador",
-							["spec"] = 581,
-							["grupo"] = true,
-							["last_event"] = 1471525771,
-							["tipo"] = 3,
-							["received"] = 0.006865,
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 7,
-							},
-							["serial"] = "Player-60-0A98990A",
-							["resource_type"] = 18,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 19,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["fight_component"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["spec"] = 581,
-							["grupo"] = true,
-							["nome"] = "Talthalador",
-							["buff_uptime"] = 62,
-							["pets"] = {
-							},
-							["spell_cast"] = {
-								[178740] = 1,
-								[228477] = 1,
-								[204062] = 2,
-								[203782] = 5,
-								[204255] = 1,
-							},
-							["classe"] = "DEMONHUNTER",
-							["last_event"] = 1471525772,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[183926] = {
-										["uptime"] = 1,
-										["activedamt"] = 1,
-										["id"] = 183926,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[162915] = {
-										["uptime"] = 10,
-										["activedamt"] = 1,
-										["id"] = 162915,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[163073] = {
-										["uptime"] = 6,
-										["activedamt"] = 1,
-										["id"] = 163073,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[97341] = {
-										["uptime"] = 10,
-										["activedamt"] = 1,
-										["id"] = 97341,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[186404] = {
-										["uptime"] = 10,
-										["activedamt"] = 1,
-										["id"] = 186404,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[193456] = {
-										["uptime"] = 10,
-										["activedamt"] = 1,
-										["id"] = 193456,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[207693] = {
-										["uptime"] = 6,
-										["activedamt"] = 1,
-										["id"] = 207693,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[203981] = {
-										["uptime"] = 3,
-										["activedamt"] = 2,
-										["id"] = 203981,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[178740] = {
-										["uptime"] = 6,
-										["activedamt"] = 1,
-										["id"] = 178740,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-60-0A98990A",
-							["tipo"] = 4,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 19,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Talthalador"] = true,
-				},
-				["last_events_tables"] = {
-				},
-				["enemy"] = "Hellfire Infernal",
-				["combat_counter"] = 1192,
-				["playing_solo"] = true,
-				["totals"] = {
-					531858.856124, -- [1]
-					6326.947605, -- [2]
-					{
-						-0.004912, -- [1]
-						[0] = -0.0324690000000056,
-						[6] = -0.0046520000000001,
-						[3] = -0.007667,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Talthalador"] = 531859.006348,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Talthalador"] = 6327.004252,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["end_time"] = 16164.832,
-				["combat_id"] = 19,
-				["TimeData"] = {
-				},
-				["totals_grupo"] = {
-					531859, -- [1]
-					6327, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["hasSaved"] = true,
-				["frags"] = {
-					["Shadowsworn Ritualist"] = 1,
-					["Legion Vanguard"] = 1,
-					["Hellfire Infernal"] = 2,
-					["Abyssal Riftbreaker"] = 1,
-					["Felhound"] = 1,
-				},
-				["data_fim"] = "09:09:33",
-				["data_inicio"] = "09:09:23",
-				["CombatSkillCache"] = {
-				},
-				["PlayerLeechTrinket"] = {
-				},
-				["start_time"] = 16154.827,
-				["contra"] = "Hellfire Infernal",
-				["instance_type"] = "none",
-			}, -- [3]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 18,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["damage_from"] = {
-								["Hellfire Infernal"] = true,
-							},
-							["targets"] = {
-								["Hellfire Infernal"] = 447864,
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["custom"] = 0,
-							["tipo"] = 1,
-							["classe"] = "DEMONHUNTER",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 447864.005681,
-							["friendlyfire_total"] = 0,
 							["dps_started"] = false,
-							["total"] = 447864.005681,
-							["damage_taken"] = 26201.005681,
+							["end_time"] = 1471553166,
+							["friendlyfire_total"] = 0,
+							["spec"] = 581,
+							["nome"] = "Talthalador",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
-										["c_amt"] = 3,
-										["b_amt"] = 0,
-										["c_dmg"] = 23971,
+										["c_amt"] = 5,
+										["b_amt"] = 1,
+										["c_dmg"] = 42059,
 										["g_amt"] = 0,
-										["n_max"] = 6172,
+										["n_max"] = 5319,
 										["targets"] = {
-											["Hellfire Infernal"] = 65234,
+											["Mazgoroth"] = 94962,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 41263,
-										["n_min"] = 2802,
+										["n_dmg"] = 52903,
+										["n_min"] = 2441,
 										["g_dmg"] = 0,
-										["counter"] = 12,
-										["total"] = 65234,
-										["c_max"] = 11528,
+										["counter"] = 23,
+										["total"] = 94962,
+										["c_max"] = 10788,
+										["MISS"] = 3,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["c_min"] = 5798,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 3646,
+										["n_amt"] = 15,
 										["r_amt"] = 0,
+										["c_min"] = 5242,
+									}, -- [1]
+									[178741] = {
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 26898,
+										["g_amt"] = 0,
+										["n_max"] = 4609,
+										["targets"] = {
+											["Mazgoroth"] = 66254,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 39356,
+										["n_min"] = 4174,
+										["g_dmg"] = 0,
+										["counter"] = 12,
+										["total"] = 66254,
+										["c_max"] = 9089,
+										["id"] = 178741,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 9,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									}, -- [1]
-									[178741] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 15636,
-										["g_amt"] = 0,
-										["n_max"] = 7642,
-										["targets"] = {
-											["Hellfire Infernal"] = 50822,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 35186,
-										["n_min"] = 6373,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 50822,
-										["c_max"] = 15636,
-										["id"] = 178741,
-										["r_dmg"] = 0,
-										["c_min"] = 15636,
 										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["a_dmg"] = 0,
-										["spellschool"] = 4,
+										["c_min"] = 8885,
 									},
 									[203782] = {
-										["c_amt"] = 2,
+										["c_amt"] = 3,
 										["b_amt"] = 0,
-										["c_dmg"] = 68105,
+										["c_dmg"] = 89412,
 										["g_amt"] = 0,
-										["n_max"] = 18343,
+										["n_max"] = 15191,
 										["targets"] = {
-											["Hellfire Infernal"] = 151501,
+											["Mazgoroth"] = 206588,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 83396,
-										["n_min"] = 15639,
+										["n_dmg"] = 117176,
+										["n_min"] = 13934,
 										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 151501,
-										["c_max"] = 37208,
+										["counter"] = 11,
+										["total"] = 206588,
+										["c_max"] = 30454,
 										["id"] = 203782,
 										["r_dmg"] = 0,
-										["c_min"] = 30897,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 5,
+										["n_amt"] = 8,
+										["r_amt"] = 0,
+										["c_min"] = 28914,
+									},
+									[204021] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 64406,
+										["targets"] = {
+											["Mazgoroth"] = 64406,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 64406,
+										["n_min"] = 64406,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 64406,
+										["c_max"] = 0,
+										["id"] = 204021,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
 										["a_dmg"] = 0,
-										["spellschool"] = 1,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
 									},
 									[189112] = {
-										["c_amt"] = 1,
+										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["c_dmg"] = 50633,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 24265,
+										["targets"] = {
+											["Mazgoroth"] = 24265,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 24265,
+										["n_min"] = 24265,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 24265,
+										["c_max"] = 0,
+										["id"] = 189112,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[187727] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 74522,
 										["g_amt"] = 0,
 										["n_max"] = 0,
 										["targets"] = {
-											["Hellfire Infernal"] = 50633,
+											["Mazgoroth"] = 74522,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 0,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 50633,
-										["c_max"] = 50633,
-										["id"] = 189112,
+										["counter"] = 2,
+										["total"] = 74522,
+										["c_max"] = 37261,
+										["id"] = 187727,
 										["r_dmg"] = 0,
-										["c_min"] = 50633,
-										["r_amt"] = 0,
+										["spellschool"] = 4,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["spellschool"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 37261,
 									},
-									[187727] = {
+									[228478] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 29158,
+										["n_max"] = 30192,
 										["targets"] = {
-											["Hellfire Infernal"] = 29158,
+											["Mazgoroth"] = 100817,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 29158,
-										["n_min"] = 29158,
+										["n_dmg"] = 100817,
+										["n_min"] = 16603,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 29158,
+										["counter"] = 4,
+										["total"] = 100817,
 										["c_max"] = 0,
-										["id"] = 187727,
-										["r_dmg"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 4,
-									},
-									[228478] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 63401,
-										["g_amt"] = 0,
-										["n_max"] = 37115,
-										["targets"] = {
-											["Hellfire Infernal"] = 100516,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 37115,
-										["n_min"] = 37115,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 100516,
-										["c_max"] = 63401,
 										["id"] = 228478,
 										["r_dmg"] = 0,
-										["c_min"] = 63401,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 0,
 									},
 								},
-								["tipo"] = 2,
 							},
-							["nome"] = "Talthalador",
-							["spec"] = 581,
 							["grupo"] = true,
-							["last_dps"] = 34451.0773600769,
-							["end_time"] = 1471525747,
-							["colocacao"] = 1,
-							["last_event"] = 1471525746,
-							["on_hold"] = false,
-							["start_time"] = 1471525734,
+							["total"] = 631814.004284,
 							["serial"] = "Player-60-0A98990A",
-							["friendlyfire"] = {
-							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1471553165,
+							["damage_taken"] = 1174784.004284,
+							["start_time"] = 1471553143,
+							["delay"] = 0,
+							["tipo"] = 1,
 						}, -- [1]
 					},
 				}, -- [1]
 				{
+					["combatId"] = 72,
 					["tipo"] = 3,
-					["combatId"] = 18,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorb"] = 0.002155,
+							["totalabsorb"] = 0.002922,
 							["last_hps"] = 0,
-							["targets_overheal"] = {
-								["Talthalador"] = 261044,
-							},
-							["targets"] = {
-								["Talthalador"] = 250341,
-							},
-							["end_time"] = 1471525747,
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
 							["healing_from"] = {
 								["Talthalador"] = true,
 							},
-							["healing_taken"] = 26201.002155,
-							["totalover"] = 261044.002155,
-							["total_without_pet"] = 26201.002155,
-							["totalover_without_pet"] = 0.002155,
+							["targets"] = {
+								["Talthalador"] = 417802,
+							},
+							["targets_absorbs"] = {
+							},
+							["pets"] = {
+							},
+							["totalover_without_pet"] = 0.002922,
+							["targets_overheal"] = {
+							},
 							["classe"] = "DEMONHUNTER",
-							["fight_component"] = true,
-							["total"] = 26201.002155,
+							["totalover"] = 0.002922,
+							["total_without_pet"] = 417802.002922,
+							["iniciar_hps"] = false,
 							["heal_enemy_amt"] = 0,
+							["fight_component"] = true,
+							["total"] = 417802.002922,
+							["healing_taken"] = 417802.002922,
+							["end_time"] = 1471553166,
+							["nome"] = "Talthalador",
+							["spec"] = 581,
+							["grupo"] = true,
+							["last_event"] = 1471553161,
+							["heal_enemy"] = {
+							},
 							["spells"] = {
+								["tipo"] = 3,
 								["_ActorTable"] = {
 									[203794] = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
-											["Talthalador"] = 21223,
 										},
-										["n_max"] = 4543,
+										["n_max"] = 21664,
 										["targets"] = {
-											["Talthalador"] = 4543,
+											["Talthalador"] = 43328,
 										},
-										["n_min"] = 4543,
-										["counter"] = 1,
-										["overheal"] = 21223,
-										["total"] = 4543,
+										["n_min"] = 21664,
+										["counter"] = 2,
+										["overheal"] = 0,
+										["total"] = 43328,
 										["c_max"] = 0,
 										["id"] = 203794,
 										["targets_absorbs"] = {
@@ -3083,53 +2096,25 @@ _detalhes_database = {
 										["m_crit"] = 0,
 										["c_curado"] = 0,
 										["m_amt"] = 0,
-										["n_amt"] = 1,
-										["m_healed"] = 0,
-										["n_curado"] = 4543,
 										["c_min"] = 0,
-										["absorbed"] = 0,
-									},
-									[207693] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Talthalador"] = 44898,
-										},
-										["n_max"] = 3759,
-										["targets"] = {
-											["Talthalador"] = 3759,
-										},
-										["n_min"] = 0,
-										["counter"] = 4,
-										["overheal"] = 44898,
-										["total"] = 3759,
-										["c_max"] = 0,
-										["id"] = 207693,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["n_amt"] = 4,
+										["n_curado"] = 43328,
 										["m_healed"] = 0,
-										["n_curado"] = 3759,
-										["c_min"] = 0,
+										["n_amt"] = 2,
 										["absorbed"] = 0,
 									},
 									[228477] = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
-											["Talthalador"] = 194923,
 										},
-										["n_max"] = 9065,
+										["n_max"] = 95322,
 										["targets"] = {
-											["Talthalador"] = 17899,
+											["Talthalador"] = 323301,
 										},
-										["n_min"] = 8834,
-										["counter"] = 2,
-										["overheal"] = 194923,
-										["total"] = 17899,
+										["n_min"] = 55605,
+										["counter"] = 4,
+										["overheal"] = 0,
+										["total"] = 323301,
 										["c_max"] = 0,
 										["id"] = 228477,
 										["targets_absorbs"] = {
@@ -3137,751 +2122,219 @@ _detalhes_database = {
 										["m_crit"] = 0,
 										["c_curado"] = 0,
 										["m_amt"] = 0,
-										["n_amt"] = 2,
-										["m_healed"] = 0,
-										["n_curado"] = 17899,
 										["c_min"] = 0,
+										["n_curado"] = 323301,
+										["m_healed"] = 0,
+										["n_amt"] = 4,
+										["absorbed"] = 0,
+									},
+									[6262] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 51173,
+										["targets"] = {
+											["Talthalador"] = 51173,
+										},
+										["n_min"] = 51173,
+										["counter"] = 1,
+										["overheal"] = 0,
+										["total"] = 51173,
+										["c_max"] = 0,
+										["id"] = 6262,
+										["targets_absorbs"] = {
+										},
+										["m_crit"] = 0,
+										["c_curado"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 51173,
+										["m_healed"] = 0,
+										["n_amt"] = 1,
 										["absorbed"] = 0,
 									},
 								},
-								["tipo"] = 3,
 							},
-							["nome"] = "Talthalador",
-							["spec"] = 581,
-							["grupo"] = true,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["delay"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1471525747,
-							["on_hold"] = false,
-							["start_time"] = 1471525737,
-							["serial"] = "Player-60-0A98990A",
 							["tipo"] = 2,
+							["on_hold"] = false,
+							["start_time"] = 1471553150,
+							["serial"] = "Player-60-0A98990A",
+							["delay"] = 0,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
+					["combatId"] = 72,
 					["tipo"] = 7,
-					["combatId"] = 18,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["resource"] = 141.002543,
+							["resource"] = 365.005962,
 							["targets"] = {
 							},
 							["pets"] = {
 							},
-							["powertype"] = 3,
+							["powertype"] = 1,
 							["classe"] = "DEMONHUNTER",
 							["fight_component"] = true,
-							["total"] = 0.002543,
+							["total"] = 0.005962,
 							["nome"] = "Talthalador",
 							["spec"] = 581,
 							["grupo"] = true,
-							["last_event"] = 1471525747,
+							["resource_type"] = 17,
 							["tipo"] = 3,
-							["received"] = 0.002543,
+							["received"] = 0.005962,
 							["spells"] = {
+								["tipo"] = 7,
 								["_ActorTable"] = {
 								},
-								["tipo"] = 7,
 							},
 							["serial"] = "Player-60-0A98990A",
-							["resource_type"] = 18,
+							["last_event"] = 1471553209,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
+					["combatId"] = 72,
 					["tipo"] = 9,
-					["combatId"] = 18,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["buff_uptime"] = 62,
-							["classe"] = "DEMONHUNTER",
-							["interrupt_spells"] = {
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
 								["_ActorTable"] = {
-									[183752] = {
-										["id"] = 183752,
-										["counter"] = 1,
+									[207744] = {
+										["uptime"] = 8,
+										["activedamt"] = 0,
+										["id"] = 207744,
+										["actived"] = false,
 										["targets"] = {
-											["Hellfire Infernal"] = 1,
 										},
-										["interrompeu_oque"] = {
-											[205259] = 1,
-										},
+										["counter"] = 0,
 									},
 								},
-								["tipo"] = 9,
 							},
+							["buff_uptime"] = 152,
+							["classe"] = "DEMONHUNTER",
 							["buff_uptime_spells"] = {
+								["tipo"] = 9,
 								["_ActorTable"] = {
+									[203981] = {
+										["uptime"] = 6,
+										["activedamt"] = 3,
+										["id"] = 203981,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[180748] = {
+										["uptime"] = 23,
+										["activedamt"] = 1,
+										["id"] = 180748,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
 									[178740] = {
+										["uptime"] = 12,
+										["activedamt"] = 2,
+										["id"] = 178740,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[217984] = {
+										["uptime"] = 23,
+										["activedamt"] = 1,
+										["id"] = 217984,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[218256] = {
 										["uptime"] = 6,
 										["activedamt"] = 1,
-										["id"] = 178740,
+										["id"] = 218256,
+										["actived"] = false,
 										["targets"] = {
 										},
-										["actived"] = false,
 										["counter"] = 0,
 									},
-									[207693] = {
-										["uptime"] = 9,
-										["activedamt"] = 2,
-										["id"] = 207693,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[193456] = {
-										["uptime"] = 13,
+									[97341] = {
+										["uptime"] = 23,
 										["activedamt"] = 1,
-										["id"] = 193456,
+										["id"] = 97341,
+										["actived"] = false,
 										["targets"] = {
 										},
-										["actived"] = false,
 										["counter"] = 0,
 									},
-									[203981] = {
-										["uptime"] = 5,
-										["activedamt"] = 2,
-										["id"] = 203981,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[186404] = {
-										["uptime"] = 13,
-										["activedamt"] = 1,
-										["id"] = 186404,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[183926] = {
+									[187827] = {
 										["uptime"] = 3,
 										["activedamt"] = 1,
-										["id"] = 183926,
-										["targets"] = {
-										},
+										["id"] = 187827,
 										["actived"] = false,
-										["counter"] = 0,
-									},
-									[97341] = {
-										["uptime"] = 13,
-										["activedamt"] = 1,
-										["id"] = 97341,
 										["targets"] = {
 										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["interrompeu_oque"] = {
-								[205259] = 1,
-							},
-							["fight_component"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["spec"] = 581,
-							["grupo"] = true,
-							["spell_cast"] = {
-								[178740] = 1,
-								[228477] = 2,
-								[203782] = 7,
-								[204255] = 2,
-								[183752] = 1,
-							},
-							["tipo"] = 4,
-							["interrupt"] = 1.006793,
-							["last_event"] = 1471525747,
-							["pets"] = {
-							},
-							["nome"] = "Talthalador",
-							["serial"] = "Player-60-0A98990A",
-							["interrupt_targets"] = {
-								["Hellfire Infernal"] = 1,
-							},
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 18,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Talthalador"] = true,
-				},
-				["last_events_tables"] = {
-				},
-				["enemy"] = "Hellfire Infernal",
-				["combat_counter"] = 1191,
-				["playing_solo"] = true,
-				["totals"] = {
-					447863.794905, -- [1]
-					26200.953559, -- [2]
-					{
-						-0.007884, -- [1]
-						[0] = -0.025543,
-						[6] = -0.0030840000000012,
-						[3] = -0.006662,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 1,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Talthalador"] = 447864.005681,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Talthalador"] = 26201.002155,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["end_time"] = 16140.037,
-				["combat_id"] = 18,
-				["TimeData"] = {
-				},
-				["totals_grupo"] = {
-					447864, -- [1]
-					26201, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 1,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["hasSaved"] = true,
-				["frags"] = {
-					["Dreadstalker"] = 1,
-					["Hellfire Infernal"] = 1,
-					["Spellstalker"] = 1,
-					["Dark Devourer"] = 1,
-				},
-				["data_fim"] = "09:09:08",
-				["data_inicio"] = "09:08:54",
-				["CombatSkillCache"] = {
-				},
-				["PlayerLeechTrinket"] = {
-				},
-				["start_time"] = 16126.676,
-				["contra"] = "Hellfire Infernal",
-				["instance_type"] = "none",
-			}, -- [4]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 17,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["damage_from"] = {
-								["Hellfire Infernal"] = true,
-							},
-							["targets"] = {
-								["Hellfire Infernal"] = 184405,
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["custom"] = 0,
-							["tipo"] = 1,
-							["classe"] = "DEMONHUNTER",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 184405.007337,
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["total"] = 184405.007337,
-							["damage_taken"] = 5567.007337,
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 11912,
-										["g_amt"] = 0,
-										["n_max"] = 5888,
-										["targets"] = {
-											["Hellfire Infernal"] = 28828,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 16916,
-										["n_min"] = 5476,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 28828,
-										["c_max"] = 6011,
-										["c_min"] = 5901,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["b_dmg"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["spellschool"] = 1,
-										["MISS"] = 1,
-									}, -- [1]
-									[204157] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 15344,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Hellfire Infernal"] = 15344,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 15344,
-										["c_max"] = 15344,
-										["id"] = 204157,
-										["r_dmg"] = 0,
-										["c_min"] = 15344,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									[178741] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 7231,
-										["targets"] = {
-											["Hellfire Infernal"] = 20456,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 20456,
-										["n_min"] = 6298,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 20456,
-										["c_max"] = 0,
-										["id"] = 178741,
-										["r_dmg"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["a_dmg"] = 0,
-										["spellschool"] = 4,
-									},
-									[228478] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 32929,
-										["targets"] = {
-											["Hellfire Infernal"] = 32929,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 32929,
-										["n_min"] = 32929,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 32929,
-										["c_max"] = 0,
-										["id"] = 228478,
-										["r_dmg"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									[189112] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 25317,
-										["targets"] = {
-											["Hellfire Infernal"] = 25317,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 25317,
-										["n_min"] = 25317,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 25317,
-										["c_max"] = 0,
-										["id"] = 189112,
-										["r_dmg"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 4,
-									},
-									[187727] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 29158,
-										["targets"] = {
-											["Hellfire Infernal"] = 29158,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 29158,
-										["n_min"] = 29158,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 29158,
-										["c_max"] = 0,
-										["id"] = 187727,
-										["r_dmg"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 4,
-									},
-									[203782] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 16806,
-										["targets"] = {
-											["Hellfire Infernal"] = 32373,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 32373,
-										["n_min"] = 15567,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 32373,
-										["c_max"] = 0,
-										["id"] = 203782,
-										["r_dmg"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["nome"] = "Talthalador",
-							["spec"] = 581,
-							["grupo"] = true,
-							["last_dps"] = 18440.5007337,
-							["end_time"] = 1471525732,
-							["colocacao"] = 1,
-							["last_event"] = 1471525731,
-							["on_hold"] = false,
-							["start_time"] = 1471525725,
-							["serial"] = "Player-60-0A98990A",
-							["friendlyfire"] = {
-							},
-						}, -- [1]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 17,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorb"] = 0.003322,
-							["last_hps"] = 0,
-							["targets_overheal"] = {
-								["Talthalador"] = 117394,
-							},
-							["targets"] = {
-								["Talthalador"] = 11754,
-							},
-							["end_time"] = 1471525732,
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["healing_from"] = {
-								["Talthalador"] = true,
-							},
-							["healing_taken"] = 5567.003322,
-							["totalover"] = 117394.003322,
-							["total_without_pet"] = 5567.003322,
-							["totalover_without_pet"] = 0.003322,
-							["classe"] = "DEMONHUNTER",
-							["fight_component"] = true,
-							["total"] = 5567.003322,
-							["heal_enemy_amt"] = 0,
-							["spells"] = {
-								["_ActorTable"] = {
-									[228477] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Talthalador"] = 99454,
-										},
-										["n_max"] = 0,
-										["targets"] = {
-											["Talthalador"] = 0,
-										},
-										["n_min"] = 0,
-										["counter"] = 1,
-										["overheal"] = 99454,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 228477,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["n_amt"] = 1,
-										["m_healed"] = 0,
-										["n_curado"] = 0,
-										["c_min"] = 0,
-										["absorbed"] = 0,
-									},
-									[207693] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Talthalador"] = 17940,
-										},
-										["n_max"] = 5567,
-										["targets"] = {
-											["Talthalador"] = 5567,
-										},
-										["n_min"] = 5567,
-										["counter"] = 2,
-										["overheal"] = 17940,
-										["total"] = 5567,
-										["c_max"] = 0,
-										["id"] = 207693,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["n_amt"] = 2,
-										["m_healed"] = 0,
-										["n_curado"] = 5567,
-										["c_min"] = 0,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["nome"] = "Talthalador",
-							["spec"] = 581,
-							["grupo"] = true,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["delay"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1471525731,
-							["on_hold"] = false,
-							["start_time"] = 1471525727,
-							["serial"] = "Player-60-0A98990A",
-							["tipo"] = 2,
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 17,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["resource"] = 40.007958,
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["powertype"] = 3,
-							["classe"] = "DEMONHUNTER",
-							["fight_component"] = true,
-							["total"] = 0.007958,
-							["nome"] = "Talthalador",
-							["spec"] = 581,
-							["grupo"] = true,
-							["last_event"] = 1471525734,
-							["tipo"] = 3,
-							["received"] = 0.007958,
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 7,
-							},
-							["serial"] = "Player-60-0A98990A",
-							["resource_type"] = 18,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 17,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["fight_component"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["spec"] = 581,
-							["grupo"] = true,
-							["nome"] = "Talthalador",
-							["buff_uptime"] = 31,
-							["pets"] = {
-							},
-							["spell_cast"] = {
-								[203782] = 2,
-								[178740] = 1,
-								[228477] = 1,
-								[204255] = 1,
-							},
-							["classe"] = "DEMONHUNTER",
-							["last_event"] = 1471525732,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[178740] = {
-										["uptime"] = 4,
-										["activedamt"] = 1,
-										["id"] = 178740,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[207693] = {
-										["uptime"] = 5,
-										["activedamt"] = 1,
-										["id"] = 207693,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[193456] = {
-										["uptime"] = 7,
-										["activedamt"] = 1,
-										["id"] = 193456,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[97341] = {
-										["uptime"] = 7,
-										["activedamt"] = 1,
-										["id"] = 97341,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[203981] = {
-										["uptime"] = 1,
-										["activedamt"] = 1,
-										["id"] = 203981,
-										["targets"] = {
-										},
-										["actived"] = false,
 										["counter"] = 0,
 									},
 									[186404] = {
-										["uptime"] = 7,
+										["uptime"] = 23,
 										["activedamt"] = 1,
 										["id"] = 186404,
+										["actived"] = false,
 										["targets"] = {
 										},
+										["counter"] = 0,
+									},
+									[193456] = {
+										["uptime"] = 23,
+										["activedamt"] = 1,
+										["id"] = 193456,
 										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[203819] = {
+										["uptime"] = 10,
+										["activedamt"] = 2,
+										["id"] = 203819,
+										["actived"] = false,
+										["targets"] = {
+										},
 										["counter"] = 0,
 									},
 								},
-								["tipo"] = 9,
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 8,
+							["buff_uptime_targets"] = {
+							},
+							["spec"] = 581,
+							["grupo"] = true,
+							["spell_cast"] = {
+								[203782] = 11,
+								[178740] = 2,
+								[6262] = 1,
+								[204021] = 1,
+								[228477] = 4,
+								[187827] = 1,
+								[204255] = 5,
+								[203720] = 2,
+								[218256] = 1,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["last_event"] = 1471553166,
+							["nome"] = "Talthalador",
+							["pets"] = {
 							},
 							["serial"] = "Player-60-0A98990A",
 							["tipo"] = 4,
@@ -3889,8 +2342,8 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
+					["combatId"] = 72,
 					["tipo"] = 2,
-					["combatId"] = 17,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -3898,61 +2351,246 @@ _detalhes_database = {
 					["Talthalador"] = true,
 				},
 				["last_events_tables"] = {
+					{
+						{
+							{
+								true, -- [1]
+								1, -- [2]
+								113319, -- [3]
+								1471553148.823, -- [4]
+								571980, -- [5]
+								"Mazgoroth", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [1]
+							{
+								true, -- [1]
+								1, -- [2]
+								100551, -- [3]
+								1471553150.74, -- [4]
+								458661, -- [5]
+								"Mazgoroth", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [2]
+							{
+								false, -- [1]
+								228477, -- [2]
+								95322, -- [3]
+								1471553151.948, -- [4]
+								453432, -- [5]
+								"Talthalador", -- [6]
+								nil, -- [7]
+								0, -- [8]
+							}, -- [3]
+							{
+								true, -- [1]
+								1, -- [2]
+								113322, -- [3]
+								1471553152.271, -- [4]
+								453432, -- [5]
+								"Mazgoroth", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [4]
+							{
+								false, -- [1]
+								203794, -- [2]
+								21664, -- [3]
+								1471553152.775, -- [4]
+								361774, -- [5]
+								"Talthalador", -- [6]
+								nil, -- [7]
+								0, -- [8]
+							}, -- [5]
+							{
+								true, -- [1]
+								1, -- [2]
+								130592, -- [3]
+								1471553153.811, -- [4]
+								361774, -- [5]
+								"Mazgoroth", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [6]
+							{
+								false, -- [1]
+								228477, -- [2]
+								90556, -- [3]
+								1471553155.542, -- [4]
+								321738, -- [5]
+								"Talthalador", -- [6]
+								nil, -- [7]
+								0, -- [8]
+							}, -- [7]
+							{
+								true, -- [1]
+								1, -- [2]
+								208268, -- [3]
+								1471553155.542, -- [4]
+								321738, -- [5]
+								"Mazgoroth", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [8]
+							{
+								false, -- [1]
+								6262, -- [2]
+								51173, -- [3]
+								1471553156.17, -- [4]
+								164643, -- [5]
+								"Talthalador", -- [6]
+								nil, -- [7]
+								0, -- [8]
+							}, -- [9]
+							{
+								false, -- [1]
+								203794, -- [2]
+								21664, -- [3]
+								1471553156.277, -- [4]
+								186307, -- [5]
+								"Talthalador", -- [6]
+								nil, -- [7]
+								0, -- [8]
+							}, -- [10]
+							{
+								false, -- [1]
+								228477, -- [2]
+								55605, -- [3]
+								1471553158.615, -- [4]
+								241912, -- [5]
+								"Talthalador", -- [6]
+								nil, -- [7]
+								0, -- [8]
+							}, -- [11]
+							{
+								true, -- [1]
+								1, -- [2]
+								147284, -- [3]
+								1471553162.209, -- [4]
+								241912, -- [5]
+								"Mazgoroth", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [12]
+							{
+								false, -- [1]
+								228477, -- [2]
+								81818, -- [3]
+								1471553163.317, -- [4]
+								176446, -- [5]
+								"Talthalador", -- [6]
+								nil, -- [7]
+								0, -- [8]
+							}, -- [13]
+							{
+								true, -- [1]
+								1, -- [2]
+								136404, -- [3]
+								1471553163.729, -- [4]
+								176446, -- [5]
+								"Mazgoroth", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [14]
+							{
+								true, -- [1]
+								1, -- [2]
+								55547, -- [3]
+								1471553165.203, -- [4]
+								211634, -- [5]
+								"Mazgoroth", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [15]
+							{
+								true, -- [1]
+								1, -- [2]
+								68653, -- [3]
+								1471553166.715, -- [4]
+								156087, -- [5]
+								"Mazgoroth", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [16]
+							{
+								true, -- [1]
+								1, -- [2]
+								100844, -- [3]
+								1471553168.288, -- [4]
+								87434, -- [5]
+								"Mazgoroth", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								13410, -- [10]
+							}, -- [17]
+							{
+								3, -- [1]
+								0, -- [2]
+								0, -- [3]
+								0, -- [4]
+								0, -- [5]
+								"Talthalador", -- [6]
+							}, -- [18]
+						}, -- [1]
+						1471553168.288, -- [2]
+						"Talthalador", -- [3]
+						"DEMONHUNTER", -- [4]
+						562860, -- [5]
+						"0m 23s", -- [6]
+						["dead_at"] = 23.5329999999958,
+						["dead"] = true,
+					}, -- [1]
 				},
-				["enemy"] = "Hellfire Infernal",
-				["combat_counter"] = 1190,
+				["enemy"] = "Mazgoroth",
+				["combat_counter"] = 1261,
 				["playing_solo"] = true,
 				["totals"] = {
-					184404.865398, -- [1]
-					5566.95141899999, -- [2]
+					631813.60032599, -- [1]
+					417801.782509, -- [2]
 					{
-						-0.00793600000000083, -- [1]
-						[0] = -0.0208810000003723,
-						[6] = 28.992,
-						[3] = -29.011992,
+						-0.0385229999999869, -- [1]
+						[0] = -200.064474,
+						[6] = 109.963341,
+						[3] = 89.963685,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = -0.00163500000000005,
 						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = -0.0278969999999998,
+						["interrupt"] = 0,
 						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 1,
 					}, -- [4]
-					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
 				},
 				["player_last_events"] = {
 				},
-				["frags_need_refresh"] = true,
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Talthalador"] = 184405.007337,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Talthalador"] = 5567.003322,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["end_time"] = 16124.66,
 				["totals_grupo"] = {
-					184405, -- [1]
-					5567, -- [2]
+					631814, -- [1]
+					417802, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -3962,36 +2600,66 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
 						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 1,
 					}, -- [4]
 				},
-				["combat_id"] = 17,
-				["TimeData"] = {
+				["frags_need_refresh"] = true,
+				["__call"] = {
 				},
-				["hasSaved"] = true,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Talthalador"] = 417802.002922,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Talthalador"] = 710870.008019,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 43559.286,
+				["combat_id"] = 72,
+				["instance_type"] = "none",
+				["resincked"] = true,
 				["frags"] = {
-					["Abyssal Riftbreaker"] = 1,
-					["Hellfire Infernal"] = 1,
+					["Vannalia"] = 1,
+					["Georgemooney-Madoran"] = 1,
+					["Wizzad-Ravencrest"] = 1,
+					["Resuurgam"] = 1,
+					["Lovelee-Ghostlands"] = 1,
+					["Opaladris"] = 1,
+					["Garnabiel-Ghostlands"] = 1,
 				},
-				["data_fim"] = "09:08:52",
-				["data_inicio"] = "09:08:45",
+				["data_fim"] = "16:46:07",
+				["data_inicio"] = "16:45:44",
 				["CombatSkillCache"] = {
 				},
 				["PlayerLeechTrinket"] = {
 				},
-				["start_time"] = 16117.127,
-				["contra"] = "Hellfire Infernal",
-				["instance_type"] = "none",
+				["start_time"] = 43535.753,
+				["contra"] = "Mazgoroth",
+				["TimeData"] = {
+				},
 			}, -- [5]
 		},
 	},
+	["savedbuffs"] = {
+	},
 	["last_version"] = "v5.21",
-	["last_encounter"] = "Ragnaros",
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
 			["lasttry"] = {
@@ -3999,10 +2667,10 @@ _detalhes_database = {
 			["annouce"] = true,
 			["dpshistory"] = {
 			},
-			["enabled"] = true,
 			["author"] = "Details! Team",
-			["level"] = 1,
 			["dps"] = 0,
+			["level"] = 1,
+			["enabled"] = true,
 		},
 		["DETAILS_PLUGIN_DEATH_GRAPHICS"] = {
 			["last_boss"] = false,
@@ -4020,15 +2688,15 @@ _detalhes_database = {
 			["max_segments_for_current"] = 2,
 			["max_deaths_for_current"] = 15,
 			["last_player"] = false,
-			["author"] = "Details! Team",
+			["InstalledAt"] = 1470762341,
 			["last_encounter_hash"] = false,
-			["enabled"] = true,
+			["showing_type"] = 4,
 			["timeline_cutoff_time"] = 3,
 			["last_segment"] = false,
-			["last_combat_id"] = 31,
+			["last_combat_id"] = 76,
 			["timeline_cutoff_delete_time"] = 3,
-			["showing_type"] = 4,
-			["InstalledAt"] = 1470762341,
+			["enabled"] = true,
+			["author"] = "Details! Team",
 		},
 		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
 			["enabled"] = true,
@@ -4037,11 +2705,11 @@ _detalhes_database = {
 			["max_emote_segments"] = 3,
 			["author"] = "Details! Team",
 			["window_scale"] = 1,
-			["encounter_timers_dbm"] = {
-			},
+			["hide_on_combat"] = false,
 			["show_icon"] = 5,
 			["opened"] = 0,
-			["hide_on_combat"] = false,
+			["encounter_timers_dbm"] = {
+			},
 		},
 		["DETAILS_PLUGIN_LEECH_TRINKET"] = {
 			["enabled"] = true,
@@ -4049,17 +2717,17 @@ _detalhes_database = {
 		},
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["updatespeed"] = 1,
-			["enabled"] = true,
 			["showamount"] = false,
+			["animate"] = false,
 			["useplayercolor"] = false,
-			["author"] = "Details! Team",
 			["useclasscolors"] = false,
+			["author"] = "Details! Team",
 			["playercolor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["animate"] = false,
+			["enabled"] = true,
 		},
 		["DETAILS_PLUGIN_DPS_TUNING"] = {
 			["enabled"] = true,
@@ -4068,17 +2736,41 @@ _detalhes_database = {
 		},
 		["DETAILS_PLUGIN_VANGUARD"] = {
 			["enabled"] = true,
+			["tank_block_texture"] = "Details Serenity",
 			["tank_block_color"] = {
 				0.24705882, -- [1]
 				0.0039215, -- [2]
 				0, -- [3]
 				0.8, -- [4]
 			},
-			["tank_block_texture"] = "Details Serenity",
 			["show_inc_bars"] = false,
 			["author"] = "Details! Team",
 			["first_run"] = false,
 			["tank_block_size"] = 150,
+		},
+		["DETAILS_PLUGIN_TIME_ATTACK"] = {
+			["enabled"] = true,
+			["realm_last_shown"] = 40,
+			["saved_as_anonymous"] = true,
+			["recently_as_anonymous"] = true,
+			["dps"] = 0,
+			["disable_sharing"] = false,
+			["history"] = {
+			},
+			["time"] = 40,
+			["history_lastindex"] = 0,
+			["realm_lastamt"] = 0,
+			["realm_history"] = {
+			},
+			["author"] = "Details! Team",
+		},
+		["DETAILS_PLUGIN_RAIDCHECK"] = {
+			["enabled"] = true,
+			["pre_pot_tanks"] = false,
+			["mythic_1_4"] = true,
+			["author"] = "Details! Team",
+			["use_report_panel"] = true,
+			["pre_pot_healers"] = false,
 		},
 		["DETAILS_PLUGIN_CHART_VIEWER"] = {
 			["enabled"] = true,
@@ -4092,8 +2784,8 @@ _detalhes_database = {
 					["texture"] = "line",
 				}, -- [1]
 				{
-					["version"] = "v2.0",
 					["iType"] = "raid-TANK",
+					["version"] = "v2.0",
 					["options"] = {
 						["iType"] = "raid-TANK",
 						["name"] = "Tanks Damage Taken",
@@ -4104,8 +2796,8 @@ _detalhes_database = {
 					["texture"] = "line",
 				}, -- [2]
 				{
-					["iType"] = "raid-DAMAGER",
 					["version"] = "v2.0",
+					["iType"] = "raid-DAMAGER",
 					["options"] = {
 						["iType"] = "raid-DAMAGER",
 						["name"] = "Damager (Same Class)",
@@ -4118,66 +2810,779 @@ _detalhes_database = {
 				["last_selected"] = 3,
 			},
 			["options"] = {
-				["show_method"] = 4,
 				["auto_create"] = true,
+				["show_method"] = 4,
 				["window_scale"] = 1,
 			},
 		},
-		["DETAILS_PLUGIN_RAIDCHECK"] = {
-			["enabled"] = true,
-			["pre_pot_tanks"] = false,
-			["mythic_1_4"] = true,
-			["author"] = "Details! Team",
-			["use_report_panel"] = true,
-			["pre_pot_healers"] = false,
-		},
-		["DETAILS_PLUGIN_TIME_ATTACK"] = {
-			["enabled"] = true,
-			["realm_last_shown"] = 40,
-			["saved_as_anonymous"] = true,
-			["recently_as_anonymous"] = true,
-			["dps"] = 0,
-			["disable_sharing"] = false,
-			["history"] = {
-			},
-			["time"] = 40,
-			["history_lastindex"] = 0,
-			["author"] = "Details! Team",
-			["realm_history"] = {
-			},
-			["realm_lastamt"] = 0,
-		},
 	},
-	["cached_talents"] = {
-		["Player-60-0A98990A"] = {
-			22503, -- [1]
-			22505, -- [2]
-		},
+	["nick_tag_cache"] = {
+		["nextreset"] = 1472058341,
+		["last_version"] = 8,
 	},
 	["SoloTablesSaved"] = {
 		["LastSelected"] = "DETAILS_PLUGIN_DAMAGE_RANK",
 		["Mode"] = 1,
 	},
-	["combat_counter"] = 1196,
-	["last_instance_time"] = 1471372328,
+	["cached_talents"] = {
+		["Player-5-0A57B9F0"] = {
+			21973, -- [1]
+			19272, -- [2]
+			22353, -- [3]
+			19260, -- [4]
+			21963, -- [5]
+			22147, -- [6]
+			22148, -- [7]
+		},
+		["Player-60-0A8306A6"] = {
+			19348, -- [1]
+			22002, -- [2]
+			22284, -- [3]
+			22495, -- [4]
+			22279, -- [5]
+			22308, -- [6]
+			21998, -- [7]
+		},
+		["Player-1428-07BB2565"] = {
+		},
+		["Player-1168-07BF4789"] = {
+			21854, -- [1]
+			22765, -- [2]
+		},
+		["Player-1428-07A224C5"] = {
+			16025, -- [1]
+			22471, -- [2]
+			22444, -- [3]
+			22452, -- [4]
+			22309, -- [5]
+			22449, -- [6]
+			22463, -- [7]
+		},
+		["Player-76-0909ADFF"] = {
+			22442, -- [1]
+			22450, -- [2]
+			22459, -- [3]
+			21633, -- [4]
+			22447, -- [5]
+			22449, -- [6]
+			22471, -- [7]
+		},
+		["Player-60-0A99EE59"] = {
+			21854, -- [1]
+			21857, -- [2]
+		},
+		["Player-1146-0793060C"] = {
+			21854, -- [1]
+			21857, -- [2]
+		},
+		["Player-160-0724BBD0"] = {
+			22590, -- [1]
+			22483, -- [2]
+			22179, -- [3]
+			22215, -- [4]
+			22595, -- [5]
+			22182, -- [6]
+			22319, -- [7]
+		},
+		["Player-1174-08122C88"] = {
+			22280, -- [1]
+			21997, -- [2]
+			19347, -- [3]
+			22269, -- [4]
+			22293, -- [5]
+			22002, -- [6]
+			22273, -- [7]
+		},
+		["Player-1171-0691DF19"] = {
+			19286, -- [1]
+			22052, -- [2]
+			22480, -- [3]
+			19293, -- [4]
+			19295, -- [5]
+			21181, -- [6]
+			19288, -- [7]
+		},
+		["Player-3685-08A87BA2"] = {
+			22190, -- [1]
+			17593, -- [2]
+			21203, -- [3]
+			22164, -- [4]
+			17575, -- [5]
+			17569, -- [6]
+			21811, -- [7]
+		},
+		["Player-51-06C1D283"] = {
+			19348, -- [1]
+			22002, -- [2]
+			22284, -- [3]
+			22495, -- [4]
+			22279, -- [5]
+			22274, -- [6]
+			21998, -- [7]
+		},
+		["Player-60-08991F83"] = {
+			22312, -- [1]
+			22316, -- [2]
+			22094, -- [3]
+			22317, -- [4]
+			22311, -- [5]
+			21720, -- [6]
+			21637, -- [7]
+		},
+		["Player-60-06E0B38A"] = {
+			22313, -- [1]
+			22325, -- [2]
+			22487, -- [3]
+			21753, -- [4]
+			21755, -- [5]
+			21719, -- [6]
+			21637, -- [7]
+		},
+		["Player-114-04889261"] = {
+			22274, -- [1]
+			22499, -- [2]
+			19357, -- [3]
+			22495, -- [4]
+			22279, -- [5]
+			19347, -- [6]
+			21998, -- [7]
+		},
+		["Player-113-07BF5947"] = {
+			21854, -- [1]
+			22799, -- [2]
+		},
+		["Player-60-06D8EC5B"] = {
+			22339, -- [1]
+			22331, -- [2]
+			19239, -- [3]
+			22123, -- [4]
+			22341, -- [5]
+			22344, -- [6]
+			21186, -- [7]
+		},
+		["Player-60-0AA3B0F7"] = {
+			22091, -- [1]
+			19818, -- [2]
+			19992, -- [3]
+			19995, -- [4]
+			20174, -- [5]
+			22103, -- [6]
+			22105, -- [7]
+		},
+		["Player-67-0609A781"] = {
+			22288, -- [1]
+			22499, -- [2]
+			22002, -- [3]
+			22495, -- [4]
+			22279, -- [5]
+			19347, -- [6]
+			21998, -- [7]
+		},
+		["Player-3683-08C7664B"] = {
+			22520, -- [1]
+			22528, -- [2]
+			22522, -- [3]
+			22026, -- [4]
+			22538, -- [5]
+			22028, -- [6]
+			22532, -- [7]
+		},
+		["Player-116-05F30D75"] = {
+			19236, -- [1]
+			22114, -- [2]
+			19239, -- [3]
+			19250, -- [4]
+			22118, -- [5]
+			21188, -- [6]
+			22123, -- [7]
+		},
+		["Player-76-08D08CF7"] = {
+		},
+		["Player-1427-0569709E"] = {
+			20175, -- [1]
+			22105, -- [2]
+			19995, -- [3]
+			20184, -- [4]
+			19302, -- [5]
+			22091, -- [6]
+			19771, -- [7]
+		},
+		["Player-76-090C6BE8"] = {
+			18571, -- [1]
+			22163, -- [2]
+			22426, -- [3]
+			21712, -- [4]
+			22419, -- [5]
+			18577, -- [6]
+			21706, -- [7]
+		},
+		["Player-11-0A6865EE"] = {
+			19264, -- [1]
+			21966, -- [2]
+			21675, -- [3]
+			19275, -- [4]
+			21971, -- [5]
+			22323, -- [6]
+			21963, -- [7]
+		},
+		["Player-90-079D07A7"] = {
+			22503, -- [1]
+			22505, -- [2]
+		},
+		["Player-11-0A61054B"] = {
+			22558, -- [1]
+			22594, -- [2]
+			21811, -- [3]
+			22434, -- [4]
+			21795, -- [5]
+			22438, -- [6]
+			22645, -- [7]
+		},
+		["Player-60-0A96DFD7"] = {
+			16025, -- [1]
+			21144, -- [2]
+			22445, -- [3]
+			22467, -- [4]
+			22461, -- [5]
+			22474, -- [6]
+			22446, -- [7]
+		},
+		["Player-60-09FB3431"] = {
+			22026, -- [1]
+			22028, -- [2]
+			22518, -- [3]
+			22522, -- [4]
+			22528, -- [5]
+			22532, -- [6]
+			22030, -- [7]
+		},
+		["Player-60-0A939C61"] = {
+			22358, -- [1]
+			21963, -- [2]
+			19275, -- [3]
+			19272, -- [4]
+			22172, -- [5]
+			22145, -- [6]
+			21198, -- [7]
+		},
+		["Player-3207-09690ED1"] = {
+			22503, -- [1]
+			22505, -- [2]
+		},
+		["Player-60-0A696691"] = {
+			22624, -- [1]
+			22409, -- [2]
+			19138, -- [3]
+			22627, -- [4]
+			22383, -- [5]
+			22397, -- [6]
+			22407, -- [7]
+		},
+		["Player-87-068A836B"] = {
+			20174, -- [1]
+			22169, -- [2]
+			19995, -- [3]
+			22166, -- [4]
+			22214, -- [5]
+			19823, -- [6]
+			19302, -- [7]
+		},
+		["Player-159-09084158"] = {
+			22456, -- [1]
+			22443, -- [2]
+			22445, -- [3]
+			22465, -- [4]
+			22446, -- [5]
+			22472, -- [6]
+			22220, -- [7]
+		},
+		["Player-52-07DC110E"] = {
+			22590, -- [1]
+			22591, -- [2]
+			22179, -- [3]
+			22483, -- [4]
+			22595, -- [5]
+			22182, -- [6]
+			22592, -- [7]
+		},
+		["Player-1173-09CA29ED"] = {
+			22366, -- [1]
+			21716, -- [2]
+			21710, -- [3]
+			22404, -- [4]
+			18569, -- [5]
+			18577, -- [6]
+			19283, -- [7]
+		},
+		["Player-1165-06A6B522"] = {
+		},
+		["Player-77-01ED37F4"] = {
+			22498, -- [1]
+			22289, -- [2]
+			22274, -- [3]
+			21998, -- [4]
+			22002, -- [5]
+			19347, -- [6]
+			22499, -- [7]
+		},
+		["Player-11-069F768D"] = {
+			22275, -- [1]
+			22500, -- [2]
+			19348, -- [3]
+			22299, -- [4]
+			22496, -- [5]
+			22271, -- [6]
+			22295, -- [7]
+		},
+		["Player-3661-06D0F9E9"] = {
+			21182, -- [1]
+			19293, -- [2]
+			19280, -- [3]
+			22480, -- [4]
+			22048, -- [5]
+			21181, -- [6]
+			19291, -- [7]
+		},
+		["Player-1428-0560BDCC"] = {
+			18571, -- [1]
+			21778, -- [2]
+			22426, -- [3]
+			22159, -- [4]
+			21712, -- [5]
+			22420, -- [6]
+			21706, -- [7]
+		},
+		["Player-52-02763A42"] = {
+			19755, -- [1]
+			22325, -- [2]
+			21978, -- [3]
+			22313, -- [4]
+			21719, -- [5]
+			22310, -- [6]
+			21753, -- [7]
+		},
+		["Player-1173-02EB0778"] = {
+			19264, -- [1]
+			22492, -- [2]
+			22127, -- [3]
+			22152, -- [4]
+			21966, -- [5]
+			21968, -- [6]
+			21970, -- [7]
+		},
+		["Player-1426-08D52028"] = {
+			22387, -- [1]
+			18570, -- [2]
+			22159, -- [3]
+			18576, -- [4]
+			22388, -- [5]
+			22389, -- [6]
+			21655, -- [7]
+		},
+		["Player-60-0A3B1204"] = {
+			22624, -- [1]
+			22373, -- [2]
+			22380, -- [3]
+			22627, -- [4]
+			22383, -- [5]
+			22397, -- [6]
+			22407, -- [7]
+		},
+		["Player-58-02F72851"] = {
+			22267, -- [1]
+			22289, -- [2]
+			22318, -- [3]
+			22284, -- [4]
+			22308, -- [5]
+			22497, -- [6]
+			22002, -- [7]
+		},
+		["Player-55-095EF2D9"] = {
+			22416, -- [1]
+			22765, -- [2]
+		},
+		["Player-7-00584151"] = {
+			22274, -- [1]
+			22002, -- [2]
+			22284, -- [3]
+			22495, -- [4]
+			22279, -- [5]
+			19347, -- [6]
+			21998, -- [7]
+		},
+		["Player-68-00510F0D"] = {
+			19279, -- [1]
+			19280, -- [2]
+			19288, -- [3]
+			19293, -- [4]
+			22090, -- [5]
+			19294, -- [6]
+			21180, -- [7]
+		},
+		["Player-76-08E86768"] = {
+			22267, -- [1]
+			22002, -- [2]
+			22284, -- [3]
+			22308, -- [4]
+			22279, -- [5]
+			19347, -- [6]
+			22497, -- [7]
+		},
+		["Player-60-0A98E901"] = {
+			21854, -- [1]
+			21857, -- [2]
+		},
+		["Player-1182-0783AF4C"] = {
+			22459, -- [1]
+			16025, -- [2]
+			22447, -- [3]
+			22465, -- [4]
+			22471, -- [5]
+			22472, -- [6]
+			21633, -- [7]
+		},
+		["Player-76-084709DA"] = {
+			17577, -- [1]
+			17565, -- [2]
+			22116, -- [3]
+			22180, -- [4]
+			21668, -- [5]
+			22164, -- [6]
+			17593, -- [7]
+		},
+		["Player-60-098FD6C3"] = {
+			18569, -- [1]
+			18570, -- [2]
+			22366, -- [3]
+			18577, -- [4]
+			21710, -- [5]
+			21716, -- [6]
+			22404, -- [7]
+		},
+		["Player-9-0906251E"] = {
+			22533, -- [1]
+			22016, -- [2]
+			22515, -- [3]
+			22523, -- [4]
+			22023, -- [5]
+			22021, -- [6]
+			22527, -- [7]
+		},
+		["Player-3208-0918CE7B"] = {
+			22279, -- [1]
+			22495, -- [2]
+			19347, -- [3]
+			21998, -- [4]
+			22284, -- [5]
+			22002, -- [6]
+			22274, -- [7]
+		},
+		["Player-60-0A98990A"] = {
+			21854, -- [1]
+			21857, -- [2]
+		},
+		["Player-3208-05DA9F27"] = {
+			22091, -- [1]
+			19818, -- [2]
+			22099, -- [3]
+			19995, -- [4]
+			20174, -- [5]
+			20184, -- [6]
+			22107, -- [7]
+		},
+		["Player-3693-082B9B8D"] = {
+			22458, -- [1]
+			22442, -- [2]
+			22445, -- [3]
+			22470, -- [4]
+			22446, -- [5]
+			22474, -- [6]
+			21144, -- [7]
+		},
+		["Player-1171-070A6194"] = {
+			17577, -- [1]
+			17565, -- [2]
+			22179, -- [3]
+			17593, -- [4]
+			22190, -- [5]
+			21671, -- [6]
+			22164, -- [7]
+		},
+		["Player-1069-095F2B82"] = {
+			22504, -- [1]
+			22507, -- [2]
+		},
+		["Player-3209-075B8E9F"] = {
+			22135, -- [1]
+			21209, -- [2]
+			19230, -- [3]
+			19227, -- [4]
+			19220, -- [5]
+			19165, -- [6]
+			22014, -- [7]
+		},
+		["Player-99-061AFAAE"] = {
+			22386, -- [1]
+			21778, -- [2]
+			21655, -- [3]
+			22159, -- [4]
+			18585, -- [5]
+			18570, -- [6]
+			18579, -- [7]
+		},
+		["Player-4-09EC91DA"] = {
+			22282, -- [1]
+			22290, -- [2]
+			22347, -- [3]
+			22273, -- [4]
+			19357, -- [5]
+			19347, -- [6]
+			22284, -- [7]
+		},
+		["Player-1427-085158BC"] = {
+			22633, -- [1]
+			22372, -- [2]
+			19138, -- [3]
+			22627, -- [4]
+			22391, -- [5]
+			22400, -- [6]
+			22405, -- [7]
+		},
+		["Player-120-07BFF485"] = {
+			22493, -- [1]
+			21857, -- [2]
+		},
+		["Player-98-036D000A"] = {
+			22323, -- [1]
+			19265, -- [2]
+			19259, -- [3]
+			19260, -- [4]
+			21675, -- [5]
+			21966, -- [6]
+			19264, -- [7]
+		},
+		["Player-11-0A73348D"] = {
+			21854, -- [1]
+			22765, -- [2]
+		},
+		["Player-76-089A7822"] = {
+			19264, -- [1]
+			21966, -- [2]
+			21675, -- [3]
+			19275, -- [4]
+			21971, -- [5]
+			22323, -- [6]
+			21963, -- [7]
+		},
+		["Player-60-0A8C9130"] = {
+			16025, -- [1]
+			22444, -- [2]
+			22452, -- [3]
+			22446, -- [4]
+			22309, -- [5]
+			22449, -- [6]
+			22463, -- [7]
+		},
+		["Player-162-066A2CCA"] = {
+		},
+		["Player-5-0A608847"] = {
+			21973, -- [1]
+			22353, -- [2]
+			22171, -- [3]
+			21963, -- [4]
+			19275, -- [5]
+			22147, -- [6]
+			22148, -- [7]
+		},
+		["Player-1171-07C76E93"] = {
+			22039, -- [1]
+			21695, -- [2]
+			19280, -- [3]
+			22046, -- [4]
+			19291, -- [5]
+			19295, -- [6]
+			22481, -- [7]
+		},
+		["Player-1426-0890D274"] = {
+			19823, -- [1]
+			19304, -- [2]
+			19771, -- [3]
+			19995, -- [4]
+			20173, -- [5]
+			22103, -- [6]
+			22105, -- [7]
+		},
+		["Player-104-07B33D0B"] = {
+			21637, -- [1]
+			22317, -- [2]
+			22311, -- [3]
+			22487, -- [4]
+			19758, -- [5]
+			21720, -- [6]
+			22313, -- [7]
+		},
+		["Player-1428-082A9EAC"] = {
+		},
+		["Player-5-0A718A65"] = {
+			19264, -- [1]
+			21963, -- [2]
+			19275, -- [3]
+			22323, -- [4]
+			22539, -- [5]
+			21971, -- [6]
+			21970, -- [7]
+		},
+		["Player-52-083B26C5"] = {
+			19754, -- [1]
+			22562, -- [2]
+			21976, -- [3]
+			21638, -- [4]
+			19764, -- [5]
+			19767, -- [6]
+			21752, -- [7]
+		},
+		["Player-1428-08B65ACE"] = {
+			22379, -- [1]
+			22633, -- [2]
+			22627, -- [3]
+			22400, -- [4]
+			22405, -- [5]
+			19140, -- [6]
+			22374, -- [7]
+		},
+		["Player-63-0A95ABAB"] = {
+			22052, -- [1]
+			21695, -- [2]
+			19280, -- [3]
+			22043, -- [4]
+			19288, -- [5]
+			21182, -- [6]
+			22481, -- [7]
+		},
+		["Player-3726-08E9420C"] = {
+			22099, -- [1]
+			19818, -- [2]
+			19995, -- [3]
+			20185, -- [4]
+			20184, -- [5]
+			22105, -- [6]
+			20174, -- [7]
+		},
+		["Player-76-08ECA1B0"] = {
+			17567, -- [1]
+			17575, -- [2]
+			22179, -- [3]
+			17593, -- [4]
+			17597, -- [5]
+			22189, -- [6]
+			21671, -- [7]
+		},
+		["Player-3207-094C716B"] = {
+			21750, -- [1]
+			21638, -- [2]
+			19764, -- [3]
+			19767, -- [4]
+			19752, -- [5]
+			22315, -- [6]
+			22562, -- [7]
+		},
+		["Player-55-06A98C3B"] = {
+			22052, -- [1]
+			21181, -- [2]
+			19280, -- [3]
+			22480, -- [4]
+			19291, -- [5]
+			19294, -- [6]
+			19293, -- [7]
+		},
+		["Player-1168-06806086"] = {
+			19292, -- [1]
+			19293, -- [2]
+			19288, -- [3]
+			21182, -- [4]
+			22090, -- [5]
+			22476, -- [6]
+			21180, -- [7]
+		},
+		["Player-1069-07F676AF"] = {
+			22360, -- [1]
+			22625, -- [2]
+			19138, -- [3]
+			15757, -- [4]
+			22393, -- [5]
+			22397, -- [6]
+			22407, -- [7]
+		},
+		["Player-90-052BC7A8"] = {
+			22590, -- [1]
+			22591, -- [2]
+			22179, -- [3]
+			22483, -- [4]
+			22595, -- [5]
+			22182, -- [6]
+			22319, -- [7]
+		},
+		["Player-1428-08B626B6"] = {
+			19820, -- [1]
+			19304, -- [2]
+			22166, -- [3]
+			19995, -- [4]
+			20174, -- [5]
+			22217, -- [6]
+			22218, -- [7]
+		},
+		["Player-98-08CDE140"] = {
+			22493, -- [1]
+			21857, -- [2]
+		},
+		["Player-118-0160A26C"] = {
+			22456, -- [1]
+			22443, -- [2]
+			22465, -- [3]
+			22446, -- [4]
+			22447, -- [5]
+			21631, -- [6]
+			22449, -- [7]
+		},
+		["Player-85-079CE7DD"] = {
+			21854, -- [1]
+			21857, -- [2]
+		},
+		["Player-5-093E7F5C"] = {
+			22274, -- [1]
+			22002, -- [2]
+			22284, -- [3]
+			22495, -- [4]
+			22279, -- [5]
+			19347, -- [6]
+			21998, -- [7]
+		},
+		["Player-3693-081402F1"] = {
+		},
+		["Player-67-0A67D440"] = {
+		},
+		["Player-162-09035A20"] = {
+			21854, -- [1]
+			22799, -- [2]
+		},
+	},
+	["last_realversion"] = 110,
 	["tabela_instancias"] = {
 	},
-	["combat_id"] = 21,
+	["combat_id"] = 76,
 	["savedStyles"] = {
 	},
-	["savedbuffs"] = {
-	},
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-	},
+	["combat_counter"] = 1269,
+	["last_instance_time"] = 1471553615,
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
 		["only_first"] = 5,
 		["where"] = 1,
 	},
-	["last_realversion"] = 110,
+	["character_data"] = {
+		["logons"] = 55,
+	},
 	["local_instances_config"] = {
 		{
 			["segment"] = 0,
@@ -4212,62 +3617,82 @@ _detalhes_database = {
 			},
 		}, -- [1]
 	},
-	["character_data"] = {
-		["logons"] = 52,
-	},
+	["last_encounter"] = "Archimonde",
 	["announce_cooldowns"] = {
+		["enabled"] = false,
 		["ignored_cooldowns"] = {
 		},
-		["enabled"] = false,
 		["custom"] = "",
 		["channel"] = "RAID",
 	},
-	["nick_tag_cache"] = {
-		["nextreset"] = 1472058341,
-		["last_version"] = 8,
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
 	},
-	["last_instance_id"] = 1176,
+	["last_instance_id"] = 36,
 	["cached_specs"] = {
-		["Player-99-08CDBAA9"] = 581,
-		["Player-96-0131069A"] = 259,
-		["Player-54-09610DAF"] = 581,
-		["Player-105-067E6A49"] = 269,
-		["Player-1069-074EFCA6"] = 66,
-		["Player-3678-07B6F7EB"] = 73,
-		["Player-1070-06CA0A2F"] = 269,
-		["Player-60-0A99E505"] = 577,
-		["Player-98-0888E7E6"] = 102,
-		["Player-60-0A92CE87"] = 62,
-		["Player-67-03609285"] = 62,
-		["Player-99-061D4421"] = 258,
-		["Player-60-0A8FDFF6"] = 268,
-		["Player-96-08C70B48"] = 252,
-		["Player-1175-092ED6B8"] = 72,
-		["Player-98-08D85E72"] = 66,
-		["Player-60-0A7D0EF8"] = 103,
-		["Player-60-09534307"] = 73,
-		["Player-60-0AA4B127"] = 581,
-		["Player-60-0A9E6B27"] = 263,
-		["Player-60-0A22CED3"] = 264,
-		["Player-60-0A98990A"] = 581,
-		["Player-67-098F7BAA"] = 254,
-		["Player-60-0AA49043"] = 577,
-		["Player-1175-0A09A299"] = 63,
-		["Player-96-02483EAD"] = 72,
-		["Player-1175-0938FD43"] = 266,
-		["Player-104-08CEB188"] = 577,
-		["Player-1070-051E035B"] = 254,
-		["Player-98-066C93B0"] = 252,
-		["Player-68-0A98F5D6"] = 581,
-		["Player-104-07BB78EE"] = 63,
-		["Player-1175-083FDFF7"] = 262,
-		["Player-1069-0965FA2E"] = 581,
-		["Player-67-091BC00E"] = 252,
-		["Player-54-06497AB1"] = 64,
-		["Player-1173-0A72F4AF"] = 62,
-		["Player-67-0A6E480A"] = 269,
-		["Player-105-08D22D80"] = 266,
-		["Player-104-08CC708F"] = 258,
-		["Player-1072-06C87F7A"] = 267,
+		["Player-60-06559E90"] = 105,
+		["Player-1072-06F737AD"] = 254,
+		["Player-104-0590A60D"] = 103,
+		["Player-67-09006DEE"] = 261,
+		["Player-99-05A4EBFD"] = 70,
+		["Player-60-0A9DD1CA"] = 257,
+		["Player-1173-00E1661D"] = 64,
+		["Player-3678-0961E58D"] = 577,
+		["Player-60-0A199693"] = 266,
+		["Player-99-084A5033"] = 266,
+		["Player-3678-096B4B53"] = 577,
+		["Player-1070-02A63553"] = 251,
+		["Player-1069-07FB1570"] = 251,
+		["Player-3678-095B05E3"] = 252,
+		["Creature-0-3779-0-3531-31216-0001361E5B"] = 64,
+		["Player-153-08A85EDF"] = 251,
+		["Player-60-0A98990A"] = 577,
+		["Player-1069-09497509"] = 254,
+		["Player-1072-059169A1"] = 63,
+		["Player-60-0598B32C"] = 63,
+		["Player-1173-0A069745"] = 258,
+		["Player-1070-036DB303"] = 258,
+		["Player-1173-0AA24F41"] = 102,
+		["Player-1070-0059F904"] = 71,
+		["Player-60-05B5E8DE"] = 251,
+		["Player-54-0957C986"] = 63,
+		["Player-60-0705D17D"] = 260,
+		["Player-105-04C03C6D"] = 63,
+		["Player-68-069B697B"] = 72,
+		["Player-60-09AE6633"] = 62,
+		["Player-99-030B1151"] = 258,
+		["Player-3678-09595F9D"] = 263,
+		["Player-1072-089435F5"] = 253,
+		["Player-1070-02FB02BA"] = 253,
+		["Player-68-0A9580EC"] = 72,
+		["Player-60-0A7EF760"] = 269,
+		["Player-3678-0964554C"] = 577,
+		["Player-54-0901EE3F"] = 266,
+		["Player-104-0786136B"] = 263,
+		["Player-68-0A8A4A3E"] = 253,
+		["Player-60-07927D5A"] = 102,
+		["Player-3678-095E97BD"] = 577,
+		["Player-60-0A65FE75"] = 254,
+		["Player-68-0A9CC96D"] = 581,
+		["Player-98-001ADCBC"] = 267,
+		["Player-3678-0954AD4E"] = 254,
+		["Player-1070-02AA673D"] = 252,
+		["Player-98-08D505D1"] = 577,
+		["Player-96-067F03F5"] = 63,
+		["Player-1070-074840DA"] = 260,
+		["Player-60-0AA23BD8"] = 262,
+		["Player-68-04F573F0"] = 265,
+		["Player-1072-08BE423B"] = 64,
+		["Player-67-004CB22D"] = 254,
+		["Player-68-0A8AAA8F"] = 263,
+		["Player-1175-0A9DA344"] = 577,
+		["Player-60-098ABBD9"] = 64,
+		["Player-60-0AA505F4"] = 63,
+		["Player-60-0A95F35D"] = 103,
+		["Player-3678-0880F170"] = 102,
+		["Player-3678-096641DD"] = 73,
+		["Player-1175-0A86E9BA"] = 63,
+		["Player-104-06CAA4AB"] = 73,
 	},
 }

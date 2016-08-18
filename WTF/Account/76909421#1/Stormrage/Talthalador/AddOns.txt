@@ -94,7 +94,7 @@ Details_RaidInfo-HellfireCitadel: enabled
 Details_DungeonInfo-Warlords: enabled
 Details_ChartViewer: enabled
 EventTracker: enabled
-ExRT: disabled
+ExRT: enabled
 HandyNotes: enabled
 HandyNotes_FieldPhotographer: enabled
 HandyNotes_AzerothsTopTunes: disabled
