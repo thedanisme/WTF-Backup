@@ -36,9 +36,9 @@ DataStore_AgendaDB = {
 			},
 			["Default.Stormrage.Emmarosa"] = {
 				["DungeonIDs"] = {
-					["Dragon Soul 25 Player (Heroic)|635877836"] = "409737|1471554651|0|1",
+					["Dragon Soul 25 Player (Heroic)|635877836"] = "406000|1471558394|0|1",
 				},
-				["lastUpdate"] = 1471554604,
+				["lastUpdate"] = 1471558392,
 			},
 			["Default.Bloodhoof.Arando"] = {
 				["Contacts"] = {
@@ -48,11 +48,19 @@ DataStore_AgendaDB = {
 				},
 				["lastUpdate"] = 1469995040,
 			},
-			["Default.Stormrage.Edgelordshue"] = {
-				["lastUpdate"] = 1470762217,
+			["Default.Bloodhoof.Dalgrens"] = {
+				["lastUpdate"] = 1469995428,
 			},
-			["Default.Stormrage.Brobies"] = {
-				["lastUpdate"] = 1471527266,
+			["Default.Stormrage.Talthalador"] = {
+				["lastUpdate"] = 1471553639,
+				["LFGDungeons"] = {
+					["986.Count"] = 1,
+					["982.Count"] = 3,
+					["982.Iron Reaver"] = true,
+					["982.Kormrok"] = true,
+					["986.Archimonde"] = true,
+					["982.Hellfire Assault"] = true,
+				},
 			},
 			["Default.Stormrage.Kateplusnine"] = {
 				["lastUpdate"] = 1470756353,
@@ -71,13 +79,13 @@ DataStore_AgendaDB = {
 						["class"] = "Demon Hunter",
 					},
 				},
-				["lastUpdate"] = 1471197150,
+				["lastUpdate"] = 1471558288,
 			},
 			["Default.Turalyon.Pryahprism"] = {
 				["lastUpdate"] = 1471190896,
 			},
-			["Default.Bloodhoof.Dalgrens"] = {
-				["lastUpdate"] = 1469995428,
+			["Default.Stormrage.Edgelordshue"] = {
+				["lastUpdate"] = 1470762217,
 			},
 			["Default.Stormrage.Yanlery"] = {
 				["lastUpdate"] = 1471466297,
@@ -117,16 +125,8 @@ DataStore_AgendaDB = {
 			["Default.Turalyon.Shaneequa"] = {
 				["lastUpdate"] = 1461602628,
 			},
-			["Default.Stormrage.Talthalador"] = {
-				["lastUpdate"] = 1471553639,
-				["LFGDungeons"] = {
-					["986.Count"] = 1,
-					["982.Count"] = 3,
-					["982.Iron Reaver"] = true,
-					["982.Kormrok"] = true,
-					["986.Archimonde"] = true,
-					["982.Hellfire Assault"] = true,
-				},
+			["Default.Stormrage.Brobies"] = {
+				["lastUpdate"] = 1471527266,
 			},
 		},
 	},

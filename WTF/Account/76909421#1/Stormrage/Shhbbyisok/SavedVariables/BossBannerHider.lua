@@ -1,2 +1,2 @@
 
-HideBossBanner = "loot"
+HideBossBanner = "all"

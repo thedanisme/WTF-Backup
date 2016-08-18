@@ -32,8 +32,8 @@ HNFieldPhotographerDB = {
 		["Edgelordshue - Stormrage"] = "Default",
 		["Dalgrens - Bloodhoof"] = "Default",
 		["Beer - Bloodhoof"] = "Default",
-		["Talthalador - Stormrage"] = "Default",
 		["Brobies - Stormrage"] = "Default",
+		["Talthalador - Stormrage"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

@@ -49,12 +49,12 @@ DataStoreDB = {
 			["Default.Bloodhoof.Arando"] = {
 				["faction"] = "Horde",
 			},
-			["Default.Stormrage.Edgelordshue"] = {
-				["faction"] = "Alliance",
+			["Default.Bloodhoof.Dalgrens"] = {
+				["faction"] = "Horde",
 			},
-			["Default.Stormrage.Brobies"] = {
-				["guildName"] = "Horizon",
+			["Default.Stormrage.Talthalador"] = {
 				["faction"] = "Alliance",
+				["guildName"] = "Horizon",
 			},
 			["Default.Stormrage.Kateplusnine"] = {
 				["faction"] = "Alliance",
@@ -69,12 +69,13 @@ DataStoreDB = {
 			},
 			["Default.Stormrage.Shhbbyisok"] = {
 				["faction"] = "Alliance",
+				["guildName"] = "Horizon",
 			},
 			["Default.Turalyon.Pryahprism"] = {
 				["faction"] = "Horde",
 			},
-			["Default.Bloodhoof.Dalgrens"] = {
-				["faction"] = "Horde",
+			["Default.Stormrage.Edgelordshue"] = {
+				["faction"] = "Alliance",
 			},
 			["Default.Stormrage.Yanlery"] = {
 				["guildName"] = "Horizon",
@@ -113,9 +114,9 @@ DataStoreDB = {
 				["guildName"] = "Viginti",
 				["faction"] = "Horde",
 			},
-			["Default.Stormrage.Talthalador"] = {
-				["faction"] = "Alliance",
+			["Default.Stormrage.Brobies"] = {
 				["guildName"] = "Horizon",
+				["faction"] = "Alliance",
 			},
 		},
 		["ShortToLongRealmNames"] = {

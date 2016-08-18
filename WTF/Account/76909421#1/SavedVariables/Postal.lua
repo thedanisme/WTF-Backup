@@ -80,7 +80,7 @@ Postal3DB = {
 				"Rosabria|Sargeras|Alliance|62|DRUID", -- [31]
 				"Rotator|Turalyon|Horde|100|WARRIOR", -- [32]
 				"Shaneequa|Turalyon|Horde|100|SHAMAN", -- [33]
-				"Shhbbyisok|Stormrage|Alliance|55|DEATHKNIGHT", -- [34]
+				"Shhbbyisok|Stormrage|Alliance|59|DEATHKNIGHT", -- [34]
 				"Skratch|Turalyon|Horde|100|DRUID", -- [35]
 				"Squelben|Stormrage|Alliance|1|MAGE", -- [36]
 				"Talthalador|Stormrage|Alliance|100|DEMONHUNTER", -- [37]
@@ -146,10 +146,11 @@ Postal3DB = {
 		["Emmarosa - Stormrage"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Dosnutz|Stormrage|Alliance", -- [1]
-					"Talthalador|Stormrage|Alliance", -- [2]
-					"Danoh|Stormrage|Alliance", -- [3]
-					"Dalban|Stormrage|Alliance", -- [4]
+					"Shhbbyisok|Stormrage|Alliance", -- [1]
+					"Dosnutz|Stormrage|Alliance", -- [2]
+					"Talthalador|Stormrage|Alliance", -- [3]
+					"Danoh|Stormrage|Alliance", -- [4]
+					"Dalban|Stormrage|Alliance", -- [5]
 				},
 			},
 		},

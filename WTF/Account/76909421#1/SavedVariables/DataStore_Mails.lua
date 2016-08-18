@@ -31,8 +31,8 @@ DataStore_MailsDB = {
 				["lastVisitDate"] = "2016/08/14 12:12",
 			},
 			["Default.Stormrage.Emmarosa"] = {
-				["lastUpdate"] = 1471527624,
-				["lastVisitDate"] = "2016/08/18 09:40",
+				["lastUpdate"] = 1471558430,
+				["lastVisitDate"] = "2016/08/18 18:13",
 			},
 			["Default.Bloodhoof.Arando"] = {
 				["lastUpdate"] = 1469173661,
@@ -42,16 +42,27 @@ DataStore_MailsDB = {
 				["lastUpdate"] = 1471512268,
 				["lastVisitDate"] = "2016/08/18 05:24",
 			},
-			["Default.Turalyon.Callil"] = {
-				["lastUpdate"] = 1471190717,
-				["lastVisitDate"] = "2016/08/14 12:05",
+			["Default.Stormrage.Danoh"] = {
+				["lastUpdate"] = 1471527218,
+				["lastVisitDate"] = "2016/08/18 09:33",
 			},
 			["Default.Turalyon.Knutts"] = {
 				["lastUpdate"] = 1469907685,
 				["lastVisitDate"] = "2016/07/30 15:41",
 			},
 			["Default.Stormrage.Shhbbyisok"] = {
-				["lastUpdate"] = 1471193493,
+				["lastUpdate"] = 1471558428,
+				["Mails"] = {
+					{
+						["sender"] = "Emmarosa",
+						["subject"] = "[5000 Gold 0 Silver 0 Copper]",
+						["lastCheck"] = 1471558428,
+						["money"] = 50000000,
+						["text"] = "",
+						["icon"] = "Interface\\Icons\\INV_Misc_Coin_01",
+						["daysLeft"] = 30,
+					}, -- [1]
+				},
 				["lastVisitDate"] = "2016/08/14 12:51",
 			},
 			["Default.Turalyon.Pryahprism"] = {
@@ -90,13 +101,13 @@ DataStore_MailsDB = {
 				},
 				["lastVisitDate"] = "2016/08/04 14:08",
 			},
+			["Default.Turalyon.Callil"] = {
+				["lastUpdate"] = 1471190717,
+				["lastVisitDate"] = "2016/08/14 12:05",
+			},
 			["Default.Turalyon.Skratch"] = {
 				["lastUpdate"] = 1469905437,
 				["lastVisitDate"] = "2016/07/30 15:03",
-			},
-			["Default.Turalyon.Titte"] = {
-				["lastUpdate"] = 1470430851,
-				["lastVisitDate"] = "2016/08/05 17:00",
 			},
 			["Default.Stormrage.Brobies"] = {
 				["lastUpdate"] = 1471527452,
@@ -114,9 +125,9 @@ DataStore_MailsDB = {
 				["lastUpdate"] = 1471538006,
 				["lastVisitDate"] = "2016/08/18 12:33",
 			},
-			["Default.Stormrage.Danoh"] = {
-				["lastUpdate"] = 1471527218,
-				["lastVisitDate"] = "2016/08/18 09:33",
+			["Default.Turalyon.Titte"] = {
+				["lastUpdate"] = 1470430851,
+				["lastVisitDate"] = "2016/08/05 17:00",
 			},
 		},
 	},
