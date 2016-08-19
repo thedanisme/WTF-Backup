@@ -44,7 +44,7 @@ function bdlc:fetchUserGear(unit, itemLink)
 	if (equipSlot == "INVTYPE_RANGED") then slotID = 18 end
 	
 	if (slotID == 0) then
-		print("BDLC can't find a compare for slot: "..equipSlot..". Let the developer know!");
+		print("bdlc can't find compare for slot: "..equipSlot..". Let the developer ");
 	end
 	
 	local itemLink1 = GetInventoryItemLink(unit, slotID)
@@ -226,10 +226,6 @@ bdlc.normal_text:SetJustifyH("CENTER")
 
 --Vote Window
 f.voteFrame = CreateFrame('frame', 'BDLC', UIParent)
---local t = f.voteFrame:CreateTexture(nil,"BACKGROUND")
---t:SetTexture("images\\pizzabg")
---t:SetAllPoints(f)
---f.texture=t
 bdlc:skinBackdrop(f.voteFrame, .1,.1,.1,.8);
 f.voteFrame:EnableMouse(true);
 f.voteFrame:SetMovable(true);
