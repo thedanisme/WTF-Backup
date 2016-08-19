@@ -1,0 +1,27 @@
+## Interface: 70000
+## Title: LegionInvasionTimer
+## Author: Funkydude
+## Notes: Shows the Legion invasion timer.
+## Notes-esES: Muestra el temporizador de las invasiones de la Legion.
+## Notes-esMX: Muestra el temporizador de las invasiones de la Legion.
+## Notes-zhCN: 显示军团入侵计时器。
+## Notes-zhTW: 顯示軍團入侵計時器。
+## Notes-deDE: Shows the Legion invasion timer.
+## Notes-frFR: Shows the Legion invasion timer.
+## Notes-itIT: Shows the Legion invasion timer.
+## Notes-koKR: Shows the Legion invasion timer.
+## Notes-ptBR: Shows the Legion invasion timer.
+## Notes-ruRU: Shows the Legion invasion timer.
+## SavedVariables: legionTimerDB
+## Version: v1.6
+## X-Category: Miscellaneous
+## X-License: All Rights Reserved: You are free to fork and modify on GitHub, please ask us about anything else.
+## X-Curse-Project-ID: legioninvasiontimer
+## X-WoWI-ID: 24128
+## OptionalDeps: Ace3, LibSharedMedia-3.0, LibCandyBar-3.0, LibDDI-1.0
+## X-Embeds: Ace3, LibSharedMedia-3.0, LibCandyBar-3.0, LibDDI-1.0
+
+embeds.xml
+locales.xml
+modules.xml
+

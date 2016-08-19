@@ -1,0 +1,11 @@
+## Interface: 70000
+## Title: Little Battler
+## Notes: Assists in PvE pet battles and levelling.
+## Version: 1.12
+## Author: foxlit
+## X-Website: https://www.townlong-yak.com/little-battler/
+## SavedVariables: LittleBattlerData, LittleBattlerSettings
+## SavedVariablesPerCharacter: LittleBattlerCharSettings
+Evie.lua
+Toboe.lua
+LittleBattler.xml
