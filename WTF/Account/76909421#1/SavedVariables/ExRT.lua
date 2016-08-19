@@ -22,67 +22,18 @@ VExRT = {
 		["Horny-Bloodhoof"] = "default",
 		["Shhbbyisok-Stormrage"] = "default",
 		["Brobies-Stormrage"] = "default",
-		["Skratch-Turalyon"] = "default",
+		["Callil-Turalyon"] = "default",
 		["Lackteight-Turalyon"] = "default",
 		["Beer-Bloodhoof"] = "default",
 		["Titt-Turalyon"] = "default",
 		["Whyfy-Stormrage"] = "default",
 		["Danoh-Stormrage"] = "default",
-		["Callil-Turalyon"] = "default",
+		["Skratch-Turalyon"] = "default",
 		["Dosnutz-Stormrage"] = "default",
 	},
 	["Arrow"] = {
 	},
 	["Encounter"] = {
-		["names"] = {
-			[1699] = "Araknath",
-			[1892] = "Vazruden the Herald",
-			[1778] = "Hellfire Assault",
-			[1786] = "Kilrogg Deadeye",
-			[1097] = "Festergut",
-			[1794] = "Socrethar the Eternal",
-			[1798] = "Hellfire High Council",
-			[1751] = "Archmage Sol",
-			[1700] = "Rukhran",
-			[1893] = "Watchkeeper Gargolmar",
-			[1653] = "Slave Watcher Crushto",
-			[1783] = "Gorefiend",
-			[1787] = "Kormrok",
-			[1098] = "Valithria Dreamwalker",
-			[1102] = "Professor Putricide",
-			[1799] = "Archimonde",
-			[1685] = "Soulbinder Nyami",
-			[1756] = "Yalnu",
-			[1701] = "High Sage Viryx",
-			[1736] = "Skylord Tovra",
-			[1654] = "Gug'rokk",
-			[1784] = "Tyrant Velhari",
-			[1788] = "Shadow-Lord Iskar",
-			[1099] = "Icecrown Gunship Battle",
-			[1103] = "Queen Lana'thel",
-			[1800] = "Xhul'horac",
-			[1678] = "Azzakel, Vanguard of the Legion",
-			[1106] = "The Lich King",
-			[1686] = "Vigilant Kaathar",
-			[1105] = "Sindragosa",
-			[1757] = "Ancient Protectors",
-			[1698] = "Ranjit",
-			[1891] = "Omor the Unscarred",
-			[1715] = "Rocketspark and Borka",
-			[1714] = "Teron'gor",
-			[1777] = "Fel Lord Zakuun",
-			[1655] = "Magmolatus",
-			[1785] = "Iron Reaver",
-			[1096] = "Deathbringer Saurfang",
-			[1100] = "Lady Deathwhisper",
-			[1104] = "Rotface",
-			[1795] = "Mannoroth",
-			[1101] = "Lord Marrowgar",
-			[1746] = "Witherbark",
-			[1652] = "Roltall",
-			[1732] = "Nitrogg Thundertower",
-			[1095] = "Blood Council",
-		},
 		["list"] = {
 			["Skratch"] = {
 			},
@@ -332,60 +283,11 @@ VExRT = {
 			},
 			["Horny"] = {
 			},
-			["Danoh"] = {
-				"707E146068242119A120Danoh", -- [1]
-				"6F2D1460683861163114Ellerina-Turalyon", -- [2]
-				"6F9D14606843180E3114Mapleeyes", -- [3]
-				"6FBD14606852690EB114", -- [4]
-				"706D1460685808139114Velaaz", -- [5]
-				"6FAD14606866240EF114", -- [6]
-				"6F7D1460687289148114Ursocc", -- [7]
-				"6FCD146068795517B113", -- [8]
-				"6F1D1460688754005013", -- [9]
-				"6F1D1460688821100113Smittysnape", -- [10]
-				"708D146068937918C113Mapleeyes", -- [11]
-				"702D14610282220C7112Chåotic", -- [12]
-				"6F8D1461029149008012", -- [13]
-				"6F8D14610292650FE112Ellerina-Turalyon", -- [14]
-				"703D1461029721196112Imerei", -- [15]
-				"707D1461030538202112", -- [16]
-				"6FCE1462325161152117Icypain", -- [17]
-				"6F1E14623260640CF018Faenzä", -- [18]
-				"6F1E14623263930C3119Shandrian", -- [19]
-				"708E146232690212A019Danoh", -- [20]
-				"708E146232750812C119Jessekin-Proudmoore", -- [21]
-				"702E1462328457105019Chakron", -- [22]
-				"702E1462328873100019Repost-Proudmoore", -- [23]
-				"702E146232936814A020Mapledk", -- [24]
-				"702E146232992313B020Doublezed", -- [25]
-				"6F2E1463101538195118Hidius", -- [26]
-				"6F9E14631021100ED118Chåotic", -- [27]
-				"6FBE14631030540E0119Medaan-Lightbringer", -- [28]
-				"706E1463103668115119", -- [29]
-				"6FAE146310415100A018", -- [30]
-				"6FAE14631042590E4118", -- [31]
-				"6F7E14631048061BB018Mapledk", -- [32]
+			["Shaneequa"] = {
 			},
 			["Arando"] = {
 			},
-			["Emmarosa"] = {
-				"^1784^15^1470359566^7^0^19^703.95^", -- [1]
-				"^1784^15^1470359940^252^1^19^696.28^Cajooal", -- [2]
-				"^1795^15^1470360979^409^1^21^696.32^Zaxxismemnon", -- [3]
-				"^1799^15^1470362366^362^0^21^706.15^Elleryna", -- [4]
-				"^1799^15^1470363061^374^1^21^639.57^Daemonarrow", -- [5]
-				"^1778^14^1470364669^290^1^15^632.38^", -- [6]
-				"^1785^14^1470365144^56^1^15^632.83^", -- [7]
-				"^1787^14^1470365565^104^1^15^657.90^", -- [8]
-				"^1798^14^1470365927^11^0^15^658.08^", -- [9]
-				"^1798^14^1470365972^11^0^15^658.08^", -- [10]
-				"^1798^14^1470366181^202^0^15^658.31^Dalban", -- [11]
-				"^1798^14^1470366549^188^1^15^706.05^Gavrey", -- [12]
-				"^1786^14^1470366944^119^1^15^706.48^Talmobok", -- [13]
-				"^1783^14^1470367393^291^1^15^706.53^Redhavock", -- [14]
-				"^1777^14^1470368021^4^0^15^706.72^", -- [15]
-				"^1777^14^1470368086^97^1^15^706.72^Elleryna", -- [16]
-				"^1800^14^1470368401^153^1^15^706.98^", -- [17]
+			["Aranduh"] = {
 			},
 			["Brewbies"] = {
 				"44D5145482847400D025", -- [1]
@@ -464,6 +366,8 @@ VExRT = {
 			},
 			["Squelben"] = {
 			},
+			["Titt"] = {
+			},
 			["Callil"] = {
 				"702E14564521231D4120Imerei-Stormrage", -- [1]
 				"6F8E145645363212C121Ebcak-Stormrage", -- [2]
@@ -482,14 +386,110 @@ VExRT = {
 				"707E14564619361CD021Andriih-Stormrage", -- [15]
 				"707E1456462523202021Adfluffy-Stormrage", -- [16]
 			},
-			["Titt"] = {
-			},
 			["Knutts"] = {
 			},
-			["Aranduh"] = {
+			["Emmarosa"] = {
+				"^1784^15^1470359566^7^0^19^703.95^", -- [1]
+				"^1784^15^1470359940^252^1^19^696.28^Cajooal", -- [2]
+				"^1795^15^1470360979^409^1^21^696.32^Zaxxismemnon", -- [3]
+				"^1799^15^1470362366^362^0^21^706.15^Elleryna", -- [4]
+				"^1799^15^1470363061^374^1^21^639.57^Daemonarrow", -- [5]
+				"^1778^14^1470364669^290^1^15^632.38^", -- [6]
+				"^1785^14^1470365144^56^1^15^632.83^", -- [7]
+				"^1787^14^1470365565^104^1^15^657.90^", -- [8]
+				"^1798^14^1470365927^11^0^15^658.08^", -- [9]
+				"^1798^14^1470365972^11^0^15^658.08^", -- [10]
+				"^1798^14^1470366181^202^0^15^658.31^Dalban", -- [11]
+				"^1798^14^1470366549^188^1^15^706.05^Gavrey", -- [12]
+				"^1786^14^1470366944^119^1^15^706.48^Talmobok", -- [13]
+				"^1783^14^1470367393^291^1^15^706.53^Redhavock", -- [14]
+				"^1777^14^1470368021^4^0^15^706.72^", -- [15]
+				"^1777^14^1470368086^97^1^15^706.72^Elleryna", -- [16]
+				"^1800^14^1470368401^153^1^15^706.98^", -- [17]
 			},
-			["Shaneequa"] = {
+			["Danoh"] = {
+				"707E146068242119A120Danoh", -- [1]
+				"6F2D1460683861163114Ellerina-Turalyon", -- [2]
+				"6F9D14606843180E3114Mapleeyes", -- [3]
+				"6FBD14606852690EB114", -- [4]
+				"706D1460685808139114Velaaz", -- [5]
+				"6FAD14606866240EF114", -- [6]
+				"6F7D1460687289148114Ursocc", -- [7]
+				"6FCD146068795517B113", -- [8]
+				"6F1D1460688754005013", -- [9]
+				"6F1D1460688821100113Smittysnape", -- [10]
+				"708D146068937918C113Mapleeyes", -- [11]
+				"702D14610282220C7112Chåotic", -- [12]
+				"6F8D1461029149008012", -- [13]
+				"6F8D14610292650FE112Ellerina-Turalyon", -- [14]
+				"703D1461029721196112Imerei", -- [15]
+				"707D1461030538202112", -- [16]
+				"6FCE1462325161152117Icypain", -- [17]
+				"6F1E14623260640CF018Faenzä", -- [18]
+				"6F1E14623263930C3119Shandrian", -- [19]
+				"708E146232690212A019Danoh", -- [20]
+				"708E146232750812C119Jessekin-Proudmoore", -- [21]
+				"702E1462328457105019Chakron", -- [22]
+				"702E1462328873100019Repost-Proudmoore", -- [23]
+				"702E146232936814A020Mapledk", -- [24]
+				"702E146232992313B020Doublezed", -- [25]
+				"6F2E1463101538195118Hidius", -- [26]
+				"6F9E14631021100ED118Chåotic", -- [27]
+				"6FBE14631030540E0119Medaan-Lightbringer", -- [28]
+				"706E1463103668115119", -- [29]
+				"6FAE146310415100A018", -- [30]
+				"6FAE14631042590E4118", -- [31]
+				"6F7E14631048061BB018Mapledk", -- [32]
 			},
+		},
+		["names"] = {
+			[1699] = "Araknath",
+			[1892] = "Vazruden the Herald",
+			[1778] = "Hellfire Assault",
+			[1786] = "Kilrogg Deadeye",
+			[1097] = "Festergut",
+			[1794] = "Socrethar the Eternal",
+			[1798] = "Hellfire High Council",
+			[1751] = "Archmage Sol",
+			[1700] = "Rukhran",
+			[1893] = "Watchkeeper Gargolmar",
+			[1653] = "Slave Watcher Crushto",
+			[1783] = "Gorefiend",
+			[1787] = "Kormrok",
+			[1098] = "Valithria Dreamwalker",
+			[1102] = "Professor Putricide",
+			[1799] = "Archimonde",
+			[1685] = "Soulbinder Nyami",
+			[1756] = "Yalnu",
+			[1701] = "High Sage Viryx",
+			[1095] = "Blood Council",
+			[1654] = "Gug'rokk",
+			[1784] = "Tyrant Velhari",
+			[1788] = "Shadow-Lord Iskar",
+			[1099] = "Icecrown Gunship Battle",
+			[1103] = "Queen Lana'thel",
+			[1800] = "Xhul'horac",
+			[1678] = "Azzakel, Vanguard of the Legion",
+			[1732] = "Nitrogg Thundertower",
+			[1686] = "Vigilant Kaathar",
+			[1652] = "Roltall",
+			[1757] = "Ancient Protectors",
+			[1698] = "Ranjit",
+			[1891] = "Omor the Unscarred",
+			[1715] = "Rocketspark and Borka",
+			[1101] = "Lord Marrowgar",
+			[1714] = "Teron'gor",
+			[1655] = "Magmolatus",
+			[1785] = "Iron Reaver",
+			[1096] = "Deathbringer Saurfang",
+			[1100] = "Lady Deathwhisper",
+			[1104] = "Rotface",
+			[1795] = "Mannoroth",
+			[1777] = "Fel Lord Zakuun",
+			[1746] = "Witherbark",
+			[1105] = "Sindragosa",
+			[1106] = "The Lich King",
+			[1736] = "Skylord Tovra",
 		},
 	},
 	["Marks"] = {
@@ -976,73 +976,74 @@ VExRT = {
 			["Theodorebear-Sargeras"] = 252,
 			["Palmroad-Tichondrius"] = 254,
 			["Habitualtotm-Garona"] = 262,
-			["Semperdãotop-Nemesis"] = 70,
+			["Talthalador"] = 581,
 			["Àrthás-Darkspear"] = 70,
 			["Deanwinchstr-Alexstrasza"] = 577,
 			["Kaisersosai-Vek'nilash"] = 253,
-			["Diamondlink-Deathwing"] = 104,
+			["Moonglitter-Turalyon"] = 254,
 			["Arcanepanda-Gilneas"] = 63,
 			["Badchafe-AeriePeak"] = 581,
 			["Daldener-EmeraldDream"] = 70,
 			["Cartrina-Proudmoore"] = 72,
 			["Getbackfrome-Dalaran"] = 253,
 			["Phantom-Nesingwary"] = 103,
-			["Achiless-Kel'Thuzad"] = 70,
-			["Fellboy-Hellscream"] = 577,
-			["Dontez-Proudmoore"] = 253,
+			["Kasekage-Hydraxis"] = 70,
 			["Cheeriobot-Korgath"] = 105,
+			["Dontez-Proudmoore"] = 253,
 			["Lukegarroway-AeriePeak"] = 261,
-			["Horefromhell-CenarionCircle"] = 70,
+			["Lambshak"] = 70,
 			["Yagrum-Frostmane"] = 65,
 			["Casbin-Medivh"] = 265,
+			["Khaðs-AeriePeak"] = 267,
 			["Biggusdingus-Saurfang"] = 70,
-			["Blackmagick-Shadowmoon"] = 63,
+			["Semperdãotop-Nemesis"] = 70,
 			["Imaberitebak-Drenden"] = 62,
-			["Localdefense-Area52"] = 254,
-			["Mehta-Gorefiend"] = 265,
-			["Glorbmin-Sargeras"] = 105,
 			["Solliani-Blade'sEdge"] = 252,
+			["Mehta-Gorefiend"] = 265,
+			["Shockera-Ghostlands"] = 264,
+			["Miniboss-Malygos"] = 270,
 			["Nostalgicz-Kel'Thuzad"] = 63,
 			["Robbiesmom-Windrunner"] = 270,
 			["Eradicate-EmeraldDream"] = 267,
-			["Shockera-Ghostlands"] = 264,
+			["Saccharissa-EmeraldDream"] = 577,
 			["Melliandre-Uldum"] = 253,
-			["Swagshooter-TheForgottenCoast"] = 254,
-			["Tymonicon-Dalaran"] = 254,
-			["Bladesedge"] = 259,
+			["Localdefense-Area52"] = 254,
+			["Aletz-Dalaran"] = 260,
 			["Faris-Uldum"] = 73,
+			["Glorbmin-Sargeras"] = 105,
+			["Llyriad"] = 105,
 			["Jachi-Icecrown"] = 72,
-			["Hiperbeast-Goldrinn"] = 66,
-			["Dosnutz"] = 63,
+			["Kelora-Kael'thas"] = 63,
 			["Crimsonscorn-Perenolde"] = 577,
+			["Achiless-Kel'Thuzad"] = 70,
 			["Brainpower-Silvermoon"] = 63,
 			["Nocrem-Doomhammer"] = 263,
 			["Dieciratti-Proudmoore"] = 267,
 			["Aeroffend-AeriePeak"] = 581,
 			["Wandaer-AlteracMountains"] = 254,
 			["Kushaura"] = 65,
-			["Khoaladin-Bladefist"] = 70,
 			["Tregin"] = 70,
+			["Khoaladin-Bladefist"] = 70,
 			["Mirisena-Arygos"] = 251,
 			["Owelynn-GrizzlyHills"] = 105,
 			["Berreme-Proudmoore"] = 72,
-			["Kelora-Kael'thas"] = 63,
-			["Llyriad"] = 105,
+			["Dosnutz"] = 63,
+			["Hiperbeast-Goldrinn"] = 66,
 			["Janx-Garona"] = 70,
-			["Aletz-Dalaran"] = 260,
-			["Saccharissa-EmeraldDream"] = 577,
-			["Miniboss-Malygos"] = 270,
+			["Bladesedge"] = 259,
+			["Tymonicon-Dalaran"] = 254,
+			["Swagshooter-TheForgottenCoast"] = 254,
 			["Aosoth-Jaedenar"] = 577,
 			["Merianna-Eitrigg"] = 62,
-			["Khaðs-AeriePeak"] = 267,
+			["Blackmagick-Shadowmoon"] = 63,
 			["Sweetstuffz-Misha"] = 258,
 			["Nasreen-AeriePeak"] = 103,
-			["Lambshak"] = 70,
+			["Horefromhell-CenarionCircle"] = 70,
 			["Treeleon-MoonGuard"] = 105,
 			["Mastom-Quel'Thalas"] = 73,
-			["Kasekage-Hydraxis"] = 70,
+			["Fellboy-Hellscream"] = 577,
 			["Echoë-Uther"] = 577,
-			["Moonglitter-Turalyon"] = 254,
+			["Diamondlink-Deathwing"] = 104,
 			["Peener-Arthas"] = 254,
 			["Tegga-Korialstrasz"] = 269,
 		},
@@ -1051,7 +1052,7 @@ VExRT = {
 		},
 		["default_userCD"] = {
 		},
-		["Save"] = {
+		["userDB"] = {
 		},
 		["colSet"] = {
 			{
@@ -1063,10 +1064,10 @@ VExRT = {
 				["blacklistGeneral"] = true,
 				["iconGeneral"] = true,
 				["fontOutline"] = true,
-				["textureGeneral"] = true,
+				["fontShadow"] = false,
 				["fontGeneral"] = true,
 				["textureAnimation"] = true,
-				["fontShadow"] = false,
+				["textureGeneral"] = true,
 			}, -- [1]
 			{
 				["enabled"] = true,
@@ -1077,10 +1078,10 @@ VExRT = {
 				["blacklistGeneral"] = true,
 				["iconGeneral"] = true,
 				["fontOutline"] = true,
-				["textureGeneral"] = true,
+				["fontShadow"] = false,
 				["fontGeneral"] = true,
 				["textureAnimation"] = true,
-				["fontShadow"] = false,
+				["textureGeneral"] = true,
 			}, -- [2]
 			{
 				["enabled"] = true,
@@ -1091,10 +1092,10 @@ VExRT = {
 				["blacklistGeneral"] = true,
 				["iconGeneral"] = true,
 				["fontOutline"] = true,
-				["textureGeneral"] = true,
+				["fontShadow"] = false,
 				["fontGeneral"] = true,
 				["textureAnimation"] = true,
-				["fontShadow"] = false,
+				["textureGeneral"] = true,
 			}, -- [3]
 			{
 				["frameGeneral"] = true,
@@ -1104,10 +1105,10 @@ VExRT = {
 				["blacklistGeneral"] = true,
 				["iconGeneral"] = true,
 				["fontOutline"] = true,
-				["textureGeneral"] = true,
+				["fontShadow"] = false,
 				["fontGeneral"] = true,
 				["textureAnimation"] = true,
-				["fontShadow"] = false,
+				["textureGeneral"] = true,
 			}, -- [4]
 			{
 				["frameGeneral"] = true,
@@ -1117,10 +1118,10 @@ VExRT = {
 				["blacklistGeneral"] = true,
 				["iconGeneral"] = true,
 				["fontOutline"] = true,
-				["textureGeneral"] = true,
+				["fontShadow"] = false,
 				["fontGeneral"] = true,
 				["textureAnimation"] = true,
-				["fontShadow"] = false,
+				["textureGeneral"] = true,
 			}, -- [5]
 			{
 				["frameGeneral"] = true,
@@ -1130,10 +1131,10 @@ VExRT = {
 				["blacklistGeneral"] = true,
 				["iconGeneral"] = true,
 				["fontOutline"] = true,
-				["textureGeneral"] = true,
+				["fontShadow"] = false,
 				["fontGeneral"] = true,
 				["textureAnimation"] = true,
-				["fontShadow"] = false,
+				["textureGeneral"] = true,
 			}, -- [6]
 			{
 				["frameGeneral"] = true,
@@ -1143,10 +1144,10 @@ VExRT = {
 				["blacklistGeneral"] = true,
 				["iconGeneral"] = true,
 				["fontOutline"] = true,
-				["textureGeneral"] = true,
+				["fontShadow"] = false,
 				["fontGeneral"] = true,
 				["textureAnimation"] = true,
-				["fontShadow"] = false,
+				["textureGeneral"] = true,
 			}, -- [7]
 			{
 				["frameGeneral"] = true,
@@ -1156,10 +1157,10 @@ VExRT = {
 				["blacklistGeneral"] = true,
 				["iconGeneral"] = true,
 				["fontOutline"] = true,
-				["textureGeneral"] = true,
+				["fontShadow"] = false,
 				["fontGeneral"] = true,
 				["textureAnimation"] = true,
-				["fontShadow"] = false,
+				["textureGeneral"] = true,
 			}, -- [8]
 			{
 				["frameGeneral"] = true,
@@ -1169,10 +1170,10 @@ VExRT = {
 				["blacklistGeneral"] = true,
 				["iconGeneral"] = true,
 				["fontOutline"] = true,
-				["textureGeneral"] = true,
+				["fontShadow"] = false,
 				["fontGeneral"] = true,
 				["textureAnimation"] = true,
-				["fontShadow"] = false,
+				["textureGeneral"] = true,
 			}, -- [9]
 			{
 				["frameGeneral"] = true,
@@ -1182,10 +1183,10 @@ VExRT = {
 				["blacklistGeneral"] = true,
 				["iconGeneral"] = true,
 				["fontOutline"] = true,
-				["textureGeneral"] = true,
+				["fontShadow"] = false,
 				["fontGeneral"] = true,
 				["textureAnimation"] = true,
-				["fontShadow"] = false,
+				["textureGeneral"] = true,
 			}, -- [10]
 			{
 				["frameGeneral"] = true,
@@ -1195,17 +1196,17 @@ VExRT = {
 				["blacklistGeneral"] = true,
 				["iconGeneral"] = true,
 				["fontOutline"] = true,
-				["textureGeneral"] = true,
+				["fontShadow"] = false,
 				["fontGeneral"] = true,
 				["textureAnimation"] = true,
-				["fontShadow"] = false,
+				["textureGeneral"] = true,
 			}, -- [11]
 		},
 		["Priority"] = {
 		},
 		["CDE"] = {
 		},
-		["userDB"] = {
+		["Save"] = {
 		},
 	},
 	["Bossmods"] = {
@@ -1227,18 +1228,18 @@ VExRT = {
 		["IskarShowNames"] = true,
 		["KoraghAutoload"] = true,
 		["ArchimondeLeft"] = 560.714233398438,
-		["IskarLock"] = true,
-		["KormrokAutoload"] = true,
-		["Kormrok"] = {
-		},
-		["ArchimondeScale"] = 0.84,
-		["ModuleViewed3580"] = true,
-		["KromogAutoload"] = true,
-		["IskarTop"] = 356.000427246094,
-		["ArchimondeTop"] = 934.523620605469,
-		["IskarLeft"] = 1660.99975585938,
 		["Kromog"] = {
 		},
+		["KormrokAutoload"] = true,
+		["ArchimondeTop"] = 934.523620605469,
+		["IskarTop"] = 356.000427246094,
+		["ModuleViewed3580"] = true,
+		["KromogAutoload"] = true,
+		["ArchimondeScale"] = 0.84,
+		["Kormrok"] = {
+		},
+		["IskarLeft"] = 1660.99975585938,
+		["IskarLock"] = true,
 	},
 	["LegendaryRing"] = {
 	},
@@ -1246,98 +1247,10 @@ VExRT = {
 		["ColorizeLowIlvl685"] = false,
 		["ColorizeNoEnch"] = true,
 		["HideNotInRaid"] = true,
-		["ColorizeNoTopEnchGems"] = false,
-		["ColorizeNoGems"] = true,
 		["ColorizeLowIlvl"] = true,
+		["ColorizeNoGems"] = true,
+		["ColorizeNoTopEnchGems"] = false,
 		["ColorizeNoValorUpgrade"] = false,
-	},
-	["Attendance"] = {
-		["alts"] = {
-		},
-		["ModuleViewed3580"] = true,
-		["data"] = {
-		},
-	},
-	["Addon"] = {
-		["Timer"] = 0.1,
-		["IconMiniMapHide"] = true,
-		["Version"] = 3740,
-		["PreVersion"] = 3740,
-	},
-	["BossWatcher"] = {
-		["optionsDamageGraph"] = true,
-		["trackingDamageSpells"] = {
-		},
-		["autoSegments"] = {
-		},
-		["optionsPositionsDist"] = true,
-		["optionsHealingGraph"] = true,
-		["fightsNum"] = 5,
-	},
-	["MarksBar"] = {
-		["Show"] = {
-			true, -- [1]
-			true, -- [2]
-			nil, -- [3]
-			true, -- [4]
-		},
-		["Strata"] = "HIGH",
-		["DisableOutsideRaid"] = true,
-		["Fix"] = true,
-		["pulltimer"] = 10,
-		["Top"] = 186.000259399414,
-		["Left"] = 1509.49951171875,
-		["MarksReverse"] = true,
-	},
-	["Profiles"] = {
-	},
-	["Profile"] = "default",
-	["LootLink"] = {
-	},
-	["Note"] = {
-		["BlackNames"] = {
-		},
-		["FontSize"] = 12,
-		["Black"] = {
-			"", -- [1]
-			"", -- [2]
-			"", -- [3]
-		},
-		["Height"] = 99.9999313354492,
-		["AutoLoad"] = {
-		},
-		["Strata"] = "HIGH",
-		["Width"] = 199.999908447266,
-	},
-	["RaidCheck"] = {
-		["BuffsCheck"] = true,
-		["ReadyCheckFrame"] = true,
-		["ReadyCheckFrameTimerFade"] = 4,
-		["ReadyCheck"] = true,
-		["FlaskExp"] = 0,
-		["ReadyCheckLeft"] = 50.9998283386231,
-		["ReadyCheckTop"] = 877.999938964844,
-		["disableLFR"] = true,
-		["SendSelf"] = true,
-		["FoodMinLevel"] = 125,
-	},
-	["Logging"] = {
-	},
-	["InspectArtifact"] = {
-		["players"] = {
-		},
-	},
-	["InviteTool"] = {
-		["Words"] = "you're the best",
-		["InvByChat"] = true,
-		["RaidDiff"] = 15,
-		["PromoteRank"] = 0,
-		["LootThreshold"] = 4,
-		["MasterLooters"] = "",
-		["LootMethod"] = "personalloot",
-		["PromoteNames"] = "Redhavok Gavrin Brobies Khloroshue ",
-		["AutoRaidDiff"] = true,
-		["Rank"] = 4,
 	},
 	["Timers"] = {
 		["Top"] = 443.499755859375,
@@ -1375,14 +1288,102 @@ VExRT = {
 			[72] = 10,
 			[104] = 10,
 			[73] = 10,
-			[252] = 10,
-			[105] = 10,
-			[254] = 10,
-			[256] = 10,
-			[577] = 10,
 			[581] = 10,
+			[105] = 10,
+			[577] = 10,
+			[256] = 10,
+			[254] = 10,
+			[252] = 10,
 		},
 		["Left"] = 1835.49938964844,
 		["OnlyInCombat"] = true,
+	},
+	["Addon"] = {
+		["Timer"] = 0.1,
+		["PreVersion"] = 3740,
+		["Version"] = 3740,
+		["IconMiniMapHide"] = true,
+	},
+	["InviteTool"] = {
+		["Words"] = "you're the best",
+		["InvByChat"] = true,
+		["RaidDiff"] = 15,
+		["PromoteRank"] = 0,
+		["LootThreshold"] = 4,
+		["MasterLooters"] = "",
+		["LootMethod"] = "personalloot",
+		["PromoteNames"] = "Redhavok Gavrin Brobies Khloroshue ",
+		["AutoRaidDiff"] = true,
+		["Rank"] = 4,
+	},
+	["InspectArtifact"] = {
+		["players"] = {
+		},
+	},
+	["BossWatcher"] = {
+		["optionsDamageGraph"] = true,
+		["trackingDamageSpells"] = {
+		},
+		["autoSegments"] = {
+		},
+		["optionsPositionsDist"] = true,
+		["optionsHealingGraph"] = true,
+		["fightsNum"] = 5,
+	},
+	["Profile"] = "default",
+	["LootLink"] = {
+	},
+	["Note"] = {
+		["BlackNames"] = {
+		},
+		["FontSize"] = 12,
+		["Black"] = {
+			"", -- [1]
+			"", -- [2]
+			"", -- [3]
+		},
+		["Height"] = 99.9999313354492,
+		["AutoLoad"] = {
+		},
+		["Strata"] = "HIGH",
+		["Width"] = 199.999908447266,
+	},
+	["RaidCheck"] = {
+		["BuffsCheck"] = true,
+		["ReadyCheckFrame"] = true,
+		["ReadyCheckFrameTimerFade"] = 4,
+		["ReadyCheck"] = true,
+		["FlaskExp"] = 0,
+		["ReadyCheckLeft"] = 50.9998283386231,
+		["ReadyCheckTop"] = 877.999938964844,
+		["SendSelf"] = true,
+		["disableLFR"] = true,
+		["FoodMinLevel"] = 125,
+	},
+	["Logging"] = {
+	},
+	["MarksBar"] = {
+		["Show"] = {
+			true, -- [1]
+			true, -- [2]
+			nil, -- [3]
+			true, -- [4]
+		},
+		["Strata"] = "HIGH",
+		["MarksReverse"] = true,
+		["DisableOutsideRaid"] = true,
+		["pulltimer"] = 10,
+		["Top"] = 186.000259399414,
+		["Left"] = 1509.49951171875,
+		["Fix"] = true,
+	},
+	["Profiles"] = {
+	},
+	["Attendance"] = {
+		["alts"] = {
+		},
+		["ModuleViewed3580"] = true,
+		["data"] = {
+		},
 	},
 }

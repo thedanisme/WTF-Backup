@@ -10,9 +10,9 @@ DataStore_MailsDB = {
 		["Titte - Turalyon"] = "Titte - Turalyon",
 		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
 		["Dosnutz - Stormrage"] = "Dosnutz - Stormrage",
-		["Callil - Turalyon"] = "Callil - Turalyon",
+		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
-		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
+		["Brobies - Stormrage"] = "Brobies - Stormrage",
 		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
 		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
@@ -21,8 +21,8 @@ DataStore_MailsDB = {
 		["Edgelordshue - Stormrage"] = "Edgelordshue - Stormrage",
 		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
 		["Shhbbyisok - Stormrage"] = "Shhbbyisok - Stormrage",
-		["Brobies - Stormrage"] = "Brobies - Stormrage",
-		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
+		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
+		["Callil - Turalyon"] = "Callil - Turalyon",
 	},
 	["global"] = {
 		["Characters"] = {
@@ -42,9 +42,9 @@ DataStore_MailsDB = {
 				["lastUpdate"] = 1471577440,
 				["lastVisitDate"] = "2016/08/18 23:30",
 			},
-			["Default.Turalyon.Callil"] = {
-				["lastUpdate"] = 1471190717,
-				["lastVisitDate"] = "2016/08/14 12:05",
+			["Default.Turalyon.Skratch"] = {
+				["lastUpdate"] = 1469905437,
+				["lastVisitDate"] = "2016/07/30 15:03",
 			},
 			["Default.Turalyon.Knutts"] = {
 				["lastUpdate"] = 1469907685,
@@ -62,13 +62,13 @@ DataStore_MailsDB = {
 				["lastUpdate"] = 1471051041,
 				["Mails"] = {
 					{
-						["icon"] = 134327,
+						["lastCheck"] = 1471051041,
 						["sender"] = "Rolosh Wavechaser",
 						["subject"] = "Charting a Course - Horde",
 						["returned"] = false,
 						["money"] = 0,
 						["text"] = "Admiral,\r\n\r\nYou have proven yourself to be an excellent commander of our fleet.  Take this gift as a token of my appreciation.\r\n\r\nWear it proudly.\r\n\r\n--Rolosh Wavechaser",
-						["lastCheck"] = 1471051041,
+						["icon"] = 134327,
 						["daysLeft"] = 29.9995250701904,
 					}, -- [1]
 				},
@@ -78,9 +78,9 @@ DataStore_MailsDB = {
 				["lastUpdate"] = 1471635662,
 				["lastVisitDate"] = "2016/08/19 15:41",
 			},
-			["Default.Turalyon.Skratch"] = {
-				["lastUpdate"] = 1469905437,
-				["lastVisitDate"] = "2016/07/30 15:03",
+			["Default.Turalyon.Callil"] = {
+				["lastUpdate"] = 1471190717,
+				["lastVisitDate"] = "2016/08/14 12:05",
 			},
 			["Default.Stormrage.Brobies"] = {
 				["lastUpdate"] = 1471635486,
@@ -99,20 +99,8 @@ DataStore_MailsDB = {
 				["lastVisitDate"] = "2016/07/22 03:53",
 			},
 			["Default.Stormrage.Dosnutz"] = {
-				["lastUpdate"] = 1471636271,
-				["Mails"] = {
-					{
-						["lastCheck"] = 1471636271,
-						["sender"] = "Exarch Naielle",
-						["subject"] = "The Exarchs Stand Behind You",
-						["returned"] = false,
-						["money"] = 0,
-						["text"] = "Dosnutz,\r\n  From the gardens of Karabor to the treacherous shores of Gorgrond, from the battlefields of Ashran to the towers of Highmaul and everywhere in-between, my rangari scouts around the world have noted your heroic deeds. Thank you for all that you have done for my people. Know that wherever the draenei tread, you will always have a friend. \r\n  - Exarch Naielle \r\n  Rangari Prime of the Exarch Council",
-						["icon"] = 134327,
-						["daysLeft"] = 29.9994792938232,
-					}, -- [1]
-				},
-				["lastVisitDate"] = "2016/08/19 15:51",
+				["lastUpdate"] = 1471648003,
+				["lastVisitDate"] = "2016/08/19 19:06",
 			},
 			["Default.Turalyon.Titte"] = {
 				["lastUpdate"] = 1470430851,

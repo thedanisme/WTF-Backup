@@ -32,7 +32,14 @@ FrameLevel: 1
 Anchor: CENTER
 X: -395
 Y: -17
-W: 234
+W: 280
+H: 318
+Frame: MacroToolkitFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 26
+Y: 23
+W: 648
 H: 424
 Frame: RaidUtility_ShowButton
 FrameLevel: 1
