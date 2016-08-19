@@ -13,14 +13,14 @@ _detalhes_database = {
 		["reverse"] = false,
 	},
 	["active_profile"] = "Emmarosa-Stormrage",
-	["last_day"] = "17",
+	["last_day"] = "19",
 	["ignore_nicktag"] = false,
 	["tabela_historico"] = {
 		["tabelas"] = {
 			{
 				{
-					["combatId"] = 1,
 					["tipo"] = 2,
+					["combatId"] = 1,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -30,23 +30,16 @@ _detalhes_database = {
 							["targets"] = {
 								["Dungeoneer's Training Dummy"] = 2349658,
 							},
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
+							["custom"] = 0,
+							["tipo"] = 1,
 							["classe"] = "WARRIOR",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 2349658.005885,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1471466681,
-							["friendlyfire_total"] = 0,
-							["spec"] = 73,
-							["nome"] = "Yanlery",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 10,
@@ -66,16 +59,16 @@ _detalhes_database = {
 										["c_max"] = 10074,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 8735,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 6432,
 										["n_amt"] = 36,
-										["r_amt"] = 0,
-										["c_min"] = 8735,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									}, -- [1]
 									[52174] = {
 										["c_amt"] = 1,
@@ -95,16 +88,16 @@ _detalhes_database = {
 										["c_max"] = 6132,
 										["id"] = 52174,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 6132,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 6132,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									[23922] = {
 										["c_amt"] = 6,
@@ -124,74 +117,16 @@ _detalhes_database = {
 										["c_max"] = 55754,
 										["id"] = 23922,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 37654,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 57167,
 										["n_amt"] = 14,
-										["r_amt"] = 0,
-										["c_min"] = 37654,
-									},
-									[115767] = {
-										["c_amt"] = 12,
-										["b_amt"] = 0,
-										["c_dmg"] = 188226,
-										["g_amt"] = 0,
-										["n_max"] = 8019,
-										["targets"] = {
-											["Dungeoneer's Training Dummy"] = 415130,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 226904,
-										["n_min"] = 7736,
-										["g_dmg"] = 0,
-										["counter"] = 41,
-										["total"] = 415130,
-										["c_max"] = 16038,
-										["id"] = 115767,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
 										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 29,
-										["r_amt"] = 0,
-										["c_min"] = 15200,
-									},
-									[20243] = {
-										["c_amt"] = 12,
-										["b_amt"] = 1,
-										["c_dmg"] = 326399,
-										["g_amt"] = 0,
-										["n_max"] = 14663,
-										["targets"] = {
-											["Dungeoneer's Training Dummy"] = 663484,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 337085,
-										["n_min"] = 9587,
-										["g_dmg"] = 0,
-										["counter"] = 37,
-										["total"] = 663484,
-										["c_max"] = 28956,
-										["id"] = 20243,
-										["r_dmg"] = 0,
 										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 9587,
-										["n_amt"] = 25,
-										["r_amt"] = 0,
-										["c_min"] = 25378,
 									},
 									[6572] = {
 										["c_amt"] = 4,
@@ -211,71 +146,127 @@ _detalhes_database = {
 										["c_max"] = 38494,
 										["id"] = 6572,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 37139,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 9,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									[20243] = {
+										["c_amt"] = 12,
+										["b_amt"] = 1,
+										["c_dmg"] = 326399,
+										["g_amt"] = 0,
+										["n_max"] = 14663,
+										["targets"] = {
+											["Dungeoneer's Training Dummy"] = 663484,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 337085,
+										["n_min"] = 9587,
+										["g_dmg"] = 0,
+										["counter"] = 37,
+										["total"] = 663484,
+										["c_max"] = 28956,
+										["id"] = 20243,
+										["r_dmg"] = 0,
+										["c_min"] = 25378,
 										["r_amt"] = 0,
-										["c_min"] = 37139,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 9587,
+										["n_amt"] = 25,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									[115767] = {
+										["c_amt"] = 12,
+										["b_amt"] = 0,
+										["c_dmg"] = 188226,
+										["g_amt"] = 0,
+										["n_max"] = 8019,
+										["targets"] = {
+											["Dungeoneer's Training Dummy"] = 415130,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 226904,
+										["n_min"] = 7736,
+										["g_dmg"] = 0,
+										["counter"] = 41,
+										["total"] = 415130,
+										["c_max"] = 16038,
+										["id"] = 115767,
+										["r_dmg"] = 0,
+										["c_min"] = 15200,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 29,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["grupo"] = true,
-							["total"] = 2349658.005885,
-							["serial"] = "Player-60-0A0EEC46",
-							["last_dps"] = 21756.0926470833,
-							["custom"] = 0,
-							["last_event"] = 1471466681,
+							["dps_started"] = false,
+							["end_time"] = 1471466681,
 							["damage_taken"] = 1152715.005885,
+							["total"] = 2349658.005885,
+							["nome"] = "Yanlery",
+							["spec"] = 73,
+							["grupo"] = true,
+							["last_dps"] = 21756.0926470833,
+							["friendlyfire_total"] = 0,
+							["colocacao"] = 1,
+							["last_event"] = 1471466681,
+							["on_hold"] = false,
 							["start_time"] = 1471466573,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Player-60-0A0EEC46",
+							["friendlyfire"] = {
+							},
 						}, -- [1]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 1,
 					["tipo"] = 3,
+					["combatId"] = 1,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["totalabsorb"] = 0.001923,
 							["last_hps"] = 0,
-							["healing_from"] = {
-								["Yanlery"] = true,
+							["targets_overheal"] = {
 							},
 							["targets"] = {
 								["Training Dummy"] = 175278168,
 								["Yanlery"] = 1037430,
 							},
-							["targets_overheal"] = {
-							},
+							["end_time"] = 1471466681,
 							["pets"] = {
 							},
-							["iniciar_hps"] = false,
-							["targets_absorbs"] = {
+							["totalover_without_pet"] = 0.001923,
+							["healing_from"] = {
+								["Yanlery"] = true,
 							},
-							["classe"] = "WARRIOR",
+							["healing_taken"] = 1037430.001923,
 							["totalover"] = 0.001923,
 							["total_without_pet"] = 176315598.001923,
-							["totalover_without_pet"] = 0.001923,
+							["iniciar_hps"] = false,
 							["heal_enemy_amt"] = 0,
 							["fight_component"] = true,
 							["total"] = 176315598.001923,
-							["healing_taken"] = 1037430.001923,
-							["end_time"] = 1471466681,
-							["nome"] = "Yanlery",
-							["spec"] = 73,
-							["grupo"] = true,
-							["last_event"] = 1471466680,
-							["heal_enemy"] = {
-							},
+							["classe"] = "WARRIOR",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[222944] = {
 										["c_amt"] = 0,
@@ -297,10 +288,10 @@ _detalhes_database = {
 										["m_crit"] = 0,
 										["c_curado"] = 0,
 										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 175278168,
-										["m_healed"] = 0,
 										["n_amt"] = 108,
+										["m_healed"] = 0,
+										["n_curado"] = 175278168,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 									[190456] = {
@@ -323,29 +314,38 @@ _detalhes_database = {
 										["m_crit"] = 0,
 										["c_curado"] = 0,
 										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 1037430,
-										["m_healed"] = 0,
 										["n_amt"] = 29,
+										["m_healed"] = 0,
+										["n_curado"] = 1037430,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
+							["nome"] = "Yanlery",
+							["targets_absorbs"] = {
+							},
+							["grupo"] = true,
+							["delay"] = 0,
+							["heal_enemy"] = {
+							},
+							["spec"] = 73,
 							["custom"] = 0,
 							["tipo"] = 2,
 							["on_hold"] = false,
 							["start_time"] = 1471466573,
 							["serial"] = "Player-60-0A0EEC46",
-							["delay"] = 0,
+							["last_event"] = 1471466680,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 1,
 					["tipo"] = 7,
+					["combatId"] = 1,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1297,
+							["received"] = 453.002423,
 							["resource"] = 0.002423,
 							["targets"] = {
 								["Yanlery"] = 453,
@@ -357,12 +357,7 @@ _detalhes_database = {
 							["fight_component"] = true,
 							["total"] = 453.002423,
 							["nome"] = "Yanlery",
-							["spec"] = 73,
-							["grupo"] = true,
-							["tipo"] = 3,
-							["received"] = 453.002423,
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[6572] = {
 										["id"] = 6572,
@@ -389,92 +384,97 @@ _detalhes_database = {
 										["counter"] = 20,
 									},
 								},
+								["tipo"] = 7,
 							},
-							["serial"] = "Player-60-0A0EEC46",
+							["grupo"] = true,
+							["tipo"] = 3,
+							["flag_original"] = 1297,
 							["last_event"] = 1471466678,
+							["serial"] = "Player-60-0A0EEC46",
+							["spec"] = 73,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 1,
 					["tipo"] = 9,
+					["combatId"] = 1,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[115767] = {
 										["uptime"] = 105,
 										["activedamt"] = 0,
 										["id"] = 115767,
-										["actived"] = false,
 										["targets"] = {
 										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 481,
 							["classe"] = "WARRIOR",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[182422] = {
 										["uptime"] = 40,
 										["activedamt"] = 1,
 										["id"] = 182422,
-										["actived"] = false,
 										["targets"] = {
 										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
 									[176151] = {
 										["uptime"] = 108,
 										["activedamt"] = 1,
 										["id"] = 176151,
-										["actived"] = false,
 										["targets"] = {
 										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
 									[162917] = {
 										["uptime"] = 20,
 										["activedamt"] = 1,
 										["id"] = 162917,
-										["actived"] = false,
 										["targets"] = {
 										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
 									[190456] = {
 										["uptime"] = 98,
 										["activedamt"] = 1,
 										["id"] = 190456,
-										["actived"] = false,
 										["targets"] = {
 										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
 									[202602] = {
 										["uptime"] = 107,
 										["activedamt"] = 1,
 										["id"] = 202602,
-										["actived"] = false,
 										["targets"] = {
 										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
 									[186404] = {
 										["uptime"] = 108,
 										["activedamt"] = 1,
 										["id"] = 186404,
-										["actived"] = false,
 										["targets"] = {
 										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 105,
@@ -490,20 +490,20 @@ _detalhes_database = {
 								[20243] = 37,
 								[52174] = 1,
 							},
-							["debuff_uptime_targets"] = {
-							},
+							["tipo"] = 4,
 							["last_event"] = 1471466681,
 							["nome"] = "Yanlery",
 							["pets"] = {
 							},
 							["serial"] = "Player-60-0A0EEC46",
-							["tipo"] = 4,
+							["debuff_uptime_targets"] = {
+							},
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 1,
 					["tipo"] = 2,
+					["combatId"] = 1,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -527,15 +527,15 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
 				["player_last_events"] = {
 				},
@@ -547,6 +547,11 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage"] = {
+						{
+							["Yanlery"] = 2349658.005885,
+						}, -- [1]
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -556,15 +561,8 @@ _detalhes_database = {
 					},
 					["damage_section"] = {
 					},
-					["damage"] = {
-						{
-							["Yanlery"] = 2349658.005885,
-						}, -- [1]
-					},
 				},
 				["end_time"] = 224596.174,
-				["combat_id"] = 1,
-				["instance_type"] = "party",
 				["totals_grupo"] = {
 					2349658, -- [1]
 					176315598, -- [2]
@@ -577,14 +575,17 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
+				["combat_id"] = 1,
+				["instance_type"] = "party",
+				["hasSaved"] = true,
 				["frags"] = {
 				},
 				["data_fim"] = "16:44:42",
@@ -600,11 +601,8 @@ _detalhes_database = {
 			}, -- [1]
 		},
 	},
-	["combat_counter"] = 8,
-	["SoloTablesSaved"] = {
-		["LastSelected"] = "DETAILS_PLUGIN_DAMAGE_RANK",
-		["Mode"] = 1,
-	},
+	["combat_counter"] = 9,
+	["last_version"] = "v5.21",
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
 			["lasttry"] = {
@@ -612,10 +610,10 @@ _detalhes_database = {
 			["annouce"] = true,
 			["dpshistory"] = {
 			},
-			["author"] = "Details! Team",
-			["dps"] = 0,
-			["level"] = 1,
 			["enabled"] = true,
+			["author"] = "Details! Team",
+			["level"] = 1,
+			["dps"] = 0,
 		},
 		["DETAILS_PLUGIN_DEATH_GRAPHICS"] = {
 			["last_boss"] = false,
@@ -633,15 +631,15 @@ _detalhes_database = {
 			["max_segments_for_current"] = 2,
 			["max_deaths_for_current"] = 15,
 			["last_player"] = false,
-			["InstalledAt"] = 1470515869,
+			["author"] = "Details! Team",
 			["last_encounter_hash"] = false,
-			["showing_type"] = 4,
+			["enabled"] = true,
 			["timeline_cutoff_time"] = 3,
 			["last_segment"] = false,
 			["last_combat_id"] = 0,
 			["timeline_cutoff_delete_time"] = 3,
-			["enabled"] = true,
-			["author"] = "Details! Team",
+			["showing_type"] = 4,
+			["InstalledAt"] = 1470515869,
 		},
 		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
 			["enabled"] = true,
@@ -650,11 +648,11 @@ _detalhes_database = {
 			["max_emote_segments"] = 3,
 			["author"] = "Details! Team",
 			["window_scale"] = 1,
-			["hide_on_combat"] = false,
-			["show_icon"] = 5,
-			["opened"] = 0,
 			["encounter_timers_dbm"] = {
 			},
+			["show_icon"] = 5,
+			["opened"] = 0,
+			["hide_on_combat"] = false,
 		},
 		["DETAILS_PLUGIN_LEECH_TRINKET"] = {
 			["enabled"] = true,
@@ -662,17 +660,17 @@ _detalhes_database = {
 		},
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["updatespeed"] = 1,
+			["enabled"] = true,
 			["showamount"] = false,
-			["animate"] = false,
 			["useplayercolor"] = false,
-			["useclasscolors"] = false,
 			["author"] = "Details! Team",
+			["useclasscolors"] = false,
 			["playercolor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["enabled"] = true,
+			["animate"] = false,
 		},
 		["DETAILS_PLUGIN_DPS_TUNING"] = {
 			["enabled"] = true,
@@ -681,41 +679,17 @@ _detalhes_database = {
 		},
 		["DETAILS_PLUGIN_VANGUARD"] = {
 			["enabled"] = true,
-			["tank_block_texture"] = "Details Serenity",
 			["tank_block_color"] = {
 				0.24705882, -- [1]
 				0.0039215, -- [2]
 				0, -- [3]
 				0.8, -- [4]
 			},
+			["tank_block_texture"] = "Details Serenity",
 			["show_inc_bars"] = false,
 			["author"] = "Details! Team",
 			["first_run"] = false,
 			["tank_block_size"] = 150,
-		},
-		["DETAILS_PLUGIN_TIME_ATTACK"] = {
-			["enabled"] = true,
-			["realm_last_shown"] = 40,
-			["saved_as_anonymous"] = true,
-			["recently_as_anonymous"] = true,
-			["dps"] = 0,
-			["disable_sharing"] = false,
-			["history"] = {
-			},
-			["time"] = 40,
-			["history_lastindex"] = 0,
-			["realm_lastamt"] = 0,
-			["realm_history"] = {
-			},
-			["author"] = "Details! Team",
-		},
-		["DETAILS_PLUGIN_RAIDCHECK"] = {
-			["enabled"] = true,
-			["pre_pot_tanks"] = false,
-			["mythic_1_4"] = true,
-			["author"] = "Details! Team",
-			["use_report_panel"] = true,
-			["pre_pot_healers"] = false,
 		},
 		["DETAILS_PLUGIN_CHART_VIEWER"] = {
 			["enabled"] = true,
@@ -731,31 +705,62 @@ _detalhes_database = {
 				["last_selected"] = 1,
 			},
 			["options"] = {
-				["auto_create"] = true,
 				["show_method"] = 4,
+				["auto_create"] = true,
 				["window_scale"] = 1,
 			},
+		},
+		["DETAILS_PLUGIN_RAIDCHECK"] = {
+			["enabled"] = true,
+			["pre_pot_tanks"] = false,
+			["mythic_1_4"] = true,
+			["author"] = "Details! Team",
+			["use_report_panel"] = true,
+			["pre_pot_healers"] = false,
+		},
+		["DETAILS_PLUGIN_TIME_ATTACK"] = {
+			["enabled"] = true,
+			["realm_last_shown"] = 40,
+			["saved_as_anonymous"] = true,
+			["recently_as_anonymous"] = true,
+			["dps"] = 0,
+			["disable_sharing"] = false,
+			["history"] = {
+			},
+			["time"] = 40,
+			["history_lastindex"] = 0,
+			["author"] = "Details! Team",
+			["realm_history"] = {
+			},
+			["realm_lastamt"] = 0,
 		},
 	},
 	["savedbuffs"] = {
 	},
-	["character_data"] = {
-		["logons"] = 3,
+	["SoloTablesSaved"] = {
+		["LastSelected"] = "DETAILS_PLUGIN_DAMAGE_RANK",
+		["Mode"] = 1,
 	},
-	["nick_tag_cache"] = {
-		["nextreset"] = 1471811869,
-		["last_version"] = 8,
+	["cached_talents"] = {
+		["Player-60-0A0EEC46"] = {
+			19138, -- [1]
+			15760, -- [2]
+			22801, -- [3]
+			22488, -- [4]
+			22629, -- [5]
+			22398, -- [6]
+			22362, -- [7]
+		},
 	},
 	["tabela_instancias"] = {
 	},
 	["combat_id"] = 1,
 	["savedStyles"] = {
 	},
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
+	["character_data"] = {
+		["logons"] = 4,
 	},
-	["last_version"] = "v5.21",
+	["last_instance_time"] = 0,
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
@@ -796,24 +801,20 @@ _detalhes_database = {
 			},
 		}, -- [1]
 	},
-	["last_instance_time"] = 0,
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
 	["announce_cooldowns"] = {
-		["enabled"] = false,
 		["ignored_cooldowns"] = {
 		},
+		["enabled"] = false,
 		["custom"] = "",
 		["channel"] = "RAID",
 	},
-	["cached_talents"] = {
-		["Player-60-0A0EEC46"] = {
-			19138, -- [1]
-			15760, -- [2]
-			22801, -- [3]
-			22488, -- [4]
-			22629, -- [5]
-			22398, -- [6]
-			22362, -- [7]
-		},
+	["nick_tag_cache"] = {
+		["nextreset"] = 1471811869,
+		["last_version"] = 8,
 	},
 	["last_instance_id"] = 0,
 	["cached_specs"] = {

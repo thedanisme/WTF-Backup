@@ -1,11 +1,4 @@
 Version: 1
-Frame: ItemRefTooltip
-FrameLevel: 1
-Anchor: CENTER
-X: 259
-Y: -102
-W: 128
-H: 64
 Frame: ColorPickerFrame
 FrameLevel: 21
 Anchor: TOPLEFT
@@ -20,27 +13,6 @@ X: 19
 Y: 14
 W: 920
 H: 600
-Frame: BDLC
-FrameLevel: 1
-Anchor: CENTER
-X: 0
-Y: 0
-W: 600
-H: 400
-Frame: BDLC Roll Window
-FrameLevel: 10
-Anchor: RIGHT
-X: -141
-Y: 0
-W: 438
-H: 1
-Frame: BDLC Config
-FrameLevel: 50
-Anchor: CENTER
-X: 0
-Y: 0
-W: 400
-H: 100
 Frame: ChartViewerWindowFrame
 FrameLevel: 1
 Anchor: CENTER
@@ -62,6 +34,13 @@ X: 0
 Y: 128
 W: 150
 H: 42
+Frame: ItemRefTooltip
+FrameLevel: 1
+Anchor: CENTER
+X: 259
+Y: -102
+W: 234
+H: 424
 Frame: RaidUtility_ShowButton
 FrameLevel: 1
 Anchor: TOPRIGHT

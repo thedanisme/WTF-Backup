@@ -1,11 +1,4 @@
 Version: 1
-Frame: ItemRefTooltip
-FrameLevel: 1
-Anchor: CENTER
-X: 97
-Y: -1
-W: 128
-H: 64
 Frame: ColorPickerFrame
 FrameLevel: 21
 Anchor: TOPLEFT
@@ -34,6 +27,13 @@ X: 0
 Y: 128
 W: 150
 H: 42
+Frame: ItemRefTooltip
+FrameLevel: 1
+Anchor: CENTER
+X: 97
+Y: -1
+W: 210
+H: 424
 Frame: RaidUtility_ShowButton
 FrameLevel: 1
 Anchor: TOPRIGHT

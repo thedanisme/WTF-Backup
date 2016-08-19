@@ -10,9 +10,9 @@ DataStore_AgendaDB = {
 		["Titte - Turalyon"] = "Titte - Turalyon",
 		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
 		["Dosnutz - Stormrage"] = "Dosnutz - Stormrage",
-		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
+		["Callil - Turalyon"] = "Callil - Turalyon",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
-		["Brobies - Stormrage"] = "Brobies - Stormrage",
+		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
 		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
 		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
@@ -21,8 +21,8 @@ DataStore_AgendaDB = {
 		["Edgelordshue - Stormrage"] = "Edgelordshue - Stormrage",
 		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
 		["Shhbbyisok - Stormrage"] = "Shhbbyisok - Stormrage",
-		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
-		["Callil - Turalyon"] = "Callil - Turalyon",
+		["Brobies - Stormrage"] = "Brobies - Stormrage",
+		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
 	},
 	["global"] = {
 		["Options"] = {
@@ -36,9 +36,9 @@ DataStore_AgendaDB = {
 			},
 			["Default.Stormrage.Emmarosa"] = {
 				["DungeonIDs"] = {
-					["Dragon Soul 25 Player (Heroic)|635877836"] = "406000|1471558394|0|1",
+					["Dragon Soul 25 Player (Heroic)|635877836"] = "329062|1471635341|0|1",
 				},
-				["lastUpdate"] = 1471558392,
+				["lastUpdate"] = 1471635339,
 			},
 			["Default.Bloodhoof.Arando"] = {
 				["Contacts"] = {
@@ -48,85 +48,8 @@ DataStore_AgendaDB = {
 				},
 				["lastUpdate"] = 1469995040,
 			},
-			["Default.Stormrage.Edgelordshue"] = {
-				["lastUpdate"] = 1470762217,
-			},
 			["Default.Stormrage.Brobies"] = {
-				["lastUpdate"] = 1471527266,
-			},
-			["Default.Stormrage.Kateplusnine"] = {
-				["lastUpdate"] = 1470756353,
-			},
-			["Default.Turalyon.Skratch"] = {
-				["lastUpdate"] = 1469994525,
-			},
-			["Default.Turalyon.Knutts"] = {
-				["lastUpdate"] = 1469912067,
-			},
-			["Default.Stormrage.Shhbbyisok"] = {
-				["Contacts"] = {
-					["Sgtshmitty"] = {
-						["note"] = "",
-						["level"] = 100,
-						["class"] = "Demon Hunter",
-					},
-				},
-				["lastUpdate"] = 1471558626,
-			},
-			["Default.Turalyon.Pryahprism"] = {
-				["lastUpdate"] = 1471190896,
-			},
-			["Default.Bloodhoof.Dalgrens"] = {
-				["lastUpdate"] = 1469995428,
-			},
-			["Default.Stormrage.Yanlery"] = {
-				["lastUpdate"] = 1471466297,
-			},
-			["Default.Turalyon.Callil"] = {
-				["lastUpdate"] = 1471190765,
-			},
-			["Default.Stormrage.Ershirley"] = {
-				["lastUpdate"] = 1469599252,
-			},
-			["Default.Turalyon.Titte"] = {
-				["lastUpdate"] = 1470432001,
-			},
-			["Default.Turalyon.Lackteight"] = {
-				["lastUpdate"] = 1471053493,
-			},
-			["Default.Stormrage.Squelben"] = {
-				["lastUpdate"] = 1470356975,
-			},
-			["Default.Stormrage.Whyfy"] = {
-				["lastUpdate"] = 1470788843,
-			},
-			["Default.Stormrage.Danoh"] = {
-				["lastUpdate"] = 1471526972,
-			},
-			["Default.Stormrage.Dosnutz"] = {
-				["lastUpdate"] = 1471568351,
-				["DungeonIDs"] = {
-					["Hellfire Citadel Normal|635991738"] = "380002|1471584401|0|1",
-				},
-				["LFGDungeons"] = {
-					["984.Tyrant Velhari"] = true,
-					["985.Count"] = 3,
-					["985.Fel Lord Zakuun"] = true,
-					["983.Count"] = 3,
-					["986.Count"] = 1,
-					["985.Mannoroth"] = true,
-					["984.Count"] = 3,
-					["985.Xhul'horac"] = true,
-					["986.Archimonde"] = true,
-					["984.Shadow-Lord Iskar"] = true,
-					["984.Socrethar the Eternal"] = true,
-					["983.Gorefiend"] = true,
-					["983.Hellfire High Council"] = true,
-					["983.Kilrogg Deadeye"] = true,
-				},
-			},
-			["Default.Turalyon.Shaneequa"] = {
-				["lastUpdate"] = 1461602628,
+				["lastUpdate"] = 1471635480,
 			},
 			["Default.Stormrage.Talthalador"] = {
 				["DungeonIDs"] = {
@@ -141,6 +64,85 @@ DataStore_AgendaDB = {
 					["986.Archimonde"] = true,
 					["982.Hellfire Assault"] = true,
 				},
+			},
+			["Default.Turalyon.Shaneequa"] = {
+				["lastUpdate"] = 1461602628,
+			},
+			["Default.Turalyon.Callil"] = {
+				["lastUpdate"] = 1471190765,
+			},
+			["Default.Turalyon.Knutts"] = {
+				["lastUpdate"] = 1469912067,
+			},
+			["Default.Stormrage.Shhbbyisok"] = {
+				["Contacts"] = {
+					["Sgtshmitty"] = {
+						["note"] = "",
+						["class"] = "Demon Hunter",
+						["level"] = 100,
+					},
+				},
+				["lastUpdate"] = 1471558626,
+			},
+			["Default.Turalyon.Pryahprism"] = {
+				["lastUpdate"] = 1471190896,
+			},
+			["Default.Bloodhoof.Dalgrens"] = {
+				["lastUpdate"] = 1469995428,
+			},
+			["Default.Stormrage.Yanlery"] = {
+				["lastUpdate"] = 1471635635,
+			},
+			["Default.Turalyon.Skratch"] = {
+				["lastUpdate"] = 1469994525,
+			},
+			["Default.Stormrage.Ershirley"] = {
+				["lastUpdate"] = 1469599252,
+			},
+			["Default.Stormrage.Danoh"] = {
+				["lastUpdate"] = 1471635810,
+			},
+			["Default.Turalyon.Lackteight"] = {
+				["lastUpdate"] = 1471053493,
+			},
+			["Default.Stormrage.Squelben"] = {
+				["lastUpdate"] = 1470356975,
+			},
+			["Default.Stormrage.Whyfy"] = {
+				["lastUpdate"] = 1470788843,
+			},
+			["Default.Turalyon.Titte"] = {
+				["lastUpdate"] = 1470432001,
+			},
+			["Default.Stormrage.Dosnutz"] = {
+				["DungeonIDs"] = {
+					["Hellfire Citadel Normal|635991738"] = "326072|1471638326|0|1",
+				},
+				["lastUpdate"] = 1471638291,
+				["LFGDungeons"] = {
+					["984.Tyrant Velhari"] = true,
+					["985.Count"] = 3,
+					["984.Socrethar the Eternal"] = true,
+					["983.Count"] = 3,
+					["986.Count"] = 1,
+					["986.Archimonde"] = true,
+					["985.Mannoroth"] = true,
+					["984.Shadow-Lord Iskar"] = true,
+					["984.Count"] = 3,
+					["985.Fel Lord Zakuun"] = true,
+					["823.Count"] = 1,
+					["983.Gorefiend"] = true,
+					["985.Xhul'horac"] = true,
+					["823.Blackhand"] = true,
+					["983.Hellfire High Council"] = true,
+					["983.Kilrogg Deadeye"] = true,
+				},
+			},
+			["Default.Stormrage.Kateplusnine"] = {
+				["lastUpdate"] = 1470756353,
+			},
+			["Default.Stormrage.Edgelordshue"] = {
+				["lastUpdate"] = 1470762217,
 			},
 		},
 	},
