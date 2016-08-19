@@ -12,7 +12,7 @@
 ## Notes-koKR: LegionInvasionTimer Configuration Options.
 ## Notes-ptBR: LegionInvasionTimer Configuration Options.
 ## Notes-ruRU: LegionInvasionTimer Configuration Options.
-## Version: v1.6
+## Version: v1.6-2-g5142b8f
 ## X-Category: Miscellaneous
 ## X-License: All Rights Reserved: You are free to fork and modify on GitHub, please ask us about anything else.
 ## X-Curse-Project-ID: legioninvasiontimer

@@ -5,7 +5,12 @@
 ## Version: v1.2.3 Legion 7.0.3
 ## SavedVariables: GnomeOptions
 ## OptionalDeps: WeakAuras
+## X-Curse-Packaged-Version: r20160817110316
+## X-Curse-Project-Name: GnomeSequencer - Enhanced
+## X-Curse-Project-ID: gnomesequencer-enhanced
+## X-Curse-Repository-ID: wow/gnomesequencer-enhanced/mainline
 
+## X-WoWI-ID: 23921
 # Lib
 embeds.xml
 

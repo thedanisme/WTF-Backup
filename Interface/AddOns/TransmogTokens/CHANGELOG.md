@@ -1,3 +1,16 @@
+** Version 1.4.3 **
+* Added full support for Tier 18 tokens, including Demon Hunters unique set!
+* Added full support for Tier 17 tokens, including exchangeable tokens from Blackhand.
+* Added detailed information to all quest items that drop in Temple/Ruins of Ahn'Qiraj.
+* Added information to Tier 10 set pieces that are exchanged in Dalaran for higher versions.
+* Added information to Sunwell items that are exchanged with Sunmotes for different versions.
+* Technical optimizations and reduced memory usage.
+
+** Version 1.4.2 **
+* Added support for Timeless Isle Armor Caches.
+* Added localization support for deDE.
+* Source for Chestguard of the Lost Conqueror has been corrected.
+
 ** Version 1.4.1 **
 * Fixed Baleful Armament showing the wrong appearance counts.
 * Note added to Helm of the Forlorn Protector to indicate that it's useless.

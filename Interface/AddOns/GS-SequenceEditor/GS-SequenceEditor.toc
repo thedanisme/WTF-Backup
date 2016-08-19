@@ -5,9 +5,15 @@
 ## Version: v1.2.2 - Legion
 ## RequiredDeps: GS-Core
 ## OptionalDeps: GS-SequenceTranslator
+## X-Curse-Packaged-Version: r20160817110316
+## X-Curse-Project-Name: GnomeSequencer - Enhanced
+## X-Curse-Project-ID: gnomesequencer-enhanced
+## X-Curse-Repository-ID: wow/gnomesequencer-enhanced/mainline
 
 #libs
 embeds.xml
+# languages
+langs\GSSE_enUS.lua
 
 #startup
 editor-startup.lua

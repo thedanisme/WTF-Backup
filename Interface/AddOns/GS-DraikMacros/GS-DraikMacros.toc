@@ -5,6 +5,10 @@
 ## Version: v1.2 Legion 7.0.3
 ## RequiredDeps: GS-Core
 ## LoadOnDemand: 1
+## X-Curse-Packaged-Version: r20160817110316
+## X-Curse-Project-Name: GnomeSequencer - Enhanced
+## X-Curse-Project-ID: gnomesequencer-enhanced
+## X-Curse-Repository-ID: wow/gnomesequencer-enhanced/mainline
 
 Macros\DeathKnight.lua
 Macros\Druid.lua
