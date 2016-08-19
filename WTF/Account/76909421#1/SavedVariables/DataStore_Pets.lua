@@ -663,7 +663,7 @@ DataStore_PetsDB = {
 				},
 			},
 			["Default.Stormrage.Dosnutz"] = {
-				["lastUpdate"] = 1471565331,
+				["lastUpdate"] = 1471584401,
 				["CRITTER"] = {
 					210699, -- [1]
 				},
@@ -675,7 +675,7 @@ DataStore_PetsDB = {
 				},
 			},
 			["Default.Stormrage.Talthalador"] = {
-				["lastUpdate"] = 1471560343,
+				["lastUpdate"] = 1471578704,
 				["CRITTER"] = {
 					179834, -- [1]
 					92395, -- [2]

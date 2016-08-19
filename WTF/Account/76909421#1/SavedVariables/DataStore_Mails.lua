@@ -39,23 +39,12 @@ DataStore_MailsDB = {
 				["lastVisitDate"] = "2016/07/22 03:47",
 			},
 			["Default.Stormrage.Talthalador"] = {
-				["lastUpdate"] = 1471563129,
-				["Mails"] = {
-					{
-						["sender"] = "Dosnutz",
-						["itemID"] = 118630,
-						["link"] = "|cff0070dd|Hitem:118630::::::::100:64::::::|h[Hyper Augment Rune]|h|r",
-						["count"] = 4,
-						["lastCheck"] = 1471563129,
-						["icon"] = 134426,
-						["daysLeft"] = 30,
-					}, -- [1]
-				},
-				["lastVisitDate"] = "2016/08/18 18:57",
+				["lastUpdate"] = 1471577440,
+				["lastVisitDate"] = "2016/08/18 23:30",
 			},
-			["Default.Turalyon.Skratch"] = {
-				["lastUpdate"] = 1469905437,
-				["lastVisitDate"] = "2016/07/30 15:03",
+			["Default.Turalyon.Titte"] = {
+				["lastUpdate"] = 1470430851,
+				["lastVisitDate"] = "2016/08/05 17:00",
 			},
 			["Default.Turalyon.Knutts"] = {
 				["lastUpdate"] = 1469907685,
@@ -182,6 +171,10 @@ DataStore_MailsDB = {
 				},
 				["lastVisitDate"] = "2016/08/04 14:08",
 			},
+			["Default.Turalyon.Callil"] = {
+				["lastUpdate"] = 1471190717,
+				["lastVisitDate"] = "2016/08/14 12:05",
+			},
 			["Default.Stormrage.Danoh"] = {
 				["lastUpdate"] = 1471563082,
 				["Mails"] = {
@@ -269,10 +262,6 @@ DataStore_MailsDB = {
 				},
 				["lastVisitDate"] = "2016/08/18 09:33",
 			},
-			["Default.Turalyon.Callil"] = {
-				["lastUpdate"] = 1471190717,
-				["lastVisitDate"] = "2016/08/14 12:05",
-			},
 			["Default.Stormrage.Brobies"] = {
 				["lastUpdate"] = 1471527452,
 				["lastVisitDate"] = "2016/08/18 09:37",
@@ -286,12 +275,12 @@ DataStore_MailsDB = {
 				["lastVisitDate"] = "2016/07/22 03:53",
 			},
 			["Default.Stormrage.Dosnutz"] = {
-				["lastUpdate"] = 1471563131,
-				["lastVisitDate"] = "2016/08/18 19:32",
+				["lastUpdate"] = 1471584474,
+				["lastVisitDate"] = "2016/08/19 01:27",
 			},
-			["Default.Turalyon.Titte"] = {
-				["lastUpdate"] = 1470430851,
-				["lastVisitDate"] = "2016/08/05 17:00",
+			["Default.Turalyon.Skratch"] = {
+				["lastUpdate"] = 1469905437,
+				["lastVisitDate"] = "2016/07/30 15:03",
 			},
 		},
 	},

@@ -187,7 +187,7 @@ MacroToolkitDB = {
 					["body"] = "#showtooltip Ice Block\n/cancelaura Ice Block\n/use Ice Block\n",
 				},
 				[124] = {
-					["icon"] = "135836",
+					["icon"] = "134400",
 					["name"] = "Water Jet",
 					["body"] = "#showtooltip\n/cast Water Jet\n",
 				},
@@ -1195,13 +1195,13 @@ MacroToolkitDB = {
 		["Talthalador - Stormrage"] = {
 			["macros"] = {
 				[121] = {
-					["name"] = " ",
 					["icon"] = "134400",
+					["name"] = " ",
 					["body"] = "#showtooltip\n/use [@mouseover,harm][]Torment\n",
 				},
 				[122] = {
-					["name"] = "Demonic Hello",
 					["icon"] = "1020342",
+					["name"] = "Demonic Hello",
 					["body"] = "/script SendChatMessage(\"Hey there %t!  Supposedly, we can both understand this.  /nod if you can.\", \"SAY\", 8)\n",
 				},
 			},

@@ -1,25 +1,4 @@
 Version: 1
-Frame: BDLC Roll Window
-FrameLevel: 10
-Anchor: RIGHT
-X: -141
-Y: 0
-W: 438
-H: 1
-Frame: BDLC
-FrameLevel: 1
-Anchor: CENTER
-X: 19
-Y: 91
-W: 600
-H: 400
-Frame: LegionInvasionTimer
-FrameLevel: 1
-Anchor: BOTTOMRIGHT
-X: -12
-Y: 186
-W: 180
-H: 15
 Frame: ItemRefTooltip
 FrameLevel: 1
 Anchor: CENTER
@@ -34,6 +13,13 @@ X: 0
 Y: 0
 W: 365
 H: 240
+Frame: LootHistoryFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 383
+Y: 58
+W: 210
+H: 175
 Frame: AtlasLoot_GUI-Frame
 FrameLevel: 1
 Anchor: CENTER
@@ -41,13 +27,6 @@ X: 2
 Y: 0
 W: 920
 H: 600
-Frame: BDLC Config
-FrameLevel: 50
-Anchor: CENTER
-X: 0
-Y: 0
-W: 400
-H: 100
 Frame: _NPCScanButton
 FrameLevel: 1
 Anchor: BOTTOM
@@ -62,10 +41,3 @@ X: 63
 Y: 1
 W: 136
 H: 18
-Frame: TomTomCrazyArrow
-FrameLevel: 1
-Anchor: CENTER
-X: 460
-Y: -26
-W: 56
-H: 42

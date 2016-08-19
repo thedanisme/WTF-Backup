@@ -93,12 +93,12 @@ DataStore_CurrenciesDB = {
 				["Mists of Pandaria"] = 22,
 				["Epicurean's Award"] = 27,
 				["Honor Points"] = 15,
+				["Warlords of Draenor"] = 1,
 				["Conquest Points"] = 14,
-				["Miscellaneous"] = 11,
 				["Legion"] = 36,
 				["Apexis Crystal"] = 2,
 				["Darkmoon Prize Ticket"] = 12,
-				["Warlords of Draenor"] = 1,
+				["Miscellaneous"] = 11,
 				["Garrison Resources"] = 4,
 				["Seal of Tempered Fate"] = 7,
 				["Champion's Seal"] = 25,
@@ -903,7 +903,7 @@ DataStore_CurrenciesDB = {
 					0, -- [17]
 					0, -- [18]
 				},
-				["lastUpdate"] = 1471564968,
+				["lastUpdate"] = 1471568351,
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
 					[396] = "0-0-0-0",
@@ -956,7 +956,7 @@ DataStore_CurrenciesDB = {
 				},
 			},
 			["Default.Stormrage.Talthalador"] = {
-				["lastUpdate"] = 1471560342,
+				["lastUpdate"] = 1471578759,
 				["Archeology"] = {
 					0, -- [1]
 					0, -- [2]
@@ -981,14 +981,14 @@ DataStore_CurrenciesDB = {
 					73, -- [1]
 					20938, -- [2]
 					17, -- [3]
-					51220, -- [4]
+					89620, -- [4]
 					23, -- [5]
 					3864, -- [6]
 					3, -- [7]
 					302212, -- [8]
-					201608, -- [9]
+					215432, -- [9]
 					83210, -- [10]
-					268, -- [11]
+					12, -- [11]
 				},
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
@@ -996,7 +996,7 @@ DataStore_CurrenciesDB = {
 					[390] = "0-0-0-0",
 					[823] = "2361-0-0-0",
 					[392] = "0-0-0-0",
-					[824] = "1575-0-0-10000",
+					[824] = "1683-0-0-10000",
 					[994] = "0-0-0-0",
 				},
 			},

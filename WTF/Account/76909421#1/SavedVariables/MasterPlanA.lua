@@ -126,6 +126,24 @@ MasterPlanAG = {
 			["curRes"] = 9160,
 			["class"] = "HUNTER",
 		},
+		["Llamama"] = {
+			["summary"] = {
+				["inProgress"] = {
+					[329] = 1460521153,
+					[195] = 1460524752,
+					[136] = 1460521153,
+					[368] = 1460555352,
+				},
+			},
+			["faction"] = "Alliance",
+			["class"] = "HUNTER",
+			["curRes"] = 759,
+			["lastCacheTime"] = 1460519329,
+		},
+		["Edgelordshue"] = {
+			["class"] = "DEMONHUNTER",
+			["faction"] = "Alliance",
+		},
 		["Yanlery"] = {
 			["lastCacheTime"] = 1470334276,
 			["recruitTime"] = 1470334225,
@@ -159,31 +177,13 @@ MasterPlanAG = {
 			["curRes"] = 9652,
 			["curOil"] = 20,
 		},
-		["Edgelordshue"] = {
-			["class"] = "DEMONHUNTER",
-			["faction"] = "Alliance",
-		},
-		["Retardar"] = {
-			["faction"] = "Alliance",
-			["class"] = "DRUID",
-		},
 		["Shhbbyisok"] = {
 			["faction"] = "Alliance",
 			["class"] = "DEATHKNIGHT",
 		},
-		["Llamama"] = {
-			["summary"] = {
-				["inProgress"] = {
-					[329] = 1460521153,
-					[195] = 1460524752,
-					[136] = 1460521153,
-					[368] = 1460555352,
-				},
-			},
+		["Retardar"] = {
 			["faction"] = "Alliance",
-			["class"] = "HUNTER",
-			["curRes"] = 759,
-			["lastCacheTime"] = 1460519329,
+			["class"] = "DRUID",
 		},
 		["Bruhbies"] = {
 			["class"] = "WARLOCK",
@@ -233,15 +233,15 @@ MasterPlanAG = {
 		["Talthalador"] = {
 			["summary"] = {
 				["inProgress"] = {
-					[362] = 1471564506,
-					[143] = 1471562490,
-					[205] = 1471559107,
+					[141] = 1471582318,
+					[369] = 1471614718,
+					[142] = 1471582319,
 				},
 			},
 			["curOil"] = 650,
 			["class"] = "DEMONHUNTER",
-			["lastCacheTime"] = 1471549700,
-			["curRes"] = 1575,
+			["lastCacheTime"] = 1471578759,
+			["curRes"] = 1683,
 			["faction"] = "Alliance",
 		},
 	},
@@ -426,11 +426,11 @@ MasterPlanAG = {
 				["inProgress"] = {
 					[161] = 1470422370,
 					[375] = 1470452969,
+					[469] = 1470431371,
 					[364] = 1470431371,
-					[163] = 1470419670,
 					[177] = 1470419672,
 					[374] = 1470434969,
-					[469] = 1470431371,
+					[163] = 1470419670,
 				},
 			},
 			["curOil"] = 250,

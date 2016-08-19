@@ -911,15 +911,15 @@ BestInSlotDB = {
 				["xOffset"] = 200,
 				["yOffset"] = -250.000015258789,
 			},
-			["options"] = {
-				["minimapButton"] = false,
-			},
 			["selected"] = {
 				"WoD", -- [1]
 				60200, -- [2]
 				"HFC", -- [3]
-				[5] = 4,
+				[5] = 3,
 				[6] = 63,
+			},
+			["options"] = {
+				["minimapButton"] = false,
 			},
 		},
 	},

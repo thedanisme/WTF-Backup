@@ -192,6 +192,9 @@ PawnCommon = {
 			["UnenchantedColor"] = "7a2496",
 			["IconTexturePath"] = "Interface\\Icons\\ability_demonhunter_spectank",
 			["PerCharacterOptions"] = {
+				["Talthalador-Stormrage"] = {
+					["Visible"] = true,
+				},
 			},
 			["LocalizedName"] = "Demon Hunter: Vengeance",
 			["UpgradesFollowSpecialization"] = true,
@@ -586,9 +589,6 @@ PawnCommon = {
 				["Edgelordshue-Stormrage"] = {
 					["Visible"] = true,
 				},
-				["Talthalador-Stormrage"] = {
-					["Visible"] = true,
-				},
 			},
 			["LocalizedName"] = "Demon Hunter: Havoc",
 			["UpgradesFollowSpecialization"] = true,
@@ -652,6 +652,9 @@ PawnCommon = {
 			["UnenchantedColor"] = "2f95b0",
 			["IconTexturePath"] = "Interface\\Icons\\Spell_Fire_FireBolt02",
 			["PerCharacterOptions"] = {
+				["Dosnutz-Stormrage"] = {
+					["Visible"] = true,
+				},
 				["Kateplusnine-Stormrage"] = {
 					["Visible"] = true,
 				},
@@ -782,9 +785,6 @@ PawnCommon = {
 			["IconTexturePath"] = "Interface\\Icons\\Spell_Frost_FrostBolt02",
 			["PerCharacterOptions"] = {
 				["Squelben-Stormrage"] = {
-					["Visible"] = true,
-				},
-				["Dosnutz-Stormrage"] = {
 					["Visible"] = true,
 				},
 			},

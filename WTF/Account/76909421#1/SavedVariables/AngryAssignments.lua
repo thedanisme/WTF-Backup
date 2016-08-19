@@ -39,6 +39,8 @@ AngryAssign_Pages = {
 		["Contents"] = "{skull}Banish Groups{skull}\n\nHeroic\nG1: All DPS, Ahni\nG2: Tank2, Chozen, Vym, Chaotic",
 	},
 }
+AngryAssign_Categories = {
+}
 AngryAssign_State = {
 	["display"] = {
 		["y"] = -20.0000610351563,

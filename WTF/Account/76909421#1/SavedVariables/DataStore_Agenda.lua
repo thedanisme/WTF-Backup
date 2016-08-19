@@ -104,21 +104,35 @@ DataStore_AgendaDB = {
 				["lastUpdate"] = 1471526972,
 			},
 			["Default.Stormrage.Dosnutz"] = {
-				["lastUpdate"] = 1471564968,
+				["lastUpdate"] = 1471568351,
+				["DungeonIDs"] = {
+					["Hellfire Citadel Normal|635991738"] = "380002|1471584401|0|1",
+				},
 				["LFGDungeons"] = {
-					["986.Count"] = 1,
+					["984.Tyrant Velhari"] = true,
 					["985.Count"] = 3,
-					["985.Mannoroth"] = true,
-					["986.Archimonde"] = true,
-					["985.Xhul'horac"] = true,
 					["985.Fel Lord Zakuun"] = true,
+					["983.Count"] = 3,
+					["986.Count"] = 1,
+					["985.Mannoroth"] = true,
+					["984.Count"] = 3,
+					["985.Xhul'horac"] = true,
+					["986.Archimonde"] = true,
+					["984.Shadow-Lord Iskar"] = true,
+					["984.Socrethar the Eternal"] = true,
+					["983.Gorefiend"] = true,
+					["983.Hellfire High Council"] = true,
+					["983.Kilrogg Deadeye"] = true,
 				},
 			},
 			["Default.Turalyon.Shaneequa"] = {
 				["lastUpdate"] = 1461602628,
 			},
 			["Default.Stormrage.Talthalador"] = {
-				["lastUpdate"] = 1471560343,
+				["DungeonIDs"] = {
+					["Skyreach Mythic|636035409"] = "385277|1471579122|0|0",
+				},
+				["lastUpdate"] = 1471578704,
 				["LFGDungeons"] = {
 					["986.Count"] = 1,
 					["982.Count"] = 3,

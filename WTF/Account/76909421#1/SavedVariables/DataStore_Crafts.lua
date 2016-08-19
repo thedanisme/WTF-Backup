@@ -2081,7 +2081,7 @@ DataStore_CraftsDB = {
 						["Rank"] = 4,
 					},
 				},
-				["lastUpdate"] = 1471564968,
+				["lastUpdate"] = 1471568351,
 			},
 			["Default.Turalyon.Shaneequa"] = {
 				["lastUpdate"] = 1461602628,
@@ -2108,34 +2108,6 @@ DataStore_CraftsDB = {
 						["FullLink"] = "|cffffd000|Htrade:Player-60-0A98990A:158765:185|h[Cooking]|h|r",
 						["MaxRank"] = 700,
 						["Rank"] = 1,
-					},
-					["Jewelcrafting"] = {
-						["Crafts"] = {
-							"1|Jewelry Enhancers", -- [1]
-							682807, -- [2]
-							"1|Jewelry", -- [3]
-							682843, -- [4]
-							682847, -- [5]
-							682851, -- [6]
-							682831, -- [7]
-							682835, -- [8]
-							682839, -- [9]
-							682819, -- [10]
-							682823, -- [11]
-							682827, -- [12]
-							682867, -- [13]
-							682855, -- [14]
-							682871, -- [15]
-							682859, -- [16]
-							682875, -- [17]
-							682863, -- [18]
-							"1|Gems", -- [19]
-							682879, -- [20]
-							682883, -- [21]
-							682887, -- [22]
-							682899, -- [23]
-							682895, -- [24]
-						},
 					},
 					["Engineering"] = {
 						["FullLink"] = "|cffffd000|Htrade:Player-60-0A98990A:158739:202|h[Engineering]|h|r",
@@ -2340,6 +2312,10 @@ DataStore_CraftsDB = {
 						},
 						["Rank"] = 651,
 					},
+					["Fishing"] = {
+						["MaxRank"] = 75,
+						["Rank"] = 1,
+					},
 					["Leatherworking"] = {
 						["FullLink"] = "|cffffd000|Htrade:Player-60-0A98990A:158752:165|h[Leatherworking]|h|r",
 						["Crafts"] = {
@@ -2383,15 +2359,39 @@ DataStore_CraftsDB = {
 					["First Aid"] = {
 						["FullLink"] = "|cffffd000|Htrade:Player-60-0A98990A:158741:129|h[First Aid]|h|r",
 						["MaxRank"] = 700,
-						["Rank"] = 1,
+						["Rank"] = 6,
 					},
-					["Fishing"] = {
-						["MaxRank"] = 75,
-						["Rank"] = 1,
+					["Jewelcrafting"] = {
+						["Crafts"] = {
+							"1|Jewelry Enhancers", -- [1]
+							682807, -- [2]
+							"1|Jewelry", -- [3]
+							682843, -- [4]
+							682847, -- [5]
+							682851, -- [6]
+							682831, -- [7]
+							682835, -- [8]
+							682839, -- [9]
+							682819, -- [10]
+							682823, -- [11]
+							682827, -- [12]
+							682867, -- [13]
+							682855, -- [14]
+							682871, -- [15]
+							682859, -- [16]
+							682875, -- [17]
+							682863, -- [18]
+							"1|Gems", -- [19]
+							682879, -- [20]
+							682883, -- [21]
+							682887, -- [22]
+							682899, -- [23]
+							682895, -- [24]
+						},
 					},
 				},
 				["Prof2"] = "Engineering",
-				["lastUpdate"] = 1471560388,
+				["lastUpdate"] = 1471578893,
 				["Prof1"] = "Leatherworking",
 			},
 		},

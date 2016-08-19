@@ -1,5 +1,6 @@
 
 IskarAssistDB = {
+	["GotLegionHeadsUp"] = true,
 	["ExportedConfig"] = true,
 	["profileKeys"] = {
 		["Callil - Turalyon"] = "Default",
@@ -8,6 +9,7 @@ IskarAssistDB = {
 		["Squelben - Stormrage"] = "Default",
 		["Iphone - Bloodhoof"] = "Default",
 		["Bruhbies - Stormrage"] = "Default",
+		["Dosnutz - Stormrage"] = "Default",
 		["Talthalador - Stormrage"] = "Default",
 		["Rosabria - Sargeras"] = "Default",
 		["Horny - Bloodhoof"] = "Default",
@@ -46,21 +48,22 @@ IskarAssistDB = {
 }
 RADataBase = {
 	["profileKeys"] = {
-		["Talthalador - Stormrage"] = "Default",
 		["Callil - Turalyon"] = "Default",
-		["Brobies - Stormrage"] = "Default",
-		["Rosabria - Sargeras"] = "Default",
+		["Talthalador - Stormrage"] = "Default",
+		["Whyfy - Stormrage"] = "Default",
 		["Bruhbies - Stormrage"] = "Default",
+		["Emmarosa - Stormrage"] = "Default",
+		["Arando - Bloodhoof"] = "Default",
 		["Danoh - Stormrage"] = "Default",
 		["Aranduh - Bloodhoof"] = "Default",
 		["Squelben - Stormrage"] = "Default",
-		["Arando - Bloodhoof"] = "Default",
 		["Yanlery - Stormrage"] = "Default",
 		["Horny - Bloodhoof"] = "Default",
+		["Rosabria - Sargeras"] = "Default",
 		["Dalgrens - Bloodhoof"] = "Default",
 		["Beer - Bloodhoof"] = "Default",
-		["Emmarosa - Stormrage"] = "Default",
-		["Whyfy - Stormrage"] = "Default",
+		["Brobies - Stormrage"] = "Default",
+		["Dosnutz - Stormrage"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -174,6 +177,7 @@ RADataBase = {
 				["Raid Assignments"] = {
 					["notes"] = {
 					},
+					["text_size"] = 12,
 					["NotepadScreenFrame"] = {
 						["position"] = {
 							["y"] = 0,
@@ -181,7 +185,6 @@ RADataBase = {
 						},
 						["IsLocked"] = false,
 					},
-					["menu_priority"] = 20,
 					["currently_shown"] = false,
 					["hide_on_combat"] = false,
 					["auto_complete"] = true,
@@ -205,7 +208,7 @@ RADataBase = {
 						},
 						["IsLocked"] = false,
 					},
-					["text_size"] = 12,
+					["menu_priority"] = 20,
 				},
 				["Player Check"] = {
 					["RAPlayerCheckMainFrame"] = {
@@ -294,8 +297,8 @@ RADataBase = {
 						["right_side_debuffs"] = true,
 						["MainPanel"] = {
 							["position"] = {
-								["y"] = 127.999572753906,
-								["x"] = -561,
+								["y"] = -256.000366210938,
+								["x"] = -425.000061035156,
 							},
 							["IsLocked"] = true,
 						},
@@ -308,7 +311,7 @@ RADataBase = {
 						["barwidth"] = 100,
 						["debuff_phantasmal_winds"] = true,
 						["debuff_fel_bomb"] = false,
-						["MainPanel_strata"] = "BACKGROUND",
+						["MainPanel_strata"] = "HIGH",
 						["debuff_phantasmal_bomb"] = false,
 						["dispel_ready"] = false,
 						["barheight"] = 18,
