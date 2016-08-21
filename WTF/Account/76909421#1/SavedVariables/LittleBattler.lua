@@ -1,3 +1,0 @@
-
-LittleBattlerData = nil
-LittleBattlerSettings = nil

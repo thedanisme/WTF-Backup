@@ -1,2 +1,0 @@
-
-LittleBattlerCharSettings = nil
