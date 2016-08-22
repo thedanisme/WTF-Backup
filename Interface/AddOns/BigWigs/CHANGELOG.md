@@ -1,8 +1,11 @@
 # BigWigs
 
-## [v7.3-13-g1984c69](https://github.com/BigWigsMods/BigWigs/tree/1984c699e9ece1c348e84bddb01f1ac5dc41ec5c) (2016-08-19) [](#top)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v7.3...1984c699e9ece1c348e84bddb01f1ac5dc41ec5c)
+## [v7.3-16-gb10813e](https://github.com/BigWigsMods/BigWigs/tree/b10813e2bc8b1a48af25d9d1afb4a90b4e911fa5) (2016-08-22) [](#top)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v7.3...b10813e2bc8b1a48af25d9d1afb4a90b4e911fa5)
 
+-   Register RAID_INSTANCE_WELCOME as an additional trigger for checking if we should load content to (finally) fix Onyxia's Lair loading.  
+-   update integrated plugins list  
+-   remove unnecessary travis entry  
 -   arg naming tweaks  
 -   Clarify :SpellName in the docs  
 -   *Eye twitch*  

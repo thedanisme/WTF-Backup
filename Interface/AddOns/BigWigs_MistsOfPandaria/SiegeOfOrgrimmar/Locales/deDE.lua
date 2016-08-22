@@ -1,7 +1,7 @@
 local L = BigWigs:NewBossLocale("The Fallen Protectors", "deDE")
 if not L then return end
 if L then
-
+--@localization(locale="deDE", namespace="SiegeOfOrgrimmar/TheFallenProtectors", format="lua_additive_table", handle-unlocalized="ignore")@
 
 	L.custom_off_bane_marks = "Schattenwort: Unheil markieren"
 	L.custom_off_bane_marks_desc = "Um bei der Einteilung zum Bannen zu helfen, werden die anfangs von Schattenwort: Unheil betroffenen Spieler mit {rt1}{rt2}{rt3}{rt4}{rt5} markiert (in dieser Reihenfolge, vielleicht werden nicht alle Symbole genutzt), benötigt Leiter oder Assistent."
@@ -9,12 +9,12 @@ end
 
 L = BigWigs:NewBossLocale("Norushen", "deDE")
 if L then
-
+--@localization(locale="deDE", namespace="SiegeOfOrgrimmar/Norushen", format="lua_additive_table", handle-unlocalized="ignore")@
 end
 
 L = BigWigs:NewBossLocale("Sha of Pride", "deDE")
 if L then
-
+--@localization(locale="deDE", namespace="SiegeOfOrgrimmar/ShaOfPride", format="lua_additive_table", handle-unlocalized="ignore")@
 
 	L.custom_off_titan_mark = "Gabe der Titanen markieren"
 	L.custom_off_titan_mark_desc = "Markiert Spieler, die von Gabe der Titanen betroffen sind, mit {rt1}{rt2}{rt3}{rt4}{rt5}{rt6}, benötigt Leiter oder Assistent.\n|cFFFF0000Um Konflikte beim Markieren zu vermeiden, sollte lediglich 1 Person im Raid diese Option aktivieren.|r"
@@ -25,7 +25,7 @@ end
 
 L = BigWigs:NewBossLocale("Galakras", "deDE")
 if L then
-
+--@localization(locale="deDE", namespace="SiegeOfOrgrimmar/Galakras", format="lua_additive_table", handle-unlocalized="ignore")@
 
 	L.custom_off_shaman_marker = "Schamanen markieren"
 	L.custom_off_shaman_marker_desc = "Um bei der Einteilung zum Unterbrechen zu helfen, werden die Gezeitenschamanen des Drachenmals mit {rt1}{rt2}{rt3}{rt4}{rt5} markiert, benötigt Leiter oder Assistent.\n|cFFFF0000Um Konflikte beim Markieren zu vermeiden, sollte lediglich 1 Person im Raid diese Option aktivieren.|r\n|cFFADFF2FTIPP: Wenn Du diese Option aktivierst, ist die schnellste Methode zum Markieren das zügige Bewegen des Mauszeigers über die Schamanen.|r"
@@ -39,7 +39,7 @@ end
 
 L = BigWigs:NewBossLocale("Kor'kron Dark Shaman", "deDE")
 if L then
-
+--@localization(locale="deDE", namespace="SiegeOfOrgrimmar/KorkronDarkShaman", format="lua_additive_table", handle-unlocalized="ignore")@
 
 	L.custom_off_mist_marks = "Toxischer Nebel markieren"
 	L.custom_off_mist_marks_desc = "Um bei der Einteilung zum Heilen zu helfen, werden Spieler mit Toxischem Nebel mit {rt1}{rt2}{rt3}{rt4}{rt5} markiert, benötigt Leiter oder Assistent.\n|cFFFF0000Um Konflikte beim Markieren zu vermeiden, sollte lediglich 1 Person im Raid diese Option aktivieren.|r"
@@ -78,7 +78,7 @@ end
 
 L = BigWigs:NewBossLocale("Spoils of Pandaria", "deDE")
 if L then
-
+--@localization(locale="deDE", namespace="SiegeOfOrgrimmar/SpoilsOfPandaria", format="lua_additive_table", handle-unlocalized="ignore")@
 
 	L.crates = "Kisten"
 	L.crates_desc = "Nachrichten, für wie viel Energie du noch brauchst und wie viele große/mittlere/kleine Kisten das sind."
@@ -88,12 +88,12 @@ end
 
 L = BigWigs:NewBossLocale("Thok the Bloodthirsty", "deDE")
 if L then
-
+--@localization(locale="deDE", namespace="SiegeOfOrgrimmar/ThokTheBloodthirsty", format="lua_additive_table", handle-unlocalized="ignore")@
 end
 
 L = BigWigs:NewBossLocale("Siegecrafter Blackfuse", "deDE")
 if L then
-
+--@localization(locale="deDE", namespace="SiegeOfOrgrimmar/SiegecrafterBlackfuse", format="lua_additive_table", handle-unlocalized="ignore")@
 
 	L.custom_off_mine_marker = "Minen markieren"
 	L.custom_off_mine_marker_desc = "Markiert die Minen zum Einteilen der Betäubungen. (Alle Zeichen werden genutzt)"
@@ -128,7 +128,7 @@ end
 
 L = BigWigs:NewBossLocale("Garrosh Hellscream", "deDE")
 if L then
-
+--@localization(locale="deDE", namespace="SiegeOfOrgrimmar/GarroshHellscream", format="lua_additive_table", handle-unlocalized="ignore")@
 
 	L.custom_off_shaman_marker = "Scharfseher markieren"
 	L.custom_off_shaman_marker_desc = "Um bei der Einteilung zum Unterbrechen zu helfen, werden die Scharfseherwolfsreiter mit {rt1}{rt2}{rt3}{rt4}{rt5}{rt6}{rt7} markiert, benötigt Leiter oder Assistent.\n|cFFFF0000Um Konflikte beim Markieren zu vermeiden, sollte lediglich 1 Person im Raid diese Option aktivieren.|r\n|cFFADFF2FTIPP: Wenn Du diese Option aktivierst, ist die schnellste Methode zum Markieren das zügige Bewegen des Mauszeigers über die Scharfseher.|r"

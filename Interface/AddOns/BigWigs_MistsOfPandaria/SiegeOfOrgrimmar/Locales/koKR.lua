@@ -1,7 +1,7 @@
 local L = BigWigs:NewBossLocale("The Fallen Protectors", "koKR")
 if not L then return end
 if L then
-
+--@localization(locale="koKR", namespace="SiegeOfOrgrimmar/TheFallenProtectors", format="lua_additive_table", handle-unlocalized="ignore")@
 
 	L.custom_off_bane_marks = "어둠의 권능: 파멸 징표 설정"
 	L.custom_off_bane_marks_desc = "해제를 돕기 위해 어둠의 권능: 파멸을 가진 플레이어들을 {rt1}{rt2}{rt3}{rt4}{rt5} 징표로 표시합니다. 공격대장이거나 권한이 필요합니다."
@@ -9,12 +9,12 @@ end
 
 L = BigWigs:NewBossLocale("Norushen", "koKR")
 if L then
-
+--@localization(locale="koKR", namespace="SiegeOfOrgrimmar/Norushen", format="lua_additive_table", handle-unlocalized="ignore")@
 end
 
 L = BigWigs:NewBossLocale("Sha of Pride", "koKR")
 if L then
-
+--@localization(locale="koKR", namespace="SiegeOfOrgrimmar/ShaOfPride", format="lua_additive_table", handle-unlocalized="ignore")@
 
 	L.custom_off_titan_mark = "티탄의 선물 표시"
 	L.custom_off_titan_mark_desc = "티탄의 선물 걸린 플레이어를 파악하기 쉽게하기 위해, 티탄의 선물이 걸린 플레이어를 {rt1}{rt2}{rt3}{rt4}{rt5}{rt6} 마크로 표시합니다. 공격대장이거나 권한이 필요합니다."
@@ -25,7 +25,7 @@ end
 
 L = BigWigs:NewBossLocale("Galakras", "koKR")
 if L then
-
+--@localization(locale="koKR", namespace="SiegeOfOrgrimmar/Galakras", format="lua_additive_table", handle-unlocalized="ignore")@
 
 	L.custom_off_shaman_marker = "파도주술사 징표 설정"
 	L.custom_off_shaman_marker_desc = "차단하는 것을 돕기 위해, 용아귀부족 파라주술사를 {rt1}{rt2}{rt3}{rt4}{rt5} 마크로 표시합니다. 공격대장이거나 권한이 필요합니다."
@@ -39,7 +39,7 @@ end
 
 L = BigWigs:NewBossLocale("Kor'kron Dark Shaman", "koKR")
 if L then
-
+--@localization(locale="koKR", namespace="SiegeOfOrgrimmar/KorkronDarkShaman", format="lua_additive_table", handle-unlocalized="ignore")@
 
 	L.custom_off_mist_marks = "독성 안개 징표 설정"
 	L.custom_off_mist_marks_desc = "힐을 돕기 위해, 독성 안개에 걸린 플레이어를 {rt1}{rt2}{rt3}{rt4}{rt5} 마크로 표시합니다. 공격대장이거나 권한이 필요합니다."
@@ -78,7 +78,7 @@ end
 
 L = BigWigs:NewBossLocale("Spoils of Pandaria", "koKR")
 if L then
-
+--@localization(locale="koKR", namespace="SiegeOfOrgrimmar/SpoilsOfPandaria", format="lua_additive_table", handle-unlocalized="ignore")@
 
 	L.crates = "상자"
 	L.crates_desc = "종료까지 남은 대중소 상자에 대한 메세지"
@@ -88,12 +88,12 @@ end
 
 L = BigWigs:NewBossLocale("Thok the Bloodthirsty", "koKR")
 if L then
-
+--@localization(locale="koKR", namespace="SiegeOfOrgrimmar/ThokTheBloodthirsty", format="lua_additive_table", handle-unlocalized="ignore")@
 end
 
 L = BigWigs:NewBossLocale("Siegecrafter Blackfuse", "koKR")
 if L then
-
+--@localization(locale="koKR", namespace="SiegeOfOrgrimmar/SiegecrafterBlackfuse", format="lua_additive_table", handle-unlocalized="ignore")@
 
 	L.custom_off_mine_marker = "지뢰 징표 설정"
 	L.custom_off_mine_marker_desc = "스턴 임무를 맡은 플레이어를 위해 지뢰에 징표를 찍습니다. (모든 징표가 사용됩니다)"
@@ -125,7 +125,7 @@ end
 
 L = BigWigs:NewBossLocale("Garrosh Hellscream", "koKR")
 if L then
-
+--@localization(locale="koKR", namespace="SiegeOfOrgrimmar/GarroshHellscream", format="lua_additive_table", handle-unlocalized="ignore")@
 
 	L.custom_off_shaman_marker = "선견자 표시"
 	L.custom_off_shaman_marker_desc = "차단을 돕기 위해, 선견자 늑대 기수를 {rt1}{rt2}{rt3}{rt4}{rt5}{rt6}{rt7} 마크로 표시합니다. 공격대장이거나 권한이 필요합니다. \n|cFFFF0000혼선을 빚는 것을 방지하기 위하여, 오직 공대원 중 한 사람만이 이 옵션을 켜야합니다.|r \n|cFFADFF2F팁: 만약 공대에서 당신이 이 옵션을 키기로 했다면, 빠르게 선견자에게 마우스를 대는 것이 마킹을 하는 가장 빠른 방법입니다.|r"

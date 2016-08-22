@@ -1,7 +1,7 @@
 local L = BigWigs:NewBossLocale("The Fallen Protectors", "frFR")
 if not L then return end
 if L then
-
+--@localization(locale="frFR", namespace="SiegeOfOrgrimmar/TheFallenProtectors", format="lua_additive_table", handle-unlocalized="ignore")@
 
 	L.custom_off_bane_marks = "Marquage Mot de l'ombre : Plaie"
 	L.custom_off_bane_marks_desc = "Afin d'aider à l'attribution des dissipations, marque les personnes initialement touchées par Mot de l'ombre : Plaie avec {rt1}{rt2}{rt3}{rt4}{rt5} (dans cet ordre, il se peut que toutes les marques ne soient pas utilisées). Nécessite d'être assistant ou chef de raid."
@@ -9,12 +9,12 @@ end
 
 L = BigWigs:NewBossLocale("Norushen", "frFR")
 if L then
-
+--@localization(locale="frFR", namespace="SiegeOfOrgrimmar/Norushen", format="lua_additive_table", handle-unlocalized="ignore")@
 end
 
 L = BigWigs:NewBossLocale("Sha of Pride", "frFR")
 if L then
-
+--@localization(locale="frFR", namespace="SiegeOfOrgrimmar/ShaOfPride", format="lua_additive_table", handle-unlocalized="ignore")@
 
 	L.custom_off_titan_mark = "Marquage Don des titans"
 	L.custom_off_titan_mark_desc = "Marque les joueurs sous l'effet de Don des titans avec {rt1}{rt2}{rt3}{rt4}{rt5}{rt6}. Nécessite d'être assistant ou chef de raid.\n|cFFFF0000Seule 1 personne du raid doit activer ceci afin d'éviter les conflits de marquage.|r"
@@ -25,7 +25,7 @@ end
 
 L = BigWigs:NewBossLocale("Galakras", "frFR")
 if L then
-
+--@localization(locale="frFR", namespace="SiegeOfOrgrimmar/Galakras", format="lua_additive_table", handle-unlocalized="ignore")@
 
 	L.custom_off_shaman_marker = "Marquage Chaman des marées"
 	L.custom_off_shaman_marker_desc = "Afin d'aider à l'attribution des interruptions, marque les Chamans des marées gueule-de-dragon avec {rt1}{rt2}{rt3}{rt4}{rt5}. Nécessite d'être assistant ou chef de raid.\n|cFFFF0000Seule 1 personne du raid doit activer ceci afin d'éviter les conflits de marquage.|r\n|cFFADFF2ASTUCE : si le raid a décidé que c'est vous qui devez l'activer, survoler rapidement tous les chamans est le moyen le plus rapide de les marquer.|r"
@@ -39,7 +39,7 @@ end
 
 L = BigWigs:NewBossLocale("Kor'kron Dark Shaman", "frFR")
 if L then
-
+--@localization(locale="frFR", namespace="SiegeOfOrgrimmar/KorkronDarkShaman", format="lua_additive_table", handle-unlocalized="ignore")@
 
 	L.custom_off_mist_marks = "Marquage Brume toxique"
 	L.custom_off_mist_marks_desc = "Afin d'aider à l'attribution des soins, marque les joueurs subissant Brume toxique avec {rt1}{rt2}{rt3}{rt4}{rt5}. Nécessite d'être assistant ou chef de raid.\n|cFFFF0000Seule 1 personne du raid doit activer ceci afin d'éviter les conflits de marquage.|r"
@@ -78,7 +78,7 @@ end
 
 L = BigWigs:NewBossLocale("Spoils of Pandaria", "frFR")
 if L then
-
+--@localization(locale="frFR", namespace="SiegeOfOrgrimmar/SpoilsOfPandaria", format="lua_additive_table", handle-unlocalized="ignore")@
 
 	L.crates = "Caisses"
 	L.crates_desc = "Messages indiquant combien d'énergie titanesque vous avez encore besoin et combien de grandes/moyennes/petites caisses sont nécessaires pour y arriver."
@@ -88,12 +88,12 @@ end
 
 L = BigWigs:NewBossLocale("Thok the Bloodthirsty", "frFR")
 if L then
-
+--@localization(locale="frFR", namespace="SiegeOfOrgrimmar/ThokTheBloodthirsty", format="lua_additive_table", handle-unlocalized="ignore")@
 end
 
 L = BigWigs:NewBossLocale("Siegecrafter Blackfuse", "frFR")
 if L then
-
+--@localization(locale="frFR", namespace="SiegeOfOrgrimmar/SiegecrafterBlackfuse", format="lua_additive_table", handle-unlocalized="ignore")@
 
 	L.custom_off_mine_marker = "Marquage Mine"
 	L.custom_off_mine_marker_desc = "Afin d'aider à l'attribution des étourdissements, marque les mines avec toutes les marques disponibles."
@@ -128,7 +128,7 @@ end
 
 L = BigWigs:NewBossLocale("Garrosh Hellscream", "frFR")
 if L then
-
+--@localization(locale="frFR", namespace="SiegeOfOrgrimmar/GarroshHellscream", format="lua_additive_table", handle-unlocalized="ignore")@
 
 	L.custom_off_shaman_marker = "Marquage Chevaucheur de loup long-voyant"
 	L.custom_off_shaman_marker_desc = "Afin d'aider à l'attribution des interruptions, marque les Chevaucheurs de loup long-voyant avec {rt1}{rt2}{rt3}{rt4}{rt5}{rt6}{rt7} (dans cet ordre)(il se peut que toutes les marques ne soient pas utilisées). Nécessite d'être assistant ou chef de raid."

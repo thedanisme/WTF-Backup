@@ -1,7 +1,7 @@
 local L = BigWigs:NewBossLocale("The Fallen Protectors", "zhTW")
 if not L then return end
 if L then
-
+--@localization(locale="zhTW", namespace="SiegeOfOrgrimmar/TheFallenProtectors", format="lua_additive_table", handle-unlocalized="ignore")@
 
 	L.custom_off_bane_marks = "暗言術:禍 標記"
 	L.custom_off_bane_marks_desc = "幫助驅散分配，給最初受到暗言術:禍的玩家使用{rt1}{rt2}{rt3}{rt4}{rt5}進行標記 (依照此順序標記，不代表所有都會用到)，需要權限。"
@@ -9,12 +9,12 @@ end
 
 L = BigWigs:NewBossLocale("Norushen", "zhTW")
 if L then
-
+--@localization(locale="zhTW", namespace="SiegeOfOrgrimmar/Norushen", format="lua_additive_table", handle-unlocalized="ignore")@
 end
 
 L = BigWigs:NewBossLocale("Sha of Pride", "zhTW")
 if L then
-
+--@localization(locale="zhTW", namespace="SiegeOfOrgrimmar/ShaOfPride", format="lua_additive_table", handle-unlocalized="ignore")@
 
 	L.custom_off_titan_mark = "泰坦之賜標記"
 	L.custom_off_titan_mark_desc = "將受到泰坦之賜的玩家使用{rt1}{rt2}{rt3}{rt4}{rt5}{rt6}標記，需要權限。\n|cFFFF0000團隊中只能有一個玩家啟用此選項以避免標記衝突。|r"
@@ -25,7 +25,7 @@ end
 
 L = BigWigs:NewBossLocale("Galakras", "zhTW")
 if L then
-
+--@localization(locale="zhTW", namespace="SiegeOfOrgrimmar/Galakras", format="lua_additive_table", handle-unlocalized="ignore")@
 
 	L.custom_off_shaman_marker = "薩滿標記"
 	L.custom_off_shaman_marker_desc = "To help interrupt assignments, mark the Dragonmaw Tidal Shamans with {rt1}{rt2}{rt3}{rt4}{rt5}, requires promoted or leader.\n|cFFFF0000Only 1 person in the raid should have this enabled to prevent marking conflicts.|r\n|cFFADFF2FTIP: If the raid has chosen you to turn this on, quickly mousing over the shamans is the fastest way to mark them.|r"
@@ -39,7 +39,7 @@ end
 
 L = BigWigs:NewBossLocale("Kor'kron Dark Shaman", "zhTW")
 if L then
-
+--@localization(locale="zhTW", namespace="SiegeOfOrgrimmar/KorkronDarkShaman", format="lua_additive_table", handle-unlocalized="ignore")@
 
 	L.custom_off_mist_marks = "Toxic Mist marker"
 	L.custom_off_mist_marks_desc = "To help healing assignments, mark the people who have Toxic Mist on them with {rt1}{rt2}{rt3}{rt4}{rt5}, requires promoted or leader.\n|cFFFF0000Only 1 person in the raid should have this enabled to prevent marking conflicts.|r"
@@ -78,7 +78,7 @@ end
 
 L = BigWigs:NewBossLocale("Spoils of Pandaria", "zhTW")
 if L then
-
+--@localization(locale="zhTW", namespace="SiegeOfOrgrimmar/SpoilsOfPandaria", format="lua_additive_table", handle-unlocalized="ignore")@
 
 	--L.crates = "Crates"
 	--L.crates_desc = "Messages for how much power you still need and how many large/medium/small crates it will take."
@@ -88,12 +88,12 @@ end
 
 L = BigWigs:NewBossLocale("Thok the Bloodthirsty", "zhTW")
 if L then
-
+--@localization(locale="zhTW", namespace="SiegeOfOrgrimmar/ThokTheBloodthirsty", format="lua_additive_table", handle-unlocalized="ignore")@
 end
 
 L = BigWigs:NewBossLocale("Siegecrafter Blackfuse", "zhTW")
 if L then
-
+--@localization(locale="zhTW", namespace="SiegeOfOrgrimmar/SiegecrafterBlackfuse", format="lua_additive_table", handle-unlocalized="ignore")@
 
 	L.custom_off_mine_marker = "地雷標記"
 	--L.custom_off_mine_marker_desc = "Mark the mines for specific stun assignments. (All the marks are used)"
@@ -128,7 +128,7 @@ end
 
 L = BigWigs:NewBossLocale("Garrosh Hellscream", "zhTW")
 if L then
-
+--@localization(locale="zhTW", namespace="SiegeOfOrgrimmar/GarroshHellscream", format="lua_additive_table", handle-unlocalized="ignore")@
 
 	L.custom_off_shaman_marker = "先知標記"
 	--L.custom_off_shaman_marker_desc = "To help interrupt assignments, mark the Farseer Wolf Rider with {rt1}{rt2}{rt3}{rt4}{rt5}{rt6}{rt7}, requires promoted or leader.\n|cFFFF0000Only 1 person in the raid should have this enabled to prevent marking conflicts.|r\n|cFFADFF2FTIP: If the raid has chosen you to turn this on, quickly mousing over the farseers is the fastest way to mark them.|r"
