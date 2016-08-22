@@ -10,9 +10,10 @@ DataStoreDB = {
 		["Titte - Turalyon"] = "Titte - Turalyon",
 		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
 		["Dosnutz - Stormrage"] = "Dosnutz - Stormrage",
-		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
+		["Callil - Turalyon"] = "Callil - Turalyon",
+		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
-		["Brobies - Stormrage"] = "Brobies - Stormrage",
+		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
 		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
 		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
@@ -21,55 +22,60 @@ DataStoreDB = {
 		["Edgelordshue - Stormrage"] = "Edgelordshue - Stormrage",
 		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
 		["Shhbbyisok - Stormrage"] = "Shhbbyisok - Stormrage",
-		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
-		["Callil - Turalyon"] = "Callil - Turalyon",
+		["Brobies - Stormrage"] = "Brobies - Stormrage",
+		["Shamadan - Stormrage"] = "Shamadan - Stormrage",
 	},
 	["global"] = {
 		["Guilds"] = {
 			["Default.Stormreaver.Karma Horde"] = {
 				["faction"] = "Horde",
 			},
-			["Default.Stormrage.Horizon"] = {
-				["faction"] = "Alliance",
-			},
 			["Default.Turalyon.Viginti"] = {
 				["faction"] = "Horde",
+			},
+			["Default.Stormrage.Horizon"] = {
+				["faction"] = "Alliance",
 			},
 		},
 		["Version"] = 1,
 		["Characters"] = {
 			["Default.Stormreaver.Ranidan"] = {
-				["faction"] = "Horde",
 				["guildName"] = "Karma Horde",
+				["faction"] = "Horde",
 			},
 			["Default.Stormrage.Emmarosa"] = {
-				["faction"] = "Alliance",
 				["guildName"] = "Horizon",
+				["faction"] = "Alliance",
 			},
 			["Default.Bloodhoof.Arando"] = {
 				["faction"] = "Horde",
 			},
-			["Default.Bloodhoof.Dalgrens"] = {
-				["faction"] = "Horde",
-			},
 			["Default.Stormrage.Talthalador"] = {
+				["guildName"] = "Horizon",
+				["faction"] = "Alliance",
+			},
+			["Default.Turalyon.Shaneequa"] = {
+				["faction"] = "Horde",
+				["guildName"] = "Viginti",
+			},
+			["Default.Stormrage.Brobies"] = {
 				["faction"] = "Alliance",
 				["guildName"] = "Horizon",
 			},
-			["Default.Stormrage.Kateplusnine"] = {
+			["Default.Turalyon.Callil"] = {
 				["faction"] = "Alliance",
 			},
-			["Default.Turalyon.Skratch"] = {
-				["faction"] = "Horde",
-				["guildName"] = "Viginti",
+			["Default.Stormrage.Danoh"] = {
+				["guildName"] = "Horizon",
+				["faction"] = "Alliance",
 			},
 			["Default.Turalyon.Knutts"] = {
-				["faction"] = "Horde",
 				["guildName"] = "Viginti",
+				["faction"] = "Horde",
 			},
 			["Default.Stormrage.Shhbbyisok"] = {
-				["faction"] = "Alliance",
 				["guildName"] = "Horizon",
+				["faction"] = "Alliance",
 			},
 			["Default.Turalyon.Pryahprism"] = {
 				["faction"] = "Horde",
@@ -78,50 +84,48 @@ DataStoreDB = {
 				["faction"] = "Alliance",
 			},
 			["Default.Stormrage.Yanlery"] = {
+				["faction"] = "Alliance",
 				["guildName"] = "Horizon",
-				["faction"] = "Alliance",
 			},
-			["Default.Turalyon.Callil"] = {
-				["faction"] = "Alliance",
+			["Default.Turalyon.Skratch"] = {
+				["guildName"] = "Viginti",
+				["faction"] = "Horde",
 			},
-			["Default.Stormrage.Ershirley"] = {
-				["faction"] = "Alliance",
+			["Default.Stormrage.Shamadan"] = {
+				["faction"] = "Neutral",
 			},
 			["Default.Turalyon.Titte"] = {
-				["faction"] = "Horde",
-				["guildName"] = "Viginti",
-			},
-			["Default.Turalyon.Lackteight"] = {
 				["guildName"] = "Viginti",
 				["faction"] = "Horde",
 			},
 			["Default.Stormrage.Squelben"] = {
 				["faction"] = "Alliance",
 			},
-			["Default.Stormrage.Whyfy"] = {
-				["faction"] = "Alliance",
-				["guildName"] = "Horizon",
+			["Default.Turalyon.Lackteight"] = {
+				["faction"] = "Horde",
+				["guildName"] = "Viginti",
 			},
-			["Default.Stormrage.Danoh"] = {
-				["faction"] = "Alliance",
+			["Default.Stormrage.Whyfy"] = {
 				["guildName"] = "Horizon",
+				["faction"] = "Alliance",
+			},
+			["Default.Stormrage.Ershirley"] = {
+				["faction"] = "Alliance",
 			},
 			["Default.Stormrage.Dosnutz"] = {
-				["faction"] = "Alliance",
 				["guildName"] = "Horizon",
+				["faction"] = "Alliance",
 			},
-			["Default.Turalyon.Shaneequa"] = {
-				["guildName"] = "Viginti",
+			["Default.Stormrage.Kateplusnine"] = {
+				["faction"] = "Alliance",
+			},
+			["Default.Bloodhoof.Dalgrens"] = {
 				["faction"] = "Horde",
-			},
-			["Default.Stormrage.Brobies"] = {
-				["guildName"] = "Horizon",
-				["faction"] = "Alliance",
 			},
 		},
 		["ShortToLongRealmNames"] = {
-			["Turalyon"] = "Turalyon",
 			["Stormrage"] = "Stormrage",
+			["Turalyon"] = "Turalyon",
 			["Bloodhoof"] = "Bloodhoof",
 			["Stormreaver"] = "Stormreaver",
 		},

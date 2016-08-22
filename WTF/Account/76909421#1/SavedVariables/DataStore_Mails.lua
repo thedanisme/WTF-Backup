@@ -10,9 +10,10 @@ DataStore_MailsDB = {
 		["Titte - Turalyon"] = "Titte - Turalyon",
 		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
 		["Dosnutz - Stormrage"] = "Dosnutz - Stormrage",
-		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
+		["Callil - Turalyon"] = "Callil - Turalyon",
+		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
-		["Brobies - Stormrage"] = "Brobies - Stormrage",
+		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
 		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
 		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
@@ -21,8 +22,8 @@ DataStore_MailsDB = {
 		["Edgelordshue - Stormrage"] = "Edgelordshue - Stormrage",
 		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
 		["Shhbbyisok - Stormrage"] = "Shhbbyisok - Stormrage",
-		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
-		["Callil - Turalyon"] = "Callil - Turalyon",
+		["Brobies - Stormrage"] = "Brobies - Stormrage",
+		["Shamadan - Stormrage"] = "Shamadan - Stormrage",
 	},
 	["global"] = {
 		["Characters"] = {
@@ -42,10 +43,6 @@ DataStore_MailsDB = {
 				["lastUpdate"] = 1471577440,
 				["lastVisitDate"] = "2016/08/18 23:30",
 			},
-			["Default.Turalyon.Skratch"] = {
-				["lastUpdate"] = 1469905437,
-				["lastVisitDate"] = "2016/07/30 15:03",
-			},
 			["Default.Turalyon.Knutts"] = {
 				["lastUpdate"] = 1469907685,
 				["lastVisitDate"] = "2016/07/30 15:41",
@@ -62,13 +59,13 @@ DataStore_MailsDB = {
 				["lastUpdate"] = 1471051041,
 				["Mails"] = {
 					{
-						["lastCheck"] = 1471051041,
+						["icon"] = 134327,
 						["sender"] = "Rolosh Wavechaser",
 						["subject"] = "Charting a Course - Horde",
 						["returned"] = false,
 						["money"] = 0,
 						["text"] = "Admiral,\r\n\r\nYou have proven yourself to be an excellent commander of our fleet.  Take this gift as a token of my appreciation.\r\n\r\nWear it proudly.\r\n\r\n--Rolosh Wavechaser",
-						["icon"] = 134327,
+						["lastCheck"] = 1471051041,
 						["daysLeft"] = 29.9995250701904,
 					}, -- [1]
 				},
@@ -82,9 +79,13 @@ DataStore_MailsDB = {
 				["lastUpdate"] = 1471190717,
 				["lastVisitDate"] = "2016/08/14 12:05",
 			},
-			["Default.Stormrage.Brobies"] = {
-				["lastUpdate"] = 1471635486,
-				["lastVisitDate"] = "2016/08/19 15:38",
+			["Default.Turalyon.Skratch"] = {
+				["lastUpdate"] = 1469905437,
+				["lastVisitDate"] = "2016/07/30 15:03",
+			},
+			["Default.Turalyon.Titte"] = {
+				["lastUpdate"] = 1470430851,
+				["lastVisitDate"] = "2016/08/05 17:00",
 			},
 			["Default.Stormrage.Danoh"] = {
 				["lastUpdate"] = 1471635943,
@@ -99,12 +100,16 @@ DataStore_MailsDB = {
 				["lastVisitDate"] = "2016/07/22 03:53",
 			},
 			["Default.Stormrage.Dosnutz"] = {
-				["lastUpdate"] = 1471648003,
-				["lastVisitDate"] = "2016/08/19 19:06",
+				["lastUpdate"] = 1471792785,
+				["lastVisitDate"] = "2016/08/21 11:19",
 			},
-			["Default.Turalyon.Titte"] = {
-				["lastUpdate"] = 1470430851,
-				["lastVisitDate"] = "2016/08/05 17:00",
+			["Default.Turalyon.Shaneequa"] = {
+				["lastUpdate"] = 1471798791,
+				["lastVisitDate"] = "2016/08/21 12:59",
+			},
+			["Default.Stormrage.Brobies"] = {
+				["lastUpdate"] = 1471635486,
+				["lastVisitDate"] = "2016/08/19 15:38",
 			},
 		},
 	},

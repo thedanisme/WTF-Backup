@@ -1,6 +1,7 @@
 
 BadPetDB = {
 	["profileKeys"] = {
+		["Shamadan - Stormrage"] = "Default",
 		["Callil - Sargeras"] = "Default",
 		["Aranduh - Bloodhoof"] = "Default",
 		["Squelben - Stormrage"] = "Default",
@@ -25,8 +26,8 @@ BadPetDB = {
 		["Titt - Turalyon"] = "Default",
 		["Ranidan - Stormreaver"] = "Default",
 		["Skratch - Turalyon"] = "Default",
-		["Bloodcox - Stormrage"] = "Default",
 		["Brewbies - Turalyon"] = "Default",
+		["Bloodcox - Stormrage"] = "Default",
 		["Bruhbies - Stormrage"] = "Default",
 		["Danoh - Stormrage"] = "Default",
 		["Lackteight - Turalyon"] = "Default",
@@ -34,8 +35,8 @@ BadPetDB = {
 		["Edgelordshue - Stormrage"] = "Default",
 		["Dalgrens - Bloodhoof"] = "Default",
 		["Beer - Bloodhoof"] = "Default",
-		["Horny - Bloodhoof"] = "Default",
 		["Brobies - Stormrage"] = "Default",
+		["Horny - Bloodhoof"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

@@ -2,6 +2,7 @@
 HandyNotes_AzerothsTopTunesDB = {
 	["profileKeys"] = {
 		["Kateplusnine - Stormrage"] = "Default",
+		["Shamadan - Stormrage"] = "Default",
 		["Edgelordshue - Stormrage"] = "Default",
 		["Emmarosa - Stormrage"] = "Default",
 		["Shhbbyisok - Stormrage"] = "Default",
