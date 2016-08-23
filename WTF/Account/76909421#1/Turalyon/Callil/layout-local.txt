@@ -12,7 +12,7 @@ Anchor: TOPLEFT
 X: 0
 Y: 0
 W: 365
-H: 200
+H: 240
 Frame: LootHistoryFrame
 FrameLevel: 1
 Anchor: TOPRIGHT
@@ -20,3 +20,17 @@ X: -410
 Y: -184
 W: 210
 H: 175
+Frame: _NPCScanButton
+FrameLevel: 1
+Anchor: BOTTOM
+X: 0
+Y: 128
+W: 150
+H: 42
+Frame: TomTomCrazyArrow
+FrameLevel: 1
+Anchor: RIGHT
+X: -381
+Y: -8
+W: 56
+H: 42

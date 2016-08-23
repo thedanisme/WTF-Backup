@@ -4,9 +4,9 @@ PawnCommon = {
 	["AlignNumbersRight"] = true,
 	["ShowItemID"] = false,
 	["ShowValuesForUpgradesOnly"] = false,
-	["ShowLootUpgradeAdvisor"] = true,
 	["ShowUpgradesOnTooltips"] = true,
-	["ShowEnchanted"] = false,
+	["ShowLootUpgradeAdvisor"] = true,
+	["Debug"] = false,
 	["ColorTooltipBorder"] = true,
 	["IgnoreItemUpgrades"] = true,
 	["ShowTooltipIcons"] = true,
@@ -152,6 +152,9 @@ PawnCommon = {
 			["UnenchantedColor"] = "bfbfbf",
 			["IconTexturePath"] = "Interface\\Icons\\Spell_Shadow_ShadowWordPain",
 			["PerCharacterOptions"] = {
+				["Callil-Turalyon"] = {
+					["Visible"] = true,
+				},
 			},
 			["ClassID"] = 5,
 			["UpgradesFollowSpecialization"] = true,
@@ -451,9 +454,6 @@ PawnCommon = {
 			["UnenchantedColor"] = "bfbfbf",
 			["IconTexturePath"] = "Interface\\Icons\\Spell_Holy_PowerWordShield",
 			["PerCharacterOptions"] = {
-				["Callil-Turalyon"] = {
-					["Visible"] = true,
-				},
 			},
 			["ClassID"] = 5,
 			["UpgradesFollowSpecialization"] = true,
@@ -837,6 +837,6 @@ PawnCommon = {
 	["ButtonPosition"] = 2,
 	["LastVersion"] = 2.0007,
 	["ShowQuestUpgradeAdvisor"] = true,
-	["Debug"] = false,
+	["ShowEnchanted"] = false,
 	["ShownGettingStarted"] = true,
 }

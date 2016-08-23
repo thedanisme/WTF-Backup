@@ -205,12 +205,54 @@ DataStore_TalentsDB = {
 				},
 				["Class"] = "MAGE",
 			},
-			["Default.Stormrage.Edgelordshue"] = {
-				["lastUpdate"] = 1470762117,
-				["Specializations"] = {
-					0, -- [1]
+			["Default.Turalyon.Lackteight"] = {
+				["ActiveTalents"] = 2,
+				["lastUpdate"] = 1471053493,
+				["GlyphList"] = {
+					11, -- [1]
+					4378, -- [2]
+					4474, -- [3]
+					12138, -- [4]
+					12090, -- [5]
+					12122, -- [6]
+					14586, -- [7]
+					4442, -- [8]
+					17146, -- [9]
+					4506, -- [10]
+					4554, -- [11]
+					18810, -- [12]
+					12170, -- [13]
+					4394, -- [14]
+					7658, -- [15]
+					18858, -- [16]
+					4634, -- [17]
+					12154, -- [18]
+					4666, -- [19]
+					18770, -- [20]
+					18834, -- [21]
+					18882, -- [22]
+					13, -- [23]
+					12188, -- [24]
+					7708, -- [25]
+					7676, -- [26]
+					4684, -- [27]
+					16940, -- [28]
+					4364, -- [29]
+					4492, -- [30]
+					18828, -- [31]
+					4428, -- [32]
+					4588, -- [33]
+					7724, -- [34]
+					4524, -- [35]
+					7644, -- [36]
+					4412, -- [37]
+					4452, -- [38]
 				},
-				["Class"] = "DEMONHUNTER",
+				["Specializations"] = {
+					[3] = 9974,
+					[2] = 14233,
+				},
+				["Class"] = "WARLOCK",
 			},
 			["Default.Stormrage.Yanlery"] = {
 				["ActiveTalents"] = 1,
@@ -320,11 +362,12 @@ DataStore_TalentsDB = {
 				},
 			},
 			["Default.Turalyon.Callil"] = {
-				["lastUpdate"] = 1471190765,
+				["lastUpdate"] = 1471952078,
 				["Class"] = "PRIEST",
 				["ActiveTalents"] = 1,
 				["Specializations"] = {
 					7062, -- [1]
+					[3] = 10926,
 				},
 			},
 			["Default.Bloodhoof.Dalgrens"] = {
@@ -514,7 +557,7 @@ DataStore_TalentsDB = {
 				["Class"] = "DEMONHUNTER",
 			},
 			["Default.Stormrage.Dosnutz"] = {
-				["lastUpdate"] = 1471804350,
+				["lastUpdate"] = 1471899137,
 				["Specializations"] = {
 					11687, -- [1]
 					6565, -- [2]
@@ -591,54 +634,12 @@ DataStore_TalentsDB = {
 					9691, -- [2]
 				},
 			},
-			["Default.Turalyon.Lackteight"] = {
-				["ActiveTalents"] = 2,
-				["lastUpdate"] = 1471053493,
-				["GlyphList"] = {
-					11, -- [1]
-					4378, -- [2]
-					4474, -- [3]
-					12138, -- [4]
-					12090, -- [5]
-					12122, -- [6]
-					14586, -- [7]
-					4442, -- [8]
-					17146, -- [9]
-					4506, -- [10]
-					4554, -- [11]
-					18810, -- [12]
-					12170, -- [13]
-					4394, -- [14]
-					7658, -- [15]
-					18858, -- [16]
-					4634, -- [17]
-					12154, -- [18]
-					4666, -- [19]
-					18770, -- [20]
-					18834, -- [21]
-					18882, -- [22]
-					13, -- [23]
-					12188, -- [24]
-					7708, -- [25]
-					7676, -- [26]
-					4684, -- [27]
-					16940, -- [28]
-					4364, -- [29]
-					4492, -- [30]
-					18828, -- [31]
-					4428, -- [32]
-					4588, -- [33]
-					7724, -- [34]
-					4524, -- [35]
-					7644, -- [36]
-					4412, -- [37]
-					4452, -- [38]
-				},
+			["Default.Stormrage.Edgelordshue"] = {
+				["lastUpdate"] = 1470762117,
 				["Specializations"] = {
-					[3] = 9974,
-					[2] = 14233,
+					0, -- [1]
 				},
-				["Class"] = "WARLOCK",
+				["Class"] = "DEMONHUNTER",
 			},
 		},
 		["Reference"] = {
@@ -944,7 +945,7 @@ DataStore_TalentsDB = {
 				[365] = "Pathfinding",
 				[1201] = "Frostbrand Weapon",
 				[987] = "Falling Avenger",
-				[1213] = "Flapping Owl",
+				[432] = "The Chameleon",
 				[183] = "Double Jeopardy",
 				[215] = "Capacitor Totem",
 				[986] = "Focused Wrath",
@@ -953,27 +954,27 @@ DataStore_TalentsDB = {
 				[1205] = "Savagery",
 				[494] = "Bloodthirst",
 				[1206] = "The Solstice",
-				[496] = "Gag Order",
+				[991] = "Burning Anger",
 				[1207] = "Purify Spirit",
 				[988] = "Righteous Retreat",
 				[1208] = "Cleanse",
 				[733] = "Disguise",
-				[1209] = "Detoxing",
-				[495] = "Rude Interruption",
+				[431] = "Aquatic Form",
+				[989] = "Bladed Judgment",
 				[1210] = "Nature's Cure",
 				[734] = "Cloak of Shadows",
 				[216] = "Purge",
 				[990] = "Crow Feast",
 				[1212] = "Flying Fists",
 				[735] = "Thunder",
-				[432] = "The Chameleon",
-				[991] = "Burning Anger",
+				[1213] = "Flapping Owl",
+				[496] = "Gag Order",
 				[551] = "Dash",
 				[736] = "Feral Spirit",
 				[1215] = "Ascendance",
 				[366] = "Tame Beast",
-				[737] = "Riptide",
 				[369] = "Mend Pet",
+				[737] = "Riptide",
 				[433] = "Charm Woodland Creature",
 				[497] = "Blitz",
 				[291] = "Unstable Affliction",
@@ -1023,8 +1024,8 @@ DataStore_TalentsDB = {
 				[520] = "Death and Decay",
 				[521] = "Shifting Presences",
 				[439] = "Revive Pet",
-				[989] = "Bladed Judgment",
-				[431] = "Aquatic Form",
+				[495] = "Rude Interruption",
+				[1209] = "Detoxing",
 				[188] = "Avenging Wrath",
 				[220] = "Wind Shear",
 				[591] = "Ignite",
@@ -1390,6 +1391,34 @@ DataStore_TalentsRefDB = {
 					["icon"] = "Interface\\Icons\\Spell_Holy_PowerWordShield",
 					["name"] = "Discipline",
 				}, -- [1]
+				[3] = {
+					["id"] = 258,
+					["talents"] = {
+						22312, -- [1]
+						22313, -- [2]
+						22314, -- [3]
+						22325, -- [4]
+						22316, -- [5]
+						19758, -- [6]
+						22487, -- [7]
+						22094, -- [8]
+						19755, -- [9]
+						21751, -- [10]
+						22317, -- [11]
+						21753, -- [12]
+						22310, -- [13]
+						22311, -- [14]
+						21755, -- [15]
+						21718, -- [16]
+						21719, -- [17]
+						21720, -- [18]
+						21637, -- [19]
+						21978, -- [20]
+						21979, -- [21]
+					},
+					["icon"] = "Interface\\Icons\\Spell_Shadow_ShadowWordPain",
+					["name"] = "Shadow",
+				},
 			},
 			["Version"] = 22423,
 		},

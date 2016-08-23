@@ -1,8 +1,9 @@
 # BigWigs
 
-## [v7.3-16-gb10813e](https://github.com/BigWigsMods/BigWigs/tree/b10813e2bc8b1a48af25d9d1afb4a90b4e911fa5) (2016-08-22) [](#top)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v7.3...b10813e2bc8b1a48af25d9d1afb4a90b4e911fa5)
+## [v7.3-17-g67aac17](https://github.com/BigWigsMods/BigWigs/tree/67aac17ba18c8c98bb048250870d5f46e1b9b869) (2016-08-22) [](#top)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v7.3...67aac17ba18c8c98bb048250870d5f46e1b9b869)
 
+-   Flash taskbar on pull timer.  
 -   Register RAID_INSTANCE_WELCOME as an additional trigger for checking if we should load content to (finally) fix Onyxia's Lair loading.  
 -   update integrated plugins list  
 -   remove unnecessary travis entry  

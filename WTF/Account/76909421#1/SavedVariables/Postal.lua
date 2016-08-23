@@ -112,6 +112,7 @@ Postal3DB = {
 		["Pastaliar - Stormrage"] = {
 		},
 		["Dosnutz - Stormrage"] = {
+			["ChatOutput"] = 3,
 			["BlackBook"] = {
 				["recent"] = {
 					"Talthalador|Stormrage|Alliance", -- [1]
@@ -119,7 +120,6 @@ Postal3DB = {
 					"Yanlery|Stormrage|Alliance", -- [3]
 				},
 			},
-			["ChatOutput"] = 3,
 		},
 		["Yanlery - Stormrage"] = {
 			["BlackBook"] = {
