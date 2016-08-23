@@ -1,6 +1,5 @@
 local _, T = ...
 if T.SkipLocalActionBook then return end
-local is7 = select(4, GetBuildInfo()) >= 7e4
 local AB = assert(T.ActionBook:compatible(2,14), "A compatible version of ActionBook is required")
 local RW = assert(AB:compatible("Rewire",1,2), "A compatible version of Rewire is required")
 local EV = assert(T.Evie)
@@ -22,14 +21,14 @@ do -- spell: spell ID + mount spell ID
 		id, n = GetShapeshiftFormInfo(id)
 		return n
 	end
-	local GetMountInfo = is7 and C_MountJournal.GetMountInfoByID or C_MountJournal.GetMountInfo
+	local GetMountInfo = C_MountJournal.GetMountInfoByID
 	local actionMap, spellMap, mountMap, spellMountID = {}, {}, {}, {}
 	local companionUpdate do -- maintain mountMap/spellMountID
 		function companionUpdate(_event)
 			local changed, myFactionId = false, UnitFactionGroup("player") == "Horde" and 0 or 1
-			local idm = is7 and C_MountJournal.GetMountIDs()
-			for i=1, idm and #idm or C_MountJournal.GetNumMounts() do
-				i = idm and idm[i] or i
+			local idm = C_MountJournal.GetMountIDs()
+			for i=1,#idm do
+				i = idm[i]
 				local exists, oldMap, _1, sid, _3, _4, _5, _6, _7, factionLocked, factionId, hide, have = false, nil, GetMountInfo(i)
 				spellMountID[sid], oldMap, mountMap[sid] = i, mountMap[sid], nil
 				if not hide and (not factionLocked or factionId == myFactionId) then
@@ -44,8 +43,8 @@ do -- spell: spell ID + mount spell ID
 		end
 		local rname, _, ricon = GetSpellInfo(150544)
 		mountMap[150544], actionMap[150544] = 150544, AB:CreateActionSlot(function()
-			return HasFullControl() and not IsIndoors(), 0, ricon, rname, 0, 0, 0, GameTooltip[is7 and "SetSpellByID" or "SetMountBySpellID"], 150544
-		end, nil, "func", C_MountJournal[is7 and "SummonByID" or "Summon"], 0)
+			return HasFullControl() and not IsIndoors(), 0, ricon, rname, 0, 0, 0, GameTooltip.SetSpellByID, 150544
+		end, nil, "func", C_MountJournal.SummonByID, 0)
 		EV.RegisterEvent("COMPANION_LEARNED", companionUpdate)
 		EV.RegisterEvent("PLAYER_ENTERING_WORLD", companionUpdate)
 		EV.RegisterEvent("MOUNT_JOURNAL_USABILITY_CHANGED", companionUpdate)
@@ -194,12 +193,12 @@ do -- item: items ID/inventory slot
 		return actionMap[name]
 	end, function(id) return "Item", GetItemInfo(id), GetItemIcon(id), nil, GameTooltip.SetItemByID, tonumber(id) end, {"byName", "forceShow", "onlyEquipped"})
 	EV.RegisterEvent("BAG_UPDATE", function() AB:NotifyObservers("item") end)
-	RW:SetCommandHint(SLASH_EQUIP1, 70, function(slash, _, clause, target)
+	RW:SetCommandHint(SLASH_EQUIP1, 70, function(_, _, clause, target)
 		if clause and clause ~= "" and GetItemInfo(clause) then
 			return true, itemHint(clause, nil, target, "equip")
 		end
 	end)
-	RW:SetCommandHint(SLASH_EQUIP_TO_SLOT1, 70, function(slash, _, clause)
+	RW:SetCommandHint(SLASH_EQUIP_TO_SLOT1, 70, function(_, _, clause)
 		local item = clause and clause:match("^%s*%d+%s+(.*)")
 		if item then
 			return RW:GetCommandAction(SLASH_EQUIP1, item)
@@ -226,7 +225,7 @@ do -- macrotext
 		if select("#", ...) > 0 then return pri, ... end
 	end
 	AB:AddActionToCategory("Miscellaneous", "macrotext", "")
-	RW:SetCommandHint("/use", 100, function(slash, _, clause, target)
+	RW:SetCommandHint("/use", 100, function(_, _, clause, target)
 		if not clause or clause == "" then return end
 		local link, bag, slot = SecureCmdItemParse(clause)
 		if link and GetItemInfo(link) then
@@ -234,7 +233,7 @@ do -- macrotext
 		end
 		return checkReturn(true, spellFeedback(clause, target))
 	end)
-	RW:SetCommandHint(SLASH_CASTSEQUENCE1, 100, function(slash, _, clause, target)
+	RW:SetCommandHint(SLASH_CASTSEQUENCE1, 100, function(_, _, clause, target)
 		if not clause or clause == "" then return end
 		local _, item, spell = QueryCastSequence(clause)
 		clause = (item or spell)
@@ -265,7 +264,7 @@ do -- macrotext
 		]])
 		RW:RegisterCommand(SLASH_USERANDOM1, true, true, f)
 		local sc, ic = GetManagedEnvironment(f).t, {}
-		RW:SetCommandHint(SLASH_USERANDOM1, 50, function(slash, _, clause, target)
+		RW:SetCommandHint(SLASH_USERANDOM1, 50, function(_, _, clause, target)
 			if not clause or clause == "" then return end
 			local t1, t, n = sc[clause]
 			t = t1 or ic[clause]
@@ -389,7 +388,7 @@ do -- battlepet: pet ID
 		return "Battle Pet", cn or n or ("#" .. tostring(pid)), tex, nil, tip, pid
 	end
 	AB:RegisterActionType("battlepet", create, describe)
-	RW:SetCommandHint(SLASH_SUMMON_BATTLE_PET1, 60, function(slash, _, clause)
+	RW:SetCommandHint(SLASH_SUMMON_BATTLE_PET1, 60, function(_, _, clause)
 		if clause and clause ~= "" then
 			local _, petID = C_PetJournal.FindPetIDByName(clause:trim())
 			if petID then
@@ -399,9 +398,9 @@ do -- battlepet: pet ID
 	end)
 end
 do -- equipmentset: equipment sets by name
-	local setMap, tex = {}, UIParent:CreateTexture()
+	local setMap = {}
 	local function resolveIcon(fid)
-		return type(fid) == "number" and (is7 and fid or tex:SetToFileData(fid) and nil or tex:GetTexture()) or ("Interface/Icons/" .. (fid or "INV_Misc_QuestionMark"))
+		return type(fid) == "number" and fid or ("Interface/Icons/" .. (fid or "INV_Misc_QuestionMark"))
 	end
 	local function equipmentsetHint(name)
 		local icon, _, active, total, equipped, available = GetEquipmentSetInfoByName(name)
@@ -418,7 +417,7 @@ do -- equipmentset: equipment sets by name
 	end, function(name)
 		return "Equipment Set", name, resolveIcon(GetEquipmentSetInfoByName(tostring(name))), nil, GameTooltip.SetEquipmentSet, name
 	end)
-	RW:SetCommandHint(SLASH_EQUIP_SET1, 80, function(slash, _, clause)
+	RW:SetCommandHint(SLASH_EQUIP_SET1, 80, function(_, _, clause)
 		if clause and clause ~= "" then
 			return true, equipmentsetHint(clause)
 		end
@@ -454,7 +453,7 @@ do -- raidmark
 		if id == 0 then return "Raid Marker", REMOVE_WORLD_MARKERS, "Interface/Icons/INV_Gauntlets_02" end
 		return "Raid Marker", _G["RAID_TARGET_" .. id], "Interface/TargetingFrame/UI-RaidTargetingIcon_" .. id
 	end)
-	RW:ImportSlashCmd("TARGET_MARKER", true, false, 40, function(slash, _, clause, target)
+	RW:ImportSlashCmd("TARGET_MARKER", true, false, 40, function(_, _, clause, target)
 		clause = tonumber(clause)
 		if clause == 0 then
 			return true, removeHint()
@@ -477,7 +476,7 @@ do -- worldmarker
 	end
 	map[0] = AB:CreateActionSlot(worldmarkHint, 0, "attribute", "type","macro", "macrotext",SLASH_CLEAR_WORLD_MARKER1 .. " " .. ALL)
 	AB:RegisterActionType("worldmark", function(id) return map[id] end, function(id) return "Raid World Marker", id == 0 and REMOVE_WORLD_MARKERS or _G["WORLD_MARKER" .. id], icons[id] end)
-	RW:SetCommandHint(SLASH_WORLD_MARKER1, 40, function(slash, _, clause)
+	RW:SetCommandHint(SLASH_WORLD_MARKER1, 40, function(_, _, clause)
 		clause = tonumber(clause)
 		if clause and clause >= 1 and clause <= 8 then
 			return true, worldmarkHint(clause)
@@ -642,8 +641,7 @@ do -- toybox: item ID
 	AB:RegisterActionType("toy", function(id)
 		if type(id) == "number" and not map[id] then
 			if PlayerHasToy(id) then
-				local _, name = C_ToyBox.GetToyInfo(id)
-				map[id] = AB:CreateActionSlot(toyHint, id, "attribute", "type","macro", "macrotext",SLASH_USE_TOY1 .. " " .. name)
+				map[id] = AB:CreateActionSlot(toyHint, id, "attribute", "type","macro", "macrotext",SLASH_USE_TOY1 .. " " .. id)
 			end
 		end
 		return map[id]
@@ -652,7 +650,7 @@ do -- toybox: item ID
 		local _, name, tex = C_ToyBox.GetToyInfo(id)
 		return "Toy", name, tex, nil, GameTooltip.SetToyByItemID, id
 	end)
-	RW:SetCommandHint(SLASH_USE_TOY1, 60, function(slash, _, clause, target)
+	RW:SetCommandHint(SLASH_USE_TOY1, 60, function(_, _, clause, target)
 		if clause and clause ~= "" then
 			local _, link = GetItemInfo(clause)
 			local iid = link and tonumber(link:match("item:(%d+)"))

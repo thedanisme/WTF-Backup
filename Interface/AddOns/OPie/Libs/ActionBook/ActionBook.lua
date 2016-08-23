@@ -199,7 +199,7 @@ function createHandlers.func(id, cnt, func, ...)
 	actionCallbacks[id] = cnt > 1 and {func, cnt+1, ...} or func
 	return true
 end
-function createHandlers.recall(id, cnt, handle, attr, ...)
+function createHandlers.recall(id, _count, handle, attr, ...)
 	if type(handle) ~= "table" or type(attr) ~= "string" then
 		return false, "Frame handle, attribute method expected; got %s/%s", type(handle), type(attr)
 	elseif type(handle.IsProtected) ~= "function" or type(handle.GetAttribute) ~= "function" then
@@ -216,7 +216,7 @@ function createHandlers.recall(id, cnt, handle, attr, ...)
 	end)
 	return true
 end
-function updateHandlers.collection(id, cnt, idList)
+function updateHandlers.collection(id, _count, idList)
 	if not (type(idList) == "table") then
 		return false, "Expected table specifying collection actions, got %q", type(idList)
 	elseif idList.__openAction and not allocatedActions[idList.__openAction] then

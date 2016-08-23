@@ -1,5 +1,4 @@
 local L, config, _, T, KR = OneRingLib.lang, {}, ...
-local is7 = select(4, GetBuildInfo()) >= 7e4
 
 OneRingLib.ext.config, KR = config, T.ActionBook:compatible("Kindred",1,0)
 function config.createFrame(name, parent)
@@ -258,8 +257,7 @@ do -- ext.config.overlay
 		end)
 		container:SetScript("OnMouseWheel", function() end)
 		container.fader = container:CreateTexture(nil, "BACKGROUND")
-		container.fader[is7 and "SetColorTexture" or "SetTexture"](container.fader, 0,0,0)
-		container.fader:SetAlpha(0.40)
+		container.fader:SetColorTexture(0,0,0, 0.40)
 		local corner = container:CreateTexture(nil, "ARTWORK")
 		corner:SetTexture("Interface\\DialogFrame\\UI-DialogBox-Corner")
 		corner:SetSize(30,30) corner:SetPoint("TOPRIGHT", -5, -6)

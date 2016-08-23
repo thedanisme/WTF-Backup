@@ -1,5 +1,4 @@
 local configCache, _, T = {}, ...
-local is7 = select(4, GetBuildInfo()) >= 7e4
 local max, min, abs, floor, sin, cos, atan2 = math.max, math.min, math.abs, math.floor, sin, cos, atan2
 local function cc(m, f, ...)
 	f[m](f, ...)
@@ -14,9 +13,6 @@ local ringQuad, setRingRotationPeriod = {} do
 	for i=1,4 do
 		ringQuad[i] = cc("SetPoint", cc("SetSize", CreateFrame("Frame", nil, mainFrame), 32, 32), quadPoints[i], mainFrame, "CENTER")
 		local g = cc("SetLooping", ringQuad[i]:CreateAnimationGroup(), "REPEAT")
-		if not is7 then
-			g:SetIgnoreFramerateThrottle(1)
-		end
 		animations[i] = cc("SetOrigin", cc("SetDegrees", cc("SetDuration", g:CreateAnimation("Rotation"), 4), -360), quadPoints[i], 0, 0)
 		g:Play()
 	end
@@ -143,6 +139,13 @@ local function extractAux(ext, v)
 		return ext.iconR, ext.iconG, ext.iconB
 	end
 end
+local function SetDefaultAnchor(tt, owner)
+	if tt:IsOwned(owner) then
+		tt:ClearLines()
+	else
+		GameTooltip_SetDefaultAnchor(tt, owner)
+	end
+end
 local function updateCentralElements(self, si)
 	local osi, tok, usable, state, icon, caption, _, _, _, tipFunc, tipArg = self.oldSlice, OneRingLib:GetOpenRingSliceAction(si)
 	caption = tokenCaption[tok] or caption
@@ -160,11 +163,11 @@ local function updateCentralElements(self, si)
 
 	if configCache.UseGameTooltip then
 		if tipFunc and tipArg then
-			GameTooltip_SetDefaultAnchor(GameTooltip, mainFrame)
+			SetDefaultAnchor(GameTooltip, mainFrame)
 			tipFunc(GameTooltip, tipArg)
 			GameTooltip:Show()
 		elseif caption and caption ~= "" then
-			GameTooltip_SetDefaultAnchor(GameTooltip, mainFrame)
+			SetDefaultAnchor(GameTooltip, mainFrame)
 			GameTooltip:AddLine(caption)
 			GameTooltip:Show()
 		elseif GameTooltip:IsOwned(mainFrame) then

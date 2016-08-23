@@ -4,5 +4,4 @@
 	<Script file="ActionBook.lua" />
 	<Script file="Conditionals.lua" />
 	<Script file="Handlers.lua" />
-	<Script file="Categories.lua" />
 </Ui>

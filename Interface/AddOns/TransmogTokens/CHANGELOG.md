@@ -1,3 +1,6 @@
+** Version 1.4.4 **
+* Fixed Lua error with AQ items.
+
 ** Version 1.4.3 **
 * Added full support for Tier 18 tokens, including Demon Hunters unique set!
 * Added full support for Tier 17 tokens, including exchangeable tokens from Blackhand.

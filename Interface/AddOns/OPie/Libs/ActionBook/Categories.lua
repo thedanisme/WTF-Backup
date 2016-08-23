@@ -2,10 +2,9 @@ local _, T = ...
 if T.SkipLocalActionBook then return end
 local AB, mark = assert(T.ActionBook:compatible(2, 14), "A compatible version of ActionBook is required"), {}
 local RW = assert(T.ActionBook:compatible("Rewire", 1,4), "A compatible version of Rewire is required")
-local is7 = select(4, GetBuildInfo()) >= 7e4
 
 do -- spellbook
-	local function addEntry(add, at, ok, st, sid, ...)
+	local function addEntry(add, at, _ok, st, sid)
 		if st == "SPELL" and not IsPassiveSpell(sid) and not mark[sid] then
 			mark[sid] = 1
 			add(at, sid)
@@ -62,31 +61,31 @@ AB:AugmentCategory("Items", function(_, add)
 		end
 	end
 end)
-if not is7 then -- Battle pets
-	local running, sourceFilters, typeFilters, flagFilters, search = false, {}, {}, {[LE_PET_JOURNAL_FLAG_COLLECTED]=1, [LE_PET_JOURNAL_FLAG_NOT_COLLECTED]=1}, ""
+do -- Battle pets
+	local running, sourceFilters, typeFilters, flagFilters, search = false, {}, {}, {[LE_PET_JOURNAL_FILTER_COLLECTED]=1, [LE_PET_JOURNAL_FILTER_NOT_COLLECTED]=1}, ""
 	hooksecurefunc(C_PetJournal, "SetSearchFilter", function(filter) search = filter end)
 	hooksecurefunc(C_PetJournal, "ClearSearchFilter", function() if not running then search = "" end end)
 	local function aug(_, add)
 		assert(not running, "Battle pets enumerator is not reentrant")
 		running = true
 		for i=1, C_PetJournal.GetNumPetSources() do
-			sourceFilters[i] = not C_PetJournal.IsPetSourceFiltered(i)
+			sourceFilters[i] = C_PetJournal.IsPetSourceChecked(i)
 		end
-		C_PetJournal.AddAllPetSourcesFilter()
-		
+		C_PetJournal.SetAllPetSourcesChecked(true)
+	
 		for i=1, C_PetJournal.GetNumPetTypes() do
-			typeFilters[i] = not C_PetJournal.IsPetTypeFiltered(i)
+			typeFilters[i] = C_PetJournal.IsPetTypeChecked(i)
 		end
-		C_PetJournal.AddAllPetTypesFilter()
-		
+		C_PetJournal.SetAllPetTypesChecked(true)
+	
 		-- There's no API to retrieve the filter, so rely on hooks
 		C_PetJournal.ClearSearchFilter()
 		
 		for k in pairs(flagFilters) do
-			flagFilters[k] = not C_PetJournal.IsFlagFiltered(k)
+			flagFilters[k] = C_PetJournal.IsFilterChecked(k)
 		end
-		C_PetJournal.SetFlagFilter(LE_PET_JOURNAL_FLAG_COLLECTED, true)
-		C_PetJournal.SetFlagFilter(LE_PET_JOURNAL_FLAG_NOT_COLLECTED, false)
+		C_PetJournal.SetFilterChecked(LE_PET_JOURNAL_FILTER_COLLECTED, true)
+		C_PetJournal.SetFilterChecked(LE_PET_JOURNAL_FILTER_NOT_COLLECTED, false)
 		local sortParameter = C_PetJournal.GetPetSortParameter()
 		C_PetJournal.SetPetSortParameter(LE_SORT_BY_LEVEL)
 		
@@ -95,13 +94,13 @@ if not is7 then -- Battle pets
 		end
 		
 		for k, v in pairs(flagFilters) do
-			C_PetJournal.SetFlagFilter(k, v)
+			C_PetJournal.SetFilterChecked(k, v)
 		end
 		for i=1,#typeFilters do
 			C_PetJournal.SetPetTypeFilter(i, typeFilters[i])
 		end
 		for i=1,#sourceFilters do
-			C_PetJournal.SetPetSourceFilter(i, sourceFilters[i])
+			C_PetJournal.SetPetSourceChecked(i, sourceFilters[i])
 		end
 		C_PetJournal.SetSearchFilter(search)
 		C_PetJournal.SetPetSortParameter(sortParameter)
@@ -113,10 +112,9 @@ end
 AB:AugmentCategory("Mounts", function(_, add)
 	if GetSpellInfo(150544) then add("spell", 150544) end
 	local myFactionId = UnitFactionGroup("player") == "Horde" and 0 or 1
-	local idm = is7 and C_MountJournal.GetMountIDs()
-	local gmi = is7 and C_MountJournal.GetMountInfoByID or C_MountJournal.GetMountInfo
-	for i=1, idm and #idm or C_MountJournal.GetNumMounts() do
-		local _1, sid, _3, _4, _5, _6, _7, factionLocked, factionId, hide, have = gmi(idm and idm[i] or i)
+	local idm = C_MountJournal.GetMountIDs()
+	for i=1, #idm do
+		local _1, sid, _3, _4, _5, _6, _7, factionLocked, factionId, hide, have = C_MountJournal.GetMountInfoByID(idm and idm[i] or i)
 		local sname = GetSpellInfo(sid)
 		if have and not hide and (not factionLocked or factionId == myFactionId) and GetSpellInfo(sname) ~= nil then
 			add("spell", sid)
@@ -180,51 +178,27 @@ end
 do -- toys
 	local tx, search, push, pop = C_ToyBox
 	hooksecurefunc(C_ToyBox, "SetFilterString", function(s) search = s end) -- No corresponding Get
-	if is7 then
-		local fs, fc, fu, fsearch = {}
-		function push()
-			local ns = C_PetJournal.GetNumPetSources()
-			fsearch = search, tx.SetFilterString("")
-			fc = tx.GetCollectedShown(), tx.SetCollectedShown(true)
-			fu = tx.GetUncollectedShown(), tx.SetUncollectedShown(false)
-			for i=1,ns do
-				fs[i] = tx.IsSourceTypeFilterChecked(i)
-			end
-			tx.SetAllSourceTypeFilters(true)
-			tx.ForceToyRefilter()
+	local fs, fc, fu, fsearch = {}
+	function push()
+		local ns = C_PetJournal.GetNumPetSources()
+		fsearch = search, tx.SetFilterString("")
+		fc = tx.GetCollectedShown(), tx.SetCollectedShown(true)
+		fu = tx.GetUncollectedShown(), tx.SetUncollectedShown(false)
+		for i=1,ns do
+			fs[i] = tx.IsSourceTypeFilterChecked(i)
 		end
-		function pop()
-			local ns = C_PetJournal.GetNumPetSources()
-			tx.SetFilterString(fsearch or "")
-			tx.SetCollectedShown(fc)
-			tx.SetUncollectedShown(fu)
-			for i=1,ns do
-				tx.SetSourceTypeFilter(i, not fs[i])
-			end
-			tx.ForceToyRefilter()
+		tx.SetAllSourceTypeFilters(true)
+		tx.ForceToyRefilter()
+	end
+	function pop()
+		local ns = C_PetJournal.GetNumPetSources()
+		tx.SetFilterString(fsearch or "")
+		tx.SetCollectedShown(fc)
+		tx.SetUncollectedShown(fu)
+		for i=1,ns do
+			tx.SetSourceTypeFilter(i, not fs[i])
 		end
-	else
-		local fs, fc, fu, fsearch = {}
-		function push()
-			local ns = C_PetJournal.GetNumPetSources()
-			fsearch = search, tx.SetFilterString("")
-			fc = tx.GetFilterCollected(), tx.SetFilterCollected(true)
-			fu = tx.GetFilterUncollected(), tx.SetFilterUncollected(false)
-			for i=1,ns do
-				fs[i] = tx.IsSourceTypeFiltered(i), tx.SetFilterSourceType(i, false)
-			end
-			tx.FilterToys()
-		end
-		function pop()
-			local ns = C_PetJournal.GetNumPetSources()
-			tx.SetFilterCollected(fc)
-			tx.SetFilterUncollected(fu)
-			for i=1,ns do
-				tx.SetFilterSourceType(i, fs[i])
-			end
-			tx.SetFilterString(fsearch or "")
-			tx.FilterToys()
-		end
+		tx.ForceToyRefilter()
 	end
 	AB:AugmentCategory("Toys", function(_, add)
 		push()

@@ -1,7 +1,6 @@
 local api, L, RK, conf, ORI, _, T = {}, OneRingLib.lang, OneRingLib.ext.RingKeeper, OneRingLib.ext.config, OneRingLib.ext.OPieUI, ...
 local AB = assert(T.ActionBook:compatible(2,14), "A compatible version of ActionBook is required")
 local gfxBase, EV = ([[Interface\AddOns\%s\gfx\]]):format((...)), T.Evie
-local is7 = select(4, GetBuildInfo()) >= 7e4
 
 local FULLNAME, SHORTNAME do
 	function EV.PLAYER_LOGIN()
@@ -139,7 +138,7 @@ newRing = CreateFrame("FRAME") do
 	toggle1:SetChecked(1)
 	snap:Hide()
 	toggle1.other, toggle2.other = toggle2, toggle1
-	local function validate(self)
+	local function validate()
 		local nameText, snapText, snapOK = name:GetText() or "", snap:GetText() or "", true
 		if toggle2:GetChecked() then
 			if snapText ~= snap.cachedText then
@@ -266,7 +265,7 @@ ringContainer = CreateFrame("FRAME", nil, panel) do
 		local cap = CreateFrame("Frame", nil, ringContainer)
 		cap:SetPoint("TOPLEFT", ringContainer, "TOPLEFT", -38, 0)
 		cap:SetPoint("BOTTOMRIGHT", ringContainer, "BOTTOMLEFT", -1, 0)
-		cap:SetScript("OnMouseWheel", function(self, delta)
+		cap:SetScript("OnMouseWheel", function(_, delta)
 			local b = delta == 1 and prev or next
 			if b:IsEnabled() then b:Click() end
 		end)
@@ -339,8 +338,7 @@ ringDetail = CreateFrame("Frame", nil, ringContainer) do
 	prepEditBox(ringDetail.name, function(self) api.setRingProperty("name", self:GetText()) end)
 	local tex = ringDetail.name:CreateTexture()
 	tex:SetHeight(1) tex:SetPoint("BOTTOMLEFT", 0, -2) tex:SetPoint("BOTTOMRIGHT", 0, -2)
-	tex[is7 and "SetColorTexture" or "SetTexture"](tex, 1,0.82,0)
-	tex:SetAlpha(0.5)
+	tex:SetColorTexture(1,0.82,0, 0.5)
 	ringDetail.scope = CreateFrame("Frame", "RKC_RingScopeDropDown", ringDetail, "UIDropDownMenuTemplate")
 	ringDetail.scope:SetPoint("TOPLEFT", 250, -37) UIDropDownMenu_SetWidth(ringDetail.scope, 250)
 	ringDetail.scope.label = ringDetail.scope:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
@@ -357,7 +355,7 @@ ringDetail = CreateFrame("Frame", nil, ringContainer) do
 	ringDetail.bindingQuarantine:SetScript("OnClick", function() api.setRingProperty("hotkey", api.getRingProperty("quarantineBind")) end)
 	ringDetail.rotation = CreateFrame("Slider", "RKC_RingRotation", ringDetail, "OptionsSliderTemplate")
 	ringDetail.rotation:SetPoint("TOPLEFT", 270, -95) ringDetail.rotation:SetWidth(260) ringDetail.rotation:SetMinMaxValues(0, 345) ringDetail.rotation:SetValueStep(15) ringDetail.rotation:SetObeyStepOnDrag(true)
-	ringDetail.rotation:SetScript("OnValueChanged", function(self, value) api.setRingProperty("offset", value) end)
+	ringDetail.rotation:SetScript("OnValueChanged", function(_, value) api.setRingProperty("offset", value) end)
 	RKC_RingRotationLow:SetText("0\194\176") RKC_RingRotationHigh:SetText("345\194\176")
 	ringDetail.rotation.label = ringDetail.scope:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
 	ringDetail.rotation.label:SetPoint("TOPLEFT", ringDetail, "TOPLEFT", 10, -96)
@@ -396,7 +394,7 @@ ringDetail = CreateFrame("Frame", nil, ringContainer) do
 		ringDetail.export:Show()
 		ringDetail.shareLabel2:SetText(L"Take a snapshot of this ring to share it with others.")
 	end)
-	exportBg:SetScript("OnShow", function(self)
+	exportBg:SetScript("OnShow", function()
 		ringDetail.export:Hide()
 		ringDetail.shareLabel2:SetText((L"Import snapshots by clicking %s above."):format(NORMAL_FONT_COLOR_CODE .. L"New Ring..." .. "|r"))
 	end)
@@ -469,7 +467,7 @@ sliceDetail = CreateFrame("Frame", nil, ringContainer) do
 		b:SetSize(14, 14) b:SetPoint("LEFT")
 		b.bg = sliceDetail.color.button:CreateTexture(nil, "BACKGROUND")
 		b.bg:SetSize(12, 12) b.bg:SetPoint("CENTER")
-		b.bg[is7 and "SetColorTexture" or "SetTexture"](b.bg, 1,1,1)
+		b.bg:SetColorTexture(1,1,1)
 		b:SetNormalTexture("Interface/ChatFrame/ChatFrameColorSwatch")
 		b:SetScript("OnEnter", function(self) self.bg:SetVertexColor(NORMAL_FONT_COLOR.r, NORMAL_FONT_COLOR.g, NORMAL_FONT_COLOR.b) end)
 		b:SetScript("OnLeave", function(self) self.bg:SetVertexColor(1, 1, 1) end)
@@ -479,7 +477,7 @@ sliceDetail = CreateFrame("Frame", nil, ringContainer) do
 			if ColorPickerFrame:IsShown() or v then return end
 			api.setSliceProperty("color", ColorPickerFrame:GetColorRGB())
 		end
-		b:SetScript("OnClick", function(self)
+		b:SetScript("OnClick", function()
 			local cp = ColorPickerFrame
 			cp.previousValues, cp.hasOpacity, cp.func, cp.cancelFunc = true
 			cp:SetColorRGB(ctex:GetVertexColor()) cp:Show()
@@ -537,20 +535,21 @@ sliceDetail = CreateFrame("Frame", nil, ringContainer) do
 				self.Down:SetEnabled(icontex[value + #icons + 1] ~= nil)
 				for i=0,#icons do
 					local ico = icons[i].tex
-					ico[is7 and "SetTexture" or "SetToFileData"](ico, icontex[i+value])
+					ico:SetTexture(icontex[i+value])
 					local tex = ico:GetTexture()
 					icons[i]:SetChecked(f.selection == tex)
 					selectedIcon = f.selection == tex and icons[i] or selectedIcon
 				end
 			end)
 		frame:SetScript("OnShow", function(self)
-			frame:SetFrameLevel(sliceDetail.icon:GetFrameLevel()+4)
+			self:SetFrameStrata("DIALOG")
+			self:SetFrameLevel(sliceDetail.icon:GetFrameLevel()+10)
 			icontex = GetMacroIcons()
 			GetMacroItemIcons(icontex)
 			slider:SetMinMaxValues(1, #icontex-#icons)
 			slider:SetValue(1)
 		end)
-		frame:SetScript("OnMouseWheel", function(self, delta)
+		frame:SetScript("OnMouseWheel", function(_, delta)
 			slider:SetValue(slider:GetValue()-delta*15)
 		end)
 		function f:SetIcon(ico, forced, ext, slice)
@@ -578,74 +577,23 @@ sliceDetail = CreateFrame("Frame", nil, ringContainer) do
 		sliceDetail.optionBoxes.label:SetPoint("TOPLEFT", sliceDetail, "TOPLEFT", 10, -165)
 	end
 	
-	do -- .macrotext
-		local bg = CreateFrame("Frame", nil, sliceDetail)
-		bg:SetBackdrop({edgeFile="Interface/Tooltips/UI-Tooltip-Border", bgFile="Interface/DialogFrame/UI-DialogBox-Background-Dark", tile=true, edgeSize=16, tileSize=16, insets={left=4,right=4,bottom=4,top=4}})
-		bg:SetBackdropBorderColor(0.7,0.7,0.7) bg:SetBackdropColor(0,0,0,0.7)
-		local eb, scroll = conf.ui.multilineInput("RKC_MacroInput", bg, 511)
-		prepEditBox(eb, function(self) api.setSliceProperty("macrotext", (self:GetText():gsub("|c%x+|Hrk%d+:([%a:%d/]+)|h.-|h|r", "{{%1}}"))) end)
-		scroll:SetSize(514, 240) scroll:SetPoint("TOPLEFT", sliceDetail.optionBoxes.label, "BOTTOMLEFT", 3, -10)
-		bg:SetPoint("TOPLEFT", scroll, "TOPLEFT", -5, 4)
-		bg:SetPoint("BOTTOMRIGHT", scroll, "BOTTOMRIGHT", 26, -4)
-		eb:SetHyperlinksEnabled(true)
-		eb:SetScript("OnHyperlinkClick", function(self, link, text, button)
-			local pos = string.find(self:GetText(), text, 1, 1)-1
-			self:HighlightText(pos, pos + #text)
-			if button == "RightButton" and link:match("^rk%d+:") then
-				local replace = IsAltKeyDown() and text:match("|h(.-)|h") or ("{{" .. link:match("^rk%d+:(.+)") .. "}}")
-				self:Insert(replace)
-				self:HighlightText(pos, pos + #replace)
-			else
-				self:SetCursorPosition(pos + #text)
+	do -- .editorContainer
+		local f = CreateFrame("Frame", nil, sliceDetail)
+		f:SetPoint("TOPLEFT", sliceDetail.optionBoxes.label, "BOTTOMLEFT", 0, -10)
+		f:SetPoint("BOTTOMRIGHT", -10, 36)
+		function f:SaveAction()
+			return api.setSliceProperty("*", self.curEditor)
+		end
+		function f:SetEditor(editor, ...)
+			if self.curEditor then
+				self.curEditor:Release(self)
 			end
-			self:SetFocus()
-		end)
-		
-		local decodeSpellLink do
-			local names, tag = {}, 0
-			function decodeSpellLink(sid)
-				local tname
-				for id in sid:gmatch("%d+") do
-					local name = GetSpellInfo(tonumber(id))
-					if name and names[name] ~= tag then
-						names[name], tname = tag, (tname and (tname .. " / ") or "") .. name
-					end
-				end
-				tag = tag + 1
-				return tname and ("|cff71d5ff|Hrkspell:" .. sid .. "|h" .. tname .. "|h|r")
+			self.curEditor = editor
+			if editor then
+				editor:SetAction(self, ...)
 			end
 		end
-		local tagCounter = 0
-		local function tagReplace() tagCounter = tagCounter + 1 return "|Hrk" .. tagCounter .. ":" end
-		function bg:SetMacro(macrotext)
-			tagCounter = 0
-			eb:SetText((
-				(macrotext or "")
-				:gsub("{{spell:([%d/]+)}}", decodeSpellLink)
-				:gsub("{{mount:ground}}", "|cff71d5ff|Hrkmount:ground|h" .. L"Ground Mount" .. "|h|r")
-				:gsub("{{mount:air}}", "|cff71d5ff|Hrkmount:air|h" .. L"Flying Mount" .. "|h|r")
-				:gsub("|Hrk", tagReplace)
-			))
-		end
-		sliceDetail.macrotext, bg.editBox, bg.scrollFrame = bg, eb, scroll
-		do -- Hook linking
-			local old = ChatEdit_InsertLink
-			function ChatEdit_InsertLink(link, ...)
-				if GetCurrentKeyBoardFocus() == eb then
-					local isEmpty = eb:GetText() == ""
-					if link:match("item:") then
-						eb:Insert((isEmpty and (GetItemSpell(link) and SLASH_USE1 or SLASH_EQUIP1) or "") .. " " .. GetItemInfo(link))
-					elseif link:match("spell:") and not IsPassiveSpell(tonumber(link:match("spell:(%d+)"))) then
-						eb:Insert((isEmpty and SLASH_CAST1 or "") .. " " .. decodeSpellLink(link:match("spell:(%d+)")):gsub("|Hrk", tagReplace))
-					else
-						eb:Insert(link:match("|h%[?(.-[^%]])%]?|h"))
-					end
-					return true
-				else
-					return old(link, ...)
-				end
-			end
-		end
+		sliceDetail.editorContainer = f
 	end
 	sliceDetail.remove = CreateButton(sliceDetail)
 	sliceDetail.remove:SetPoint("BOTTOMRIGHT", -10, 10)
@@ -666,7 +614,7 @@ newSlice = CreateFrame("Frame", nil, ringContainer) do
 		local cap = CreateFrame("Frame", nil, newSlice)
 		cap:SetPoint("TOPLEFT")
 		cap:SetPoint("BOTTOMRIGHT", s, "BOTTOMRIGHT")
-		cap:SetScript("OnMouseWheel", function(self, delta)
+		cap:SetScript("OnMouseWheel", function(_, delta)
 			s:SetValue(s:GetValue()-delta)
 		end)
 	end
@@ -725,8 +673,7 @@ newSlice = CreateFrame("Frame", nil, ringContainer) do
 	
 	local catbg = newSlice:CreateTexture(nil, "BACKGROUND")
 	catbg:SetPoint("TOPLEFT", 2, -2) catbg:SetPoint("RIGHT", newSlice, "RIGHT", -2, 0) catbg:SetPoint("BOTTOM", 0, 2)
-	catbg[is7 and "SetColorTexture" or "SetTexture"](catbg, 0,0,0)
-	catbg:SetAlpha(0.65)
+	catbg:SetColorTexture(0,0,0, 0.65)
 	local function onClick(self) PlaySound("UChatScrollButton") selectCategory(self:GetID()) end
 	for i=1,22 do
 		local b = CreateFrame("Button", nil, newSlice)
@@ -754,7 +701,7 @@ newSlice = CreateFrame("Frame", nil, ringContainer) do
 	newSlice.close = CreateFrame("Button", "RKC_CloseNewSliceBrowser", newSlice, "UIPanelCloseButton")
 	newSlice.close:SetPoint("TOPRIGHT", 3, 4)
 	newSlice.close:SetSize(30, 30)
-	newSlice.close:SetScript("OnClick", function(self) ringContainer.newSlice:Click() end)
+	newSlice.close:SetScript("OnClick", function() ringContainer.newSlice:Click() end)
 	local b = newSlice.close:CreateTexture(nil, "BACKGROUND", "UI-Frame-TopCornerRight")
 	b:SetTexCoord(90/128, 113/128, 2/128, 25/128)
 	b:SetPoint("TOPLEFT", 4, -5) b:SetPoint("BOTTOMRIGHT", -5, 4)
@@ -772,7 +719,7 @@ newSlice = CreateFrame("Frame", nil, ringContainer) do
 		local cap = CreateFrame("Frame", nil, newSlice)
 		cap:SetPoint("TOPRIGHT")
 		cap:SetPoint("BOTTOMLEFT", newSlice.slider, "BOTTOMRIGHT")
-		cap:SetScript("OnMouseWheel", function(self, delta)
+		cap:SetScript("OnMouseWheel", function(_, delta)
 			s:SetValue(s:GetValue()-delta)
 		end)
 	end
@@ -1120,22 +1067,23 @@ function api.setRingProperty(name, value)
 	end
 	api.saveRing(currentRingName, currentRing)
 end
-function api.setSliceProperty(prop, value, v2, v3)
+function api.setSliceProperty(prop, ...)
 	local slice = assert(currentRing[currentSliceIndex], "Setting a slice property on an unknown slice")
 	if prop == "color" then
-		slice.c = value and ("%02x%02x%02x"):format(value*255, v2*255, v3*255)
-	elseif prop == "macrotext" then
-		slice[2] = RK:QuantizeMacro(value)
-		sliceDetail.macrotext:SetMacro(slice[2])
+		local r, g, b = ...
+		slice.c = r and ("%02x%02x%02x"):format(r*255, g*255, b*255) or nil
+	elseif prop == "*" then
+		(...):GetAction(slice)
+		api.updateSliceDisplay(currentSliceIndex, slice)
 	elseif prop == "skipSpecs" or prop == "show" then
 		local ss = sliceDetail.skipSpecs:GetValue()
 		local sh = sliceDetail.showConditional:GetText()
 		slice.show = (ss or sh ~= "") and ((ss and ("[spec:" .. ss .. "] hide;") or "") .. sh) or nil
 	else
-		slice[prop] = value
+		slice[prop] = (...)
 	end
 	api.saveRing(currentRingName, currentRing)
-	if prop == "icon" or prop == "macrotext" or prop == "color" then
+	if prop == "icon" or prop == "color" then
 		local _, _, ico, icoext = getSliceInfo(currentRing[currentSliceIndex])
 		if prop ~= "color" then sliceDetail.icon:SetIcon(ico, slice.icon, icoext, currentRing[currentSliceIndex]) end
 		sliceDetail.color:SetColor(getSliceColor(slice, ico))
@@ -1162,7 +1110,9 @@ function api.selectSlice(offset, select)
 	if old then old:SetChecked(nil) end
 	currentSliceIndex = nil
 	if not desc then return ringDetail:Show() end
-	
+	return api.updateSliceDisplay(id, desc)
+end
+function api.updateSliceDisplay(id, desc)
 	local stype, sname, sicon, icoext = getSliceInfo(desc)
 	if sname ~= "" then
 		sliceDetail.desc:SetFormattedText("%s: |cffffffff%s|r", L(stype or "?"), L(sname or "?"))
@@ -1176,12 +1126,7 @@ function api.selectSlice(offset, select)
 	sliceDetail.skipSpecs:SetValue(skipSpecs)
 	sliceDetail.showConditional:SetText(showConditional or desc.show or "")
 	sliceDetail.caption:SetText(desc.caption or "")
-	if desc[1] == "macrotext" then
-		sliceDetail.macrotext:SetMacro(desc[2])
-		sliceDetail.macrotext:Show()
-	else
-		sliceDetail.macrotext:Hide()
-	end
+	sliceDetail.editorContainer:SetEditor(T.TEMP_AB_EDITORS and T.TEMP_AB_EDITORS[desc[1]], desc)
 	api.updateOptionBoxes(desc)
 	sliceDetail:Show()
 	currentSliceIndex = id
@@ -1332,10 +1277,10 @@ end
 panel.okay, panel.default, panel.refresh = prot(panel.okay), prot(panel.default), prot(panel.refresh)
 panel:SetScript("OnShow", conf.checkSVState)
 
-local function addProp(self, key, text)
+OneRingLib.ext.CustomRingsConfig = {}
+function OneRingLib.ext.CustomRingsConfig:addProp(key, text)
 	knownProps[key] = text
 end
-OneRingLib.ext.CustomRingsConfig = {addProperty=addProp}
 
 SLASH_OPIE_CUSTOM_RINGS1 = "/rk"
 function SlashCmdList.OPIE_CUSTOM_RINGS()

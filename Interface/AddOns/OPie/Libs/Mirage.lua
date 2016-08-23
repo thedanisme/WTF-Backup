@@ -1,5 +1,4 @@
 local _, T = ...
-local is7 = select(4, GetBuildInfo()) >= 7e4
 local gfxBase = ([[Interface\AddOns\%s\gfx\]]):format((...))
 
 local function cc(m, f, ...)
@@ -62,7 +61,7 @@ do -- inherit SetPoint, SetScale, GetScale, SetShown, SetParent
 end
 function indicatorAPI:SetIcon(texture)
 	self.icon:SetTexture(texture)
-	local ofs = (is7 or texture:match("^[Ii][Nn][Tt][Ee][Rr][Ff][Aa][Cc][Ee][\\/][Ii][Cc][Oo][Nn][Ss][\\/]")) and (2.5/64) or (-2/64)
+	local ofs = 2.5/64
 	self.icon:SetTexCoord(ofs, 1-ofs, ofs, 1-ofs)
 end
 function indicatorAPI:SetIconTexCoord(a,b,c,d, e,f,g,h)
@@ -282,15 +281,10 @@ local CreateCooldown do
 		cd[3] = cc("SetPoint", cc("SetTexture", cd:CreateTexture(nil, "ARTWORK"), gfxBase .. "borderlo"), "TOPLEFT", cd, "LEFT")
 		cd[4] = cc("SetPoint", cc("SetTexture", cd:CreateTexture(nil, "ARTWORK"), gfxBase .. "borderlo"), "TOPRIGHT", cd, "TOP")
 		for i=1,4 do
-			cd[4+i] = cc("SetPoint", cc(is7 and "SetColorTexture" or "SetTexture", parent:CreateTexture(nil, "ARTWORK", nil, 3), 1,1,1),
+			cd[4+i] = cc("SetPoint", cc("SetColorTexture", parent:CreateTexture(nil, "ARTWORK", nil, 3), 1,1,1),
 				(i % 4 < 2 and "TOP" or "BOTTOM") .. (i < 3 and "RIGHT" or "LEFT"), cd, "CENTER", (i < 3 and 21 or -21)*scale, (i % 4 < 2 and 21 or -21)*scale)
 		end
 		cd[9] = cc("SetTexture", parent:CreateTexture(nil, "ARTWORK", nil, 3), gfxBase .. "tri")
-		
-		if not is7 then
-			sparkAG:SetIgnoreFramerateThrottle(1)
-			cd.flashAG:SetIgnoreFramerateThrottle(1)
-		end
 		
 		return cd
 	end
@@ -307,7 +301,7 @@ local CreateIndicator do
 			oglow = cc("SetShown", CreateQuadTexture("BACKGROUND", size*2, gfxBase .. "oglow", e), false),
 			iglow = cc("SetAllPoints", cc("SetAlpha", cc("SetTexture", e:CreateTexture(nil, "ARTWORK", nil, 1), gfxBase .. "iglow"), nested and 0.60 or 1)),
 			icon = cc("SetPoint", cc("SetSize", e:CreateTexture(nil, "ARTWORK"), 60*size/64, 60*size/64), "CENTER"),
-			veil = cc(is7 and "SetColorTexture" or "SetTexture", cc("SetPoint", cc("SetSize", e:CreateTexture(nil, "ARTWORK", nil, 2), 60*size/64, 60*size/64), "CENTER"), 0, 0, 0),
+			veil = cc("SetColorTexture", cc("SetPoint", cc("SetSize", e:CreateTexture(nil, "ARTWORK", nil, 2), 60*size/64, 60*size/64), "CENTER"), 0, 0, 0),
 			ribbon = cc("SetShown", cc("SetTexture", cc("SetAllPoints", e:CreateTexture(nil, "ARTWORK", nil, 3)), gfxBase .. "ribbon"), false),
 			overIcon = cc("SetPoint", e:CreateTexture(nil, "ARTWORK", nil, 4), "BOTTOMLEFT", e, "BOTTOMLEFT", 4, 4),
 			count = cc("SetPoint", cc("SetJustifyH", e:CreateFontString(nil, "OVERLAY", "NumberFontNormalLarge"), "RIGHT"), "BOTTOMRIGHT", -4, 4),

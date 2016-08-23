@@ -1,7 +1,6 @@
 local RingKeeper, _, T = {}, ...
 local RK_RingDesc, RK_CollectionIDs, RK_Version, RK_Rev, EV, SV = {}, {}, 2, 44, T.Evie
 local unlocked, queue, RK_DeletedRings, RK_FlagStore, sharedCollection = false, {}, {}, {}, {}
-local is7 = select(4, GetBuildInfo()) >= 7e4
 
 local function assert(condition, text, level, ...)
 	return (not condition) and error(tostring(text):format(...), 1 + (level or 1)) or condition
@@ -29,11 +28,10 @@ local RK_ParseMacro, RK_QuantizeMacro do -- +RingKeeper:SetMountPreference(groun
 		end
 		local function findMount(prefSID, mtype)
 			local myFactionId, nc, cs = UnitFactionGroup("player") == "Horde" and 0 or 1, 0
-			local idm = is7 and C_MountJournal.GetMountIDs()
-			local gmi = is7 and C_MountJournal.GetMountInfoByID or C_MountJournal.GetMountInfo
-			local gmiex = is7 and C_MountJournal.GetMountInfoExtraByID or C_MountJournal.GetMountInfoExtra
-			for i=1, idm and #idm or C_MountJournal.GetNumMounts() do
-				i = idm and idm[i] or i
+			local idm = C_MountJournal.GetMountIDs()
+			local gmi, gmiex = C_MountJournal.GetMountInfoByID, C_MountJournal.GetMountInfoExtraByID
+			for i=1, #idm do
+				i = idm[i]
 				local _1, sid, _3, _4, _5, _6, _7, factionLocked, factionId, hide, have = gmi(i)
 				if have and not hide and (not factionLocked or factionId == myFactionId) and GetSpellInfo((GetSpellInfo(sid))) then
 					local _, _, _, _, t = gmiex(i)
@@ -134,10 +132,10 @@ local RK_ParseMacro, RK_QuantizeMacro do -- +RingKeeper:SetMountPreference(groun
 		function prepareQuantizer(reuse)
 			if reuse and next(spells) then return end
 			wipe(spells)
-			local idm = is7 and C_MountJournal.GetMountIDs()
-			local gmi = is7 and C_MountJournal.GetMountInfoByID or C_MountJournal.GetMountInfo
-			for i=1, idm and #idm or C_MountJournal.GetNumMounts() do
-				local _, sid = gmi(idm and idm[i] or i)
+			local idm = C_MountJournal.GetMountIDs()
+			local gmi = C_MountJournal.GetMountInfoByID
+			for i=1, #idm do
+				local _, sid = gmi(idm[i])
 				local sname = GetSpellInfo(sid)
 				if sname then
 					spells[sname:lower()] = sid

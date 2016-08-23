@@ -1,6 +1,6 @@
-## Interface: 60200
+## Interface: 70000
 ## Title: OPie
-## Version: Tomato 9
+## Version: Umber 1
 ## Notes: Group abilities into rings that appear when you hold down a binding.
 ## Notes-deDE: Gruppiere Fähigkeiten in Ringen die erscheinen wenn eine Tastenbelegung ausgelöst wird.
 ## Notes-esES: Agrupar habilitades en anillos que se aparecen al presionar teclados.
@@ -17,6 +17,7 @@ Libs\Niji.lua
 Libs\Mirage.lua
 Libs\Reverse\Reverse.xml
 Libs\ActionBook\ActionBook.xml
+Libs\ActionBook\ActionBookUI.xml
 Locale.lua
 OneRingLib.lua
 OPieUI.lua

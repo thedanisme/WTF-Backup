@@ -1,6 +1,5 @@
 local _, T = ...
 if T.SkipLocalActionBook then return end
-local is7 = select(4, GetBuildInfo()) >= 7e4
 local KR, EV = assert(T.ActionBook:compatible("Kindred", 1,7), "A compatible version of Kindred is required"), T.Evie
 local playerClassLocal, playerClass = UnitClass("player")
 
@@ -80,15 +79,15 @@ end
 do -- spec:id/name
 	local _, _, cid = UnitClass("player")
 	local function sync()
-		local sg, idx, s = GetActiveSpecGroup(), GetSpecialization(), "-1/unspec"
+		local idx, s = GetSpecialization(), "-1/unspec"
 		if idx then
 			local id, name = GetSpecializationInfoForClassID(cid, idx)
 			if id and name then
 				s = id .. "/" .. name
 			end
 		end
-		if sg and (idx or not is7) then
-			s = s .. "/" .. (is7 and idx or sg)
+		if idx then
+			s = s .. "/" .. idx
 		end
 		KR:SetStateConditionalValue("spec", s)
 	end
@@ -134,10 +133,10 @@ end
 do -- talent:tier.num/name
 	local cur, levels = false, CLASS_TALENT_LEVELS[playerClass] or CLASS_TALENT_LEVELS.DEFAULT
 	local function updateTalents()
-		local ag, s = (GetActiveSpecGroup() or 1)
+		local s
 		for tier=1, MAX_TALENT_TIERS do
 			for column=1, 3 do
-				local _, name, _, selected = GetTalentInfo(tier, column, ag)
+				local _, name, _, selected = GetTalentInfo(tier, column, 1)
 				if name and selected then
 					s = (s and s .. "/" or "") .. tier .. "." .. column .. "/" .. levels[tier] .. "." .. column .. "/" .. name
 				end
@@ -151,9 +150,16 @@ do -- talent:tier.num/name
 	EV.RegisterEvent("PLAYER_TALENT_UPDATE", updateTalents)
 	updateTalents()
 end
-do -- instance:arena/bg/ratedbg/raid/instance/scenario
-	local mapTypes = {party="dungeon", pvp="battleground/bg", ratedbg="ratedbg/rgb", none="world"}
-	for n in ("1158 1331 1159 1152 1330 1153"):gmatch("%d+") do mapTypes[tonumber(n)] = "world/garrison" end
+do -- instance:arena/bg/ratedbg/raid/instance/scenario + draenor/pandaria
+	local mapTypes = {
+		party="dungeon", pvp="battleground/bg", ratedbg="ratedbg/rgb", none="world",
+		[1116]="world/draenor", [1464]="world/draenor", [1191]="world/draenor/ashran/worldpvp",
+		[870]="world/pandaria", [1064]="world/pandaria",
+		[530]="world/outland", [571]="world/northrend",
+	}
+	for n in ("1158 1331 1159 1152 1330 1153"):gmatch("%d+") do
+		mapTypes[tonumber(n)] = "world/draenor/garrison"
+	end
 	EV.RegisterEvent("PLAYER_ENTERING_WORLD", function()
 		local _, itype, did, _, _, _, _, imid = GetInstanceInfo()
 		if imid and mapTypes[imid] then
@@ -202,56 +208,8 @@ do -- outpost
 	EV.RegisterEvent("SPELLS_CHANGED", sync)
 	sync()
 end
-if is7 then
+do -- glyph:(defunct)
 	KR:SetStateConditionalValue("glyph", "")
-else -- glyph:name/glyph id
-	local names = {} do
-		local nameFilter = ""
-		hooksecurefunc("SetGlyphNameFilter", function(name)
-			nameFilter = name
-		end)
-		setmetatable(names, {__index=function(t, k)
-			local f8, f16, nameFilter = IsGlyphFlagSet(8) or ToggleGlyphFilter(8), IsGlyphFlagSet(16) or ToggleGlyphFilter(16), nameFilter
-			local f1, f2 = IsGlyphFlagSet(1) or ToggleGlyphFilter(1), IsGlyphFlagSet(2) or ToggleGlyphFilter(2)
-			SetGlyphNameFilter("")
-			for i=1,GetNumGlyphs() do
-				local name, _, _, _, id = GetGlyphInfo(i)
-				if id then
-					t[id] = name
-				end
-			end
-			SetGlyphNameFilter(nameFilter)
-			f8, f16 = f8 or ToggleGlyphFilter(8), f16 or ToggleGlyphFilter(16)
-			f1, f2 = f1 or ToggleGlyphFilter(1), f2 or ToggleGlyphFilter(2)
-			return rawget(t, k)
-		end})
-	end
-	local state, marker, w = {}, 1, {}
-	local function sync()
-		marker = -marker
-		local changed
-		for i=1,GetNumGlyphSockets() do
-			local id = select(6, GetGlyphSocketInfo(i)) or 0
-			state[id], changed = marker, changed or id ~= 0 and not state[id]
-		end
-		state[0] = nil
-		for k,v in pairs(state) do
-			if v ~= marker then
-				changed, state[k] = true
-			end
-		end
-		if changed then
-			local n = 1
-			for k,v in pairs(state) do
-				w[n], w[n+1], n = k, names[k] or "?", n+2
-			end
-			KR:SetStateConditionalValue("glyph", table.concat(w, "/", 1, n-1))
-		end
-	end
-	EV.RegisterEvent("PLAYER_LOGIN", sync)
-	EV.RegisterEvent("GLYPH_UPDATED", sync)
-	EV.RegisterEvent("GLYPH_REMOVED", sync)
-	EV.RegisterEvent("GLYPH_ADDED", sync)
 end
 do -- level:floor
 	local ls = [=[--

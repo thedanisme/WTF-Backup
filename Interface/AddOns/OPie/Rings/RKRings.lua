@@ -3,7 +3,7 @@ local L, RingKeeper = T.L, OneRingLib and OneRingLib.ext and OneRingLib.ext.Ring
 if not (RingKeeper and RingKeeper.SetRing) then return end
 
 RingKeeper:SetRing("DruidShift", {
-	{id="/cancelform [noflyable]\n/cast [flyable,outdoors,nocombat,noswimming,nomod][flying] {{spell:40120/33943}}; [outpost:corral,nomod,nospec:103/104] {{spell:161691}}; [swimming,nomod][glyph:1127,outdoors,nomod][noglyph:164,flyable,nomod][noglyph:164,flying] {{spell:783}}; [nocombat,outdoors,nomod:alt] {{mount:ground}}; [outdoors] {{spell:783}}", show="[known:40120/33943/1066/783]", _u="f"}, -- Travel
+	{id="/cancelform [noflyable]\n/cast [flyable,outdoors,nocombat,noswimming,nomod][flying] {{spell:40120/33943}}; [outpost:corral,nomod,nospec:103/104] {{spell:161691}}; [swimming,nomod][flyable,nomod][flying] {{spell:783}}; [nocombat,outdoors,nomod:alt] {{mount:ground}}; [outdoors] {{spell:783}}", show="[known:40120/33943/1066/783]", _u="f"}, -- Travel
 	{c="c74cff", id=24858, _u="k"}, -- Moonkin
 	{c="fff04d", id=768, _u="c"}, -- Cat
 	{c="ff0000", id=5487, _u="b"}, -- Bear
@@ -11,16 +11,14 @@ RingKeeper:SetRing("DruidShift", {
 });
 RingKeeper:SetRing("DruidUtility", {
 	{id="/cast [combat][mod] {{spell:20484}}; {{spell:50769}}", _u="r"}, -- rebirth/revive
-	{id="/cast [help,noraid][@player] {{spell:1126}}", _u="m"}, -- mark
 	{id="/cast [mod] {{spell:16914}}; {{spell:740/16914}}", _u="t"}, -- hurricane/tranq
 	{id="/cast [nomod] {{spell:22812}}; {{spell:61336/22812}}", _u="b"}, -- bark/survival
 	{id="/cast {{spell:33891/102560}}", _u="i"}, -- Incarnation
-	{id="/cast [@target,harm][@none] {{spell:2908}}", _u="s"}, -- Soothe
 	{id="/cast [combat][mod] {{spell:88423/2782}}; {{spell:18960}}", _u="p"}, -- moonglade/cleanse
 	name=L"Utility", hotkey="[noform:bear/cat] SECONDARY; ALT-SECONDARY", limit="DRUID", _u="OPCDU"
 });
 RingKeeper:SetRing("DruidFeral", {
-	{id=50334, _u="k"}, -- berserk
+	{id=106951, _u="k"}, -- berserk
 	{id="/cast [noform:bear] {{spell:5217}}; {{spell:22842}}", _u="e"}, -- frenzied / tiger's fury
 	{id="/cast [mod] {{spell:1850}}; [form:bear] {{spell:77761}}; {{spell:77764}}", _u="r"}, -- dash / stampeding roar
 	{id=106839, _u="s"}, -- skull bash
@@ -101,33 +99,26 @@ do -- MageTravel
 end
 
 RingKeeper:SetRing("PaladinAuras", {
-	{"ring", "PaladinSeal", onlyNonEmpty=true, _u="e"},
 	{"ring", "PaladinBlessing", onlyNonEmpty=true, _u="b"},
+	{id=1022, _u="t"}, -- hand of protection
+	{id=1044, _u="e"}, -- hand of freedom
 	{id=25780, _u="f"}, -- righteous fury
 	name=L"Paladin Buffs", hotkey="PRIMARY", limit="PALADIN", _u="OPCPA"
 });
-RingKeeper:SetRing("PaladinSeal", {
-	{id=20154, _u="r"}, -- righteousness
-	{id=31801, _u="t"}, -- truth
-	{c="902020", id=20164, _u="j"}, -- justice
-	{id=20165, _u="i"}, -- insight
-	name=L"Seals", limit="PALADIN", internal=true, _u="OPCPS"
-});
 RingKeeper:SetRing("PaladinBlessing", {
-	{id=20217, _u="k"}, -- kings
-	{id=19740, _u="m"}, -- might
+	{id=203538, _u="k"}, -- kings
+	{id=203528, _u="m"}, -- might
+	{id=203539, _u="w"}, -- might
 	name=L"Blessings", limit="PALADIN", internal=true, _u="OPCPB"
 });
 RingKeeper:SetRing("PaladinTools", {
 	{id=853, _u="h"}, -- hammer
-	{id=85673, _u="g"}, -- glory
 	{c="ed8f1b", id=498, _u="p"}, -- divine protection
 	{id=31884, _u="a"}, -- avenging wrath
-	{id=1022, _u="t"}, -- hand of protection
-	{id=1044, _u="f"}, -- hand of freedom
-	{id=1038, _u="s"}, -- hand of salvation
 	{id=62124, _u="r"}, -- hand of reckoning
 	{id=26573, _u="c"}, -- consecration
+	{id=183218, _u="i"}, -- hand of hindrance
+	{id=213644, _c="l"}, -- cleanse
 	name=L"Utility", limit="PALADIN", hotkey="SECONDARY", _u="OPCPT"
 });
 RingKeeper:SetRing("WarlockLTS", {
