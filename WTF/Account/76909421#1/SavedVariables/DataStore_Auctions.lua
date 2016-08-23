@@ -68,13 +68,13 @@ DataStore_AuctionsDB = {
 				},
 				["lastVisitDate"] = "2016/08/21 11:41",
 			},
-			["Default.Stormrage.Talthalador"] = {
-				["lastUpdate"] = 1471560733,
-				["lastVisitDate"] = "2016/08/18 18:52",
-			},
 			["Default.Stormrage.Brobies"] = {
 				["lastUpdate"] = 1470026604,
 				["lastVisitDate"] = "2016/08/01 00:43",
+			},
+			["Default.Stormrage.Talthalador"] = {
+				["lastUpdate"] = 1471560733,
+				["lastVisitDate"] = "2016/08/18 18:52",
 			},
 		},
 	},

@@ -50,24 +50,24 @@ DataStoreDB = {
 			["Default.Bloodhoof.Arando"] = {
 				["faction"] = "Horde",
 			},
-			["Default.Stormrage.Brobies"] = {
-				["faction"] = "Alliance",
+			["Default.Stormrage.Talthalador"] = {
 				["guildName"] = "Horizon",
+				["faction"] = "Alliance",
 			},
 			["Default.Turalyon.Shaneequa"] = {
 				["faction"] = "Horde",
 				["guildName"] = "Viginti",
 			},
-			["Default.Stormrage.Talthalador"] = {
-				["guildName"] = "Horizon",
+			["Default.Stormrage.Brobies"] = {
 				["faction"] = "Alliance",
+				["guildName"] = "Horizon",
 			},
 			["Default.Turalyon.Callil"] = {
 				["faction"] = "Alliance",
 			},
-			["Default.Turalyon.Skratch"] = {
-				["guildName"] = "Viginti",
-				["faction"] = "Horde",
+			["Default.Stormrage.Danoh"] = {
+				["guildName"] = "Horizon",
+				["faction"] = "Alliance",
 			},
 			["Default.Turalyon.Knutts"] = {
 				["guildName"] = "Viginti",
@@ -80,19 +80,19 @@ DataStoreDB = {
 			["Default.Turalyon.Pryahprism"] = {
 				["faction"] = "Horde",
 			},
-			["Default.Bloodhoof.Dalgrens"] = {
-				["faction"] = "Horde",
+			["Default.Stormrage.Edgelordshue"] = {
+				["faction"] = "Alliance",
 			},
 			["Default.Stormrage.Yanlery"] = {
 				["faction"] = "Alliance",
 				["guildName"] = "Horizon",
 			},
-			["Default.Stormrage.Danoh"] = {
-				["guildName"] = "Horizon",
-				["faction"] = "Alliance",
+			["Default.Turalyon.Skratch"] = {
+				["guildName"] = "Viginti",
+				["faction"] = "Horde",
 			},
-			["Default.Stormrage.Ershirley"] = {
-				["faction"] = "Alliance",
+			["Default.Stormrage.Shamadan"] = {
+				["faction"] = "Neutral",
 			},
 			["Default.Turalyon.Titte"] = {
 				["guildName"] = "Viginti",
@@ -109,8 +109,8 @@ DataStoreDB = {
 				["guildName"] = "Horizon",
 				["faction"] = "Alliance",
 			},
-			["Default.Stormrage.Shamadan"] = {
-				["faction"] = "Neutral",
+			["Default.Stormrage.Ershirley"] = {
+				["faction"] = "Alliance",
 			},
 			["Default.Stormrage.Dosnutz"] = {
 				["guildName"] = "Horizon",
@@ -119,8 +119,8 @@ DataStoreDB = {
 			["Default.Stormrage.Kateplusnine"] = {
 				["faction"] = "Alliance",
 			},
-			["Default.Stormrage.Edgelordshue"] = {
-				["faction"] = "Alliance",
+			["Default.Bloodhoof.Dalgrens"] = {
+				["faction"] = "Horde",
 			},
 		},
 		["ShortToLongRealmNames"] = {

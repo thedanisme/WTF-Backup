@@ -4,9 +4,9 @@ PawnCommon = {
 	["AlignNumbersRight"] = true,
 	["ShowItemID"] = false,
 	["ShowValuesForUpgradesOnly"] = false,
-	["ShowUpgradesOnTooltips"] = true,
 	["ShowLootUpgradeAdvisor"] = true,
-	["Debug"] = false,
+	["ShowUpgradesOnTooltips"] = true,
+	["ShowEnchanted"] = false,
 	["ColorTooltipBorder"] = true,
 	["IgnoreItemUpgrades"] = true,
 	["ShowTooltipIcons"] = true,
@@ -473,6 +473,9 @@ PawnCommon = {
 				["Squelben-Stormrage"] = {
 					["Visible"] = true,
 				},
+				["Dosnutz-Stormrage"] = {
+					["Visible"] = true,
+				},
 			},
 			["ClassID"] = 8,
 			["UpgradesFollowSpecialization"] = true,
@@ -629,13 +632,10 @@ PawnCommon = {
 			["UnenchantedColor"] = "2f95b0",
 			["IconTexturePath"] = "Interface\\Icons\\Spell_Fire_FireBolt02",
 			["PerCharacterOptions"] = {
-				["Pryahprism-Turalyon"] = {
-					["Visible"] = true,
-				},
 				["Kateplusnine-Stormrage"] = {
 					["Visible"] = true,
 				},
-				["Dosnutz-Stormrage"] = {
+				["Pryahprism-Turalyon"] = {
 					["Visible"] = true,
 				},
 			},
@@ -837,6 +837,6 @@ PawnCommon = {
 	["ButtonPosition"] = 2,
 	["LastVersion"] = 2.0007,
 	["ShowQuestUpgradeAdvisor"] = true,
-	["ShowEnchanted"] = false,
+	["Debug"] = false,
 	["ShownGettingStarted"] = true,
 }

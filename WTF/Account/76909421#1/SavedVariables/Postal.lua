@@ -360,8 +360,8 @@ Postal3DB = {
 		["Beer - Bloodhoof"] = {
 		},
 		["Talthalador - Stormrage"] = {
-			["ChatOutput"] = 3,
 			["OpenSpeed"] = 0.3,
+			["ChatOutput"] = 3,
 		},
 		["Jimbo - Ner'zhul"] = {
 			["BlackBook"] = {
