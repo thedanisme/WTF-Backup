@@ -1,8 +1,12 @@
 # BigWigs
 
-## [v7.3-17-g67aac17](https://github.com/BigWigsMods/BigWigs/tree/67aac17ba18c8c98bb048250870d5f46e1b9b869) (2016-08-22) [](#top)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v7.3...67aac17ba18c8c98bb048250870d5f46e1b9b869)
+## [v7.3-21-gc724d58](https://github.com/BigWigsMods/BigWigs/tree/c724d58b69ae773922e40fdc91a04dc2860bc674) (2016-08-24) [](#top)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v7.3...c724d58b69ae773922e40fdc91a04dc2860bc674)
 
+-   Fix :Mythic() to also return for Mythic dungeons.  
+-   update some comments  
+-   more API updates  
+-   Document :GetOptions and deprecate :RegisterEnableYell.  
 -   Flash taskbar on pull timer.  
 -   Register RAID_INSTANCE_WELCOME as an additional trigger for checking if we should load content to (finally) fix Onyxia's Lair loading.  
 -   update integrated plugins list  
