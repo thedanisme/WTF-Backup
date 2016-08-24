@@ -176,23 +176,23 @@ MacroToolkitDB = {
 		["Dosnutz - Stormrage"] = {
 			["macros"] = {
 				[121] = {
-					["name"] = " ",
 					["icon"] = "237508",
+					["name"] = " ",
 					["body"] = "#showtooltip Ancient Portal: Dalaran\n/s Have you ever met Crusader Jorny?  If not, today's your lucky day!\n/use Ancient Portal: Dalaran\n",
 				},
 				[122] = {
-					["name"] = "Fire Test",
 					["icon"] = "135822",
+					["name"] = "Fire Test",
 					["body"] = "/castsequence reset=180 Rune of Power,Time Warp,Scorch,Combustion,Fire Blast,Pyroblast,Fire Blast,Pyroblast,Flame On,Fire Blast,Pyroblast,Fire Blast,Pyroblast,Scorch,Pyroblast,Scorch,Pyroblast,Rune of Power,Scorch,Pyroblast\n",
 				},
 				[123] = {
-					["name"] = "Ice Block",
 					["icon"] = "135841",
+					["name"] = "Ice Block",
 					["body"] = "#showtooltip Ice Block\n/cancelaura Ice Block\n/use Ice Block\n",
 				},
 				[124] = {
-					["name"] = "Water Jet",
 					["icon"] = "134400",
+					["name"] = "Water Jet",
 					["body"] = "#showtooltip\n/cast Water Jet\n",
 				},
 			},
@@ -202,23 +202,23 @@ MacroToolkitDB = {
 		["Yanlery - Stormrage"] = {
 			["macros"] = {
 				[121] = {
-					["name"] = " ",
-					["icon"] = "236318",
-					["body"] = "#showtooltip\n/use [@mouseover,help,exists][@focus,help,exists][]Vigilance\n",
-				},
-				[122] = {
-					["name"] = " ",
 					["icon"] = "132365",
+					["name"] = " ",
 					["body"] = "#showtooltip\n/use [@mouseover,exists][]Intercept\n",
 				},
-				[123] = {
-					["name"] = " ",
+				[122] = {
 					["icon"] = "136080",
+					["name"] = " ",
 					["body"] = "#showtooltip\n/use [@mouseover,harm][]Taunt\n",
 				},
+				[123] = {
+					["icon"] = "236318",
+					["name"] = " ",
+					["body"] = "#showtooltip\n/use [@mouseover,help,exists][@focus,help,exists][]Vigilance\n",
+				},
 				[124] = {
-					["name"] = "DPS CDs",
 					["icon"] = "252172",
+					["name"] = "DPS CDs",
 					["body"] = "#showtooltip\n/use Blood Fury\n/use Bloodbath\n/use Avatar\n/use Recklessness\n/use 13\n/use 14\n",
 				},
 			},
@@ -443,88 +443,88 @@ MacroToolkitDB = {
 		["Callil - Turalyon"] = {
 			["macros"] = {
 				[131] = {
-					["icon"] = "135928",
 					["name"] = " ",
+					["icon"] = "135928",
 					["body"] = "#showtooltip\n/cancelaura Levitate\n/use Levitate\n",
 				},
 				[135] = {
-					["icon"] = "134400",
 					["name"] = " ",
+					["icon"] = "134400",
 					["body"] = "#showtooltip\n/use [@mouseover,help][help][]Binding Heal\n",
 				},
 				[122] = {
-					["icon"] = "135913",
 					["name"] = " ",
+					["icon"] = "135913",
 					["body"] = "#showtooltip\n/use [@mouseover,help]Heal;[help]Heal;Heal\n",
 				},
 				[124] = {
-					["icon"] = "134400",
 					["name"] = " ",
+					["icon"] = "134400",
 					["body"] = "#showtooltip\n/use [@mouseover,exists,nodead][]Penance\n",
 				},
 				[126] = {
-					["icon"] = "134400",
 					["name"] = " ",
+					["icon"] = "134400",
 					["body"] = "#showtooltip\n/use [@mouseover,help]Pain Suppression;[help]Pain Suppression;Pain Suppression\n",
 				},
 				[128] = {
-					["icon"] = "135907",
 					["name"] = " ",
+					["icon"] = "135907",
 					["body"] = "#showtooltip\n/use [@mouseover,help]Flash Heal;[help]Flash Heal;Flash Heal\n",
 				},
 				[132] = {
-					["icon"] = "134400",
 					["name"] = " ",
+					["icon"] = "134400",
 					["body"] = "#showtooltip\n/use [@mouseover,exists,nodead][]Clarity of Will\n",
 				},
 				[136] = {
-					["icon"] = "134400",
 					["name"] = " ",
+					["icon"] = "134400",
 					["body"] = "#showtooltip\n/use [@mouseover,help][help][]Guardian Spirit\n",
 				},
 				[129] = {
-					["icon"] = "237563",
 					["name"] = " ",
+					["icon"] = "237563",
 					["body"] = "#showtooltip\n/cancelaura Dispersion\n/use Dispersion\n",
 				},
 				[133] = {
-					["icon"] = "134400",
 					["name"] = " ",
+					["icon"] = "134400",
 					["body"] = "#showtooltip\n/use [@mouseover,help][help][]Circle of Healing\n",
 				},
 				[137] = {
-					["icon"] = "134400",
 					["name"] = " ",
+					["icon"] = "134400",
 					["body"] = "#showtooltip\n/use [@mouseover,help][help][]Holy Word: Chastise\n",
 				},
 				[121] = {
-					["icon"] = "135940",
 					["name"] = " ",
+					["icon"] = "135940",
 					["body"] = "#showtooltip\n/use [@mouseover,help]Power Word: Shield;[help]Power Word: Shield;Power Word: Shield\n",
 				},
 				[123] = {
-					["icon"] = "135894",
 					["name"] = " ",
+					["icon"] = "135894",
 					["body"] = "#showtooltip\n/use [@mouseover][]Purify\n",
 				},
 				[125] = {
-					["icon"] = "135943",
 					["name"] = " ",
+					["icon"] = "135943",
 					["body"] = "#showtooltip\n/use [@mouseover,help]Prayer of Healing;[help]Prayer of Healing;Prayer of Healing\n",
 				},
 				[127] = {
-					["icon"] = "135944",
 					["name"] = " ",
+					["icon"] = "135944",
 					["body"] = "#showtooltip\n/use [@mouseover,help]Prayer of Mending;[help]Prayer of Mending;Prayer of Mending\n",
 				},
 				[130] = {
-					["icon"] = "463835",
 					["name"] = " ",
+					["icon"] = "463835",
 					["body"] = "#showtooltip\n/use [@mouseover]Leap of Faith\n",
 				},
 				[134] = {
-					["icon"] = "134400",
 					["name"] = " ",
+					["icon"] = "134400",
 					["body"] = "#showtooltip\n/use [@mouseover,help][help][]Renew\n",
 				},
 			},
@@ -534,69 +534,69 @@ MacroToolkitDB = {
 		["Brobies - Stormrage"] = {
 			["macros"] = {
 				[122] = {
-					["icon"] = "134400",
 					["name"] = " ",
-					["body"] = "#showtooltip Legacy of the White Tiger\n/use Legacy of the White Tiger\n/cancelaura Hand of Protection\n",
+					["icon"] = "134400",
+					["body"] = "#showtooltip Brawler's Bottomless Draenic Agility Potion\n/use Brawler's Bottomless Draenic Agility Potion\n/use 14\n",
 				},
 				[126] = {
-					["icon"] = "134400",
 					["name"] = "Guard/cancel BOP",
+					["icon"] = "134400",
 					["body"] = "#showtooltip\n/cancelaura Hand of Protection\n/use Guard\n",
 				},
 				[132] = {
-					["icon"] = "133209",
 					["name"] = "Trinket",
+					["icon"] = "133209",
 					["body"] = "#showtooltip\n/use 14\n",
 				},
 				[123] = {
-					["icon"] = "460692",
 					["name"] = " Detox",
+					["icon"] = "460692",
 					["body"] = "#showtooltip\n/use [@mouseover,exists,help][@player][]Detox\n",
 				},
 				[127] = {
-					["icon"] = "134400",
 					["name"] = "Jab/Cancel BoP",
+					["icon"] = "134400",
 					["body"] = "#showtooltip\n/cancelaura Hand of Protection\n/cancelaura Misdirection\n/run SetRaidTarget(\"PLAYER\",0)\n/use Jab\n",
 				},
-				[133] = {
-					["icon"] = "613397",
-					["name"] = "ZS Focus",
-					["body"] = "#showtooltip\n/use [@focus,mod][]Zen Sphere\n",
+				[131] = {
+					["name"] = "TransferSequence",
+					["icon"] = "627608",
+					["body"] = "#showtooltip\n/castsequence Transcendence, Transcendence: Transfer\n",
 				},
 				[124] = {
-					["icon"] = "628134",
 					["name"] = "Despawn Ox",
+					["icon"] = "628134",
 					["body"] = "/click TotemFrameTotem1 RightButton\n",
 				},
 				[128] = {
-					["icon"] = "620830",
 					["name"] = "Provoke",
+					["icon"] = "620830",
 					["body"] = "#showtooltip\n/cast [nomod,@mouseover,harm,exists][nomod] Provoke\n/stopmacro [nomod]\n/target Black Ox Statue\n/cast Provoke\n/targetlasttarget\n",
 				},
-				[121] = {
-					["icon"] = "134400",
-					["name"] = " ",
-					["body"] = "#showtooltip Brawler's Bottomless Draenic Agility Potion\n/use Brawler's Bottomless Draenic Agility Potion\n/use 14\n",
-				},
 				[129] = {
-					["icon"] = "134400",
 					["name"] = "Serenity Spam",
+					["icon"] = "134400",
 					["body"] = "#showtooltip Serenity\n/use Serenity\n/use Blackout Kick\n/use Purifying Brew\n",
 				},
+				[121] = {
+					["name"] = " ",
+					["icon"] = "134400",
+					["body"] = "#showtooltip Legacy of the White Tiger\n/use Legacy of the White Tiger\n/cancelaura Hand of Protection\n",
+				},
 				[125] = {
-					["icon"] = "615341",
 					["name"] = "Fort Brew",
+					["icon"] = "615341",
 					["body"] = "#showtooltip\n/use Fortifying Brew\n/use 14\n",
 				},
 				[130] = {
-					["icon"] = "134400",
 					["name"] = "Tiger's Lust",
+					["icon"] = "134400",
 					["body"] = "#showtooltip\n/cast [@mouseover,help][@target,help][@player]Tiger's Lust\n",
 				},
-				[131] = {
-					["icon"] = "627608",
-					["name"] = "TransferSequence",
-					["body"] = "#showtooltip\n/castsequence Transcendence, Transcendence: Transfer\n",
+				[133] = {
+					["name"] = "ZS Focus",
+					["icon"] = "613397",
+					["body"] = "#showtooltip\n/use [@focus,mod][]Zen Sphere\n",
 				},
 			},
 			["backups"] = {
@@ -1310,7 +1310,7 @@ MacroToolkitDB = {
 	},
 	["profiles"] = {
 		["profile"] = {
-			["visshare"] = false,
+			["doublewide"] = true,
 			["visbackup"] = false,
 			["visaddslot"] = false,
 			["y"] = 351.062042236328,
@@ -1323,12 +1323,12 @@ MacroToolkitDB = {
 			["viscustom"] = false,
 			["visconditions"] = true,
 			["fonts"] = {
-				["edfont"] = "Expressway",
-				["mifont"] = "Expressway",
 				["mfont"] = "Expressway",
+				["mifont"] = "Expressway",
+				["edfont"] = "Expressway",
 				["errfont"] = "Expressway",
 			},
-			["doublewide"] = true,
+			["visshare"] = false,
 			["visclear"] = false,
 		},
 		["Default"] = {

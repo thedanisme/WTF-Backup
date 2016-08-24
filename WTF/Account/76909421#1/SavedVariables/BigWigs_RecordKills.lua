@@ -142,7 +142,7 @@ RKDatabase = {
 					["Mannoroth"] = {
 						[14] = 271,
 						[7] = 362,
-						[15] = 335,
+						[15] = 271,
 					},
 					["Socrethar the Eternal"] = {
 						[14] = 199,

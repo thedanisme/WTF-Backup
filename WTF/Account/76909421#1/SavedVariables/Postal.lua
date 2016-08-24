@@ -112,7 +112,6 @@ Postal3DB = {
 		["Pastaliar - Stormrage"] = {
 		},
 		["Dosnutz - Stormrage"] = {
-			["ChatOutput"] = 3,
 			["BlackBook"] = {
 				["recent"] = {
 					"Talthalador|Stormrage|Alliance", -- [1]
@@ -120,23 +119,25 @@ Postal3DB = {
 					"Yanlery|Stormrage|Alliance", -- [3]
 				},
 			},
+			["ChatOutput"] = 3,
 		},
 		["Yanlery - Stormrage"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Danoh|Stormrage|Alliance", -- [1]
-					"Whyfy|Stormrage|Alliance", -- [2]
-					"Llamama|Stormrage|Alliance", -- [3]
-					"Brobies|Stormrage|Alliance", -- [4]
-					"Lackteight-Turalyon|Stormrage|Alliance", -- [5]
-					"Skratch-Turalyon|Stormrage|Alliance", -- [6]
-					"Shaneequa-Turalyon|Stormrage|Alliance", -- [7]
-					"Bloodcox|Stormrage|Alliance", -- [8]
-					"Titt-Turalyon|Stormrage|Alliance", -- [9]
-					"Knutts-Turalyon|Stormrage|Alliance", -- [10]
-					"Bruhbies|Stormrage|Alliance", -- [11]
-					"Andriih|Stormrage|Alliance", -- [12]
-					"Arando-Bloodhoof|Stormrage|Alliance", -- [13]
+					"Titte-Turalyon|Stormrage|Alliance", -- [1]
+					"Danoh|Stormrage|Alliance", -- [2]
+					"Whyfy|Stormrage|Alliance", -- [3]
+					"Llamama|Stormrage|Alliance", -- [4]
+					"Brobies|Stormrage|Alliance", -- [5]
+					"Lackteight-Turalyon|Stormrage|Alliance", -- [6]
+					"Skratch-Turalyon|Stormrage|Alliance", -- [7]
+					"Shaneequa-Turalyon|Stormrage|Alliance", -- [8]
+					"Bloodcox|Stormrage|Alliance", -- [9]
+					"Titt-Turalyon|Stormrage|Alliance", -- [10]
+					"Knutts-Turalyon|Stormrage|Alliance", -- [11]
+					"Bruhbies|Stormrage|Alliance", -- [12]
+					"Andriih|Stormrage|Alliance", -- [13]
+					"Arando-Bloodhoof|Stormrage|Alliance", -- [14]
 				},
 			},
 		},
@@ -360,8 +361,8 @@ Postal3DB = {
 		["Beer - Bloodhoof"] = {
 		},
 		["Talthalador - Stormrage"] = {
-			["OpenSpeed"] = 0.3,
 			["ChatOutput"] = 3,
+			["OpenSpeed"] = 0.3,
 		},
 		["Jimbo - Ner'zhul"] = {
 			["BlackBook"] = {

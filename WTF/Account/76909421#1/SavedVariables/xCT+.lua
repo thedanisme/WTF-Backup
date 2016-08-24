@@ -34,137 +34,6 @@ xCTSavedDB = {
 		["Whyfy - Stormrage"] = {
 			["spells"] = {
 				["multistrikeEnabled"] = false,
-				["items"] = {
-					["Weapon"] = {
-						["Two-Handed Maces"] = false,
-						["One-Handed Swords"] = false,
-						["Staves"] = false,
-						["Crossbows"] = false,
-						["Polearms"] = false,
-						["One-Handed Maces"] = false,
-						["Fishing Poles"] = false,
-						["Two-Handed Swords"] = false,
-						["Miscellaneous"] = false,
-						["Bows"] = false,
-						["One-Handed Axes"] = false,
-						["Guns"] = false,
-						["Fist Weapons"] = false,
-						["Daggers"] = false,
-						["Wands"] = false,
-						["Thrown"] = false,
-						["Two-Handed Axes"] = false,
-					},
-					["Glyph"] = {
-						["Warrior"] = false,
-						["Paladin"] = false,
-						["Shaman"] = false,
-						["Monk"] = false,
-						["Rogue"] = false,
-						["Mage"] = false,
-						["Warlock"] = false,
-						["Priest"] = false,
-						["Hunter"] = false,
-						["Death Knight"] = false,
-						["Druid"] = false,
-					},
-					["Trade Goods"] = {
-						["Other"] = false,
-						["Elemental"] = false,
-						["Jewelcrafting"] = false,
-						["Herb"] = false,
-						["Enchanting"] = false,
-						["Devices"] = false,
-						["Cooking"] = false,
-						["Materials"] = false,
-						["Explosives"] = false,
-						["Cloth"] = false,
-						["Item Enchantment"] = false,
-						["Leather"] = false,
-						["Metal & Stone"] = false,
-						["Parts"] = false,
-					},
-					["Miscellaneous"] = {
-						["Other"] = false,
-						["Reagent"] = false,
-						["Companion Pets"] = false,
-						["Holiday"] = false,
-						["Junk"] = false,
-						["Mount"] = false,
-					},
-					["Recipe"] = {
-						["Inscription"] = false,
-						["Blacksmithing"] = false,
-						["Alchemy"] = false,
-						["First Aid"] = false,
-						["Book"] = false,
-						["Cooking"] = false,
-						["Jewelcrafting"] = false,
-						["Fishing"] = false,
-						["Engineering"] = false,
-						["Leatherworking"] = false,
-						["Tailoring"] = false,
-						["Enchanting"] = false,
-					},
-					["Consumable"] = {
-						["Other"] = false,
-						["Elixir"] = false,
-						["Item Enhancement"] = false,
-						["Potion"] = false,
-						["Scroll"] = false,
-						["Flask"] = false,
-						["Bandage"] = false,
-						["Food & Drink"] = false,
-					},
-					["version"] = 1,
-					["Gem"] = {
-						["Simple"] = false,
-						["Blue"] = false,
-						["Meta"] = false,
-						["Cogwheel"] = false,
-						["Purple"] = false,
-						["Green"] = false,
-						["Prismatic"] = false,
-						["Yellow"] = false,
-						["Orange"] = false,
-						["Red"] = false,
-					},
-					["Armor"] = {
-						["Leather"] = false,
-						["Cosmetic"] = false,
-						["Shields"] = false,
-						["Mail"] = false,
-						["Plate"] = false,
-						["Cloth"] = false,
-						["Miscellaneous"] = false,
-					},
-					["Battle Pets"] = {
-						["Dragonkin"] = false,
-						["Humanoid"] = false,
-						["Elemental"] = false,
-						["Critter"] = false,
-						["Magic"] = false,
-						["Flying"] = false,
-						["Aquatic"] = false,
-						["Undead"] = false,
-						["Beast"] = false,
-						["Mechanical"] = false,
-					},
-					["Quest"] = {
-						["Quest"] = false,
-					},
-					["Container"] = {
-						["Bag"] = false,
-						["Mining Bag"] = false,
-						["Cooking Bag"] = false,
-						["Gem Bag"] = false,
-						["Tackle Box"] = false,
-						["Engineering Bag"] = false,
-						["Herb Bag"] = false,
-						["Leatherworking Bag"] = false,
-						["Inscription Bag"] = false,
-						["Enchanting Bag"] = false,
-					},
-				},
 				["merge"] = {
 					[172965] = {
 						["enabled"] = true,
@@ -1664,12 +1533,12 @@ xCTSavedDB = {
 						["class"] = "WARRIOR",
 						["desc"] = 72,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -1699,12 +1568,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[227681] = {
 						["enabled"] = true,
@@ -1748,12 +1617,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[146067] = {
 						["enabled"] = true,
@@ -1790,12 +1659,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -3107,11 +2976,141 @@ xCTSavedDB = {
 						["desc"] = "Fire, Frost Damage (Mages)",
 					},
 				},
+				["items"] = {
+					["Weapon"] = {
+						["Two-Handed Maces"] = false,
+						["One-Handed Swords"] = false,
+						["Staves"] = false,
+						["Crossbows"] = false,
+						["Polearms"] = false,
+						["One-Handed Maces"] = false,
+						["Fishing Poles"] = false,
+						["Two-Handed Swords"] = false,
+						["Miscellaneous"] = false,
+						["Bows"] = false,
+						["One-Handed Axes"] = false,
+						["Guns"] = false,
+						["Fist Weapons"] = false,
+						["Daggers"] = false,
+						["Wands"] = false,
+						["Thrown"] = false,
+						["Two-Handed Axes"] = false,
+					},
+					["Glyph"] = {
+						["Warrior"] = false,
+						["Paladin"] = false,
+						["Shaman"] = false,
+						["Monk"] = false,
+						["Rogue"] = false,
+						["Mage"] = false,
+						["Warlock"] = false,
+						["Priest"] = false,
+						["Hunter"] = false,
+						["Death Knight"] = false,
+						["Druid"] = false,
+					},
+					["Trade Goods"] = {
+						["Other"] = false,
+						["Elemental"] = false,
+						["Jewelcrafting"] = false,
+						["Herb"] = false,
+						["Enchanting"] = false,
+						["Devices"] = false,
+						["Cooking"] = false,
+						["Materials"] = false,
+						["Explosives"] = false,
+						["Cloth"] = false,
+						["Item Enchantment"] = false,
+						["Leather"] = false,
+						["Metal & Stone"] = false,
+						["Parts"] = false,
+					},
+					["Miscellaneous"] = {
+						["Other"] = false,
+						["Reagent"] = false,
+						["Companion Pets"] = false,
+						["Holiday"] = false,
+						["Junk"] = false,
+						["Mount"] = false,
+					},
+					["Recipe"] = {
+						["Inscription"] = false,
+						["Blacksmithing"] = false,
+						["Alchemy"] = false,
+						["First Aid"] = false,
+						["Book"] = false,
+						["Cooking"] = false,
+						["Jewelcrafting"] = false,
+						["Fishing"] = false,
+						["Engineering"] = false,
+						["Leatherworking"] = false,
+						["Tailoring"] = false,
+						["Enchanting"] = false,
+					},
+					["Consumable"] = {
+						["Other"] = false,
+						["Elixir"] = false,
+						["Item Enhancement"] = false,
+						["Potion"] = false,
+						["Scroll"] = false,
+						["Flask"] = false,
+						["Bandage"] = false,
+						["Food & Drink"] = false,
+					},
+					["version"] = 1,
+					["Gem"] = {
+						["Simple"] = false,
+						["Blue"] = false,
+						["Meta"] = false,
+						["Cogwheel"] = false,
+						["Purple"] = false,
+						["Green"] = false,
+						["Prismatic"] = false,
+						["Yellow"] = false,
+						["Orange"] = false,
+						["Red"] = false,
+					},
+					["Armor"] = {
+						["Leather"] = false,
+						["Cosmetic"] = false,
+						["Shields"] = false,
+						["Mail"] = false,
+						["Plate"] = false,
+						["Cloth"] = false,
+						["Miscellaneous"] = false,
+					},
+					["Battle Pets"] = {
+						["Dragonkin"] = false,
+						["Humanoid"] = false,
+						["Elemental"] = false,
+						["Critter"] = false,
+						["Magic"] = false,
+						["Flying"] = false,
+						["Aquatic"] = false,
+						["Undead"] = false,
+						["Beast"] = false,
+						["Mechanical"] = false,
+					},
+					["Quest"] = {
+						["Quest"] = false,
+					},
+					["Container"] = {
+						["Bag"] = false,
+						["Mining Bag"] = false,
+						["Cooking Bag"] = false,
+						["Gem Bag"] = false,
+						["Tackle Box"] = false,
+						["Engineering Bag"] = false,
+						["Herb Bag"] = false,
+						["Leatherworking Bag"] = false,
+						["Inscription Bag"] = false,
+						["Enchanting Bag"] = false,
+					},
+				},
 				["multistrikeLatency"] = 300,
 			},
 			["frames"] = {
 				["general"] = {
-					["fontOutline"] = "2OUTLINE",
 					["Y"] = 452,
 					["font"] = "Expressway",
 					["colors"] = {
@@ -3248,13 +3247,13 @@ xCTSavedDB = {
 							},
 						},
 					},
+					["fontOutline"] = "2OUTLINE",
 					["X"] = -464,
 					["enabledFrame"] = false,
 				},
 				["power"] = {
 					["fontOutline"] = "2OUTLINE",
 					["font"] = "Expressway",
-					["enabledFrame"] = false,
 					["colors"] = {
 						["color_SOUL_SHARDS"] = {
 							["color"] = {
@@ -3334,12 +3333,10 @@ xCTSavedDB = {
 							},
 						},
 					},
+					["enabledFrame"] = false,
 				},
 				["healing"] = {
 					["enableRealmNames"] = false,
-					["fontOutline"] = "2OUTLINE",
-					["Width"] = 128,
-					["Y"] = -72,
 					["font"] = "Expressway",
 					["colors"] = {
 						["healingTakenCritical"] = {
@@ -3378,7 +3375,10 @@ xCTSavedDB = {
 							},
 						},
 					},
+					["fontOutline"] = "2OUTLINE",
 					["X"] = -397,
+					["Y"] = -72,
+					["Width"] = 128,
 				},
 				["outgoing"] = {
 					["Y"] = -95,
@@ -3477,11 +3477,10 @@ xCTSavedDB = {
 							},
 						},
 					},
-					["X"] = 427,
 					["fontOutline"] = "2OUTLINE",
+					["X"] = 427,
 				},
 				["critical"] = {
-					["fontOutline"] = "2OUTLINE",
 					["Y"] = 138,
 					["X"] = 421,
 					["colors"] = {
@@ -3504,6 +3503,7 @@ xCTSavedDB = {
 							},
 						},
 					},
+					["fontOutline"] = "2OUTLINE",
 					["font"] = "Expressway",
 				},
 				["procs"] = {
@@ -3528,12 +3528,13 @@ xCTSavedDB = {
 					["enabledFrame"] = false,
 				},
 				["loot"] = {
-					["fontOutline"] = "2OUTLINE",
 					["Y"] = 451,
 					["font"] = "Expressway",
 					["X"] = 510,
+					["fontOutline"] = "2OUTLINE",
 				},
 				["class"] = {
+					["enabledFrame"] = false,
 					["font"] = "Expressway",
 					["colors"] = {
 						["comboPoints"] = {
@@ -3551,13 +3552,11 @@ xCTSavedDB = {
 							},
 						},
 					},
-					["enabledFrame"] = false,
 					["fontOutline"] = "2OUTLINE",
 				},
 				["damage"] = {
-					["X"] = -398,
 					["Y"] = -226,
-					["font"] = "Expressway",
+					["X"] = -398,
 					["colors"] = {
 						["missTypesTaken"] = {
 							["colors"] = {
@@ -3688,6 +3687,7 @@ xCTSavedDB = {
 						},
 					},
 					["fontOutline"] = "2OUTLINE",
+					["font"] = "Expressway",
 				},
 			},
 			["dbVersion"] = "4.2.3",
@@ -5326,12 +5326,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Healing (Priest, Paladin)",
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -5410,12 +5410,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[156287] = {
 						["enabled"] = true,
@@ -5452,12 +5452,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 66,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -6404,12 +6404,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[185779] = {
 						["enabled"] = true,
@@ -8985,12 +8985,12 @@ xCTSavedDB = {
 						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Bodyguards)|r",
 						["desc"] = "Bodyguard: Vivianne",
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -9020,12 +9020,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[185779] = {
 						["enabled"] = true,
@@ -9069,12 +9069,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[146067] = {
 						["enabled"] = true,
@@ -9111,12 +9111,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 66,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -12608,12 +12608,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Healing (Priest, Paladin)",
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -12692,12 +12692,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[156287] = {
 						["enabled"] = true,
@@ -12734,12 +12734,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 66,
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -13686,12 +13686,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[185779] = {
 						["enabled"] = true,
@@ -17752,12 +17752,12 @@ xCTSavedDB = {
 						["class"] = "WARRIOR",
 						["desc"] = 72,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -17787,12 +17787,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[227681] = {
 						["enabled"] = true,
@@ -17836,12 +17836,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[146067] = {
 						["enabled"] = true,
@@ -17878,12 +17878,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -21373,12 +21373,12 @@ xCTSavedDB = {
 						["class"] = "WARRIOR",
 						["desc"] = 72,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -21408,12 +21408,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[227681] = {
 						["enabled"] = true,
@@ -21457,12 +21457,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[146067] = {
 						["enabled"] = true,
@@ -21499,12 +21499,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -24863,12 +24863,12 @@ xCTSavedDB = {
 						["class"] = "MONK",
 						["desc"] = 269,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -24947,12 +24947,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[156287] = {
 						["enabled"] = true,
@@ -24989,12 +24989,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -25941,12 +25941,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[227681] = {
 						["enabled"] = true,
@@ -28486,12 +28486,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Healing (Priest, Paladin)",
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -28570,12 +28570,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[156287] = {
 						["enabled"] = true,
@@ -28612,12 +28612,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 66,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -29564,12 +29564,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[185779] = {
 						["enabled"] = true,
@@ -30069,11 +30069,11 @@ xCTSavedDB = {
 						},
 					},
 					["fontOutline"] = "2OUTLINE",
-					["X"] = -464,
 					["enabledFrame"] = false,
+					["X"] = -464,
 				},
 				["power"] = {
-					["fontOutline"] = "2OUTLINE",
+					["enabledFrame"] = false,
 					["font"] = "Expressway",
 					["colors"] = {
 						["color_SOUL_SHARDS"] = {
@@ -30154,7 +30154,7 @@ xCTSavedDB = {
 							},
 						},
 					},
-					["enabledFrame"] = false,
+					["fontOutline"] = "2OUTLINE",
 				},
 				["healing"] = {
 					["enableRealmNames"] = false,
@@ -30303,7 +30303,7 @@ xCTSavedDB = {
 				},
 				["critical"] = {
 					["Y"] = 211,
-					["X"] = 832,
+					["font"] = "Expressway",
 					["colors"] = {
 						["genericDamageCritical"] = {
 							["color"] = {
@@ -30325,10 +30325,10 @@ xCTSavedDB = {
 						},
 					},
 					["fontOutline"] = "2OUTLINE",
-					["font"] = "Expressway",
+					["X"] = 832,
 				},
 				["procs"] = {
-					["enabledFrame"] = false,
+					["fontOutline"] = "2OUTLINE",
 					["font"] = "Expressway",
 					["colors"] = {
 						["spellReactive"] = {
@@ -30346,7 +30346,7 @@ xCTSavedDB = {
 							},
 						},
 					},
-					["fontOutline"] = "2OUTLINE",
+					["enabledFrame"] = false,
 				},
 				["loot"] = {
 					["Y"] = 456,
@@ -30377,7 +30377,7 @@ xCTSavedDB = {
 				},
 				["damage"] = {
 					["Y"] = -226,
-					["X"] = -468,
+					["font"] = "Expressway",
 					["colors"] = {
 						["missTypesTaken"] = {
 							["colors"] = {
@@ -30508,7 +30508,7 @@ xCTSavedDB = {
 						},
 					},
 					["fontOutline"] = "2OUTLINE",
-					["font"] = "Expressway",
+					["X"] = -468,
 				},
 			},
 			["dbVersion"] = "4.2.3",
@@ -32015,12 +32015,12 @@ xCTSavedDB = {
 						["class"] = "MONK",
 						["desc"] = 269,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -32099,12 +32099,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[156287] = {
 						["enabled"] = true,
@@ -32141,12 +32141,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -33093,12 +33093,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[227681] = {
 						["enabled"] = true,
@@ -35675,12 +35675,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Healing (Priest, Paladin)",
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -35759,12 +35759,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[156287] = {
 						["enabled"] = true,
@@ -35801,12 +35801,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 66,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -36753,12 +36753,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[185779] = {
 						["enabled"] = true,
@@ -37667,6 +37667,137 @@ xCTSavedDB = {
 		["Dosnutz - Stormrage"] = {
 			["spells"] = {
 				["multistrikeEnabled"] = false,
+				["items"] = {
+					["Container"] = {
+						["Bag"] = false,
+						["Mining Bag"] = false,
+						["Cooking Bag"] = false,
+						["Gem Bag"] = false,
+						["Tackle Box"] = false,
+						["Engineering Bag"] = false,
+						["Herb Bag"] = false,
+						["Inscription Bag"] = false,
+						["Leatherworking Bag"] = false,
+						["Enchanting Bag"] = false,
+					},
+					["Quest"] = {
+						["Quest"] = false,
+					},
+					["Trade Goods"] = {
+						["Other"] = false,
+						["Elemental"] = false,
+						["Jewelcrafting"] = false,
+						["Parts"] = false,
+						["Enchanting"] = false,
+						["Devices"] = false,
+						["Cooking"] = false,
+						["Leather"] = false,
+						["Explosives"] = false,
+						["Item Enchantment"] = false,
+						["Cloth"] = false,
+						["Materials"] = false,
+						["Metal & Stone"] = false,
+						["Herb"] = false,
+					},
+					["Miscellaneous"] = {
+						["Other"] = false,
+						["Reagent"] = false,
+						["Companion Pets"] = false,
+						["Mount"] = false,
+						["Junk"] = false,
+						["Holiday"] = false,
+					},
+					["Recipe"] = {
+						["Inscription"] = false,
+						["Blacksmithing"] = false,
+						["Alchemy"] = false,
+						["First Aid"] = false,
+						["Book"] = false,
+						["Cooking"] = false,
+						["Jewelcrafting"] = false,
+						["Tailoring"] = false,
+						["Engineering"] = false,
+						["Leatherworking"] = false,
+						["Fishing"] = false,
+						["Enchanting"] = false,
+					},
+					["Consumable"] = {
+						["Other"] = false,
+						["Elixir"] = false,
+						["Item Enhancement"] = false,
+						["Potion"] = false,
+						["Scroll"] = false,
+						["Flask"] = false,
+						["Bandage"] = false,
+						["Food & Drink"] = false,
+					},
+					["Gem"] = {
+						["Simple"] = false,
+						["Blue"] = false,
+						["Meta"] = false,
+						["Prismatic"] = false,
+						["Purple"] = false,
+						["Green"] = false,
+						["Cogwheel"] = false,
+						["Yellow"] = false,
+						["Orange"] = false,
+						["Red"] = false,
+					},
+					["Armor"] = {
+						["Leather"] = false,
+						["Cosmetic"] = false,
+						["Shields"] = false,
+						["Mail"] = false,
+						["Plate"] = false,
+						["Cloth"] = false,
+						["Miscellaneous"] = false,
+					},
+					["Battle Pets"] = {
+						["Dragonkin"] = false,
+						["Humanoid"] = false,
+						["Elemental"] = false,
+						["Critter"] = false,
+						["Magic"] = false,
+						["Flying"] = false,
+						["Aquatic"] = false,
+						["Undead"] = false,
+						["Beast"] = false,
+						["Mechanical"] = false,
+					},
+					["version"] = 1,
+					["Glyph"] = {
+						["Warrior"] = false,
+						["Paladin"] = false,
+						["Shaman"] = false,
+						["Monk"] = false,
+						["Rogue"] = false,
+						["Mage"] = false,
+						["Warlock"] = false,
+						["Priest"] = false,
+						["Hunter"] = false,
+						["Druid"] = false,
+						["Death Knight"] = false,
+					},
+					["Weapon"] = {
+						["One-Handed Axes"] = false,
+						["One-Handed Swords"] = false,
+						["Staves"] = false,
+						["Crossbows"] = false,
+						["Polearms"] = false,
+						["One-Handed Maces"] = false,
+						["Bows"] = false,
+						["Two-Handed Swords"] = false,
+						["Miscellaneous"] = false,
+						["Fishing Poles"] = false,
+						["Thrown"] = false,
+						["Guns"] = false,
+						["Fist Weapons"] = false,
+						["Daggers"] = false,
+						["Wands"] = false,
+						["Two-Handed Maces"] = false,
+						["Two-Handed Axes"] = false,
+					},
+				},
 				["merge"] = {
 					[172965] = {
 						["enabled"] = true,
@@ -39166,12 +39297,12 @@ xCTSavedDB = {
 						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Bodyguards)|r",
 						["desc"] = "Bodyguard: Vivianne",
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -39201,12 +39332,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[185779] = {
 						["enabled"] = true,
@@ -39250,12 +39381,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[146067] = {
 						["enabled"] = true,
@@ -39292,12 +39423,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 66,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -40609,141 +40740,11 @@ xCTSavedDB = {
 						["desc"] = "Fire, Frost Damage (Mages)",
 					},
 				},
-				["items"] = {
-					["Container"] = {
-						["Bag"] = false,
-						["Mining Bag"] = false,
-						["Cooking Bag"] = false,
-						["Gem Bag"] = false,
-						["Tackle Box"] = false,
-						["Engineering Bag"] = false,
-						["Herb Bag"] = false,
-						["Inscription Bag"] = false,
-						["Leatherworking Bag"] = false,
-						["Enchanting Bag"] = false,
-					},
-					["Quest"] = {
-						["Quest"] = false,
-					},
-					["Trade Goods"] = {
-						["Other"] = false,
-						["Elemental"] = false,
-						["Jewelcrafting"] = false,
-						["Parts"] = false,
-						["Enchanting"] = false,
-						["Devices"] = false,
-						["Cooking"] = false,
-						["Leather"] = false,
-						["Explosives"] = false,
-						["Item Enchantment"] = false,
-						["Cloth"] = false,
-						["Materials"] = false,
-						["Metal & Stone"] = false,
-						["Herb"] = false,
-					},
-					["Miscellaneous"] = {
-						["Other"] = false,
-						["Reagent"] = false,
-						["Companion Pets"] = false,
-						["Mount"] = false,
-						["Junk"] = false,
-						["Holiday"] = false,
-					},
-					["Recipe"] = {
-						["Inscription"] = false,
-						["Blacksmithing"] = false,
-						["Alchemy"] = false,
-						["First Aid"] = false,
-						["Book"] = false,
-						["Cooking"] = false,
-						["Jewelcrafting"] = false,
-						["Tailoring"] = false,
-						["Engineering"] = false,
-						["Leatherworking"] = false,
-						["Fishing"] = false,
-						["Enchanting"] = false,
-					},
-					["Consumable"] = {
-						["Other"] = false,
-						["Elixir"] = false,
-						["Item Enhancement"] = false,
-						["Potion"] = false,
-						["Scroll"] = false,
-						["Flask"] = false,
-						["Bandage"] = false,
-						["Food & Drink"] = false,
-					},
-					["Gem"] = {
-						["Simple"] = false,
-						["Blue"] = false,
-						["Meta"] = false,
-						["Prismatic"] = false,
-						["Purple"] = false,
-						["Green"] = false,
-						["Cogwheel"] = false,
-						["Yellow"] = false,
-						["Orange"] = false,
-						["Red"] = false,
-					},
-					["Armor"] = {
-						["Leather"] = false,
-						["Cosmetic"] = false,
-						["Shields"] = false,
-						["Mail"] = false,
-						["Plate"] = false,
-						["Cloth"] = false,
-						["Miscellaneous"] = false,
-					},
-					["Battle Pets"] = {
-						["Dragonkin"] = false,
-						["Humanoid"] = false,
-						["Elemental"] = false,
-						["Critter"] = false,
-						["Magic"] = false,
-						["Flying"] = false,
-						["Aquatic"] = false,
-						["Undead"] = false,
-						["Beast"] = false,
-						["Mechanical"] = false,
-					},
-					["version"] = 1,
-					["Glyph"] = {
-						["Warrior"] = false,
-						["Paladin"] = false,
-						["Shaman"] = false,
-						["Monk"] = false,
-						["Rogue"] = false,
-						["Mage"] = false,
-						["Warlock"] = false,
-						["Priest"] = false,
-						["Hunter"] = false,
-						["Druid"] = false,
-						["Death Knight"] = false,
-					},
-					["Weapon"] = {
-						["One-Handed Axes"] = false,
-						["One-Handed Swords"] = false,
-						["Staves"] = false,
-						["Crossbows"] = false,
-						["Polearms"] = false,
-						["One-Handed Maces"] = false,
-						["Bows"] = false,
-						["Two-Handed Swords"] = false,
-						["Miscellaneous"] = false,
-						["Fishing Poles"] = false,
-						["Thrown"] = false,
-						["Guns"] = false,
-						["Fist Weapons"] = false,
-						["Daggers"] = false,
-						["Wands"] = false,
-						["Two-Handed Maces"] = false,
-						["Two-Handed Axes"] = false,
-					},
-				},
 				["multistrikeLatency"] = 300,
 			},
 			["frames"] = {
 				["general"] = {
+					["fontOutline"] = "2OUTLINE",
 					["Y"] = 452,
 					["font"] = "Expressway",
 					["colors"] = {
@@ -40880,13 +40881,13 @@ xCTSavedDB = {
 							},
 						},
 					},
-					["fontOutline"] = "2OUTLINE",
-					["enabledFrame"] = false,
 					["X"] = -464,
+					["enabledFrame"] = false,
 				},
 				["power"] = {
-					["enabledFrame"] = false,
+					["fontOutline"] = "2OUTLINE",
 					["font"] = "Expressway",
+					["enabledFrame"] = false,
 					["colors"] = {
 						["color_SOUL_SHARDS"] = {
 							["color"] = {
@@ -40966,10 +40967,12 @@ xCTSavedDB = {
 							},
 						},
 					},
-					["fontOutline"] = "2OUTLINE",
 				},
 				["healing"] = {
 					["enableRealmNames"] = false,
+					["fontOutline"] = "2OUTLINE",
+					["Width"] = 128,
+					["Y"] = -82,
 					["font"] = "Expressway",
 					["colors"] = {
 						["healingTakenCritical"] = {
@@ -41008,10 +41011,7 @@ xCTSavedDB = {
 							},
 						},
 					},
-					["fontOutline"] = "2OUTLINE",
 					["X"] = -468,
-					["Y"] = -82,
-					["Width"] = 128,
 				},
 				["outgoing"] = {
 					["Y"] = -13,
@@ -41110,12 +41110,13 @@ xCTSavedDB = {
 							},
 						},
 					},
-					["fontOutline"] = "2OUTLINE",
 					["X"] = 864,
+					["fontOutline"] = "2OUTLINE",
 				},
 				["critical"] = {
+					["fontOutline"] = "2OUTLINE",
 					["Y"] = 211,
-					["font"] = "Expressway",
+					["X"] = 832,
 					["colors"] = {
 						["genericDamageCritical"] = {
 							["color"] = {
@@ -41136,11 +41137,10 @@ xCTSavedDB = {
 							},
 						},
 					},
-					["fontOutline"] = "2OUTLINE",
-					["X"] = 832,
+					["font"] = "Expressway",
 				},
 				["procs"] = {
-					["fontOutline"] = "2OUTLINE",
+					["enabledFrame"] = false,
 					["font"] = "Expressway",
 					["colors"] = {
 						["spellReactive"] = {
@@ -41158,16 +41158,15 @@ xCTSavedDB = {
 							},
 						},
 					},
-					["enabledFrame"] = false,
+					["fontOutline"] = "2OUTLINE",
 				},
 				["loot"] = {
+					["fontOutline"] = "2OUTLINE",
 					["Y"] = 451,
 					["font"] = "Expressway",
 					["X"] = 510,
-					["fontOutline"] = "2OUTLINE",
 				},
 				["class"] = {
-					["fontOutline"] = "2OUTLINE",
 					["font"] = "Expressway",
 					["colors"] = {
 						["comboPoints"] = {
@@ -41185,9 +41184,11 @@ xCTSavedDB = {
 							},
 						},
 					},
+					["fontOutline"] = "2OUTLINE",
 					["enabledFrame"] = false,
 				},
 				["damage"] = {
+					["X"] = -468,
 					["Y"] = -226,
 					["font"] = "Expressway",
 					["colors"] = {
@@ -41320,7 +41321,6 @@ xCTSavedDB = {
 						},
 					},
 					["fontOutline"] = "2OUTLINE",
-					["X"] = -468,
 				},
 			},
 			["dbVersion"] = "4.2.3",
@@ -41432,12 +41432,11 @@ xCTSavedDB = {
 						["prep"] = 0,
 						["interval"] = 4,
 					},
-					[146061] = {
+					[3674] = {
 						["enabled"] = true,
+						["class"] = "HUNTER",
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "ITEM",
-						["desc"] = "Physical Damage (Melee)",
+						["interval"] = 4,
 					},
 					[86678] = {
 						["enabled"] = true,
@@ -41548,12 +41547,11 @@ xCTSavedDB = {
 						["class"] = "ITEM",
 						["desc"] = "Aeda (Follower)",
 					},
-					[164603] = {
+					[119072] = {
 						["enabled"] = true,
+						["class"] = "PALADIN",
 						["prep"] = 0,
-						["interval"] = 3.5,
-						["class"] = "ITEM",
-						["desc"] = "Shredder",
+						["interval"] = 0.5,
 					},
 					[148135] = {
 						["enabled"] = true,
@@ -42090,11 +42088,12 @@ xCTSavedDB = {
 						["prep"] = 0,
 						["interval"] = 3,
 					},
-					[119072] = {
+					[164603] = {
 						["enabled"] = true,
-						["class"] = "PALADIN",
 						["prep"] = 0,
-						["interval"] = 0.5,
+						["interval"] = 3.5,
+						["class"] = "ITEM",
+						["desc"] = "Shredder",
 					},
 					[113656] = {
 						["enabled"] = true,
@@ -42134,11 +42133,12 @@ xCTSavedDB = {
 						["class"] = "ITEM",
 						["desc"] = "Legedary Cloak for Healers",
 					},
-					[3674] = {
+					[146061] = {
 						["enabled"] = true,
-						["class"] = "HUNTER",
 						["prep"] = 0,
-						["interval"] = 4,
+						["interval"] = 5,
+						["class"] = "ITEM",
+						["desc"] = "Physical Damage (Melee)",
 					},
 				},
 				["items"] = {
@@ -44358,12 +44358,12 @@ xCTSavedDB = {
 						["class"] = "MONK",
 						["desc"] = 269,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -44442,12 +44442,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[156287] = {
 						["enabled"] = true,
@@ -44484,12 +44484,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -45436,12 +45436,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[227681] = {
 						["enabled"] = true,
@@ -50997,12 +50997,12 @@ xCTSavedDB = {
 						["class"] = "MONK",
 						["desc"] = 269,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -51081,12 +51081,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[156287] = {
 						["enabled"] = true,
@@ -51123,12 +51123,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -52075,12 +52075,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[227681] = {
 						["enabled"] = true,
@@ -56190,12 +56190,12 @@ xCTSavedDB = {
 						["class"] = "WARRIOR",
 						["desc"] = 72,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -56225,12 +56225,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[227681] = {
 						["enabled"] = true,
@@ -56274,12 +56274,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[146067] = {
 						["enabled"] = true,
@@ -56316,12 +56316,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -58139,7 +58139,7 @@ xCTSavedDB = {
 				},
 				["critical"] = {
 					["Y"] = 45,
-					["font"] = "Expressway",
+					["X"] = 480,
 					["colors"] = {
 						["genericDamageCritical"] = {
 							["color"] = {
@@ -58161,10 +58161,10 @@ xCTSavedDB = {
 						},
 					},
 					["fontOutline"] = "2OUTLINE",
-					["X"] = 480,
+					["font"] = "Expressway",
 				},
 				["procs"] = {
-					["enabledFrame"] = false,
+					["fontOutline"] = "2OUTLINE",
 					["font"] = "Expressway",
 					["colors"] = {
 						["spellReactive"] = {
@@ -58182,12 +58182,15 @@ xCTSavedDB = {
 							},
 						},
 					},
-					["fontOutline"] = "2OUTLINE",
+					["enabledFrame"] = false,
 				},
 				["loot"] = {
-					["Y"] = 451,
+					["visibilityTime"] = 4,
+					["fontSize"] = 15,
+					["iconsSize"] = 12,
 					["font"] = "Expressway",
 					["X"] = 1,
+					["Y"] = 451,
 					["fontOutline"] = "2OUTLINE",
 				},
 				["class"] = {
@@ -58213,7 +58216,7 @@ xCTSavedDB = {
 				},
 				["damage"] = {
 					["Y"] = -230,
-					["font"] = "Expressway",
+					["X"] = -393,
 					["colors"] = {
 						["missTypesTaken"] = {
 							["colors"] = {
@@ -58344,7 +58347,7 @@ xCTSavedDB = {
 						},
 					},
 					["fontOutline"] = "2OUTLINE",
-					["X"] = -393,
+					["font"] = "Expressway",
 				},
 			},
 			["dbVersion"] = "4.2.3",
@@ -61597,12 +61600,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Healing (Priest, Paladin)",
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -61681,12 +61684,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[156287] = {
 						["enabled"] = true,
@@ -61723,12 +61726,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 66,
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -62675,12 +62678,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[185779] = {
 						["enabled"] = true,
@@ -63181,11 +63184,11 @@ xCTSavedDB = {
 						},
 					},
 					["fontOutline"] = "2OUTLINE",
-					["enabledFrame"] = false,
 					["X"] = -464,
+					["enabledFrame"] = false,
 				},
 				["power"] = {
-					["enabledFrame"] = false,
+					["fontOutline"] = "2OUTLINE",
 					["font"] = "Expressway",
 					["colors"] = {
 						["color_SOUL_SHARDS"] = {
@@ -63266,7 +63269,7 @@ xCTSavedDB = {
 							},
 						},
 					},
-					["fontOutline"] = "2OUTLINE",
+					["enabledFrame"] = false,
 				},
 				["healing"] = {
 					["enableRealmNames"] = false,
@@ -63415,7 +63418,7 @@ xCTSavedDB = {
 				},
 				["critical"] = {
 					["Y"] = -58,
-					["X"] = 460,
+					["font"] = "Expressway",
 					["colors"] = {
 						["genericDamageCritical"] = {
 							["color"] = {
@@ -63437,11 +63440,11 @@ xCTSavedDB = {
 						},
 					},
 					["fontOutline"] = "2OUTLINE",
-					["font"] = "Expressway",
+					["X"] = 460,
 				},
 				["procs"] = {
 					["Y"] = 67,
-					["X"] = -371,
+					["font"] = "Expressway",
 					["colors"] = {
 						["spellReactive"] = {
 							["color"] = {
@@ -63459,7 +63462,7 @@ xCTSavedDB = {
 						},
 					},
 					["fontOutline"] = "2OUTLINE",
-					["font"] = "Expressway",
+					["X"] = -371,
 				},
 				["loot"] = {
 					["Y"] = 451,
@@ -63490,7 +63493,7 @@ xCTSavedDB = {
 				},
 				["damage"] = {
 					["Y"] = -229,
-					["X"] = -394,
+					["font"] = "Expressway",
 					["colors"] = {
 						["missTypesTaken"] = {
 							["colors"] = {
@@ -63621,7 +63624,7 @@ xCTSavedDB = {
 						},
 					},
 					["fontOutline"] = "2OUTLINE",
-					["font"] = "Expressway",
+					["X"] = -394,
 				},
 			},
 			["dbVersion"] = "4.2.3",
@@ -65260,12 +65263,12 @@ xCTSavedDB = {
 						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Bodyguards)|r",
 						["desc"] = "Bodyguard: Vivianne",
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -65295,12 +65298,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[185779] = {
 						["enabled"] = true,
@@ -65344,12 +65347,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[146067] = {
 						["enabled"] = true,
@@ -65386,12 +65389,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 66,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -68788,12 +68791,12 @@ xCTSavedDB = {
 						["class"] = "WARRIOR",
 						["desc"] = 72,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -68823,12 +68826,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[227681] = {
 						["enabled"] = true,
@@ -68872,12 +68875,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[146067] = {
 						["enabled"] = true,
@@ -68914,12 +68917,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -72278,12 +72281,12 @@ xCTSavedDB = {
 						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Bodyguards)|r",
 						["desc"] = "Bodyguard: Vivianne",
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -72313,12 +72316,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[185779] = {
 						["enabled"] = true,
@@ -72362,12 +72365,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[146067] = {
 						["enabled"] = true,
@@ -72404,12 +72407,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 66,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -75901,12 +75904,12 @@ xCTSavedDB = {
 						["class"] = "WARRIOR",
 						["desc"] = 72,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -75936,12 +75939,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[227681] = {
 						["enabled"] = true,
@@ -75985,12 +75988,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[146067] = {
 						["enabled"] = true,
@@ -76027,12 +76030,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -79973,12 +79976,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Healing (Priest, Paladin)",
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -80057,12 +80060,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[156287] = {
 						["enabled"] = true,
@@ -80099,12 +80102,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 66,
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -81051,12 +81054,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[185779] = {
 						["enabled"] = true,
@@ -82919,12 +82922,12 @@ xCTSavedDB = {
 						["class"] = "WARRIOR",
 						["desc"] = 72,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -82954,12 +82957,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[227681] = {
 						["enabled"] = true,
@@ -83003,12 +83006,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[146067] = {
 						["enabled"] = true,
@@ -83045,12 +83048,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -86542,12 +86545,12 @@ xCTSavedDB = {
 						["class"] = "MONK",
 						["desc"] = 269,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -86626,12 +86629,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[156287] = {
 						["enabled"] = true,
@@ -86668,12 +86671,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -87620,12 +87623,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[227681] = {
 						["enabled"] = true,
@@ -88125,11 +88128,11 @@ xCTSavedDB = {
 						},
 					},
 					["fontOutline"] = "2OUTLINE",
-					["X"] = -464,
 					["enabledFrame"] = false,
+					["X"] = -464,
 				},
 				["power"] = {
-					["fontOutline"] = "2OUTLINE",
+					["enabledFrame"] = false,
 					["font"] = "Expressway",
 					["colors"] = {
 						["color_SOUL_SHARDS"] = {
@@ -88210,7 +88213,7 @@ xCTSavedDB = {
 							},
 						},
 					},
-					["enabledFrame"] = false,
+					["fontOutline"] = "2OUTLINE",
 				},
 				["healing"] = {
 					["enableRealmNames"] = false,

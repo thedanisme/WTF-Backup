@@ -20,6 +20,13 @@ X: -410
 Y: -184
 W: 210
 H: 175
+Frame: ScriptErrorsFrame
+FrameLevel: 1
+Anchor: CENTER
+X: -297
+Y: 72
+W: 500
+H: 300
 Frame: _NPCScanButton
 FrameLevel: 1
 Anchor: BOTTOM

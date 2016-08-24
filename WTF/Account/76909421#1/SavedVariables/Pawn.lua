@@ -327,6 +327,9 @@ PawnCommon = {
 			["UnenchantedColor"] = "bfb74e",
 			["IconTexturePath"] = "Interface\\Icons\\Ability_Rogue_DeadlyBrew",
 			["PerCharacterOptions"] = {
+				["Emmarosa-Stormrage"] = {
+					["Visible"] = true,
+				},
 			},
 			["ClassID"] = 4,
 			["UpgradesFollowSpecialization"] = true,
@@ -471,9 +474,6 @@ PawnCommon = {
 			["IconTexturePath"] = "Interface\\Icons\\Spell_Frost_FrostBolt02",
 			["PerCharacterOptions"] = {
 				["Squelben-Stormrage"] = {
-					["Visible"] = true,
-				},
-				["Dosnutz-Stormrage"] = {
 					["Visible"] = true,
 				},
 			},
@@ -632,10 +632,13 @@ PawnCommon = {
 			["UnenchantedColor"] = "2f95b0",
 			["IconTexturePath"] = "Interface\\Icons\\Spell_Fire_FireBolt02",
 			["PerCharacterOptions"] = {
+				["Pryahprism-Turalyon"] = {
+					["Visible"] = true,
+				},
 				["Kateplusnine-Stormrage"] = {
 					["Visible"] = true,
 				},
-				["Pryahprism-Turalyon"] = {
+				["Dosnutz-Stormrage"] = {
 					["Visible"] = true,
 				},
 			},
@@ -740,9 +743,6 @@ PawnCommon = {
 			["IconTexturePath"] = "Interface\\Icons\\Ability_Stealth",
 			["PerCharacterOptions"] = {
 				["Knutts-Turalyon"] = {
-					["Visible"] = true,
-				},
-				["Emmarosa-Stormrage"] = {
 					["Visible"] = true,
 				},
 			},

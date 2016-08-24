@@ -71,10 +71,10 @@ DataStore_TalentsDB = {
 				},
 			},
 			["Default.Stormrage.Emmarosa"] = {
-				["lastUpdate"] = 1471649736,
+				["lastUpdate"] = 1472009579,
 				["Specializations"] = {
-					7575, -- [1]
-					9879, -- [2]
+					6613, -- [1]
+					11863, -- [2]
 					5625, -- [3]
 				},
 				["Class"] = "ROGUE",
@@ -89,7 +89,7 @@ DataStore_TalentsDB = {
 			},
 			["Default.Stormrage.Brobies"] = {
 				["ActiveTalents"] = 1,
-				["lastUpdate"] = 1471635480,
+				["lastUpdate"] = 1471996262,
 				["Class"] = "MONK",
 				["GlyphList"] = {
 					11, -- [1]
@@ -256,7 +256,7 @@ DataStore_TalentsDB = {
 			},
 			["Default.Stormrage.Yanlery"] = {
 				["ActiveTalents"] = 1,
-				["lastUpdate"] = 1471635635,
+				["lastUpdate"] = 1471996352,
 				["GlyphList"] = {
 					11, -- [1]
 					7962, -- [2]
@@ -362,12 +362,12 @@ DataStore_TalentsDB = {
 				},
 			},
 			["Default.Turalyon.Callil"] = {
-				["lastUpdate"] = 1471952078,
+				["lastUpdate"] = 1472012470,
 				["Class"] = "PRIEST",
 				["ActiveTalents"] = 1,
 				["Specializations"] = {
 					7062, -- [1]
-					[3] = 10926,
+					[3] = 6830,
 				},
 			},
 			["Default.Bloodhoof.Dalgrens"] = {
@@ -557,7 +557,7 @@ DataStore_TalentsDB = {
 				["Class"] = "DEMONHUNTER",
 			},
 			["Default.Stormrage.Dosnutz"] = {
-				["lastUpdate"] = 1471964219,
+				["lastUpdate"] = 1472016486,
 				["Specializations"] = {
 					11687, -- [1]
 					6565, -- [2]
@@ -945,7 +945,7 @@ DataStore_TalentsDB = {
 				[365] = "Pathfinding",
 				[1201] = "Frostbrand Weapon",
 				[987] = "Falling Avenger",
-				[1213] = "Flapping Owl",
+				[432] = "The Chameleon",
 				[183] = "Double Jeopardy",
 				[215] = "Capacitor Totem",
 				[986] = "Focused Wrath",
@@ -954,27 +954,27 @@ DataStore_TalentsDB = {
 				[1205] = "Savagery",
 				[494] = "Bloodthirst",
 				[1206] = "The Solstice",
-				[496] = "Gag Order",
+				[991] = "Burning Anger",
 				[1207] = "Purify Spirit",
 				[988] = "Righteous Retreat",
 				[1208] = "Cleanse",
 				[733] = "Disguise",
-				[1209] = "Detoxing",
-				[495] = "Rude Interruption",
+				[431] = "Aquatic Form",
+				[989] = "Bladed Judgment",
 				[1210] = "Nature's Cure",
 				[734] = "Cloak of Shadows",
 				[216] = "Purge",
 				[990] = "Crow Feast",
 				[1212] = "Flying Fists",
 				[735] = "Thunder",
-				[432] = "The Chameleon",
-				[991] = "Burning Anger",
+				[1213] = "Flapping Owl",
+				[496] = "Gag Order",
 				[551] = "Dash",
 				[736] = "Feral Spirit",
 				[1215] = "Ascendance",
 				[366] = "Tame Beast",
-				[737] = "Riptide",
 				[369] = "Mend Pet",
+				[737] = "Riptide",
 				[433] = "Charm Woodland Creature",
 				[497] = "Blitz",
 				[291] = "Unstable Affliction",
@@ -1024,8 +1024,8 @@ DataStore_TalentsDB = {
 				[520] = "Death and Decay",
 				[521] = "Shifting Presences",
 				[439] = "Revive Pet",
-				[989] = "Bladed Judgment",
-				[431] = "Aquatic Form",
+				[495] = "Rude Interruption",
+				[1209] = "Detoxing",
 				[188] = "Avenging Wrath",
 				[220] = "Wind Shear",
 				[591] = "Ignite",

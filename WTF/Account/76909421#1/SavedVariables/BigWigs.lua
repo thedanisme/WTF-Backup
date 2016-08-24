@@ -30,8 +30,6 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Bosses_Rocketspark and Borka"] = {
-		},
 		["BigWigs_Bosses_Mannoroth"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -55,14 +53,7 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Bosses_Hellfire High Council"] = {
-			["profiles"] = {
-				["Default"] = {
-					[184366] = 0,
-					[184358] = 0,
-					[184355] = 0,
-				},
-			},
+		["BigWigs_Plugins_BossBlock"] = {
 		},
 		["BigWigs_Bosses_Archimonde"] = {
 			["profiles"] = {
@@ -90,15 +81,9 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["LibDualSpec-1.0"] = {
-		},
-		["BigWigs_Plugins_BossBlock"] = {
-		},
 		["BigWigs_Plugins_Colors"] = {
 		},
 		["BigWigs_Plugins_Raid Icons"] = {
-		},
-		["BigWigs_Bosses_Skylord Tovra"] = {
 		},
 		["BigWigs_Plugins_Bars"] = {
 			["profiles"] = {
@@ -129,6 +114,32 @@ BigWigs3DB = {
 				},
 			},
 		},
+		["BigWigs_Plugins_HeroesVoices"] = {
+		},
+		["BigWigs_Bosses_Hellfire High Council"] = {
+			["profiles"] = {
+				["Default"] = {
+					[184366] = 0,
+					[184358] = 0,
+					[184355] = 0,
+				},
+			},
+		},
+		["BigWigs_Plugins_Super Emphasize"] = {
+			["profiles"] = {
+				["Default"] = {
+					["outline"] = "OUTLINE",
+					["font"] = "Expressway",
+				},
+			},
+		},
+		["BigWigs_Bosses_Kormrok"] = {
+			["profiles"] = {
+				["Default"] = {
+					[181296] = 0,
+				},
+			},
+		},
 		["BigWigs_Plugins_Messages"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -144,19 +155,20 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_Super Emphasize"] = {
-			["profiles"] = {
-				["Default"] = {
-					["outline"] = "OUTLINE",
-					["font"] = "Expressway",
-				},
-			},
-		},
 		["BigWigs_Plugins_Respawn"] = {
 		},
-		["BigWigs_Plugins_HeroesVoices"] = {
+		["LibDualSpec-1.0"] = {
 		},
-		["BigWigs_Bosses_Nitrogg Thundertower"] = {
+		["BigWigs_Plugins_Common Auras"] = {
+			["profiles"] = {
+				["Default"] = {
+					["repair"] = 515,
+					[2825] = 515,
+					["feast"] = 515,
+					[106898] = 515,
+				},
+			},
+			["reset"] = true,
 		},
 		["BigWigs_Plugins_Proximity"] = {
 			["profiles"] = {
@@ -173,24 +185,6 @@ BigWigs3DB = {
 					["posy"] = 590.222193111313,
 				},
 			},
-		},
-		["BigWigs_Bosses_Kormrok"] = {
-			["profiles"] = {
-				["Default"] = {
-					[181296] = 0,
-				},
-			},
-		},
-		["BigWigs_Plugins_Common Auras"] = {
-			["profiles"] = {
-				["Default"] = {
-					[2825] = 515,
-					["feast"] = 515,
-					[106898] = 515,
-					["repair"] = 515,
-				},
-			},
-			["reset"] = true,
 		},
 	},
 	["profileKeys"] = {
@@ -556,7 +550,7 @@ BigWigsStatisticsDB = {
 				["wipes"] = 16,
 			},
 			["heroic"] = {
-				["kills"] = 4,
+				["kills"] = 5,
 				["best"] = 235.258999999962,
 				["wipes"] = 56,
 			},
@@ -622,9 +616,9 @@ BigWigsStatisticsDB = {
 				["wipes"] = 3,
 			},
 			["heroic"] = {
-				["kills"] = 7,
+				["kills"] = 8,
 				["wipes"] = 14,
-				["best"] = 335.414999999979,
+				["best"] = 271.280000000028,
 			},
 			["LFR"] = {
 				["kills"] = 13,

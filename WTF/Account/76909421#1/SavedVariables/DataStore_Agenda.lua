@@ -36,7 +36,14 @@ DataStore_AgendaDB = {
 				["lastUpdate"] = 1471191147,
 			},
 			["Default.Stormrage.Emmarosa"] = {
-				["lastUpdate"] = 1471649736,
+				["DungeonIDs"] = {
+					["Hellfire Citadel Heroic|637100036"] = "559542|1472009650|0|1",
+					["Skyreach Mythic|637126824"] = "559542|1472009650|0|0",
+					["Auchindoun Mythic|637133964"] = "559542|1472009650|0|0",
+					["Bloodmaul Slag Mines Mythic|637140839"] = "559542|1472009650|0|0",
+					["Shadowmoon Burial Grounds Mythic|637121417"] = "559542|1472009650|0|0",
+				},
+				["lastUpdate"] = 1472009579,
 			},
 			["Default.Bloodhoof.Arando"] = {
 				["Contacts"] = {
@@ -46,20 +53,20 @@ DataStore_AgendaDB = {
 				},
 				["lastUpdate"] = 1469995040,
 			},
-			["Default.Stormrage.Talthalador"] = {
-				["lastUpdate"] = 1471964849,
+			["Default.Stormrage.Brobies"] = {
+				["lastUpdate"] = 1471996262,
 			},
 			["Default.Turalyon.Shaneequa"] = {
 				["lastUpdate"] = 1471804274,
 			},
-			["Default.Stormrage.Brobies"] = {
-				["lastUpdate"] = 1471635480,
+			["Default.Stormrage.Talthalador"] = {
+				["lastUpdate"] = 1471964849,
 			},
 			["Default.Turalyon.Callil"] = {
-				["lastUpdate"] = 1471952078,
+				["lastUpdate"] = 1472012464,
 			},
-			["Default.Stormrage.Danoh"] = {
-				["lastUpdate"] = 1471635810,
+			["Default.Turalyon.Skratch"] = {
+				["lastUpdate"] = 1469994525,
 			},
 			["Default.Turalyon.Knutts"] = {
 				["lastUpdate"] = 1469912067,
@@ -77,17 +84,17 @@ DataStore_AgendaDB = {
 			["Default.Turalyon.Pryahprism"] = {
 				["lastUpdate"] = 1471190896,
 			},
-			["Default.Stormrage.Edgelordshue"] = {
-				["lastUpdate"] = 1470762217,
+			["Default.Bloodhoof.Dalgrens"] = {
+				["lastUpdate"] = 1469995428,
 			},
 			["Default.Stormrage.Yanlery"] = {
-				["lastUpdate"] = 1471635635,
+				["lastUpdate"] = 1471996353,
 			},
-			["Default.Turalyon.Skratch"] = {
-				["lastUpdate"] = 1469994525,
+			["Default.Stormrage.Danoh"] = {
+				["lastUpdate"] = 1471635810,
 			},
-			["Default.Stormrage.Shamadan"] = {
-				["lastUpdate"] = 1471899032,
+			["Default.Stormrage.Ershirley"] = {
+				["lastUpdate"] = 1469599252,
 			},
 			["Default.Turalyon.Titte"] = {
 				["lastUpdate"] = 1470432001,
@@ -101,47 +108,17 @@ DataStore_AgendaDB = {
 			["Default.Stormrage.Whyfy"] = {
 				["lastUpdate"] = 1470788843,
 			},
-			["Default.Stormrage.Ershirley"] = {
-				["lastUpdate"] = 1469599252,
+			["Default.Stormrage.Shamadan"] = {
+				["lastUpdate"] = 1471899032,
 			},
 			["Default.Stormrage.Dosnutz"] = {
-				["lastUpdate"] = 1471964219,
-				["LFGDungeons"] = {
-					["985.Count"] = 3,
-					["984.Socrethar the Eternal"] = true,
-					["849.Kargath Bladefist"] = true,
-					["984.Shadow-Lord Iskar"] = true,
-					["986.Count"] = 1,
-					["850.Tectus, The Living Mountain"] = true,
-					["982.Count"] = 3,
-					["849.Count"] = 3,
-					["849.The Butcher"] = true,
-					["823.Blackhand"] = true,
-					["850.Twin Ogron"] = true,
-					["983.Gorefiend"] = true,
-					["984.Tyrant Velhari"] = true,
-					["986.Archimonde"] = true,
-					["985.Mannoroth"] = true,
-					["983.Count"] = 3,
-					["850.Ko'ragh"] = true,
-					["849.Brackenspore"] = true,
-					["850.Count"] = 3,
-					["982.Hellfire Assault"] = true,
-					["984.Count"] = 3,
-					["985.Xhul'horac"] = true,
-					["823.Count"] = 1,
-					["985.Fel Lord Zakuun"] = true,
-					["982.Kormrok"] = true,
-					["982.Iron Reaver"] = true,
-					["983.Hellfire High Council"] = true,
-					["983.Kilrogg Deadeye"] = true,
-				},
+				["lastUpdate"] = 1472016486,
 			},
 			["Default.Stormrage.Kateplusnine"] = {
 				["lastUpdate"] = 1470756353,
 			},
-			["Default.Bloodhoof.Dalgrens"] = {
-				["lastUpdate"] = 1469995428,
+			["Default.Stormrage.Edgelordshue"] = {
+				["lastUpdate"] = 1470762217,
 			},
 		},
 	},

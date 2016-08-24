@@ -21,7 +21,7 @@ AtlasLootCharDB = {
 	["GUI"] = {
 		["classFilter"] = true,
 		["selected"] = {
-			"AtlasLoot_Cataclysm", -- [1]
+			nil, -- [1]
 			"BlackwingDescent", -- [2]
 			2, -- [3]
 			4, -- [4]

@@ -10,8 +10,8 @@ IskarAssistDB = {
 		["Iphone - Bloodhoof"] = "Default",
 		["Bruhbies - Stormrage"] = "Default",
 		["Dosnutz - Stormrage"] = "Default",
-		["Talthalador - Stormrage"] = "Default",
 		["Rosabria - Sargeras"] = "Default",
+		["Talthalador - Stormrage"] = "Default",
 		["Horny - Bloodhoof"] = "Default",
 		["Arando - Bloodhoof"] = "Default",
 		["Danoh - Stormrage"] = "Default",
@@ -36,9 +36,9 @@ IskarAssistDB = {
 				},
 				["IsLocked"] = true,
 			},
-			["archimonde_radar"] = true,
-			["MainPanel_strata"] = "BACKGROUND",
 			["right_side_debuffs"] = true,
+			["MainPanel_strata"] = "BACKGROUND",
+			["archimonde_radar"] = true,
 			["textfont"] = "Expressway",
 			["debuff_phantasmal_corruption"] = false,
 			["group_sorting"] = 1,
@@ -54,9 +54,9 @@ RADataBase = {
 		["Bruhbies - Stormrage"] = "Default",
 		["Emmarosa - Stormrage"] = "Default",
 		["Arando - Bloodhoof"] = "Default",
-		["Danoh - Stormrage"] = "Default",
-		["Aranduh - Bloodhoof"] = "Default",
 		["Squelben - Stormrage"] = "Default",
+		["Aranduh - Bloodhoof"] = "Default",
+		["Danoh - Stormrage"] = "Default",
 		["Yanlery - Stormrage"] = "Default",
 		["Horny - Bloodhoof"] = "Default",
 		["Rosabria - Sargeras"] = "Default",
@@ -85,7 +85,7 @@ RADataBase = {
 						["g"] = 0,
 						["b"] = 0,
 					},
-					["panel_width"] = 130,
+					["panel_locked"] = false,
 					["RABattleResMainFrame"] = {
 						["position"] = {
 							["y"] = 0,
@@ -93,7 +93,7 @@ RADataBase = {
 						},
 						["IsLocked"] = false,
 					},
-					["panel_locked"] = false,
+					["panel_width"] = 130,
 					["panel_show_res"] = true,
 					["text_color"] = {
 						["a"] = 1,
@@ -108,8 +108,8 @@ RADataBase = {
 						["g"] = 0,
 						["b"] = 0,
 					},
-					["panel_height"] = 30,
 					["text_anchor"] = "center",
+					["panel_height"] = 30,
 				},
 				["Aura Bank"] = {
 					["enabled"] = true,
@@ -169,15 +169,14 @@ RADataBase = {
 						["IsLocked"] = false,
 					},
 					["menu_priority"] = 16,
-					["auto_accept_invites"] = false,
-					["auto_invite_limited"] = true,
 					["auto_accept_invites_limited"] = true,
+					["auto_invite_limited"] = true,
+					["auto_accept_invites"] = false,
 					["auto_invite"] = false,
 				},
 				["Raid Assignments"] = {
 					["notes"] = {
 					},
-					["text_size"] = 12,
 					["NotepadScreenFrame"] = {
 						["position"] = {
 							["y"] = 0,
@@ -185,6 +184,7 @@ RADataBase = {
 						},
 						["IsLocked"] = false,
 					},
+					["menu_priority"] = 20,
 					["currently_shown"] = false,
 					["hide_on_combat"] = false,
 					["auto_complete"] = true,
@@ -208,7 +208,7 @@ RADataBase = {
 						},
 						["IsLocked"] = false,
 					},
-					["menu_priority"] = 20,
+					["text_size"] = 12,
 				},
 				["Player Check"] = {
 					["RAPlayerCheckMainFrame"] = {
@@ -327,18 +327,19 @@ RADataBase = {
 					},
 					["menu_priority"] = 1,
 				},
-				["BisList"] = {
-					["characters"] = {
-					},
-					["RABisListMainFrame"] = {
+				["Stop Meters"] = {
+					["enabled"] = true,
+					["stop_recount"] = true,
+					["RAStopMetersMainFrame"] = {
 						["position"] = {
 							["y"] = 0,
 							["x"] = 0,
 						},
 						["IsLocked"] = false,
 					},
-					["enabled"] = true,
-					["menu_priority"] = 13,
+					["stop_details"] = true,
+					["menu_priority"] = 1,
+					["stop_skada"] = true,
 				},
 				["Raid Groups"] = {
 					["show_class_name"] = true,
@@ -354,10 +355,10 @@ RADataBase = {
 						["IsLocked"] = false,
 					},
 					["menu_priority"] = 23,
-					["show_level"] = true,
+					["filter"] = false,
 					["enabled"] = true,
 					["text_shadow"] = false,
-					["filter"] = false,
+					["show_level"] = true,
 					["show_role_icon"] = true,
 				},
 				["Cooldowns"] = {
@@ -471,19 +472,18 @@ RADataBase = {
 						},
 					},
 				},
-				["Stop Meters"] = {
-					["enabled"] = true,
-					["stop_recount"] = true,
-					["RAStopMetersMainFrame"] = {
+				["BisList"] = {
+					["characters"] = {
+					},
+					["RABisListMainFrame"] = {
 						["position"] = {
 							["y"] = 0,
 							["x"] = 0,
 						},
 						["IsLocked"] = false,
 					},
-					["stop_details"] = true,
-					["menu_priority"] = 1,
-					["stop_skada"] = true,
+					["enabled"] = true,
+					["menu_priority"] = 13,
 				},
 			},
 		},
