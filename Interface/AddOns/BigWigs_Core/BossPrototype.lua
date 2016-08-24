@@ -139,7 +139,7 @@ boss.engageId = nil
 -- @within Enable triggers
 boss.respawnTime = nil
 
---- The NPC/mob id of the world boss
+--- The NPC/mob id of the world boss.
 -- Used to specify that a module is for a world boss, not an instance boss.
 -- @within Enable triggers
 boss.worldBoss = nil
@@ -148,8 +148,8 @@ boss.worldBoss = nil
 -- @within Enable triggers
 boss.otherMenu = nil
 
---- Check if a module option is enabled
--- This is a wrapper around self.db.profile[key]
+--- Check if a module option is enabled.
+-- This is a wrapper around the self.db.profile[key] table.
 -- @return boolean
 function boss:GetOption(key)
 	return self.db.profile[key]
@@ -564,6 +564,10 @@ do
 		"target", "targettarget",
 		"mouseover", "mouseovertarget",
 		"focus", "focustarget",
+		"nameplate1", "nameplate2", "nameplate3", "nameplate4", "nameplate5", "nameplate6", "nameplate7", "nameplate8", "nameplate9", "nameplate10",
+		"nameplate11", "nameplate12", "nameplate13", "nameplate14", "nameplate15", "nameplate16", "nameplate17", "nameplate18", "nameplate19", "nameplate20",
+		"nameplate21", "nameplate22", "nameplate23", "nameplate24", "nameplate25", "nameplate26", "nameplate27", "nameplate28", "nameplate29", "nameplate30",
+		"nameplate31", "nameplate32", "nameplate33", "nameplate34", "nameplate35", "nameplate36", "nameplate37", "nameplate38", "nameplate39", "nameplate40",
 		"party1target", "party2target", "party3target", "party4target",
 		"raid1target", "raid2target", "raid3target", "raid4target", "raid5target",
 		"raid6target", "raid7target", "raid8target", "raid9target", "raid10target",
@@ -588,7 +592,7 @@ do
 			end
 		end
 	end
-	--- Fetches a unit id by scanning available targets
+	--- Fetches a unit id by scanning available targets.
 	-- Scans through available targets such as bosses, nameplates and player targets
 	-- in an attempt to find a valid unit id to return.
 	-- @param id GUID or mob/npc id
@@ -838,7 +842,7 @@ function boss:MobId(guid)
 	return tonumber(id) or 1
 end
 
---- Get a localized name from an id. Positive ids for spells (GetSpellInfo) and negative ids for journal entries (EJ_GetSectionInfo)
+--- Get a localized name from an id. Positive ids for spells (GetSpellInfo) and negative ids for journal entries (EJ_GetSectionInfo).
 -- @return spell name
 function boss:SpellName(spellId)
 	return spells[spellId]

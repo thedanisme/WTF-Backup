@@ -1,8 +1,11 @@
 # BigWigs
 
-## [v7.3-21-gc724d58](https://github.com/BigWigsMods/BigWigs/tree/c724d58b69ae773922e40fdc91a04dc2860bc674) (2016-08-24) [](#top)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v7.3...c724d58b69ae773922e40fdc91a04dc2860bc674)
+## [v7.3-24-g7ddc3ac](https://github.com/BigWigsMods/BigWigs/tree/7ddc3acf1cff3a055e687ef3e2241a4ed46431b2) (2016-08-24) [](#top)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v7.3...7ddc3acf1cff3a055e687ef3e2241a4ed46431b2)
 
+-   Plugins/Bars: minor cleanups  
+-   More doc fixes  
+-   add nameplates to unit table  
 -   Fix :Mythic() to also return for Mythic dungeons.  
 -   update some comments  
 -   more API updates  
