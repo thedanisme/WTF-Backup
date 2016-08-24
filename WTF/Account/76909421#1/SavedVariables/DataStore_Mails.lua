@@ -10,8 +10,8 @@ DataStore_MailsDB = {
 		["Titte - Turalyon"] = "Titte - Turalyon",
 		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
 		["Dosnutz - Stormrage"] = "Dosnutz - Stormrage",
-		["Callil - Turalyon"] = "Callil - Turalyon",
-		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
+		["Shamadan - Stormrage"] = "Shamadan - Stormrage",
+		["Brobies - Stormrage"] = "Brobies - Stormrage",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
 		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
 		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
@@ -22,8 +22,8 @@ DataStore_MailsDB = {
 		["Edgelordshue - Stormrage"] = "Edgelordshue - Stormrage",
 		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
 		["Shhbbyisok - Stormrage"] = "Shhbbyisok - Stormrage",
-		["Brobies - Stormrage"] = "Brobies - Stormrage",
-		["Shamadan - Stormrage"] = "Shamadan - Stormrage",
+		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
+		["Callil - Turalyon"] = "Callil - Turalyon",
 	},
 	["global"] = {
 		["Characters"] = {
@@ -32,8 +32,8 @@ DataStore_MailsDB = {
 				["lastVisitDate"] = "2016/08/14 12:12",
 			},
 			["Default.Stormrage.Emmarosa"] = {
-				["lastUpdate"] = 1472004896,
-				["lastVisitDate"] = "2016/08/23 22:14",
+				["lastUpdate"] = 1472076815,
+				["lastVisitDate"] = "2016/08/24 18:13",
 			},
 			["Default.Bloodhoof.Arando"] = {
 				["lastUpdate"] = 1469173661,
@@ -48,8 +48,8 @@ DataStore_MailsDB = {
 				["lastVisitDate"] = "2016/07/30 15:41",
 			},
 			["Default.Stormrage.Shhbbyisok"] = {
-				["lastUpdate"] = 1471558623,
-				["lastVisitDate"] = "2016/08/18 18:17",
+				["lastUpdate"] = 1472061960,
+				["lastVisitDate"] = "2016/08/24 14:06",
 			},
 			["Default.Turalyon.Pryahprism"] = {
 				["lastUpdate"] = 1471189498,
@@ -59,13 +59,13 @@ DataStore_MailsDB = {
 				["lastUpdate"] = 1471051041,
 				["Mails"] = {
 					{
-						["icon"] = 134327,
+						["lastCheck"] = 1471051041,
 						["sender"] = "Rolosh Wavechaser",
 						["subject"] = "Charting a Course - Horde",
 						["returned"] = false,
 						["money"] = 0,
 						["text"] = "Admiral,\r\n\r\nYou have proven yourself to be an excellent commander of our fleet.  Take this gift as a token of my appreciation.\r\n\r\nWear it proudly.\r\n\r\n--Rolosh Wavechaser",
-						["lastCheck"] = 1471051041,
+						["icon"] = 134327,
 						["daysLeft"] = 29.9995250701904,
 					}, -- [1]
 				},
@@ -79,9 +79,9 @@ DataStore_MailsDB = {
 				["lastUpdate"] = 1471190717,
 				["lastVisitDate"] = "2016/08/14 12:05",
 			},
-			["Default.Turalyon.Skratch"] = {
-				["lastUpdate"] = 1469905437,
-				["lastVisitDate"] = "2016/07/30 15:03",
+			["Default.Stormrage.Brobies"] = {
+				["lastUpdate"] = 1471635486,
+				["lastVisitDate"] = "2016/08/19 15:38",
 			},
 			["Default.Turalyon.Titte"] = {
 				["lastUpdate"] = 1471996493,
@@ -91,8 +91,8 @@ DataStore_MailsDB = {
 						["itemID"] = 127817,
 						["link"] = "|cff0070dd|Hitem:127817::::::::100:73::4::::|h[Baleful Plate Chest]|h|r",
 						["count"] = 1,
-						["lastCheck"] = 1471996493,
 						["icon"] = 1017536,
+						["lastCheck"] = 1471996493,
 						["daysLeft"] = 30,
 					}, -- [1]
 					{
@@ -100,8 +100,8 @@ DataStore_MailsDB = {
 						["itemID"] = 127822,
 						["link"] = "|cff0070dd|Hitem:127822::::::::100:73::4::::|h[Baleful Plate Spaulders]|h|r",
 						["count"] = 1,
-						["lastCheck"] = 1471996493,
 						["icon"] = 1017540,
+						["lastCheck"] = 1471996493,
 						["daysLeft"] = 30,
 					}, -- [2]
 					{
@@ -109,8 +109,8 @@ DataStore_MailsDB = {
 						["itemID"] = 127818,
 						["link"] = "|cff0070dd|Hitem:127818::::::::100:73::4::::|h[Baleful Plate Treads]|h|r",
 						["count"] = 1,
-						["lastCheck"] = 1471996493,
 						["icon"] = 1017533,
+						["lastCheck"] = 1471996493,
 						["daysLeft"] = 30,
 					}, -- [3]
 					{
@@ -118,8 +118,8 @@ DataStore_MailsDB = {
 						["itemID"] = 127821,
 						["link"] = "|cff0070dd|Hitem:127821::::::::100:73::4::::|h[Baleful Plate Leggings]|h|r",
 						["count"] = 1,
-						["lastCheck"] = 1471996493,
 						["icon"] = 1017539,
+						["lastCheck"] = 1471996493,
 						["daysLeft"] = 30,
 					}, -- [4]
 					{
@@ -127,8 +127,8 @@ DataStore_MailsDB = {
 						["itemID"] = 127820,
 						["link"] = "|cff0070dd|Hitem:127820::::::::100:73::4::::|h[Baleful Plate Hood]|h|r",
 						["count"] = 1,
-						["lastCheck"] = 1471996493,
 						["icon"] = 1017538,
+						["lastCheck"] = 1471996493,
 						["daysLeft"] = 30,
 					}, -- [5]
 					{
@@ -136,8 +136,8 @@ DataStore_MailsDB = {
 						["itemID"] = 127823,
 						["link"] = "|cff0070dd|Hitem:127823::::::::100:73::4::::|h[Baleful Plate Girdle]|h|r",
 						["count"] = 1,
-						["lastCheck"] = 1471996493,
 						["icon"] = 1017532,
+						["lastCheck"] = 1471996493,
 						["daysLeft"] = 30,
 					}, -- [6]
 					{
@@ -145,8 +145,8 @@ DataStore_MailsDB = {
 						["itemID"] = 127823,
 						["link"] = "|cff0070dd|Hitem:127823::::::::100:73::4::::|h[Baleful Plate Girdle]|h|r",
 						["count"] = 1,
-						["lastCheck"] = 1471996493,
 						["icon"] = 1017532,
+						["lastCheck"] = 1471996493,
 						["daysLeft"] = 30,
 					}, -- [7]
 					{
@@ -154,8 +154,8 @@ DataStore_MailsDB = {
 						["itemID"] = 127816,
 						["link"] = "|cff0070dd|Hitem:127816::::::::100:73::4::::|h[Baleful Plate Bracers]|h|r",
 						["count"] = 1,
-						["lastCheck"] = 1471996493,
 						["icon"] = 1017534,
+						["lastCheck"] = 1471996493,
 						["daysLeft"] = 30,
 					}, -- [8]
 				},
@@ -181,9 +181,9 @@ DataStore_MailsDB = {
 				["lastUpdate"] = 1471798791,
 				["lastVisitDate"] = "2016/08/21 12:59",
 			},
-			["Default.Stormrage.Brobies"] = {
-				["lastUpdate"] = 1471635486,
-				["lastVisitDate"] = "2016/08/19 15:38",
+			["Default.Turalyon.Skratch"] = {
+				["lastUpdate"] = 1469905437,
+				["lastVisitDate"] = "2016/07/30 15:03",
 			},
 		},
 	},

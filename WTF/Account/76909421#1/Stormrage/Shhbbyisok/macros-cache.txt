@@ -1,0 +1,4 @@
+VER 3 0100000000000001 "Interrupt" "INV_Misc_QuestionMark"
+#showtooltip
+/use [nomod] Mind Freeze;[mod]Asphyxiate
+END

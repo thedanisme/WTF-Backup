@@ -10,8 +10,8 @@ DataStore_AgendaDB = {
 		["Titte - Turalyon"] = "Titte - Turalyon",
 		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
 		["Dosnutz - Stormrage"] = "Dosnutz - Stormrage",
-		["Callil - Turalyon"] = "Callil - Turalyon",
-		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
+		["Shamadan - Stormrage"] = "Shamadan - Stormrage",
+		["Brobies - Stormrage"] = "Brobies - Stormrage",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
 		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
 		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
@@ -22,8 +22,8 @@ DataStore_AgendaDB = {
 		["Edgelordshue - Stormrage"] = "Edgelordshue - Stormrage",
 		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
 		["Shhbbyisok - Stormrage"] = "Shhbbyisok - Stormrage",
-		["Brobies - Stormrage"] = "Brobies - Stormrage",
-		["Shamadan - Stormrage"] = "Shamadan - Stormrage",
+		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
+		["Callil - Turalyon"] = "Callil - Turalyon",
 	},
 	["global"] = {
 		["Options"] = {
@@ -37,13 +37,13 @@ DataStore_AgendaDB = {
 			},
 			["Default.Stormrage.Emmarosa"] = {
 				["DungeonIDs"] = {
-					["Hellfire Citadel Heroic|637100036"] = "559542|1472009650|0|1",
-					["Skyreach Mythic|637126824"] = "559542|1472009650|0|0",
-					["Auchindoun Mythic|637133964"] = "559542|1472009650|0|0",
-					["Bloodmaul Slag Mines Mythic|637140839"] = "559542|1472009650|0|0",
-					["Shadowmoon Burial Grounds Mythic|637121417"] = "559542|1472009650|0|0",
+					["Hellfire Citadel Heroic|637100036"] = "492515|1472076679|0|1",
+					["Skyreach Mythic|637126824"] = "492515|1472076679|0|0",
+					["Auchindoun Mythic|637133964"] = "492515|1472076679|0|0",
+					["Bloodmaul Slag Mines Mythic|637140839"] = "492515|1472076679|0|0",
+					["Shadowmoon Burial Grounds Mythic|637121417"] = "492515|1472076679|0|0",
 				},
-				["lastUpdate"] = 1472009579,
+				["lastUpdate"] = 1472076679,
 			},
 			["Default.Bloodhoof.Arando"] = {
 				["Contacts"] = {
@@ -53,20 +53,20 @@ DataStore_AgendaDB = {
 				},
 				["lastUpdate"] = 1469995040,
 			},
-			["Default.Stormrage.Brobies"] = {
-				["lastUpdate"] = 1471996262,
+			["Default.Bloodhoof.Dalgrens"] = {
+				["lastUpdate"] = 1469995428,
 			},
-			["Default.Turalyon.Shaneequa"] = {
-				["lastUpdate"] = 1471804274,
+			["Default.Stormrage.Kateplusnine"] = {
+				["lastUpdate"] = 1470756353,
 			},
 			["Default.Stormrage.Talthalador"] = {
-				["lastUpdate"] = 1471964849,
+				["lastUpdate"] = 1472050855,
 			},
-			["Default.Turalyon.Callil"] = {
-				["lastUpdate"] = 1472012464,
+			["Default.Stormrage.Danoh"] = {
+				["lastUpdate"] = 1471635810,
 			},
-			["Default.Turalyon.Skratch"] = {
-				["lastUpdate"] = 1469994525,
+			["Default.Stormrage.Ershirley"] = {
+				["lastUpdate"] = 1469599252,
 			},
 			["Default.Turalyon.Knutts"] = {
 				["lastUpdate"] = 1469912067,
@@ -75,50 +75,48 @@ DataStore_AgendaDB = {
 				["Contacts"] = {
 					["Sgtshmitty"] = {
 						["note"] = "",
-						["class"] = "Demon Hunter",
-						["level"] = 100,
 					},
 				},
-				["lastUpdate"] = 1471558626,
+				["lastUpdate"] = 1472062523,
 			},
 			["Default.Turalyon.Pryahprism"] = {
 				["lastUpdate"] = 1471190896,
 			},
-			["Default.Bloodhoof.Dalgrens"] = {
-				["lastUpdate"] = 1469995428,
+			["Default.Stormrage.Edgelordshue"] = {
+				["lastUpdate"] = 1470762217,
 			},
 			["Default.Stormrage.Yanlery"] = {
 				["lastUpdate"] = 1471996353,
 			},
-			["Default.Stormrage.Danoh"] = {
-				["lastUpdate"] = 1471635810,
-			},
-			["Default.Stormrage.Ershirley"] = {
-				["lastUpdate"] = 1469599252,
-			},
-			["Default.Turalyon.Titte"] = {
-				["lastUpdate"] = 1470432001,
-			},
-			["Default.Stormrage.Squelben"] = {
-				["lastUpdate"] = 1470356975,
-			},
-			["Default.Turalyon.Lackteight"] = {
-				["lastUpdate"] = 1471053493,
-			},
-			["Default.Stormrage.Whyfy"] = {
-				["lastUpdate"] = 1470788843,
+			["Default.Turalyon.Callil"] = {
+				["lastUpdate"] = 1472012464,
 			},
 			["Default.Stormrage.Shamadan"] = {
 				["lastUpdate"] = 1471899032,
 			},
+			["Default.Turalyon.Titte"] = {
+				["lastUpdate"] = 1470432001,
+			},
+			["Default.Turalyon.Lackteight"] = {
+				["lastUpdate"] = 1471053493,
+			},
+			["Default.Stormrage.Squelben"] = {
+				["lastUpdate"] = 1470356975,
+			},
+			["Default.Stormrage.Whyfy"] = {
+				["lastUpdate"] = 1470788843,
+			},
+			["Default.Turalyon.Skratch"] = {
+				["lastUpdate"] = 1469994525,
+			},
 			["Default.Stormrage.Dosnutz"] = {
-				["lastUpdate"] = 1472016486,
+				["lastUpdate"] = 1472051165,
 			},
-			["Default.Stormrage.Kateplusnine"] = {
-				["lastUpdate"] = 1470756353,
+			["Default.Turalyon.Shaneequa"] = {
+				["lastUpdate"] = 1471804274,
 			},
-			["Default.Stormrage.Edgelordshue"] = {
-				["lastUpdate"] = 1470762217,
+			["Default.Stormrage.Brobies"] = {
+				["lastUpdate"] = 1471996262,
 			},
 		},
 	},

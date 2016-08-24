@@ -20,6 +20,13 @@ X: 383
 Y: 58
 W: 210
 H: 175
+Frame: ScriptErrorsFrame
+FrameLevel: 1
+Anchor: CENTER
+X: -345
+Y: 32
+W: 500
+H: 300
 Frame: AtlasLoot_GUI-Frame
 FrameLevel: 1
 Anchor: CENTER
@@ -48,10 +55,3 @@ X: -289
 Y: -35
 W: 56
 H: 42
-Frame: ScriptErrorsFrame
-FrameLevel: 1
-Anchor: CENTER
-X: -345
-Y: 32
-W: 500
-H: 300

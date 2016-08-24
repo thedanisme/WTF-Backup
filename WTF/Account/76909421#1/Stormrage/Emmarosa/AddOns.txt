@@ -141,7 +141,7 @@ Altoholic_Guild: enabled
 Altoholic_Search: enabled
 Altoholic_Summary: enabled
 AngryAssignments: disabled
-AtlasLoot_Legion: disabled
+AtlasLoot_Legion: enabled
 BestInSlot_Legion: enabled
 BigWigs_Nightmare: disabled
 BigWigs_Nighthold: disabled

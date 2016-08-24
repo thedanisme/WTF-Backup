@@ -1,15 +1,6 @@
 
 EncounterDetailsDB = {
 	["emotes"] = {
-		{
-			["boss"] = "Vazruden the Herald",
-		}, -- [1]
-		{
-			["boss"] = "Vazruden the Herald",
-		}, -- [2]
-		{
-			["boss"] = "Omor the Unscarred",
-		}, -- [3]
 	},
 	["encounter_spells"] = {
 		[30641] = {
