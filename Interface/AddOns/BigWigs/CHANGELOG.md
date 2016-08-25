@@ -1,7 +1,7 @@
 # BigWigs
 
-## [v7.3-24-g7ddc3ac](https://github.com/BigWigsMods/BigWigs/tree/7ddc3acf1cff3a055e687ef3e2241a4ed46431b2) (2016-08-24) [](#top)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v7.3...7ddc3acf1cff3a055e687ef3e2241a4ed46431b2)
+## [v7.4](https://github.com/BigWigsMods/BigWigs/tree/v7.4) (2016-08-24) [](#top)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v7.3...v7.4)
 
 -   Plugins/Bars: minor cleanups  
 -   More doc fixes  

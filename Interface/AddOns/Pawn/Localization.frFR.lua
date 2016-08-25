@@ -203,7 +203,7 @@ Pour plus d'information sur la Personnalisation de Pawn, regarder le fichier d'a
 		WeaponTypeWarglaiveInfo = "points devant etre assign\195\169 si la pi\195\168ce est un Glaive de guerre",
 	},
 	TooltipParsing = {
-		Agility = "^%+?([-%d%.,]+) Agilit\195\169$",
+		Agility = "^%+?([-%d%. ,]+) Agilit\195\169$",
 		AllStats = "^%+?([%d%. ,]+) \195\160 toutes les caract\195\169ristiques$",
 		Ap = "^%+?([%d%. ,]+) \195\160 la puissance d'attaque$",
 		Armor = "^Armure\194\160: ([%d%. ,]+)$",
@@ -241,7 +241,7 @@ Pour plus d'information sur la Personnalisation de Pawn, regarder le fichier d'a
 		Flexible = "^Flexible$", -- Needs review
 		Formula = "Formule\194\160:", -- Needs review
 		Gun = "^Arme \195\160 feu$",
-		Haste = "^%+?(%-?%d+) H\195\162te$", -- Needs review
+		Haste = "^%+?(%-?%d+. ,) H\195\162te$", -- Needs review
 		Haste2 = "^%+?([%d%. ,]+) \195\160 la h\195\162te",
 		HaventCollectedAppearance = "^Vous n'avez pas r\195\169cup\195\169r\195\169 cette apparence$",
 		HeirloomLevelRange = "^Requier un niveau de %d+ \195\160 (%d+)", -- Needs review
@@ -255,7 +255,7 @@ Pour plus d'information sur la Personnalisation de Pawn, regarder le fichier d'a
 		Hp52 = "^Equip\195\169: Reconstitue([%d%. ,]+) de vie par 5 sec%.$",
 		Hp53 = " ^%+?([%d%. ,]+) Points de [vV]ie [tT]outes les 5 [sS]%.?$",
 		Hp54 = " ^%+?([%d%. ,]+) [vV]ie [pP]ar 5 [sS]ec%.?$",
-		Intellect = "^%+?([-%d%.,]+) Intelligence$",
+		Intellect = "^%+?([-%d%. ,]+) Intelligence$",
 		Leather = "^Cuir$",
 		Leech = "^%+([%d%. ,]+) Ponction$",
 		Mace = "^Masse$",
