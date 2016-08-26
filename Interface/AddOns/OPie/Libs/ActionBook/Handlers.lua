@@ -641,7 +641,7 @@ do -- toybox: item ID
 	AB:RegisterActionType("toy", function(id)
 		if type(id) == "number" and not map[id] then
 			if PlayerHasToy(id) then
-				map[id] = AB:CreateActionSlot(toyHint, id, "attribute", "type","macro", "macrotext",SLASH_USE_TOY1 .. " " .. id)
+				map[id] = AB:CreateActionSlot(toyHint, id, "attribute", "type","toy", "toy",id)
 			end
 		end
 		return map[id]

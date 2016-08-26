@@ -56,13 +56,15 @@ RingKeeper:SetRing("HunterShots", {
 });
 
 RingKeeper:SetRing("MageCombat", {
-	{id=45438, _u="i"}, -- block
-	{id=12043, _u="p"}, -- pom
+	{id=45438, _u="b"}, -- ice block
 	{id=30449, _u="s"}, -- spellsteal
-	{id=55342, _u="m"}, -- mirror
-	{id=12051, _u="e"}, -- evo
-	{id=12042, _u="a"}, -- ap
-	{id=80353, _u="t"}, -- tw
+	{id=55342, _u="m"}, -- mirror image
+	{id=12051, _u="e"}, -- evocation
+	{id=12042, _u="a"}, -- arcane power
+	{id=108839, _u="f"}, -- ice floes
+	{id=80353, _u="t"}, -- time warp
+	{id=11426, _u="i"}, -- ice barrier
+	{id=190319, _u="c"}, -- combustion
 	name=L"Combat", limit="MAGE", hotkey="PRIMARY", _u="OPCMC"
 })
 RingKeeper:SetRing("MageTools", {
@@ -78,10 +80,9 @@ RingKeeper:SetRing("MageTools", {
 do -- MageTravel
 	local m = "/cast [mod] {{spell:%s}}; {{spell:%s}}";
 	RingKeeper:SetRing("MageTravel", {
-		{id=m:format("176246/176244", "176248/176242"), _u="h"}, -- Ashran
+		{id=m:format(224871, 224869), _u="b"}, -- Dalaran Broken Isles
 		{id=m:format("132620/132626", "132621/132627"), _u="v"}, -- Vale of Eternal Blossoms
-		{id=m:format("88346/88345", "88344/88342"), _u="b"}, -- Tol Barad
-		{id=m:format(53142, 53140), _u="r"}, -- Dalaran
+		{id=m:format(53142, 53140), _u="r"}, -- Dalaran Northrend
 		{id=m:format("35717/33691", 33690), _u="s"}, -- Shattrath
 		{id=m:format(10059, 3561), _u="w"}, -- Stormwind
 		{id=m:format(11419, 3565), _u="d"}, -- Darnassus
@@ -89,12 +90,18 @@ do -- MageTravel
 		{id=m:format(11418, 3563), _u="u"}, -- Undercity
 		{id=m:format(11416, 3562), _u="i"}, -- Ironforge
 		{id=m:format(11417, 3567), _u="o"}, -- Orgrimmar
-		{id=m:format(49360, 49359), _u="m"}, -- Theramore
-		{id=m:format(49361, 49358), _u="n"}, -- Stonard
+		{"ring", "ExtraPortals", onlyNonEmpty=true, _u="e"}, -- Extra Portals
 		{id=m:format(32267, 32272), _u="l"}, -- Silvermoon
 		{id=m:format(32266, 32271), _u="x"}, -- Exodar
-		{id=m:format(120146, 120145), _u="a"}, -- Ancient Dalaran
 	  name=L"Portals and Teleports", hotkey="ALT-G", limit="MAGE", _u="OPCMP"
+	});
+	RingKeeper:SetRing("ExtraPortals", {
+		{id=m:format(120146, 120145), _u="a"}, -- Ancient Dalaran
+		{id=m:format(49360, 49359), _u="m"}, -- Theramore
+		{id=m:format(49361, 49358), _u="n"}, -- Stonard
+		{id=m:format("88346/88345", "88344/88342"), _u="b", c="99C5CC"}, -- Tol Barad
+		{id=m:format("176246/176244", "176248/176242"), _u="h", c="ff4000"}, -- Ashran
+		name=L"Extra Portals", limit="MAGE", _u="OPCME", internal=true
 	});
 end
 
