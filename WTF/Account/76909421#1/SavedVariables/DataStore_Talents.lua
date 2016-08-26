@@ -71,7 +71,7 @@ DataStore_TalentsDB = {
 				["Class"] = "MAGE",
 			},
 			["Default.Stormrage.Emmarosa"] = {
-				["lastUpdate"] = 1472076679,
+				["lastUpdate"] = 1472236271,
 				["Specializations"] = {
 					6613, -- [1]
 					11863, -- [2]
@@ -190,7 +190,7 @@ DataStore_TalentsDB = {
 				["Class"] = "ROGUE",
 			},
 			["Default.Stormrage.Shhbbyisok"] = {
-				["lastUpdate"] = 1472062523,
+				["lastUpdate"] = 1472228239,
 				["Specializations"] = {
 					150, -- [1]
 					14973, -- [2]
@@ -428,7 +428,7 @@ DataStore_TalentsDB = {
 				["Class"] = "DEATHKNIGHT",
 			},
 			["Default.Stormrage.Talthalador"] = {
-				["lastUpdate"] = 1472050855,
+				["lastUpdate"] = 1472230101,
 				["Specializations"] = {
 					5, -- [1]
 					6, -- [2]
@@ -1168,7 +1168,7 @@ DataStore_TalentsRefDB = {
 					["name"] = "Unholy",
 				}, -- [3]
 			},
-			["Version"] = 22423,
+			["Version"] = 22498,
 		},
 		["WARRIOR"] = {
 			["Locale"] = "enUS",
@@ -1320,7 +1320,7 @@ DataStore_TalentsRefDB = {
 					["name"] = "Subtlety",
 				}, -- [3]
 			},
-			["Version"] = 22423,
+			["Version"] = 22498,
 		},
 		["MAGE"] = {
 			["Locale"] = "enUS",
@@ -1628,7 +1628,7 @@ DataStore_TalentsRefDB = {
 					["name"] = "Vengeance",
 				}, -- [2]
 			},
-			["Version"] = 22423,
+			["Version"] = 22498,
 		},
 		["PALADIN"] = {
 			["Locale"] = "enUS",

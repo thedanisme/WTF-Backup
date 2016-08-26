@@ -19,12 +19,11 @@ AtlasLootCharDB = {
 	},
 	["__addonrevision"] = 4325,
 	["GUI"] = {
-		["classFilter"] = true,
 		["selected"] = {
-			nil, -- [1]
-			"BlackwingDescent", -- [2]
-			2, -- [3]
-			4, -- [4]
+			"AtlasLoot_Cataclysm", -- [1]
+			"CoTDragonSoul", -- [2]
+			12, -- [3]
+			2, -- [4]
 			0, -- [5]
 		},
 		["point"] = {

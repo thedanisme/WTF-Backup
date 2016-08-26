@@ -37,13 +37,14 @@ DataStore_AgendaDB = {
 			},
 			["Default.Stormrage.Emmarosa"] = {
 				["DungeonIDs"] = {
-					["Hellfire Citadel Heroic|637100036"] = "492515|1472076679|0|1",
-					["Skyreach Mythic|637126824"] = "492515|1472076679|0|0",
-					["Auchindoun Mythic|637133964"] = "492515|1472076679|0|0",
-					["Bloodmaul Slag Mines Mythic|637140839"] = "492515|1472076679|0|0",
-					["Shadowmoon Burial Grounds Mythic|637121417"] = "492515|1472076679|0|0",
+					["Hellfire Citadel Heroic|637100036"] = "332927|1472236271|0|1",
+					["Dragon Soul 25 Player|637637470"] = "332927|1472236271|0|1",
+					["Skyreach Mythic|637126824"] = "332927|1472236271|0|0",
+					["Auchindoun Mythic|637133964"] = "332927|1472236271|0|0",
+					["Bloodmaul Slag Mines Mythic|637140839"] = "332927|1472236271|0|0",
+					["Shadowmoon Burial Grounds Mythic|637121417"] = "332927|1472236271|0|0",
 				},
-				["lastUpdate"] = 1472076679,
+				["lastUpdate"] = 1472236271,
 			},
 			["Default.Bloodhoof.Arando"] = {
 				["Contacts"] = {
@@ -60,7 +61,7 @@ DataStore_AgendaDB = {
 				["lastUpdate"] = 1470756353,
 			},
 			["Default.Stormrage.Talthalador"] = {
-				["lastUpdate"] = 1472050855,
+				["lastUpdate"] = 1472230100,
 			},
 			["Default.Stormrage.Danoh"] = {
 				["lastUpdate"] = 1471635810,
@@ -77,7 +78,7 @@ DataStore_AgendaDB = {
 						["note"] = "",
 					},
 				},
-				["lastUpdate"] = 1472062523,
+				["lastUpdate"] = 1472228239,
 			},
 			["Default.Turalyon.Pryahprism"] = {
 				["lastUpdate"] = 1471190896,

@@ -94,12 +94,12 @@ DataStore_CurrenciesDB = {
 				["Mists of Pandaria"] = 22,
 				["Epicurean's Award"] = 27,
 				["Honor Points"] = 15,
+				["Conquest Points"] = 14,
 				["Miscellaneous"] = 11,
-				["Warlords of Draenor"] = 1,
 				["Legion"] = 36,
 				["Apexis Crystal"] = 2,
 				["Darkmoon Prize Ticket"] = 12,
-				["Conquest Points"] = 14,
+				["Warlords of Draenor"] = 1,
 				["Garrison Resources"] = 4,
 				["Seal of Tempered Fate"] = 7,
 				["Champion's Seal"] = 25,
@@ -151,21 +151,21 @@ DataStore_CurrenciesDB = {
 					24394, -- [2]
 					17, -- [3]
 					85138, -- [4]
-					9620, -- [5]
+					22420, -- [5]
 					3, -- [6]
 					882052, -- [7]
 					4486, -- [8]
 					75568, -- [9]
-					452232, -- [10]
-					286090, -- [11]
+					901896, -- [10]
+					307850, -- [11]
 					12, -- [12]
 					14, -- [13]
 					45, -- [14]
 					24228, -- [15]
 					1680936, -- [16]
 					53, -- [17]
-					162, -- [18]
-					550, -- [19]
+					290, -- [18]
+					1446, -- [19]
 				},
 				["Archeology"] = {
 					0, -- [1]
@@ -187,14 +187,14 @@ DataStore_CurrenciesDB = {
 					0, -- [17]
 					0, -- [18]
 				},
-				["lastUpdate"] = 1472076865,
+				["lastUpdate"] = 1472236271,
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
 					[396] = "0-0-0-0",
 					[390] = "0-0-0-0",
 					[823] = "6891-0-0-0",
 					[392] = "0-0-0-0",
-					[824] = "3533-0-0-10000",
+					[824] = "7046-0-0-10000",
 					[994] = "0-0-0-20",
 				},
 			},
@@ -306,7 +306,7 @@ DataStore_CurrenciesDB = {
 				},
 			},
 			["Default.Stormrage.Talthalador"] = {
-				["lastUpdate"] = 1472050855,
+				["lastUpdate"] = 1472230101,
 				["Archeology"] = {
 					0, -- [1]
 					0, -- [2]
@@ -463,7 +463,7 @@ DataStore_CurrenciesDB = {
 				},
 			},
 			["Default.Stormrage.Shhbbyisok"] = {
-				["lastUpdate"] = 1472063167,
+				["lastUpdate"] = 1472228239,
 				["Archeology"] = {
 					0, -- [1]
 					0, -- [2]
@@ -486,7 +486,7 @@ DataStore_CurrenciesDB = {
 				},
 				["Currencies"] = {
 					73, -- [1]
-					6346, -- [2]
+					12234, -- [2]
 					3, -- [3]
 					38408, -- [4]
 				},

@@ -2,5 +2,5 @@
 BADBOY_POPUP = true
 BADBOY_NOLINK = nil
 BADBOY_BLACKLIST = {
-	["dayFromCal"] = 24,
+	["dayFromCal"] = 26,
 }

@@ -256,6 +256,9 @@ PawnCommon = {
 			["UnenchantedColor"] = "bfb74e",
 			["IconTexturePath"] = "Interface\\Icons\\INV_Sword_30",
 			["PerCharacterOptions"] = {
+				["Emmarosa-Stormrage"] = {
+					["Visible"] = true,
+				},
 			},
 			["LocalizedName"] = "Rogue: Outlaw",
 			["UpgradesFollowSpecialization"] = true,
@@ -329,9 +332,6 @@ PawnCommon = {
 			["UnenchantedColor"] = "bfb74e",
 			["IconTexturePath"] = "Interface\\Icons\\Ability_Rogue_DeadlyBrew",
 			["PerCharacterOptions"] = {
-				["Emmarosa-Stormrage"] = {
-					["Visible"] = true,
-				},
 			},
 			["LocalizedName"] = "Rogue: Assassination",
 			["UpgradesFollowSpecialization"] = true,
@@ -588,10 +588,10 @@ PawnCommon = {
 			["UnenchantedColor"] = "7a2496",
 			["IconTexturePath"] = "Interface\\Icons\\ability_demonhunter_specdps",
 			["PerCharacterOptions"] = {
-				["Talthalador-Stormrage"] = {
+				["Edgelordshue-Stormrage"] = {
 					["Visible"] = true,
 				},
-				["Edgelordshue-Stormrage"] = {
+				["Talthalador-Stormrage"] = {
 					["Visible"] = true,
 				},
 			},
@@ -833,7 +833,7 @@ PawnCommon = {
 			["ClassID"] = 8,
 		},
 	},
-	["LastVersion"] = 2.0007,
+	["LastVersion"] = 2.0008,
 	["ButtonPosition"] = 2,
 	["IgnoreGemsWhileLeveling"] = true,
 	["ShowQuestUpgradeAdvisor"] = true,

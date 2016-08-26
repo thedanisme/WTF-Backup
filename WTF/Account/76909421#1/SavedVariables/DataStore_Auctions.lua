@@ -33,9 +33,6 @@ DataStore_AuctionsDB = {
 			},
 			["Default.Stormrage.Shhbbyisok"] = {
 				["lastUpdate"] = 1472053631,
-				["Auctions"] = {
-					"0|9434|1||4742875|4992500|3", -- [1]
-				},
 				["lastVisitDate"] = "2016/08/24 11:47",
 			},
 			["Default.Stormreaver.Ranidan"] = {
@@ -47,8 +44,8 @@ DataStore_AuctionsDB = {
 				["lastVisitDate"] = "2016/07/30 10:54",
 			},
 			["Default.Stormrage.Emmarosa"] = {
-				["lastUpdate"] = 1472076773,
-				["lastVisitDate"] = "2016/08/24 18:12",
+				["lastUpdate"] = 1472228499,
+				["lastVisitDate"] = "2016/08/26 12:21",
 			},
 			["Default.Stormrage.Talthalador"] = {
 				["lastUpdate"] = 1471560733,

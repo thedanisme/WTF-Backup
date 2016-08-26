@@ -225,7 +225,7 @@ DataStore_PetsDB = {
 				["lastUpdate"] = 1471191160,
 			},
 			["Default.Stormrage.Emmarosa"] = {
-				["lastUpdate"] = 1472076679,
+				["lastUpdate"] = 1472236271,
 				["CRITTER"] = {
 					135261, -- [1]
 					135259, -- [2]
@@ -366,7 +366,7 @@ DataStore_PetsDB = {
 				["lastUpdate"] = 1470755228,
 			},
 			["Default.Stormrage.Talthalador"] = {
-				["lastUpdate"] = 1472050855,
+				["lastUpdate"] = 1472230102,
 				["CRITTER"] = {
 					179834, -- [1]
 					92395, -- [2]
@@ -422,7 +422,7 @@ DataStore_PetsDB = {
 				},
 			},
 			["Default.Stormrage.Shhbbyisok"] = {
-				["lastUpdate"] = 1472062523,
+				["lastUpdate"] = 1472228239,
 			},
 			["Default.Turalyon.Pryahprism"] = {
 				["lastUpdate"] = 1471190897,

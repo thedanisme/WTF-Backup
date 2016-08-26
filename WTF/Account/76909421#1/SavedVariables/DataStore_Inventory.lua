@@ -53,28 +53,27 @@ DataStore_InventoryDB = {
 			},
 			["Default.Stormrage.Emmarosa"] = {
 				["Inventory"] = {
-					"|cffa335ee|Hitem:124260::::::::100:259:4:3:3:1801:41:1472:531:::|h[Hood of Unknowable Secrets]|h|r", -- [1]
-					"|cffa335ee|Hitem:127976::::::::100:259:4:5:3:1798:1497:3441:529:::|h[Choker of Reciprocity]|h|r", -- [2]
-					"|cff0070dd|Hitem:138168::::::::100:259:512:9:2:3387:3388:100:::|h[Felshroud Shoulders]|h|r", -- [3]
+					"|cffa335ee|Hitem:124260::::::::100:260:4:3:3:1801:41:1472:531:::|h[Hood of Unknowable Secrets]|h|r", -- [1]
+					"|cffa335ee|Hitem:127976:5321:::::::100:260:4:5:3:1798:1497:3441:530:::|h[Choker of Reciprocity]|h|r", -- [2]
+					"|cff0070dd|Hitem:138168::::::::100:260:512:9:2:3387:3388:100:::|h[Felshroud Shoulders]|h|r", -- [3]
 					nil, -- [4]
-					"|cffa335ee|Hitem:124248::115814::::::100:259:4:5:3:1798:564:1487:531:::|h[Felblade Chestguard]|h|r", -- [5]
-					"|cffa335ee|Hitem:124277::::::::100:259:4:5:2:1798:1487:531:::|h[Flayed Demonskin Belt]|h|r", -- [6]
-					"|cffa335ee|Hitem:116178::::::::100:259:4:13:3:618:536:215:531:::|h[Supple Leggings of the Harmonious]|h|r", -- [7]
-					"|cff0070dd|Hitem:138164::::::::100:259:512:9:2:3387:3389:100:::|h[Felshroud Boots]|h|r", -- [8]
-					"|cff0070dd|Hitem:138163::::::::100:259:512:9:1:3387:100:::|h[Felshroud Bindings]|h|r", -- [9]
-					"|cff0070dd|Hitem:138166::::::::100:259:512:9:1:3387:100:::|h[Felshroud Gloves]|h|r", -- [10]
-					"|cffa335ee|Hitem:124204:5328:::::::100:259:4:5:2:1798:1487:531:::|h[Mannoroth's Calcified Eye]|h|r", -- [11]
-					"|cffa335ee|Hitem:118307:5328:::::::100:259::11::::|h[Spellbound Runic Band of Unrelenting Slaughter]|h|r", -- [12]
-					"|cffa335ee|Hitem:128024::::::::100:259:4:1::531:::|h[Stone of the Elements]|h|r", -- [13]
-					"|cffa335ee|Hitem:124545::::::::100:259:4:3:1:40:531:::|h[Chipped Soul Prism]|h|r", -- [14]
-					"|cffa335ee|Hitem:124135:5314:::::::100:259:4:5:3:1798:1497:3441:531:::|h[Cloak of Tangible Dread]|h|r", -- [15]
-					"|cffa335ee|Hitem:116644:5335:::::::100:259:4:13:3:620:549:121:531:::|h[Steelforged Dagger of the Feverflare]|h|r", -- [16]
-					"|cffa335ee|Hitem:124365:5330:115814::::::100:259:4:3:4:1801:563:1482:3441:531:::|h[Blackfuse Company Utility Knife]|h|r", -- [17]
-					[19] = "|cff0070dd|Hitem:118365::::::::100:259::11::::|h[Stormwind Tabard]|h|r",
+					"|cffa335ee|Hitem:124248::115814::::::100:260:4:5:3:1798:564:1487:531:::|h[Felblade Chestguard]|h|r", -- [5]
+					"|cffa335ee|Hitem:124277::::::::100:260:4:5:2:1798:1487:531:::|h[Flayed Demonskin Belt]|h|r", -- [6]
+					"|cffa335ee|Hitem:116178::::::::100:260:4:13:3:618:536:215:531:::|h[Supple Leggings of the Harmonious]|h|r", -- [7]
+					"|cff0070dd|Hitem:138164::::::::100:260:512:9:2:3387:3389:100:::|h[Felshroud Boots]|h|r", -- [8]
+					"|cff0070dd|Hitem:138163::::::::100:260:512:9:1:3387:100:::|h[Felshroud Bindings]|h|r", -- [9]
+					"|cff0070dd|Hitem:138166::::::::100:260:512:9:1:3387:100:::|h[Felshroud Gloves]|h|r", -- [10]
+					"|cffa335ee|Hitem:124204:5328:::::::100:260:4:5:2:1798:1487:531:::|h[Mannoroth's Calcified Eye]|h|r", -- [11]
+					"|cffa335ee|Hitem:118307:5328:::::::100:260::11::::|h[Spellbound Runic Band of Unrelenting Slaughter]|h|r", -- [12]
+					"|cffa335ee|Hitem:128024::::::::100:260:4:1::531:::|h[Stone of the Elements]|h|r", -- [13]
+					"|cffa335ee|Hitem:124545::::::::100:260:4:3:1:40:531:::|h[Chipped Soul Prism]|h|r", -- [14]
+					"|cffa335ee|Hitem:124135:5314:::::::100:260:4:5:3:1798:1497:3441:531:::|h[Cloak of Tangible Dread]|h|r", -- [15]
+					"|cffa335ee|Hitem:116644:5335:::::::100:260:4:13:3:620:549:121:531:::|h[Steelforged Dagger of the Feverflare]|h|r", -- [16]
+					"|cffa335ee|Hitem:124365:5330:115814::::::100:260:4:3:4:1801:563:1482:3441:531:::|h[Blackfuse Company Utility Knife]|h|r", -- [17]
 				},
-				["averageItemLvl"] = 717.1875,
-				["overallAIL"] = 717.5,
-				["lastUpdate"] = 1472076679,
+				["averageItemLvl"] = 717.5,
+				["overallAIL"] = 717.8125,
+				["lastUpdate"] = 1472236271,
 			},
 			["Default.Bloodhoof.Arando"] = {
 				["Inventory"] = {
@@ -151,27 +150,27 @@ DataStore_InventoryDB = {
 			["Default.Stormrage.Talthalador"] = {
 				["Inventory"] = {
 					"|cffa335ee|Hitem:109978::::::::100:577:4:23:2:642:757:531:::|h[Leafmender Hood]|h|r", -- [1]
-					"|cff0070dd|Hitem:139172:5318:::::::100:577::14::::|h[Legionnaire's Fel Pendant]|h|r", -- [2]
-					"|cffa335ee|Hitem:124271::::::::100:577:4:5:3:1798:1492:3441:531:::|h[Blood-Tanned Pauldrons]|h|r", -- [3]
+					"|cffffffff|Hitem:139172:5318:::::::100:577::14::::|h[]|h|r", -- [2]
+					"|cffffffff|Hitem:124271::::::::100:577:4:5:3:1798:1492:3441:531:::|h[]|h|r", -- [3]
 					nil, -- [4]
-					"|cffa335ee|Hitem:124245::::::::100:577:4:5:2:1798:1487:531:::|h[Tunic of the Soulbinder]|h|r", -- [5]
+					"|cffffffff|Hitem:124245::::::::100:577:4:5:2:1798:1487:531:::|h[]|h|r", -- [5]
 					"|cff0070dd|Hitem:138169::::::::100:577:512:9:1:3387:100:::|h[Felshroud Belt]|h|r", -- [6]
 					"|cff0070dd|Hitem:138165::::::::100:577:512:9:1:3387:100:::|h[Felshroud Pants]|h|r", -- [7]
 					"|cffa335ee|Hitem:124249::::::::100:577:4:5:2:1798:1487:530:::|h[Spiked Irontoe Slippers]|h|r", -- [8]
-					"|cffa335ee|Hitem:124279::::::::100:577:4:5:2:1798:1487:529:::|h[Bloodcult Bracers]|h|r", -- [9]
+					"|cffffffff|Hitem:124279::::::::100:577:4:5:2:1798:1487:529:::|h[]|h|r", -- [9]
 					"|cffa335ee|Hitem:109849::::::::100:577:4:23:2:642:758:531:::|h[Bloodfeather Grips]|h|r", -- [10]
 					"|cffa335ee|Hitem:109777:5325:115811::::::100:577:4:23:3:642:758:523:529:::|h[Unsullied Signet]|h|r", -- [11]
 					"|cffa335ee|Hitem:115796:5325:::::::100:577:4:13:3:618:540:176:531:::|h[Shifting Taladite Ring of the Feverflare]|h|r", -- [12]
 					"|cffa335ee|Hitem:112318::::::::100:577:4:13:2:530:618:531:::|h[Skull of War]|h|r", -- [13]
-					"|cffa335ee|Hitem:124226::::::::100:577:4:5:2:1798:1487:531:::|h[Malicious Censer]|h|r", -- [14]
-					"|cffa335ee|Hitem:124145:5311:::::::100:577:4:5:2:1798:1487:531:::|h[Ironthread Greatcloak]|h|r", -- [15]
+					"|cffffffff|Hitem:124226::::::::100:577:4:5:2:1798:1487:531:::|h[]|h|r", -- [14]
+					"|cffffffff|Hitem:124145:5311:::::::100:577:4:5:2:1798:1487:531:::|h[]|h|r", -- [15]
 					"|cff0070dd|Hitem:141604:5337:::::::100:577::9:3:3447:1814:1820:::|h[Glaive of the Fallen]|h|r", -- [16]
 					"|cff0070dd|Hitem:141604:5337:::::::100:577::14:3:3447:1815:1820:::|h[Glaive of the Fallen]|h|r", -- [17]
-					[19] = "|cffa335ee|Hitem:69210::::::::100:577::14::::|h[Renowned Guild Tabard]|h|r",
+					[19] = "|cffffffff|Hitem:69210::::::::100:577::14::::|h[]|h|r",
 				},
 				["averageItemLvl"] = 716.25,
 				["overallAIL"] = 716.25,
-				["lastUpdate"] = 1472050855,
+				["lastUpdate"] = 1472230101,
 			},
 			["Default.Stormrage.Danoh"] = {
 				["Inventory"] = {
@@ -267,7 +266,7 @@ DataStore_InventoryDB = {
 				},
 				["averageItemLvl"] = 692.5,
 				["overallAIL"] = 692.5,
-				["lastUpdate"] = 1472063178,
+				["lastUpdate"] = 1472228239,
 			},
 			["Default.Turalyon.Pryahprism"] = {
 				["Inventory"] = {
@@ -791,14 +790,14 @@ DataStore_InventoryDB = {
 					["Snalydo"] = {
 						["averageItemLvl"] = 687,
 					},
-					["Dosnutz"] = {
-						["averageItemLvl"] = 711,
+					["Malizrakh"] = {
+						["averageItemLvl"] = 34,
 					},
 					["Maennoroth"] = {
 						["averageItemLvl"] = 699,
 					},
-					["Malizrakh"] = {
-						["averageItemLvl"] = 34,
+					["Dosnutz"] = {
+						["averageItemLvl"] = 711,
 					},
 					["Malsynth"] = {
 						["averageItemLvl"] = 16,
@@ -809,14 +808,14 @@ DataStore_InventoryDB = {
 					["Wargate"] = {
 						["averageItemLvl"] = 6,
 					},
-					["Kratoshue"] = {
-						["averageItemLvl"] = 700,
+					["Lumaena"] = {
+						["averageItemLvl"] = 676,
 					},
 					["Worpheus"] = {
 						["averageItemLvl"] = 713,
 					},
-					["Lumaena"] = {
-						["averageItemLvl"] = 676,
+					["Kratoshue"] = {
+						["averageItemLvl"] = 700,
 					},
 					["Malcinct"] = {
 						["averageItemLvl"] = 685,
@@ -885,7 +884,7 @@ DataStore_InventoryDB = {
 						["averageItemLvl"] = 651,
 					},
 					["Emmarosa"] = {
-						["averageItemLvl"] = 715,
+						["averageItemLvl"] = 717,
 					},
 					["Monsterwood"] = {
 						["averageItemLvl"] = 666,
@@ -969,16 +968,16 @@ DataStore_InventoryDB = {
 					"67/337", -- [2]
 					"224/739", -- [3]
 					"69/418", -- [4]
-					"16/82", -- [5]
+					"17/83", -- [5]
 					"34/79", -- [6]
-					"42/346", -- [7]
+					"44/347", -- [7]
 					"65/382", -- [8]
-					"68/355", -- [9]
+					"69/355", -- [9]
 					"63/370", -- [10]
 					"67/392", -- [11]
 					nil, -- [12]
 					"39/295", -- [13]
-					"96/448", -- [14]
+					"98/449", -- [14]
 					"97/448", -- [15]
 					"105/502", -- [16]
 					"30/143", -- [17]
@@ -1084,10 +1083,10 @@ DataStore_InventoryDB = {
 					nil, -- [12]
 					"38/294", -- [13]
 					"96/448", -- [14]
-					[28] = "3/4",
-					[16] = "104/499",
-					[17] = "30/143",
 					[19] = "52/304",
+					[28] = "3/4",
+					[17] = "30/143",
+					[16] = "104/499",
 				},
 				["HUNTER"] = {
 					"51/353", -- [1]

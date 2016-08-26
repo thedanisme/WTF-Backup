@@ -48,13 +48,13 @@ MasterPlanAG = {
 			["summary"] = {
 				["inProgress"] = {
 					[175] = 1471646078,
-					[135] = 1471645178,
+					[65] = 1471645179,
 					[148] = 1471646979,
 					[335] = 1471679380,
-					[371] = 1471679381,
+					[135] = 1471645178,
 					[223] = 1471646080,
 					[136] = 1471645181,
-					[65] = 1471645179,
+					[371] = 1471679381,
 				},
 			},
 			["curOil"] = 950,
@@ -134,7 +134,15 @@ MasterPlanAG = {
 		["Fupa"] = {
 		},
 		["Shhbbyisok"] = {
+			["faction"] = "Alliance",
 			["class"] = "DEATHKNIGHT",
+		},
+		["Retardar"] = {
+			["faction"] = "Alliance",
+			["class"] = "DRUID",
+		},
+		["Edgelordshue"] = {
+			["class"] = "DEMONHUNTER",
 			["faction"] = "Alliance",
 		},
 		["Yanlery"] = {
@@ -169,8 +177,16 @@ MasterPlanAG = {
 			["curRes"] = 9735,
 			["faction"] = "Alliance",
 		},
-		["Edgelordshue"] = {
-			["class"] = "DEMONHUNTER",
+		["Squelben"] = {
+			["class"] = "MAGE",
+			["faction"] = "Alliance",
+		},
+		["Pastaliar"] = {
+			["faction"] = "Alliance",
+			["class"] = "MAGE",
+		},
+		["Bruhbies"] = {
+			["class"] = "WARLOCK",
 			["faction"] = "Alliance",
 		},
 		["Llamama"] = {
@@ -187,41 +203,27 @@ MasterPlanAG = {
 			["curRes"] = 759,
 			["lastCacheTime"] = 1460519329,
 		},
-		["Squelben"] = {
-			["class"] = "MAGE",
-			["faction"] = "Alliance",
-		},
-		["Pastaliar"] = {
-			["faction"] = "Alliance",
-			["class"] = "MAGE",
-		},
-		["Bruhbies"] = {
-			["class"] = "WARLOCK",
-			["faction"] = "Alliance",
-		},
-		["Retardar"] = {
-			["faction"] = "Alliance",
-			["class"] = "DRUID",
-		},
 		["Emmarosa"] = {
 			["faction"] = "Alliance",
 			["recruitTime"] = 1469983821,
 			["summary"] = {
-				["lastOilTime"] = 1471992574,
+				["lastOilTime"] = 1472228456,
 				["ti2"] = 122484,
 				["inProgress"] = {
-					[335] = 1472011575,
-					[672] = 1472022372,
-					[177] = 1472010368,
-					[280] = 1472011268,
-					[373] = 1472029574,
+					[187] = 1472231835,
 					[719] = 1471522858,
+					[489] = 1472243539,
+					[218] = 1472230936,
+					[311] = 1472250734,
 					[628] = 1471528260,
+					[669] = 1472243536,
 					[722] = 1471522855,
-					[287] = 1472029267,
-					[668] = 1472022372,
-					[175] = 1472010367,
-					[265] = 1472022373,
+					[188] = 1472231835,
+					[376] = 1472265137,
+					[159] = 1472234537,
+					[498] = 1472265138,
+					[283] = 1472236338,
+					[185] = 1472232734,
 				},
 				["ti3"] = 128391,
 				["ti1"] = 118529,
@@ -229,10 +231,10 @@ MasterPlanAG = {
 				["tt3"] = 1471182530,
 				["tt2"] = true,
 			},
-			["curOil"] = 2235,
+			["curOil"] = 2405,
 			["class"] = "ROGUE",
-			["curRes"] = 3533,
-			["lastCacheTime"] = 1472076650,
+			["curRes"] = 7046,
+			["lastCacheTime"] = 1472229160,
 		},
 		["Talthalador"] = {
 			["summary"] = {
@@ -242,11 +244,11 @@ MasterPlanAG = {
 					[229] = 1471652766,
 				},
 			},
-			["faction"] = "Alliance",
+			["curOil"] = 650,
 			["lastCacheTime"] = 1471649996,
 			["class"] = "DEMONHUNTER",
 			["curRes"] = 271,
-			["curOil"] = 650,
+			["faction"] = "Alliance",
 		},
 	},
 	["Bloodhoof"] = {
@@ -430,11 +432,11 @@ MasterPlanAG = {
 				["inProgress"] = {
 					[161] = 1470422370,
 					[375] = 1470452969,
+					[364] = 1470431371,
 					[163] = 1470419670,
-					[469] = 1470431371,
 					[177] = 1470419672,
 					[374] = 1470434969,
-					[364] = 1470431371,
+					[469] = 1470431371,
 				},
 			},
 			["curOil"] = 250,
