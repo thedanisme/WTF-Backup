@@ -50,22 +50,22 @@ DataStoreDB = {
 			["Default.Bloodhoof.Arando"] = {
 				["faction"] = "Horde",
 			},
-			["Default.Bloodhoof.Dalgrens"] = {
-				["faction"] = "Horde",
+			["Default.Stormrage.Edgelordshue"] = {
+				["faction"] = "Alliance",
 			},
 			["Default.Stormrage.Kateplusnine"] = {
 				["faction"] = "Alliance",
 			},
-			["Default.Stormrage.Talthalador"] = {
-				["faction"] = "Alliance",
+			["Default.Stormrage.Brobies"] = {
 				["guildName"] = "Horizon",
-			},
-			["Default.Stormrage.Danoh"] = {
 				["faction"] = "Alliance",
-				["guildName"] = "Horizon",
 			},
-			["Default.Stormrage.Ershirley"] = {
-				["faction"] = "Alliance",
+			["Default.Turalyon.Skratch"] = {
+				["faction"] = "Horde",
+				["guildName"] = "Viginti",
+			},
+			["Default.Stormrage.Shamadan"] = {
+				["faction"] = "Neutral",
 			},
 			["Default.Turalyon.Knutts"] = {
 				["faction"] = "Horde",
@@ -78,8 +78,8 @@ DataStoreDB = {
 			["Default.Turalyon.Pryahprism"] = {
 				["faction"] = "Horde",
 			},
-			["Default.Stormrage.Edgelordshue"] = {
-				["faction"] = "Alliance",
+			["Default.Bloodhoof.Dalgrens"] = {
+				["faction"] = "Horde",
 			},
 			["Default.Stormrage.Yanlery"] = {
 				["guildName"] = "Horizon",
@@ -88,8 +88,8 @@ DataStoreDB = {
 			["Default.Turalyon.Callil"] = {
 				["faction"] = "Alliance",
 			},
-			["Default.Stormrage.Shamadan"] = {
-				["faction"] = "Neutral",
+			["Default.Stormrage.Ershirley"] = {
+				["faction"] = "Alliance",
 			},
 			["Default.Turalyon.Titte"] = {
 				["faction"] = "Horde",
@@ -106,9 +106,9 @@ DataStoreDB = {
 				["faction"] = "Alliance",
 				["guildName"] = "Horizon",
 			},
-			["Default.Turalyon.Skratch"] = {
-				["faction"] = "Horde",
-				["guildName"] = "Viginti",
+			["Default.Stormrage.Danoh"] = {
+				["faction"] = "Alliance",
+				["guildName"] = "Horizon",
 			},
 			["Default.Stormrage.Dosnutz"] = {
 				["faction"] = "Alliance",
@@ -118,9 +118,9 @@ DataStoreDB = {
 				["guildName"] = "Viginti",
 				["faction"] = "Horde",
 			},
-			["Default.Stormrage.Brobies"] = {
-				["guildName"] = "Horizon",
+			["Default.Stormrage.Talthalador"] = {
 				["faction"] = "Alliance",
+				["guildName"] = "Horizon",
 			},
 		},
 		["ShortToLongRealmNames"] = {

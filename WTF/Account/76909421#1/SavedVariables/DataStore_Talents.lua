@@ -71,7 +71,7 @@ DataStore_TalentsDB = {
 				["Class"] = "MAGE",
 			},
 			["Default.Stormrage.Emmarosa"] = {
-				["lastUpdate"] = 1472236271,
+				["lastUpdate"] = 1472339451,
 				["Specializations"] = {
 					6613, -- [1]
 					11863, -- [2]
@@ -190,7 +190,7 @@ DataStore_TalentsDB = {
 				["Class"] = "ROGUE",
 			},
 			["Default.Stormrage.Shhbbyisok"] = {
-				["lastUpdate"] = 1472228239,
+				["lastUpdate"] = 1472341313,
 				["Specializations"] = {
 					150, -- [1]
 					14973, -- [2]
@@ -946,7 +946,7 @@ DataStore_TalentsDB = {
 				[365] = "Pathfinding",
 				[1201] = "Frostbrand Weapon",
 				[494] = "Bloodthirst",
-				[431] = "Aquatic Form",
+				[1209] = "Detoxing",
 				[183] = "Double Jeopardy",
 				[1203] = "Merciful Wrath",
 				[986] = "Focused Wrath",
@@ -955,27 +955,27 @@ DataStore_TalentsDB = {
 				[1205] = "Savagery",
 				[987] = "Falling Avenger",
 				[1206] = "The Solstice",
-				[989] = "Bladed Judgment",
+				[495] = "Rude Interruption",
 				[1207] = "Purify Spirit",
 				[988] = "Righteous Retreat",
 				[1208] = "Cleanse",
 				[733] = "Disguise",
-				[1209] = "Detoxing",
-				[495] = "Rude Interruption",
+				[431] = "Aquatic Form",
+				[989] = "Bladed Judgment",
 				[1210] = "Nature's Cure",
 				[734] = "Cloak of Shadows",
 				[216] = "Purge",
 				[990] = "Crow Feast",
 				[1212] = "Flying Fists",
 				[735] = "Thunder",
-				[1213] = "Flapping Owl",
-				[496] = "Gag Order",
+				[432] = "The Chameleon",
+				[991] = "Burning Anger",
 				[551] = "Dash",
 				[736] = "Feral Spirit",
 				[1215] = "Ascendance",
 				[521] = "Shifting Presences",
 				[520] = "Death and Decay",
-				[737] = "Riptide",
+				[369] = "Mend Pet",
 				[433] = "Charm Woodland Creature",
 				[497] = "Blitz",
 				[509] = "Raging Wind",
@@ -1022,11 +1022,11 @@ DataStore_TalentsDB = {
 				[558] = "Corpse Explosion",
 				[276] = "Nightmares",
 				[291] = "Unstable Affliction",
-				[369] = "Mend Pet",
+				[737] = "Riptide",
 				[366] = "Tame Beast",
 				[439] = "Revive Pet",
-				[991] = "Burning Anger",
-				[432] = "The Chameleon",
+				[496] = "Gag Order",
+				[1213] = "Flapping Owl",
 				[188] = "Avenging Wrath",
 				[220] = "Wind Shear",
 				[1116] = "Runic Power",
@@ -1168,7 +1168,7 @@ DataStore_TalentsRefDB = {
 					["name"] = "Unholy",
 				}, -- [3]
 			},
-			["Version"] = 22498,
+			["Version"] = 22522,
 		},
 		["WARRIOR"] = {
 			["Locale"] = "enUS",
@@ -1320,7 +1320,7 @@ DataStore_TalentsRefDB = {
 					["name"] = "Subtlety",
 				}, -- [3]
 			},
-			["Version"] = 22498,
+			["Version"] = 22522,
 		},
 		["MAGE"] = {
 			["Locale"] = "enUS",

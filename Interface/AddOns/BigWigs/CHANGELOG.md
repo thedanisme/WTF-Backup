@@ -1,29 +1,17 @@
 # BigWigs
 
-## [v7.4](https://github.com/BigWigsMods/BigWigs/tree/v7.4) (2016-08-24) [](#top)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v7.3...v7.4)
+## [v7.4-12-gb6a3408](https://github.com/BigWigsMods/BigWigs/tree/b6a34084471f4300e232361c5e412d3c31e22477) (2016-08-28) [](#top)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v7.4...b6a34084471f4300e232361c5e412d3c31e22477)
 
--   Plugins/Bars: minor cleanups  
--   More doc fixes  
--   add nameplates to unit table  
--   Fix :Mythic() to also return for Mythic dungeons.  
--   update some comments  
--   more API updates  
--   Document :GetOptions and deprecate :RegisterEnableYell.  
--   Flash taskbar on pull timer.  
--   Register RAID_INSTANCE_WELCOME as an additional trigger for checking if we should load content to (finally) fix Onyxia's Lair loading.  
--   update integrated plugins list  
--   remove unnecessary travis entry  
--   arg naming tweaks  
--   Clarify :SpellName in the docs  
--   *Eye twitch*  
--   Fix those docs  
--   More docs tweaks  
--   minor docs tweak  
--   Core/BossPrototype: Add some more API docs, clean up some others.  
--   Add ISSUE_TEMPLATE.md  
--   More doc tweaks  
--   Tweak :NewBoss docs  
--   Doc :NewBoss, .engageId, and .respawnTime  
--   Tweak TOC  
--   Constants: Print a message if we try to reference an invalid spell id in a boss option.  
+-   Calamir: only show timers for the current phase, clean up some things, fix wrong Burning Bomb spell id  
+-   Check if BigWigs sounds are enabled prior to 1) Increasing the sound channels 2) playing the dungeon popup sound on the "Master" channel.  
+-   Fixes and cleanups to the world bosses  
+-   Add Legion world bosses (#11)  
+-   Update deDE.lua (#13)  
+-   Bars: Allow text alignment to be changed on the MonoUI style.  
+-   esES update. (#12)  
+-   Bars: Add option to change the alignment of bar time (requires translations).  
+-   Increase countdown message anchor size.  
+-   Increase the default emphasize font size from 32 to 48.  
+-   Drop the minimum font size to 1  
+-   Increase font size max to 200, slider max to 72  

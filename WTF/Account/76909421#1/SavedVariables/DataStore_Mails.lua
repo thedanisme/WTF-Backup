@@ -48,8 +48,8 @@ DataStore_MailsDB = {
 				["lastVisitDate"] = "2016/07/30 15:41",
 			},
 			["Default.Stormrage.Shhbbyisok"] = {
-				["lastUpdate"] = 1472061960,
-				["lastVisitDate"] = "2016/08/24 14:06",
+				["lastUpdate"] = 1472340997,
+				["lastVisitDate"] = "2016/08/27 19:36",
 			},
 			["Default.Turalyon.Pryahprism"] = {
 				["lastUpdate"] = 1471189498,
