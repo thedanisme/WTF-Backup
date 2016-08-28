@@ -21,6 +21,17 @@ END
 VER 3 00000000000000A6 "Leave" "ACHIEVEMENT_GUILDPERK_WORKINGOVERTIME_RANK2"
 /run LeaveParty()
 END
+VER 3 0000000000000145 "Lunker turnin" "INV_Misc_Herb_Felblossom."
+/script SelectGossipAvailableQuest(8)
+/script CompleteQuest()
+/script GetQuestReward()
+END
+VER 3 0000000000000146 "Lures" "INV_Fishing_Innards_Pearl."
+#showtooltip
+/use Worm Supreme
+/use Sharpened Fish Hook
+/use Nightcrawlers
+END
 VER 3 0000000000000144 "Mage food" "Ability_Mage_ConjureFoodRank9."
 #showtooltip
 /use Conjured Mana Fritter

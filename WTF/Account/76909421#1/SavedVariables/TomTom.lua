@@ -119,29 +119,6 @@ TomTomWaypointsMF = {
 		["Shhbbyisok - Stormrage"] = {
 		},
 		["Emmarosa - Stormrage"] = {
-			[24] = {
-				["24:0:709282824.33:486930867.58886:nil"] = {
-					24, -- [1]
-					0, -- [2]
-					0.709282824330003, -- [3]
-					0.486930867588861, -- [4]
-					["silent"] = true,
-					["cleardistance"] = 10,
-					["world"] = true,
-					["arrivaldistance"] = 15,
-					["callbacks"] = {
-						["distance"] = {
-						},
-						["minimap"] = {
-						},
-						["world"] = {
-						},
-					},
-					["crazy"] = true,
-					["persistent"] = true,
-					["minimap"] = true,
-				},
-			},
 		},
 		["Whyfy - Stormrage"] = {
 		},

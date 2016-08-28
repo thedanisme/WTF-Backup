@@ -115,9 +115,10 @@ Postal3DB = {
 			["ChatOutput"] = 3,
 			["BlackBook"] = {
 				["recent"] = {
-					"Talthalador|Stormrage|Alliance", -- [1]
-					"Danoh|Stormrage|Alliance", -- [2]
-					"Yanlery|Stormrage|Alliance", -- [3]
+					"Armaedin|Stormrage|Alliance", -- [1]
+					"Talthalador|Stormrage|Alliance", -- [2]
+					"Danoh|Stormrage|Alliance", -- [3]
+					"Yanlery|Stormrage|Alliance", -- [4]
 				},
 			},
 		},
