@@ -1,8 +1,10 @@
 # BigWigs
 
-## [v7.4-13-gbb52f86](https://github.com/BigWigsMods/BigWigs/tree/bb52f86860919bd4eeae366f3ee78e8112f5de26) (2016-08-28) [](#top)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v7.4...bb52f86860919bd4eeae366f3ee78e8112f5de26)
+## [v8](https://github.com/BigWigsMods/BigWigs/tree/v8) (2016-08-29) [](#top)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v7.4...v8)
 
+-   bump version  
+-   Remove WoD content  
 -   Calamir: Fix Arcanopulse CD  
 -   Calamir: only show timers for the current phase, clean up some things, fix wrong Burning Bomb spell id  
 -   Check if BigWigs sounds are enabled prior to 1) Increasing the sound channels 2) playing the dungeon popup sound on the "Master" channel.  
