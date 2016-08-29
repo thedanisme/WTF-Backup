@@ -17,22 +17,23 @@ TalentMacrosDB = {
 		["Retardar - Stormrage"] = "Retardar - Stormrage",
 		["Shhbbyisok - Stormrage"] = "Shhbbyisok - Stormrage",
 		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
+		["Druidann - Stormrage"] = "Druidann - Stormrage",
 		["Whyfy - Stormrage"] = "Whyfy - Stormrage",
 		["Knutts - Turalyon"] = "Knutts - Turalyon",
 		["Pryahprism - Turalyon"] = "Pryahprism - Turalyon",
 		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
-		["Callil - Turalyon"] = "Callil - Turalyon",
 		["Brobies - Stormrage"] = "Brobies - Stormrage",
+		["Callil - Turalyon"] = "Callil - Turalyon",
 		["Abegar - Turalyon"] = "Abegar - Turalyon",
 		["Horny - Bloodhoof"] = "Horny - Bloodhoof",
 		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
 		["Ershirley - Stormrage"] = "Ershirley - Stormrage",
-		["Ranidan - Stormreaver"] = "Ranidan - Stormreaver",
+		["Bloodcox - Stormrage"] = "Bloodcox - Stormrage",
 		["Bruhbies - Stormrage"] = "Bruhbies - Stormrage",
 		["Rotator - Turalyon"] = "Rotator - Turalyon",
 		["Llamama - Stormrage"] = "Llamama - Stormrage",
 		["Barewbies - Stormrage"] = "Barewbies - Stormrage",
-		["Bloodcox - Stormrage"] = "Bloodcox - Stormrage",
+		["Ranidan - Stormreaver"] = "Ranidan - Stormreaver",
 		["Titt - Turalyon"] = "Titt - Turalyon",
 		["Fupa - Stormrage"] = "Fupa - Stormrage",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
@@ -73,6 +74,8 @@ TalentMacrosDB = {
 		},
 		["Emmarosa - Stormrage"] = {
 		},
+		["Druidann - Stormrage"] = {
+		},
 		["Whyfy - Stormrage"] = {
 			["macrotext"] = {
 				[22433] = "#showtooltip\n/use [@mouseover,help]Blessing of Spellwarding;[help]Blessing of Spellwarding;Blessing of Spellwarding",
@@ -87,17 +90,17 @@ TalentMacrosDB = {
 		},
 		["Shaneequa - Turalyon"] = {
 		},
+		["Brobies - Stormrage"] = {
+			["macrotext"] = {
+				[19818] = "#showtooltip\n/cast [@mouseover,help,exists][@target,help,exists][@player]Tiger's Lust",
+				[19820] = "#showtooltip\n/cast [@player]Zen Sphere",
+			},
+		},
 		["Callil - Turalyon"] = {
 			["macrotext"] = {
 				[21185] = "#showtooltip\n/use [@mouseover,exists,nodead][]Saving Grace",
 				[21183] = "#showtooltip\n/use [@mouseover,exists,nodead][]Clarity of Will",
 				[19767] = "#showtooltip\n/use [@mouseover,exists,nodead][]Cascade",
-			},
-		},
-		["Brobies - Stormrage"] = {
-			["macrotext"] = {
-				[19818] = "#showtooltip\n/cast [@mouseover,help,exists][@target,help,exists][@player]Tiger's Lust",
-				[19820] = "#showtooltip\n/cast [@player]Zen Sphere",
 			},
 		},
 		["Abegar - Turalyon"] = {
@@ -108,7 +111,7 @@ TalentMacrosDB = {
 		},
 		["Ershirley - Stormrage"] = {
 		},
-		["Ranidan - Stormreaver"] = {
+		["Bloodcox - Stormrage"] = {
 		},
 		["Bruhbies - Stormrage"] = {
 		},
@@ -118,7 +121,7 @@ TalentMacrosDB = {
 		},
 		["Barewbies - Stormrage"] = {
 		},
-		["Bloodcox - Stormrage"] = {
+		["Ranidan - Stormreaver"] = {
 		},
 		["Titt - Turalyon"] = {
 		},

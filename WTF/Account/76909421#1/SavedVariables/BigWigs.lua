@@ -149,9 +149,9 @@ BigWigs3DB = {
 			["profiles"] = {
 				["Default"] = {
 					["repair"] = 515,
-					["feast"] = 515,
 					[106898] = 515,
 					[2825] = 515,
+					["feast"] = 515,
 				},
 			},
 		},
@@ -194,20 +194,21 @@ BigWigs3DB = {
 		["Callil - Sargeras"] = "Default",
 		["Aranduh - Bloodhoof"] = "Default",
 		["Abegar - Turalyon"] = "Default",
-		["Titte - Turalyon"] = "Default",
 		["Kateplusnine - Stormrage"] = "Default",
+		["Titte - Turalyon"] = "Default",
 		["Emmarosa - Stormrage"] = "Default",
+		["Ranidan - Stormreaver"] = "Default",
 		["Arando - Bloodhoof"] = "Default",
 		["Rotator - Turalyon"] = "Default",
 		["Dosnutz - Stormrage"] = "Default",
 		["Barewbies - Stormrage"] = "Default",
-		["Ranidan - Stormreaver"] = "Default",
-		["Titt - Turalyon"] = "Default",
 		["Brobies - Stormrage"] = "Default",
-		["Skratch - Turalyon"] = "Default",
+		["Titt - Turalyon"] = "Default",
 		["Whyfy - Stormrage"] = "Default",
+		["Skratch - Turalyon"] = "Default",
 		["Bloodcox - Stormrage"] = "Default",
 		["Lackteight - Turalyon"] = "Default",
+		["Druidann - Stormrage"] = "Default",
 		["Danoh - Stormrage"] = "Default",
 		["Brewbies - Turalyon"] = "Default",
 		["Yanlery - Stormrage"] = "Default",
@@ -731,12 +732,6 @@ BigWigsStatisticsDB = {
 				["kills"] = 1,
 			},
 		},
-		[852] = {
-			["LFR"] = {
-				["best"] = 529.452000000005,
-				["kills"] = 1,
-			},
-		},
 		[867] = {
 			["LFR"] = {
 				["wipes"] = 1,
@@ -745,6 +740,12 @@ BigWigsStatisticsDB = {
 		[849] = {
 			["LFR"] = {
 				["best"] = 201.006999999998,
+				["kills"] = 1,
+			},
+		},
+		[852] = {
+			["LFR"] = {
+				["best"] = 529.452000000005,
 				["kills"] = 1,
 			},
 		},

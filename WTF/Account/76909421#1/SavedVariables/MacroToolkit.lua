@@ -288,6 +288,10 @@ MacroToolkitDB = {
 			["backups"] = {
 			},
 		},
+		["Druidann - Stormrage"] = {
+			["macros"] = {
+			},
+		},
 		["Whyfy - Stormrage"] = {
 			["macros"] = {
 				[122] = {
@@ -452,6 +456,77 @@ MacroToolkitDB = {
 			["backups"] = {
 			},
 		},
+		["Brobies - Stormrage"] = {
+			["macros"] = {
+				[122] = {
+					["icon"] = "134400",
+					["name"] = " ",
+					["body"] = "#showtooltip Legacy of the White Tiger\n/use Legacy of the White Tiger\n/cancelaura Hand of Protection\n",
+				},
+				[126] = {
+					["icon"] = "134400",
+					["name"] = "Guard/cancel BOP",
+					["body"] = "#showtooltip\n/cancelaura Hand of Protection\n/use Guard\n",
+				},
+				[132] = {
+					["icon"] = "133209",
+					["name"] = "Trinket",
+					["body"] = "#showtooltip\n/use 14\n",
+				},
+				[123] = {
+					["icon"] = "460692",
+					["name"] = " Detox",
+					["body"] = "#showtooltip\n/use [@mouseover,exists,help][@player][]Detox\n",
+				},
+				[127] = {
+					["icon"] = "134400",
+					["name"] = "Jab/Cancel BoP",
+					["body"] = "#showtooltip\n/cancelaura Hand of Protection\n/cancelaura Misdirection\n/run SetRaidTarget(\"PLAYER\",0)\n/use Jab\n",
+				},
+				[133] = {
+					["icon"] = "613397",
+					["name"] = "ZS Focus",
+					["body"] = "#showtooltip\n/use [@focus,mod][]Zen Sphere\n",
+				},
+				[124] = {
+					["icon"] = "628134",
+					["name"] = "Despawn Ox",
+					["body"] = "/click TotemFrameTotem1 RightButton\n",
+				},
+				[128] = {
+					["icon"] = "620830",
+					["name"] = "Provoke",
+					["body"] = "#showtooltip\n/cast [nomod,@mouseover,harm,exists][nomod] Provoke\n/stopmacro [nomod]\n/target Black Ox Statue\n/cast Provoke\n/targetlasttarget\n",
+				},
+				[121] = {
+					["icon"] = "134400",
+					["name"] = " ",
+					["body"] = "#showtooltip Brawler's Bottomless Draenic Agility Potion\n/use Brawler's Bottomless Draenic Agility Potion\n/use 14\n",
+				},
+				[129] = {
+					["icon"] = "134400",
+					["name"] = "Serenity Spam",
+					["body"] = "#showtooltip Serenity\n/use Serenity\n/use Blackout Kick\n/use Purifying Brew\n",
+				},
+				[125] = {
+					["icon"] = "615341",
+					["name"] = "Fort Brew",
+					["body"] = "#showtooltip\n/use Fortifying Brew\n/use 14\n",
+				},
+				[130] = {
+					["icon"] = "134400",
+					["name"] = "Tiger's Lust",
+					["body"] = "#showtooltip\n/cast [@mouseover,help][@target,help][@player]Tiger's Lust\n",
+				},
+				[131] = {
+					["icon"] = "627608",
+					["name"] = "TransferSequence",
+					["body"] = "#showtooltip\n/castsequence Transcendence, Transcendence: Transfer\n",
+				},
+			},
+			["backups"] = {
+			},
+		},
 		["Callil - Turalyon"] = {
 			["macros"] = {
 				[131] = {
@@ -538,77 +613,6 @@ MacroToolkitDB = {
 					["name"] = " ",
 					["icon"] = "134400",
 					["body"] = "#showtooltip\n/use [@mouseover,help][help][]Renew\n",
-				},
-			},
-			["backups"] = {
-			},
-		},
-		["Brobies - Stormrage"] = {
-			["macros"] = {
-				[122] = {
-					["icon"] = "134400",
-					["name"] = " ",
-					["body"] = "#showtooltip Legacy of the White Tiger\n/use Legacy of the White Tiger\n/cancelaura Hand of Protection\n",
-				},
-				[126] = {
-					["icon"] = "134400",
-					["name"] = "Guard/cancel BOP",
-					["body"] = "#showtooltip\n/cancelaura Hand of Protection\n/use Guard\n",
-				},
-				[132] = {
-					["icon"] = "133209",
-					["name"] = "Trinket",
-					["body"] = "#showtooltip\n/use 14\n",
-				},
-				[123] = {
-					["icon"] = "460692",
-					["name"] = " Detox",
-					["body"] = "#showtooltip\n/use [@mouseover,exists,help][@player][]Detox\n",
-				},
-				[127] = {
-					["icon"] = "134400",
-					["name"] = "Jab/Cancel BoP",
-					["body"] = "#showtooltip\n/cancelaura Hand of Protection\n/cancelaura Misdirection\n/run SetRaidTarget(\"PLAYER\",0)\n/use Jab\n",
-				},
-				[133] = {
-					["icon"] = "613397",
-					["name"] = "ZS Focus",
-					["body"] = "#showtooltip\n/use [@focus,mod][]Zen Sphere\n",
-				},
-				[124] = {
-					["icon"] = "628134",
-					["name"] = "Despawn Ox",
-					["body"] = "/click TotemFrameTotem1 RightButton\n",
-				},
-				[128] = {
-					["icon"] = "620830",
-					["name"] = "Provoke",
-					["body"] = "#showtooltip\n/cast [nomod,@mouseover,harm,exists][nomod] Provoke\n/stopmacro [nomod]\n/target Black Ox Statue\n/cast Provoke\n/targetlasttarget\n",
-				},
-				[121] = {
-					["icon"] = "134400",
-					["name"] = " ",
-					["body"] = "#showtooltip Brawler's Bottomless Draenic Agility Potion\n/use Brawler's Bottomless Draenic Agility Potion\n/use 14\n",
-				},
-				[129] = {
-					["icon"] = "134400",
-					["name"] = "Serenity Spam",
-					["body"] = "#showtooltip Serenity\n/use Serenity\n/use Blackout Kick\n/use Purifying Brew\n",
-				},
-				[125] = {
-					["icon"] = "615341",
-					["name"] = "Fort Brew",
-					["body"] = "#showtooltip\n/use Fortifying Brew\n/use 14\n",
-				},
-				[130] = {
-					["icon"] = "134400",
-					["name"] = "Tiger's Lust",
-					["body"] = "#showtooltip\n/cast [@mouseover,help][@target,help][@player]Tiger's Lust\n",
-				},
-				[131] = {
-					["icon"] = "627608",
-					["name"] = "TransferSequence",
-					["body"] = "#showtooltip\n/castsequence Transcendence, Transcendence: Transfer\n",
 				},
 			},
 			["backups"] = {
@@ -727,8 +731,40 @@ MacroToolkitDB = {
 			["macros"] = {
 			},
 		},
-		["Fupa - Stormrage"] = {
+		["Bloodcox - Stormrage"] = {
 			["macros"] = {
+				[122] = {
+					["name"] = " ",
+					["icon"] = "SPELL_DEATHKNIGHT_MINDFREEZE",
+					["body"] = "#showtooltip\n/use [nomod]Mind Freeze;[mod]Strangulate\n",
+				},
+				[124] = {
+					["name"] = "ZGVMacro1",
+					["icon"] = "0",
+					["body"] = "/target Gryphoneer Windbellow\n/run ZGV:MRM():CG(27,1)\n",
+				},
+				[126] = {
+					["name"] = "ZGVMacro6",
+					["icon"] = "0",
+					["body"] = "/target Mo'arg Overseers\n/run ZGV:MRM():CG(27,6)\n",
+				},
+				[121] = {
+					["name"] = " ",
+					["icon"] = "INV_MISC_QUESTIONMARK",
+					["body"] = "#showtooltip\n/use [@mouseover,harm,exists][]Dark Command\n",
+				},
+				[123] = {
+					["name"] = " ",
+					["icon"] = "SPELL_SHADOW_DEADOFNIGHT",
+					["body"] = "#showtooltip\n/stopcasting\n/use [@mouseover,help,dead][]Raise Ally\n",
+				},
+				[125] = {
+					["name"] = "ZGVMacro5",
+					["icon"] = "0",
+					["body"] = "/target Gan'arg Peons\n/run ZGV:MRM():CG(27,5)\n",
+				},
+			},
+			["backups"] = {
 			},
 		},
 		["Bruhbies - Stormrage"] = {
@@ -813,40 +849,8 @@ MacroToolkitDB = {
 			["macros"] = {
 			},
 		},
-		["Bloodcox - Stormrage"] = {
+		["Fupa - Stormrage"] = {
 			["macros"] = {
-				[122] = {
-					["name"] = " ",
-					["icon"] = "SPELL_DEATHKNIGHT_MINDFREEZE",
-					["body"] = "#showtooltip\n/use [nomod]Mind Freeze;[mod]Strangulate\n",
-				},
-				[124] = {
-					["name"] = "ZGVMacro1",
-					["icon"] = "0",
-					["body"] = "/target Gryphoneer Windbellow\n/run ZGV:MRM():CG(27,1)\n",
-				},
-				[126] = {
-					["name"] = "ZGVMacro6",
-					["icon"] = "0",
-					["body"] = "/target Mo'arg Overseers\n/run ZGV:MRM():CG(27,6)\n",
-				},
-				[121] = {
-					["name"] = " ",
-					["icon"] = "INV_MISC_QUESTIONMARK",
-					["body"] = "#showtooltip\n/use [@mouseover,harm,exists][]Dark Command\n",
-				},
-				[123] = {
-					["name"] = " ",
-					["icon"] = "SPELL_SHADOW_DEADOFNIGHT",
-					["body"] = "#showtooltip\n/stopcasting\n/use [@mouseover,help,dead][]Raise Ally\n",
-				},
-				[125] = {
-					["name"] = "ZGVMacro5",
-					["icon"] = "0",
-					["body"] = "/target Gan'arg Peons\n/run ZGV:MRM():CG(27,5)\n",
-				},
-			},
-			["backups"] = {
 			},
 		},
 		["Titt - Turalyon"] = {
@@ -1289,22 +1293,23 @@ MacroToolkitDB = {
 		["Retardar - Stormrage"] = "profile",
 		["Shhbbyisok - Stormrage"] = "profile",
 		["Emmarosa - Stormrage"] = "profile",
+		["Druidann - Stormrage"] = "profile",
 		["Whyfy - Stormrage"] = "profile",
 		["Knutts - Turalyon"] = "profile",
 		["Pryahprism - Turalyon"] = "profile",
 		["Shaneequa - Turalyon"] = "profile",
-		["Callil - Turalyon"] = "profile",
 		["Brobies - Stormrage"] = "profile",
+		["Callil - Turalyon"] = "profile",
 		["Abegar - Turalyon"] = "profile",
 		["Horny - Bloodhoof"] = "profile",
 		["Kateplusnine - Stormrage"] = "profile",
 		["Ershirley - Stormrage"] = "profile",
-		["Fupa - Stormrage"] = "profile",
+		["Bloodcox - Stormrage"] = "profile",
 		["Bruhbies - Stormrage"] = "profile",
 		["Rotator - Turalyon"] = "profile",
 		["Llamama - Stormrage"] = "profile",
 		["Barewbies - Stormrage"] = "profile",
-		["Bloodcox - Stormrage"] = "profile",
+		["Fupa - Stormrage"] = "profile",
 		["Titt - Turalyon"] = "profile",
 		["Ranidan - Stormreaver"] = "profile",
 		["Skratch - Turalyon"] = "profile",

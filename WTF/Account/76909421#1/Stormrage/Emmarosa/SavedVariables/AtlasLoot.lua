@@ -20,10 +20,10 @@ AtlasLootCharDB = {
 	["__addonrevision"] = 4325,
 	["GUI"] = {
 		["selected"] = {
-			"AtlasLoot_Cataclysm", -- [1]
-			"CoTDragonSoul", -- [2]
-			12, -- [3]
-			2, -- [4]
+			"AtlasLoot_PvP", -- [1]
+			"WODS1WEAPONS", -- [2]
+			nil, -- [3]
+			1, -- [4]
 			0, -- [5]
 		},
 		["point"] = {

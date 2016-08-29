@@ -17,17 +17,18 @@ TomTomDB = {
 		["Priaprisum - Stormreaver"] = "Default",
 		["Pryahprism - Turalyon"] = "Default",
 		["Ershirley - Stormrage"] = "Default",
-		["Aranduh - Bloodhoof"] = "Default",
+		["Druidann - Stormrage"] = "Default",
 		["Talthalador - Stormrage"] = "Default",
+		["Aranduh - Bloodhoof"] = "Default",
 		["Rosabria - Sargeras"] = "Default",
 		["Fupa - Stormrage"] = "Default",
 		["Bruhbies - Stormrage"] = "Default",
 		["Rotator - Turalyon"] = "Default",
 		["Llamama - Stormrage"] = "Default",
 		["Callil - Turalyon"] = "Default",
-		["Shaneequa - Turalyon"] = "Default",
-		["Titt - Turalyon"] = "Default",
 		["Brewbies - Turalyon"] = "Default",
+		["Titt - Turalyon"] = "Default",
+		["Shaneequa - Turalyon"] = "Default",
 		["Skratch - Turalyon"] = "Default",
 		["Horny - Bloodhoof"] = "Default",
 		["Bloodcox - Stormrage"] = "Default",
@@ -71,17 +72,18 @@ TomTomWaypointsMF = {
 		["Priaprisum - Stormreaver"] = "Priaprisum - Stormreaver",
 		["Pryahprism - Turalyon"] = "Pryahprism - Turalyon",
 		["Ershirley - Stormrage"] = "Ershirley - Stormrage",
-		["Aranduh - Bloodhoof"] = "Aranduh - Bloodhoof",
+		["Druidann - Stormrage"] = "Druidann - Stormrage",
 		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
+		["Aranduh - Bloodhoof"] = "Aranduh - Bloodhoof",
 		["Rosabria - Sargeras"] = "Rosabria - Sargeras",
 		["Fupa - Stormrage"] = "Fupa - Stormrage",
 		["Bruhbies - Stormrage"] = "Bruhbies - Stormrage",
 		["Rotator - Turalyon"] = "Rotator - Turalyon",
 		["Llamama - Stormrage"] = "Llamama - Stormrage",
 		["Callil - Turalyon"] = "Callil - Turalyon",
-		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
-		["Titt - Turalyon"] = "Titt - Turalyon",
 		["Brewbies - Turalyon"] = "Brewbies - Turalyon",
+		["Titt - Turalyon"] = "Titt - Turalyon",
+		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
 		["Horny - Bloodhoof"] = "Horny - Bloodhoof",
 		["Bloodcox - Stormrage"] = "Bloodcox - Stormrage",
@@ -127,6 +129,10 @@ TomTomWaypointsMF = {
 		["Pryahprism - Turalyon"] = {
 		},
 		["Ershirley - Stormrage"] = {
+		},
+		["Druidann - Stormrage"] = {
+		},
+		["Talthalador - Stormrage"] = {
 		},
 		["Aranduh - Bloodhoof"] = {
 			[950] = {
@@ -1122,8 +1128,6 @@ TomTomWaypointsMF = {
 				},
 			},
 		},
-		["Talthalador - Stormrage"] = {
-		},
 		["Rosabria - Sargeras"] = {
 		},
 		["Fupa - Stormrage"] = {
@@ -1136,11 +1140,11 @@ TomTomWaypointsMF = {
 		},
 		["Callil - Turalyon"] = {
 		},
-		["Shaneequa - Turalyon"] = {
+		["Brewbies - Turalyon"] = {
 		},
 		["Titt - Turalyon"] = {
 		},
-		["Brewbies - Turalyon"] = {
+		["Shaneequa - Turalyon"] = {
 		},
 		["Skratch - Turalyon"] = {
 		},

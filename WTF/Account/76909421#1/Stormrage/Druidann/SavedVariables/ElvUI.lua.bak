@@ -1,0 +1,9 @@
+
+ElvCharacterDB = {
+	["ChatEditHistory"] = {
+		"/ec", -- [1]
+		"/tar druidann", -- [2]
+	},
+	["ChatLog"] = {
+	},
+}
