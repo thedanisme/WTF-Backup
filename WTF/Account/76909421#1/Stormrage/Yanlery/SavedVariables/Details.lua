@@ -13,7 +13,7 @@ _detalhes_database = {
 		["reverse"] = false,
 	},
 	["active_profile"] = "Emmarosa-Stormrage",
-	["last_day"] = "23",
+	["last_day"] = "28",
 	["ignore_nicktag"] = false,
 	["tabela_historico"] = {
 		["tabelas"] = {
@@ -34,16 +34,16 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["classe"] = "WARRIOR",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 2349658.005885,
 							["spec"] = 73,
 							["dps_started"] = false,
-							["end_time"] = 1471466681,
-							["on_hold"] = false,
+							["total"] = 2349658.005885,
+							["friendlyfire"] = {
+							},
 							["last_event"] = 1471466681,
 							["nome"] = "Yanlery",
 							["spells"] = {
@@ -233,7 +233,7 @@ _detalhes_database = {
 							["damage_taken"] = 1152715.005885,
 							["start_time"] = 1471466573,
 							["delay"] = 0,
-							["total"] = 2349658.005885,
+							["end_time"] = 1471466681,
 						}, -- [1]
 					},
 				}, -- [1]
@@ -266,8 +266,6 @@ _detalhes_database = {
 							["fight_component"] = true,
 							["total"] = 176315598.001923,
 							["healing_taken"] = 1037430.001923,
-							["spec"] = 73,
-							["nome"] = "Yanlery",
 							["spells"] = {
 								["_ActorTable"] = {
 									[222944] = {
@@ -292,8 +290,8 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["c_min"] = 0,
 										["n_curado"] = 175278168,
-										["n_amt"] = 108,
 										["m_healed"] = 0,
+										["n_amt"] = 108,
 										["absorbed"] = 0,
 									},
 									[190456] = {
@@ -318,25 +316,27 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["c_min"] = 0,
 										["n_curado"] = 1037430,
-										["n_amt"] = 29,
 										["m_healed"] = 0,
+										["n_amt"] = 29,
 										["absorbed"] = 0,
 									},
 								},
 								["tipo"] = 3,
 							},
+							["nome"] = "Yanlery",
+							["targets_absorbs"] = {
+							},
 							["grupo"] = true,
 							["last_event"] = 1471466680,
 							["heal_enemy"] = {
 							},
-							["targets_absorbs"] = {
-							},
+							["spec"] = 73,
 							["custom"] = 0,
 							["tipo"] = 2,
 							["on_hold"] = false,
 							["start_time"] = 1471466573,
-							["delay"] = 0,
 							["serial"] = "Player-60-0A0EEC46",
+							["delay"] = 0,
 						}, -- [1]
 					},
 				}, -- [2]
@@ -357,6 +357,10 @@ _detalhes_database = {
 							["fight_component"] = true,
 							["total"] = 453.002423,
 							["nome"] = "Yanlery",
+							["spec"] = 73,
+							["grupo"] = true,
+							["tipo"] = 3,
+							["received"] = 453.002423,
 							["spells"] = {
 								["_ActorTable"] = {
 									[6572] = {
@@ -386,10 +390,6 @@ _detalhes_database = {
 								},
 								["tipo"] = 7,
 							},
-							["grupo"] = true,
-							["tipo"] = 3,
-							["received"] = 453.002423,
-							["spec"] = 73,
 							["serial"] = "Player-60-0A0EEC46",
 							["last_event"] = 1471466678,
 						}, -- [1]
@@ -492,12 +492,12 @@ _detalhes_database = {
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["tipo"] = 4,
+							["last_event"] = 1471466681,
 							["nome"] = "Yanlery",
 							["pets"] = {
 							},
 							["serial"] = "Player-60-0A0EEC46",
-							["last_event"] = 1471466681,
+							["tipo"] = 4,
 						}, -- [1]
 					},
 				}, -- [4]
@@ -563,8 +563,8 @@ _detalhes_database = {
 					},
 				},
 				["end_time"] = 224596.174,
-				["instance_type"] = "party",
 				["combat_id"] = 1,
+				["instance_type"] = "party",
 				["totals_grupo"] = {
 					2349658, -- [1]
 					176315598, -- [2]
@@ -601,8 +601,10 @@ _detalhes_database = {
 			}, -- [1]
 		},
 	},
-	["combat_counter"] = 10,
-	["last_instance_time"] = 0,
+	["combat_counter"] = 12,
+	["character_data"] = {
+		["logons"] = 7,
+	},
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
 			["lasttry"] = {
@@ -610,8 +612,8 @@ _detalhes_database = {
 			["annouce"] = true,
 			["dpshistory"] = {
 			},
-			["dps"] = 0,
 			["author"] = "Details! Team",
+			["dps"] = 0,
 			["level"] = 1,
 			["enabled"] = true,
 		},
@@ -660,8 +662,8 @@ _detalhes_database = {
 		},
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["updatespeed"] = 1,
-			["animate"] = false,
 			["showamount"] = false,
+			["animate"] = false,
 			["useplayercolor"] = false,
 			["useclasscolors"] = false,
 			["author"] = "Details! Team",
@@ -735,7 +737,7 @@ _detalhes_database = {
 			},
 		},
 	},
-	["last_version"] = "v5.21",
+	["last_instance_time"] = 0,
 	["SoloTablesSaved"] = {
 		["LastSelected"] = "DETAILS_PLUGIN_DAMAGE_RANK",
 		["Mode"] = 1,
@@ -749,11 +751,18 @@ _detalhes_database = {
 	["combat_id"] = 1,
 	["savedStyles"] = {
 	},
-	["savedbuffs"] = {
+	["cached_talents"] = {
+		["Player-60-0A0EEC46"] = {
+			19138, -- [1]
+			15760, -- [2]
+			22801, -- [3]
+			22488, -- [4]
+			22629, -- [5]
+			22398, -- [6]
+			22362, -- [7]
+		},
 	},
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
+	["savedbuffs"] = {
 	},
 	["announce_deaths"] = {
 		["enabled"] = false,
@@ -795,9 +804,7 @@ _detalhes_database = {
 			},
 		}, -- [1]
 	},
-	["character_data"] = {
-		["logons"] = 5,
-	},
+	["last_version"] = "v5.21",
 	["announce_cooldowns"] = {
 		["enabled"] = false,
 		["ignored_cooldowns"] = {
@@ -805,16 +812,9 @@ _detalhes_database = {
 		["custom"] = "",
 		["channel"] = "RAID",
 	},
-	["cached_talents"] = {
-		["Player-60-0A0EEC46"] = {
-			19138, -- [1]
-			15760, -- [2]
-			22801, -- [3]
-			22488, -- [4]
-			22629, -- [5]
-			22398, -- [6]
-			22362, -- [7]
-		},
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
 	},
 	["last_instance_id"] = 0,
 	["cached_specs"] = {

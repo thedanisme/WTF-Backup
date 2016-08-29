@@ -1,12 +1,12 @@
-VER 3 0100000000000010 " " "INV_Misc_QuestionMark"
-#showtooltip Legacy of the White Tiger
-/use Legacy of the White Tiger
-/cancelaura Hand of Protection
-END
 VER 3 010000000000000E " " "INV_Misc_QuestionMark"
 #showtooltip Brawler's Bottomless Draenic Agility Potion
 /use Brawler's Bottomless Draenic Agility Potion
 /use 14
+END
+VER 3 0100000000000010 " " "INV_Misc_QuestionMark"
+#showtooltip Legacy of the White Tiger
+/use Legacy of the White Tiger
+/cancelaura Hand of Protection
 END
 VER 3 0100000000000001 " Detox" "INV_Misc_QuestionMark"
 #showtooltip

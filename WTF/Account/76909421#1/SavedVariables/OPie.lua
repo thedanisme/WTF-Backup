@@ -67,10 +67,10 @@ OneRing_Config = {
 					["id"] = 982,
 					["sliceToken"] = "ABueiymANBe",
 				}, -- [11]
-				["limit"] = "Danoh-Stormrage",
+				["name"] = "Lone Wolf",
 				["save"] = true,
 				["hotkey"] = "ALT-4",
-				["name"] = "Lone Wolf",
+				["limit"] = "Danoh-Stormrage",
 			},
 			["OPieFlagStore"] = {
 				["FlushedDefaultColors"] = true,

@@ -92,13 +92,7 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_Super Emphasize"] = {
-			["profiles"] = {
-				["Default"] = {
-					["outline"] = "OUTLINE",
-					["font"] = "Expressway",
-				},
-			},
+		["BigWigs_Plugins_HeroesVoices"] = {
 		},
 		["BigWigs_Bosses_Kormrok"] = {
 			["profiles"] = {
@@ -107,31 +101,7 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Bosses_Hellfire High Council"] = {
-			["profiles"] = {
-				["Default"] = {
-					[184366] = 0,
-					[184358] = 0,
-					[184355] = 0,
-				},
-			},
-		},
-		["BigWigs_Plugins_Respawn"] = {
-		},
-		["BigWigs_Plugins_Messages"] = {
-			["profiles"] = {
-				["Default"] = {
-					["outline"] = "OUTLINE",
-					["BWEmphasizeMessageAnchor_x"] = 557.511298222016,
-					["BWEmphasizeCountdownMessageAnchor_x"] = 665.600102922654,
-					["BWEmphasizeMessageAnchor_y"] = 766.577796339989,
-					["BWMessageAnchor_y"] = 493.511079658401,
-					["BWMessageAnchor_x"] = 1012.62294118671,
-					["BWEmphasizeCountdownMessageAnchor_y"] = 296.533166902591,
-					["font"] = "Expressway",
-					["fontSize"] = 20,
-				},
-			},
+		["LibDualSpec-1.0"] = {
 		},
 		["BigWigs_Plugins_Proximity"] = {
 			["profiles"] = {
@@ -148,20 +118,50 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_HeroesVoices"] = {
+		["BigWigs_Plugins_Messages"] = {
+			["profiles"] = {
+				["Default"] = {
+					["outline"] = "OUTLINE",
+					["BWEmphasizeMessageAnchor_x"] = 557.511298222016,
+					["BWEmphasizeCountdownMessageAnchor_x"] = 665.600102922654,
+					["BWEmphasizeMessageAnchor_y"] = 766.577796339989,
+					["BWMessageAnchor_y"] = 493.511079658401,
+					["BWMessageAnchor_x"] = 1012.62294118671,
+					["BWEmphasizeCountdownMessageAnchor_y"] = 296.533166902591,
+					["font"] = "Expressway",
+					["fontSize"] = 20,
+				},
+			},
+		},
+		["BigWigs_Plugins_Respawn"] = {
+		},
+		["BigWigs_Bosses_Hellfire High Council"] = {
+			["profiles"] = {
+				["Default"] = {
+					[184366] = 0,
+					[184358] = 0,
+					[184355] = 0,
+				},
+			},
 		},
 		["BigWigs_Plugins_Common Auras"] = {
 			["reset"] = true,
 			["profiles"] = {
 				["Default"] = {
 					["repair"] = 515,
-					[2825] = 515,
 					["feast"] = 515,
 					[106898] = 515,
+					[2825] = 515,
 				},
 			},
 		},
-		["LibDualSpec-1.0"] = {
+		["BigWigs_Plugins_Super Emphasize"] = {
+			["profiles"] = {
+				["Default"] = {
+					["outline"] = "OUTLINE",
+					["font"] = "Expressway",
+				},
+			},
 		},
 	},
 	["global"] = {

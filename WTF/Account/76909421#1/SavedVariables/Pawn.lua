@@ -256,6 +256,9 @@ PawnCommon = {
 			["UnenchantedColor"] = "bfb74e",
 			["IconTexturePath"] = "Interface\\Icons\\INV_Sword_30",
 			["PerCharacterOptions"] = {
+				["Emmarosa-Stormrage"] = {
+					["Visible"] = true,
+				},
 			},
 			["LocalizedName"] = "Rogue: Outlaw",
 			["UpgradesFollowSpecialization"] = true,
@@ -551,9 +554,6 @@ PawnCommon = {
 			["IconTexturePath"] = "Interface\\Icons\\Ability_Stealth",
 			["PerCharacterOptions"] = {
 				["Knutts-Turalyon"] = {
-					["Visible"] = true,
-				},
-				["Emmarosa-Stormrage"] = {
 					["Visible"] = true,
 				},
 			},

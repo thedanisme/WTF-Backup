@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0007,
+	["LastVersion"] = 2.0008,
 	["LastPlayerFullName"] = "Brobies-Stormrage",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,

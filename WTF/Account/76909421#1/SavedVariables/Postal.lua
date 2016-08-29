@@ -115,30 +115,33 @@ Postal3DB = {
 			["ChatOutput"] = 3,
 			["BlackBook"] = {
 				["recent"] = {
-					"Armaedin|Stormrage|Alliance", -- [1]
-					"Talthalador|Stormrage|Alliance", -- [2]
-					"Danoh|Stormrage|Alliance", -- [3]
-					"Yanlery|Stormrage|Alliance", -- [4]
+					"Emmarosa|Stormrage|Alliance", -- [1]
+					"Armaedin|Stormrage|Alliance", -- [2]
+					"Talthalador|Stormrage|Alliance", -- [3]
+					"Danoh|Stormrage|Alliance", -- [4]
+					"Yanlery|Stormrage|Alliance", -- [5]
 				},
 			},
 		},
 		["Yanlery - Stormrage"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Titte-Turalyon|Stormrage|Alliance", -- [1]
-					"Danoh|Stormrage|Alliance", -- [2]
-					"Whyfy|Stormrage|Alliance", -- [3]
-					"Llamama|Stormrage|Alliance", -- [4]
-					"Brobies|Stormrage|Alliance", -- [5]
-					"Lackteight-Turalyon|Stormrage|Alliance", -- [6]
-					"Skratch-Turalyon|Stormrage|Alliance", -- [7]
-					"Shaneequa-Turalyon|Stormrage|Alliance", -- [8]
-					"Bloodcox|Stormrage|Alliance", -- [9]
-					"Titt-Turalyon|Stormrage|Alliance", -- [10]
-					"Knutts-Turalyon|Stormrage|Alliance", -- [11]
-					"Bruhbies|Stormrage|Alliance", -- [12]
-					"Andriih|Stormrage|Alliance", -- [13]
-					"Arando-Bloodhoof|Stormrage|Alliance", -- [14]
+					"Emmarosa|Stormrage|Alliance", -- [1]
+					"Dosnutz|Stormrage|Alliance", -- [2]
+					"Titte-Turalyon|Stormrage|Alliance", -- [3]
+					"Danoh|Stormrage|Alliance", -- [4]
+					"Whyfy|Stormrage|Alliance", -- [5]
+					"Llamama|Stormrage|Alliance", -- [6]
+					"Brobies|Stormrage|Alliance", -- [7]
+					"Lackteight-Turalyon|Stormrage|Alliance", -- [8]
+					"Skratch-Turalyon|Stormrage|Alliance", -- [9]
+					"Shaneequa-Turalyon|Stormrage|Alliance", -- [10]
+					"Bloodcox|Stormrage|Alliance", -- [11]
+					"Titt-Turalyon|Stormrage|Alliance", -- [12]
+					"Knutts-Turalyon|Stormrage|Alliance", -- [13]
+					"Bruhbies|Stormrage|Alliance", -- [14]
+					"Andriih|Stormrage|Alliance", -- [15]
+					"Arando-Bloodhoof|Stormrage|Alliance", -- [16]
 				},
 			},
 		},
@@ -149,11 +152,18 @@ Postal3DB = {
 		["Emmarosa - Stormrage"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Dosnutz|Stormrage|Alliance", -- [1]
-					"Shhbbyisok|Stormrage|Alliance", -- [2]
-					"Talthalador|Stormrage|Alliance", -- [3]
-					"Danoh|Stormrage|Alliance", -- [4]
-					"Dalban|Stormrage|Alliance", -- [5]
+					"Cereastor|Stormrage|Alliance", -- [1]
+					"Youngma|Stormrage|Alliance", -- [2]
+					"Dhaniel|Stormrage|Alliance", -- [3]
+					"Primalsfury|Stormrage|Alliance", -- [4]
+					"Paulaira|Stormrage|Alliance", -- [5]
+					"Shaneequa-Turalyon|Stormrage|Alliance", -- [6]
+					"Lackteight-Turalyon|Stormrage|Alliance", -- [7]
+					"Dosnutz|Stormrage|Alliance", -- [8]
+					"Shhbbyisok|Stormrage|Alliance", -- [9]
+					"Talthalador|Stormrage|Alliance", -- [10]
+					"Danoh|Stormrage|Alliance", -- [11]
+					"Dalban|Stormrage|Alliance", -- [12]
 				},
 			},
 		},
@@ -177,13 +187,14 @@ Postal3DB = {
 		["Whyfy - Stormrage"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Talthalador|Stormrage|Alliance", -- [1]
-					"Emmarosa|Stormrage|Alliance", -- [2]
-					"Danoh|Stormrage|Alliance", -- [3]
-					"Ranidan-Stormreaver|Stormrage|Alliance", -- [4]
-					"Knutts-Turalyon|Stormrage|Alliance", -- [5]
-					"Brobies|Stormrage|Alliance", -- [6]
-					"Freakinfries|Stormrage|Alliance", -- [7]
+					"Emmarosa|Stormrage|Alliance", -- [1]
+					"Dosnutz|Stormrage|Alliance", -- [2]
+					"Talthalador|Stormrage|Alliance", -- [3]
+					"Danoh|Stormrage|Alliance", -- [4]
+					"Ranidan-Stormreaver|Stormrage|Alliance", -- [5]
+					"Knutts-Turalyon|Stormrage|Alliance", -- [6]
+					"Brobies|Stormrage|Alliance", -- [7]
+					"Freakinfries|Stormrage|Alliance", -- [8]
 				},
 			},
 		},
@@ -319,15 +330,16 @@ Postal3DB = {
 		["Danoh - Stormrage"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Dosnutz|Stormrage|Alliance", -- [1]
-					"Emmarosa|Stormrage|Alliance", -- [2]
-					"Talthalador|Stormrage|Alliance", -- [3]
-					"Yanlery|Stormrage|Alliance", -- [4]
-					"Chakron|Stormrage|Alliance", -- [5]
-					"Khloroshue|Stormrage|Alliance", -- [6]
-					"Knutts-Turalyon|Stormrage|Alliance", -- [7]
-					"Whyfy-Stormrage|Stormrage|Alliance", -- [8]
-					"Ranidan-Stormreaver|Stormrage|Alliance", -- [9]
+					"Emmarosa|Stormrage|Alliance", -- [1]
+					"Shhbbyisok|Stormrage|Alliance", -- [2]
+					"Dosnutz|Stormrage|Alliance", -- [3]
+					"Talthalador|Stormrage|Alliance", -- [4]
+					"Yanlery|Stormrage|Alliance", -- [5]
+					"Chakron|Stormrage|Alliance", -- [6]
+					"Khloroshue|Stormrage|Alliance", -- [7]
+					"Knutts-Turalyon|Stormrage|Alliance", -- [8]
+					"Whyfy-Stormrage|Stormrage|Alliance", -- [9]
+					"Ranidan-Stormreaver|Stormrage|Alliance", -- [10]
 				},
 			},
 		},
