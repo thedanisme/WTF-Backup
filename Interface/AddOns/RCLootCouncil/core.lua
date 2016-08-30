@@ -49,7 +49,7 @@ function RCLootCouncil:OnInitialize()
   	self.version = GetAddOnMetadata("RCLootCouncil", "Version")
 	self.nnp = false
 	self.debug = false
-	self.tVersion = "Alpha.1" -- String or nil. Indicates test version, which alters stuff like version check. Is appended to 'version', i.e. "version-tVersion"
+	self.tVersion = nil -- String or nil. Indicates test version, which alters stuff like version check. Is appended to 'version', i.e. "version-tVersion"
 
 	self.playerClass = select(2, UnitClass("player"))
 	self.guildRank = L["Unguilded"]
@@ -1267,7 +1267,11 @@ function RCLootCouncil:UnitName(unit)
 	-- Then see if we already have a realm name appended
 	local find = strfind(unit, "-", nil, true)
 	if find and find < #unit then -- "-" isn't the last character
-		return unit
+		-- Apparently functions like GetRaidRosterInfo() will return "real" name, while UnitName()
+		-- returns Title Case. We need this to be consistant, so just titlecase the name part now:
+		local name, realm = unit:sub(1, find), unit:sub(find+1)
+		name = name:lower():gsub("^%l", string.upper) -- All but first must be lower
+		return name..realm
 	end
 	-- Proceed with UnitName()
 	local name, realm = UnitName(unit)

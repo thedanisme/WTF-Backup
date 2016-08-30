@@ -1,6 +1,72 @@
+2016-08-29  Tercio  <Tercio>
+
+[c09648ff0e9a] [tip]
+* Libs/DF/cooltip.lua, Libs/DF/fw.lua, Libs/DF/panel.lua, boot.lua, gumps/janela_info.lua:
+
+- framework update to v44.
+
+
+2016-08-27  Tercio  <Tercio>
+
+[8b7281f57699]
+* boot.lua:
+
+*weakup packpager
+- new API: Details:GetPlayerIcon (playername[, segmentobject]) - return the player class or spec icon.
+- bar spacing now can go to -2, down from 0.
+- Tiny Threat now shall correctly use the font set on the options panel after a logon.
+
+
+[a88a77d94afc]
+* boot.lua, functions/playerclass.lua, gumps/janela_info.lua, gumps/janela_options.lua, plugins/Details_TinyThreat/Details_TinyThreat.lua:
+
+- new API: Details:GetPlayerIcon (playername[, segmentobject]) - return the player class or spec icon.
+- bar spacing now can go to -2, down from 0.
+- Tiny Threat now shall correctly use the font set on the options panel after a logon.
+
+
+2016-08-21  Tercio  <Tercio>
+
+[53fc16824eb9]
+* boot.lua, functions/profiles.lua, gumps/janela_info.lua, gumps/janela_options.lua, startup.lua:
+
+- fixed percent issues on player detail window.
+
+
+2016-08-20  Tercio  <Tercio>
+
+[1466aff66d6b]
+* boot.lua:
+
+- Fixing Slash and GBoM on dungeon encounters.
+- Solving problems if somebody enter on a ongoing dungeon and have to detect already applyied buffs.
+- If the buff owner isn't found, try to detect by unitaura query.
+- framework update to v41.
+
+
+2016-08-19  Tercio  <Tercio>
+
+[248556e14041]
+* boot.lua:
+
+- Fixing Slash and GBoM on dungeon encounters.
+- Solving problems if somebody enter on a ongoing dungeon and have to detect already applyied buffs.
+- If the buff owner isn't found, try to detect by unitaura query.
+- framework update to v41.
+
+
+[e525cce84fe3]
+* Libs/DF/colors.lua, Libs/DF/fw.lua, Libs/DF/panel.lua, Libs/DF/textentry.lua, boot.lua, classes/classe_damage.lua, classes/classe_heal.lua, classes/container_combatentes.lua, core/parser.lua, gumps/janela_info.lua:
+
+- Fixing Slash and GBoM on dungeon encounters.
+- Solving problems if somebody enter on a ongoing dungeon and have to detect already applyied buffs.
+- If the buff owner isn't found, try to detect by unitaura query.
+- framework update to v41.
+
+
 2016-08-14  Tercio  <Tercio>
 
-[eac04a6fca0f] [tip]
+[eac04a6fca0f]
 * boot.lua, plugins/Details_Streamer/Details_Streamer.lua:
 
 - Fix for Monk's Soothing Mist on Streamer Plugin.
@@ -183,59 +249,5 @@
 * boot.lua:
 
 -wakeup packpager.
-
-
-[a9ca76b37b86]
-* functions/link.lua:
-
-- fixed an issue where sometimes the aura panel gives an error at opening it.
-
-
-2016-05-27  Tercio  <Tercio>
-
-[445896cabf0f]
-* boot.lua, classes/classe_others.lua, images/classes.tga, images/classes_small.tga, images/classes_small_alpha.tga, images/classes_small_alpha_bw.tga, images/classes_small_bw.tga, images/spec_icons_normal.tga, images/spec_icons_normal_alpha.tga, plugins/Details_CalcLeech/Details_CalcLeech.lua:
-
-- Fixed a problem with the Calc Leech plugin.
-- Fixed a problem when reporting buff uptime.
-
-
-2016-05-09  Tercio  <Tercio>
-
-[fe438eca071e]
-* boot.lua:
-
-- Tagging to update localizations.
-
-
-[2511c04664e5]
-* boot.lua:
-
-- Tagging to update localizations.
-
-
-2016-04-24  Tercio  <Tercio>
-
-[2eafa7a81534]
-* boot.lua:
-
-- userversion fix.
-- new version of details for logion beta on http://goo.gl/k2lIFQ.
-
-
-2016-04-17  Tercio  <Tercio>
-
-[7787c51aacfe]
-* boot.lua, functions/skins.lua, images/skins/overwatch.tga:
-
-- small update.
-
-
-2016-04-08  Tercio  <Tercio>
-
-[6661e94ae1d7]
-* boot.lua, classes/classe_heal.lua, classes/classe_others.lua:
-
-- Ticket 76: fixed an issue with buffs already present on the actor at the beginning of the combat wasn't being counted.
 
 
