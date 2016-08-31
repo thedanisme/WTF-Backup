@@ -28,3 +28,4 @@ Altoholic_Characters: disabled
 Altoholic_Agenda: disabled
 Altoholic_Achievements: disabled
 Altoholic: disabled
+ConsLegion: disabled

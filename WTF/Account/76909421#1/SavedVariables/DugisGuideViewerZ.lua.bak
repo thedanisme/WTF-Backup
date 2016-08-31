@@ -1,0 +1,341 @@
+
+MapOverlays = nil
+DugisFlightmasterLookupTable = nil
+TaxiDataCollection = {
+}
+DugisGuideViewerProfiles = {
+	["profileKeys"] = {
+		["Shhbbyisok - Stormrage"] = "Shhbbyisok - Stormrage",
+	},
+	["profiles"] = {
+		["Shhbbyisok - Stormrage"] = {
+			["char"] = {
+				["settings"] = {
+					[110] = {
+						["options"] = {
+							"None", -- [1]
+							"Active Talent Specialization", -- [2]
+							"Blood", -- [3]
+							"Frost", -- [4]
+							"Unholy", -- [5]
+						},
+					},
+					["ModelViewer"] = {
+						["pos_x"] = false,
+					},
+					["QuestRecordTable"] = {
+						["framePositions"] = {
+							["DugisMainBorder"] = {
+								["relativeTo"] = "UIParent",
+								["point"] = "CENTER",
+								["relativePoint"] = "CENTER",
+								["yOfs"] = 0,
+								["xOfs"] = 0,
+							},
+							["DugisArrowFrame"] = {
+								["point"] = "CENTER",
+								["relativePoint"] = "CENTER",
+								["yOfs"] = 300,
+								["xOfs"] = 0,
+							},
+							["DugisGuideViewer_ModelViewer"] = {
+								["relativeTo"] = "DugisWatchBackground",
+								["point"] = "TOPRIGHT",
+								["relativePoint"] = "TOPLEFT",
+								["yOfs"] = 0,
+								["xOfs"] = 0,
+							},
+							["DugisOnOffButton"] = {
+								["relativeTo"] = "DugisArrowFrame",
+								["point"] = "BOTTOM",
+								["relativePoint"] = "TOP",
+								["yOfs"] = 0,
+								["xOfs"] = -19.0000019073486,
+							},
+							["DugisSmallFrameContainer"] = {
+								["point"] = "TOPRIGHT",
+								["relativePoint"] = "BOTTOMRIGHT",
+								["yOfs"] = 0,
+								["xOfs"] = 10,
+							},
+							["ObjectiveTrackerFrameHandlerFrame"] = {
+								["relativeTo"] = "UIParent",
+								["point"] = "TOPRIGHT",
+								["relativePoint"] = "TOPRIGHT",
+								["yOfs"] = -230.000015258789,
+								["xOfs"] = -90.0000076293945,
+							},
+							["DugisWatchBackground"] = {
+								["relativeTo"] = "MinimapCluster",
+								["point"] = "TOPRIGHT",
+								["relativePoint"] = "BOTTOMRIGHT",
+								["yOfs"] = 0,
+								["xOfs"] = -93,
+							},
+							["DugisRecordFrame"] = {
+								["relativeTo"] = "UIParent",
+								["point"] = "CENTER",
+								["relativePoint"] = "CENTER",
+								["yOfs"] = 0,
+								["xOfs"] = 0,
+							},
+							["DugisGuideViewer_TargetFrame"] = {
+								["relativeTo"] = "DugisSecureQuestButton",
+								["point"] = "LEFT",
+								["relativePoint"] = "RIGHT",
+								["yOfs"] = 0,
+								["xOfs"] = 5,
+							},
+						},
+					},
+					["FirstTime"] = false,
+					["SettingsRevision"] = 9,
+				},
+			},
+		},
+	},
+}
+CollectedWorldMapTrackingPoints = {
+	["Alliance"] = {
+	},
+}
+FollowersCache = {
+	["Horde"] = {
+	},
+	["Alliance"] = {
+		[179] = {
+			["name"] = "Weaponsmith Na'Shra ",
+			["level"] = 92,
+		},
+		[211] = {
+			["name"] = "Penny Clobberbottom ",
+			["level"] = 93,
+		},
+		[180] = {
+			["name"] = "Shadow Hunter Rala ",
+			["level"] = 90,
+		},
+		[212] = {
+			["name"] = "Spirit of Bony Xuk ",
+			["level"] = 94,
+		},
+		[582] = {
+			["name"] = "Solar Priest Vayx ",
+			["level"] = 100,
+		},
+		[182] = {
+			["name"] = "Mulverick ",
+			["level"] = 90,
+		},
+		[183] = {
+			["name"] = "Gronnstalker Rokash ",
+			["level"] = 92,
+		},
+		[184] = {
+			["name"] = "Kal'gor the Honorable ",
+			["level"] = 90,
+		},
+		[216] = {
+			["name"] = "Vivianne ",
+			["level"] = 91,
+		},
+		[185] = {
+			["name"] = "Lokra ",
+			["level"] = 90,
+		},
+		[154] = {
+			["name"] = "Magister Krelas ",
+			["level"] = 94,
+		},
+		[186] = {
+			["name"] = "Greatmother Geyah ",
+			["level"] = 90,
+		},
+		[155] = {
+			["name"] = "Morketh Bladehowl ",
+			["level"] = 94,
+		},
+		[32] = {
+			["name"] = "Dagg ",
+			["level"] = 90,
+		},
+		[219] = {
+			["name"] = "Leorajh ",
+			["level"] = 97,
+		},
+		[157] = {
+			["name"] = "Lantresor of the Blade ",
+			["level"] = 99,
+		},
+		[189] = {
+			["name"] = "Blook ",
+			["level"] = 92,
+		},
+		[190] = {
+			["name"] = "Image of Archmage Vargoth ",
+			["level"] = 100,
+		},
+		[159] = {
+			["name"] = "Kaz the Shrieker ",
+			["level"] = 93,
+		},
+		[192] = {
+			["name"] = "Kimzee Pinchwhistle ",
+			["level"] = 97,
+		},
+		[224] = {
+			["name"] = "Talon Guard Kurekk ",
+			["level"] = 100,
+		},
+		[193] = {
+			["name"] = "Tormmok ",
+			["level"] = 93,
+		},
+		[225] = {
+			["name"] = "Aknor Steelbringer ",
+			["level"] = 100,
+		},
+		[194] = {
+			["name"] = "Phylarch the Evergreen ",
+			["level"] = 100,
+		},
+		[195] = {
+			["name"] = "Alexi Barov ",
+			["level"] = 95,
+		},
+		[462] = {
+			["name"] = "Dawnseeker Rukaryx ",
+			["level"] = 100,
+		},
+		[580] = {
+			["name"] = "Pallas ",
+			["level"] = 100,
+		},
+		[581] = {
+			["name"] = "Dowser Goodwell ",
+			["level"] = 100,
+		},
+		[453] = {
+			["name"] = "Dark Ranger Velonara ",
+			["level"] = 96,
+		},
+		[203] = {
+			["name"] = "Meatball ",
+			["level"] = 100,
+		},
+		[455] = {
+			["name"] = "Millhouse Manastorm ",
+			["level"] = 100,
+		},
+		[218] = {
+			["name"] = "Talonpriest Ishaal ",
+			["level"] = 97,
+		},
+		[202] = {
+			["name"] = "Nat Pagle ",
+			["level"] = 100,
+		},
+		[458] = {
+			["name"] = "Cacklebone ",
+			["level"] = 100,
+		},
+		[459] = {
+			["name"] = "Karg Bloodfury ",
+			["level"] = 100,
+		},
+		[460] = {
+			["name"] = "Professor Felblast ",
+			["level"] = 100,
+		},
+		[217] = {
+			["name"] = "Choluna ",
+			["level"] = 100,
+		},
+		[170] = {
+			["name"] = "Goldmane the Skinner ",
+			["level"] = 100,
+		},
+		[463] = {
+			["name"] = "Ulna Thresher ",
+			["level"] = 90,
+		},
+		[171] = {
+			["name"] = "Pleasure-Bot 8000 ",
+			["level"] = 94,
+		},
+		[465] = {
+			["name"] = "Harrison Jones ",
+			["level"] = 100,
+		},
+		[466] = {
+			["name"] = "Garona Halforcen ",
+			["level"] = 100,
+		},
+		[204] = {
+			["name"] = "Benjamin Gibb ",
+			["level"] = 96,
+		},
+		[468] = {
+			["name"] = "Oronok Torn-heart ",
+			["level"] = 100,
+		},
+		[205] = {
+			["name"] = "Soulbinder Tuulani ",
+			["level"] = 96,
+		},
+		[467] = {
+			["name"] = "Fen Tao ",
+			["level"] = 90,
+		},
+		[34] = {
+			["name"] = "Olin Umberhide ",
+			["level"] = 90,
+		},
+		[168] = {
+			["name"] = "Ziri'ak ",
+			["level"] = 99,
+		},
+		[207] = {
+			["name"] = "Aeda Brightdawn ",
+			["level"] = 95,
+		},
+		[176] = {
+			["name"] = "Bruto ",
+			["level"] = 93,
+		},
+		[208] = {
+			["name"] = "Ahm ",
+			["level"] = 95,
+		},
+		[177] = {
+			["name"] = "Croman ",
+			["level"] = 100,
+		},
+		[209] = {
+			["name"] = "Abu'gar ",
+			["level"] = 98,
+		},
+		[178] = {
+			["name"] = "Leeroy Jenkins ",
+			["level"] = 100,
+		},
+		[153] = {
+			["name"] = "Ka'la ",
+			["level"] = 90,
+		},
+	},
+}
+TutorialFrameDugisState = {
+	["displayedTutorials"] = {
+		true, -- [1]
+		true, -- [2]
+		true, -- [3]
+		true, -- [4]
+		true, -- [5]
+		nil, -- [6]
+		nil, -- [7]
+		true, -- [8]
+		[10] = true,
+	},
+}
+TutorialFrameDugisHidden = nil

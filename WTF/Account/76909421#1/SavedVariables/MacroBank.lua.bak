@@ -1,0 +1,11 @@
+
+MacroBankDB = {
+	["DBVersion"] = 5,
+	["profileKeys"] = {
+		["Shhbbyisok - Stormrage"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}

@@ -239,25 +239,6 @@ BestInSlotDB = {
 				[6] = 66,
 			},
 		},
-		["Llamama - Stormrage"] = {
-			["windowpos"] = {
-				["relativeTo"] = "UIParent",
-				["point"] = "TOPLEFT",
-				["relativePoint"] = "TOPLEFT",
-				["xOffset"] = 200,
-				["yOffset"] = -250.000015258789,
-			},
-			["options"] = {
-				["minimapButton"] = false,
-			},
-			["selected"] = {
-				"WoD", -- [1]
-				60200, -- [2]
-				"HFC", -- [3]
-				[5] = 4,
-				[6] = 253,
-			},
-		},
 		["Dosnutz - Stormrage"] = {
 			["windowpos"] = {
 				["relativeTo"] = "UIParent",
@@ -275,6 +256,25 @@ BestInSlotDB = {
 				"HM", -- [3]
 				[5] = 4,
 				[6] = 63,
+			},
+		},
+		["Llamama - Stormrage"] = {
+			["windowpos"] = {
+				["relativeTo"] = "UIParent",
+				["point"] = "TOPLEFT",
+				["relativePoint"] = "TOPLEFT",
+				["xOffset"] = 200,
+				["yOffset"] = -250.000015258789,
+			},
+			["options"] = {
+				["minimapButton"] = false,
+			},
+			["selected"] = {
+				"WoD", -- [1]
+				60200, -- [2]
+				"HFC", -- [3]
+				[5] = 4,
+				[6] = 253,
 			},
 		},
 		["Talthalador - Stormrage"] = {

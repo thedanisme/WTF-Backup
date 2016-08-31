@@ -4,9 +4,9 @@ PawnCommon = {
 	["AlignNumbersRight"] = true,
 	["ShowItemID"] = false,
 	["ShowValuesForUpgradesOnly"] = false,
-	["ShowUpgradesOnTooltips"] = true,
 	["ShowLootUpgradeAdvisor"] = true,
-	["Debug"] = false,
+	["ShowUpgradesOnTooltips"] = true,
+	["ShowEnchanted"] = false,
 	["ColorTooltipBorder"] = true,
 	["IgnoreItemUpgrades"] = true,
 	["ShowTooltipIcons"] = true,
@@ -434,9 +434,6 @@ PawnCommon = {
 			["UnenchantedColor"] = "bf3950",
 			["IconTexturePath"] = "Interface\\Icons\\Spell_Deathknight_FrostPresence",
 			["PerCharacterOptions"] = {
-				["Shhbbyisok-Stormrage"] = {
-					["Visible"] = true,
-				},
 			},
 			["ClassID"] = 6,
 			["UpgradesFollowSpecialization"] = true,
@@ -603,6 +600,9 @@ PawnCommon = {
 			["UnenchantedColor"] = "bf3950",
 			["IconTexturePath"] = "Interface\\Icons\\Spell_Deathknight_BloodPresence",
 			["PerCharacterOptions"] = {
+				["Shhbbyisok-Stormrage"] = {
+					["Visible"] = true,
+				},
 			},
 			["ClassID"] = 6,
 			["UpgradesFollowSpecialization"] = true,
@@ -840,6 +840,6 @@ PawnCommon = {
 	["ButtonPosition"] = 2,
 	["LastVersion"] = 2.0008,
 	["ShowQuestUpgradeAdvisor"] = true,
-	["ShowEnchanted"] = false,
+	["Debug"] = false,
 	["ShownGettingStarted"] = true,
 }

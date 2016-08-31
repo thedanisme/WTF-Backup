@@ -37,11 +37,49 @@ ConsLegionSavedVar = {
 			["left"] = 210.499710083008,
 		},
 	},
+	["Shhbbyisok-Stormrage"] = {
+		["Settings"] = {
+			["AutoPickup"] = 0,
+			["Textleft"] = 914.285714285714,
+			["Newstop"] = -359.999959309896,
+			["TextLock"] = 0,
+			["Scale"] = 0.711111128330231,
+			["XPalpha"] = 1,
+			["left"] = 384,
+			["XPHide"] = 0,
+			["Arrowx"] = 960,
+			["TextInvert"] = 0,
+			["XPleft"] = 320,
+			["Lock"] = 0,
+			["Newsalpha"] = 1,
+			["TextHide"] = 0,
+			["SkipCutScene"] = 1,
+			["Hide"] = 0,
+			["AutoChoice"] = 0,
+			["XPLock"] = 0,
+			["Texttop"] = -830.76913686899,
+			["AutoHandin"] = 0,
+			["Textalpha"] = 1,
+			["XPtop"] = -719.999918619792,
+			["alpha"] = 1,
+			["Arrowy"] = -539.999938964844,
+			["top"] = -539.999938964844,
+			["XPInvert"] = 0,
+			["TextScale"] = 0.711111128330231,
+			["NewsScale"] = 0.711111128330231,
+			["NewsLock"] = 0,
+			["XPScale"] = 0.711111128330231,
+			["Newsleft"] = 1476.92307692308,
+			["NewsHide"] = 0,
+		},
+	},
 }
 ConsLegionSteps = {
 	["Emmarosa-Stormrage"] = {
 		[1015] = 1,
 		[1018] = 140,
+	},
+	["Shhbbyisok-Stormrage"] = {
 	},
 }
 CL_NewsEpics = {
@@ -150,7 +188,12 @@ CL_NewsEpics = {
 		["Name"] = "Emmarosa",
 		["Date"] = "08/30/16 18:30:33",
 	}, -- [21]
-	["Nr"] = 21,
+	{
+		["Loot"] = "Glory of the Order",
+		["Name"] = "Emmarosa",
+		["Link"] = "|cffa335ee|Hitem:140517::::::::101:260:8388608:11::1:::|h[Glory of the Order]|h|r",
+	}, -- [22]
+	["Nr"] = 22,
 }
 CL_Temp_Import = nil
 CL_AddonUpdate = {
