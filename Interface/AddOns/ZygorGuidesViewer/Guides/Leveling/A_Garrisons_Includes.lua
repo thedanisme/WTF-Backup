@@ -116,11 +116,11 @@ ZygorGuidesViewer:RegisterInclude("A_Garrison_Morthis",[[
 
 ZygorGuidesViewer:RegisterInclude("A_Garrison_ArchitectTable",[[
 		clicknpc Architect Table##86018 |goto Lunarfall/0 41.1,49.0 |only if garrisonlvl(1) 
-		|tip It looks like a slanted wooden table with paper blueprints on it.
+		|tip It looks like a slanted wooden table with paper blueprints on it. |only if garrisonlvl(1)
 		clicknpc Architect Table##86018 |goto Lunarfall/0 31.7,30.8 |only if garrisonlvl(2) 
-		|tip It looks like a slanted wooden table with paper blueprints on it.
+		|tip It looks like a slanted wooden table with paper blueprints on it. |only if garrisonlvl(2)
 		clicknpc Architect Table##86018 |goto Lunarfall/0 29.3,32.7 |only if garrisonlvl(3) 
-		|tip It looks like a slanted wooden table with paper blueprints on it.
+		|tip It looks like a slanted wooden table with paper blueprints on it. |only if garrisonlvl(3)
 ]])
 
 ZygorGuidesViewer:RegisterInclude("A_Garrison_CommandTable",[[

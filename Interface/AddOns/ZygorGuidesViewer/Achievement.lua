@@ -62,14 +62,14 @@ function Achievement:IconSetup()
 	if self.loaded then return end
 
 	for g,guide in ipairs(ZGV.registeredguides) do
-		if guide.achieveid then
-			if type(guide.achieveid) == "table" then
+		if guide.headerdata.achieveid then
+			if type(guide.headerdata.achieveid) == "table" then
 				local id,i
-				for id,i in pairs(guide.achieveid) do
+				for id,i in pairs(guide.headerdata.achieveid) do
 					self.AvailGuides[id]=guide 
 				end
-			elseif type(guide.achieveid) == "number" then
-				self.AvailGuides[guide.achieveid]=guide 
+			elseif type(guide.headerdata.achieveid) == "number" then
+				self.AvailGuides[guide.headerdata.achieveid]=guide 
 			end
 		end
 	end
@@ -79,8 +79,8 @@ function Achievement:IconSetup()
 		local button=_G[prefix]
 		if not button then break end
 
-		local iconFrame = CreateFrame("Button", "", button,"OptionsButtonTemplate")
-		iconFrame:SetSize(25,20)
+		local iconFrame = CreateFrame("Button", "", button)
+		iconFrame:SetSize(25,25)
 		iconFrame:SetPoint("TOPRIGHT",button,"TOPRIGHT",-5,-5)
 		iconFrame:SetScript("OnEnter",function(self)
 			GameTooltip:ClearAllPoints()
@@ -95,7 +95,8 @@ function Achievement:IconSetup()
 
 		iconFrame.tex=iconFrame:CreateTexture("","OVERLAY")
 		iconFrame.tex:SetAllPoints(true)
-		iconFrame.tex:SetTexture(ZGV.DIR.."\\ZygorTalentAdvisor\\Skin\\popout-button")
+		iconFrame.tex:SetTexture(ZGV.DIR.."\\Skins\\zygor-round")
+		iconFrame.tex:SetTexCoord(0,0,0,1/2 , 1,0,1,1/2)
 
 		button.zygorButton=iconFrame
 

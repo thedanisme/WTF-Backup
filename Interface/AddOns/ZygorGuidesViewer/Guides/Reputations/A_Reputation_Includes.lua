@@ -3206,10 +3206,14 @@ ZygorGuidesViewer:RegisterInclude("A_Kurenai_Faction",[[
 		|confirm
 	step
 	label	"bead_grind"
-		kill Warmaul Reaver##17138+, Warmaul Shaman##18064+
-		collect Obsidian Warbeads##25433 |n |goto Nagrand,48.9,22.7
+		kill Warmaul Reaver##17138+, Warmaul Shaman##18064+, Warmaul Warlock##18037+, Warmaul Brute##18065+
+		collect Obsidian Warbeads##25433 |n |goto Nagrand 48.9,22.7
 		If you are fresh into revered, you will need 420 beads to get 21,000 reputation points
-		Collect beads in sets of 10 |goto Nagrand,48.9,22.7
+		Collect beads in sets of 10
+		You can find more spots to farm Warbeads at the following locations:
+		Location 1 (Inside of the cave) |goto 50.0,56.8
+		Location 2 (Inside of the cave) |goto 40.8,31.7
+		Location 3 (Around this area) |goto 27.3,21.4
 		Click here when you're ready to turn in |confirm
 	step
 	label	"turn_in"

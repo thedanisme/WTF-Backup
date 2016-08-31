@@ -18,7 +18,11 @@ local LC = ZGV.LC
 local LQ = ZGV.LQ
 local LS = ZGV.LS
 
-local Astrolabe = DongleStub("Astrolabe-ZGV")
+ZGV.HBD = LibStub("HereBeDragons-1.0")
+ZGV.HBDPins = LibStub("HereBeDragons-Pins-1.0")
+
+local HBD=ZGV.HBD
+local HBDPins=ZGV.HBDPins
 
 --ZGV.name = L['name_plain']
 
@@ -26,7 +30,7 @@ ZGV.Vars={}
 
 --if addonName:find("DEV") then ZGV.DEV=true end
 if addonName:find("BETA") then ZGV.BETA=true end
-if addonName:find("BETA") then ZGV.DEV=true ZygorGuidesViewerFrame_DevLabel:SetText("BETA") end
+if addonName:find("BETA") then ZGV.DEV=true  if ZygorGuidesViewerFrame_DevLabel then ZygorGuidesViewerFrame_DevLabel:SetText("BETA") end  end
 
 -- Time to add some testing. ~~ Jeremiah
 ZGV.TestFramework = {}
@@ -148,7 +152,6 @@ ZGV.FontBold = FONTBOLD
 
 
 -- BAD GLOBALS!
-_G['Astrolabe']=Astrolabe
 
 local math_modf=math.modf
 math.round=function(n) local x,y=math_modf(n) return n>0 and (y>=0.5 and x+1 or x) or (y<=-0.5 and x-1 or x) end
@@ -397,6 +400,8 @@ function ZGV:OnEnable()
 	self:AddEvent("TAXIMAP_OPENED")
 
 	self:AddEvent("GET_ITEM_INFO_RECEIVED")
+
+	self:AddEvent("PLAYER_LEVEL_UP") -- legion popups
 
 	if self.db.profile.poketarget then
 		self:AddEvent("UPDATE_MOUSEOVER_UNIT")
@@ -734,10 +739,11 @@ local function _StartupThread()
 	ZGV:SendMessage("ZYGOR_GUIDES_PARSED", "done")
 
 	self:Print(L['welcome_guides']:format(#self.registeredguides),false,"force")
-	self:Print("Be always up to date: |cffffff88https://www.getfirehawk.com",false,"force")
 
 	self:SetVisible(nil,self.db.profile.enable_viewer)
 	self:UpdateFrame(true)
+
+	ZGV.Licence:CheckExpirationPopup()
 
 	self:OnFirstQuestLogUpdate()
 
@@ -1177,8 +1183,10 @@ function ZGV:FocusStep(num,forcefocus)
 	if not self.CurrentGuide.steps then return end
 	if num>#self.CurrentGuide.steps then return end
 
+	--[[ CreatureViewer removal, 7.0
 	ZGV.CreatureViewer.models={}
 	ZGV.CreatureViewer.Frame:Hide()
+	--]]
 
 	self:Debug("FocusStep "..num..(quiet and " (quiet)" or ""))
 
@@ -1283,11 +1291,11 @@ function ZGV:FocusStep(num,forcefocus)
 		self:FocusStepUnquiet()
 	end
 
-	self:TryToDisplayCreature()
+	--self:TryToDisplayCreature()
 	--self:UpdateMinimapArrow(true)
 
 	--self:AnimateGears()
-	if ZGV.Gold.Appraiser and ZGV.Gold.Appraiser.AddGuideItemsToBuy then
+	if ZGV.Gold.Appraiser and ZGV.Gold.Appraiser.Loaded and ZGV.Gold.Appraiser.AddGuideItemsToBuy then
 		ZGV.Gold.Appraiser:AddGuideItemsToBuy()
 	end
 end
@@ -1995,6 +2003,8 @@ function ZGV:UpdateFrame(full,onupdate)
 	if full then self.stepchanged=true end
 
 	if not self.Frame or not self.Frame:IsVisible() then return end
+
+	ZGV.Licence:CheckExpirationWarning()
 
 	--if InCombatLockdown() then return end
 	--[[
@@ -3039,7 +3049,7 @@ function ZGV:UpdateFrameCurrent()
 								action:SetAttribute("macro",goal.macro)
 								ZGV:Debug("&display Goal %d shows macro %d",goal.num,goal.macro)
 								local tex = select(2,GetMacroInfo(goal.macro))
-								if tex and tex:find("\\0") then tex=nil end
+								--if tex and tex:find("\\0") then tex=nil end
 								action.tex:SetTexture(tex)
 								action.goal = goal
 								vis=true
@@ -3737,34 +3747,12 @@ end
 ZGV.CurrentMapID,ZGV.CurrentMapFloor = 0,0
 
 function ZGV:CacheCurrentMapID()
-	--if Astrolabe.LastPlayerPosition then  -- try to avoid too much calling of SetMapToCurrentZone
-		local m,f = Astrolabe:GetCurrentPlayerPosition()
-		if m and m~=0 and m~=13 and m~=14 and m~=-1 and m~=485 and m~=466 and m~=613 and m~=862 and m~=962      -- multi-zone, whole-continent maps
-		--and (GetRealZoneText()==GetMapNameByID(m) or not WorldMapFrame:IsShown()) -- WHOA! Browsed away, maybe?
-		-- not needed anymore! GetCurrentPlayerPosition is now playing nice.
-		then
-			ZGV.CurrentMapID,ZGV.CurrentMapFloor = m,f
-			--ZGV:Debug(("Cached map/floor: %s %d/%d"):format(GetMapNameByID(self.CurrentMapID),self.CurrentMapID,self.CurrentMapFloor))
-		end
-		--return
-	--end
-	-- NOOOooo... Astrolabe.LastPlayerPosition is STUPID. It switches to continent map coord when browsing the map :/
-
-
-
-	-- Okay, this might be the most naive thing ever. If the map is not open, can we assume GetCurrent* calls do return player's own map..?
-
-	--if WorldMapFrame:IsShown() then return end  -- do not bother when maps are being browsed.
-	--[[
-	local m,f = GetCurrentMapAreaID(),GetCurrentMapDungeonLevel()
-	self.CurrentMapID,self.CurrentMapFloor = m,f
-	--]]
-
-
-
-	--SetMapToCurrentZone()
-	--self.CurrentMapID,self.CurrentMapFloor = GetCurrentMapAreaID(),GetCurrentMapDungeonLevel()
-	--if old_id~=self.CurrentMapID or old_floor~=self.CurrentMapFloor then SetMapByID(old_id)  SetDungeonMapLevel(old_floor) end
+	local _,_,m,f=HBD:GetPlayerZonePosition(true)
+	if m and m~=0 and m~=13 and m~=14 and m~=-1 and m~=485 and m~=466 and m~=613 and m~=862 and m~=962      -- multi-zone, whole-continent maps
+	then
+		ZGV.CurrentMapID,ZGV.CurrentMapFloor = m,f
+	end
+	-- HBD migration snip: various astrolabe stupidity workarounds
 end
 
 function ZGV:FindData(array,what,data)
@@ -3798,12 +3786,14 @@ function ZGV:Frame_OnShow()
 			self:ShowWaypoints()
 		end
 
+		--[[ CreatureViewer removal, 7.0
 		-- Trying to show the modelviewer frame
 		-- During startup operation we may be shown numerous times,
 		-- so let's make sure we're trying to do a nice thing
 		if self.db.profile.mv_enabled and self.CV then
 			self:TryToDisplayCreature(true)
 		end
+		--]]
 	end
 end
 
@@ -4328,6 +4318,7 @@ function ZGV:OpenQuickStepMenu(stepframe,goalframe)
 	end
 
 	local id = goal.npcid or (goal.mobs and goal.mobs[1] and goal.mobs[1].id) or (goal.action=="kill" and goal.targetid)
+	--[[ CreatureViewer removal, 7.0
 	if id then
 		local name = self.Localizers:GetTranslatedNPC(id) or "(creature)"
 		tinsert(menu,{
@@ -4346,6 +4337,7 @@ function ZGV:OpenQuickStepMenu(stepframe,goalframe)
 			isNotRadio=true,
 		})
 	end
+	--]]
 
 	if goal:IsCompleteable() then
 		tinsert(menu,{
@@ -4884,15 +4876,17 @@ ZGV.DEBUG_DEPTH=0
 ZGV.DEBUG_STACK={}
 
 local framestart_t = 0
+local display={}
 function ZGV:Debug (msg,...)
 	local profile = ZGV.db and ZGV.db.profile   if not profile then return end
 	if not profile.debug then return end
 	
 	--local initial_time=debugprofilestop()
 
-	local display = {}
 	table.wipe(display)
 	for i=1,select("#",...) do display[i]=select(i,...) or "nil" end
+	-- just in case:
+	table.insert(display,0) table.insert(display,0) table.insert(display,0)
 
 	local depth=0
 	if profile.debug_showdepth then debugstack():gsub("\n",function() depth=depth+1 end) end
@@ -5364,85 +5358,8 @@ function ZGV:Error(s,...)
 	ZGV.ParseLog = ZGV.ParseLog .. s .. "\n"
 end
 
---[[
-function ZGV_DEV()
-	--ZGV:AddEvent("")
-	--if ZGV.TimeShip then ZGV:ScheduleRepeatingTimer("TimeShip",0.1) end
-	--ZGV:ScheduleRepeatingTimer("MemHogging",0.1)
-end
---]]
+-- HBD migration snip: Ship Arrival Times 
 
---[=[ do	--[[-- EXPERIMENTAL : Ship Arrival Times --]]--
-	ZGV.ShipTimes = {
-		["stormwind-borean"] = { interval=272.0, m=301,f=0,x=0.1715,y=0.2584, reverse="borean-stormwind", shift=-121.0 },
-		["borean-stormwind"] = { interval=272.0, m=486,f=0,x=0.5991,y=0.6957, reverse="stormwind-borean", shift=121.0 },
-		["stormwind-darnassus"] = { interval=235.8, m=301,f=0,x=0.2165,y=0.5621, reverse="darnassus-stormwind", shift=116.5 },
-		["darnassus-stormwind"] = { interval=235.8, m=41,f=0,x=0.5492,y=0.9405, reverse="stormwind-darnassus", shift=-116.5 },
-	}
-
-	function ZGV:TimeShip(ship)
-		local TIMES = self.ShipTimes
-
-		local time = GetTime()
-
-		if not ship then
-			local m,f,x,y = Astrolabe:GetCurrentPlayerPosition()
-			for shipname,shipdata in pairs(TIMES) do
-				local dist = Astrolabe:ComputeDistance(m,f,x,y,shipdata.m,shipdata.f,shipdata.x,shipdata.y)
-				if dist and dist<3 and not IsFlying() and not IsSwimming() and (not shipdata.last_detected or time-shipdata.last_detected>90) then
-					shipdata.last_detected = time
-					print("SHIP DETECTED! OMG!",shipname)
-					ship=shipname
-					break
-				end
-			end
-		end
-
-		if ship=="?" then
-			print("Ships at the moment:")
-			for shipname,shipdata in pairs(TIMES) do
-				if shipdata.interval then
-					--local progress = time()-shipdata.last
-					--local perc = progress % shipdata.interval
-					--local missed = math.floor(progress/shipdata.interval)
-					local nxt = shipdata.last
-					if nxt then
-						while (nxt<time) do nxt=nxt+shipdata.interval end
-						print(shipname,": arrival in",nxt-time,", interval",shipdata.interval,", missed",math.floor((time-shipdata.last)/shipdata.interval))
-					else
-						print(shipname,": arrives every",shipdata.interval,"s")
-					end
-				elseif shipdata.last then
-					print(shipname,": timing - last seen",time-shipdata.last,"s ago")
-				end
-			end
-			return
-		end
-
-		if ship then
-			if not TIMES[ship] then TIMES[ship]={} end
-			local shipdata = TIMES[ship]
-
-			if not shipdata.last then
-				if not shipdata.interval then
-					print("Ship",ship,"initial time recorded. Wait for another.")
-				else
-					print("Ship",ship,"arrival synchronized.")
-				end
-			else
-				if not shipdata.interval then shipdata.interval = time-shipdata.last end
-				print(time-shipdata.last,"seconds since last",ship,"trip.")
-				if not shipdata.intervals then shipdata.intervals={} end
-				tinsert(shipdata.intervals,time-shipdata.last)
-				local sum=0
-				for i=1,#shipdata.intervals do  sum=sum+shipdata.intervals[i]  end
-				print("That's average",sum/#shipdata.intervals,"over",#shipdata.intervals)
-			end
-			shipdata.last = time
-			if shipdata.reverse then TIMES[shipdata.reverse].last=time+shipdata.shift end
-		end
-	end
-end --]=]
 
 local lasttime,lastmem=GetTime(),0
 local memavg={0,0,0,0,0}
@@ -5740,20 +5657,6 @@ end
 local uncached_calls = 0
 
 function ZGV:GetItemInfo(ident)
-	if not gii_cache then 
-		return nil
-	elseif gii_cache[ident] and gii_cache[ident][1] then  
-		-- return cached data
-		-- update its last access time
-		gii_cache[ident].timestamp=time()
-	elseif not gii_cache[ident] then
-		gii_cache[ident]={GetItemInfo(ident)}
-		gii_cache[ident].timestamp=time()
-	end
-	return unpack(gii_cache[ident])
-
-
-	--[[
 	local live_result = {GetItemInfo(ident)}
 	if not gii_cache then 
 		-- not yet initialised, return whatever blizz gave us
@@ -5768,10 +5671,10 @@ function ZGV:GetItemInfo(ident)
 		gii_cache[ident].timestamp=time()
 	else
 		-- nothing, but we will have data shortly
+		gii_cache[ident]={}
 		return nil
 	end
 	return unpack(gii_cache[ident])
-	--]]
 end
 
 function ZGV:PurgeItemInfo()
@@ -5779,15 +5682,46 @@ function ZGV:PurgeItemInfo()
 end
 
 function ZGV:GET_ITEM_INFO_RECEIVED(event,ident)
-	gii_cache[ident] = {GetItemInfo(ident)}
-	gii_cache[ident].timestamp=time()
+	-- only store the items we requested
+	if gii_cache[ident] then
+		gii_cache[ident] = {GetItemInfo(ident)}
+		gii_cache[ident].timestamp=time()
+	end
 end
 
+function ZGV:PLAYER_LEVEL_UP(event,level)
+	local title,message,guide
+	if level==101 then
+		guide = ZGV:GetGuideByTitle("Leveling Guides\\Legion (100-110)\\Order Hall Quests")
+		title = "First Class Order Hall Quest Available"
+		message = "\nA new Class Order Hall questline is now available. Would you like to load the guide for this?"
+	elseif level==102 then
+		if ZGV:RaceClassMatch("DEMONHUNTER") then
+			guide = ZGV:GetGuideByTitle("Leveling Guides\\Starter Guides\\Demon Hunter (98-100)")
+		else
+			guide = ZGV:GetGuideByTitle("Leveling Guides\\Legion (100-110)\\Legion Intro & Artifacts")
+		end
+		title = "Additional Artifact Weapons Now Available"
+		message = "\nYou can now unlock additional artifact \nweapons for your classes other specs. \nWould you like to load the guide for this?\n"
+	elseif level==103 then
+		guide = ZGV:GetGuideByTitle("Leveling Guides\\Legion (100-110)\\Order Hall Quests")
+		title = "Second Class Order Hall Quest Available"
+		message = "\nA new Class Order Hall questline is now available. Would you like to load the guide for this?"
+	elseif level==110 then
+		guide = ZGV:GetGuideByTitle("Leveling Guides\\Legion (100-110)\\Order Hall Quests")
+		title = "Third Class Order Hall Quest Available"
+		message = "\nA new Class Order Hall questline is now available. Would you like to load the guide for this?"
+	end
+
+	if guide then
+		guide:LegionPopup(title,message,level)
+	end
+end
 
 function ZGV:SuggestWorldQuestGuide(object)
 	if not object.worldQuest then return end
 
-	local guidetitle = "Dailies Guides\\Legion\\World Quests"
+	local guidetitle = "Dailies Guides\\Legion\\Legion World Quests"
 
 	if IsWorldQuestWatched(object.questID) then
 		local guide = self:GetGuideByTitle(guidetitle)
@@ -5834,4 +5768,17 @@ function ZGV:SuggestWorldQuestGuide(object)
 			"worldquest")
 		end
 	end
+end
+
+function ZGV:Timerize(func,a1,a2,a3,a4,a5,a6)
+	local thread = coroutine.create(func)
+	local timer
+	timer = self:ScheduleRepeatingTimer(function()
+		if coroutine.status(thread)~="dead" then
+			local ok,err = coroutine.resume(thread,a1,a2,a3,a4,a5,a6)
+			if not ok then self:Error("Timerize error: "..tostring(err)) end
+		else
+			ZGV:CancelTimer(timer)
+		end
+	end , 0.01)
 end

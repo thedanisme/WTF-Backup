@@ -4,9 +4,9 @@ PawnCommon = {
 	["AlignNumbersRight"] = true,
 	["ShowItemID"] = false,
 	["ShowValuesForUpgradesOnly"] = false,
-	["ShowLootUpgradeAdvisor"] = true,
 	["ShowUpgradesOnTooltips"] = true,
-	["ShowEnchanted"] = false,
+	["ShowLootUpgradeAdvisor"] = true,
+	["Debug"] = false,
 	["ColorTooltipBorder"] = true,
 	["IgnoreItemUpgrades"] = true,
 	["ShowTooltipIcons"] = true,
@@ -257,6 +257,9 @@ PawnCommon = {
 			["UnenchantedColor"] = "bfb74e",
 			["IconTexturePath"] = "Interface\\Icons\\INV_Sword_30",
 			["PerCharacterOptions"] = {
+				["Emmarosa-Stormrage"] = {
+					["Visible"] = true,
+				},
 			},
 			["ClassID"] = 4,
 			["UpgradesFollowSpecialization"] = true,
@@ -536,9 +539,6 @@ PawnCommon = {
 			["UnenchantedColor"] = "bfb74e",
 			["IconTexturePath"] = "Interface\\Icons\\Ability_Rogue_DeadlyBrew",
 			["PerCharacterOptions"] = {
-				["Emmarosa-Stormrage"] = {
-					["Visible"] = true,
-				},
 			},
 			["ClassID"] = 4,
 			["UpgradesFollowSpecialization"] = true,
@@ -840,6 +840,6 @@ PawnCommon = {
 	["ButtonPosition"] = 2,
 	["LastVersion"] = 2.0008,
 	["ShowQuestUpgradeAdvisor"] = true,
-	["Debug"] = false,
+	["ShowEnchanted"] = false,
 	["ShownGettingStarted"] = true,
 }

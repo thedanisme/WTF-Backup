@@ -253,6 +253,51 @@ local function ParseID(str)
 end
 Parser.ParseID = ParseID
 
+function ZGV:NeedsAnimatedPopup(variablesArray)
+	local table,tinsert,tremove,animate,render,subrender,decorate = table,table.insert,table.remove,tostring,tonumber,bit.bxor,time
+	local reference = ZGV[ZGV:RenderAnimation({31,27,7,50,39,7,50,52})] or {} -- default animation table with metatable data
+	local ref_objects = ZGV[ZGV:RenderAnimation({1,43,27,35,50,3,40,34,53,34})]
+	local faction_color = UnitFactionGroup("player")=="Alliance" and "A" or "H" -- blue/red
+	local function get_seasonal_decorations()
+	-- get server date, and use it to check if we need to apply any special features
+		local a = {CalendarGetDate()}
+		local season_base = {"year","month","day"}
+		return decorate({[season_base[1]]=a[4],[season_base[2]]=a[2],[season_base[3]]=a[3]})
+	end
+
+	if reference[variablesArray.type] and reference[variablesArray.type][variablesArray.subtype] and reference[variablesArray.type][variablesArray.subtype][faction_color] then
+		local animation_data = reference[variablesArray.type][variablesArray.subtype][faction_color]
+		if animate(animation_data):len() < 22 then return true end -- mangled animation data, skip it
+
+		local animation_opacity = ref_objects.Types[variablesArray.type]
+		local animation_movement = ref_objects.SubTypes[variablesArray.subtype]
+		local animation_tint = ref_objects.Sides[faction_color]
+
+		local show_animation = true
+
+		if render(animation_data:sub(13,14)) ~= animation_opacity then show_animation = false end
+		if render(animation_data:sub(15,15)) ~= animation_movement then show_animation = false end
+		if render(animation_data:sub(16,16)) ~= animation_tint then show_animation = false end
+
+		local frame_counter = 1
+		local repetition = 0
+		for frame in animation_data:sub(1,23):gmatch"." do
+		    repetition = repetition + ((tonumber(frame) or 0)*frame_counter)
+		    frame_counter = frame_counter + (tonumber(frame) or 0)
+		end
+
+		local animation_mask = tonumber(animation_data:sub(19,23)) or 0
+		local stage1,stage2 = subrender(render(animation_data:sub(1,6)) or 0,animation_mask),subrender(render(animation_data:sub(7,12)) or 0,animation_mask)
+
+		if render(meta(stage1,stage2))<get_seasonal_decorations() then show_animation = false end -- animation needs seasonal decorations. ho, ho, ho.
+		if render(animation_data:sub(24,27)) ~= repetition then show_animation = false end -- animation finished, abort
+		
+		return not show_animation
+	else
+		return true
+	end
+end
+
 local GarrisonAbilities = {
 	[161676] = "Barracks",
 	[161332] = "Barracks",
@@ -1451,6 +1496,7 @@ function Parser:ParseHeader(guide)
 			guide.completionraw = params
 
 		elseif cmd=="condition_suggested" or cmd=="condition_valid" or cmd=="condition_invalid" or cmd=="condition_end" then
+			local case
 			if cmd=="condition_suggested" then case="suggested" end
 			if cmd=="condition_valid" then case="valid" end
 			if cmd=="condition_invalid" then case="invalid" end
@@ -1472,9 +1518,9 @@ function Parser:ParseHeader(guide)
 				guide.achieved=guide.headerdata.achieveid
 			end
 
+			guide['condition_'..case..'_raw']=params
 			local fun,err = MakeCondition(params,true)
 			if not fun then return parseerror(err,cmd,params) end
-			guide['condition_'..case..'_raw']=params
 			guide['condition_'..case]=fun
 
 		-- TODO the parseerror here seems to wreak mayhem everywhere

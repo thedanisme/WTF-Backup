@@ -9149,6 +9149,24 @@ kill Nalak##69099+ |achieve 8028 |goto Isle of Thunder/0 60.0,37.6
 step
 Congratulations, you have achieved the _Praise the Sun!_ achievement!
 ]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\Dungeons & Raids\\Pandaria Dungeon\\Pandaria Dungeon Hero",{
+condition_end="achieved(6925)",
+},[[
+step
+To earn this Achievement, you will need to complete the following Dungeons on _Heroic or Higher_ Difficulty:
+Heroic: Temple of the Jade Serpent |achieve 6925/1
+Heroic: Stormstout Brewery |achieve 6925/2
+Heroic: Mogu'shan Palace |achieve 6925/3
+Heroic: Shado-Pan Monastery |achieve 6925/4
+Heroic: Gate of the Setting Sun |achieve 6925/5
+Heroic: Scarlet Halls |achieve 6925/6
+Heroic: Scarlet Monastery |achieve 6925/7
+Heroic: Scholomance |achieve 6925/8
+Heroic: Siege of Niuzao Temple |achieve 6925/9
+If you need help through the dungeon, refer to one of our Dungeon Guides
+step
+Congratulations, you have completed the Pandaria Dungeon Hero Achievement!
+]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\Events\\Brawler's Guild\\I'm Your Number One Fan",{
 author="support@zygorguides.com",
 condition_end="achieved(7943)",

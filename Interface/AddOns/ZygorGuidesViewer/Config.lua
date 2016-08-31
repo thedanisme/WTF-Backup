@@ -168,7 +168,6 @@ local function PlaceZGV()
 	end	
 
 	ZGV.Frame:Show()
-	ZGV.CreatureViewer.Frame:Show()
 	ZGV.Pointer.ArrowFrameCtrl:Show()
 end
 
@@ -352,7 +351,6 @@ function Config:Finish(how)
 	-- Fade in the Guide Viewer,Model Viewer, and waypoint arrow.
 
 	--UIFrameFadeIn(ZGV.Frame,2.0,0.0,ZGV.db.profile.opacitymain or 1.0)
-	--UIFrameFadeIn(ZGV.CreatureViewer.Frame,2.0,0.0,1.0)
 	--UIFrameFadeIn(ZGV.Pointer.ArrowFrameCtrl,2.0,0.0,1.0)
 
 	-- If profile was already changed by other chars, use the position they have set.

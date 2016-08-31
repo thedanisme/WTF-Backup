@@ -30,6 +30,9 @@
 	<Include file="LibBetterBlizzOptions-1.0\lib.xml"/>
 	<Include file="LibGratuity-3.0\lib.xml"/>
 
+	<Include file="HereBeDragons-1.0\HereBeDragons-1.0.lua"/>
+	<Include file="HereBeDragons-1.0\HereBeDragons-Pins-1.0.lua"/>
+
 	<!--
 	<Include file="LibQuestWatch-1.0\lib.xml"/>
 	-->

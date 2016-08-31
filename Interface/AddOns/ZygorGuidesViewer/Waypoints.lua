@@ -4,7 +4,7 @@ if not ZGV then return end
 local L = ZGV.L
 local BZL = ZGV.BZL
 
-local Astrolabe = DongleStub("Astrolabe-ZGV")
+local HBD = ZGV.HBD
 
 local tinsert=tinsert
 
@@ -832,7 +832,7 @@ ZGV.WaypointFunctions['internal'] = {
 				if waypath then
 					if waypath.loop then
 						-- EXPERIMENTAL: travel to path's general area.
-						local currentmapid = Astrolabe:GetCurrentPlayerPosition()
+						local _,_,currentmapid=HBD:GetPlayerZonePosition(true)
 						if currentmapid ~= waypath.coords[1].map then
 							self:Debug("&waypoints Pointing to a looped path! We're not in the farm path's zone, let's travel.")
 							ZGV.Pointer:FindTravelPath("farm")
@@ -846,7 +846,7 @@ ZGV.WaypointFunctions['internal'] = {
 					end
 
 					local firstcoord = waypath.coords[1]
-					local currentmapid = Astrolabe:GetCurrentPlayerPosition()
+					local _,_,currentmapid=HBD:GetPlayerZonePosition(true)
 					if currentmapid~=firstcoord.map then
 						self:Debug("&waypoints Pointing to a path! We're not in the path's zone, let's travel to the first point.")
 						local x,y=0,0
@@ -1026,89 +1026,6 @@ function ZGV:IsWaypointAddonEnabled(addon)
 	if not addon then addon = self.db.profile.waypointaddon end
 	return self.db.profile.waypointaddon==addon and self:IsWaypointAddonReady(addon) -- and self.iconsregistered
 end
-
-
-
-function ZGV:qRegisterNotes()
-	if not self.CurrentStep then return end
-	-- use for pre-registering. Cartographer needs that, while TomTom does not.
-
-	-- retrying 3 times
-	if self.iconsregistered then return end
-	if not self.iconregistryretries then self.iconregistryretries=0 end
-	if self.iconregistryretries==3 then
-		self:Print(L["waypointaddon_fail"]:format(L["opt_group_addons_"..self.db.profile.waypointaddon]))
-		if not self.autodetectingwaypointaddon then
-			self:AutodetectWaypointAddon()
-		end
-
-	end
-	if self.iconregistryretries>3 then return end
-	self.iconregistryretries = self.iconregistryretries + 1
-
-	if not self:IsWaypointAddonReady() then return end
-
-	--self:Print(L["waypointaddon_connecting"]:format(self.optionsmap.args.waypoints.values[self.db.profile.waypointaddon]))
-
-	local addon = self.db.profile.waypointaddon
-
-	if addon=="tomtom" then
-		--[[
-		if not self.db.profile.filternotes then
-			self:Print("Creating all waypoints for TomTom. This may take a while.")
-			local contid,zoneid
-			for zone in pairs(self.MapNotes) do
-				local zoneTr = BZL[zone]
-				contid,zoneid = self:GetMapZoneNumbers(zoneTr)
-				self:Debug("contid="..ns(contid).." zoneid="..ns(zoneid).." for "..ns(zoneTr))
-				if contid and zoneid and (type(self.MapNotes[zone])=="table") then
-					if (TomTom:GetMapFile(contid,zoneid)) then
-						for note,mapnote in pairs(self.MapNotes[zone]) do
-							x,y = self:getXY(note)
-							--self:Debug("x="..ns(x).." y="..ns(y))
-							if x and y then
-								--self:Debug(GetCurrentMapContinent().." "..ns(note).." "..ns(zone).." x"..ns(x).." y"..tostring(y))
-								self.TomTomWaypoints[#self.TomTomWaypoints+1] = TomTom:AddZWaypoint(
-									contid,zoneid,x*100,y*100,
-									self.MapNotes[zone][note].title, --desc
-									false, --persistent
-									true, true, --minimap,world
-									nil,true, --callbacks,silent
-									(zone==self.CurrentStep.mapzone and note==self.CurrentStep.mapnote) --arrow
-								)
-							end
-						end
-					else
-						self:Print("No map data for continent id "..ns(contid)..", zone id "..ns(zoneid)..", zone "..ns(zone)..", please report.")
-					end
-				end
-			end
-		end
-		--]]
-	elseif addon=="cart2" then
-		--[[
-		self:Debug("registering database "..#self.MapNotes)
-		Cartographer_Notes:RegisterNotesDatabase('ZygorGuides', self.MapNotes, self)
-		self:Debug("registered database")
-
-		self:Debug("registering icons")
-		if not self.iconsregistered then
-			for k,v in pairs(self.icons) do
-				Cartographer_Notes:RegisterIcon(k, v)
-			end
-		end
-		--]]
-	elseif addon=="internal" then
-	end
-
-	self:Print(L["waypointaddon_connected"]:format(L["opt_group_addons_"..addon]))
-	self:Debug("registered icons")
-	self.iconsregistered = true
-	self.iconregistryretries = 0
-
-	self:ShowWaypoints()
-end
-
 
 
 
@@ -1327,7 +1244,7 @@ function ZGV:CreateTomTomWaypointMFXY(m,f,x,y,title,arrow,func)
 	-- Sanity, sanity everywhere
 	if ZGV and ZGV.Pointer and ZGV.Pointer:IsEnvironmentPhased(m) then
 		ZGV:Debug("The player and the target are in the same phased environment, putting a marker on the current map instead.")
-		m,f=Astrolabe:GetCurrentPlayerPosition("last")
+		local _,_,m,f=HBD:GetPlayerZonePosition(true)
 	end
 
 	self:Debug("Setting TomTom waypoint: "..m..' '..f..' '..x..' '..y)
@@ -1352,106 +1269,3 @@ function ZGV:CreateTomTomWaypointMFXY(m,f,x,y,title,arrow,func)
 	if way then table.insert(self.TomTomWaypoints, way) end
 	return way
 end
-
---- Ah, who needs this crap anymore anyway... ~sinus 2011-08-15
-
---[[
-function ZGV:CreateTomTomWaypointZXY(m,f,x,y,title,arrow)
-	-- Can't find a mention of SpecialMapNames which are used by GetMapZoneNumbers
-	-- using this stub implementation by now, should work every time the other one used to ~aprotas
-end
-
--- TODO following implementations were mapzone-text dependent and used a contid,zoneid system
--- since TomTom natively supports mapid addressation I reworked this code to use mapid, and leave
--- these originals in case it's not intended
--- Also, it should make the last lookup functions rudimentary as well. ~aprotas
-
--- function ZGV:CreateTomTomWaypointXY(x,y,title,arrow)
--- 	return self:CreateTomTomWaypointZXY(GetRealZoneText(),x,y,title,arrow)
--- end
---
--- function ZGV:CreateTomTomWaypointZXY(zone,x,y,title,arrow)
--- 	local contid,zoneid = self:GetMapZoneNumbers(zone)
--- 	return self:CreateTomTomWaypointCZXY(contid,zoneid,x,y,title,arrow)
--- end
---
--- function ZGV:CreateTomTomWaypointCZXY(contid,zoneid,x,y,title,arrow)
--- 	print(contid..' '..zoneid..' '..x..' '..y)
--- 	self:Debug(x..' '..y)
--- 	local way = TomTom:AddZWaypoint(
--- 		contid, zoneid,
--- 		x, y,
--- 		title or self.CurrentStep.title or "Step "..self.CurrentStepNum,
--- 		false, --persistent
--- 		true, --minimap
--- 		true, --world
--- 		nil, --custom_callbacks
--- 		true, --silent
--- 		arrow --arrow
--- 	)
--- 	if way then table.insert(self.TomTomWaypoints, way) end
--- end
-
-local MapZoneCache={}
--- supply ENGLISH zone names please.
-function ZGV:GetMapZoneNumbers(zonename)
-	--local engzone = self.BZR[zonename]
-	local cached = MapZoneCache[zonename]
-	if cached then return cached[1],cached[2] end
-
-	if Astrolabe.SpecialMapNames and Astrolabe.SpecialMapNames[zonename] then
-		local data=Astrolabe.SpecialMaps[Astrolabe.SpecialMapNames[zonename] ]
-		MapZoneCache[zonename]=data
-		return data[1],data[2]
-	end
-	local loczone=self.BZL[zonename]
-	for cont in pairs{GetMapContinents()} do
-		for zone,name in pairs{GetMapZones(cont)} do
-			if name==loczone then
-				MapZoneCache[zonename]={cont,zone}
-				return cont,zone
-			end
-		end
-	end
-	return 0
-end
-
--- only for TomTom support, Astrolabe bundled
-local MapFileCache={}
-function ZGV:GetMapZoneFile(zonename)
-	local cached = MapFileCache[zonename]
-	if cached then return cached[1],cached[2] end
-
-	local data = Astrolabe.SpecialMapNames[zonename]
-	if data then
-		return data
-	end
-
-	local loczone=self.BZL[zonename]
-	for cont in pairs{GetMapContinents()} do
-		for zone,name in pairs{GetMapZones(cont)} do
-			if name==loczone then
-				return Astrolabe.ContinentList[cont][zone]
-			end
-		end
-	end
-	return ""
-end
---]]
-
---EVIL STUFF. Hacking the ORIGINAL GetMapContinents(). This is bad, bad, bad - but Blizzard broke the rules by creating an off-world zone first... ;P
---[[
-local continentlist = { GetMapContinents() }
-table.insert(continentlist,ZygorGuidesViewer.BZL["Plaguelands: The Scarlet Enclave"])
-function GetMapContinents()
-	return unpack(continentlist)
-end
-local _GetMapZones = GetMapZones
-function GetMapZones(cont)
-	if cont<5 then
-		return _GetMapZones(cont)
-	else
-		return ZygorGuidesViewer.BZL["Plaguelands: The Scarlet Enclave"]
-	end
-end
---]]

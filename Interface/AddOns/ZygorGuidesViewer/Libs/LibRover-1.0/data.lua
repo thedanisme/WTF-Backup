@@ -3,6 +3,13 @@ local name,addon = ...
 local data={}
 addon.LibRoverData = data
 
+data.version={
+	nodes_version = 3,  -- Increase this when working on the nodes. Bake the connections using ZGV.Testing.NeighbourCache:DumpNeighbours() when you're done.
+	nodes_A = 2604,
+	nodes_H = 2608,
+	nodes_N = 0
+}
+
 -- These are kept strictly unique. Make up bogus names if you need to.
 -- If multiple numbers are given, then only the first one is used here; others are used by Pointer to define phasedMaps.
 data.MapIDsByName = {
@@ -21,9 +28,9 @@ data.MapIDsByName = {
  -- TODO: fill in more 990+ IDs here, following the naming scheme.
 
  -- new ids for old maps? new versions
- ['Azshara L'] = 1038,['Azuremyst Isle L'] = 1092,['Black Temple L'] = 1085,['Deepholm L'] = 1060,['Firelands L'] = 1071,['Icecrown Citadel L'] = 1039,['Karazhan L'] = 1100,['Kun-Lai Summit L'] = 1058,['Temple of the Jade Serpent L'] = 1097,['Terrace of Endless Spring L'] = 1059,['The Exodar L'] = 1091,['The Maelstrom L'] = {1056,1057},['The Oculus L'] = 1104,['The Violet Hold L'] = 1054,['The Vortex Pinnacle L'] = 1070,['The Wandering Isle L'] = 1044,['Tirisfal Glades L'] = 1062,['Tol Barad L'] = 1090,['Ulduar L'] = 1076,
+ ['Azshara L'] = 1038,['Azuremyst Isle L'] = 1092,['Black Temple L'] = 1085,['Deepholm L'] = 1060,['Firelands L'] = 1071,['Icecrown Citadel L'] = 1039,['Karazhan L'] = 1100,['Kun-Lai Summit L'] = 1058,['Temple of the Jade Serpent L'] = 1097,['Terrace of Endless Spring L'] = 1059,['The Exodar L'] = 1091,['The Maelstrom L A'] = 1056, ['The Maelstrom L'] = 1057, ['The Oculus L'] = 1104,['The Violet Hold L'] = 1054,['The Vortex Pinnacle L'] = 1070,['The Wandering Isle L'] = 1044,['Tirisfal Glades L'] = 1062,['Tol Barad L'] = 1090,['Ulduar L'] = 1076,
  -- new legion maps
- ['Abyssal Maw'] = 1075,['Acherus: The Ebon Hold'] = 1101,['Azsuna'] = {1015,1053},['Black Rook Hold'] = {1081,1099},['Broken Isles'] = 1007,['Broken Shore'] = {1021,1031},['Court of Stars'] = 1087,['Dalaran L']=1014,['Dalaran L1']=924,['Darkheart Thicket'] = 1067,['Dreadscar Rift'] = {1050,1051},['Emerald Dreamway'] = 1048,['Eye of Azshara'] = {1046,1096},['Gloaming Reef'] = 1084,['Hall of the Guardian'] = 1068,['Halls of Valor'] = 1041,['Helheim'] = 1022,['Helmouth Cliffs'] = 1042,['Helmouth Shallows'] = 1034,['Highmountain'] = 1024,['Malorne\'s Nightmare'] = 1086,['Mardum, the Shattered Abyss C'] = 1028, ['Mardum, the Shattered Abyss'] = 1052,['Neltharion\'s Lair'] = 1065,['Netherlight Temple'] = 1040,['Niskara'] = {1047,1078},['Shadowgore Citadel'] = 1073,['Shield\'s Rest'] = 1036,['Skyhold'] = 1035,['Skywall'] = 1049,['Stormheim'] = {1017,1037},['Suramar'] = {1033,1055},['The Arcway'] = {1079,1102},['The Beyond'] = 1069,['The Cove of Nashal'] = 1027,['The Dreamgrove'] = 1077,['The Emerald Nightmare'] = 1094,['The Naglfar'] = 1043,['The Nighthold'] = 1088,['Thunder Totem'] = 1080,['Trueshot Lodge'] = 1072,['Twisting Nether'] = 1020,['Ursoc\'s Lair'] = 1082,['Val\'sharah'] = 1018,['Vault of the Wardens'] = {1032,1045},['Violet Hold'] = 1066,
+ ['Abyssal Maw'] = 1075,['Acherus: The Ebon Hold'] = 1101,['Azsuna'] = {1015,1053},['Black Rook Hold'] = 1081,['Black Rook Hold B'] = 1099,['Broken Isles'] = 1007,['Broken Shore'] = {1021,1031},['Court of Stars'] = 1087,['Dalaran L']=1014,['Dalaran L1']=924,['Darkheart Thicket'] = 1067,['Dreadscar Rift'] = {1050,1051},['Emerald Dreamway'] = 1048,['Eye of Azshara'] = {1046,1096},['Gloaming Reef'] = 1084,['Hall of the Guardian'] = 1068,['Halls of Valor'] = 1041,['Helheim'] = 1022,['Helmouth Cliffs'] = 1042,['Helmouth Shallows'] = 1034,['Highmountain'] = 1024,['Malorne\'s Nightmare'] = 1086,['Mardum, the Shattered Abyss C'] = 1028, ['Mardum, the Shattered Abyss'] = 1052,['Neltharion\'s Lair'] = 1065,['Netherlight Temple'] = 1040,['Niskara'] = 1078,['Niskara B'] = 1047,['Shadowgore Citadel'] = 1073,['Shield\'s Rest'] = 1036,['Skyhold'] = 1035,['Skywall'] = 1049,['Stormheim'] = {1017,1037},['Suramar'] = {1033,1055},['The Arcway'] = {1079,1102},['The Beyond'] = 1069,['The Cove of Nashal'] = 1027,['The Dreamgrove'] = 1077,['The Emerald Nightmare'] = 1094,['The Naglfar'] = 1043,['The Nighthold'] = 1088,['Thunder Totem'] = 1080,['Trueshot Lodge'] = 1072,['Twisting Nether'] = 1020,['Ursoc\'s Lair'] = 1082,['Val\'sharah'] = 1018,['Vault of the Wardens'] = {1032,1045},['Violet Hold'] = 1066,
 }
 data.MapIDsByNameR = {}
 for k,v in pairs(data.MapIDsByName) do 
@@ -117,704 +124,1092 @@ data.basenodes.setup = {
 	--]]
 
 data.basenodes.MapsWithExplicitFloors = {
-		["Orgrimmar"] = {
-			-- The middle of Cleft is a region with one point in it so that that point will be only way into the region.
-			-- The points connected to the point into the region are all dark points so that the tunnel path must be followed to enter/exit.
-			-- Data could be condensed but seems more clear this way than jammed into a few lines.
-			-- Region is needed because the Portal and dungeon entrances are within the region and should not be beelined to.
+	["Orgrimmar"] = {
+		-- The middle of Cleft is a region with one point in it so that that point will be only way into the region.
+		-- The points connected to the point into the region are all dark points so that the tunnel path must be followed to enter/exit.
+		-- Data could be condensed but seems more clear this way than jammed into a few lines.
+		-- Region is needed because the Portal and dungeon entrances are within the region and should not be beelined to.
 
-			-- 3-way west tunnel
-			"Orgrimmar/1 46.2,66.9 @cleft_sw_en <title:Cleft of Shadow entrance>",
-			"Orgrimmar/2 35.1,91.6 @cleft_sw_ex <title:Cleft of Shadow exit> <radius:10> <dark:1> <onlyhardwire:1>",
+		-- 3-way west tunnel
+		"Orgrimmar/1 46.2,66.9 @cleft_sw_en <title:Cleft of Shadow entrance>",
+		"Orgrimmar/2 35.1,91.6 @cleft_sw_ex <title:Cleft of Shadow exit> <radius:10> <dark:1> <onlyhardwire:1>",
 
-			"Orgrimmar/1 41.8,60.9 @cleft_nw_en <title:Cleft of Shadow entrance>",
-			"Orgrimmar/2 22.7,69.5 @cleft_nw_ex <title:Cleft of Shadow exit> <radius:10> <dark:1> <onlyhardwire:1>",
+		"Orgrimmar/1 41.8,60.9 @cleft_nw_en <title:Cleft of Shadow entrance>",
+		"Orgrimmar/2 22.7,69.5 @cleft_nw_ex <title:Cleft of Shadow exit> <radius:10> <dark:1> <onlyhardwire:1>",
 
-			"Orgrimmar/2 37.1,78.1 @cleft_w_tun <title:Cleft of Shadow tunnel> <radius:10> <dark:1> <onlyhardwire:1>",
+		"Orgrimmar/2 37.1,78.1 @cleft_w_tun <title:Cleft of Shadow tunnel> <radius:10> <dark:1> <onlyhardwire:1>",
 
-			"@cleft_sw_en",
-			"@+ -x- @cleft_sw_ex",
-			"@+ -x- @cleft_w_tun",
-			"@+ -x- Orgrimmar/2 41.8,66.1 <radius:25>",
+		"@cleft_sw_en",
+		"@+ -x- @cleft_sw_ex",
+		"@+ -x- @cleft_w_tun",
+		"@+ -x- Orgrimmar/2 41.8,66.1 <radius:25>",
 
-			"@cleft_nw_en",
-			"@+ -x- @cleft_nw_ex",
-			"@+ -x- @cleft_w_tun",
-			-- "@+ -x- Orgrimmar/2 41.8,66.1 <radius:25> <region:cleftofshadow>", gathered from above... This is to a node within the region.
+		"@cleft_nw_en",
+		"@+ -x- @cleft_nw_ex",
+		"@+ -x- @cleft_w_tun",
+		-- "@+ -x- Orgrimmar/2 41.8,66.1 <radius:25> <region:cleftofshadow>", gathered from above... This is to a node within the region.
 
 
-			-- Exit to the right
-			"Orgrimmar/1 54.98,51.28 @cleft_e_en <title:Cleft of Shadow entrance>",
-			"Orgrimmar/2 80.5,16.3 @cleft_e_ex <title:Cleft of Shadow exit> <radius:10> <dark:1> <onlyhardwire:1>",
+		-- Exit to the right
+		"Orgrimmar/1 54.98,51.28 @cleft_e_en <title:Cleft of Shadow entrance>",
+		"Orgrimmar/2 80.5,16.3 @cleft_e_ex <title:Cleft of Shadow exit> <radius:10> <dark:1> <onlyhardwire:1>",
 
-			"Orgrimmar/2 72.6,15.7 @cleft_e_tun <title:Cleft of Shadow tunnel> <radius:10> <dark:1> <onlyhardwire:1>",
+		"Orgrimmar/2 72.6,15.7 @cleft_e_tun <title:Cleft of Shadow tunnel> <radius:10> <dark:1> <onlyhardwire:1>",
 
-			"@cleft_e_en",
-			"@+ -x- @cleft_e_ex",
-			"@+ -x- @cleft_e_tun",
-			"@+ -x- Orgrimmar/2 65.61,37.98 <radius:25>",
+		"@cleft_e_en",
+		"@+ -x- @cleft_e_ex",
+		"@+ -x- @cleft_e_tun",
+		"@+ -x- Orgrimmar/2 65.61,37.98 <radius:25>",
+	},
+	["Dalaran"] = {
+		 --Underbelly, a few entries. Cost to adjust which gets used for each part of the city.
+		"Dalaran/1 35.0,45.3 <radius:5> -x- Dalaran/2 34.4,43.4 <region:underbelly> <radius:5> {template:tunnel}",
+		"@+ -x- Dalaran/1 38.8,45.1 <region:underbelly> ",
+		"@+ -x- Dalaran/2 34.3,43.3",
+		"Dalaran/1 60.2,47.7 <radius:5> -x- Dalaran/2 64.3,48.6 <region:underbelly> <radius:5> {template:tunnel} {cost:4}",
+		"@+ -x- Dalaran/1 38.8,45.1 <region:underbelly> ",
+		"@+ -x- Dalaran/2  64.4,48.6",
+		"Dalaran/1 48.1,32.7 <radius:2> <title:Dalaran Well> -to- Dalaran/2 44.3,25.2 {cost:8}",
+
+		--[[
+		"Dalaran/1 34.89,45.42 <title:Western sewer entrance> -x- Dalaran/1 31.59,45.56 <onlyhardwire_qq:1> <title:Western sewer entrance midpoint> <region:underbelly> {cost:0}",
+		"@+ -x- Dalaran/2 34.28,43.57 <title:Western sewer exit> {cost:0}",
+		"Dalaran/1 60.28,47.77 <title:Eastern sewer entrance> -x- Dalaran/1 62.68,51.37 <onlyhardwire_qq:1> <title:Eastern sewer entrance midpoint> <region:underbelly> {cost:0}",
+		"@+ -x- Dalaran/2 64.16,48.00 <title:Eastern sewer exit> {cost:0}",
+		--]]
+	},
+	[762] = { -- Scarlet Monastery - has to stay numeric! - this is funny, yes, it should be empty: floors are wings, inaccessible from each other. Rely on normal entrance/exit paths.
+	},
+
+	-- Azeroth:
+
+	-- Kalimdor
+
+		["Azuremyst Isle"] = {
+			"Azuremyst Isle/0 26.9,76.3 -x- Azuremyst Isle/2 59.5,88.1 {template:cave}", -- Tides' Hollow
+			"Azuremyst Isle/0 45.3,19.4 -x- Azuremyst Isle/3 21.2,94.6 {template:cave}", -- Stillpine Hold
 		},
-		["Dalaran"] = {
-			 --Underbelly, a few entries. Cost to adjust which gets used for each part of the city.
-			"Dalaran/1 35.0,45.3 <radius:5> -x- Dalaran/2 34.4,43.4 <region:underbelly> <radius:5> {template:tunnel}",
-			"@+ -x- Dalaran/1 38.8,45.1 <region:underbelly> ",
-			"@+ -x- Dalaran/2 34.3,43.3",
-			"Dalaran/1 60.2,47.7 <radius:5> -x- Dalaran/2 64.3,48.6 <region:underbelly> <radius:5> {template:tunnel} {cost:4}",
-			"@+ -x- Dalaran/1 38.8,45.1 <region:underbelly> ",
-			"@+ -x- Dalaran/2  64.4,48.6",
-			"Dalaran/1 48.1,32.7 <radius:2> <title:Dalaran Well> -to- Dalaran/2 44.3,25.2 {cost:8}",
-
-			--[[
-			"Dalaran/1 34.89,45.42 <title:Western sewer entrance> -x- Dalaran/1 31.59,45.56 <onlyhardwire_qq:1> <title:Western sewer entrance midpoint> <region:underbelly> {cost:0}",
-			"@+ -x- Dalaran/2 34.28,43.57 <title:Western sewer exit> {cost:0}",
-			"Dalaran/1 60.28,47.77 <title:Eastern sewer entrance> -x- Dalaran/1 62.68,51.37 <onlyhardwire_qq:1> <title:Eastern sewer entrance midpoint> <region:underbelly> {cost:0}",
-			"@+ -x- Dalaran/2 64.16,48.00 <title:Eastern sewer exit> {cost:0}",
+		["Desolace"] = {
+			"Desolace/0  28.9,62.6 -x- Desolace/21 24.6,43.5 {template:building}", -- Wicked Grotto **Only Way to Get To Felspore Cavern**
+			"Desolace/21 29.5,62.5 -x- Desolace/22 47.4,88.1 {template:cave}", -- Felspore Cavern
+			"Desolace/21 27.7,33.7 -x- Desolace/22 45.5,78.2 {template:cave}", -- Felspore Cavern
+		},
+		["Durotar"] = {
+			"Durotar/0 83.2,53.6 -x- Durotar/12 54.9,9.5 {template:cave}", -- Skull Rock
+			"Valley of Trials/0 53.0,21.3 -x- Durotar/8 72.2,89.7 {template:cave}", -- Burning Blade Coven
+			"Durotar/0 59.0,58.3 -x- Durotar/10 37.4,68.0 {template:building}", -- Tiragarde Keep
+			"Durotar/10 60.3,50.7 -x- Durotar/11 33.5,33.5 {template:custom} {atob:Go upstairs} {btoa:Go downstairs}", -- Tiragarde Keep, Great Hall (upstairs)
+			"Durotar/0 52.8,28.6 -x- Durotar/19 50.3,90.5 {template:cave}", -- Dustwind Cave
+		},
+		["Echo Isles"] = {
+			"Echo Isles/0 59.3,21.8 -x- Echo Isles/9 53.9,80.5 {template:cave}",
+		},
+		["Mulgore"] = {
+			"Mulgore/0 34.8,61.3 -x- Mulgore/6 76.9,56.3 {template:cave}", -- Palemane Rock
+			"Mulgore/0 60.8,47.4 -x- Mulgore/7 39.6,90.7 {template:mine}", -- The Venture Co. Mine
+			"Mulgore/0 59.3,36.6 -x- Mulgore/7 30.4,14.6 {template:mine}", -- The Venture Co. Mine
+			"Mulgore/0 59.2,44.0 -x- Mulgore/7 28.6,65.2 {template:mine}", -- The Venture Co. Mine
+		},
+		["Northern Barrens"] = {
+			"Northern Barrens/0 38.9,69.2 -x- Northern Barrens/20 22.5,88.6 {template:cave}", -- Wailing Caverns Cave Entrance
+		},
+		["Silithus"] = {
+			"Silithus/0 70.4,15.9 -x- Silithus/13 15.1,70.0 {template:cave}", -- Twilight's Run
+		},
+		["Tanaris"] = {
+			"Tanaris/0 35.3,42.6 -x- Tanaris/15 55.9,36.4 {template:tunnel}", -- The Noxious Lair
+			"Tanaris/0 34.8,41.6 -x- Tanaris/15 50.4,25.1 {template:tunnel}", -- The Noxious Lair
+			"Tanaris/0 34.5,42.4 -x- Tanaris/15 47.5,33.6 {template:tunnel}", -- The Noxious Lair
+			"Tanaris/0 54.5,69.8 -x- Tanaris/16 42.2,39.4 {template:tunnel}", -- The Gaping Chasm
+			"Tanaris/0 55.5,68.2 -x- Tanaris/16 51.5,24.3 {template:tunnel}", -- The Gaping Chasm
+			{ {"Tanaris/0 64.9,50.0",radius=20,actiontitle=function(self,fromnode,tonode) if tonode==self.border then return "Enter Caverns of Time" else return "Exit Caverns of Time" end end},
+			   {"Tanaris/17 53.3,29.4",actiontitle=function(self,fromnode,tonode) if fromnode and fromnode.m==self.m and fromnode.f==self.f then return "Go up the spiral tunnel" end end, actionicon=function(self,fromnode,tonode) if fromnode and fromnode.m==self.m and fromnode.f==self.f then return "upstairs" end end} }, -- Caverns of Time2
+			{ {"Tanaris/17 36.8,75.0",radius=20,actiontitle=function(self,fromnode,tonode) if fromnode and fromnode.m==self.m and fromnode.f==self.f then return "Go down the spiral tunnel" end end, actionicon=function(self,fromnode,tonode) if fromnode and fromnode.m==self.m and fromnode.f==self.f then return "downstairs" end end} ,
+			"Tanaris/18 61.8,52.4" }, -- Caverns of Time2
+			--[[  Detailed waypoints through the CoT tunnel. Obsolete, kindish.
+			"Tanaris/17 56,27 -x- Tanaris/17 59,28 {title:Traverse the Timeless Tunnel}",
+			"@+ -x- Tanaris/17 66,29 {title:Traverse the Timeless Tunnel}",
+			"@+ -x- Tanaris/17 68,18 {title:Traverse the Timeless Tunnel}",
+			"@+ -x- Tanaris/17 49,20 {title:Traverse the Timeless Tunnel}",
+			"@+ -x- @cot_tunnel_17to18 {title:Traverse the Timeless Tunnel}",
 			--]]
 		},
-		[762] = { -- Scarlet Monastery - has to stay numeric! - this is funny, yes, it should be empty: floors are wings, inaccessible from each other. Rely on normal entrance/exit paths.
+		["Teldrassil"] = {
+			"Teldrassil/0 45.6,50.6 @teldrbanethila0 -x- Teldrassil/4 52.6,15.5 @teldrbanethila4 {template:barrow}", -- Banethil Barrow Den (Upper Den)
+			"Teldrassil/4 24.6,86.0 @teldrbanethilb4 -x- Teldrassil/5 29.9,76.4 @teldrbanethilb5 {template:custom} {atob:Descend into Lower Den} {btoa:Ascend to Upper Den}", -- Banethil Barrow Den (Lower Den)
+			"Teldrassil/4 54.2,36.5 @teldrbanethilc4 -x- Teldrassil/5 46.7,39.7 @teldrbanethilc5 {template:custom} {atob:Descend into Lower Den} {btoa:Ascend to Upper Den}", -- Banethil Barrow Den (Lower Den)
+			"@teldrbanethila4 -x- @teldrbanethilb4 {override:1} {dist:350}",
+			"@teldrbanethilb4 -x- @teldrbanethilc4 {override:1} {dist:350}",
+			"@teldrbanethilc4 -x- @teldrbanethila4 {override:1} {dist:350}",
+			"Teldrassil/4 25.9,34.2 @teldrbanethil4up <onlyhardwire:1>",
+			"Teldrassil/4 38.8,56.8 @teldrbanethil4x <onlyhardwire:1>",
+			"@teldrbanethil4up -x- @teldrbanethila4 {dontsetborder:1}",
+			"@teldrbanethil4up -x- @teldrbanethil4x {dontsetborder:1}",
+			"@teldrbanethil4x -x- @teldrbanethilb4 {dontsetborder:1}",
+			"@teldrbanethil4x -x- @teldrbanethilc4 {dontsetborder:1}",
+
+			"Teldrassil/0 54.5,46.3 -x- Teldrassil/3 77.6,81.7 {template:cave}", -- Fel Rock
+			"Shadowglen/0 39.3,30.4 -x- Teldrassil/2 45.4,90.3 {template:cave}", -- Shadowthread Cave
 		},
 
-		-- Azeroth:
-
-		-- Kalimdor
-
-			["Azuremyst Isle"] = {
-				"Azuremyst Isle/0 26.9,76.3 -x- Azuremyst Isle/2 59.5,88.1 {template:cave}", -- Tides' Hollow
-				"Azuremyst Isle/0 45.3,19.4 -x- Azuremyst Isle/3 21.2,94.6 {template:cave}", -- Stillpine Hold
-			},
-			["Desolace"] = {
-				"Desolace/0  28.9,62.6 -x- Desolace/21 24.6,43.5 {template:building}", -- Wicked Grotto **Only Way to Get To Felspore Cavern**
-				"Desolace/21 29.5,62.5 -x- Desolace/22 47.4,88.1 {template:cave}", -- Felspore Cavern
-				"Desolace/21 27.7,33.7 -x- Desolace/22 45.5,78.2 {template:cave}", -- Felspore Cavern
-			},
-			["Durotar"] = {
-				"Durotar/0 83.2,53.6 -x- Durotar/12 54.9,9.5 {template:cave}", -- Skull Rock
-				"Valley of Trials/0 53.0,21.3 -x- Durotar/8 72.2,89.7 {template:cave}", -- Burning Blade Coven
-				"Durotar/0 59.0,58.3 -x- Durotar/10 37.4,68.0 {template:building}", -- Tiragarde Keep
-				"Durotar/10 60.3,50.7 -x- Durotar/11 33.5,33.5 {template:custom} {atob:Go upstairs} {btoa:Go downstairs}", -- Tiragarde Keep, Great Hall (upstairs)
-				"Durotar/0 52.8,28.6 -x- Durotar/19 50.3,90.5 {template:cave}", -- Dustwind Cave
-			},
-			["Echo Isles"] = {
-				"Echo Isles/0 59.3,21.8 -x- Echo Isles/9 53.9,80.5 {template:cave}",
-			},
-			["Mulgore"] = {
-				"Mulgore/0 34.8,61.3 -x- Mulgore/6 76.9,56.3 {template:cave}", -- Palemane Rock
-				"Mulgore/0 60.8,47.4 -x- Mulgore/7 39.6,90.7 {template:mine}", -- The Venture Co. Mine
-				"Mulgore/0 59.3,36.6 -x- Mulgore/7 30.4,14.6 {template:mine}", -- The Venture Co. Mine
-				"Mulgore/0 59.2,44.0 -x- Mulgore/7 28.6,65.2 {template:mine}", -- The Venture Co. Mine
-			},
-			["Northern Barrens"] = {
-				"Northern Barrens/0 38.9,69.2 -x- Northern Barrens/20 22.5,88.6 {template:cave}", -- Wailing Caverns Cave Entrance
-			},
-			["Silithus"] = {
-				"Silithus/0 70.4,15.9 -x- Silithus/13 15.1,70.0 {template:cave}", -- Twilight's Run
-			},
-			["Tanaris"] = {
-				"Tanaris/0 35.3,42.6 -x- Tanaris/15 55.9,36.4 {template:tunnel}", -- The Noxious Lair
-				"Tanaris/0 34.8,41.6 -x- Tanaris/15 50.4,25.1 {template:tunnel}", -- The Noxious Lair
-				"Tanaris/0 34.5,42.4 -x- Tanaris/15 47.5,33.6 {template:tunnel}", -- The Noxious Lair
-				"Tanaris/0 54.5,69.8 -x- Tanaris/16 42.2,39.4 {template:tunnel}", -- The Gaping Chasm
-				"Tanaris/0 55.5,68.2 -x- Tanaris/16 51.5,24.3 {template:tunnel}", -- The Gaping Chasm
-				{ {"Tanaris/0 64.9,50.0",radius=20,actiontitle=function(self,fromnode,tonode) if tonode==self.border then return "Enter Caverns of Time" else return "Exit Caverns of Time" end end},
-				   {"Tanaris/17 53.3,29.4",actiontitle=function(self,fromnode,tonode) if fromnode and fromnode.m==self.m and fromnode.f==self.f then return "Go up the spiral tunnel" end end, actionicon=function(self,fromnode,tonode) if fromnode and fromnode.m==self.m and fromnode.f==self.f then return "upstairs" end end} }, -- Caverns of Time2
-				{ {"Tanaris/17 36.8,75.0",radius=20,actiontitle=function(self,fromnode,tonode) if fromnode and fromnode.m==self.m and fromnode.f==self.f then return "Go down the spiral tunnel" end end, actionicon=function(self,fromnode,tonode) if fromnode and fromnode.m==self.m and fromnode.f==self.f then return "downstairs" end end} ,
-				"Tanaris/18 61.8,52.4" }, -- Caverns of Time2
-				--[[  Detailed waypoints through the CoT tunnel. Obsolete, kindish.
-				"Tanaris/17 56,27 -x- Tanaris/17 59,28 {title:Traverse the Timeless Tunnel}",
-				"@+ -x- Tanaris/17 66,29 {title:Traverse the Timeless Tunnel}",
-				"@+ -x- Tanaris/17 68,18 {title:Traverse the Timeless Tunnel}",
-				"@+ -x- Tanaris/17 49,20 {title:Traverse the Timeless Tunnel}",
-				"@+ -x- @cot_tunnel_17to18 {title:Traverse the Timeless Tunnel}",
-				--]]
-			},
-			["Teldrassil"] = {
-				"Teldrassil/0 45.6,50.6 @teldrbanethila0 -x- Teldrassil/4 52.6,15.5 @teldrbanethila4 {template:barrow}", -- Banethil Barrow Den (Upper Den)
-				"Teldrassil/4 24.6,86.0 @teldrbanethilb4 -x- Teldrassil/5 29.9,76.4 @teldrbanethilb5 {template:custom} {atob:Descend into Lower Den} {btoa:Ascend to Upper Den}", -- Banethil Barrow Den (Lower Den)
-				"Teldrassil/4 54.2,36.5 @teldrbanethilc4 -x- Teldrassil/5 46.7,39.7 @teldrbanethilc5 {template:custom} {atob:Descend into Lower Den} {btoa:Ascend to Upper Den}", -- Banethil Barrow Den (Lower Den)
-				"@teldrbanethila4 -x- @teldrbanethilb4 {override:1} {dist:350}",
-				"@teldrbanethilb4 -x- @teldrbanethilc4 {override:1} {dist:350}",
-				"@teldrbanethilc4 -x- @teldrbanethila4 {override:1} {dist:350}",
-				"Teldrassil/4 25.9,34.2 @teldrbanethil4up <onlyhardwire:1>",
-				"Teldrassil/4 38.8,56.8 @teldrbanethil4x <onlyhardwire:1>",
-				"@teldrbanethil4up -x- @teldrbanethila4 {dontsetborder:1}",
-				"@teldrbanethil4up -x- @teldrbanethil4x {dontsetborder:1}",
-				"@teldrbanethil4x -x- @teldrbanethilb4 {dontsetborder:1}",
-				"@teldrbanethil4x -x- @teldrbanethilc4 {dontsetborder:1}",
-
-				"Teldrassil/0 54.5,46.3 -x- Teldrassil/3 77.6,81.7 {template:cave}", -- Fel Rock
-				"Shadowglen/0 39.3,30.4 -x- Teldrassil/2 45.4,90.3 {template:cave}", -- Shadowthread Cave
-			},
-
-		-- Eastern Kingdoms
-			["Badlands"] = {
-				"Badlands/0 41.6,11.6 -x- Badlands/18 75.6,36.5 {template:cave}", --Uldaman Entrance
-			},
-			["Burning Steppes"] = {
-				"Burning Steppes/0 21.0,38.0 -x- Burning Steppes/14 49.50,88.66", -- Blackrock Spire south entrance
-				"Burning Steppes/14 72.0,43.2 -x- Burning Steppes/15 60.5,27.8", -- Blackrock Caverns foyer
-				"Burning Steppes/14 66.8,60.7 -x- Burning Steppes/15 41.7,79.6", -- Blackrock Caverns foyer north
-				"Burning Steppes/14 46.8,50.8 -x- Burning Steppes/16 58.2,88.5", -- Blackrock Depths chain
-			},
-			["Coldridge Valley"] = {
-				"Coldridge Valley/0 51.3,82.5 -x- Coldridge Valley/9 14.4,50.1  {template:cave}", -- Frostmane Hovel
-			},
-			["Deathknell"] = {
-				"Deathknell/0 29.7,30.7 -x- Deathknell/12 87.3,52.0 {template:building}", -- Night's Web Hollow
-			},
-			["Dun Morogh"] = {
-				"Dun Morogh/0 48.9,52.6 -x- Dun Morogh/7 60.4,77.0 {template:cave}",  -- Grizzled Den
-				"Dun Morogh/0 42.7,64.1 -x- Dun Morogh/6 60.6,11.0",  -- Coldridge Pass
-				"Dun Morogh/0 41.1,70.0 -x- Dun Morogh/6 38.0,91.1", -- Coldridge Pass
-				"Dun Morogh/10 79.5,84.2 -x- New Tinkertown/0 32.6,37.0", --Gnome Starter
-				"Dun Morogh/0 77.8,55.1 -x- Dun Morogh/11 39.6,84.2 {template:cave}", -- Gol'Bolar Quarry Mine
+	-- Eastern Kingdoms
+		["Badlands"] = {
+			"Badlands/0 41.6,11.6 -x- Badlands/18 75.6,36.5 {template:cave}", --Uldaman Entrance
+		},
+		["Burning Steppes"] = {
+			"Burning Steppes/0 21.0,38.0 -x- Burning Steppes/14 49.50,88.66", -- Blackrock Spire south entrance
+			"Burning Steppes/14 72.0,43.2 -x- Burning Steppes/15 60.5,27.8", -- Blackrock Caverns foyer
+			"Burning Steppes/14 66.8,60.7 -x- Burning Steppes/15 41.7,79.6", -- Blackrock Caverns foyer north
+			"Burning Steppes/14 46.8,50.8 -x- Burning Steppes/16 58.2,88.5", -- Blackrock Depths chain
+		},
+		["Coldridge Valley"] = {
+			"Coldridge Valley/0 51.3,82.5 -x- Coldridge Valley/9 14.4,50.1  {template:cave}", -- Frostmane Hovel
+		},
+		["Deathknell"] = {
+			"Deathknell/0 29.7,30.7 -x- Deathknell/12 87.3,52.0 {template:building}", -- Night's Web Hollow
+		},
+		["Dun Morogh"] = {
+			"Dun Morogh/0 48.9,52.6 -x- Dun Morogh/7 60.4,77.0 {template:cave}",  -- Grizzled Den
+			"Dun Morogh/0 42.7,64.1 -x- Dun Morogh/6 60.6,11.0",  -- Coldridge Pass
+			"Dun Morogh/0 41.1,70.0 -x- Dun Morogh/6 38.0,91.1", -- Coldridge Pass
+			"Dun Morogh/10 79.5,84.2 -x- New Tinkertown/0 32.6,37.0", --Gnome Starter
+			"Dun Morogh/0 77.8,55.1 -x- Dun Morogh/11 39.6,84.2 {template:cave}", -- Gol'Bolar Quarry Mine
 
 
+		},
+		["Elwynn Forest"] = {
+			"Elwynn Forest/0 61.7,53.7 -x- Elwynn Forest/19 48.9,90.1 {template:mine}", --Jaspermind
+			"Elwynn Forest/0 38.9,82.3 -x- Elwynn Forest/1 39.9,88.0 {template:mine}", --Fargomine
+			"Elwynn Forest/1 55.4,36.3 -x- Elwynn Forest/2 56.3,26.0", --Fargomine Lower
+			"Elwynn Forest/0 38.5,81.5 -x- Elwynn Forest/2 35.2,68.4 {template:mine}", --Fargomine Lower
+		},
+		["Gilneas"] = {
+			"Gilneas/0 29.0,51.6 -x- Gilneas/2 68.1,60.3 {template:building}", -- Greymane Manor Main Floor
+			"Gilneas/2 61.0,47.5 -x- Gilneas/3 56.7,47.5 {template:custom} {atob:Go upstairs} {btoa:Go downstairs}", -- Greymane Manor Upper Floor
+		},
+		["Ghostlands"] = {
+			"Ghostlands/0 66.4,28.5 -x- Ghostlands/1 94.0,35.6 {template:tunnel}", -- Amani Catacombs
+			"Ghostlands/0 58.3,27.5 -x- Ghostlands/1 10.0,26.0 {template:tunnel}", -- Amani Catacombs
+		},
+		["New Tinkertown"] = {
+			"New Tinkertown/0 33.3,66.4 -x- New Tinkertown/8 94.6,58.1 {template:cave}", -- Frostmane Hold
+		},
+		["Searing Gorge"] = {
+			"Searing Gorge/0 34.8,85.6 -x- Burning Steppes/14 46.47,18.25", -- Blackrock Spire north entrance
+			--"Searing Gorge/0 34.8,85.2 -x- Searing Gorge/14 48.0,15.8", -- Blackrock Spire north entrance
+			--"Searing Gorge/14 48.0,15.8 -x- Burning Steppes/14 46.3,18.3", --
+			"Searing Gorge/14 46.8,50.8 -x- Searing Gorge/16 58.2,88.5", -- Blackrock Depths chain again - silly two-zone clone dungeon
+			"Searing Gorge/16 40.2,57.9 -x- Burning Steppes/16 46.2,62.9",
+		},
+		["Tirisfal Glades"] = {
+			"Tirisfal Glades/0 82.6,33.5 -x- Tirisfal Glades/13 17.3,82.9 {template:building}", -- Scarlet Monastery Entrance
+			"Tirisfal Glades/0 82.3,32.6 -x- Tirisfal Glades/13 14.5,73.1 {template:building}", -- Scarlet Monastery Entrance
+		},
+		["Westfall"] = {
+			"Westfall/0 42.5,71.8 -x- Westfall/17 69.3,23.7 {template:building}", -- Deadmines Cave Entrance (Moonbrook)
+			"Westfall/0 44.5,24.7 -x- Westfall/5 41.1,94.1 {template:mine}", -- Jangolode Mine
+		},
+
+	-- Outland
+
+	-- Northrend
+
+	-- Cataclysm areas
+
+		["Kezan"] = {
+			"Kezan/0 65.6,86.7 -x- Kezan/7 64.0,19.6 {template:mine}", -- Kaja'Mine Copper
+			"Kezan/0 74.3,83.3 -x- Kezan/6 32.9,31.0 {template:mine}", -- Kaja'Mine Silver
+			"Kezan/0 70.9,76.5 -x- Kezan/5 41.0,75.5 {template:mine}", -- Kaja'Mine Gold
+		},
+		["The Lost Isles"] = {
+			"The Lost Isles/0 31.2,78.6 -x- The Lost Isles/1 48.1,90.0 {template:cave}", -- Kaja'mite Cavern
+			"The Lost Isles/0 70.0,48.0 -x- The Lost Isles/2 50.0,10.8 {template:cave}", -- Volcanoth's Lair
+		},
+		["Gilneas"] = {
+			"678/0 76.6,31.1 -x- 678/1 28.5,70.0 <indoors:Emberstone Mine> {template:mine}", -- Emberstone Mine
+		},
+
+	-- Pandaria
+
+		["The Jade Forest"] = {
+			"The Jade Forest/0 45.9,28.9 -x- The Jade Forest/6 75.7,24.7 {template:mine}", -- Greenstone Quarry (Outside --> Upper Quarry)
+			"The Jade Forest/6 39.8,38.0 -x- The Jade Forest/7 51.2,51.0 {template:custom} {atob:Go to the Lower Quarry} {btoa:Go to the Upper Quarry}", -- Greenstone Quarry (Upper Quarry --> Lower Quarry)
+			"The Jade Forest/0 57.7,31.7 -x- The Jade Forest/15 76.8,20.0 {template:cave}", -- The Widow's Wail (Outside of Cave --> Inside Cave)
+			"The Jade Forest/0 57.5,27.7 -x- The Jade Forest/16 82.4,47.7 {template:cave}", -- Oona Kagu (Outside of Cave --> Inside Cave)
+		},
+		["Krasarang Wilds"] = {
+			"Krasarang Wilds/0 80.3,17.8 -x- Krasarang Wilds/1 33.3,24.4 {template:building}",
+			"Krasarang Wilds/1 61.6,51.8 -x- Krasarang Wilds/2 59.5,36.7",
+			"Krasarang Wilds/2 62.7,39.6 -x- Krasarang Wilds/3 82.3,36.0",
+		},
+		["Kun-Lai Summit"] = {
+			"Kun-Lai Summit/0  52.9,71.3 -x- Kun-Lai Summit/11 56.5,15.9 {template:cave}", --The Deeper
+			"Kun-Lai Summit/11 52.4,65.5 -x- Kun-Lai Summit/12 51.6,55.9 {template:custom} {atob:Go downstairs} {btoa:Go upstairs}", --The Deeper2
+			"Kun-Lai Summit/0  50.3,61.7 -x- Kun-Lai Summit/10 74.9,91.5 {template:cave}", -- Knucklethump Hole
+			"Kun-Lai Summit/0  73.2,73.5 -x- Kun-Lai Summit/9  11.5,30.0 {template:cave}", -- Pranksters' Hollow
+			"Kun-Lai Summit/0  59.1,52.5 -x- Kun-Lai Summit/8  66.9,82.3 {template:cave}", -- Howlingwind Cavern
+			"Kun-Lai Summit/0  53.0,46.5 -x- Kun-Lai Summit/17 88.3,54.8 {template:building}", -- Tomb of Conquerors
+			"Kun-Lai Summit/0  33.1,26.6 -x- Kun-Lai Summit/20 52.2,11.6 {template:building}", -- Ruins of Korune
+			"Kun-Lai Summit/20 30.9,75.9 <radius:15> -x- Kun-Lai Summit/21 34.3,76.1 {template:custom} {atob:Go downstairs} {btoa:Go upstairs}", -- Crypt of Korune
+		},
+		["Townlong Steppes"] = {
+			"Townlong Steppes /0 33.02,61.24 -x- Townlong Steppes/13 20.15,68.46 {template:cave}", -- Niuzao Catacombs
+		},
+		["Vale of Eternal Blossoms"] = {
+			"Vale of Eternal Blossoms/0 22.2,26.3 -x- Vale of Eternal Blossoms/18 54.0,88.2 {template:building}", -- Guo-Lai Halls
+
+			"Vale of Eternal Blossoms/3 38.6,28.4 <nofly:1> -x- Vale of Eternal Blossoms 86.8,64.3 {B:WALK}",  -- main door
+			"Vale of Eternal Blossoms/3 25.5,55.8 <nofly:1> -x- Vale of Eternal Blossoms 85.6,67.4 {B:WALK}",  -- west door
+			"Vale of Eternal Blossoms/3 60.3,18.0 <nofly:1> -x- Vale of Eternal Blossoms 89.1,63.5 {B:WALK}",  -- east door
+
+			"Vale of Eternal Blossoms/3 33.6,78.3 <radius:5> -x- Vale of Eternal Blossoms/4 32.3,75.5 <radius:5>", -- west staircase
+			"Vale of Eternal Blossoms/3 70.4,33.5 <radius:5> -x- Vale of Eternal Blossoms/4 61.7,18.4 <radius:5>", -- east staircase
+
+			"Vale of Eternal Blossoms/3 52.4,78.9 <radius:10> -x- Vale of Eternal Blossoms/4 56.1,75.7 <radius:10>", -- west hall
+			"Vale of Eternal Blossoms/3 66.4,63.3 <radius:10> -x- Vale of Eternal Blossoms/4 68.4,63.3 <radius:10>", -- east hall
+
+			"Vale of Eternal Blossoms/4 43.3,44.3 <radius:5> -to- Vale of Eternal Blossoms/3 44.9,47.6 <radius:5>", -- west balcony jump
+			"Vale of Eternal Blossoms/4 52.6,33.7 <radius:5> -to- Vale of Eternal Blossoms/3 46.4,44.8 <radius:5>", -- east balcony jump
+
+			"Vale of Eternal Blossoms/3 38.6,28.4 <nofly:1> -x- Vale of Eternal Blossoms 86.8,64.3 (B:WALK)",  -- main door
+			"Vale of Eternal Blossoms/3 25.5,55.8 <nofly:1> -x- Vale of Eternal Blossoms 85.6,67.4 (B:WALK)",  -- west door
+			"Vale of Eternal Blossoms/3 60.3,18.0 <nofly:1> -x- Vale of Eternal Blossoms 89.1,63.5 (B:WALK)",  -- east door
+		},
+		["The Veiled Stair"] = {
+			"Kun-Lai Summit/0 73.2,94.6 -x- The Veiled Stair/5 25.1,12.5", -- The Ancient Passage
+			"The Veiled Stair/0 50.6,40.4 -x- The Veiled Stair/5 63.1,86.4", -- The Ancient Passage
+			"The Veiled Stair/0 57.3,13.6 -x- The Veiled Stair/5 77.6,36.7", -- The Ancient Passage
+		},
+		["Shrine of Two Moons"] = {
+			"Shrine of Two Moons/1 22.1,54.4 <radius:5> -x- Shrine of Two Moons/2 27.8,80.6 <radius:5>", -- west staircase
+			"Shrine of Two Moons/1 77.5,42.6 <radius:5> -x- Shrine of Two Moons/2 74.4,70.3 <radius:5>", -- east staircase
+
+			"Shrine of Two Moons/1 36.6,21.7 <radius:10> -x- Shrine of Two Moons/2 38.3,36.6 <radius:10>", -- west hall
+			"Shrine of Two Moons/1 58.0,18.5 <radius:10> -x- Shrine of Two Moons/2 55.8,30.0 <radius:10>", -- east hall
+
+			"Shrine of Two Moons/2 47.0,77.0 <radius:5> -to- Shrine of Two Moons/1 48.6,64.5 <radius:5>", -- west balcony jump
+			"Shrine of Two Moons/2 55.4,73.1 <radius:5> -to- Shrine of Two Moons/1 49.4,42.2 <radius:5>", -- east balcony jump
+
+			"Shrine of Two Moons/1 53.8,87.0 <nofly:1> -x- Vale of Eternal Blossoms 61.5,18.8 (B:WALK)",  -- main door
+			"Shrine of Two Moons/1 26.8,80.7 <nofly:1> -x- Vale of Eternal Blossoms 59.1,17.9 (B:WALK)",  -- west door
+			"Shrine of Two Moons/1 77.4,69.0 <nofly:1> -x- Vale of Eternal Blossoms 63.5,17.0 (B:WALK)",  -- east door
+		},
+
+		["Isle of Thunder"] = {
+			"Isle of Thunder/0 54.6,29.1 -x- Isle of Thunder/1 73.1,51.3 {template:cave}", --Ghostly Veins
+			"Isle of Thunder/0 49.3,25.5 -x- Isle of Thunder/1 38.8,27.1 {template:cave}", --Ghostly Veins
+			"Isle of Thunder/0 49.2,32.2 -x- Isle of Thunder/1 31.7,81.7 {template:cave}", --Ghostly Veins
+			"Isle of Thunder/0 62.4,40.3 -x- Isle of Thunder/2 66.1,77.9 {template:tunnel}", --The Swollen Vault
+		},
+		[933] = { -- Isle of Thunder scenario  clone
+			"933/0 54.6,29.1 -x- 933/1 73.1,51.3 {template:cave}",
+			"933/0 49.3,25.5 -x- 933/1 38.8,27.1 {template:cave}",
+			"933/0 49.2,33.0 -x- 933/1 31.5,82.0 {template:cave}",
+			"933/0 62.4,40.3 -x- 933/2 66.1,77.9 {template:tunnel}",
+		},
+		["Timeless Isle"] = {
+			"Timeless Isle/0 43.3,40.8 -x- Timeless Isle/22 44.4,81.0 {template:cave}", --Cavern of Lost Spirits
+		},
+
+	-- Draenor
+		["Frostfire Ridge"] = {
+			-- "Frostfire Ridge/1 35.1,45.9 -x- Frostfire Ridge/1 35.2,45.9 {template:building}", --Bladespire Citadel
+			"Frostfire Ridge/1 55.3,25.8 -x- Frostfire Ridge/2 55.7,18.7 {template:building}", --Bladespire Citadel
+			
+			"Frostfire Ridge/0 24.3,36.4 -x- Frostfire Ridge/1 20.69,38.83 {template:pathup}", --Bladespire Fortress west ramp
+			"Frostfire Ridge/0 21.0,42.3 -x- Frostfire Ridge/1 -7.8,86.5 {template:custom} {atob:Enter the bridge} {btoa:Get off the bridge}", --Gormaul Tower - Bladespire Fortress bridge
+			
+			--[[ too detailed ramp, too zealous.
+			"Frostfire Ridge/0 24.3,36.4 -x- Frostfire Ridge/1 21.14,25.23 <radius:5> {template:pathup} {cost:-0.001} {dark:1}", --Bladespire Fortress
+			"@+ -x- Frostfire Ridge/1 23.6,20.6 <radius:5> {template:pathup} {cost:-0.001} {dark:1}", --Bladespire Fortress
+			"@+ -x- Frostfire Ridge/1 26.70,19.3 <radius:5> {template:pathup} {cost:-0.001} {dark:1}", --Bladespire Fortress
+			"@+ -x- Frostfire Ridge/1 25.53,25.59 <radius:5> {template:pathup} {cost:-0.001} {dark:1}", --Bladespire Fortress
+			"@+ -x- Frostfire Ridge/1 20.69,38.83 {template:pathup} {cost:-0.001} {dark:1}", --Bladespire Fortress
+			--]]
+
+
+			"Frostfire Ridge/1 24.3,36.4 -x- Frostfire Ridge/1 23.6,20.6 {template:pathup}", --Bladespire Fortress
+			"Frostfire Ridge/0 29.7,41.5 -x- Frostfire Ridge/4 65.4,72.5 {template:mine}", --Sootstained Mines
+			"Frostfire Ridge/0 65.4,17.5 -x- Frostfire Ridge/9 27.6,19.3 {template:cave}", --Snowfall Alcove
+			"Frostfire Ridge/0 46.0,33.4 -x- Frostfire Ridge/7 33.2,51.5 {template:cave}", --Grulloc's Grotto
+			"Frostfire Ridge/7 41.9,32.8 -x- Frostfire Ridge/8 42.0,32.9 {template:cave}", --Grulloc's Lair
+			"Frostfire Ridge/0 63.1,65.6 <radius:20> -x- Frostfire Ridge/6 31.1,57.4 <radius:20> {template:building}", --The Hunter's Hall
+			"Frostfire Ridge/0 27.9,24.8 -x- Frostfire Ridge/0 28.0,24.6 <indoors:Circle of Blood> {template:cave}", --Circle of Blood Cave
+			--"Frostfire Ridge/0 18.3,56.0 -x- Frostfire Ridge/0 18.1,55.8 <indoors:Pool of Visions> {template:cave}", --Pool of Visions
+		},
+		["Frostwall"] = {
+			"Frostwall/0 63.4,72.8 -x- Frostwall/26 65.4,55.0 {template:mine}", --Frostwall Mine
+		},
+		["Gorgrond"] = {
+			--"Gorgrond/0 43.4,47.9 <radius:20> -x- Gorgrond/0 62.5,79.5 <radius:20> {template:cave}", --Fissure of Fury
+			"Gorgrond/0 43.7,48.3 <radius:20> -x- Gorgrond/0 43.5,48.1 <dark:1> <radius:20> {template:cave}", --Fissure of Fury
+			"@+ -x- Gorgrond/0 43.4,47.9 <dark:1> <radius:20> {template:cave}", --Fissure of Fury
+			"@+ -x- Gorgrond/18 64.2,82.9 <dark:1> <radius:20> {template:cave}", --Fissure of Fury
+			"@+ -x- Gorgrond/18 57.0,78.6 <radius:20> {template:cave}", --Fissure of Fury
+			"Gorgrond/18 67.4,46.5 <radius:30> -x- Gorgrond/19 63.3,66.7 <radius:30> {template:custom} {atob:Continue walking down into the cave} {btoa:Run up the ramp to leave the cave}", --Heart of Fury
+			"Gorgrond/0 54.0,55.7 <dist:20> -x- Gorgrond/20 69,73 <dist:20> {template:cave}", --Fissure of Fury
+			"Gorgrond/20 70,51 <dist:30> -x- Gorgrond/21 65,56 <dist:30> {template:custom} {atob:Continue walking down into the cave} {btoa:Run up the ramp to leave the cave}", --Heart of Fury
+		},
+		["Lunarfall"] = {
+			"Lunarfall/0 66.6,42.0 -x- Lunarfall/23 70.4,70.1 {template:mine}", --Lunarfall Excavation
+		},
+		["Nagrand D"] = {
+			"Nagrand D/0 67.0,49.6 -x- Nagrand D/11 11.8,77.1 {template:cave}", --Vault of the Titan
+			"Nagrand D/0 56.5,61.9 -x- Nagrand D/12 77.7,39.3 {template:cave}", --The Underpale
+			"Nagrand D/12 10.3,62.0 -to- Nagrand D/0 47.2,64.3 {template:custom} {atob:Walk through the tunnel}", -- The Underpale 2 (exit only)
+			"Nagrand D/0 88.0,55.4 -x- Nagrand D/10 27.4,15.4 {template:cave}", -- The Master's Cavern
+		},
+		["Shadowmoon Valley D"] = {
+			"Shadowmoon Valley D/0 24.4,33.3 -x- Shadowmoon Valley D/15 77.4,33.8 {template:cave}", --Bloodthorn Cave
+		},
+		["Spires of Arak"] = {
+		},
+		["Talador"] = {
+			"Talador/0 41.4,60.1 -x- Talador/14 49.6,90.4 {template:cave}", --Tomb of Souls
+			"Talador/0 58.7,64.9 -x- Talador/13 35.1,29.1 {template:cave}", --Tomb of Lights
+		},
+
+	["Assault on the Dark Portal"] = {
+		"Assault on the Dark Portal 68.0,20.6 -x- Assault on the Dark Portal 93.7,50.2 {template:cave}", --Gul'var
+	},
+	[937] = {
+		"937/0 43.6,70.6 -x- 937/1 74.4,14.0 {template:mine}",
+	},
+
+	["Deeprun Tram"] = {
+		"Deeprun Tram/1 52.24,46.9 -x- Deeprun Tram/2 72.3,16.2", -- brawlpub entry
+	},
+	["Dagger in the Dark"] = {
+		"Dagger in the Dark/0 50.3,39.5 -x- Dagger in the Dark/1 61.3,82.9",
+		"Dagger in the Dark/1 77.0,37.9 -x- Dagger in the Dark/0 57.9,13.2",
+		"Dagger in the Dark/1 25.9,13.8 -x- Dagger in the Dark/0 31.1,1.1",
+	},
+	
+	-- Dungeons/Raids
+
+		--Kalimdor
+			["Maraudon"] = { --
+				"Maraudon/1 15.53,56.75 -x- Maraudon/2 28.99,4.84",
 			},
-			["Elwynn Forest"] = {
-				"Elwynn Forest/0 61.7,53.7 -x- Elwynn Forest/19 48.9,90.1 {template:mine}", --Jaspermind
-				"Elwynn Forest/0 38.9,82.3 -x- Elwynn Forest/1 39.9,88.0 {template:mine}", --Fargomine
-				"Elwynn Forest/1 55.4,36.3 -x- Elwynn Forest/2 56.3,26.0", --Fargomine Lower
-				"Elwynn Forest/0 38.5,81.5 -x- Elwynn Forest/2 35.2,68.4 {template:mine}", --Fargomine Lower
+			["Blackfathom Deeps"] = {
+				"Blackfathom Deeps/1 61.51,71.88 -x- Blackfathom Deeps/2 39.21,31.65",
+				"Blackfathom Deeps/2 47.24,79.12 -x- Blackfathom Deeps/3 43.60,61.06",
 			},
-			["Gilneas"] = {
-				"Gilneas/0 29.0,51.6 -x- Gilneas/2 68.1,60.3 {template:building}", -- Greymane Manor Main Floor
-				"Gilneas/2 61.0,47.5 -x- Gilneas/3 56.7,47.5 {template:custom} {atob:Go upstairs} {btoa:Go downstairs}", -- Greymane Manor Upper Floor
+			["Dire Maul"] = { -- Can't move between wings so limits the borders.
+				"Dire Maul/2 39.22,34.98 -x- Dire Maul/3 56.27,24.42",
+				"Dire Maul/2 31.69,72.04 -x- Dire Maul/3 48.30,74.24",
+				"Dire Maul/2 20.79,19.09 -x- Dire Maul/3 44.12,13.38",
+				"Dire Maul/2 29.47,42.67 -x- Dire Maul/4 75.94,39.95",
+				"Dire Maul/5 46.43,63.58 -x- Dire Maul/6 61.27,82.67",
 			},
-			["Ghostlands"] = {
-				"Ghostlands/0 66.4,28.5 -x- Ghostlands/1 94.0,35.6 {template:tunnel}", -- Amani Catacombs
-				"Ghostlands/0 58.3,27.5 -x- Ghostlands/1 10.0,26.0 {template:tunnel}", -- Amani Catacombs
+			["End Time"] = { -- End Time
+				"@et1 -x- @et2 (B:PORTAL)",
+				"@et1 -x- @et3 (B:PORTAL)", "@et2 -x- @et3 (B:PORTAL)",
+				"@et1 -x- @et4 (B:PORTAL)", "@et2 -x- @et4 (B:PORTAL)", "@et3 -x- @et4 (B:PORTAL)",
+				"@et1 -x- @et5 (B:PORTAL)", "@et2 -x- @et5 (B:PORTAL)", "@et3 -x- @et5 (B:PORTAL)", "@et4 -x- @et5 (B:PORTAL)",
+				"@et1 -x- @et6 (B:PORTAL)", "@et2 -x- @et6 (B:PORTAL)", "@et3 -x- @et6 (B:PORTAL)", "@et4 -x- @et6 (B:PORTAL)", "@et5 -x- @et6 (B:PORTAL)",
+
 			},
-			["New Tinkertown"] = {
-				"New Tinkertown/0 33.3,66.4 -x- New Tinkertown/8 94.6,58.1 {template:cave}", -- Frostmane Hold
+			["Halls of Origination"] = {
+				"Halls of Origination/1 89.7,49.8 -x- Halls of Origination/2 24.9,49.4",
+				"Halls of Origination/1 67.5,52.6 -x- Halls of Origination/2 66.7,48.5",
+				"Halls of Origination/1 66.5,48.3 -x- Halls of Origination/3 45.9,47.6",
 			},
-			["Searing Gorge"] = {
-				"Searing Gorge/0 34.8,85.6 -x- Burning Steppes/14 46.47,18.25", -- Blackrock Spire north entrance
-				--"Searing Gorge/0 34.8,85.2 -x- Searing Gorge/14 48.0,15.8", -- Blackrock Spire north entrance
-				--"Searing Gorge/14 48.0,15.8 -x- Burning Steppes/14 46.3,18.3", --
-				"Searing Gorge/14 46.8,50.8 -x- Searing Gorge/16 58.2,88.5", -- Blackrock Depths chain again - silly two-zone clone dungeon
-				"Searing Gorge/16 40.2,57.9 -x- Burning Steppes/16 46.2,62.9",
+			["The Culling of Stratholme"] = {
+				"The Culling of Stratholme/1 47.47,32.24 -x- The Culling of Stratholme/2 50.63,92.88",
 			},
-			["Tirisfal Glades"] = {
-				"Tirisfal Glades/0 82.6,33.5 -x- Tirisfal Glades/13 17.3,82.9 {template:building}", -- Scarlet Monastery Entrance
-				"Tirisfal Glades/0 82.3,32.6 -x- Tirisfal Glades/13 14.5,73.1 {template:building}", -- Scarlet Monastery Entrance
+			["Ahn'Qiraj"] = {
+				"Ahn'Qiraj/1 34.6,45.0 -x- Ahn'Qiraj/3 66.4,46.3",
+				"Ahn'Qiraj/1 33.0,52.4 -x- Ahn'Qiraj/3 50.5,73.0",
+				"Ahn'Qiraj/2 49.2,63.3 -x- Ahn'Qiraj/3 47.5,29.3",
 			},
-			["Westfall"] = {
-				"Westfall/0 42.5,71.8 -x- Westfall/17 69.3,23.7 {template:building}", -- Deadmines Cave Entrance (Moonbrook)
-				"Westfall/0 44.5,24.7 -x- Westfall/5 41.1,94.1 {template:mine}", -- Jangolode Mine
+			["Dragon Soul"] = {
+				"Dragon Soul/1 49.16,59.04 <template:dragonrider> -to- Dragon Soul/2 32.66,45.49 (B:PORTAL)",
+				"Dragon Soul/2 22.98,40.36 -to- Dragon Soul/1 50.25,59.76 (B:PORTAL)",
+				"Dragon Soul/1 51.29,59.31 <template:dragonrider> -to- Dragon Soul/3 55.38,79.72 (B:PORTAL)",
+				"Dragon Soul/3 57.76,88.77 -to- Dragon Soul/1 50.25,59.76 (B:PORTAL)",
+				"Dragon Soul/1 50.70,60.63 -x- Dragon Soul/4 52.42,14.22 (B:PORTAL)", --portal from top
+				"Dragon Soul/7 31.93,82.91 -to- Dragon Soul/1 50.25,59.76 (B:PORTAL)",
 			},
 
-		-- Outland
-
-		-- Northrend
-
-		-- Cataclysm areas
-
-			["Kezan"] = {
-				"Kezan/0 65.6,86.7 -x- Kezan/7 64.0,19.6 {template:mine}", -- Kaja'Mine Copper
-				"Kezan/0 74.3,83.3 -x- Kezan/6 32.9,31.0 {template:mine}", -- Kaja'Mine Silver
-				"Kezan/0 70.9,76.5 -x- Kezan/5 41.0,75.5 {template:mine}", -- Kaja'Mine Gold
+		--Eastern Kingdom
+			["The Deadmines"] = {
+				-- TODO there are teleporters in DM that could/should be added. Only useful if you die and need to get back to where you were.
+				"The Deadmines/1 65.48,60.02 -x- The Deadmines/2 16.97,88.45",
 			},
-			["The Lost Isles"] = {
-				"The Lost Isles/0 31.2,78.6 -x- The Lost Isles/1 48.1,90.0 {template:cave}", -- Kaja'mite Cavern
-				"The Lost Isles/0 70.0,48.0 -x- The Lost Isles/2 50.0,10.8 {template:cave}", -- Volcanoth's Lair
+			["Uldaman"] = {
+				"Uldaman/1 46.08,9.57 -x- Uldaman/2 64.77,43.35",
 			},
-			["Gilneas"] = {
-				"678/0 76.6,31.1 -x- 678/1 28.5,70.0 <indoors:Emberstone Mine> {template:mine}", -- Emberstone Mine
+			["Shadowfang Keep"] = {
+				"Shadowfang Keep/1 38.18,39.14 -x- Shadowfang Keep/2 60.03,13.01",
+				"Shadowfang Keep/1 14.78,88.35 -x- Shadowfang Keep/2 27.49,87.84",
+				"Shadowfang Keep/1 34.01,70.58 -x- Shadowfang Keep/7 23.69,75.12",
+				"Shadowfang Keep/7 45.49,25.23 -to- Shadowfang Keep/3 44.44,61.70",
+				"Shadowfang Keep/3 60.72,31.88 -to- Shadowfang Keep/7 47.37,19.47",
+				"Shadowfang Keep/3 45.86,92.67 -x- Shadowfang Keep/4 48.93,77.89",
+				"Shadowfang Keep/4 34.60,55.37 -x- Shadowfang Keep/5 48.94,77.32",
+				"Shadowfang Keep/5 56.86,44.93 -to- Shadowfang Keep/4 54.68,54.74",
+				"Shadowfang Keep/5 34.62,57.88 -x- Shadowfang Keep/6 48.75,90.71",
 			},
-
-		-- Pandaria
-
-			["The Jade Forest"] = {
-				"The Jade Forest/0 45.9,28.9 -x- The Jade Forest/6 75.7,24.7 {template:mine}", -- Greenstone Quarry (Outside --> Upper Quarry)
-				"The Jade Forest/6 39.8,38.0 -x- The Jade Forest/7 51.2,51.0 {template:custom} {atob:Go to the Lower Quarry} {btoa:Go to the Upper Quarry}", -- Greenstone Quarry (Upper Quarry --> Lower Quarry)
-				"The Jade Forest/0 57.7,31.7 -x- The Jade Forest/15 76.8,20.0 {template:cave}", -- The Widow's Wail (Outside of Cave --> Inside Cave)
-				"The Jade Forest/0 57.5,27.7 -x- The Jade Forest/16 82.4,47.7 {template:cave}", -- Oona Kagu (Outside of Cave --> Inside Cave)
+			["Stratholme"] = {
 			},
-			["Krasarang Wilds"] = {
-				"Krasarang Wilds/0 80.3,17.8 -x- Krasarang Wilds/1 33.3,24.4 {template:building}",
-				"Krasarang Wilds/1 61.6,51.8 -x- Krasarang Wilds/2 59.5,36.7",
-				"Krasarang Wilds/2 62.7,39.6 -x- Krasarang Wilds/3 82.3,36.0",
+			["Scholomance"] = {
+				"Scholomance/1 81.8,23.9 -x- Scholomance/2 76.0,26.5",
+				"Scholomance/2 57.5,92.2 -x- Scholomance/3 49.7,19.2",
+				"Scholomance/3 49.8,24.0 -x- Scholomance/4 49.6,28.2",
 			},
-			["Kun-Lai Summit"] = {
-				"Kun-Lai Summit/0  52.9,71.3 -x- Kun-Lai Summit/11 56.5,15.9 {template:cave}", --The Deeper
-				"Kun-Lai Summit/11 52.4,65.5 -x- Kun-Lai Summit/12 51.6,55.9 {template:custom} {atob:Go downstairs} {btoa:Go upstairs}", --The Deeper2
-				"Kun-Lai Summit/0  50.3,61.7 -x- Kun-Lai Summit/10 74.9,91.5 {template:cave}", -- Knucklethump Hole
-				"Kun-Lai Summit/0  73.2,73.5 -x- Kun-Lai Summit/9  11.5,30.0 {template:cave}", -- Pranksters' Hollow
-				"Kun-Lai Summit/0  59.1,52.5 -x- Kun-Lai Summit/8  66.9,82.3 {template:cave}", -- Howlingwind Cavern
-				"Kun-Lai Summit/0  53.0,46.5 -x- Kun-Lai Summit/17 88.3,54.8 {template:building}", -- Tomb of Conquerors
-				"Kun-Lai Summit/0  33.1,26.6 -x- Kun-Lai Summit/20 52.2,11.6 {template:building}", -- Ruins of Korune
-				"Kun-Lai Summit/20 30.9,75.9 <radius:15> -x- Kun-Lai Summit/21 34.3,76.1 {template:custom} {atob:Go downstairs} {btoa:Go upstairs}", -- Crypt of Korune
+			["Scarlet Monastery"] = {
+				"Scarlet Monastery/1 48.4,88.5 -x- Scarlet Monastery/2 49.1,11.2",
 			},
-			["Townlong Steppes"] = {
-				"Townlong Steppes /0 33.02,61.24 -x- Townlong Steppes/13 20.15,68.46 {template:cave}", -- Niuzao Catacombs
+			["Scarlet Halls"] = {
+				"Scarlet Halls/1 55.5,13.8 -x- Scarlet Halls/2 47.8,91.1",
 			},
-			["Vale of Eternal Blossoms"] = {
-				"Vale of Eternal Blossoms/0 22.2,26.3 -x- Vale of Eternal Blossoms/18 54.0,88.2 {template:building}", -- Guo-Lai Halls
-
-				"Vale of Eternal Blossoms/3 38.6,28.4 <nofly:1> -x- Vale of Eternal Blossoms 86.8,64.3 {B:WALK}",  -- main door
-				"Vale of Eternal Blossoms/3 25.5,55.8 <nofly:1> -x- Vale of Eternal Blossoms 85.6,67.4 {B:WALK}",  -- west door
-				"Vale of Eternal Blossoms/3 60.3,18.0 <nofly:1> -x- Vale of Eternal Blossoms 89.1,63.5 {B:WALK}",  -- east door
-
-				"Vale of Eternal Blossoms/3 33.6,78.3 <radius:5> -x- Vale of Eternal Blossoms/4 32.3,75.5 <radius:5>", -- west staircase
-				"Vale of Eternal Blossoms/3 70.4,33.5 <radius:5> -x- Vale of Eternal Blossoms/4 61.7,18.4 <radius:5>", -- east staircase
-
-				"Vale of Eternal Blossoms/3 52.4,78.9 <radius:10> -x- Vale of Eternal Blossoms/4 56.1,75.7 <radius:10>", -- west hall
-				"Vale of Eternal Blossoms/3 66.4,63.3 <radius:10> -x- Vale of Eternal Blossoms/4 68.4,63.3 <radius:10>", -- east hall
-
-				"Vale of Eternal Blossoms/4 43.3,44.3 <radius:5> -to- Vale of Eternal Blossoms/3 44.9,47.6 <radius:5>", -- west balcony jump
-				"Vale of Eternal Blossoms/4 52.6,33.7 <radius:5> -to- Vale of Eternal Blossoms/3 46.4,44.8 <radius:5>", -- east balcony jump
-
-				"Vale of Eternal Blossoms/3 38.6,28.4 <nofly:1> -x- Vale of Eternal Blossoms 86.8,64.3 (B:WALK)",  -- main door
-				"Vale of Eternal Blossoms/3 25.5,55.8 <nofly:1> -x- Vale of Eternal Blossoms 85.6,67.4 (B:WALK)",  -- west door
-				"Vale of Eternal Blossoms/3 60.3,18.0 <nofly:1> -x- Vale of Eternal Blossoms 89.1,63.5 (B:WALK)",  -- east door
+			["Gnomeregan"] = {
+				"Gnomeregan/1 57.67,50.98 -to- Gnomeregan/2 81.36,46.02",
+				"Gnomeregan/1 47.05,86.94 -x- Gnomeregan/2 75.38,74.06",
+				"Gnomeregan/1 34.33,61.78 -x- Gnomeregan/2 61.73,61.55",
+				"Gnomeregan/2 35.21,88.08 -x- Gnomeregan/3 38.60,50.33",
+				"Gnomeregan/3 48.26,71.95 -x- Gnomeregan/4 71.25,77.54",
 			},
-			["The Veiled Stair"] = {
-				"Kun-Lai Summit/0 73.2,94.6 -x- The Veiled Stair/5 25.1,12.5", -- The Ancient Passage
-				"The Veiled Stair/0 50.6,40.4 -x- The Veiled Stair/5 63.1,86.4", -- The Ancient Passage
-				"The Veiled Stair/0 57.3,13.6 -x- The Veiled Stair/5 77.6,36.7", -- The Ancient Passage
+			["Blackrock Spire"]= {
+				"Blackrock Spire/1 66.1,51.1 -x- Blackrock Spire/3 66.0,49.2",
+				"Blackrock Spire/3 58.4,47.7 -x- Blackrock Spire/1 56.7,48.3",
+				"Blackrock Spire/2 64.8,70.9 -x- Blackrock Spire/1 59.8,70.2",
+				"Blackrock Spire/2 59.5,59.3 -x- Blackrock Spire/1 59.4,63.9",
+				"Blackrock Spire/2 53.2,52.8 -x- Blackrock Spire/3 57.0,51.2",
+				"Blackrock Spire/3 49.9,74.1 -x- Blackrock Spire/2 51.1,74.2",
+				"Blackrock Spire/3 46.5,65.8 -x- Blackrock Spire/4 45.1,59.5",
+				"Blackrock Spire/4 47.2,42.7 -x- Blackrock Spire/3 55.1,37.6",
+				"Blackrock Spire/4 37.2,34.2 -x- Blackrock Spire/5 37.1,32.1",
+				"Blackrock Spire/5 33.3,13.3 -x- Blackrock Spire/6 30.4,18.7",
+				"Blackrock Spire/6 29.0,41.4 -x- Blackrock Spire/7 28.4,36.1",
+				"Blackrock Spire/7 30.7,42.7 -to- Blackrock Spire/6 30.6,41.6", --cliff
+				"Blackrock Spire/7 36.4,43.3 -to- Blackrock Spire/6 36.1,41.3",
 			},
-			["Shrine of Two Moons"] = {
-				"Shrine of Two Moons/1 22.1,54.4 <radius:5> -x- Shrine of Two Moons/2 27.8,80.6 <radius:5>", -- west staircase
-				"Shrine of Two Moons/1 77.5,42.6 <radius:5> -x- Shrine of Two Moons/2 74.4,70.3 <radius:5>", -- east staircase
-
-				"Shrine of Two Moons/1 36.6,21.7 <radius:10> -x- Shrine of Two Moons/2 38.3,36.6 <radius:10>", -- west hall
-				"Shrine of Two Moons/1 58.0,18.5 <radius:10> -x- Shrine of Two Moons/2 55.8,30.0 <radius:10>", -- east hall
-
-				"Shrine of Two Moons/2 47.0,77.0 <radius:5> -to- Shrine of Two Moons/1 48.6,64.5 <radius:5>", -- west balcony jump
-				"Shrine of Two Moons/2 55.4,73.1 <radius:5> -to- Shrine of Two Moons/1 49.4,42.2 <radius:5>", -- east balcony jump
-
-				"Shrine of Two Moons/1 53.8,87.0 <nofly:1> -x- Vale of Eternal Blossoms 61.5,18.8 (B:WALK)",  -- main door
-				"Shrine of Two Moons/1 26.8,80.7 <nofly:1> -x- Vale of Eternal Blossoms 59.1,17.9 (B:WALK)",  -- west door
-				"Shrine of Two Moons/1 77.4,69.0 <nofly:1> -x- Vale of Eternal Blossoms 63.5,17.0 (B:WALK)",  -- east door
+			["Blackrock Caverns"] = {
+				"Blackrock Caverns/1 52.05,20.12 -to- Blackrock Caverns/2 29.97,17.32",
+				"Blackrock Caverns/1 49.93,12.98 -x- Blackrock Caverns/2 29.37,13.13",
 			},
 
-			["Isle of Thunder"] = {
-				"Isle of Thunder/0 54.6,29.1 -x- Isle of Thunder/1 73.1,51.3 {template:cave}", --Ghostly Veins
-				"Isle of Thunder/0 49.3,25.5 -x- Isle of Thunder/1 38.8,27.1 {template:cave}", --Ghostly Veins
-				"Isle of Thunder/0 49.2,32.2 -x- Isle of Thunder/1 31.7,81.7 {template:cave}", --Ghostly Veins
-				"Isle of Thunder/0 62.4,40.3 -x- Isle of Thunder/2 66.1,77.9 {template:tunnel}", --The Swollen Vault
+	--Raids
+
+		-- Old world
+			["Karazhan"] = {
+				"Karazhan/1 38.3,78.6 -x- Karazhan/2 29.1,80.8",
+				"Karazhan/2 38.6,14.1 -x- Karazhan/3 39.8,81.7",
+				"Karazhan/1 53.1,64.1 -x- Karazhan/3 52.5,91.3",
+				"Karazhan/3 67.0,42.4 -x- Karazhan/4 67.9,42.9",
+				"Karazhan/1 37.6,12.8 -x- Karazhan/4 47.2,29.1",
+				"Karazhan/4 23.5,49.2 -x- Karazhan/5 45.4,83.7",
+				"Karazhan/5 67.9,26.5 -x- Karazhan/6 41.4,13.3",
+				"Karazhan/6 64.9,69.2 -x- Karazhan/7 73.2,65.3",
+				"Karazhan/8 51.8,58.3 -x- Karazhan/9 61.5,19.2",
+				"Karazhan/9 31.0,66.3 -x- Karazhan/10 30.9,59.9",
+				"Karazhan/10 37.1,23.1 -x- Karazhan/11 64.0,26.8",
+				"Karazhan/10 58.8,56.0 -x- Karazhan/12 47.0,56.0",
+				"Karazhan/12 25.9,61.3 -x- Karazhan/13 53.8,78.5",
+				"Karazhan/12 39.6,18.8 -x- Karazhan/14 20.6,81.3",
+				"Karazhan/14 83.2,57.1 -x- Karazhan/15 82.3,69.8",
+				"Karazhan/15 83.2,75.5 -x- Karazhan/16 71.9,70.5",
+				"Karazhan/16 66.2,79.3 -x- Karazhan/17 50.9,91.1",
 			},
-			[933] = { -- Isle of Thunder scenario  clone
-				"933/0 54.6,29.1 -x- 933/1 73.1,51.3 {template:cave}",
-				"933/0 49.3,25.5 -x- 933/1 38.8,27.1 {template:cave}",
-				"933/0 49.2,33.0 -x- 933/1 31.5,82.0 {template:cave}",
-				"933/0 62.4,40.3 -x- 933/2 66.1,77.9 {template:tunnel}",
+			["Blackwing Lair"] = {
+				"Blackwing Lair/1 45.4,27.7 -x- Blackwing Lair/2 49.7,36.0",
+				"Blackwing Lair/1 37.6,11.2 -x- Blackwing Lair/2 44.0,22.9",
+				"Blackwing Lair/2 49.4,80.3 -x- Blackwing Lair/3 57.0,87.2",
+				"Blackwing Lair/3 31.0,37.5 -x- Blackwing Lair/4 22.0,60.9",
 			},
-			["Timeless Isle"] = {
-				"Timeless Isle/0 43.3,40.8 -x- Timeless Isle/22 44.4,81.0 {template:cave}", --Cavern of Lost Spirits
+			["Blackrock Depths"] = {
+				"Blackrock Depths/1 40.7,67.1 -x- Blackrock Depths/2 41.8,92.4",
+				"Blackrock Depths/1 67.0,26.3 -x- Blackrock Depths/2 64.9,57.1",
+				"Blackrock Depths/1 59.8,30.9 -x- Blackrock Depths/2 59.9,60.1",
+				"Blackrock Depths/1 58.7,34.4 -x- Blackrock Depths/2 58.9,64.7",
+				"Blackrock Depths/1 55.0,35.6 -x- Blackrock Depths/2 54.2,65.6",
+				"Blackrock Depths/1 56.9,51.3 -x- Blackrock Depths/2 56.4,77.5",
+				"Blackrock Depths/1 57.3,57.1 -x- Blackrock Depths/2 56.9,85.7",
+				"Blackrock Depths/1 54.8,62.9 -x- Blackrock Depths/2 55.2,89.9",
+				"Blackrock Depths/1 45.4,63.1 -x- Blackrock Depths/2 44.6,90.0",
+				"Blackrock Depths/1 45.0,64.3 -x- Blackrock Depths/2 44.5,91.1",
+				"Blackrock Depths/1 46.6,52.5 -x- Blackrock Depths/2 47.5,81.1",
+				"Blackrock Depths/1 42.5,46.3 -x- Blackrock Depths/2 42.3,73.6",
+				"Blackrock Depths/1 41.6,39.1 -x- Blackrock Depths/2 41.4,68.1",
+				"Blackrock Depths/1 53.0,31.8 -x- Blackrock Depths/2 53.0,61.5",
+				"Blackrock Depths/1 54.0,27.0 -x- Blackrock Depths/2 53.2,55.6",
+			},
+			["Naxxramas"] = {
+				"Naxxramas/1 68.6,77.7 -x- Naxxramas/5 51.6,47.1",
+				"Naxxramas/2 30.7,77.9 -x- Naxxramas/5 55.0,47.1",
+				"Naxxramas/3 66.9,21.9 -x- Naxxramas/5 51.7,52.2",
+				"Naxxramas/4 32.9,22.4 -x- Naxxramas/5 55.2,52.5",
+				"Naxxramas/5 53.5,50.1 -to- Naxxramas/6 73.6,72.8",
+				"Naxxramas/6 74.6,73.2 -to- Naxxramas/5 51.3,49.7",
+			},
+			["Blackwing Descent"] = {
+				"Blackwing Descent/1 46.9,42.1 -x- Blackwing Descent/2 47.4,89.8",
+			},
+			["The Bastion of Twilight"] = {
+				"The Bastion of Twilight/1 53.6,85.1 -x- The Bastion of Twilight/2 55.0,6.2",
 			},
 
-		-- Draenor
-			["Frostfire Ridge"] = {
-				-- "Frostfire Ridge/1 35.1,45.9 -x- Frostfire Ridge/1 35.2,45.9 {template:building}", --Bladespire Citadel
-				"Frostfire Ridge/1 55.3,25.8 -x- Frostfire Ridge/2 55.7,18.7 {template:building}", --Bladespire Citadel
+		--Outlands
+			["The Steamvault"]={
+				"The Steamvault/1 49.85,29.26 -x- The Steamvault/2 51.23,28.93",
+				"The Steamvault/1 51.38,27.47 -to- The Steamvault/2 51.48,29.20",
+				"The Steamvault/1 48.01,77.81 -x- The Steamvault/2 46.24,79.55",
+				"The Steamvault/1 36.64,73.70 -to- The Steamvault/2 35.59,72.57",
+			},
+			["The Mechanar"]={
+				"The Mechanar/1 41.73,22.82 -x- The Mechanar/2 41.77,31.54",
+			},
+			["The Arcatraz"]={
+				"The Arcatraz/1 65.11,35.34 -x- The Arcatraz/2 89.26,43.76",
+				"The Arcatraz/2 36.51,57.12 -x- The Arcatraz/3 26.97,88.52",
+			},
+			["Sethekk Halls"]={
+				"Sethekk Halls/1 48.71,95.13 -x- Sethekk Halls/2 53.33,94.35",
+				"Sethekk Halls/2 44.61,27.42 -to- Sethekk Halls/1 51.57,27.55",
+			},
+			["Auchenai Crypts"]={
+				"Auchenai Crypts/1 44.67,17.68 -x- Auchenai Crypts/2 22.77,12.22",
+			},
+			["Black Temple"]={
+				"Black Temple/2 29.58,19.61 -x- Black Temple/1 28.02,74.29",
+				"Black Temple/1 63.09,45.70 -x- Black Temple/3 24.31,50.07",
+				"Black Temple/3 58.48,91.11 -x- Black Temple/5 66.89,68.26",
+				"Black Temple/3 26.28,21.71 -x- Black Temple/6 8.40,59.62",
+				"Black Temple/6 67.17,51.10 -x- Black Temple/7 69.01,16.15",
+				"Black Temple/7 46.72,35.00 -x- Black Temple/8 52.69,20.84",
+				"Black Temple/3 61.32,34.65 -x- Black Temple/4 64.35,39.46",
+			},
+			["Magisters' Terrace"]={
+				"Magisters' Terrace/2 82.88,44.83 -x- Magisters' Terrace/1 83.15,55.44",
+			},
+
+		--Northrend
+			["The Oculus"] = {
+				"The Oculus/1 38.45,50.96 -x- The Oculus/1 47.89,69.3 <template:portalclick> (B:PORTAL)",
+			},
+			["Utgarde Keep"] = {
+				"Utgarde Keep/1 48.5,84.7 -x- Utgarde Keep/2 34.8,64.5",
+				"Utgarde Keep/2 53.5,25.3 -x- Utgarde Keep/3 33.1,40.7",
+			},
+			["Utgarde Pinnacle"] = {
+				"Utgarde Pinnacle/1 31.1,75.0 -x- Utgarde Pinnacle/2 42.3,76.6",
+				"Utgarde Pinnacle/1 45.9,82.6 -x- Utgarde Pinnacle/2 54.2,79.1",
+				"Utgarde Pinnacle/1 54.7,18.0 -x- Utgarde Pinnacle/2 59.6,34.1",
+			},
+			["Halls of Lightning"] = {
+				"Halls of Lightning/1 89.0,53.8 -x- Halls of Lightning/2 57.0,21.3",
+			},
+			["Azjol-Nerub"] = {
+				"Azjol-Nerub/2 41.0,37.3 -x- Azjol-Nerub/3 70.6,31.6",
+				"Azjol-Nerub/2 50.3,60.4 -to- Azjol-Nerub/1 22.0,50.7",
+			},
+			["Drak'Tharon Keep"] = {
+				"Drak'Tharon Keep/1 64.4,71.6 -x- Drak'Tharon Keep/2 50.5,71.5",
+			},
+			["Ulduar"] = {
+				-- floor 6 is part of a boss encounter.
+				"Ulduar/2 37.24,1.35 -x- Ulduar/3 54.09,78.14",
+				"Ulduar/2 36.72,0.61 -x- Ulduar/3 48.21,77.34",
+				"Ulduar/3 30.33,74.84 -x- Ulduar/4 35.36,52.21",
+
+				"@uld10 -x- @uld11 (B:PORTAL)",
+				"@uld10 -x- @uld12 (B:PORTAL)", "@uld11 -x- @uld12 (B:PORTAL)",
+				"@uld10 -x- @uld13 (B:PORTAL)", "@uld11 -x- @uld13 (B:PORTAL)", "@uld12 -x- @uld13 (B:PORTAL)",
+				"@uld10 -x- @uld20 (B:PORTAL)", "@uld11 -x- @uld20 (B:PORTAL)", "@uld12 -x- @uld20 (B:PORTAL)", "@uld13 -x- @uld20 (B:PORTAL)",
+				"@uld10 -x- @uld21 (B:PORTAL)", "@uld11 -x- @uld21 (B:PORTAL)", "@uld12 -x- @uld21 (B:PORTAL)", "@uld13 -x- @uld21 (B:PORTAL)", "@uld20 -x- @uld21 (B:PORTAL)",
+				"@uld10 -x- @uld30 (B:PORTAL)", "@uld11 -x- @uld30 (B:PORTAL)", "@uld12 -x- @uld30 (B:PORTAL)", "@uld13 -x- @uld30 (B:PORTAL)", "@uld20 -x- @uld30 (B:PORTAL)", "@uld21 -x- @uld30 (B:PORTAL)",
+				"@uld10 -x- @uld40 (B:PORTAL)", "@uld11 -x- @uld40 (B:PORTAL)", "@uld12 -x- @uld40 (B:PORTAL)", "@uld13 -x- @uld40 (B:PORTAL)", "@uld20 -x- @uld40 (B:PORTAL)", "@uld21 -x- @uld40 (B:PORTAL)", "@uld30 -x- @uld40 (B:PORTAL)",
+				"@uld10 -x- @uld50 (B:PORTAL)", "@uld11 -x- @uld50 (B:PORTAL)", "@uld12 -x- @uld50 (B:PORTAL)", "@uld13 -x- @uld50 (B:PORTAL)", "@uld20 -x- @uld50 (B:PORTAL)", "@uld21 -x- @uld50 (B:PORTAL)", "@uld30 -x- @uld50 (B:PORTAL)", "@uld40 -x- @uld50 (B:PORTAL)",
+			},
+			["Trial of the Crusader"] = {
+				"Trial of the Crusader/1 51.4,52.4 -to- Trial of the Crusader/2 52.5,73.5",
+			},
+			["Icecrown Citadel"] = {
+				"Icecrown Citadel/1 39.07,85.75 -x- Icecrown Citadel/2 45.60,84.81",
+				"Icecrown Citadel/2 45.62,73.77 -x- Icecrown Citadel/3 51.33,83.92",
+				"Icecrown Citadel/3 51.85,19.20 -x- Icecrown Citadel/5 51.85,83.82",
+				"Icecrown Citadel/4 36.48,89.98 -x- Icecrown Citadel/5 76.71,91.90",
+				"Icecrown Citadel/4 50.50,33.31 -x- Icecrown Citadel/5 85.91,53.55",
+				"Icecrown Citadel/5 60.68,17.31 -x- Icecrown Citadel/6 78.82,31.45",
+				"Icecrown Citadel/5 43.44,16.66 -x- Icecrown Citadel/6 23.19,30.52",
+				"Icecrown Citadel/5 52.35,53.69 -x- Icecrown Citadel/7 49.85,39.13",
+				"Icecrown Citadel/6 50.65,69.26 -to- Icecrown Citadel/5 51.82,32.29",
+
+				"@icc10 -x- @icc11 (B:PORTAL)",
+				"@icc10 -x- @icc20 (B:PORTAL)", "@icc11 -x- @icc20 (B:PORTAL)",
+				"@icc10 -x- @icc30 (B:PORTAL)", "@icc11 -x- @icc30 (B:PORTAL)", "@icc20 -x- @icc30 (B:PORTAL)",
+				"@icc10 -x- @icc40 (B:PORTAL)", "@icc11 -x- @icc40 (B:PORTAL)", "@icc20 -x- @icc40 (B:PORTAL)", "@icc30 -x- @icc40 (B:PORTAL)",
+				"@icc10 -x- @icc50 (B:PORTAL)", "@icc11 -x- @icc50 (B:PORTAL)", "@icc20 -x- @icc50 (B:PORTAL)", "@icc30 -x- @icc50 (B:PORTAL)", "@icc40 -x- @icc50 (B:PORTAL)",
+			},
+
+		--Maelstrom
+			["Throne of the Tides"] = {
+				"Throne of the Tides/1 48.9,82.1 -x- Throne of the Tides/2 51.0,53.0",
+				"Throne of the Tides/1 50.0,39.7 -x- Throne of the Tides/2 50.0,90.1",
+			},
+
+		--Pandaria
+			["Stormstout Brewery"] = {
+				"Stormstout Brewery/1 28.1,61.1 -x- Stormstout Brewery/2 32.8,59.2",
+				"Stormstout Brewery/2 81.5,58.5 -x- Stormstout Brewery/3 33.8,77.9",
+				"Stormstout Brewery/3 75.5,33.5 -x- Stormstout Brewery/4 57.6,31.1",
+			},
+			["Siege of Niuzao Temple"] = {
+				"Siege of Niuzao Temple/1 50.3,73.9 -x- Siege of Niuzao Temple/3 21.6,53.6",
+				"Siege of Niuzao Temple/2 53.2,81.9 -x- Siege of Niuzao Temple/3 57.1,80.7",
+			},
+			["Mogu'shan Palace"] = {
+				"Mogu'shan Palace/1 49.0,67.0 -x- Mogu'shan Palace/2 55.8,18.9",
+				"Mogu'shan Palace/2 71.5,76.2 -x- Mogu'shan Palace/3 58.8,24.3",
+			},
+			["Temple of the Jade Serpent"] = {
+				"Temple of the Jade Serpent/1 27.4,62.7 -x- Temple of the Jade Serpent/2 39.0,22.0",
+				"Temple of the Jade Serpent/1 27.0,68.7 -x- Temple of the Jade Serpent/2 46.6,42.5",
+			},
+			["Shado-Pan Monastery"] = {
+				"Shado-Pan Monastery/1 56.0,88.0 -x- Shado-Pan Monastery/2 21.0,85.6",
+				"Shado-Pan Monastery/1 36.5,81.8 -x- Shado-Pan Monastery/3 76.9,81.4",
+				"Shado-Pan Monastery/1 22.1,69.1 -x- Shado-Pan Monastery/3 12.3,19.2",
+				"Shado-Pan Monastery/1 30.7,35.0 -x- Shado-Pan Monastery/4 17.0,72.6",
+				"Shado-Pan Monastery/1 44.7,40.1 -x- Shado-Pan Monastery/4 51.3,83.9",
+			},
+			["Gate of the Setting Sun"] = {
+				"Gate of the Setting Sun/1 46.3,33.1 -x- Gate of the Setting Sun/2 50.0,50.8",
+			},
+			["Mogu'shan Vaults"] = {
+				"Mogu'shan Vaults/1 32.2,13.5 -x- Mogu'shan Vaults/2 77.8,81.1",
+				"Mogu'shan Vaults/2 28.7,52.1 -x- Mogu'shan Vaults/3 65.7,10.6",
+			},
+			["Heart of Fear"] = {
+				"Heart of Fear/1 32.1,16.3 -x- Heart of Fear/2 66.3,27.2",
+			},
+			["Sunwell Plateau"] = {
+				"Sunwell Plateau/1 67.2,27.3 -x- Sunwell Plateau/2 52.7,14.1",
+			},
+			["The Bastion of Twilight"] = {
+				"The Bastion of Twilight/1 53.7,85.2 -x- The Bastion of Twilight/2 55.1,5.5",
+				"The Bastion of Twilight/2 69.8,74.8 -to- The Bastion of Twilight/3 54.8,65.5",
+			},
+			["Hour of Twilight"] = {
+				"Hour of Twilight/1 49.3,81.7 -x- Hour of Twilight/2 49.3,83.0",
+			},
+			["Firelands"] = {
+				"Firelands/1 49.7,1.0 -x- Firelands/2 52.3,81.9",
+			},
+			["Throne of Thunder"] = {
+				"Throne of Thunder/1 83.4,79.6 -x- Throne of Thunder/2 14.8,78.9",
+				"Throne of Thunder/2 72.90,20.01 -x- Throne of Thunder/3 20.70,82.15",
+				"Throne of Thunder/3 73.1,53.2 -x- Throne of Thunder/4 21.9,21.1",
+				"Throne of Thunder/4 34.0,59.0 -x- Throne of Thunder/5 80.2,7.8",
+				"Throne of Thunder/5 46.64,22.87 -x- Throne of Thunder/6 20.44,64.75",
+				"Throne of Thunder/6 88.13,74.91 -x- Throne of Thunder/7 45.97,10.54",
+			},
+			["Siege of Orgrimmar"] = {
+				"Siege of Orgrimmar/1 44.7,69.2 -x- Siege of Orgrimmar/3 64.6,12.7",
+				"Siege of Orgrimmar/2 11.7,71.9 -x- Siege of Orgrimmar/1 26.4,9.8",
+				"Siege of Orgrimmar/1 28.5,9.7 -x- Siege of Orgrimmar/2 11.7,71.8",
+				"Siege of Orgrimmar/4 34.8,21.6 -x- Siege of Orgrimmar/5 51.7,76.9",
+				"Siege of Orgrimmar/5 56.3,29.1 -x- Siege of Orgrimmar/6 80.7,16.3",
+				"Siege of Orgrimmar/6 67.9,50.1 -x- Siege of Orgrimmar/7 31.1,20.3",
+				"Siege of Orgrimmar/8 78.6,73.6 -x- Siege of Orgrimmar/9 64.0,17.8",
+				"Siege of Orgrimmar/8 89.4,62.3 -x- Siege of Orgrimmar/10 23.7,82.3",
+				"Siege of Orgrimmar/8 87.7,76.4 -x- Siege of Orgrimmar/11 32.0,14.8",
+				"Siege of Orgrimmar/11 65.2,91.5 -x- Siege of Orgrimmar/12 53.7,13.5",
+			},
+
+	--Draenor
+
+		-- Draenor raids go here
+
+	-- LEGION
+
+		-----------------
+		---  DALARAN  ---
+		-----------------
+		["Dalaran L"] = {
+			-- Underbelly Entrance for Warlock Order Hall Portal
+				"Dalaran L/10 34.33,45.60 <radius:10> -x- Dalaran L/11 19.18,57.14 <radius:10>"..
+					"{template:custom} {atob:Enter the Underbelly and run down the stairs}"..
+					"{btoa:Run up the stairs and leave the Underbelly} {cond:true or PlayerCompletedQuest(44663)}",  -- TODO: remove true on Live
+
+			-- Underbelly Main Entrance
+				"Dalaran L/10 59.85,47.89 <radius:10> -x- Dalaran L/11 76.26,68.47 <radius:10>"..
+					"{template:custom} {atob:Enter the Underbelly and run down the stairs}"..
+					"{btoa:Run up the stairs and leave the Underbelly} {cond:PlayerCompletedQuest(44663)}",
+
+			-- Rogue Order Hall Entrance
+				"Dalaran L/10 52.83,70.29 <radius:10> -x- Dalaran L/4 87.05,76.65 <radius:10> {template:custom}"..
+					"{atob:Talk to \"Red\" Jack Findle and Show Him Your Insignia, Enter the Doorway, and Run Down the Stairs}"..
+					"{btoa:Run Up the Stairs, Click the Torch, and Leave the Doorway} {cond:PlayerHaveQuest(40832) or PlayerCompletedQuest(40832)}",
+		},
+
+
+		----------------
+		---  AZSUNA  ---
+		----------------
+		["Azsuna"] = {
+			-- Oceanus Cove Entrance #1
+				"Azsuna/0 50.72,59.10 <radius:25> -x- Azsuna/18 72.80,85.82 <radius:15>"..
+					"{template:custom} {atob:Enter the cave} {btoa:Leave the cave} {cond:PlayerCompletedQuest(44663)}",
+
+			-- Oceanus Cove Entrance #2
+				"Azsuna/0 45.77,55.53 <radius:30> -x- Azsuna/18 27.77,49.64 <radius:25>"..
+					"{template:custom} {atob:Enter the cave} {btoa:Leave the cave} {cond:PlayerCompletedQuest(44663)}",
 				
-				"Frostfire Ridge/0 24.3,36.4 -x- Frostfire Ridge/1 20.69,38.83 {template:pathup}", --Bladespire Fortress west ramp
-				"Frostfire Ridge/0 21.0,42.3 -x- Frostfire Ridge/1 -7.8,86.5 {template:custom} {atob:Enter the bridge} {btoa:Get off the bridge}", --Gormaul Tower - Bladespire Fortress bridge
+			-- Oceanus Cove Entrance #3
+				"Azsuna/0 48.18,50.58 <radius:30> -x- Azsuna/18 42.58,18.32 <radius:25>"..
+					"{template:custom} {atob:Enter the cave} {btoa:Leave the cave} {cond:PlayerCompletedQuest(44663)}",
+
+			-- Temple of a Thousand Lights
+				"Azsuna/0 56.03,68.69 <radius:10> -x- Azsuna/19 65.95,19.19 <radius:10>"..
+					"{template:custom} {atob:Enter the building and run down the stairs}"..
+					"{btoa:Run up the stairs and leave the building} {cond:PlayerCompletedQuest(44663)}",
+
+			-- Nar'thalas Academy
+				"Azsuna/0 53.78,40.40 <radius:15> -x- Azsuna/17 62.40,84.94 <radius:15>"..
+					"{template:custom} {atob:Enter the building} {btoa:Leave the building}"..
+					"{cond:PlayerCompletedQuest(44663)}",
+		},
+
+
+
+		--------------------
+		---  VAL'SHARAH  ---
+		--------------------
+		["Val'sharah"] = {
+			-- Darkpens Entrance
+				"Val'sharah/0 40.53,44.88 <radius:10> -x- Val'sharah/13 38.13,87.90 <radius:10>"..
+					"{template:custom} {atob:Run down the stairs} {btoa:Run up the stairs}"..
+					"{cond:PlayerCompletedQuest(44663)}",
+
+			-- Sleeper's Barrow Entrance from Val'sharah
+				"Val'sharah/0 50.01,85.60 <radius:10> -x- Val'sharah/14 67.04,26.85 <radius:10>"..
+					"{template:custom} {atob:Enter the cave} {btoa:Leave the cave}"..
+					"{cond:PlayerCompletedQuest(44663)}",
+
+			-- Sleeper's Barrow Floor #2
+				"Val'sharah/14 34.54,60.30 <radius:15> -x- Val'sharah/15 25.56,59.75 <radius:15>"..
+					"{template:custom} {atob:Follow the path up} {btoa:Follow the path down}"..
+					"{cond:PlayerCompletedQuest(44663)}",
+
+			-- Sleeper's Barrow Floor #2 Jump Down to Floor #1
+				"Val'sharah/15 76.80,56.89 <radius:10> -to- Val'sharah/14 62.07,48.22 <radius:20>"..
+					"{template:custom} {atob:Jump down here} {cond:PlayerCompletedQuest(44663)}",	
+					
+			-- The Dreamgrove Ground Entrance (Druid Only)
+				"Val'sharah/0 45.48,34.51 <radius:20> -x- The Dreamgrove/0 44.82,32.76 <radius:20>"..
+					"{template:custom} {atob:Follow the path} {btoa:Follow the path}"..
+					"{cond:select(2,UnitClass('player'))=='DRUID' and PlayerCompletedQuest(44663)}",
+		},
+
+
+
+		----------------------
+		---  HIGHMOUNTAIN  ---
+		----------------------
+		["Highmountain"] = {
+			-- Neltharion's Vault Exit to Obsidian Overlook
+				"Highmountain/0 47.53,84.32 <radius:15> -x- Highmountain/30 41.80,90.71 <radius:15>"..
+					"{template:custom} {atob:Enter the cave} {btoa:Leave the cave}"..
+					"{cond:PlayerCompletedQuest(44663)}",
+
+			-- Neltharion's Vault Floor #1 to Floor #2 Border
+				"Highmountain/30 46.83,18.83 <radius:20> -x- Highmountain/29 50.18,86.90 <radius:20>"..
+					"{template:custom} {atob:Follow the path up} {btoa:Follow the path down}"..
+					"{cond:PlayerCompletedQuest(44663)}",
+
+			-- Highmountain to Neltharion's Vault Main Entrance
+				"Highmountain/0 44.68,72.33 <radius:20> -x- Highmountain/29 24.22,41.41 <radius:20>"..
+					"{template:custom} {atob:Enter the cave} {btoa:Leave the cave}"..
+					"{cond:PlayerCompletedQuest(44663)}",
+
+			-- Mucksnout Den Entrance #1
+				"Highmountain/0 41.50,46.77 <radius:20> -x- Highmountain/16 52.09,86.28 <radius:20>"..
+					"{template:custom} {atob:Enter the cave} {btoa:Leave the cave}"..
+					"{cond:PlayerCompletedQuest(44663)}",
+
+			-- Mucksnout Den Entrance #2
+				"Highmountain/0 38.46,42.64 <radius:20> -x- Highmountain/16 33.48,64.11 <radius:20>"..
+					"{template:custom} {atob:Enter the cave} {btoa:Leave the cave}"..
+					"{cond:PlayerCompletedQuest(44663)}",
+
+			-- Lifespring Cavern Entrance
+				"Highmountain/0 38.37,61.30 <radius:15> -x- Highmountain/20 72.57,74.94 <radius:15>"..
+					"{template:custom} {atob:Enter the cave} {btoa:Leave the cave}"..
+					"{cond:PlayerCompletedQuest(44663)}",
+
+			-- Lifespring Cavern Floor #1 to Floor #2 Main Border
+				"Highmountain/20 41.25,59.40 <radius:10> -x- Highmountain/21 37.30,78.71 <radius:10>"..
+					"{template:custom} {atob:Follow the path up} {btoa:Follow the path down}"..
+					"{cond:PlayerCompletedQuest(44663)}",
+
+			-- Lifespring Cavern Upper Floor to Lower Floor Wooden Bridge
+				"Highmountain/21 72.41,54.76 <radius:10> -to- Highmountain/20 56.39,17.40 <radius:15>"..
+					"{template:custom} {atob:Follow the path down} {cond:PlayerCompletedQuest(44663)}",
+
+			-- Bitestone Enclave Entrance
+				"Highmountain/0 41.36,72.50 <radius:20> -x- Highmountain/5 19.31,28.75 <radius:20>"..
+					"{template:custom} {atob:Enter the cave} {btoa:Leave the cave}"..
+					"{cond:PlayerCompletedQuest(44663)}",
+
+			-- Cave of the Blood Trial Entrance
+				"Highmountain/0 37.61,33.46 <radius:20> -x- Highmountain/8 51.91,19.27 <radius:20>"..
+					"{template:custom} {atob:Enter the cave} {btoa:Leave the cave}"..
+					"{cond:PlayerCompletedQuest(44663)}",
+
+			-- Stonedark Grotto Entrance
+				"Highmountain/0 42.59,25.28 <radius:20> -x- Highmountain/31 21.78,75.61 <radius:20>"..
+					"{template:custom} {atob:Enter the cave} {btoa:Leave the cave}"..
+					"{cond:PlayerCompletedQuest(44663)}",
+			
+			
+			
+			-- Thunder Totem Elevator #1
+				"Thunder Totem/0 49.27,46.09 <region:thunder_totem_circle_platform> <radius:10> -x- "..
+					"Thunder Totem/6 68.48,49.94 <radius:10>"..
+					"{template:custom} {atob:Ride the elevator up} {btoa:Ride the elevator down}"..
+					"{cond:PlayerCompletedQuest(44663)}",
+
+			-- Thunder Totem Elevator #2
+				"Thunder Totem/0 45.85,59.02 <region:thunder_totem_circle_platform> <radius:10> -x- "..
+					"Thunder Totem/6 58.69,87.00 <radius:10>"..
+					"{template:custom} {atob:Ride the elevator up} {btoa:Ride the elevator down}"..
+					"{cond:PlayerCompletedQuest(44663)}",
+			
+			
+
+			-- Thunder Totem Platform Path #1
+				"Thunder Totem/0 51.28,39.13 <region:thunder_totem_circle_platform> <radius:15> -x- "..
+					"Thunder Totem/0 56.28,26.58 <radius:15>"..
+					"{template:custom} {atob:Cross the bridge} {btoa:Cross the bridge}"..
+					"{cond:PlayerCompletedQuest(44663)}",
+
+			-- Thunder Totem Platform Path #2
+				"Thunder Totem/0 53.97,56.44 <region:thunder_totem_circle_platform> <radius:30> -x- "..
+					"Thunder Totem/0 60.02,64.38 <radius:20>"..
+					"{template:custom} {atob:Follow the path up} {btoa:Follow the path down}"..
+					"{cond:PlayerCompletedQuest(44663)}",
+
+			-- Thunder Totem Platform Path #3
+				"Thunder Totem/0 42.08,64.11 <region:thunder_totem_circle_platform> <radius:15> -x- "..
+					"Thunder Totem/0 40.08,74.39 <radius:15>"..
+					"{template:custom} {atob:Cross the bridge} {btoa:Cross the bridge}"..
+					"{cond:PlayerCompletedQuest(44663)}",
+
+
+			
+			-- Thunder Totem Tunnel #1
+				"Thunder Totem/0 33.91,56.80 <radius:10> -x- Thunder Totem/6 30.94,77.72 <radius:10>"..
+					"{template:custom} {atob:Enter the tunnel} {btoa:Leave the tunnel}"..
+					"{cond:PlayerCompletedQuest(44663)}",
+
+			-- Thunder Totem Tunnel #2
+				"Thunder Totem/0 34.95,44.20 <radius:10> -x- Thunder Totem/6 32.75,49.71 <radius:10>"..
+					"{template:custom} {atob:Enter the tunnel} {btoa:Leave the tunnel}"..
+					"{cond:PlayerCompletedQuest(44663)}",
+
+			-- Thunder Totem Tunnel #3
+				"Thunder Totem/0 42.19,33.04 <radius:10> -x- Thunder Totem/6 50.75,22.57 <radius:10>"..
+					"{template:custom} {atob:Enter the tunnel} {btoa:Leave the tunnel}"..
+					"{cond:PlayerCompletedQuest(44663)}",
+
+			-- Thunder Totem Main Entrance #1
+				"Highmountain/0 48.98,55.41 <radius:15> -x- Thunder Totem/0 58.97,14.56 <radius:15>"..
+					"{template:custom} {atob:Cross the bridge} {btoa:Cross the bridge}"..
+					"{cond:PlayerCompletedQuest(44663)}",
+
+			-- Thunder Totem Main Entrance #2
+				"Highmountain/0 50.66,64.01 <radius:30> -x- Thunder Totem/0 61.69,64.75 <radius:20>"..
+					"{template:custom} {atob:Follow the path down} {btoa:Follow the path up}"..
+					"{cond:PlayerCompletedQuest(44663)}",
+
+			-- Thunder Totem Main Entrance #3
+				"Highmountain/0 44.93,65.57 <radius:20> -x- Thunder Totem/0 34.01,78.12 <radius:20>"..
+					"{template:custom} {atob:Follow the path} {btoa:Follow the path}"..
+					"{cond:PlayerCompletedQuest(44663)}",
+
+			-- Thunder Totem Western Entrance #1
+				"Highmountain/0 42.02,66.57 <radius:30> -x- Thunder Totem/0 20.18,63.51 <radius:20>"..
+					"{template:custom} {atob:Follow the path} {btoa:Follow the path}"..
+					"{cond:PlayerCompletedQuest(44663)}",
+
+			-- Thunder Totem Western Entrance #2
+				"Highmountain/0 43.91,59.37 <radius:20> -x- Thunder Totem/0 28.59,38.84 <radius:20>"..
+					"{template:custom} {atob:Follow the path} {btoa:Follow the path}"..
+					"{cond:PlayerCompletedQuest(44663)}",
+
+			-- Thunder Totem Western Entrance #3
+				"Highmountain/0 45.54,56.31 <radius:30> -x- Thunder Totem/0 40.42,26.89 <radius:20>"..
+					"{template:custom} {atob:Follow the path} {btoa:Follow the path}"..
+					"{cond:PlayerCompletedQuest(44663)}",			
+			
+			-- Trueshot Lodge Ground Entrance (Hunter Only)
+				"Highmountain/0 36.13,44.71 <radius:20> -x- Trueshot Lodge/0 42.72,9.98 <radius:20>"..
+					"{template:custom} {atob:Follow the path up} {btoa:Follow the path down}"..
+					"{cond:select(2,UnitClass('player'))=='HUNTER' and PlayerCompletedQuest(44663)}",
+		},
+
+
+
+		-------------------
+		---  STORMHEIM  ---
+		-------------------
+		["Stormheim"] = {
+			-- Stormscale Cavern Entrance #1
+				"Stormheim/0 31.46,56.91 <radius:15> -x- Stormheim/9 77.42,45.57 <radius:15>"..
+					"{template:custom} {atob:Enter the cave} {btoa:Leave the cave}"..
+					"{cond:PlayerCompletedQuest(44663)}",
+
+			-- Stormscale Cavern Entrance #2
+				"Stormheim/0 29.95,54.94 <radius:20> -x- Stormheim/9 59.68,20.31 <radius:20>"..
+					"{template:custom} {atob:Enter the cave} {btoa:Leave the cave}"..
+					"{cond:PlayerCompletedQuest(44663)}",
+
+			-- Thorignir Refuge Entrance
+				"Stormheim/0 42.76,81.83 <radius:20> -x- Stormheim/25 67.71,65.07 <radius:20>"..
+					"{template:custom} {atob:Enter the cave} {btoa:Leave the cave}"..
+					"{cond:PlayerCompletedQuest(44663)}",
+
+			-- Thorignir Refuge Floor #1 to Floor #2 Crossing
+				"Stormheim/25 37.27,58.42 <radius:15> -x- Stormheim/26 48.42,40.65 <radius:15>"..
+					"{template:custom} {atob:Follow the path down} {btoa:Follow the path up}"..
+					"{cond:PlayerCompletedQuest(44663)}",
+
+			-- Aggramar's Vault Entrance
+				"Stormheim/0 47.63,44.82 <radius:20> -x- Stormheim/27 28.51,71.34 <radius:20>"..
+					"{template:custom} {atob:Enter the building} {btoa:Leave the building}"..
+					"{cond:PlayerCompletedQuest(44663)}",
+		},		
 				
-				--[[ too detailed ramp, too zealous.
-				"Frostfire Ridge/0 24.3,36.4 -x- Frostfire Ridge/1 21.14,25.23 <radius:5> {template:pathup} {cost:-0.001} {dark:1}", --Bladespire Fortress
-				"@+ -x- Frostfire Ridge/1 23.6,20.6 <radius:5> {template:pathup} {cost:-0.001} {dark:1}", --Bladespire Fortress
-				"@+ -x- Frostfire Ridge/1 26.70,19.3 <radius:5> {template:pathup} {cost:-0.001} {dark:1}", --Bladespire Fortress
-				"@+ -x- Frostfire Ridge/1 25.53,25.59 <radius:5> {template:pathup} {cost:-0.001} {dark:1}", --Bladespire Fortress
-				"@+ -x- Frostfire Ridge/1 20.69,38.83 {template:pathup} {cost:-0.001} {dark:1}", --Bladespire Fortress
-				--]]
+		
+		
+		-----------------
+		---  SURAMAR  ---
+		-----------------
+		["Suramar"] = {
+			-- Ley Station Anora Entrance
+				"Suramar/0 41.59,38.99 <radius:15> -x- Suramar/36 23.91,32.34 <radius:15>"..
+					"{template:custom} {atob:Enter the cave} {btoa:Leave the cave}",
 
+			-- Jump Down into Falanaar Tunnels
+				"Suramar/0 21.19,42.96 <radius:15> -to- Suramar/33 46.85,43.76 <radius:40>"..
+					"{template:custom} {atob:Jump down into the water}",
 
-				"Frostfire Ridge/1 24.3,36.4 -x- Frostfire Ridge/1 23.6,20.6 {template:pathup}", --Bladespire Fortress
-				"Frostfire Ridge/0 29.7,41.5 -x- Frostfire Ridge/4 65.4,72.5 {template:mine}", --Sootstained Mines
-				"Frostfire Ridge/0 65.4,17.5 -x- Frostfire Ridge/9 27.6,19.3 {template:cave}", --Snowfall Alcove
-				"Frostfire Ridge/0 46.0,33.4 -x- Frostfire Ridge/7 33.2,51.5 {template:cave}", --Grulloc's Grotto
-				"Frostfire Ridge/7 41.9,32.8 -x- Frostfire Ridge/8 42.0,32.9 {template:cave}", --Grulloc's Lair
-				"Frostfire Ridge/0 63.1,65.6 <radius:20> -x- Frostfire Ridge/6 31.1,57.4 <radius:20> {template:building}", --The Hunter's Hall
-				"Frostfire Ridge/0 27.9,24.8 -x- Frostfire Ridge/0 28.0,24.6 <indoors:Circle of Blood> {template:cave}", --Circle of Blood Cave
-				--"Frostfire Ridge/0 18.3,56.0 -x- Frostfire Ridge/0 18.1,55.8 <indoors:Pool of Visions> {template:cave}", --Pool of Visions
-			},
-			["Frostwall"] = {
-				"Frostwall/0 63.4,72.8 -x- Frostwall/26 65.4,55.0 {template:mine}", --Frostwall Mine
-			},
-			["Gorgrond"] = {
-				--"Gorgrond/0 43.4,47.9 <radius:20> -x- Gorgrond/0 62.5,79.5 <radius:20> {template:cave}", --Fissure of Fury
-				"Gorgrond/0 43.7,48.3 <radius:20> -x- Gorgrond/0 43.5,48.1 <dark:1> <radius:20> {template:cave}", --Fissure of Fury
-				"@+ -x- Gorgrond/0 43.4,47.9 <dark:1> <radius:20> {template:cave}", --Fissure of Fury
-				"@+ -x- Gorgrond/18 64.2,82.9 <dark:1> <radius:20> {template:cave}", --Fissure of Fury
-				"@+ -x- Gorgrond/18 57.0,78.6 <radius:20> {template:cave}", --Fissure of Fury
-				"Gorgrond/18 67.4,46.5 <radius:30> -x- Gorgrond/19 63.3,66.7 <radius:30> {template:custom} {atob:Continue walking down into the cave} {btoa:Run up the ramp to leave the cave}", --Heart of Fury
-				"Gorgrond/0 54.0,55.7 <dist:20> -x- Gorgrond/20 69,73 <dist:20> {template:cave}", --Fissure of Fury
-				"Gorgrond/20 70,51 <dist:30> -x- Gorgrond/21 65,56 <dist:30> {template:custom} {atob:Continue walking down into the cave} {btoa:Run up the ramp to leave the cave}", --Heart of Fury
-			},
-			["Lunarfall"] = {
-				"Lunarfall/0 66.6,42.0 -x- Lunarfall/23 70.4,70.1 {template:mine}", --Lunarfall Excavation
-			},
-			["Nagrand D"] = {
-				"Nagrand D/0 67.0,49.6 -x- Nagrand D/11 11.8,77.1 {template:cave}", --Vault of the Titan
-				"Nagrand D/0 56.5,61.9 -x- Nagrand D/12 77.7,39.3 {template:cave}", --The Underpale
-				"Nagrand D/12 10.3,62.0 -to- Nagrand D/0 47.2,64.3 {template:custom} {atob:Walk through the tunnel}", -- The Underpale 2 (exit only)
-				"Nagrand D/0 88.0,55.4 -x- Nagrand D/10 27.4,15.4 {template:cave}", -- The Master's Cavern
-			},
-			["Shadowmoon Valley D"] = {
-				"Shadowmoon Valley D/0 24.4,33.3 -x- Shadowmoon Valley D/15 77.4,33.8 {template:cave}", --Bloodthorn Cave
-			},
-			["Spires of Arak"] = {
-			},
-			["Talador"] = {
-				"Talador/0 41.4,60.1 -x- Talador/14 49.6,90.4 {template:cave}", --Tomb of Souls
-				"Talador/0 58.7,64.9 -x- Talador/13 35.1,29.1 {template:cave}", --Tomb of Lights
-			},
+			-- Falanaar Tunnels Floor #1 to Floor #2
+				"Suramar/33 50.97,16.02 <radius:15> -x- Suramar/32 30.64,69.23 <radius:15>"..
+					"{template:custom} {atob:Follow the path up} {btoa:Follow the path down}",
 
-		["Assault on the Dark Portal"] = {
-			"Assault on the Dark Portal 68.0,20.6 -x- Assault on the Dark Portal 93.7,50.2 {template:cave}", --Gul'var
-		},
-		[937] = {
-			"937/0 43.6,70.6 -x- 937/1 74.4,14.0 {template:mine}",
-		},
+			-- Falanaar Tunnels Main Entrance
+				"Suramar/32 50.35,62.73 <radius:15> -x- Suramar/0 22.86,35.76 <radius:15>"..
+					"{template:custom} {atob:Leave the building} {btoa:Enter the building}",
 
-		["Deeprun Tram"] = {
-			"Deeprun Tram/1 52.24,46.9 -x- Deeprun Tram/2 72.3,16.2", -- brawlpub entry
-		},
-		["Dagger in the Dark"] = {
-			"Dagger in the Dark/0 50.3,39.5 -x- Dagger in the Dark/1 61.3,82.9",
-			"Dagger in the Dark/1 77.0,37.9 -x- Dagger in the Dark/0 57.9,13.2",
-			"Dagger in the Dark/1 25.9,13.8 -x- Dagger in the Dark/0 31.1,1.1",
+			-- Ley Station Moonfall Entrance
+				"Suramar/0 35.70,24.30 <radius:15> -x- Suramar/37 49.28,88.09 <radius:15>"..
+					"{template:custom} {atob:Enter the cave} {btoa:Leave the cave}",
+
+			-- Ley Station Aethenar Entrance
+				"Suramar/0 24.35,19.43 <radius:15> -x- Suramar/38 63.53,87.13 <radius:15>"..
+					"{template:custom} {atob:Enter the cave} {btoa:Leave the cave}",
+
+			-- Ley Station Kel'balor Entrance
+				"Suramar/0 59.37,43.03 <radius:15> -x- Suramar/35 53.98,85.53 <radius:15>"..
+					"{template:custom} {atob:Enter the cave} {btoa:Leave the cave}",
+
+			-- Elor'shan Entrance
+				"Suramar/0 65.95,42.06 <radius:15> -x- Suramar/34 56.37,86.81 <radius:15>"..
+					"{template:custom} {atob:Enter the cave} {btoa:Leave the cave}",
+
+			-- The Arcway Entrance
+				"Suramar/0 35.68,82.23 <radius:20> -x- Suramar/23 27.03,89.23 <radius:20>"..
+					"{template:custom} {atob:Enter the cave} {btoa:Leave the cave}",
+
+			-- The Arcway Vaults Entrance
+				"Suramar/0 34.54,84.24 <radius:20> -x- Suramar/24 41.94,25.50 <radius:20>"..
+					"{template:custom} {atob:Enter the cave} {btoa:Leave the cave}",		
+
+			-- Portal from Shal'Aran to Ruins of Elune'eth
+				"Suramar/0 36.34,44.91 <indoors:Shal'Aran> -to- Suramar/0 36.31,46.89 (B:PORTAL)"..
+					"{template:custom} {atob:Click the Portal to Ruins of Elune'eth} {cond:PlayerCompletedQuest(40956)}",
+
+			-- Portal from Ruins of Elune'eth to Shal'Aran
+				"Suramar/0 36.10,47.23 -to- Suramar/0 36.40,45.09 <indoors:Shal'Aran> (B:PORTAL)"..
+					"{template:custom} {atob:Click the Portal to Shal'Aran} {cond:PlayerCompletedQuest(40956)}",
+
 		},
 		
-		-- Dungeons/Raids
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		-------------------------
+		---  MAGE ORDER HALL  ---
+		-------------------------
+		["Hall of the Guardian"] = {
+			"Hall of the Guardian/1 59.64,60.14 <radius:15> -x- Hall of the Guardian/2 58.32,65.16 <radius:15>"..
+			"{template:custom} {atob:Run up the stairs} {btoa:Run down the stairs} {cond:PlayerCompletedQuest(41036)}",
+		},
 
-			--Kalimdor
-				["Maraudon"] = { --
-					"Maraudon/1 15.53,56.75 -x- Maraudon/2 28.99,4.84",
-				},
-				["Blackfathom Deeps"] = {
-					"Blackfathom Deeps/1 61.51,71.88 -x- Blackfathom Deeps/2 39.21,31.65",
-					"Blackfathom Deeps/2 47.24,79.12 -x- Blackfathom Deeps/3 43.60,61.06",
-				},
-				["Dire Maul"] = { -- Can't move between wings so limits the borders.
-					"Dire Maul/2 39.22,34.98 -x- Dire Maul/3 56.27,24.42",
-					"Dire Maul/2 31.69,72.04 -x- Dire Maul/3 48.30,74.24",
-					"Dire Maul/2 20.79,19.09 -x- Dire Maul/3 44.12,13.38",
-					"Dire Maul/2 29.47,42.67 -x- Dire Maul/4 75.94,39.95",
-					"Dire Maul/5 46.43,63.58 -x- Dire Maul/6 61.27,82.67",
-				},
-				["End Time"] = { -- End Time
-					"@et1 -x- @et2 (B:PORTAL)",
-					"@et1 -x- @et3 (B:PORTAL)", "@et2 -x- @et3 (B:PORTAL)",
-					"@et1 -x- @et4 (B:PORTAL)", "@et2 -x- @et4 (B:PORTAL)", "@et3 -x- @et4 (B:PORTAL)",
-					"@et1 -x- @et5 (B:PORTAL)", "@et2 -x- @et5 (B:PORTAL)", "@et3 -x- @et5 (B:PORTAL)", "@et4 -x- @et5 (B:PORTAL)",
-					"@et1 -x- @et6 (B:PORTAL)", "@et2 -x- @et6 (B:PORTAL)", "@et3 -x- @et6 (B:PORTAL)", "@et4 -x- @et6 (B:PORTAL)", "@et5 -x- @et6 (B:PORTAL)",
 
-				},
-				["Halls of Origination"] = {
-					"Halls of Origination/1 89.7,49.8 -x- Halls of Origination/2 24.9,49.4",
-					"Halls of Origination/1 67.5,52.6 -x- Halls of Origination/2 66.7,48.5",
-					"Halls of Origination/1 66.5,48.3 -x- Halls of Origination/3 45.9,47.6",
-				},
-				["The Culling of Stratholme"] = {
-					"The Culling of Stratholme/1 47.47,32.24 -x- The Culling of Stratholme/2 50.63,92.88",
-				},
-				["Ahn'Qiraj"] = {
-					"Ahn'Qiraj/1 34.6,45.0 -x- Ahn'Qiraj/3 66.4,46.3",
-					"Ahn'Qiraj/1 33.0,52.4 -x- Ahn'Qiraj/3 50.5,73.0",
-					"Ahn'Qiraj/2 49.2,63.3 -x- Ahn'Qiraj/3 47.5,29.3",
-				},
-				["Dragon Soul"] = {
-					"Dragon Soul/1 49.16,59.04 <template:dragonrider> -to- Dragon Soul/2 32.66,45.49 (B:PORTAL)",
-					"Dragon Soul/2 22.98,40.36 -to- Dragon Soul/1 50.25,59.76 (B:PORTAL)",
-					"Dragon Soul/1 51.29,59.31 <template:dragonrider> -to- Dragon Soul/3 55.38,79.72 (B:PORTAL)",
-					"Dragon Soul/3 57.76,88.77 -to- Dragon Soul/1 50.25,59.76 (B:PORTAL)",
-					"Dragon Soul/1 50.70,60.63 -x- Dragon Soul/4 52.42,14.22 (B:PORTAL)", --portal from top
-					"Dragon Soul/7 31.93,82.91 -to- Dragon Soul/1 50.25,59.76 (B:PORTAL)",
-				},
 
-			--Eastern Kingdom
-				["The Deadmines"] = {
-					-- TODO there are teleporters in DM that could/should be added. Only useful if you die and need to get back to where you were.
-					"The Deadmines/1 65.48,60.02 -x- The Deadmines/2 16.97,88.45",
-				},
-				["Uldaman"] = {
-					"Uldaman/1 46.08,9.57 -x- Uldaman/2 64.77,43.35",
-				},
-				["Shadowfang Keep"] = {
-					"Shadowfang Keep/1 38.18,39.14 -x- Shadowfang Keep/2 60.03,13.01",
-					"Shadowfang Keep/1 14.78,88.35 -x- Shadowfang Keep/2 27.49,87.84",
-					"Shadowfang Keep/1 34.01,70.58 -x- Shadowfang Keep/7 23.69,75.12",
-					"Shadowfang Keep/7 45.49,25.23 -to- Shadowfang Keep/3 44.44,61.70",
-					"Shadowfang Keep/3 60.72,31.88 -to- Shadowfang Keep/7 47.37,19.47",
-					"Shadowfang Keep/3 45.86,92.67 -x- Shadowfang Keep/4 48.93,77.89",
-					"Shadowfang Keep/4 34.60,55.37 -x- Shadowfang Keep/5 48.94,77.32",
-					"Shadowfang Keep/5 56.86,44.93 -to- Shadowfang Keep/4 54.68,54.74",
-					"Shadowfang Keep/5 34.62,57.88 -x- Shadowfang Keep/6 48.75,90.71",
-				},
-				["Stratholme"] = {
-				},
-				["Scholomance"] = {
-					"Scholomance/1 81.8,23.9 -x- Scholomance/2 76.0,26.5",
-					"Scholomance/2 57.5,92.2 -x- Scholomance/3 49.7,19.2",
-					"Scholomance/3 49.8,24.0 -x- Scholomance/4 49.6,28.2",
-				},
-				["Scarlet Monastery"] = {
-					"Scarlet Monastery/1 48.4,88.5 -x- Scarlet Monastery/2 49.1,11.2",
-				},
-				["Scarlet Halls"] = {
-					"Scarlet Halls/1 55.5,13.8 -x- Scarlet Halls/2 47.8,91.1",
-				},
-				["Gnomeregan"] = {
-					"Gnomeregan/1 57.67,50.98 -to- Gnomeregan/2 81.36,46.02",
-					"Gnomeregan/1 47.05,86.94 -x- Gnomeregan/2 75.38,74.06",
-					"Gnomeregan/1 34.33,61.78 -x- Gnomeregan/2 61.73,61.55",
-					"Gnomeregan/2 35.21,88.08 -x- Gnomeregan/3 38.60,50.33",
-					"Gnomeregan/3 48.26,71.95 -x- Gnomeregan/4 71.25,77.54",
-				},
-				["Blackrock Spire"]= {
-					"Blackrock Spire/1 66.1,51.1 -x- Blackrock Spire/3 66.0,49.2",
-					"Blackrock Spire/3 58.4,47.7 -x- Blackrock Spire/1 56.7,48.3",
-					"Blackrock Spire/2 64.8,70.9 -x- Blackrock Spire/1 59.8,70.2",
-					"Blackrock Spire/2 59.5,59.3 -x- Blackrock Spire/1 59.4,63.9",
-					"Blackrock Spire/2 53.2,52.8 -x- Blackrock Spire/3 57.0,51.2",
-					"Blackrock Spire/3 49.9,74.1 -x- Blackrock Spire/2 51.1,74.2",
-					"Blackrock Spire/3 46.5,65.8 -x- Blackrock Spire/4 45.1,59.5",
-					"Blackrock Spire/4 47.2,42.7 -x- Blackrock Spire/3 55.1,37.6",
-					"Blackrock Spire/4 37.2,34.2 -x- Blackrock Spire/5 37.1,32.1",
-					"Blackrock Spire/5 33.3,13.3 -x- Blackrock Spire/6 30.4,18.7",
-					"Blackrock Spire/6 29.0,41.4 -x- Blackrock Spire/7 28.4,36.1",
-					"Blackrock Spire/7 30.7,42.7 -to- Blackrock Spire/6 30.6,41.6", --cliff
-					"Blackrock Spire/7 36.4,43.3 -to- Blackrock Spire/6 36.1,41.3",
-				},
-				["Blackrock Caverns"] = {
-					"Blackrock Caverns/1 52.05,20.12 -to- Blackrock Caverns/2 29.97,17.32",
-					"Blackrock Caverns/1 49.93,12.98 -x- Blackrock Caverns/2 29.37,13.13",
-				},
+		----------------------------
+		---  PALADIN ORDER HALL  ---
+		----------------------------
+		["Eastern Plaguelands"] = {
+			--[[
+			"Eastern Plaguelands/20 41.84,75.90 <radius:15> -x- Eastern Plaguelands/0 75.34,52.78 <radius:15>"..
+			"{template:custom} {atob:Run up the stairs, click the Secret Door, and leave the building}"..
+			"{btoa:Enter the building, click the Secret Door, and run down the stairs} {cond:PlayerCompletedQuest(38566)}",
+			--]]
 
-		--Raids
 
-			-- Old world
-				["Karazhan"] = {
-					"Karazhan/1 38.3,78.6 -x- Karazhan/2 29.1,80.8",
-					"Karazhan/2 38.6,14.1 -x- Karazhan/3 39.8,81.7",
-					"Karazhan/1 53.1,64.1 -x- Karazhan/3 52.5,91.3",
-					"Karazhan/3 67.0,42.4 -x- Karazhan/4 67.9,42.9",
-					"Karazhan/1 37.6,12.8 -x- Karazhan/4 47.2,29.1",
-					"Karazhan/4 23.5,49.2 -x- Karazhan/5 45.4,83.7",
-					"Karazhan/5 67.9,26.5 -x- Karazhan/6 41.4,13.3",
-					"Karazhan/6 64.9,69.2 -x- Karazhan/7 73.2,65.3",
-					"Karazhan/8 51.8,58.3 -x- Karazhan/9 61.5,19.2",
-					"Karazhan/9 31.0,66.3 -x- Karazhan/10 30.9,59.9",
-					"Karazhan/10 37.1,23.1 -x- Karazhan/11 64.0,26.8",
-					"Karazhan/10 58.8,56.0 -x- Karazhan/12 47.0,56.0",
-					"Karazhan/12 25.9,61.3 -x- Karazhan/13 53.8,78.5",
-					"Karazhan/12 39.6,18.8 -x- Karazhan/14 20.6,81.3",
-					"Karazhan/14 83.2,57.1 -x- Karazhan/15 82.3,69.8",
-					"Karazhan/15 83.2,75.5 -x- Karazhan/16 71.9,70.5",
-					"Karazhan/16 66.2,79.3 -x- Karazhan/17 50.9,91.1",
-				},
-				["Blackwing Lair"] = {
-					"Blackwing Lair/1 45.4,27.7 -x- Blackwing Lair/2 49.7,36.0",
-					"Blackwing Lair/1 37.6,11.2 -x- Blackwing Lair/2 44.0,22.9",
-					"Blackwing Lair/2 49.4,80.3 -x- Blackwing Lair/3 57.0,87.2",
-					"Blackwing Lair/3 31.0,37.5 -x- Blackwing Lair/4 22.0,60.9",
-				},
-				["Blackrock Depths"] = {
-					"Blackrock Depths/1 40.7,67.1 -x- Blackrock Depths/2 41.8,92.4",
-					"Blackrock Depths/1 67.0,26.3 -x- Blackrock Depths/2 64.9,57.1",
-					"Blackrock Depths/1 59.8,30.9 -x- Blackrock Depths/2 59.9,60.1",
-					"Blackrock Depths/1 58.7,34.4 -x- Blackrock Depths/2 58.9,64.7",
-					"Blackrock Depths/1 55.0,35.6 -x- Blackrock Depths/2 54.2,65.6",
-					"Blackrock Depths/1 56.9,51.3 -x- Blackrock Depths/2 56.4,77.5",
-					"Blackrock Depths/1 57.3,57.1 -x- Blackrock Depths/2 56.9,85.7",
-					"Blackrock Depths/1 54.8,62.9 -x- Blackrock Depths/2 55.2,89.9",
-					"Blackrock Depths/1 45.4,63.1 -x- Blackrock Depths/2 44.6,90.0",
-					"Blackrock Depths/1 45.0,64.3 -x- Blackrock Depths/2 44.5,91.1",
-					"Blackrock Depths/1 46.6,52.5 -x- Blackrock Depths/2 47.5,81.1",
-					"Blackrock Depths/1 42.5,46.3 -x- Blackrock Depths/2 42.3,73.6",
-					"Blackrock Depths/1 41.6,39.1 -x- Blackrock Depths/2 41.4,68.1",
-					"Blackrock Depths/1 53.0,31.8 -x- Blackrock Depths/2 53.0,61.5",
-					"Blackrock Depths/1 54.0,27.0 -x- Blackrock Depths/2 53.2,55.6",
-				},
-				["Naxxramas"] = {
-					"Naxxramas/1 68.6,77.7 -x- Naxxramas/5 51.6,47.1",
-					"Naxxramas/2 30.7,77.9 -x- Naxxramas/5 55.0,47.1",
-					"Naxxramas/3 66.9,21.9 -x- Naxxramas/5 51.7,52.2",
-					"Naxxramas/4 32.9,22.4 -x- Naxxramas/5 55.2,52.5",
-					"Naxxramas/5 53.5,50.1 -to- Naxxramas/6 73.6,72.8",
-					"Naxxramas/6 74.6,73.2 -to- Naxxramas/5 51.3,49.7",
-				},
-				["Blackwing Descent"] = {
-					"Blackwing Descent/1 46.9,42.1 -x- Blackwing Descent/2 47.4,89.8",
-				},
-				["The Bastion of Twilight"] = {
-					"The Bastion of Twilight/1 53.6,85.1 -x- The Bastion of Twilight/2 55.0,6.2",
-				},
 
-			--Outlands
-				["The Steamvault"]={
-					"The Steamvault/1 49.85,29.26 -x- The Steamvault/2 51.23,28.93",
-					"The Steamvault/1 51.38,27.47 -to- The Steamvault/2 51.48,29.20",
-					"The Steamvault/1 48.01,77.81 -x- The Steamvault/2 46.24,79.55",
-					"The Steamvault/1 36.64,73.70 -to- The Steamvault/2 35.59,72.57",
-				},
-				["The Mechanar"]={
-					"The Mechanar/1 41.73,22.82 -x- The Mechanar/2 41.77,31.54",
-				},
-				["The Arcatraz"]={
-					"The Arcatraz/1 65.11,35.34 -x- The Arcatraz/2 89.26,43.76",
-					"The Arcatraz/2 36.51,57.12 -x- The Arcatraz/3 26.97,88.52",
-				},
-				["Sethekk Halls"]={
-					"Sethekk Halls/1 48.71,95.13 -x- Sethekk Halls/2 53.33,94.35",
-					"Sethekk Halls/2 44.61,27.42 -to- Sethekk Halls/1 51.57,27.55",
-				},
-				["Auchenai Crypts"]={
-					"Auchenai Crypts/1 44.67,17.68 -x- Auchenai Crypts/2 22.77,12.22",
-				},
-				["Black Temple"]={
-					"Black Temple/2 29.58,19.61 -x- Black Temple/1 28.02,74.29",
-					"Black Temple/1 63.09,45.70 -x- Black Temple/3 24.31,50.07",
-					"Black Temple/3 58.48,91.11 -x- Black Temple/5 66.89,68.26",
-					"Black Temple/3 26.28,21.71 -x- Black Temple/6 8.40,59.62",
-					"Black Temple/6 67.17,51.10 -x- Black Temple/7 69.01,16.15",
-					"Black Temple/7 46.72,35.00 -x- Black Temple/8 52.69,20.84",
-					"Black Temple/3 61.32,34.65 -x- Black Temple/4 64.35,39.46",
-				},
-				["Magisters' Terrace"]={
-					"Magisters' Terrace/2 82.88,44.83 -x- Magisters' Terrace/1 83.15,55.44",
-				},
+			"Eastern Plaguelands/0  75.43,52.63 @palla_ch_outside <title:Enter the building> <onlyhardwire:1>",
+			"Eastern Plaguelands/20 39.49,93.19 @palla_ch_inside <region:class_hall_palla_entrance> <title:Go towards center of room> <dark:1> <onlyhardwire:1>",
+			"Eastern Plaguelands/20 41.93,89.12 @palla_ch_secret <region:class_hall_palla_entrance> <title:Click the secret passage> <dark:1> <onlyhardwire:1>",
+			"Eastern Plaguelands/20 42.47,70.31 @palla_ch_stairs <region:class_hall_palla_entrance> <title:Follow the stairs down> <dark:1> <onlyhardwire:1>",
 
-			--Northrend
-				["The Oculus"] = {
-					"The Oculus/1 38.45,50.96 -x- The Oculus/1 47.89,69.3 <template:portalclick> (B:PORTAL)",
-				},
-				["Utgarde Keep"] = {
-					"Utgarde Keep/1 48.5,84.7 -x- Utgarde Keep/2 34.8,64.5",
-					"Utgarde Keep/2 53.5,25.3 -x- Utgarde Keep/3 33.1,40.7",
-				},
-				["Utgarde Pinnacle"] = {
-					"Utgarde Pinnacle/1 31.1,75.0 -x- Utgarde Pinnacle/2 42.3,76.6",
-					"Utgarde Pinnacle/1 45.9,82.6 -x- Utgarde Pinnacle/2 54.2,79.1",
-					"Utgarde Pinnacle/1 54.7,18.0 -x- Utgarde Pinnacle/2 59.6,34.1",
-				},
-				["Halls of Lightning"] = {
-					"Halls of Lightning/1 89.0,53.8 -x- Halls of Lightning/2 57.0,21.3",
-				},
-				["Azjol-Nerub"] = {
-					"Azjol-Nerub/2 41.0,37.3 -x- Azjol-Nerub/3 70.6,31.6",
-					"Azjol-Nerub/2 50.3,60.4 -to- Azjol-Nerub/1 22.0,50.7",
-				},
-				["Drak'Tharon Keep"] = {
-					"Drak'Tharon Keep/1 64.4,71.6 -x- Drak'Tharon Keep/2 50.5,71.5",
-				},
-				["Ulduar"] = {
-					-- floor 6 is part of a boss encounter.
-					"Ulduar/2 37.24,1.35 -x- Ulduar/3 54.09,78.14",
-					"Ulduar/2 36.72,0.61 -x- Ulduar/3 48.21,77.34",
-					"Ulduar/3 30.33,74.84 -x- Ulduar/4 35.36,52.21",
+			"@palla_ch_outside -x- @palla_ch_inside {template:building}",
+			"@+ -x- @palla_ch_secret", 
+			"@+ -x- @palla_ch_stairs", 
+			"@+ -x- Eastern Plaguelands/20 44.17,67.76",
 
-					"@uld10 -x- @uld11 (B:PORTAL)",
-					"@uld10 -x- @uld12 (B:PORTAL)", "@uld11 -x- @uld12 (B:PORTAL)",
-					"@uld10 -x- @uld13 (B:PORTAL)", "@uld11 -x- @uld13 (B:PORTAL)", "@uld12 -x- @uld13 (B:PORTAL)",
-					"@uld10 -x- @uld20 (B:PORTAL)", "@uld11 -x- @uld20 (B:PORTAL)", "@uld12 -x- @uld20 (B:PORTAL)", "@uld13 -x- @uld20 (B:PORTAL)",
-					"@uld10 -x- @uld21 (B:PORTAL)", "@uld11 -x- @uld21 (B:PORTAL)", "@uld12 -x- @uld21 (B:PORTAL)", "@uld13 -x- @uld21 (B:PORTAL)", "@uld20 -x- @uld21 (B:PORTAL)",
-					"@uld10 -x- @uld30 (B:PORTAL)", "@uld11 -x- @uld30 (B:PORTAL)", "@uld12 -x- @uld30 (B:PORTAL)", "@uld13 -x- @uld30 (B:PORTAL)", "@uld20 -x- @uld30 (B:PORTAL)", "@uld21 -x- @uld30 (B:PORTAL)",
-					"@uld10 -x- @uld40 (B:PORTAL)", "@uld11 -x- @uld40 (B:PORTAL)", "@uld12 -x- @uld40 (B:PORTAL)", "@uld13 -x- @uld40 (B:PORTAL)", "@uld20 -x- @uld40 (B:PORTAL)", "@uld21 -x- @uld40 (B:PORTAL)", "@uld30 -x- @uld40 (B:PORTAL)",
-					"@uld10 -x- @uld50 (B:PORTAL)", "@uld11 -x- @uld50 (B:PORTAL)", "@uld12 -x- @uld50 (B:PORTAL)", "@uld13 -x- @uld50 (B:PORTAL)", "@uld20 -x- @uld50 (B:PORTAL)", "@uld21 -x- @uld50 (B:PORTAL)", "@uld30 -x- @uld50 (B:PORTAL)", "@uld40 -x- @uld50 (B:PORTAL)",
-				},
-				["Trial of the Crusader"] = {
-					"Trial of the Crusader/1 51.4,52.4 -to- Trial of the Crusader/2 52.5,73.5",
-				},
-				["Icecrown Citadel"] = {
-					"Icecrown Citadel/1 39.07,85.75 -x- Icecrown Citadel/2 45.60,84.81",
-					"Icecrown Citadel/2 45.62,73.77 -x- Icecrown Citadel/3 51.33,83.92",
-					"Icecrown Citadel/3 51.85,19.20 -x- Icecrown Citadel/5 51.85,83.82",
-					"Icecrown Citadel/4 36.48,89.98 -x- Icecrown Citadel/5 76.71,91.90",
-					"Icecrown Citadel/4 50.50,33.31 -x- Icecrown Citadel/5 85.91,53.55",
-					"Icecrown Citadel/5 60.68,17.31 -x- Icecrown Citadel/6 78.82,31.45",
-					"Icecrown Citadel/5 43.44,16.66 -x- Icecrown Citadel/6 23.19,30.52",
-					"Icecrown Citadel/5 52.35,53.69 -x- Icecrown Citadel/7 49.85,39.13",
-					"Icecrown Citadel/6 50.65,69.26 -to- Icecrown Citadel/5 51.82,32.29",
+		},
 
-					"@icc10 -x- @icc11 (B:PORTAL)",
-					"@icc10 -x- @icc20 (B:PORTAL)", "@icc11 -x- @icc20 (B:PORTAL)",
-					"@icc10 -x- @icc30 (B:PORTAL)", "@icc11 -x- @icc30 (B:PORTAL)", "@icc20 -x- @icc30 (B:PORTAL)",
-					"@icc10 -x- @icc40 (B:PORTAL)", "@icc11 -x- @icc40 (B:PORTAL)", "@icc20 -x- @icc40 (B:PORTAL)", "@icc30 -x- @icc40 (B:PORTAL)",
-					"@icc10 -x- @icc50 (B:PORTAL)", "@icc11 -x- @icc50 (B:PORTAL)", "@icc20 -x- @icc50 (B:PORTAL)", "@icc30 -x- @icc50 (B:PORTAL)", "@icc40 -x- @icc50 (B:PORTAL)",
-				},
 
-			--Maelstrom
-				["Throne of the Tides"] = {
-					"Throne of the Tides/1 48.9,82.1 -x- Throne of the Tides/2 51.0,53.0",
-					"Throne of the Tides/1 50.0,39.7 -x- Throne of the Tides/2 50.0,90.1",
-				},
 
-			--Pandaria
-				["Stormstout Brewery"] = {
-					"Stormstout Brewery/1 28.1,61.1 -x- Stormstout Brewery/2 32.8,59.2",
-					"Stormstout Brewery/2 81.5,58.5 -x- Stormstout Brewery/3 33.8,77.9",
-					"Stormstout Brewery/3 75.5,33.5 -x- Stormstout Brewery/4 57.6,31.1",
-				},
-				["Siege of Niuzao Temple"] = {
-					"Siege of Niuzao Temple/1 50.3,73.9 -x- Siege of Niuzao Temple/3 21.6,53.6",
-					"Siege of Niuzao Temple/2 53.2,81.9 -x- Siege of Niuzao Temple/3 57.1,80.7",
-				},
-				["Mogu'shan Palace"] = {
-					"Mogu'shan Palace/1 49.0,67.0 -x- Mogu'shan Palace/2 55.8,18.9",
-					"Mogu'shan Palace/2 71.5,76.2 -x- Mogu'shan Palace/3 58.8,24.3",
-				},
-				["Temple of the Jade Serpent"] = {
-					"Temple of the Jade Serpent/1 27.4,62.7 -x- Temple of the Jade Serpent/2 39.0,22.0",
-					"Temple of the Jade Serpent/1 27.0,68.7 -x- Temple of the Jade Serpent/2 46.6,42.5",
-				},
-				["Shado-Pan Monastery"] = {
-					"Shado-Pan Monastery/1 56.0,88.0 -x- Shado-Pan Monastery/2 21.0,85.6",
-					"Shado-Pan Monastery/1 36.5,81.8 -x- Shado-Pan Monastery/3 76.9,81.4",
-					"Shado-Pan Monastery/1 22.1,69.1 -x- Shado-Pan Monastery/3 12.3,19.2",
-					"Shado-Pan Monastery/1 30.7,35.0 -x- Shado-Pan Monastery/4 17.0,72.6",
-					"Shado-Pan Monastery/1 44.7,40.1 -x- Shado-Pan Monastery/4 51.3,83.9",
-				},
-				["Gate of the Setting Sun"] = {
-					"Gate of the Setting Sun/1 46.3,33.1 -x- Gate of the Setting Sun/2 50.0,50.8",
-				},
-				["Mogu'shan Vaults"] = {
-					"Mogu'shan Vaults/1 32.2,13.5 -x- Mogu'shan Vaults/2 77.8,81.1",
-					"Mogu'shan Vaults/2 28.7,52.1 -x- Mogu'shan Vaults/3 65.7,10.6",
-				},
-				["Heart of Fear"] = {
-					"Heart of Fear/1 32.1,16.3 -x- Heart of Fear/2 66.3,27.2",
-				},
-				["Sunwell Plateau"] = {
-					"Sunwell Plateau/1 67.2,27.3 -x- Sunwell Plateau/2 52.7,14.1",
-				},
-				["The Bastion of Twilight"] = {
-					"The Bastion of Twilight/1 53.7,85.2 -x- The Bastion of Twilight/2 55.1,5.5",
-					"The Bastion of Twilight/2 69.8,74.8 -to- The Bastion of Twilight/3 54.8,65.5",
-				},
-				["Hour of Twilight"] = {
-					"Hour of Twilight/1 49.3,81.7 -x- Hour of Twilight/2 49.3,83.0",
-				},
-				["Firelands"] = {
-					"Firelands/1 49.7,1.0 -x- Firelands/2 52.3,81.9",
-				},
-				["Throne of Thunder"] = {
-					"Throne of Thunder/1 83.4,79.6 -x- Throne of Thunder/2 14.8,78.9",
-					"Throne of Thunder/2 72.90,20.01 -x- Throne of Thunder/3 20.70,82.15",
-					"Throne of Thunder/3 73.1,53.2 -x- Throne of Thunder/4 21.9,21.1",
-					"Throne of Thunder/4 34.0,59.0 -x- Throne of Thunder/5 80.2,7.8",
-					"Throne of Thunder/5 46.64,22.87 -x- Throne of Thunder/6 20.44,64.75",
-					"Throne of Thunder/6 88.13,74.91 -x- Throne of Thunder/7 45.97,10.54",
-				},
-				["Siege of Orgrimmar"] = {
-					"Siege of Orgrimmar/1 44.7,69.2 -x- Siege of Orgrimmar/3 64.6,12.7",
-					"Siege of Orgrimmar/2 11.7,71.9 -x- Siege of Orgrimmar/1 26.4,9.8",
-					"Siege of Orgrimmar/1 28.5,9.7 -x- Siege of Orgrimmar/2 11.7,71.8",
-					"Siege of Orgrimmar/4 34.8,21.6 -x- Siege of Orgrimmar/5 51.7,76.9",
-					"Siege of Orgrimmar/5 56.3,29.1 -x- Siege of Orgrimmar/6 80.7,16.3",
-					"Siege of Orgrimmar/6 67.9,50.1 -x- Siege of Orgrimmar/7 31.1,20.3",
-					"Siege of Orgrimmar/8 78.6,73.6 -x- Siege of Orgrimmar/9 64.0,17.8",
-					"Siege of Orgrimmar/8 89.4,62.3 -x- Siege of Orgrimmar/10 23.7,82.3",
-					"Siege of Orgrimmar/8 87.7,76.4 -x- Siege of Orgrimmar/11 32.0,14.8",
-					"Siege of Orgrimmar/11 65.2,91.5 -x- Siege of Orgrimmar/12 53.7,13.5",
-				},
+		---------------------------------
+		---  DEMON HUNTER ORDER HALL  ---
+		---------------------------------
+		["Mardum, the Shattered Abyss"] = {
+			"Mardum, the Shattered Abyss/1 68.66,67.24 <radius:10> -x- Mardum, the Shattered Abyss/2 65.39,53.64 <radius:15>"..
+			"{template:custom} {atob:Follow the path down} {btoa:Follow the path up} {cond:PlayerCompletedQuest(42872)}",
+		},		
 
-		--Draenor
+		---------------------------------
+		---  DEATH KNIGHT ORDER HALL  ---
+		---------------------------------
+		["Broken Shore"] = {
+		-- Bottom Floor to Top Floor
+			"Broken Shore/2 35.41,37.52 -to- Broken Shore/1 36.25,38.55 (B:PORTAL) {template:custom}"..
+				"{atob:Walk onto the Teleport Pad to go Upstairs} {cond:PlayerCompletedQuest(39757)}",
 
-			-- Draenor raids go here
+		-- Top Floor to Bottom Floor
+			"Broken Shore/1 33.96,36.30 -to- Broken Shore/2 37.77,39.76 (B:PORTAL) {template:custom}"..
+				"{atob:Walk onto the Teleport Pad to go Downstairs} {cond:PlayerCompletedQuest(39757)}",
+		},
 }
 
 
@@ -885,7 +1280,7 @@ data.basenodes.indoorzones = {
 			},
 			["Winterspring"] = {
 				"Winterspring/0 67.5,54.2 -x- Winterspring/0 67.8,54.0 <indoors:Ice Thistle Hills> {template:cave}",
-				"Winterspring/0 47.1,40.1 -x- Winterspring/0 47.0,40.2 <indoors:Ban'Thallow Barrow Den> {template:cave}",
+				--"Winterspring/0 47.1,40.1 -x- Winterspring/0 47.0,40.2 <indoors:Ban'Thallow Barrow Den> {template:cave}", --Causing issues with travel system.
 				"Winterspring/0 55.0,64.2 -x- Winterspring/0 54.6,64.3 <indoors:Mazthoril> {template:cave}",
 				"Winterspring/0 21.3,46.1 -x- Felwood/0 67.3,7.8 <indoors:Timbermaw Hold> {template:cave}",
 			},
@@ -1085,11 +1480,7 @@ data.basenodes.indoorzones = {
 				"Frostfire Ridge/0 65.5,36.8 -x- Frostfire Ridge/0 66.1,37.2 <indoors:The Melted Barrow> {template:cave}",
 			},
 			["Gorgrond"] = {
-				"Gorgrond/0 47.7,93.2 -x- Gorgrond/0 47.7,94.5 <indoors:Moira's Bastion> {template:mine}",
-				
-				
-				
-				
+				"Gorgrond/0 47.7,93.2 -x- Gorgrond/0 47.7,94.5 <indoors:Moira's Bastion> {template:mine}",			
 				"Gorgrond/0 38.5,67.4 -x- Gorgrond/0 38.4,67.4 <indoors:Kor'gall's Hovel> {template:cave}",
 				"Gorgrond/0 63.8,49.2 -x- Gorgrond/0 63.5,48.4 <indoors:Rangari Hollow> {template:cave}",
 				"Gorgrond/0 49.4,53.4 -x- Gorgrond/0 49.5,53.3 <indoors:Cragplume Cauldron> {template:cave}",
@@ -1165,19 +1556,19 @@ data.basenodes.MapsWithExplicitFloors=MWEF
 	You can also add "green borders" to a region, so that it is directly seen and connected to a neighboring zone, instead of its own zone.
 --]]
 data.basenodes.advanced = {
---		Swamp of Sorrows 69.6,53.9 (Temple of Atal'Hakkar Outside (Entering Doorway Outside mini map))
---		Swamp of Sorrows 69.8,52.9 (Temple of Atal'Hakkar Inside (going downstairs Inside mini map))
---
---		Swamp of Sorrows 70.0,51.1 (5 yds before Broken Hall starts (underwater))
---		Swamp of Sorrows 70.2,50.4 (5 yds into Broken Halls (swimming across pool indoors))
---
---		Swamp of Sorrows 70.9,46.2 (5 yds before exting Broken Halls (out of water on stone floor))
---		Swamp of Sorrows 71.1,45.4 (5 yds entering indoor The Temple of Atal'Hakkar (hallway L))
---
---		Swamp of Sorrows 73.7,44.3 (5 yds before exiting indoor The Temple of Atal'Hakkar (hallway downstairs L))
---		Swamp of Sorrows 74.3,44.5 (5 yds Entering Hall of Masks (exiting stairs hallway))
---
---		Swamp of Sorrows 76.0,45.3 (Portal to Dungeon (in hall of masks))
+	--		Swamp of Sorrows 69.6,53.9 (Temple of Atal'Hakkar Outside (Entering Doorway Outside mini map))
+	--		Swamp of Sorrows 69.8,52.9 (Temple of Atal'Hakkar Inside (going downstairs Inside mini map))
+	--
+	--		Swamp of Sorrows 70.0,51.1 (5 yds before Broken Hall starts (underwater))
+	--		Swamp of Sorrows 70.2,50.4 (5 yds into Broken Halls (swimming across pool indoors))
+	--
+	--		Swamp of Sorrows 70.9,46.2 (5 yds before exting Broken Halls (out of water on stone floor))
+	--		Swamp of Sorrows 71.1,45.4 (5 yds entering indoor The Temple of Atal'Hakkar (hallway L))
+	--
+	--		Swamp of Sorrows 73.7,44.3 (5 yds before exiting indoor The Temple of Atal'Hakkar (hallway downstairs L))
+	--		Swamp of Sorrows 74.3,44.5 (5 yds Entering Hall of Masks (exiting stairs hallway))
+	--
+	--		Swamp of Sorrows 76.0,45.3 (Portal to Dungeon (in hall of masks))
 	
 	
 	{"REGION",name="booty_bay",center="The Cape of Stranglethorn 41,70",radius=127},
@@ -1303,7 +1694,17 @@ data.basenodes.advanced = {
 	----------------
 	---- LEGION ----
 	----------------
-	{"REGION",name="withered_collapse_world_quest",center="Suramar/0 22.73,36.50",radius=50},
+	-- Paladin Order Hall Entrance
+		{"REGION",name="class_hall_palla_entrance",center="Eastern Plaguelands/20 39.49,93.19",radius=10},
+		{"REGION",name="class_hall_palla_entrance",center="Eastern Plaguelands/20 41.93,89.12",radius=10},
+		{"REGION",name="class_hall_palla_entrance",center="Eastern Plaguelands/20 42.47,70.31",radius=5},
+
+	
+	-- Thunder Totem Circle Platform
+		{"REGION",name="thunder_totem_circle_platform",center="Thunder Totem/0 46.34,51.80",radius=100},
+
+	
+		
 }
 
 -- different data layout, live with it
@@ -1343,7 +1744,7 @@ data.basenodes.borders = {
 		"Tanaris,25.9,66.3 -x- Uldum,70.6,22.5",
 		"Tanaris,28.0,51.3 -x- Un'Goro Crater,70.8,91.9",
 
-		"Un'Goro Crater,50.4,7.9 <region:shapers_terrace> -x- Sholazar Basin,40.4,83.0 (B:PORTAL) {template:portalauto} {cond:PlayerCompletedQuest(12613)}",
+		"Un'Goro Crater,50.4,7.9 <region:shapers_terrace> -x- Sholazar Basin,40.4,83.0 (B:PORTAL) {template:portalauto} {cond:IsQuestFlaggedCompleted(12613)}",
 
 		"Ammen Vale,23.1,53.5 -x- Azuremyst Isle,67.1,53.8",
 		"Valley of Trials,73.4,67.11 -x- Durotar,50.6,68.4",
@@ -1467,8 +1868,8 @@ data.basenodes.borders = {
 
 		"Valley of the Four Winds 12.3,33.8 <region:topofthewallVFW> -x- Vale of Eternal Blossoms 11.8,99.9 <region:topofthewallVEB>",
 
-		"Kun-Lai Summit,55.5,93.0 -x- Vale of Eternal Blossoms,44.1,12.8 {cond:PlayerCompletedQuest(31512)}", --Alliance you actually get the ability to do this border during the quest... Lets see how it works.
-		"Kun-Lai Summit,55.5,93.0 -x- Vale of Eternal Blossoms,44.1,12.8 {cond:PlayerCompletedQuest(31511)}", --Horde
+		"Kun-Lai Summit,55.5,93.0 -x- Vale of Eternal Blossoms,44.1,12.8 {cond:IsQuestFlaggedCompleted(31512)}", --Alliance you actually get the ability to do this border during the quest... Lets see how it works.
+		"Kun-Lai Summit,55.5,93.0 -x- Vale of Eternal Blossoms,44.1,12.8 {cond:IsQuestFlaggedCompleted(31511)}", --Horde
 
 		-- And now some stuff to appease the groundwalkers.
 		"The Jade Forest 44.46,89.43 -x- The Jade Forest 44.22,88.43",  -- Garrosh'ar point
@@ -1501,25 +1902,19 @@ data.basenodes.borders = {
 		"Shadowmoon Valley D/0 32.4,23.5 <radius:30> -x- Lunarfall/0 63.3,91.3 {template:custom} {atob:Enter Garrison} {btoa:Leave Garrison}",
 		"Shadowmoon Valley D/0 27.4,13.8 <radius:30> -x- Lunarfall/0 23.3,48.3 {template:custom} {atob:Walk up the path to enter your garrison} {btoa:Walk down the path to leave your garrison} {cond:C_Garrison.GetGarrisonInfo("..(LE_GARRISON_TYPE_6_0 or 2)..")==3}",
 	};
+	
+
+	----------------
+	---  LEGION  ---
+	----------------
 	[8] = {
 		"Stormheim/0 27.03,38.40 -x- Highmountain/0 59.65,68.94",
 		"Stormheim/0 33.66,76.69 -x- Suramar/0 64.23,34.17",
 		"Highmountain/0 26.63,63.74 -x- Val'sharah/0 69.35,27.81",
-		"Suramar/0 21.56,64.10 -x- Azsuna/0 66.49,17.07",
+		"Suramar/0 21.54,64.00 -x- Azsuna/0 66.70,18.43",
 		"Val'sharah/0 68.19,66.37 -x- Suramar/0 15.07,24.92",
 		"Val'sharah/0 58.69,92.08 -x- Azsuna/0 52.60,5.89",
 	};
-	[1220] = {
-
-
-
-
-
-
-
-
-
-	},
 }
 
 data.basenodes.travel = {
@@ -1566,148 +1961,465 @@ data.basenodes.travel = {
 	"Talador 64.5,41.1 -x- Talador 66.7,42.0 {cost:0}",
 
 	
+
+---------------
+--- PORTALS ---
+---------------
+-- LEGION
+    -----------------	
+    ---  DALARAN  ---
+    -----------------
+	-- Chamber of the Guardian Entrance
+		"Dalaran L/10 49.31,47.60 -to- Dalaran L/12 63.38,23.87 (B:PORTAL) {template:custom}"..
+			"{atob:Enter the Chamber of the Guardian} {cond:PlayerCompletedQuest(44663)}",
+
+	-- Chamber of the Guardian Exit
+		"Dalaran L/12 64.92,21.07 -to- Dalaran L/10 49.04,48.04 (B:PORTAL) {template:custom}"..
+			"{atob:Leave the Chamber of the Guardian} {cond:PlayerCompletedQuest(44663)}",
+
+	-- The Violet Hold Entrance
+		"Dalaran L/10 67.76,70.29 -to- Violet Hold/1 50.95,69.90 (B:PORTAL) {template:custom}"..
+			"{atob:Click the Violet Hold Gate and Walk into the Swirling Portal to the Violet Hold}"..
+			"{cond:PlayerCompletedQuest(44663)}",
+
+	-- The Violet Hold Exit
+		"Violet Hold/1 50.98,83.81 -to- Dalaran L/10 65.57,67.39 (B:PORTAL) {template:custom}"..
+			"{atob:Walk into the Swirling Portal to Dalaran} {cond:PlayerCompletedQuest(44663)}",
+
+	-- Portal to Caverns of Time
+		"Dalaran L/12 38.67,79.72 -to- Tanaris/17 54.60,28.30 (B:PORTAL) {template:custom}"..
+			"{atob:Click the Portal to Caverns of Time} {cond:PlayerCompletedQuest(44663)}",
 -- == PORTALS == --
-	-- LEGION
-		"Suramar/0 22.92,36.08 <region:withered_collapse_world_quest> -to- Suramar/0 36.88,46.61 (B:PORTAL) {template:custom} {atob:Click the Telemancy Beacon}",
-	
 	-- DRAENOR
-		"Stormshield/0 36.4,41.1 -to- Tanaan Jungle/0 57.5,60.3 (A:PORTAL) {cond:PlayerCompletedQuest(38445)}",
-		"Tanaan Jungle/0 57.4,60.5 -to- Stormshield/0 31.7,52.5 (A:PORTAL) {cond:PlayerCompletedQuest(38445)}",
+		"Stormshield/0 36.4,41.1 -to- Tanaan Jungle/0 57.5,60.3 (A:PORTAL) {cond:IsQuestFlaggedCompleted(38445)}",
+		"Tanaan Jungle/0 57.4,60.5 -to- Stormshield/0 31.7,52.5 (A:PORTAL) {cond:IsQuestFlaggedCompleted(38445)}",
 		
-		"Tanaan Jungle/0 61.0,47.3 -to- Warspear/0 44.4,35.5 (H:PORTAL) {cond:PlayerCompletedQuest(37935)}",
-		"Warspear/0 53.2,43.9 -to- Tanaan Jungle/0 60.9,47.3 (H:PORTAL) {cond:PlayerCompletedQuest(37935)}",
-		
-		
-		"Warspear/0 60.7,51.6 -to- Orgrimmar/2 48.3,64.5 <region:cleftofshadow> (H:PORTAL)",
-		"Warspear/0 50.0,24.4 -to- Thunder Bluff/0 22.2,16.9 (H:PORTAL)",
-		"Warspear/0 63.2,24.1 -to- Undercity/0 84.6,16.3 (H:PORTAL)",
+	-- Portal to Shattrath
+		"Dalaran L/12 35.57,85.44 -to- Shattrath City/0 54.97,40.23 (B:PORTAL) {template:custom}"..
+			"{atob:Click the Portal to Shattrath} {cond:PlayerCompletedQuest(44663)}",
 
-		"Stormshield/0 60.8,37.8 -to- @sw_tp_dst (A:PORTAL)",
-		"Stormshield/0 51.5,50.8 -to- Ironforge/0 25.5,8.4 (A:PORTAL)",
+	-- Portal to Wyrmrest Temple
+		"Dalaran L/12 30.71,84.32 -to- Dragonblight/0 59.72,52.87 (B:PORTAL) {template:custom}"..
+			"{atob:Click the Portal to Wyrmrest Temple} {cond:PlayerCompletedQuest(44663)}",
 
-		--"Stormwind City 75.2,18.8 -to- Shadowmoon Valley D 27.0,8.0 (A:PORTAL) {cond:PlayerCompletedQuest(34575)}",
+	-- Portal to Dalaran Crater
+		"Dalaran L/12 28.73,77.36 -to- Hillsbrad Foothills/0 30.91,36.34 (B:PORTAL) {template:custom}"..
+			"{atob:Click the Portal to Dalaran Crater} {cond:PlayerCompletedQuest(44663)}",
+
+	-- Portal to Karazhan
+		"Dalaran L/12 31.98,71.53 -to- Deadwind Pass/0 47.24,75.40 (B:PORTAL) {template:custom}"..
+			"{atob:Click the Portal to Karazhan} {cond:PlayerCompletedQuest(44663)}",
+
+
+
+	---------------------------------
+	---  DALARAN (ALLIANCE ONLY)  ---
+	---------------------------------
+	-- Portal to Stormwind (Alliance)
+		"Dalaran L/10 39.55,63.22 -to- Stormwind City/0 49.59,86.53 (A:PORTAL) {template:custom}"..
+			"{atob:Click the Portal to Stormwind inside Greyfang Enclave} {cond:PlayerCompletedQuest(44663)}",
+
+	-- Portal to Ironforge (Alliance)
+		"Dalaran L/10 38.91,64.42 -to- Ironforge/0 25.51,8.43 (A:PORTAL) {template:custom}"..
+			"{atob:Click the Portal to Ironforge inside Greyfang Enclave} {cond:PlayerCompletedQuest(44663)}",
+
+	-- Portal to Darnassus (Alliance)
+		"Dalaran L/10 38.29,65.57 -to- Darnassus/0 43.47,78.68 (A:PORTAL) {template:custom}"..
+			"{atob:Click the Portal to Darnassus inside Greyfang Enclave} {cond:PlayerCompletedQuest(44663)}",
+
+	-- Portal to Exodar (Alliance)
+		"Dalaran L/10 37.63,66.79 -to- The Exodar/0 47.62,59.82 (A:PORTAL) {template:custom}"..
+			"{atob:Click the Portal to Exodar inside Greyfang Enclave} {cond:PlayerCompletedQuest(44663)}",
+
+	-- Portal to Vale of Eternal Blossoms (Alliance)
+		"Dalaran L/10 36.53,67.04 -to- Vale of Eternal Blossoms/0 86.30,61.06 (A:PORTAL) {template:custom}"..
+			"{atob:Click the Portal to Vale of Eternal Blossoms inside Greyfang Enclave} {cond:PlayerCompletedQuest(44663)}",		
+		
+		
+		
+	---------------------------------
+	---  DALARAN (HORDE ONLY)  ---
+	---------------------------------
+	-- Portal to Vale of Eternal Blossoms (Horde)
+		"Dalaran L/10 54.98,25.59 -to- Vale of Eternal Blossoms/0 62.50,21.82 (H:PORTAL) {template:custom}"..
+			"{atob:Click the Portal to Vale of Eternal Blossoms inside Windrunner's Sanctuary}"..
+			"{cond:PlayerCompletedQuest(44663)}",
+
+	-- Portal to Orgrimmar (Horde)
+		"Dalaran L/10 55.25,23.93 -to- Orgrimmar/2 48.28,64.53 (H:PORTAL) {template:custom}"..
+			"{atob:Click the Portal to Orgrimmar inside Windrunner's Sanctuary} {cond:PlayerCompletedQuest(44663)}",
+
+	-- Portal to Undercity (Horde)
+		"Dalaran L/10 55.92,22.71 -to- Undercity/0 84.59,16.33 (H:PORTAL) {template:custom}"..
+			"{atob:Click the Portal to Undercity inside Windrunner's Sanctuary} {cond:PlayerCompletedQuest(44663)}",
+		--"Stormwind City 75.2,18.8 -to- Shadowmoon Valley D 27.0,8.0 (A:PORTAL) {cond:IsQuestFlaggedCompleted(34575)}",
 		--"Orgrimmar 51.1,36.8 -to- Frostfire Ridge 40.6,67.2 (H:PORTAL) {cond:UnitLevel('player')>=90}",
 
-		"Talador 80.6,26.1 -x-  Talador 83.6,31.0 (B:PORTAL) {template:custom} {atob:Use Khadgar's portal} {btoa:Use Khadgar's portal} {cond:UnitLevel('player')>=98}", -- legendary ring questline portal
+	-- Portal to Thunder Bluff (Horde)
+		"Dalaran L/10 56.90,21.95 -to- Thunder Bluff/0 22.21,16.87 (H:PORTAL) {template:custom}"..
+			"{atob:Click the Portal to Thunder Bluff inside Windrunner's Sanctuary} {cond:PlayerCompletedQuest(44663)}",
 
-		"Tanaan Jungle/0 57.7,58.7 <title:Gnomish Flying Machine> <noskip:1> -to- Tanaan Jungle/0 55.5,27.3 (A:_) {cond:PlayerCompletedQuest(38603)} {template:custom} {atob:Take the Gnomish Flying Machine\nto Throne of Kil'Jaeden} {cost:30}",
-		"Tanaan Jungle/0 60.0,47.4 <title:B-2 Personnel Relocator> <noskip:1> -to- Tanaan Jungle/0 55.6,27.2 (H:_) {cond:PlayerCompletedQuest(38599)} {template:custom} {atob:Take the B-2 Personnel Relocator\nto Throne of Kil'Jaeden} {cost:23}",
-
-	-- PANDARIA
-		"Stormwind City,68.8,17.1 -x- The Jade Forest,46.23,85.17 <title:Paw'don Village> (A:PORTAL) {cond:PlayerCompletedQuest(29548)}",
-		"Eastern Kingdoms/0 41.47,70.19 <title:Skyfire Airship> -to- The Jade Forest,46.23,85.17   (A:PORTAL)	{cond:UnitLevel('player')>=85 and not PlayerCompletedQuest(29548)}", -- airship for the initial quest
-		"Eastern Kingdoms/0 41.47,70.19 <title:The Skyfire Airship> <override_text:You're too low level to enter Pandaria.> <override_icon:error> -to- The Jade Forest,46.23,85.17   (A:PORTAL) {cond:UnitLevel('player')<85}", -- airship for the initial quest
-		"Orgrimmar 68.7,40.7 -x-  The Jade Forest,28.5,14.0  <title:Honeydew Village> (H:PORTAL) {cond:PlayerCompletedQuest(31769)}",
-		"Durotar 66,1 <title:Hellscream's Fist Airship> -to- The Jade Forest,28.5,14.0   (H:PORTAL) {cond:UnitLevel('player')>=85 and not PlayerCompletedQuest(31769)}", -- airship		for the initial quest
-		"Durotar 66,1 <title:Hellscream's Fist Airship> <override_text:You're too low level to enter Pandaria.> <override_icon:error> -to- The Jade Forest,28.5,14.0   (H:PORTAL)		{cond:UnitLevel('player')<85}", -- airship for the initial quest
-
-		"Vale of Eternal Blossoms/4,61.6,39.6 -to- Dalaran,55.86,46.81 (A:PORTAL)",
-		"Vale of Eternal Blossoms/4,68.5,52.8 -to- Shattrath City,54.97,40.23 (A:PORTAL)",
-		"Vale of Eternal Blossoms/4,70.8,30.6 -to- The Exodar,47.62,59.82 (A:PORTAL)",
-		"Vale of Eternal Blossoms/4,77.2,43.5 -to- Darnassus,43.47,78.67 (A:PORTAL)",
-		"Vale of Eternal Blossoms/4,74.0,40.8 -to- Ironforge,25.51,08.43 (A:PORTAL)",
-		"Vale of Eternal Blossoms/4,71.6,35.8 -to- @sw_tp_dst (A:PORTAL)",
-
-		"Shrine of Two Moons/2,73.5,42.8 -to- Orgrimmar/2 48.3,64.5 <region:cleftofshadow> (H:PORTAL)",
-		"Shrine of Two Moons/2,75.6,52.6 -to- Silvermoon City,58.3,19.2 (H:PORTAL)",
-		"Shrine of Two Moons/2,73.5,36.5 -to- Thunder Bluff,22.2,16.9 (H:PORTAL)",
-		"Shrine of Two Moons/2,74.0,48.1 -to- Undercity,84.6,16.3 (H:PORTAL)",
-		"Shrine of Two Moons/2,63.5,57.3 -to- Shattrath City,53.0,49.2 (H:PORTAL)",
-		"Shrine of Two Moons/2,61.5,36.5 -to- Dalaran,55.86,46.81 (H:PORTAL)",
-
-		"Townlong Steppes 49.7,68.7 -x- Isle of Thunder/0 35.3,90.6 <title:Portal to Shado-Pan Garrison> (A:PORTAL) {cond:PlayerCompletedQuest(32681) and not PlayerCompletedQuest(32644)} {template:portal}",
-		--{{"Townlong Steppes 49.7,68.7",faction="A",type="portal"},{"Isle of Thunder/0 64.7,73.5",faction="A",type="portal",actiontitle=function(self,fromnode,tonode) if tonode==self.border then return "Click Portal to Shado-Pan Garrison" end end,cond=function() PlayerCompletedQuest(32644) end}},
-		"Townlong Steppes 49.7,68.7 -x- Isle of Thunder/0 64.7,73.5 <title:Portal to Shado-Pan Garrison> (A:PORTAL) {cond:PlayerCompletedQuest(32644)} {template:portal}",
-		"Isle of Thunder/0 34.84,89.48 -to- Isle of Thunder/0 31.7,83.6 (A:PORTAL) {cond:not PlayerCompletedQuest(32644)} {template:portal}",
-		"Isle of Thunder/0 31.7,83.6 -to- Isle of Thunder/0 34.8,89.5 (A:PORTAL) {cond:not PlayerCompletedQuest(32644) and (ZGV:GetThunderStage()==1 or ZGV:GetThunderStage()==6)} {template:portal}",
-		"Isle of Thunder/0 52.02,45.04 -x- Isle of Thunder/0 62.86,32.36 (B:PORTAL)",
-
-		"Townlong Steppes 50.66,73.41 <title:Shado-Pan Garrison> -x- Isle of Thunder/0 28.4,53.0 (H:PORTAL) {cond:PlayerCompletedQuest(32680) and not PlayerCompletedQuest(32212)} {template:portal}",
-		"Townlong Steppes 50.66,73.41 <title:Shado-Pan Garrison> -x- Isle of Thunder/0 33.2,32.7 (H:PORTAL) {cond:PlayerCompletedQuest(32212)} {template:portal}",
-
-		"Isle of Thunder/0 28.6,52.8 -to- Isle of Thunder/0 33.1,52.8 (H:PORTAL) {cond:not PlayerCompletedQuest(32212)} {template:portal}",
-		"Isle of Thunder/0 28.5,51.7 -to- Isle of Thunder/0 33.1,52.8 (H:PORTAL) {cond:not PlayerCompletedQuest(32212)} {template:portal}",
-		"Isle of Thunder/0 33.1,52.8 -to- Isle of Thunder/0 28.5,51.5 (H:PORTAL) {cond:not PlayerCompletedQuest(32212) and (ZGV:GetThunderStage()==1 or ZGV:GetThunderStage()==6)} {template:portal}",
-
-		--There are portals here... No idea when/how they appear...
-		-- They're purchased from Proveditor Grantley ##2345 at Krasarang Wilds /0 89.52,33.47 using 5 Domination Point Commission ##91877 each.
-		-- They can lead to SW, the Skyfire airship, or to Shrine of Seven Stars.
-		--"Krasarang Wilds 89.0,33.9 -to- Stormwind City 74.2,92.2 (A:PORTAL) {cond:PlayerCompletedQuest(32109)}",
-		--"Krasarang Wilds 89.2,33.9 -x- Krasarang Wilds 18.1,79.6 (A:PORTAL) {cond:PlayerCompletedQuest(32109)}", --To the ship
-
-		--"Krasarang Wilds 9.9,54.9 -to- Durotar 45.6,13.2 (H:PORTAL) {cond:PlayerCompletedQuest(32108)}", --To orgrim
-		--"Krasarang Wilds 10.2,54.8 -x- Krasarang Wilds 76.1,34.5 (H:PORTAL) {cond:PlayerCompletedQuest(32108)}",
-		--"Krasarang Wilds 76.2,34.0 -x- Krasarang Wilds/3 37.4,46.4 (H:PORTAL) {cond:PlayerCompletedQuest(32108)}",
-
-		"Townlong Steppes, 29.0,22.1 <title:Portal to Shado-Pan Garrison> -x- Townlong Steppes, 48.5,69.9 (B:PORTAL) {cond:PlayerCompletedQuest(31110)}",
-		"Dread Wastes,75.09,21.25 -x- Vale of Eternal Blossoms,14.21,76.79 <region:topofthewallVEB> (B:PORTAL) {template:pandarope}", -- (click the Climbing Rope to either climb up or jump down the cliff)
-		"Krasarang Wilds,48.6,27.1 -x- Valley of the Four Winds,51.2,77.5 (B:PORTAL) {template:pandarope}", -- (click the Climbing Rope to either climb up or jump down the cliff). Might need quest
-
-	-- ORGRIMMAR PORTALS:
-		"Orgrimmar 49.2,36.5 -to- Kelp'thar Forest 44,28 (H:PORTAL) {cond:PlayerCompletedQuest(26784) and not PlayerCompletedQuest(25222)}",
-		"Orgrimmar 49.2,36.5 -to- Shimmering Expanse 49.5,40.5 (H:PORTAL) {cond:PlayerCompletedQuest(25222) and not PlayerCompletedQuest(99999)}",
-		"Orgrimmar 49.2,36.5 -to- Abyssal Depths 51.4,61.0 (H:PORTAL) {cond:PlayerCompletedQuest(26784)}",
-		"Orgrimmar 48.9,38.5 -to- Uldum 54.9,34.3 (H:PORTAL) {cond:PlayerCompletedQuest(28112)}",
-		"Orgrimmar 50.8,36.4 -to- Deepholm 50.6,52.9 (H:PORTAL) {cond:PlayerCompletedQuest(27123)}",
-		"Orgrimmar 50.8,36.4 -to- Deepholm 50.6,52.9 (H:PORTAL) {cond:not PlayerCompletedQuest(27123)} {template:custom} {atob:You can't get to Deepholm yet.\nPlease complete quests to unlock this portal.}",
-		"Deepholm 50.9,53.1 -to- Orgrimmar 50.0,37.7 (H:PORTAL) {cond:PlayerCompletedQuest(27123)}",
-		"Orgrimmar 51.1,38.3 -to- Mount Hyjal 63.5,23.4 (H:PORTAL) {cond:PlayerCompletedQuest(25316)}",
-		"Mount Hyjal 63.5,24.4 -to- Orgrimmar 50.0,37.7 (H:PORTAL) {cond:PlayerCompletedQuest(25316)}",
-		"Orgrimmar 47.4,39.3 -to- Tol Barad Peninsula 55.8,80.1 (H:PORTAL) {cond:UnitLevel('player')>=85}",
-		"Tol Barad Peninsula 56.3,79.7 -to- Orgrimmar 47.6,39.1 (H:PORTAL) {cond:UnitLevel('player')>=85}",
-		"Orgrimmar 50.2,39.4 -x- Twilight Highlands 73.57,53.53 <template:cityportal> (H:PORTAL) {cond:PlayerCompletedQuest(26784)}",
-		"Orgrimmar/1 70.6,30.9 -x- Brawl'gar Arena/1 55.8,17.0 (H:PORTAL) {template:pinkportal}",
+	-- Portal to Silvermoon (Horde)
+		"Dalaran L/10 57.94,21.73 -to- Silvermoon City/0 58.26,19.24 (H:PORTAL) {template:custom}"..
+			"{atob:Click the Portal to Silvermoon inside Windrunner's Sanctuary} {cond:PlayerCompletedQuest(44663)}",
 
 
-	-- STORMWIND PORTALS
-		"Stormwind City,73.2,16.9 -to- Kelp'thar Forest 44,28 (A:PORTAL) {cond:PlayerCompletedQuest(14482) and not PlayerCompletedQuest(25222)}",
-		"Stormwind City,73.2,16.9 -to- Shimmering Expanse 47.2,57.5 (A:PORTAL) {cond:PlayerCompletedQuest(25222) and not PlayerCompletedQuest(99999)}",
-		"Stormwind City,73.2,16.9 -to- Abyssal Depths 55.7,72.8 (A:PORTAL) {cond:PlayerCompletedQuest(14482)}",
-		"Stormwind City,75.3,20.5 -to- Uldum,54.9,34.3 (A:PORTAL) {cond:PlayerCompletedQuest(28112)}",
-		"Stormwind City,73.2,19.6 -to- Deepholm,48.7,53.6 @deepholm_tp_dst (A:PORTAL) {cond:PlayerCompletedQuest(27123)}",	"Deepholm,48.5,53.8 -to- Stormwind City,74.5,18.3 (A:PORTAL) {cond:PlayerCompletedQuest(27123)}",
-		"Stormwind City,76.2,18.7 -x- Mount Hyjal,62.6,23.1 (A:PORTAL) {cond:PlayerCompletedQuest(25316)}",
-		"Stormwind City,73.2,18.4 -to- Tol Barad Peninsula,73.7,60.9 (A:PORTAL) {cond:UnitLevel('player')>=85}",  "Tol Barad Peninsula,75.2,58.9 -to- Stormwind City,73.4,18.3 (A:PORTAL) {cond:UnitLevel('player')>=85}",
-		"Stormwind City,75.2,16.8 -x- Twilight Highlands,79.5,77.8 <template:cityportal> (A:PORTAL) {cond:PlayerCompletedQuest(27537)}",
 
-	-- GARRISON PORTALS
-		"Frostwall 75.1,48.7 -to- Warspear 44.4,35.5 (H:PORTAL) {template:custom} {atob:Click the portal to Ashran} {cond:C_Garrison.GetGarrisonInfo("..(LE_GARRISON_TYPE_6_0 or 2)..")==3}", -- Horde Garrison 3 to Ashran
-		"Lunarfall 70.2,27.5 -to- Stormshield 31.7,52.5 (A:PORTAL) {template:custom} {atob:Click the portal to Ashran}  {cond:C_Garrison.GetGarrisonInfo("..(LE_GARRISON_TYPE_6_0 or 2)..")==3}", -- Ally Garrison 3 to Ashran
+    ---------------------------------
+    ---  DEATH KNIGHT ORDER HALL  ---
+    ---------------------------------
+	-- Teleport pads moved to MapsWithExplicitFloors
+	-- Portal to Dalaran
+		"Broken Shore/2 24.78,33.70 -to- Dalaran L/10 60.92,44.72 (B:PORTAL) {template:custom}"..
+			"{atob:Click the Portal to Dalaran} {cond:PlayerCompletedQuest(39757)}",
+
+
+
+    -------------------------
+    ---  MAGE ORDER HALL  ---
+    -------------------------
+	-- Portal to Dalaran
+		"Hall of the Guardian/1 57.32,90.51 -to- Dalaran L/10 67.52,46.47 (B:PORTAL) {template:custom}"..
+			"{atob:Click the Portal to Dalaran} {cond:PlayerCompletedQuest(41036)}",
+
+
+
+    ----------------------------
+    ---  WARRIOR ORDER HALL  ---
+    ----------------------------
+	-- Dalaran: Jump to Skyhold
+		"Dalaran L/10 75.23,47.22 -to- Skyhold/1 58.92,36.29 (B:PORTAL) {template:custom}"..
+			"{atob:Use the Jump to Skyhold ability} {cond:PlayerCompletedQuest(42815)}",
+
+	-- Stormheim: Jump to Skyhold
+		"Stormheim/0 60.18,52.23 -to- Skyhold/1 58.92,36.29 (B:PORTAL) {template:custom}"..
+			"{atob:Use the Jump to Skyhold ability} {cond:PlayerCompletedQuest(39803)}",
+
+	-- Azsuna: Jump to Skyhold
+		"Azsuna/0 47.58,28.08 -to- Skyhold/1 58.92,36.29 (B:PORTAL) {template:custom}"..
+			"{atob:Use the Jump to Skyhold ability} {cond:PlayerCompletedQuest(38443)}",
+
+	-- Val'sharah: Jump to Skyhold
+		"Val'sharah/0 54.71,74.89 -to- Skyhold/1 58.92,36.29 (B:PORTAL) {template:custom}"..
+			"{atob:Use the Jump to Skyhold ability} {cond:PlayerCompletedQuest(38384)}",
+		
+	-- Highmountain: Jump to Skyhold
+		"Thunder Totem/0 39.73,42.11 -to- Skyhold/1 58.92,36.29 (B:PORTAL) {template:custom}"..
+			"{atob:Use the Jump to Skyhold ability} {cond:PlayerCompletedQuest(38907)}",
+
+	-- Suramar: Jump to Skyhold
+		"Suramar/0 33.08,48.20 -to- Skyhold/1 58.92,36.29 (B:PORTAL) {template:custom}"..
+			"{atob:Use the Jump to Skyhold ability} {cond:PlayerCompletedQuest(42229)}",	
 	
-	"The Exodar,47.6,62.2 -x- Darnassus,44.3,78.7 (A:PORTAL)",
-	"Darnassus,37.3,50.5 -x- Teldrassil,55.1,88.4 <port:Rut'theran Village> (B:PORTAL) {template:pinkportal}",  -- Teldrassil,55.1,88.4  NO  Teldrassil,38.1,47.5
-	"Silvermoon City 49.4,14.8 -x- Undercity  54.9,11.2 (H:PORTAL)",
+	-- Skyhold: Jump to Dalaran
+		"Skyhold/1 58.34,24.98 -to- Dalaran L/10 72.42,46.00 (B:PORTAL) {template:custom}"..
+			"{atob:Talk to Aerylia and Choose Dalaran} {cond:PlayerCompletedQuest(42815)}",
 
-	-- portals -to- Blasted Lands
-		"Hellfire Peninsula,89.2,49.6 @hfp_port_dst",
-		"Hellfire Peninsula,89.2,49.6 @hfp_port_dst_h",
-		"Hellfire Peninsula,89.2,50.9 @hfp_port_dst_a",
+	-- Skyhold: Jump to Stormheim
+		"Skyhold/1 58.34,24.98 -to- Stormheim/0 60.42,51.05 (B:PORTAL) {template:custom}"..
+			"{atob:Talk to Aerylia and Choose Stormheim} {cond:PlayerCompletedQuest(39803)}",
 
-		"Orgrimmar/2 44.7,68.0 <region:cleftofshadow> -x- Blasted Lands  72.7,49.4 (H:PORTAL) {cond:UnitLevel('player')>=90}", -- it seems the portal was changed to only show for 90+ chars, not 58
-		"Stormwind City 48.96,87.32 <region:sw_wizardsanctum> -to- Blasted Lands 53.9,46.1 (A:PORTAL) {cond:UnitLevel('player')>=90}",
+	-- Skyhold: Jump to Azsuna
+		"Skyhold/1 58.34,24.98 -to- Azsuna/0 47.55,27.87 (B:PORTAL) {template:custom}"..
+			"{atob:Talk to Aerylia and Choose Azsuna} {cond:PlayerCompletedQuest(38443)}",
 
-	-- 6.0.2 portals to and from Outland
-		-- "Blasted Lands,55.0,54.2 -x- Hellfire Peninsula,89.4,50.2 (B:PORTAL) {cond:UnitLevel('player')>=58} {template:darkportal}", -- Dark Portal to Outlands removed in 6.0.2
-		-- Horde
-		"Orgrimmar/2 30.49,58.18 <region:cleftofshadow> -to- @hfp_port_dst_h (H:PORTAL) {cond:UnitLevel('player')>=58}",
-		"Silvermoon City 58.4,20.9 -to- @hfp_port_dst_h (H:PORTAL) {cond:UnitLevel('player')>=58}",
-		-- "Undercity 85.2,17.1 -to- @hfp_port_dst_h (H:PORTAL) {cond:UnitLevel('player')>=58}", -- Portal removed in WoD
-		"Thunder Bluff 23.2,13.5 -to- @hfp_port_dst_h (H:PORTAL) {cond:UnitLevel('player')>=58}",
-		"Hellfire Peninsula 89.2,49.5 -to- Orgrimmar 48.3,64.5 (H:PORTAL) {cond:UnitLevel('player')>=58}",
-		"Blasted Lands,55.0,54.2 -to- Warspear,44,35 (H:PORTAL) {cond:UnitLevel('player')>=90} {template:darkportal}", -- Dark Portal now leads to Ashran
+	-- Skyhold: Jump to Val'sharah
+		"Skyhold/1 58.34,24.98 -to- Val'sharah/0 55.01,72.49 (B:PORTAL) {template:custom}"..
+			"{atob:Talk to Aerylia and Choose Val'sharah} {cond:PlayerCompletedQuest(38384)}",
 
-		-- Ally
-		"Stormwind City 49.94,87.03 <region:sw_wizardsanctum> -to- @hfp_port_dst_a (A:PORTAL) {cond:UnitLevel('player')>=58} {template:custom} {atob:Click Portal to Hellfire Peninsula\nupstairs in Mage Tower}",
- 		"Ironforge,27.2,7.0 -to- @hfp_port_dst_a (A:PORTAL) {cond:UnitLevel('player')>=58}",
-		"The Exodar,48.2,63.0 -to- @hfp_port_dst_a (A:PORTAL) {cond:UnitLevel('player')>=58}",
-		"Darnassus,44.1,78.2 -to- @hfp_port_dst_a (A:PORTAL) {cond:UnitLevel('player')>=58}",
-		"Hellfire Peninsula 89.2,51.0 -to- Stormwind City 49.6,86.5 (A:PORTAL) {cond:UnitLevel('player')>=58}",
-		"Blasted Lands,55.0,54.2 -to- Stormshield,31,52 (A:PORTAL) {cond:UnitLevel('player')>=90} {template:darkportal}", -- Dark Portal now leads to Ashran
+	-- Skyhold: Jump to Highmountain
+		"Skyhold/1 58.34,24.98 -to- Thunder Totem/0 41.57,44.02 (B:PORTAL) {template:custom}"..
+			"{atob:Talk to Aerylia and Choose Highmountain} {cond:PlayerCompletedQuest(38907)}",
+
+	-- Skyhold: Jump to Suramar
+		"Skyhold/1 58.34,24.98 -to- Suramar/0 33.82,49.38 (B:PORTAL) {template:custom}"..
+			"{atob:Talk to Aerylia and Choose Suramar} {cond:PlayerCompletedQuest(42229)}",
 
 
 
+    ---------------------------
+    ---  SHAMAN ORDER HALL  ---
+    ---------------------------
+	-- Dalaran Portal to the Maelstrom
+		"Dalaran L/10 67.03,48.18 -to- The Maelstrom L/0 30.75,53.07 (B:PORTAL) {template:custom}"..
+			"{atob:Click the Portal to the Maelstrom} {cond:PlayerCompletedQuest(39746)}",
 
-	-- DALARAN PORTALS:
-		"Dalaran 40.1,62.8 -to- @sw_tp_dst (A:PORTAL)", --COORDS BAD
+	-- Portal to Dalaran
+		"The Maelstrom L/0 29.78,51.98 -to- Dalaran L/10 67.52,46.47 (B:PORTAL) {template:custom}"..
+			"{atob:Click the Portal to Dalaran} {cond:PlayerCompletedQuest(39746)}",
+
+	-- Portal to Vortex Pinnacle
+		"The Maelstrom L/0 26.71,41.32 -to- The Vortex Pinnacle L/1 54.14,16.85 (B:PORTAL) {template:custom}"..
+			"{atob:Click the Vortex Pinnacle Portal} {cond:PlayerCompletedQuest(43002)}",
+
+	-- Vortex Pinnacle Portal to the Maelstrom
+		"The Vortex Pinnacle L/1 53.59,16.00 -to- The Maelstrom L/0 26.79,41.48 (B:PORTAL) {template:custom}"..
+			"{atob:Walk into the Swirling Portal to the Maelstrom} {cond:PlayerCompletedQuest(43002)}",
+
+	-- Portal to the Firelands
+		"The Maelstrom L/0 31.08,61.02 -to- Firelands L/0 25.79,89.25 (B:PORTAL) {template:custom}"..
+			"{atob:Click the Firelands Portal} {cond:PlayerCompletedQuest(42208)}",
+
+	-- Firelands Portal to the Maelstrom
+		"Firelands L/0 25.02,92.64 -to- The Maelstrom L/0 30.54,59.78 (B:PORTAL) {template:custom}"..
+			"{atob:Walk into the Swirling Portal to the Maelstrom} {cond:PlayerCompletedQuest(42208)}",
+
+
+
+    ---------------------------
+    ---  HUNTER ORDER HALL  ---
+    ---------------------------
+	-- Dalaran Flight to Trueshot Lodge
+		"Dalaran L/10 72.85,41.21 -to- Trueshot Lodge/0 33.25,49.43 (B:PORTAL) {template:custom}"..
+			"{atob:Talk to Talua and Fly to Trueshot Lodge} {cond:PlayerCompletedQuest(40953)}",
+
+	-- Trueshot Lodge Portal to Dalaran
+		"Trueshot Lodge/0 48.63,43.50 -to- Dalaran L/10 67.52,46.47 (B:PORTAL) {template:custom}"..
+			"{atob:Click the Portal to Dalaran Upstairs Inside the Building} {cond:PlayerCompletedQuest(40953)}",
+
+
+
+    ----------------------------
+    ---  WARLOCK ORDER HALL  ---
+    ----------------------------
+	-- Portal from Dalaran to Dreadscar Rift
+		"Dalaran L/11 27.85,44.50 -to- Dreadscar Rift/0 72.52,37.47 (B:PORTAL)"..
+			"{template:custom} {atob:Click the Portal to Dreadscar Rift} {cond:PlayerCompletedQuest(40729)}",
+
+	-- Portal from Dreadscar Rift to Dalaran
+		"Dreadscar Rift/0 74.16,38.35 -to- Dalaran L/11 29.20,43.97 (B:PORTAL)"..
+			"{template:custom} {atob:Walk into the Portal to Dalaran} {cond:PlayerCompletedQuest(40729)}",
+
+
+
+    ----------------------------
+    ---  PALADIN ORDER HALL  ---
+    ----------------------------
+	-- Portal from Dalaran to Sanctum of Light (ALLIANCE)
+		"Dalaran L/10 32.59,69.96 -to- Eastern Plaguelands/20 39.42,61.46 (A:PORTAL)"..
+			"{template:custom} {atob:Click the Portal to Sanctum of Light inside Greyfang Enclave}"..
+			"{cond:PlayerCompletedQuest(38566)}",
+
+	-- Portal from Sanctum of Light to Dalaran (ALLIANCE)
+		"Eastern Plaguelands/20 37.57,64.10 -to- Dalaran L/10 33.69,68.01 (A:PORTAL)"..
+			"{template:custom} {atob:Click the Portal to Dalaran} {cond:PlayerCompletedQuest(38566)}",
+
+	-- Portal from Dalaran to Sanctum of Light (HORDE)
+		"Dalaran L/10 61.92,13.49 -to- Eastern Plaguelands/20 39.42,61.46 (H:PORTAL)"..
+			"{template:custom} {atob:Click the Portal to Sanctum of Light inside Windrunner's Sanctuary}"..
+			"{cond:PlayerCompletedQuest(38566)}",
+
+	-- Portal from Sanctum of Light to Dalaran (HORDE)
+		"Eastern Plaguelands/20 37.57,64.10 -to- Dalaran L/10 61.27,14.82 (H:PORTAL)"..
+			"{template:custom} {atob:Click the Portal to Dalaran} {cond:PlayerCompletedQuest(38566)}",
+
+
+
+    ---------------------------------
+    ---  DEMON HUNTER ORDER HALL  ---
+    ---------------------------------
+	-- Portal from Dalaran to the Fel Hammer
+		"Dalaran L/10 98.02,69.27 -to- Mardum, the Shattered Abyss/1 59.18,85.75 (B:PORTAL)"..
+			"{template:custom} {atob:Glide to the Floating Island and Click the Illidari Gateway}"..
+			"{cond:PlayerCompletedQuest(42872)}",
+
+	-- Portal from the Fel Hammer to Dalaran
+		"Mardum, the Shattered Abyss/1 59.23,91.93 -to- Dalaran L/10 77.11,49.61 (B:PORTAL)"..
+			"{template:custom} {atob:Click the Illidari Gateway} {cond:PlayerCompletedQuest(42872)}",
+
+
+
+    --------------------------
+    ---  ROGUE ORDER HALL  ---
+    --------------------------
+	-- Kocker to Dalaran #1
+		"Dalaran L/4 39.67,21.52 -to- Dalaran L/10 54.20,32.68 (B:PORTAL)"..
+			"{template:custom} {atob:Click the Kocker} {cond:PlayerHaveQuest(40832) or PlayerCompletedQuest(40832)}",
+
+	-- Kocker to Dalaran #2
+		"Dalaran L/4 29.48,22.02 -to- Dalaran L/10 46.44,26.01 (B:PORTAL)"..
+			"{template:custom} {atob:Click the Kocker} {cond:PlayerHaveQuest(40832) or PlayerCompletedQuest(40832)}",
+
+
+
+    ---------------------------
+    ---  PRIEST ORDER HALL  ---
+    ---------------------------
+	-- Portal from Dalaran to Netherlight Temple (ALLIANCE)
+		"Dalaran L/10 39.61,57.24 -to- Netherlight Temple/1 49.64,75.50 (A:PORTAL)"..
+			"{template:custom} {atob:Click the Portal to Netherlight Temple upstairs inside Greyfang Enclave}"..
+			"{cond:PlayerCompletedQuest(40938)}",
+
+	-- Portal from Netherlight Temple to Dalaran (ALLIANCE)
+		"Netherlight Temple/1 49.75,80.72 -to- Dalaran L/10 38.73,57.39 (A:PORTAL)"..
+			"{template:custom} {atob:Click the Portal to Dalaran} {cond:PlayerCompletedQuest(40938)}",
+
+	-- Portal from Dalaran to Netherlight Temple (HORDE)
+		"Dalaran L/10 63.00,17.70 -to- Netherlight Temple/1 49.64,75.50 (H:PORTAL)"..
+			"{template:custom} {atob:Click the Portal to Netherlight Temple inside Windrunner's Sanctuary}"..
+			"{cond:PlayerCompletedQuest(40938)}",
+
+	-- Portal from Netherlight Temple to Dalaran (HORDE)
+		"Netherlight Temple/1 49.75,80.72 -to- Dalaran L/10 61.65,17.39 (A:PORTAL)"..
+			"{template:custom} {atob:Click the Portal to Dalaran} {cond:PlayerCompletedQuest(40938)}",
+
+
+
+    -------------------------
+    ---  MONK ORDER HALL  ---
+    -------------------------
+	-- Portal from the Wandering Isle to Peak of Serenity
+		"The Wandering Isle L/0 50.05,54.41 -to- Kun-Lai Summit/0 48.69,43.12 (B:PORTAL)"..
+			"{template:custom} {atob:Click the Portal to Peak of Serenity} {cond:PlayerCompletedQuest(40236)}",
+
+	-- Portal from the Wandering Isle to Dalaran
+		"The Wandering Isle L/0 52.39,57.15 -to- Dalaran L/10 67.52,46.47 (B:PORTAL)"..
+			"{template:custom} {atob:Click the Portal to Dalaran} {cond:PlayerCompletedQuest(40236)}",
+
+
+
+    --------------------------
+    ---  DRUID ORDER HALL  ---
+    --------------------------
+	-- Portal from the The Dreamgrove to Dalaran
+		"The Dreamgrove/0 42.04,25.67 -to- Dalaran L/10 67.52,46.47 (B:PORTAL)"..
+			"{template:custom} {atob:Click the Portal to Dalaran} {cond:PlayerCompletedQuest(40645)}",
+
+	-- Portal from the The Dreamgrove to Emerald Dreamway
+		"The Dreamgrove/0 41.89,22.34 -to- Emerald Dreamway/0 45.10,26.49 (B:PORTAL)"..
+			"{template:custom} {atob:Walk into the Swirling Portal to the Emerald Dreamway} {cond:PlayerCompletedQuest(40645)}",
+
+	-- Portal from Emerald Dreamway to The Dreamgrove
+		"Emerald Dreamway/0 45.68,23.52 -to- The Dreamgrove/0 41.69,22.77 (B:PORTAL)"..
+			"{template:custom} {atob:Walk into the Swirling Portal to The Dreamgrove} {cond:PlayerCompletedQuest(40645)}",
+
+	-- Portal from Emerald Dreamway to Mount Hyjal
+		"Emerald Dreamway/0 53.87,53.17 -to- Mount Hyjal/0 59.29,25.83 (B:PORTAL)"..
+			"{template:custom} {atob:Walk into the Swirling Portal to Mount Hyjal} {cond:PlayerCompletedQuest(40645)}",
+
+	-- Portal from Mount Hyjal to the Emerald Dreamway
+		"Mount Hyjal/0 59.09,26.09 -to- Emerald Dreamway/0 51.59,51.89 (B:PORTAL)"..
+			"{template:custom} {atob:Walk into the Swirling Portal to the Emerald Dreamway} {cond:PlayerCompletedQuest(40645)}",
+	
+	-- Portal from Emerald Dreamway to the Hinterlands
+		"Emerald Dreamway/0 50.91,66.51 -to- The Hinterlands/0 62.49,23.50 (B:PORTAL)"..
+			"{template:custom} {atob:Walk into the Swirling Portal to the Hinterlands} {cond:PlayerCompletedQuest(40645)}",
+
+	-- Portal from the Hinterlands to the Emerald Dreamway
+		"The Hinterlands/0 62.30,22.62 -to- Emerald Dreamway/0 49.42,62.50 (B:PORTAL)"..
+			"{template:custom} {atob:Walk into the Swirling Portal to the Emerald Dreamway} {cond:PlayerCompletedQuest(40645)}",
+
+	-- Portal from Emerald Dreamway to Duskwood
+		"Emerald Dreamway/0 40.02,70.02 -to- Duskwood/0 46.59,37.06 (B:PORTAL)"..
+			"{template:custom} {atob:Walk into the Swirling Portal to Duskwood} {cond:PlayerCompletedQuest(40645)}",
+
+	-- Portal from Duskwood to the Emerald Dreamway
+		"Duskwood/0 46.57,35.64 -to- Emerald Dreamway/0 38.85,65.99 (B:PORTAL)"..
+			"{template:custom} {atob:Walk into the Swirling Portal to the Emerald Dreamway} {cond:PlayerCompletedQuest(40645)}",
+
+	-- Portal from Emerald Dreamway to Moonglade
+		"Emerald Dreamway/0 25.71,80.55 -to- Moonglade/0 67.59,60.19 (B:PORTAL)"..
+			"{template:custom} {atob:Walk into the Swirling Portal to Moonglade} {cond:PlayerCompletedQuest(40645)}",
+
+	-- Portal from Moonglade to the Emerald Dreamway
+		"Moonglade/0 68.14,60.28 -to- Emerald Dreamway/0 26.31,77.76 (B:PORTAL)"..
+			"{template:custom} {atob:Walk into the Swirling Portal to the Emerald Dreamway} {cond:PlayerCompletedQuest(40645)}",
+	
+	-- Portal from Emerald Dreamway to Feralas
+		"Emerald Dreamway/0 22.73,38.50 -to- Feralas/0 51.20,11.03 (B:PORTAL)"..
+			"{template:custom} {atob:Walk into the Swirling Portal to Feralas} {cond:PlayerCompletedQuest(40645)}",
+	
+	-- Portal from Feralas to the Emerald Dreamway
+		"Feralas/0 51.34,10.59 -to- Emerald Dreamway/0 27.64,40.69 (B:PORTAL)"..
+			"{template:custom} {atob:Walk into the Swirling Portal to the Emerald Dreamway} {cond:PlayerCompletedQuest(40645)}",
+
+	-- Portal from Emerald Dreamway to Grizzly Hills
+		"Emerald Dreamway/0 31.60,25.91 -to- Grizzly Hills/0 50.43,29.75 (B:PORTAL)"..
+			"{template:custom} {atob:Walk into the Swirling Portal to Grizzly Hills} {cond:PlayerCompletedQuest(40645)}",
+
+	-- Portal from Grizzly Hills to the Emerald Dreamway
+		"Grizzly Hills/0 50.32,29.18 -to- Emerald Dreamway/0 32.40,29.53 (B:PORTAL)"..
+			"{template:custom} {atob:Walk into the Swirling Portal to the Emerald Dreamway} {cond:PlayerCompletedQuest(40645)}",
+
+
+
+    -----------------
+    ---  Suramar  ---
+    -----------------
+	-- Portal from Shal'Aran to Felsoul Hold
+		"Suramar/0 36.10,45.75 -to- Suramar/23 52.35,36.75 (B:PORTAL)"..
+			"{template:custom} {atob:Click the Portal to Felsoul Hold} {cond:PlayerCompletedQuest(41575)}",
+
+	-- Portal from Felsoul Hold to Shal'Aran
+		"Suramar/23 53.60,36.80 -to- Suramar/0 36.40,45.09 (B:PORTAL)"..
+			"{template:custom} {atob:Click the Portal to Shal'Aran} {cond:PlayerCompletedQuest(41575)}",
+
+	-- Portal from Shal'Aran to Falanaar
+		"Suramar/0 35.89,45.56 -to- Suramar/32 41.38,15.05 (B:PORTAL)"..
+			"{template:custom} {atob:Click the Portal to Falanaar} {cond:PlayerCompletedQuest(42230)}",
+
+	-- Portal from Falanaar to Shal'Aran
+		"Suramar/32 40.91,13.70 -to- Suramar/0 36.40,45.09 (B:PORTAL)"..
+			"{template:custom} {atob:Click the Portal to Shal'Aran} {cond:PlayerCompletedQuest(42230)}",
+
+	-- Portal from Shal'Aran to Moon Guard Stronghold
+		"Suramar/0 36.01,45.25 -to- Suramar/0 30.79,10.87 (B:PORTAL)"..
+			"{template:custom} {atob:Click the Portal to Moon Guard Stronghold} {cond:PlayerCompletedQuest(43808)}",
+
+	-- Portal from Moon Guard Stronghold to Shal'Aran
+		"Suramar/0 30.83,11.02 -to- Suramar/0 36.40,45.09 (B:PORTAL)"..
+			"{template:custom} {atob:Click the Portal to Shal'Aran} {cond:PlayerCompletedQuest(43808)}",
+
+	-- Portal from Shal'Aran to Lunastre Estate
+		"Suramar/0 36.17,45.02 -to- Suramar/0 43.61,79.10 (B:PORTAL)"..
+			"{template:custom} {atob:Click the Portal to Lunastre Estate} {cond:PlayerCompletedQuest(43811)}",
+
+	-- Portal from Lunastre Estate to Shal'Aran
+		"Suramar/0 43.68,79.25 -to- Suramar/0 36.40,45.09 (B:PORTAL)"..
+			"{template:custom} {atob:Click the Portal to Shal'Aran} {cond:PlayerCompletedQuest(43811)}",
+
+	-- Portals between Shal'Aran and Ruins of Elune'eth moved to explicit flooring
+
+	-- Portal from Shal'Aran to The Waning Crescent
+		"Suramar/0 36.48,44.75 -to- Suramar/0 47.45,81.97 (B:PORTAL)"..
+			"{template:custom} {atob:Click the Portal to The Waning Crescent} {cond:PlayerCompletedQuest(42487)}",
+
+	-- Portal from The Waning Crescent to Shal'Aran
+		"Suramar/0 47.73,81.38 -to- Suramar/0 36.40,45.09 (B:PORTAL)"..
+			"{template:custom} {atob:Click the Portal to Shal'Aran} {cond:PlayerCompletedQuest(42487)}",
+
+	-- Portal from Shal'Aran to Sanctum of Order
+		"Suramar/0 36.70,44.64 -to- Suramar/0 43.40,60.72 (B:PORTAL)"..
+			"{template:custom} {atob:Click the Portal to Sanctum of Order} {cond:PlayerCompletedQuest(43813)}",
+
+	-- Portal from Sanctum of Order to Shal'Aran
+		"Suramar/0 43.41,60.56 -to- Suramar/0 36.40,45.09 (B:PORTAL)"..
+			"{template:custom} {atob:Click the Portal to Shal'Aran} {cond:PlayerCompletedQuest(43813)}",
+
+	-- Portal from Shal'Aran to Tel'anor
+		"Suramar/0 36.92,44.66 -to- Suramar/0 42.17,35.38 (B:PORTAL)"..
+			"{template:custom} {atob:Click the Portal to Tel'anor} {cond:PlayerCompletedQuest(43809)}",
+
+	-- Portal from Tel'anor to Shal'Aran
+		"Suramar/0 42.03,35.24 -to- Suramar/0 36.40,45.09 (B:PORTAL)"..
+			"{template:custom} {atob:Click the Portal to Shal'Aran} {cond:PlayerCompletedQuest(43809)}",
+
+	-- Portal from Shal'Aran to Twilight Vineyards
+		"Suramar/0 36.95,45.00 -to- Suramar/0 64.09,60.80 (B:PORTAL)"..
+			"{template:custom} {atob:Click the Portal to Twilight Vineyards} {cond:PlayerCompletedQuest(44084)}",
+
+	-- Portal from Twilight Vineyards to Shal'Aran
+		"Suramar/0 64.00,60.43 -to- Suramar/0 36.40,45.09 (B:PORTAL)"..
+			"{template:custom} {atob:Click the Portal to Shal'Aran} {cond:PlayerCompletedQuest(44084)}",	
+
+
+
+
+
+		
+    -------------------------		
+    ---  DALARAN (WOTLK)  ---
+    -------------------------
 		"Dalaran 55.4,25.4 -to- Orgrimmar/2 <region:cleftofshadow> 48.3,64.5 (H:PORTAL)",
 		"Dalaran 33.6,68.6 -to- Wintergrasp,50.0,16.7 (A:PORTAL) {cond:LibRover:IsWintergraspControlled()}",
 		"Dalaran 58.1,25.8 -to- Wintergrasp,50.0,16.7 (H:PORTAL) {cond:LibRover:IsWintergraspControlled()}",
@@ -1715,52 +2427,221 @@ data.basenodes.travel = {
 
 		"Dalaran 25.5,51.4 -to- Tanaris/17 54.6,28.3 <title:Caverns of Time> @cot_from_dala (B:PORTAL) {cond:LibRover.cfg.use_cot or (ZGV and ZGV:GetReputation('Keepers of Time').standing>=5)}",
 		--"Dalaran/1 25.9,44.2 -x- Dalaran/1 22.3,39.7 (A:PORTAL)", --portal to upper level in Dalaran. The Purple Parlor
+	-- DALARAN - ENDS		
+	
+	-- STORMWIND CITY - STARTS
+		"Stormwind City/0 80.26,34.85 -to- Dalaran L/10 60.92,44.72 (A:PORTAL) {template:custom}"..
+			"{atob:Click the Portal to Dalaran inside Stormwind Keep} {cond:PlayerCompletedQuest(44663)}",
+	-- STORMWIND CITY - ENDS
+	
+	
+	
+	
+	
+	
 
-	-- DARKMOON ISLAND
-	--Interesting tidbit. Alliance can enter the horde portal and horde the alliance, but when you portal back, it will spit you
-	--back out at your faction portal. aka
-	-- Gnome -> Mulgore portal -> Darkmoon portal -> Elwynn
-	-- Orc -> Mulgore portal -> Darkmoon portal -> Mulgore
+-- DRAENOR
+	"Stormshield/0 36.4,41.1 -to- Tanaan Jungle/0 57.5,60.3 (A:PORTAL) {cond:PlayerCompletedQuest(38445)}",
+	"Tanaan Jungle/0 57.4,60.5 -to- Stormshield/0 31.7,52.5 (A:PORTAL) {cond:PlayerCompletedQuest(38445)}",
+	
+	"Tanaan Jungle/0 61.0,47.3 -to- Warspear/0 44.4,35.5 (H:PORTAL) {cond:PlayerCompletedQuest(37935)}",
+	"Warspear/0 53.2,43.9 -to- Tanaan Jungle/0 60.9,47.3 (H:PORTAL) {cond:PlayerCompletedQuest(37935)}",
+	
+	
+	"Warspear/0 60.7,51.6 -to- Orgrimmar/2 48.3,64.5 <region:cleftofshadow> (H:PORTAL)",
+	"Warspear/0 50.0,24.4 -to- Thunder Bluff/0 22.2,16.9 (H:PORTAL)",
+	"Warspear/0 63.2,24.1 -to- Undercity/0 84.6,16.3 (H:PORTAL)",
 
-	--You can enter anywhere, but only exit at one place
-	"Elwynn Forest 41.8,69.5 -to- Darkmoon Island 51.2,23.1 <title:Darkmoon Faire> (B:PORTAL) {cond:ZGV:FindEvent('DARKMOON FAIRE')}",
-	"Mulgore 36.9,35.9 -to- Darkmoon Island 51.2,23.2 <title:Darkmoon Faire> (B:PORTAL) {cond:ZGV:FindEvent('DARKMOON FAIRE')}",
+	"Stormshield/0 60.8,37.8 -to- @sw_tp_dst (A:PORTAL)",
+	"Stormshield/0 51.5,50.8 -to- Ironforge/0 25.5,8.4 (A:PORTAL)",
 
-	"Darkmoon Island 51.2,23.1 -to- Elwynn Forest 41.8,69.5 (A:PORTAL)",
-	"Darkmoon Island 50.6,90.6 -to- Elwynn Forest 41.8,69.5 (A:PORTAL)",
+	--"Stormwind City 75.2,18.8 -to- Shadowmoon Valley D 27.0,8.0 (A:PORTAL) {cond:PlayerCompletedQuest(34575)}",
+	--"Orgrimmar 51.1,36.8 -to- Frostfire Ridge 40.6,67.2 (H:PORTAL) {cond:UnitLevel('player')>=90}",
 
-	"Darkmoon Island 51.2,23.1 -to- Mulgore 36.9,35.9 (H:PORTAL)",
-	"Darkmoon Island 50.6,90.6 -to- Mulgore 36.9,35.9 (H:PORTAL)",
+	"Talador 80.6,26.1 -x-  Talador 83.6,31.0 (B:PORTAL) {template:custom} {atob:Use Khadgar's portal} {btoa:Use Khadgar's portal} {cond:UnitLevel('player')>=98}", -- legendary ring questline portal
 
-	-- Ulduar teleporters
-		"Ulduar/1 50.98,85.54 <name:Expedition Base Camp>	<template:teleportnamed>	@uld10",
-		"Ulduar/1 49.24,47.34 <name:Formation Grounds>		<template:teleportnamed>	@uld11",
-		"Ulduar/1 48.54,28.08 <name:Colossal Forge>		<template:teleportnamed>	@uld12",
-		"Ulduar/1 48.51,11.06 <name:Scrapyard>			<template:teleportnamed>	@uld13",
-		"Ulduar/2 37.32,00.52 <name:Antechamber of Ulduar>	<template:teleportnamed>	@uld20",
-		"Ulduar/2 37.10,76.41 <name:Shattered Walkway>		<template:teleportnamed>	@uld21",
-		"Ulduar/3 51.02,54.02 <name:Conservatory of Life>	<template:teleportnamed>	@uld30",
-		"Ulduar/4 66.60,59.98 <name:Prison of Yogg-Saron>	<template:teleportnamed>	@uld40",
-		"Ulduar/5 43.65,62.19 <name:Spark of Imagination>	<template:teleportnamed>	@uld50",
-	-- ICC teleporters
-		"Icecrown Citadel/1 38.98,17.17   <name:Light's Hammer>		<template:teleportnamed>	@icc10",
-		"Icecrown Citadel/1 38.98,71.11   <name:Oratory of the Damned>	<template:teleportnamed>	@icc11",
-		"Icecrown Citadel/2 45.60,80.43   <name:Rampart of Skulls>	<template:teleportnamed>	@icc20",
-		"Icecrown Citadel/3 51.50,76.26   <name:Deathbringer's Rise>	<template:teleportnamed>	@icc30",
-		"Icecrown Citadel/4 26.11,33.30   <name:Sindragosa's Lair>	<template:teleportnamed>	@icc40",
-		"Icecrown Citadel/5 51.87,74.32   <name:Upper Spire>		<template:teleportnamed>	@icc50",
-	-- End Time teleporters
-		"End Time/1 79.76,45.52		<name:Entryway of Time>		<template:teleportnamed>	@et1",
-		"End Time/2 41.88,80.19		<name:Azure Dragonshrine>	<template:teleportnamed>	@et2",
-		"End Time/3 34.34,43.19		<name:Ruby Dragonshrine>	<template:teleportnamed>	@et3",
-		"End Time/4 75.23,62.82		<name:Obsidium Dragonshrine>	<template:teleportnamed>	@et4",
-		"End Time/5 46.10,21.40		<name:Emerald Dragonshrine>	<template:teleportnamed>	@et5",
-		"End Time/6 35.40,79.14		<name:Bronze Dragonshrine>	<template:teleportnamed>	@et6",
+	"Tanaan Jungle/0 57.7,58.7 <title:Gnomish Flying Machine> <noskip:1> -to- Tanaan Jungle/0 55.5,27.3 (A:_) {cond:PlayerCompletedQuest(38603)} {template:custom} {atob:Take the Gnomish Flying Machine\nto Throne of Kil'Jaeden} {cost:30}",
+	"Tanaan Jungle/0 60.0,47.4 <title:B-2 Personnel Relocator> <noskip:1> -to- Tanaan Jungle/0 55.6,27.2 (H:_) {cond:PlayerCompletedQuest(38599)} {template:custom} {atob:Take the B-2 Personnel Relocator\nto Throne of Kil'Jaeden} {cost:23}",
 
-	-- Iron Horde event portals
-		"Blasted Lands 72.7,49.5 -to- Orgrimmar 48.3,64.5 (H:PORTAL) {cond:UnitLevel('player')>=90}",
-		"Blasted Lands 66.4,28.0 -to- Stormwind City 49.6,86.5 (A:PORTAL) {cond:UnitLevel('player')>=90}",
--- MAGE TELEPORTS:
+-- PANDARIA
+	"Stormwind City,68.8,17.1 -x- The Jade Forest,46.23,85.17 <title:Paw'don Village> (A:PORTAL) {cond:PlayerCompletedQuest(29548)}",
+	"Eastern Kingdoms/0 41.47,70.19 <title:Skyfire Airship> -to- The Jade Forest,46.23,85.17   (A:PORTAL)	{cond:UnitLevel('player')>=85 and not PlayerCompletedQuest(29548)}", -- airship for the initial quest
+	"Eastern Kingdoms/0 41.47,70.19 <title:The Skyfire Airship> <override_text:You must be at least 85 to enter Pandaria.> <override_icon:error> -to- The Jade Forest,46.23,85.17   (A:PORTAL) {cond:UnitLevel('player')<85} {cost:999}", -- airship for the initial quest
+	"Orgrimmar 68.7,40.7 -x-  The Jade Forest,28.5,14.0  <title:Honeydew Village> (H:PORTAL) {cond:PlayerCompletedQuest(31769)}",
+	"Durotar 66,1 <title:Hellscream's Fist Airship> -to- The Jade Forest,28.5,14.0   (H:PORTAL) {cond:UnitLevel('player')>=85 and not PlayerCompletedQuest(31769)}", -- airship		for the initial quest
+	"Durotar 66,1 <title:Hellscream's Fist Airship> <override_text:You must be at least 85 to enter Pandaria.> <override_icon:error> -to- The Jade Forest,28.5,14.0   (H:PORTAL)		{cond:UnitLevel('player')<85} {cost:999}", -- airship for the initial quest
+
+	"Vale of Eternal Blossoms/4,61.6,39.6 -to- Dalaran,55.86,46.81 (A:PORTAL)",
+	"Vale of Eternal Blossoms/4,68.5,52.8 -to- Shattrath City,54.97,40.23 (A:PORTAL)",
+	"Vale of Eternal Blossoms/4,70.8,30.6 -to- The Exodar,47.62,59.82 (A:PORTAL)",
+	"Vale of Eternal Blossoms/4,77.2,43.5 -to- Darnassus,43.47,78.67 (A:PORTAL)",
+	"Vale of Eternal Blossoms/4,74.0,40.8 -to- Ironforge,25.51,08.43 (A:PORTAL)",
+	"Vale of Eternal Blossoms/4,71.6,35.8 -to- @sw_tp_dst (A:PORTAL)",
+
+	"Shrine of Two Moons/2,73.5,42.8 -to- Orgrimmar/2 48.3,64.5 <region:cleftofshadow> (H:PORTAL)",
+	"Shrine of Two Moons/2,75.6,52.6 -to- Silvermoon City,58.3,19.2 (H:PORTAL)",
+	"Shrine of Two Moons/2,73.5,36.5 -to- Thunder Bluff,22.2,16.9 (H:PORTAL)",
+	"Shrine of Two Moons/2,74.0,48.1 -to- Undercity,84.6,16.3 (H:PORTAL)",
+	"Shrine of Two Moons/2,63.5,57.3 -to- Shattrath City,53.0,49.2 (H:PORTAL)",
+	"Shrine of Two Moons/2,61.5,36.5 -to- Dalaran,55.86,46.81 (H:PORTAL)",
+
+	"Townlong Steppes 49.7,68.7 -x- Isle of Thunder/0 35.3,90.6 <title:Portal to Shado-Pan Garrison> (A:PORTAL) {cond:PlayerCompletedQuest(32681) and not PlayerCompletedQuest(32644)} {template:portal}",
+	--{{"Townlong Steppes 49.7,68.7",faction="A",type="portal"},{"Isle of Thunder/0 64.7,73.5",faction="A",type="portal",actiontitle=function(self,fromnode,tonode) if tonode==self.border then return "Click Portal to Shado-Pan Garrison" end end,cond=function() PlayerCompletedQuest(32644) end}},
+	"Townlong Steppes 49.7,68.7 -x- Isle of Thunder/0 64.7,73.5 <title:Portal to Shado-Pan Garrison> (A:PORTAL) {cond:PlayerCompletedQuest(32644)} {template:portal}",
+	"Isle of Thunder/0 34.84,89.48 -to- Isle of Thunder/0 31.7,83.6 (A:PORTAL) {cond:not PlayerCompletedQuest(32644)} {template:portal}",
+	"Isle of Thunder/0 31.7,83.6 -to- Isle of Thunder/0 34.8,89.5 (A:PORTAL) {cond:not PlayerCompletedQuest(32644) and (ZGV:GetThunderStage()==1 or ZGV:GetThunderStage()==6)} {template:portal}",
+	"Isle of Thunder/0 52.02,45.04 -x- Isle of Thunder/0 62.86,32.36 (B:PORTAL)",
+
+	"Townlong Steppes 50.66,73.41 <title:Shado-Pan Garrison> -x- Isle of Thunder/0 28.4,53.0 (H:PORTAL) {cond:PlayerCompletedQuest(32680) and not PlayerCompletedQuest(32212)} {template:portal}",
+	"Townlong Steppes 50.66,73.41 <title:Shado-Pan Garrison> -x- Isle of Thunder/0 33.2,32.7 (H:PORTAL) {cond:PlayerCompletedQuest(32212)} {template:portal}",
+
+	"Isle of Thunder/0 28.6,52.8 -to- Isle of Thunder/0 33.1,52.8 (H:PORTAL) {cond:not PlayerCompletedQuest(32212)} {template:portal}",
+	"Isle of Thunder/0 28.5,51.7 -to- Isle of Thunder/0 33.1,52.8 (H:PORTAL) {cond:not PlayerCompletedQuest(32212)} {template:portal}",
+	"Isle of Thunder/0 33.1,52.8 -to- Isle of Thunder/0 28.5,51.5 (H:PORTAL) {cond:not PlayerCompletedQuest(32212) and (ZGV:GetThunderStage()==1 or ZGV:GetThunderStage()==6)} {template:portal}",
+
+	--There are portals here... No idea when/how they appear...
+	-- They're purchased from Proveditor Grantley ##2345 at Krasarang Wilds /0 89.52,33.47 using 5 Domination Point Commission ##91877 each.
+	-- They can lead to SW, the Skyfire airship, or to Shrine of Seven Stars.
+	--"Krasarang Wilds 89.0,33.9 -to- Stormwind City 74.2,92.2 (A:PORTAL) {cond:PlayerCompletedQuest(32109)}",
+	--"Krasarang Wilds 89.2,33.9 -x- Krasarang Wilds 18.1,79.6 (A:PORTAL) {cond:PlayerCompletedQuest(32109)}", --To the ship
+
+	--"Krasarang Wilds 9.9,54.9 -to- Durotar 45.6,13.2 (H:PORTAL) {cond:PlayerCompletedQuest(32108)}", --To orgrim
+	--"Krasarang Wilds 10.2,54.8 -x- Krasarang Wilds 76.1,34.5 (H:PORTAL) {cond:PlayerCompletedQuest(32108)}",
+	--"Krasarang Wilds 76.2,34.0 -x- Krasarang Wilds/3 37.4,46.4 (H:PORTAL) {cond:PlayerCompletedQuest(32108)}",
+
+	"Townlong Steppes, 29.0,22.1 <title:Portal to Shado-Pan Garrison> -x- Townlong Steppes, 48.5,69.9 (B:PORTAL) {cond:PlayerCompletedQuest(31110)}",
+	"Dread Wastes,75.09,21.25 -x- Vale of Eternal Blossoms,14.21,76.79 <region:topofthewallVEB> (B:PORTAL) {template:pandarope}", -- (click the Climbing Rope to either climb up or jump down the cliff)
+	"Krasarang Wilds,48.6,27.1 -x- Valley of the Four Winds,51.2,77.5 (B:PORTAL) {template:pandarope}", -- (click the Climbing Rope to either climb up or jump down the cliff). Might need quest
+
+-- ORGRIMMAR PORTALS:
+	"Orgrimmar 49.2,36.5 -to- Kelp'thar Forest 44,28 (H:PORTAL) {cond:PlayerCompletedQuest(26784) and not PlayerCompletedQuest(25222)}",
+	"Orgrimmar 49.2,36.5 -to- Shimmering Expanse 49.5,40.5 (H:PORTAL) {cond:PlayerCompletedQuest(25222) and not PlayerCompletedQuest(99999)}",
+	"Orgrimmar 49.2,36.5 -to- Abyssal Depths 51.4,61.0 (H:PORTAL) {cond:PlayerCompletedQuest(26784)}",
+	"Orgrimmar 48.9,38.5 -to- Uldum 54.9,34.3 (H:PORTAL) {cond:PlayerCompletedQuest(28112)}",
+	"Orgrimmar 50.8,36.4 -to- Deepholm 50.6,52.9 (H:PORTAL) {cond:PlayerCompletedQuest(27123)}",
+	"Orgrimmar 50.8,36.4 -to- Deepholm 50.6,52.9 (H:PORTAL) {cond:not PlayerCompletedQuest(27123)} {template:custom} {atob:You can't get to Deepholm yet.\nPlease complete quests to unlock this portal.}",
+	"Deepholm 50.9,53.1 -to- Orgrimmar 50.0,37.7 (H:PORTAL) {cond:PlayerCompletedQuest(27123)}",
+	"Orgrimmar 51.1,38.3 -to- Mount Hyjal 63.5,23.4 (H:PORTAL) {cond:PlayerCompletedQuest(25316)}",
+	"Mount Hyjal 63.5,24.4 -to- Orgrimmar 50.0,37.7 (H:PORTAL) {cond:PlayerCompletedQuest(25316)}",
+	"Orgrimmar 47.4,39.3 -to- Tol Barad Peninsula 55.8,80.1 (H:PORTAL) {cond:UnitLevel('player')>=85}",
+	"Tol Barad Peninsula 56.3,79.7 -to- Orgrimmar 47.6,39.1 (H:PORTAL) {cond:UnitLevel('player')>=85}",
+	"Orgrimmar 50.2,39.4 -x- Twilight Highlands 73.57,53.53 <template:cityportal> (H:PORTAL) {cond:PlayerCompletedQuest(26784)}",
+	"Orgrimmar/1 70.6,30.9 -x- Brawl'gar Arena/1 55.8,17.0 (H:PORTAL) {template:pinkportal}",
+
+
+-- STORMWIND PORTALS
+	"Stormwind City,73.2,16.9 -to- Kelp'thar Forest 44,28 (A:PORTAL) {cond:PlayerCompletedQuest(14482) and not PlayerCompletedQuest(25222)}",
+	"Stormwind City,73.2,16.9 -to- Shimmering Expanse 47.2,57.5 (A:PORTAL) {cond:PlayerCompletedQuest(25222) and not PlayerCompletedQuest(99999)}",
+	"Stormwind City,73.2,16.9 -to- Abyssal Depths 55.7,72.8 (A:PORTAL) {cond:PlayerCompletedQuest(14482)}",
+	"Stormwind City,75.3,20.5 -to- Uldum,54.9,34.3 (A:PORTAL) {cond:PlayerCompletedQuest(28112)}",
+	"Stormwind City,73.2,19.6 -to- Deepholm,48.7,53.6 @deepholm_tp_dst (A:PORTAL) {cond:PlayerCompletedQuest(27123)}",	"Deepholm,48.5,53.8 -to- Stormwind City,74.5,18.3 (A:PORTAL) {cond:PlayerCompletedQuest(27123)}",
+	"Stormwind City,76.2,18.7 -x- Mount Hyjal,62.6,23.1 (A:PORTAL) {cond:PlayerCompletedQuest(25316)}",
+	"Stormwind City,73.2,18.4 -to- Tol Barad Peninsula,73.7,60.9 (A:PORTAL) {cond:UnitLevel('player')>=85}",  "Tol Barad Peninsula,75.2,58.9 -to- Stormwind City,73.4,18.3 (A:PORTAL) {cond:UnitLevel('player')>=85}",
+	"Stormwind City,75.2,16.8 -x- Twilight Highlands,79.5,77.8 <template:cityportal> (A:PORTAL) {cond:PlayerCompletedQuest(27537)}",
+
+-- GARRISON PORTALS
+	"Frostwall 75.1,48.7 -to- Warspear 44.4,35.5 (H:PORTAL) {template:custom} {atob:Click the portal to Ashran} {cond:C_Garrison.GetGarrisonInfo("..(LE_GARRISON_TYPE_6_0 or 2)..")==3}", -- Horde Garrison 3 to Ashran
+	"Lunarfall 70.2,27.5 -to- Stormshield 31.7,52.5 (A:PORTAL) {template:custom} {atob:Click the portal to Ashran}  {cond:C_Garrison.GetGarrisonInfo("..(LE_GARRISON_TYPE_6_0 or 2)..")==3}", -- Ally Garrison 3 to Ashran
+
+"The Exodar,47.6,62.2 -x- Darnassus,44.3,78.7 (A:PORTAL)",
+"Darnassus,37.3,50.5 -x- Teldrassil,55.1,88.4 <port:Rut'theran Village> (B:PORTAL) {template:pinkportal}",  -- Teldrassil,55.1,88.4  NO  Teldrassil,38.1,47.5
+"Silvermoon City 49.4,14.8 -x- Undercity  54.9,11.2 (H:PORTAL)",
+
+-- portals -to- Blasted Lands
+	"Hellfire Peninsula,89.2,49.6 @hfp_port_dst",
+	"Hellfire Peninsula,89.2,49.6 @hfp_port_dst_h",
+	"Hellfire Peninsula,89.2,50.9 @hfp_port_dst_a",
+
+	"Orgrimmar/2 44.7,68.0 <region:cleftofshadow> -x- Blasted Lands  72.7,49.4 (H:PORTAL) {cond:UnitLevel('player')>=90}", -- it seems the portal was changed to only show for 90+ chars, not 58
+	"Stormwind City 48.96,87.32 <region:sw_wizardsanctum> -to- Blasted Lands 53.9,46.1 (A:PORTAL) {cond:UnitLevel('player')>=90}",
+
+-- 6.0.2 portals to and from Outland
+	-- "Blasted Lands,55.0,54.2 -x- Hellfire Peninsula,89.4,50.2 (B:PORTAL) {cond:UnitLevel('player')>=58} {template:darkportal}", -- Dark Portal to Outlands removed in 6.0.2
+	-- Horde
+	"Orgrimmar/2 30.49,58.18 <region:cleftofshadow> -to- @hfp_port_dst_h (H:PORTAL) {cond:UnitLevel('player')>=58}",
+	"Orgrimmar/2 30.49,58.18 <region:cleftofshadow> <override_text:You must be at least 58 to enter Outland.> <override_icon:error> -to- @hfp_port_dst_h (H:PORTAL) {cond:UnitLevel('player')<58} {cost:999}",
+	"Silvermoon City 58.4,20.9 -to- @hfp_port_dst_h (H:PORTAL) {cond:UnitLevel('player')>=58}",
+	"Silvermoon City 58.4,20.9 <override_text:You must be at least 58 to enter Outland.> <override_icon:error> -to- @hfp_port_dst_h (H:PORTAL) {cond:UnitLevel('player')<58} {cost:999}",
+	-- "Undercity 85.2,17.1 -to- @hfp_port_dst_h (H:PORTAL) {cond:UnitLevel('player')>=58}", -- Portal removed in WoD
+	"Thunder Bluff 23.2,13.5 -to- @hfp_port_dst_h (H:PORTAL) {cond:UnitLevel('player')>=58}",
+	"Thunder Bluff 23.2,13.5 <override_text:You must be at least 58 to enter Outland.> <override_icon:error> -to- @hfp_port_dst_h (H:PORTAL) {cond:UnitLevel('player')<58} {cost:999}",
+	"Hellfire Peninsula 89.2,49.5 -to- Orgrimmar 48.3,64.5 (H:PORTAL) {cond:UnitLevel('player')>=58}",
+	"Hellfire Peninsula 89.2,49.5 <override_text:You must be at least 58 to enter Outland.> <override_icon:error> -to- Orgrimmar 48.3,64.5 (H:PORTAL) {cond:UnitLevel('player')<58} {cost:999}",
+	"Blasted Lands,55.0,54.2 -to- Warspear,44,35 (H:PORTAL) {cond:UnitLevel('player')>=90} {template:darkportal}", -- Dark Portal now leads to Ashran
+	"Blasted Lands,55.0,54.2 <override_text:You must be at least 90 to enter Draenor.> <override_icon:error> -to- Warspear,44,35 (H:PORTAL) {cond:UnitLevel('player')<90} {template:darkportal} {cost:999}", -- Dark Portal now leads to Ashran
+
+	-- Ally
+	"Stormwind City 49.94,87.03 <region:sw_wizardsanctum> -to- @hfp_port_dst_a (A:PORTAL) {cond:UnitLevel('player')>=58} {template:custom} {atob:Click Portal to Hellfire Peninsula\nupstairs in Mage Tower}",
+	"Stormwind City 49.94,87.03 <region:sw_wizardsanctum> <override_text:You must be at least 58 to enter Outland.> <override_icon:error> -to- @hfp_port_dst_a (A:PORTAL) {cond:UnitLevel('player')<58} {cost:999}",
+	"Ironforge,27.2,7.0 -to- @hfp_port_dst_a (A:PORTAL) {cond:UnitLevel('player')>=58}",
+	"Ironforge,27.2,7.0 <override_text:You must be at least 58 to enter Outland.> <override_icon:error> -to- @hfp_port_dst_a (A:PORTAL) {cond:UnitLevel('player')<58} {cost:999}",
+	"The Exodar,48.2,63.0 -to- @hfp_port_dst_a (A:PORTAL) {cond:UnitLevel('player')>=58}",
+	"The Exodar,48.2,63.0 <override_text:You must be at least 58 to enter Outland.> <override_icon:error> -to- @hfp_port_dst_a (A:PORTAL) {cond:UnitLevel('player')<58} {cost:999}",
+	"Darnassus,44.1,78.2 -to- @hfp_port_dst_a (A:PORTAL) {cond:UnitLevel('player')>=58}",
+	"Darnassus,44.1,78.2 <override_text:You must be at least 58 to enter Outland.> <override_icon:error> -to- @hfp_port_dst_a (A:PORTAL) {cond:UnitLevel('player')<58} {cost:999}",
+	"Hellfire Peninsula 89.2,51.0 -to- Stormwind City 49.6,86.5 (A:PORTAL) {cond:UnitLevel('player')>=58}",
+	"Hellfire Peninsula 89.2,51.0 <override_text:You must be at least 58 to enter Outland.> <override_icon:error> -to- Stormwind City 49.6,86.5 (A:PORTAL) {cond:UnitLevel('player')<58} {cost:999}",
+	"Blasted Lands,55.0,54.2 -to- Stormshield,31,52 (A:PORTAL) {cond:UnitLevel('player')>=90} {template:darkportal}", -- Dark Portal now leads to Ashran
+	"Blasted Lands,55.0,54.2 <override_text:You must be at least 90 to enter Draenor.> <override_icon:error> -to- Stormshield,31,52 (A:PORTAL) {cond:UnitLevel('player')<90} {template:darkportal} {cost:999}", -- Dark Portal now leads to Ashran
+
+
+
+
+-- DALARAN PORTALS:
+	"Dalaran 40.1,62.8 -to- @sw_tp_dst (A:PORTAL)", --COORDS BAD
+	"Dalaran 55.4,25.4 -to- Orgrimmar/2 <region:cleftofshadow> 48.3,64.5 (H:PORTAL)",
+	"Dalaran 33.6,68.6 -to- Wintergrasp,50.0,16.7 (A:PORTAL) {cond:LibRover:IsWintergraspControlled()}",
+	"Dalaran 58.1,25.8 -to- Wintergrasp,50.0,16.7 (H:PORTAL) {cond:LibRover:IsWintergraspControlled()}",
+	"Dalaran 56.0,46.8 -x- Crystalsong Forest 15.8,42.5 (B:PORTAL)",
+
+	"Dalaran 25.5,51.4 -to- Tanaris/17 54.6,28.3 <title:Caverns of Time> @cot_from_dala (B:PORTAL) {cond:LibRover.cfg.use_cot or (ZGV and ZGV:GetReputation('Keepers of Time').standing>=5)}",
+	--"Dalaran/1 25.9,44.2 -x- Dalaran/1 22.3,39.7 (A:PORTAL)", --portal to upper level in Dalaran. The Purple Parlor
+
+-- DARKMOON ISLAND
+--Interesting tidbit. Alliance can enter the horde portal and horde the alliance, but when you portal back, it will spit you
+--back out at your faction portal. aka
+-- Gnome -> Mulgore portal -> Darkmoon portal -> Elwynn
+-- Orc -> Mulgore portal -> Darkmoon portal -> Mulgore
+
+--You can enter anywhere, but only exit at one place
+"Elwynn Forest 41.8,69.5 -to- Darkmoon Island 51.2,23.1 <title:Darkmoon Faire> (B:PORTAL) {cond:ZGV:FindEvent('DARKMOON FAIRE')}",
+"Mulgore 36.9,35.9 -to- Darkmoon Island 51.2,23.2 <title:Darkmoon Faire> (B:PORTAL) {cond:ZGV:FindEvent('DARKMOON FAIRE')}",
+
+"Darkmoon Island 51.2,23.1 -to- Elwynn Forest 41.8,69.5 (A:PORTAL)",
+"Darkmoon Island 50.6,90.6 -to- Elwynn Forest 41.8,69.5 (A:PORTAL)",
+
+"Darkmoon Island 51.2,23.1 -to- Mulgore 36.9,35.9 (H:PORTAL)",
+"Darkmoon Island 50.6,90.6 -to- Mulgore 36.9,35.9 (H:PORTAL)",
+
+-- Ulduar teleporters
+	"Ulduar/1 50.98,85.54 <name:Expedition Base Camp>	<template:teleportnamed>	@uld10",
+	"Ulduar/1 49.24,47.34 <name:Formation Grounds>		<template:teleportnamed>	@uld11",
+	"Ulduar/1 48.54,28.08 <name:Colossal Forge>		<template:teleportnamed>	@uld12",
+	"Ulduar/1 48.51,11.06 <name:Scrapyard>			<template:teleportnamed>	@uld13",
+	"Ulduar/2 37.32,00.52 <name:Antechamber of Ulduar>	<template:teleportnamed>	@uld20",
+	"Ulduar/2 37.10,76.41 <name:Shattered Walkway>		<template:teleportnamed>	@uld21",
+	"Ulduar/3 51.02,54.02 <name:Conservatory of Life>	<template:teleportnamed>	@uld30",
+	"Ulduar/4 66.60,59.98 <name:Prison of Yogg-Saron>	<template:teleportnamed>	@uld40",
+	"Ulduar/5 43.65,62.19 <name:Spark of Imagination>	<template:teleportnamed>	@uld50",
+-- ICC teleporters
+	"Icecrown Citadel/1 38.98,17.17   <name:Light's Hammer>		<template:teleportnamed>	@icc10",
+	"Icecrown Citadel/1 38.98,71.11   <name:Oratory of the Damned>	<template:teleportnamed>	@icc11",
+	"Icecrown Citadel/2 45.60,80.43   <name:Rampart of Skulls>	<template:teleportnamed>	@icc20",
+	"Icecrown Citadel/3 51.50,76.26   <name:Deathbringer's Rise>	<template:teleportnamed>	@icc30",
+	"Icecrown Citadel/4 26.11,33.30   <name:Sindragosa's Lair>	<template:teleportnamed>	@icc40",
+	"Icecrown Citadel/5 51.87,74.32   <name:Upper Spire>		<template:teleportnamed>	@icc50",
+-- End Time teleporters
+	"End Time/1 79.76,45.52		<name:Entryway of Time>		<template:teleportnamed>	@et1",
+	"End Time/2 41.88,80.19		<name:Azure Dragonshrine>	<template:teleportnamed>	@et2",
+	"End Time/3 34.34,43.19		<name:Ruby Dragonshrine>	<template:teleportnamed>	@et3",
+	"End Time/4 75.23,62.82		<name:Obsidium Dragonshrine>	<template:teleportnamed>	@et4",
+	"End Time/5 46.10,21.40		<name:Emerald Dragonshrine>	<template:teleportnamed>	@et5",
+	"End Time/6 35.40,79.14		<name:Bronze Dragonshrine>	<template:teleportnamed>	@et6",
+
+-- Iron Horde event portals
+	"Blasted Lands 72.7,49.5 -to- Orgrimmar 48.3,64.5 (H:PORTAL) {cond:UnitLevel('player')>=90}",
+	"Blasted Lands 66.4,28.0 -to- Stormwind City 49.6,86.5 (A:PORTAL) {cond:UnitLevel('player')>=90}",
+-- CLASS TELEPORTS:
 
 
 	-- Okay, new rule, since these are becoming numerous. Alas, ONE SPELL PER NODE. New spell = new node.  ~sinus 2013-02-05
@@ -1789,12 +2670,35 @@ data.basenodes.travel = {
 	"Vale of Eternal Blossoms/0 62.21,21.54			<spell:132627> <faction:H>",
 	"Warspear/0 58.8,51.4					<spell:176242>  <faction:H>",
 
+
+
+
+	--[[ Note: node cond functions work only for teleport spells --]]
 	--DRUIDS
-	"Moonglade  56.3,32.4					<spell:18960>", --Class based!
+	"Moonglade  56.3,32.4					<spell:18960>",  --Teleport Moonglade
 	-- DK DEATHGATE
-	"Eastern Plaguelands 83.72,50.03			<spell:50977>", --Class based!
+	"Eastern Plaguelands 83.72,50.03			<spell:50977> {cond:not (PlayerCompletedQuest(38990) or PlayerCompletedQuest(40935) or PlayerCompletedQuest(40740))}", --Class based!
 	-- Zen Pilgrimage (monks)
-	"Kun-Lai Summit 48.64,42.94				<spell:126892> <region:peak_of_serenity>", --Class based!
+	"Kun-Lai Summit 48.64,42.94				<spell:126892> <region:peak_of_serenity> {cond:not PlayerCompletedQuest(40236)}", --Class based!
+
+		
+		
+	-- LEGION
+		-- MAGE
+			"Hall of the Guardian/1 57.63,86.14 <spell:193759>",
+
+		-- DRUID
+			"Emerald Dreamway/0 35.33,53.15 <spell:193753>",
+
+		-- DEATHKNIGHT
+			"Broken Shore/2 27.43,30.43 <spell:50977> {cond:(PlayerCompletedQuest(38990) or PlayerCompletedQuest(40935) or PlayerCompletedQuest(40740))} <zone:1021>",
+
+		-- MONK
+			"The Wandering Isle L/0 51.45,48.65 <spell:126892> {cond:PlayerCompletedQuest(40236)} <zone:1044>",
+
+
+
+
 
 -- ITEM TELEPORTS:
 
@@ -2188,7 +3092,7 @@ data.basenodes.travel = {
 	--Molten Core
 	"Blackrock Depths/2 68.8,38.2 -to- Molten Core/1 26.6,25.0 <template:portaldungeon>",
 	"Molten Core/1 26.5,24.3 -to- Burning Steppes/16 54.1,83.1 <template:portaldungeon>",
-	"Burning Steppes/16 54.1,83.1 -to- Molten Core/1 26.5,24.3 <template:moltentele> {cond:PlayerCompletedQuest(7848)}",
+	"Burning Steppes/16 54.1,83.1 -to- Molten Core/1 26.5,24.3 <template:moltentele> {cond:IsQuestFlaggedCompleted(7848)}",
 	-- Temple of Ahn'Qiraj
 	"Ahn'Qiraj: The Fallen Kingdom/0 46.78,7.45 -x- Ahn'Qiraj/2 52.00,26.92 {style:portal_dungeon}",
 	-- Ruins of Ahn'Qiraj
@@ -2196,80 +3100,14 @@ data.basenodes.travel = {
 	--Blackwing Lair
 	"Blackrock Spire/7 54.7,22.5 -to- Blackwing Lair/1 52.5,83.6 <template:portaldungeon>",
 	"Blackwing Lair/1 52.5,83.6 -to- Burning Steppes/14 65.6,42.2 <template:portaldungeon>",
-	"Burning Steppes/14 64.3,70.9 -to- Blackwing Lair/1 52.5,83.6 <template:orbofcommand> {cond:PlayerCompletedQuest(7761)}",
-
-	-- Karazhan
-	"Karazhan/1 58.8,76.1 -x- Deadwind Pass/0 47.0,74.9 {style:portal_dungeon}",
-	-- Gruul's Lair
-	"Blade's Edge Mountains/0 69.16,23.81 -x- Gruul's Lair/1 81.87,78.12 {style:portal_dungeon}",
-	-- Magtheridon's Lair
-	"Hellfire Peninsula/0 47.49,52.09 -x- Magtheridon's Lair/1 62.72,18.04 {style:portal_dungeon}",
-	-- Serpentshrine Cavern
-	"Zangarmarsh <region:coilfang2> 51.9,33.0 -x- Serpentshrine Cavern/1 13.5,61.2 {style:portal_dungeon}",
-	-- Tempest Keep
-	"Netherstorm/0 73.8,63.7 -x- Tempest Keep/1 50.0,90.6 {style:portal_dungeon}",
-	-- Hyjal Summit
-	"Tanaris/18 35.62,15.76 -x- Hyjal Summit/0 10.68,64.74 {style:portal_dungeon}",
-	-- Black Temple
-	"Shadowmoon Valley/0 71.03,46.39 -x- Black Temple/2 21.89,59.54 {style:portal_dungeon}",
-	-- Sunwell Plateau
-	"Isle of Quel'Danas/0 44.25,45.59 -x- Sunwell Plateau/1 30.93,36.41 {style:portal_dungeon}",
-
-	-- Onyxia's Lair
-	"Dustwallow Marsh/0 52.93,77.72 -x- Onyxia's Lair/1 33.99,20.75 {style:portal_dungeon}",
-	-- Naxxramas
-	"Dragonblight/0 87.47,51.19 -x- Naxxramas/5 54.00,49.68 {style:portal_dungeon}",
-	"Dragonblight/0 87.11,50.66 -x- Naxxramas/5 54.00,49.68 {style:portal_dungeon}",
-	"Dragonblight/0 87.13,51.24 -x- Naxxramas/5 54.00,49.68 {style:portal_dungeon}",
-	"Dragonblight/0 87.48,50.68 -x- Naxxramas/5 54.00,49.68 {style:portal_dungeon}",
-	--Eye of Eternity Entrance
-	"Borean Tundra/0 27.6,26.6 -x- The Eye of Eternity/1 32.0,59.2 {style:portal_dungeon}",
-	-- Ulduar
-	"The Storm Peaks/0 41.57,17.74 -x- Ulduar/1 52.68,95.01 {style:portal_dungeon}",
-	-- Icecrown Citadel
-	"Icecrown/0 53.83,87.12 -x- Icecrown Citadel/1 38.98,7.28 {style:portal_dungeon}",
-	-- Trial of the Crusader
-	"Icecrown/0 75.10,21.79 -x- Trial of the Crusader/1 63.95,52.45 {style:portal_dungeon}",
-	-- The Obsidian Sanctum
-	"Dragonblight/0 60.01,56.86 -x- The Obsidian Sanctum/0 64.40,50.09 {style:portal_dungeon}",
-	-- The Ruby Sanctum
-	"Dragonblight/0 61.26,52.67 -x- The Ruby Sanctum/0 48.99,29.42 {style:portal_dungeon}",
-	-- Vault of Archavon
-	"Wintergrasp/0 50.07,11.61 -x- Vault of Archavon/1 49.26,86.60 {style:portal_dungeon} {cond:LibRover:IsWintergraspControlled()}",
-
-	-- Dragon Soul
-	"Tanaris/18 61.75,26.60 -x- Dragon Soul/1 50.10,84.43 {style:portal_dungeon}",
-	-- Baradin Hold
-	"Tol Barad/0 46.2,47.9",
-	"@+ -x- Tol Barad/0 47.7,52.6 <dark:1> <nofly:1>",
-	"@+ -x- Baradin Hold/1 48.0,91.8 {style:portal_dungeon}",
-	-- Throne of the Four Winds
-	"Uldum/0 38.5,80.5 -x- Throne of the Four Winds/1 47.2,75.8 {style:portal_dungeon}",
-	-- Blackwing Descent
-	"Burning Steppes/0 23.19,26.46 -x- Blackwing Descent/1 46.89,62.55 {style:portal_dungeon}",
-	--  The Bastion of Twilight
-	"Twilight Highlands/0 34.04,77.91 -x- The Bastion of Twilight/1 39.38,54.24 {style:portal_dungeon}",
-	-- Firelands
-	"Mount Hyjal/0 47.34,78.00 -x- Firelands/1 25.03,92.59 {style:portal_dungeon}",
-
-	--Terrace of Endless Spring
-	"The Veiled Stair/0 48.43,61.56 -x- Terrace of Endless Spring/0 93.32,49.34 {style:portal_dungeon}",
-	-- Heart of Fear
-	"Dread Wastes/0 38.92,35.02 -x- Heart of Fear/1 34.28,89.45 {style:portal_dungeon}",
-	-- Mogu'shan Vaults
-	"Kun-Lai Summit/0 59.57,39.25 -x- Mogu'shan Vaults/1 75.22,74.09 {style:portal_dungeon}",
-	-- Throne of Thunder
-	"Isle of Thunder/0 63.62,32.25 -x- Throne of Thunder/1 31.16,25.92 {style:portal_dungeon}",
-	"Throne of Thunder/6 11.44,59.00 -to- Isle of Thunder/0 63.62,32.25 <template:portaldungeon>",
-	
-	-- Highmaul
-	"Nagrand D/0 32.8,38.4 -to- Highmaul/2 36.5,35.5 <template:portaldungeon>",
-	-- Blackrock Foundry
-	"Gorgrond/0 51.6,27.2 -to- Blackrock Foundry/3 40.9,86.4 <template:portaldungeon>",
-	-- Hellfire Citadel
-	"Tanaan Jungle 45.6,53.6 -to- Hellfire Citadel 69.6,43.5 <template:portaldungeon>",
-	"Hellfire Citadel 72.8,42.6 -to- Tanaan Jungle 46.0,53.3 <template:portaldungeon>",
+	"Burning Steppes/14 64.3,70.9 -to- Blackwing Lair/1 52.5,83.6 <template:orbofcommand> {cond:IsQuestFlaggedCompleted(7761)}",
 }
+
+
+
+
+
+
 
 -- These zone pairs see directly into each other, as they share "green" borders.
 data.greenborders = {
@@ -2282,10 +3120,31 @@ data.greenborders = {
 	{"Abyssal Depths","Kelp'thar Forest"},
 }
 
+data.basenodes.walls = {
+	["Tirisfal Glades"] = {
+		{ 48.8,50.9, 50.8,50.7, 51.0,56.1, 48.2,56.4, "loop" } -- Calston Lake (example)
+	},
+	["Eastern Plaguelands"] = {
+		{ 90.3,0.1, 84.7,38.2, 80.8,54.1, 84.3,71.8 } -- wall off Scarlet Enclave
+	}
+}
+
+
+
+
+
 -- These define zone-wide flags, if that's needed.
 data.zoneflags = {
 	["Razorfen Kraul"]={dark=1},
 }
+
+
+
+
+
+
+
+
 
 data.basenodes.inns = {
 	['Valley of Trials']={
@@ -2293,6 +3152,8 @@ data.basenodes.inns = {
 	},
 	['Teldrassil']={
 		{name="Dolanaar",faction="A",npc="Innkeeper Keldamyr",npcid=6736,x=55.4,y=52.2},
+	},
+	['Shadowglen']={
 		{name="Shadowglen",faction="A",npc="Ilthalaine",npcid=2079,x=45.5,y=74.7},
 	},
 	['Gilneas']={
@@ -2786,11 +3647,111 @@ data.basenodes.inns = {
 		{name="The Lion's Den",faction="A",npc="Shima Islebreeze",npcid=90971,x=58.6,y=60.3},
 		{name="Vol'mar Hold",faction="H",npc="Retho Quillmane",npcid=90989,x=61.5,y=46.2},
 	},
+
+
+	------------------------
+	------   LEGION   ------
+	------------------------
+	['Dalaran L']={
+		-- The Legerdemain Lounge #1 (Both)
+			{name="The Legerdemain Lounge",faction="B",npc="Amisi Azuregaze",npcid=96806,x=49.79,y=40.17,f=10},
+
+		-- The Legerdemain Lounge #2 (Both)
+			{name="The Legerdemain Lounge",faction="B",npc="Afsaneh Asrar",npcid=96807,x=48.52,y=41.79,f=10},
+		
+		-- Greyfang Enclave (Alliance)
+			{name="Greyfang Enclave",faction="A",npc="Isirami Fairwind",npcid=96790,x=44.19,y=63.78,f=10},
+
+		-- Dalaran (Alliance)
+			{name="Dalaran",faction="A",npc="Caliel Brightwillow",npcid=96789,x=38.81,y=71.82,f=10},
+
+		-- Dalaran #1 (Horde)
+			{name="Dalaran",faction="H",npc="Uda the Beast",npcid=96796,x=65.38,y=32.21,f=10},
+
+		-- Dalaran #2 (Horde)
+			{name="Dalaran",faction="H",npc="Abohba",npcid=96799,x=67.09,y=35.45,f=10},		
+	},
+	
+		
+	['Azsuna'] = {
+		-- Shackle's Den
+			{name="Shackle's Den",faction="B",npc="Gentle Rosh",npcid=91457,x=56.64,y=59.56},
+
+		-- Illidari Stand
+			{name="Illidari Stand",faction="B",npc="Belath Dawnblade",npcid=89639,x=43.11,y=42.62},
+
+		-- Crumbled Palace
+			{name="Crumbled Palace",faction="B",npc="Nalysse Dawnsorrow",npcid=109372,x=47.33,y=41.35},
+	},
+
+
+	["Val'sharah"] = {
+		-- The Traveler's Den (Lorlathil)
+			{name="The Traveler's Den",faction="B",npc="Feonir Cloudthistle",npcid=93460,x=56.07,y=73.51},
+
+		-- Lightsong
+			{name="Lightsong",faction="B",npc="Khardon Timberdawn",npcid=109304,x=58.24,y=84.80},
+
+		-- Thornton's Cottage (Bradensbrook)
+			{name="Thornton's Cottage",faction="B",npc="Alistair Thornton",npcid=92684,x=42.57,y=59.60},
+
+		-- Starsong Refuge
+			{name="Starsong Refuge",faction="B",npc="Faeolas Nightwhisper",npcid=95118,x=69.57,y=49.43},
+	},
+	
+	
+	['Highmountain'] = {
+		-- Nesingwary's Retreat
+			{name="Nesingwary's Retreat",faction="B",npc="Greta Stonebrow",npcid=94099,x=39.98,y=52.56},
+
+		-- Tradewind Roost (Skyhorn)
+			{name="Tradewind Roost",faction="B",npc="Harum Grayfeather",npcid=97786,x=53.00,y=44.88},
+
+		-- Stonedark Grotto
+			{name="Stonedark Grotto",faction="B",npc="Margul",npcid=99207,x=34.51,y=65.03,f=31},
+
+		-- Prepfoot Compound (Prepfoot)
+			{name="Prepfoot Compound",faction="B",npc="Chaff Prepfoot",npcid=108559,x=57.39,y=27.71},
+
+		-- Ironhorn Enclave
+			{name="Ironhorn Enclave",faction="B",npc="Burnedhoof the Retired",npcid=108554,x=54.61,y=84.94},
+	},
+
+
+	['Thunder Totem'] = {
+		-- Thunder Totem
+			{name="Thunder Totem",faction="B",npc="Ernu Mesawind",npcid=97852,x=44.36,y=53.87,region="thunder_totem_circle_platform"},
+	},
+
+
+	['Stormheim'] = {
+		-- Valdisdall
+			{name="Valdisdall",faction="B",npc="Riala the Hearthwatcher",npcid=103796,x=60.54,y=50.27},
+
+		-- Greywatch Barracks (Greywatch - Alliance Only)
+			{name="Greywatch Barracks",faction="A",npc="Steward Dayton",npcid=98112,x=71.63,y=60.61},
+
+		-- Theodric's Lodge (Dreadwake's Landing - Horde Only)
+			{name="Theodric's Lodge",faction="H",npc="Elliot Theodric",npcid=98106,x=54.01,y=72.29},
+	},
+
+
+	['Suramar'] = {
+		-- Shal'Aran
+			{name="Shal'Aran",faction="B",npc="First Arcanist Thalyssra",npcid=97140,x=36.52,y=46.76,region="Shal'Aran"},
+	},
 }
 
 local hearthcost = 25 --TODO this could be a 15m cooldown instead of 30. So that changes it
 
 -- "HEARTH" or "G_HEARTH" destinations are not parsed immediately; they get assigned at calculation time.
+
+
+
+
+
+
+
 
 data.portkeys = { -- smile if you're a muggle
 	{item=6948, destination="HEARTH", use_hearth_cd=1, cost=hearthcost, mode="hearth"}, -- Hearthstone!!!
@@ -2840,11 +3801,11 @@ data.portkeys = { -- smile if you're a muggle
 	{item=22631, destination="Deadwind Pass 55,78", cooldown=60}, -- Atiesh, Greatstaff of the Guardian
 
 
-	{item=95567, destination="Isle of Thunder 64.6,73.5", cooldown=600, cond=function() return ZGV.CurrentMapID==928 and PlayerCompletedQuest(32644) end}, -- Kirin Tor Beacon --only usable on Thunder Isle
-	{item=95567, destination="Isle of Thunder 34.8,89.3", cooldown=600, cond=function() return ZGV.CurrentMapID==928 and not PlayerCompletedQuest(32644) end}, -- Kirin Tor Beacon --only usable on Thunder Isle
+	{item=95567, destination="Isle of Thunder 64.6,73.5", cooldown=600, cond=function() return ZGV.CurrentMapID==928 and IsQuestFlaggedCompleted(32644) end}, -- Kirin Tor Beacon --only usable on Thunder Isle
+	{item=95567, destination="Isle of Thunder 34.8,89.3", cooldown=600, cond=function() return ZGV.CurrentMapID==928 and not IsQuestFlaggedCompleted(32644) end}, -- Kirin Tor Beacon --only usable on Thunder Isle
 
-	{item=95568, destination="Isle of Thunder 33.3,32.6", cooldown=600, cond=function() return ZGV.CurrentMapID==928 and PlayerCompletedQuest(32212) end}, -- Sunreaver Beacon --only usable on Thunder Isle
-	{item=95568, destination="Isle of Thunder 28.5,51.7", cooldown=600, cond=function() return ZGV.CurrentMapID==928 and not PlayerCompletedQuest(32212) end}, -- Sunreaver Beacon --only usable on Thunder Isle
+	{item=95568, destination="Isle of Thunder 33.3,32.6", cooldown=600, cond=function() return ZGV.CurrentMapID==928 and IsQuestFlaggedCompleted(32212) end}, -- Sunreaver Beacon --only usable on Thunder Isle
+	{item=95568, destination="Isle of Thunder 28.5,51.7", cooldown=600, cond=function() return ZGV.CurrentMapID==928 and not IsQuestFlaggedCompleted(32212) end}, -- Sunreaver Beacon --only usable on Thunder Isle
 
 	{item=104113, destination="Timeless Isle/0 23.28,70.83", cooldown=0 }, -- Ally. Curious Bronze Timepeice, 1 time use only.
 	{item=104110, destination="Timeless Isle/0 21.32,39.52", cooldown=0 }, -- Horde. Curious Bronze Timepeice, 1 time use only.
@@ -2856,7 +3817,20 @@ data.portkeys = { -- smile if you're a muggle
 
 	{item=63378, destination="Tol Barad Peninsula 73.7,60.9", cooldown=14400}, -- Baradin's Wardens Tabard  Alliance -- TODO only approx coords
 	{item=63379, destination="Tol Barad Peninsula 55.8,80.1", cooldown=14400}, -- Hellscream's Reach Tabard  Horde
+
+	--------------
+	--- LEGION ---
+	--------------
+	{item=140192, destination="Dalaran L/10 60.92,44.72", cooldown=1200, cost=300}, -- Dalaran Hearthstone
 }
+
+
+
+
+
+
+
+
 
 data.ZoneContLev = {
   [4] = { cont=1,level=1 },

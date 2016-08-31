@@ -260,22 +260,30 @@ function Goldguide:MakeInfoPages()
 		:SetDiffBarPercent(FARM_INFO_DIFF_PERCENT)
 		:Hide()
 	.__END
+	for i,con in ipairs(FARM_INFO_CONS) do MF.Infopages.Farming:AddCon(con) end
+	for i,pro in ipairs(FARM_INFO_PROS) do MF.Infopages.Farming:AddPro(pro) end
 
 	MF.Infopages.Gathering = CHAIN(GetInfoFrame(MF.ContentFrame))
 		:SetSummaryText(GATHER_INFO_SUMMARY)
 		:SetDiffBarPercent(GATHER_INFO_DIFF_PERCENT)
 		:Hide()
 	.__END
+	for i,con in ipairs(GATHER_INFO_CONS) do MF.Infopages.Gathering:AddCon(con) end
+	for i,pro in ipairs(GATHER_INFO_PROS) do MF.Infopages.Gathering:AddPro(pro) end
 
 	MF.Infopages.Crafting = CHAIN(GetInfoFrame(MF.ContentFrame))
 		:SetSummaryText(CRAFTING_INFO_SUMMARY)
 		:SetDiffBarPercent(CRAFTING_INFO_DIFF_PERCENT)
 		:Hide()
 	.__END
+	for i,con in ipairs(CRAFTING_INFO_CONS) do MF.Infopages.Crafting:AddCon(con) end
+	for i,pro in ipairs(CRAFTING_INFO_PROS) do MF.Infopages.Crafting:AddPro(pro) end
 
 	MF.Infopages.Auctions = CHAIN(GetInfoFrame(MF.ContentFrame))
 		:SetSummaryText(AUCTION_INFO_SUMMARY)
 		:SetDiffBarPercent(AUCTION_INFO_DIFF_PERCENT)
 		:Hide()
 	.__END
+	for i,con in ipairs(AUCTION_INFO_CONS) do MF.Infopages.Auctions:AddCon(con) end
+	for i,pro in ipairs(AUCTION_INFO_PROS) do MF.Infopages.Auctions:AddPro(pro) end
 end

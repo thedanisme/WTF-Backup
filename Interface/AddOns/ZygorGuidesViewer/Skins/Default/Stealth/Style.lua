@@ -91,9 +91,11 @@ STYLE.CreatureBackdrop=STYLE.MainBackdrop
 STYLE.CreatureBackdropColor=STYLE.MainBackdropColor
 STYLE.CreatureBackdropBorderColor=STYLE.MainBackdropBorderColor
 
+--[[ CreatureViewer removal, 7.0
 STYLE.CreatureViewerLabelBackground = STYLE.SecBackdropColor
 STYLE.CreatureViewerLabelColor = {1.0,1.0,1.0,1.0}
 STYLE.CreatureViewerGap = {-10,0}
+--]]
 
 STYLE.MoneyBackdrop=STYLE.MainBackdrop
 STYLE.MoneyBackdropColor=STYLE.MainBackdropColor

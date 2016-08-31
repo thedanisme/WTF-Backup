@@ -28,7 +28,7 @@ do
 	Lib.master = { }
 	Lib.saved_tables = { }
 
-	local Astrolabe = DongleStub("Astrolabe-ZGV")
+	local HBD = LibStub("HereBeDragons-1.0")
 
 	--Lib.TaxiNames_Local = nil
 	--Lib.TaxiNames_English = nil
@@ -202,7 +202,7 @@ do
 					if node.faction~=enemyfac then
 						Lib.path2cont[node.name] = c
 						node.m = z
-						node.c = Astrolabe.WorldMapSize[z].system
+						node.c = HBD:GetMapContinent(z)
 						n=n+1
 					else
 						tremove(zone,n)
@@ -257,6 +257,7 @@ do
 	
 	function Lib:FindTaxiByTag(cont,tag)
 		if not Lib.taxitag2point[cont] then Lib:CacheTaxiTags() end
+		Lib.taxitag2point[cont] = Lib.taxitag2point[cont] or {}
 		return Lib.taxitag2point[cont][tag]
 	end
 
@@ -407,6 +408,7 @@ do
 				--tinsert(self.errors,("taxi missing in data: %s [%s] [%.5f,%.5f]"):format(name,taxitag,taxix,taxiy))
 			end
 
+			Lib.flightcost[cont]=Lib.flightcost[cont] or {}
 			Lib.flightcost[cont][taxitag]=Lib.flightcost[cont][taxitag] or {}
 			local fcdata = Lib.flightcost[cont][taxitag]
 			fcdata.name = fcdata.name or name
@@ -432,6 +434,9 @@ do
 
 		local connections=0
 
+		self.fc_by_tag[cont] = self.fc_by_tag[cont] or {}
+		self.fcnames_by_tag[cont] = self.fcnames_by_tag[cont] or {}
+		
 		for dest=1,NumTaxiNodes() do if TaxiNodeGetType(dest)=="REACHABLE" then
 			local startnode,endnode,starttag,endtag
 			local x,y
@@ -872,11 +877,11 @@ do
 
 	function Lib:GetTaxiByTarget()
 		local id = UnitGUID("target")
-		print("Finding taxi by target: "..tostring(id)) -- DEBUGTAXITARGET
+		--print("Finding taxi by target: "..tostring(id)) -- DEBUGTAXITARGET
 		if not id then return end
 		id = id:match("Creature%-%d+%-%d+%-%d+%-%d+%-(%d+)")  if not id then return end
 		id=tonumber(id)
-		print("NPC ID: "..tostring(id)) -- DEBUGTAXITARGET
+		--print("NPC ID: "..tostring(id)) -- DEBUGTAXITARGET
 		for c,cont in pairs(Lib.taxipoints) do
 			for z,zone in pairs(cont) do
 				for ni,node in pairs(zone) do

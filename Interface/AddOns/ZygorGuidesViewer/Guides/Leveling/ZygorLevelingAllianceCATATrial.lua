@@ -43,17 +43,8 @@ accept Lockdown in Anvilmar##24473 |goto 67.1,41.3
 step
 talk Jona Ironstock##37087
 |tip She walks around the forge at the center of the room.
-turnin Lockdown in Anvilmar##24473 |goto 61.8,22.5
+turnin Lockdown in Anvilmar##24473 |goto 60.6,21.0
 accept First Things First: We're Gonna Need Some Beer##24474
-accept Consecrated Rune##3107 |only Dwarf Paladin
-accept Simple Rune##3106 |only Dwarf Warrior
-accept Encrypted Rune##3109 |only Dwarf Rogue
-accept Hallowed Rune##3110 |only Dwarf Priest
-accept Tainted Rune##3115 |only Dwarf Warlock
-accept Etched Rune##3108 |only Dwarf Hunter
-accept Arcane Rune##24496 |only Dwarf Mage
-accept Empowered Rune##24494 |only Dwarf Shaman
-accept Elegant Rune##31150 |only Dwarf Monk
 step
 talk Grundel Harkin##1104
 accept Dwarven Artifacts##24477 |goto 61.7,22.1
@@ -100,131 +91,7 @@ turnin Make Hay While the Sun Shine##24486 |goto 61.7,22.1
 step
 talk Jona Ironstock##37087
 turnin All the Other Stuff##24475 |goto 61.8,22.5
-accept Whitebeard Needs Ye##24487
-step
-talk Bromos Grummner##926
-turnin Consecrated Rune##3107 |goto 61.9,24.5
-accept The Power of Light##24528
-only Dwarf Paladin
-step
-Cast Seal of Command on yourself, then strike the Training Dummy |q 24528/2 |goto 62.2,29.2
-only Dwarf Paladin
-step
-talk Bromos Grummner##926
-turnin The Power of Light##24528 |goto 61.9,24.5
-only Dwarf Paladin
-step
-talk Thran Khorman##912
-turnin Simple Rune##3106 |goto 61.9,19.0
-accept Getting Battle-Ready##24531 |goto 61.9,19.0
-only Dwarf Warrior
-step
-Use Charge on a Training Dummy
-Practice using Charge |q 24531/2 |goto 62.2,29.2
-modelnpc Training Dummy##44548
-only Dwarf Warrior
-step
-talk Thran Khorman##912
-turnin Getting Battle-Ready##24531 |goto 61.9,19.0
-only Dwarf Warrior
-step
-talk Solm Hargrin##916
-turnin Encrypted Rune##3109 |goto 59.6,20.4
-accept Evisceratin' the Enemy##24532
-only Dwarf Rogue
-step
-Use Sinister Strike on the Target Dummies to build up combo points, then use Eviscerate on the Target Dummies
-Practice Eviscerate 3 times |q 24532/2 |goto 62.2,29.2
-modelnpc Training Dummy##44548
-only Dwarf Rogue
-step
-talk Solm Hargrin##916
-turnin Evisceratin' the Enemy##24532 |goto 59.6,20.4
-only Dwarf Rogue
-step
-talk Branstock Khalder##837
-turnin Hallowed Rune##3110 |goto 60.7,14.7
-accept Words of Power##24533 |goto 60.7,14.7
-only Dwarf Priest
-step
-Use Shadow Word: Pain on the Training Dummies
-Practice using Shadow Word: Pain 5 times |q 24533/2 |goto 62.2,29.2
-modelnpc Training Dummy##44548
-only Dwarf Priest
-step
-talk Branstock Khalder##837
-turnin Words of Power##24533 |goto 60.7,14.7
-only Dwarf Priest
-step
-talk Saripal Smolderbrew##43455
-turnin Tainted Rune##3115 |goto 61.2,17.5
-accept Corruption##26904 |goto 61.2,17.5
-only Dwarf Warlock
-step
-Use Corruption 5 times on the Training Dummies.
-Practice Corruption 5 times |q 26904/2 |goto 62.2,29.2
-modelnpc Training Dummy##44548
-only Dwarf Warlock
-step
-talk Saripal Smolderbrew##43455
-turnin Corruption##26904 |goto 61.2,17.5
-only Dwarf Warlock
-step
-talk Thorgas Grimson##895
-turnin Etched Rune##3108 |goto 63.7,20.1
-accept Oh, A Hunter's Life For Me##24530 |goto 63.7,20.1
-only Dwarf Hunter
-step
-Use the Steady Shot ability on the Training Dummy
-Practice Steady Shot 5 times |q 24530/2 |goto 62.2,29.2
-modelnpc Training Dummy##44548
-only Dwarf Hunter
-step
-talk Thorgas Grimson##895
-turnin Oh, A Hunter's Life For Me##24530 |goto 63.7,20.1
-only Dwarf Hunter
-step
-talk Teegli Merrowith##37121
-turnin Arcane Rune##24496 |goto 61.3,14.5
-accept Filling Up the Spellbook##24526 |goto 61.3,14.5
-only Dwarf Mage
-step
-Use Frost Nova on the Training Dummies
-Practice using Frost Nova 2 times |q 24526/2 |goto 62.2,29.2
-modelnpc Training Dummy##44548
-only Dwarf Mage
-step
-talk Teegli Merrowith##37121
-turnin Filling Up the Spellbook##24526 |goto 61.3,14.5
-only Dwarf Mage
-step
-talk Teo Hammerstorm##37115
-turnin Empowered Rune##24494 |goto 61.2,13.8
-accept Your Path Begins Here##24527 |goto 61.2,13.8
-only Dwarf Shaman
-step
-Use Primal Strike on the Training Dummies
-Practice Primal Strike 2 times |q 24527/2 |goto 62.2,29.2
-modelnpc Training Dummy##44548
-only Dwarf Shaman
-step
-talk Teo Hammerstorm##37115
-turnin Your Path Begins Here##24527 |goto 61.2,13.8
-only Dwarf Shaman
-step
-talk Lo##63285
-turnin Elegant Rune##31150 |goto 63.2,22.2
-accept Kick, Punch, It's All in the Mind##31151 |goto 63.2,22.2
-only Dwarf Monk
-step
-Use Tiger Palm on the training dummies
-Practice Tiger Palm  |q 31151/2 |goto 62.2,29.2
-modelnpc Training Dummy##44548
-only Dwarf Monk
-step
-talk Lo##63285
-turnin Kick, Punch, It's All in the Mind##31151 |goto 63.2,22.2
-only Dwarf Monk
+accept Whitebeard Needs Ye##24487 |goto 61.8,22.5
 step
 talk Grelin Whitebeard##786
 turnin Whitebeard Needs Ye##24487 |goto 42.7,62.2
@@ -379,6 +246,7 @@ accept The Future of Gnomeregan##26203 |only Gnome Warrior |goto New Tinkertown 
 accept The Future of Gnomeregan##26206 |only Gnome Rogue |goto New Tinkertown 39.5,38.4
 accept The Future of Gnomeregan##26199 |only Gnome Priest |goto New Tinkertown 39.5,38.4
 accept The Future of Gnomeregan##31135 |only Gnome Monk |goto New Tinkertown 39.5,38.4
+accept The Future of Gnomeregan##42396 |only Gnome Hunter |goto New Tinkertown 39.5,38.4
 step
 talk "Doc" Cogspin##42323
 turnin The Future of Gnomeregan##26199 |goto 39.4,28.4
@@ -410,6 +278,11 @@ turnin The Future of Gnomeregan##31135 |goto 40.1,35.6
 accept Meet the High Tinker##31137 |goto 40.1,35.6
 only Gnome Monk
 step
+talk Muffinus Chromebrew##103614
+turnin The Future of Gnomeregan##42396 |goto 41.9,31.6
+accept Meet the High Tinker##41218 |goto 41.9,31.6
+only Gnome Hunter
+step
 talk High Tinker Mekkatorque##42317
 turnin Meet the High Tinker##31137 |only Gnome Monk |goto 38.7,32.8
 turnin Meet the High Tinker##26424 |only Gnome Warlock |goto 38.7,32.8
@@ -417,6 +290,7 @@ turnin Meet the High Tinker##26421 |only Gnome Mage |goto 38.7,32.8
 turnin Meet the High Tinker##26425 |only Gnome Warrior |goto 38.7,32.8
 turnin Meet the High Tinker##26423 |only Gnome Rogue |goto 38.7,32.8
 turnin Meet the High Tinker##26422 |only Gnome Priest |goto 38.7,32.8
+turnin Meet the High Tinker##41218 |only Gnome Hunter |goto 38.7,32.8
 accept The Fight Continues##26208 |goto 38.7,32.8
 Watch the dialogue
 Learn about Operation: Gnomeregan |q 26208/1
@@ -452,64 +326,6 @@ step
 talk Corporal Fizzwhistle##42630
 turnin Dealing with the Fallout##26265 |goto 38.2,40.2
 step
-talk "Doc" Cogspin##42323
-accept The Arts of a Priest##26200 |goto 39.4,28.4
-only Gnome Priest
-step
-Use your Shadow Word: Pain ability on the Training Dummies.
-Practice casting Shadow Word: Pain 5 times |q 26200/2 |goto 41.0,34.9
-only Gnome Priest
-modelnpc Training Dummy##44548
-step
-talk Kelsey Steelspark##42366
-accept The Arts of a Rogue##26207 |goto 38.0,33.6
-only Gnome Rogue
-step
-Use Sinister Strike on the Training Dummies to build up combo points, then use Eviscerate on the Training Dummies
-Practice using Eviscerate 3 times |q 26207/2 |goto 41.0,34.9
-only Gnome Rogue
-modelnpc Training Dummy##44548
-step
-talk Drill Sergeant Steamcrank##42324
-accept The Art of a Warrior##26204 |goto 40.6,35.4
-only Gnome Warrior
-step
-Use your Charge ability on the Training Dummy
-Practice using Charge |q 26204/2 |goto 41.0,34.9
-only Gnome Warrior
-modelnpc Training Dummy##44548
-step
-talk Bipsi Frostflinger##42331
-accept The Arts of a Mage##26198 |goto 41.1,29.1
-only Gnome Mage
-step
-Use Frost Nova on the Training Dummies.
-Practice casting Frost Nova 2 times |q 26198/2 |goto 41.0,34.9
-only Gnome Mage
-modelnpc Training Dummy##44548
-step
-talk Alamar Grimm##460
-accept The Power of a Warlock##26201 |goto 37.7,38.0
-only Gnome Warlock
-step
-Use your Corruption ability on a Training Dummy
-Practice Casting Corruption 5 times |q 26201/2 |goto 41.0,34.9
-only Gnome Warlock
-modelnpc Training Dummy##44548
-step
-talk Xi, Friend to the Small##63238
-accept The Arts of a Monk##31138 |goto 40.1,35.6
-only Gnome Monk
-step
-Use Jab to generate chi, then use your Tiger Palm ability on the Training Dummy.
-Practice Tiger Palm 2 times |q 31138/2 |goto 41.0,34.9
-modelnpc Training Dummy##44548
-only Gnome Monk
-step
-talk Xi, Friend to the Small##63238
-turnin The Arts of a Monk##31138 |goto 40.1,35.6
-only Gnome Monk
-step
 talk Engineer Grindspark##42553
 turnin A Job for the Multi-Bot##26205 |goto 40.6,28.1
 step
@@ -518,26 +334,6 @@ turnin What's Left Behind##26264 |goto 39.2,26.6
 step
 talk Captain Tread Sparknozzle##42489
 accept What's Keeping Jessup?##26316 |goto 38.4,33.5
-step
-talk "Doc" Cogspin##42323
-turnin The Arts of a Priest##26200 |goto 39.4,28.4
-only Gnome Priest
-step
-talk Kelsey Steelspark##42366
-turnin The Arts of a Rogue##26207 |goto 38.0,33.6
-only Gnome Rogue
-step
-talk Bipsi Frostflinger##42331
-turnin The Arts of a Mage##26198 |goto 41.1,29.1
-only Gnome Mage
-step
-talk Alamar Grimm##460
-turnin The Power of a Warlock##26201 |goto 37.7,38.0
-only Gnome Warlock
-step
-talk Drill Sergeant Steamcrank##42324
-turnin The Arts of a Warrior##26204 |goto 40.6,35.4
-only Gnome Warrior
 step
 talk Jessup McCree##42708
 turnin What's Keeping Jessup?##26316 |goto 37.3,65.2
@@ -678,150 +474,23 @@ kill 8 Blackrock Spy##49874+ |q 29079/1 |goto 25.4,41.1 |only !Human
 step
 talk Marshal McBride##197
 turnin Lions for Lambs##28769 |goto 33.6,53.0 |only Human Mage
-accept Glyphic Letter##3104 |goto 33.6,53.0 |only Human Mage
-|tip You need to be at level 3 to get this quest. |only Human Mage
+accept Join the Battle!##28784 |only Human Mage
 turnin Lions for Lambs##28770 |goto 33.6,53.0 |only Human Paladin
-accept Consecrated Letter##3101 |goto 33.6,53.0 |only Human Paladin
-|tip You need to be at level 3 to get this quest. |only Human Paladin
+accept Join the Battle!##28785 |only Human Paladin
 turnin Lions for Lambs##28771 |goto 33.6,53.0 |only Human Priest
-accept Hallowed Letter##3103 |goto 33.6,53.0 |only Human Priest
-|tip You need to be at level 3 to get this quest. |only Human Priest
+accept Join the Battle!##28786 |only Human Priest
 turnin Lions for Lambs##28772 |goto 33.6,53.0 |only Human Rogue
-accept Encrypted Letter##3102 |goto 33.6,53.0 |only Human Rogue
-|tip You need to be at level 3 to get this quest. |only Human Rogue
+accept Join the Battle!##28787 |only Human Rogue
 turnin Lions for Lambs##28773 |goto 33.6,53.0 |only Human Warlock
-accept Tainted Letter##3105 |goto 33.6,53.0 |only Human Warlock
-|tip You need to be at level 3 to get this quest. |only Human Warlock
+accept Join the Battle!##28788 |only Human Warlock
 turnin Lions for Lambs##28774 |goto 33.6,53.0 |only Human Warrior
-accept Simple Letter##3100 |goto 33.6,53.0 |only Human Warrior
-|tip You need to be at level 3 to get this quest. |only Human Warrior
+accept Join the Battle!##28789 |only Human Warrior
 turnin Lions for Lambs##28759 |goto 33.6,53.0 |only Human Hunter
-accept Etched Letter##26910 |goto 33.6,53.0 |only Human Hunter
-|tip You need to be at level 3 to get this quest. |only Human Hunter
+accept Join the Battle!##28780 |only Human Hunter
 turnin Lions for Lambs##31140 |goto 33.6,53.0 |only Human Monk
-accept Calligraphed Letter##31141 |goto 33.6,53.0 |only Human Monk
-|tip You need to be at level 3 to get this quest. |only Human Monk
+accept Join the Battle!##31143 |only Human Monk
 turnin Lions for Lambs##29079 |goto 33.6,53.0 |only !Human
 accept Join the Battle!##29080 |goto 33.6,53.0 |only !Human
-step
-talk Khelden Bremen##198
-turnin Glyphic Letter##3104 |goto 38.8,43.5
-accept Mastering the Arcane##26916 |goto 38.8,43.5
-only Human Mage
-step
-Use your _Frost Nova_ ability on the Training Dummy
-Practice Frost Nova #2# Times |q 26916/2 |goto 35.0,60.7
-modelnpc Training Dummy##44548
-only Human Mage
-step
-talk Khelden Bremen##198
-turnin Mastering the Arcane##26916 |goto 38.8,43.5
-accept Join the Battle!##28784 |goto 38.8,43.5
-only Human Mage
-step
-talk Jorik Kerridan##915
-turnin Encrypted Letter##3102 |goto 41.2,45.4
-accept The Deepest Cut##26915 |goto 41.2,45.4
-only Human Rogue
-step
-Use your _Eviscerate_ ability on the Training Dummy
-Practice Eviscerate #3# Times |q 26915/2 |goto 35.0,60.7
-modelnpc Training Dummy##44548
-only Human Rogue
-step
-talk Jorik Kerridan##915
-turnin The Deepest Cut##26915 |goto 41.2,45.4
-accept Join the Battle!##28787 |goto 41.2,45.4
-only Human Rogue
-step
-talk Drusilla La Salle##459
-turnin Tainted Letter##3105 |goto 39.6,55.1
-accept Corruption##26914 |goto 39.6,55.1
-only Human Warlock
-step
-Use your _Corruption_ ability on the Training Dummy
-Practice using Corruption #5# Times |q 26914/2 |goto 35.0,60.7
-modelnpc Training Dummy##44548
-only Human Warlock
-step
-talk Drusilla La Salle##459
-turnin Corruption##26914 |goto 39.6,55.1
-accept Join the Battle!##28788 |goto 39.6,55.1
-only Human Warlock
-step
-talk Ashley Blank##43278
-turnin Etched Letter##26910 |goto 34.8,54.8
-accept The Hunter's Path##26917 |goto 34.8,54.8
-only Human Hunter
-step
-Use your _Steady Shot_ ability on the Training Dummy
-Practice Steady Shot #5# Times |q 26917/1 |goto 35.0,60.7
-modelnpc Training Dummy##44548
-only Human Hunter
-step
-talk Ashley Blank##43278
-turnin The Hunter's Path##26917 |goto 34.8,54.8
-accept Join the Battle!##28780 |goto 34.8,54.8
-only Human Hunter
-step
-talk Priestess Anetta##375
-turnin Hallowed Letter##3103 |goto 39.3,43.8
-accept Learning the Word##26919 |goto 39.3,43.8
-only Human Priest
-step
-Use your _Shadow Word: Pain_ ability on the Training Dummy
-Practice Shadow Word: Pain #5# Times |q 26919/2 |goto 35.0,60.7
-modelnpc Training Dummy##44548
-only Human Priest
-step
-talk Priestess Anetta##375
-turnin Learning the Word##26919 |goto 39.3,43.8
-accept Joining the Battle!##28786 |goto 39.3,43.8
-only Human Priest
-step
-talk Brother Sammuel##925
-turnin Consecrated Letter##3101 |goto 41.5,53.2
-accept The Power of the Light##26918 |goto 41.5,53.2
-only Human Paladin
-step
-Use your _Seal of Command_ ability
-Strike the Training Dummy |q 26918/2 |goto 35.0,60.7
-only Human Paladin
-step
-talk Brother Sammuel##925
-turnin The Power of the Light##26918 |goto 41.5,53.2
-accept Join the Battle!##28785 |goto 41.5,53.2
-only Human Paladin
-step
-talk Llane Beshere##911
-turnin Simple Letter##3100 |goto 40.9,53.8
-accept Charging into Battle##26913 |goto 40.9,53.8
-only Human Warrior
-step
-Use your _Charge_ ability on a Training Dummy.
-Practice Charge |q 26913/2 |goto 35.0,60.7
-modelnpc Training Dummy##44548
-only Human Warrior
-step
-talk Llane Beshere##911
-turnin Charging into Battle##26913 |goto 40.9,53.8
-accept Join the Battle!##28789 |goto 40.9,53.8
-only Human Warrior
-step
-talk Bao##63258
-turnin Calligraphed Letter##31141 |goto 41.2,52.1
-accept Palm of the Tiger##31142 |goto 41.2,52.1
-only Human Monk
-step
-Use your _Tiger Palm_ ability on a Training Dummy
-Practice Tiger Palm |q 31142/2 |goto 35.0,60.7
-modelnpc Training Dummy##44548
-only Human Monk
-step
-talk Bao##63258
-turnin Palm of the Tiger##31142 |goto 41.2,52.1
-accept Join the Battle!##31143 |goto 41.2,52.1
-only Human Monk
 step
 talk Sergeant Willem##823
 turnin Join the Battle!##28789 |goto 35.7,39.8 |only Human Warrior
@@ -2477,6 +2146,9 @@ Around [Loch Modan,39.8,52.3]
 step "Forestlurker"
 kill 8 Forest Lurker##1195+ |q 25118/1
 step
+click Stolen Explorers' League Document##3365
+accept Explorers' League Document (2 of 6)##13655 |goto 41.35,39.04
+step
 talk Magistrate Bluntnose##1139
 turnin Wanted: The Dark Iron Spy##13648 |goto 34.6,43.1
 step
@@ -3829,7 +3501,7 @@ stickystart "Lasher"
 stickystart "Flower"
 step "Lasher"
 kill Mutated Root Lasher##16517+
-collect 10 Lasher Sample |q 9293/1
+collect 10 Lasher Sample |q 9293/1 |goto 36.6,48.5
 step "Flower"
 click Corrupted Flower##6662
 collect 3 Corrupted Flower##24416 |q 9799/1 |goto 36.6,48.5
@@ -3840,92 +3512,6 @@ step
 talk Botanist Taerix##16514
 turnin What Must Be Done...##9293 |goto 49.9,37.4
 accept Healing the Lake##9294 |goto 49.9,37.4
-step
-talk Aurelon##16501
-accept The Light's Power##26966 |goto 52.0,41.1
-only Draenei Paladin
-step
-Use your Seal of Command ability, then strike a Training Dummy |q 26966/2 |goto 51.0,37.1
-modelnpc Training Dummy##44548
-only Draenei Paladin
-step
-talk Aurelon##16501
-turnin The Light's Power##26966 |goto 52.0,41.1
-only Draenei Paladin
-step
-talk Firmanvaar##17089
-accept Primal Strike##26969 |goto 50.3,43.1
-only Draenei Shaman
-step
-Use your Primal Strike abilty on the Training Dummy
-Practice Primal Strike 3 times |q 26969/2 |goto 51.0,37.1
-modelnpc Training Dummy##44548
-only Draenei Shaman
-step
-talk Firmanvaar##17089
-turnin Primal Strike##26969 |goto 50.3,43.1
-only Draenei Shaman
-step
-Use your Shadow Word: Pain ability on target dummies.
-Practice Shadow Word: Pain 5 times |q 26970/2 |goto 51.0,37.1
-modelnpc Training Dummy##44548
-only Draenei Priest
-step
-talk Zalduun##16502
-turnin Learning the Word##26970 |goto 52.5,41.2
-only Draenei Priest
-step
-talk Valaatu##16500
-accept Frost Nova##26968 |goto 50.9,42.3
-only Draenei Mage
-step
-Use your Frost Nova ability on the Training Dummy
-Practice Frost Nova 2 times |q 26968/2 |goto 51.3,36.5
-modelnpc Training Dummy##44548
-only Draenei Mage
-step
-talk Valaatu##16500
-turnin Frost Nova##26968 |goto 50.9,42.3
-only Draenei Mage
-step
-talk Keilnei##16499
-accept Steadying Your Shot##26963 |goto 51.5,44.3
-only Draenei Hunter
-step
-Use your Steady Shot ability on the Training Dummy
-Practice Steady Shot 5 times |q 26963/2 |goto 51.3,36.5
-modelnpc Training Dummy##44548
-only Draenei Hunter
-step
-talk Keilnei##16499
-turnin Steadying Your Shot##26963 |goto 51.5,44.3
-only Draenei Hunter
-step
-talk Kore##16503
-accept Your First Lesson##26958 |goto 50.9,43.7
-only Draenei Warrior
-step
-Use your Charge ability on a Training Dummy
-Practice Charge |q 26958/2 |goto 51.3,36.5
-modelnpc Training Dummy##44548
-only Draenei Warrior
-step
-talk Kore##16503
-turnin Your First Lesson##26958 |goto 50.9,43.7
-only Draenei Warrior
-step
-talk Mojo Stormstout##63335
-accept The Tiger Palm##31173 |goto 50.6,48.4
-only Draenei Monk
-step
-Use your Tiger Palm ability on a Training Dummy
-Practice Tiger Palm |q 31173/2 |goto 51.3,36.5
-modelnpc Training Dummy##44548
-only Draenei Monk
-step
-talk Mojo Stormstout##63335
-turnin The Tiger Palm##31173 |goto 50.6,48.4
-only Draenei Monk
 step
 use Neutralizing Agent##22955
 Disperse the Neutralizing Agent |q 9294/1 |goto 45.5,64.7
@@ -4987,118 +4573,6 @@ turnin Fel Moss Corruption##28714 |goto 46.3,73.5
 step
 talk Melithar Staghelm##2077
 turnin Demonic Thieves##28715 |goto 46.0,72.9
-accept Forbidden Sigil##26841 |only NightElf Mage |goto 46.0,72.9
-accept Simple Sigil##3116 |only NightElf Warrior |goto 46.0,72.9
-accept Etched Sigil##3117 |only NightElf Hunter |goto 46.0,72.9
-accept Encrypted Sigil##3118 |only NightElf Rogue |goto 46.0,72.9
-accept Hallowed Sigil##3119 |only NightElf Priest |goto 46.0,72.9
-accept Verdant Sigil##3120 |only NightElf Druid |goto 46.0,72.9
-accept Calligraphed Sigil##31168 |only NightElf Monk |goto 46.0,72.9
-step
-talk Rhyanda##43006
-turnin Forbidden Sigil##26841 |goto 49.8,61.8
-accept Frost Nova##26940 |goto 49.8,61.8
-only NightElf Mage
-step
-Use Frost Nova on the Training Dummy
-Practice Frost Nova |q 26940/2 |goto 47.5,59.1
-modelnpc Training Dummy##44548
-only NightElf Mage
-step
-talk Rhyanda##43006
-turnin Frost Nova##26940 |goto 49.8,61.8
-accept Priestess of the Moon##28723 |goto 49.8,61.8
-only NightElf Mage
-step
-talk Alyissia##3593
-turnin Simple Sigil##3116 |goto Shadowglen 47.8,61.8
-accept Learning New Techniques##26945 |goto Shadowglen 47.8,61.8
-only NightElf Warrior
-step
-Use Charge on the Training Dummy
-Practice Charge |q 26945/2 |goto 47.5,59.1
-modelnpc Training Dummy##44548
-only NightElf Warrior
-step
-talk Alyissia##3593
-turnin Learning New Techniques##26945 |goto 47.8,61.8
-accept Priestess of the Moon##28723 |goto 47.8,61.8
-only NightElf Warrior
-step
-talk Ayanna Everstride##3596
-turnin Etched Sigil##3117 |goto 48.0,61.6
-accept A Woodsman's Training##26947 |goto 48.0,61.6
-only NightElf Hunter
-step
-Use Steady Shot on the Training Dummies
-Practice Steady Shot |q 26947/2 |goto 47.5,59.1
-modelnpc Training Dummy##44548
-only NightElf Hunter
-step
-talk Ayanna Everstride##3596
-turnin A Woodsman's Training##26947 |goto 48.0,61.6
-accept Priestess of the Moon##28723 |goto 48.0,61.6
-only NightElf Hunter
-step
-talk Frahun Shadewhisper##3594
-turnin Encrypted Sigil##3118 |goto 47.9,62.1
-accept A Rogue's Advantage##26946 |goto 47.9,62.1
-only NightElf Rogue
-step
-Use Sinister Strike on the Training Dummy to build up combo points and then Eviscerate.
-Practice using Eviscerate |q 26946/2 |goto 47.5,59.1
-modelnpc Training Dummy##44548
-only NightElf Rogue
-step
-talk Frahun Shadewhisper##3594
-turnin A Rogue's Advantage##26946 |goto 47.9,62.1
-accept Priestess of the Moon##28723 |goto 47.9,62.1
-only NightElf Rogue
-step
-talk Shanda##3595
-turnin Hallowed Sigil##3119 |goto 49.5,61.2
-accept Learning the Word##26949 |goto 49.5,61.2
-only NightElf Priest
-step
-Use Shadow Word: Pain on the Training Dummy
-Practice Shadow Word: Pain |q 26949/2 |goto 47.5,59.1
-modelnpc Training Dummy##44548
-only NightElf Priest
-step
-talk Shanda##3595
-turnin Learning the Word##26949 |goto 49.5,61.2
-accept Priestess of the Moon##28723 |goto 49.5,61.2
-only NightElf Priest
-step
-talk Mardant Strongoak##3597
-turnin Verdant Sigil##3120 |goto 46.6,56.7
-accept Moonfire##26948 |goto 46.6,56.7
-only NightElf Druid
-step
-Use your Moonfire ability spell on the Training Dummy
-Practice Moonfire |q 26948/2 |goto 47.5,59.1
-modelnpc Training Dummy##44548
-only NightElf Druid
-step
-talk Mardant Strongoak##3597
-turnin Moonfire##26948 |goto 46.6,56.7
-accept Priestess of the Moon##28723 |goto 46.6,56.7
-only NightElf Druid
-step
-talk Laoxi##63331
-turnin Calligraphed Sigil##31168 |goto 50.1,63.0
-accept The Art of the Monk##31169 |goto 50.1,63.0
-only NightElf Monk
-step
-Use Jab to generate chi, then use Tiger Palm on the Training Dummy
-Practice Tiger Palm |q 31169/2 |goto 47.5,59.1
-modelnpc Training Dummy##44548
-only NightElf Monk
-step
-talk Laoxi##63331
-turnin The Art of the Monk##31169 |goto 50.1,63.0
-accept Priestess of the Moon##28723 |goto 50.1,63.0
-only NightElf Monk
 step
 talk Dentaria Silverglade##49479
 turnin Priestess of the Moon##28723 |goto 42.5,50.6
@@ -5488,7 +4962,7 @@ step
 talk Tyrande Whisperwind##7999
 turnin Home of the Kaldorei##14039 |goto 43.0,78.1
 step
-Go inside the pink portal |goto Teldrassil 36.9,50.5
+Go inside the pink portal |goto Darnassus 36.9,50.5
 confirm
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Darkshore (11-21)\\Darkshore (11-16)",{
@@ -6401,106 +5875,36 @@ accept The Winds Know Your Name... Apparently##14280 |goto 70.8,55.1 |only Worge
 step
 talk Sergeant Cleese##35839
 turnin Your Instructor##14265 |goto 67.1,63.5
-accept Charge##14266 |goto 67.1,63.5 |noobsolete
-only Worgen Warrior
-step
-Use your Charge ability on one of the Bloodfang Worgen
-modelnpc Bloodfang Worgen##35118
-Practice using Charge |q 14266/2 |goto 66.3,61.6
-only Worgen Warrior
-step
-talk Sergeant Cleese##35839
-turnin Charge##14266 |goto 67.1,63.5
 accept Safety in Numbers##14286 |goto 67.1,63.5 |noobsolete
 only Worgen Warrior
 step
 talk Loren the Fence##35871
 turnin Someone's Looking for You##14269 |goto 71.4,65.8
-accept Eviscerate##14272 |goto 71.4,65.8 |noobsolete
-only Worgen Rogue
-step
-Use Sinister Strike on one of the Bloodfang Worgens to build up combo points, then use Eviscerate on it
-modelnpc Bloodfang Worgen##35118
-Practice Eviscerate |q 14272/2 |goto 66.3,61.6
-only Worgen Rogue
-step
-talk Loren the Fence##35871
-turnin Eviscerate##14272 |goto 71.4,65.8
 accept Safety in Numbers##14285 |goto 71.4,65.8 |noobsolete
 only Worgen Rogue
 step
 talk Vitus Darkwalker##35869
 turnin Shady Associates##14273 |goto 71.4,64.4
-accept Corruption##14274 |goto 71.4,64.4 |noobsolete
-only Worgen Warlock
-step
-Use your Corruption ability on a Bloodfang Worgen
-|modelnpc Bloodfang Worgen##35118
-Practice Corruption |q 14274/2 |goto 66.3,61.6
-only Worgen Warlock
-step
-talk Vitus Darkwalker##35869
-turnin Corruption##14274 |goto 71.4,64.4
 accept Safety in Numbers##14287 |goto 71.4,64.4 |noobsolete
 only Worgen Warlock
 step
 talk Huntsman Blake##35874
 turnin Someone's Keeping Track of You##14275 |goto 71.5,61.3
-accept Steady Shot##14276 |goto 71.5,61.3 |noobsolete
-only Worgen Hunter
-step
-Use your Steady Shot ability on a Bloodfang Worgen
-modelnpc Bloodfang Worgen##35118
-Practice Steady Shot 2 times |q 14276/2 |goto 67.8,64.2
-only Worgen Hunter
-step
-talk Huntsman Blake##35874
-turnin Steady Shot##14276 |goto 71.5,61.3
 accept Safety in Numbers##14290 |goto 71.5,61.3 |noobsolete
 only Worgen Hunter
 step
 talk Myriam Spellwaker##35872
 turnin Arcane Inquiries##14277 |goto 68.0,64.7
-accept Frost Nova##14281 |goto 68.0,64.7
-only Worgen Mage
-step
-Use your Frost Nova ability on a Bloodfang Worgen
-|modelnpc Bloodfang Worgen##35118
-Practice Frost Nova |q 14281/2 |goto 67.8,64.2
-only Worgen Mage
-step
-talk Myriam Spellwaker##35872
-turnin Frost Nova##14281 |goto 68.0,64.7
 accept Safety in Numbers##14288 |goto 68.0,64.7
 only Worgen Mage
 step
 talk Sister Almyra##35870
 turnin Seek the Sister##14278 |goto 70.4,65.5
-accept Learning the Word##14279 |goto 70.4,65.5
-only Worgen Priest
-step
-Use your Shadow Word: Pain ability on a Bloodfang Worgen
-modelnpc Bloodfang Worgen##35118
-Practice Shadow Word: Pain 2 times |q 14279/2 |goto 68.2,64.2
-only Worgen Priest
-step
-talk Sister Almyra##35870
-turnin Learning the Word##14279 |goto 70.4,65.5
 accept Safety in Numbers##14289 |goto 70.4,65.5
 only Worgen Priest
 step
 talk Celestine of the Harvest##35873
 turnin The Winds Know Your Name... Apparently##14280 |goto 70.2,66.0
-accept Moonfire##14283 |goto 70.2,66.0
-only Worgen Druid
-step
-Use your Moonfire ability on a Bloodfang Worgen
-modelnpc Bloodfang Worgen##35118
-Practice Moonfire |q 14283/2 |goto 68.2,64.2
-only Worgen Druid
-step
-talk Celestine of the Harvest##35873
-turnin Moonfire##14283 |goto 70.2,66.0
 accept Safety in Numbers##14291 |goto 70.2,66.0
 only Worgen Druid
 step
@@ -6748,14 +6152,14 @@ turnin Grandma Wahl##14398 |goto 32.5,75.5
 accept Grandma's Lost It Alright##14399 |goto 32.5,75.5
 step
 click Linen-Wrapped Book##00255
-get Linen-Wrapped Book |q 14399/1 |goto 34.0,77.3
+collect Linen-Wrapped Book |q 14399/1 |goto 34.0,77.3
 step
 talk Grandma Wahl##36458
 turnin Grandma's Lost It Alright##14399 |goto 32.5,75.5
 accept I Can't Wear This##14400 |goto 32.5,75.5
 step
 click Grandma's Good Clothes##09122
-get Grandma's Good Clothes |q 14400/1 |goto 32.0,75.5
+collect Grandma's Good Clothes |q 14400/1 |goto 32.0,75.5
 step
 talk Grandma Wahl##36458
 turnin I Can't Wear This##14400 |goto 32.5,75.5
@@ -6774,13 +6178,13 @@ accept Not Quite Shipshape##14404 |goto 36.9,84.2
 accept Washed Up##14412 |goto 36.9,84.2
 step
 click Planks of Wood##06736
-get Planks of Wood |q 14404/2 |goto 36.1,86.4
+collect Planks of Wood |q 14404/2 |goto 36.1,86.4
 step
 click Shipwright's Tools##00317
-get Shipwright's Tools |q 14404/1 |goto 37.5,87.2
+collect Shipwright's Tools |q 14404/1 |goto 37.5,87.2
 step
 click Barrel of Coal Tar##09095
-get Coal Tar |q 14404/3 |goto 37.5,86.0
+collect Coal Tar |q 14404/3 |goto 37.5,86.0
 step
 kill 6 Forsaken Castaway##36488 |q 14412/1 |goto 36.7,85.8
 step
@@ -6825,7 +6229,7 @@ accept Introductions Are in Order##24472 |goto 51.8,80.5
 step
 Follow the path up |goto 50.8,83.2
 click Koroth's Banner##6957
-get Koroth's Banner |q 24472/2 |goto 46.7,83.3
+collect Koroth's Banner |q 24472/2 |goto 46.7,83.3
 step
 kill 4 Ogre Minion##36293+ |q 24472/1 |goto 47.1,85.1
 step
@@ -6846,7 +6250,7 @@ accept Pieces of the Past##24495 |goto 60.3,91.9
 step
 kill 6 Vilebrood Skitterer##36813 |q 24484/1 |goto 64.9,91.2
 click Old Journal Page##9130+
-get 6 Old Journal Page |q 24495/1
+collect 6 Old Journal Page |q 24495/1
 tip They look like pieces of paper laying on the ground and on boxes in this area.
 step
 talk Gwen Armstead##37102
@@ -6885,7 +6289,7 @@ accept Preparations##24628 |goto 69.3,73.0
 step
 kill 6 Howling Banshee##37757+ |q 24627/1 |goto 61.5,78.6
 click Moonleaf##270+
-get 6 Moonleaf |q 24628/1 |goto 61.5,78.6
+collect 6 Moonleaf |q 24628/1 |goto 61.5,78.6
 step
 talk Lord Darius Crowley##37195
 turnin At Our Doorstep##24627 |goto 68.7,73.2
@@ -6894,10 +6298,11 @@ step
 talk Vassandra Stormclaw##37873
 turnin Preparations##24628 |goto 69.3,73.0
 step
-Use the Horn of Tal'doren to distract the Veteran Dark Rangers |goto 58.5,77.0 |use Horn of Tal'doren##50134 |tip Using the horn before engaging the Dark Rangers will summon worgen to hold agro.
+Use the Horn of Tal'doren to distract the Veteran Dark Rangers |goto 58.5,77.0 |use Horn of Tal'doren##50134
+|tip Using the horn before engaging the Dark Rangers will summon worgen to hold agro.
 Run into the cabin to [57.5,75.6]
 click Worn Coffer##5743
-get Mysterious Artifact |q 24646/1 |goto 57.5,75.6
+collect Mysterious Artifact |q 24646/1 |goto 57.5,75.6
 modelnpc Veteran Dark Ranger##38022
 step
 talk Lord Darius Crowley##37195

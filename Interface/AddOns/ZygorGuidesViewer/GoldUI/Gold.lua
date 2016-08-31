@@ -306,6 +306,11 @@ function Gold:GetPriceStatus(itemid,price,itemCount,usingFaked,includeDeal)
 	return returntable
 end
 
+function ZGV:GOLD_SCANNED()
+	if ZGV.Gold.Goldguide then
+		ZGV.Gold.Goldguide:Update()
+	end
+end
 
 -- FAKE GOLD GUIDE, just to enable the GOLD section.
 ZygorGuidesViewer:RegisterGuide("GOLD\\Fake Guide",{

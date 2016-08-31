@@ -32,6 +32,7 @@ Goldguide.ITEM_AUCTION_STATUS = {
 	unscored = {"|cff777777","Unknown"}
 }
 
+local CRAFTING_SKILLS={"All","Mining","Jewelcrafting","Enchanting","Inscription","Blacksmithing","Engineering","Alchemy","Tailoring","Leatherworking","Cooking"}
 
 function Goldguide:Initialise()
 	Goldguide.OffsetFarming=0
@@ -68,7 +69,7 @@ function Goldguide:Initialise()
 
 	if ZGV.db.global.gold_info_pages then Goldguide.ShowInfoPage=true end
 
-	ZGV:AddMessage("GOLD_SCANNED",EventHandler)
+	ZGV:AddMessage("GOLD_SCANNED",Goldguide.EventHandler)
 
 	Goldguide:ShowWindow()
 end
@@ -82,6 +83,17 @@ function Goldguide:CalculateAllChores(refresh)
 	for _,chore in pairs(Goldguide.Chores.Gathering) do chore:CalculateDetails(refresh) chore.needsRefresh=refresh end
 	for _,chore in pairs(Goldguide.Chores.Crafting) do chore:CalculateDetails(refresh)  chore.needsRefresh=refresh end
 	for _,chore in pairs(Goldguide.Chores.Auctions) do chore:CalculateDetails(refresh)  chore.needsRefresh=refresh end
+
+	if refresh then
+		Goldguide.knows_crafting = false
+		for _,skillname in ipairs(CRAFTING_SKILLS) do
+			if ZGV:GetSkill(skillname).level>0 then
+				Goldguide.knows_crafting = true
+			end
+		end
+	end
+
+
 	Goldguide:Update()
 end
 
@@ -250,7 +262,11 @@ function Goldguide:Update()
 	if tab=="Crafting" then 
 		if results==0 then
 			if #Goldguide.Chores.Crafting==0 then
-				resultstatus = L["gold_crafting_no_results"]
+				if Goldguide.knows_crafting then
+					resultstatus = L["gold_crafting_error_recipesnotcached"]
+				else
+					resultstatus = L["gold_crafting_error_noprofessions"]
+				end
 			else
 				local type = Goldguide.Gathering_Frame.TypeDropdown:GetCurrentSelectedItem():GetText()
 				resultstatus = L["gold_crafting_error_noresults"]:format(type)

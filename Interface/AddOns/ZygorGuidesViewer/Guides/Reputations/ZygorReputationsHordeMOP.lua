@@ -1027,7 +1027,7 @@ step
 Enter the Temple here |goto Krasarang Wilds 40.4,51.7 |walk
 Go up the stairs |goto 41.2,55.8 |walk
 click The Emperor's Burden - Part 4##213422
-achieve The Seven Burdens of Shaohao##6855/4 |goto 40.5,56.6
+achieve The Seven Burdens of Shaohao##6855/3 |goto 40.5,56.6
 step
 Enter the cave here |goto Krasarang Wilds 52.2,86.3 |walk
 click Hozen Maturity##211993
@@ -1056,7 +1056,7 @@ click Watersmithing##215779
 achieve Fish Tales##6846/1 |goto The Jade Forest 66.0,87.6
 step
 click The Emperor's Burden - Part 3##213421
-achieve The Seven Burdens of Shaohao##6855/3 |goto The Jade Forest 55.9,56.8
+achieve The Seven Burdens of Shaohao##6855/2 |goto The Jade Forest 55.9,56.8
 step
 click The Emperor's Burden - Part 1##215799
 achieve The Seven Burdens of Shaohao##6855/1 |goto The Jade Forest 47.1,45.2
@@ -1086,7 +1086,7 @@ click Yaungoil##
 achieve The Song of the Yaungol##6847/3 |goto Kun-Lai Summit 71.7,63.0
 step
 click The Emperor's Burden - Part 6##
-achieve The Seven Burdens of Shaohao##6855/6 |goto Kun-Lai Summit 67.8,48.4
+achieve The Seven Burdens of Shaohao##6855/4 |goto Kun-Lai Summit 67.8,48.4
 step
 click Victory in Kun-Lai##
 achieve What is Worth Fighting For##6858/5 |goto Kun-Lai Summit 63.0,40.8
@@ -1100,7 +1100,7 @@ click The Emperor's Burden - Part 7##
 achieve The Seven Burdens of Shaohao##6855/7 |goto Kun-Lai Summit 41.0,42.4
 step
 click The Emperor's Burden - Part 2##
-achieve The Seven Burdens of Shaohao##6855/2 |goto Kun-Lai Summit 43.8,51.2
+achieve The Seven Burdens of Shaohao##6855/6 |goto Kun-Lai Summit 43.8,51.2
 step
 click Ren Yun the Blind##
 achieve Legend of the Brewfathers##7230/3 |goto Kun-Lai Summit 44.7,52.4

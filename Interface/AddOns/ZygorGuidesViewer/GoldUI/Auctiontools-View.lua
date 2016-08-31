@@ -481,6 +481,8 @@ function Appraiser:MakeInventoryTable()
 			:SetScript("OnTabPressed", function() Appraiser:TabKeyNavigation(container,TAB_NAVIGATION_INVENTORY,"stacksize") end)
 			:SetScript("OnTextChanged", function(self,user) if not user then return end  ZGV:ScheduleTimer(function() Appraiser:UpdateStackSize() end,0) end)
 			:SetScript("OnEditFocusLost", function(self) ZGV:ScheduleTimer(function() Appraiser:UpdateStackSize() end,0) end)
+			:SetScript("OnEnter",function(self) if not self:IsEnabled() then Appraiser:ShowDisabledTooltip(self) end end)
+			:SetScript("OnLeave",function() GameTooltip:Hide() end)
 			.__END
 		container.stacksizebutton = CHAIN(ui:Create("Button",container.details))
 			:SetSize(62,17)
@@ -508,6 +510,8 @@ function Appraiser:MakeInventoryTable()
 			:SetScript("OnTabPressed", function() Appraiser:TabKeyNavigation(container,TAB_NAVIGATION_INVENTORY,"stackcount") end)
 			:SetScript("OnTextChanged", function(self,user) if not user then return end  ZGV:ScheduleTimer(function() Appraiser:UpdateStackCount() end,0) end)
 			:SetScript("OnEditFocusLost", function(self) ZGV:ScheduleTimer(function() Appraiser:UpdateStackCount() end,0) end)
+			:SetScript("OnEnter",function(self) if not self:IsEnabled() then Appraiser:ShowDisabledTooltip(self) end end)
+			:SetScript("OnLeave",function() GameTooltip:Hide() end)
 			.__END
 		container.stackcountbutton = CHAIN(ui:Create("Button",container.details))
 			:SetSize(62,17)
@@ -522,7 +526,7 @@ function Appraiser:MakeInventoryTable()
 		:SetPoint("TOPLEFT",0,-54)
 		:SetJustifyH("LEFT")
 		:SetWidth(110)
-		:SetText("Bid / stack")
+		:SetText("Bid / unit")
 		.__END
 		container.bidgold = CHAIN(ui:Create("EditBox",container.details))
 			:SetSize(47,17)
@@ -566,7 +570,7 @@ function Appraiser:MakeInventoryTable()
 		:SetPoint("TOPLEFT",0,-76)
 		:SetJustifyH("LEFT")
 		:SetWidth(110)
-		:SetText("Buyout / stack")
+		:SetText("Buyout / unit")
 		.__END
 		container.buyoutgold = CHAIN(ui:Create("EditBox",container.details))
 			:SetSize(47,17)
@@ -735,7 +739,6 @@ function Appraiser:MakeInventoryTable()
 
 	container.aucmodelgroup = ui:Create("RadioButtonGroup")
 	container.aucmodelgroup:RegisterToggleCallback( function() Appraiser:SetSellAucMode() end )
-	--Appraiser:SetSellAucMode()
 
 	container.aucmodellabel = CHAIN(container.details:CreateFontString())
 		:SetFont(FONT,12)
@@ -1390,16 +1393,16 @@ function Appraiser:UpdateTimeStamp()
 
 	if ZGV.Gold.Scan.state == "SS_QUERYING" then
 		updateTitletext = "|cffff0000SCANNING:|r"
-		timestamptext = "Querying "..data_text.." data" .. progress_dots
+		timestamptext = "Querying "..data_text.." data (stage 1/4)" .. progress_dots
 	elseif ZGV.Gold.Scan.state =="SS_RECEIVING" then
 		updateTitletext = "|cffff0000SCANNING:|r"
-		timestamptext = "Receiving "..data_text.." data" .. progress_dots
+		timestamptext = "Receiving "..data_text.." data (stage 2/4)"  .. progress_dots
 	elseif ZGV.Gold.Scan.state =="SS_SCANNING" then
 		updateTitletext = "|cffff0000SCANNING:|r"
-		timestamptext = "Scanning "..data_text.." data" .. progress_dots
+		timestamptext = "Scanning "..data_text.." data (stage 3/4, " .. ("%d"):format((ZGV.Gold.Scan.scan_progress or 0)*100) .. "%)" .. progress_dots
 	elseif ZGV.Gold.Scan.state =="SS_ANALYZING" then
 		updateTitletext = "|cffff0000SCANNING:|r"
-		timestamptext = "Analyzing "..data_text.." data" .. progress_dots
+		timestamptext = "Analyzing "..data_text.." data (stage 4/4)" .. progress_dots
 	elseif Appraiser.ScanIsRunning or Appraiser.ActiveShoppingAddItem or Appraiser.ScanItems and next(Appraiser.ScanItems) then
 		-- show Analyzing to avoid idle flashes
 		updateTitletext = "|cffff0000SCANNING:|r"
@@ -1413,6 +1416,13 @@ function Appraiser:UpdateTimeStamp()
 	self.MainFrame.FooterUpdated:SetText(updateTitletext)
 	self.MainFrame.FooterUpdatedTime:SetText(timestamptext)
 end
+
+function Appraiser:ShowDisabledTooltip(object)
+	GameTooltip:SetOwner(object,"ANCHOR_RIGHT") 
+	GameTooltip:SetText("Due to a bug in Blizzard's in Auction House functionality,\npets and equipment can only be posted one by one.") 
+	GameTooltip:Show()
+end
+
 
 
 --------------------------- Blizzard UI tabs

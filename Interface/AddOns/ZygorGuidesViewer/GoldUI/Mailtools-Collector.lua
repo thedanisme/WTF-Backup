@@ -191,8 +191,8 @@ function Mailtools:AddItemToIncoming(mi_mail,mi_slot,mi_id,mi_name,mi_icon,mi_co
 			color = mi_color
 		}
 		self.InboxItems[newslot].position[mi_mail] = {}
-		self.InboxItems[newslot].position[mi_mail][mi_slot] = mi_count
-		self.InboxItems[newslot].count = mi_count
+		self.InboxItems[newslot].position[mi_mail][mi_slot] = mi_count or 0
+		self.InboxItems[newslot].count = mi_count or 0
 	else
 		self.InboxItems[existing].count = self.InboxItems[existing].count + mi_count
 		self.InboxItems[existing].gold = self.InboxItems[existing].gold + mi_gold

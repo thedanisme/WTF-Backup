@@ -716,6 +716,19 @@ function Goldguide:SetCurrentTab(title)
 	Goldguide:Update()
 end
 
+StaticPopupDialogs["ZYGOR_GOLD_WARNED_LEGION_CRAP"] = {
+	text = "Zygor Gold Guide is not working properly due to recent changes in Auction House access mechanisms. For this reason we have temporarily disabled the Gold Guide while we work on a solution. We apologize for the inconvenience.",
+	button1 = OKAY,
+	button2 = nil,
+	timeout = 0,
+	OnAccept = function()
+	end,
+	OnCancel = function()
+	end,
+	whileDead = 1,
+	hideOnEscape = 1,
+}
+
 function Goldguide:ShowWindow()
 	if not Goldguide.MainFrame then Goldguide:CreateMainFrame() end
 	Goldguide.MainFrame:Show()

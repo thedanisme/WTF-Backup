@@ -43,15 +43,15 @@ function Poi:RegisterPoiGuide()
 end
 
 function Poi:CheckValidity(poistep)
-	if ZGV.db.profile.hideguide[poistep.type] then
+	if ZGV.db.profile.hideguide[poistep.poitype] then
 		return false -- poi type hidden
 	end
 
-	if poistep.type == "battlepet" then
+	if poistep.poitype == "battlepet" then
 		return not ZGV.PetBattle:HasPetByDisplay(poistep.poipet)
-	elseif poistep.type=="treasure" or poistep.type=="rare" then
+	elseif poistep.poitype=="treasure" or poistep.poitype=="rare" then
 		return not ZGV.completedQuests[poistep.poiquest]
-	elseif poistep.type=="achievement" then
+	elseif poistep.poitype=="achievement" then
 		if poistep.poisubachieve then
 			if GetAchievementNumCriteria(poistep.poiachieve) < poistep.poisubachieve then -- Causes errors when blizzard changes crap.
 				ZGV:Print("POI for %d/%d cannot load - subachive missing.",poistep.poiachieve,poistep.poisubachieve)
@@ -133,7 +133,7 @@ function Poi.Waypoint_OnClick(way,button)
 		-- deactive all current pois
 		ZGV.db.char.ActivatedPois = {}
 		local currentState = way.waypoint.isActivated
-		for i,point in pairs(ZGV.Pointer.pointsets["poi_"..Poi.DisplayedPoiSet].points) do
+		for i,point in pairs(ZGV.Pointer.pointsets["zgv_poi_"..Poi.DisplayedPoiSet].points) do
 			point.isActivated = false
 		end
 
@@ -193,12 +193,6 @@ function Poi.Waypoint_GetTooltipData(way)
 		end
 	end
 
-	--[[
-	local trueTime = ZGV.Poi:GetTrueAccessTime(ZGV.Poi.Guide.steps[way.poiNum])
-	table.insert(tooltipdata,"|cffffffffEstimated time: "..trueTime) 
-	table.insert(tooltipdata,"|cffffffff|r")
-	--]]
-
 	local itemtooltip = {}
 	if newpoi.poiitemid then
 		table.insert(itemtooltip,"|cffffffffReward:")
@@ -213,7 +207,7 @@ function Poi.Waypoint_GetTooltipData(way)
 				MyScanningTooltip:SetItemByID(itemdata.item)
 
 				local ilvl, minlevel, slot = nil, nil, nil
-				local name, link, _, _, _, _, _, _, _, icon = ZGV:GetItemInfo(itemdata.item)
+				local name, link, _, _, _, _, _, _, _, icon = ZGV:GetItemInfo(tonumber(itemdata.item))
 
 
 				for i=1,MyScanningTooltip:NumLines() do
@@ -245,8 +239,9 @@ function Poi.Waypoint_GetTooltipData(way)
 				end
 				
 				if details then table.insert(itemtooltip,first_line+1,{text=details,indent=true}) end
-				if icon then itemtooltip[first_line].icon = icon end
-				if not icon then tooltipdata.ZGV_OPTIONS.REFRESH=true end
+				--if icon then itemtooltip[first_line].icon = icon end -- disabled in 7.0.3 - tooltips do not support numeric textures, and there is no way to get string texture
+				--if not icon then tooltipdata.ZGV_OPTIONS.REFRESH=true end
+				if not name then tooltipdata.ZGV_OPTIONS.REFRESH=true end
 			end
 			table.insert(itemtooltip,"|cffffffff|r")
 		end
@@ -341,7 +336,7 @@ function Poi:DisplayPois(forceRefresh)
 	if not Poi.Waypoints[mapid] and not forceRefresh then return end
 
 	if Poi.DisplayedPoiSet~=mapid or forceRefresh then
-		ZGV.Pointer:ClearSet("poi_"..Poi.DisplayedPoiSet)
+		ZGV.Pointer:ClearSet("zgv_poi_"..Poi.DisplayedPoiSet)
 
 		Poi.DisplayedPoiSet = mapid
 		ZGV.Pointer:Thread_ShowSet(
@@ -349,7 +344,7 @@ function Poi:DisplayPois(forceRefresh)
 				coords=ZGV.Poi.Waypoints[Poi.DisplayedPoiSet],
 				ants=nil
 			},
-			"poi_"..Poi.DisplayedPoiSet
+			"zgv_poi_"..Poi.DisplayedPoiSet
 		)
 		Poi.DoneLoadingPoints = true
 	end
@@ -379,9 +374,12 @@ function Poi:GetNearPois()
 		end
 	end
 
+	-- if player is in combar, Keep active poi visible no matter what.
 	if UnitAffectingCombat("player") then
 		if ActivePoiNum then 
-			table.insert(Poi.CachedCombatPoi,Poi.Points[ActivePoiNum])
+			if not Poi.CachedCombatPoi[ActivePoiNum] then
+				Poi.CachedCombatPoi[ActivePoiNum] = Poi.Points[ActivePoiNum]
+			end
 		end
 		return Poi.CachedCombatPoi
 	else
@@ -489,7 +487,7 @@ function Poi:ChangeState(enable)
 	if enable then 
 		Poi:Thread_RegisterPoiGuide() 
 	else
-		ZGV.Pointer:ClearSet("poi_"..Poi.DisplayedPoiSet)
+		ZGV.Pointer:ClearSet("zgv_poi_"..Poi.DisplayedPoiSet)
 		Poi.Points = {}
 	end
 end
@@ -521,19 +519,6 @@ function Poi:ShowMapButtons()
 	.__END
 	Poi.MapButton:GetNormalTexture():SetTexCoord(0,0,0,1/4 , 1,0,1,1/4)
 end
-
-function Poi:GetTrueAccessTime(target)
-	-- Leftover from when poiaccess was using time
-	local _m, _f, _x, _y = unpack(Astrolabe.LastPlayerPosition)
-	dist, x, y = Astrolabe:ComputeDistance(_m, _f, _x, _y, target.starts_m, target.starts_f, target.starts_x, target.starts_y)
-	
-	spd = LibRover.maxspeedinzone[ZGV.CurrentMapID][1]*7
-
-	local traveltime = math.floor(math.abs((dist or 0)/ spd))
-	local completiontime = target.poiaccesstime or 0
-	return ZGV.Pointer.FormatTime(traveltime+completiontime)
-end
-
 
 function Poi:ShowMapMenu()
 	--if not ZGV.DEV then return end  --devwall
@@ -681,6 +666,7 @@ local function EventHandler(self, event, ...)
 	if ZGV.Poi.ActivePoiStepNum then	
 		if event=="QUEST_LOG_UPDATE" 
 		or event=="LOOT_READY" 
+		or event=="LOOT_SLOT_CLEARED" 
 		or event=="LOOT_CLOSED" 
 		or event=="ENCOUNTER_LOOT_RECEIVED" 
 		or event=="CHAT_MSG_CURRENCY" then 

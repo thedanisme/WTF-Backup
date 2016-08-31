@@ -8,6 +8,7 @@ local L = ZGV.L
 
 local itemsScale = 0.65
 
+--[[ CreatureViewer removal, 7.0
 tinsert(ZGV.startups,{"CreatureViewer startup",function(self)
 	-- dummy data, if missing
 	ZGV.NPCModels = ZGV.NPCModels or {}
@@ -20,6 +21,7 @@ tinsert(ZGV.startups,{"CreatureViewer startup",function(self)
 	CV.Frame:Hide()
 	--self:ScheduleRepeatingTimer("TryToDisplayCreature", 1)
 end})
+--]]
 
 local CHAIN = ZGV.ChainCall
 local UIFrameFadeOut,UIFrameFadeIn=ZGV.UIFrameFade.UIFrameFadeOut,ZGV.UIFrameFade.UIFrameFadeIn  -- prevent taint

@@ -7328,6 +7328,8 @@ ding 100
 step
 label "Menu"
 Click the Missive daily quest you would like to complete
+Missive: Assault on The Heart of Shattrath |confirm |next "M_Heart"
+Missive: Assault on The Pit |confirm |next "M_Pit"
 Missive: Assault on Darktide Roost |confirm |next "M_Darktide"
 Missive: Assault on Lost Veil Anzu |confirm |next "M_Anzu"
 Missive: Assault on Magnarok |confirm |next "M_Magnarok"
@@ -7340,6 +7342,40 @@ Missive: Assault on Stonefury Cliffs |confirm |next "M_Cliffs"
 Missive: Assault on the Broken Precipice |confirm |next "M_Broken"
 Missive: Assault on the Everbloom Wilds |confirm |next "M_Wilds"
 Missive: Assault on the Iron Siegeworks |confirm |next "M_Iron"
+step
+label "M_Heart"
+#include "A_Garrison_Crowler"
+buy Scouting Missive: The Heart of Shattrath##133883
+step
+use Scouting Missive: The Heart of Shattrath##133883
+accept Missive: Assault on the Heart of Shattrath##40944 |repeatable
+step
+kill Concubine of Lust##82940+, Conniving Deathblade##82981+, Draining Eye##86191+, Watchful Eye##86140+, Council Felcaller##86553+, Sargerei Fiendspeaker##83020+, Sargerei Discordant##86190+, Sargerei Ritualist##87341+,
+talk Tortured Sha'tari##86869+
+talk Captive Sha'tari Citizen##86599+
+clicknpc Sargerei Missive##87364+
+|tip They look like small tan pieces of paper pinned up around this area
+Assault the Sargerei Forces in Shattrath City |q 40944/1 |goto Talador/0 41.2,42.3
+|tip You will see a progress bar in your quest tracking area.
+step
+#include "A_Garrison_Valdez"
+turnin Missive: Assault on the Heart of Shattrath##40944
+next "Menu"
+step
+label "M_Pit"
+#include "A_Garrison_Crowler"
+buy Scouting Missive: The Pit##133878
+step
+use Scouting Missive: The Pit##133878
+accept Missive: Assault on the Pit##40942 |repeatable
+step
+kill Iron Bulwark##86536+, Iron Deadshot##86528+, Iron Laborer##85277+, Iron Bloodburner##85128+, Iron Enforcer##85124+, Iron Cauterizer##85127+, Iron Warden##86499+, Iron Reinforcement##86297+, Hulking Brute##85136+, Gruesome Torturer##86405+
+Assault the Pit |q 40942/1 |goto Gorgrond/0 46.23,24.35
+|tip You will see a progress bar in your quest tracking area.
+step
+#include "A_Garrison_Valdez"
+turnin Missive: Assault on the Pit##40942
+next "Menu"
 step
 label "M_Darktide"
 #include "A_Garrison_Crowler"

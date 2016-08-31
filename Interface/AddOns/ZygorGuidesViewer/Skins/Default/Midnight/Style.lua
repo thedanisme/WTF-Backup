@@ -127,9 +127,11 @@ STYLE.TitleButtonSize = 20
 STYLE.StepNumFontSize = 12
 STYLE.StepNumWidth = 24
 
+--[[ CreatureViewer removal, 7.0
 STYLE.CreatureViewerLabelBackground = {0,0,0,0}
 STYLE.CreatureViewerLabelColor = {1,0.8,0,1}
 STYLE.CreatureViewerGap = {0,0}
+--]]
 
 STYLE.NotificationBackdrop=STYLE.MainBackdrop
 STYLE.NotificationBackdropColor=STYLE.MainBackdropColor

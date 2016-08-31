@@ -7,6 +7,7 @@
 	</Script>
 
 	<Script file="ZygorGuidesViewer.lua"/>
+	<Script file="Licence.lua"/>
 
 	<Script file="Ver.lua"/>
 	<Script file="Class.lua"/>
@@ -15,7 +16,12 @@
 
 	<Include file="DEV\DEV.xml" />
 
+	<!--
 	<Include file="ZygorTalentAdvisor\ZygorTalentAdvisorFiles.xml" />
+	-->
+
+	<Script file="TalentAdvisor.lua"/>
+	<Script file="TalentAdvisor-Data.lua"/>
 
 	<Script file="BugReport.lua"/>
 
@@ -83,7 +89,9 @@
 	<Include file="Templates.xml" />
 		
 	<Include file="TitanZygor.xml" />
+	<!--
 	<Script file="CreatureViewer.lua" />
+	-->
 	<Script file="MagicKey.lua" />
 
 	<Script file="CreatureDetector.lua" />
@@ -124,6 +132,8 @@
 	<Script file="TestFramework.lua"/>
 
 	<Script file="Poi.lua"/>
+
+	<Script file="Libs/HBDragons.lua"/>
 	
 	<Script>
 	ZGV.loading_time_total = (debugprofilestop()-___ZGV_LOAD_TIME)

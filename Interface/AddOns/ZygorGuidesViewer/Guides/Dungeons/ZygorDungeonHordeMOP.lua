@@ -1316,7 +1316,6 @@ accept A New Enemy##30969 |goto Ragefire Chasm/1 67.8,11.4
 accept The Dark Shaman##30983 |goto Ragefire Chasm/1 67.8,11.4
 step
 talk Commander Bagran##61724
-accept Animal Control##30982 |goto 68.3,12.8
 accept No Orc Left Behind##30984 |goto 68.3,12.8
 step
 map Ragefire Chasm/1
@@ -1330,8 +1329,7 @@ kill Mature Flame Hound##61658 |n
 Rescue the first Kor'kron Scout |q No Orc Left Behind##30984/1 |count 1 |goto 68.0,60.4
 only if not completedq(30984)
 step
-kill Adarogg##61408 |n |only if default
-kill Adarogg##61408 |q Animal Control##30982/1 |only if havequest(30982)
+kill Adarogg##61408 |n
 Avoid standing in the area targeted by Adarogg's _Inferno Charge_. It will deal physical damage to all nearby players
 _Healer:_
 |tip Adarogg will periodically use Flame Breath on a random player dealing fire damage to them. This will need to be healed
@@ -1378,8 +1376,7 @@ path	51.1,37.6	50.0,47.6	40.2,46.4
 path	41.2,57.0
 Follow the path |goto 41.2,57.0 |c |noway
 step
-kill Slagmaw##61463 |n |only if default
-kill Slagmaw##61463 |q Animal Control##30982/2 |only if havequest(30982)
+kill Slagmaw##61463 |n
 Slagmaw will randomly _Lava Spit_ at a player's location. Avoid standing within 3 yards of other players
 |tip Slagmaw will periodically Submerge, reappearing at a random location.
 _Healers:_
@@ -1413,7 +1410,6 @@ turnin A New Enemy##30969 |goto 33.5,80.6
 turnin The Dark Shaman##30983 |goto 33.5,80.6
 step
 talk Commander Bagran##61724
-turnin Animal Control##30982 |goto 31.7,76.5
 turnin No Orc Left Behind##30984 |goto 31.7,76.5
 step
 Congratulations, you have completed Ragefire Chasm
@@ -2081,6 +2077,25 @@ Defeat Thruk |scenariogoal 24410 |goto Blackfathom Deeps/2 33.5,68.8
 step
 map Blackfathom Deeps/2
 path follow loose; loop off; ants curved
+path	34.0,68.3	43.1,75.0	Blackfathom Deeps/3 60.0,51.6
+click Aspect of the Guardian##0
+|tip Clicking an underwater egg will give you a swim speed buff.
+_Follow_ the path |goto Blackfathom Deeps/3 60.0,51.6 |c |noway
+|tip You will need to swim under the ruins to reach the Guardian.
+step
+kill 1 Guardian of the Deep##74508
+|tip Spore Cloud will inflict damage at random areas and summon Guardian Hatchlings.
+|tip Guardian of the Deep will Devour Blue Shale Crawlers, healing himself for 25% of max health. Kill them quickly.
+|tip Shattering Song will periodically inflict damage to the entire group.
+Defeat Guardian of the Deep |scenariogoal 24418 |goto Blackfathom Deeps/3 59.2,30.2
+step
+map Blackfathom Deeps/2
+path follow loose; loop off; ants curved
+path	Blackfathom Deeps/3 60.0,51.6	43.1,75.0	34.0,68.3
+_Follow_ the path |goto Blackfathom Deeps/2 34.0,68.3 |c |noway
+step
+map Blackfathom Deeps/2
+path follow loose; loop off; ants curved
 path	33.9,65.0	40.8,64.9	40.9,68.8
 _Follow_ the path |goto 40.9,68.8 |c |noway
 step
@@ -2646,6 +2661,22 @@ Click the Complete Quest box in the top right corner:
 turnin Corruption in Maraudon##27697
 only if havequest(27697)
 step
+map Maraudon/1
+path follow loose; loop off; ants curved
+path	36.9,76.5	31.0,80.8	31.1,88.6
+path	26.4,88.2	24.9,75.2	22.5,58.9
+path	Maraudon/2 26.5,6.2
+_Follow_ the path |goto Maraudon/2 26.5,6.2 < 30 |c |noway
+|tip Celebras the Cursed is an optional boss.
+step
+kill 1 Celebras the Cursed##12225
+|tip Celebras will summon three Forces of Nature.
+|tip Twisted Tranquility will deal nature damage and slow players within 45 yards.
+|tip Wrath deals single-target nature damage. Can be interrupted.
+|tip Entangling Roots will root a single player and deal minor nature damage.
+Defeat Celebras the Cursed |scenariogoal 25053 |goto Maraudon/2 24.5,14.3
+|tip Celebras the Cursed is an optional boss.
+step
 Congratulations, you have completed Maraudon: The Wicked Grotto!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Classic Dungeons\\Maraudon: Foulspore Cavern (Mara) 35-40",{
@@ -3100,17 +3131,17 @@ label	"start"
 Press _I_ and queue for Uldaman or enter the dungeon with your group |goto Uldaman/1 67.0,72.7 < 100 |c |or
 |confirm |or
 step
-talk Olga Runesworn##46233
-accept Behind Closed Doors##27676 |goto Uldaman,63.9,73.0
-only if not completedq(27676)
+talk Lidia Sunglow##46235
+accept Behind Closed Doors##27681 |goto Uldaman,63.9,73.0
+only if not completedq(27681)
 step
-talk Lead Prospector Durdin##46234
-accept The Chamber of Khaz'mul##27672 |goto 63.7,72.6
-only if not completedq(27672)
+talk High Examiner Tae'thelan Bloodwatcher##46236
+accept The Chamber of Khaz'mul##27679 |goto 63.7,72.6
+only if not completedq(27679)
 step
-talk Kand Sandseeker##46247
-accept It's What's Inside That Counts##27673 |goto 64.0,72.1
-only if not completedq(27673)
+talk Aoren Sunglow##46241
+accept We Require More Minerals##27682 |goto 64.0,72.1
+only if not completedq(27682)
 step
 map Uldaman/1
 path follow loose; loop off; ants curved; dist 10
@@ -3134,13 +3165,13 @@ kill 1 Ironaya##7228 |goto 45.4,73.7 |only if default
 |tip Arcing Smash is a frontal cone cleave attack. Don't stand in front of her
 |tip Periodically, Ironaya will Knock Away her current target, dealing physical damage and knocking them back
 |tip War Stomp will deal damage to everyone in melee range and stun them for 4 seconds
-kill 1 Ironaya##7228 |q The Chamber of Khaz'mul##27672/1 |goto 45.4,73.7 |only if havequest(27672)
+kill 1 Ironaya##7228 |q The Chamber of Khaz'mul##27679/1 |goto 45.4,73.7 |only if havequest(27679)
 Defeat Ironaya |scenariogoal 24972 |goto 45.4,73.7
 step
 Click the Complete Quest box in the top right corner.
-turnin The Chamber of Khaz'mul##27672
-accept Archaedas, The Ancient Stone Watcher##27677
-only if not completedq(27677)
+turnin The Chamber of Khaz'mul##27679
+accept Archaedas, The Ancient Stone Watcher##27680
+only if not completedq(27680)
 step
 map Uldaman/1
 path follow loose; loop off; ants curved; dist 10
@@ -3153,7 +3184,7 @@ kill 1 Obsidian Sentinel##7023
 |tip Obsidian Reflection will give the Sentinel a 20% chance to reflect the next spell cast at him
 |tip Occasionally, the Sentinel will use Splintered Obisian. This lowers Obsidian Sentinel's damage and summons an Obsidian Shard
 |tip These Shards possess the same Obsidian Reflection as the Sentinel
-Obtain the Obsidian Power Core |q It's What's Inside That Counts##27673/1 |goto Uldaman/1 28.7,61.7 |only if havequest(27673)
+Obtain the Obsidian Power Core |q It's What's Inside That Counts##27682/1 |goto Uldaman/1 28.7,61.7 |only if havequest(27682)
 Defeat the Obsidian Sentinel |scenariogoal 24973 |goto Uldaman/1 28.7,61.7
 step
 map Uldaman/1
@@ -3165,7 +3196,7 @@ _Follow_ the path |goto 45.5,49.2 < 5 |c |noway
 step
 kill 1 Ancient Stone Keeper##7206 |goto Uldaman/1 47.5,42.5
 |tip Sand Storms will swirl towards random players, dealing physical damage and slowing them. Stay away from these
-Retrieve the Titan Power Core |q It's What's Inside That Counts##27673/2 |goto Uldaman/1 47.5,42.5 |only if havequest(27673)
+Retrieve the Titan Power Core |q It's What's Inside That Counts##27682/2 |goto Uldaman/1 47.5,42.5 |only if havequest(27682)
 Defeat the Ancient Stone Keeper |scenariogoal 24974 |goto Uldaman/1 47.5,42.5
 step
 map Uldaman/1
@@ -3182,7 +3213,7 @@ kill 1 Galgann Firehammer##7291 |goto Uldaman/1 25.8,35.9 |only if default
 |tip He will randomly Flame Lash, stacking a fire DoT on players which decreases their fire resistance
 |tip Shadowforge Geologists will use Flame Lash as well as Flame Strike, placing a pillar of fire on the ground. Avoid these areas
 |tip Interrupt the Geologists as often as possible. Kill them first and then kill Galgann
-kill 1 Galgann Firehammer##7291 |q Behind Closed Doors##27676/1 |goto Uldaman/1 25.8,35.9 |only if havequest(27676)
+kill 1 Galgann Firehammer##7291 |q Behind Closed Doors##27681/1 |goto Uldaman/1 25.8,35.9 |only if havequest(27681)
 Defeat Galgann Firehammer |scenariogoal 24975 |goto Uldaman/1 25.8,35.9
 step
 map Uldaman/1
@@ -3211,7 +3242,7 @@ _Follow_ the path and open the Temple Door |goto 44.1,24.5 < 6 |c |noway
 step
 click Altar of Archaedas
 Defeat the 4 guardians that spawn
-Activate the Altar of Archaedas |goto Uldaman/1 41.7,16.7 < 5 |c
+Activate the Altar of Archaedas |goto Uldaman/2 41.7,16.7 < 5 |c
 step
 map Uldaman/1
 path follow loose; loop off; ants curved; dist 10
@@ -3228,12 +3259,12 @@ kill 1 Archaedas##2748 |goto Uldaman/2 55.4,50.7 |only if default
 |tip At 33% health, he will awaken 2 Vault Warders. These warders will Trample anyone within 10 yards for physical damage. Run away when they do this
 |tip Archaedas will occasionally Ground Tremor, stunning anyone within 20 yards
 |tip Kill the adds when they spawn, then switch back to Archaedas
-kill 1 Archaedas##2748 |q Archaedas, The Ancient Stone Watcher##27677/1 |goto Uldaman/2 55.4,50.7 |only if havequest(27677)
-Defeat Archaedas |scenariostage 1 |goto Uldaman/2 55.4,50.7
+kill 1 Archaedas##2748 |q Archaedas, The Ancient Stone Watcher##27680/1 |goto Uldaman/2 55.4,50.7 |only if havequest(27680)
+Defeat Archaedas |scenariogoal 18531 |goto Uldaman/2 55.4,50.7
 step
 Click the Quest Complete box in the top right corner.
-turnin Archaedas, The Ancient Stone Watcher##27677
-only if not completedq(27677)
+turnin Archaedas, The Ancient Stone Watcher##27680
+only if not completedq(27680)
 step
 click The Discs of Norgannon##1427
 accept The Platinum Discs##2278 |goto 50.0,33.6
@@ -3269,19 +3300,19 @@ You can either run to the beginning of the dungeon to turn in your quests.
 Or
 You can Right Click the dungeon finder icon on your mini map, teleport out of the dungeon, then teleport back in to the entrance.
 Return to the beginning of the instance |goto Uldaman/1 65.5,72.4 < 25 |c |noway
-only if havequest(27676) or havequest(2280) or havequest(27673)
+only if havequest(27681) or havequest(2280) or havequest(27682)
 step
-talk Olga Runesworn##46233
-turnin Behind Closed Doors##27676 |goto Uldaman,63.9,73.0
-only if not completedq(27676)
+talk Lidia Sunglow##46235
+turnin Behind Closed Doors##27681 |goto Uldaman,63.9,73.0
+only if not completedq(27681)
 step
-talk Lead Prospector Durdin##46234
+talk High Examiner Tae'thelan Bloodwatcher##46236
 turnin The Platinum Discs##2280 |goto 63.7,72.6
 only if not completedq(2280)
 step
-talk Kand Sandseeker##46247
-turnin It's What's Inside That Counts##27673 |goto 64.0,72.1
-only if not completedq(27673)
+talk Aoren Sunglow##46241
+turnin We Require More Minerals##27682 |goto 64.0,72.1
+only if not completedq(27682)
 step
 Congratulations, you have completed Uldaman!
 ]])

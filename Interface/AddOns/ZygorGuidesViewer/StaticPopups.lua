@@ -45,6 +45,7 @@ local popupTypes = {
 	["panda"] = 5,
 	["loot"] = 6,
 	["default"] = 7,
+	["legion"] = 8,
 }
 
 function PopupHandler:NewPopup(name,ptype,skin)

@@ -123,7 +123,7 @@ function ZGV:Options_DefineOptionTables()
 	AddOptionGroup("main",nil,"zygor",{  name = L["name"], desc = L["desc"],  },true)  	---- OPTIONS: main
 	do
 		AddOption('',{ type = "description", name = L["desc"]:format(self.version), })
-		AddOption('',{ type = "description", name = L["link"]:format(self.version).."\n".."Be always up to date: |cffffff88https://www.getfirehawk.com".."\n", })
+		AddOption('',{ type = "description", name = L["link"]:format(self.version), })
 		AddOption('',{ type = "header", name = L["tech_support_header"]:format(self.version), })
 		AddOption('',{ type = "description", name = L["tech_support"]:format(self.version), })
 		--AddOption('',{ type = "header", name = L["opt_guidepacks"]:format(self.version), })
@@ -648,9 +648,11 @@ function ZGV:Options_DefineOptionTables()
 				ZygorGuidesViewerMapIcon:ClearAllPoints()
 				ZygorGuidesViewerMapIcon:SetPoint("CENTER",Minimap,"BOTTOMLEFT",16,16)
 				self:UpdateFrame(true)
+				--[[
 				if self.db.profile.mv_enabled then
 					ZGV.CV:AlignFrame() -- merged reset buttons
 				end
+				--]]
 			end,
 		})
 		--AddOption('mv_reset',{ type = 'execute', width = "single", disabled = function() return not self.db.profile.mv_enabled end, func=function() ZGV.CV:AlignFrame() end, descStyle="inline", })
@@ -661,12 +663,14 @@ function ZGV:Options_DefineOptionTables()
 			AddOption('autoaccept',{ type = 'toggle', name=function() return L['opt_autoaccept'..(ZGV.db.profile.autoacceptturninall and "_all" or "")] end, desc=function() return L['opt_autoaccept_desc'] end, _default=false})
 			AddOption('autoturnin',{ type = 'toggle', name=function() return L['opt_autoturnin'..(ZGV.db.profile.autoacceptturninall and "_all" or "")] end, desc=function() return L['opt_autoturnin_desc'] end, _default=false })
 
+		--[[ CreatureViewer removal, 7.0
 		AddOption('',{ type = "header", name = L["model_viewer_header"]:format(), })
 
 			AddOption('mv_enabled',{ type = 'toggle', set = function(i,v) Setter_Simple(i,v)  self:TryToDisplayCreature() end, _default = true, })
 			AddOptionSep()
 			AddOption('mv_rotation',{ type = 'toggle', disabled = function() return not self.db.profile.mv_enabled end, _default = true, })
 			AddOption('mv_slideshow',{ type = 'toggle', disabled = function() return not self.db.profile.mv_enabled end, _default = true, })
+		--]]
 
 		--[[
 		AddOption('guidesinhistory',{
@@ -687,7 +691,7 @@ function ZGV:Options_DefineOptionTables()
 		
 		AddOptionSep()
 
-		AddOption('guide_viewer_advanced',{  type = 'toggle', width="double", plusminus=true })
+		AddOption('guide_viewer_advanced',{  type = 'toggle', width="double", --[[plusminus=true--]]})
 		
 		AddSubgroup("advancedcust_subgroup", {hidden=function() return not self.db.profile.guide_viewer_advanced end})  
 			
@@ -1054,7 +1058,7 @@ function ZGV:Options_DefineOptionTables()
 
 		AddOption('autotaxi',{ type = 'toggle', width = "full", _default=false, })
 
-		AddOption('travel_system_advanced',{  type = 'toggle', width="double", plusminus=true })
+		AddOption('travel_system_advanced',{  type = 'toggle', width="double", --[[plusminus=true--]]})
 		
 		-- ENABLES:
 		AddSubgroup('ants',{width='single', hidden=function() return not self.db.profile.travel_system_advanced or not self.db.profile.pathfinding end})
@@ -1462,7 +1466,19 @@ function ZGV:Options_DefineOptionTables()
 			disabled=function() return not self.db.profile.autogear end
 		})
 		AddOption('autogear_protectheirlooms',{ type='toggle', width="full", _default=false,
-			set = function(i,v) Setter_Simple(i,v) end, 
+			set = function(i,v) 
+				Setter_Simple(i,v) 
+				ZGV.ItemScore.AutoEquip:RefreshAndScan() 
+				ZGV.ItemScore.GearFinder:HideAndClean() 
+				end, 
+			disabled=function() return not self.db.profile.autogear end
+		})
+		AddOption('autogear_protectheirlooms_all',{ type='toggle', width="full", _default=false,
+			set = function(i,v) 
+				Setter_Simple(i,v) 
+				ZGV.ItemScore.AutoEquip:RefreshAndScan() 
+				ZGV.ItemScore.GearFinder:HideAndClean() 
+				end, 
 			disabled=function() return not self.db.profile.autogear end
 		})
 
@@ -1649,8 +1665,8 @@ function ZGV:Options_DefineOptionTables()
 				end,
 				type = 'input',
 				width = 'full',
-				buttontext = "Import",
-				buttonwidth = "170",
+				--buttontext = "Import",
+				--buttonwidth = "170",
 				multiline = true,
 				get = function()
 					local ret = ZGV.ItemScore.lastPawnString or ""
@@ -1708,19 +1724,7 @@ function ZGV:Options_DefineOptionTables()
 	do
 		AddOption('talenton',{ type = 'toggle', width="full", set = function(i,v)
 			Setter_Simple(i,v)
-			ZTA:Startup()
-
-			if ZGV.db.profile.talenton then
-				PlayerTalentFrame.advisorbutton:Show()
-				ZTA:GetUserBuild()
-				ZTA:CompareSpec()
-			else
-				PlayerTalentFrame.advisorbutton:Hide()
-				ZygorTalentAdvisorPopout_Hide()
-				ZTA:ResetAllTalentIcons()
-				PlayerTalentFrame.scriptedtoflash=false
-			end
-
+			ZGV.TalentAdvisor:Toggle(v)
 			end, _default=true})
 		AddOption('',{type='description',name=L['opt_talent_explained']})
 	end
@@ -2490,6 +2494,13 @@ function ZGV:Options_DefineOptionTables()
 				tristate = true,
 				set = function(i,v) Setter_Simple(i,v) LibRover:CheckMaxSpeeds() LibRover:UpdateNow() end,
 			})
+			AddOption('debug_librover_flightdraenor',{
+				name = "Draenor Flight",
+				desc = "",
+				type = 'toggle',
+				tristate = true,
+				set = function(i,v) Setter_Simple(i,v) LibRover:CheckMaxSpeeds() LibRover:UpdateNow() end,
+			})
 			AddOptionSep()
 
 			--[[
@@ -2535,8 +2546,10 @@ function ZGV:Options_DefineOptionTables()
 		AddOptionGroup("debugdig","DebugDig","zgdebugdig", { name="Debug: data digging", hidden = function() return not self.db.profile.debug end, })
 		do
 			AddOption('dumpscenario',{ name = "Dump scenario objectives", disabled=function() return not C_Scenario.IsInScenario() end, desc = "", type = 'execute', width = "full", func = function() ZGV:DumpScenario() end})
+			AddOption('dumpmapneigh',{ name = "Dump map neighbour cache", type = 'execute', width = "double", func = function() ZGV.Testing.NeighbourCache:DumpNeighbours() end})
+			AddOption('dumpmapneigh',{ name = "Toggle map neighbour caching", type = 'execute', width = "double", func = function() ZGV.Testing.NeighbourCache:DumpNeighbours_ToggleNeighbourCache() end})
 
-			AddOption('sep00astrol',{ type="header", name="Astrolabe map adjustment" })
+			AddOption('sep00astrol',{ type="header", name="HBD map adjustment" })
 			AddOption('debug_astrol_map',{
 				name = "Map ID",
 				desc = "",
@@ -2550,13 +2563,13 @@ function ZGV:Options_DefineOptionTables()
 				_default = ""
 			})
 			AddOption('debug_astrol_load',{ name = "Load", type = 'execute', width = "single", func = function()
-				local map=Astrolabe.WorldMapSize[tonumber(ZGV.db.profile.debug_astrol_map)]
+				local map=HBD.mapData[tonumber(ZGV.db.profile.debug_astrol_map)]
 				local flr = tonumber(ZGV.db.profile.debug_astrol_floor)
-				if flr then map=map[flr] end
-				ZGV.db.profile.debug_astrol_xoff = map.xOffset
-				ZGV.db.profile.debug_astrol_yoff = map.yOffset
-				ZGV.db.profile.debug_astrol_w = map.width
-				ZGV.db.profile.debug_astrol_h = map.height
+				if flr then map=map.floors[flr] end
+				ZGV.db.profile.debug_astrol_xoff = map[3]
+				ZGV.db.profile.debug_astrol_yoff = map[4]
+				ZGV.db.profile.debug_astrol_w = map[1]
+				ZGV.db.profile.debug_astrol_h = map[2]
 				self:UpdateFrame()
 			end})
 			AddOption('debug_astrol_xoff',{
@@ -2564,10 +2577,10 @@ function ZGV:Options_DefineOptionTables()
 				min = -50000, max = 50000, step = 1, bigStep = 10,
 				set = function(i,v)
 					Setter_Simple(i,v)
-					local map=Astrolabe.WorldMapSize[tonumber(ZGV.db.profile.debug_astrol_map)]
+					local map=HBD.mapData[tonumber(ZGV.db.profile.debug_astrol_map)]
 					local flr = tonumber(ZGV.db.profile.debug_astrol_floor)
-					if flr then map=map[flr] end
-					map.xOffset = v
+					if flr then map=map.floors[flr] end
+					map[3] = v
 					ZGV.Pointer:UpdateWaypoints()
 				end
 			})
@@ -2576,10 +2589,10 @@ function ZGV:Options_DefineOptionTables()
 				min = -50000, max = 50000, step = 1, bigStep = 10,
 				set = function(i,v)
 					Setter_Simple(i,v)
-					local map=Astrolabe.WorldMapSize[tonumber(ZGV.db.profile.debug_astrol_map)]
+					local map=HBD.mapData[tonumber(ZGV.db.profile.debug_astrol_map)]
 					local flr = tonumber(ZGV.db.profile.debug_astrol_floor)
-					if flr then map=map[flr] end
-					map.yOffset = v
+					if flr then map=map.floors[flr] end
+					map[4] = v
 					ZGV.Pointer:UpdateWaypoints()
 				end
 			})
@@ -2588,12 +2601,12 @@ function ZGV:Options_DefineOptionTables()
 				min = 0, max = 40000, step = 1, bigStep = 10,
 				set = function(i,v)
 					Setter_Simple(i,v)
-					local map=Astrolabe.WorldMapSize[tonumber(ZGV.db.profile.debug_astrol_map)]
+					local map=HBD.mapData[tonumber(ZGV.db.profile.debug_astrol_map)]
 					local flr = tonumber(ZGV.db.profile.debug_astrol_floor)
-					if flr then map=map[flr] end
-					map.width = v
-					 map.height = v*0.6667
-					 ZGV.db.profile.debug_astrol_h=map.height
+					if flr then map=map.floors[flr] end
+					map[1] = v
+					 map[2] = v*0.6667
+					 ZGV.db.profile.debug_astrol_h=map[2]
 					 self:UpdateFrame()
 					ZGV.Pointer:UpdateWaypoints()
 				end
@@ -2603,10 +2616,10 @@ function ZGV:Options_DefineOptionTables()
 				min = 0, max = 40000, step = 1, bigStep = 10,
 				set = function(i,v)
 					Setter_Simple(i,v)
-					local map=Astrolabe.WorldMapSize[tonumber(ZGV.db.profile.debug_astrol_map)]
+					local map=HBD.mapData[tonumber(ZGV.db.profile.debug_astrol_map)]
 					local flr = tonumber(ZGV.db.profile.debug_astrol_floor)
-					if flr then map=map[flr] end
-					map.height = v
+					if flr then map=map.floors[flr] end
+					map[2] = v
 					ZGV.Pointer:UpdateWaypoints()
 				end
 			})

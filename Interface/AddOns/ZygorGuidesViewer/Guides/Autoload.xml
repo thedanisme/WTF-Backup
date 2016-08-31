@@ -87,7 +87,7 @@
 		<Script file="Leveling\ZygorLevelingAllianceLEGION_MASTER.lua"/>
 		<Script file="Leveling\ZygorLevelingAllianceLEGION.lua"/>
 		<Script file="Leveling\ZygorLevelingAllianceLEGIONTrial.lua"/>
-		
+
 		<Script file="Leveling\ZygorLevelingHordeLEGION_MASTER.lua"/>
 		<Script file="Leveling\ZygorLevelingHordeLEGION.lua"/>
 		<Script file="Leveling\ZygorLevelingHordeLEGIONTrial.lua"/>
@@ -125,6 +125,10 @@
 		<Script file="Dailies\ZygorDailiesAllianceLEGION_MASTER.lua"/>
 		<Script file="Dailies\ZygorDailiesAllianceLEGION.lua"/>
 		<Script file="Dailies\ZygorDailiesAllianceLEGIONTrial.lua"/>
+
+		<Script file="Dailies\ZygorDailiesHordeLEGION_MASTER.lua"/>
+		<Script file="Dailies\ZygorDailiesHordeLEGION.lua"/>
+		<Script file="Dailies\ZygorDailiesHordeLEGIONTrial.lua"/>
 
 	<!-- DUNGEONS -->
 		<!-- MOP -->
@@ -208,6 +212,15 @@
 		<Script file="Professions\ZygorProfessionsAllianceWOD_MASTER.lua"/>
 		<Script file="Professions\ZygorProfessionsAllianceWOD.lua"/>
 		<Script file="Professions\ZygorProfessionsAllianceWODTrial.lua"/>
+
+		<!-- Legion -->
+		<Script file="Professions\ZygorProfessionsHordeLEGION_MASTER.lua"/>
+		<Script file="Professions\ZygorProfessionsHordeLEGION.lua"/>
+		<Script file="Professions\ZygorProfessionsHordeLEGIONTrial.lua"/>
+
+		<Script file="Professions\ZygorProfessionsAllianceLEGION_MASTER.lua"/>
+		<Script file="Professions\ZygorProfessionsAllianceLEGION.lua"/>
+		<Script file="Professions\ZygorProfessionsAllianceLEGIONTrial.lua"/>
 
 	<!-- ACHIEVEMENTS -->
 		<!-- CATA -->
@@ -411,10 +424,15 @@
 		<Script file="Reputations\ZygorReputationsAllianceWOD_MASTER.lua"/>
 		<Script file="Reputations\ZygorReputationsAllianceWOD.lua"/>
 		<Script file="Reputations\ZygorReputationsAllianceWODTrial.lua"/>
-
+	
+		<!-- LEGION -->
 		<Script file="Reputations\ZygorReputationsAllianceLEGION_MASTER.lua"/>
 		<Script file="Reputations\ZygorReputationsAllianceLEGION.lua"/>
 		<Script file="Reputations\ZygorReputationsAllianceLEGIONTrial.lua"/>
+
+		<Script file="Reputations\ZygorReputationsHordeLEGION_MASTER.lua"/>
+		<Script file="Reputations\ZygorReputationsHordeLEGION.lua"/>
+		<Script file="Reputations\ZygorReputationsHordeLEGIONTrial.lua"/>
 
 	<!-- GOLD -->
 
@@ -436,11 +454,15 @@
 		<Script file="Gold\ZygorGoldRunsAllianceWOD.lua" />
 		<Script file="Gold\ZygorGoldRunsHordeWOD.lua" />
 	
+	<!--
 	<Script file="ZygorMacros.lua"/>
+	-->
 	
-	<!--<Script file="POI.lua" />-->
+	<!--
+	<Script file="POI.lua" />
 	<Script file="WOD_A_Pets.lua" />
 	<Script file="WOD_H_Pets.lua" />
+	-->
 	<Script file="WOD_A_Rares.lua" />
 	<Script file="WOD_H_Rares.lua" />
 	<Script file="WOD_A_Treasures.lua" />

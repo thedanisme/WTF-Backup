@@ -18,7 +18,8 @@ Pointer.waypoints = {}
 
 Pointer.antphase=0
 
-local Astrolabe = DongleStub("Astrolabe-ZGV")
+local HBD = ZGV.HBD
+local HBDPins = ZGV.HBDPins
 
 local unusedMarkers = {}
 Pointer.unusedMarkers = unusedMarkers
@@ -56,61 +57,36 @@ local zone_aliases = {
 
 local submap_cache = nil
 
-local function AstrolabeFixZones(za,zb)
-	if Astrolabe.WorldMapSize and Astrolabe.WorldMapSize[za].system==za then Astrolabe.WorldMapSize[za]=Astrolabe.WorldMapSize[zb] end
-end
-
-
 local MapFloorCountCache
 
+
+local hardcoded_defaults = {
+	[1014] = 10, -- thank you blizzard for making legion dala have default floor not being the lowest
+	[1090] = 0,  -- warlock scenario tolbarad
+	}
+
 function ZGV:SanitizeMapFloor(map,flr,is_current)
-	--if not MapFloorCountCache then MapFloorCountCache=LibRover.MapFloorCountCache end
-	--local maxfloor = 666 or MapFloorCountCache[map] or 0  --sinus: max is high, don't force it down - breaks on sneak-leveled MoP maps
-	local mapData = Astrolabe.WorldMapSize[map]
-	if not mapData or mapData==0 then
-		if is_current then -- shouldn't be missing! Warn the elders!
-			ZGV:Print("You're in an uncharted ZONE. Please tell Zygor that Astrolabe failed completely.")
-		end
-		return 0
-	end
-	if not flr then return mapData.floorMin or 0 end
+	local mapData = HBD.mapData[map]
 
-	--[[
-	if rawget(mapData,flr or 0) then -- it's OK!  (Though the method is evil. Astrolabe is being TOO nice, striving to give us some values, but we don't want any charity. Hence, this to circumvent its metatable. )
-		return flr or 0
-	end
-	--]]
+	if not mapData then return flr or 0 end
 
-	if is_current and flr and flr>0 --[[and (mapData.floorMin or 0)==0 --]] then -- shouldn't be missing! Warn the elders!
-		if not rawget(mapData,flr or 0) and (ZGV.DEV or ZGV.db.profile.debug) then ZGV:Error("You're on an uncharted floor. Please |cffffaa00/run CAVEMAN()|r now. Need to scout map "..(map or 0).."/"..(flr or 0).." named "..Pointer.GetMapNameByID2(map or 0).."/"..(GetMinimapZoneText() or "unnamedzone").."'.") end
-		return flr or 0
-	end
+	if flr and mapData.floors and mapData.floors[flr] then return flr end
+	if flr and flr>0 then return flr end
+	if flr==0 and mapData.numFloors==0 then return flr end
 
-	return flr or mapData.floorMin or 0
+	local lowest
 
-	--flr --[[and min (flr or 0,MapFloorCountCache[map])]] or MapFloorCountCache[map]>0 and 1 or 0 -- TODO make correct clamping if flr > max
-end
-
-
-Pointer.MapFloors = {}  setmetatable(Pointer.MapFloors,{__index=function(self,id) return rawget(self,id) or 0 end})
-
-function Pointer:CacheFloors()
-	local mapfloors = self.MapFloors
-	for id=1,1500 do
-		local sane_id = self:SanitizePhase(id)
-		if GetMapNameByID(sane_id) then
-			SetMapByID(sane_id)
-			local gndml = {GetNumDungeonMapLevels()}
-			local l = #gndml
-			if l>0 then mapfloors[id] = l end
+	if hardcoded_defaults[map] then
+		lowest = hardcoded_defaults[map]
+	else
+		for i,v in pairs(mapData.floors) do
+		    if not lowest or i<lowest then lowest=i end
 		end
 	end
-	SetMapToCurrentZone()
+        return lowest or 0
 end
 
 function Pointer:Startup()
-	self:CacheFloors()  -- universal, used NOT only by the internal pointer.
-
 	self:SetArrowSkin(ZGV.db.profile.arrowskin)
 
 	if ZGV.db.profile.frame_positions and ZGV.db.profile.frame_positions.ZygorGuidesViewerPointer_ArrowCtrl then
@@ -198,14 +174,6 @@ function Pointer:Startup()
 
 	--ZGV.ScheduleRepeatingTimer(self,"FixMapLevel", 1.0)
 
-	-- try to fix Astrolabe zoning problems...
-	AstrolabeFixZones(770,700) --twilight
-	AstrolabeFixZones(700,770)
-
-	AstrolabeFixZones(545,679) --Gilneas
-	AstrolabeFixZones(679,545)
-
-	AstrolabeFixZones(793,697)
 	
 	self:SetMinimapPlayerTexture()
 
@@ -456,7 +424,7 @@ function Pointer:SetWaypoint_ant (m,f,x,y,num,icon, ant)  -- ant is here for one
 	waypoint.f=f
 	waypoint.x=x
 	waypoint.y=y
-	waypoint.c = Astrolabe.WorldMapSize[m].system
+	waypoint.c = HBD:GetMapContinent(m)
 
 	-- clone some data to make a smarter, more aware ant
 	waypoint.p0,waypoint.p1,waypoint.p2,waypoint.p3 = ant.p0,ant.p1,ant.p2,ant.p3
@@ -499,7 +467,7 @@ end
 function Pointer:ClearWaypoints_ant(active)
 	for i=active+1,#waypoints_ants do
 		local waypoint = waypoints_ants[i]
-		Astrolabe:RemoveIconFromMinimap(waypoint.frame_minimap)
+		HBDPins:RemoveMinimapIcon(Pointer,waypoint.frame_minimap)
 		waypoint.frame_minimap:Hide()
 		waypoint.frame_minimap.waypoint=nil  -- so that they don't reappear
 		waypoint.frame_worldmap:Hide()
@@ -538,15 +506,7 @@ function Pointer:SetWaypoint (m,f,x,y,data,arrow)
 		--m=self:SanitizePhase(m)  -- de-phase map!
 	end
 
-	--[[
-		local phased=self:IsEnvironmentPhased(m)
-		if not m or phased then
-			if data.type~="ant" then
-				--Pointer:Debug("The player and the target are in the same phased environment, putting a marker on the current map instead.")
-			end
-			--m,f=mm,ff
-		end
-	--]]
+	if not f then f=ZGV:SanitizeMapFloor(m,f) end
 
 	local waypoint = self:GetMapMarker (m,f or 0,x,y,data)
 	--Pointer:Debug("Adding waypoint type "..data.type.." in "..c..","..z..","..x..","..y)
@@ -618,7 +578,7 @@ function Pointer:GetMapMarker (m,f,x,y,data)
 
 	local waypoint = self:GetUnusedMarker()
 	--local c = LibRover.ContinentsByID[m] or -1
-	local c = Astrolabe.WorldMapSize[m].system
+	local c = HBD:GetMapContinent(m)
 	waypoint.m=m
 	waypoint.f=f
 	waypoint.x=x
@@ -639,8 +599,6 @@ function Pointer:GetMapMarker (m,f,x,y,data)
 	waypoint:UpdateWorldMapIcon(lm,lf)
 	waypoint:UpdateMiniMapIcon(lm,lf)
 	if TaxiFrame:IsShown() then waypoint:UpdateTaxiMapIcon() end
-
-	--if lc==c and lz==z then Astrolabe:PlaceIconOnMinimap(waypoint.frame_minimap, c, z, x, y) end
 
 	return waypoint
 end
@@ -676,10 +634,12 @@ function Pointer:RemoveWaypoint(waypoint)
 	if not wayn then return end -- let's just play nice assert(wayn,"No waypoint number found")
 
 	--Pointer:Debug("Removing waypoint %d=%d",waypoint.num,wayn)
-	Astrolabe:RemoveIconFromMinimap(waypoint.frame_minimap)
-	waypoint.frame_minimap:Hide()
+
+	HBDPins:RemoveMinimapIcon(Pointer,waypoint.frame_minimap)
+	HBDPins:RemoveWorldMapIcon(Pointer,waypoint.frame_worldmap)
+	--waypoint.frame_minimap:Hide()
 	waypoint.frame_minimap.waypoint=nil
-	waypoint.frame_worldmap:Hide()
+	--waypoint.frame_worldmap:Hide()
 	waypoint.frame_worldmap.waypoint=nil
 	waypoint.frame_taximap:Hide()
 
@@ -691,6 +651,12 @@ function Pointer:RemoveWaypoint(waypoint)
 
 	if waypoint.in_set then self:RemoveWaypointFromSets(waypoint) end
 
+	for k,v in pairs(waypoint) do if not k:match("frame_.+") then waypoint[k]=nil end end  -- clear everything but frame_minimap, frame_worldmap, frame_taximap
+	unusedMarkers[waypoint]=1
+	table.remove(self.waypoints,wayn)
+
+	-- Now for extra cleanups:
+
 	if self.ArrowFrame.waypoint==waypoint then self:HideArrow() end
 	if self.DestinationWaypoint==waypoint then
 		Pointer:Debug("Removed DestinationWaypoint")
@@ -698,9 +664,6 @@ function Pointer:RemoveWaypoint(waypoint)
 		self:ClearSet("route")
 	end
 
-	for k,v in pairs(waypoint) do if not k:match("frame_.+") then waypoint[k]=nil end end  -- clear everything but frame_minimap, frame_worldmap, frame_taximap
-	unusedMarkers[waypoint]=1
-	table.remove(self.waypoints,wayn)
 end
 
 function Pointer:RemoveWaypointFromSets(waypoint)
@@ -728,7 +691,15 @@ function Pointer:ShowArrow(waypoint)
 	ZygorGuidesViewerPointer_ArrowCtrl:StopMovingOrSizing()
 	self.ArrowFrame.dragging=nil
 
-	Astrolabe:PlaceIconOnMinimap(waypoint.frame_minimap, waypoint.m, waypoint.f, waypoint.x, waypoint.y) -- if it's not already there, place it
+	-- bandaid: prevent showing if coords are missing
+	if not waypoint.m or not waypoint.x or not waypoint.y then 
+		Pointer:Debug("No coords for waypoint.")
+		return 
+	end
+
+	local waypoint_f = waypoint.f
+	if waypoint.type=="ant" then waypoint_f=nil end -- use no floor to make ants show up between floors and in dala/orgi
+	HBDPins:AddMinimapIconMF(Pointer, waypoint.frame_minimap, waypoint.m, waypoint_f, waypoint.x, waypoint.y)
 	
 	self.ArrowFrame.waypoint = waypoint
 
@@ -814,7 +785,7 @@ function Pointer:MakeMarkerFrames(marker,markertype)
 	end
 	marker.frame_worldmap:SetFrameStrata(strataLayer or "HIGH")
 
-	marker.frame_worldmap:SetFrameLevel((markertype=="Ant" and 208 or 209)+WorldMapFrame:GetFrameLevel())
+	marker.frame_worldmap:SetFrameLevel((markertype=="Ant" and 608 or 609)+WorldMapFrame:GetFrameLevel())  -- built-in POIs (taxis, pet trainers) are 500-ish, so 600 should suffice.
 
 	--[[
 	if Nx then -- Attempt to support Carbonite map, doesn't work.
@@ -895,7 +866,7 @@ function markerproto:SetIcon(icon)  -- leave icon empty to just reset the curren
 	self.frame_minimap.arrow:SetSize(icon.edgesize or size,icon.edgesize or size)
 	self.frame_minimap.arrow:SetDesaturated(icon.desat)
 	if self.truesize then
-		local data = Astrolabe.WorldMapSize[self.m]
+		local data = HBD.mapData[self.m]
 		local floordata = rawget(data,self.f or 0)
 		data = data or floordata
 		local width = data.width
@@ -904,7 +875,7 @@ function markerproto:SetIcon(icon)  -- leave icon empty to just reset the curren
 	end
 	local size = self.truesize_px or self.size or icon.size or size
 	local sized = size*Pointer.iconScale*Pointer.iconScaleBase
-	self.frame_worldmap:SetSize(sized,sized)
+	self.frame_worldmap:SetSize(30,30)
 	self.frame_worldmap.icon:SetSize(sized,sized)
 	self.frame_worldmap.icon:SetTexture(self.customs and self.customs.icon or icon.tex)
 	if icon.coords and not (self.customs and self.customs.icon) then
@@ -929,107 +900,39 @@ end
 
 local mix4=ZGV.mix4
 function markerproto:UpdateWorldMapIcon(m,f)
-	local show=true
+	local self_f=self.f
+	if self.type=="ant" then self_f=nil end -- use no floor to make ants show up between floors and in dala/orgi
 
-	local cm = GetCurrentMapAreaID()
-	--[[
-	if cm==13 or cm==14 or cm==862 or cm==485 or cm==466 or cm==-1 then
-		-- it's world map all right.
-		self.frame_worldmap:EnableMouse(false)
-		local halfsize = self.size or self.icon.size or 10
-		self.frame_worldmap.icon:SetSize(halfsize,halfsize)
-	else
-		self.frame_worldmap:EnableMouse(not self.passive)
-		local fullsize = self.size or (self.icon and self.icon.size) or 20
-		self.frame_worldmap.icon:SetSize(fullsize,fullsize)
-	end
-	--]]
+	-- bandaid: prevent updates if coords are missing
+	if not self.m or not self.x or not self.y then return end
 
-	if not ZGV.Pointer.OverlayFrame:IsShown() or self.hidden then show=false end
+	-- hide markers that are zone limited, and we are viewing something else
+	if (self.onworldmap=="zone" and m~=self.m) then self:Hide() return end	
 
-	if not m then m,f=cm,GetCurrentMapDungeonLevel() end
-	m = zone_aliases[m] or m
 
-	if show and not self.overworld then
-		if self.m~=m then show=false end
-	end
+	HBDPins:AddWorldMapIconMF(Pointer, self.frame_worldmap, self.m, self_f, self.x, self.y)
 
-	 -- NO. FADE IT.
-	--and not (Astrolabe.WorldMapSize[m][f] and Astrolabe.WorldMapSize[m][f].microName)  -- unless we're in a cave, show outside points
-	--and not (Astrolabe.WorldMapSize[self.m][self.f] and Astrolabe.WorldMapSize[self.m][self.f].microName)  -- unless it's in a cave, show those from overworld
-	--and self.type~="ant" then  -- or it's an ant.
-
-	if show then
-		if self.type=="ant" then
-			-- fuck. Ants are system-mapped. Check their parents?
-			if self.p1m==m and self.p2m==m then
-				-- gradual fading, if one of floors is current
-				if self.p1f==f and self.p2f~=f then
-					self.frame_worldmap:SetAlpha(1-self.ant_dist*0.7)
-				elseif self.p1f~=f and self.p2f==f then
-					self.frame_worldmap:SetAlpha(0.3+self.ant_dist*0.7)
-				elseif self.p1f==f and self.p2f==f then
-					self.frame_worldmap:SetAlpha(1.0)
-				else
-					self.frame_worldmap:SetAlpha(0.3)
-				end
-			else
+	if self.type=="ant" then
+		if not m then m,f=cm,GetCurrentMapDungeonLevel() end
+		m = zone_aliases[m] or m
+		-- fuck. Ants are system-mapped. Check their parents?
+		if self.p1m==m and self.p2m==m then
+			-- gradual fading, if one of floors is current
+			if self.p1f==f and self.p2f~=f then
+				self.frame_worldmap:SetAlpha(1-self.ant_dist*0.7)
+			elseif self.p1f~=f and self.p2f==f then
+				self.frame_worldmap:SetAlpha(0.3+self.ant_dist*0.7)
+			elseif self.p1f==f and self.p2f==f then
 				self.frame_worldmap:SetAlpha(1.0)
-			end
-
-			-- fade ant colors! maybe someday.
-			--[[
-			if not ZGV.db.profile.singlecolorants then
-				-- gradual fading, if one of floors is current
-				local prev_icon = self.p1 and self.p1.ant_icon or self.p2.ant_icon or Pointer.Icons.ant_default
-				local this_icon = self.p2 and self.p2.ant_icon or Pointer.Icons.ant_default
-				local next_icon = self.p3 and self.p3.ant_icon or self.p2.ant_icon or Pointer.Icons.ant_default
-				if prev_icon~=this_icon and self.ant_dist<0.1 then
-					self.frame_worldmap.icon:SetVertexColor(mix4(prev_icon.r,prev_icon.g,prev_icon.b, 1, this_icon.r,this_icon.g,this_icon.b,  0.5+self.ant_dist*5  ))
-				elseif this_icon~=next_icon and self.ant_dist>0.9 then
-					self.frame_worldmap.icon:SetVertexColor(mix4(this_icon.r,this_icon.g,this_icon.b, 1, next_icon.r,next_icon.g,next_icon.b,  (self.ant_dist-0.9)*5  ))
-				else -- same ant type, or middle of line
-					self.frame_worldmap.icon:SetVertexColor(this_icon.r,this_icon.g,this_icon.b,1)
-				end
 			else
-				--self.frame_worldmap:SetAlpha(1.0)
+				self.frame_worldmap:SetAlpha(0.3)
 			end
-			--]]
-
 		else
-			-- normal waypts
-			self.frame_worldmap:SetAlpha((self.m==m and self.f~=f) and 0.3 or 1.0)
+			self.frame_worldmap:SetAlpha(1.0)
 		end
 	else
-		self.frame_worldmap:SetAlpha(1.0) --?? not shown and alpha=1??
-		--show=false
-	end
-
-	if (self.onworldmap=="zone" and m~=self.m) then
-		show=false
-	end	
-
-	if show then
-		local x,y = Astrolabe:PlaceIconOnWorldMap(ZGV.Pointer.OverlayFrame, self.frame_worldmap, self.m, self.f, self.x, self.y)
-		if not x or not y
-		or x<0 or y<0 or x>1 or y>1
-		then
-			show=false
-		end
-	end
-
-
-
-	if show then
-		self.frame_worldmap:Show()
-
-		self.frame_worldmap:EnableMouse(cm~=-1 and cm~=13 and cm~=14 and cm~=485 and cm~=862)
-
-		--self.frame_worldmap.icon:ClearAllPoints()
-		--self.frame_worldmap.icon:SetAllPoints()
-		--ZGV:Print("Showing "..way.title)
-	else
-		self.frame_worldmap:Hide()
+		-- normal waypts
+		self.frame_worldmap:SetAlpha((self.m==m and self.f~=f) and 0.3 or 1.0)
 	end
 end
 
@@ -1045,9 +948,13 @@ function markerproto:UpdateMiniMapIcon(m,f)
 	 ZGV.Pointer.ArrowFrame.waypoint==self or
 	 ((self.onminimap=="zone" or self.onminimap=="zonedistance") and m==self.m)
 	) then
-		local r = Astrolabe:PlaceIconOnMinimap(self.frame_minimap, self.m, self.f, self.x, self.y)
+		local self_f=self.f
+		if self.type=="ant" then self_f=nil end -- use no floor to make ants show up between floors and in dala/orgi
+		-- bandaid: prevent showing if coords are missing
+		if not self.m or not self.x or not self.y then return end
+		local r = HBDPins:AddMinimapIconMF(Pointer, self.frame_minimap, self.m, self_f, self.x, self.y)
 	else
-		Astrolabe:RemoveIconFromMinimap(self.frame_minimap)
+		HBDPins:RemoveMinimapIcon(Pointer,self.frame_minimap)
 	end
 end
 
@@ -1056,20 +963,7 @@ function markerproto:tostring()
 end
 
 local function Astrolabe_PlaceIconOnWorldMap2( taxiBgFrame, icon, taximapID, mapID, mapFloor, xPos, yPos )
-	-- check argument types
-	--[[
-	argcheck(worldMapFrame, 2, "table");
-	assert(3, worldMapFrame.GetWidth and worldMapFrame.GetHeight, "Usage Message");
-	argcheck(icon, 3, "table");
-	assert(3, icon.SetPoint and icon.ClearAllPoints, "Usage Message");
-	argcheck(mapID, 4, "number");
-	argcheck(mapFloor, 5, "number", "nil");
-	argcheck(xPos, 6, "number");
-	argcheck(yPos, 7, "number");
-	--]]
-
-	local nX, nY = Astrolabe:TranslateWorldMapPosition(mapID, mapFloor, xPos, yPos, taximapID, 0)
-
+	local nX, nY = HBD:TranslateZoneCoordinates(xPos, yPos, mapID, mapFloor, taximapID, 0)
 	-- anchor and :Show() the icon if it is within the boundry of the current map, :Hide() it otherwise
 	if ( nX and nY and (0 < nX and nX <= 1) and (0 < nY and nY <= 1) ) then
 		--icon:ClearAllPoints();
@@ -1092,7 +986,9 @@ function markerproto:UpdateTaxiMapIcon()
 		Pointer:Debug("No map for taxi! texture is '%s'",TaxiFrame.InsetBg:GetTexture())
 		return
 	end
-	if not Astrolabe.WorldMapSize[taxitexture].systemParent then
+
+	local continent = HBD:GetMapContinent(taxitexture)
+	if not HBD:GetMapContinent(continent) then -- systemParent
 		Pointer:Debug("No map for taxi! map num is %d",taxitexture)
 		return
 	end
@@ -1108,35 +1004,6 @@ function markerproto:UpdateTaxiMapIcon()
 	if self.onworldmap=="zone" then -- hide zone specific icons
 		show=false
 	end	
-
-
-	--[[
-	if show then
-		if self.type=="ant" then
-			-- fuck. Ants are system-mapped. Check their parents?
-			if self.p1m==m and self.p2m==m then
-				-- gradual fading, if one of floors is current
-				if self.p1f==f and self.p2f~=f then
-					self.frame_worldmap:SetAlpha(1-self.ant_dist*0.7)
-				elseif self.p1f~=f and self.p2f==f then
-					self.frame_worldmap:SetAlpha(0.3+self.ant_dist*0.7)
-				elseif self.p1f==f and self.p2f==f then
-					self.frame_worldmap:SetAlpha(1.0)
-				else
-					self.frame_worldmap:SetAlpha(0.3)
-				end
-			else
-				self.frame_worldmap:SetAlpha(1.0)
-			end
-		else
-			-- normal waypts
-			self.frame_worldmap:SetAlpha((self.m==m and self.f~=f) and 0.3 or 1.0)
-		end
-	else
-		self.frame_worldmap:SetAlpha(1.0) --?? not shown and alpha=1??
-		--show=false
-	end
-	--]]
 
 	if show then
 		local hostframe,hostparent
@@ -1159,20 +1026,6 @@ function markerproto:UpdateTaxiMapIcon()
 	end
 
 	self.frame_taximap:EnableMouse(false)
-
-	--[[
-	if show then
-		self.frame_taximap:Show()
-
-		--self.frame_worldmap:EnableMouse(cm~=-1 and cm~=13 and cm~=14 and cm~=485 and cm~=862)
-
-		--self.frame_worldmap.icon:ClearAllPoints()
-		--self.frame_worldmap.icon:SetAllPoints()
-		--ZGV:Print("Showing "..way.title)
-	else
-		self.frame_taximap:Hide()
-	end
-	--]]
 end
 
 
@@ -1202,90 +1055,6 @@ if DEBUG_ROGUE_DATA_IN_WAYPOINTS then
 	setmetatable(markerproto,{__index=function(k,v) if not valids[v] then print(v.."  in  "..debugstack(2,1,0)) end end})
 end
 
------------------------------------------------------------------------
---[[
-do
-	local lastx,lasty
-	local x,y,zone
-	function Pointer:GetPlayerPosition()
-		local x,y = GetPlayerMapPosition("player")
-	end
-end
-
-function Pointer:GetDistFromPlayer(c,z,x,y)
-	local pc,pz,px,py
-
-	local px, py = GetPlayerMapPosition("player")
-	px, py, pzone = self:GetCurrentPlayerPosition()
-	if pzone then
-		pzone = BZL[pzone]
-	end
-
-	if px == 0 or py == 0 or not px or not py then
-		return nil
-	end
-	if pzone and BZH[pzone] then
-		pzone = BZL[pzone]
-	end
-	if zone and BZH[zone] then
-		zone = BZL[zone]
-	end
-	if not zone then
-		zone = GetRealZoneText()
-	end
-	if not pzone then
-		pzone = zone
-	end
-	local dist = Tourist:GetYardDistance(zone, x, y, pzone, px, py)
-	return dist
-end
---]]
-
-
--- Code taken from HandyNotes, thanks Xinhuan
----------------------------------------------------------
--- Public functions for plugins to convert between MapFile <-> C,Z
---
-
---[[
-local continentMapFile = {
-	[WORLDMAP_COSMIC_ID] = "Cosmic", -- That constant is -1
-	[0] = "World",
-	[1] = "Kalimdor",
-	[2] = "Azeroth",
-	[3] = "Expansion01",
-	[scarlet_cont] = "ScarletEnclave",
-}
-local reverseMapFileC = {}
-local reverseMapFileZ = {}
-for C in pairs(Astrolabe.ContinentList) do
-	for Z = 1, #Astrolabe.ContinentList[C] do
-		local mapFile = Astrolabe.ContinentList[C][Z]
-		reverseMapFileC[mapFile] = C
-		reverseMapFileZ[mapFile] = Z
-	end
-end
-for C = -1, 3 do
-	local mapFile = continentMapFile[C]
-	reverseMapFileC[mapFile] = C
-	reverseMapFileZ[mapFile] = 0
-end
---]]
-
---[[
-function Pointer:GetMapFile(C, Z)
-	if type(C)=="string" then return end
-	if not C or not Z then return end
-	if Z == 0 then
-		return continentMapFile[C]
-	elseif C > 0 then
-		return Astrolabe.ContinentList[C][Z]
-	end
-end
-function Pointer:GetCZ(mapFile)
-	return reverseMapFileC[mapFile], reverseMapFileZ[mapFile]
-end
---]]
 
 local function FormatDistance(dist)
 	if not dist then return "" end
@@ -1592,7 +1361,7 @@ function Pointer.frame_minimap_functions.OnUpdate(self,elapsed)
 		self.icon:Hide() self.arrow:Hide() return
 	end
 
-	local dist,x,y = Astrolabe:GetDistanceToIcon(self)
+	local dist,x,y = HBDPins:GetDistanceToIcon(self)
 	if not dist --[[or IsInInstance()--]] then self.icon:Hide() self.arrow:Hide() return end
 
 	self.lastdist=self.dist
@@ -1606,7 +1375,7 @@ function Pointer.frame_minimap_functions.OnUpdate(self,elapsed)
 		return
 	end
 
-	local edge = Astrolabe:IsIconOnEdge(self)
+	local edge = HBDPins:IsMinimapIconOnEdge(self)
 	self.is_on_edge = edge
 
 	if edge then
@@ -1616,7 +1385,7 @@ function Pointer.frame_minimap_functions.OnUpdate(self,elapsed)
 			self.icon:Hide()
 			self.arrow:Show()
 
-			local angle = Astrolabe:GetDirectionToIcon(self)
+			local angle = HBDPins:GetDirectionToIcon(self)
 			--angle = angle + 2.356194  -- rad(135)
 
 			local rotate_minimap = GetCVar("rotateMinimap")=="1"
@@ -1663,7 +1432,7 @@ function Pointer.frame_minimap_functions.OnUpdate(self,elapsed)
 			local old_minimap_lastset=minimap_lastset
 			local dist = dist*2
 			if dist~=lastminimapdist then
-				local mapsizes = MinimapSize[Astrolabe.minimapOutside and 'outdoor' or 'indoor']
+				local mapsizes = MinimapSize[IsIndoors() and 'indoor' or 'outdoor']
 
 				minimap_lastset=0
 				for i=1,Minimap:GetZoomLevels()-1 do
@@ -1689,7 +1458,7 @@ function Pointer.frame_minimap_functions.OnClick(self,button)
 
 	if self.waypoint.OnClick then self.waypoint.OnClick(self,button) return end
 		
-	if button=="RightButton" or IsShiftKeyDown() then
+	if button=="RightButton" or (IsShiftKeyDown() and not IsControlKeyDown() and not IsAltKeyDown()) then
 		--if ZGV.Pointer.ArrowFrame.waypoint==self.waypoint then ZGV.Pointer:HideArrow() end
 		if self.waypoint.type=="manual" then ZGV.Pointer:RemoveWaypoint(self.waypoint)
 		elseif self.waypoint.surrogate_for and self.waypoint.surrogate_for.type=="manual" then ZGV.Pointer:RemoveWaypoint(self.waypoint.surrogate_for)
@@ -1743,7 +1512,7 @@ function Pointer.frame_minimap_functions.OnEvent(self,event,...)
 end
 
 function Pointer.frame_worldmap_functions.OnEnter(self,arg)
-	if self.waypoint.passive then return end
+	if self.waypoint and self.waypoint.passive then return end
 	if self.waypoint and (self.icon:IsVisible() or self.arrow:IsVisible()) then
 		WorldMapPOIFrame.old_allowBlobTooltip = WorldMapPOIFrame.allowBlobTooltip
 		WorldMapPOIFrame.allowBlobTooltip = false
@@ -1754,7 +1523,7 @@ function Pointer.frame_worldmap_functions.OnEnter(self,arg)
 end
 
 function Pointer.frame_worldmap_functions.OnLeave(self)
-	if self.waypoint.passive then return end
+	if self.waypoint and self.waypoint.passive then return end
 	WorldMapTooltip:Hide()
 
 	WorldMapPOIFrame.allowBlobTooltip = WorldMapPOIFrame.old_allowBlobTooltip
@@ -1767,42 +1536,7 @@ function Pointer.frame_worldmap_functions.OnEvent(self,event,...)
 	local way = self.waypoint
 
 	--ZGV:Print("WORLDMAP ONEVENT "..event)
-	if event == "WORLD_MAP_UPDATE" then
-		--[[
-		local show=true
-		if not way.showinallzones then
-			local m,f = GetCurrentMapAreaID(),GetCurrentMapDungeonLevel()
-			if way.m~=m or way.f~=f then show=false end
-		end
-
-		if way and way.OnEvent then way:OnEvent(event,...) end
-		if not way or way.hidden then self:Hide() return end
-
-		local x,y = Astrolabe:PlaceIconOnWorldMap(ZGV.Pointer.OverlayFrame, self, self.waypoint.m, self.waypoint.f, self.waypoint.x, self.waypoint.y)
-		if (x and y and (0 < x and x <= 1) and (0 < y and y <= 1)) then
-			self:Show()
-		else
-			self:Hide()
-		end
-
-		self.icon:ClearAllPoints()
-		self.icon:SetAllPoints()
-		--]]
-
-		--[[
-		if GetCurrentMapZone()==0 then
-			self:SetWidth(10)
-			self:SetHeight(10)
-		else
-		end
-		--]]
-
-		--[[
-		self:SetWidth(25)
-		self:SetHeight(25)
-		--]]
-
-	elseif event == "PLAYER_ENTERING_WORLD" or event=="ZONE_CHANGED_NEW_AREA" then
+	if event == "PLAYER_ENTERING_WORLD" or event=="ZONE_CHANGED_NEW_AREA" then
 		if way then way:UpdateMiniMapIcon() end
 	end
 end
@@ -2039,13 +1773,6 @@ local function FloorOrder(map,a,b)
 end
 Pointer.FloorOrder=FloorOrder
 
-local function ZoneIsOutdoor(map)
-	local mapdata = Astrolabe.WorldMapSize[map]   if not mapdata then return end
-	local system = mapdata.system
-	return (system==13 or system==14 or system==466 or system==485 or system==862 or system==605 or system==544 or system==962) and map~=504 and map~=321 and map~=903
-	-- continents
-end
-
 local function L_or_nil(id)
 	local l = L[id]
 	if l==id then return nil else return l end
@@ -2252,21 +1979,11 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 
 	local dist,x,y
 	local errortxt
-	local cm,cf,cc = ZGV.CurrentMapID,ZGV.CurrentMapFloor,Astrolabe.WorldMapSize[ZGV.CurrentMapID or 0].system --,LibRover.ContinentsByID[ZGV.CurrentMapID]
+	local cm,cf,cc = ZGV.CurrentMapID,ZGV.CurrentMapFloor,HBD:GetMapContinent(ZGV.CurrentMapID or 0) --,LibRover.ContinentsByID[ZGV.CurrentMapID]
 
 	--if IsInInstance() and cm~=waypoint.m then ArrowFrame:Hide() return end
 
-	-- If the Minimap is shown, then there is no need for overhead, just take what Astrolabe calculated for us this frame
-
-	--[[
-	if GetInstanceInfo()==BZL['Deeprun Tram']
-	then -- We're in a mapless place. Tough luck.
-		return
-	end
-	-- Since 5.1.0, Deeprun Tram has a map. Too bad the Ironforge side is not on it. Blizzard, why you so inconsistent!?
-	--]]
-
-	if not Astrolabe:GetCurrentPlayerPosition() then
+	if not HBD:GetPlayerZonePosition(true) then
 		if GetUnitSpeed("player")>0 then
 		-- we're in an unknown location, and moving - our location is totally unknown now. DON'T display distances.
 			were_in_unknown_location = true
@@ -2278,17 +1995,7 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 
 	-- Calculate distance, or at least get a fake one
 
-	if Minimap:IsShown() then
-		dist,x,y = Astrolabe:GetDistanceToIcon(waypoint.frame_minimap)
-	else
-		-- When Minimap is hidden, Astrolabe ceases updating, so let us force calculation
-		local _x, _y=GetPlayerMapPosition("player")
-		local wp=waypoint.frame_minimap.waypoint
-		dist, x, y = Astrolabe:ComputeDistance(ZGV.CurrentMapID, ZGV.CurrentMapFloor, _x, _y, wp.m, wp.f, wp.x, wp.y)
-		-- Since Astrolabe does not update it when the minimap is hidden, let's do it on our own instead
-		waypoint.frame_minimap.dist=dist
-	end
-
+	dist,x,y = HBDPins:GetDistanceToIcon(waypoint.frame_minimap)
 
 	local transcontinental
 	if waypoint.c~=cc then
@@ -2380,7 +2087,7 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 		or	(waypoint.pathnode.realzone and waypoint.pathnode.realzone~=BZR[GetRealZoneText()])
 		or	(waypoint.pathnode.subzone and waypoint.pathnode.subzone~=BZR[GetSubZoneText()])
 		or	(waypoint.pathnode.minizone and waypoint.pathnode.minizone~=BZR[GetMinimapZoneText()])
-		or	(waypoint.pathnode.indoors and not Astrolabe.minimapOutside)
+		or	(waypoint.pathnode.indoors and not IsOutdoors())
 		-- don't arrive on wrong map zone
 							)
 		)
@@ -2494,7 +2201,7 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 		else
 			-- show direction arrow
 
-			angle = Astrolabe:GetDirectionToIcon(waypoint.frame_minimap)
+			angle = HBDPins:GetDirectionToIcon(waypoint.frame_minimap)
 			local angle_error
 			if not angle or errortxt=="far" then
 				angle=3.1415
@@ -2722,9 +2429,20 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 		return
 	end
 
+	local text = override_text or waypoint:GetArrowTitle() or waypoint:GetTitle() or waypoint.arrowtitle or waypoint.title
+
+	if ZGV.db.profile.debug then
+		text = (text or "")..("\n[rad: %s%s%s%s%s]"):format(
+			waypoint.radius or "",
+			waypoint.radius and "" or ("%d (def)"):format(self:GetDefaultStepDist()),
+			waypoint.noskip and ", noskip" or "",
+			waypoint.pathnode and ", node#"..waypoint.pathnode.num or "",
+			waypoint.goal and ", goal#"..waypoint.goal.num or "")
+	end
+
 	-- spew it out.
 	ArrowFrame:ShowText(
-		override_text or waypoint:GetArrowTitle() or waypoint:GetTitle() or waypoint.arrowtitle or waypoint.title,
+		text,
 		override_dist or dist,
 		override_eta or eta,
 		errortxt)
@@ -2739,8 +2457,8 @@ function Pointer.ArrowFrame_Proto_GetFarText(self)
 	local way = self.waypoint
 	local m = way.m or 0
 
-	local lastm = Astrolabe.LastPlayerPosition and Astrolabe.LastPlayerPosition[1]
-	local lastc = Astrolabe.WorldMapSize[lastm].system or 0
+	local lastm = HBD:GetPlayerZone()
+	local lastc = HBD:GetMapContinent(lastm)
 	return (Pointer.GetMapNameByID2(way.m,way.f) or ("(bad map #%d)"):format(way.m))
 		  .. (way.c and way.c~=lastc and way.c>0 and way.c~=way.m and (", " .. (Pointer.GetMapNameByID2(way.c) or "?")) or "")  -- continent, if applicable
 end
@@ -2856,15 +2574,22 @@ function Pointer.ArrowFrame_ShowMenu()
 			})
 			local points = route.coords or route.points
 			local n=1 --ugly second counter >_<
-			for i=2,#points do
+			local start=2
+			if ZGV.DEV then n=0 start=1 end
+			for i=start,#points do
 				local node=points[i].pathnode
-				if node and not (node.is_arrival and LibRover.cfg.strip_arrivals) then
+				if node and not (node.is_arrival and LibRover.cfg.strip_arrivals and not ZGV.DEV) then
 					local text = (node.text or "?"):gsub("\n","; ")
-					if ZGV.DEV then text=text .. " -- " .. node:tostring() end
 					tinsert(list,{
 						text = L['pointer_arrowmenu_route_node'..(n==1 and '1' or '')]:format(n,text),
 						isTitle=true, notCheckable=true,
 					})
+					if ZGV.DEV then
+						tinsert(list,{
+							text = "|cffff8800 = " .. node:tostring(),
+							isTitle=true, notCheckable=true,
+						})
+					end
 					n=n+1
 				end
 			end
@@ -2873,6 +2598,20 @@ function Pointer.ArrowFrame_ShowMenu()
 				text = L['pointer_arrowmenu_route_est']:format(floor(last.time/60),last.time%60),
 				isTitle=true, notCheckable=true,
 			})
+			if ZGV.DEV then
+				if next(LibRover.RESULTS_SKIPPED_START or {}) then
+					tinsert(list,{ text = "|cffff8800 Removed at start:", isTitle=true, notCheckable=true })
+					for ni,nn in ipairs(LibRover.RESULTS_SKIPPED_START) do
+						tinsert(list,{ text = "|cffff8800 " .. nn[2] .. " : " .. nn[1]:tostring(), isTitle=true, notCheckable=true })
+					end
+				end
+				if next(LibRover.RESULTS_SKIPPED_END or {}) then
+					tinsert(list,{ text = "|cffff8800 Removed at end:", isTitle=true, notCheckable=true })
+					for ni,nn in ipairs(LibRover.RESULTS_SKIPPED_END) do
+						tinsert(list,{ text = "|cffff8800 " .. nn[2] .. " : " .. nn[1]:tostring(), isTitle=true, notCheckable=true })
+					end
+				end
+			end
 		end
 
 		if Pointer.DestinationWaypoint then
@@ -3050,16 +2789,16 @@ function Pointer.Overlay_OnUpdate(frame,but,...)
 	-- set waypoints by shift-leftclicking the world map
 
 	if frame.ZygorCoordsDEV then
-		local x,y = GetPlayerMapPosition("player")
 		local mx,my = GetCursorPosition()
 		mx=(mx-(frame:GetLeft()*frame:GetEffectiveScale()))/(frame:GetWidth()*frame:GetEffectiveScale())
 		my=(my-(frame:GetBottom()*frame:GetEffectiveScale()))/(frame:GetHeight()*frame:GetEffectiveScale())
 		my=1-my
 		local m,f = GetCurrentMapAreaID(),GetCurrentMapDungeonLevel()
-		frame.ZygorCoordsDEV:SetText(("Player: %.1f,%.1f\nCursor: %.1f,%.1f\nDistance: %.1f yd"):format(x*100,y*100,mx*100,my*100,Astrolabe:ComputeDistance(GetCurrentMapAreaID(),f,x,y,m,f,mx,my)))
+		local px, py, pm, pf = HBD:GetPlayerZonePosition(true)
+		frame.ZygorCoordsDEV:SetText(("Player: %.1f,%.1f\nCursor: %.1f,%.1f\nDistance: %.1f yd"):format(px*100,py*100,mx*100,my*100,HBD:GetZoneDistance(pm, pf,px, py,m,f,mx,my) or 0))
 	end
 
-	if IsMouseButtonDown("LeftButton") and (IsShiftKeyDown() or ZGV.db.profile.no_shift_for_waypoints) then
+	if IsMouseButtonDown("LeftButton") and (IsShiftKeyDown() and not IsControlKeyDown() and not IsAltKeyDown() or ZGV.db.profile.no_shift_for_waypoints) then
 		-- okay, clicked, but aren't we on a waypoint?
 --		for w,way in Pointer.waypoints do
 --			if
@@ -3137,8 +2876,8 @@ local function GenerateSubmapCache()
 	local system
 	-- FIXME that's ugly
 	for i=0,2000 do
-		system=Astrolabe:GetMapInfo(i,0)
-		if system then -- make Astrolabe do the research if such a map exists
+		system=HBD:GetMapContinent(i)
+		if system then -- make HBD do the research if such a map exists
 			if not submap_cache[system] then submap_cache[system]={} end
 			table.insert(submap_cache[system],i)
 		end
@@ -3208,8 +2947,8 @@ function Pointer:FindCorpseArrow(reset)
 	local mapcandidates = {}
 
 	-- Locating the player on the parent level map
-	local system,_,_,_,_,_=Astrolabe:GetMapInfo(origm,origf)
-	if not system then RestartCorpseSearch("Astrolabe doesn't know the system you're in") return end
+	local system=HBD:GetMapContinent(origm)
+	if not system then RestartCorpseSearch("HBD doesn't know the system you're in") return end
 
 	SetMapByID(system)
 	--SetDungeonMapLevel(0) -- sanity
@@ -3222,6 +2961,7 @@ function Pointer:FindCorpseArrow(reset)
 		-- • The body is seen within the map
 		-- • Map is small(for example Darnassus in Teldrassil)
 		local smallestarea,bestmap,bestfloor,bestx,besty
+		smallestarea=9999
 
 		-- This is madness. Apparently SetMapByID(x) followed by GetCurrentMapAreaID() doesn't always return x. Well... trying a few times DOES work! Insane, eh?
 
@@ -3251,7 +2991,7 @@ function Pointer:FindCorpseArrow(reset)
 				and (id==origm or _x~=origx) -- AND it's not the SAME position that we saw on "our" map!!!! IMPORTANT!!!   /run SetMapByID(666) print(GetCorpseMapPosition())   you'll see magic happen, it'll return CURRENT map's corpse positions
 				then
 					table.insert(mapcandidates,{mapid=id,floor=l,x=_x,y=_y})
-					local _,_,_w,_h,_,_=Astrolabe:GetMapInfo(id,l)
+					local _w,_h=HBD:GetZoneSize(id,l)
 					Pointer:Debug("Corpse Candidate on map: %d/%d %.1f,%.1f (size:%d)",id,l,_x*100,_y*100,_w)
 					if not bestmap or smallestarea>_w then -- alex: little overhead here is okay, we don't get more that 4 maps anyway
 						smallestarea=_w
@@ -3405,7 +3145,7 @@ function Pointer:GetNextInPath(pathname,testway)
 			if neardist<smart_path_dist then return nextway end -----------------------
 
 			local nextdist = nextway.frame_minimap.dist
-			local nearnextdist = Astrolabe:ComputeDistance(nearway.m,nearway.f,nearway.x,nearway.y,nextway.m,nextway.f,nextway.x,nextway.y)
+			local nearnextdist = HDM:GetZoneDistance(nearway.m,nearway.f,nearway.x,nearway.y,nextway.m,nextway.f,nextway.x,nextway.y)
 			if not nearnextdist then
 				return nearway
 			else
@@ -3414,7 +3154,7 @@ function Pointer:GetNextInPath(pathname,testway)
 				-- if we ever need angles here...
 
 				-- GetDist:
-					local dist,xd,yd = Astrolabe:ComputeDistance(node1.m,node1.f,node1.x,node1.y,node2.m,node2.f,node2.x,node2.y)
+					local dist,xd,yd = HBD:GetZoneDistance(node1.m,node1.f,node1.x,node1.y,node2.m,node2.f,node2.x,node2.y)
 					if dist==0 and node1.c~=node2.c or (node1.c==node2.c and node1.c==-1 and node1.m~=node2.m) then dist=nil end   -- the latter condition shouldn't matter anymore, since we moved to Astrolabe systems instead of continents
 					return dist or 99999999,xd,yd
 				--
@@ -3453,7 +3193,7 @@ function Pointer:GetNextInPath(pathname,testway)
 
 		for w,way in ipairs(pathpoints) do  if way.frame_minimap then
 			local dist = way.frame_minimap.dist or 9999
-			if testway then dist=Astrolabe:ComputeDistance(way.m,way.f,way.x,way.y,testway.m,testway.f,testway.x,testway.y) or 9999 end
+			if testway then dist=HBD:GetZoneDistance(way.m,way.f,way.x,way.y,testway.m,testway.f,testway.x,testway.y) or 9999 end
 			
 			local nextw = w+1
 			if nextw>#pathpoints then
@@ -3462,9 +3202,9 @@ function Pointer:GetNextInPath(pathname,testway)
 			local nextway = pathpoints[nextw]
 
 			local nextdist = nextway.frame_minimap.dist or 9999
-			if testway then nextdist=Astrolabe:ComputeDistance(nextway.m,nextway.f,nextway.x,nextway.y,testway.m,testway.f,testway.x,testway.y) or 9999 end
+			if testway then nextdist=HBD:GetZoneDistance(nextway.m,nextway.f,nextway.x,nextway.y,testway.m,testway.f,testway.x,testway.y) or 9999 end
 			
-			local dist_between = Astrolabe:ComputeDistance(way.m,way.f,way.x,way.y,nextway.m,nextway.f,nextway.x,nextway.y)
+			local dist_between = HBD:GetZoneDistance(way.m,way.f,way.x,way.y,nextway.m,nextway.f,nextway.x,nextway.y)
 
 			-- don't bother with segments too short
 			if dist_between>smart_path_dist*0.5 then
@@ -3510,9 +3250,9 @@ function Pointer:GetNextInPath(pathname,testway)
 
 				local dist1 = way1.frame_minimap.dist
 				local dist2 = way2.frame_minimap.dist
-				if testway then dist1=Astrolabe:ComputeDistance(way1.m,way1.f,way1.x,way1.y,testway.m,testway.f,testway.x,testway.y) end
-				if testway then dist2=Astrolabe:ComputeDistance(way2.m,way2.f,way2.x,way2.y,testway.m,testway.f,testway.x,testway.y) end
-				local dist_between = Astrolabe:ComputeDistance(way1.m,way1.f,way1.x,way1.y,way2.m,way2.f,way2.x,way2.y)
+				if testway then dist1=HBD:GetZoneDistance(way1.m,way1.f,way1.x,way1.y,testway.m,testway.f,testway.x,testway.y) end
+				if testway then dist2=HBD:GetZoneDistance(way2.m,way2.f,way2.x,way2.y,testway.m,testway.f,testway.x,testway.y) end
+				local dist_between = HBD:GetZoneDistance(way1.m,way1.f,way1.x,way1.y,way2.m,way2.f,way2.x,way2.y)
 
 				local pull2 = (dist+nextdist) / dist_between  -- 1..inf
 				local along = .........
@@ -3679,19 +3419,21 @@ end
 -- TODO later.
 --]]
 
--- store continent numbers, for zone continent comparison later.
-local conts = {GetMapContinents()}
-local extramaps = {[-1]="Azeroth",[0]="Azeroth",[13]=conts[1],[14]=conts[2],[466]=conts[3],[485]=conts[4],[751]=conts[5],[862]=conts[6],[906]="Theramore"}
+local extramaps = {
+	[-1]="Azeroth",
+	[0]="Azeroth",
+	[906]="Theramore"
+	}
 function Pointer.GetMapNameByID2(id,floor)
-	if floor then
+	if not id then return "no map" end
+	if floor and HBD.mapData[id] then
 		floor = ZGV:SanitizeMapFloor(id,floor)
-		local mapdata = Astrolabe.WorldMapSize[id]
-		mapdata = mapdata and mapdata[floor]
-		if not mapdata then return "?" end --sanity, though Astrolabe should always return something interesting.
-		if mapdata.floorName and mapdata.floorName~=0 then return mapdata.floorName
-		elseif mapdata.microName and mapdata.microName~=0 then return mapdata.microName  end
+		local mapFile = HBD.mapData[id].mapFile
+		if id==321 then floor=floor-1 end
+		local floorName = _G['DUNGEON_FLOOR_'..mapFile:upper()..floor]
+		if floorName then return floorName end
 	end
-	return GetMapNameByID(id or 0) or extramaps[id] or "(map "..(id or "nil")..")"
+	return extramaps[id] or GetMapNameByID(id or 0) or "(map "..(id or "nil")..")"
 end
 
 
@@ -3825,7 +3567,16 @@ Pointer.antpoints = antpoints
 local def_ant_icon = ZGV.Pointer.Icons.ant
 
 local widths_cache = {}
-setmetatable(widths_cache,{__index=function(t,mapid) local w=Astrolabe.WorldMapSize[mapid].width  if w==0 then w=Astrolabe.WorldMapSize[mapid][1] and Astrolabe.WorldMapSize[mapid][1].width end  t[mapid]=w  return w  end})
+setmetatable(widths_cache,{__index=function(t,mapid) 
+	local w=HBD.mapData[mapid][1]  
+	if w==0 then 
+		local nextf=next(HBD.mapData[mapid].floors)
+		w=HBD.mapData[mapid].floors[nextf] and HBD.mapData[mapid].floors[nextf][1]
+	end  
+	t[mapid]=w  
+	return w  
+end})
+
 Pointer.widths_cache = widths_cache
 
 local function spawn_curve_ants(points,loop,phase)
@@ -3851,10 +3602,10 @@ local function spawn_curve_ants(points,loop,phase)
 
 		local curve_accuracy = p1.curve_accuracy
 		if not curve_accuracy then
-			--local dist = Astrolabe:ComputeDistance(p1.map,p1.floor,p1.x/100,p1.y/100,p2.map,p2.floor,p2.x/100,p2.y/100)   -- Astrolabe thinks x and y are 0..1, and they're 0..100 here. Results will be valid, though exaggerated.
+			--local dist = HBD:GetZoneDistance(p1.map,p1.floor,p1.x/100,p1.y/100,p2.map,p2.floor,p2.x/100,p2.y/100)   -- Astrolabe thinks x and y are 0..1, and they're 0..100 here. Results will be valid, though exaggerated.
 			local dist
 			if false then -- use straight dist
-				dist = Astrolabe:ComputeDistance(p1.gm,p1.gf,p1.gx,p1.gy,p2.gm,p2.gf,p2.gx,p2.gy)   -- Astrolabe thinks x and y are 0..1, and they're 0..100 here. Results will be valid, though exaggerated.
+				dist = HBD:GetZoneDistance(p1.gm,p1.gf,p1.gx,p1.gy,p2.gm,p2.gf,p2.gx,p2.gy)   -- Astrolabe thinks x and y are 0..1, and they're 0..100 here. Results will be valid, though exaggerated.
 			else
 				dist=0
 				local lx,ly=p1gx,p1gy
@@ -3944,8 +3695,8 @@ local function spawn_straight_ants(points,loop,phase)
 
 			local curve_accuracy = p1.curve_accuracy
 			if not curve_accuracy then
-				--local dist = Astrolabe:ComputeDistance(p1.map,p1.floor,p1.x/100,p1.y/100,p2.map,p2.floor,p2.x/100,p2.y/100)   -- Astrolabe thinks x and y are 0..1, and they're 0..100 here. Results will be valid, though exaggerated.
-				local dist = Astrolabe:ComputeDistance(p1.gm,p1.gf,p1.gx,p1.gy,p2.gm,p2.gf,p2.gx,p2.gy)   -- Astrolabe thinks x and y are 0..1, and they're 0..100 here. Results will be valid, though exaggerated.
+				--local dist = HBD:GetZoneDistance(p1.map,p1.floor,p1.x/100,p1.y/100,p2.map,p2.floor,p2.x/100,p2.y/100)   -- Astrolabe thinks x and y are 0..1, and they're 0..100 here. Results will be valid, though exaggerated.
+				local dist = HBD:GetZoneDistance(p1.gm,p1.gf,p1.gx,p1.gy,p2.gm,p2.gf,p2.gx,p2.gy)   -- Astrolabe thinks x and y are 0..1, and they're 0..100 here. Results will be valid, though exaggerated.
 				--print(i,"/",#points,dist)
 				if not dist or dist<1 then dist=1 end  -- correct for the above exaggeration
 				curve_accuracy = ceil(dist/curve_spacing)
@@ -4007,7 +3758,7 @@ local temp_setwaypoint_data={}
 --local ignored_fields = { action=1,dirtytext=1,indent=1,L=1,macro=1,macroicon=1,macrosrc=1 }  
 -- Bah, screw it.
 -- keywords: valid data fields
-local copy_fields = {title=1,arrowtitle=1,arrowicon=1,text=1,pathnode=1,map=1,["floor"]=1,x=1,y=1,["type"]=1,icon=1,pathnode=1,
+local copy_fields = {title=1,arrowtitle=1,arrowicon=1,text=1,pathnode=1,map=1,["floor"]=1,x=1,y=1,["type"]=1,icon=1,pathnode=1,radius=1,
 	waypoint_zone=1, waypoint_realzone=1, waypoint_subzone=1, waypoint_minizone=1, waypoint_region=1, waypoint_indoors=1, player=1, ant_icon=1,noskip=1,
 	poiNum=1,OnNear=1,OnFar=1,OnUpdate=1,isNear=1,nearRange=1, OnClick=1, onminimap=1, onworldmap=1, tooltipdata=1, storedData=1, customs=1 }
 local dont_copy_Goal_fields = { OnClick=1 } -- I hate myself for this.
@@ -4052,7 +3803,7 @@ local function set_waypoints(points,worldsize,minisize,ptype,setname)
 
 			data.goal = point.action and point  -- it's a goal, make it smart
 
-			data.radius = point.dist
+			data.radius = point.dist or point.radius
 
 			-- Copy point vars to waypoint
 			-- DON'T. This makes a fucking mess. Clean it up PROPERLY.
@@ -4109,15 +3860,15 @@ end
 local function move_point_to_global(point)
 	if not point then return end
 	local m = point.m	if not m then return end
-	local data = Astrolabe.WorldMapSize[m]
-	local mastermap = data.systemParent or 0
+	local data = HBD.mapData[m]
+	local mastermap = HBD:GetMapContinent(m)
 	local masterfloor = ZGV:SanitizeMapFloor(mastermap,0) -- even if it's the same map, remap to be able to work with bare coords
 
 	--if Astrolabe.WorldMapSize[point.map].system==466 then mastermap=466 end  -- outland, do NOT translate onto Azeroth
 	--if Astrolabe.WorldMapSize[point.map].system==640 then mastermap=640 end  -- deepholm, do NOT translate onto Azeroth
 	--if point.c==-1 then mastermap=Astrolabe.WorldMapSize[point.map].system end  -- instances, do NOT translate onto Azeroth
 	if m~=mastermap or point.f~=masterfloor then
-		point.gx,point.gy = Astrolabe:TranslateWorldMapPosition( m, point.f, point.x, point.y, mastermap, masterfloor )
+		point.gx,point.gy = HBD:TranslateZoneCoordinates(point.x, point.y, m, point.f, mastermap, masterfloor)
 	end
 	if point.gx then
 		point.gm,point.gf=mastermap,masterfloor
@@ -4137,7 +3888,17 @@ end
 
 -- Display (time-phased) ants between all .ants -enabled sets in Pointer.pointsets .
 local mapsizeratio = {[-1]=10}
-setmetatable(mapsizeratio,{__index=function(t,mapid) local r=Astrolabe.WorldMapSize[mapid].width/2000  if r==0 then r=Astrolabe.WorldMapSize[mapid][1] and Astrolabe.WorldMapSize[mapid][1].width/2000 or 0 end  r=max(min(r,10),0.1)  t[mapid]=r  return r  end})
+
+setmetatable(mapsizeratio,{__index=function(t,mapid) 
+	local r=HBD.mapData[mapid][1]/2000
+	if r==0 then 
+		local nextf=next(HBD.mapData[mapid].floors)
+		r=HBD.mapData[mapid].floors[nextf] and HBD.mapData[mapid].floors[nextf][1]/2000
+	end  
+	t[mapid]=r
+	return r  
+end})
+
 Pointer.mapsizeratio = mapsizeratio
 
 local ants_optimized_which_isnt_implemented=false
@@ -4168,7 +3929,7 @@ function Pointer:AnimateAnts()
 
 				if wp.player then
 					-- point is player? get new location
-					local m,f,x,y = Astrolabe:GetCurrentPlayerPosition("last")
+					local x,y,m,f = HBD:GetPlayerZonePosition(true)
 					wp.m,wp.f,wp.x,wp.y = m,f,x,y
 					wp.gx,wp.gy,wp.gm,wp.gf = nil,nil,nil,nil
 				end
@@ -4323,7 +4084,7 @@ local PATHFOUND_TO_MANUAL, PATHFINDING_TARGET
 
 local oldpathtarget
 --local FAILED_PATH
-local function PathFoundHandler(state,path,ext)
+local function PathFoundHandler(state,path,ext,reason)
 	if ZGV.Pointer.corpsearrow then return end
 
 	if state~="progress" then Pointer:Debug("&_PUSH PathFoundHandler! state=%s",state) end
@@ -4345,32 +4106,34 @@ local function PathFoundHandler(state,path,ext)
 
 			if first and not node.player then first=false  wayp.arrow=true  end
 
-			wayp.radius = node.radius or ZGV.Pointer:GetDefaultStepDist() -- will account for flying
-
+			wayp.radius = node.radius  -- will account for flying
+			
 			if node.type=="taxi" then
 				-- source taxi: never complete waypoint
 				-- destination taxi: early complete waypoint, let LibRover wait for touchdown
 				if node.link.mode~="taxi" then
 					--start
-					wayp.radius = 5
+					wayp.radius = wayp.radius or 5
 					wayp.noskip = true
 				end
 			elseif node.type=="portal" then
 				if node.link.mode~="portal" then
-					wayp.radius = 5
+					wayp.radius = wayp.radius or 5
 					wayp.noskip = true
 				end
 			elseif node.type=="ship" or node.type=="zeppelin" then
 				if node.link.mode~="ship" and node.link.mode~="zeppelin" then
-					wayp.radius = 5
+					wayp.radius = wayp.radius or 5
 					wayp.noskip = true
 				else
-					wayp.radius = 100
+					wayp.radius = wayp.radius or 100
 				end
 			elseif node.noskip then -- let's allow forcing this.
 				wayp.radius = 5
 				wayp.noskip = true
 			end
+
+			wayp.radius = wayp.radius or ZGV.Pointer:GetDefaultStepDist()
 
 			local mode = node.link and node.link.mode
 			if mode=="taxi" then wayp.ant_icon = ZGV.Pointer.Icons.ant_taxi
@@ -4421,8 +4184,10 @@ local function PathFoundHandler(state,path,ext)
 		Pointer:ClearSet("route")
 		--FAILED_PATH = ZGV.Pointer.DestinationWaypoint
 
-		if ext and ZGV.Pointer.DestinationWaypoint then  -- ext is failure reason
-			ZGV.Pointer.DestinationWaypoint.arrowtitle = ext
+		reason = reason or "Destination unreachable."
+
+		if reason and ZGV.Pointer.DestinationWaypoint then
+			ZGV.Pointer.DestinationWaypoint.arrowtitle = reason
 		end
 		Pointer:ShowArrow(ZGV.Pointer.DestinationWaypoint)
 
@@ -4690,9 +4455,9 @@ function Pointer:SetWaypointByCommandLine(input)
 
 	if not input then return end
 	
-	map,floor,x,y = input:match("^(.-)%s*/%s*(%d)+%s+([0-9%.]+)[ ,;:]+([0-9%.]+)$")
+	map,floor,x,y = input:match("^(.-)%s*/%s*(%d+)%s+([0-9%.]+)[ ,;:]+([0-9%.]+)$")
 	if not map then map,x,y = input:match("^(.-)%s+([0-9%.]+)[ ,;:]+([0-9%.]+)$") end
-	if not map then map,floor = input:match("^(.-)%s*/%s*(%d)+$") end
+	if not map then map,floor = input:match("^(.-)%s*/%s*(%d+)$") end
 	if not map then map=input end
 
 	if map=="Shadowmoon Valley" and ZGV:GetPlayerPreciseLevel()>=90 then map="Shadowmoon Valley D" end
@@ -4716,6 +4481,8 @@ function Pointer:SetWaypointByCommandLine(input)
 		-- we should have all the data now, if there is any. Localize and ID the map.
 		local lmap=ZGV.BZR[map] or map
 		mapid=ZGV.LibRover.data.MapIDsByName[lmap]
+		if tonumber(lmap) then mapid=tonumber(lmap) end
+		if type(mapid)=="table" then mapid=mapid[1] end -- phases suck
 		if not mapid then ZGV:Print("Unknown map: "..map) return end
 	end
 
@@ -4795,8 +4562,6 @@ function Pointer:Debug_FreeWorldMapScale()
 
 	ZGV:Print("World Map Zooming is unlocked! Feel free to zoom in to 1000% if you like.")
 end
-
-
 
 function Pointer:TestPOIs()
 	print ("Adding known POIs.")

@@ -8,6 +8,10 @@ if not ZTA then return end
 -- /run ZTA:DumpGlyphItemIDs() to dump all classes glyph item ids
 
 ZTA.SpecIndices = {
+	["DEMONHUNTER"]={
+		["Havoc"]=1,
+		["Vengeance"]=2,
+	},
 	["DEATHKNIGHT"]={
 		["Blood"]=1,
 		["Frost"]=2,

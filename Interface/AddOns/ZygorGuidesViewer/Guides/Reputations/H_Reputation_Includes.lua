@@ -8683,7 +8683,7 @@ ZygorGuidesViewer:RegisterInclude("Golden_Lotus",[[
 		Use the abilities on your hotbar to kill 80 Krik'thik Hivelings |q 30243/1 |goto Vale of Eternal Blossoms 3.9,51.7 
 		|tip Use the Ignitable Oil Bucket first, followed by the Shado-Pan Torch.
 	step
-		Traverse the following rooms by only stepping on the _green tiles_, other tiles will harm you. |goto Vale of Eternal Blossoms 22.4,26.9
+		Traverse the following rooms by only stepping on the _green_ or _red_ tiles, other tiles will harm you. The safe tile changes every day but will be one of the two. |goto Vale of Eternal Blossoms 22.4,26.9
 		confirm
 		only if havequest(30280) or havequest(30277)
 	step
@@ -8701,13 +8701,14 @@ ZygorGuidesViewer:RegisterInclude("Golden_Lotus",[[
 	step
 		talk Yumi Goldenpaw##58743
 		turnin Survival Ring: Blades##30242 |goto Vale of Eternal Blossoms/0 18.5,71.5
+		turnin Survival Ring: Flame##30240 |goto Vale of Eternal Blossoms/0 18.5,71.5
 	step
 		talk Hai-Me Heavyhands##58962 |tip He walks around the Trainees in this area.
 		turnin The Battle Ring##30306 |goto Vale of Eternal Blossoms/0 20.1,75.6
 	step
 		talk Anji Autumnlight##58919
 		turnin The Thunder Below##30280 |goto Vale of Eternal Blossoms/0 21.4,71.6
-		turnin The Crumbling Hall |goto Vale of Eternal Blossoms/0 21.4,71.6
+		turnin The Crumbling Hall##30277 |goto Vale of Eternal Blossoms/0 21.4,71.6
 	step
 		talk Kun Autumnlight##58920
 		turnin Mantid Under Fire##30243 |goto Vale of Eternal Blossoms/0 21.4,71.6

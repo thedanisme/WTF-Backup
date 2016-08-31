@@ -8,6 +8,8 @@ local CHAIN = ZGV.ChainCall
 
 local db = {} -- ZGV.db.profile not available yet
 
+local HBD=ZGV.HBD
+
 local IM = {
 	IM_DEBUG = false,
 	isPopupShowing = false, -- let's not spam the player, it only needs to ask once . . .
@@ -1274,7 +1276,8 @@ function IM:BagFullCheck(event)
 	--IM:GetDistanceToNearestVendor(point)
 	local distanceToVendor
 	point = {}
-	point.map,point.floor,point.x,point.y = Astrolabe:GetCurrentPlayerPosition()
+	point.x,point.y,point.m,point.f=HBD:GetPlayerZonePosition(true)
+
 	--Spoo(nil, 0, point)
 	if point.x and point.y then
 		IM:Debug("Vendor distance check starts")
@@ -1672,7 +1675,7 @@ do -- limit scope of variables used for threading
 			if npc.m>0 then
 				npc.x=npc.x*0.01
 				npc.y=npc.y*0.01
-				local dist = Astrolabe:ComputeDistance(m,f,x,y,npc.m,npc.f or 0,npc.x,npc.y)
+				local dist=HBD:GetZoneDistance(m,f,x,y,npc.m,npc.f or 0,npc.x,npc.y)
 				if dist and dist<mindist then
 					mindist=dist
 					minid,minm,minf,minx,miny=tonumber(id),npc.m,npc.f,npc.x,npc.y
@@ -1765,9 +1768,8 @@ do -- limit scope of variables used for threading
 			
 			-- Not supposed to be required, but I am getting some reports that
 			-- there are sometimes errors with "point" ending up being nil.
-			-- Uncertain why Astrolabe is sometimes returning a nil point.
-			
-			local map,floor,x,y = Astrolabe:GetCurrentPlayerPosition()
+
+			local x,y,map,floor=HBD:GetPlayerZonePosition(true)
 			
 			if x and y then
 				table.wipe(IM_coords)
@@ -1808,7 +1810,7 @@ do -- limit scope of variables used for threading
 		local percent = math.floor(numItems / numSlots * 100)
 		
 		point = {}
-		point.map,point.floor,point.x,point.y = Astrolabe:GetCurrentPlayerPosition()
+		point.x,point.y,point.map,point.floor=HBD:GetPlayerZonePosition(true)
 		--Spoo(nil, 0, point)
 		if point.x and point.y then
 			local gotoCoords = {

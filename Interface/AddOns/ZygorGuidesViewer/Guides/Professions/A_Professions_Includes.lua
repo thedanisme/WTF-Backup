@@ -17950,7 +17950,6 @@ ZygorGuidesViewer:RegisterInclude("Tailoring_600-700",[[
 		path	82.5,59.1	82.7,57.6	83.5,56.4
 		path	82.2,53.9	81.8,50.5	81.2,48.8
 		kill Leatherhide Bull##81898+, Nagrand Prowler##81902+, Breezestrider Talbuk##78278+, Windroc##79398+
-		|tip Breezestrider Colts and Tenderhoof Meadowstompers cannot be looted.
 		collect 1025 Sumptuous Fur##111557 |condition skill("Tailoring")>=700
 		|tip You can also buy these materials from the Auction House.
 	step

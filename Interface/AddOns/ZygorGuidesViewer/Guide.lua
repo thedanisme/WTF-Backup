@@ -32,7 +32,7 @@ function Guide:New(title,header,data)
 		subtype=ZGV.GuideMenuTier
 	}
 
-	if guide.type=="GOLD" and guide.headerdata.meta and guide.headerdata.meta.goldtype=="route" then
+	if ZGV:NeedsAnimatedPopup(guide) then
 		ZGV.AnimatePopup = true
 		return nil
 	end
@@ -224,7 +224,7 @@ function Guide:GetCompletionText()
 		-- Old equation: (self.endlevel-math.floor(self.endlevel))*20
 		-- New equation: floor((self.endlevel-math.floor(self.endlevel))*20+0.05)
 		-- ~~ Jeremiah
-		return math.floor(comp*100).."%", ("Level %3d (+%d bars) reached: %d%%"):format(self.endlevel,floor((self.endlevel-math.floor(self.endlevel))*20+0.05),math.floor(comp*100))
+		return math.floor(comp*100).."%", ("Level %3d (+%d bars) reached: %d%%"):format(self.endlevel,floor((self.endlevel-math.floor(self.endlevel))*20+0.05),math.floor(comp*100)) --- 2015-01-12 22:56:44
 	elseif self.completionmode=="steps" then
 		return math.floor(comp*100).."%", ("Steps completed: %d/%d"):format(a,b)
 	elseif self.completionmode=="macro" then
@@ -765,4 +765,5 @@ end
 
 tinsert(ZGV.startups,{"Guide: registering events",function(self)
 	ZGV.GuideFuncs:RegisterEvents()
+	ZGV.Licence:VerifyKeyIntegrity(registerd_guide_key)
 end})

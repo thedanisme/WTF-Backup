@@ -109,6 +109,7 @@ end
 		restrictionDist - when is it available
 --]]
 
+
 function GearFinder:IsValidDungeonItem(itemlink)
 	if not itemlink then return false,ItemScore.SC_BADPARAM,"nil itemlink" end
 	if not ZGV.ItemScore.playerlevel then return false, ItemScore.SC_NOTYET, "level not available yet." end
@@ -116,7 +117,7 @@ function GearFinder:IsValidDungeonItem(itemlink)
 
 	local total,worn = GetAverageItemLevel()
 	local inguides = self:GetItemFromGuides(itemlink)
-	local dungeondata = inguides and ZGV.Dungeons[inguides.dungeon]
+	local dungeondata = inguides and (ZGV.Dungeons[inguides.dungeon] or (inguides.instanceId and ZGV.Dungeons["e_"..inguides.instanceId]))
 	if dungeondata then
 		if dungeondata.difficulty and not ZGV.db.profile["gear_"..dungeondata.difficulty] then
 			return false, ItemScore.SC_NOTFORU, "instance filtered out"
@@ -385,7 +386,7 @@ function GearFinder:UpdateCharacterFramePane()
 					if not data then error("wtf, no data for item? "..bestitemlink) end
 					
 					itembutton:SetItem(bestitemlink,bestitem.restricted,bestitem.restinfo)
-					assert(type(data.dungeon)=="number","Item "..bestitemlink.." has weird dungeon "..type(data.dungeon)..": "..data.dungeon)
+					--assert(type(data.dungeon)=="number","Item "..bestitemlink.." has weird dungeon "..type(data.dungeon)..": "..data.dungeon)
 					itembutton:SetDungeon(data.dungeon,data.boss,data.quest,data.special,data.encounterId)
 					itembutton:SetAlpha(not bestitem.restricted and 1.0 or 0.7)
 					itembutton.scorediff = bestitem.scorediff
@@ -890,7 +891,7 @@ end
 function GearFinder:AddItemToBase(item)
 	if not item or not item.info.itemlink then return end
 
-	local itemlink = ZGV.ItemLink.SetLevel(item.info.itemlink,0)
+	local itemlink = ZGV.ItemLink.SetLevel(item.info.itemlink,"")
 	if ItemBase.all[itemlink] then return end --already known
 
 	local slot,slot2 = ItemScore:GetCommonInvType(item.info.equipslot)
@@ -957,9 +958,12 @@ function GearFinder:ParseItemDatabase()
 						end
 					end
 
-					itemlink=ZGV.ItemLink.SetLevel(itemlink,0)
+					itemlink=ZGV.ItemLink.SetLevel(itemlink,"")
 
-					local lfgid = itemset.lfgid or data.dungeon
+					local lfgid = itemset.lfgid or ((data.dungeon and data.dungeon>0) and data.dungeon) or (data.instanceId and "e_"..data.instanceId)
+					local lfgid1 = itemset.lfgid or data.dungeon
+
+
 
 					self.items_in_guides[itemlink]={  -- Beware. As of WOD, itemid can be an itemlink in the format of 12345:0:0:0:0:0:0:0:0:0:0:0
 						dungeon = lfgid,
@@ -971,7 +975,8 @@ function GearFinder:ParseItemDatabase()
 						quest = itemset.quest,
 						special = itemset.special,
 						diff = data.diff,
-						encounterId = itemset.encounterId
+						encounterId = itemset.encounterId,
+						instanceId = data.instanceId
 					}
 
 					-- hack to update dungeons
@@ -1115,7 +1120,7 @@ end
 
 
 function GearFinder:GetItemFromGuides(itemlink)
-	itemlink = ZGV.ItemLink.SetLevel(itemlink,0)
+	itemlink = ZGV.ItemLink.SetLevel(itemlink,"")
 	return self.items_in_guides[itemlink]
 end
 
@@ -1140,7 +1145,7 @@ function GearFinder:StopCachingThread(msg,failcount,failmsg)
 		self:Debug("Gear Caching complete! -------------")
 	elseif msg == "failure" then
 		self.cache_fails = self.cache_queue
-		wipe(self.cache_queue)
+		--wipe(self.cache_queue)
 		ZGV:Debug(("ERROR initializing Gear Guides, %d items could not be processed. See ZGV.ItemScore.GearFinder.cache_fails"):format(failcount or 0))
 	elseif msg == "error" then
 		ZGV:Print("ERROR initializing Gear Guides, check the Lua errors and report them, please.")

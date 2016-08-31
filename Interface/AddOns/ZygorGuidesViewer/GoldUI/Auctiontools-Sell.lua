@@ -45,8 +45,22 @@ function Appraiser.sort_inventoryAuctions(a,b)
 end
 
 Appraiser.InventoryItems = {}
-function Appraiser:GetInventoryItems()
+local BagSlot_LinkCache = {}
+local BagSlot_BindCache = {}
+Appraiser.BagSlot_LinkCache=BagSlot_LinkCache
+Appraiser.BagSlot_BindCache=BagSlot_BindCache
+for bag=0, NUM_BAG_SLOTS do BagSlot_LinkCache[bag] = {} end
+for bag=0, NUM_BAG_SLOTS do BagSlot_BindCache[bag] = {} end
+
+function Appraiser:GetInventoryItems(refresh)
 	if Appraiser.SellingInProgress then return end
+	if refresh then
+		for bag=0, NUM_BAG_SLOTS do
+			table.wipe(BagSlot_LinkCache[bag])
+			table.wipe(BagSlot_BindCache[bag])
+		end
+	end
+
 	table.wipe(Appraiser.InventoryItems)
 	for bag=0, NUM_BAG_SLOTS do
 		for slot=1, GetContainerNumSlots(bag) do
@@ -67,43 +81,74 @@ end
 
 local inventory_cache = {}
 
+local function cached_GetContainerItemLink(bag, slot) 
+	local itemid=GetContainerItemID(bag, slot)
+	if not itemid then
+		-- item is missing, clear this single entry
+		BagSlot_LinkCache[bag][slot]=nil
+		return nil
+	end
+
+	if BagSlot_LinkCache[bag][slot] then return BagSlot_LinkCache[bag][slot] end
+	local itemlink = GetContainerItemLink(bag, slot)
+	if itemlink then BagSlot_LinkCache[bag][slot] = itemlink end
+	return BagSlot_LinkCache[bag][slot]
+end
+
 function Appraiser:AddItemToInventory(bag,slot)
 	local itemid=GetContainerItemID(bag,slot)
 
 	if ZGV.db.char.AThiddenitems[itemid] then return end -- item was hidden by player
 
-	local itemlink = GetContainerItemLink(bag, slot) 
+	local itemlink = cached_GetContainerItemLink(bag, slot) 
 
 	if itemid then
-		--Gratuity:SetHyperlink("item:"..itemid)
-		Gratuity:SetBagItem(bag,slot)
-		local n = Gratuity:NumLines()
+		if not itemlink then -- we did not get the link for this item yet, abort and retry
+			Appraiser.needToUpdate = true
+			return false
+		end
+
 		local isbop = false
 		local isboa = false
 		local isbound = false
 		local price = 0
 
-		for i=1,n do
-			local line=Gratuity:GetLine(i)
-			if line then
-				isbop = isbop or strfind(line, ITEM_BIND_ON_PICKUP)
-				isboa = isboa or strfind(line, ITEM_BIND_TO_BNETACCOUNT)
-				isboa = isboa or strfind(line, ITEM_BNETACCOUNTBOUND)
-				isbound = isbound or strfind(line, ITEM_SOULBOUND)
-				isbound = isbound or strfind(line, ITEM_BIND_QUEST)
-				isbound = isbound or strfind(line, ITEM_CONJURED)
-				
-				-- if we found use clause, we are past possible points of binding, stop looking
-				if strfind(line, USE_COLON) then break end 
+		if BagSlot_BindCache[bag][slot] then
+			local bs = BagSlot_BindCache[bag][slot]
+			isbop,isboa,isbound = bs.isbop,bs.isboa,bs.isbound
+		else
+			if itemid == 82800 then -- Caged pet, if you can cage it, you can sell it
+				isbop=false
+				isboa=false
+				isbound=false
+			else
+				Gratuity:SetHyperlink(itemlink)
+				local n = Gratuity:NumLines()
+				if strfind(tostring(Gratuity:GetLine(1)),RETRIEVING_ITEM_INFO) then return false end  -- maybe retry later...
+
+				for i=1,n do
+					local line=Gratuity:GetLine(i)
+					if line then
+						isbop = isbop or strfind(line, ITEM_BIND_ON_PICKUP)
+						isboa = isboa or strfind(line, ITEM_BIND_TO_BNETACCOUNT)
+						isboa = isboa or strfind(line, ITEM_BNETACCOUNTBOUND)
+						isbound = isbound or strfind(line, ITEM_SOULBOUND)
+						isbound = isbound or strfind(line, ITEM_BIND_QUEST)
+						isbound = isbound or strfind(line, ITEM_CONJURED)
+						
+						-- if we found use clause, we are past possible points of binding, stop looking
+						if strfind(line, USE_COLON) then break end 
+					end
+				end
 			end
+			BagSlot_BindCache[bag][slot] = {isbop=isbop,isboa=isboa,isbound=isbound}
 		end
 
+		if isbop or isboa or isbound then return false end
 
-		local name, link, quality, iLevel, reqLevel, class, subclass, maxStack, equipSlot, texture, vendorPrice = ZGV:GetItemInfo(itemlink)
+		local name, link, quality, iLevel, reqLevel, class, subclass, maxStack, equipSlot, texture, vendorPrice, classID, subclassID = ZGV:GetItemInfo(itemlink)
 		local texture, itemCount, locked, quality, readable = GetContainerItemInfo(bag, slot)
 		local displayName = nil
-
-		if isbop or isboa or isbound then return false end
 
 		local petItem_id = nil
 		local petItemFallback_id = nil
@@ -121,10 +166,18 @@ function Appraiser:AddItemToInventory(bag,slot)
 
 			name = BattlePetName
 			displayName = BattlePetName.." (lvl "..BattlePetLevel.." "..breedname..")"
-			--[[
-			return
-			--]]
+
 		end
+
+		local single_locked = false
+		if itemid == 82800 or classID==2 or classID==4 then
+			-- lock pets and equipment to 1 per posting, to prevent blizzard ah posting random items
+			single_locked=true
+			maxStack=1
+		end
+			
+
+		if not name or not texture then return false end
 
 		local statusIcon, statusText, statusId, statusText,statusIcon,isStagnant,statusColor
 
@@ -161,34 +214,45 @@ function Appraiser:AddItemToInventory(bag,slot)
 		if not exists then
 			local cache_id = petItem_id or itemid
 			local stored_stack_count,stored_stack_size
-			if not inventory_cache[cache_id] then 
-				inventory_cache[cache_id] = {}
+			if not inventory_cache[stripped_link] then 
+				inventory_cache[stripped_link] = {}
 			else
-				stored_stack_count = inventory_cache[cache_id].stackcount
-				stored_stack_size = inventory_cache[cache_id].stacksize
-				table.wipe(inventory_cache[cache_id])
+				stored_stack_count = inventory_cache[stripped_link].stackcount
+				stored_stack_size = inventory_cache[stripped_link].stacksize
+				customprice_unit_bid = inventory_cache[stripped_link].customprice_unit_bid
+				customprice_unit_buy = inventory_cache[stripped_link].customprice_unit_buy
+				customprice = inventory_cache[stripped_link].customprice
+				auction = inventory_cache[stripped_link].auction
+				table.wipe(inventory_cache[stripped_link])
 			end
 
-			inventory_cache[cache_id].itemid=cache_id
-			inventory_cache[cache_id].name=name
-			inventory_cache[cache_id].displayName=displayName
-			inventory_cache[cache_id].link=stripped_link
-			inventory_cache[cache_id].icon=texture
-			inventory_cache[cache_id].count=itemCount
-			inventory_cache[cache_id].price=price
-			inventory_cache[cache_id].bag=bag
-			inventory_cache[cache_id].slot=slot
-			inventory_cache[cache_id].statusText=statusText
-			inventory_cache[cache_id].statusIcon=statusIcon
-			inventory_cache[cache_id].statusId=statusId
-			inventory_cache[cache_id].statusColor=statusColor
-			inventory_cache[cache_id].isStagnant=isStagnant
-			inventory_cache[cache_id].quality=quality
-			inventory_cache[cache_id].active=active
-			inventory_cache[cache_id].maxStack=maxStack
-			inventory_cache[cache_id].stackcount=stored_stack_count
-			inventory_cache[cache_id].stacksize=stored_stack_size
-			table.insert(self.InventoryItems,inventory_cache[cache_id])
+			inventory_cache[stripped_link].itemid=cache_id
+			inventory_cache[stripped_link].name=name
+			inventory_cache[stripped_link].displayName=displayName
+			inventory_cache[stripped_link].link=stripped_link
+			inventory_cache[stripped_link].icon=texture
+			inventory_cache[stripped_link].count=itemCount
+			inventory_cache[stripped_link].price=price
+			inventory_cache[stripped_link].bag=bag
+			inventory_cache[stripped_link].slot=slot
+			inventory_cache[stripped_link].statusText=statusText
+			inventory_cache[stripped_link].statusIcon=statusIcon
+			inventory_cache[stripped_link].statusId=statusId
+			inventory_cache[stripped_link].statusColor=statusColor
+			inventory_cache[stripped_link].isStagnant=isStagnant
+			inventory_cache[stripped_link].quality=quality
+			inventory_cache[stripped_link].active=active
+			inventory_cache[stripped_link].maxStack=maxStack
+			inventory_cache[stripped_link].single_locked=single_locked
+
+			inventory_cache[stripped_link].stackcount=stored_stack_count
+			inventory_cache[stripped_link].stacksize=stored_stack_size
+			inventory_cache[stripped_link].customprice_unit_bid=customprice_unit_bid
+			inventory_cache[stripped_link].customprice_unit_buy=customprice_unit_buy
+			inventory_cache[stripped_link].customprice=customprice
+			inventory_cache[stripped_link].auction=auction
+
+			table.insert(self.InventoryItems,inventory_cache[stripped_link])
 		end
 	end
 end
@@ -239,7 +303,7 @@ function Appraiser:RefreshSellingItem()
 					end
 				end
 			end
-			if truecount ~= Appraiser.ActiveSellingItem.count then
+			if Appraiser.ActiveSellingItem and truecount ~= Appraiser.ActiveSellingItem.count then
 				item.count = truecount
 				Appraiser.ActiveSellingItem.count = truecount
 				Appraiser:SetSellData()
@@ -261,15 +325,19 @@ function Appraiser:AddItemToInventoryAuctions(data)
 	local unit_price = tonumber(data[3])
 	local own_auction = tonumber(data[4])
 	local itemlink = ZGV.ItemLink.StripBlizzExtras(data[5],true)
+	if Appraiser.ActiveSellingItem.itemid > 1000000000 then itemlink = data[5] end
+
 	local icon = select(10,ZGV:GetItemInfo(itemlink))
 
 	local _,_,_,BattlePetId,BattlePetLevel,BattlePetRarity,BattlePetHP,BattlePetAtt,BattlePetSpeed,_,BattlePetName = string.find(itemlink,"(.*)battlepet:(%d+):(%d+):(%d+):(%d+):(%d+):(%d+):(.*)%[(.*)%]")
+
 	if BattlePetId then
 		_, icon = C_PetJournal.GetPetInfoBySpeciesID(BattlePetId)
 		local petItem_id, result = ZGV.PetBattle:GetPetFakeIdByLink(itemlink)
 		if result=="OK" then 
 			breedid,breedname = ZGV.PetBattle:GetPetBreedByLink(itemlink)
-			BattlePetName = BattlePetName.." (lvl "..BattlePetLevel.." "..breedname..")"
+			local r, g, b, hex = GetItemQualityColor(BattlePetRarity);
+			BattlePetName = "|c"..hex..BattlePetName.." (".." lvl "..BattlePetLevel.." "..breedname..")"
 		end
 	end
 
@@ -302,6 +370,9 @@ end
 
 function Appraiser:ActivateSellItem(item,automatic)
 	if not automatic then
+		-- do not switch items while any scan is running
+		if ZGV.Gold.Scan.state~="SS_IDLE" then return end
+
 		Appraiser.SellingInProgress = false
 		if Appraiser.ActiveSearch then return end
 		if Appraiser.ActiveSearchName then return end
@@ -311,6 +382,7 @@ function Appraiser:ActivateSellItem(item,automatic)
 		Appraiser.ActiveSellingItem = nil
 		Appraiser:WipeSellHistoricalData()
 		Appraiser:WipeSellPricingData()
+		Appraiser:ToggleStackSettings(true)
 		return 
 	end
 
@@ -324,6 +396,12 @@ function Appraiser:ActivateSellItem(item,automatic)
 		if v==item then currentIndex=i end
 		v.active = false 
 	end
+
+	if item and not item.single_locked then
+		Appraiser:ToggleStackSettings(true)
+	else
+		Appraiser:ToggleStackSettings(false)
+	end	
 
 	if automatic or (not Appraiser.ActiveSellingItem or item.itemid ~= Appraiser.ActiveSellingItem.itemid) then
 		Appraiser.SellManualUnselect = false
@@ -369,6 +447,40 @@ function Appraiser:ActivateSellItem(item,automatic)
 		item.active = false
 	end
 	Appraiser:Update()
+end
+
+function Appraiser:ToggleStackSettings(enable)
+	local inv=Appraiser.Inventory_Frame
+	local edit_alpha,button_alpha,text_alpha,text_color
+	if enable then
+		edit_alpha = 1
+		button_alpha = 1
+		text_alpha = 1
+		text_color = 1
+		inv.stacksize:Enable()
+		inv.stacksizebutton:Enable()
+		inv.stackcount:Enable()
+		inv.stackcountbutton:Enable()
+	else
+		edit_alpha = 0.5
+		button_alpha = 0.3
+		text_alpha = 0.8
+		text_color = 0.5
+		inv.stacksize:Disable()
+		inv.stacksizebutton:Disable()
+		inv.stackcount:Disable()
+		inv.stackcountbutton:Disable()
+	end
+
+
+	inv.stacksize:SetBackdropBorderColor(0.5,0.5,0.5,edit_alpha)
+	inv.stacksize:SetTextColor(text_color,text_color,text_color,text_alpha)
+	inv.stacksizebutton:SetBackdropBorderColor(0.5,0.5,0.5,button_alpha)
+	inv.stacksizebutton:SetTextColor(text_color,text_color,text_color,text_alpha)
+	inv.stackcount:SetBackdropBorderColor(0.5,0.5,0.5,edit_alpha)
+	inv.stackcount:SetTextColor(text_color,text_color,text_color,text_alpha)
+	inv.stackcountbutton:SetBackdropBorderColor(0.5,0.5,0.5,button_alpha)
+	inv.stackcountbutton:SetTextColor(text_color,text_color,text_color,text_alpha)
 end
 
 function Appraiser:SellPriceManual()
@@ -497,6 +609,14 @@ function Appraiser:GetSellStack(item)
 	else
 		stacksize = 1
 		stackcount = math.max(itemCountTotal,1)
+	end
+
+	if item.single_locked then
+		-- lock pets and equipment to 1 per posting, to prevent blizzard ah posting random items
+		stacksize=1
+		stackcount=1
+		itemCountTotal=1
+		item.maxStack=1
 	end
 
 	return stacksize, stackcount, itemCountTotal
@@ -670,6 +790,9 @@ function Appraiser:GetSellPriceForStacksize(mode)
 end
 
 function Appraiser:StartAuction()
+	-- do not switch items while any scan is running
+	if ZGV.Gold.Scan.state~="SS_IDLE" then return end
+
 	if not Appraiser.ActiveSellingItem then return end
 	Appraiser.SellingInProgress = true
 
@@ -754,6 +877,23 @@ function Appraiser:SelectShoppingRow()
 	end
 
 	if not refresh and not GetAuctionSellItemInfo() then
+		local itemid=GetContainerItemID(Appraiser.InventoryItems[index].bag, Appraiser.InventoryItems[index].slot)
+
+		if not itemid then
+			-- sigh, item is not there, most likely pet that we had more than one of, and one got sold.
+			-- find where the other one is
+			for bag=0, NUM_BAG_SLOTS do
+				for slot=1, GetContainerNumSlots(bag) do
+					local itemlink = cached_GetContainerItemLink(bag, slot) 
+					if itemlink and itemlink==Appraiser.LastSoldItem then
+						Appraiser.InventoryItems[index].bag=bag
+						Appraiser.InventoryItems[index].slot=slot
+						break
+					end
+				end
+			end
+		end
+
 		PickupContainerItem(Appraiser.InventoryItems[index].bag, Appraiser.InventoryItems[index].slot)
 		ClickAuctionSellItemButton()
 		ClearCursor()

@@ -4407,16 +4407,31 @@ ZygorGuidesViewer:RegisterInclude("Midsummer Fire Festival Dailies",[[
 		talk Master Fire Eater##25975
 		turnin More Torch Tossing##11921 |goto 50.04,72.26
 		turnin More Torch Catching##11924 |goto 50.04,72.26
+	--step
+	--	click Ice Stone##7666
+	--	_Lay your hand on the stone_ |goto Hellfire Peninsula/0 85.6,47.2 < 5 |walk
+	--	kill 1 Glacial Templar##26216 |q 11947/1 |goto Hellfire Peninsula/0 85.9,47.3 |only if level >= 32 and level <= 42
+	--	kill 1 Glacial Templar##26216 |q 11948/1 |goto Hellfire Peninsula/0 85.9,47.3 |only if level >= 43 and level <= 50
+	--	kill 1 Glacial Templar##26216 |q 11952/1 |goto Hellfire Peninsula/0 85.9,47.3 |only if level >= 51 and level <= 59
+	--	kill 1 Glacial Templar##26216 |q 11953/1 |goto Hellfire Peninsula/0 85.9,47.3 |only if level >= 60 and level <= 63
+	--	kill 1 Glacial Templar##26216 |q 11954/1 |goto Hellfire Peninsula/0 85.9,47.3 |only if level >= 64
 	step
 		click Ice Stone##7666
-		_Lay your hand on the stone_ |goto Hellfire Peninsula/0 85.6,47.2 < 5 |walk
-		kill 1 Glacial Templar##26216 |q 11947/1 |goto Hellfire Peninsula/0 85.9,47.3 |only if level >= 32 and level <= 42
-		kill 1 Glacial Templar##26216 |q 11948/1 |goto Hellfire Peninsula/0 85.9,47.3 |only if level >= 43 and level <= 50
-		kill 1 Glacial Templar##26216 |q 11952/1 |goto Hellfire Peninsula/0 85.9,47.3 |only if level >= 51 and level <= 59
-		kill 1 Glacial Templar##26216 |q 11953/1 |goto Hellfire Peninsula/0 85.9,47.3 |only if level >= 60 and level <= 63
+		_Lay your hand on the stone_ |goto Ashenvale 9.2,11.4 < 5 |walk |only if level >= 22 and level <= 31
+		_Lay your hand on the stone_ |goto Desolace 39.2,30.2 < 5 |walk |only if level >= 32 and level <= 42
+		_Lay your hand on the stone_ |goto Northern Stranglethorn 21.4,41.0 < 5 |walk |only if level >= 43 and level <= 50
+		_Lay your hand on the stone_ |goto Searing Gorge 16.2,36.6 < 5 |walk |only if level >= 51 and level <= 59
+		_Lay your hand on the stone_ |goto Silithus 69.0,20.4 < 5 |walk |only if level >= 60 and level <= 63
+		_Lay your hand on the stone_ |goto Hellfire Peninsula/0 85.6,47.2 < 5 |walk |only if level >= 64
+		kill 1 Frostwave Lieutenant##26116 |q 11917/1 |goto Ashenvale 9.2,11.4 |only if level >= 22 and level <= 31
+		kill 1 Hailstone Lieutenant##26178 |q 11947/1 |goto Desolace 39.2,30.2 |only if level >= 32 and level <= 42
+		kill 1 Chillwind Lieutenant##26204 |q 11948/1 |goto Northern Stranglethorn 21.4,41.0 |only if level >= 43 and level <= 50
+		kill 1 Frigid Lieutenant##26214 |q 11952/1 |goto Searing Gorge/0 16.2,36.6 |only if level >= 51 and level <= 59
+		kill 1 Glacial Lieutenant##26215 |q 11953/1 |goto Silithus 69.0,20.4 |only if level >= 60 and level <= 63
 		kill 1 Glacial Templar##26216 |q 11954/1 |goto Hellfire Peninsula/0 85.9,47.3 |only if level >= 64
 	step
 		talk Earthen Ring Elder##26221
+		turnin Striking Back##11917 |only if level >= 22 and level <= 31 |goto Stormwind City/0 49.3,72.3
 		turnin Striking Back##11947 |only if level >= 32 and level <= 42 |goto Stormwind City/0 49.3,72.3
 		turnin Striking Back##11948 |only if level >= 43 and level <= 50 |goto Stormwind City/0 49.3,72.3
 		turnin Striking Back##11952 |only if level >= 51 and level <= 59 |goto Stormwind City/0 49.3,72.3

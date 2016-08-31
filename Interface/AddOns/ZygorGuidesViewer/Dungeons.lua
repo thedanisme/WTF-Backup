@@ -31,14 +31,56 @@ local function UpdateDungeonItemlevels(dungeon)
 	end
 end
 
+-- Timewalks and legion mythics do not have any lfg entry, so we need to hardcode basic data for them
+local hardcoded_dungeons = {
+	-- timewalk tbc
+	["e_249"] = {expansionLevel=1, minLevel=71, difficulty=24, name="Magisters' Terrace"},
+	["e_250"] = {expansionLevel=1, minLevel=71, difficulty=24, name="Mana-Tombs"},
+	["e_254"] = {expansionLevel=1, minLevel=71, difficulty=24, name="The Arcatraz"},
+	["e_255"] = {expansionLevel=1, minLevel=71, difficulty=24, name="The Black Morass"},
+	["e_259"] = {expansionLevel=1, minLevel=71, difficulty=24, name="The Shattered Halls"},
+	["e_260"] = {expansionLevel=1, minLevel=71, difficulty=24, name="The Slave Pens"},
+	-- timewalk wotlk
+	["e_271"] = {expansionLevel=2, minLevel=81, difficulty=24, name="Ahn'kahet: The Old Kingdom"},
+	["e_274"] = {expansionLevel=2, minLevel=81, difficulty=24, name="Gundrak"},
+	["e_275"] = {expansionLevel=2, minLevel=81, difficulty=24, name="Halls of Lightning"},
+	["e_278"] = {expansionLevel=2, minLevel=81, difficulty=24, name="Pit of Saron"},
+	["e_281"] = {expansionLevel=2, minLevel=81, difficulty=24, name="The Nexus"},
+	["e_286"] = {expansionLevel=2, minLevel=81, difficulty=24, name="Utgarde Pinnacle"},
+	-- timewalk cata
+	["e_184"] = {expansionLevel=3, minLevel=85, difficulty=24, name="End Time"},
+	["e_71"]  = {expansionLevel=3, minLevel=85, difficulty=24, name="Grim Batol"},
+	["e_69"]  = {expansionLevel=3, minLevel=85, difficulty=24, name="Lost City of the Tol'vir"},
+	["e_67"]  = {expansionLevel=3, minLevel=85, difficulty=24, name="The Stonecore"},
+	["e_68"]  = {expansionLevel=3, minLevel=85, difficulty=24, name="The Vortex Pinnacle"},
+	["e_65"]  = {expansionLevel=3, minLevel=85, difficulty=24, name="Throne of the Tides"},
+	-- mythic legion
+	["e_777"]  = {expansionLevel=6, minLevel=110, min_ilevel=795, difficulty=23, name="Assault on Violet Hold"},
+	["e_740"]  = {expansionLevel=6, minLevel=110, min_ilevel=795, difficulty=23, name="Black Rook Hold"},
+	["e_800"]  = {expansionLevel=6, minLevel=110, min_ilevel=795, difficulty=23, name="Court of Stars"},
+	["e_762"]  = {expansionLevel=6, minLevel=110, min_ilevel=795, difficulty=23, name="Darkheart Thicket"},
+	["e_721"]  = {expansionLevel=6, minLevel=110, min_ilevel=795, difficulty=23, name="Halls of Valor"},
+	["e_727"]  = {expansionLevel=6, minLevel=110, min_ilevel=795, difficulty=23, name="Maw of Souls"},
+	["e_767"]  = {expansionLevel=6, minLevel=110, min_ilevel=795, difficulty=23, name="Neltharion's Lair"},
+	["e_726"]  = {expansionLevel=6, minLevel=110, min_ilevel=795, difficulty=23, name="The Arcway"},
+	["e_707"]  = {expansionLevel=6, minLevel=110, min_ilevel=795, difficulty=23, name="Vault of the Wardens"},
+}
+
 setmetatable(Dungeons,{
 	__index=function(t,id)
 		-- cache from game, to get all data in one place
 		if not id then return end
 
-		if type(id)=="string" then return end   -- error("No function Dungeons."..id)   -- don't error, this breaks Spoo.
+		if type(id)=="string" and not hardcoded_dungeons[id] then return end   -- error("No function Dungeons."..id)   -- don't error, this breaks Spoo.
 
-		local name, typeID, subtypeID, minLevel, maxLevel, recLevel, minRecLevel, maxRecLevel, expansionLevel, groupID, textureFilename, difficulty, maxPlayers, description, isHoliday = GetLFGDungeonInfo(id)
+		local name, typeID, subtypeID, minLevel, maxLevel, recLevel, minRecLevel, maxRecLevel, expansionLevel, groupID, textureFilename, difficulty, maxPlayers, description, isHoliday
+		if hardcoded_dungeons[id] then
+			local d=hardcoded_dungeons[id]
+			name,expansionLevel,minLevel,min_ilevel,difficulty = d.name,d.expansionLevel,d.minLevel,d.min_ilevel,d.difficulty
+		else
+			name, typeID, subtypeID, minLevel, maxLevel, recLevel, minRecLevel, maxRecLevel, expansionLevel, groupID, textureFilename, difficulty, maxPlayers, description, isHoliday = GetLFGDungeonInfo(id)
+		end
+
 		if name and typeID~=4 then
 			local dungeon = {}
 

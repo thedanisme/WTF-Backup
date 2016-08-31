@@ -69,9 +69,11 @@ function ZGV:SetSkin(skin,style)
 	self.SkinDir = self:GetSkinPath(skin,style)
 
 	skindata:CreateFrame()
+	--[[
 	if ZGV.CV then
 		ZGV.CV:UpdateSkin()
 	end
+	--]]
 	if ZGV.Loot.GrayFrame then
 		ZGV.Loot:UpdateSkin()
 	end

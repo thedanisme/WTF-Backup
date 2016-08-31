@@ -3649,16 +3649,17 @@ In order to obtain this, you must complete the August Celestials dailies every t
 |tip If any other spirit needs your help, you can skip it for the day and it won't hinder your progress.
 |confirm
 step
-talk Sage Lotusbloom##64001 |goto Vale of Eternal Blossoms 62.8,23.4
-The following quest will only be available the first time you are sent to Chi-Ji's area.
-accept Challenge At The Temple of the Red Crane##31379 |or |next "crane" |only if not completedq(31379)
-Ask her how you can help the August Celestials today. Then click on whichever spirit needs you today.
+talk Sage Whiteheart##64032
+The following quest will only be available the first time you are sent to Chi-Ji's area
+accept Challenge At The Temple of the Red Crane##31378 |goto Vale of Eternal Blossoms 84.6,63.6 |or |next "crane" |only if not completedq(31378)
+Ask her how you can help the August Celestials today
+Then click on whichever spirit needs you today
 Chi-Ji the Red Crane |confirm |next "crane"
 step
 label crane
 talk Thelonius##60506
-turnin Challenge At The Temple of the Red Crane##31379 |goto Krasarang Wilds 31.3,63.4
-|only if not completedq(31379)
+turnin Challenge At The Temple of the Red Crane##31378 |goto Krasarang Wilds 31.3,63.4
+only if not completedq(31378)
 step
 talk Thelonius##60506
 accept Students of Chi-Ji##30718 |goto 31.3,63.4
@@ -5108,6 +5109,24 @@ kill Chi-Ji##71952
 step
 label "end"
 Congratulations, you have obtained the _Celestial Challenge_ achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeon Achievements\\Pandaria Dungeon Hero",{
+condition_end="achieved(6925)",
+},[[
+step
+To earn this Achievement, you will need to complete the following Dungeons on _Heroic or Higher_ Difficulty:
+Heroic: Temple of the Jade Serpent |achieve 6925/1
+Heroic: Stormstout Brewery |achieve 6925/2
+Heroic: Mogu'shan Palace |achieve 6925/3
+Heroic: Shado-Pan Monastery |achieve 6925/4
+Heroic: Gate of the Setting Sun |achieve 6925/5
+Heroic: Scarlet Halls |achieve 6925/6
+Heroic: Scarlet Monastery |achieve 6925/7
+Heroic: Scholomance |achieve 6925/8
+Heroic: Siege of Niuzao Temple |achieve 6925/9
+If you need help through the dungeon, refer to one of our Dungeon Guides
+step
+Congratulations, you have completed the Pandaria Dungeon Hero Achievement!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\Cat Fight!",{
 condition_end="achieved(6594)",

@@ -29,7 +29,7 @@ end
 
 Goal.indent=0
 
-local Astrolabe = DongleStub("Astrolabe-ZGV")
+local HBD = ZGV.HBD
 
 local MACROICON_TALK = 0 -- INVISIBLE! -- 378
 local MACROICON_KILL = 0 -- INVISIBLE! Let our icons shine through. Otherwise, it'd be "ABILITY_DUALWIELD".
@@ -673,7 +673,7 @@ GOALTYPES['learn'] = {
 			return true,true
 		elseif self.recipeid then
 			for id,data in pairs(ZGV.db.char.RecipesKnown) do
-				if type(data)=="table" and data[self.recipeid] then return true,true end
+				if type(data)=="table" and data[self.recipeid] and data[self.recipeid].learned then return true,true end
 			end
 		end
 		return false,true -- not found
@@ -1096,7 +1096,7 @@ GOALTYPES['create'] = {
 				self.skilllevel = tonumber(level)
 			end
 
-			self.macrosrc = "#showtooltip ".. castskill .."{;}/run CloseTradeSkill(){;}/cast "..castskill.."{;}/run ZGV:PerformTradeSkillGoal({stepnum},{goalnum})"
+			self.macrosrc = "#showtooltip ".. castskill .."{;}/run C_TradeSkillUI.CloseTradeSkill(){;}/cast "..castskill.."{;}/run ZGV:PerformTradeSkillGoal({stepnum},{goalnum})"
 			-- This is insane, I know. Here we have a macro that will call a function that will call upon the values above. Great and simple... NOT.
 		else
 			--local spell,num = params:match("^(.-)%s*,%s*([0-9]+)$")
@@ -1443,10 +1443,10 @@ GOALTYPES['goto'] = {
 		if ZGV.recentlyVisitedCoords[self] then return true, true end
 
 		if self.x then
-			local cm,cf,cx,cy = Astrolabe:GetCurrentPlayerPosition()
-			if not cm then cm,cf,cx,cy = unpack(Astrolabe.LastPlayerPosition) end
+			local cx,cy,cm,cf=HBD:GetPlayerZonePosition(true)
 			local gx,gy,dist = self.x,self.y,self.dist or 30
-			local realdist=Astrolabe:ComputeDistance(cm,cf,cx,cy,gm,gf,gx,gy)
+			local realdist=HBD:GetZoneDistance(cm,cf,cx,cy,gm,gf,gx,gy)
+
 			if not realdist then
 				return false, true
 			elseif (dist>0 and realdist<=dist) or (dist<0 and realdist>=-dist) then
@@ -1491,8 +1491,9 @@ GOALTYPES['fly'] = {  -- obsolete, JFTR
 	end,
 	iscomplete = function(self)
 		if not UnitOnTaxi("player") then
-			local goalcontinent=Astrolabe:GetMapInfo(self.map or 0,0)
-			local continent=Astrolabe:GetMapInfo(ZGV.CurrentMapID,0)
+			local goalcontinent=HBD:GetMapContinent(self.map or 0,0)
+			local continent=HBD:GetMapContinent(ZGV.CurrentMapID,0)
+
 			local epicflyer=IsSpellKnown(34091) or IsSpellKnown(90265) -- Artisan and Master riding respectively
 
 			if (goalcontinent==continent and epicflyer and ZGV.db.profile.skipflysteps) or -- TODO handle the case when they are not
@@ -1599,7 +1600,7 @@ GOALTYPES['poispot'] = {
 		--]]
 	end,
 	gettext = function(self)
-		if ZGV.db.profile.debug_poi then return "poispot "..self.poispot else return "" end
+		return ""
 	end,
 }
 
@@ -2081,14 +2082,13 @@ end
 -- This is a HUGE mess.
 
 function get_recipe(skill,spellid)
-	if not C_TradeSkillUI.GetRecipeInfo(spellid) then return nil,"closed" end
-
-	local _, _, difficulty, _, _, _, _, learned, _, numAvailable, _, numSkillUps, recipeID, type = C_TradeSkillUI.GetRecipeInfo(spellid)
-	local productlink = C_TradeSkillUI.GetRecipeItemLink(recipeid)
-	local _,productid = productlink:match("|H(%w+):(%d+)")
-	local productid = tonumber(productid)
-
-	return {avail=numAvailable,type=type,numup=numSkillUps and numSkillUps>0 and numSkillUps or 1, lastskill=skill, itemid=productid}
+	if not skill or not spellid then return nil,"no_data" end
+	local skillid = ZGV.skillIDs[skill]
+	if not ZGV.db.char.RecipesKnown[skillid] then return nil,"no_prof" end
+	local recipe = ZGV.db.char.RecipesKnown[skillid][spellid]
+	if not recipe then return nil,"unknown" end
+	if not recipe.difficulty or not recipe.numAvailable then return nil,"unknown" end
+	return {avail=recipe.numAvailable,type=recipe.difficulty,numup=recipe.numSkillUps and recipe.numSkillUps>0 and recipe.numSkillUps or 1, lastskill=skill, itemid=recipe.productid}
 end
 
 local dots_table = {'.','..','...','....','.....','....','...','..'}
@@ -2124,16 +2124,16 @@ local function make_parser(parser) -- function to generate code
 		return type(f)=="function" and tostring(f()) or tostring(f)
 	end
 end
+local parser_simple_cache={}
 local function parser_simple(s)
-	self.cache = self.cache or {}
 	local fun,err
-	if self.cache[s] then 
-		fun = self.cache[s]
+	if parser_simple_cache[s] then 
+		fun = parser_simple_cache[s]
 	else
 		fun,err = loadstring(s:find("return") and s or "return "..s)
 	end
 	if fun then
-		self.cache[s] = fun
+		parser_simple_cache[s] = fun
 		setfenv(fun,ZGV.Parser.ConditionEnv)
 		return fun
 	else
@@ -2160,6 +2160,20 @@ end
 
 Goal.Parsers.ternary = make_parser(parser_ternary)
 Goal.Parsers.simple = make_parser(parser_simple)
+
+Goal.CraftingErrorMsgs = {
+	maxlevel = "(max skill level too low)",
+	closed = "(open %s window)",
+	unknown = "(unknown recipe)",
+	trivial = "(creating %s won't raise your skill anymore)",
+	lackingredients = "(ingredients suffice for only %s of %s)",
+	noingredients = "(not enough ingredients)",
+	wtf = "(?unknown error?)",
+	no_data = "(missing skill or spell id)",
+	no_prof = "(profession %s unknown)",
+}
+
+setmetatable(Goal.CraftingErrorMsgs,{__index=function(t,index) return "Unknown status: "..index end}) 
 
 function Goal:GetText(showcompleteness,brief,showtotals)
 	if not self.prepared then self:Prepare() end
@@ -2466,16 +2480,6 @@ function Goal:GetText(showcompleteness,brief,showtotals)
 			else
 				local errortype
 
-				Goal.CraftingErrorMsgs = Goal.CraftingErrorMsgs or {
-					maxlevel = "(max skill level too low)",
-					closed = "(open %s window)",
-					unknown = "(unknown recipe)",
-					trivial = "(creating %s won't raise your skill anymore)",
-					lackingredients = "(ingredients suffice for only %s of %s)",
-					noingredients = "(not enough ingredients)",
-					wtf = "(?unknown error?)",
-				}
-
 				if self.skilllevel then
 					-- create until skill reaches level
 					local modifier=1
@@ -2535,11 +2539,11 @@ function Goal:GetText(showcompleteness,brief,showtotals)
 						text = "?wtf?"
 					end
 
-					if not extramsg and self.recipedata and self.recipedata.avail<produced then
+					if not extramsg and self.recipedata and (self.recipedata.avail or 0)<produced then
 						if self.recipedata.avail==0 then
 							extramsg = Goal.CraftingErrorMsgs['noingredients']
-						elseif remaining>self.recipedata.avail then
-							extramsg = Goal.CraftingErrorMsgs['lackingredients']:format(COLOR_GOAL(self.recipedata.avail),produced)
+						elseif remaining>(self.recipedata.avail or 0) then
+							extramsg = Goal.CraftingErrorMsgs['lackingredients']:format(COLOR_GOAL(self.recipedata.avail or 0),produced)
 						end
 					end
 
@@ -2567,8 +2571,8 @@ function Goal:GetText(showcompleteness,brief,showtotals)
 								text = skill_create_text:format(COLOR_GOAL(self.count-have),COLOR_ITEM(plural(ZGV:GetItemInfo(self.recipedata.itemid),self.count-have)))
 								if self.recipedata.avail==0 then
 									extramsg = Goal.CraftingErrorMsgs.noingredients
-								elseif remaining>self.recipedata.avail then
-									extramsg = Goal.CraftingErrorMsgs.lackingredients:format(COLOR_GOAL(self.recipedata.avail),remaining)
+								elseif remaining>(self.recipedata.avail or 0) then
+									extramsg = Goal.CraftingErrorMsgs.lackingredients:format(COLOR_GOAL(self.recipedata.avail or 0),remaining)
 								end
 							end
 						end
@@ -2577,7 +2581,7 @@ function Goal:GetText(showcompleteness,brief,showtotals)
 						extramsg = Goal.CraftingErrorMsgs[errortype]:format(skill_loc)
 					end
 
-					self.skillnum = max(0,min(tonumber(self.count)-have or 0,self.recipedata and tonumber(self.recipedata.avail) or 0))
+					self.skillnum = max(0,min(tonumber(self.count)-have or 0,self.recipedata and tonumber(self.recipedata.avail or 0) or 0))
 
 				else
 
@@ -2842,9 +2846,9 @@ function Goal:OnEnter()
 	if self.sub_goto then  -- deprecated: we shouldn't have "fly" steps anymore, Travel replaces all that.
 		-- fly step!
 		if (true) then
-			local w1 = Astrolabe.WorldMapSize[ZGV.CurrentMapID or 0]
-			local w2 = Astrolabe.WorldMapSize[self.map or 0]
-			if w1 and w2 and w1.system==w2.system then
+			local w1 = HBD:GetMapContinent(ZGV.CurrentMapID or 0)
+			local w2 = HBD:GetMapContinent(self.map or 0)
+			if w1 and w2 and w1==w2 then
 
 				local npc = LibRover:GetNearestTaxiInZone()
 				--if npc and (not UnitOnTaxi("player") or not self.sub_goto.map) and self.map == npc.m then

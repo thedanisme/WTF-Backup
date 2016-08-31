@@ -2,6 +2,11 @@ LibRover_Node = {}
 
 local Node=LibRover_Node
 
+local
+	setmetatable,ipairs,pairs,table,tremove,next,type,assert,error,tonumber,unpack
+	=
+	setmetatable,ipairs,pairs,table,tremove,next,type,assert,error,tonumber,unpack
+
 -- IMPORTANT OBSERVATION.
 -- Nodes are (almost) ALWAYS separated by "walk"/"fly"
 
@@ -74,12 +79,6 @@ function Node:RemoveNeighType(type1,type2,type3)
 	if type3 then self.n_iftype[type3]=nil end
 end
 
-function neighnext(tab,k)
-	k=(k or 0)+1
-	local data=tab[k]
-	if data then return k,unpack(data) else return end
-end
-
 function Node:IterNeighs()
 	local k=0
 	local n=self.n
@@ -114,32 +113,21 @@ end
 function Node:DoLinkage(n2)
 	local n1=self
 
+	if n1.type=="end" then return false,false,"src is end" end
+	if n2.type=="start" or n2.type=="inn" then return false,false,"dest is start or inn" end
+
 	-- NO pathfinding, only direct routes?
 	if n1.type=="start" and n2.type=="end" and Lib.extradata and Lib.extradata.direct then -- let's shoot ourselves in the foot! yeah!
 		n1:AddNeigh(n2,{mode="walk",cost=-9999999})
-		return
+		return true,true,"direct"
 	end
 
-	if n1.c~=n2.c then return false,"different continents" end  -- different continents don't link.
-	if n1.onlyhardwire then return false,"src is onlyhardwire" end
-	if n2.onlyhardwire and not n1.player then return false,"dest is onlyhardwire" end
-
-	if n1.type=="taxi" and n2.type=="taxi" then
-		-- Timings are IN.
-		local cost = n1.costs and n1.costs[n2.taxitag]
-		if cost then
-			n1:AddNeigh(n2,{mode="taxi",cost=(cost>0) and cost})
-			 -- if cost is 0, then it's unknown, dammit... let's not put one in, and let LibRover approximate it on calculation.
-		end
-		
-		if (n1.taxioperator~="blackcat" and n2.taxioperator~="blackcat") or cost then
-			return
-		end
-	end
+	if n1.c~=n2.c then return false,false,"different continents" end  -- different continents don't link.
+	if n1.onlyhardwire then return false,false,"src is onlyhardwire" end
+	if n2.onlyhardwire and not n1.player then return false,false,"dest is onlyhardwire" end
 
 
-
-	local canfly,reasonfly,canwalk,reasonwalk
+	local canwalk,canfly,reasonwalk,reasonfly
 	
 	canfly,reasonfly = n1:CanFlyTo(n2)
 
@@ -151,13 +139,13 @@ function Node:DoLinkage(n2)
 		meta = {mode="fly",implicit=true}
 	else
 
-		if reasonfly=="dest is a border" then return false,reasonfly end  -- don't try to walk, if flight is possible
+		if reasonfly=="dest is a border" then return false,false,"dest is a border",reasonfly end  -- don't try to walk, if flight is possible
 
 		canwalk,reasonwalk = n1:CanWalkTo(n2)
 		if canwalk then
 			-- do ground connections
 
-			meta = {mode="walk",implicit=true}
+			meta = {mode="walk",implicit=true,reason=reasonwalk}
 
 			-- clear neighs cache
 			--local neighs=n1.neighs
@@ -204,7 +192,7 @@ function Node:DoLinkage(n2)
 	end
 
 	--debuggy return:
-	--return canfly,reasonfly,canwalk,reasonwalk,meta and meta.mode
+	return canwalk,canfly,reasonwalk,reasonfly,meta and meta.mode
 
 	--[[
 	for t,to in pairs(n1.taxi) do
@@ -248,7 +236,7 @@ function Node:GetText(prevnode,nextnode,dir)
 	if prevnode and prevnode.node then prevstep,prevnode = prevnode,prevnode.node end
 	if nextnode and nextnode.node then nextstep,nextnode = nextnode,nextnode.node end
 
-	function FromTo(strfrom,strto)
+	local function FromTo(strfrom,strto)
 		if prevnode and prevnode==self.border then return strfrom else return strto end
 	end
 
@@ -310,6 +298,7 @@ function Node:tostring(withneighs)
 	local ret = ("[%d] %s\"%s\" = %s %d /%d %.1f,%.1f [%s]"):format(self.num, (self.id and "@"..self.id.." " or ""), self:GetText() or "\"#"..self.num.."\"", Lib.MapName(self.m), self.m, self.f, self.x*100,self.y*100, self.type or "type?")
 	if self.is_arrival then  ret = ret .. " (arrival)" end
 	ret = ret .. (" (%s)"):format(self.status or "untouched")
+	if self.border_optimization then local bo=self.border_optimization  ret = ret .. (" (b/o:%s)|r"):format((bo=="border" and "|cffff4400bd|r") or (bo=="taxi" and "|cff88ff00tx|r") or (bo=="ignore" and "|cff0088ffig|r"))  end
 	if self.region then  ret = ret .. (" (REG:|cff0088ff%s|r)"):format(self.region)  end
 	if self.type=="taxi" then  ret = ret .. (" |cff8899aa(taxi %s|cff8899aa)"):format((self.known==true and "|cff00ff00known") or (self.known==false and "|cffff0000unknown") or "|cffffaa00?")  end
 	if self.parentlink then  ret = ret .. (" |cff8899aa(mode:|cffffffff%s|cff8899aa from [|cffffffff%d|cff8899aa])"):format(self.parentlink.mode,self.parent.num)  end
@@ -350,6 +339,8 @@ function Node:CanWalkTo(dest,debugmode)
 	local n1=self
 	local n2=dest
 
+	if n1==n2 then return false,"same node" end
+
 	local n1_m=n1.m
 	local n2_m=n2.m
 
@@ -358,15 +349,17 @@ function Node:CanWalkTo(dest,debugmode)
 		local n1hood = neighbourhood_cache[n1.num]
 		if n1hood then
 			local n12hood = n1hood and n1hood[n2.num]
-			if n12hood then  return n12hood==1,"cached"  end
+			if n12hood then  return n12hood==1 or n12hood==3,"cached"  end
 		end
 	end
 
 
 	local reason=""
 	if (debugmode) then
-		if n1.m==n2.m then reason=reason.."same map; " end
-		if (ZGV.Pointer.phasedMaps[n1.m]==ZGV.Pointer.phasedMaps[n2.m]) then reason=reason.."same phased map; " end
+		if n1.m==n2.m then reason=reason.."same map; "
+		elseif (ZGV_Pointer_phasedMaps[n1.m]==ZGV_Pointer_phasedMaps[n2.m]) then reason=reason.."same phased map; "
+		end
+		if n1.region==n2.region then reason=reason.."same region; " end
 		if (n2.ms and n2.ms[n1.m]) then reason=reason.."n2 visible from n1.ms; " end
 		if Lib.greenborders:CanCross(n1.m,n2.m) then reason=reason.."greenborder cancross: "..n1.m.." "..n2.m.."; " end
 		if (n1.regionobj and n1.regionobj:HasGreenBorder(n2.m,n2.f)) then reason=reason.."n1.regionobj has green border to n2.m "..n2.m.."; " end
@@ -405,24 +398,39 @@ end
 
 local flightinzone
 -- Checks if player can fly in a beeline towards the destination.
+
 function Node:CanFlyTo(dest)
 	local m=self.m
 	local Lib=Lib
+
+	-- use the cache!
+	if neighbourhood_cache then
+		local n1hood = neighbourhood_cache[self.num]
+		if n1hood then
+			local n12hood = n1hood and n1hood[dest.num]
+			if n12hood then  return n12hood>=2,"cached"  end
+		end
+	end
+
 	local dest_m = dest.m
+	local dest_c = dest.c
 
 	--if type(dest)=="number" then dest=Lib.nodes.all[dest] end
 
 	-- is flight even possible for the player? check so late because it's costly.
 	-- or is it...
 	local flyspeed = flightinzone[m]
-	if not flyspeed then return false,"no flight" end
+	if not flyspeed then return false,"can't fly in",m end
 
-	if not dest.c then return false,"no continent!?" end
+	if not dest_c then return false,"no dest continent!?" end
+	if not (dest_c==self.c and dest_c>=0) then return false,"not same cont" end
+
 	if dest==self then return false,"same node" end
 	if self.onlyhardwire then return false,"src is onlyhardwire" end
 	if dest.onlyhardwire and not self.player then return false,"dest is onlyhardwire" end
 	if (dest.f==21 and dest_m==30 and self.c==14) or (self.f==21 and m==30 and dest.c==14) then return true,"dest is Dalaran Deadwind #30/21" end  -- LEGION temp? Dalaran is flying over Deadwind Pass, but it registers as Elwynn /21.
 	if not (dest.c==self.c and dest.c>=0) then return false,"not same cont" end
+	if self.type=="border" and not self.border_in_flight then return false,"src is a border" end
 	if dest.type=="border" and not dest.border_in_flight then return false,"dest is a border" end
 	if dest.nofly or self.nofly then return false,"either is nofly" end
 	if Lib.zone_is_exo_or_belf[dest_m] then return false,"dest is exo or belf" end
@@ -443,13 +451,24 @@ function Node:CanFlyTo(dest)
 	if m==951 then return false,"Timeless Isle" end --Can fly into this area, but not fly out of it, or around it
 	if m==499 or dest_m==499 then return false,"Isle of Quel'Danas no flying there!" end
 
-	if m==321 and self.f==dest.f then return true,"Orgri, fly within your floor." end
-	if m==504 and self.f==dest.f then return true,"Dala, fly within your floor." end
+	local m1,m2,f1,f2=m,dest.m,self.f,dest.f
+	for i=1,2 do  -- "both ways"
+		if m1==321 then -- Orgri -x- outdoor areas defaulting to non-0 floor
+			if f1==1 and m1~=m2 and f2==0 then return true,"Orgri, fly in/out." end
+		end
+		if m1==504 then -- Dala: same
+			if f1==1 and m1~=m2 and f2==0 then return true,"Dala N, fly in/out." end
+		end
+		if m1==1014 then -- Dala: same
+			if f1==10 and m1~=m2 and f2==0 then return true,"Dala L, fly in/out." end
+		end
+		m1,m2,f1,f2=m2,m1,f2,f1 -- swap, retry
+	end
 	--if m==1014 and self.f==dest.f then return true,"Dala Legion, fly within your floor." end   -- TODO LEGION: maybe.
 
 	if self.f>0 or dest.f>0 then return false,"No flying on floors. TODO sometime by supplying a list of flyable floors." end
 	
-	if m==dest_m and self.f~=dest.f then return false,"flying in/out of a cave or something?" end
+	if m==dest_m and self.f~=dest.f then return false,"no flying between floors" end
 
 	return true
 end
@@ -469,7 +488,7 @@ function Node:AssignRegion(regionobj)
 		local err
 		regionobj,err = Lib.NodeRegions:AddNewRegion{name=self.indoors,mapzone=self.m,zonematch="*/*/*/".. self.indoors,indoors=self.indoors and 1,nofly=1}
 		if err then
-			error(err or "wtf? oddly bad simpleregion definition: ".. node.indoors)
+			error(err or "wtf? oddly bad simpleregion definition: ".. self.indoors)
 		end
 		self.indoors=not not self.indoors
 	end

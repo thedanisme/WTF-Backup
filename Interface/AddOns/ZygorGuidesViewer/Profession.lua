@@ -117,14 +117,13 @@ ZGV.LocaleSkillsR={}
 setmetatable(ZGV.LocaleSkillsR,{__index=function(t,q) return q end})
 
 tinsert(ZGV.startups,{"Professions setup",function(self)
-	--[[
 	self:AddEvent("PLAYER_ENTERING_WORLD","CacheSkills")
 	self:AddEvent("SKILL_LINES_CHANGED","CacheSkills")
 	self:AddEvent("TRADE_SKILL_UPDATE","CacheSkills")
 	self:AddEvent("CHAT_MSG_SKILL","CacheSkills")
 	self:AddEvent("CHAT_MSG_SYSTEM","Profession_CHAT_MSG_SYSTEM")
+	self:AddEvent("NEW_RECIPE_LEARNED","Profession_NEW_RECIPE_LEARNED")
 	self:AddEvent("TRADE_SKILL_SHOW","Profession_TRADE_SKILL_SHOW")
-	--]]
 
 	self:AddEvent("TRADE_SKILL_LIST_UPDATE","CacheRecipes")
 
@@ -145,6 +144,14 @@ tinsert(ZGV.startups,{"Professions setup",function(self)
 		end
 	end
 end})
+
+function ZGV:Profession_NEW_RECIPE_LEARNED(event,spell)
+	for skill,skilltable in pairs(ZGV.db.char.RecipesKnown) do
+		if skilltable[spell] then
+			skilltable[spell].learned=true
+		end
+	end
+end
 
 local ERR_LEARN_RECIPE_S_fmt = ERR_LEARN_RECIPE_S:gsub("%.","%%."):gsub("%%s","(.+)")
 --local TRADESKILL_LOG_FIRSTPERSON_fmt = TRADESKILL_LOG_FIRSTPERSON:gsub("%%s","(.-)")
@@ -252,7 +259,9 @@ function ZGV:CacheRecipes(profs)
 			spell = recipeid,
 			learned = api_recipe.learned,
 			skill = skill,
-			numSkillUps = numSkillUps,
+			numSkillUps = api_recipe.numSkillUps,
+			difficulty = api_recipe.difficulty,
+			numAvailable = api_recipe.numAvailable,
 			source = C_TradeSkillUI.GetRecipeSourceText(recipeid)
 			}
 
@@ -277,11 +286,14 @@ function ZGV:CacheRecipes(profs)
 
 		recipes[recipeid]=recipe
 	end
-		
+	if ZGV.Goldguide then 
+		ZGV.Goldguide:CalculateAllChores(true)
+		ZGV.Goldguide:Update()
+	end
 end
 
 function ZGV:PerformTradeSkillGoal(step,goal)
-	if not step or not goal or type(step)~="number" or type(goal)~="number" or not GetTradeSkillLine() then return end
+	if not step or not goal or type(step)~="number" or type(goal)~="number" then return end
 	step = ZGV.CurrentGuide.steps[step]   if not step then return end
 	goal = step.goals[goal]   if not goal then return end
 	if goal.skillnum then
@@ -296,13 +308,10 @@ function ZGV:PerformTradeSkill(id,count)
 	if not count then count=1 end
 	if count<=0 then return end
 
-	local skillNum = self:FindTradeSkillNum(id)
-
-	if skillNum then
-		DoTradeSkill(skillNum,count)
-	end
+	C_TradeSkillUI.CraftRecipe(id, count)
 end
 
+--[[
 function ZGV:FindTradeSkillNum(id)
 	if not id then return end
 	for i = 1,500 do
@@ -319,6 +328,7 @@ function ZGV:FindTradeSkillNum(id)
 		end
 	end
 end
+--]]
 
 function ZGVP:GetRecipe(spellid)
 	local RK = ZGV.db.char.RecipesKnown

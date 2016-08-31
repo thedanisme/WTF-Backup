@@ -297,6 +297,9 @@ function Appraiser:GetShoppingItemStatus(invItem)
 end
 
 function Appraiser:ActivateBuyItem(item)
+	-- do not switch items while any scan is running
+	if ZGV.Gold.Scan.state~="SS_IDLE" then return end
+
 	if Appraiser.ActiveSearch then return end
 	if Appraiser.ActiveSearchName then return end
 	if Appraiser.GoToFirstPage then return end
@@ -602,7 +605,7 @@ function Appraiser:RemoveItemFromBuy(row)
 	for i,r in pairs(Appraiser.Buy_Frame.ShoppingList.rows) do
 		r.active = false
 	end
-	ZGV.Gold:Update()
+	ZGV.Goldguide:Update()
 end
 
 function Appraiser:UpdateBuyPrices()

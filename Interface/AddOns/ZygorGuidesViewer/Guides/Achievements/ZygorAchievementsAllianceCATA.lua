@@ -1799,106 +1799,106 @@ only if not achieved(5548)
 step
 clicknpc Rockchewer Whelk##48848
 Use the Love emote on a Rockchewer Whelk |script DoEmote("LOVE")
-Love a Rockchewer Whelk |achieve 5548/9 |goto Shimmering Expanse 41.3,53.9
+Love a Rockchewer Whelk |achieve 5548/4 |goto Shimmering Expanse 41.3,53.9
 step
 clicknpc Sea Cucumber##48802
 Use the Love emote on a Sea Cucumber |script DoEmote("LOVE")
-Love a Sea Cucumber |achieve 5548/11 |goto Shimmering Expanse 41.3,53.9
+Love a Sea Cucumber |achieve 5548/6 |goto Shimmering Expanse 41.3,53.9
 step
 kill Rat##4075 |achieve 2556/18 |goto The Cape of Stranglethorn 40.0,67.7
 step
-kill Roach##4076 |achieve 2556/9 |goto The Cape of Stranglethorn 42.2,69.5
+kill Roach##4076 |achieve 2556/2 |goto The Cape of Stranglethorn 42.2,69.5
 step
 clicknpc Wharf Rat##47667
 Use the Love emote on a Wharf Rat |script DoEmote("LOVE")
-Love a Wharf Rat |achieve 5548/12 |goto The Cape of Stranglethorn 42.7,72.8
+Love a Wharf Rat |achieve 5548/3 |goto The Cape of Stranglethorn 42.7,72.8
 step
 clicknpc Parrot##9600
 Use the Love emote on a Parrot |script DoEmote("LOVE")
-Love a Parrot |achieve 1206/11 |goto Northern Stranglethorn 50.5,66.4
+Love a Parrot |achieve 1206/17 |goto Northern Stranglethorn 50.5,66.4
 step
-kill Scorpion##61326 |achieve 2556/14 |goto Blasted Lands 42.5,21.9
+kill Scorpion##61326 |achieve 2556/1 |goto Blasted Lands 42.5,21.9
 step
 kill Fire Beetle##9699 |achieve 2556/16 |goto Blasted Lands 44.4,32.9
 step
 clicknpc Huge Toad##61368
 Use the Love emote on a Huge Toad |script DoEmote("LOVE")
-Love a Huge Toad |achieve 2557/7 |goto Swamp of Sorrows 39.7,51.0
+Love a Huge Toad |achieve 2557/9 |goto Swamp of Sorrows 39.7,51.0
 step
 clicknpc Skunk##17467
 Use the Love emote on a Skunk |script DoEmote("LOVE")
 |tip It looks like a small skunk that walks around this area.
-Love a Skunk |achieve 1206/16 |goto Duskwood 12.3,65.8
+Love a Skunk |achieve 1206/19 |goto Duskwood 12.3,65.8
 step
 clicknpc Rabbit##61080
 Use the Love emote on a Rabbit |script DoEmote("LOVE")
-Love a Rabbit |achieve 1206/12 |goto Elwynn Forest 36.3,85.8
+Love a Rabbit |achieve 1206/6 |goto Elwynn Forest 36.3,85.8
 step
 clicknpc Deer##883
 Use the Love emote on a Deer |script DoEmote("LOVE")
 |tip Be sure not to get it mixed up with the fawn also in the area.
-Love a Deer |achieve 1206/5 |goto Elwynn Forest 24.9,83.0
+Love a Deer |achieve 1206/15 |goto Elwynn Forest 24.9,83.0
 step
 clicknpc Fawn##890
 Use the Love emote on a Fawn |script DoEmote("LOVE")
-Love a Fawn |achieve 1206/7 |goto Elwynn Forest 24.9,83.0
+Love a Fawn |achieve 1206/3 |goto Elwynn Forest 24.9,83.0
 step
 clicknpc Cow##2442
 Use the Love emote on a Cow |script DoEmote("LOVE")
-Love a Cow |achieve 1206/4 |goto Elwynn Forest 32.3,77.2
+Love a Cow |achieve 1206/11 |goto Elwynn Forest 32.3,77.2
 step
 clicknpc Chicken##620
 Use the Love emote on a Chicken |script DoEmote("LOVE")
-Love a Chicken |achieve 1206/3 |goto Elwynn Forest 36.5,60.1
+Love a Chicken |achieve 1206/10 |goto Elwynn Forest 36.5,60.1
 step
 clicknpc Cat##6368
 Use the Love emote on a Cat |script DoEmote("LOVE")
-Love a Cat |achieve 1206/2 |goto Elwynn Forest 44.5,53.8
+Love a Cat |achieve 1206/9 |goto Elwynn Forest 44.5,53.8
 step
-kill Gold Beetle##32258 |achieve 2556/17 |goto Badlands 50.4,43.9
+kill Gold Beetle##32258 |achieve 2556/11 |goto Badlands 50.4,43.9
 step
 clicknpc Lava Crab##9700
 Use the Love emote on a Lava Crab |script DoEmote("LOVE")
-Love a Lava Crab |achieve 2557/8 |goto Searing Gorge 31.1,43.7
+Love a Lava Crab |achieve 2557/10 |goto Searing Gorge 31.1,43.7
 step
 clicknpc Sheep##1933
 Use the Love emote on a Sheep |script DoEmote("LOVE")
-Love a Sheep |achieve 1206/14 |goto Loch Modan 20.9,71.9
+Love a Sheep |achieve 1206/18 |goto Loch Modan 20.9,71.9
 step
 clicknpc Ram##2098
 Use the Love emote on a Ram |script DoEmote("LOVE")
-Love a Ram |achieve 1206/13 |goto Loch Modan 25.1,37.8
+Love a Ram |achieve 1206/8 |goto Loch Modan 25.1,37.8
 step
 clicknpc Squirrel##1412
 Use the Love emote on a Squirrel |script DoEmote("LOVE")
-Love a Squirrel |achieve 1206/17 |goto Loch Modan 29.0,66.3
+Love a Squirrel |achieve 1206/1 |goto Loch Modan 29.0,66.3
 step
-kill Squirrel##1412 |achieve 2556/4 |goto Loch Modan 29.0,66.3
+kill Squirrel##1412 |achieve 2556/14 |goto Loch Modan 29.0,66.3
 step
 label "travel_twilight"
 clicknpc Yellow-Bellied Marmot##48683
 Use the Love emote on a Yellow-Bellied Marmot |script DoEmote("LOVE")
-Love a Yellow-Bellied Marmot |achieve 5548/13 |goto Twilight Highlands 29.3,33.1
+Love a Yellow-Bellied Marmot |achieve 5548/7 |goto Twilight Highlands 29.3,33.1
 step
 clicknpc Highlands Turkey##48706
 Use the Love emote on a Highlands Turkey |script DoEmote("LOVE")
-Love a Highlands Turkey |achieve 5548/4 |goto Twilight Highlands 29.3,33.1
+Love a Highlands Turkey |achieve 5548/9 |goto Twilight Highlands 29.3,33.1
 step
 clicknpc Shore Crab##60761
 Use the Love emote on a Shore Crab |script DoEmote("LOVE")
-Love a Shore Crab |achieve 1206/15 |goto Twilight Highlands 71.2,41.2
+Love a Shore Crab |achieve 1206/2 |goto Twilight Highlands 71.2,41.2
 step
-kill Maggot##16030 |achieve 2556/13 |goto The Hinterlands 31.9,57.9
+kill Maggot##16030 |achieve 2556/6 |goto The Hinterlands 31.9,57.9
 step
-kill Larva##16068 |achieve 2556/1 |goto Ghostlands 45.3,31.1
+kill Larva##16068 |achieve 2556/15 |goto Ghostlands 45.3,31.1
 step
 clicknpc Ewe##19665
 Use the Love emote on a Ewe |script DoEmote("LOVE")
-Love an Ewe |achieve 1206/6 |goto Shattrath City 58.8,23.3
+Love an Ewe |achieve 1206/12 |goto Shattrath City 58.8,23.3
 step
 clicknpc Borean Marmot##31685
 Use the Love emote on a Borean Marmot |script DoEmote("LOVE")
-Love a Borean Marmot |achieve 2557/2 |goto Borean Tundra 36.0,55.9
+Love a Borean Marmot |achieve 2557/5 |goto Borean Tundra 36.0,55.9
 step
 clicknpc Tundra Penguin##28440
 Use the Love emote on a Tundra Penguin |script DoEmote("LOVE")
@@ -1906,23 +1906,23 @@ Love a Tundra Penguin |achieve 2557/12 |goto Borean Tundra 24.5,61.8
 step
 clicknpc Steam Frog##25679
 Use the Love emote on a Steam Frog |script DoEmote("LOVE")
-Love a Steam Frog |achieve 1206/18 |goto Borean Tundra 61.0,51.8
+Love a Steam Frog |achieve 1206/13 |goto Borean Tundra 61.0,51.8
 step
 clicknpc Borean Frog##25677
 Use the Love emote on a Borean Frog |script DoEmote("LOVE")
-Love a Borean Frog |achieve 1206/1 |goto Borean Tundra 72.7,41.0
+Love a Borean Frog |achieve 1206/14 |goto Borean Tundra 72.7,41.0
 step
 clicknpc Sholazar Tickbird##28093
 Use the Love emote on a Sholazar Tickbird |script DoEmote("LOVE")
-Love a Sholazar Tickbird |achieve 2557/11 |goto Sholazar Basin 27.1,60.5
+Love a Sholazar Tickbird |achieve 2557/7 |goto Sholazar Basin 27.1,60.5
 step
 clicknpc Glacier Penguin##32498
 Use the Love emote on a Glacier Penguin |script DoEmote("LOVE")
-Love a Glacier Penguin |achieve 2557/5 |goto Icecrown 60.9,18.8
+Love a Glacier Penguin |achieve 2557/4 |goto Icecrown 60.9,18.8
 step
 kill Underbelly Rat##32428 |achieve 2556/5 |goto Dalaran/2 41.0,50.4
 step
-kill Zul'Drak Rat##28202 |achieve 2556/8 |goto Zul'Drak 42.4,63.1
+kill Zul'Drak Rat##28202 |achieve 2556/9 |goto Zul'Drak 42.4,63.1
 step
 clicknpc Arctic Hare##29328
 Use the Love emote on an Arctic Hare |script DoEmote("LOVE")
@@ -1930,36 +1930,36 @@ Love an Artic Hare |achieve 2557/1 |goto Zul'Drak 71.8,69.8
 step
 clicknpc Grizzly Squirrel##31889
 Use the Love emote on a Grizzly Squirrel |script DoEmote("LOVE")
-Love a Grizzly Squirrel |achieve 2557/6 |goto Grizzly Hills 66.7,13.1
+Love a Grizzly Squirrel |achieve 2557/8 |goto Grizzly Hills 66.7,13.1
 step
 clicknpc Mountain Skunk##31890
 Use the Love emote on a Mountain Skunk |script DoEmote("LOVE")
-Love a Mountain Skunk |achieve 2557/9 |goto Grizzly Hills 68.6,11.8
+Love a Mountain Skunk |achieve 2557/11 |goto Grizzly Hills 68.6,11.8
 step
-kill Fjord Rat##24174 |achieve 2556/15 |goto Howling Fjord 45.0,30.3
+kill Fjord Rat##24174 |achieve 2556/10 |goto Howling Fjord 45.0,30.3
 step
 clicknpc Fjord Penguin##28407
 Use the Love emote on a Fjord Penguin |script DoEmote("LOVE")
-Love a Fjord Penguin |achieve 2557/3 |goto Howling Fjord 20.8,61.8
+Love a Fjord Penguin |achieve 2557/2 |goto Howling Fjord 20.8,61.8
 step
 clicknpc Scalawag Frog##26503
 Use the Love emote on a Scalawag Frog |script DoEmote("LOVE")
-Love a Scalawag Frog |achieve 2557/10 |goto Howling Fjord 35.6,81.8
+Love a Scalawag Frog |achieve 2557/6 |goto Howling Fjord 35.6,81.8
 step
 Follow the path to the bottom of the catacombs
-kill Devouring Maggot##24270 |achieve 2556/6 |goto Howling Fjord 57.1,56.8
+kill Devouring Maggot##24270 |achieve 2556/12 |goto Howling Fjord 57.1,56.8
 step
 clicknpc Fjord Turkey##24746
 Use the Love emote on a Fjord Turkey |script DoEmote("LOVE")
-Love a Fjord Turkey |achieve 2557/4 |goto Howling Fjord 66.4,71.1
+Love a Fjord Turkey |achieve 2557/2 |goto Howling Fjord 66.4,71.1
 step
 clicknpc Sassy Cat##47682
 Use the Love emote on a Sassy Cat |script DoEmote("LOVE")
-Love a Sassy Cat |achieve 5548/10 |goto Tol Barad Peninsula 61.2,35.5
+Love a Sassy Cat |achieve 5548/5 |goto Tol Barad Peninsula 61.2,35.5
 step
 clicknpc Baradin Fox Kit##48630
 Use the Love emote on a Baradin Fox Kit |script DoEmote("LOVE")
-Love a Baradin Fox Kit |achieve 5548/2 |goto Tol Barad 44.5,25.8
+Love a Baradin Fox Kit |achieve 5548/8 |goto Tol Barad 44.5,25.8
 step
 clicknpc Toad##1420
 Use the Love emote on a Toad |script DoEmote("LOVE")
@@ -1969,19 +1969,19 @@ clicknpc Alpine Chipmunk##49779
 Use the Love emote on an Alpine Chipmunk |script DoEmote("LOVE")
 Love an Alpine Chipmunk |achieve 5548/1 |goto Winterspring 51.5,47.9
 step
-kill Crystal Spider##32261 |achieve 2556/11 |goto Winterspring 48.8,54.8
+kill Crystal Spider##32261 |achieve 2556/13 |goto Winterspring 48.8,54.8
 step
 clicknpc Grotto Vole##50419
 Use the Love emote on a Grotto Vole |script DoEmote("LOVE")
-Love a Grotto Vole |achieve 5548/3 |tip Inside of the cave |goto Mount Hyjal 54.5,17.1
+Love a Grotto Vole |achieve 5548/2 |tip Inside of the cave |goto Mount Hyjal 54.5,17.1
 step
 clicknpc Rock Viper##50481
 Use the Love emote on a Rock Viper |script DoEmote("LOVE")
-Love a Rock Viper |achieve 5548/8 |goto Mount Hyjal 38.4,56.6
+Love a Rock Viper |achieve 5548/13 |goto Mount Hyjal 38.4,56.6
 step
 clicknpc Gazelle##4166
 Use the Love emote on a Gazelle |script DoEmote("LOVE")
-Love a Gazelle |achieve 1206/9 |goto Northern Barrens 51.8,56.4
+Love a Gazelle |achieve 1206/5 |goto Northern Barrens 51.8,56.4
 step
 clicknpc Small Frog##13321
 Use the Love emote on a Small Frog |script DoEmote("LOVE")
@@ -1991,35 +1991,35 @@ clicknpc Prairie Dog##2620
 Use the Love emote on a Prairie Dog |script DoEmote("LOVE")
 Love a Prairie Dog |achieve 1206/21 |goto Northern Barrens 66.0,42.1
 step
-kill Water Snake##4953 |achieve 2556/2 |goto Durotar 36.4,40.8
+kill Water Snake##4953 |achieve 2556/8 |goto Durotar 36.4,40.8
 step
 clicknpc Hare##5951
 Use the Love emote on a Hare |script DoEmote("LOVE")
-Love a Hare |achieve 1206/10 |goto Durotar 50.5,30.2
+Love a Hare |achieve 1206/16 |goto Durotar 50.5,30.2
 step
-kill Adder##3300 |achieve 2556/12 |goto Durotar 45.6,16.0
+kill Adder##3300 |achieve 2556/7 |goto Durotar 45.6,16.0
 step
 clicknpc Swine##10685
 Use the Love emote on a Swine |script DoEmote("LOVE")
-Love a Swine |achieve 1206/19 |goto Durotar 43.7,30.1
+Love a Swine |achieve 1206/7 |goto Durotar 43.7,30.1
 step
-kill Spider##14881 |achieve 2556/3 |goto Dustwallow Marsh 35.0,24.0
+kill Spider##14881 |achieve 2556/4 |goto Dustwallow Marsh 35.0,24.0
 step
-kill Mouse##6271 |achieve 2556/7 |goto Dustwallow Marsh 46.2,56.9
+kill Mouse##6271 |achieve 2556/17 |goto Dustwallow Marsh 46.2,56.9
 step
-kill Snake##2914 |achieve 2556/10  |goto Dustwallow Marsh 50.0,57.6
+kill Snake##2914 |achieve 2556/3  |goto Dustwallow Marsh 50.0,57.6
 step
 clicknpc Rattlesnake##48686
 Use the Love emote on a Rattlesnake |script DoEmote("LOVE")
-Love a Rattlesnake |achieve 5548/7 |goto Tanaris 46.9,26.9
+Love a Rattlesnake |achieve 5548/12 |goto Tanaris 46.9,26.9
 step
 clicknpc Mac Frog##50491
 Use the Love emote on a Mac Frog |script DoEmote("LOVE")
-Love a Mac Frog |achieve 5548/5 |goto Uldum 56.6,35.1
+Love a Mac Frog |achieve 5548/11 |goto Uldum 56.6,35.1
 step
 clicknpc Oasis Moth##50496
 Use the Love emote on an Oasis Moth |script DoEmote("LOVE")
-Love an Oasis Moth |achieve 5548/6 |goto Uldum 55.0,36.1
+Love an Oasis Moth |achieve 5548/10 |goto Uldum 55.0,36.1
 step
 Congratulations, you have earned the To All The Squirrels I've Loved Before achievement! |only if achieved(1206)
 You've missed some squirrels! _Click here_ to start over |confirm |next "start" |only if not achieved(1206)

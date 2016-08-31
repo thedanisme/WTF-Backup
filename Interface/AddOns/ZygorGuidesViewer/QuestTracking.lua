@@ -209,7 +209,7 @@ function ZGV:QuestTracking_CacheQuestLog(from)
 	end
 	--]]
 
-	self:Debug("CacheQuestLog "..(from and "from "..from.." " or "").."cached "..nc.." quests ("..#oldquests.." old, "..#newquests.." new)")
+	self:Debug("&quest cacheQuestLog "..(from and "from "..from.." " or "").."cached "..nc.." quests ("..#oldquests.." old, "..#newquests.." new)")
 
 	-- any abandoned?
 	if #oldquests>0 then

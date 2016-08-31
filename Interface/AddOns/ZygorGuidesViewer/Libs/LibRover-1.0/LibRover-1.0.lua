@@ -21,7 +21,7 @@ local name,addon = ...
 
 local GAME_LOCALE = GetLocale()
 
-local Astrolabe = DongleStub("Astrolabe-ZGV")
+local HBD = LibStub("HereBeDragons-1.0")
 local LibTaxi = LibStub("LibTaxi-1.0")
 local AceTimer = LibStub("AceTimer-3.0")
 
@@ -41,8 +41,15 @@ do
 	_G['LibRover']=LibRover
 
 
-	local tinsert,tremove,ipairs,pairs,debugprofilestop = tinsert,tremove,ipairs,pairs,debugprofilestop
-	local yield,resume = coroutine.yield,coroutine.resume
+	local
+		tinsert,tremove,ipairs,pairs,next,debugprofilestop,tonumber,table,wipe,type,assert,error,pcall,print,debugstack
+		=
+		tinsert,tremove,ipairs,pairs,next,debugprofilestop,tonumber,table,wipe,type,assert,error,pcall,print,debugstack
+	local
+		IsSpellKnown,UnitLevel,IsQuestFlaggedCompleted,GetMapNameByID
+		=
+		IsSpellKnown,UnitLevel,IsQuestFlaggedCompleted,GetMapNameByID
+	local yield,resume,co_create,co_status = coroutine.yield,coroutine.resume,coroutine.create,coroutine.status
 
 	local ZGV
 
@@ -74,6 +81,10 @@ do
 		setmetatable(L,{__index=function(self,k) return rawget(self,k) or k end})
 		Lib.L=L
 
+
+		Lib.do_border_opti = true
+
+
 		Lib.data = Lib.data or addon.LibRoverData     addon.LibRoverData = nil
 
 		Lib.opennodes = LibRover_NodeSetHeap:New()
@@ -81,6 +92,11 @@ do
 		Lib.banned_nodes = {}
 		Lib.onlies = {}
 		Lib.delayeddata = {}
+
+		
+		Lib.tempstore = setmetatable({},{__mode='k',__index=function(t,k) local n={} t[k]=n return n end})
+		local tempstore = Lib.tempstore
+
 
 		local WEAK_VALUES={__mode='v'}
 		Lib.nodes = {all={},taxi={},id={},mageteleport={},useitem={},['start']={},['end']={},['temp']={}}
@@ -120,6 +136,9 @@ do
 			use_ghearth = true,
 			use_astral_recall = true,
 			frown_on_short_portals = true,
+
+			remove_hairpins = true,
+			remove_standing = true
 		}
 
 
@@ -147,7 +166,7 @@ do
 		local area_maps_table=GetAreaMaps()
 
 		local function getdist(node1,node2)
-			local dist,xd,yd = Astrolabe:ComputeDistance(node1.m,node1.f,node1.x,node1.y,node2.m,node2.f,node2.x,node2.y)
+			local dist,xd,yd = HBD:GetZoneDistance(node1.m,node1.f,node1.x,node1.y,node2.m,node2.f,node2.x,node2.y)
 			if dist==0 and node1.c~=node2.c or (node1.c==node2.c and node1.c==-1 and node1.m~=node2.m) then dist=nil end   -- the latter condition shouldn't matter anymore, since we moved to Astrolabe systems instead of continents
 			return dist or 99999999,xd,yd
 		end
@@ -163,14 +182,16 @@ do
 			return WorldMapFrame:IsShown() and (GetPlayerMapPosition("player")==0)
 		end
 
+		--[[
 		local function playerpos()
 			local m,f=ZGV.CurrentMapID,ZGV.CurrentMapFloor -- WHY OH WHY do I have to do it like that ;_;
-			local lam,laf,lax,lay = unpack(Astrolabe.LastPlayerPosition)
+			local lax,lay,lam,laf = HBD:GetPlayerZonePosition(true)
 			local x,y = Astrolabe:TranslateWorldMapPosition( lam, laf, lax, lay, m, f )
 			--if not x or x<0 or y<0 or x>1 or y>1 then x,y=nil,nil end
 			return m,f,x,y
 		end
 		Lib.playerpos=playerpos
+		--]]
 
 		local function myassert(test,msg,...)
 			if not test then
@@ -239,7 +260,7 @@ do
 			end
 
 			-- sanitize continent, coordinates, floor
-			node.c = node.c or Astrolabe.WorldMapSize[node.m].system or node.m  --Lib.ContinentsByID[node.m]
+			node.c = node.c or HBD:GetMapContinent(node.m)  --Lib.ContinentsByID[node.m]
 			if not node.x then error("Failed to add map node "..(#Lib.nodes.all).." type "..node.type) end
 			if node.x>1 then node.x,node.y=node.x/100,node.y/100 end
 			node.m = ZGV.Pointer:SanitizePhase(node.m)
@@ -325,6 +346,56 @@ do
 
 
 
+		-- Intersect segments A (x1,y1 : x2,y2) and B (x1,y1 : x2,y2).
+		local function getIntersection(ax1,ay1,ax2,ay2,bx1,by1,bx2,by2)
+			-- line coefficients
+			local aA=ay2-ay1
+			local aB=ax1-ax2
+			local aC=aA*ax1+aB*ay1
+			local bA=by2-by1
+			local bB=bx1-bx2
+			local bC=bA*bx1+bB*by1
+		
+			local det = aA*bB-bA*aB
+			if abs(det)<0.0001 then
+				return nil -- parallel
+			else
+				local intx = (bB*aC-aB*bC)/det
+				local inty = (aA*bC-bA*aC)/det
+				return intx,inty
+			end
+		end
+		Lib.getIntersection = getIntersection
+
+		local function doesIntersect(ax1,ay1,ax2,ay2,bx1,by1,bx2,by2)
+			if max(ax1,ax2)<min(bx1,bx2) then return false,"no overlap 1" end
+			if max(bx1,bx2)<min(ax1,ax2) then return false,"no overlap 2" end
+			if max(ay1,ay2)<min(by1,by2) then return false,"no overlap 3" end
+			if max(by1,by2)<min(ay1,ay2) then return false,"no overlap 4" end
+			local intx,inty = getIntersection(ax1,ay1,ax2,ay2,bx1,by1,bx2,by2)
+			if not intx then return false,"parallel" end
+			if intx>max(ax1,ax2) or intx<min(ax1,ax2)
+			or inty>max(ay1,ay2) or inty<min(ay1,ay2)
+			or intx>max(bx1,bx2) or intx<min(bx1,bx2)
+			or inty>max(by1,by2) or inty<min(by1,by2) then return false,"out" end  -- 
+			return true
+		end
+		Lib.doesIntersect = doesIntersect
+
+		function Lib.testIntersect()
+			local does,desc = doesIntersect(0,0, 2,2, 0,2, 2,0)   assert(does,"failed simple cross")
+			local does,desc = doesIntersect(0,0, 2,2, 2,0, 4,2)   assert(not does,"failed far / /, "..tostring(does))  assert(desc=='parallel',"failed / / parallel "..tostring(desc))
+			local does,desc = doesIntersect(0,0, 2,2, 1,0, 4,2)   assert(not does,"failed close //, "..tostring(does))  assert(desc=='out',"failed / / out "..tostring(desc))
+		end
+
+		Lib.walls = {}
+
+		--[[
+		/dump LibRover.testIntersect()
+		/dump LibRover.testIntersect()
+		--]]
+
+
 
 		local function HandleSpellsAndItems(node,link)
 			if node.spell then
@@ -337,10 +408,14 @@ do
 			end
 		end
 
+		local cond_env = setmetatable({},{__index=_G})
+
 		local function ParseDataCond(data)
 			if type(data.cond)=="string" then
 				local err
+				if ZGV and ZGV.db and ZGV.db.profile.debug then data.cond = data.cond:gsub("UnitLevel","ZGV:GetPlayerPreciseLevel") end
 				data.cond_fun,err = loadstring("return "..data.cond)
+				setfenv(data.cond_fun,cond_env)
 				if err then error(err.." in parsing '"..data.cond.."'") end
 			elseif type(data.cond)=="function" then
 				data.cond_fun = data.cond
@@ -358,6 +433,7 @@ do
 		local LAST_NODE  -- to use with @+ pseudo-id in data
 
 		local enemyfac = UnitFactionGroup("player")=="Alliance" and "H" or "A"
+		local myfac = UnitFactionGroup("player"):sub(1,1)
 
 		local function AddError(fmt,...)
 			Lib.ERRORS = Lib.ERRORS or {}
@@ -522,7 +598,6 @@ do
 			deftype=deftype or def_deftype
 
 			-- faction check
-			local enemyfac = UnitFactionGroup("player")=="Alliance" and "H" or "A"
 			if data.faction==enemyfac then return end
 
 			-- by default, nodes are "misc" and connect as "walk".
@@ -736,29 +811,40 @@ do
 			return (self[id1] and self[id1][id2]) or (self[id2] and self[id2][id1])
 		end
 
-		local enemyfac = UnitFactionGroup("player")=="Alliance" and "H" or "A"
-
 		--[[================ INITIALIZE NODES ===============]]--
 
 		local function InitializeTaxis(dontlink)
-			for c,cont in pairs(LibTaxi.taxipoints) do
-				for z,zone in pairs(cont) do
+			-- add in alphabetical order!
+			for c,cont in ZGV.OrderedPairs(LibTaxi.taxipoints) do
+				for z,zone in ZGV.OrderedPairs(cont) do
 					z=Lib.data.MapIDsByName[z] or z
 					if type(z)=="table" then z=z[1] end
 					for n,node in ipairs(zone) do
 						if node.faction~=enemyfac then
 							node.m = z
 							node.type = "taxi"
+							node.radius = 10
 							-- other fields are already there, how convenient!
 							AddNode(LibRover_Node:New(node),dontlink)
 						end
 					end
 				end
 			end
-			-- DON'T clear taxis. They're good for lookups by other addons.
-			-- Though we could clean up the enemy faction...
+			-- DON'T clear unknown taxis. They're good for lookups by other addons.
 
-			-- Don't add taxi linkage here, either. Node:DoLinkage does that.
+			for i,n1 in pairs(ZGV.LibRover.nodes.taxi) do
+				for j,n2 in pairs(ZGV.LibRover.nodes.taxi) do
+					local cost = n1.costs and n1.costs[n2.taxitag]
+					if cost then
+						n1:AddNeigh(n2,{mode="taxi",cost=(cost>0) and cost})  -- if cost is 0, then it's unknown, dammit... let's not put one in, and let LibRover approximate it on calculation.
+					end
+					--[[
+						if (n1.taxioperator~="blackcat" and n2.taxioperator~="blackcat") or cost then
+							-- maybe don't do ground linkage?
+						end
+					--]]
+				end
+			end
 		end
 
 		Lib.SpecialMapNodeData = {}
@@ -820,6 +906,8 @@ do
 
 			punchStartupTime("start")
 
+			TaxiFrame:HookScript("OnShow",function() Lib:HighlightTaxiDestination() end)
+
 			Lib.frame:RegisterEvent("ACHIEVEMENT_EARNED")
 			Lib.frame:RegisterEvent("RECEIVED_ACHIEVEMENT_LIST")
 			Lib.frame:RegisterEvent("LEARNED_SPELL_IN_TAB")
@@ -828,7 +916,6 @@ do
 			Lib.frame:RegisterEvent("UNIT_EXITING_VEHICLE")
 			Lib.frame:RegisterEvent("UNIT_ENTERING_VEHICLE")
 			Lib.frame:RegisterEvent("UNIT_SPELLCAST_SUCCEEDED")
-			Lib.frame:RegisterEvent("TAXIMAP_OPENED")
 			Lib.frame:RegisterEvent("WORLD_MAP_UPDATE")
 			Lib.frame:RegisterEvent("ZONE_CHANGED")
 			Lib.frame:RegisterEvent("ZONE_CHANGED_NEW_AREA")
@@ -841,13 +928,7 @@ do
 
 			punchStartupTime("sanitizing")  -- @~ 135ms
 
-			LibRover_Node:InterfaceWithLib(Lib)
-			LibRover_NodeSet:InterfaceWithLib(Lib)
-			LibRover_NodeSetHeap:InterfaceWithLib(Lib)
-			LibRover_Region:InterfaceWithLib(Lib)
-
 			Lib:CheckMaxSpeeds()
-			LibRover_Node:CacheMaxSpeeds()
 			LibRover_Node:NeighbourhoodCache_Localize()
 
 			punchStartupTime("maxspeeds")
@@ -859,13 +940,22 @@ do
 
 			--Lib.startup_now = debugprofilestop()
 
-			local dontlink="dontlink"
-			if ZGV.db.profile.travel_do_full_linking_at_startup then dontlink=nil Lib.data.neighbourhood={} end
-			dontlink=nil
+			local use_cache=true
+			if ZGV.db.profile.force_travel_cache then  Lib.data.version = Lib.data.version or {}  Lib.data.version.nodes_version=999  Lib.data.neighbourhood=Lib.data.neighbourhood or {}  Lib.data.neighbourhood.version=999  end
+			if (not LibRover.data.version or not LibRover.data.version.nodes_version or not LibRover.data.neighbourhood or LibRover.data.neighbourhood.version ~= LibRover.data.version.nodes_version)
+			or ZGV.db.profile.travel_do_full_linking_at_startup
+			then
+				Lib.data.neighbourhood=nil
+				use_cache=nil
+				geterrorhandler()("LibRover: cache version mismatch, or caching disabled manually. Cache is off.")
+				LibRover_Node:NeighbourhoodCache_Kill()
+			end  -- or don't use it after all.
+			Lib.use_cache = use_cache
+
 
 			do -- INITIALIZE SETUP
 				for i,text in ipairs(Lib.data.basenodes.setup) do
-					SmartAddNode(text,nil,dontlink)
+					SmartAddNode(text,nil,use_cache)
 				end
 				Lib.data.basenodes.setup = nil
 			end
@@ -884,7 +974,7 @@ do
 
 			do -- INITIALIZE ADVANCED
 				for i,pair in ipairs(Lib.data.basenodes.advanced) do
-					SmartAddNode(pair,nil,dontlink)
+					SmartAddNode(pair,nil,use_cache)
 				end
 				Lib.data.basenodes.advanced = nil
 			end
@@ -912,7 +1002,7 @@ do
 
 			do -- INITIALIZE TAXIS
 				-- add map IDs to taxis
-				InitializeTaxis(dontlink)
+				InitializeTaxis(use_cache)
 				-- if available, try to glean known taxi routes. Otherwise assume they're not known.
 			end
 
@@ -925,7 +1015,7 @@ do
 			do -- INITIALIZE INNS
 				local count=0	for z,zone in pairs(Lib.data.basenodes.inns) do  count=count+1  end
 				local progress=0
-				for z,zone in pairs(Lib.data.basenodes.inns) do
+				for z,zone in ZGV.OrderedPairs(Lib.data.basenodes.inns) do
 					if type(z)=="string" then
 						local z2=Lib.data.MapIDsByName[z]
 						if type(z2)=="table" then z2=z2[1] end
@@ -939,7 +1029,7 @@ do
 							node.type = "inn"
 							-- other fields are already there, how convenient!
 							--node.title=node.name
-							AddNode(LibRover_Node:New(node),dontlink)
+							AddNode(LibRover_Node:New(node),use_cache)
 						end
 					end
 					progress=progress+1
@@ -982,9 +1072,9 @@ do
 			do -- INITIALIZE BORDERS
 				local count=0	for c,cont in pairs(Lib.data.basenodes.borders) do  for d,data in ipairs(cont) do  count=count+1  end end
 				local progress=0
-				for c,cont in pairs(Lib.data.basenodes.borders) do  -- yes, c is useless
+				for c,cont in ZGV.OrderedPairs(Lib.data.basenodes.borders) do  -- yes, c is useless
 					for d,data in ipairs(cont) do
-						SmartAddNode(data,"border",dontlink)
+						SmartAddNode(data,"border",use_cache)
 						progress=progress+1
 						if d%5==0 then maybeYield("borders",progress/count)  end
 					end
@@ -999,7 +1089,7 @@ do
 			do -- INITIALIZE TRAVEL
 				local count=#Lib.data.basenodes.travel
 				for d,data in ipairs(Lib.data.basenodes.travel) do
-					SmartAddNode(data,nil,dontlink)
+					SmartAddNode(data,nil,use_cache)
 					if d%2==0 then  maybeYield("travel",d/count)  end
 				end
 				Lib.data.basenodes.travel = nil
@@ -1014,23 +1104,22 @@ do
 
 
 			do -- INITIALIZE EXPLICIT FLOORING
-				-- This is just silly.
 				local i=0
 				local count=0  for id,zonedata in pairs(Lib.data.basenodes.MapsWithExplicitFloors) do count=count+1 end
 				local progress=0
-				for id,zonedata in pairs(Lib.data.basenodes.MapsWithExplicitFloors) do
+				for id,zonedata in ZGV.OrderedPairs(Lib.data.basenodes.MapsWithExplicitFloors) do
 					progress=progress+1
 					for n,nodedata in ipairs(zonedata) do
-						local node1,node2=SmartAddNode(nodedata,nil,dontlink)
+						local node1,node2=SmartAddNode(nodedata,nil,use_cache)
 						if node1 then node1.flooring=true end
 						if node2 then node2.flooring=true end
 						i=i+1  if i%5==0 then  maybeYield("flooring",progress/count)  end
 					end
 					
-					Lib.data.basenodes.MapsWithExplicitFloors[id]=true
+					Lib.data.basenodes.MapsWithExplicitFloors[id]=true  -- don't delete the entry, it'll come in handy to check WHICH maps need explicit floor crossing.
 					--i=i+1  if i%1==0 then yield("flooring") end
 				end
-				-- don't delete it, it'll come in handy to check which maps NEED explicit floor crossing.
+				
 			end
 
 			punchStartupTime("flooring")  --@~380ms
@@ -1043,10 +1132,10 @@ do
 				local i=0
 				local count=0  for id,data in pairs(Lib.data.basenodes.indoorzones) do count=count+1 end
 				local progress=0
-				for id,data in pairs(Lib.data.basenodes.indoorzones) do
+				for id,data in ZGV.OrderedPairs(Lib.data.basenodes.indoorzones) do
 					progress=progress+1
 					for n,node in ipairs(data) do
-						SmartAddNode(node,nil,dontlink)
+						SmartAddNode(node,nil,use_cache)
 						i=i+1  if i%5==0 then  maybeYield("indoors",progress/count)  end
 					end
 					Lib.data.basenodes.indoorzones[id]=nil
@@ -1058,6 +1147,47 @@ do
 			Lib.startup_framecount=Lib.startup_framecount+1
 			yield("indoors",1)
 
+
+			do -- INITIALIZE WALLS
+				for zone,zdata in ZGV.OrderedPairs(Lib.data.basenodes.walls) do
+					local zname,floor = zone:match("^(.-)%s*/%s*(.-)$")
+					zname=zname or zone
+					local mapid = tonumber(zone) or Lib.data.MapIDsByName[zone]   if type(mapid)=="table" then mapid=mapid[1] end
+					floor=tonumber(floor) or 0
+					for i,points in ipairs(zdata) do
+						local loop=false
+						if points[#points]=="loop" then loop=true tremove(points) end
+						if #points%2~=0 then error("Number of wall coords not even. "..tostring(zone).." "..tostring(i)) end
+						if #points<4 then error("Too few points in wall. "..tostring(zone).." "..tostring(i)) end
+						Lib.walls[mapid] = Lib.walls[mapid] or {}
+						Lib.walls[mapid][floor] = Lib.walls[mapid][floor] or {}
+						for pn=1,#points,2 do
+							local nextpn=pn+2   if nextpn>#points then if loop then nextpn=1 else nextpn=nil end end -- make a loop
+							if nextpn then tinsert(Lib.walls[mapid],{points[pn],points[pn+1],points[nextpn],points[nextpn+1]}) end
+							AddNode(
+								LibRover_Node:New({m=mapid,f=floor,x=points[pn],y=points[pn+1],type="wall"}),
+								dontlink
+							)
+						end
+					end
+					Lib.data.basenodes.walls[zone]=nil
+				end
+			end
+
+			punchStartupTime("walls")
+			yield("walls",1)
+
+
+			do -- Find dark nodes and list them for quick lookup
+				for nid,node in ipairs(Lib.nodes.all) do
+					if node.selfregion then
+						local regionobj,err = Lib.NodeRegions:AddNewRegion{name="selfregion_"..nid,mapzone=self.m,centernode=node,radius=node.regionradius,nofly=1}
+						if regionobj then node:AssignRegion(regionobj) end
+					end
+				end
+			end
+				
+
 			
 			
 			resetStartupTime()
@@ -1065,22 +1195,43 @@ do
 			punchStartupTime("dolinkage")  --@~380ms
 
 			-- initialize linkage from pre-baked neighbourhood data.
-			local i=0
-			local allcount=#Lib.nodes.all
-			for node1_num,neighs in pairs(Lib.data.neighbourhood) do
-				local node1=allnodes[node1_num]
-				if node1 then
-					for node2_num,extra in pairs(neighs) do
-						local node2=allnodes[node2_num]
-						if node2 then
-							node1:DoLinkage(node2)
+			if use_cache then
+				local i=0
+				local allcount=#Lib.nodes.all
+
+				local merged_neighcache = {}
+				for worldflighttype,data in pairs(Lib.data.neighbourhood) do  repeat
+					if worldflighttype~="neither" then
+						local world,mode = worldflighttype:match("(.*) (.*)")
+						if world and not select(mode=="fly" and 3 or 1,Lib.speeds[world]) then
+							-- trash it
+							table.wipe(data)
+							break --continue
 						end
 					end
-				end
-				i=i+1
-				if i%20==0 then  maybeYield("dolinkage",i/allcount)  end
-			end
+					if type(data)~="table" then break end --continue
+					-- merge it!
+					for ni,nd in pairs(data) do
+						if merged_neighcache[ni] then print("LibRover: ERROR! Node "..ni.." present twice in cached data!") end
+						merged_neighcache[ni]=nd
+					end
+				until true  end
 
+				Lib.data.neighbourhood=merged_neighcache
+				for node1_num,neighs in pairs(Lib.data.neighbourhood) do
+					local node1=allnodes[node1_num]
+					if node1 then
+						for node2_num,extra in pairs(neighs) do
+							local node2=allnodes[node2_num]
+							if node2 then
+								node1:DoLinkage(node2)
+							end
+						end
+						i=i+1
+						if i%20==0 then  maybeYield("dolinkage",i/allcount)  end
+					end
+				end
+			end
 			LibRover_Node:NeighbourhoodCache_Kill()
 
 			yield("dolinkage",1)
@@ -1122,7 +1273,7 @@ do
 
 			Lib:Debug("&lr_init Initialization total: |cffffeeaa%.3f",debugprofilestop()-Lib.startup_starttime)
 
-
+			if Lib.use_cache and #Lib.nodes.all~=Lib.data.version['nodes_'..myfac] then ZGV:Error("WARNING: Travel system reports map node count mismatch. Faction "..myfac..", "..#Lib.nodes.all.." nodes present, "..Lib.data.version['nodes_'..myfac].." expected. Re-dump the cache, or at least change the version number in LibRover/data to disable caching! Travel system is UNRELIABLE now!") end
 
 			return true
 		end
@@ -1176,7 +1327,7 @@ do
 				local t=debugprofilestop()
 				--ZGV.Profiler:Start("travel-total")
 				--ZGV.Profiler:Start("travel-tmp")
-				local good,module,progress,quiet = coroutine.resume(self.startup_thread)
+				local good,module,progress,quiet = resume(self.startup_thread)
 				module=module or "?"
 				--ZGV.Profiler:Stop("travel-tmp","travel-"..tostring(module))
 				--ZGV.Profiler:Stop("travel-total")
@@ -1226,13 +1377,17 @@ do
 
 		function Lib:DoStartup()
 			ZGV = ZygorGuidesViewer  -- That's local. Trimming down taint. Taint once and get over it.
+			LibRover_Node:InterfaceWithLib(Lib)
+			LibRover_NodeSet:InterfaceWithLib(Lib)
+			LibRover_NodeSetHeap:InterfaceWithLib(Lib)
+			LibRover_Region:InterfaceWithLib(Lib)
 
 			self:UpdateConfig()
 			if self.F then return end
 			self.F=CreateFrame("FRAME")
 			self.F:Show()
 			self.F:SetScript("OnUpdate",function() Lib:StartupStep() end)
-			self.startup_thread = coroutine.create(_StartupThread)
+			self.startup_thread = co_create(_StartupThread)
 		end
 
 
@@ -1242,6 +1397,7 @@ do
 
 
 		-- uhhh, WHY!???
+		--[[
 		local function GetPlayerPos()
 			local m,f,x,y = Astrolabe:GetCurrentPlayerPosition()
 			if m==13 or m==14 or m==0 or m==689 or m==-1 or m==485 or m==466 or m==613 or m==862 then
@@ -1250,15 +1406,16 @@ do
 			end
 			return m,f,x,y
 		end
+		--]]
 
 
 		 -- LEGACY, OBSOLETE, only used by the |fly lines
-
+		 --[[
 			function Lib:GetNearestTaxi()
 				if not Astrolabe then return end
 				local mindist=999999
 				local minnode
-				local m,f,x,y = playerpos()
+				local x,y,m,f = HBD:GetPlayerZonePosition(true)
 				if not x then return end
 				for n,node in ipairs(Lib.nodes.taxi) do
 					if node.m and node.x and node.y then
@@ -1274,7 +1431,7 @@ do
 				if not Astrolabe then return end
 				local mindist=999999
 				local minnode
-				local m,f,x,y = playerpos()
+				local x,y,m,f = HBD:GetPlayerZonePosition(true)
 				if not x then return end
 				for n,node in ipairs(Lib.nodes.taxi) do
 					if node.m and node.x and node.y and node.m == m then
@@ -1284,6 +1441,7 @@ do
 				end
 				return minnode,mindist
 			end
+		--]]
 
 		--[[
 			--- Parse the taxis table, changing map
@@ -1350,8 +1508,6 @@ do
 		function Lib:SetupInitialQuickTravel(current)
 			local hearthlocation;
 			local bind=GetBindLocation()
-			local playerfac = UnitFactionGroup("player")=="Alliance" and "A" or "H"
-			local enemyfac = playerfac=="H" and "A" or "H"
 			local userlevel = UnitLevel("player")
 
 			local function FindBindLocation(bind)
@@ -1384,9 +1540,15 @@ do
 				--local is_mage = select(2,UnitClass("player"))=="MAGE"
 				-- teleports allowed at all
 				for i,node in ipairs(Lib.nodes.mageteleport) do
-					if IsSpellKnown(node.spell) and GetSpellCooldown(node.spell)==0 then
+					if IsSpellKnown(node.spell) and GetSpellCooldown(node.spell)==0 and (not node.cond_fun or node:cond_fun()) then
 						local meta = {mode="teleport",cost=MAGE_TELEPORT_COST}
-						current:AddNeigh(node,meta)
+						local valid_spell=true
+						if (node.spell==50977 and tonumber(node.zone)==current.m and (current.f==1 or current.f==2)) or -- Deathgate only outside of acherus/1,2 brokenshores/1,2
+						   (node.spell==126892 and tonumber(node.zone)==current.m) then -- zen pilgrimage only outside new classhall
+							valid_spell = false
+						end
+						--ax,ay,am,af = HBD:GetPlayerZonePosition(true)
+						if valid_spell then current:AddNeigh(node,meta) end
 						if node.spell==50977 then node.template="deathgate" end
 						if node.spell==3561 then meta.cost = MAGE_TELEPORT_COST_STORMWIND end  -- Stormwind Mage Tower is a bitch to get out of.
 					elseif Lib.cfg.use_last_resort then
@@ -1491,7 +1653,7 @@ do
 			end
 			
 			if not Lib.calculating then
-				nextjob = table.remove(Lib.delayeddata, 1)
+				local nextjob = table.remove(Lib.delayeddata, 1)
 				self:Debug("Starting next job from queue:")
 				self:FindPath(nextjob.am,nextjob.af,nextjob.ax,nextjob.ay,nextjob.bm,nextjob.bf,nextjob.bx,nextjob.by, nextjob.handler, nextjob.extradata, nextjob.force_new, nextjob.quiet)
 			end
@@ -1531,7 +1693,7 @@ do
 				local title
 				local questdata = ZGV.Localizers:GetQuestData(fac=="Alliance" and 29548 or 29690)
 				title = questdata and questdata.title
-				return true,"PANDARIA_LOCKED","You can't get to Pandaria if you're below level 85 and haven't completed the quest "..title
+				return true,"PANDARIA_LOCKED","You can't get to Pandaria if you're below level 85 and haven't completed the " .. (title and "quest \""..title.."\"" or "initial quest")
 
 			elseif self.data.ZoneContLev[destmap].cont==7 and level<90  then
 				--Draenor
@@ -1582,6 +1744,8 @@ do
 
 			self.updating = true
 
+			self.border_opti_gain = 0
+
 			--if UnitOnTaxi("player") then
 
 			--[[
@@ -1595,7 +1759,7 @@ do
 
 			if am==0 then
 				--local m,f=ZGV.CurrentMapID,ZGV.CurrentMapFloor
-				am,af,ax,ay = playerpos()
+				ax,ay,am,af = HBD:GetPlayerZonePosition(true)
 				if not am or not ax or am==0 then
 					-- WAIT! It could be the goddamn Deeprun Tram!
 					if GetCurrentMapAreaID()==922 then  -- don't use am as it might be zero for safety reasons...
@@ -1626,12 +1790,22 @@ do
 				bm and GetMapNameByID(bm) or bm or "nil",bf,bx and bx*100 or 0,by and by*100 or 0)
 
 
-			self:CheckMaxSpeeds()
-
 			--if lam==13 or lam==14 or lam==0 or lam==689 or lam==-1 or lam==485 or lam==466 then
 				-- Guess which zone we're in. SILLY.
 
-			local is_impossible,code,reason = self:IsDestinationImpossible(am,af,bm,bf,reason)
+			
+			self.extradata = extradata
+			self.PathFoundHandler = handler
+
+
+			wipe(Lib.debug_time)
+			Lib.debug_count_compares=0
+			Lib.debug_frames_total=0
+			opened_count=0
+			closed_count=0
+
+			
+			local is_impossible,code,reason = self:IsDestinationImpossible(am,af,bm,bf)
 			if is_impossible then
 				self:Debug("&_POP |cff00ff88FindPath|r failed, destination impossible: %s, %s.",tostring(code),tostring(reason or ""))
 				Lib:ReportFail(reason)
@@ -1645,8 +1819,22 @@ do
 				return handler and handler("PROGRESS")
 			end
 
+			self:CheckMaxSpeeds()
 
-			if not am or not af or not bm or not bf or am==0 or bm==0 then  self:ReportFail("Cannot determine start or end location.")  self:Debug("&_POP |cff00ff88FindPath|r failed: no start or end map")  return   end
+			if not am or not af or not bm or not bf or am==0 or bm==0 then  
+				self:ReportFail("Cannot determine start or end location.")  
+				self:Debug("&_POP |cff00ff88FindPath|r failed: no start or end map")  
+				if self.force_update_counter<50 then 
+					-- retry, in case we started pathfinding while still on loading screen
+					self.force_update_now = true
+					self.force_update_counter = (self.force_update_counter or 0) + 1
+				end
+				return   
+			end
+
+
+			self.force_update_counter = 0
+
 			--assert(lam,"missing starting map")
 			--assert(laf,"missing starting floor")
 			--assert(lax and lay,"missing starting coord")
@@ -1669,23 +1857,11 @@ do
 
 			lam,laf,lax,lay,lbm,lbf,lbx,lby=am,af,ax,ay,bm,bf,bx,by
 
-			self.extradata = extradata
-
 			self.caller_stack = debugstack(2)
 
 
 
 			lastupdate=0
-
-			self.PathFoundHandler = handler
-
-
-
-			wipe(Lib.debug_time)
-			Lib.debug_count_compares=0
-			Lib.debug_frames_total=0
-			opened_count=0
-			closed_count=0
 
 			self.calculating = true
 			self.calculation_step = 0
@@ -1696,7 +1872,7 @@ do
 
 			-- Start new calculation thread basing on data set above.
 			-- If there was a previous calculation running... Oh well, orphan it.
-			self.thread = coroutine.create(self.StepForever_Threaded)
+			self.thread = co_create(self.StepForever_Threaded)
 
 			self:Debug("&_POP |cff00ff88FindPath|r started .thread, good luck. FindPath ends.")
 
@@ -1706,7 +1882,7 @@ do
 		
 		
 		-- These fields get REMOVED from the nodes when clearing.
-		local temp_fields = {cost=1,time=1,mycost=1,mytime=1,heur=1,score=1,status=1,parentlink=1,parent=1,prev=1,['next']=1,text=1,maplabel=1,toend=1,taxiFinal=1, link=1,a_b=1,a_b__c_d=1,costdesc=1,wayp_override_icon=1,wayp_override_text=1}
+		local temp_fields = {cost=1,time=1,mycost=1,mytime=1,heur=1,score=1,status=1,parentlink=1,parent=1,prev=1,['next']=1,text=1,maplabel=1,toend=1,taxiFinal=1, link=1,a_b=1,a_b__c_d=1,costdesc=1,wayp_override_icon=1,wayp_override_text=1,border_optimization=1}
 		local temp_fields_i = {}
 		for field,v in pairs(temp_fields) do tinsert(temp_fields_i,field) end
 
@@ -1735,6 +1911,8 @@ do
 			-- CLEAR OLD START/END
 
 			self:Debug("|cff00dd77InitializePath|r towards |cffddddee%d/%d %.02f,%.02f",lbm,lbf,lbx*100,lby*100)
+
+			self.initializing_path = true
 
 			local t0=debugprofilestop()
 			local t,t2
@@ -1782,11 +1960,11 @@ do
 				self.startnode = LibRover_Node:New{m=lam,f=laf,x=lax,y=lay,type="start",player=self.start_is_player}
 				-- guess region by subzonetext, if any region matches that.
 				if self.startnode.player then
-					self.startnode.zone=BZR[GetZoneText()] or ""
-					self.startnode.realzone=BZR[GetRealZoneText()] or ""
-					self.startnode.subzone=BZR[GetSubZoneText()] or ""
-					self.startnode.minizone=BZR[GetMinimapZoneText()] or ""
-					self.startnode.indoors=not Astrolabe.minimapOutside
+					self.startnode.zone=BZR[GetZoneText()] or GetZoneText() or ""
+					self.startnode.realzone=BZR[GetRealZoneText()] or GetRealZoneText() or ""
+					self.startnode.subzone=BZR[GetSubZoneText()] or GetSubZoneText() or ""
+					self.startnode.minizone=BZR[GetMinimapZoneText()] or GetMinimapZoneText() or ""
+					self.startnode.indoors=IsIndoors()
 				end
 
 				Lib:SetupInitialQuickTravel(self.startnode)
@@ -1871,6 +2049,7 @@ do
 				count=count+1
 				if count%500 then yield("PENDING") end
 			end
+			table.wipe(tempstore)
 			yield("PENDING")
 
 
@@ -1918,6 +2097,8 @@ do
 			self:Debug("&lr_initpath_v InitializePath: opened start nodes (@%.1fms)",t)
 
 			if Lib.debug_cnodes then ZGV.Pointer:ClearWaypoints("manual") end
+
+			self.initializing_path = false
 
 			self:Debug("|cff00dd77InitializePath|r done (@%.1fms)",t)
 		end
@@ -2130,6 +2311,19 @@ do
 			--]]
 
 
+			local function isSegmentWalled(node1,node2)
+				local bads = Lib.walls[node1.m]
+				if not bads then return false,"no bad on map" end
+				local n1x,n1y,n2x,n2y = node1.x,node1.y,node2.x,node2.y
+				for b,bad in ipairs(bads) do
+					local cross,desc = doesIntersect(n1x,n1y,n2x,n2y,bad[1]/100,bad[2]/100,bad[3]/100,bad[4]/100)
+					if cross then return true,b end
+				end
+				return false
+			end
+			Lib.isSegmentWalled = isSegmentWalled
+
+
 			local perstep=0
 
 
@@ -2152,6 +2346,8 @@ do
 			local lib_banned_nodes_any = next(Lib.banned_nodes)
 			local lib_debug_badnodes = Lib.debug_badnodes
 			local lib_debug_time = Lib.debug_time
+			local lib_debug_fromnode = Lib.debug_fromnode
+			local lib_debug_tonode = Lib.debug_tonode
 
 			--for i,neighpair in ipairs(current.n) do
 			for neigh,neighlink in current:IterNeighs() do
@@ -2179,9 +2375,41 @@ do
 
 
 				local mode=neighlink.mode
+				local neighlink__ts = tempstore[neighlink]
 
-				if neigh.status~="closed"
-				and (not neighlink.cond_fun or neighlink.cond_fun())
+
+				
+				local border_opt_reject
+				if Lib.do_border_opti then
+					border_opt_reject = (current.border_optimization and current.border~="multi" and (  -- and aren't limited by current node's optimizations. Optimized nodes only connect out to certain neighs.
+					(current.border_optimization=="border" and current.border~=neigh)
+					or
+					(current.border_optimization=="taxi" and mode~="taxi")
+					))
+
+					if border_opt_reject then Lib.border_opti_gain = (Lib.border_opti_gain or 0) + 1 end
+				end
+
+				
+				
+				local neighlink_failed_cond
+				if Lib.opti_neighcond then
+					if neighlink.cond_fun then
+						if neighlink.failed_cond==nil then
+							neighlink_failed_cond = not not (neighlink.cond_fun and not neighlink.cond_fun())  -- and aren't failing a condition
+							neighlink__ts.failed_cond = neighlink_failed_cond
+						else
+							neighlink_failed_cond = neighlink__ts.failed_cond
+						end
+					end
+				else
+					neighlink_failed_cond = neighlink.cond_fun and not neighlink.cond_fun()
+				end
+
+				-- try to open neighbours who:
+				if neigh.status~="closed"  -- aren't closed already
+				and not neighlink_failed_cond
+				and not border_opt_reject
 				--and not (mode=="fly" and not flyspeed)
 				--and not (neigh.onlydst and neigh.onlydst~=current)
 
@@ -2209,7 +2437,7 @@ do
 						mytime = neighlink.cost  -- timetabled!
 
 					elseif mode == "taxi" then
-						if neigh.known and not current.missing then -- current.missing == Thereamore's flight path is gone when it's destroyed.
+						if not current.missing then -- current.missing == Thereamore's flight path is gone when it's destroyed.
 							mytime = neighlink.cost  -- timetabled!
 									or
 									getdist(current,neigh) * 1.2 -- taxis fly in wide curves...
@@ -2218,9 +2446,6 @@ do
 								mytime=mytime*0.8
 								if cost_debugging then costdesc = costdesc .. "guild perk taxi bonus; " end
 							end -- Guild Perk Ride like the Wind.
-						else
-							mytime=99999
-							if cost_debugging then costdesc = costdesc .. "no fly to strange taxi; " end
 						end
 					elseif mode == "tram" then
 						--mycost = 120.00  -- 2 minutes.
@@ -2248,6 +2473,11 @@ do
 							mytime = 240
 						end
 
+					-- fly to unknown taxi AND run/fly from there? nope!
+					elseif current.type=="taxi" and not current.known then
+						mytime=99999
+						if cost_debugging then costdesc = costdesc .. "no arrive at strange taxi; " end
+
 					else
 
 						local dist=neighlink.dist
@@ -2263,6 +2493,12 @@ do
 						-- divide by movement speed later
 					end
 
+					-- Bad Segments
+					if current.m==neigh.m and neighlink.mode=="walk" and isSegmentWalled(current,neigh) then
+						mytime=mytime+60
+						if cost_debugging then costdesc = costdesc .. "wall +60; " end
+					end
+						
 					if mode=="fly" and (not current.parentlink or current.parentlink.mode~="fly") then
 						mytime = mytime+5
 						if cost_debugging then costdesc = costdesc .. "mountup +5; " end
@@ -2271,10 +2507,13 @@ do
 					-- get some sane fallback...
 					mytime = mytime or neighlink.cost or 0
 
+					--[[
 					if mytime>100000 then
 						mytime=10
 						if cost_debugging then costdesc = costdesc .. "sanitized impossible or no time; " end
 					end  -- sanitize "impassable" links
+					--]]
+					-- This effectively rendered "DON'T USE" links useless. What??
 
 					-- by now, mytime should contain estimated travel TIME. Apply generic COST mods now.
 
@@ -2336,7 +2575,7 @@ do
 					or (neigh.class and select(2,UnitClass("player"))~=neigh.class)
 					then -- Class only! woo
 						mycost = mycost+110000
-						if cost_debugging then costdesc = costdesc .. "bad faction/quest/class; " end
+						if cost_debugging then costdesc = costdesc .. "bad faction/quest/class "..tostring(neigh.factionid).." "..tostring(neigh.quest).." "..tostring(neigh.class).."; " end
 					end
 
 					--[[
@@ -2403,6 +2642,11 @@ do
 						Lib:Debug ("From [%d]: %s%s|r (%s %.1f), c=%.1f, h=%.1f, sc=|cffddffdd%.1f|r",current.num, colors[neigh.type] or "",neigh:tostring(), mode,mycost, cost,heur,cost+heur)
 					end
 
+					if lib_debug_fromnode==current.num and lib_debug_tonode==neigh.num then
+						self:Debug("Linking %d to %d: mode %s, cost %.1f, time %.1f, mytime %.1f, mycost %.1f, costdesc %s",
+							current.num, neigh.num, neighlink.mode, cost,time,mytime,mycost,costdesc)
+					end
+
 					local updated
 					if not neigh.cost or cost<neigh.cost then
 						if lib_debug_onodes or (lib_debug_nodes_any and lib_debug_nodes[neigh.num]) then
@@ -2422,6 +2666,25 @@ do
 						neigh.parent = current
 						neigh.costdesc = costdesc
 						updated=true
+
+						-- border opening optimization: open the OTHER end of the door instead.
+						if neigh.border and neigh.border~="multi" then
+							if neigh~=current.border and not neigh.border_optimization then -- lock the remote neighbour
+								neigh.border_optimization = "border"
+							elseif neigh.border_optimization=="border" then -- it's our neighbour, locked! (from the other side?)
+								neigh.border_optimization="ignore"
+							end
+
+							if lib_debug_onodes then Lib:Debug("Border opti: Node %d is opted for %s",neigh.num,neigh.border_optimization) end
+
+						--[[ This is bullshit. Marking all visible taxis as "departure only" isn't a good idea at all.
+						elseif neigh.type=="taxi" and (mode=="walk" or mode=="fly") then
+							neigh.border_optimization = "taxi"
+							if lib_debug_onodes then Lib:Debug("Border opti: Node %d is opted for %s",neigh.num,neigh.border_optimization) end
+						--]]
+
+						end
+
 					end
 					-- With the heaps used for open nodes, NEVER ALLOW THE NODE SCORE TO INCREASE. This screws things royally.
 
@@ -2444,7 +2707,7 @@ do
 							--]]
 							self.opennodes:BubbleUp(neigh)
 						else
-							self.opennodes:Add(neigh)
+							self.opennodes:Add(neigh)  --TODO: if neigh has a border twin, then open the twin INSTEAD. Later, when working the twin, close this one immediately.
 							--[[
 							if neigh.warlocksummon then
 								self:Debug("COURTESY %d %s ADDED TO OPEN! from %d = %s", neigh.num, tostring(neigh), current.num,tostring(current))
@@ -2498,7 +2761,7 @@ do
 
 			if Lib.debug_cnodes or Lib.debug_openclose or (lib_debug_nodes_any and lib_debug_nodes[current.num]) then
 				Lib:Debug ("Closing node: [%d] %s%s|r, cost %d, heur %d, score |cffddffdd%.2f|r. Opened: %d", current.num,colors[current.type] or "",current:tostring(),current.cost or 99999999,current.heur or 0,(current.cost or 99999999)+(current.heur or 0), opened_count)
-				Lib:Debug ("Step %d: %d open, %d closed, time %.1f", self.calculation_step,dictsize(self.opennodes),closed_count,cost or 0)
+				Lib:Debug ("Step %d: %d open, %d closed", self.calculation_step,dictsize(self.opennodes),closed_count)
 
 				--[[
 				ZGV.Pointer:ClearWaypoints("manual")
@@ -2623,12 +2886,13 @@ do
 		-- And, this is for fast lookups.
 		local travel_locale_keys={}  for i,pair in ipairs(travel_locale) do travel_locale_keys[pair[1]]=pair[2] end
 
+		local math_abs = math.abs
 		local function AngleBetween(n1,n2,n3)
 			if not (n1 and n2 and n3) then return 99 end
 			local a1 = n2:GetAngleTo(n1)
 			local a2 = n2:GetAngleTo(n3)
 			if not (a1 and a2) then return 99 end
-			local d = math.abs(a2-a1)
+			local d = math_abs(a2-a1)
 			if d>180 then d=360-d end
 			return d
 		end
@@ -2832,6 +3096,8 @@ do
 
 			--== LOOSE START OPTIMIZATION
 
+			if Lib.cfg.remove_standing then
+
 				-- find a node player is standing on
 				local standing_node, standing_nr
 				local sn=results[1]
@@ -2843,6 +3109,7 @@ do
 					for i=2,standing_nr do
 						local n=results[i]
 						if n.noskip -- TODO: make it... something better?
+						or n.type=="portal"
 						or n.type=="taxi"
 						then dobreak=true break end  -- Cancel skipping. Just forget it.
 					end
@@ -2859,15 +3126,17 @@ do
 						sn.link=nr.link
 						nr.optaway = nil
 						tremove(results,2)
-						tinsert(self.RESULTS_SKIPPED_START,nr)
+						tinsert(self.RESULTS_SKIPPED_START,{nr,"standing"})
 					until nr==standing_node
 				until true end
-
+			end
 			--
 
 
 
 			--=========== HAIRPIN OPTIMIZATION
+
+			if Lib.cfg.remove_hairpins then
 
 				-- try to skip the first point, if it's close and an acute angle
 
@@ -2937,7 +3206,7 @@ do
 					sn.link=n1.link
 					n1.optaway = nil
 					tremove(results,2)
-					tinsert(self.RESULTS_SKIPPED_START,n1)
+					tinsert(self.RESULTS_SKIPPED_START,{n1,"hairpin: "..(reason or "no reason")})
 					local n1removed=n1
 					sn,n1,n2=results[1],results[2],results[3]
 
@@ -2974,10 +3243,10 @@ do
 						-- remove n1 from between sn and n2
 						n1.link=n2.link
 						tremove(results,#results-1)
-						tinsert(self.RESULTS_SKIPPED_END,n1)
+						tinsert(self.RESULTS_SKIPPED_START,{n1,"pre-end"})
 					end
 				end
-
+			end
 			--============ HAIRPIN OPTIMIZATION ENDS.
 
 
@@ -3014,7 +3283,7 @@ do
 
 		function Lib:ReportFail(reason)
 			Lib:Debug("FAIL!")
-			if self.PathFoundHandler then self.PathFoundHandler("failure",nil,reason) end
+			if self.PathFoundHandler then self.PathFoundHandler("failure",nil,self.extradata,reason) end
 			Lib:Stop()
 		end
 
@@ -3067,11 +3336,10 @@ do
 		local elapsed_for_update=0
 		local UPDATE_FREQ=1.0
 
+		local debugprofilestop=debugprofilestop
+
 		function Lib:OnUpdate(elapsed)
 			--if not UnitOnTaxi("player") then  Lib.force_next = nil  end
-
-			local co_status,co_resume = coroutine.status,coroutine.resume
-			local debugprofilestop=debugprofilestop
 
 			if self.calculating and self.thread then
 
@@ -3114,6 +3382,7 @@ do
 
 				time_slot = self.pathfinding_speed_override or ZGV.db.profile.pathfinding_speed or 1
 				--if fps>60 then time_slot = time_slot + (fps-60)*0.1 end
+				
 				self:Debug("FPS %.2f, speed %.2fms, slot %.2fms",fps,self.pathfinding_speed_override or ZGV.db.profile.pathfinding_speed or 0.001,time_slot)
 
 				-- overrides for time slot
@@ -3132,10 +3401,14 @@ do
 					--perframethrot = perframethrot - self:StepPath()
 					local slot_time=debugprofilestop()
 
-					local debug_time_allcalc_1=debugprofilestop()
+					local debug_time_onerun_1=debugprofilestop()
 					if co_status(self.thread)=="dead" then return end
-					resumed,code,ret = co_resume(self.thread,self,time_slot_remaining) -- returns num as count of nodes covered. nil if ending.
-					Lib.debug_time.allcalc=Lib.debug_time.allcalc+debugprofilestop()-debug_time_allcalc_1
+					resumed,code,ret = resume(self.thread,self,time_slot_remaining) -- returns num as count of nodes covered. nil if ending.
+					if self.initializing_path then
+						Lib.debug_time.initpath = Lib.debug_time.initpath+debugprofilestop()-debug_time_onerun_1
+					else
+						Lib.debug_time.allcalc=Lib.debug_time.allcalc+debugprofilestop()-debug_time_onerun_1
+					end
 
 					--[[
 					if not resumed then
@@ -3178,19 +3451,19 @@ do
 						Lib.success_endnode and " (REFINING)" or "", Lib.debug_frames_total,Lib.calculation_step,debug_time_all_1)
 					end
 				else -- SUCCESS or END.
-					Lib:Debug("&lr_calc This pass: [%s] = |cffffffff%.2f|rms. Done |cffffff88%d|r calculations over |cff88ffff%d|r frames:\n"
+					Lib:Debug("&lr_calc Result: %s. Done |cffffff88%d|r calculations over |cff88ffff%d|r frames:\n"
 					.." compared |cff88ff88%d|r nodes in |cffffffff%.2f|r ms, opened |cff88ff88%d|r, closed |cff88ff88%d|r \n"
 					--.." cheapest |cffffffff%.2f|r, initial |cffffffff%.2f|r, overhead |cffffffff%.2f|r, blah |cffffffff%.2f|r, scoring |cffffffff%.2f|r, adding |cffffffff%.2f|r ms, closed |cffffffff%.2f|r, final |cffffffff%.2f|r    \n"
 					.." cheapest |cffffffff%.2f|r, initial |cffffffff%.2f|r, overhead |cffffffff%.2f|r, blah |cffffffff%.2f|r, scoring |cffffffff%.2f|r, adding |cffffffff%.2f|r ms    \n"
-					.." calc total |cffffffff%.2f|r ms, total time |cffffffff%.2f|r ms   \n"
+					.." init |cffffffff%.2f|r ms + calc total |cffffffff%.2f|r ms = total time |cffffffff%.2f|r ms   \n"
 					.."(found: %s)",
-					(code or "nil"),debug_time_all_1,
+					(code or "nil"),
 					Lib.calculation_step,Lib.debug_frames_total,
 					Lib.debug_count_compares,Lib.debug_time.cheapest,opened_count,closed_count,
 
 					Lib.debug_time.cheapest, Lib.debug_time.initial, Lib.debug_time.neighoverhead, Lib.debug_time.neighblah, Lib.debug_time.scoring, Lib.debug_time.adding, --Lib.debug_time.closed, Lib.debug_time.final,
 
-					Lib.debug_time.allcalc, Lib.debug_time.all,
+					Lib.debug_time.initpath, Lib.debug_time.allcalc, Lib.debug_time.all,
 
 					Lib.success_endnode and "YES" or "NO"
 
@@ -3262,8 +3535,8 @@ do
 						local moved=false
 						if ZGunitOnTaxi then moved=true end -- force slight move
 						if not moved then
-							local m,f,x,y = playerpos()
-							local dist = Astrolabe:ComputeDistance(m,f,x,y,lam,laf,lax,lay)
+							local x,y,m,f = HBD:GetPlayerZonePosition(true)
+							local dist = HBD:GetZoneDistance(m,f,x,y,lam,laf,lax,lay)
 							if dist and dist>50 then
 								--self:Debug("Player moved above %d yd!",dist)
 								moved=true
@@ -3284,7 +3557,7 @@ do
 					self.force_update_now=false
 					self:Debug("Updating because forced.")
 					-- self.quiet=false -- leave it to the caller to set.
-					local m,f,x,y = playerpos()
+					local x,y,m,f = HBD:GetPlayerZonePosition(true)
 					self:FindPath(m,f,x,y,lbm,lbf,lbx,lby,self.PathFoundHandler, self.extradata,nil, self.quiet)
 					lastupdate=0
 				end
@@ -3379,6 +3652,7 @@ do
 				if ZGV.db.profile.debug_librover_flightcold~=nil then coldflying=ZGV.db.profile.debug_librover_flightcold end
 				if ZGV.db.profile.debug_librover_flightazeroth~=nil then flightlicense=ZGV.db.profile.debug_librover_flightazeroth end
 				if ZGV.db.profile.debug_librover_flightpandaria~=nil then pandarialicense=ZGV.db.profile.debug_librover_flightpandaria end
+				if ZGV.db.profile.debug_librover_flightdraenor~=nil then draenorflying=ZGV.db.profile.debug_librover_flightdraenor end
 			end
 
 			local ridespeed = min(maxspeed,1.0)
@@ -3393,8 +3667,7 @@ do
 			if IsSpellKnown(78633) then for k,v in pairs(Lib.speeds) do if v>1 then Lib.speeds[k]=v*1.1 end end end
 
 			for _,zoneid in ipairs(area_maps_table) do
-				local zonedata = Astrolabe.WorldMapSize[zoneid]
-				local system = zonedata and (zonedata.system or zonedata.systemParent)
+				local system = HBD:GetMapContinent(zoneid)
 				if system then
 					local speed
 					if system==13 or system==14 or system==640 then speed=Lib.speeds["Azeroth"]
@@ -3410,6 +3683,8 @@ do
 					Lib.maxspeedinzone[zoneid]={ flyspeed or runspeed, runspeed, flyspeed }
 				end
 			end
+
+			LibRover_Node:CacheMaxSpeeds()
 		end
 
 		local has_flying_mount=false -- cached for 60 seconds (see below).
@@ -3507,73 +3782,75 @@ do
 					Lib:Debug("Got event %s, too hot (%ds of %ds), waiting",event,tm-self.last_zone_event,MAX_ZONE_CHANGE_FREQ)
 					Lib.last_zone_event=tm
 				end
-			elseif event=="TAXIMAP_OPENED" then	-- highlight suggested taxi destination
 
-				local taxiframe = TaxiFrame
-				local glow = taxiframe.LibRover_glow
-				if not glow then
-					glow = taxiframe:CreateTexture(nil,"ARTWORK")
-					taxiframe.LibRover_glow = glow
-					glow:SetTexture("Interface/SPELLBOOK/UI-GlyphFrame-Glow")
-					glow:SetBlendMode("ADD")
-					glow:SetSize(48,48)
+			end
+		end
 
-					local flasher = glow:CreateAnimationGroup()
-					local fade1 = flasher:CreateAnimation("Alpha")
-					fade1:SetDuration(0.5)
-					fade1:SetToAlpha(1)
-					fade1:SetOrder(1)
+		function Lib:HighlightTaxiDestination()
+			local taxiframe = TaxiFrame
+			local glow = taxiframe.LibRover_glow
+			if not glow then
+				glow = taxiframe:CreateTexture(nil,"ARTWORK")
+				taxiframe.LibRover_glow = glow
+				glow:SetTexture("Interface/SPELLBOOK/UI-GlyphFrame-Glow")
+				glow:SetBlendMode("ADD")
+				glow:SetSize(48,48)
 
-					local fade2 = flasher:CreateAnimation("Alpha")
-					fade2:SetDuration(0.5)
-					fade2:SetToAlpha(0)
-					fade2:SetOrder(2) 
+				local flasher = glow:CreateAnimationGroup()
+				local fade1 = flasher:CreateAnimation("Alpha")
+				fade1:SetDuration(0.5)
+				fade1:SetToAlpha(1)
+				fade1:SetOrder(1)
 
-					glow.flasher = flasher
-				end
-				glow:Hide()
+				local fade2 = flasher:CreateAnimation("Alpha")
+				fade2:SetDuration(0.5)
+				fade2:SetToAlpha(0)
+				fade2:SetOrder(2) 
 
-				--Lib:UpdateTaxis()
-				if Lib.RESULTS and
-				not (Lib.extradata and Lib.extradata.waypoint and Lib.extradata.waypoint.type=="way" and not ZGV.db.profile.visible)  -- do NOTHING if current path was guide-driven.
-				then
-					for k,node in ipairs(Lib.RESULTS) do
-						if node and node.type=="taxi" and node.taxiFinal then
+				glow.flasher = flasher
+			end
+			glow:Hide()
 
-							for i=1,NumTaxiNodes() do
-								local x,y=TaxiNodePosition(i)
-								x,y=floor(x*1000),floor(y*1000)
-								if x < 100 then x = "0"..x end
-								if y < 100 then y = "0"..y end
-								local myTaxiTag = x..":"..y
+			--Lib:UpdateTaxis()
+			if Lib.RESULTS and
+			not (Lib.extradata and Lib.extradata.waypoint and Lib.extradata.waypoint.type=="way" and not ZGV.db.profile.visible)  -- do NOTHING if current path was guide-driven.
+			then
+				for k,node in ipairs(Lib.RESULTS) do
+					if node and node.type=="taxi" and node.taxiFinal then
 
-								if TaxiNodeGetType(i)~="NONE" and (node.taxitag and node.taxitag == myTaxiTag or TaxiNodeName(i):find(node.name,0,true)) then
-									local b = _G["TaxiButton"..i]
+						for i=1,NumTaxiNodes() do
+							local x,y=TaxiNodePosition(i)
+							x,y=floor(x*1000),floor(y*1000)
+							if x < 100 then x = "0"..x end
+							if y < 100 then y = "0"..y end
+							local myTaxiTag = x..":"..y
 
-									local id = b:GetID()  -- should be the same as 'i', but...
+							if TaxiNodeGetType(i)~="NONE" and (node.taxitag and node.taxitag == myTaxiTag or TaxiNodeName(i):find(node.name,0,true)) then
+								local b = _G["TaxiButton"..i]
 
-									Lib:Debug("Would TakeTaxiNode(%d) #%d to %s (tag %s)",id,i,TaxiNodeName(i),node.taxitag)
+								local id = b:GetID()  -- should be the same as 'i', but...
 
-									-- hop on automatically?
-									if ZGV.db.profile.autotaxi and id and not IsAltKeyDown() then
-										Dismount()
-										GetNumRoutes(id) -- dummy call! but needed in 6.1 for TakeTaxiNode to work. WTF Blizzard...
-										TakeTaxiNode(id)
-									end
+								Lib:Debug("Would TakeTaxiNode(%d) #%d to %s (tag %s)",id,i,TaxiNodeName(i),node.taxitag)
 
-									-- glow it!
-									--glow:SetSize(64,64)  glow:SetPoint("CENTER",b,"CENTER",8,-7)
-									glow:SetPoint("CENTER",b,"CENTER",6,-5)
-									glow.flasher:Play()
-									glow:Show()
-
-									break
+								-- hop on automatically?
+								if ZGV.db.profile.autotaxi and id and not IsAltKeyDown() then
+									Dismount()
+									GetNumRoutes(id) -- dummy call! but needed in 6.1 for TakeTaxiNode to work. WTF Blizzard...
+									TakeTaxiNode(id)
 								end
+
+								-- glow it!
+								--glow:SetSize(64,64)  glow:SetPoint("CENTER",b,"CENTER",8,-7)
+								glow:SetPoint("CENTER",b,"CENTER",6,-5)
+								glow.flasher:Play()
+								glow:Show()
+
+								break
 							end
 						end
 					end
-					return
 				end
+				return
 			end
 		end
 
@@ -3587,15 +3864,15 @@ do
 			for ni,n in ipairs(Lib.nodes[nodetype]) do
 				if n.m==m then
 					local icon_by_status = {closed="ant_ship", open="ant_portal", ['nil']="ant"}
-					ZGV.Pointer:SetWaypoint(n.m,n.f,n.x,n.y,{title=n:tostring(true),qqtruesize=n.radius or 200,icon=ZGV.Pointer.Icons[icon_by_status[n.status or "nil"]]})
+					ZGV.Pointer:SetWaypoint(n.m,n.f,n.x,n.y,{title=n:tostring(true),qqtruesize=n.radius or 200,icon=ZGV.Pointer.Icons[icon_by_status[n.status or "nil"]],node=n})
 				end
 			end
 		end
 
-		function PlayerCompletedQuest(id)
-			local completedquests = GetQuestsCompleted()
-			if not completedquests then return end
-			return completedquests[id]
+
+		function PlayerHaveQuest(id)
+			local q=ZGV.questsbyid[id]
+			return q and q.inlog
 		end
 
 		if tonumber(select(2,GetBuildInfo()),nil)>=15799 then PlayerCompletedQuest=IsQuestFlaggedCompleted end
@@ -3680,10 +3957,207 @@ do
 			end
 		end
 
+		function LibRover:DebugNodes(n1,n2,dolink)
+			if type(n1)=="number" then n1=self.nodes.all[n1] end
+			if type(n2)=="number" then n2=self.nodes.all[n2] end
+
+			self.debug_fromnode = n1.num
+			self.debug_tonode = n2.num
+
+			print("Node 1:",n1:tostring())
+			print("Node 2:",n2:tostring())
+			print("Fly?",n1:CanFlyTo(n2,"debug"))
+			print("Walk?",n1:CanWalkTo(n2,"debug"))
+			local meta
+			for fi,fou in ipairs(n1.n) do if fou[1]==n2 then meta=fou[2] break end end
+			print("Linked 1->2?",meta and "yes" or "no","mode:",meta and meta.mode,"cost:",meta and meta.cost)
+			local meta
+			for fi,fou in ipairs(n2.n) do if fou[1]==n1 then meta=fou[2] break end end
+			print("Linked 2->1?",meta and "yes" or "no","mode:",meta and meta.mode,"cost:",meta and meta.cost)
+			
+			if dolink then
+				print("DoLinkage:",n1:DoLinkage(n2))
+			end
+		end
+
+
+		function LibRover:PathToString(path)
+			if type(path)~="table" then return "-none-" end
+			local s=""
+			for i,node in ipairs(path) do
+				if i>1 then s=s.."," end
+				s=s .. node.num
+			end
+			s=s .. (" @ %.1fs"):format(path[#path].cost)
+			return s
+		end
+
+		
+		
+		
+		LibRover.Tests = {}
+
+		LibRover.Tests.TestProto = {}
+
+		function LibRover.Tests.TestProto:New(name, m1,f1,x1,y1, m2,f2,x2,y2, settings, expected_result)
+			if type(m1)=="string" then m1=LibRover.data.MapIDsByName[m1] end
+			if type(m2)=="string" then m2=LibRover.data.MapIDsByName[m2] end
+			if type(m1)=="table" then m1=m1[1] end
+			if type(m2)=="table" then m2=m2[1] end
+			if x1>1 then x1=x1/100 end
+			if y1>1 then y1=y1/100 end
+			if x2>1 then x2=x2/100 end
+			if y2>1 then y2=y2/100 end
+
+			return setmetatable({name=name,
+				m1=m1,f1=f1,x1=x1,y1=y1,
+				m2=m2,f2=f2,x2=x2,y2=y2,
+				settings=settings, expected_result=expected_result,
+				status=nil},{__index=LibRover.Tests.TestProto})
+		end
+
+		function LibRover.Tests.TestProto:ToString()
+			return ("Test %s (%s): %s %s (t=%d+%d=%d)"):format(
+				self.name,(self.status or "pending"),
+				self.path and LibRover:PathToString(self.path) or "-no path-",  self.reason or "-no reason-",
+				self.calc_time_initpath, self.calc_time_allcalc, self.calc_time_all)
+		end
+
+		function LibRover.Tests.TestProto:Run(callback)
+			local function test_callback(status,path,extra,reason)
+				if status=="progress" then return end
+
+				-- sign off on path
+				local test=extra.test
+
+				test.reason = reason  -- if there is one
+				test.path = path
+				test.status = status
+				test.calc_time_initpath = LibRover.debug_time.initpath
+				test.calc_time_allcalc = LibRover.debug_time.allcalc
+				test.calc_time_all = LibRover.debug_time.all
+
+				LibRover.updating = false
+
+				if callback then callback(test) end
+			end
+
+			if self.settings.faction~=myfac then return test_callback("failure",nil,{test=self},"wrong faction test") end
+			if self.settings.riding then ZGV.db.profile.debug_librover_maxspeed=self.settings.riding end
+			if self.settings.flight then
+				if self.settings.flight.Azeroth then ZGV.db.profile.debug_librover_flightazeroth=true end
+				if self.settings.flight.Northrend then ZGV.db.profile.debug_librover_flightcold=true end
+				if self.settings.flight.Pandaria then ZGV.db.profile.debug_librover_flightpandaria=true end
+				if self.settings.flight.Draenor then ZGV.db.profile.debug_librover_flightdraenor=true end
+			end
+
+			Lib:QueueFindPath(
+				self.m1,self.f1,self.x1,self.y1,
+				self.m2,self.f2,self.x2,self.y2,
+				test_callback,
+				{test=self}
+			)
+		end
+
+		function LibRover.Tests.TestProto:RunPrint()
+			self:Run(function(test)
+				print(test:ToString())
+			end)
+		end
+
+		function LibRover.Tests:RunTests(tests,final_callback)
+			local next_test_callback,run_next_test
+			
+			next_test_callback=function()
+				-- find next test and run it
+				if (run_next_test()) then return end
+
+				-- no test ran? Finish him!
+				final_callback(tests)
+			end
+
+			run_next_test = function()
+				for i,test in ipairs(tests) do
+					if not test.status then
+						print("starting",test.name,test.status)
+						test:Run( --[[ and come back to --]] next_test_callback)
+						return true
+					end
+				end
+			end
+
+			run_next_test()
+		end
+
+		function LibRover.Tests:RunTestSet(number)
+			number=number or 1
+
+			cond_env.UnitLevel = function() return 110 end
+
+			local testsets = {
+				[1] = {
+					LibRover.Tests.TestProto:New(
+						"#1",
+						"Shadowglen",0,50,50, "Blasted Lands",0,50,50,
+						{faction="H",riding=1,flight={Azeroth=1}},
+						"1,2,3,4 blaaa"),
+					LibRover.Tests.TestProto:New(
+						"#2",
+						"Deathknell",0,50,50, "Uldum",0,50,50,
+						{faction="H"}, -- walk
+						"blabla"),
+					LibRover.Tests.TestProto:New(
+						"#3",
+						"Sholazar Basin",0,50,50, "The Jade Forest",0,50,50,
+						{faction="H"},
+						"blabla"),
+					LibRover.Tests.TestProto:New(
+						"mini hordie",
+						"Northern Barrens",0,67,40, "Eastern Plaguelands",0,50,50,
+						{faction="H"},
+						"blabla"),
+					LibRover.Tests.TestProto:New(
+						"mini hordie",
+						"Northern Barrens",0,67,40, "Eastern Plaguelands",0,50,50,
+						{faction="H"},
+						"blabla"),
+					LibRover.Tests.TestProto:New(
+						"mini hordie",
+						"Northern Barrens",0,67,40, "Eastern Plaguelands",0,50,50,
+						{faction="H"},
+						"blabla"),
+					LibRover.Tests.TestProto:New(
+						"mini hordie",
+						"Northern Barrens",0,67,40, "Eastern Plaguelands",0,50,50,
+						{faction="H"},
+						"blabla"),
+					LibRover.Tests.TestProto:New(
+						"mini hordie",
+						"Northern Barrens",0,67,40, "Eastern Plaguelands",0,50,50,
+						{faction="H"},
+						"blabla"),
+					LibRover.Tests.TestProto:New(
+						"#4",
+						"Darnassus",0,76,52, "Tanaris",0,36,65,
+						{faction="A"},
+						"0,1,2,3,4 blablabla"),
+				}
+			}
+
+			local final_callback = function(tests)
+				print("TESTS COMPLETE!")
+				for i,test in ipairs(tests) do print(test:ToString()) end
+				print("LibRover.Tests.LastTest set.")
+			end
+
+			local testset = testsets[number]
+
+			LibRover.Tests.LastTestSet = testset
+
+			LibRover.Tests:RunTests(testset,final_callback)
+		end
 	end
 end
-
-
 
 
 --[[

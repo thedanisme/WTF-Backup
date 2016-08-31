@@ -1297,10 +1297,11 @@ Click to complete Scouting Missives instead |confirm |next "scouting_missives" |
 step
 label "scouting_missives"
 #include "H_Garrison_Grimjaw"
+buy Scouting Missive: The Pit##133876 |or |next "the_pit"
+buy Scouting Missive: The Heart of Shattrath##133884 |next "heart_shatt"
 buy Scouting Missive: Shattrath Harbor##122412 |or |next "shattrath_harbor"
 buy Scouting Missive: Broken Precipice##122424 |or |next "broken_precipice"
 buy Scouting Missive: Mok'gol Watchpost##122421 |or |next "mokgol_watchpost"
-buy Scouting Missive: Gorian Proving Grounds##122419 |or |next "gorian_proving_grounds"
 buy Scouting Missive: Darktide Roost##122418 |or |next "darktide_roost"
 buy Scouting Missive: Socrethar's Rise##122416 |or |next "socrethars_rise"
 buy Scouting Missive: Magnarok##122403 |or |next "magnarok"
@@ -1311,6 +1312,14 @@ buy Scouting Missive: Skettis##122408 |or |next "skettis"
 buy Scouting Missive: Pillars of Fate##122411 |or |next "pillars_of_fate"
 buy Scouting Missive: Lost Veil Anzu##122413 |or |next "lost_veil_anzu"
 |tip Buy the Scouting Missive for the quest you want to complete.
+step
+label "the_pit"
+use Scouting Missive: The Pit##133876
+accept Missive: Assault on the Pit##40941 |next "assault_quest_start"
+step
+label "heart_shatt"
+use Scouting Missive: The Heart of Shattrath##133884
+accept Missive: Assault on the Heart of Shattrath##40943 |next "assault_quest_start"
 step
 label "shattrath_harbor"
 use Scouting Missive: Shattrath Harbor##122412
@@ -1323,10 +1332,6 @@ step
 label "mokgol_watchpost"
 use Scouting Missive: Mok'gol Watchpost##122421
 accept Missive: Assault on Mok'gol Watchpost##38181 |next "assault_quest_start"
-step
-label "gorian_proving_grounds"
-use Scouting Missive: Gorian Proving Grounds##122419
-accept Missive: Assault on the Gorian Proving Grounds##38202 |next "assault_quest_start"
 step
 label "darktide_roost"
 use Scouting Missive: Darktide Roost##122418
@@ -1502,7 +1507,8 @@ Assault the Sargerei Forces at Shattrath City |q Missive: Assault on Shattrath H
 |tip You can use the Group Finder to find a custom group to get this done faster. In the Group Finder, go to Premade Groups -> Custom, then search for "Shattrath Harbor".
 step
 kill Iron Bulwark##86536+, Iron Deadshot##86528+, Iron Laborer##85277+, Iron Bloodburner##85128+, Iron Enforcer##85124+, Iron Cauterizer##85127+, Iron Warden##86499+, Iron Reinforcement##86297+, Hulking Brute##85136+, Gruesome Torturer##86405+
-Assault the Pit |q Assault on the Pit##36701/1 |goto Gorgrond/0 46.23,24.35
+Assault the Pit |q Assault on the Pit##36701/1 |goto Gorgrond/0 46.23,24.35 |only if havequest(36701)
+Assault the Pit |q 40941/1 |goto Gorgrond/0 46.23,24.35 |only if havequest(40941)
 |tip You will see a progress bar in your quest tracking area.
 |tip Use the Group Finder to find a custom group. In the Group Finder, go to Premade Groups -> Custom, then search for "The Pit".
 step
@@ -1522,6 +1528,7 @@ turnin Assault on Lost Veil Anzu##36690 |only if havequest(36681) or completedq(
 turnin Assault on Skettis##36688 |only if havequest(36688) or completedq(36688)
 turnin Assault on the Heart of Shattrath##36807 |only if havequest(36807) or completedq(36807)
 turnin Assault on Shattrath Harbor##36667 |only if havequest(36667) or completedq(36667)
+turnin Missive: Assault on The Pit##40941 |only if havequest(40941) or completedq(40941)
 turnin Missive: Assault on Shattrath Harbor##38187 |only if havequest(38187) or completedq(38187)
 turnin Missive: Assault on the Broken Precipice##38180 |only if havequest(38180) or completedq(38180)
 turnin Missive: Assault on Mok'gol Watchpost##38181 |only if havequest(38181) or completedq(38181)

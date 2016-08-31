@@ -23,7 +23,6 @@ local tiporder = { --Keep this in the correct order with start and the beginning
 	"cleanup",
 	"mode",
 	"progress",
-	"model",
 	"arrow",
 	"help",
 	"finish",
@@ -155,7 +154,6 @@ end
 function Tutorial:FadeStart()
 	ZGV:Debug("Started Fading")
 	self.Invis:Show()
-	self.InvisCV:Show()
 end
 
 local function Fade(pos,placement)
@@ -163,7 +161,6 @@ local function Fade(pos,placement)
 
 	ZGV:Debug("Fading "..pos)
 
-	ZGV.CreatureViewer.Frame:SetAlpha(0.4) --show them if we want them showed.
 	ZGV.Frame:SetAlpha(0.4)
 
 	if pos=="guideviewer" then
@@ -177,8 +174,6 @@ local function Fade(pos,placement)
 		placement:SetParent(self.Invis)
 		placement:SetFrameLevel(self.Invis:GetFrameLevel()-1)
 
-	elseif pos=="model" then
-		ZGV.CreatureViewer.Frame:SetAlpha(1.0)
 	elseif pos=="arrow" then
 		-- do nothing different for the arrow
 	else
@@ -197,8 +192,6 @@ function Tutorial:FadingReset(current)
 		placement:SetParent(self.TipParent)
 		self.Locations.steps2:SetParent(self.TipParent)
 		self.Locations.steps3:SetParent(self.TipParent)
-	elseif current=="model" then
-		ZGV.CreatureViewer.Frame:SetAlpha(0.4)
 	elseif current=="arrow" then
 		-- do nothing different for the arrow
 	else
@@ -324,7 +317,6 @@ function Tutorial:Close()
 
 	self:FadingReset(self.CurrentTip) --reset the current button incase they quit during the tutorial.
 	self.Invis:Hide() ZGV.Frame:SetAlpha(1.0)
-	self.InvisCV:Hide()  ZGV.CreatureViewer.Frame:SetAlpha(1.0)
 	self.TooltipFrame:Hide()
 end
 
@@ -338,15 +330,6 @@ function Tutorial:CreateFrame()
 		:SetAllPoints()
 		:SetParent(UIParent)
 		:SetFrameStrata("HIGH") --Needs to be here to be over the step clickers >.>
-		:SetFrameLevel(10)
-		:EnableMouse(true)
-		:Hide()
-	.__END
-
-	self.InvisCV = CHAIN(CreateFrame("Frame",nil, ZGV.CreatureViewer.Frame))
-		:SetAllPoints()
-		:SetParent(UIParent)
-		:SetFrameStrata("HIGH")
 		:SetFrameLevel(10)
 		:EnableMouse(true)
 		:Hide()
@@ -520,7 +503,6 @@ function Tutorial:SavePositions()
 	loc.cleanup = ZygorGuidesViewerFrame_Border_Guides_QuestCleanupButton
 	loc.mode = ZygorGuidesViewerFrame_Border_Guides_MiniButton
 	loc.progress = ZygorGuidesViewer_ProgressBar
-	loc.model = ZygorGuidesViewer_CreatureViewer
 	loc.arrow = ZGV.Pointer.ArrowFrame
 end
 

@@ -72,7 +72,7 @@ local itemarmsubclasses = {
 	}
 
 local class_ids = {"WEAPON","ARMOR"}
-local weap_ids = {"AXE","TH_AXE","BOW","GUN","MACE","TH_MACE","TH_POLE","SWORD","TH_SWORD","TH_STAFF","FIST","MISCWEAP","DAGGER","THROWN","CROSSBOW","WAND","FISHPOLE"}
+local weap_ids = {"AXE","TH_AXE","BOW","GUN","MACE","TH_MACE","TH_POLE","SWORD","TH_SWORD","TH_STAFF","FIST","MISCWEAP","DAGGER","THROWN","CROSSBOW","WAND","FISHPOLE","WARGLAIVE"}
 local arm_ids = {"MISCARM","CLOTH","LEATHER","MAIL","PLATE","COSMETIC","SHIELD",} --Relics are out.
 
 ItemScore.ItemClassData={itemclasses,itemweapsubclasses,itemarmsubclasses,class_ids,weap_ids,arm_ids}
@@ -152,21 +152,25 @@ function ItemScore:SetFilters(playerclass,playerspec,playerlevel)
 end
 
 function ItemScore:SetDualWield()
-	if (IsSpellKnown(674) and self.playerclass~="HUNTER")  --Hunter, DK but we do not want hunters to dual wield.
-	or IsSpellKnown(86629) -- Shaman
-	or IsSpellKnown(124146) -- Monk
-	or IsSpellKnown(23588) then -- Warrior onehand dual wield in fury.
+	self.playerdualwield=nil
+	self.playerdual2h=nil
+
+	if not self.playerspec or self.playerspec==0 then return end
+
+	if self.playerclass=="DEATHKNIGHT" and self.playerspec==2 -- Frost DKs
+	or self.playerclass=="ROGUE" -- any DHs
+	or self.playerclass=="DEMONHUNTER" -- any DHs
+
+	or self.playerclass=="WARRIOR" and self.playerspec==2 and self.playerlevel>=10-- Fury Warriors
+	or self.playerclass=="MONK" and self.playerspec==3 and self.playerlevel>=10 -- Windwalker Monks
+	or self.playerclass=="SHAMAN" and self.playerspec==2 and self.playerlevel>=10 -- Enhancement Shaman
+	or self.playerclass=="DRUID" and (self.playerspec==2 or self.playerspec==3)  and self.playerlevel>=10 -- Feral/Guardian Druid
+	then
 		self.playerdualwield=true
-	else
-		self.playerdualwield=nil
 	end
 
 	-- Dual Wielding 2hs for warriors.
-	if IsSpellKnown(46917) then
-		self.playerdual2h=true
-	else
-		self.playerdual2h=nil
-	end
+	if IsSpellKnown(46917) then self.playerdual2h=true end
 end
 
 function ItemScore:IsGoodEquipSlot(equipslot)
@@ -589,14 +593,19 @@ function ItemScore:GetHeirloomMaxLevelBonus(itemlink)
 	
 	if ItemScore.HeirloomNoExpBonusSlot[itemEquipLoc] then hasBonusExp = false end -- it is a hloom that does not give exp bonus
 
-	local itemid,itembonuscount,itembonus = itemlink:match("item:(%d+):%d+:%d+:%d+:%d+:%d+:%d+:%d+:%d+:%d+:%d+:%d+:*(%d*):*(%d*)")
+	local itemid = itemlink:match("item:(%d+)")
 
 	if ItemScore.FixedLevelHeirloom[tonumber(itemid)] then 
 		return ItemScore.FixedLevelHeirloom[tonumber(itemid)],false
 	end
-	
-	return ItemScore.HeirloomBonuses[tonumber(itembonus)],hasBonusExp
 
+	local max_bonus = 60 -- default for all looms
+
+	for bonus,_ in pairs(ZGV.ItemLink.GetItemBonuses(itemlink)) do
+		max_bonus = math.max(max_bonus,ItemScore.HeirloomBonuses[tonumber(bonus)])
+	end
+	
+	return max_bonus,hasBonusExp
 end
 
 --[[
@@ -626,26 +635,27 @@ function ItemScore:UsableHeirloomItem(item, verbose)
 	end
 
 	if item.info.quality==7 then
+		local value,comment = 0,"Not protected"
 		local maxhlevel,hasbonus = ItemScore:GetHeirloomMaxLevelBonus(item.info.itemlink)
 		if maxhlevel then
-			local value
-			if (ZGV.db.profile.autogear_protectheirlooms or hasbonus) and self.playerlevel < maxhlevel then
-				value = 15000
-			else
-				-- Item is a heirloom but we are too high level to use it's bonus.
-				-- Or it has no exp bonus in first place and we are not protecting it
-				value = 0
+			if self.playerlevel < maxhlevel then
+			-- it is within valid level range
+				if (hasbonus and ZGV.db.profile.autogear_protectheirlooms) -- protect exp looms
+				   or (not hasbonus and ZGV.db.profile.autogear_protectheirlooms_all) -- protect non-exp looms   
+				then
+					value = 15000
+					comment="Protected"
+				end
 			end
-
 			if verbose then  do_verbose("  + HEIRLOOM! +%.1f|r",value)  end
-			return value
+			return value,ItemScore.SC_OK,comment
 		else
 			if verbose then  do_verbose(" Heirloom:%d not in our system.",itemid )  end
 		end
 	end
 
 	-- Okay so item isn't a heirloom, no big deal
-	return 0
+	return 0,ItemScore.SC_BADITEM,"Not heirloom"
 end
 
 --[[
@@ -704,7 +714,7 @@ do
 			local numlink=tonumber(itemlink)
 			if numlink then -- it's a plain itemid
 				itemid=numlink
-				itemlink="item:"..numlink..":0:0:0:0:0:0:0:0:0:0:0"
+				itemlink="item:"..numlink
 			else  -- check for link contents. Optimized, just one :match!
 				itemlink,itemid = tostring(itemlink):match("(item:(%d+)[%-%d:]+)")
 				itemid=tonumber(itemid)
@@ -1105,15 +1115,16 @@ end
 
 function ItemScore:ImportPawn(datastring)
 	if not datastring then return end
-	local validstring = true
+	local unknowns = false
 
-	if not datastring:find("Pawn: v1:") then validstring=false end
+	if not datastring:find("Pawn: v1:") then 
+		ZGV:Print("Import: Incorrect pawn string") 
+		return
+	end
 
 	datastring = datastring:gsub(" [)]",""):gsub("(.*): ","")
 
-
 	local stattable = {}
-
 	for statstring in string.gmatch(datastring, "([^,]+)") do
 		local statname,statval = statstring:match("(%w+)=([-0-9%.]+)")
 		if statname and statval then
@@ -1123,15 +1134,15 @@ function ItemScore:ImportPawn(datastring)
 
 	for statname,statval in pairs(stattable) do
 		if not ItemScore.Gear_PawnToZygor[statname] and not ItemScore.KeywordsPawnToRules[statname] then
-			validstring = false
-			break
+			unknowns = true
+			stattable[statname]=nil
 		end
 	end
 
-	if not validstring then 
-		ZGV:Print("Incorrect import string") 
-		return
+	if unknowns then
+		ZGV:Print("Import: Some of Pawn stat names are not supported by Zygor, and have been skipped.") 
 	end
+
 
 	local name,tag,id = GetClassInfo(ZGV.db.profile.gear_selected_class)
 	local groupname = 'gear_'..tag..'_'..ZGV.db.profile.gear_selected_spec

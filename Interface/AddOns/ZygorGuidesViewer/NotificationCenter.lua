@@ -127,7 +127,7 @@ function Notification.AddButton(id, title, text, texture, texcoords, onClick, to
 	assert(type(text)=="string", "Text must be a string")
 	assert(type(onClick)=="function", "OnClick must be a function")
 	assert(type(data)=="table", "Data must be a table if it is there.")
-	if data.guide then
+	if data.guide and not data.dontdelete then
 		OnOpen = SetButtonForRemove(id,data.guide)
 	end
 
@@ -633,7 +633,7 @@ function Notification:SaveNotifications()
 				notif.icon:GetTexture(),
 				notif.texcoords,
 			}
-		elseif notif.butType == "sis" or notif.butType == "mount" or notif.butType == "monk" then
+		elseif notif.butType == "sis" or notif.butType == "mount" or notif.butType == "monk" or notif.butType == "legion" then
 			local guideTitle = notif.data.guide.title 
 			saved[guideTitle] = {
 				notif.butType,
@@ -642,6 +642,7 @@ function Notification:SaveNotifications()
 				notif.addtime,
 				notif.icon:GetTexture(),
 				notif.texcoords,
+				notif.data,
 			}
 		end
 	end
@@ -670,6 +671,7 @@ function Notification:AddedSavedNotifications()
 		addtime = info[4]
 		texture = info[5] or ""
 		texCoord = info[6]
+		data = info[7]
 
 		if info[1] == "pet" then
 			ZGV.CreatureDetector:AddGuideToDetectedGuides(guide)
@@ -678,8 +680,10 @@ function Notification:AddedSavedNotifications()
 			OnEnter = function(self) local position,x,y = Notification:GetTooltipPosition() ZGV.CreatureDetector:ShowTooltip(ZGV.CreatureDetector.DetectedGuides[self.id],self,position,x,y) end
 		elseif info[1] == "sis" or info[1] == "mount" or info[1] == "monk" then
 			guideData = guide
-
 			OnClick = function(self) ZGV:SetGuide(guide) end
+		elseif info[1] == "legion" then
+			guideData = guide
+			OnClick = function(self) ZGV:PLAYER_LEVEL_UP(nil,data.level) end
 		end
 
 		ZGV.NotificationCenter.AddButton(
@@ -696,7 +700,7 @@ function Notification:AddedSavedNotifications()
 			quiet,
 			OnOpen,
 			myType,
-			{time=addtime,guide=guideData})
+			{time=addtime,guide=guideData,level=(data and data.level or nil),dontdelete=(data and data.dontdelete or nil)})
 	end
 end
 

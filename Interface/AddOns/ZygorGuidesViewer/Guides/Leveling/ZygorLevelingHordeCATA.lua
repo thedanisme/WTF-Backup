@@ -24,14 +24,6 @@ step
 talk Magistrix Erona##15278
 turnin Reclaiming Sunstrider Isle##8325 |goto 61.0,45.1
 accept Unfortunate Measures##8326 |goto 61.0,45.1
-accept Hunter Training##9393 |only BloodElf Hunter |goto 61.0,45.1
-accept Warrior Training##8329 |only BloodElf Warrior |goto 61.0,45.1
-accept Paladin Training##9676 |only BloodElf Paladin |goto 61.0,45.1
-accept Warlock Training##8563 |only BloodElf Warlock |goto 61.0,45.1
-accept Mage Training##8328 |only BloodElf Mage |goto 61.0,45.1
-accept Priest Training##8564 |only BloodElf Priest |goto 61.0,45.1
-accept Rogue Training##9392 |only BloodElf Rogue |goto 61.0,45.1
-accept Monk Training##31170 |only Bloodelf Monk |goto 61.0,45.1
 step
 kill Springpaw Lynx##15372+, Springpaw Cub##15366+
 collect 8 Lynx Collar##20797 |q 8326/1 |goto 54.6,51.7
@@ -39,86 +31,6 @@ step
 talk Magistrix Erona##15278
 turnin Unfortunate Measures##8326 |goto 61.0,45.1
 accept Report to Lanthan Perilon##8327 |goto 61.0,45.1
-step
-talk Pao##63332
-turnin Monk Training##31170 |only Bloodelf Monk |goto 63.4,42.6
-accept Tiger Palm##31171 |only Bloodelf Monk |goto 63.4,42.6
-step
-talk Pathstalker Kariel##15285
-turnin Rogue Training##9392 |only BloodElf Rogue |goto 63.9,42.1
-accept Evisceration##10071 |only BloodElf Rogue |goto 63.9,42.1
-step
-Use _Sinister Strike_ on Training Dummies to build combo points, then use _Eviscerate_
-Practice Eviscerate #3# Times |q 10071/2 |only BloodElf Rogue |goto 62.0,44.0
-step
-talk Pathstalker Kariel##15285
-turnin Evisceration##10071 |only BloodElf Rogue |goto 63.9,42.1
-step
-talk Matron Arena##15284
-turnin Priest Training##8564 |only BloodElf Priest |goto 65.3,43.2
-accept Learning the Word##10072 |only BloodElf Priest |goto 65.3,43.2
-step
-Use _Shadow Word: Pain_ on Training Dummies
-Practice Shadow Word: Pain #5# Times |q 10072/2 |only BloodElf Priest |goto 62.0,44.0
-step
-talk Matron Arena##15284
-turnin Learning the Word##10072 |only BloodElf Priest |goto 65.3,43.2
-step
-talk Julia Sunstriker##15279
-turnin Mage Training##8328 |only BloodElf Mage |goto 64.8,46.5
-accept Frost Nova##10068 |only BloodElf Mage |goto 64.8,46.5
-step
-talk Summoner Teli'Larien##15283
-turnin Warlock Training##8563 |only BloodElf Warlock |goto 63.9,46.5
-accept Corruption##10073 |only BloodElf Warlock |goto 63.9,46.5
-step
-Use _Corruption_ on Training Dummies
-Practice Corruption #5# Times |q 10073/2 |only BloodElf Warlock |goto 62.0,44.0
-step
-talk Summoner Teli'Larien##15283
-turnin Corruption##10073 |only BloodElf Warlock |goto 63.9,46.5
-step
-talk Jesthenis Sunstriker##15280
-turnin Paladin Training##9676 |only BloodElf Paladin |goto 65.5,43.8
-accept Ways of the Light##10069 |only BloodElf Paladin |goto 65.5,43.8
-step
-Cast _Seal of Command_ on yourself, then _strike the Training Dummy_
-Practice Your New Seal |q 10069/2 |only BloodElf Paladin |goto 62.0,44.0
-step
-talk Jesthenis Sunstriker##15280
-turnin Ways of the Light##10069 |only BloodElf Paladin |goto 65.5,43.8
-step
-talk Delios Silverblade##43010
-turnin Warrior Training##8329 |only BloodElf Warrior |goto 64.9,42.4
-accept Charge!##27091 |only BloodElf Warrior |goto 64.9,42.4
-step
-Use _Charge_ on a Training Dummy
-Practice Charge |q 27091/2 |only BloodElf Warrior |goto 62.0,44.0
-step
-talk Delios Silverblade##43010
-turnin Charge!##27091 |only BloodElf Warrior |goto 64.9,42.4
-step
-talk Ranger Sallina##15513
-turnin Hunter Training##9393 |only BloodElf Hunter |goto 64.2,42.1
-accept Steady Shot##10070 |only BloodElf Hunter |goto 64.2,42.1
-step
-Use _Steady Shot_ on Training Dummies
-Practice Steady Shot #5# Times |q 10070/2 |only BloodElf Hunter |goto 62.0,44.0
-step
-talk Ranger Sallina##15513
-turnin Steady Shot##10070 |only BloodElf Hunter |goto 64.2,42.1
-step
-Use _Frost Nova_ on Training Dummies
-Practice Frost Nova #2# Times |q 10068/2 |only BloodElf Mage |goto 62.0,44.0
-step
-Use _Tiger Palm_ on a Training Dummy
-Practice Tiger Palm |q 31171/2 |only Bloodelf Monk |goto 62.0,44.0
-step
-talk Pao##63332
-turnin Tiger Palm##31171 |only Bloodelf Monk |goto 63.4,42.6
-step
-talk Julia Sunstriker##15279
-turnin Frost Nova##10068 |only BloodElf Mage |goto 64.8,46.5
 step
 talk Well Watcher Solanian##15295
 accept Solanian's Belongings##37443 |goto 64.0,42.9
@@ -1612,107 +1524,11 @@ only Scourge
 step
 talk Shadow Priest Sarvis##1569
 turnin Scourge on our Perimeter##26801 |goto 46.7,58.8
-accept Trail-Worn Scroll##24962 |goto 46.7,58.8 |only Scourge Hunter
-accept Simple Scroll##3095 |goto 46.7,58.8 |only Scourge Warrior
-accept Tainted Scroll##3099 |goto 46.7,58.8 |only Scourge Warlock
-accept Glyphic Scroll##3098 |goto 46.7,58.8 |only Scourge Mage
-accept Hallowed Scroll##3097 |goto 46.7,58.8 |only Scourge Priest
-accept Encrypted Scroll##3096 |goto 46.7,58.8 |only Scourge Rogue
-accept Scribbled Scroll##31146 |goto 46.7,58.8 |only Scourge Monk
+accept Novice Elreth##28651 |goto 46.7,58.8
 step
 talk Novice Elreth##1661
+turnin Novice Elreth##28651 |goto 46.8,58.3
 accept The Truth of the Grave##24961 |goto 46.8,58.3
-step
-talk David Trias##2122
-turnin Encrypted Scroll##3096 |goto 53.6,56.6
-accept Stab!##24967 |goto 53.6,56.6
-only Scourge Rogue
-step
-Use _Sinister Strike_ on the Target Dummies to build up combo points, then use _Eviscerate_
-Practice Eviscerate #3# times |q 24967/2 |goto 49.3,61.9
-only Scourge Rogue
-step
-talk David Trias##2122
-turnin Stab!##24967 |goto 53.6,56.6
-only Scourge Rogue
-step
-talk Ting, Strong of Stomach##63272
-turnin Scribbled Scroll##31146 |goto 53.3,56.8
-accept Tiger Palm##31147 |goto 53.3,56.8
-only Scourge Monk
-step
-Use Tiger Palm on the Training Dummy
-Practice Tiger Palm |q 31147/2 |goto 49.3,61.9
-only Scourge Monk
-step
-talk Ting, Strong of Stomach##63272
-turnin Tiger Palm##31147 |goto 53.3,56.8
-only Scourge Monk
-step
-talk Dark Cleric Duesten##2123
-turnin Hallowed Scroll##3097 |goto 47.8,58.2
-accept Of Light and Shadows##24966 |goto 47.8,58.2
-only Scourge Priest
-step
-Cast _Shadow Word: Pain_ on the Training Dummies
-Practice Shadow Word: Pain #5# times |q 24966/2 |goto 49.3,61.9
-only Scourge Priest
-step
-talk Dark Cleric Duesten##2123
-turnin Of Light and Shadows##24966 |goto 47.8,58.2
-only Scourge Priest
-step
-talk Isabella##2124
-turnin Glyphic Scroll##3098 |goto 47.0,58.2
-accept Magic Training##24965 |goto 47.0,58.2
-only Scourge Mage
-step
-Cast _Frost Nova_ ability on the Training Dummies
-Practice Frost Nova #2# times |q 24965/2 |goto 49.3,61.9
-only Scourge Mage
-step
-talk Isabella##2124
-turnin Magic Training##24965 |goto 47.0,58.2
-only Scourge Mage
-step
-talk Maximillion##2126
-turnin Tainted Scroll##3099 |goto 46.9,59.4
-accept Dark Deeds##24968 |goto 46.9,59.4
-only Scourge Warlock
-step
-Cast _Corruption_ ability on the Training Dummies
-Practice Corruption #5# times |q 24968/2 |goto 49.3,61.9
-only Scourge Warlock
-step
-talk Maximillion##2126
-turnin Dark Deeds##24968 |goto 46.9,59.4
-only Scourge Warlock
-step
-talk Dannal Stern##2119
-turnin Simple Scroll##3095 |goto 54.2,56.4
-accept Charging into Battle##24969 |goto 54.2,56.4
-only Scourge Warrior
-step
-Use your _Charge_ ability on a Training Dummy
-Practice Charge |q 24969/2 |goto 49.3,61.9
-only Scourge Warrior
-step
-talk Dannal Stern##2119
-turnin Charging into Battle##24969 |goto 54.2,56.4
-only Scourge Warrior
-step
-talk Xavier the Huntsman##38911
-turnin Trail-Worn Scroll##24962 |goto 49.2,56.3
-accept The Thrill of the Hunt##24964 |goto 49.2,56.3
-only Scourge Hunter
-step
-Use your _Steady Shot_ ability on the Training Dummies
-Practice Steady Shot #5# times |q 24964/2 |goto 49.3,61.9
-only Scourge Hunter
-step
-talk Xavier the Huntsman##38911
-turnin The Thrill of the Hunt##24964 |goto 49.2,56.3
-only Scourge Hunter
 step
 talk Lilian Voss##38910
 Tell her _"You're not hideous."_
@@ -2488,7 +2304,8 @@ accept Relios the Relic Keeper##27478 |goto 47.1,43.2
 accept Practical Vengeance##27483 |goto 47.1,43.2
 step
 clicknpc Portal to Dalaran Crater##45731
-Go to the Dalaran Crater |goto Hillsbrad Foothills |q 27483 |goto 47.3,43.4 < 8
+Go through the Portal to Dalaran Crater |goto 47.3,43.4 < 15
+Go to the Dalaran Crater |goto Hillsbrad Foothills |q 27483
 step
 kill Arcane Remnant##45728+
 collect Arcane Remnant##61310 |n
@@ -8002,13 +7819,6 @@ step
 talk Gornek##3143
 turnin Cutting Teeth##25126 |goto 44.9,66.41
 accept Invaders in Our Home##25172 |goto 44.9,66.41
-accept Calligraphed Parchment##31156 |goto 44.9,66.41 |only Orc Monk
-accept Etched Parchment##3087 |goto 44.9,66.41 |only Orc Hunter
-accept Simple Parchment##2383 |goto 44.9,66.41 |only Orc Warrior
-accept Encrypted Parchment##3088 |goto 44.9,66.41 |only Orc Rogue
-accept Rune-Inscribed Parchment##3089 |goto 44.9,66.41 |only Orc Shaman
-accept Glyphic Parchment##25138 |goto 44.9,66.41 |only Orc Mage
-accept Tainted Parchment##3090 |goto 44.9,66.41 |only Orc Warlock
 step
 kill 7 Northwatch Scout##39317 |q 25172/1 |goto 45.8,85.41
 step
@@ -8040,97 +7850,6 @@ step
 talk Gornek##3143
 turnin Sting of the Scorpid##25127 |goto 44.9,66.51
 turnin Back to the Den##25130 |goto 44.9,66.51
-step
-talk Nartok##3156
-turnin Tainted Parchment##3090 |goto 41.6,65.71
-accept Corruption##25145 |goto 41.6,65.71
-only Orc Warlock
-step
-Use your _Corruption_ ability on the Training Dummy
-Practice Corruption #5# Times |q 25145/2 |goto 44.0,70.11
-only Orc Warlock
-step
-talk Nartok##3156
-turnin Corruption##25145 |goto 41.6,65.71
-only Orc Warlock
-step
-talk Acrypha##39206
-turnin Glyphic Parchment##25138 |goto 42.1,69.5
-accept Frost Nova##25149 |goto 42.1,69.5
-only Orc Mage
-step
-Use your _Frost Nova_ ability on the Training Dummy
-Practice Frost Nova #2# Times |q 25149/2 |goto 44.0,70.11
-only Orc Mage
-step
-talk Acrypha##39206
-turnin Frost Nova##25149 |goto 42.1,69.5
-only Orc Mage
-step
-talk Shikrik##3157
-turnin Rune-Inscribed Parchment##3089 |goto 41.6,69.3
-accept Primal Strike##25143 |goto 41.6,69.3
-only Orc Shaman
-step
-Use your _Primal Strike_ ability on the Training Dummy
-Practice Primal Strike #3# Times |q 25143/2 |goto 45.2,63.4
-only Orc Shaman
-step
-talk Shikrik##3157
-turnin Primal Strike##25143 |goto 41.6,69.3
-only Orc Shaman
-step
-talk Rwag##3155
-turnin Encrypted Parchment##3088 |goto 41.5,68.5
-accept Eviscerate##25141 |goto 41.5,68.5
-only Orc Rogue
-step
-Use _Sinister Strike_ on Training Dummies to build up combo points and then use _Eviscerate_
-Practice Eviscerate #3# Times |q 25141/2 |goto 45.2,63.4
-only Orc Rogue
-step
-talk Rwag##3155
-turnin Eviscerate##25141 |goto 41.5,68.5
-only Orc Rogue
-step
-talk Frang##3153
-turnin Simple Parchment##2383 |goto 43.6,71.2
-accept Charge##25147 |goto 43.6,71.2
-only Orc Warrior
-step
-Use your _Charge_ ability on a Training Dummy
-Practice Charge |q 25147/2 |goto 44.8,69.7
-only Orc Warrior
-step
-talk Frang##3153
-turnin Charge##25147 |goto 43.6,71.2
-only Orc Warrior
-step
-talk Karranisha##39214
-turnin Etched Parchment##3087 |goto 43.4,70.7
-accept Steady Shot##25139 |goto 43.4,70.7
-only Orc Hunter
-step
-Use your _Steady Shot_ ability on a Training Dummy
-Practice Steady Shot #5# Times |q 25139/2 |goto 44.8,70.5
-only Orc Hunter
-step
-talk Karranisha##39214
-turnin Steady Shot##25139 |goto 43.4,70.7
-only Orc Hunter
-step
-talk Gato##63296
-turnin Calligraphed Parchment##31156 |goto 42.1,68.7
-accept Tiger Palm##31157 |goto 42.1,68.7
-only Orc Monk
-step
-Use your _Tiger Palm_ ability on a Training Dummy
-Practice Tiger Palm #2# Times |q 31157/2 |goto 44.8,70.5
-only Orc Monk
-step
-talk Gato##63296
-turnin Tiger Palm##31157 |goto 42.1,68.7
-only Orc monk
 step
 talk Canaga Earthcaller##5887
 accept Hana'zua##25128 |goto 41.8,70.0
@@ -8444,128 +8163,38 @@ only Troll Monk
 step
 talk Nekali##38242
 turnin Proving Pit##24762 |goto 50.1,52.81
-accept The Arts of a Shaman##24760 |goto 50.1,52.81
 only Troll Shaman
 step
 talk Soratha##38246
 turnin Proving Pit##24754 |goto 59.7,52.11
-accept The Arts of a Mage##24752 |goto 59.7,52.11
 only Troll Mage
 step
 talk Voldreka##42618
 turnin Proving Pit##26276 |goto 50.1,50.01
-accept The Arts of a Warlock##26274 |goto 50.1,50.01
 only Troll Warlock
 step
 talk Zen'tabra##38243
 turnin Proving Pit##24768 |goto 58.1,54.11
-accept The Arts of a Druid##24766 |goto 58.1,54.11
 only Troll Druid
 step
 talk Tunari##38245
-turnin Proving Pit##24786 |goto 58.1,49.11
-accept Learnin' tha Word##24784 |goto 58.1,49.11
+turnin Proving Pit##24786 |goto 46.8,58.3
 only Troll Priest
 step
 talk Legati##38244
 turnin Proving Pit##24774 |goto 52.9,49.91
-accept The Arts of a Rogue##24772 |goto 52.9,49.91
 only Troll Rogue
 step
 talk Ortezza##38247
 turnin Proving Pit##24780 |goto 56.4,50.11
-accept The Arts of a Hunter##24778 |goto 56.4,50.11
 only Troll Hunter
 step
 talk Nortet##38037
 turnin Proving Pit##24642 |goto 52.6,53.61
-accept The Arts of a Warrior##24640 |goto 52.6,53.61
 only Troll Warrior
 step
 talk Zabrax##63310
 turnin Proving Pit##31161 |goto 52.0,52.0
-accept The Arts of a Monk##31162 |goto 52.0,52.0
-only Troll Monk
-step
-Use your Primal Strike ability on the Tiki Target
-Practice Primal Strike 3 times |q 24760/2 |goto 49.9,54.11
-only Troll Shaman
-step
-talk Nekali##38242
-turnin The Arts of a Shaman##24760 |goto 50.1,52.81
-accept More Than Expected##24763 |goto 50.1,52.81
-only Troll Shaman
-step
-Use Frost Nova on the Training Dummies
-Practice casting Frost Nova 2 times |q 24752/2 |goto 60.9,52.61
-only Troll Mage
-step
-Use Tiger Palm on a Tiki Target
-Practice Tiger Palm |q 31162/2 |goto 52.7,51.2
-only Troll Monk
-step
-talk Soratha##38246
-turnin The Arts of a Mage##24752 |goto 59.7,52.11
-accept More Than Expected##24755 |goto 59.7,52.11
-only Troll Mage
-step
-Use your Corruption on the Tiki Targets
-Practice Corruption 5 times |q 26274/2 |goto 50.4,48.81
-only Troll Warlock
-step
-talk Voldreka##42618
-turnin The Arts of a Warlock##26274 |goto 50.1,50.01
-accept More Than Expected##26277 |goto 50.1,50.01
-only Troll Warlock
-step
-Use Moonfire on the Tiki Targets
-Practice Moonfire |q 24766/2 |goto 58.7,53.9
-only Troll Druid
-step
-talk Zen'tabra##38243
-turnin The Arts of a Druid##24766 |goto 58.1,54.11
-accept More Than Expected##24769 |goto 58.1,54.11
-only Troll Druid
-step
-Use your Shadow Word: Pain ability on the Tiki Targets
-Practice Shadow Word: Pain 5 times |q 24784/2 |goto 58.5,49.71
-only Troll Priest
-step
-talk Tunari##38245
-turnin Learnin' tha Word##24784 |goto 58.1,49.11
-accept More Than Expected##24787 |goto 58.1,49.11
-only Troll Priest
-step
-Use Sinister Strike to build up combo points and then use your Eviscerate ability on the Tiki Targets
-Practice Eviscerate 3 times |q 24772/2 |goto 52.9,49.21
-only Troll Rogue
-step
-talk Legati##38244
-turnin The Arts of a Rogue##24772 |goto 52.9,49.91
-accept More Than Expected##24775 |goto 52.9,49.91
-only Troll Rogue
-step
-Use your Steady Shot ability on the Tiki Targets
-Practice Steady Shot 5 times |q 24778/1 |goto 55.8,50.41
-only Troll Hunter
-step
-talk Ortezza##38247
-turnin The Arts of a Hunter##24778 |goto 56.4,50.11
-accept More Than Expected##24781 |goto 56.4,50.11
-only Troll Hunter
-step
-Use your Charge ability on a Tiki Target
-Practice Charge |q 24640/2 |goto 52.5,53.51
-only Troll Warrior
-step
-talk Nortet##38037
-turnin The Arts of a Warrior##24640 |goto 52.6,53.61
-accept More Than Expected##24643 |goto 52.6,53.61
-only Troll Warrior
-step
-talk Zabrax##63310
-turnin The Arts of a Monk##31162 |goto 52.0,52.0
-accept More Than Expected##31163 |goto 52.0,52.0
 only Troll Monk
 step
 next "normalstart" |only Hunter,Warrior,Rogue,Priest,Druid,Warlock,Mage,Shaman,Monk
@@ -9052,15 +8681,6 @@ turnin Rite of Courage##14456 |goto 30.9,50.61
 turnin Stop the Thorncallers##14455 |goto 30.9,50.61
 accept The Battleboars##14459 |goto 30.9,50.61
 accept Feed of Evil##14461 |goto 30.9,50.61
-step
-talk Rohaku Stonehoof##44927
-accept Etched Note##3092 |goto 30.8,49.41 |only Tauren Hunter
-accept Simple Note##3091 |goto 30.8,49.41 |only Tauren Warrior
-accept Verdant Note##3094 |goto 30.8,49.41 |only Tauren Druid
-accept Rune-Inscribed Note##3093 |goto 30.8,49.41 |only Tauren Shaman
-accept Hallowed Note##27014 |goto 30.8,49.41 |only Tauren Priest
-accept Consecrated Note##27015 |goto 30.8,49.41 |only Tauren Paladin
-accept Calligraphed Note##31165 |goto 30.8,49.41 |only Tauren Monk
 stickystart "armorboar"
 step
 use Adana's Torch##49539
@@ -9098,104 +8718,6 @@ step
 talk Chief Hawkwind##2981
 turnin Last Rites, First Rites##24861 |goto 27.7,28.21
 accept Rites of the Earthmother##23733 |goto 27.7,28.21
-step
-talk Shoyu##63327
-turnin Calligraphed Note##31165 |goto 28.0,28.3
-accept Tiger Palm##31166 |goto 28.0,28.3
-only Tauren Monk
-step
-Use _Tiger Palm_ on the Training Dummy
-Practice Tiger Palm |q 31166/2 |goto 28.6,28.2
-modelnpc Training Dummy##48304
-only Tauren Monk
-step
-talk Shoyu##63327
-turnin Tiger Palm##31166 |goto 28.0,28.3
-only Tauren Monk
-step
-talk Sunwalker Helaku##37737
-turnin Consecrated Note##27015 |goto 27.1,27.91
-accept The Way of the Sunwalkers##27023 |goto 27.1,27.91
-only Tauren Paladin
-step
-Use _Seal of Command_, then strike the Training Dummy
-Practice Seal of Command |q 27023/2 |goto 29.2,27.81
-modelnpc Training Dummy##48304
-only Tauren Paladin
-step
-talk Sunwalker Helaku##37737
-turnin The Way of the Sunwalkers##27023 |goto 27.1,27.91
-only Tauren Paladin
-step
-talk Seer Ravenfeather##37724
-turnin Hallowed Note##27014 |goto 27.2,27.41
-accept Learning the Word##27066 |goto 27.2,27.41
-only Tauren Priest
-step
-Use _Shadow Word: Pain_ on a Training Dummy
-Practice Shadow Word: Pain #5# Times |q 27066/2 |goto 29.3,28.01
-modelnpc Training Dummy##48304
-only Tauren Priest
-step
-talk Seer Ravenfeather##37724
-turnin Learning the Word##27066 |goto 27.2,27.41
-only Tauren Priest
-step
-talk Meela Dawnstrider##3062
-turnin Rune-Inscribed Note##3093 |goto 27.6,27.21
-accept Primal Strike##27027 |goto 27.6,27.21
-only Tauren Shaman
-step
-Use _Primal Strike_ on a Training Dummy
-Practice Primal Strike #3# Times |q 27027/2 |goto 29.2,27.81
-modelnpc Training Dummy##48304
-only Tauren Shaman
-step
-talk Meela Dawnstrider##3062
-turnin Primal Strike##27027 |goto 27.6,27.21
-only Tauren Shaman
-step
-talk Gart Mistrunner##3060
-turnin Verdant Note##3094 |goto 27.9,27.31
-accept Moonfire##27067 |goto 27.9,27.31
-only Tauren Druid
-step
-Use _Moonfire_ on a Training Dummy
-Practice Moonfire |q 27067/2 |goto 29.3,28.01
-modelnpc Training Dummy##48304
-only Tauren Druid
-step
-talk Gart Mistrunner##3060
-turnin Moonfire##27067 |goto 27.9,27.31
-only Tauren Druid
-step
-talk Harutt Thunderhorn##3059
-turnin Simple Note##3091 |goto 27.2,28.51
-accept The First Lesson##27020 |goto 27.2,28.51
-only Tauren Warrior
-step
-Use _Charge_ on a Training Dummy
-Practice Charge |q 27020/2 |goto 29.3,28.01
-modelnpc Training Dummy##48304
-only Tauren Warrior
-step
-talk Harutt Thunderhorn##3059
-turnin The First Lesson##27020 |goto 27.2,28.51
-only Tauren Warrior
-step
-talk Lanka Farshot##3061
-turnin Etched Note##3092 |goto 28.1,27.81
-accept The Hunter's Path##27021 |goto 28.1,27.81
-only Tauren Hunter
-step
-Use _Steady Shot_ on a Training Dummy
-Practice Steady Shot #5# Times |q 27021/2 |goto 29.3,28.01
-modelnpc Training Dummy##48304
-only Tauren Hunter
-step
-talk Lanka Farshot##3061
-turnin The Hunter's Path##27021 |goto 28.1,27.81
-only Tauren Hunter
 step
 _Follow_ the path up |goto 19.2,33.61 < 10 |only if walking
 talk Dyami Windsoar##36803
@@ -17025,7 +16547,7 @@ accept Peculiar Delicacies##24691 |goto 54.8,63.8
 stickystart "buglegs"
 step
 _Follow_ the path down |goto 50.6,78.4 < 10 |only if walking
-_Go right_ here|goto Un'Goro Crater/14 79.0,30.8 < 10 |only if walking
+_Go right_ here |goto Un'Goro Crater/14 79.0,30.8 < 10 |only if walking
 _Head left_ into the main room |goto 55.1,35.1 < 10 |only if walking
 kill Gorishi Fledgling Colossus##38305 |q 24692/1 |goto 46.7,86.9 |indoors The Slithering Scar
 |tip Don't worry that it's an elite mob, it's easy to kill solo at this level. Fight like you normally do, but pay attention for when the Fledgling Colossus starts casting Poison Explosion. When you see it start to cast Poison Explosion, hide behind something for cover.
@@ -17035,7 +16557,7 @@ collect 96 Silithid Leg##50371 |q 24691/1 |goto 50.5,78.2
 More mobs can be found at |goto 52.0,81.5
 step
 click Research Equipment##36
-accept An Abandoned Research Camp##24866 |goto 38.5,66.1
+accept An Abandoned Research Camp##24866 |goto Un'Goro Crater/0 38.5,66.1
 step
 click Red Power Crystal##2973+
 |tip They are on the ground all around this area. You will probably need to search for them.
@@ -17479,7 +17001,7 @@ turnin Apothecary Zelana##10449 |goto 66.2,42
 accept Spinebreaker Post##10242 |goto 66.2,42
 step
 talk Amilya Airheart##19558
-fpath Spinebreaker Post |goto 61.7,81.2
+fpath Spinebreaker Ridge |goto 61.7,81.2
 step
 talk Ogath the Mad##19683
 accept The Warp Rifts##10278 |goto 61.9,81.5
@@ -33175,99 +32697,6 @@ step
 talk Chip Endale##35054
 turnin The New You##14110 |goto 56.3,76.8
 only if _G['UnitSex']("player")==3
-step
-talk Sister Goldskimmer##34692
-accept Learning the Word##14009 |goto 57.9,77.2 |noobsolete
-only Goblin Priest
-step
-Use your Shadow Word: Pain ability on the Training Dummies
-Practice Shadow Word: Pain 3 times |q 14009/2 |goto 61.0,77.7
-|modelnpc Training Dummy##48304
-only Goblin Priest
-step
-talk Sister Goldskimmer##34692
-turnin Learning the Word##14009 |goto 57.9,77.2
-only Goblin Priest
-step
-talk Slinky Sharpshiv##34693
-|tip She walks around this area, so you may need to search for her.
-accept Eviscerate##14010 |goto 59.4,77.6 |noobsolete
-only Goblin Rogue
-step
-Use Sinister Strike on one of the Training Dummies to build up combo points, then use Eviscerate on it
-Practice Eviscerate 3 times |q 14010/2 |goto 61.0,77.7
-|modelnpc Training Dummy##48304
-only Goblin Rogue
-step
-talk Slinky Sharpshiv##34693
-|tip She walks around this area, so you may need to search for her.
-turnin Eviscerate##14010 |goto 59.4,77.6
-only Goblin Rogue
-step
-talk Evol Fingers##34696
-accept Corruption##14012 |goto 57.9,74.4 |noobsolete
-only Goblin Warlock
-step
-Use your Corruption ability on the Training Dummy
-Practice Corruption 3 times |q 14012/2 |goto 61.0,77.7
-|modelnpc Training Dummy##48304
-only Goblin Warlock
-step
-talk Evol Fingers##34696
-turnin Corruption##14012 |goto 57.9,74.4
-only Goblin Warlock
-step
-talk Fizz Lighter##34689
-accept Frost Nova##14008 |goto 59.4,73.8 |noobsolete
-only Goblin Mage
-step
-Use your Frost Nova ability on the Training Dummy
-Practice Frost Nova 2 times |q 14008/2 |goto 60.7,77.7
-|modelnpc Training Dummy##48304
-only Goblin Mage
-step
-talk Fizz Lighter##34689
-turnin Frost Nova##14008 |goto 59.4,73.8
-only Goblin Mage
-step
-talk Warrior-Matic NX-01##34697
-accept Charge##14013 |goto 60.3,77.8 |noobsolete
-only Goblin Warrior
-step
-Use your Charge ability on the Training Dummy
-Practice Charge 1 time |q 14013/2 |goto 60.7,77.7
-|modelnpc Training Dummy##48304
-only Goblin Warrior
-step
-talk Warrior-Matic NX-01##34697
-turnin Charge##14013 |goto 60.3,77.8
-only Goblin Warrior
-step
-talk Maxx Avalanche##34695
-accept Primal Strike##14011 |goto 59.7,76.0 |noobsolete
-only Goblin Shaman
-step
-Use Primal Strike on the Training Dummy
-Practice Primal Strike 2 times |q 14011/2 |goto 60.8,77.9
-|modelnpc Training Dummy##48304
-only Goblin Shaman
-step
-talk Maxx Avalanche##34695
-turnin Primal Strike##14011 |goto 59.8,76.1
-only Goblin Shaman
-step
-talk Bamm Megabomb##38122
-accept Steady Shot##14007 |goto 60.5,77.6 |noobsolete
-only Goblin Hunter
-step
-Use your Steady Shot ability on the Training Dummy
-Practice Steady Shot 3 times |q 14007/2 |goto 60.8,77.9
-kill Training Dummy##48304
-only Goblin Hunter
-step
-talk Bamm Megabomb##38122
-turnin Steady Shot##14007 |goto 60.5,77.6
-only Goblin Hunter
 step
 talk Candy Cane##39426
 accept Life of the Party##14113 |goto 56.3,77.1

@@ -19,7 +19,6 @@ accept A New Enemy##30998 |goto Ragefire Chasm/1 69.4,11.0
 accept The Dark Shaman##30996 |goto Ragefire Chasm/1 69.4,11.0
 step
 talk SI:7 Field Commander Dirken##61822
-accept Animal Control##30997 |goto 68.3,12.8
 accept No Man Left Behind##30995 |goto 68.3,12.8
 step
 map Ragefire Chasm/1
@@ -33,8 +32,7 @@ kill Mature Flame Hound##61658 |n
 Rescue the first SI:7 Ranger |q No Man Left Behind##30995/1 |count 1 |goto 68.0,60.4
 only if not completedq(30995)
 step
-kill Adarogg##61408 |n |only if default
-kill Adarogg##61408 |q Animal Control##30997/1 |only if havequest(30997)
+kill Adarogg##61408 |n
 Avoid standing in the area targeted by Adarogg's _Inferno Charge_. It will deal physical damage to all nearby players
 _Healer:_
 |tip Adarogg will periodically use Flame Breath on a random player dealing fire damage to them. This will need to be healed
@@ -79,8 +77,7 @@ path	51.1,37.6	50.0,47.6	40.2,46.4
 path	41.2,57.0
 Follow the path |goto 41.2,57.0 |c |noway
 step
-kill Slagmaw##61463 |n |only if default
-kill Slagmaw##61463 |q Animal Control##30997/2 |only if havequest(30997)
+kill Slagmaw##61463 |n
 |tip Slagmaw will randomly Lava Spit at a player's location. Avoid standing within 3 yards of other players
 |tip Slagmaw will periodically Submerge, reappearing at a random location.
 _Healers:_
@@ -114,7 +111,6 @@ turnin A New Enemy##30998 |goto 33.5,80.6
 turnin The Dark Shaman##30996 |goto 33.5,80.6
 step
 talk SI:7 Field Commander Dirken##61822
-turnin Animal Control##30997 |goto 31.7,76.5
 turnin No Man Left Behind##30995 |goto 31.7,76.5
 step
 Congratulations, you have completed Ragefire Chasm
@@ -769,6 +765,25 @@ Defeat Thruk |scenariogoal 24410 |goto Blackfathom Deeps/2 33.5,68.8
 step
 map Blackfathom Deeps/2
 path follow loose; loop off; ants curved
+path	34.0,68.3	43.1,75.0	Blackfathom Deeps/3 60.0,51.6
+click Aspect of the Guardian##0
+|tip Clicking an underwater egg will give you a swim speed buff.
+_Follow_ the path |goto Blackfathom Deeps/3 60.0,51.6 |c |noway
+|tip You will need to swim under the ruins to reach the Guardian.
+step
+kill 1 Guardian of the Deep##74508
+|tip Spore Cloud will inflict damage at random areas and summon Guardian Hatchlings.
+|tip Guardian of the Deep will Devour Blue Shale Crawlers, healing himself for 25% of max health. Kill them quickly.
+|tip Shattering Song will periodically inflict damage to the entire group.
+Defeat Guardian of the Deep |scenariogoal 24418 |goto Blackfathom Deeps/3 59.2,30.2
+step
+map Blackfathom Deeps/2
+path follow loose; loop off; ants curved
+path	Blackfathom Deeps/3 60.0,51.6	43.1,75.0	34.0,68.3
+_Follow_ the path |goto Blackfathom Deeps/2 34.0,68.3 |c |noway
+step
+map Blackfathom Deeps/2
+path follow loose; loop off; ants curved
 path	33.9,65.0	40.8,64.9	40.9,68.8
 _Follow_ the path |goto 40.9,68.8 |c |noway
 step
@@ -1379,6 +1394,22 @@ Click the Complete Quest box in the top right corner:
 turnin Corruption in Maraudon##27697
 only if havequest(27697)
 step
+map Maraudon/1
+path follow loose; loop off; ants curved
+path	36.9,76.5	31.0,80.8	31.1,88.6
+path	26.4,88.2	24.9,75.2	22.5,58.9
+path	Maraudon/2 26.5,6.2
+_Follow_ the path |goto Maraudon/2 26.5,6.2 < 30 |c |noway
+|tip Celebras the Cursed is an optional boss.
+step
+kill 1 Celebras the Cursed##12225
+|tip Celebras will summon three Forces of Nature.
+|tip Twisted Tranquility will deal nature damage and slow players within 45 yards.
+|tip Wrath deals single-target nature damage. Can be interrupted.
+|tip Entangling Roots will root a single player and deal minor nature damage.
+Defeat Celebras the Cursed |scenariogoal 25053 |goto Maraudon/2 24.5,14.3
+|tip Celebras the Cursed is an optional boss.
+step
 Congratulations, you have completed Maraudon: The Wicked Grotto!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Classic Dungeons\\Maraudon: Foulspore Cavern (Mara) 35-40",{
@@ -1960,7 +1991,7 @@ kill 1 Archaedas##2748 |goto Uldaman/2 55.4,50.7 |only if default
 |tip Archaedas will occasionally Ground Tremor, stunning anyone within 20 yards
 |tip Kill the adds when they spawn, then switch back to Archaedas
 kill 1 Archaedas##2748 |q Archaedas, The Ancient Stone Watcher##27677/1 |goto Uldaman/2 55.4,50.7 |only if havequest(27677)
-Defeat Archaedas |scenariostage 1 |goto Uldaman/2 55.4,50.7
+Defeat Archaedas |scenariogoal 18531 |goto Uldaman/2 55.4,50.7
 step
 Click the Quest Complete box in the top right corner.
 turnin Archaedas, The Ancient Stone Watcher##27677

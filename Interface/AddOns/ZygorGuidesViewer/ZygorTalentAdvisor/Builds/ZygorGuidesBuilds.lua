@@ -20,6 +20,10 @@ local ZTA=ZygorTalentAdvisor
 --	Minor Glyph of 3
 --]],"PetSpec") --PetSpec only needed if you are a HUNTER
 
+ZTA:RegisterBuild("DEMONHUNTER","Leveling Havoc(Recommended)","Havoc", {1,3,3,1,1,3,2},[[
+]])
+ZTA:RegisterBuild("DEMONHUNTER","Leveling Vengeance","Vengeance", {2,2,1,1,2,1,1},[[
+]])
 ZTA:RegisterBuild("DEATHKNIGHT","Leveling Blood(Recommended)","Blood", {1,3,1,1,1,1,2},[[
 ]])
 ZTA:RegisterBuild("DEATHKNIGHT","Leveling Frost","Frost", {2,3,1,1,1,1,2},[[

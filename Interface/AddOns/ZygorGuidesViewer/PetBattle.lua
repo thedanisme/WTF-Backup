@@ -1147,8 +1147,8 @@ function PetBattle.PetJournal.JournalIconSetup()
 		local button=_G[prefix]
 		if not button then break end
 
-		local iconFrame = CreateFrame("Button", "ZygorPetIconFrame"..i, button,"OptionsButtonTemplate")
-		iconFrame:SetSize(25,20)
+		local iconFrame = CreateFrame("Button", "ZygorPetIconFrame"..i, button)
+		iconFrame:SetSize(25,25)
 		iconFrame:SetPoint("TOPRIGHT",button,"TOPRIGHT",-2,-5)
 		iconFrame:SetScript("OnEnter",function(self)
 			GameTooltip:ClearAllPoints()
@@ -1162,7 +1162,7 @@ function PetBattle.PetJournal.JournalIconSetup()
 
 		iconFrame.tex=iconFrame:CreateTexture("ZygorTalentIconTexture"..i,"OVERLAY")
 		iconFrame.tex:SetAllPoints(true)
-		iconFrame.tex:SetTexture(ZGV.DIR.."\\ZygorTalentAdvisor\\Skin\\popout-button")
+		iconFrame.tex:SetTexture(ZGV.DIR.."\\Skins\\zygor-round")
 
 		button.zygorButton=iconFrame
 

@@ -3,7 +3,7 @@ local name,ZGV=...
 local WW={}
 ZGV.WhoWhere=WW
 
-local Astrolabe = DongleStub("Astrolabe-ZGV")
+local HBD = LibStub("HereBeDragons-1.0")
 
 function WW:CreateFrame()
 	if self.F then return end
@@ -24,7 +24,7 @@ end
 
 local function CalcThread()
 	local typ,m,f,x,y=WW.typ,WW.m,WW.f,WW.x,WW.y
-	if not m then m,f,x,y = Astrolabe:GetCurrentPlayerPosition() end
+	if not m then x,y,m,f=HBD:GetPlayerZonePosition(true) end
 	local parse=ZGV.NPCData.parseNPC
 	local mindist,minid,minm,minf,minx,miny=999999
 	local count=0
@@ -35,7 +35,8 @@ local function CalcThread()
 			npc.y=npc.y*0.01
 			if npc.m==321 and npc.f == nil then npc.f = 1 end -- Orgrimmar fix
 			-- Don't try to fix it by setting it to "npc.f or 1", that breaks Stormwind. ~~ Jeremiah
-			local dist = Astrolabe:ComputeDistance(m,f,x,y,npc.m,npc.f or 0,npc.x,npc.y)
+			local dist=HBD:GetZoneDistance(m,f,x,y,npc.m,npc.f or 0,npc.x,npc.y)
+
 			if dist and dist<mindist then
 				mindist=dist
 				minid,minm,minf,minx,miny=tonumber(id),npc.m,npc.f,npc.x,npc.y
@@ -97,7 +98,7 @@ end
 
 local function CalcMailboxThread()
 	local typ,m,f,x,y=WW.typ,WW.m,WW.f,WW.x,WW.y
-	if not m then m,f,x,y = Astrolabe:GetCurrentPlayerPosition() end
+	if not m then x,y,m,f=HBD:GetPlayerZonePosition(true) end
 	local parse=ZGV.MailboxData.parseMailbox
 	local mindist,minid,minm,minf,minx,miny=999999
 	local count=0
@@ -106,7 +107,7 @@ local function CalcMailboxThread()
 		if mailbox.m>0 then
 			mailbox.x=mailbox.x*0.01
 			mailbox.y=mailbox.y*0.01
-			local dist = Astrolabe:ComputeDistance(m,f,x,y,mailbox.m,mailbox.f or 0,mailbox.x,mailbox.y)
+			local dist = HBD:GetZoneDistance(m,f,x,y,mailbox.m,mailbox.f or 0,mailbox.x,mailbox.y)
 			if dist and dist<mindist then
 				mindist=dist
 				minid,minm,minf,minx,miny=tonumber(id),mailbox.m,mailbox.f,mailbox.x,mailbox.y

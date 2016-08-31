@@ -5116,8 +5116,8 @@ turnin The Peak of Serenity - Continue Your Training##31859 |goto Kun-Lai Summit
 accept Continue Your Training: Master Cheng##31837 |goto Kun-Lai Summit 48.6,42.7
 step
 talk Master Cheng##66138
-Tell him you wish to challenge him
-Follow him to the center of the area and fight him
+Tell her you wish to challenge him
+Follow her to the center of the area and fight him
 kill Master Cheng##66138
 Complete Master Cheng's Training |q 31837/1 |goto 47.1,40.1
 step
@@ -5126,8 +5126,8 @@ turnin Continue Your Training: Master Cheng##31837 |goto 48.6,42.7
 accept Practice Makes Perfect: Master Cheng##31844 |goto 48.6,42.7
 step
 talk Master Cheng##66138
-Tell him you wish to challenge him
-Follow him to the center of the area and fight him
+Tell him you wish to challenge her
+Follow him to the center of the area and fight her
 kill Master Cheng##66138
 Complete Master Cheng's Training |q 31844/1 |goto 47.1,40.1
 step

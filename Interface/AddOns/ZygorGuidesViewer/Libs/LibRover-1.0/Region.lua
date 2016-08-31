@@ -17,7 +17,7 @@ function Region:New(data)
 	if self[1]=="REGION" then tremove(self,1) end
 
 	local m1,f1,x1,y1,id1,dat1 = LibRover_Node:Parse(self.center)   self.center=nil
-	self.centernode = x1 and LibRover_Node:New{m=m1,f=f1,x=x1,y=y1,id=id1,type=ntype} or Lib.nodes.id[id1]
+	self.centernode = self.centernode or ( x1 and LibRover_Node:New{m=m1,f=f1,x=x1,y=y1,id=id1,type=ntype} ) or Lib.nodes.id[self.centernodeid] or Lib.nodes.id[id1]
 	if self.greenborders then
 		for ni,n in ipairs(self.greenborders) do
 			local f
@@ -95,7 +95,7 @@ local region_mt = {__index=region_proto}
 
 
 -- unused, might come in handy.
-function pointInPoly(x,y,...)
+local function pointInPoly(x,y,...)
 	local pts = select("#",...)
 	print("pts",pts)
 	local odd=false

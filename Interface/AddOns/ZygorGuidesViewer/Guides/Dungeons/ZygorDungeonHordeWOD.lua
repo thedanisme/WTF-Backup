@@ -1144,6 +1144,7 @@ condition_suggested="level>=100 and _G.GetAverageItemLevel()>615",
 keywords={"HM","WC","High","Maul","LFR"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Highmaul - Walled City raid.",
+lfgid=849,
 },[[
 step
 Press _I_ and queue for Highmaul - Walled City |goto Highmaul/2 36.5,35.5 |noway |c
@@ -1241,6 +1242,7 @@ condition_suggested="level>=100 and _G.GetAverageItemLevel()>615",
 keywords={"HM","AS","High","Maul","LFR"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Highmaul - Arcane Sanctum raid.",
+lfgid=850,
 },[[
 step
 Press _I_ and queue for Highmaul - Arcane Sanctum |goto Highmaul/3 38.9,38.7 |noway |c
@@ -1346,6 +1348,7 @@ condition_suggested="level>=100 and _G.GetAverageItemLevel()>615",
 keywords={"HM","IR","High","Maul","LFR"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Highmaul - Imperator's Rise raid.",
+lfgid=851,
 },[[
 step
 Press _I_ and queue for Highmaul - Imperator's Rise |goto Highmaul/6 47.1,29.5 |noway |c
@@ -1385,6 +1388,7 @@ condition_suggested="level>=100 and _G.GetAverageItemLevel()>635",
 keywords={"BRF","SW","LFR"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Blackrock Foundry - Slagworks raid.",
+lfgid=847,
 },[[
 step
 Press _I_ and queue for Blackrock Foundry - Slagworks |goto Blackrock Foundry/3 40.9,86.4 |noway |c
@@ -1494,6 +1498,7 @@ condition_suggested="level>=100 and _G.GetAverageItemLevel()>635",
 keywords={"BRF","TBF","LFR"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Blackrock Foundry - The Black Forge raid.",
+lfgid=846,
 },[[
 step
 Press _I_ and queue for Blackrock Foundry - The Black Forge |goto Blackrock Foundry/3 40.9,86.4 |noway |c
@@ -1603,6 +1608,7 @@ condition_suggested="level>=100 and _G.GetAverageItemLevel()>635",
 keywords={"BRF","IA","LFR"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Blackrock Foundry - Iron Assembly raid.",
+lfgid=848,
 },[[
 step
 Press _I_ and queue for Blackrock Foundry - Iron Assembly |goto Blackrock Foundry/3 40.9,86.4 |noway |c
@@ -1724,6 +1730,7 @@ condition_suggested="level>=100 and _G.GetAverageItemLevel()>635",
 keywords={"BRF","BC","LFR"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Blackrock Foundry - Blackhand's Crucible raid.",
+lfgid=823,
 },[[
 step
 Press _I_ and queue for Blackrock Foundry - Blackhand's Crucible |goto Blackrock Foundry/3 40.9,86.4 |noway |c
@@ -1780,6 +1787,7 @@ condition_suggested="level>=100 and _G.GetAverageItemLevel()>650",
 keywords={"HFC","LFR"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Hellfire Citadel - Hellbreach raid.",
+lfgid=982,
 },[[
 step
 Press _I_ and queue for Hellfire Citadel - Hellbreach |goto Hellfire Citadel/1 69.6,43.5 |noway |c
@@ -1870,6 +1878,7 @@ keywords={"HFC","LFR"},
 condition_suggested="level>=100 and _G.GetAverageItemLevel()>650",
 author="support@zygorguides.com",
 description="This guide will walk you through the Hellfire Citadel - Halls of Blood raid.",
+lfgid=983,
 },[[
 step
 Press _I_ and queue for Hellfire Citadel - Halls of Blood |goto Hellfire Citadel/5 81.6,11.8 |noway |c
@@ -1987,6 +1996,7 @@ condition_suggested="level>=100 and _G.GetAverageItemLevel()>650",
 keywords={"HFC","LFR"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Hellfire Citadel - Bastion of Shadows raid.",
+lfgid=984,
 },[[
 step
 Press _I_ and queue for Hellfire Citadel - Bastion of Shadows |goto Hellfire Citadel/6 62.1,76.8 |noway |c
@@ -2069,6 +2079,7 @@ condition_suggested="level>=100 and _G.GetAverageItemLevel()>650",
 keywords={"DR","HFC","LFR"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Hellfire Citadel - Destructor's Rise raid.",
+lfgid=985,
 },[[
 step
 Press _I_ and queue for Hellfire Citadel - Hellbreach |goto Hellfire Citadel/6 44.4,48.2 |noway |c

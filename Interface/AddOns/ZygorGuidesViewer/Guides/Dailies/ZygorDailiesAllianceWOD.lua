@@ -1354,10 +1354,11 @@ Click to complete Scouting Missives instead |confirm |next "scouting_missives" |
 step
 label "scouting_missives"
 #include "A_Garrison_Crowler"
+buy Scouting Missive: The Pit##133878 |or |next "the_pit"
+buy Scouting Missive: The Heart of Shattrath##133883 |next "heart_shatt"
 buy Scouting Missive: Shattrath Harbor##122410 |or |next "shattrath_harbor"
 buy Scouting Missive: Broken Precipice##122423 |or |next "broken_precipice"
 buy Scouting Missive: Mok'gol Watchpost##122422 |or |next "mokgol_watchpost"
-buy Scouting Missive: Gorian Proving Grounds##122420 |or |next "gorian_proving_grounds"
 buy Scouting Missive: Darktide Roost##122417 |or |next "darktide_roost"
 buy Scouting Missive: Socrethar's Rise##122415 |or |next "socrethars_rise"
 buy Scouting Missive: Magnarok##122399 |or |next "magnarok"
@@ -1368,6 +1369,14 @@ buy Scouting Missive: Skettis##122407 |or |next "skettis"
 buy Scouting Missive: Pillars of Fate##122409 |or |next "pillars_of_fate"
 buy Scouting Missive: Lost Veil Anzu##122414 |or |next "lost_veil_anzu"
 |tip Buy the Scouting Missive for the quest you want to complete.
+step
+label "the_pit"
+use Scouting Missive: The Pit##133878
+accept Missive: Assault on the Pit##40942 |next "assault_quest_start"
+step
+label "heart_shatt"
+use Scouting Missive: The Heart of Shattrath##133883
+accept Missive: Assault on the Heart of Shattrath##40944 |next "assault_quest_start"
 step
 label "shattrath_harbor"
 use Scouting Missive: Shattrath Harbor##122410
@@ -1380,10 +1389,6 @@ step
 label "mokgol_watchpost"
 use Scouting Missive: Mok'gol Watchpost##122422
 accept Missive: Assault on Mok'gol Watchpost##38195 |next "assault_quest_start"
-step
-label "gorian_proving_grounds"
-use Scouting Missive: Gorian Proving Grounds##122420
-accept Missive: Assault on the Gorian Proving Grounds##38194 |next "assault_quest_start"
 step
 label "darktide_roost"
 use Scouting Missive: Darktide Roost##122417

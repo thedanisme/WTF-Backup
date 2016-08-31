@@ -659,7 +659,7 @@ data.taxipoints = {
 			{name="Illidari Camp",faction="B",npc="Izal Whitemoon",npcid=111323,x=49.67,y=21.02},
 		},
 		['Dalaran L']={
-			{name="Krasus' Landing",faction="B",npc="Aludane Whitecloud",npcid=96813,x=69.83,y=51.11},
+			{name="Dalaran",faction="B",npc="Aludane Whitecloud",npcid=96813,x=69.83,y=51.11},
 		},
 		['Highmountain']={
 			{name="Felbane Camp",faction="B",npc="Kimben Wingheart",npcid=97870,x=29.93,y=39.32},
@@ -672,8 +672,10 @@ data.taxipoints = {
 			{name="Stonehoof Watch",faction="B",npc="Lassa Skymane",npcid=100559,x=59.23,y=65.05},
 			{name="Sylvan Falls",faction="B",npc="Roren Longshadow",npcid=100550,x=35.86,y=65.92},
 			{name="The Witchwood",faction="B",npc="Rafat Smokehoof",npcid=97868,x=38.35,y=39.29},
-			{name="Thunder Totem",faction="B",npc="Windtamer Nalt",npcid=95688,x=44.75,y=38.55},
 			{name="Trueshot Lodge",faction="H",npc="??",npcid=0,x=0,y=0},
+		},
+		['Thunder Totem']={
+			{name="Thunder Totem",faction="B",npc="Windtamer Nalt",npcid=95688,x=44.75,y=38.55},
 		},
 		['Stormheim']={
 			--{name="Cullen's Post",faction="H",npc="??",npcid=0,x=0,y=0},
@@ -698,6 +700,7 @@ data.taxipoints = {
 			{name="Lorlathil",faction="B",npc="Elyssia Winterdusk",npcid=93447,x=54.98,y=72.47},
 			{name="Starsong Refuge",faction="B",npc="Landrius Ravenfall",npcid=100468,x=69.02,y=50.83},
 			{name="The Dreamgrove",faction="B",npc="Danise Stargazer",npcid=107457,x=61.73,y=33.99, class="DRUID"},
+			{name="Gloaming Reef",faction="B",npc="?",npcid=107457,x=61.73,y=33.99},
 		},
 	},
 }
@@ -4509,8 +4512,8 @@ data.flightcost = {
 			name = "Nivek's Overlook, Nagrand",
 			neighbors = {
 				["220:480"] = 0, -- Riverside Post, Nagrand
-				["224:520"] = 0, -- Rilzit's Holdfast, Nagrand
-				["264:515"] = 0, -- Joz's Rylaks, Nagrand
+				["224:520"] = 47, -- Rilzit's Holdfast, Nagrand
+				["264:515"] = 47, -- Joz's Rylaks, Nagrand
 				["269:449"] = 32, -- Telaari Station, Nagrand
 				["325:476"] = 0, -- The Ring of Trials, Nagrand
 				["475:222"] = 0, -- Southport, Spires of Arak
@@ -4521,11 +4524,11 @@ data.flightcost = {
 			tag = "220:480",
 			name = "Riverside Post, Nagrand",
 			neighbors = {
-				["220:416"] = 0, -- Nivek's Overlook, Nagrand
-				["224:520"] = 0, -- Rilzit's Holdfast, Nagrand
+				["220:416"] = 33, -- Nivek's Overlook, Nagrand
+				["224:520"] = 26, -- Rilzit's Holdfast, Nagrand
 				["304:529"] = 0, -- Throne of the Elements, Nagrand
-				["337:488"] = 0, -- Wor'var, Nagrand
-				["338:631"] = 0, -- Frostwall Garrison, Frostfire Ridge
+				["337:488"] = 60, -- Wor'var, Nagrand
+				["338:631"] = 77, -- Frostwall Garrison, Frostfire Ridge
 				["477:268"] = 0, -- Axefall, Spires of Arak
 			},
 		},
@@ -4904,12 +4907,12 @@ data.flightcost = {
 			tag = "502:266",
 			name = "Veil Terokk, Spires of Arak",
 			neighbors = {
-				["468:314"] = 0, -- Apexis Excavation, Spires of Arak
+				["468:314"] = 37, -- Apexis Excavation, Spires of Arak
 				["475:222"] = 0, -- Southport, Spires of Arak
-				["477:268"] = 0, -- Axefall, Spires of Arak
-				["522:298"] = 0, -- Crow's Crook, Spires of Arak
-				["556:194"] = 0, -- Pinchwhistle Gearworks, Spires of Arak
-				["560:270"] = 0, -- Talon Watch, Spires of Arak
+				["477:268"] = 21, -- Axefall, Spires of Arak
+				["522:298"] = 46, -- Crow's Crook, Spires of Arak
+				["556:194"] = 41, -- Pinchwhistle Gearworks, Spires of Arak
+				["560:270"] = 35, -- Talon Watch, Spires of Arak
 			},
 		},
 		{
@@ -4934,7 +4937,7 @@ data.flightcost = {
 				["505:754"] = 0, -- Skysea Point, Gorgrond
 				["518:489"] = 0, -- Vol'jin's Pride, Talador
 				["537:645"] = 0, -- Beastwatch, Gorgrond
-				["544:574"] = 0, -- Bastion Rise, Gorgrond
+				["544:574"] = 22, -- Bastion Rise, Gorgrond
 			},
 		},
 		{
@@ -5545,311 +5548,481 @@ data.flightcost = {
 	},
 	[8]={
 		{
+			tag = "-146:466",
+			name = "Gloaming Reef, Val'sharah",
+			neighbors = {
+				["-24:204"] = 49, -- Challiane's Terrace, Azsuna
+				["-40:535"] = 27, -- Bradensbrook, Val'sharah
+			},
+		},
+		{
 			tag = "-24:204",
 			name = "Challiane's Terrace, Azsuna",
 			neighbors = {
-				["152:004"] = 0, -- Felblaze Ingress, Azsuna
-				["254:253"] = 0, -- Meredil, Suramar
+				["-146:466"] = 37, -- Gloaming Reef, Val'sharah
+				["-40:535"] = 38, -- Bradensbrook, Val'sharah
+				["-94:-178"] = 44, -- Illidari Perch, Azsuna
+				["033:010"] = 34, -- Azurewing Repose, Azsuna
+				["041:414"] = 44, -- Lorlathil, Val'sharah
+				["152:004"] = 43, -- Felblaze Ingress, Azsuna
+				["197:407"] = 60, -- Irongrove Retreat, Suramar
+				["254:253"] = 57, -- Meredil, Suramar
+			},
+		},
+		{
+			tag = "-34:830",
+			name = "The Dreamgrove, Val'sharah (Druids Only)",
+			neighbors = {
+				["-40:535"] = 51, -- Bradensbrook, Val'sharah
+				["052:541"] = 43, -- Garden of the Moon, Val'sharah
+				["159:1073"] = 84, -- Felbane Camp, Highmountain
 			},
 		},
 		{
 			tag = "-40:535",
 			name = "Bradensbrook, Val'sharah",
 			neighbors = {
-				["041:414"] = 0, -- Lorlathil, Val'sharah
+				["-146:466"] = 27, -- Gloaming Reef, Val'sharah
+				["-24:204"] = 38, -- Challiane's Terrace, Azsuna
+				["-34:830"] = 51, -- The Dreamgrove, Val'sharah (Druids Only)
+				["041:414"] = 32, -- Lorlathil, Val'sharah
+				["052:541"] = 27, -- Garden of the Moon, Val'sharah
 			},
 		},
 		{
 			tag = "-94:-178",
 			name = "Illidari Perch, Azsuna",
 			neighbors = {
-				["004:-152"] = 0, -- Illidari Stand, Azsuna
+				["-24:204"] = 44, -- Challiane's Terrace, Azsuna
+				["004:-152"] = 23, -- Illidari Stand, Azsuna
+				["031:-454"] = 41, -- Wardens' Redoubt, Azsuna
 			},
 		},
 		{
 			tag = "004:-152",
 			name = "Illidari Stand, Azsuna",
 			neighbors = {
-				["-94:-178"] = 0, -- Illidari Perch, Azsuna
-				["033:010"] = 0, -- Azurewing Repose, Azsuna
-				["093:-308"] = 0, -- Shackle's Den, Azsuna
+				["-94:-178"] = 23, -- Illidari Perch, Azsuna
+				["031:-454"] = 33, -- Wardens' Redoubt, Azsuna
+				["033:010"] = 24, -- Azurewing Repose, Azsuna
+				["093:-308"] = 29, -- Shackle's Den, Azsuna
 			},
 		},
 		{
 			tag = "031:-454",
 			name = "Wardens' Redoubt, Azsuna",
 			neighbors = {
-				["059:-548"] = 0, -- Watchers' Aerie, Azsuna
-				["093:-308"] = 0, -- Shackle's Den, Azsuna
+				["-94:-178"] = 41, -- Illidari Perch, Azsuna
+				["004:-152"] = 33, -- Illidari Stand, Azsuna
+				["059:-548"] = 18, -- Watchers' Aerie, Azsuna
+				["093:-308"] = 23, -- Shackle's Den, Azsuna
 			},
 		},
 		{
 			tag = "033:010",
 			name = "Azurewing Repose, Azsuna",
 			neighbors = {
-				["004:-152"] = 0, -- Illidari Stand, Azsuna
-				["152:004"] = 0, -- Felblaze Ingress, Azsuna
-				["254:253"] = 0, -- Meredil, Suramar
+				["-24:204"] = 34, -- Challiane's Terrace, Azsuna
+				["004:-152"] = 24, -- Illidari Stand, Azsuna
+				["041:414"] = 51, -- Lorlathil, Val'sharah
+				["093:-308"] = 36, -- Shackle's Den, Azsuna
+				["152:004"] = 27, -- Felblaze Ingress, Azsuna
+				["197:407"] = 55, -- Irongrove Retreat, Suramar
+				["254:253"] = 59, -- Meredil, Suramar
 			},
 		},
 		{
 			tag = "041:414",
 			name = "Lorlathil, Val'sharah",
 			neighbors = {
-				["-40:535"] = 0, -- Bradensbrook, Val'sharah
-				["051:540"] = 0, -- Garden of the Moon, Val'sharah
-				["152:004"] = 0, -- Felblaze Ingress, Azsuna
-				["254:253"] = 0, -- Meredil, Suramar
+				["-24:204"] = 44, -- Challiane's Terrace, Azsuna
+				["-40:535"] = 32, -- Bradensbrook, Val'sharah
+				["033:010"] = 51, -- Azurewing Repose, Azsuna
+				["052:541"] = 24, -- Garden of the Moon, Val'sharah
+				["152:004"] = 51, -- Felblaze Ingress, Azsuna
+				["197:407"] = 51, -- Irongrove Retreat, Suramar
 			},
 		},
 		{
-			tag = "051:540",
+			tag = "052:541",
 			name = "Garden of the Moon, Val'sharah",
 			neighbors = {
-				["041:414"] = 0, -- Lorlathil, Val'sharah
-				["254:253"] = 0, -- Meredil, Suramar
+				["-34:830"] = 43, -- The Dreamgrove, Val'sharah (Druids Only)
+				["-40:535"] = 27, -- Bradensbrook, Val'sharah
+				["041:414"] = 24, -- Lorlathil, Val'sharah
+				["131:600"] = 37, -- Starsong Refuge, Val'sharah
+				["197:407"] = 61, -- Irongrove Retreat, Suramar
 			},
 		},
 		{
 			tag = "059:-548",
 			name = "Watchers' Aerie, Azsuna",
 			neighbors = {
-				["031:-454"] = 0, -- Wardens' Redoubt, Azsuna
-				["308:-326"] = 0, -- Dalaran
+				["031:-454"] = 18, -- Wardens' Redoubt, Azsuna
+				["308:-326"] = 68, -- Dalaran
 			},
 		},
 		{
 			tag = "093:-308",
 			name = "Shackle's Den, Azsuna",
 			neighbors = {
-				["004:-152"] = 0, -- Illidari Stand, Azsuna
-				["031:-454"] = 0, -- Wardens' Redoubt, Azsuna
-				["152:004"] = 0, -- Felblaze Ingress, Azsuna
-				["308:-326"] = 0, -- Dalaran
+				["004:-152"] = 29, -- Illidari Stand, Azsuna
+				["031:-454"] = 23, -- Wardens' Redoubt, Azsuna
+				["033:010"] = 36, -- Azurewing Repose, Azsuna
+				["152:004"] = 35, -- Felblaze Ingress, Azsuna
+				["308:-326"] = 60, -- Dalaran
 			},
 		},
 		{
 			tag = "131:600",
 			name = "Starsong Refuge, Val'sharah",
 			neighbors = {
-				["254:253"] = 0, -- Meredil, Suramar
+				["052:541"] = 37, -- Garden of the Moon, Val'sharah
+				["197:407"] = 48, -- Irongrove Retreat, Suramar
+				["208:778"] = 51, -- Sylvan Falls, Highmountain
+				["303:571"] = 59, -- Obsidian Overlook, Highmountain
 			},
 		},
 		{
 			tag = "152:004",
 			name = "Felblaze Ingress, Azsuna",
 			neighbors = {
-				["-24:204"] = 0, -- Challiane's Terrace, Azsuna
-				["033:010"] = 0, -- Azurewing Repose, Azsuna
-				["041:414"] = 0, -- Lorlathil, Val'sharah
-				["093:-308"] = 0, -- Shackle's Den, Azsuna
-				["254:253"] = 0, -- Meredil, Suramar
-				["308:-326"] = 0, -- Dalaran
+				["-24:204"] = 43, -- Challiane's Terrace, Azsuna
+				["033:010"] = 27, -- Azurewing Repose, Azsuna
+				["041:414"] = 51, -- Lorlathil, Val'sharah
+				["093:-308"] = 35, -- Shackle's Den, Azsuna
+				["197:407"] = 48, -- Irongrove Retreat, Suramar
+				["254:253"] = 45, -- Meredil, Suramar
+				["308:-326"] = 52, -- Dalaran
 			},
 		},
 		{
 			tag = "159:1073",
 			name = "Felbane Camp, Highmountain",
 			neighbors = {
-				["208:778"] = 0, -- Sylvan Falls, Highmountain
+				["-34:830"] = 84, -- The Dreamgrove, Val'sharah (Druids Only)
+				["208:778"] = 44, -- Sylvan Falls, Highmountain
+				["228:1074"] = 40, -- The Witchwood, Highmountain
+				["244:926"] = 41, -- Nesingwary, Highmountain
+				["258:1391"] = 43, -- Shipwreck Cove, Highmountain
+				["299:849"] = 56, -- Thunder Totem, Highmountain
+			},
+		},
+		{
+			tag = "186:961",
+			name = "Trueshot Lodge, Highmountain",
+			neighbors = {
+				["208:778"] = 31, -- Sylvan Falls, Highmountain
+				["228:1074"] = 21, -- The Witchwood, Highmountain
+				["244:926"] = 26, -- Nesingwary, Highmountain
+				["299:849"] = 35, -- Thunder Totem, Highmountain
+				["347:1008"] = 40, -- Skyhorn, Highmountain
+			},
+		},
+		{
+			tag = "197:407",
+			name = "Irongrove Retreat, Suramar",
+			neighbors = {
+				["-24:204"] = 60, -- Challiane's Terrace, Azsuna
+				["033:010"] = 55, -- Azurewing Repose, Azsuna
+				["041:414"] = 51, -- Lorlathil, Val'sharah
+				["052:541"] = 61, -- Garden of the Moon, Val'sharah
+				["131:600"] = 48, -- Starsong Refuge, Val'sharah
+				["152:004"] = 48, -- Felblaze Ingress, Azsuna
+				["208:778"] = 46, -- Sylvan Falls, Highmountain
+				["254:253"] = 29, -- Meredil, Suramar
+				["303:571"] = 50, -- Obsidian Overlook, Highmountain
 			},
 		},
 		{
 			tag = "208:778",
 			name = "Sylvan Falls, Highmountain",
 			neighbors = {
-				["159:1073"] = 0, -- Felbane Camp, Highmountain
-				["244:926"] = 0, -- Nesingwary, Highmountain
-				["254:253"] = 0, -- Meredil, Suramar
-				["299:849"] = 0, -- Thunder Totem, Highmountain
+				["131:600"] = 51, -- Starsong Refuge, Val'sharah
+				["159:1073"] = 44, -- Felbane Camp, Highmountain
+				["186:961"] = 31, -- Trueshot Lodge, Highmountain
+				["197:407"] = 46, -- Irongrove Retreat, Suramar
+				["244:926"] = 28, -- Nesingwary, Highmountain
+				["299:849"] = 27, -- Thunder Totem, Highmountain
+				["303:571"] = 47, -- Obsidian Overlook, Highmountain
 			},
 		},
 		{
 			tag = "228:1074",
 			name = "The Witchwood, Highmountain",
 			neighbors = {
-				["244:926"] = 0, -- Nesingwary, Highmountain
-				["258:1391"] = 0, -- Shipwreck Cove, Highmountain
+				["159:1073"] = 40, -- Felbane Camp, Highmountain
+				["186:961"] = 21, -- Trueshot Lodge, Highmountain
+				["244:926"] = 35, -- Nesingwary, Highmountain
+				["258:1391"] = 49, -- Shipwreck Cove, Highmountain
+				["299:849"] = 43, -- Thunder Totem, Highmountain
+				["347:1008"] = 45, -- Skyhorn, Highmountain
+				["392:1191"] = 42, -- Prepfoot, Highmountain
 			},
 		},
 		{
 			tag = "244:926",
 			name = "Nesingwary, Highmountain",
 			neighbors = {
-				["208:778"] = 0, -- Sylvan Falls, Highmountain
-				["228:1074"] = 0, -- The Witchwood, Highmountain
-				["347:1007"] = 0, -- Skyhorn, Highmountain
-			},
-		},
-		{
-			tag = "247:-913",
-			name = "Eye of Azshara, Azsuna",
-			neighbors = {
-				["308:-326"] = 0, -- Dalaran
+				["159:1073"] = 41, -- Felbane Camp, Highmountain
+				["186:961"] = 26, -- Trueshot Lodge, Highmountain
+				["208:778"] = 28, -- Sylvan Falls, Highmountain
+				["228:1074"] = 35, -- The Witchwood, Highmountain
+				["299:849"] = 21, -- Thunder Totem, Highmountain
+				["347:1008"] = 33, -- Skyhorn, Highmountain
 			},
 		},
 		{
 			tag = "254:253",
 			name = "Meredil, Suramar",
 			neighbors = {
-				["-24:204"] = 0, -- Challiane's Terrace, Azsuna
-				["033:010"] = 0, -- Azurewing Repose, Azsuna
-				["041:414"] = 0, -- Lorlathil, Val'sharah
-				["051:540"] = 0, -- Garden of the Moon, Val'sharah
-				["131:600"] = 0, -- Starsong Refuge, Val'sharah
-				["152:004"] = 0, -- Felblaze Ingress, Azsuna
-				["208:778"] = 0, -- Sylvan Falls, Highmountain
-				["303:571"] = 0, -- Obsidian Overlook, Highmountain
-				["308:-326"] = 0, -- Dalaran
-				["382:579"] = 0, -- Ironhorn Enclave, Highmountain
-				["477:509"] = 0, -- Lorna's Watch, Stormheim
-				["599:296"] = 0, -- Hafr Fjall, Stormheim
+				["-24:204"] = 57, -- Challiane's Terrace, Azsuna
+				["033:010"] = 59, -- Azurewing Repose, Azsuna
+				["152:004"] = 45, -- Felblaze Ingress, Azsuna
+				["197:407"] = 29, -- Irongrove Retreat, Suramar
+				["303:571"] = 51, -- Obsidian Overlook, Highmountain
+				["308:-326"] = 64, -- Dalaran
+				["382:579"] = 58, -- Ironhorn Enclave, Highmountain
+				["449:318"] = 43, -- Crimson Thicket, Suramar
 			},
 		},
 		{
 			tag = "258:1391",
 			name = "Shipwreck Cove, Highmountain",
 			neighbors = {
-				["228:1074"] = 0, -- The Witchwood, Highmountain
+				["159:1073"] = 43, -- Felbane Camp, Highmountain
+				["228:1074"] = 49, -- The Witchwood, Highmountain
+				["347:1008"] = 63, -- Skyhorn, Highmountain
+				["392:1191"] = 47, -- Prepfoot, Highmountain
 			},
 		},
 		{
 			tag = "299:849",
 			name = "Thunder Totem, Highmountain",
 			neighbors = {
-				["208:778"] = 0, -- Sylvan Falls, Highmountain
+				["159:1073"] = 56, -- Felbane Camp, Highmountain
+				["186:961"] = 35, -- Trueshot Lodge, Highmountain
+				["208:778"] = 27, -- Sylvan Falls, Highmountain
+				["228:1074"] = 43, -- The Witchwood, Highmountain
+				["244:926"] = 21, -- Nesingwary, Highmountain
+				["303:571"] = 49, -- Obsidian Overlook, Highmountain
+				["347:1008"] = 31, -- Skyhorn, Highmountain
+				["382:579"] = 44, -- Ironhorn Enclave, Highmountain
+				["402:787"] = 30, -- Stonehoof Watch, Highmountain
 			},
 		},
 		{
 			tag = "303:571",
 			name = "Obsidian Overlook, Highmountain",
 			neighbors = {
-				["254:253"] = 0, -- Meredil, Suramar
+				["131:600"] = 59, -- Starsong Refuge, Val'sharah
+				["197:407"] = 50, -- Irongrove Retreat, Suramar
+				["208:778"] = 47, -- Sylvan Falls, Highmountain
+				["254:253"] = 51, -- Meredil, Suramar
+				["299:849"] = 49, -- Thunder Totem, Highmountain
+				["382:579"] = 39, -- Ironhorn Enclave, Highmountain
+				["449:318"] = 55, -- Crimson Thicket, Suramar
 			},
 		},
 		{
 			tag = "308:-326",
-			name = "Krasus' Landing",
+			name = "Dalaran",
 			neighbors = {
-				["059:-548"] = 0, -- Watchers' Aerie, Azsuna
-				["093:-308"] = 0, -- Shackle's Den, Azsuna
-				["152:004"] = 0, -- Felblaze Ingress, Azsuna
-				["247:-913"] = 0, -- Eye of Azshara, Azsuna
-				["254:253"] = 0, -- Meredil, Suramar
-				["599:296"] = 0, -- Hafr Fjall, Stormheim
+				["059:-548"] = 68, -- Watchers' Aerie, Azsuna
+				["093:-308"] = 60, -- Shackle's Den, Azsuna
+				["152:004"] = 52, -- Felblaze Ingress, Azsuna
+				["254:253"] = 64, -- Meredil, Suramar
+				["449:318"] = 77, -- Crimson Thicket, Suramar
+				["599:296"] = 96, -- Hafr Fjall, Stormheim
 			},
 		},
 		{
-			tag = "347:1007",
+			tag = "347:1008",
 			name = "Skyhorn, Highmountain",
 			neighbors = {
-				["244:926"] = 0, -- Nesingwary, Highmountain
-				["392:1191"] = 0, -- Prepfoot, Highmountain
+				["186:961"] = 40, -- Trueshot Lodge, Highmountain
+				["228:1074"] = 45, -- The Witchwood, Highmountain
+				["244:926"] = 33, -- Nesingwary, Highmountain
+				["258:1391"] = 63, -- Shipwreck Cove, Highmountain
+				["299:849"] = 31, -- Thunder Totem, Highmountain
+				["382:579"] = 51, -- Ironhorn Enclave, Highmountain
+				["392:1191"] = 36, -- Prepfoot, Highmountain
+				["402:787"] = 34, -- Stonehoof Watch, Highmountain
+				["470:810"] = 47, -- Forsaken Foothold, Stormheim
+				["834:992"] = 101, -- Shield's Rest, Stormheim
 			},
 		},
 		{
 			tag = "382:579",
 			name = "Ironhorn Enclave, Highmountain",
 			neighbors = {
-				["254:253"] = 0, -- Meredil, Suramar
-				["402:787"] = 0, -- Stonehoof Watch, Highmountain
+				["254:253"] = 58, -- Meredil, Suramar
+				["299:849"] = 44, -- Thunder Totem, Highmountain
+				["303:571"] = 39, -- Obsidian Overlook, Highmountain
+				["347:1008"] = 51, -- Skyhorn, Highmountain
+				["402:787"] = 32, -- Stonehoof Watch, Highmountain
+				["449:318"] = 77, -- Crimson Thicket, Suramar
+				["451:629"] = 42, -- Skyfire Triage Camp, Stormheim
+				["470:810"] = 56, -- Forsaken Foothold, Stormheim
+				["477:509"] = 51, -- Lorna's Watch, Stormheim
+				["528:551"] = 49, -- Cullen's Post, Stormheim
+				["576:774"] = 59, -- Stormtorn Foothills, Stormheim
 			},
 		},
 		{
 			tag = "392:1191",
 			name = "Prepfoot, Highmountain",
 			neighbors = {
-				["347:1007"] = 0, -- Skyhorn, Highmountain
+				["228:1074"] = 42, -- The Witchwood, Highmountain
+				["258:1391"] = 47, -- Shipwreck Cove, Highmountain
+				["347:1008"] = 36, -- Skyhorn, Highmountain
+				["470:810"] = 49, -- Forsaken Foothold, Stormheim
+				["576:774"] = 60, -- Stormtorn Foothills, Stormheim
+				["834:992"] = 91, -- Shield's Rest, Stormheim
 			},
 		},
 		{
 			tag = "402:787",
 			name = "Stonehoof Watch, Highmountain",
 			neighbors = {
-				["382:579"] = 0, -- Ironhorn Enclave, Highmountain
+				["299:849"] = 30, -- Thunder Totem, Highmountain
+				["347:1008"] = 34, -- Skyhorn, Highmountain
+				["382:579"] = 32, -- Ironhorn Enclave, Highmountain
+				["451:629"] = 31, -- Skyfire Triage Camp, Stormheim
+				["470:810"] = 38, -- Forsaken Foothold, Stormheim
+				["528:551"] = 45, -- Cullen's Post, Stormheim
+				["576:774"] = 50, -- Stormtorn Foothills, Stormheim
+			},
+		},
+		{
+			tag = "449:318",
+			name = "Crimson Thicket, Suramar",
+			neighbors = {
+				["254:253"] = 43, -- Meredil, Suramar
+				["303:571"] = 55, -- Obsidian Overlook, Highmountain
+				["308:-326"] = 77, -- Dalaran
+				["382:579"] = 77, -- Ironhorn Enclave, Highmountain
+				["477:509"] = 45, -- Lorna's Watch, Stormheim
+				["528:551"] = 38, -- Cullen's Post, Stormheim
+				["599:296"] = 48, -- Hafr Fjall, Stormheim
 			},
 		},
 		{
 			tag = "451:629",
 			name = "Skyfire Triage Camp, Stormheim",
 			neighbors = {
-				["477:509"] = 0, -- Lorna's Watch, Stormheim
+				["382:579"] = 42, -- Ironhorn Enclave, Highmountain
+				["402:787"] = 31, -- Stonehoof Watch, Highmountain
+				["477:509"] = 20, -- Lorna's Watch, Stormheim
+				["576:774"] = 36, -- Stormtorn Foothills, Stormheim
+				["634:626"] = 42, -- Valdisdall, Stormheim
 			},
 		},
 		{
 			tag = "470:810",
 			name = "Forsaken Foothold, Stormheim",
 			neighbors = {
-				["528:551"] = 0, -- Cullen's Post, Stormheim
+				["347:1008"] = 47, -- Skyhorn, Highmountain
+				["382:579"] = 56, -- Ironhorn Enclave, Highmountain
+				["392:1191"] = 49, -- Prepfoot, Highmountain
+				["402:787"] = 38, -- Stonehoof Watch, Highmountain
+				["528:551"] = 34, -- Cullen's Post, Stormheim
+				["576:774"] = 29, -- Stormtorn Foothills, Stormheim
 			},
 		},
 		{
 			tag = "477:509",
 			name = "Lorna's Watch, Stormheim",
 			neighbors = {
-				["254:253"] = 0, -- Meredil, Suramar
-				["451:629"] = 0, -- Skyfire Triage Camp, Stormheim
-				["576:774"] = 0, -- Stormtorn Foothills, Stormheim
-				["634:626"] = 0, -- Valdisdall, Stormheim
+				["382:579"] = 51, -- Ironhorn Enclave, Highmountain
+				["449:318"] = 45, -- Crimson Thicket, Suramar
+				["451:629"] = 20, -- Skyfire Triage Camp, Stormheim
+				["576:774"] = 40, -- Stormtorn Foothills, Stormheim
+				["599:296"] = 46, -- Hafr Fjall, Stormheim
+				["634:626"] = 39, -- Valdisdall, Stormheim
 			},
 		},
 		{
 			tag = "528:551",
 			name = "Cullen's Post, Stormheim",
 			neighbors = {
-				["470:810"] = 0, -- Forsaken Foothold, Stormheim
-				["593:427"] = 0, -- Dreadwake's Landing, Stormheim
+				["382:579"] = 49, -- Ironhorn Enclave, Highmountain
+				["402:787"] = 45, -- Stonehoof Watch, Highmountain
+				["449:318"] = 38, -- Crimson Thicket, Suramar
+				["470:810"] = 34, -- Forsaken Foothold, Stormheim
+				["576:774"] = 36, -- Stormtorn Foothills, Stormheim
+				["593:427"] = 29, -- Dreadwake's Landing, Stormheim
+				["634:626"] = 28, -- Valdisdall, Stormheim
 			},
 		},
 		{
 			tag = "576:774",
 			name = "Stormtorn Foothills, Stormheim",
 			neighbors = {
-				["477:509"] = 0, -- Lorna's Watch, Stormheim
-				["634:626"] = 0, -- Valdisdall, Stormheim
+				["382:579"] = 59, -- Ironhorn Enclave, Highmountain
+				["392:1191"] = 60, -- Prepfoot, Highmountain
+				["402:787"] = 50, -- Stonehoof Watch, Highmountain
+				["451:629"] = 36, -- Skyfire Triage Camp, Stormheim
+				["470:810"] = 29, -- Forsaken Foothold, Stormheim
+				["477:509"] = 40, -- Lorna's Watch, Stormheim
+				["528:551"] = 36, -- Cullen's Post, Stormheim
+				["634:626"] = 26, -- Valdisdall, Stormheim
+				["834:992"] = 61, -- Shield's Rest, Stormheim
 			},
 		},
 		{
 			tag = "593:427",
 			name = "Dreadwake's Landing, Stormheim",
 			neighbors = {
-				["528:551"] = 0, -- Cullen's Post, Stormheim
-				["599:296"] = 0, -- Hafr Fjall, Stormheim
+				["528:551"] = 29, -- Cullen's Post, Stormheim
+				["599:296"] = 22, -- Hafr Fjall, Stormheim
+				["634:626"] = 28, -- Valdisdall, Stormheim
 			},
 		},
 		{
 			tag = "599:296",
 			name = "Hafr Fjall, Stormheim",
 			neighbors = {
-				["254:253"] = 0, -- Meredil, Suramar
-				["308:-326"] = 0, -- Dalaran
-				["593:427"] = 0, -- Dreadwake's Landing, Stormheim
-				["634:626"] = 0, -- Valdisdall, Stormheim
-				["712:546"] = 0, -- Greywatch, Stormheim
+				["308:-326"] = 96, -- Dalaran
+				["449:318"] = 48, -- Crimson Thicket, Suramar
+				["477:509"] = 46, -- Lorna's Watch, Stormheim
+				["593:427"] = 22, -- Dreadwake's Landing, Stormheim
+				["634:626"] = 38, -- Valdisdall, Stormheim
+				["712:546"] = 41, -- Greywatch, Stormheim
 			},
 		},
 		{
 			tag = "634:626",
 			name = "Valdisdall, Stormheim",
 			neighbors = {
-				["477:509"] = 0, -- Lorna's Watch, Stormheim
-				["576:774"] = 0, -- Stormtorn Foothills, Stormheim
-				["599:296"] = 0, -- Hafr Fjall, Stormheim
-				["834:992"] = 0, -- Shield's Rest, Stormheim
+				["451:629"] = 42, -- Skyfire Triage Camp, Stormheim
+				["477:509"] = 39, -- Lorna's Watch, Stormheim
+				["528:551"] = 28, -- Cullen's Post, Stormheim
+				["576:774"] = 26, -- Stormtorn Foothills, Stormheim
+				["593:427"] = 28, -- Dreadwake's Landing, Stormheim
+				["599:296"] = 38, -- Hafr Fjall, Stormheim
+				["712:546"] = 24, -- Greywatch, Stormheim
+				["834:992"] = 62, -- Shield's Rest, Stormheim
 			},
 		},
 		{
 			tag = "712:546",
 			name = "Greywatch, Stormheim",
 			neighbors = {
-				["599:296"] = 0, -- Hafr Fjall, Stormheim
+				["599:296"] = 41, -- Hafr Fjall, Stormheim
+				["634:626"] = 24, -- Valdisdall, Stormheim
+				["834:992"] = 51, -- Shield's Rest, Stormheim
 			},
 		},
 		{
 			tag = "834:992",
 			name = "Shield's Rest, Stormheim",
 			neighbors = {
-				["634:626"] = 0, -- Valdisdall, Stormheim
+				["347:1008"] = 101, -- Skyhorn, Highmountain
+				["392:1191"] = 91, -- Prepfoot, Highmountain
+				["576:774"] = 61, -- Stormtorn Foothills, Stormheim
+				["634:626"] = 62, -- Valdisdall, Stormheim
+				["712:546"] = 51, -- Greywatch, Stormheim
 			},
 		},
 	},

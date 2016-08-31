@@ -1,0 +1,70 @@
+
+ConsLegionSavedVar = {
+	["Emmarosa-Stormrage"] = {
+		["Settings"] = {
+			["Textleft"] = 914.285714285714,
+			["Scale"] = 1.1,
+			["TextScale"] = 1,
+			["SkipCutScene"] = 1,
+			["Newsleft"] = 209.923110961914,
+			["Newsalpha"] = 1,
+			["Hide"] = 0,
+			["AutoChoice"] = 0,
+			["XPLock"] = 1,
+			["AutoHandin"] = 1,
+			["Textalpha"] = 1,
+			["Arrowy"] = -539.999938964844,
+			["XPScale"] = 1.28,
+			["NewsHide"] = 1,
+			["AutoPickup"] = 1,
+			["Newstop"] = -665.000152587891,
+			["XPalpha"] = 1,
+			["NewsScale"] = 0.71,
+			["XPHide"] = 0,
+			["Arrowx"] = 960,
+			["XPleft"] = 1418.00012207031,
+			["Lock"] = 1,
+			["AutoShare"] = 0,
+			["TextHide"] = 0,
+			["Texttop"] = -830.76913686899,
+			["TextLock"] = 0,
+			["alpha"] = 1,
+			["top"] = -567.999908447266,
+			["XPInvert"] = 0,
+			["NewsLock"] = 0,
+			["left"] = 623.000244140625,
+			["TextInvert"] = 0,
+			["XPtop"] = -878.999313354492,
+		},
+	},
+}
+ConsLegionSteps = {
+	["Emmarosa-Stormrage"] = {
+	},
+}
+CL_NewsEpics = {
+	{
+		["Name"] = "Arikash",
+		["Loot"] = "Ancient Keeper's Brooch",
+		["Link"] = "|cffa335ee|Hitem:141667::::::::110:577:8388608:11::1:::|h[Ancient Keeper's Brooch]|h|r",
+	}, -- [1]
+	{
+		["Name"] = "Emmarosa",
+		["Loot"] = "Majestic Zircon",
+		["Link"] = "|cffa335ee|Hitem:36925::::::::100:259::::::|h[Majestic Zircon]|h|r",
+	}, -- [2]
+	{
+		["Name"] = "Emmarosa",
+		["Loot"] = "Majestic Zircon",
+		["Link"] = "|cffa335ee|Hitem:36925::::::::100:259::::::|h[Majestic Zircon]|h|r",
+	}, -- [3]
+	{
+		["Name"] = "Emmarosa",
+		["Loot"] = "Lightstone",
+		["Link"] = "|cffa335ee|Hitem:71806::::::::100:259::::::|h[Lightstone]|h|r",
+	}, -- [4]
+	["Nr"] = 4,
+}
+CL_Temp_Import = nil
+CL_AddonUpdate = {
+}

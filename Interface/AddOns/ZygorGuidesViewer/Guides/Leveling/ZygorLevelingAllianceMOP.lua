@@ -4278,7 +4278,7 @@ accept Heroes of the Shado-Pan##30980 |goto 54.0,87.0
 step "Fleetwingcorpse"
 Use the Wu Kao Torch on Korth'thik Fleetwing corpses |use Wu Kao Torch##83768
 Burn 10 Kor'thik Fleetwing corpses |q 31032/1 |goto 52.5,83.6
-step "Kor
+step "Kor"
 Follow the path up |goto 54.2,85.3 < 5 |only if walking
 kill 12 Kor'thik Fleetwing##62128+ |q 30977/1 |goto 52.5,83.6
 step
@@ -5494,9 +5494,6 @@ description="This guide will walk you through the Monk quest at level 60.",
 step
 Upon reaching level 60 as a Monk, you will automatically accept a class quest:
 accept The Peak of Serenity - Continue Your Training##31859
-step
-Use your Zen Pilgrimage ability |cast Zen Pilgrimage##126892
-Travel to the Peak of Serenity |goto Kun-Lai Summit 48.6,42.9 |noway |c |q 31859
 step
 talk Master Hight##66260
 turnin The Peak of Serenity - Continue Your Training##31859 |goto Kun-Lai Summit 48.6,42.7

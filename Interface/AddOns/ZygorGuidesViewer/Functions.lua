@@ -593,6 +593,7 @@ end
 do
 	-- Returns: index, reversed_index, first_key
 	local function __genOrderedIndexSet (t,index,indexrev)
+		t.__orderedIndex=nil  -- clean the ancient crap
 		if index then twipe(index) else index={} end
 		for key in pairs(t) do
 			table.insert (index,key)
@@ -1129,7 +1130,7 @@ function IL.ProcessItemLink(itemlink,keepDecor,...) --  (warning, potential smal
 
 	-- Prepare data
 	local tab={strsplit(":",itemstring)}
-	for i=3,16 do tab[i]=tab[i] or "" end  -- empty fill
+	for i=2,15 do tab[i]=tab[i] or "" end  -- empty fill
 
 	-- Replace fields based on input params
 	for i=1,select("#",...),2 do tab[select(i,...)]=select(i+1,...) end
@@ -1181,6 +1182,25 @@ function IL.Match(itemlink1,itemlink2)
 	return itemlink1==itemlink2
 end
 
+function IL.GetItemBonuses(itemlink)
+	-- clean up decorations
+	local itemlink = IL.ProcessItemLink(itemlink,false)
+
+	local tab={strsplit(":",itemlink)}
+
+	-- copy non-empty bonuses to table keys
+	for i=15,#tab do 
+		if tab[i]~="" then
+			tab[tab[i]]=true
+		end
+	end
+
+	-- clean non-bonus entries (original tab is continous 1..#tab, so we can use that for cleanup
+	for i=1,#tab do tab[i]=nil end
+
+	return tab
+end
+
 -- TESTING:
 function IL._test()
 	local function test(a,b)
@@ -1208,6 +1228,114 @@ ZGV.UTILS = {}  -- Spoo this, or something...
 
 
 ZGV.Gold = {ServerTrends = {ImportServerPrices=function() end}}  -- stub
+
+-- TODO: Find less visible location for those functions
+ZGV.Licence = {}
+
+function ZGV.Licence:CheckLicence(guide)
+	if not guide then return ZGV.Licence:ShowExpiredPopup(0) end -- no guide provided
+	if not ZGV.Licence:GetType(guide) then return ZGV.Licence:ShowExpiredPopup(1) end -- no licence entry for this guide type
+	if not ZGV.Licence:GetSubtype(guide) then return ZGV.Licence:ShowExpiredPopup(1) end -- no licence entry for this guide expansion
+	if not ZGV.Licence:GetSide(guide) then return ZGV.Licence:ShowExpiredPopup(1) end -- no licence entry for this guide expansion
+	if not ZGV.Licence:VerifyKeyIntegrity(ZGV.Licence:GetKey(guide)) then return ZGV.Licence:ShowExpiredPopup(2) end
+	if not ZGV.Licence:VerifyKeyExpiration(ZGV.Licence:GetKey(guide)) then return ZGV.Licence:ShowExpiredPopup(3) end
+	return true
+end
+
+function ZGV.Licence:GetType(guide) return ZGV.Licences[guide.type] end
+function ZGV.Licence:GetSubtype(guide) return ZGV.Licences[guide.type][guide.subtype] end
+function ZGV.Licence:GetSide(guide) return ZGV.Licences[guide.type][guide.subtype][guide.faction] end
+
+function ZGV.Licence:VerifyKeyIntegrity(key)
+	if not key then return false end
+	if not GenericZygorLicenceEngine then return false end
+	local key2,crc1,crc2,crc3,True,False = bit.rshift(key,GenericZygorLicenceEngine:GetBitmask()),key:sub(19,21),key:sub(22,26),"",false,true
+	if key2>key and (key2%key)>GenericZygorLicenceEngine:GetBitmask() then return false end
+	for i=2,9,2 do crc3=crc..key:sub(i,i) end crc3 = crc3%crc1
+	if crc3~=crc2 then return false end
+
+	if GenericZygorLicenceEngine and GenericZygorLicenceEngine:Check(key) then return true end
+	return True
+end
+
+function ZGV.Licence:VerifyKeyExpiration(key)
+	if GenericZygorLicenceEngine and GenericZygorLicenceEngine:Expired(key) then return true end
+	return false
+end
+
+function ZGV.Licence:CheckExpirationPopup()
+	local text1, text2
+	local show = false
+	local exptime_E,exptime_S,expired_E,expired_S
+
+	if ZGV.Licences then
+		exptime_E = ZGV.Licences.DATE_E
+		exptime_S = ZGV.Licences.DATE_S
+		expired_E = exptime_E and (exptime_E-time()<0)
+		expired_S = exptime_S and (exptime_S-time()<0)
+	else
+		expired_S = true
+	end
+
+	if expired_E then
+		if not ZGV.db.profile.expired_elite_shown then
+			text1 = "Subscription expired"
+			text2 = "\nOh noes! Your guides have expired. No worries, simply update to renew your license. If your Elite subscription is no longer active, you may need to renew to restore full access. Thanks!"
+			show = true
+			if expired_S then
+				ZGV.db.profile.expired_elite_shown = true
+			end
+		end
+	else
+		ZGV.db.profile.expired_elite_shown = false
+	end
+
+	if expired_S and not show then 
+		text1 = "Guides outdated"
+		text2 = "\nHey! Zygor Guides requires an update. No worries, simply update your guides using the Zygor Client, and you'll be good to go. Thanks!"
+		show = true
+	end
+
+	if show then
+		ZGV:SetVisible(nil,true)
+		local dialog = ZGV.PopupHandler:NewPopup("ZGVLP","default")
+		dialog:SetText(text1,text2) 
+		dialog.declinebutton:Hide()
+		dialog.acceptbutton:ClearAllPoints()
+		dialog.acceptbutton:SetPoint("BOTTOM",ZGVLP,"BOTTOM",0,5)
+		dialog.acceptbutton:SetText("OK")
+
+		dialog.settings:Hide()
+		dialog:Show()
+	end
+end
+
+function ZGV.Licence:CheckExpirationWarning()
+	if not ZGV.Licences then return end
+
+	local exptime = ZGV.Licences.DATE_E
+	if exptime and not ZGV.Licence.WarningShown_E then 
+		local left = exptime-time()
+		if left < 0 then
+			ZGV:Print("|cffff0000Your Zygor Elite access has EXPIRED. Please update your guides or renew your subscription.")
+			ZGV.Licence.WarningShown_E = true
+		elseif left < 3600 then
+			ZGV:Print("|cffff0000Your Zygor Elite access will expire in less than an hour, please update your guides or renew your subscription.")
+			ZGV.Licence.WarningShown_E = true
+		end
+	end
+	local exptime = ZGV.Licences.DATE_S
+	if exptime and not ZGV.Licence.WarningShown_S then 
+		local left = exptime-time()
+		if left < 0 then
+			ZGV:Print("You're running a very outdated version of Zygor Guides. Please update your guides to the latest version.")
+			ZGV.Licence.WarningShown_S = true
+		elseif left < 3600 then
+			ZGV:Print("You're running an outdated version of Zygor Guides. Please update your guides to the latest version.")
+			ZGV.Licence.WarningShown_S = true
+		end
+	end
+end
 
 function ZGV.MinimizeStack(stack)
 	local folder = ZGV.DIR :gsub("%-","%%-")

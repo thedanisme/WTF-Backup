@@ -337,6 +337,7 @@ function Appraiser:Update()
 end
 
 function Appraiser:Scan()
+	if ZGVG.Scan.state~="SS_IDLE" then return end
 	Appraiser.SellingInProgress = false
 	Appraiser.InventoryItems = Appraiser.InventoryItems or {}
 
@@ -356,6 +357,8 @@ function Appraiser:Scan()
 end
 
 function Appraiser:StartManualScan()
+	if ZGVG.Scan.state~="SS_IDLE" then return end
+
 	Appraiser.SellingInProgress = false
 
 	if self.manualScanning then return end
@@ -489,6 +492,8 @@ function Appraiser:SearchForItem(item)
 end
 
 local function Appraiser_SetTooltipData(tooltip, itemLink)
+	if not itemLink then return end -- blizz is no longer guaranteed to provide itemlinks on time
+
 	local function OldColor(timestamp,red,yellow)
 		local age=time()-timestamp
 		if age>red then
@@ -655,7 +660,7 @@ local function Appraiser_ClearTooltipData(tooltip, ...)
 	Appraiser.TooltipPatched = false
 end
 
-local function EventHandler(self, event, ...)
+function Appraiser.EventHandler(self, event, ...)
 	args = {...}
 	if not ZGV.db.profile.auction_enable then return end
 	if event=="AUCTION_HOUSE_SHOW" then
@@ -664,7 +669,7 @@ local function EventHandler(self, event, ...)
 		Appraiser.InventoryAuctions = nil
 		Appraiser:ShowWindow()
 		Appraiser.AttemptingToBuyout = false
-		Appraiser:GetInventoryItems()
+		Appraiser:GetInventoryItems("clearcache")
 		Appraiser:WipeSellHistoricalData()
 		Appraiser:WipeSellPricingData()
 		Appraiser.ActiveSearch = nil
@@ -689,14 +694,14 @@ local function EventHandler(self, event, ...)
 	elseif event=="AUCTION_ITEM_LIST_UPDATE" then
 		Appraiser.WaitingForAuctionData = nil
 	elseif event=="BAG_UPDATE_DELAYED" then
-		Appraiser:GetInventoryItems()
+		Appraiser:GetInventoryItems("clearcache")
 		ZGV:ScheduleTimer(function() Appraiser:SelectShoppingRow() end,0)
 	elseif event=="AUCTION_OWNED_LIST_UPDATE" then
 		--Appraiser.InventoryAuctions = {}
 		--Appraiser.ActiveSellingItem = nil
 		--Appraiser:WipeSellHistoricalData()
 		--Appraiser:WipeSellPricingData()
-		Appraiser:GetInventoryItems()
+		Appraiser:GetInventoryItems("clearcache")
 		ZGV:ScheduleTimer(function() Appraiser:SelectShoppingRow() end,0)
 	end
 
@@ -993,9 +998,9 @@ function Appraiser:CreateTrackerFrame()
 	Appraiser.Events:RegisterEvent("BAG_UPDATE_DELAYED")
 	Appraiser.Events:RegisterEvent("CHAT_MSG_SYSTEM")
 	Appraiser.Events:RegisterEvent("UI_ERROR_MESSAGE")
-	ZGV:AddMessage("GOLD_SCANNED",EventHandler)
-	ZGV:AddMessage("SS_STATE_CHANGE",EventHandler)
-	Appraiser.Events:SetScript("OnEvent",EventHandler)
+	ZGV:AddMessage("GOLD_SCANNED",Appraiser.EventHandler)
+	ZGV:AddMessage("SS_STATE_CHANGE",Appraiser.EventHandler)
+	Appraiser.Events:SetScript("OnEvent",Appraiser.EventHandler)
 	Appraiser.Events:SetScript("OnUpdate",UpdateHandler)
 
 	hooksecurefunc (GameTooltip, "SetMerchantItem", function(tip, index) Appraiser_SetTooltipData(tip, GetMerchantItemLink(index)) end )
@@ -1068,4 +1073,6 @@ tinsert(ZGV.startups,{"Auctiontools core",function(self)
 	Appraiser.GuideBuyItems = Appraiser.GuideBuyItems or {}
 	Appraiser.ManualBuyItems = ZGV.db.char.ATsearchitems or {}
 	ZGV.db.char.GGbuyitems = ZGV.db.char.GGbuyitems or {}
+	Appraiser.Loaded = true	
+	ZGV.db.profile.aucmode = ZGV.db.profile.aucmode or "unit"
 end})

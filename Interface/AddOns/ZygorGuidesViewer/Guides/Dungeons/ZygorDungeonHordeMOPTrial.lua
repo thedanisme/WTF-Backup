@@ -18,7 +18,6 @@ accept A New Enemy##30969 |goto Ragefire Chasm/1 67.8,11.4
 accept The Dark Shaman##30983 |goto Ragefire Chasm/1 67.8,11.4
 step
 talk Commander Bagran##61724
-accept Animal Control##30982 |goto 68.3,12.8
 accept No Orc Left Behind##30984 |goto 68.3,12.8
 step
 map Ragefire Chasm/1
@@ -32,8 +31,7 @@ kill Mature Flame Hound##61658 |n
 Rescue the first Kor'kron Scout |q No Orc Left Behind##30984/1 |count 1 |goto 68.0,60.4
 only if not completedq(30984)
 step
-kill Adarogg##61408 |n |only if default
-kill Adarogg##61408 |q Animal Control##30982/1 |only if havequest(30982)
+kill Adarogg##61408 |n
 Avoid standing in the area targeted by Adarogg's _Inferno Charge_. It will deal physical damage to all nearby players
 _Healer:_
 |tip Adarogg will periodically use Flame Breath on a random player dealing fire damage to them. This will need to be healed
@@ -80,8 +78,7 @@ path	51.1,37.6	50.0,47.6	40.2,46.4
 path	41.2,57.0
 Follow the path |goto 41.2,57.0 |c |noway
 step
-kill Slagmaw##61463 |n |only if default
-kill Slagmaw##61463 |q Animal Control##30982/2 |only if havequest(30982)
+kill Slagmaw##61463 |n
 Slagmaw will randomly _Lava Spit_ at a player's location. Avoid standing within 3 yards of other players
 |tip Slagmaw will periodically Submerge, reappearing at a random location.
 _Healers:_
@@ -115,7 +112,6 @@ turnin A New Enemy##30969 |goto 33.5,80.6
 turnin The Dark Shaman##30983 |goto 33.5,80.6
 step
 talk Commander Bagran##61724
-turnin Animal Control##30982 |goto 31.7,76.5
 turnin No Orc Left Behind##30984 |goto 31.7,76.5
 step
 Congratulations, you have completed Ragefire Chasm

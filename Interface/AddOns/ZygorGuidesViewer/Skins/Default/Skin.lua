@@ -257,9 +257,11 @@ function Skin:AlignFrame()
 	--]]
 
 	frame:SetAlpha(ZGV.db.profile.opacitymain)
+	--[[
 	if ZGV.CV.Frame then
 		ZGV.CV.Frame:SetAlpha(ZGV.db.profile.opacitymain)
 	end
+	--]]
 
 	local upsideup = not ZGV.db.profile.resizeup
 
