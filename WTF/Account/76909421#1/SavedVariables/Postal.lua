@@ -16,7 +16,7 @@ Postal3DB = {
 				"Danoh|Stormrage|Alliance|100|HUNTER", -- [11]
 				"Dosnutz|Stormrage|Alliance|100|MAGE", -- [12]
 				"Druidann|Stormrage|Alliance|101|DRUID", -- [13]
-				"Emmarosa|Stormrage|Alliance|102|ROGUE", -- [14]
+				"Emmarosa|Stormrage|Alliance|103|ROGUE", -- [14]
 				"Horny|Bloodhoof|Horde|7|SHAMAN", -- [15]
 				"Iphone|Bloodhoof|Horde|1|SHAMAN", -- [16]
 				"Jimbo|Ner'zhul|Alliance|13|DRUID", -- [17]

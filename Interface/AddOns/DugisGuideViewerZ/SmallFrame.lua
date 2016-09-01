@@ -1225,6 +1225,8 @@ function SmallFrame:Initialize()
             
             if DugiGuidesIsLoading then
                 SmallFrame.Frame:Hide()	
+			else
+				SmallFrame.Frame:Show()
             end
 		end
 		

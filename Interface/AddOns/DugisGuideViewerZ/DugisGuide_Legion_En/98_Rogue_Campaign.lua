@@ -56,8 +56,8 @@ A Cloak and Dagger |QID|42539| |N|Auto Quest| |PRE|42501|
 K (npc:107837) |QID|42539.3| |N|Attempt to kill (npc:107837) in {Darkshire} (71.83, 47.00)| |Z|34 0| |NPC|107837| |PRE|42501|
 N (item:138112) |QID|42539.1| |N|Collect the (item:138112) in {Darkshire} (73.85, 48.52)| |Z|34 0| |PRE|42501|
 N (item:138113) |QID|42539.2| |N|Collect the (item:138113) in {Darkshire} (73.63, 43.71)| |Z|34 0| |PRE|42501|
-T Cloak and Dagger |QID|42539| |N|Field Turn-In| |PRE|42501| |PRE|42501|
-A Preparation |QID|42568| |N|Auto Quest|
+T Cloak and Dagger |QID|42539| |N|Field Turn-In| |PRE|42501| 
+A Preparation |QID|42568| |N|Auto Quest| |PRE|42501|
 
 T Preparation |QID|42568| |N|(npc:107979) in {Elwynn Forest} (36.81, 52.67)| |Z|30 0| |NPC|107979| |PRE|42501|
 A The Unseen Blade |QID|42504| |N|(npc:107979) in {Elwynn Forest} (36.81, 52.67)| |Z|30 0| |NPC|107979| |PRE|42501|

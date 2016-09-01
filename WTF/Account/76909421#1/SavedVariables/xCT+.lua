@@ -953,12 +953,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[196278] = {
+					[195256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["interval"] = 1.5,
+						["class"] = "SHAMAN",
+						["desc"] = 263,
 					},
 					[199054] = {
 						["enabled"] = true,
@@ -967,12 +967,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[195256] = {
+					[105421] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "SHAMAN",
-						["desc"] = 263,
+						["interval"] = 0.5,
+						["class"] = "PALADIN",
+						["desc"] = 0,
 					},
 					[104318] = {
 						["enabled"] = true,
@@ -1534,12 +1534,12 @@ xCTSavedDB = {
 						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Bodyguards)|r",
 						["desc"] = "Bodyguard: Vivianne",
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -1569,12 +1569,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[185779] = {
 						["enabled"] = true,
@@ -1618,12 +1618,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[146067] = {
 						["enabled"] = true,
@@ -1660,12 +1660,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 66,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -1905,12 +1905,12 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 255,
 					},
-					[113780] = {
+					[201754] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "ROGUE",
-						["desc"] = 259,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[173010] = {
 						["enabled"] = true,
@@ -1926,12 +1926,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[218617] = {
+					[113780] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["interval"] = 0.5,
+						["class"] = "ROGUE",
+						["desc"] = 259,
 					},
 					[194153] = {
 						["enabled"] = true,
@@ -1989,12 +1989,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[213771] = {
+					[211727] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DRUID",
-						["desc"] = 104,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[7922] = {
 						["enabled"] = true,
@@ -2010,12 +2010,12 @@ xCTSavedDB = {
 						["class"] = "DEMONHUNTER",
 						["desc"] = 577,
 					},
-					[211727] = {
+					[118000] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[212621] = {
 						["enabled"] = true,
@@ -2038,19 +2038,19 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Nature Healing (Monks, Druids)",
 					},
+					[980] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 2.5,
+						["class"] = "WARLOCK",
+						["desc"] = 265,
+					},
 					[88263] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
 						["class"] = "PALADIN",
 						["desc"] = 66,
-					},
-					[206930] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "DEATHKNIGHT",
-						["desc"] = 250,
 					},
 					[211545] = {
 						["enabled"] = true,
@@ -2136,12 +2136,12 @@ xCTSavedDB = {
 						["class"] = "DRUID",
 						["desc"] = 105,
 					},
-					[120361] = {
+					[184256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "HUNTER",
-						["desc"] = 0,
+						["interval"] = 2.5,
+						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
+						["desc"] = "Discordant Chorus",
 					},
 					[70890] = {
 						["enabled"] = true,
@@ -2339,19 +2339,19 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Healing (Priests, Paladins)",
 					},
-					[184256] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
-						["desc"] = "Discordant Chorus",
-					},
 					[153596] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "MAGE",
 						["desc"] = 64,
+					},
+					[120361] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 1.5,
+						["class"] = "HUNTER",
+						["desc"] = 0,
 					},
 					[184707] = {
 						["enabled"] = true,
@@ -2381,12 +2381,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Damage",
 					},
-					[980] = {
+					[206930] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "WARLOCK",
-						["desc"] = 265,
+						["interval"] = 0.5,
+						["class"] = "DEATHKNIGHT",
+						["desc"] = 250,
 					},
 					[84721] = {
 						["enabled"] = true,
@@ -2402,12 +2402,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 62,
 					},
-					[118000] = {
+					[213771] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["class"] = "DRUID",
+						["desc"] = 104,
 					},
 					[81751] = {
 						["enabled"] = true,
@@ -2458,12 +2458,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[201754] = {
+					[218617] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 1.5,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[22482] = {
 						["enabled"] = true,
@@ -2892,12 +2892,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[105421] = {
+					[196278] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 0,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[132467] = {
 						["enabled"] = true,
@@ -4746,12 +4746,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[105421] = {
+					[196278] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 0,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[199054] = {
 						["enabled"] = true,
@@ -4760,12 +4760,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[196278] = {
+					[195256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["interval"] = 1.5,
+						["class"] = "SHAMAN",
+						["desc"] = 263,
 					},
 					[104318] = {
 						["enabled"] = true,
@@ -5327,12 +5327,12 @@ xCTSavedDB = {
 						["class"] = "MONK",
 						["desc"] = 269,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -5411,12 +5411,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[156287] = {
 						["enabled"] = true,
@@ -5453,12 +5453,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -5698,12 +5698,12 @@ xCTSavedDB = {
 						["class"] = "ROGUE",
 						["desc"] = 260,
 					},
-					[218617] = {
+					[113780] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["interval"] = 0.5,
+						["class"] = "ROGUE",
+						["desc"] = 259,
 					},
 					[173010] = {
 						["enabled"] = true,
@@ -5719,12 +5719,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[201754] = {
+					[218617] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 1.5,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[194153] = {
 						["enabled"] = true,
@@ -5782,12 +5782,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[118000] = {
+					[213771] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["class"] = "DRUID",
+						["desc"] = 104,
 					},
 					[210833] = {
 						["enabled"] = true,
@@ -5803,12 +5803,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[213771] = {
+					[211727] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DRUID",
-						["desc"] = 104,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[84721] = {
 						["enabled"] = true,
@@ -5831,19 +5831,19 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 62,
 					},
+					[88263] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 0.5,
+						["class"] = "PALADIN",
+						["desc"] = 66,
+					},
 					[206930] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
 						["class"] = "DEATHKNIGHT",
 						["desc"] = 250,
-					},
-					[980] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "WARLOCK",
-						["desc"] = 265,
 					},
 					[211545] = {
 						["enabled"] = true,
@@ -5901,12 +5901,12 @@ xCTSavedDB = {
 						["class"] = "WARRIOR",
 						["desc"] = 72,
 					},
-					[120361] = {
+					[184256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "HUNTER",
-						["desc"] = 0,
+						["interval"] = 2.5,
+						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
+						["desc"] = "Discordant Chorus",
 					},
 					[183042] = {
 						["enabled"] = true,
@@ -5922,19 +5922,19 @@ xCTSavedDB = {
 						["class"] = "DEATHKNIGHT",
 						["desc"] = 250,
 					},
+					[120361] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 1.5,
+						["class"] = "HUNTER",
+						["desc"] = 0,
+					},
 					[153596] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "MAGE",
 						["desc"] = 64,
-					},
-					[184256] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
-						["desc"] = "Discordant Chorus",
 					},
 					[198756] = {
 						["enabled"] = true,
@@ -6174,12 +6174,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Damage",
 					},
-					[88263] = {
+					[980] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 66,
+						["interval"] = 2.5,
+						["class"] = "WARLOCK",
+						["desc"] = 265,
 					},
 					[148235] = {
 						["enabled"] = true,
@@ -6195,12 +6195,12 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 254,
 					},
-					[211727] = {
+					[118000] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[81751] = {
 						["enabled"] = true,
@@ -6251,12 +6251,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[113780] = {
+					[201754] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "ROGUE",
-						["desc"] = 259,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[13812] = {
 						["enabled"] = true,
@@ -6405,12 +6405,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[227681] = {
 						["enabled"] = true,
@@ -6685,12 +6685,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[195256] = {
+					[105421] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "SHAMAN",
-						["desc"] = 263,
+						["interval"] = 0.5,
+						["class"] = "PALADIN",
+						["desc"] = 0,
 					},
 					[132467] = {
 						["enabled"] = true,
@@ -8405,12 +8405,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[196278] = {
+					[195256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["interval"] = 1.5,
+						["class"] = "SHAMAN",
+						["desc"] = 263,
 					},
 					[199054] = {
 						["enabled"] = true,
@@ -8419,12 +8419,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[195256] = {
+					[105421] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "SHAMAN",
-						["desc"] = 263,
+						["interval"] = 0.5,
+						["class"] = "PALADIN",
+						["desc"] = 0,
 					},
 					[104318] = {
 						["enabled"] = true,
@@ -8986,12 +8986,12 @@ xCTSavedDB = {
 						["class"] = "WARRIOR",
 						["desc"] = 72,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -9021,12 +9021,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[227681] = {
 						["enabled"] = true,
@@ -9070,12 +9070,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[146067] = {
 						["enabled"] = true,
@@ -9112,12 +9112,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -9357,12 +9357,12 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 255,
 					},
-					[113780] = {
+					[201754] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "ROGUE",
-						["desc"] = 259,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[173010] = {
 						["enabled"] = true,
@@ -9378,12 +9378,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[218617] = {
+					[113780] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["interval"] = 0.5,
+						["class"] = "ROGUE",
+						["desc"] = 259,
 					},
 					[194153] = {
 						["enabled"] = true,
@@ -9441,12 +9441,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[213771] = {
+					[211727] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DRUID",
-						["desc"] = 104,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[7922] = {
 						["enabled"] = true,
@@ -9462,12 +9462,12 @@ xCTSavedDB = {
 						["class"] = "DEMONHUNTER",
 						["desc"] = 577,
 					},
-					[211727] = {
+					[118000] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[148235] = {
 						["enabled"] = true,
@@ -9490,19 +9490,19 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 254,
 					},
+					[980] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 2.5,
+						["class"] = "WARLOCK",
+						["desc"] = 265,
+					},
 					[88263] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
 						["class"] = "PALADIN",
 						["desc"] = 66,
-					},
-					[206930] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "DEATHKNIGHT",
-						["desc"] = 250,
 					},
 					[211545] = {
 						["enabled"] = true,
@@ -9588,12 +9588,12 @@ xCTSavedDB = {
 						["class"] = "DRUID",
 						["desc"] = 105,
 					},
-					[120361] = {
+					[184256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "HUNTER",
-						["desc"] = 0,
+						["interval"] = 2.5,
+						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
+						["desc"] = "Discordant Chorus",
 					},
 					[70890] = {
 						["enabled"] = true,
@@ -9791,19 +9791,19 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Healing (Priests, Paladins)",
 					},
-					[184256] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
-						["desc"] = "Discordant Chorus",
-					},
 					[153596] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "MAGE",
 						["desc"] = 64,
+					},
+					[120361] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 1.5,
+						["class"] = "HUNTER",
+						["desc"] = 0,
 					},
 					[184707] = {
 						["enabled"] = true,
@@ -9833,12 +9833,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Damage",
 					},
-					[980] = {
+					[206930] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "WARLOCK",
-						["desc"] = 265,
+						["interval"] = 0.5,
+						["class"] = "DEATHKNIGHT",
+						["desc"] = 250,
 					},
 					[211088] = {
 						["enabled"] = true,
@@ -9854,12 +9854,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[118000] = {
+					[213771] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["class"] = "DRUID",
+						["desc"] = 104,
 					},
 					[81751] = {
 						["enabled"] = true,
@@ -9910,12 +9910,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[201754] = {
+					[218617] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 1.5,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[22482] = {
 						["enabled"] = true,
@@ -10344,12 +10344,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[105421] = {
+					[196278] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 0,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[132467] = {
 						["enabled"] = true,
@@ -12028,12 +12028,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[195256] = {
+					[105421] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "SHAMAN",
-						["desc"] = 263,
+						["interval"] = 0.5,
+						["class"] = "PALADIN",
+						["desc"] = 0,
 					},
 					[199054] = {
 						["enabled"] = true,
@@ -12042,12 +12042,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[105421] = {
+					[196278] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 0,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[104318] = {
 						["enabled"] = true,
@@ -12609,12 +12609,12 @@ xCTSavedDB = {
 						["class"] = "MONK",
 						["desc"] = 269,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -12693,12 +12693,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[156287] = {
 						["enabled"] = true,
@@ -12735,12 +12735,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -12980,12 +12980,12 @@ xCTSavedDB = {
 						["class"] = "ROGUE",
 						["desc"] = 260,
 					},
-					[201754] = {
+					[218617] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 1.5,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[173010] = {
 						["enabled"] = true,
@@ -13001,12 +13001,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[113780] = {
+					[201754] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "ROGUE",
-						["desc"] = 259,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[194153] = {
 						["enabled"] = true,
@@ -13064,12 +13064,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[211727] = {
+					[118000] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[210833] = {
 						["enabled"] = true,
@@ -13085,12 +13085,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[118000] = {
+					[213771] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["class"] = "DRUID",
+						["desc"] = 104,
 					},
 					[84721] = {
 						["enabled"] = true,
@@ -13113,19 +13113,19 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 62,
 					},
+					[206930] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 0.5,
+						["class"] = "DEATHKNIGHT",
+						["desc"] = 250,
+					},
 					[980] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "WARLOCK",
 						["desc"] = 265,
-					},
-					[88263] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 66,
 					},
 					[211545] = {
 						["enabled"] = true,
@@ -13183,12 +13183,12 @@ xCTSavedDB = {
 						["class"] = "WARRIOR",
 						["desc"] = 72,
 					},
-					[153596] = {
+					[120361] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "MAGE",
-						["desc"] = 64,
+						["interval"] = 1.5,
+						["class"] = "HUNTER",
+						["desc"] = 0,
 					},
 					[183042] = {
 						["enabled"] = true,
@@ -13204,19 +13204,19 @@ xCTSavedDB = {
 						["class"] = "DEATHKNIGHT",
 						["desc"] = 250,
 					},
+					[153596] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 2.5,
+						["class"] = "MAGE",
+						["desc"] = 64,
+					},
 					[184256] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
 						["desc"] = "Discordant Chorus",
-					},
-					[120361] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "HUNTER",
-						["desc"] = 0,
 					},
 					[198756] = {
 						["enabled"] = true,
@@ -13456,12 +13456,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Damage",
 					},
-					[206930] = {
+					[88263] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DEATHKNIGHT",
-						["desc"] = 250,
+						["class"] = "PALADIN",
+						["desc"] = 66,
 					},
 					[148235] = {
 						["enabled"] = true,
@@ -13477,12 +13477,12 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 254,
 					},
-					[213771] = {
+					[211727] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DRUID",
-						["desc"] = 104,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[81751] = {
 						["enabled"] = true,
@@ -13533,12 +13533,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[218617] = {
+					[113780] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["interval"] = 0.5,
+						["class"] = "ROGUE",
+						["desc"] = 259,
 					},
 					[13812] = {
 						["enabled"] = true,
@@ -13687,12 +13687,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[227681] = {
 						["enabled"] = true,
@@ -13967,12 +13967,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[196278] = {
+					[195256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["interval"] = 1.5,
+						["class"] = "SHAMAN",
+						["desc"] = 263,
 					},
 					[132467] = {
 						["enabled"] = true,
@@ -15299,11 +15299,12 @@ xCTSavedDB = {
 						["prep"] = 0,
 						["interval"] = 3,
 					},
-					[155158] = {
+					[159238] = {
 						["enabled"] = true,
-						["class"] = "MAGE",
 						["prep"] = 0,
-						["interval"] = 4.5,
+						["interval"] = 3.5,
+						["class"] = "ITEM",
+						["desc"] = "Shattered Hand (Weapon Enchant)",
 					},
 					[153596] = {
 						["enabled"] = true,
@@ -15325,12 +15326,11 @@ xCTSavedDB = {
 						["class"] = "ITEM",
 						["desc"] = "Shredder",
 					},
-					[159238] = {
+					[132463] = {
 						["enabled"] = true,
+						["class"] = "MONK",
 						["prep"] = 0,
-						["interval"] = 3.5,
-						["class"] = "ITEM",
-						["desc"] = "Shattered Hand (Weapon Enchant)",
+						["interval"] = 3,
 					},
 					[101423] = {
 						["enabled"] = true,
@@ -15357,11 +15357,11 @@ xCTSavedDB = {
 						["prep"] = 0,
 						["interval"] = 3,
 					},
-					[132463] = {
+					[155158] = {
 						["enabled"] = true,
-						["class"] = "MONK",
+						["class"] = "MAGE",
 						["prep"] = 0,
-						["interval"] = 3,
+						["interval"] = 4.5,
 					},
 					[117993] = {
 						["enabled"] = true,
@@ -17172,12 +17172,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[196278] = {
+					[195256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["interval"] = 1.5,
+						["class"] = "SHAMAN",
+						["desc"] = 263,
 					},
 					[199054] = {
 						["enabled"] = true,
@@ -17186,12 +17186,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[195256] = {
+					[105421] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "SHAMAN",
-						["desc"] = 263,
+						["interval"] = 0.5,
+						["class"] = "PALADIN",
+						["desc"] = 0,
 					},
 					[104318] = {
 						["enabled"] = true,
@@ -17753,12 +17753,12 @@ xCTSavedDB = {
 						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Bodyguards)|r",
 						["desc"] = "Bodyguard: Vivianne",
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -17788,12 +17788,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[185779] = {
 						["enabled"] = true,
@@ -17837,12 +17837,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[146067] = {
 						["enabled"] = true,
@@ -17879,12 +17879,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 66,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -18124,12 +18124,12 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 255,
 					},
-					[113780] = {
+					[201754] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "ROGUE",
-						["desc"] = 259,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[173010] = {
 						["enabled"] = true,
@@ -18145,12 +18145,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[218617] = {
+					[113780] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["interval"] = 0.5,
+						["class"] = "ROGUE",
+						["desc"] = 259,
 					},
 					[194153] = {
 						["enabled"] = true,
@@ -18208,12 +18208,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[213771] = {
+					[211727] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DRUID",
-						["desc"] = 104,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[7922] = {
 						["enabled"] = true,
@@ -18229,12 +18229,12 @@ xCTSavedDB = {
 						["class"] = "DEMONHUNTER",
 						["desc"] = 577,
 					},
-					[211727] = {
+					[118000] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[212621] = {
 						["enabled"] = true,
@@ -18257,19 +18257,19 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Nature Healing (Monks, Druids)",
 					},
+					[980] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 2.5,
+						["class"] = "WARLOCK",
+						["desc"] = 265,
+					},
 					[88263] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
 						["class"] = "PALADIN",
 						["desc"] = 66,
-					},
-					[206930] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "DEATHKNIGHT",
-						["desc"] = 250,
 					},
 					[211545] = {
 						["enabled"] = true,
@@ -18355,12 +18355,12 @@ xCTSavedDB = {
 						["class"] = "DRUID",
 						["desc"] = 105,
 					},
-					[120361] = {
+					[184256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "HUNTER",
-						["desc"] = 0,
+						["interval"] = 2.5,
+						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
+						["desc"] = "Discordant Chorus",
 					},
 					[70890] = {
 						["enabled"] = true,
@@ -18558,19 +18558,19 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Healing (Priests, Paladins)",
 					},
-					[184256] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
-						["desc"] = "Discordant Chorus",
-					},
 					[153596] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "MAGE",
 						["desc"] = 64,
+					},
+					[120361] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 1.5,
+						["class"] = "HUNTER",
+						["desc"] = 0,
 					},
 					[184707] = {
 						["enabled"] = true,
@@ -18600,12 +18600,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Damage",
 					},
-					[980] = {
+					[206930] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "WARLOCK",
-						["desc"] = 265,
+						["interval"] = 0.5,
+						["class"] = "DEATHKNIGHT",
+						["desc"] = 250,
 					},
 					[84721] = {
 						["enabled"] = true,
@@ -18621,12 +18621,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 62,
 					},
-					[118000] = {
+					[213771] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["class"] = "DRUID",
+						["desc"] = 104,
 					},
 					[81751] = {
 						["enabled"] = true,
@@ -18677,12 +18677,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[201754] = {
+					[218617] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 1.5,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[22482] = {
 						["enabled"] = true,
@@ -19111,12 +19111,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[105421] = {
+					[196278] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 0,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[132467] = {
 						["enabled"] = true,
@@ -20662,12 +20662,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[105421] = {
+					[196278] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 0,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[199054] = {
 						["enabled"] = true,
@@ -20676,12 +20676,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[196278] = {
+					[195256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["interval"] = 1.5,
+						["class"] = "SHAMAN",
+						["desc"] = 263,
 					},
 					[104318] = {
 						["enabled"] = true,
@@ -21243,12 +21243,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Healing (Priest, Paladin)",
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -21327,12 +21327,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[156287] = {
 						["enabled"] = true,
@@ -21369,12 +21369,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 66,
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -21614,12 +21614,12 @@ xCTSavedDB = {
 						["class"] = "ROGUE",
 						["desc"] = 260,
 					},
-					[218617] = {
+					[113780] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["interval"] = 0.5,
+						["class"] = "ROGUE",
+						["desc"] = 259,
 					},
 					[173010] = {
 						["enabled"] = true,
@@ -21635,12 +21635,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[201754] = {
+					[218617] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 1.5,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[194153] = {
 						["enabled"] = true,
@@ -21698,12 +21698,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[118000] = {
+					[213771] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["class"] = "DRUID",
+						["desc"] = 104,
 					},
 					[210833] = {
 						["enabled"] = true,
@@ -21719,12 +21719,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[213771] = {
+					[211727] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DRUID",
-						["desc"] = 104,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[211088] = {
 						["enabled"] = true,
@@ -21747,19 +21747,19 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
+					[88263] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 0.5,
+						["class"] = "PALADIN",
+						["desc"] = 66,
+					},
 					[206930] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
 						["class"] = "DEATHKNIGHT",
 						["desc"] = 250,
-					},
-					[980] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "WARLOCK",
-						["desc"] = 265,
 					},
 					[211545] = {
 						["enabled"] = true,
@@ -21817,12 +21817,12 @@ xCTSavedDB = {
 						["class"] = "WARRIOR",
 						["desc"] = 72,
 					},
-					[120361] = {
+					[184256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "HUNTER",
-						["desc"] = 0,
+						["interval"] = 2.5,
+						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
+						["desc"] = "Discordant Chorus",
 					},
 					[183042] = {
 						["enabled"] = true,
@@ -21838,19 +21838,19 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 255,
 					},
+					[120361] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 1.5,
+						["class"] = "HUNTER",
+						["desc"] = 0,
+					},
 					[153596] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "MAGE",
 						["desc"] = 64,
-					},
-					[184256] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
-						["desc"] = "Discordant Chorus",
 					},
 					[198756] = {
 						["enabled"] = true,
@@ -22090,12 +22090,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Damage",
 					},
-					[88263] = {
+					[980] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 66,
+						["interval"] = 2.5,
+						["class"] = "WARLOCK",
+						["desc"] = 265,
 					},
 					[212621] = {
 						["enabled"] = true,
@@ -22111,12 +22111,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Nature Healing (Monks, Druids)",
 					},
-					[211727] = {
+					[118000] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[81751] = {
 						["enabled"] = true,
@@ -22167,12 +22167,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[113780] = {
+					[201754] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "ROGUE",
-						["desc"] = 259,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[13812] = {
 						["enabled"] = true,
@@ -22321,12 +22321,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[185779] = {
 						["enabled"] = true,
@@ -22601,12 +22601,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[195256] = {
+					[105421] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "SHAMAN",
-						["desc"] = 263,
+						["interval"] = 0.5,
+						["class"] = "PALADIN",
+						["desc"] = 0,
 					},
 					[132467] = {
 						["enabled"] = true,
@@ -24283,12 +24283,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[105421] = {
+					[196278] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 0,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[199054] = {
 						["enabled"] = true,
@@ -24297,12 +24297,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[196278] = {
+					[195256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["interval"] = 1.5,
+						["class"] = "SHAMAN",
+						["desc"] = 263,
 					},
 					[104318] = {
 						["enabled"] = true,
@@ -24864,12 +24864,12 @@ xCTSavedDB = {
 						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Bodyguards)|r",
 						["desc"] = "Bodyguard: Vivianne",
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -24899,12 +24899,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[185779] = {
 						["enabled"] = true,
@@ -24948,12 +24948,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[146067] = {
 						["enabled"] = true,
@@ -24990,12 +24990,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 66,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -25235,12 +25235,12 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 255,
 					},
-					[218617] = {
+					[113780] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["interval"] = 0.5,
+						["class"] = "ROGUE",
+						["desc"] = 259,
 					},
 					[173010] = {
 						["enabled"] = true,
@@ -25256,12 +25256,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[201754] = {
+					[218617] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 1.5,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[194153] = {
 						["enabled"] = true,
@@ -25319,12 +25319,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[118000] = {
+					[213771] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["class"] = "DRUID",
+						["desc"] = 104,
 					},
 					[7922] = {
 						["enabled"] = true,
@@ -25340,12 +25340,12 @@ xCTSavedDB = {
 						["class"] = "DEMONHUNTER",
 						["desc"] = 577,
 					},
-					[213771] = {
+					[211727] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DRUID",
-						["desc"] = 104,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[212621] = {
 						["enabled"] = true,
@@ -25368,19 +25368,19 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Nature Healing (Monks, Druids)",
 					},
+					[88263] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 0.5,
+						["class"] = "PALADIN",
+						["desc"] = 66,
+					},
 					[206930] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
 						["class"] = "DEATHKNIGHT",
 						["desc"] = 250,
-					},
-					[980] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "WARLOCK",
-						["desc"] = 265,
 					},
 					[211545] = {
 						["enabled"] = true,
@@ -25466,12 +25466,12 @@ xCTSavedDB = {
 						["class"] = "DRUID",
 						["desc"] = 105,
 					},
-					[153596] = {
+					[120361] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "MAGE",
-						["desc"] = 64,
+						["interval"] = 1.5,
+						["class"] = "HUNTER",
+						["desc"] = 0,
 					},
 					[70890] = {
 						["enabled"] = true,
@@ -25669,19 +25669,19 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Healing (Priests, Paladins)",
 					},
-					[120361] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "HUNTER",
-						["desc"] = 0,
-					},
 					[184256] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
 						["desc"] = "Discordant Chorus",
+					},
+					[153596] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 2.5,
+						["class"] = "MAGE",
+						["desc"] = 64,
 					},
 					[184707] = {
 						["enabled"] = true,
@@ -25711,12 +25711,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Damage",
 					},
-					[88263] = {
+					[980] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 66,
+						["interval"] = 2.5,
+						["class"] = "WARLOCK",
+						["desc"] = 265,
 					},
 					[84721] = {
 						["enabled"] = true,
@@ -25732,12 +25732,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 62,
 					},
-					[211727] = {
+					[118000] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[81751] = {
 						["enabled"] = true,
@@ -25788,12 +25788,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[113780] = {
+					[201754] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "ROGUE",
-						["desc"] = 259,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[22482] = {
 						["enabled"] = true,
@@ -26222,12 +26222,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[195256] = {
+					[105421] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "SHAMAN",
-						["desc"] = 263,
+						["interval"] = 0.5,
+						["class"] = "PALADIN",
+						["desc"] = 0,
 					},
 					[132467] = {
 						["enabled"] = true,
@@ -27906,12 +27906,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[196278] = {
+					[195256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["interval"] = 1.5,
+						["class"] = "SHAMAN",
+						["desc"] = 263,
 					},
 					[199054] = {
 						["enabled"] = true,
@@ -27920,12 +27920,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[195256] = {
+					[105421] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "SHAMAN",
-						["desc"] = 263,
+						["interval"] = 0.5,
+						["class"] = "PALADIN",
+						["desc"] = 0,
 					},
 					[104318] = {
 						["enabled"] = true,
@@ -28487,12 +28487,12 @@ xCTSavedDB = {
 						["class"] = "MONK",
 						["desc"] = 269,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -28571,12 +28571,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[156287] = {
 						["enabled"] = true,
@@ -28613,12 +28613,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -28858,12 +28858,12 @@ xCTSavedDB = {
 						["class"] = "ROGUE",
 						["desc"] = 260,
 					},
-					[113780] = {
+					[201754] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "ROGUE",
-						["desc"] = 259,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[173010] = {
 						["enabled"] = true,
@@ -28879,12 +28879,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[218617] = {
+					[113780] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["interval"] = 0.5,
+						["class"] = "ROGUE",
+						["desc"] = 259,
 					},
 					[194153] = {
 						["enabled"] = true,
@@ -28942,12 +28942,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[213771] = {
+					[211727] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DRUID",
-						["desc"] = 104,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[210833] = {
 						["enabled"] = true,
@@ -28963,12 +28963,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[211727] = {
+					[118000] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[84721] = {
 						["enabled"] = true,
@@ -28991,19 +28991,19 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 62,
 					},
+					[980] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 2.5,
+						["class"] = "WARLOCK",
+						["desc"] = 265,
+					},
 					[88263] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
 						["class"] = "PALADIN",
 						["desc"] = 66,
-					},
-					[206930] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "DEATHKNIGHT",
-						["desc"] = 250,
 					},
 					[211545] = {
 						["enabled"] = true,
@@ -29061,12 +29061,12 @@ xCTSavedDB = {
 						["class"] = "WARRIOR",
 						["desc"] = 72,
 					},
-					[184256] = {
+					[153596] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
-						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
-						["desc"] = "Discordant Chorus",
+						["class"] = "MAGE",
+						["desc"] = 64,
 					},
 					[183042] = {
 						["enabled"] = true,
@@ -29082,19 +29082,19 @@ xCTSavedDB = {
 						["class"] = "DEATHKNIGHT",
 						["desc"] = 250,
 					},
+					[184256] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 2.5,
+						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
+						["desc"] = "Discordant Chorus",
+					},
 					[120361] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 1.5,
 						["class"] = "HUNTER",
 						["desc"] = 0,
-					},
-					[153596] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "MAGE",
-						["desc"] = 64,
 					},
 					[198756] = {
 						["enabled"] = true,
@@ -29334,12 +29334,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Damage",
 					},
-					[980] = {
+					[206930] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "WARLOCK",
-						["desc"] = 265,
+						["interval"] = 0.5,
+						["class"] = "DEATHKNIGHT",
+						["desc"] = 250,
 					},
 					[148235] = {
 						["enabled"] = true,
@@ -29355,12 +29355,12 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 254,
 					},
-					[118000] = {
+					[213771] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["class"] = "DRUID",
+						["desc"] = 104,
 					},
 					[81751] = {
 						["enabled"] = true,
@@ -29411,12 +29411,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[201754] = {
+					[218617] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 1.5,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[13812] = {
 						["enabled"] = true,
@@ -29565,12 +29565,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[227681] = {
 						["enabled"] = true,
@@ -29845,12 +29845,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[105421] = {
+					[196278] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 0,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[132467] = {
 						["enabled"] = true,
@@ -31434,12 +31434,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[195256] = {
+					[105421] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "SHAMAN",
-						["desc"] = 263,
+						["interval"] = 0.5,
+						["class"] = "PALADIN",
+						["desc"] = 0,
 					},
 					[199054] = {
 						["enabled"] = true,
@@ -31448,12 +31448,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[105421] = {
+					[196278] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 0,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[104318] = {
 						["enabled"] = true,
@@ -32015,12 +32015,12 @@ xCTSavedDB = {
 						["class"] = "MONK",
 						["desc"] = 269,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -32099,12 +32099,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[156287] = {
 						["enabled"] = true,
@@ -32141,12 +32141,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -32386,12 +32386,12 @@ xCTSavedDB = {
 						["class"] = "ROGUE",
 						["desc"] = 260,
 					},
-					[201754] = {
+					[218617] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 1.5,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[173010] = {
 						["enabled"] = true,
@@ -32407,12 +32407,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[113780] = {
+					[201754] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "ROGUE",
-						["desc"] = 259,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[194153] = {
 						["enabled"] = true,
@@ -32470,12 +32470,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[211727] = {
+					[118000] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[210833] = {
 						["enabled"] = true,
@@ -32491,12 +32491,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[118000] = {
+					[213771] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["class"] = "DRUID",
+						["desc"] = 104,
 					},
 					[84721] = {
 						["enabled"] = true,
@@ -32519,19 +32519,19 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 62,
 					},
+					[206930] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 0.5,
+						["class"] = "DEATHKNIGHT",
+						["desc"] = 250,
+					},
 					[980] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "WARLOCK",
 						["desc"] = 265,
-					},
-					[88263] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 66,
 					},
 					[211545] = {
 						["enabled"] = true,
@@ -32589,12 +32589,12 @@ xCTSavedDB = {
 						["class"] = "WARRIOR",
 						["desc"] = 72,
 					},
-					[153596] = {
+					[120361] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "MAGE",
-						["desc"] = 64,
+						["interval"] = 1.5,
+						["class"] = "HUNTER",
+						["desc"] = 0,
 					},
 					[183042] = {
 						["enabled"] = true,
@@ -32610,19 +32610,19 @@ xCTSavedDB = {
 						["class"] = "DEATHKNIGHT",
 						["desc"] = 250,
 					},
+					[153596] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 2.5,
+						["class"] = "MAGE",
+						["desc"] = 64,
+					},
 					[184256] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
 						["desc"] = "Discordant Chorus",
-					},
-					[120361] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "HUNTER",
-						["desc"] = 0,
 					},
 					[198756] = {
 						["enabled"] = true,
@@ -32862,12 +32862,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Damage",
 					},
-					[206930] = {
+					[88263] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DEATHKNIGHT",
-						["desc"] = 250,
+						["class"] = "PALADIN",
+						["desc"] = 66,
 					},
 					[148235] = {
 						["enabled"] = true,
@@ -32883,12 +32883,12 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 254,
 					},
-					[213771] = {
+					[211727] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DRUID",
-						["desc"] = 104,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[81751] = {
 						["enabled"] = true,
@@ -32939,12 +32939,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[218617] = {
+					[113780] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["interval"] = 0.5,
+						["class"] = "ROGUE",
+						["desc"] = 259,
 					},
 					[13812] = {
 						["enabled"] = true,
@@ -33093,12 +33093,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[227681] = {
 						["enabled"] = true,
@@ -33373,12 +33373,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[196278] = {
+					[195256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["interval"] = 1.5,
+						["class"] = "SHAMAN",
+						["desc"] = 263,
 					},
 					[132467] = {
 						["enabled"] = true,
@@ -34925,12 +34925,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[105421] = {
+					[196278] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 0,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[199054] = {
 						["enabled"] = true,
@@ -34939,12 +34939,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[196278] = {
+					[195256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["interval"] = 1.5,
+						["class"] = "SHAMAN",
+						["desc"] = 263,
 					},
 					[104318] = {
 						["enabled"] = true,
@@ -35506,12 +35506,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Healing (Priest, Paladin)",
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -35590,12 +35590,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[156287] = {
 						["enabled"] = true,
@@ -35632,12 +35632,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 66,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -35877,12 +35877,12 @@ xCTSavedDB = {
 						["class"] = "ROGUE",
 						["desc"] = 260,
 					},
-					[218617] = {
+					[113780] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["interval"] = 0.5,
+						["class"] = "ROGUE",
+						["desc"] = 259,
 					},
 					[173010] = {
 						["enabled"] = true,
@@ -35898,12 +35898,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[201754] = {
+					[218617] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 1.5,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[194153] = {
 						["enabled"] = true,
@@ -35961,12 +35961,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[118000] = {
+					[213771] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["class"] = "DRUID",
+						["desc"] = 104,
 					},
 					[210833] = {
 						["enabled"] = true,
@@ -35982,12 +35982,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[213771] = {
+					[211727] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DRUID",
-						["desc"] = 104,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[211088] = {
 						["enabled"] = true,
@@ -36010,19 +36010,19 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
+					[88263] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 0.5,
+						["class"] = "PALADIN",
+						["desc"] = 66,
+					},
 					[206930] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
 						["class"] = "DEATHKNIGHT",
 						["desc"] = 250,
-					},
-					[980] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "WARLOCK",
-						["desc"] = 265,
 					},
 					[211545] = {
 						["enabled"] = true,
@@ -36080,12 +36080,12 @@ xCTSavedDB = {
 						["class"] = "WARRIOR",
 						["desc"] = 72,
 					},
-					[120361] = {
+					[184256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "HUNTER",
-						["desc"] = 0,
+						["interval"] = 2.5,
+						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
+						["desc"] = "Discordant Chorus",
 					},
 					[183042] = {
 						["enabled"] = true,
@@ -36101,19 +36101,19 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 255,
 					},
+					[120361] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 1.5,
+						["class"] = "HUNTER",
+						["desc"] = 0,
+					},
 					[153596] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "MAGE",
 						["desc"] = 64,
-					},
-					[184256] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
-						["desc"] = "Discordant Chorus",
 					},
 					[198756] = {
 						["enabled"] = true,
@@ -36353,12 +36353,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Damage",
 					},
-					[88263] = {
+					[980] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 66,
+						["interval"] = 2.5,
+						["class"] = "WARLOCK",
+						["desc"] = 265,
 					},
 					[212621] = {
 						["enabled"] = true,
@@ -36374,12 +36374,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Nature Healing (Monks, Druids)",
 					},
-					[211727] = {
+					[118000] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[81751] = {
 						["enabled"] = true,
@@ -36430,12 +36430,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[113780] = {
+					[201754] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "ROGUE",
-						["desc"] = 259,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[13812] = {
 						["enabled"] = true,
@@ -36584,12 +36584,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[185779] = {
 						["enabled"] = true,
@@ -36864,12 +36864,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[195256] = {
+					[105421] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "SHAMAN",
-						["desc"] = 263,
+						["interval"] = 0.5,
+						["class"] = "PALADIN",
+						["desc"] = 0,
 					},
 					[132467] = {
 						["enabled"] = true,
@@ -37736,11 +37736,12 @@ xCTSavedDB = {
 						["prep"] = 0,
 						["enabled"] = true,
 					},
-					[13812] = {
+					[146157] = {
 						["enabled"] = true,
-						["class"] = "HUNTER",
 						["prep"] = 0,
-						["interval"] = 3,
+						["interval"] = 0.5,
+						["class"] = "ITEM",
+						["desc"] = "Holy Damage",
 					},
 					[118253] = {
 						["enabled"] = true,
@@ -37772,11 +37773,12 @@ xCTSavedDB = {
 						["prep"] = 0,
 						["interval"] = 4,
 					},
-					[119072] = {
+					[164603] = {
 						["enabled"] = true,
-						["class"] = "PALADIN",
 						["prep"] = 0,
-						["interval"] = 0.5,
+						["interval"] = 3.5,
+						["class"] = "ITEM",
+						["desc"] = "Shredder",
 					},
 					[86678] = {
 						["enabled"] = true,
@@ -37849,12 +37851,11 @@ xCTSavedDB = {
 						["class"] = "ITEM",
 						["desc"] = "Nature Healing (Monks, Druids)",
 					},
-					[146157] = {
+					[115310] = {
 						["enabled"] = true,
+						["class"] = "MONK",
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "ITEM",
-						["desc"] = "Holy Damage",
+						["interval"] = 3,
 					},
 					[96172] = {
 						["enabled"] = true,
@@ -37887,12 +37888,11 @@ xCTSavedDB = {
 						["class"] = "ITEM",
 						["desc"] = "Aeda (Follower)",
 					},
-					[146061] = {
+					[3674] = {
 						["enabled"] = true,
+						["class"] = "HUNTER",
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "ITEM",
-						["desc"] = "Physical Damage (Melee)",
+						["interval"] = 4,
 					},
 					[148135] = {
 						["enabled"] = true,
@@ -37925,9 +37925,9 @@ xCTSavedDB = {
 						["prep"] = 0,
 						["interval"] = 4.5,
 					},
-					[115310] = {
+					[13812] = {
 						["enabled"] = true,
-						["class"] = "MONK",
+						["class"] = "HUNTER",
 						["prep"] = 0,
 						["interval"] = 3,
 					},
@@ -38429,11 +38429,12 @@ xCTSavedDB = {
 						["prep"] = 0,
 						["interval"] = 3,
 					},
-					[3674] = {
+					[146061] = {
 						["enabled"] = true,
-						["class"] = "HUNTER",
 						["prep"] = 0,
-						["interval"] = 4,
+						["interval"] = 5,
+						["class"] = "ITEM",
+						["desc"] = "Physical Damage (Melee)",
 					},
 					[113656] = {
 						["enabled"] = true,
@@ -38473,12 +38474,11 @@ xCTSavedDB = {
 						["class"] = "ITEM",
 						["desc"] = "Legedary Cloak for Healers",
 					},
-					[164603] = {
+					[119072] = {
 						["enabled"] = true,
+						["class"] = "PALADIN",
 						["prep"] = 0,
-						["interval"] = 3.5,
-						["class"] = "ITEM",
-						["desc"] = "Shredder",
+						["interval"] = 0.5,
 					},
 				},
 				["items"] = {
@@ -40118,12 +40118,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[195256] = {
+					[105421] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "SHAMAN",
-						["desc"] = 263,
+						["interval"] = 0.5,
+						["class"] = "PALADIN",
+						["desc"] = 0,
 					},
 					[199054] = {
 						["enabled"] = true,
@@ -40132,12 +40132,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[105421] = {
+					[196278] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 0,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[104318] = {
 						["enabled"] = true,
@@ -40699,12 +40699,12 @@ xCTSavedDB = {
 						["class"] = "WARRIOR",
 						["desc"] = 72,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -40734,12 +40734,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[227681] = {
 						["enabled"] = true,
@@ -40783,12 +40783,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[146067] = {
 						["enabled"] = true,
@@ -40825,12 +40825,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -41070,12 +41070,12 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 255,
 					},
-					[201754] = {
+					[218617] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 1.5,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[173010] = {
 						["enabled"] = true,
@@ -41091,12 +41091,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[113780] = {
+					[201754] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "ROGUE",
-						["desc"] = 259,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[194153] = {
 						["enabled"] = true,
@@ -41154,12 +41154,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[211727] = {
+					[118000] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[7922] = {
 						["enabled"] = true,
@@ -41175,12 +41175,12 @@ xCTSavedDB = {
 						["class"] = "DEMONHUNTER",
 						["desc"] = 577,
 					},
-					[118000] = {
+					[213771] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["class"] = "DRUID",
+						["desc"] = 104,
 					},
 					[148235] = {
 						["enabled"] = true,
@@ -41203,19 +41203,19 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 254,
 					},
+					[206930] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 0.5,
+						["class"] = "DEATHKNIGHT",
+						["desc"] = 250,
+					},
 					[980] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "WARLOCK",
 						["desc"] = 265,
-					},
-					[88263] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 66,
 					},
 					[211545] = {
 						["enabled"] = true,
@@ -41301,12 +41301,12 @@ xCTSavedDB = {
 						["class"] = "DRUID",
 						["desc"] = 105,
 					},
-					[184256] = {
+					[153596] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
-						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
-						["desc"] = "Discordant Chorus",
+						["class"] = "MAGE",
+						["desc"] = 64,
 					},
 					[70890] = {
 						["enabled"] = true,
@@ -41504,19 +41504,19 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Healing (Priests, Paladins)",
 					},
-					[153596] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "MAGE",
-						["desc"] = 64,
-					},
 					[120361] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 1.5,
 						["class"] = "HUNTER",
 						["desc"] = 0,
+					},
+					[184256] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 2.5,
+						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
+						["desc"] = "Discordant Chorus",
 					},
 					[184707] = {
 						["enabled"] = true,
@@ -41546,12 +41546,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Damage",
 					},
-					[206930] = {
+					[88263] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DEATHKNIGHT",
-						["desc"] = 250,
+						["class"] = "PALADIN",
+						["desc"] = 66,
 					},
 					[211088] = {
 						["enabled"] = true,
@@ -41567,12 +41567,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[213771] = {
+					[211727] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DRUID",
-						["desc"] = 104,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[81751] = {
 						["enabled"] = true,
@@ -41623,12 +41623,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[218617] = {
+					[113780] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["interval"] = 0.5,
+						["class"] = "ROGUE",
+						["desc"] = 259,
 					},
 					[22482] = {
 						["enabled"] = true,
@@ -42057,12 +42057,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[196278] = {
+					[195256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["interval"] = 1.5,
+						["class"] = "SHAMAN",
+						["desc"] = 263,
 					},
 					[132467] = {
 						["enabled"] = true,
@@ -43778,12 +43778,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[195256] = {
+					[105421] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "SHAMAN",
-						["desc"] = 263,
+						["interval"] = 0.5,
+						["class"] = "PALADIN",
+						["desc"] = 0,
 					},
 					[199054] = {
 						["enabled"] = true,
@@ -43792,12 +43792,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[105421] = {
+					[196278] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 0,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[104318] = {
 						["enabled"] = true,
@@ -44359,12 +44359,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Healing (Priest, Paladin)",
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -44443,12 +44443,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[156287] = {
 						["enabled"] = true,
@@ -44485,12 +44485,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 66,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -44730,12 +44730,12 @@ xCTSavedDB = {
 						["class"] = "ROGUE",
 						["desc"] = 260,
 					},
-					[201754] = {
+					[218617] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 1.5,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[173010] = {
 						["enabled"] = true,
@@ -44751,12 +44751,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[113780] = {
+					[201754] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "ROGUE",
-						["desc"] = 259,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[194153] = {
 						["enabled"] = true,
@@ -44814,12 +44814,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[211727] = {
+					[118000] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[210833] = {
 						["enabled"] = true,
@@ -44835,12 +44835,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[118000] = {
+					[213771] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["class"] = "DRUID",
+						["desc"] = 104,
 					},
 					[211088] = {
 						["enabled"] = true,
@@ -44863,19 +44863,19 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
+					[206930] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 0.5,
+						["class"] = "DEATHKNIGHT",
+						["desc"] = 250,
+					},
 					[980] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "WARLOCK",
 						["desc"] = 265,
-					},
-					[88263] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 66,
 					},
 					[211545] = {
 						["enabled"] = true,
@@ -44933,12 +44933,12 @@ xCTSavedDB = {
 						["class"] = "WARRIOR",
 						["desc"] = 72,
 					},
-					[153596] = {
+					[120361] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "MAGE",
-						["desc"] = 64,
+						["interval"] = 1.5,
+						["class"] = "HUNTER",
+						["desc"] = 0,
 					},
 					[183042] = {
 						["enabled"] = true,
@@ -44954,19 +44954,19 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 255,
 					},
+					[153596] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 2.5,
+						["class"] = "MAGE",
+						["desc"] = 64,
+					},
 					[184256] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
 						["desc"] = "Discordant Chorus",
-					},
-					[120361] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "HUNTER",
-						["desc"] = 0,
 					},
 					[198756] = {
 						["enabled"] = true,
@@ -45206,12 +45206,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Damage",
 					},
-					[206930] = {
+					[88263] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DEATHKNIGHT",
-						["desc"] = 250,
+						["class"] = "PALADIN",
+						["desc"] = 66,
 					},
 					[212621] = {
 						["enabled"] = true,
@@ -45227,12 +45227,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Nature Healing (Monks, Druids)",
 					},
-					[213771] = {
+					[211727] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DRUID",
-						["desc"] = 104,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[81751] = {
 						["enabled"] = true,
@@ -45283,12 +45283,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[218617] = {
+					[113780] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["interval"] = 0.5,
+						["class"] = "ROGUE",
+						["desc"] = 259,
 					},
 					[13812] = {
 						["enabled"] = true,
@@ -45437,12 +45437,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[185779] = {
 						["enabled"] = true,
@@ -45717,12 +45717,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[196278] = {
+					[195256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["interval"] = 1.5,
+						["class"] = "SHAMAN",
+						["desc"] = 263,
 					},
 					[132467] = {
 						["enabled"] = true,
@@ -48750,12 +48750,12 @@ xCTSavedDB = {
 						["class"] = "ITEM",
 						["desc"] = "Shredder",
 					},
-					[159238] = {
+					[146157] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 3.5,
+						["interval"] = 0.5,
 						["class"] = "ITEM",
-						["desc"] = "Shattered Hand (Weapon Enchant)",
+						["desc"] = "Holy Damage",
 					},
 					[132467] = {
 						["enabled"] = true,
@@ -48787,12 +48787,11 @@ xCTSavedDB = {
 						["prep"] = 0,
 						["interval"] = 0.5,
 					},
-					[146157] = {
+					[115310] = {
 						["enabled"] = true,
+						["class"] = "MONK",
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "ITEM",
-						["desc"] = "Holy Damage",
+						["interval"] = 3,
 					},
 					[86678] = {
 						["enabled"] = true,
@@ -48941,11 +48940,12 @@ xCTSavedDB = {
 						["prep"] = 0,
 						["interval"] = 4.5,
 					},
-					[115310] = {
+					[159238] = {
 						["enabled"] = true,
-						["class"] = "MONK",
 						["prep"] = 0,
-						["interval"] = 3,
+						["interval"] = 3.5,
+						["class"] = "ITEM",
+						["desc"] = "Shattered Hand (Weapon Enchant)",
 					},
 					[124081] = {
 						["enabled"] = true,
@@ -49699,12 +49699,11 @@ xCTSavedDB = {
 						["prep"] = 0,
 						["interval"] = 6,
 					},
-					[159238] = {
+					[13812] = {
 						["enabled"] = true,
+						["class"] = "HUNTER",
 						["prep"] = 0,
-						["interval"] = 3.5,
-						["class"] = "ITEM",
-						["desc"] = "Shattered Hand (Weapon Enchant)",
+						["interval"] = 3,
 					},
 					[118253] = {
 						["enabled"] = true,
@@ -49736,12 +49735,11 @@ xCTSavedDB = {
 						["prep"] = 0,
 						["interval"] = 4,
 					},
-					[164603] = {
+					[3674] = {
 						["enabled"] = true,
+						["class"] = "HUNTER",
 						["prep"] = 0,
-						["interval"] = 3.5,
-						["class"] = "ITEM",
-						["desc"] = "Shredder",
+						["interval"] = 4,
 					},
 					[86678] = {
 						["enabled"] = true,
@@ -49814,9 +49812,9 @@ xCTSavedDB = {
 						["class"] = "ITEM",
 						["desc"] = "Nature Healing (Monks, Druids)",
 					},
-					[13812] = {
+					[115310] = {
 						["enabled"] = true,
-						["class"] = "HUNTER",
+						["class"] = "MONK",
 						["prep"] = 0,
 						["interval"] = 3,
 					},
@@ -49851,12 +49849,12 @@ xCTSavedDB = {
 						["class"] = "ITEM",
 						["desc"] = "Aeda (Follower)",
 					},
-					[146061] = {
+					[164603] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
+						["interval"] = 3.5,
 						["class"] = "ITEM",
-						["desc"] = "Physical Damage (Melee)",
+						["desc"] = "Shredder",
 					},
 					[148135] = {
 						["enabled"] = true,
@@ -49889,11 +49887,12 @@ xCTSavedDB = {
 						["prep"] = 0,
 						["interval"] = 4.5,
 					},
-					[115310] = {
+					[159238] = {
 						["enabled"] = true,
-						["class"] = "MONK",
 						["prep"] = 0,
-						["interval"] = 3,
+						["interval"] = 3.5,
+						["class"] = "ITEM",
+						["desc"] = "Shattered Hand (Weapon Enchant)",
 					},
 					[124081] = {
 						["enabled"] = true,
@@ -50393,11 +50392,12 @@ xCTSavedDB = {
 						["prep"] = 0,
 						["interval"] = 3,
 					},
-					[3674] = {
+					[146061] = {
 						["enabled"] = true,
-						["class"] = "HUNTER",
 						["prep"] = 0,
-						["interval"] = 4,
+						["interval"] = 5,
+						["class"] = "ITEM",
+						["desc"] = "Physical Damage (Melee)",
 					},
 					[113656] = {
 						["enabled"] = true,
@@ -51949,12 +51949,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[196278] = {
+					[195256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["interval"] = 1.5,
+						["class"] = "SHAMAN",
+						["desc"] = 263,
 					},
 					[199054] = {
 						["enabled"] = true,
@@ -51963,12 +51963,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[195256] = {
+					[105421] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "SHAMAN",
-						["desc"] = 263,
+						["interval"] = 0.5,
+						["class"] = "PALADIN",
+						["desc"] = 0,
 					},
 					[104318] = {
 						["enabled"] = true,
@@ -52530,12 +52530,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Healing (Priest, Paladin)",
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -52614,12 +52614,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[156287] = {
 						["enabled"] = true,
@@ -52656,12 +52656,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 66,
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -52901,12 +52901,12 @@ xCTSavedDB = {
 						["class"] = "ROGUE",
 						["desc"] = 260,
 					},
-					[113780] = {
+					[201754] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "ROGUE",
-						["desc"] = 259,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[173010] = {
 						["enabled"] = true,
@@ -52922,12 +52922,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[218617] = {
+					[113780] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["interval"] = 0.5,
+						["class"] = "ROGUE",
+						["desc"] = 259,
 					},
 					[194153] = {
 						["enabled"] = true,
@@ -52985,12 +52985,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[213771] = {
+					[211727] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DRUID",
-						["desc"] = 104,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[210833] = {
 						["enabled"] = true,
@@ -53006,12 +53006,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[211727] = {
+					[118000] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[211088] = {
 						["enabled"] = true,
@@ -53034,19 +53034,19 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
+					[980] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 2.5,
+						["class"] = "WARLOCK",
+						["desc"] = 265,
+					},
 					[88263] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
 						["class"] = "PALADIN",
 						["desc"] = 66,
-					},
-					[206930] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "DEATHKNIGHT",
-						["desc"] = 250,
 					},
 					[211545] = {
 						["enabled"] = true,
@@ -53104,12 +53104,12 @@ xCTSavedDB = {
 						["class"] = "WARRIOR",
 						["desc"] = 72,
 					},
-					[184256] = {
+					[153596] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
-						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
-						["desc"] = "Discordant Chorus",
+						["class"] = "MAGE",
+						["desc"] = 64,
 					},
 					[183042] = {
 						["enabled"] = true,
@@ -53125,19 +53125,19 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 255,
 					},
+					[184256] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 2.5,
+						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
+						["desc"] = "Discordant Chorus",
+					},
 					[120361] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 1.5,
 						["class"] = "HUNTER",
 						["desc"] = 0,
-					},
-					[153596] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "MAGE",
-						["desc"] = 64,
 					},
 					[198756] = {
 						["enabled"] = true,
@@ -53377,12 +53377,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Damage",
 					},
-					[980] = {
+					[206930] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "WARLOCK",
-						["desc"] = 265,
+						["interval"] = 0.5,
+						["class"] = "DEATHKNIGHT",
+						["desc"] = 250,
 					},
 					[212621] = {
 						["enabled"] = true,
@@ -53398,12 +53398,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Nature Healing (Monks, Druids)",
 					},
-					[118000] = {
+					[213771] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["class"] = "DRUID",
+						["desc"] = 104,
 					},
 					[81751] = {
 						["enabled"] = true,
@@ -53454,12 +53454,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[201754] = {
+					[218617] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 1.5,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[13812] = {
 						["enabled"] = true,
@@ -53608,12 +53608,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[185779] = {
 						["enabled"] = true,
@@ -53888,12 +53888,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[105421] = {
+					[196278] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 0,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[132467] = {
 						["enabled"] = true,
@@ -55741,12 +55741,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[105421] = {
+					[196278] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 0,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[199054] = {
 						["enabled"] = true,
@@ -55755,12 +55755,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[196278] = {
+					[195256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["interval"] = 1.5,
+						["class"] = "SHAMAN",
+						["desc"] = 263,
 					},
 					[104318] = {
 						["enabled"] = true,
@@ -56322,12 +56322,12 @@ xCTSavedDB = {
 						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Bodyguards)|r",
 						["desc"] = "Bodyguard: Vivianne",
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -56357,12 +56357,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[185779] = {
 						["enabled"] = true,
@@ -56406,12 +56406,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[146067] = {
 						["enabled"] = true,
@@ -56448,12 +56448,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 66,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -56693,12 +56693,12 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 255,
 					},
-					[218617] = {
+					[113780] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["interval"] = 0.5,
+						["class"] = "ROGUE",
+						["desc"] = 259,
 					},
 					[173010] = {
 						["enabled"] = true,
@@ -56714,12 +56714,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[201754] = {
+					[218617] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 1.5,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[194153] = {
 						["enabled"] = true,
@@ -56777,12 +56777,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[118000] = {
+					[213771] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["class"] = "DRUID",
+						["desc"] = 104,
 					},
 					[7922] = {
 						["enabled"] = true,
@@ -56798,12 +56798,12 @@ xCTSavedDB = {
 						["class"] = "DEMONHUNTER",
 						["desc"] = 577,
 					},
-					[213771] = {
+					[211727] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DRUID",
-						["desc"] = 104,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[212621] = {
 						["enabled"] = true,
@@ -56826,19 +56826,19 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Nature Healing (Monks, Druids)",
 					},
+					[88263] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 0.5,
+						["class"] = "PALADIN",
+						["desc"] = 66,
+					},
 					[206930] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
 						["class"] = "DEATHKNIGHT",
 						["desc"] = 250,
-					},
-					[980] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "WARLOCK",
-						["desc"] = 265,
 					},
 					[211545] = {
 						["enabled"] = true,
@@ -56924,12 +56924,12 @@ xCTSavedDB = {
 						["class"] = "DRUID",
 						["desc"] = 105,
 					},
-					[153596] = {
+					[120361] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "MAGE",
-						["desc"] = 64,
+						["interval"] = 1.5,
+						["class"] = "HUNTER",
+						["desc"] = 0,
 					},
 					[70890] = {
 						["enabled"] = true,
@@ -57127,19 +57127,19 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Healing (Priests, Paladins)",
 					},
-					[120361] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "HUNTER",
-						["desc"] = 0,
-					},
 					[184256] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
 						["desc"] = "Discordant Chorus",
+					},
+					[153596] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 2.5,
+						["class"] = "MAGE",
+						["desc"] = 64,
 					},
 					[184707] = {
 						["enabled"] = true,
@@ -57169,12 +57169,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Damage",
 					},
-					[88263] = {
+					[980] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 66,
+						["interval"] = 2.5,
+						["class"] = "WARLOCK",
+						["desc"] = 265,
 					},
 					[84721] = {
 						["enabled"] = true,
@@ -57190,12 +57190,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 62,
 					},
-					[211727] = {
+					[118000] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[81751] = {
 						["enabled"] = true,
@@ -57246,12 +57246,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[113780] = {
+					[201754] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "ROGUE",
-						["desc"] = 259,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[22482] = {
 						["enabled"] = true,
@@ -57680,12 +57680,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[195256] = {
+					[105421] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "SHAMAN",
-						["desc"] = 263,
+						["interval"] = 0.5,
+						["class"] = "PALADIN",
+						["desc"] = 0,
 					},
 					[132467] = {
 						["enabled"] = true,
@@ -61020,12 +61020,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[105421] = {
+					[196278] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 0,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[199054] = {
 						["enabled"] = true,
@@ -61034,12 +61034,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[196278] = {
+					[195256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["interval"] = 1.5,
+						["class"] = "SHAMAN",
+						["desc"] = 263,
 					},
 					[104318] = {
 						["enabled"] = true,
@@ -61601,12 +61601,12 @@ xCTSavedDB = {
 						["class"] = "MONK",
 						["desc"] = 269,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -61685,12 +61685,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[156287] = {
 						["enabled"] = true,
@@ -61727,12 +61727,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -61972,12 +61972,12 @@ xCTSavedDB = {
 						["class"] = "ROGUE",
 						["desc"] = 260,
 					},
-					[218617] = {
+					[113780] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["interval"] = 0.5,
+						["class"] = "ROGUE",
+						["desc"] = 259,
 					},
 					[173010] = {
 						["enabled"] = true,
@@ -61993,12 +61993,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[201754] = {
+					[218617] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 1.5,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[194153] = {
 						["enabled"] = true,
@@ -62056,12 +62056,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[118000] = {
+					[213771] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["class"] = "DRUID",
+						["desc"] = 104,
 					},
 					[210833] = {
 						["enabled"] = true,
@@ -62077,12 +62077,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[213771] = {
+					[211727] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DRUID",
-						["desc"] = 104,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[84721] = {
 						["enabled"] = true,
@@ -62105,19 +62105,19 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 62,
 					},
+					[88263] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 0.5,
+						["class"] = "PALADIN",
+						["desc"] = 66,
+					},
 					[206930] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
 						["class"] = "DEATHKNIGHT",
 						["desc"] = 250,
-					},
-					[980] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "WARLOCK",
-						["desc"] = 265,
 					},
 					[211545] = {
 						["enabled"] = true,
@@ -62175,12 +62175,12 @@ xCTSavedDB = {
 						["class"] = "WARRIOR",
 						["desc"] = 72,
 					},
-					[120361] = {
+					[184256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "HUNTER",
-						["desc"] = 0,
+						["interval"] = 2.5,
+						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
+						["desc"] = "Discordant Chorus",
 					},
 					[183042] = {
 						["enabled"] = true,
@@ -62196,19 +62196,19 @@ xCTSavedDB = {
 						["class"] = "DEATHKNIGHT",
 						["desc"] = 250,
 					},
+					[120361] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 1.5,
+						["class"] = "HUNTER",
+						["desc"] = 0,
+					},
 					[153596] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "MAGE",
 						["desc"] = 64,
-					},
-					[184256] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
-						["desc"] = "Discordant Chorus",
 					},
 					[198756] = {
 						["enabled"] = true,
@@ -62448,12 +62448,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Damage",
 					},
-					[88263] = {
+					[980] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 66,
+						["interval"] = 2.5,
+						["class"] = "WARLOCK",
+						["desc"] = 265,
 					},
 					[148235] = {
 						["enabled"] = true,
@@ -62469,12 +62469,12 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 254,
 					},
-					[211727] = {
+					[118000] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[81751] = {
 						["enabled"] = true,
@@ -62525,12 +62525,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[113780] = {
+					[201754] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "ROGUE",
-						["desc"] = 259,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[13812] = {
 						["enabled"] = true,
@@ -62679,12 +62679,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[227681] = {
 						["enabled"] = true,
@@ -62959,12 +62959,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[195256] = {
+					[105421] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "SHAMAN",
-						["desc"] = 263,
+						["interval"] = 0.5,
+						["class"] = "PALADIN",
+						["desc"] = 0,
 					},
 					[132467] = {
 						["enabled"] = true,
@@ -65006,19 +65006,19 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 253,
 					},
-					[205345] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "MAGE",
-						["desc"] = 63,
-					},
 					[146069] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 5,
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Physical Damage (Hunters)",
+					},
+					[191037] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 2,
+						["class"] = "DRUID",
+						["desc"] = 102,
 					},
 					[208899] = {
 						["enabled"] = true,
@@ -65125,12 +65125,12 @@ xCTSavedDB = {
 						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Bodyguards)|r",
 						["desc"] = "Bodyguard: Vivianne",
 					},
-					[146178] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[117418] = {
 						["enabled"] = true,
@@ -65153,12 +65153,12 @@ xCTSavedDB = {
 						["class"] = "WARRIOR",
 						["desc"] = 72,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[148859] = {
 						["enabled"] = true,
@@ -65216,12 +65216,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[201877] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[156287] = {
 						["enabled"] = true,
@@ -65503,12 +65503,12 @@ xCTSavedDB = {
 						["class"] = "ROGUE",
 						["desc"] = 260,
 					},
-					[201754] = {
+					[218617] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 1.5,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[173010] = {
 						["enabled"] = true,
@@ -65524,12 +65524,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[113780] = {
+					[201754] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "ROGUE",
-						["desc"] = 259,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[194153] = {
 						["enabled"] = true,
@@ -65587,12 +65587,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[211727] = {
+					[118000] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[210833] = {
 						["enabled"] = true,
@@ -65608,12 +65608,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[118000] = {
+					[213771] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["class"] = "DRUID",
+						["desc"] = 104,
 					},
 					[211088] = {
 						["enabled"] = true,
@@ -65636,19 +65636,19 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
+					[206930] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 0.5,
+						["class"] = "DEATHKNIGHT",
+						["desc"] = 250,
+					},
 					[980] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "WARLOCK",
 						["desc"] = 265,
-					},
-					[88263] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 66,
 					},
 					[211545] = {
 						["enabled"] = true,
@@ -65706,12 +65706,12 @@ xCTSavedDB = {
 						["class"] = "WARRIOR",
 						["desc"] = 72,
 					},
-					[153596] = {
+					[120361] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "MAGE",
-						["desc"] = 64,
+						["interval"] = 1.5,
+						["class"] = "HUNTER",
+						["desc"] = 0,
 					},
 					[183042] = {
 						["enabled"] = true,
@@ -65727,19 +65727,19 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 255,
 					},
+					[153596] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 2.5,
+						["class"] = "MAGE",
+						["desc"] = 64,
+					},
 					[184256] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
 						["desc"] = "Discordant Chorus",
-					},
-					[120361] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "HUNTER",
-						["desc"] = 0,
 					},
 					[198756] = {
 						["enabled"] = true,
@@ -65979,12 +65979,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Damage",
 					},
-					[206930] = {
+					[88263] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DEATHKNIGHT",
-						["desc"] = 250,
+						["class"] = "PALADIN",
+						["desc"] = 66,
 					},
 					[212621] = {
 						["enabled"] = true,
@@ -66000,12 +66000,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Nature Healing (Monks, Druids)",
 					},
-					[213771] = {
+					[211727] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DRUID",
-						["desc"] = 104,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[81751] = {
 						["enabled"] = true,
@@ -66056,12 +66056,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[218617] = {
+					[113780] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["interval"] = 0.5,
+						["class"] = "ROGUE",
+						["desc"] = 259,
 					},
 					[13812] = {
 						["enabled"] = true,
@@ -66308,12 +66308,12 @@ xCTSavedDB = {
 						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
 						["desc"] = "Flaming Bolas (Q: Bolas Bastion)",
 					},
-					[191037] = {
+					[205345] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 2,
-						["class"] = "DRUID",
-						["desc"] = 102,
+						["interval"] = 2.5,
+						["class"] = "MAGE",
+						["desc"] = 63,
 					},
 					[53652] = {
 						["enabled"] = true,
@@ -68344,12 +68344,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[195256] = {
+					[105421] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "SHAMAN",
-						["desc"] = 263,
+						["interval"] = 0.5,
+						["class"] = "PALADIN",
+						["desc"] = 0,
 					},
 					[199054] = {
 						["enabled"] = true,
@@ -68358,12 +68358,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[105421] = {
+					[196278] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 0,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[104318] = {
 						["enabled"] = true,
@@ -68925,12 +68925,12 @@ xCTSavedDB = {
 						["class"] = "WARRIOR",
 						["desc"] = 72,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -68960,12 +68960,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[227681] = {
 						["enabled"] = true,
@@ -69009,12 +69009,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[146067] = {
 						["enabled"] = true,
@@ -69051,12 +69051,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -69296,12 +69296,12 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 255,
 					},
-					[201754] = {
+					[218617] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 1.5,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[173010] = {
 						["enabled"] = true,
@@ -69317,12 +69317,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[113780] = {
+					[201754] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "ROGUE",
-						["desc"] = 259,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[194153] = {
 						["enabled"] = true,
@@ -69380,12 +69380,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[211727] = {
+					[118000] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[7922] = {
 						["enabled"] = true,
@@ -69401,12 +69401,12 @@ xCTSavedDB = {
 						["class"] = "DEMONHUNTER",
 						["desc"] = 577,
 					},
-					[118000] = {
+					[213771] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["class"] = "DRUID",
+						["desc"] = 104,
 					},
 					[148235] = {
 						["enabled"] = true,
@@ -69429,19 +69429,19 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 254,
 					},
+					[206930] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 0.5,
+						["class"] = "DEATHKNIGHT",
+						["desc"] = 250,
+					},
 					[980] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "WARLOCK",
 						["desc"] = 265,
-					},
-					[88263] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 66,
 					},
 					[211545] = {
 						["enabled"] = true,
@@ -69527,12 +69527,12 @@ xCTSavedDB = {
 						["class"] = "DRUID",
 						["desc"] = 105,
 					},
-					[184256] = {
+					[153596] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
-						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
-						["desc"] = "Discordant Chorus",
+						["class"] = "MAGE",
+						["desc"] = 64,
 					},
 					[70890] = {
 						["enabled"] = true,
@@ -69730,19 +69730,19 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Healing (Priests, Paladins)",
 					},
-					[153596] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "MAGE",
-						["desc"] = 64,
-					},
 					[120361] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 1.5,
 						["class"] = "HUNTER",
 						["desc"] = 0,
+					},
+					[184256] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 2.5,
+						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
+						["desc"] = "Discordant Chorus",
 					},
 					[184707] = {
 						["enabled"] = true,
@@ -69772,12 +69772,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Damage",
 					},
-					[206930] = {
+					[88263] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DEATHKNIGHT",
-						["desc"] = 250,
+						["class"] = "PALADIN",
+						["desc"] = 66,
 					},
 					[211088] = {
 						["enabled"] = true,
@@ -69793,12 +69793,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[213771] = {
+					[211727] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DRUID",
-						["desc"] = 104,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[81751] = {
 						["enabled"] = true,
@@ -69849,12 +69849,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[218617] = {
+					[113780] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["interval"] = 0.5,
+						["class"] = "ROGUE",
+						["desc"] = 259,
 					},
 					[22482] = {
 						["enabled"] = true,
@@ -70283,12 +70283,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[196278] = {
+					[195256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["interval"] = 1.5,
+						["class"] = "SHAMAN",
+						["desc"] = 263,
 					},
 					[132467] = {
 						["enabled"] = true,
@@ -71872,12 +71872,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[105421] = {
+					[196278] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 0,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[199054] = {
 						["enabled"] = true,
@@ -71886,12 +71886,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[196278] = {
+					[195256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["interval"] = 1.5,
+						["class"] = "SHAMAN",
+						["desc"] = 263,
 					},
 					[104318] = {
 						["enabled"] = true,
@@ -72453,12 +72453,12 @@ xCTSavedDB = {
 						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Bodyguards)|r",
 						["desc"] = "Bodyguard: Vivianne",
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -72488,12 +72488,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[185779] = {
 						["enabled"] = true,
@@ -72537,12 +72537,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[146067] = {
 						["enabled"] = true,
@@ -72579,12 +72579,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 66,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -72824,12 +72824,12 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 255,
 					},
-					[218617] = {
+					[113780] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["interval"] = 0.5,
+						["class"] = "ROGUE",
+						["desc"] = 259,
 					},
 					[173010] = {
 						["enabled"] = true,
@@ -72845,12 +72845,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[201754] = {
+					[218617] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 1.5,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[194153] = {
 						["enabled"] = true,
@@ -72908,12 +72908,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[118000] = {
+					[213771] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["class"] = "DRUID",
+						["desc"] = 104,
 					},
 					[7922] = {
 						["enabled"] = true,
@@ -72929,12 +72929,12 @@ xCTSavedDB = {
 						["class"] = "DEMONHUNTER",
 						["desc"] = 577,
 					},
-					[213771] = {
+					[211727] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DRUID",
-						["desc"] = 104,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[212621] = {
 						["enabled"] = true,
@@ -72957,19 +72957,19 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Nature Healing (Monks, Druids)",
 					},
+					[88263] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 0.5,
+						["class"] = "PALADIN",
+						["desc"] = 66,
+					},
 					[206930] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
 						["class"] = "DEATHKNIGHT",
 						["desc"] = 250,
-					},
-					[980] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "WARLOCK",
-						["desc"] = 265,
 					},
 					[211545] = {
 						["enabled"] = true,
@@ -73055,12 +73055,12 @@ xCTSavedDB = {
 						["class"] = "DRUID",
 						["desc"] = 105,
 					},
-					[153596] = {
+					[120361] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "MAGE",
-						["desc"] = 64,
+						["interval"] = 1.5,
+						["class"] = "HUNTER",
+						["desc"] = 0,
 					},
 					[70890] = {
 						["enabled"] = true,
@@ -73258,19 +73258,19 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Healing (Priests, Paladins)",
 					},
-					[120361] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "HUNTER",
-						["desc"] = 0,
-					},
 					[184256] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
 						["desc"] = "Discordant Chorus",
+					},
+					[153596] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 2.5,
+						["class"] = "MAGE",
+						["desc"] = 64,
 					},
 					[184707] = {
 						["enabled"] = true,
@@ -73300,12 +73300,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Damage",
 					},
-					[88263] = {
+					[980] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 66,
+						["interval"] = 2.5,
+						["class"] = "WARLOCK",
+						["desc"] = 265,
 					},
 					[84721] = {
 						["enabled"] = true,
@@ -73321,12 +73321,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 62,
 					},
-					[211727] = {
+					[118000] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[81751] = {
 						["enabled"] = true,
@@ -73377,12 +73377,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[113780] = {
+					[201754] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "ROGUE",
-						["desc"] = 259,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[22482] = {
 						["enabled"] = true,
@@ -73811,12 +73811,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[195256] = {
+					[105421] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "SHAMAN",
-						["desc"] = 263,
+						["interval"] = 0.5,
+						["class"] = "PALADIN",
+						["desc"] = 0,
 					},
 					[132467] = {
 						["enabled"] = true,
@@ -75362,12 +75362,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[105421] = {
+					[196278] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 0,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[199054] = {
 						["enabled"] = true,
@@ -75376,12 +75376,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[196278] = {
+					[195256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["interval"] = 1.5,
+						["class"] = "SHAMAN",
+						["desc"] = 263,
 					},
 					[104318] = {
 						["enabled"] = true,
@@ -75943,12 +75943,12 @@ xCTSavedDB = {
 						["class"] = "WARRIOR",
 						["desc"] = 72,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -75978,12 +75978,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[227681] = {
 						["enabled"] = true,
@@ -76027,12 +76027,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[146067] = {
 						["enabled"] = true,
@@ -76069,12 +76069,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -76314,12 +76314,12 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 255,
 					},
-					[218617] = {
+					[113780] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["interval"] = 0.5,
+						["class"] = "ROGUE",
+						["desc"] = 259,
 					},
 					[173010] = {
 						["enabled"] = true,
@@ -76335,12 +76335,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[201754] = {
+					[218617] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 1.5,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[194153] = {
 						["enabled"] = true,
@@ -76398,12 +76398,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[118000] = {
+					[213771] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["class"] = "DRUID",
+						["desc"] = 104,
 					},
 					[7922] = {
 						["enabled"] = true,
@@ -76419,12 +76419,12 @@ xCTSavedDB = {
 						["class"] = "DEMONHUNTER",
 						["desc"] = 577,
 					},
-					[213771] = {
+					[211727] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DRUID",
-						["desc"] = 104,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[148235] = {
 						["enabled"] = true,
@@ -76447,19 +76447,19 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 254,
 					},
+					[88263] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 0.5,
+						["class"] = "PALADIN",
+						["desc"] = 66,
+					},
 					[206930] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
 						["class"] = "DEATHKNIGHT",
 						["desc"] = 250,
-					},
-					[980] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "WARLOCK",
-						["desc"] = 265,
 					},
 					[211545] = {
 						["enabled"] = true,
@@ -76545,12 +76545,12 @@ xCTSavedDB = {
 						["class"] = "DRUID",
 						["desc"] = 105,
 					},
-					[153596] = {
+					[120361] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "MAGE",
-						["desc"] = 64,
+						["interval"] = 1.5,
+						["class"] = "HUNTER",
+						["desc"] = 0,
 					},
 					[70890] = {
 						["enabled"] = true,
@@ -76748,19 +76748,19 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Healing (Priests, Paladins)",
 					},
-					[120361] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "HUNTER",
-						["desc"] = 0,
-					},
 					[184256] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
 						["desc"] = "Discordant Chorus",
+					},
+					[153596] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 2.5,
+						["class"] = "MAGE",
+						["desc"] = 64,
 					},
 					[184707] = {
 						["enabled"] = true,
@@ -76790,12 +76790,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Damage",
 					},
-					[88263] = {
+					[980] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 66,
+						["interval"] = 2.5,
+						["class"] = "WARLOCK",
+						["desc"] = 265,
 					},
 					[211088] = {
 						["enabled"] = true,
@@ -76811,12 +76811,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[211727] = {
+					[118000] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[81751] = {
 						["enabled"] = true,
@@ -76867,12 +76867,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[113780] = {
+					[201754] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "ROGUE",
-						["desc"] = 259,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[22482] = {
 						["enabled"] = true,
@@ -77301,12 +77301,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[195256] = {
+					[105421] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "SHAMAN",
-						["desc"] = 263,
+						["interval"] = 0.5,
+						["class"] = "PALADIN",
+						["desc"] = 0,
 					},
 					[132467] = {
 						["enabled"] = true,
@@ -78985,12 +78985,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[195256] = {
+					[105421] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "SHAMAN",
-						["desc"] = 263,
+						["interval"] = 0.5,
+						["class"] = "PALADIN",
+						["desc"] = 0,
 					},
 					[199054] = {
 						["enabled"] = true,
@@ -78999,12 +78999,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[105421] = {
+					[196278] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 0,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[104318] = {
 						["enabled"] = true,
@@ -79566,12 +79566,12 @@ xCTSavedDB = {
 						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Bodyguards)|r",
 						["desc"] = "Bodyguard: Vivianne",
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -79601,12 +79601,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[185779] = {
 						["enabled"] = true,
@@ -79650,12 +79650,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[146067] = {
 						["enabled"] = true,
@@ -79692,12 +79692,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 66,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -79937,12 +79937,12 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 255,
 					},
-					[201754] = {
+					[218617] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 1.5,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[173010] = {
 						["enabled"] = true,
@@ -79958,12 +79958,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[113780] = {
+					[201754] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "ROGUE",
-						["desc"] = 259,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[194153] = {
 						["enabled"] = true,
@@ -80021,12 +80021,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[211727] = {
+					[118000] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[7922] = {
 						["enabled"] = true,
@@ -80042,12 +80042,12 @@ xCTSavedDB = {
 						["class"] = "DEMONHUNTER",
 						["desc"] = 577,
 					},
-					[118000] = {
+					[213771] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["class"] = "DRUID",
+						["desc"] = 104,
 					},
 					[212621] = {
 						["enabled"] = true,
@@ -80070,19 +80070,19 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Nature Healing (Monks, Druids)",
 					},
+					[206930] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 0.5,
+						["class"] = "DEATHKNIGHT",
+						["desc"] = 250,
+					},
 					[980] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "WARLOCK",
 						["desc"] = 265,
-					},
-					[88263] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 66,
 					},
 					[211545] = {
 						["enabled"] = true,
@@ -80168,12 +80168,12 @@ xCTSavedDB = {
 						["class"] = "DRUID",
 						["desc"] = 105,
 					},
-					[184256] = {
+					[153596] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
-						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
-						["desc"] = "Discordant Chorus",
+						["class"] = "MAGE",
+						["desc"] = 64,
 					},
 					[70890] = {
 						["enabled"] = true,
@@ -80371,19 +80371,19 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Healing (Priests, Paladins)",
 					},
-					[153596] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "MAGE",
-						["desc"] = 64,
-					},
 					[120361] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 1.5,
 						["class"] = "HUNTER",
 						["desc"] = 0,
+					},
+					[184256] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 2.5,
+						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
+						["desc"] = "Discordant Chorus",
 					},
 					[184707] = {
 						["enabled"] = true,
@@ -80413,12 +80413,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Damage",
 					},
-					[206930] = {
+					[88263] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DEATHKNIGHT",
-						["desc"] = 250,
+						["class"] = "PALADIN",
+						["desc"] = 66,
 					},
 					[84721] = {
 						["enabled"] = true,
@@ -80434,12 +80434,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 62,
 					},
-					[213771] = {
+					[211727] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DRUID",
-						["desc"] = 104,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[81751] = {
 						["enabled"] = true,
@@ -80490,12 +80490,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[218617] = {
+					[113780] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["interval"] = 0.5,
+						["class"] = "ROGUE",
+						["desc"] = 259,
 					},
 					[22482] = {
 						["enabled"] = true,
@@ -80924,12 +80924,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[196278] = {
+					[195256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["interval"] = 1.5,
+						["class"] = "SHAMAN",
+						["desc"] = 263,
 					},
 					[132467] = {
 						["enabled"] = true,
@@ -83057,12 +83057,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[195256] = {
+					[105421] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "SHAMAN",
-						["desc"] = 263,
+						["interval"] = 0.5,
+						["class"] = "PALADIN",
+						["desc"] = 0,
 					},
 					[199054] = {
 						["enabled"] = true,
@@ -83071,12 +83071,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[105421] = {
+					[196278] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 0,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[104318] = {
 						["enabled"] = true,
@@ -83638,12 +83638,12 @@ xCTSavedDB = {
 						["class"] = "MONK",
 						["desc"] = 269,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -83722,12 +83722,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[156287] = {
 						["enabled"] = true,
@@ -83764,12 +83764,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -84009,12 +84009,12 @@ xCTSavedDB = {
 						["class"] = "ROGUE",
 						["desc"] = 260,
 					},
-					[201754] = {
+					[218617] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 1.5,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[173010] = {
 						["enabled"] = true,
@@ -84030,12 +84030,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[113780] = {
+					[201754] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "ROGUE",
-						["desc"] = 259,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[194153] = {
 						["enabled"] = true,
@@ -84093,12 +84093,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[211727] = {
+					[118000] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[210833] = {
 						["enabled"] = true,
@@ -84114,12 +84114,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[118000] = {
+					[213771] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["class"] = "DRUID",
+						["desc"] = 104,
 					},
 					[84721] = {
 						["enabled"] = true,
@@ -84142,19 +84142,19 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 62,
 					},
+					[206930] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 0.5,
+						["class"] = "DEATHKNIGHT",
+						["desc"] = 250,
+					},
 					[980] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "WARLOCK",
 						["desc"] = 265,
-					},
-					[88263] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 66,
 					},
 					[211545] = {
 						["enabled"] = true,
@@ -84212,12 +84212,12 @@ xCTSavedDB = {
 						["class"] = "WARRIOR",
 						["desc"] = 72,
 					},
-					[153596] = {
+					[120361] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "MAGE",
-						["desc"] = 64,
+						["interval"] = 1.5,
+						["class"] = "HUNTER",
+						["desc"] = 0,
 					},
 					[183042] = {
 						["enabled"] = true,
@@ -84233,19 +84233,19 @@ xCTSavedDB = {
 						["class"] = "DEATHKNIGHT",
 						["desc"] = 250,
 					},
+					[153596] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 2.5,
+						["class"] = "MAGE",
+						["desc"] = 64,
+					},
 					[184256] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
 						["desc"] = "Discordant Chorus",
-					},
-					[120361] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "HUNTER",
-						["desc"] = 0,
 					},
 					[198756] = {
 						["enabled"] = true,
@@ -84485,12 +84485,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Damage",
 					},
-					[206930] = {
+					[88263] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DEATHKNIGHT",
-						["desc"] = 250,
+						["class"] = "PALADIN",
+						["desc"] = 66,
 					},
 					[148235] = {
 						["enabled"] = true,
@@ -84506,12 +84506,12 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 254,
 					},
-					[213771] = {
+					[211727] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DRUID",
-						["desc"] = 104,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[81751] = {
 						["enabled"] = true,
@@ -84562,12 +84562,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[218617] = {
+					[113780] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["interval"] = 0.5,
+						["class"] = "ROGUE",
+						["desc"] = 259,
 					},
 					[13812] = {
 						["enabled"] = true,
@@ -84716,12 +84716,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[227681] = {
 						["enabled"] = true,
@@ -84996,12 +84996,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[196278] = {
+					[195256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["interval"] = 1.5,
+						["class"] = "SHAMAN",
+						["desc"] = 263,
 					},
 					[132467] = {
 						["enabled"] = true,
@@ -86003,12 +86003,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[196278] = {
+					[195256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["interval"] = 1.5,
+						["class"] = "SHAMAN",
+						["desc"] = 263,
 					},
 					[199054] = {
 						["enabled"] = true,
@@ -86017,12 +86017,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[195256] = {
+					[105421] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "SHAMAN",
-						["desc"] = 263,
+						["interval"] = 0.5,
+						["class"] = "PALADIN",
+						["desc"] = 0,
 					},
 					[104318] = {
 						["enabled"] = true,
@@ -86584,12 +86584,12 @@ xCTSavedDB = {
 						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Bodyguards)|r",
 						["desc"] = "Bodyguard: Vivianne",
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -86619,12 +86619,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[185779] = {
 						["enabled"] = true,
@@ -86668,12 +86668,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[146067] = {
 						["enabled"] = true,
@@ -86710,12 +86710,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 66,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -86955,12 +86955,12 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 255,
 					},
-					[113780] = {
+					[201754] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "ROGUE",
-						["desc"] = 259,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[173010] = {
 						["enabled"] = true,
@@ -86976,12 +86976,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[218617] = {
+					[113780] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["interval"] = 0.5,
+						["class"] = "ROGUE",
+						["desc"] = 259,
 					},
 					[194153] = {
 						["enabled"] = true,
@@ -87039,12 +87039,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[213771] = {
+					[211727] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DRUID",
-						["desc"] = 104,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[7922] = {
 						["enabled"] = true,
@@ -87060,12 +87060,12 @@ xCTSavedDB = {
 						["class"] = "DEMONHUNTER",
 						["desc"] = 577,
 					},
-					[211727] = {
+					[118000] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[212621] = {
 						["enabled"] = true,
@@ -87088,19 +87088,19 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Nature Healing (Monks, Druids)",
 					},
+					[980] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 2.5,
+						["class"] = "WARLOCK",
+						["desc"] = 265,
+					},
 					[88263] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
 						["class"] = "PALADIN",
 						["desc"] = 66,
-					},
-					[206930] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "DEATHKNIGHT",
-						["desc"] = 250,
 					},
 					[211545] = {
 						["enabled"] = true,
@@ -87186,12 +87186,12 @@ xCTSavedDB = {
 						["class"] = "DRUID",
 						["desc"] = 105,
 					},
-					[120361] = {
+					[184256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "HUNTER",
-						["desc"] = 0,
+						["interval"] = 2.5,
+						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
+						["desc"] = "Discordant Chorus",
 					},
 					[70890] = {
 						["enabled"] = true,
@@ -87389,19 +87389,19 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Healing (Priests, Paladins)",
 					},
-					[184256] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
-						["desc"] = "Discordant Chorus",
-					},
 					[153596] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "MAGE",
 						["desc"] = 64,
+					},
+					[120361] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 1.5,
+						["class"] = "HUNTER",
+						["desc"] = 0,
 					},
 					[184707] = {
 						["enabled"] = true,
@@ -87431,12 +87431,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Damage",
 					},
-					[980] = {
+					[206930] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "WARLOCK",
-						["desc"] = 265,
+						["interval"] = 0.5,
+						["class"] = "DEATHKNIGHT",
+						["desc"] = 250,
 					},
 					[84721] = {
 						["enabled"] = true,
@@ -87452,12 +87452,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 62,
 					},
-					[118000] = {
+					[213771] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["class"] = "DRUID",
+						["desc"] = 104,
 					},
 					[81751] = {
 						["enabled"] = true,
@@ -87508,12 +87508,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[201754] = {
+					[218617] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 1.5,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[22482] = {
 						["enabled"] = true,
@@ -87942,12 +87942,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[105421] = {
+					[196278] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 0,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[132467] = {
 						["enabled"] = true,
@@ -89626,12 +89626,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[195256] = {
+					[105421] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "SHAMAN",
-						["desc"] = 263,
+						["interval"] = 0.5,
+						["class"] = "PALADIN",
+						["desc"] = 0,
 					},
 					[199054] = {
 						["enabled"] = true,
@@ -89640,12 +89640,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[105421] = {
+					[196278] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 0,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[104318] = {
 						["enabled"] = true,
@@ -90207,12 +90207,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Healing (Priest, Paladin)",
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -90291,12 +90291,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[156287] = {
 						["enabled"] = true,
@@ -90333,12 +90333,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 66,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -90578,12 +90578,12 @@ xCTSavedDB = {
 						["class"] = "ROGUE",
 						["desc"] = 260,
 					},
-					[201754] = {
+					[218617] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 1.5,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[173010] = {
 						["enabled"] = true,
@@ -90599,12 +90599,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[113780] = {
+					[201754] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "ROGUE",
-						["desc"] = 259,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[194153] = {
 						["enabled"] = true,
@@ -90662,12 +90662,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[211727] = {
+					[118000] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[210833] = {
 						["enabled"] = true,
@@ -90683,12 +90683,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[118000] = {
+					[213771] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["class"] = "DRUID",
+						["desc"] = 104,
 					},
 					[211088] = {
 						["enabled"] = true,
@@ -90711,19 +90711,19 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
+					[206930] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 0.5,
+						["class"] = "DEATHKNIGHT",
+						["desc"] = 250,
+					},
 					[980] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "WARLOCK",
 						["desc"] = 265,
-					},
-					[88263] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 66,
 					},
 					[211545] = {
 						["enabled"] = true,
@@ -90781,12 +90781,12 @@ xCTSavedDB = {
 						["class"] = "WARRIOR",
 						["desc"] = 72,
 					},
-					[153596] = {
+					[120361] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "MAGE",
-						["desc"] = 64,
+						["interval"] = 1.5,
+						["class"] = "HUNTER",
+						["desc"] = 0,
 					},
 					[183042] = {
 						["enabled"] = true,
@@ -90802,19 +90802,19 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 255,
 					},
+					[153596] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 2.5,
+						["class"] = "MAGE",
+						["desc"] = 64,
+					},
 					[184256] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
 						["desc"] = "Discordant Chorus",
-					},
-					[120361] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "HUNTER",
-						["desc"] = 0,
 					},
 					[198756] = {
 						["enabled"] = true,
@@ -91054,12 +91054,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Damage",
 					},
-					[206930] = {
+					[88263] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DEATHKNIGHT",
-						["desc"] = 250,
+						["class"] = "PALADIN",
+						["desc"] = 66,
 					},
 					[212621] = {
 						["enabled"] = true,
@@ -91075,12 +91075,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Nature Healing (Monks, Druids)",
 					},
-					[213771] = {
+					[211727] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DRUID",
-						["desc"] = 104,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[81751] = {
 						["enabled"] = true,
@@ -91131,12 +91131,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[218617] = {
+					[113780] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["interval"] = 0.5,
+						["class"] = "ROGUE",
+						["desc"] = 259,
 					},
 					[13812] = {
 						["enabled"] = true,
@@ -91285,12 +91285,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[185779] = {
 						["enabled"] = true,
@@ -91565,12 +91565,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[196278] = {
+					[195256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["interval"] = 1.5,
+						["class"] = "SHAMAN",
+						["desc"] = 263,
 					},
 					[132467] = {
 						["enabled"] = true,

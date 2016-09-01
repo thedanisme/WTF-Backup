@@ -955,6 +955,7 @@ function DGF:InitializeGearFinderUI()
     DugisGearFinderFrame.suggestedGuideSubtitle = suggestedGuideSubtitle
 
     local allowedWeaponSubclassIndices = GA:GetGearAdvisorScoringValues("LE_ITEM_CLASS_WEAPON")
+	local allowedArmorSubclassIndices = GA:GetGearAdvisorScoringValues("LE_ITEM_CLASS_ARMOR")
 
     --Adding extra slots to the table
     if
@@ -975,7 +976,15 @@ function DGF:InitializeGearFinderUI()
         table.insert(equipementSlots, 4, "INVTYPE_2HWEAPON")
     end
 
-    if not (englishClass == "MONK" and GetSpecialization() == 1) and englishClass ~= "HUNTER" then
+    if
+        LuaUtils:isInTable("0", allowedWeaponSubclassIndices) or
+        LuaUtils:isInTable("4", allowedWeaponSubclassIndices) or
+        LuaUtils:isInTable("7", allowedWeaponSubclassIndices) or
+        LuaUtils:isInTable("13", allowedWeaponSubclassIndices) or
+        LuaUtils:isInTable("15", allowedWeaponSubclassIndices) or
+        LuaUtils:isInTable("19", allowedWeaponSubclassIndices) or
+		LuaUtils:isInTable("6", allowedArmorSubclassIndices)
+	then
         table.insert(equipementSlots, 4, "INVTYPE_OFFHAND_MERGED")
         table.insert(equipementSlots, 4, "INVTYPE_WEAPON_MERGED")
     end
@@ -1884,15 +1893,38 @@ function DGF:SetSuggestedItemGuides()
     local theBestGuideScore = nil
     local theBestGuide = nil
     ----------------------------------
+    --Searching for suggested guide by the best score
+--   LuaUtils:foreach(itemButtons, function(itemButton)
+--       if itemButton.suggestedGuide and (DGF:PlayerHasEnoughLevel(itemButton.suggestion) or (atLeastOneBelowPlayerLevel == false)) then
+--           local score = itemButton.suggestion.score
+--           if theBestGuideScore == nil or theBestGuideScore < score then
+--               theBestGuideScore = score
+--               theBestGuide = itemButton.suggestedGuide
+--           end
+--       end
+--   end)   
+ 
+    --Searching for suggested guide by the highest score sum of suggested gears
+    --{"guide title 1" => 30052, "guide title 2" => 3452}
+    local guide2gearsScoreSum = {}
     LuaUtils:foreach(itemButtons, function(itemButton)
         if itemButton.suggestedGuide and (DGF:PlayerHasEnoughLevel(itemButton.suggestion) or (atLeastOneBelowPlayerLevel == false)) then
-            local score = itemButton.suggestion.score
-            if theBestGuideScore == nil or theBestGuideScore < score then
-                theBestGuideScore = score
-                theBestGuide = itemButton.suggestedGuide
+            if not guide2gearsScoreSum[itemButton.suggestedGuide] then
+                guide2gearsScoreSum[itemButton.suggestedGuide] = itemButton.suggestion.score
+            else
+                guide2gearsScoreSum[itemButton.suggestedGuide] = guide2gearsScoreSum[itemButton.suggestedGuide] + itemButton.suggestion.score
             end
         end
     end)
+    
+    local theHighestSum = nil
+    LuaUtils:foreach(guide2gearsScoreSum, function(sum, guide)
+        if theHighestSum == nil or sum > theHighestSum then
+            theHighestSum = sum
+            theBestGuide = guide
+        end
+    end)
+    
     -----------------------------------
 
     DugisGearFinderFrame.suggestedGuide.suggestedGuideTitle  = theBestGuide

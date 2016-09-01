@@ -57110,11 +57110,9 @@ guideTitle2engPlayerRace["4(4-9 Orc & Troll)#4(5-11 Orc & Troll)#4(5-12 Orc & Tr
             end
 			
 			if difficulty == 3 or difficulty == 4 then --for [10] and [25] raid 
-				if heroic == 1 then 
-					difficulty = 15
-				else
-					difficulty = 14
-				end
+				difficulty = 14
+			elseif difficulty == 5 or difficulty == 6 then
+				difficulty = 15
 			end
             
             if guideInfo.manualDifficulty then

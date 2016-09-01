@@ -15,7 +15,7 @@ local GetContainerItemLink, BANK_CONTAINER_INVENTORY_OFFSET, EQUIPPED_FIRST, EQU
 	GetContainerItemLink, BANK_CONTAINER_INVENTORY_OFFSET,EQUIPPED_FIRST, EQUIPPED_LAST, NUM_BANKGENERIC_SLOTS, BACKPACK_CONTAINER
 local UnitClass, GetInventoryItemLink, GetItemInfo, UnitLevel, GetInventoryItemID, GetCreateTable, QueueInvocation, strformat, RegisterReaction, RegisterFunctionReaction, RegisterMemberFunctionReaction, RegisterStopwatchReaction, TryGetCacheReaction, ListContains, PackStrings =
 		UnitClass, GetInventoryItemLink, GetItemInfo, UnitLevel, GetInventoryItemID, DGV.GetCreateTable, DGV.QueueInvocation, string.format, DGV.RegisterReaction, DGV.RegisterFunctionReaction, DGV.RegisterMemberFunctionReaction, DGV.RegisterStopwatchReaction, DGV.TryGetCacheReaction, DGV.ListContains, DGV.PackStrings
-local BeginAutoroutine, InterruptAutoroutine, YieldAutoroutine, tPool, DoOuelltOfCombat, GetRunningAutoroutine =
+local BeginAutoroutine, InterruptAutoroutine, YieldAutoroutine, tPool, DoOutOfCombat, GetRunningAutoroutine =
 	DGV.BeginAutoroutine, DGV.InterruptAutoroutine, DGV.YieldAutoroutine, DGV.tPool, DGV.DoOutOfCombat, DGV.GetRunningAutoroutine
 
 
@@ -63,9 +63,7 @@ local weightIdentifier2weightLabelMap = {
 }
 
 function GA:Initialize()
-	if not DugisGuideUser.CustomReset then
-		DugisGuideUser.CustomReset = true
-	end
+
     if Storyline_NPCFrameRewardsItem then
         local oldOnClickScript = Storyline_NPCFrameRewardsItem:GetScript("OnClick")
         Storyline_NPCFrameRewardsItem:SetScript("OnClick", function()

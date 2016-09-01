@@ -441,7 +441,6 @@ C Paid in Lifeblood |QID|39855| |N|Confront (npc:91387) and leave {Helheim} (34.
 T Paid in Lifeblood |QID|39855| |N|(npc:92539) in {Valdisdall} (60.16, 50.81)| |Z|1017 0| |NPC|92539|
 A A Heavy Burden |QID|40078| |N|(npc:92539) in {Valdisdall} (60.16, 50.81)| |Z|1017 0| |NPC|92539|
 C A Heavy Burden |QID|40078| |N|Click on the spear and take the fish from (npc:96254)'s Fish Barrel and skewer it on the spear above the fire in {Valdisdall} (60.47, 51.21)| |Z|1017 0| |NPC|96254|
-A To Catch a Banshee |QID|39059| |N|(npc:94346) in {Valdisdall} (60.01, 51.29)| |Z|1017 0| |NPC|94346|
 T A Heavy Burden |QID|40078| |N|(npc:92539) in {Valdisdall} (60.11, 50.81)| |Z|1017 0| |NPC|92539|
 A Knocking on Valor's Door |QID|40001| |N|(npc:92539) in {Valdisdall} (60.11, 50.81)| |Z|1017 0| |NPC|92539|
 A The Dark Lady's Bidding |QID|38872| |N|(npc:93624) in {Valdisdall} (59.98, 51.33)| |Z|1017 0| |NPC|93624|

@@ -59,15 +59,9 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Bosses_Shade of Xavius"] = {
-		},
-		["BigWigs_Bosses_Dresaron"] = {
-		},
 		["BigWigs_Plugins_Colors"] = {
 		},
 		["BigWigs_Plugins_Raid Icons"] = {
-		},
-		["BigWigs_Plugins_HeroesVoices"] = {
 		},
 		["BigWigs_Plugins_Bars"] = {
 			["profiles"] = {
@@ -98,15 +92,9 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Bosses_Archdruid Glaidalis"] = {
+		["BigWigs_Plugins_HeroesVoices"] = {
 		},
-		["BigWigs_Plugins_Super Emphasize"] = {
-			["profiles"] = {
-				["Default"] = {
-					["outline"] = "OUTLINE",
-					["font"] = "Expressway",
-				},
-			},
+		["LibDualSpec-1.0"] = {
 		},
 		["BigWigs_Bosses_Hellfire High Council"] = {
 			["profiles"] = {
@@ -117,7 +105,13 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Bosses_Oakheart"] = {
+		["BigWigs_Plugins_Super Emphasize"] = {
+			["profiles"] = {
+				["Default"] = {
+					["outline"] = "OUTLINE",
+					["font"] = "Expressway",
+				},
+			},
 		},
 		["BigWigs_Plugins_Proximity"] = {
 			["profiles"] = {
@@ -151,15 +145,13 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["LibDualSpec-1.0"] = {
-		},
 		["BigWigs_Plugins_Common Auras"] = {
 			["profiles"] = {
 				["Default"] = {
+					["repair"] = 515,
+					[106898] = 515,
 					[2825] = 515,
 					["feast"] = 515,
-					[106898] = 515,
-					["repair"] = 515,
 				},
 			},
 			["reset"] = true,
@@ -740,6 +732,12 @@ BigWigsStatisticsDB = {
 				["kills"] = 1,
 			},
 		},
+		[852] = {
+			["LFR"] = {
+				["best"] = 529.452000000005,
+				["kills"] = 1,
+			},
+		},
 		[867] = {
 			["LFR"] = {
 				["wipes"] = 1,
@@ -748,12 +746,6 @@ BigWigsStatisticsDB = {
 		[849] = {
 			["LFR"] = {
 				["best"] = 201.006999999998,
-				["kills"] = 1,
-			},
-		},
-		[852] = {
-			["LFR"] = {
-				["best"] = 529.452000000005,
 				["kills"] = 1,
 			},
 		},

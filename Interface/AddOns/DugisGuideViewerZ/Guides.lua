@@ -4892,7 +4892,7 @@ function Guides:Initialize()
 		end
 		
 		function DGV:PLAYER_LEVEL_UP(self, level)
-            DugisCharacterCache.CalculateScore_cache_v9 = {}
+            DugisCharacterCache.CalculateScore_cache_v10 = {}
         
 			--skip quest that is grey ! or too high level, and check again on playerlevel up event to see if they can pick them up
 			if not InCombatLockdown() then		
