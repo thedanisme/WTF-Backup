@@ -13,6 +13,7 @@ local CAFrame = CreateFrame("Frame")
 
 local addonName, L = ...
 
+local PL = LibStub("AceLocale-3.0"):GetLocale("BigWigs: Plugins")
 function mod:GetLocale() return L end
 
 --------------------------------------------------------------------------------
@@ -23,6 +24,7 @@ local toggleOptions = {
 	--[[ Out of combat ]]--
 	"feast",
 	"repair",
+	226234, -- Codex of the Tranquil Mind
 	43987, -- Conjure Refreshment Table
 	"portal",
 	29893, -- Create Soulwell
@@ -73,11 +75,6 @@ local toggleOptions = {
 	62618, -- Power Word: Barrier
 	108280, -- Healing Tide Totem
 	98008, -- Spirit Link Totem
-	
-	--[[ Special ]]--
-	"ring_tank",    -- 6.2 Legendary Rings
-	"ring_healer",  -- 6.2 Legendary Rings
-	"ring_damager", -- 6.2 Legendary Rings
 }
 local toggleDefaults = { enabled = true }
 for _, key in next, toggleOptions do
@@ -102,7 +99,7 @@ local function GetOptions()
 	end
 
 	options = {
-		name = L["Common Auras"],
+		name = L.commonAuras,
 		type = "group",
 		childGroups = "tab",
 		args = {
@@ -185,11 +182,10 @@ local function GetOptions()
 	end
 
 	local optionHeaders = {
-		feast = L["Out of combat"],
-		[108199] = L["Group"],
-		[48792] = L["Self"],
-		[102342] = L["Healer"],
-		ring_tank = L["Legendary Rings"],
+		feast = L.outOfCombat,
+		[108199] = L.group,
+		[48792] = L.self,
+		[102342] = L.healer,
 	}
 	local bitflags = {"MESSAGE", "BAR", "EMPHASIZE"}
 	local parentGroup = nil
@@ -237,12 +233,12 @@ local function GetOptions()
 				--
 				sep2 = {
 					type = "header",
-					name = L["Colors"],
+					name = PL.colors,
 					order = 20,
 					hidden = hidden,
 				},
 				messages = {
-					name = L["Messages"],
+					name = PL.messages,
 					type = "color",
 					get = messageColorGet,
 					set = messageColorSet,
@@ -250,7 +246,7 @@ local function GetOptions()
 					order = 21,
 				},
 				barColor = {
-					name = L["Normal bar"],
+					name = PL.regularBars,
 					type = "color", hasAlpha = true,
 					get = barColorGet,
 					set = barColorSet,
@@ -258,7 +254,7 @@ local function GetOptions()
 					order = 22,
 				},
 				barEmphasized = {
-					name = L["Emphasized bar"],
+					name = PL.emphasizedBars,
 					type = "color", hasAlpha = true,
 					get = barColorGet,
 					set = barColorSet,
@@ -266,7 +262,7 @@ local function GetOptions()
 					order = 23,
 				},
 				barBackground = {
-					name = L["Bar background"],
+					name = L.barBackground,
 					type = "color", hasAlpha = true,
 					get = barColorGet,
 					set = barColorSet,
@@ -274,7 +270,7 @@ local function GetOptions()
 					order = 24,
 				},
 				barText = {
-					name = L["Bar text"],
+					name = L.barText,
 					type = "color", hasAlpha = true,
 					get = barColorGet,
 					set = barColorSet,
@@ -282,7 +278,7 @@ local function GetOptions()
 					order = 25,
 				},
 				barTextShadow = {
-					name = L["Bar text shadow"],
+					name = L.barTextShadow,
 					type = "color", hasAlpha = true,
 					get = barColorGet,
 					set = barColorSet,
@@ -320,7 +316,7 @@ end
 
 mod.subPanelOptions = {
 	key = "Common Auras",
-	name = L["Common Auras"],
+	name = L.commonAuras,
 	options = GetOptions,
 }
 
@@ -347,11 +343,6 @@ function mod:OnRegister()
 		[29893] = "Soulwell", -- Create Soulwell
 		[43987] = "Refreshment", -- Conjure Refreshment Table
 		-- Group
-		-- [187611] = "RingDamager", -- Nithramus (int dps)
-		-- [187612] = "RingHealer", -- Etheralus (healer)
-		-- [187613] = "RingTank", -- Sanctus (tank)
-		-- [187614] = "RingDamager", -- Thorasus (str dps)
-		-- [187615] = "RingDamager", -- Maalus (agi dps)
 		[97462] = "CommandingShout",
 		[106898] = "StampedingRoar",
 		[1022] = "BlessinOfProtection",
@@ -402,13 +393,6 @@ function mod:OnRegister()
 		-- Reincarnation
 		[21169] = "Reincarnation",
 	}
-	combatLogMap.SPELL_AURA_APPLIED = {
-		[187616] = "RingDamager", -- Nithramus (int dps)
-		[187618] = "RingHealer", -- Etheralus (healer)
-		[187617] = "RingTank", -- Sanctus (tank)
-		[187619] = "RingDamager", -- Thorasus (str dps)
-		[187620] = "RingDamager", -- Maalus (agi dps)
-	}
 	combatLogMap.SPELL_AURA_REMOVED = {
 		[740] = "TranquilityOff",
 		[64843] = "DivineHymnOff",
@@ -447,26 +431,13 @@ function mod:OnRegister()
 		[159931] = "Rebirth", -- Gift of Chi-Ji (Hunter pet)
 		[159956] = "Rebirth", -- Dust of Life (Hunter pet)
 	}
-
-	-- XXX temp db reset
-	local ns = _G.BigWigs3DB.namespaces["BigWigs_Plugins_Common Auras"]
-	if not ns.reset then
-		if ns.profiles then
-			for profile, db in next, ns.profiles do
-				wipe(db)
-			end
-			self.resetMessage = true
-		end
-		ns.reset = true
-	end
 end
 
 function mod:OnPluginEnable()
-	if self.resetMessage then
-		print("|cFF33FF99Big Wigs|r: Common Auras has been updated to show in the Big Wigs settings panel! Spells now default to being disabled which, unfortunately, means your settings have been reset :(")
-	end
-
+	self:RegisterMessage("BigWigs_OnBossWin")
+	self:RegisterMessage("BigWigs_OnBossWipe", "BigWigs_OnBossWin")
 	self:RegisterEvent("PLAYER_REGEN_DISABLED")
+	self:RegisterEvent("UNIT_SPELLCAST_SUCCEEDED") -- for tracking Codex casts
 
 	CAFrame:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
 end
@@ -482,6 +453,7 @@ local nonCombat = { -- Map of spells to only show out of combat.
 	[698] = true, -- Rital of Summoning
 	[29893] = true, -- Create Soulwell
 	[43987] = true, -- Conjure Refreshment Table
+	[226234] = true, -- Codex of the Tranquil Mind
 }
 local firedNonCombat = {} -- Bars that we fired that should be hidden on combat.
 
@@ -506,9 +478,6 @@ colors = {
 	[2825] = red, -- Bloodlust
 	[108280] = green, -- Healing Tide Totem
 	[98008] = orange, -- Spirit Link Totem
-	ring_tank = orange,
-	ring_healer = green,
-	ring_damager = red,
 }
 
 local function checkFlag(key, flag, player)
@@ -553,6 +522,10 @@ function mod:PLAYER_REGEN_DISABLED()
 	wipe(firedNonCombat)
 end
 
+function mod:BigWigs_OnBossWin()
+	self:SendMessage("BigWigs_StopBars", self)
+end
+
 --------------------------------------------------------------------------------
 -- Event Handlers
 --
@@ -569,39 +542,15 @@ end)
 
 -- General
 
--- If wearing a ring for the wrong role (dps wearing healer ring),
--- you can use it but don't gain the effect and it doesn't go on cd :(
--- that's the reason for using AURA_APPLIED instead of CAST_SUCCESS
+-- Codex handling. There are no CLEU events for this, unfortunately
 do
-	local prev = 0
-	function mod:RingTank(_, spellId, nick, spellName)
-		local t = GetTime()
-		if t-prev > 20 then
-			prev = t
-			message("ring_tank", L.used_cast:format(nick, spellName), nil, spellId)
-			bar("ring_tank", 15, nick, spellName, spellId)
-		end
-	end
-end
-do
-	local prev = 0
-	function mod:RingHealer(_, spellId, nick, spellName)
-		local t = GetTime()
-		if t-prev > 20 then
-			prev = t
-			message("ring_healer", L.used_cast:format(nick, spellName), nil, spellId)
-			bar("ring_healer", 15, nick, spellName, spellId)
-		end
-	end
-end
-do
-	local prev = 0
-	function mod:RingDamager(_, spellId, nick, spellName)
-		local t = GetTime()
-		if t-prev > 20 then
-			prev = t
-			message("ring_damager", L.used_cast:format(nick, spellName), nil, spellId)
-			bar("ring_damager", 15, nick, spellName, spellId)
+	local prev = ""
+	function mod:UNIT_SPELLCAST_SUCCEEDED(_, unit, spellName, _, castGUID, spellId)
+		if spellId == 226234 and castGUID ~= prev then
+			prev = castGUID
+			local nick = self:UnitName(unit, true)
+			message(spellId, L.used_cast:format(nick, spellName))
+			bar(spellId, 300, nick, L.codex)
 		end
 	end
 end
@@ -710,7 +659,7 @@ end
 
 function mod:Portals(_, spellId, nick, spellName)
 	message("portal", L.portal_cast:format(nick, spellName), nil, spellId)
-	bar("portal", 65, L.portal_bar:format(spellName, nick), nick, spellName, spellId)
+	bar("portal", 65, nick, spellName, spellId)
 end
 
 function mod:Refreshment(_, spellId, nick, spellName)
@@ -901,3 +850,4 @@ function mod:ShieldWall(_, spellId, nick, spellName)
 	message(spellId, L.used_cast:format(nick, spellName), nick)
 	bar(spellId, 8, nick, spellName)
 end
+
