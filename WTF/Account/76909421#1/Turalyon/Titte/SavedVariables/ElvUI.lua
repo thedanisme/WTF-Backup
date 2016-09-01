@@ -1,5 +1,18 @@
 
 ElvCharacterDB = {
+	["ChatEditHistory"] = {
+		"/i it would also be cool if the hunters turned off growl", -- [1]
+		"/pull 10", -- [2]
+		"/1 That doesn't sound like a good prize...", -- [3]
+		"/skada toggle", -- [4]
+		"/i go to the tornado", -- [5]
+	},
+	["BodyGuard"] = {
+		["Active"] = false,
+		["Health"] = 0,
+		["MaxHealth"] = 0,
+		["IsInValidZone"] = true,
+	},
 	["ChatLog"] = {
 		["1469637285.344"] = {
 			"Marked for Death on Cammie!", -- [1]
@@ -991,19 +1004,19 @@ ElvCharacterDB = {
 			nil, -- [19]
 			"CHAT_MSG_SAY", -- [20]
 		},
-		["1470431827.862"] = {
-			"Well he died hard", -- [1]
-			"Thundertitty-BleedingHollow", -- [2]
+		["1469637416.776"] = {
+			"%s has earned the achievement |cffffff00|Hachievement:8992:Player-3685-07F3070D:1:7:27:16:4294967295:4294967295:4294967295:4294967295|h[Blackhand's Crucible]|h|r!", -- [1]
+			"Titte-Turalyon", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Thundertitty-BleedingHollow", -- [5]
+			"Titte", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			356, -- [11]
-			"Player-73-09716A9F", -- [12]
+			126, -- [11]
+			"Player-3685-07F3070D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
@@ -1011,7 +1024,7 @@ ElvCharacterDB = {
 			false, -- [17]
 			nil, -- [18]
 			nil, -- [19]
-			"CHAT_MSG_RAID", -- [20]
+			"CHAT_MSG_GUILD_ACHIEVEMENT", -- [20]
 		},
 		["1470431795.076"] = {
 			"You're actually the first Warlock we've had lol.", -- [1]
@@ -1101,72 +1114,6 @@ ElvCharacterDB = {
 			nil, -- [19]
 			"CHAT_MSG_INSTANCE_CHAT_LEADER", -- [20]
 		},
-		["1470430547.876"] = {
-			"waterspout", -- [1]
-			"Ebie-Norgannon", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Ebie-Norgannon", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			173, -- [11]
-			"Player-98-0669DA20", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			nil, -- [18]
-			nil, -- [19]
-			"CHAT_MSG_INSTANCE_CHAT", -- [20]
-		},
-		["1470429770.726"] = {
-			"|cffffff00Vol'mar is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Tanaan Jungle", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Tanaan Jungle", -- [9]
-			0, -- [10]
-			94, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			nil, -- [18]
-			nil, -- [19]
-			"CHAT_MSG_CHANNEL", -- [20]
-		},
-		["1470431773.635"] = {
-			"hai!", -- [1]
-			"Pickerd-Skullcrusher", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Pickerd-Skullcrusher", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			347, -- [11]
-			"Player-74-02D61920", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			nil, -- [18]
-			nil, -- [19]
-			"CHAT_MSG_RAID", -- [20]
-		},
 		["1470431752.452"] = {
 			"I may faint. I see a warlock in the group lol.", -- [1]
 			"Sunstòrm-WyrmrestAccord", -- [2]
@@ -1189,27 +1136,27 @@ ElvCharacterDB = {
 			nil, -- [19]
 			"CHAT_MSG_RAID_LEADER", -- [20]
 		},
-		["1469636969.045"] = {
-			"so sry", -- [1]
-			"Khadgarth-DarkIron", -- [2]
+		["1470429770.726"] = {
+			"|cffffff00Vol'mar is under attack!|r", -- [1]
+			"", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Khadgarth-DarkIron", -- [5]
+			"3. LocalDefense - Tanaan Jungle", -- [4]
+			"", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Tanaan Jungle", -- [9]
 			0, -- [10]
-			40, -- [11]
-			"Player-157-08ED026B", -- [12]
+			94, -- [11]
+			false, -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
+			true, -- [17]
 			nil, -- [18]
 			nil, -- [19]
-			"CHAT_MSG_INSTANCE_CHAT", -- [20]
+			"CHAT_MSG_CHANNEL", -- [20]
 		},
 		["1470429766.749"] = {
 			"|cffffff00Vol'mar is under attack!|r", -- [1]
@@ -1255,6 +1202,72 @@ ElvCharacterDB = {
 			nil, -- [19]
 			"CHAT_MSG_INSTANCE_CHAT", -- [20]
 		},
+		["1469636969.045"] = {
+			"so sry", -- [1]
+			"Khadgarth-DarkIron", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Khadgarth-DarkIron", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			40, -- [11]
+			"Player-157-08ED026B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			nil, -- [18]
+			nil, -- [19]
+			"CHAT_MSG_INSTANCE_CHAT", -- [20]
+		},
+		["1470429769.687"] = {
+			"|cffffff00Vol'mar is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Tanaan Jungle", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Tanaan Jungle", -- [9]
+			0, -- [10]
+			93, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			nil, -- [18]
+			nil, -- [19]
+			"CHAT_MSG_CHANNEL", -- [20]
+		},
+		["1470431827.862"] = {
+			"Well he died hard", -- [1]
+			"Thundertitty-BleedingHollow", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Thundertitty-BleedingHollow", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			356, -- [11]
+			"Player-73-09716A9F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			nil, -- [18]
+			nil, -- [19]
+			"CHAT_MSG_RAID", -- [20]
+		},
 		["1469602351.122"] = {
 			"No owrries, I was standing in something bad, sorry I didn;t catch it", -- [1]
 			"Sóra-Proudmoore", -- [2]
@@ -1299,27 +1312,27 @@ ElvCharacterDB = {
 			nil, -- [19]
 			"CHAT_MSG_WHISPER_INFORM", -- [20]
 		},
-		["1470429636.151"] = {
-			"|cffffff00Vol'mar is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Tanaan Jungle", -- [4]
-			"", -- [5]
+		["1469637025.462"] = {
+			"Your pet, Core Hound, used |cff71d5ff|Hspell:2649:0|h[Growl]|h|r on Forgemistress Flamehand", -- [1]
+			"Shakarrihern-Blackrock", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Shakarrihern-Blackrock", -- [5]
 			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Tanaan Jungle", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			79, -- [11]
-			false, -- [12]
+			46, -- [11]
+			"Player-10-0A43DCCA", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
+			false, -- [17]
 			nil, -- [18]
 			nil, -- [19]
-			"CHAT_MSG_CHANNEL", -- [20]
+			"CHAT_MSG_WHISPER_INFORM", -- [20]
 		},
 		["1470431785.087"] = {
 			"were an endangered species", -- [1]
@@ -1343,19 +1356,19 @@ ElvCharacterDB = {
 			nil, -- [19]
 			"CHAT_MSG_RAID", -- [20]
 		},
-		["1470430512.319"] = {
-			"go to the tornado", -- [1]
-			"Titte-Turalyon", -- [2]
+		["1470430547.876"] = {
+			"waterspout", -- [1]
+			"Ebie-Norgannon", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Titte", -- [5]
+			"Ebie-Norgannon", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			172, -- [11]
-			"Player-3685-07F3070D", -- [12]
+			173, -- [11]
+			"Player-98-0669DA20", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
@@ -1431,7 +1444,7 @@ ElvCharacterDB = {
 			nil, -- [19]
 			"CHAT_MSG_INSTANCE_CHAT", -- [20]
 		},
-		["1470429769.687"] = {
+		["1470429636.151"] = {
 			"|cffffff00Vol'mar is under attack!|r", -- [1]
 			"", -- [2]
 			"", -- [3]
@@ -1442,7 +1455,7 @@ ElvCharacterDB = {
 			3, -- [8]
 			"LocalDefense - Tanaan Jungle", -- [9]
 			0, -- [10]
-			93, -- [11]
+			79, -- [11]
 			false, -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1497,19 +1510,19 @@ ElvCharacterDB = {
 			nil, -- [19]
 			"CHAT_MSG_WHISPER_INFORM", -- [20]
 		},
-		["1469637025.462"] = {
-			"Your pet, Core Hound, used |cff71d5ff|Hspell:2649:0|h[Growl]|h|r on Forgemistress Flamehand", -- [1]
-			"Shakarrihern-Blackrock", -- [2]
-			"Orcish", -- [3]
+		["1469637251.257"] = {
+			"Three healers. Nice pull", -- [1]
+			"Kirroth-KirinTor", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Shakarrihern-Blackrock", -- [5]
+			"Kirroth-KirinTor", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			46, -- [11]
-			"Player-10-0A43DCCA", -- [12]
+			83, -- [11]
+			"Player-1071-02A543CB", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
@@ -1517,7 +1530,7 @@ ElvCharacterDB = {
 			false, -- [17]
 			nil, -- [18]
 			nil, -- [19]
-			"CHAT_MSG_WHISPER_INFORM", -- [20]
+			"CHAT_MSG_INSTANCE_CHAT", -- [20]
 		},
 		["1469637294.193"] = {
 			"omg i disconnected", -- [1]
@@ -1585,6 +1598,28 @@ ElvCharacterDB = {
 			nil, -- [19]
 			"CHAT_MSG_WHISPER_INFORM", -- [20]
 		},
+		["1470430512.319"] = {
+			"go to the tornado", -- [1]
+			"Titte-Turalyon", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Titte", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			172, -- [11]
+			"Player-3685-07F3070D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			nil, -- [18]
+			nil, -- [19]
+			"CHAT_MSG_INSTANCE_CHAT", -- [20]
+		},
 		["1470429765.151"] = {
 			"|cffffff00Vol'mar is under attack!|r", -- [1]
 			"", -- [2]
@@ -1628,28 +1663,6 @@ ElvCharacterDB = {
 			nil, -- [18]
 			nil, -- [19]
 			"CHAT_MSG_WHISPER_INFORM", -- [20]
-		},
-		["1469637416.776"] = {
-			"%s has earned the achievement |cffffff00|Hachievement:8992:Player-3685-07F3070D:1:7:27:16:4294967295:4294967295:4294967295:4294967295|h[Blackhand's Crucible]|h|r!", -- [1]
-			"Titte-Turalyon", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Titte", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			126, -- [11]
-			"Player-3685-07F3070D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			nil, -- [18]
-			nil, -- [19]
-			"CHAT_MSG_GUILD_ACHIEVEMENT", -- [20]
 		},
 		["1469602371.247"] = {
 			"it stops the pet's auto-taunt", -- [1]
@@ -1695,19 +1708,19 @@ ElvCharacterDB = {
 			nil, -- [19]
 			"CHAT_MSG_CHANNEL", -- [20]
 		},
-		["1469637251.257"] = {
-			"Three healers. Nice pull", -- [1]
-			"Kirroth-KirinTor", -- [2]
+		["1470431773.635"] = {
+			"hai!", -- [1]
+			"Pickerd-Skullcrusher", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Kirroth-KirinTor", -- [5]
+			"Pickerd-Skullcrusher", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			83, -- [11]
-			"Player-1071-02A543CB", -- [12]
+			347, -- [11]
+			"Player-74-02D61920", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
@@ -1715,7 +1728,7 @@ ElvCharacterDB = {
 			false, -- [17]
 			nil, -- [18]
 			nil, -- [19]
-			"CHAT_MSG_INSTANCE_CHAT", -- [20]
+			"CHAT_MSG_RAID", -- [20]
 		},
 		["1469637040.41"] = {
 			"howdy", -- [1]
@@ -1783,18 +1796,5 @@ ElvCharacterDB = {
 			nil, -- [19]
 			"CHAT_MSG_RAID", -- [20]
 		},
-	},
-	["ChatEditHistory"] = {
-		"/i it would also be cool if the hunters turned off growl", -- [1]
-		"/pull 10", -- [2]
-		"/1 That doesn't sound like a good prize...", -- [3]
-		"/skada toggle", -- [4]
-		"/i go to the tornado", -- [5]
-	},
-	["BodyGuard"] = {
-		["Active"] = false,
-		["Health"] = 0,
-		["MaxHealth"] = 0,
-		["IsInValidZone"] = true,
 	},
 }

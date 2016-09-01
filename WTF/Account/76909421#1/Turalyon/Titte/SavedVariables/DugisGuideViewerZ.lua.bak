@@ -1,0 +1,1038 @@
+
+CurrentTitle = nil
+CurrentZone = nil
+DugisGuideUser = {
+	["PetBattleOn"] = false,
+	["CustomReset"] = true,
+	["toskip"] = {
+	},
+	["CharacterGUID"] = "Player-3685-07F3070D",
+	["EnableQWStatus"] = true,
+	["turnedinquests"] = {
+	},
+	["userCustomWeights_v2"] = {
+		["HUNTER"] = {
+			{
+				["MASTERY_RATING"] = "7.61",
+				["STA"] = "0",
+				["LE_ITEM_CLASS_WEAPON"] = "2",
+				["INT"] = "0",
+				["RANGED_HASTE_RATING"] = "6.02",
+				["RANGED_CRIT_RATING"] = "5.86",
+				["LE_ITEM_CLASS_ARMOR"] = "0",
+				["ARMOR_SPECIALIZATION_STAT"] = "AGI",
+				["LEECH_RATING"] = "0",
+				["AP"] = "0.01",
+				["AVOIDANCE_RATING"] = "0",
+				["VERSATILITY_RATING"] = "5.22",
+				["ARMOR"] = "0",
+				["DPS"] = "1.66",
+				["AGI"] = "10.81",
+				["STR"] = "0",
+				["SPELL_DMG"] = "0",
+				["XP_BONUS"] = "1000",
+			}, -- [1]
+			{
+				["MASTERY_RATING"] = "7.27",
+				["STA"] = "0",
+				["LE_ITEM_CLASS_WEAPON"] = "2",
+				["INT"] = "0",
+				["RANGED_HASTE_RATING"] = "5.32",
+				["RANGED_CRIT_RATING"] = "5.70",
+				["LE_ITEM_CLASS_ARMOR"] = "0",
+				["ARMOR_SPECIALIZATION_STAT"] = "AGI",
+				["LEECH_RATING"] = "0",
+				["AP"] = "0.01",
+				["AVOIDANCE_RATING"] = "0",
+				["VERSATILITY_RATING"] = "4.86",
+				["ARMOR"] = "0",
+				["DPS"] = "9.30",
+				["AGI"] = "9.14",
+				["STR"] = "0",
+				["SPELL_DMG"] = "0",
+				["XP_BONUS"] = "1000",
+			}, -- [2]
+			{
+				["MASTERY_RATING"] = "3.45",
+				["STA"] = "0",
+				["LE_ITEM_CLASS_WEAPON"] = "1",
+				["INT"] = "0",
+				["RANGED_HASTE_RATING"] = "4.32",
+				["RANGED_CRIT_RATING"] = "5.72",
+				["LE_ITEM_CLASS_ARMOR"] = "0",
+				["ARMOR_SPECIALIZATION_STAT"] = "AGI",
+				["LEECH_RATING"] = "0",
+				["AP"] = "0.01",
+				["AVOIDANCE_RATING"] = "0",
+				["VERSATILITY_RATING"] = "5.72",
+				["ARMOR"] = "0",
+				["DPS"] = "2.69",
+				["AGI"] = "11.36",
+				["STR"] = "0",
+				["SPELL_DMG"] = "0",
+				["XP_BONUS"] = "1000",
+			}, -- [3]
+		},
+		["WARRIOR"] = {
+			{
+				["MASTERY_RATING"] = "9.05",
+				["STA"] = "0",
+				["STR"] = "9.42",
+				["INT"] = "0",
+				["MELEE_HASTE_RATING"] = "6.73",
+				["XP_BONUS"] = "1000",
+				["LE_ITEM_CLASS_ARMOR"] = "0",
+				["ARMOR_SPECIALIZATION_STAT"] = "STR",
+				["LEECH_RATING"] = "0",
+				["AP"] = "0.1",
+				["AVOIDANCE_RATING"] = "0",
+				["VERSATILITY_RATING"] = "5.56",
+				["ARMOR"] = "0",
+				["DPS"] = "8.77",
+				["AGI"] = "0",
+				["SPELL_DMG"] = "0",
+				["MELEE_CRIT_RATING"] = "4.71",
+				["LE_ITEM_CLASS_WEAPON"] = "1",
+			}, -- [1]
+			{
+				["MASTERY_RATING"] = "4.78",
+				["DPS|OFF"] = "2.18",
+				["STA"] = "0",
+				["LE_ITEM_CLASS_WEAPON"] = "0",
+				["INT"] = "0",
+				["MELEE_HASTE_RATING"] = "6.35",
+				["XP_BONUS"] = "1000",
+				["LE_ITEM_CLASS_ARMOR"] = "0",
+				["ARMOR_SPECIALIZATION_STAT"] = "STR",
+				["SPELL_DMG"] = "0",
+				["LEECH_RATING"] = "0",
+				["AP"] = "0.1",
+				["AVOIDANCE_RATING"] = "0",
+				["VERSATILITY_RATING"] = "4.34",
+				["ARMOR"] = "0",
+				["DPS"] = "3.57",
+				["AGI"] = "0",
+				["STR"] = "7.18",
+				["MELEE_CRIT_RATING"] = "5.00",
+				["DPS|MAIN"] = "3.57",
+			}, -- [2]
+			{
+				["MASTERY_RATING"] = "2.45",
+				["STA"] = "1.13",
+				["LE_ITEM_CLASS_WEAPON"] = "0",
+				["INT"] = "0",
+				["MELEE_HASTE_RATING"] = "0.80",
+				["XP_BONUS"] = "1000",
+				["LE_ITEM_CLASS_ARMOR"] = "0",
+				["ARMOR_SPECIALIZATION_STAT"] = "STA",
+				["LEECH_RATING"] = "2.01",
+				["AP"] = "0.1",
+				["AVOIDANCE_RATING"] = "0.83",
+				["VERSATILITY_RATING"] = "3.29",
+				["ARMOR"] = "4.73",
+				["DPS"] = "0.46",
+				["AGI"] = "0",
+				["SPELL_DMG"] = "0",
+				["MELEE_CRIT_RATING"] = "0.78",
+				["STR"] = "4.25",
+			}, -- [3]
+		},
+		["PALADIN"] = {
+			{
+				["MASTERY_RATING"] = "0.03",
+				["STA"] = "0",
+				["LE_ITEM_CLASS_WEAPON"] = "0",
+				["INT"] = "12.01",
+				["SPELL_CRIT_RATING"] = "8.74",
+				["XP_BONUS"] = "1000",
+				["LE_ITEM_CLASS_ARMOR"] = "0",
+				["ARMOR_SPECIALIZATION_STAT"] = "INT",
+				["LEECH_RATING"] = "0",
+				["AP"] = "0",
+				["AVOIDANCE_RATING"] = "0",
+				["VERSATILITY_RATING"] = "7.27",
+				["ARMOR"] = "0",
+				["SPELL_DMG"] = "0",
+				["AGI"] = "0",
+				["STR"] = "0",
+				["DPS"] = "0.01",
+				["SPELL_HASTE_RATING"] = "1.56",
+			}, -- [1]
+			{
+				["MASTERY_RATING"] = "1.86",
+				["STA"] = "1.38",
+				["LE_ITEM_CLASS_WEAPON"] = "0",
+				["INT"] = "0",
+				["MELEE_HASTE_RATING"] = "1.93",
+				["XP_BONUS"] = "1000",
+				["LE_ITEM_CLASS_ARMOR"] = "0",
+				["ARMOR_SPECIALIZATION_STAT"] = "STA",
+				["LEECH_RATING"] = "0.00",
+				["AP"] = "0.2",
+				["AVOIDANCE_RATING"] = "0.0",
+				["VERSATILITY_RATING"] = "2.07",
+				["ARMOR"] = "3.5",
+				["DPS"] = "0.01",
+				["AGI"] = "0",
+				["SPELL_DMG"] = "0",
+				["MELEE_CRIT_RATING"] = "1.13",
+				["STR"] = "0.65",
+			}, -- [2]
+			{
+				["MASTERY_RATING"] = "4.17",
+				["STA"] = "0",
+				["STR"] = "8.54",
+				["INT"] = "0",
+				["MELEE_HASTE_RATING"] = "5.14",
+				["XP_BONUS"] = "1000",
+				["LE_ITEM_CLASS_ARMOR"] = "0",
+				["ARMOR_SPECIALIZATION_STAT"] = "STR",
+				["LEECH_RATING"] = "0",
+				["AP"] = "0.1",
+				["AVOIDANCE_RATING"] = "0",
+				["VERSATILITY_RATING"] = "4.71",
+				["ARMOR"] = "0",
+				["DPS"] = "5.85",
+				["AGI"] = "0",
+				["SPELL_DMG"] = "0",
+				["MELEE_CRIT_RATING"] = "5.16",
+				["LE_ITEM_CLASS_WEAPON"] = "1",
+			}, -- [3]
+		},
+		["MAGE"] = {
+			{
+				["MASTERY_RATING"] = "5.35",
+				["STA"] = "0",
+				["LE_ITEM_CLASS_WEAPON"] = "7",
+				["INT"] = "8.72",
+				["SPELL_CRIT_RATING"] = "5.76",
+				["SPELL_HASTE_RATING"] = "4.78",
+				["LE_ITEM_CLASS_ARMOR"] = "0",
+				["ARMOR_SPECIALIZATION_STAT"] = "INT",
+				["LEECH_RATING"] = "0",
+				["AP"] = "0",
+				["AVOIDANCE_RATING"] = "0",
+				["VERSATILITY_RATING"] = "5.47",
+				["ARMOR"] = "0",
+				["SPELL_DMG"] = "0",
+				["AGI"] = "0",
+				["STR"] = "0",
+				["DPS"] = "0.01",
+				["XP_BONUS"] = "1000",
+			}, -- [1]
+			{
+				["MASTERY_RATING"] = "6.09",
+				["STA"] = "0",
+				["LE_ITEM_CLASS_WEAPON"] = "7",
+				["INT"] = "9.69",
+				["SPELL_CRIT_RATING"] = "8.04",
+				["SPELL_HASTE_RATING"] = "5.58",
+				["LE_ITEM_CLASS_ARMOR"] = "0",
+				["ARMOR_SPECIALIZATION_STAT"] = "INT",
+				["LEECH_RATING"] = "0",
+				["AP"] = "0",
+				["AVOIDANCE_RATING"] = "0",
+				["VERSATILITY_RATING"] = "5.53",
+				["ARMOR"] = "0",
+				["SPELL_DMG"] = "0",
+				["AGI"] = "0",
+				["STR"] = "0",
+				["DPS"] = "0.01",
+				["XP_BONUS"] = "1000",
+			}, -- [2]
+			{
+				["MASTERY_RATING"] = "4.85",
+				["STA"] = "0",
+				["LE_ITEM_CLASS_WEAPON"] = "7",
+				["INT"] = "9.52",
+				["SPELL_CRIT_RATING"] = "6.69",
+				["SPELL_HASTE_RATING"] = "8.33",
+				["LE_ITEM_CLASS_ARMOR"] = "0",
+				["ARMOR_SPECIALIZATION_STAT"] = "INT",
+				["LEECH_RATING"] = "0",
+				["AP"] = "0",
+				["AVOIDANCE_RATING"] = "0",
+				["VERSATILITY_RATING"] = "5.65",
+				["ARMOR"] = "0",
+				["SPELL_DMG"] = "0",
+				["AGI"] = "0",
+				["STR"] = "0",
+				["DPS"] = "0.01",
+				["XP_BONUS"] = "1000",
+			}, -- [3]
+		},
+		["PRIEST"] = {
+			{
+				["MASTERY_RATING"] = "8.10",
+				["STA"] = "0",
+				["LE_ITEM_CLASS_WEAPON"] = "10",
+				["INT"] = "16.30",
+				["SPELL_CRIT_RATING"] = "10.13",
+				["SPELL_HASTE_RATING"] = "10.89",
+				["LE_ITEM_CLASS_ARMOR"] = "0",
+				["ARMOR_SPECIALIZATION_STAT"] = "INT",
+				["LEECH_RATING"] = "0",
+				["AP"] = "0",
+				["AVOIDANCE_RATING"] = "0",
+				["VERSATILITY_RATING"] = "9.12",
+				["ARMOR"] = "0",
+				["SPELL_DMG"] = "0",
+				["AGI"] = "0",
+				["STR"] = "0",
+				["DPS"] = "0.01",
+				["XP_BONUS"] = "1000",
+			}, -- [1]
+			{
+				["MASTERY_RATING"] = "10.19",
+				["STA"] = "0",
+				["LE_ITEM_CLASS_WEAPON"] = "10",
+				["INT"] = "17.76",
+				["SPELL_CRIT_RATING"] = "10.71",
+				["SPELL_HASTE_RATING"] = "4.55",
+				["LE_ITEM_CLASS_ARMOR"] = "0",
+				["ARMOR_SPECIALIZATION_STAT"] = "INT",
+				["LEECH_RATING"] = "0",
+				["AP"] = "0",
+				["AVOIDANCE_RATING"] = "0",
+				["VERSATILITY_RATING"] = "10.11",
+				["ARMOR"] = "0",
+				["SPELL_DMG"] = "0",
+				["AGI"] = "0",
+				["STR"] = "0",
+				["DPS"] = "0.01",
+				["XP_BONUS"] = "1000",
+			}, -- [2]
+			{
+				["MASTERY_RATING"] = "6.50",
+				["STA"] = "0",
+				["LE_ITEM_CLASS_WEAPON"] = "10",
+				["INT"] = "9.92",
+				["SPELL_CRIT_RATING"] = "6.20",
+				["SPELL_HASTE_RATING"] = "8.66",
+				["LE_ITEM_CLASS_ARMOR"] = "0",
+				["ARMOR_SPECIALIZATION_STAT"] = "INT",
+				["LEECH_RATING"] = "0",
+				["AP"] = "0",
+				["AVOIDANCE_RATING"] = "0",
+				["VERSATILITY_RATING"] = "5.82",
+				["ARMOR"] = "0",
+				["SPELL_DMG"] = "0",
+				["AGI"] = "0",
+				["STR"] = "0",
+				["DPS"] = "0.01",
+				["XP_BONUS"] = "1000",
+			}, -- [3]
+		},
+		["ROGUE"] = {
+			{
+				["MASTERY_RATING"] = "6.36",
+				["DPS|OFF"] = "1.52",
+				["STA"] = "0",
+				["LE_ITEM_CLASS_WEAPON"] = "15",
+				["INT"] = "0",
+				["MELEE_HASTE_RATING"] = "3.29",
+				["XP_BONUS"] = "1000",
+				["LE_ITEM_CLASS_ARMOR"] = "0",
+				["ARMOR_SPECIALIZATION_STAT"] = "AGI",
+				["STR"] = "0",
+				["LEECH_RATING"] = "0",
+				["AP"] = "0.1",
+				["AVOIDANCE_RATING"] = "0",
+				["VERSATILITY_RATING"] = "6.33",
+				["ARMOR"] = "0",
+				["DPS"] = "3.13",
+				["AGI"] = "12.26",
+				["SPELL_DMG"] = "0",
+				["MELEE_CRIT_RATING"] = "7.72",
+				["DPS|MAIN"] = "3.13",
+			}, -- [1]
+			{
+				["MASTERY_RATING"] = "6.70",
+				["DPS|OFF"] = "1.70",
+				["STA"] = "0",
+				["LE_ITEM_CLASS_WEAPON"] = "0",
+				["INT"] = "0",
+				["MELEE_HASTE_RATING"] = "5.87",
+				["XP_BONUS"] = "1000",
+				["LE_ITEM_CLASS_ARMOR"] = "0",
+				["ARMOR_SPECIALIZATION_STAT"] = "AGI",
+				["STR"] = "0",
+				["LEECH_RATING"] = "0",
+				["AP"] = "0.01",
+				["AVOIDANCE_RATING"] = "0",
+				["VERSATILITY_RATING"] = "7.03",
+				["ARMOR"] = "0",
+				["DPS"] = "4.35",
+				["AGI"] = "13.37",
+				["SPELL_DMG"] = "0",
+				["MELEE_CRIT_RATING"] = "6.52",
+				["DPS|MAIN"] = "4.35",
+			}, -- [2]
+			{
+				["MASTERY_RATING"] = "7.50",
+				["DPS|OFF"] = "0.33",
+				["STA"] = "0",
+				["LE_ITEM_CLASS_WEAPON"] = "0",
+				["INT"] = "0",
+				["MELEE_HASTE_RATING"] = "4.75",
+				["XP_BONUS"] = "1000",
+				["LE_ITEM_CLASS_ARMOR"] = "0",
+				["ARMOR_SPECIALIZATION_STAT"] = "AGI",
+				["STR"] = "0",
+				["LEECH_RATING"] = "0",
+				["AP"] = "0.01",
+				["AVOIDANCE_RATING"] = "0",
+				["VERSATILITY_RATING"] = "5.79",
+				["ARMOR"] = "0",
+				["DPS"] = "6.89",
+				["AGI"] = "11.32",
+				["SPELL_DMG"] = "0",
+				["MELEE_CRIT_RATING"] = "5.65",
+				["DPS|MAIN"] = "6.89",
+			}, -- [3]
+		},
+		["WARLOCK"] = {
+			{
+				["MASTERY_RATING"] = "10.23",
+				["STA"] = "0",
+				["LE_ITEM_CLASS_WEAPON"] = "6",
+				["INT"] = "9.94",
+				["SPELL_CRIT_RATING"] = "6.65",
+				["XP_BONUS"] = "1000",
+				["LE_ITEM_CLASS_ARMOR"] = "0",
+				["ARMOR_SPECIALIZATION_STAT"] = "INT",
+				["LEECH_RATING"] = "0",
+				["AP"] = "0",
+				["AVOIDANCE_RATING"] = "0",
+				["VERSATILITY_RATING"] = "6.21",
+				["ARMOR"] = "0",
+				["SPELL_DMG"] = "0",
+				["AGI"] = "0",
+				["STR"] = "0",
+				["DPS"] = "0.01",
+				["SPELL_HASTE_RATING"] = "10.49",
+			}, -- [1]
+			{
+				["MASTERY_RATING"] = "7.28",
+				["STA"] = "0",
+				["LE_ITEM_CLASS_WEAPON"] = "7",
+				["INT"] = "9.44",
+				["SPELL_CRIT_RATING"] = "7.45",
+				["XP_BONUS"] = "1000",
+				["LE_ITEM_CLASS_ARMOR"] = "0",
+				["ARMOR_SPECIALIZATION_STAT"] = "INT",
+				["LEECH_RATING"] = "0",
+				["AP"] = "0",
+				["AVOIDANCE_RATING"] = "0",
+				["VERSATILITY_RATING"] = "7.83",
+				["ARMOR"] = "0",
+				["SPELL_DMG"] = "0.35",
+				["AGI"] = "0",
+				["STR"] = "0",
+				["DPS"] = "0.01",
+				["SPELL_HASTE_RATING"] = "12.96",
+			}, -- [2]
+			{
+				["MASTERY_RATING"] = "7.68",
+				["STA"] = "0",
+				["LE_ITEM_CLASS_WEAPON"] = "7",
+				["INT"] = "9.72",
+				["SPELL_CRIT_RATING"] = "6.61",
+				["SPELL_HASTE_RATING"] = "8.03",
+				["LE_ITEM_CLASS_ARMOR"] = "0",
+				["ARMOR_SPECIALIZATION_STAT"] = "INT",
+				["LEECH_RATING"] = "0",
+				["AP"] = "0",
+				["AVOIDANCE_RATING"] = "0",
+				["VERSATILITY_RATING"] = "6.09",
+				["ARMOR"] = "0",
+				["SPELL_DMG"] = "0",
+				["AGI"] = "0",
+				["STR"] = "0",
+				["DPS"] = "0.01",
+				["XP_BONUS"] = "1000",
+			}, -- [3]
+		},
+		["DEMONHUNTER"] = {
+			{
+				["MASTERY_RATING"] = "5.67",
+				["DPS|OFF"] = "3.46",
+				["STA"] = "0",
+				["LE_ITEM_CLASS_WEAPON"] = "0",
+				["INT"] = "0",
+				["MELEE_HASTE_RATING"] = "5.06",
+				["XP_BONUS"] = "1000",
+				["LE_ITEM_CLASS_ARMOR"] = "0",
+				["ARMOR_SPECIALIZATION_STAT"] = "AGI",
+				["STR"] = "0",
+				["LEECH_RATING"] = "0",
+				["AP"] = "0.1",
+				["AVOIDANCE_RATING"] = "0",
+				["VERSATILITY_RATING"] = "6.03",
+				["ARMOR"] = "0",
+				["DPS"] = "8.28",
+				["AGI"] = "11",
+				["SPELL_DMG"] = "0",
+				["MELEE_CRIT_RATING"] = "7.23",
+				["DPS|MAIN"] = "8.28",
+			}, -- [1]
+			{
+				["MASTERY_RATING"] = "1.99",
+				["DPS|OFF"] = "0.00",
+				["STA"] = "2.56",
+				["LE_ITEM_CLASS_WEAPON"] = "0",
+				["INT"] = "0",
+				["MELEE_HASTE_RATING"] = "1.45",
+				["XP_BONUS"] = "1000",
+				["LE_ITEM_CLASS_ARMOR"] = "0",
+				["ARMOR_SPECIALIZATION_STAT"] = "AGI",
+				["STR"] = "0",
+				["LEECH_RATING"] = "7.21",
+				["AP"] = "0",
+				["AVOIDANCE_RATING"] = "4.46",
+				["VERSATILITY_RATING"] = "2",
+				["ARMOR"] = "5.85",
+				["DPS"] = "0.26",
+				["AGI"] = "1.64",
+				["SPELL_DMG"] = "0",
+				["MELEE_CRIT_RATING"] = "1.07",
+				["DPS|MAIN"] = "0.26",
+			}, -- [2]
+		},
+		["SHAMAN"] = {
+			{
+				["MASTERY_RATING"] = "4.74",
+				["STA"] = "0",
+				["LE_ITEM_CLASS_WEAPON"] = "0",
+				["INT"] = "9.13",
+				["SPELL_CRIT_RATING"] = "6.40",
+				["SPELL_HASTE_RATING"] = "6.10",
+				["LE_ITEM_CLASS_ARMOR"] = "0",
+				["ARMOR_SPECIALIZATION_STAT"] = "INT",
+				["LEECH_RATING"] = "0",
+				["AP"] = "0",
+				["AVOIDANCE_RATING"] = "0",
+				["VERSATILITY_RATING"] = "5.55",
+				["ARMOR"] = "0",
+				["SPELL_DMG"] = "0",
+				["AGI"] = "0",
+				["STR"] = "0",
+				["DPS"] = "0.01",
+				["XP_BONUS"] = "1000",
+			}, -- [1]
+			{
+				["MASTERY_RATING"] = "8.90",
+				["DPS|OFF"] = "2.66",
+				["STA"] = "0",
+				["LE_ITEM_CLASS_WEAPON"] = "0",
+				["INT"] = "0",
+				["MELEE_HASTE_RATING"] = "7.00",
+				["XP_BONUS"] = "1000",
+				["LE_ITEM_CLASS_ARMOR"] = "0",
+				["ARMOR_SPECIALIZATION_STAT"] = "AGI",
+				["STR"] = "0",
+				["LEECH_RATING"] = "0",
+				["AP"] = "0.01",
+				["AVOIDANCE_RATING"] = "0",
+				["VERSATILITY_RATING"] = "5.71",
+				["ARMOR"] = "0",
+				["DPS"] = "4.90",
+				["AGI"] = "11.55",
+				["SPELL_DMG"] = "0",
+				["MELEE_CRIT_RATING"] = "5.78",
+				["DPS|MAIN"] = "4.90",
+			}, -- [2]
+			{
+				["MASTERY_RATING"] = "7.22",
+				["STA"] = "0",
+				["LE_ITEM_CLASS_WEAPON"] = "0",
+				["INT"] = "15.01",
+				["SPELL_CRIT_RATING"] = "11.38",
+				["XP_BONUS"] = "1000",
+				["LE_ITEM_CLASS_ARMOR"] = "0",
+				["ARMOR_SPECIALIZATION_STAT"] = "INT",
+				["LEECH_RATING"] = "3.77",
+				["AP"] = "0",
+				["AVOIDANCE_RATING"] = "0",
+				["VERSATILITY_RATING"] = "8.72",
+				["ARMOR"] = "0",
+				["DPS"] = "0.01",
+				["AGI"] = "0",
+				["STR"] = "0",
+				["SPELL_HASTE_RATING"] = "7.48",
+				["SPELL_DMG"] = "0",
+			}, -- [3]
+		},
+		["DRUID"] = {
+			{
+				["MASTERY_RATING"] = "5.90",
+				["STA"] = "0",
+				["LE_ITEM_CLASS_WEAPON"] = "4",
+				["INT"] = "10",
+				["SPELL_CRIT_RATING"] = "5.68",
+				["SPELL_HASTE_RATING"] = "6.44",
+				["LE_ITEM_CLASS_ARMOR"] = "0",
+				["ARMOR_SPECIALIZATION_STAT"] = "INT",
+				["LEECH_RATING"] = "0",
+				["AP"] = "0",
+				["AVOIDANCE_RATING"] = "0",
+				["VERSATILITY_RATING"] = "5.69",
+				["ARMOR"] = "0",
+				["SPELL_DMG"] = "0",
+				["AGI"] = "0",
+				["STR"] = "0",
+				["DPS"] = "0.01",
+				["XP_BONUS"] = "1000",
+			}, -- [1]
+			{
+				["MASTERY_RATING"] = "7.15",
+				["STA"] = "0",
+				["LE_ITEM_CLASS_WEAPON"] = "4",
+				["INT"] = "0",
+				["MELEE_HASTE_RATING"] = "5.69",
+				["XP_BONUS"] = "1000",
+				["LE_ITEM_CLASS_ARMOR"] = "0",
+				["ARMOR_SPECIALIZATION_STAT"] = "AGI",
+				["LEECH_RATING"] = "0",
+				["AP"] = "0.1",
+				["AVOIDANCE_RATING"] = "0",
+				["VERSATILITY_RATING"] = "6.92",
+				["ARMOR"] = "0",
+				["DPS"] = "5.41",
+				["AGI"] = "13.42",
+				["STR"] = "0",
+				["MELEE_CRIT_RATING"] = "7.95",
+				["SPELL_DMG"] = "0",
+			}, -- [2]
+			{
+				["MASTERY_RATING"] = "0.95",
+				["STA"] = "0.94",
+				["LE_ITEM_CLASS_WEAPON"] = "4",
+				["INT"] = "0",
+				["MELEE_HASTE_RATING"] = "0.48",
+				["XP_BONUS"] = "1000",
+				["LE_ITEM_CLASS_ARMOR"] = "0",
+				["ARMOR_SPECIALIZATION_STAT"] = "STA",
+				["LEECH_RATING"] = "0",
+				["AP"] = "0.01",
+				["AVOIDANCE_RATING"] = "0.81",
+				["VERSATILITY_RATING"] = "1.18",
+				["ARMOR"] = "6.79",
+				["DPS"] = "0.09",
+				["AGI"] = "0.22",
+				["STR"] = "0",
+				["MELEE_CRIT_RATING"] = "0",
+				["SPELL_DMG"] = "0",
+			}, -- [3]
+			{
+				["MASTERY_RATING"] = "11.38",
+				["STA"] = "0",
+				["LE_ITEM_CLASS_WEAPON"] = "4",
+				["INT"] = "16.51",
+				["SPELL_CRIT_RATING"] = "9.77",
+				["SPELL_HASTE_RATING"] = "10.31",
+				["LE_ITEM_CLASS_ARMOR"] = "0",
+				["ARMOR_SPECIALIZATION_STAT"] = "INT",
+				["LEECH_RATING"] = "3.72",
+				["AP"] = "0",
+				["AVOIDANCE_RATING"] = "0",
+				["VERSATILITY_RATING"] = "9.13",
+				["ARMOR"] = "0",
+				["SPELL_DMG"] = "0",
+				["AGI"] = "0",
+				["STR"] = "0",
+				["DPS"] = "0.01",
+				["XP_BONUS"] = "1000",
+			}, -- [4]
+		},
+		["MONK"] = {
+			{
+				["MASTERY_RATING"] = "0.39",
+				["DPS|OFF"] = "0",
+				["STA"] = "2.40",
+				["LE_ITEM_CLASS_WEAPON"] = "6",
+				["INT"] = "0",
+				["MELEE_HASTE_RATING"] = "0.70",
+				["XP_BONUS"] = "1000",
+				["LE_ITEM_CLASS_ARMOR"] = "0",
+				["ARMOR_SPECIALIZATION_STAT"] = "STA",
+				["STR"] = "0",
+				["LEECH_RATING"] = "2.12",
+				["AP"] = "0.01",
+				["AVOIDANCE_RATING"] = "1.12",
+				["VERSATILITY_RATING"] = "0.75",
+				["ARMOR"] = "1.36",
+				["DPS"] = "0.01",
+				["AGI"] = "0.39",
+				["SPELL_DMG"] = "0",
+				["MELEE_CRIT_RATING"] = "1.34",
+				["DPS|MAIN"] = "0.01",
+			}, -- [1]
+			{
+				["MASTERY_RATING"] = "4.9",
+				["STA"] = "0",
+				["LE_ITEM_CLASS_WEAPON"] = "0",
+				["INT"] = "15.81",
+				["SPELL_CRIT_RATING"] = "9.58",
+				["SPELL_HASTE_RATING"] = "4.88",
+				["LE_ITEM_CLASS_ARMOR"] = "0",
+				["ARMOR_SPECIALIZATION_STAT"] = "INT",
+				["LEECH_RATING"] = "0",
+				["AP"] = "0",
+				["AVOIDANCE_RATING"] = "0",
+				["VERSATILITY_RATING"] = "9.17",
+				["ARMOR"] = "0",
+				["SPELL_DMG"] = "0",
+				["AGI"] = "0",
+				["STR"] = "0",
+				["DPS"] = "0.01",
+				["XP_BONUS"] = "1000",
+			}, -- [2]
+			{
+				["MASTERY_RATING"] = "7.59",
+				["DPS|OFF"] = "0.75",
+				["STA"] = "0",
+				["LE_ITEM_CLASS_WEAPON"] = "0",
+				["INT"] = "0",
+				["MELEE_HASTE_RATING"] = "5.25",
+				["XP_BONUS"] = "1000",
+				["LE_ITEM_CLASS_ARMOR"] = "0",
+				["ARMOR_SPECIALIZATION_STAT"] = "AGI",
+				["STR"] = "0",
+				["LEECH_RATING"] = "0",
+				["AP"] = "0.1",
+				["AVOIDANCE_RATING"] = "0",
+				["VERSATILITY_RATING"] = "6.45",
+				["ARMOR"] = "0",
+				["DPS"] = "1.83",
+				["AGI"] = "12.71",
+				["SPELL_DMG"] = "0",
+				["MELEE_CRIT_RATING"] = "6.43",
+				["DPS|MAIN"] = "1.83",
+			}, -- [3]
+		},
+		["DEATHKNIGHT"] = {
+			{
+				["MASTERY_RATING"] = "2.35",
+				["STA"] = "2.80",
+				["STR"] = "1.34",
+				["INT"] = "0",
+				["MELEE_HASTE_RATING"] = "2.1",
+				["XP_BONUS"] = "1000",
+				["LE_ITEM_CLASS_ARMOR"] = "0",
+				["ARMOR_SPECIALIZATION_STAT"] = "STA",
+				["LEECH_RATING"] = "4.56",
+				["AP"] = "0.1",
+				["AVOIDANCE_RATING"] = "1.5",
+				["VERSATILITY_RATING"] = "3.38",
+				["ARMOR"] = "7.49",
+				["DPS"] = "0.00",
+				["AGI"] = "0",
+				["SPELL_DMG"] = "0",
+				["MELEE_CRIT_RATING"] = "1.08",
+				["LE_ITEM_CLASS_WEAPON"] = "1",
+			}, -- [1]
+			{
+				["MASTERY_RATING"] = "5.55",
+				["DPS|OFF"] = "1.83",
+				["STA"] = "0",
+				["LE_ITEM_CLASS_WEAPON"] = "0",
+				["INT"] = "0",
+				["MELEE_HASTE_RATING"] = "6.09",
+				["XP_BONUS"] = "1000",
+				["LE_ITEM_CLASS_ARMOR"] = "0",
+				["ARMOR_SPECIALIZATION_STAT"] = "STR",
+				["SPELL_DMG"] = "0",
+				["LEECH_RATING"] = "0",
+				["AP"] = "0.2",
+				["AVOIDANCE_RATING"] = "0",
+				["VERSATILITY_RATING"] = "5.32",
+				["ARMOR"] = "0",
+				["DPS"] = "2.85",
+				["AGI"] = "0",
+				["STR"] = "9.84",
+				["MELEE_CRIT_RATING"] = "6.18",
+				["DPS|MAIN"] = "2.85",
+			}, -- [2]
+			{
+				["MASTERY_RATING"] = "5.16",
+				["STA"] = "0",
+				["STR"] = "10.2",
+				["INT"] = "0",
+				["MELEE_HASTE_RATING"] = "6.77",
+				["XP_BONUS"] = "1000",
+				["LE_ITEM_CLASS_ARMOR"] = "0",
+				["ARMOR_SPECIALIZATION_STAT"] = "STR",
+				["LEECH_RATING"] = "0",
+				["AP"] = "0.2",
+				["AVOIDANCE_RATING"] = "0",
+				["VERSATILITY_RATING"] = "5.27",
+				["ARMOR"] = "0",
+				["DPS"] = "2.74",
+				["AGI"] = "0",
+				["SPELL_DMG"] = "0",
+				["MELEE_CRIT_RATING"] = "7.30",
+				["LE_ITEM_CLASS_WEAPON"] = "1",
+			}, -- [3]
+		},
+	},
+	["excludedTrackingPoints"] = {
+	},
+	["removedQuests"] = {
+	},
+	["subCategoriesExpanded"] = {
+	},
+	["LFGWorldLocation"] = "962:0:3057869478",
+	["FinalizeWaypoint"] = true,
+	["QuestState"] = {
+	},
+	["showLeftMenuForCurrentGuide"] = true,
+	["shownObjectives"] = {
+	},
+	["RecentGuides"] = {
+		["Categories"] = {
+		},
+		["LastIndices"] = {
+		},
+		["Guides"] = {
+		},
+	},
+}
+DugisGuideViewerDB = nil
+DugisArrowDb = {
+	["arrow_textsize"] = 1,
+	["arrow_size"] = 1,
+	["point"] = "CENTER",
+	["arrow"] = true,
+	["arrow_locked"] = false,
+	["arrow_pos_x"] = 0,
+	["arrow_pos_y"] = 300,
+	["relativePoint"] = "CENTER",
+}
+DugisFlightmasterDataTable = {
+}
+DugisNPCFrameDB = {
+}
+DataExport = nil
+DugisCharacterCache = {
+	["CalculateScore_cache_v10"] = {
+		["CalculateScore|cff0070dd|Hitem:124569::::::::100:250:4:4:3:39:647:652:529:::|h[Felbane Breastplate of the Fireflash]|h|r1false100INVTYPE_CHESTnil1"] = {
+			4033.08, -- [1]
+			302, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:112319::::::::100:252:4:13:2:530:526:529:::|h[Knight's Badge]|h|r3false100INVTYPE_TRINKETnil1"] = {
+			1391.28, -- [1]
+			0, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:124578::::::::100:252:4:2:3:117:651:652:529:::|h[Felbane Gauntlets of the Feverflare]|h|r3false100INVTYPE_HANDnil1"] = {
+			3443.12, -- [1]
+			190, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:69210::::::::100:250::14::::|h[Renowned Guild Tabard]|h|r1false100INVTYPE_TABARDnil1"] = {
+			0, -- [1]
+			0, -- [2]
+		},
+		["CalculateScore|cff0070dd|Hitem:127517::::::::100:252:512:22:1:615:100:::|h[Planetary Helm]|h|r3false100INVTYPE_HEADnil1"] = {
+			3407.6, -- [1]
+			221, -- [2]
+		},
+		["CalculateScore|cffffffff|Hitem:2901::::::::100:252::14::::|h[Mining Pick]|h|r3false10016nil1"] = {
+			-3, -- [1]
+		},
+		["CalculateScore|cff0070dd|Hitem:129875:5299:::::::100:252:512:22:1:692:100:::|h[Signet of the Impregnable Fortress]|h|r3false100INVTYPE_FINGERnil1"] = {
+			2747.86, -- [1]
+			143, -- [2]
+		},
+		["CalculateScore|cff0070dd|Hitem:124566::::::::100:250:4:2:3:147:647:653:529:::|h[Felbane Bracers of the Fireflash]|h|r1false100INVTYPE_WRISTnil1"] = {
+			1955.75, -- [1]
+			170, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:114235::::::::100:250:4:13:3:48:534:526:529:::|h[Truesteel Boots of the Peerless]|h|r1false100INVTYPE_FEETnil1"] = {
+			2980.64, -- [1]
+			237, -- [2]
+		},
+		["CalculateScore|cff0070dd|Hitem:129868::::::::100:252:512:22:1:692:100:::|h[Kyzoc's Ground Stompers]|h|r3false100INVTYPE_FEETnil1"] = {
+			3597.46, -- [1]
+			190, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:118293::::::::100:250::11::::|h[Solium Band of Endurance]|h|r1false100INVTYPE_FINGERnil1"] = {
+			953.13, -- [1]
+			155, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:124594::::::::100:252:4:2:3:102:764:652:529:::|h[Felbane Girdle of the Quickblade]|h|r3false100INVTYPE_WAISTnil1"] = {
+			3700.49, -- [1]
+			200, -- [2]
+		},
+		["CalculateScore|cff0070dd|Hitem:140715::::::::100:250:512:11:1:3380:100:::|h[Frost-Etched Runeblade]|h|r1false10016nil1"] = {
+			-3, -- [1]
+		},
+		["CalculateScore|cffa335ee|Hitem:116913::::::::100:250:::1:545:::|h[Peon's Mining Pick]|h|r1false10016nil1"] = {
+			-3, -- [1]
+		},
+		["CalculateScore|cff0070dd|Hitem:129889::::::::100:252:512:22:1:692:100:::|h[Castle Breaker's Battleplate]|h|r3false100INVTYPE_CHESTnil1"] = {
+			4758.63, -- [1]
+			242, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:116453:3368:::::::100:250:4:13:3:193:548:594:529:::|h[Steelforged Greataxe of the Feverflare]|h|r1false10016nil1"] = {
+			2139.01, -- [1]
+			381, -- [2]
+		},
+		["CalculateScore|cff0070dd|Hitem:124582::::::::100:250:4:4:3:157:647:653:529:::|h[Felbane Greathelm of the Aurora]|h|r1false100INVTYPE_HEADnil1"] = {
+			3870.84, -- [1]
+			302, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:118293::::::::100:252::11::::|h[Solium Band of Endurance]|h|r3false100INVTYPE_FINGERnil1"] = {
+			1754.02, -- [1]
+			103, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:124204:5326:::::::100:252:4:3::531:::|h[Mannoroth's Calcified Eye]|h|r3false100INVTYPE_FINGERnil1"] = {
+			3654.7, -- [1]
+			198, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:116453:3368:::::::100:252:4:13:3:193:548:594:529:::|h[Steelforged Greataxe of the Feverflare]|h|r3false10016nil1"] = {
+			5743.655, -- [1]
+			254, -- [2]
+		},
+		["CalculateScore|cffffffff|Hitem:2901::::::::100:250::14::::|h[Mining Pick]|h|r1false10016nil1"] = {
+			-3, -- [1]
+		},
+		["CalculateScore|cffa335ee|Hitem:124616::::::::100:250:4::3:126:761:652:529:::|h[Marshwater Cloak of the Feverflare]|h|r1false100INVTYPE_CLOAKnil1"] = {
+			1442.07, -- [1]
+			186, -- [2]
+		},
+		["CalculateScore|cff0070dd|Hitem:124586::::::::100:250:4:4:3:97:647:653:529:::|h[Felbane Legplates of the Quickblade]|h|r1false100INVTYPE_LEGSnil1"] = {
+			3892.17, -- [1]
+			302, -- [2]
+		},
+		["CalculateScore|cff0070dd|Hitem:127657::::::::100:252::::::|h[Encroaching Void]|h|r3false100INVTYPE_TRINKETnil1"] = {
+			1059.27, -- [1]
+			0, -- [2]
+		},
+		["CalculateScore|cff0070dd|Hitem:124574::::::::100:250:4:4:3:164:647:652:529:::|h[Felbane Greaves of the Aurora]|h|r1false100INVTYPE_FEETnil1"] = {
+			3075.14, -- [1]
+			226, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:124610::::::::100:252:4::3:33:762:652:529:::|h[Vexed Chain of the Fireflash]|h|r3false100INVTYPE_NECKnil1"] = {
+			2518.24, -- [1]
+			130, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:124616::::::::100:252:4::3:126:761:652:529:::|h[Marshwater Cloak of the Feverflare]|h|r3false100INVTYPE_CLOAKnil1"] = {
+			2233.36, -- [1]
+			124, -- [2]
+		},
+		["CalculateScore|cff0070dd|Hitem:124590::::::::100:250:4:4:3:97:647:653:529:::|h[Felbane Shoulderguard of the Quickblade]|h|r1false100INVTYPE_SHOULDERnil1"] = {
+			3150.61, -- [1]
+			226, -- [2]
+		},
+		["CalculateScore|cff0070dd|Hitem:140715::::::::100:252:512:11:1:3380:100:::|h[Frost-Etched Runeblade]|h|r3false10016nil1"] = {
+			-3, -- [1]
+		},
+		["CalculateScore|cff0070dd|Hitem:129868::::::::100:250:512:22:1:692:100:::|h[Kyzoc's Ground Stompers]|h|r1false100INVTYPE_FEETnil1"] = {
+			3287.83, -- [1]
+			286, -- [2]
+		},
+		["CalculateScore|cff0070dd|Hitem:129875:5299:::::::100:250:512:22:1:692:100:::|h[Signet of the Impregnable Fortress]|h|r1false100INVTYPE_FINGERnil1"] = {
+			1364.8, -- [1]
+			215, -- [2]
+		},
+		["CalculateScore|cff0070dd|Hitem:127640:3368:::::::100:252:512:22:2:615:656:100:::|h[Edge of Oblivion]|h|r3false10016nil1"] = {
+			6135.955, -- [1]
+			254, -- [2]
+		},
+		["CalculateScore|cff0070dd|Hitem:129886:5293:::::::100:252:512:22:1:692:100:::|h[Shard of the Crystal Forest]|h|r3false100INVTYPE_NECKnil1"] = {
+			2804.34, -- [1]
+			143, -- [2]
+		},
+		["CalculateScore|cff0070dd|Hitem:127657::::::::100:250::::::|h[Encroaching Void]|h|r1false100INVTYPE_TRINKETnil1"] = {
+			679.38, -- [1]
+			0, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:124610::::::::100:250:4::3:33:762:652:529:::|h[Vexed Chain of the Fireflash]|h|r1false100INVTYPE_NECKnil1"] = {
+			1000.44, -- [1]
+			196, -- [2]
+		},
+		["CalculateScore|cff0070dd|Hitem:124566::::::::100:252:4:2:3:147:647:653:529:::|h[Felbane Bracers of the Fireflash]|h|r3false100INVTYPE_WRISTnil1"] = {
+			2166.58, -- [1]
+			113, -- [2]
+		},
+		["CalculateScore|cff0070dd|Hitem:127640:3368:::::::100:250:512:22:2:615:656:100:::|h[Edge of Oblivion]|h|r1false10016nil1"] = {
+			2119.06, -- [1]
+			381, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:112319::::::::100:250:4:13:2:530:526:529:::|h[Knight's Badge]|h|r1false100INVTYPE_TRINKETnil1"] = {
+			892.32, -- [1]
+			0, -- [2]
+		},
+		["CalculateScore|cff0070dd|Hitem:129895::::::::100:250:512:22:1:692:100:::|h[Valor Medal of the First War]|h|r1false100INVTYPE_TRINKETnil1"] = {
+			322.94, -- [1]
+			0, -- [2]
+		},
+		["CalculateScore|cff0070dd|Hitem:124594::::::::100:250:4:4:3:21:647:653:529:::|h[Felbane Girdle of the Fireflash]|h|r1false100INVTYPE_WAISTnil1"] = {
+			2537.21, -- [1]
+			226, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:69210::::::::100:252::14::::|h[Renowned Guild Tabard]|h|r3false100INVTYPE_TABARDnil1"] = {
+			0, -- [1]
+			0, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:124204:5326:::::::100:250:4:3::531:::|h[Mannoroth's Calcified Eye]|h|r1false100INVTYPE_FINGERnil1"] = {
+			2019.93, -- [1]
+			297, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:128352::::::::100:252:4::3:106:651:652:529:::|h[Felbane Shoulderguard of the Quickblade]|h|r3false100INVTYPE_SHOULDERnil1"] = {
+			3503.63, -- [1]
+			190, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:124578::::::::100:250:4:2:3:117:651:652:529:::|h[Felbane Gauntlets of the Feverflare]|h|r1false100INVTYPE_HANDnil1"] = {
+			3289.22, -- [1]
+			286, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:124566::::::::100:250:4:4:3:116:765:652:529:::|h[Felbane Bracers of the Feverflare]|h|r1false100INVTYPE_WRISTnil1"] = {
+			2535.97, -- [1]
+			235, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:114235::::::::100:252:4:13:3:48:534:526:529:::|h[Truesteel Boots of the Peerless]|h|r3false100INVTYPE_FEETnil1"] = {
+			2852.56, -- [1]
+			158, -- [2]
+		},
+		["CalculateScore|cff0070dd|Hitem:129895::::::::100:252:512:22:1:692:100:::|h[Valor Medal of the First War]|h|r3false100INVTYPE_TRINKETnil1"] = {
+			2458.2, -- [1]
+			241, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:124594::::::::100:250:4:4:3:46:763:653:529:::|h[Felbane Girdle of the Peerless]|h|r1false100INVTYPE_WAISTnil1"] = {
+			2915.85, -- [1]
+			273, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:124594::::::::100:250:4:2:3:102:764:652:529:::|h[Felbane Girdle of the Quickblade]|h|r1false100INVTYPE_WAISTnil1"] = {
+			3185.86, -- [1]
+			300, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:116913::::::::100:252:::1:545:::|h[Peon's Mining Pick]|h|r3false10016nil1"] = {
+			-3, -- [1]
+		},
+		["CalculateScore|cff0070dd|Hitem:109818::::::::100:252:4:2:2:499:524:529:::|h[Incarnadine Legplates]|h|r3false100INVTYPE_LEGSnil1"] = {
+			3442.17, -- [1]
+			177, -- [2]
+		},
+		["CalculateScore|cff0070dd|Hitem:109818::::::::100:250:4:2:2:499:524:529:::|h[Incarnadine Legplates]|h|r1false100INVTYPE_LEGSnil1"] = {
+			3443.95, -- [1]
+			265, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:128352::::::::100:250:4::3:106:651:652:529:::|h[Felbane Shoulderguard of the Quickblade]|h|r1false100INVTYPE_SHOULDERnil1"] = {
+			3551.78, -- [1]
+			286, -- [2]
+		},
+		["CalculateScore|cff0070dd|Hitem:129889::::::::100:250:512:22:1:692:100:::|h[Castle Breaker's Battleplate]|h|r1false100INVTYPE_CHESTnil1"] = {
+			4589.47, -- [1]
+			381, -- [2]
+		},
+		["CalculateScore|cff0070dd|Hitem:129886:5293:::::::100:250:512:22:1:692:100:::|h[Shard of the Crystal Forest]|h|r1false100INVTYPE_NECKnil1"] = {
+			1373.42, -- [1]
+			215, -- [2]
+		},
+		["CalculateScore|cff0070dd|Hitem:127517::::::::100:250:512:22:1:615:100:::|h[Planetary Helm]|h|r1false100INVTYPE_HEADnil1"] = {
+			3475.8, -- [1]
+			331, -- [2]
+		},
+	},
+}

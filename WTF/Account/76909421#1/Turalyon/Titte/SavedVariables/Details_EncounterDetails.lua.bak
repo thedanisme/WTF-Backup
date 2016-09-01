@@ -74,11 +74,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Sadana Bloodfury",
 		},
-		[153681] = {
-			["school"] = 8,
+		[153804] = {
+			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Bonemaw",
 		},
@@ -135,13 +136,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Nhallish",
 		},
-		[152792] = {
+		[153164] = {
 			["school"] = 32,
+			["type"] = "BUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_HEAL"] = true,
 			},
-			["source"] = "Nhallish",
+			["source"] = "Defiled Spirit",
 		},
 		[91776] = {
 			["school"] = 1,
@@ -150,21 +153,20 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Blightchewer",
 		},
+		[153681] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Bonemaw",
+		},
 		[165579] = {
 			["school"] = 32,
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Bonemaw",
-		},
-		[153153] = {
-			["school"] = 32,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Sadana Bloodfury",
 		},
 		[154327] = {
 			["school"] = 32,
@@ -175,13 +177,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Shadowmoon Enslaver",
 		},
-		[153680] = {
-			["school"] = 8,
+		[153153] = {
+			["school"] = 32,
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Bonemaw",
+			["source"] = "Sadana Bloodfury",
 		},
 		[165578] = {
 			["school"] = 32,
@@ -193,12 +196,11 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Bonemaw",
 		},
-		[153804] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[153680] = {
+			["school"] = 8,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Bonemaw",
 		},
@@ -210,15 +212,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Nhallish",
 		},
-		[153164] = {
+		[152792] = {
 			["school"] = 32,
-			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_HEAL"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Defiled Spirit",
+			["source"] = "Nhallish",
 		},
 	},
 	["emotes"] = {
