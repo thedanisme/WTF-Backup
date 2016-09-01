@@ -1,0 +1,4 @@
+VER 3 0100000000000001 "Rebirth" "SPELL_NATURE_REINCARNATION"
+#showtooltip
+/use [@mouseover,dead][]Rebirth
+END

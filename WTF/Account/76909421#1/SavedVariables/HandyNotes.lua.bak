@@ -1,0 +1,19 @@
+
+HandyNotesDB = {
+	["profileKeys"] = {
+		["Druidann - Stormrage"] = "Druidann - Stormrage",
+	},
+	["profiles"] = {
+		["Druidann - Stormrage"] = {
+		},
+	},
+}
+HandyNotes_HandyNotesDB = {
+	["profileKeys"] = {
+		["Druidann - Stormrage"] = "Druidann - Stormrage",
+	},
+	["profiles"] = {
+		["Druidann - Stormrage"] = {
+		},
+	},
+}
