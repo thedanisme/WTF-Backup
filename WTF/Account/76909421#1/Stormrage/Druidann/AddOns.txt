@@ -1,1 +1,1 @@
-ConsLegion: enabled
+ConsLegion: disabled

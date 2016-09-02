@@ -236,27 +236,52 @@ T Completing Your Arsenal |QID|44370| |N|(npc:90259) in {Light's Hope Chapel} (4
 
 N Level 103 Required |N|You need to be at least level 103 to continue with the class campaign quest line| |PL|103|
 
-A To Faronaar |QID|42886| |N|(npc:90259) in {Light's Hope Chapel} (43.31, 87.50)| |Z|23 20| |NPC|90259|
+A To Faronaar |QID|42886| |N|(npc:90250) in the {Sanctum of Light} (52.04, 77.17)| |Z|23 20| |NPC|90250|
 
-T To Faronaar |QID|42886| |N|(npc:109356) in {Faronaar}| |NPC|109356| |POI|
-A This Is Retribution |QID|42887| |N|(npc:109356) in {Faronaar}| |NPC|109356| |POI|
-A Communication Orbs |QID|42888| |N|(npc:109384) in {Faronaar}| |NPC|109384| |POI|
-A Mother Ozram |QID|43462| |N|(npc:109434) in {Faronaar}| |NPC|109434| |POI|
-C Mother Ozram |QID|43462| |N|Kill (npc:110619) in {Faronaar}| |NPC|110619| |POI| |NPC|110619|
-C Communication Orbs |QID|42888| |N|Destroy 3 Legion Orbs in {Faronaar}| |NPC|109384| |POI|
-C This Is Retribution |QID|42887| |N|Kill 20 demons in lower {Faronaar}| |POI|
-T This Is Retribution |QID|42887| |N|(npc:109356) in {Faronaar}| |NPC|109356| |POI|
-T Communication Orbs |QID|42888| |N|(npc:109434) in {Faronaar}| |NPC|109384| |POI|
-T Mother Ozram |QID|43462| |N|(npc:109434) in {Faronaar}| |NPC|109434| |POI|
-A The Codex of Command |QID|42890| |N|(npc:109434) in {Faronaar}| |NPC|109434| |POI|
-K (npc:109427) |QID|42890.1| |N|Kill (npc:109427) and collect (item:139388)| |NPC|109427| |POI|
-N Break First Fel Lock |QID|42890.2| |N|Break the first fel lock| |POI|
-N Break Second Fel Lock |QID|42890.3| |N|Break the second fel lock| |POI|
-N Break Third Fel Lock  |QID|42890.4| |N|Break the third fel lock to rescue (npc:94175)| |POI| |NPC|94175|
+T To Faronaar |QID|42886| |N|(npc:109356) in {Faronaar} (45.91,51.58)| |NPC|109356| |Z|1015 0|
+A This Is Retribution |QID|42887| |N|(npc:109356) in {Faronaar} (45.91,51.58)| |NPC|109356| |Z|1015 0|
+C This Is Retribution |QID|42887| |N|Kill 20 demons in lower {Faronaar} (42.39,46.30)| |POI| |Z|1015 0|
+T This Is Retribution |QID|42887| |N|(npc:109356) in {Faronaar} (40.97,47.57) (37.79,47.93) (36.42,51.51) (35.01,47.06) (33.57,45.20) (30.67,44.81)| |NPC|109356| |POI| |Z|1015 0|
+A Communication Orbs |QID|42888| |N|(npc:109384) in {Faronaar} (30.61,44.87)| |NPC|109384| |Z|1015 0|
+A Mother Ozram |QID|43462| |N|(npc:109434) in {Faronaar}  (30.61,44.87)| |NPC|109384| |Z|1015 0|
+C Mother Ozram |QID|43462| |N|Kill (npc:110619) in {Faronaar} (31.92,48.15) (31.36,50.77)| |NPC|110619| |POI| |NPC|110619|
+C Communication Orbs |QID|42888| |N|Destroy 3 Legion Orbs in {Faronaar} (31.46,52.58) (28.98,52.66) (28.34,53.96)| |NPC|109384| |POI|  |Z|1015 0|
+T Mother Ozram |QID|43462| |N|(npc:109434) in {Faronaar}| |NPC|109434| |POI| |Z|1015 0|
+T Communication Orbs |QID|42888| |N|(npc:109434) in {Faronaar}| |NPC|109384| |POI| |Z|1015 0|
+A The Codex of Command |QID|42890| |N|(npc:109434) in {Faronaar}| |NPC|109434| |POI| |Z|1015 0|
 
+K (npc:109427) |QID|42890.1| |N|Kill (npc:109427) and collect (item:139388) (26.07,53.65)| |NPC|109427| |Z|1015 0|
+N Break First Fel Lock |QID|42890.2| |N|Break the first fel lock (25.63,55.22)| |Z|1015 0|
+N Break Second Fel Lock |QID|42890.3| |N|Break the second fel lock (25.69,55.65)| |Z|1015 0|
+N Break Third Fel Lock  |QID|42890.4| |N|Break the third fel lock to rescue (npc:94175) (25.94,55.35)| |Z|1015 0| |NPC|94175|
+
+R Armory of the Silver Hand |TID|42890| |N|Travel to {Armory of the Silver Hand} (52.32, 60.62)| |Z|23 20| 
 T The Codex of Command |QID|42890| |N|(npc:94175) in {Armory of the Silver Hand} (52.32, 60.62)| |Z|23 20| |NPC|94175|
+A Champion: Justicar Julia Celeste |QID|42852| |N|Speak to (npc:99995) to recruit as a follower (50.28,72.82)| |Z|23 20| |NPC|99995| |E|
+A Cracking the Codex |QID|43486| |N|(npc:90251) in {Armory of the Silver Hand} (48.36,72.90)| |Z|23 20| |NPC|90251|
+A Silver Hand Knights |QID|43494| |N|(npc:90250) in {Armory of the Silver Hand} (52.11,77.84)| |Z|23 20| |NPC|90250|
+T Silver Hand Knights |QID|43494| |N|(npc:106448) in {Armory of the Silver Hand} (59.03,39.32)| |Z|23 20| |NPC|106448|
+
+R Dalaran |TID|43486| |N|Travel to {Dalaran} (44.60,23.07)| |Z|1014 10|
+T Cracking the Codex |QID|43486| |N|(npc:110571) in {Dalaran} (44.60,23.07)| |Z|1014 10| |NPC|110571|
+A The Fel Lexicon |QID|43487| |N|(npc:110571) in {Dalaran} (44.60,23.07)| |Z|1014 10| |NPC|110571|
+A Blood of Our Enemy |QID|43488| |N|(npc:110571) in {Dalaran} (44.60,23.07)| |Z|1014 10| |NPC|110571|
+
+C Blood of Our Enemy |QID|43488| |N|Complete "Blood of Our Enemy" missions using the scouting map in your order hall. Each of these missions will take up to 16 hours to complete which reward (item:139465) each (53.45,78.60)|  |Z|23 20|
+T Blood of Our Enemy |QID|43488| |N|(npc:110571) in {Dalaran} (44.60,23.07)| |Z|1014 10| |NPC|110571|
+
+N Level 105 Required |N|You need to be at least level 105 to continue with the class campaign quest line| |PL|105|
+
+N Switch Guide |QID|43487| |N|Switch to (guide:"1066(105-110)") to kill (npc:102282) and collect (item:139445) for the quest (qid:43487)|
+T The Fel Lexicon |QID|43487| |N|(npc:110571) in {Dalaran} (44.60,23.07)| |Z|1014 10| |NPC|110571|
+A Translation: Danger! |QID|43535| |N|(npc:110571) in {Dalaran} (44.60,23.07)| |Z|1014 10| |NPC|110571|
+
+C Translation: Danger! |QID|43535| |N|Speak to (npc:90251) to deliver the translation (48.23,72.24)| |Z|23 20| |NPC|90251|
+T Translation: Danger! |QID|43535| |N|(npc:90251) in {Armory of the Silver Hand} (48.36,72.90)| |Z|23 20| |NPC|90251|
 
 N Level 110 Required |N|You need to be at least level 110 to continue with the class campaign quest line| |PL|110|
+
+--Hitting the Books##43883 |goto 37.69,57.12
 
 N Guide Complete
 

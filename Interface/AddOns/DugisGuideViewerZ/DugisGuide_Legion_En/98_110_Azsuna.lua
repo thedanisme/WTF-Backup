@@ -371,7 +371,7 @@ R Felblaze Ingress |QID|42372| |N|Travel to {Felblaze Ingress} (63.83, 28.93)| |
 T Felblaze Ingress |QID|42372| |N|(npc:107244) in {Felblaze Ingress} (63.83, 28.93)| |Z|1015 0| |NPC|107244|
 A Eye See You |QID|42375| |N|(npc:107244) in {Felblaze Ingress} (63.83, 28.93)| |Z|1015 0| |NPC|107244|
 f Felblaze Ingress |QID|42375| |N|Grab the flight path for {Felblaze Ingress} from (npc:111624) (63.82, 28.52)| |Z|1015 0| |NPC|111624|
-N (npc:107252) |QID|42375| |N|Use the (npc:107252) (63.83, 28.94)| |Z|1015 0| |BUFF|Interface\Icons\spell_shadow_evileye|
+N (npc:107252) |QID|42375| |N|Use the (npc:107252) (63.83, 28.94)| |Z|1015 0| |BUFF|Interface\Icons\spell_shadow_evileye| |V|
 N Ritual Site |QID|42375.2| |N|Locate the ritual site in {Felblaze Ingress}<br/><b>Avoid getting to close to (npc:107352)<br/><b>Waypoint is not possible for this step, look for it on your minimap| |Z|1015 0| |NPC|107252, 107352|
 N Main Portal |QID|42375.1| |N|Scout the Main Portal in {Felblaze Ingress}<br/><b>Avoid getting to close to (npc:107352)<br/><b>Waypoint is not possible for this step, look for it on your minimap| |Z|1015 0|
 N Commander |QID|42375.3| |N|Locate the Commander (npc:106583) in {Felblaze Ingress}<br/><b>Avoid getting to close to (npc:107352)<br/><b>Waypoint is not possible for this step, look for it on your minimap| |Z|1015 0||NPC|106583|

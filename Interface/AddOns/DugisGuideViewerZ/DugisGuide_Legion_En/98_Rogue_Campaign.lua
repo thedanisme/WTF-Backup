@@ -239,18 +239,27 @@ T Fancy Lads and Buccaneers |QID|43841| |N|(npc:94159) in {Chamber of Shadows} (
 
 A Throwing SI:7 Off the Trail |QID|42684| |N|(npc:98102) in {Chamber of Shadows} (40.2, 74.6)| |Z|1014 4| |NPC|98102|
 A Blood for the Wolfe |QID|43468| |N|(npc:98102) in {Chamber of Shadows} (40.2, 74.6)| |Z|1014 4| |NPC|98102|
-C Throwing SI:7 Off the Trail |QID|42684| |N|Use the Scouting Map and complete the "Throwing SI:7 Off the Trail" missions. You will need to complete several of these mission to complete the quest (37.76, 44.79)| |Z|1014 4|
-C Blood for the Wolfe |QID|43468| |N|Collect 50 (item:137677) from any demons in Broken Isle| |POI|
-T Throwing SI:7 Off the Trail |QID|42684| |N|(npc:98102) in {Chamber of Shadows} (40.2, 74.6)| |Z|1014 4| |NPC|98102|
+A Noggenfogger's Reasonable Request |QID|42730| |N|(npc:98102) in {Chamber of Shadows} (40.2, 74.6)| |Z|1014 4| |NPC|98102|
+N As you go... |AYG|44178| |N|Use the Scouting Map and complete the "Throwing SI:7 Off the Trail" missions. You will need to complete several of these mission to complete the quest (37.76, 44.79)| |Z|1014 4| |QID|42684|
+C Noggenfogger's Reasonable Request |QID|42730| |N|Collect 20 Aethril (item:124101), you can gather it in {Azsuna} if you have Herbalism otherwise purchase it from the nearest Auction|  |Z|1014 4| |NPC|98102|
+C Blood for the Wolfe |QID|43468| |N|Collect 50 (item:137677) from any demons in Broken Isle (43.27,44.21)| |Z|1015 0|
 T Blood for the Wolfe |QID|43468| |N|(npc:98102) in {Chamber of Shadows} (40.2, 74.6)| |Z|1014 4| |NPC|98102|
+T Noggenfogger's Reasonable Request |QID|42730| |N|(npc:102594) in the {Uncrowned Vault} (31.01, 69.21)| |Z|1014 4| |NPC|102594|
+A Particularly Potent Potion |QID|44178| |N|(npc:102594) in the {Uncrowned Vault} (31.01, 69.21)| |Z|1014 4| |NPC|102594|
 
--A Particularly Potent Potion |N|Steal Love Potion #6 from Gallywix's personal safe. |
+R Azshara |QID|44178|  |N|Travel to {Azshara} (21.45,55.87)| |Z|181 0| 
+N (npc:113078) |QID|44178.1| |N|Speak to (npc:113078) in {Azshara}<br/><b>You will need to use (spell:1784) to reach the location (21.45,55.87)| |Z|181 0| |NPC|113078|
+N (npc:113077) |QID|44178.2| |N|Speak to (npc:113077) in {Azshara}<br/><b>You will need to use (spell:1784) to reach the location (20.78,58.14)| |Z|181 0| |NPC|113077|
+N (item:140811) |QID|44178.3| |N|Click on Gallywix's Key Ring to collect (item:140811) inside the building <br/><b>You will need to use (spell:1784) to reach the location (20.12,59.04)| |Z|181 0| 
+N (item:140814) |QID|44178.4| |N|Click on Gallywix's Safe to collect (item:140814) inside the building <br/><b>You will need to use (spell:1784) to reach the location (19.87,56.01)| |Z|181 0|
+
+R Dalaran |QID|44178| |N|Travel to {Dalaran} (30.43,70.41)| |Z|1014 4|
+T Particularly Potent Potion |QID|44178| |N|(npc:102594) in the {Uncrowned Vault} (31.01, 69.21)| |Z|1014 4| |NPC|102594|
+A Champion: Marin Noggenfogger |QID|44180| |N|Speak to (npc:102594) to recruit as a follower in the {Uncrowned Vault} (31.01, 69.21)| |Z|1014 4| |NPC|102594| |E|
+C Throwing SI:7 Off the Trail |QID|42684| |N|Use the Scouting Map and complete the "Throwing SI:7 Off the Trail" missions. You will need to complete several of these mission to complete the quest (37.76, 44.79)| |Z|1014 4|
+T Throwing SI:7 Off the Trail |QID|42684| |N|(npc:98102) in {Chamber of Shadows} (40.2, 74.6)| |Z|1014 4| |NPC|98102|
 
 N Level 110 Required |N|You need to be at least level 110 to continue with the class campaign quest line| |PL|110|
-
---A Ancient Vrykul Legends
---A The Raven's Eye
---A Off to Court
 
 N Guide Complete
 

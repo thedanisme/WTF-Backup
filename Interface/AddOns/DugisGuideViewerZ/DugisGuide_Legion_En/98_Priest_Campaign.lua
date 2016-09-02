@@ -178,6 +178,9 @@ T Troops in the Field |QID|43276| |N|(npc:110564) in {The Hall of Balance} (51.0
 A Tech It Up A Notch |QID|43277| |N|(npc:110564) in {The Hall of Balance} (51.0, 48.0)| |Z|1040 1| |NPC|110564|
 C Tech It Up A Notch |QID|43277| |N|Speak to (npc:110725) and select a class hall upgrade in {Netherlight Temple} (56.0, 39.4)| |Z|1040 1| |NPC|110725| |POI|
 T Tech It Up A Notch |QID|43277| |N|(npc:110564) in {The Hall of Balance} (51.0, 48.0)| |Z|1040 1| |NPC|110564|
+A Relieving the Front Lines |QID|43371| |N|(npc:110564) in {The Hall of Balance} (51.0, 48.0)| |Z|1040 1| |NPC|110564|
+C Relieving the Front Lines |QID|43371| |N|Complete the (mission:1233) mission. This mission will take 1 hour to complete. (50.54,48.23)| |Z|1040 1|
+T Relieving the Front Lines |QID|43371| |N|(npc:110564) in {The Hall of Balance} (51.0, 48.0)| |Z|1040 1| |NPC|110564|
 
 N Level 102 Required |N|You need to be at least level 102 to continue with the class campaign quest line| |PL|102|
 
@@ -187,11 +190,57 @@ T A Second Legend |QID|43935| |N|(npc:110564) in {The Hall of Balance} (51.0, 48
 
 A Accept Quest |N|Accept artifact quest from (npc:110564) in {The Hall of Balance} (51.0, 48.0)| |Z|1040 1| |NPC|110564| |OID|44407|
 
-A The Third Legend |QID|44407| |N|(npc:110564) in {The Hall of Balance} (51.0, 48.0)| |Z|1040 1| |NPC|110564| |O|
-C The Third Legend |QID|44407| |N|Speak to (npc:110564) to select a third artifact in {The Hall of Balance} (51.0, 48.0)| |Z|1040 1| |NPC|110564| |O|
-T The Third Legend |QID|44407| |N|(npc:110564) in {The Hall of Balance} (51.0, 48.0)| |Z|1040 1| |NPC|110564| |O|
+A The Third Legend |QID|44407| |N|(npc:110564) in {The Hall of Balance} (51.0, 48.0)| |Z|1040 1| |NPC|110564|
+C The Third Legend |QID|44407| |N|Speak to (npc:110564) to select a third artifact in {The Hall of Balance} (51.0, 48.0)| |Z|1040 1| |NPC|110564|
+T The Third Legend |QID|44407| |N|(npc:110564) in {The Hall of Balance} (51.0, 48.0)| |Z|1040 1| |NPC|110564|
 
 N Level 103 Required |N|You need to be at least level 103 to continue with the class campaign quest line| |PL|103|
+
+talk Alonsus Faol |QID|110564
+A Whispers in the Void |QID|43372| |N|(npc:110564) in {The Hall of Balance} (51.0, 48.0)| |Z|1040 1| |NPC|110564| 
+N (npc:110691) |QID|43372| |N|Speak to (npc:110691) in {The Hall of Balance} (19.96,41.78)| |Z|1040 1| |NPC|110691| 
+T Whispers in the Void |QID|43372| |N|(npc:110564) in {The Hall of Balance} (51.0, 48.0)| |Z|1040 1| |NPC|110564| 
+A The Best and Brightest |QID|43373| |N|(npc:110557) in {The Hall of Balance} (47.81,47.52)| |Z|1040 1| |NPC|110564|
+
+R Azsuna |QID|43373| |N|Travel to {Azsuna} (63.36,33.82)| |Z|1015 0|
+N (npc:110751) |QID|43373| |N|Find (npc:110751) in {Azsuna}  (63.36,33.82) (57.90,35.54)| |Z|1015 0| |NPC|110751|
+T The Best and Brightest |QID|43373| |N|(npc:110686) in {Azsuna}  (63.36,33.82) (57.90,35.54)| |Z|1015 0| |NPC|110686|
+A Murloc Mind Control |QID|43374| |N|(npc:110686) in {Azsuna}  (58.54,37.17)| |Z|1015 0| |NPC|110686|
+A An Ample Supply |QID|43375| |N|(npc:110686) in {Azsuna}  (58.54,37.17)| |Z|1015 0| |NPC|110686|
+C Murloc Mind Control |QID|43374| |N|Use (spell:605) on a (npc:88099) and then use the (spell:220326) ability to rescue (npc:112487) from the murlocs within  {El'dranil Shallows}  (50.47,36.13)| |Z|1015 0| |NPC|110686|
+C An Ample Supply |QID|43375| N|Collect 12 (item:139458) from the supply crates around this area (50.12,36.33)| |POI|
+
+T An Ample Supply |QID|43375| |N|(npc:110686) in {Azsuna}  (58.54,37.17)| |Z|1015 0| |NPC|110686|
+T Murloc Mind Control |QID|43374| |N|(npc:112487) in {Azsuna}  (58.56,37.11)| |Z|1015 0| |NPC|112487| 
+A Problem Salver |QID|43376| |N|(npc:112487) in {Azsuna}  (58.56,37.11)| |Z|1015 0| |NPC|112487| 
+C Problem Salver |QID|43376| |N|Use the (item:139463) on (npc:110818) bodies on the ground (58.56,37.11)| |Z|1015 0| |NPC|110818| |U|139463|
+T Problem Salver |QID|43376| |N|(npc:110687) in {Azsuna} (47.11,43.99)| |Z|1015 0| |NPC|110687| 
+A Champion: Yalia Sagewhisper |QID|42137| |N|Speak to (npc:110687) to recruit as a follower in {Azsuna} (47.11,43.99)| |Z|1015 0| |NPC|110687| |E|
+A Champion: Zabra Hexx |QID|42138| |N|Speak to (npc:110686) to recruit as a follower in {Azsuna} (47.18,43.99)| |Z|1015 0| |NPC|110686| |E|
+A Looking Through the Lens |QID|43378| |N|(npc:110687) in {Azsuna} (47.11,43.99)| |Z|1015 0| |NPC|110687| 
+N Switch Guide |N|Switch to (guide:"1046(98-110)") and complete it to kill (npc:96028) for the quest (qid:43378)| |QID|43378|
+T Looking Through the Lens |QID|43378| |N|(npc:110557) in {The Hall of Balance} (47.81,47.52)| |Z|1040 1| |NPC|110564|
+A Velen's Vision |QID|43379| |N|(npc:110557) in {The Hall of Balance} (47.81,47.52)| |Z|1040 1| |NPC|110557|
+N Begin the Ritual |QID|43379.1| |N|Speak to (npc:110557) to begin the ritual in {The Hall of Balance} (47.81,47.52)| |Z|1040 1| |NPC|110557|
+N Use the Lens of Tides |QID|43379.1| |N|Click on the Lens of the Tides (49.77,36.72)| |Z|1040 1| 
+N Witness Prophet Velen's Vision |QID|43379.3| |N|Watch the dialogue (49.77,36.72)| |Z|1040 1| 
+T Velen's Vision |QID|43379| |N|(npc:110557) in {The Hall of Balance} (47.81,47.52)| |Z|1040 1| |NPC|110557|
+A Recruiting More Troops |QID|43851| |N|(npc:109776) in {The Hall of Balance} (51.42,45.91)| |Z|1040 1| |NPC|110564|
+A The Light Within |QID|43377| |N|(npc:110564) in {The Hall of Balance} (51.0, 48.0)| |Z|1040 1| |NPC|110564|
+A Demonic Runes |QID|43384| |N|(npc:110571) in {The Hall of Balance} (48.48,49.48)| |Z|1040 1| |NPC|110571|
+
+T Recruiting More Troops |QID|43851| |N|(npc:106451) in {The Hall of Balance} (40.85,53.90)| |Z|1040 1| |NPC|106451|
+C Demonic Runes |QID|43384| |N|Collect 50 (item:138817) from any Demons in Broken Isle (43.27,44.21)| |Z|1015 0|
+T Demonic Runes |QID|43384| |N|(npc:110571) in {The Hall of Balance} (48.48,49.48)| |Z|1040 1| |NPC|110571|
+
+N Switch Guide |N|Switch to (guide:"1041(98-110)") and complete it to kill (npc:96646) and collect (item:(item) for the quest (qid:43377)<br/><br/>Make sure you complete the entire dungeon| |QID|43377|
+N Release the Spark of Light |QID|43377.3| |N|Use the (spell:220881) ability within the {Sanctuary of Light} (75.90,40.72)| |Z|1040 1|
+
+T The Light Within |QID|43377| |N|(npc:110864) in the {Sanctuary of Light} (75.90,40.72)| |Z|1040 1| |NPC|110864|
+A Awakening the Light |QID|43383| |N|(npc:110864) in the {Sanctuary of Light} (75.90,40.72)| |Z|1040 1| |NPC|110864|
+C Awakening the Light |QID|43383| |N|Complete "Holy Ground" Missions to collect 5 (item:139368). Each mission takes 16 hours to complete  (50.59,48.00)| |Z|1040 1| |NPC|110864|
+T Awakening the Light |QID|43383| |N|(npc:110864) in the {Sanctuary of Light} (75.90,40.72)| |Z|1040 1| |NPC|110864|
+A Champion: Sol |QID|43380| |N|Speak to (npc:110457) to recruit as a follower (73.94,40.68)| |Z|1040 1| |E| |NPC|110457|
 
 N Level 110 Required |N|You need to be at least level 110 to continue with the class campaign quest line| |PL|110|
 

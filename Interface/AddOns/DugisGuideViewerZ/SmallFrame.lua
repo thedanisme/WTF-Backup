@@ -506,9 +506,9 @@ function SmallFrame:Initialize()
              end
 			
 			local havePOIwaypoint
+			local qid = DGV.qid[guideIndex]
 			
-			if DGV:ReturnTag("POI", guideIndex) then 
-				local qid = DGV.qid[guideIndex]
+			if DGV:ReturnTag("POI", guideIndex) and qid then 
 				local _, posX, posY, objective = QuestPOIGetIconInfo(qid)
 				if posX then 
 					havePOIwaypoint = true
@@ -539,7 +539,6 @@ function SmallFrame:Initialize()
 			SetTextColors(frame)
 			
 			StatusFrame_ClearAllObjectiveLines(frame)
-			local qid = DGV.qid[guideIndex]
 			local lastLine
 
 			if qid and ShowObjectives() and strmatch(DGV.actions[guideIndex], "[CNK]") and not DGV:ReturnTag("V", guideIndex) and (DGV:getIcon(DGV.actions[guideIndex], guideIndex) ~= "Interface\\Minimap\\TRACKING\\Profession" or DGV:ReturnTag("AYG", guideIndex)) and not DugisGuideUser.shownObjectives[qid] then
@@ -1223,11 +1222,11 @@ function SmallFrame:Initialize()
 				end
 			end
             
-            if DugiGuidesIsLoading then
-                SmallFrame.Frame:Hide()	
-			else
-				SmallFrame.Frame:Show()
-            end
+            --if DugiGuidesIsLoading then
+            --   SmallFrame.Frame:Hide()	
+			--else
+			--	SmallFrame.Frame:Show()
+            --end
 		end
 		
 		function DGV:OnDBMUpdate()

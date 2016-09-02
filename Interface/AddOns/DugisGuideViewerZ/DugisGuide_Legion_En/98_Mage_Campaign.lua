@@ -229,6 +229,9 @@ T Troops in the Field |QID|42687| |N|(npc:106377) in the {Hall of the Guardian} 
 A Tech It Up A Notch |QID|42696| |N|(npc:106377) in the {Hall of the Guardian} (87.8, 47.4)| |Z|1068 1| |NPC|108515|
 C Tech It Up A Notch |QID|42696| |N|Speak to (npc:108331) and upgrade the class hall, in the {Hall of the Guardian} (75.6, 30.2)| |Z|1068 1| |NPC|108331|
 T Tech It Up A Notch |QID|42696| |N|(npc:106377) in the {Hall of the Guardian} (87.8, 47.4)| |Z|1068 1| |NPC|108515|
+A Ancient Magic |QID|42433| |N|(npc:107482) in the {Hall of the Guardian} (80.77, 56.88)| |Z|1068 1| |NPC|107482|
+C Ancient Magic |QID|42433| |N|Complete the mission, (mission:921). This is a 1 hour mission (80.99, 61.06)| |Z|1068 1| |NPC|108515|
+T Ancient Magic |QID|42433| |N|(npc:108515) in the {Hall of the Guardian} (80.0, 63.4)| |Z|1068 1| |NPC|108515|
 
 N Level 102 Required |N|You need to be at least level 102 to continue with the class campaign quest line| |PL|102|
 
@@ -244,42 +247,58 @@ T Thrice the Power |QID|44310| |N|(npc:102700) in the {Hall of the Guardian} (58
 
 N Level 103 Required |N|You need to be at least level 103 to continue with the class campaign quest line| |PL|103|
 
-A Ancient Magic |QID|42433| |N|(npc:107482) in the {Hall of the Guardian} (80.77, 56.88)| |Z|1068 1| |NPC|107482|
-C Ancient Magic |QID|42433| |N|Complete the mission, (mission:921). This is a 1 hour mission (80.99, 61.06)| |Z|1068 1| |NPC|108515|
-T Ancient Magic |QID|42433| |N|(npc:108515) in the {Hall of the Guardian} (80.0, 63.4)| |Z|1068 1| |NPC|108515|
 A An Unexpected Visitor |QID|42418| |N|(npc:108515) in the {Hall of the Guardian} (80.0, 63.4)| |Z|1068 1| |NPC|108515|
-T An Unexpected Visitor |QID|42418| |N|(npc:107532) in {Azsuna}| |NPC|107532| |POI|
-A A Covert Operation |QID|42434| |N|(npc:107532) in {Azsuna}| |NPC|107532| |POI|
-T A Covert Operation |QID|42434| |N|(npc:107532) in {Azsuna}| |NPC|107532| |POI|
-A Prepare To Be Assimilated |QID|42435| |N|(npc:107532) in {Azsuna}| |NPC|107532| |POI|
-C Prepare To Be Assimilated |QID|42435| |N|<b>Kill (npc:107525) and collect the (item:137598)<br><b>Kill (npc:89025) or (npc:89024) for 5 (item:139185) and meet up with Ravandwyr north of the {Empyrean Enclave}| |NPC|107532| |POI| |NPC|107525, 89025, 89024|
-T Prepare To Be Assimilated |QID|42435| |N|(npc:107532) in {Azsuna}| |NPC|107532| |POI|
-A What Is Going On Here? |QID|42166| |N|(npc:107532) in {Azsuna}| |NPC|107532| |POI|
-C What Is Going On Here? |QID|42166| |N|Speak to 5 Empyrean Society members and investigate their grounds. in {Azsuna}| |POI|
-T What Is Going On Here? |QID|42166| |N|(npc:106656) in {Azsuna}| |NPC|106656| |POI|
+T An Unexpected Visitor |QID|42418| |N|(npc:107341) in the {Hall of the Guardian} (61.69,59.92)| |Z|1068 2| |NPC|108515|
+A A Covert Operation |QID|42434| |N|(npc:107341) in the {Hall of the Guardian} (61.69,59.92)| |Z|1068 2| |NPC|108515|
+T A Covert Operation |QID|42434| |N|(npc:107532) in {Azsuna} (64.86,37.93)| |NPC|107532| |Z|1015 0|
+A Prepare To Be Assimilated |QID|42435| |N|(npc:107532) in {Azsuna} (64.86,37.93)| |NPC|107532| |Z|1015 0|
+K (npc:107525) |QID|42435.1| |N|Kill (npc:107525) and collect the (item:137598) (64.79,41.55)| |NPC|107525| |Z|1015 0|
+C Prepare To Be Assimilated |QID|42435.2| |N|Kill (npc:89025) or (npc:89024) for 5 (item:139185) (63.73,40.27)| |NPC|107532| |Z|1015 0| |POI| |NPC|89025, 89024|
+T Prepare To Be Assimilated |QID|42435| |N|(npc:107532) in {Azsuna} (65.15,38.77) (63.74,34.21)| |NPC|107532| |Z|1015 0|
+A What Is Going On Here? |QID|42166| |N|(npc:107532) in {Azsuna} (64.86,37.93)| |NPC|107532| |Z|1015 0|
+C What Is Going On Here? |QID|42166.1| |N|Speak to 5 Empyrean Society members in {Azsuna} (65.01,32.88)| |Z|1015 0| |NPC|106356|
+N Investigate the Brazier |QID|42166.2| |N|Click on the Ancient Brazier {Azsuna} (65.01,32.88)| |Z|1015 0|
+N Investigate the Building |QID|42166.3| |N|Click on the Ancient Brazier {Azsuna} (65.86,32.58)| |Z|1015 0|
+N Investigate the Rotunda |QID|42166.4| |N|Click on the Ancient Brazier {Azsuna} (66.42,33.51)| |Z|1015 0|
+N Examine the Exotic Book |QID|42166.5| |N|Click on the Exotic Book {Azsuna} (66.52,33.72)| |Z|1015 0|
+K (npc:106636) |QID|42166.6| |N|Kill (npc:106636) (66.42,33.49)| |Z|1015 0| |NPC|106636| 
+T What Is Going On Here? |QID|42166| |N|(npc:106656) in {Azsuna}| |NPC|106656| |Z|1015 0| |POI|
+A Some Knowledge Shouldn't Be Shared |QID|42149|  |N|(npc:106656) in {Azsuna}| |NPC|106656| |Z|1015 0| |POI|
+A The Next Level Has Arrived |QID|42206|  |N|(npc:106656) in {Azsuna}| |NPC|106656| |Z|1015 0| |POI|
+C Some Knowledge Shouldn't Be Shared  |QID|42149|  |N|Collect 5 (item:136981) small books sitting on objects around the area in {Azsuna}| |NPC|106656| |Z|1015 0| |POI|
+C The Next Level Has Arrived |QID|42206| |N|Kill 10 of any Empyrean Society Members and collect a (item:137190) from them (65.34,32.88)| |NPC|106356, 106514, 106516, 106795|
+T Some Knowledge Shouldn't Be Shared |QID|42149| |N|(npc:106656) in {Azsuna}| |NPC|106656| |Z|1015 0| |POI|
+T The Next Level Has Arrived |QID|42206|  |N|(npc:106656) in {Azsuna}| |NPC|106656| |Z|1015 0| |POI|
 A Final Exit |QID|42171| |N|(npc:106656) in {Azsuna}| |NPC|106656| |POI|
-C Final Exit |QID|42171| |N|Use the Rune of Opening to unlock the Empyrean Society building door in {Azsuna}| |NPC|106656| |POI|
-T Final Exit |QID|42171| |N|(npc:107532) in {Azsuna}| |NPC|107532| |POI|
-A Empyrean Society Report |QID|42222| |N|(npc:107532) in {Azsuna}| |NPC|107532| |POI|
+N Enter the Building |QID|42171.1| |N|Click Empyrean Society Door (65.86,32.57)| |Z|1015 0|
+K (npc:106798) |QID|42171.2| |N|Kill (npc:106798)| |POI| |NPC|106798|
+N (item:137210) |QID|42171.3| |N|Click on the Fel Chest to collect (item:137210) (66.16,32.63)| |Z|1015 0|
+T Final Exit |QID|42171| |N|(npc:106530) in {Azsuna} (66.08,32.35)| |NPC|106530| |Z|1015 0|
+A Empyrean Society Report |QID|42222| |N|(npc:106530) in {Azsuna} (66.08,32.35)| |NPC|106530| |Z|1015 0|
 
+R Hall of the Guardian |N|Travel to {Hall of the Guardian} (70.8, 55.2)| |Z|1068 2| 
 T Empyrean Society Report |QID|42222| |N|(npc:107351) in the {Hall of the Guardian} (70.8, 55.2)| |Z|1068 2| |NPC|107351|
 A The Council is in Session |QID|42416| |N|(npc:107351) in the {Hall of the Guardian} (70.8, 55.2)| |Z|1068 2| |NPC|107351|
-C The Council is in Session |QID|42416| |N|Speak to the Council of Six in {Dalaran}| |Z|1014 10| |POI|
+A Champion: Ravandwyr |QID|42705| |N|Speak to (npc:108377) to recruit as follower (70.29,53.33)| |Z|1068 2| |NPC|108377| |E| 
+A Champion: Esara Verrinde |QID|42705| |N|Speak to (npc:108380) to recruit as follower (73.96,59.38)| |Z|1068 2| |NPC|108380| |E| 
 T The Council is in Session |QID|42416| |N|(npc:90431) in {Dalaran} (28.6, 49.4)| |Z|1014 10| |NPC|90431|
 A Archmage Vargoth's Retreat |QID|42423| |N|(npc:90431) in {Dalaran} (28.6, 49.4)| |Z|1014 10| |NPC|90431|
-N Portal Visible |QID|42423.1|  |N|Find the portal| |POI|
-N Use Portal |QID|42423.2|  |N|Use the portal to Enter Archmage Vargoth's Retreat| |POI|
-N Enter Archmage Vargoth's Retreat |QID|42423.3| |N|Enter Archmage Vargoth's Retreat| |POI|
-N Archmage Vargoth's Journal |QID|42423.4| |N|Collect (item:137571)| |POI|
-N Examine Crystal Ball |QID|42423.5| |N|Examine Crystal Ball| |POI|
-N Examine Frosted Doughnut |QID|42423.6| |N|Examine Frosted Doughnut| |POI|
-N Examine Magical Tome |QID|42423.7| |N|Examine Magical Tome| |POI|
-N Examine Well-worn Scroll |QID|42423.8| |N|Examine Well-worn Scroll| | |POI|
-C Archmage Vargoth's Retreat |QID|42423| |N|Investigate Archmage Vargoth's quarters in {Dalaran} (28.6, 49.4)| |Z|1014 10| |NPC|90431|
+N Portal Visible |QID|42423.1|  |N|Find the portal (28.96,49.67)| |Z|1014 10|
+N Use Portal |QID|42423.2|  |N|Use the portal to Enter Archmage Vargoth's Retreat (24.30,56.01)| |POI| |Z|1014 10|
+N Examine Crystal Ball |QID|42423.4| |N|Examine Crystal Ball| |POI|
+N Examine Frosted Doughnut |QID|42423.5| |N|Examine Frosted Doughnut| |POI|
+N Examine Magical Tome |QID|42423.6| |N|Examine Magical Tome| |POI|
+N (item:137571) QID|42423.3| |N|Collect (item:137571)| |POI|
+N Examine Well-worn Scroll |QID|42423.7| |N|click Well-worn Scroll| | |POI|
 T Archmage Vargoth's Retreat |QID|42423| |N|(npc:107423) in {Dalaran} (21.8, 54.4)| |Z|1014 10| |NPC|107423|
 A Following In His Footsteps |QID|42424| |N|(npc:107423) in {Dalaran} (21.8, 54.4)| |Z|1014 10| |NPC|107423|
-C Following In His Footsteps |QID|42424| |N|Ask your champions to investigate (npc:107482)'s travels| |Z|1014 10| |NPC|107423| |POI|
+A Recruiting Apprentices |QID|44098| |N|(npc:108515) in the {Hall of the Guardian} (80.0, 63.4)| |Z|1068 1| |NPC|108515|
+T Recruiting Apprentices |QID|44098| |N|(npc:106433) in the {Hall of the Guardian} (47.76, 32.05)| |Z|1068 1| |NPC|108515|
+C Following In His Footsteps |QID|42424| |N|Complete 5 "Archmage Vargoth's Travels" Missions<br/><br/>Each of these missions will take up to 16 hours to complete (81.36,61.01)| |Z|1068 1|
 T Following In His Footsteps |QID|42424| |N|(npc:108515) in the {Hall of the Guardian} (80.0, 63.4)| |Z|1068 1| |NPC|108515|
+
+N Level 110 Required |N|You need to be at least level 110 to continue with the class campaign quest line| |PL|110|
+
 A Kalec's Plan |QID|42451| |N|(npc:108515) in the {Hall of the Guardian} (80.0, 63.4)| |Z|1068 1| |NPC|108515|
 C Kalec's Plan |QID|42451| |N|Meet (npc:107465) on the ridge near the {Arcway Vaults} (25.0, 89.0) (28.0, 88.0)| |Z|1033 0| |NPC|107465|
 T Kalec's Plan |QID|42451| |N|(npc:107465) near the {Arcway Vaults} (28.0, 88.0)| |Z|1033 0| |NPC|107465|
@@ -295,9 +314,9 @@ N (npc:108342) |QID|42521.5| |N|Rescue (npc:108342)| |POI| |NPC|108342|
 N Barrier Crossed First |QID|42521.6| |N|Barrier Crossed First| |POI|
 C The Enemy of My Enemy... |QID|42521| |N|Find Millhouse Manastorm| |NPC|107465| |POI|
 T The Enemy of My Enemy... |QID|42521| |N|(npc:105917) in {Arcway Vaults}| |NPC|107465| |POI|
-A Champion: Millhouse Manastorm |QID|42702| |N|Speak to (npc:108342) to recruit him as your follower| |NPC|108342| |POI| |E|
+A Champion: Millhouse Manastorm |QID|42702| |N|Speak to (npc:108342) to recruit him as your follower (56.05,58.97)| |Z|1068 2| |NPC|108342| |POI| |E|
 
-N Level 110 Required |N|You need to be at least level 110 to continue with the class campaign quest line| |PL|110|
+N Guide Complete 
 
 ]]
 end, {image = "mage.tga", description = [[]]})	end

@@ -548,7 +548,7 @@ R Talonrest  |QID|39786| |N|Travel to {Talonrest} (52.00, 63.76) (53.54, 62.91) 
 T A Stone Cold Gamble |QID|39786| |N|(npc:107674) in {Talonrest} (51.35, 57.30)| |Z|1017 0| |NPC|107674|
 T A Stack of Racks |QID|39792| |N|(npc:107675) in {Talonrest} (51.31, 57.16)| |Z|1017 0| |NPC|107675|
 A Put It All on Red |QID|42483| |N|(npc:107674) in {Talonrest} (51.33, 57.27)| |Z|1017 0| |NPC|107674|
-C Put It All on Red |QID|42483| |N|Kill (npc:107917) and collect (item:138024) in {Citrine Bay}| |Z|1017 0| |NPC|107674| |POI|
+C Put It All on Red |QID|42483| |N|Kill (npc:107917) and collect (item:138024) in {Citrine Bay}| |Z|1017 0| |NPC|107917| |POI|
 T Put It All on Red |QID|42483| |N|(npc:107674) in {Talonrest} (51.33, 57.27)| |Z|1017 0| |NPC|107674|
 
 N Switch Guide |N|Switch to (guide:"1041(98-110)#1041(98-110)#1041(98-110)") to complete (qid:40072)| |QID|40072|

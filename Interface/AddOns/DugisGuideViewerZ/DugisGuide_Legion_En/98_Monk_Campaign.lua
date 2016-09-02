@@ -191,39 +191,47 @@ T Three Paths, Three Weapons |QID|44424| |N| (npc:100438) in the {Hall of the Se
 
 N Level 103 Required |N|You need to be at least level 103 to continue with the class campaign quest line| |PL|103|
 
-A The Defense of Tian Monastery |QID|41728|  |O|
-N (npc:101880) |QID|41728.1| |N|Speak to (npc:101880) for a ride in {Shrine of Five Dawns} (47.17, 47.74) |Z|1044 0| |NPC|101880|
+A The Defense of Tian Monastery |QID|41728|  |N|(npc:64975) in {Shrine of Five Dawns} (51.41,48.39)|  |Z|1044 0| |NPC|101880|
+N (npc:101880) |QID|41728.1| |N|Speak to (npc:101880) for a ride in {Shrine of Five Dawns} (47.17, 47.74)| |Z|1044 0| |NPC|101880|
 
 R Tian Monastery |QID|41728.2| |N|Travel to {Tian Monastery} (43.6, 24.7)| |Z|806 0| 
-T The Defense of Tian Monastery |QID|41728| |N|(npc:104784) in {Tian Monastery}| |NPC|104784| |POI|
-A Slowing the Spread |QID|41729| |N|(npc:104784) in {Tian Monastery}| |NPC|104784| |POI|
-C Slowing the Spread |QID|41729| |N|Destroy 3 (npc:97142)| |NPC|97142| |POI|
-T Slowing the Spread |QID|41729| |N|(npc:104850)| |NPC|104850| |POI|
-A Desperate Strike |QID|41730| |N|(npc:104850)| |NPC|104850| |POI|
-C Desperate Strike |QID|41730| |N|Kill 20 demon attackers| |NPC|104850| |POI|
-T Desperate Strike |QID|41730| |N|(npc:104850)| |NPC|104850| |POI|
-A Storm, Earth, and Fire |QID|41731| |N|(npc:104850)| |NPC|104850| |POI|
-C Storm, Earth, and Fire |QID|41731| |N|Destroy 5 Fel Spikes, put out 5 Fel Fires, and destroy 5 Tainted Ale barrels. | |NPC|104850| |POI|
-T Storm, Earth, and Fire |QID|41731| |N|(npc:104850)| |NPC|104850| |POI|
-A The Hand of Keletress |QID|41732| |N|(npc:104850)| |NPC|104850| |POI|
-C The Hand of Keletress |QID|41732| |N|Kill (npc:104756)| |NPC|104756| |POI|
-T The Hand of Keletress |QID|41732| |N|(npc:104744)| |NPC|104744| |POI|
-A Rebuilding the Order |QID|41733| |N|(npc:104744)| |NPC|104744| |POI|
+T The Defense of Tian Monastery |QID|41728| |N|(npc:104784) in {Tian Monastery} (38.34,25.80)| |Z|806 0| |NPC|104784|
+A Slowing the Spread |QID|41729| |N|(npc:104784) in {Tian Monastery} (38.34,25.80)| |Z|806 0| |NPC|104784|
+A Desperate Strike |QID|41730| |N|(npc:104758) in {Tian Monastery} (38.96,24.96)| |Z|806 0| |NPC|104758| |POI|
 
-T Rebuilding the Order |QID|41733| |N|(npc:100438) in the {Hall of the Seasons} (51.42, 48.67)| |Z|1044 0| |NPC|100438|
+C Slowing the Spread |QID|41729| |N|Destroy 3 (npc:104823) (38.99,23.24) (41.61,23.73) (41.35,27.35)| |Z|806 0| |NPC|104823| |POI|
+--A Storm, Earth, and Fire |QID|41731| |N|(npc:104850)| |NPC|104850| |POI|
+C Storm, Earth, and Fire |QID|41731| |N|<b>Destroy 5 Fel Spikes<br/><b>Put out 5 Fel Fires, you need to stand in the fire and use the provided (spell:207554) ability<br/><b>Destroy 5 Tainted Ale barrels (41.46,24.96)| |Z|806 0| |NPC|104850| |POI|
+C Desperate Strike |QID|41730| |N|Kill 20 demon attackers (41.46,24.96)| |Z|806 0| |NPC|104758, 104754| |POI|
 
-A The Way of the Tiger |QID|43319| |N|(npc:105019)| |NPC|105019| 
-A Tracking the Tideskorn |QID|41909| |N|(npc:104744)| |NPC|104744| |POI|
-A Further Training |QID|41909| |N|(npc:104744)| |NPC|104744| |POI|
-C The Way of the Tiger |QID|43319| |N|Speak to (npc:105019) and recruit more troops| |NPC|105019| |POI|
-C Tracking the Tideskorn |QID|41909| |N|Use the Scouting Map and complete the "Tracking the Tideskorn" missions. <br/><br/>You will need to complete several of these mission to complete the quest|
-C Further Training |QID|41909| |N|Use your (spell:117952), (npc:109132), and (spell:100784) or (spell:205523) abilities 100 times each. | |NPC|104744| |POI|
-T Further Training |QID|41909| |N|(npc:104744)| |NPC|104744| |POI|
-T Tracking the Tideskorn |QID|41909| |N|(npc:104744)| |NPC|104744| |POI|
-T The Way of the Tiger |QID|43319| |N|(npc:105019)| |NPC|105019| |POI|
-A Appropriations |QID|41907| |N|(npc;104744)| |NPC|104744| |POI|
-T Appropriations |QID|41907| |N|(npc;104744)| |NPC|104744| |POI|
-A An Ample Stockpile |QID|43054| |N|(npc:98945)| |NPC|98945| |POI|
+T Desperate Strike |QID|41730| |N|(npc:104850) in {Tian Monastery} (42.06,25.47)| |Z|806 0| |NPC|104850| |POI|
+T Slowing the Spread |QID|41729| |N|(npc:104850) in {Tian Monastery} (42.06,25.47)| |Z|806 0| |NPC|104850| |POI|
+T Storm, Earth, and Fire |QID|41731| |N|(npc:104850) in {Tian Monastery} (42.06,25.47)| |Z|806 0| |NPC|104850| |POI|
+A The Hand of Keletress |QID|41732| |N|(npc:104850) in {Tian Monastery} (42.06,25.47)| |Z|806 0| |NPC|104850|
+C The Hand of Keletress |QID|41732| |N|Kill (npc:104756) in {Tian Monastery} (44.10,25.04)| |Z|806 0| |NPC|104756| |POI|
+T The Hand of Keletress |QID|41732| |N|(npc:104744) in {Tian Monastery} (45.49,25.07)| |Z|806 0| |NPC|104744| |POI|
+A Rebuilding the Order |QID|41733| |N|(npc:104744) in {Tian Monastery} (45.49,25.07)| |Z|806 0| |NPC|104744|
+
+N (npc:101880) |QID|41733.1| |N|Speak to (npc:101880) to return to the Order Hall (45.11,25.00)| |Z|806 0| |NPC|104744| |V|
+T Rebuilding the Order |QID|41733| |N|(npc:64975) in the {Hall of the Seasons} (51.42, 48.67)| |Z|1044 0| |NPC|64975|
+
+A The Way of the Tiger |QID|43319| |N|(npc:64975) in the {Hall of the Seasons} (51.42, 48.67)| |Z|1044 0| |NPC|64975|
+A Champion: Taran Zhu |QID|41734| |N|Speak to (npc:104984) to recruit as a follower (51.14,49.63)| |Z|1044 0| |NPC|104984| |E|
+A Champion: The Monkey King |QID|41735| |N|Speak to (npc:102902) to recruit as a follower (51.02,49.56)| |Z|1044 0| |NPC|102902| |E|
+A Further Training |QID|41909| |N|(npc:104744) in the {Hall of the Seasons} (52.54,57.84)| |Z|1044 0| |NPC|104744|
+A Appropriations |QID|41907| |N|(npc:104744) in the {Hall of the Seasons} (52.54,57.84)| |Z|1044 0| |NPC|104744|
+A Tracking the Tideskorn |QID|41909| |N|(npc:104744) in the {Hall of the Seasons} (52.54,57.84)| |Z|1044 0| |NPC|104744|
+C The Way of the Tiger |QID|43319| |N|Speak to (npc:105019) and recruit more troops (54.46,57.17)| |Z|1044 0| |NPC|105019| |POI|
+T The Way of the Tiger |QID|43319| |N|(npc:105019) (54.46,57.17)| |Z|1044 0| |NPC|105019| |POI|
+T Appropriations |QID|41907| |N|(npc:98945) in the {Hall of the Seasons} (48.89,58.36)| |Z|1044 0| |NPC|98945|
+A An Ample Stockpile |QID|43054| |N|(npc:98945) in the {Hall of the Seasons} (48.89,58.36)| |Z|1044 0| |NPC|98945|
+N As you go... |AYG|43054| |N|Use the Scouting Map and complete the "Tracking the Tideskorn" missions. <br/><br/>You will need to complete several of these mission to complete the quest| |QID|41909|
+C Further Training |QID|41909| |N|Use your (spell:117952), (npc:109132), and (spell:100784) or (spell:205523) abilities 100 times each  (54.05,57.27) | |Z|1044 0| |NPC|104744|
+T Further Training |QID|41909| |N|(npc:104744) in the {Hall of the Seasons} (52.54,57.84)| |Z|1044 0| |NPC|104744|
+C An Ample Stockpile |QID|43054| |N|Make 100 supply deposits to (npc:98945). (item:133940) should be the cheapest option, you can either create these yourself with First Aid or purchase from the Auction (48.89,58.36)| |Z|1044 0| |NPC|98945|
+T An Ample Stockpile |QID|43054| |N|(npc:98945) in the {Hall of the Seasons} (48.89,58.36)| |Z|1044 0| |NPC|98945| |POI|
+C Tracking the Tideskorn |QID|41909| |N|Use the Scouting Map and complete the "Tracking the Tideskorn" missions. <br/><br/>You will need to complete several of these mission to complete the quest (52.92,60.16)| |Z|1044 0| |POI|
+T Tracking the Tideskorn |QID|41909|  |N|(npc:104744) in the {Hall of the Seasons} (52.54,57.84)| |Z|1044 0| |NPC|104744|
 
 N Level 110 Required |N|You need to be at least level 110 to continue with the class campaign quest line| |PL|110|
 

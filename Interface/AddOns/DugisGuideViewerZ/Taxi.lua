@@ -717,6 +717,7 @@ function Taxi:Initialize()
 		route.distance = dist
 		route.builder = self
 		route.movementSpeed = GetFlightPathMultiplier()*baseSpeed
+
 		route.npc2 = npc2
 		return route
 	end
@@ -1425,7 +1426,7 @@ end
 	end
 	
 	function DGV:UNIT_SPELLCAST_START(event, unit, spellName, spellRank, lineIdCounter, spellId)
-		if unit=="player" and spellId==126892 then
+		if unit=="player" and (spellId==126892 or spellId==50977) then
 			if not DugisGuideUser.ZenPilgrimageReturnPoint then DugisGuideUser.ZenPilgrimageReturnPoint = {} end
 			pt = DugisGuideUser.ZenPilgrimageReturnPoint
 			pt.m, pt.f, pt.x, pt.y = DGV:GetPlayerMapPositionDisruptive()
@@ -1442,17 +1443,29 @@ end
 	end
 	
 	function RouteBuilders.ZenPilgrimageReturn:Build(best, parentRoute, m1, f1, x1, y1, m2, f2, x2, y2)
-		if not UnitBuff("player", GetSpellInfo(126895)) 
+		local class = select(2, UnitClass("player"))
+		local currentMap = GetCurrentMapAreaID()
+		local currentFloor = GetCurrentMapDungeonLevel()
+		local subzone = GetSubZoneText()
+		local ebonHold = DugisGuideViewer:localize("Acherus: The Ebon Hold", "ZONE")
+ 		local inClassHall = subzone == ebonHold or (currentMap == 1021 and (currentFloor == 1 or currentFloor == 2))
+
+		if (class == "MONK" and not UnitBuff("player", GetSpellInfo(126895)))
 			or not DugisGuideUser.ZenPilgrimageReturnPoint 
 			or not DugisGuideUser.ZenPilgrimageReturnPoint.m 
+			or class == "DEATHKNIGHT" and not inClassHall
+			or (class ~= "MONK" and class ~= "DEATHKNIGHT")
 		then return end
 		
 		local route = GetCreateRoute(self, best, parentRoute)
 		route.builder = self
 		local pt = DugisGuideUser.ZenPilgrimageReturnPoint
 		route.m, route.f, route.x, route.y = pt.m, pt.f, pt.x, pt.y
-		route.spell = 126895
-		
+		if class == "MONK" then 
+			route.spell = 126895
+		elseif class =="DEATHKNIGHT" then
+			route.spell = 50977
+		end
 		
 		route.tail = Taxi:GetBestRoute(route,
 			pt.m, pt.f, pt.x, pt.y, m2, f2, x2, y2, 

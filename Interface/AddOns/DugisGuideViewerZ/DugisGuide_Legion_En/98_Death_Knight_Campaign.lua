@@ -114,7 +114,6 @@ T The Call of Vengeance |QID|40935| |N|(npc:93437) in the {Hall of Command} (50.
 
 A Keeping Your Edge |QID|39757| |N|(npc:97111) in the {Hall of Command} (51.18, 53.86)| |Z|1021 2| |NPC|97111|
 
-R The Heart of Acherus |QID|39757| |N|Travel to {The Heart of Acherus} (35.71, 37.83)| |Z|1021 2|
 C Keeping Your Edge |QID|39757| |N|Speak with (npc:97072) in {The Heart of Acherus} (36.25, 38.53)| |Z|1021 1| |NPC|97072|
 T Keeping Your Edge |QID|39757| |N|(npc:97072) in {The Heart of Acherus} (59.95, 59.39)| |Z|1021 1| |NPC|97072|
 A Advanced Runecarving |QID|39761| |N|(npc:97072) in {The Heart of Acherus} (59.95, 59.39)| |Z|1021 1| |NPC|97072|
@@ -157,17 +156,20 @@ A Rise, Champions |QID|43264| |N|(npc:93568) in the {Hall of Command} (49.69, 50
 C Rise, Champions |QID|43264| |N|Recruit (npc:109890) and (npc:93456) in the {Hall of Command}| |NPC|109890, 93456| |POI|
 T Rise, Champions |QID|43264| |N|(npc:93568) in the {Hall of Command} (49.69, 50.61)| |Z|1021 2| |NPC|93568|
 A Spread the Word |QID|43265| |N|(npc:93568) in the {Hall of Command} (49.69, 50.61)| |Z|1021 2| |NPC|93568|
-C Spread the Word |QID|43265| |N|Use the Scouting map and complete (mission:1210). This is a 2 minutes mission| |Z|1021 2| |POI|
+C Spread the Word |QID|43265| |N|Use the Scouting map and complete (mission:1210). This is a 2 minutes mission (49.81,51.35)| |Z|1021 2|
 T Spread the Word |QID|43265| |N|(npc:93568) in the {Hall of Command} (49.69, 50.61)| |Z|1021 2| |NPC|93568|
 A Recruiting the Troops |QID|43266| |N|(npc:93568) in the {Hall of Command} (49.69, 50.61)| |Z|1021 2| |NPC|93568|
-C Recruiting the Troops |QID|43266| |N|Speak with (npc:106435) to summon ghouls in the {Hall of Command}| |Z|1021 2| |NPC|106435| |POI|
+C Recruiting the Troops |QID|43266| |N|Speak with (npc:106435) to summon ghouls in the {Hall of Command} (41.04,74.06)| |Z|1021 2| |NPC|106435|
 T Recruiting the Troops |QID|43266| |N|(npc:93568) in the {Hall of Command} (49.69, 50.61)| |Z|1021 2| |NPC|93568|
 A Troops in the Field |QID|43267| |N|(npc:93568) in the {Hall of Command} (49.69, 50.61)| |Z|1021 2| |NPC|93568|
-C Troops in the Field |QID|43267| |N|Use the Command Table and complete the mission, (mission:901). This is a 4 hours mission so come back later to complete this quest| |Z|1021 2| |NPC|93568|
+C Troops in the Field |QID|43267| |N|Use the Scouting map and complete the mission, (mission:901). This is a 4 hours mission (49.81,51.35)| |Z|1021 2| |NPC|93568|
 T Troops in the Field |QID|43267| |N|(npc:93568) in the {Hall of Command} (49.69, 50.61)| |Z|1021 2| |NPC|93568|
 A Tech It Up A Notch |QID|43268| |N|(npc:93568) in the {Hall of Command} (49.69, 50.61)| |Z|1021 2| |NPC|93568|
+A Salanar the Horseman |QID|43539| |N|(npc:93568) in the {Hall of Command} (49.69, 50.61)| |Z|1021 2| |NPC|93568|
 C Tech It Up A Notch |QID|43268| |N|Speak with (npc:97485) in Acherus in the {Hall of Command} (49.69, 50.61)| |Z|1021 2| |NPC|97485|
 T Tech It Up A Notch |QID|43268| |N|(npc:93568) in the {Hall of Command} (49.69, 50.61)| |Z|1021 2| |NPC|93568|
+C Salanar the Horseman |QID|43539| |N|Use the Command Table and complete the mission, (mission:1259). This is a 1 hour mission (49.81,51.35)| |Z|1021 2| |NPC|93568|
+T Salanar the Horseman |QID|43539| |N|(npc:93568) in the {Hall of Command} (49.69, 50.61)| |Z|1021 2| |NPC|93568|
 
 N Level 102 Required |N|You need to be at least level 102 to continue with the class campaign quest line| |PL|102|
 
@@ -182,6 +184,53 @@ C A Weapon For Every Occasion |QID|44401| |N|Let Duke Lankral know if you'd like
 T A Weapon For Every Occasion |QID|44401| |N|(npc:109788) in {The Heart of Acherus} (57.91, 59.42)| |Z|1021 1| |NPC|109788| |O|
 
 N Level 103 Required |N|You need to be at least level 103 to continue with the class campaign quest line| |PL|103|
+
+A The Ruined Kingdom |QID|42533|  |N|(npc:93437) in the {Hall of Command} (49.80, 50.25)| |Z|1021 2| |NPC|93437|
+
+R Arathi Highlands |QID|42535| |N|Travel to {Arathi Highlands} (19.45,67.33)| |Z|16 0| |NPC|107806|
+T The Ruined Kingdom |QID|42533| |N|(npc:107806) in {Arathi Highlands} (19.45,67.33)| |Z|16 0| |NPC|107806|
+A Our Oldest Enemies |QID|42534| |N|(npc:107806) in {Arathi Highlands} (19.45,67.33)| |Z|16 0| |NPC|107806|
+A Death... and Decay |QID|42535| |N|(npc:107806) in {Arathi Highlands} (19.45,67.33)| |Z|16 0| |NPC|107806|
+K (npc:108236) |QID|42534.1| |N|Kill (npc:42534) and collect (item:138142) in {Arathi Highlands} (11.81,69.83)| |Z|16 0| |NPC|107806|
+C Death... and Decay |QID|42535| |N|Click on 10 Witherbark Supplies (npc:107806) in {Arathi Highlands}<br/><b>Bowls with cloth and sharp bones on the ground (19.45,67.33)| |Z|16 0| |NPC|107806|
+C Our Oldest Enemies |QID|42534.2| |N|Kill 15 Witherbark Trolls in {Arathi Highlands} (13.42,69.52)| |Z|16 0| |NPC|107806|
+T Our Oldest Enemies |QID|42534| |N|(npc:107806) in {Arathi Highlands} (19.45,67.33)| |Z|16 0| |NPC|107806|
+T Death... and Decay |QID|42535| |N|(npc:107806) in {Arathi Highlands} (19.45,67.33)| |Z|16 0| |NPC|107806|
+A Regicide |QID|42536| |N|(npc:108042) in {Arathi Highlands} (19.52,67.09)| |Z|16 0| |NPC|108042|
+C Regicide |QID|42536.1| |N|Speak to (npc:108044) and collect (item:138148)| |Z|16 0| |NPC|108044|
+T Regicide |QID|42536| |N|(npc:108042) in {Arathi Highlands} (22.89,60.75) (23.39,61.39)| |Z|16 0| |NPC|108042|
+A The King Rises |QID|42537| |N|(npc:108042) in {Arathi Highlands} (23.39,61.39)| |Z|16 0| |NPC|108042|
+N Enter the Mausoleum |QID|42537.1| |N|Click on Portcullis and walk into the room (23.06,61.37)| |Z|16 0| 
+N (spell:220562) |QID|42537.2| |N|Use the (spell:220562) ability on your screen to Raise Trollbane  (22.50,61.38)| |Z|17 0|
+
+R Hall of Command  |TID|42537| |N|Travel to {Hall of Command} (49.80, 50.25)| |Z|1021 2| |NPC|93437|
+T The King Rises |QID|42537|  |N|(npc:93437) in the {Hall of Command} (49.80, 50.25)| |Z|1021 2| |NPC|93437|
+A A Personal Request |QID|42708| |N|(npc:93456) in the {Hall of Command} (56.03,30.68)| |Z|1021 2| |NPC|93456|
+A Champion: Thoras Trollbane |QID|44243| |N|Speak to (npc:113419) to recruit as a follower (59.61,33.70)| |Z|1021 2| |NPC|113419| |E|
+
+R Tirisfal Glades |N|Travel to {Tirisfal Glades} (50.99,71.61)| |Z|20 0|
+N (npc:108567) |QID|42708.1| |N|Speak to (npc:108567) in {Tirisfal Glades} (50.99,71.61)| |Z|20 0| |NPC|108567|
+N (npc:108567) |SID|0|2| |N|Follow (npc:108567) and help him fight (43.54,35.70)| |Z|14 0| |NPC|108567| |QID|42708|
+N (npc:108590) |SID|0|3| |N|Click on the prison cage and rescue (npc:108590) (43.53,35.67)| |Z|14 0| |NPC|108590| |QID|42708|
+
+R Hall of Command |TID|42708| |N|Travel to {Hall of Command} (56.03,30.68)| |Z|1021 2| |NPC|93456|
+T A Personal Request |QID|42708| |N|(npc:93456) in the {Hall of Command} (56.03,30.68)| |Z|1021 2| |NPC|93456|
+A Knights of the Ebon Blade |QID|44082| |N|(npc:93568) in the {Hall of Command} (49.69, 50.61)| |Z|1021 2| |NPC|93568|
+A Steeds of the Damned |QID|43899| |N|(npc:93568) in the {Hall of Command} (49.69, 50.61)| |Z|1021 2| |NPC|93568|
+A Champion: Koltira Deathweaver |QID|44244| |N|Speak to (npc:93453) to recruit as a follower (66.19,64.44)| |Z|1021 2|  |NPC|93453| |E|
+N As you go... |AYG|43572| |N|Complete 5 "Fallen Steeds" missions. for the quest (qid:43899). Each mission take 16 hours to complete| |QID|43899|
+A Braid of the Underking |QID|43571| |N|(npc:111480) in {The Heart of Acherus} (36.23,56.03)| |Z|1021 1| |NPC|111480|
+T Knights of the Ebon Blade |QID|44082| |N|(npc:106436) in {The Heart of Acherus} (53.38,68.55)| |Z|1021 1| |NPC|111480|
+N Switch Guide |QID|43571| |N|Switch to (guide:"1065(98-110)") to kill (npc:99460) and collect (item:139537) for the quest (qid:43571)| 
+
+T Braid of the Underking |QID|43571| |N|(npc:111480) in {The Heart of Acherus} (36.23,56.03)| |Z|1021 1| |NPC|111480|
+A The Nightmare Lash |QID|43572| |N|(npc:111480) in {The Heart of Acherus} (36.23,56.03)| |Z|1021 1| |NPC|111480|
+
+N Switch Guide |QID|43572| |N|Switch to (guide:"1067(98-110)") to kill (npc:99192) and collect (item:139538) for the quest (qid:43572)| 
+
+T The Nightmare Lash |QID|43572| |N|(npc:111480) in {The Heart of Acherus} (36.23,56.03)| |Z|1021 1| |NPC|111480|
+C Steeds of the Damned |QID|43899| |N|Use the Scouting map and complete 5 "Fallen Steeds" missions. (49.81,51.35)| |Z|1021 2|
+T Steeds of the Damned |QID|43899| |N|(npc:93568) in the {Hall of Command} (49.69, 50.61)| |Z|1021 2| |NPC|93568|
 
 N Level 110 Required |N|You need to be at least level 110 to continue with the class campaign quest line| |PL|110|
 

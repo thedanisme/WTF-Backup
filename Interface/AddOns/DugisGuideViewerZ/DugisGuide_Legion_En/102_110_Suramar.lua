@@ -5,14 +5,21 @@ return [[
 
 N Level 102 Required |N|You need to be at least level 102 to complete {Suramar} quest line| |PL|102|
 R The Violet Citadel |QID|44009| |N|Travel to {The Violet Citadel} (28.66, 48.37)| |Z|1014 10|
-A A Falling Star |QID|44009| |N|(npc:90417) in {The Violet Citadel} (28.66, 48.37)| |Z|1014 10| |NPC|90417|
-N (npc:96813) |QID|44009.1| |N|Speak to (npc:96813) to take Khadgar's Gryphon to {Suramar} (69.89, 51.15)| |Z|1014 10| |NPC|96813| |V|
-N Search the Crash Site |QID|44009.2| |N|Dive down to search the Crash Site in {Azuregale Bay} (92.11, 61.08)| |Z|1033 0|
-N Investigate the Cave |QID|44009.3| |N|Find the cave entrance under water to investigate the Cave in {Azuregale Bay} (94.68, 64.07)  (94.46, 66.42)| |Z|1033 0|
-K (npc:112477) |QID|44009.4| |N|Kill (npc:112477) and collect (item:140574) in {Azuregale Bay} (94.52, 67.09)| |Z|1033 0| |NPC|112477|
+A A Falling Star |N|(npc:90417) in {The Violet Citadel} (28.66, 48.37)| |Z|1014 10| |NPC|90417| |OID|44257, 44009|
+A A Falling Star |QID|44257| |N|(npc:90417) in {The Violet Citadel} (28.66, 48.37)| |Z|1014 10| |NPC|90417| |O|
+A A Falling Star |QID|44009| |N|(npc:90417) in {The Violet Citadel} (28.66, 48.37)| |Z|1014 10| |NPC|90417| |O|
+N (npc:96813) |QID|44257.1| |N|Speak to (npc:96813) to take Khadgar's Gryphon to {Suramar} (69.89, 51.15)| |Z|1014 10| |NPC|96813| |V| |O|
+N (npc:96813) |QID|44009.1| |N|Speak to (npc:96813) to take Khadgar's Gryphon to {Suramar} (69.89, 51.15)| |Z|1014 10| |NPC|96813| |V| |O|
+N Search the Crash Site |QID|44257.2| |N|Dive down to search the Crash Site in {Azuregale Bay} (92.11, 61.08)| |Z|1033 0| |O|
+N Search the Crash Site |QID|44009.2| |N|Dive down to search the Crash Site in {Azuregale Bay} (92.11, 61.08)| |Z|1033 0| |O|
+N Investigate the Cave |QID|44257.3| |N|Find the cave entrance under water to investigate the Cave in {Azuregale Bay} (94.68, 64.07)  (94.46, 66.42)| |Z|1033 0| |O|
+N Investigate the Cave |QID|44009.3| |N|Find the cave entrance under water to investigate the Cave in {Azuregale Bay} (94.68, 64.07)  (94.46, 66.42)| |Z|1033 0| |O|
+K (npc:112477) |QID|44257.4| |N|Kill (npc:112477) and collect (item:140574) in {Azuregale Bay} (94.52, 67.09)| |Z|1033 0| |NPC|112477| |O|
+K (npc:112477) |QID|44009.4| |N|Kill (npc:112477) and collect (item:140574) in {Azuregale Bay} (94.52, 67.09)| |Z|1033 0| |NPC|112477| |O|
 
-R Dalaran |TID|44009| |N|Travel to {Dalaran} (49.60, 47.99)| |Z|1014 10|
-T A Falling Star |QID|44009| |N|(npc:112130) in {Chamber of the Guardian} (27.03, 35.39)| |Z|1014 12| |NPC|112130|
+R Dalaran |QID|44004| |N|Travel to {Dalaran} (49.60, 47.99)| |Z|1014 10|
+T A Falling Star |QID|44257| |N|(npc:112130) in {Chamber of the Guardian} (27.03, 35.39)| |Z|1014 12| |NPC|112130| |O|
+T A Falling Star |QID|44009| |N|(npc:112130) in {Chamber of the Guardian} (27.03, 35.39)| |Z|1014 12| |NPC|112130| |O|
 A Bringer of the Light |QID|44004| |N|(npc:112130) in {Chamber of the Guardian} (27.03, 35.39)| |Z|1014 12| |NPC|112130|
 
 R The Vault of Lights |N|Use the portal to travel to {The Vault of Lights} (28.41, 34.58)| |Z|1014 12| |F|1092 0|
@@ -41,8 +48,9 @@ T Light's Charge |QID|44153| |N|Class Order Hall| |POI|
 
 N Level 110 Required |N|You need to be at least level 110 to complete {Suramar} quest line| |PL|110|
 
-A Khadgar's Discovery |QID|39985| |N|Auto quest at level 110|
-T Khadgar's Discovery |QID|39985| |N|(npc:90417) in {The Violet Citadel} (28.49, 48.26)| |Z|1014 10| |NPC|90417|
+A Khadgar's Discovery |N|Auto quest at level 110| |OID|39985, 44555|
+T Khadgar's Discovery |QID|44555| |N|(npc:90417) in {The Violet Citadel} (28.49, 48.26)| |Z|1014 10| |NPC|90417| |O|
+T Khadgar's Discovery |QID|39985| |N|(npc:90417) in {The Violet Citadel} (28.49, 48.26)| |Z|1014 10| |NPC|90417| |O|
 A Magic Message |QID|39986| |N|(npc:90417) in {The Violet Citadel} (28.49, 48.26)| |Z|1014 10| |NPC|90417|
 C Magic Message |QID|39986| |N|Examine the Arcane Anomaly in Dalaran in {The Violet Citadel} (29.64, 49.17)| |Z|1014 10|
 T Magic Message |QID|39986| |N|(npc:90417) in {The Violet Citadel} (28.69, 48.40)| |Z|1014 10| |NPC|90417|

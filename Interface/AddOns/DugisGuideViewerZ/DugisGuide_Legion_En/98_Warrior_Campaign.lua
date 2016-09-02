@@ -136,26 +136,29 @@ T Troops in the Field |QID|42610| |N|(npc:100635) in {Skyhold} (59.4, 13.6)| |Z|
 A Einar the Runecaster |QID|42611| |N|(npc:100635) in {Skyhold} (59.4, 13.6)| |Z|1035 1| |NPC|100635|
 C Einar the Runecaster |QID|42611| |N|Speak to (npc:107994) and select a class hall upgrade (46.4, 29.4)| |Z|1035 1| |NPC|107994|
 T Einar the Runecaster |QID|42611| |N|(npc:100635) in {Skyhold} (59.4, 13.6)| |Z|1035 1| |NPC|100635|
-A On the Trail of the Great Worm |QID|42107| |N|(npc:107987) in {Skyhold} (56.2, 83.0)| |Z|1035 1| |NPC|107987|
-C On the Trail of the Great Worm |QID|42107| |N|Complete the mission (mission:1284), this is a 1 hour mission|  |Z|1035 1| |POI|
-T On the Trail of the Great Worm |QID|42107| |N|(npc:107987) in {Skyhold} (56.2, 83.0)| |Z|1035 1| |NPC|107987|
 
 A The Call of Battle |QID|43750| |N|(npc:100635) in {Skyhold} (59.4, 13.6)| |Z|1035 1| |NPC|100635|
-T The Call of Battle |QID|43750| |N|(npc:100635) in {Skyhold} (59.4, 13.6)| |Z|1035 1| |NPC|100635|
-A The Gjallarhorn |QID|42193| |N|(npc:100635) in {Skyhold} (59.4, 13.6)| |Z|1035 1| |NPC|100635|
-T The Gjallarhorn |QID|42193| |N|(npc:106720)| |Z|1035 1| |NPC|106720| |POI|
-A Stolen Honor |QID|42194| |N|(npc:106720)| |NPC|106720|
-N Crown of the Forgotten King |QID|42194.1| |N|Collect Crown of the Forgotten King| |POI|
-N Stormcloak Signet |QID|42194.2| |N|Collect Stormcloak Signet| |POI|
-N Drakerider's Medallion  |QID|42194.3| |N|Collect Drakerider's Medallion| |POI|
-A Stolen Honor |QID|42194| |N|(npc:106720)| |NPC|106720|
-A Break the Bonds |QID|42650| |N|(npc:106720)| |NPC|106720|
-C Break the Bonds |QID|42650| |N|Throw Svergan's Belongings into the Soul Pyre and complete the Ritual of Unbinding| |POI|
-T Break the Bonds |QID|42650| |N|(npc:106720)| |NPC|106720|
-A Svergan's Promise |QID|42651| |N|(npc:106720)| NPC|106720|
+T The Call of Battle |QID|43750| |N|(npc:107987) in {Skyhold} (55.96, 84.43)| |Z|1035 1| |NPC|107987|
+A The Gjallarhorn |QID|42193| |N|(npc:107987) in {Skyhold} (55.96, 84.43)| |Z|1035 1| |NPC|107987|
+
+R Stormheim |QID|42194| |N|Travel to {Stormheim} (63.89,47.29)| |Z|1017 1|
+T The Gjallarhorn |QID|42193| |N|(npc:106720) in {Stormheim} (60.58,52.10) (62.58,52.11) (63.89,47.29)| |Z|1017 1| |NPC|106720|
+A Stolen Honor |QID|42194| |N|(npc:106720) in {Stormheim} (63.89,47.29)| |Z|1017 1| |NPC|106720|
+K (npc:107401) |QID|42194.3| |N|Kill (npc:107401) and collect (item:137184) (63.83,51.36) | |Z|1017 1| |NPC|107401|
+K (npc:107403) |QID|42194.1| |N|Kill (npc:107403) and collect (item:137182) (69.52,51.56)| |Z|1017 1|  |NPC|107403|
+K (npc:107400) |QID|42194.2| |N|Kill (npc:107400) and collect (item:137183) (69.55,51.05) (73.53,46.15)| |Z|1017 1|  |NPC|107400|
+T Stolen Honor |QID|42194| |N|(npc:106720) in {Stormheim} (63.89,47.29)| |Z|1017 1| |NPC|106720|
+A Break the Bonds |QID|42650| |N|(npc:106720) in {Stormheim} (63.89,47.29)| |Z|1017 1| |NPC|106720|
+C Break the Bonds |QID|42650| |N|Use (item:138204) into the Soul Pyre and complete the Ritual of Unbinding (70.81,38.13)| |POI|
+T Break the Bonds |QID|42650| |N|(npc:106720) (70.85,38.19)| |NPC|106720|
+A Svergan's Promise |QID|42651| |N|(npc:106720)  (70.85,38.19)| |NPC|106720|
 
 R Skyhold |TID|42651| |N|Travel to {Skyhold} (56.2, 83.0)| |Z|1035 1| 
 T Svergan's Promise |QID|42651| |N|(npc:107987) in {Skyhold} (56.2, 83.0)| |Z|1035 1| |NPC|107987|
+A On the Trail of the Great Worm |QID|42107| |N|(npc:107987) in {Skyhold} (56.2, 83.0)| |Z|1035 1| |NPC|107987|
+C On the Trail of the Great Worm |QID|42107| |N|Complete the mission (mission:1284), this is a 1 hour mission (59.21,13.44)|  |Z|1035 1| |POI|
+T On the Trail of the Great Worm |QID|42107| |N|(npc:107987) in {Skyhold} (56.2, 83.0)| |Z|1035 1| |NPC|107987|
+A Champion: Svergan Stormcloak |QID|42614| |N|Speak to (npc:107986) to recruit as a follower (52.03,82.49)| |Z|1035 1| |NPC|107986| |E|
 
 N Level 102 Required |N|You need to be at least level 102 to continue with the class campaign quest line| |PL|102|
 
@@ -170,6 +173,26 @@ C One More Legend |QID|44417| |N|Speak with (npc:96469) to pursue another artifa
 T One More Legend |QID|44417| |N|(npc:96469) in {The Great Mead Hall} (58.4, 83.4)| |Z|1035 1| |NPC|96469| |O|
 
 N Level 103 Required |N|You need to be at least level 103 to continue with the class campaign quest line| |PL|103|
+
+A To the Summit! |QID|42110| |N|(npc:107987) in {Skyhold} (55.96, 84.43)| |Z|1035 1| |NPC|107987|
+
+T To the Summit! |QID|42110| |N|(npc:106271) in {Highmountain} (55.53,57.15) (50.88,64.15) (47.97,69.00) (49.04,69.37) (48.32,70.68) (48.60,74.86) (51.40,73.21) (50.78,76.05) (49.92,79.76) (53.86,87.85)| |Z|1024 0| |NPC|106271
+A Revenge, Served Cold |QID|42202| |N|(npc:106271) in {Highmountain} (53.86,87.85)| |Z|1024 0| |NPC|106271|
+K (npc:106752) |QID|42202.1| |N|Kill (npc:106752) in {Highmountain} (54.13,87.80) (56.54,89.41) (56.80,89.43) (57.34,86.73) (56.86,86.56)| |Z|1024 0| |NPC|106752|
+K (npc:106753) |QID|42202.2| |N|Kill (npc:106753) in {Highmountain} (57.34,86.73) (57.61,87.40) (57.83,90.48) (57.49,92.31) | |Z|1024 0| |NPC|106753|
+C Revenge, Served Cold |QID|42202.3| |N|Kill 8 Frostcrag Drogbars in around the area (57.74,92.31)| |NPC|106109, 106111, 108231| |Z|1024 0| |POI|
+T Revenge, Served Cold |QID|42202| |N|(npc:106271) in {Highmountain} (57.46,92.74) (56.78,92.50) (56.15,89.00) (53.86,87.85)| |Z|1024 0| |NPC|106271|
+A Jorhuttam |QID|42204| |N|(npc:106271) in {Highmountain} (53.86,87.85)| |Z|1024 0| |NPC|106271|
+K (npc:106197) |QID|42204.1| |N|Use (item:139501) to summon and kill (npc:42204) and collect (item:138205) (54.13,87.80) (56.54,89.41)(56.93,92.56)(57.45,93.05) (57.19,93.74)| |U|139501| |Z|1024 0| |NPC|42204|
+
+R Skyhold |TID|42204| |N|Travel to {Skyhold} (55.96, 84.43)| |Z|1035 1|
+T Jorhuttam |QID|42204| |N|(npc:107987) in {Skyhold} (55.96, 84.43)| |Z|1035 1| |NPC|107987|
+
+A Preparing For War |QID|43585| |N|(npc:96469) in {The Great Mead Hall} (58.49, 83.52)| |Z|1035 1| |NPC|96469|
+A Recruiting Shieldmaidens |QID|43975| |N|(npc:100635) in {Skyhold} (59.80, 13.61)| |Z|1035 1| |NPC|100635|
+T Recruiting Shieldmaidens |QID|43975| |N|(npc:106460) in {Skyhold} (55.97,15.00)| |Z|1035 1| |NPC|106460|
+C Preparing For War |QID|43585| |N|Complete (mission:1378), (mission:1379) and (mission:1380) missions.<br/><br/>It will take up to 2 days to complete each mission (59.09,13.50)| |Z|1035 1|
+T Preparing For War |QID|43585| |N|(npc:100635) in {Skyhold} (59.4, 13.6)| |Z|1035 1| |NPC|100635|
 
 N Level 110 Required |N|You need to be at least level 110 to continue with the class campaign quest line| |PL|110|
 

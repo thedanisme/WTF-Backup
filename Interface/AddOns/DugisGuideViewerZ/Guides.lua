@@ -1360,7 +1360,7 @@ function Guides:Initialize()
 					DGV:SafeSetMapQuestId(DGV.qid[guideIndex]);
 				end
 				return
-			elseif DGV:ReturnTag("POI", guideIndex) then 
+			elseif DGV:ReturnTag("POI", guideIndex) and qid and LuaUtils:DugiGetQuestWorldMapAreaID(qid) > 0 then 
 
 				if WorldMapFrame:IsShown() then HideUIPanel(WorldMapFrame) end
 				local m, f = LuaUtils:DugiGetQuestWorldMapAreaID(qid)
