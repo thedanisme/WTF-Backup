@@ -403,9 +403,10 @@ CL_QuestStep1015 = {
 				["Z"] = 1015,
 			},
 			["SetText"] = {
-				"Finnish Bonus Objective:", -- [2]
+				"Finish Bonus Objective:", -- [2]
 				"Retake Faronaar", -- [2]
 			},
+			["LevelCheck"] = 1,
 			["Complete"] = {
 				36811, -- [1]
 			},
@@ -1338,9 +1339,10 @@ CL_QuestStep1015 = {
 				["Z"] = 1015,
 			},
 			["SetText"] = {
-				"Finnish Bonus Objective:", -- [2]
+				"Finish Bonus Objective:", -- [2]
 				"The Broken Academy", -- [2]
 			},
+			["LevelCheck"] = 1,
 			["Complete"] = {
 				37466, -- [1]
 			},
@@ -2121,9 +2123,10 @@ CL_QuestStep1015 = {
 				["Z"] = 1015,
 			},
 			["SetText"] = {
-				"Finnish Bonus Objective:", -- [2]
+				"Finish Bonus Objective:", -- [2]
 				"Tip the Scales", -- [2]
 			},
+			["LevelCheck"] = 1,
 			["Complete"] = {
 				37779, -- [1]
 			},
@@ -2413,9 +2416,10 @@ CL_QuestStep1015 = {
 				["Z"] = 1015,
 			},
 			["SetText"] = {
-				"Finnish Bonus Objective:", -- [2]
+				"Finish Bonus Objective:", -- [2]
 				"A Tainted Vintage", -- [2]
 			},
+			["LevelCheck"] = 1,
 			["Complete"] = {
 				37965, -- [1]
 			},
@@ -2778,9 +2782,10 @@ CL_QuestStep1015 = {
 				["Z"] = 1015,
 			},
 			["SetText"] = {
-				"Finnish Bonus Objective:", -- [2]
+				"Finish Bonus Objective:", -- [2]
 				"Those Beyond Redemtion", -- [2]
 			},
+			["LevelCheck"] = 1,
 			["Complete"] = {
 				37963, -- [1]
 			},
@@ -3615,9 +3620,10 @@ CL_QuestStep1015 = {
 				["Z"] = 1015,
 			},
 			["SetText"] = {
-				"Finnish Bonus Objective:", -- [2]
+				"Finish Bonus Objective:", -- [2]
 				"Plunder the Cove", -- [2]
 			},
+			["LevelCheck"] = 1,
 			["Complete"] = {
 				37495, -- [1]
 			},

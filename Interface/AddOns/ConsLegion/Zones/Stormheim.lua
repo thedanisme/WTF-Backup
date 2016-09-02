@@ -601,9 +601,10 @@ CL_QuestStep1017A = {
 				["Z"] = 1017,
 			},
 			["SetText"] = {
-				"Finnish Bonus Objective:", -- [2]
+				"Finish Bonus Objective:", -- [2]
 				"A Worthy Challengers", -- [2]
 			},
+			["LevelCheck"] = 1,
 			["Complete"] = {
 				38442, -- [1]
 			},
@@ -2688,9 +2689,10 @@ CL_QuestStep1017A = {
 				["Z"] = 1017,
 			},
 			["SetText"] = {
-				"Finnish Bonus Objective:", -- [2]
+				"Finish Bonus Objective:", -- [2]
 				"Rout the Bilgefin Invaders", -- [2]
 			},
+			["LevelCheck"] = 1,
 			["Complete"] = {
 				40111, -- [1]
 			},
@@ -3065,9 +3067,10 @@ CL_QuestStep1017A = {
 				["Z"] = 1017,
 			},
 			["SetText"] = {
-				"Finnish Bonus Objective:", -- [2]
+				"Finish Bonus Objective:", -- [2]
 				"Assault on Skold-Ashil", -- [2]
 			},
+			["LevelCheck"] = 1,
 			["Complete"] = {
 				39119, -- [1]
 			},
@@ -3368,9 +3371,10 @@ CL_QuestStep1017A = {
 				["Z"] = 1017,
 			},
 			["SetText"] = {
-				"Finnish Bonus Objective:", -- [2]
+				"Finish Bonus Objective:", -- [2]
 				"Drive Back the Tideskorn", -- [2]
 			},
+			["LevelCheck"] = 1,
 			["Complete"] = {
 				39998, -- [1]
 			},
@@ -3947,9 +3951,10 @@ CL_QuestStep1022 = {
 				["Z"] = 1022,
 			},
 			["SetText"] = {
-				"Finnish Bonus Objective:", -- [2]
+				"Finish Bonus Objective:", -- [2]
 				"Raze Hel", -- [2]
 			},
+			["LevelCheck"] = 1,
 			["Complete"] = {
 				38343, -- [1]
 			},
@@ -4754,9 +4759,10 @@ CL_QuestStep1017H = {
 				["Z"] = 1017,
 			},
 			["SetText"] = {
-				"Finnish Bonus Objective:", -- [2]
+				"Finish Bonus Objective:", -- [2]
 				"A Worthy Challengers", -- [2]
 			},
+			["LevelCheck"] = 1,
 			["Complete"] = {
 				38442, -- [1]
 			},
@@ -6998,9 +7004,10 @@ CL_QuestStep1017H = {
 				["Z"] = 1017,
 			},
 			["SetText"] = {
-				"Finnish Bonus Objective:", -- [2]
+				"Finish Bonus Objective:", -- [2]
 				"Drive Back the Tideskorn", -- [2]
 			},
+			["LevelCheck"] = 1,
 			["Complete"] = {
 				39998, -- [1]
 			},
@@ -7577,9 +7584,10 @@ CL_QuestStep1022 = {
 				["Z"] = 1022,
 			},
 			["SetText"] = {
-				"Finnish Bonus Objective:", -- [2]
+				"Finish Bonus Objective:", -- [2]
 				"Raze Hel", -- [2]
 			},
+			["LevelCheck"] = 1,
 			["Complete"] = {
 				38343, -- [1]
 			},

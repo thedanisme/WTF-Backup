@@ -371,7 +371,12 @@ function CL_Parser_EventLoop()
 				end
 			end
 		end
-		if (nr1 == nr2 or nr2 > nr1) then
+
+		if (CL_ActiveZone[ConsLegionSteps[CL_tempname][CL_ActiveZoneNr]]["LevelCheck"] and UnitLevel("player") == 110) then
+			CL_GlaiveAnimation = 1
+			ConsLegionSteps[CL_tempname][CL_ActiveZoneNr] = ConsLegionSteps[CL_tempname][CL_ActiveZoneNr] + 1
+			CL_Catchup = CL_Catchup + 1
+		elseif (nr1 == nr2 or nr2 > nr1) then
 			CL_GlaiveAnimation = 1
 			ConsLegionSteps[CL_tempname][CL_ActiveZoneNr] = ConsLegionSteps[CL_tempname][CL_ActiveZoneNr] + 1
 			CL_Catchup = CL_Catchup + 1

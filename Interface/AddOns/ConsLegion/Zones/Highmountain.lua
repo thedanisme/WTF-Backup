@@ -490,9 +490,10 @@ CL_QuestStep1080 = {
 				["Z"] = 1018,
 			},
 			["SetText"] = {
-				"Finnish Bonus Objective:", -- [2]
+				"Finish Bonus Objective:", -- [2]
 				"Defend the Riverlands", -- [2]
 			},
+			["LevelCheck"] = 1,
 			["Complete"] = {
 				39274, -- [1]
 			},
@@ -1821,9 +1822,10 @@ CL_QuestStep1080 = {
 				["Z"] = 1080,
 			},
 			["SetText"] = {
-				"Finnish Bonus Objective:", -- [2]
+				"Finish Bonus Objective:", -- [2]
 				"Echoes of Deathwing", -- [2]
 			},
+			["LevelCheck"] = 1,
 			["Complete"] = {
 				39576, -- [1]
 			},
@@ -2589,9 +2591,10 @@ CL_QuestStep1080 = {
 				["Z"] = 1018,
 			},
 			["SetText"] = {
-				"Finnish Bonus Objective:", -- [2]
+				"Finish Bonus Objective:", -- [2]
 				"Siege of Crawliac", -- [2]
 			},
+			["LevelCheck"] = 1,
 			["Complete"] = {
 				39317, -- [1]
 			},
@@ -3290,9 +3293,10 @@ CL_QuestStep1080 = {
 				["Z"] = 1018,
 			},
 			["SetText"] = {
-				"Finnish Bonus Objective:", -- [2]
+				"Finish Bonus Objective:", -- [2]
 				"Witches of the Sky", -- [2]
 			},
+			["LevelCheck"] = 1,
 			["Complete"] = {
 				39371, -- [1]
 			},
@@ -3703,9 +3707,10 @@ CL_QuestStep1080 = {
 		{
 			["ToDo"] = "CRange",
 			["SetText"] = {
-				"Finnish Bonus Objective:", -- [2]
+				"Finish Bonus Objective:", -- [2]
 				"Vengeance of the Stonedark", -- [2]
 			},
+			["LevelCheck"] = 1,
 			["QuestId"] = 42373,
 			["TT"] = {
 				["Y"] = 5590.4,
@@ -3716,9 +3721,10 @@ CL_QuestStep1080 = {
 		{
 			["ToDo"] = "CRange",
 			["SetText"] = {
-				"Finnish Bonus Objective:", -- [2]
+				"Finish Bonus Objective:", -- [2]
 				"Vengeance of the Stonedark", -- [2]
 			},
+			["LevelCheck"] = 1,
 			["QuestId"] = 42373,
 			["TT"] = {
 				["Y"] = 5639.4,
@@ -3729,9 +3735,10 @@ CL_QuestStep1080 = {
 		{
 			["ToDo"] = "CRange",
 			["SetText"] = {
-				"Finnish Bonus Objective:", -- [2]
+				"Finish Bonus Objective:", -- [2]
 				"Vengeance of the Stonedark", -- [2]
 			},
+			["LevelCheck"] = 1,
 			["QuestId"] = 42373,
 			["TT"] = {
 				["Y"] = 5639.4,
@@ -3746,9 +3753,10 @@ CL_QuestStep1080 = {
 				["Z"] = 1080,
 			},
 			["SetText"] = {
-				"Finnish Bonus Objective:", -- [2]
+				"Finish Bonus Objective:", -- [2]
 				"Vengeance of the Stonedark", -- [2]
 			},
+			["LevelCheck"] = 1,
 			["Complete"] = {
 				42373, -- [1]
 			},
@@ -4610,9 +4618,10 @@ CL_QuestStep1080 = {
 				["Z"] = 1080,
 			},
 			["SetText"] = {
-				"Finnish Bonus Objective:", -- [2]
+				"Finish Bonus Objective:", -- [2]
 				"The Screeching Crag", -- [2]
 			},
+			["LevelCheck"] = 1,
 			["Complete"] = {
 				40316, -- [1]
 			},
@@ -4715,9 +4724,10 @@ CL_QuestStep1080 = {
 				["Z"] = 1018,
 			},
 			["SetText"] = {
-				"Finnish Bonus Objective:", -- [2]
+				"Finish Bonus Objective:", -- [2]
 				"Shipwreck Cove", -- [2]
 			},
+			["LevelCheck"] = 1,
 			["Complete"] = {
 				40050, -- [1]
 			},

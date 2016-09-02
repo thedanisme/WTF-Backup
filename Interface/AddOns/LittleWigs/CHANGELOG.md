@@ -1,8 +1,11 @@
 # LittleWigs
 
-## [v7.0.1-5-gb32bef5](https://github.com/BigWigsMods/LittleWigs/tree/b32bef54e954db3756132975c704ce000217c43b) (2016-09-02) [](#top)
-[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v7.0.1...b32bef54e954db3756132975c704ce000217c43b)
+## [v7.0.2](https://github.com/BigWigsMods/LittleWigs/tree/v7.0.2) (2016-09-02) [](#top)
+[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v7.0.1...v7.0.2)
 
+-   MawOfSouls/Helya: Fix a comment.  
+-   MoS cleanups  
+-   Add Maw of Souls (#3)  
 -   Add Vault of the Wardens  
 -   zhCN/zhTW update. (#4)  
 -   zhCN update.  

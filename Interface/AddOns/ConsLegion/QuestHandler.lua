@@ -119,6 +119,14 @@ function CL_QH_AddQuestFS(clqnumbr)
 	CL_FadeInList[FsNr] = 0
 	CL_QH_PosTest()
 end
+function CL_QH_TrimNumber(CLPName)
+	if (string.find(CLPName, "(.*).(.*)")) then
+		local _, _, CL_First, CL_Rest = string.find(CLPName, "(.*).(.*)")
+		return CL_First
+	else
+		return CLPName
+	end
+end
 function CL_QH_UpdateQuestList()
 	if (WorldMapFrame:IsVisible()) then
 		return
@@ -161,7 +169,7 @@ function CL_QH_UpdateQuestList()
 							CL_ActiveQuests[questID]["Obj"][h] = {}
 						end
 						if (select(2,GetQuestObjectiveInfo(questID, 1, false)) == "progressbar") then
-							CL_ActiveQuests[questID]["Obj"][h]["text"] = GetQuestProgressBarPercent(questID).."/100 " .. text
+							CL_ActiveQuests[questID]["Obj"][h]["text"] = CL_QH_TrimNumber(GetQuestProgressBarPercent(questID)).."/100 " .. text
 						else
 							CL_ActiveQuests[questID]["Obj"][h]["text"] = text
 						end

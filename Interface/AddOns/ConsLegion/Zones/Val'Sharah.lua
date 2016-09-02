@@ -433,9 +433,10 @@ CL_QuestStep1018 = {
 				["Z"] = 1018,
 			},
 			["SetText"] = {
-				"Finnish Bonus Objective:", -- [2]
+				"Finish Bonus Objective:", -- [2]
 				"Defend Moonclaw Vale", -- [2]
 			},
+			["LevelCheck"] = 1,
 			["Complete"] = {
 				39393, -- [1]
 			},
@@ -988,9 +989,10 @@ CL_QuestStep1018 = {
 				["Z"] = 1018,
 			},
 			["SetText"] = {
-				"Finnish Bonus Objective:", -- [2]
+				"Finish Bonus Objective:", -- [2]
 				"Faerie Fracas", -- [2]
 			},
+			["LevelCheck"] = 1,
 			["Complete"] = {
 				38842, -- [1]
 			},
@@ -1588,9 +1590,10 @@ CL_QuestStep1018 = {
 				["Z"] = 1018,
 			},
 			["SetText"] = {
-				"Finnish Bonus Objective:", -- [2]
+				"Finish Bonus Objective:", -- [2]
 				"Hard Hearted Harbringers", -- [2]
 			},
+			["LevelCheck"] = 1,
 			["Complete"] = {
 				38372, -- [1]
 			},
@@ -1905,9 +1908,10 @@ CL_QuestStep1018 = {
 				["Z"] = 1018,
 			},
 			["SetText"] = {
-				"Finnish Bonus Objective:", -- [2]
+				"Finish Bonus Objective:", -- [2]
 				"Defend the Temple", -- [2]
 			},
+			["LevelCheck"] = 1,
 			["Complete"] = {
 				39029, -- [1]
 			},
@@ -2601,9 +2605,10 @@ CL_QuestStep1018 = {
 				["Z"] = 1018,
 			},
 			["SetText"] = {
-				"Finnish Bonus Objective:", -- [2]
+				"Finish Bonus Objective:", -- [2]
 				"Flow of the Nightmare", -- [2]
 			},
+			["LevelCheck"] = 1,
 			["Complete"] = {
 				43241, -- [1]
 			},
@@ -2698,9 +2703,10 @@ CL_QuestStep1018 = {
 				["Z"] = 1018,
 			},
 			["SetText"] = {
-				"Finnish Bonus Objective:", -- [2]
+				"Finish Bonus Objective:", -- [2]
 				"The Ruined Village", -- [2]
 			},
+			["LevelCheck"] = 1,
 			["Complete"] = {
 				38748, -- [1]
 			},
@@ -3304,9 +3310,10 @@ CL_QuestStep1018 = {
 				["Z"] = 1018,
 			},
 			["SetText"] = {
-				"Finnish Bonus Objective:", -- [2]
+				"Finish Bonus Objective:", -- [2]
 				"Black Rook Forces thwarted", -- [2]
 			},
+			["LevelCheck"] = 1,
 			["Complete"] = {
 				38716, -- [1]
 			},
