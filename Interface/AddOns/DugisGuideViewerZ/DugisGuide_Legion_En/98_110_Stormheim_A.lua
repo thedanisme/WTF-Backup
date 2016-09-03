@@ -134,11 +134,11 @@ A Ahead of the Game |QID|39590| |N|(npc:96254) in the {Valley of the Sword} (43.
 K (npc:96229) |QID|39595| |N|Kill (npc:96229) in the {Valley of the Sword} and loot the (item:128511) for a quest (42.95, 47.58)| |Z|1017 0| |NPC|96229| |L|128511|
 A Blood and Gold |QID|39595| |N|Kill (npc:96229) in the {Valley of the Sword} and loot the (item:128511) to start this quest (42.95, 47.58)| |Z|1017 0| |NPC|96229|
 K (npc:90734) |QID|39590.2| |N|Kill (npc:90734) and collect (item:128509) in the {Valley of the Sword} (42.17, 46.06)| |Z|1017 0| |NPC|90734|
-K (npc:90747 |QID|39590.1| |N|Kill (npc:90747) and collect (item:128508) in the {Valley of the Sword} (44.86, 40.70)| |Z|1017 0| |NPC|90747|
+K (npc:90747) |QID|39590.1| |N|Kill (npc:90747) and collect (item:128508) in the {Valley of the Sword} (44.86, 40.70)| |Z|1017 0| |NPC|90747|
 K (npc:96135) |QID|39590.3| |N|Kill (npc:96135) and collect Felskorn Champion's Head in the {Valley of the Sword} (45.20, 48.29)| |Z|1017 0| |NPC|96135|
 C Blood and Gold |QID|39595| |N|Kill (npc:96229), (npc:108283) or (npc:108306) and collect 7 (item:128512) from the {Valley of the Sword} (43.06, 44.04)| |Z|1017 0| |NPC|96229, 108283, 108306| |POI|
-C A Worthy Challenger |QID|38442| |N|Optional: Kill any NPCs and destroy totems in the {Valley of the Sword} to complete this bonus objective (43.67, 45.05)| |Z|1017 0| |OID|43341| -- Bonus Objective
---T A Worthy Challenger |QID|38442| |N|Field Turn-In| |Z|1017 0| |OID|43341| -- Bonus Objective
+C A Worthy Challenger |QID|38442| |N|Optional: Kill any NPCs and destroy totems in the {Valley of the Sword} to complete this bonus objective (43.67, 45.05)| |Z|1017 0| |PL|110| -- Bonus Objective
+--T A Worthy Challenger |QID|38442| |N|Field Turn-In| |Z|1017 0| |PL|110| -- Bonus Objective
 
 R Aggramar's Vault |QID|39590| |N|Travel to {Aggramar's Vault} (46.76, 44.48)| |Z|1017 0|
 T Ahead of the Game |QID|39590| |N|(npc:96175)'s head in {Aggramar's Vault} (46.76, 44.48)| |Z|1017 0| |NPC|96175|
@@ -173,14 +173,14 @@ A Will of the Thorignir |QID|38473| |N|(npc:96254) in the {Valley of the Sword} 
 R Lorna's Watch |QID|38473| |N|Travel to {Lorna's Watch} (42.53, 59.48) (37.42, 63.83)| |Z|1017 0|
 T Will of the Thorignir |QID|38473| |N|(npc:91222) at {Lorna's Watch} (37.42, 63.83)| |Z|1017 0| |NPC|91222|
 A A Grapple a Day |QID|38312| |N|(npc:91222) at {Lorna's Watch} (37.42, 63.83)| |Z|1017 0| |NPC|91222|
-f Lorna's Watch |QID|38312| |N|Grab the flight path for {Lorna's Watch} from (npc:98113) (37.42, 63.95)| |Z|1017 0| |NPC|98113|
+f Lorna's Watch |QID|38318| |N|Grab the flight path for {Lorna's Watch} from (npc:98113) (37.42, 63.95)| |Z|1017 0| |NPC|98113|
 
-R Hrydshal |QID|38312| |N|Travel to {Hrydshal} (41.99, 64.46)| |Z|1017 0|
+R Hrydshal |QID|38318| |N|Travel to {Hrydshal} (41.99, 64.46)| |Z|1017 0|
 T A Grapple a Day |QID|38312| |N|(npc:91481) in {Hrydshal} (41.99, 64.46)| |Z|1017 0| |NPC|91481|
 A No Wings Required |QID|38318| |N|(npc:91481) in {Hrydshal} (41.99, 64.46)| |Z|1017 0| |NPC|91481|
 A To Weather the Storm |QID|38405| |N|(npc:91481) in {Hrydshal} (41.99, 64.46)| |Z|1017 0| |NPC|91481|
 C No Wings Required |QID|38318| |N|Go to the top of the ridge and use the (item:138111) to launch over the wall at {Hrydshal}<br/><br/>Click on the grapple point by the fence, you should see a yellow arrow above it. (42.88, 64.85)| |U|138111| |Z|1017 0|
---A Assault the Drekirjar |QID|38374| |N|Auto Quest (42.88, 64.85)| |Z|1017 0| |OID|43341| -- Bonus Objective
+--A Assault the Drekirjar |QID|38374| |N|Auto Quest (42.88, 64.85)| |Z|1017 0| |PL|110| -- Bonus Objective
 K (npc:91517) |QID|38405.1| |N|Kill (npc:91517) and collect the (item:124038) in {Hrydshal} (43.93, 66.84)| |Z|1017 0| |NPC|91517|
 K (npc:91202) |QID|38337| |N|Kill (npc:91202) and collect (item:122610) in {Hrydshal} to begin a quest (45.43, 66.63)| |Z|1017 0| |NPC|91202| |L|124038|
 N (item:122686) |QID|38405.3| |N|Collect (item:122686) hanging on the pillar in {Hrydshal} (45.63, 66.61)| |Z|1017 0|
@@ -332,7 +332,7 @@ A Breaking the Bonespeakers |QID|38816| |N|(npc:93446) in the {Field of Fallen K
 
 R Haustvald |QID|38823| |N|Travel to {Haustvald} (69.77, 45.73)| |Z|1017 0|
 A The Runes that Bind |QID|38823| |N|Rune-Carved Tablet in {Haustvald} (69.77, 45.73)| |Z|1017 0|
-N As you go... |AYG|38823| |N||Collect 8 (item:124512) from the ground in {Haustvald}| |QID|38816| |Z|1017 0|
+N As you go... |AYG|38823| |N|Collect 8 (item:124512) from the ground in {Haustvald}| |QID|38817| |Z|1017 0|
 C The Runes that Bind |QID|38823| |N|Destroy the Ritual Stones in each waypoint to stop the rituals binding Ashildir's spirit in {Haustvald} (69.54, 42.02) (71.46, 45.12) (72.96, 43.93)| |Z|1017 0|
 C Regal Remains |QID|38817| |N|Collect 8 (item:124512) in {Haustvald} (72.93, 43.85)| |Z|1017 0|
 C Breaking the Bonespeakers |QID|38816| |N|Defeat 15 (npc:93071) or (npc:108940) in {Haustvald} (70.78, 42.21)| |Z|1017 0| |NPC|93071, 108940|
@@ -406,7 +406,7 @@ A Stem the Tide |QID|40003| |N|(npc:97979) at the {Felskorn Warcamp} (65.82, 59.
 A Break the Spine |QID|40004| |N|(npc:97979) at the {Felskorn Warcamp} (65.82, 59.43)| |Z|1017 0| |NPC|97979|
 
 R Gates of Valor |QID|40003| |N|Travel to the {Gates of Valor} (64.74, 60.86)| |Z|1017 0|
---A Drive Back the Tideskorn |QID|39998| |N|Auto Quest (64.74, 60.86)| |Z|1017 0| |OID|43341| -- Bonus Objective
+--A Drive Back the Tideskorn |QID|39998| |N|Auto Quest (64.74, 60.86)| |Z|1017 0| |PL|110| -- Bonus Objective
 N North Portal |QID|40003.1| |N|Use the (item:129161) and destroy the North Portal in the {Gates of Valor} (70.00, 63.80)| |U|129161|  |Z|1017 0|
 K (npc:97942) |QID|40004.4| |N|Kill (npc:97942) in the {Gates of Valor} (70.83, 64.65)| |Z|1017 0| |NPC|97942|
 N East Portal |QID|40003.2| |N|Use the (item:129161) and destroy the East Portal in the {Gates of Valor} (69.36, 66.40)| |U|129161| |Z|1017 0|
@@ -420,7 +420,7 @@ A Stormheim's Salvation |QID|40005| |N|(npc:97986) in the {Gates of Valor} (70.1
 C Stormheim's Salvation |QID|40005| |N|Speak to (npc:97979) and he will fly you up to the top of the citadel. Defeat (npc:92307) in the {Gates of Valor} (70.24, 69.37) (70.24, 70.84)| |Z|1017 0| |NPC|92307| |V|
 T Stormheim's Salvation |QID|40005| |N|(npc:97988) in the {Gates of Valor} (70.20, 69.21)| |Z|1017 0| |NPC|97988|
 A Securing the Aegis |QID|40072| |N|(npc:97988) in the {Gates of Valor} (70.20, 69.21)| |Z|1017 0| |NPC|97988|
-C Drive Back the Tideskorn |QID|39998| |N|Kill demons and destroy the portals in {Gates of Valor} to complete this bonus objective (63.66, 59.39)| |Z|1017 0| |OID|43341| -- Bonus Objective
+C Drive Back the Tideskorn |QID|39998| |N|Kill demons and destroy the portals in {Gates of Valor} to complete this bonus objective (63.66, 59.39)| |Z|1017 0| |PL|110| -- Bonus Objective
 --T Drive Back the Tideskorn |QID|39998| |N|Field Turn-In| |Z|1017 0|
 
 R Greywatch |QID|39059| |N|Speak to (npc:94346) (59.99, 51.33) and fly to {Greywatch} (71.55, 59.81)| |Z|1017 0|
@@ -445,7 +445,7 @@ A To Skold-Ashil |QID|39062| |N|(npc:94318) in {Greywatch} (71.51, 59.88)| |Z|10
 
 R Crowley's Overlook |QID|39062| |N|Travel to {Crowley's Overlook} (63.57, 61.80)| |Z|1017 0|
 T To Skold-Ashil |QID|39062| |N|(npc:93779) in {Crowley's Overlook} (63.57, 61.80)| |Z|1017 0| |NPC|93779|
---A Assault on Skold-Ashil |QID|39119| |N|Auto Quest (63.57, 61.80)| |Z|1017 0| |OID|43341| -- Bonus Objective
+--A Assault on Skold-Ashil |QID|39119| |N|Auto Quest (63.57, 61.80)| |Z|1017 0| |PL|110| -- Bonus Objective
 A Shielded Secrets |QID|39063| |N|(npc:93779) in {Crowley's Overlook} (63.57, 61.80)| |Z|1017 0| |NPC|93779|
 
 R Skold-Ashil |QID|39405| |N|Travel to {Skold-Ashil} (63.46, 64.67)| |Z|1017 0|
@@ -460,8 +460,8 @@ N Eyir's Spear |QID|39092.4| |N|Collect Eyir's Spear in {Skold-Ashil} (61.31, 66
 N Eyir's Helm |QID|39092.1| |N|Collect Eyir's Helm in {Skold-Ashil} (61.33, 69.49)| |Z|1017 0|
 N Eyir's Pauldron |QID|39092.2| |N|Collect Eyir's Pauldron in {Skold-Ashil} (60.48, 69.47)| |Z|1017 0|
 N Commune with the Statue |QID|39092.5| |N|Commune with the Statue in {Skold-Ashil} (61.70, 68.11)| |Z|1017 0|
-C Assault on Skold-Ashil |QID|39119| |N|Kill NPCs and destroy weapon racks in {Skold-Ashil} (61.70, 68.11)| |Z|1017 0| |OID|43341| -- Bonus Objective
---T Assault on Skold-Ashil |QID|39119| |N|Field Turn-In| |Z|1017 28| |OID|43341| -- Bonus Objective
+C Assault on Skold-Ashil |QID|39119| |N|Kill NPCs and destroy weapon racks in {Skold-Ashil} (61.70, 68.11)| |Z|1017 0| |PL|110| -- Bonus Objective
+--T Assault on Skold-Ashil |QID|39119| |N|Field Turn-In| |Z|1017 28| |PL|110| -- Bonus Objective
 T Becoming the Ascendant |QID|39092| |N|(npc:95804) in {Stormheim} (62.28, 68.03)| |Z|1017 0| |NPC|95804|
 A Ending the New Beginning |QID|39122| |N|(npc:95804) in {Stormheim} (62.28, 68.03)| |Z|1017 0| |NPC|95804|
 C Ending the New Beginning |QID|39122| |N|Confront (npc:90709) in {Vault of Eyir} (40.63, 51.42)| |Z|1017 28| |NPC|90709|
@@ -472,7 +472,7 @@ N Optional Quests |N|The following quests are optional side quests for the achie
 R Nastrondir |QID|39793| |N|Travel to {Nastrondir} (44.56, 48.95) (41.21, 41.24) (45.57, 37.98)| |Z|1017 0|
 C Only the Finest |QID|39793| |N|Collect 18 (item:138021) from (npc:97828) in {Nastrondir} (43.62, 29.51)| |Z|1017 0| |NPC|97828|
 C Rigging the Wager |QID|39787| |N|Lure down and defeat (npc:97124) to collect (item:138022) in {Nastrondir} (46.73, 32.58) (46.98, 36.79) (48.50, 32.96)| |Z|1017 0| |NPC|97124|
-C The Brood of Nithogg |QID|42431| |N|Kill Storm Drakes and destroy Drake Eggs in {Stormtorn Foothills} to complete this bonus objective (48.88, 37.99)| |Z|1017 0| |OID|43341| -- Bonus Objective
+C The Brood of Nithogg |QID|42431| |N|Kill Storm Drakes and destroy Drake Eggs in {Stormtorn Foothills} to complete this bonus objective (48.88, 37.99)| |Z|1017 0| |PL|110| -- Bonus Objective
 
 R Stormtorn Foothills |QID|42444| |N|Travel to {Stormtorn Foothills} (50.28, 34.04)| |Z|1017 0|
 A Plight of the Blackfeather |QID|42444| |N|(npc:107499) in {Stormtorn Foothills} (50.28, 34.04)| |Z|1017 0| |NPC|107499|
@@ -504,10 +504,10 @@ R Talonrest  |QID|39786| |N|Travel to {Talonrest} (52.00, 63.76) (53.54, 62.91) 
 T A Stone Cold Gamble |QID|39786| |N|(npc:107674) in {Talonrest} (51.35, 57.30)| |Z|1017 0| |NPC|107674|
 T A Stack of Racks |QID|39792| |N|(npc:107675) in {Talonrest} (51.31, 57.16)| |Z|1017 0| |NPC|107675|
 A Put It All on Red |QID|42483| |N|(npc:107674) in {Talonrest} (51.33, 57.27)| |Z|1017 0| |NPC|107674|
-C Put It All on Red |QID|42483| |N|Kill (npc:107917) and collect (item:138024) in {Citrine Bay}| |Z|1017 0| |NPC|107674| |POI|
+C Put It All on Red |QID|42483| |N|Kill (npc:107917) and collect (item:138024) in {Citrine Bay}. This quest is hard to solo.| |Z|1017 0| |NPC|107674| |POI|
 T Put It All on Red |QID|42483| |N|(npc:107674) in {Talonrest} (51.33, 57.27)| |Z|1017 0| |NPC|107674|
 
-N Switch Guide |N|Switch to (guide:"1041(98-110)#1041(98-110)#1041(98-110)") to complete (qid:40072)| |QID|40072|
+N Switch Guide |N|Switch to (guide:"1041(98-110)") to complete (qid:40072)| |QID|40072|
 
 N Guide Complete 
 

@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0008,
+	["LastVersion"] = 2.0009,
 	["LastPlayerFullName"] = "Yanlery-Stormrage",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,

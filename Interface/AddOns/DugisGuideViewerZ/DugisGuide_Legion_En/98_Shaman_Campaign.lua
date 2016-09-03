@@ -57,7 +57,7 @@ C (npc:64528) |SID|34394|3| |N|Speak with (npc:64528) to begin the battle at the
 K (npc:100308) |SID|29284|3| |N|Defeat (npc:100308) at the {Temple of the White Tiger} (66.76, 51.73)| |Z|809 0| |NPC|100308| |PRE|43334| |QID|39771|
 K (npc:100307) |SID|29283|3| |N|Defeat (npc:100307) at the {Temple of the White Tiger} (66.65, 51.68)| |Z|809 0| |NPC|100307| |PRE|43334| |QID|39771|
 --N Fist of Ra-den |QID|39771.2| |N|Acquire the (item:128935) at the {Temple of the White Tiger} (68.79, 43.71)| |Z|809 0| |PRE|43334|
-C Weapons of the Storm |SID|29366|4| |N|Collect  the (item:128935)  at the {Temple of the White Tiger} (68.81, 43.69)| |Z|809 0| |PRE|43334| |QID|39771|
+C Weapons of the Storm |SID|29366|4| |N|Collect the (item:128935) at the {Temple of the White Tiger} (68.81, 43.69)| |Z|809 0| |PRE|43334| |QID|39771|
 K (npc:101578) |SID|29531|5| |N|Kill the (npc:101578), then kill (npc:100546) at the {Temple of the White Tiger} (68.56, 43.81)| |Z|809 0| |NPC|101578, 100546| |PRE|43334| |QID|39771|
 R The Maelstrom |QID|39771.3| |N|Take the portal at the {Temple of the White Tiger} and return to the {Maelstrom} (68.79, 43.70)| |Z|809 0| |PRE|43334|
 T The Voice of Thunder |QID|39771| |N|(npc:96541) at the {Storm's Eye Overlook} (33.48, 74.77)| |Z|1057 0| |NPC|96541| |PRE|43334|
@@ -81,7 +81,7 @@ R The Pale Roost |QID|42936| |N|Travel to {The Pale Roost} (46.05, 13.81)| |Z|64
 N Opalescent Guardian |QID|42936.1| |N|Rebuild 5 (npc:109348) in {The Pale Roost} (46.05, 13.81)| |Z|640 0| |NPC|109348| |PRE|42931|
 C Stone Drake Rescue |QID|42935| |N|Save 6 (npc:109298) in {The Pale Roost} (41.79, 15.76)| |Z|640 0| |NPC|109298| |PRE|42931|
 C Clutch Play |QID|42936.2| |N|Escort 5 (npc:109365) to (npc:109385) in {The Pale Roost} (31.31, 20.82)| |Z|640 0| |NPC|109365, 109385| |PRE|42931|
-K Felrock Beast Tamer or Felrock Mystic |QID|42933| |N|Kill 25 (npc:109302) or (npc:109299) in {The Pale Roost} (41.79, 15.76)| |Z|640 0| |NPC|109302,109299|  |PRE|42931|
+K Felrock Beast Tamer or Felrock Mystic |QID|42933| |N|Kill 25 (npc:109302) or (npc:109299) in {The Pale Roost} (41.79, 15.76)| |Z|640 0| |NPC|109302,109299| |PRE|42931|
 
 R Therazane's Throne |QID|42933| |N|Travel to {Therazane's Throne} (56.21, 12.25)| |Z|640 0| |PRE|42931|
 T The Troggs that Fel to Earth |QID|42933| |N|(npc:42465) at {Therazane's Throne} (56.21, 12.25)| |Z|640 0| |NPC|42465| |PRE|42931|
@@ -169,13 +169,13 @@ N Stormheim |TID|44700| |N|Switch to (guide:"1017(98-110)#1017(98-110)#1017(98-1
 
 N Level 101 Required |N|You need to be at least level 101 to continue with the class campaign quest line| |PL|101|
 
-A Call of the Earthen Ring |QID|44544| |O| |OID|44544|
-T Call of the Earthen Ring |QID|44544| |N|(npc:96528) in {The Heart of Azeroth} (30.39, 51.70)| |Z|1057 0| |NPC|96528| |O| |OID|44544|
+A Call of the Earthen Ring |QID|44544| |N|(npc:114274) will appear next to you in {Dalaran} (58.64,45.82)| |Z|1014 10| |NPC|114274| |OID|44544| 
+T Call of the Earthen Ring |QID|44544| |N|(npc:96528) in {The Heart of Azeroth} (30.39, 51.70)| |Z|1057 0| |NPC|96528| |OID|44544|
 A Rise, Champions |QID|44544| |N|(npc:96528) in {The Heart of Azeroth} (30.39, 51.70)| |Z|1057 0| |NPC|96528|
 C Rise, Champions |QID|44544| |N|Recruit Stormcaller Mylra and Duke Hydraxis.| |Z|1057 0| |NPC|96746|
 T Rise, Champions |QID|44544| |N|(npc:96746) in {The Heart of Azeroth} (32.98, 60.39)| |Z|1057 0| |NPC|96746|
 A Summoner Morn |QID|42141| |N|(npc:96746) in {The Heart of Azeroth} (32.98, 60.39)| |Z|1057 0| |NPC|96746|
-C Summoner Morn |QID|42141| |N|Use the Scouting Map and complete the mission, (mission;900). This is a 2 minutes mission | |Z|1057 0| |NPC|96746| |POI|
+C Summoner Morn |QID|42141| |N|Use the Scouting Map and complete the mission, (mission;900). This is a 2 minutes mission (33.49,59.35)| |Z|1057 0| |NPC|96746| |POI|
 T Summoner Morn |QID|42141| |N|(npc:96746) in {The Heart of Azeroth} (32.98, 60.39)| |Z|1057 0| |NPC|96746|
 A Recruiting The Troops |QID|42142| |N|(npc:96746) in {The Heart of Azeroth} (32.98, 60.39)| |Z|1057 0| |NPC|96746|
 C Recruiting The Troops |QID|42142| |N|Speak to (npc:106457) and summon a Lesser Elemental (30.6, 58.6)| |Z|1057 0| |NPC|106457|
@@ -187,7 +187,7 @@ A Tech It Up A Notch |QID|41740| |N|(npc:96746) in {The Heart of Azeroth} (32.98
 C Tech It Up A Notch |QID|41740| |N|Speak to (npc:112199) and select a class hall upgrade in {The Heart of Azeroth} (33.0, 58.2)| |Z|1057 0| |NPC|96746|
 T Tech It Up A Notch |QID|41740| |N|(npc:96746) in {The Heart of Azeroth} (32.98, 60.39)| |Z|1057 0| |NPC|96746|
 A Mission: Elemental Diplomacy |QID|42184| |N|(npc:96746) in {The Heart of Azeroth} (32.98, 60.39)| |Z|1057 0| |NPC|96746|
-C Mission: Elemental Diplomacy |QID|42184| |N|Successfully complete the (mission:884). This is a 1 hour mission| |POI|
+C Mission: Elemental Diplomacy |QID|42184| |N|Successfully complete the (mission:884). This is a 1 hour mission (33.49,59.35)| |Z|1057 0|
 T Mission: Elemental Diplomacy |QID|42184| |N|(npc:96746) in {The Heart of Azeroth} (32.98, 60.39)| |Z|1057 0| |NPC|96746|
 
 N Level 102 Required |N|You need to be at least level 102 to continue with the class campaign quest line| |PL|102|
@@ -206,14 +206,61 @@ T Your Fullest Potential |QID|44006| |N|(npc:99531) in {Storm's Eye Overlook} (3
 
 N Level 103 Required |N|You need to be at least level 103 to continue with the class campaign quest line| |PL|103|
 
---A The Skies Above
---A Recharging the Blade
+A Servant of the Windseeker |QID|42977| |N|(npc:96746) in {The Heart of Azeroth} (32.98, 60.39)| |Z|1057 0| |NPC|96746|
+
+R Silithus |QID|42977| |N|(npc:14347) in {Silithus} (29.62,10.52)| |Z|261 0| |NPC|14347|
+T Servant of the Windseeker |QID|42977| |N|(npc:14347) in {Silithus} (29.62,10.52)| |Z|261 0| |NPC|14347|
+A Blessed Blade of the Windseeker |QID|43002| |N|(npc:14347) in {Silithus} (29.62,10.52)| |Z|261 0| |NPC|14347|
+
+R Azsuna |N|Travel to {Azsuna} (43.30,44.95)| |Z|1015 0|
+Locate Thunderfury |QID|43002.1| |N|Locate (item:139000) inside the cave (43.30,44.95) (39.70,49.89) (38.51,54.01) (36.32,50.27) (34.61,49.73) (32.73,48.83)| |Z|1015 0|
+N (item:139000) |QID|43002.2| |N|Collect (item:139000) (32.73,48.83|
+
+R The Maelstrom |QID|44153| |N|Travel to {The Maelstrom} (32.50,32.87)| |Z|1057 0|
+T Light's Charge |QID|44153| |N|Light's Heart {The Maelstrom} (32.50,32.87)| |Z|1057 0|
+T Blessed Blade of the Windseeker |QID|43002| |N|(npc:96746) in {The Heart of Azeroth} (32.98, 60.39)| |Z|1057 0| |NPC|96746|
+A The Skies Above |QID|41770| |N|(npc:96746) in {The Heart of Azeroth} (32.98, 60.39)| |Z|1057 0| |NPC|96746|
+
+R The Vortex Pinnacle |QID|41770.1| |N|Take the {The Vortex Pinnacle} portal (30.96,47.47) (26.70,41.37)| |Z|1057 0| |F|1070 1|
+T The Skies Above |QID|41770| |N|(npc:104797) in {The Vortex Pinnacle} (55.20,18.45)| |Z|1070 1| |NPC|104797|
+A Recharging the Blade |QID|41771| |N|(npc:104797) in {The Vortex Pinnacle} (55.20,18.45)| |Z|1070 1| |NPC|104797|
+K (npc:104751) |QID|41771.1| |N|Kill (npc:104751) and collect (item:135589) (62.91,28.66) (61.97,34.31) (54.68,45.23)| |Z|1070 1| |NPC|104751|
+N Recharge Thunderfury |QID|41771.2| |N|Use (item:135589) to recharge Thunderfury (54.68,45.23)| |Z|1070 1| |U|135589|
+N Take the Slipstream to Nimbus Rise |QID|41771.3| |N|Click on Slipstream to go to {Nimbus Rise} (57.68,49.00)| |Z|1070 1| |V|
+T Recharging the Blade |QID|41771| |N|(npc:113340) in {Nimbus Rise} (52.11,81.92)| |Z|1070 1| |NPC|113340|
+A Return of the Windlord |QID|41776| |N|(npc:113340) in {Nimbus Rise} (52.11,81.92)| |Z|1070 1| |NPC|113340|
+N (npc:104788) |QID|41776.1| |N|Summon (npc:104788) and watch the dialogue (52.02,81.87)| |Z|1070 1| |NPC|104788|
+T Return of the Windlord |QID|41776| |N|(npc:104788) in {Nimbus Rise} (52.40,79.34)| |Z|1070 1| |NPC|104788|
+A Oath of the Windlord |QID|41901| |N|(npc:104788) in {Nimbus Rise} (52.40,79.34)| |Z|1070 1| |NPC|104788|
+
+R The Heart of Azeroth |QID|42986| |N|Travel to {The Heart of Azeroth} (32.98, 60.39)| |Z|1057 0|
+T Oath of the Windlord |QID|41901| |N|(npc:96746) in {The Heart of Azeroth} (32.98, 60.39)| |Z|1057 0| |NPC|96746|
+A Enemies of Air |QID|42986| |N|(npc:96746) in {The Heart of Azeroth} (32.98, 60.39)| |Z|1057 0| |NPC|96746|
+A The Maelstrom Pillar: Air |QID|42996| |N|(npc:96746) in {The Heart of Azeroth} (32.98, 60.39)| |Z|1057 0| |NPC|96746|
+A Recruiting Earthcallers |QID|44465| |N|(npc:96746) in {The Heart of Azeroth} (32.98, 60.39)| |Z|1057 0| |NPC|96746|
+
+N As you go... |AYG|42984| |N|Complete 4 "Thunderaan's Enemies" Mission, each mission will take 8 hours to complete| |QID|42986|
+A Champion: Celestos |QID|41742| |N|Speak to (npc:106521) to recruit as follower (28.21,45.00)| |Z|1057 0| |E| |NPC|106521|
+T Recruiting Earthcallers |QID|44465| |N|(npc:112208) in {The Heart of Azeroth} (29.25,42.75)| |Z|1057 0| |NPC|112208|
+T The Maelstrom Pillar: Air |QID|42996| |N|(npc:109464) in {The Heart of Azeroth} (29.42,77.92)| |Z|1057 0| |NPC|109464|
+A Mistral Essence |QID|42983| |N|(npc:109464) in {The Heart of Azeroth} (29.42,77.92)| |Z|1057 0| |NPC|109464|
+
+R The Vortex Pinnacle |QID|42983| |N|Use the portal to go to {The Vortex Pinnacle} (29.49,70.42) (30.96,47.47) (26.70,41.34)| |Z|1057 0|
+N (item:138994) |QID|42983.1| |N|100 (item:138994) from any enemies in the area (56.88,22.27)| |Z|1070 1| |POI|
+
+R The Maelstrom |QID| |N|Travel to {The Maelstrom} (29.42,57.47)| |Z|1057 0|
+T Mistral Essence |QID|42983| |N|(npc:109464) in {The Heart of Azeroth} (29.42,77.92)| |Z|1057 0| |NPC|109464|
+A The Scepter of Storms |QID|42984| |N|(npc:109464) in {The Heart of Azeroth} (29.42,77.92)| |Z|1057 0| |NPC|109464|
+N Switch Guide |N|Switch guide to (guide:"1046(98-110)") and complete it to kill (npc:91789) and collect the (item:138995) for the quest (qid:42984)<br/><br>Make sure you complete the entire dungeon and kill (npc:96028) to complete the quest| |QID|42984|
+T The Scepter of Storms |QID|42984| |N|(npc:109464) in {The Heart of Azeroth} (29.42,77.92)| |Z|1057 0| |NPC|109464|
+C Enemies of Air |QID|42986| |N|Complete 4 "Thunderaan's Enemies" Mission, each mission will take 8 hours to complete (33.51,59.34)| |Z|1057 0|
+T Enemies of Air |QID|42986| |N|(npc:96746) in {The Heart of Azeroth} (32.98, 60.39)| |Z|1057 0| |NPC|96746|
+A Mission: Investigating Deepholm |QID|42200| |N|(npc:96746) in {The Heart of Azeroth} (32.98, 60.39)| |Z|1057 0| |NPC|96746|
+A Champion: Nobundo |QID|41743 |instant| |N|Speak to (npc:106519) to recruit as a follower (30.25,51.54)| |Z|1057 0| |NPC|106519| |E|
+C Mission: Investigating Deepholm |QID|42200| |N|Complete the (mission:885) mission, itwill take 8 hours to complete (33.51,59.34)|| |Z|1057 0| |NPC|96746|
+T Mission: Investigating Deepholm |QID|42200| |N|(npc:96746) in {The Heart of Azeroth} (32.98, 60.39)| |Z|1057 0| |NPC|96746|
 
 N Level 110 Required |N|You need to be at least level 110 to continue with the class campaign quest line| |PL|110|
-
---A The Firelord's Command |QID|41773| |N|
---A The Brand of Damnation |QID|41934| |N|
---A Allegiance of Flame |QID|41888| |N|
 
 N Guide Complete
 

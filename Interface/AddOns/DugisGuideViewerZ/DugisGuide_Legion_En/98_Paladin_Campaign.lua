@@ -281,8 +281,6 @@ T Translation: Danger! |QID|43535| |N|(npc:90251) in {Armory of the Silver Hand}
 
 N Level 110 Required |N|You need to be at least level 110 to continue with the class campaign quest line| |PL|110|
 
---Hitting the Books##43883 |goto 37.69,57.12
-
 N Guide Complete
 
 ]]

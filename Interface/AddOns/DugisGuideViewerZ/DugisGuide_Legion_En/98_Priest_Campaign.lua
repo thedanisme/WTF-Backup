@@ -196,7 +196,6 @@ T The Third Legend |QID|44407| |N|(npc:110564) in {The Hall of Balance} (51.0, 4
 
 N Level 103 Required |N|You need to be at least level 103 to continue with the class campaign quest line| |PL|103|
 
-talk Alonsus Faol |QID|110564
 A Whispers in the Void |QID|43372| |N|(npc:110564) in {The Hall of Balance} (51.0, 48.0)| |Z|1040 1| |NPC|110564| 
 N (npc:110691) |QID|43372| |N|Speak to (npc:110691) in {The Hall of Balance} (19.96,41.78)| |Z|1040 1| |NPC|110691| 
 T Whispers in the Void |QID|43372| |N|(npc:110564) in {The Hall of Balance} (51.0, 48.0)| |Z|1040 1| |NPC|110564| 
@@ -208,7 +207,7 @@ T The Best and Brightest |QID|43373| |N|(npc:110686) in {Azsuna}  (63.36,33.82) 
 A Murloc Mind Control |QID|43374| |N|(npc:110686) in {Azsuna}  (58.54,37.17)| |Z|1015 0| |NPC|110686|
 A An Ample Supply |QID|43375| |N|(npc:110686) in {Azsuna}  (58.54,37.17)| |Z|1015 0| |NPC|110686|
 C Murloc Mind Control |QID|43374| |N|Use (spell:605) on a (npc:88099) and then use the (spell:220326) ability to rescue (npc:112487) from the murlocs within  {El'dranil Shallows}  (50.47,36.13)| |Z|1015 0| |NPC|110686|
-C An Ample Supply |QID|43375| N|Collect 12 (item:139458) from the supply crates around this area (50.12,36.33)| |POI|
+C An Ample Supply |QID|43375| N|Collect 12 (item:139458) from the supply crates around this area (50.12,36.33)| |Z|1015 0| |POI|
 
 T An Ample Supply |QID|43375| |N|(npc:110686) in {Azsuna}  (58.54,37.17)| |Z|1015 0| |NPC|110686|
 T Murloc Mind Control |QID|43374| |N|(npc:112487) in {Azsuna}  (58.56,37.11)| |Z|1015 0| |NPC|112487| 
@@ -218,6 +217,7 @@ T Problem Salver |QID|43376| |N|(npc:110687) in {Azsuna} (47.11,43.99)| |Z|1015 
 A Champion: Yalia Sagewhisper |QID|42137| |N|Speak to (npc:110687) to recruit as a follower in {Azsuna} (47.11,43.99)| |Z|1015 0| |NPC|110687| |E|
 A Champion: Zabra Hexx |QID|42138| |N|Speak to (npc:110686) to recruit as a follower in {Azsuna} (47.18,43.99)| |Z|1015 0| |NPC|110686| |E|
 A Looking Through the Lens |QID|43378| |N|(npc:110687) in {Azsuna} (47.11,43.99)| |Z|1015 0| |NPC|110687| 
+
 N Switch Guide |N|Switch to (guide:"1046(98-110)") and complete it to kill (npc:96028) for the quest (qid:43378)| |QID|43378|
 T Looking Through the Lens |QID|43378| |N|(npc:110557) in {The Hall of Balance} (47.81,47.52)| |Z|1040 1| |NPC|110564|
 A Velen's Vision |QID|43379| |N|(npc:110557) in {The Hall of Balance} (47.81,47.52)| |Z|1040 1| |NPC|110557|

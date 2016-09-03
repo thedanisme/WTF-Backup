@@ -1,8 +1,12 @@
 # BigWigs
 
-## [v8-12-g61b7635](https://github.com/BigWigsMods/BigWigs/tree/61b76353bb59fa016b801a0aa9018b2148ce552c) (2016-09-03) [](#top)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v8...61b76353bb59fa016b801a0aa9018b2148ce552c)
+## [v8-16-g84713d9](https://github.com/BigWigsMods/BigWigs/tree/84713d9fb67870c7d239fdf25d7f68e199580251) (2016-09-03) [](#top)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v8...84713d9fb67870c7d239fdf25d7f68e199580251)
 
+-   Update deDE (#20)  
+-   Update deDE (#21)  
+-   Colors: Fix color wrapper.  
+-   frFR Update (#19)  
 -   update authors  
 -   Remove SVN comment  
 -   Pull: Fix options  

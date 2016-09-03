@@ -217,45 +217,37 @@ A An Unlikely Ally |QID|41759| |N|(npc:101097) in {Dreadscar Rift} (37.25, 31.03
 
 T An Unlikely Ally |QID|41759| |N|(npc:105816) in {Azuna} (60.8, 30.6)| |Z|1015 0| |NPC|105816|
 A Bloodstone Bandit |QID|39179| |N|(npc:105816) in {Azuna} (60.8, 30.6)| |Z|1015 0| |NPC|105816|
-C Bloodstone Bandit |QID|39179| |N|Recover Kira's (item:136386) from (npc:104878) in {Azuna}| |Z|1015 0| |NPC|104878| |POI|
-T Bloodstone Bandit |QID|39179| |N|(npc:105816) in {Azuna} (60.8, 30.6)| |Z|1015 0| |NPC|105816|
+C Bloodstone Bandit |QID|39179| |N|Kill (npc:104878) and collect Kira's (item:136386) in {Azuna} (60.85,34.67) (64.03,34.83) (66.25,38.80) (66.91,44.19) (64.39,44.29)| |Z|1015 0| |NPC|104878|
+T Bloodstone Bandit |QID|39179| |N|(npc:105816) in {Azuna} (65.14,38.79) (63.55,34.64) (61.36,33.59) (60.8, 30.6)| |Z|1015 0| |NPC|105816|
 A It Hungers for Blood |QID|39389| |N|(npc:105816) in {Azuna} (60.8, 30.6)| |Z|1015 0| |NPC|105816|
-C It Hungers for Blood |QID|39389| |N|Use the (item:136386) on demons in {Felblaze Ingress}| |Z|1015 0| |POI
+C It Hungers for Blood |QID|39389| |N|Use the (item:136386) on demons to feed the Bloodstone in {Felblaze Ingress} (65.24,29.30)| |Z|1015 0|
 T It Hungers for Blood |QID|39389| |N|(npc:105816) in {Azuna} (60.8, 30.6)| |Z|1015 0| |NPC|105816|
 A Testing a Theory |QID|39142| |N|(npc:105816) in {Azuna} (60.8, 30.6)| |Z|1015 0| |NPC|105816|
 C Testing a Theory |QID|39142| |N|Use the (item:136386) on an (npc:109252)| |Z|1015 0| |NPC|105816| |POI| |NPC|109252|
 T Testing a Theory |QID|39142| |N|(npc:105816) in {Azuna} (60.8, 30.6)| |Z|1015 0| |NPC|105816|
 A Debt Repaid |QID|40218| |N|(npc:105816) in {Azuna} (60.8, 30.6)| |Z|1015 0| |NPC|105816|
 
+R Dreadscar Rift |TID|40218| |N|Travel to {Dreadscar Rift} (55.4, 37.6)| |Z|1050 0| |NPC|105018|
 T Debt Repaid |QID|40218| |N|(npc:105018) in {Dreadscar Rift} (55.4, 37.6)| |Z|1050 0| |NPC|105018|
 A A Daring Rescue |QID|41767| |N|(npc:105018) in {Dreadscar Rift} (55.4, 37.6)| |Z|1050 0| |NPC|105018|
-N (npc:105817) |QID|41767.1| |N|Speak to (npc:105018) in {Dreadscar Rift}| |Z|1050 0| |NPC|105018| |POI|
-N Use The Demonic Gateway |QID|41767.2| |N|Enter the demonic gateway| |Z|1050 0| |POI|
-N (npc:98775) |QID|41767.3| |N|Rescue (npc:98775) in {Dreadscar Rift}| |NPC|98775| |POI|
-N (npc:98793) |QID|41767.4| |N|Rescue (npc:98793) in {Dreadscar Rift}| |NPC|98793| |POI|
-N (npc:98783) |QID|41767.5| |N|Rescue (npc:98783) in {Dreadscar Rift}| |NPC|98783| |POI|
+N (npc:105817) |QID|41767.1| |N|Speak to (npc:105018) in {Dreadscar Rift} (55.67,34.68)| |Z|1050 0| |NPC|105018|
+
+R Niskara |QID|41767.2| |N|Enter the demonic gateway (56.25,36.24)| |Z|1050 0| |F|1078 0|
+N (npc:98793) |QID|41767.4| |N|Click on the jailer's cage to rescue (npc:98793) in {Dreadscar Rift} (16.75,50.00) (18.64,47.84) (24.41,50.72) (31.66,43.94)| |NPC|98793| |Z|1078 0|
+N (npc:98783) |QID|41767.5| |N|Rescue (npc:104944) in {Dreadscar Rift} (39.90,36.95)| |NPC|98783| |Z|1078 0|
+N (npc:98775) |QID|41767.3| |N|Click on the jailer's cage to rescue (npc:98775) in {Dreadscar Rift} 42.10,40.39) (43.42,44.13) (45.78,55.23) (50.23,48.17)| |NPC|98775| |Z|1078 0|
+
+R Dreadscar Rift |TID|41767| |N|Travel to {Dreadscar Rift} (55.4, 37.6)| |Z|1050 0|
 T A Daring Rescue |QID|41767| |N|(npc:105018) in {Dreadscar Rift} (55.4, 37.6)| |Z|1050 0| |NPC|105018|
+A Champion: Jubeka Shadowbreaker |QID|41753| |N|Speak to (npc:105922) to recruit as a follower (56.66,33.81)| |Z|1050 0| |NPC|105922| |E|
+A Champion: Zinnin Smythe |QID|41752| |N|Speak to (npc:105923) to recruit as a follower (57.66,34.94)| |Z|1050 0| |NPC|105923| |E|
 A Empowering the Soul |QID|42100| |N|(npc:105018) in {Dreadscar Rift} (55.4, 37.6)| |Z|1050 0| |NPC|105018|
 A Recruiting More Troops |QID|41798| |N|(npc:106199) in {Dreadscar Rift} (66.8, 45.8)| |Z|1050 0| |NPC|101097|
-C Empowering the Soul |QID|42100| |N|Collect 50 (item:136834) by completing class hall missions| |POI|
-T Empowering the Soul |QID|42100| |N|(npc:105018) in {Dreadscar Rift} (55.4, 37.6)| |Z|1050 0| |NPC|105018|
 T Recruiting More Troops |QID|41798| |N|(npc:106217) in {Dreadscar Rift} (61.2, 51.6)| |Z|1050 0| |NPC|106217|
+C Empowering the Soul |QID|42100| |N|Collect 50 (item:136834) by completing class hall missions (66.27,46.95)| |Z|1050 0|
+T Empowering the Soul |QID|42100| |N|(npc:105018) in {Dreadscar Rift} (55.4, 37.6)| |Z|1050 0| |NPC|105018|
 
 N Level 110 Required |N|You need to be at least level 110 to continue with the class campaign quest line| |PL|103|
-
---A One Who's Worthy
---A Finding Fizzlebang
---A Someone Else's Mess
---A Coercing a Confession
---A Lulubelle on Loan
---A Summoning the Sisters
---A Selecting a Sixth
-
---A Soul Beacon
---A Mad Ernie the Alchemist
---A Herding Goats
---A Doom and Gloom
---A Borrowed Time
 
 N Guide Complete
 

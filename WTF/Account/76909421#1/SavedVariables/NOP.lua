@@ -1,8 +1,9 @@
 
 NewOpenablesProfile = {
 	["profileKeys"] = {
-		["Emmarosa - Stormrage"] = "Default",
 		["Druidann - Stormrage"] = "Default",
+		["Emmarosa - Stormrage"] = "Default",
+		["Yanlery - Stormrage"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

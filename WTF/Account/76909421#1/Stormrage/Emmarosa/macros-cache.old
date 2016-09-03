@@ -10,6 +10,10 @@ VER 3 0100000000000004 "Poisons" "INV_Misc_QuestionMark"
 #showtooltip
 /castsequence Deadly Poison, Crippling Poison
 END
+VER 3 0100000000000006 "Riposte" "INV_Misc_QuestionMark"
+#showtooltip Riposte
+/use [nostealth]Riposte
+END
 VER 3 0100000000000003 "SoD/SS" "INV_Misc_QuestionMark"
 #showtooltip Symbols of Death
 /use Symbols of Death

@@ -270,21 +270,56 @@ N Level 103 Required |N|You need to be at least level 103 to continue with the c
 
 A Malorne's Refuge |QID|42033| |N|(npc:101195) at the {Circle of Spirits} (44.72, 50.98)| |Z|1077 0| |NPC|101195|
 
-C Malorne's Refuge |QID|42033| |N|Speak to (npc:105903) at {Malorne's Refuge} in Val'sharah (57.0, 71.2)| |Z|1018 0| |NPC|105903|
-T Malorne's Refuge |QID|42033| |N|(npc:105903) at {Malorne's Refuge} in Val'sharah (57.0, 71.2)| |Z|1018 0| |NPC|105903|
-A Grip of Nightmare |QID|42034| |N|(npc:105903) at {Malorne's Refuge} in Val'sharah (57.0, 71.2)| |Z|1018 0| |NPC|105903|
-C Grip of Nightmare |QID|42034| |N|Kill 5 (npc:105897), rescue (mpc:106093), and examine the Altar of Malorne| |Z|1018 0| |POI| |NPC|105897, 106093|
-T Grip of Nightmare |QID|42034| |N|(npc:105948) at {Malorne's Refuge} in Val'sharah (56.8, 71.4)| |Z|1018 0| |NPC|105948|
-A Tracking the Enemy |QID|42035| |N|(npc:105948) at {Malorne's Refuge} in Val'sharah (56.8, 71.4)| |Z|1018 0| |NPC|105948|
-C Tracking the Enemy |QID|42035| |N|Use your (spell:768) to follow the satyr's tracks.| |POI|
-T Tracking the Enemy |QID|42035| |N|(npc:105948) at {Malorne's Refuge} in Val'sharah (59.8, 75.0)| |Z|1018 0| |NPC|105948|
-A Idol of the Wilds |QID|42036| |N|(npc:105948) at {Malorne's Refuge} in Val'sharah (59.8, 75.0)| |Z|1018 0| |NPC|105948|
-C Idol of the Wilds |QID|42036| |N|Attack 6 Darkfiend Satyr and extract information about the Idol of the Wilds. | |Z|1018 0| |POI|
+R Val'sharah |QID|42033| |N|Travel to {Val'sharah} (57.14,71.27)| |Z|1018 0|
+C Malorne's Refuge |QID|42033| |N|Speak to (npc:105903) at {Malorne's Refuge} (57.0, 71.2)| |Z|1018 0| |NPC|105903|
+T Malorne's Refuge |QID|42033| |N|(npc:105903) at {Malorne's Refuge} (57.0, 71.2)| |Z|1018 0| |NPC|105903|
+A Grip of Nightmare |QID|42034| |N|(npc:105903) at {Malorne's Refuge} (57.0, 71.2)| |Z|1018 0| |NPC|105903|
+N (npc:106093) |QID|42034.2| |N|Rescue (npc:106093) at {Malorne's Refuge} (57.22,68.82)| |Z|1018 0| |NPC|106093|
+N Investigate the Altar of Malorne |QID|42034.3| |N|Click on the Altar of Malorne (58.15,68.78)| |Z|1018 0|
+C Grip of Nightmare |QID|42034| |N|Kill 5 (npc:105897) at {Malorne's Refuge} (57.74,69.27)| |Z|1018 0| |POI| |NPC|105897|
+T Grip of Nightmare |QID|42034| |N|(npc:105948) at {Malorne's Refuge} (56.8, 71.4)| |Z|1018 0| |NPC|105948|
+A Tracking the Enemy |QID|42035| |N|(npc:105948) at {Malorne's Refuge} (56.8, 71.4)| |Z|1018 0| |NPC|105948|
+N First Satry Tracks |N|Use your (spell:768) to find the First Satry Tracks (58.58,74.02)| |Z|1018 0|
+N Second Satry Tracks |N|Use your (spell:768) to find the Second Satry Tracks (56.70,74.93)| |Z|1018 0|
+N Third Satry Tracks |N|Use your (spell:768) to find the Third Satry Tracks (59.80,75.13)| |Z|1018 0|
+ T Tracking the Enemy |QID|42035| |N|(npc:105948) at {Malorne's Refuge} (59.8, 75.0)| |Z|1018 0| |NPC|105948|
+A Idol of the Wilds |QID|42036| |N|(npc:105948) at {Malorne's Refuge} (59.8, 75.0)| |Z|1018 0| |NPC|105948|
+K Darkfiend Satyr  |QID|42036.1| |N|Attack 6 Darkfiend Satyr and extract information about the Idol of the Wilds (62.70,72.27)| |Z|1018 0| |POI|
+K (npc:106042) |QID|42036.2| |N|Kill (npc:106042) in the cave and collect (item:136804) (63.53,72.92) (64.67,74.29) (65.97,76.86) (67.07,76.58) (67.66,75.78) (67.71, 74.99)| |Z|1018 0| |POI| |NPC|106042|
 
-T Idol of the Wilds |QID|42036| |N|(npc:103832) at the {Circle of Spirits} (45.51, 50.54)| |Z|1077 0| |NPC|103832|
-A The Protectors |QID|43991| |N|(npc:103832) at the {Circle of Spirits} (45.51, 50.54)| |Z|1077 0| |NPC|103832|
-C The Protectors |QID|43991| |N|Use your druidic powers to commune with protectors at the Feral Stone, the Guardian Stone, the Restoration Stone, and the Balance Stone.| |Z|1077 0| |NPC|103832| |POI|
-T The Protectors |QID|43991| |N|(npc:103832) at the {Circle of Spirits} (45.51, 50.54)| |Z|1077 0| |NPC|103832|
+R Circle of Spirits |TID|42036| |N|Travel to {Circle of Spirits} (44.84,50.13)| |Z|1077 0| |NPC|103832|
+T Idol of the Wilds |QID|42036| |N|(npc:103832) at the {Circle of Spirits} (44.84,50.13)| |Z|1077 0| |NPC|103832|
+A The Protectors |QID|43991| |N|(npc:103832) at the {Circle of Spirits} (44.84,50.13)| |Z|1077 0| |NPC|103832|
+A Druids of the Claw |QID|40654| |N|(npc:101195) at the {Circle of Spirits} (44.75,51.81)| |Z|1077 0| |NPC|101195|
+A Champion: Broll Bearmantle |QID|42038| |N|Speak to (npc:106091) to recruit as a follower (48.94,47.09)| |Z|1077 0| |NPC|106091| |E|
+T Druids of the Claw |QID|40654| |N|(npc:106442) at the {Circle of Spirits} (38.42,33.98)| |Z|1077 0| |NPC|106442|
+A Gathering the Dreamweavers |QID|42037| |N|(npc:98002) in {The Dreamgrove} (52.88, 50.97)| |Z|1077 0| |NPC|98002|
+N As you go... |AYG|44077| |N|Complete a "Gathering the Dreamweavers" Mission, these mission will take up to 16 hours to complete each| |Z|1077 0| |NPC|98002|
+
+N Feral Stone |QID|43991.1| |N|Use (spell:24450) ability to Commune with the Feral Stone (30.80,37.56)| |Z|1048 0|
+A Essence of Ferocity |QID|44075| |N|(npc:112544) (31.23,36.69)| |Z|1048 0| |NPC|112544|
+N Balance Stone |QID|43991.3| |N|Use your (spell:8921) ability on the Ritual Candle to commune with the Balance Stone (30.35,51.62)| |Z|1048 0|
+A Essence of Balance |QID|44077| |N|(npc:112548) (30.64,50.91)| |Z|1048 0| |NPC|112548|
+N Guardian Stone |QID|43991.2| |N|Use your (spell:5487) ability to commune with the Guardian Stone (33.97,62.43)| |Z|1048 0|
+A Essence of Tenacity |QID|44074| |N|(npc:112546) (34.57,62.30)| |Z|1048 0| |NPC|112546|
+N Restoration Stone |QID|43991.4| |N|Use your (spell:5185) ability on the sapling to commune with the Restoration Stone (41.09,58.36)| |Z|1048 0|
+A Essence of Regrowth |QID|44076| |N|(npc:112549) (40.96,58.80)| |Z|1048 0| |NPC|112549|
+
+R Circle of Spirits |TID|43991| |N|Travel to {Circle of Spirits} (44.84,50.13)| |Z|1077 0|
+T The Protectors |QID|43991| |N|(npc:103832) at the {Circle of Spirits} (44.84,50.13)| |Z|1077 0| |NPC|103832|
+
+N Switch Guide |N|Complete the (guide:"1067(98-110)") to kill (npc:103344) and collect (item:140313) and kill (npc:101403)| |QID|44076|
+N Switch Guide |N|Complete the (guide:"1065(98-110)") to kill (npc:91003) and collect (item:140311) and kill (npc:107704)| |QID|44074|
+N Switch Guide |N|Complete the (guide:"1046(98-110)") to kill (npc:96028) and collect (item:140311)| |QID|44077|
+N Switch Guide |N|Complete the (guide:"1041(98-110)") to kill (npc:99868) and collect (item:139469) and complete Odyn's Trial| |QID|44075|
+
+C Gathering the Dreamweavers |QID|42037| |N|Complete a "Gathering the Dreamweavers" Mission, these mission will take up to 16 hours to complete each  (52.71,51.06)| |Z|1077 0| |NPC|98002|
+
+T Gathering the Dreamweavers |QID|42037| |N|(npc:103832) at the {Circle of Spirits} (45.51, 50.54)| |Z|1077 0| |NPC|103832|
+T Essence of Tenacity |QID|44074| |N|(npc:103832) at the {Circle of Spirits} (45.51, 50.54)| |Z|1077 0| |NPC|103832|
+T Essence of Ferocity |QID|44075| |N|(npc:103832) at the {Circle of Spirits} (45.51, 50.54)| |Z|1077 0| |NPC|103832|
+T Essence of Regrowth |QID|44076| |N|(npc:103832) at the {Circle of Spirits} (45.51, 50.54)| |Z|1077 0| |NPC|103832|
+T Essence of Balance |QID|44077| |N|(npc:103832) at the {Circle of Spirits} (45.51, 50.54)| |Z|1077 0| |NPC|103832|
 
 N Level 110 Required |N|You need to be at least level 110 to continue with the class campaign quest line| |PL|110|
 

@@ -65,20 +65,20 @@ A From Within |QID|36920| |N|(npc:89362) at the {Illidari Stand} (43.50, 43.50)|
 R Vanquish Point |QID|36920| |N|Travel to {Vanquish Point} (41.21, 50.47)| |Z|1015 0| |OID|44140|
 T From Within |QID|44140| |N|(npc:90255) at {Vanquish Point} (41.21, 50.47)| |Z|1015 0| |NPC|90255| |C|Demon|
 T From Within |QID|36920| |N|(npc:90255) at {Vanquish Point} (41.21, 50.47)| |Z|1015 0| |NPC|90255| |OID|44140|
---A Retake Faronaar |QID|36811| |N|Auto Accept| |Z|1015 0| |OID|43341| -- Bonus Objective
-A Fel Machinations |QID|37656| |N|(npc:90474) at {Vanquish Point} (41.20, 50.45)| |Z|1015 0| |NPC|90474|
-A Saving Stellagosa |QID|37450| |N|(npc:90474) at {Vanquish Point} (41.20, 50.45)| |Z|1015 0| |NPC|90474|
+--A Retake Faronaar |QID|36811| |N|Auto Accept| |Z|1015 0| |PL|110| -- Bonus Objective
+A Fel Machinations |QID|37656| |N|(npc:90255) at {Vanquish Point} (41.20, 50.45)| |Z|1015 0| |NPC|90255|
+A Saving Stellagosa |QID|37450| |N|(npc:90255) at {Vanquish Point} (41.20, 50.45)| |Z|1015 0| |NPC|90255|
 
 R Legion Camp: Ruin |QID|37450| |N|Travel to {Legion Camp: Ruin} (38.40, 56.68)| |Z|1015 0|
 N (npc:89794) |QID|37450.1| |N|Find (npc:89794) in {Legion Camp: Ruin} (38.40, 56.68)| |Z|1015 0| |NPC|89794|
 K (npc:86535) |QID|37450.2| |N|Kill (npc:86535) and collect (item:120359) in {Legion Camp: Ruin} (40.64, 56.24)| |Z|1015 0| |NPC|86535|
 N Free (npc:89794) |QID|37450.3| |N|Unlock the 3 chains to free (npc:89794) in {Legion Camp: Ruin} (37.71, 57.67)| |Z|1015 0| |NPC|89794|
-T Saving Stellagosa |QID|37450| |N|(npc:90474) in {Legion Camp: Ruin} (37.86, 57.61)| |Z|1015 0| |NPC|90474|
+T Saving Stellagosa |QID|37450| |N|(npc:90255) in {Legion Camp: Ruin} (37.86, 57.61)| |Z|1015 0| |NPC|90255|
 
 R Legion Camp: Chaos |QID|37656| |N|Travel to {Legion Camp: Chaos} (39.31, 46.50)| |Z|1015 0|
 C Fel Machinations |QID|37656| |N|Free 6 (npc:90532) from Soul Harvesters in {Legion Camp: Chaos} (39.31, 46.50)| |Z|1015 0| |NPC|90532|
-T Fel Machinations |QID|37656| |N|(npc:90474) in {Legion Camp: Chaos} (39.29, 46.59)| |Z|1015 0| |NPC|90474|
-A Dark Revelations |QID|37449| |N|(npc:90474) in {Legion Camp: Chaos} (39.29, 46.59)| |Z|1015 0| |NPC|90474|
+T Fel Machinations |QID|37656| |N|(npc:90255) in {Legion Camp: Chaos} (39.29, 46.59)| |Z|1015 0| |NPC|90255|
+A Dark Revelations |QID|37449| |N|(npc:90255) in {Legion Camp: Chaos} (39.29, 46.59)| |Z|1015 0| |NPC|90255|
 
 R Traitor's Overlook |QID|37449| |N|Travel to the {Traitor's Overlook} (35.18, 53.01)| |Z|1015 0|
 K Nightglaive the Traitor |QID|37449.1| |N|Kill (npc:90621) at the {Traitor's Overlook} (35.18, 53.01)| |Z|1015 0| |NPC|90621|
@@ -86,7 +86,7 @@ K Nightglaive the Traitor |QID|37449.1| |N|Kill (npc:90621) at the {Traitor's Ov
 R Illidari Stand |QID|37449.2| |N|Mount (npc:89794) at the {Traitor's Overlook} for a free ride back to {Illidari Stand} (35.11, 52.90)| |Z|1015 0| |NPC|89794| |V|
 N (npc:89362) |QID|37449.3| |N|Meet (npc:89362) back at the {Illidari Stand} (43.59, 43.22)| |Z|1015 0| |NPC|89362|
 T Dark Revelations |QID|37449| |N|(npc:89362) at the {Illidari Stand} (43.53, 43.44)| |Z|1015 0| |NPC|89362|
-C Retake Faronaar |QID|36811| |N|Kill demons and destroy demonic structures in {Faronaar} (36.69, 50.86)| |Z|1015 0| |OID|43341| -- Bonus Objective
+C Retake Faronaar |QID|36811| |N|Kill demons and destroy demonic structures in {Faronaar} (36.69, 50.86)| |Z|1015 0| |PL|110| -- Bonus Objective
 
 A Journey to the Repose |QID|38443| |N|(npc:93326) at the {Illidari Stand} (43.53, 43.45)| |Z|1015 0| |NPC|93326|
 
@@ -142,7 +142,7 @@ N Central Mana Pylon |QID|37860.2| |N|Disable the Central Mana Pylon in the {Ley
 N Northwestern Mana Pylon |QID|37860.3| |N|Disable the Northwestern Mana Pylon in the {Ley-Ruins of Zarkhenar} (55.58, 13.01)| |Z|1015 0|
 N Eastern Mana Pylon |QID|37860.4| |N|Disable the Eastern Mana Pylon in the {Ley-Ruins of Zarkhenar} (57.11, 13.95)| |Z|1015 0|
 T You Scratch My Back... |QID|37860| |N|Field Turn-In|
-C Those Beyond Redemption |QID|37963| |N|Kill any NPCs you encounter and disable mana spheres in the {Ley-Ruins of Zarkhenar} (52.43, 16.86)| |Z|1015 0| |OID|43341| -- Bonus Objective
+C Those Beyond Redemption |QID|37963| |N|Kill any NPCs you encounter and disable mana spheres in the {Ley-Ruins of Zarkhenar} (52.43, 16.86)| |Z|1015 0| |PL|110| -- Bonus Objective
 C The Nightborne Prince |QID|37861| |N|Kill (npc:90267) in the {Ley-Ruins of Zarkhenar} (56.07, 13.22) (56.53, 12.85) (57.07, 11.86) (57.88, 13.25)| |Z|1015 0| |NPC|90267|
 T The Nightborne Prince |QID|37861| |N|(npc:107995) in the {Ley-Ruins of Zarkhenar} (57.56, 13.53)| |Z|1015 0| |NPC|107995|
 A Still Alive |QID|37862| |N|(npc:107995) in the {Ley-Ruins of Zarkhenar} (57.56, 13.53)| |Z|1015 0| |NPC|107995|
@@ -163,7 +163,7 @@ T Cursed to Wither |QID|42567| |N|(npc:91131) in {Leyhollow} (48.08, 24.46) (48.
 A Hunger's End |QID|42756| |N|(npc:91131) in {Leyhollow} (48.22, 22.74)| |Z|1015 0| |NPC|91131|
 K (npc:108036) |QID|42756.1| |N|Kill (npc:108036) at the {Azurewing Repose} (48.17, 27.26)| |Z|1015 0| |NPC|108036|
 K (npc:108721)  |QID|42756.2| |N|Kill (npc:108721) at the {Azurewing Repose} (48.04, 27.03)| |Z|1015 0| |NPC|108721|
-T Hunger's End |QID|42756| |N|(npc:100482), in {Azurewing Repose} (48.03, 25.80)| |Z|1015 0| |NPC|100482|
+T Hunger's End |QID|42756| |N|(npc:100482) in {Azurewing Repose} (48.03, 25.80)| |Z|1015 0| |NPC|100482|
 
 R Drowned Gardens |QID|37690| |N|Travel to the {Drowned Gardens} (48.42, 34.54)| |Z|1015 0| |NPC|89023|
 T Those Who Remember |QID|37690| |N|(npc:89023) in the {Drowned Gardens} (48.42, 34.54)| |Z|1015 0| |NPC|89023|
@@ -279,13 +279,13 @@ K (npc:91402) |QID|37530.6| |N|Kill (npc:91402) in the {El'dranil Shallows} (58.
 C Save Yourself |QID|37530.7| |N|Save yourself in the {Hatecoil Slave Pen} (57.84, 43.09)| |Z|1015 0|
 T Save Yourself |QID|37530| |N|(npc:89090) in the {Hatecoil Slave Pen} (57.82, 43.32)| |Z|1015 0| |NPC|89090|
 A The Head of the Snake |QID|37470| |N|(npc:89009) in the {Hatecoil Slave Pen} (57.83, 43.39)| |Z|1015 0| |NPC|89009|
-C The Broken Academy |QID|37466| |N|Kill any naga NPCs and free any night elves hung on the wall by a spear to complete this bonus objective in the {Ruins of Nar'thalas} (53.21, 41.04)| |Z|1015 0| |OID|43341| -- Bonus Objective
+C The Broken Academy |QID|37466| |N|Kill any naga NPCs and free any night elves hung on the wall by a spear to complete this bonus objective in the {Ruins of Nar'thalas} (53.21, 41.04)| |Z|1015 0| |PL|110| -- Bonus Objective
 
 R Hatecoil Warcamp |QID|37470| |N|Travel to the {Hatecoil Warcamp} (58.80, 41.22)| |Z|1015 0|
 C The Head of the Snake |QID|37470| |N|Kill (npc:88855) in the {Hatecoil Warcamp} (62.67, 41.12)| |Z|1015 0| |NPC|88855|
 T The Head of the Snake |QID|37470| |N|(npc:91403) in the {Hatecoil Warcamp} (61.73, 41.09)| |Z|1015 0| |NPC|91403|
 A Wrath of Azshara |QID|38286| |N|(npc:91403) in the {Hatecoil Warcamp} (61.73, 41.09)| |Z|1015 0| |NPC|91403| -- Dungeon Quest
-C Tip the Scales |QID|37779| |N|Kill all NPCs and destroy weapon stands in the {Hatecoil Warcamp} (58.50, 40.73)| |Z|1015 0| |OID|43341| -- Bonus bjective
+C Tip the Scales |QID|37779| |N|Kill all NPCs and destroy weapon stands in the {Hatecoil Warcamp} (58.50, 40.73)| |Z|1015 0| |PL|110| -- Bonus bjective
 
 R Shipwreck Arena |QID|37496| |N|Travel to the {Shipwreck Arena} (50.04, 48.52)| |Z|1015 0|
 T Infiltrating Shipwreck Arena |QID|37496| |N|(npc:88873) at the {Shipwreck Arena} (50.04, 48.52)| |Z|1015 0| |NPC|88873|
@@ -329,9 +329,9 @@ A Making the World Safe for Profit |QID|37657| |N|(npc:91419) in {Shackle's Den}
 f Shackle's Den |QID|42220| |N|Grab the flight path for {Shackle's Den} from (npc:112866) (56.21, 58.95)| |NPC|112866|
 
 R Mak'rana |QID|42220| |N|Travel to {Mak'rana} (60.11, 59.19)| |Z|1015 0|
-A Shipwrecked Sailors |Auto Quest in {Mak'rana} (60.11, 59.19)| |Z|1015 0| |OID|42220, 42268|
-A Shipwrecked Sailors |QID|42220| |Auto Quest in {Mak'rana} (60.11, 59.19)| |Z|1015 0| |O|
-A Shipwrecked Sailors |QID|42268| |Auto Quest in {Mak'rana} (60.11, 59.19)| |Z|1015 0| |O|
+A Shipwrecked Sailors |N|Auto Quest in {Mak'rana} (60.11, 59.19)| |Z|1015 0| |OID|42220, 42268|
+A Shipwrecked Sailors |QID|42220| |N|Auto Quest in {Mak'rana} (60.11, 59.19)| |Z|1015 0| |O|
+A Shipwrecked Sailors |QID|42268| |N|Auto Quest in {Mak'rana} (60.11, 59.19)| |Z|1015 0| |O|
 C Making the World Safe for Profit |QID|37657.1| |N|Kill 12 (npc:89053) or (npc:89283) in {Mak'rana} (57.89, 58.30)| |Z|1015 0| |NPC|89053, 89283|
 C Shipwrecked Sailors |QID|42220| |N|Put 10 (npc:89289) out of their misery in {Mak'rana} (60.08, 61.86)| |Z|1015 0| |NPC|89289| |O|
 T Shipwrecked Sailors |QID|42220| |N|Field Turn-In| |O|
@@ -374,7 +374,7 @@ f Felblaze Ingress |QID|42375| |N|Grab the flight path for {Felblaze Ingress} fr
 N (npc:107252) |QID|42375| |N|Use the (npc:107252) (63.83, 28.94)| |Z|1015 0| |BUFF|Interface\Icons\spell_shadow_evileye| |V|
 N Ritual Site |QID|42375.2| |N|Locate the ritual site in {Felblaze Ingress}<br/><b>Avoid getting to close to (npc:107352)<br/><b>Waypoint is not possible for this step, look for it on your minimap| |Z|1015 0| |NPC|107252, 107352|
 N Main Portal |QID|42375.1| |N|Scout the Main Portal in {Felblaze Ingress}<br/><b>Avoid getting to close to (npc:107352)<br/><b>Waypoint is not possible for this step, look for it on your minimap| |Z|1015 0|
-N Commander |QID|42375.3| |N|Locate the Commander (npc:106583) in {Felblaze Ingress}<br/><b>Avoid getting to close to (npc:107352)<br/><b>Waypoint is not possible for this step, look for it on your minimap| |Z|1015 0||NPC|106583|
+N Commander |QID|42375.3| |N|Locate the Commander (npc:106583) in {Felblaze Ingress}<br/><b>Avoid getting to close to (npc:107352)<br/><b>Waypoint is not possible for this step, look for it on your minimap| |Z|1015 0| |NPC|106583|
 T Eye See You |QID|42375| |N|(npc:107244) in {Felblaze Ingress} (63.83, 28.94)| |Z|1015 0| |NPC|107244|
 A They're Doing it Wrong |QID|42369| |N|(npc:107244) in {Felblaze Ingress} (63.83, 28.94)| |Z|1015 0| |NPC|107244|
 A Quantity Over Quality |QID|42368| |N|(npc:107245) in {Felblaze Ingress} (63.86, 28.88)| |Z|1015 0| |NPC|107245|
@@ -388,9 +388,9 @@ T Arkethrax |QID|42367| |N|(npc:107245) in {Felblaze Ingress} (63.85, 28.86)| |Z
 T Quantity Over Quality |QID|42368| |N|(npc:107245) in {Felblaze Ingress} (63.85, 28.86)| |Z|1015 0| |NPC|107245|
 
 R Dalaran |QID|40794| |N|Travel to Dalaran (29.02, 74.79)| |Z|1014 10| |U|140192|
-T Fate of the Queen's Reprisal |QID|40794| |N|(npc:106930), in {Greyfang Enclave} (29.02, 74.79)| |Z|1014 10| |NPC|106930|
+T Fate of the Queen's Reprisal |QID|40794| |N|(npc:106930) in {Greyfang Enclave} (29.02, 74.79)| |Z|1014 10| |NPC|106930|
 
-N Swith Guide |N|Switch guide to (guide:"1046(98-110)#1046(98-110)#1046(98-110)") to complete (qid:38286)| |QID|38286|
+N Swith Guide |N|Switch guide to (guide:"1046(98-110)") to complete (qid:38286)| |QID|38286|
 
 N Guide Complete 
 

@@ -142,7 +142,7 @@ K (npc:90734) |QID|39590.2| |N|Kill (npc:90734) and collect (item:128509) in the
 K (npc:90747 |QID|39590.1| |N|Kill (npc:90747) and collect (item:128508) in the {Valley of the Sword} (44.86, 40.70)| |Z|1017 0| |NPC|90747|
 K (npc:96135) |QID|39590.3| |N|Kill (npc:96135) and collect Felskorn Champion's Head in the {Valley of the Sword} (45.20, 48.29)| |Z|1017 0| |NPC|96135|
 C Blood and Gold |QID|39595| |N|Kill (npc:96229), (npc:108283) or (npc:108306) and collect 7 (item:128512) from the {Valley of the Sword} (43.06, 44.04)| |Z|1017 0| |NPC|96229, 108283, 108306| |POI|
-C A Worthy Challenger |QID|38442| |N|Optional: Kill any NPCs and destroy totems in the {Valley of the Sword} to complete this bonus objective (43.67, 45.05)| |Z|1017 0| |OID|43341| -- Bonus Objective
+C A Worthy Challenger |QID|38442| |N|Optional: Kill any NPCs and destroy totems in the {Valley of the Sword} to complete this bonus objective (43.67, 45.05)| |Z|1017 0| |PL|110| -- Bonus Objective
 
 R Aggramar's Vault |QID|39590| |N|Travel to {Aggramar's Vault} (46.76, 44.48)| |Z|1017 0|
 T Ahead of the Game |QID|39590| |N|(npc:96175)'s head in {Aggramar's Vault} (46.76, 44.48)| |Z|1017 0| |NPC|96175|
@@ -490,7 +490,7 @@ A Stormheim's Salvation |QID|40005| |N|(npc:97986) in the {Gates of Valor} (70.1
 C Stormheim's Salvation |QID|40005| |N|Speak to (npc:97979) and he will fly you up to the top of the citadel. Defeat (npc:92307) in the {Gates of Valor} (70.24, 69.37) (70.24, 70.84)| |Z|1017 0| |NPC|92307| |V|
 T Stormheim's Salvation |QID|40005| |N|(npc:97988) in the {Gates of Valor} (70.20, 69.21)| |Z|1017 0| |NPC|97988|
 A Securing the Aegis |QID|40072| |N|(npc:97988) in the {Gates of Valor} (70.20, 69.21)| |Z|1017 0| |NPC|97988|
-C Drive Back the Tideskorn |QID|39998| |N|Kill demons and destroy the portals in {Gates of Valor} to complete this bonus objective (63.66, 59.39)| |Z|1017 0| |OID|43341| -- Bonus Objective
+C Drive Back the Tideskorn |QID|39998| |N|Kill demons and destroy the portals in {Gates of Valor} to complete this bonus objective (63.66, 59.39)| |Z|1017 0| |PL|110| -- Bonus Objective
 
 R Ranger's Foothold |TID|39154|  |N|Travel to {Ranger's Foothold} (56.74, 66.29)| |Z|1017 0| |NPC|94227|
 T To Skold-Ashil |QID|39154| |N|(npc:94227) in {Ranger's Foothold} (56.74, 66.29)| |Z|1017 0| |NPC|94227|
@@ -516,7 +516,7 @@ N Optional Quests |QID|42483| |N|The following quests are optional side quests f
 R Nastrondir |QID|39793| |N|Travel to {Nastrondir} (44.56, 48.95) (41.21, 41.24) (45.57, 37.98)| |Z|1017 0|
 C Only the Finest |QID|39793| |N|Collect 18 (item:138021) from (npc:97828) in {Nastrondir} (43.62, 29.51)| |Z|1017 0| |NPC|97828|
 C Rigging the Wager |QID|39787| |N|Lure down and defeat (npc:97124) to collect (item:138022) in {Nastrondir} (46.73, 32.58) (46.98, 36.79) (48.50, 32.96)| |Z|1017 0| |NPC|97124|
-C The Brood of Nithogg |QID|42431| |N|Kill Storm Drakes and destroy Drake Eggs in {Stormtorn Foothills} to complete this bonus objective (48.88, 37.99)| |Z|1017 0| |OID|43341| -- Bonus Objective
+C The Brood of Nithogg |QID|42431| |N|Kill Storm Drakes and destroy Drake Eggs in {Stormtorn Foothills} to complete this bonus objective (48.88, 37.99)| |Z|1017 0| |PL|110| -- Bonus Objective
 
 R Stormtorn Foothills |QID|42444| |N|Travel to {Stormtorn Foothills} (50.28, 34.04)| |Z|1017 0|
 A Plight of the Blackfeather |QID|42444| |N|(npc:107499) in {Stormtorn Foothills} (50.28, 34.04)| |Z|1017 0| |NPC|107499|

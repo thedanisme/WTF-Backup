@@ -43,7 +43,7 @@ R Steelclaw Vale |QID|38142| |N|Travel to the {Steelclaw Vale} (49.05, 82.28)| |
 T Archdruid of the Claw |QID|38142| |N|(npc:73426) in the {Steelclaw Vale} (49.05, 82.28)| |Z|1018 0| |NPC|73426|
 A Frenzied Furbolgs |QID|38455| |N|(npc:73426) in the {Steelclaw Vale} (49.05, 82.28)| |Z|1018 0| |NPC|73426|
 
-R Smolderhide Thicket |QID|38922|Travel to {Smolderhide Thicket} (48.38, 84.57)| |Z|1018 0|
+R Smolderhide Thicket |QID|38922| |N|Travel to {Smolderhide Thicket} (48.38, 84.57)| |Z|1018 0|
 A Littlefur |QID|38922| |N|(npc:93890) in the {Smolderhide Thicket} (48.38, 84.57)| |Z|1018 0| |NPC|93890|
 T Littlefur |QID|38922| |N|(npc:93581) in the {Smolderhide Thicket} (46.27, 84.57)| |Z|1018 0| |NPC|93581|
 A Totemic Call |QID|38246| |N|(npc:93581) in the {Smolderhide Thicket} (46.29, 84.57)| |Z|1018 0| |NPC|93581|
@@ -83,10 +83,10 @@ N (npc:93644) |QID|38235.3| |N|Rescue (npc:93644) in {Wretched Hollow} (43.95, 7
 
 R Thas'talah Basin |QID|38235| |N|Travel to the {Thas'talah Basin} (45.06, 73.40) (43.85, 70.41)| |Z|1018 0|
 N (npc:93602) |QID|38235.1| |N|Rescue (npc:93602) in the {Thas'talah Basin} (43.85, 70.41)| |Z|1018 0| |NPC|93602|
-C Wretched Sisters |QID|38372| |N|Kill any Harpies and save druids and treants in {Wretched Hollow} to complete this bonus objective (46.68, 71.27)| |Z|1018 0| |OID|43341| -- Bonus Objectve
+C Wretched Sisters |QID|38372| |N|Kill any Harpies and save druids and treants in {Wretched Hollow} to complete this bonus objective (46.68, 71.27)| |Z|1018 0| |PL|110| -- Bonus Objectve
 
 R Thas'talah |QID|38235| |N|Travel to {Thas'talah} (48.90, 70.36)| |Z|1018 0|
-T Solid as a Rock |QID|38235| |N|npc:91066) in {Thas'talah} (48.90, 70.36)| |Z|1018 0|
+T Solid as a Rock |QID|38235| |N|(npc:91066) in {Thas'talah} (48.90, 70.36)| |Z|1018 0|
 T Death to the Witchmother |QID|38225| |N|(npc:91066) in {Thas'talah} (48.90, 70.36)| |Z|1018 0| |NPC|91066|
 
 R Moonclaw Vale |QID|38382| |N|Travel to the {Moonclaw Vale} (61.02, 73.34)| |Z|1018 0|
@@ -109,9 +109,9 @@ T The Nightmare Lord |QID|40573| |N|(npc:100573) in {The Archdruid's Den} (62.31
 A Return to the Grove |QID|38323| |N|(npc:100573) in {The Archdruid's Den} (62.31, 76.24)| |Z|1018 0| |NPC|100573|
 
 R Moonclaw Vale |QID|39354| |N|Travel to the {Moonclaw Vale} (62.19, 72.50)| |Z|1018 0|
-C Moonclaw Vale |QID|39393| |N|Kill any NPCs and free trapped Druids in the {Moonclaw Vale} (62.19, 72.50)| |Z|1018 0| |OID|43341| -- Bonus Objective
+C Moonclaw Vale |QID|39393| |N|Kill any NPCs and free trapped Druids in the {Moonclaw Vale} (62.19, 72.50)| |Z|1018 0| |PL|110| -- Bonus Objective
 
-A Wisp in the Willows |QID|39354| |N|(npc:95202), in {Val'sharah} (54.32, 68.26)| |Z|1018 0| |NPC|95202|
+A Wisp in the Willows |QID|39354| |N|(npc:95202) in {Val'sharah} (54.32, 68.26)| |Z|1018 0| |NPC|95202|
 N Lost Wisp |QID|39354.1| |N|Bond with the lost (npc:97972) in {Val'sharah} (54.30, 68.22)| |Z|1018 0| |NPC|97972|
 C Wisp in the Willows |QID|39354.2| |N|Using the (npc:97972), grow 8 Trees, but watch out for the hungry fish in {The Hidden Pools} (49.31, 66.03)(49.00, 65.39)(48.67, 65.37) (48.10, 65.46)(47.83, 64.81)(47.67, 64.09)(48.02, 62.87)(48.24, 62.69) (48.98, 62.86)(49.03, 63.24) (49.24, 63.64)(49.30, 63.94)| |Z|1018 0|
 T Wisp in the Willows |QID|39354| |N|(npc:95202) in {Val'sharah} (54.30, 68.29)| |Z|1018 0| |NPC|95202|
@@ -129,10 +129,10 @@ T The Temple of Elune |QID|38641| |N|(npc:92680) at the {Temple of Elune} (51.48
 A Tears for Fears |QID|38662| |N|(npc:92680) at the {Temple of Elune} (51.48, 57.04)| |Z|1018 0| |NPC|92680|
 A Root Cause |QID|38655| |N|(npc:92697) at the {Temple of Elune} (51.48, 56.89)| |Z|1018 0| |NPC|92697|
 
-R Garden of the Moon |QID|38655| ||Travel to the {Garden of the Moon} (58.79, 54.98)| |Z|1018 0|
+R Garden of the Moon |QID|38655| |N|Travel to the {Garden of the Moon} (58.79, 54.98)| |Z|1018 0|
 C Root Cause |QID|38655| |N|Collect 30 (item:128680) in the {Garden of the Moon}. They look like roots coming out of the ground (58.79, 54.98)| |Z|1018 0|
 C Tears for Fears |QID|38662| |N|Retrieve the Tears of Elune from the {Garden of the Moon} (59.19, 53.96)| |Z|1018 0|
-C Defend The Temple |QID|39029| |N|Kill NPCs, free stunned druids and destroy totems in the {Garden of the Moon} (59.19, 58.33) to complete this bonus objective| |Z|1018 0| |OID|43341| -- Bonus Objective
+C Defend The Temple |QID|39029| |N|Kill NPCs, free stunned druids and destroy totems in the {Garden of the Moon} (59.19, 58.33) to complete this bonus objective| |Z|1018 0| |PL|110| -- Bonus Objective
 
 R Temple of Elune |QID|38662| |N|Travel to the {Temple of Elune} (51.49, 57.04)| |Z|1018 0|
 T Tears for Fears |QID|38662| |N|(npc:92680) at the {Temple of Elune} (51.49, 57.04)| |Z|1018 0| |NPC|92680|
@@ -141,7 +141,7 @@ A The Die is Cast |QID|38663| |N|(npc:92680) at the {Temple of Elune} (51.42, 56
 
 R Grove of Cenarius |QID|38663| |N|Travel to the {Grove of Cenarius} (52.39, 63.45)| |Z|1018 0|
 T The Die is Cast |QID|38663| |N|(npc:98584) at the {Grove of Cenarius} (52.39, 63.45)| |Z|1018 0| |NPC|98584|
-A Malfurion's Fury |QID|38595| |N|(npc:92742), in {Grove of Cenarius} (52.39, 63.45)| |Z|1018 0| |NPC|92742|
+A Malfurion's Fury |QID|38595| |N|(npc:92742) in {Grove of Cenarius} (52.39, 63.45)| |Z|1018 0| |NPC|92742|
 
 T Malfurion's Fury |QID|38595| |N|(npc:92420) in {Val'sharah} (60.56, 61.47)| |Z|1018 0| |NPC|92420|
 A To Old Friends |QID|38582| |N|(npc:92420) in {Val'sharah} (60.56, 61.47)| |Z|1018 0| |NPC|92420|
@@ -183,7 +183,7 @@ C Heart of the Nightmare |QID|41724| |N|Track Malfurion's path through the Night
 T Heart of the Nightmare |QID|41724| |N|(npc:104728) in {Dreadroot} (66.18, 44.78)| |Z|1018 0| |NPC|104728|
 A Reading the Leaves |QID|38684| |N|(npc:92783) in {Dreadroot} (66.18, 44.67)| |Z|1018 0| |NPC|92783|
 A Given to Corruption |QID|41893| |N|(npc:92783) in {Dreadroot} (66.18, 44.67)| |Z|1018 0| |NPC|92783|
-C Flow of the Nightmare |QID|43241| |N|Kill any NPCs and destroy corrupted flowers in {Dreadroot} (62.77, 48.70) to complete this bonus objective.<br/><br/>Tip: Corrupted flowers give an insane amount of completion points| |Z|1018 0| |OID|43341| -- Bonus Objective
+C Flow of the Nightmare |QID|43241| |N|Kill any NPCs and destroy corrupted flowers in {Dreadroot} (62.77, 48.70) to complete this bonus objective.<br/><br/>Tip: Corrupted flowers give an insane amount of completion points| |Z|1018 0| |PL|110| -- Bonus Objective
 
 R Ash'theran |QID|38684| |N|Travel to {Ash'theran} (67.38, 39.09)| |Z|1018 0|
 C Reading the Leaves |QID|38684| |N|Kill (npc:97338) and collect 5 (item:136391) in {Ash'theran} (67.38, 39.09)| |Z|1018 0| |NPC|97338|
@@ -203,7 +203,7 @@ N Search the Inn |QID|38687.2| |N|Search for (npc:111258) at the Inn in {Shala'n
 N Search the Lake |QID|38687.3| |N|Search for (npc:111260) near the Lake in {Shala'nir} (62.37, 33.23)| |Z|1018 0| |NPC|111260|
 N Search the Village |QID|38687.4| |N|Search for (npc:111260) in the Village in {Shala'nir} (59.15, 32.55)| |Z|1018 0| |NPC|111260|
 N (npc:111260) |QID|38687.5| |N|Find (npc:111260) in {Shala'nir} (58.22, 37.45)| |Z|1018 0| |NPC|111260|
-C Ruins of Shala'nir |QID|38748| |N|Kill any NPCs and destroy Nightmare Totems in {Shala'nir} to complete this bonus objective (61.65, 35.11)| |Z|1018 0| |OID|43341| -- Bonus Objective
+C Ruins of Shala'nir |QID|38748| |N|Kill any NPCs and destroy Nightmare Totems in {Shala'nir} to complete this bonus objective (61.65, 35.11)| |Z|1018 0| |PL|110| -- Bonus Objective
 T Close Enough to Touch |QID|38687| |N|(npc:104799) in {Shala'nir} (57.83, 38.58)| |Z|1018 0| |NPC|104799|
 A The Fate of Val'sharah |QID|38743| |N|(npc:104799) in {Shala'nir} (57.83, 38.58)| |Z|1018 0| |NPC|104799|
 
@@ -283,7 +283,7 @@ R Dalaran |QID|40890| |N|Travel to {Dalaran} (49.32, 47.53)| |U|140192| |Z|1014 
 C The Tears of Elune |QID|40890| |N|Use the central teleporter in Dalaran and then place the Tears of Elune in the Portrait Room within the {Chamber of the Guardian} (49.32, 47.53)| |Z|1014 10|
 T The Tears of Elune |QID|40890| |N|Tears of Elune in {The Portrait Room} (46.00, 64.54)| |Z|1014 12|
 
-N Switch Guide |N|Switch to (guide:"1067(98-110)#1067(98-110)#1067(98-110)") to complete (qid:40567) quest line| |QID|40567|
+N Switch Guide |N|Switch to (guide:"1067(98-110)") to complete (qid:40567) quest line| |QID|40567|
 
 N Guide Complete
 

@@ -59,7 +59,7 @@ C Fish Out of Water |QID|39614| |N|Return 8 (npc:99973) to the river in {Whitewa
 T Moozy's Sojourn |QID|39323| |N|(npc:95130) in {Whitewater Wash} (37.48, 64.31)| |U|127988| |Z|1024 0| |NPC|95130|
 A Moozy's Adventure |QID|39572| |N|(npc:95130) in {Whitewater Wash} (37.48, 64.31)| |U|127988| |Z|1024 0| |NPC|95130|
 C Spray and Prey |QID|39277| |N|Use the (item:127988) on (npc:95013) in {Whitewater Wash} (39.55, 60.94)| |U|127988| |Z|1024 0| |NPC|95013|
-C Defend the Riverlands |QID|39274| |N|Kill NPCs and rescue Taurens in {Whitewater Wash} to complete this bonus objective (39.87, 62.82)| |Z|1024 0| |OID|43341| -- Bonus Obective
+C Defend the Riverlands |QID|39274| |N|Kill NPCs and rescue Taurens in {Whitewater Wash} to complete this bonus objective (39.87, 62.82)| |Z|1024 0| |PL|110| -- Bonus Obective
 T Fish Out of Water |QID|39614| |N|(npc:95186) in {Whitewater Wash} (41.15, 61.62)| |Z|1024 0| |NPC|95186|
 T Spray and Prey |QID|39277| |N|(npc:95956) in {Whitewater Wash} (41.19, 61.53)| |Z|1024 0| |NPC|95956|
 C Trapped Tauren |QID|39316| |N|Free the (npc:95080) tauren in {Whitewater Wash} (42.82, 63.13)| |Z|1024 0| |NPC|95080|
@@ -166,7 +166,7 @@ A The Path of Huln |QID|39575| |N|(npc:94571) in the {Path of Huln} (44.90, 65.6
 R Neltharion's Vault |QID|39575.1| |N|Escort (npc:96164) to the {Path of Huln} in {Neltharion's Vault} (28.00, 36.83)| |Z|1024 29| |NPC|96164|
 N Jump Down |QID|39575.2| |N|Jump in to the Vault in {Neltharion's Vault} (35.90, 35.89)| |Z|1024 29|
 T The Path of Huln |QID|39575| |N|(npc:99153) in {Neltharion's Vault} (43.39, 28.92)| |Z|1024 29| |NPC|99153|
---A Echoes of Deathwing |QID|39576| |N|Auto Quest (43.39, 28.92)| |Z|1024 29| |OID|43341| -- Bonus Objective
+--A Echoes of Deathwing |QID|39576| |N|Auto Quest (43.39, 28.92)| |Z|1024 29| |PL|110| -- Bonus Objective
 A In Defiance of Deathwing |QID|40219| |N|(npc:99153) in {Neltharion's Vault} (43.39, 28.92)| |Z|1024 29| |NPC|99153|
 N Vision of Scales |QID|40219.1| |N|Click on the Highmountain Urn to witness the Vision of Scales in {Neltharion's Vault} (39.22, 46.96)| |Z|1024 29|
 N Vision of the Hammer |QID|40219.2| |N|Click on the Highmountain Urn to witness the Vision of the Hammer in {Neltharion's Vault} (50.95, 31.13)| |Z|1024 29|
@@ -182,7 +182,7 @@ N (npc:96318) |QID|39577.2| |N|Defend (npc:96318) in {Neltharion's Vault} (62.98
 N Ebonhorn |QID|39577.3| |N|Listen to Ebonhorn in {Neltharion's Vault} (61.83, 73.30)| |Z|1024 29|
 T An Ancient Secret |QID|39577| |N|(npc:96270) in {Neltharion's Vault} (61.83, 73.30)| |Z|1024 29| |NPC|96270|
 A The Backdoor |QID|39579| |N|(npc:96270) in {Neltharion's Vault} (61.83, 73.30)| |Z|1024 29| |NPC|96270|
-C Echoes of Deathwing |QID|39576| |N|Kill any NPCs and destroy fetishes in {Neltharion's Vault} to complete this bonus objective (48.98, 52.96)| |Z|1024 29| |OID|43341| -- Bonus Objective
+C Echoes of Deathwing |QID|39576| |N|Kill any NPCs and destroy fetishes in {Neltharion's Vault} to complete this bonus objective (48.98, 52.96)| |Z|1024 29| |PL|110| -- Bonus Objective
 
 R Obsidian Overlook |QID|39579| |N|Travel to the {Obsidian Overlook} (47.47, 84.68)| |Z|1024 0|
 T The Backdoor |QID|39579| |N|(npc:108305) at the {Obsidian Overlook} (47.47, 84.68)| |Z|1024 0| |NPC|108305|
@@ -195,7 +195,7 @@ T The High Chieftain |QID|39580| |N|(npc:108434) in the {Hall of Chieftains} (55
 R Screeching Crag |QID|40316| |N|Travel to the {Screeching Crag} (47.87, 52.87) (46.74, 49.50)| |Z|1024 0|
 A Hex-a-Gone |QID|39419| |N|(npc:94522) in the {Screeching Crag} (47.13, 47.97)| |Z|1024 0| |NPC|94522|
 C Hex-a-Gone |QID|39419| |N|Kill (npc:95693) in the {Screeching Crag} (45.59, 49.14)| |Z|1024 0| |NPC|95693|
-C The Screeching Crag |QID|40316| |N|Kill any harpies and destroy any totems or fetishes in the {Screeching Crag} to complete this bonus objective (46.32, 47.81)| |Z|1024 0| |OID|43341| -- Bonus Objectve
+C The Screeching Crag |QID|40316| |N|Kill any harpies and destroy any totems or fetishes in the {Screeching Crag} to complete this bonus objective (46.32, 47.81)| |Z|1024 0| |PL|110| -- Bonus Objectve
 T Hex-a-Gone |QID|39419| |N|(npc:94522) in the {Screeching Crag} (47.14, 47.98)| |Z|1024 0| |NPC|94522|
 
 R Skyhorn |QID|38913| |N|Travel to {Skyhorn} (52.48, 44.76)| |Z|1024 0|
@@ -241,7 +241,7 @@ T Can't Hold a Candle To You |QID|39772| |N|(npc:96984) in {Sepulcher of the Sky
 
 R Darkfeather Valley |QID|38910| |N|Travel to {Darkfeather Valley} (52.47, 40.82)| |Z|1024 0|
 C Rocs vs Eagles |QID|38910| |N|Save 7 (npc:94991) in {Darkfeather Valley} (52.47, 40.82)| |Z|1024 0| |NPC|94991|
-C Siege of Crawliac |QID|39317| |N|Kill any Harpies in {Darkfeather Valley} (50.05, 42.50)| |Z|1024 0| |NPC|94983| |OID|43341| -- Bonus Objectve
+C Siege of Crawliac |QID|39317| |N|Kill any Harpies in {Darkfeather Valley} (50.05, 42.50)| |Z|1024 0| |NPC|94983| |PL|110| -- Bonus Objectve
 
 R The Haglands |QID|38910| |N|Travel to {The Haglands} (52.32, 36.46)| |Z|1024 0|
 T Rocs vs Eagles |QID|38910| |N|(npc:95410) in {The Haglands} (52.32, 36.46)| |Z|1024 0| |NPC|95410|
@@ -283,7 +283,7 @@ K Ezerak |QID|39774.1| |N|Detain (npc:97181) in the {Mucksnout Den} (53.70, 9.78
 T Demon Detainment |QID|39774| |N|(npc:97193) in the {Mucksnout Den} (52.80, 11.33)| |Z|1024 16| |NPC|97193|
 
 R The Witchwood |QID|38912| |N|Travel to {The Witchwood} (48.09, 29.34) (48.34, 84.28) (38.85, 39.43)| |Z|1024 0|
---A Witches of the Sky |QID|39371| |N|Auto Quest (38.85, 39.43)| |Z|1024 0| |OID|43341| -- Bonus Objective
+--A Witches of the Sky |QID|39371| |N|Auto Quest (38.85, 39.43)| |Z|1024 0| |PL|110| -- Bonus Objective
 f The Witchwood |QID|38912| |N|Grab the flight path for {The Witchwood} from (npc:97868)| |Z|1024 0| |NPC|97868|
 
 R Cliff's Edge |QID|38912| |N|Travel to {Cliff's Edge} (39.38, 37.02)| |Z|1024 0|
@@ -297,8 +297,8 @@ T I Have a Bad Feeling About This |QID|39873| |N|Navarrogg's Cage in {Cliff's Ed
 R The Witchwood |QID|39373| |N|Travel to {The Witchwood} (41.46, 31.35)| |Z|1024 0|
 C Hags of a Feather |QID|39373| |N|Kill (npc:95310) and collect 50 (item:128380) in {The Witchwood} (41.46, 31.35)| |Z|1024 0| |NPC|95310|
 C Witch of the Wood |QID|39372| |N|Kill (npc:95311) in {The Witchwood} (41.19, 28.19)| |Z|1024 0| |NPC|95311|
-C Witches of the Sky |QID|39371| |N|Kill any harpies or bears in {The Witchwood} (41.49, 29.98) to complete this bonus objective| |Z|1024 0| |OID|43341| -- Bonus Objective
-T Witches of the Sky |QID|39371| |N|in {The Witchwood} (41.49, 29.98)| |Z|1024 0| |OID|43341| -- Bonus Objective
+C Witches of the Sky |QID|39371| |N|Kill any harpies or bears in {The Witchwood} (41.49, 29.98) to complete this bonus objective| |Z|1024 0| |PL|110| -- Bonus Objective
+T Witches of the Sky |QID|39371| |N|in {The Witchwood} (41.49, 29.98)| |Z|1024 0| |PL|110| -- Bonus Objective
 
 R Cliff's Edge |QID|39372| |N|Travel to {Cliff's Edge} (39.38, 37.00)| |Z|1024 0|
 T Witch of the Wood |QID|39372| |N|(npc:95256) in {Cliff's Edge} (39.38, 37.00)| |Z|1024 0| |NPC|95256|
@@ -341,7 +341,7 @@ R Torok's Bluff |QID|42373| |N|Travel to {Torok's Bluff} (47.68, 28.83)| |Z|1024
 C Blood Debt |QID|39426| |N|Defeat (npc:95707) in {Torok's Bluff} (47.68, 28.83) (48.94, 26.69) (49.64, 24.07)| |Z|1024 0| |NPC|95707|
 T Blood Debt |QID|39426| |N|(npc:96453) in {Torok's Bluff} (49.64, 24.07)| |Z|1024 0| |NPC|96453|
 A Step into the Dark |QID|40229| |N|(npc:96453) in {Torok's Bluff} (49.64, 24.07)| |Z|1024 0| |NPC|96453|
-C Vengeance for the Stonedark |QID|42373| |N|Kill Feltotem NPCs and destroy weapon racks in {Torok's Bluff} to complete this bonus objective (47.62, 25.96)| |Z|1024 0| |OID|43341| -- Bonus Objective
+C Vengeance for the Stonedark |QID|42373| |N|Kill Feltotem NPCs and destroy weapon racks in {Torok's Bluff} to complete this bonus objective (47.62, 25.96)| |Z|1024 0| |PL|110| -- Bonus Objective
 
 R Stonedark Grotto |QID|40229| |N|Travel to the {Stonedark Grotto} (39.63, 53.65)| |Z|1024 31|
 T Step into the Dark |QID|40229| |N|(npc:95392) in the {Stonedark Grotto} (39.63, 53.65)| |Z|1024 31| |NPC|95392|
@@ -403,7 +403,7 @@ N (npc:94434) |QID|40216.1| |N|Speak to (npc:94434) at {Nesingwary's Retreat} (3
 R Pinerock Basin |QID|39124| |N|Travel to {Pinerock Basin} (41.73, 48.39)| |Z|1024 0|
 C Moose Shootin' |QID|39124| |N|Hunt 8 (npc:94151) in {Pinerock Basin} (41.73, 48.39)| |Z|1024 0| |NPC|94151|
 C Lion Stalkin' |QID|39123| |N|Hunt 10 (npc:99481) and (npc:94149) in {Pinerock Basin} (41.45, 50.62)| |Z|1024 0|
-C Bear Huntin' |QID|39392| |N|Kill (npc:96146) and collect 4 (item:128286) within the Fields of An'she., in {Fields of An'she} (37.14, 42.36)| |Z|1024 0| |NPC|96146|
+C Bear Huntin' |QID|39392| |N|Kill (npc:96146) and collect 4 (item:128286) within the {Fields of An'she} (37.14, 42.36)| |Z|1024 0| |NPC|96146|
 N Addie's Apprentice Training |QID|40216.2| |N|Complete (npc:94434)'s apprentice training in {Pinerock Basin}. Simply kill (npc:99481) and (npc:94151) (39.31, 49.81)| |Z|1024 0| |NPC|99481, 94151|
 N Addie's Journeyman Training |QID|40216.3| |N|Complete (npc:94434)'s journeyman training in {Pinerock Basin}. Simply kill (npc:99481) and (npc:94151) (40.61, 48.64)| |Z|1024 0| |NPC|99481, 94151|
 N Addie's Expert Training |QID|40216.4| |N|Complete (npc:94434)'s expert training in {Fields of An'she}. Simply kill (npc:99481) and (npc:94151) (37.55, 43.39)| |Z|1024 0| |NPC|99481, 94151|
@@ -438,7 +438,7 @@ A Slime Time |QID|40049| |N|(npc:98067) in {Shipwreck Cove} (42.69, 10.90)| |Z|1
 C Slime Time |QID|40049| |N|Feed Murky 6 Bunches of (npc:99173) by swimming through them., in {Shipwreck Cove} (44.01, 6.68)| |Z|1024 0| |NPC|99173|
 C I'll Huff, I'll Puff... |QID|40047| |N|Kill (npc:98037) and collect 5 (item:129183) in {Shipwreck Cove} (44.93, 6.33)| |Z|1024 0| |NPC|98037|
 C Nature vs. Nurture |QID|40045| |N|Talk to 10 (npc:98046) in {Shipwreck Cove} (46.35, 9.68)| |Z|1024 0| |NPC|98046|
-C Shipwreck Cove |QID|40050| |N|Kill any murlocs and collect ration boxes in {Shipwreck Cove} to complete this bonus objective (45.35, 10.09)| |Z|1024 0| |OID|43341| -- Bonus Objective
+C Shipwreck Cove |QID|40050| |N|Kill any murlocs and collect ration boxes in {Shipwreck Cove} to complete this bonus objective (45.35, 10.09)| |Z|1024 0| |PL|110| -- Bonus Objective
 T Nature vs. Nurture |QID|40045| |N|(npc:98067) in {Shipwreck Cove} (42.73, 10.90)| |Z|1024 0| |NPC|98067|
 T I'll Huff, I'll Puff... |QID|40047| |N|(npc:98067) in {Shipwreck Cove} (42.73, 10.90)| |Z|1024 0|
 T Slime Time |QID|40049| |N|(npc:98067) in {Shipwreck Cove} (42.73, 10.90)| |Z|1024 0| |NPC|98067|
@@ -507,9 +507,9 @@ N (npc:93826) |QID|39780.1| |N|Meet with (npc:93826) in {Understone Breach} (53.
 K (npc:97266)  |QID|39780.2| |N|Kill (npc:97266) in {Understone Breach} (53.16, 70.58)| |Z|1024 0| |NPC|97266|
 T The Underking |QID|39780| |N|(npc:93846) in {Understone Breach} (53.16, 70.06)| |Z|1024 0| |NPC|93846|
 A Neltharion's Lair |QID|39781| |N|(npc:93846) in {Understone Breach} (53.16, 70.06)| |Z|1024 0| |NPC|93846| -- Dungeon Quest
-N (npc:96453) |QID|39781.1| |N|Speak with (npc:96453) in {Snowblind Mesa} (49.73, 68.51)| |Z|1024 0| -- Dungeon Quest
+N (npc:97301) |QID|39781.1| |N|Speak with (npc:97301) in {Snowblind Mesa} (49.73, 68.51)| |Z|1024 0| -- Dungeon Quest
 
-N Switch Guide |N|Switch to (guide:"1065(98-110)#1065(98-110)#1065(98-110)") to complete (qid:39781)| |QID|39781|
+N Switch Guide |N|Switch to (guide:"1065(98-110)") to complete (qid:39781)| |QID|39781|
 
 N Guide Complete 
 
