@@ -1,8 +1,11 @@
 # BigWigs
 
-## [v8-9-gf4a8f58](https://github.com/BigWigsMods/BigWigs/tree/f4a8f58827ed9c38bc9c9e561e6f22ed9dbe57ad) (2016-09-02) [](#top)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v8...f4a8f58827ed9c38bc9c9e561e6f22ed9dbe57ad)
+## [v8-12-g61b7635](https://github.com/BigWigsMods/BigWigs/tree/61b76353bb59fa016b801a0aa9018b2148ce552c) (2016-09-03) [](#top)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v8...61b76353bb59fa016b801a0aa9018b2148ce552c)
 
+-   update authors  
+-   Remove SVN comment  
+-   Pull: Fix options  
 -   ruRU update (#18)  
 -   Colors: Add a temporary wrapper for color names.  
 -   Pull: Fix lua error  

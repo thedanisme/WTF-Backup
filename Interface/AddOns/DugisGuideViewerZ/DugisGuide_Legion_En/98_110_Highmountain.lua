@@ -166,7 +166,7 @@ A The Path of Huln |QID|39575| |N|(npc:94571) in the {Path of Huln} (44.90, 65.6
 R Neltharion's Vault |QID|39575.1| |N|Escort (npc:96164) to the {Path of Huln} in {Neltharion's Vault} (28.00, 36.83)| |Z|1024 29| |NPC|96164|
 N Jump Down |QID|39575.2| |N|Jump in to the Vault in {Neltharion's Vault} (35.90, 35.89)| |Z|1024 29|
 T The Path of Huln |QID|39575| |N|(npc:99153) in {Neltharion's Vault} (43.39, 28.92)| |Z|1024 29| |NPC|99153|
-A Echoes of Deathwing |QID|39576| |N|Auto Quest (43.39, 28.92)| |Z|1024 29| |OID|43341| -- Bonus Objective
+--A Echoes of Deathwing |QID|39576| |N|Auto Quest (43.39, 28.92)| |Z|1024 29| |OID|43341| -- Bonus Objective
 A In Defiance of Deathwing |QID|40219| |N|(npc:99153) in {Neltharion's Vault} (43.39, 28.92)| |Z|1024 29| |NPC|99153|
 N Vision of Scales |QID|40219.1| |N|Click on the Highmountain Urn to witness the Vision of Scales in {Neltharion's Vault} (39.22, 46.96)| |Z|1024 29|
 N Vision of the Hammer |QID|40219.2| |N|Click on the Highmountain Urn to witness the Vision of the Hammer in {Neltharion's Vault} (50.95, 31.13)| |Z|1024 29|
@@ -283,7 +283,7 @@ K Ezerak |QID|39774.1| |N|Detain (npc:97181) in the {Mucksnout Den} (53.70, 9.78
 T Demon Detainment |QID|39774| |N|(npc:97193) in the {Mucksnout Den} (52.80, 11.33)| |Z|1024 16| |NPC|97193|
 
 R The Witchwood |QID|38912| |N|Travel to {The Witchwood} (48.09, 29.34) (48.34, 84.28) (38.85, 39.43)| |Z|1024 0|
-A Witches of the Sky |QID|39371| |N|Auto Quest (38.85, 39.43)| |Z|1024 0| |OID|43341| -- Bonus Objective
+--A Witches of the Sky |QID|39371| |N|Auto Quest (38.85, 39.43)| |Z|1024 0| |OID|43341| -- Bonus Objective
 f The Witchwood |QID|38912| |N|Grab the flight path for {The Witchwood} from (npc:97868)| |Z|1024 0| |NPC|97868|
 
 R Cliff's Edge |QID|38912| |N|Travel to {Cliff's Edge} (39.38, 37.02)| |Z|1024 0|

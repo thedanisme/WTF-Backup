@@ -180,7 +180,7 @@ T A Grapple a Day |QID|38312| |N|(npc:91481) in {Hrydshal} (41.99, 64.46)| |Z|10
 A No Wings Required |QID|38318| |N|(npc:91481) in {Hrydshal} (41.99, 64.46)| |Z|1017 0| |NPC|91481|
 A To Weather the Storm |QID|38405| |N|(npc:91481) in {Hrydshal} (41.99, 64.46)| |Z|1017 0| |NPC|91481|
 C No Wings Required |QID|38318| |N|Go to the top of the ridge and use the (item:138111) to launch over the wall at {Hrydshal}<br/><br/>Click on the grapple point by the fence, you should see a yellow arrow above it. (42.88, 64.85)| |U|138111| |Z|1017 0|
-A Assault the Drekirjar |QID|38374| |N|Auto Quest (42.88, 64.85)| |Z|1017 0| |OID|43341| -- Bonus Objective
+--A Assault the Drekirjar |QID|38374| |N|Auto Quest (42.88, 64.85)| |Z|1017 0| |OID|43341| -- Bonus Objective
 K (npc:91517) |QID|38405.1| |N|Kill (npc:91517) and collect the (item:124038) in {Hrydshal} (43.93, 66.84)| |Z|1017 0| |NPC|91517|
 K (npc:91202) |QID|38337| |N|Kill (npc:91202) and collect (item:122610) in {Hrydshal} to begin a quest (45.43, 66.63)| |Z|1017 0| |NPC|91202| |L|124038|
 N (item:122686) |QID|38405.3| |N|Collect (item:122686) hanging on the pillar in {Hrydshal} (45.63, 66.61)| |Z|1017 0|
@@ -346,7 +346,7 @@ A The Final Judgment |QID|38818| |N|(npc:93234) in {Haustvald} (71.40, 42.55)| |
 C The Final Judgment |QID|38818| |N|Defeat (npc:93093) in {Haustvald} (73.07, 40.17)| |Z|1017 0| |NPC|93093|
 
 T The Final Judgment |QID|38818| |N|(npc:97319) in {Helheim} (65.32, 47.19)| |Z|1022 0| |NPC|97319|
-A Raze Hel |QID|38343| |N|(npc:97319) in {Helheim} (65.32, 47.19)| |Z|1022 0| |NPC|97319|
+--A Raze Hel |QID|38343| |N|(npc:97319) in {Helheim} (65.32, 47.19)| |Z|1022 0| |NPC|97319|
 A An Unworthy Task |QID|39837| |N|(npc:97319) in {Helheim} (65.32, 47.19)| |Z|1022 0| |NPC|97319|
 C An Unworthy Task |QID|39837| |N|Search among the caged vrykul in {Helheim} for one who can help your escape (60.69, 43.62)| |Z|1022 0| |NPC|91575|
 T An Unworthy Task |QID|39837| |N|(npc:91531) in {Helheim} (64.39, 43.34)| |Z|1022 0| |NPC|91531|
@@ -378,7 +378,7 @@ N Fragment of Will |QID|39850.1| |N|Release the Fragment of Will in {Helheim} (6
 N Fragment of Might |QID|39850.2| |N|Release the Fragment of Might at {The Eternal Battlefield}  (51.31, 74.65) (56.85, 77.19)| |Z|1022 0|
 N Fragment of Valor |QID|39850.3| |N|Release the Fragment of Valor at {The Eternal Battlefield} (35.54, 76.09)| |Z|1022 0|
 C Allies in Death |QID|39851| |N|Release 8 (npc:97469) at {The Eternal Battlefield} (45.67, 74.57)| |Z|1022 0| |NPC|97469|
-T Raze Hel |QID|38343| |N|(npc:97480) at {The Eternal Battlefield} (51.84, 60.05)| |Z|1022 0| |NPC|97480|
+--T Raze Hel |QID|38343| |N|(npc:97480) at {The Eternal Battlefield} (51.84, 60.05)| |Z|1022 0| |NPC|97480|
 T Sundered |QID|39850| |N|(npc:97480) at {The Eternal Battlefield} (46.64, 49.22)| |Z|1022 0| |NPC|97480|
 T Allies in Death |QID|39851| |N|(npc:97480) at {The Eternal Battlefield} (46.64, 49.22)| |Z|1022 0| |NPC|97480|
 A Victory is Eternal |QID|39853| |N|(npc:97480) at {The Eternal Battlefield} (46.64, 49.22)| |Z|1022 0| |NPC|97480|

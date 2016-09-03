@@ -395,7 +395,7 @@ C The Final Judgment |QID|38818| |N|Defeat (npc:93093) in {Haustvald} (73.07, 40
 
 R Helheim |TID|38347| |N|Travel to {Helheim} (65.32, 47.19)| |Z|1022 0|
 T The Final Judgment |QID|38818| |N|(npc:97319) in {Helheim} (65.32, 47.19)| |Z|1022 0| |NPC|97319|
-A Raze Hel |QID|38343| |N|(npc:97319) in {Helheim} (65.32, 47.19)| |Z|1022 0| |NPC|97319|
+--A Raze Hel |QID|38343| |N|(npc:97319) in {Helheim} (65.32, 47.19)| |Z|1022 0| |NPC|97319|
 A An Unworthy Task |QID|39837| |N|(npc:97319) in {Helheim} (65.32, 47.19)| |Z|1022 0| |NPC|97319|
 C An Unworthy Task |QID|39837| |N|Search among the caged vrykul in {Helheim} for one who can help your escape (60.69, 43.62)| |Z|1022 0| |NPC|91575|
 T An Unworthy Task |QID|39837| |N|(npc:91531) in {Helheim} (64.39, 43.34)| |Z|1022 0| |NPC|91531|
@@ -427,7 +427,7 @@ N Fragment of Will |QID|39850.1| |N|Release the Fragment of Will in {Helheim} (6
 N Fragment of Might |QID|39850.2| |N|Release the Fragment of Might at {The Eternal Battlefield}  (51.31, 74.65) (56.85, 77.19)| |Z|1022 0|
 N Fragment of Valor |QID|39850.3| |N|Release the Fragment of Valor at {The Eternal Battlefield} (35.54, 76.09)| |Z|1022 0|
 C Allies in Death |QID|39851| |N|Release 8 (npc:97469) at {The Eternal Battlefield} (45.67, 74.57)| |Z|1022 0| |NPC|97469|
-T Raze Hel |QID|38343| |N|(npc:97480) at {The Eternal Battlefield} (51.84, 60.05)| |Z|1022 0| |NPC|97480|
+--T Raze Hel |QID|38343| |N|(npc:97480) at {The Eternal Battlefield} (51.84, 60.05)| |Z|1022 0| |NPC|97480|
 T Sundered |QID|39850| |N|(npc:97480) at {The Eternal Battlefield} (46.64, 49.22)| |Z|1022 0| |NPC|97480|
 T Allies in Death |QID|39851| |N|(npc:97480) at {The Eternal Battlefield} (46.64, 49.22)| |Z|1022 0| |NPC|97480|
 A Victory is Eternal |QID|39853| |N|(npc:97480) at {The Eternal Battlefield} (46.64, 49.22)| |Z|1022 0| |NPC|97480|

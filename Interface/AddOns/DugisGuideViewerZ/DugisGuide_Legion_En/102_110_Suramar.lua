@@ -4,7 +4,11 @@ function Guide:Initialize()
 return [[
 
 N Level 102 Required |N|You need to be at least level 102 to complete {Suramar} quest line| |PL|102|
+R Light's Hope Chapel |QID|42866| |N|Travel to {Light's Hope Chapel} (43.31, 87.50)| |Z|23 20| |C|Paladin| |OID|44257, 44009|
+A A Sign From The Sky |QID|42866| |N|(npc:90259) in {Light's Hope Chapel} (43.31, 87.50)| |Z|23 20| |NPC|90259| |C|Paladin| |OID|44257, 44009|
+
 R The Violet Citadel |QID|44009| |N|Travel to {The Violet Citadel} (28.66, 48.37)| |Z|1014 10|
+T A Sign From The Sky |QID|42866| |N|(npc:90417) in {The Violet Citadel} (28.66, 48.37)| |Z|1014 10| |NPC|90417| |C|Paladin| |OID|44257, 44009|
 A A Falling Star |N|(npc:90417) in {The Violet Citadel} (28.66, 48.37)| |Z|1014 10| |NPC|90417| |OID|44257, 44009|
 A A Falling Star |QID|44257| |N|(npc:90417) in {The Violet Citadel} (28.66, 48.37)| |Z|1014 10| |NPC|90417| |O|
 A A Falling Star |QID|44009| |N|(npc:90417) in {The Violet Citadel} (28.66, 48.37)| |Z|1014 10| |NPC|90417| |O|
