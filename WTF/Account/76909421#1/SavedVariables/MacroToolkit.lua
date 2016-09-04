@@ -113,10 +113,10 @@ MacroToolkitDB = {
 					["name"] = "Spirit Mend",
 					["body"] = "#showtooltip\n/use [@player] Spirit Mend\n",
 				},
-				[129] = {
-					["icon"] = "INV_MISC_QUESTIONMARK",
-					["name"] = "OpenerBM",
-					["body"] = "#showtooltip\n/castsequence reset=combat Cobra Shot, Cobra Shot, Stampede, 14, Bestial Wrath, Kill Command, Barrage\n",
+				[121] = {
+					["icon"] = "ABILITY_IMPALINGBOLT",
+					["name"] = " ",
+					["body"] = "#showtooltip\n/petattack\n/use [@mouseover,exists][@target] Arcane Shot\n",
 				},
 				[125] = {
 					["icon"] = "ABILITY_HUNTER_MISDIRECTION",
@@ -128,10 +128,10 @@ MacroToolkitDB = {
 					["name"] = "OpenerSurv",
 					["body"] = "/castsequence reset=combat 14, A Murder of Crows, Explosive Shot, Black Arrow, Arcane Shot\n",
 				},
-				[121] = {
-					["icon"] = "ABILITY_IMPALINGBOLT",
-					["name"] = " ",
-					["body"] = "#showtooltip\n/petattack\n/use [@mouseover,exists][@target] Arcane Shot\n",
+				[129] = {
+					["icon"] = "INV_MISC_QUESTIONMARK",
+					["name"] = "OpenerBM",
+					["body"] = "#showtooltip\n/castsequence reset=combat Cobra Shot, Cobra Shot, Stampede, 14, Bestial Wrath, Kill Command, Barrage\n",
 				},
 			},
 		},
@@ -265,33 +265,33 @@ MacroToolkitDB = {
 		["Emmarosa - Stormrage"] = {
 			["macros"] = {
 				[122] = {
-					["name"] = " TotT(Focus)",
 					["icon"] = "236283",
+					["name"] = " TotT(Focus)",
 					["body"] = "#showtooltip Tricks of the Trade\n/cast [@focus] Tricks of the Trade\n",
 				},
 				[124] = {
-					["name"] = "Poisons",
 					["icon"] = "134400",
+					["name"] = "Poisons",
 					["body"] = "#showtooltip\n/castsequence Deadly Poison, Crippling Poison\n",
 				},
 				[126] = {
+					["icon"] = "252272",
 					["name"] = "SoD/SS",
-					["icon"] = "134400",
 					["body"] = "#showtooltip Symbols of Death\n/use Symbols of Death\n/use Shadowstrike\n",
 				},
 				[121] = {
+					["icon"] = "134400",
 					["name"] = " ",
-					["icon"] = "136206",
 					["body"] = "#showtooltip Adrenaline Rush\n/use Adrenaline Rush\n/use Curse of the Dreadblades\n/use 13\n/use 14\n",
 				},
 				[123] = {
-					["name"] = "Pistol Shot",
 					["icon"] = "1035048",
+					["name"] = "Pistol Shot",
 					["body"] = "#showtooltip\n/use Pistol Shot\n",
 				},
 				[125] = {
+					["icon"] = "134400",
 					["name"] = "Riposte",
-					["icon"] = "132269",
 					["body"] = "#showtooltip Riposte\n/use [nostealth]Riposte\n",
 				},
 			},
@@ -326,15 +326,15 @@ MacroToolkitDB = {
 					["name"] = " ",
 					["body"] = "#showtooltip\n/use [@mouseover,help]Flash of Light;[help]Flash of Light;Flash of Light\n",
 				},
-				[133] = {
-					["icon"] = "135964",
-					["name"] = " ",
-					["body"] = "#showtooltip\n/use [@mouseover,help]Hand of Protection;[help]Hand of Protection;Hand of Protection\n",
-				},
 				[123] = {
 					["icon"] = "135984",
 					["name"] = " ",
 					["body"] = "#showtooltip\n/use [@mouseover,harm][]Reckoning\n",
+				},
+				[133] = {
+					["icon"] = "135964",
+					["name"] = " ",
+					["body"] = "#showtooltip\n/use [@mouseover,help]Hand of Protection;[help]Hand of Protection;Hand of Protection\n",
 				},
 				[127] = {
 					["icon"] = "134400",
@@ -878,15 +878,15 @@ MacroToolkitDB = {
 					["name"] = " ",
 					["body"] = "#showtooltip\n/use [@mouseover,help]Flash of Light;[help]Flash of Light;Flash of Light\n",
 				},
-				[123] = {
-					["icon"] = "134400",
-					["name"] = " ",
-					["body"] = "#showtooltip\n/use [@mouseover,help]Hand of Freedom;[help]Hand of Freedom;Hand of Freedom\n",
-				},
 				[133] = {
 					["icon"] = "134400",
 					["name"] = " ",
 					["body"] = "#showtooltip\n/use [@mouseover,help]Hand of Protection;[help]Hand of Protection;Hand of Protection\n",
+				},
+				[123] = {
+					["icon"] = "134400",
+					["name"] = " ",
+					["body"] = "#showtooltip\n/use [@mouseover,help]Hand of Freedom;[help]Hand of Freedom;Hand of Freedom\n",
 				},
 				[127] = {
 					["icon"] = "524354",
@@ -955,15 +955,15 @@ MacroToolkitDB = {
 		},
 		["Brewbies - Turalyon"] = {
 			["macros"] = {
-				[122] = {
-					["icon"] = "ABILITY_MONK_PRIDEOFTHETIGER",
-					["name"] = " ",
-					["body"] = "#showtooltip Legacy of the White Tiger\n/use Legacy of the White Tiger\n/cancelaura Hand of Protection\n",
-				},
 				[131] = {
 					["icon"] = "INV_MISC_QUESTIONMARK",
 					["name"] = "Serenity Spam",
 					["body"] = "#showtooltip Serenity\n/use Serenity\n/use Blackout Kick\n/use Purifying Brew\n",
+				},
+				[122] = {
+					["icon"] = "ABILITY_MONK_PRIDEOFTHETIGER",
+					["name"] = " ",
+					["body"] = "#showtooltip Legacy of the White Tiger\n/use Legacy of the White Tiger\n/cancelaura Hand of Protection\n",
 				},
 				[126] = {
 					["icon"] = "ABILITY_MONK_CLASHINGOXCHARGE",
@@ -980,10 +980,10 @@ MacroToolkitDB = {
 					["name"] = "ZGVMacro2",
 					["body"] = "/target Master Hight\n/run ZGV:MRM():CG(2,2)\n",
 				},
-				[133] = {
-					["icon"] = "MONK_ABILITY_TRANSCENDENCE",
-					["name"] = "TransferSequence",
-					["body"] = "#showtooltip\n/castsequence Transcendence, Transcendence: Transfer\n",
+				[123] = {
+					["icon"] = "INV_MISC_QUESTIONMARK",
+					["name"] = " ",
+					["body"] = "#showtooltip Brawler's Bottomless Draenic Agility Potion\n/use Brawler's Bottomless Draenic Agility Potion\n/use 14\n",
 				},
 				[127] = {
 					["icon"] = "ABILITY_MONK_FORTIFYINGALE_NEW",
@@ -1030,10 +1030,10 @@ MacroToolkitDB = {
 					["name"] = "Provoke",
 					["body"] = "#showtooltip\n/cast [nomod,@mouseover,harm,exists][nomod] Provoke\n/stopmacro [nomod]\n/target Black Ox Statue\n/cast Provoke\n/targetlasttarget\n",
 				},
-				[123] = {
-					["icon"] = "INV_MISC_QUESTIONMARK",
-					["name"] = " ",
-					["body"] = "#showtooltip Brawler's Bottomless Draenic Agility Potion\n/use Brawler's Bottomless Draenic Agility Potion\n/use 14\n",
+				[133] = {
+					["icon"] = "MONK_ABILITY_TRANSCENDENCE",
+					["name"] = "TransferSequence",
+					["body"] = "#showtooltip\n/castsequence Transcendence, Transcendence: Transfer\n",
 				},
 			},
 			["backups"] = {
@@ -1344,26 +1344,26 @@ MacroToolkitDB = {
 	},
 	["profiles"] = {
 		["profile"] = {
+			["doublewide"] = true,
+			["visbackup"] = false,
+			["visaddslot"] = false,
+			["visaddscript"] = false,
+			["x"] = 729.668273925781,
+			["y"] = 536.061950683594,
 			["viscrest"] = true,
+			["scale"] = 1,
+			["override"] = true,
 			["viserrors"] = false,
 			["viscustom"] = false,
-			["scale"] = 1,
+			["visconditions"] = true,
 			["fonts"] = {
 				["edfont"] = "Expressway",
 				["mifont"] = "Expressway",
 				["mfont"] = "Expressway",
 				["errfont"] = "Expressway",
 			},
-			["visbackup"] = false,
-			["visaddslot"] = false,
-			["y"] = 536.061950683594,
-			["x"] = 729.668273925781,
-			["doublewide"] = true,
-			["visclear"] = false,
-			["visconditions"] = true,
-			["override"] = true,
 			["visshare"] = false,
-			["visaddscript"] = false,
+			["visclear"] = false,
 		},
 		["Default"] = {
 			["y"] = 386.062622070313,

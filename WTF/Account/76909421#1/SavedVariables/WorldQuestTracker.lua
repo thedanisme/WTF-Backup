@@ -60,10 +60,10 @@ WQTrackerDB = {
 						["rewardAmount"] = "16",
 						["rewardTexture"] = 413584,
 					},
-					[42124] = {
-						["expireAt"] = 1472936451,
-						["rewardAmount"] = "815",
-						["rewardTexture"] = 1130280,
+					[43459] = {
+						["expireAt"] = 1473001251,
+						["rewardAmount"] = "810",
+						["rewardTexture"] = 132843,
 					},
 					[43452] = {
 						["expireAt"] = 1472958051,
@@ -85,10 +85,10 @@ WQTrackerDB = {
 						["rewardAmount"] = 250,
 						["rewardTexture"] = "Interface\\AddOns\\WorldQuestTracker\\media\\icon_artifactpower_red_roundT",
 					},
-					[43459] = {
-						["expireAt"] = 1473001251,
-						["rewardAmount"] = "810",
-						["rewardTexture"] = 132843,
+					[42124] = {
+						["expireAt"] = 1472936451,
+						["rewardAmount"] = "815",
+						["rewardTexture"] = 1130280,
 					},
 				},
 			},
@@ -108,25 +108,25 @@ WQTrackerDB = {
 			["history"] = {
 				["quest"] = {
 					["global"] = {
-						[42101] = 1,
-						[43121] = 1,
 						[43431] = 1,
-						[44193] = 1,
-						[42105] = 1,
-						[41701] = 1,
-						[43429] = 1,
 						["total"] = 7,
+						[42101] = 1,
+						[41701] = 1,
+						[42105] = 1,
+						[44193] = 1,
+						[43429] = 1,
+						[43121] = 1,
 					},
 					["character"] = {
 						["Player-60-0A91880D"] = {
-							[42101] = 1,
-							[43121] = 1,
 							[43431] = 1,
-							[44193] = 1,
-							[42105] = 1,
-							[41701] = 1,
-							[43429] = 1,
 							["total"] = 7,
+							[42101] = 1,
+							[41701] = 1,
+							[42105] = 1,
+							[44193] = 1,
+							[43429] = 1,
+							[43121] = 1,
 						},
 					},
 				},
