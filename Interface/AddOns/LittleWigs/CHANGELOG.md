@@ -1,7 +1,9 @@
 # LittleWigs
 
-## [v7.0.3-2-g8076386](https://github.com/BigWigsMods/LittleWigs/tree/8076386e92f610083ecc956d93e1e039a8e7f241) (2016-09-03) [](#top)
-[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v7.0.3...8076386e92f610083ecc956d93e1e039a8e7f241)
+## [v7.0.5-4-gbb4fbec](https://github.com/BigWigsMods/LittleWigs/tree/bb4fbecbfd6ef82ad9d5743b11f0bf0c25d46b10) (2016-09-04) [](#top)
+[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v7.0.5...bb4fbecbfd6ef82ad9d5743b11f0bf0c25d46b10)
 
--   Add Neltharion's Lair  
--   VaultOfTheWardens/Tormentorum: Remove unneeded bar/message  
+-   AssaultOnVioletHold/Betrug: Add Seed timer after Smash/Execution combo  
+-   AssaultOnVioletHold: Enable module  
+-   MawOfSouls/Helya: Fix Brackwater Barrage message  
+-   AssaultOnVioletHold: Add Fel Lord Betrug  

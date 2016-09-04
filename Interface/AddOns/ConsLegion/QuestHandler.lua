@@ -57,10 +57,23 @@ function CL_QH_ChkZoneFS(clqnumbr)
 		end
 	end
 end
+
+function CL_QH_ChkQWatch(Qidz)
+	local i = 1
+	while GetQuestLogTitle(i) do
+		local questTitle, level, suggestedGroup, isHeader, isCollapsed, isComplete, frequency, questID = GetQuestLogTitle(i)
+		if (Qidz == questID) then
+			AddQuestWatch(i)
+		end
+		i = i + 1
+	end
+end
+
 function CL_QH_AddQuestFS(clqnumbr)
 	if (not CL_ActiveQuests[clqnumbr]) then
 		return
 	end
+	CL_QH_ChkQWatch(clqnumbr)
 	local FsNr = CL_QH_GetFreeFS(clqnumbr)
 	CL_BookedFSInfo[FsNr] = {}
 	local NrObj = CL_ActiveQuests[clqnumbr]["NrObj"]
@@ -146,7 +159,6 @@ function CL_QH_UpdateQuestList()
 		if (questID > 0 and CL_Loggedin == 1) then
 			if (not CL_ActiveQuests[questID]) then
 				CL_ActiveQuests[questID] = {}
-				AddQuestWatch(i)
 			end
 			if (not CL_ActiveQuests[questID]["Obj"]) then
 				CL_ActiveQuests[questID]["Obj"] = {}

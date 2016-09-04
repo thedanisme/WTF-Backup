@@ -1,8 +1,13 @@
 # BigWigs
 
-## [v8-16-g84713d9](https://github.com/BigWigsMods/BigWigs/tree/84713d9fb67870c7d239fdf25d7f68e199580251) (2016-09-03) [](#top)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v8...84713d9fb67870c7d239fdf25d7f68e199580251)
+## [v8-21-g6037144](https://github.com/BigWigsMods/BigWigs/tree/603714427ccb93bf8f6716ef3d7180c551556630) (2016-09-04) [](#top)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v8...603714427ccb93bf8f6716ef3d7180c551556630)
 
+-   Update deDE (#22)  
+-   Pull: Be more restrictive with what we class as a bad item.  
+-   Pull: Initial import of a "bad gear check". Warns you of potentially bad items you have equipped when a pull timer starts.  
+-   Plugins/Flash: Don't delay frame creation.  
+-   Plugins/Flash: Cleanups, removing some pointlessly created frames.  
 -   Update deDE (#20)  
 -   Update deDE (#21)  
 -   Colors: Fix color wrapper.  

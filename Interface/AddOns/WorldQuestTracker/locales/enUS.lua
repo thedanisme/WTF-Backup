@@ -16,6 +16,11 @@ L["S_MAPBAR_FILTER"] = "Filter"
 L["S_MAPBAR_FILTERMENU_FACTIONOBJECTIVES"] = "Faction Objectives"
 L["S_MAPBAR_FILTERMENU_FACTIONOBJECTIVES_DESC"] = "Show faction quests even if they have been filtered out."
 L["S_MAPBAR_OPTIONS"] = "Options"
+L["S_MAPBAR_OPTIONSMENU_ARROWSPEED"] = "Arrow Update Speed"
+L["S_MAPBAR_OPTIONSMENU_ARROWSPEED_HIGH"] = "Fast"
+L["S_MAPBAR_OPTIONSMENU_ARROWSPEED_MEDIUM"] = "Medium"
+L["S_MAPBAR_OPTIONSMENU_ARROWSPEED_REALTIME"] = "Real Time"
+L["S_MAPBAR_OPTIONSMENU_ARROWSPEED_SLOW"] = "Slow"
 L["S_MAPBAR_OPTIONSMENU_SHARE"] = "Share This AddOn"
 L["S_MAPBAR_OPTIONSMENU_SHARE_DESC"] = [=[If you want to be one who
 brings this addon to your friends!]=]

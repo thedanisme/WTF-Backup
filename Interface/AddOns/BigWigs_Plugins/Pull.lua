@@ -10,6 +10,7 @@ if not plugin then return end
 --
 
 local L = LibStub("AceLocale-3.0"):GetLocale("BigWigs: Plugins")
+local GetInstanceInfo = BigWigsLoader.GetInstanceInfo
 local isLogging = false
 
 -------------------------------------------------------------------------------
@@ -19,6 +20,7 @@ local isLogging = false
 plugin.defaultDB = {
 	countType = "emphasized",
 	combatLog = false,
+	gearCheck = true,
 }
 
 do
@@ -61,7 +63,6 @@ do
 				type = "toggle",
 				name = "Bad Gear Check",
 				desc = "Scan your equipped gear for potentially bad items when starting a pull timer.",
-				disabled = function() return true end,
 				order = 3,
 				width = "full",
 			},
@@ -126,14 +127,31 @@ do
 			end
 		end
 		FlashClientIcon()
+		BigWigs:Print(L.pullStarted:format(isDBM and "DBM" or "BigWigs", nick))
+		timer = self:ScheduleRepeatingTimer(printPull, 1, self)
 
 		if self.db.profile.combatLog then
 			isLogging = true
 			LoggingCombat(isLogging)
 		end
 
-		BigWigs:Print(L.pullStarted:format(isDBM and "DBM" or "BigWigs", nick))
-		timer = self:ScheduleRepeatingTimer(printPull, 1, self)
+		if self.db.profile.gearCheck then
+			local _, zoneType = GetInstanceInfo()
+			if zoneType == "raid" and IsInRaid() then
+				for i = 1, 18 do
+					-- 0 Poor/Grey, 1 Common/White, 2 Uncommon/Green, 3 Rare/Blue, 4 Epic/Purple, 5 Legendary, 6 Artifact, 7 Heirloom
+					local quality = GetInventoryItemQuality("player", i)
+					local itemId = GetInventoryItemID("player", i)
+					local _, _, _, iLevel = GetItemInfo(itemId or 0) -- XXX this doesn't compensate for items that drop with multiple item levels
+					if quality and (quality < 2 or iLevel < 300) then
+						local msg = ("Bad Item Equipped: %s"):format(GetInventoryItemLink("player", i))
+						BigWigs:Print(msg)
+						self:SendMessage("BigWigs_Message", self, nil, msg, "Personal")
+					end
+				end
+			end
+		end
+
 		self:SendMessage("BigWigs_Message", self, nil, L.pullIn:format(timeLeft), "Attention")
 		self:SendMessage("BigWigs_Sound", self, nil, "Long")
 		self:SendMessage("BigWigs_StartBar", self, nil, L.pull, seconds, "Interface\\Icons\\ability_warrior_charge")

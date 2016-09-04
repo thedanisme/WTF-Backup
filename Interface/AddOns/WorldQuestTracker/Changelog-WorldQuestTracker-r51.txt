@@ -1,6 +1,20 @@
+2016-09-04  Tercio  <Tercio>
+
+[a0919818d52b] [tip]
+* WorldQuestTracker.lua:
+
+- added option to set the arrow update speed.
+
+
+[4c92fca22d6d]
+* libs/DF/fw.lua:
+
+- framework revision up.
+
+
 2016-09-03  Tercio  <Tercio>
 
-[6db137adc05f] [tip]
+[6db137adc05f]
 * WorldQuestTracker.lua:
 
 - trying a MoveAnything compatibility fix.
@@ -219,20 +233,5 @@ updates.
 - fixed an issue where track indicators on world map wasn't sync with the tracker.
 - added more tutorials.
 - 4th round of polish.
-
-
-[a514a3a48751]
-* WorldQuestTracker.lua:
-
-- fixed bug when leaving a dungeon the tracker won't show again.
-- added more stuff.
-
-
-2016-07-30  Tercio  <Tercio>
-
-[91943d032ce9]
-* WorldQuestTracker.lua, libs/DF/dropdown.lua, libs/DF/dropdown.xml, libs/DF/fw.lua, libs/DF/panel.lua, media/ArrowGridTGlow.blp, media/border_zone_blueT.blp, media/border_zone_greenT.blp, media/border_zone_pinkT.blp, media/border_zone_whiteT.blp:
-
-- 3rd pass of polish.
 
 
