@@ -1641,10 +1641,10 @@ EncounterDetailsDB = {
 		[76715] = {
 			["school"] = 32,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Twilight Beguiler",
 		},
@@ -6291,15 +6291,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "High Nethermancer Zerevor",
 		},
-		[40076] = {
-			["school"] = 8,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Coilskar Wrangler",
-		},
 		[193234] = {
 			["school"] = 1,
 			["type"] = "DEBUFF",
@@ -6307,6 +6298,16 @@ EncounterDetailsDB = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
+		},
+		[158708] = {
+			["school"] = 8,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Battle Medic Rogg",
 		},
 		[166572] = {
 			["school"] = 1,
@@ -6355,16 +6356,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Glazer",
 		},
-		[158708] = {
-			["school"] = 8,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Battle Medic Rogg",
-		},
 		[76026] = {
 			["school"] = 32,
 			["type"] = "DEBUFF",
@@ -6375,6 +6366,17 @@ EncounterDetailsDB = {
 				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
 			["source"] = "Commander Ulthok",
+		},
+		[149941] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Ruination",
 		},
 		[182031] = {
 			["school"] = 32,
@@ -6513,14 +6515,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Malignant Trogg",
 		},
-		[193698] = {
-			["school"] = 64,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Lady Hatecoil",
-		},
 		[162415] = {
 			["school"] = 1,
 			["type"] = "DEBUFF",
@@ -6539,6 +6533,15 @@ EncounterDetailsDB = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
 			["source"] = "Essence of Suffering",
+		},
+		[156852] = {
+			["school"] = 8,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Kromog",
 		},
 		[154110] = {
 			["school"] = 1,
@@ -6575,15 +6578,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Mystic Tornado",
 		},
-		[175020] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-			},
-			["source"] = "Blackhand",
-		},
 		[105444] = {
 			["school"] = 4,
 			["type"] = "BUFF",
@@ -6600,6 +6594,15 @@ EncounterDetailsDB = {
 				["SPELL_CAST_START"] = true,
 			},
 			["source"] = "Glazer",
+		},
+		[175020] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+			},
+			["source"] = "Blackhand",
 		},
 		[200404] = {
 			["school"] = 4,
@@ -6708,13 +6711,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Blistering Tentacle",
 		},
-		[201121] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
+		[164275] = {
+			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Mindflayer Kaahrj",
+			["source"] = "Witherbark",
 		},
 		[197556] = {
 			["school"] = 1,
@@ -6815,14 +6819,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Grom'kar Grenadier",
 		},
-		[197541] = {
-			["school"] = 4,
-			["type"] = "DEBUFF",
+		[156601] = {
+			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Cordana Felsong",
+			["source"] = "Marak the Blooded",
 		},
 		[198564] = {
 			["school"] = 1,
@@ -6832,13 +6836,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Ularogg Cragshaper",
 		},
-		[103536] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
+		[83066] = {
+			["school"] = 8,
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Resonating Crystal",
+			["source"] = "Siamat",
 		},
 		[162500] = {
 			["school"] = 4,
@@ -6855,14 +6860,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Shivermaw",
 		},
-		[156601] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[197541] = {
+			["school"] = 4,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Marak the Blooded",
+			["source"] = "Cordana Felsong",
 		},
 		[157055] = {
 			["school"] = 1,
@@ -7032,21 +7037,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Admiral Gar'an",
 		},
-		[84987] = {
-			["school"] = 8,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Siamat",
-		},
-		[154301] = {
-			["school"] = 2,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Spiteful Arbiter",
-		},
 		[105834] = {
 			["school"] = 4,
 			["type"] = "BUFF",
@@ -7054,6 +7044,22 @@ EncounterDetailsDB = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
 			["source"] = "Hideous Amalgamation",
+		},
+		[187053] = {
+			["school"] = 4,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Infernal Doombringer",
+		},
+		[173322] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
 		},
 		[41294] = {
 			["school"] = 1,
@@ -7063,12 +7069,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Essence of Suffering",
 		},
-		[173322] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[84987] = {
+			["school"] = 8,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
+			["source"] = "Siamat",
 		},
 		[200359] = {
 			["school"] = 1,
@@ -7166,12 +7172,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Resonating Crystal",
 		},
-		[185008] = {
-			["school"] = 32,
+		[162491] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Shackled Soul",
+			["source"] = "Railmaster Rocketspark",
 		},
 		[75907] = {
 			["school"] = 1,
@@ -7349,12 +7356,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Archdruid Glaidalis",
 		},
-		[155841] = {
+		[153794] = {
 			["school"] = 1,
 			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Enforcer Sorka",
+			["source"] = "Rukhran",
 		},
 		[185590] = {
 			["school"] = 4,
@@ -7430,14 +7439,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Oakheart",
 		},
-		[153794] = {
+		[155841] = {
 			["school"] = 1,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Rukhran",
+			["source"] = "Enforcer Sorka",
 		},
 		[156610] = {
 			["school"] = 8,
@@ -7551,20 +7558,19 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Commander Tharbek",
 		},
+		[185008] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Shackled Soul",
+		},
 		[199337] = {
 			["school"] = 1,
 			["token"] = {
 				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
 			["source"] = "Bear Trap",
-		},
-		[162491] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Railmaster Rocketspark",
 		},
 		[154396] = {
 			["school"] = 4,
@@ -7608,14 +7614,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Morchok",
 		},
-		[187053] = {
-			["school"] = 4,
-			["type"] = "BUFF",
+		[154301] = {
+			["school"] = 2,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Infernal Doombringer",
+			["source"] = "Spiteful Arbiter",
 		},
 		[168383] = {
 			["school"] = 1,
@@ -7766,14 +7771,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Hideous Amalgamation",
 		},
-		[83066] = {
-			["school"] = 8,
-			["type"] = "BUFF",
+		[103536] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Siamat",
+			["source"] = "Resonating Crystal",
 		},
 		[193717] = {
 			["school"] = 64,
@@ -7837,14 +7841,13 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 		},
-		[164275] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[201121] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Witherbark",
+			["source"] = "Mindflayer Kaahrj",
 		},
 		[155081] = {
 			["school"] = 4,
@@ -7942,14 +7945,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Oregorger",
 		},
-		[156852] = {
-			["school"] = 8,
-			["type"] = "BUFF",
+		[193698] = {
+			["school"] = 64,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Kromog",
+			["source"] = "Lady Hatecoil",
 		},
 		[164294] = {
 			["school"] = 8,
@@ -8060,16 +8062,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Battle Medic Rogg",
 		},
-		[149941] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
+		[40076] = {
+			["school"] = 8,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Ruination",
+			["source"] = "Coilskar Wrangler",
 		},
 		[83971] = {
 			["school"] = 32,

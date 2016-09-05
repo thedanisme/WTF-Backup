@@ -58,13 +58,13 @@ DugisGuideViewerProfiles = {
 					[42] = {
 						["checked"] = false,
 					},
+					[6] = {
+						["checked"] = true,
+					},
 					[203] = {
 						["checked"] = 0,
 					},
 					["FirstTime"] = false,
-					[6] = {
-						["checked"] = true,
-					},
 					[72] = {
 						["checked"] = true,
 					},
@@ -338,6 +338,9 @@ DugisGuideViewerProfiles = {
 					[75] = {
 						["checked"] = true,
 					},
+					[107] = {
+						["checked"] = "None",
+					},
 					[76] = {
 						["checked"] = true,
 					},
@@ -445,9 +448,6 @@ DugisGuideViewerProfiles = {
 					[74] = {
 						["checked"] = true,
 					},
-					[107] = {
-						["checked"] = "None",
-					},
 					["ModelViewer"] = {
 						["pos_x"] = false,
 					},
@@ -493,13 +493,13 @@ DugisGuideViewerProfiles = {
 					[42] = {
 						["checked"] = false,
 					},
+					[203] = {
+						["checked"] = 0,
+					},
 					[6] = {
 						["checked"] = true,
 					},
 					["FirstTime"] = false,
-					[203] = {
-						["checked"] = 0,
-					},
 					[76] = {
 						["checked"] = true,
 					},

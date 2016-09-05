@@ -1,0 +1,10 @@
+
+VWQL = {
+	["Sort"] = 5,
+	["Emmarosa-Stormrage"] = {
+		["Quests"] = {
+		},
+		["Filter"] = 63,
+	},
+	["VERSION"] = 17,
+}
