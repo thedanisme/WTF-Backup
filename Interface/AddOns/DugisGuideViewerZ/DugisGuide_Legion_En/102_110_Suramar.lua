@@ -28,14 +28,14 @@ A Bringer of the Light |QID|44004| |N|(npc:112130) in {Chamber of the Guardian} 
 
 R The Vault of Lights |QID|44004| |N|Use the portal to travel to {The Vault of Lights} (28.41, 34.58)| |Z|1014 12| |F|1092 0|
 C The Prophet and the Butcher |SID|30854|1| |N|Seek out (npc:109143) in {The Vault of Lights} (34.10, 66.32)| |Z|1091 0| |NPC|109143| |QID|44004|
-A Nobundo's Last Stand |QID|43705| |N|(npc:110695) in {The Crystal Hall}<br/><br/><b>Destroy Fel Portals and rescue (npc:109711) in each waypoint (37.88, 56.14) (58.93, 71.79) (57.79, 58.10) (48.71, 37.44) (44.94, 9.26)| |Z|1091 0| |NPC|110695|
-N (npc:110695) |QID|43705.1| |N|Speak to (npc:110695) to begin the assault in {The Crystal Hall} (44.94, 9.26)| |Z|1091 0| |NPC|110695|
-N Defeat First Assault |QID|43705.2| |N|Defend (npc:110695) and defeat the first Assault in {The Crystal Hall} (44.05, 11.76)| |Z|1091 0| |NPC|110776, 111086, 110777, 110779|
-N Defeat First Assault |QID|43705.3| |N|Defend (npc:110695) and defeat the second Assault defeated, in {The Crystal Hall} (45.20, 8.80)| |Z|1091 0| |NPC|110776, 111086, 110777, 110779|
-N Defeat First Assault |QID|43705.4| |N|Defend (npc:110695) and defeat the third Assault defeated, in {The Crystal Hall} (44.51, 7.08)| |Z|1091 0| |NPC|110776, 111086, 110777, 110779|
-K (npc:110781) |QID|43705.5| |N|Kill (npc:110781) in {The Crystal Hall} (44.64, 8.89)| |Z|1091 0|
-C Nobundo's Last Stand |QID|43705| |N|Defend (npc:110695) from the Legion Assault in {The Crystal Hall} (44.93, 10.12)| |Z|1091 0| |NPC|110695|
-T Nobundo's Last Stand |QID|43705| |N|(npc:110695) in {The Crystal Hall} (44.84, 9.37)| |Z|1091 0| |NPC|110695|
+A Nobundo's Last Stand |QID|43705| |N|(npc:110695) in {The Crystal Hall}<br/><br/><b>Destroy Fel Portals and rescue (npc:109711) in each waypoint (37.88, 56.14) (58.93, 71.79) (57.79, 58.10) (48.71, 37.44) (44.94, 9.26)| |Z|1091 0| |NPC|110695| |OID|44004|
+N (npc:110695) |QID|43705.1| |N|Speak to (npc:110695) to begin the assault in {The Crystal Hall} (44.94, 9.26)| |Z|1091 0| |NPC|110695| |OID|44004|
+N Defeat First Assault |QID|43705.2| |N|Defend (npc:110695) and defeat the first Assault in {The Crystal Hall} (44.05, 11.76)| |Z|1091 0| |NPC|110776, 111086, 110777, 110779| |OID|44004|
+N Defeat First Assault |QID|43705.3| |N|Defend (npc:110695) and defeat the second Assault defeated, in {The Crystal Hall} (45.20, 8.80)| |Z|1091 0| |NPC|110776, 111086, 110777, 110779| |OID|44004|
+N Defeat First Assault |QID|43705.4| |N|Defend (npc:110695) and defeat the third Assault defeated, in {The Crystal Hall} (44.51, 7.08)| |Z|1091 0| |NPC|110776, 111086, 110777, 110779| |OID|44004|
+K (npc:110781) |QID|43705.5| |N|Kill (npc:110781) in {The Crystal Hall} (44.64, 8.89)| |Z|1091 0| |OID|44004|
+C Nobundo's Last Stand |QID|43705| |N|Defend (npc:110695) from the Legion Assault in {The Crystal Hall} (44.93, 10.12)| |Z|1091 0| |NPC|110695| |OID|44004|
+T Nobundo's Last Stand |QID|43705| |N|(npc:110695) in {The Crystal Hall} (44.84, 9.37)| |Z|1091 0| |NPC|110695| |OID|44004|
 C Destroy Fel Portals |SID|30864|2| |N|Destroy Fel Portals in {The Crystal Hall} (36.40, 10.46) (37.30, 28.17) (37.30, 28.17)| |Z|1091 0| |QID|44004|
 C (npc:109711) |SID|30876|2| |N|Rescue (npc:109711) in {The Vault of Lights} (46.80, 63.31)| |Z|1091 0| |NPC|109711| |QID|44004|
 C Return to the Prophet |SID|30946|3| |N|Return to (npc:109143) at {The Vault of Lights} (33.94, 66.39)| |Z|1091 0| |NPC|109143| |QID|44004|
@@ -109,7 +109,7 @@ A Do The Thing! |QID|42396| |N|(npc:107302) in {Sundered Shoals}, he wanders aro
 N (item:(item:137383) |QID|42396.1| |N|Find and collect (item:137383) from the ground (15.94,54.82)| |Z|1033 0|
 T Do The Thing! |QID|42396| |N|(npc:107302) in {Sundered Shoals}, he wanders around the area (15.89,55.00)| |Z|1033 0| |NPC|107302|
 A Mrgls of Endearment |QID|42688| |N|(npc:107302) in {Sundered Shoals}, he wanders around the area (15.89,55.00)| |Z|1033 0| |NPC|107302|
-K (npc:109803) |QID|42688.1| |N|Kill (npc:109803) and collect 4 (item:107302) in {Sundered Shoals} (14.99,54.75)| |Z|1033 0| |NPC|109803|
+K (npc:109803) |QID|42688.1| |N|Kill (npc:109803) and collect 4 ???? in {Sundered Shoals} (14.99,54.75)| |Z|1033 0| |NPC|109803|
 N (npc:107302) |QID|42688.2| |N|Speak to (npc:107302) to show the fine sands in {Sundered Shoals} (15.21,52.38)| |Z|1033 0| |NPC|107302|
 T Mrgls of Endearment |QID|42688| |N|(npc:107302) in {Sundered Shoals}, he wanders around the area (15.89,55.00)| |Z|1033 0| |NPC|107302|
 A A Mlrglrmg For Grlmrgl |QID|42728| |N|(npc:107302) in {Sundered Shoals}, he wanders around the area (15.89,55.00)| |Z|1033 0| |NPC|107302|
@@ -173,7 +173,7 @@ T Turtle Powered |QID|40368| |N|(npc:99788) in {Anora Hollow} (37.49,40.69) (40.
 A Something in the Water |QID|40348| |N|(npc:99788) in {Anora Hollow} (43.41,41.70)| |Z|1033 0| |NPC|99788|
 A Purge the Unclean |QID|40370| |N|(npc:99788) in {Anora Hollow} (43.41,41.70)| |Z|1033 0| |NPC|99788|
 K (npc:99859) |QID|40370.1| |N|Kill (npc:99859) to cleanse the Corruption in {Tel'anor} (44.16,41.70) (46.08,43.69) (47.38,44.05) (47.65,42.74) (48.50,39.29) (47.38,36.65)| |Z|1033 0| |NPC|99859|
-C Something in the Water |QID|99789 |QID|40348.1| |N|Kill 12 (npc:99789) in {Tel'anor} (47.38,36.65)| |Z|1033 0| |NPC|99789|
+C Something in the Water |QID|99789| |QID|40348.1| |N|Kill 12 (npc:99789) in {Tel'anor} (47.38,36.65)| |Z|1033 0| |NPC|99789|
 
 T Something in the Water |QID|40348| |N|(npc:99788) in {Anora Hollow} (43.41,41.70)| |Z|1033 0| |NPC|99788|
 T Purge the Unclean |QID|40370| |N|(npc:99788) in {Anora Hollow} (43.41,41.70)| |Z|1033 0| |NPC|99788|
@@ -356,13 +356,13 @@ A Not Their Last Stand |QID|40949| |N|(npc:106095) in {Lower Gardens} (28.65,18.
 N (npc:102031) |QID|40883.2| |N|Speak to (npc:102031) to perform the rite (30.79,17.91)| |Z|1033 0| |NPC|102031|
 N (npc:101780) |QID|40949.1| |N|Click on 5 (npc:101780) to send them away (29.97,18.22)| |Z|1033 0| |NPC|101780|
 N (item:133675) |QID|41030.1| |N|Collect 7 (item:133675) from enemies around this area (29.97,18.22)| |Z|1033 0| |NPC|101784|
-N (npc:102030) |QID|40883.3| |N|Speak to (npc:102030) to perform the rite (33.71,18.13)| |Z|1033 0| |NPC|102030|
+N (npc:102030) |QID|40883.3| |N|Go down the stairs and speak to (npc:102030) to perform the rite (32.25,18.00) (33.71,18.13)| |Z|1033 0| |NPC|102030|
 
 T Fate of the Guard |QID|40883| |N|(npc:101767) in {Moonfall Roost} (33.72,18.08)| |Z|1033 0| |NPC|101767|
 T Sigil Reclamation |QID|41030| |N|(npc:101767) in {Moonfall Roost} (33.72,18.08)| |Z|1033 0| |NPC|101767|
 T Not Their Last Stand |QID|40949| |N|(npc:106182) in {Moonfall Roost} (33.71,18.02)| |Z|1033 0| |NPC|106182|
 A Take Them in Claw |QID|40963| |N|(npc:101767) in {Moonfall Roost} (33.72,18.09)| |Z|1033 0| |NPC|101767|
-C Take Them in Claw |QID|40963| |NUse the (item:139882) on 3 Nightborne enemies (30.87,18.19)| |Z|1033 0|
+C Take Them in Claw |QID|40963| |N|Use the (item:139882) on 3 Nightborne enemies (30.87,18.19)| |Z|1033 0|
 T Take Them in Claw |QID|40963| |N|(npc:102425) in {Moonfall Roost} (31.25,18.71) (31.91,20.54) (31.44,23.18)| |Z|1033 0| |NPC|102425|
 A The Rift Between |QID|40964| |N|(npc:102425) in {Moonfall Roost} (31.44,23.18)| |Z|1033 0| |NPC|102425|
 A Recovering Stolen Power |QID|40968| |N|(npc:102425) in {Moonfall Roost} (31.44,23.18)| |Z|1033 0| |NPC|102425|
@@ -379,7 +379,8 @@ N (item:133900) |QID|40967.3| |N|Collect (item:133900) in {The Athenaeum} (34.06
 N (item:133898) |QID|40967.1| |N|Collect (item:133898) in {The Athenaeum} (36.37,16.75)| |Z|1033 0|
 C Stop the Spell Seekers |QID|41032| |N|Click on 3 Spell Seeker Portals to close them (35.43,21.49)| |Z|1033 0|
 C Lay Waste, Lay Mines |QID|40965| |N|Use the (item:133882) to lure and kill 50 Nightborne (35.43,21.49)| |Z|1033 0|
-N (item:133956) } |QID|40968.1| |N|Use the (item:133957) to collect 10 (item:133956) (35.43,21.49)| |Z|1033 0|
+N (item:133957) |QID|40968.1| |N|Collect 10 (item:133957) from the Nightborne (35.43,21.49)| |Z|1033 0| |L|133957 10|
+N (item:133956)|QID|40968.1| |N|Use the (item:133957) to create a(item:133956) (35.43,21.49)| |Z|1033 0| |U|133957|
 T Recovering Stolen Power |QID|40968| |N|Field turnin|
 A Waiting for Revenge |QID|41109| |N|Auto quest|
 T Precious Little Left |QID|40967| |N|(npc:101768) in {The Athenaeum} (36.43,22.40)| |Z|1033 0| |NPC|101768|
@@ -499,7 +500,7 @@ T Leyline Feed: |QID|43587| |N|Leyline Feed in {Elor'shan}, requires 250 (cur:11
 R Jandvik |QID|40907| |N|Travel to {Jandvik} (65.10,51.11)| |Z|1033 0|
 A Removing Obstacles |QID|40907| |N|(npc:40907) in {Jandvik}, She walks around, so you may need to search a bit for her (65.10,51.11)| |Z|1033 0| |NPC|40907|
 K (npc:102738) |QID|40907.1| |N|Kill (npc:102738) in {Jandvik} (65.87,51.16) (68.48,51.15) (69.07,53.21)| |Z|1033 0| |NPC|102738|
-K (npc:102739) |QID|102739 |QID|40907.2| |N|Kill (npc:102739) in {Jandvik} (68.93,50.96) (68.62,48.10) (69.20,46.82)| |Z|1033 0| |NPC|102739|
+K (npc:102739) |QID|40907.2| |N|Kill (npc:102739) in {Jandvik} (68.93,50.96) (68.62,48.10) (69.20,46.82)| |Z|1033 0| |NPC|102739|
 T Removing Obstacles |QID|40907| |N|(npc:99948) in {Jandvik} (69.59,47.91) (70.58,48.81)| |Z|1033 0| |NPC|99948|
 A Jarl Come Back Now |QID|40908| |N|(npc:99948) in {Jandvik} (70.58,48.81)| |Z|1033 0| |NPC|99948|
 T Jarl Come Back Now |QID|40908| |N|(npc:99559) in {Jandvik} (71.12,50.19) (70.78,53.56) (69.00,54.07)| |Z|1033 0| |NPC|99559|
@@ -509,7 +510,7 @@ A Bite of the Sashj'tar |QID|40331| |N|(npc:99544) in {Jandvik} (69.05,54.15)| |
 
 N (item:132371) |QID|40332.1| |N|Collect 6 (item:132371) various shaped pieces of wood on the ground around {Azuregale Bay} (70.76,55.59)| |Z|1033 0|
 
-R Muddledeep Cavern |N|Travel to {Muddledeep Cavern} (69.93,57.06) (69.33,58.84)| |Z|1033 0|
+R Muddledeep Cavern |QID|40320| |N|Travel to {Muddledeep Cavern} (69.93,57.06) (69.33,58.84)| |Z|1033 0|
 N (npc:99562) |QID|40320.1| |N|Rescue (npc:99562) in {Muddledeep Cavern} (69.28,57.80)| |Z|1033 0| |NPC|99607|
 N (npc:99563) |QID|40320.2| |N|Rescue (npc:99563) in {Muddledeep Cavern} (69.16,58.73) (70.00,60.36) (68.91,59.80)| |Z|1033 0| |NPC|99563|
 N (npc:99564) |QID|40320.3| |N|Rescue (npc:99564) in {Muddledeep Cavern} (69.36,59.40) (68.51,57.48) (68.05,58.43)| |Z|1033 0| |NPC|99564|
@@ -530,10 +531,10 @@ K (npc:100100) |QID|40334.1| |N|Kill (npc:100100) and collect 4 (item:133960) (6
 T Fisherman's Tonic |QID|40334| |N|(npc:102334) should appear next to you in {Azuregale Cove} (69.23,69.15)| |NPC|102334|
 A Testing the Waters |QID|41034| |N|(npc:102334) should appear next to you in {Azuregale Cove} (69.23,69.15)| |NPC|102334|
 
-R Azuregale Hollow |N|Travel to {Azuregale Hollow}, an underwater cave. (71.25,71.07) (73.27,68.34) (77.10,70.08)| |Z|1033 0|
+R Azuregale Hollow |QID|41034| |N|Travel to {Azuregale Hollow}, an underwater cave. (71.25,71.07) (73.27,68.34) (77.10,70.08)| |Z|1033 0|
 K (npc:102841) |QID|41034.2| |N|Kill (npc:102841) in {Azuregale Hollow} (75.87,72.68)| |Z|1033 0| |NPC|102841|
-K (npc:102840) |QID|102841 |QID|41034.2| |N|Kill (npc:102840) in {Azuregale Bay} (80.22,64.03)| |Z|1033 0| |NPC|102840|
-K (npc:102844) |QID|102841 |QID|41034.2| |N|Kill (npc:102844) in {Azuregale Bay} (77.91,58.39)| |Z|1033 0| |NPC|102844|
+K (npc:102840) |QID|41034.2| |N|Kill (npc:102840) in {Azuregale Bay} (80.22,64.03)| |Z|1033 0| |NPC|102840|
+K (npc:102844) |QID|41034.2| |N|Kill (npc:102844) in {Azuregale Bay} (77.91,58.39)| |Z|1033 0| |NPC|102844|
 
 R Jandvik |QID|41034| |N|Travel to {Jandvik} (72.63,53.12)| |Z|1033 0|
 T Testing the Waters |QID|41034| |N|(npc:102845) in {Jandvik} (72.63,53.12) (70.60,49.16)| |Z|1033 0| |NPC|102845|
@@ -549,7 +550,7 @@ A Breaking Down the Big Guns |QID|41709| |N|(npc:102390) in {Sashj'tar Grotto} (
 A Finding Brytag |QID|41606| |N|(npc:104630) in {Sashj'tar Grotto} (75.90,52.60)| |Z|1033 0| |NPC|104630|
 A Sunken Foes |QID|41425| |N|(npc:104630) in {Sashj'tar Grotto} (75.90,52.60)| |Z|1033 0| |NPC|104630|
 
-R Azuregale Bay |N|Travel to {Azuregale Bay} (77.54,59.80)| |Z|1033 0|
+R Azuregale Bay |QID|41410| |N|Travel to {Azuregale Bay} (77.54,59.80)| |Z|1033 0|
 A Dry Powder |QID|41410| |N|(npc:104586) in {Azuregale Bay}, he's underwater inside the broken ship (77.54,59.80)| |Z|1033 0| |NPC|104586|
 
 N (item:135478) |QID|41410.1| |N|Collect 5 (item:135478) from wooden barrels in {Azuregale Bay} (76.93,63.26)| |Z|1033 0|
@@ -743,7 +744,7 @@ N Find Brambley's Cage |QID|41140.3| |N|Click Opened Cage (28.92,85.02) (28.41,8
 A Leyline Feed: Halls of the Eclipse |QID|43594| |N|Leyline Feed in {Felsoul Hold} (27.26,86.42)| |Z|1033 0|
 T Leyline Feed: Halls of the Eclipse |QID|43594| |N|Leyline Feed in {Felsoul Hold}, requires 250 (cur:1155) (27.26,86.42)| |Z|1033 0|
 
-K (npc:99485)  |QID|134028 |QID|41098.1| |N|Kill (npc:99485) collect (item:134028) in {Felsoul Hold} (26.08,85.78)| |Z|1033 0| |NPC|99485|
+K (npc:99485) |QID|41098.1| |N|Kill (npc:99485) collect (item:134028) in {Felsoul Hold} (26.08,85.78)| |Z|1033 0| |NPC|99485|
 N (item:134080) |QID|41140.4| |N|Collect (item:134080) from the Soul Vaults keyring (27.53,88.94)| |Z|1033 0|
 N Release the Nightfallen Prisoner |QID|41140.5| |N|Click locked cage and release the Nightfallen Prisoner (27.08,88.30) (27.09,86.05)| |Z|1033 0|
 T Search and Rescue! |QID|41140| |N|(npc:102365) in {Felsoul Hold} (27.09,86.05)| |Z|1033 0| |NPC|102365|

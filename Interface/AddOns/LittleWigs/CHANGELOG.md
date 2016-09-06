@@ -1,6 +1,7 @@
 # LittleWigs
 
-## [v7.0.6-1-g83217d2](https://github.com/BigWigsMods/LittleWigs/tree/83217d2777c5018001234d53ca6204bec02e9e6e) (2016-09-05) [](#top)
-[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v7.0.6...83217d2777c5018001234d53ca6204bec02e9e6e)
+## [v7.0.6-2-gf7af5b3](https://github.com/BigWigsMods/LittleWigs/tree/f7af5b3018d07c43d807aeb66e58bc9b8c4b4eaa) (2016-09-06) [](#top)
+[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v7.0.6...f7af5b3018d07c43d807aeb66e58bc9b8c4b4eaa)
 
+-   AssaultOnVioletHold/Betrug: Fix Lua error  
 -   VaultOfTheWardens/CordanaFelsong: Fix Lua error  

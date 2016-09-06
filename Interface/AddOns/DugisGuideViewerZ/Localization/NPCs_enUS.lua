@@ -48501,6 +48501,9 @@ function NPC:Initialize()
 [98306] = "Cliffclutch Screecher",
 [97729] = "Disturbed Apparition",
 [97732] = "Disturbed Spectre",
+[101784] = "Nightborne Infiltrator",
+[102030] = "Kailea Windfeather",
+[102426] = "Beakbuck",
 }
 	end
 

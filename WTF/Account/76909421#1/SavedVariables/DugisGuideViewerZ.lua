@@ -59,12 +59,12 @@ DugisGuideViewerProfiles = {
 					[42] = {
 						["checked"] = false,
 					},
+					[203] = {
+						["checked"] = 0,
+					},
 					["FirstTime"] = false,
 					[6] = {
 						["checked"] = true,
-					},
-					[203] = {
-						["checked"] = 0,
 					},
 					[72] = {
 						["checked"] = true,
@@ -470,11 +470,11 @@ DugisGuideViewerProfiles = {
 					[74] = {
 						["checked"] = true,
 					},
-					[203] = {
-						["checked"] = 0,
-					},
 					["ModelViewer"] = {
 						["pos_x"] = false,
+					},
+					[203] = {
+						["checked"] = 0,
 					},
 				},
 			},
@@ -518,12 +518,12 @@ DugisGuideViewerProfiles = {
 					[42] = {
 						["checked"] = false,
 					},
+					[6] = {
+						["checked"] = true,
+					},
 					["FirstTime"] = false,
 					[203] = {
 						["checked"] = 0,
-					},
-					[6] = {
-						["checked"] = true,
 					},
 					[76] = {
 						["checked"] = true,
@@ -956,6 +956,7 @@ CollectedWorldMapTrackingPoints = {
 			"1:2626794827:8719::M", -- [23]
 			"1:2626794827:8719::M", -- [24]
 			"1:2630071632:8719::M", -- [25]
+			"1:2627646783:8719::M", -- [26]
 		},
 		["Dalaran70:10"] = {
 			"7:2138597237:96806:The Legerdemain Lounge:F", -- [1]
@@ -982,6 +983,7 @@ CollectedWorldMapTrackingPoints = {
 			"6:1860608683:96791::F", -- [22]
 			"7:1895211976:96790:Greyfang Enclave:F", -- [23]
 			"6:1895211976:96790::F", -- [24]
+			"2:1806158974:96823::M", -- [25]
 		},
 		["Azsuna:0"] = {
 			"6:2157870879:90086::F", -- [1]
