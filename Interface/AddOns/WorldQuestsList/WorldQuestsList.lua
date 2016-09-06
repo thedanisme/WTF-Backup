@@ -1,4 +1,4 @@
-local VERSION = 17
+local VERSION = 18
 
 --[[
 Special icons for rares, pvp or pet battle quests in list
@@ -29,6 +29,9 @@ Added ElvUI support
 Bugfixes
 
 Added icon on the flight map for recently chosen quest
+
+Added filters for pvp, pet battles & professions quests
+Added checkbox above map to disable WQL
 ]]
 
 local charKey = (UnitName'player' or "").."-"..(GetRealmName() or ""):gsub(" ","")
@@ -90,8 +93,11 @@ local filters = {
 	{OTHER,2^4},
 }
 local ActiveFilter = 2 ^ #filters - 1
+local ActiveFilterType
 
 local ActiveSort = 5
+
+local WorldMapHideWQLCheck
 
 local function TaskPOI_OnClick(self,button)
 	if not GExRT or VWQL.DisableArrow then
@@ -200,8 +206,13 @@ WorldQuestList:SetScript("OnEvent",function(self,event,...)
 		VWQL[charKey].Filter = VWQL[charKey].Filter and tonumber(VWQL[charKey].Filter) or ActiveFilter
 		ActiveFilter = VWQL[charKey].Filter
 		
+		VWQL[charKey].FilterType = VWQL[charKey].FilterType or {}
+		ActiveFilterType = VWQL[charKey].FilterType
+		
 		VWQL.Sort = VWQL.Sort and tonumber(VWQL.Sort) or ActiveSort
 		ActiveSort = VWQL.Sort
+		
+		WorldMapHideWQLCheck:SetChecked(not VWQL[charKey].HideMap)
 		
 		local _,_,arsc = GetItemInfoInstant(138227)
 		ArtifactRelicSubclass = arsc
@@ -421,6 +432,8 @@ local function WorldQuestList_LineName_OnClick(self,button)
 		
 		local info = line.data
 		if info and info.zoneMapID and GetCurrentMapAreaID() == 1007 then
+			WorldQuestList.mapC:Hide()
+			WorldQuestList.mapD:Hide()
 			SetMapByID(info.zoneMapID)
 			C_Timer.After(.1,function()
 				if not questID then
@@ -616,6 +629,15 @@ local function SetFilter(_, arg1, _, value)
 	WorldQuestList_Update()
 end
 
+local function SetFilterType(_, arg1, _, value)
+	if value then
+		ActiveFilterType[arg1] = true
+	else
+		ActiveFilterType[arg1] = nil
+	end
+	WorldQuestList_Update()
+end
+
 WorldQuestList.filterDropDown.Button:SetScript("OnClick",function(self)
 	UIDropDownMenu_Initialize(WorldQuestList.filterDropDown, function(self, level, menuList)
 		local info = UIDropDownMenu_CreateInfo()
@@ -651,6 +673,34 @@ WorldQuestList.filterDropDown.Button:SetScript("OnClick",function(self)
 				UIDropDownMenu_AddButton(info)
 			end
 		end
+		
+		info.text = TYPE
+		info.isTitle = true
+		info.hasArrow = false
+		info.notCheckable = true
+		UIDropDownMenu_AddButton(info)
+		
+		info.isTitle = false
+		info.disabled = false
+		info.notCheckable = false
+		info.text = PVP
+		info.hasArrow = false
+		info.arg1 = "pvp"
+		info.func = SetFilterType
+		info.checked = function() return not ActiveFilterType.pvp end
+		UIDropDownMenu_AddButton(info)	
+		
+		info.text = TRADE_SKILLS
+		info.arg1 = "prof"
+		info.func = SetFilterType
+		info.checked = function() return not ActiveFilterType.prof end
+		UIDropDownMenu_AddButton(info)		
+		
+		info.text = PET_BATTLE_PVP_QUEUE
+		info.arg1 = "pet"
+		info.func = SetFilterType
+		info.checked = function() return not ActiveFilterType.pet end
+		UIDropDownMenu_AddButton(info)			
 	end)
 	ToggleDropDownMenu(nil, nil, self:GetParent())
 	PlaySound("igMainMenuOptionCheckBoxOn")
@@ -911,8 +961,10 @@ function WorldQuestList_Update()
 				info.Wx_z = 1 - info.x
 				info.Wy_z = 1 - info.y
 				
-				QuestsCachedPosX[info.questId] = xR - abs(xR - xL) * info.x
-				QuestsCachedPosY[info.questId] = yT - abs(yT - yB) * info.y
+				if mapAreaID ~= 1014 then
+					QuestsCachedPosX[info.questId] = xR - abs(xR - xL) * info.x
+					QuestsCachedPosY[info.questId] = yT - abs(yT - yB) * info.y
+				end
 			end
 		end
 		
@@ -976,10 +1028,19 @@ function WorldQuestList_Update()
 						nameicon = -2
 					elseif worldQuestType == LE_QUEST_TAG_TYPE_PVP then
 						nameicon = -3
+						if ActiveFilterType.pvp then 
+							isValidLine = 0 
+						end
 					elseif worldQuestType == LE_QUEST_TAG_TYPE_PET_BATTLE then
 						nameicon = -4
+						if ActiveFilterType.pet then 
+							isValidLine = 0 
+						end
 					elseif worldQuestType == LE_QUEST_TAG_TYPE_PROFESSION then
 						nameicon = -5
+						if ActiveFilterType.prof then 
+							isValidLine = 0 
+						end
 					end
 					
 					if ( factionID ) then
@@ -1339,6 +1400,10 @@ WorldMapButton_HookShowHide:SetScript('OnShow',function()
 	if UpdateDB_Sch then
 		UpdateDB_Sch:Cancel()
 	end
+	if VWQL[charKey].HideMap then
+		WorldQuestList:Hide()
+		return
+	end
 	if WorldQuestList:IsVisible() then
 		WorldQuestList:Hide()
 		WorldQuestList:Show()
@@ -1361,6 +1426,19 @@ SlashCmdList["WQLSlash"] = function()
 end
 SLASH_WQLSlash1 = "/wql"
 SLASH_WQLSlash2 = "/worldquestslist"
+
+WorldMapHideWQLCheck = CreateFrame("CheckButton",nil,WorldMapFrame,"UICheckButtonTemplate")  
+WorldMapHideWQLCheck:SetPoint("TOPLEFT", WorldMapFrame, "TOPRIGHT", -130, 25)
+WorldMapHideWQLCheck.text:SetText("World Quests List")
+WorldMapHideWQLCheck:SetScript("OnClick", function(self,event) 
+	if not self:GetChecked() then
+		VWQL[charKey].HideMap = true
+		WorldQuestList:Hide()
+	else
+		VWQL[charKey].HideMap = nil
+		WorldQuestList:Show()
+	end
+end)
 
 
 local function DEV_CreateBorder(parent,sZ)

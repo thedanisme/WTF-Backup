@@ -379,7 +379,7 @@ local function LoadSettings()
 					[DGV_GAWINCRITERIACUSTOM] = {category = "Gear Scoring", text = "Loot Suggestion Priority", tooltip = "Determines how gear should be scored, in order of greatest to least importance.", module = "GearAdvisor",
 						options = {
 							"Active Talent Specialization",
-							"Inactive Talent Specialization",
+							--"Inactive Talent Specialization", --Secondary spec removed in Legion
 							"Highest Vendor Price"
 						}
 					},
@@ -2990,7 +2990,7 @@ SlashCmdList["DG"] = function(msg)
 	elseif string.find(msg, "dgr ")==1 then
 		DugisGuideViewer:RecordNote(string.sub(msg, 5))	
 	elseif string.find(msg, "way ")==1 then
-		local x,y,zone = string.sub(msg, 5):match("%s*([%d.]+)[,%s]+([%d.]+)%s*(.*)")
+		local x,y,zone = string.sub(msg, 5):match("%s*([%d.]+)[,%s?]+([%d.]+)%s*(.*)")
 		if zone == "" then zone = GetCurrentMapAreaID() end
 		if x and y then
 			DugisGuideViewer:AddManualWaypoint(tonumber(x)/100, tonumber(y)/100, zone)

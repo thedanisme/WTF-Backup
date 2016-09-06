@@ -4,9 +4,9 @@ PawnCommon = {
 	["AlignNumbersRight"] = true,
 	["ShowItemID"] = false,
 	["ShowValuesForUpgradesOnly"] = false,
-	["ShowEnchanted"] = false,
-	["ShownGettingStarted"] = true,
 	["Debug"] = false,
+	["ShownGettingStarted"] = true,
+	["ShowEnchanted"] = false,
 	["ColorTooltipBorder"] = true,
 	["IgnoreItemUpgrades"] = true,
 	["ShowTooltipIcons"] = true,
@@ -259,6 +259,9 @@ PawnCommon = {
 			["UnenchantedColor"] = "bfb74e",
 			["IconTexturePath"] = "Interface\\Icons\\INV_Sword_30",
 			["PerCharacterOptions"] = {
+				["Emmarosa-Stormrage"] = {
+					["Visible"] = true,
+				},
 			},
 			["ClassID"] = 4,
 			["UpgradesFollowSpecialization"] = true,
@@ -546,9 +549,6 @@ PawnCommon = {
 			["IconTexturePath"] = "Interface\\Icons\\Ability_Stealth",
 			["PerCharacterOptions"] = {
 				["Knutts-Turalyon"] = {
-					["Visible"] = true,
-				},
-				["Emmarosa-Stormrage"] = {
 					["Visible"] = true,
 				},
 			},
@@ -840,6 +840,6 @@ PawnCommon = {
 	["ButtonPosition"] = 2,
 	["IgnoreGemsWhileLeveling"] = true,
 	["ShowQuestUpgradeAdvisor"] = true,
-	["ShowLootUpgradeAdvisor"] = true,
 	["ShowUpgradesOnTooltips"] = true,
+	["ShowLootUpgradeAdvisor"] = true,
 }

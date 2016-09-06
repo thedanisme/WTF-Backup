@@ -1,3 +1,10 @@
+VER 3 0100000000000007 " " "INV_Misc_QuestionMark"
+#showtooltip Adrenaline Rush
+/use Adrenaline Rush
+/use Curse of the Dreadblades
+/use 13
+/use 14
+END
 VER 3 0100000000000002 " TotT(Focus)" "INV_Misc_QuestionMark"
 #showtooltip Tricks of the Trade
 /cast [@focus] Tricks of the Trade

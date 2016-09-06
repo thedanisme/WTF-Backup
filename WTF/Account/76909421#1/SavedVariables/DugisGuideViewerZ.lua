@@ -5,12 +5,13 @@ TaxiDataCollection = {
 }
 DugisGuideViewerProfiles = {
 	["profileKeys"] = {
-		["Druidann - Stormrage"] = "USE THIS",
+		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
 		["Yanlery - Stormrage"] = "USE THIS",
+		["Danoh - Stormrage"] = "USE THIS",
 		["Titte - Turalyon"] = "Titte - Turalyon",
 		["Talthalador - Stormrage"] = "USE THIS",
+		["Druidann - Stormrage"] = "USE THIS",
 		["Shhbbyisok - Stormrage"] = "Shhbbyisok - Stormrage",
-		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
 		["Emmarosa - Stormrage"] = "USE THIS",
 		["Dosnutz - Stormrage"] = "Dosnutz - Stormrage",
 	},
@@ -58,13 +59,13 @@ DugisGuideViewerProfiles = {
 					[42] = {
 						["checked"] = false,
 					},
+					["FirstTime"] = false,
 					[6] = {
 						["checked"] = true,
 					},
 					[203] = {
 						["checked"] = 0,
 					},
-					["FirstTime"] = false,
 					[72] = {
 						["checked"] = true,
 					},
@@ -164,6 +165,30 @@ DugisGuideViewerProfiles = {
 					},
 					[37] = {
 						["checked"] = true,
+					},
+				},
+			},
+		},
+		["Danoh - Stormrage"] = {
+			["char"] = {
+				["settings"] = {
+					[110] = {
+						["options"] = {
+							"None", -- [1]
+							"Active Talent Specialization", -- [2]
+							"Beast Mastery", -- [3]
+							"Marksmanship", -- [4]
+							"Survival", -- [5]
+						},
+					},
+					["SettingsRevision"] = 9,
+					["FirstTime"] = false,
+					["QuestRecordTable"] = {
+						["framePositions"] = {
+						},
+					},
+					["ModelViewer"] = {
+						["pos_x"] = false,
 					},
 				},
 			},
@@ -427,9 +452,6 @@ DugisGuideViewerProfiles = {
 					[112] = {
 						["checked"] = "Expand Down",
 					},
-					[203] = {
-						["checked"] = 0,
-					},
 					["EssentialsMode"] = 1,
 					[69] = {
 						["checked"] = false,
@@ -447,6 +469,9 @@ DugisGuideViewerProfiles = {
 					["SettingsRevision"] = 9,
 					[74] = {
 						["checked"] = true,
+					},
+					[203] = {
+						["checked"] = 0,
 					},
 					["ModelViewer"] = {
 						["pos_x"] = false,
@@ -493,13 +518,13 @@ DugisGuideViewerProfiles = {
 					[42] = {
 						["checked"] = false,
 					},
+					["FirstTime"] = false,
 					[203] = {
 						["checked"] = 0,
 					},
 					[6] = {
 						["checked"] = true,
 					},
-					["FirstTime"] = false,
 					[76] = {
 						["checked"] = true,
 					},
@@ -603,31 +628,6 @@ DugisGuideViewerProfiles = {
 				},
 			},
 		},
-		["Druidann - Stormrage"] = {
-			["char"] = {
-				["settings"] = {
-					[110] = {
-						["options"] = {
-							"None", -- [1]
-							"Active Talent Specialization", -- [2]
-							"Balance", -- [3]
-							"Feral", -- [4]
-							"Guardian", -- [5]
-							"Restoration", -- [6]
-						},
-					},
-					["SettingsRevision"] = 9,
-					["FirstTime"] = false,
-					["QuestRecordTable"] = {
-						["framePositions"] = {
-						},
-					},
-					["ModelViewer"] = {
-						["pos_x"] = false,
-					},
-				},
-			},
-		},
 		["Talthalador - Stormrage"] = {
 			["char"] = {
 				["settings"] = {
@@ -709,6 +709,31 @@ DugisGuideViewerProfiles = {
 							nil, -- [3]
 							"Vengeance", -- [4]
 						},
+					},
+				},
+			},
+		},
+		["Druidann - Stormrage"] = {
+			["char"] = {
+				["settings"] = {
+					[110] = {
+						["options"] = {
+							"None", -- [1]
+							"Active Talent Specialization", -- [2]
+							"Balance", -- [3]
+							"Feral", -- [4]
+							"Guardian", -- [5]
+							"Restoration", -- [6]
+						},
+					},
+					["SettingsRevision"] = 9,
+					["FirstTime"] = false,
+					["QuestRecordTable"] = {
+						["framePositions"] = {
+						},
+					},
+					["ModelViewer"] = {
+						["pos_x"] = false,
 					},
 				},
 			},
@@ -926,6 +951,11 @@ CollectedWorldMapTrackingPoints = {
 			"1:2627122542:8719::M", -- [18]
 			"1:2627122542:8719::M", -- [19]
 			"1:2627122542:8719::M", -- [20]
+			"1:2624959814:8719::M", -- [21]
+			"1:2624959814:8719::M", -- [22]
+			"1:2626794827:8719::M", -- [23]
+			"1:2626794827:8719::M", -- [24]
+			"1:2630071632:8719::M", -- [25]
 		},
 		["Dalaran70:10"] = {
 			"7:2138597237:96806:The Legerdemain Lounge:F", -- [1]
@@ -945,6 +975,13 @@ CollectedWorldMapTrackingPoints = {
 			"2:1834011808:96821::M", -- [15]
 			"10:1744651038:93538:Archaeology:F", -- [16]
 			"10:1778930675:92458:2259:M", -- [17]
+			"2:1800719238:96823::M", -- [18]
+			"12:2332401963:97007::F", -- [19]
+			"2:1796197063:96823::M", -- [20]
+			"2:1837681820:96821::M", -- [21]
+			"6:1860608683:96791::F", -- [22]
+			"7:1895211976:96790:Greyfang Enclave:F", -- [23]
+			"6:1895211976:96790::F", -- [24]
 		},
 		["Azsuna:0"] = {
 			"6:2157870879:90086::F", -- [1]
@@ -960,6 +997,10 @@ CollectedWorldMapTrackingPoints = {
 			"12:1764648442:35642::M", -- [7]
 			"12:1177574152:105986::F", -- [8]
 			"12:1177443238:105986::F", -- [9]
+			"12:1822582620:35642::M", -- [10]
+			"12:1171807049:105986::F", -- [11]
+			"12:1197103829:105986::F", -- [12]
+			"12:1197103829:105986::F", -- [13]
 		},
 		["ThunderTotem:0"] = {
 			"7:1916045730:97852:Thunder Totem:F", -- [1]
@@ -978,6 +1019,7 @@ CollectedWorldMapTrackingPoints = {
 		["Suramar:0"] = {
 			"7:1571125213:97140:Shal'Aran:F", -- [1]
 			"10:1296468120:92265:3100:M", -- [2]
+			"12:1570142270:98548::M", -- [3]
 		},
 		["ValhallasWarriorOrderHome:1"] = {
 			"12:2442085643:112392::M", -- [1]

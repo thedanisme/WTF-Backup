@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0008,
+	["LastVersion"] = 2.0009,
 	["LastPlayerFullName"] = "Talthalador-Stormrage",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,

@@ -6147,6 +6147,14 @@ WorldMapSize = {
 			["yOffset"] = 1349.1700439453,
 		},
 	},	
+	[1046] = {
+		[1] = {
+			["width"] = 1900,
+			["height"] = 1266.669921875,
+			["xOffset"] = -5439.580078125,
+			["yOffset"] = 2806.25
+		},
+	},	
 }
 
 MicroDungeonSize = {

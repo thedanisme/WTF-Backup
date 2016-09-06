@@ -258,7 +258,7 @@ BestInSlotDB = {
 				[6] = 66,
 			},
 		},
-		["Dosnutz - Stormrage"] = {
+		["Llamama - Stormrage"] = {
 			["windowpos"] = {
 				["relativeTo"] = "UIParent",
 				["point"] = "TOPLEFT",
@@ -271,10 +271,10 @@ BestInSlotDB = {
 			},
 			["selected"] = {
 				"WoD", -- [1]
-				60000, -- [2]
-				"HM", -- [3]
+				60200, -- [2]
+				"HFC", -- [3]
 				[5] = 4,
-				[6] = 63,
+				[6] = 253,
 			},
 		},
 		["Brobies - Stormrage"] = {
@@ -377,6 +377,25 @@ BestInSlotDB = {
 			},
 		},
 		["Emmarosa - Stormrage"] = {
+			["windowpos"] = {
+				["xOffset"] = 247.000289916992,
+				["relativePoint"] = "LEFT",
+				["point"] = "LEFT",
+				["yOffset"] = -95.0000839233399,
+			},
+			["options"] = {
+				["overviewfilter"] = {
+					[259] = true,
+				},
+				["minimapButton"] = false,
+			},
+			["selected"] = {
+				"WoD", -- [1]
+				60200, -- [2]
+				"HFC", -- [3]
+				[5] = 2,
+				[6] = 259,
+			},
 			[70011] = {
 				{
 					[259] = {
@@ -472,25 +491,6 @@ BestInSlotDB = {
 					},
 				}, -- [3]
 			},
-			["windowpos"] = {
-				["xOffset"] = 247.000289916992,
-				["relativePoint"] = "LEFT",
-				["point"] = "LEFT",
-				["yOffset"] = -95.0000839233399,
-			},
-			["options"] = {
-				["overviewfilter"] = {
-					[259] = true,
-				},
-				["minimapButton"] = false,
-			},
-			["selected"] = {
-				"WoD", -- [1]
-				60200, -- [2]
-				"HFC", -- [3]
-				[5] = 2,
-				[6] = 259,
-			},
 		},
 		["Skratch - Turalyon"] = {
 			["windowpos"] = {
@@ -528,6 +528,44 @@ BestInSlotDB = {
 				"HFC", -- [3]
 				[5] = 4,
 				[6] = 62,
+			},
+		},
+		["Druidann - Stormrage"] = {
+			["windowpos"] = {
+				["relativeTo"] = "UIParent",
+				["point"] = "TOPLEFT",
+				["relativePoint"] = "TOPLEFT",
+				["xOffset"] = 200,
+				["yOffset"] = -250.000015258789,
+			},
+			["options"] = {
+				["minimapButton"] = false,
+			},
+			["selected"] = {
+				"Legion", -- [1]
+				70011, -- [2]
+				"NH", -- [3]
+				[5] = 3,
+				[6] = 103,
+			},
+		},
+		["Lackteight - Turalyon"] = {
+			["windowpos"] = {
+				["relativeTo"] = "UIParent",
+				["point"] = "TOPLEFT",
+				["relativePoint"] = "TOPLEFT",
+				["xOffset"] = 200,
+				["yOffset"] = -250.000015258789,
+			},
+			["options"] = {
+				["minimapButton"] = false,
+			},
+			["selected"] = {
+				"WoD", -- [1]
+				60200, -- [2]
+				"HFC", -- [3]
+				[5] = 4,
+				[6] = 265,
 			},
 		},
 		["Danoh - Stormrage"] = {
@@ -591,7 +629,7 @@ BestInSlotDB = {
 				[6] = 254,
 			},
 		},
-		["Lackteight - Turalyon"] = {
+		["Brewbies - Turalyon"] = {
 			["windowpos"] = {
 				["relativeTo"] = "UIParent",
 				["point"] = "TOPLEFT",
@@ -604,26 +642,13 @@ BestInSlotDB = {
 			},
 			["selected"] = {
 				"WoD", -- [1]
-				60200, -- [2]
-				"HFC", -- [3]
+				60000, -- [2]
+				"HM", -- [3]
 				[5] = 4,
-				[6] = 265,
+				[6] = 268,
 			},
 		},
 		["Yanlery - Stormrage"] = {
-			["windowpos"] = {
-				["xOffset"] = -76.9999847412109,
-				["yOffset"] = 32.9998207092285,
-				["point"] = "CENTER",
-				["relativePoint"] = "CENTER",
-			},
-			["options"] = {
-				["overviewfilter"] = {
-					[73] = true,
-				},
-				["keepHistory"] = true,
-				["minimapButton"] = false,
-			},
 			[60200] = {
 				{
 					[73] = {
@@ -800,50 +825,25 @@ BestInSlotDB = {
 					},
 				}, -- [3]
 			},
+			["windowpos"] = {
+				["xOffset"] = -76.9999847412109,
+				["yOffset"] = 32.9998207092285,
+				["point"] = "CENTER",
+				["relativePoint"] = "CENTER",
+			},
+			["options"] = {
+				["keepHistory"] = true,
+				["overviewfilter"] = {
+					[73] = true,
+				},
+				["minimapButton"] = false,
+			},
 			["selected"] = {
 				"WoD", -- [1]
 				60200, -- [2]
 				"HFC", -- [3]
 				[5] = 2,
 				[6] = 71,
-			},
-		},
-		["Brewbies - Turalyon"] = {
-			["windowpos"] = {
-				["relativeTo"] = "UIParent",
-				["point"] = "TOPLEFT",
-				["relativePoint"] = "TOPLEFT",
-				["xOffset"] = 200,
-				["yOffset"] = -250.000015258789,
-			},
-			["options"] = {
-				["minimapButton"] = false,
-			},
-			["selected"] = {
-				"WoD", -- [1]
-				60000, -- [2]
-				"HM", -- [3]
-				[5] = 4,
-				[6] = 268,
-			},
-		},
-		["Druidann - Stormrage"] = {
-			["windowpos"] = {
-				["relativeTo"] = "UIParent",
-				["point"] = "TOPLEFT",
-				["relativePoint"] = "TOPLEFT",
-				["xOffset"] = 200,
-				["yOffset"] = -250.000015258789,
-			},
-			["options"] = {
-				["minimapButton"] = false,
-			},
-			["selected"] = {
-				"Legion", -- [1]
-				70011, -- [2]
-				"NH", -- [3]
-				[5] = 3,
-				[6] = 103,
 			},
 		},
 		["Kateplusnine - Stormrage"] = {
@@ -922,7 +922,7 @@ BestInSlotDB = {
 				[6] = 577,
 			},
 		},
-		["Llamama - Stormrage"] = {
+		["Dosnutz - Stormrage"] = {
 			["windowpos"] = {
 				["relativeTo"] = "UIParent",
 				["point"] = "TOPLEFT",
@@ -935,10 +935,10 @@ BestInSlotDB = {
 			},
 			["selected"] = {
 				"WoD", -- [1]
-				60200, -- [2]
-				"HFC", -- [3]
+				60000, -- [2]
+				"HM", -- [3]
 				[5] = 4,
-				[6] = 253,
+				[6] = 63,
 			},
 		},
 	},

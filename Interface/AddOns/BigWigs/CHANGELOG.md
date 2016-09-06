@@ -1,8 +1,9 @@
 # BigWigs
 
-## [v8-21-g6037144](https://github.com/BigWigsMods/BigWigs/tree/603714427ccb93bf8f6716ef3d7180c551556630) (2016-09-04) [](#top)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v8...603714427ccb93bf8f6716ef3d7180c551556630)
+## [v8-22-ge874aac](https://github.com/BigWigsMods/BigWigs/tree/e874aac44868a02fcdac7d5b63d2226143be03c9) (2016-09-05) [](#top)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v8...e874aac44868a02fcdac7d5b63d2226143be03c9)
 
+-   Loader: Cleanup the dungeon timer code.  
 -   Update deDE (#22)  
 -   Pull: Be more restrictive with what we class as a bad item.  
 -   Pull: Initial import of a "bad gear check". Warns you of potentially bad items you have equipped when a pull timer starts.  

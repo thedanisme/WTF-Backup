@@ -1,9 +1,6 @@
 # LittleWigs
 
-## [v7.0.5-4-gbb4fbec](https://github.com/BigWigsMods/LittleWigs/tree/bb4fbecbfd6ef82ad9d5743b11f0bf0c25d46b10) (2016-09-04) [](#top)
-[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v7.0.5...bb4fbecbfd6ef82ad9d5743b11f0bf0c25d46b10)
+## [v7.0.6-1-g83217d2](https://github.com/BigWigsMods/LittleWigs/tree/83217d2777c5018001234d53ca6204bec02e9e6e) (2016-09-05) [](#top)
+[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v7.0.6...83217d2777c5018001234d53ca6204bec02e9e6e)
 
--   AssaultOnVioletHold/Betrug: Add Seed timer after Smash/Execution combo  
--   AssaultOnVioletHold: Enable module  
--   MawOfSouls/Helya: Fix Brackwater Barrage message  
--   AssaultOnVioletHold: Add Fel Lord Betrug  
+-   VaultOfTheWardens/CordanaFelsong: Fix Lua error  

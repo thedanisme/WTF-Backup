@@ -158,6 +158,7 @@ function TaxiDB:Initialize()
 		for i=1,NumTaxiNodes() do
 			local x,y = TaxiNodePosition(i)
 			local nodeType = TaxiNodeGetType(i)
+			local name = TaxiNodeName(i)
 			
 			local npc = DGV.Modules.TaxiData:GetLookupTable()[cont][DGV:PackXY(x,y)]
 			if npc and not DugisFlightmasterDataTable[cont][npc] and nodeType=="REACHABLE" then
@@ -173,6 +174,10 @@ function TaxiDB:Initialize()
 				DugisFlightmasterDataTable[cont][npc].f = fullData[cont][npc] and fullData[cont][npc].f
 				DugisFlightmasterDataTable[cont][npc].coord = fullData[cont][npc] and fullData[cont][npc].coord
 			end			
+			
+			if name and DugisFlightmasterDataTable[cont][npc] and not DugisFlightmasterDataTable[cont][npc].name then
+				DugisFlightmasterDataTable[cont][npc].name = name
+			end
 			
 			if nodeType=="CURRENT" then
 				UpdateLookupTable(cont, x, y)

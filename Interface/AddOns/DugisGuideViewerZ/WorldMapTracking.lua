@@ -836,12 +836,18 @@ function WMT:Initialize()
 		DugisWaypointTooltip:SetFrameStrata("DIALOG")
     
         local texts = {DataProviders:GetTooltipText(self.provider, unpack(self.args))}
-	
+
 		local npcId = DataProviders:GetNPC(self.provider, unpack(self.args))
         
         if texts[1] == nil and npcId then
             texts[1] = "NPC "..npcId
         end
+		
+		if self.name and texts[1] then 
+			texts[1] = "|cffffffff"..self.name.."|r\n"..texts[1]
+		else 
+			--texts[1] = "|cffffffffNot Learned|r\n"..texts[1]
+		end		
         
 		AddTooltips(unpack(texts))
 
@@ -890,6 +896,9 @@ function WMT:Initialize()
 		point.args[1] = tonumber(point.args[1]) or point.args[1]
 		point.args[2] = tonumber(point.args[2]) or point.args[2]
 		point.provider = DataProviders:SelectProvider(...)
+		if point.args[1] == 5 and point.args[4] then --Flightmaster Zone name
+			point.name = point.args[4]
+		end
 		local icon = DataProviders:GetDetailIcon(point.provider, unpack(point.args))
 		if icon then
 			point.toolTipIcon = icon
@@ -1086,16 +1095,25 @@ function WMT:Initialize()
 	
 	local function AddFlightPointData()
 		local fullData = DGV.Modules.TaxiData:GetFullData()
+		local faction = UnitFactionGroup("player")
+		local characterData
+		if DugisFlightmasterDataTable then 
+			characterData = DugisFlightmasterDataTable
+		end
 		local continent, map, level = GetCurrentMapContinent(), GetCurrentMapAreaID(), GetCurrentMapDungeonLevel()
 		if fullData and fullData[continent] then
 			for npc,data in pairs(fullData[continent]) do
 				local requirements = data and data.requirements
+				local name 
+				if characterData and characterData[continent] and characterData[continent][npc] then 
+					name = characterData[continent][npc].name
+				end
 				if 
 					data.m==map and 
 					data.f==level and
 					(not requirements or DGV:CheckRequirements(strsplit(":", requirements)))
 				then
-					GetCreatePoint("5", data.coord, npc)
+					GetCreatePoint("5", data.coord, npc, name)
 				end
 			end
 		end

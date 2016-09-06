@@ -5,7 +5,7 @@ local VExRT = nil
 local module = ExRT.mod:New("AutoLogging",ExRT.L.Logging,nil,true)
 local ELib,L = ExRT.lib,ExRT.L
 
-module.db.minRaidMapID = ExRT.SDB.charLevel >= 110 and 1520 or 1205
+module.db.minRaidMapID = ExRT.SDB.charLevel > 100 and 1520 or 1205
 module.db.minPartyMapID = 1456
 
 function module.options:Load()

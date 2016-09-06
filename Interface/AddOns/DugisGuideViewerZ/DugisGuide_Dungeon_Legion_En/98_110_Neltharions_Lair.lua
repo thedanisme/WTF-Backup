@@ -5,6 +5,7 @@ return [[
 
 R Naltharion's Lair |N|Queue or Zone into {Neltharion's Lair} (96.35, 40.19)| |Z|1065 0| |F|1065 0| |I|
 K (npc:91003) |SID|28560| |N|Kill (npc:91003) in {The Lost Road}<br/><b>DPS: Kill (npc:97720) before they are killed by (spell:188114)<br/><b>Healer: (npc:91003) inflicts massive damage with (spell:188114)<br/><b>Face (npc:91003) away from the party to protect them from (spell:188169) (94.89, 42.93) (70.66, 45.64) (65.55, 46.39)| |Z|1065 0| |NPC|91003|
+N (item:140311) |QID|44074.1| |N|Collect (item:140311) from (npc:91003)(65.55, 46.39)| |Z|1065 0| |NPC|91003| |C|Druid| |O|
 
 R The Stone Market |N|Use the Empty Barrell to reach {The Stone Market} (70.27, 56.71)| |Z|1065 0|
 K (npc:91004) |SID|28561| |N|Kill (npc:91004) in {The Stone Market}<br/><b>DPS: Destroy Idols to stop damage from (spell:193267)<br/><b>(npc:91005) deals massive damage to the tank with his (spell:198496) ability (48.05, 60.75) (45.28, 60.26) (43.98, 57.16)| |Z|1065 0|  |NPC|91004|
