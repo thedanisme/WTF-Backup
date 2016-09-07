@@ -218,7 +218,7 @@ N (npc:96679) |QID|43090.2| |N|Speak to (npc:96679) to start the Ulduar scenario
 
 K (npc:109800) |SID|0|1| |N|Fight your way to the Observation Ring and kill (npc:109800) (39.41,34.53) (37.14,23.33) (37.17,10.65)| |Z|1076 1| |QID|43090| |NPC|109800|
 N (npc:112766) |SID|0|2| |N|Use your (spell:6544) to jump over the flames and follow (npc:112766) (58.13,72.53) (72.23,79.00) (73.73,65.25)| |Z|1076 3| |QID|43090| |NPC|112766|
-N Force Hodir's Door to Open |SID|0|3| |N|Click on the chain and move away from it to force the door open (72.33,63.10)| |Z|1076 3| |QID|43090
+N Force Hodir's Door to Open |SID|0|3| |N|Click on the chain and move away from it to force the door open (72.33,63.10)| |Z|1076 3| |QID|43090|
 N Defend Hodir |SID|30954|4| |N|Kill (npc:109801) and 3 (npc:114567)  (66.94,63.57)| |Z|1076 3| |QID|43090| |NPC|109801, 114567|
 N (npc:109802) |SID|0|4| |N|Speak to (npc:109802) and follow him (66.94,63.57)| |Z|1076 3| |QID|43090| |NPC|109802|
 N (npc:109802) |SID|0|5| |N|Follow (npc:109802) to the {Clash of Thunder} (59.24,64.13) (56.15,62.31) (56.32,56.83) (64.60,48.55) (68.36,48.45)| |Z|1076 3| |QID|43090| |NPC|109802|
@@ -293,7 +293,7 @@ N Report to Kur'talos Ravencrest |SID|33154|1| |N|Report to (npc:113046) in  {Ra
 N Repair the Deactivated Moon Guard Portal |SID|33155|2| |N|Click Deactivated Moon Guard Portal in {Ravencourt}| |QID|44479|
 K (npc:113555) |SID|33162|3| |N|Secure the Rampart by Defeating (npc:113555) (42.95,46.32) (44.27,49.58)| |Z|1099 0| |QID|44479|
 N Enter the Upper Ramparts of the Courtyard |SID|33169|4| |N|Follow the path to the upper ramparts of the courtyard (44.28,49.76) (44.51,51.22 )| |Z|1099 0| |QID|44479|
-N Activate the Moon Guard Portal |SID|33174|5| |N|Click on Deactivated Moon Guard Portal in each waypoint (44.51,51.22) (40.98,51.48) (43.71,50.93)| |Z|1099 0|  |QID|44479
+N Activate the Moon Guard Portal |SID|33174|5| |N|Click on Deactivated Moon Guard Portal in each waypoint (44.51,51.22) (40.98,51.48) (43.71,50.93)| |Z|1099 0| |QID|44479|
 K (npc:114137) |SID|33184|6| |N|Use (spell:227154) to kill (npc:114137) to end the invasion (43.09,52.18)| |Z|1099 0| |QID|44479| |NPC|114137|
 
 R Mausoleum |QID|44414| |N|Travel to {Mausoleum} (38.75, 53.07)| |Z|1099 0| 

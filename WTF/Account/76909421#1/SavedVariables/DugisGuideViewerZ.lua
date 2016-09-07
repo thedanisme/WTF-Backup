@@ -59,12 +59,12 @@ DugisGuideViewerProfiles = {
 					[42] = {
 						["checked"] = false,
 					},
-					[203] = {
-						["checked"] = 0,
-					},
 					["FirstTime"] = false,
 					[6] = {
 						["checked"] = true,
+					},
+					[203] = {
+						["checked"] = 0,
 					},
 					[72] = {
 						["checked"] = true,
@@ -453,6 +453,7 @@ DugisGuideViewerProfiles = {
 						["checked"] = "Expand Down",
 					},
 					["EssentialsMode"] = 1,
+					["GuideOn"] = false,
 					[69] = {
 						["checked"] = false,
 					},
@@ -470,11 +471,11 @@ DugisGuideViewerProfiles = {
 					[74] = {
 						["checked"] = true,
 					},
-					["ModelViewer"] = {
-						["pos_x"] = false,
-					},
 					[203] = {
 						["checked"] = 0,
+					},
+					["ModelViewer"] = {
+						["pos_x"] = false,
 					},
 				},
 			},
@@ -518,12 +519,12 @@ DugisGuideViewerProfiles = {
 					[42] = {
 						["checked"] = false,
 					},
-					[6] = {
-						["checked"] = true,
-					},
 					["FirstTime"] = false,
 					[203] = {
 						["checked"] = 0,
+					},
+					[6] = {
+						["checked"] = true,
 					},
 					[76] = {
 						["checked"] = true,
@@ -984,6 +985,9 @@ CollectedWorldMapTrackingPoints = {
 			"7:1895211976:96790:Greyfang Enclave:F", -- [23]
 			"6:1895211976:96790::F", -- [24]
 			"2:1806158974:96823::M", -- [25]
+			"2:1803930312:96823::M", -- [26]
+			"10:1544964382:93541:8613:M", -- [27]
+			"2:1805896428:96823::M", -- [28]
 		},
 		["Azsuna:0"] = {
 			"6:2157870879:90086::F", -- [1]
@@ -1253,19 +1257,19 @@ FollowersCache = {
 	},
 	["Alliance"] = {
 		[179] = {
-			["name"] = "Artificer Romuul ",
+			["name"] = "Weaponsmith Na'Shra ",
 			["level"] = 92,
 		},
 		[211] = {
-			["name"] = "Glirin ",
+			["name"] = "Penny Clobberbottom ",
 			["level"] = 93,
 		},
 		[180] = {
-			["name"] = "Fiona ",
+			["name"] = "Shadow Hunter Rala ",
 			["level"] = 90,
 		},
 		[212] = {
-			["name"] = "Rangari Erdanii ",
+			["name"] = "Spirit of Bony Xuk ",
 			["level"] = 94,
 		},
 		[582] = {
@@ -1273,35 +1277,35 @@ FollowersCache = {
 			["level"] = 100,
 		},
 		[182] = {
-			["name"] = "Shelly Hamby ",
+			["name"] = "Mulverick ",
 			["level"] = 90,
 		},
 		[183] = {
-			["name"] = "Rulkan ",
+			["name"] = "Gronnstalker Rokash ",
 			["level"] = 92,
 		},
 		[184] = {
-			["name"] = "Apprentice Artificer Andren ",
+			["name"] = "Kal'gor the Honorable ",
 			["level"] = 90,
 		},
 		[216] = {
-			["name"] = "Delvar Ironfist ",
+			["name"] = "Vivianne ",
 			["level"] = 91,
 		},
 		[185] = {
-			["name"] = "Rangari Chel ",
+			["name"] = "Lokra ",
 			["level"] = 90,
 		},
 		[154] = {
-			["name"] = "Magister Serena ",
+			["name"] = "Magister Krelas ",
 			["level"] = 94,
 		},
 		[186] = {
-			["name"] = "Vindicator Onaala ",
+			["name"] = "Greatmother Geyah ",
 			["level"] = 90,
 		},
 		[155] = {
-			["name"] = "Miall ",
+			["name"] = "Morketh Bladehowl ",
 			["level"] = 94,
 		},
 		[32] = {
@@ -1325,7 +1329,7 @@ FollowersCache = {
 			["level"] = 100,
 		},
 		[159] = {
-			["name"] = "Rangari Kaalya ",
+			["name"] = "Kaz the Shrieker ",
 			["level"] = 93,
 		},
 		[192] = {
@@ -1349,7 +1353,7 @@ FollowersCache = {
 			["level"] = 100,
 		},
 		[195] = {
-			["name"] = "Weldon Barov ",
+			["name"] = "Alexi Barov ",
 			["level"] = 95,
 		},
 		[580] = {
@@ -1361,15 +1365,15 @@ FollowersCache = {
 			["level"] = 97,
 		},
 		[581] = {
-			["name"] = "Dowser Bigspark ",
+			["name"] = "Dowser Goodwell ",
 			["level"] = 100,
 		},
 		[453] = {
-			["name"] = "Hulda Shadowblade ",
+			["name"] = "Dark Ranger Velonara ",
 			["level"] = 96,
 		},
 		[217] = {
-			["name"] = "Thisalee Crow ",
+			["name"] = "Choluna ",
 			["level"] = 100,
 		},
 		[455] = {
@@ -1385,11 +1389,11 @@ FollowersCache = {
 			["level"] = 100,
 		},
 		[458] = {
-			["name"] = "Vindicator Heluun ",
+			["name"] = "Cacklebone ",
 			["level"] = 100,
 		},
 		[459] = {
-			["name"] = "Cleric Maluuf ",
+			["name"] = "Karg Bloodfury ",
 			["level"] = 100,
 		},
 		[460] = {
@@ -1405,7 +1409,7 @@ FollowersCache = {
 			["level"] = 100,
 		},
 		[463] = {
-			["name"] = "Daleera Moonfang ",
+			["name"] = "Ulna Thresher ",
 			["level"] = 90,
 		},
 		[171] = {
@@ -1421,7 +1425,7 @@ FollowersCache = {
 			["level"] = 100,
 		},
 		[204] = {
-			["name"] = "Admiral Taylor ",
+			["name"] = "Benjamin Gibb ",
 			["level"] = 96,
 		},
 		[468] = {
@@ -1437,7 +1441,7 @@ FollowersCache = {
 			["level"] = 90,
 		},
 		[34] = {
-			["name"] = "Qiana Moonshadow ",
+			["name"] = "Olin Umberhide ",
 			["level"] = 90,
 		},
 		[168] = {
@@ -1445,11 +1449,11 @@ FollowersCache = {
 			["level"] = 99,
 		},
 		[207] = {
-			["name"] = "Defender Illona ",
+			["name"] = "Aeda Brightdawn ",
 			["level"] = 95,
 		},
 		[176] = {
-			["name"] = "Pitfighter Vaandaam ",
+			["name"] = "Bruto ",
 			["level"] = 93,
 		},
 		[208] = {
@@ -1469,7 +1473,7 @@ FollowersCache = {
 			["level"] = 100,
 		},
 		[153] = {
-			["name"] = "Bruma Swiftstone ",
+			["name"] = "Ka'la ",
 			["level"] = 90,
 		},
 	},

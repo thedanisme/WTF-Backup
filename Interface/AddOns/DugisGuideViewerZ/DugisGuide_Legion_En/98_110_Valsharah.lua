@@ -24,7 +24,7 @@ A The Tranquil Forest |QID|39731| |N|(npc:101979) in {Dreadscar Rift} (66.13, 46
 A The Tranquil Forest |QID|39731| |N|(npc:97389) in {Skyhold} (59.57, 13.23)| |Z|1035 1| |NPC|97389| |C|Warrior|
 A The Tranquil Forest |QID|39731| |N|(npc:98613) in {The Fel Hammer} (58.81, 55.37)| |Z|1052 1| |NPC|98613| |C|Demon|
 
-R Krasus' Landing |TID|39731 |N|Travel to {Krasus' Landing} (70.32, 44.46)| |Z|1014 10|
+R Krasus' Landing |TID|39731| |N|Travel to {Krasus' Landing} (70.32, 44.46)| |Z|1014 10|
 T The Tranquil Forest |QID|39731| |N|(npc:91172) in {Krasus' Landing} (70.32, 44.46)| |Z|1014 10| |NPC|91172|
 A Tying Up Loose Ends |QID|39861| |N|(npc:91172) in {Krasus' Landing} (70.32, 44.46)| |Z|1014 10| |NPC|91172|
 C Tying Up Loose Ends |QID|39861| |N|Speak to (npc:96813) in {Krasus' Landing} to secure a flight to {Val'sharah} (70.11, 50.82)| |Z|1014 10| |NPC|96813| |V|

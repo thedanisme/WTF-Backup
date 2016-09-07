@@ -1,0 +1,28 @@
+
+ServerHopPosition = {
+	"RIGHT", -- [1]
+	-287.000030517578, -- [2]
+	-20.9999942779541, -- [3]
+	false, -- [4]
+}
+ServerHopSettings = {
+	true, -- [1]
+	true, -- [2]
+	true, -- [3]
+	true, -- [4]
+	false, -- [5]
+	["DEFAULT_MODE"] = false,
+	["NON_AUTO_GROUPS_WAIT"] = 5,
+	["STATUS_FRAME_POSITION"] = 2,
+	["MINIMAP_SETTINGS"] = {
+		["hide"] = true,
+	},
+	["MINIMAP_STRATA"] = 3,
+	["BLACKLIST_DURATION"] = 353.163513183594,
+	["NON_AUTO_GROUPS"] = false,
+	["HOP_TO_PVP"] = 3,
+	["SHOW_ONLY_MY_ZONE"] = true,
+	["CHAT_NOTIFICATIONS"] = true,
+	["FLASH_TASKBAR"] = true,
+	["STATUS_FRAME"] = true,
+}

@@ -281,6 +281,283 @@ T Translation: Danger! |QID|43535| |N|(npc:90251) in {Armory of the Silver Hand}
 
 N Level 110 Required |N|You need to be at least level 110 to continue with the class campaign quest line| |PL|110|
 
+step
+talk Justicar Julia Celeste##112701
+|tip She appears next to you in Dalaran.
+accept Growing Power##42844 |goto Dalaran L/10 58.18,45.37
+
+step
+talk Lord Maxwell Tyrosus##90259
+turnin Growing Power##42844 |goto Eastern Plaguelands/20 49.69,72.20
+accept Rise, Champions##39696 |instant |goto Eastern Plaguelands/20 49.69,72.20
+accept The Blood Matriarch##42846 |goto Eastern Plaguelands/20 49.69,72.20
+
+step
+talk Lady Liadrin##92346
+accept Champion: Lady Liadrin##42881 |instant |goto 38.24,64.61
+Enlist Lady Liadrin |q 42846/1 |goto 38.24,64.61
+
+step
+talk Lord Grayson Shadowbreaker##90250
+turnin The Blood Matriarch##42846 |goto 52.26,78.03
+accept Dark Storms##42847 |goto 52.26,78.03
+
+step
+click Scouting Map
+|tip Follow the dialogue prompts to complete the only available mission.
+|tip The mission will take 2 minutes to complete.
+Complete the "Dark Storms" Mission |q 42847/1 |goto 53.49,78.43
+
+step
+talk Lord Grayson Shadowbreaker##90250
+turnin Dark Storms##42847 |goto 52.26,78.03
+accept Recruiting the Troops##42848 |goto 52.26,78.03
+
+step
+Follow the path |goto 47.61,62.51 < 10 |walk
+talk Commander Ansela##106447
+Click the Recruit Troops Button
+|tip Recruiting troops costs Order Resources.
+|tip Gain Order Resources by collecting Treasures and completing class hall Scouting Map missions.
+click Training Troops
+|tip It's a banner that appears next to Commander Ansela when the training order is complete.
+Train the Squires |q 42848/1 |goto 53.19,56.18
+
+step
+Follow the path |goto 48.53,60.93 < 10 |walk
+talk Lord Grayson Shadowbreaker##90250
+turnin Recruiting the Troops##42848 |goto 52.26,78.03
+accept Wrath and Justice##42849 |goto 52.26,78.03
+
+step
+click Scouting Map
+Begin the "Wrath and Justice" Mission
+|tip This mission will take 4 hours to complete.
+Complete the "Wrath and Justice" Mission |q 42849/1 |goto 53.49,78.43
+
+step
+talk Lord Grayson Shadowbreaker##90250
+turnin Wrath and Justice##42849 |goto 52.30,78.05
+accept Tech It Up a Notch##42850 |goto 52.30,78.05
+
+step
+talk Lord Maxwell Tyrosus##90259
+accept A Sign From The Sky##42866 |goto 49.86,72.33
+
+step
+talk Sir Alamande Graythorn##109901
+Choose a Class Hall Upgrade |q 42850/1 |goto 39.90,56.53
+
+step
+talk Lord Grayson Shadowbreaker##90250
+turnin Tech It Up a Notch##42850 |goto 52.28,78.08
+
+step
+talk Archmage Khadgar##90417
+|tip Inside the building.
+turnin A Sign From The Sky##42866 |goto Dalaran L/10 28.49,48.33
+accept A Falling Star##44257 |goto Dalaran L/10 28.49,48.33
+
+step
+talk Aludane Whitecloud##96813 |goto 69.84,51.13 |n
+Tell him _"I'm ready to go to Suramar."_
+Begin Flying to Suramar |goto 69.84,51.13 > 10000 |noway |c |q 44257
+
+step
+Watch the dialogue
+Take Khadgar's Gryphon to Suramar |q 44257/1 |goto Suramar/0 88.56,62.46
+
+step
+Search the Crash Site |q 44257/2 |goto 91.98,61.21
+|tip It's underwater.
+
+step
+Enter the underwater cave |goto 94.62,64.39 < 20
+Investigate the Cave |q 44257/3 |goto 94.44,66.60
+
+step
+kill Yorg Murkmouth##112477
+collect Mysterious Lightbound Object##140574 |q 44257/4 |goto 94.39,67.23
+
+step
+Return to Dalaran |goto Dalaran L/10 52.89,51.96 < 10000 |c |q 44257
+
+step
+Enter the building |goto 52.89,51.96 < 10 |walk
+Enter the Chamber of the Guardian |goto 49.24,47.58 > 10000 |walk
+Follow the path |goto Dalaran L/12 36.48,46.72 < 10 |walk
+talk Archmage Khadgar##72874
+turnin A Falling Star##44257 |goto Dalaran L/12 26.76,34.90
+accept Bringer of the Light##44004 |goto Dalaran L/12 26.76,34.90
+
+step
+click Portal to Exodar |goto 28.67,33.48 |n
+Travel to Exodar |goto Azuremyst Isle L/0 35.82,46.48 < 50 |noway |c |q 44004
+
+step
+Begin the Battle for the Exodar Scenario |scenariostart |q 44004
+
+step
+Follow the path |goto Azuremyst Isle L/0 33.72,44.42 > 10000 |walk
+Follow the path down |goto The Exodar L/0 74.18,53.59 < 15 |walk
+Follow the path |goto The Exodar L/0 64.34,36.18 < 15 |walk
+Follow the path down |goto The Exodar L/0 58.89,31.36 < 20 |walk
+Follow the path |goto The Exodar L/0 49.76,51.19 < 20 |walk
+talk Prophet Velen##109143
+Watch the dialogue
+Seek out Prophet Velen in the Vault of Lights |scenariostage 1 |goto The Exodar L/0 34.06,66.31 |q 44004
+
+stickystart "Terrified_Exodar_Citizens_Paladin"
+stickystart "Fel_Portals_Paladin"
+step
+accept Fel Annihilation##43483 |goto 37.64,57.64
+|tip You will accept this quest automatically.
+
+stickystart "Fel_Annihilation_Paladin"
+step
+Follow the path |goto 35.51,48.86 < 15 |walk
+Follow the path  |goto 43.65,17.18 < 15 |walk
+talk Farseer Nobundo##110695
+accept Nobundo's Last Stand##43705 |goto 44.91,9.26
+
+step
+talk Farseer Nobundo##110695
+Speak to Nobundo to Begin the Assault |q 43705/1 |goto 44.91,9.26
+
+step
+Kill the enemies that attack in waves
+|tip Focus on keeping Farseer Nobundo alive.
+Defeat the First Assault |q 43705/2 |goto 44.88,9.34
+Defeat the Second Assault |q 43705/3 |goto 44.88,9.34
+Defeat the Third Wave of Demons |q 43705/4 |goto 44.88,9.34
+kill Karzak the Impaler##110781kill Karzak the Impaler##110781 |q 43705/5 |goto 44.88,9.34
+Defend Farseer Nobundo from the Legion Assault |q 43705/6 |goto 44.88,9.34
+
+step
+talk Farseer Nobundo##110695
+turnin Nobundo's Last Stand##43705 |goto 44.91,9.26
+
+step
+label "Fel_Portals_Paladin"
+click Legion Portal
+|tip They look like big green swirling portals around this area.
+|tip You can see their locations on your minimap.
+Destroy #8# Fel Portals |scenariogoal 2/30864 |goto 33.95,35.82 |q 44004
+
+step
+label "Terrified_Exodar_Citizens_Paladin"
+talk Terrified Exodar Citizen##109701+
+|tip They look like crying Draenei around this whole area.
+|tip They are usually in or near buildings.
+|tip They are marked on your minimap.
+Rescue #12# Terrified Exodar Citizens |scenariogoal 2/30876 |goto 33.95,35.82 |q 44004
+
+step
+label "Fel_Annihilation_Paladin"
+Kill enemies around this area
+|tip The blue bar will fill up in your quest tracker area.
+Slay Demons |q 43483/1 |goto 33.95,35.82
+
+step
+talk Prophet Velen##109143
+Watch the dialogue
+Return to Prophet Velen at the Vault of Lights |scenariostage 3 |goto 34.07,66.29 |q 44004
+
+step
+talk Prophet Velen##109143
+Watch the dialogue
+Let Prophet Velen Examine the Mysterious Lightbound Object |scenariostage 4 |goto 34.07,66.29 |q 44004
+
+step
+talk Prophet Velen##109143 |goto 34.07,66.29 |n
+Follow Prophet Velen |goto 34.07,66.29 > 15 |noway |c |q 44004
+
+step
+Watch the dialogue
+|tip Follow Prophet Velen.
+Escort Prophet Velen to the Seat of the Naaru |scenariostage 5 |goto 53.90,38.63 |q 44004
+
+step
+kill Fel Annihilator##111593
+|tip He hits very hard. If you have trouble, let your allies fight him until he runs up onto the platform.
+Watch the dialogue
+Defeat High General Rakeesh |scenarioend |goto 57.88,41.16 |q 44004
+
+step
+Use the Khadgar's Beacon |use Khadgar's Beacon##140319 |goto 58.53,40.99 |n
+Return to Dalaran |goto Dalaran L/10 24.99,48.08 < 50 |noway |c |q 44004
+
+step
+talk Archmage Khadgar##90417
+turnin Bringer of the Light##44004 |goto Dalaran L/10 28.48,48.46
+accept Light's Charge##44153 |goto Dalaran L/10 28.48,48.46
+
+step
+click Light's Heart
+turnin Light's Charge##44153 |goto Eastern Plaguelands/20 52.34,69.35
+
+step
+talk Lord Grayson Shadowbreaker##90250
+accept Meeting of the Silver Hand##42867 |goto 52.28,78.08
+
+step
+talk Lady Liadrin##92346
+Speak to Lady Liadrin |q 42867/3 |goto 38.22,64.61
+
+step
+Follow the path |goto 47.88,62.12 < 10 |walk
+talk Vindicator Boros##94175
+Speak with Vindicator Boros |q 42867/2 |goto 52.37,60.56
+
+step
+talk Aponi Brightmane##90251
+Speak to Aponi Brightmane |q 42867/4 |goto 49.48,51.81
+
+step
+talk Arator the Redeemed##99997
+Speak to Arator the Redeemed |q 42867/5 |goto 67.69,16.83
+
+step
+Follow the path |goto 55.68,49.99 < 20 |walk
+Run up the stairs |goto 41.41,75.44 < 15 |walk
+Leave the building |goto 39.42,93.27 > 10000 |walk
+talk Justicar Julia Celeste##99995
+Speak to Justicar Julia Celeste Outside |q 42867/1 |goto Eastern Plaguelands/0 72.74,54.59
+
+step
+Enter the building |goto 75.43,52.64 > 10000 |walk
+Click the Secret Door and run down the stairs |goto Eastern Plaguelands/20 43.18,87.53 < 10 |walk
+Follow the path |goto Eastern Plaguelands/20 41.62,71.96 < 15 |walk
+talk Lord Maxwell Tyrosus##90259
+turnin Meeting of the Silver Hand##42867 |goto Eastern Plaguelands/20 49.87,72.35
+accept The Scion's Legacy##42919 |goto Eastern Plaguelands/20 49.87,72.35
+
+step
+Watch the dialogue
+Receive the Final Message |q 42919/1 |goto 49.87,72.35
+
+step
+talk Lord Maxwell Tyrosus##90259
+Tell him _"Hunt the dreadlord, Balnazzar."_
+Speak to Tyrosus and Choose a Strategy |q 42919/2 |goto 50.81,71.07
+
+step
+talk Lord Maxwell Tyrosus##90259
+turnin The Scion's Legacy##42919 |goto 50.85,70.91
+accept The Highlord's Command##42885 |goto 50.85,70.91
+
+step
+click Scouting Map
+Begin the "Highlord's Command: Nemesis" Mission
+|tip This mission will take 1 hour to complete.
+Complete the "Highlord's Command: Nemesis" Mission |q 42885/1 |goto 53.35,78.36
+
+step
+talk Lord Grayson Shadowbreaker##90250
+turnin The Highlord's Command##42885 |goto 52.17,77.93
+
+step
+
 N Guide Complete
 
 ]]

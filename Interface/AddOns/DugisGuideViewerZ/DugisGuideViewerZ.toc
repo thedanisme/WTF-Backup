@@ -1,6 +1,9 @@
 ## Interface: 70000
-## Title: DugiGuidesViewer |cffffffff8.074|r
-## Version: 8.074
+## Title: DugiGuidesViewer |cffffffff8.075|r
+## Notes: In-Game Guide Viewer. Copyright 2010-2016 UltimateWoWGuide.com
+## Version: 8.075
+## X-Website: http://www.ultimatewowguide.com/
+## X-Email: support@ultimatewowguide.com
 ## X-Category: Quest
 ## SavedVariablesPerCharacter: CurrentTitle, CurrentZone, DugisGuideUser, DugisGuideViewerDB, DugisArrowDb, DugisFlightmasterDataTable, DugisNPCFrameDB, DataExport, DugisCharacterCache
 ## SavedVariables: MapOverlays, DugisFlightmasterLookupTable, TaxiDataCollection, DugisGuideViewerProfiles, CollectedWorldMapTrackingPoints, FollowersCache, TutorialFrameDugisState, TutorialFrameDugisHidden

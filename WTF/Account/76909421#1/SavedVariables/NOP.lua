@@ -13,6 +13,7 @@ NewOpenablesProfile = {
 				["settings"] = {
 					["T_BLACKLIST"] = {
 						[140590] = true,
+						[139506] = true,
 						[136924] = true,
 						[0] = true,
 					},

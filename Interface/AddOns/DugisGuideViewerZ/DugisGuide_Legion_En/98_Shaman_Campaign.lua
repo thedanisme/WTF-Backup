@@ -256,7 +256,7 @@ T The Scepter of Storms |QID|42984| |N|(npc:109464) in {The Heart of Azeroth} (2
 C Enemies of Air |QID|42986| |N|Complete 4 "Thunderaan's Enemies" Mission, each mission will take 8 hours to complete (33.51,59.34)| |Z|1057 0|
 T Enemies of Air |QID|42986| |N|(npc:96746) in {The Heart of Azeroth} (32.98, 60.39)| |Z|1057 0| |NPC|96746|
 A Mission: Investigating Deepholm |QID|42200| |N|(npc:96746) in {The Heart of Azeroth} (32.98, 60.39)| |Z|1057 0| |NPC|96746|
-A Champion: Nobundo |QID|41743 |instant| |N|Speak to (npc:106519) to recruit as a follower (30.25,51.54)| |Z|1057 0| |NPC|106519| |E|
+A Champion: Nobundo |QID|41743| |N|Speak to (npc:106519) to recruit as a follower (30.25,51.54)| |Z|1057 0| |NPC|106519| |E|
 C Mission: Investigating Deepholm |QID|42200| |N|Complete the (mission:885) mission, itwill take 8 hours to complete (33.51,59.34)|| |Z|1057 0| |NPC|96746|
 T Mission: Investigating Deepholm |QID|42200| |N|(npc:96746) in {The Heart of Azeroth} (32.98, 60.39)| |Z|1057 0| |NPC|96746|
 

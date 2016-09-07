@@ -341,7 +341,7 @@ A Scouting the Crimson Thicket |QID|42223| |N|(npc:103571) in {Irongrove Retreat
 R Moonfall Roost |OID|40883| |N|Travel to {Moonfall Roost} (25.13,28.11) (27.83,21.20)| |Z|1033 0|
 A Fate of the Guard |QID|40883| |N|(npc:101766) in {Moonfall Roost} (27.83,21.20)| |Z|1033 0|
 
-R Ley Station Aethenar |TID|43591 |N|Travel to {Ley Station Aethenar}, the entrance is on the side of the cliff by facing the water (27.04,21.24) (24.76,20.31) (24.25, 19.34)| |Z|1033 0|
+R Ley Station Aethenar |TID|43591| |N|Travel to {Ley Station Aethenar}, the entrance is on the side of the cliff by facing the water (27.04,21.24) (24.76,20.31) (24.25, 19.34)| |Z|1033 0|
 A Leyline Feed: Ley Station Aethenar |QID|43591| |N|Leyline Feed in {Ley Station Aethenar} (54.70,70.34) (48.83,49.43)| |Z|1033 38|
 K (npc:112067) |QID|43591.1| |N|Kill (npc:112067) and collect 6 (item:140318) in {Ley Station Aethenar} (44.15,44.02)| |Z|1033 38|
 N 200 (cur:1155) |QID|43591.2| |N|Collect 200 (cur:1155)| 
@@ -571,8 +571,8 @@ N As you go... |AYG|41618| |N|Rescue 6 (npc:99825) in {Azuregale Bay}|
 N (item:130944) |QID|40364.1| |N|Collect (item:130944) from the floor in {Azuregale Bay} (75.17,61.72)| |Z|1033 0| 
 K (npc:104459) |QID|41618.1| |N|Kill (npc:104459) in {Azuregale Bay}, he wanders around the area you may have to search for him (74.92,65.35)| |Z|1033 0|
 N (npc:99825) |QID| |QID|40364.2| |N|Rescue 6 (npc:99825) in {Azuregale Bay} (74.81,64.22)| |Z|1033 0|
-T Bubble Trouble |QID|40364| N|(npc:104406) in {Azuregale Bay} (74.94,63.39)| |Z|1033 0| |NPC|104406|
-T The Seawarden |QID|41618| N|(npc:104406) in {Azuregale Bay} (74.94,63.39)| |Z|1033 0| |NPC|104406|
+T Bubble Trouble |QID|40364| |N|(npc:104406) in {Azuregale Bay} (74.94,63.39)| |Z|1033 0| |NPC|104406|
+T The Seawarden |QID|41618| |N|(npc:104406) in {Azuregale Bay} (74.94,63.39)| |Z|1033 0| |NPC|104406|
 
 R Jandvik |QID|41034| |N|Travel to {Jandvik} (72.62,53.12) (70.60,49.16)| |Z|1033 0|
 T Sunken Foes |QID|41425| |N|(npc:102845) in {Jandvik} (70.60,49.16)| |Z|1033 0| |NPC|102845|
@@ -640,7 +640,7 @@ N (npc:108063) |QID|42486.1| |N|Escort (npc:108063) to the {The Waning Crescent}
 
 T Little One Lost |QID|42486| |N|(npc:107712) in {The Waning Crescent} (48.31,83.24)| |Z|1033 0| |NPC|107712|
 A Friends On the Outside |QID|42487| |N|(npc:107598) in {The Waning Crescent} (48.41,83.29)| |Z|1033 0| |NPC|107598|
-A Wasted Potential |QID|44051 |instant| |N|(npc:111900) in {The Waning Crescent} (47.54,83.28) (47.85,81.51)| |Z|1033 0| |NPC|111900| |E|
+A Wasted Potential |QID|44051| |N|(npc:111900) in {The Waning Crescent} (47.54,83.28) (47.85,81.51)| |Z|1033 0| |NPC|111900| |E|
 C Friends On the Outside |QID|42487.1| |N|Click on the Telemancy Beacon in {The Waning Crescent} (47.74,81.37)| |Z|1033 0| 
 
 R Shal'Aran |QID|42487| |N|Travel to {Shal'Aran} (36.87, 46.58)| |Z|1033 0| 
@@ -655,7 +655,7 @@ A Thalyssra's Drawers |QID|42489| |N|Armoire inside the building {Estate of the 
 N (item:138195) |QID|42489.1| |N|Collect (item:138195) from Basket of Clothing (66.38,63.31)| |Z|1033 0|
 N (item:138193) |QID|42489.2| |N|Collect (item:138193) on the boat (65.82,64.83)| |Z|1033 0|
 N (item:138194) |QID|42489.3| |N|Collect (item:138194) in {Estate of the First Arcanist} (64.65,61.60)| |Z|1033 0|
-K (npc:108190) |QID|42488.1| |N|Kill (npc:108190) and collect 3 (item:138392) in {Estate of the First Arcanist}  (66.88,62.74)| |Z|1033 0| |L|138392 3|
+K (npc:108190) |QID|42488.1| |N|Kill (npc:108190) and collect 3 (item:138392) in {Estate of the First Arcanist} (66.88,62.74)| |Z|1033 0| |L|138392 3|
 C Thalyssra's Abode |QID|42488.1| |N|Use the (item:138392) to create (item:138391)| |U|138392|
 
 R Shal'Aran |QID|42487| |N|Travel to {Shal'Aran} (36.87, 46.58)| |Z|1033 0| 
@@ -664,15 +664,15 @@ T Thalyssra's Abode |QID|42488| |N|(npc:97140) in {Shal'Aran} (36.87, 46.58)| |Z
 A Leyline Apprentice |QID|44492| |N|(npc:103155) in {Shal'Aran} (37.00,46.35)| |Z|1033 0| |NPC|103155|
 T Leyline Apprentice |QID|44492| |N|(npc:103155) in {Shal'Aran} (37.00,46.35)| |Z|1033 0| |NPC|103155|
 
-R Tel'Anor |OID|40300| |N|Travel to {Tel'Anor}  (44.01,43.25) (46.27,42.35) (45.60,40.82) | |Z|1033 0|
+R Tel'Anor |OID|40300| |N|Travel to {Tel'Anor} (44.01,43.25) (46.27,42.35) (45.60,40.82) | |Z|1033 0|
 A The Lost Advisor |QID|40266| |N|(npc:99065) in {Tel'Anor} (45.60,40.82)| |Z|1033 0| |NPC|99065|
 A An Ancient Recipe |QID|40744| |N|(npc:99065) in {Tel'Anor} (45.60,40.82)| |Z|1033 0| |NPC|99065|
 C The Lost Advisor |QID|40266.1| |N|Click clumps of cliffthorn twigs and collect 8 (item:130108) {Tel'Anor} (46.51,40.39)| |Z|1033 0| 
-C An Ancient Recipe |QID|40744.1| |N|Kill (npc:98306) or (npc:113573) and collect 6 (item:132881)  (46.48,40.01)| |Z|1033 0| |NPC|113573, 98306|
+C An Ancient Recipe |QID|40744.1| |N|Kill (npc:98306) or (npc:113573) and collect 6 (item:132881) (46.48,40.01)| |Z|1033 0| |NPC|113573, 98306|
 T The Lost Advisor |QID|40266| |N|(npc:99093) in {Tel'Anor} (47.18,40.98) (49.15,43.90)| |Z|1033 0| |NPC|99093|
 T An Ancient Recipe |QID|40744| |N|(npc:99093) in {Tel'Anor} (49.15,43.90)| |Z|1033 0| |NPC|99093|
 A Bad Intentions |QID|40227| |N|(npc:99093) in {Tel'Anor} (49.15,43.90)| |Z|1033 0| |NPC|99093|
-N (npc:99093)  |QID|40227.1| |N|Speak with (npc:99093) in {Tel'Anor} (49.15,43.90)| |Z|1033 0| |NPC|99093|
+N (npc:99093) |QID|40227.1| |N|Speak with (npc:99093) in {Tel'Anor} (49.15,43.90)| |Z|1033 0| |NPC|99093|
 T Bad Intentions |QID|40227| |N|(npc:99093) in {Tel'Anor} (49.15,43.90)| |Z|1033 0| |NPC|99093|
 A Tools of the Trade |QID|40300| |N|(npc:99093) in {Tel'Anor} (49.15,43.90)| |Z|1033 0| |NPC|99093|
 
@@ -684,15 +684,15 @@ N (item:134092) |QID|40300.3| |N|Collect (item:134092) in {Tel'Anor} (49.70,33.7
 C Fragments of Memory |QID|40308.1| |N|Kill Tanzanite enemies around in {Tel'Anor} and collect 15 (item:130212) (52.01,31.94)| |Z|1033 0|
 
 T Tools of the Trade |QID|40300| |N|(npc:99483) in {Tel'Anor} (51.73,32.73) (50.76,32.62) (49.70,33.74) (48.53,33.41) (47.28,33.48)| |Z|1033 0| |NPC|99483|
-T Fragments of Memory |QID|40308| |N|(npc:99483) in {Tel'Anor}  (47.28,33.48)| |Z|1033 0| |NPC|99483|
-A The Last Chapter |QID|40306| |N|(npc:99483) in {Tel'Anor}  (47.28,33.48)| |Z|1033 0| |NPC|99483|
-A Paying Respects |QID|40578| |N|(npc:99483) in {Tel'Anor}  (47.28,33.48)| |Z|1033 0| |NPC|99483|
+T Fragments of Memory |QID|40308| |N|(npc:99483) in {Tel'Anor} (47.28,33.48)| |Z|1033 0| |NPC|99483|
+A The Last Chapter |QID|40306| |N|(npc:99483) in {Tel'Anor} (47.28,33.48)| |Z|1033 0| |NPC|99483|
+A Paying Respects |QID|40578| |N|(npc:99483) in {Tel'Anor} (47.28,33.48)| |Z|1033 0| |NPC|99483|
 N (item:130208) |QID|40306.1| |N|Collect (item:130208) upstair inside the building in {Tel'Anor} (46.98,32.14) (45.11,32.22) (44.10,32.27)| |Z|1033 0|
 C Paying Respects |QID|40578.1| |N|Kill 8 disturbed enemies around this area (44.84,33.05)| |Z|1033 0| |NPC|97729, 97732|
 T The Last Chapter |QID|40306| |N|(npc:99575) in {Tel'Anor} (44.95,31.38) (45.07,30.94)| |Z|1033 0| |NPC|99575|
 T Paying Respects |QID|40578| |N|(npc:99575) in {Tel'Anor} (45.07,30.94)| |Z|1033 0| |NPC|99575|
 A End of the Line |QID|40315| |N|(npc:99575) in {Tel'Anor} (45.07,30.94)| |Z|1033 0| |NPC|99575|
-N (npc:99575)  |QID|40315.1| |N|Speak with (npc:99575) in {Tel'Anor} (45.07,30.94)| |Z|1033 0| |NPC|99575|
+N (npc:99575) |QID|40315.1| |N|Speak with (npc:99575) in {Tel'Anor} (45.07,30.94)| |Z|1033 0| |NPC|99575|
 T End of the Line |QID|40315| |N|(npc:99575) in {Tel'Anor} (45.07,30.94)| |Z|1033 0| |NPC|99575|
 A The Final Ingredient |QID|40319| |N|(npc:99575) in {Tel'Anor} (45.07,30.94)| |Z|1033 0| |NPC|99575|
 
@@ -710,24 +710,24 @@ T Leyline Proficiency |QID|44493| |N|(npc:103155) in {Shal'Aran} (37.00,46.35)| 
 A Leyline Master |QID|44495| |N|(npc:103155) in {Shal'Aran} (37.00,46.35)| |Z|1033 0| |NPC|103155|
 T Leyline Master |QID|44495| |N|(npc:103155) in {Shal'Aran} (37.00,46.35)| |Z|1033 0| |NPC|103155|
 
-R Felsoul Hold |QID|40297| |N|Travel to {Felsoul Hold}  (31.61,63.56) (30.31,60.45) (30.87,59.15)| |Z|1033 0|
+R Felsoul Hold |QID|40297| |N|Travel to {Felsoul Hold} (31.61,63.56) (30.31,60.45) (30.87,59.15)| |Z|1033 0|
 A Lyana Darksorrow |QID|40297| |N|(npc:98801) in {Felsoul Hold} (30.87,59.15)| |Z|1033 0 | |NPC|98801|
-C Lyana Darksorrow |QID|40297.1| |N|Kill the (npc:99470) in {Felsoul Hold}  (30.87,59.15)| |Z|1033 0| |NPC|99470|
+C Lyana Darksorrow |QID|40297.1| |N|Kill the (npc:99470) in {Felsoul Hold} (30.87,59.15)| |Z|1033 0| |NPC|99470|
 T Lyana Darksorrow |QID|40297| |N|(npc:99514) in {Felsoul Hold} (30.87,59.15)| |Z|1033 0| |NPC|99514|
 A Glaive Circumstances |QID|40307| |N|(npc:99514) in {Felsoul Hold} (30.87,59.15)| |Z|1033 0| |NPC|99514|
 A Fresh Meat |QID|40898| |N|(npc:99514) in {Felsoul Hold} (30.87,59.15)| |Z|1033 0| |NPC|99514|
 N (item:130211) |QID|40307.2| |N|Collect (item:130211) from the ground in the middle of the green pool (27.16,59.92)| |Z|1033 0|
-K (npc:100595) |QID|40307.1| |N|Kill (npc:100595) collect (item:130210) in {Felsoul Hold}  (26.80,61.36) (26.68,62.30) (25.55,62.31) (25.33,63.85) (24.50,64.40)| |Z|1033 0| |NPC|100595|
+K (npc:100595) |QID|40307.1| |N|Kill (npc:100595) collect (item:130210) in {Felsoul Hold} (26.80,61.36) (26.68,62.30) (25.55,62.31) (25.33,63.85) (24.50,64.40)| |Z|1033 0| |NPC|100595|
 K (npc:101868) |QID|40898.1| |N|Kill (npc:101868) collect 6 (item:133743) in {Felsoul Hold} (26.77,61.30)| |Z|1033 0| |NPC|101868|
-T Glaive Circumstances |QID|40307| |N|(npc:99514) in {Felsoul Hold}  (28.55,60.78) (30.34,60.42) (30.87,59.15)| |Z|1033 0| |NPC|99514|
+T Glaive Circumstances |QID|40307| |N|(npc:99514) in {Felsoul Hold} (28.55,60.78) (30.34,60.42) (30.87,59.15)| |Z|1033 0| |NPC|99514|
 T Fresh Meat |QID|40898| |N|(npc:99514) in {Felsoul Hold} (30.87,59.15)| |Z|1033 0| |NPC|99514|
 A Grimwing the Devourer |QID|40901| |N|(npc:99514) in {Felsoul Hold} (30.87,59.15)| |Z|1033 0| |NPC|99514|
 K (npc:102292) |QID|40901.1| |N|Use the (item:133756) to summon and kill (npc:102292) collect (item;134065) (28.73,61.92) (26.98,63.08) (25.22,60.87) (25.73,58.66)| |Z|1033 0| |NPC|102292|
-T Grimwing the Devourer |QID|40901| |N|(npc:99890) in {Felsoul Hold}  (31.87,66.33) (32.18,68.02) (30.03,69.41)| |Z|1033 0| |NPC|99890|
+T Grimwing the Devourer |QID|40901| |N|(npc:99890) in {Felsoul Hold} (31.87,66.33) (32.18,68.02) (30.03,69.41)| |Z|1033 0| |NPC|99890|
 A A Fate Worse Than Dying |QID|40328| |N|(npc:99890) in {Felsoul Hold} (30.03,69.41)| |Z|1033 0| |NPC|99890|
 A Symbols of Power |QID|40929| |N|(npc:99890) in {Felsoul Hold} (30.03,69.41)| |Z|1033 0| |NPC|99890|
 
-C A Fate Worse Than Dying |QID|40328.1| |N|Click Felsoul Cages and rescue 8 felsoul captives  (31.19,69.01) (33.74,67.94) (34.47,68.43)| |Z|1033 0|
+C A Fate Worse Than Dying |QID|40328.1| |N|Click Felsoul Cages and rescue 8 felsoul captives (31.19,69.01) (33.74,67.94) (34.47,68.43)| |Z|1033 0|
 C A Symbols of Power |QID|40929.1| |N|Kill Legion enemies around this area collect 8 (item:133807) in {Felsoul Hold} (34.43,67.27)| |Z|1033 0|
 T A Fate Worse Than Dying |QID|40328| |N|(npc:99890) in {Felsoul Hold} (30.03,69.41)| |Z|1033 0| |NPC|99890|
 T Symbols of Power |QID|40929| |N|(npc:99890) in {Felsoul Hold} (30.03,69.41)| |Z|1033 0| |NPC|99890|
@@ -764,21 +764,21 @@ K (npc:100019) |QID|40412.1| |N|Kill (npc:100019) in {The Lightbrealer} (32.62,7
 R Felsoul Command |TID|40412| |N|Click Legion Portal to return to {Felsoul Command} (33.35,76.49) (33.77,75.79) (33.09,75.15)| |Z|1033 0|
 T Azoran Must Die |QID|40412| |N|(npc:100878) in {Felsoul Command} (31.16,84.61)| |Z|1033 0| |NPC|100878|
 
-N (npc:103437)  |QID|41222.1| |N|Escort (npc:103437) to {Felmaw Cavern}  (33.39,81.88) (35.62,78.70) (33.27,74.24) (34.50,73.85)| |Z|1033 0| |NPC|103437|
+N (npc:103437) |QID|41222.1| |N|Escort (npc:103437) to {Felmaw Cavern} (33.39,81.88) (35.62,78.70) (33.27,74.24) (34.50,73.85)| |Z|1033 0| |NPC|103437|
 T Into The Pit! |QID|41222| |N|(npc:103437) in {Felmaw Cavern} (34.50,73.85)| |Z|1033 0| |NPC|103437|
 A Parts Unknown |QID|41214| |N|(npc:103437) in {Felmaw Cavern} (34.50,73.85)| |Z|1033 0| |NPC|103437|
 N Brambley's Skull |QID|41214.1| |N|Collect Brambley's Skull in {Felmaw Cavern} (34.31,74.02)| |Z|1033 0|
-N Brambley's Left Arm |QID|41214.2| |N|Collect Brambley's Left Arm in {Felmaw Cavern} (34.59,73.81)  (35.23,73.84)| |Z|1033 0|
+N Brambley's Left Arm |QID|41214.2| |N|Collect Brambley's Left Arm in {Felmaw Cavern} (34.59,73.81) (35.23,73.84)| |Z|1033 0|
 N Brambley's Tibia |QID|41214.4| |N|Collect Brambley's Tibia in {Felmaw Cavern} (35.74,72.47)| |Z|1033 0|
 N Brambley's Femur |QID|41214.5| |N|Collect Brambley's Femur in {Felmaw Cavern}(36.22,73.27) (37.18,72.34)| |Z|1033 0|
 N Brambley's Right Arm |QID|41214.3| |N|Collect Brambley's Right Arm in {Felmaw Cavern} (36.87,72.42) (36.48,71.20)| |Z|1033 0|
-N Brambley's Dagger |QID|41214/6| |N|Collect  Brambley's Dagger in {Felmaw Cavern}  (35.77,70.75)| |Z|1033 0|
+N Brambley's Dagger |QID|41214/6| |N|Collect Brambley's Dagger in {Felmaw Cavern} (35.77,70.75)| |Z|1033 0|
 
-T Parts Unknown |QID|41214| |N|(npc:103437) next to you  (35.77,70.75)| |Z|1033 0| |NPC|103437|
-A Mangelrath |QID|41309| |N|(npc:103437) next to you  (35.77,70.75)| |Z|1033 0| |NPC|103437|
+T Parts Unknown |QID|41214| |N|(npc:103437) next to you (35.77,70.75)| |Z|1033 0| |NPC|103437|
+A Mangelrath |QID|41309| |N|(npc:103437) next to you (35.77,70.75)| |Z|1033 0| |NPC|103437|
 K (npc:103671) |QID|41309.1| |N|Kill (npc:103671) in {Felmaw Cavern} (35.29,70.64)| |Z|1033 0| |NPC|103671|
-N (npc:103852)  |QID|41309.2| |N|Speak with (npc:104161) in {Felmaw Cavern} (35.09,70.71)| |Z|1033 0|
-N (npc:103852)  |QID|41309.3| |N|Follow (npc:104161) in {Felmaw Cavern} (35.45,71.27) (35.78,72.41)| |Z|1033 0|
+N (npc:103852) |QID|41309.2| |N|Speak with (npc:104161) in {Felmaw Cavern} (35.09,70.71)| |Z|1033 0|
+N (npc:103852) |QID|41309.3| |N|Follow (npc:104161) in {Felmaw Cavern} (35.45,71.27) (35.78,72.41)| |Z|1033 0|
 T Mangelrath |QID|41309| |N|(npc:104161) in {Felmaw Cavern} (35.78,72.41)| |Z|1033 0|
 
 -------
@@ -913,7 +913,7 @@ T Either With Us |QID|43310| |N|(npc:110679) upstairs in {Moonlit Landing} (54.0
 A Thinly Veiled Threats |QID|43312| |N|(npc:110679) in {Moonlit Landing} (57.55,57.58)| |Z|1033 0| |NPC|110679| |FS|1859, 17000|
 N (npc:110680) |QID|43312.1| |N|Rescue (npc:110680) on the boat in {Moonlit Landing} (48.87,83.48) (52.32,81.65) (58.10,68.68) (58.00,68.70)| |Z|1033 0| |NPC|110680| |FS|1859, 17000|
 
-N Plant Rumors |QID|43313.1 |count 1| |N|Speak to (npc:110875), (npc:110876) and (npc:110874) and plant rumors| |POI| |NPC|110875, 110876, 110874| |FS|1859, 17000|
+N Plant Rumors |QID|43313.1| |N|Speak to (npc:110875), (npc:110876) and (npc:110874) and plant rumors| |POI| |NPC|110875, 110876, 110874| |FS|1859, 17000|
 T Rumor Has It |QID|43313| |N|(npc:107632) in {The Waning Crescent} (47.87,82.94)| |Z|1033 0| |NPC|107632| |FS|1859, 17000|
 
 T Thinly Veiled Threats |QID|43312| |N|(npc:110679) in {The Gilded Market} (48.87,83.48) (52.32,81.65) (52.82,78.52) (53.35,58.14) (57.55,57.58)| |Z|1033 0| |NPC|110679| |FS|1859, 17000|

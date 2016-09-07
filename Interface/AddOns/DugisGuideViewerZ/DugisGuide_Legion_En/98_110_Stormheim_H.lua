@@ -461,7 +461,7 @@ N Plant Explosives |QID|39385.1| |N|Plant an explosive in each waypoint at {Grey
 N Detonate Explosives |QID|39385.2| |N|Use (item:128287) to detonate explosisves in {Greymane's Offensive} (58.58, 73.31)| |Z|1017 0| |U|128287|
 C Dreadwake's Dilemma |QID|39153| |N|Kill  (npc:94614) or (npc:93860) in {Greymane's Offensive} (58.59, 73.51)| |Z|1017 0| |NPC|94614, 93860| |POI|
 
-R Dreadwake's Landing |QID|39154 |N|Travel to {Dreadwake's Landing} (55.02, 72.55)| |Z|1017 0| 
+R Dreadwake's Landing |QID|39154| |N|Travel to {Dreadwake's Landing} (55.02, 72.55)| |Z|1017 0| 
 T Clear the Deck! |QID|38873| |N|(npc:93603) in {Dreadwake's Landing} (55.02, 72.55)| |Z|1017 0| |NPC|93603|
 T Dreadwake's Dilemma |QID|39153| |N|(npc:93603) in {Dreadwake's Landing} (55.02, 72.55)| |Z|1017 0| |NPC|93603|
 T A Gift for Greymane |QID|39385| |N|(npc:93603) in {Dreadwake's Landing} (55.02, 72.55)| |Z|1017 0| |NPC|93603|
