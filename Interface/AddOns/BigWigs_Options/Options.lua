@@ -87,8 +87,7 @@ local acOptions = {
 		},
 		bosses = {
 			type = "execute",
-			name = BOSSES:gsub(":", ""),
-			--desc = "Bosses",
+			name = L.bosses,
 			descStyle = "", -- kill tooltip
 			func = function()
 				acd:Close("BigWigs")
@@ -653,7 +652,7 @@ do
 				if o > 0 then
 					local link = GetSpellLink(o)
 					if not link then
-						BigWigs:Print(("Failed to fetch the link for spell id %d."):format(key))
+						BigWigs:Print(("Failed to fetch the link for spell id %d."):format(o))
 					else
 						if currentSize + #link + 1 > 255 then
 							printList(channel, header, abilities)
@@ -905,20 +904,55 @@ end
 
 do
 	local addonNameToHeader = {
-		BigWigs_Classic = "BigWigs ".. EJ_GetTierInfo(1),
-		BigWigs_BurningCrusade = "BigWigs ".. EJ_GetTierInfo(2),
-		BigWigs_WrathOfTheLichKing = "BigWigs ".. EJ_GetTierInfo(3),
-		BigWigs_Cataclysm = "BigWigs ".. EJ_GetTierInfo(4),
-		BigWigs_MistsOfPandaria = "BigWigs ".. EJ_GetTierInfo(5),
-		BigWigs_WarlordsOfDraenor = "BigWigs ".. EJ_GetTierInfo(6),
-		BigWigs_Legion = "BigWigs |cFF62B1F6".. EJ_GetTierInfo(7) .."|r",
-		LittleWigs = "LittleWigs",
+		BigWigs_Classic = 2,
+		BigWigs_BurningCrusade = 3,
+		BigWigs_WrathOfTheLichKing = 4,
+		BigWigs_Cataclysm = 5,
+		BigWigs_MistsOfPandaria = 6,
+		BigWigs_WarlordsOfDraenor = 7,
+		BigWigs_Legion = 8,
+		LittleWigs_Classic = 10,
+		LittleWigs_BurningCrusade = 11,
+		LittleWigs_WrathOfTheLichKing = 12,
+		LittleWigs_Cataclysm = 13,
+		LittleWigs_MistsOfPandaria = 14,
+		LittleWigs_WarlordsOfDraenor = 15,
+		LittleWigs_Legion = 16,
 	}
+	local indexToAddonName = {}
+	for k, v in next, addonNameToHeader do
+		indexToAddonName[v] = k
+	end
+	local statusTable = {}
 
 	function options:OpenBossConfig()
-		local treeTbl = {}
+		local treeTbl = {
+			[1] = {
+				value = "BigWigs",
+				text = "BigWigs",
+				disabled = true,
+			},
+			[9] = {
+				value = "LittleWigs",
+				text = "LittleWigs",
+				disabled = true,
+			},
+		}
+
+		for i = 1, 7 do
+			local txt = EJ_GetTierInfo(i)
+			treeTbl[i+1] = {
+				value = indexToAddonName[i+1],
+				text = txt,
+			}
+			treeTbl[i+9] = {
+				value = indexToAddonName[i+9],
+				text = txt,
+			}
+		end
+
 		do
-			local tmp, tmpZone, tmpParents = {}, {}, {}
+			local tmp, tmpZone = {}, {}
 			for k in next, loader:GetZoneMenus() do
 				local zone = translateZoneID(k)
 				if zone then
@@ -931,18 +965,10 @@ do
 				local zone = tmpZone[i]
 				local zoneId = tmp[zone]
 				local instanceId = fakeWorldZones[zoneId] and zoneId or GetAreaMapInfo(zoneId)
-				local parent = loader.zoneTbl[instanceId] and addonNameToHeader[loader.zoneTbl[instanceId]] or addonNameToHeader.BigWigs_Legion
-				local treeParent = tmpParents[parent]
-				if not treeParent then
-					treeParent = {
-						value = parent,
-						text = parent,
-						children = {},
-					}
-					table.insert(treeTbl, treeParent)
-					tmpParents[parent] = treeParent
-				end
-				table.insert(treeParent.children, {
+				local parent = loader.zoneTbl[instanceId] and addonNameToHeader[loader.zoneTbl[instanceId]] or addonNameToHeader.BigWigs_Legion -- Get expansion number for this zone
+				local treeParent = treeTbl[parent] -- Grab appropriate expansion name
+				if not treeParent.children then treeParent.children = {} end -- Create sub menu table
+				tinsert(treeParent.children, { -- Add new instance/zone sub menu
 					value = zoneId,
 					text = zone,
 				})
@@ -950,13 +976,17 @@ do
 		end
 
 		local bw = AceGUI:Create("Frame")
-		bw:SetTitle("BigWigs Bosses")
+		bw:SetTitle(L.bosses)
 		bw:SetWidth(858)
 		bw:SetHeight(660)
-		bw:SetCallback("OnClose", function(widget) AceGUI:Release(widget) end)
+		bw:SetCallback("OnClose", function(widget)
+			AceGUI:Release(widget)
+			wipe(statusTable)
+		end)
 		bw:SetLayout("Fill")
 
 		local tree =  AceGUI:Create("TreeGroup")
+		tree:SetStatusTable(statusTable)
 		tree:SetTree(treeTbl)
 		tree:SetLayout("Fill")
 		bw:AddChild(tree)
@@ -966,6 +996,13 @@ do
 			local zoneId = path:match("\001(%d+)$")
 			if zoneId then
 				onZoneShow(self, tonumber(zoneId))
+			else
+				statusTable.groups[path] = true
+				self:RefreshTree()
+				-- local children = treeTbl[addonNameToHeader[path]].children
+				-- if children and #children > 0 then
+				-- 	self:SelectByPath(path, children[1].value)
+				-- end
 			end
 		end)
 
@@ -984,7 +1021,8 @@ do
 			mapId = loader.GetCurrentMapAreaID()
 		end
 		local moduleList = mapId and loader:GetZoneMenus()[mapId]
-		tree:SelectByValue(moduleList and ("%s\001%d"):format(parent or addonNameToHeader.BigWigs_Legion, mapId) or addonNameToHeader.BigWigs_Legion)
+		local value = parent and treeTbl[parent].value or treeTbl[addonNameToHeader.BigWigs_Legion].value
+		tree:SelectByValue(moduleList and ("%s\001%d"):format(value, mapId) or value)
 	end
 end
 
@@ -1022,4 +1060,3 @@ do
 end
 
 BigWigsOptions = options -- Set global
-

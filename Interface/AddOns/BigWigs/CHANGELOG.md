@@ -1,8 +1,22 @@
 # BigWigs
 
-## [v8-25-gfe6c945](https://github.com/BigWigsMods/BigWigs/tree/fe6c9459401413a736890d4d05641127bd7b19bb) (2016-09-07) [](#top)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v8...fe6c9459401413a736890d4d05641127bd7b19bb)
+## [v8-39-g9ba160d](https://github.com/BigWigsMods/BigWigs/tree/9ba160df834c111c808638ed29516fff93cb505f) (2016-09-08) [](#top)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v8...9ba160df834c111c808638ed29516fff93cb505f)
 
+-   Update deDE (#28)  
+-   bump DBM version  
+-   esES update. (#27)  
+-   esES update. (#26)  
+-   Options: Just expand the header without selecting to prevent addon loading  
+-   ruRU update (#25)  
+-   Options: Fix print to chat invalid spell id message  
+-   Options: Select the first instance when clicking a header  
+-   Options: add some comments  
+-   cleanup some whitespace  
+-   Translate "bosses" text and remove some old locale entries.  
+-   Options: Split LittleWigs content into expansions.  
+-   Options: Sort content by expansion.  
+-   Pull: Allow tanks in LFG to send pull timers.  
 -   Pull: comment out the gear check code.  
 -   Fix the logic for auto selecting the current zone in the config.  
 -   Options: Move boss configuration to our own dedicated window.  
