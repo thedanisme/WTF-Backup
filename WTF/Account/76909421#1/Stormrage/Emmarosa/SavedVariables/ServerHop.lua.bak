@@ -1,8 +1,8 @@
 
 ServerHopPosition = {
 	"RIGHT", -- [1]
-	-366.000274658203, -- [2]
-	-81.0000457763672, -- [3]
+	-287.000030517578, -- [2]
+	-20.9999942779541, -- [3]
 	false, -- [4]
 }
 ServerHopSettings = {
@@ -18,7 +18,7 @@ ServerHopSettings = {
 		["hide"] = true,
 	},
 	["MINIMAP_STRATA"] = 3,
-	["BLACKLIST_DURATION"] = 360,
+	["BLACKLIST_DURATION"] = 353.163513183594,
 	["NON_AUTO_GROUPS"] = false,
 	["HOP_TO_PVP"] = 3,
 	["SHOW_ONLY_MY_ZONE"] = true,

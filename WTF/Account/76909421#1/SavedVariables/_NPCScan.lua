@@ -288,6 +288,8 @@ _NPCScanProfiles = {
 		},
 		["Default"] = {
 			["TrackMouseover"] = true,
+			["AlertScreenEdgeFlash"] = false,
+			["TrackVignettes"] = false,
 		},
 		["Pryahprism - Turalyon"] = {
 			["AchievementsAddFound"] = true,

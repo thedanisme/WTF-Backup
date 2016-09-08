@@ -2,7 +2,7 @@
 PawnOptions = {
 	["LastVersion"] = 2.0009,
 	["LastPlayerFullName"] = "Emmarosa-Stormrage",
-	["AutoSelectScales"] = true,
+	["AutoSelectScales"] = false,
 	["UpgradeTracking"] = false,
 	["LastKeybindingsSet"] = 1,
 }

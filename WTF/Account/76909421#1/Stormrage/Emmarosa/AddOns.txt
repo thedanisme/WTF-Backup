@@ -131,7 +131,7 @@ CompactRunes: enabled
 TradeSkillMaster_Additions: disabled
 TradeSkillMaster_WoWuction: disabled
 WeakAurasTemplates: disabled
-AdvancedInterfaceOptions: disabled
+AdvancedInterfaceOptions: enabled
 Altoholic: disabled
 Altoholic_Achievements: disabled
 Altoholic_Agenda: disabled
@@ -143,7 +143,7 @@ Altoholic_Summary: disabled
 AngryAssignments: disabled
 AtlasLoot_Legion: enabled
 BestInSlot_Legion: enabled
-BigWigs_Nightmare: disabled
+BigWigs_Nightmare: enabled
 BigWigs_Nighthold: disabled
 BossBannerHider: enabled
 DataStore: disabled
@@ -169,7 +169,7 @@ Redprints: enabled
 TransmogTokens: enabled
 BestInSlot_PvP: disabled
 BestInSlot_WoDDungeons: enabled
-BigWigs_Achievements: disabled
+BigWigs_Achievements: enabled
 Details: enabled
 Details_CalcLeech: enabled
 Details_DmgRank: disabled
@@ -203,3 +203,4 @@ WorldQuestTracker: disabled
 HandyNotes_LegionRaresTreasures: enabled
 NOP: enabled
 WorldQuestsList: enabled
+ServerHop: disabled

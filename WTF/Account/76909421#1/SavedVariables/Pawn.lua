@@ -308,6 +308,22 @@ PawnCommon = {
 			["SpecID"] = 1,
 			["Role"] = "DAMAGER",
 		},
+		["Rogue_Outlaw_T19P"] = {
+			["NormalizationFactor"] = 1,
+			["PerCharacterOptions"] = {
+				["Emmarosa-Stormrage"] = {
+					["Visible"] = true,
+				},
+			},
+			["UpgradesFollowSpecialization"] = true,
+			["Values"] = {
+				["Agility"] = 11.76,
+				["HasteRating"] = 6.43,
+				["MasteryRating"] = 5.26,
+				["CritRating"] = 6.43,
+				["Versatility"] = 7.41,
+			},
+		},
 		["\"Wowhead\":WARRIOR3"] = {
 			["Color"] = "c79c6e",
 			["DoNotShow1HUpgrades"] = false,
@@ -759,6 +775,9 @@ PawnCommon = {
 				["Knutts-Turalyon"] = {
 					["Visible"] = true,
 				},
+				["Emmarosa-Stormrage"] = {
+					["Visible"] = true,
+				},
 			},
 			["ClassID"] = 4,
 			["UpgradesFollowSpecialization"] = true,
@@ -834,7 +853,7 @@ PawnCommon = {
 			["Role"] = "DAMAGER",
 		},
 	},
-	["ShowSocketingAdvisor"] = true,
+	["ShowSocketingAdvisor"] = false,
 	["ShowSpecIcons"] = true,
 	["IgnoreGemsWhileLeveling"] = true,
 	["ButtonPosition"] = 2,

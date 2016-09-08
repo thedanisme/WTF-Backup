@@ -1,7 +1,7 @@
 
 _NPCScanOverlayOptions = {
 	["ShowKey"] = false,
-	["KeyFontSize"] = 12,
+	["KeyFontSize"] = 11.0909996032715,
 	["MouseoverText"] = false,
 	["LockSwap"] = false,
 	["Modules"] = {
@@ -33,7 +33,7 @@ _NPCScanOverlayOptions = {
 		},
 	},
 	["KeyMaxSize"] = 0.75,
-	["KeyFont"] = "ChatFontNormal",
+	["KeyFont"] = "Gotham-Narrow",
 }
 _NPCScanOverlayKeyColors = {
 	{
