@@ -2,10 +2,10 @@
 NewOpenablesProfile = {
 	["profileKeys"] = {
 		["Danoh - Stormrage"] = "Default",
-		["Druidann - Stormrage"] = "Default",
-		["Talthalador - Stormrage"] = "Default",
-		["Emmarosa - Stormrage"] = "Default",
 		["Yanlery - Stormrage"] = "Default",
+		["Emmarosa - Stormrage"] = "Default",
+		["Talthalador - Stormrage"] = "Default",
+		["Druidann - Stormrage"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -14,8 +14,8 @@ NewOpenablesProfile = {
 					["T_BLACKLIST"] = {
 						[140590] = true,
 						[139506] = true,
-						[136924] = true,
 						[0] = true,
+						[136924] = true,
 					},
 					["button"] = {
 						nil, -- [1]

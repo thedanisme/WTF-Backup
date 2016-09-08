@@ -528,13 +528,20 @@ function Guides:Initialize()
 	end
 	
 	local function EvaluateBUFF(buff)
-		for i=1,30 do
+		if buff then 
+			buff = string.lower(buff)
+		end
+		for i=1,10 do
 			local name,_,tex = UnitBuff("player",i)
+			if name then name = string.lower(name) end
+			if tex then tex = string.lower(tex) end
 			if name and (tex:find(buff) or name:find(buff)) then return true,true end
 			local name,_,tex = UnitDebuff("player",i)
+			if name then name = string.lower(name) end
+			if tex then tex = string.lower(tex) end			
 			if name and (tex:find(buff) or name:find(buff)) then return true,true end
 		end
-	end	
+	end		
 
 	local function EvaluateTID(tid)
 		return IsQuestFlaggedCompleted(tid) and not DGV:GetQuestLogIndexByQID(tid)
@@ -749,7 +756,7 @@ function Guides:Initialize()
 	function DGV:SetQuestsState()
 		SuspendViewFrameUpdate()
 		local i
-		if DGU.QuestState then
+		if DGU.QuestState and visualRows and #visualRows then
 			
 			--Find all previously completed quests and check them
 			for i=1, #visualRows do			

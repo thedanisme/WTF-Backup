@@ -1,4 +1,4 @@
-local VERSION = 18
+local VERSION = 19
 
 --[[
 Special icons for rares, pvp or pet battle quests in list
@@ -32,6 +32,11 @@ Added icon on the flight map for recently chosen quest
 
 Added filters for pvp, pet battles & professions quests
 Added checkbox above map to disable WQL
+
+Artifact weapon color for all artifact power items
+Minor notification for artifact power items that can be earned after reaching next artifact knowledge level
+Dungeon icon for dungeons world quests
+Added options for scale, anchor and arrow
 ]]
 
 local charKey = (UnitName'player' or "").."-"..(GetRealmName() or ""):gsub(" ","")
@@ -42,46 +47,73 @@ local LOCALE =
 		gear = "Экипировка",
 		gold = "Золото",
 		blood = "Кровь Саргераса",
+		knowledgeTooltip = "** Можно выполнить после повышения уровня знаний вашего артефакта",
+		disableArrow = "Отключить стрелку",
+		anchor = "Привязка",
 	} or
 	locale == "deDE" and {
 		gear = "Ausrüstung",
 		gold = "Gold",
 		blood = "Blut von Sargeras",
+		knowledgeTooltip = "** Can be completed after reaching next artifact knowledge level",
+		disableArrow = "Disable arrow",
+		anchor = "Anchor",
 	} or
 	locale == "frFR" and {
 		gear = "Équipement",
 		gold = "Or",
 		blood = "Sang de Sargeras",
+		knowledgeTooltip = "** Can be completed after reaching next artifact knowledge level",
+		disableArrow = "Disable arrow",
+		anchor = "Anchor",
 	} or
 	(locale == "esES" or locale == "esMX") and {
 		gear = "Equipo",
 		gold = "Oro",
 		blood = "Sangre de Sargeras",
+		knowledgeTooltip = "** Can be completed after reaching next artifact knowledge level",
+		disableArrow = "Disable arrow",
+		anchor = "Anchor",
 	} or	
 	locale == "itIT" and {
 		gear = "Equipaggiamento",
 		gold = "Oro",
 		blood = "Sangue di Sargeras",
+		knowledgeTooltip = "** Can be completed after reaching next artifact knowledge level",
+		disableArrow = "Disable arrow",
+		anchor = "Anchor",
 	} or
 	locale == "ptBR" and {
 		gear = "Equipamento",
 		gold = "Ouro",
 		blood = "Sangue de Sargeras",
+		knowledgeTooltip = "** Can be completed after reaching next artifact knowledge level",
+		disableArrow = "Disable arrow",
+		anchor = "Anchor",
 	} or
 	locale == "koKR" and {
 		gear = "Gear",
 		gold = "금메달",
 		blood = "살게라스의 피",
+		knowledgeTooltip = "** Can be completed after reaching next artifact knowledge level",
+		disableArrow = "Disable arrow",
+		anchor = "Anchor",
 	} or
 	(locale == "zhCN" or locale == "zhTW") and {
 		gear = "装备",
 		gold = "黄金",
 		blood = "萨格拉斯之血",
+		knowledgeTooltip = "** Can be completed after reaching next artifact knowledge level",
+		disableArrow = "Disable arrow",
+		anchor = "Anchor",
 	} or	
 	{
 		gear = "Gear",
 		gold = "Gold",
 		blood = "Blood of Sargeras",
+		knowledgeTooltip = "** Can be completed after reaching next artifact knowledge level",
+		disableArrow = "Disable arrow",
+		anchor = "Anchor",
 	}
 
 local filters = {
@@ -98,6 +130,8 @@ local ActiveFilterType
 local ActiveSort = 5
 
 local WorldMapHideWQLCheck
+local UpdateScale
+local UpdateAnchor
 
 local function TaskPOI_OnClick(self,button)
 	if not GExRT or VWQL.DisableArrow then
@@ -137,14 +171,13 @@ local WorldQuestList_Width = 450+70
 local WorldQuestList_ZoneWidth = 100
 
 local WorldQuestList = CreateFrame("Frame",nil,WorldMapFrame)
-WorldQuestList:SetPoint("TOPLEFT",WorldMapFrame,"TOPRIGHT",10,-3)
+WorldQuestList:SetPoint("TOPLEFT",WorldMapFrame,"TOPRIGHT",10,-4)
 WorldQuestList:SetSize(550,300)
 
 WorldQuestList:SetScript("OnHide",function(self)
 	if self:GetParent() ~= WorldMapFrame then
-		self:ClearAllPoints()
 		self:SetParent(WorldMapFrame)
-		self:SetPoint("TOPLEFT",WorldMapFrame,"TOPRIGHT",10,-3)
+		UpdateAnchor()
 	end
 end)
 
@@ -219,6 +252,9 @@ WorldQuestList:SetScript("OnEvent",function(self,event,...)
 		if not ArtifactRelicSubclass then
 			ArtifactRelicSubclass = "Artifact Relic"
 		end
+		
+		UpdateScale()
+		UpdateAnchor()
 	end
 end)
 
@@ -284,6 +320,28 @@ end
 
 local additionalTooltips = {}
 
+local function GetAdditionalTooltip(i,isBottom)
+	if not additionalTooltips[i] then
+		additionalTooltips[i] = CreateFrame("GameTooltip", "WorldQuestsListAdditionalTooltip"..i, UIParent, "GameTooltipTemplate")
+	end
+	local tooltip = additionalTooltips[i]
+	local owner = nil
+	if i == 2 then
+		owner = GameTooltip
+	else
+		owner = additionalTooltips[i - 1]
+	end
+	tooltip:SetOwner(owner, "ANCHOR_NONE")
+	tooltip:ClearAllPoints()
+	if isBottom then
+		tooltip:SetPoint("TOPLEFT",owner,"BOTTOMLEFT",0,0)
+	else
+		tooltip:SetPoint("TOPRIGHT",owner,"TOPLEFT",0,0)
+	end
+	
+	return tooltip
+end
+
 local function WorldQuestList_LineReward_OnEnter(self)
 	local line = self:GetParent()
 	if line.reward.ID then
@@ -293,22 +351,15 @@ local function WorldQuestList_LineReward_OnEnter(self)
 		
 		if line.reward.IDs then
 			for i=2,line.reward.IDs do
-				if not additionalTooltips[i] then
-					additionalTooltips[i] = CreateFrame("GameTooltip", "WorldQuestsListAdditionalTooltip"..i, UIParent, "GameTooltipTemplate")
-				end
-				local tooltip = additionalTooltips[i]
-				local owner = nil
-				if i == 2 then
-					owner = GameTooltip
-				else
-					owner = additionalTooltips[i - 1]
-				end
-				tooltip:SetOwner(owner, "ANCHOR_NONE")
+				local tooltip = GetAdditionalTooltip(i)
 				tooltip:SetQuestLogItem("reward", i, line.reward.ID)
-				tooltip:ClearAllPoints()
-				tooltip:SetPoint("TOPRIGHT",owner,"TOPLEFT",0,0)
 				tooltip:Show()
 			end
+		end
+		if line.reward.artifactKnowlege then
+			local tooltip = GetAdditionalTooltip(2,true)
+			tooltip:AddLine(LOCALE.knowledgeTooltip)
+			tooltip:Show()
 		end
 		
 		self:RegisterEvent('MODIFIER_STATE_CHANGED')
@@ -688,7 +739,13 @@ WorldQuestList.filterDropDown.Button:SetScript("OnClick",function(self)
 		info.arg1 = "pvp"
 		info.func = SetFilterType
 		info.checked = function() return not ActiveFilterType.pvp end
-		UIDropDownMenu_AddButton(info)	
+		UIDropDownMenu_AddButton(info)
+		
+		info.text = DUNGEONS
+		info.arg1 = "dung"
+		info.func = SetFilterType
+		info.checked = function() return not ActiveFilterType.dung end
+		UIDropDownMenu_AddButton(info)		
 		
 		info.text = TRADE_SKILLS
 		info.arg1 = "prof"
@@ -701,6 +758,159 @@ WorldQuestList.filterDropDown.Button:SetScript("OnClick",function(self)
 		info.func = SetFilterType
 		info.checked = function() return not ActiveFilterType.pet end
 		UIDropDownMenu_AddButton(info)			
+	end)
+	ToggleDropDownMenu(nil, nil, self:GetParent())
+	PlaySound("igMainMenuOptionCheckBoxOn")
+	self:SetScript("OnClick",function(self)
+		ToggleDropDownMenu(nil, nil, self:GetParent())
+		PlaySound("igMainMenuOptionCheckBoxOn")	
+	end)
+end)
+
+function UpdateScale()
+	WorldQuestList:SetScale(tonumber(VWQL.Scale) or 1)
+end
+function UpdateAnchor()
+	WorldQuestList:ClearAllPoints()
+	if VWQL.Anchor == 1 then
+		WorldQuestList.filterDropDown:ClearAllPoints()
+		WorldQuestList.filterDropDown:SetPoint("TOPLEFT",WorldQuestList,"TOPRIGHT",-5,5)
+
+		WorldQuestList.sortDropDown:ClearAllPoints()
+		WorldQuestList.sortDropDown:SetPoint("TOPLEFT",WorldQuestList,"TOPRIGHT",-5,-20)
+
+		WorldQuestList.optionsDropDown:ClearAllPoints()
+		WorldQuestList.optionsDropDown:SetPoint("TOPLEFT",WorldQuestList,"TOPRIGHT",-5,-45)
+			
+		WorldQuestList:SetPoint("TOPLEFT",WorldMapFrame,"BOTTOMLEFT",3,-7)
+	else
+		WorldQuestList.filterDropDown:ClearAllPoints()
+		WorldQuestList.filterDropDown:SetPoint("BOTTOMRIGHT",WorldQuestList,"TOPRIGHT",15,0)
+
+		WorldQuestList.sortDropDown:ClearAllPoints()
+		WorldQuestList.sortDropDown:SetPoint("BOTTOMRIGHT",WorldQuestList,"TOPRIGHT",15-120,0)
+
+		WorldQuestList.optionsDropDown:ClearAllPoints()
+		WorldQuestList.optionsDropDown:SetPoint("BOTTOMRIGHT",WorldQuestList,"TOPRIGHT",15-120*2,0)
+	
+		WorldQuestList:SetPoint("TOPLEFT",WorldMapFrame,"TOPRIGHT",10,-4)
+	end
+end
+
+
+WorldQuestList.optionsDropDown = CreateFrame("Frame", "WorldQuestListOptionsDropDown", WorldQuestList, "UIDropDownMenuTemplate")
+WorldQuestList.optionsDropDown:SetPoint("BOTTOMRIGHT",WorldQuestList,"TOPRIGHT",15-120*2,0)
+WorldQuestList.optionsDropDown.Text:SetText(GAMEOPTIONS_MENU)
+UIDropDownMenu_SetWidth(WorldQuestList.optionsDropDown, 100)
+
+WorldQuestList.optionsDropDown.Button:SetScript("OnClick",function(self)
+	UIDropDownMenu_Initialize(WorldQuestList.optionsDropDown, function(self, level, menuList)
+		local info = UIDropDownMenu_CreateInfo()
+		
+		if level == 1 then
+			info.notCheckable = false
+			info.isTitle = false
+			info.disabled = false
+			info.text = LOCALE.disableArrow
+			info.hasArrow = false
+			info.func = function(_, arg1, _, value)
+				if value then
+					VWQL.DisableArrow = nil
+				else
+					VWQL.DisableArrow = true
+				end
+			end
+			info.checked = function() return VWQL.DisableArrow end
+			UIDropDownMenu_AddButton(info)
+			
+			info.hasArrow = true
+			info.notCheckable = true
+			info.text = UI_SCALE
+			info.value = 1
+			UIDropDownMenu_AddButton(info)
+			
+			info.hasArrow = true
+			info.notCheckable = true
+			info.text = LOCALE.anchor
+			info.value = 2
+			UIDropDownMenu_AddButton(info)
+			
+		elseif level == 2 and UIDROPDOWNMENU_MENU_VALUE == 1 then
+			info.notCheckable = false
+			info.isTitle = false
+			info.disabled = false
+			info.text = "1.25"
+			info.hasArrow = false
+			info.func = function(_, arg1, _, value)
+				VWQL.Scale = 1.25
+				UpdateScale()
+			end
+			info.checked = function() return VWQL.Scale == 1.25 end
+			UIDropDownMenu_AddButton(info, level)
+			
+			info.text = "1.1"
+			info.func = function(_, arg1, _, value)
+				VWQL.Scale = 1.1
+				UpdateScale()
+			end
+			info.checked = function() return VWQL.Scale == 1.1 end
+			UIDropDownMenu_AddButton(info, level)			
+
+			info.text = "1.0"
+			info.func = function(_, arg1, _, value)
+				VWQL.Scale = nil
+				UpdateScale()
+			end
+			info.checked = function() return not VWQL.Scale end
+			UIDropDownMenu_AddButton(info, level)	
+			
+			info.text = "0.9"
+			info.func = function(_, arg1, _, value)
+				VWQL.Scale = 0.9
+				UpdateScale()
+			end
+			info.checked = function() return VWQL.Scale == 0.9 end
+			UIDropDownMenu_AddButton(info, level)	
+			
+			info.text = "0.8"
+			info.func = function(_, arg1, _, value)
+				VWQL.Scale = 0.8
+				UpdateScale()
+			end
+			info.checked = function() return VWQL.Scale == 0.8 end
+			UIDropDownMenu_AddButton(info, level)	
+			
+			info.text = "0.7"
+			info.func = function(_, arg1, _, value)
+				VWQL.Scale = 0.7
+				UpdateScale()
+			end
+			info.checked = function() return VWQL.Scale == 0.7 end
+			UIDropDownMenu_AddButton(info, level)			
+		elseif level == 2 and UIDROPDOWNMENU_MENU_VALUE == 2 then
+			info.notCheckable = false
+			info.isTitle = false
+			info.disabled = false
+			info.text = "1"
+			info.hasArrow = false
+			info.func = function(_, arg1, _, value)
+				VWQL.Anchor = nil
+				UpdateAnchor()
+				CloseDropDownMenus()
+			end
+			info.checked = function() return not VWQL.Anchor end
+			UIDropDownMenu_AddButton(info, level)
+			
+			info.text = "2"
+			info.func = function(_, arg1, _, value)
+				VWQL.Anchor = 1
+				UpdateAnchor()
+				CloseDropDownMenus()
+			end
+			info.checked = function() return VWQL.Anchor == 1 end
+			UIDropDownMenu_AddButton(info, level)	
+		end
+		
 	end)
 	ToggleDropDownMenu(nil, nil, self:GetParent())
 	PlaySound("igMainMenuOptionCheckBoxOn")
@@ -912,11 +1122,13 @@ function WorldQuestList_Update()
 	if UnitLevel'player' < 110 then
 		WorldQuestList.sortDropDown:Hide()
 		WorldQuestList.filterDropDown:Hide()
+		WorldQuestList.optionsDropDown:Hide()
 		WorldQuestList_Leveling_Update()
 		return
 	else
 		WorldQuestList.sortDropDown:Show()
-		WorldQuestList.filterDropDown:Show()	
+		WorldQuestList.filterDropDown:Show()
+		WorldQuestList.optionsDropDown:Show()	
 	end
 
 	WorldQuestList_Update_Timer = nil
@@ -971,6 +1183,20 @@ function WorldQuestList_Update()
 		WorldQuestList:SetWidth(WorldQuestList_Width)
 	end
 	
+	local nextResearch = nil
+	
+	local looseShipments = C_Garrison.GetLooseShipments(3)
+	for i = 1, #looseShipments do
+		local name, texture, shipmentCapacity, shipmentsReady, shipmentsTotal, creationTime, duration, timeleftString = C_Garrison.GetLandingPageShipmentInfoByContainerID(looseShipments[i])
+		if texture == 237446 and creationTime then
+			nextResearch = (creationTime + duration - time()) / 60 + 60
+			if nextResearch < 0 then
+				nextResearch = nil
+			end
+			break
+		end
+	end
+	
 	local bounties = GetQuestBountyInfoForMapID(1007)
 	local bountiesInProgress = {}
 	for _,bountyData in pairs(bounties or {}) do
@@ -992,6 +1218,7 @@ function WorldQuestList_Update()
 	local result = {}
 
 	local taskIconIndex = 1
+	local totalQuestsNumber = 0
 	if ( numTaskPOIs > 0 ) then
 		for i, info  in ipairs(taskInfo) do
 			if ( HaveQuestData(info.questId) ) then
@@ -1013,6 +1240,7 @@ function WorldQuestList_Update()
 					local rewardSort = 0
 					local rewardItemLink
 					local nameicon = nil
+					local artifactKnowlege
 					
 					local isValidLine = 1
 					
@@ -1022,7 +1250,12 @@ function WorldQuestList_Update()
 					local _,_,worldQuestType,rarity, _, tradeskillLineIndex = GetQuestTagInfo(questID)
 					
 					
-					if rarity == LE_WORLD_QUEST_QUALITY_RARE then
+					if worldQuestType == LE_QUEST_TAG_TYPE_DUNGEON then
+						nameicon = -6
+						if ActiveFilterType.dung then 
+							isValidLine = 0 
+						end
+					elseif rarity == LE_WORLD_QUEST_QUALITY_RARE then
 						nameicon = -1
 					elseif rarity == LE_WORLD_QUEST_QUALITY_EPIC then
 						nameicon = -2
@@ -1128,6 +1361,9 @@ function WorldQuestList_Update()
 									if bit.band(filters[2][2],ActiveFilter) == 0 then 
 										isValidLine = 0  
 									end
+									if BAG_ITEM_QUALITY_COLORS[6] then
+										rewardColor = BAG_ITEM_QUALITY_COLORS[6]
+									end
 								elseif text and text:find(ITEM_LEVEL) then
 									local ilvl = text:match(ITEM_LEVEL)
 									reward = "|T"..icon..":0|t "..ilvl.." "..name
@@ -1210,6 +1446,11 @@ function WorldQuestList_Update()
 						end
 						timeleft = (color or "")..(timeString or "")
 						
+						if rewardType == 20 and nextResearch and timeLeftMinutes > nextResearch and reward then
+							reward = reward:gsub("] ","]** ")
+							artifactKnowlege = true
+						end
+						
 						if timeLeftMinutes == 0 then
 							isValidLine = 0
 						end
@@ -1239,8 +1480,11 @@ function WorldQuestList_Update()
 							rewardType = rewardType,
 							rewardSort = rewardSort,
 							nameicon = nameicon,
+							artifactKnowlege = artifactKnowlege,
 						})
 					end
+					
+					totalQuestsNumber = totalQuestsNumber + 1
 				end
 			end
 		end
@@ -1271,6 +1515,8 @@ function WorldQuestList_Update()
 				line.nameicon:SetAtlas("worldquest-icon-petbattle")
 			elseif data.nameicon == -5 then
 				line.nameicon:SetAtlas("worldquest-icon-engineering")
+			elseif data.nameicon == -6 then
+				line.nameicon:SetAtlas("Dungeon")
 			end
 			line.name:SetWidth(NAME_WIDTH-15)
 		else
@@ -1311,6 +1557,12 @@ function WorldQuestList_Update()
 			line.nqhl:Hide()
 		end
 		
+		if data.artifactKnowlege then
+			line.reward.artifactKnowlege = true
+		else
+			line.reward.artifactKnowlege = nil
+		end
+		
 		line.rewardLink = data.rewardItemLink
 		
 		line.isLeveling = nil
@@ -1338,6 +1590,16 @@ function WorldQuestList_Update()
 		WorldQuestList.b:SetAlpha(WorldQuestList.b.A or 1)
 		WorldQuestList.backdrop:SetAlpha(1)
 		ViewAllButton:Hide()
+	end
+	
+	if totalQuestsNumber == 0 then
+		WorldQuestList.sortDropDown:Hide()
+		WorldQuestList.filterDropDown:Hide()
+		WorldQuestList.optionsDropDown:Hide()
+	else
+		WorldQuestList.sortDropDown:Show()
+		WorldQuestList.filterDropDown:Show()
+		WorldQuestList.optionsDropDown:Show()		
 	end
 end
 
@@ -1408,6 +1670,7 @@ WorldMapButton_HookShowHide:SetScript('OnShow',function()
 		WorldQuestList:Hide()
 		WorldQuestList:Show()
 	end
+	C_Garrison.RequestLandingPageShipmentInfo()
 end)
 
 SlashCmdList["WQLSlash"] = function() 

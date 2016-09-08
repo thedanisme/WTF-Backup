@@ -178,11 +178,13 @@ N Stormheim |TID|44700| |N|Switch to (guide:"1017(98-110)#1017(98-110)#1017(98-1
 
 N Level 101 Required |N|You need to be at least level 101 to continue with the class campaign quest line| |PL|101|
 
-A Growing Power |QID|42844| |N|(npc:112701)| |NPC|112701| |OID|42846|
+A Growing Power |QID|42844| |N|(npc:112701) will appear next to you in {Dalaran} (58.18,45.37)| |Z|1014 10| |NPC|112701|
+
+R Sanctum of Light |QID|42844| |N|Travel to {Sanctum of Light} (49.69,72.20)| |Z|23 20|
 C Growing Power |QID|42844| |N|Speak to (npc:90259) in {Light's Hope Chapel} (43.31, 87.50)| |Z|23 20| |NPC|112701| |POI| |OID|42846|
 T Growing Power |QID|42844| |N|(npc:90250) (76.8, 50.8)| |Z|23 0| |NPC|112701| |OID|42846|
 A The Blood Matriarch |QID|42846| |N|(npc:11034) in {Light's Hope Chapel} (76.6, 50.2)| |Z|23 0| |NPC|11034|
-C The Blood Matriarch |QID|42846| |N|Speak to (npc:92346) to enlist her as a champion of the order of the Silver Hand in {Sanctum of Light} (39.17, 63.45)| |Z|23 20||NPC|92346| |POI|
+C The Blood Matriarch |QID|42846| |N|Speak to (npc:92346) to enlist her as a champion of the order of the Silver Hand in {Sanctum of Light} (39.17, 63.45)| |Z|23 20| |NPC|92346| |POI|
 T The Blood Matriarch |QID|42846| |N|(npc:90250) in {Sanctum of Light} (52.17, 78.00)| |Z|23 20| |NPC|90250|
 
 A Dark Storms |QID|42847| |N|(npc:90250) in {Sanctum of Light} (52.17, 78.00)| |Z|23 20| |NPC|90250|
@@ -234,6 +236,53 @@ A Completing Your Arsenal |QID|44370| |N|(npc:90259) in {Light's Hope Chapel} (4
 C Completing Your Arsenal |QID|44370| |N|Speak to (npc:90259) to pursue a third artifact (43.31, 87.50)| |Z|23 20| |NPC|90259| |O|
 T Completing Your Arsenal |QID|44370| |N|(npc:90259) in {Light's Hope Chapel} (43.31, 87.50)| |Z|23 20| |NPC|90259| |O|
 
+N Level 102 Required |N|You need to be at least level 102 to complete {Suramar} quest line| |PL|102|
+R Light's Hope Chapel |QID|42866| |N|Travel to {Light's Hope Chapel} (43.31, 87.50)| |Z|23 20| |C|Paladin| |OID|44257, 44009|
+A A Sign From The Sky |QID|42866| |N|(npc:90259) in {Light's Hope Chapel} (43.31, 87.50)| |Z|23 20| |NPC|90259| |C|Paladin| |OID|44257, 44009|
+
+R The Violet Citadel |QID|44004| |N|Travel to {The Violet Citadel} (28.66, 48.37)| |Z|1014 10|
+T A Sign From The Sky |QID|42866| |N|(npc:90417) in {The Violet Citadel} (28.66, 48.37)| |Z|1014 10| |NPC|90417| |C|Paladin| |OID|44257, 44009|
+A A Falling Star |N|(npc:90417) in {The Violet Citadel} (28.66, 48.37)| |Z|1014 10| |NPC|90417| |OID|44257, 44009|
+A A Falling Star |QID|44257| |N|(npc:90417) in {The Violet Citadel} (28.66, 48.37)| |Z|1014 10| |NPC|90417| |O|
+A A Falling Star |QID|44009| |N|(npc:90417) in {The Violet Citadel} (28.66, 48.37)| |Z|1014 10| |NPC|90417| |O|
+N (npc:96813) |QID|44257.1| |N|Speak to (npc:96813) to take Khadgar's Gryphon to {Suramar} (69.89, 51.15)| |Z|1014 10| |NPC|96813| |V| |O|
+N (npc:96813) |QID|44009.1| |N|Speak to (npc:96813) to take Khadgar's Gryphon to {Suramar} (69.89, 51.15)| |Z|1014 10| |NPC|96813| |V| |O|
+N Search the Crash Site |QID|44257.2| |N|Dive down to search the Crash Site in {Azuregale Bay} (92.11, 61.08)| |Z|1033 0| |O|
+N Search the Crash Site |QID|44009.2| |N|Dive down to search the Crash Site in {Azuregale Bay} (92.11, 61.08)| |Z|1033 0| |O|
+N Investigate the Cave |QID|44257.3| |N|Find the cave entrance under water to investigate the Cave in {Azuregale Bay} (94.68, 64.07) (94.46, 66.42)| |Z|1033 0| |O|
+N Investigate the Cave |QID|44009.3| |N|Find the cave entrance under water to investigate the Cave in {Azuregale Bay} (94.68, 64.07) (94.46, 66.42)| |Z|1033 0| |O|
+K (npc:112477) |QID|44257.4| |N|Kill (npc:112477) and collect (item:140574) in {Azuregale Bay} (94.52, 67.09)| |Z|1033 0| |NPC|112477| |O|
+K (npc:112477) |QID|44009.4| |N|Kill (npc:112477) and collect (item:140574) in {Azuregale Bay} (94.52, 67.09)| |Z|1033 0| |NPC|112477| |O|
+
+R Dalaran |QID|44004| |N|Travel to {Dalaran} (49.60, 47.99)| |Z|1014 10|
+T A Falling Star |QID|44257| |N|(npc:112130) in {Chamber of the Guardian} (27.03, 35.39)| |Z|1014 12| |NPC|112130| |O|
+T A Falling Star |QID|44009| |N|(npc:112130) in {Chamber of the Guardian} (27.03, 35.39)| |Z|1014 12| |NPC|112130| |O|
+A Bringer of the Light |QID|44004| |N|(npc:112130) in {Chamber of the Guardian} (27.03, 35.39)| |Z|1014 12| |NPC|112130|
+
+R The Vault of Lights |QID|44004| |N|Use the portal to travel to {The Vault of Lights} (28.41, 34.58)| |Z|1014 12| |F|1092 0|
+C The Prophet and the Butcher |SID|30854|1| |N|Seek out (npc:109143) in {The Vault of Lights} (34.10, 66.32)| |Z|1091 0| |NPC|109143| |QID|44004|
+A Nobundo's Last Stand |QID|43705| |N|(npc:110695) in {The Crystal Hall}<br/><br/><b>Destroy Fel Portals and rescue (npc:109711) in each waypoint (37.88, 56.14) (58.93, 71.79) (57.79, 58.10) (48.71, 37.44) (44.94, 9.26)| |Z|1091 0| |NPC|110695| |OID|44004|
+N (npc:110695) |QID|43705.1| |N|Speak to (npc:110695) to begin the assault in {The Crystal Hall} (44.94, 9.26)| |Z|1091 0| |NPC|110695| |OID|44004|
+N Defeat First Assault |QID|43705.2| |N|Defend (npc:110695) and defeat the first Assault in {The Crystal Hall} (44.05, 11.76)| |Z|1091 0| |NPC|110776, 111086, 110777, 110779| |OID|44004|
+N Defeat First Assault |QID|43705.3| |N|Defend (npc:110695) and defeat the second Assault defeated, in {The Crystal Hall} (45.20, 8.80)| |Z|1091 0| |NPC|110776, 111086, 110777, 110779| |OID|44004|
+N Defeat First Assault |QID|43705.4| |N|Defend (npc:110695) and defeat the third Assault defeated, in {The Crystal Hall} (44.51, 7.08)| |Z|1091 0| |NPC|110776, 111086, 110777, 110779| |OID|44004|
+K (npc:110781) |QID|43705.5| |N|Kill (npc:110781) in {The Crystal Hall} (44.64, 8.89)| |Z|1091 0| |OID|44004|
+C Nobundo's Last Stand |QID|43705| |N|Defend (npc:110695) from the Legion Assault in {The Crystal Hall} (44.93, 10.12)| |Z|1091 0| |NPC|110695| |OID|44004|
+T Nobundo's Last Stand |QID|43705| |N|(npc:110695) in {The Crystal Hall} (44.84, 9.37)| |Z|1091 0| |NPC|110695| |OID|44004|
+C Destroy Fel Portals |SID|30864|2| |N|Destroy Fel Portals in {The Crystal Hall} (36.40, 10.46) (37.30, 28.17) (37.30, 28.17)| |Z|1091 0| |QID|44004|
+C (npc:109711) |SID|30876|2| |N|Rescue (npc:109711) in {The Vault of Lights} (46.80, 63.31)| |Z|1091 0| |NPC|109711| |QID|44004|
+C Return to the Prophet |SID|30946|3| |N|Return to (npc:109143) at {The Vault of Lights} (33.94, 66.39)| |Z|1091 0| |NPC|109143| |QID|44004|
+C The Light's Heart |SID|31309|4| |N|Let (npc:109143) examine the (item:140574) in {The Vault of Lights} (33.94, 66.39)| |Z|1091 0| |NPC|109143| |QID|44004|
+C A Long Way Down... |SID|31316|5| |N|Speak to (npc:109143), then escort him to {Seat of the Naaru} (59.67, 34.06) (53.96, 45.33) (63.48, 42.59) (53.38, 38.91)| |Z|1091 0| |NPC|109143| |QID|44004|
+K (npc:109099) |SID|31556|6| |N|Kill (npc:109099) in {Seat of the Naaru} (57.85, 41.49)| |Z|1091 0| |NPC|109099| |QID|44004|
+C Bringer of the Light |QID|44004| |N|Discover the purpose of the (item:140574) in {Seat of the Naaru} (57.85, 41.49)| |Z|1091 0|
+
+R The Violet Citadel |TID|44004| |N|Travel to {The Violet Citadel} (28.46, 48.29)| |Z|1014 10|
+T Bringer of the Light |QID|44004| |N|(npc:90417) in {The Violet Citadel} (28.46, 48.29)| |Z|1014 10| |NPC|90417|
+A Light's Charge |QID|44153| |N|(npc:90417) in {The Violet Citadel} (28.46, 48.29)| |Z|1014 10| |NPC|90417|
+C Light's Charge |QID|44153| |N|Place Light's Heart in your Order Hall| |POI|
+T Light's Charge |QID|44153| |N|Class Order Hall| |POI|
+
 N Level 103 Required |N|You need to be at least level 103 to continue with the class campaign quest line| |PL|103|
 
 A To Faronaar |QID|42886| |N|(npc:90250) in the {Sanctum of Light} (52.04, 77.17)| |Z|23 20| |NPC|90250|
@@ -281,282 +330,163 @@ T Translation: Danger! |QID|43535| |N|(npc:90251) in {Armory of the Silver Hand}
 
 N Level 110 Required |N|You need to be at least level 110 to continue with the class campaign quest line| |PL|110|
 
-step
-talk Justicar Julia Celeste##112701
-|tip She appears next to you in Dalaran.
-accept Growing Power##42844 |goto Dalaran L/10 58.18,45.37
+A Hitting the Books |QID|43883| |N|(npc:91190) in {Sanctum of Light} (37.69,57.12)| |Z|23 20| |NPC|91190|
+C Hitting the Books |QID|43883.1| |N|Speak to (npc:91190) and start a research work order in {Sanctum of Light} (37.69,57.12)| |Z|23 20| |NPC|91190|
+T Hitting the Books |QID|43883| |N|(npc:91190) in {Sanctum of Light} (37.69,57.12)| |Z|23 20| |NPC|91190|
+----
+A Goddess Watch Over You |N|(npc:113686) will appear next to you| |NPC|113686| |OID|44337, 44338|
+A Goddess Watch Over You |QID|44337| |N|(npc:113686) will appear next to you| |NPC|113686| |O|
+A Goddess Watch Over You |QID|44338| |N|(npc:113686) will appear next to you| |NPC|113686| |O|
+N Switch Guide |QID|40890| |N|Complete the (guide:"1018(98-110)#1018(98-110)#1018(98-110)") until you complete the quest (qid:40890)|
+----
 
-step
-talk Lord Maxwell Tyrosus##90259
-turnin Growing Power##42844 |goto Eastern Plaguelands/20 49.69,72.20
-accept Rise, Champions##39696 |instant |goto Eastern Plaguelands/20 49.69,72.20
-accept The Blood Matriarch##42846 |goto Eastern Plaguelands/20 49.69,72.20
+A Champion of the Light |QID|44250| |N|(npc:100196) in {Sanctum of Light} (41.32,61.11)| |NPC|100196|
+T Champion of the Light |QID|44250| |N|(npc:100196) in {Sanctum of Light} (41.32,61.11)| |NPC|100196|
+A Lord Ravencrest |QID|43493| |N|(npc:90250) in the {Sanctum of Light} (52.04, 77.17)| |Z|23 20| |NPC|90250|
+----
+R Dalaran |OID|44448| |N|Travel to {Dalaran} (28.46,48.33)| |Z|1014 10| |NPC|90417| 
+T Goddess Watch Over You |QID|44337| |N|(npc:90417) in {Dalaran} (28.46,48.33)| |Z|1014 10| |NPC|90417| |O|
+T Goddess Watch Over You |QID|44338| |N|(npc:90417) in {Dalaran} (28.46,48.33)| |Z|1014 10| |NPC|90417| |O|
+A In the House of Light and Shadow |QID|44448| |N|(npc:90417) in {Dalaran} (28.46,48.33)| |Z|1014 10| |NPC|90417| 
+C In the House of Light and Shadow |QID|44448| |N|Take the Tears of Elune to Light's Heart in your Order Hall (52.19,69.55)| |Z|23 20| 
+T In the House of Light and Shadow |QID|44448| |N|(npc:90417) in {Dalaran} (28.49,48.33)|  |Z|1014 10| |NPC|90417| 
 
-step
-talk Lady Liadrin##92346
-accept Champion: Lady Liadrin##42881 |instant |goto 38.24,64.61
-Enlist Lady Liadrin |q 42846/1 |goto 38.24,64.61
+A Awakenings |QID|44464| |N|(npc:113857) in {Sanctum of Light} (52.19,69.55)| |Z|23 20| |NPC|113857|
 
-step
-talk Lord Grayson Shadowbreaker##90250
-turnin The Blood Matriarch##42846 |goto 52.26,78.03
-accept Dark Storms##42847 |goto 52.26,78.03
+R Val'sharah |QID|44464| |N|Travel {Val'sharah} (54.40,73.17)| |Z|1018 0|
+C Awakenings |QID|44464.1| |N|Travel to {Val'sharah} and use (spell:226956) to witness the awakening of Illidan Stormrage (54.40,73.17)| |Z|1018 0|
 
-step
-click Scouting Map
-|tip Follow the dialogue prompts to complete the only available mission.
-|tip The mission will take 2 minutes to complete.
-Complete the "Dark Storms" Mission |q 42847/1 |goto 53.49,78.43
+T Awakenings |QID|44464| |N|(npc:113857) in {Sanctum of Light} (52.19,69.55)| |Z|23 20| |NPC|113857|
+----
 
-step
-talk Lord Grayson Shadowbreaker##90250
-turnin Dark Storms##42847 |goto 52.26,78.03
-accept Recruiting the Troops##42848 |goto 52.26,78.03
+N Switch Guide |QID|43493| |N|Switch guide to (guide:"1081(110)") and kill (npc:94923) for the quest (qid:43493)|
 
-step
-Follow the path |goto 47.61,62.51 < 10 |walk
-talk Commander Ansela##106447
-Click the Recruit Troops Button
-|tip Recruiting troops costs Order Resources.
-|tip Gain Order Resources by collecting Treasures and completing class hall Scouting Map missions.
-click Training Troops
-|tip It's a banner that appears next to Commander Ansela when the training order is complete.
-Train the Squires |q 42848/1 |goto 53.19,56.18
+T Lord Ravencrest |QID|43493| |N|(npc:90250) in the {Sanctum of Light} (52.04, 77.17)| |Z|23 20| |NPC|90250|
+A To Felblaze Ingress |QID|43489| |N|(npc:90250) in the {Sanctum of Light} (52.04, 77.17)| |Z|23 20| |NPC|90250|
 
-step
-Follow the path |goto 48.53,60.93 < 10 |walk
-talk Lord Grayson Shadowbreaker##90250
-turnin Recruiting the Troops##42848 |goto 52.26,78.03
-accept Wrath and Justice##42849 |goto 52.26,78.03
+R Azsuna |QID|43490| |N|Travel to {Azsuna} (66.16,26.07)| |Z|1015 0|
+T To Felblaze Ingress |QID|43489| |N|Aponi's Libram on the ground in {Azsuna} (66.16,26.07)| |Z|1015 0|
+A Aponi's Trail |QID|43490| |N|Aponi's Libram on the ground in {Azsuna} (66.16,26.07)| |Z|1015 0|
+N Recover 8 of Aponi's Journal Pages |QID|43490.1| |N|Kill enemies around this area and collect 8  Aponi's Journal Pages (66.71,27.88)| |Z|1015 0|
 
-step
-click Scouting Map
-Begin the "Wrath and Justice" Mission
-|tip This mission will take 4 hours to complete.
-Complete the "Wrath and Justice" Mission |q 42849/1 |goto 53.49,78.43
+R Niskara |QID|43490.2| |N|Use the Portal to travel to {Niskara} (66.96,27.82)| |Z|1015 0| |F|1078 0|
+N (npc:110749) |QID|43490.3| |N|Free (npc:110749) in {Niskara} (48.92,63.77)| |Z|1078 0| |NPC|110749|
+T Aponi's Trail |QID|43490| |N|(npc:110749) in {Niskara} (48.92,63.77)| |Z|1078 0| |NPC|110749|
+A Allies of the Light |QID|43491| |N|(npc:110749) in {Niskara}| |Z|1078 0 |NPC|110749|
+A The Mind of the Enemy |QID|43540| |N|(npc:110749) in {Niskara}| |Z|1078 0| |NPC|110749|
+N Discover the Projected Image |QID|43540.3| |N|Click on (npc:111015) (41.49,54.04) (42.69,46.43)| |Z|1078 0| |NPC|111015|
+N Discover the Star Map |QID|43540.2| |N|Click star map (40.24,40.97)| |Z|1078 0|
+N Discover the Legion Intelligence |QID|43540.1| |N|Click Legion Intelligence (44.12,38.22)| |Z|1078 0|
+N (npc:110866) |QID|43491.3| |N|Click the cage to rescue (npc:110866) (43.61,34.73) (42.57,21.38)| |Z|1078 0| |NPC|110866|
+N (npc:110980) |QID|43491.2| |N|Click the cage to rescue (npc:110980) (43.70,17.70)| |Z|1078 0| |NPC|110980|
+K (npc:110972) |QID|43540.4| |N|Kill (npc:110972) (44.34,28.52) (46.06,33.00) (39.20,37.90) (30.05,48.21) (24.03,50.14) (24.06,46.58)| |Z|1078 0| |NPC|110972|
+N (npc:111705) |QID|43540.5| |N|Free the (npc:111705) inside the building. (26.49,40.63)| |Z|1078 0| |NPC|111705|
+N Rescue Allies |QID|43491.1| |N|Save 15 Silver Hand Knights or Conclave Priests<br/><b>Use your (spell:1044) ability on (npc:110979)<br/><b>Use your (spell:213644) ability on (npc:110939) (36.03,45.98)| |Z|1078 0| |NPC|110979, 110939|
 
-step
-talk Lord Grayson Shadowbreaker##90250
-turnin Wrath and Justice##42849 |goto 52.30,78.05
-accept Tech It Up a Notch##42850 |goto 52.30,78.05
+T Allies of the Light |QID|43491| |N|(npc:90250) in the {Sanctum of Light} (52.04, 77.17)| |Z|23 20| |NPC|90250|
+T The Mind of the Enemy |QID|43540| |N|(npc:90250) in the {Sanctum of Light} (52.04, 77.17)| |Z|23 20| |NPC|90250|
+A United As One |QID|43541| |N|(npc:90250) in the {Sanctum of Light} (52.04, 77.17)| |Z|23 20| |NPC|90250|
+N (npc:110866) |QID|43541.1| |N|Speak to (npc:110866) (48.32,71.23)| |Z|23 20| |NPC|110866|
+N (npc:90259) |QID|43541.2| |N|Speak with (npc:90259) (49.87,72.48)| |Z|23 20| |NPC|90259|
+T United As One |QID|43541| |N|(npc:90251) (48.36,72.90)| |Z|23 20| |NPC|90251|
+A Champion: Aponi Brightmane |QID|43492| |N|Speak to (npc:90251) to recruit as a follower (48.36,72.90)| |Z|23 20| |NPC|90251| |E|
+A A New Path |QID|43934| |N|(npc:110866) (48.35,71.50)| |Z|23 20| |NPC|110866|
+N (npc:110866)  |QID|43934.1| |N|Speak to (npc:110866) (48.35,71.50)| |Z|23 20| |NPC|110866|
+N (npc:113299) |QID|43934.2| |N|Speak to (npc:113299) in the {Hall of Champions} (48.72,60.61) (64.83,35.68)| |Z|23 20| |NPC|113299|
+C A New Path |QID|43934.3| |N|Use the (spell:225423) and induct Delas Moonfang into the Silver Hand  (71.95,24.79)| |Z|23 20| 
+T A New Path |QID|43934| |N|(npc:110866) in {Sanctum of Light} (71.76,25.21)| |Z|1078 0|
+A Champion: Delas Moonfang |QID|43933| |N|Speak to (npc:110866) to recruit as a follower (71.95,24.79)| |Z|1078 0| |NPC|110866| |E|
+A Defenders of the World |QID|43699| |N|(npc:90250) in the {Sanctum of Light} (52.04, 77.17)| |Z|23 20| |NPC|90250|
+A Lumenstone |QID|43698| |N|(npc:90250) in the {Sanctum of Light} (52.04, 77.17)| |Z|23 20| |NPC|90250|
+A Blood of Sargeras |QID|43534| |N|(npc:90250) in the {Sanctum of Light} (52.04, 77.17)| |Z|23 20| |NPC|90250|
+C Blood of Sargeras |QID|124124 |QID|43534.1| |N|Collect 10 (item:124124) by completing world quests or kill bosses in dungeons| 
+T Blood of Sargeras |QID|43534| |N|(npc:90250) in the {Sanctum of Light} (52.04, 77.17)| |Z|23 20| |NPC|90250|
+----
+A An Unclear Path |QID|44466| |N|(npc:113857) in {Sanctum of Light} (52.19,69.55)| |Z|23 20| |NPC|113857|
 
-step
-talk Lord Maxwell Tyrosus##90259
-accept A Sign From The Sky##42866 |goto 49.86,72.33
+R Val'Shara |QID|44466| |N|Travel to {Val'Shara}  (54.96,53.43) (53.29,49.94) (52.11,43.99)| |Z|1018 0|
+N Witness Illidan's Resilience |QID|44466.1| |N|Use (spell:226956) to witness the awakening of Illidan Resilience (45.54,34.75)| |Z|1018 0|
 
-step
-talk Sir Alamande Graythorn##109901
-Choose a Class Hall Upgrade |q 42850/1 |goto 39.90,56.53
+T An Unclear Path |QID|44466| |N|(npc:113857) in {Sanctum of Light} (52.19,69.55)| |Z|23 20| |NPC|113857|
+A Ravencrest's Legacy |QID|44479| |N|(npc:113857) in {Sanctum of Light} (52.19,69.55)| |Z|23 20| |NPC|113857|
+R Val'Shara |QID|44479| |N|Travel to {Val'Shara} (54.96,53.43)| |Z|1018 0|
+N (spell:226956) |N|Go to the destination to use (spell:226956) to begin the Ravencrest's Legacy scenario (54.96,53.43) (52.81,50.41) (46.98,50.23) (44.28,49.94) (42.08,46.29)| |Z|1018 0| |QID|44479|
+N Report to Kur'talos Ravencrest |SID|33154|1| |N|Report to (npc:113046) in  {Ravencourt}| |QID|44479| |NPC|113046|
+N Repair the Deactivated Moon Guard Portal |SID|33155|2| |N|Click Deactivated Moon Guard Portal in {Ravencourt}| |QID|44479|
+K (npc:113555) |SID|33162|3| |N|Secure the Rampart by Defeating (npc:113555) (42.95,46.32) (44.27,49.58)| |Z|1099 0| |QID|44479|
+N Enter the Upper Ramparts of the Courtyard |SID|33169|4| |N|Follow the path to the upper ramparts of the courtyard (44.28,49.76) (44.51,51.22 )| |Z|1099 0| |QID|44479|
+N Activate the Moon Guard Portal |SID|33174|5| |N|Click on Deactivated Moon Guard Portal in each waypoint (44.51,51.22) (40.98,51.48) (43.71,50.93)| |Z|1099 0|  |QID|44479
+K (npc:114137) |SID|33184|6| |N|Use (spell:227154) to kill (npc:114137) to end the invasion (43.09,52.18)| |Z|1099 0| |QID|44479| |NPC|114137|
 
-step
-talk Lord Grayson Shadowbreaker##90250
-turnin Tech It Up a Notch##42850 |goto 52.28,78.08
+R Mausoleum |QID|44414| |N|Travel to {Mausoleum} (38.75, 53.07)| |Z|1099 0| 
+A Felspawns of Lothros |QID|44414| |N|(npc:113361) in {Mausoleum} (38.75, 53.07)| |Z|1099 0| |NPC|113361|
+C Felspawns of Lothros |QID|44414| |N|Defeat (npc:113786) in {Mausoleum} (40.63, 53.01)| |Z|1099 0| |NPC|113786|
+T Felspawns of Lothros |QID|44414| |N|(npc:113361) in {Mausoleum} (40.42, 53.01)| |Z|1099 0| |NPC|113361|
+A The Red Axe |QID|44415| |N|(npc:113361) in {Mausoleum} (40.42, 53.01)| |Z|1099 0| |NPC|113361|
+C The Red Axe |QID|44415| |N|Close the Unstable Portals and make your way to (npc:113355) (41.37, 49.89)| |Z|1099 0| |NPC|113355|
+T The Red Axe |QID|44415| |N|(npc:113355) in {Mausoleum} (43.80, 50.40)| |Z|1099 0| |NPC|113355|
+A Hunter of Night |QID|44416| |N|(npc:113355) in {Mausoleum} (43.84, 50.41)| |Z|1099 0| |NPC|113355|
+C Hunter of Night |QID|44416| |N|Defeat (npc:113825) in {Mausoleum} (43.29, 50.45)| |Z|1099 0| |NPC|113825|
+T Hunter of Night |QID|44416| |N|(npc:113355) in {Mausoleum} (41.59, 50.53)| |Z|1099 0| |NPC|113355|
 
-step
-talk Archmage Khadgar##90417
-|tip Inside the building.
-turnin A Sign From The Sky##42866 |goto Dalaran L/10 28.49,48.33
-accept A Falling Star##44257 |goto Dalaran L/10 28.49,48.33
+R Raven's Glory |QID|44479| |N|Travel to {Raven's Glory}  (42.86, 50.56) (42.97, 48.79)| |Z|1099 0|
+C When Good Men Do Nothing |SID|33186| |N|Enter Raven's Glory and use (spell:227236) to destroy the Colossal Siegebreaker in {Raven's Glory} (42.97, 48.79)| |Z|1099 0| |QID|44479|
 
-step
-talk Aludane Whitecloud##96813 |goto 69.84,51.13 |n
-Tell him _"I'm ready to go to Suramar."_
-Begin Flying to Suramar |goto 69.84,51.13 > 10000 |noway |c |q 44257
+T Ravencrest's Legacy |QID|44479| |N|(npc:113857) in {Sanctum of Light} (52.19,69.55)| |Z|23 20| |NPC|113857|
 
-step
-Watch the dialogue
-Take Khadgar's Gryphon to Suramar |q 44257/1 |goto Suramar/0 88.56,62.46
+C Lumenstone |QID|43698| |N|Use scouting map and complete "Lumenstone" Missions until you collect 50 (item:140191) from the reward (53.44,78.63)| |Z|23 20|
+C Defenders of the World |QID|43699.1| |N|Complete 30 World Quest| 
+T Defenders of the World |QID|43699| |N|(npc:90250) in the {Sanctum of Light} (52.04, 77.17)| |Z|23 20| |NPC|90250|
 
-step
-Search the Crash Site |q 44257/2 |goto 91.98,61.21
-|tip It's underwater.
+T Lumenstone |QID|43698| |N|(npc:90250) in the {Sanctum of Light} (52.04, 77.17)| |Z|23 20| |NPC|90250|
+A A Light in the Darkness |QID|43700| |N|(npc:90250) in the {Sanctum of Light} (52.04, 77.17)| |Z|23 20| |NPC|90250|
 
-step
-Enter the underwater cave |goto 94.62,64.39 < 20
-Investigate the Cave |q 44257/3 |goto 94.44,66.60
+R Netherlight Temple |QID|43700.1| |N|Take the Portal to {Netherlight Temple} in Dalaran  (35.07,62.49) (36.71,57.55) (39.54,57.28)| |Z|1014 10| |F|1040 1|
+K (npc:111245) |SID|31353|2| |N|Kill (npc:111245) in {Netherlight Temple} (32.54,40.72) (23.49,40.72)| |Z|1040 1| |NPC|111245| |QID|43700|
+K (npc:111244) |SID|31352|2| |N|Kill (npc:111244) in {Netherlight Temple} (32.99,40.68) (67.00,40.65) (76.11,40.52)| |Z|1040 1| |QID|43700| |NPC|111244|
+N Destroy the Southeastern Portal |SID|32409|3| |N|Click on (npc:112574) to destroy it (66.79,40.78) (61.18,55.80)| |Z|1040 1| |QID|43700| |NPC|112574|
+N Destroy the Southwestern Portal |SID|31355|3| |N|Click on (npc:112574) to destroy it (39.99,57.67)| |Z|1040 1| |QID|43700| |NPC|112574|
+N Destroy the Northwestern Portal |SID|32407|3| |N|Click on (npc:112574) to destroy it (38.70,26.18)| |Z|1040 1| |QID|43700| |NPC|112574|
+N Destroy the Northeastern Portal |SID|32408|3| |N|Click on (npc:112574) to destroy it (59.55,24.31)| |Z|1040 1| |QID|43700| |NPC|112574|
+K (npc:111247) |SID|0|4| |N|Kill (npc:111247) in {Netherlight Temple} (49.85,37.24)| |Z|1040 1| |QID|43700| |NPC|111247|
 
-step
-kill Yorg Murkmouth##112477
-collect Mysterious Lightbound Object##140574 |q 44257/4 |goto 94.39,67.23
+R Sanctum of Light |QID|43697| |N|Travel to {Sanctum of Light} (72.69,25.7)| |Z|23 20| 
+T A Light in the Darkness |QID|43700| |N|(npc:90259) in {Light's Hope Chapel} (72.69,25.7)| |Z|23 20| |NPC|90259| |POI|
+A Warriors of Light |QID|43697| |N|(npc:90259) in {Light's Hope Chapel} (72.69,25.7)| |Z|23 20| |NPC|90259|
+C Warriors of Light  |QID|43697.1| |N|Celebrate the Victory (70.34,27.22)| |Z|23 20|
+T Warriors of Light |QID|43697| |N|(npc:90259) in {Light's Hope Chapel} (72.69,25.7)| |Z|23 20| |NPC|90259|
+A A Hero's Weapon |QID|43424| |N|(npc:90259) in {Light's Hope Chapel} (72.69,25.7)| |Z|23 20| |NPC|90259|
+C A Hero's Weapon  |QID|43424.1| |N|Use the Commander's Valor ability to infuse your Artifact (71.79,25.15)| |Z|23 20|
+T A Hero's Weapon |QID|43424| |N|(npc:90259) in {Light's Hope Chapel} (72.69,25.7)| |Z|23 20| |NPC|90259|
+A Champion: Arator the Redeemer |QID|43785 |instant| |N|Speak to (npc:99997) to recruit as a follower (71.31,23.69)| |Z|23 20| |NPC|99997| |E|
+A Champion: Lothraxion |QID|43701 |instant| |N|Speak to (npc:109105) to recruit as a follower (73.05,23.02)| |Z|23 20| |NPC|109105| |E|
+----
+A In My Father's House |QID|44480| |N|(npc:113857) in {Sanctum of Light} (52.19,69.55)| |Z|23 20| |NPC|113857|
 
-step
-Return to Dalaran |goto Dalaran L/10 52.89,51.96 < 10000 |c |q 44257
+R Temple of Zin-Malor |QID|44480| |N|Travel to {Temple of Zin-Malor} (35.11, 49.88)| |Z|181 0|
+C In My Father's House |QID|44480| |N|Use (spell:226956) witness Illidan's Sacrifice in Azshara on the continent of Kalimdor (35.11, 49.88) | |Z|816 0|
 
-step
-Enter the building |goto 52.89,51.96 < 10 |walk
-Enter the Chamber of the Guardian |goto 49.24,47.58 > 10000 |walk
-Follow the path |goto Dalaran L/12 36.48,46.72 < 10 |walk
-talk Archmage Khadgar##72874
-turnin A Falling Star##44257 |goto Dalaran L/12 26.76,34.90
-accept Bringer of the Light##44004 |goto Dalaran L/12 26.76,34.90
+R Skyhold |TID|44480| |N|Travel to {Skyhold} (45.32,30.18)| |Z|1035 1|
+T In My Father's House |QID|44480| |N|(npc:113857) in {Sanctum of Light} (52.19,69.55)| |Z|23 20| |NPC|113857|
+A Destiny Unfulfilled |QID|44497| |N|(npc:113857) in {Sanctum of Light} (52.19,69.55)| |Z|23 20| |NPC|113857|
 
-step
-click Portal to Exodar |goto 28.67,33.48 |n
-Travel to Exodar |goto Azuremyst Isle L/0 35.82,46.48 < 50 |noway |c |q 44004
+R The Black Temple |QID|44497| |N|Travel to {The Black Temple} (72.97, 44.12)| |Z|473 0|
+N (spell:226956) |N|Use (spell:226956) in {The Black Temple} (72.97, 44.12)| |Z|473 0| |F|1085 1| |QID|44497| 
+C Examine the Skull of Gul'dan. |SID|32029|1| |N|Examine the Skull of Gul'dan in {Temple Summit} (52.70, 71.26)| |Z|1085 1| |QID|44497| 
+C Confront Akama |SID|31955|1| |N|Confront Akama in {Temple Summit} (52.70, 71.26)| |Z|1085 1| |QID|44497| 
+C You Are Not Prepared! |SID|0|2| |N|Survive until your reinforcements arrive in {Temple Summit} (52.92, 60.84)| |Z|1085 1| |QID|44497| 
+C To The Skies |SID|32682|3| |N|Summon the (npc:22997) and defend it in {Temple Summit} (55.95, 75.70)| |Z|1085 1| |NPC|22997| |QID|44497| 
+C The Final Countdown |SID|32867|4| |N|Use Metamorphosis ability in {Temple Summit} (54.48, 72.76)| |Z|1085 1| |QID|44497| 
+C The Demon Within |SID|32865|5| |N|Destroy the Warlocks in {Temple Summit} (52.27, 64.57)| |Z|1085 1| |QID|44497| 
+C Defeat Maiev |SID|32942|6| |N|Defeat (npc:112867) in {Temple Summit} (52.16, 69.92)| |Z|1085 1| |NPC|112867| |QID|44497| 
+C Destiny Unfulfilled |QID|44497| |N|Witness True Betrayal in Shadowmoon Valley on the fringes of Outland., in {Temple Summit} (52.16, 69.92)| |Z|1085 1|
 
-step
-Begin the Battle for the Exodar Scenario |scenariostart |q 44004
+R Skyhold |TID|44496| |N|Travel to {Skyhold} (45.32,30.18)| |Z|1035 1|
+T Destiny Unfulfilled |QID|44496| |N|(npc:113857) in {Sanctum of Light} (52.19,69.55)| |Z|23 20| |NPC|113857|
 
-step
-Follow the path |goto Azuremyst Isle L/0 33.72,44.42 > 10000 |walk
-Follow the path down |goto The Exodar L/0 74.18,53.59 < 15 |walk
-Follow the path |goto The Exodar L/0 64.34,36.18 < 15 |walk
-Follow the path down |goto The Exodar L/0 58.89,31.36 < 20 |walk
-Follow the path |goto The Exodar L/0 49.76,51.19 < 20 |walk
-talk Prophet Velen##109143
-Watch the dialogue
-Seek out Prophet Velen in the Vault of Lights |scenariostage 1 |goto The Exodar L/0 34.06,66.31 |q 44004
-
-stickystart "Terrified_Exodar_Citizens_Paladin"
-stickystart "Fel_Portals_Paladin"
-step
-accept Fel Annihilation##43483 |goto 37.64,57.64
-|tip You will accept this quest automatically.
-
-stickystart "Fel_Annihilation_Paladin"
-step
-Follow the path |goto 35.51,48.86 < 15 |walk
-Follow the path  |goto 43.65,17.18 < 15 |walk
-talk Farseer Nobundo##110695
-accept Nobundo's Last Stand##43705 |goto 44.91,9.26
-
-step
-talk Farseer Nobundo##110695
-Speak to Nobundo to Begin the Assault |q 43705/1 |goto 44.91,9.26
-
-step
-Kill the enemies that attack in waves
-|tip Focus on keeping Farseer Nobundo alive.
-Defeat the First Assault |q 43705/2 |goto 44.88,9.34
-Defeat the Second Assault |q 43705/3 |goto 44.88,9.34
-Defeat the Third Wave of Demons |q 43705/4 |goto 44.88,9.34
-kill Karzak the Impaler##110781kill Karzak the Impaler##110781 |q 43705/5 |goto 44.88,9.34
-Defend Farseer Nobundo from the Legion Assault |q 43705/6 |goto 44.88,9.34
-
-step
-talk Farseer Nobundo##110695
-turnin Nobundo's Last Stand##43705 |goto 44.91,9.26
-
-step
-label "Fel_Portals_Paladin"
-click Legion Portal
-|tip They look like big green swirling portals around this area.
-|tip You can see their locations on your minimap.
-Destroy #8# Fel Portals |scenariogoal 2/30864 |goto 33.95,35.82 |q 44004
-
-step
-label "Terrified_Exodar_Citizens_Paladin"
-talk Terrified Exodar Citizen##109701+
-|tip They look like crying Draenei around this whole area.
-|tip They are usually in or near buildings.
-|tip They are marked on your minimap.
-Rescue #12# Terrified Exodar Citizens |scenariogoal 2/30876 |goto 33.95,35.82 |q 44004
-
-step
-label "Fel_Annihilation_Paladin"
-Kill enemies around this area
-|tip The blue bar will fill up in your quest tracker area.
-Slay Demons |q 43483/1 |goto 33.95,35.82
-
-step
-talk Prophet Velen##109143
-Watch the dialogue
-Return to Prophet Velen at the Vault of Lights |scenariostage 3 |goto 34.07,66.29 |q 44004
-
-step
-talk Prophet Velen##109143
-Watch the dialogue
-Let Prophet Velen Examine the Mysterious Lightbound Object |scenariostage 4 |goto 34.07,66.29 |q 44004
-
-step
-talk Prophet Velen##109143 |goto 34.07,66.29 |n
-Follow Prophet Velen |goto 34.07,66.29 > 15 |noway |c |q 44004
-
-step
-Watch the dialogue
-|tip Follow Prophet Velen.
-Escort Prophet Velen to the Seat of the Naaru |scenariostage 5 |goto 53.90,38.63 |q 44004
-
-step
-kill Fel Annihilator##111593
-|tip He hits very hard. If you have trouble, let your allies fight him until he runs up onto the platform.
-Watch the dialogue
-Defeat High General Rakeesh |scenarioend |goto 57.88,41.16 |q 44004
-
-step
-Use the Khadgar's Beacon |use Khadgar's Beacon##140319 |goto 58.53,40.99 |n
-Return to Dalaran |goto Dalaran L/10 24.99,48.08 < 50 |noway |c |q 44004
-
-step
-talk Archmage Khadgar##90417
-turnin Bringer of the Light##44004 |goto Dalaran L/10 28.48,48.46
-accept Light's Charge##44153 |goto Dalaran L/10 28.48,48.46
-
-step
-click Light's Heart
-turnin Light's Charge##44153 |goto Eastern Plaguelands/20 52.34,69.35
-
-step
-talk Lord Grayson Shadowbreaker##90250
-accept Meeting of the Silver Hand##42867 |goto 52.28,78.08
-
-step
-talk Lady Liadrin##92346
-Speak to Lady Liadrin |q 42867/3 |goto 38.22,64.61
-
-step
-Follow the path |goto 47.88,62.12 < 10 |walk
-talk Vindicator Boros##94175
-Speak with Vindicator Boros |q 42867/2 |goto 52.37,60.56
-
-step
-talk Aponi Brightmane##90251
-Speak to Aponi Brightmane |q 42867/4 |goto 49.48,51.81
-
-step
-talk Arator the Redeemed##99997
-Speak to Arator the Redeemed |q 42867/5 |goto 67.69,16.83
-
-step
-Follow the path |goto 55.68,49.99 < 20 |walk
-Run up the stairs |goto 41.41,75.44 < 15 |walk
-Leave the building |goto 39.42,93.27 > 10000 |walk
-talk Justicar Julia Celeste##99995
-Speak to Justicar Julia Celeste Outside |q 42867/1 |goto Eastern Plaguelands/0 72.74,54.59
-
-step
-Enter the building |goto 75.43,52.64 > 10000 |walk
-Click the Secret Door and run down the stairs |goto Eastern Plaguelands/20 43.18,87.53 < 10 |walk
-Follow the path |goto Eastern Plaguelands/20 41.62,71.96 < 15 |walk
-talk Lord Maxwell Tyrosus##90259
-turnin Meeting of the Silver Hand##42867 |goto Eastern Plaguelands/20 49.87,72.35
-accept The Scion's Legacy##42919 |goto Eastern Plaguelands/20 49.87,72.35
-
-step
-Watch the dialogue
-Receive the Final Message |q 42919/1 |goto 49.87,72.35
-
-step
-talk Lord Maxwell Tyrosus##90259
-Tell him _"Hunt the dreadlord, Balnazzar."_
-Speak to Tyrosus and Choose a Strategy |q 42919/2 |goto 50.81,71.07
-
-step
-talk Lord Maxwell Tyrosus##90259
-turnin The Scion's Legacy##42919 |goto 50.85,70.91
-accept The Highlord's Command##42885 |goto 50.85,70.91
-
-step
-click Scouting Map
-Begin the "Highlord's Command: Nemesis" Mission
-|tip This mission will take 1 hour to complete.
-Complete the "Highlord's Command: Nemesis" Mission |q 42885/1 |goto 53.35,78.36
-
-step
-talk Lord Grayson Shadowbreaker##90250
-turnin The Highlord's Command##42885 |goto 52.17,77.93
-
-step
+A Champion Armaments |QID|44218| |N|(npc:110434) in {Sanctum of Light}, This quest will only be available if you chose to get the "Plowshares to Swords" class hall upgrade. (54.09,49.73)| |Z|23 20| |NPC|110434|
+C Champion Armaments |QID|44218| |N|Place a Work Order for Champion Armaments (54.09,49.73)| |Z|23 20| |NPC|110434|
+T Champion Armaments |QID|44218| |N|(npc:110434) in {Sanctum of Light} (54.09,49.73)| |Z|23 20| |NPC|110434|
 
 N Guide Complete
 

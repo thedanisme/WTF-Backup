@@ -533,8 +533,8 @@ A Testing the Waters |QID|41034| |N|(npc:102334) should appear next to you in {A
 
 R Azuregale Hollow |QID|41034| |N|Travel to {Azuregale Hollow}, an underwater cave. (71.25,71.07) (73.27,68.34) (77.10,70.08)| |Z|1033 0|
 K (npc:102841) |QID|41034.2| |N|Kill (npc:102841) in {Azuregale Hollow} (75.87,72.68)| |Z|1033 0| |NPC|102841|
-K (npc:102840) |QID|41034.2| |N|Kill (npc:102840) in {Azuregale Bay} (80.22,64.03)| |Z|1033 0| |NPC|102840|
-K (npc:102844) |QID|41034.2| |N|Kill (npc:102844) in {Azuregale Bay} (77.91,58.39)| |Z|1033 0| |NPC|102844|
+K (npc:102840) |QID|41034.1| |N|Kill (npc:102840) in {Azuregale Bay} (80.22,64.03)| |Z|1033 0| |NPC|102840|
+K (npc:102844) |QID|41034.3| |N|Kill (npc:102844) in {Azuregale Bay} (77.91,58.39)| |Z|1033 0| |NPC|102844|
 
 R Jandvik |QID|41034| |N|Travel to {Jandvik} (72.63,53.12)| |Z|1033 0|
 T Testing the Waters |QID|41034| |N|(npc:102845) in {Jandvik} (72.63,53.12) (70.60,49.16)| |Z|1033 0| |NPC|102845|
@@ -664,41 +664,41 @@ T Thalyssra's Abode |QID|42488| |N|(npc:97140) in {Shal'Aran} (36.87, 46.58)| |Z
 A Leyline Apprentice |QID|44492| |N|(npc:103155) in {Shal'Aran} (37.00,46.35)| |Z|1033 0| |NPC|103155|
 T Leyline Apprentice |QID|44492| |N|(npc:103155) in {Shal'Aran} (37.00,46.35)| |Z|1033 0| |NPC|103155|
 
-R Tel'Anor |OID|40300| |N|Travel to {Tel'Anor} (44.01,43.25) (46.27,42.35) (45.60,40.82) | |Z|1033 0|
-A The Lost Advisor |QID|40266| |N|(npc:99065) in {Tel'Anor} (45.60,40.82)| |Z|1033 0| |NPC|99065|
-A An Ancient Recipe |QID|40744| |N|(npc:99065) in {Tel'Anor} (45.60,40.82)| |Z|1033 0| |NPC|99065|
-C The Lost Advisor |QID|40266.1| |N|Click clumps of cliffthorn twigs and collect 8 (item:130108) {Tel'Anor} (46.51,40.39)| |Z|1033 0| 
+R Tel'anor |OID|40300| |N|Travel to {Tel'anor} (44.01,43.25) (46.27,42.35) (45.60,40.82) | |Z|1033 0|
+A The Lost Advisor |QID|40266| |N|(npc:99065) in {Tel'anor} (45.60,40.82)| |Z|1033 0| |NPC|99065|
+A An Ancient Recipe |QID|40744| |N|(npc:99065) in {Tel'anor} (45.60,40.82)| |Z|1033 0| |NPC|99065|
+C The Lost Advisor |QID|40266.1| |N|Click clumps of cliffthorn twigs and collect 8 (item:130108) {Tel'anor} (46.51,40.39)| |Z|1033 0| 
 C An Ancient Recipe |QID|40744.1| |N|Kill (npc:98306) or (npc:113573) and collect 6 (item:132881) (46.48,40.01)| |Z|1033 0| |NPC|113573, 98306|
-T The Lost Advisor |QID|40266| |N|(npc:99093) in {Tel'Anor} (47.18,40.98) (49.15,43.90)| |Z|1033 0| |NPC|99093|
-T An Ancient Recipe |QID|40744| |N|(npc:99093) in {Tel'Anor} (49.15,43.90)| |Z|1033 0| |NPC|99093|
-A Bad Intentions |QID|40227| |N|(npc:99093) in {Tel'Anor} (49.15,43.90)| |Z|1033 0| |NPC|99093|
-N (npc:99093) |QID|40227.1| |N|Speak with (npc:99093) in {Tel'Anor} (49.15,43.90)| |Z|1033 0| |NPC|99093|
-T Bad Intentions |QID|40227| |N|(npc:99093) in {Tel'Anor} (49.15,43.90)| |Z|1033 0| |NPC|99093|
-A Tools of the Trade |QID|40300| |N|(npc:99093) in {Tel'Anor} (49.15,43.90)| |Z|1033 0| |NPC|99093|
+T The Lost Advisor |QID|40266| |N|(npc:99093) in {Tel'anor} (47.18,40.98) (49.15,43.90)| |Z|1033 0| |NPC|99093|
+T An Ancient Recipe |QID|40744| |N|(npc:99093) in {Tel'anor} (49.15,43.90)| |Z|1033 0| |NPC|99093|
+A Bad Intentions |QID|40227| |N|(npc:99093) in {Tel'anor} (49.15,43.90)| |Z|1033 0| |NPC|99093|
+N (npc:99093) |QID|40227.1| |N|Speak with (npc:99093) in {Tel'anor} (49.15,43.90)| |Z|1033 0| |NPC|99093|
+T Bad Intentions |QID|40227| |N|(npc:99093) in {Tel'anor} (49.15,43.90)| |Z|1033 0| |NPC|99093|
+A Tools of the Trade |QID|40300| |N|(npc:99093) in {Tel'anor} (49.15,43.90)| |Z|1033 0| |NPC|99093|
 
-N (item:132253) |QID|40300.1| |N|Click Sealed Jar and collect (item:132253) in {Tel'Anor} (48.79,40.89) (50.01,38.98)| |Z|1033 0|
-N (item:132255) |QID|40300.2| |N|Click Incense Bundle and collect (item:132255) in {Tel'Anor} (50.41,37.93) (47.78,34.45)| |Z|1033 0|
+N (item:132253) |QID|40300.1| |N|Click Sealed Jar and collect (item:132253) in {Tel'anor} (48.79,40.89) (50.01,38.98)| |Z|1033 0|
+N (item:132255) |QID|40300.2| |N|Click Incense Bundle and collect (item:132255) in {Tel'anor} (50.41,37.93) (47.78,34.45)| |Z|1033 0|
 
-A Fragments of Memory |QID|40308| |N|Shattered Burial Urn in {Tel'Anor} (49.11,34.31)| |Z|1033 0|
-N (item:134092) |QID|40300.3| |N|Collect (item:134092) in {Tel'Anor} (49.70,33.74) (50.81,32.59) (51.63,32.91) (52.50,31.40)| |Z|1033 0|
-C Fragments of Memory |QID|40308.1| |N|Kill Tanzanite enemies around in {Tel'Anor} and collect 15 (item:130212) (52.01,31.94)| |Z|1033 0|
+A Fragments of Memory |QID|40308| |N|Shattered Burial Urn in {Tel'anor} (49.11,34.31)| |Z|1033 0|
+N (item:134092) |QID|40300.3| |N|Collect (item:134092) in {Tel'anor} (49.70,33.74) (50.81,32.59) (51.63,32.91) (52.50,31.40)| |Z|1033 0|
+C Fragments of Memory |QID|40308.1| |N|Kill Tanzanite enemies around in {Tel'anor} and collect 15 (item:130212) (52.01,31.94)| |Z|1033 0|
 
-T Tools of the Trade |QID|40300| |N|(npc:99483) in {Tel'Anor} (51.73,32.73) (50.76,32.62) (49.70,33.74) (48.53,33.41) (47.28,33.48)| |Z|1033 0| |NPC|99483|
-T Fragments of Memory |QID|40308| |N|(npc:99483) in {Tel'Anor} (47.28,33.48)| |Z|1033 0| |NPC|99483|
-A The Last Chapter |QID|40306| |N|(npc:99483) in {Tel'Anor} (47.28,33.48)| |Z|1033 0| |NPC|99483|
-A Paying Respects |QID|40578| |N|(npc:99483) in {Tel'Anor} (47.28,33.48)| |Z|1033 0| |NPC|99483|
-N (item:130208) |QID|40306.1| |N|Collect (item:130208) upstair inside the building in {Tel'Anor} (46.98,32.14) (45.11,32.22) (44.10,32.27)| |Z|1033 0|
+T Tools of the Trade |QID|40300| |N|(npc:99483) in {Tel'anor} (51.73,32.73) (50.76,32.62) (49.70,33.74) (48.53,33.41) (47.28,33.48)| |Z|1033 0| |NPC|99483|
+T Fragments of Memory |QID|40308| |N|(npc:99483) in {Tel'anor} (47.28,33.48)| |Z|1033 0| |NPC|99483|
+A The Last Chapter |QID|40306| |N|(npc:99483) in {Tel'anor} (47.28,33.48)| |Z|1033 0| |NPC|99483|
+A Paying Respects |QID|40578| |N|(npc:99483) in {Tel'anor} (47.28,33.48)| |Z|1033 0| |NPC|99483|
+N (item:130208) |QID|40306.1| |N|Collect (item:130208) upstair inside the building in {Tel'anor} (46.98,32.14) (45.11,32.22) (44.10,32.27)| |Z|1033 0|
 C Paying Respects |QID|40578.1| |N|Kill 8 disturbed enemies around this area (44.84,33.05)| |Z|1033 0| |NPC|97729, 97732|
-T The Last Chapter |QID|40306| |N|(npc:99575) in {Tel'Anor} (44.95,31.38) (45.07,30.94)| |Z|1033 0| |NPC|99575|
-T Paying Respects |QID|40578| |N|(npc:99575) in {Tel'Anor} (45.07,30.94)| |Z|1033 0| |NPC|99575|
-A End of the Line |QID|40315| |N|(npc:99575) in {Tel'Anor} (45.07,30.94)| |Z|1033 0| |NPC|99575|
-N (npc:99575) |QID|40315.1| |N|Speak with (npc:99575) in {Tel'Anor} (45.07,30.94)| |Z|1033 0| |NPC|99575|
-T End of the Line |QID|40315| |N|(npc:99575) in {Tel'Anor} (45.07,30.94)| |Z|1033 0| |NPC|99575|
-A The Final Ingredient |QID|40319| |N|(npc:99575) in {Tel'Anor} (45.07,30.94)| |Z|1033 0| |NPC|99575|
+T The Last Chapter |QID|40306| |N|(npc:99575) in {Tel'anor} (44.95,31.38) (45.07,30.94)| |Z|1033 0| |NPC|99575|
+T Paying Respects |QID|40578| |N|(npc:99575) in {Tel'anor} (45.07,30.94)| |Z|1033 0| |NPC|99575|
+A End of the Line |QID|40315| |N|(npc:99575) in {Tel'anor} (45.07,30.94)| |Z|1033 0| |NPC|99575|
+N (npc:99575) |QID|40315.1| |N|Speak with (npc:99575) in {Tel'anor} (45.07,30.94)| |Z|1033 0| |NPC|99575|
+T End of the Line |QID|40315| |N|(npc:99575) in {Tel'anor} (45.07,30.94)| |Z|1033 0| |NPC|99575|
+A The Final Ingredient |QID|40319| |N|(npc:99575) in {Tel'anor} (45.07,30.94)| |Z|1033 0| |NPC|99575|
 
-K (npc:97750) |QID|40319.1| |N|Kill (npc:97750) and collect (item:130255) in {Tel'Anor} (45.71,30.24) (47.85,29.55)| |Z|1033 0| |NPC|97750|
-T The Final Ingredient |QID|40319| |N|(npc:99575) in {Tel'Anor} (46.63,30.20) (46.63,30.20) (45.07,30.94)| |Z|1033 0| |NPC|99575|
-A Feathersong's Redemption |QID|40321| |N|(npc:99575) in {Tel'Anor} (45.07,30.94)| |Z|1033 0| |NPC|99575|
+K (npc:97750) |QID|40319.1| |N|Kill (npc:97750) and collect (item:130255) in {Tel'anor} (45.71,30.24) (47.85,29.55)| |Z|1033 0| |NPC|97750|
+T The Final Ingredient |QID|40319| |N|(npc:99575) in {Tel'anor} (46.63,30.20) (46.63,30.20) (45.07,30.94)| |Z|1033 0| |NPC|99575|
+A Feathersong's Redemption |QID|40321| |N|(npc:99575) in {Tel'anor} (45.07,30.94)| |Z|1033 0| |NPC|99575|
 
 R Cliffclutch Roost |TID|40321| |N|Travel to {Cliffclutch Roost} (45.50,29.92) (45.35,26.69) (44.59,22.82)| |Z|1033 0|
 K (npc:99593) |QID|40321.1| |N|Use (item:130260) on (npc:99593) in {Cliffclutch Roost} (44.59,22.82)| |Z|1033 0| |NPC|99593|
@@ -722,7 +722,7 @@ K (npc:101868) |QID|40898.1| |N|Kill (npc:101868) collect 6 (item:133743) in {Fe
 T Glaive Circumstances |QID|40307| |N|(npc:99514) in {Felsoul Hold} (28.55,60.78) (30.34,60.42) (30.87,59.15)| |Z|1033 0| |NPC|99514|
 T Fresh Meat |QID|40898| |N|(npc:99514) in {Felsoul Hold} (30.87,59.15)| |Z|1033 0| |NPC|99514|
 A Grimwing the Devourer |QID|40901| |N|(npc:99514) in {Felsoul Hold} (30.87,59.15)| |Z|1033 0| |NPC|99514|
-K (npc:102292) |QID|40901.1| |N|Use the (item:133756) to summon and kill (npc:102292) collect (item;134065) (28.73,61.92) (26.98,63.08) (25.22,60.87) (25.73,58.66)| |Z|1033 0| |NPC|102292|
+K (npc:102292) |QID|40901.1| |N|Use the (item:133756) to summon and kill (npc:102292) collect (item:134065) (28.73,61.92) (26.98,63.08) (25.22,60.87) (25.73,58.66)| |Z|1033 0| |NPC|102292|
 T Grimwing the Devourer |QID|40901| |N|(npc:99890) in {Felsoul Hold} (31.87,66.33) (32.18,68.02) (30.03,69.41)| |Z|1033 0| |NPC|99890|
 A A Fate Worse Than Dying |QID|40328| |N|(npc:99890) in {Felsoul Hold} (30.03,69.41)| |Z|1033 0| |NPC|99890|
 A Symbols of Power |QID|40929| |N|(npc:99890) in {Felsoul Hold} (30.03,69.41)| |Z|1033 0| |NPC|99890|
@@ -745,14 +745,14 @@ A Leyline Feed: Halls of the Eclipse |QID|43594| |N|Leyline Feed in {Felsoul Hol
 T Leyline Feed: Halls of the Eclipse |QID|43594| |N|Leyline Feed in {Felsoul Hold}, requires 250 (cur:1155) (27.26,86.42)| |Z|1033 0|
 
 K (npc:99485) |QID|41098.1| |N|Kill (npc:99485) collect (item:134028) in {Felsoul Hold} (26.08,85.78)| |Z|1033 0| |NPC|99485|
-N (item:134080) |QID|41140.4| |N|Collect (item:134080) from the Soul Vaults keyring (27.53,88.94)| |Z|1033 0|
+N (item:134080) |QID|41140.4| |N|Collect (item:134080) from the Soul Vaults keyring (27.53,88.94)| |Z|1033 0| |POI|
 N Release the Nightfallen Prisoner |QID|41140.5| |N|Click locked cage and release the Nightfallen Prisoner (27.08,88.30) (27.09,86.05)| |Z|1033 0|
 T Search and Rescue! |QID|41140| |N|(npc:102365) in {Felsoul Hold} (27.09,86.05)| |Z|1033 0| |NPC|102365|
 A Into The Pit! |QID|41222| |N|(npc:103437) will appear next to you| |NPC|103437|
 T Shard of Kozak |QID|41098| |N|Portal Activation Altar (27.91,85.02) (28.97,84.93) (29.19,80.02) (30.09,79.21) (31.82,81.90) (31.19,85.19)| |Z|1033 0|
 
 R The Arcway |TID|41097| |N|Travel to {The Arcway} (33.49,81.69) (35.86,82.20)| |Z|1033 0|
-K (npc:103089) |QID|41097.1| |N|Kill (npc:103089) and collect (item:134027) in {The Arcway} (60.51,79.89) (60.92,63.46)| |Z|1033 23| |NPC|103089|
+K (npc:103089) |QID|41097.1| |N|Kill (npc:103089) and collect (item:134027) in {The Arcway} (60.92,63.46)| |Z|1033 23| |NPC|103089| |POI|
 
 R Felsoul Hold |TID|41097| |N|Exit to {Felsoul Hold} (35.86,82.20)| |Z|1033 0|
 T Shard of Vorgos |QID|41097| |N|Portal Activation Altar in {Felsoul Command (30.85,84.97)| |Z|1033 0|
@@ -770,8 +770,8 @@ A Parts Unknown |QID|41214| |N|(npc:103437) in {Felmaw Cavern} (34.50,73.85)| |Z
 N Brambley's Skull |QID|41214.1| |N|Collect Brambley's Skull in {Felmaw Cavern} (34.31,74.02)| |Z|1033 0|
 N Brambley's Left Arm |QID|41214.2| |N|Collect Brambley's Left Arm in {Felmaw Cavern} (34.59,73.81) (35.23,73.84)| |Z|1033 0|
 N Brambley's Tibia |QID|41214.4| |N|Collect Brambley's Tibia in {Felmaw Cavern} (35.74,72.47)| |Z|1033 0|
-N Brambley's Femur |QID|41214.5| |N|Collect Brambley's Femur in {Felmaw Cavern}(36.22,73.27) (37.18,72.34)| |Z|1033 0|
-N Brambley's Right Arm |QID|41214.3| |N|Collect Brambley's Right Arm in {Felmaw Cavern} (36.87,72.42) (36.48,71.20)| |Z|1033 0|
+N Brambley's Right Arm |QID|41214.3| |N|Collect Brambley's Right Arm in {Felmaw Cavern} (36.22,73.27) (37.18,72.34)| |Z|1033 0|
+N Brambley's Femur |QID|41214.5| |N|Collect Brambley's Femur in {Felmaw Cavern} (36.87,72.42) (36.48,71.20)| |Z|1033 0|
 N Brambley's Dagger |QID|41214/6| |N|Collect Brambley's Dagger in {Felmaw Cavern} (35.77,70.75)| |Z|1033 0|
 
 T Parts Unknown |QID|41214| |N|(npc:103437) next to you (35.77,70.75)| |Z|1033 0| |NPC|103437|
@@ -836,7 +836,7 @@ T The Old Fashioned Way |QID|42835| |N|(npc:108872) in {Twilight Vineyards} (60.
 A Balance to Spare |QID|42837| |N|(npc:108872) in {Twilight Vineyards} (60.69,56.55)| |Z|1033 0| |NPC|108872|
 A Silkwing Sabotage |QID|42836| |N|(npc:112653) in {Twilight Vineyards} (61.31,56.06)| |Z|1033 0| |NPC|112653|
 N (npc:109023) |QID|42837.1| |N|Collect 8 (npc:109023) in {Twilight Vineyards} (61.97,57.05)| |Z|1033 0| |NPC|109023|
-K (npc:109180) |QID| |N|Kill 8 (npc:109180) in {Twilight Vineyards} (61.97,57.05)| |Z|1033 0| |NPC|109180|
+K (npc:109180) |QID|42836| |N|Kill 8 (npc:109180) in {Twilight Vineyards} (61.97,57.05)| |Z|1033 0| |NPC|109180|
 T Balance to Spare |QID|42837| |N|(npc:108870) in {Twilight Vineyards} (61.39,55.10)| |Z|1033 0| |NPC|108870|
 T Silkwing Sabotage |QID|42836| |N|(npc:108870) in {Twilight Vineyards} (61.39,55.10)| |Z|1033 0| |NPC|108870|
 A Reversal |QID|42838| |N|(npc:108870) in {Twilight Vineyards} (61.39,55.10)| |Z|1033 0| |NPC|108870|

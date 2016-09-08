@@ -19,11 +19,12 @@ AtlasLootCharDB = {
 	},
 	["__addonrevision"] = 4325,
 	["GUI"] = {
+		["classFilter"] = true,
 		["selected"] = {
-			"AtlasLoot_PvP", -- [1]
-			"WODS1WEAPONS", -- [2]
-			nil, -- [3]
-			1, -- [4]
+			"AtlasLoot_Legion", -- [1]
+			"AssaultOnVioletHold", -- [2]
+			5, -- [3]
+			6, -- [4]
 			0, -- [5]
 		},
 		["point"] = {

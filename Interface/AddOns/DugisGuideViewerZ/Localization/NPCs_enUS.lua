@@ -48504,6 +48504,11 @@ function NPC:Initialize()
 [101784] = "Nightborne Infiltrator",
 [102030] = "Kailea Windfeather",
 [102426] = "Beakbuck",
+[104459] = "Seawarden Largush",
+[110980] = "Arator the Redeemer",
+[110979] = "Diseased Silver Hand Knight",
+[110939] = "Trapped Silver Hand Knight",
+[108401] = "Blacksmith Kyriel",
 }
 	end
 

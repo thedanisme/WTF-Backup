@@ -2355,7 +2355,7 @@ function GA:Initialize()
 			if equipSlot == "INVTYPE_TRINKET" and DGV:UserSetting(DGV_SUGGESTTRINKET) then
 				if score and score>0 then
                     if not forGearFinder then
-                        score = score + itemLevel
+                        score = score + (itemLevel * 3)
                     end
 				end
 			end

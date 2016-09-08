@@ -70,31 +70,31 @@ T Hunter to Hunter |QID|41009| |N|(npc:102478) in {The Hunter's Reach} (59.80, 5
 
 A Preparation for the Hunt |QID|41542| |N|(npc:102478) in {The Hunter's Reach} (59.86, 53.22)| |Z|1014 10| |NPC|102478| |O|
 T Preparation for the Hunt |QID|41542| |N|(npc:104382) in {Krasus' Landing} (71.20, 49.60)| |Z|1014 10| |NPC|104382| |O|
-A The Eagle Spirit's Blessing |QID|39427| |N|(npc:104382) in {Krasus' Landing} (71.20, 49.60)| |Z|1014 10| |NPC|104382|  |PRE|41542|
+A The Eagle Spirit's Blessing |QID|39427| |N|(npc:104382) in {Krasus' Landing} (71.20, 49.60)| |Z|1014 10| |NPC|104382| |PRE|41542|
 
-R Spiritwatch Point |QID|39427.1| |N|Hop on the (npc:100965) in {Krasus' Landing} (71.70, 50.27) and fly to {Spiritwatch Point}| |Z|1014 10|  |PRE|41542| |V|
-R Spiritwatch Point |QID|39427.2| |N|Get back to {Spiritwatch Point} (60.00, 80.44)| |Z|1024 0|  |PRE|41542|
+R Spiritwatch Point |QID|39427.1| |N|Hop on the (npc:100965) in {Krasus' Landing} (71.70, 50.27) and fly to {Spiritwatch Point}| |Z|1014 10| |PRE|41542| |V|
+R Spiritwatch Point |QID|39427.2| |N|Get back to {Spiritwatch Point} (60.00, 80.44)| |Z|1024 0| |PRE|41542|
 K Degar Bloodtotem |QID|39427.3| |N|Kill (npc:110685) in {The Bartering Cave} (58.86, 81.12)| |Z|1024 0| |NPC|110685| |PRE|41542|
-C The Eagle Spirit's Blessing |QID|39427.4| |N|Receive the Eagle Spirit's blessing in {Spiritwatch Point} (60.78, 80.83)| |Z|1024 0|  |PRE|41542|
+C The Eagle Spirit's Blessing |QID|39427.4| |N|Receive the Eagle Spirit's blessing in {Spiritwatch Point} (60.78, 80.83)| |Z|1024 0| |PRE|41542|
 T The Eagle Spirit's Blessing |QID|39427| |N|(npc:110821) in {Spiritwatch Point} (60.78, 80.83)| |Z|1024 0| |NPC|110821| |PRE|41542|
-A The Spear in the Shadow |QID|40385| |N|(npc:110821) in {Spiritwatch Point} (60.78, 80.83)| |Z|1024 0| |NPC|110821|  |PRE|41542|
+A The Spear in the Shadow |QID|40385| |N|(npc:110821) in {Spiritwatch Point} (60.78, 80.83)| |Z|1024 0| |NPC|110821| |PRE|41542|
 
-R Helmouth Shallows |QID|40385.1| |N|Take the Eagle Spirit flight from (npc:110985) in {Spiritwatch Point} (60.78, 80.83) to the harbor in {Helmouth Shallows}| |Z|1017 0| |NPC|110985|  |PRE|41542| |V|
-C Landing |SID|29184|1| |N|Speak with Apata at the landing site in {Helmouth Shallows} (53.73, 46.72)| |Z|1017 0|  |PRE|41542| |QID|40385|
-C The Haunted Harbor |SID|29186|2| |N|Investigate Tideskorn Harbor in {Helmouth Shallows} (56.87, 46.25)| |Z|1017 0|  |PRE|41542| |QID|40385|
-C Distracting Them Wisely |SID|29352|3| |N|Defeat the Mist Warder using your Freezing Trap in {Tideskorn Harbor} (57.46, 46.41)| |Z|1017 0|  |PRE|41542| |QID|40385|
-C Easy Pickings |SID|29350|4| |N|Obtain the Activated Wardstone in {Tideskorn Harbor} (57.60, 46.44)| |Z|1017 0|  |PRE|41542| |QID|40385|
-C The Wall of Fog |SID|29204|6| |N|Collect more wardstones from the kvaldir in the harbor then speak with (npc:100221) in {Helmouth Shallows} (58.82, 45.00) (58.62, 43.55) (55.33, 42.51)| |Z|1017 0| |NPC|100221|  |PRE|41542| |QID|40385|
-C Into the Mists |SID|29205|7| |N|Use the harpoon to cross the fog in {Helmouth Shallows} (56.09, 40.62)| |Z|1017 0|  |PRE|41542| |QID|40385|
-C The Shallows of Death |SID|29246|8| |N|Follow (npc:100221) in {Helmouth Shallows} (55.90, 40.47)| |Z|1017 0| |NPC|100221|  |PRE|41542| |QID|40385|
-C Deadly Shadows |SID|29249|9| |N|Use Flare to reveal and defeat the illusions in {Helmouth Shallows} (55.87, 40.45)| |Z|1017 0|  |PRE|41542| |QID|40385|
-C The Hunter or the Hunted |SID|29250|11| |N|Place a trap in the mists to catch Dakarr in {Helmouth Shallows} (55.04, 39.50)| |Z|1017 0|  |PRE|41542| |QID|40385|
-C The Lair of the Beast |SID|29263|12| |N|Kill (npc:99480) in {Helmouth Shallows} (58.42, 33.82)| |Z|1017 0| |NPC|99480|  |PRE|41542| |QID|40385|
-C Talonclaw |SID|29264|13| |N|Take (item:128808) in {Helmouth Shallows} (58.46, 33.78)| |Z|1017 0|  |PRE|41542| |QID|40385|
---N Talonclaw |QID|40385.2| |N|Slay the Highmountain's Bane and reclaim Talonclaw in {Helmouth Shallows} (58.46, 33.78)| |Z|1017 0|  |PRE|41542|
+R Helmouth Shallows |QID|40385.1| |N|Take the Eagle Spirit flight from (npc:110985) in {Spiritwatch Point} (60.78, 80.83) to the harbor in {Helmouth Shallows}| |Z|1017 0| |NPC|110985| |PRE|41542| |V|
+C Landing |SID|29184|1| |N|Speak with Apata at the landing site in {Helmouth Shallows} (53.73, 46.72)| |Z|1017 0| |PRE|41542| |QID|40385|
+C The Haunted Harbor |SID|29186|2| |N|Investigate Tideskorn Harbor in {Helmouth Shallows} (56.87, 46.25)| |Z|1017 0| |PRE|41542| |QID|40385|
+C Distracting Them Wisely |SID|29352|3| |N|Defeat the Mist Warder using your Freezing Trap in {Tideskorn Harbor} (57.46, 46.41)| |Z|1017 0| |PRE|41542| |QID|40385|
+C Easy Pickings |SID|29350|4| |N|Obtain the Activated Wardstone in {Tideskorn Harbor} (57.60, 46.44)| |Z|1017 0| |PRE|41542| |QID|40385|
+C The Wall of Fog |SID|29204|6| |N|Collect more wardstones from the kvaldir in the harbor then speak with (npc:100221) in {Helmouth Shallows} (58.82, 45.00) (58.62, 43.55) (55.33, 42.51)| |Z|1017 0| |NPC|100221| |PRE|41542| |QID|40385|
+C Into the Mists |SID|29205|7| |N|Use the harpoon to cross the fog in {Helmouth Shallows} (56.09, 40.62)| |Z|1017 0| |PRE|41542| |QID|40385|
+C The Shallows of Death |SID|29246|8| |N|Follow (npc:100221) in {Helmouth Shallows} (55.90, 40.47)| |Z|1017 0| |NPC|100221| |PRE|41542| |QID|40385|
+C Deadly Shadows |SID|29249|9| |N|Use Flare to reveal and defeat the illusions in {Helmouth Shallows} (55.87, 40.45)| |Z|1017 0| |PRE|41542| |QID|40385|
+C The Hunter or the Hunted |SID|29250|11| |N|Place a trap in the mists to catch Dakarr in {Helmouth Shallows} (55.04, 39.50)| |Z|1017 0| |PRE|41542| |QID|40385|
+C The Lair of the Beast |SID|29263|12| |N|Kill (npc:99480) in {Helmouth Shallows} (58.42, 33.82)| |Z|1017 0| |NPC|99480| |PRE|41542| |QID|40385|
+C Talonclaw |SID|29264|13| |N|Take (item:128808) in {Helmouth Shallows} (58.46, 33.78)| |Z|1017 0| |PRE|41542| |QID|40385|
+--N Talonclaw |QID|40385.2| |N|Slay the Highmountain's Bane and reclaim Talonclaw in {Helmouth Shallows} (58.46, 33.78)| |Z|1017 0| |PRE|41542|
 
-R Dalaran |TID|40385.3| |N|Take portal to to {Dalaran} (58.55, 33.68)| |Z|1017 0|  |PRE|41542|
-T The Spear in the Shadow |QID|40385| |N|(npc:102478) in {The Hunter's Reach} (59.86, 53.14)| |Z|1014 10| |NPC|102478|  |PRE|41542|
+R Dalaran |TID|40385.3| |N|Take portal to to {Dalaran} (58.55, 33.68)| |Z|1017 0| |PRE|41542|
+T The Spear in the Shadow |QID|40385| |N|(npc:102478) in {The Hunter's Reach} (59.86, 53.14)| |Z|1014 10| |NPC|102478| |PRE|41542|
 
 -- Hunter Survival Polearm Quests End (Talonclaw)
 
@@ -168,7 +168,7 @@ A Pledge of Loyalty |QID|44090| |N|(npc:113327) in {Dalaran} (38.16, 46.06)| |Z|
 T Pledge of Loyalty |QID|44090| |N|(npc:102940) in {Trueshot Lodge} (47.23, 53.61)| |Z|1072 0| |NPC|102940|
 A Rise, Champions |QID|42519| |N|(npc:102940) in {Trueshot Lodge} (47.23, 53.61)| |Z|1072 0| |NPC|102940|
 N (npc:107315) |QID|42519.2| |N|Recruit (npc:107315) as a follower (51.97, 55.52)| |Z|1072 0| |NPC|107315|
-N (npc:107317) |QID|42519.1| |N|Recruit (npc:107317) as a follower  (43.51, 26.14)| |Z|1072 0| |NPC|107317|
+N (npc:107317) |QID|42519.1| |N|Recruit (npc:107317) as a follower (43.51, 26.14)| |Z|1072 0| |NPC|107317|
 T Rise, Champions |QID|42519| |N|(npc:103023) in {Trueshot Lodge} (43.04, 46.98)| |Z|1072 0| |NPC|103023|
 A Making Contact |QID|42523| |N|(npc:103023) in {Trueshot Lodge} (43.04, 46.98)| |Z|1072 0| |NPC|103023|
 C Making Contact |QID|42523| |N|Use the Scouting Map and complete the mission (mission:929). This is a 2 minutes mission (43.03, 46.78)| |Z|1072 0|
@@ -198,6 +198,53 @@ A One Last Adventure |QID|44366| |N|(npc:107317) in {Trueshot Lodge} (43.60, 26.
 C One Last Adventure |QID|44366| |N|Speak to (npc:107317) and choose a third artifact to pursue. (43.60, 26.31)| |Z|1072 0| |NPC|107317|
 T One Last Adventure |QID|44366| |N|(npc:107317) in {Trueshot Lodge} (43.60, 26.31)| |Z|1072 0| |NPC|107317|
 
+N Level 102 Required |N|You need to be at least level 102 to complete {Suramar} quest line| |PL|102|
+R Light's Hope Chapel |QID|42866| |N|Travel to {Light's Hope Chapel} (43.31, 87.50)| |Z|23 20| |C|Paladin| |OID|44257, 44009|
+A A Sign From The Sky |QID|42866| |N|(npc:90259) in {Light's Hope Chapel} (43.31, 87.50)| |Z|23 20| |NPC|90259| |C|Paladin| |OID|44257, 44009|
+
+R The Violet Citadel |QID|44004| |N|Travel to {The Violet Citadel} (28.66, 48.37)| |Z|1014 10|
+T A Sign From The Sky |QID|42866| |N|(npc:90417) in {The Violet Citadel} (28.66, 48.37)| |Z|1014 10| |NPC|90417| |C|Paladin| |OID|44257, 44009|
+A A Falling Star |N|(npc:90417) in {The Violet Citadel} (28.66, 48.37)| |Z|1014 10| |NPC|90417| |OID|44257, 44009|
+A A Falling Star |QID|44257| |N|(npc:90417) in {The Violet Citadel} (28.66, 48.37)| |Z|1014 10| |NPC|90417| |O|
+A A Falling Star |QID|44009| |N|(npc:90417) in {The Violet Citadel} (28.66, 48.37)| |Z|1014 10| |NPC|90417| |O|
+N (npc:96813) |QID|44257.1| |N|Speak to (npc:96813) to take Khadgar's Gryphon to {Suramar} (69.89, 51.15)| |Z|1014 10| |NPC|96813| |V| |O|
+N (npc:96813) |QID|44009.1| |N|Speak to (npc:96813) to take Khadgar's Gryphon to {Suramar} (69.89, 51.15)| |Z|1014 10| |NPC|96813| |V| |O|
+N Search the Crash Site |QID|44257.2| |N|Dive down to search the Crash Site in {Azuregale Bay} (92.11, 61.08)| |Z|1033 0| |O|
+N Search the Crash Site |QID|44009.2| |N|Dive down to search the Crash Site in {Azuregale Bay} (92.11, 61.08)| |Z|1033 0| |O|
+N Investigate the Cave |QID|44257.3| |N|Find the cave entrance under water to investigate the Cave in {Azuregale Bay} (94.68, 64.07) (94.46, 66.42)| |Z|1033 0| |O|
+N Investigate the Cave |QID|44009.3| |N|Find the cave entrance under water to investigate the Cave in {Azuregale Bay} (94.68, 64.07) (94.46, 66.42)| |Z|1033 0| |O|
+K (npc:112477) |QID|44257.4| |N|Kill (npc:112477) and collect (item:140574) in {Azuregale Bay} (94.52, 67.09)| |Z|1033 0| |NPC|112477| |O|
+K (npc:112477) |QID|44009.4| |N|Kill (npc:112477) and collect (item:140574) in {Azuregale Bay} (94.52, 67.09)| |Z|1033 0| |NPC|112477| |O|
+
+R Dalaran |QID|44004| |N|Travel to {Dalaran} (49.60, 47.99)| |Z|1014 10|
+T A Falling Star |QID|44257| |N|(npc:112130) in {Chamber of the Guardian} (27.03, 35.39)| |Z|1014 12| |NPC|112130| |O|
+T A Falling Star |QID|44009| |N|(npc:112130) in {Chamber of the Guardian} (27.03, 35.39)| |Z|1014 12| |NPC|112130| |O|
+A Bringer of the Light |QID|44004| |N|(npc:112130) in {Chamber of the Guardian} (27.03, 35.39)| |Z|1014 12| |NPC|112130|
+
+R The Vault of Lights |QID|44004| |N|Use the portal to travel to {The Vault of Lights} (28.41, 34.58)| |Z|1014 12| |F|1092 0|
+C The Prophet and the Butcher |SID|30854|1| |N|Seek out (npc:109143) in {The Vault of Lights} (34.10, 66.32)| |Z|1091 0| |NPC|109143| |QID|44004|
+A Nobundo's Last Stand |QID|43705| |N|(npc:110695) in {The Crystal Hall}<br/><br/><b>Destroy Fel Portals and rescue (npc:109711) in each waypoint (37.88, 56.14) (58.93, 71.79) (57.79, 58.10) (48.71, 37.44) (44.94, 9.26)| |Z|1091 0| |NPC|110695| |OID|44004|
+N (npc:110695) |QID|43705.1| |N|Speak to (npc:110695) to begin the assault in {The Crystal Hall} (44.94, 9.26)| |Z|1091 0| |NPC|110695| |OID|44004|
+N Defeat First Assault |QID|43705.2| |N|Defend (npc:110695) and defeat the first Assault in {The Crystal Hall} (44.05, 11.76)| |Z|1091 0| |NPC|110776, 111086, 110777, 110779| |OID|44004|
+N Defeat First Assault |QID|43705.3| |N|Defend (npc:110695) and defeat the second Assault defeated, in {The Crystal Hall} (45.20, 8.80)| |Z|1091 0| |NPC|110776, 111086, 110777, 110779| |OID|44004|
+N Defeat First Assault |QID|43705.4| |N|Defend (npc:110695) and defeat the third Assault defeated, in {The Crystal Hall} (44.51, 7.08)| |Z|1091 0| |NPC|110776, 111086, 110777, 110779| |OID|44004|
+K (npc:110781) |QID|43705.5| |N|Kill (npc:110781) in {The Crystal Hall} (44.64, 8.89)| |Z|1091 0| |OID|44004|
+C Nobundo's Last Stand |QID|43705| |N|Defend (npc:110695) from the Legion Assault in {The Crystal Hall} (44.93, 10.12)| |Z|1091 0| |NPC|110695| |OID|44004|
+T Nobundo's Last Stand |QID|43705| |N|(npc:110695) in {The Crystal Hall} (44.84, 9.37)| |Z|1091 0| |NPC|110695| |OID|44004|
+C Destroy Fel Portals |SID|30864|2| |N|Destroy Fel Portals in {The Crystal Hall} (36.40, 10.46) (37.30, 28.17) (37.30, 28.17)| |Z|1091 0| |QID|44004|
+C (npc:109711) |SID|30876|2| |N|Rescue (npc:109711) in {The Vault of Lights} (46.80, 63.31)| |Z|1091 0| |NPC|109711| |QID|44004|
+C Return to the Prophet |SID|30946|3| |N|Return to (npc:109143) at {The Vault of Lights} (33.94, 66.39)| |Z|1091 0| |NPC|109143| |QID|44004|
+C The Light's Heart |SID|31309|4| |N|Let (npc:109143) examine the (item:140574) in {The Vault of Lights} (33.94, 66.39)| |Z|1091 0| |NPC|109143| |QID|44004|
+C A Long Way Down... |SID|31316|5| |N|Speak to (npc:109143), then escort him to {Seat of the Naaru} (59.67, 34.06) (53.96, 45.33) (63.48, 42.59) (53.38, 38.91)| |Z|1091 0| |NPC|109143| |QID|44004|
+K (npc:109099) |SID|31556|6| |N|Kill (npc:109099) in {Seat of the Naaru} (57.85, 41.49)| |Z|1091 0| |NPC|109099| |QID|44004|
+C Bringer of the Light |QID|44004| |N|Discover the purpose of the (item:140574) in {Seat of the Naaru} (57.85, 41.49)| |Z|1091 0|
+
+R The Violet Citadel |TID|44004| |N|Travel to {The Violet Citadel} (28.46, 48.29)| |Z|1014 10|
+T Bringer of the Light |QID|44004| |N|(npc:90417) in {The Violet Citadel} (28.46, 48.29)| |Z|1014 10| |NPC|90417|
+A Light's Charge |QID|44153| |N|(npc:90417) in {The Violet Citadel} (28.46, 48.29)| |Z|1014 10| |NPC|90417|
+C Light's Charge |QID|44153| |N|Place Light's Heart in your Order Hall| |POI|
+T Light's Charge |QID|44153| |N|Class Order Hall| |POI|
+
 N Level 103 Required |N|You need to be at least level 103 to continue with the class campaign quest line| |PL|103|
 
 A Urgent Summons |QID|42388| |N|(npc:113325) in {Bradensbrook} (41.71, 59.93)| |Z|1018 0| |NPC|113325|
@@ -220,8 +267,8 @@ A Champion: Rexxar |QID|42410| |N|Speak to (npc:107425) to recruit him as a foll
 R Stony Highlands |TID|42389| |N|Travel to {Stony Highlands} (34.65, 41.67)| |Z|1017 0|
 T Calling Hilaire Home |QID|42389| |N|(npc:107316) in {Stony Highlands} (34.65, 41.67)| |Z|1017 0| |NPC|107316|
 A Bite of the Beast |QID|42391| |N|(npc:107316) in {Stony Highlands} (34.65, 41.67)| |Z|1017 0| |NPC|107316|
-N Follow the trail of blood |QID|42391.1| |N|Follow the trail of blood to  {Felscale Cavern} (38.32, 37.22)| |Z|1017 0|
-K (npc:107441) |QID|42391.2| |N|Kill (npc:107441) and collect (item:137572) in {Felscale Cavern} (38.31, 37.34)  (37.02, 38.68)| |Z|1017 0| |NPC|107441|
+N Follow the trail of blood |QID|42391.1| |N|Follow the trail of blood to {Felscale Cavern} (38.32, 37.22)| |Z|1017 0|
+K (npc:107441) |QID|42391.2| |N|Kill (npc:107441) and collect (item:137572) in {Felscale Cavern} (38.31, 37.34) (37.02, 38.68)| |Z|1017 0| |NPC|107441|
 N (npc:107460) |QID|42391.3| |N|Speak to (npc:107460) to give him the (item:137572) in {Stormheim} (37.76, 36.62) (30.24, 40.59)| |Z|1017 0| |NPC|107460|
 T Bite of the Beast |QID|42391| |N|(npc:107316) in {Stormheim} (34.70, 41.56)| |Z|1017 0| |NPC|107316|
 A Champion: Beastmaster Hilaire |QID|42411| |N|Speak to (npc:107316) to recuit as a follower in {Stormheim} (34.70, 41.56)| |Z|1017 0| |NPC|107316| |E|
@@ -242,16 +289,210 @@ T Recruiting More Troops |QID|42134| |N|(npc:106446) in {Trueshot Lodge} (57.75,
 
 N Level 110 Required |N|You need to be at least level 110 to continue with the class campaign quest line| |PL|110|
 
---A Ready to Work |QID|42399| |N|(npc:107981)| |NPC|107981|
---T Ready to Work |QID|42399| |N|(npc:107973) in {Trueshot Lodge} (43.42, 26.02)| |Z|1072 0| |NPC|107973|
---A Missing Mages |QID|42400| |N|(npc:107973) in {Trueshot Lodge} (43.42, 26.02)| |Z|1072 0| |NPC|107973|
+A Baron and the Huntsman |QID|42397| |N|(npc:107973) in {Trueshot Lodge} (41.46, 74.96)| |Z|1072 0| |NPC|107973|
+A Walk This Way |QID|44233| |N|(npc:103693) in {Trueshot Lodge} (44.54,48.87)| |Z|1072 0| |NPC|103693|
 
---T Missing Mages |QID|42400| |N|(npc:107966) in {Suramar}| |Z|1072 0| |NPC|107966| |POI|
---A The Scent of Magic |QID|42401| |N|
---A Assisting the Archmage |QID|42404| |N|
---A Knowing Our Enemy |QID|42689| |N|
---A Leyworm Lure |QID|42691| |N|
---A To Tame the Beast |QID|42406| |N|
+A Goddess Watch Over You |N|(npc:113686) will appear next to you| |NPC|113686| |OID|44337, 44338|
+A Goddess Watch Over You |QID|44337| |N|(npc:113686) will appear next to you| |NPC|113686| |O|
+A Goddess Watch Over You |QID|44338| |N|(npc:113686) will appear next to you| |NPC|113686| |O|
+N Switch Guide |QID|40890| |N|Complete the (guide:"1018(98-110)#1018(98-110)#1018(98-110)") until you complete the quest (qid:40890)|
+
+T Walk This Way |QID|44233| |N|(npc:103693) in {Trueshot Lodge} (44.54,48.87)| |Z|1072 0| |NPC|103693|
+A Highmountain Hunters |QID|42403| |N|(npc:103023) at the {Trueshot Lodge} (43.11, 46.94)| |Z|1072 0| |NPC|103023|
+A Hitting the Books |QID|43880| |N|(npc:98737) in {Trueshot Lodge} (52.54,54.40)| |Z|1072 0| |NPC|98737|
+C Hitting the Books |QID|43880| |N|Speak to (npc:98737) and start a Research Work Order in {Trueshot Lodge} (52.54,54.40)| |Z|1072 0| |NPC|98737|
+T Hitting the Books |QID|43880| |N|(npc:98737) in {Trueshot Lodge} (52.54,54.40)| |Z|1072 0| |NPC|98737|
+
+T Highmountain Hunters |QID|42403| |N|(npc:94409) at {Nesingwary's Retreat} (40.04,52.24)| |Z|1024 0| |NPC|94409|
+A Champion: Hemet Nesingwary |QID|42413| |N|(npc:94409) at {Nesingwary's Retreat} (40.04,52.24)| |Z|1024 0| |NPC|94409| |E|
+A Champion: Addie Fizzlebog |QID|42414| |N|(npc:99095) at {Nesingwary's Retreat} (39.92,52.23)| |Z|1024 0| |NPC|99095| |E|
+
+T Baron and the Huntsman |QID|42397| |N|(npc:107981) in {Stormheim} (72.15,59.33) (73.12,60.20) (77.40,63.71) (80.52,64.72) (80.12,66.21)| |Z|1017 0| |NPC|107981|
+A Awakening the Senses |QID|42398| |N|(npc:107981) in {Stormheim} (80.12,66.21)| |Z|1017 0| |NPC|107981|
+C Awakening the Sense |QID|138299 |QID|42398.1| |N|ollow Baron when you see the chat message "Baron has found something." and kill (npc:108473) and collect 8 (item:138299) (80.54,66.93)| |Z|1017 0|
+T Awakening the Senses |QID|42398| |N|(npc:107981) in {Stormheim} (80.12,66.21)| |Z|1017 0| |NPC|107981|
+A Champion: Huntsman Blake |QID|42412| | |N|(npc:107981) in {Stormheim} (80.12,66.21)| |Z|1017 0| |NPC|107981| |E|
+A Ready to Work |QID|42399| |N|(npc:107981) in {Stormheim} (80.12,66.21)| |Z|1017 0| |NPC|107981|
+
+R Trueshot Lodge |QID|42400| |N|Travel to {Trueshot Lodge} (43.40,26.32)| |Z|1072 0| 
+T Ready to Work |QID|42399| |N|(npc:107973) in {Trueshot Lodge} (43.40,26.32)| |Z|1072 0| |NPC|107973| |POI|
+A Missing Mages |QID|42400| |N|(npc:107973) in {Trueshot Lodge} (43.40,26.32)| |Z|1072 0| |NPC|107973|
+
+-----
+R Dalaran |OID|44448| |N|Travel to {Dalaran} (28.46,48.33)| |Z|1014 10| |NPC|90417| 
+T Goddess Watch Over You |QID|44337| |N|(npc:90417) in {Dalaran} (28.46,48.33)| |Z|1014 10| |NPC|90417| |O|
+T Goddess Watch Over You |QID|44338| |N|(npc:90417) in {Dalaran} (28.46,48.33)| |Z|1014 10| |NPC|90417| |O|
+A In the House of Light and Shadow |QID|44448| |N|(npc:90417) in {Dalaran} (28.46,48.33)| |Z|1014 10| |NPC|90417| 
+C In the House of Light and Shadow |QID|44448| |N|Take the Tears of Elune to Light's Heart in your Order Hall (47.45,43.50)| |Z|1072 0|
+T In the House of Light and Shadow |QID|44448| |N|(npc:90417) in {Dalaran} (28.49,48.33)| |Z|1014 10| |NPC|90417| 
+----
+
+T Missing Mages |QID|42400| |N|(npc:107966) in {Ruins of Elune'eth} (38.08,47.08)| |Z|1033 0| |NPC|107966|
+A The Scent of Magic |QID|42401| |N|(npc:107966) in {Ruins of Elune'eth} (38.08,47.08)| |Z|1033 0| |NPC|107966|
+C The Scent of Magic |QID|42401| |N|Follow Baron with with (npc:107966) and find the missing mages in {Ruins of Elune'eth} (38.08,47.08)| |Z|1033 0| |NPC|107966|
+T The Scent of Magic |QID|42401| |N|(npc:108089) in {Ruins of Elune'eth} (33.14,57.00)| |Z|1033 0| |NPC|107966|
+A Assisting the Archmage |QID|42404| |N|(npc:108089) in {Ruins of Elune'eth} (33.14,57.00)| |Z|1033 0| |NPC|107966|
+
+R Trueshot Lodge |OID|42689 |N|Travel to {Trueshot Lodge} (43.40,26.32)| |Z|1072 0|
+T Assisting the Archmage |QID|42404| |N|(npc:107973) in {Trueshot Lodge} (43.40,26.32)| |Z|1072 0| |NPC|107973|
+A Knowing Our Enemy |QID|42689| |N|(npc:107973) in {Trueshot Lodge} (43.40,26.32)| |Z|1072 0| |NPC|107973|
+----
+C In the House of Light and Shadow |QID|44448| |N|Take the Tears of Elune to Light's Heart in your Order Hall (47.45,43.50)| |Z|1072 0|
+T In the House of Light and Shadow |QID|44448| |N|(npc:90417) in {Dalaran} (28.49,48.33)| |Z|1014 10| |NPC|90417| 
+----
+
+R Azsuna |OID|42691| |N|Travel to {Azsuna} (60.81,30.63)| |Z|1015 0| 
+T Knowing Our Enemy |QID|42689| |N|(npc:105816) in {Azsuna} (60.81,30.63)| |Z|1015 0| |NPC|105816|
+A Leyworm Lure |QID|42691| |N|(npc:105816) in {Azsuna} (60.81,30.63)| |Z|1015 0| |NPC|105816|
+C Leyworm Lure |QID|42691| |N|Kill (npc:106630) collect 10 (item:138206) (58.52,30.69) (54.84,26.25) (50.43,26.94) (48.23,24.73) (48.38,21.92) (48.96,21.40)| |Z|1015 0| |NPC|106630|
+T Leyworm Lure |QID|42691| |N|(npc:105816) in {Azsuna} (48.23,24.73) (61.27,30.00) (60.81,30.63)| |Z|1015 0| |NPC|105816|
+A To Tame the Beast |QID|42406| |N|(npc:105816) in {Azsuna} (60.81,30.63)| |Z|1015 0| |NPC|105816|
+C To Tame the Beast |QID|42406| |N|(npc:105816) in {Azsuna} (60.81,30.63)| |Z|1015 0| |NPC|105816|
+
+R Felbeast Dens |N|Travel to the {Felbeast Dens} cave (31.47,47.39)| |Z|1015 0|
+N (item:138253) |QID|42406.1| |N|Use the (item:138253) within the {Felbeast Dens} (31.71,47.10)| |Z|1015 0| |U|138253|
+C (npc:108242)  |QID|42406.2| |N|Damage a (npc:108242) then use (spell:215010) to trap it in {Felbeast Dens} (31.71,47.10)| |Z|1015 0|
+
+R The Greenway |TID|42406| |N|Travel to {The Greenway} (60.81,30.64)| |Z|1015 0|
+T To Tame the Beast |QID|42406| |N|(npc:105816) in {The Greenway} (60.81,30.64)| |Z|1015 0| |NPC|105816|
+A The Nature of the Beast |QID|42407| |N|(npc:105816) in {The Greenway} (60.81,30.64)| |Z|1015 0| |NPC|105816|
+
+R Trueshot Lodge |QID|42402| |N|Travel to {Trueshot Lodge} (43.41,26.33)| |Z|1072 0|
+T The Nature of the Beast |QID|42407| |N|(npc:107973) in {Trueshot Lodge} (43.41,26.33)| |Z|1072 0| |NPC|107973|
+A Requesting Reinforcements |QID|42402| |N|(npc:107973) in {Trueshot Lodge} (43.41,26.33)| |Z|1072 0| |NPC|107973|
+--
+A Awakenings |QID|44464| |N|(npc:113857) in {Trueshot Lodge} (47.49,43.51)| |Z|1072 0| |NPC|113857|
+
+R Val'sharah |QID|44464| |N|Travel {Val'sharah} (54.40,73.17)| |Z|1018 0|
+C Awakenings |QID|44464.1| |N|Travel to {Val'sharah} and use (spell:226956) to witness the awakening of Illidan Stormrage (54.40,73.17)| |Z|1018 0|
+
+T Awakenings |QID|44464| |N|(npc:113857) in {Skyhold} (45.32,30.18)| |Z|1035 1| |NPC|113857|
+--
+C Requesting Reinforcements |QID|42402| |N|Use the Scouting Map to complete (mission:932) mission. This mission will take 12 hours to complete (42.50,46.63)| |Z|1072 0| |NPC|107973|
+T Requesting Reinforcements |QID|42402| |N|(npc:107973) in {Trueshot Lodge} (43.41,26.33)| |Z|1072 0| |NPC|107973|
+A Informing Our Allies |QID|42405| |N|(npc:107973) in {Trueshot Lodge} (43.41,26.33)| |Z|1072 0| |NPC|107973|
+N (npc:109721) |QID|42405.1| |N|Speak to (npc:109721) in {Trueshot Lodge} (42.90,25.63)| |Z|1072 0| |NPC|109721|
+N (npc:108244) |QID|42405.4| |N|Speak to (npc:108244) upstairs in the tower in {Trueshot Lodge} (43.10,6.00)| |Z|1072 0| |NPC|108244|
+A The Missing Vessel |QID|43182| |N|(npc:107966) in {Trueshot Lodge} (42.91,25.66)| |Z|1072 0| |NPC|107966|
+N (npc:108245) |QID|42405.3| |N|Speak to (npc:108245) in {Trueshot Lodge} (46.41,34.88)| |Z|1072 0| |NPC|108245|
+A Required Reagents |QID|42408| |N|Speak to (npc:108455) in {Trueshot Lodge} (46.41,34.88)| |Z|1072 0| |NPC|108245|
+N (npc:108243) |QID|42405.2| |N|Speak to (npc:108243) in {Trueshot Lodge} (51.06,34.07)| |Z|1072 0| |NPC|108243|
+T Informing Our Allies |QID|42405| |N|(npc:107973) in {Trueshot Lodge} (43.41,26.33)| |Z|1072 0| |NPC|107973|
+A Leading by Example |QID|44680| |N|(npc:107973) in {Trueshot Lodge} (43.41,26.33)| |Z|1072 0| |NPC|107973|
+C Required Reagents |QID|42408| |N|Collect 20 (item:124440), if you're a Enchanter you can get it by disenchanting Uncommon (green) Legion gear items otherwise you can purchase it from the auction|
+C Leading by Example  |QID|44680| |N|Complete 30 World Quests|
+T Required Reagents |QID|42408| |N|Speak to (npc:108455) in {Trueshot Lodge} (46.41,34.88)| |Z|1072 0| |NPC|108245|
+T Leading by Example |QID|44680| |N|(npc:107973) in {Trueshot Lodge} (43.41,26.33)| |Z|1072 0| |NPC|107973|
+A Ore Under the Sea |QID|42655| |N|(npc:108456) in {Trueshot Lodge} (43.12,5.99)| |Z|1072 0| |NPC|108456|
+A Nightmare Oak |QID|42654| |N|(npc:108456) in {Trueshot Lodge} (43.12,5.99)| |Z|1072 0| |NPC|108456|
+
+R Azuregale Bay |QID|42655| |N|Travel to {Azuregale Bay} (75.99,58.08)| |Z|1033 0|
+C Ore Under the Sea |QID|42655.1| |N|Collect 12 (item:138273) in {Azuregale Bay} (75.99,58.08)| |Z|1033 0|
+
+R Trueshot Lodge |TID|42655| |N|Travel to {Trueshot Lodge} (43.12,5.99)| |Z|1072 0|
+T Ore Under the Sea |QID|42655| |N|(npc:108456) in {Trueshot Lodge} (43.12,5.99)| |Z|1072 0| |NPC|108456|
+
+N Switch Guide |QID|42654| |N|Switch to (guide:"1067(98-110)") guide and complete it to collect (item:138270) from (npc:103344) and kill (npc:101403)|
+
+T Nightmare Oak |QID|42654| |N|(npc:108456) in {Trueshot Lodge} (43.12,5.99)| |Z|1072 0| |NPC|108456|
+A Azure Weaponry |QID|42656| |N|(npc:108456) in {Trueshot Lodge} (43.12,5.99)| |Z|1072 0| |NPC|108456|
+N (npc:108401) |QID|42656.1| |N|Find (npc:108401) in {Dalaran} (45.27,27.56)| |Z|1014 10|  |NPC|108401|
+N (item:138274) |QID|42656.2| |N|Crate of (item:138274) (45.27,27.56)| |Z|1014 10| 
+T Azure Weaponry |QID|42656| |N|(npc:108455) in {Trueshot Lodge} (46.42,34.89)| |Z|1072 0|
+A Meeting in Moonclaw Vale |QID|42657| |N|(npc:108455) in {Trueshot Lodge} (46.42,34.89)| |Z|1072 0|
+
+R Moonclaw Vale |QID|42658| |N|Travel to {Moonclaw Vale} (60.12,72.22)| |Z|1018 0|
+T Meeting in Moonclaw Vale |QID|42657| |N|(npc:108492) in {Moonclaw Vale} (60.12,72.22)| |Z|1018 0| |NPC|108492|
+A Delicate Enchantments |QID|42658| |N|(npc:108492) in {Moonclaw Vale} (60.12,72.22)| |Z|1018 0| |NPC|108492|
+N (npc:108492) |QID|42658.1| |N|Protect (npc:108492) in {Moonclaw Vale} (59.96,72.16)| |Z|1018 0| |NPC|108492|
+T Delicate Enchantments |QID|42658| |N|(npc:108492) in {Moonclaw Vale} (60.12,72.22)| |Z|1018 0| |NPC|108492|
+A Same Day Delivery |QID|42133| |N|(npc:108492) in {Moonclaw Vale} (60.12,72.22)| |Z|1018 0| |NPC|108492|
+
+R Trueshot Lodge |TID|42133| |N|Travel to {Trueshot Lodge} (43.41,26.33)| |Z|1072 0|
+T Same Day Delivery |QID|42133| |N|(npc:107973) in {Trueshot Lodge} (43.41,26.33)| |Z|1072 0| |NPC|107973|
+----
+A An Unclear Path |QID|44466| |N|(npc:113857) in {Trueshot Lodge} (47.42,43.49)| |Z|1072 0| |NPC|113857|
+
+R Val'Shara |QID|44466| |N|Travel to {Val'Shara}  (54.96,53.43) (53.29,49.94) (52.11,43.99)| |Z|1018 0|
+N Witness Illidan's Resilience |QID|44466.1| |N|Use (spell:226956) to witness the awakening of Illidan Resilience (45.54,34.75)| |Z|1018 0|
+
+R Skyhold |OID|44479| |N|Travel to {Skyhold} (45.32,30.18)| |Z|1035 1|
+T An Unclear Path |QID|44466| |N|(npc:113857) in {Skyhold} (45.32,30.18)| |Z|1035 1| |NPC|113857|
+A Ravencrest's Legacy |QID|44479| |N|(npc:113857) in {Skyhold} (45.32,30.18)| |Z|1035 1| |NPC|113857|
+R Val'Shara |QID|44479| |N|Travel to {Val'Shara} (54.96,53.43)| |Z|1018 0|
+N (spell:226956) |N|Go to the destination to use (spell:226956) to begin the Ravencrest's Legacy scenario (54.96,53.43) (52.81,50.41) (46.98,50.23) (44.28,49.94) (42.08,46.29)| |Z|1018 0| |QID|44479|
+N Report to Kur'talos Ravencrest |SID|33154|1| |N|Report to (npc:113046) in  {Ravencourt}| |QID|44479| |NPC|113046|
+N Repair the Deactivated Moon Guard Portal |SID|33155|2| |N|Click Deactivated Moon Guard Portal in {Ravencourt}| |QID|44479|
+K (npc:113555) |SID|33162|3| |N|Secure the Rampart by Defeating (npc:113555) (42.95,46.32) (44.27,49.58)| |Z|1099 0| |QID|44479|
+N Enter the Upper Ramparts of the Courtyard |SID|33169|4| |N|Follow the path to the upper ramparts of the courtyard (44.28,49.76) (44.51,51.22 )| |Z|1099 0| |QID|44479|
+N Activate the Moon Guard Portal |SID|33174|5| |N|Click on Deactivated Moon Guard Portal in each waypoint (44.51,51.22) (40.98,51.48) (43.71,50.93)| |Z|1099 0|  |QID|44479
+K (npc:114137) |SID|33184|6| |N|Use (spell:227154) to kill (npc:114137) to end the invasion (43.09,52.18)| |Z|1099 0| |QID|44479| |NPC|114137|
+
+R Mausoleum |QID|44414| |N|Travel to {Mausoleum} (38.75, 53.07)| |Z|1099 0| 
+A Felspawns of Lothros |QID|44414| |N|(npc:113361) in {Mausoleum} (38.75, 53.07)| |Z|1099 0| |NPC|113361|
+C Felspawns of Lothros |QID|44414| |N|Defeat (npc:113786) in {Mausoleum} (40.63, 53.01)| |Z|1099 0| |NPC|113786|
+T Felspawns of Lothros |QID|44414| |N|(npc:113361) in {Mausoleum} (40.42, 53.01)| |Z|1099 0| |NPC|113361|
+A The Red Axe |QID|44415| |N|(npc:113361) in {Mausoleum} (40.42, 53.01)| |Z|1099 0| |NPC|113361|
+C The Red Axe |QID|44415| |N|Close the Unstable Portals and make your way to (npc:113355) (41.37, 49.89)| |Z|1099 0| |NPC|113355|
+T The Red Axe |QID|44415| |N|(npc:113355) in {Mausoleum} (43.80, 50.40)| |Z|1099 0| |NPC|113355|
+A Hunter of Night |QID|44416| |N|(npc:113355) in {Mausoleum} (43.84, 50.41)| |Z|1099 0| |NPC|113355|
+C Hunter of Night |QID|44416| |N|Defeat (npc:113825) in {Mausoleum} (43.29, 50.45)| |Z|1099 0| |NPC|113825|
+T Hunter of Night |QID|44416| |N|(npc:113355) in {Mausoleum} (41.59, 50.53)| |Z|1099 0| |NPC|113355|
+
+R Raven's Glory |QID|44479| |N|Travel to {Raven's Glory}  (42.86, 50.56) (42.97, 48.79)| |Z|1099 0|
+C When Good Men Do Nothing |SID|33186| |N|Enter Raven's Glory and use (spell:227236) to destroy the Colossal Siegebreaker in {Raven's Glory} (42.97, 48.79)| |Z|1099 0| |QID|44479|
+
+R Trueshot Lodge |TID|44479| |N|Travel to {Trueshot Lodge} (47.42,43.49)| |Z|1072 0|
+T Ravencrest's Legacy |QID|44479| |N|(npc:113857) in {Trueshot Lodge} (47.42,43.49)| |Z|1072 0| |NPC|113857|
+---
+C The Missing Vessel |QID|43182.1| |N|Complete "The Missing Vessel" missions to collect 4 (item:139041). Each of these missions will take up to 24 hours to complete. (42.48,46.63)| |Z|1072 0|
+T The Missing Vessel |QID|43182| |N|(npc:107966) in {Trueshot Lodge} (42.91,25.66)| |Z|1072 0| |NPC|107966|
+A In Defense of Dalaran |QID|42659| |N|(npc:107973) in {Trueshot Lodge} (43.41,26.33)| |Z|1072 0| |NPC|107973|
+N (npc:107966) |QID|42659.1| |N|Speak to (npc:107966) in {Trueshot Lodge} (42.92,25.60)| |Z|1072 0| |NPC|107966|
+
+R The Violet Hold |QID|42659.2| |N|Use the Portal to the Violet Hold (43.08,26.10)| |Z|1072 0| |F|1054 1|
+N (npc:109759) |SID|0|1| |N|Speak to (npc:109759) (51.72,69.73)| |Z|1054 1| |NPC|109759| |QID|42659| 
+N (npc:109759) |SID|0|2| |N|Let  (npc:109759) become the bait (51.72,69.73)| |Z|1054 1| |NPC|109759| |QID|42659|
+N (spell:1543) |SID|0|3| |N|Use (spell:1543) ability to expose the Demons (50.90,60.35)| |Z|1054 1| |QID|42659|
+K (npc:108695) |SID|30618|4| |N|Kill (npc:108695) (50.70,47.13)| |Z|1054 1| |NPC|109759| |QID|42659|
+K (npc:108694) |SID|30620|4| |N|Kill (npc:108694) (50.70,47.13)| |Z|1054 1| |NPC|109759| |QID|42659|
+K (npc:108631) |SID|0|5| |N|Defeat Hakkar the Houndmaster (51.33,43.51)| |Z|1054 1| |NPC|109759| |QID|42659|
+N (npc:109759) |SID|0|6| |N|Speak to (npc:109759) (50.81,66.50)| |Z|1054 1| |NPC|109759| |QID|42659|
+A Champion: Halduron Brightwing |QID|42415| |N|Speak to (npc:108620) to recruit as a follower (49.62,65.59)| |Z|1054 1| |NPC|108620| |E|
+
+R Trueshot Lodge |TID|42659| |N|Travel to {Trueshot Lodge} (50.83,65.11)| |Z|1054 1|
+T In Defense of Dalaran |QID|42659| |N|(npc:107973) in {Trueshot Lodge} (48.97,39.17)| |Z|1072 0| |NPC|107973|
+
+A A Hero's Weapon |QID|43423| |N|(npc:110505) in {Trueshot Lodge} (47.63,49.35)| |Z|1072 0| |NPC|110505|
+C A Hero's Weapon |QID|43423| |N|Use the Commander's Valor ability to infuse your artifact (47.63,49.35)| |Z|1072 0|
+T A Hero's Weapon |QID|43423| |N|(npc:110505) in {Trueshot Lodge} (47.63,49.35)| |Z|1072 0| |NPC|110505|
+----
+A In My Father's House |QID|44480| |N|(npc:113857) in {Trueshot Lodge} (47.42,43.49)| |Z|1072 0| |NPC|113857|
+
+R Temple of Zin-Malor |QID|44480| |N|Travel to {Temple of Zin-Malor} (35.11, 49.88)| |Z|181 0|
+C In My Father's House |QID|44480| |N|Use (spell:226956) witness Illidan's Sacrifice in Azshara on the continent of Kalimdor (35.11, 49.88) | |Z|816 0|
+
+R Skyhold |TID|44480| |N|Travel to {Skyhold} (45.32,30.18)| |Z|1035 1|
+T In My Father's House |QID|44480| |N|(npc:113857) in {Skyhold} (45.32,30.18)| |Z|1035 1| |NPC|113857|
+A Destiny Unfulfilled |QID|44497| |N|(npc:113857) in {Skyhold} (45.32,30.18)| |Z|1035 1| |NPC|113857|
+
+R The Black Temple |QID|44497| |N|Travel to {The Black Temple} (72.97, 44.12)| |Z|473 0|
+N (spell:226956) |N|Use (spell:226956) in {The Black Temple} (72.97, 44.12)| |Z|473 0| |F|1085 1| |QID|44497| 
+C Examine the Skull of Gul'dan. |SID|32029|1| |N|Examine the Skull of Gul'dan in {Temple Summit} (52.70, 71.26)| |Z|1085 1| |QID|44497| 
+C Confront Akama |SID|31955|1| |N|Confront Akama in {Temple Summit} (52.70, 71.26)| |Z|1085 1| |QID|44497| 
+C You Are Not Prepared! |SID|0|2| |N|Survive until your reinforcements arrive in {Temple Summit} (52.92, 60.84)| |Z|1085 1| |QID|44497| 
+C To The Skies |SID|32682|3| |N|Summon the (npc:22997) and defend it in {Temple Summit} (55.95, 75.70)| |Z|1085 1| |NPC|22997| |QID|44497| 
+C The Final Countdown |SID|32867|4| |N|Use Metamorphosis ability in {Temple Summit} (54.48, 72.76)| |Z|1085 1| |QID|44497| 
+C The Demon Within |SID|32865|5| |N|Destroy the Warlocks in {Temple Summit} (52.27, 64.57)| |Z|1085 1| |QID|44497| 
+C Defeat Maiev |SID|32942|6| |N|Defeat (npc:112867) in {Temple Summit} (52.16, 69.92)| |Z|1085 1| |NPC|112867| |QID|44497| 
+C Destiny Unfulfilled |QID|44497| |N|Witness True Betrayal in Shadowmoon Valley on the fringes of Outland., in {Temple Summit} (52.16, 69.92)| |Z|1085 1|
+
+R Trueshot Lodge |TID|44479| |N|Travel to {Trueshot Lodge} (47.42,43.49)| |Z|1072 0|
+T Destiny Unfulfilled |QID|44496| |N|(npc:113857) in {Trueshot Lodge} (47.42,43.49)| |Z|1072 0| |NPC|113857|
+----
+A Unseen Armaments |QID|44211 |N|(npc:110412) in {Trueshot Lodge}. This quest will only be available if you chose to get the "Fletchery" class hall upgrade. (35.70,51.73)| |Z|1072 0| |NPC|110412|
+C Unseen Armaments |QID|44211 |N|Speak to (npc:110412) and place a work order for Champion Armaments (35.70,51.73)| |Z|1072 0| |NPC|110412|
+T Unseen Armaments |QID|44211 |N|(npc:110412) in {Trueshot Lodge} (35.70,51.73)| |Z|1072 0| |NPC|110412|
 
 N Guide Complete
 

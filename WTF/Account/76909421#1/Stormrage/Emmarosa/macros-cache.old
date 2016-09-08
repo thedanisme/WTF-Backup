@@ -10,7 +10,7 @@ VER 3 0100000000000002 " TotT(Focus)" "INV_Misc_QuestionMark"
 /cast [@focus] Tricks of the Trade
 END
 VER 3 0100000000000008 "Pick Pocket" "INV_Misc_Bag_SatchelofCenarius."
-#showtooltip
+#showtooltip Pick Pocket
 /use [stealth]Pick Pocket
 END
 VER 3 0100000000000005 "Pistol Shot" "Ability_IronMaidens_IronShot."

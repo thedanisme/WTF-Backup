@@ -167,7 +167,7 @@ A The Blessing of the Watchers |QID|39597| |N|(npc:96258) in {Aggramar's Vault} 
 C The Blessing of the Watchers |QID|39597| |N|Speak to (npc:96175) to receive the blessing of the watchers in {Aggramar's Vault} (46.36, 44.84)| |Z|1017 0| |NPC|96175|
 
 R Valley of the Sword |QID|39597| |N|Travel to the {Valley of the Sword} (43.14, 49.19)| |Z|1017 0|
-T The Blessing of the Watchers |QID|39597| |N|(npc:96254) in the {Valley of the Sword} (43.14, 49.19)| |Z|1017 0| |NPC|96254|
+T The Blessing of the Watchers |QID|39597| |N|(npc:96254) in the {Valley of the Sword} (41.8, 43.0)| |Z|1017 0| |NPC|96254| |POI|
 A Will of the Thorignir |QID|38473| |N|(npc:96254) in the {Valley of the Sword} (43.14, 49.19)| |Z|1017 0| |NPC|96254|
 
 R Lorna's Watch |QID|38473| |N|Travel to {Lorna's Watch} (42.53, 59.48) (37.42, 63.83)| |Z|1017 0|

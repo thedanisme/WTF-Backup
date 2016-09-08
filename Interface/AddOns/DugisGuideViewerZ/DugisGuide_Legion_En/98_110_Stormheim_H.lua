@@ -171,7 +171,7 @@ A The Blessing of the Watchers |QID|39597| |N|(npc:96258) in {Aggramar's Vault} 
 C The Blessing of the Watchers |QID|39597| |N|Speak to (npc:96175) to receive the blessing of the watchers in {Aggramar's Vault} (46.36, 44.84)| |Z|1017 0| |NPC|96175|
 
 R Valley of the Sword |QID|39597| |N|Travel to the {Valley of the Sword} (43.14, 49.19)| |Z|1017 0|
-T The Blessing of the Watchers |QID|39597| |N|(npc:96254) in the {Valley of the Sword} (43.14, 49.19)| |Z|1017 0| |NPC|96254|
+T The Blessing of the Watchers |QID|39597| |N|(npc:96254) in the {Valley of the Sword} (41.8, 43)| |Z|1017 0| |NPC|96254| |POI|
 A Will of the Thorignir |QID|38611| |N|(npc:96254) in {Valley of the Sword} (41.85, 43.03)| |Z|1017 0| |NPC|96254|
 
 R Cullen's Post |QID|38612| |N|Travel to {Cullen's Post}  (45.05, 50.19) (44.91, 59.08)| |Z|1017 0|

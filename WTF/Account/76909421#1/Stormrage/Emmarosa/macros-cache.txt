@@ -25,8 +25,20 @@ VER 3 0100000000000006 "Riposte" "INV_Misc_QuestionMark"
 #showtooltip Riposte
 /use [nostealth]Riposte
 END
+VER 3 0100000000000009 "Shadow Blades" "INV_Misc_QuestionMark"
+#showtooltip Shadow Blades
+/use Shadow Blades
+/use 13
+/use 14
+/use Goremaw's Bite
+END
 VER 3 0100000000000003 "SoD/SS" "INV_Misc_QuestionMark"
 #showtooltip Symbols of Death
 /use Symbols of Death
 /use Shadowstrike
+END
+VER 3 010000000000000A "Stealth/Symbols" "INV_Misc_QuestionMark"
+#showtooltip Stealth
+/use Stealth
+/use Symbols of Death
 END

@@ -1494,6 +1494,7 @@ end
 			or GetItemCount(141605)==0
 			or GetItemCooldown(141605)~=0
 			or IsIndoors()
+			or GetSubZoneText()==DugisGuideViewer:localize("Dalaran") --doesn't work in Dalaran 
 		then return end
 		local route = RouteBuilders.FlightMasterWhistle:Build(
 			best, parentRoute, m1, f1, x1, y1, m2, f2, x2, y2)

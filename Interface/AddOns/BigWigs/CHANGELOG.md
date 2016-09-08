@@ -1,8 +1,9 @@
 # BigWigs
 
-## [v8-39-g9ba160d](https://github.com/BigWigsMods/BigWigs/tree/9ba160df834c111c808638ed29516fff93cb505f) (2016-09-08) [](#top)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v8...9ba160df834c111c808638ed29516fff93cb505f)
+## [v8-40-g84ee8f0](https://github.com/BigWigsMods/BigWigs/tree/84ee8f09f1df053484df6755627252deaaf8a755) (2016-09-08) [](#top)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v8...84ee8f09f1df053484df6755627252deaaf8a755)
 
+-   Options: Add bosses to main config (#29)  
 -   Update deDE (#28)  
 -   bump DBM version  
 -   esES update. (#27)  
