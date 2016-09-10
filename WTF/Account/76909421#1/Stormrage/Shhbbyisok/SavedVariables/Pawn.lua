@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0008,
+	["LastVersion"] = 2.0011,
 	["LastPlayerFullName"] = "Shhbbyisok-Stormrage",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,

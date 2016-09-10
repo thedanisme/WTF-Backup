@@ -1,8 +1,14 @@
 # BigWigs
 
-## [v8-40-g84ee8f0](https://github.com/BigWigsMods/BigWigs/tree/84ee8f09f1df053484df6755627252deaaf8a755) (2016-09-08) [](#top)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v8...84ee8f09f1df053484df6755627252deaaf8a755)
+## [v9](https://github.com/BigWigsMods/BigWigs/tree/v9) (2016-09-09) [](#top)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v8...v9)
 
+-   bump version  
+-   ruRU update (#32)  
+-   Update deDE (#31)  
+-   frFR Update (#30)  
+-   Move the "raid icon" option into the icons panel.  
+-   Options: add locale, cleanups  
 -   Options: Add bosses to main config (#29)  
 -   Update deDE (#28)  
 -   bump DBM version  

@@ -8,6 +8,10 @@ L.warnSeveralReleases = "|cffff0000Dein BigWigs ist um mehrere Versionen veralte
 L.gitHubTitle = "BigWigs ist auf GitHub"
 L.gitHubDesc = "BigWigs ist Open-Source-Software auf GitHub. Wir sind immer auf der Suche nach neuen Menschen, die uns helfen, und jeder ist willkommen, unseren Code zu inspizieren, Beiträge zu leisten und Fehlerberichte einzureichen. BigWigs ist hauptsächlich durch die großartige WoW-Gemeinschaft im Laufe der Zeit zu etwas Großem geworden.\n\n|cFF33FF99Unsere API ist nun dokumentiert und frei lesbar im Wiki auf GitHub.|r"
 
+L.options = "Optionen"
+L.raidBosses = "Schlachtzugsbosse"
+L.dungeonBosses = "Dungeonbosse"
+
 L.activeBossModules = "Aktive Bossmodule:"
 L.advanced = "Erweiterte Optionen"
 L.alphaRelease = "Bei dir läuft ein ALPHA RELEASE von BigWigs %s (%s)."
@@ -24,7 +28,6 @@ L.berserk_desc = "Warnt, wenn der Boss zum Berserker wird."
 L.best = "Beste:"
 L.blizzRestrictionsConfig = "Aufgrund der Beschränkungen von Blizzard muss die Konfiguration zuerst ausserhalb des Kampfes geöffnet werden bevor dies im Kampf möglich ist."
 L.blizzRestrictionsZone = "Warte bis zum Ende des Kampfes, um BigWigs vollständig zu Laden. (Blizzards Kampfeinschränkungen)."
-L.bosses = "Bosse"
 L.chatMessages = "Chatfenster-Nachrichten"
 L.chatMessagesDesc = "Gibt alle BigWigs-Nachrichten im Standard-Chatfenster aus, zusätzlich zu der Einstellung unter 'Ausgabe'."
 L.colors = "Farben"
@@ -80,10 +83,6 @@ L.PROXIMITY = "Näheanzeige"
 L.PROXIMITY_desc = "Fähigkeiten von Begegnungen erfordern manchmal, dass alle Mitspieler auseinander stehen. Die Näheanzeige wird speziell für diese Fähigkeit eingestellt, so dass du auf einen Blick siehst, ob du sicher bist oder nicht."
 L.PULSE = "Impuls"
 L.PULSE_desc = "Zusätzlich zum Aufleuchten des Bildschirms kann für diese bestimmte Fähigkeit kurzzeitig ein Symbol in der Bildschirmmitte angezeigt werden, um deine Aufmerksamkeit zu erlangen."
-L.raidIcons = "Schlachtzugssymbole"
-L.raidIconsDesc = [=[Einige Bossmodule benutzen Schlachtzugssymbole, um Spieler zu markieren, die von speziellem Interesse für deine Gruppe sind. Beispiele wären Bombeneffekte und Gedankenkontrolle. Wenn du diese Option ausschaltest, markierst du niemanden mehr.
-
-|cffff4411Trifft nur zu, sofern du Schlachtzugsleiter oder Assistent bist.|r]=]
 L.removeAddon = "Bitte entferne '|cFF436EEE%s|r', da es durch '|cFF436EEE%s|r' ersetzt wurde."
 L.resetPositions = "Positionen zurücksetzen"
 L.SAY = "Sagen"

@@ -8,6 +8,10 @@ if not L then return end
 --L.gitHubTitle = "BigWigs is on GitHub"
 --L.gitHubDesc = "BigWigs is open source software hosted on GitHub. We are always looking for new people to help us out and everyone is welcome to inspect our code, make contributions and submit bug reports. BigWigs is as great as it is today largely in part to the great WoW community helping us out.\n\n|cFF33FF99Our API is now documented and freely readable on the GitHub wiki.|r"
 
+--L.options = "Options"
+--L.raidBosses = "Raid Bosses"
+--L.dungeonBosses = "Dungeon Bosses"
+
 L.activeBossModules = "Moduli dei Combattimenti Attivi:"
 L.advanced = "Opzioni Avanzate"
 L.alphaRelease = "Stai usando una VERSIONE ALPHA di BigWigs %s (%s)"
@@ -24,7 +28,6 @@ L.berserk_desc = "Visualizza un timer e un avviso quando il boss si infurierà."
 L.best = "Migliore:"
 L.blizzRestrictionsConfig = "A causa di restrizioni Blizzard, la configurazione deve essere aperta fuori combattimento, prima che vi si possa accedere durante il combattimento."
 L.blizzRestrictionsZone = "Aspetto fino alla fine del combattimento a completare il caricamento a causa di restrizioni al combattimento di Blizzard."
---L.bosses = "Bosses"
 L.chatMessages = "Messaggi Riquadro Chat"
 L.chatMessagesDesc = "Invia tutti i messaggi di BigWigs alla chat oltre che nei settaggi di visualizzazione."
 L.colors = "Colori"
@@ -80,10 +83,6 @@ L.PROXIMITY = "Monitor di Prossimità"
 L.PROXIMITY_desc = "A volte le abilità richiedono che si stia lontani. Il Monitor di prossimità è nato per questa necessità e ti mette in condizione di capire quando sei al sicuro."
 L.PULSE = "Pulsazione"
 L.PULSE_desc = "In aggiunta al Lampeggio sullo schermo, puoi avere anche un'icona relativa a questa specifica abilità piazzata momentaneamente al centro dello schermo per aiutarti a focalizzare la tua attenzione."
-L.raidIcons = "Icone dell'Incursione"
-L.raidIconsDesc = [=[Alcuni combattimenti richiedono di evidenziare alcuni giocatori di particolare interesse nell'incontro con dei simboli. Per esempio effetti di tipo 'bomba' o 'controllo della mente'. Se disattivi questa opzione, non metterai nessun simbolo.
-
-|cffff4411Si applica solo quando sei il capogruppo della spedizione o sei stato stato promosso!|r]=]
 L.removeAddon = "Per favore rimuovi '|cFF436EEE%s|r' perché è stato rimpiazzato da '|cFF436EEE%s|r'."
 L.resetPositions = "Ripristina le Posizioni"
 L.SAY = "Parla"

@@ -8,6 +8,10 @@ if not L then return end
 --L.gitHubTitle = "BigWigs is on GitHub"
 --L.gitHubDesc = "BigWigs is open source software hosted on GitHub. We are always looking for new people to help us out and everyone is welcome to inspect our code, make contributions and submit bug reports. BigWigs is as great as it is today largely in part to the great WoW community helping us out.\n\n|cFF33FF99Our API is now documented and freely readable on the GitHub wiki.|r"
 
+--L.options = "Options"
+--L.raidBosses = "Raid Bosses"
+--L.dungeonBosses = "Dungeon Bosses"
+
 L.activeBossModules = "Módulos de chefes ativos:"
 L.advanced = "Opções avançadas"
 L.alphaRelease = "Você está usando uma VERSÃO ALFA do BigWigs %s (%s)"
@@ -24,7 +28,6 @@ L.berserk_desc = "Mostra um contador de quando o chefe entrará em frenesi"
 L.best = "Melhor:"
 L.blizzRestrictionsConfig = "Devido a restrições da Blizzard, a configuração deve ser primeiro aberta fora de combate antes que possa ser acessada em combate."
 L.blizzRestrictionsZone = "Aguardando o combate acabar para terminar o carregamento devido a restrições de combate da Blizzard."
---L.bosses = "Bosses"
 L.chatMessages = "Chat frame messages"
 L.chatMessagesDesc = "Coloca todas as mensagens do BigWigs na janela de chat padrão, em adição da configuração de amostra"
 L.colors = "Cores"
@@ -80,10 +83,6 @@ L.PROXIMITY = "Janela de aproximação"
 L.PROXIMITY_desc = "Algumas habilidades requerem que você se espalhe, a janela de aproximação será ajustada especificadamente para essas habilidades, então você terá tempo de correr."
 L.PULSE = "Pulsar"
 L.PULSE_desc = "Além de piscar a tela, você pode associar um ícone a esta habilidade específica. Ele será exibido momentaneamente no meio de sua tela para tentar chamar sua atenção."
-L.raidIcons = "Ícones de Raide"
-L.raidIconsDesc = [=[Alguns encontros usam os icones de raide para marcar jogadores que são de interesse especial para seu grupo. Por exemplo, os efeitos tipo 'bomba' e controle mental. Se estiver desativado, não marcará nada.
-
-|cffff4411Somente aplicará as marcas se você for assistente ou lider!|r]=]
 L.removeAddon = "Favor, remover |cFF436EEE%s|r' pois foi substituído por |cFF436EEE%s|r'"
 L.resetPositions = "Reiniciar posições"
 L.SAY = "Dizer"

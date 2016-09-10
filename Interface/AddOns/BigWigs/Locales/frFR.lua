@@ -8,6 +8,10 @@ L.warnSeveralReleases = "|cffff0000Votre BigWigs est plusieurs versions derrièr
 L.gitHubTitle = "BigWigs est sur GitHub"
 L.gitHubDesc = "BigWigs est un logiciel open source hébergé sur GitHub. Nous sommes toujours à la recherche de nouvelles personnes pour nous aider et tout le monde est le bienvenu pour inspecter notre code, effectuer des contributions et soumettre des rapports de bogues. BigWigs existe en grande partie grâce à l'aide précieuse de la communauté de WoW.\n\n|cFF33FF99Notre API est désormais documentée et librement consultable sur le wiki GitHub.|r"
 
+L.options = "Options"
+L.raidBosses = "Boss de raid"
+L.dungeonBosses = "Boss de donjon"
+
 L.activeBossModules = "Modules de boss actifs :"
 L.advanced = "Options avancées"
 L.alphaRelease = "Vous utilisez une version ALPHA de BigWigs %s (%s)."
@@ -24,7 +28,6 @@ L.berserk_desc = "Prévient quand le boss devient fou furieux."
 L.best = "Meilleur :"
 L.blizzRestrictionsConfig = "En raison de restrictions mises en place par Blizzard, la configuration doit être chargée une première fois hors combat avant de pouvoir être accessible en combat."
 L.blizzRestrictionsZone = "En attente de la fin du combat afin de terminer le chargement en raison de restrictions mises en place par Blizzard."
---L.bosses = "Bosses"
 L.chatMessages = "Messages de la fenêtre de discussion"
 L.chatMessagesDesc = "Affiche tous les messages de BigWigs dans la fenêtre de discussion par défaut, en plus de son affichage normal."
 L.colors = "Couleurs"
@@ -80,10 +83,6 @@ L.PROXIMITY = "Affichage de proximité"
 L.PROXIMITY_desc = "Certaines techniques nécessitent que vous vous espaciez. L'affichage de proximité sera paramétré spécifiquement pour cette technique afin que vous puissiez voir d'un coup d'oeil si vous êtes en sécurité."
 L.PULSE = "Pulse"
 L.PULSE_desc = "En plus de faire clignoter l'écran, vous pouvez également avoir une icône relative à cette technique qui s'affiche momentanément au milieu de votre écran pour attirer votre attention."
-L.raidIcons = "Icônes de raid"
-L.raidIconsDesc = [=[Certains scripts de rencontre utilisent des icônes pour marquer les joueurs affectés par des techniques précises. Par exemple, les effets de type "bombe" et les contrôles mentaux. Si vous décochez ceci, vous ne marquerez personne.
-
-|cffff4411Ne fonctionne que si vous êtes soit le chef du groupe (de raid), soit un de ses assistants !|r]=]
 L.removeAddon = "Veuillez enlever '|cFF436EEE%s|r' étant donné qu'il a été remplacé par '|cFF436EEE%s|r'."
 L.resetPositions = "Réinitialiser les positions"
 L.SAY = "Dire"

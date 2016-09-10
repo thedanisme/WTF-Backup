@@ -1,11 +1,4 @@
 Version: 1
-Frame: DugisArrowFrame
-FrameLevel: 1
-Anchor: TOPRIGHT
-X: -342
-Y: -241
-W: 72
-H: 54
 Frame: ColorPickerFrame
 FrameLevel: 21
 Anchor: CENTER
@@ -60,5 +53,12 @@ FrameLevel: 1
 Anchor: CENTER
 X: 12
 Y: 71
-W: 292
-H: 94
+W: 268
+H: 142
+Frame: DugisArrowFrame
+FrameLevel: 1
+Anchor: TOPRIGHT
+X: -342
+Y: -241
+W: 72
+H: 54

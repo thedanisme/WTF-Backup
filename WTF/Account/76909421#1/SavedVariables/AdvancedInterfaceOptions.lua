@@ -12,7 +12,7 @@ AdvancedInterfaceOptionsSaved = {
 		["ActionButtonUseKeyDown"] = false,
 		["autoQuestProgress"] = "0",
 		["MaxSpellStartRecoveryOffset"] = 80,
-		["nameplateOtherAtBase"] = 0,
 		["advancedWatchFrame"] = "1",
+		["nameplateOtherAtBase"] = 0,
 	},
 }

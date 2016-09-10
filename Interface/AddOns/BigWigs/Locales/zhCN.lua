@@ -8,6 +8,10 @@ L.warnSeveralReleases = "|cffff0000你的 BigWigs 已过期多个发行版！！
 L.gitHubTitle = "BigWigs 位于 GitHub"
 L.gitHubDesc = "BigWigs 是一个在 GitHub 上的开源软件。我们一直在寻找新的朋友帮助我们和欢迎任何人检测我们的代码，做出贡献和提交错误报告。BigWigs 今天的伟大很大程度上一部分因为伟大的魔兽世界社区帮助我们。\n\n|cFF33FF99我们的 API 现在已在 GitHub 维基记录并且可以自由读取。|r"
 
+--L.options = "Options"
+--L.raidBosses = "Raid Bosses"
+--L.dungeonBosses = "Dungeon Bosses"
+
 L.activeBossModules = "激活首领模块："
 L.advanced = "高级选项"
 L.alphaRelease = "你所使用的 BigWigs %s 为“α测试版”（%s）"
@@ -24,7 +28,6 @@ L.berserk_desc = "当首领进入狂暴状态时发出警报。"
 L.best = "最快："
 L.blizzRestrictionsConfig = "由于暴雪的限制必须脱离战斗后才可进行配置，然后才可以在战斗中使用。"
 L.blizzRestrictionsZone = "因为暴雪的战斗限制将在等待战斗结束后加载。"
---L.bosses = "Bosses"
 L.chatMessages = "聊天框体信息"
 L.chatMessagesDesc = "除了显示设置，输出所有 BigWigs 信息到默认聊天框体。"
 L.colors = "颜色"
@@ -80,10 +83,6 @@ L.PROXIMITY = "近距离显示"
 L.PROXIMITY_desc = "有些技能有时会要求团队散开。近距离显示为这些技能独立的设置一个窗口告诉你谁离你过近是并且是不安全的。"
 L.PULSE = "脉冲"
 L.PULSE_desc = "除了闪屏之外，也可以使特定技能的图标随之显示在你的屏幕上，以提高注意力。"
-L.raidIcons = "团队标记"
-L.raidIconsDesc = [=[团队中有些首领模块使用团队标记来为某些中了特定技能的队员打上标记。例如类似“炸弹”类或心灵控制的技能。如果你关闭此功能，你将不会给队员打标记。
-
-|cffff4411只有团队领袖或被提升为助理时才可以这么做！|r]=]
 L.removeAddon = "请移除“|cFF436EEE%s|r”，其已被“|cFF436EEE%s|r”所替代。"
 L.resetPositions = "重置位置"
 L.SAY = "说"

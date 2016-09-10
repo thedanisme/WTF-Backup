@@ -8,6 +8,10 @@ L.warnSeveralReleases = "|cffff0000Tu BigWigs está desfasado varias actualizaci
 L.gitHubTitle = "BigWigs está en GitHub"
 L.gitHubDesc = "BigWigs es de código abierto alojado en GitHub. Siempre estamos buscando gente para ayudarnos y cualquiera es bienvenido para inspeccionar nuestro código, hacer contribuciones y reportar errores. BigWigs es tan genial a día de hoy en gran parte por la gran comunidad de WoW que nos ayuda.\n\n|cFF33FF99Ahora nuestra API está documentada y puede leerla libremente en el wiki de GitHub.|r"
 
+--L.options = "Options"
+--L.raidBosses = "Raid Bosses"
+--L.dungeonBosses = "Dungeon Bosses"
+
 L.activeBossModules = "Módulos de jefes activos:"
 L.advanced = "Opciones avanzadas"
 L.alphaRelease = "Estás usando la VERSION ALPHA de BigWigs %s (%s)"
@@ -24,7 +28,6 @@ L.berserk_desc = "Muestra un contador que avisa cuando el jefe entrará en rabia
 L.best = "El mejor:"
 L.blizzRestrictionsConfig = "Debido a las restricciones de Blizzard la configuración debe abrirse primero fuera de combate, antes se podia acceder en combate."
 L.blizzRestrictionsZone = "Esperando a que acabe el combate parra terminar de cargar debido a las restricciones de combate de Blizzard."
-L.bosses = "Jefes"
 L.chatMessages = "Chat frame messages"
 L.chatMessagesDesc = "Todos los mensajes de salida de BigWigs a la ventana de chat por defecto en adición a los ajustes mostrados"
 L.colors = "Colores"
@@ -80,10 +83,6 @@ L.PROXIMITY = "Ventana de proximidad"
 L.PROXIMITY_desc = "La ventana de proximidad se ajustará especificamente para esa habilidad para que sepas de un vistazo si estás a salvo o no."
 L.PULSE = "Pulso"
 L.PULSE_desc = "Para complementar el flash de pantalla, también puedes tener un icono relacionado con esta habilidad especifica que se mostrará momentáneamente en el medio de la pantalla para tratar de atraer tu atención."
-L.raidIcons = "Iconos de Raid"
-L.raidIconsDesc = [=[Algunos encuentros usan los iconos de raid para marcar jugadores de interés especial para tu grupo. Por ejemplo los efectos tipo 'bomba' y control mental. Si la cambias a desactivado, no marcarás a nadie.
-
-|cffff4411¡Solo aplica las marcas si eres ayudante o lider!|r]=]
 L.removeAddon = "Por favor elimina '|cFF436EEE%s|r' ya que está siendo reemplazado por '|cFF436EEE%s|r'."
 L.resetPositions = "Reiniciar posiciones"
 L.SAY = "Decir"

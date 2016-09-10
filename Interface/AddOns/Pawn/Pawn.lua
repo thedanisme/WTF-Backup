@@ -7,7 +7,7 @@
 -- Main non-UI code
 ------------------------------------------------------------
 
-PawnVersion = 2.0010
+PawnVersion = 2.0011
 
 -- Pawn requires this version of VgerCore:
 local PawnVgerCoreVersionRequired = 1.09
@@ -528,8 +528,6 @@ function PawnInitializeOptions()
 		PawnCommon.IgnoreGemsWhileLeveling = true
 	end
 	if (not PawnCommon.LastVersion) or (PawnCommon.LastVersion < 2.0000) then
-		-- WoW 7.0 is a major patch, so invalidate best item data.
-		PawnInvalidateBestItems()
 		-- The new "show spec icons" option is enabled by default.
 		PawnCommon.ShowSpecIcons = true
 	end
@@ -540,6 +538,10 @@ function PawnInitializeOptions()
 	if (not PawnCommon.LastVersion) or (PawnCommon.LastVersion < 2.0004) then
 		-- The baleful/valor upgrade option returned temporarily in 2.0.4, and it's on by default. 
 		PawnCommon.IgnoreItemUpgrades = true
+	end
+	if (not PawnCommon.LastVersion) or (PawnCommon.LastVersion < 2.0011) then
+		-- Gem values changed in 2.0.11 due to a hotfix, so invalidate best item data.
+		PawnInvalidateBestItems()
 	end
 	PawnCommon.LastVersion = PawnVersion
 	PawnOptions.LastVersion = PawnVersion

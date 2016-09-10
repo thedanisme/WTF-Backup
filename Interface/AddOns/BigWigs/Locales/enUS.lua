@@ -43,6 +43,9 @@ L.coreAddonDisabled = "BigWigs won't function properly since the addon %s is dis
 L.removeAddon = "Please remove '|cFF436EEE%s|r' as it's been replaced by '|cFF436EEE%s|r'."
 
 -- Options.lua
+L.options = "Options"
+L.raidBosses = "Raid Bosses"
+L.dungeonBosses = "Dungeon Bosses"
 L.introduction = "Welcome to BigWigs, where the boss encounters roam. Please fasten your seatbelt, eat peanuts and enjoy the ride. It will not eat your children, but it will assist you in preparing that new boss encounter as a 7-course dinner for your raid group."
 L.toggleAnchorsBtn = "Toggle Anchors"
 L.toggleAnchorsBtn_desc = "Toggle showing or hiding of all the anchors."
@@ -51,8 +54,6 @@ L.testBarsBtn_desc = "Creates a bar for you to test your current display setting
 L.sound = "Sound"
 L.flashScreen = "Flash Screen"
 L.flashScreenDesc = "Certain abilities are important enough to need your full attention. When these abilities affect you BigWigs can flash the screen."
-L.raidIcons = "Raid icons"
-L.raidIconsDesc = "Some encounter scripts use raid icons to mark players that are of special interest to your group. For example 'bomb'-type effects and mind control. If you turn this off, you won't mark anyone.\n\n|cffff4411Only applies if you're either the group leader or promoted!|r"
 L.minimapIcon = "Minimap icon"
 L.minimapToggle = "Toggle show/hide of the minimap icon."
 L.configure = "Configure"
@@ -116,7 +117,6 @@ L.COUNTDOWN_desc = "If enabled, a vocal and visual countdown will be added for t
 
 L.advanced = "Advanced options"
 L.back = "<< Back"
-L.bosses = "Bosses"
 
 L.tank = "|cFFFF0000Tank alerts only.|r "
 L.healer = "|cFFFF0000Healer alerts only.|r "
