@@ -3,7 +3,7 @@ BigWigs3DB = {
 	["namespaces"] = {
 		["BigWigs_Plugins_Victory"] = {
 		},
-		["BigWigs_Plugins_Raid Icons"] = {
+		["LibDualSpec-1.0"] = {
 		},
 		["BigWigs_Plugins_Colors"] = {
 		},
@@ -13,17 +13,18 @@ BigWigs3DB = {
 					["posx"] = 830,
 					["fontSize"] = 11.0000009536743,
 					["font"] = "Gotham-Narrow",
-					["fontOutline"] = "OUTLINE",
 					["lock"] = true,
+					["fontOutline"] = "OUTLINE",
 					["posy"] = 100,
 				},
 			},
 		},
-		["LibDualSpec-1.0"] = {
+		["BigWigs_Plugins_BossBlock"] = {
 		},
 		["BigWigs_Plugins_Bars"] = {
 			["profiles"] = {
 				["Default"] = {
+					["BigWigsEmphasizeAnchor_y"] = 359.111054702598,
 					["BigWigsAnchor_y"] = 274.488895535469,
 					["emphasizeGrowup"] = true,
 					["BigWigsAnchor_x"] = 465.06672133075,
@@ -32,11 +33,15 @@ BigWigs3DB = {
 					["BigWigsAnchor_width"] = 175.999877929688,
 					["BigWigsEmphasizeAnchor_x"] = 952.17849527864,
 					["font"] = "Gotham-Narrow",
-					["BigWigsEmphasizeAnchor_y"] = 359.111054702598,
 				},
 			},
 		},
-		["BigWigs_Plugins_Common Auras"] = {
+		["BigWigs_Plugins_Pull"] = {
+			["profiles"] = {
+				["Default"] = {
+					["countType"] = "normal",
+				},
+			},
 		},
 		["BigWigs_Plugins_Super Emphasize"] = {
 			["profiles"] = {
@@ -47,24 +52,18 @@ BigWigs3DB = {
 		},
 		["BigWigs_Plugins_Sounds"] = {
 		},
-		["BigWigs_Plugins_HeroesVoices"] = {
-		},
-		["BigWigs_Plugins_Respawn"] = {
-		},
-		["BigWigs_Plugins_Statistics"] = {
-		},
 		["BigWigs_Plugins_Proximity"] = {
 			["profiles"] = {
 				["Default"] = {
-					["posx"] = 1077.33353303141,
 					["width"] = 233.000045776367,
 					["objects"] = {
 						["background"] = false,
 					},
-					["font"] = "Friz Quadrata TT",
 					["posy"] = 274.488895535469,
+					["posx"] = 1077.33353303141,
 					["lock"] = true,
 					["height"] = 198.999923706055,
+					["font"] = "Friz Quadrata TT",
 				},
 			},
 		},
@@ -82,14 +81,15 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_Pull"] = {
-			["profiles"] = {
-				["Default"] = {
-					["countType"] = "normal",
-				},
-			},
+		["BigWigs_Plugins_Statistics"] = {
 		},
-		["BigWigs_Plugins_BossBlock"] = {
+		["BigWigs_Plugins_Respawn"] = {
+		},
+		["BigWigs_Plugins_HeroesVoices"] = {
+		},
+		["BigWigs_Plugins_Common Auras"] = {
+		},
+		["BigWigs_Plugins_Raid Icons"] = {
 		},
 	},
 	["profileKeys"] = {

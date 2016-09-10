@@ -116,7 +116,7 @@ function ACH:Initialize()
 				then
 					achievementButton.DugisWaypointButton.id = achievementButton.id
 					achievementButton.DugisWaypointButton:Show()
-				else
+				elseif achievementButton.DugisWaypointButton then
 					achievementButton.DugisWaypointButton:Hide()
 				end
 				UpdateCriteriaButtons(achievementButton)

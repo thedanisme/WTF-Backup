@@ -48509,6 +48509,21 @@ function NPC:Initialize()
 [110979] = "Diseased Silver Hand Knight",
 [110939] = "Trapped Silver Hand Knight",
 [108401] = "Blacksmith Kyriel",
+[105054] = "Sylara Steelsong",
+[105057] = "Hiro",
+[105107] = "Broken Temple Prisoner",
+[82261] = "Darktide Boneshell",
+[82262] = "Darktide Husk",
+[90675] = "Erris the Collector",
+[108825] = "Conjurer Margoss",
+[114064] = "Snowfang",
+[102679] = "Ysondre",
+[111573] = "Kosumoth the Hungering",
+[102695] = "Drak'thul",
+[101878] = "Felsoul Inquisitor",
+[110035] = "Historian Ju'pa",
+[110034] = "Historian Llore",
+[108468] = "The Mad Merchant",
 }
 	end
 

@@ -1,10 +1,9 @@
 # BigWigs [Burning Crusade]
 
-## [v7.0.0](https://github.com/BigWigsMods/BigWigs_BurningCrusade/tree/v7.0.0) (2016-08-19) [](#top)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs_BurningCrusade/compare/r54-release...v7.0.0)
+## [v7.0.1](https://github.com/BigWigsMods/BigWigs_BurningCrusade/tree/v7.0.1) (2016-09-10) [](#top)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs_BurningCrusade/compare/v7.0.0...v7.0.1)
 
--   add version field  
--   add metadata  
--   Comment out non functional stuff  
--   - Boss EJ ID added.  
-    - zhCN update.  
+-   frFR Update (#3)  
+-   Update deDE (#2)  
+-   fix project version  
+-   zhCN/zhTW update. (#1)  

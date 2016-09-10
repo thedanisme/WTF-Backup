@@ -1513,6 +1513,7 @@ end
 		local startDist = headDistances[1]
 		local startId = headNPCs[startDist]
 		local data = t[8][startId]
+		if not data then return end
 		tPool(headDistances)
 		tPool(headNPCs)
 		route.m, route.f, route.x, route.y = data.m, data.f, DGV:UnpackXY(data.coord)

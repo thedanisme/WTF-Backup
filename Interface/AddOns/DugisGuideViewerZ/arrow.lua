@@ -768,7 +768,7 @@ function DugisArrow:Initialize()
 			local desc = GetPOIWaypointDescription(poiButton)
 			local _, posX, posY, objective = QuestPOIGetIconInfo(questId)
             
-            if poiButton.worldQuest then
+            if poiButton.worldQuest == true or poiButton.worldQuest == false then
                 --reset = true
                 desc = C_TaskQuest.GetQuestInfoByQuestID(questId);
 				if desc then 
@@ -800,6 +800,24 @@ function DugisArrow:Initialize()
 			end
 		end
 	end
+	--local landmarkType, name, description, textureIndex, x, y, mapLinkID, inBattleMap, graveyardID, areaID, poiID, isObjectIcon, atlasIcon = GetMapLandmarkInfo(i);	
+	function DugisArrow:LandMarkPOIWaypoint(poiButton, reset)
+		if not poiButton then return end
+		local posX, posY 
+		for i=1, GetNumMapLandmarks() do 
+			local landmarkType, name, description, textureIndex, x, y = GetMapLandmarkInfo(i)
+			if name == poiButton.name then 
+				posX = x
+				posY = y
+				break
+			end
+		end
+		local m, f = GetCurrentMapAreaID(), GetCurrentMapDungeonLevel()
+		if reset then DugisGuideViewer:RemoveAllWaypoints() end
+		if posX then 
+			DGV:AddCustomWaypoint(posX, posY, poiButton.name, m, f) 
+		end
+	end	
 
 	function DugisArrow:OnQuestLogChanged()
 		local wp = DugisArrow:getFirstWaypoint()

@@ -224,19 +224,31 @@ local function onPOIClick(self)
 			(not WorldMapFrame:IsShown() or DGV.MapPreview:IsAnimating())
 			and DGV:GetDB(DGV_MAPPREVIEWDURATION)~=0 and not DGV.carboniteloaded
 
-		if self then
+		if self and not self.landmarkType then
 			DGV.DugisArrow:QuestPOIWaypoint(self, true)
+		else
+			DGV.DugisArrow:LandMarkPOIWaypoint(self, true)
 		end
 	end
 end
+
+local CurrentMap
 
 hooksecurefunc("TaskPOI_OnClick", function(self)
     onPOIClick(self)
 end)
 
-
 hooksecurefunc("QuestPOIButton_OnClick", function(self)
     onPOIClick(self)
+end)
+
+hooksecurefunc("WorldMapPOI_OnClick", function(self)
+	if CurrentMap ~= GetCurrentMapAreaID() then return end
+	onPOIClick(self)
+end)
+
+hooksecurefunc("WorldMapPOI_OnEnter", function(...)
+	CurrentMap = GetCurrentMapAreaID()
 end)
 
 allWorldQuestButtons = {}

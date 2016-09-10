@@ -38,7 +38,7 @@ A Prepare To Strike |QID|40636| |N|(npc:100438) in the {Hall of the Seasons} (51
 C Prepare To Strike |QID|40636| |N|Select an artifact weapon to pursue in the {Hall of the Seasons} (51.42, 48.67)| |Z|1044 0|
 T Prepare To Strike |QID|40636| |N|(npc:100438) in the {Hall of the Seasons} (51.42, 48.67)| |Z|1044 0| |NPC|100438|
 
-A Accept Quest |N|Accept artifact quest from (npc:100438) in the {Hall of the Seasons} (51.42, 48.67)| |Z|1044 0| |NPC|100438| |OID|40569, 42762, 41003|
+A A Quest |N|A artifact quest from (npc:100438) in the {Hall of the Seasons} (51.42, 48.67)| |Z|1044 0| |NPC|100438| |OID|40569, 42762, 41003|
 
 -- Monk Windwalker Fist Weapons Quests Begin (Fists of the Heavens)
 
@@ -47,7 +47,7 @@ C The Legend of the Sands |QID|40569| |N|Speak with (npc:100475) in {The Laughin
 T The Legend of the Sands |QID|40569| |N|(npc:100475) in {The Laughing Crane} (49.16, 58.52)| |Z|1044 0| |NPC|100475| |O|
 A Off To Adventure! |QID|40633| |N|(npc:100475) in {The Laughing Crane} (49.16, 58.52)| |Z|1044 0| |NPC|100475| |PRE|40569|
 
-R Ramkahen |QID|40633.1| |N|Ride (npc:102531) to {Ramkahen} from {The Laughing Crane} (50.61, 58.63)| |Z|1044 0| |NPC|102531| |PRE|40569| |V|
+R Ramkahen |QID|40633.1| |N|Ride (npc:102531) to {Ramkahen} from {The Laughing Crane}, it will appear after  (npc:100571) comes out of the tavern  (50.61, 58.63)| |Z|1044 0| |NPC|102531| |PRE|40569| |V|
 C Off To Adventure! |QID|40633.2| |N|Meet with (npc:100571) in {Ramkahen} (54.90, 32.92)| |Z|720 0| |NPC|100571| |PRE|40569|
 T Off To Adventure! |QID|40633| |N|(npc:100571) in {Ramkahen} (54.87, 32.91)| |Z|720 0| |NPC|100571| |PRE|40569|
 A Thunder on the Sands |QID|40634| |N|(npc:47684) in {Ramkahen} (54.90, 32.78)| |Z|720 0| |NPC|47684| |PRE|40569|
@@ -183,7 +183,7 @@ A Two Paths, Two Weapons |QID|43973| |N| (npc:100438) in the {Hall of the Season
 C Two Paths, Two Weapons |QID|43973| |N|Speak to (npc:100438) and choose a second artifact to pursue.  in the {Mandori Village} (51.4, 48.4)| |Z|1044 0| |NPC|100438|
 T Two Paths, Two Weapons |QID|43973| |N| (npc:100438) in the {Hall of the Seasons} (51.4, 48.4)| |Z|1044 0| |NPC|100438|
 
-N Accept Quest |N|Accept artifact quest from (npc:100438) in the {Hall of the Seasons} (51.42, 48.67)| |Z|1044 0| |NPC|100438| |OID|44424|
+N A Quest |N|A artifact quest from (npc:100438) in the {Hall of the Seasons} (51.42, 48.67)| |Z|1044 0| |NPC|100438| |OID|44424|
 
 A Three Paths, Three Weapons |QID|44424| |N| (npc:100438) in the {Hall of the Seasons} (51.4, 48.4)| |Z|1044 0| |NPC|100438| |O|
 C Three Paths, Three Weapons |QID|44424| |N|Speak to (npc:100438) and choose a third artifact to pursue.  in the {Mandori Village} (51.4, 48.4)| |Z|1044 0| |NPC|100438| |O|
@@ -234,6 +234,168 @@ C Tracking the Tideskorn |QID|41909| |N|Use the Scouting Map and complete the "T
 T Tracking the Tideskorn |QID|41909|  |N|(npc:104744) in the {Hall of the Seasons} (52.54,57.84)| |Z|1044 0| |NPC|104744|
 
 N Level 110 Required |N|You need to be at least level 110 to continue with the class campaign quest line| |PL|110|
+
+A The Iron Fist |QID|41849| |N|(npc:64975) in the {Hall of the Seasons} (51.42, 48.67)| |Z|1044 0| |NPC|64975|
+A Goddess Watch Over You |QID|44337| |N|(npc:113686) in {Temple of the Five Dawns}, he should appear next to you (51.41,48.39)| |Z|1044 0| |NPC|113686|
+A Hitting the Books |QID|43881| |N|(npc:106942) in {Shrine of Five Dawns} (46.73, 46.73)| |Z|1044 0| |NPC|106942|
+C A Hitting the Books |QID|43881.1|  |N|Speak to (npc:106942) and start a research work order in {Shrine of Five Dawns} (46.73, 46.73)| |Z|1044 0| |NPC|106942|
+T Hitting the Books |QID|43881|  |N|(npc:106942) in {Shrine of Five Dawns} (46.73, 46.73)| |Z|1044 0| |NPC|106942|
+A Inner Sanctuary |QID|44249| |N|(npc:112338) in {The Laughing Crane} (50.34,59.12)| |Z|1044 0| |NPC|112338|
+T Inner Sanctuary |QID|44249| |N|(npc:112338) in {The Laughing Crane} (50.34,59.12)| |Z|1044 0| |NPC|112338|
+
+R Felskorn Warcamp |N|Travel to {Felskorn Warcamp} (62.95,59.52)| |Z|1017 0| 
+T The Iron Fist |QID|41849| |N|(npc:105045) in {Felskorn Warcamp} (62.95,59.52)| |Z|1017 0| |NPC|105045|
+A The Master of Swords |QID|41850| |N|(npc:105045) in {Felskorn Warcamp} (62.95,59.52)| |Z|1017 0| |NPC|105045|
+K (npc:97890) |QID|41850| |N|Kill (npc:97890) and collect (item:136406) in {Felskorn Warcamp} (65.39,57.65)| |Z|1017 0| |NPC|97890|
+N (npc:105054) |QID|41850.1| |N|Free (npc:105054) in {Felskorn Warcamp} (64.73,58.38) (64.17,57.35)| |Z|1017 0| |NPC|105054|
+
+T The Master of Swords |QID|41850| |N|(npc:105072) in {Felskorn Warcamp}, next to you (64.17,57.35)| |Z|1017 0| |NPC|105072|
+A No Monk Left Behind |QID|41852| |N|(npc:105072) in {Felskorn Warcamp}, next to you (64.17,57.35)| |Z|1017 0| |NPC|105072|
+A Zero to Hiro |QID|41853| |N|(npc:105072) in {Felskorn Warcamp}, next to you (64.17,57.35)| |Z|1017 0| |NPC|105072|
+A Quelling the Tide |QID|41851| |N|(npc:105088)  in {Felskorn Warcamp} (64.17,57.35)| |Z|1017 0| |NPC|105088|
+
+R Gates of Valor |QID|41853| |N|Travel to {Gates of Valor} (67.14,64.01)| |Z|1017 0|
+N As you go... |AYG|41853| |N|Click on the Tideskorn Cages to free 6 (npc:105107)| |QID|41852|
+N (npc:105105)  |QID|41853.1| |N|Steal the (npc:105105) in {Gates of Valor} (67.14,64.01)| |Z|1017 0| |NPC|105105|
+N (npc:105057) |QID|41853.2| |N|Rescue (npc:105057) in {Gates of Valor} (67.49,65.09) (67.76,66.20) (66.67,70.32)| |Z|1017 0| |NPC|105057|
+T Zero to Hiro |QID|41853| |N|(npc:105152) in {Gates of Valor}, next to you (66.67,70.32)| |Z|1017 0| |NPC|105152|
+C No Monk Left Behind |QID|41852.1| |N|Click on the Tideskorn Cages to free 6 (npc:105107) (67.98,65.97)| |Z|1017 0| |NPC|105107|
+C Quelling the Tide |QID|41851| |N|Kill 16 Legion defenders at the {Gates of Valor} (67.98,65.97)| |Z|1017 0|  |POI|
+T No Monk Left Behind |QID|41852| |N|(npc:105072) in {Gates of Valor}, next to you (67.98,65.97)| |Z|1017 0| |POI| |NPC|105072|
+T Quelling the Tide |QID|41851| |N|(npc:105088) in {Gates of Valor}, next to you (67.98,65.97)| |Z|1017 0| |POI| |NPC|105088|
+A Brick By Brick |QID|41854| |N|(npc:105152) in {Gates of Valor}, next to you (67.98,65.97)| |Z|1017 0| |POI| |NPC|105152|
+
+R Hall of the Seasons |TID|41854| |N|Travel to {Hall of the Seasons} (51.42, 48.67)| |Z|1044 0|
+T Brick By Brick |QID|41854| |N|(npc:64975) in the {Hall of the Seasons} (51.42, 48.67)| |Z|1044 0| |NPC|64975|
+A Champion: Hiro |QID|41737| |N|Speak to (npc:105058) to recruit as a follower (51.90,49.49)| |Z|1044 0| |NPC|105058| |E|
+A Champion: Sylara Steelsong |QID|41738| |N|Speak to (npc:105056) to recruit as a follower (51.96,49.64)| |Z|1044 0| |NPC|105056| |E|
+A Champion: Angus Ironfist |QID|41736| |N|Speak to (npc:105046) to recruit as a follower (51.89,49.72)| |Z|1044 0| |NPC|105046| |E|
+A The Mead Master |QID|41038| |N|(npc:64975) in the {Hall of the Seasons} (51.42, 48.67)| |Z|1044 0| |NPC|64975|
+
+R Aegira's Meadery |QID|41038| |N|Travel to {Aegira's Meadery} (52.26,32.78) (53.92,31.66) (56.07,30.18) (59.30,30.33) (60.37,25.89) (64.07,24.14) (63.40,21.13)| |Z|1017 0| 
+N (npc:41038) |QID|41038.1| |N|(npc:41038) in {Aegira's Meadery} (63.40,21.13)| |Z|1017 0| |NPC|41038|
+T The Mead Master |QID|41038| |N|(npc:41038) in {Aegira's Meadery} (62.12,20.14)| |Z|1017 0| |NPC|41038|
+A Stolen Knowledge |QID|41039| |N|(npc:41038) in {Aegira's Meadery} (62.12,20.14)| |Z|1017 0| |NPC|41038|
+
+R Hrydshal |QID|41039| |N|Travel to {Hrydshal} (45.22, 64.96)| |Z|1017 0|
+N Taste the Sour Storm Brew |QID|41039.2| |N|Click sour storm mead to taste it,  you will need to grapple over the wall in {Hrydshal} (45.22, 64.96) (44.14,65.91)| |Z|1017 0|
+N Taste the Weak Storm Brew |QID|41039.3| |N|Click weak storm mead in {Hrydshal} (45.43,67.86)| |Z|1017 0|
+N Taste the Blazing Storm Brew |QID|41039.4| |N|Click blazing storm brew in {Hrydshal} (45.05,69.36)| |Z|1017 0|
+K (npc:102852) |QID|41039.5| |N|Kill (npc:133995) and collect (item:133995) in {Hrydshal} (44.64,72.35)| |Z|1017 0| |NPC|133995|
+T Stolen Knowledge |QID|41039| |N|(npc:102996)  in {Hrydshal}, next to you (44.64,72.35)| |Z|1017 0| |NPC|102996|
+A Freya's Spring |QID|41910| |N|(npc:102996)  in {Hrydshal}, next to you (44.64,72.35)| |Z|1017 0| |NPC|102996|
+A The Brewmaster |QID|41040| |N|(npc:102996)  in {Hrydshal}, next to you (44.64,72.35)| |Z|1017 0| |NPC|102996|
+A Amaranthine Hops |QID|41911| |N|(npc:102996)  in {Hrydshal}, next to you (44.64,72.35)| |Z|1017 0| |NPC|102996|
+
+N As you go... |AYG|43151| |N|Use the Scouting Map and complete five "Freya's Spring" missions| |QID|41910|
+A A Peaceful World |QID|41086| |N|(npc:102820) in {Temple of Five Dawns} (55.27,57.07)| |NPC|102820|
+N (item:124113) |QID|41911| |N|Collect 20 (item:124113), you can either use Skinning profession or buy from the action house| |L|124113 20|
+
+R The Traveler's Den |N|Travel to {The Traveler's Den} in (56.33,73.89)| |Z|1018 0|
+A Making A Trade |QID|43151| |N|(npc:109738) in {The Traveler's Den} (56.33,73.89)| |Z|1018 0| |NPC|109738|
+C Making A Trade |QID|43151| |N|Collect 20 (item:124113), you can either use Skinning profession or buy from the action house| |Z|1018 0| |NPC|109738|
+T Making A Trade |QID|43151| |N|(npc:109738) in {The Traveler's Den} (56.33,73.89)| |Z|1018 0| |NPC|109738|
+
+R Hall of the Seasons |TID|41911| |N|Travel to {Hall of the Seasons} (51.42, 48.67)| |Z|1044 0|
+T Amaranthine Hops |QID|41911| |N|(npc:64975) in the {Hall of the Seasons} (51.42, 48.67)| |Z|1044 0| |NPC|64975|
+-----
+R Dalaran |OID|44448| |N|Travel to {Dalaran} (28.46,48.33)| |Z|1014 10| |NPC|90417| 
+T Goddess Watch Over You |QID|44337| |N|(npc:90417) in {Dalaran} (28.46,48.33)| |Z|1014 10| |NPC|90417| |O|
+T Goddess Watch Over You |QID|44338| |N|(npc:90417) in {Dalaran} (28.46,48.33)| |Z|1014 10| |NPC|90417| |O|
+A In the House of Light and Shadow |QID|44448| |N|(npc:90417) in {Dalaran} (28.46,48.33)| |Z|1014 10| |NPC|90417| 
+C In the House of Light and Shadow |QID|44448| |N|Take the Tears of Elune to Light's Heart in your Order Hall (51.80,48.16)| |Z|1044 0|
+T In the House of Light and Shadow |QID|44448| |N|(npc:90417) in {Dalaran} (28.49,48.33)|  |Z|1014 10| |NPC|90417| 
+----
+N Switch Guide |N|Switch to (guide:"1041(98-110)") and complete it for the quest (qid:41040)| |QID|41040|
+T The Brewmaster |QID|41040| |N|(npc:103049) in the {The High Gate} (48.97,10.85)| |Z|1041 2| |NPC|103049|
+A Odyn's Cauldron |QID|41059| |N|(npc:103049) in the {The High Gate} (48.97,10.85)| |Z|1041 2| |NPC|103049|
+N (item:134005) |QID|41059.1| |N|Collect (item:134005)  in the {Halls of Valor} (41.94,66.38)| |Z|1041 2|
+
+R Hall of the Seasons |TID|41059| |N|Travel to {Hall of the Seasons} (51.42, 48.67)| |Z|1044 0|
+T Odyn's Cauldron |QID|41059| |N|(npc:64975) in the {Hall of the Seasons} (51.42, 48.67)| |Z|1044 0| |NPC|64975|
+
+C A Peaceful World |QID|41086| |N|Complete 30 World Quests|
+C Freya's Spring |QID|41910| |N|Use the Scouting Map and complete five "Freya's Spring" missions, Each of these missions will take up to 2 days to complete (52.92,60.16)| |Z|1044 0|
+T A Peaceful World |QID|41086| |N|(npc:64975) in the {Hall of the Seasons} (51.42, 48.67)| |Z|1044 0| |NPC|64975|
+T Freya's Spring |QID|41910| |N|(npc:64975) in the {Hall of the Seasons} (51.42, 48.67)| |Z|1044 0| |NPC|64975|
+A Impending Danger |QID|32442| |N|(npc:64975) in the {Hall of the Seasons} (51.42, 48.67)| |Z|1044 0| |NPC|64975|
+C Impending Danger |QID|32442| |N|Use the Scouting Map and complete (mission:1162) mission. This mission will take 30 minutes to complete (52.92,60.16)| |Z|1044 0| |NPC|64975|
+T Impending Danger |QID|32442| |N|(npc:64975) in the {Hall of the Seasons} (51.42, 48.67)| |Z|1044 0| |NPC|64975|
+A Storm Brew |QID|41087| |N|(npc:64975) in the {Hall of the Seasons} (51.42, 48.67)| |Z|1044 0| |NPC|64975|
+N (npc:101880) |QID|41087.1| |N|Speak to (npc:101880) and get a ride to {Ridge of Laughing Winds}| |Z|1044 0| |NPC|101880|
+
+R Ridge of Laughing Winds |QID|41087.2| |N|Go to the Ridge of Laughing Winds (34.00,49.48)| |Z|1044 0| 
+N (npc:108726) |QID|41087.3| |N|Speak to (npc:108726) in {Ridge of Laughing Winds} (30.71,55.42)(29.00,62.72) (25.92,68.11)| |Z|1044 0| |NPC|108726|
+N Make the Storm Brew |QID|41087.4| |N|Kill the enemies that attack in waves (25.92,67.73)| |Z|1044 0|
+N Drink the Storm Brew |QID|41087.5| |N|click Odyn's Cauldron to drink the Storm Brew (25.53,68.38)| |Z|1044 0|
+K (npc:104755) |QID|41087.6| |N|Kill (npc:104755) (27.54,65.14)| |Z|1044 0| |NPC|104755|
+T Storm Brew |QID|41087| |N|(npc:109823) in {Ridge of Laughing Winds} (31.35,40.60)| |Z|1044 0| |NPC|109823|
+A A Hero's Weapon |QID|43359| |N|(npc:64975) in the {Hall of the Seasons} (51.42, 48.67)| |Z|1044 0| |NPC|64975|
+C A Hero's Weapon |QID|43359| |N|Use the Commander's Valor ability on your artifact (51.42, 48.67)| |Z|1044 0| |NPC|64975|
+T A Hero's Weapon |QID|43359| |N|(npc:64975) in the {Hall of the Seasons} (51.42, 48.67)| |Z|1044 0| |NPC|64975|
+A Champion: Aegira |QID|41739| |N|(npc:105226) in {Hall of the Seasons} (55.40,57.23)| |Z|1044 0| |NPC|105226| |E|
+----
+A Awakenings |QID|44464| |N|(npc:113857) in {Temple of Five Dawns} (51.80,48.16)| |Z|1044 0| |NPC|113857|
+
+R Val'sharah |QID|44464| |N|Travel {Val'sharah} (54.40,73.17)| |Z|1018 0|
+C Awakenings |QID|44464.1| |N|Travel to {Val'sharah} and use (spell:226956) to witness the awakening of Illidan Stormrage (54.40,73.17)| |Z|1018 0|
+
+T Awakenings |QID|44464| |N|(npc:113857) in {Temple of Five Dawns} (51.80,48.16)| |Z|1044 0| |NPC|113857|
+A Awakenings |QID|44464| |N|(npc:113857) in {Temple of Five Dawns} (51.80,48.16)| |Z|1044 0| |NPC|113857|
+
+R Val'Shara |QID|44466| |N|Travel to {Val'Shara}  (54.96,53.43) (53.29,49.94) (52.11,43.99)| |Z|1018 0|
+N Witness Illidan's Resilience |QID|44466.1| |N|Use (spell:226956) to witness the awakening of Illidan Resilience (45.54,34.75)| |Z|1018 0|
+
+R Skyhold |OID|44479| |N|Travel to {Skyhold} (45.32,30.18)| |Z|1035 1|
+T An Unclear Path |QID|44466| |N|(npc:113857) in {Skyhold} (45.32,30.18)| |Z|1035 1| |NPC|113857|
+A Ravencrest's Legacy |QID|44479| |N|(npc:113857) in {Skyhold} (45.32,30.18)| |Z|1035 1| |NPC|113857|
+R Val'Shara |QID|44479| |N|Travel to {Val'Shara} (54.96,53.43)| |Z|1018 0|
+N (spell:226956) |N|Go to the destination to use (spell:226956) to begin the Ravencrest's Legacy scenario (54.96,53.43) (52.81,50.41) (46.98,50.23) (44.28,49.94) (42.08,46.29)| |Z|1018 0| |QID|44479|
+N Report to Kur'talos Ravencrest |SID|33154|1| |N|Report to (npc:113046) in  {Ravencourt}| |QID|44479| |NPC|113046|
+N Repair the Deactivated Moon Guard Portal |SID|33155|2| |N|Click Deactivated Moon Guard Portal in {Ravencourt}| |QID|44479|
+K (npc:113555) |SID|33162|3| |N|Secure the Rampart by Defeating (npc:113555) (42.95,46.32) (44.27,49.58)| |Z|1099 0| |QID|44479|
+N Enter the Upper Ramparts of the Courtyard |SID|33169|4| |N|Follow the path to the upper ramparts of the courtyard (44.28,49.76) (44.51,51.22 )| |Z|1099 0| |QID|44479|
+N Activate the Moon Guard Portal |SID|33174|5| |N|Click on Deactivated Moon Guard Portal in each waypoint (44.51,51.22) (40.98,51.48) (43.71,50.93)| |Z|1099 0|  |QID|44479
+K (npc:114137) |SID|33184|6| |N|Use (spell:227154) to kill (npc:114137) to end the invasion (43.09,52.18)| |Z|1099 0| |QID|44479| |NPC|114137|
+
+R Mausoleum |QID|44414| |N|Travel to {Mausoleum} (38.75, 53.07)| |Z|1099 0| 
+A Felspawns of Lothros |QID|44414| |N|(npc:113361) in {Mausoleum} (38.75, 53.07)| |Z|1099 0| |NPC|113361|
+C Felspawns of Lothros |QID|44414| |N|Defeat (npc:113786) in {Mausoleum} (40.63, 53.01)| |Z|1099 0| |NPC|113786|
+T Felspawns of Lothros |QID|44414| |N|(npc:113361) in {Mausoleum} (40.42, 53.01)| |Z|1099 0| |NPC|113361|
+A The Red Axe |QID|44415| |N|(npc:113361) in {Mausoleum} (40.42, 53.01)| |Z|1099 0| |NPC|113361|
+C The Red Axe |QID|44415| |N|Close the Unstable Portals and make your way to (npc:113355) (41.37, 49.89)| |Z|1099 0| |NPC|113355|
+T The Red Axe |QID|44415| |N|(npc:113355) in {Mausoleum} (43.80, 50.40)| |Z|1099 0| |NPC|113355|
+A Hunter of Night |QID|44416| |N|(npc:113355) in {Mausoleum} (43.84, 50.41)| |Z|1099 0| |NPC|113355|
+C Hunter of Night |QID|44416| |N|Defeat (npc:113825) in {Mausoleum} (43.29, 50.45)| |Z|1099 0| |NPC|113825|
+T Hunter of Night |QID|44416| |N|(npc:113355) in {Mausoleum} (41.59, 50.53)| |Z|1099 0| |NPC|113355|
+
+R Raven's Glory |QID|44479| |N|Travel to {Raven's Glory}  (42.86, 50.56) (42.97, 48.79)| |Z|1099 0|
+C When Good Men Do Nothing |SID|33186| |N|Enter Raven's Glory and use (spell:227236) to destroy the Colossal Siegebreaker in {Raven's Glory} (42.97, 48.79)| |Z|1099 0| |QID|44479|
+
+R Skyhold |OID|44480| |N|Travel to {Skyhold} (45.32,30.18)| |Z|1035 1|
+T Ravencrest's Legacy |QID|44479| |N|(npc:113857) in {Skyhold} (45.32,30.18)| |Z|1035 1| |NPC|113857|
+A In My Father's House |QID|44480| |N|(npc:113857) in {Skyhold} (45.32,30.18)| |Z|1035 1| |NPC|113857|
+
+R Temple of Zin-Malor |QID|44480| |N|Travel to {Temple of Zin-Malor} (35.11, 49.88)| |Z|181 0|
+C In My Father's House |QID|44480| |N|Use (spell:226956) witness Illidan's Sacrifice in Azshara on the continent of Kalimdor (35.11, 49.88) | |Z|816 0|
+
+R Skyhold |TID|44480| |N|Travel to {Skyhold} (45.32,30.18)| |Z|1035 1|
+T In My Father's House |QID|44480| |N|(npc:113857) in {Skyhold} (45.32,30.18)| |Z|1035 1| |NPC|113857|
+A Destiny Unfulfilled |QID|44497| |N|(npc:113857) in {Skyhold} (45.32,30.18)| |Z|1035 1| |NPC|113857|
+
+R The Black Temple |QID|44497| |N|Travel to {The Black Temple} (72.97, 44.12)| |Z|473 0|
+N (spell:226956) |N|Use (spell:226956) in {The Black Temple} (72.97, 44.12)| |Z|473 0| |F|1085 1| |QID|44497| 
+C Examine the Skull of Gul'dan. |SID|32029|1| |N|Examine the Skull of Gul'dan in {Temple Summit} (52.70, 71.26)| |Z|1085 1| |QID|44497| 
+C Confront Akama |SID|31955|1| |N|Confront Akama in {Temple Summit} (52.70, 71.26)| |Z|1085 1| |QID|44497| 
+C You Are Not Prepared! |SID|0|2| |N|Survive until your reinforcements arrive in {Temple Summit} (52.92, 60.84)| |Z|1085 1| |QID|44497| 
+C To The Skies |SID|32682|3| |N|Summon the (npc:22997) and defend it in {Temple Summit} (55.95, 75.70)| |Z|1085 1| |NPC|22997| |QID|44497| 
+C The Final Countdown |SID|32867|4| |N|Use Metamorphosis ability in {Temple Summit} (54.48, 72.76)| |Z|1085 1| |QID|44497| 
+C The Demon Within |SID|32865|5| |N|Destroy the Warlocks in {Temple Summit} (52.27, 64.57)| |Z|1085 1| |QID|44497| 
+C Defeat Maiev |SID|32942|6| |N|Defeat (npc:112867) in {Temple Summit} (52.16, 69.92)| |Z|1085 1| |NPC|112867| |QID|44497| 
+C Destiny Unfulfilled |QID|44497| |N|Witness True Betrayal in Shadowmoon Valley on the fringes of Outland., in {Temple Summit} (52.16, 69.92)| |Z|1085 1|
+
+R Temple of Five Dawns |TID|44496| |N|Travel to {Temple of Five Dawns} (51.80,48.16)| |Z|1044 0|
+T Destiny Unfulfilled |QID|44496| |N|(npc:113857) in {Temple of Five Dawns} (51.80,48.16)| |Z|1044 0| |NPC|113857|
 
 N Guide Complete
 

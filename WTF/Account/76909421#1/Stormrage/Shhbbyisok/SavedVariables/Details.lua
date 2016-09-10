@@ -19,844 +19,99 @@ _detalhes_database = {
 		["tabelas"] = {
 			{
 				{
-					["combatId"] = 205,
+					["combatId"] = 9,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["on_hold"] = false,
-							["colocacao"] = 1,
 							["damage_from"] = {
-								["Ancient Boneservant"] = true,
-								["Bonespeaker Mystic"] = true,
-								["Environment (Falling)"] = true,
+								["Tideskorn Warbear"] = true,
+								["Titan Defense Orb"] = true,
 							},
 							["targets"] = {
-								["Bonespeaker Mystic"] = 1594834,
-								["Ancient Boneservant"] = 858195,
 							},
+							["on_hold"] = false,
 							["pets"] = {
-								"Bloodstalker <Shhbbyisok>", -- [1]
 							},
 							["friendlyfire"] = {
 							},
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 2430253.006538,
+							["total_without_pet"] = 0.004873,
 							["spec"] = 250,
 							["dps_started"] = false,
-							["total"] = 2453029.006538,
+							["total"] = 0.004873,
 							["classe"] = "DEATHKNIGHT",
 							["serial"] = "Player-60-0AA1A2F9",
 							["nome"] = "Shhbbyisok",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
-									{
-										["c_amt"] = 1,
-										["b_amt"] = 1,
-										["c_dmg"] = 23177,
-										["g_amt"] = 0,
-										["n_max"] = 11670,
-										["targets"] = {
-											["Bonespeaker Mystic"] = 123476,
-											["Ancient Boneservant"] = 10178,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 110477,
-										["n_min"] = 7554,
-										["g_dmg"] = 0,
-										["counter"] = 12,
-										["total"] = 133654,
-										["c_max"] = 23177,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 7554,
-										["n_amt"] = 11,
-										["r_amt"] = 0,
-										["c_min"] = 23177,
-									}, -- [1]
-									[52212] = {
-										["c_amt"] = 28,
-										["b_amt"] = 0,
-										["c_dmg"] = 185024,
-										["g_amt"] = 0,
-										["n_max"] = 3437,
-										["targets"] = {
-											["Ancient Boneservant"] = 201254,
-											["Bonespeaker Mystic"] = 287881,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 304111,
-										["n_min"] = 2405,
-										["g_dmg"] = 0,
-										["counter"] = 119,
-										["total"] = 489135,
-										["c_max"] = 6874,
-										["id"] = 52212,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 91,
-										["r_amt"] = 0,
-										["c_min"] = 4811,
-									},
-									[50842] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 58115,
-										["g_amt"] = 0,
-										["n_max"] = 29057,
-										["targets"] = {
-											["Ancient Boneservant"] = 145286,
-											["Bonespeaker Mystic"] = 145285,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 232456,
-										["n_min"] = 29057,
-										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 290571,
-										["c_max"] = 58115,
-										["id"] = 50842,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 8,
-										["r_amt"] = 0,
-										["c_min"] = 58115,
-									},
-									[205223] = {
-										["c_amt"] = 1,
-										["b_amt"] = 1,
-										["c_dmg"] = 118345,
-										["g_amt"] = 0,
-										["n_max"] = 61294,
-										["targets"] = {
-											["Ancient Boneservant"] = 161869,
-											["Bonespeaker Mystic"] = 179367,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 222891,
-										["n_min"] = 43524,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 341236,
-										["c_max"] = 118345,
-										["id"] = 205223,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 43524,
-										["n_amt"] = 4,
-										["r_amt"] = 0,
-										["c_min"] = 118345,
-									},
-									[206930] = {
-										["c_amt"] = 5,
-										["b_amt"] = 4,
-										["c_dmg"] = 204183,
-										["g_amt"] = 0,
-										["n_max"] = 22386,
-										["targets"] = {
-											["Ancient Boneservant"] = 141469,
-											["Bonespeaker Mystic"] = 343579,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 280865,
-										["n_min"] = 13304,
-										["g_dmg"] = 0,
-										["counter"] = 20,
-										["total"] = 485048,
-										["c_max"] = 44941,
-										["id"] = 206930,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 57911,
-										["n_amt"] = 15,
-										["r_amt"] = 0,
-										["c_min"] = 29477,
-									},
-									[195292] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 11055,
-										["targets"] = {
-											["Bonespeaker Mystic"] = 11055,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 11055,
-										["n_min"] = 11055,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 11055,
-										["c_max"] = 0,
-										["id"] = 195292,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[55078] = {
-										["c_amt"] = 8,
-										["b_amt"] = 0,
-										["c_dmg"] = 79596,
-										["g_amt"] = 0,
-										["n_max"] = 5445,
-										["targets"] = {
-											["Bonespeaker Mystic"] = 123866,
-											["Ancient Boneservant"] = 72681,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 116951,
-										["n_min"] = 4735,
-										["g_dmg"] = 0,
-										["counter"] = 30,
-										["total"] = 196547,
-										["c_max"] = 10890,
-										["id"] = 55078,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 22,
-										["r_amt"] = 0,
-										["c_min"] = 7623,
-									},
-									[195182] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 78698,
-										["g_amt"] = 0,
-										["n_max"] = 39981,
-										["targets"] = {
-											["Bonespeaker Mystic"] = 158082,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 79384,
-										["n_min"] = 39403,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 158082,
-										["c_max"] = 78698,
-										["id"] = 195182,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 78698,
-									},
-									[49998] = {
-										["c_amt"] = 1,
-										["b_amt"] = 1,
-										["c_dmg"] = 92523,
-										["g_amt"] = 0,
-										["n_max"] = 55964,
-										["targets"] = {
-											["Bonespeaker Mystic"] = 199467,
-											["Ancient Boneservant"] = 125458,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 232402,
-										["n_min"] = 32935,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 324925,
-										["c_max"] = 92523,
-										["id"] = 49998,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 32935,
-										["n_amt"] = 5,
-										["r_amt"] = 0,
-										["c_min"] = 92523,
-									},
 								},
 							},
 							["grupo"] = true,
-							["end_time"] = 1473487431,
-							["last_dps"] = 79129.9679528387,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 758297.006538,
-							["start_time"] = 1473487400,
-							["delay"] = 0,
-							["last_event"] = 1473487431,
-						}, -- [1]
-						{
-							["flag_original"] = 8465,
-							["serial"] = "Creature-0-3887-1220-10085-97930-000053A229",
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Bonespeaker Mystic"] = 22776,
-							},
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 22776.008947,
-							["dps_started"] = false,
-							["total"] = 22776.008947,
-							["classe"] = "PET",
-							["ownerName"] = "Shhbbyisok",
-							["nome"] = "Bloodstalker <Shhbbyisok>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 3342,
-										["g_amt"] = 0,
-										["n_max"] = 1648,
-										["targets"] = {
-											["Bonespeaker Mystic"] = 22776,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 19434,
-										["n_min"] = 1376,
-										["g_dmg"] = 0,
-										["counter"] = 14,
-										["total"] = 22776,
-										["c_max"] = 3342,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 13,
-										["r_amt"] = 0,
-										["c_min"] = 3342,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["end_time"] = 1473487431,
+							["end_time"] = 1473533646,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 0.008947,
-							["start_time"] = 1473487418,
-							["delay"] = 1473487413,
-							["last_event"] = 1473487413,
-						}, -- [2]
+							["damage_taken"] = 34184.004873,
+							["start_time"] = 1473533646,
+							["delay"] = 0,
+							["last_event"] = 0,
+						}, -- [1]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 205,
+					["combatId"] = 9,
 					["tipo"] = 3,
 					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorb"] = 0.008467,
-							["last_hps"] = 0,
-							["targets_overheal"] = {
-								["Shhbbyisok"] = 1065788,
-							},
-							["targets"] = {
-								["Shhbbyisok"] = 954719,
-							},
-							["last_event"] = 1473487430,
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["healing_from"] = {
-								["Shhbbyisok"] = true,
-							},
-							["classe"] = "DEATHKNIGHT",
-							["totalover"] = 1065788.008467,
-							["total_without_pet"] = 636528.008467,
-							["heal_enemy_amt"] = 0,
-							["totalover_without_pet"] = 0.008467,
-							["fight_component"] = true,
-							["end_time"] = 1473487431,
-							["healing_taken"] = 636528.008467,
-							["serial"] = "Player-60-0AA1A2F9",
-							["nome"] = "Shhbbyisok",
-							["spec"] = 250,
-							["grupo"] = true,
-							["total"] = 636528.008467,
-							["heal_enemy"] = {
-							},
-							["targets_absorbs"] = {
-							},
-							["custom"] = 0,
-							["tipo"] = 2,
-							["on_hold"] = false,
-							["start_time"] = 1473487394,
-							["delay"] = 0,
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[77535] = {
-										["c_amt"] = 6,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Shhbbyisok"] = 277639,
-										},
-										["n_max"] = 14417,
-										["targets"] = {
-											["Shhbbyisok"] = -136661,
-										},
-										["n_min"] = 928,
-										["counter"] = 20,
-										["overheal"] = 277639,
-										["total"] = -136661,
-										["c_max"] = 0,
-										["id"] = 77535,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = -277639,
-										["m_amt"] = 0,
-										["c_min"] = -144188,
-										["n_curado"] = 140978,
-										["m_healed"] = 0,
-										["n_amt"] = 14,
-										["absorbed"] = 0,
-									},
-									[45470] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Shhbbyisok"] = 352026,
-										},
-										["n_max"] = 92329,
-										["targets"] = {
-											["Shhbbyisok"] = 194773,
-										},
-										["n_min"] = 0,
-										["counter"] = 6,
-										["overheal"] = 352026,
-										["total"] = 194773,
-										["c_max"] = 0,
-										["id"] = 45470,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 194773,
-										["m_healed"] = 0,
-										["n_amt"] = 6,
-										["absorbed"] = 0,
-									},
-									[205224] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Shhbbyisok"] = 261329,
-										},
-										["n_max"] = 88712,
-										["targets"] = {
-											["Shhbbyisok"] = 88712,
-										},
-										["n_min"] = 0,
-										["counter"] = 5,
-										["overheal"] = 261329,
-										["total"] = 88712,
-										["c_max"] = 0,
-										["id"] = 205224,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 88712,
-										["m_healed"] = 0,
-										["n_amt"] = 5,
-										["absorbed"] = 0,
-									},
-									[55078] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Shhbbyisok"] = 99693,
-										},
-										["n_max"] = 10890,
-										["targets"] = {
-											["Shhbbyisok"] = 96854,
-										},
-										["n_min"] = 0,
-										["counter"] = 30,
-										["overheal"] = 99693,
-										["total"] = 96854,
-										["c_max"] = 0,
-										["id"] = 55078,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 96854,
-										["m_healed"] = 0,
-										["n_amt"] = 30,
-										["absorbed"] = 0,
-									},
-									[53365] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Shhbbyisok"] = 75101,
-										},
-										["n_max"] = 30287,
-										["targets"] = {
-											["Shhbbyisok"] = 30287,
-										},
-										["n_min"] = 0,
-										["counter"] = 2,
-										["overheal"] = 75101,
-										["total"] = 30287,
-										["c_max"] = 0,
-										["id"] = 53365,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 30287,
-										["m_healed"] = 0,
-										["n_amt"] = 2,
-										["absorbed"] = 0,
-									},
-									[195181] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 8109,
-										["targets"] = {
-											["Shhbbyisok"] = 84924,
-										},
-										["n_min"] = 880,
-										["counter"] = 25,
-										["overheal"] = 0,
-										["total"] = 84924,
-										["c_max"] = 0,
-										["id"] = 195181,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 84924,
-										["m_healed"] = 0,
-										["n_amt"] = 25,
-										["absorbed"] = 0,
-									},
-								},
-							},
-						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 205,
+					["combatId"] = 9,
 					["tipo"] = 7,
 					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["resource"] = 0.007682,
-							["targets"] = {
-								["Shhbbyisok"] = 260,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 6,
-							["classe"] = "DEATHKNIGHT",
-							["fight_component"] = true,
-							["total"] = 260.007682,
-							["nome"] = "Shhbbyisok",
-							["spec"] = 250,
-							["grupo"] = true,
-							["tipo"] = 3,
-							["received"] = 260.007682,
-							["spells"] = {
-								["tipo"] = 7,
-								["_ActorTable"] = {
-									[210738] = {
-										["id"] = 210738,
-										["total"] = 60,
-										["targets"] = {
-											["Shhbbyisok"] = 60,
-										},
-										["counter"] = 20,
-									},
-									[50977] = {
-										["id"] = 50977,
-										["total"] = 20,
-										["targets"] = {
-											["Shhbbyisok"] = 20,
-										},
-										["counter"] = 2,
-									},
-									[43265] = {
-										["id"] = 43265,
-										["total"] = 20,
-										["targets"] = {
-											["Shhbbyisok"] = 20,
-										},
-										["counter"] = 2,
-									},
-									[195292] = {
-										["id"] = 195292,
-										["total"] = 10,
-										["targets"] = {
-											["Shhbbyisok"] = 10,
-										},
-										["counter"] = 1,
-									},
-									[195182] = {
-										["id"] = 195182,
-										["total"] = 60,
-										["targets"] = {
-											["Shhbbyisok"] = 60,
-										},
-										["counter"] = 3,
-									},
-									[206930] = {
-										["id"] = 206930,
-										["total"] = 90,
-										["targets"] = {
-											["Shhbbyisok"] = 90,
-										},
-										["counter"] = 6,
-									},
-								},
-							},
-							["serial"] = "Player-60-0AA1A2F9",
-							["last_event"] = 1473488132,
-						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 205,
+					["combatId"] = 9,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[43265] = {
-										["uptime"] = 22,
-										["activedamt"] = 1,
-										["id"] = 43265,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[55078] = {
-										["uptime"] = 28,
-										["activedamt"] = 0,
-										["id"] = 55078,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[51399] = {
-										["uptime"] = 3,
-										["activedamt"] = 0,
-										["id"] = 51399,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[206930] = {
-										["uptime"] = 22,
-										["activedamt"] = 0,
-										["id"] = 206930,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 143,
-							["classe"] = "DEATHKNIGHT",
-							["interrupt_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[47528] = {
-										["id"] = 47528,
-										["interrompeu_oque"] = {
-											[195474] = 1,
-											[197892] = 1,
-										},
-										["targets"] = {
-											["Bonespeaker Mystic"] = 2,
-										},
-										["counter"] = 2,
-									},
-								},
-							},
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[77535] = {
-										["uptime"] = 19,
-										["activedamt"] = 4,
-										["id"] = 77535,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[188290] = {
-										["uptime"] = 22,
-										["activedamt"] = 3,
-										["id"] = 188290,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[81141] = {
-										["uptime"] = 2,
-										["activedamt"] = 1,
-										["id"] = 81141,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[180545] = {
-										["actived_at"] = 1473487394,
-										["uptime"] = 0,
-										["activedamt"] = 1,
-										["id"] = 180545,
-										["actived"] = true,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[195181] = {
-										["uptime"] = 37,
-										["activedamt"] = 1,
-										["id"] = 195181,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[53365] = {
-										["uptime"] = 26,
-										["activedamt"] = 3,
-										["id"] = 53365,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[219788] = {
-										["uptime"] = 37,
-										["activedamt"] = 1,
-										["id"] = 219788,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-								},
-							},
-							["interrompeu_oque"] = {
-								[195474] = 1,
-								[197892] = 1,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 75,
-							["interrupt_targets"] = {
-								["Bonespeaker Mystic"] = 2,
-							},
 							["buff_uptime_targets"] = {
 							},
 							["spec"] = 250,
 							["grupo"] = true,
-							["spell_cast"] = {
-								[195292] = 1,
-								[50842] = 2,
-								[47528] = 2,
-								[49576] = 1,
-								[195182] = 3,
-								[108199] = 1,
-								[49998] = 6,
-								[188290] = 4,
-								[43265] = 3,
-								[206930] = 6,
-								[205223] = 1,
-							},
-							["interrupt"] = 2.006509,
-							["debuff_uptime_targets"] = {
-							},
-							["last_event"] = 1473487431,
+							["buff_uptime"] = 32,
 							["nome"] = "Shhbbyisok",
 							["pets"] = {
+							},
+							["last_event"] = 1473533646,
+							["classe"] = "DEATHKNIGHT",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[201695] = {
+										["uptime"] = 16,
+										["activedamt"] = 1,
+										["id"] = 201695,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[23221] = {
+										["uptime"] = 16,
+										["activedamt"] = 1,
+										["id"] = 23221,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+								},
 							},
 							["serial"] = "Player-60-0AA1A2F9",
 							["tipo"] = 4,
@@ -864,7 +119,7 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 205,
+					["combatId"] = 9,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -874,24 +129,24 @@ _detalhes_database = {
 				},
 				["last_events_tables"] = {
 				},
-				["enemy"] = "Ancient Boneservant",
-				["combat_counter"] = 485,
+				["enemy"] = "Tideskorn Warbear",
+				["combat_counter"] = 576,
 				["playing_solo"] = true,
 				["totals"] = {
-					2453028.797435, -- [1]
-					636528, -- [2]
+					-0.0220489999846905, -- [1]
+					-0.004268, -- [2]
 					{
-						-0.00593499999999381, -- [1]
-						[0] = -0.0138779999999236,
-						[6] = 259.994318,
+						0, -- [1]
+						[0] = 0,
+						[6] = -0.0072890000000001,
 						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
 						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = -0.00264099999999989,
-						["interrupt"] = 1.992421,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
 						["dispell"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
@@ -903,10 +158,1233 @@ _detalhes_database = {
 					["Shhbbyisok"] = {
 						{
 							true, -- [1]
+							185973, -- [2]
+							6604, -- [3]
+							1473533663.608, -- [4]
+							871976, -- [5]
+							"Titan Defense Orb", -- [6]
+							nil, -- [7]
+							1, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [1]
+						{
+						}, -- [2]
+						{
+						}, -- [3]
+						{
+						}, -- [4]
+						{
+						}, -- [5]
+						{
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						{
+						}, -- [9]
+						{
+						}, -- [10]
+						{
+						}, -- [11]
+						{
+						}, -- [12]
+						{
+						}, -- [13]
+						{
+						}, -- [14]
+						{
+						}, -- [15]
+						{
+						}, -- [16]
+						["n"] = 2,
+					},
+				},
+				["frags_need_refresh"] = false,
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Shhbbyisok"] = 0.004873,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 1967650.037,
+				["combat_id"] = 9,
+				["instance_type"] = "none",
+				["totals_grupo"] = {
+					0, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags"] = {
+				},
+				["data_fim"] = "14:54:06",
+				["data_inicio"] = "14:53:50",
+				["CombatSkillCache"] = {
+				},
+				["PlayerLeechTrinket"] = {
+				},
+				["start_time"] = 1967634.211,
+				["contra"] = "Tideskorn Warbear",
+				["TimeData"] = {
+				},
+			}, -- [1]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 8,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["damage_from"] = {
+								["Gurgoth"] = true,
+								["Environment (Falling)"] = true,
+							},
+							["targets"] = {
+								["Gurgoth"] = 3006935,
+							},
+							["serial"] = "Player-60-0AA1A2F9",
+							["pets"] = {
+								"Rune Weapon <Shhbbyisok>", -- [1]
+								"Bloodstalker <Shhbbyisok>", -- [2]
+							},
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 2652249.008589,
+							["spec"] = 250,
+							["dps_started"] = false,
+							["total"] = 3006935.008589,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["nome"] = "Shhbbyisok",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 6,
+										["b_amt"] = 0,
+										["c_dmg"] = 149960,
+										["g_amt"] = 0,
+										["n_max"] = 13490,
+										["targets"] = {
+											["Gurgoth"] = 379559,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 229599,
+										["n_min"] = 11843,
+										["g_dmg"] = 0,
+										["counter"] = 24,
+										["total"] = 379559,
+										["c_max"] = 26860,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 22858,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 18,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[52212] = {
+										["c_amt"] = 21,
+										["b_amt"] = 0,
+										["c_dmg"] = 164223,
+										["g_amt"] = 0,
+										["n_max"] = 3934,
+										["targets"] = {
+											["Gurgoth"] = 330307,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 166084,
+										["n_min"] = 3421,
+										["g_dmg"] = 0,
+										["counter"] = 64,
+										["total"] = 330307,
+										["c_max"] = 7869,
+										["id"] = 52212,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 6843,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 43,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[50842] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 66528,
+										["g_amt"] = 0,
+										["n_max"] = 33264,
+										["targets"] = {
+											["Gurgoth"] = 199584,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 133056,
+										["n_min"] = 33264,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 199584,
+										["c_max"] = 66528,
+										["id"] = 50842,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 66528,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[205223] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 66479,
+										["targets"] = {
+											["Gurgoth"] = 129928,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 129928,
+										["n_min"] = 63449,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 129928,
+										["c_max"] = 0,
+										["id"] = 205223,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[195182] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 47925,
+										["targets"] = {
+											["Gurgoth"] = 227139,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 227139,
+										["n_min"] = 44148,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 227139,
+										["c_max"] = 0,
+										["id"] = 195182,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[55078] = {
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 34399,
+										["g_amt"] = 0,
+										["n_max"] = 5993,
+										["targets"] = {
+											["Gurgoth"] = 134718,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 100319,
+										["n_min"] = 5212,
+										["g_dmg"] = 0,
+										["counter"] = 20,
+										["total"] = 134718,
+										["c_max"] = 11987,
+										["id"] = 55078,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 10425,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 17,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[49998] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 245621,
+										["g_amt"] = 0,
+										["n_max"] = 65024,
+										["targets"] = {
+											["Gurgoth"] = 789672,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 544051,
+										["n_min"] = 54476,
+										["g_dmg"] = 0,
+										["counter"] = 11,
+										["total"] = 789672,
+										["c_max"] = 124242,
+										["id"] = 49998,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 121379,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 9,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[206930] = {
+										["c_amt"] = 4,
+										["b_amt"] = 0,
+										["c_dmg"] = 196370,
+										["g_amt"] = 0,
+										["n_max"] = 25690,
+										["targets"] = {
+											["Gurgoth"] = 461342,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 264972,
+										["n_min"] = 21182,
+										["g_dmg"] = 0,
+										["counter"] = 15,
+										["total"] = 461342,
+										["c_max"] = 50773,
+										["id"] = 206930,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 45790,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 11,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["end_time"] = 1473527935,
+							["last_dps"] = 47729.1271204603,
+							["custom"] = 0,
+							["last_event"] = 1473527935,
+							["damage_taken"] = 837190.008589,
+							["start_time"] = 1473527872,
+							["delay"] = 0,
+							["classe"] = "DEATHKNIGHT",
+						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Gurgoth"] = 330064,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 330064.004025,
+							["classe"] = "PET",
+							["dps_started"] = false,
+							["total"] = 330064.004025,
+							["serial"] = "Creature-0-3133-1617-24962-27893-000054405B",
+							["ownerName"] = "Shhbbyisok",
+							["nome"] = "Rune Weapon <Shhbbyisok>",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 11330,
+										["g_amt"] = 0,
+										["n_max"] = 2833,
+										["targets"] = {
+											["Gurgoth"] = 39655,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 28325,
+										["n_min"] = 2832,
+										["g_dmg"] = 0,
+										["counter"] = 12,
+										["total"] = 39655,
+										["c_max"] = 5665,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 5665,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 10,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[50842] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 20998,
+										["g_amt"] = 0,
+										["n_max"] = 10498,
+										["targets"] = {
+											["Gurgoth"] = 52492,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 31494,
+										["n_min"] = 10498,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 52492,
+										["c_max"] = 20998,
+										["id"] = 50842,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 20998,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[228645] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 25494,
+										["g_amt"] = 0,
+										["n_max"] = 6373,
+										["targets"] = {
+											["Gurgoth"] = 63732,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 38238,
+										["n_min"] = 6373,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 63732,
+										["c_max"] = 12747,
+										["id"] = 228645,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 12747,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 6,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[55078] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 3783,
+										["g_amt"] = 0,
+										["n_max"] = 1891,
+										["targets"] = {
+											["Gurgoth"] = 39712,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 35929,
+										["n_min"] = 1891,
+										["g_dmg"] = 0,
+										["counter"] = 20,
+										["total"] = 39712,
+										["c_max"] = 3783,
+										["id"] = 55078,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 3783,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 19,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[195182] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 21421,
+										["g_amt"] = 0,
+										["n_max"] = 10710,
+										["targets"] = {
+											["Gurgoth"] = 32131,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 10710,
+										["n_min"] = 10710,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 32131,
+										["c_max"] = 21421,
+										["id"] = 195182,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 21421,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[49998] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 29242,
+										["g_amt"] = 0,
+										["n_max"] = 14620,
+										["targets"] = {
+											["Gurgoth"] = 102342,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 73100,
+										["n_min"] = 14620,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 102342,
+										["c_max"] = 29242,
+										["id"] = 49998,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 29242,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["end_time"] = 1473527935,
+							["tipo"] = 1,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1473527933,
+							["damage_taken"] = 0.004025,
+							["start_time"] = 1473527900,
+							["delay"] = 0,
+							["friendlyfire"] = {
+							},
+						}, -- [2]
+						{
+							["flag_original"] = 8465,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Gurgoth"] = 24622,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 24622.002042,
+							["classe"] = "PET",
+							["dps_started"] = false,
+							["total"] = 24622.002042,
+							["serial"] = "Creature-0-3133-1617-24962-97930-0000544062",
+							["ownerName"] = "Shhbbyisok",
+							["nome"] = "Bloodstalker <Shhbbyisok>",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 3436,
+										["g_amt"] = 0,
+										["n_max"] = 1783,
+										["targets"] = {
+											["Gurgoth"] = 24622,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 21186,
+										["n_min"] = 1529,
+										["g_dmg"] = 0,
+										["counter"] = 14,
+										["total"] = 24622,
+										["c_max"] = 3436,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 3436,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 13,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+								["tipo"] = 2,
+							},
+							["end_time"] = 1473527935,
+							["tipo"] = 1,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1473527919,
+							["damage_taken"] = 0.002042,
+							["start_time"] = 1473527922,
+							["delay"] = 1473527919,
+							["friendlyfire"] = {
+							},
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 8,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["targets_overheal"] = {
+								["Shhbbyisok"] = 1820226,
+							},
+							["pets"] = {
+								"Rune Weapon <Shhbbyisok>", -- [1]
+							},
+							["iniciar_hps"] = false,
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 2121092.008751,
+							["total_without_pet"] = 359271.008751,
+							["total"] = 394413.008751,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["on_hold"] = false,
+							["serial"] = "Player-60-0AA1A2F9",
+							["totalabsorb"] = 0.008751,
+							["last_hps"] = 0,
+							["targets"] = {
+								["Shhbbyisok"] = 577243,
+								["Rune Weapon <Shhbbyisok>"] = 111372,
+							},
+							["totalover_without_pet"] = 0.008751,
+							["healing_taken"] = 359271.008751,
+							["fight_component"] = true,
+							["end_time"] = 1473527935,
+							["nome"] = "Shhbbyisok",
+							["spells"] = {
+								["_ActorTable"] = {
+									[77535] = {
+										["c_amt"] = 10,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Shhbbyisok"] = 217722,
+										},
+										["n_max"] = 34688,
+										["targets"] = {
+											["Shhbbyisok"] = 70514,
+										},
+										["n_min"] = 75,
+										["counter"] = 23,
+										["overheal"] = 217722,
+										["total"] = 70514,
+										["c_max"] = 0,
+										["id"] = 77535,
+										["targets_absorbs"] = {
+										},
+										["m_crit"] = 0,
+										["c_curado"] = -217722,
+										["m_amt"] = 0,
+										["c_min"] = -66555,
+										["n_curado"] = 288236,
+										["n_amt"] = 13,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+									[205224] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Shhbbyisok"] = 105372,
+										},
+										["n_max"] = 27219,
+										["targets"] = {
+											["Shhbbyisok"] = 27219,
+										},
+										["n_min"] = 0,
+										["counter"] = 2,
+										["overheal"] = 105372,
+										["total"] = 27219,
+										["c_max"] = 0,
+										["id"] = 205224,
+										["targets_absorbs"] = {
+										},
+										["m_crit"] = 0,
+										["c_curado"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 27219,
+										["n_amt"] = 2,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+									[45470] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Shhbbyisok"] = 1124142,
+										},
+										["n_max"] = 24329,
+										["targets"] = {
+											["Shhbbyisok"] = 32452,
+										},
+										["n_min"] = 24329,
+										["counter"] = 11,
+										["overheal"] = 1124142,
+										["total"] = 32452,
+										["c_max"] = 0,
+										["id"] = 45470,
+										["targets_absorbs"] = {
+										},
+										["m_crit"] = 0,
+										["c_curado"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 32452,
+										["n_amt"] = 11,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+									[195181] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 5184,
+										["targets"] = {
+											["Shhbbyisok"] = 11364,
+										},
+										["n_min"] = 1547,
+										["counter"] = 3,
+										["overheal"] = 0,
+										["total"] = 11364,
+										["c_max"] = 0,
+										["id"] = 195181,
+										["targets_absorbs"] = {
+										},
+										["m_crit"] = 0,
+										["c_curado"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 11364,
+										["n_amt"] = 3,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+									[53365] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Shhbbyisok"] = 238272,
+										},
+										["n_max"] = 0,
+										["targets"] = {
+											["Shhbbyisok"] = 0,
+										},
+										["n_min"] = 0,
+										["counter"] = 4,
+										["overheal"] = 238272,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 53365,
+										["targets_absorbs"] = {
+										},
+										["m_crit"] = 0,
+										["c_curado"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 0,
+										["n_amt"] = 4,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+									[55078] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Shhbbyisok"] = 134718,
+										},
+										["n_max"] = 0,
+										["targets"] = {
+											["Shhbbyisok"] = 0,
+										},
+										["n_min"] = 0,
+										["counter"] = 20,
+										["overheal"] = 134718,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 55078,
+										["targets_absorbs"] = {
+										},
+										["m_crit"] = 0,
+										["c_curado"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 0,
+										["n_amt"] = 20,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["healing_from"] = {
+								["Shhbbyisok"] = true,
+							},
+							["tipo"] = 2,
+							["custom"] = 0,
+							["last_event"] = 1473527935,
+							["classe"] = "DEATHKNIGHT",
+							["start_time"] = 1473527873,
+							["delay"] = 0,
+							["spec"] = 250,
+						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["targets_overheal"] = {
+								["Rune Weapon <Shhbbyisok>"] = 300866,
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "PET",
+							["totalover"] = 300866.006718,
+							["total_without_pet"] = 35142.006718,
+							["total"] = 35142.006718,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["on_hold"] = false,
+							["serial"] = "Creature-0-3133-1617-24962-27893-0000D4405B",
+							["totalabsorb"] = 0.006718,
+							["last_hps"] = 0,
+							["targets"] = {
+								["Rune Weapon <Shhbbyisok>"] = 111372,
+							},
+							["totalover_without_pet"] = 0.006718,
+							["healing_taken"] = 35142.006718,
+							["fight_component"] = true,
+							["end_time"] = 1473527935,
+							["ownerName"] = "Shhbbyisok",
+							["nome"] = "Rune Weapon <Shhbbyisok>",
+							["spells"] = {
+								["_ActorTable"] = {
+									[55078] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Rune Weapon <Shhbbyisok>"] = 9456,
+										},
+										["n_max"] = 1891,
+										["targets"] = {
+											["Rune Weapon <Shhbbyisok>"] = 3782,
+										},
+										["n_min"] = 0,
+										["counter"] = 6,
+										["overheal"] = 9456,
+										["total"] = 3782,
+										["c_max"] = 0,
+										["id"] = 55078,
+										["targets_absorbs"] = {
+										},
+										["m_crit"] = 0,
+										["c_curado"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 3782,
+										["n_amt"] = 6,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+									[45470] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Rune Weapon <Shhbbyisok>"] = 291410,
+										},
+										["n_max"] = 15680,
+										["targets"] = {
+											["Rune Weapon <Shhbbyisok>"] = 31360,
+										},
+										["n_min"] = 0,
+										["counter"] = 6,
+										["overheal"] = 291410,
+										["total"] = 31360,
+										["c_max"] = 0,
+										["id"] = 45470,
+										["targets_absorbs"] = {
+										},
+										["m_crit"] = 0,
+										["c_curado"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 31360,
+										["n_amt"] = 6,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["healing_from"] = {
+								["Rune Weapon <Shhbbyisok>"] = true,
+							},
+							["custom"] = 0,
+							["last_event"] = 1473527912,
+							["tipo"] = 2,
+							["start_time"] = 1473527928,
+							["delay"] = 1473527912,
+							["heal_enemy_amt"] = 0,
+						}, -- [2]
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 8,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 0.008139,
+							["targets"] = {
+								["Shhbbyisok"] = 440,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 6,
+							["classe"] = "DEATHKNIGHT",
+							["fight_component"] = true,
+							["total"] = 440.008139,
+							["nome"] = "Shhbbyisok",
+							["spells"] = {
+								["_ActorTable"] = {
+									[206930] = {
+										["id"] = 206930,
+										["total"] = 225,
+										["targets"] = {
+											["Shhbbyisok"] = 225,
+										},
+										["counter"] = 15,
+									},
+									[50977] = {
+										["id"] = 50977,
+										["total"] = 20,
+										["targets"] = {
+											["Shhbbyisok"] = 20,
+										},
+										["counter"] = 2,
+									},
+									[220890] = {
+										["id"] = 220890,
+										["total"] = 40,
+										["targets"] = {
+											["Shhbbyisok"] = 40,
+										},
+										["counter"] = 8,
+									},
+									[43265] = {
+										["id"] = 43265,
+										["total"] = 10,
+										["targets"] = {
+											["Shhbbyisok"] = 10,
+										},
+										["counter"] = 1,
+									},
+									[195182] = {
+										["id"] = 195182,
+										["total"] = 100,
+										["targets"] = {
+											["Shhbbyisok"] = 100,
+										},
+										["counter"] = 5,
+									},
+									[210738] = {
+										["id"] = 210738,
+										["total"] = 45,
+										["targets"] = {
+											["Shhbbyisok"] = 45,
+										},
+										["counter"] = 15,
+									},
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["tipo"] = 3,
+							["received"] = 440.008139,
+							["spec"] = 250,
+							["serial"] = "Player-60-0AA1A2F9",
+							["last_event"] = 1473533385,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 8,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[43265] = {
+										["uptime"] = 52,
+										["activedamt"] = -1,
+										["id"] = 43265,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[55078] = {
+										["uptime"] = 61,
+										["activedamt"] = 0,
+										["id"] = 55078,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[206930] = {
+										["uptime"] = 57,
+										["activedamt"] = 0,
+										["id"] = 206930,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime"] = 287,
+							["classe"] = "DEATHKNIGHT",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[219788] = {
+										["uptime"] = 59,
+										["activedamt"] = 1,
+										["id"] = 219788,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[81256] = {
+										["uptime"] = 14,
+										["activedamt"] = 1,
+										["id"] = 81256,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[188290] = {
+										["uptime"] = 39,
+										["activedamt"] = 4,
+										["id"] = 188290,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[81141] = {
+										["uptime"] = 12,
+										["activedamt"] = 3,
+										["id"] = 81141,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[195181] = {
+										["uptime"] = 60,
+										["activedamt"] = 1,
+										["id"] = 195181,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[53365] = {
+										["uptime"] = 53,
+										["activedamt"] = 1,
+										["id"] = 53365,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[77535] = {
+										["uptime"] = 50,
+										["activedamt"] = 4,
+										["id"] = 77535,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 170,
+							["nome"] = "Shhbbyisok",
+							["spec"] = 250,
+							["grupo"] = true,
+							["spell_cast"] = {
+								[205223] = 2,
+								[50842] = 5,
+								[188290] = 7,
+								[43265] = 3,
+								[49028] = 1,
+								[49998] = 11,
+								[195182] = 5,
+								[206930] = 15,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
+							["pets"] = {
+							},
+							["serial"] = "Player-60-0AA1A2F9",
+							["last_event"] = 1473527935,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 8,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Shhbbyisok"] = true,
+				},
+				["last_events_tables"] = {
+				},
+				["enemy"] = "Gurgoth",
+				["combat_counter"] = 573,
+				["playing_solo"] = true,
+				["totals"] = {
+					3006934.89073, -- [1]
+					394413, -- [2]
+					{
+						-0.00846200000000152, -- [1]
+						[0] = -0.0171669999836013,
+						[6] = 439.976053,
+						[3] = -0.002538,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+					["Shhbbyisok"] = {
+						{
+							true, -- [1]
 							3, -- [2]
-							62747, -- [3]
-							1473487469.811, -- [4]
-							700933, -- [5]
+							191539, -- [3]
+							1473528384.884, -- [4]
+							687041, -- [5]
 							"Environment (Falling)", -- [6]
 							nil, -- [7]
 							3, -- [8]
@@ -916,9 +1394,9 @@ _detalhes_database = {
 						{
 							true, -- [1]
 							3, -- [2]
-							23754, -- [3]
-							1473487773.527, -- [4]
-							780846, -- [5]
+							286380, -- [3]
+							1473528412.652, -- [4]
+							1, -- [5]
 							"Environment (Falling)", -- [6]
 							nil, -- [7]
 							3, -- [8]
@@ -956,26 +1434,6 @@ _detalhes_database = {
 						["n"] = 3,
 					},
 				},
-				["totals_grupo"] = {
-					2430253, -- [1]
-					358889, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						[6] = 260,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 2,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
 				["frags_need_refresh"] = true,
 				["__call"] = {
 				},
@@ -984,1122 +1442,313 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
-							["Shhbbyisok"] = 636528.008467,
+							["Shhbbyisok"] = 394413.008751,
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
-							["Shhbbyisok"] = 2453029.013817,
+							["Shhbbyisok"] = 3006935.008589,
 						}, -- [1]
 					},
 				},
-				["end_time"] = 1921436.07,
-				["combat_id"] = 205,
-				["instance_type"] = "none",
-				["resincked"] = true,
+				["end_time"] = 1961939.482,
+				["combat_id"] = 8,
+				["contra"] = "Gurgoth",
+				["instance_type"] = "scenario",
+				["hasSaved"] = true,
 				["frags"] = {
-					["Bonespeaker Mystic"] = 3,
-					["Ancient Boneservant"] = 2,
+					["Gurgoth"] = 1,
 				},
-				["data_fim"] = "02:03:52",
-				["data_inicio"] = "02:03:15",
+				["data_fim"] = "13:18:55",
+				["data_inicio"] = "13:17:53",
 				["CombatSkillCache"] = {
 				},
 				["PlayerLeechTrinket"] = {
 				},
-				["start_time"] = 1921398.869,
-				["contra"] = "Ancient Boneservant",
+				["start_time"] = 1961876.969,
 				["TimeData"] = {
 				},
-			}, -- [1]
-			{
-				{
-					["combatId"] = 204,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["damage_from"] = {
-								["Bonespeaker Mystic"] = true,
-								["Ancient Boneservant"] = true,
-							},
-							["targets"] = {
-								["Ancient Boneservant"] = 417457,
-								["Cairn Rat"] = 29058,
-								["Bonespeaker Mystic"] = 1764661,
-								["Rose Taipan"] = 25272,
-							},
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["classe"] = "DEATHKNIGHT",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 2236448.004346,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1473487385,
-							["friendlyfire_total"] = 0,
-							["spec"] = 250,
-							["nome"] = "Shhbbyisok",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 2,
-										["b_amt"] = 1,
-										["c_dmg"] = 44769,
-										["g_amt"] = 0,
-										["n_max"] = 11432,
-										["targets"] = {
-											["Bonespeaker Mystic"] = 114146,
-											["Ancient Boneservant"] = 7423,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 76800,
-										["n_min"] = 7423,
-										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 121569,
-										["c_max"] = 22807,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 7423,
-										["n_amt"] = 8,
-										["r_amt"] = 0,
-										["c_min"] = 21962,
-									}, -- [1]
-									[52212] = {
-										["c_amt"] = 18,
-										["b_amt"] = 0,
-										["c_dmg"] = 119604,
-										["g_amt"] = 0,
-										["n_max"] = 3437,
-										["targets"] = {
-											["Ancient Boneservant"] = 65292,
-											["Bonespeaker Mystic"] = 243668,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 189356,
-										["n_min"] = 2405,
-										["g_dmg"] = 0,
-										["counter"] = 74,
-										["total"] = 308960,
-										["c_max"] = 6874,
-										["id"] = 52212,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 56,
-										["r_amt"] = 0,
-										["c_min"] = 4811,
-									},
-									[50842] = {
-										["c_amt"] = 3,
-										["b_amt"] = 0,
-										["c_dmg"] = 174345,
-										["g_amt"] = 0,
-										["n_max"] = 29058,
-										["targets"] = {
-											["Ancient Boneservant"] = 87172,
-											["Cairn Rat"] = 29058,
-											["Bonespeaker Mystic"] = 224887,
-											["Rose Taipan"] = 25272,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 192044,
-										["n_min"] = 25271,
-										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 366389,
-										["c_max"] = 58115,
-										["id"] = 50842,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 7,
-										["r_amt"] = 0,
-										["c_min"] = 58115,
-									},
-									[205223] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 244451,
-										["g_amt"] = 0,
-										["n_max"] = 62763,
-										["targets"] = {
-											["Ancient Boneservant"] = 58381,
-											["Bonespeaker Mystic"] = 307214,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 121144,
-										["n_min"] = 58381,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 365595,
-										["c_max"] = 125154,
-										["id"] = 205223,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 119297,
-									},
-									[49998] = {
-										["c_amt"] = 2,
-										["b_amt"] = 1,
-										["c_dmg"] = 178357,
-										["g_amt"] = 0,
-										["n_max"] = 55272,
-										["targets"] = {
-											["Bonespeaker Mystic"] = 286843,
-											["Ancient Boneservant"] = 91357,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 199843,
-										["n_min"] = 39184,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 378200,
-										["c_max"] = 102351,
-										["id"] = 49998,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 39184,
-										["n_amt"] = 4,
-										["r_amt"] = 0,
-										["c_min"] = 76006,
-									},
-									[55078] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 21780,
-										["g_amt"] = 0,
-										["n_max"] = 5445,
-										["targets"] = {
-											["Bonespeaker Mystic"] = 120762,
-											["Ancient Boneservant"] = 27225,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 126207,
-										["n_min"] = 3811,
-										["g_dmg"] = 0,
-										["counter"] = 26,
-										["total"] = 147987,
-										["c_max"] = 10890,
-										["id"] = 55078,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 24,
-										["r_amt"] = 0,
-										["c_min"] = 10890,
-									},
-									[195182] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 139759,
-										["g_amt"] = 0,
-										["n_max"] = 38415,
-										["targets"] = {
-											["Bonespeaker Mystic"] = 178174,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 38415,
-										["n_min"] = 38415,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 178174,
-										["c_max"] = 82304,
-										["id"] = 195182,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 57455,
-									},
-									[206930] = {
-										["c_amt"] = 1,
-										["b_amt"] = 1,
-										["c_dmg"] = 44737,
-										["g_amt"] = 0,
-										["n_max"] = 22438,
-										["targets"] = {
-											["Bonespeaker Mystic"] = 288967,
-											["Ancient Boneservant"] = 80607,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 324837,
-										["n_min"] = 15449,
-										["g_dmg"] = 0,
-										["counter"] = 17,
-										["total"] = 369574,
-										["c_max"] = 44737,
-										["id"] = 206930,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 15449,
-										["n_amt"] = 16,
-										["r_amt"] = 0,
-										["c_min"] = 44737,
-									},
-								},
-							},
-							["grupo"] = true,
-							["total"] = 2236448.004346,
-							["serial"] = "Player-60-0AA1A2F9",
-							["last_dps"] = 67771.1516468485,
-							["custom"] = 0,
-							["last_event"] = 1473487385,
-							["damage_taken"] = 603013.004346,
-							["start_time"] = 1473487352,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 204,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorb"] = 0.005786,
-							["last_hps"] = 0,
-							["healing_from"] = {
-								["Shhbbyisok"] = true,
-							},
-							["targets"] = {
-								["Shhbbyisok"] = 853272,
-							},
-							["last_event"] = 1473487385,
-							["pets"] = {
-							},
-							["totalover_without_pet"] = 0.005786,
-							["targets_overheal"] = {
-								["Shhbbyisok"] = 1081103,
-							},
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 1081103.005786,
-							["total_without_pet"] = 598831.005786,
-							["iniciar_hps"] = false,
-							["classe"] = "DEATHKNIGHT",
-							["fight_component"] = true,
-							["total"] = 598831.005786,
-							["serial"] = "Player-60-0AA1A2F9",
-							["healing_taken"] = 598831.005786,
-							["nome"] = "Shhbbyisok",
-							["spec"] = 250,
-							["grupo"] = true,
-							["end_time"] = 1473487385,
-							["heal_enemy"] = {
-							},
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[77535] = {
-										["c_amt"] = 5,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Shhbbyisok"] = 301247,
-										},
-										["n_max"] = 12972,
-										["targets"] = {
-											["Shhbbyisok"] = -240082,
-										},
-										["n_min"] = 4316,
-										["counter"] = 11,
-										["overheal"] = 301247,
-										["total"] = -240082,
-										["c_max"] = 0,
-										["id"] = 77535,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = -301247,
-										["m_amt"] = 0,
-										["c_min"] = -119690,
-										["n_curado"] = 61165,
-										["m_healed"] = 0,
-										["n_amt"] = 6,
-										["absorbed"] = 0,
-									},
-									[45470] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Shhbbyisok"] = 378449,
-										},
-										["n_max"] = 89305,
-										["targets"] = {
-											["Shhbbyisok"] = 169915,
-										},
-										["n_min"] = 0,
-										["counter"] = 6,
-										["overheal"] = 378449,
-										["total"] = 169915,
-										["c_max"] = 0,
-										["id"] = 45470,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 169915,
-										["m_healed"] = 0,
-										["n_amt"] = 6,
-										["absorbed"] = 0,
-									},
-									[205224] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Shhbbyisok"] = 293452,
-										},
-										["n_max"] = 59888,
-										["targets"] = {
-											["Shhbbyisok"] = 81577,
-										},
-										["n_min"] = 0,
-										["counter"] = 4,
-										["overheal"] = 293452,
-										["total"] = 81577,
-										["c_max"] = 0,
-										["id"] = 205224,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 81577,
-										["m_healed"] = 0,
-										["n_amt"] = 4,
-										["absorbed"] = 0,
-									},
-									[55078] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Shhbbyisok"] = 40167,
-										},
-										["n_max"] = 10890,
-										["targets"] = {
-											["Shhbbyisok"] = 107820,
-										},
-										["n_min"] = 0,
-										["counter"] = 26,
-										["overheal"] = 40167,
-										["total"] = 107820,
-										["c_max"] = 0,
-										["id"] = 55078,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 107820,
-										["m_healed"] = 0,
-										["n_amt"] = 26,
-										["absorbed"] = 0,
-									},
-									[53365] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Shhbbyisok"] = 67788,
-										},
-										["n_max"] = 53152,
-										["targets"] = {
-											["Shhbbyisok"] = 91668,
-										},
-										["n_min"] = 0,
-										["counter"] = 3,
-										["overheal"] = 67788,
-										["total"] = 91668,
-										["c_max"] = 0,
-										["id"] = 53365,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 91668,
-										["m_healed"] = 0,
-										["n_amt"] = 3,
-										["absorbed"] = 0,
-									},
-									[195181] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 7725,
-										["targets"] = {
-											["Shhbbyisok"] = 86686,
-										},
-										["n_min"] = 1347,
-										["counter"] = 23,
-										["overheal"] = 0,
-										["total"] = 86686,
-										["c_max"] = 0,
-										["id"] = 195181,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 86686,
-										["m_healed"] = 0,
-										["n_amt"] = 23,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["custom"] = 0,
-							["tipo"] = 2,
-							["on_hold"] = false,
-							["start_time"] = 1473487352,
-							["delay"] = 0,
-							["targets_absorbs"] = {
-							},
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["combatId"] = 204,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["resource"] = 0.005104,
-							["targets"] = {
-								["Shhbbyisok"] = 226,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 6,
-							["classe"] = "DEATHKNIGHT",
-							["fight_component"] = true,
-							["total"] = 226.005104,
-							["nome"] = "Shhbbyisok",
-							["spec"] = 250,
-							["grupo"] = true,
-							["tipo"] = 3,
-							["received"] = 226.005104,
-							["spells"] = {
-								["tipo"] = 7,
-								["_ActorTable"] = {
-									[43265] = {
-										["id"] = 43265,
-										["total"] = 10,
-										["targets"] = {
-											["Shhbbyisok"] = 10,
-										},
-										["counter"] = 1,
-									},
-									[210738] = {
-										["id"] = 210738,
-										["total"] = 51,
-										["targets"] = {
-											["Shhbbyisok"] = 51,
-										},
-										["counter"] = 17,
-									},
-									[195182] = {
-										["id"] = 195182,
-										["total"] = 60,
-										["targets"] = {
-											["Shhbbyisok"] = 60,
-										},
-										["counter"] = 3,
-									},
-									[206930] = {
-										["id"] = 206930,
-										["total"] = 105,
-										["targets"] = {
-											["Shhbbyisok"] = 105,
-										},
-										["counter"] = 7,
-									},
-								},
-							},
-							["serial"] = "Player-60-0AA1A2F9",
-							["last_event"] = 1473487382,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["combatId"] = 204,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[43265] = {
-										["uptime"] = 17,
-										["activedamt"] = 1,
-										["id"] = 43265,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[55078] = {
-										["uptime"] = 33,
-										["activedamt"] = 0,
-										["id"] = 55078,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[206930] = {
-										["uptime"] = 21,
-										["activedamt"] = 0,
-										["id"] = 206930,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 127,
-							["classe"] = "DEATHKNIGHT",
-							["interrupt_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[47528] = {
-										["id"] = 47528,
-										["interrompeu_oque"] = {
-											[197892] = 1,
-										},
-										["targets"] = {
-											["Bonespeaker Mystic"] = 1,
-										},
-										["counter"] = 1,
-									},
-								},
-							},
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[219788] = {
-										["uptime"] = 33,
-										["activedamt"] = 1,
-										["id"] = 219788,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[188290] = {
-										["uptime"] = 17,
-										["activedamt"] = 2,
-										["id"] = 188290,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[81141] = {
-										["uptime"] = 2,
-										["activedamt"] = 1,
-										["id"] = 81141,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[77535] = {
-										["uptime"] = 18,
-										["activedamt"] = 2,
-										["id"] = 77535,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[73313] = {
-										["uptime"] = 0,
-										["activedamt"] = 1,
-										["id"] = 73313,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[53365] = {
-										["uptime"] = 24,
-										["activedamt"] = 2,
-										["id"] = 53365,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[195181] = {
-										["uptime"] = 33,
-										["activedamt"] = 1,
-										["id"] = 195181,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-								},
-							},
-							["interrompeu_oque"] = {
-								[197892] = 1,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 71,
-							["interrupt_targets"] = {
-								["Bonespeaker Mystic"] = 1,
-							},
-							["buff_uptime_targets"] = {
-							},
-							["spec"] = 250,
-							["grupo"] = true,
-							["spell_cast"] = {
-								[47528] = 1,
-								[50842] = 3,
-								[188290] = 3,
-								[43265] = 2,
-								[205223] = 1,
-								[49998] = 6,
-								[195182] = 3,
-								[206930] = 7,
-							},
-							["interrupt"] = 1.003113,
-							["debuff_uptime_targets"] = {
-							},
-							["last_event"] = 1473487385,
-							["nome"] = "Shhbbyisok",
-							["pets"] = {
-							},
-							["serial"] = "Player-60-0AA1A2F9",
-							["tipo"] = 4,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 204,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Shhbbyisok"] = true,
-				},
-				["last_events_tables"] = {
-				},
-				["enemy"] = "Bonespeaker Mystic",
-				["combat_counter"] = 484,
-				["playing_solo"] = true,
-				["totals"] = {
-					2236447.979351, -- [1]
-					598831, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						[6] = 226,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 1,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Shhbbyisok"] = 598831.005786,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Shhbbyisok"] = 2236448.004346,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 1921389.764,
-				["combat_id"] = 204,
-				["instance_type"] = "none",
 				["totals_grupo"] = {
-					2236448, -- [1]
-					297584, -- [2]
+					2652249, -- [1]
+					141549, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
-						[6] = 226,
+						[6] = 440,
 						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 1,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
-				},
-				["frags"] = {
-					["Ancient Boneservant"] = 1,
-					["Bonespeaker Mystic"] = 3,
-					["Cairn Rat"] = 1,
-					["Rose Taipan"] = 1,
-				},
-				["data_fim"] = "02:03:06",
-				["data_inicio"] = "02:02:33",
-				["CombatSkillCache"] = {
-				},
-				["PlayerLeechTrinket"] = {
-				},
-				["start_time"] = 1921356.794,
-				["contra"] = "Bonespeaker Mystic",
-				["TimeData"] = {
 				},
 			}, -- [2]
 			{
 				{
-					["combatId"] = 203,
 					["tipo"] = 2,
+					["combatId"] = 7,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["damage_from"] = {
-								["Bonespeaker Cleaver"] = true,
+								["Undercity Guardian"] = true,
 							},
 							["targets"] = {
-								["Cairn Rat"] = 3437,
-								["Bonespeaker Cleaver"] = 837387,
+								["Undercity Guardian"] = 478326,
 							},
+							["serial"] = "Player-60-0AA1A2F9",
 							["pets"] = {
 								"Bloodstalker <Shhbbyisok>", -- [1]
 							},
-							["on_hold"] = false,
-							["classe"] = "DEATHKNIGHT",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 824184.004822,
 							["colocacao"] = 1,
 							["friendlyfire"] = {
 							},
-							["dps_started"] = false,
-							["end_time"] = 1473487333,
-							["friendlyfire_total"] = 0,
+							["classe"] = "DEATHKNIGHT",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 469840.00369,
 							["spec"] = 250,
+							["dps_started"] = false,
+							["end_time"] = 1473527839,
+							["on_hold"] = false,
+							["last_event"] = 1473527838,
 							["nome"] = "Shhbbyisok",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 22886,
+										["c_dmg"] = 26518,
 										["g_amt"] = 0,
-										["n_max"] = 11658,
+										["n_max"] = 13045,
 										["targets"] = {
-											["Bonespeaker Cleaver"] = 90468,
+											["Undercity Guardian"] = 64927,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 67582,
-										["n_min"] = 10633,
+										["n_dmg"] = 38409,
+										["n_min"] = 12546,
 										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 90468,
-										["c_max"] = 22886,
+										["counter"] = 4,
+										["total"] = 64927,
+										["c_max"] = 26518,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 26518,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 6,
+										["n_amt"] = 3,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 22886,
 									}, -- [1]
 									[52212] = {
 										["c_amt"] = 3,
 										["b_amt"] = 0,
-										["c_dmg"] = 20620,
+										["c_dmg"] = 23607,
 										["g_amt"] = 0,
-										["n_max"] = 3437,
+										["n_max"] = 3934,
 										["targets"] = {
-											["Cairn Rat"] = 3437,
-											["Bonespeaker Cleaver"] = 65290,
+											["Undercity Guardian"] = 59013,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 48107,
-										["n_min"] = 3436,
+										["n_dmg"] = 35406,
+										["n_min"] = 3934,
 										["g_dmg"] = 0,
-										["counter"] = 17,
-										["total"] = 68727,
-										["c_max"] = 6874,
+										["counter"] = 12,
+										["total"] = 59013,
+										["c_max"] = 7869,
 										["id"] = 52212,
 										["r_dmg"] = 0,
 										["spellschool"] = 32,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 7869,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 14,
+										["n_amt"] = 9,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 6873,
 									},
 									[206930] = {
-										["c_amt"] = 1,
+										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["c_dmg"] = 41346,
+										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 22341,
+										["n_max"] = 23898,
 										["targets"] = {
-											["Bonespeaker Cleaver"] = 85546,
+											["Undercity Guardian"] = 71161,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 44200,
-										["n_min"] = 21859,
+										["n_dmg"] = 71161,
+										["n_min"] = 23589,
 										["g_dmg"] = 0,
 										["counter"] = 3,
-										["total"] = 85546,
-										["c_max"] = 41346,
+										["total"] = 71161,
+										["c_max"] = 0,
 										["id"] = 206930,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 2,
+										["n_amt"] = 3,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 41346,
 									},
 									[195292] = {
-										["c_amt"] = 1,
+										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["c_dmg"] = 24311,
+										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 9299,
+										["n_max"] = 13152,
 										["targets"] = {
-											["Bonespeaker Cleaver"] = 33610,
+											["Undercity Guardian"] = 13152,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 9299,
-										["n_min"] = 9299,
+										["n_dmg"] = 13152,
+										["n_min"] = 13152,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 33610,
-										["c_max"] = 24311,
+										["counter"] = 1,
+										["total"] = 13152,
+										["c_max"] = 0,
 										["id"] = 195292,
 										["r_dmg"] = 0,
 										["spellschool"] = 32,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 24311,
 									},
 									[55078] = {
-										["c_amt"] = 3,
+										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 29403,
+										["c_dmg"] = 11987,
 										["g_amt"] = 0,
-										["n_max"] = 5445,
+										["n_max"] = 5993,
 										["targets"] = {
-											["Bonespeaker Cleaver"] = 45738,
+											["Undercity Guardian"] = 23973,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 16335,
-										["n_min"] = 5445,
+										["n_dmg"] = 11986,
+										["n_min"] = 5993,
 										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 45738,
-										["c_max"] = 10890,
+										["counter"] = 3,
+										["total"] = 23973,
+										["c_max"] = 11987,
 										["id"] = 55078,
 										["r_dmg"] = 0,
 										["spellschool"] = 32,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 11987,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[49998] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 65466,
+										["targets"] = {
+											["Undercity Guardian"] = 193101,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 193101,
+										["n_min"] = 62692,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 193101,
+										["c_max"] = 0,
+										["id"] = 49998,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 7623,
 									},
 									[195182] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 40471,
+										["n_max"] = 44513,
 										["targets"] = {
-											["Bonespeaker Cleaver"] = 116491,
+											["Undercity Guardian"] = 44513,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 116491,
-										["n_min"] = 37565,
+										["n_dmg"] = 44513,
+										["n_min"] = 44513,
 										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 116491,
+										["counter"] = 1,
+										["total"] = 44513,
 										["c_max"] = 0,
 										["id"] = 195182,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["r_amt"] = 0,
 										["c_min"] = 0,
-									},
-									[49998] = {
-										["c_amt"] = 3,
-										["b_amt"] = 0,
-										["c_dmg"] = 327508,
-										["g_amt"] = 0,
-										["n_max"] = 56096,
-										["targets"] = {
-											["Bonespeaker Cleaver"] = 383604,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 56096,
-										["n_min"] = 56096,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 383604,
-										["c_max"] = 111325,
-										["id"] = 49998,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 106975,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["total"] = 840824.004822,
-							["serial"] = "Player-60-0AA1A2F9",
-							["last_dps"] = 40039.2383248571,
+							["friendlyfire_total"] = 0,
+							["last_dps"] = 43484.1821536364,
 							["custom"] = 0,
-							["last_event"] = 1473487332,
-							["damage_taken"] = 106576.004822,
-							["start_time"] = 1473487311,
-							["delay"] = 0,
 							["tipo"] = 1,
+							["damage_taken"] = 103265.00369,
+							["start_time"] = 1473527828,
+							["delay"] = 0,
+							["total"] = 478326.00369,
 						}, -- [1]
 						{
 							["flag_original"] = 8465,
-							["serial"] = "Creature-0-3887-1220-10085-97930-000053A1D3",
 							["damage_from"] = {
-								["Bonespeaker Cleaver"] = true,
 							},
 							["targets"] = {
-								["Bonespeaker Cleaver"] = 16640,
+								["Undercity Guardian"] = 8486,
 							},
 							["pets"] = {
 							},
@@ -2107,139 +1756,139 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 16640.008264,
-							["dps_started"] = false,
-							["total"] = 16640.008264,
+							["total_without_pet"] = 8486.005836,
 							["classe"] = "PET",
+							["dps_started"] = false,
+							["total"] = 8486.005836,
+							["serial"] = "Creature-0-3133-1617-24962-97930-000054400A",
 							["ownerName"] = "Shhbbyisok",
 							["nome"] = "Bloodstalker <Shhbbyisok>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 1650,
+										["n_max"] = 1743,
 										["targets"] = {
-											["Bonespeaker Cleaver"] = 16640,
+											["Undercity Guardian"] = 8486,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 16640,
-										["n_min"] = 1411,
+										["n_dmg"] = 8486,
+										["n_min"] = 1653,
 										["g_dmg"] = 0,
-										["counter"] = 11,
-										["total"] = 16640,
+										["counter"] = 5,
+										["total"] = 8486,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 11,
+										["n_amt"] = 5,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["end_time"] = 1473487333,
+							["end_time"] = 1473527839,
+							["tipo"] = 1,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 44423.008264,
-							["start_time"] = 1473487316,
+							["last_event"] = 1473527832,
+							["damage_taken"] = 0.005836,
+							["start_time"] = 1473527828,
 							["delay"] = 0,
-							["last_event"] = 1473487326,
+							["friendlyfire"] = {
+							},
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 203,
 					["tipo"] = 3,
+					["combatId"] = 7,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorb"] = 0.004587,
+							["totalabsorb"] = 0.001393,
 							["last_hps"] = 0,
 							["healing_from"] = {
 								["Shhbbyisok"] = true,
 							},
 							["targets"] = {
-								["Shhbbyisok"] = 316513,
+								["Shhbbyisok"] = 307851,
 							},
-							["last_event"] = 1473487332,
+							["serial"] = "Player-60-0AA1A2F9",
 							["pets"] = {
 							},
-							["totalover_without_pet"] = 0.004587,
+							["iniciar_hps"] = false,
 							["targets_overheal"] = {
-								["Shhbbyisok"] = 798457,
+								["Shhbbyisok"] = 409794,
 							},
 							["heal_enemy_amt"] = 0,
-							["totalover"] = 798457.004587,
-							["total_without_pet"] = 108163.004587,
-							["iniciar_hps"] = false,
+							["totalover"] = 409794.001393,
+							["total_without_pet"] = 103265.001393,
+							["totalover_without_pet"] = 0.001393,
 							["classe"] = "DEATHKNIGHT",
 							["fight_component"] = true,
-							["total"] = 108163.004587,
-							["serial"] = "Player-60-0AA1A2F9",
-							["healing_taken"] = 108163.004587,
+							["end_time"] = 1473527839,
+							["healing_taken"] = 103265.001393,
+							["total"] = 103265.001393,
 							["nome"] = "Shhbbyisok",
 							["spec"] = 250,
 							["grupo"] = true,
-							["end_time"] = 1473487333,
+							["tipo"] = 2,
 							["heal_enemy"] = {
 							},
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[77535] = {
 										["c_amt"] = 3,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
-											["Shhbbyisok"] = 200952,
+											["Shhbbyisok"] = 15028,
 										},
-										["n_max"] = 15454,
+										["n_max"] = 18427,
 										["targets"] = {
-											["Shhbbyisok"] = -185498,
+											["Shhbbyisok"] = 82030,
 										},
-										["n_min"] = 15454,
-										["counter"] = 4,
-										["overheal"] = 200952,
-										["total"] = -185498,
+										["n_min"] = 14034,
+										["counter"] = 9,
+										["overheal"] = 15028,
+										["total"] = 82030,
 										["c_max"] = 0,
 										["id"] = 77535,
 										["targets_absorbs"] = {
 										},
 										["m_crit"] = 0,
-										["c_curado"] = -200952,
+										["c_curado"] = -15028,
 										["m_amt"] = 0,
-										["c_min"] = -92437,
-										["n_curado"] = 15454,
+										["c_min"] = -15026,
+										["n_curado"] = 97058,
+										["n_amt"] = 6,
 										["m_healed"] = 0,
-										["n_amt"] = 1,
 										["absorbed"] = 0,
 									},
 									[45470] = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
-											["Shhbbyisok"] = 317512,
+											["Shhbbyisok"] = 308589,
 										},
-										["n_max"] = 32222,
+										["n_max"] = 2653,
 										["targets"] = {
-											["Shhbbyisok"] = 47542,
+											["Shhbbyisok"] = 5215,
 										},
-										["n_min"] = 0,
-										["counter"] = 4,
-										["overheal"] = 317512,
-										["total"] = 47542,
+										["n_min"] = 2653,
+										["counter"] = 3,
+										["overheal"] = 308589,
+										["total"] = 5215,
 										["c_max"] = 0,
 										["id"] = 45470,
 										["targets_absorbs"] = {
@@ -2248,24 +1897,77 @@ _detalhes_database = {
 										["c_curado"] = 0,
 										["m_amt"] = 0,
 										["c_min"] = 0,
-										["n_curado"] = 47542,
+										["n_curado"] = 5215,
+										["n_amt"] = 3,
 										["m_healed"] = 0,
-										["n_amt"] = 4,
 										["absorbed"] = 0,
 									},
-									[55078] = {
+									[195181] = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
-											["Shhbbyisok"] = 45738,
+										},
+										["n_max"] = 505,
+										["targets"] = {
+											["Shhbbyisok"] = 992,
+										},
+										["n_min"] = 487,
+										["counter"] = 2,
+										["overheal"] = 0,
+										["total"] = 992,
+										["c_max"] = 0,
+										["id"] = 195181,
+										["targets_absorbs"] = {
+										},
+										["m_crit"] = 0,
+										["c_curado"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 992,
+										["n_amt"] = 2,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+									[53365] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Shhbbyisok"] = 62204,
 										},
 										["n_max"] = 0,
 										["targets"] = {
 											["Shhbbyisok"] = 0,
 										},
 										["n_min"] = 0,
-										["counter"] = 6,
-										["overheal"] = 45738,
+										["counter"] = 1,
+										["overheal"] = 62204,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 53365,
+										["targets_absorbs"] = {
+										},
+										["m_crit"] = 0,
+										["c_curado"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 0,
+										["n_amt"] = 1,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+									[55078] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Shhbbyisok"] = 23973,
+										},
+										["n_max"] = 0,
+										["targets"] = {
+											["Shhbbyisok"] = 0,
+										},
+										["n_min"] = 0,
+										["counter"] = 3,
+										["overheal"] = 23973,
 										["total"] = 0,
 										["c_max"] = 0,
 										["id"] = 55078,
@@ -2276,878 +1978,17 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["c_min"] = 0,
 										["n_curado"] = 0,
-										["m_healed"] = 0,
-										["n_amt"] = 6,
-										["absorbed"] = 0,
-									},
-									[53365] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Shhbbyisok"] = 234255,
-										},
-										["n_max"] = 16374,
-										["targets"] = {
-											["Shhbbyisok"] = 30589,
-										},
-										["n_min"] = 0,
-										["counter"] = 5,
-										["overheal"] = 234255,
-										["total"] = 30589,
-										["c_max"] = 0,
-										["id"] = 53365,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 30589,
-										["m_healed"] = 0,
-										["n_amt"] = 5,
-										["absorbed"] = 0,
-									},
-									[195181] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 6137,
-										["targets"] = {
-											["Shhbbyisok"] = 14578,
-										},
-										["n_min"] = 2569,
-										["counter"] = 4,
-										["overheal"] = 0,
-										["total"] = 14578,
-										["c_max"] = 0,
-										["id"] = 195181,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 14578,
-										["m_healed"] = 0,
-										["n_amt"] = 4,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["custom"] = 0,
-							["tipo"] = 2,
-							["on_hold"] = false,
-							["start_time"] = 1473487313,
-							["delay"] = 0,
-							["targets_absorbs"] = {
-							},
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["combatId"] = 203,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["resource"] = 0.005507,
-							["targets"] = {
-								["Shhbbyisok"] = 124,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 6,
-							["classe"] = "DEATHKNIGHT",
-							["fight_component"] = true,
-							["total"] = 124.005507,
-							["nome"] = "Shhbbyisok",
-							["spec"] = 250,
-							["grupo"] = true,
-							["tipo"] = 3,
-							["received"] = 124.005507,
-							["spells"] = {
-								["tipo"] = 7,
-								["_ActorTable"] = {
-									[195292] = {
-										["id"] = 195292,
-										["total"] = 10,
-										["targets"] = {
-											["Shhbbyisok"] = 10,
-										},
-										["counter"] = 1,
-									},
-									[210738] = {
-										["id"] = 210738,
-										["total"] = 9,
-										["targets"] = {
-											["Shhbbyisok"] = 9,
-										},
-										["counter"] = 3,
-									},
-									[195182] = {
-										["id"] = 195182,
-										["total"] = 60,
-										["targets"] = {
-											["Shhbbyisok"] = 60,
-										},
-										["counter"] = 3,
-									},
-									[206930] = {
-										["id"] = 206930,
-										["total"] = 45,
-										["targets"] = {
-											["Shhbbyisok"] = 45,
-										},
-										["counter"] = 3,
-									},
-								},
-							},
-							["serial"] = "Player-60-0AA1A2F9",
-							["last_event"] = 1473487331,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["combatId"] = 203,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[43265] = {
-										["uptime"] = 10,
-										["activedamt"] = 0,
-										["id"] = 43265,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[55078] = {
-										["uptime"] = 21,
-										["activedamt"] = 0,
-										["id"] = 55078,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[51399] = {
-										["uptime"] = 3,
-										["activedamt"] = 0,
-										["id"] = 51399,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[206930] = {
-										["uptime"] = 12,
-										["activedamt"] = 0,
-										["id"] = 206930,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 87,
-							["classe"] = "DEATHKNIGHT",
-							["interrupt_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[47528] = {
-										["id"] = 47528,
-										["interrompeu_oque"] = {
-											[197892] = 1,
-										},
-										["targets"] = {
-											["Bonespeaker Cleaver"] = 1,
-										},
-										["counter"] = 1,
-									},
-								},
-							},
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[219788] = {
-										["uptime"] = 21,
-										["activedamt"] = 2,
-										["id"] = 219788,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[81141] = {
-										["uptime"] = 3,
-										["activedamt"] = 2,
-										["id"] = 81141,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[77535] = {
-										["uptime"] = 11,
-										["activedamt"] = 1,
-										["id"] = 77535,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[195181] = {
-										["uptime"] = 22,
-										["activedamt"] = 1,
-										["id"] = 195181,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[53365] = {
-										["uptime"] = 20,
-										["activedamt"] = 2,
-										["id"] = 53365,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[188290] = {
-										["uptime"] = 10,
-										["activedamt"] = 1,
-										["id"] = 188290,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-								},
-							},
-							["interrompeu_oque"] = {
-								[197892] = 1,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 46,
-							["interrupt_targets"] = {
-								["Bonespeaker Cleaver"] = 1,
-							},
-							["buff_uptime_targets"] = {
-							},
-							["spec"] = 250,
-							["grupo"] = true,
-							["spell_cast"] = {
-								[47528] = 1,
-								[206930] = 3,
-								[188290] = 2,
-								[43265] = 1,
-								[195292] = 1,
-								[49576] = 1,
-								[195182] = 3,
-								[49998] = 4,
-							},
-							["interrupt"] = 1.008416,
-							["debuff_uptime_targets"] = {
-							},
-							["last_event"] = 1473487333,
-							["nome"] = "Shhbbyisok",
-							["pets"] = {
-							},
-							["serial"] = "Player-60-0AA1A2F9",
-							["tipo"] = 4,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 203,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Shhbbyisok"] = true,
-				},
-				["last_events_tables"] = {
-				},
-				["enemy"] = "Bonespeaker Cleaver",
-				["combat_counter"] = 483,
-				["playing_solo"] = true,
-				["totals"] = {
-					840823.966184, -- [1]
-					108162.984016, -- [2]
-					{
-						0, -- [1]
-						[0] = -0.005308,
-						[6] = 124,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 1,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Shhbbyisok"] = 108163.004587,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Shhbbyisok"] = 840824.004822,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 1921338.142,
-				["combat_id"] = 203,
-				["instance_type"] = "none",
-				["totals_grupo"] = {
-					824184, -- [1]
-					-92789, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						[6] = 124,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 1,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags"] = {
-					["Cairn Rat"] = 1,
-					["Bonespeaker Cleaver"] = 2,
-				},
-				["data_fim"] = "02:02:14",
-				["data_inicio"] = "02:01:52",
-				["CombatSkillCache"] = {
-				},
-				["PlayerLeechTrinket"] = {
-				},
-				["start_time"] = 1921315.751,
-				["contra"] = "Bonespeaker Cleaver",
-				["TimeData"] = {
-				},
-			}, -- [3]
-			{
-				{
-					["combatId"] = 202,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["damage_from"] = {
-								["Bonespeaker Mystic"] = true,
-							},
-							["targets"] = {
-								["Bonespeaker Mystic"] = 540125,
-							},
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["classe"] = "DEATHKNIGHT",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 540125.004083,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1473487302,
-							["friendlyfire_total"] = 0,
-							["spec"] = 250,
-							["nome"] = "Shhbbyisok",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 23033,
-										["g_amt"] = 0,
-										["n_max"] = 11015,
-										["targets"] = {
-											["Bonespeaker Mystic"] = 54908,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 31875,
-										["n_min"] = 9907,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 54908,
-										["c_max"] = 23033,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
 										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 23033,
-									}, -- [1]
-									[52212] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 4811,
-										["g_amt"] = 0,
-										["n_max"] = 3437,
-										["targets"] = {
-											["Bonespeaker Mystic"] = 39179,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 34368,
-										["n_min"] = 3436,
-										["g_dmg"] = 0,
-										["counter"] = 11,
-										["total"] = 39179,
-										["c_max"] = 4811,
-										["id"] = 52212,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 10,
-										["r_amt"] = 0,
-										["c_min"] = 4811,
-									},
-									[206930] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 28974,
-										["g_amt"] = 0,
-										["n_max"] = 22029,
-										["targets"] = {
-											["Bonespeaker Mystic"] = 66415,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 37441,
-										["n_min"] = 15412,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 66415,
-										["c_max"] = 28974,
-										["id"] = 206930,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 28974,
-									},
-									[205223] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 63001,
-										["targets"] = {
-											["Bonespeaker Mystic"] = 63001,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 63001,
-										["n_min"] = 63001,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 63001,
-										["c_max"] = 0,
-										["id"] = 205223,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[195292] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 9933,
-										["targets"] = {
-											["Bonespeaker Mystic"] = 9933,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 9933,
-										["n_min"] = 9933,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 9933,
-										["c_max"] = 0,
-										["id"] = 195292,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[55078] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 5445,
-										["targets"] = {
-											["Bonespeaker Mystic"] = 32670,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 32670,
-										["n_min"] = 5445,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 32670,
-										["c_max"] = 0,
-										["id"] = 55078,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 6,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[195182] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 39765,
-										["targets"] = {
-											["Bonespeaker Mystic"] = 116223,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 116223,
-										["n_min"] = 38123,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 116223,
-										["c_max"] = 0,
-										["id"] = 195182,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[49998] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 105988,
-										["g_amt"] = 0,
-										["n_max"] = 51808,
-										["targets"] = {
-											["Bonespeaker Mystic"] = 157796,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 51808,
-										["n_min"] = 51808,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 157796,
-										["c_max"] = 105988,
-										["id"] = 49998,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 105988,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
 									},
 								},
-							},
-							["grupo"] = true,
-							["total"] = 540125.004083,
-							["serial"] = "Player-60-0AA1A2F9",
-							["last_dps"] = 27006.25020415,
-							["custom"] = 0,
-							["last_event"] = 1473487301,
-							["damage_taken"] = 102233.004083,
-							["start_time"] = 1473487282,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 202,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorb"] = 0.006637,
-							["last_hps"] = 0,
-							["healing_from"] = {
-								["Shhbbyisok"] = true,
-							},
-							["targets"] = {
-								["Shhbbyisok"] = 173938,
-							},
-							["last_event"] = 1473487300,
-							["pets"] = {
-							},
-							["totalover_without_pet"] = 0.006637,
-							["targets_overheal"] = {
-								["Shhbbyisok"] = 363707,
-							},
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 363707.006637,
-							["total_without_pet"] = 104634.006637,
-							["iniciar_hps"] = false,
-							["classe"] = "DEATHKNIGHT",
-							["fight_component"] = true,
-							["total"] = 104634.006637,
-							["serial"] = "Player-60-0AA1A2F9",
-							["healing_taken"] = 104634.006637,
-							["nome"] = "Shhbbyisok",
-							["spec"] = 250,
-							["grupo"] = true,
-							["end_time"] = 1473487302,
-							["heal_enemy"] = {
-							},
-							["spells"] = {
 								["tipo"] = 3,
-								["_ActorTable"] = {
-									[77535] = {
-										["c_amt"] = 1,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Shhbbyisok"] = 34924,
-										},
-										["n_max"] = 0,
-										["targets"] = {
-											["Shhbbyisok"] = -34924,
-										},
-										["n_min"] = 0,
-										["counter"] = 1,
-										["overheal"] = 34924,
-										["total"] = -34924,
-										["c_max"] = 0,
-										["id"] = 77535,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = -34924,
-										["m_amt"] = 0,
-										["c_min"] = -34924,
-										["n_curado"] = 0,
-										["m_healed"] = 0,
-										["n_amt"] = 0,
-										["absorbed"] = 0,
-									},
-									[45470] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Shhbbyisok"] = 143885,
-										},
-										["n_max"] = 30026,
-										["targets"] = {
-											["Shhbbyisok"] = 30026,
-										},
-										["n_min"] = 30026,
-										["counter"] = 2,
-										["overheal"] = 143885,
-										["total"] = 30026,
-										["c_max"] = 0,
-										["id"] = 45470,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 30026,
-										["m_healed"] = 0,
-										["n_amt"] = 2,
-										["absorbed"] = 0,
-									},
-									[205224] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Shhbbyisok"] = 64627,
-										},
-										["n_max"] = 0,
-										["targets"] = {
-											["Shhbbyisok"] = 0,
-										},
-										["n_min"] = 0,
-										["counter"] = 1,
-										["overheal"] = 64627,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 205224,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 0,
-										["m_healed"] = 0,
-										["n_amt"] = 1,
-										["absorbed"] = 0,
-									},
-									[55078] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Shhbbyisok"] = 10890,
-										},
-										["n_max"] = 5445,
-										["targets"] = {
-											["Shhbbyisok"] = 21780,
-										},
-										["n_min"] = 0,
-										["counter"] = 6,
-										["overheal"] = 10890,
-										["total"] = 21780,
-										["c_max"] = 0,
-										["id"] = 55078,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 21780,
-										["m_healed"] = 0,
-										["n_amt"] = 6,
-										["absorbed"] = 0,
-									},
-									[53365] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Shhbbyisok"] = 109381,
-										},
-										["n_max"] = 38161,
-										["targets"] = {
-											["Shhbbyisok"] = 38161,
-										},
-										["n_min"] = 0,
-										["counter"] = 3,
-										["overheal"] = 109381,
-										["total"] = 38161,
-										["c_max"] = 0,
-										["id"] = 53365,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 38161,
-										["m_healed"] = 0,
-										["n_amt"] = 3,
-										["absorbed"] = 0,
-									},
-									[195181] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 5743,
-										["targets"] = {
-											["Shhbbyisok"] = 14667,
-										},
-										["n_min"] = 1557,
-										["counter"] = 4,
-										["overheal"] = 0,
-										["total"] = 14667,
-										["c_max"] = 0,
-										["id"] = 195181,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 14667,
-										["m_healed"] = 0,
-										["n_amt"] = 4,
-										["absorbed"] = 0,
-									},
-								},
 							},
 							["custom"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 1473527838,
 							["on_hold"] = false,
-							["start_time"] = 1473487283,
+							["start_time"] = 1473527829,
 							["delay"] = 0,
 							["targets_absorbs"] = {
 							},
@@ -3155,37 +1996,24 @@ _detalhes_database = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 202,
 					["tipo"] = 7,
+					["combatId"] = 7,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["resource"] = 0.001043,
+							["resource"] = 0.007356,
 							["targets"] = {
-								["Shhbbyisok"] = 134,
+								["Shhbbyisok"] = 84,
 							},
 							["pets"] = {
 							},
 							["powertype"] = 6,
 							["classe"] = "DEATHKNIGHT",
 							["fight_component"] = true,
-							["total"] = 134.001043,
+							["total"] = 84.007356,
 							["nome"] = "Shhbbyisok",
-							["spec"] = 250,
-							["grupo"] = true,
-							["tipo"] = 3,
-							["received"] = 134.001043,
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
-									[206930] = {
-										["id"] = 206930,
-										["total"] = 45,
-										["targets"] = {
-											["Shhbbyisok"] = 45,
-										},
-										["counter"] = 3,
-									},
 									[43265] = {
 										["id"] = 43265,
 										["total"] = 10,
@@ -3193,22 +2021,6 @@ _detalhes_database = {
 											["Shhbbyisok"] = 10,
 										},
 										["counter"] = 1,
-									},
-									[195292] = {
-										["id"] = 195292,
-										["total"] = 10,
-										["targets"] = {
-											["Shhbbyisok"] = 10,
-										},
-										["counter"] = 1,
-									},
-									[195182] = {
-										["id"] = 195182,
-										["total"] = 60,
-										["targets"] = {
-											["Shhbbyisok"] = 60,
-										},
-										["counter"] = 3,
 									},
 									[210738] = {
 										["id"] = 210738,
@@ -3218,24 +2030,44 @@ _detalhes_database = {
 										},
 										["counter"] = 3,
 									},
+									[206930] = {
+										["id"] = 206930,
+										["total"] = 45,
+										["targets"] = {
+											["Shhbbyisok"] = 45,
+										},
+										["counter"] = 3,
+									},
+									[195182] = {
+										["id"] = 195182,
+										["total"] = 20,
+										["targets"] = {
+											["Shhbbyisok"] = 20,
+										},
+										["counter"] = 1,
+									},
 								},
+								["tipo"] = 7,
 							},
+							["grupo"] = true,
+							["tipo"] = 3,
+							["received"] = 84.007356,
+							["spec"] = 250,
 							["serial"] = "Player-60-0AA1A2F9",
-							["last_event"] = 1473487310,
+							["last_event"] = 1473527872,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 202,
 					["tipo"] = 9,
+					["combatId"] = 7,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[43265] = {
-										["uptime"] = 8,
+										["uptime"] = 9,
 										["activedamt"] = 1,
 										["id"] = 43265,
 										["actived"] = false,
@@ -3244,7 +2076,7 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 									[55078] = {
-										["uptime"] = 19,
+										["uptime"] = 10,
 										["activedamt"] = 0,
 										["id"] = 55078,
 										["actived"] = false,
@@ -3262,31 +2094,25 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 64,
+							["buff_uptime"] = 50,
 							["classe"] = "DEATHKNIGHT",
-							["interrupt_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[47528] = {
-										["id"] = 47528,
-										["interrompeu_oque"] = {
-											[195474] = 1,
-										},
-										["targets"] = {
-											["Bonespeaker Mystic"] = 1,
-										},
-										["counter"] = 1,
-									},
-								},
-							},
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
-									[219788] = {
-										["uptime"] = 13,
-										["activedamt"] = 2,
-										["id"] = 219788,
+									[77535] = {
+										["uptime"] = 9,
+										["activedamt"] = 3,
+										["id"] = 77535,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[81141] = {
+										["uptime"] = 0,
+										["activedamt"] = 1,
+										["id"] = 81141,
 										["actived"] = false,
 										["targets"] = {
 										},
@@ -3302,7 +2128,7 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 									[195181] = {
-										["uptime"] = 18,
+										["uptime"] = 11,
 										["activedamt"] = 1,
 										["id"] = 195181,
 										["actived"] = false,
@@ -3311,7 +2137,1503 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 									[53365] = {
-										["uptime"] = 19,
+										["uptime"] = 11,
+										["activedamt"] = 1,
+										["id"] = 53365,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[219788] = {
+										["uptime"] = 11,
+										["activedamt"] = 1,
+										["id"] = 219788,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 28,
+							["buff_uptime_targets"] = {
+							},
+							["spec"] = 250,
+							["grupo"] = true,
+							["spell_cast"] = {
+								[206930] = 3,
+								[188290] = 1,
+								[43265] = 1,
+								[49998] = 3,
+								[195182] = 1,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["tipo"] = 4,
+							["nome"] = "Shhbbyisok",
+							["pets"] = {
+							},
+							["serial"] = "Player-60-0AA1A2F9",
+							["last_event"] = 1473527839,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Shhbbyisok"] = true,
+				},
+				["last_events_tables"] = {
+				},
+				["enemy"] = "Undercity Guardian",
+				["combat_counter"] = 572,
+				["playing_solo"] = true,
+				["totals"] = {
+					478325.989066, -- [1]
+					103265, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						[6] = 84,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Shhbbyisok"] = 103265.001393,
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Shhbbyisok"] = 478326.00369,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 1961843.254,
+				["combat_id"] = 7,
+				["contra"] = "Undercity Guardian",
+				["instance_type"] = "scenario",
+				["hasSaved"] = true,
+				["frags"] = {
+					["Undercity Guardian"] = 1,
+				},
+				["data_fim"] = "13:17:19",
+				["data_inicio"] = "13:17:08",
+				["CombatSkillCache"] = {
+				},
+				["PlayerLeechTrinket"] = {
+				},
+				["start_time"] = 1961832.211,
+				["TimeData"] = {
+				},
+				["totals_grupo"] = {
+					469840, -- [1]
+					88237, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						[6] = 84,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+			}, -- [3]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 6,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["damage_from"] = {
+								["Undercity Guardian"] = true,
+							},
+							["targets"] = {
+								["Undercity Guardian"] = 556074,
+							},
+							["serial"] = "Player-60-0AA1A2F9",
+							["pets"] = {
+								"Bloodstalker <Shhbbyisok>", -- [1]
+							},
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["classe"] = "DEATHKNIGHT",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 549629.001246,
+							["spec"] = 250,
+							["dps_started"] = false,
+							["end_time"] = 1473527822,
+							["on_hold"] = false,
+							["last_event"] = 1473527821,
+							["nome"] = "Shhbbyisok",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 22851,
+										["g_amt"] = 0,
+										["n_max"] = 13047,
+										["targets"] = {
+											["Undercity Guardian"] = 70347,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 47496,
+										["n_min"] = 11147,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 70347,
+										["c_max"] = 22851,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 22851,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[52212] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 13686,
+										["g_amt"] = 0,
+										["n_max"] = 3934,
+										["targets"] = {
+											["Undercity Guardian"] = 50461,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 36775,
+										["n_min"] = 3421,
+										["g_dmg"] = 0,
+										["counter"] = 12,
+										["total"] = 50461,
+										["c_max"] = 6843,
+										["id"] = 52212,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 6843,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 10,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[50842] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 57858,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Undercity Guardian"] = 57858,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 57858,
+										["c_max"] = 57858,
+										["id"] = 50842,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 57858,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[206930] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 23157,
+										["targets"] = {
+											["Undercity Guardian"] = 45815,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 45815,
+										["n_min"] = 22658,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 45815,
+										["c_max"] = 0,
+										["id"] = 206930,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[55078] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 11987,
+										["g_amt"] = 0,
+										["n_max"] = 5212,
+										["targets"] = {
+											["Undercity Guardian"] = 27623,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 15636,
+										["n_min"] = 5212,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 27623,
+										["c_max"] = 11987,
+										["id"] = 55078,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 11987,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[49998] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 59387,
+										["targets"] = {
+											["Undercity Guardian"] = 171298,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 171298,
+										["n_min"] = 53989,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 171298,
+										["c_max"] = 0,
+										["id"] = 49998,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[195182] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 45931,
+										["targets"] = {
+											["Undercity Guardian"] = 126227,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 126227,
+										["n_min"] = 39275,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 126227,
+										["c_max"] = 0,
+										["id"] = 195182,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["last_dps"] = 39719.5715175714,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 164906.001246,
+							["start_time"] = 1473527808,
+							["delay"] = 0,
+							["total"] = 556074.001246,
+						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Undercity Guardian"] = 6445,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 6445.003025,
+							["classe"] = "PET",
+							["dps_started"] = false,
+							["total"] = 6445.003025,
+							["serial"] = "Creature-0-3133-1617-24962-97930-000054400A",
+							["ownerName"] = "Shhbbyisok",
+							["nome"] = "Bloodstalker <Shhbbyisok>",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 1694,
+										["targets"] = {
+											["Undercity Guardian"] = 6445,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 6445,
+										["n_min"] = 1512,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 6445,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+								["tipo"] = 2,
+							},
+							["end_time"] = 1473527822,
+							["tipo"] = 1,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1473527821,
+							["damage_taken"] = 0.003025,
+							["start_time"] = 1473527820,
+							["delay"] = 0,
+							["friendlyfire"] = {
+							},
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 6,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorb"] = 0.007357,
+							["last_hps"] = 0,
+							["healing_from"] = {
+								["Shhbbyisok"] = true,
+							},
+							["targets"] = {
+								["Shhbbyisok"] = 473780,
+							},
+							["serial"] = "Player-60-0AA1A2F9",
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["targets_overheal"] = {
+								["Shhbbyisok"] = 319300,
+							},
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 319300.007357,
+							["total_without_pet"] = 164906.007357,
+							["totalover_without_pet"] = 0.007357,
+							["classe"] = "DEATHKNIGHT",
+							["fight_component"] = true,
+							["end_time"] = 1473527822,
+							["healing_taken"] = 164906.007357,
+							["total"] = 164906.007357,
+							["nome"] = "Shhbbyisok",
+							["spec"] = 250,
+							["grupo"] = true,
+							["tipo"] = 2,
+							["heal_enemy"] = {
+							},
+							["spells"] = {
+								["_ActorTable"] = {
+									[77535] = {
+										["c_amt"] = 2,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Shhbbyisok"] = 2,
+										},
+										["n_max"] = 15726,
+										["targets"] = {
+											["Shhbbyisok"] = 64888,
+										},
+										["n_min"] = 1808,
+										["counter"] = 8,
+										["overheal"] = 2,
+										["total"] = 64888,
+										["c_max"] = 0,
+										["id"] = 77535,
+										["targets_absorbs"] = {
+										},
+										["m_crit"] = 0,
+										["c_curado"] = -2,
+										["m_amt"] = 0,
+										["c_min"] = -1,
+										["n_curado"] = 64890,
+										["n_amt"] = 6,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+									[45470] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Shhbbyisok"] = 263701,
+										},
+										["n_max"] = 38281,
+										["targets"] = {
+											["Shhbbyisok"] = 51897,
+										},
+										["n_min"] = 4406,
+										["counter"] = 3,
+										["overheal"] = 263701,
+										["total"] = 51897,
+										["c_max"] = 0,
+										["id"] = 45470,
+										["targets_absorbs"] = {
+										},
+										["m_crit"] = 0,
+										["c_curado"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 51897,
+										["n_amt"] = 3,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+									[55078] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Shhbbyisok"] = 10424,
+										},
+										["n_max"] = 11987,
+										["targets"] = {
+											["Shhbbyisok"] = 17199,
+										},
+										["n_min"] = 11987,
+										["counter"] = 4,
+										["overheal"] = 10424,
+										["total"] = 17199,
+										["c_max"] = 0,
+										["id"] = 55078,
+										["targets_absorbs"] = {
+										},
+										["m_crit"] = 0,
+										["c_curado"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 17199,
+										["n_amt"] = 4,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+									[53365] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Shhbbyisok"] = 45173,
+										},
+										["n_max"] = 14921,
+										["targets"] = {
+											["Shhbbyisok"] = 14921,
+										},
+										["n_min"] = 14921,
+										["counter"] = 1,
+										["overheal"] = 45173,
+										["total"] = 14921,
+										["c_max"] = 0,
+										["id"] = 53365,
+										["targets_absorbs"] = {
+										},
+										["m_crit"] = 0,
+										["c_curado"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 14921,
+										["n_amt"] = 1,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+									[195181] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 3122,
+										["targets"] = {
+											["Shhbbyisok"] = 15999,
+										},
+										["n_min"] = 2124,
+										["counter"] = 6,
+										["overheal"] = 0,
+										["total"] = 15999,
+										["c_max"] = 0,
+										["id"] = 195181,
+										["targets_absorbs"] = {
+										},
+										["m_crit"] = 0,
+										["c_curado"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 15999,
+										["n_amt"] = 6,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["custom"] = 0,
+							["last_event"] = 1473527821,
+							["on_hold"] = false,
+							["start_time"] = 1473527811,
+							["delay"] = 0,
+							["targets_absorbs"] = {
+							},
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 6,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 0.002884,
+							["targets"] = {
+								["Shhbbyisok"] = 116,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 6,
+							["classe"] = "DEATHKNIGHT",
+							["fight_component"] = true,
+							["total"] = 116.002884,
+							["nome"] = "Shhbbyisok",
+							["spells"] = {
+								["_ActorTable"] = {
+									[206930] = {
+										["id"] = 206930,
+										["total"] = 30,
+										["targets"] = {
+											["Shhbbyisok"] = 30,
+										},
+										["counter"] = 2,
+									},
+									[43265] = {
+										["id"] = 43265,
+										["total"] = 10,
+										["targets"] = {
+											["Shhbbyisok"] = 10,
+										},
+										["counter"] = 1,
+									},
+									[195292] = {
+										["id"] = 195292,
+										["total"] = 10,
+										["targets"] = {
+											["Shhbbyisok"] = 10,
+										},
+										["counter"] = 1,
+									},
+									[195182] = {
+										["id"] = 195182,
+										["total"] = 60,
+										["targets"] = {
+											["Shhbbyisok"] = 60,
+										},
+										["counter"] = 3,
+									},
+									[210738] = {
+										["id"] = 210738,
+										["total"] = 6,
+										["targets"] = {
+											["Shhbbyisok"] = 6,
+										},
+										["counter"] = 2,
+									},
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["tipo"] = 3,
+							["received"] = 116.002884,
+							["spec"] = 250,
+							["serial"] = "Player-60-0AA1A2F9",
+							["last_event"] = 1473527827,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 6,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[43265] = {
+										["uptime"] = 8,
+										["activedamt"] = 1,
+										["id"] = 43265,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[55078] = {
+										["uptime"] = 12,
+										["activedamt"] = 0,
+										["id"] = 55078,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[206930] = {
+										["uptime"] = 6,
+										["activedamt"] = 0,
+										["id"] = 206930,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime"] = 45,
+							["classe"] = "DEATHKNIGHT",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[77535] = {
+										["uptime"] = 6,
+										["activedamt"] = 3,
+										["id"] = 77535,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[188290] = {
+										["uptime"] = 8,
+										["activedamt"] = 1,
+										["id"] = 188290,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[195181] = {
+										["uptime"] = 14,
+										["activedamt"] = 1,
+										["id"] = 195181,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[53365] = {
+										["uptime"] = 3,
+										["activedamt"] = 1,
+										["id"] = 53365,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[219788] = {
+										["uptime"] = 14,
+										["activedamt"] = 1,
+										["id"] = 219788,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 26,
+							["buff_uptime_targets"] = {
+							},
+							["spec"] = 250,
+							["grupo"] = true,
+							["spell_cast"] = {
+								[50842] = 1,
+								[188290] = 1,
+								[43265] = 1,
+								[206930] = 2,
+								[195182] = 3,
+								[49998] = 3,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["tipo"] = 4,
+							["nome"] = "Shhbbyisok",
+							["pets"] = {
+							},
+							["serial"] = "Player-60-0AA1A2F9",
+							["last_event"] = 1473527822,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 6,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Shhbbyisok"] = true,
+				},
+				["last_events_tables"] = {
+				},
+				["enemy"] = "Undercity Guardian",
+				["combat_counter"] = 571,
+				["playing_solo"] = true,
+				["totals"] = {
+					556073.991553, -- [1]
+					164906, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						[6] = 116,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Shhbbyisok"] = 164906.007357,
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Shhbbyisok"] = 556074.001246,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 1961827.056,
+				["combat_id"] = 6,
+				["contra"] = "Undercity Guardian",
+				["instance_type"] = "scenario",
+				["hasSaved"] = true,
+				["frags"] = {
+					["Undercity Guardian"] = 1,
+				},
+				["data_fim"] = "13:17:03",
+				["data_inicio"] = "13:16:49",
+				["CombatSkillCache"] = {
+				},
+				["PlayerLeechTrinket"] = {
+				},
+				["start_time"] = 1961812.658,
+				["TimeData"] = {
+				},
+				["totals_grupo"] = {
+					549629, -- [1]
+					164904, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						[6] = 116,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+			}, -- [4]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 5,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["damage_from"] = {
+								["Undercity Guardian"] = true,
+							},
+							["targets"] = {
+								["Undercity Guardian"] = 531991,
+							},
+							["serial"] = "Player-60-0AA1A2F9",
+							["pets"] = {
+							},
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["classe"] = "DEATHKNIGHT",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 531991.001965,
+							["spec"] = 250,
+							["dps_started"] = false,
+							["end_time"] = 1473527799,
+							["on_hold"] = false,
+							["last_event"] = 1473527799,
+							["nome"] = "Shhbbyisok",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 4,
+										["b_amt"] = 0,
+										["c_dmg"] = 103936,
+										["g_amt"] = 0,
+										["n_max"] = 13237,
+										["targets"] = {
+											["Undercity Guardian"] = 129130,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 25194,
+										["n_min"] = 11957,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 129130,
+										["c_max"] = 26840,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 25027,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[52212] = {
+										["c_amt"] = 4,
+										["b_amt"] = 0,
+										["c_dmg"] = 31476,
+										["g_amt"] = 0,
+										["n_max"] = 3934,
+										["targets"] = {
+											["Undercity Guardian"] = 93394,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 61918,
+										["n_min"] = 3421,
+										["g_dmg"] = 0,
+										["counter"] = 20,
+										["total"] = 93394,
+										["c_max"] = 7869,
+										["id"] = 52212,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 7869,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 16,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[50842] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 33264,
+										["targets"] = {
+											["Undercity Guardian"] = 33264,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 33264,
+										["n_min"] = 33264,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 33264,
+										["c_max"] = 0,
+										["id"] = 50842,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[195182] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 47829,
+										["targets"] = {
+											["Undercity Guardian"] = 141878,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 141878,
+										["n_min"] = 46715,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 141878,
+										["c_max"] = 0,
+										["id"] = 195182,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[55078] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 5993,
+										["targets"] = {
+											["Undercity Guardian"] = 23972,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 23972,
+										["n_min"] = 5993,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 23972,
+										["c_max"] = 0,
+										["id"] = 55078,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[49998] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 61191,
+										["targets"] = {
+											["Undercity Guardian"] = 61191,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 61191,
+										["n_min"] = 61191,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 61191,
+										["c_max"] = 0,
+										["id"] = 49998,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[206930] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 25444,
+										["targets"] = {
+											["Undercity Guardian"] = 49162,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 49162,
+										["n_min"] = 23718,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 49162,
+										["c_max"] = 0,
+										["id"] = 206930,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["last_dps"] = 35466.0667976667,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 70642.001965,
+							["start_time"] = 1473527784,
+							["delay"] = 0,
+							["total"] = 531991.001965,
+						}, -- [1]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 5,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorb"] = 0.00697,
+							["last_hps"] = 0,
+							["healing_from"] = {
+								["Shhbbyisok"] = true,
+							},
+							["targets"] = {
+								["Shhbbyisok"] = 194257,
+							},
+							["serial"] = "Player-60-0AA1A2F9",
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["targets_overheal"] = {
+								["Shhbbyisok"] = 143068,
+							},
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 143068.00697,
+							["total_without_pet"] = 69169.00697,
+							["totalover_without_pet"] = 0.00697,
+							["classe"] = "DEATHKNIGHT",
+							["fight_component"] = true,
+							["end_time"] = 1473527799,
+							["healing_taken"] = 69169.00697,
+							["total"] = 69169.00697,
+							["nome"] = "Shhbbyisok",
+							["spec"] = 250,
+							["grupo"] = true,
+							["tipo"] = 2,
+							["heal_enemy"] = {
+							},
+							["spells"] = {
+								["_ActorTable"] = {
+									[77535] = {
+										["c_amt"] = 1,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Shhbbyisok"] = 1,
+										},
+										["n_max"] = 18279,
+										["targets"] = {
+											["Shhbbyisok"] = 30503,
+										},
+										["n_min"] = 12225,
+										["counter"] = 3,
+										["overheal"] = 1,
+										["total"] = 30503,
+										["c_max"] = 0,
+										["id"] = 77535,
+										["targets_absorbs"] = {
+										},
+										["m_crit"] = 0,
+										["c_curado"] = -1,
+										["m_amt"] = 0,
+										["c_min"] = -1,
+										["n_curado"] = 30504,
+										["n_amt"] = 2,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+									[45470] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Shhbbyisok"] = 83458,
+										},
+										["n_max"] = 15166,
+										["targets"] = {
+											["Shhbbyisok"] = 15166,
+										},
+										["n_min"] = 15166,
+										["counter"] = 1,
+										["overheal"] = 83458,
+										["total"] = 15166,
+										["c_max"] = 0,
+										["id"] = 45470,
+										["targets_absorbs"] = {
+										},
+										["m_crit"] = 0,
+										["c_curado"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 15166,
+										["n_amt"] = 1,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+									[55078] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Shhbbyisok"] = 21635,
+										},
+										["n_max"] = 2337,
+										["targets"] = {
+											["Shhbbyisok"] = 2337,
+										},
+										["n_min"] = 2337,
+										["counter"] = 4,
+										["overheal"] = 21635,
+										["total"] = 2337,
+										["c_max"] = 0,
+										["id"] = 55078,
+										["targets_absorbs"] = {
+										},
+										["m_crit"] = 0,
+										["c_curado"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 2337,
+										["n_amt"] = 4,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+									[53365] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Shhbbyisok"] = 37974,
+										},
+										["n_max"] = 14741,
+										["targets"] = {
+											["Shhbbyisok"] = 14741,
+										},
+										["n_min"] = 14741,
+										["counter"] = 1,
+										["overheal"] = 37974,
+										["total"] = 14741,
+										["c_max"] = 0,
+										["id"] = 53365,
+										["targets_absorbs"] = {
+										},
+										["m_crit"] = 0,
+										["c_curado"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 14741,
+										["n_amt"] = 1,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+									[195181] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 3088,
+										["targets"] = {
+											["Shhbbyisok"] = 6421,
+										},
+										["n_min"] = 445,
+										["counter"] = 3,
+										["overheal"] = 0,
+										["total"] = 6421,
+										["c_max"] = 0,
+										["id"] = 195181,
+										["targets_absorbs"] = {
+										},
+										["m_crit"] = 0,
+										["c_curado"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 6421,
+										["n_amt"] = 3,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["custom"] = 0,
+							["last_event"] = 1473527798,
+							["on_hold"] = false,
+							["start_time"] = 1473527785,
+							["delay"] = 0,
+							["targets_absorbs"] = {
+							},
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 5,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 0.005142,
+							["targets"] = {
+								["Shhbbyisok"] = 96,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 6,
+							["classe"] = "DEATHKNIGHT",
+							["fight_component"] = true,
+							["total"] = 96.005142,
+							["nome"] = "Shhbbyisok",
+							["spells"] = {
+								["_ActorTable"] = {
+									[210738] = {
+										["id"] = 210738,
+										["total"] = 6,
+										["targets"] = {
+											["Shhbbyisok"] = 6,
+										},
+										["counter"] = 2,
+									},
+									[195182] = {
+										["id"] = 195182,
+										["total"] = 60,
+										["targets"] = {
+											["Shhbbyisok"] = 60,
+										},
+										["counter"] = 3,
+									},
+									[206930] = {
+										["id"] = 206930,
+										["total"] = 30,
+										["targets"] = {
+											["Shhbbyisok"] = 30,
+										},
+										["counter"] = 2,
+									},
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["tipo"] = 3,
+							["received"] = 96.005142,
+							["spec"] = 250,
+							["serial"] = "Player-60-0AA1A2F9",
+							["last_event"] = 1473527798,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 5,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[43265] = {
+										["uptime"] = 5,
+										["activedamt"] = 0,
+										["id"] = 43265,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[55078] = {
+										["uptime"] = 13,
+										["activedamt"] = 0,
+										["id"] = 55078,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[206930] = {
+										["uptime"] = 9,
+										["activedamt"] = 0,
+										["id"] = 206930,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime"] = 58,
+							["classe"] = "DEATHKNIGHT",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[219788] = {
+										["uptime"] = 12,
+										["activedamt"] = 2,
+										["id"] = 219788,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[188290] = {
+										["uptime"] = 11,
+										["activedamt"] = 2,
+										["id"] = 188290,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[81141] = {
+										["uptime"] = 2,
+										["activedamt"] = 1,
+										["id"] = 81141,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[195181] = {
+										["uptime"] = 13,
+										["activedamt"] = 2,
+										["id"] = 195181,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[53365] = {
+										["uptime"] = 14,
 										["activedamt"] = 1,
 										["id"] = 53365,
 										["actived"] = false,
@@ -3329,43 +3651,36 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 								},
-							},
-							["interrompeu_oque"] = {
-								[195474] = 1,
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
-							["debuff_uptime"] = 36,
-							["interrupt_targets"] = {
-								["Bonespeaker Mystic"] = 1,
-							},
-							["debuff_uptime_targets"] = {
+							["debuff_uptime"] = 27,
+							["buff_uptime_targets"] = {
 							},
 							["spec"] = 250,
 							["grupo"] = true,
 							["spell_cast"] = {
-								[206930] = 3,
-								[188290] = 1,
+								[206930] = 2,
+								[188290] = 3,
 								[43265] = 1,
-								[205223] = 1,
-								[49998] = 2,
 								[195182] = 3,
-								[47528] = 1,
+								[49998] = 1,
+								[50842] = 1,
 							},
-							["interrupt"] = 1.00339,
-							["buff_uptime_targets"] = {
+							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1473487302,
+							["tipo"] = 4,
 							["nome"] = "Shhbbyisok",
 							["pets"] = {
 							},
 							["serial"] = "Player-60-0AA1A2F9",
-							["tipo"] = 4,
+							["last_event"] = 1473527799,
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 202,
 					["tipo"] = 2,
+					["combatId"] = 5,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -3374,25 +3689,25 @@ _detalhes_database = {
 				},
 				["last_events_tables"] = {
 				},
-				["enemy"] = "Bonespeaker Mystic",
-				["combat_counter"] = 482,
+				["enemy"] = "Undercity Guardian",
+				["combat_counter"] = 570,
 				["playing_solo"] = true,
 				["totals"] = {
-					540124.976277, -- [1]
-					104633.986732, -- [2]
+					531990.966269, -- [1]
+					69169, -- [2]
 					{
 						0, -- [1]
-						[0] = -0.003065,
-						[6] = 134,
+						[0] = 0,
+						[6] = 96,
 						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 1,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -3409,821 +3724,72 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
-							["Shhbbyisok"] = 104634.006637,
+							["Shhbbyisok"] = 69169.00697,
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
-							["Shhbbyisok"] = 540125.004083,
+							["Shhbbyisok"] = 531991.001965,
 						}, -- [1]
 					},
 				},
-				["end_time"] = 1921307.335,
-				["combat_id"] = 202,
-				["instance_type"] = "none",
-				["totals_grupo"] = {
-					540125, -- [1]
-					69710, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						[6] = 134,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 1,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
+				["end_time"] = 1961803.887,
+				["combat_id"] = 5,
+				["contra"] = "Undercity Guardian",
+				["instance_type"] = "scenario",
+				["hasSaved"] = true,
 				["frags"] = {
-					["Bonespeaker Mystic"] = 1,
+					["Undercity Guardian"] = 1,
 				},
-				["data_fim"] = "02:01:43",
-				["data_inicio"] = "02:01:23",
+				["data_fim"] = "13:16:40",
+				["data_inicio"] = "13:16:25",
 				["CombatSkillCache"] = {
 				},
 				["PlayerLeechTrinket"] = {
 				},
-				["start_time"] = 1921286.948,
-				["contra"] = "Bonespeaker Mystic",
+				["start_time"] = 1961788.918,
 				["TimeData"] = {
 				},
-			}, -- [4]
-			{
-				{
-					["combatId"] = 201,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["damage_from"] = {
-								["Ancient Boneservant"] = true,
-							},
-							["targets"] = {
-								["Ancient Boneservant"] = 408403,
-							},
-							["pets"] = {
-								"Bloodstalker <Shhbbyisok>", -- [1]
-							},
-							["on_hold"] = false,
-							["classe"] = "DEATHKNIGHT",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 402076.008992,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1473487124,
-							["friendlyfire_total"] = 0,
-							["spec"] = 250,
-							["nome"] = "Shhbbyisok",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 1,
-										["b_amt"] = 1,
-										["c_dmg"] = 22289,
-										["g_amt"] = 0,
-										["n_max"] = 11668,
-										["targets"] = {
-											["Ancient Boneservant"] = 62979,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 40690,
-										["n_min"] = 7853,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 62979,
-										["c_max"] = 22289,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 7853,
-										["n_amt"] = 4,
-										["r_amt"] = 0,
-										["c_min"] = 22289,
-									}, -- [1]
-									[52212] = {
-										["c_amt"] = 3,
-										["b_amt"] = 0,
-										["c_dmg"] = 20619,
-										["g_amt"] = 0,
-										["n_max"] = 3436,
-										["targets"] = {
-											["Ancient Boneservant"] = 65287,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 44668,
-										["n_min"] = 3436,
-										["g_dmg"] = 0,
-										["counter"] = 16,
-										["total"] = 65287,
-										["c_max"] = 6873,
-										["id"] = 52212,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 13,
-										["r_amt"] = 0,
-										["c_min"] = 6873,
-									},
-									[206930] = {
-										["c_amt"] = 0,
-										["b_amt"] = 1,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 15554,
-										["targets"] = {
-											["Ancient Boneservant"] = 15554,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 15554,
-										["n_min"] = 15554,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 15554,
-										["c_max"] = 0,
-										["id"] = 206930,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 15554,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[195292] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 19242,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Ancient Boneservant"] = 19242,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 19242,
-										["c_max"] = 19242,
-										["id"] = 195292,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 19242,
-									},
-									[55078] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 10890,
-										["g_amt"] = 0,
-										["n_max"] = 5445,
-										["targets"] = {
-											["Ancient Boneservant"] = 27225,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 16335,
-										["n_min"] = 5445,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 27225,
-										["c_max"] = 10890,
-										["id"] = 55078,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 10890,
-									},
-									[195182] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 40464,
-										["targets"] = {
-											["Ancient Boneservant"] = 118681,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 118681,
-										["n_min"] = 37986,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 118681,
-										["c_max"] = 0,
-										["id"] = 195182,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[49998] = {
-										["c_amt"] = 0,
-										["b_amt"] = 1,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 56164,
-										["targets"] = {
-											["Ancient Boneservant"] = 93108,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 93108,
-										["n_min"] = 36944,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 93108,
-										["c_max"] = 0,
-										["id"] = 49998,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 36944,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["total"] = 408403.008992,
-							["serial"] = "Player-60-0AA1A2F9",
-							["last_dps"] = 34033.5840826667,
-							["custom"] = 0,
-							["last_event"] = 1473487124,
-							["damage_taken"] = 36120.008992,
-							["start_time"] = 1473487112,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 8465,
-							["serial"] = "Creature-0-3887-1220-10085-97930-000053A111",
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Ancient Boneservant"] = 6327,
-							},
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 6327.008577,
-							["dps_started"] = false,
-							["total"] = 6327.008577,
-							["classe"] = "PET",
-							["ownerName"] = "Shhbbyisok",
-							["nome"] = "Bloodstalker <Shhbbyisok>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 1642,
-										["targets"] = {
-											["Ancient Boneservant"] = 6327,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 6327,
-										["n_min"] = 1469,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 6327,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 4,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["end_time"] = 1473487124,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.008577,
-							["start_time"] = 1473487121,
-							["delay"] = 0,
-							["last_event"] = 1473487123,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 201,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorb"] = 0.005392,
-							["last_hps"] = 0,
-							["healing_from"] = {
-								["Shhbbyisok"] = true,
-							},
-							["targets"] = {
-								["Shhbbyisok"] = 119873,
-							},
-							["last_event"] = 1473487124,
-							["pets"] = {
-							},
-							["totalover_without_pet"] = 0.005392,
-							["targets_overheal"] = {
-								["Shhbbyisok"] = 356935,
-							},
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 356935.005392,
-							["total_without_pet"] = 36600.005392,
-							["iniciar_hps"] = false,
-							["classe"] = "DEATHKNIGHT",
-							["fight_component"] = true,
-							["total"] = 36600.005392,
-							["serial"] = "Player-60-0AA1A2F9",
-							["healing_taken"] = 36600.005392,
-							["nome"] = "Shhbbyisok",
-							["spec"] = 250,
-							["grupo"] = true,
-							["end_time"] = 1473487124,
-							["heal_enemy"] = {
-							},
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[45470] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Shhbbyisok"] = 175711,
-										},
-										["n_max"] = 4465,
-										["targets"] = {
-											["Shhbbyisok"] = 4465,
-										},
-										["n_min"] = 0,
-										["counter"] = 2,
-										["overheal"] = 175711,
-										["total"] = 4465,
-										["c_max"] = 0,
-										["id"] = 45470,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 4465,
-										["m_healed"] = 0,
-										["n_amt"] = 2,
-										["absorbed"] = 0,
-									},
-									[55078] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Shhbbyisok"] = 21780,
-										},
-										["n_max"] = 5445,
-										["targets"] = {
-											["Shhbbyisok"] = 5445,
-										},
-										["n_min"] = 0,
-										["counter"] = 4,
-										["overheal"] = 21780,
-										["total"] = 5445,
-										["c_max"] = 0,
-										["id"] = 55078,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 5445,
-										["m_healed"] = 0,
-										["n_amt"] = 4,
-										["absorbed"] = 0,
-									},
-									[77535] = {
-										["c_amt"] = 1,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Shhbbyisok"] = 8234,
-										},
-										["n_max"] = 9713,
-										["targets"] = {
-											["Shhbbyisok"] = 18456,
-										},
-										["n_min"] = 8488,
-										["counter"] = 4,
-										["overheal"] = 8234,
-										["total"] = 18456,
-										["c_max"] = 0,
-										["id"] = 77535,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = -8234,
-										["m_amt"] = 0,
-										["c_min"] = -8234,
-										["n_curado"] = 26690,
-										["m_healed"] = 0,
-										["n_amt"] = 3,
-										["absorbed"] = 0,
-									},
-									[53365] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Shhbbyisok"] = 151210,
-										},
-										["n_max"] = 0,
-										["targets"] = {
-											["Shhbbyisok"] = 0,
-										},
-										["n_min"] = 0,
-										["counter"] = 3,
-										["overheal"] = 151210,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 53365,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 0,
-										["m_healed"] = 0,
-										["n_amt"] = 3,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["custom"] = 0,
-							["tipo"] = 2,
-							["on_hold"] = false,
-							["start_time"] = 1473487113,
-							["delay"] = 0,
-							["targets_absorbs"] = {
-							},
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["combatId"] = 201,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["resource"] = 0.002669,
-							["targets"] = {
-								["Shhbbyisok"] = 98,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 6,
-							["classe"] = "DEATHKNIGHT",
-							["fight_component"] = true,
-							["total"] = 98.002669,
-							["nome"] = "Shhbbyisok",
-							["spec"] = 250,
-							["grupo"] = true,
-							["tipo"] = 3,
-							["received"] = 98.002669,
-							["spells"] = {
-								["tipo"] = 7,
-								["_ActorTable"] = {
-									[206930] = {
-										["id"] = 206930,
-										["total"] = 15,
-										["targets"] = {
-											["Shhbbyisok"] = 15,
-										},
-										["counter"] = 1,
-									},
-									[43265] = {
-										["id"] = 43265,
-										["total"] = 10,
-										["targets"] = {
-											["Shhbbyisok"] = 10,
-										},
-										["counter"] = 1,
-									},
-									[195292] = {
-										["id"] = 195292,
-										["total"] = 10,
-										["targets"] = {
-											["Shhbbyisok"] = 10,
-										},
-										["counter"] = 1,
-									},
-									[195182] = {
-										["id"] = 195182,
-										["total"] = 60,
-										["targets"] = {
-											["Shhbbyisok"] = 60,
-										},
-										["counter"] = 3,
-									},
-									[210738] = {
-										["id"] = 210738,
-										["total"] = 3,
-										["targets"] = {
-											["Shhbbyisok"] = 3,
-										},
-										["counter"] = 1,
-									},
-								},
-							},
-							["serial"] = "Player-60-0AA1A2F9",
-							["last_event"] = 1473487281,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["combatId"] = 201,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[43265] = {
-										["uptime"] = 10,
-										["activedamt"] = 0,
-										["id"] = 43265,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[55078] = {
-										["uptime"] = 12,
-										["activedamt"] = 0,
-										["id"] = 55078,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[206930] = {
-										["uptime"] = 2,
-										["activedamt"] = 0,
-										["id"] = 206930,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 47,
-							["classe"] = "DEATHKNIGHT",
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[219788] = {
-										["uptime"] = 9,
-										["activedamt"] = 1,
-										["id"] = 219788,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[188290] = {
-										["uptime"] = 10,
-										["activedamt"] = 1,
-										["id"] = 188290,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[195181] = {
-										["uptime"] = 10,
-										["activedamt"] = 1,
-										["id"] = 195181,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[53365] = {
-										["uptime"] = 11,
-										["activedamt"] = 1,
-										["id"] = 53365,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[77535] = {
-										["uptime"] = 7,
-										["activedamt"] = 1,
-										["id"] = 77535,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-								},
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 24,
-							["debuff_uptime_targets"] = {
-							},
-							["spec"] = 250,
-							["grupo"] = true,
-							["spell_cast"] = {
-								[206930] = 1,
-								[188290] = 2,
-								[43265] = 1,
-								[195182] = 3,
-								[49998] = 2,
-							},
-							["buff_uptime_targets"] = {
-							},
-							["last_event"] = 1473487124,
-							["nome"] = "Shhbbyisok",
-							["pets"] = {
-							},
-							["serial"] = "Player-60-0AA1A2F9",
-							["tipo"] = 4,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 201,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Shhbbyisok"] = true,
-				},
-				["last_events_tables"] = {
-				},
-				["enemy"] = "Ancient Boneservant",
-				["combat_counter"] = 481,
-				["playing_solo"] = true,
-				["totals"] = {
-					408402.974446, -- [1]
-					36599.998793, -- [2]
-					{
-						0, -- [1]
-						[0] = -0.011347,
-						[6] = 98,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Shhbbyisok"] = 36600.005392,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Shhbbyisok"] = 408403.008992,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 1921129.176,
-				["combat_id"] = 201,
-				["instance_type"] = "none",
 				["totals_grupo"] = {
-					402076, -- [1]
-					28366, -- [2]
+					531991, -- [1]
+					69168, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
-						[6] = 98,
+						[6] = 96,
 						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
-				},
-				["frags"] = {
-					["Ancient Boneservant"] = 1,
-				},
-				["data_fim"] = "01:58:45",
-				["data_inicio"] = "01:58:33",
-				["CombatSkillCache"] = {
-				},
-				["PlayerLeechTrinket"] = {
-				},
-				["start_time"] = 1921116.947,
-				["contra"] = "Ancient Boneservant",
-				["TimeData"] = {
 				},
 			}, -- [5]
 		},
 	},
-	["combat_counter"] = 486,
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
+	["combat_counter"] = 576,
+	["cached_talents"] = {
+		["Player-60-0AA1A2F9"] = {
+			19166, -- [1]
+			21209, -- [2]
+			19218, -- [3]
+			19232, -- [4]
+			19228, -- [5]
+			19221, -- [6]
+			22014, -- [7]
+		},
 	},
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
@@ -4369,31 +3935,24 @@ _detalhes_database = {
 			["realm_lastamt"] = 0,
 		},
 	},
-	["last_version"] = "v7.0.3.2920",
-	["SoloTablesSaved"] = {
-		["LastSelected"] = "DETAILS_PLUGIN_DPS_TUNING",
-		["Mode"] = 1,
-	},
-	["cached_talents"] = {
-		["Player-60-0AA1A2F9"] = {
-			19166, -- [1]
-			21209, -- [2]
-			19218, -- [3]
-			19232, -- [4]
-			19228, -- [5]
-			19221, -- [6]
-			22014, -- [7]
-		},
-	},
-	["tabela_instancias"] = {
-	},
-	["combat_id"] = 205,
-	["savedStyles"] = {
-	},
 	["savedbuffs"] = {
 	},
 	["character_data"] = {
-		["logons"] = 22,
+		["logons"] = 26,
+	},
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
+	["tabela_instancias"] = {
+	},
+	["combat_id"] = 9,
+	["savedStyles"] = {
+	},
+	["last_instance_time"] = 1472059818,
+	["SoloTablesSaved"] = {
+		["LastSelected"] = "DETAILS_PLUGIN_DPS_TUNING",
+		["Mode"] = 1,
 	},
 	["announce_deaths"] = {
 		["enabled"] = false,
@@ -4468,7 +4027,7 @@ _detalhes_database = {
 			},
 		}, -- [2]
 	},
-	["last_instance_time"] = 1472059818,
+	["last_version"] = "v7.0.3.2920",
 	["announce_cooldowns"] = {
 		["ignored_cooldowns"] = {
 		},
@@ -4482,7 +4041,7 @@ _detalhes_database = {
 	},
 	["last_instance_id"] = 1554,
 	["cached_specs"] = {
-		["Player-60-0A6855F9"] = 73,
+		["Player-60-06E92262"] = 251,
 		["Player-60-0AA1A2F9"] = 250,
 	},
 }

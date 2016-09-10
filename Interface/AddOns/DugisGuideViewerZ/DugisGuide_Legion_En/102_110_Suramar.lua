@@ -109,7 +109,7 @@ A Do The Thing! |QID|42396| |N|(npc:107302) in {Sundered Shoals}, he wanders aro
 N (item:(item:137383) |QID|42396.1| |N|Find and collect (item:137383) from the ground (15.94,54.82)| |Z|1033 0|
 T Do The Thing! |QID|42396| |N|(npc:107302) in {Sundered Shoals}, he wanders around the area (15.89,55.00)| |Z|1033 0| |NPC|107302|
 A Mrgls of Endearment |QID|42688| |N|(npc:107302) in {Sundered Shoals}, he wanders around the area (15.89,55.00)| |Z|1033 0| |NPC|107302|
-K (npc:109803) |QID|42688.1| |N|Kill (npc:109803) and collect 4 ???? in {Sundered Shoals} (14.99,54.75)| |Z|1033 0| |NPC|109803|
+K (npc:109803) |QID|42688.1| |N|Kill (npc:109803) and collect 4 (item:107302) in {Sundered Shoals} (14.99,54.75)| |Z|1033 0| |NPC|109803|
 N (npc:107302) |QID|42688.2| |N|Speak to (npc:107302) to show the fine sands in {Sundered Shoals} (15.21,52.38)| |Z|1033 0| |NPC|107302|
 T Mrgls of Endearment |QID|42688| |N|(npc:107302) in {Sundered Shoals}, he wanders around the area (15.89,55.00)| |Z|1033 0| |NPC|107302|
 A A Mlrglrmg For Grlmrgl |QID|42728| |N|(npc:107302) in {Sundered Shoals}, he wanders around the area (15.89,55.00)| |Z|1033 0| |NPC|107302|
@@ -173,7 +173,7 @@ T Turtle Powered |QID|40368| |N|(npc:99788) in {Anora Hollow} (37.49,40.69) (40.
 A Something in the Water |QID|40348| |N|(npc:99788) in {Anora Hollow} (43.41,41.70)| |Z|1033 0| |NPC|99788|
 A Purge the Unclean |QID|40370| |N|(npc:99788) in {Anora Hollow} (43.41,41.70)| |Z|1033 0| |NPC|99788|
 K (npc:99859) |QID|40370.1| |N|Kill (npc:99859) to cleanse the Corruption in {Tel'anor} (44.16,41.70) (46.08,43.69) (47.38,44.05) (47.65,42.74) (48.50,39.29) (47.38,36.65)| |Z|1033 0| |NPC|99859|
-C Something in the Water |QID|99789| |QID|40348.1| |N|Kill 12 (npc:99789) in {Tel'anor} (47.38,36.65)| |Z|1033 0| |NPC|99789|
+C Something in the Water |QID|40348| |N|Kill 12 (npc:99789) in {Tel'anor} (47.38,36.65)| |Z|1033 0| |NPC|99789|
 
 T Something in the Water |QID|40348| |N|(npc:99788) in {Anora Hollow} (43.41,41.70)| |Z|1033 0| |NPC|99788|
 T Purge the Unclean |QID|40370| |N|(npc:99788) in {Anora Hollow} (43.41,41.70)| |Z|1033 0| |NPC|99788|
@@ -348,21 +348,21 @@ N 200 (cur:1155) |QID|43591.2| |N|Collect 200 (cur:1155)|
 T Leyline Feed: Ley Station Aethenar |QID|43591| |N|Leyline Feed in {Ley Station Aethenar} (48.83,49.43)| |Z|1033 38|
 
 R Lower Gardens |OID|40949| |N|Travel to {Lower Gardens} (25.65,20.52) (25.98,21.65) (26.37,23.95) (27.19,24.67) (27.83,20.92) (27.81,18.98)| |Z|1033 0|
-K (npc:101784) |QID|41030| |N|Kill (npc:101784) and find a (item:133675) to start a quest (27.81,18.98)| |Z|1033 0| |NPC|101784|
-A Sigil Reclamation |QID|41030| |N|Auto quest from (item:133675) (27.81,18.98)| |Z|1033 0|
+K (npc:101784) |QID|41030| |N|Kill (npc:101784) and find a (item:133675) to start a quest (27.81,18.98)| |L|133675| |Z|1033 0| |NPC|101784| |TID|40883|
+A Sigil Reclamation |QID|41030| |N|Auto quest from (item:133675) (27.81,18.98)| |Z|1033 0| |TID|40883|
 N (npc:102029) |QID|40883.1| |N|Speak to (npc:102029) to perform the rite (27.45,17.34)| |Z|1033 0|
 A Not Their Last Stand |QID|40949| |N|(npc:106095) in {Lower Gardens} (28.65,18.37) (29.69,18.63)| |Z|1033 0|
 
 N (npc:102031) |QID|40883.2| |N|Speak to (npc:102031) to perform the rite (30.79,17.91)| |Z|1033 0| |NPC|102031|
 N (npc:101780) |QID|40949.1| |N|Click on 5 (npc:101780) to send them away (29.97,18.22)| |Z|1033 0| |NPC|101780|
-N (item:133675) |QID|41030.1| |N|Collect 7 (item:133675) from enemies around this area (29.97,18.22)| |Z|1033 0| |NPC|101784|
-N (npc:102030) |QID|40883.3| |N|Go down the stairs and speak to (npc:102030) to perform the rite (32.25,18.00) (33.71,18.13)| |Z|1033 0| |NPC|102030|
+N (item:133675) |QID|41030.1| |N|Collect 7 (item:133675) from enemies around this area (29.97,18.22)| |Z|1033 0| |NPC|101784| |TID|40883|
+N (npc:102030) |QID|40883.3| |N|Speak to (npc:102030) to perform the rite (33.71,18.13)| |Z|1033 0| |NPC|102030|
 
 T Fate of the Guard |QID|40883| |N|(npc:101767) in {Moonfall Roost} (33.72,18.08)| |Z|1033 0| |NPC|101767|
-T Sigil Reclamation |QID|41030| |N|(npc:101767) in {Moonfall Roost} (33.72,18.08)| |Z|1033 0| |NPC|101767|
+T Sigil Reclamation |QID|41030| |N|(npc:101767) in {Moonfall Roost} (33.72,18.08)| |Z|1033 0| |NPC|101767| |TID|40883|
 T Not Their Last Stand |QID|40949| |N|(npc:106182) in {Moonfall Roost} (33.71,18.02)| |Z|1033 0| |NPC|106182|
 A Take Them in Claw |QID|40963| |N|(npc:101767) in {Moonfall Roost} (33.72,18.09)| |Z|1033 0| |NPC|101767|
-C Take Them in Claw |QID|40963| |N|Use the (item:139882) on 3 Nightborne enemies (30.87,18.19)| |Z|1033 0|
+C Take Them in Claw |QID|40963| |NUse the (item:139882) on 3 Nightborne enemies (30.87,18.19)| |Z|1033 0|
 T Take Them in Claw |QID|40963| |N|(npc:102425) in {Moonfall Roost} (31.25,18.71) (31.91,20.54) (31.44,23.18)| |Z|1033 0| |NPC|102425|
 A The Rift Between |QID|40964| |N|(npc:102425) in {Moonfall Roost} (31.44,23.18)| |Z|1033 0| |NPC|102425|
 A Recovering Stolen Power |QID|40968| |N|(npc:102425) in {Moonfall Roost} (31.44,23.18)| |Z|1033 0| |NPC|102425|
@@ -373,7 +373,7 @@ A Precious Little Left |QID|40967| |N|(npc:101768) in {The Athenaeum} (36.43,22.
 A Lay Waste, Lay Mines |QID|40965| |N|(npc:101768) in {The Athenaeum} (36.43,22.40)| |Z|1033 0| |NPC|101768|
 A Stop the Spell Seekers |QID|41032| |N|(npc:101768) in {The Athenaeum} (36.43,22.40)| |Z|1033 0| |NPC|101768|
 N (item:133899) |QID|40967.2| |N|Collect (item:133899) in {The Athenaeum} (34.80,22.53)| |Z|1033 0| 
-K (npc:106275) |N|Kill (npc:106275) and loot his body and you will receive a quest (35.50,20.10) (34.92,19.24)| |Z|1033 0| |NPC|106275|
+K (npc:106275) |QID|40762| |N|Kill (npc:106275) and loot his body and you will receive a quest (35.50,20.10) (34.92,19.24)| |L|136851| |Z|1033 0| |NPC|106275|
 A Zealot's Dues |QID|40762| |N|Auto quest after killing (npc:106275) (34.92,19.24)| |Z|1033 0| |NPC|106275|
 N (item:133900) |QID|40967.3| |N|Collect (item:133900) in {The Athenaeum} (34.06,17.89)| |Z|1033 0|
 N (item:133898) |QID|40967.1| |N|Collect (item:133898) in {The Athenaeum} (36.37,16.75)| |Z|1033 0|
@@ -479,7 +479,7 @@ T Leyline Feed: Kel'balor |QID|43588| |N|Leyline Feed in {Kel'balor}, you will n
 R Crimson Thicket |QID|40617| |N|Travel to {Crimson Thicket} (61.86, 49.07)| |Z|1033 0| 
 T Scouting the Crimson Thicket |QID|42223| |N|(npc:100775) in {Crimson Thicket} (61.86, 49.07)| |Z|1033 0| |NPC|100775|
 A Turn Around, Nighteyes |QID|40617| |N|(npc:100775) in {Crimson Thicket} (61.86, 49.07)| |Z|1033 0| |NPC|100775|
-f Crimson Thicket |N|Grab {Crimson Thicket} flight path from (npc:114718) (64.29, 41.96)| |Z|1033 0| |NPC|114718|
+f Crimson Thicket |QID|40617| |N|Grab {Crimson Thicket} flight path from (npc:114718) (64.29, 41.96)| |Z|1033 0| |NPC|114718|
 N (npc:100777) |QID|40617.1| |N|Locate (npc:100777) in {Crimson Thicket} (63.53, 46.13)| |Z|1033 0| |NPC|100777|
 K (npc:100780) |QID|40617.2| |N|Kill (npc:100780) in {Crimson Thicket} (63.75, 46.63)| |Z|1033 0| |NPC|100780|
 N (item:134120) |QID|40617.3| |N|Collect (item:134120) from (npc:100780) in {Crimson Thicket} (63.72, 46.51)| |Z|1033 0| |NPC|100780|
@@ -515,7 +515,7 @@ N (npc:99562) |QID|40320.1| |N|Rescue (npc:99562) in {Muddledeep Cavern} (69.28,
 N (npc:99563) |QID|40320.2| |N|Rescue (npc:99563) in {Muddledeep Cavern} (69.16,58.73) (70.00,60.36) (68.91,59.80)| |Z|1033 0| |NPC|99563|
 N (npc:99564) |QID|40320.3| |N|Rescue (npc:99564) in {Muddledeep Cavern} (69.36,59.40) (68.51,57.48) (68.05,58.43)| |Z|1033 0| |NPC|99564|
 
-R Azuregale Bay |N|Travel to {Azuregale Bay} (68.54,57.65) (69.94,57.04) (72.25,59.21)| |Z|1033 0|
+R Azuregale Bay |QID|40320| |N|Travel to {Azuregale Bay} (68.54,57.65) (69.94,57.04) (72.25,59.21)| |Z|1033 0|
 N (item:132244) |QID|40331.1| |N|Collect 8 (item:132244) from Sashj'tar enemies around this area (70.15,55.19)| |Z|1033 0|
 N Build Jarl Throndyre's Pyre |QID|40332.2| |N|Click Throndyr's Pyre to build it (72.25,59.21)| |Z|1033 0|
 T Beach Bonfire |QID|40332| |N|(npc:102334) in {Azuregale Bay} (72.26,59.08)| |Z|1033 0| |NPC|102334|
@@ -533,8 +533,8 @@ A Testing the Waters |QID|41034| |N|(npc:102334) should appear next to you in {A
 
 R Azuregale Hollow |QID|41034| |N|Travel to {Azuregale Hollow}, an underwater cave. (71.25,71.07) (73.27,68.34) (77.10,70.08)| |Z|1033 0|
 K (npc:102841) |QID|41034.2| |N|Kill (npc:102841) in {Azuregale Hollow} (75.87,72.68)| |Z|1033 0| |NPC|102841|
-K (npc:102840) |QID|41034.1| |N|Kill (npc:102840) in {Azuregale Bay} (80.22,64.03)| |Z|1033 0| |NPC|102840|
-K (npc:102844) |QID|41034.3| |N|Kill (npc:102844) in {Azuregale Bay} (77.91,58.39)| |Z|1033 0| |NPC|102844|
+K (npc:102840) |QID|41034.2| |N|Kill (npc:102840) in {Azuregale Bay} (80.22,64.03)| |Z|1033 0| |NPC|102840|
+K (npc:102844) |QID|41034.2| |N|Kill (npc:102844) in {Azuregale Bay} (77.91,58.39)| |Z|1033 0| |NPC|102844|
 
 R Jandvik |QID|41034| |N|Travel to {Jandvik} (72.63,53.12)| |Z|1033 0|
 T Testing the Waters |QID|41034| |N|(npc:102845) in {Jandvik} (72.63,53.12) (70.60,49.16)| |Z|1033 0| |NPC|102845|
@@ -745,7 +745,7 @@ A Leyline Feed: Halls of the Eclipse |QID|43594| |N|Leyline Feed in {Felsoul Hol
 T Leyline Feed: Halls of the Eclipse |QID|43594| |N|Leyline Feed in {Felsoul Hold}, requires 250 (cur:1155) (27.26,86.42)| |Z|1033 0|
 
 K (npc:99485) |QID|41098.1| |N|Kill (npc:99485) collect (item:134028) in {Felsoul Hold} (26.08,85.78)| |Z|1033 0| |NPC|99485|
-N (item:134080) |QID|41140.4| |N|Collect (item:134080) from the Soul Vaults keyring (27.53,88.94)| |Z|1033 0| |POI|
+N (item:134080) |QID|41140.4| |N|Collect (item:134080) from the {Soul Vaults} keyring (27.53,88.94)| |Z|1033 0| |POI|
 N Release the Nightfallen Prisoner |QID|41140.5| |N|Click locked cage and release the Nightfallen Prisoner (27.08,88.30) (27.09,86.05)| |Z|1033 0|
 T Search and Rescue! |QID|41140| |N|(npc:102365) in {Felsoul Hold} (27.09,86.05)| |Z|1033 0| |NPC|102365|
 A Into The Pit! |QID|41222| |N|(npc:103437) will appear next to you| |NPC|103437|

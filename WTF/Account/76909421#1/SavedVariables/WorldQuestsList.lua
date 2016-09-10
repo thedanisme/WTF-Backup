@@ -1,57 +1,64 @@
 
 VWQL = {
 	["Yanlery-Stormrage"] = {
-		["FilterType"] = {
-		},
+		["Filter"] = 63,
 		["Quests"] = {
 		},
-		["Filter"] = 63,
+		["FilterType"] = {
+		},
 	},
+	["Sort"] = 4,
 	["DisableArrow"] = true,
-	["Emmarosa-Stormrage"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-			[43324] = true,
-			[42953] = true,
-			[42025] = true,
-			[42151] = true,
-			[42090] = true,
-			[43427] = true,
-			[43248] = true,
-			[43435] = true,
-			[41421] = true,
-			[44119] = true,
-			[42105] = true,
-			[41613] = true,
-			[43599] = true,
-			[41551] = true,
-			[41617] = true,
-			[44002] = true,
-			[42112] = true,
-			[40966] = true,
-			[43943] = true,
-			[43777] = true,
-		},
-		["FilterType"] = {
-			["pet"] = true,
-			["pvp"] = true,
-		},
-	},
 	["VERSION"] = 17,
 	["Scale"] = 1.1,
-	["Talthalador-Stormrage"] = {
-		["FilterType"] = {
-		},
-		["Quests"] = {
-		},
-		["Filter"] = 63,
-	},
 	["Shhbbyisok-Stormrage"] = {
+		["FilterType"] = {
+		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
+	},
+	["Talthalador-Stormrage"] = {
 		["Filter"] = 63,
 		["Quests"] = {
 		},
 		["FilterType"] = {
 		},
 	},
-	["Sort"] = 2,
+	["Emmarosa-Stormrage"] = {
+		["FilterType"] = {
+			["pet"] = true,
+		},
+		["Quests"] = {
+			[43325] = true,
+			[42241] = true,
+			[41622] = true,
+			[44289] = true,
+			[42123] = true,
+			[42620] = true,
+			[43445] = true,
+			[44193] = true,
+			[40966] = true,
+			[42101] = true,
+			[41013] = true,
+			[41076] = true,
+			[43599] = true,
+			[43930] = true,
+			[43807] = true,
+			[41421] = true,
+			[44119] = true,
+			[41144] = true,
+			[41949] = true,
+			[41984] = true,
+			[42511] = true,
+			[41551] = true,
+			[43777] = true,
+			[41243] = true,
+			[42112] = true,
+			[42795] = true,
+			[43943] = true,
+			[44300] = true,
+		},
+		["Filter"] = 63,
+	},
 }
