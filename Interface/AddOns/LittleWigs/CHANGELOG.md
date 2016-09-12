@@ -1,8 +1,9 @@
 # LittleWigs
 
-## [v7.0.9-18-gf4fe240](https://github.com/BigWigsMods/LittleWigs/tree/f4fe240dea26dc089815589b0c00ceeefa2000ef) (2016-09-12) [](#top)
-[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v7.0.9...f4fe240dea26dc089815589b0c00ceeefa2000ef)
+## [v7.0.9-19-g05d42b0](https://github.com/BigWigsMods/LittleWigs/tree/05d42b0cccb4b95b075482de56a7714fb311d696) (2016-09-12) [](#top)
+[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v7.0.9...05d42b0cccb4b95b075482de56a7714fb311d696)
 
+-   Add The Arcway  
 -   CourtOfStars/AdvisorMelandrus: Throttle Piercing Gale  
 -   EyeOfAzshara/WrathOfAzshara: Add Crushing Depths  
 -   EyeOfAzshara/KingDeepbeard: Add flash to bubble warning.  
