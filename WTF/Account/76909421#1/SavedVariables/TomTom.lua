@@ -17,30 +17,30 @@ TomTomDB = {
 		["Priaprisum - Stormreaver"] = "Default",
 		["Pryahprism - Turalyon"] = "Default",
 		["Ershirley - Stormrage"] = "Default",
-		["Kateplusnine - Stormrage"] = "Default",
-		["Brobies - Stormrage"] = "Default",
+		["Druidann - Stormrage"] = "Default",
+		["Talthalador - Stormrage"] = "Default",
 		["Aranduh - Bloodhoof"] = "Default",
 		["Rosabria - Sargeras"] = "Default",
 		["Fupa - Stormrage"] = "Default",
 		["Bruhbies - Stormrage"] = "Default",
 		["Rotator - Turalyon"] = "Default",
 		["Llamama - Stormrage"] = "Default",
-		["Knutts - Turalyon"] = "Default",
-		["Lackteight - Turalyon"] = "Default",
+		["Callil - Turalyon"] = "Default",
+		["Brewbies - Turalyon"] = "Default",
 		["Titt - Turalyon"] = "Default",
 		["Shaneequa - Turalyon"] = "Default",
 		["Skratch - Turalyon"] = "Default",
-		["Arando - Bloodhoof"] = "Default",
-		["Bloodcox - Stormrage"] = "Default",
 		["Horny - Bloodhoof"] = "Default",
+		["Bloodcox - Stormrage"] = "Default",
+		["Arando - Bloodhoof"] = "Default",
 		["Danoh - Stormrage"] = "Default",
-		["Brewbies - Turalyon"] = "Default",
-		["Callil - Turalyon"] = "Default",
+		["Lackteight - Turalyon"] = "Default",
+		["Knutts - Turalyon"] = "Default",
 		["Edgelordshue - Stormrage"] = "Default",
 		["Dalgrens - Bloodhoof"] = "Default",
 		["Beer - Bloodhoof"] = "Default",
-		["Talthalador - Stormrage"] = "Default",
-		["Druidann - Stormrage"] = "Default",
+		["Brobies - Stormrage"] = "Default",
+		["Kateplusnine - Stormrage"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -72,30 +72,30 @@ TomTomWaypointsMF = {
 		["Priaprisum - Stormreaver"] = "Priaprisum - Stormreaver",
 		["Pryahprism - Turalyon"] = "Pryahprism - Turalyon",
 		["Ershirley - Stormrage"] = "Ershirley - Stormrage",
-		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
-		["Brobies - Stormrage"] = "Brobies - Stormrage",
+		["Druidann - Stormrage"] = "Druidann - Stormrage",
+		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
 		["Aranduh - Bloodhoof"] = "Aranduh - Bloodhoof",
 		["Rosabria - Sargeras"] = "Rosabria - Sargeras",
 		["Fupa - Stormrage"] = "Fupa - Stormrage",
 		["Bruhbies - Stormrage"] = "Bruhbies - Stormrage",
 		["Rotator - Turalyon"] = "Rotator - Turalyon",
 		["Llamama - Stormrage"] = "Llamama - Stormrage",
-		["Knutts - Turalyon"] = "Knutts - Turalyon",
-		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
+		["Callil - Turalyon"] = "Callil - Turalyon",
+		["Brewbies - Turalyon"] = "Brewbies - Turalyon",
 		["Titt - Turalyon"] = "Titt - Turalyon",
 		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
-		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
-		["Bloodcox - Stormrage"] = "Bloodcox - Stormrage",
 		["Horny - Bloodhoof"] = "Horny - Bloodhoof",
+		["Bloodcox - Stormrage"] = "Bloodcox - Stormrage",
+		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
-		["Brewbies - Turalyon"] = "Brewbies - Turalyon",
-		["Callil - Turalyon"] = "Callil - Turalyon",
+		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
+		["Knutts - Turalyon"] = "Knutts - Turalyon",
 		["Edgelordshue - Stormrage"] = "Edgelordshue - Stormrage",
 		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
 		["Beer - Bloodhoof"] = "Beer - Bloodhoof",
-		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
-		["Druidann - Stormrage"] = "Druidann - Stormrage",
+		["Brobies - Stormrage"] = "Brobies - Stormrage",
+		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
 	},
 	["profiles"] = {
 		["Shamadan - Stormrage"] = {
@@ -130,9 +130,9 @@ TomTomWaypointsMF = {
 		},
 		["Ershirley - Stormrage"] = {
 		},
-		["Kateplusnine - Stormrage"] = {
+		["Druidann - Stormrage"] = {
 		},
-		["Brobies - Stormrage"] = {
+		["Talthalador - Stormrage"] = {
 		},
 		["Aranduh - Bloodhoof"] = {
 			[950] = {
@@ -145,9 +145,9 @@ TomTomWaypointsMF = {
 					["callbacks"] = {
 						["distance"] = {
 						},
-						["world"] = {
-						},
 						["minimap"] = {
+						},
+						["world"] = {
 						},
 					},
 					["persistent"] = true,
@@ -170,9 +170,9 @@ TomTomWaypointsMF = {
 					["callbacks"] = {
 						["distance"] = {
 						},
-						["world"] = {
-						},
 						["minimap"] = {
+						},
+						["world"] = {
 						},
 					},
 					["persistent"] = true,
@@ -195,9 +195,9 @@ TomTomWaypointsMF = {
 					["callbacks"] = {
 						["distance"] = {
 						},
-						["world"] = {
-						},
 						["minimap"] = {
+						},
+						["world"] = {
 						},
 					},
 					["persistent"] = true,
@@ -218,9 +218,9 @@ TomTomWaypointsMF = {
 					["callbacks"] = {
 						["distance"] = {
 						},
-						["world"] = {
-						},
 						["minimap"] = {
+						},
+						["world"] = {
 						},
 					},
 					["persistent"] = true,
@@ -234,29 +234,6 @@ TomTomWaypointsMF = {
 				},
 			},
 			[39] = {
-				["39:0:305300000:864200000:Westfall Lighthouse|nField Photographer"] = {
-					39, -- [1]
-					0, -- [2]
-					0.3053, -- [3]
-					0.8642, -- [4]
-					["arrivaldistance"] = 15,
-					["callbacks"] = {
-						["distance"] = {
-						},
-						["world"] = {
-						},
-						["minimap"] = {
-						},
-					},
-					["persistent"] = true,
-					["desc"] = "Westfall Lighthouse|nField Photographer",
-					["silent"] = true,
-					["cleardistance"] = 10,
-					["title"] = "Westfall Lighthouse|nField Photographer",
-					["crazy"] = true,
-					["minimap"] = true,
-					["world"] = true,
-				},
 				["39:0:425600000:716700000:The Deadmines|nField Photographer"] = {
 					39, -- [1]
 					0, -- [2]
@@ -266,9 +243,9 @@ TomTomWaypointsMF = {
 					["callbacks"] = {
 						["distance"] = {
 						},
-						["world"] = {
-						},
 						["minimap"] = {
+						},
+						["world"] = {
 						},
 					},
 					["persistent"] = true,
@@ -276,6 +253,29 @@ TomTomWaypointsMF = {
 					["silent"] = true,
 					["cleardistance"] = 10,
 					["title"] = "The Deadmines|nField Photographer",
+					["crazy"] = true,
+					["minimap"] = true,
+					["world"] = true,
+				},
+				["39:0:305300000:864200000:Westfall Lighthouse|nField Photographer"] = {
+					39, -- [1]
+					0, -- [2]
+					0.3053, -- [3]
+					0.8642, -- [4]
+					["arrivaldistance"] = 15,
+					["callbacks"] = {
+						["distance"] = {
+						},
+						["minimap"] = {
+						},
+						["world"] = {
+						},
+					},
+					["persistent"] = true,
+					["desc"] = "Westfall Lighthouse|nField Photographer",
+					["silent"] = true,
+					["cleardistance"] = 10,
+					["title"] = "Westfall Lighthouse|nField Photographer",
 					["crazy"] = true,
 					["minimap"] = true,
 					["world"] = true,
@@ -291,9 +291,9 @@ TomTomWaypointsMF = {
 					["callbacks"] = {
 						["distance"] = {
 						},
-						["world"] = {
-						},
 						["minimap"] = {
+						},
+						["world"] = {
 						},
 					},
 					["persistent"] = true,
@@ -316,9 +316,9 @@ TomTomWaypointsMF = {
 					["callbacks"] = {
 						["distance"] = {
 						},
-						["world"] = {
-						},
 						["minimap"] = {
+						},
+						["world"] = {
 						},
 					},
 					["persistent"] = true,
@@ -341,9 +341,9 @@ TomTomWaypointsMF = {
 					["callbacks"] = {
 						["distance"] = {
 						},
-						["world"] = {
-						},
 						["minimap"] = {
+						},
+						["world"] = {
 						},
 					},
 					["persistent"] = true,
@@ -366,9 +366,9 @@ TomTomWaypointsMF = {
 					["callbacks"] = {
 						["distance"] = {
 						},
-						["world"] = {
-						},
 						["minimap"] = {
+						},
+						["world"] = {
 						},
 					},
 					["persistent"] = true,
@@ -391,9 +391,9 @@ TomTomWaypointsMF = {
 					["callbacks"] = {
 						["distance"] = {
 						},
-						["world"] = {
-						},
 						["minimap"] = {
+						},
+						["world"] = {
 						},
 					},
 					["persistent"] = true,
@@ -416,9 +416,9 @@ TomTomWaypointsMF = {
 					["callbacks"] = {
 						["distance"] = {
 						},
-						["world"] = {
-						},
 						["minimap"] = {
+						},
+						["world"] = {
 						},
 					},
 					["persistent"] = true,
@@ -441,9 +441,9 @@ TomTomWaypointsMF = {
 					["callbacks"] = {
 						["distance"] = {
 						},
-						["world"] = {
-						},
 						["minimap"] = {
+						},
+						["world"] = {
 						},
 					},
 					["persistent"] = true,
@@ -466,9 +466,9 @@ TomTomWaypointsMF = {
 					["callbacks"] = {
 						["distance"] = {
 						},
-						["world"] = {
-						},
 						["minimap"] = {
+						},
+						["world"] = {
 						},
 					},
 					["persistent"] = true,
@@ -491,9 +491,9 @@ TomTomWaypointsMF = {
 					["callbacks"] = {
 						["distance"] = {
 						},
-						["world"] = {
-						},
 						["minimap"] = {
+						},
+						["world"] = {
 						},
 					},
 					["persistent"] = true,
@@ -516,9 +516,9 @@ TomTomWaypointsMF = {
 					["callbacks"] = {
 						["distance"] = {
 						},
-						["world"] = {
-						},
 						["minimap"] = {
+						},
+						["world"] = {
 						},
 					},
 					["persistent"] = true,
@@ -539,9 +539,9 @@ TomTomWaypointsMF = {
 					["callbacks"] = {
 						["distance"] = {
 						},
-						["world"] = {
-						},
 						["minimap"] = {
+						},
+						["world"] = {
 						},
 					},
 					["persistent"] = true,
@@ -564,9 +564,9 @@ TomTomWaypointsMF = {
 					["callbacks"] = {
 						["distance"] = {
 						},
-						["world"] = {
-						},
 						["minimap"] = {
+						},
+						["world"] = {
 						},
 					},
 					["persistent"] = true,
@@ -589,9 +589,9 @@ TomTomWaypointsMF = {
 					["callbacks"] = {
 						["distance"] = {
 						},
-						["world"] = {
-						},
 						["minimap"] = {
+						},
+						["world"] = {
 						},
 					},
 					["persistent"] = true,
@@ -614,9 +614,9 @@ TomTomWaypointsMF = {
 					["callbacks"] = {
 						["distance"] = {
 						},
-						["world"] = {
-						},
 						["minimap"] = {
+						},
+						["world"] = {
 						},
 					},
 					["persistent"] = true,
@@ -639,9 +639,9 @@ TomTomWaypointsMF = {
 					["callbacks"] = {
 						["distance"] = {
 						},
-						["world"] = {
-						},
 						["minimap"] = {
+						},
+						["world"] = {
 						},
 					},
 					["persistent"] = true,
@@ -664,9 +664,9 @@ TomTomWaypointsMF = {
 					["callbacks"] = {
 						["distance"] = {
 						},
-						["world"] = {
-						},
 						["minimap"] = {
+						},
+						["world"] = {
 						},
 					},
 					["persistent"] = true,
@@ -689,9 +689,9 @@ TomTomWaypointsMF = {
 					["callbacks"] = {
 						["distance"] = {
 						},
-						["world"] = {
-						},
 						["minimap"] = {
+						},
+						["world"] = {
 						},
 					},
 					["persistent"] = true,
@@ -714,9 +714,9 @@ TomTomWaypointsMF = {
 					["callbacks"] = {
 						["distance"] = {
 						},
-						["world"] = {
-						},
 						["minimap"] = {
+						},
+						["world"] = {
 						},
 					},
 					["persistent"] = true,
@@ -730,29 +730,6 @@ TomTomWaypointsMF = {
 				},
 			},
 			[22] = {
-				["22:0:519200000:824800000:Uther's Tomb|nField Photographer"] = {
-					22, -- [1]
-					0, -- [2]
-					0.5192, -- [3]
-					0.8248, -- [4]
-					["arrivaldistance"] = 15,
-					["callbacks"] = {
-						["distance"] = {
-						},
-						["world"] = {
-						},
-						["minimap"] = {
-						},
-					},
-					["persistent"] = true,
-					["desc"] = "Uther's Tomb|nField Photographer",
-					["silent"] = true,
-					["cleardistance"] = 10,
-					["title"] = "Uther's Tomb|nField Photographer",
-					["crazy"] = true,
-					["minimap"] = true,
-					["world"] = true,
-				},
 				["22:0:446500000:182600000:Hearthglen|nField Photographer"] = {
 					22, -- [1]
 					0, -- [2]
@@ -762,9 +739,9 @@ TomTomWaypointsMF = {
 					["callbacks"] = {
 						["distance"] = {
 						},
-						["world"] = {
-						},
 						["minimap"] = {
+						},
+						["world"] = {
 						},
 					},
 					["persistent"] = true,
@@ -772,6 +749,29 @@ TomTomWaypointsMF = {
 					["silent"] = true,
 					["cleardistance"] = 10,
 					["title"] = "Hearthglen|nField Photographer",
+					["crazy"] = true,
+					["minimap"] = true,
+					["world"] = true,
+				},
+				["22:0:519200000:824800000:Uther's Tomb|nField Photographer"] = {
+					22, -- [1]
+					0, -- [2]
+					0.5192, -- [3]
+					0.8248, -- [4]
+					["arrivaldistance"] = 15,
+					["callbacks"] = {
+						["distance"] = {
+						},
+						["minimap"] = {
+						},
+						["world"] = {
+						},
+					},
+					["persistent"] = true,
+					["desc"] = "Uther's Tomb|nField Photographer",
+					["silent"] = true,
+					["cleardistance"] = 10,
+					["title"] = "Uther's Tomb|nField Photographer",
 					["crazy"] = true,
 					["minimap"] = true,
 					["world"] = true,
@@ -787,9 +787,9 @@ TomTomWaypointsMF = {
 					["callbacks"] = {
 						["distance"] = {
 						},
-						["world"] = {
-						},
 						["minimap"] = {
+						},
+						["world"] = {
 						},
 					},
 					["persistent"] = true,
@@ -812,9 +812,9 @@ TomTomWaypointsMF = {
 					["callbacks"] = {
 						["distance"] = {
 						},
-						["world"] = {
-						},
 						["minimap"] = {
+						},
+						["world"] = {
 						},
 					},
 					["persistent"] = true,
@@ -837,9 +837,9 @@ TomTomWaypointsMF = {
 					["callbacks"] = {
 						["distance"] = {
 						},
-						["world"] = {
-						},
 						["minimap"] = {
+						},
+						["world"] = {
 						},
 					},
 					["persistent"] = true,
@@ -862,9 +862,9 @@ TomTomWaypointsMF = {
 					["callbacks"] = {
 						["distance"] = {
 						},
-						["world"] = {
-						},
 						["minimap"] = {
+						},
+						["world"] = {
 						},
 					},
 					["persistent"] = true,
@@ -872,231 +872,6 @@ TomTomWaypointsMF = {
 					["silent"] = true,
 					["cleardistance"] = 10,
 					["title"] = "Vashj'ir|nField Photographer",
-					["crazy"] = true,
-					["minimap"] = true,
-					["world"] = true,
-				},
-			},
-			[32] = {
-				["32:0:469800000:749000000:Karazhan|nField Photographer"] = {
-					32, -- [1]
-					0, -- [2]
-					0.4698, -- [3]
-					0.749, -- [4]
-					["arrivaldistance"] = 15,
-					["callbacks"] = {
-						["distance"] = {
-						},
-						["world"] = {
-						},
-						["minimap"] = {
-						},
-					},
-					["persistent"] = true,
-					["desc"] = "Karazhan|nField Photographer",
-					["silent"] = true,
-					["cleardistance"] = 10,
-					["title"] = "Karazhan|nField Photographer",
-					["crazy"] = true,
-					["minimap"] = true,
-					["world"] = true,
-				},
-			},
-			[23] = {
-				["23:0:758000000:533600000:Light's Hope Chapel|nField Photographer"] = {
-					23, -- [1]
-					0, -- [2]
-					0.758, -- [3]
-					0.5336, -- [4]
-					["arrivaldistance"] = 15,
-					["callbacks"] = {
-						["distance"] = {
-						},
-						["world"] = {
-						},
-						["minimap"] = {
-						},
-					},
-					["persistent"] = true,
-					["desc"] = "Light's Hope Chapel|nField Photographer",
-					["silent"] = true,
-					["cleardistance"] = 10,
-					["title"] = "Light's Hope Chapel|nField Photographer",
-					["crazy"] = true,
-					["minimap"] = true,
-					["world"] = true,
-				},
-			},
-			[946] = {
-				["946:0:463500000:738800000:Auchindoun (Draenor)|nField Photographer"] = {
-					946, -- [1]
-					0, -- [2]
-					0.4635, -- [3]
-					0.7388, -- [4]
-					["arrivaldistance"] = 15,
-					["callbacks"] = {
-						["distance"] = {
-						},
-						["world"] = {
-						},
-						["minimap"] = {
-						},
-					},
-					["persistent"] = true,
-					["desc"] = "Auchindoun (Draenor)|nField Photographer",
-					["silent"] = true,
-					["cleardistance"] = 10,
-					["title"] = "Auchindoun (Draenor)|nField Photographer",
-					["crazy"] = true,
-					["minimap"] = true,
-					["world"] = true,
-				},
-			},
-			[301] = {
-				["301:0:671900000:338900000:Deeprun Tram|nField Photographer"] = {
-					301, -- [1]
-					0, -- [2]
-					0.6719, -- [3]
-					0.3389, -- [4]
-					["arrivaldistance"] = 15,
-					["callbacks"] = {
-						["distance"] = {
-						},
-						["world"] = {
-						},
-						["minimap"] = {
-						},
-					},
-					["persistent"] = true,
-					["desc"] = "Deeprun Tram|nField Photographer",
-					["silent"] = true,
-					["cleardistance"] = 10,
-					["title"] = "Deeprun Tram|nField Photographer",
-					["crazy"] = true,
-					["minimap"] = true,
-					["world"] = true,
-				},
-			},
-			[479] = {
-				["479:0:450000000:350000000:The Stormspire|nField Photographer"] = {
-					479, -- [1]
-					0, -- [2]
-					0.45, -- [3]
-					0.35, -- [4]
-					["arrivaldistance"] = 15,
-					["callbacks"] = {
-						["distance"] = {
-						},
-						["world"] = {
-						},
-						["minimap"] = {
-						},
-					},
-					["persistent"] = true,
-					["desc"] = "The Stormspire|nField Photographer",
-					["silent"] = true,
-					["cleardistance"] = 10,
-					["title"] = "The Stormspire|nField Photographer",
-					["crazy"] = true,
-					["minimap"] = true,
-					["world"] = true,
-				},
-			},
-			[241] = {
-				["241:0:567600000:665200000:Moonglade|nField Photographer"] = {
-					241, -- [1]
-					0, -- [2]
-					0.5676, -- [3]
-					0.6652, -- [4]
-					["arrivaldistance"] = 15,
-					["callbacks"] = {
-						["distance"] = {
-						},
-						["world"] = {
-						},
-						["minimap"] = {
-						},
-					},
-					["persistent"] = true,
-					["desc"] = "Moonglade|nField Photographer",
-					["silent"] = true,
-					["cleardistance"] = 10,
-					["title"] = "Moonglade|nField Photographer",
-					["crazy"] = true,
-					["minimap"] = true,
-					["world"] = true,
-				},
-			},
-			[121] = {
-				["121:0:485600000:207600000:The Twin Colossals|nField Photographer"] = {
-					121, -- [1]
-					0, -- [2]
-					0.4856, -- [3]
-					0.2076, -- [4]
-					["arrivaldistance"] = 15,
-					["callbacks"] = {
-						["distance"] = {
-						},
-						["world"] = {
-						},
-						["minimap"] = {
-						},
-					},
-					["persistent"] = true,
-					["desc"] = "The Twin Colossals|nField Photographer",
-					["silent"] = true,
-					["cleardistance"] = 10,
-					["title"] = "The Twin Colossals|nField Photographer",
-					["crazy"] = true,
-					["minimap"] = true,
-					["world"] = true,
-				},
-			},
-			[19] = {
-				["19:0:546000000:541700000:The Dark Portal|nField Photographer"] = {
-					19, -- [1]
-					0, -- [2]
-					0.546, -- [3]
-					0.5417, -- [4]
-					["arrivaldistance"] = 15,
-					["callbacks"] = {
-						["distance"] = {
-						},
-						["world"] = {
-						},
-						["minimap"] = {
-						},
-					},
-					["persistent"] = true,
-					["desc"] = "The Dark Portal|nField Photographer",
-					["silent"] = true,
-					["cleardistance"] = 10,
-					["title"] = "The Dark Portal|nField Photographer",
-					["crazy"] = true,
-					["minimap"] = true,
-					["world"] = true,
-				},
-			},
-			[478] = {
-				["478:0:293800000:225500000:Shattrath City (Outland)|nField Photographer"] = {
-					478, -- [1]
-					0, -- [2]
-					0.2938, -- [3]
-					0.2255, -- [4]
-					["arrivaldistance"] = 15,
-					["callbacks"] = {
-						["distance"] = {
-						},
-						["world"] = {
-						},
-						["minimap"] = {
-						},
-					},
-					["persistent"] = true,
-					["desc"] = "Shattrath City (Outland)|nField Photographer",
-					["silent"] = true,
-					["cleardistance"] = 10,
-					["title"] = "Shattrath City (Outland)|nField Photographer",
 					["crazy"] = true,
 					["minimap"] = true,
 					["world"] = true,
@@ -1112,9 +887,9 @@ TomTomWaypointsMF = {
 					["callbacks"] = {
 						["distance"] = {
 						},
-						["world"] = {
-						},
 						["minimap"] = {
+						},
+						["world"] = {
 						},
 					},
 					["persistent"] = true,
@@ -1122,6 +897,231 @@ TomTomWaypointsMF = {
 					["silent"] = true,
 					["cleardistance"] = 10,
 					["title"] = "Deathwing's Fall|nField Photographer",
+					["crazy"] = true,
+					["minimap"] = true,
+					["world"] = true,
+				},
+			},
+			[478] = {
+				["478:0:293800000:225500000:Shattrath City (Outland)|nField Photographer"] = {
+					478, -- [1]
+					0, -- [2]
+					0.2938, -- [3]
+					0.2255, -- [4]
+					["arrivaldistance"] = 15,
+					["callbacks"] = {
+						["distance"] = {
+						},
+						["minimap"] = {
+						},
+						["world"] = {
+						},
+					},
+					["persistent"] = true,
+					["desc"] = "Shattrath City (Outland)|nField Photographer",
+					["silent"] = true,
+					["cleardistance"] = 10,
+					["title"] = "Shattrath City (Outland)|nField Photographer",
+					["crazy"] = true,
+					["minimap"] = true,
+					["world"] = true,
+				},
+			},
+			[19] = {
+				["19:0:546000000:541700000:The Dark Portal|nField Photographer"] = {
+					19, -- [1]
+					0, -- [2]
+					0.546, -- [3]
+					0.5417, -- [4]
+					["arrivaldistance"] = 15,
+					["callbacks"] = {
+						["distance"] = {
+						},
+						["minimap"] = {
+						},
+						["world"] = {
+						},
+					},
+					["persistent"] = true,
+					["desc"] = "The Dark Portal|nField Photographer",
+					["silent"] = true,
+					["cleardistance"] = 10,
+					["title"] = "The Dark Portal|nField Photographer",
+					["crazy"] = true,
+					["minimap"] = true,
+					["world"] = true,
+				},
+			},
+			[301] = {
+				["301:0:671900000:338900000:Deeprun Tram|nField Photographer"] = {
+					301, -- [1]
+					0, -- [2]
+					0.6719, -- [3]
+					0.3389, -- [4]
+					["arrivaldistance"] = 15,
+					["callbacks"] = {
+						["distance"] = {
+						},
+						["minimap"] = {
+						},
+						["world"] = {
+						},
+					},
+					["persistent"] = true,
+					["desc"] = "Deeprun Tram|nField Photographer",
+					["silent"] = true,
+					["cleardistance"] = 10,
+					["title"] = "Deeprun Tram|nField Photographer",
+					["crazy"] = true,
+					["minimap"] = true,
+					["world"] = true,
+				},
+			},
+			[241] = {
+				["241:0:567600000:665200000:Moonglade|nField Photographer"] = {
+					241, -- [1]
+					0, -- [2]
+					0.5676, -- [3]
+					0.6652, -- [4]
+					["arrivaldistance"] = 15,
+					["callbacks"] = {
+						["distance"] = {
+						},
+						["minimap"] = {
+						},
+						["world"] = {
+						},
+					},
+					["persistent"] = true,
+					["desc"] = "Moonglade|nField Photographer",
+					["silent"] = true,
+					["cleardistance"] = 10,
+					["title"] = "Moonglade|nField Photographer",
+					["crazy"] = true,
+					["minimap"] = true,
+					["world"] = true,
+				},
+			},
+			[479] = {
+				["479:0:450000000:350000000:The Stormspire|nField Photographer"] = {
+					479, -- [1]
+					0, -- [2]
+					0.45, -- [3]
+					0.35, -- [4]
+					["arrivaldistance"] = 15,
+					["callbacks"] = {
+						["distance"] = {
+						},
+						["minimap"] = {
+						},
+						["world"] = {
+						},
+					},
+					["persistent"] = true,
+					["desc"] = "The Stormspire|nField Photographer",
+					["silent"] = true,
+					["cleardistance"] = 10,
+					["title"] = "The Stormspire|nField Photographer",
+					["crazy"] = true,
+					["minimap"] = true,
+					["world"] = true,
+				},
+			},
+			[121] = {
+				["121:0:485600000:207600000:The Twin Colossals|nField Photographer"] = {
+					121, -- [1]
+					0, -- [2]
+					0.4856, -- [3]
+					0.2076, -- [4]
+					["arrivaldistance"] = 15,
+					["callbacks"] = {
+						["distance"] = {
+						},
+						["minimap"] = {
+						},
+						["world"] = {
+						},
+					},
+					["persistent"] = true,
+					["desc"] = "The Twin Colossals|nField Photographer",
+					["silent"] = true,
+					["cleardistance"] = 10,
+					["title"] = "The Twin Colossals|nField Photographer",
+					["crazy"] = true,
+					["minimap"] = true,
+					["world"] = true,
+				},
+			},
+			[946] = {
+				["946:0:463500000:738800000:Auchindoun (Draenor)|nField Photographer"] = {
+					946, -- [1]
+					0, -- [2]
+					0.4635, -- [3]
+					0.7388, -- [4]
+					["arrivaldistance"] = 15,
+					["callbacks"] = {
+						["distance"] = {
+						},
+						["minimap"] = {
+						},
+						["world"] = {
+						},
+					},
+					["persistent"] = true,
+					["desc"] = "Auchindoun (Draenor)|nField Photographer",
+					["silent"] = true,
+					["cleardistance"] = 10,
+					["title"] = "Auchindoun (Draenor)|nField Photographer",
+					["crazy"] = true,
+					["minimap"] = true,
+					["world"] = true,
+				},
+			},
+			[23] = {
+				["23:0:758000000:533600000:Light's Hope Chapel|nField Photographer"] = {
+					23, -- [1]
+					0, -- [2]
+					0.758, -- [3]
+					0.5336, -- [4]
+					["arrivaldistance"] = 15,
+					["callbacks"] = {
+						["distance"] = {
+						},
+						["minimap"] = {
+						},
+						["world"] = {
+						},
+					},
+					["persistent"] = true,
+					["desc"] = "Light's Hope Chapel|nField Photographer",
+					["silent"] = true,
+					["cleardistance"] = 10,
+					["title"] = "Light's Hope Chapel|nField Photographer",
+					["crazy"] = true,
+					["minimap"] = true,
+					["world"] = true,
+				},
+			},
+			[32] = {
+				["32:0:469800000:749000000:Karazhan|nField Photographer"] = {
+					32, -- [1]
+					0, -- [2]
+					0.4698, -- [3]
+					0.749, -- [4]
+					["arrivaldistance"] = 15,
+					["callbacks"] = {
+						["distance"] = {
+						},
+						["minimap"] = {
+						},
+						["world"] = {
+						},
+					},
+					["persistent"] = true,
+					["desc"] = "Karazhan|nField Photographer",
+					["silent"] = true,
+					["cleardistance"] = 10,
+					["title"] = "Karazhan|nField Photographer",
 					["crazy"] = true,
 					["minimap"] = true,
 					["world"] = true,
@@ -1138,9 +1138,9 @@ TomTomWaypointsMF = {
 		},
 		["Llamama - Stormrage"] = {
 		},
-		["Knutts - Turalyon"] = {
+		["Callil - Turalyon"] = {
 		},
-		["Lackteight - Turalyon"] = {
+		["Brewbies - Turalyon"] = {
 		},
 		["Titt - Turalyon"] = {
 		},
@@ -1148,17 +1148,17 @@ TomTomWaypointsMF = {
 		},
 		["Skratch - Turalyon"] = {
 		},
-		["Arando - Bloodhoof"] = {
+		["Horny - Bloodhoof"] = {
 		},
 		["Bloodcox - Stormrage"] = {
 		},
-		["Horny - Bloodhoof"] = {
+		["Arando - Bloodhoof"] = {
 		},
 		["Danoh - Stormrage"] = {
 		},
-		["Brewbies - Turalyon"] = {
+		["Lackteight - Turalyon"] = {
 		},
-		["Callil - Turalyon"] = {
+		["Knutts - Turalyon"] = {
 		},
 		["Edgelordshue - Stormrage"] = {
 		},
@@ -1166,9 +1166,9 @@ TomTomWaypointsMF = {
 		},
 		["Beer - Bloodhoof"] = {
 		},
-		["Talthalador - Stormrage"] = {
+		["Brobies - Stormrage"] = {
 		},
-		["Druidann - Stormrage"] = {
+		["Kateplusnine - Stormrage"] = {
 		},
 	},
 }

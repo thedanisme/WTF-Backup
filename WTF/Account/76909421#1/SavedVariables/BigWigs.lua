@@ -9,19 +9,66 @@ BigWigs3DB = {
 					["posx"] = 830,
 					["fontSize"] = 11.0000009536743,
 					["font"] = "Gotham-Narrow",
-					["fontOutline"] = "OUTLINE",
 					["lock"] = true,
+					["fontOutline"] = "OUTLINE",
 					["posy"] = 100,
 				},
 			},
 		},
 		["LibDualSpec-1.0"] = {
 		},
+		["BigWigs_Bosses_Millificent Manastorm"] = {
+		},
+		["BigWigs_Bosses_Festerface"] = {
+		},
 		["BigWigs_Plugins_Sounds"] = {
+		},
+		["BigWigs_Bosses_Shivermaw"] = {
+		},
+		["BigWigs_Plugins_Statistics"] = {
+		},
+		["BigWigs_Bosses_Assault on Violet Hold Trash"] = {
+		},
+		["BigWigs_Plugins_Colors"] = {
+		},
+		["BigWigs_Plugins_Raid Icons"] = {
+		},
+		["BigWigs_Plugins_Bars"] = {
+			["profiles"] = {
+				["Default"] = {
+					["BigWigsEmphasizeAnchor_y"] = 359.111054702598,
+					["BigWigsAnchor_y"] = 274.488895535469,
+					["emphasizeGrowup"] = true,
+					["BigWigsAnchor_x"] = 465.06672133075,
+					["texture"] = "Melli",
+					["barStyle"] = "ElvUI",
+					["BigWigsAnchor_width"] = 175.999877929688,
+					["BigWigsEmphasizeAnchor_x"] = 952.17849527864,
+					["font"] = "Gotham-Narrow",
+				},
+			},
+		},
+		["BigWigs_Bosses_Saelorn"] = {
+		},
+		["BigWigs_Plugins_Super Emphasize"] = {
+			["profiles"] = {
+				["Default"] = {
+					["font"] = "Gotham-Narrow",
+				},
+			},
+		},
+		["BigWigs_Bosses_Anub'esset"] = {
+		},
+		["BigWigs_Plugins_Respawn"] = {
 		},
 		["BigWigs_Plugins_BossBlock"] = {
 		},
-		["BigWigs_Plugins_Statistics"] = {
+		["BigWigs_Plugins_Pull"] = {
+			["profiles"] = {
+				["Default"] = {
+					["countType"] = "normal",
+				},
+			},
 		},
 		["BigWigs_Plugins_Messages"] = {
 			["profiles"] = {
@@ -37,77 +84,22 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Bosses_Ashgolm"] = {
-		},
-		["BigWigs_Bosses_Serpentrix"] = {
-		},
-		["BigWigs_Bosses_Inquisitor Tormentorum"] = {
-		},
-		["BigWigs_Bosses_Lady Hatecoil"] = {
-		},
-		["BigWigs_Bosses_King Deepbeard"] = {
-		},
-		["BigWigs_Plugins_Colors"] = {
-		},
-		["BigWigs_Plugins_Raid Icons"] = {
-		},
-		["BigWigs_Bosses_Vault of the Wardens Trash"] = {
-		},
-		["BigWigs_Plugins_Bars"] = {
-			["profiles"] = {
-				["Default"] = {
-					["BigWigsAnchor_y"] = 274.488895535469,
-					["emphasizeGrowup"] = true,
-					["BigWigsAnchor_x"] = 465.06672133075,
-					["texture"] = "Melli",
-					["barStyle"] = "ElvUI",
-					["BigWigsAnchor_width"] = 175.999877929688,
-					["BigWigsEmphasizeAnchor_x"] = 952.17849527864,
-					["font"] = "Gotham-Narrow",
-					["BigWigsEmphasizeAnchor_y"] = 359.111054702598,
-				},
-			},
-		},
-		["BigWigs_Bosses_Wrath of Azshara"] = {
-		},
 		["BigWigs_Plugins_HeroesVoices"] = {
 		},
-		["BigWigs_Bosses_Warlord Parjesh"] = {
-		},
-		["BigWigs_Plugins_Super Emphasize"] = {
-			["profiles"] = {
-				["Default"] = {
-					["font"] = "Gotham-Narrow",
-				},
-			},
-		},
-		["BigWigs_Bosses_Cordana Felsong"] = {
-		},
 		["BigWigs_Plugins_Common Auras"] = {
-		},
-		["BigWigs_Plugins_Respawn"] = {
-		},
-		["BigWigs_Bosses_Glazer"] = {
-		},
-		["BigWigs_Plugins_Pull"] = {
-			["profiles"] = {
-				["Default"] = {
-					["countType"] = "normal",
-				},
-			},
 		},
 		["BigWigs_Plugins_Proximity"] = {
 			["profiles"] = {
 				["Default"] = {
-					["posx"] = 1077.33353303141,
 					["width"] = 233.000045776367,
 					["objects"] = {
 						["background"] = false,
 					},
-					["font"] = "Friz Quadrata TT",
 					["posy"] = 274.488895535469,
+					["posx"] = 1077.33353303141,
 					["lock"] = true,
 					["height"] = 198.999923706055,
+					["font"] = "Friz Quadrata TT",
 				},
 			},
 		},
