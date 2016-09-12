@@ -89,7 +89,7 @@ R Dalaran |QID|42377.9| |N|Return to Dalaran in {Krasus' Landing} (79.66, 46.22)
 T The Brother's Trail |QID|42377| |N|(npc:106337) in {Krasus' Landing} (72.02, 49.24)| |Z|1014 10| |NPC|106337| |PRE|42231|
 A The Silver Hand |QID|42120| |N|(npc:106337) in {Krasus' Landing} (72.02, 49.24)| |Z|1014 10| |NPC|106337| |PRE|42231|
 
-N Ricket |QID|42120| |N|Speak to (npc:111114) in the {Chamber of the Guardian} and get a (item:109076) (29.13, 77.39)| |Z|1014 12| |L|109076| |NPC|111114| |PRE|42231|
+N (npc:111114) |QID|42120| |N|Speak to (npc:111114) in the {Chamber of the Guardian} and get a (item:109076) (29.13, 77.39)| |Z|1014 12| |L|109076| |NPC|111114| |PRE|42231|
 R Dalaran Crater |QID|42120.1| |N|Take the Portal to the {Dalaran Crater} in the {Chamber of the Guardian} (29.20, 77.19)| |Z|1014 12| |PRE|42231|
 
 R Tyr's Fall |QID|42120.2| |N|Travel to the marked location in Tirisfal Glades to the {Whispering Forest} (14.14, 61.12)| |Z|20 0| |PRE|42231|
@@ -108,8 +108,9 @@ C Ritual Defense |SID|0|10| |N|Defend the crypt until the ritual is completed in
 C The Silver Hand |SID|30111|11| |N|Collect the (item:128823) in {The Tomb of Tyr} (37.42, 55.15)| |Z|20 2| |PRE|42231| |QID|42120|
 --C The Silver Hand |QID|42120.3| |N|Claim the (item:128823) in {The Tomb of Tyr} (37.42, 55.15)| |Z|20 2| |PRE|42231|
 
-R Dalaran |QID|42120.4| |N|Take the (npc:106421) in {Tyr's Fall} and return to Tyrosus (15.02, 56.72)| |Z|20 0| |NPC|106421| |PRE|42231|
-T The Silver Hand |QID|42120| |N|(npc:106834) in {Krasus' Landing} (71.94, 45.21)| |Z|1014 10| |NPC|106834| |PRE|42231|
+R Dalaran |QID|42120.4| |N|Take the (npc:106421) in {Tyr's Fall} and return to Tyrosus (15.02, 56.72)| |Z|20 0| |NPC|106421| |PRE|42231| |V|
+T The Silver Hand |QID|42120| |N|(npc:106834) in {Krasus' Landing} (71.94, 45.21)| |Z|1014 10| |NPC|106834| |PRE|42231| |OID|44063|
+T The Silver Hand |QID|42120| |N|(npc:90259) in {Light's Hope Chapel} (43.31, 87.50)| |Z|23 20| |NPC|90259| |PRE|42231|
 
 -- Paladin Holy Hammer Quests End (The Silver Hand)
 
@@ -142,7 +143,8 @@ C The Truthguard |SID|29844| |N|Collect (item:128866) in the {Shrine of the Trut
 --C Shrine of the Truthguard |QID|42017.2| |N|Collect the (item:128866) in the {Shrine of the Truthguard} (28.08, 45.16)| |Z|1017 1| |PRE|42002|
 
 R Dalaran |QID|42017.3| |N|Travel to Dalaran (64.60, 43.38)<br/><br/>You can use the (item:140192)| |U|140192| |Z|1014 10| |PRE|42002|
-T Shrine of the Truthguard |QID|42017| |N|(npc:106209) in {Krasus' Landing} (71.56, 45.07)| |Z|1014 10| |NPC|106209| |PRE|42002|
+T Shrine of the Truthguard |QID|42017| |N|(npc:106209) in {Krasus' Landing} (71.56, 45.07)| |Z|1014 10| |NPC|106209| |PRE|42002| |OID|44063|
+T Shrine of the Truthguard |QID|42017| |N|(npc:90259) in {Light's Hope Chapel} (43.31, 87.50)| |Z|23 20| |NPC|90259| |PRE|42231|
 
 -- Paladin Protection Sword and Shield Quests End (Seven of Hellfire and Eight of Hellfire)
 
@@ -153,7 +155,7 @@ R Light's Hope Chapel |QID|38576.2| |N|Fly to {Light's Hope Chapel} (76.85, 52.8
 R Light's Hope Sanctum |QID|38576.3| |N|Enter {Light's Hope Sanctum} inside {Light's Hope Chapel}. Right click on the floor in the {Light's Hope Chapel} to access it (42.59, 88.59)| |Z|23 20| |PRE|42002, 42231|
 T We Meet at Light's Hope |QID|38576| |N|(npc:100031) in the {Hall of Champions} (63.11, 38.10)| |Z|23 20| |NPC|100031|  |PRE|42002, 42231|
 
-A United Force |QID|38566| |N|(npc:100031) in the {Hall of Champions} (63.34, 37.80)| |Z|23 20| |NPC|100031|
+A A United Force |QID|38566| |N|(npc:100031) in the {Hall of Champions} (63.34, 37.80)| |Z|23 20| |NPC|100031|
 N (npc:103479) |QID|38566.1| |N|Walk with (npc:103479) in the {Hall of Champions} (74.08, 20.13)| |Z|23 20| |NPC|103479|
 N The Libram |QID|38566.2| |N|Inscribe your name in the Libram in the {Hall of Champions} (74.74, 20.28)| |Z|23 20|
 N Order of the Silver Hand |QID|38566.3| |N|Establish the Order of the Silver Hand in the {Hall of Champions} (71.53, 24.09)| |Z|23 20|

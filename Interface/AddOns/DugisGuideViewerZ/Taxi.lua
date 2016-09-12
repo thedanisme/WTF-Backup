@@ -170,11 +170,25 @@ function Taxi:Initialize()
 			local reqType, req = select(i, ...)
 			if reqType=="lvl" then
 				pass = pass and UnitLevel("player")>=tonumber(req)
+			elseif reqType=="passlvl" then
+				local faction
+				for i=requirementsStart,select("#", ...),2 do
+					local arg1, arg2 = select(i, ...)
+					if arg1=="fac" then 
+						faction = arg2
+						break
+					end
+				end
+				pass = UnitLevel("player")>=tonumber(req) and UnitFactionGroup("player")==faction			
 			elseif reqType=="qid" then
+				local passqid = false
 				local qids = GetCreateTable(strsplit(",", req))
 				for _,v in ipairs(qids) do
-					pass = pass and IsQuestFlaggedCompleted(tonumber(v))
+					if IsQuestFlaggedCompleted(tonumber(v)) then
+						passqid = true
+					end
 				end
+				pass = passqid 
 				tPool(qids)
 			elseif reqType=="nqid" then
 				if IsQuestFlaggedCompleted(tonumber(req)) then return end

@@ -214,7 +214,7 @@ A Blessed Blade of the Windseeker |QID|43002| |N|(npc:14347) in {Silithus} (29.6
 
 R Azsuna |N|Travel to {Azsuna} (43.30,44.95)| |Z|1015 0|
 Locate Thunderfury |QID|43002.1| |N|Locate (item:139000) inside the cave (43.30,44.95) (39.70,49.89) (38.51,54.01) (36.32,50.27) (34.61,49.73) (32.73,48.83)| |Z|1015 0|
-N (item:139000) |QID|43002.2| |N|Collect (item:139000) (32.73,48.83|
+N (item:139000) |QID|43002.2| |N|Collect (item:139000) (32.73,48.83)| |Z|1015 0|
 
 R The Maelstrom |QID|44153| |N|Travel to {The Maelstrom} (32.50,32.87)| |Z|1057 0|
 T Light's Charge |QID|44153| |N|Light's Heart {The Maelstrom} (32.50,32.87)| |Z|1057 0|
@@ -261,6 +261,172 @@ C Mission: Investigating Deepholm |QID|42200| |N|Complete the (mission:885) miss
 T Mission: Investigating Deepholm |QID|42200| |N|(npc:96746) in {The Heart of Azeroth} (32.98, 60.39)| |Z|1057 0| |NPC|96746|
 
 N Level 110 Required |N|You need to be at least level 110 to continue with the class campaign quest line| |PL|110|
+
+A The Great Stonemother |QID|41775| |N|(npc:96746) in {The Heart of Azeroth} (32.98, 60.39)| |Z|1057 0| |NPC|96746|
+----
+A Goddess Watch Over You |N|(npc:113686) will appear next to you| |NPC|113686| |OID|44337, 44338|
+A Goddess Watch Over You |QID|44337| |N|(npc:113686) will appear next to you| |NPC|113686| |O|
+A Goddess Watch Over You |QID|44338| |N|(npc:113686) will appear next to you| |NPC|113686| |O|
+N Switch Guide |QID|40890| |N|Complete the (guide:"1018(98-110)#1018(98-110)#1018(98-110)") until you complete the quest (qid:40890)|
+----
+A A Vision of Triumph |QID|44253| |N|(npc:112318) in {The Heart of Azeroth} (30.33,60.68)| |Z|1057 0| |NPC|112318|
+T A Vision of Triumph |QID|44253||N|(npc:112318) in {The Heart of Azeroth} (30.33,60.68)| |Z|1057 0| |NPC|112318|
+A Speaking to the Wind |QID|43886| |N|(npc:111739) in {The Heart of Azeroth} (32.60,49.60)| |Z|1057 0| |NPC|111739|
+C Speaking to the Wind |QID|43886| |N|Speak to (npc:111739) to start a research work order (32.60,49.60)| |Z|1057 0| |NPC|111739|
+T Speaking to the Wind |QID|43886| |N|(npc:111739) in {The Heart of Azeroth} (32.60,49.60)| |Z|1057 0| |NPC|111739|
+
+R  Deepholm |QID|41775.1| |N|Take the portal to {Deepholm}  (30.56,48.72) (27.65,50.94)| |Z|1057 0|
+T The Great Stonemother |QID|41775| |N|(npc:42465) in {Therazane} (56.34,12.27)| |Z|640 0| |NPC|42465| |POI|
+A The Return of Twilight |QID|42068| |N|(npc:42465) in {Therazane} (56.34,12.27)| |Z|640 0| |NPC|42465|
+T The Return of Twilight |QID|42068| |N|(npc:105995) in {Therazane} (64.03,70.55)| |Z|640 0| |NPC|105995| |POI|
+A Destroying the Cult |QID|41777| |N|(npc:106001) in {Therazane}, next to you| |Z|640 0| |NPC|106001|
+A The Master's Plan |QID|41897| |N|(npc:106001) in {Therazane}, next to you| |Z|640 0| |NPC|106001|
+
+N (item:136791) |QID|41897.1||N|Collect (item:136791) in {The Twilight Throne} (63.99,75.14)| |Z|640 0|
+N (item:136792) |QID|136792| |QID|41897.1||N|Collect (item:136792) in {The Twilight Throne} (61.74,71.99)| |Z|640 0|
+N (item:136793) |QID|136793| |QID|41897.1||N|Collect (item:136793) in {The Twilight Throne} (62.37,75.96)| |Z|640 0|
+T The Master's Plan |QID|41897| |N|(npc:106001) in {Therazane}, next to you| |Z|640 0| |NPC|106001|
+C Destroying the Cult |QID|41777| |N|Kill any 15 Twilight's Hammer cultists at {The Twilight Throne} (63.00,75.26)| |Z|640 0| 
+T Destroying the Cult |QID|41777| |N|(npc:106001) in {The Twilight Throne}, next to you| |Z|640 0| |NPC|106001| |POI|
+A Unleashing the Elements |QID|41898| |N|(npc:106001) in {The Twilight Throne}, next to you| |Z|640 0| |NPC|106001|
+A Held Captive! |QID|41899| |N|(npc:106001) in {The Twilight Throne}, next to you| |Z|640 0| |NPC|106001|
+
+R Twilight Depths |QID|41898| |N|Travel to {Twilight Depths} (40.43, 14.38)| |Z|640 1|
+N Disrupt the First Ritual |QID|41898.1| |N|Go to the lower floor and Disrupt the First Ritual (50.40,87.83)| |Z|640 2|
+N Disrupt the Second Ritual |QID|41898.2| |N|Disrupt the Second Ritual in {Twilight Depths} (36.59,70.90)| |Z|640 2|
+N Disrupt the Third  Ritual |QID|41898.3| |N|Disrupt the Second Ritual in {Twilight Depths} (21.05,47.77)| |Z|640 2|
+C Held Captive! |QID|41899| |N|Rescue 12 (npc:105794) in {Twilight Depths} (64.08,73.35)| |Z|640 2| |POI|
+T Unleashing the Elements |QID|41898| |N|(npc:106001) in {Twilight Depths}, next to you| |NPC|106001|
+T Held Captive! |QID|41899| |N|(npc:106001) in {Twilight Depths}, next to you| |NPC|106001|
+A The Twilight Master |QID|42065| |N|(npc:106001) in {Twilight Depths}, next to you| |NPC|106001|
+K (npc:105311) |QID|42065.1| |N|Kill (npc:105311) / (npc:106225) in {Twilight Depths} (37.50,15.63)| |Z|640 2| |NPC|105311, 106225|
+N Twilight Portal |QID|42065.2| |N|Use the twilight portal  (39.45,11.58)| |Z|640 2|
+T The Twilight Master |QID|42065| |N|(npc:42465) in {Therazane} (56.34,12.26)| |Z|640 0| |NPC|42465|
+A A Promise of Earth |QID|41900| |N|(npc:42465) in {Therazane} (56.34,12.26)| |Z|640 0| |NPC|42465|
+
+R The Heart of Azeroth |TID|41900| |N|Travel to {The Heart of Azeroth} (32.98, 60.39)| |Z|1057 0| 
+T A Promise of Earth |QID|41900| |N|(npc:96746) in {The Heart of Azeroth} (32.98, 60.39)| |Z|1057 0| |NPC|96746|
+A Return to the Firelands |QID|42208| |N|(npc:96746) in {The Heart of Azeroth} (32.98, 60.39)| |Z|1057 0| |NPC|96746|
+A Worldmender |QID|42988| |N|(npc:96746) in {The Heart of Azeroth} (32.98, 60.39)| |Z|1057 0| |NPC|96746|
+A The Maelstrom Pillar: Earth |QID|42997| |N|(npc:96746) in {The Heart of Azeroth} (32.98, 60.39)| |Z|1057 0| |NPC|96746|
+
+N As you go...  |AYG|42989| |N|Begin a "Firelands" Mission, this mission will take up to 1 day to complete| |QID|42208|
+A Champion: Muln Earthfury |QID|41746| |N|Speak to (npc:106518) to recruit as a follower in {The Heart of Azeroth} (31.99,43.81)| |Z|1057 0| |NPC|106518| |E|
+A Champion: Avalanchion |QID|41747| |N|Speak to (npc:106524) to recruit as a follower in {The Heart of Azeroth} (34.65,34.10)| |Z|1057 0| |NPC|106524| |E|
+
+T The Maelstrom Pillar: Earth |QID|42997| |N|(npc:109464) in {The Heart of Azeroth} (29.43,77.88)| |Z|1057 0| |NPC|109464|
+A Ma'haat the Indomitable |QID|42989| |N|(npc:109464) in {The Heart of Azeroth} (29.43,77.88)| |Z|1057 0| |NPC|109464|
+N (item:124124)  |QID|42989| |N|Collect 10 (item:124124), you can collect it from completing World Quests, Dungeon and Gathering professions| |L|124124 10|
+T Ma'haat the Indomitable |QID|42989| |N|(npc:42470) in {Therazane} (56.94,14.23)| |Z|640 0| |NPC|42470|
+A A Taste For Blood |QID|42995| |N|(npc:42470) in {Therazane} (56.94,14.23)| |Z|640 0| |NPC|42470| |E|
+A Return to Janai |QID|43003| |N|(npc:42470) in {Therazane} (56.94,14.23)| |Z|640 0| |NPC|42470|
+
+R The Heart of Azeroth |TID|43003| |N|Travel to {The Heart of Azeroth} (29.43,77.88)| |Z|1057 0| 
+T Return to Janai |QID|43003| |N|(npc:109464) in {The Heart of Azeroth} (29.43,77.88)| |Z|1057 0| |NPC|109464|
+A The Earthen Amulet |QID|42990| |N|(npc:109464) in {The Heart of Azeroth} (29.43,77.88)| |Z|1057 0| |NPC|109464|
+N Switch Guide |N|Switch to (guide:"1065(98-110)") and kill (npc:91007) to collect (item:138999) for the quest (qid:42990)| |QID|42990|
+C The Earthen Amulet |QID|42990| |N|Kill (npc:91007) in (guide:"1065(98-110) and collect (item:138999)| |QID|42990|
+T The Earthen Amulet |QID|42990| |N|(npc:109464) in {The Heart of Azeroth} (29.43,77.88)| |Z|1057 0| |NPC|109464|
+----
+R Dalaran |OID|44448| |N|Travel to {Dalaran} (28.46,48.33)| |Z|1014 10| |NPC|90417| 
+T Goddess Watch Over You |QID|44337| |N|(npc:90417) in {Dalaran} (28.46,48.33)| |Z|1014 10| |NPC|90417| |O|
+T Goddess Watch Over You |QID|44338| |N|(npc:90417) in {Dalaran} (28.46,48.33)| |Z|1014 10| |NPC|90417| |O|
+A In the House of Light and Shadow |QID|44448| |N|(npc:90417) in {Dalaran} (28.46,48.33)| |Z|1014 10| |NPC|90417| 
+C In the House of Light and Shadow |QID|44448| |N|Take the Tears of Elune to Light's Heart in your Order Hall (45.32,30.18)| |Z|1035 1|
+T In the House of Light and Shadow |QID|44448| |N|(npc:90417) in {Dalaran} (28.49,48.33)|  |Z|1014 10| |NPC|90417| 
+----
+N As you go...  |AYG|42988| |N|Complete 5 "Firelands" mission, these mission will each take up to 1 day to complete| |QID|42208|
+C Worldmender |QID|42988| |N|Complete 30 world quests| 
+T Worldmender |QID|42988| |N|(npc:96746) in {The Heart of Azeroth} (32.98, 60.39)| |Z|1057 0| |NPC|96746|
+C Return to the Firelands |QID|42208.1| |N|Complete 5 Return to the Firelands Missions (33.53,59.28)| |Z|1057 0|
+T Return to the Firelands |QID|42208| |N|(npc:96746) in {The Heart of Azeroth} (32.98, 60.39)| |Z|1057 0| |NPC|96746|
+A Ascendant of Flames |QID|41772| |N|(npc:96746) in {The Heart of Azeroth} (32.98, 60.39)| |Z|1057 0| |NPC|96746|
+
+R Firelands |QID|41772.1| |N|Take the Firelands Portal (31.09,61.02)| |Z|1057 0| |F|1071 0|
+T Ascendant of Flames |QID|41772| |N|(npc:105207) in {Firelands} (27.34,82.86)| |Z|1071 0| |NPC|105207|
+A The Firelord's Command |QID|41773| |N|(npc:105055) in {Firelands} (27.00,82.17)| |Z|1071 0| |NPC|105055|
+K (npc:107097) |QID|41773.1| |N|Kill (npc:107097) in {Firelands} (30.63,79.36) (42.87,76.49)| |Z|1071 0| |NPC|107097|
+K (npc:107096) |QID|41773.2| |N|Kill (npc:107096) in {Firelands} (48.07,62.97)| |Z|1071 0| |NPC|107096|
+K (npc:105227) |QID|41773.3| |N|Kill (npc:105227) and collect (item:136535) in {Firelands}<br/><b>You can avoid the elites (53.80,66.33) (65.55,57.67) (71.34,68.15) (66.10,74.81)| |Z|1071 0|
+T The Firelord's Command |QID|41773| |N|(npc:105120) in {Firelands} (69.82,70.19) (70.13,63.76) (49.36,42.79) (49.23,29.97)| |Z|1071 0| |NPC|105120|
+A The Brand of Damnation |QID|41934| |N|(npc:105120) in {Firelands} (49.23,29.97)| |Z|1071 0| |NPC|105120|
+
+R Beth'tilac's Lair |QID|41934.1| |N|Use (npc:107236) to fly to {Beth'tilac's Lair} (47.40,30.77)| |Z|1071 0| |NPC|107236| |V|
+N Awaken Emberscar |QID|41934.2| |N|Click on Emberscar, Brand of Damnation in (25.79,58.26) (23.12,51.58) (16.53,47.57) (26.61,44.27) (21.18,36.33)| |Z|1071 0|
+C The Brand of Damnation |QID|41934| |N|Kill the waves of enemies and (npc:105112) in {Beth'tilac's Lair} (21.18,36.33)| |Z|1071 0| |NPC|105112|
+T The Brand of Damnation |QID|41934| |N|(npc:105120) in  {Beth'tilac's Lair} (25.56,41.36) (36.34,39.11) (49.36,42.79) (49.23,29.97)| |Z|1071 0| |NPC|105120|
+A Allegiance of Flame |QID|41888| |N|(npc:105120) in  {Beth'tilac's Lair} (49.23,29.97)| |Z|1071 0| |NPC|105120|
+
+N Use the Firelands Portal |QID|41888.1| |N|Use the Firelands Portal  to return to {The Maelstrom} (49.36,42.79) (60.32,57.57) (56.26,63.23) (30.89,78.36) (24.94,92.84)| |Z|1071 0| 
+N (npc:106519) |QID|41888.2| |N|Speak to (npc:106519) in {The Heart of Azeroth}  (34.70,78.70)| |Z|1057 0| |NPC|106519|
+T Allegiance of Flame |QID|41888| |N|(npc:96746) in {The Heart of Azeroth} (32.98, 60.39)| |Z|1057 0| |NPC|96746|
+A Champion: Scaldius |QID|41745| |N|Speak to (npc:106649) to recruit as a follower (29.66,57.85)| |Z|1057 0| |E| |NPC|106649|
+A Champion: Rehgar Earthfury |QID|41744| |N|Speak to (npc:106517) to recruit as a follower (31.46,51.90)| |Z|1057 0| |E| |NPC|106517|
+A A Hero's Weapon |QID|43418| |N|(npc:110495) in {The Heart of Azeroth} (35.22,46.42)| |Z|1057 0| |NPC|110495|
+C A Hero's Weapon |QID|43418| |N|Use the Commander's Valor ability to empower your Artifact| |Z|1057 0| |NPC|110495|
+T A Hero's Weapon |QID|43418| |N|(npc:110495) in {The Heart of Azeroth} (35.22,46.42)| |Z|1057 0| |NPC|110495|
+----
+A Awakenings |QID|44464| |N|(npc:113857) in {The Heart of Azeroth} (32.48,32.80)| |Z|1057 0| |NPC|113857|
+
+R Val'sharah |QID|44464| |N|Travel {Val'sharah} (54.40,73.17)| |Z|1018 0|
+C Awakenings |QID|44464.1| |N|Travel to {Val'sharah} and use (spell:226956) to witness the awakening of Illidan Stormrage (54.40,73.17)| |Z|1018 0|
+
+T Awakenings |QID|44464| |N|(npc:113857) in {The Heart of Azeroth} (32.48,32.80)| |Z|1057 0| |NPC|113857|
+A An Unclear Path |QID|44466| |N|(npc:113857) in {The Heart of Azeroth} (32.48,32.80)| |Z|1057 0| |NPC|113857|
+
+R Val'Shara |QID|44466| |N|Travel to {Val'Shara}  (54.96,53.43) (53.29,49.94) (52.11,43.99)| |Z|1018 0|
+N Witness Illidan's Resilience |QID|44466.1| |N|Use (spell:226956) to witness the awakening of Illidan Resilience (45.54,34.75)| |Z|1018 0|
+
+R The Heart of Azeroth |TID|44466| |N|Travel to {The Heart of Azeroth} (32.48,32.80)| |Z|1057 0|
+T An Unclear Path |QID|44466| |N|(npc:113857) in {The Heart of Azeroth} (32.48,32.80)| |Z|1057 0| |NPC|113857|
+A Ravencrest's Legacy |QID|44479| |N|(npc:113857) in {The Heart of Azeroth} (32.48,32.80)| |Z|1057 0| |NPC|113857|
+R Val'Shara |QID|44479| |N|Travel to {Val'Shara} (54.96,53.43)| |Z|1018 0|
+N (spell:226956) |N|Go to the destination to use (spell:226956) to begin the Ravencrest's Legacy scenario (54.96,53.43) (52.81,50.41) (46.98,50.23) (44.28,49.94) (42.08,46.29)| |Z|1018 0| |QID|44479|
+N Report to Kur'talos Ravencrest |SID|33154|1| |N|Report to (npc:113046) in  {Ravencourt}| |QID|44479| |NPC|113046|
+N Repair the Deactivated Moon Guard Portal |SID|33155|2| |N|Click Deactivated Moon Guard Portal in {Ravencourt}| |QID|44479|
+K (npc:113555) |SID|33162|3| |N|Secure the Rampart by Defeating (npc:113555) (42.95,46.32) (44.27,49.58)| |Z|1099 0| |QID|44479|
+N Enter the Upper Ramparts of the Courtyard |SID|33169|4| |N|Follow the path to the upper ramparts of the courtyard (44.28,49.76) (44.51,51.22 )| |Z|1099 0| |QID|44479|
+N Activate the Moon Guard Portal |SID|33174|5| |N|Click on Deactivated Moon Guard Portal in each waypoint (44.51,51.22) (40.98,51.48) (43.71,50.93)| |Z|1099 0|  |QID|44479
+K (npc:114137) |SID|33184|6| |N|Use (spell:227154) to kill (npc:114137) to end the invasion (43.09,52.18)| |Z|1099 0| |QID|44479| |NPC|114137|
+
+R Mausoleum |QID|44414| |N|Travel to {Mausoleum} (38.75, 53.07)| |Z|1099 0| 
+A Felspawns of Lothros |QID|44414| |N|(npc:113361) in {Mausoleum} (38.75, 53.07)| |Z|1099 0| |NPC|113361|
+C Felspawns of Lothros |QID|44414| |N|Defeat (npc:113786) in {Mausoleum} (40.63, 53.01)| |Z|1099 0| |NPC|113786|
+T Felspawns of Lothros |QID|44414| |N|(npc:113361) in {Mausoleum} (40.42, 53.01)| |Z|1099 0| |NPC|113361|
+A The Red Axe |QID|44415| |N|(npc:113361) in {Mausoleum} (40.42, 53.01)| |Z|1099 0| |NPC|113361|
+C The Red Axe |QID|44415| |N|Close the Unstable Portals and make your way to (npc:113355) (41.37, 49.89)| |Z|1099 0| |NPC|113355|
+T The Red Axe |QID|44415| |N|(npc:113355) in {Mausoleum} (43.80, 50.40)| |Z|1099 0| |NPC|113355|
+A Hunter of Night |QID|44416| |N|(npc:113355) in {Mausoleum} (43.84, 50.41)| |Z|1099 0| |NPC|113355|
+C Hunter of Night |QID|44416| |N|Defeat (npc:113825) in {Mausoleum} (43.29, 50.45)| |Z|1099 0| |NPC|113825|
+T Hunter of Night |QID|44416| |N|(npc:113355) in {Mausoleum} (41.59, 50.53)| |Z|1099 0| |NPC|113355|
+
+R Raven's Glory |QID|44479| |N|Travel to {Raven's Glory}  (42.86, 50.56) (42.97, 48.79)| |Z|1099 0|
+C When Good Men Do Nothing |SID|33186| |N|Enter Raven's Glory and use (spell:227236) to destroy the Colossal Siegebreaker in {Raven's Glory} (42.97, 48.79)| |Z|1099 0| |QID|44479|
+
+R The Heart of Azeroth |TID|44479| |N|Travel to {The Heart of Azeroth} (32.48,32.80)| |Z|1057 0|
+T Ravencrest's Legacy |QID|44479| |N|(npc:113857) in {The Heart of Azeroth} (32.48,32.80)| |Z|1057 0| |NPC|113857|
+A In My Father's House |QID|44480| |N|(npc:113857) in {The Heart of Azeroth} (32.48,32.80)| |Z|1057 0| |NPC|113857|
+
+R Temple of Zin-Malor |QID|44480| |N|Travel to {Temple of Zin-Malor} (35.11, 49.88)| |Z|181 0|
+C In My Father's House |QID|44480| |N|Use (spell:226956) witness Illidan's Sacrifice in Azshara on the continent of Kalimdor (35.11, 49.88) | |Z|816 0|
+
+R The Heart of Azeroth |TID|44480| |N|Travel to {The Heart of Azeroth} (32.48,32.80)| |Z|1057 0|
+T In My Father's House |QID|44480| |N|(npc:113857) in {The Heart of Azeroth} (32.48,32.80)| |Z|1057 0| |NPC|113857|
+A Destiny Unfulfilled |QID|44497| |N|(npc:113857) in {The Heart of Azeroth} (32.48,32.80)| |Z|1057 0| |NPC|113857|
+
+R The Black Temple |QID|44497| |N|Travel to {The Black Temple} (72.97, 44.12)| |Z|473 0|
+N (spell:226956) |N|Use (spell:226956) in {The Black Temple} (72.97, 44.12)| |Z|473 0| |F|1085 1| |QID|44497| 
+C Examine the Skull of Gul'dan. |SID|32029|1| |N|Examine the Skull of Gul'dan in {Temple Summit} (52.70, 71.26)| |Z|1085 1| |QID|44497| 
+C Confront Akama |SID|31955|1| |N|Confront Akama in {Temple Summit} (52.70, 71.26)| |Z|1085 1| |QID|44497| 
+C You Are Not Prepared! |SID|0|2| |N|Survive until your reinforcements arrive in {Temple Summit} (52.92, 60.84)| |Z|1085 1| |QID|44497| 
+C To The Skies |SID|32682|3| |N|Summon the (npc:22997) and defend it in {Temple Summit} (55.95, 75.70)| |Z|1085 1| |NPC|22997| |QID|44497| 
+C The Final Countdown |SID|32867|4| |N|Use Metamorphosis ability in {Temple Summit} (54.48, 72.76)| |Z|1085 1| |QID|44497| 
+C The Demon Within |SID|32865|5| |N|Destroy the Warlocks in {Temple Summit} (52.27, 64.57)| |Z|1085 1| |QID|44497| 
+C Defeat Maiev |SID|32942|6| |N|Defeat (npc:112867) in {Temple Summit} (52.16, 69.92)| |Z|1085 1| |NPC|112867| |QID|44497| 
+C Destiny Unfulfilled |QID|44497| |N|Witness True Betrayal in Shadowmoon Valley on the fringes of Outland., in {Temple Summit} (52.16, 69.92)| |Z|1085 1|
+
+R The Heart of Azeroth |TID|44496| |N|Travel to {The Heart of Azeroth} (32.48,32.80)| |Z|1057 0|
+T Destiny Unfulfilled |QID|44496| |N|(npc:113857) in {The Heart of Azeroth} (32.48,32.80)| |Z|1057 0| |NPC|113857|
 
 N Guide Complete
 

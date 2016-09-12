@@ -27818,6 +27818,16 @@ function TaxiData:Initialize()
 			["767:2"] = {
 				["767:1"] = "51.0,53.0-767:1:48.9,82.1|50.0,90.1-767:1:50.0,39.7",
 			},
+			[640] ={
+				["640:1"] = "62.78,78.04-640:1:40.43,14.38",
+			},
+			["640:1"] ={
+				[640] = "40.43,14.38-640:0:62.78,78.04",
+				["640:2"] = "73.95,79.27-640:2:65.61,72.72",
+			},
+			["640:2"] ={
+				["640:1"] = "65.61,72.72-640:1:73.95,79.27",
+			},
 		}, -- [5]
 		{
 			[807] = {
@@ -28563,16 +28573,16 @@ function TaxiData:Initialize()
 			":41:0:2366366369:41:0:1180925002:fac:Alliance", --Darnassus -Ruth'eran Village
 			":41:0:1180925002:41:0:2366366369:fac:Alliance",
 
-			":321:1:2099405507:720:0:2357680044:fac:Horde", -- Orgrimmar - Uldum 
-			":321:1:2193449478:606:0:2726706133:qid:25316:fac:Horde", -- Orgrimmar - Mount Hyjal 
-			":606:0:2726444692:321:1:2153275645:qid:25316:fac:Horde", -- Mount Hyjal - Orgrimmar 
+			":321:1:2099405507:720:0:2357680044:fac:Horde:passlvl:90", -- Orgrimmar - Uldum 
+			":321:1:2193449478:606:0:2726706133:qid:25316:fac:Horde:passlvl:90", -- Orgrimmar - Mount Hyjal 
+			":606:0:2726444692:321:1:2153275645:qid:25316:fac:Horde:passlvl:90", -- Mount Hyjal - Orgrimmar 
 		}, -- Kalimdor
 		{
 			":301:0:3144429320:709:0:3164314613:lvl:85:fac:Alliance", --Earthshrine Portals - Stormwind - Tol Barad
 			":709:0:3231225522:301:0:3152031439:lvl:85:fac:Alliance", --Tol Barad - Stormwind
-			":301:0:3148098344:614:0:2392504928:qid:14482:fac:Alliance", --Stormwind - Vash'jir 
-			":301:0:3235981837:700:0:3413624609:qid:27545:fac:Alliance", --Stormwind - Twilight Highlands 
-			":700:0:3413624609:301:0:3228510985:qid:27545:fac:Alliance", --Twilight Highlands - Stormwind 
+			":301:0:3148098344:614:0:2392504928:qid:14482:fac:Alliance:passlvl:90", --Stormwind - Vash'jir 
+			":301:0:3235981837:700:0:3413624609:qid:27545:fac:Alliance:passlvl:90", --Stormwind - Twilight Highlands 
+			":700:0:3413624609:301:0:3228510985:qid:27545:fac:Alliance:passlvl:90", --Twilight Highlands - Stormwind 
 
 			":20:0:2553392291:480:0:2174102044:fac:Horde", --Tirisfal Glades - Silvermoon City
 			":480:0:2174102044:20:0:2553392291:fac:Horde", -- Silvermoon City - Tirisfal Glades
@@ -28663,8 +28673,8 @@ function TaxiData:Initialize()
 	TaxiData.StaticPortalData = 
 	{
 		{
-			":301:0:3231790199:720:0:2357680044:qid:28112:fac:Alliance", --Stormwind - Uldum 
-			":301:0:3271962584:606:0:2726771682:qid:25316:fac:Alliance", --Stormwind - Hyjal 
+			":301:0:3231790199:720:0:2357680044:qid:28112:fac:Alliance:passlvl:90", --Stormwind - Uldum 
+			":301:0:3271962584:606:0:2726771682:qid:25316:fac:Alliance:passlvl:90", --Stormwind - Hyjal 
 			":811:4:3039579669:471:0:2045286692:fac:Alliance", -- Shrine of Two Moons (Vale of Eternal Blossom) > Exodar
 			":811:4:3315494796:381:0:1866975591:fac:Alliance", -- Shrine of Two Moons (Vale of Eternal Blossom) > Darnassus 
 
@@ -28673,10 +28683,10 @@ function TaxiData:Initialize()
 
 			":504:1:2378907982:321:2:2073797938:fac:Horde", --Dalaran - Orgrimmar
 			":481:0:2441641203:321:2:2073797938:fac:Horde", --Shattrath - Orgrimmar			
-			":640:0:2187364330:321:1:2153275645:qid:27203:fac:Horde", -- Deepholm - Orgrimmar 
+			":640:0:2187364330:321:1:2153275645:qid:27203:fac:Horde:passlvl:90", -- Deepholm - Orgrimmar 
 			":709:0:2418199529:321:1:2153275645:lvl:85:fac:Horde", -- Tol Barad - Orgrimmar
-			":700:0:3159001355:321:1:2153275645:qid:26830:fac:Horde", -- Twilight Highlands - Orgrimmar 
-			":806:0:1224680418:321:1:2948491323:lvl:85:qid:29690:fac:Horde", -- Jade Forest > Orgrimmar (req level 85 and QID 29690)
+			":700:0:3159001355:321:1:2153275645:qid:26830:fac:Horde:passlvl:90", -- Twilight Highlands - Orgrimmar 
+			":806:0:1224680418:321:1:2948491323:lvl:85:qid:29690:fac:Horde:passlvl:90", -- Jade Forest > Orgrimmar (req level 85 and QID 29690)
 			":811:2:3161283759:362:0:954018606:fac:Horde", -- Shrine of Two Moons (Vale of Eternal Blossom) > Thunder Bluff 
 			":811:2:3151523164:321:1:2948491323:fac:Horde", -- Shrine of Two Moons (Vale of Eternal Blossom) > Orgrimmar
 			":903:2:3161283759:362:0:954018606:fac:Horde", -- Shrine of Two Moons (Vale of Eternal Blossom) > Thunder Bluff 
@@ -28709,18 +28719,18 @@ function TaxiData:Initialize()
 			":465:0:89.22,51.00:301:0:49.59,86.53:fac:Alliance", --Hellfire Peninsula by Dark Portal - Stormwind
 			":465:0:3806758706:301:0:2129976708:fac:Alliance", --Hellfire Peninsula  below steps - Stormwind
 			
-			":640:0:2083949011:301:0:3197841138:qid:27203:fac:Alliance", --Deepholm - Stormwind 
-			":606:0:2688891702:301:0:3197841138:qid:25316:fac:Alliance", --Hyjal - Stormwind 
-			":806:0:1985796596:301:0:2909154183:lvl:85:qid:31732:fac:Alliance", -- Jade Forest > Stormwind City (req level 85 and QID 31732)
+			":640:0:2083949011:301:0:3197841138:qid:27203:fac:Alliance:passlvl:90", --Deepholm - Stormwind 
+			":606:0:2688891702:301:0:3197841138:qid:25316:fac:Alliance:passlvl:90", --Hyjal - Stormwind 
+			":806:0:1985796596:301:0:2909154183:lvl:85:qid:31732:fac:Alliance:passlvl:90", -- Jade Forest > Stormwind City (req level 85 and QID 31732)
 			":811:4:3068615786:301:0:2129976708:fac:Alliance", -- Shrine of Two Moons (Vale of Eternal Blossom) > Stormwind City
 			":811:4:3181996224:341:0:1095636371:fac:Alliance", -- Shrine of Two Moons (Vale of Eternal Blossom) > Ironforge 
 			":809:0:2103078662:301:0:2909154183:fac:Alliance", -- Shrine of the Ox > Stormwind City
 
 			":321:2:44.82,68.03:19:0:72.68,49.37:lvl:90:fac:Horde", --Orgrimmar > Blasted Lands
 			
-			":321:1:2114215292:614:0:2206309382:qid:25924:fac:Horde", -- Orgrimmar - Vash'jir 
+			":321:1:2114215292:614:0:2206309382:qid:25924:fac:Horde:passlvl:90", -- Orgrimmar - Vash'jir 
 			":321:1:2036032665:709:0:2395589879:lvl:85:fac:Horde", -- Orgrimmar - Tol Barad
-			":321:1:2157012196:700:0:3162474671:qid:26830:fac:Horde", -- Orgrimmar - Twilight Highlands 
+			":321:1:2157012196:700:0:3162474671:qid:26830:fac:Horde:passlvl:90", -- Orgrimmar - Twilight Highlands 
 			":811:2:3188030255:382:0:3632736717:fac:Horde", -- Shrine of Two Moons (Vale of Eternal Blossom) > Undercity
 			":811:2:3255207587:480:0:2502242627:fac:Horde", -- Shrine of Two Moons (Vale of Eternal Blossom) > Silvermoon 
 			":903:2:3188030255:382:0:3632736717:fac:Horde", -- Shrine of Two Moons (Vale of Eternal Blossom) > Undercity
@@ -28775,12 +28785,12 @@ function TaxiData:Initialize()
 			":1048:0:31.76,26.62:490:0:50.43,29.75:cls:DRUID:qid:40645",--Emerald Dreamway > Grizzly Hills	
 		}, --Northrend
 		{
-			":301:0:3143512645:640:0:2092992794:qid:27203:fac:Alliance", --Stormwind - Deepholm 
-			":321:1:2183552263:640:0:2172946312:qid:27203:fac:Horde", -- Orgrimmar - Deepholm  
+			":301:0:3143512645:640:0:2092992794:qid:27203:fac:Alliance:passlvl:90", --Stormwind - Deepholm 
+			":321:1:2183552263:640:0:2172946312:qid:27203:fac:Horde:passlvl:90", -- Orgrimmar - Deepholm  
 		}, --Maelstrom
 		{
-			":321:1:2948491323:806:0:1224680418:lvl:85:qid:29690:fac:Horde", -- Orgrimmar > Jade Forest (req level 85 and QID 29690)
-			":301:0:2952866787:806:0:1983502790:lvl:85:qid:31732:fac:Alliance", -- Stormwind City > Jade Forest (req level 85 and QID 31732)
+			":321:1:2948491323:806:0:1224680418:lvl:85:qid:29690:fac:Horde:passlvl:90", -- Orgrimmar > Jade Forest (req level 85 and QID 29690)
+			":301:0:2952866787:806:0:1983502790:lvl:85:qid:31732:fac:Alliance:passlvl:90", -- Stormwind City > Jade Forest (req level 85 and QID 31732)
 			
 			":1014:10:36.55,66.88:811:0:86.30,61.05:fac:Alliance",--Dalaran Legion > Vale of Eternal Blossoms
 			":1014:10:55.03,25.63:811:0:62.50,21.82:fac:Horde",--Dalaran Legion > Vale of Eternal Blossoms			

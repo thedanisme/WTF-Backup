@@ -183,9 +183,11 @@ local function getFloorData(areaID, mapData, f)
 end
 local function getSystemPosition( areaID, mapData, f, x, y )
 	mapData = getFloorData(areaID, mapData, f)
-	x = x * mapData.width + mapData.xOffset;
-	y = y * mapData.height + mapData.yOffset;
-	return x, y;
+	if mapData and mapData.width then  
+		x = x * mapData.width + mapData.xOffset;
+		y = y * mapData.height + mapData.yOffset;
+		return x, y;
+	end
 end
 
 local function printError( ... )
@@ -1967,6 +1969,20 @@ WorldMapSize = {
 		["originSystem"] = 646,
 		["xOffset"] = -3052.08325195313,
 		["width"] = 5099.99987792969,
+		[1] = {
+			["height"] = 237.08329772949,
+			["microName"] = "TwilightDepths",
+			["width"] = 355.62493181229,
+			["xOffset"] = -2.8129200935364,
+			["yOffset"] = -160,
+		},
+		[2] = {
+			["height"] = 520,
+			["microName"] = "TwilightDepths",
+			["width"] = 780,
+			["xOffset"] = -252.5,
+			["yOffset"] = -350,
+		},		
 	},
 	[768] = {
 		{
@@ -5563,8 +5579,12 @@ WorldMapSize = {
 	},
 	[751] = {
 		["firstFloor"] = 0,
-		["originSystem"] = -1,
-		["system"] = -1,
+		["system"] = 730,
+		["yOffset"] = -1370.83325195313,
+		["height"] = 1033.33325195313,
+		["originSystem"] = 730,
+		["xOffset"] = -1556.25,
+		["width"] = 1550,
 	},
 	[879] = {
 		["firstFloor"] = 0,
@@ -6154,7 +6174,7 @@ WorldMapSize = {
 			["xOffset"] = -5439.580078125,
 			["yOffset"] = 2806.25
 		},
-	},	
+	},		
 }
 
 MicroDungeonSize = {

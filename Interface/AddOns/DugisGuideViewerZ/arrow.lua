@@ -768,7 +768,7 @@ function DugisArrow:Initialize()
 			local desc = GetPOIWaypointDescription(poiButton)
 			local _, posX, posY, objective = QuestPOIGetIconInfo(questId)
             
-            if poiButton.worldQuest == true or poiButton.worldQuest == false then
+            if poiButton.worldQuest == true or poiButton.worldQuest == false then --false for bonus objectives
                 --reset = true
                 desc = C_TaskQuest.GetQuestInfoByQuestID(questId);
 				if desc then 
