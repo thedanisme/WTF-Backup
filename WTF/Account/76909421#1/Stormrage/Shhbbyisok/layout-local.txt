@@ -41,13 +41,6 @@ X: -83
 Y: 108
 W: 700
 H: 410
-Frame: _NPCScanButton
-FrameLevel: 1
-Anchor: BOTTOM
-X: 0
-Y: 128
-W: 150
-H: 42
 Frame: TomTomCrazyArrow
 FrameLevel: 1
 Anchor: CENTER

@@ -1,0 +1,10 @@
+
+NPCScanDB = {
+	["profileKeys"] = {
+		["Shhbbyisok - Stormrage"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}
