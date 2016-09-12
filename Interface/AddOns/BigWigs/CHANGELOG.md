@@ -1,7 +1,8 @@
 # BigWigs
 
-## [v9-2-g2c57bdc](https://github.com/BigWigsMods/BigWigs/tree/2c57bdc1d7474694d22e701db7a1c4e7422281c9) (2016-09-10) [](#top)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v9...2c57bdc1d7474694d22e701db7a1c4e7422281c9)
+## [v9-3-ga90ac36](https://github.com/BigWigsMods/BigWigs/tree/a90ac36d951209e9065c559f472d73b445f0bc3f) (2016-09-11) [](#top)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v9...a90ac36d951209e9065c559f472d73b445f0bc3f)
 
+-   zhCN/zhTW update. (#34)  
 -   BossBlock: Add Maw of Souls cinematic.  
 -   ruRU update. (#33)  

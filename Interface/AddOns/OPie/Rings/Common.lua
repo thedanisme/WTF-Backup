@@ -55,7 +55,7 @@ do -- OPieTracker
 	EV.RegisterEvent("PLAYER_ENTERING_WORLD", function() return "remove", preClick(col, nil, col) end)
 end
 do -- OPieAutoQuest
-	local whitelist, questItems, collection, inring, colId, ctok, current, changed = {[33634]=true, [35797]=true, [37888]=true, [37860]=true, [37859]=true, [37815]=true, [46847]=true, [47030]=true, [39213]=true, [42986]=true, [49278]=true, [86425]={31332, 31333, 31334, 31335, 31336, 31337}, [87214]={31752, 34774}, [90006]=true, [86536]=true, [86534]=true, [97268]=true, [111821]={34774, 31752}}, {[30148]="72986 72985"}, {}, {}
+	local whitelist, questItems, collection, inring, colId, ctok, current, changed = {[33634]=true, [35797]=true, [37888]=true, [37860]=true, [37859]=true, [37815]=true, [46847]=true, [47030]=true, [39213]=true, [42986]=true, [49278]=true, [86425]={31332, 31333, 31334, 31335, 31336, 31337}, [87214]={31752, 34774}, [90006]=true, [86536]=true, [86534]=true, [97268]=true, [111821]={34774, 31752}}, {[30148]="72986 72985"}, {"EB", EB=AB:GetActionSlot("extrabutton", 1)}, {}
 	local function scanQuests(i)
 		for i=i or 1,GetNumQuestLogEntries() do
 			local _, _, _, _, isHeader, isCollapsed, isComplete, _, qid = GetQuestLogTitle(i)
@@ -129,8 +129,8 @@ do -- OPieAutoQuest
 		scanQuests()
 
 		-- Drop any items in the ring we haven't found.
-		local freePos, oldCount = 1, #collection
-		for i=1, oldCount do
+		local freePos, oldCount = 2, #collection
+		for i=2, oldCount do
 			local v = collection[i]
 			collection[freePos], freePos, collection[v], inring[v] = collection[i], freePos + (inring[v] == current and 1 or 0), (inring[v] == current and collection[v] or nil), inring[v] == current and current or nil
 		end

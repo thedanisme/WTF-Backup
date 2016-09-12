@@ -21,7 +21,7 @@ local RegisterStateConditional do
 			curValue[state] = value
 		end
 	]])
-	function RegisterStateConditional(name, forName, conditional, isExtended)
+	function RegisterStateConditional(name, forName, conditional, usesExtendedConditionals)
 		f:SetAttribute(forName, "_")
 		f:Execute(([[-- KR-InternalStateConditionalRemap
 			local name, forName, conditional, isExt = %q, %q, %s, %s
@@ -32,7 +32,7 @@ local RegisterStateConditional do
 			else
 				RegisterStateDriver(self, name, conditional)
 			end
-		]]):format(name, forName, safequote(conditional), isExtended and 1 or "nil"))
+		]]):format(name, forName, safequote(conditional), usesExtendedConditionals and 1 or "nil"))
 	end
 end
 
@@ -156,6 +156,7 @@ do -- instance:arena/bg/ratedbg/raid/instance/scenario + draenor/pandaria
 		[1116]="world/draenor", [1464]="world/draenor", [1191]="world/draenor/ashran/worldpvp",
 		[870]="world/pandaria", [1064]="world/pandaria",
 		[530]="world/outland", [571]="world/northrend",
+		[1220]="world/broken isles",
 	}
 	for n in ("1158 1331 1159 1152 1330 1153"):gmatch("%d+") do
 		mapTypes[tonumber(n)] = "world/draenor/garrison"
@@ -331,6 +332,10 @@ do -- debuff:name
 	KR:SetNonSecureConditional("owndebuff", checkAura)
 	KR:SetNonSecureConditional("buff", checkAura)
 	KR:SetNonSecureConditional("ownbuff", checkAura)
+	KR:SetNonSecureConditional("cleanse", function(_, _, target)
+		target = target or "target"
+		return UnitIsFriend("player", target) and (UnitDebuff(target, 1, "RAID") ~= nil)
+	end)
 end
 do -- combo:count
 	local power, powerMap = 4, {[265]=7, [267]=14, [258]=13, PALADIN=9, MONK=12}
@@ -345,4 +350,36 @@ do -- combo:count
 end
 do -- race:token
 	KR:SetStateConditionalValue("race", (select(2,UnitRace("player"))))
+end
+if playerClass == "HUNTER" then -- pet:stable id; havepet:stable id
+	local pt, noPendingSync = {}, true
+	local function sync(e)
+		if InCombatLockdown() then
+			if noPendingSync then
+				EV.PLAYER_REGEN_ENABLED, noPendingSync = sync, false
+			end
+			return
+		end
+		for k in pairs(pt) do pt[k] = nil end
+		local o, hpo
+		for i=1,5 do
+			local _, n, _, r = GetStablePetInfo(i)
+			if n and r then
+				local k = n == r and n or (n .. "/" .. r)
+				pt[k] = (pt[k] or ("[pet:" .. n .. (n ~= r and ",pet:" .. r .. "] " or "] ") .. k)) .. "/" .. i
+				hpo = (hpo and hpo .. "/" .. i or i)
+			end
+		end
+		for k, v in pairs(pt) do
+			o = k:match("/") and (v .. (o and "; " .. o or "")) or ((o and o .. "; " or "") .. v)
+		end
+		RegisterStateConditional("pet", "pet", o or "[form:1,noform:1]", false)
+		KR:SetStateConditionalValue("havepet", hpo or "")
+		noPendingSync = true
+		return e == "PLAYER_REGEN_ENABLED" and "remove" or nil
+	end
+	KR:SetStateConditionalValue("havepet", false)
+	EV.PLAYER_LOGIN, EV.PET_STABLE_UPDATE, EV.LOCALPLAYER_PET_RENAMED = sync, sync, sync
+else
+	KR:SetStateConditionalValue("havepet", false)
 end

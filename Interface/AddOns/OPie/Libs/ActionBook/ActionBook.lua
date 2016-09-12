@@ -1,4 +1,4 @@
-local apiV, api, MAJ, REV, ext, T = {}, {}, 2, 17, ...
+local apiV, api, MAJ, REV, ext, T = {}, {}, 2, 18, ...
 if T.ActionBook then return end
 apiV[MAJ], ext, T.Kindred, T.Rewire = api, {Kindred=T.Kindred, Rewire=T.Rewire, ActionBook={}}
 
@@ -238,6 +238,10 @@ function updateHandlers.collection(id, _count, idList)
 	DeferExecute(("local id = %d; collections[id], tokens[id], metadata['openAction-' .. id] = newtable(%s nil), newtable(%s nil), %s %s"):format(id, spec, tokens, type(idList.__openAction) == "number" and idList.__openAction or "nil", visibility))
 	return true
 end
+function createHandlers.clone(id, _count, id2)
+	DeferExecute(("actInfo[%d] = actInfo[%d]"):format(id, id2))
+	return true
+end
 local function nullInfoFunc() return false end
 
 local getActionIdent, getActionArgs do
@@ -420,6 +424,7 @@ function api:compatible(module, maj, rev, ...)
 		return ext[module]:compatible(maj, rev, ...)
 	elseif type(module) == "number" and type(maj) == "number" and rev == nil then
 		maj, rev = module, maj -- Oh hey, it's us!
+		if maj == 1 then securecall(error, "ActionBook v1 API is deprecated.", 3) end
 		return rev <= REV and apiV[maj], MAJ, REV
 	end
 end

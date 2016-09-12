@@ -291,7 +291,7 @@ N As you go... |AYG|43151| |N|Use the Scouting Map and complete five "Freya's Sp
 A A Peaceful World |QID|41086| |N|(npc:102820) in {Temple of Five Dawns} (55.27,57.07)| |NPC|102820|
 N (item:124113) |QID|41911| |N|Collect 20 (item:124113), you can either use Skinning profession or buy from the action house| |L|124113 20|
 
-R The Traveler's Den |N|Travel to {The Traveler's Den} in (56.33,73.89)| |Z|1018 0|
+R The Traveler's Den |QID|43151| |N|Travel to {The Traveler's Den} in (56.33,73.89)| |Z|1018 0|
 A Making A Trade |QID|43151| |N|(npc:109738) in {The Traveler's Den} (56.33,73.89)| |Z|1018 0| |NPC|109738|
 C Making A Trade |QID|43151| |N|Collect 20 (item:124113), you can either use Skinning profession or buy from the action house| |Z|1018 0| |NPC|109738|
 T Making A Trade |QID|43151| |N|(npc:109738) in {The Traveler's Den} (56.33,73.89)| |Z|1018 0| |NPC|109738|
@@ -346,9 +346,9 @@ A Awakenings |QID|44464| |N|(npc:113857) in {Temple of Five Dawns} (51.80,48.16)
 R Val'Shara |QID|44466| |N|Travel to {Val'Shara}  (54.96,53.43) (53.29,49.94) (52.11,43.99)| |Z|1018 0|
 N Witness Illidan's Resilience |QID|44466.1| |N|Use (spell:226956) to witness the awakening of Illidan Resilience (45.54,34.75)| |Z|1018 0|
 
-R Skyhold |OID|44479| |N|Travel to {Skyhold} (45.32,30.18)| |Z|1035 1|
-T An Unclear Path |QID|44466| |N|(npc:113857) in {Skyhold} (45.32,30.18)| |Z|1035 1| |NPC|113857|
-A Ravencrest's Legacy |QID|44479| |N|(npc:113857) in {Skyhold} (45.32,30.18)| |Z|1035 1| |NPC|113857|
+R Temple of Five Dawns |OID|44479| |N|Travel to {Temple of Five Dawns} (51.80,48.16)| |Z|1044 0|
+T An Unclear Path |QID|44466| |N|(npc:113857) in {Temple of Five Dawns} (51.80,48.16)| |Z|1044 0| |NPC|113857|
+A Ravencrest's Legacy |QID|44479| |N|(npc:113857) in {Temple of Five Dawns} (51.80,48.16) |Z|1044 0| |NPC|113857|
 R Val'Shara |QID|44479| |N|Travel to {Val'Shara} (54.96,53.43)| |Z|1018 0|
 N (spell:226956) |N|Go to the destination to use (spell:226956) to begin the Ravencrest's Legacy scenario (54.96,53.43) (52.81,50.41) (46.98,50.23) (44.28,49.94) (42.08,46.29)| |Z|1018 0| |QID|44479|
 N Report to Kur'talos Ravencrest |SID|33154|1| |N|Report to (npc:113046) in  {Ravencourt}| |QID|44479| |NPC|113046|
@@ -372,16 +372,16 @@ T Hunter of Night |QID|44416| |N|(npc:113355) in {Mausoleum} (41.59, 50.53)| |Z|
 R Raven's Glory |QID|44479| |N|Travel to {Raven's Glory}  (42.86, 50.56) (42.97, 48.79)| |Z|1099 0|
 C When Good Men Do Nothing |SID|33186| |N|Enter Raven's Glory and use (spell:227236) to destroy the Colossal Siegebreaker in {Raven's Glory} (42.97, 48.79)| |Z|1099 0| |QID|44479|
 
-R Skyhold |OID|44480| |N|Travel to {Skyhold} (45.32,30.18)| |Z|1035 1|
-T Ravencrest's Legacy |QID|44479| |N|(npc:113857) in {Skyhold} (45.32,30.18)| |Z|1035 1| |NPC|113857|
-A In My Father's House |QID|44480| |N|(npc:113857) in {Skyhold} (45.32,30.18)| |Z|1035 1| |NPC|113857|
+R Temple of Five Dawns |OID|44480| |N|Travel to {Temple of Five Dawns} (51.80,48.16)| |Z|1044 0|
+T Ravencrest's Legacy |QID|44479| |N|(npc:113857) in {Temple of Five Dawns} (51.80,48.16) |Z|1044 0| |NPC|113857|
+A In My Father's House |QID|44480| |N|(npc:113857) in {Temple of Five Dawns} (51.80,48.16) |Z|1044 0| |NPC|113857|
 
 R Temple of Zin-Malor |QID|44480| |N|Travel to {Temple of Zin-Malor} (35.11, 49.88)| |Z|181 0|
 C In My Father's House |QID|44480| |N|Use (spell:226956) witness Illidan's Sacrifice in Azshara on the continent of Kalimdor (35.11, 49.88) | |Z|816 0|
 
-R Skyhold |TID|44480| |N|Travel to {Skyhold} (45.32,30.18)| |Z|1035 1|
-T In My Father's House |QID|44480| |N|(npc:113857) in {Skyhold} (45.32,30.18)| |Z|1035 1| |NPC|113857|
-A Destiny Unfulfilled |QID|44497| |N|(npc:113857) in {Skyhold} (45.32,30.18)| |Z|1035 1| |NPC|113857|
+R Temple of Five Dawns |TID|44480| |N|Travel to {Temple of Five Dawns} (51.80,48.16)| |Z|1044 0|
+T In My Father's House |QID|44480| |N|(npc:113857) in {Temple of Five Dawns} (51.80,48.16) |Z|1044 0| |NPC|113857|
+A Destiny Unfulfilled |QID|44497| |N|(npc:113857) in {Temple of Five Dawns} (51.80,48.16) |Z|1044 0| |NPC|113857|
 
 R The Black Temple |QID|44497| |N|Travel to {The Black Temple} (72.97, 44.12)| |Z|473 0|
 N (spell:226956) |N|Use (spell:226956) in {The Black Temple} (72.97, 44.12)| |Z|473 0| |F|1085 1| |QID|44497| 

@@ -466,7 +466,7 @@ A In My Father's House |QID|44480| |N|(npc:113857) in {Sanctum of Light} (52.19,
 R Temple of Zin-Malor |QID|44480| |N|Travel to {Temple of Zin-Malor} (35.11, 49.88)| |Z|181 0|
 C In My Father's House |QID|44480| |N|Use (spell:226956) witness Illidan's Sacrifice in Azshara on the continent of Kalimdor (35.11, 49.88) | |Z|816 0|
 
-R Skyhold |TID|44480| |N|Travel to {Skyhold} (45.32,30.18)| |Z|1035 1|
+R Sanctum of Light |TID|44480| |N|Travel to {Sanctum of Light} (52.19,69.55)| |Z|23 20|
 T In My Father's House |QID|44480| |N|(npc:113857) in {Sanctum of Light} (52.19,69.55)| |Z|23 20| |NPC|113857|
 A Destiny Unfulfilled |QID|44497| |N|(npc:113857) in {Sanctum of Light} (52.19,69.55)| |Z|23 20| |NPC|113857|
 
@@ -481,7 +481,7 @@ C The Demon Within |SID|32865|5| |N|Destroy the Warlocks in {Temple Summit} (52.
 C Defeat Maiev |SID|32942|6| |N|Defeat (npc:112867) in {Temple Summit} (52.16, 69.92)| |Z|1085 1| |NPC|112867| |QID|44497| 
 C Destiny Unfulfilled |QID|44497| |N|Witness True Betrayal in Shadowmoon Valley on the fringes of Outland., in {Temple Summit} (52.16, 69.92)| |Z|1085 1|
 
-R Skyhold |TID|44496| |N|Travel to {Skyhold} (45.32,30.18)| |Z|1035 1|
+R Sanctum of Light |TID|44496| |N|Travel to {Sanctum of Light} (52.19,69.55)| |Z|23 20|
 T Destiny Unfulfilled |QID|44496| |N|(npc:113857) in {Sanctum of Light} (52.19,69.55)| |Z|23 20| |NPC|113857|
 
 A Champion Armaments |QID|44218| |N|(npc:110434) in {Sanctum of Light}, This quest will only be available if you chose to get the "Plowshares to Swords" class hall upgrade. (54.09,49.73)| |Z|23 20| |NPC|110434|

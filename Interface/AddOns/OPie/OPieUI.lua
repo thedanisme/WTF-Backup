@@ -175,6 +175,12 @@ local function updateCentralElements(self, si)
 		end
 	end
 
+	local sm = (state and (state % 4 > 1) and 0.625 or 1)
+	if self.rotPeriod ~= sm then
+		self.rotPeriod = sm
+		setRingRotationPeriod(configCache.XTRotationPeriod*sm)
+	end
+
 	local gAnim, gEnd, oIG, time, usable = self.gAnim, self.gEnd, self.oldIsGlowing, GetTime(), usable or (state and usable ~= false) or false
 	if usable ~= oIG then
 		gAnim, gEnd = usable and "in" or "out",  time + 0.3 - (gEnd and gEnd > time and (gEnd-time) or 0)
@@ -317,7 +323,7 @@ function iapi:Show(_ringName, fcSlice, fastOpen)
 	mainFrame.radius = CalculateRingRadius(mainFrame.count or 3, 48, 48, 95, 90-(mainFrame.offset or 0))
 	mainFrame:SetScript("OnUpdate", OnUpdate_ZoomIn)
 	mainFrame.eleft, mainFrame.fastClickSlice, mainFrame.oldSlice, mainFrame.angle, mainFrame.omState, mainFrame.oldIsGlowing = configCache.XTZoomTime * (fastOpen and 0.5 or 1), fcSlice or 0, -1
-	setRingRotationPeriod(configCache.XTRotationPeriod)
+	mainFrame.rotPeriod = nil
 	GhostIndication:Reset()
 
 	local astep, radius, usedMI = mainFrame.count == 0 and 0 or -360/mainFrame.count, mainFrame.radius, mainFrame.count

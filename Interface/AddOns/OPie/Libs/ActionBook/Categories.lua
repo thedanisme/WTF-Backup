@@ -2,6 +2,7 @@ local _, T = ...
 if T.SkipLocalActionBook then return end
 local AB, mark = assert(T.ActionBook:compatible(2, 14), "A compatible version of ActionBook is required"), {}
 local RW = assert(T.ActionBook:compatible("Rewire", 1,4), "A compatible version of Rewire is required")
+local EV = T.Evie
 
 do -- spellbook
 	local function addEntry(add, at, _ok, st, sid)
@@ -42,6 +43,17 @@ do -- spellbook
 		wipe(mark)
 	end
 	AB:AugmentCategory("Abilities", aug)
+	AB:AugmentCategory("Abilities", function(_, add)
+		for i=1,6 do
+			local free, id = GetPvpTalentRowSelectionInfo(i)
+			if id and not free then
+				local sid = select(6, GetPvpTalentInfoByID(id))
+				if sid and not IsPassiveSpell(sid) then
+					add("spell", sid)
+				end
+			end
+		end
+	end)
 	AB:AugmentCategory("Pet abilities", aug)
 end
 AB:AugmentCategory("Items", function(_, add)
@@ -143,7 +155,7 @@ end)
 AB:AugmentCategory("Raid markers", function(_, add) for i=0,8 do add("raidmark", i) end end)
 AB:AugmentCategory("Raid markers", function(_, add) for i=0,8 do add("worldmark", i) end end)
 do -- data broker launchers
-	local LDB, waiting = nil, true
+	local waiting, LDB = true
 	local function checkLDB()
 		LDB = LibStub and LibStub:GetLibrary("LibDataBroker-1.1", 1)
 	end
@@ -167,13 +179,13 @@ do -- data broker launchers
 			AB:NotifyObservers("opie.databroker.launcher")
 		end
 	end
-	T.Evie.RegisterEvent("ADDON_LOADED", function()
+	function EV.ADDON_LOADED()
 		if LDB or checkLDB() or LDB then
 			register()
 			if waiting then LDB.RegisterCallback("opie.databroker.launcher", "LibDataBroker_DataObjectCreated", register) end
 			return "remove"
 		end
-	end)
+	end
 end
 do -- toys
 	local tx, search, push, pop = C_ToyBox

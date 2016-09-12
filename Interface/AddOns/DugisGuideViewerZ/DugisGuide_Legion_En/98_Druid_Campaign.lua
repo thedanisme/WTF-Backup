@@ -25,17 +25,17 @@ K (npc:103246) |QID|40645.3| |N|Kill (npc:103246) to cleanse the corruption in t
 
 R The Dreamgrove |QID|40645.4| |N|Travel to the {The Dreamgrove} (45.45, 24.62) |Z|1048 0|
 f The Dreamgrove |QID|40645| |N|Grab {The Dreamgrove} flight point from (npc:107457) {61.77, 34.04)| |Z|1077 0| |NPC|107457|
-C To The Dreamgrove |QID|40645.5| |N|Meet (npc:40645) at the {Circle of Spirits} (46.21, 51.50)| |Z|1077 0| |NPC|40645|
-T To The Dreamgrove |QID|40645| |N|(npc:101195) at the {Circle of Spirits} (44.94, 51.16)| |Z|1077 0| |NPC|101195|
-A Weapons of Legend |QID|40646| |N|(npc:101195) at the {Circle of Spirits} (44.94, 51.16)| |Z|1077 0| |NPC|101195|
-C Weapons of Legend |QID|40646| |N|Select an artifact weapon to pursue at the {Circle of Spirits} (44.94, 51.16)| |Z|1077 0|
-T Weapons of Legend |QID|40646| |N|(npc:101195) at the {Circle of Spirits} (44.94, 51.16)| |Z|1077 0| |NPC|101195|
+C To The Dreamgrove |QID|40645.5| |N|Meet (npc:40645) in {Circle of Spirits} (46.21, 51.50)| |Z|1077 0| |NPC|40645|
+T To The Dreamgrove |QID|40645| |N|(npc:101195) in {Circle of Spirits} (44.94, 51.16)| |Z|1077 0| |NPC|101195|
+A Weapons of Legend |QID|40646| |N|(npc:101195) in {Circle of Spirits} (44.94, 51.16)| |Z|1077 0| |NPC|101195|
+C Weapons of Legend |QID|40646| |N|Select an artifact weapon to pursue in {Circle of Spirits} (44.94, 51.16)| |Z|1077 0|
+T Weapons of Legend |QID|40646| |N|(npc:101195) in {Circle of Spirits} (44.94, 51.16)| |Z|1077 0| |NPC|101195|
 
-N Accept Quest |N|Accept artifact quest from (npc:103832) at the {Circle of Spirits} (45.61, 50.33)| |Z|1077 0| |NPC|103832| |OID|42428, 40649, 41468, 40783|
+N Accept Quest |N|Accept artifact quest from (npc:103832) in {Circle of Spirits} (45.61, 50.33)| |Z|1077 0| |NPC|103832| |OID|42428, 40649, 41468, 40783|
 
 -- Druid Feral Dagger Quests Begin (Fangs of Ashamane)
 
-A The Shrine of Ashamane |QID|42428| |N|(npc:101195) at the {Circle of Spirits} (44.94, 51.16)| |Z|1077 0| |NPC|101195| |O|
+A The Shrine of Ashamane |QID|42428| |N|(npc:101195) in {Circle of Spirits} (44.94, 51.16)| |Z|1077 0| |NPC|101195| |O|
 C The Shrine of Ashamane |QID|42428| |N|Speak to (npc:107457) and travel to Ashamane's Fall in search of Delandros Shimmermoon in {The Dreamgrove} (61.79, 34.33)| |Z|1077 0| |NPC|107457| |O|
 T The Shrine of Ashamane |QID|42428| |N|(npc:107392) at {Ashamane's Gate} (70.34, 46.77)| |Z|1018 0| |NPC|107392| |O|
 A Aid for the Ashen |QID|42439| |N|(npc:107392) at {Ashamane's Gate} (70.34, 46.77)| |Z|1018 0| |NPC|107392| |PRE|42428|
@@ -62,13 +62,13 @@ C The Fangs of Ashamane |SID|30434|7| |N|Collect the (item:128860) in the {Shatt
 
 R Dreamgrove |TID|42430| |N|Mount (npc:108115) in the {Shattered Locus} and travel to the {The Dreamgrove} (54.77, 19.87) |Z|1033 2| |PRE|42428| |V|
 C The Fangs of Ashamane |QID|42430.2| |N|Collect the (item:128860) in the {Shattered Locus} (54.81, 20.38)| |Z|1033 2| |PRE|42428|
-T The Fangs of Ashamane |QID|42430| |N|(npc:101195) at the {Circle of Spirits} (44.72, 50.98)| |Z|1077 0| |NPC|101195| |PRE|42428|
+T The Fangs of Ashamane |QID|42430| |N|(npc:101195) in {Circle of Spirits} (44.72, 50.98)| |Z|1077 0| |NPC|101195| |PRE|42428|
 
 -- Druid Feral Dagger Quests End (The Fangs of Ashamane)
 
 -- Druid Restoration Staff Quests Begin (G'Hanir, the Mother Tree)
 
-A Meet with Mylune |QID|40649| |N|(npc:103832) at the {Circle of Spirits} (45.51, 50.54)| |Z|1077 0| |NPC|103832| |O|
+A Meet with Mylune |QID|40649| |N|(npc:103832) in {Circle of Spirits} (45.51, 50.54)| |Z|1077 0| |NPC|103832| |O|
 T Meet with Mylune |QID|40649| |N|(npc:113525) in {The Dreamgrove} (52.46, 53.28)| |Z|1077 0| |NPC|113525| |O|
 A Necessary Preparations |QID|41422| |N|(npc:113525) in {The Dreamgrove} (52.46, 53.28)| |Z|1077 0| |NPC|113525| |PRE|40649|
 N Leafbeard the Storied |QID|41422.2| |N|Speak to (npc:97989)'s to obtain blessing in {The Dreamgrove} (33.24, 28.92)| |Z|1077 0| |NPC|97989| |PRE|40649|
@@ -78,10 +78,10 @@ A Join the Dreamer |QID|41449| |N|(npc:113525) in {The Dreamgrove} (52.47, 52.39
 T Join the Dreamer |QID|41449| |N|(npc:104349) in the {Tel'Andu Barrow Den} (46.93, 29.39) (42.59, 9.72) (48.80, 14.79) (40.93, 0.00)| |Z|1077 0| |NPC|104349| |PRE|40649|
 A In Deep Slumber |QID|41436| |N|(npc:104349) in the {Tel'Andu Barrow Den}  (39.56, 18.39)| |Z|1018 0| |NPC|104349| |PRE|40649|
 N (item:135506) |QID|41436.1| |N|Use (item:135506) and enter the Emerald Dream in the {Tel'Andu Barrow Den} (39.63, 18.12)| |Z|1018 0| |PRE|40649|
-C In Deep Slumber |QID|41436.2| |N|Obtain the (item:135582) at the {Circle of Spirits}<br/><b>You will need to keep healing yourself to keep the corruption level low. (45.12, 51.04)| |Z|1077 0| |PRE|40649|
+C In Deep Slumber |QID|41436.2| |N|Obtain the (item:135582) in {Circle of Spirits}<br/><b>You will need to keep healing yourself to keep the corruption level low. (45.12, 51.04)| |Z|1077 0| |PRE|40649|
 T In Deep Slumber |QID|41436| |N|(npc:104349) in {Tel'Andu Barrow Den} (39.56, 18.39)| |Z|1018 0| |NPC|104349| |PRE|40649|
 A Reconvene |QID|41690| |N|(npc:104349) in {Tel'Andu Barrow Den} (39.56, 18.39)| |Z|1018 0| |NPC|104349| |PRE|40649|
-T Reconvene |QID|41690| |N|(npc:104577) at the {Circle of Spirits} (48.41, 15.60) (41.88, 9.87) (47.04, 29.61) (45.30, 51.58)| |Z|1077 0| |NPC|104577| |PRE|40649|
+T Reconvene |QID|41690| |N|(npc:104577) in {Circle of Spirits} (48.41, 15.60) (41.88, 9.87) (47.04, 29.61) (45.30, 51.58)| |Z|1077 0| |NPC|104577| |PRE|40649|
 A Cleansing the Mother Tree |QID|41689| |N|(npc:104577) in {Circle of Spirits} (45.30, 51.58)| |Z|1077 0| |NPC|104577| |PRE|40649|
 
 R The Emerald Dreamway |QID|41689.1| |N|Enter the {Emerald Dreamway} (56.19, 20.99)| |Z|1077 0| |PRE|40649|
@@ -102,13 +102,13 @@ C Nature's Wrath |SID|29650|7| |N|Kill (npc:112940) in {Nordrassil} (61.09, 26.0
 
 R Emerald Dreamway |TID|41689| |N|Travel to the {Emerald Dreamway} (59.09, 26.10)| |Z|606 0| |PRE|40649|
 R The Dreamgrove |TID|41689| |N|Travel to {The Dreamgrove} (45.43, 25.07)| |Z|1048 0| |PRE|40649|
-T Cleansing the Mother Tree |QID|41689| |N|(npc:104577) at the {Circle of Spirits} (45.42, 51.42)| |Z|1077 0| |NPC|104577| |PRE|40649|
+T Cleansing the Mother Tree |QID|41689| |N|(npc:104577) in {Circle of Spirits} (45.42, 51.42)| |Z|1077 0| |NPC|104577| |PRE|40649|
 
 -- Druid Restoration Staff Quests End (G'Hanir, the Mother Tree)
 
 -- Druid Guardian Fist Weapons Quests Begin (Claws of Ursoc)
 
-A Mistress of the Claw |QID|41468| |N|(npc:101195) at the {Circle of Spirits} (44.82, 51.11)| |Z|1077 0| |NPC|101195| |O|
+A Mistress of the Claw |QID|41468| |N|(npc:101195) in {Circle of Spirits} (44.82, 51.11)| |Z|1077 0| |NPC|101195| |O|
 T Mistress of the Claw |QID|41468| |N|(npc:101259) in the {Tel'Andu Barrow Den} (47.25, 29.82) (42.13, 9.72) (48.80, 14.85) (39.60, 0.17)| |Z|1077 0| |NPC|101259| |O|
 A To The Hills |QID|41782| |N|(npc:101259) in the {Tel'Andu Barrow Den} (39.60, 0.17)| |Z|1077 0| |NPC|101259| |PRE|41468|
 N (item:135563) |QID|41782.1| |N|Collect a (item:135563) in {The Dreamgrove} (48.50, 15.44) (41.82, 9.96) (46.78, 29.17) (35.71, 25.63)| |Z|1077 0| |PRE|41468|
@@ -151,7 +151,7 @@ A The Dreamer Returns |QID|41918| |N|(npc:104535) in {Grizzlemaw} (51.24, 36.90)
 
 R Emerald Dreamway |TID|41918| |N|Cast (spell:193753) to return to the {Emerald Dreamway} (35.33, 53.15)| |Z|1048 0| |PRE|41468|
 R The Dreamgrove |TID|41918| |N|Travel to {The Dreamgrove} (45.40, 24.71)| |Z|1048 0| |PRE|41468|
-T The Dreamer Returns |QID|41918| |N|(npc:101195) at the {Circle of Spirits} (44.76, 50.98)| |Z|1077 0| |NPC|101195| |PRE|41468|
+T The Dreamer Returns |QID|41918| |N|(npc:101195) in {Circle of Spirits} (44.76, 50.98)| |Z|1077 0| |NPC|101195| |PRE|41468|
 
 -- Druid Guardian Fist Weapons Quests End (Claws of Ursoc)
 
@@ -198,21 +198,21 @@ A The Burden Borne |QID|40900| |N|(npc:101282) in the {Karazhan Catacombs} (68.6
 
 R Emerald Dreamway |QID|40900| |N|Travel to the {Emerald Dreamway} (45.50, 24.60) |Z|1048 0| |PRE|40783|
 R The Dreamgrove |QID|40900| |N|Travel to {The Dreamgrove} (45.50, 24.60) |Z|1048 0| |PRE|40783|
-T The Burden Borne |QID|40900| |N|(npc:101195) at the {Circle of Spirits} (44.71, 50.79)| |Z|1077 0| |NPC|101195| |PRE|40783|
+T The Burden Borne |QID|40900| |N|(npc:101195) in {Circle of Spirits} (44.71, 50.79)| |Z|1077 0| |NPC|101195| |PRE|40783|
 
 -- Druid Balance Staff Quests End (Scythe of Elune)
 
-A Sowing The Seed |QID|41255| |N|(npc:101195) at the {Circle of Spirits} (44.72, 50.98)| |Z|1077 0| |NPC|101195|
+A Sowing The Seed |QID|41255| |N|(npc:101195) in {Circle of Spirits} (44.72, 50.98)| |Z|1077 0| |NPC|101195|
 C Sowing The Seed |QID|41255| |N|Click on the Seed of Ages in the Soft Soil within {The Dreamgrove} (31.16, 53.39)| |Z|1077 0|
 T Sowing The Seed |QID|41255| |N|(npc:97923) in {The Dreamgrove} (31.07, 54.15)| |Z|1077 0| |NPC|97923|
 A The Seed of Ages |QID|40651| |N|(npc:97923) in {The Dreamgrove} (31.07, 54.15)| |Z|1077 0| |NPC|97923|
 C The Seed of Ages |QID|40651| |N|Imbue your weapon with power by assigning an artifact point in {The Dreamgrove} (31.17, 53.69)| |Z|1077 0|
 T The Seed of Ages |QID|40651| |N|(npc:97923) in {The Dreamgrove} (31.12, 53.83)| |Z|1077 0| |NPC|97923|
 A Ascending The Circle |QID|41332| |N|(npc:97923) in {The Dreamgrove} (31.12, 53.83)| |Z|1077 0| |NPC|97923|
-N Archdruid Greathoof |QID|41332.1| |N|Walk with (npc:97923) at the {Circle of Spirits} (45.60, 51.36)| |Z|1077 0| |NPC|97923|
-N Malfurion |QID|41332.2| |N|Speak with Malfurion at the {Circle of Spirits} (45.83, 51.12)| |Z|1077 0|
-T Ascending The Circle |QID|41332| |N|(npc:104241) at the {Circle of Spirits} (45.83, 51.12)| |Z|1077 0| |NPC|104241|
-A Word on the Winds |QID|40652| |N|(npc:104241) at the {Circle of Spirits} (45.83, 51.12)| |Z|1077 0| |NPC|104241|
+N Archdruid Greathoof |QID|41332.1| |N|Walk with (npc:97923) in {Circle of Spirits} (45.60, 51.36)| |Z|1077 0| |NPC|97923|
+N Malfurion |QID|41332.2| |N|Speak with Malfurion in {Circle of Spirits} (45.83, 51.12)| |Z|1077 0|
+T Ascending The Circle |QID|41332| |N|(npc:104241) in {Circle of Spirits} (45.83, 51.12)| |Z|1077 0| |NPC|104241|
+A Word on the Winds |QID|40652| |N|(npc:104241) in {Circle of Spirits} (45.83, 51.12)| |Z|1077 0| |NPC|104241|
 T Word on the Winds |QID|40652| |N|(npc:98002) in {The Dreamgrove} (52.88, 50.97)| |Z|1077 0| |NPC|98002|
 A Making Trails |QID|40653| |N|(npc:98002) in {The Dreamgrove} (52.88, 50.97)| |Z|1077 0| |NPC|98002|
 C Making Trails |QID|40653| |N|Click on the scouting map and select your order's first operational area in {The Dreamgrove} (52.88, 50.97)| |Z|1077 0|
@@ -229,16 +229,16 @@ N Stormheim |TID|44700| |N|Switch to (guide:"1017(98-110)#1017(98-110)#1017(98-1
 N Level 101 Required |N|You need to be at least level 101 to continue with the class campaign quest line| |PL|101|
 
 A Growing Power |QID|42516| |N|(npc:112689) in {Krasus' Landing} (60.85, 44.50)| |Z|1014 10| |NPC|112689| |OID|42583|
-T Growing Power |QID|42516| |N|(npc:101195) at the {Circle of Spirits} (44.94, 51.16)| |Z|1077 0| |NPC|101195| |OID|42583|
-A Rise, Champions |QID|42583| |N|(npc:101195) at the {Circle of Spirits} (44.94, 51.16)| |Z|1077 0| |NPC|101195|
+T Growing Power |QID|42516| |N|(npc:101195) in {Circle of Spirits} (44.94, 51.16)| |Z|1077 0| |NPC|101195| |OID|42583|
+A Rise, Champions |QID|42583| |N|(npc:101195) in {Circle of Spirits} (44.94, 51.16)| |Z|1077 0| |NPC|101195|
 C Rise, Champions |QID|42583| |N|Recruit (npc:98013) and (npc:103778) as your followers| |Z|1077 0| |NPC|98013, 103778| |POI|
-T Rise, Champions |QID|42583| |N|(npc:98002) at the {Circle of Spirits} (52.8, 51.4)| |Z|1077 0| |NPC|98002|
-A Sister Lilith |QID|42584| |N|(npc:98002) at the {Circle of Spirits} (52.8, 51.4)| |Z|1077 0| |NPC|98002|
+T Rise, Champions |QID|42583| |N|(npc:98002) in {Circle of Spirits} (52.8, 51.4)| |Z|1077 0| |NPC|98002|
+A Sister Lilith |QID|42584| |N|(npc:98002) in {Circle of Spirits} (52.8, 51.4)| |Z|1077 0| |NPC|98002|
 C Sister Lilith |QID|42584| |N|Use the Scouting Map and complete the mission (mission:923). This is a 1 hour mission| |Z|1077 0| |NPC|98002| |POI|
-T Sister Lilith |QID|42584| |N|(npc:98002) at the {Circle of Spirits} (52.8, 51.4)| |Z|1077 0| |NPC|98002|
-A Recruiting the Troops |QID|42585| |N|(npc:98002) at the {Circle of Spirits} (52.8, 51.4)| |Z|1077 0| |NPC|98002|
+T Sister Lilith |QID|42584| |N|(npc:98002) in {Circle of Spirits} (52.8, 51.4)| |Z|1077 0| |NPC|98002|
+A Recruiting the Troops |QID|42585| |N|(npc:98002) in {Circle of Spirits} (52.8, 51.4)| |Z|1077 0| |NPC|98002|
 C Recruiting the Troops |QID|42585| |N|Speak to (npc:108393) and recruit some Treants (36.6, 25.8)| |Z|1077 0| |NPC|108393| 
-T Recruiting the Troops |QID|42585| |N|(npc:98002) at the {Circle of Spirits} (52.8, 51.4)| |Z|1077 0| |NPC|98002|
+T Recruiting the Troops |QID|42585| |N|(npc:98002) in {Circle of Spirits} (52.8, 51.4)| |Z|1077 0| |NPC|98002|
 A A Glade Defense |QID|42586| |N|(npc:98002) in {The Dreamgrove} (52.88, 50.97)| |Z|1077 0| |NPC|98002|
 C A Glade Defense |QID|42586| |N|Use the Scouting Map and complete the mission, (mission:924). This is a 4 hours mission| |Z|1077 0| |NPC|98002| |POI|
 T A Glade Defense |QID|42586| |N|(npc:98002) in {The Dreamgrove} (52.88, 50.97)| |Z|1077 0| |NPC|98002|
@@ -248,27 +248,69 @@ C Sampling the Nightmare |QID|42032| |N|Complete the mission, (mission:812). Thi
 T Sampling the Nightmare |QID|42032| |N|(npc:98002) in {The Dreamgrove} (52.88, 50.97)| |Z|1077 0| |NPC|98002|
 A Dire Growth |QID|42031| |N|(npc:98002) in {The Dreamgrove} (52.88, 50.97)| |Z|1077 0| |NPC|98002|
 C Dire Growth |QID|42031| |N|Meet with (npc:103778), plant the Lasher Seed, and analyze its effects in {The Dreamgrove} (52.88, 50.97)| |Z|1077 0| |NPC|103778| |POI|
-T Dire Growth |QID|42031| |N|(npc:101195) at the {Circle of Spirits} (44.72, 50.98)| |Z|1077 0| |NPC|101195|
+T Dire Growth |QID|42031| |N|(npc:101195) in {Circle of Spirits} (44.72, 50.98)| |Z|1077 0| |NPC|101195|
 
 N Level 102 Required |N|You need to be at least level 102 to continue with the class campaign quest line| |PL|102|
 
-A Another Weapon of Old |QID|43980| |N|(npc:101195) at the {Circle of Spirits} (44.72, 50.98)| |Z|1077 0| |NPC|101195|
+A Another Weapon of Old |QID|43980| |N|(npc:101195) in {Circle of Spirits} (44.72, 50.98)| |Z|1077 0| |NPC|101195|
 C Another Weapon of Old |QID|43980| |N|Choose a second artifact to pursue (44.72, 50.98)| |Z|1077 0| |NPC|101195|
-T Another Weapon of Old |QID|43980| |N|(npc:101195) at the {Circle of Spirits} (44.72, 50.98)| |Z|1077 0| |NPC|101195|
+T Another Weapon of Old |QID|43980| |N|(npc:101195) in {Circle of Spirits} (44.72, 50.98)| |Z|1077 0| |NPC|101195|
 
-N Accept Quest |N|Accept artifact quest from (npc:103832) at the {Circle of Spirits} (45.61, 50.33)| |Z|1077 0| |NPC|103832| |OID|44431|
+N Accept Quest |N|Accept artifact quest from (npc:103832) in {Circle of Spirits}, this is optional (45.61, 50.33)| |Z|1077 0| |NPC|103832| |OID|44431, 44443|
 
-A More Weapons of Old |QID|44431| |N|(npc:101195) at the {Circle of Spirits} (44.72, 50.98)| |Z|1077 0| |NPC|101195| |O|
+A More Weapons of Old |QID|44431| |N|(npc:101195) in {Circle of Spirits} (44.72, 50.98)| |Z|1077 0| |NPC|101195| |O|
 C More Weapons of Old |QID|44431| |N|Choose a third artifact to pursue (44.72, 50.98)| |Z|1077 0| |NPC|101195| |O|
-T More Weapons of Old |QID|44431| |N|(npc:101195) at the {Circle of Spirits} (44.72, 50.98)| |Z|1077 0| |NPC|101195| |O|
+T More Weapons of Old |QID|44431| |N|(npc:101195) in {Circle of Spirits} (44.72, 50.98)| |Z|1077 0| |NPC|101195| |O|
 
-A Weapons of the Ancients |QID|44443| |N|(npc:101195) at the {Circle of Spirits} (44.72, 50.98)| |Z|1077 0| |NPC|101195| |O|
+A Weapons of the Ancients |QID|44443| |N|(npc:101195) in {Circle of Spirits} (44.72, 50.98)| |Z|1077 0| |NPC|101195| |O|
 C Weapons of the Ancients |QID|44443| |N|Choose a fourth artifact to pursue (44.72, 50.98)| |Z|1077 0| |NPC|101195| |O|
-T Weapons of the Ancients |QID|44443| |N|(npc:101195) at the {Circle of Spirits} (44.72, 50.98)| |Z|1077 0| |NPC|101195| |O|
+T Weapons of the Ancients |QID|44443| |N|(npc:101195) in {Circle of Spirits} (44.72, 50.98)| |Z|1077 0| |NPC|101195| |O|
+
+R The Violet Citadel |QID|44004| |N|Travel to {The Violet Citadel} (28.66, 48.37)| |Z|1014 10|
+A A Falling Star |N|(npc:90417) in {The Violet Citadel} (28.66, 48.37)| |Z|1014 10| |NPC|90417| |OID|44257, 44009|
+A A Falling Star |QID|44257| |N|(npc:90417) in {The Violet Citadel} (28.66, 48.37)| |Z|1014 10| |NPC|90417| |O|
+A A Falling Star |QID|44009| |N|(npc:90417) in {The Violet Citadel} (28.66, 48.37)| |Z|1014 10| |NPC|90417| |O|
+N (npc:96813) |QID|44257.1| |N|Speak to (npc:96813) to take Khadgar's Gryphon to {Suramar} (69.89, 51.15)| |Z|1014 10| |NPC|96813| |V| |O|
+N (npc:96813) |QID|44009.1| |N|Speak to (npc:96813) to take Khadgar's Gryphon to {Suramar} (69.89, 51.15)| |Z|1014 10| |NPC|96813| |V| |O|
+N Search the Crash Site |QID|44257.2| |N|Dive down to search the Crash Site in {Azuregale Bay} (92.11, 61.08)| |Z|1033 0| |O|
+N Search the Crash Site |QID|44009.2| |N|Dive down to search the Crash Site in {Azuregale Bay} (92.11, 61.08)| |Z|1033 0| |O|
+N Investigate the Cave |QID|44257.3| |N|Find the cave entrance under water to investigate the Cave in {Azuregale Bay} (94.68, 64.07) (94.46, 66.42)| |Z|1033 0| |O|
+N Investigate the Cave |QID|44009.3| |N|Find the cave entrance under water to investigate the Cave in {Azuregale Bay} (94.68, 64.07) (94.46, 66.42)| |Z|1033 0| |O|
+K (npc:112477) |QID|44257.4| |N|Kill (npc:112477) and collect (item:140574) in {Azuregale Bay} (94.52, 67.09)| |Z|1033 0| |NPC|112477| |O|
+K (npc:112477) |QID|44009.4| |N|Kill (npc:112477) and collect (item:140574) in {Azuregale Bay} (94.52, 67.09)| |Z|1033 0| |NPC|112477| |O|
+
+R Dalaran |QID|44004| |N|Travel to {Dalaran} (49.60, 47.99)| |Z|1014 10|
+T A Falling Star |QID|44257| |N|(npc:112130) in {Chamber of the Guardian} (27.03, 35.39)| |Z|1014 12| |NPC|112130| |O|
+T A Falling Star |QID|44009| |N|(npc:112130) in {Chamber of the Guardian} (27.03, 35.39)| |Z|1014 12| |NPC|112130| |O|
+A Bringer of the Light |QID|44004| |N|(npc:112130) in {Chamber of the Guardian} (27.03, 35.39)| |Z|1014 12| |NPC|112130|
+
+R The Vault of Lights |QID|44004| |N|Use the portal to travel to {The Vault of Lights} (28.41, 34.58)| |Z|1014 12| |F|1092 0|
+C The Prophet and the Butcher |SID|30854|1| |N|Seek out (npc:109143) in {The Vault of Lights} (34.10, 66.32)| |Z|1091 0| |NPC|109143| |QID|44004|
+A Nobundo's Last Stand |QID|43705| |N|(npc:110695) in {The Crystal Hall}<br/><br/><b>Destroy Fel Portals and rescue (npc:109711) in each waypoint (37.88, 56.14) (58.93, 71.79) (57.79, 58.10) (48.71, 37.44) (44.94, 9.26)| |Z|1091 0| |NPC|110695| |OID|44004|
+N (npc:110695) |QID|43705.1| |N|Speak to (npc:110695) to begin the assault in {The Crystal Hall} (44.94, 9.26)| |Z|1091 0| |NPC|110695| |OID|44004|
+N Defeat First Assault |QID|43705.2| |N|Defend (npc:110695) and defeat the first Assault in {The Crystal Hall} (44.05, 11.76)| |Z|1091 0| |NPC|110776, 111086, 110777, 110779| |OID|44004|
+N Defeat First Assault |QID|43705.3| |N|Defend (npc:110695) and defeat the second Assault defeated, in {The Crystal Hall} (45.20, 8.80)| |Z|1091 0| |NPC|110776, 111086, 110777, 110779| |OID|44004|
+N Defeat First Assault |QID|43705.4| |N|Defend (npc:110695) and defeat the third Assault defeated, in {The Crystal Hall} (44.51, 7.08)| |Z|1091 0| |NPC|110776, 111086, 110777, 110779| |OID|44004|
+K (npc:110781) |QID|43705.5| |N|Kill (npc:110781) in {The Crystal Hall} (44.64, 8.89)| |Z|1091 0| |OID|44004|
+C Nobundo's Last Stand |QID|43705| |N|Defend (npc:110695) from the Legion Assault in {The Crystal Hall} (44.93, 10.12)| |Z|1091 0| |NPC|110695| |OID|44004|
+T Nobundo's Last Stand |QID|43705| |N|(npc:110695) in {The Crystal Hall} (44.84, 9.37)| |Z|1091 0| |NPC|110695| |OID|44004|
+C Destroy Fel Portals |SID|30864|2| |N|Destroy Fel Portals in {The Crystal Hall} (36.40, 10.46) (37.30, 28.17) (37.30, 28.17)| |Z|1091 0| |QID|44004|
+C (npc:109711) |SID|30876|2| |N|Rescue (npc:109711) in {The Vault of Lights} (46.80, 63.31)| |Z|1091 0| |NPC|109711| |QID|44004|
+C Return to the Prophet |SID|30946|3| |N|Return to (npc:109143) at {The Vault of Lights} (33.94, 66.39)| |Z|1091 0| |NPC|109143| |QID|44004|
+C The Light's Heart |SID|31309|4| |N|Let (npc:109143) examine the (item:140574) in {The Vault of Lights} (33.94, 66.39)| |Z|1091 0| |NPC|109143| |QID|44004|
+C A Long Way Down... |SID|31316|5| |N|Speak to (npc:109143), then escort him to {Seat of the Naaru} (59.67, 34.06) (53.96, 45.33) (63.48, 42.59) (53.38, 38.91)| |Z|1091 0| |NPC|109143| |QID|44004|
+K (npc:109099) |SID|31556|6| |N|Kill (npc:109099) in {Seat of the Naaru} (57.85, 41.49)| |Z|1091 0| |NPC|109099| |QID|44004|
+C Bringer of the Light |QID|44004| |N|Discover the purpose of the (item:140574) in {Seat of the Naaru} (57.85, 41.49)| |Z|1091 0|
+
+R The Violet Citadel |TID|44004| |N|Travel to {The Violet Citadel} (28.46, 48.29)| |Z|1014 10|
+T Bringer of the Light |QID|44004| |N|(npc:90417) in {The Violet Citadel} (28.46, 48.29)| |Z|1014 10| |NPC|90417|
+A Light's Charge |QID|44153| |N|(npc:90417) in {The Violet Citadel} (28.46, 48.29)| |Z|1014 10| |NPC|90417|
+C Light's Charge |QID|44153| |N|Place Light's Heart in your Order Hall| |POI|
+T Light's Charge |QID|44153| |N|Class Order Hall| |POI|
 
 N Level 103 Required |N|You need to be at least level 103 to continue with the class campaign quest line| |PL|103|
 
-A Malorne's Refuge |QID|42033| |N|(npc:101195) at the {Circle of Spirits} (44.72, 50.98)| |Z|1077 0| |NPC|101195|
+A Malorne's Refuge |QID|42033| |N|(npc:101195) in {Circle of Spirits} (44.72, 50.98)| |Z|1077 0| |NPC|101195|
 
 R Val'sharah |QID|42033| |N|Travel to {Val'sharah} (57.14,71.27)| |Z|1018 0|
 C Malorne's Refuge |QID|42033| |N|Speak to (npc:105903) at {Malorne's Refuge} (57.0, 71.2)| |Z|1018 0| |NPC|105903|
@@ -288,11 +330,11 @@ K Darkfiend Satyr  |QID|42036.1| |N|Attack 6 Darkfiend Satyr and extract informa
 K (npc:106042) |QID|42036.2| |N|Kill (npc:106042) in the cave and collect (item:136804) (63.53,72.92) (64.67,74.29) (65.97,76.86) (67.07,76.58) (67.66,75.78) (67.71, 74.99)| |Z|1018 0| |POI| |NPC|106042|
 
 R Circle of Spirits |TID|42036| |N|Travel to {Circle of Spirits} (44.84,50.13)| |Z|1077 0| |NPC|103832|
-T Idol of the Wilds |QID|42036| |N|(npc:103832) at the {Circle of Spirits} (44.84,50.13)| |Z|1077 0| |NPC|103832|
-A The Protectors |QID|43991| |N|(npc:103832) at the {Circle of Spirits} (44.84,50.13)| |Z|1077 0| |NPC|103832|
-A Druids of the Claw |QID|40654| |N|(npc:101195) at the {Circle of Spirits} (44.75,51.81)| |Z|1077 0| |NPC|101195|
+T Idol of the Wilds |QID|42036| |N|(npc:103832) in {Circle of Spirits} (44.84,50.13)| |Z|1077 0| |NPC|103832|
+A The Protectors |QID|43991| |N|(npc:103832) in {Circle of Spirits} (44.84,50.13)| |Z|1077 0| |NPC|103832|
+A Druids of the Claw |QID|40654| |N|(npc:101195) in {Circle of Spirits} (44.75,51.81)| |Z|1077 0| |NPC|101195|
 A Champion: Broll Bearmantle |QID|42038| |N|Speak to (npc:106091) to recruit as a follower (48.94,47.09)| |Z|1077 0| |NPC|106091| |E|
-T Druids of the Claw |QID|40654| |N|(npc:106442) at the {Circle of Spirits} (38.42,33.98)| |Z|1077 0| |NPC|106442|
+T Druids of the Claw |QID|40654| |N|(npc:106442) in {Circle of Spirits} (38.42,33.98)| |Z|1077 0| |NPC|106442|
 A Gathering the Dreamweavers |QID|42037| |N|(npc:98002) in {The Dreamgrove} (52.88, 50.97)| |Z|1077 0| |NPC|98002|
 N As you go... |AYG|44077| |N|Complete a "Gathering the Dreamweavers" Mission, these mission will take up to 16 hours to complete each| |Z|1077 0| |NPC|98002|
 
@@ -306,7 +348,7 @@ N Restoration Stone |QID|43991.4| |N|Use your (spell:5185) ability on the saplin
 A Essence of Regrowth |QID|44076| |N|(npc:112549) (40.96,58.80)| |Z|1048 0| |NPC|112549|
 
 R Circle of Spirits |TID|43991| |N|Travel to {Circle of Spirits} (44.84,50.13)| |Z|1077 0|
-T The Protectors |QID|43991| |N|(npc:103832) at the {Circle of Spirits} (44.84,50.13)| |Z|1077 0| |NPC|103832|
+T The Protectors |QID|43991| |N|(npc:103832) in {Circle of Spirits} (44.84,50.13)| |Z|1077 0| |NPC|103832|
 
 N Switch Guide |N|Complete the (guide:"1067(98-110)") to kill (npc:103344) and collect (item:140313) and kill (npc:101403)| |QID|44076|
 N Switch Guide |N|Complete the (guide:"1065(98-110)") to kill (npc:91003) and collect (item:140311) and kill (npc:107704)| |QID|44074|
@@ -315,13 +357,183 @@ N Switch Guide |N|Complete the (guide:"1041(98-110)") to kill (npc:99868) and co
 
 C Gathering the Dreamweavers |QID|42037| |N|Complete a "Gathering the Dreamweavers" Mission, these mission will take up to 16 hours to complete each  (52.71,51.06)| |Z|1077 0| |NPC|98002|
 
-T Gathering the Dreamweavers |QID|42037| |N|(npc:103832) at the {Circle of Spirits} (45.51, 50.54)| |Z|1077 0| |NPC|103832|
-T Essence of Tenacity |QID|44074| |N|(npc:103832) at the {Circle of Spirits} (45.51, 50.54)| |Z|1077 0| |NPC|103832|
-T Essence of Ferocity |QID|44075| |N|(npc:103832) at the {Circle of Spirits} (45.51, 50.54)| |Z|1077 0| |NPC|103832|
-T Essence of Regrowth |QID|44076| |N|(npc:103832) at the {Circle of Spirits} (45.51, 50.54)| |Z|1077 0| |NPC|103832|
-T Essence of Balance |QID|44077| |N|(npc:103832) at the {Circle of Spirits} (45.51, 50.54)| |Z|1077 0| |NPC|103832|
+T Gathering the Dreamweavers |QID|42037| |N|(npc:103832) in {Circle of Spirits} (45.51, 50.54)| |Z|1077 0| |NPC|103832|
+T Essence of Tenacity |QID|44074| |N|(npc:103832) in {Circle of Spirits} (45.51, 50.54)| |Z|1077 0| |NPC|103832|
+T Essence of Ferocity |QID|44075| |N|(npc:103832) in {Circle of Spirits} (45.51, 50.54)| |Z|1077 0| |NPC|103832|
+T Essence of Regrowth |QID|44076| |N|(npc:103832) in {Circle of Spirits} (45.51, 50.54)| |Z|1077 0| |NPC|103832|
+T Essence of Balance |QID|44077| |N|(npc:103832) in {Circle of Spirits} (45.51, 50.54)| |Z|1077 0| |NPC|103832|
 
 N Level 110 Required |N|You need to be at least level 110 to continue with the class campaign quest line| |PL|110|
+
+A The Way to Nordrassil |QID|42040| |N|(npc:103832) in {Circle of Spirits} (45.51, 50.54)| |Z|1077 0| |NPC|103832|
+----
+A Goddess Watch Over You |N|(npc:113686) will appear next to you| |NPC|113686| |OID|44337, 44338|
+A Goddess Watch Over You |QID|44337| |N|(npc:113686) will appear next to you| |NPC|113686| |O|
+A Goddess Watch Over You |QID|44338| |N|(npc:113686) will appear next to you| |NPC|113686| |O|
+N Switch Guide |QID|40890| |N|Complete the (guide:"1018(98-110)#1018(98-110)#1018(98-110)") until you complete the quest (qid:40890)|
+
+A The Grove Provides |QID|44232| |N|(npc:112323) at {The Dreamgrove} (45.23,40.70) (40.30,24.51)| |Z|1077 0| |NPC|112323|
+T The Grove Provides |QID|44232| |N|(npc:112323) at {The Dreamgrove} (45.23,40.70) (40.30,24.51)| |Z|1077 0| |NPC|112323|
+A Hitting the Books |QID|43879| |N|(npc:111737) at {The Dreamgrove} (33.91,32.56)| |Z|1077 0| |NPC|111737|
+C Hitting the Books |QID|43879| |N|Speak to (npc:111737) and start a research work order at {The Dreamgrove} (33.91,32.56)| |Z|1077 0| |NPC|111737|
+T Hitting the Books |QID|43879| |N|(npc:111737) at {The Dreamgrove} (33.91,32.56)| |Z|1077 0| |NPC|111737|
+
+R Emerald Dreamway |QID|42042| |N|Travel to {Emerald Dreamway} (43.37,30.63)| |Z|1048 0| 
+T The Way to Nordrassil |QID|42040| |N|(npc:106204) in {Emerald Dreamway} (43.37,30.63)| |Z|1048 0| |NPC|106204|
+A Enduring the Nightmare |QID|42041| |N|(npc:106204) in {Emerald Dreamway} (43.37,30.63)| |Z|1048 0| |NPC|106204|
+A Cleaning Up |QID|42043| |N|(npc:106135) in {Emerald Dreamway} (42.98,30.26)| |Z|1048 0| |NPC|106135|
+A Teensy Weensies! |QID|42042| |N|(npc:106136) in {Emerald Dreamway} (45.09,32.55)| |Z|1048 0| |NPC|106136|
+
+C Teensy Weensies! |QID|42042| |N|Use (item:136840) to gather 15 (npc:106226) in {Emerald Dreamway} (38.56,43.79)| |Z|1048 0| |NPC|106226|
+C Cleaning Up |QID|42043| |N|Run on the red spots on the ground around this area (38.56,43.79)| |Z|1048 0| |NPC|106135| |POI|
+C Enduring the Nightmare |QID|42041| |N|Kick 12 Nightmare Aberrations in {Emerald Dreamway} (38.56,43.79)| |Z|1048 0| |NPC|106204| |POI|
+T Teensy Weensies! |QID|42042| |N|(npc:106136) in {Emerald Dreamway} (45.09,32.55)| |Z|1048 0| |NPC|106136|
+T Enduring the Nightmare |QID|42041| |N|(npc:106204) in {Emerald Dreamway} (43.37,30.63)| |Z|1048 0| |NPC|106204|
+T Cleaning Up |QID|42043| |N|(npc:106135) in {Emerald Dreamway} (42.98,30.26)| |Z|1048 0| |NPC|106135|
+A A Dying Dream |QID|42044| |N|(npc:106204) in {Emerald Dreamway} (43.37,30.63)| |Z|1048 0| |NPC|106204|
+K (npc:106222) |QID|106222)| |QID|42044.1| |N|Kill (npc:106222) in {Emerald Dreamway} (63.73,40.81)| |Z|1048 0| |NPC|106222|
+T A Dying Dream |QID|42044| |N|(npc:106204) in {Emerald Dreamway} (43.37,30.63)| |Z|1048 0| |NPC|106204|
+A Communing With Malorne |QID|42045| |N|(npc:106204) in {Emerald Dreamway} (43.37,30.63)| |Z|1048 0| |NPC|106204|
+
+R Nordrassil |QID|42045| |N|Travel to {Nordrassil} (54.01,53.09)| |Z|1048 0| 
+N (npc:106250) |QID|42045.2| |N|Speak to (npc:106250) in {Nordrassil} (60.50,23.59)| |Z|606 0| |NPC|106250|
+N Begin the Ritual |QID|42045.3| |N|Click on the Idol of the Wilds to being the ritual (60.33,23.73)| |Z|606 0|
+T Communing With Malorne |QID|42045| |N|(npc:106250) in {Nordrassil} (60.50,23.58)| |Z|606 0| |NPC|106250|
+A A New Beginning |QID|42046| |N|(npc:106250) in {Nordrassil} (60.50,23.58)| |Z|606 0| |NPC|106250|
+
+R Emerald Dreamway |TID|42046| |N|Travel to {Emerald Dreamway} (43.60,51.33)| |Z|1048 0|
+A The Cycle Continues |QID|43365| |N|(npc:98008) in {Emerald Dreamway} (43.60,51.33)| |Z|1048 0| |NPC|98008|
+A Cleansing the Dreamway |QID|42719| |N|(npc:98008) in {Emerald Dreamway} (43.60,51.33)| |Z|1048 0| |NPC|98008|
+A The Pendant of Starlight |QID|42129| |N|(npc:98008) in {Emerald Dreamway} (43.60,51.33)| |Z|1048 0| |NPC|98008|
+
+T A New Beginning |QID|42046| |N|(npc:101195) in {Circle of Spirits} (44.75,51.81)| |Z|1077 0| |NPC|101195|
+A Champion: Hamuul Runetotem |QID|42047| |N|(npc:107025) in {Circle of Spirits} (47.98,55.57)| |Z|1077 0| |E| |NPC|107025|
+A Champion: Mylune |QID|42048| |N|(npc:107026) in {Circle of Spirits} (53.82,53.51)| |Z|1077 0| |E| |NPC|107026|
+A Powering the Portal |QID|42049| |N|(npc:103832) in {Circle of Spirits} (45.51, 50.54)| |Z|1077 0| |NPC|103832|
+A Defending the Isles |QID|43403| |N|(npc:103832) in {Circle of Spirits} (45.51, 50.54)| |Z|1077 0| |NPC|103832|
+A Focusing the Energies |QID|42365| |N|(npc:103832) in {Circle of Spirits} (45.51, 50.54)| |Z|1077 0| |NPC|103832|
+
+N As you go... |AYG|43365| |N|Collect 10 (item:137119) from "Powering the Portal" missions, This mission will take up to 4 hours to complete each mission (52.71,51.06)| |Z|1077 0| |QID|42049|
+N Switch Guide |N|Switch to (guide:"1046(98-110)") guide and complete to collect 25 (item:138993) from the enemies in the dungeon for the quest (qid:42719)| |QID|42719|
+C The Pendant of Starlight |N|Collect 25 (item:138993) from enemies in {Eye of Azshara}| |QID|42719|
+C Focusing the Energies |N|Plant 100 (item:139380) on any enemies in {Eye of Azshara}| |QID|43365|
+
+T The Cycle Continues |QID|43365| |N|(npc:98008) in {Emerald Dreamway} (31.77,52.18)| |Z|1048 0| |NPC|98008|
+T Cleansing the Dreamway |QID|42719| |N|(npc:98008) in {Emerald Dreamway} (31.77,52.18)| |Z|1048 0| |NPC|98008|
+----
+R Dalaran |OID|44448| |N|Travel to {Dalaran} (28.46,48.33)| |Z|1014 10| |NPC|90417| 
+T Goddess Watch Over You |QID|44337| |N|(npc:90417) in {Dalaran} (28.46,48.33)| |Z|1014 10| |NPC|90417| |O|
+T Goddess Watch Over You |QID|44338| |N|(npc:90417) in {Dalaran} (28.46,48.33)| |Z|1014 10| |NPC|90417| |O|
+A In the House of Light and Shadow |QID|44448| |N|(npc:90417) in {Dalaran} (28.46,48.33)| |Z|1014 10| |NPC|90417| 
+C In the House of Light and Shadow |QID|44448| |N|Take the Tears of Elune to (npc:113857) in your Order Hall (60.06,52.14)| |Z|1077 0| |NPC|113857|
+T In the House of Light and Shadow |QID|44448| |N|(npc:90417) in {Dalaran} (28.49,48.33)|  |Z|1014 10| |NPC|90417| 
+----
+R Val'sharah |QID|42129| |N|Travel to {Val'shara} (39.72,57.69)| |Z|1018 0|
+K (npc:110536) |QID|42129.1| |N|Kill (npc:110536) (she's underwater) and collect (item:139374) (39.72,57.69) (31.61,59.15) (24.65,63.18) (32.27,23.98)| |Z|1018 0| |NPC|110536|
+
+R Emerald Dreamway |QID|43368| |N|Travel to {Emerald Dreamway} (31.77,52.18)| |Z|1048 0| 
+T The Pendant of Starlight |QID|42129| |N|(npc:98008) in {Emerald Dreamway} (31.77,52.18)| |Z|1048 0| |NPC|98008|
+A Champion: Brightwing |QID|43368| |N|(npc:98008) in {Emerald Dreamway} (31.77,52.18)| |Z|1048 0| |NPC|98008| |E|
+
+N As you go... |AYG|43403| |N|Collect 10 (item:137119) from "Powering the Portal" missions, This mission will take up to 4 hours to complete each mission (52.71,51.06)| |Z|1077 0|  |QID|42049|
+C Focusing the Energies |QID|42365| |N|Collect 10 (item:124124) you can collect them from World quests, dungeons and gathering professions|
+C Defending the Isles |QID|43403| |N|Complete 30 World Quests|
+
+T Focusing the Energies |QID|42365| |N|(npc:101195) in {The Dreamgrove} (40.15,27.09)| |Z|1077 0| |NPC|101195|
+T Defending the Isles |QID|43403| |N|(npc:101195) in {The Dreamgrove} (40.15,27.09)| |Z|1077 0| |NPC|101195|
+C Powering the Portal |QID|42049| |N|Collect 10 (item:137119) from "Powering the Portal" missions, This mission will take up to 4 hours to complete each mission (52.71,51.06)| |Z|1077 0| 
+T Powering the Portal |QID|42049| |N|(npc:103832) in {Circle of Spirits} (45.51, 50.54)| |Z|1077 0| |NPC|103832|
+A Enter Nightmare |QID|42051| |N|(npc:101195) in {The Dreamgrove} (40.15,27.09)| |Z|1077 0| |NPC|101195|
+
+R Malorne's Nightmare |QID|42051.1| |N|Enter the Nightmare Portal (49.38,45.35) (81.34,40.15)| |Z|1048 0|
+T Enter Nightmare |QID|42051| |N|(npc:107132) in {Malorne's Nightmare} (61.44,65.75)| |Z|1086 0| |NPC|107132|
+A Defenders of the Dream |QID|42050| |N|(npc:107163) in (61.21,65.22)| |Z|1086 0| |NPC|107163|
+C A Defenders of the Dream |QID|42050.1| |N|There are allies nearby to choose from that will help you with different things. You can choose whichever ally you want (62.90,66.66)| |Z|1086 0| |NPC|107132|
+T Defenders of the Dream |QID|42050| |N|(npc:107163) in {Malorne's Nightmare} (61.21,65.22)| |Z|1086 0| |NPC|107163|
+A The War of the Ancients |QID|42053| |N|(npc:107132) in {Malorne's Nightmare} (61.46,65.61)| |Z|1086 0| |NPC|107132|
+N (npc:107166) |QID|42053.1| |N|Speak to (npc:107166) in {Malorne's Nightmare} (65.08,62.16)| |Z|1086 0| |NPC|107166|
+N Win the War of the Ancients |QID|42053.2| |N|Use the (spell:212714) to kill enemies in {Malorne's Nightmare} (65.50,52.65)| |Z|1086 0| 
+T The War of the Ancients |QID|42053| |N|(npc:107214) next to you| |Z|1086 0| |NPC|107214|
+A Archimonde, The Defiler |QID|42054| |N|(npc:107214) next to you| |Z|1086 0| |NPC|107214|
+K (npc:106906) |QID|42054.1| |N|(npc:106906) in {Malorne's Nightmare} (55.09,58.68) (36.14,30.86) (25.27,31.11)| |Z|1086 0| |NPC|106906|
+T Archimonde, The Defiler |QID|42054| |N|(npc:106905) in {Malorne's Nightmare} (37.28,32.89) (66.24,66.82)| |Z|1086 0| |NPC|106905|
+A The Demi-God's Return |QID|42055| |N|(npc:106905) in {Malorne's Nightmare} (66.24,66.82)| |Z|1086 0| |NPC|106905|
+
+R The Dreamgrove |QID|42055.1| |N|Return to the Dreamgrove and Receive Malorne's Gift (66.86,29.86)| |Z|1077 0|
+T The Demi-God's Return |QID|42055| |N|(npc:103832) in {Circle of Spirits} (45.51, 50.54)| |Z|1077 0| |NPC|103832|
+A Champion: Remulos |QID|42056| |N|(npc:103832) in {Circle of Spirits} (45.51, 50.54)| |Z|1077 0| |NPC|103832| |E|
+A The Emerald Nightmare |QID|42432| |N|(npc:101195) in {The Dreamgrove} (44.66,51.98)| |Z|1077 0| |NPC|101195|
+A A Hero's Weapon |QID|43409| |N|(npc:101195) in {The Dreamgrove} (44.66,51.98)| |Z|1077 0| |NPC|101195|
+N (npc:1011950 )| |QID|43409.1| |N|Speak to (npc:101195) at the {Seed of Ages} (39.50,57.53) (39.50,57.53)| |Z|1077 0| |NPC|101195|
+C A A Hero's Weapon |QID|43409.2| |N|Use the Comamander's Valor ability to infuse your artifact (31.67,53.46)| |Z|1077 0| 
+T A Hero's Weapon |QID|43409| |N|(npc:101195) in {The Dreamgrove} (32.53,53.96)| |Z|1077 0| |NPC|101195| |POI|
+
+----
+A Awakenings |QID|44464| |N|(npc:113857) in {The Dreamgrove} (60.06,52.14)| |Z|1077 0| |NPC|113857|
+
+R Val'sharah |QID|44464| |N|Travel {Val'sharah} (54.40,73.17)| |Z|1018 0|
+C Awakenings |QID|44464.1| |N|Travel to {Val'sharah} and use (spell:226956) to witness the awakening of Illidan Stormrage (54.40,73.17)| |Z|1018 0|
+
+T Awakenings |QID|44464| |N|(npc:113857) in {The Dreamgrove} (60.06,52.14)| |Z|1077 0| |NPC|113857|
+A An Unclear Path |QID|44466| |N|(npc:113857) in {The Dreamgrove} (60.06,52.14)| |Z|1077 0| |NPC|113857|
+
+R Val'Shara |QID|44466| |N|Travel to {Val'Shara}  (54.96,53.43) (53.29,49.94) (52.11,43.99)| |Z|1018 0|
+N Witness Illidan's Resilience |QID|44466.1| |N|Use (spell:226956) to witness the awakening of Illidan Resilience (45.54,34.75)| |Z|1018 0|
+
+R The Dreamgrove |OID|44479| |N|Travel to {The Dreamgrove} (60.06,52.14)| |Z|1077 0|
+T An Unclear Path |QID|44466| |N|(npc:113857) in {The Dreamgrove} (60.06,52.14)| |Z|1077 0| |NPC|113857|
+A Ravencrest's Legacy |QID|44479| |N|(npc:113857) in {The Dreamgrove} (60.06,52.14)| |Z|1077 0| |NPC|113857|
+R Val'Shara |QID|44479| |N|Travel to {Val'Shara} (54.96,53.43)| |Z|1018 0|
+N (spell:226956) |N|Go to the destination to use (spell:226956) to begin the Ravencrest's Legacy scenario (54.96,53.43) (52.81,50.41) (46.98,50.23) (44.28,49.94) (42.08,46.29)| |Z|1018 0| |QID|44479|
+N Report to Kur'talos Ravencrest |SID|33154|1| |N|Report to (npc:113046) in  {Ravencourt}| |QID|44479| |NPC|113046|
+N Repair the Deactivated Moon Guard Portal |SID|33155|2| |N|Click Deactivated Moon Guard Portal in {Ravencourt}| |QID|44479|
+K (npc:113555) |SID|33162|3| |N|Secure the Rampart by Defeating (npc:113555) (42.95,46.32) (44.27,49.58)| |Z|1099 0| |QID|44479|
+N Enter the Upper Ramparts of the Courtyard |SID|33169|4| |N|Follow the path to the upper ramparts of the courtyard (44.28,49.76) (44.51,51.22 )| |Z|1099 0| |QID|44479|
+N Activate the Moon Guard Portal |SID|33174|5| |N|Click on Deactivated Moon Guard Portal in each waypoint (44.51,51.22) (40.98,51.48) (43.71,50.93)| |Z|1099 0|  |QID|44479
+K (npc:114137) |SID|33184|6| |N|Use (spell:227154) to kill (npc:114137) to end the invasion (43.09,52.18)| |Z|1099 0| |QID|44479| |NPC|114137|
+
+R Mausoleum |QID|44414| |N|Travel to {Mausoleum} (38.75, 53.07)| |Z|1099 0| 
+A Felspawns of Lothros |QID|44414| |N|(npc:113361) in {Mausoleum} (38.75, 53.07)| |Z|1099 0| |NPC|113361|
+C Felspawns of Lothros |QID|44414| |N|Defeat (npc:113786) in {Mausoleum} (40.63, 53.01)| |Z|1099 0| |NPC|113786|
+T Felspawns of Lothros |QID|44414| |N|(npc:113361) in {Mausoleum} (40.42, 53.01)| |Z|1099 0| |NPC|113361|
+A The Red Axe |QID|44415| |N|(npc:113361) in {Mausoleum} (40.42, 53.01)| |Z|1099 0| |NPC|113361|
+C The Red Axe |QID|44415| |N|Close the Unstable Portals and make your way to (npc:113355) (41.37, 49.89)| |Z|1099 0| |NPC|113355|
+T The Red Axe |QID|44415| |N|(npc:113355) in {Mausoleum} (43.80, 50.40)| |Z|1099 0| |NPC|113355|
+A Hunter of Night |QID|44416| |N|(npc:113355) in {Mausoleum} (43.84, 50.41)| |Z|1099 0| |NPC|113355|
+C Hunter of Night |QID|44416| |N|Defeat (npc:113825) in {Mausoleum} (43.29, 50.45)| |Z|1099 0| |NPC|113825|
+T Hunter of Night |QID|44416| |N|(npc:113355) in {Mausoleum} (41.59, 50.53)| |Z|1099 0| |NPC|113355|
+
+R Raven's Glory |QID|44479| |N|Travel to {Raven's Glory}  (42.86, 50.56) (42.97, 48.79)| |Z|1099 0|
+C When Good Men Do Nothing |SID|33186| |N|Enter Raven's Glory and use (spell:227236) to destroy the Colossal Siegebreaker in {Raven's Glory} (42.97, 48.79)| |Z|1099 0| |QID|44479|
+
+R The Dreamgrove |OID|44480| |N|Travel to {The Dreamgrove} (60.06,52.14)| |Z|1077 0| 
+T Ravencrest's Legacy |QID|44479| |N|(npc:113857) in {The Dreamgrove} (60.06,52.14)| |Z|1077 0| |NPC|113857|
+A In My Father's House |QID|44480| |N|(npc:113857) in {The Dreamgrove} (60.06,52.14)| |Z|1077 0| |NPC|113857|
+
+R Temple of Zin-Malor |QID|44480| |N|Travel to {Temple of Zin-Malor} (35.11, 49.88)| |Z|181 0|
+C In My Father's House |QID|44480| |N|Use (spell:226956) witness Illidan's Sacrifice in Azshara on the continent of Kalimdor (35.11, 49.88) | |Z|816 0|
+
+R The Dreamgrove |TID|44480| |N|Travel to {The Dreamgrove} (60.06,52.14)| |Z|1077 0|
+T In My Father's House |QID|44480| |N|(npc:113857) in {The Dreamgrove} (60.06,52.14)| |Z|1077 0| |NPC|113857|
+A Destiny Unfulfilled |QID|44497| |N|(npc:113857) in {The Dreamgrove} (60.06,52.14)| |Z|1077 0| |NPC|113857|
+
+R The Black Temple |QID|44497| |N|Travel to {The Black Temple} (72.97, 44.12)| |Z|473 0|
+N (spell:226956) |N|Use (spell:226956) in {The Black Temple} (72.97, 44.12)| |Z|473 0| |F|1085 1| |QID|44497| 
+C Examine the Skull of Gul'dan. |SID|32029|1| |N|Examine the Skull of Gul'dan in {Temple Summit} (52.70, 71.26)| |Z|1085 1| |QID|44497| 
+C Confront Akama |SID|31955|1| |N|Confront Akama in {Temple Summit} (52.70, 71.26)| |Z|1085 1| |QID|44497| 
+C You Are Not Prepared! |SID|0|2| |N|Survive until your reinforcements arrive in {Temple Summit} (52.92, 60.84)| |Z|1085 1| |QID|44497| 
+C To The Skies |SID|32682|3| |N|Summon the (npc:22997) and defend it in {Temple Summit} (55.95, 75.70)| |Z|1085 1| |NPC|22997| |QID|44497| 
+C The Final Countdown |SID|32867|4| |N|Use Metamorphosis ability in {Temple Summit} (54.48, 72.76)| |Z|1085 1| |QID|44497| 
+C The Demon Within |SID|32865|5| |N|Destroy the Warlocks in {Temple Summit} (52.27, 64.57)| |Z|1085 1| |QID|44497| 
+C Defeat Maiev |SID|32942|6| |N|Defeat (npc:112867) in {Temple Summit} (52.16, 69.92)| |Z|1085 1| |NPC|112867| |QID|44497| 
+C Destiny Unfulfilled |QID|44497| |N|Witness True Betrayal in Shadowmoon Valley on the fringes of Outland., in {Temple Summit} (52.16, 69.92)| |Z|1085 1|
+
+R The Dreamgrove |TID|44496| |N|Travel to {The Dreamgrove} (60.06,52.14)| |Z|1077 0|
+T Destiny Unfulfilled |QID|44496| |N|(npc:113857) in {The Dreamgrove} (60.06,52.14)| |Z|1077 0| |NPC|113857|
+----
+
+C The Emerald Nightmare |QID|42432| |N|Enter the Emerald Nightmare raid on any difficulty and defeat (npc:103769)| |NPC|103769|
+T The Emerald Nightmare |QID|42432| |N|(npc:101195) in {The Dreamgrove} (44.66,51.97)| |Z|1077 0| |NPC|101195| |POI|
 
 N Guide Complete
 

@@ -2,5 +2,5 @@
 ET_Data = {
 	["events"] = {
 	},
-	["active"] = true,
+	["active"] = false,
 }

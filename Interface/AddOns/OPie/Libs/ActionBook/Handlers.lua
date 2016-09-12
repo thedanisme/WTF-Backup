@@ -74,7 +74,7 @@ do -- spell: spell ID + mount spell ID
 		local cdLeft = (cooldown or 0) > 0 and (enabled ~= 0) and (cooldown + cdLength - time) or 0
 		local count, charges, maxCharges, chargeStart, chargeDuration = GetSpellCount(n), GetSpellCharges(n)
 		local state = ((IsSelectedSpellBookItem(n) or IsCurrentSpell(n) or n == currentShapeshift() or enabled == 0) and 1 or 0) +
-		              (IsSpellOverlayed(msid or 0) and 2 or 0) + (nomana and 8 or 0) + (inRange and 0 or 16) + (charges and charges > 0 and 64 or 0) + (hasRange and 512 or 0) + (usable and 0 or 1024)
+		              (IsSpellOverlayed(msid or 0) and 2 or 0) + (nomana and 8 or 0) + (inRange and 0 or 16) + (charges and charges > 0 and 64 or 0) + (hasRange and 512 or 0) + (usable and 0 or 1024) + (enabled == 0 and 2048 or 0)
 		usable = not not (usable and inRange and (cooldown or 0) == 0 or (enabled == 0))
 		if charges and maxCharges and charges < maxCharges and cdLeft == 0 then
 			cdLeft, cdLength = chargeStart-time + chargeDuration, chargeDuration
@@ -87,22 +87,30 @@ do -- spell: spell ID + mount spell ID
 		return spellHint(sname, nil, target)
 	end
 	
+	local forcedSpellIDCasts = {[126819]=1, [28272]=1, [28271]=1, [161372]=1}
 	AB:RegisterActionType("spell", function(id)
 		if type(id) ~= "number" then return end
 		local action = mountMap[id]
-		if action == nil then
+		if action then
+		elseif forcedSpellIDCasts[id] then
+			action = FindSpellBookSlotBySpellID(id) and id or nil
+		else
 			local s0, r0 = GetSpellInfo(id)
 			local o, s, r = pcall(GetSpellInfo, s0, r0)
 			if not (o and s and r and s0) then return end
-			action = s0
+			local _, _, r1 = pcall(GetSpellInfo, s0)
+			action = (r0 and r1 ~= r0 and FindSpellBookSlotBySpellID(id)) and (s0 .. "(" .. r0 .. ")") or s0
 		end
 		if action and not actionMap[action] then
-			spellMap[action], spellMap[action:lower()], actionMap[action] = id, id, AB:CreateActionSlot(spellHint, action, "attribute", "type","spell", "spell",action)
+			spellMap[action], actionMap[action] = id, AB:CreateActionSlot(spellHint, action, "attribute", "type","spell", "spell",action)
+			if type(action) == "string" then
+				spellMap[action:lower()] = id
+			end
 		end
 		return actionMap[action]
 	end, function(id)
 		local name2, _, icon2, name, sname, icon = nil, nil, nil, GetSpellInfo(id)
-		if name then name2, _, icon2 = GetSpellInfo(name, sname) end
+		if name and not forcedSpellIDCasts[id] then name2, _, icon2 = GetSpellInfo(name, sname) end
 		return spellMountID[id] and "Mount" or "Spell", name2 or name, icon2 or icon, nil, GameTooltip.SetSpellByID, id
 	end)
 	local gab = GetSpellInfo(161691)
@@ -156,11 +164,13 @@ do -- item: items ID/inventory slot
 		else
 			name, link, _, _, _, _, _, _, _, icon = GetItemInfo(ident)
 		end
-		local iid, cdStart, cdLen = (link and tonumber(link:match("item:(%d+)"))) or itemIdMap[ident]
+		local iid, cdStart, cdLen, enabled, cdLeft = (link and tonumber(link:match("item:(%d+)"))) or itemIdMap[ident]
 		if iid and PlayerHasToy(iid) and GetItemCount(iid) == 0 then
 			return toyHint(iid, nil, target)
 		elseif iid then
-			cdStart, cdLen = GetItemCooldown(iid)
+			cdStart, cdLen, enabled = GetItemCooldown(iid)
+			local time = GetTime()
+			cdLeft = (cdStart or 0) > 0 and (enabled ~= 0) and (cdStart + cdLen - time)
 		end
 		local inRange, hasRange = NormalizeInRange[IsItemInRange(ident, target or "target")]
 		inRange, hasRange = inRange ~= 0, inRange ~= nil
@@ -178,9 +188,9 @@ do -- item: items ID/inventory slot
 		end
 		local nCharge = GetItemCount(ident, false, true) or 0
 		local usable = nCharge > 0 and (GetItemSpell(ident) == nil or IsUsableItem(ident))
-		local state = (IsCurrentItem(ident) and 1 or 0) + (inRange and 0 or 16) + (slot and IsEquippableItem(ident) and (bag and (purpose == "equip" and 128 or 0) or (slot and 256 or 0)) or 0) + (hasRange and 512 or 0) + (usable and 0 or 1024)
+		local state = (IsCurrentItem(ident) and 1 or 0) + (inRange and 0 or 16) + (slot and IsEquippableItem(ident) and (bag and (purpose == "equip" and 128 or 0) or (slot and 256 or 0)) or 0) + (hasRange and 512 or 0) + (usable and 0 or 1024) + (enabled == 0 and 2048 or 0)
 		return not not (usable and inRange and (cdLen or 0) == 0), state, icon or GetItemIcon(ident), name or ident, nCharge,
-			(cdStart or 0) > 0 and (cdStart - GetTime() + cdLen) or 0, cdLen or 0, tip, tipArg
+			cdLeft or 0, cdLen or 0, tip, tipArg
 	end
 	AB:RegisterActionType("item", function(id, byName, forceShow, onlyEquipped)
 		if type(id) ~= "number" then return end
@@ -636,11 +646,11 @@ do -- toybox: item ID
 	function toyHint(iid)
 		local _, name, icon = C_ToyBox.GetToyInfo(iid)
 		local cdStart, cdLength = GetItemCooldown(iid)
-		return name and cdStart == 0, 0, icon, name, 0, (cdStart or 0) > 0 and (cdStart+cdLength-GetTime()) or 0, cdLength, GameTooltip.SetToyByItemID, iid
+		return name and cdStart == 0, 0, icon or GetItemIcon(iid), name, 0, (cdStart or 0) > 0 and (cdStart+cdLength-GetTime()) or 0, cdLength, GameTooltip.SetToyByItemID, iid
 	end
 	AB:RegisterActionType("toy", function(id)
 		if type(id) == "number" and not map[id] then
-			if PlayerHasToy(id) then
+			if PlayerHasToy(id) and C_ToyBox.IsToyUsable(id) then
 				map[id] = AB:CreateActionSlot(toyHint, id, "attribute", "type","toy", "toy",id)
 			end
 		end

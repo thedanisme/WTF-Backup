@@ -1,6 +1,6 @@
 ## Interface: 70000
 ## Title: OPie
-## Version: Umber 2
+## Version: Umber 3
 ## Notes: Group abilities into rings that appear when you hold down a binding.
 ## Notes-deDE: Gruppiere Fähigkeiten in Ringen die erscheinen wenn eine Tastenbelegung ausgelöst wird.
 ## Notes-esES: Agrupar habilitades en anillos que se aparecen al presionar teclados.
@@ -26,5 +26,6 @@ OPieBindings.lua
 Meta\StanceBar.lua
 Meta\RingKeeper.lua
 Meta\RingKeeperConfig.lua
+Meta\SpecSet.lua
 Rings\Common.lua
 Rings\RKRings.lua

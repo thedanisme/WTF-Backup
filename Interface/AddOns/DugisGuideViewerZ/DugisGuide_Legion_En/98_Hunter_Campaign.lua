@@ -366,7 +366,7 @@ A Awakenings |QID|44464| |N|(npc:113857) in {Trueshot Lodge} (47.49,43.51)| |Z|1
 R Val'sharah |QID|44464| |N|Travel {Val'sharah} (54.40,73.17)| |Z|1018 0|
 C Awakenings |QID|44464.1| |N|Travel to {Val'sharah} and use (spell:226956) to witness the awakening of Illidan Stormrage (54.40,73.17)| |Z|1018 0|
 
-T Awakenings |QID|44464| |N|(npc:113857) in {Skyhold} (45.32,30.18)| |Z|1035 1| |NPC|113857|
+T Awakenings |QID|44464| |N|(npc:113857) in {Trueshot Lodge} (47.42,43.49)| |Z|1072 0| |NPC|113857|
 --
 C Requesting Reinforcements |QID|42402| |N|Use the Scouting Map to complete (mission:932) mission. This mission will take 12 hours to complete (42.50,46.63)| |Z|1072 0| |NPC|107973|
 T Requesting Reinforcements |QID|42402| |N|(npc:107973) in {Trueshot Lodge} (43.41,26.33)| |Z|1072 0| |NPC|107973|
@@ -416,9 +416,9 @@ A An Unclear Path |QID|44466| |N|(npc:113857) in {Trueshot Lodge} (47.42,43.49)|
 R Val'Shara |QID|44466| |N|Travel to {Val'Shara}  (54.96,53.43) (53.29,49.94) (52.11,43.99)| |Z|1018 0|
 N Witness Illidan's Resilience |QID|44466.1| |N|Use (spell:226956) to witness the awakening of Illidan Resilience (45.54,34.75)| |Z|1018 0|
 
-R Skyhold |OID|44479| |N|Travel to {Skyhold} (45.32,30.18)| |Z|1035 1|
-T An Unclear Path |QID|44466| |N|(npc:113857) in {Skyhold} (45.32,30.18)| |Z|1035 1| |NPC|113857|
-A Ravencrest's Legacy |QID|44479| |N|(npc:113857) in {Skyhold} (45.32,30.18)| |Z|1035 1| |NPC|113857|
+R Trueshot Lodge |OID|44479| |N|Travel to {Trueshot Lodge} (47.42,43.49)| |Z|1072 0|
+T An Unclear Path |QID|44466| |N|(npc:113857) in {Trueshot Lodge} (47.42,43.49)| |Z|1072 0| |NPC|113857|
+A Ravencrest's Legacy |QID|44479| |N|(npc:113857) in {Trueshot Lodge} (47.42,43.49)| |Z|1072 0| |NPC|113857|
 R Val'Shara |QID|44479| |N|Travel to {Val'Shara} (54.96,53.43)| |Z|1018 0|
 N (spell:226956) |N|Go to the destination to use (spell:226956) to begin the Ravencrest's Legacy scenario (54.96,53.43) (52.81,50.41) (46.98,50.23) (44.28,49.94) (42.08,46.29)| |Z|1018 0| |QID|44479|
 N Report to Kur'talos Ravencrest |SID|33154|1| |N|Report to (npc:113046) in  {Ravencourt}| |QID|44479| |NPC|113046|
@@ -472,9 +472,9 @@ A In My Father's House |QID|44480| |N|(npc:113857) in {Trueshot Lodge} (47.42,43
 R Temple of Zin-Malor |QID|44480| |N|Travel to {Temple of Zin-Malor} (35.11, 49.88)| |Z|181 0|
 C In My Father's House |QID|44480| |N|Use (spell:226956) witness Illidan's Sacrifice in Azshara on the continent of Kalimdor (35.11, 49.88) | |Z|816 0|
 
-R Skyhold |TID|44480| |N|Travel to {Skyhold} (45.32,30.18)| |Z|1035 1|
-T In My Father's House |QID|44480| |N|(npc:113857) in {Skyhold} (45.32,30.18)| |Z|1035 1| |NPC|113857|
-A Destiny Unfulfilled |QID|44497| |N|(npc:113857) in {Skyhold} (45.32,30.18)| |Z|1035 1| |NPC|113857|
+R Trueshot Lodge |TID|44480| |N|Travel to {Trueshot Lodge} (47.42,43.49)| |Z|1072 0|
+T In My Father's House |QID|44480| |N|(npc:113857) in {Trueshot Lodge} (47.42,43.49)| |Z|1072 0| |NPC|113857|
+A Destiny Unfulfilled |QID|44497| |N|(npc:113857) in {Trueshot Lodge} (47.42,43.49)| |Z|1072 0| |NPC|113857|
 
 R The Black Temple |QID|44497| |N|Travel to {The Black Temple} (72.97, 44.12)| |Z|473 0|
 N (spell:226956) |N|Use (spell:226956) in {The Black Temple} (72.97, 44.12)| |Z|473 0| |F|1085 1| |QID|44497| 
