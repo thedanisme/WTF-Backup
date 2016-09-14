@@ -468,7 +468,7 @@ function WMT:Initialize()
 				function() return DGV.chardb.RareCreatureTrackingEnabled end,
 				function(value) DGV.chardb.RareCreatureTrackingEnabled = value end
 	end
-	
+
 	local petJournalLookup = {}
 	--_G["BATTLE_PET_NAME_"..i]
 	function DGV:PopulatePetJournalLookup()

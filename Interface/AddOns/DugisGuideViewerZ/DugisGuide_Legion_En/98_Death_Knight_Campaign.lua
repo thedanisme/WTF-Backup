@@ -143,7 +143,7 @@ T Called to Acherus |QID|44550| |N|(npc:93568) in the {Hall of Command} (49.69, 
 A Salanar the Horseman |QID|43539| |N|(npc:93568) in the {Hall of Command} (49.69, 50.61)| |Z|1021 2| |NPC|93568|
 C Salanar the Horseman |QID|43539| |N|Complete the "Salanar the Horsemen" mission.<br/><br/>You will need to complete several of these mission to complete the quest| |Z|1021 2| |NPC|93568| |POI|
 T Salanar the Horseman |QID|43539| |N|(npc:93568) in the {Hall of Command} (49.69, 50.61)| |Z|1021 2| |NPC|93568|
-A Return of the Four Horsemen |QID|42449| |N|(npc:93437) in the {Hall of Command} (50.97, 50.76) |Z|1021 2| |NPC|93437|
+A Return of the Four Horsemen |QID|42449| |N|(npc:93437) in the {Hall of Command} (50.97, 50.76)| |Z|1021 2| |NPC|93437|
 
 R Durotar |QID|42449| |N|Travel to {Durotar} (47.26, 17.82)| |Z|4 0| 
 T Return of the Four Horsemen |QID|42449| |N|(npc:107554) in {Durotar} (47.26, 17.82)| |Z|4 0| |NPC|107554|

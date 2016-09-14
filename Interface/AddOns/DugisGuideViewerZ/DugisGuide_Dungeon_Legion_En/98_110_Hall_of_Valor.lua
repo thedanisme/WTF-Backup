@@ -18,7 +18,7 @@ K (npc:95676) |SID|28998| |N|Defeat (npc:95676) in {Halls of Valor}<br><b>When a
 T Securing the Aegis |QID|40072| |N|Aegis of Aggramar in {Halls of Valor} (50.79, 88.18)| |Z|1041 3| |NPC|251991| |O|
 A The Aegis of Aggramar |QID|43349| |N|Aegis of Aggramar in {Halls of Valor} (50.79, 88.18)| |Z|1041 3| |NPC|251991| |O|
 
-R The Portrait Room |QID|43349| |N|Travel to {The Portrait Room} (49.20, 62.25) |Z|1014 12| |O|
+R The Portrait Room |QID|43349| |N|Travel to {The Portrait Room} (49.20, 62.25)| |Z|1014 12| |O|
 T The Aegis of Aggramar |QID|43349| |N|The Aegis of Aggramar in {The Portrait Room} (49.20, 62.25)| |Z|1014 12|  |O|
 
 N Guide Complete

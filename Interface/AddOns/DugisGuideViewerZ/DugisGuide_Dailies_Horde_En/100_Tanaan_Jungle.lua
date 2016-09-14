@@ -8,7 +8,7 @@ A Garrison Campaign: War Council |QID|38567| |N|Auto quest in {Frostwall} after 
 T Garrison Campaign: War Council |QID|38567| |N|(npc:92400) {Frostwall} (39.27, 53.14)| |Z|976| |NPC|92400|
 A We Need a Shipwright |QID|38568| |N|(npc:92400) in {Frostwall} (39.27, 53.14)| |Z|976| |NPC|92400|
 
-F Iron Docks |TID|38568| |N|Speak to (npc:79407) and request a flight to {Iron Docks} (45.75, 50.63) |Z|976| |NPC|79407| |V|
+F Iron Docks |TID|38568| |N|Speak to (npc:79407) and request a flight to {Iron Docks} (45.75, 50.63)| |Z|976| |NPC|79407| |V|
 T We Need a Shipwright |QID|38568| |N|(npc:89937) in {Iron Docks} (56.13, 6.65)| |Z|949| |NPC|89937|
 A Derailment |QID|38570| |N|(npc:89937) in {Iron Docks} (56.13, 6.65)| |Z|949| |NPC|89937|
 N (item:122516) |QID|38570.2| |N|Collect (item:122516) from the ground in {Iron Docks} (56.57, 11.62)| |Z|949|
@@ -137,9 +137,9 @@ N Find Shadow Hunter Denjai |QID|39604.1| |N|(npc:96014) in {Vol'mar} (61.7,45.7
 N Vol'jin's Headhunters (Honored) |QID|39604.2| |N|Earn Honored status with (fac:1848). Use the "Tanaan Jungle (Daily)" guide to raise your reputation|
 B (item:127269) |QID|39604.3| |N|Purchase (item:127269) from (npc:96014) in {Vol'mar} (61.7,45.7)| |Z|945| |NPC|96014| |L|127269|
 N Learn Ship Blueprint: Battleship |QID|39604.3| |N|Use (item:127269) to learn it| |U|127269|
-T I Sunk Your Battleship |QID|39604| |N|(npc:96014) in {Vol'mar} (61.7,45.7) |Z|945| |NPC|96014|
+T I Sunk Your Battleship |QID|39604| |N|(npc:96014) in {Vol'mar} (61.7,45.7)| |Z|945| |NPC|96014|
 
-R Frostwall Shipyard |QID|39245| |N|Travel to {Frostwall Shipyard} (42.10, 71.02)| |Z|941
+R Frostwall Shipyard |QID|39245| |N|Travel to {Frostwall Shipyard} (42.10, 71.02)| |Z|941|
 A Upgrading The Fleet |QID|39245| |N|(npc:94789) in {Frostwall Shipyard} (42.10, 71.02)| |Z|941| |NPC|94789|
 C Upgrading The Fleet |QID|39245| |N|Collect 1000 (cur:824), 1000<g> and complete 15 naval combat missions. (42.10, 71.02)| |Z|941| |NPC|94789|
 T Upgrading The Fleet |QID|39245| |N|(npc:94789) in {Frostwall Shipyard} (42.10, 71.02)| |Z|941| |NPC|94789|

@@ -401,7 +401,7 @@ A Champion: Delas Moonfang |QID|43933| |N|Speak to (npc:110866) to recruit as a 
 A Defenders of the World |QID|43699| |N|(npc:90250) in the {Sanctum of Light} (52.04, 77.17)| |Z|23 20| |NPC|90250|
 A Lumenstone |QID|43698| |N|(npc:90250) in the {Sanctum of Light} (52.04, 77.17)| |Z|23 20| |NPC|90250|
 A Blood of Sargeras |QID|43534| |N|(npc:90250) in the {Sanctum of Light} (52.04, 77.17)| |Z|23 20| |NPC|90250|
-C Blood of Sargeras |QID|124124 |QID|43534.1| |N|Collect 10 (item:124124) by completing world quests or kill bosses in dungeons| 
+C Blood of Sargeras |QID|43534.1| |N|Collect 10 (item:124124) by completing world quests or kill bosses in dungeons| 
 T Blood of Sargeras |QID|43534| |N|(npc:90250) in the {Sanctum of Light} (52.04, 77.17)| |Z|23 20| |NPC|90250|
 ----
 A An Unclear Path |QID|44466| |N|(npc:113857) in {Sanctum of Light} (52.19,69.55)| |Z|23 20| |NPC|113857|
@@ -417,7 +417,7 @@ N Report to Kur'talos Ravencrest |SID|33154|1| |N|Report to (npc:113046) in  {Ra
 N Repair the Deactivated Moon Guard Portal |SID|33155|2| |N|Click Deactivated Moon Guard Portal in {Ravencourt}| |QID|44479|
 K (npc:113555) |SID|33162|3| |N|Secure the Rampart by Defeating (npc:113555) (42.95,46.32) (44.27,49.58)| |Z|1099 0| |QID|44479|
 N Enter the Upper Ramparts of the Courtyard |SID|33169|4| |N|Follow the path to the upper ramparts of the courtyard (44.28,49.76) (44.51,51.22 )| |Z|1099 0| |QID|44479|
-N Activate the Moon Guard Portal |SID|33174|5| |N|Click on Deactivated Moon Guard Portal in each waypoint (44.51,51.22) (40.98,51.48) (43.71,50.93)| |Z|1099 0|  |QID|44479
+N Activate the Moon Guard Portal |SID|33174|5| |N|Click on Deactivated Moon Guard Portal in each waypoint (44.51,51.22) (40.98,51.48) (43.71,50.93)| |Z|1099 0| |QID|44479|
 K (npc:114137) |SID|33184|6| |N|Use (spell:227154) to kill (npc:114137) to end the invasion (43.09,52.18)| |Z|1099 0| |QID|44479| |NPC|114137|
 
 R Mausoleum |QID|44414| |N|Travel to {Mausoleum} (38.75, 53.07)| |Z|1099 0| 
@@ -460,8 +460,8 @@ T Warriors of Light |QID|43697| |N|(npc:90259) in {Light's Hope Chapel} (72.69,2
 A A Hero's Weapon |QID|43424| |N|(npc:90259) in {Light's Hope Chapel} (72.69,25.7)| |Z|23 20| |NPC|90259|
 C A Hero's Weapon  |QID|43424.1| |N|Use the Commander's Valor ability to infuse your Artifact (71.79,25.15)| |Z|23 20|
 T A Hero's Weapon |QID|43424| |N|(npc:90259) in {Light's Hope Chapel} (72.69,25.7)| |Z|23 20| |NPC|90259|
-A Champion: Arator the Redeemer |QID|43785 |instant| |N|Speak to (npc:99997) to recruit as a follower (71.31,23.69)| |Z|23 20| |NPC|99997| |E|
-A Champion: Lothraxion |QID|43701 |instant| |N|Speak to (npc:109105) to recruit as a follower (73.05,23.02)| |Z|23 20| |NPC|109105| |E|
+A Champion: Arator the Redeemer |QID|43785| |N|Speak to (npc:99997) to recruit as a follower (71.31,23.69)| |Z|23 20| |NPC|99997| |E|
+A Champion: Lothraxion |QID|43701| |N|Speak to (npc:109105) to recruit as a follower (73.05,23.02)| |Z|23 20| |NPC|109105| |E|
 ----
 A In My Father's House |QID|44480| |N|(npc:113857) in {Sanctum of Light} (52.19,69.55)| |Z|23 20| |NPC|113857|
 

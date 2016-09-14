@@ -99,7 +99,7 @@ R Dalaran |QID|43153.3| |N|Return to (npc:109838) in Dalaran (48.14, 27.80)| |Z|
 T An Eye for a Scepter |QID|43153| |N|(npc:109838) in {Krasus' Landing} (73.98, 42.74)| |Z|1014 10| |NPC|109838| |PRE|43100|
 A Ritual Ruination |QID|43254| |N|(npc:109838) in {Krasus' Landing} (73.98, 42.74)| |Z|1014 10| |NPC|109838| |PRE|43100|
 
-R Tomb of Sargeras |QID|43254.1| |N|Take the (npc:110479) to the {Broken Shore} in {Krasus' Landing} (74.31, 42.89) |Z|1014 10| |NPC|110479| |PRE|43100|
+R Tomb of Sargeras |QID|43254.1| |N|Take the (npc:110479) to the {Broken Shore} in {Krasus' Landing} (74.31, 42.89)| |Z|1014 10| |NPC|110479| |PRE|43100|
 N Gul'dan |QID|43254.2| |N|Listen to (npc:110533) in {The Tomb of Sargeras} (60.49, 25.11)| |Z|1021 0| |NPC|110533| |PRE|43100|
 K Allaris Narassin |QID|43254.3| |N|Kill (npc:110556) in {The Tomb of Sargeras} (60.49, 25.11)| |Z|1021 0| |NPC|110556| |PRE|43100|
 N (item:128941) |QID|43254.4| |N|Take the (item:128941) in {The Tomb of Sargeras} (60.28, 25.35)| |Z|1021 0| |PRE|43100|
@@ -247,7 +247,168 @@ T Recruiting More Troops |QID|41798| |N|(npc:106217) in {Dreadscar Rift} (61.2, 
 C Empowering the Soul |QID|42100| |N|Collect 50 (item:136834) by completing class hall missions (66.27,46.95)| |Z|1050 0|
 T Empowering the Soul |QID|42100| |N|(npc:105018) in {Dreadscar Rift} (55.4, 37.6)| |Z|1050 0| |NPC|105018|
 
-N Level 110 Required |N|You need to be at least level 110 to continue with the class campaign quest line| |PL|103|
+N Level 110 Required |N|You need to be at least level 110 to continue with the class campaign quest line| |PL|110|
+
+A Gazing Into Oblivion |QID|44254| |N|(npc:112434) in {Dreadscar Rift} (58.77,32.63)| |Z|1050 0| |NPC|112434|
+T Gazing Into Oblivion |QID|44254| |N|(npc:112434) in {Dreadscar Rift} (58.77,32.63)| |Z|1050 0| |NPC|112434
+----
+A Goddess Watch Over You |N|(npc:113686) will appear next to you| |NPC|113686| |OID|44337, 44338|
+A Goddess Watch Over You |QID|44337| |N|(npc:113686) will appear next to you| |NPC|113686| |O|
+A Goddess Watch Over You |QID|44338| |N|(npc:113686) will appear next to you| |NPC|113686| |O|
+N Switch Guide |QID|40890| |N|Complete the (guide:"1018(98-110)#1018(98-110)#1018(98-110)") until you complete the quest (qid:40890)|
+----
+A An Unclaimed Soul |QID|42098| |N|(npc:105018) in {Dreadscar Rift} (55.4, 37.6)| |Z|1050 0| |NPC|105018|
+A Hitting the Books |QID|43887| |N|(npc:111740) in {Dreadscar Rift} (57.03,41.02)| |Z|1050 0| |NPC|111740|
+C Hitting the Books |QID|43887| |N|Speak to (npc:111740) start a research work order in {Dreadscar Rift} (57.03,41.02)| |Z|1050 0| |NPC|111740|
+T Hitting the Books |QID|43887| |N|(npc:111740) in {Dreadscar Rift} (57.03,41.02)| |Z|1050 0| |NPC|111740|
+-----
+R Dalaran |OID|44448| |N|Travel to {Dalaran} (28.46,48.33)| |Z|1014 10| |NPC|90417| 
+T Goddess Watch Over You |QID|44337| |N|(npc:90417) in {Dalaran} (28.46,48.33)| |Z|1014 10| |NPC|90417| |O|
+T Goddess Watch Over You |QID|44338| |N|(npc:90417) in {Dalaran} (28.46,48.33)| |Z|1014 10| |NPC|90417| |O|
+A In the House of Light and Shadow |QID|44448| |N|(npc:90417) in {Dalaran} (28.46,48.33)| |Z|1014 10| |NPC|90417| 
+C In the House of Light and Shadow |QID|44448| |N|Take the Tears of Elune to Light's Heart in your Order Hall (45.32,30.18)| |Z|1035 1|
+T In the House of Light and Shadow |QID|44448| |N|(npc:90417) in {Dalaran} (28.49,48.33)| |Z|1014 10| |NPC|90417| 
+----
+N Switch Guide |N|Switch to (guide:"1081(110)") guide to kill (npc:98542) and collect (item:138988) for the quest (qid:42098)| |QID|42098|
+T An Unclaimed Soul |QID|42098| |N|(npc:105018) in {Dreadscar Rift} (55.4, 37.6)| |Z|1050 0| |NPC|105018|
+A Soul Beacon |QID|41768| |N|(npc:105018) in {Dreadscar Rift} (55.4, 37.6)| |Z|1050 0| |NPC|105018|
+N Complete the Ritual of Summoning |QID|41768.1| |N|Click the Summoning Portal that appears nearby in {Dreadscar Rift} (55.27,37.13)| |Z|1050 0|
+N (npc:104820) |QID|41768.2| |N|Speak to (npc:104820) in {Dreadscar Rift} (54.00,35.49)| |Z|1050 0| |NPC|104820|
+T Soul Beacon |QID|41768| |N|(npc:105102) in {Dreadscar Rift} (53.96,36.24)| |Z|1050 0| |NPC|105102|
+A Mad Ernie the Alchemist |QID|41769| |N|(npc:105102) in {Dreadscar Rift} (53.96,36.24)| |Z|1050 0| |NPC|105102|
+
+R Bradensbrook |QID|41769| |N|Travel to {Bradensbrook} (41.62,59.92)| |Z|1018 0|
+N (npc:104824) |QID|41769.1| |N|Speak to (npc:104824) in {Bradensbrook} (41.62,59.92) (39.19,62.64)| |Z|1018 0| |NPC|104824|
+T Mad Ernie the Alchemist |QID|41769| |N|(npc:104824) in {Bradensbrook} (41.62,59.92) (39.19,62.64)| |Z|1018 0| |NPC|104824|
+A Herding Goats |QID|41781| |N|(npc:104824) in {Bradensbrook} (41.62,59.92) (39.19,62.64)| |Z|1018 0| |NPC|104824|
+C A Herding Goats |QID|41781.1| |N|Return 8 (npc:105104) to {Bradensbrook} (39.36,62.52)| |Z|1018 0| |NPC|105104|
+T Herding Goats |QID|41781| |N|(npc:104824) in {Bradensbrook} (39.19,62.64)| |Z|1018 0| |NPC|104824|
+A Doom and Gloom |QID|41780| |N|(npc:104824) in {Bradensbrook} (39.19,62.64)| |Z|1018 0| |NPC|104824|
+
+R Dreadroot |QID|41780| |N|Travel to {Dreadroot} (68.15,48.53) (66.69,45.82) (65.64,43.03) (66.32,39.05)| |Z|1018 0| 
+K (npc:97338) |QID|41780.1| |N|Kill (npc:97338) and collect 50 (item:128759) in {Dreadroot}  (66.32,39.05)| |Z|1018 0| |NPC|97338|
+K (npc:128330) |QID|41780.3| |N|Kill (npc:128330) in {Dreadroot} (65.81,40.94) (66.40,45.30) (68.18,48.60) (55.74,56.76) (55.44,51.74) (57.89,46.49) (58.97,47.66)| |Z|1018 0| |NPC|128330|
+
+R Moonclaw Vale |QID|41780| |N|Travel to {Moonclaw Vale} (61.06,73.37)| |Z|1018 0|
+N (item:128758) |QID|41780.2| |N|Click on the Spotted Gloomcaps Collect 8 (item:128758) from the ground in {Moonclaw Vale} (61.06,73.37)| |Z|1018 0|
+
+R Bradensbrook |QID|41784| |N|Travel to {Bradensbrook} (41.62,59.92)| |Z|1018 0|
+T Doom and Gloom |QID|41780| |N|(npc:104824) in {Bradensbrook} (39.19,62.64)| |Z|1018 0| |NPC|104824|
+A Borrowed Time |QID|41784| |N|(npc:104824) in {Bradensbrook} (39.19,62.64)| |Z|1018 0| |NPC|104824|
+
+R Dreadscar Rift |QID|41784| |N|Travel to {Dreadscar Rift} (54.00,35.47)| |Z|1050 0|
+N (npc:104820) |QID|41784.1| |N|Speak to (npc:104820)  and give the (item:136357) in {Dreadscar Rift} (54.00,35.47)| |Z|1050 0| |NPC|104820|
+T Borrowed Time |QID|41784| |N|(npc:105102) in {Dreadscar Rift} (53.97,36.26)| |Z|1050 0| |NPC|105102|
+A Champion: Shinfel Blightsworn |QID|41754| |N|Speak to (npc:105140) to recruit a follower (53.97,35.49)| |Z|1050 0| |E| |NPC|105140|
+A Champion: Kira Iresoul |QID|41751| |N|Speak to (npc:104732) to recruit a follower (54.14,34.90)| |Z|1050 0| |E| |NPC|104732|
+A Matters of the Heart |QID|42660| |N|(npc:104732) in {Dreadscar Rift} (54.14,34.90)| |Z|1050 0| |NPC|104732|
+A Let it Feed |QID|42103| |N|(npc:104732) in {Dreadscar Rift} (54.14,34.90)| |Z|1050 0| |NPC|104732|
+A One Who's Worthy |QID|42102| |N|(npc:105102) in {Dreadscar Rift} (53.97,36.26)| |Z|1050 0| |NPC|105102|
+A Unparalleled Power |QID|44682| |N|(npc:106199) in {Dreadscar Rift} (67.01,46.41)| |Z|1050 0| |NPC|106199|
+N As you go... |AYG|42660| |N|<b>Use the Dreadscar Battle Plans and complete begin the "One Who's Worthy" mission. These mission will take up to over 19 hours to complete.<br/><b>Complete 30 world quests| |QID|42102|
+C Let it Feed |QID|42103.1| |N|Kill any demons and collect 100 (item:138991) in {Azuna} (43.27,44.21)| |Z|1015 0|
+N Switch Guide |N|Switch to (guide:"1045(110)") and collect a (item:138989) from (npc:95888) for the quest (qid:42660)| |QID|42660|
+C Unparalleled Power |QID|44682| |N|Complete 30 world quests|
+C One Who's Worthy |QID|42102| |N|Use the Dreadscar Battle Plans and complete begin the "One Who's Worthy" mission. These mission will take up to over 19 hours to complete. (66.22,46.97)| |Z|1050 0| |NPC|105102|
+T Unparalleled Power |QID|44682| |N|(npc:106199) in {Dreadscar Rift} (67.01,46.41)| |Z|1050 0| |NPC|106199|
+T One Who's Worthy |QID|42102| |N|(npc:105102) in {Dreadscar Rift} (53.97,36.26)| |Z|1050 0| |NPC|105102|
+T Let it Feed |QID|42103| |N|(npc:104732) in {Dreadscar Rift} (54.13,34.88)| |Z|1050 0| |NPC|104732|
+T Matters of the Heart |QID|42660| |N|(npc:104732) in {Dreadscar Rift} (54.13,34.88)| |Z|1050 0| |NPC|104732|
+A Finding Fizzlebang |QID|41785| |N|(npc:105102) in {Dreadscar Rift} (53.96,36.26)| |Z|1050| |NPC|105102|
+
+R Stormheim |TID|41785| |N|Travel to {Stormheim} (39.37,42.24)| |Z|1017 0|
+T Finding Fizzlebang |QID|41785| |N|(npc:105102) in {Stormheim} (39.37,42.24)| |Z|1017 0| |NPC|105102|
+A Coercing a Confession |QID|41788| |N|(npc:105102) in {Stormheim} (39.37,42.24)| |Z|1017 0| |NPC|105102|
+A Someone Else's Mess |QID|41787| |N|(npc:105102) in {Stormheim} (39.37,42.24)| |Z|1017 0| |NPC|105102|
+
+N (npc:30108) |QID|41788.1| |N|Speak to (npc:30108) and get a confession (36.42,38.54)| |Z|1017 0| |NPC|30108|
+C Someone Else's Mess  |QID|41787.1| |N|Use (item:141865) to banish 8 Demons (37.11,38.28)| |Z|1017 0| 
+T Coercing a Confession |QID|41788| |N|(npc:104855) in {Stormheim} (39.37,42.24)| |Z|1017 0| |NPC|104855|
+T Someone Else's Mess |QID|41787| |N|(npc:104855) in {Stormheim} (39.37,42.24)| |Z|1017 0| |NPC|104855|
+A Lulubelle on Loan |QID|41793| |N|(npc:104855) in {Stormheim} (39.37,42.24)| |Z|1017 0| |NPC|104855|
+
+R Dreadscar Rift |TID|41793| |N|Travel to {Dreadscar Rift} (55.06,37.33)| |Z|1050 0|
+T Lulubelle on Loan |QID|41793| |N|(npc:105815) in {Dreadscar Rift} (55.06,37.33)| |Z|1050 0| |NPC|105815|
+A Champion: Lulubelle Fizzlebang |QID|41755| |N|(npc:105928) in {Dreadscar Rift} (54.40,39.38)| |Z|1050 0| |NPC|105928| |E|
+A Summoning the Sisters |QID|41795| |N|(npc:105815) in {Dreadscar Rift} (55.06,37.33)| |Z|1050 0| |NPC|105815|
+N Demonic Gateway |QID|41795.1| |N|Use the Demonic Gateway in {Dreadscar Rift} (51.94,21.47)| |Z|1050 0| |
+N (npc:106622) |QID|41795.2| |N|Speakl to (npc:106622) in {Dreadscar Rift}| |Z|1050 0| |NPC|106622| |POI|
+N Enslave the Eredar Sisters |QID|41795.3| |N|Damage (npc:106637) and (npc:105969) and use the (spell:211664)  ability to enslave both of them| |Z|1017 0| |NPC|106637, 105969| |POI|
+N Demonic Gateway |N|Use the Demonic Gateway to return to the Dreadscar Rift| |QID|41795| |POI|
+T Summoning the Sisters |QID|41795| |N|(npc:105951) in {Dreadscar Rift} (55.05,37.45)| |Z|1050 0| |NPC|105951|
+A Selecting a Sixth |QID|41796| |N|(npc:105951) in {Dreadscar Rift} (55.05,37.45)| |Z|1050 0| |NPC|105951|
+A Champion: Eredar Twins |QID|41756| |N|Speak to (npc:106228) to recruit as a follower (58.29,40.71)| |Z|1050 0| |NPC|106228| |E|
+C Selecting a Sixth |QID|41796.1| |N|Choose between (npc:106025) or (npc:105928) (54.79,39.80)| |Z|1050 0| |NPC|106025, 105928|
+T Selecting a Sixth |QID|41796| |N|(npc:105951) in {Dreadscar Rift} (55.05,37.45)| |Z|1050 0| |NPC|105951|
+A A Hero's Weapon |QID|43414| |N|(npc:110488) in {Dreadscar Rift} (36.42,30.69)| |Z|1050 0| |NPC|110488|
+C A Hero's Weapon |QID|43414| |N|Use the Commander's Valor ability to infuse your artifact (36.42,30.69)| |Z|1050 0| |NPC|110488|
+T A Hero's Weapon |QID|43414| |N|(npc:110488) in {Dreadscar Rift} (36.42,30.69)| |Z|1050 0| |NPC|110488|
+----
+A Awakenings |QID|44464| |N|(npc:113857) in {Dreadscar Rift} (53.18,32.63)| |Z|1050 0| |NPC|113857|
+
+R Val'sharah |QID|44464| |N|Travel {Val'sharah} (54.40,73.17)| |Z|1018 0|
+C Awakenings |QID|44464.1| |N|Travel to {Val'sharah} and use (spell:226956) to witness the awakening of Illidan Stormrage (54.40,73.17)| |Z|1018 0|
+
+T Awakenings |QID|44464| |N|(npc:113857) in {Dreadscar Rift} (53.18,32.63)| |Z|1050 0| |NPC|113857|
+A An Unclear Path |QID|44466| |N|(npc:113857) in {Dreadscar Rift} (53.18,32.63)| |Z|1050 0| |NPC|113857|
+
+R Val'Shara |QID|44466| |N|Travel to {Val'Shara}  (54.96,53.43) (53.29,49.94) (52.11,43.99)| |Z|1018 0|
+N Witness Illidan's Resilience |QID|44466.1| |N|Use (spell:226956) to witness the awakening of Illidan Resilience (45.54,34.75)| |Z|1018 0|
+
+R Dreadscar Rift |OID|44479| |N|Travel to {Dreadscar Rift} (53.18,32.63)| |Z|1050 0|
+T An Unclear Path |QID|44466| |N|(npc:113857) in {Dreadscar Rift} (53.18,32.63)| |Z|1050 0| |NPC|113857|
+A Ravencrest's Legacy |QID|44479| |N|(npc:113857) in {Dreadscar Rift} (53.18,32.63)| |Z|1050 0| |NPC|113857|
+R Val'Shara |QID|44479| |N|Travel to {Val'Shara} (54.96,53.43)| |Z|1018 0|
+N (spell:226956) |N|Go to the destination to use (spell:226956) to begin the Ravencrest's Legacy scenario (54.96,53.43) (52.81,50.41) (46.98,50.23) (44.28,49.94) (42.08,46.29)| |Z|1018 0| |QID|44479|
+N Report to Kur'talos Ravencrest |SID|33154|1| |N|Report to (npc:113046) in  {Ravencourt}| |QID|44479| |NPC|113046|
+N Repair the Deactivated Moon Guard Portal |SID|33155|2| |N|Click Deactivated Moon Guard Portal in {Ravencourt}| |QID|44479|
+K (npc:113555) |SID|33162|3| |N|Secure the Rampart by Defeating (npc:113555) (42.95,46.32) (44.27,49.58)| |Z|1099 0| |QID|44479|
+N Enter the Upper Ramparts of the Courtyard |SID|33169|4| |N|Follow the path to the upper ramparts of the courtyard (44.28,49.76) (44.51,51.22 )| |Z|1099 0| |QID|44479|
+N Activate the Moon Guard Portal |SID|33174|5| |N|Click on Deactivated Moon Guard Portal in each waypoint (44.51,51.22) (40.98,51.48) (43.71,50.93)| |Z|1099 0| |QID|44479|
+K (npc:114137) |SID|33184|6| |N|Use (spell:227154) to kill (npc:114137) to end the invasion (43.09,52.18)| |Z|1099 0| |QID|44479| |NPC|114137|
+
+R Mausoleum |QID|44414| |N|Travel to {Mausoleum} (38.75, 53.07)| |Z|1099 0| 
+A Felspawns of Lothros |QID|44414| |N|(npc:113361) in {Mausoleum} (38.75, 53.07)| |Z|1099 0| |NPC|113361|
+C Felspawns of Lothros |QID|44414| |N|Defeat (npc:113786) in {Mausoleum} (40.63, 53.01)| |Z|1099 0| |NPC|113786|
+T Felspawns of Lothros |QID|44414| |N|(npc:113361) in {Mausoleum} (40.42, 53.01)| |Z|1099 0| |NPC|113361|
+A The Red Axe |QID|44415| |N|(npc:113361) in {Mausoleum} (40.42, 53.01)| |Z|1099 0| |NPC|113361|
+C The Red Axe |QID|44415| |N|Close the Unstable Portals and make your way to (npc:113355) (41.37, 49.89)| |Z|1099 0| |NPC|113355|
+T The Red Axe |QID|44415| |N|(npc:113355) in {Mausoleum} (43.80, 50.40)| |Z|1099 0| |NPC|113355|
+A Hunter of Night |QID|44416| |N|(npc:113355) in {Mausoleum} (43.84, 50.41)| |Z|1099 0| |NPC|113355|
+C Hunter of Night |QID|44416| |N|Defeat (npc:113825) in {Mausoleum} (43.29, 50.45)| |Z|1099 0| |NPC|113825|
+T Hunter of Night |QID|44416| |N|(npc:113355) in {Mausoleum} (41.59, 50.53)| |Z|1099 0| |NPC|113355|
+
+R Raven's Glory |QID|44479| |N|Travel to {Raven's Glory}  (42.86, 50.56) (42.97, 48.79)| |Z|1099 0|
+C When Good Men Do Nothing |SID|33186| |N|Enter Raven's Glory and use (spell:227236) to destroy the Colossal Siegebreaker in {Raven's Glory} (42.97, 48.79)| |Z|1099 0| |QID|44479|
+
+R Skyhold |OID|44480| |N|Travel to {Skyhold} (45.32,30.18)| |Z|1035 1|
+T Ravencrest's Legacy |QID|44479| |N|(npc:113857) in {Dreadscar Rift} (53.18,32.63)| |Z|1050 0| |NPC|113857|
+A In My Father's House |QID|44480| |N|(npc:113857) in {Dreadscar Rift} (53.18,32.63)| |Z|1050 0| |NPC|113857|
+
+R Temple of Zin-Malor |QID|44480| |N|Travel to {Temple of Zin-Malor} (35.11, 49.88)| |Z|181 0|
+C In My Father's House |QID|44480| |N|Use (spell:226956) witness Illidan's Sacrifice in Azshara on the continent of Kalimdor (35.11, 49.88) | |Z|816 0|
+
+R Dreadscar Rift |TID|44480| |N|Travel to {Dreadscar Rift} (53.18,32.63)| |Z|1050 0|
+T In My Father's House |QID|44480| |N|(npc:113857) in {Dreadscar Rift} (53.18,32.63)| |Z|1050 0| |NPC|113857|
+A Destiny Unfulfilled |QID|44497| |N|(npc:113857) in {Dreadscar Rift} (53.18,32.63)| |Z|1050 0| |NPC|113857|
+
+R The Black Temple |QID|44497| |N|Travel to {The Black Temple} (72.97, 44.12)| |Z|473 0|
+N (spell:226956) |N|Use (spell:226956) in {The Black Temple} (72.97, 44.12)| |Z|473 0| |F|1085 1| |QID|44497| 
+C Examine the Skull of Gul'dan. |SID|32029|1| |N|Examine the Skull of Gul'dan in {Temple Summit} (52.70, 71.26)| |Z|1085 1| |QID|44497| 
+C Confront Akama |SID|31955|1| |N|Confront Akama in {Temple Summit} (52.70, 71.26)| |Z|1085 1| |QID|44497| 
+C You Are Not Prepared! |SID|0|2| |N|Survive until your reinforcements arrive in {Temple Summit} (52.92, 60.84)| |Z|1085 1| |QID|44497| 
+C To The Skies |SID|32682|3| |N|Summon the (npc:22997) and defend it in {Temple Summit} (55.95, 75.70)| |Z|1085 1| |NPC|22997| |QID|44497| 
+C The Final Countdown |SID|32867|4| |N|Use Metamorphosis ability in {Temple Summit} (54.48, 72.76)| |Z|1085 1| |QID|44497| 
+C The Demon Within |SID|32865|5| |N|Destroy the Warlocks in {Temple Summit} (52.27, 64.57)| |Z|1085 1| |QID|44497| 
+C Defeat Maiev |SID|32942|6| |N|Defeat (npc:112867) in {Temple Summit} (52.16, 69.92)| |Z|1085 1| |NPC|112867| |QID|44497| 
+C Destiny Unfulfilled |QID|44497| |N|Witness True Betrayal in Shadowmoon Valley on the fringes of Outland., in {Temple Summit} (52.16, 69.92)| |Z|1085 1|
+
+R Dreadscar Rift |TID|44496| |N|Travel to {Dreadscar Rift} (53.18,32.63)| |Z|1050 0|
+T Destiny Unfulfilled |QID|44496| |N|(npc:113857) in {Dreadscar Rift} (53.18,32.63)| |Z|1050 0| |NPC|113857|
+----
+A Champion Armaments |QID|44228| |N|(npc:110408), This quest will only be available if you chose to get the "Shadow Pact" class hall upgrade. (57.29,52.50)| |Z|1050 0| |NPC|110408|
+C Champion Armaments |QID|44228| |N|Speak to (npc:110408) and place a work order for Champion Armament (57.29,52.50)| |Z|1050 0| |NPC|110408|
+T Champion Armaments |QID|44228| |N|(npc:110408), This quest will only be available if you chose to get the "Shadow Pact" class hall upgrade. (57.29,52.50)| |Z|1050 0| |NPC|110408|
 
 N Guide Complete
 

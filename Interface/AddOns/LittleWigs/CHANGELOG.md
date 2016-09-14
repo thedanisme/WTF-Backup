@@ -1,8 +1,9 @@
 # LittleWigs
 
-## [v7.0.9-19-g05d42b0](https://github.com/BigWigsMods/LittleWigs/tree/05d42b0cccb4b95b075482de56a7714fb311d696) (2016-09-12) [](#top)
-[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v7.0.9...05d42b0cccb4b95b075482de56a7714fb311d696)
+## [v7.0.10](https://github.com/BigWigsMods/LittleWigs/tree/v7.0.10) (2016-09-13) [](#top)
+[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v7.0.9...v7.0.10)
 
+-   Tweak timings  
 -   Add The Arcway  
 -   CourtOfStars/AdvisorMelandrus: Throttle Piercing Gale  
 -   EyeOfAzshara/WrathOfAzshara: Add Crushing Depths  

@@ -12,6 +12,9 @@ K (npc:95886) |SID|29370| |N|Kill (npc:95886) in {Vault of Ice}<br/><b>(npc:9923
 R Tomb of the Penitent |SID|34462| |N|Use the elevator get to {Tomb of the Penitent} (54.58, 35.85)| |Z|1045 3| |F|1045 3|
 A Fel-Ravaged Tome |QID|44486| |N|Fel-Ravaged Tome in {Tomb of the Penitent} (54.58, 35.85)| |Z|1045 3|
 K (npc:95888) |SID|34462| |N|Kill (npc:95888) in {Vault of the Betrayer}<br/><b>The player with (spell:201359) will need to move through the (spell:213583) to prevent it from spreading<br/><b>Use (spell:201359) to find and kill (npc:100351) otherwise you won't be able to damage (npc:95888) (50.05, 51.99) (48.97, 77.83)| |Z|1045 3| |NPC|95888|
+N (item:124672) |QID|42752| |N|Collect (item:42752) from (npc:95888) (48.97, 77.83)| |Z|1045 3| |NPC|95888| |O| |C|Demon|
+N (item:124672) |QID|42753| |N|Collect (item:42752) from (npc:95888) (48.97, 77.83)| |Z|1045 3| |NPC|95888| |O| |C|Demon|
+N (item:138989) |QID|42660| |N|Collect (item:138989) from (npc:95888) (48.97, 77.83)| |Z|1045 3| |NPC|95888| |O| |C|Warlock|
 
 R The Violet Citadel |TID|44486| |N|Travel to {The Violet Citadel} (25.45, 44.79)| |Z|1014 10|
 T Fel-Ravaged Tome |QID|44486| |N|(npc:112441) in {The Violet Citadel} (25.45, 44.79)| |Z|1014 10| |NPC|112441|

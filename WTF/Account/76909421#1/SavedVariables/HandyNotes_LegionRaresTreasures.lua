@@ -1,2 +1,6 @@
 
-LegionTreasuresDB = nil
+LegionRaresTreasuresDB = {
+	["profileKeys"] = {
+		["Emmarosa - Stormrage"] = "Default",
+	},
+}

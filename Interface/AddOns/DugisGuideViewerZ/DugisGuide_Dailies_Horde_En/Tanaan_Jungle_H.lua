@@ -124,7 +124,7 @@ C Demonslayer of Tanaan |QID|39519| |N|Slay 20 demons in {Tanaan Jungle}.| |D| |
 C Tooth and Claw |QID|39529| |N|Collect 100 (item:128438) from the various wildlife within {Tanaan Jungle}| |D| |O| |Z|945| |POI|
 
 C Unknowable Power |QID|39432| |N|Collect a (item:128346) from any Rare or Rare Elite creature in {Tanaan Jungle}.| |Z|945| |POI|
-C Unseen Influence |QID|39433| |NCollect (item:128346) from any Rare or Rare Elite creature in {Tanaan Jungle}.| |D| |PRE|39432| |Z|945| |POI|
+C Unseen Influence |QID|39433| |N|Collect (item:128346) from any Rare or Rare Elite creature in {Tanaan Jungle}.| |D| |PRE|39432| |Z|945| |POI|
 
 T Harnessing Their Power |QID|39514| |N|(npc:96014) in {Vol'mar Hold} (61.65, 45.69)| |D| |O| |Z|945| |NPC|96014| 
 T Disarming Sha'naar |QID|39513| |N|(npc:96014) in {Vol'mar Hold} (61.65, 45.69)| |D| |O| |Z|945| |NPC|96014| 

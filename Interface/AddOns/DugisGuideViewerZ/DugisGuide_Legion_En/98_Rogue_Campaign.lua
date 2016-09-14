@@ -85,7 +85,7 @@ T The Unseen Blade |QID|42504| |N|(npc:94141) in the {Chamber of Shadows} (53.00
 
 A A Friendly Accord |QID|40847| |N|(npc:94159) in the {Chamber of Shadows} (40.46, 74.22)| |Z|1014 4| |NPC|94159| |O|
 
-R Chamber of the Guardian |QID|40847.1| |N|Enter the {Chamber of the Guardian} (49.63, 48.10) |Z|1014 10| |O|
+R Chamber of the Guardian |QID|40847.1| |N|Enter the {Chamber of the Guardian} (49.63, 48.10)| |Z|1014 10| |O|
 R Karazhan |QID|40847.2| |N|Take the portal to Karazhan in the {Chamber of the Guardian} (32.11, 72.09)| |Z|1014 12| |O|
 R Booty Bay |QID|40847.3| |N|Fly to {Booty Bay} (41.96, 67.55)| |Z|673 0| |O|
 R The Crimson Veil |QID|40847.4| |N|Board the Crimson Veil in {Booty Bay} (39.96, 68.62)| |Z|673 0| |O|
@@ -229,7 +229,7 @@ A Dark Secrets and Shady Deals |QID|44177| |N|(npc:112959) in {Citrine Bay} (77.
 
 R Chamber of Shadows |TID|44177| |N|Travel to {Chamber of Shadows} (41.64, 78.08)| |Z|1014 4|
 T Dark Secrets and Shady Deals |QID|44177| |N|in {Chamber of Shadows} (41.64, 78.08)| |Z|1014 4|
-A Champion: Lord Jorach Ravenholdt |QID|44183| |N|Speak to (npc:101513) to recruit him as a follower in {Chamber of Shadows} (41.64, 78.08) |Z|1014 4| |NPC|101513| |E|
+A Champion: Lord Jorach Ravenholdt |QID|44183| |N|Speak to (npc:101513) to recruit him as a follower in {Chamber of Shadows} (41.64, 78.08)| |Z|1014 4| |NPC|101513| |E|
 A Convincin' Old Yancey |QID|43841| |N|(npc:94159) in {Chamber of Shadows} (41.02, 73.85)| |Z|1014 4| |NPC|94159|
 C Convincin' Old Yancey |QID|43841| |N|Use the Scouting Map and complete the mission, (mission:1294). This is a 1 hour mission (37.76, 44.79)| |Z|1014 4| |NPC|94159|
 T Convincin' Old Yancey |QID|43841| |N|(npc:94159) in {Chamber of Shadows} (41.02, 73.85)| |Z|1014 4| |NPC|94159|

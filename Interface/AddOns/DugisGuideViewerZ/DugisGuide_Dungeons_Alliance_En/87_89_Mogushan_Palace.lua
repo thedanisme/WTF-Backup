@@ -8,7 +8,7 @@ A Relics of the Four Kings |QID|31357| |N|(npc:64432) (30.47, 19.30) in {The Gil
 A A New Lesson for the Master |QID|31360| |N|(npc:64432) (30.47, 19.30) in {The Gilded Foyer}| |NPC|64432| |Z|885 1|
 K Trial of Kings |SID|24784| |N|Defeat the Trial of Kings: (npc:61444), (npc:61442), (npc:61445) (40.7, 70.5)| |NPC|61444, 61442, 61445| |Z|885 1|
 
-R Vaults of Kings Past |N|Go downstair to the {Vaults of Kings Past} (51.2, 18.6) |Z|885 2| |F|885 2|
+R Vaults of Kings Past |N|Go downstair to the {Vaults of Kings Past} (51.2, 18.6)| |Z|885 2| |F|885 2|
 K (npc:61243) |SID|19256| |N|Defeat (npc:61243) (44.7, 75.9)| |Z|885 2|
 N (item:86476) |QID|31357.1| |N|Collect the (item:86476) at the {Vault of Kings Past} (37.70, 64.54)| |T| |Z|885 2|
 N (item:86477) |QID|31357.2| |N|Collect the (item:86477) at the {Vault of Kings Past} (43.21, 60.56)| |T| |Z|885 2|

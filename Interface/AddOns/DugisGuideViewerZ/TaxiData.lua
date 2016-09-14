@@ -28484,9 +28484,9 @@ function TaxiData:Initialize()
 			[3567] = "3567:321:2:2073797938", --Orgrimmar
 			[3566] = "3566:362:0:954018606:fac:Horde", --Thunder Bluff
 			[18960] = "18960:241:0:2416595707", --Moonglade
-			[63353] = "3567:321:2:2073797938", --Shroud of Cooperation (Orgrimmar)
-			[63207] = "3567:321:2:2073797938", --Wrap of Unity (Orgrimmar)
-			[65274] = "3567:321:2:2073797938", --Cloak of Coordination (Orgrimmar)
+			[63353] = "89158:321:2:2073797938", --Shroud of Cooperation (Orgrimmar)
+			[63207] = "89158:321:2:2073797938", --Wrap of Unity (Orgrimmar)
+			[65274] = "89158:321:2:2073797938", --Cloak of Coordination (Orgrimmar)
 			[18984] = "23442:281:0:2560458565", --Dimensional Ripper - Everlook
 			[18986] = "23441:161:0:2243577666", --Ultrasafe Transporter: Gadgetzan
 			[147787] = "147787:321:1:49.96,37.74", -- Astral Fixation Glyph Horde			
@@ -28500,9 +28500,9 @@ function TaxiData:Initialize()
 			[88344] = "88344:709:0:2362231206:fac:Horde", --Tol Barad (Horde)
 			[3563] = "3563:382:0:3632736717:fac:Horde", --Undercity
 			[50977] = "50977:23:0:3595665426:nqid:39757", --Death Gate
-			[63352] = "3561:301:0:2129976708", --Shroud of Cooperation (Stormwind)
-			[63206] = "3561:301:0:2129976708", --Wrap of Unity (Stormwind)
-			[65360] = "3561:301:0:2129976708", --Cloak of Coordination (Stormwind)
+			[63352] = "89157:301:0:2129976708", --Shroud of Cooperation (Stormwind)
+			[63206] = "89157:301:0:2129976708", --Wrap of Unity (Stormwind)
+			[65360] = "89157:301:0:2129976708", --Cloak of Coordination (Stormwind)
 			[50287] = "71436:673:0:1760214267", --Boots of the Bay
 			[63379] = "88342:709:0:3164314613", --Baradin's Wardens Tabard
 			[63378] = "88344:709:0:2362231206", --Hellscream's Reach Tabard
@@ -28752,7 +28752,8 @@ function TaxiData:Initialize()
 			":1048:0:50.27,65.20:26:0:62.48,23.50:cls:DRUID:qid:40645", --Emerald Dreamway > Hinterlands
 			":1048:0:39.81,68.92:34:0:46.59,37.06:cls:DRUID:qid:40645", --Emerald Dreamway > Duskwood	
 			
-			":1014:10:32.67,69.76:23:20:38.63,62.61:cls:PALADIN", --Dalaran Legion > Paladin Order Hall
+			":1014:10:32.67,69.76:23:20:38.63,62.61:cls:PALADIN:fac:Alliance", --Dalaran Legion > Paladin Order Hall
+			":1014:10:61.92,13.49:23:20:39.42,61.46:cls:PALADIN:fac:Horde", --Dalaran Legion > Paladin Order Hall			
 			":32:21:38.82,64.2:301:0:49.59,86.53:fac:Alliance", --Dalaran Deadwind Pass > Stormwind
 			":301:0:80.25,34.83:32:21:72.60,46.05:qid:40718:fac:Alliance:nqid:44663",--Stormwind > Dalaran Legion
 			":321:2:36.32,71.14:32:21:72.60,46.05:qid:40718:fac:Horde:nqid:44184",--Orgrimmar Cleft of Shadow > Dalaran Legion				
@@ -28806,7 +28807,8 @@ function TaxiData:Initialize()
 			":321:2:36.32,71.14:1014:10:60.92,44.73:qid:44184:fac:Horde",--Orgrimmar Cleft of Shadow > Dalaran Legion		
 			":1044:0:52.40,57.17:1014:10:60.92,44.73:cls:MONK", --Monk Order Hall > Dalaran Legion
 			":1068:1:57.31,90.12:1014:10:60.92,44.73:cls:MAGE", --Mage Order Hall > Dalaran Legion
-			":23:20:37.79,63.84:1014:10:33.20,68.89:cls:PALADIN", --Paladin Order Hall > Dalaran Legion
+			":23:20:37.79,63.84:1014:10:33.20,68.89:cls:PALADIN:fac:Alliance", --Paladin Order Hall > Dalaran Legion
+			":23:20:37.79,63.84:1014:10:61.27,14.82:cls:PALADIN:fac:Horde", --Paladin Order Hall > Dalaran Legion
 			":1048:0:45.52,23.93:1077:0:51.60,35.07:cls:DRUID:qid:40645", --Emerald Dreamway > Dreamgrove			
 		}, -- Broken Isles
 		{
@@ -29000,6 +29002,7 @@ function TaxiData:Initialize()
 		[1041] = "1017:0:72.64,70.52:1041:2:47.71,7.56", -- Hall of Valor
 		[1046] = "1015:0:61.15,41.13:1046:1:47.12,87.89", -- Eye of Azshara
 		[1042] = "1017:0:52.54,45.25:1042:1:47.18,81.20", -- Maw of Souls
+		[1045] = "1018:0:48.07,82.13:1045:1:69.38,77.47", -- Vault of the Wardens
 	}
 	
 	function TaxiData:GetLookupTable()

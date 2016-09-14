@@ -72,7 +72,7 @@ A Taking a Stand |N|(npc:28532) (14.3, 74.0) in {Ebon Watch}| |QID|12795| |NPC|2
 T Near Miss |N|(npc:28518) (14.1, 73.8) in {Ebon Watch}| |QID|12637| |NPC|28518| |PRE|12631|
 T Close Call |N|(npc:28518) (14.1, 73.8) in {Ebon Watch}| |QID|12638| |NPC|28518| |PRE|12633|
 A You Can Run, But You Can't Hide |N|(npc:28518) (14.1, 73.8) in {Ebon Watch}| |QID|12629| |NPC|28518| |PRE|12631|
-A Silver Lining |N|(npc:28518) (14.1, 73.8)| |QID|12643 in {Ebon Watch}| |NPC|28518| |PRE|12633|
+A Silver Lining |QID|12643| |N|(npc:28518) (14.1, 73.8) in {Ebon Watch}| |NPC|28518| |PRE|12633|
 
 C You Can Run, But You Can't Hide |QID|12629| |N|Kill (npc:28564) for 5 (item:38686). Collect 5 (item:38687) from the ground of the {Reliquary of Agony} (21.2, 73.6) (23.72, 77.19)| |NPC|28564, 29856| |PRE|12631|
 C Silver Lining |QID|12643| |N|Kill (npc:28564) for 5 (item:38686). Collect 5 (item:38687) from the ground of the {Reliquary of Agony} (21.2, 73.6) (23.72, 77.19)| |NPC|28564, 29856| |PRE|12633|

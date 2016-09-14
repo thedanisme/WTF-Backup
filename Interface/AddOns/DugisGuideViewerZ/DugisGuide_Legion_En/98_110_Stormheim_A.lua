@@ -486,7 +486,7 @@ T Nithogg's Tribute |QID|42445| |N|(npc:107498) in {Stormtorn Foothills} (49.79,
 A Dances With Ravenbears |QID|42447| |N|(npc:107498) in {Stormtorn Foothills} (49.79, 32.63)| |Z|1017 0| |NPC|107498|
 C Dances With Ravenbears |QID|42447| |N|Help the Blackfeather ravenbears perform their tribute ritual. You will need to mimic their movements (53.70, 30.20)| |Z|1017 0|
 T Dances With Ravenbears |QID|42447| |N|(npc:107498) in {Blackfeather Altar} (54.02, 30.21)| |Z|1017 0| |NPC|107498|
-f Stormtorn Foothills |QID| |N|Grab {Stormtorn Foothills} flight path from (npc:111327) (51.97, 34.69) |Z|1017 0| |NPC|111327|
+f Stormtorn Foothills |QID| |N|Grab {Stormtorn Foothills} flight path from (npc:111327) (51.97, 34.69)| |Z|1017 0| |NPC|111327|
 
 R Talonrest |QID|39787| |N|Travel to {Talonrest} (45.11, 51.72) (51.42, 56.90)| |Z|1017 0|
 T Rigging the Wager |QID|39787| |N|(npc:107674) in {Talonrest} (51.31, 56.94)| |Z|1017 0| |NPC|107674|

@@ -48524,6 +48524,8 @@ function NPC:Initialize()
 [110035] = "Historian Ju'pa",
 [110034] = "Historian Llore",
 [108468] = "The Mad Merchant",
+[106226] = "Teensy Weensy Fae Dragon",
+[106225] = "Zeryxia",
 }
 	end
 

@@ -110,7 +110,7 @@ C On Fel Wings |SID|30720|7| |N|Kill (npc:109821) in {The Heart of Jade} (65.77,
 N Fu Zan, the Wanderer's Companion |QID|42765.2| |N|Collect (item:128938) in {The Heart of Jade} (66.63, 61.64)| |Z|1097 0| |PRE|42762| |QID|42765|
 --C Fu Zan, the Wanderer's Companion |SID|30721| |N|Obtain (item:128938) in {The Heart of Jade} (66.63, 61.64)| |Z|1097 0| |PRE|42762| |QID|42765|
 
-R Hall of the Seasons |TID|42765| |N|Mount (npc:101297) in {The Heart of Jade} and travel to the {Hall of the Seasons} (67.75, 61.93) |Z|1097 0| |PRE|42762| |V|
+R Hall of the Seasons |TID|42765| |N|Mount (npc:101297) in {The Heart of Jade} and travel to the {Hall of the Seasons} (67.75, 61.93)| |Z|1097 0| |PRE|42762| |V|
 T The Trial at the Temple |QID|42765| |N|(npc:100438) in the {Hall of the Seasons} (51.42, 48.53)| |Z|1044 0| |NPC|100438| |PRE|42762|
 
 -- Monk Brewmaster Polearm Quests End (Fu Zan, The Wanderer's Companion)
@@ -348,14 +348,14 @@ N Witness Illidan's Resilience |QID|44466.1| |N|Use (spell:226956) to witness th
 
 R Temple of Five Dawns |OID|44479| |N|Travel to {Temple of Five Dawns} (51.80,48.16)| |Z|1044 0|
 T An Unclear Path |QID|44466| |N|(npc:113857) in {Temple of Five Dawns} (51.80,48.16)| |Z|1044 0| |NPC|113857|
-A Ravencrest's Legacy |QID|44479| |N|(npc:113857) in {Temple of Five Dawns} (51.80,48.16) |Z|1044 0| |NPC|113857|
+A Ravencrest's Legacy |QID|44479| |N|(npc:113857) in {Temple of Five Dawns} (51.80,48.16)| |Z|1044 0| |NPC|113857|
 R Val'Shara |QID|44479| |N|Travel to {Val'Shara} (54.96,53.43)| |Z|1018 0|
 N (spell:226956) |N|Go to the destination to use (spell:226956) to begin the Ravencrest's Legacy scenario (54.96,53.43) (52.81,50.41) (46.98,50.23) (44.28,49.94) (42.08,46.29)| |Z|1018 0| |QID|44479|
 N Report to Kur'talos Ravencrest |SID|33154|1| |N|Report to (npc:113046) in  {Ravencourt}| |QID|44479| |NPC|113046|
 N Repair the Deactivated Moon Guard Portal |SID|33155|2| |N|Click Deactivated Moon Guard Portal in {Ravencourt}| |QID|44479|
 K (npc:113555) |SID|33162|3| |N|Secure the Rampart by Defeating (npc:113555) (42.95,46.32) (44.27,49.58)| |Z|1099 0| |QID|44479|
 N Enter the Upper Ramparts of the Courtyard |SID|33169|4| |N|Follow the path to the upper ramparts of the courtyard (44.28,49.76) (44.51,51.22 )| |Z|1099 0| |QID|44479|
-N Activate the Moon Guard Portal |SID|33174|5| |N|Click on Deactivated Moon Guard Portal in each waypoint (44.51,51.22) (40.98,51.48) (43.71,50.93)| |Z|1099 0|  |QID|44479
+N Activate the Moon Guard Portal |SID|33174|5| |N|Click on Deactivated Moon Guard Portal in each waypoint (44.51,51.22) (40.98,51.48) (43.71,50.93)| |Z|1099 0| |QID|44479|
 K (npc:114137) |SID|33184|6| |N|Use (spell:227154) to kill (npc:114137) to end the invasion (43.09,52.18)| |Z|1099 0| |QID|44479| |NPC|114137|
 
 R Mausoleum |QID|44414| |N|Travel to {Mausoleum} (38.75, 53.07)| |Z|1099 0| 
@@ -373,15 +373,15 @@ R Raven's Glory |QID|44479| |N|Travel to {Raven's Glory}  (42.86, 50.56) (42.97,
 C When Good Men Do Nothing |SID|33186| |N|Enter Raven's Glory and use (spell:227236) to destroy the Colossal Siegebreaker in {Raven's Glory} (42.97, 48.79)| |Z|1099 0| |QID|44479|
 
 R Temple of Five Dawns |OID|44480| |N|Travel to {Temple of Five Dawns} (51.80,48.16)| |Z|1044 0|
-T Ravencrest's Legacy |QID|44479| |N|(npc:113857) in {Temple of Five Dawns} (51.80,48.16) |Z|1044 0| |NPC|113857|
-A In My Father's House |QID|44480| |N|(npc:113857) in {Temple of Five Dawns} (51.80,48.16) |Z|1044 0| |NPC|113857|
+T Ravencrest's Legacy |QID|44479| |N|(npc:113857) in {Temple of Five Dawns} (51.80,48.16)| |Z|1044 0| |NPC|113857|
+A In My Father's House |QID|44480| |N|(npc:113857) in {Temple of Five Dawns} (51.80,48.16)| |Z|1044 0| |NPC|113857|
 
 R Temple of Zin-Malor |QID|44480| |N|Travel to {Temple of Zin-Malor} (35.11, 49.88)| |Z|181 0|
 C In My Father's House |QID|44480| |N|Use (spell:226956) witness Illidan's Sacrifice in Azshara on the continent of Kalimdor (35.11, 49.88) | |Z|816 0|
 
 R Temple of Five Dawns |TID|44480| |N|Travel to {Temple of Five Dawns} (51.80,48.16)| |Z|1044 0|
-T In My Father's House |QID|44480| |N|(npc:113857) in {Temple of Five Dawns} (51.80,48.16) |Z|1044 0| |NPC|113857|
-A Destiny Unfulfilled |QID|44497| |N|(npc:113857) in {Temple of Five Dawns} (51.80,48.16) |Z|1044 0| |NPC|113857|
+T In My Father's House |QID|44480| |N|(npc:113857) in {Temple of Five Dawns} (51.80,48.16)| |Z|1044 0| |NPC|113857|
+A Destiny Unfulfilled |QID|44497| |N|(npc:113857) in {Temple of Five Dawns} (51.80,48.16)| |Z|1044 0| |NPC|113857|
 
 R The Black Temple |QID|44497| |N|Travel to {The Black Temple} (72.97, 44.12)| |Z|473 0|
 N (spell:226956) |N|Use (spell:226956) in {The Black Temple} (72.97, 44.12)| |Z|473 0| |F|1085 1| |QID|44497| 

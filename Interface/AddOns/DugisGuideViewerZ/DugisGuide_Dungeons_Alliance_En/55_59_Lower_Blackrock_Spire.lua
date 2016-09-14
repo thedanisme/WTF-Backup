@@ -12,7 +12,7 @@ K (npc:9196) |SID|25775| |N|Kill (npc:9196) (66.58, 44.17) (57.5, 57.6)(35.48, 5
 --N (item:12534) |SID|25779| |N|Collect (item:12534) from (npc:9196) body, you need to combine this with (item:12533) for optional boss summon later, only 1 person in the group can loot the head. (35.48, 55.23)| |Z|721 3| |L|12534| |T| |NPC|10584|
 
 R Tazz'Alor |SID|25777| |N|Travel to {Tazz'Alor} (60.31, 51.31) (52.83, 51.06)| |Z|721 3| |F|721 2|
-K (npc:9236) |SID|25776| |N|Kill (npc:9236) in {Tazz'Alor} (55.58, 71.91) |Z|721 2| |NPC|9236|
+K (npc:9236) |SID|25776| |N|Kill (npc:9236) in {Tazz'Alor} (55.58, 71.91)| |Z|721 2| |NPC|9236|
 K (npc:9237) |SID|25777| |N|Kill (npc:9237), {Tazz'Alaor} (52.85, 53.48)| |Z|721 1| |NPC|9237|
 
 R Skitterweb Tunnels |SID|25778| |N|Travel to {Skitterweb Tunnels} (level 2) (66.3, 51.28)(51.97, 48.69)(49.42, 52.28)(53.83, 69.91)(57.48, 70.37)| |Z|721 1| |F|721 2|

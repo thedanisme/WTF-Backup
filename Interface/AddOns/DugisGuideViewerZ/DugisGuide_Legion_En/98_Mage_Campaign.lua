@@ -19,7 +19,7 @@ A Felstorm's Plea |QID|41035| |N|Auto Quest in {Dalaran} (57.92, 45.76)| |Z|1014
 T Felstorm's Plea |QID|41035| |N|(npc:102700) at {The Violet Gate} (54.00, 47.29)| |Z|1014 10| |NPC|102700|
 A The Dreadlord's Prize |QID|41036| |N|(npc:102700) at {The Violet Gate} (54.00, 47.29)| |Z|1014 10| |NPC|102700|
 
-R The Violet Hold |QID|41036| |N|Enter the portal to {The Violet Hold} (67.12, 69.33) |Z|1014 10|
+R The Violet Hold |QID|41036| |N|Enter the portal to {The Violet Hold} (67.12, 69.33)| |Z|1014 10|
 C Engage the Enemy |SID|29517|1| |N|Battle with (npc:102785) in {The Violet Hold} (51.06, 72.54)| |Z|1054 1| |NPC|102785| |QID|41036|
 C Void Barrier |SID|29518|2| |N|Use (spell:1953) to  past the Void Barrier {The Violet Hold} (51.19, 59.00)| |Z|1054 1| |QID|41036|
 K (npc:102787) |SID|29519|2| |N|Kill the (npc:102787) in {The Violet Hold} (62.50, 36.12)| |Z|1054 1| |NPC|102787| |QID|41036|
@@ -42,7 +42,7 @@ N Accept Quest |N|Accept artifact quest from (npc:102700) in the {Hall of the Gu
 A An Unexpected Message |QID|40267| |N|(npc:102700) in the {Hall of the Guardian} (59.91, 40.98)| |Z|1068 2| |NPC|102700| |O|
 N (item:130131) |QID|40267.1| |N|Use (item:130131) in the {Hall of the Guardian}| |Z|1068 2| |U|130131| |O|
 
-R Chamber of the Guardian |QID|40267| |N|Travel to the {Chamber of the Guardian} (49.53, 47.12) |Z|1014 10| |O|
+R Chamber of the Guardian |QID|40267| |N|Travel to the {Chamber of the Guardian} (49.53, 47.12)| |Z|1014 10| |O|
 N (item:109076) |QID|40267| |N|Speak to (npc:111114) in the {Chamber of the Guardian} and get a (item:109076) (30.44, 79.64)| |L|109076| |Z|1014 12| |NPC|111114| |O|
 
 R Dalaran Crater |QID|40267| |N|Travel to the {Dalaran Crater} (29.03, 77.19)| |Z|1014 12| |O|
@@ -175,7 +175,7 @@ K Balaadur |SID|30418|5| |N|Kill (npc:108168) in the {Realm of Madness} (67.13, 
 C Ebonchill |SID|30419|6| |N|Claim (item:128862) in the {Realm of Madness} (67.05, 92.75)| |Z|1007 0| |PRE|42452| |QID|42479|
 N Ebonchill |QID|42479.2| |N|Claim (item:128862) in the {Realm of Madness} (67.05, 92.75)| |Z|1007 0| |PRE|42452|
 
-R Hall of the Guardian |TID|42479| |N|Travel to the {Hall of the Guardian} (27.65, 50.35) |Z|1015 0| |PRE|42452|
+R Hall of the Guardian |TID|42479| |N|Travel to the {Hall of the Guardian} (27.65, 50.35)| |Z|1015 0| |PRE|42452|
 T The Mage Hunter |QID|42479| |N|(npc:102700) in the {Hall of the Guardian} (57.04, 35.29)| |Z|1068 2| |NPC|102700| |PRE|42452|
 
 -- Mage Frost Staff Quests End (Ebonchill)
@@ -190,7 +190,7 @@ N Akazamzarak |QID|41112.2| |N|Bribe (npc:103092) in {The Eventide} by putting t
 T The Great Akazamzarak |QID|41112| |N|(npc:103092) in {The Eventide} (48.54, 63.00)| |Z|1014 10| |NPC|103092|
 A The Only Way to Travel |QID|41113| |N|(npc:103092) in {The Eventide} (48.54, 63.00)| |Z|1014 10| |NPC|103092|
 
-R The Hall of the Guardian |QID|41113| |N|Travel to the {Hall of the Guardian} (48.54, 63.00) |Z|1014 10|
+R The Hall of the Guardian |QID|41113| |N|Travel to the {Hall of the Guardian} (48.54, 63.00)| |Z|1014 10|
 T The Only Way to Travel |QID|41113| |N|(npc:102700) in the {Hall of the Guardian} (56.87, 34.76)| |Z|1068 2| |NPC|102700|
 A The Tirisgarde Reborn |QID|41124| |N|(npc:102700) in the {Hall of the Guardian} (60.45, 35.58)| |Z|1068 2| |NPC|102700|
 C The Tirisgarde Reborn |QID|41124| |N|Receive your new title from (npc:102700) in the {Hall of the Guardian} (60.45, 35.58)| |Z|1068 2|

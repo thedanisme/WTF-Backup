@@ -346,7 +346,8 @@ R Queen's Reprisal |QID|37654| |N|Travel to {Queen's Reprisal} (64.27, 56.08)| |
 T Maritime Law |QID|37654| |N|(npc:106881) in {Queen's Reprisal} (64.27, 56.08)| |Z|1015 0| |NPC|106881|
 A The Captain's Foot Locker |QID|37659| |N|(npc:106881) in {Queen's Reprisal} (64.27, 56.08)| |Z|1015 0| |NPC|106881|
 T The Captain's Foot Locker |QID|37659| |N|Captain's Foot Locker in {Queen's Reprisal} (65.65, 56.89)| |Z|1015 0|
-A Fate of the Queen's Reprisal |QID|40794| |N|Captain's Foot Locker in {Queen's Reprisal} (65.65, 56.89)| |Z|1015 0|
+A Fate of the Queen's Reprisal |QID|40794| |N|Captain's Foot Locker in {Queen's Reprisal} (65.65, 56.89)| |Z|1015 0| |FAC|Alliance|
+A Fate of the Queen's Reprisal |QID|42244| |N|Captain's Foot Locker in {Queen's Reprisal} (65.65, 56.89)| |Z|1015 0| |FAC|Alliance|
 
 R Olivian Veil |QID|42238| |N|Travel to the {Olivian Veil} (61.71, 51.11)| |Z|1015 0|
 T Missing Demon |QID|42238| |N|(npc:91166) in the {Olivian Veil} (61.71, 51.11)| |Z|1015 0| |NPC|91166|
@@ -387,8 +388,10 @@ T They're Doing it Wrong |QID|42369| |N|(npc:107244) in {Felblaze Ingress} (63.8
 T Arkethrax |QID|42367| |N|(npc:107245) in {Felblaze Ingress} (63.85, 28.86)| |Z|1015 0|
 T Quantity Over Quality |QID|42368| |N|(npc:107245) in {Felblaze Ingress} (63.85, 28.86)| |Z|1015 0| |NPC|107245|
 
-R Dalaran |QID|40794| |N|Travel to Dalaran (29.02, 74.79)| |Z|1014 10| |U|140192|
-T Fate of the Queen's Reprisal |QID|40794| |N|(npc:106930) in {Greyfang Enclave} (29.02, 74.79)| |Z|1014 10| |NPC|106930|
+R Dalaran |QID|40794| |N|Travel to Dalaran (29.02, 74.79)| |Z|1014 10| |FAC|Alliance|
+R Dalaran |QID|42244| |N|Travel to Dalaran (29.02, 74.79)| |Z|1014 10| |FAC|Horde|
+T Fate of the Queen's Reprisal |QID|40794| |N|(npc:106930) in {Greyfang Enclave} (29.02, 74.79)| |Z|1014 10| |NPC|106930| |FAC|Alliance|
+T Fate of the Queen's Reprisal |QID|42244| |N|(npc:106951) in {Greyfang Enclave} (60.80, 17.40)| |Z|1014 10| |NPC|106951| |FAC|Horde|
 
 N Swith Guide |N|Switch guide to (guide:"1046(98-110)") to complete (qid:38286)| |QID|38286|
 
@@ -400,3 +403,4 @@ end, {image = "azsuna.tga", description = [[]]})	end
 	function Guide:Unload()
 	end
 end
+

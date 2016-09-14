@@ -362,7 +362,7 @@ T Fate of the Guard |QID|40883| |N|(npc:101767) in {Moonfall Roost} (33.72,18.08
 T Sigil Reclamation |QID|41030| |N|(npc:101767) in {Moonfall Roost} (33.72,18.08)| |Z|1033 0| |NPC|101767| |TID|40883|
 T Not Their Last Stand |QID|40949| |N|(npc:106182) in {Moonfall Roost} (33.71,18.02)| |Z|1033 0| |NPC|106182|
 A Take Them in Claw |QID|40963| |N|(npc:101767) in {Moonfall Roost} (33.72,18.09)| |Z|1033 0| |NPC|101767|
-C Take Them in Claw |QID|40963| |NUse the (item:139882) on 3 Nightborne enemies (30.87,18.19)| |Z|1033 0|
+C Take Them in Claw |QID|40963| |N|Use the (item:139882) on 3 Nightborne enemies (30.87,18.19)| |Z|1033 0|
 T Take Them in Claw |QID|40963| |N|(npc:102425) in {Moonfall Roost} (31.25,18.71) (31.91,20.54) (31.44,23.18)| |Z|1033 0| |NPC|102425|
 A The Rift Between |QID|40964| |N|(npc:102425) in {Moonfall Roost} (31.44,23.18)| |Z|1033 0| |NPC|102425|
 A Recovering Stolen Power |QID|40968| |N|(npc:102425) in {Moonfall Roost} (31.44,23.18)| |Z|1033 0| |NPC|102425|

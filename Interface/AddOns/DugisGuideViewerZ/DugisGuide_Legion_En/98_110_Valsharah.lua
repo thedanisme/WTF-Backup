@@ -37,7 +37,23 @@ A Nature's Call |QID|38384| |N|(npc:91109) in the {Grove of Cenarius} (51.95, 64
 T Nature's Call |QID|38384| |N|(npc:94179) in {Lorlathil} (54.37, 73.52)| |Z|1018 0| |NPC|94179|
 A Archdruid of the Vale |QID|38382| |N|(npc:94179) in {Lorlathil} (54.37, 73.52)| |Z|1018 0| |NPC|94179|
 A Archdruid of the Claw |QID|38142| |N|(npc:94179) in {Lorlathil} (54.37, 73.52)| |Z|1018 0| |NPC|94179|
-A Archdruid of Lore |QID|38381| |N|(npc:94179) in {Lorlathil} (54.37, 73.52)| |Z|1018 0| |NPC|94179|
+A Archdruid of Lore |N|(npc:94179) in {Lorlathil} (54.37, 73.52)| |Z|1018 0| |NPC|94179| |OID|38381, 44106|
+A Archdruid of Lore |QID|38381| |N|(npc:94179) in {Lorlathil} (54.37, 73.52)| |Z|1018 0| |NPC|94179| |O|
+A Archdruid of Lore |QID|44106| |N|(npc:94179) in {Lorlathil} (54.37, 73.52)| |Z|1018 0| |NPC|94179| |O|
+
+R Lunarwing Shallows |N|Travel to {Lunarwing Shallows} (53.75,79.82)| |Z|1018 0|
+A Thorny Dancing |QID|40220| |N|(npc:93600) in {Lunarwing Shallows} (53.75,79.82)| |Z|1018 0| |NPC|93600|
+A Spread Your Lunarwings and Fly |QID|40221| |N|(npc:93600) in {Lunarwing Shallows} (53.75,79.82)| |Z|1018 0| |NPC|93600|
+
+K (npc:91474) |OID|38862| |N|Kill a (npc:91474) to begin (qid:38862) quest (53.18,80.28)| |Z|1018 0|
+A Thieving Thistleleaf |QID|38862| |N|Kill any Thistleleaf enemies in {Lunarwing Shallows} to begin this quest (53.18,80.28)| |Z|1018 0|
+N As you go... |AYG|40221| |N|Collect 5 (item:129966) in {Lunarwing Shallows}| |QID|38862|
+K (npc:93444) |QID|40220.1| |N|Kill 3 (npc:93444) in {Lunarwing Shallows} (52.00,80.46)(52.35,83.15) (55.92,83.74)| |Z|1018 0| |NPC|93444|
+C Spread Your Lunarwings and Fly |QID|40221.1| |N|Save 8 (npc:93489) in {Lunarwing Shallows} (53.18,80.28)| |Z|1018 0| |NPC|99008|
+C Thieving Thistleleaf |QID|38862.1| |N||N|Collect 5 (item:129966) from the ground in {Lunarwing Shallows}(53.18,80.28)| |Z|1018|
+T Thorny Dancing |QID|40220| |N|(npc:93600) in {Lunarwing Shallows} (53.75, 79.81)| |Z|1018 0| |NPC|93600|
+T Spread Your Lunarwings and Fly |QID|40221| |N|(npc:93600) in {Lunarwing Shallows} (53.75, 79.81)| |Z|1018 0| |NPC|93600|
+T Thieving Thistleleaf |QID|38862| |N|(npc:93600) in {Lunarwing Shallows} (53.75, 79.81)| |Z|1018 0| |NPC|93600|
 
 R Steelclaw Vale |QID|38142| |N|Travel to the {Steelclaw Vale} (49.05, 82.28)| |Z|1018 0|
 T Archdruid of the Claw |QID|38142| |N|(npc:73426) in the {Steelclaw Vale} (49.05, 82.28)| |Z|1018 0| |NPC|73426|
@@ -71,8 +87,9 @@ C Entangled Dreams |QID|38147| |N|Kill (npc:91045) in {Sleeper's Barrow} (59.93,
 R Steelclaw Vale |QID|38147| |N|Travel to the {Steelclaw Vale} (64.12, 47.11) (49.98, 85.47) (48.87, 81.60)| |Z|1018 14|
 T Entangled Dreams |QID|38147| |N|(npc:91223) in the {Steelclaw Vale} (48.87, 81.60)| |Z|1018 0| |NPC|91223|
 
-R Thas'talah |QID|38381| |N|Travel to {Thas'talah} (48.92, 70.28)| |Z|1018 0|
-T Archdruid of Lore |QID|38381| |N|(npc:91066) in {Thas'talah} (48.92, 70.28)| |Z|1018 0| |NPC|91066|
+R Thas'talah |OID|38235| |N|Travel to {Thas'talah} (48.92, 70.28)| |Z|1018 0|
+T Archdruid of Lore |QID|44106| |N|(npc:91066) in {Thas'talah} (48.92, 70.28)| |Z|1018 0| |NPC|91066| |O|
+T Archdruid of Lore |QID|38381| |N|(npc:91066) in {Thas'talah} (48.92, 70.28)| |Z|1018 0| |NPC|91066| |O|
 A Solid as a Rock |QID|38235| |N|(npc:91066) in {Thas'talah} (48.92, 70.28)| |Z|1018 0| |NPC|91066|
 A Death to the Witchmother |QID|38225| |N|(npc:91066) in {Thas'talah} (48.92, 70.28)| |Z|1018 0| |NPC|91066|
 
@@ -199,7 +216,7 @@ R Shala'nir |QID|43702| |N|Travel to {Shala'nir} (63.23, 42.23)| |Z|1018 0|
 T Softening the Target |QID|43702| |N|(npc:104728) in {Shala'nir} (63.23, 42.23)| |Z|1018 0| |NPC|104728|
 A Close Enough to Touch |QID|38687| |N|(npc:104728) in {Shala'nir} (63.23, 42.23)| |Z|1018 0| |NPC|104728|
 N (npc:104728) |QID|38687.1| |N|Follow (npc:104728) into {Shala'nir} (63.25, 41.29)| |Z|1018 0| |NPC|104728|
-N Search the Inn |QID|38687.2| |N|Search for (npc:111258) at the Inn in {Shala'nir} (62.95, 36.87)| |Z|1018 0| |NCP|111258|
+N Search the Inn |QID|38687.2| |N|Search for (npc:111258) at the Inn in {Shala'nir} (62.95, 36.87)| |Z|1018 0| |NPC|111258|
 N Search the Lake |QID|38687.3| |N|Search for (npc:111260) near the Lake in {Shala'nir} (62.37, 33.23)| |Z|1018 0| |NPC|111260|
 N Search the Village |QID|38687.4| |N|Search for (npc:111260) in the Village in {Shala'nir} (59.15, 32.55)| |Z|1018 0| |NPC|111260|
 N (npc:111260) |QID|38687.5| |N|Find (npc:111260) in {Shala'nir} (58.22, 37.45)| |Z|1018 0| |NPC|111260|

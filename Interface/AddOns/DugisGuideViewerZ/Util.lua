@@ -722,7 +722,9 @@ end
 
 local function IntersectionReactionDispose(reaction)
 	for _,child in IPairs(reaction.children) do
-		child:Dispose()
+		if child then 
+			child:Dispose()
+		end
 	end
 	Pool(reaction.children)
 	DisposeReaction(reaction)

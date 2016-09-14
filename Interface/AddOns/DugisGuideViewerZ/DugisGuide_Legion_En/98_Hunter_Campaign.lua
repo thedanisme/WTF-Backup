@@ -309,7 +309,7 @@ A Champion: Addie Fizzlebog |QID|42414| |N|(npc:99095) at {Nesingwary's Retreat}
 
 T Baron and the Huntsman |QID|42397| |N|(npc:107981) in {Stormheim} (72.15,59.33) (73.12,60.20) (77.40,63.71) (80.52,64.72) (80.12,66.21)| |Z|1017 0| |NPC|107981|
 A Awakening the Senses |QID|42398| |N|(npc:107981) in {Stormheim} (80.12,66.21)| |Z|1017 0| |NPC|107981|
-C Awakening the Sense |QID|138299 |QID|42398.1| |N|ollow Baron when you see the chat message "Baron has found something." and kill (npc:108473) and collect 8 (item:138299) (80.54,66.93)| |Z|1017 0|
+C Awakening the Sense |QID|42398.1| |N|ollow Baron when you see the chat message "Baron has found something." and kill (npc:108473) and collect 8 (item:138299) (80.54,66.93)| |Z|1017 0|
 T Awakening the Senses |QID|42398| |N|(npc:107981) in {Stormheim} (80.12,66.21)| |Z|1017 0| |NPC|107981|
 A Champion: Huntsman Blake |QID|42412| | |N|(npc:107981) in {Stormheim} (80.12,66.21)| |Z|1017 0| |NPC|107981| |E|
 A Ready to Work |QID|42399| |N|(npc:107981) in {Stormheim} (80.12,66.21)| |Z|1017 0| |NPC|107981|
@@ -425,7 +425,7 @@ N Report to Kur'talos Ravencrest |SID|33154|1| |N|Report to (npc:113046) in  {Ra
 N Repair the Deactivated Moon Guard Portal |SID|33155|2| |N|Click Deactivated Moon Guard Portal in {Ravencourt}| |QID|44479|
 K (npc:113555) |SID|33162|3| |N|Secure the Rampart by Defeating (npc:113555) (42.95,46.32) (44.27,49.58)| |Z|1099 0| |QID|44479|
 N Enter the Upper Ramparts of the Courtyard |SID|33169|4| |N|Follow the path to the upper ramparts of the courtyard (44.28,49.76) (44.51,51.22 )| |Z|1099 0| |QID|44479|
-N Activate the Moon Guard Portal |SID|33174|5| |N|Click on Deactivated Moon Guard Portal in each waypoint (44.51,51.22) (40.98,51.48) (43.71,50.93)| |Z|1099 0|  |QID|44479
+N Activate the Moon Guard Portal |SID|33174|5| |N|Click on Deactivated Moon Guard Portal in each waypoint (44.51,51.22) (40.98,51.48) (43.71,50.93)| |Z|1099 0| |QID|44479|
 K (npc:114137) |SID|33184|6| |N|Use (spell:227154) to kill (npc:114137) to end the invasion (43.09,52.18)| |Z|1099 0| |QID|44479| |NPC|114137|
 
 R Mausoleum |QID|44414| |N|Travel to {Mausoleum} (38.75, 53.07)| |Z|1099 0| 
@@ -490,9 +490,9 @@ C Destiny Unfulfilled |QID|44497| |N|Witness True Betrayal in Shadowmoon Valley 
 R Trueshot Lodge |TID|44479| |N|Travel to {Trueshot Lodge} (47.42,43.49)| |Z|1072 0|
 T Destiny Unfulfilled |QID|44496| |N|(npc:113857) in {Trueshot Lodge} (47.42,43.49)| |Z|1072 0| |NPC|113857|
 ----
-A Unseen Armaments |QID|44211 |N|(npc:110412) in {Trueshot Lodge}. This quest will only be available if you chose to get the "Fletchery" class hall upgrade. (35.70,51.73)| |Z|1072 0| |NPC|110412|
-C Unseen Armaments |QID|44211 |N|Speak to (npc:110412) and place a work order for Champion Armaments (35.70,51.73)| |Z|1072 0| |NPC|110412|
-T Unseen Armaments |QID|44211 |N|(npc:110412) in {Trueshot Lodge} (35.70,51.73)| |Z|1072 0| |NPC|110412|
+A Unseen Armaments |QID|44211| |N|(npc:110412) in {Trueshot Lodge}. This quest will only be available if you chose to get the "Fletchery" class hall upgrade. (35.70,51.73)| |Z|1072 0| |NPC|110412|
+C Unseen Armaments |QID|44211| |N|Speak to (npc:110412) and place a work order for Champion Armaments (35.70,51.73)| |Z|1072 0| |NPC|110412|
+T Unseen Armaments |QID|44211| |N|(npc:110412) in {Trueshot Lodge} (35.70,51.73)| |Z|1072 0| |NPC|110412|
 
 N Guide Complete
 

@@ -60,7 +60,7 @@ N East Surge Needle |QID|41630.1| |N|Destroy the East Surge Needle in {Coldarra}
 T Unleashing Judgment |QID|41630| |N|Field Turn-In| |PRE|41625|
 A The Nexus Vault |QID|41631| |N|Auto Quest| |Z|486 0| |PRE|41625|
 
-R The Nexus |QID|41631| |N|Enter the {The Nexus} (27.51, 26.31) |Z|486 0| |F|1069 1| |PRE|41625|
+R The Nexus |QID|41631| |N|Enter the {The Nexus} (27.51, 26.31)| |Z|486 0| |F|1069 1| |PRE|41625|
 K (npc:104402) |SID|29798|1| |N|Kill the 3 (npc:104402) guarding Azuregos in the {Axis of Alignment} (36.18, 72.83)| |Z|1069 1| |NPC|104402| |QID|41631| |PRE|41625|
 C The Azure Prisoner |SID|29796|1| |N|Fully heal (npc:104546) in the {Axis of Alignment} (35.67, 69.41)| |Z|1069 1| |NPC|104546| |QID|41631| |PRE|41625|
 C Reach the Librarium |SID|29678|2| |N|Make your way to {The Librarium} (24.06, 67.57) (21.91, 57.00) (21.91, 42.02) (26.89, 33.89)| |Z|1069 1| |QID|41631| |PRE|41625|

@@ -6,7 +6,7 @@ return [[
 R Gnomeregan Instance |N|Queue/Zone into {Gnomeregan} in {Dun Morogh} (31.33, 38.04)(25.30, 36.88)(30.00, 37.90)| |I| |QID|26939| |Z|27| |F|691 1| |WR|
 A The G-Team (Part 1) |N|(npc:44556) (63.2, 32.8)| |QID|26939| |Z|691 1| |NPC|44556|
 N (item:60680) |SID|24961| |N|Get a (item:60680) from the box (55.57, 40.44)| |L|60680| |T|
-K (npc:7361) |SID|24948| |N|Speak to (npc:7998) to start the event and kill (npc:7361) (81.82, 65.06) |Z|691 1| |NPC|7998, 7361|
+K (npc:7361) |SID|24948| |N|Speak to (npc:7998) to start the event and kill (npc:7361) (81.82, 65.06)| |Z|691 1| |NPC|7998, 7361|
 K (npc:7079) |SID|24959| |N|Use the (item:60680) to jump down into the Hall of Gears. Then kill the (npc:7079) (77.0, 45.0)| |U|60680| |Z|691 2| |NPC|7079|
 T The G-Team (Part 1) |N|(npc:44560) (65.8, 47.6)| |QID|26939| |Z|691 2| |NPC|44560|
 

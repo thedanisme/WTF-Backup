@@ -23,7 +23,7 @@ R Emerald Dreamway |QID|40645.1| |N|Enter the {Emerald Dreamway} (68.08, 60.26)|
 N (npc:103489) |QID|40645.2| |N|Travel with (npc:103489) in the {Emerald Dreamway} (38.83, 45.04)| |Z|1048 0| |NPC|103489|
 K (npc:103246) |QID|40645.3| |N|Kill (npc:103246) to cleanse the corruption in the {Emerald Dreamway} (47.98, 45.39) (68.50, 30.64)| |Z|1048 0| |NPC|103246|
 
-R The Dreamgrove |QID|40645.4| |N|Travel to the {The Dreamgrove} (45.45, 24.62) |Z|1048 0|
+R The Dreamgrove |QID|40645.4| |N|Travel to the {The Dreamgrove} (45.45, 24.62)| |Z|1048 0|
 f The Dreamgrove |QID|40645| |N|Grab {The Dreamgrove} flight point from (npc:107457) {61.77, 34.04)| |Z|1077 0| |NPC|107457|
 C To The Dreamgrove |QID|40645.5| |N|Meet (npc:40645) in {Circle of Spirits} (46.21, 51.50)| |Z|1077 0| |NPC|40645|
 T To The Dreamgrove |QID|40645| |N|(npc:101195) in {Circle of Spirits} (44.94, 51.16)| |Z|1077 0| |NPC|101195|
@@ -60,7 +60,7 @@ C Into the Darkness |SID|30424|5| |N|Chase after (npc:107558) in the {Shattered 
 C In a Tangled Web |SID|30433|6| |N|Kill (npc:108027) in the {Shattered Locus} (52.84, 17.86)| |Z|1033 2| |NPC|108027| |PRE|42428| |QID|42430|
 C The Fangs of Ashamane |SID|30434|7| |N|Collect the (item:128860) in the {Shattered Locus} (54.81, 20.38)| |Z|1033 2| |PRE|42428| |QID|42430|
 
-R Dreamgrove |TID|42430| |N|Mount (npc:108115) in the {Shattered Locus} and travel to the {The Dreamgrove} (54.77, 19.87) |Z|1033 2| |PRE|42428| |V|
+R Dreamgrove |TID|42430| |N|Mount (npc:108115) in the {Shattered Locus} and travel to the {The Dreamgrove} (54.77, 19.87)| |Z|1033 2| |PRE|42428| |V|
 C The Fangs of Ashamane |QID|42430.2| |N|Collect the (item:128860) in the {Shattered Locus} (54.81, 20.38)| |Z|1033 2| |PRE|42428|
 T The Fangs of Ashamane |QID|42430| |N|(npc:101195) in {Circle of Spirits} (44.72, 50.98)| |Z|1077 0| |NPC|101195| |PRE|42428|
 
@@ -196,8 +196,8 @@ C The Dark Riders |QID|40838.2| |N|Claim the (item:128858) in the {Karazhan Cata
 T The Dark Riders |QID|40838| |N|(npc:101282) in the {Karazhan Catacombs} (68.61, 25.94)| |Z|32 1| |NPC|101282| |PRE|40783|
 A The Burden Borne |QID|40900| |N|(npc:101282) in the {Karazhan Catacombs} (68.61, 25.94)| |Z|32 1| |NPC|101282| |PRE|40783|
 
-R Emerald Dreamway |QID|40900| |N|Travel to the {Emerald Dreamway} (45.50, 24.60) |Z|1048 0| |PRE|40783|
-R The Dreamgrove |QID|40900| |N|Travel to {The Dreamgrove} (45.50, 24.60) |Z|1048 0| |PRE|40783|
+R Emerald Dreamway |QID|40900| |N|Travel to the {Emerald Dreamway} (45.50, 24.60)| |Z|1048 0| |PRE|40783|
+R The Dreamgrove |QID|40900| |N|Travel to {The Dreamgrove} (45.50, 24.60)| |Z|1048 0| |PRE|40783|
 T The Burden Borne |QID|40900| |N|(npc:101195) in {Circle of Spirits} (44.71, 50.79)| |Z|1077 0| |NPC|101195| |PRE|40783|
 
 -- Druid Balance Staff Quests End (Scythe of Elune)
@@ -489,7 +489,7 @@ N Report to Kur'talos Ravencrest |SID|33154|1| |N|Report to (npc:113046) in  {Ra
 N Repair the Deactivated Moon Guard Portal |SID|33155|2| |N|Click Deactivated Moon Guard Portal in {Ravencourt}| |QID|44479|
 K (npc:113555) |SID|33162|3| |N|Secure the Rampart by Defeating (npc:113555) (42.95,46.32) (44.27,49.58)| |Z|1099 0| |QID|44479|
 N Enter the Upper Ramparts of the Courtyard |SID|33169|4| |N|Follow the path to the upper ramparts of the courtyard (44.28,49.76) (44.51,51.22 )| |Z|1099 0| |QID|44479|
-N Activate the Moon Guard Portal |SID|33174|5| |N|Click on Deactivated Moon Guard Portal in each waypoint (44.51,51.22) (40.98,51.48) (43.71,50.93)| |Z|1099 0|  |QID|44479
+N Activate the Moon Guard Portal |SID|33174|5| |N|Click on Deactivated Moon Guard Portal in each waypoint (44.51,51.22) (40.98,51.48) (43.71,50.93)| |Z|1099 0| |QID|44479|
 K (npc:114137) |SID|33184|6| |N|Use (spell:227154) to kill (npc:114137) to end the invasion (43.09,52.18)| |Z|1099 0| |QID|44479| |NPC|114137|
 
 R Mausoleum |QID|44414| |N|Travel to {Mausoleum} (38.75, 53.07)| |Z|1099 0| 
