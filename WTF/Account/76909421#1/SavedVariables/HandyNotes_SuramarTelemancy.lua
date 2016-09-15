@@ -1,13 +1,16 @@
 
 HandyNotes_SuramarTelemancyDB = {
 	["profileKeys"] = {
-		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
+		["Oenta - Stormrage"] = "Oenta - Stormrage",
 		["Shhbbyisok - Stormrage"] = "Shhbbyisok - Stormrage",
+		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
 	},
 	["profiles"] = {
-		["Emmarosa - Stormrage"] = {
+		["Oenta - Stormrage"] = {
 		},
 		["Shhbbyisok - Stormrage"] = {
+		},
+		["Emmarosa - Stormrage"] = {
 		},
 	},
 }

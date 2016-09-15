@@ -1,0 +1,285 @@
+2016-09-13  Tercio  <Tercio>
+
+[e2504d087f7b] [tip]
+* plugins/Details_RaidInfo-EmeraldNightmare/Details_RaidInfo-EmeraldNightmare.lua, plugins/Details_RaidInfo-EmeraldNightmare/Details_RaidInfo-EmeraldNightmare.toc, plugins/Details_RaidInfo-EmeraldNightmare/boss_faces.tga, plugins/Details_RaidInfo-EmeraldNightmare/icon256x128.tga, plugins/Details_RaidInfo-Nighthold/Details_RaidInfo-Nighthold.lua, plugins/Details_RaidInfo-Nighthold/Details_RaidInfo-Nighthold.toc, plugins/Details_RaidInfo-Nighthold/boss_faces.tga, plugins/Details_RaidInfo-Nighthold/icon256x128.tga:
+
+plugins:
+- removed warlords of draenor dungeon info plugin.
+- removed hellfire citadel raid info plugin.
+- remove calc leech plugin.
+- added emerald nightmare raid info plugin.
+- added the nighthold raid info plugin.
+
+hotfixes:
+- fix for total bar where sometimes it desappears.
+- fix for overall data reseting its elapsed time making dps and hps goes to millions.
+- fix for overall not reseting when entering in a new dungeon.
+- fix for trash cleanup on dungeons.
+- fix for item level detection on dungeons.
+- fix for artifact offhand always being counter as 750 item level.
+- fix for segments menu sometimes not opening at all after a dungeon boss.
+- fix for segments menu not showing the boss icon above the sub panel.
+- fix for the top left corner of the window be ignoring the 'hide icon' setting at a /reload.
+
+
+[9ed75c6cf390]
+* .pkgmeta, Libs/DF/fw.lua, Libs/LibGraph-2.0/LibGraph-2.0.lua, Libs/LibGroupInSpecT-1.1/LibGroupInSpecT-1.1.lua, boot.lua, classes/classe_combate.lua, classes/classe_damage.lua, classes/classe_heal.lua, classes/container_historico.lua, core/control.lua, core/gears.lua, core/parser.lua, functions/slash.lua, gumps/janela_info.lua, gumps/janela_principal.lua, plugins/Details_CalcLeech/Details_CalcLeech.lua, plugins/Details_CalcLeech/Details_CalcLeech.toc, plugins/Details_DungeonInfo-Warlords/Details_DungeonInfo-Warlords.lua, plugins/Details_DungeonInfo-Warlords/Details_DungeonInfo-Warlords.toc, plugins/Details_RaidInfo-HellfireCitadel/Details_RaidInfo-HellfireCitadel.lua, plugins/Details_RaidInfo-HellfireCitadel/Details_RaidInfo-HellfireCitadel.toc, plugins/Details_RaidInfo-HellfireCitadel/boss_faces.tga, plugins/Details_RaidInfo-HellfireCitadel/icon256x128.tga, startup.lua:
+
+plugins:
+- removed warlords of draenor dungeon info plugin.
+- removed hellfire citadel raid info plugin.
+- remove calc leech plugin.
+- added emerald nightmare raid info plugin.
+- added the nighthold raid info plugin.
+
+hotfixes:
+- fix for total bar where sometimes it desappears.
+- fix for overall data reseting its elapsed time making dps and hps goes to millions.
+- fix for overall not reseting when entering in a new dungeon.
+- fix for trash cleanup on dungeons.
+- fix for item level detection on dungeons.
+- fix for artifact offhand always being counter as 750 item level.
+- fix for segments menu sometimes not opening at all after a dungeon boss.
+- fix for segments menu not showing the boss icon above the sub panel.
+- fix for the top left corner of the window be ignoring the 'hide icon' setting at a /reload.
+
+
+2016-09-09  Tercio  <Tercio>
+
+[1360fc3aa15d]
+* classes/container_combatentes.lua:
+
+- attempt to fix bodyguard detection.
+
+
+2016-08-29  Tercio  <Tercio>
+
+[c09648ff0e9a]
+* Libs/DF/cooltip.lua, Libs/DF/fw.lua, Libs/DF/panel.lua, boot.lua, gumps/janela_info.lua:
+
+- framework update to v44.
+
+
+2016-08-27  Tercio  <Tercio>
+
+[8b7281f57699]
+* boot.lua:
+
+*weakup packpager
+- new API: Details:GetPlayerIcon (playername[, segmentobject]) - return the player class or spec icon.
+- bar spacing now can go to -2, down from 0.
+- Tiny Threat now shall correctly use the font set on the options panel after a logon.
+
+
+[a88a77d94afc]
+* boot.lua, functions/playerclass.lua, gumps/janela_info.lua, gumps/janela_options.lua, plugins/Details_TinyThreat/Details_TinyThreat.lua:
+
+- new API: Details:GetPlayerIcon (playername[, segmentobject]) - return the player class or spec icon.
+- bar spacing now can go to -2, down from 0.
+- Tiny Threat now shall correctly use the font set on the options panel after a logon.
+
+
+2016-08-21  Tercio  <Tercio>
+
+[53fc16824eb9]
+* boot.lua, functions/profiles.lua, gumps/janela_info.lua, gumps/janela_options.lua, startup.lua:
+
+- fixed percent issues on player detail window.
+
+
+2016-08-20  Tercio  <Tercio>
+
+[1466aff66d6b]
+* boot.lua:
+
+- Fixing Slash and GBoM on dungeon encounters.
+- Solving problems if somebody enter on a ongoing dungeon and have to detect already applyied buffs.
+- If the buff owner isn't found, try to detect by unitaura query.
+- framework update to v41.
+
+
+2016-08-19  Tercio  <Tercio>
+
+[248556e14041]
+* boot.lua:
+
+- Fixing Slash and GBoM on dungeon encounters.
+- Solving problems if somebody enter on a ongoing dungeon and have to detect already applyied buffs.
+- If the buff owner isn't found, try to detect by unitaura query.
+- framework update to v41.
+
+
+[e525cce84fe3]
+* Libs/DF/colors.lua, Libs/DF/fw.lua, Libs/DF/panel.lua, Libs/DF/textentry.lua, boot.lua, classes/classe_damage.lua, classes/classe_heal.lua, classes/container_combatentes.lua, core/parser.lua, gumps/janela_info.lua:
+
+- Fixing Slash and GBoM on dungeon encounters.
+- Solving problems if somebody enter on a ongoing dungeon and have to detect already applyied buffs.
+- If the buff owner isn't found, try to detect by unitaura query.
+- framework update to v41.
+
+
+2016-08-14  Tercio  <Tercio>
+
+[eac04a6fca0f]
+* boot.lua, plugins/Details_Streamer/Details_Streamer.lua:
+
+- Fix for Monk's Soothing Mist on Streamer Plugin.
+
+
+2016-08-13  Tercio  <Tercio>
+
+[e6656844f137]
+* Libs/DF/cooltip.lua, Libs/DF/fw.lua, boot.lua, classes/classe_instancia.lua, core/control.lua, core/parser.lua, gumps/janela_principal.lua:
+
+- Warlock's Grimoire of Synergy buff uptime fix.
+
+
+2016-08-11  Tercio  <Tercio>
+
+[d0cf8ed6de41]
+* boot.lua, classes/container_combatentes.lua, plugins/Details_Streamer/Details_Streamer.lua:
+
+- fix for Details! Streamer plugin.
+
+
+[9587de18011f]
+* Libs/DF/auras.lua, Libs/DF/cooltip.lua, Libs/DF/cooltip.xml, Libs/DF/fw.lua, boot.lua, classes/classe_instancia.lua, core/control.lua, core/parser.lua, functions/boss.lua, gumps/janela_options.lua, gumps/janela_principal.lua, gumps/switch.lua, images/logotipo.tga, images/options_window.blp, images/options_window.tga, startup.lua:
+
+- new API: Details:GetEncounterInfoFromEncounterName (ID, encountername), returns encounter info.
+- Tweaks for Legion Dungeon.
+- Framework update to v35.
+- Solved an issue with bookmarks where the background sometimes was a light silver.
+- Sovelod an issue with the display menu where sometimes it wasn't changeing the display.
+- new tooltip design.
+
+
+2016-08-08  Tercio  <Tercio>
+
+[458a7948d634]
+* Libs/DF/cooltip.lua, Libs/DF/fw.lua, boot.lua, functions/spells.lua:
+
+- priest spec detection.
+- framework update.
+
+
+2016-08-07  Tercio  <Tercio>
+
+[78a961b185e3]
+* core/network.lua:
+
+- realm sync shutdown, TimeAttack plugin won't be able to get other players DPS results, but nobody was using it anyway.
+
+
+2016-08-05  Tercio  <Tercio>
+
+[2f438e929cb7]
+* images/logotipo.blp, images/logotipo.tga:
+
+- possible file crashing the client, need more tests.
+
+
+[387b0b62bd3e]
+* boot.lua, core/parser.lua:
+
+- Check if the caster is in the raid before trying to get its GUID.
+
+
+2016-08-03  Tercio  <Tercio>
+
+[2ac475418581]
+* images/icons.tga, images/spec_icons_normal.blp, images/spec_icons_normal.tga, images/spec_icons_normal_alpha.blp, images/spec_icons_normal_alpha.tga:
+
+- more image conversion, icons now back to 512x512 atlas.
+
+
+2016-08-02  Tercio  <Tercio>
+
+[a848676abe26]
+* Libs/DF/fw.lua, Libs/DF/panel.lua, boot.lua, classes/classe_instancia_include.lua, core/parser.lua, gumps/janela_options.lua, gumps/janela_principal.lua, images/icons.blp, images/icons.tga:
+
+- added outline options for left text.
+
+
+2016-07-30  Tercio  <Tercio>
+
+[43e65e90073a]
+* boot.lua, classes/container_combatentes.lua, functions/playerclass.lua, functions/spells.lua, images/logotipo.blp, images/spec_icons_normal_alpha.blp:
+
+- fix some images with black background.
+- review on DK, Rogue, POaladin spells for class detection.
+- few fixed on spec detection.
+
+
+2016-07-29  Tercio  <Tercio>
+
+[c639decbc67e]
+* Libs/DF/dropdown.lua, Libs/DF/dropdown.xml, Libs/DF/fw.lua, Libs/DF/panel.lua, Libs/LibGroupInSpecT-1.1/LibGroupInSpecT-1.1.lua, Libs/LibItemUpgradeInfo-1.0/Core.lua, Libs/LibItemUpgradeInfo-1.0/LibItemUpgradeInfo-1.0.toc, Libs/LibItemUpgradeInfo-1.0/LibStub/LibStub.toc, Libs/libs.xml, boot.lua, classes/container_combatentes.lua, core/gears.lua, core/parser.lua, core/plugins_statusbar.lua, functions/skins.lua, gumps/janela_options.lua, gumps/janela_principal.lua, images/skins/classic_skin.blp, images/skins/classic_skin.tga, images/skins/classic_skin_v1.blp, images/skins/classic_skin_v1.tga, images/skins/default_skin.blp, images/skins/default_skin.tga, images/skins/elvui.blp, images/skins/elvui.tga, images/skins/elvui_opaque.blp, images/skins/elvui_opaque.tga, images/skins/flat_skin.blp, images/skins/flat_skin.tga, images/skins/overwatch.blp, images/skins/overwatch.tga, images/skins/simplygray_skin.blp, images/skins/simplygray_skin.tga, startup.lua:
+
+- Fixed some issues with spec detection and LibGroupInSpecT-1.1 has need enabled back again.
+- Fixed an issue with micro displays not loading settings after a logon.
+- Another wave of workarounds to prevent the client image cache bug.
+
+
+2016-07-26  Tercio  <Tercio>
+
+[d3d82024f943]
+* Libs/DF/auras.lua, Libs/DF/fw.lua, Libs/DF/load.xml, Libs/DF/normal_bar.lua, Libs/DF/panel.lua, boot.lua, classes/container_historico.lua, core/parser.lua, images/skins/imperial_skin.blp:
+
+- merging more updates from the beta version.
+
+
+2016-07-22  Tercio  <Tercio>
+
+[b2a98d7b0c78]
+* images/options_window.blp:
+
+- missing options background file.
+
+
+[e1af3fbdb3e8]
+* boot.lua, images/spec_icons_normal.blp, images/spec_icons_normal_alpha.blp:
+
+- Trying a workaround for the wow client's texture cache bug which causes FPS drops.
+
+
+2016-07-21  Tercio  <Tercio>
+
+[8bbc9f45cfcc]
+* boot.lua, core/parser.lua:
+
+- Fixed warlock's Soul Effigy.
+
+
+2016-07-20  Tercio  <Tercio>
+
+[1414ab85d06a]
+* boot.lua, plugins/Details_CalcLeech/Details_CalcLeech.lua:
+
+- Fixed an issue with Calc Leech plugin.
+
+
+2016-07-19  Tercio  <Tercio>
+
+[5deef00dbfec]
+* Libs/DF/fw.lua, Libs/DF/normal_bar.lua, boot.lua, images/BantoBar.blp, images/BantoBar.tga, images/atributos_captures.blp, images/atributos_captures.tga, images/atributos_icones.blp, images/atributos_icones.tga, images/atributos_icones_damage.blp, images/atributos_icones_damage.tga, images/atributos_icones_energyze.blp, images/atributos_icones_energyze.tga, images/atributos_icones_heal.blp, images/atributos_icones_heal.tga, images/atributos_icones_misc.blp, images/atributos_icones_misc.tga, images/autoshot.blp, images/autoshot.tga, images/background.blp, images/background.tga, images/bar4.blp, images/bar4.tga, images/bar4_glass.blp, images/bar4_glass.tga, images/bar4_reverse.blp, images/bar4_reverse.tga, images/bar4_vidro.blp, images/bar4_vidro.tga, images/bar_background.blp, images/bar_background.tga, images/bar_background2.blp, images/bar_background2.tga, images/bar_detalhes2.blp, images/bar_detalhes2.tga, images/bar_detalhes2_end.blp, images/bar_detalhes2_end.tga, images/bar_flat.blp, images/bar_flat.tga, images/bar_serenity.blp, images/bar_serenity.tga, images/bar_skyline.blp, images/bar_skyline.tga, images/border_1.blp, images/border_1.tga, images/border_2.blp, images/border_2.tga, images/border_3.blp, images/border_3.tga, images/border_welcome.blp, images/border_welcome.tga, images/button_disable_overlay.blp, images/button_disable_overlay.tga, images/classes.blp, images/classes.tga, images/classes_plus.blp, images/classes_plus.tga, images/classes_small.blp, images/classes_small.tga, images/classes_small_alpha.blp, images/classes_small_alpha.tga, images/classes_small_alpha_bw.blp, images/classes_small_alpha_bw.tga, images/classes_small_bw.blp, images/classes_small_bw.tga, images/clock.blp, images/clock.tga, images/cooltip_selected.blp, images/cooltip_selected.tga, images/copy.blp, images/copy.tga, images/custom_bg.blp, images/custom_bg.tga, images/custom_icones.blp, images/custom_icones.tga, images/default_button.blp, images/default_button.tga, images/espadas.blp, images/espadas.tga, images/highlight_leftright.blp, images/highlight_leftright.tga, images/highlight_updown.blp, images/highlight_updown.tga, images/icone_bg.blp, images/icone_bg.tga, images/icone_bg_fundo.blp, images/icone_bg_fundo.tga, images/icones_barra.blp, images/icones_barra.tga, images/icons.blp, images/icons.tga, images/icons2.blp, images/icons2.tga, images/info_window_background.blp, images/info_window_background.tga, images/info_window_damagetaken.blp, images/info_window_damagetaken.tga, images/key_alt.blp, images/key_alt.tga, images/key_ctrl.blp, images/key_ctrl.tga, images/key_shift.blp, images/key_shift.tga, images/knob.blp, images/knob.tga, images/logotipo.blp, images/logotipo.tga, images/melee.blp, images/melee.tga, images/minimap.blp, images/minimap.tga, images/modo_icones.blp, images/modo_icones.tga, images/options_window.tga, images/overlay_detalhes.blp, images/overlay_detalhes.tga, images/report_button.blp, images/report_button.tga, images/report_frame_icons.blp, images/report_frame_icons.tga, images/reset_button2.blp, images/reset_button2.tga, images/skins/classic_skin.blp, images/skins/classic_skin.tga, images/skins/classic_skin_v1.blp, images/skins/classic_skin_v1.tga, images/skins/default_skin.blp, images/skins/default_skin.tga, images/skins/elvui.blp, images/skins/elvui.tga, images/skins/elvui_opaque.blp, images/skins/elvui_opaque.tga, images/skins/flat_skin.blp, images/skins/flat_skin.tga, images/skins/imperial_skin.blp, images/skins/overwatch.blp, images/skins/overwatch.tga, images/skins/simplygray_skin.blp, images/skins/simplygray_skin.tga, images/small_icons.blp, images/small_icons.tga, images/spec_icons_normal.blp, images/spec_icons_normal.tga, images/spec_icons_normal_alpha.blp, images/spec_icons_normal_alpha.tga, images/toolbar_icons.blp, images/toolbar_icons.tga, images/toolbar_icons_shadow.blp, images/toolbar_icons_shadow.tga, images/verticalline.blp, images/verticalline.tga:
+
+- framework update.
+- using image format BLP instead of TGA.
+
+
+[6160f2beb623]
+* Details.toc, Libs/DF/button.lua, Libs/DF/cooltip.lua, Libs/DF/dropdown.lua, Libs/DF/dropdown.xml, Libs/DF/fw.lua, Libs/DF/label.lua, Libs/DF/load.xml, Libs/DF/math.lua, Libs/DF/normal_bar.lua, Libs/DF/panel.lua, Libs/DF/picture.lua, Libs/DF/slider.lua, Libs/DF/split_bar.lua, Libs/DF/textentry.lua, Libs/LibGroupInSpecT-1.1/LibGroupInSpecT-1.1.lua, Libs/NickTag-1.0/NickTag-1.0.lua, Libs/libs.xml, boot.lua, classes/classe_damage.lua, classes/classe_damage_habilidade.lua, classes/classe_heal.lua, classes/classe_heal_habilidade.lua, classes/classe_instancia.lua, classes/classe_instancia_include.lua, core/gears.lua, core/parser.lua, core/plugins.lua, core/util.lua, core/windows.lua, functions/link.lua, functions/profiles.lua, functions/skins.lua, functions/slash.lua, functions/spellcache.lua, functions/spells.lua, gumps/janela_info.lua, gumps/janela_principal.lua, images/options_window.tga, plugins/Details_3DModelsPaths/Details_3DModelsPaths.toc, plugins/Details_CalcLeech/Details_CalcLeech.toc, plugins/Details_DataStorage/Details_DataStorage.toc, plugins/Details_DmgRank/Details_DmgRank.lua, plugins/Details_DmgRank/Details_DmgRank.toc, plugins/Details_DpsTuning/Details_DpsTuning.toc, plugins/Details_DungeonInfo-Warlords/Details_DungeonInfo-Warlords.toc, plugins/Details_EncounterDetails/Details_EncounterDetails.toc, plugins/Details_EncounterDetails/frames.lua, plugins/Details_RaidCheck/Details_RaidCheck.toc, plugins/Details_RaidInfo-HellfireCitadel/Details_RaidInfo-HellfireCitadel.toc, plugins/Details_Streamer/Details_Streamer.toc, plugins/Details_TimeAttack/Details_TimeAttack.toc, plugins/Details_TinyThreat/Details_TinyThreat.toc, plugins/Details_Vanguard/Details_Vanguard.toc:
+
+- Release for 7.0.3 patch.
+- Major Framework update.
+- Nick-Tag library upodate.
+
+
+2016-07-12  Tercio  <Tercio>
+
+[2a10f69e8227]
+* Libs/DF/button.xml, Libs/DF/dropdown.xml, Libs/DF/fw.lua:
+
+- small framework fix.
+
+

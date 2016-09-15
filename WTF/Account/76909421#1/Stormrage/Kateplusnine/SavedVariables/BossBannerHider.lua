@@ -1,2 +1,0 @@
-
-HideBossBanner = "loot"

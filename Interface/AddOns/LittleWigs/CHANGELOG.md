@@ -1,25 +1,6 @@
 # LittleWigs
 
-## [v7.0.10](https://github.com/BigWigsMods/LittleWigs/tree/v7.0.10) (2016-09-13) [](#top)
-[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v7.0.9...v7.0.10)
+## [v7.0.10-1-g67f3170](https://github.com/BigWigsMods/LittleWigs/tree/67f3170b99827862348aaba70ac51921437b1d2f) (2016-09-14) [](#top)
+[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v7.0.10...67f3170b99827862348aaba70ac51921437b1d2f)
 
--   Tweak timings  
--   Add The Arcway  
--   CourtOfStars/AdvisorMelandrus: Throttle Piercing Gale  
--   EyeOfAzshara/WrathOfAzshara: Add Crushing Depths  
--   EyeOfAzshara/KingDeepbeard: Add flash to bubble warning.  
--   EyeOfAzshara/LadyHatecoil: Add Monsoon warning  
--   EyeOfAzshara/WarlordParjesh: Add Restoration cast, Quicksand damage and fix adds timer.  
--   DarkheartThicket/ShadeOfXavius: Fix Nightmare Bolt  
--   DarkheartThicket/Oakheart: Change Crushing Grip to a target warning.  
--   DarkheartThicket/Dresaron: Tweak initial timers  
--   DarkheartThicket/ArchdruidGlaidalis: Fix nightfall damage warning  
--   AssaultOnVioletHold/Anubesset: Add icon to impale and fix ooze events  
--   HallsOfValor/God-KingSkovald: tweak  
--   NeltharionsLair/Rokmora: Tweak  
--   AssaultOnVioletHold/Saelorn: Only show your own creeping slaughter  
--   AssaultOnVioletHold/Thalena: Typo  
--   BlackRookHold/IllysannaRavencrest: Fix Say usage  
--   AssaultOnVioletHold/Thalena: Add another spell id for Essence of the Blood Princess  
--   AssaultOnVioletHold/Anubesset: Announce Impale target, disable Ooze warning  
--   Add timers to Court of Stars (#5)  
+-   Add locale to Halls of Valor  

@@ -13,470 +13,273 @@ _detalhes_database = {
 		["reverse"] = false,
 	},
 	["active_profile"] = "Emmarosa-Stormrage",
-	["last_day"] = "13",
+	["last_day"] = "15",
 	["ignore_nicktag"] = false,
 	["tabela_historico"] = {
 		["tabelas"] = {
 			{
 				{
+					["combatId"] = 97,
 					["tipo"] = 2,
-					["combatId"] = 45,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1297,
+							["flag_original"] = 1300,
+							["on_hold"] = false,
+							["colocacao"] = 1,
 							["damage_from"] = {
-								["Thistleleaf Petalpeeler"] = true,
 							},
 							["targets"] = {
-								["Thistleleaf Petalpeeler"] = 1036146,
+								["Brineclaw"] = 2838443,
+								["Clackbrine Snapper"] = 1129436,
 							},
-							["delay"] = 0,
 							["pets"] = {
+								"Murky <Emmarosa>", -- [1]
+								"Tufferfish <Emmarosa>", -- [2]
 							},
-							["custom"] = 0,
-							["tipo"] = 1,
-							["classe"] = "ROGUE",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 1036146.007554,
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 4,
-										["b_amt"] = 0,
-										["c_dmg"] = 78930,
-										["g_amt"] = 0,
-										["n_max"] = 14097,
-										["targets"] = {
-											["Thistleleaf Twigsnapper"] = 0,
-											["Thistleleaf Petalpeeler"] = 124825,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 45895,
-										["n_min"] = 6504,
-										["g_dmg"] = 0,
-										["counter"] = 12,
-										["total"] = 124825,
-										["c_max"] = 28126,
-										["c_min"] = 12311,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["b_dmg"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 5,
-										["spellschool"] = 1,
-										["MISS"] = 3,
-									}, -- [1]
-									[196819] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 214186,
-										["targets"] = {
-											["Thistleleaf Petalpeeler"] = 369957,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 369957,
-										["n_min"] = 155771,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 369957,
-										["c_max"] = 0,
-										["id"] = 196819,
-										["r_dmg"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									[188456] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 14815,
-										["targets"] = {
-											["Thistleleaf Petalpeeler"] = 14815,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 14815,
-										["n_min"] = 14815,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 14815,
-										["c_max"] = 0,
-										["id"] = 188456,
-										["r_dmg"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
-									},
-									[53] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 101002,
-										["g_amt"] = 0,
-										["n_max"] = 52582,
-										["targets"] = {
-											["Thistleleaf Petalpeeler"] = 201418,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 100416,
-										["n_min"] = 47834,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 201418,
-										["c_max"] = 101002,
-										["id"] = 53,
-										["r_dmg"] = 0,
-										["c_min"] = 101002,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									[185438] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 214312,
-										["g_amt"] = 0,
-										["n_max"] = 110819,
-										["targets"] = {
-											["Thistleleaf Petalpeeler"] = 325131,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 110819,
-										["n_min"] = 110819,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 325131,
-										["c_max"] = 214312,
-										["id"] = 185438,
-										["r_dmg"] = 0,
-										["c_min"] = 214312,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["dps_started"] = false,
-							["end_time"] = 1473718876,
-							["damage_taken"] = 60195.007554,
-							["total"] = 1036146.007554,
-							["nome"] = "Emmarosa",
-							["spec"] = 261,
-							["grupo"] = true,
-							["last_dps"] = 103614.6007554,
-							["friendlyfire_total"] = 0,
-							["colocacao"] = 1,
-							["last_event"] = 1473718901,
-							["on_hold"] = false,
-							["start_time"] = 1473718866,
-							["serial"] = "Player-60-0A91880D",
 							["friendlyfire"] = {
 							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.002336,
+							["spec"] = 260,
+							["dps_started"] = false,
+							["total"] = 3967879.002336,
+							["classe"] = "ROGUE",
+							["serial"] = "Player-60-0A91880D",
+							["nome"] = "Emmarosa",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+								},
+							},
+							["grupo"] = true,
+							["end_time"] = 1473912478,
+							["last_dps"] = 718168.145231291,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.002336,
+							["start_time"] = 1473912473,
+							["delay"] = 0,
+							["last_event"] = 1473912478,
 						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["serial"] = "Vehicle-0-3778-1220-1551-104595-00005A1E1B",
+							["damage_from"] = {
+								["Brineclaw"] = true,
+								["Clackbrine Snapper"] = true,
+							},
+							["targets"] = {
+								["Brineclaw"] = 2446443,
+								["Clackbrine Snapper"] = 1129436,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 3575879.004057,
+							["dps_started"] = false,
+							["total"] = 3575879.004057,
+							["classe"] = "PET",
+							["ownerName"] = "Emmarosa",
+							["nome"] = "Murky <Emmarosa>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[206957] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 1129436,
+										["targets"] = {
+											["Brineclaw"] = 2446443,
+											["Clackbrine Snapper"] = 1129436,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 3575879,
+										["n_min"] = 53944,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 3575879,
+										["c_max"] = 0,
+										["id"] = 206957,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 8,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1473912478,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 130219.004057,
+							["start_time"] = 1473912473,
+							["delay"] = 0,
+							["last_event"] = 1473912478,
+						}, -- [2]
+						{
+							["flag_original"] = 8465,
+							["serial"] = "Creature-0-3778-1220-1551-104607-00005A1EA4",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Brineclaw"] = 392000,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 392000.004289,
+							["dps_started"] = false,
+							["total"] = 392000.004289,
+							["classe"] = "PET",
+							["ownerName"] = "Emmarosa",
+							["nome"] = "Tufferfish <Emmarosa>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[179041] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 392000,
+										["targets"] = {
+											["Brineclaw"] = 392000,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 392000,
+										["n_min"] = 392000,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 392000,
+										["c_max"] = 0,
+										["id"] = 179041,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1473912478,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.004289,
+							["start_time"] = 1473912475,
+							["delay"] = 0,
+							["last_event"] = 1473912475,
+						}, -- [3]
 					},
 				}, -- [1]
 				{
+					["combatId"] = 97,
 					["tipo"] = 3,
-					["combatId"] = 45,
 					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorb"] = 0.006468,
-							["last_hps"] = 0,
-							["healing_from"] = {
-								["Emmarosa"] = true,
-							},
-							["targets"] = {
-								["Emmarosa"] = 48042,
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["totalover_without_pet"] = 0.006468,
-							["targets_overheal"] = {
-							},
-							["classe"] = "ROGUE",
-							["totalover"] = 0.006468,
-							["total_without_pet"] = 48042.006468,
-							["iniciar_hps"] = false,
-							["healing_taken"] = 48042.006468,
-							["fight_component"] = true,
-							["total"] = 48042.006468,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy_amt"] = 0,
-							["nome"] = "Emmarosa",
-							["spec"] = 261,
-							["grupo"] = true,
-							["end_time"] = 1473718876,
-							["heal_enemy"] = {
-							},
-							["spells"] = {
-								["_ActorTable"] = {
-									[158188] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 48042,
-										["targets"] = {
-											["Emmarosa"] = 48042,
-										},
-										["n_min"] = 48042,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 48042,
-										["c_max"] = 0,
-										["id"] = 158188,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["n_amt"] = 1,
-										["m_healed"] = 0,
-										["n_curado"] = 48042,
-										["c_min"] = 0,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["custom"] = 0,
-							["last_event"] = 1473718869,
-							["on_hold"] = false,
-							["start_time"] = 1473718869,
-							["serial"] = "Player-60-0A91880D",
-							["tipo"] = 2,
-						}, -- [1]
 					},
 				}, -- [2]
 				{
+					["combatId"] = 97,
 					["tipo"] = 7,
-					["combatId"] = 45,
 					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["resource"] = 11.003372,
-							["targets"] = {
-								["Emmarosa"] = 200,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 3,
-							["classe"] = "ROGUE",
-							["fight_component"] = true,
-							["total"] = 200.003372,
-							["nome"] = "Emmarosa",
-							["spec"] = 261,
-							["grupo"] = true,
-							["last_event"] = 1473719070,
-							["tipo"] = 3,
-							["received"] = 200.003372,
-							["spells"] = {
-								["_ActorTable"] = {
-									[98440] = {
-										["id"] = 98440,
-										["total"] = 80,
-										["targets"] = {
-											["Emmarosa"] = 80,
-										},
-										["counter"] = 2,
-									},
-									[196980] = {
-										["id"] = 196980,
-										["total"] = 120,
-										["targets"] = {
-											["Emmarosa"] = 120,
-										},
-										["counter"] = 4,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["serial"] = "Player-60-0A91880D",
-							["resource_type"] = 4,
-						}, -- [1]
 					},
 				}, -- [3]
 				{
+					["combatId"] = 97,
 					["tipo"] = 9,
-					["combatId"] = 45,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[196958] = {
-										["uptime"] = 2,
-										["activedamt"] = 0,
-										["id"] = 196958,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["pets"] = {
-							},
-							["buff_uptime"] = 19,
-							["grupo"] = true,
-							["tipo"] = 4,
-							["classe"] = "ROGUE",
-							["interrupt_spells"] = {
-								["_ActorTable"] = {
-									[1766] = {
-										["id"] = 1766,
-										["counter"] = 1,
-										["targets"] = {
-											["Thistleleaf Petalpeeler"] = 1,
-										},
-										["interrompeu_oque"] = {
-											[172714] = 1,
-										},
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[115192] = {
-										["uptime"] = 3,
-										["activedamt"] = 1,
-										["id"] = 115192,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[31665] = {
-										["uptime"] = 6,
-										["activedamt"] = 1,
-										["id"] = 31665,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[227151] = {
-										["uptime"] = 0,
-										["activedamt"] = 1,
-										["id"] = 227151,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[115191] = {
-										["uptime"] = 0,
-										["activedamt"] = 1,
-										["id"] = 115191,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[212283] = {
-										["uptime"] = 10,
-										["activedamt"] = 1,
-										["id"] = 212283,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["interrompeu_oque"] = {
-								[172714] = 1,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 2,
 							["buff_uptime_targets"] = {
 							},
+							["spec"] = 260,
+							["grupo"] = true,
+							["buff_uptime"] = 6,
 							["nome"] = "Emmarosa",
-							["interrupt"] = 1.003519,
-							["interrupt_targets"] = {
-								["Thistleleaf Petalpeeler"] = 1,
+							["pets"] = {
+								"Murky <Emmarosa>", -- [1]
+								"Tufferfish <Emmarosa>", -- [2]
 							},
-							["cc_break"] = 1.002337,
-							["spell_cast"] = {
-								[196819] = 2,
-								[53] = 3,
-								[1766] = 1,
-								[185438] = 2,
-							},
-							["cc_break_oque"] = {
-								[115191] = 1,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["last_event"] = 1473718876,
-							["spec"] = 261,
-							["cc_break_targets"] = {
-								["Emmarosa"] = 1,
-							},
-							["serial"] = "Player-60-0A91880D",
-							["cc_break_spells"] = {
+							["last_event"] = 1473912478,
+							["classe"] = "ROGUE",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
 								["_ActorTable"] = {
-									[185438] = {
-										["cc_break_oque"] = {
-											[115191] = 1,
-										},
-										["id"] = 185438,
+									[176151] = {
+										["uptime"] = 6,
+										["activedamt"] = 1,
+										["id"] = 176151,
+										["actived"] = false,
 										["targets"] = {
-											["Emmarosa"] = 1,
 										},
-										["cc_break"] = 1,
 										["counter"] = 0,
 									},
 								},
-								["tipo"] = 9,
 							},
+							["serial"] = "Player-60-0A91880D",
+							["tipo"] = 4,
 						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Emmarosa",
+							["nome"] = "Murky <Emmarosa>",
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["spell_cast"] = {
+								[206957] = 2,
+								[179062] = 1,
+							},
+							["serial"] = "Vehicle-0-3778-1220-1551-104595-00005A1E1B",
+							["last_event"] = 0,
+						}, -- [2]
+						{
+							["flag_original"] = 8465,
+							["ownerName"] = "Emmarosa",
+							["nome"] = "Tufferfish <Emmarosa>",
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["spell_cast"] = {
+								[179041] = 1,
+							},
+							["serial"] = "Creature-0-3778-1220-1551-104607-00005A1EA4",
+							["last_event"] = 0,
+						}, -- [3]
 					},
 				}, -- [4]
 				{
+					["combatId"] = 97,
 					["tipo"] = 2,
-					["combatId"] = 45,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -485,30 +288,30 @@ _detalhes_database = {
 				},
 				["last_events_tables"] = {
 				},
-				["enemy"] = "Thistleleaf Petalpeeler",
-				["combat_counter"] = 4297,
+				["enemy"] = "Brineclaw",
+				["combat_counter"] = 4443,
 				["playing_solo"] = true,
 				["totals"] = {
-					1036145.867413, -- [1]
-					48041.994508, -- [2]
+					3967878.988853, -- [1]
+					0, -- [2]
 					{
-						-0.0197080000000085, -- [1]
-						[0] = -0.0191060000003631,
-						[6] = -0.0507370000000158,
-						[3] = 199.992399,
+						0, -- [1]
+						[0] = 0,
+						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 1,
-						["interrupt"] = 0.995426,
 						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
 						["dispell"] = 0,
-						["cooldowns_defensive"] = -0.0183500000000001,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
-					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
 				},
 				["player_last_events"] = {
 				},
@@ -520,385 +323,320 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage"] = {
-						{
-							["Emmarosa"] = 2193428.011033,
-						}, -- [1]
-					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
-							["Emmarosa"] = 48042.006468,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
+					["damage"] = {
+						{
+							["Emmarosa"] = 3967879.002336,
+						}, -- [1]
+					},
 				},
-				["end_time"] = 2152884.039,
-				["TimeData"] = {
-				},
-				["combat_id"] = 45,
+				["end_time"] = 2346495.997,
+				["combat_id"] = 97,
 				["instance_type"] = "none",
-				["resincked"] = true,
-				["hasSaved"] = true,
 				["frags"] = {
-					["Thistleleaf Petalpeeler"] = 1,
+					["Brineclaw"] = 1,
+					["Clackbrine Snapper"] = 1,
 				},
-				["data_fim"] = "18:21:16",
-				["data_inicio"] = "18:21:07",
+				["data_fim"] = "00:08:00",
+				["data_inicio"] = "00:07:53",
 				["CombatSkillCache"] = {
 				},
-				["PlayerLeechTrinket"] = {
-				},
-				["start_time"] = 2152874.553,
-				["contra"] = "Thistleleaf Petalpeeler",
 				["totals_grupo"] = {
-					1036146, -- [1]
-					48042, -- [2]
+					0, -- [1]
+					0, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
 						[6] = 0,
-						[3] = 200,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 1,
-						["interrupt"] = 1,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
 						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
+				},
+				["start_time"] = 2346488.976,
+				["contra"] = "Brineclaw",
+				["TimeData"] = {
 				},
 			}, -- [1]
 			{
 				{
+					["combatId"] = 96,
 					["tipo"] = 2,
-					["combatId"] = 44,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1297,
+							["flag_original"] = 1300,
 							["damage_from"] = {
 							},
 							["targets"] = {
-								["Thistleleaf Petalpeeler"] = 942645,
+								["Clackbrine Pincer"] = 814713,
+								["Clackbrine Snapper"] = 3036444,
 							},
-							["delay"] = 0,
 							["pets"] = {
+								"Murky <Emmarosa>", -- [1]
+								"Tufferfish <Emmarosa>", -- [2]
 							},
-							["custom"] = 0,
-							["tipo"] = 1,
+							["on_hold"] = false,
 							["classe"] = "ROGUE",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 942645.006648,
-							["friendlyfire_total"] = 0,
+							["total_without_pet"] = 0.008626,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["dps_started"] = false,
-							["total"] = 942645.006648,
-							["damage_taken"] = 0.006648,
+							["end_time"] = 1473912456,
+							["friendlyfire_total"] = 0,
+							["spec"] = 260,
+							["nome"] = "Emmarosa",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
-									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 28032,
-										["g_amt"] = 0,
-										["n_max"] = 13437,
-										["targets"] = {
-											["Thistleleaf Petalpeeler"] = 67165,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 39133,
-										["n_min"] = 6428,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 67165,
-										["c_max"] = 28032,
-										["c_min"] = 28032,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["b_dmg"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["spellschool"] = 1,
-										["MISS"] = 2,
-									}, -- [1]
-									[196819] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 428371,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Thistleleaf Petalpeeler"] = 428371,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 428371,
-										["c_max"] = 428371,
-										["id"] = 196819,
-										["r_dmg"] = 0,
-										["c_min"] = 428371,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									[185438] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 207375,
-										["g_amt"] = 0,
-										["n_max"] = 110202,
-										["targets"] = {
-											["Thistleleaf Petalpeeler"] = 317577,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 110202,
-										["n_min"] = 110202,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 317577,
-										["c_max"] = 207375,
-										["id"] = 185438,
-										["r_dmg"] = 0,
-										["c_min"] = 207375,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									[53] = {
+								},
+							},
+							["grupo"] = true,
+							["total"] = 3851157.008626,
+							["serial"] = "Player-60-0A91880D",
+							["last_dps"] = 385115.7008626,
+							["custom"] = 0,
+							["last_event"] = 1473912449,
+							["damage_taken"] = 0.008626,
+							["start_time"] = 1473912444,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["serial"] = "Vehicle-0-3778-1220-1551-104595-00005A1E1B",
+							["damage_from"] = {
+								["Clackbrine Snapper"] = true,
+								["Clackbrine Pincer"] = true,
+							},
+							["targets"] = {
+								["Clackbrine Snapper"] = 2242069,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 2242069.002521,
+							["dps_started"] = false,
+							["total"] = 2242069.002521,
+							["classe"] = "PET",
+							["ownerName"] = "Emmarosa",
+							["nome"] = "Murky <Emmarosa>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[206957] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 64824,
+										["n_max"] = 1193764,
 										["targets"] = {
-											["Thistleleaf Petalpeeler"] = 129532,
+											["Clackbrine Snapper"] = 2242069,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 129532,
-										["n_min"] = 64708,
+										["n_dmg"] = 2242069,
+										["n_min"] = 1048305,
 										["g_dmg"] = 0,
 										["counter"] = 2,
-										["total"] = 129532,
+										["total"] = 2242069,
 										["c_max"] = 0,
-										["id"] = 53,
+										["id"] = 206957,
 										["r_dmg"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
 									},
 								},
-								["tipo"] = 2,
 							},
-							["nome"] = "Emmarosa",
-							["spec"] = 261,
-							["grupo"] = true,
-							["last_dps"] = 94264.5006648,
-							["end_time"] = 1473718847,
-							["colocacao"] = 1,
-							["last_event"] = 1473718847,
-							["on_hold"] = false,
-							["start_time"] = 1473718842,
-							["serial"] = "Player-60-0A91880D",
 							["friendlyfire"] = {
 							},
-						}, -- [1]
+							["end_time"] = 1473912456,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 437229.002521,
+							["start_time"] = 1473912455,
+							["delay"] = 1473912444,
+							["last_event"] = 1473912444,
+						}, -- [2]
+						{
+							["flag_original"] = 8465,
+							["serial"] = "Creature-0-3778-1220-1551-104607-00005A1E89",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Clackbrine Snapper"] = 794375,
+								["Clackbrine Pincer"] = 814713,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1609088.008328,
+							["dps_started"] = false,
+							["total"] = 1609088.008328,
+							["classe"] = "PET",
+							["ownerName"] = "Emmarosa",
+							["nome"] = "Tufferfish <Emmarosa>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[179041] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 453304,
+										["targets"] = {
+											["Clackbrine Snapper"] = 794375,
+											["Clackbrine Pincer"] = 814713,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1609088,
+										["n_min"] = 341071,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 1609088,
+										["c_max"] = 0,
+										["id"] = 179041,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1473912456,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.008328,
+							["start_time"] = 1473912449,
+							["delay"] = 0,
+							["last_event"] = 1473912449,
+						}, -- [3]
 					},
 				}, -- [1]
 				{
+					["combatId"] = 96,
 					["tipo"] = 3,
-					["combatId"] = 44,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
+					["combatId"] = 96,
 					["tipo"] = 7,
-					["combatId"] = 44,
 					["_ActorTable"] = {
-						{
-							["received"] = 70.006235,
-							["resource"] = 7.006235,
-							["targets"] = {
-								["Emmarosa"] = 70,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 3,
-							["classe"] = "ROGUE",
-							["resource_type"] = 4,
-							["nome"] = "Emmarosa",
-							["spells"] = {
-								["_ActorTable"] = {
-									[98440] = {
-										["id"] = 98440,
-										["total"] = 40,
-										["targets"] = {
-											["Emmarosa"] = 40,
-										},
-										["counter"] = 1,
-									},
-									[196980] = {
-										["id"] = 196980,
-										["total"] = 30,
-										["targets"] = {
-											["Emmarosa"] = 30,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["flag_original"] = 1297,
-							["tipo"] = 3,
-							["total"] = 70.006235,
-							["last_event"] = 1473718864,
-							["serial"] = "Player-60-0A91880D",
-							["spec"] = 261,
-						}, -- [1]
 					},
 				}, -- [3]
 				{
+					["combatId"] = 96,
 					["tipo"] = 9,
-					["combatId"] = 44,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[196958] = {
-										["uptime"] = 2,
-										["activedamt"] = 0,
-										["id"] = 196958,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 13,
-							["classe"] = "ROGUE",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[115191] = {
-										["uptime"] = 0,
-										["activedamt"] = 1,
-										["id"] = 115191,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[31665] = {
-										["uptime"] = 5,
-										["activedamt"] = 1,
-										["id"] = 31665,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[212283] = {
-										["uptime"] = 5,
-										["activedamt"] = 1,
-										["id"] = 212283,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[115192] = {
-										["uptime"] = 3,
-										["activedamt"] = 1,
-										["id"] = 115192,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["grupo"] = true,
-							["debuff_uptime"] = 2,
-							["tipo"] = 4,
-							["pets"] = {
-							},
 							["buff_uptime_targets"] = {
 							},
-							["spec"] = 261,
-							["cc_break"] = 1.005558,
-							["spell_cast"] = {
-								[196819] = 1,
-								[185438] = 2,
-								[53] = 2,
-							},
-							["cc_break_oque"] = {
-								[115191] = 1,
-							},
+							["spec"] = 260,
+							["grupo"] = true,
+							["buff_uptime"] = 13,
 							["nome"] = "Emmarosa",
-							["last_event"] = 1473718847,
-							["debuff_uptime_targets"] = {
+							["pets"] = {
+								"Murky <Emmarosa>", -- [1]
+								"Tufferfish <Emmarosa>", -- [2]
 							},
-							["cc_break_targets"] = {
-								["Emmarosa"] = 1,
-							},
-							["serial"] = "Player-60-0A91880D",
-							["cc_break_spells"] = {
+							["last_event"] = 1473912456,
+							["classe"] = "ROGUE",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
 								["_ActorTable"] = {
-									[185438] = {
-										["cc_break_oque"] = {
-											[115191] = 1,
-										},
-										["id"] = 185438,
+									[176151] = {
+										["uptime"] = 13,
+										["activedamt"] = 1,
+										["id"] = 176151,
+										["actived"] = false,
 										["targets"] = {
-											["Emmarosa"] = 1,
 										},
-										["cc_break"] = 1,
 										["counter"] = 0,
 									},
 								},
-								["tipo"] = 9,
 							},
+							["serial"] = "Player-60-0A91880D",
+							["tipo"] = 4,
 						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Emmarosa",
+							["nome"] = "Murky <Emmarosa>",
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["spell_cast"] = {
+								[179062] = 1,
+								[206955] = 1,
+								[206957] = 1,
+							},
+							["serial"] = "Vehicle-0-3778-1220-1551-104595-00005A1E1B",
+							["last_event"] = 0,
+						}, -- [2]
+						{
+							["flag_original"] = 8465,
+							["ownerName"] = "Emmarosa",
+							["nome"] = "Tufferfish <Emmarosa>",
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["spell_cast"] = {
+								[179041] = 1,
+							},
+							["serial"] = "Creature-0-3778-1220-1551-104607-00005A1E89",
+							["last_event"] = 0,
+						}, -- [3]
 					},
 				}, -- [4]
 				{
+					["combatId"] = 96,
 					["tipo"] = 2,
-					["combatId"] = 44,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -907,30 +645,30 @@ _detalhes_database = {
 				},
 				["last_events_tables"] = {
 				},
-				["enemy"] = "Thistleleaf Petalpeeler",
-				["combat_counter"] = 4296,
+				["enemy"] = "Clackbrine Pincer",
+				["combat_counter"] = 4442,
 				["playing_solo"] = true,
 				["totals"] = {
-					942644.979484, -- [1]
+					3851156.986633, -- [1]
 					0, -- [2]
 					{
-						-0.00366999999999962, -- [1]
+						0, -- [1]
 						[0] = 0,
 						[6] = 0,
-						[3] = 70,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 1,
-						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
 						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
-					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
 				},
 				["player_last_events"] = {
 				},
@@ -942,11 +680,6 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage"] = {
-						{
-							["Emmarosa"] = 942645.006648,
-						}, -- [1]
-					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -955,522 +688,307 @@ _detalhes_database = {
 					},
 					["damage_section"] = {
 					},
+					["damage"] = {
+						{
+							["Emmarosa"] = 3851157.008626,
+						}, -- [1]
+					},
 				},
-				["end_time"] = 2152855.282,
-				["combat_id"] = 44,
-				["TimeData"] = {
+				["end_time"] = 2346472.474,
+				["combat_id"] = 96,
+				["instance_type"] = "none",
+				["frags"] = {
+					["Clackbrine Pincer"] = 2,
+					["Clackbrine Snapper"] = 4,
+				},
+				["data_fim"] = "00:07:37",
+				["data_inicio"] = "00:07:24",
+				["CombatSkillCache"] = {
 				},
 				["totals_grupo"] = {
-					942645, -- [1]
+					0, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
 						[6] = 0,
-						[3] = 70,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 1,
-						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
 						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
 				},
-				["hasSaved"] = true,
-				["frags"] = {
-					["Thistleleaf Petalpeeler"] = 1,
+				["start_time"] = 2346459.264,
+				["contra"] = "Clackbrine Pincer",
+				["TimeData"] = {
 				},
-				["data_fim"] = "18:20:47",
-				["data_inicio"] = "18:20:42",
-				["CombatSkillCache"] = {
-				},
-				["PlayerLeechTrinket"] = {
-				},
-				["start_time"] = 2152850.158,
-				["contra"] = "Thistleleaf Petalpeeler",
-				["instance_type"] = "none",
 			}, -- [2]
 			{
 				{
+					["combatId"] = 95,
 					["tipo"] = 2,
-					["combatId"] = 43,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1297,
+							["flag_original"] = 1300,
 							["damage_from"] = {
-								["Thistleleaf Petalpeeler"] = true,
 							},
 							["targets"] = {
-								["Thistleleaf Petalpeeler"] = 739498,
+								["Clackbrine Snapper"] = 2035210,
 							},
-							["delay"] = 0,
 							["pets"] = {
+								"Murky <Emmarosa>", -- [1]
+								"Tufferfish <Emmarosa>", -- [2]
 							},
-							["custom"] = 0,
-							["tipo"] = 1,
+							["on_hold"] = false,
 							["classe"] = "ROGUE",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 739498.008087,
-							["friendlyfire_total"] = 0,
+							["total_without_pet"] = 0.006786,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["dps_started"] = false,
-							["total"] = 739498.008087,
-							["damage_taken"] = 99581.008087,
+							["end_time"] = 1473912433,
+							["friendlyfire_total"] = 0,
+							["spec"] = 260,
+							["nome"] = "Emmarosa",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
-									{
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 40075,
-										["g_amt"] = 0,
-										["n_max"] = 14028,
-										["targets"] = {
-											["Thistleleaf Petalpeeler"] = 67564,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 27489,
-										["n_min"] = 6682,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 67564,
-										["c_max"] = 26677,
-										["c_min"] = 13398,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["b_dmg"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["spellschool"] = 1,
-										["MISS"] = 1,
-									}, -- [1]
-									[185438] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 446531,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Thistleleaf Petalpeeler"] = 446531,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 446531,
-										["c_max"] = 226050,
-										["id"] = 185438,
-										["r_dmg"] = 0,
-										["c_min"] = 220481,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									[188456] = {
+								},
+							},
+							["grupo"] = true,
+							["total"] = 2035210.006786,
+							["serial"] = "Player-60-0A91880D",
+							["last_dps"] = 319549.380876537,
+							["custom"] = 0,
+							["last_event"] = 1473912433,
+							["damage_taken"] = 0.006786,
+							["start_time"] = 1473912428,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["serial"] = "Vehicle-0-3778-1220-1551-104595-00005A1E1B",
+							["damage_from"] = {
+								["Clackbrine Snapper"] = true,
+							},
+							["targets"] = {
+								["Clackbrine Snapper"] = 1575899,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1575899.003988,
+							["dps_started"] = false,
+							["total"] = 1575899.003988,
+							["classe"] = "PET",
+							["ownerName"] = "Emmarosa",
+							["nome"] = "Murky <Emmarosa>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[179021] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 14816,
+										["n_max"] = 467738,
 										["targets"] = {
-											["Thistleleaf Petalpeeler"] = 14816,
+											["Clackbrine Snapper"] = 1575899,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 14816,
-										["n_min"] = 14816,
+										["n_dmg"] = 1575899,
+										["n_min"] = 26772,
+										["g_dmg"] = 0,
+										["counter"] = 16,
+										["total"] = 1575899,
+										["c_max"] = 0,
+										["id"] = 179021,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 16,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1473912433,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 193238.003988,
+							["start_time"] = 1473912428,
+							["delay"] = 0,
+							["last_event"] = 1473912433,
+						}, -- [2]
+						{
+							["flag_original"] = 8465,
+							["serial"] = "Creature-0-3778-1220-1551-104607-00005A1E76",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Clackbrine Snapper"] = 459311,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 459311.008084,
+							["dps_started"] = false,
+							["total"] = 459311.008084,
+							["classe"] = "PET",
+							["ownerName"] = "Emmarosa",
+							["nome"] = "Tufferfish <Emmarosa>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[179041] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 459311,
+										["targets"] = {
+											["Clackbrine Snapper"] = 459311,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 459311,
+										["n_min"] = 459311,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 14816,
+										["total"] = 459311,
 										["c_max"] = 0,
-										["id"] = 188456,
+										["id"] = 179041,
 										["r_dmg"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
-									},
-									[195452] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 114495,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Thistleleaf Petalpeeler"] = 114495,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 114495,
-										["c_max"] = 114495,
-										["id"] = 195452,
-										["r_dmg"] = 0,
-										["c_min"] = 114495,
 										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["spellschool"] = 32,
-									},
-									[53] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 96092,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Thistleleaf Petalpeeler"] = 96092,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 96092,
-										["c_max"] = 96092,
-										["id"] = 53,
-										["r_dmg"] = 0,
-										["c_min"] = 96092,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
+										["c_min"] = 0,
 									},
 								},
-								["tipo"] = 2,
 							},
-							["nome"] = "Emmarosa",
-							["spec"] = 261,
-							["grupo"] = true,
-							["last_dps"] = 73949.8008087,
-							["end_time"] = 1473718840,
-							["colocacao"] = 1,
-							["last_event"] = 1473718838,
-							["on_hold"] = false,
-							["start_time"] = 1473718834,
-							["serial"] = "Player-60-0A91880D",
 							["friendlyfire"] = {
 							},
-						}, -- [1]
+							["end_time"] = 1473912433,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.008084,
+							["start_time"] = 1473912430,
+							["delay"] = 0,
+							["last_event"] = 1473912430,
+						}, -- [3]
 					},
 				}, -- [1]
 				{
+					["combatId"] = 95,
 					["tipo"] = 3,
-					["combatId"] = 43,
 					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorb"] = 0.005982,
-							["last_hps"] = 0,
-							["targets_overheal"] = {
-							},
-							["targets"] = {
-								["Emmarosa"] = 48042,
-							},
-							["total"] = 48042.005982,
-							["pets"] = {
-							},
-							["totalover_without_pet"] = 0.005982,
-							["healing_from"] = {
-								["Emmarosa"] = true,
-							},
-							["classe"] = "ROGUE",
-							["totalover"] = 0.005982,
-							["total_without_pet"] = 48042.005982,
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["fight_component"] = true,
-							["end_time"] = 1473718840,
-							["healing_taken"] = 48042.005982,
-							["spec"] = 261,
-							["nome"] = "Emmarosa",
-							["spells"] = {
-								["_ActorTable"] = {
-									[158188] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 48042,
-										["targets"] = {
-											["Emmarosa"] = 48042,
-										},
-										["n_min"] = 48042,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 48042,
-										["c_max"] = 0,
-										["id"] = 158188,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["n_amt"] = 1,
-										["m_healed"] = 0,
-										["n_curado"] = 48042,
-										["c_min"] = 0,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["last_event"] = 1473718837,
-							["heal_enemy"] = {
-							},
-							["targets_absorbs"] = {
-							},
-							["custom"] = 0,
-							["tipo"] = 2,
-							["on_hold"] = false,
-							["start_time"] = 1473718837,
-							["serial"] = "Player-60-0A91880D",
-							["delay"] = 0,
-						}, -- [1]
 					},
 				}, -- [2]
 				{
+					["combatId"] = 95,
 					["tipo"] = 7,
-					["combatId"] = 43,
 					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["resource"] = 6.008559,
-							["targets"] = {
-								["Emmarosa"] = 70,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 3,
-							["classe"] = "ROGUE",
-							["fight_component"] = true,
-							["total"] = 70.008559,
-							["nome"] = "Emmarosa",
-							["spec"] = 261,
-							["grupo"] = true,
-							["last_event"] = 1473718841,
-							["tipo"] = 3,
-							["received"] = 70.008559,
-							["spells"] = {
-								["_ActorTable"] = {
-									[98440] = {
-										["id"] = 98440,
-										["total"] = 40,
-										["targets"] = {
-											["Emmarosa"] = 40,
-										},
-										["counter"] = 1,
-									},
-									[196980] = {
-										["id"] = 196980,
-										["total"] = 30,
-										["targets"] = {
-											["Emmarosa"] = 30,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["serial"] = "Player-60-0A91880D",
-							["resource_type"] = 4,
-						}, -- [1]
 					},
 				}, -- [3]
 				{
+					["combatId"] = 95,
 					["tipo"] = 9,
-					["combatId"] = 43,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[206760] = {
-										["uptime"] = 3,
-										["activedamt"] = 0,
-										["id"] = 206760,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[195452] = {
-										["uptime"] = 3,
-										["activedamt"] = 0,
-										["id"] = 195452,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[196958] = {
-										["uptime"] = 2,
-										["activedamt"] = 0,
-										["id"] = 196958,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["pets"] = {
-							},
-							["buff_uptime"] = 15,
-							["grupo"] = true,
-							["tipo"] = 4,
-							["classe"] = "ROGUE",
-							["interrupt_spells"] = {
-								["_ActorTable"] = {
-									[1766] = {
-										["id"] = 1766,
-										["counter"] = 1,
-										["targets"] = {
-											["Thistleleaf Petalpeeler"] = 1,
-										},
-										["interrompeu_oque"] = {
-											[172714] = 1,
-										},
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[115192] = {
-										["uptime"] = 3,
-										["activedamt"] = 1,
-										["id"] = 115192,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[31665] = {
-										["uptime"] = 6,
-										["activedamt"] = 1,
-										["id"] = 31665,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[227151] = {
-										["uptime"] = 0,
-										["activedamt"] = 1,
-										["id"] = 227151,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[115191] = {
-										["uptime"] = 0,
-										["activedamt"] = 1,
-										["id"] = 115191,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[212283] = {
-										["uptime"] = 6,
-										["activedamt"] = 1,
-										["id"] = 212283,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["interrompeu_oque"] = {
-								[172714] = 1,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 8,
 							["buff_uptime_targets"] = {
 							},
+							["spec"] = 260,
+							["grupo"] = true,
+							["buff_uptime"] = 6,
 							["nome"] = "Emmarosa",
-							["interrupt"] = 1.007782,
-							["interrupt_targets"] = {
-								["Thistleleaf Petalpeeler"] = 1,
+							["pets"] = {
+								"Murky <Emmarosa>", -- [1]
+								"Tufferfish <Emmarosa>", -- [2]
 							},
-							["cc_break"] = 1.004233,
-							["spell_cast"] = {
-								[185438] = 2,
-								[195452] = 1,
-								[1766] = 1,
-								[53] = 1,
-							},
-							["cc_break_oque"] = {
-								[115191] = 1,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["last_event"] = 1473718840,
-							["spec"] = 261,
-							["cc_break_targets"] = {
-								["Emmarosa"] = 1,
-							},
-							["serial"] = "Player-60-0A91880D",
-							["cc_break_spells"] = {
+							["last_event"] = 1473912433,
+							["classe"] = "ROGUE",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
 								["_ActorTable"] = {
-									[185438] = {
-										["cc_break_oque"] = {
-											[115191] = 1,
-										},
-										["id"] = 185438,
+									[176151] = {
+										["uptime"] = 6,
+										["activedamt"] = 1,
+										["id"] = 176151,
+										["actived"] = false,
 										["targets"] = {
-											["Emmarosa"] = 1,
 										},
-										["cc_break"] = 1,
 										["counter"] = 0,
 									},
 								},
-								["tipo"] = 9,
 							},
+							["serial"] = "Player-60-0A91880D",
+							["tipo"] = 4,
 						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Emmarosa",
+							["nome"] = "Murky <Emmarosa>",
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["spell_cast"] = {
+								[179021] = 1,
+								[179062] = 1,
+							},
+							["serial"] = "Vehicle-0-3778-1220-1551-104595-00005A1E1B",
+							["last_event"] = 0,
+						}, -- [2]
+						{
+							["flag_original"] = 8465,
+							["ownerName"] = "Emmarosa",
+							["nome"] = "Tufferfish <Emmarosa>",
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["spell_cast"] = {
+								[179041] = 1,
+							},
+							["serial"] = "Creature-0-3778-1220-1551-104607-00005A1E76",
+							["last_event"] = 0,
+						}, -- [3]
 					},
 				}, -- [4]
 				{
+					["combatId"] = 95,
 					["tipo"] = 2,
-					["combatId"] = 43,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -1479,30 +997,30 @@ _detalhes_database = {
 				},
 				["last_events_tables"] = {
 				},
-				["enemy"] = "Thistleleaf Petalpeeler",
-				["combat_counter"] = 4295,
+				["enemy"] = "Clackbrine Snapper",
+				["combat_counter"] = 4441,
 				["playing_solo"] = true,
 				["totals"] = {
-					739497.945649, -- [1]
-					48041.970579, -- [2]
+					2035209.994568, -- [1]
+					0, -- [2]
 					{
-						-0.0100610000000021, -- [1]
+						0, -- [1]
 						[0] = 0,
 						[6] = 0,
-						[3] = 70,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 1,
-						["interrupt"] = 1,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
 						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
-					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
 				},
 				["player_last_events"] = {
 				},
@@ -1514,414 +1032,314 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage"] = {
-						{
-							["Emmarosa"] = 739498.008087,
-						}, -- [1]
-					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
-							["Emmarosa"] = 48042.005982,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
+					["damage"] = {
+						{
+							["Emmarosa"] = 2035210.006786,
+						}, -- [1]
+					},
 				},
-				["end_time"] = 2152847.904,
-				["combat_id"] = 43,
-				["TimeData"] = {
+				["end_time"] = 2346449.967,
+				["combat_id"] = 95,
+				["instance_type"] = "none",
+				["frags"] = {
+					["Clackbrine Snapper"] = 3,
+				},
+				["data_fim"] = "00:07:14",
+				["data_inicio"] = "00:07:08",
+				["CombatSkillCache"] = {
 				},
 				["totals_grupo"] = {
-					739498, -- [1]
-					48042, -- [2]
+					0, -- [1]
+					0, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
 						[6] = 0,
-						[3] = 70,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 1,
-						["interrupt"] = 1,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
 						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
 				},
-				["hasSaved"] = true,
-				["frags"] = {
-					["Bay Thresher"] = 1,
-					["Thistleleaf Petalpeeler"] = 2,
-					["Thistleleaf Lilydancer"] = 1,
+				["start_time"] = 2346443.427,
+				["contra"] = "Clackbrine Snapper",
+				["TimeData"] = {
 				},
-				["data_fim"] = "18:20:40",
-				["data_inicio"] = "18:20:35",
-				["CombatSkillCache"] = {
-				},
-				["PlayerLeechTrinket"] = {
-				},
-				["start_time"] = 2152842.491,
-				["contra"] = "Thistleleaf Petalpeeler",
-				["instance_type"] = "none",
 			}, -- [3]
 			{
 				{
+					["combatId"] = 94,
 					["tipo"] = 2,
-					["combatId"] = 42,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1297,
+							["flag_original"] = 1300,
 							["damage_from"] = {
-								["Thistleleaf Petalpeeler"] = true,
 							},
 							["targets"] = {
-								["Thistleleaf Petalpeeler"] = 783156,
+								["Tufferfish"] = 3270028,
 							},
-							["delay"] = 0,
 							["pets"] = {
+								"Murky <Emmarosa>", -- [1]
+								"Pufferfish <Emmarosa>", -- [2]
 							},
-							["custom"] = 0,
-							["tipo"] = 1,
+							["on_hold"] = false,
 							["classe"] = "ROGUE",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 783156.005503,
-							["friendlyfire_total"] = 0,
+							["total_without_pet"] = 0.006468,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["dps_started"] = false,
-							["total"] = 783156.005503,
-							["damage_taken"] = 46314.005503,
+							["end_time"] = 1473912423,
+							["friendlyfire_total"] = 0,
+							["spec"] = 260,
+							["nome"] = "Emmarosa",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
-									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 12871,
-										["g_amt"] = 0,
-										["n_max"] = 6885,
-										["targets"] = {
-											["Thistleleaf Petalpeeler"] = 26214,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 13343,
-										["n_min"] = 6458,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 26214,
-										["c_max"] = 12871,
-										["c_min"] = 12871,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["b_dmg"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["spellschool"] = 1,
-										["MISS"] = 2,
-									}, -- [1]
-									[185438] = {
-										["c_amt"] = 3,
-										["b_amt"] = 0,
-										["c_dmg"] = 640889,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Thistleleaf Petalpeeler"] = 640889,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 640889,
-										["c_max"] = 225697,
-										["id"] = 185438,
-										["r_dmg"] = 0,
-										["c_min"] = 207120,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									[53] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 101238,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Thistleleaf Petalpeeler"] = 101238,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 101238,
-										["c_max"] = 101238,
-										["id"] = 53,
-										["r_dmg"] = 0,
-										["c_min"] = 101238,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									[188456] = {
+								},
+							},
+							["grupo"] = true,
+							["total"] = 3270028.006468,
+							["serial"] = "Player-60-0A91880D",
+							["last_dps"] = 204376.75040425,
+							["custom"] = 0,
+							["last_event"] = 1473912418,
+							["damage_taken"] = 0.006468,
+							["start_time"] = 1473912402,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["serial"] = "Vehicle-0-3778-1220-1551-104595-00005A1E1B",
+							["damage_from"] = {
+								["Tufferfish"] = true,
+							},
+							["targets"] = {
+								["Tufferfish"] = 3042625,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 3042625.008269,
+							["dps_started"] = false,
+							["total"] = 3042625.008269,
+							["classe"] = "PET",
+							["ownerName"] = "Emmarosa",
+							["nome"] = "Murky <Emmarosa>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[179021] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 14815,
+										["n_max"] = 430849,
 										["targets"] = {
-											["Thistleleaf Petalpeeler"] = 14815,
+											["Tufferfish"] = 3042625,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 14815,
-										["n_min"] = 14815,
+										["n_dmg"] = 3042625,
+										["n_min"] = 26962,
+										["g_dmg"] = 0,
+										["counter"] = 28,
+										["total"] = 3042625,
+										["c_max"] = 0,
+										["id"] = 179021,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 28,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1473912423,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 125136.008269,
+							["start_time"] = 1473912402,
+							["delay"] = 0,
+							["last_event"] = 1473912418,
+						}, -- [2]
+						{
+							["flag_original"] = 8465,
+							["serial"] = "Creature-0-3778-1220-1551-89629-00005A1E6A",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Tufferfish"] = 227403,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 227403.005084,
+							["dps_started"] = false,
+							["total"] = 227403.005084,
+							["classe"] = "PET",
+							["ownerName"] = "Emmarosa",
+							["nome"] = "Pufferfish <Emmarosa>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[179041] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 227403,
+										["targets"] = {
+											["Tufferfish"] = 227403,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 227403,
+										["n_min"] = 227403,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 14815,
+										["total"] = 227403,
 										["c_max"] = 0,
-										["id"] = 188456,
+										["id"] = 179041,
 										["r_dmg"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
+										["r_amt"] = 0,
+										["c_min"] = 0,
 									},
 								},
-								["tipo"] = 2,
 							},
-							["nome"] = "Emmarosa",
-							["spec"] = 261,
-							["grupo"] = true,
-							["last_dps"] = 78315.6005503,
-							["end_time"] = 1473718827,
-							["colocacao"] = 1,
-							["last_event"] = 1473718826,
-							["on_hold"] = false,
-							["start_time"] = 1473718822,
-							["serial"] = "Player-60-0A91880D",
 							["friendlyfire"] = {
 							},
-						}, -- [1]
+							["end_time"] = 1473912423,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.005084,
+							["start_time"] = 1473912418,
+							["delay"] = 0,
+							["last_event"] = 1473912418,
+						}, -- [3]
 					},
 				}, -- [1]
 				{
+					["combatId"] = 94,
 					["tipo"] = 3,
-					["combatId"] = 42,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
+					["combatId"] = 94,
 					["tipo"] = 7,
-					["combatId"] = 42,
 					["_ActorTable"] = {
-						{
-							["received"] = 70.002972,
-							["resource"] = 6.002972,
-							["targets"] = {
-								["Emmarosa"] = 70,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 3,
-							["classe"] = "ROGUE",
-							["resource_type"] = 4,
-							["nome"] = "Emmarosa",
-							["spells"] = {
-								["_ActorTable"] = {
-									[98440] = {
-										["id"] = 98440,
-										["total"] = 40,
-										["targets"] = {
-											["Emmarosa"] = 40,
-										},
-										["counter"] = 1,
-									},
-									[196980] = {
-										["id"] = 196980,
-										["total"] = 30,
-										["targets"] = {
-											["Emmarosa"] = 30,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["flag_original"] = 1297,
-							["tipo"] = 3,
-							["total"] = 70.002972,
-							["last_event"] = 1473718829,
-							["serial"] = "Player-60-0A91880D",
-							["spec"] = 261,
-						}, -- [1]
 					},
 				}, -- [3]
 				{
+					["combatId"] = 94,
 					["tipo"] = 9,
-					["combatId"] = 42,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[206760] = {
-										["uptime"] = 1,
-										["activedamt"] = 0,
-										["id"] = 206760,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[195452] = {
-										["uptime"] = 1,
-										["activedamt"] = 0,
-										["id"] = 195452,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[196958] = {
-										["uptime"] = 2,
-										["activedamt"] = 0,
-										["id"] = 196958,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 13,
-							["classe"] = "ROGUE",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[115192] = {
-										["uptime"] = 3,
-										["activedamt"] = 1,
-										["id"] = 115192,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[31665] = {
-										["uptime"] = 5,
-										["activedamt"] = 1,
-										["id"] = 31665,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[227151] = {
-										["uptime"] = 0,
-										["activedamt"] = 1,
-										["id"] = 227151,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[115191] = {
-										["uptime"] = 0,
-										["activedamt"] = 1,
-										["id"] = 115191,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[212283] = {
-										["uptime"] = 5,
-										["activedamt"] = 1,
-										["id"] = 212283,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["grupo"] = true,
-							["debuff_uptime"] = 4,
-							["tipo"] = 4,
-							["cc_break_spells"] = {
-								["_ActorTable"] = {
-									[185438] = {
-										["cc_break_oque"] = {
-											[115191] = 1,
-										},
-										["id"] = 185438,
-										["targets"] = {
-											["Emmarosa"] = 1,
-										},
-										["cc_break"] = 1,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
 							["buff_uptime_targets"] = {
 							},
-							["spec"] = 261,
-							["cc_break"] = 1.005908,
-							["spell_cast"] = {
-								[185438] = 2,
-								[53] = 1,
-								[195452] = 1,
-							},
-							["cc_break_oque"] = {
-								[115191] = 1,
-							},
+							["spec"] = 260,
+							["grupo"] = true,
+							["buff_uptime"] = 21,
 							["nome"] = "Emmarosa",
-							["last_event"] = 1473718827,
-							["debuff_uptime_targets"] = {
+							["pets"] = {
+								"Murky <Emmarosa>", -- [1]
+								"Pufferfish <Emmarosa>", -- [2]
 							},
-							["cc_break_targets"] = {
-								["Emmarosa"] = 1,
+							["last_event"] = 1473912423,
+							["classe"] = "ROGUE",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[176151] = {
+										["uptime"] = 21,
+										["activedamt"] = 1,
+										["id"] = 176151,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+								},
 							},
 							["serial"] = "Player-60-0A91880D",
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Emmarosa",
+							["nome"] = "Murky <Emmarosa>",
 							["pets"] = {
 							},
-						}, -- [1]
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["spell_cast"] = {
+								[179021] = 3,
+								[179023] = 1,
+							},
+							["serial"] = "Vehicle-0-3778-1220-1551-104595-00005A1E1B",
+							["last_event"] = 0,
+						}, -- [2]
+						{
+							["flag_original"] = 8465,
+							["ownerName"] = "Emmarosa",
+							["nome"] = "Pufferfish <Emmarosa>",
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["spell_cast"] = {
+								[179041] = 1,
+							},
+							["serial"] = "Creature-0-3778-1220-1551-89629-00005A1E6A",
+							["last_event"] = 0,
+						}, -- [3]
 					},
 				}, -- [4]
 				{
+					["combatId"] = 94,
 					["tipo"] = 2,
-					["combatId"] = 42,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -1930,30 +1348,30 @@ _detalhes_database = {
 				},
 				["last_events_tables"] = {
 				},
-				["enemy"] = "Thistleleaf Petalpeeler",
-				["combat_counter"] = 4294,
+				["enemy"] = "Tufferfish",
+				["combat_counter"] = 4440,
 				["playing_solo"] = true,
 				["totals"] = {
-					783155.954712, -- [1]
-					-0.0218770000004466, -- [2]
+					3270027.996357, -- [1]
+					0, -- [2]
 					{
-						-0.009066, -- [1]
+						0, -- [1]
 						[0] = 0,
 						[6] = 0,
-						[3] = 70,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 1,
-						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
 						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
-					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
 				},
 				["player_last_events"] = {
 				},
@@ -1965,11 +1383,6 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage"] = {
-						{
-							["Emmarosa"] = 783156.005503,
-						}, -- [1]
-					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -1978,449 +1391,306 @@ _detalhes_database = {
 					},
 					["damage_section"] = {
 					},
+					["damage"] = {
+						{
+							["Emmarosa"] = 3270028.006468,
+						}, -- [1]
+					},
 				},
-				["end_time"] = 2152835.317,
-				["combat_id"] = 42,
-				["TimeData"] = {
+				["end_time"] = 2346439.809,
+				["combat_id"] = 94,
+				["instance_type"] = "none",
+				["frags"] = {
+					["Tufferfish"] = 3,
+				},
+				["data_fim"] = "00:07:04",
+				["data_inicio"] = "00:06:43",
+				["CombatSkillCache"] = {
 				},
 				["totals_grupo"] = {
-					783156, -- [1]
+					0, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
 						[6] = 0,
-						[3] = 70,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 1,
-						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
 						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
 				},
-				["hasSaved"] = true,
-				["frags"] = {
-					["Thistleleaf Petalpeeler"] = 1,
+				["start_time"] = 2346419.043,
+				["TimeData"] = {
 				},
-				["data_fim"] = "18:20:28",
-				["data_inicio"] = "18:20:22",
-				["CombatSkillCache"] = {
-				},
-				["PlayerLeechTrinket"] = {
-				},
-				["start_time"] = 2152830.265,
-				["contra"] = "Thistleleaf Petalpeeler",
-				["instance_type"] = "none",
+				["pvp"] = true,
 			}, -- [4]
 			{
 				{
+					["combatId"] = 93,
 					["tipo"] = 2,
-					["combatId"] = 41,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1297,
+							["flag_original"] = 1300,
 							["damage_from"] = {
-								["Thistleleaf Twigsnapper"] = true,
 							},
 							["targets"] = {
-								["Thistleleaf Twigsnapper"] = 1060840,
+								["Tufferfish"] = 1121519,
 							},
-							["delay"] = 0,
 							["pets"] = {
+								"Murky <Emmarosa>", -- [1]
+								"Pufferfish <Emmarosa>", -- [2]
 							},
-							["custom"] = 0,
-							["tipo"] = 1,
+							["on_hold"] = false,
 							["classe"] = "ROGUE",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 1060840.005787,
-							["friendlyfire_total"] = 0,
+							["total_without_pet"] = 0.006673,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["dps_started"] = false,
-							["total"] = 1060840.005787,
-							["damage_taken"] = 47415.005787,
+							["end_time"] = 1473912399,
+							["friendlyfire_total"] = 0,
+							["spec"] = 260,
+							["nome"] = "Emmarosa",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
-									{
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 53050,
-										["g_amt"] = 0,
-										["n_max"] = 13373,
-										["targets"] = {
-											["Thistleleaf Twigsnapper"] = 81380,
-											["Thistleleaf Petalpeeler"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 28330,
-										["n_min"] = 7049,
-										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 81380,
-										["c_max"] = 26682,
-										["c_min"] = 26368,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["b_dmg"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["spellschool"] = 1,
-										["MISS"] = 4,
-									}, -- [1]
-									[188456] = {
+								},
+							},
+							["grupo"] = true,
+							["total"] = 1121519.006673,
+							["serial"] = "Player-60-0A91880D",
+							["last_dps"] = 231288.720703108,
+							["custom"] = 0,
+							["last_event"] = 1473912398,
+							["damage_taken"] = 0.006673,
+							["start_time"] = 1473912393,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["serial"] = "Vehicle-0-3778-1220-1551-104595-00005A1E1B",
+							["damage_from"] = {
+								["Tufferfish"] = true,
+							},
+							["targets"] = {
+								["Tufferfish"] = 828029,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 828029.003598,
+							["dps_started"] = false,
+							["total"] = 828029.003598,
+							["classe"] = "PET",
+							["ownerName"] = "Emmarosa",
+							["nome"] = "Murky <Emmarosa>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[179021] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 14816,
+										["n_max"] = 372945,
 										["targets"] = {
-											["Thistleleaf Twigsnapper"] = 14816,
+											["Tufferfish"] = 828029,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 14816,
-										["n_min"] = 14816,
+										["n_dmg"] = 828029,
+										["n_min"] = 28464,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 828029,
+										["c_max"] = 0,
+										["id"] = 179021,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 6,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1473912399,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 50446.003598,
+							["start_time"] = 1473912393,
+							["delay"] = 0,
+							["last_event"] = 1473912398,
+						}, -- [2]
+						{
+							["flag_original"] = 8465,
+							["serial"] = "Creature-0-3778-1220-1551-89629-0000DA1E56",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Tufferfish"] = 293490,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 293490.008414,
+							["dps_started"] = false,
+							["total"] = 293490.008414,
+							["classe"] = "PET",
+							["ownerName"] = "Emmarosa",
+							["nome"] = "Pufferfish <Emmarosa>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[179041] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 293490,
+										["targets"] = {
+											["Tufferfish"] = 293490,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 293490,
+										["n_min"] = 293490,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 14816,
+										["total"] = 293490,
 										["c_max"] = 0,
-										["id"] = 188456,
+										["id"] = 179041,
 										["r_dmg"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
-									},
-									[195452] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 57248,
-										["targets"] = {
-											["Thistleleaf Twigsnapper"] = 114495,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 114495,
-										["n_min"] = 57247,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 114495,
-										["c_max"] = 0,
-										["id"] = 195452,
-										["r_dmg"] = 0,
+										["r_amt"] = 0,
 										["c_min"] = 0,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 32,
-									},
-									[196819] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 514045,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Thistleleaf Twigsnapper"] = 514045,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 514045,
-										["c_max"] = 514045,
-										["id"] = 196819,
-										["r_dmg"] = 0,
-										["c_min"] = 514045,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									[185438] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 112005,
-										["targets"] = {
-											["Thistleleaf Twigsnapper"] = 222226,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 222226,
-										["n_min"] = 110221,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 222226,
-										["c_max"] = 0,
-										["id"] = 185438,
-										["r_dmg"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									[53] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 62732,
-										["targets"] = {
-											["Thistleleaf Twigsnapper"] = 113878,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 113878,
-										["n_min"] = 51146,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 113878,
-										["c_max"] = 0,
-										["id"] = 53,
-										["r_dmg"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
 									},
 								},
-								["tipo"] = 2,
 							},
-							["nome"] = "Emmarosa",
-							["spec"] = 261,
-							["grupo"] = true,
-							["last_dps"] = 106084.0005787,
-							["end_time"] = 1473718818,
-							["colocacao"] = 1,
-							["last_event"] = 1473718822,
-							["on_hold"] = false,
-							["start_time"] = 1473718812,
-							["serial"] = "Player-60-0A91880D",
 							["friendlyfire"] = {
 							},
-						}, -- [1]
+							["end_time"] = 1473912399,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.008414,
+							["start_time"] = 1473912398,
+							["delay"] = 0,
+							["last_event"] = 1473912398,
+						}, -- [3]
 					},
 				}, -- [1]
 				{
+					["combatId"] = 93,
 					["tipo"] = 3,
-					["combatId"] = 41,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
+					["combatId"] = 93,
 					["tipo"] = 7,
-					["combatId"] = 41,
 					["_ActorTable"] = {
-						{
-							["received"] = 110.005849,
-							["resource"] = 9.005849,
-							["targets"] = {
-								["Emmarosa"] = 110,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 3,
-							["classe"] = "ROGUE",
-							["resource_type"] = 4,
-							["nome"] = "Emmarosa",
-							["spells"] = {
-								["_ActorTable"] = {
-									[98440] = {
-										["id"] = 98440,
-										["total"] = 80,
-										["targets"] = {
-											["Emmarosa"] = 80,
-										},
-										["counter"] = 2,
-									},
-									[196980] = {
-										["id"] = 196980,
-										["total"] = 30,
-										["targets"] = {
-											["Emmarosa"] = 30,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["flag_original"] = 1297,
-							["tipo"] = 3,
-							["total"] = 110.005849,
-							["last_event"] = 1473718822,
-							["serial"] = "Player-60-0A91880D",
-							["spec"] = 261,
-						}, -- [1]
 					},
 				}, -- [3]
 				{
+					["combatId"] = 93,
 					["tipo"] = 9,
-					["combatId"] = 41,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[206760] = {
-										["uptime"] = 5,
-										["activedamt"] = 0,
-										["id"] = 206760,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[195452] = {
-										["uptime"] = 5,
-										["activedamt"] = 0,
-										["id"] = 195452,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[196958] = {
-										["uptime"] = 3,
-										["activedamt"] = 0,
-										["id"] = 196958,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 15,
-							["classe"] = "ROGUE",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[115191] = {
-										["uptime"] = 0,
-										["activedamt"] = 1,
-										["id"] = 115191,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[31665] = {
-										["uptime"] = 6,
-										["activedamt"] = 1,
-										["id"] = 31665,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[212283] = {
-										["uptime"] = 6,
-										["activedamt"] = 1,
-										["id"] = 212283,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[115192] = {
-										["uptime"] = 3,
-										["activedamt"] = 1,
-										["id"] = 115192,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["grupo"] = true,
-							["debuff_uptime"] = 13,
-							["tipo"] = 4,
-							["pets"] = {
-							},
 							["buff_uptime_targets"] = {
 							},
-							["spec"] = 261,
-							["cc_break"] = 1.001117,
-							["spell_cast"] = {
-								[196819] = 1,
-								[185438] = 2,
-								[53] = 2,
-								[195452] = 1,
-							},
-							["cc_break_oque"] = {
-								[115191] = 1,
-							},
+							["spec"] = 260,
+							["grupo"] = true,
+							["buff_uptime"] = 6,
 							["nome"] = "Emmarosa",
-							["last_event"] = 1473718818,
-							["debuff_uptime_targets"] = {
+							["pets"] = {
+								"Murky <Emmarosa>", -- [1]
+								"Pufferfish <Emmarosa>", -- [2]
 							},
-							["cc_break_targets"] = {
-								["Emmarosa"] = 1,
-							},
-							["serial"] = "Player-60-0A91880D",
-							["cc_break_spells"] = {
+							["last_event"] = 1473912399,
+							["classe"] = "ROGUE",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
 								["_ActorTable"] = {
-									[185438] = {
-										["cc_break_oque"] = {
-											[115191] = 1,
-										},
-										["id"] = 185438,
+									[176151] = {
+										["uptime"] = 6,
+										["activedamt"] = 1,
+										["id"] = 176151,
+										["actived"] = false,
 										["targets"] = {
-											["Emmarosa"] = 1,
 										},
-										["cc_break"] = 1,
 										["counter"] = 0,
 									},
 								},
-								["tipo"] = 9,
 							},
+							["serial"] = "Player-60-0A91880D",
+							["tipo"] = 4,
 						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Emmarosa",
+							["nome"] = "Murky <Emmarosa>",
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["spell_cast"] = {
+								[179023] = 1,
+								[179021] = 1,
+							},
+							["serial"] = "Vehicle-0-3778-1220-1551-104595-00005A1E1B",
+							["last_event"] = 0,
+						}, -- [2]
+						{
+							["flag_original"] = 8465,
+							["ownerName"] = "Emmarosa",
+							["nome"] = "Pufferfish <Emmarosa>",
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["spell_cast"] = {
+								[179041] = 1,
+							},
+							["serial"] = "Creature-0-3778-1220-1551-89629-0000DA1E56",
+							["last_event"] = 0,
+						}, -- [3]
 					},
 				}, -- [4]
 				{
+					["combatId"] = 93,
 					["tipo"] = 2,
-					["combatId"] = 41,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -2429,30 +1699,30 @@ _detalhes_database = {
 				},
 				["last_events_tables"] = {
 				},
-				["enemy"] = "Thistleleaf Twigsnapper",
-				["combat_counter"] = 4293,
+				["enemy"] = "Tufferfish",
+				["combat_counter"] = 4439,
 				["playing_solo"] = true,
 				["totals"] = {
-					1060839.971142, -- [1]
-					-0.00827799999933632, -- [2]
+					1121518.993631, -- [1]
+					0, -- [2]
 					{
-						-0.001282, -- [1]
+						0, -- [1]
 						[0] = 0,
 						[6] = 0,
-						[3] = 110,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 1,
-						["interrupt"] = -0.00880600000000009,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
 						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
-					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
 				},
 				["player_last_events"] = {
 				},
@@ -2464,11 +1734,6 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage"] = {
-						{
-							["Emmarosa"] = 1060840.005787,
-						}, -- [1]
-					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -2477,51 +1742,53 @@ _detalhes_database = {
 					},
 					["damage_section"] = {
 					},
+					["damage"] = {
+						{
+							["Emmarosa"] = 1121519.006673,
+						}, -- [1]
+					},
 				},
-				["end_time"] = 2152826.835,
+				["end_time"] = 2346415.47,
+				["combat_id"] = 93,
+				["instance_type"] = "none",
+				["frags"] = {
+					["Tufferfish"] = 1,
+				},
+				["data_fim"] = "00:06:40",
+				["data_inicio"] = "00:06:34",
+				["CombatSkillCache"] = {
+				},
 				["totals_grupo"] = {
-					1060840, -- [1]
+					0, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
 						[6] = 0,
-						[3] = 110,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 1,
-						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
 						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 41,
+				["start_time"] = 2346410.017,
 				["TimeData"] = {
 				},
-				["hasSaved"] = true,
-				["frags"] = {
-					["Thistleleaf Petalpeeler"] = 1,
-					["Thistleleaf Twigsnapper"] = 1,
-					["Thistleleaf Lilydancer"] = 1,
-				},
-				["data_fim"] = "18:20:19",
-				["data_inicio"] = "18:20:13",
-				["CombatSkillCache"] = {
-				},
-				["PlayerLeechTrinket"] = {
-				},
-				["start_time"] = 2152820.448,
-				["contra"] = "Thistleleaf Twigsnapper",
-				["instance_type"] = "none",
+				["pvp"] = true,
 			}, -- [5]
 		},
 	},
-	["combat_counter"] = 4299,
-	["savedbuffs"] = {
+	["combat_counter"] = 4443,
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
 	},
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
@@ -2530,10 +1797,10 @@ _detalhes_database = {
 			["annouce"] = true,
 			["dpshistory"] = {
 			},
-			["enabled"] = true,
 			["author"] = "Details! Team",
-			["level"] = 1,
 			["dps"] = 0,
+			["level"] = 1,
+			["enabled"] = true,
 		},
 		["DETAILS_PLUGIN_DEATH_GRAPHICS"] = {
 			["last_boss"] = false,
@@ -2551,15 +1818,15 @@ _detalhes_database = {
 			["max_segments_for_current"] = 2,
 			["max_deaths_for_current"] = 15,
 			["last_player"] = false,
-			["author"] = "Details! Team",
+			["InstalledAt"] = 1470375019,
 			["last_encounter_hash"] = false,
-			["enabled"] = true,
+			["showing_type"] = 4,
 			["timeline_cutoff_time"] = 3,
 			["last_segment"] = false,
 			["last_combat_id"] = 136,
 			["timeline_cutoff_delete_time"] = 3,
-			["showing_type"] = 4,
-			["InstalledAt"] = 1470375019,
+			["enabled"] = true,
+			["author"] = "Details! Team",
 		},
 		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
 			["enabled"] = true,
@@ -2568,11 +1835,11 @@ _detalhes_database = {
 			["max_emote_segments"] = 3,
 			["author"] = "Details! Team",
 			["window_scale"] = 1,
-			["encounter_timers_dbm"] = {
-			},
+			["hide_on_combat"] = false,
 			["show_icon"] = 5,
 			["opened"] = 1,
-			["hide_on_combat"] = false,
+			["encounter_timers_dbm"] = {
+			},
 		},
 		["DETAILS_PLUGIN_LEECH_TRINKET"] = {
 			["enabled"] = true,
@@ -2580,17 +1847,17 @@ _detalhes_database = {
 		},
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["updatespeed"] = 1,
-			["enabled"] = true,
 			["showamount"] = false,
+			["animate"] = false,
 			["useplayercolor"] = false,
-			["author"] = "Details! Team",
 			["useclasscolors"] = false,
+			["author"] = "Details! Team",
 			["playercolor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["animate"] = false,
+			["enabled"] = true,
 		},
 		["DETAILS_PLUGIN_DPS_TUNING"] = {
 			["enabled"] = true,
@@ -2599,17 +1866,41 @@ _detalhes_database = {
 		},
 		["DETAILS_PLUGIN_VANGUARD"] = {
 			["enabled"] = true,
+			["tank_block_texture"] = "Details Serenity",
 			["tank_block_color"] = {
 				0.24705882, -- [1]
 				0.0039215, -- [2]
 				0, -- [3]
 				0.8, -- [4]
 			},
-			["tank_block_texture"] = "Details Serenity",
 			["show_inc_bars"] = false,
 			["author"] = "Details! Team",
 			["first_run"] = false,
 			["tank_block_size"] = 150,
+		},
+		["DETAILS_PLUGIN_TIME_ATTACK"] = {
+			["enabled"] = true,
+			["realm_last_shown"] = 40,
+			["saved_as_anonymous"] = true,
+			["recently_as_anonymous"] = true,
+			["dps"] = 0,
+			["disable_sharing"] = false,
+			["history"] = {
+			},
+			["time"] = 40,
+			["history_lastindex"] = 0,
+			["realm_lastamt"] = 0,
+			["realm_history"] = {
+			},
+			["author"] = "Details! Team",
+		},
+		["DETAILS_PLUGIN_RAIDCHECK"] = {
+			["enabled"] = true,
+			["pre_pot_tanks"] = false,
+			["mythic_1_4"] = true,
+			["author"] = "Details! Team",
+			["use_report_panel"] = true,
+			["pre_pot_healers"] = false,
 		},
 		["DETAILS_PLUGIN_CHART_VIEWER"] = {
 			["enabled"] = true,
@@ -2623,8 +1914,8 @@ _detalhes_database = {
 					["texture"] = "line",
 				}, -- [1]
 				{
-					["iType"] = "raid-DAMAGER",
 					["version"] = "v2.0",
+					["iType"] = "raid-DAMAGER",
 					["options"] = {
 						["iType"] = "raid-DAMAGER",
 						["name"] = "Damager (Same Class)",
@@ -2635,8 +1926,8 @@ _detalhes_database = {
 					["texture"] = "line",
 				}, -- [2]
 				{
-					["iType"] = "raid-HEALER",
 					["version"] = "v2.0",
+					["iType"] = "raid-HEALER",
 					["options"] = {
 						["iType"] = "raid-HEALER",
 						["name"] = "All Healers",
@@ -2649,70 +1940,61 @@ _detalhes_database = {
 				["last_selected"] = 3,
 			},
 			["options"] = {
-				["show_method"] = 4,
 				["auto_create"] = true,
+				["show_method"] = 4,
 				["window_scale"] = 0.649999976158142,
 			},
 		},
-		["DETAILS_PLUGIN_RAIDCHECK"] = {
-			["enabled"] = true,
-			["pre_pot_tanks"] = false,
-			["mythic_1_4"] = true,
-			["author"] = "Details! Team",
-			["use_report_panel"] = true,
-			["pre_pot_healers"] = false,
-		},
-		["DETAILS_PLUGIN_TIME_ATTACK"] = {
-			["enabled"] = true,
-			["realm_last_shown"] = 40,
-			["saved_as_anonymous"] = true,
-			["recently_as_anonymous"] = true,
-			["dps"] = 0,
-			["disable_sharing"] = false,
-			["history"] = {
-			},
-			["time"] = 40,
-			["history_lastindex"] = 0,
-			["author"] = "Details! Team",
-			["realm_history"] = {
-			},
-			["realm_lastamt"] = 0,
-		},
 	},
-	["cached_talents"] = {
-		["Player-60-0A91880D"] = {
-			22128, -- [1]
-			22332, -- [2]
-			22132, -- [3]
-			19233, -- [4]
-			19241, -- [5]
-			22335, -- [6]
-			22334, -- [7]
+	["nick_tag_cache"] = {
+		["last_version"] = 8,
+		[177309709] = {
+			"Emmarosa", -- [1]
+			"Interface\\EncounterJournal\\UI-EJ-BOSS-Vanessa VanCleef", -- [2]
+			{
+				0, -- [1]
+				1, -- [2]
+				0, -- [3]
+				1, -- [4]
+			}, -- [3]
+			"Interface\\PetBattles\\Weather-Sandstorm", -- [4]
+			{
+				0.048828125, -- [1]
+				0.947265625, -- [2]
+				1, -- [3]
+				0, -- [4]
+			}, -- [5]
+			{
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			}, -- [6]
+			2, -- [7]
 		},
+		["nextreset"] = 1474645509,
 	},
 	["SoloTablesSaved"] = {
 		["LastSelected"] = "DETAILS_PLUGIN_DPS_TUNING",
 		["Mode"] = 1,
 	},
-	["last_instance_time"] = 1473438396,
-	["last_version"] = "v7.0.3.2920",
+	["last_realversion"] = 111,
+	["last_encounter"] = "Madness of Deathwing",
 	["tabela_instancias"] = {
 	},
-	["combat_id"] = 45,
+	["combat_id"] = 97,
 	["savedStyles"] = {
 	},
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-	},
-	["last_realversion"] = 111,
+	["last_instance_time"] = 1473909738,
+	["last_version"] = "v7.0.3.2941",
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
 		["only_first"] = 5,
 		["where"] = 1,
 	},
-	["last_encounter"] = "Madness of Deathwing",
+	["character_data"] = {
+		["logons"] = 179,
+	},
 	["local_instances_config"] = {
 		{
 			["segment"] = 2,
@@ -2755,7 +2037,7 @@ _detalhes_database = {
 				1, -- [1]
 				1, -- [2]
 				5, -- [3]
-				1, -- [4]
+				3, -- [4]
 				1, -- [5]
 			},
 			["is_open"] = true,
@@ -2766,10 +2048,10 @@ _detalhes_database = {
 			["attribute"] = 1,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -444.499359130859,
-					["x"] = 757.000244140625,
-					["w"] = 393.999633789063,
-					["h"] = 136.99983215332,
+					["y"] = -442.99942779541,
+					["x"] = 756.000244140625,
+					["w"] = 397.999664306641,
+					["h"] = 137.999862670898,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -2780,45 +2062,118 @@ _detalhes_database = {
 			},
 		}, -- [2]
 	},
-	["character_data"] = {
-		["logons"] = 176,
+	["savedbuffs"] = {
 	},
 	["announce_cooldowns"] = {
+		["enabled"] = false,
 		["ignored_cooldowns"] = {
 		},
-		["enabled"] = false,
 		["custom"] = "",
 		["channel"] = "RAID",
 	},
-	["nick_tag_cache"] = {
-		["last_version"] = 8,
-		[177309709] = {
-			"Emmarosa", -- [1]
-			"Interface\\EncounterJournal\\UI-EJ-BOSS-Vanessa VanCleef", -- [2]
-			{
-				0, -- [1]
-				1, -- [2]
-				0, -- [3]
-				1, -- [4]
-			}, -- [3]
-			"Interface\\PetBattles\\Weather-Sandstorm", -- [4]
-			{
-				0.048828125, -- [1]
-				0.947265625, -- [2]
-				1, -- [3]
-				0, -- [4]
-			}, -- [5]
-			{
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			}, -- [6]
-			2, -- [7]
+	["cached_talents"] = {
+		["Player-60-09F94D16"] = {
+			22022, -- [1]
+			22030, -- [2]
+			22518, -- [3]
+			22532, -- [4]
+			22026, -- [5]
+			22028, -- [6]
+			22526, -- [7]
 		},
-		["nextreset"] = 1474645509,
+		["Player-1190-075B4261"] = {
+			22558, -- [1]
+			22594, -- [2]
+			21811, -- [3]
+			22434, -- [4]
+			22705, -- [5]
+			17609, -- [6]
+			21202, -- [7]
+		},
+		["Player-162-08EDAF4E"] = {
+			22558, -- [1]
+			22604, -- [2]
+			21811, -- [3]
+			22433, -- [4]
+			21795, -- [5]
+			22438, -- [6]
+			22645, -- [7]
+		},
+		["Player-60-0A7DEA14"] = {
+			22366, -- [1]
+			22165, -- [2]
+			21710, -- [3]
+			22404, -- [4]
+			18569, -- [5]
+			18577, -- [6]
+			18570, -- [7]
+		},
+		["Player-157-01732B04"] = {
+			22120, -- [1]
+			19236, -- [2]
+			19239, -- [3]
+			22122, -- [4]
+			22114, -- [5]
+			19249, -- [6]
+			21188, -- [7]
+		},
+		["Player-1428-05E5D4F0"] = {
+			22279, -- [1]
+			22495, -- [2]
+			19347, -- [3]
+			21998, -- [4]
+			22284, -- [5]
+			22002, -- [6]
+			22274, -- [7]
+		},
+		["Player-60-0AA61578"] = {
+			21973, -- [1]
+			22150, -- [2]
+			22137, -- [3]
+			19275, -- [4]
+			22148, -- [5]
+			22171, -- [6]
+			22353, -- [7]
+		},
+		["Player-60-0A55F72D"] = {
+			20174, -- [1]
+			19819, -- [2]
+			19995, -- [3]
+			22096, -- [4]
+			19304, -- [5]
+			19823, -- [6]
+			22108, -- [7]
+		},
+		["Player-127-07AD3E74"] = {
+			19293, -- [1]
+			22052, -- [2]
+			22480, -- [3]
+			19288, -- [4]
+			19294, -- [5]
+			21181, -- [6]
+			19280, -- [7]
+		},
+		["Player-60-0A91880D"] = {
+			19236, -- [1]
+			22121, -- [2]
+			22133, -- [3]
+			22114, -- [4]
+			19241, -- [5]
+			19249, -- [6]
+			22118, -- [7]
+		},
+		["Player-7-0A2B9F64"] = {
+			19264, -- [1]
+			21963, -- [2]
+			19275, -- [3]
+			22323, -- [4]
+			21966, -- [5]
+			21971, -- [6]
+			21675, -- [7]
+		},
 	},
-	["last_instance_id"] = 1492,
+	["last_instance_id"] = 1477,
 	["cached_specs"] = {
-		["Player-60-0A91880D"] = 261,
+		["Player-60-0A91880D"] = 260,
 	},
 }
