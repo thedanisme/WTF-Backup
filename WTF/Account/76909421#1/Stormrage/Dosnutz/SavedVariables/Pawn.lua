@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0008,
+	["LastVersion"] = 2.0011,
 	["LastPlayerFullName"] = "Dosnutz-Stormrage",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,
