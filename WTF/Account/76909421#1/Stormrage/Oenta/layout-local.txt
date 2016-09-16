@@ -1,11 +1,4 @@
 Version: 1
-Frame: DugisArrowFrame
-FrameLevel: 1
-Anchor: RIGHT
-X: -410
-Y: -34
-W: 80
-H: 60
 Frame: ItemRefTooltip
 FrameLevel: 1
 Anchor: CENTER
@@ -55,3 +48,10 @@ X: -1
 Y: 0
 W: 920
 H: 600
+Frame: DugisArrowFrame
+FrameLevel: 1
+Anchor: RIGHT
+X: -410
+Y: -34
+W: 80
+H: 60

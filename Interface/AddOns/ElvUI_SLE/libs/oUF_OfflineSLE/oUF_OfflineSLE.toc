@@ -1,0 +1,12 @@
+## Interface: 60200
+## Title: oUF Offline Indicator for S&E
+## Notes: Offline indicator for oUF frames in S&L.
+## Author: Darth Predator
+## Version: 1.0.0
+## Dependencies: oUF
+## X-Curse-Packaged-Version: v3.14
+## X-Curse-Project-Name: ElvUI Shadow & Light Edit
+## X-Curse-Project-ID: shadow-and-light-edit
+## X-Curse-Repository-ID: wow/shadow-and-light-edit/mainline
+
+oUF_OfflineSLE.lua

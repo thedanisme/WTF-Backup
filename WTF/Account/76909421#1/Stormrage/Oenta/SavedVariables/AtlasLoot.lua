@@ -5,9 +5,9 @@ AtlasLootCharDB = {
 		["classFilter"] = true,
 		["selected"] = {
 			"AtlasLoot_Legion", -- [1]
-			"TheEmeraldNightmare", -- [2]
-			7, -- [3]
-			3, -- [4]
+			"VaultOfTheWardens", -- [2]
+			5, -- [3]
+			8, -- [4]
 			0, -- [5]
 		},
 		["point"] = {
