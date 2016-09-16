@@ -48526,6 +48526,8 @@ function NPC:Initialize()
 [108468] = "The Mad Merchant",
 [106226] = "Teensy Weensy Fae Dragon",
 [106225] = "Zeryxia",
+[111046] = "Fleet Admiral Tethys",
+[111160] = "Onslaught Apostate",
 }
 	end
 

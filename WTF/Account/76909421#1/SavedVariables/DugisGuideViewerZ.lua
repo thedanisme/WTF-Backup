@@ -899,13 +899,13 @@ DugisGuideViewerProfiles = {
 					[42] = {
 						["checked"] = false,
 					},
+					[6] = {
+						["checked"] = true,
+					},
 					[203] = {
 						["checked"] = 0,
 					},
 					["FirstTime"] = false,
-					[6] = {
-						["checked"] = true,
-					},
 					[72] = {
 						["checked"] = true,
 					},
@@ -1228,8 +1228,8 @@ DugisGuideViewerProfiles = {
 							["DugisArrowFrame"] = {
 								["point"] = "RIGHT",
 								["relativePoint"] = "RIGHT",
-								["yOfs"] = -34.0000953674316,
-								["xOfs"] = -409.998718261719,
+								["yOfs"] = -58.0000724792481,
+								["xOfs"] = -407.999359130859,
 							},
 							["DugisGuideViewer_ModelViewer"] = {
 							},
@@ -1411,13 +1411,13 @@ DugisGuideViewerProfiles = {
 					[42] = {
 						["checked"] = false,
 					},
+					[203] = {
+						["checked"] = 0,
+					},
 					[6] = {
 						["checked"] = true,
 					},
 					["FirstTime"] = false,
-					[203] = {
-						["checked"] = 0,
-					},
 					[76] = {
 						["checked"] = true,
 					},
@@ -2093,6 +2093,7 @@ CollectedWorldMapTrackingPoints = {
 			"2:1837288481:96821::M", -- [47]
 			"11:1608420874:108792::F", -- [48]
 			"10:2383902921:96786:Portal:F", -- [49]
+			"2:1800457073:96823::M", -- [50]
 		},
 		["Azsuna:0"] = {
 			"6:2157870879:90086::F", -- [1]
@@ -2153,6 +2154,7 @@ CollectedWorldMapTrackingPoints = {
 			"12:1167416600:105986::F", -- [14]
 			"12:1154308596:105986::F", -- [15]
 			"12:1166170862:105986::F", -- [16]
+			"12:1182554681:105986::F", -- [17]
 		},
 		["Ironforge:0"] = {
 			"1:1040563742:8720::F", -- [1]

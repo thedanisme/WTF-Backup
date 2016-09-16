@@ -346,8 +346,313 @@ function ItemQuality(suggestion)
 end
 
 --The layout can be: "two-labels", "three-labels"
-function DGF:CreateGuideBox(parent, x, y, layout)
-    local box = CreateFrame("Button",nil,parent, "GearSetButtonTemplate")
+function DGF:GetCreateGuideBox(parent, x, y, layout, index, reuseItems)
+    local slotButtonName = nil
+    
+    if reuseItems then
+        slotButtonName = "GearFinderSlotButton"..index 
+    end
+
+    local box 
+    
+    if _G[slotButtonName] and reuseItems then
+        box = _G[slotButtonName]
+    else
+        box = CreateFrame("Button", slotButtonName ,parent, "GearSetButtonTemplate")
+        
+        local topLabel = box:CreateFontString(nil,nil,"SystemFont_Med1")
+        topLabel:ClearAllPoints()
+        topLabel:SetPoint("TOPLEFT",box,"TOPLEFT",5, -3)
+        topLabel:SetTextColor(1, 1, 1)
+        topLabel:SetNonSpaceWrap(true)
+
+        local bottomLabel = box:CreateFontString(nil,nil,"SystemFont_Shadow_Small")
+        bottomLabel:ClearAllPoints()
+        bottomLabel:SetPoint("BOTTOMLEFT",box,"BOTTOMLEFT",36, 4)
+        bottomLabel:SetText("")
+        bottomLabel:SetTextColor(1, 1, 1)
+        bottomLabel:SetNonSpaceWrap(true)
+
+        local middleLabel = box:CreateFontString(nil,nil,"SystemFont_Shadow_Small")
+        middleLabel:ClearAllPoints()
+        middleLabel:SetPoint("BOTTOMLEFT",box,"BOTTOMLEFT",36, 18)
+        middleLabel:SetTextColor(1, 1, 1)
+        middleLabel:SetNonSpaceWrap(true)
+        middleLabel:SetText("Loading..")
+
+        topLabel:SetJustifyH("LEFT")
+        middleLabel:SetWordWrap(false)
+        middleLabel:SetJustifyH("LEFT")
+
+        topLabel:SetWordWrap(false)
+        bottomLabel:SetWordWrap(false)
+        bottomLabel:SetJustifyH("LEFT")
+
+        if layout == "two-labels" then
+            bottomLabel:SetPoint("BOTTOMLEFT",box,"BOTTOMLEFT", 38, 4)
+            topLabel:SetPoint("TOPLEFT",box,"TOPLEFT", 38, -7)
+            middleLabel:Hide()
+        end
+
+        local iconFrame = CreateFrame("Frame", nil, box)
+        iconFrame:SetSize(28, 28)
+
+        iconFrame:SetPoint("BOTTOMLEFT",box,"BOTTOMLEFT", 5, 3)
+
+        local itemTexture = iconFrame:CreateTexture()
+        itemTexture:SetAllPoints(iconFrame)
+        iconFrame:Show()
+
+        local moreButton = CreateFrame("Button", nil, box, "GearFinderMoreTemplate")
+        moreButton:SetScript("OnLoad", nil)
+        moreButton.slotItem = box
+        moreButton:Show()
+
+        moreButton:SetHeight(32);
+        moreButton:SetWidth(16);
+        moreButton:GetNormalTexture():SetTexCoord(0.15625, 0.5, 0.84375, 0.5, 0.15625, 0, 0.84375, 0);
+        moreButton:GetHighlightTexture():SetTexCoord(0.15625, 1, 0.84375, 1, 0.15625, 0.5, 0.84375, 0.5);
+        moreButton:ClearAllPoints();
+        moreButton:SetPoint("LEFT", box, "RIGHT", -9, -7);
+        moreButton:Hide()
+
+        moreButton:SetScript("OnClick", function(self)
+            if LuaUtils:ThreadInProgress("MoreButtonClicked") then
+                return
+            end
+
+            LuaUtils:CreateThread("MoreButtonClicked", function()
+                        local wasReverser = self.reversed
+                        DGF:SetToNormalAllMoreButtons()
+                        self.reversed = not wasReverser
+
+                        EquipmentFlyoutPopoutButton_SetReversed(self, self.reversed)
+
+                        self.slotItem.SelectedBar:Show()
+
+                        if not self.reversed then
+                            GearFinderExtraItemsFrame:Hide()
+                            self.slotItem.SelectedBar:Hide()
+                            return
+                        end
+
+                        GearFinderExtraItemsFrame:Show()
+
+                        local localizedSlotName = DGF:LocalizeSlot(self.slotItem.suggestion.item.info.equipslot)
+                        GearFinderExtraItemsFrame.headerLabel:SetText(localizedSlotName)
+
+                        LuaUtils:loop(5, function(index)
+                            extraButtons[index]:Hide()
+                        end)
+
+                        local deltaY = 0
+
+                        if self.slotItem.top5suggestions then
+                            LuaUtils:foreach(self.slotItem.top5suggestions, function(suggestion, index)
+                                if extraButtons[index] then
+                                    extraButtons[index].topLabel:SetText("X")
+
+                                    local shortName = ItemName(suggestion)
+                                    local requiredLevelInfo = ""
+
+                                    extraButtons[index].itemTexture:SetTexture(ItemTexture(suggestion))
+
+                                    local r, g, b, hex = GetItemQualityColor(ItemQuality(suggestion))
+
+                                    local requiredLevelInfo = ""
+                                    local requiredLevelInfoBefore = ""
+                                    if not DGF:PlayerHasEnoughLevel(suggestion) then
+                                        local lvl = suggestion.item.info.reqlevel
+
+                                        if suggestion.item.info.reqlevelByQuest ~= nil then
+                                            lvl = suggestion.item.info.reqlevelByQuest
+                                        end
+
+                                        if string.len(shortName) > 18 then
+                                            requiredLevelInfoBefore = "|c00FF0000@L"..lvl.."|r "
+                                        else
+                                            requiredLevelInfoBefore = "|c00FF0000@ Level "..lvl.."|r "
+                                        end
+                                    end
+
+                                    extraButtons[index].topLabel:SetText(requiredLevelInfoBefore.."|c"..hex..shortName.."|r")
+                                    local guide = DGF:GetTheBestGuideForGearId(suggestion.item.info.itemid, true)
+
+                                    if DugisGuideViewer.GetFormattedTitle then
+                                        guide = DugisGuideViewer:GetFormattedTitle(guide)
+                                    end
+
+                                    extraButtons[index].bottomLabel:SetText("|cFFFFFFFF"..guide.."|r" )
+                                    extraButtons[index].bottomLabel:SetWidth(210)
+                                    extraButtons[index].topLabel:SetWidth(195)
+
+                                    extraButtons[index].suggestion = suggestion
+                                    extraButtons[index]:Show()
+
+                                    deltaY = deltaY + boxSizeTwoLabels
+
+                                    GearFinderExtraItemsFrame:SetHeight(deltaY + 65)
+                                end
+
+                                GearFinderExtraItemsFrame.headerLabel:SetText(localizedSlotName .." " .. index.."/"..#self.slotItem.top5suggestions.."..")
+                            end)
+
+                            GearFinderExtraItemsFrame.headerLabel:SetText(localizedSlotName)
+                        end
+                end
+            )
+        end)
+
+        moreButton:SetScript("OnEnter", function()
+            GameTooltip:SetOwner(moreButton, "ANCHOR_RIGHT")
+            GameTooltip:AddLine("Load more suggestions", 1, 1, 1)
+            GameTooltip:Show()
+        end)
+
+        moreButton:SetScript("OnLeave", function()
+            GameTooltip:Hide()
+        end)
+
+        -------------Info button---------------------------
+        local loadGuideButton = CreateFrame("Button", nil, box)
+        loadGuideButton:SetSize(28, 28)
+        loadGuideButton.slotItem = box
+        loadGuideButton:SetPoint("TOPRIGHT",box,"TOPRIGHT",5, 5)
+        loadGuideButton:SetNormalTexture("Interface\\MINIMAP\\UI-Minimap-MinimizeButtonUp-Up.blp")
+        loadGuideButton:SetHighlightTexture("Interface\\MINIMAP\\UI-Minimap-MinimizeButtonUp-Highlight.blp")
+        loadGuideButton:SetPushedTexture("Interface\\MINIMAP\\UI-Minimap-MinimizeButtonUp-Down.blp")
+        loadGuideButton:Hide()
+        loadGuideButton:SetScript("OnClick", function(self)
+            LuaUtils:CreateThread("LoadGuideButtonOnClick", function()
+                DGF:LoadGuideButtonOnClick(box)
+            end)
+        end)
+
+        loadGuideButton.box = box
+
+        loadGuideButton:SetScript("OnEnter", function(self)
+            LuaUtils:CreateThread("LoadGuideButtonOnEnter", function()
+            
+                local gearId = box.suggestion.item.info.itemid
+
+                local guideTitle, gearInfo = DGF:GetTheBestGuideForGearId(gearId, true)
+
+                if not gearInfo then
+                    return
+                end
+
+                local questName = ""
+
+                if gearInfo.questIds then
+                    LuaUtils:foreach(gearInfo.questIds, function(questId)
+                        if not DGF:IsQuestCompleted(questId) then
+                            if DugisGuideViewer.NPCJournalFrame.GetQuestInfo then
+                                local questInfo = DugisGuideViewer.NPCJournalFrame:GetQuestInfo(tonumber(questId))
+                                if questInfo then
+                                    questName = questInfo.name
+                                end
+                            end
+                        end
+                    end)
+                end
+
+                GameTooltip:SetOwner(moreButton, "ANCHOR_RIGHT")
+
+                local guideTitleFormatted = guideTitle
+                local guideExists = true
+
+                if not DugisGuideViewer:isValidGuide(guideTitle) then
+                    guideExists = false
+                end
+
+                if  DugisGuideViewer.GetFormattedTitle then
+                    guideTitleFormatted = DugisGuideViewer:GetFormattedTitle(guideTitle)
+                end
+
+                if guideTitleFormatted then
+                    GameTooltip:AddLine("Found In: |cFFFFFFFF"..guideTitleFormatted.."|r" , 1, 0.8, 0.0)
+                end
+
+                if gearInfo.bossId then
+                    local numericBossId = tonumber(gearInfo.bossId)
+                    local droppedBy
+                    local bossName
+
+                    if numericBossId > 0 then
+                        bossName =  DugisGuideViewer:GetLocalizedNPC(numericBossId)
+                    else
+                        if gearInfo.encounterId then
+                            bossName = EJ_GetEncounterInfo(gearInfo.encounterId)
+                        end
+                    end
+
+                    if not bossName then
+                        droppedBy = "Boss "..gearInfo.bossId
+                    else
+                        droppedBy = bossName
+                    end
+                    GameTooltip:AddLine("Dropped by: |cFFFFFFFF"..droppedBy.."|r" , 1, 0.8, 0.0)
+                end
+
+                if questName ~= "" then
+                    GameTooltip:AddLine("Reward From: |cFFFFFFFF"..questName.."|r" , 1, 0.8, 0.0)
+                end
+
+                if guideExists then
+                    GameTooltip:AddLine("Click to load the guide", 0, 1, 0)
+                else
+                    GameTooltip:AddLine("Guide not available", 1, 0, 0)
+                end
+                GameTooltip:Show()
+
+                if self.box.top5suggestions == nil or #self.box.top5suggestions < 2 then
+                    self.box.moreButton:Hide()
+                else
+                    self.box.moreButton:Show()
+                end
+            
+            
+            end)
+        end)
+
+        loadGuideButton:SetScript("OnLeave", function()
+            GameTooltip:Hide()
+        end)
+        
+        
+       box:SetScript("OnEnter", function(self)
+            if self.suggestion and self.suggestion.item.info.itemid then
+                GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
+                GameTooltip:SetHyperlink(self.suggestion.item.info.itemlink);
+            end
+
+            DGF:HideAllMoreButtons()
+
+            if self.suggestion then
+                self.loadGuideButton:Show()
+            end
+
+            if self.suggestion then
+                self.HighlightBar:Show()
+            end
+        end)
+
+        box:SetScript("OnLeave", function(self)
+            GameTooltip:Hide()
+            self.HighlightBar:Hide();
+        end)
+
+        box:SetScript("OnClick", nil)
+        
+
+        box.topLabel = topLabel
+        box.middleLabel = middleLabel
+        box.bottomLabel = bottomLabel
+        box.moreButton = moreButton
+        box.loadGuideButton = loadGuideButton
+        box.itemTexture = itemTexture
+        
+    end
 
     box:SetSize(168, boxSize)
 
@@ -359,298 +664,7 @@ function DGF:CreateGuideBox(parent, x, y, layout)
     box.texture = box:CreateTexture()
     box.texture:SetAllPoints(box)
     --box.texture:SetTexture("Interface\\CHARACTERFRAME\\BarHighlight.blp")
-
-    box:SetScript("OnEnter", function(self)
-        if self.suggestion and self.suggestion.item.info.itemid then
-            GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
-            GameTooltip:SetHyperlink(self.suggestion.item.info.itemlink);
-        end
-
-        DGF:HideAllMoreButtons()
-
-        if self.suggestion then
-            self.loadGuideButton:Show()
-        end
-
-        if self.suggestion then
-            self.HighlightBar:Show()
-        end
-    end)
-
-    box:SetScript("OnLeave", function(self)
-        GameTooltip:Hide()
-		self.HighlightBar:Hide();
-    end)
-
-    box:SetScript("OnClick", nil)
-
-    local topLabel = box:CreateFontString(nil,nil,"SystemFont_Med1")
-    topLabel:ClearAllPoints()
-    topLabel:SetPoint("TOPLEFT",box,"TOPLEFT",5, -3)
-    topLabel:SetTextColor(1, 1, 1)
-    topLabel:SetNonSpaceWrap(true)
-
-    local bottomLabel = box:CreateFontString(nil,nil,"SystemFont_Shadow_Small")
-    bottomLabel:ClearAllPoints()
-    bottomLabel:SetPoint("BOTTOMLEFT",box,"BOTTOMLEFT",36, 4)
-    bottomLabel:SetText("")
-    bottomLabel:SetTextColor(1, 1, 1)
-    bottomLabel:SetNonSpaceWrap(true)
-
-    local middleLabel = box:CreateFontString(nil,nil,"SystemFont_Shadow_Small")
-    middleLabel:ClearAllPoints()
-    middleLabel:SetPoint("BOTTOMLEFT",box,"BOTTOMLEFT",36, 18)
-    middleLabel:SetTextColor(1, 1, 1)
-    middleLabel:SetNonSpaceWrap(true)
-    middleLabel:SetText("Loading..")
-
-    topLabel:SetJustifyH("LEFT")
-    middleLabel:SetWordWrap(false)
-    middleLabel:SetJustifyH("LEFT")
-
-    topLabel:SetWordWrap(false)
-    bottomLabel:SetWordWrap(false)
-    bottomLabel:SetJustifyH("LEFT")
-
-    if layout == "two-labels" then
-        bottomLabel:SetPoint("BOTTOMLEFT",box,"BOTTOMLEFT", 38, 4)
-        topLabel:SetPoint("TOPLEFT",box,"TOPLEFT", 38, -7)
-        middleLabel:Hide()
-    end
-
-    local iconFrame = CreateFrame("Frame", nil, box)
-    iconFrame:SetSize(28, 28)
-
-    iconFrame:SetPoint("BOTTOMLEFT",box,"BOTTOMLEFT", 5, 3)
-
-    local itemTexture = iconFrame:CreateTexture()
-    itemTexture:SetAllPoints(iconFrame)
-    iconFrame:Show()
-
-    local moreButton = CreateFrame("Button", nil, box, "GearFinderMoreTemplate")
-    moreButton:SetScript("OnLoad", nil)
-    moreButton.slotItem = box
-    moreButton:Show()
-
-    moreButton:SetHeight(32);
-    moreButton:SetWidth(16);
-    moreButton:GetNormalTexture():SetTexCoord(0.15625, 0.5, 0.84375, 0.5, 0.15625, 0, 0.84375, 0);
-    moreButton:GetHighlightTexture():SetTexCoord(0.15625, 1, 0.84375, 1, 0.15625, 0.5, 0.84375, 0.5);
-    moreButton:ClearAllPoints();
-    moreButton:SetPoint("LEFT", box, "RIGHT", -9, -7);
-    moreButton:Hide()
-
-    moreButton:SetScript("OnClick", function(self)
-
-        if LuaUtils:ThreadInProgress("MoreButtonClicked") then
-            return
-        end
-
-        LuaUtils:CreateThread("MoreButtonClicked", function()
-                    local wasReverser = self.reversed
-                    DGF:SetToNormalAllMoreButtons()
-                    self.reversed = not wasReverser
-
-                    EquipmentFlyoutPopoutButton_SetReversed(self, self.reversed)
-
-                    self.slotItem.SelectedBar:Show()
-
-                    if not self.reversed then
-                        GearFinderExtraItemsFrame:Hide()
-                        self.slotItem.SelectedBar:Hide()
-                        return
-                    end
-
-                    GearFinderExtraItemsFrame:Show()
-
-                    local localizedSlotName = DGF:LocalizeSlot(self.slotItem.suggestion.item.info.equipslot)
-                    GearFinderExtraItemsFrame.headerLabel:SetText(localizedSlotName)
-
-                    LuaUtils:loop(5, function(index)
-                        extraButtons[index]:Hide()
-                    end)
-
-                    local deltaY = 0
-
-                    if self.slotItem.top5suggestions then
-                        LuaUtils:foreach(self.slotItem.top5suggestions, function(suggestion, index)
-                            if extraButtons[index] then
-                                extraButtons[index].topLabel:SetText("X")
-
-                                local shortName = ItemName(suggestion)
-                                local requiredLevelInfo = ""
-
-                                extraButtons[index].itemTexture:SetTexture(ItemTexture(suggestion))
-
-                                local r, g, b, hex = GetItemQualityColor(ItemQuality(suggestion))
-
-                                local requiredLevelInfo = ""
-                                local requiredLevelInfoBefore = ""
-                                if not DGF:PlayerHasEnoughLevel(suggestion) then
-                                    local lvl = suggestion.item.info.reqlevel
-
-                                    if suggestion.item.info.reqlevelByQuest ~= nil then
-                                        lvl = suggestion.item.info.reqlevelByQuest
-                                    end
-
-                                    if string.len(shortName) > 18 then
-                                        requiredLevelInfoBefore = "|c00FF0000@L"..lvl.."|r "
-                                    else
-                                        requiredLevelInfoBefore = "|c00FF0000@ Level "..lvl.."|r "
-                                    end
-                                end
-
-                                extraButtons[index].topLabel:SetText(requiredLevelInfoBefore.."|c"..hex..shortName.."|r")
-                                local guide = DGF:GetTheBestGuideForGearId(suggestion.item.info.itemid, true)
-
-                                if DugisGuideViewer.GetFormattedTitle then
-                                    guide = DugisGuideViewer:GetFormattedTitle(guide)
-                                end
-
-                                extraButtons[index].bottomLabel:SetText("|cFFFFFFFF"..guide.."|r" )
-                                extraButtons[index].bottomLabel:SetWidth(210)
-                                extraButtons[index].topLabel:SetWidth(195)
-
-                                extraButtons[index].suggestion = suggestion
-                                extraButtons[index]:Show()
-
-                                deltaY = deltaY + boxSizeTwoLabels
-
-                                GearFinderExtraItemsFrame:SetHeight(deltaY + 65)
-                            end
-
-                            GearFinderExtraItemsFrame.headerLabel:SetText(localizedSlotName .." " .. index.."/"..#self.slotItem.top5suggestions.."..")
-                        end)
-
-                        GearFinderExtraItemsFrame.headerLabel:SetText(localizedSlotName)
-                    end
-            end
-        )
-    end)
-
-    moreButton:SetScript("OnEnter", function()
-        GameTooltip:SetOwner(moreButton, "ANCHOR_RIGHT")
-        GameTooltip:AddLine("Load more suggestions", 1, 1, 1)
-        GameTooltip:Show()
-    end)
-
-    moreButton:SetScript("OnLeave", function()
-        GameTooltip:Hide()
-    end)
-
-    -------------Info button---------------------------
-    local loadGuideButton = CreateFrame("Button", nil, box)
-    loadGuideButton:SetSize(28, 28)
-    loadGuideButton.slotItem = box
-    loadGuideButton:SetPoint("TOPRIGHT",box,"TOPRIGHT",5, 5)
-    loadGuideButton:SetNormalTexture("Interface\\MINIMAP\\UI-Minimap-MinimizeButtonUp-Up.blp")
-    loadGuideButton:SetHighlightTexture("Interface\\MINIMAP\\UI-Minimap-MinimizeButtonUp-Highlight.blp")
-    loadGuideButton:SetPushedTexture("Interface\\MINIMAP\\UI-Minimap-MinimizeButtonUp-Down.blp")
-    loadGuideButton:Hide()
-    loadGuideButton:SetScript("OnClick", function(self)
-        LuaUtils:CreateThread("LoadGuideButtonOnClick", function()
-            DGF:LoadGuideButtonOnClick(box)
-        end)
-    end)
-
-    loadGuideButton.box = box
-
-    loadGuideButton:SetScript("OnEnter", function(self)
-        LuaUtils:CreateThread("LoadGuideButtonOnEnter", function()
-        
-            local gearId = box.suggestion.item.info.itemid
-
-            local guideTitle, gearInfo = DGF:GetTheBestGuideForGearId(gearId, true)
-
-            if not gearInfo then
-                return
-            end
-
-            local questName = ""
-
-            if gearInfo.questIds then
-                LuaUtils:foreach(gearInfo.questIds, function(questId)
-                    if not DGF:IsQuestCompleted(questId) then
-                        if DugisGuideViewer.NPCJournalFrame.GetQuestInfo then
-                            local questInfo = DugisGuideViewer.NPCJournalFrame:GetQuestInfo(tonumber(questId))
-                            if questInfo then
-                                questName = questInfo.name
-                            end
-                        end
-                    end
-                end)
-            end
-
-            GameTooltip:SetOwner(moreButton, "ANCHOR_RIGHT")
-
-            local guideTitleFormatted = guideTitle
-            local guideExists = true
-
-            if not DugisGuideViewer:isValidGuide(guideTitle) then
-                guideExists = false
-            end
-
-            if  DugisGuideViewer.GetFormattedTitle then
-                guideTitleFormatted = DugisGuideViewer:GetFormattedTitle(guideTitle)
-            end
-
-            if guideTitleFormatted then
-                GameTooltip:AddLine("Found In: |cFFFFFFFF"..guideTitleFormatted.."|r" , 1, 0.8, 0.0)
-            end
-
-            if gearInfo.bossId then
-                local numericBossId = tonumber(gearInfo.bossId)
-                local droppedBy
-                local bossName
-
-                if numericBossId > 0 then
-                    bossName =  DugisGuideViewer:GetLocalizedNPC(numericBossId)
-                else
-                    if gearInfo.encounterId then
-                        bossName = EJ_GetEncounterInfo(gearInfo.encounterId)
-                    end
-                end
-
-                if not bossName then
-                    droppedBy = "Boss "..gearInfo.bossId
-                else
-                    droppedBy = bossName
-                end
-                GameTooltip:AddLine("Dropped by: |cFFFFFFFF"..droppedBy.."|r" , 1, 0.8, 0.0)
-            end
-
-            if questName ~= "" then
-                GameTooltip:AddLine("Reward From: |cFFFFFFFF"..questName.."|r" , 1, 0.8, 0.0)
-            end
-
-            if guideExists then
-                GameTooltip:AddLine("Click to load the guide", 0, 1, 0)
-            else
-                GameTooltip:AddLine("Guide not available", 1, 0, 0)
-            end
-            GameTooltip:Show()
-
-            if self.box.top5suggestions == nil or #self.box.top5suggestions < 2 then
-                self.box.moreButton:Hide()
-            else
-                self.box.moreButton:Show()
-            end
-        
-        
-        end)
-    end)
-
-    loadGuideButton:SetScript("OnLeave", function()
-        GameTooltip:Hide()
-    end)
-
-    box.topLabel = topLabel
-    box.middleLabel = middleLabel
-    box.bottomLabel = bottomLabel
-    box.moreButton = moreButton
-    box.loadGuideButton = loadGuideButton
-    box.itemTexture = itemTexture
-
+  
     return box
 end
 
@@ -734,7 +748,7 @@ function DGF:CreateExtraItemsFrame()
 
     --Close button
     LuaUtils:loop(5, function(index)
-        local button = DGF:CreateGuideBox(frame, 15,  -index * (boxSizeTwoLabels) - 10, "two-labels")
+        local button = DGF:GetCreateGuideBox(frame, 15,  -index * (boxSizeTwoLabels) - 10, "two-labels")
         button.moreButton:Hide()
         extraButtons[#extraButtons + 1] = button
     end)
@@ -779,7 +793,7 @@ function DGF:GearFinderTooltipFrame()
 
     --Close button
     LuaUtils:loop(18, function(index)
-        local button = DGF:CreateGuideBox(frame, 15,  -index * (boxSizeTwoLabels) - 10, "two-labels")
+        local button = DGF:GetCreateGuideBox(frame, 15,  -index * (boxSizeTwoLabels) - 10, "two-labels")
          tooltipItems[#tooltipItems + 1] = button
 
          button.topLabel:SetNonSpaceWrap(true)
@@ -823,6 +837,69 @@ local function UpdateCurrentGuideTtile()
     GearFinderTooltipFrame:SetHeight(yIndex * boxSizeTwoLabels + 25)
 end
 
+function DGF:BuildSlots()
+
+    local equipementSlotsCopy = LuaUtils:clone(equipementSlots)
+    
+    local allowedWeaponSubclassIndices = GA:GetGearAdvisorScoringValues("LE_ITEM_CLASS_WEAPON")
+	local allowedArmorSubclassIndices = GA:GetGearAdvisorScoringValues("LE_ITEM_CLASS_ARMOR")
+
+    --Adding extra slots to the table
+    if
+        LuaUtils:isInTable("2", allowedWeaponSubclassIndices) or
+        LuaUtils:isInTable("3", allowedWeaponSubclassIndices) or
+        LuaUtils:isInTable("18", allowedWeaponSubclassIndices)
+    then
+        table.insert(equipementSlotsCopy, 4, "INVTYPE_RANGED_MERGED")
+    end
+
+    if
+        LuaUtils:isInTable("1", allowedWeaponSubclassIndices) or
+        LuaUtils:isInTable("5", allowedWeaponSubclassIndices) or
+        LuaUtils:isInTable("6", allowedWeaponSubclassIndices) or
+        LuaUtils:isInTable("8", allowedWeaponSubclassIndices) or
+        LuaUtils:isInTable("10", allowedWeaponSubclassIndices)
+    then
+        table.insert(equipementSlotsCopy, 4, "INVTYPE_2HWEAPON")
+    end
+
+    if
+	    LuaUtils:isInTable("0", allowedWeaponSubclassIndices) or
+        LuaUtils:isInTable("4", allowedWeaponSubclassIndices) or
+        LuaUtils:isInTable("7", allowedWeaponSubclassIndices) or
+        LuaUtils:isInTable("13", allowedWeaponSubclassIndices) or
+        LuaUtils:isInTable("15", allowedWeaponSubclassIndices) or
+        LuaUtils:isInTable("19", allowedWeaponSubclassIndices) or
+		LuaUtils:isInTable("6", allowedArmorSubclassIndices)
+	then
+        table.insert(equipementSlotsCopy, 4, "INVTYPE_OFFHAND_MERGED")
+        table.insert(equipementSlotsCopy, 4, "INVTYPE_WEAPON_MERGED")
+    end
+
+
+    --todo: hide all existing slots
+    
+    LuaUtils:foreach(itemButtons, function(item)
+        item:Hide()
+    end)
+    
+    itemButtons = {}
+    
+    LuaUtils:foreach(equipementSlotsCopy, function(value, index)
+        local slotText = DGF:LocalizeSlot(value)
+
+        local itemFrame = DGF:GetCreateGuideBox(DugisGearFinderFrame.ScrollChild, 0, -index * boxSize , "three-labels", index, true)
+        itemFrame.topLabel:SetText(slotText)
+        itemFrame.slot = value
+        
+        itemFrame:Show()
+
+        itemButtons[#itemButtons + 1] = itemFrame
+    end)
+
+    DGF:UpdateGearButtons(itemButtons, true)
+end
+
 function DGF:InitializeGearFinderUI()
     if InitializeGearFinderUI_initialized then
         return
@@ -840,6 +917,7 @@ function DGF:InitializeGearFinderUI()
     DugisGearFinderFrame:SetScript("OnEvent", ItemInfoEventHandler)
 	DugisGearFinderFrame:RegisterEvent("GET_ITEM_INFO_RECEIVED")
 	DugisGearFinderFrame:RegisterEvent("PLAYER_EQUIPMENT_CHANGED")
+	DugisGearFinderFrame:RegisterEvent("PLAYER_SPECIALIZATION_CHANGED")
 
 
     DugisGearFinderFrame:SetPoint("TOPLEFT", CharacterFrameInsetRight, "TOPLEFT", 5, -4)
@@ -954,54 +1032,7 @@ function DGF:InitializeGearFinderUI()
     DugisGearFinderFrame.suggestedGuide = suggestedGuide
     DugisGearFinderFrame.suggestedGuideSubtitle = suggestedGuideSubtitle
 
-    local allowedWeaponSubclassIndices = GA:GetGearAdvisorScoringValues("LE_ITEM_CLASS_WEAPON")
-	local allowedArmorSubclassIndices = GA:GetGearAdvisorScoringValues("LE_ITEM_CLASS_ARMOR")
-
-    --Adding extra slots to the table
-    if
-        LuaUtils:isInTable("2", allowedWeaponSubclassIndices) or
-        LuaUtils:isInTable("3", allowedWeaponSubclassIndices) or
-        LuaUtils:isInTable("18", allowedWeaponSubclassIndices)
-    then
-        table.insert(equipementSlots, 4, "INVTYPE_RANGED_MERGED")
-    end
-
-    if
-        LuaUtils:isInTable("1", allowedWeaponSubclassIndices) or
-        LuaUtils:isInTable("5", allowedWeaponSubclassIndices) or
-        LuaUtils:isInTable("6", allowedWeaponSubclassIndices) or
-        LuaUtils:isInTable("8", allowedWeaponSubclassIndices) or
-        LuaUtils:isInTable("10", allowedWeaponSubclassIndices)
-    then
-        table.insert(equipementSlots, 4, "INVTYPE_2HWEAPON")
-    end
-
-    if
-        LuaUtils:isInTable("0", allowedWeaponSubclassIndices) or
-        LuaUtils:isInTable("4", allowedWeaponSubclassIndices) or
-        LuaUtils:isInTable("7", allowedWeaponSubclassIndices) or
-        LuaUtils:isInTable("13", allowedWeaponSubclassIndices) or
-        LuaUtils:isInTable("15", allowedWeaponSubclassIndices) or
-        LuaUtils:isInTable("19", allowedWeaponSubclassIndices) or
-		LuaUtils:isInTable("6", allowedArmorSubclassIndices)
-	then
-        table.insert(equipementSlots, 4, "INVTYPE_OFFHAND_MERGED")
-        table.insert(equipementSlots, 4, "INVTYPE_WEAPON_MERGED")
-    end
-
-
-    LuaUtils:foreach(equipementSlots, function(value, index)
-        local slotText = DGF:LocalizeSlot(value)
-
-        local itemFrame = DGF:CreateGuideBox(DugisGearFinderFrame.ScrollChild, 0, -index * boxSize , "three-labels")
-        itemFrame.topLabel:SetText(slotText)
-        itemFrame.slot = value
-
-        itemButtons[#itemButtons + 1] = itemFrame
-    end)
-
-    DGF:UpdateGearButtons(itemButtons, true)
-
+    DGF:BuildSlots()
 
     hooksecurefunc("CharacterFrame_Collapse", function()
         DGF:HideExtraButtonsFrame()
@@ -1428,8 +1459,6 @@ local function UpdateDynamicDataForGearFinder()
     end)
 end
 
-
-
 function ItemInfoEventHandler(self, event, ...)
     if event == "GET_ITEM_INFO_RECEIVED" then
         local itemId = ...
@@ -1448,6 +1477,11 @@ function ItemInfoEventHandler(self, event, ...)
     
     if event == "PLAYER_EQUIPMENT_CHANGED" then
         UpdateDynamicDataForGearFinder()
+    end 
+    
+    if event == "PLAYER_SPECIALIZATION_CHANGED" then
+        DGF:BuildSlots()
+        OnGearFinderSettingsChanged()
     end
 end
 

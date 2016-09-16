@@ -274,6 +274,10 @@ function LuaUtils:Round(num, idp)
   return math.floor(num * mult + 0.5) / mult
 end
 
+function LuaUtils:normalized2HexColor(r,g,b)
+    return string.format("ff%02x%02x%02x", r*255, g*255, b*255)
+end
+
 --Export functions
 
 --/run ExportDungeonsInfo()

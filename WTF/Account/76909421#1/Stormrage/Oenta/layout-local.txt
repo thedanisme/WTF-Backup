@@ -55,3 +55,10 @@ X: -410
 Y: -34
 W: 80
 H: 60
+Frame: InspectArmory
+FrameLevel: 10
+Anchor: TOP
+X: -187
+Y: -81
+W: 450
+H: 480

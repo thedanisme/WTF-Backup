@@ -790,7 +790,7 @@ A Growing Strong |QID|44562| |N|(npc:107126) in {Shal'Aran} (36.85, 46.54)| |Z|1
 C Moths to a Flame |QID|42828| |N|Collect 4 (npc:109158) in {Shal'Aran} (37.11,46.27)| |Z|1033 0| |NPC|109158|
 T Moths to a Flame |QID|42828| |N|(npc:107126) in {Shal'Aran} (36.85, 46.54)| |Z|1033 0| |NPC|107126|
 A Make an Entrance |QID|42829| |N|(npc:97140) in {Shal'Aran} (36.87, 46.58)| |Z|1033 0| |NPC|97140|
-A Survival of the Fittest |QID|41216| |N|(npc:110987) in {The Menagerie} underwater on the lower floor (37.26,46.21) (42.60,54.10) (44.80,56.74) (46.72,59.79) (47.27,59.40) (48.67,62.10) (50.64,59.42) (52.05,57.57) (50.69,56.59)
+A Survival of the Fittest |QID|41216| |N|(npc:110987) in {The Menagerie} underwater on the lower floor (37.26,46.21) (42.60,54.10) (44.80,56.74) (46.72,59.79) (47.27,59.40) (48.67,62.10) (50.64,59.42) (52.05,57.57) (50.69,56.59)| |Z|1033 0| |NPC|110987|
 C Survival of the Fittest |QID|41216| |N|Use the (item:134119) on animals around this area and free 12 creatures (51.42,54.05)| |Z|1033 0| |POI| |NPC|99638, 105654, 105655, 105655, 104837|
 
 T Survival of the Fittest |QID|41216| |N|(npc:111019) in {The Menagerie} (50.17,52.59) (48.00,52.30)| |Z|1033 0| |NPC|111019|

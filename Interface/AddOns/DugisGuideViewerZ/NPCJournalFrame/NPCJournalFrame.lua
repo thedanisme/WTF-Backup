@@ -2508,7 +2508,98 @@ function NPCJournalFrame:Initialize()
 		else
 			return DugisGuideViewer:GuideOn() and true
 		end
-	end   
+	end 
+
+    function DGV.ProcessNPCLeafColor(oryginalText, guideType)
+        if NPCJournalFrame.playersMounts == nil then
+            NPCJournalFrame.playersMounts = NPCJournalFrame:GetPlayersAllMountIds()
+            NPCJournalFrame.playersPets = NPCJournalFrame:GetPlayersAllPetIds()
+            NPCJournalFrame.playersFollowers = NPCJournalFrame:GetPlayersAllFollowerIds()
+        end 
+
+        local guidemetadata 
+        local objectId
+        
+        if guideType == "Followers" or guideType == "Pets" or guideType == "Mounts" then
+            if oryginalText then
+                guidemetadata = DugisGuideViewer.guidemetadata[oryginalText]
+                
+                local color 
+                if guidemetadata then
+                    objectId = tonumber(guidemetadata.objectId)
+                   
+                    if guideType == "Followers" then
+                        if NPCJournalFrame.playersFollowers[objectId] then
+                            color = "ffffff"
+                        else
+                            color = "999999"
+                        end
+                    end
+                    
+                    if guideType == "Pets" then
+                        if NPCJournalFrame.playersPets[objectId] then
+                            color = "ffffff"
+                        else
+                            color = "999999"
+                        end
+                    end  
+                    
+                    if guideType == "Mounts" then
+                        if NPCJournalFrame.playersMounts[objectId] then
+                            color = "ffffff"
+                        else
+                            color = "999999"
+                        end
+                    end
+                else
+                    color = "999999"
+                end
+                
+                return "|cff"..color..oryginalText.."|r"
+            end
+        end
+        
+        
+        if guideType == "Followers" and guidemetadata then
+            local rawText = control.rawText
+            
+            --Workaround for cached follower names returned by GetFollowerInfo function
+            local followerId = guidemetadata.objectId
+            local postFix = "|Htype:".."Followers".."|h |h"
+            local followerData = NPCJournalFrame:GetFollowerDataById(followerId)
+
+            local faction = UnitFactionGroup("Player")
+
+            --pandaren is neutral						
+            if faction == "Neutral" then return end						
+            
+            --[faction][followerId] => followerName
+            if FollowersCache == nil then
+                FollowersCache = {}
+                FollowersCache["Horde"] = {}
+                FollowersCache["Alliance"] = {}
+            end  
+            
+            FollowersCache[faction][followerId] = {}
+            FollowersCache[faction][followerId].name = followerData.name
+            FollowersCache[faction][followerId].level = followerData.level
+
+            local title = followerData.name .. " ("..followerData.level.."+)"
+            title = title..postFix
+            local finalText = title
+            
+            local color = "|cff999999"
+            if NPCJournalFrame.playersFollowers[tonumber(followerId)] then
+                color = "|cffffffff"
+            else
+                color = "|cff999999"
+            end
+            
+            return color..finalText
+         end
+       
+       return oryginalText
+    end
 end
 
 function NPCJournalFrame:OnGuideRowClick(title, objectId, clickedType)
@@ -2543,89 +2634,6 @@ function NPCJournalFrame:OnGuideRowMouseEnter(title, objectId, clickedType)
 end
     
 ----------------- GUIDES - EXTENSIONS ----------------------------------
-function DGV.TabInfoActivateExtension(context) 
-    local tabs = context.tabs
-    
-    LuaUtils:foreach({12,13,14,15,18}, function(item)
-        local TabInfo	= tabs[item]
-        if TabInfo.TitleControl then
-            TabInfo.TitleControl:Hide()
-        end
-    end)
-    
-    -- Update mounts colors
-    local playersMounts = NPCJournalFrame:GetPlayersAllMountIds()
-    local playersPets = NPCJournalFrame:GetPlayersAllPetIds()
-    local playersFollowers = NPCJournalFrame:GetPlayersAllFollowerIds()
-     --/script print(#DugisGuideViewer.NPCJournalFrame:GetPlayersAllFollowerIds())
-    LuaUtils:foreach({{tabId = 13, data = playersMounts}
-                     ,{tabId = 14, data = playersPets}
-                     ,{tabId = 18, data = playersFollowers}}, function(item)
-                           
-        local controls = tabs[item.tabId].visualRows
-        if controls then
-            LuaUtils:foreach(controls, function(control)
-                --Coloring followers
-                if item.tabId == 18 or item.tabId == 14 or item.tabId == 13 then
-                    if control.oryginalText then
-                        local guidemetadata = DugisGuideViewer.guidemetadata[control.oryginalText]
-                        local objectId = guidemetadata.objectId
-                        
-                        if item.data[tonumber(objectId)] then
-                            control:SetText("|cffffffff"..control.oryginalText.."|r")
-                        else
-                            control:SetText("|cff999999"..control.oryginalText.."|r")
-                        end
-                    end
-                end
-            
-                if item.tabId == 18 then
-                    if DGV.guidemetadata[control.rawText] then
-                        local id = DGV.guidemetadata[control.rawText].objectId
-                        local rawText = control.rawText
-                        
-                        --Workaround for cached follower names returned by GetFollowerInfo function
-                        local followerId = id
-                        local postFix = "|Htype:".."Followers".."|h |h"
-                        local followerData = NPCJournalFrame:GetFollowerDataById(followerId)
-
-                        local faction = UnitFactionGroup("Player")
-
-						--pandaren is neutral						
-						if faction == "Neutral" then return end						
-                        
-                        --[faction][followerId] => followerName
-                        if FollowersCache == nil then
-                            FollowersCache = {}
-                            FollowersCache["Horde"] = {}
-                            FollowersCache["Alliance"] = {}
-                        end  
-                        
-                        FollowersCache[faction][followerId] = {}
-                        FollowersCache[faction][followerId].name = followerData.name
-                        FollowersCache[faction][followerId].level = followerData.level
-
-                        local title = followerData.name .. " ("..followerData.level.."+)"
-                        title = title..postFix
-                        DGV.guides[title] = {OnGuideItemClick = NPCJournalFrame.OnGuideItemClick, objectId = followerId, guideType = "Followers"}
-                        DGV.headings[title] = "" 
-                        rawText = title
-                        
-                        local color = "|cff999999"
-                        if item.data[tonumber(followerId)] then
-                            color = "|cffffffff"
-                        else
-                            color = "|cff999999"
-                        end
-                        
-                        control:SetText(color..rawText.." |r")
-                    end
-                end
-            end)
-        end
-    end)
-end
-
 function DGV.GuidesOnModulesLoadedExtension()
     NPCJournalFrame:BuildGuidesData()
 end

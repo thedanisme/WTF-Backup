@@ -411,10 +411,18 @@
                     self.expanded = true
                 end
                 
-                GUIUtils:UpdateTreeVisualization(self.TreeFrame)
+                self.TreeFrame:UpdateTreeVisualization()
                 
                 if self.TreeFrame.onNodeClick then
                     self.TreeFrame.onNodeClick()
+                end
+                
+                if self.extraOnClickFunction then
+                    self:extraOnClickFunction()
+                end       
+                
+                if self.onLeafClickFunction then
+                    self:onLeafClickFunction()
                 end
 			</OnClick>
         </Scripts>
@@ -440,25 +448,46 @@
         <HighlightFont style="GameFontHighlightLeft"/>
         <DisabledFont style="GameFontHighlightLeft"/>
     </Button>
-	<Button name="DugisGuideTreeLeafTemplate" virtual="true">
+    <Frame name="DugisGuideTreeLeafTemplate" enableMouse='true' virtual="true" visible ="true">
         <Size x="400" y="16"/>
-		<HighlightTexture alphaMode ="ADD" file ="Interface\FriendsFrame\UI-FriendsFrame-HighlightBar">
-            <Size x="400" y="16"/>
-            <Anchors>
-                <Anchor point="CENTER" x="-15" y="0"/>
-            </Anchors>
-            <TexCoords left="0" right="1" top="0" bottom="1"/>
-        </HighlightTexture>
-        <ButtonText name="$parentText" nonspacewrap="true" parentKey="Text">
-            <Size x="0" y="10"/>
-            <Anchors>
-                <Anchor point="LEFT" x="0" y="0"/>
-            </Anchors> 
-        </ButtonText>
-        <NormalFont style="GameFontHighlightLeft"/>
-        <HighlightFont style="GameFontHighlightLeft"/>
-        <DisabledFont style="GameFontHighlightLeft"/>
-    </Button>
+        <Frames>
+            <Button parentKey="Button"  enableMouse='true' virtual="true"  visible ="true">
+                <Size x="400" y="16"/>
+                <HighlightTexture parentKey="highlight" alphaMode ="ADD" file ="Interface\FriendsFrame\UI-FriendsFrame-HighlightBar">
+                    <Size x="400" y="16"/>
+             
+                    <TexCoords left="0" right="1" top="0" bottom="1"/>
+                </HighlightTexture>
+                <ButtonText name="$parentText" nonspacewrap="true"  Text="EEEE" visible ="true" parentKey="Text">
+                    <Size x="0" y="0"/>
+                    <Anchors>
+                        <Anchor point="LEFT" x="0" y="0"/>
+                    </Anchors> 
+                </ButtonText>        
+                <NormalFont style="GameFontHighlightLeft"/>
+                <HighlightFont style="GameFontHighlightLeft"/>
+                <DisabledFont style="GameFontHighlightLeft"/>
+            </Button>
+
+            
+        </Frames>
+            <Layers>
+                <Layer level="BACKGROUND">
+                    <FontString  parentKey="TextRight" inherits="GameFontHighlight" visible ="true" wraponspaces="false" justifyH="RIGHT" text=""> 
+                        <Size>
+                        <AbsDimension x="505" y="14"/>
+                        </Size>
+                        <Anchors>
+                        <Anchor point="RIGHT">
+                            <Offset>
+                                <AbsDimension x="-25" y="0"/>
+                            </Offset>
+                        </Anchor>
+                        </Anchors>
+                    </FontString>
+                </Layer>  
+            </Layers>                
+    </Frame>
 	<Button name="DugisOnOffButton" parent = "UIParent"  movable="true" enableMouse='true' frameStrata="MEDIUM" >
 		<Size x="32" y="32"/>
 		<NormalTexture file ="Interface\AddOns\DugisGuideViewerZ\Artwork\iconbutton.tga"/>
@@ -1680,31 +1709,53 @@
 						</Anchors>
 					</Frame>
 					
-					<ScrollFrame name="$parentLeftScrollFrame" parentKey="leftScroll" inherits="UIPanelScrollFrameCodeTemplate" visible="false">
-						<Anchors>
-							<Anchor point="TOPLEFT" relativeTo="$parentLeftFrameHost"/>
-							<Anchor point="BOTTOMRIGHT" relativeTo="$parentLeftFrameHost"/>
+                    
+                    
+                    <Frame name ="CurrentGuideTabContent"  movable ="true" visible="true"> 
+						<Size x="350" y="356"/>
+                        
+                        <Frames>
+                            <ScrollFrame name="DugisMainLeftScrollFrame" parentKey="leftScroll" inherits="UIPanelScrollFrameCodeTemplate" visible="true">
+                                <Frames>
+                                    <Slider name="$parentScrollBar" inherits="MinimalScrollBarTemplate" parentKey="bar">
+                                        <Anchors>
+                                            <Anchor point="TOPRIGHT" x="25" y="-14"/>
+                                            <Anchor point="BOTTOMRIGHT" x="25" y="20"/>
+                                        </Anchors>
+                                        <Scripts>
+                                            <OnLoad>
+                                                self.trackBG:SetVertexColor(0.2, 0.13, 0.08, 0);
+                                            </OnLoad>		
+                                        </Scripts>
+                                    </Slider>
+                                </Frames>
+                                <Scripts>
+                                    <OnMouseWheel>
+                                        Dugis_OnMouseWheel(self, delta);
+                                    </OnMouseWheel>
+                                </Scripts>
+                                <Layers>
+                                    <Layer level="ARTWORK" >
+                                        <Texture file="Interface\Buttons\UI-OptionsButton" parentKey="currentGuideIcon">
+                                            <Size x="32" y="32"/>
+                                            <Anchors>
+                                                <Anchor point="TOPLEFT" x="23" y="10"/>
+                                            </Anchors>
+                                        </Texture>
+                                        <FontString parentKey="guideType" inherits="QuestFont_Super_Huge" justifyH="LEFT" hidden="false" text="">
+                                            <Anchors>
+                                                <Anchor point="TOPLEFT" x="48" y="-10"/>
+                                            </Anchors>
+                                            <Color r="0.961" g="0.824" b="0.412"/>
+                                        </FontString>                            
+                                    </Layer>
+                                </Layers>
+                                
+                            </ScrollFrame>
+                        </Frames>
+					</Frame>    
+                    
 
-						</Anchors>
-						<Frames>
-							<Slider name="$parentScrollBar" inherits="MinimalScrollBarTemplate" parentKey="bar">
-								<Anchors>
-									<Anchor point="TOPRIGHT" x="25" y="-14"/>
-									<Anchor point="BOTTOMRIGHT" x="25" y="20"/>
-								</Anchors>
-								<Scripts>
-									<OnLoad>
-										self.trackBG:SetVertexColor(0.2, 0.13, 0.08, 0);
-									</OnLoad>		
-								</Scripts>
-							</Slider>
-						</Frames>
-						<Scripts>
-							<OnMouseWheel>
-								Dugis_OnMouseWheel(self, delta);
-							</OnMouseWheel>
-						</Scripts>
-					</ScrollFrame>
 					
 					<Frame name="$parentRightFrameHost" parentKey="rightFrameHost">
 						<Anchors>

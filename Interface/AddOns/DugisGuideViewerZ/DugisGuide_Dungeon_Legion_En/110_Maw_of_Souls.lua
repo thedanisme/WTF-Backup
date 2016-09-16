@@ -8,6 +8,7 @@ K (npc:96756) |SID|29340| |N|Kill (npc:96756) in {Maw of Souls}<br/><b>Be aware 
 N (item:139619) |QID|43586| |N|Collect (item:139619) from (npc:96756) (51.85, 24.73)| |L|139619| |NPC|96756| |O| |C|Warrior|
 
 R The Naglfar |SID|29341| |N|Click on the horn to get transferred to {The Naglfar}<br/><b> (55.75, 23.83)| |Z|1042 1| |F|1042 2|
+C Ancient Vrykul Legends |QID|43253.1| |N|Click The Raven's Eye Tablet (55.25,66.39)| |Z|1042 2| |C|Rogue| |O|
 K (npc:96754) |SID|29341| |N|Kill (npc:96754) in {The Naglfar}<br/><b>Interrupt the Shackled Servitor's (spell:194266) when possible<br/><b><br/><b>Avoid the (spell:194216) when it is aimed near you<br/><b>Tank: Move Harbaron to the (npc:98693) so DPS players can cleave<br/>(74.47, 58.60)| |Z|1042 3| |NPC|96754|
 K (npc:96759) |SID|34461| |N|Kill (npc:96759) in {The Naglfar}<br/><b>During the first phase, quickly move to and kill the (npc:99801)<br><b>During and after the Submerged phase, avoid the (spell:197858) and move away from (npc:100188)<br/><b>Interrupt (spell:198495) when possible<br/><b>Avoid (spell:227233) by watching for Helya's facing and moving to a safe space (17.70, 53.02)| |Z|1042 3| |NPC|96759|
 

@@ -202,16 +202,16 @@ T Whispers in the Void |QID|43372| |N|(npc:110564) in {The Hall of Balance} (51.
 A The Best and Brightest |QID|43373| |N|(npc:110557) in {The Hall of Balance} (47.81,47.52)| |Z|1040 1| |NPC|110564|
 
 R Azsuna |QID|43373| |N|Travel to {Azsuna} (63.36,33.82)| |Z|1015 0|
-N (npc:110751) |QID|43373| |N|Find (npc:110751) in {Azsuna}  (63.36,33.82) (57.90,35.54)| |Z|1015 0| |NPC|110751|
-T The Best and Brightest |QID|43373| |N|(npc:110686) in {Azsuna}  (63.36,33.82) (57.90,35.54)| |Z|1015 0| |NPC|110686|
-A Murloc Mind Control |QID|43374| |N|(npc:110686) in {Azsuna}  (58.54,37.17)| |Z|1015 0| |NPC|110686|
-A An Ample Supply |QID|43375| |N|(npc:110686) in {Azsuna}  (58.54,37.17)| |Z|1015 0| |NPC|110686|
-C Murloc Mind Control |QID|43374| |N|Use (spell:605) on a (npc:88099) and then use the (spell:220326) ability to rescue (npc:112487) from the murlocs within  {El'dranil Shallows}  (50.47,36.13)| |Z|1015 0| |NPC|110686|
+N (npc:110751) |QID|43373| |N|Find (npc:110751) in {Azsuna} (63.36,33.82) (57.90,35.54)| |Z|1015 0| |NPC|110751|
+T The Best and Brightest |QID|43373| |N|(npc:110686) in {Azsuna} (63.36,33.82) (57.90,35.54)| |Z|1015 0| |NPC|110686|
+A Murloc Mind Control |QID|43374| |N|(npc:110686) in {Azsuna} (58.54,37.17)| |Z|1015 0| |NPC|110686|
+A An Ample Supply |QID|43375| |N|(npc:110686) in {Azsuna} (58.54,37.17)| |Z|1015 0| |NPC|110686|
+C Murloc Mind Control |QID|43374| |N|Use (spell:605) on a (npc:88099) and then use the (spell:220326) ability to rescue (npc:112487) from the murlocs within {El'dranil Shallows} (50.47,36.13)| |Z|1015 0| |NPC|110686|
 C An Ample Supply |QID|43375| N|Collect 12 (item:139458) from the supply crates around this area (50.12,36.33)| |Z|1015 0| |POI|
 
-T An Ample Supply |QID|43375| |N|(npc:110686) in {Azsuna}  (58.54,37.17)| |Z|1015 0| |NPC|110686|
-T Murloc Mind Control |QID|43374| |N|(npc:112487) in {Azsuna}  (58.56,37.11)| |Z|1015 0| |NPC|112487| 
-A Problem Salver |QID|43376| |N|(npc:112487) in {Azsuna}  (58.56,37.11)| |Z|1015 0| |NPC|112487| 
+T An Ample Supply |QID|43375| |N|(npc:110686) in {Azsuna} (58.54,37.17)| |Z|1015 0| |NPC|110686|
+T Murloc Mind Control |QID|43374| |N|(npc:112487) in {Azsuna} (58.56,37.11)| |Z|1015 0| |NPC|112487| 
+A Problem Salver |QID|43376| |N|(npc:112487) in {Azsuna} (58.56,37.11)| |Z|1015 0| |NPC|112487| 
 C Problem Salver |QID|43376| |N|Use the (item:139463) on (npc:110818) bodies on the ground (58.56,37.11)| |Z|1015 0| |NPC|110818| |U|139463|
 T Problem Salver |QID|43376| |N|(npc:110687) in {Azsuna} (47.11,43.99)| |Z|1015 0| |NPC|110687| 
 A Champion: Yalia Sagewhisper |QID|42137| |N|Speak to (npc:110687) to recruit as a follower in {Azsuna} (47.11,43.99)| |Z|1015 0| |NPC|110687| |E|
@@ -238,11 +238,199 @@ N Release the Spark of Light |QID|43377.3| |N|Use the (spell:220881) ability wit
 
 T The Light Within |QID|43377| |N|(npc:110864) in the {Sanctuary of Light} (75.90,40.72)| |Z|1040 1| |NPC|110864|
 A Awakening the Light |QID|43383| |N|(npc:110864) in the {Sanctuary of Light} (75.90,40.72)| |Z|1040 1| |NPC|110864|
-C Awakening the Light |QID|43383| |N|Complete "Holy Ground" Missions to collect 5 (item:139368). Each mission takes 16 hours to complete  (50.59,48.00)| |Z|1040 1| |NPC|110864|
+C Awakening the Light |QID|43383| |N|Complete "Holy Ground" Missions to collect 5 (item:139368). Each mission takes 16 hours to complete (50.59,48.00)| |Z|1040 1| |NPC|110864|
 T Awakening the Light |QID|43383| |N|(npc:110864) in the {Sanctuary of Light} (75.90,40.72)| |Z|1040 1| |NPC|110864|
 A Champion: Sol |QID|43380| |N|Speak to (npc:110457) to recruit as a follower (73.94,40.68)| |Z|1040 1| |E| |NPC|110457|
 
 N Level 110 Required |N|You need to be at least level 110 to continue with the class campaign quest line| |PL|110|
+
+A Infiltrating Our Enemies |QID|43385| |N|(npc:110564) in {The Hall of Balance} (51.55,47.78)| |Z|1040 1| |NPC|110564|
+----
+A Goddess Watch Over You |N|(npc:113686) will appear next to you| |NPC|113686| |OID|44337, 44338|
+A Goddess Watch Over You |QID|44337| |N|(npc:113686) will appear next to you| |NPC|113686| |O|
+A Goddess Watch Over You |QID|44338| |N|(npc:113686) will appear next to you| |NPC|113686| |O|
+N Switch Guide |QID|40890| |N|Complete the (guide:"1018(98-110)#1018(98-110)#1018(98-110)") until you complete the quest (qid:40890)|
+----
+N As you go... |AYG|44251| |N|Click on the Command Map and begin the (mission:1239) mission (51.55,47.78)| |Z|1040 1| |QID|43385|
+A Hitting the Books |QID|43884| |N|(npc:111738) in {The Hall of Balance} (59.83,28.08)| |Z|1040 1| |NPC|111738|
+C Hitting the Books |QID|43884.1| |N|Speak to (npc:111738) and start a research work order (59.83,28.08)| |Z|1040 1| |NPC|111738|
+T Hitting the Books |QID|43884| |N|(npc:111738) in {The Hall of Balance} (59.83,28.08)| |Z|1040 1| |NPC|111738|
+A Power Word: Armor |QID|44251| |N|(npc:112401) in {The Hall of Balance} (38.64,23.83)| |Z|1040 1| |NPC|112401|
+T Power Word: Armor |QID|44251| |N|(npc:112401) in {The Hall of Balance} (38.64,23.83)| |Z|1040 1| |NPC|112401|
+-----
+R Dalaran |OID|44448| |N|Travel to {Dalaran} (28.46,48.33)| |Z|1014 10| |NPC|90417| 
+T Goddess Watch Over You |QID|44337| |N|(npc:90417) in {Dalaran} (28.46,48.33)| |Z|1014 10| |NPC|90417| |O|
+T Goddess Watch Over You |QID|44338| |N|(npc:90417) in {Dalaran} (28.46,48.33)| |Z|1014 10| |NPC|90417| |O|
+A In the House of Light and Shadow |QID|44448| |N|(npc:90417) in {Dalaran} (28.46,48.33)| |Z|1014 10| |NPC|90417| 
+C In the House of Light and Shadow |QID|44448| |N|Take the Tears of Elune to Light's Heart in your Order Hall (45.32,30.18)| |Z|1035 1|
+T In the House of Light and Shadow |QID|44448| |N|(npc:90417) in {Dalaran} (28.49,48.33)| |Z|1014 10| |NPC|90417| 
+----
+R The Hall of Balance |QID|43385| |N|Travel to {The Hall of Balance} (51.55,47.78)| |Z|1040 1|
+C Infiltrating Our Enemies |QID|43385| |N|Click on the Command Map and complete the (mission:1239) mission (51.55,47.78)| |Z|1040 1|
+T Infiltrating Our Enemies |QID|43385| |N|(npc:110564) in {The Hall of Balance} (51.55,47.78)| |Z|1040 1| |NPC|110564|
+A Onslaught Envoy |QID|43386| |N|(npc:110564) in {The Hall of Balance} (51.55,47.78)| |Z|1040 1| |NPC|110564|
+
+R New Hearthglen |QID|43387| |N|Travel to {New Hearthglen} (71.44,71.81)| |Z|488 0| 
+T Onslaught Envoy |QID|43386| |N|(npc:110683) in {New Hearthglen} (71.44,71.81)| |Z|488 0| |NPC|110683|
+A Scarlet Redemption |QID|43387| |N|(npc:110683) in {New Hearthglen} (71.44,71.81)| |Z|488 0| |NPC|110683|
+A Apostate Liberation |QID|43388| |N|(npc:111191) in {New Hearthglen}, next to you| |Z|488 0| |NPC|111191|
+C Apostate Liberation |QID|43388| |N|Click on the cages to rescue 6 (npc:43388) in {New Hearthglen} (71.22,72.20)| |Z|488 0| |NPC|43388|
+T Apostate Liberation |QID|43388| |N|(npc:111191) in {New Hearthglen}, next to you| |Z|488 0| |NPC|111191|
+K (npc:111159) |QID|43387.2| |N|Kill (npc:111159) in {New Hearthglen} (70.44,73.37) (69.68,74.73) (70.86,75.65) (71.08,77.90)| |Z|488 0| |NPC|111191|
+C Scarlet Redemption |QID|43387.1| |N|Kill 20 Scarlet Onslaught Members in {New Hearthglen} (69.68,74.73)| |Z|488 0|
+T Scarlet Redemption |QID|43387| |N|(npc:111191) in {New Hearthglen}, next to you| |Z|488 0| |POI|
+A Unexpected Guests |QID|43389| |N|(npc:111191) in {New Hearthglen}, next to you| |Z|488 0| |POI|
+
+R The Hall of Balance |TID|43389| |N|Travel to {The Hall of Balance} (51.55,47.78)| |Z|1040 1|
+T Unexpected Guests |QID|43389| |N|(npc:110564) in {The Hall of Balance} (51.55,47.78)| |Z|1040 1| |NPC|110564|
+A Champion: Mariella Ward |QID|43381| |N|(npc:111215) in {The Hall of Balance} (51.17,49.52)| |Z|1040 1| |NPC|111215| |E|
+A Forgotten Shadows |QID|43390| |N|(npc:110564) in {The Hall of Balance} (51.55,47.78)| |Z|1040 1| |NPC|110564|
+
+R Raven Hill Cemetery |QID|43390| |N|Travel to {Raven Hill Cemetery} in {Duskwood} (24.14,37.78)| |Z|34 0|
+T Forgotten Shadows |QID|43390| |N|(npc:111041) in {Raven Hill Cemetery} (24.14,37.78)| |Z|34 0| |NPC|111041|
+A Secrets of the Void |QID|43391| |N|(npc:111041) in {Raven Hill Cemetery} (24.14,37.78)| |Z|34 0| |NPC|111041|
+K (npc:111284) |QID|43391.1| |N|Kill (npc:111284) and collect (item:) in {} (58.22,30.12)| |Z|34 0| |NPC|111284|
+
+R Brightwood Grove |QID|43392| |N|Travel to {Brightwood Grove} (24.15,37.79)| |Z|34 0| 
+T Secrets of the Void |QID|43391| |N|(npc:111041) in {Brightwood Grove} (24.15,37.79)| |Z|34 0| |NPC|111041|
+A Into the Void |QID|43392| |N|(npc:111041) in {Brightwood Grove} (24.15,37.79)| |Z|34 0| |NPC|111041|
+N Natalie's Journal |QID|43392.1| |N|Read Natalie's Journal at the Altar of Shadow (23.62,35.00) (27.05,34.15)| |Z|34 0| 
+N Follow the Void Trail |QID|43392.2| |N|Follow the Void Trail in {Forlorn Rowe} (25.73,33.82) (25.55,32.08) (23.46,28.00) (20.38,27.07) (18.79,25.02) (17.20,28.24)| |Z|34 0|
+K (npc:111308) |QID|43392.3| |N|Kill (npc:111308) to free her spirit in {Forlorn Rowe} (16.52,31.10)| |Z|34 0|
+
+R Raven Hill Cemetery |OID|43393| |N|Travel to {Raven Hill Cemetery} (24.28,37.78)| |Z|34 0| 
+T Into the Void |QID|43392| |N|(npc:110684) in {Raven Hill Cemetery} (24.28,37.78)| |Z|34 0| |NPC|110684|
+A Champion: Natalie Seline |QID|43382| |N|Speak to (npc:110684) to recruit a follower in {Raven Hill Cemetery} (24.28,37.78)| |Z|34 0| |NPC|110684| |E|
+A Rising Shadows |QID|43393| |N|(npc:110684) in {Raven Hill Cemetery} (24.28,37.78)| |Z|34 0| |NPC|110684|
+
+R Netherlight Temple |QID|43394| |N|Travel to {Netherlight Temple} (49.81,59.77)| |Z|1040 1|
+A Crossing Legion Lines |QID|43394| |N|(npc:111044) in {Netherlight Temple} (49.81,59.77)| |Z|1040 1| |NPC|111044|
+T Rising Shadows |QID|43393| |N|(npc:110564) in {The Hall of Balance} (51.55,47.78)| |Z|1040 1| |NPC|110564|
+
+R Felblaze Ingress |QID|43394.1| |N|Use the {Felblaze Ingress} portal in {Azsuna} (67.21,27.75)| |Z|1015 0|
+N (npc:110749) |QID|43394.2| |N|Free (npc:110749) in {Felblaze Ingress} (46.49,56.78) (48.85,63.75)| |Z|1047 0|
+T Crossing Legion Lines |QID|43394| |N|(npc:110749) in {Felblaze Ingress} (46.49,56.78) (48.85,63.75)| |Z|1047 0|
+A The Mind of the Enemy |QID|43396| |N|(npc:110969) in {Felblaze Ingress}, next to you|
+A Allies of the Light |QID|43395| |N|(npc:110969) in {Felblaze Ingress}, next to you|
+N Discover the Image of Velen |QID|43396.3| |N|Click on Image of Velen in {Felblaze Ingress} (41.49,54.04) (39.84,46.13) (42.69,46.43)| |Z|1047 0|
+N Discover the Star Map |QID|43396.2| |N|Click Star Map in {Felblaze Ingress} (40.24,40.97)| |Z|1047 0|
+N Discover the Legion Intelligence |QID|43396.1| |N|Click Legion Intelligence in {Felblaze Ingress} (44.12,38.22)| |Z|1047 0|
+N (npc:110866) |QID|43395.3| |N|Click cage to rescue (npc:110866) (43.61,34.73) (42.57,21.38)| |Z|1047 0| |NPC|110866|
+N (npc:110980) |QID|43395.3| |N|Click cage to rescue (npc:110980) (43.70,17.70)| |Z|1047 0| |NPC|110980|
+K (npc:110972) |QID|43396.4| |N|Kill (npc:110972) in {Felblaze Ingress} (44.34,28.52) (46.06,33.00) (39.20,37.90) (30.05,48.21) (24.03,50.14) (24.06,46.58)| |Z|1047 0| |NPC|110972|
+N Rescue 15 Allies |QID|43395.1| |N|<b>Use your Healing abilities on (npc:110978)<br/><b>Use your Purify Disease ability on Diseased Silver Hand Knight (36.03,45.98)| |Z|1047 0|
+
+R The Hall of Balance |QID|43397| |N|Travel to {The Hall of Balance} (51.55,47.78)| |Z|1040 1|
+T The Mind of the Enemy |QID|43396| |N|(npc:110564) in {The Hall of Balance} (51.55,47.78)| |Z|1040 1| |NPC|110564|
+T Allies of the Light |QID|43395| |N|(npc:110564) in {The Hall of Balance} (51.55,47.78)| |Z|1040 1| |NPC|110564|
+A United As One |QID|43397| |N|(npc:110564) in {The Hall of Balance} (51.55,47.78)| |Z|1040 1| |NPC|110564|
+
+R Light's Hope Chapel |QID|43397.1| |N|Travel to {Light's Hope Chapel} (75.43,52.64)| |Z|23 0|
+N Travel to Light's Hope Chapel |QID|43397.1| |N|Click the Secret Door and run down the stairs in {Light's Hope Chapel} (41.41,90.58)| |Z|23 20| 
+N (npc:111616) QID|43397.2| |N|Speak to (npc:111616) in {Light's Hope Chapel} (50.23,74.07)| |Z|23 20|
+C United As One |QID|43397.3| |N|Hear the council of war in {Light's Hope Chapel} (50.23,74.07)| |Z|23 20|
+T United As One |QID|43397| |N|(npc:111616) in {Light's Hope Chapel} (50.23,74.07)| |Z|23 20| |NPC|111616|
+A Aiding the Conclave |QID|43797| |N|(npc:111616) in {Light's Hope Chapel} (50.23,74.07)| |Z|23 20| |NPC|111616|
+
+R The Hall of Balance |QID|43832| |N|Travel to {The Hall of Balance} (51.55,47.78)| |Z|1040 1|
+T Aiding the Conclave |QID|43797| |N|(npc:110564) in {The Hall of Balance} (51.55,47.78)| |Z|1040 1| |NPC|110564|
+A Elixirs of Aid |QID|43832| |N|(npc:110564) in {The Hall of Balance} (51.55,47.78)| |Z|1040 1| |NPC|110564|
+A Fortifying the Temple |QID|43399| |N|(npc:110564) in {The Hall of Balance} (51.55,47.78)| |Z|1040 1| |NPC|110564|
+A Lumenstone |QID|43400| |N|(npc:109776) in {The Hall of Balance} (51.49,45.91)| |Z|1040 1| |NPC|109776|
+N As you go... |AYG|43399| |N|Begin the "Lumenstone: Suramar City" mission, This mission will take up to 12 hours to complete| |QID|43400|
+N (item;124120) |QID|43832| |N|Kill (npc:107098) and collect 100 (item:124120) in {Azsuna} (49.63,25.46)| |Z|1015 0| |L|124120 100| |NPC|107098|
+C Elixirs of Aid |QID|43832.1| |N|Give 100 (item:124120) to (npc:110564) in {The Hall of Balance} (51.55,47.78)| |Z|1040 1| |NPC|110564|
+T Elixirs of Aid |QID|43832| |N|(npc:110564) in {The Hall of Balance} (51.55,47.78)| |Z|1040 1| |NPC|110564|
+C Fortifying the Temple |QID|43399| |N|Complete 30 world quests|
+C Lumenstone |N|Complete the "Lumenstone: Suramar City" mission until you collect 50 (item:140191) this mission will take up to 12 hours to complete (50.56,48.13)| |QID|43400|
+T Fortifying the Temple |QID|43399| |N|(npc:110564) in {The Hall of Balance} (51.55,47.78)| |Z|1040 1| |NPC|110564|
+T Lumenstone |QID|43400| |N|(npc:109776) in {The Hall of Balance} (51.49,45.91)| |Z|1040 1| |NPC|109776|
+A A Light in the Darkness |QID|43401| |N|(npc:110564) in {The Hall of Balance} (51.55,47.78)| |Z|1040 1| |NPC|110564|
+
+R Dalaran |QID|43401| |N|Travel to {Dalaran} (49.99,46.33)| |Z|1014 10|
+N (npc:110557) |QID|43401.2| |N|Speak to (npc:110557) {Dalaran} (49.99,46.33)| |Z|1014 10| |NPC|110557|
+N (npc:111044) |QID|43401.1| |N|Speak to (npc:111044) {Dalaran} (72.75,43.12)| |Z|1014 10| |NPC|111044|
+
+R Netherlight Temple |QID|43401.3| |N|Use the Portal to {Netherlight Temple} (39.52,57.30)| |Z|1014 10|  
+N Join the Battle at Netherlight Temple |SID|0|1| |N|Join the Battle at Netherlight Temple (49.90,61.22)| |QID|43401| |Z|1040 1|
+K (npc:111245) |SID|31353|2| |N|Kill (npc:111245) in {Netherlight Temple} (32.54,40.72) (23.49,40.72)| |QID|43401| |Z|1040 1|
+K (npc:111244) |SID|31352|2| |N|Kill (npc:111245) in {Netherlight Temple} (32.99,40.68) (67.00,40.65) (76.11,40.52)| |QID|43401| |Z|1040 1| |NPC|111245|
+N Destroy the Southeastern Portal |SID|32409|3| |N|Click on the (npc:112574) (61.18,55.80)| |QID|43401| |Z|1040 1| |NPC|112574|
+N Destroy the Southwestern Portal |SID|31355|3| |N|Click on the (npc:112574) (39.99,57.67)| |QID|43401| |Z|1040 1| |NPC|112574|
+N Destroy the Northwestern Portal |SID|32407|3| |N|Click on the (npc:112574) (38.70,26.18)| |QID|43401| |Z|1040 1| |NPC|112574|
+N Destroy the Northeastern Portal |SID|32408|3| |N|Click on the (npc:112574) (59.55,24.31)| |QID|43401| |Z|1040 1| |NPC|112574|
+K (npc:111247) |N|Kill (npc:111247) in {Netherlight Temple} (49.85,37.24)| |QID|43401| |Z|1040 1| |NPC|111247|
+T A Light in the Darkness |QID|43401| |N|(npc:110564) in {The Hall of Balance} (51.55,47.78)| |Z|1040 1| |NPC|110564|
+A High Priest of Netherlight |QID|43402| |N|(npc:110564) in {The Hall of Balance} (51.55,47.78)| |Z|1040 1| |NPC|110564|
+C High Priest of Netherlight |QID|43402.1| |N|Celebrate your Victory (51.53,47.81)| |Z|1040 1| |NPC|
+T High Priest of Netherlight |QID|43402| |N|(npc:110564) in {The Hall of Balance} (51.55,47.78)| |Z|1040 1| |NPC|110564|
+----
+A Awakenings |QID|44464| |N|(npc:113857) in {The Hall of Balance} (49.81,26.41)| |Z|1040 1| |NPC|113857|
+
+R Val'sharah |QID|44464| |N|Travel {Val'sharah} (54.40,73.17)| |Z|1018 0|
+C Awakenings |QID|44464.1| |N|Travel to {Val'sharah} and use (spell:226956) to witness the awakening of Illidan Stormrage (54.40,73.17)| |Z|1018 0|
+
+T Awakenings |QID|44464| |N|(npc:113857) in {The Hall of Balance} (49.81,26.41)| |Z|1040 1| |NPC|113857|
+----
+A An Unclear Path |QID|44466| |N|(npc:113857) in {The Hall of Balance} (49.81,26.41)| |Z|1040 1| |NPC|113857|
+
+R Val'Shara |QID|44466| |N|Travel to {Val'Shara} (54.96,53.43) (53.29,49.94) (52.11,43.99)| |Z|1018 0|
+N Witness Illidan's Resilience |QID|44466.1| |N|Use (spell:226956) to witness the awakening of Illidan Resilience (45.54,34.75)| |Z|1018 0|
+
+R The Hall of Balance |OID|44479| |N|Travel to {The Hall of Balance} (45.32,30.18)| |Z|1040 1|
+T An Unclear Path |QID|44466| |N|(npc:113857) in {The Hall of Balance} (49.81,26.41)| |Z|1040 1| |NPC|113857|
+A Ravencrest's Legacy |QID|44479| |N|(npc:113857) in {The Hall of Balance} (49.81,26.41)| |Z|1040 1| |NPC|113857|
+R Val'Shara |QID|44479| |N|Travel to {Val'Shara} (54.96,53.43)| |Z|1018 0|
+N (spell:226956) |N|Go to the destination to use (spell:226956) to begin the Ravencrest's Legacy scenario (54.96,53.43) (52.81,50.41) (46.98,50.23) (44.28,49.94) (42.08,46.29)| |Z|1018 0| |QID|44479|
+N Report to Kur'talos Ravencrest |SID|33154|1| |N|Report to (npc:113046) in {Ravencourt}| |QID|44479| |NPC|113046|
+N Repair the Deactivated Moon Guard Portal |SID|33155|2| |N|Click Deactivated Moon Guard Portal in {Ravencourt}| |QID|44479|
+K (npc:113555) |SID|33162|3| |N|Secure the Rampart by Defeating (npc:113555) (42.95,46.32) (44.27,49.58)| |Z|1099 0| |QID|44479|
+N Enter the Upper Ramparts of the Courtyard |SID|33169|4| |N|Follow the path to the upper ramparts of the courtyard (44.28,49.76) (44.51,51.22 )| |Z|1099 0| |QID|44479|
+N Activate the Moon Guard Portal |SID|33174|5| |N|Click on Deactivated Moon Guard Portal in each waypoint (44.51,51.22) (40.98,51.48) (43.71,50.93)| |Z|1099 0| |QID|44479|
+K (npc:114137) |SID|33184|6| |N|Use (spell:227154) to kill (npc:114137) to end the invasion (43.09,52.18)| |Z|1099 0| |QID|44479| |NPC|114137|
+
+R Mausoleum |QID|44414| |N|Travel to {Mausoleum} (38.75, 53.07)| |Z|1099 0| 
+A Felspawns of Lothros |QID|44414| |N|(npc:113361) in {Mausoleum} (38.75, 53.07)| |Z|1099 0| |NPC|113361|
+C Felspawns of Lothros |QID|44414| |N|Defeat (npc:113786) in {Mausoleum} (40.63, 53.01)| |Z|1099 0| |NPC|113786|
+T Felspawns of Lothros |QID|44414| |N|(npc:113361) in {Mausoleum} (40.42, 53.01)| |Z|1099 0| |NPC|113361|
+A The Red Axe |QID|44415| |N|(npc:113361) in {Mausoleum} (40.42, 53.01)| |Z|1099 0| |NPC|113361|
+C The Red Axe |QID|44415| |N|Close the Unstable Portals and make your way to (npc:113355) (41.37, 49.89)| |Z|1099 0| |NPC|113355|
+T The Red Axe |QID|44415| |N|(npc:113355) in {Mausoleum} (43.80, 50.40)| |Z|1099 0| |NPC|113355|
+A Hunter of Night |QID|44416| |N|(npc:113355) in {Mausoleum} (43.84, 50.41)| |Z|1099 0| |NPC|113355|
+C Hunter of Night |QID|44416| |N|Defeat (npc:113825) in {Mausoleum} (43.29, 50.45)| |Z|1099 0| |NPC|113825|
+T Hunter of Night |QID|44416| |N|(npc:113355) in {Mausoleum} (41.59, 50.53)| |Z|1099 0| |NPC|113355|
+
+R Raven's Glory |QID|44479| |N|Travel to {Raven's Glory} (42.86, 50.56) (42.97, 48.79)| |Z|1099 0|
+C When Good Men Do Nothing |SID|33186| |N|Enter Raven's Glory and use (spell:227236) to destroy the Colossal Siegebreaker in {Raven's Glory} (42.97, 48.79)| |Z|1099 0| |QID|44479|
+
+R The Hall of Balance |OID|44480| |N|Travel to {The Hall of Balance} (45.32,30.18)| |Z|1040 1|
+T Ravencrest's Legacy |QID|44479| |N|(npc:113857) in {The Hall of Balance} (49.81,26.41)| |Z|1040 1| |NPC|113857|
+A In My Father's House |QID|44480| |N|(npc:113857) in {The Hall of Balance} (49.81,26.41)| |Z|1040 1| |NPC|113857|
+
+R Temple of Zin-Malor |QID|44480| |N|Travel to {Temple of Zin-Malor} (35.11, 49.88)| |Z|181 0|
+C In My Father's House |QID|44480| |N|Use (spell:226956) witness Illidan's Sacrifice in Azshara on the continent of Kalimdor (35.11, 49.88) | |Z|816 0|
+
+R The Hall of Balance |TID|44480| |N|Travel to {The Hall of Balance} (45.32,30.18)| |Z|1040 1|
+T In My Father's House |QID|44480| |N|(npc:113857) in {The Hall of Balance} (49.81,26.41)| |Z|1040 1| |NPC|113857|
+A Destiny Unfulfilled |QID|44497| |N|(npc:113857) in {The Hall of Balance} (49.81,26.41)| |Z|1040 1| |NPC|113857|
+
+R The Black Temple |QID|44497| |N|Travel to {The Black Temple} (72.97, 44.12)| |Z|473 0|
+N (spell:226956) |N|Use (spell:226956) in {The Black Temple} (72.97, 44.12)| |Z|473 0| |F|1085 1| |QID|44497| 
+C Examine the Skull of Gul'dan. |SID|32029|1| |N|Examine the Skull of Gul'dan in {Temple Summit} (52.70, 71.26)| |Z|1085 1| |QID|44497| 
+C Confront Akama |SID|31955|1| |N|Confront Akama in {Temple Summit} (52.70, 71.26)| |Z|1085 1| |QID|44497| 
+C You Are Not Prepared! |SID|0|2| |N|Survive until your reinforcements arrive in {Temple Summit} (52.92, 60.84)| |Z|1085 1| |QID|44497| 
+C To The Skies |SID|32682|3| |N|Summon the (npc:22997) and defend it in {Temple Summit} (55.95, 75.70)| |Z|1085 1| |NPC|22997| |QID|44497| 
+C The Final Countdown |SID|32867|4| |N|Use Metamorphosis ability in {Temple Summit} (54.48, 72.76)| |Z|1085 1| |QID|44497| 
+C The Demon Within |SID|32865|5| |N|Destroy the Warlocks in {Temple Summit} (52.27, 64.57)| |Z|1085 1| |QID|44497| 
+C Defeat Maiev |SID|32942|6| |N|Defeat (npc:112867) in {Temple Summit} (52.16, 69.92)| |Z|1085 1| |NPC|112867| |QID|44497| 
+C Destiny Unfulfilled |QID|44497| |N|Witness True Betrayal in Shadowmoon Valley on the fringes of Outland., in {Temple Summit} (52.16, 69.92)| |Z|1085 1|
+
+R The Hall of Balance |TID|44496| |N|Travel to {The Hall of Balance} (45.32,30.18)| |Z|1040 1|
+T Destiny Unfulfilled |QID|44496| |N|(npc:113857) in {The Hall of Balance} (49.81,26.41)| |Z|1040 1| |NPC|113857|
+----
+A Champion Armaments |QID|44229| |N|(npc:110595) in {The Hall of Balance}. This quest will only be available if you chose to get the "Armaments of Light" class hall upgrade (45.49,26.63)| |Z|1040 1| |NPC|110595|
+C Champion Armaments |QID|44229| |N|Speak to (npc:110595) place a work order for Champion Armaments (45.49,26.63)| |Z|1040 1| |NPC|110595|
+T Champion Armaments |QID|44229| |N|(npc:110595) in {The Hall of Balance} (45.49,26.63)| |Z|1040 1| |NPC|110595|
 
 N Guide Complete
 

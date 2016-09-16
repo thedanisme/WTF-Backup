@@ -468,7 +468,7 @@ function WMT:Initialize()
 				function() return DGV.chardb.RareCreatureTrackingEnabled end,
 				function(value) DGV.chardb.RareCreatureTrackingEnabled = value end
 	end
-
+	
 	local petJournalLookup = {}
 	--_G["BATTLE_PET_NAME_"..i]
 	function DGV:PopulatePetJournalLookup()
@@ -1299,7 +1299,9 @@ function WMT:Initialize()
 
 	local orig_MiniMapTrackingDropDown_Initialize
 	function WMT:Load()
-		
+		LuaUtils:Delay(3, function()
+            DGV:PopulatePetJournalLookup()
+        end)
 		function WMT:UpdateTrackingMap()
 			if not WMT.loaded then return end
 			local mapName, level = GetMapInfo(), GetCurrentMapDungeonLevel()

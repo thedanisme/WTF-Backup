@@ -145,7 +145,7 @@ end
 --local LastGuideNumRows = 0
 local Debug = 0 --Print Debug Messages
 local Localize = 0	--Print Localization Error messages
-local SettingsRevision = 9
+local SettingsRevision = 10
 
 DugisGuideViewer.Debug = Debug and Debug>0 and 1 or nil
 DugisGuideViewer.ARTWORK_PATH = "Interface\\AddOns\\DugisGuideViewerZ\\Artwork\\"
@@ -1380,7 +1380,7 @@ local function GetSettingsCategoryFrame(category, parent)
     
     
     local function UpdateSettingsSearchHeight()
-        local _max = SettingsSearchTreeFrame.height - 200
+        local _max = SettingsSearchScroll.frame.wrapper.height
         
         if _max < 1 then
             _max = 1
@@ -1407,9 +1407,6 @@ local function GetSettingsCategoryFrame(category, parent)
             
         end
         
-        if SettingsSearchTreeFrame == nil then
-            CreateFrame("Frame", "SettingsSearchTreeFrame", SettingsSearchScroll.frame)
-        end
         
         if not SettingsSearch_SearchBox then
             CreateFrame("EditBox", "SettingsSearch_SearchBox", frame, "InputBoxTemplate")
@@ -1425,9 +1422,13 @@ local function GetSettingsCategoryFrame(category, parent)
                 local nodes = DugisGuideViewer:GetLocationsAndPortalsByText(SettingsSearch_SearchBox:GetText())
                 
                 --Passing data to tree frame       
-                GUIUtils:SetTreeFrameData(SettingsSearchTreeFrame, "SettingMenu", nodes, function(self)
+                GUIUtils:SetTreeData(SettingsSearchScroll.frame, nil, "SettingMenu", nodes, nil, nil, function(self)
+                    UpdateSettingsSearchHeight()
+
+                end, function(self)
+                    
                     DugisGuideViewer:RemoveAllWaypoints()
-                    local data = self.leafData.data
+                    local data = self.nodeData.data
                     if data.isPortal == true then
                         DugisGuideViewer:AddCustomWaypoint(data.x, data.y, "Portal " .. data.mapName, data.mapId, data.f)      
                     else
@@ -1438,40 +1439,29 @@ local function GetSettingsCategoryFrame(category, parent)
 					SettingsSearch_SearchBox:ClearFocus()
                 end)  
                 
-                GUIUtils:UpdateTreeVisualization(SettingsSearchTreeFrame)
-                
                 UpdateSettingsSearchHeight()
+                SettingsSearchScroll.frame.wrapper:UpdateTreeVisualization()
                 
-                if SettingsSearchTreeFrame.height > 200 then
+                if  SettingsSearchScroll.frame.wrapper.height > 200 then
                     SettingsSearchScroll.scrollBar:Show()
                 else
                     SettingsSearchScroll.scrollBar:Hide()
                 end
-                SettingsSearchTreeFrame:Show() 
+
+                SettingsSearchScroll.frame.wrapper:SetWidth(368)
+                SettingsSearchScroll.frame.wrapper:SetHeight(64)
+ 
+                SettingsSearchScroll.frame:SetHeight(291)
+                SettingsSearchScroll.scrollBar:SetHeight(261)
+                
+                SettingsSearchScroll.frame.content =SettingsSearchScroll.frame.wrapper
+                SettingsSearchScroll.frame:SetScrollChild(SettingsSearchScroll.frame.wrapper)  
             else
-                if SettingsSearchTreeFrame then
-                    SettingsSearchTreeFrame:Hide()
-                end
             end
         end)
         SettingsSearch_SearchBox:Show()
         
-        SettingsSearchTreeFrame:Show() 
-        SettingsSearchTreeFrame:SetParent(SettingsSearchScroll.frame)
-        SettingsSearchTreeFrame:SetWidth(368)
-        SettingsSearchTreeFrame:SetHeight(64)
-        
-        SettingsSearchTreeFrame.onNodeClick = function()
-            UpdateSettingsSearchHeight()
-        end
-        
-        SettingsSearchScroll.frame:SetHeight(291)
-        SettingsSearchScroll.scrollBar:SetHeight(261)
-        
-        SettingsSearchTreeFrame:SetPoint("TOPLEFT", SettingsSearchScroll.frame, "TOPLEFT", 0, 0)
-         
-        SettingsSearchScroll.frame.content = SettingsSearchTreeFrame
-        SettingsSearchScroll.frame:SetScrollChild(SettingsSearchTreeFrame)             
+          
     end
     
     if category == "Gear Scoring" and not DugisGearWeightsClassDropdownLabel then
@@ -3258,18 +3248,21 @@ function DugisGuideViewer:Button_OnEnter(frame)
 		rowNum = tonumber(rowNum)
 	end
 	if not rowNum then return end
-	id = self.visualRows[rowNum].Button.tag_id
-	tagType = self.visualRows[rowNum].Button.tagType
-	GameTooltip:SetOwner(frame, "ANCHOR_LEFT")
-	if tagType == "item" then
-	  	GameTooltip:SetItemByID(id)
-	elseif tagType == "spell" then
-		GameTooltip:SetSpellByID(id)
-	elseif tagType == "aid" then
-		GameTooltip:SetAchievementByID(id)
-	elseif tagType == "qid" then
-		GameTooltip:SetHyperlink(("quest:%s"):format(tostring(id)))	
-	end
+    
+    if self.visualRows and self.visualRows[rowNum] and self.visualRows[rowNum].Button then
+        id = self.visualRows[rowNum].Button.tag_id
+        tagType = self.visualRows[rowNum].Button.tagType
+        GameTooltip:SetOwner(frame, "ANCHOR_LEFT")
+        if tagType == "item" then
+            GameTooltip:SetItemByID(id)
+        elseif tagType == "spell" then
+            GameTooltip:SetSpellByID(id)
+        elseif tagType == "aid" then
+            GameTooltip:SetAchievementByID(id)
+        elseif tagType == "qid" then
+            GameTooltip:SetHyperlink(("quest:%s"):format(tostring(id)))	
+        end
+    end
 end
 
 function DugisGuideViewer:HideLargeWindow()	
@@ -3840,9 +3833,12 @@ function DugisGuideViewer:UpdateCurrentGuideExpanded()
         if highlightedRowTexture then
             highlightedRowTexture:SetTexCoord(0, 2, 0, 1)
         end
+        
+        guidesMainScroll.frame:Show()
     else
         DugisMainBorder.bg:SetTexture(SCROLLESS_BACKGROUND)
         DugisMainLeftScrollFrame:Hide()
+        guidesMainScroll.frame:Hide()
         DugisMainRightFrameHost:SetPoint("TOPLEFT", DugisMain, 8, -44)
         DugisMainLeftScrollFrame:Hide()
         CurrentGuideExpandButton:SetNormalTexture("Interface\\Buttons\\UI-SpellbookIcon-NextPage-Up");
@@ -3966,19 +3962,34 @@ function DugisGuideViewer:isLearnedSpell(spellIdToCheck)
     return isLearned
 end
 
---Returns structure for SetTreeFrameData
+--Returns structure for SetTreeData
 function DugisGuideViewer:GetLocationsAndPortalsByText(text)
     local nodes = {}
+    
+    local onClickFunction = function(node)
+            DugisGuideViewer:RemoveAllWaypoints()
+            local data = node.nodeData.data
+            if data.isPortal == true then
+                DugisGuideViewer:AddCustomWaypoint(data.x, data.y, "Portal " .. data.mapName, data.mapId, data.f)      
+            else
+                local mapId = DugisGuideViewer:GetMapIDFromName(data.zone)
+                DugisGuideViewer:AddCustomWaypoint(data.x / 100, data.y / 100, data.subzoneName, mapId, 0)      
+            end
+            SettingsSearch_SearchBox:SetAutoFocus(false)
+            SettingsSearch_SearchBox:ClearFocus()            
+        end
     
     local achevementsByLocation = searchAchievementWaypointsByMapName(text)   
     LuaUtils:foreach(achevementsByLocation, function(coordinates, areaName)
         local mapId = self:GetMapIDFromName(areaName)
         local localizedMapName =  GetMapNameByID(mapId)
         
-        nodes[#nodes+1] = {nodeName = DugisLocals["Locations in"].. " " .. (localizedMapName or areaName), leafs = {}}
+        nodes[#nodes+1] = {name = DugisLocals["Locations in"].. " " .. (localizedMapName or areaName), nodes = {}}
         LuaUtils:foreach(coordinates, function(value)
-            local leafs = nodes[#nodes].leafs
-            leafs[#leafs + 1] = {name = value.subzoneName or "", data = value}
+            local nodes = nodes[#nodes].nodes
+            nodes[#nodes + 1] = {name = value.subzoneName or "", data = value, isLeaf = true, shownWaypointMark = true,
+                onMouseClick = onClickFunction
+            }
         end)
     end)
     
@@ -3996,12 +4007,13 @@ function DugisGuideViewer:GetLocationsAndPortalsByText(text)
        
        if strupper(mapName):match(searchKey) then
            if not portalNodeAlreadyAdded then
-               nodes[#nodes+1] = {nodeName = DugisLocals["Instance Portal"], leafs = {}}
+               nodes[#nodes+1] = {name = DugisLocals["Instance Portal"], nodes = {}}
            end
            portalNodeAlreadyAdded = true
            
-           local leafs = nodes[#nodes].leafs
-           leafs[#leafs + 1] = {name = mapName, data = {mapName = mapName, x=xPort, y=yPort, mapId = mapId, f = fPort, isPortal = true}}
+           local nodes = nodes[#nodes].nodes
+           nodes[#nodes + 1] = {name = mapName, isLeaf = true, data = {mapName = mapName, x=xPort, y=yPort, mapId = mapId, f = fPort, isPortal = true}
+           , shownWaypointMark = true, onMouseClick = onClickFunction}
        end
     end
     

@@ -826,127 +826,321 @@ end
 --     {nodeName="Area2", leafs = {{name="x1", data={}}, {name="x2", data={}}, {name="x3", data={}}, {name="x4", data={}}}},
 --     {nodeName="Area3", leafs = {{name="x1", data={}}, {name="x2", data={}}}}
 -- }
-function GUIUtils:SetTreeFrameData(targetTreeFrame, treePrefix, nodes, onClickFunction)
-    if targetTreeFrame.allTreeVisualNodes == nil then
-        targetTreeFrame.allTreeVisualNodes = {}
-    end
 
-    LuaUtils:foreach(targetTreeFrame.allTreeVisualNodes, function(parentVisualNode, index)
-        local visualLeaf = parentVisualNode.firstChild
-        while visualLeaf do
-            visualLeaf:Hide()
-            visualLeaf = visualLeaf.nextChild
+--/run GUIUtils:SetTreeData(UIParent, "parentFrame", { {nodeName="Area1", nodes={{name="XX"}, {name="YY"}}, leafs={{name="x1", data={}}, {name="x2", data={}}, {name="x3", data={}}}}, {nodeName="Area3", leafs = {{name="x1", data={}}, {name="x2", data={}}}} })
+
+local leafIndex = 1
+local nodeIndex = 1
+local treeVisualizationContainer = {}
+local treeExpantionStates = {}
+
+function GUIUtils:SetTreeData(targetTreeFrame, wrapper, treePrefix, nodes, parentVisualNode, reqLevel, onNodeClickFunction, onLeafClickFunction, x, y, indernalDeltaX, internalDeltaY, nodeTextProcessor, onHeightChangedFunction, onMouseWheel)
+    if wrapper == nil then
+        wrapper = _G[treePrefix.."wrapper"]
+        
+        if not wrapper then
+            wrapper = CreateFrame("Frame", treePrefix.."wrapper", targetTreeFrame)
         end
-        parentVisualNode:Hide()
-    end)
+        
+        targetTreeFrame.wrapper = wrapper
+        wrapper:SetParent(targetTreeFrame)
+        wrapper:Show()
+        wrapper:SetPoint("TOPLEFT", targetTreeFrame, "TOPLEFT", x, y)
+        wrapper:SetWidth(990)
+        wrapper:SetHeight(900)  
+    
+        wrapper:EnableMouse(true)
+        wrapper:EnableMouseWheel(true)
+        wrapper:SetScript("OnMouseWheel", onMouseWheel)
+    end
+    
+    wrapper.indernalDeltaX = indernalDeltaX or 0        
+    wrapper.internalDeltaY = internalDeltaY or 0  
+    
+    wrapper:SetBackdropColor(0.0, 0.0, 0.2,1);
+    wrapper.onHeightChangedFunction = onHeightChangedFunction
 
-    targetTreeFrame.allTreeVisualNodes = {}
+    if treeVisualizationContainer[treePrefix] == nil then
+        treeVisualizationContainer[treePrefix] = {}
+    end
+    wrapper.treePrefix = treePrefix
+    
+    if not reqLevel then
+        reqLevel = 0
+        leafIndex = 1
+        nodeIndex = 1
+    end
+    
+    reqLevel = reqLevel + 1
+
+    if not parentVisualNode then
+        wrapper.treeDeltaX = x or 0
+        wrapper.treeDeltaY = y or 0
+        parentVisualNode = wrapper
+    end 
+    
+    parentVisualNode.visualNodes = {}
+    
+    
+    LuaUtils:foreach(treeVisualizationContainer[treePrefix], function(visualNode)
+        visualNode:Hide()
+        visualNode:ClearAllPoints()
+    end)
+    
+    local waypointMark = " |TInterface\\AddOns\\DugisGuideViewerZ\\Artwork\\waypoint_16.tga:11:11:0:0|t "
     
     -- Creating all visual nodes and leafs
-    local i = 1
-    local childIndex = 1
-    LuaUtils:foreach(nodes, function(nodeValue)
-        local nodeName = nodeValue.nodeName
-        local leafs = nodeValue.leafs
-        i = i + 1
-        local treeResultsNodeName = treePrefix .. "DGVTreeNode"..i
+    LuaUtils:foreach(nodes, function(nodeData, i)
+        if nodeData.isLeaf then
+            local treeResultsLeafName = treePrefix .. "DGVTreeLeaf_L"..reqLevel.. "_" .. leafIndex
+            leafIndex = leafIndex + 1
+            
+            local visualNode = treeVisualizationContainer[treePrefix][treeResultsLeafName]
 
-        local nodeVisualization = _G[treeResultsNodeName]
-        if nodeVisualization == nil then
-            nodeVisualization = CreateFrame("Button", treeResultsNodeName, targetTreeFrame, "DugisGuideTreeNodeTemplate")
-            nodeVisualization.Title:SetFont(GameFontHighlightLarge:GetFont())
-            nodeVisualization.TreeFrame = targetTreeFrame
+            if not visualNode then
+                visualNode = CreateFrame("Button", nil, wrapper, "DugisGuideTreeLeafTemplate")
+                visualNode.Button.Text:SetNonSpaceWrap(true)
+                visualNode.Button.Text:Show()
+                visualNode.Button:Show()
+                
+                treeVisualizationContainer[treePrefix][treeResultsLeafName] = visualNode
+            end
+            
+            local name = nodeData.name
+            
+            if nodeTextProcessor then
+                name = nodeTextProcessor(name)
+            end
+            
+            if nodeData.shownWaypointMark then
+                visualNode.Button.Text:SetText(name..waypointMark)
+            else
+                visualNode.Button.Text:SetText(name)
+            end
+            
+            visualNode.onLeafClickFunction = onLeafClickFunction
+            visualNode.nodeData = nodeData
+            visualNode.Button.nodeData = nodeData
+            
+            parentVisualNode.visualNodes[#parentVisualNode.visualNodes + 1] = visualNode
+        else
+            local treeResultsNodeName = treePrefix .. "DGVTreeNode_L"..reqLevel.."_" .. nodeIndex
+            nodeIndex = nodeIndex + 1
+            
+            local visualNode = treeVisualizationContainer[treePrefix][treeResultsNodeName]
+
+            if not visualNode then
+                visualNode = CreateFrame("Button", nil, wrapper, "DugisGuideTreeNodeTemplate")
+                visualNode.Title:SetFont(GameFontHighlightLarge:GetFont())
+                treeVisualizationContainer[treePrefix][treeResultsNodeName] = visualNode
+            end
+            
+            visualNode.Title:SetText(nodeData.name)
+            visualNode.Title:SetTextColor(1,0.8235,0)
+            
+            visualNode.nextChild = nil
+            visualNode.nodeData = nodeData
+            visualNode.TreeFrame = wrapper
+            
+            parentVisualNode.visualNodes[#parentVisualNode.visualNodes + 1] = visualNode
+            
+            visualNode.extraOnClickFunction = onNodeClickFunction
+            
+            if nodeData.nodes then
+                GUIUtils:SetTreeData(targetTreeFrame, wrapper, treePrefix, nodeData.nodes, visualNode, reqLevel, onNodeClickFunction, onLeafClickFunction, x, y, wrapper.indernalDeltaX, wrapper.internalDeltaY, nodeTextProcessor, onHeightChangedFunction, onMouseWheel)
+            end
         end
-        
-        targetTreeFrame.allTreeVisualNodes[#targetTreeFrame.allTreeVisualNodes + 1] = nodeVisualization
-
-        local separatedLocationName = LuaUtils:separateCamelCase(nodeName)
-        nodeVisualization.Title:SetText(separatedLocationName)
-        nodeVisualization:Show()
-        
-        nodeVisualization:SetParent(targetTreeFrame)
-        nodeVisualization:SetPoint("TOPLEFT", targetTreeFrame, "TOPLEFT", 25, -14 * i - 12 )
-        
-        local previousChild = nil
-        LuaUtils:foreach(leafs, function(leaf, index)
-            local leafName = leaf.name
-        
-            childIndex = childIndex + 1
-            local treeResultsLeafName = treePrefix .. "DGVTreeLeaf" .. childIndex
-            
-            visualLeaf = _G[treeResultsLeafName]
-
-            if visualLeaf == nil then
-                -- visualLeaf = targetTreeFrame:CreateFontString("OVERLAY", treeResultsLeafName, "GameFontHighlight")
-                visualLeaf = CreateFrame("Button", treeResultsNodeName, targetTreeFrame, "DugisGuideTreeLeafTemplate")
-                visualLeaf.Text:SetNonSpaceWrap(true)
-                visualLeaf:Show()
-                _G[treeResultsLeafName] = visualLeaf
-            end
-            
-            visualLeaf.Text:SetText(leafName..' |T'.."Interface\\AddOns\\DugisGuideViewerZ\\Artwork\\waypoint_16.tga"..':11:11:0:0|t ')
-            
-            visualLeaf:SetScript("OnClick", onClickFunction)
-            
-            visualLeaf:SetParent(targetTreeFrame)
-            visualLeaf.nextChild = nil
-            visualLeaf.leafData = leaf
-            
-            if previousChild then
-                previousChild.nextChild = visualLeaf
-            end
-            
-            if index == 1 then
-                nodeVisualization.firstChild = visualLeaf
-            end
-            
-            previousChild = visualLeaf
-        end)
     end)  
+        
+    local function UpdateSubTree(visualNodes, visualParentNode, currentYOffset, wrapper, level)
+        if level == nil then
+            level = 0
+        else
+            level = level + 1
+        end
+    
+        local localOffset = 0
+        LuaUtils:foreach(visualNodes, function(visualNode)
+        
+            local x = 15 * level
+            
+            if visualNode.nodeData.isLeaf then
+                if visualParentNode == nil or visualParentNode.expanded then
+                    
+                    visualNode:SetPoint("TOPLEFT", wrapper, "TOPLEFT", x + wrapper.indernalDeltaX, -currentYOffset - 2 + wrapper.internalDeltaY)
+                    localOffset = localOffset + 20
+                    currentYOffset = currentYOffset + 20
+                    visualNode:Show()
+                    visualNode.Button:SetPoint("TOPLEFT", visualNode, "TOPLEFT", 0, 0)
+                    visualNode.Button:Show()
+                    visualNode:SetWidth(wrapper:GetWidth() - x)
+                    visualNode.Button:SetWidth(wrapper:GetWidth() - x)
+                    visualNode.Button.highlight:SetWidth(wrapper:GetWidth() - x)
+                else
+                    visualNode:Hide()
+                end
+                
+                if visualNode.nodeData.rightText then
+                    if type(visualNode.nodeData.rightText) == "function" then
+                        visualNode.TextRight:SetText(visualNode.nodeData:rightText())
+                    else
+                        visualNode.TextRight:SetText(visualNode.nodeData.rightText)
+                    end
+                    
+                    visualNode.TextRight:Show()
+                else
+                    visualNode.TextRight:Hide()
+                end
+                
+            else
+                visualNode:SetWidth(wrapper:GetWidth() - x)
+            
+                if visualParentNode == nil or visualParentNode.expanded then
+                    visualNode:SetPoint("TOPLEFT", wrapper, "TOPLEFT", x + wrapper.indernalDeltaX, -currentYOffset - 2 + wrapper.internalDeltaY)
+                    localOffset = localOffset + 20
+                    currentYOffset = currentYOffset + 20
+                    visualNode:Show()
+                else
+                    visualNode:Hide()
+                end
+                
+                if visualNode.expanded or not visualNode.visualNodes then
+                    visualNode:SetNormalTexture("Interface\\Buttons\\UI-MinusButton-Up")
+                else
+                    visualNode:SetNormalTexture("Interface\\Buttons\\UI-PlusButton-Up")
+                end  
+                
+                if visualNode.visualNodes and visualNode.expanded then
+                    local off = UpdateSubTree(visualNode.visualNodes, visualNode, currentYOffset, wrapper, level)
+                    localOffset = localOffset + off
+                    currentYOffset = currentYOffset + off
+                end
+                
+            end  
+            
+            if visualNode.nodeData.onMouseEnter then
+                visualNode.Button:SetScript("OnEnter", visualNode.nodeData.onMouseEnter)
+            end  
+            
+            if visualNode.nodeData.onMouseLeave then
+                visualNode.Button:SetScript("OnLeave", visualNode.nodeData.onMouseLeave)
+            end
+
+            if visualNode.nodeData.onMouseClick then
+                visualNode.Button:SetScript("OnClick", visualNode.nodeData.onMouseClick)
+            end
+            
+        end)
+        
+        return localOffset, currentYOffset
+    end
+        
+        
+    ---------------------------
+    ------- TREE STRUCTURE ----
+    ------- parentNode --------
+    -- expanded
+    -- firstChild
+
+    ----- visualChild ---------
+    -- nextChild
+    ---------------------------
+    function wrapper:UpdateTreeVisualization()
+        if self.visualNodes then
+            LuaUtils:foreach(treeVisualizationContainer[self.treePrefix], function(visualNode)
+                visualNode:Hide()
+                visualNode:ClearAllPoints()
+            end)
+            self.height = select(2, UpdateSubTree(self.visualNodes, nil, 0, wrapper))
+            
+            self:SetHeight(self.height + 200)
+            
+            if self.onHeightChangedFunction then
+                self.onHeightChangedFunction(self.height)
+            end
+        end
+    end
+    
+    function wrapper:SaveExpansionState(stateName)
+        if not stateName then
+            return
+        end
+        treeExpantionStates[stateName] = {}
+        
+        LuaUtils:foreach(treeVisualizationContainer[self.treePrefix], function(visualNode, index)
+            if not visualNode.nodeData.isLeaf then
+                treeExpantionStates[stateName][index] = visualNode.expanded
+            end
+        end)
+    end    
+    
+    function wrapper:LoadExpansionState(stateName)
+        if not stateName then
+            return
+        end
+        LuaUtils:foreach(treeVisualizationContainer[self.treePrefix], function(visualNode, index)
+            if not visualNode.nodeData.isLeaf then
+                if treeExpantionStates[stateName] then 
+                    visualNode.expanded = treeExpantionStates[stateName][index]
+                end
+            end
+        end)
+        
+        wrapper:UpdateTreeVisualization()
+    end
+    
+    wrapper:UpdateTreeVisualization()
+    
+    return wrapper
+   
 end
 
+--Tree tests:
+--/run TestTree1()
+function TestTree1()
+    GUIUtils:SetTreeData(UIParent, nil, "parentFrame1", 
+        { 
+           {name="Node1", data={}, nodes={{name="Category3", data={}}, {name="Category", isLeaf=true, data={}}, {name="Category", data={}}}}
+          ,{name="Category", data={}, nodes = {{name="Category3", data={},
+          
+            nodes={ 
+                   {name="Category", data={}, nodes={{name="Category3", data={}}, {name="Lisc", isLeaf=true, data={}}, {name="Category", data={}}}}
+                  ,{name="Category", data={}, nodes = {{name="x1", data={}
+                            , nodes = { 
+                                   {name="Category", data={}, nodes={{name="N1", data={}}, {name="Category3", isLeaf=true, data={}}, {name="x3", data={}}}}
+                                  ,{name="Category", data={}, nodes = {{name="Category3", data={},
+                                  
+                                    nodes={ 
+                                   {name="Node1", data={}, nodes={{name="Category", data={}}, {name="Lisc", isLeaf=true, data={}}, {name="Category", data={}}}}
+                                  ,{name="Category", data={}, nodes = {{name="Category", data={}}, {name="Category3", data={}}}} 
+                                }
+                                  
+                                  }, {name="Category", data={}}}} 
+                                }
+                    }, {name="Category", data={}}}} 
+                }
+          
+          }, {name="Category", data={}}}} 
+        }
+    )
+end
 
----------------------------
-------- TREE STRUCTURE ----
-------- parentNode --------
--- expanded
--- firstChild
-
------ visualChild ---------
--- nextChild
----------------------------
-function GUIUtils:UpdateTreeVisualization(targetTreeFrame)
-    local currentYOffset = 0
-    
-    if targetTreeFrame.allTreeVisualNodes == nil then
-        targetTreeFrame.allTreeVisualNodes = {}
-    end        
-    
-    LuaUtils:foreach(targetTreeFrame.allTreeVisualNodes, function(visualParentNode)
-        local visualChild = visualParentNode.firstChild
+--/run TestTree2()
+function TestTree2()
+    GUIUtils:SetTreeData(UIParent, nil, "parentFrame", 
+        { 
+           {name="Node1", data={}}
         
-        if visualParentNode.expanded then
-            visualParentNode:SetNormalTexture("Interface\\Buttons\\UI-MinusButton-Up")
-        else
-            visualParentNode:SetNormalTexture("Interface\\Buttons\\UI-PlusButton-Up")
-        end               
+        }
+    )
+end
+--/run TestTree3()
+function TestTree3()
+    GUIUtils:SetTreeData(UIParent, nil, "parentFrame", 
+        { 
+           {name="Node1", data={}, isLeaf = true}
         
-        visualParentNode:SetPoint("TOPLEFT", targetTreeFrame, "TOPLEFT", -5, -currentYOffset)
-        while visualChild do
-            if visualParentNode.expanded then
-                currentYOffset = currentYOffset + 20
-                visualChild:SetPoint("TOPLEFT", targetTreeFrame, "TOPLEFT", 15, -currentYOffset - 2)
-                visualChild:Show()
-            else
-                visualChild:Hide()
-            end
-            
-            visualChild = visualChild.nextChild
-        end
-        
-        currentYOffset = currentYOffset + 20
-    end)
-    
-    targetTreeFrame.height = currentYOffset
+        }
+    )
 end
 

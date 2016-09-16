@@ -12,6 +12,7 @@ K (npc:91808) |SID|28779| |N|Kill (npc:91808) in {Shipwreck Shoals}<br/><b>At 66
 K (npc:91797) |SID|28778| |N|Kill (npc:91797) in {Deepbeard's Cove}<br/><b>Move to avoid damage from (spell:193152) and (spell:193093) (64.09, 32.61) (77.03, 38.09) (72.42, 49.38) (65.15, 50.82)| |Z|1046 1| |NPC|91797|
 K (npc:96028) |SID|34459| |N|Kill (npc:96028)<br/><b>Avoid being sucked into the air by moving away from (npc:96028) when it spawns<br/><b>Move away from the detonation area of (spell:192706) once it has been dispelled<br/><b>Healer: Dispel (spell:192706) from affected players (64.93, 44.76) (55.47, 52.08)| |Z|1046 1| |NPC|96028|
 N (item:140311) |QID|44077.1| |N|Collect (item:140311) from (npc:96028) (55.47, 52.08)| |Z|1046 1| |NPC|96028| |C|Druid| |O|
+N (item:139464) |QID|43378| |N|Collect (item:139464) from (npc:96028) (55.47, 52.08)| |Z|1046 1| |NPC|96028| |C|Priest| |O|
 C The Pendant of Starlight |QID|42719| |N|Collect 25 (item:138993) from any enemies in {Eye of Azshara}| |C|Druid| |O|
 
 T Wrath of Azshara |QID|38286| |N|(npc:106780) (55.62, 53.93)| |Z|1046 1| |NPC|106780| |O|

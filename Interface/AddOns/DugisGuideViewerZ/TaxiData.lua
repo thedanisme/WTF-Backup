@@ -27511,7 +27511,7 @@ function TaxiData:Initialize()
 			},
 			["23:20"] = {
 				[23] = "36.2,97.23",
-				requirements = "cls:PALADIN",
+				--requirements = "cls:PALADIN",
 			},
 			[480] = {
 				[462] = 3086544408,

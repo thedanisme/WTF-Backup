@@ -146,8 +146,8 @@ function QuestPOI:Initialize()
 			--reset = true
 			local title = C_TaskQuest.GetQuestInfoByQuestID(worldQuestID);
 			_, map = C_TaskQuest.GetQuestZoneID(worldQuestID)
-			LuaUtils:DugiSetMapByID(map)
-			floor = GetCurrentMapDungeonLevel()
+			--LuaUtils:DugiSetMapByID(map)
+			--floor = GetCurrentMapDungeonLevel()
 			local x, y = C_TaskQuest.GetQuestLocation(worldQuestID)
 			
 			if title then 
@@ -179,6 +179,9 @@ function QuestPOI:Initialize()
 				--DGV:SafeSetMapQuestId(qid)
 			end
 		else
+			if DugisSecureQuestButton then
+				DugisGuideViewer.DoOutOfCombat(DugisSecureQuestButton.Hide, DugisSecureQuestButton)
+			end		
 			DGV:RemoveAllWaypoints()
 			lastWaypoint = nil
 		end
@@ -247,7 +250,7 @@ hooksecurefunc("WorldMapPOI_OnClick", function(self)
 	onPOIClick(self)
 end)
 
-hooksecurefunc("WorldMapPOI_OnEnter", function(...)
+hooksecurefunc("WorldMapPOI_OnEnter", function(...) --Need this because the waypoint is inaccurate if user click on Landmark outside currentmap
 	CurrentMap = GetCurrentMapAreaID()
 end)
 

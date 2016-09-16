@@ -275,53 +275,53 @@ MacroToolkitDB = {
 		["Emmarosa - Stormrage"] = {
 			["macros"] = {
 				[122] = {
-					["name"] = " TotT(Focus)",
 					["icon"] = "236283",
+					["name"] = " TotT(Focus)",
 					["body"] = "#showtooltip Tricks of the Trade\n/cast [@focus] Tricks of the Trade\n",
 				},
 				[126] = {
-					["name"] = "Poisons",
 					["icon"] = "134400",
+					["name"] = "Poisons",
 					["body"] = "#showtooltip\n/castsequence Deadly Poison, Crippling Poison\n",
 				},
 				[123] = {
-					["name"] = "BladeFlurry",
 					["icon"] = "132350",
+					["name"] = "BladeFlurry",
 					["body"] = "#showtooltip Blade Flurry\n/cancelaura Blade Flurry\n/use Blade Flurry\n",
 				},
 				[127] = {
-					["name"] = "Riposte",
 					["icon"] = "132269",
+					["name"] = "Riposte",
 					["body"] = "#showtooltip Riposte\n/use [nostealth]Riposte\n",
 				},
 				[124] = {
-					["name"] = "Pick Pocket",
 					["icon"] = "133669",
+					["name"] = "Pick Pocket",
 					["body"] = "#showtooltip Pick Pocket\n/use [stealth]Pick Pocket\n",
 				},
 				[128] = {
-					["name"] = "Shadow Blades",
 					["icon"] = "134400",
+					["name"] = "Shadow Blades",
 					["body"] = "#showtooltip Shadow Blades\n/use Shadow Blades\n/use 13\n/use 14\n/use Goremaw's Bite\n",
 				},
 				[121] = {
-					["name"] = " ",
 					["icon"] = "136206",
+					["name"] = " ",
 					["body"] = "#showtooltip Adrenaline Rush\n/use Adrenaline Rush\n/use Curse of the Dreadblades\n/use 13\n/use 14\n",
 				},
 				[125] = {
-					["name"] = "Pistol Shot",
 					["icon"] = "1035048",
+					["name"] = "Pistol Shot",
 					["body"] = "#showtooltip\n/use Pistol Shot\n",
 				},
 				[130] = {
-					["name"] = "Stealth/Symbols",
 					["icon"] = "132320",
+					["name"] = "Stealth/Symbols",
 					["body"] = "#showtooltip Stealth\n/use Stealth\n/use Symbols of Death\n",
 				},
 				[129] = {
-					["name"] = "SoD/SS",
 					["icon"] = "134400",
+					["name"] = "SoD/SS",
 					["body"] = "#showtooltip Symbols of Death\n/use Symbols of Death\n/use Shadowstrike\n",
 				},
 			},
@@ -331,23 +331,23 @@ MacroToolkitDB = {
 		["Oenta - Stormrage"] = {
 			["macros"] = {
 				[121] = {
-					["icon"] = "136088",
 					["name"] = "Dark Command",
+					["icon"] = "136088",
 					["body"] = "#showtooltip\n/use [@mouseover,harm][]Dark Command\n",
 				},
 				[122] = {
-					["icon"] = "538767",
 					["name"] = "Gorefiend",
+					["icon"] = "538767",
 					["body"] = "#showtooltip\n/use [@player]Gorefiend's Grasp\n",
 				},
 				[123] = {
-					["icon"] = "237527",
 					["name"] = "Interrupt",
+					["icon"] = "237527",
 					["body"] = "#showtooltip\n/use [nomod] Mind Freeze;[mod]Asphyxiate\n",
 				},
 				[124] = {
-					["icon"] = "136143",
 					["name"] = "Raise Ally",
+					["icon"] = "136143",
 					["body"] = "#showtooltip\n/use [@mouseover,dead][]Raise Ally\n",
 				},
 			},
