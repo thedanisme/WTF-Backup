@@ -30,38 +30,38 @@ _detalhes_database = {
 								["Brineclaw"] = 2838443,
 								["Clackbrine Snapper"] = 1129436,
 							},
-							["delay"] = 0,
+							["serial"] = "Player-60-0A91880D",
 							["pets"] = {
 								"Murky <Emmarosa>", -- [1]
 								"Tufferfish <Emmarosa>", -- [2]
 							},
-							["custom"] = 0,
-							["last_event"] = 1473912478,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.002336,
-							["classe"] = "ROGUE",
+							["spec"] = 260,
 							["dps_started"] = false,
 							["total"] = 3967879.002336,
-							["damage_taken"] = 0.002336,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["nome"] = "Emmarosa",
 							["spells"] = {
 								["_ActorTable"] = {
 								},
 								["tipo"] = 2,
 							},
-							["nome"] = "Emmarosa",
-							["spec"] = 260,
 							["grupo"] = true,
-							["last_dps"] = 396787.9002336,
 							["end_time"] = 1473912478,
-							["colocacao"] = 1,
-							["tipo"] = 1,
-							["on_hold"] = false,
+							["last_dps"] = 396787.9002336,
+							["custom"] = 0,
+							["last_event"] = 1473912478,
+							["damage_taken"] = 0.002336,
 							["start_time"] = 1473912473,
-							["serial"] = "Player-60-0A91880D",
-							["friendlyfire"] = {
-							},
+							["delay"] = 0,
+							["classe"] = "ROGUE",
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -75,15 +75,15 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["damage_taken"] = 130219.004057,
+							["on_hold"] = false,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 3575879.004057,
-							["last_event"] = 1473912478,
+							["classe"] = "PET",
 							["dps_started"] = false,
 							["total"] = 3575879.004057,
-							["delay"] = 0,
+							["serial"] = "Vehicle-0-3778-1220-1551-104595-00005A1E1B",
 							["ownerName"] = "Emmarosa",
 							["nome"] = "Murky <Emmarosa>",
 							["spells"] = {
@@ -107,30 +107,30 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 206957,
 										["r_dmg"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 8,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
 							["end_time"] = 1473912478,
+							["tipo"] = 1,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
+							["last_event"] = 1473912478,
+							["damage_taken"] = 130219.004057,
 							["start_time"] = 1473912473,
-							["serial"] = "Vehicle-0-3778-1220-1551-104595-00005A1E1B",
-							["classe"] = "PET",
+							["delay"] = 0,
+							["friendlyfire"] = {
+							},
 						}, -- [2]
 						{
 							["flag_original"] = 8465,
@@ -141,15 +141,15 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["damage_taken"] = 0.004289,
+							["on_hold"] = false,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 392000.004289,
-							["last_event"] = 1473912475,
+							["classe"] = "PET",
 							["dps_started"] = false,
 							["total"] = 392000.004289,
-							["delay"] = 0,
+							["serial"] = "Creature-0-3778-1220-1551-104607-00005A1EA4",
 							["ownerName"] = "Emmarosa",
 							["nome"] = "Tufferfish <Emmarosa>",
 							["spells"] = {
@@ -172,30 +172,30 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 179041,
 										["r_dmg"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
 							["end_time"] = 1473912478,
+							["tipo"] = 1,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
+							["last_event"] = 1473912475,
+							["damage_taken"] = 0.004289,
 							["start_time"] = 1473912475,
-							["serial"] = "Creature-0-3778-1220-1551-104607-00005A1EA4",
-							["classe"] = "PET",
+							["delay"] = 0,
+							["friendlyfire"] = {
+							},
 						}, -- [3]
 					},
 				}, -- [1]
@@ -217,34 +217,34 @@ _detalhes_database = {
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["nome"] = "Emmarosa",
+							["buff_uptime_targets"] = {
+							},
 							["spec"] = 260,
 							["grupo"] = true,
+							["buff_uptime"] = 6,
+							["nome"] = "Emmarosa",
 							["pets"] = {
 								"Murky <Emmarosa>", -- [1]
 								"Tufferfish <Emmarosa>", -- [2]
 							},
-							["buff_uptime_targets"] = {
-							},
-							["buff_uptime"] = 6,
-							["classe"] = "ROGUE",
 							["tipo"] = 4,
+							["last_event"] = 1473912478,
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									[176151] = {
 										["uptime"] = 6,
 										["activedamt"] = 1,
 										["id"] = 176151,
+										["actived"] = false,
 										["targets"] = {
 										},
-										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
 								["tipo"] = 9,
 							},
 							["serial"] = "Player-60-0A91880D",
-							["last_event"] = 1473912478,
+							["classe"] = "ROGUE",
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -252,14 +252,14 @@ _detalhes_database = {
 							["nome"] = "Murky <Emmarosa>",
 							["pets"] = {
 							},
+							["last_event"] = 0,
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["serial"] = "Vehicle-0-3778-1220-1551-104595-00005A1E1B",
 							["spell_cast"] = {
 								[206957] = 2,
 								[179062] = 1,
 							},
-							["classe"] = "PET",
-							["last_event"] = 0,
-							["serial"] = "Vehicle-0-3778-1220-1551-104595-00005A1E1B",
-							["tipo"] = 4,
 						}, -- [2]
 						{
 							["flag_original"] = 8465,
@@ -267,13 +267,13 @@ _detalhes_database = {
 							["nome"] = "Tufferfish <Emmarosa>",
 							["pets"] = {
 							},
+							["last_event"] = 0,
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["serial"] = "Creature-0-3778-1220-1551-104607-00005A1EA4",
 							["spell_cast"] = {
 								[179041] = 1,
 							},
-							["classe"] = "PET",
-							["last_event"] = 0,
-							["serial"] = "Creature-0-3778-1220-1551-104607-00005A1EA4",
-							["tipo"] = 4,
 						}, -- [3]
 					},
 				}, -- [4]
@@ -292,7 +292,7 @@ _detalhes_database = {
 				["combat_counter"] = 4443,
 				["playing_solo"] = true,
 				["totals"] = {
-					3967878.959265, -- [1]
+					3967878.933752, -- [1]
 					0, -- [2]
 					{
 						-0.00615399999999866, -- [1]
@@ -303,15 +303,15 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
+						["cooldowns_defensive"] = -0.00167699999999993,
+						["dispell"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
-					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
 				},
 				["player_last_events"] = {
 				},
@@ -323,10 +323,7 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage"] = {
-						{
-							["Emmarosa"] = 3967879.002336,
-						}, -- [1]
+					["damage_section"] = {
 					},
 					["heal_section"] = {
 					},
@@ -334,20 +331,22 @@ _detalhes_database = {
 						{
 						}, -- [1]
 					},
-					["damage_section"] = {
+					["damage"] = {
+						{
+							["Emmarosa"] = 3967879.002336,
+						}, -- [1]
 					},
 				},
 				["end_time"] = 2346495.997,
 				["combat_id"] = 97,
-				["TimeData"] = {
-				},
+				["instance_type"] = "none",
 				["hasSaved"] = true,
 				["frags"] = {
 					["Brineclaw"] = 1,
 					["Clackbrine Snapper"] = 1,
 				},
 				["data_fim"] = "00:08:00",
-				["data_inicio"] = "00:07:53",
+				["contra"] = "Brineclaw",
 				["CombatSkillCache"] = {
 				},
 				["totals_grupo"] = {
@@ -362,17 +361,18 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
 				},
 				["start_time"] = 2346488.976,
-				["contra"] = "Brineclaw",
-				["instance_type"] = "none",
+				["TimeData"] = {
+				},
+				["data_inicio"] = "00:07:53",
 			}, -- [1]
 			{
 				{
@@ -384,62 +384,62 @@ _detalhes_database = {
 							["damage_from"] = {
 							},
 							["targets"] = {
-								["Clackbrine Snapper"] = 3036444,
 								["Clackbrine Pincer"] = 814713,
+								["Clackbrine Snapper"] = 3036444,
 							},
-							["delay"] = 0,
+							["serial"] = "Player-60-0A91880D",
 							["pets"] = {
 								"Murky <Emmarosa>", -- [1]
 								"Tufferfish <Emmarosa>", -- [2]
 							},
-							["custom"] = 0,
-							["tipo"] = 1,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["classe"] = "ROGUE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.008626,
+							["spec"] = 260,
+							["dps_started"] = false,
+							["end_time"] = 1473912456,
+							["on_hold"] = false,
+							["last_event"] = 1473912449,
+							["nome"] = "Emmarosa",
 							["spells"] = {
 								["_ActorTable"] = {
 								},
 								["tipo"] = 2,
 							},
-							["dps_started"] = false,
-							["end_time"] = 1473912456,
-							["damage_taken"] = 0.008626,
-							["total"] = 3851157.008626,
-							["nome"] = "Emmarosa",
-							["spec"] = 260,
 							["grupo"] = true,
-							["last_dps"] = 385115.7008626,
 							["friendlyfire_total"] = 0,
-							["colocacao"] = 1,
-							["last_event"] = 1473912449,
-							["on_hold"] = false,
+							["last_dps"] = 385115.7008626,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.008626,
 							["start_time"] = 1473912444,
-							["serial"] = "Player-60-0A91880D",
-							["friendlyfire"] = {
-							},
+							["delay"] = 0,
+							["total"] = 3851157.008626,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
 							["damage_from"] = {
-								["Clackbrine Pincer"] = true,
 								["Clackbrine Snapper"] = true,
+								["Clackbrine Pincer"] = true,
 							},
 							["targets"] = {
 								["Clackbrine Snapper"] = 2242069,
 							},
 							["pets"] = {
 							},
-							["damage_taken"] = 437229.002521,
+							["on_hold"] = false,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 2242069.002521,
-							["last_event"] = 1473912444,
+							["classe"] = "PET",
 							["dps_started"] = false,
 							["total"] = 2242069.002521,
-							["delay"] = 1473912444,
+							["serial"] = "Vehicle-0-3778-1220-1551-104595-00005A1E1B",
 							["ownerName"] = "Emmarosa",
 							["nome"] = "Murky <Emmarosa>",
 							["spells"] = {
@@ -462,50 +462,50 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 206957,
 										["r_dmg"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
 							["end_time"] = 1473912456,
+							["tipo"] = 1,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
+							["last_event"] = 1473912444,
+							["damage_taken"] = 437229.002521,
 							["start_time"] = 1473912455,
-							["serial"] = "Vehicle-0-3778-1220-1551-104595-00005A1E1B",
-							["classe"] = "PET",
+							["delay"] = 1473912444,
+							["friendlyfire"] = {
+							},
 						}, -- [2]
 						{
 							["flag_original"] = 8465,
 							["damage_from"] = {
 							},
 							["targets"] = {
-								["Clackbrine Pincer"] = 814713,
 								["Clackbrine Snapper"] = 794375,
+								["Clackbrine Pincer"] = 814713,
 							},
 							["pets"] = {
 							},
-							["damage_taken"] = 0.008328,
+							["on_hold"] = false,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 1609088.008328,
-							["last_event"] = 1473912449,
+							["classe"] = "PET",
 							["dps_started"] = false,
 							["total"] = 1609088.008328,
-							["delay"] = 0,
+							["serial"] = "Creature-0-3778-1220-1551-104607-00005A1E89",
 							["ownerName"] = "Emmarosa",
 							["nome"] = "Tufferfish <Emmarosa>",
 							["spells"] = {
@@ -517,8 +517,8 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 453304,
 										["targets"] = {
-											["Clackbrine Pincer"] = 814713,
 											["Clackbrine Snapper"] = 794375,
+											["Clackbrine Pincer"] = 814713,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 1609088,
@@ -529,30 +529,30 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 179041,
 										["r_dmg"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 4,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
 							["end_time"] = 1473912456,
+							["tipo"] = 1,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
+							["last_event"] = 1473912449,
+							["damage_taken"] = 0.008328,
 							["start_time"] = 1473912449,
-							["serial"] = "Creature-0-3778-1220-1551-104607-00005A1E89",
-							["classe"] = "PET",
+							["delay"] = 0,
+							["friendlyfire"] = {
+							},
 						}, -- [3]
 					},
 				}, -- [1]
@@ -574,34 +574,34 @@ _detalhes_database = {
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["nome"] = "Emmarosa",
+							["buff_uptime_targets"] = {
+							},
 							["spec"] = 260,
 							["grupo"] = true,
+							["buff_uptime"] = 13,
+							["nome"] = "Emmarosa",
 							["pets"] = {
 								"Murky <Emmarosa>", -- [1]
 								"Tufferfish <Emmarosa>", -- [2]
 							},
-							["buff_uptime_targets"] = {
-							},
-							["buff_uptime"] = 13,
-							["classe"] = "ROGUE",
 							["tipo"] = 4,
+							["last_event"] = 1473912456,
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									[176151] = {
 										["uptime"] = 13,
 										["activedamt"] = 1,
 										["id"] = 176151,
+										["actived"] = false,
 										["targets"] = {
 										},
-										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
 								["tipo"] = 9,
 							},
 							["serial"] = "Player-60-0A91880D",
-							["last_event"] = 1473912456,
+							["classe"] = "ROGUE",
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -609,15 +609,15 @@ _detalhes_database = {
 							["nome"] = "Murky <Emmarosa>",
 							["pets"] = {
 							},
+							["last_event"] = 0,
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["serial"] = "Vehicle-0-3778-1220-1551-104595-00005A1E1B",
 							["spell_cast"] = {
 								[179062] = 1,
 								[206955] = 1,
 								[206957] = 1,
 							},
-							["classe"] = "PET",
-							["last_event"] = 0,
-							["serial"] = "Vehicle-0-3778-1220-1551-104595-00005A1E1B",
-							["tipo"] = 4,
 						}, -- [2]
 						{
 							["flag_original"] = 8465,
@@ -625,13 +625,13 @@ _detalhes_database = {
 							["nome"] = "Tufferfish <Emmarosa>",
 							["pets"] = {
 							},
+							["last_event"] = 0,
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["serial"] = "Creature-0-3778-1220-1551-104607-00005A1E89",
 							["spell_cast"] = {
 								[179041] = 1,
 							},
-							["classe"] = "PET",
-							["last_event"] = 0,
-							["serial"] = "Creature-0-3778-1220-1551-104607-00005A1E89",
-							["tipo"] = 4,
 						}, -- [3]
 					},
 				}, -- [4]
@@ -661,15 +661,15 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
-					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
 				},
 				["player_last_events"] = {
 				},
@@ -681,10 +681,7 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage"] = {
-						{
-							["Emmarosa"] = 3851157.008626,
-						}, -- [1]
+					["damage_section"] = {
 					},
 					["heal_section"] = {
 					},
@@ -692,20 +689,22 @@ _detalhes_database = {
 						{
 						}, -- [1]
 					},
-					["damage_section"] = {
+					["damage"] = {
+						{
+							["Emmarosa"] = 3851157.008626,
+						}, -- [1]
 					},
 				},
 				["end_time"] = 2346472.474,
 				["combat_id"] = 96,
-				["TimeData"] = {
-				},
+				["instance_type"] = "none",
 				["hasSaved"] = true,
 				["frags"] = {
-					["Clackbrine Snapper"] = 4,
 					["Clackbrine Pincer"] = 2,
+					["Clackbrine Snapper"] = 4,
 				},
 				["data_fim"] = "00:07:37",
-				["data_inicio"] = "00:07:24",
+				["contra"] = "Clackbrine Pincer",
 				["CombatSkillCache"] = {
 				},
 				["totals_grupo"] = {
@@ -720,17 +719,18 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
 				},
 				["start_time"] = 2346459.264,
-				["contra"] = "Clackbrine Pincer",
-				["instance_type"] = "none",
+				["TimeData"] = {
+				},
+				["data_inicio"] = "00:07:24",
 			}, -- [2]
 			{
 				{
@@ -744,38 +744,38 @@ _detalhes_database = {
 							["targets"] = {
 								["Clackbrine Snapper"] = 2035210,
 							},
-							["delay"] = 0,
+							["serial"] = "Player-60-0A91880D",
 							["pets"] = {
 								"Murky <Emmarosa>", -- [1]
 								"Tufferfish <Emmarosa>", -- [2]
 							},
-							["custom"] = 0,
-							["tipo"] = 1,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["classe"] = "ROGUE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.006786,
+							["spec"] = 260,
+							["dps_started"] = false,
+							["end_time"] = 1473912433,
+							["on_hold"] = false,
+							["last_event"] = 1473912433,
+							["nome"] = "Emmarosa",
 							["spells"] = {
 								["_ActorTable"] = {
 								},
 								["tipo"] = 2,
 							},
-							["dps_started"] = false,
-							["end_time"] = 1473912433,
-							["damage_taken"] = 0.006786,
-							["total"] = 2035210.006786,
-							["nome"] = "Emmarosa",
-							["spec"] = 260,
 							["grupo"] = true,
-							["last_dps"] = 319549.380876537,
 							["friendlyfire_total"] = 0,
-							["colocacao"] = 1,
-							["last_event"] = 1473912433,
-							["on_hold"] = false,
+							["last_dps"] = 319549.380876537,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.006786,
 							["start_time"] = 1473912428,
-							["serial"] = "Player-60-0A91880D",
-							["friendlyfire"] = {
-							},
+							["delay"] = 0,
+							["total"] = 2035210.006786,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -787,15 +787,15 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["damage_taken"] = 193238.003988,
+							["on_hold"] = false,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 1575899.003988,
-							["last_event"] = 1473912433,
+							["classe"] = "PET",
 							["dps_started"] = false,
 							["total"] = 1575899.003988,
-							["delay"] = 0,
+							["serial"] = "Vehicle-0-3778-1220-1551-104595-00005A1E1B",
 							["ownerName"] = "Emmarosa",
 							["nome"] = "Murky <Emmarosa>",
 							["spells"] = {
@@ -818,30 +818,30 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 179021,
 										["r_dmg"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 16,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
 							["end_time"] = 1473912433,
+							["tipo"] = 1,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
+							["last_event"] = 1473912433,
+							["damage_taken"] = 193238.003988,
 							["start_time"] = 1473912428,
-							["serial"] = "Vehicle-0-3778-1220-1551-104595-00005A1E1B",
-							["classe"] = "PET",
+							["delay"] = 0,
+							["friendlyfire"] = {
+							},
 						}, -- [2]
 						{
 							["flag_original"] = 8465,
@@ -852,15 +852,15 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["damage_taken"] = 0.008084,
+							["on_hold"] = false,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 459311.008084,
-							["last_event"] = 1473912430,
+							["classe"] = "PET",
 							["dps_started"] = false,
 							["total"] = 459311.008084,
-							["delay"] = 0,
+							["serial"] = "Creature-0-3778-1220-1551-104607-00005A1E76",
 							["ownerName"] = "Emmarosa",
 							["nome"] = "Tufferfish <Emmarosa>",
 							["spells"] = {
@@ -883,30 +883,30 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 179041,
 										["r_dmg"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
 							["end_time"] = 1473912433,
+							["tipo"] = 1,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
+							["last_event"] = 1473912430,
+							["damage_taken"] = 0.008084,
 							["start_time"] = 1473912430,
-							["serial"] = "Creature-0-3778-1220-1551-104607-00005A1E76",
-							["classe"] = "PET",
+							["delay"] = 0,
+							["friendlyfire"] = {
+							},
 						}, -- [3]
 					},
 				}, -- [1]
@@ -928,34 +928,34 @@ _detalhes_database = {
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["nome"] = "Emmarosa",
+							["buff_uptime_targets"] = {
+							},
 							["spec"] = 260,
 							["grupo"] = true,
+							["buff_uptime"] = 6,
+							["nome"] = "Emmarosa",
 							["pets"] = {
 								"Murky <Emmarosa>", -- [1]
 								"Tufferfish <Emmarosa>", -- [2]
 							},
-							["buff_uptime_targets"] = {
-							},
-							["buff_uptime"] = 6,
-							["classe"] = "ROGUE",
 							["tipo"] = 4,
+							["last_event"] = 1473912433,
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									[176151] = {
 										["uptime"] = 6,
 										["activedamt"] = 1,
 										["id"] = 176151,
+										["actived"] = false,
 										["targets"] = {
 										},
-										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
 								["tipo"] = 9,
 							},
 							["serial"] = "Player-60-0A91880D",
-							["last_event"] = 1473912433,
+							["classe"] = "ROGUE",
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -963,14 +963,14 @@ _detalhes_database = {
 							["nome"] = "Murky <Emmarosa>",
 							["pets"] = {
 							},
+							["last_event"] = 0,
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["serial"] = "Vehicle-0-3778-1220-1551-104595-00005A1E1B",
 							["spell_cast"] = {
 								[179021] = 1,
 								[179062] = 1,
 							},
-							["classe"] = "PET",
-							["last_event"] = 0,
-							["serial"] = "Vehicle-0-3778-1220-1551-104595-00005A1E1B",
-							["tipo"] = 4,
 						}, -- [2]
 						{
 							["flag_original"] = 8465,
@@ -978,13 +978,13 @@ _detalhes_database = {
 							["nome"] = "Tufferfish <Emmarosa>",
 							["pets"] = {
 							},
+							["last_event"] = 0,
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["serial"] = "Creature-0-3778-1220-1551-104607-00005A1E76",
 							["spell_cast"] = {
 								[179041] = 1,
 							},
-							["classe"] = "PET",
-							["last_event"] = 0,
-							["serial"] = "Creature-0-3778-1220-1551-104607-00005A1E76",
-							["tipo"] = 4,
 						}, -- [3]
 					},
 				}, -- [4]
@@ -1014,15 +1014,15 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
-					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
 				},
 				["player_last_events"] = {
 				},
@@ -1034,10 +1034,7 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage"] = {
-						{
-							["Emmarosa"] = 2035210.006786,
-						}, -- [1]
+					["damage_section"] = {
 					},
 					["heal_section"] = {
 					},
@@ -1045,19 +1042,21 @@ _detalhes_database = {
 						{
 						}, -- [1]
 					},
-					["damage_section"] = {
+					["damage"] = {
+						{
+							["Emmarosa"] = 2035210.006786,
+						}, -- [1]
 					},
 				},
 				["end_time"] = 2346449.967,
 				["combat_id"] = 95,
-				["TimeData"] = {
-				},
+				["instance_type"] = "none",
 				["hasSaved"] = true,
 				["frags"] = {
 					["Clackbrine Snapper"] = 3,
 				},
 				["data_fim"] = "00:07:14",
-				["data_inicio"] = "00:07:08",
+				["contra"] = "Clackbrine Snapper",
 				["CombatSkillCache"] = {
 				},
 				["totals_grupo"] = {
@@ -1072,17 +1071,18 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
 				},
 				["start_time"] = 2346443.427,
-				["contra"] = "Clackbrine Snapper",
-				["instance_type"] = "none",
+				["TimeData"] = {
+				},
+				["data_inicio"] = "00:07:08",
 			}, -- [3]
 			{
 				{
@@ -1096,38 +1096,38 @@ _detalhes_database = {
 							["targets"] = {
 								["Tufferfish"] = 3270028,
 							},
-							["delay"] = 0,
+							["serial"] = "Player-60-0A91880D",
 							["pets"] = {
 								"Murky <Emmarosa>", -- [1]
 								"Pufferfish <Emmarosa>", -- [2]
 							},
-							["custom"] = 0,
-							["tipo"] = 1,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["classe"] = "ROGUE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.006468,
+							["spec"] = 260,
+							["dps_started"] = false,
+							["end_time"] = 1473912423,
+							["on_hold"] = false,
+							["last_event"] = 1473912418,
+							["nome"] = "Emmarosa",
 							["spells"] = {
 								["_ActorTable"] = {
 								},
 								["tipo"] = 2,
 							},
-							["dps_started"] = false,
-							["end_time"] = 1473912423,
-							["damage_taken"] = 0.006468,
-							["total"] = 3270028.006468,
-							["nome"] = "Emmarosa",
-							["spec"] = 260,
 							["grupo"] = true,
-							["last_dps"] = 204376.75040425,
 							["friendlyfire_total"] = 0,
-							["colocacao"] = 1,
-							["last_event"] = 1473912418,
-							["on_hold"] = false,
+							["last_dps"] = 204376.75040425,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.006468,
 							["start_time"] = 1473912402,
-							["serial"] = "Player-60-0A91880D",
-							["friendlyfire"] = {
-							},
+							["delay"] = 0,
+							["total"] = 3270028.006468,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -1139,15 +1139,15 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["damage_taken"] = 125136.008269,
+							["on_hold"] = false,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 3042625.008269,
-							["last_event"] = 1473912418,
+							["classe"] = "PET",
 							["dps_started"] = false,
 							["total"] = 3042625.008269,
-							["delay"] = 0,
+							["serial"] = "Vehicle-0-3778-1220-1551-104595-00005A1E1B",
 							["ownerName"] = "Emmarosa",
 							["nome"] = "Murky <Emmarosa>",
 							["spells"] = {
@@ -1170,30 +1170,30 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 179021,
 										["r_dmg"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 28,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
 							["end_time"] = 1473912423,
+							["tipo"] = 1,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
+							["last_event"] = 1473912418,
+							["damage_taken"] = 125136.008269,
 							["start_time"] = 1473912402,
-							["serial"] = "Vehicle-0-3778-1220-1551-104595-00005A1E1B",
-							["classe"] = "PET",
+							["delay"] = 0,
+							["friendlyfire"] = {
+							},
 						}, -- [2]
 						{
 							["flag_original"] = 8465,
@@ -1204,15 +1204,15 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["damage_taken"] = 0.005084,
+							["on_hold"] = false,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 227403.005084,
-							["last_event"] = 1473912418,
+							["classe"] = "PET",
 							["dps_started"] = false,
 							["total"] = 227403.005084,
-							["delay"] = 0,
+							["serial"] = "Creature-0-3778-1220-1551-89629-00005A1E6A",
 							["ownerName"] = "Emmarosa",
 							["nome"] = "Pufferfish <Emmarosa>",
 							["spells"] = {
@@ -1235,30 +1235,30 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 179041,
 										["r_dmg"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
 							["end_time"] = 1473912423,
+							["tipo"] = 1,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
+							["last_event"] = 1473912418,
+							["damage_taken"] = 0.005084,
 							["start_time"] = 1473912418,
-							["serial"] = "Creature-0-3778-1220-1551-89629-00005A1E6A",
-							["classe"] = "PET",
+							["delay"] = 0,
+							["friendlyfire"] = {
+							},
 						}, -- [3]
 					},
 				}, -- [1]
@@ -1280,34 +1280,34 @@ _detalhes_database = {
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["nome"] = "Emmarosa",
+							["buff_uptime_targets"] = {
+							},
 							["spec"] = 260,
 							["grupo"] = true,
+							["buff_uptime"] = 21,
+							["nome"] = "Emmarosa",
 							["pets"] = {
 								"Murky <Emmarosa>", -- [1]
 								"Pufferfish <Emmarosa>", -- [2]
 							},
-							["buff_uptime_targets"] = {
-							},
-							["buff_uptime"] = 21,
-							["classe"] = "ROGUE",
 							["tipo"] = 4,
+							["last_event"] = 1473912423,
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									[176151] = {
 										["uptime"] = 21,
 										["activedamt"] = 1,
 										["id"] = 176151,
+										["actived"] = false,
 										["targets"] = {
 										},
-										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
 								["tipo"] = 9,
 							},
 							["serial"] = "Player-60-0A91880D",
-							["last_event"] = 1473912423,
+							["classe"] = "ROGUE",
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -1315,14 +1315,14 @@ _detalhes_database = {
 							["nome"] = "Murky <Emmarosa>",
 							["pets"] = {
 							},
+							["last_event"] = 0,
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["serial"] = "Vehicle-0-3778-1220-1551-104595-00005A1E1B",
 							["spell_cast"] = {
 								[179021] = 3,
 								[179023] = 1,
 							},
-							["classe"] = "PET",
-							["last_event"] = 0,
-							["serial"] = "Vehicle-0-3778-1220-1551-104595-00005A1E1B",
-							["tipo"] = 4,
 						}, -- [2]
 						{
 							["flag_original"] = 8465,
@@ -1330,13 +1330,13 @@ _detalhes_database = {
 							["nome"] = "Pufferfish <Emmarosa>",
 							["pets"] = {
 							},
+							["last_event"] = 0,
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["serial"] = "Creature-0-3778-1220-1551-89629-00005A1E6A",
 							["spell_cast"] = {
 								[179041] = 1,
 							},
-							["classe"] = "PET",
-							["last_event"] = 0,
-							["serial"] = "Creature-0-3778-1220-1551-89629-00005A1E6A",
-							["tipo"] = 4,
 						}, -- [3]
 					},
 				}, -- [4]
@@ -1366,15 +1366,15 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
-					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
 				},
 				["player_last_events"] = {
 				},
@@ -1386,10 +1386,7 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage"] = {
-						{
-							["Emmarosa"] = 3270028.006468,
-						}, -- [1]
+					["damage_section"] = {
 					},
 					["heal_section"] = {
 					},
@@ -1397,7 +1394,10 @@ _detalhes_database = {
 						{
 						}, -- [1]
 					},
-					["damage_section"] = {
+					["damage"] = {
+						{
+							["Emmarosa"] = 3270028.006468,
+						}, -- [1]
 					},
 				},
 				["end_time"] = 2346439.809,
@@ -1423,12 +1423,12 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
 				},
 				["start_time"] = 2346419.043,
@@ -1448,38 +1448,38 @@ _detalhes_database = {
 							["targets"] = {
 								["Tufferfish"] = 1121519,
 							},
-							["delay"] = 0,
+							["serial"] = "Player-60-0A91880D",
 							["pets"] = {
 								"Murky <Emmarosa>", -- [1]
 								"Pufferfish <Emmarosa>", -- [2]
 							},
-							["custom"] = 0,
-							["tipo"] = 1,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["classe"] = "ROGUE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.006673,
+							["spec"] = 260,
+							["dps_started"] = false,
+							["end_time"] = 1473912399,
+							["on_hold"] = false,
+							["last_event"] = 1473912398,
+							["nome"] = "Emmarosa",
 							["spells"] = {
 								["_ActorTable"] = {
 								},
 								["tipo"] = 2,
 							},
-							["dps_started"] = false,
-							["end_time"] = 1473912399,
-							["damage_taken"] = 0.006673,
-							["total"] = 1121519.006673,
-							["nome"] = "Emmarosa",
-							["spec"] = 260,
 							["grupo"] = true,
-							["last_dps"] = 231288.720703108,
 							["friendlyfire_total"] = 0,
-							["colocacao"] = 1,
-							["last_event"] = 1473912398,
-							["on_hold"] = false,
+							["last_dps"] = 231288.720703108,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.006673,
 							["start_time"] = 1473912393,
-							["serial"] = "Player-60-0A91880D",
-							["friendlyfire"] = {
-							},
+							["delay"] = 0,
+							["total"] = 1121519.006673,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -1491,15 +1491,15 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["damage_taken"] = 50446.003598,
+							["on_hold"] = false,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 828029.003598,
-							["last_event"] = 1473912398,
+							["classe"] = "PET",
 							["dps_started"] = false,
 							["total"] = 828029.003598,
-							["delay"] = 0,
+							["serial"] = "Vehicle-0-3778-1220-1551-104595-00005A1E1B",
 							["ownerName"] = "Emmarosa",
 							["nome"] = "Murky <Emmarosa>",
 							["spells"] = {
@@ -1522,30 +1522,30 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 179021,
 										["r_dmg"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 6,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
 							["end_time"] = 1473912399,
+							["tipo"] = 1,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
+							["last_event"] = 1473912398,
+							["damage_taken"] = 50446.003598,
 							["start_time"] = 1473912393,
-							["serial"] = "Vehicle-0-3778-1220-1551-104595-00005A1E1B",
-							["classe"] = "PET",
+							["delay"] = 0,
+							["friendlyfire"] = {
+							},
 						}, -- [2]
 						{
 							["flag_original"] = 8465,
@@ -1556,15 +1556,15 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["damage_taken"] = 0.008414,
+							["on_hold"] = false,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 293490.008414,
-							["last_event"] = 1473912398,
+							["classe"] = "PET",
 							["dps_started"] = false,
 							["total"] = 293490.008414,
-							["delay"] = 0,
+							["serial"] = "Creature-0-3778-1220-1551-89629-0000DA1E56",
 							["ownerName"] = "Emmarosa",
 							["nome"] = "Pufferfish <Emmarosa>",
 							["spells"] = {
@@ -1587,30 +1587,30 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 179041,
 										["r_dmg"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
 							["end_time"] = 1473912399,
+							["tipo"] = 1,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
+							["last_event"] = 1473912398,
+							["damage_taken"] = 0.008414,
 							["start_time"] = 1473912398,
-							["serial"] = "Creature-0-3778-1220-1551-89629-0000DA1E56",
-							["classe"] = "PET",
+							["delay"] = 0,
+							["friendlyfire"] = {
+							},
 						}, -- [3]
 					},
 				}, -- [1]
@@ -1632,34 +1632,34 @@ _detalhes_database = {
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["nome"] = "Emmarosa",
+							["buff_uptime_targets"] = {
+							},
 							["spec"] = 260,
 							["grupo"] = true,
+							["buff_uptime"] = 6,
+							["nome"] = "Emmarosa",
 							["pets"] = {
 								"Murky <Emmarosa>", -- [1]
 								"Pufferfish <Emmarosa>", -- [2]
 							},
-							["buff_uptime_targets"] = {
-							},
-							["buff_uptime"] = 6,
-							["classe"] = "ROGUE",
 							["tipo"] = 4,
+							["last_event"] = 1473912399,
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									[176151] = {
 										["uptime"] = 6,
 										["activedamt"] = 1,
 										["id"] = 176151,
+										["actived"] = false,
 										["targets"] = {
 										},
-										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
 								["tipo"] = 9,
 							},
 							["serial"] = "Player-60-0A91880D",
-							["last_event"] = 1473912399,
+							["classe"] = "ROGUE",
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -1667,14 +1667,14 @@ _detalhes_database = {
 							["nome"] = "Murky <Emmarosa>",
 							["pets"] = {
 							},
+							["last_event"] = 0,
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["serial"] = "Vehicle-0-3778-1220-1551-104595-00005A1E1B",
 							["spell_cast"] = {
 								[179023] = 1,
 								[179021] = 1,
 							},
-							["classe"] = "PET",
-							["last_event"] = 0,
-							["serial"] = "Vehicle-0-3778-1220-1551-104595-00005A1E1B",
-							["tipo"] = 4,
 						}, -- [2]
 						{
 							["flag_original"] = 8465,
@@ -1682,13 +1682,13 @@ _detalhes_database = {
 							["nome"] = "Pufferfish <Emmarosa>",
 							["pets"] = {
 							},
+							["last_event"] = 0,
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["serial"] = "Creature-0-3778-1220-1551-89629-0000DA1E56",
 							["spell_cast"] = {
 								[179041] = 1,
 							},
-							["classe"] = "PET",
-							["last_event"] = 0,
-							["serial"] = "Creature-0-3778-1220-1551-89629-0000DA1E56",
-							["tipo"] = 4,
 						}, -- [3]
 					},
 				}, -- [4]
@@ -1718,15 +1718,15 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
-					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
 				},
 				["player_last_events"] = {
 				},
@@ -1738,10 +1738,7 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage"] = {
-						{
-							["Emmarosa"] = 1121519.006673,
-						}, -- [1]
+					["damage_section"] = {
 					},
 					["heal_section"] = {
 					},
@@ -1749,7 +1746,10 @@ _detalhes_database = {
 						{
 						}, -- [1]
 					},
-					["damage_section"] = {
+					["damage"] = {
+						{
+							["Emmarosa"] = 1121519.006673,
+						}, -- [1]
 					},
 				},
 				["end_time"] = 2346415.47,
@@ -1775,12 +1775,12 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
 				},
 				["start_time"] = 2346410.017,
@@ -1790,10 +1790,8 @@ _detalhes_database = {
 			}, -- [5]
 		},
 	},
-	["combat_counter"] = 4444,
-	["character_data"] = {
-		["logons"] = 180,
-	},
+	["combat_counter"] = 4445,
+	["last_version"] = "v7.0.3.2941",
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
 			["lasttry"] = {
@@ -1801,10 +1799,10 @@ _detalhes_database = {
 			["annouce"] = true,
 			["dpshistory"] = {
 			},
-			["enabled"] = true,
+			["dps"] = 0,
 			["author"] = "Details! Team",
 			["level"] = 1,
-			["dps"] = 0,
+			["enabled"] = true,
 		},
 		["DETAILS_PLUGIN_DEATH_GRAPHICS"] = {
 			["last_boss"] = false,
@@ -1822,15 +1820,15 @@ _detalhes_database = {
 			["max_segments_for_current"] = 2,
 			["max_deaths_for_current"] = 15,
 			["last_player"] = false,
-			["author"] = "Details! Team",
+			["InstalledAt"] = 1470375019,
 			["last_encounter_hash"] = false,
-			["enabled"] = true,
+			["showing_type"] = 4,
 			["timeline_cutoff_time"] = 3,
 			["last_segment"] = false,
 			["last_combat_id"] = 136,
 			["timeline_cutoff_delete_time"] = 3,
-			["showing_type"] = 4,
-			["InstalledAt"] = 1470375019,
+			["enabled"] = true,
+			["author"] = "Details! Team",
 		},
 		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
 			["enabled"] = true,
@@ -1839,11 +1837,11 @@ _detalhes_database = {
 			["max_emote_segments"] = 3,
 			["author"] = "Details! Team",
 			["window_scale"] = 1,
-			["encounter_timers_dbm"] = {
-			},
+			["hide_on_combat"] = false,
 			["show_icon"] = 5,
 			["opened"] = 1,
-			["hide_on_combat"] = false,
+			["encounter_timers_dbm"] = {
+			},
 		},
 		["DETAILS_PLUGIN_LEECH_TRINKET"] = {
 			["enabled"] = true,
@@ -1851,17 +1849,17 @@ _detalhes_database = {
 		},
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["updatespeed"] = 1,
-			["enabled"] = true,
+			["animate"] = false,
 			["showamount"] = false,
 			["useplayercolor"] = false,
-			["author"] = "Details! Team",
 			["useclasscolors"] = false,
+			["author"] = "Details! Team",
 			["playercolor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["animate"] = false,
+			["enabled"] = true,
 		},
 		["DETAILS_PLUGIN_DPS_TUNING"] = {
 			["enabled"] = true,
@@ -1870,17 +1868,41 @@ _detalhes_database = {
 		},
 		["DETAILS_PLUGIN_VANGUARD"] = {
 			["enabled"] = true,
+			["tank_block_texture"] = "Details Serenity",
 			["tank_block_color"] = {
 				0.24705882, -- [1]
 				0.0039215, -- [2]
 				0, -- [3]
 				0.8, -- [4]
 			},
-			["tank_block_texture"] = "Details Serenity",
 			["show_inc_bars"] = false,
 			["author"] = "Details! Team",
 			["first_run"] = false,
 			["tank_block_size"] = 150,
+		},
+		["DETAILS_PLUGIN_TIME_ATTACK"] = {
+			["enabled"] = true,
+			["realm_last_shown"] = 40,
+			["saved_as_anonymous"] = true,
+			["recently_as_anonymous"] = true,
+			["dps"] = 0,
+			["disable_sharing"] = false,
+			["history"] = {
+			},
+			["time"] = 40,
+			["history_lastindex"] = 0,
+			["realm_lastamt"] = 0,
+			["realm_history"] = {
+			},
+			["author"] = "Details! Team",
+		},
+		["DETAILS_PLUGIN_RAIDCHECK"] = {
+			["enabled"] = true,
+			["pre_pot_tanks"] = false,
+			["mythic_1_4"] = true,
+			["author"] = "Details! Team",
+			["use_report_panel"] = true,
+			["pre_pot_healers"] = false,
 		},
 		["DETAILS_PLUGIN_CHART_VIEWER"] = {
 			["enabled"] = true,
@@ -1894,8 +1916,8 @@ _detalhes_database = {
 					["texture"] = "line",
 				}, -- [1]
 				{
-					["iType"] = "raid-DAMAGER",
 					["version"] = "v2.0",
+					["iType"] = "raid-DAMAGER",
 					["options"] = {
 						["iType"] = "raid-DAMAGER",
 						["name"] = "Damager (Same Class)",
@@ -1906,8 +1928,8 @@ _detalhes_database = {
 					["texture"] = "line",
 				}, -- [2]
 				{
-					["iType"] = "raid-HEALER",
 					["version"] = "v2.0",
+					["iType"] = "raid-HEALER",
 					["options"] = {
 						["iType"] = "raid-HEALER",
 						["name"] = "All Healers",
@@ -1920,136 +1942,18 @@ _detalhes_database = {
 				["last_selected"] = 3,
 			},
 			["options"] = {
-				["show_method"] = 4,
 				["auto_create"] = true,
+				["show_method"] = 4,
 				["window_scale"] = 0.649999976158142,
 			},
 		},
-		["DETAILS_PLUGIN_RAIDCHECK"] = {
-			["enabled"] = true,
-			["pre_pot_tanks"] = false,
-			["mythic_1_4"] = true,
-			["author"] = "Details! Team",
-			["use_report_panel"] = true,
-			["pre_pot_healers"] = false,
-		},
-		["DETAILS_PLUGIN_TIME_ATTACK"] = {
-			["enabled"] = true,
-			["realm_last_shown"] = 40,
-			["saved_as_anonymous"] = true,
-			["recently_as_anonymous"] = true,
-			["dps"] = 0,
-			["disable_sharing"] = false,
-			["history"] = {
-			},
-			["time"] = 40,
-			["history_lastindex"] = 0,
-			["author"] = "Details! Team",
-			["realm_history"] = {
-			},
-			["realm_lastamt"] = 0,
-		},
 	},
-	["cached_talents"] = {
-		["Player-60-09F94D16"] = {
-			22022, -- [1]
-			22030, -- [2]
-			22518, -- [3]
-			22532, -- [4]
-			22026, -- [5]
-			22028, -- [6]
-			22526, -- [7]
-		},
-		["Player-1190-075B4261"] = {
-			22558, -- [1]
-			22594, -- [2]
-			21811, -- [3]
-			22434, -- [4]
-			22705, -- [5]
-			17609, -- [6]
-			21202, -- [7]
-		},
-		["Player-162-08EDAF4E"] = {
-			22558, -- [1]
-			22604, -- [2]
-			21811, -- [3]
-			22433, -- [4]
-			21795, -- [5]
-			22438, -- [6]
-			22645, -- [7]
-		},
-		["Player-60-0A7DEA14"] = {
-			22366, -- [1]
-			22165, -- [2]
-			21710, -- [3]
-			22404, -- [4]
-			18569, -- [5]
-			18577, -- [6]
-			18570, -- [7]
-		},
-		["Player-7-0A2B9F64"] = {
-			19264, -- [1]
-			21963, -- [2]
-			19275, -- [3]
-			22323, -- [4]
-			21966, -- [5]
-			21971, -- [6]
-			21675, -- [7]
-		},
-		["Player-1428-05E5D4F0"] = {
-			22279, -- [1]
-			22495, -- [2]
-			19347, -- [3]
-			21998, -- [4]
-			22284, -- [5]
-			22002, -- [6]
-			22274, -- [7]
-		},
-		["Player-60-0AA61578"] = {
-			21973, -- [1]
-			22150, -- [2]
-			22137, -- [3]
-			19275, -- [4]
-			22148, -- [5]
-			22171, -- [6]
-			22353, -- [7]
-		},
-		["Player-60-0A55F72D"] = {
-			20174, -- [1]
-			19819, -- [2]
-			19995, -- [3]
-			22096, -- [4]
-			19304, -- [5]
-			19823, -- [6]
-			22108, -- [7]
-		},
-		["Player-127-07AD3E74"] = {
-			19293, -- [1]
-			22052, -- [2]
-			22480, -- [3]
-			19288, -- [4]
-			19294, -- [5]
-			21181, -- [6]
-			19280, -- [7]
-		},
-		["Player-60-0A91880D"] = {
-			19236, -- [1]
-			22121, -- [2]
-			22133, -- [3]
-			22114, -- [4]
-			19241, -- [5]
-			19249, -- [6]
-			22118, -- [7]
-		},
-		["Player-157-01732B04"] = {
-			22120, -- [1]
-			19236, -- [2]
-			19239, -- [3]
-			22122, -- [4]
-			22114, -- [5]
-			19249, -- [6]
-			21188, -- [7]
-		},
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
+	["character_data"] = {
+		["logons"] = 181,
 	},
 	["SoloTablesSaved"] = {
 		["LastSelected"] = "DETAILS_PLUGIN_DPS_TUNING",
@@ -2082,22 +1986,21 @@ _detalhes_database = {
 		},
 		["nextreset"] = 1474645509,
 	},
-	["last_realversion"] = 111,
 	["tabela_instancias"] = {
 	},
 	["combat_id"] = 97,
 	["savedStyles"] = {
 	},
+	["last_encounter"] = "Madness of Deathwing",
 	["savedbuffs"] = {
 	},
-	["last_instance_time"] = 1473909738,
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
 		["only_first"] = 5,
 		["where"] = 1,
 	},
-	["last_version"] = "v7.0.3.2941",
+	["last_instance_time"] = 1473909738,
 	["local_instances_config"] = {
 		{
 			["segment"] = 2,
@@ -2165,23 +2068,121 @@ _detalhes_database = {
 			},
 		}, -- [2]
 	},
-	["last_encounter"] = "Madness of Deathwing",
+	["last_realversion"] = 111,
 	["announce_cooldowns"] = {
+		["enabled"] = false,
 		["ignored_cooldowns"] = {
 		},
-		["enabled"] = false,
 		["custom"] = "",
 		["channel"] = "RAID",
 	},
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
+	["cached_talents"] = {
+		["Player-60-09F94D16"] = {
+			22022, -- [1]
+			22030, -- [2]
+			22518, -- [3]
+			22532, -- [4]
+			22026, -- [5]
+			22028, -- [6]
+			22526, -- [7]
+		},
+		["Player-1190-075B4261"] = {
+			22558, -- [1]
+			22594, -- [2]
+			21811, -- [3]
+			22434, -- [4]
+			22705, -- [5]
+			17609, -- [6]
+			21202, -- [7]
+		},
+		["Player-162-08EDAF4E"] = {
+			22558, -- [1]
+			22604, -- [2]
+			21811, -- [3]
+			22433, -- [4]
+			21795, -- [5]
+			22438, -- [6]
+			22645, -- [7]
+		},
+		["Player-60-0A7DEA14"] = {
+			22366, -- [1]
+			22165, -- [2]
+			21710, -- [3]
+			22404, -- [4]
+			18569, -- [5]
+			18577, -- [6]
+			18570, -- [7]
+		},
+		["Player-157-01732B04"] = {
+			22120, -- [1]
+			19236, -- [2]
+			19239, -- [3]
+			22122, -- [4]
+			22114, -- [5]
+			19249, -- [6]
+			21188, -- [7]
+		},
+		["Player-1428-05E5D4F0"] = {
+			22279, -- [1]
+			22495, -- [2]
+			19347, -- [3]
+			21998, -- [4]
+			22284, -- [5]
+			22002, -- [6]
+			22274, -- [7]
+		},
+		["Player-60-0AA61578"] = {
+			21973, -- [1]
+			22150, -- [2]
+			22137, -- [3]
+			19275, -- [4]
+			22148, -- [5]
+			22171, -- [6]
+			22353, -- [7]
+		},
+		["Player-60-0A55F72D"] = {
+			20174, -- [1]
+			19819, -- [2]
+			19995, -- [3]
+			22096, -- [4]
+			19304, -- [5]
+			19823, -- [6]
+			22108, -- [7]
+		},
+		["Player-127-07AD3E74"] = {
+			19293, -- [1]
+			22052, -- [2]
+			22480, -- [3]
+			19288, -- [4]
+			19294, -- [5]
+			21181, -- [6]
+			19280, -- [7]
+		},
+		["Player-60-0A91880D"] = {
+			19236, -- [1]
+			22121, -- [2]
+			22133, -- [3]
+			22114, -- [4]
+			19241, -- [5]
+			19249, -- [6]
+			22118, -- [7]
+		},
+		["Player-7-0A2B9F64"] = {
+			19264, -- [1]
+			21963, -- [2]
+			19275, -- [3]
+			22323, -- [4]
+			21966, -- [5]
+			21971, -- [6]
+			21675, -- [7]
+		},
 	},
 	["last_instance_id"] = 1477,
 	["cached_specs"] = {
-		["Player-60-0A805916"] = 260,
-		["Player-60-0A896329"] = 260,
 		["Player-60-0A91880D"] = 260,
+		["Player-60-0A805916"] = 260,
 		["Player-60-09DA85AF"] = 260,
+		["Player-60-097DB4DC"] = 260,
+		["Player-60-0A896329"] = 260,
 	},
 }

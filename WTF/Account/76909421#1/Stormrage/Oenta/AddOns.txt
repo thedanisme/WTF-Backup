@@ -30,7 +30,7 @@ Altoholic_Achievements: disabled
 Altoholic: disabled
 ConsLegion: disabled
 _NPCScan: enabled
-_NPCScan.Overlay: enabled
+_NPCScan.Overlay: disabled
 AdvancedInterfaceOptions: enabled
 AtlasLoot: enabled
 AtlasLoot_BurningCrusade: disabled
