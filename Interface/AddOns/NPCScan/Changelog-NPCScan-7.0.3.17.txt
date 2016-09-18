@@ -1,0 +1,19 @@
+tag 7.0.3.17
+26a7205eece787cd2c98aee53927446525a8fa64
+James D. Callahan III <jcallahan@curse.com>
+2016-09-17 03:45:54 -0500
+
+
+
+--------------------
+
+James D. Callahan III:
+	- Slight cleanup.
+	- Add large amount of new and updated data.
+	- Process vignette names before quests, so things like Tide Behemoth only alert for the final NPC - the quest list has them all.
+	- Escape quotes in string dumps.
+	- Limit vignette detection to NPC IDs in the current zone, at least one vignette name matches to NPCs in multiple zones (Marius & Tehd).
+	- Add Dread Captain Thedon.
+	- Translate nil vignetteName to UNKNOWN.
+	- button => targetButton for consistency.
+	- Dead code removal.
