@@ -6,6 +6,7 @@ local pairs = _G.pairs
 
 -- Libraries
 local string = _G.string
+local table = _G.table
 
 -- ----------------------------------------------------------------------------
 -- AddOn namespace.
@@ -106,26 +107,18 @@ function NPCScan:OnEnable()
 				private.NPCData[npcID] = npcData
 			end
 
-			-- This is technically incorrect, since NPCs can be in several locations, but it's primarily used for informational purposes where an
-			-- NPC _should_ ever only have a single location. For now.
-			npcData.mapID = mapID
-
+			npcData.mapIDs = npcData.mapIDs or {}
+			npcData.mapIDs[#npcData.mapIDs + 1] = mapID
 			npcData.npcID = npcID
 
-			local npcName = self:GetNPCNameFromID(npcID)
-			if not npcName then
-				private.Debug("NPC ID %d not found in localization table.", npcID)
-
-				npcName = ("%s_%d"):format(_G.UNKNOWN, npcID)
-			end
-
-			npcData.name = npcName
-
-			NPCIDFromName[npcName] = npcID
+			-- This sets values for NPCIDFromName, which is used for vignette detection.
+			self:GetNPCNameFromID(npcID)
 		end
 	end
 
 	for npcID, data in pairs(private.NPCData) do
+		table.sort(data.mapIDs, private.SortByMapNameThenByID)
+
 		if data.questID then
 			local npcIDs = QuestNPCs[data.questID]
 			if not npcIDs then
@@ -231,7 +224,7 @@ function NPCScan:OnEnable()
 						private.Debug("-- ----------------------------------------------------------------------------")
 					end
 
-					private.Debug("NPC %d (%s) has no questID.", npcID, npcData.name)
+					private.Debug("NPC %d (%s) has no questID.", npcID, self:GetNPCNameFromID(npcID))
 				end
 			end
 		end
@@ -280,7 +273,7 @@ do
 				private.db.locale.npcNames[npcID] = npcName
 				NPCIDFromName[npcName] = npcID
 			else
-				npcName = _G.UNKNOWN
+				npcName = _G.SEARCH_LOADING_TEXT
 			end
 		end
 
@@ -299,7 +292,7 @@ do
 				private.db.locale.questNames[questID] = questName
 				private.QuestIDFromName[questName] = questID
 			else
-				questName = _G.UNKNOWN
+				questName = _G.SEARCH_LOADING_TEXT
 			end
 		end
 

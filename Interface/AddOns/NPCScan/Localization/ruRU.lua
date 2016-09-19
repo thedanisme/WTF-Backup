@@ -30,6 +30,7 @@ if not L then return end
 -- L["TOP"] = "Top"
 -- L["TOPLEFT"] = "Top Left"
 -- L["TOPRIGHT"] = "Top Right"
+-- L["Type the name of a Continent, Dungeon, or Zone, or the partial name of an NPC. Accepts Lua patterns."] = "Type the name of a Continent, Dungeon, or Zone, or the partial name of an NPC. Accepts Lua patterns."
 -- L["Vertical offset from the anchor point."] = "Vertical offset from the anchor point."
 -- L["X Offset"] = "X Offset"
 -- L["Y Offset"] = "Y Offset"

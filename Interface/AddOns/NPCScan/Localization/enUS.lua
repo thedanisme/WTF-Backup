@@ -31,6 +31,7 @@ L["The number of minutes before an NPC will be detected again."] = true
 L["TOP"] = "Top"
 L["TOPLEFT"] = "Top Left"
 L["TOPRIGHT"] = "Top Right"
+L["Type the name of a Continent, Dungeon, or Zone, or the partial name of an NPC. Accepts Lua patterns."] = true
 L["Vertical offset from the anchor point."] = true
 L["X Offset"] = true
 L["Y Offset"] = true

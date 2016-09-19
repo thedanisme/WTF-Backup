@@ -50,21 +50,28 @@ local profile
 -- ----------------------------------------------------------------------------
 local UpdateBlacklistedNPCOptions
 
-local function GetAchievementNPCOptionsName(npcID)
+local function GetNPCOptionsDescription(npcID)
 	local npcData = private.NPCData[npcID]
-	local colorCode = npcData.isCriteriaCompleted and _G.GREEN_FONT_COLOR_CODE or _G.RED_FONT_COLOR_CODE
-	return ("%s%s|r"):format(colorCode, npcData.name)
+	local mapNames = {}
+
+	for mapIDIndex = 1, #npcData.mapIDs do
+		mapNames[#mapNames + 1] = private.MapNameByID[npcData.mapIDs[mapIDIndex]]
+	end
+
+	return ("%s %s %s"):format(_G.ID, npcID, table.concat(mapNames, ", "))
 end
 
-local function GetRareNPCOptionsName(npcID)
+local function GetNPCOptionsName(npcID)
+	local colorCode = _G.NORMAL_FONT_COLOR_CODE
 	local npcData = private.NPCData[npcID]
 
-	local colorCode = _G.NORMAL_FONT_COLOR_CODE
-	if npcData.questID then
+	if npcData.achievementID then
+		colorCode = npcData.isCriteriaCompleted and _G.GREEN_FONT_COLOR_CODE or _G.RED_FONT_COLOR_CODE
+	elseif npcData.questID then
 		colorCode = private.IsNPCQuestComplete(npcID) and _G.GREEN_FONT_COLOR_CODE or _G.RED_FONT_COLOR_CODE
 	end
 
-	return ("%s%s|r"):format(colorCode, npcData.name)
+	return ("%s%s|r"):format(colorCode, NPCScan:GetNPCNameFromID(npcID))
 end
 
 local function SortByNPCNameThenByID(a, b)
@@ -148,7 +155,7 @@ local function UpdateAchievementNPCOptions()
 			local npcData = private.NPCData[npcID]
 
 			if npcData.factionGroup ~= private.PlayerFactionGroup then
-				npcNames[npcID] = npcData.name
+				npcNames[npcID] = NPCScan:GetNPCNameFromID(npcID)
 				npcIDs[#npcIDs + 1] = npcID
 			end
 		end
@@ -160,8 +167,8 @@ local function UpdateAchievementNPCOptions()
 
 			achievementOptionsTable.args.npcs.args["npcID" .. npcID] = {
 				order = npcIDIndex,
-				name = GetAchievementNPCOptionsName(npcID),
-				desc = ("%s %s %s"):format(_G.ID, npcID, private.MapNameByID[private.NPCData[npcID].mapID]),
+				name = GetNPCOptionsName(npcID),
+				desc = GetNPCOptionsDescription(npcID),
 				type = "toggle",
 				width = "full",
 				descStyle = "inline",
@@ -213,7 +220,7 @@ local function UpdateRareNPCOptions()
 			local npcData = private.NPCData[npcID]
 
 			if not npcData.isTameable and npcData.factionGroup ~= private.PlayerFactionGroup then
-				npcNames[npcID] = npcData.name
+				npcNames[npcID] = NPCScan:GetNPCNameFromID(npcID)
 				npcIDs[#npcIDs + 1] = npcID
 			end
 		end
@@ -245,8 +252,8 @@ local function UpdateRareNPCOptions()
 				if npcID then
 					mapOptionsTable.args.npcs.args["npc" .. npcID] = {
 						order = npcIDIndex,
-						name = GetRareNPCOptionsName(npcID),
-						desc = ("%s %s"):format(_G.ID, npcID),
+						name = GetNPCOptionsName(npcID),
+						desc = GetNPCOptionsDescription(npcID),
 						descStyle = "inline",
 						type = "toggle",
 						width = "full",
@@ -306,7 +313,7 @@ local function UpdateTameableRareNPCOptions()
 			local npcData = private.NPCData[npcID]
 
 			if npcData.isTameable and npcData.factionGroup ~= private.PlayerFactionGroup then
-				npcNames[npcID] = npcData.name
+				npcNames[npcID] = NPCScan:GetNPCNameFromID(npcID)
 				npcIDs[#npcIDs + 1] = npcID
 			end
 		end
@@ -338,8 +345,8 @@ local function UpdateTameableRareNPCOptions()
 				if npcID then
 					mapOptionsTable.args.npcs.args["npc" .. npcID] = {
 						order = npcIDIndex,
-						name = GetRareNPCOptionsName(npcID),
-						desc = ("%s %s"):format(_G.ID, npcID),
+						name = GetNPCOptionsName(npcID),
+						desc = GetNPCOptionsDescription(npcID),
 						descStyle = "inline",
 						type = "toggle",
 						width = "full",
@@ -378,6 +385,128 @@ local function UpdateTameableRareNPCOptions()
 end
 
 private.UpdateTameableRareNPCOptions = UpdateTameableRareNPCOptions
+
+-- ----------------------------------------------------------------------------
+-- Search options.
+-- ----------------------------------------------------------------------------
+local NPCSearchOptions = {}
+
+local function UpdateNPCSearchOptions()
+	table.wipe(NPCSearchOptions)
+
+	table.sort(npcIDs, SortByNPCNameThenByID)
+
+	if #npcIDs > 0 then
+		for npcIDIndex = 1, #npcIDs do
+			local npcID = npcIDs[npcIDIndex]
+			local npcData = private.NPCData[npcID]
+
+			local achievementText = ""
+			if npcData.achievementID then
+				achievementText = _G.PARENS_TEMPLATE:format(private.AchievementNameByID[npcData.achievementID])
+			end
+
+			NPCSearchOptions["npc" .. npcID] = {
+				order = npcIDIndex,
+				name = GetNPCOptionsName(npcID),
+				desc = ("%s %s"):format(GetNPCOptionsDescription(npcID), achievementText),
+				descStyle = "inline",
+				type = "toggle",
+				width = "full",
+				disabled = function()
+					if npcData.achievementID and profile.detection.achievementIDs[npcData.achievementID] ~= private.DetectionGroupStatus.UserDefined then
+						return true
+					end
+				end,
+				get = function(info)
+					return not profile.blacklist.npcIDs[npcID]
+				end,
+				set = function(info, value)
+					local isBlacklisted = not profile.blacklist.npcIDs[npcID] and true or nil
+					profile.blacklist.npcIDs[npcID] = isBlacklisted
+
+					UpdateRareNPCOptions()
+					UpdateTameableRareNPCOptions()
+					UpdateBlacklistedNPCOptions()
+
+					NPCScan:UpdateScanList()
+
+					if isBlacklisted then
+						NPCScan:SendMessage("NPCScan_RemoveNPCFromScanList", npcID)
+					end
+				end,
+			}
+		end
+	else
+		NPCSearchOptions["npc0"] = EmptyListOption
+	end
+
+	AceConfigRegistry:NotifyChange(AddOnFolderName)
+end
+
+local function PerformNPCSearch(searchString)
+	searchString = searchString:lower():trim()
+
+	table.wipe(npcIDs)
+	table.wipe(npcNames)
+
+	for continentID = 1, #private.ContinentNameByID do
+		local continentName = private.ContinentNameByID[continentID]
+
+		if continentName:lower() == searchString then
+			local continentMaps = private.ContinentMaps[continentID]
+
+			for mapID in pairs(continentMaps) do
+				for npcID in pairs(private.MapNPCs[mapID]) do
+					local npcData = private.NPCData[npcID]
+
+					if npcData.factionGroup ~= private.PlayerFactionGroup then
+						npcNames[npcID] = NPCScan:GetNPCNameFromID(npcID)
+						npcIDs[#npcIDs + 1] = npcID
+					end
+				end
+			end
+
+			UpdateNPCSearchOptions()
+
+			return
+		end
+	end
+
+	for mapID in pairs(private.MapNPCs) do
+		local mapName = private.MapNameByID[mapID]
+
+		if mapName:lower() == searchString then
+			for npcID in pairs(private.MapNPCs[mapID]) do
+				local npcData = private.NPCData[npcID]
+
+				if npcData.factionGroup ~= private.PlayerFactionGroup then
+					npcNames[npcID] = NPCScan:GetNPCNameFromID(npcID)
+					npcIDs[#npcIDs + 1] = npcID
+				end
+			end
+
+			UpdateNPCSearchOptions()
+
+			return
+		end
+	end
+
+	for npcID in pairs(private.NPCData) do
+		local npcName = NPCScan:GetNPCNameFromID(npcID)
+
+		if npcName:lower():find(searchString) then
+			local npcData = private.NPCData[npcID]
+
+			if npcData.factionGroup ~= private.PlayerFactionGroup then
+				npcNames[npcID] = NPCScan:GetNPCNameFromID(npcID)
+				npcIDs[#npcIDs + 1] = npcID
+			end
+		end
+	end
+
+	UpdateNPCSearchOptions()
+end
 
 -- ----------------------------------------------------------------------------
 -- User defined NPC options.
@@ -435,7 +564,7 @@ function UpdateBlacklistedNPCOptions()
 		for index = 1, #npcIDs do
 			local npcID = npcIDs[index]
 
-			BlacklistedNPCOptions["npc" .. index] = {
+			BlacklistedNPCOptions["npc" .. npcID] = {
 				order = index,
 				name = ("%s: %d"):format(NPCScan:GetNPCNameFromID(npcID), npcID),
 				descStyle = "inline",
@@ -554,8 +683,39 @@ local function GetOrUpdateNPCOptions()
 					},
 				},
 			},
-			userDefined = {
+			search = {
 				order = 4,
+				name = _G.SEARCH,
+				type = "group",
+				args = {
+					description = {
+						order = 1,
+						type = "description",
+						name = L["Type the name of a Continent, Dungeon, or Zone, or the partial name of an NPC. Accepts Lua patterns."],
+					},
+					entryBox = {
+						order = 2,
+						name = " ",
+						descStyle = "inline",
+						type = "input",
+						get = function()
+							return ""
+						end,
+						set = function(info, value)
+							PerformNPCSearch(value)
+						end,
+					},
+					results = {
+						order = 3,
+						name = _G.KBASE_SEARCH_RESULTS,
+						type = "group",
+						inline = true,
+						args = NPCSearchOptions,
+					},
+				},
+			},
+			userDefined = {
+				order = 5,
 				name = _G.CUSTOM,
 				type = "group",
 				args = {
@@ -618,7 +778,7 @@ local function GetOrUpdateNPCOptions()
 				},
 			},
 			blacklisted = {
-				order = 5,
+				order = 6,
 				name = _G.IGNORED,
 				type = "group",
 				args = {

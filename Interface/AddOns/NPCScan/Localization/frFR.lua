@@ -30,6 +30,7 @@ L["The number of minutes before an NPC will be detected again."] = "Le nombre de
 L["TOP"] = "Haut"
 L["TOPLEFT"] = "Haut gauche"
 L["TOPRIGHT"] = "Haut droit"
+-- L["Type the name of a Continent, Dungeon, or Zone, or the partial name of an NPC. Accepts Lua patterns."] = "Type the name of a Continent, Dungeon, or Zone, or the partial name of an NPC. Accepts Lua patterns."
 L["Vertical offset from the anchor point."] = "Décalage vertical du point d'ancrage."
 L["X Offset"] = "Décalage sur X"
 L["Y Offset"] = "Décalage sur Y"

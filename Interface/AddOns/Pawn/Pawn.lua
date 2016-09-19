@@ -248,6 +248,18 @@ function PawnInitialize()
 			if ItemLink then PawnUpdateTooltip("GameTooltip", "SetHyperlink", ItemLink) end
 		end)
 	hooksecurefunc(GameTooltip, "Hide", function(self, ...) PawnLastHoveredItem = nil end)
+
+	-- World quest embedded tooltips
+	hooksecurefunc("EmbeddedItemTooltip_SetItemByQuestReward",
+		function(self, QuestLogIndex, QuestID, ...)
+			if PawnCommon.ShowQuestUpgradeAdvisor then
+				local ItemName, ItemTexture = GetQuestLogRewardInfo(QuestLogIndex, QuestID)
+				if ItemName and ItemTexture then
+					PawnUpdateTooltip(self.Tooltip:GetName(), "SetQuestLogItem", "reward", QuestLogIndex, QuestID, ...)
+					self.Tooltip:Show() -- resizes the tooltip's boundaries in case our annotation made it wider
+				end
+			end
+		end)
 	
 	-- World map tooltip (for quest rewards)
 	hooksecurefunc(WorldMapTooltip, "SetHyperlink", function(self, ...) PawnUpdateTooltip("WorldMapTooltip", "SetHyperlink", ...) end) -- HandyNotes_DraenorTreasures compatibility
