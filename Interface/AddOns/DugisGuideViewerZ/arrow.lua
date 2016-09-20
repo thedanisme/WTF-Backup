@@ -793,7 +793,7 @@ function DugisArrow:Initialize()
 			end
 			if reset then DugisGuideViewer:RemoveAllWaypoints() end
 			if posX then
-				DGV:AddCustomWaypoint(posX, posY, desc, m, f, questId)
+				DGV:AddCustomWaypoint(posX, posY, desc, m, f)
 				if DugisGuideViewer:IsModuleLoaded("Target") then DoOutOfCombat(DugisGuideViewer.Modules.Target.Frame.Hide, DugisGuideViewer.Modules.Target.Frame) end
 				--DGV:AddRouteWaypointWithNoTrigger(m, f, posX, posY, desc)
 				--DoOutOfCombat(SetUseItemByQID, questId)
@@ -1493,12 +1493,12 @@ function DugisArrow:Initialize()
 			
 			if not waypoint.isWTag or waypoint.isRouteWaypoint or removeMe then 
 				DugisArrow:RemoveWaypoint(waypoint)				
-				PlaySoundFile("sound\\interface\\magicclick.ogg")
+				if DugisGuideViewer:UserSetting(DGV_WAYPOINT_PING) then PlaySoundFile("sound\\interface\\magicclick.ogg") end
 				UIErrorsFrame:AddMessage("Waypoint reached.",1,1,1,1)
 			elseif DugisArrow:DidPlayerReachWaypoint() ~= DugisArrow:getFinalWaypoint() then		
 				DugisArrow:RemoveWaypoint(waypoint)	
 				DugisArrow:AddWaypoint(waypoint.map, waypoint.floor, waypoint.x, waypoint.y, waypoint.desc, waypoint.guideIndex, waypoint.questId, false, waypoint.isWTag)  --creates problems with recalculation, revisit later. 
-				PlaySoundFile("sound\\interface\\magicclick.ogg")
+				if DugisGuideViewer:UserSetting(DGV_WAYPOINT_PING) then PlaySoundFile("sound\\interface\\magicclick.ogg") end
 				UIErrorsFrame:AddMessage("Waypoint reached.",1,1,1,1)				
 			end
 

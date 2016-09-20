@@ -4,6 +4,15 @@
 [*]Hook for skinning addons.[/list]
 
 ]]
+--[[Revisions: 06.11
+
+06.12 19.09.2016
+
+[list][*]Long string with multiline is now parsed into multiple strings, and printed. Ticket-fix prevent overflow text out of chat window.
+Fix anchor for UberTooltips.
+Added powers from Legion fish catches[/list]
+
+]]
 --[[Revisions: 06.10
 
 06.10 31.08.2016

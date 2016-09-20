@@ -1522,7 +1522,7 @@ function MapOverlays:Initialize()
 				},		
 				["Highmountain"] = {
 					["BLOODHUNTHIGHLANDS"] = 80852805929,
-					["CAVEA"] = 204114162798,
+					["CAVEA"] = 204477663342,
 					["FELTOTEM"] = 33466685696,
 					["FROSTHOOFWATCH"] = 438496875706,
 					["IRONHORNENCLAVE"] = 440708368672,

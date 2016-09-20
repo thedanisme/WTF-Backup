@@ -48528,6 +48528,7 @@ function NPC:Initialize()
 [106225] = "Zeryxia",
 [111046] = "Fleet Admiral Tethys",
 [111160] = "Onslaught Apostate",
+[108610] = "Kathra'natir",
 }
 	end
 

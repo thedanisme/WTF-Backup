@@ -17,7 +17,7 @@ local UnitClass, GetInventoryItemLink, GetItemInfo, UnitLevel, GetInventoryItemI
 		UnitClass, GetInventoryItemLink, GetItemInfo, UnitLevel, GetInventoryItemID, DGV.GetCreateTable, DGV.QueueInvocation, string.format, DGV.RegisterReaction, DGV.RegisterFunctionReaction, DGV.RegisterMemberFunctionReaction, DGV.RegisterStopwatchReaction, DGV.TryGetCacheReaction, DGV.ListContains, DGV.PackStrings
 local BeginAutoroutine, InterruptAutoroutine, YieldAutoroutine, tPool, DoOutOfCombat, GetRunningAutoroutine =
 	DGV.BeginAutoroutine, DGV.InterruptAutoroutine, DGV.YieldAutoroutine, DGV.tPool, DGV.DoOutOfCombat, DGV.GetRunningAutoroutine
-
+local firstTimeload = true
 
 DugisGuideViewer.defaultLevelingSpec = {
     ["DEATHKNIGHT"] = {["index"] = 1, ["orderIndex"] = 1},
@@ -3435,7 +3435,14 @@ function GA:Initialize()
 
         --Outfitter bugfix
         if GA.lastOutfitterClickedTime == nil or (GetTime() - GA.lastOutfitterClickedTime) > 4 then
-            GA.AutoEquipSmartSet()
+            if firstTimeload then 
+				LuaUtils:Delay(30, function()
+					QueueInvocation(GA.AutoEquipSmartSet)
+					firstTimeload = nil
+				end)
+			else 
+				QueueInvocation(GA.AutoEquipSmartSet)
+			end		
         end
 
         end):Defer()
@@ -3446,7 +3453,11 @@ function GA:Initialize()
 			return setName==L["Dugi Smart Set"]
 		end
 		smartSetReaction = RegisterFunctionReaction("EquipmentManager_EquipSet", SmartSetPredicate, GA.AutoEquipSmartSet, true)
-		if AutoEquipEnabled() then QueueInvocation(GA.AutoEquipSmartSet) end
+		if AutoEquipEnabled() then 
+			LuaUtils:Delay(60, function()
+				QueueInvocation(GA.AutoEquipSmartSet)
+			end)
+		end
 
 		local function HideRewardGuidance()
 			DugisCoinRewardAdornment:Hide()

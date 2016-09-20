@@ -155,7 +155,10 @@ NOP.slash_handler = function(msg, editbox) -- /nop handler
     NOP:ItemShowNew()
     return
   end
-  NOP.printt(private.L["Use: "] .. private.CONSOLE_CMD .. private.CONSOLE_USAGE)
+  local usage = {string.split("\n", private.L["Use: "] .. private.CONSOLE_CMD .. private.CONSOLE_USAGE)}
+  for _,line in pairs(usage) do 
+    NOP.printt(line)
+  end
 end
 SLASH_NOP_SWITCH1 = private.CONSOLE_CMD
 SlashCmdList["NOP_SWITCH"] = NOP.slash_handler

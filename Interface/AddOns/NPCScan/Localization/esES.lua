@@ -2,6 +2,9 @@ local AddOnFolderName, private = ...
 local L = _G.LibStub("AceLocale-3.0"):NewLocale(AddOnFolderName, "esES")
 if not L then return end
 
+-- L["%1$s (%2$d) is already on the user-defined NPC list."] = "%1$s (%2$d) is already on the user-defined NPC list."
+-- L["%1$s (%2$d) is not on the user-defined NPC list."] = "%1$s (%2$d) is not on the user-defined NPC list."
+-- L["Added %1$s (%2$d) to the user-defined NPC list."] = "Added %1$s (%2$d) to the user-defined NPC list."
 -- L["Alerts"] = "Alerts"
 -- L["BOTTOM"] = "Bottom"
 -- L["BOTTOMLEFT"] = "Bottom Left"
@@ -19,6 +22,8 @@ if not L then return end
 -- L["LEFT"] = "Left"
 -- L["NPCs"] = "NPCs"
 -- L["Play alert sounds when sound is muted."] = "Play alert sounds when sound is muted."
+-- L["Predefined NPCs cannot be added to or removed from the user-defined NPC list."] = "Predefined NPCs cannot be added to or removed from the user-defined NPC list."
+-- L["Removed %1$s (%2$d) from the user-defined NPC list."] = "Removed %1$s (%2$d) from the user-defined NPC list."
 -- L["Reset Position"] = "Reset Position"
 -- L["RIGHT"] = "Right"
 -- L["Screen Flash"] = "Screen Flash"
@@ -31,6 +36,7 @@ if not L then return end
 -- L["TOPLEFT"] = "Top Left"
 -- L["TOPRIGHT"] = "Top Right"
 -- L["Type the name of a Continent, Dungeon, or Zone, or the partial name of an NPC. Accepts Lua patterns."] = "Type the name of a Continent, Dungeon, or Zone, or the partial name of an NPC. Accepts Lua patterns."
+-- L["Valid values are a numeric NPC ID, the word \"mouseover\" while you have your mouse cursor over an NPC, or the word \"target\" while you have an NPC set as your target."] = "Valid values are a numeric NPC ID, the word \"mouseover\" while you have your mouse cursor over an NPC, or the word \"target\" while you have an NPC set as your target."
 -- L["Vertical offset from the anchor point."] = "Vertical offset from the anchor point."
 -- L["X Offset"] = "X Offset"
 -- L["Y Offset"] = "Y Offset"

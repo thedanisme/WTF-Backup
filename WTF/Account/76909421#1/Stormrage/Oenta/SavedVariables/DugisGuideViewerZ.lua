@@ -2,13 +2,6 @@
 CurrentTitle = nil
 CurrentZone = nil
 DugisGuideUser = {
-	["PetBattleOn"] = false,
-	["CharacterGUID"] = "Player-60-0AA1A2F9",
-	["EnableQWStatus"] = true,
-	["turnedinquests"] = {
-	},
-	["excludedTrackingPoints"] = {
-	},
 	["userCustomWeights_v2"] = {
 		["HUNTER"] = {
 			{
@@ -775,13 +768,27 @@ DugisGuideUser = {
 			}, -- [3]
 		},
 	},
+	["PetBattleOn"] = false,
 	["removedQuests"] = {
+	},
+	["turnedinquests"] = {
 	},
 	["toskip"] = {
 	},
-	["FinalizeWaypoint"] = true,
+	["excludedTrackingPoints"] = {
+	},
+	["CharacterGUID"] = "Player-60-0AA1A2F9",
+	["ZenPilgrimageReturnPoint"] = {
+		["y"] = 0.64359974861145,
+		["x"] = 0.415114104747772,
+		["m"] = 1014,
+		["f"] = 10,
+	},
 	["QuestState"] = {
 	},
+	["EnableQWStatus"] = true,
+	["FinalizeWaypoint"] = true,
+	["LFGWorldLocation"] = "1007:0:2722083185",
 }
 DugisGuideViewerDB = nil
 DugisArrowDb = {
@@ -851,9 +858,9 @@ DugisCharacterCache = {
 			12792.2, -- [1]
 			1773, -- [2]
 		},
-		["CalculateScore|cff0070dd|Hitem:134223::::::::110:250::28:3:3395:1492:3339:::|h[Coralplate Chestguard]|h|r1false110INVTYPE_CHESTnil1"] = {
-			14111.94, -- [1]
-			1615, -- [2]
+		["CalculateScore|cffffffff|Hitem:139680::130216::::::110:250::14:2:3385:3382:::|h[]|h|r1false110INVTYPE_WRISTnil1"] = {
+			6374.43, -- [1]
+			827, -- [2]
 		},
 		["CalculateScore|cff0070dd|Hitem:123891::::::::110:250::13:3:1686:3392:3408:::|h[Leystone Breastplate of the Peerless]|h|r1false110INVTYPE_CHESTnil1"] = {
 			6691.05, -- [1]
@@ -863,9 +870,9 @@ DugisCharacterCache = {
 			12022.29, -- [1]
 			1615, -- [2]
 		},
-		["CalculateScore|cffffffff|Hitem:139680::130216::::::110:250::14:2:3385:3382:::|h[]|h|r1false110INVTYPE_WRISTnil1"] = {
-			6374.43, -- [1]
-			827, -- [2]
+		["CalculateScore|cff0070dd|Hitem:134223::::::::110:250::28:3:3395:1492:3339:::|h[Coralplate Chestguard]|h|r1false110INVTYPE_CHESTnil1"] = {
+			14111.94, -- [1]
+			1615, -- [2]
 		},
 		["CalculateScore|cff0070dd|Hitem:134322::130216::::::110:250::26:5:1825:1808:605:1472:1675:::|h[Drained Mana Crystal]|h|r1false110INVTYPE_TRINKETnil1"] = {
 			3232.36, -- [1]

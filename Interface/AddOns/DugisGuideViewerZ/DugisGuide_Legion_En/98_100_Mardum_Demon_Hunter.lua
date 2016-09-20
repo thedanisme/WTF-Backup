@@ -1,6 +1,6 @@
 local Guide = DugisGuideViewer:RegisterModule("DugisGuide_Legion_En_98_100_Mardum_Demon_Hunter")
 function Guide:Initialize()
-	function Guide:Load()DugisGuideViewer:RegisterGuide("|cffffd200Legion|r", "1028(98-100)", "Demon Hunter Campaign (100)", nil, "DEMONHUNTER", "L", nil, function()
+	function Guide:Load()DugisGuideViewer:RegisterGuide("|cffffd200Legion|r", "1028(98-100)", "Class Campaign (98-110)", nil, "DEMONHUNTER", "L", nil, function()
 return [[
 
 A The Invasion Begins |QID|40077| |N|(npc:93011) in {Despair Ridge} (22.02, 55.77)| |Z|1028 0| |NPC|93011|

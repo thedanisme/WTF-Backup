@@ -347,12 +347,12 @@ N Cast the Deciding Vote |QID|37448.2| |N|Use the Deciding Vote ability (40.52,7
 T A Simple Plan |QID|37448| |N|(npc:98100) in {Chamber of Shadows} (40.52,77.93)| |Z|1014 4| |NPC|98100|
 A Under Cover of Darkness |QID|37494| |N|(npc:98100) in {Chamber of Shadows} (40.52,77.93)| |Z|1014 4| |NPC|98100|
 N (npc:98100) |QID|37494.1| |N|Speak to (npc:98100) in {Chamber of Shadows} (40.72,76.85)| |Z|1014 4| |NPC|98100|
-R Stormwind City |QID|37494.2| |N|(npc:111046) will arrange your transport to Stormwind City.  in Stormwind (40.72,76.85)| |Z|1014 4| |NPC|111046|
+R Stormwind City |QID|37494.2| |N|(npc:111046) will arrange your transport to Stormwind City. in Stormwind (40.72,76.85)| |Z|1014 4| |NPC|111046|
 
 T Under Cover of Darkness |QID|37494| |N|(npc:111049) in {Stormwind City} (35.87,59.92)| |Z|301 0| |NPC|111049|
 A The Imposter |QID|37689| |N|(npc:111049) in {Stormwind City} (35.87,59.92)| |Z|301 0| |NPC|111049|
 N Reach the 2nd Grapple Point |QID|37689.1| |N|Use the grapple points in {Stormwind City} (35.87,59.92) (36.59,56.37) (36.59,56.37)| |Z|301 0|
-N Reach the SI:7 Courtyard |QID|37689.2| |N|Make your way to the SI:7 Courtyard, you can use the Hay Bales that you come across to hide (42.33,63.99) (44.70,68.26) (52.56,71.88) (55.55,75.29)  (60.23,71.88) (65.01,68.60) (64.32,66.64) (67.11,64.62) (69.89,62.50) (76.13,64.39) (77.87,64.20)| |Z|301 0|
+N Reach the SI:7 Courtyard |QID|37689.2| |N|Make your way to the SI:7 Courtyard, you can use the Hay Bales that you come across to hide (42.33,63.99) (44.70,68.26) (52.56,71.88) (55.55,75.29) (60.23,71.88) (65.01,68.60) (64.32,66.64) (67.11,64.62) (69.89,62.50) (76.13,64.39) (77.87,64.20)| |Z|301 0|
 K (npc:111307) |QID|37689.3| |N|Kill (npc:111307) inside the building (81.28,63.50)| |Z|301 0| |NPC|111307|
 N (npc:111313) |QID|37689.4| |N|Speak with (npc:111313) (81.16,61.31)| |Z|301 0| |NPC|111313|
 
@@ -375,7 +375,7 @@ C Awakenings |QID|44464.1| |N|Travel to {Val'sharah} and use (spell:226956) to w
 T Awakenings |QID|44464| |N|(npc:113857) in {The Hall of Shadows} (40.66,54.57)| |Z|1014 4| |NPC|113857|
 A An Unclear Path |QID|44466| |N|(npc:113857) in {The Hall of Shadows} (40.66,54.57)| |Z|1014 4| |NPC|113857|
 
-R Val'Shara |QID|44466| |N|Travel to {Val'Shara}  (54.96,53.43) (53.29,49.94) (52.11,43.99)| |Z|1018 0|
+R Val'Shara |QID|44466| |N|Travel to {Val'Shara} (54.96,53.43) (53.29,49.94) (52.11,43.99)| |Z|1018 0|
 N Witness Illidan's Resilience |QID|44466.1| |N|Use (spell:226956) to witness the awakening of Illidan Resilience (45.54,34.75)| |Z|1018 0|
 
 R The Hall of Shadows |OID|44479| |N|Travel to {The Hall of Shadows} (40.66,54.57)| |Z|1014 4|
@@ -383,11 +383,11 @@ T An Unclear Path |QID|44466| |N|(npc:113857) in {The Hall of Shadows} (40.66,54
 A Ravencrest's Legacy |QID|44479| |N|(npc:113857) in {The Hall of Shadows} (40.66,54.57)| |Z|1014 4| |NPC|113857|
 R Val'Shara |QID|44479| |N|Travel to {Val'Shara} (54.96,53.43)| |Z|1018 0|
 N (spell:226956) |N|Go to the destination to use (spell:226956) to begin the Ravencrest's Legacy scenario (54.96,53.43) (52.81,50.41) (46.98,50.23) (44.28,49.94) (42.08,46.29)| |Z|1018 0| |QID|44479|
-N Report to Kur'talos Ravencrest |SID|33154|1| |N|Report to (npc:113046) in  {Ravencourt}| |QID|44479| |NPC|113046|
+N Report to Kur'talos Ravencrest |SID|33154|1| |N|Report to (npc:113046) in {Ravencourt}| |QID|44479| |NPC|113046|
 N Repair the Deactivated Moon Guard Portal |SID|33155|2| |N|Click Deactivated Moon Guard Portal in {Ravencourt}| |QID|44479|
 K (npc:113555) |SID|33162|3| |N|Secure the Rampart by Defeating (npc:113555) (42.95,46.32) (44.27,49.58)| |Z|1099 0| |QID|44479|
 N Enter the Upper Ramparts of the Courtyard |SID|33169|4| |N|Follow the path to the upper ramparts of the courtyard (44.28,49.76) (44.51,51.22 )| |Z|1099 0| |QID|44479|
-N Activate the Moon Guard Portal |SID|33174|5| |N|Click on Deactivated Moon Guard Portal in each waypoint (44.51,51.22) (40.98,51.48) (43.71,50.93)| |Z|1099 0|  |QID|44479
+N Activate the Moon Guard Portal |SID|33174|5| |N|Click on Deactivated Moon Guard Portal in each waypoint (44.51,51.22) (40.98,51.48) (43.71,50.93)| |Z|1099 0| |QID|44479|
 K (npc:114137) |SID|33184|6| |N|Use (spell:227154) to kill (npc:114137) to end the invasion (43.09,52.18)| |Z|1099 0| |QID|44479| |NPC|114137|
 
 R Mausoleum |QID|44414| |N|Travel to {Mausoleum} (38.75, 53.07)| |Z|1099 0| 
@@ -401,7 +401,7 @@ A Hunter of Night |QID|44416| |N|(npc:113355) in {Mausoleum} (43.84, 50.41)| |Z|
 C Hunter of Night |QID|44416| |N|Defeat (npc:113825) in {Mausoleum} (43.29, 50.45)| |Z|1099 0| |NPC|113825|
 T Hunter of Night |QID|44416| |N|(npc:113355) in {Mausoleum} (41.59, 50.53)| |Z|1099 0| |NPC|113355|
 
-R Raven's Glory |QID|44479| |N|Travel to {Raven's Glory}  (42.86, 50.56) (42.97, 48.79)| |Z|1099 0|
+R Raven's Glory |QID|44479| |N|Travel to {Raven's Glory} (42.86, 50.56) (42.97, 48.79)| |Z|1099 0|
 C When Good Men Do Nothing |SID|33186| |N|Enter Raven's Glory and use (spell:227236) to destroy the Colossal Siegebreaker in {Raven's Glory} (42.97, 48.79)| |Z|1099 0| |QID|44479|
 
 R The Hall of Shadows |OID|44480| |N|Travel to {The Hall of Shadows} (40.66,54.57)| |Z|1014 4|

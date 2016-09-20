@@ -13,7 +13,9 @@ K (npc:91797) |SID|28778| |N|Kill (npc:91797) in {Deepbeard's Cove}<br/><b>Move 
 K (npc:96028) |SID|34459| |N|Kill (npc:96028)<br/><b>Avoid being sucked into the air by moving away from (npc:96028) when it spawns<br/><b>Move away from the detonation area of (spell:192706) once it has been dispelled<br/><b>Healer: Dispel (spell:192706) from affected players (64.93, 44.76) (55.47, 52.08)| |Z|1046 1| |NPC|96028|
 N (item:140311) |QID|44077.1| |N|Collect (item:140311) from (npc:96028) (55.47, 52.08)| |Z|1046 1| |NPC|96028| |C|Druid| |O|
 N (item:139464) |QID|43378| |N|Collect (item:139464) from (npc:96028) (55.47, 52.08)| |Z|1046 1| |NPC|96028| |C|Priest| |O|
+N (item:138271) |QID|42707.1| |N|Use (item:138272) to collect (item:138271) (55.44,53.63)| |Z|1046 1| |C|Mage| |O|
 C The Pendant of Starlight |QID|42719| |N|Collect 25 (item:138993) from any enemies in {Eye of Azshara}| |C|Druid| |O|
+N (item:141302) |QID|44282| |N|Collect (item:141302) from (npc:96028) (55.47, 52.08)| |Z|1046 1| |NPC|96028| |C|DeathKnight| |O|
 
 T Wrath of Azshara |QID|38286| |N|(npc:106780) (55.62, 53.93)| |Z|1046 1| |NPC|106780| |O|
 A The Tidestone of Golganneth |QID|42213| |N|(npc:106780), in {} (55.62, 53.93)| |Z|1046 1| |NPC|106780| |O|

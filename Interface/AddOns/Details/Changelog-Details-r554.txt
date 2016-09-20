@@ -1,6 +1,16 @@
+2016-09-17  Tercio  <Tercio>
+
+[2c7a2bc3671a] [tip]
+* boot.lua, classes/classe_damage.lua, core/parser.lua, functions/profiles.lua, functions/spellcache.lua, gumps/janela_options.lua:
+
+- removed soul capacitor trinket fix (WoD).
+- removed heart seeker fix for kilrogg encounter (WoD).
+- added an option to consolidade spells with the same name.
+
+
 2016-09-15  Tercio  <Tercio>
 
-[c2c0a1bf3bde] [tip]
+[c2c0a1bf3bde]
 * core/control.lua, core/parser.lua:
 
 - trying to fix an issue with pvp arenas.
@@ -272,13 +282,5 @@ hotfixes:
 * boot.lua, core/parser.lua:
 
 - Fixed warlock's Soul Effigy.
-
-
-2016-07-20  Tercio  <Tercio>
-
-[1414ab85d06a]
-* boot.lua, plugins/Details_CalcLeech/Details_CalcLeech.lua:
-
-- Fixed an issue with Calc Leech plugin.
 
 

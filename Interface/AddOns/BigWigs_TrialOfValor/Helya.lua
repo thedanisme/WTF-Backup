@@ -1,3 +1,4 @@
+if not IsTestBuild() then return end
 
 --------------------------------------------------------------------------------
 -- TODO List:
@@ -7,7 +8,7 @@
 -- Module Declaration
 --
 
-local mod, CL = BigWigs:NewBoss("Odyn-TrialOfValor", 1114, 1819)
+local mod, CL = BigWigs:NewBoss("Helya-TrialOfValor", 1114, 1829)
 if not mod then return end
 --mod:RegisterEnableMob(0)
 --mod.engageId = 0

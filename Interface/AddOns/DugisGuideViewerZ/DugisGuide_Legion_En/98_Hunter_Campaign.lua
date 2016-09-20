@@ -337,9 +337,6 @@ R Trueshot Lodge |OID|42689 |N|Travel to {Trueshot Lodge} (43.40,26.32)| |Z|1072
 T Assisting the Archmage |QID|42404| |N|(npc:107973) in {Trueshot Lodge} (43.40,26.32)| |Z|1072 0| |NPC|107973|
 A Knowing Our Enemy |QID|42689| |N|(npc:107973) in {Trueshot Lodge} (43.40,26.32)| |Z|1072 0| |NPC|107973|
 ----
-C In the House of Light and Shadow |QID|44448| |N|Take the Tears of Elune to Light's Heart in your Order Hall (47.45,43.50)| |Z|1072 0|
-T In the House of Light and Shadow |QID|44448| |N|(npc:90417) in {Dalaran} (28.49,48.33)| |Z|1014 10| |NPC|90417| 
-----
 
 R Azsuna |OID|42691| |N|Travel to {Azsuna} (60.81,30.63)| |Z|1015 0| 
 T Knowing Our Enemy |QID|42689| |N|(npc:105816) in {Azsuna} (60.81,30.63)| |Z|1015 0| |NPC|105816|

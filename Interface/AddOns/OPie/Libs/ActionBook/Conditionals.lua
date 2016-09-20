@@ -373,8 +373,8 @@ if playerClass == "HUNTER" then -- pet:stable id; havepet:stable id
 		for k, v in pairs(pt) do
 			o = k:match("/") and (v .. (o and "; " .. o or "")) or ((o and o .. "; " or "") .. v)
 		end
-		RegisterStateConditional("pet", "pet", o or "[form:1,noform:1]", false)
-		KR:SetStateConditionalValue("havepet", hpo or "")
+		RegisterStateConditional("pet", "pet", "[nopet]; " .. (o and o .. "; 0" or " 0"), false)
+		KR:SetStateConditionalValue("havepet", hpo and tostring(hpo) or "")
 		noPendingSync = true
 		return e == "PLAYER_REGEN_ENABLED" and "remove" or nil
 	end

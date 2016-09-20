@@ -7,10 +7,10 @@ NOP.T_SPELL_HAS = { -- [itemID] = min-count, table to fetch via GetItemSpell(ite
   [114171] = 1, -- Crate Restored Artifact, common for all
   [113271] = 1, -- Giant Kaliri Egg, Gain xxx Garrison Resources, common for all
   [128316] = 1, -- Bulging Barrel of Oil, Convert to Oil
+  [138865] = 1, -- Gladiator's Triumph, Grants 50 Artifact Power to your currently equipped Artifact.
+  [201826] = 1, -- Toss the fish back into the water, increasing Fishing skill by 5, up to a max of 800.
+  [221474] = 1, -- Toss the fish back into the water, granting 50 Artifact Power to your fishing artifact.
 }
-if select(4, GetBuildInfo()) >= 70000 then
-  NOP.T_SPELL_HAS[138865] = 1 -- Gladiator's Triumph, Grants 50 Artifact Power to your currently equipped Artifact.
-end
 NOP.T_SPELL = { -- [spellID] = {min-count,itemID,{"sub-Zone"},{[mapID]=true,[mapID]=true}}, table for opening via spell, used for multiple items with same spell text but spellID can differ
   [168701] = {1,114105,nil,nil}, -- Create a soulbound item appropriate for your loot specialization, Tormented Trinket
   [168178] = {1,114116,{private.SALVAGE_YARD},{[976]=true,[971]=true}}, -- Salvage, Bag of Salvaged Goods, can be used only in salvage-yard shown on button only in garrison even if disabled zone-lock
@@ -175,6 +175,8 @@ NOP.T_ITEMS = { -- [itemID] = {min-count,{"sub-Zone","sub-Zone",...} | mapID | {
   [104287] = {1,private.TIMELESS_ISLE,148521}, -- Windfeather Plume
   [122599] = {1,nil,nil}, -- Tome of Sorcerous Elements
   [122605] = {1,nil,nil}, -- Tome of the Stones
+  [140397] = {1,nil,223670}, -- G'Hanir's Blossom
+  [140439] = {1,nil,223722}, -- Sunblossom Pollen
 }
 NOP.T_FRAMES = { -- these frames need to be closed before I can use item on button
   "MerchantFrame", "VoidStorageFrame", -- Blizzard frames

@@ -1,4 +1,11 @@
 Version: 1
+Frame: DugisOnOffButton
+FrameLevel: 1
+Anchor: BOTTOMRIGHT
+X: -407
+Y: 0
+W: 32
+H: 32
 Frame: ItemRefTooltip
 FrameLevel: 1
 Anchor: CENTER
@@ -37,8 +44,8 @@ H: 26
 Frame: DugisArrowFrame
 FrameLevel: 1
 Anchor: RIGHT
-X: -410
-Y: -34
+X: -408
+Y: -58
 W: 80
 H: 60
 Frame: EventTrackerFrame

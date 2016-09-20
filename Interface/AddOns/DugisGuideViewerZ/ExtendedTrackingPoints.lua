@@ -7947,7 +7947,7 @@ tappend(points["Suramar:23"],  --SuramarLegionScar
 	"A:40.5,29.03:11260::Reward (item:138783)\nArtifact Power:40902",
 	"A:54.57,37.8:11260::Reward (item:138783)\nArtifact Power:43835")
 
-tappend(points["Highmountain :31"], --StonedarkGrotto
+tappend(points["Highmountain:31"], --StonedarkGrotto
 	"A:35.98,72.35:11257::Reward (item:138783)\nArtifact Power:40478")
 
 tappend(points["Highmountain:16"], --MucksnoutDen

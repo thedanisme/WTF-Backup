@@ -1418,6 +1418,8 @@ end
 			end
 		end
 		if route.item == 140192 then --Dalaran hearthstone
+			est = est + 10
+		elseif route.item == 141605 then -- flightmaster whistle
 			est = est + 15
 		end		
 		return est

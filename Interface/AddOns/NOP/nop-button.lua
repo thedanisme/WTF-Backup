@@ -78,7 +78,7 @@ end
 function NOP:ButtonOnEnter(button) -- show tooltip
   if self:inCombat() then return; end
   if GetCVar("UberTooltips") == "1" then
-    GameTooltip_SetDefaultAnchor(GameTooltip, button)
+    GameTooltip_SetDefaultAnchor(GameTooltip,  UIParent)
   else
     GameTooltip:SetOwner(button, "ANCHOR_RIGHT")
   end

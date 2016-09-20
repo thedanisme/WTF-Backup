@@ -73,6 +73,9 @@ local NPCData = {
 	[3652] = { -- Trigore the Lasher
 		isTameable = true,
 	},
+	[3868] = { -- Blood Seeker
+		isTameable = true,
+	},
 	[4132] = { -- Krkk'kx
 		isTameable = true,
 	},
@@ -2661,18 +2664,9 @@ local NPCData = {
 		questID = 42699, -- Coura, Master of Arcana
 		vignetteName = "Coura, Master of Arcana",
 	},
-	[108829] = { -- Levantus
-		questID = 43192, -- Unknown
-	},
 	[109054] = { -- Shal'an
 		questID = 42831, -- Shal'an
 		vignetteName = "Shal'an",
-	},
-	[109163] = { -- Captain Dargun
-		questID = 42864, -- Unknown
-	},
-	[109331] = { -- Calamir
-		questID = 43193, -- Unknown
 	},
 	[109498] = { -- Xaander
 		questID = 40423, -- Unethical Adventurers

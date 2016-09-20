@@ -589,7 +589,9 @@ function NPCJournalFrame:Initialize()
 			item = string.gsub(item, '%)', '')
 			item = string.gsub(item, '%(', '')
 			local tag_id = LuaUtils:split(item, ':')
-			local icon = select(10, GetItemInfo(tag_id[2]))
+			local icon 
+			if not tag_id[2] then return result end
+			icon = select(10, GetItemInfo(tag_id[2]))
 			local isCollect
 			
 			if icon and guideIndex then 
