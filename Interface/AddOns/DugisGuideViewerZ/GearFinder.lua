@@ -1659,9 +1659,9 @@ function DGF:GetSuggesedGearBySlot(invslot, yields, slotButton)
             end
 
             local uniqueInventorySlot = GetDefaultUniqueInventorySlot(item.info.equipslot)
-            for i=1, 4 do
+
+            if i % 100 == 0 then
                 coroutine.yield()
-                LuaUtils:WaitForCombatEnd()
             end
 
             local tooLowPlayerLevel = ((item.info.reqlevel ~= nil and item.info.reqlevel ~= 0 and level < item.info.reqlevel)
@@ -1681,6 +1681,21 @@ function DGF:GetSuggesedGearBySlot(invslot, yields, slotButton)
                     return "break"
                 end
             end)
+            
+            local passedByLevelRange = true
+            
+            if DugisGearFinder.gearId2LevelRange[itemId] then
+                local levelMin = DugisGearFinder.gearId2LevelRange[itemId][1]
+                local levelMax = DugisGearFinder.gearId2LevelRange[itemId][2]
+                
+                if levelMax and level > levelMax then
+                    passedByLevelRange = false
+                end
+                
+                if levelMin and level < levelMin then
+                    passedByLevelRange = false
+                end
+            end            
 
             local passedByArmorSpecBonusExclusion = true
             local slot = DGF:Slot2VirtualSlot(item.info.equipslot)
@@ -1715,8 +1730,13 @@ function DGF:GetSuggesedGearBySlot(invslot, yields, slotButton)
             and passedByFilter
             and passedByQuestsGears
             and passedByArmorSpecBonusExclusion
+            and passedByLevelRange
             then
-
+                for j=1, 4 do
+                    coroutine.yield()
+                    LuaUtils:WaitForCombatEnd()
+                end
+            
                 local score = CalculateScoreForGearFinder(itemId, GetSpecialization(), nil, level, uniqueInventorySlot)
                 local rightScore = true
                 if theBestForSlot and theBestForSlot.score >= score then

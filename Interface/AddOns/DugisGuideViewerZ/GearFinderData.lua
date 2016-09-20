@@ -1373,7 +1373,6 @@ dungeon=198,  instanceId=249,
 { boss=24723, encounterId=530,
 34698,
 34700,
-
 34702,
 34697,
 34699,
@@ -6366,7 +6365,6 @@ dungeon=313,  instanceId=73, diff=5,
 65020,
 65041,
 65042,
-
 65044,
 65045,
 65046,
@@ -8922,7 +8920,6 @@ dungeon=467,  instanceId=321,
 85183,
 85180,
 85184,
-
 85181,
 85182,
 },
@@ -23025,7 +23022,6 @@ DugisGearFinderData["Elwynn Forest(12)"] = {
    57523,
    57524,
    57525,
-
   },
   {
    quest={33429, 33429},
@@ -27495,7 +27491,6 @@ DugisGearFinderData["Durotar(14)"] = {
   },
   {
    quest={"none", 25206},
-
    53368,
    53374,
   },
@@ -37280,7 +37275,6 @@ manualDifficulty = 14,
 "item:99108:0:0:0:0:0:0:0:100:0:4:0:0:445",
 "item:99113:0:0:0:0:0:0:0:100:0:4:0:0:445",
 "item:99115:0:0:0:0:0:0:0:100:0:4:0:0:445",
-
 "item:99118:0:0:0:0:0:0:0:100:0:4:0:0:445",
 "item:99121:0:0:0:0:0:0:0:100:0:4:0:0:445",
 "item:99123:0:0:0:0:0:0:0:100:0:4:0:0:445",
@@ -44973,7 +44967,6 @@ dungeon=0,  instanceId=726, diff=23,
 {class=PRIEST},
 "item:133766:::::::::::23:2:1727:3407",
 "item:134410:::::::::::23:2:1727:3407",
-
 "item:134435:::::::::::23:2:1727:3407",
 "item:134540:::::::::::23:2:1727:3407",
 "item:137411:::::::::::23:2:1727:3407",
@@ -45203,7 +45196,6 @@ dungeon=0,  instanceId=707, diff=1,
 "item:137530:::::::::::17:2:1795:3407",
 "item:137538:::::::::::17:2:1795:3407",
 "item:137543:::::::::::17:2:1795:3407",
-
 {class=SHAMAN},
 "item:137518:::::::::::17:2:1795:3407",
 "item:137530:::::::::::17:2:1795:3407",
@@ -47912,7 +47904,6 @@ dungeon=0,  instanceId=822, diff=17,
 "item:141453:::::::::::4:1:3407",
 "item:141482:::::::::::4:1:3407",
 "item:141492:::::::::::4:1:3407",
-
 "item:141543:::::::::::4:1:3407",
 {class=MONK},
 "item:141453:::::::::::4:1:3407",
@@ -48188,7 +48179,6 @@ dungeon=0,  instanceId=822, diff=15,
 "item:141536:::::::::::5:1:3407",
 "item:141540:::::::::::5:1:3407",
 {class=MONK},
-
 "item:141445:::::::::::5:1:3407",
 "item:141521:::::::::::5:1:3407",
 "item:141536:::::::::::5:1:3407",
@@ -53054,7 +53044,6 @@ dungeon=0,  instanceId=786, diff=17,
 "item:140857:::::::::::4:2:3446:3407",
 "item:140899:::::::::::4:2:3446:3407",
 {class=MONK},
-
 "item:138325:::::::::::4:2:3446:3407",
 "item:140816:::::::::::4:2:3446:3407",
 "item:140857:::::::::::4:2:3446:3407",
@@ -54465,9 +54454,130 @@ guideTitle2engPlayerRace["27(5-10 Dwarf & Gnome)#27(5-11 Dwarf & Gnome)#27(5-12 
 guideTitle2engPlayerRace["4(4-9 Orc & Troll)#4(5-11 Orc & Troll)#4(5-12 Orc & Troll)"  ] =  {"Orc", "Troll"}
 
 
+local guideName2LevelRange = {}
+
+guideName2LevelRange["993(100+)"] = {100,103}
+guideName2LevelRange["heroic_993(100+)"] = {100,103}
+guideName2LevelRange["mythic_993(100+)"] = {100,103}
+guideName2LevelRange["969(100+)"] = {100,103}
+guideName2LevelRange["heroic_969(100+)"] = {100,103}
+guideName2LevelRange["mythic_969(100+)"]  = {100,103}
+guideName2LevelRange["1008(100+)"] = {100,103}
+guideName2LevelRange["heroic_1008(100+)"] = {100,103}
+guideName2LevelRange["mythic_1008(100+)"] = {100,103}
+guideName2LevelRange["995(100+)"] = {100,103}
+guideName2LevelRange["heroic_995(100+)"] = {100,103}
+guideName2LevelRange["mythic_995(100+)"] = {100,103}
+guideName2LevelRange["1081(110)"] = {110,113}
+guideName2LevelRange["heroic_1081(110)"] = {110,113}
+guideName2LevelRange["mythic_1081(110)"] = {110,113}
+guideName2LevelRange["1087(110)"] = {110,113}
+guideName2LevelRange["1042(110)"] = {110,113}
+guideName2LevelRange["heroic_1042(110)"] = {110,113}
+guideName2LevelRange["mythic_1042(110)"] = {110,113}
+guideName2LevelRange["1079(110)"] = {110,113}
+guideName2LevelRange["1045(110)"] = {110,113}
+guideName2LevelRange["heroic_1045(110)"] = {110,113}
+guideName2LevelRange["mythic_1045(110)"] = {110,113}
+guideName2LevelRange["759(85)"] = {85,87} 
+guideName2LevelRange["heroic_759(85)"] = {85,87} 
+guideName2LevelRange["747(85)"] = {85,87} 
+guideName2LevelRange["heroic_747(85)"] = {85,87} 
+guideName2LevelRange["757(85)"] = {85,87} 
+guideName2LevelRange["heroic_757(85)"] = {85,87} 
+guideName2LevelRange["The Forge of Souls"] = {78,82}
+guideName2LevelRange["The Forge of Souls (Heroic)"] = {78,82}
+guideName2LevelRange["Halls of Reflection"] = {78,82}
+guideName2LevelRange["Halls of Reflection (Heroic)"] = {78,82}
+guideName2LevelRange["Trial of the Champion"] = {78,82}
+guideName2LevelRange["Trial of the Champion (Heroic)"] = {78,82} 
+guideName2LevelRange["Pit of Saron"] = {80,82} 
+guideName2LevelRange["Pit of Saron (Heroic)"] = {80,82} 
+guideName2LevelRange["Well of Eternity (Heroic)"] = {85,87} 
+guideName2LevelRange["Zul'Gurub (Heroic)"] = {85,87} 
+guideName2LevelRange["End Time (Heroic)"] = {85,87} 
+guideName2LevelRange["Zul'Aman (Heroic)"] = {85,87} 
+guideName2LevelRange["Hour of Twilight (Heroic)"] = {85,87} 
+guideName2LevelRange["Baradin Hold (Heroic [10])"] = {85,87} 
+guideName2LevelRange["Baradin Hold (Heroic [25])"] = {85,87} 
+guideName2LevelRange["Baradin Hold (Normal [25])"] = {85,87} 
+guideName2LevelRange["Baradin Hold (Normal [10])"] = {85,87} 
+guideName2LevelRange["Blackwing Descent (Heroic [10])"] = {85,87} 
+guideName2LevelRange["Blackwing Descent (Heroic [25])"] = {85,87} 
+guideName2LevelRange["Blackwing Descent (Normal [25])"] = {85,87} 
+guideName2LevelRange["Blackwing Descent (Normal [10])"] = {85,87} 
+guideName2LevelRange["The Bastion of Twilight (Heroic [10])"] = {85,87} 
+guideName2LevelRange["The Bastion of Twilight (Heroic [25])"] = {85,87} 
+guideName2LevelRange["The Bastion of Twilight (Normal [25])"] = {85,87} 
+guideName2LevelRange["The Bastion of Twilight (Normal [10])"] = {85,87} 
+guideName2LevelRange["Throne of the Four Winds (Heroic [10])"] = {85,87} 
+guideName2LevelRange["Throne of the Four Winds (Heroic [25])"] = {85,87} 
+guideName2LevelRange["Throne of the Four Winds (Normal [25])"] = {85,87} 
+guideName2LevelRange["Throne of the Four Winds (Normal [10])"] = {85,87} 
+guideName2LevelRange["Firelands (Heroic [10])"] = {85,87} 
+guideName2LevelRange["Firelands (Heroic [25])"] = {85,87} 
+guideName2LevelRange["Firelands (Normal [25])"] = {85,87} 
+guideName2LevelRange["Firelands (Normal [10])"] = {85,87} 
+guideName2LevelRange["Dragon Soul (Normal [10])"] = {85,87} 
+guideName2LevelRange["Dragon Soul (Normal [25])"] = {85,87} 
+guideName2LevelRange["Dragon Soul (Heroic [10])"] = {85,87} 
+guideName2LevelRange["Dragon Soul (Heroic [25])"] = {85,87} 
+guideName2LevelRange["Dragon Soul (Raid Finder [25])"] = {85,87} 
+guideName2LevelRange["Mogu'shan Vaults (Normal [10])"] = {90,93} 
+guideName2LevelRange["Mogu'shan Vaults (Normal [25])"] = {90,93} 
+guideName2LevelRange["Mogu'shan Vaults (Heroic [10])"] = {90,93} 
+guideName2LevelRange["Mogu'shan Vaults (Heroic [25])"] = {90,93} 
+guideName2LevelRange["Mogu'shan Vaults (Raid Finder [25])"] = {90,93} 
+guideName2LevelRange["Heart of Fear (Normal [10])"] = {90,93} 
+guideName2LevelRange["Heart of Fear (Normal [25])"] = {90,93} 
+guideName2LevelRange["Heart of Fear (Heroic [10])"] = {90,93} 
+guideName2LevelRange["Heart of Fear (Heroic [25])"] = {90,93} 
+guideName2LevelRange["Heart of Fear (Raid Finder [25])"] = {90,93} 
+guideName2LevelRange["Terrace of Endless Spring (Normal [10])"] = {90,93} 
+guideName2LevelRange["Terrace of Endless Spring (Normal [25])"] = {90,93} 
+guideName2LevelRange["Terrace of Endless Spring (Heroic [10])"] = {90,93} 
+guideName2LevelRange["Terrace of Endless Spring (Heroic [25])"] = {90,93} 
+guideName2LevelRange["Terrace of Endless Spring (Raid Finder [25])"] = {90,93} 
+guideName2LevelRange["Throne of Thunder (Normal [10])"] = {90,93} 
+guideName2LevelRange["Throne of Thunder (Normal [25])"] = {90,93} 
+guideName2LevelRange["Throne of Thunder (Heroic [10])"] = {90,93} 
+guideName2LevelRange["Throne of Thunder (Heroic [25])"] = {90,93} 
+guideName2LevelRange["Throne of Thunder (Raid Finder [25])"] = {90,93} 
+guideName2LevelRange["Siege of Orgrimmar (Normal)"] = {100,103} 
+guideName2LevelRange["Siege of Orgrimmar (Raid Finder)"] = {100,103} 
+guideName2LevelRange["Siege of Orgrimmar (Mythic)"] = {100,103} 
+guideName2LevelRange["Siege of Orgrimmar (Heroic)"] = {100,103} 
+guideName2LevelRange["Draenor (Normal)"] = {100,103} 
+guideName2LevelRange["Highmaul (Normal)"] = {100,103} 
+guideName2LevelRange["Highmaul (Heroic)"] = {100,103} 
+guideName2LevelRange["Highmaul (Mythic)"] = {100,103} 
+guideName2LevelRange["Highmaul (Raid Finder)"] = {100,103} 
+guideName2LevelRange["Blackrock Foundry (Normal)"] = {100,103} 
+guideName2LevelRange["Blackrock Foundry (Heroic)"] = {100,103} 
+guideName2LevelRange["Blackrock Foundry (Mythic)"] = {100,103} 
+guideName2LevelRange["Blackrock Foundry (Raid Finder)"] = {100,103} 
+guideName2LevelRange["Hellfire Citadel (Normal)"] = {100,103} 
+guideName2LevelRange["Hellfire Citadel (Heroic)"] = {100,103} 
+guideName2LevelRange["Hellfire Citadel (Mythic)"] = {100,103} 
+guideName2LevelRange["Hellfire Citadel (Raid Finder)"] = {100,103} 
+guideName2LevelRange["Pandaria (Normal [10])"] = {90,93} 
+guideName2LevelRange["Broken Isles (Normal)"] = {110,113} 
+guideName2LevelRange["Broken Isles (Mythic)"] = {110,113} 
+guideName2LevelRange["Broken Isles (Heroic)"] = {110,113} 
+guideName2LevelRange["Broken Isles (Raid Finder)"] = {110,113} 
+guideName2LevelRange["The Emerald Nightmare (Normal)"] = {110,113} 
+guideName2LevelRange["The Emerald Nightmare (Heroic)"] = {110,113} 
+guideName2LevelRange["The Emerald Nightmare (Mythic)"] = {110,113} 
+guideName2LevelRange["The Emerald Nightmare (Raid Finder)"] = {110,113} 
+guideName2LevelRange["The Nighthold (Normal)"] = {110,113} 
+guideName2LevelRange["The Nighthold (Heroic)"] = {110,113} 
+guideName2LevelRange["The Nighthold (Mythic)"] = {110,113} 
+guideName2LevelRange["The Nighthold (Raid Finder)"] = {110,113} 
+
 
     local englishFaction, localizedFaction = UnitFactionGroup("player")
     local _, _, classID = UnitClass("player")
+    local playerLevel = UnitLevel("player")
     
     englishFaction = string.lower(englishFaction)
     
@@ -54501,6 +54611,9 @@ guideTitle2engPlayerRace["4(4-9 Orc & Troll)#4(5-11 Orc & Troll)#4(5-12 Orc & Tr
     --{gearId1 = true, gearId2 = true, ...}
     local allGearIdsPresents = {}
     
+    --Calculated based on all related guideTitles 
+    --{[gearId] = {59, 90}, ..}
+    local gearId2LevelRange = {}
      
     local allGearGuides = {}
     
@@ -54514,6 +54627,7 @@ guideTitle2engPlayerRace["4(4-9 Orc & Troll)#4(5-11 Orc & Troll)#4(5-12 Orc & Tr
     DugisGearFinder.gearId2Quests_map = gearId2Quests_map   
     DugisGearFinder.gearId2PossibleDifficulties_map = gearId2PossibleDifficulties_map  
     DugisGearFinder.allGearIds = allGearIds  
+    DugisGearFinder.gearId2LevelRange = gearId2LevelRange  
     
     local i = 1
     
@@ -54522,7 +54636,54 @@ guideTitle2engPlayerRace["4(4-9 Orc & Troll)#4(5-11 Orc & Troll)#4(5-12 Orc & Tr
         LuaUtils.Profiler:Start("InitializeGearFinderData")
         
         LuaUtils:foreach(DugisGearFinderData, function(guideInfo, guideTitle)
+            local guideIdTitle = guideName2GuideIdTitle_map[guideTitle] 
+            local levelRange = guideName2LevelRange[guideTitle]
             
+            --       min          max  
+            --********|********X***|*******
+            local levelMin, levelMax
+            
+            if levelRange then
+                levelMin = levelRange[1]
+                levelMax = levelRange[2]
+            else
+                --Getting the range automatically from the guide title
+                --479(67-70)
+                local textRange = ""
+                if guideIdTitle then
+                    -- 201(49-54)#201(50-56)#201(51-57)  OR  201(49-54)#201(50-56 XXX)#201(51-57)
+                    textRange = LuaUtils:matchString(guideIdTitle, "#.-%([0-9]+-[0-9]+.-%)#")
+                    
+                    if textRange ~= "" then
+                        textRange = textRange:match("[0-9]+-[0-9]+")
+                    else
+                        --479(67-70) OR 808(1-12 Pandaren)
+                        textRange = LuaUtils:matchString(guideIdTitle, "[0-9]+-[0-9]+")
+                        textRange = LuaUtils:trim(textRange)
+                    end
+                    
+                end
+                
+                if textRange == "" then
+                    textRange = LuaUtils:matchString(guideTitle, "%([0-9]+-[0-9]+")
+                    textRange = textRange:gsub("%(", "")
+                    textRange = LuaUtils:trim(textRange)
+                end
+                
+                if textRange and LuaUtils:trim(textRange) ~= "" then
+                    local levelMin_levelMax = LuaUtils:split(textRange, "-")
+                    
+                    levelMin = tonumber(levelMin_levelMax[1]) - 2
+                    levelMax = tonumber(levelMin_levelMax[2]) + 2
+                end
+            end
+            
+            --The level might only increade while playing so there is no point to cache and make other operations for guides below it.
+            if levelMax and playerLevel > levelMax then
+                --continue the loop
+                return 
+            end
+
             if i % 10 == 0 then
                 coroutine.yield()
                 LuaUtils:WaitForCombatEnd()
@@ -54530,7 +54691,7 @@ guideTitle2engPlayerRace["4(4-9 Orc & Troll)#4(5-11 Orc & Troll)#4(5-12 Orc & Tr
             i = i + 1
             
             local orgGuideTitle = guideTitle
-            local guideIdTitle = guideName2GuideIdTitle_map[guideTitle] 
+            
             if guideIdTitle then
                 guideTitle = guideIdTitle
             else
@@ -54564,11 +54725,9 @@ guideTitle2engPlayerRace["4(4-9 Orc & Troll)#4(5-11 Orc & Troll)#4(5-12 Orc & Tr
             end
 			
 			if difficulty == 3 or difficulty == 4 then --for [10] and [25] raid 
-				if heroic == 1 then 
-					difficulty = 15
-				else
-					difficulty = 14
-				end
+				difficulty = 14
+			elseif difficulty == 5 or difficulty == 6 then
+				difficulty = 15
 			end
             
             if guideInfo.manualDifficulty then
@@ -54635,6 +54794,20 @@ guideTitle2engPlayerRace["4(4-9 Orc & Troll)#4(5-11 Orc & Troll)#4(5-12 Orc & Tr
                                 gearInfo.questIds = {questId}
                             end
                             
+                            if gearId2LevelRange[gearId] == nil then
+                                gearId2LevelRange[gearId] = {}
+                            end
+                            
+                            --min
+                            if levelMin and (not gearId2LevelRange[gearId][1] or gearId2LevelRange[gearId][1] > levelMin) then
+                                gearId2LevelRange[gearId][1] = levelMin
+                            end
+                            
+                            --max
+                            if levelMax and (not gearId2LevelRange[gearId][2] or gearId2LevelRange[gearId][2] < levelMax) then
+                                gearId2LevelRange[gearId][2] = levelMax
+                            end
+                           
                             --If there is no related quest nor boss then there is no point to add the gear (the current faction might be other than related to quest)
                             --Preventing adding data relevant only for other faction
                             if questId or boss then

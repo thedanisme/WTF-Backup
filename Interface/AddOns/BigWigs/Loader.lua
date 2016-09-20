@@ -18,7 +18,7 @@ do
 	local RELEASE = "RELEASE"
 
 	local releaseType = RELEASE
-	local myGitHash = "b960b0a" -- The ZIP packager will replace this with the Git hash.
+	local myGitHash = "f84a68a" -- The ZIP packager will replace this with the Git hash.
 	local releaseString = ""
 	--@alpha@
 	-- The following code will only be present in alpha ZIPs.
@@ -111,7 +111,7 @@ do
 		[752]=cata, [758]=cata, [754]=cata, [824]=cata, [800]=cata, [773]=cata,
 		[896]=mop, [897]=mop, [886]=mop, [930]=mop, [953]=mop, [862]=mop,
 		[994]=wod, [988]=wod, [1026]=wod, [962]=wod,
-		[1094]=l, [1088]=l, [1007]=l,
+		[1094]=l, [1088]=l, [1007]=l, [1114]=l,
 
 		[756]=lw_c, -- Classic
 		[710]=lw_bc, [722]=lw_bc, [723]=lw_bc, [724]=lw_bc, [725]=lw_bc, [726]=lw_bc, [727]=lw_bc, [728]=lw_bc, [729]=lw_bc, [730]=lw_bc, [731]=lw_bc, [732]=lw_bc, [733]=lw_bc, [734]=lw_bc, [797]=lw_bc, [798]=lw_bc, -- TBC
@@ -134,7 +134,10 @@ do
 		if fakeWorldZones[k] then
 			public.zoneTbl[k] = v
 		else
-			public.zoneTbl[GetAreaMapInfo(k)] = v
+			local instanceId = GetAreaMapInfo(k)
+			if instanceId then -- Protect live client from beta client ids
+				public.zoneTbl[instanceId] = v
+			end
 		end
 	end
 end

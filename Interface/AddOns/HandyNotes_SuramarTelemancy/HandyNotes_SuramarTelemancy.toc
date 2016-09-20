@@ -8,7 +8,7 @@
 ## X-eMail: kemayo @ gmail DOT com
 ## SavedVariables: HandyNotes_SuramarTelemancyDB
 ## RequiredDeps: HandyNotes
-## X-Curse-Packaged-Version: v2
+## X-Curse-Packaged-Version: v2-1-g422156b
 ## X-Curse-Project-Name: HandyNotes_SuramarTelemancy
 ## X-Curse-Project-ID: handynotes_suramartelemancy
 ## X-Curse-Repository-ID: wow/handynotes_suramartelemancy/mainline

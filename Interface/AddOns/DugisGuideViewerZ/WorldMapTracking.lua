@@ -618,7 +618,13 @@ function WMT:Initialize()
 					if trackingType == "P" then
 						point.icon:SetTexture(icon)
 						point.icon:SetTexCoord(0.79687500, 0.49218750, 0.50390625, 0.65625000)
+						point:SetFrameLevel(502)
+					elseif trackingType == "A" then --make achievement higher priority 
+						point.icon:SetTexture(icon)
+						point.icon:SetTexCoord(0, 1, 0, 1)
+						point:SetFrameLevel(503)
 					else
+						point:SetFrameLevel(502)					
 						point.icon:SetTexture(icon)
 						point.icon:SetTexCoord(0, 1, 0, 1)
 					end
@@ -889,7 +895,7 @@ function WMT:Initialize()
 			point.icon = point:CreateTexture("ARTWORK")
 			point.icon:SetAllPoints()
 			point.icon:Show()
-			point:SetFrameLevel(502) --Required for to be 1 point above the Blizzard flight master POI
+			--point:SetFrameLevel(502) --Required for to be 1 point above the Blizzard flight master POI
 		end
 		point:Hide()
 		point.args = {...}

@@ -226,7 +226,6 @@ end
 DugiGuidesIsLoading = true
 
 function DugiGuidesOnLoadingStart()
-    ObjectiveTrackerFrame:Hide()
     DugisGuideViewer:UpdateIconStatus()
 end
 

@@ -1,8 +1,12 @@
 # BigWigs
 
-## [v9-12-gb960b0a](https://github.com/BigWigsMods/BigWigs/tree/b960b0adac0a04ab8cea092be34fc5f59763e7fd) (2016-09-19) [](#top)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v9...b960b0adac0a04ab8cea092be34fc5f59763e7fd)
+## [v9-16-gf84a68a](https://github.com/BigWigsMods/BigWigs/tree/f84a68af8ac57c4be30ee25e88db4fb876259781) (2016-09-20) [](#top)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v9...f84a68af8ac57c4be30ee25e88db4fb876259781)
 
+-   Loader: Another fix for using beta ids on live.  
+-   TrialOfValor/Odyn: Fixes from PTR  
+-   TrialOfValor/Guarm: Fixes from PTR.  
+-   Add ToV id  
 -   Add ToV to pkgmeta  
 -   Load ToV.  
 -   TrialOfValor/Odyn: Drycoded import  
