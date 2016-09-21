@@ -7,7 +7,7 @@ local bwFrame = CreateFrame("Frame")
 -- Generate our version variables
 --
 
-local BIGWIGS_VERSION = 9
+local BIGWIGS_VERSION = 10
 local BIGWIGS_RELEASE_STRING = ""
 local versionQueryString, versionResponseString = "Q:%d-%s", "V:%d-%s"
 
@@ -18,7 +18,7 @@ do
 	local RELEASE = "RELEASE"
 
 	local releaseType = RELEASE
-	local myGitHash = "f84a68a" -- The ZIP packager will replace this with the Git hash.
+	local myGitHash = "1614bf9" -- The ZIP packager will replace this with the Git hash.
 	local releaseString = ""
 	--@alpha@
 	-- The following code will only be present in alpha ZIPs.
