@@ -108,15 +108,15 @@ MacroToolkitDB = {
 					["icon"] = "ABILITY_MOUNT_SIBERIANTIGERMOUNT",
 					["body"] = "/way 58 22\n/way 36 30\n/way 21 70\n/way 30 66\n/way 51 81\n/way 67 80\n/way 71 72\n/tar Loque'nahak\n",
 				},
-				[121] = {
-					["name"] = " ",
-					["icon"] = "ABILITY_IMPALINGBOLT",
-					["body"] = "#showtooltip\n/petattack\n/use [@mouseover,exists][@target] Arcane Shot\n",
-				},
 				[129] = {
 					["name"] = "OpenerBM",
 					["icon"] = "INV_MISC_QUESTIONMARK",
 					["body"] = "#showtooltip\n/castsequence reset=combat Cobra Shot, Cobra Shot, Stampede, 14, Bestial Wrath, Kill Command, Barrage\n",
+				},
+				[121] = {
+					["name"] = " ",
+					["icon"] = "ABILITY_IMPALINGBOLT",
+					["body"] = "#showtooltip\n/petattack\n/use [@mouseover,exists][@target] Arcane Shot\n",
 				},
 				[125] = {
 					["name"] = " ",
@@ -275,53 +275,53 @@ MacroToolkitDB = {
 		["Emmarosa - Stormrage"] = {
 			["macros"] = {
 				[122] = {
-					["icon"] = "236283",
 					["name"] = " TotT(Focus)",
+					["icon"] = "236283",
 					["body"] = "#showtooltip Tricks of the Trade\n/cast [@focus] Tricks of the Trade\n",
 				},
 				[126] = {
-					["icon"] = "134400",
 					["name"] = "Poisons",
+					["icon"] = "134400",
 					["body"] = "#showtooltip\n/castsequence Deadly Poison, Crippling Poison\n",
 				},
 				[123] = {
-					["icon"] = "132350",
 					["name"] = "BladeFlurry",
+					["icon"] = "134400",
 					["body"] = "#showtooltip Blade Flurry\n/cancelaura Blade Flurry\n/use Blade Flurry\n",
 				},
 				[127] = {
-					["icon"] = "132269",
 					["name"] = "Riposte",
+					["icon"] = "134400",
 					["body"] = "#showtooltip Riposte\n/use [nostealth]Riposte\n",
 				},
 				[124] = {
-					["icon"] = "133669",
 					["name"] = "Pick Pocket",
+					["icon"] = "133669",
 					["body"] = "#showtooltip Pick Pocket\n/use [stealth]Pick Pocket\n",
 				},
 				[128] = {
-					["icon"] = "134400",
 					["name"] = "Shadow Blades",
+					["icon"] = "376022",
 					["body"] = "#showtooltip Shadow Blades\n/use Shadow Blades\n/use 13\n/use 14\n/use Goremaw's Bite\n",
 				},
 				[121] = {
-					["icon"] = "136206",
 					["name"] = " ",
+					["icon"] = "134400",
 					["body"] = "#showtooltip Adrenaline Rush\n/use Adrenaline Rush\n/use Curse of the Dreadblades\n/use 13\n/use 14\n",
 				},
 				[125] = {
-					["icon"] = "1035048",
 					["name"] = "Pistol Shot",
+					["icon"] = "1035048",
 					["body"] = "#showtooltip\n/use Pistol Shot\n",
 				},
 				[130] = {
-					["icon"] = "132320",
 					["name"] = "Stealth/Symbols",
+					["icon"] = "132320",
 					["body"] = "#showtooltip Stealth\n/use Stealth\n/use Symbols of Death\n",
 				},
 				[129] = {
-					["icon"] = "134400",
 					["name"] = "SoD/SS",
+					["icon"] = "252272",
 					["body"] = "#showtooltip Symbols of Death\n/use Symbols of Death\n/use Shadowstrike\n",
 				},
 			},
@@ -387,10 +387,10 @@ MacroToolkitDB = {
 					["icon"] = "135967",
 					["body"] = "#showtooltip\n/use [@mouseover,help]Hand of Salvation;[help]Hand of Salvation;Hand of Salvation\n",
 				},
-				[133] = {
+				[123] = {
 					["name"] = " ",
-					["icon"] = "135964",
-					["body"] = "#showtooltip\n/use [@mouseover,help]Hand of Protection;[help]Hand of Protection;Hand of Protection\n",
+					["icon"] = "135984",
+					["body"] = "#showtooltip\n/use [@mouseover,harm][]Reckoning\n",
 				},
 				[127] = {
 					["name"] = " ",
@@ -437,10 +437,10 @@ MacroToolkitDB = {
 					["icon"] = "135966",
 					["body"] = "#showtooltip\n/use [@mouseover,help]Hand of Sacrifice;[help]Hand of Sacrifice;Hand of Sacrifice\n",
 				},
-				[123] = {
+				[133] = {
 					["name"] = " ",
-					["icon"] = "135984",
-					["body"] = "#showtooltip\n/use [@mouseover,harm][]Reckoning\n",
+					["icon"] = "135964",
+					["body"] = "#showtooltip\n/use [@mouseover,help]Hand of Protection;[help]Hand of Protection;Hand of Protection\n",
 				},
 			},
 			["backups"] = {
@@ -1025,15 +1025,15 @@ MacroToolkitDB = {
 		},
 		["Brewbies - Turalyon"] = {
 			["macros"] = {
-				[123] = {
-					["name"] = " ",
-					["icon"] = "INV_MISC_QUESTIONMARK",
-					["body"] = "#showtooltip Brawler's Bottomless Draenic Agility Potion\n/use Brawler's Bottomless Draenic Agility Potion\n/use 14\n",
+				[133] = {
+					["name"] = "TransferSequence",
+					["icon"] = "MONK_ABILITY_TRANSCENDENCE",
+					["body"] = "#showtooltip\n/castsequence Transcendence, Transcendence: Transfer\n",
 				},
-				[122] = {
-					["name"] = " ",
-					["icon"] = "ABILITY_MONK_PRIDEOFTHETIGER",
-					["body"] = "#showtooltip Legacy of the White Tiger\n/use Legacy of the White Tiger\n/cancelaura Hand of Protection\n",
+				[131] = {
+					["name"] = "Serenity Spam",
+					["icon"] = "INV_MISC_QUESTIONMARK",
+					["body"] = "#showtooltip Serenity\n/use Serenity\n/use Blackout Kick\n/use Purifying Brew\n",
 				},
 				[126] = {
 					["name"] = "Despawn Ox",
@@ -1050,10 +1050,10 @@ MacroToolkitDB = {
 					["icon"] = "INV_MISC_QUESTIONMARK",
 					["body"] = "#showtooltip\n/use [@mouseover,exists,help][@target,help][@focus,help][]Life Cocoon\n",
 				},
-				[133] = {
-					["name"] = "TransferSequence",
-					["icon"] = "MONK_ABILITY_TRANSCENDENCE",
-					["body"] = "#showtooltip\n/castsequence Transcendence, Transcendence: Transfer\n",
+				[123] = {
+					["name"] = " ",
+					["icon"] = "INV_MISC_QUESTIONMARK",
+					["body"] = "#showtooltip Brawler's Bottomless Draenic Agility Potion\n/use Brawler's Bottomless Draenic Agility Potion\n/use 14\n",
 				},
 				[127] = {
 					["name"] = "Fort Brew",
@@ -1100,10 +1100,10 @@ MacroToolkitDB = {
 					["icon"] = "ABILITY_MONK_PROVOKE",
 					["body"] = "#showtooltip\n/cast [nomod,@mouseover,harm,exists][nomod] Provoke\n/stopmacro [nomod]\n/target Black Ox Statue\n/cast Provoke\n/targetlasttarget\n",
 				},
-				[131] = {
-					["name"] = "Serenity Spam",
-					["icon"] = "INV_MISC_QUESTIONMARK",
-					["body"] = "#showtooltip Serenity\n/use Serenity\n/use Blackout Kick\n/use Purifying Brew\n",
+				[122] = {
+					["name"] = " ",
+					["icon"] = "ABILITY_MONK_PRIDEOFTHETIGER",
+					["body"] = "#showtooltip Legacy of the White Tiger\n/use Legacy of the White Tiger\n/cancelaura Hand of Protection\n",
 				},
 			},
 			["backups"] = {
@@ -1131,10 +1131,10 @@ MacroToolkitDB = {
 					["icon"] = "134400",
 					["body"] = "#showtooltip\n/use [@mouseover,help]Holy Radiance;[help]Holy Radiance;Holy Radiance\n",
 				},
-				[123] = {
+				[133] = {
 					["name"] = " ",
 					["icon"] = "134400",
-					["body"] = "#showtooltip\n/use [@mouseover,help]Hand of Freedom;[help]Hand of Freedom;Hand of Freedom\n",
+					["body"] = "#showtooltip\n/use [@mouseover,help]Hand of Protection;[help]Hand of Protection;Hand of Protection\n",
 				},
 				[127] = {
 					["name"] = " ",
@@ -1181,10 +1181,10 @@ MacroToolkitDB = {
 					["icon"] = "134400",
 					["body"] = "#showtooltip\n/use [@mouseover,help]Holy Shock;[help]Holy Shock;Holy Shock\n",
 				},
-				[133] = {
+				[123] = {
 					["name"] = " ",
 					["icon"] = "134400",
-					["body"] = "#showtooltip\n/use [@mouseover,help]Hand of Protection;[help]Hand of Protection;Hand of Protection\n",
+					["body"] = "#showtooltip\n/use [@mouseover,help]Hand of Freedom;[help]Hand of Freedom;Hand of Freedom\n",
 				},
 			},
 			["backups"] = {
