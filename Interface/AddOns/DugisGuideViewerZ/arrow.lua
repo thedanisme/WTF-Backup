@@ -793,7 +793,7 @@ function DugisArrow:Initialize()
 			end
 			if reset then DugisGuideViewer:RemoveAllWaypoints() end
 			if posX then
-				DGV:AddCustomWaypoint(posX, posY, desc, m, f)
+				DGV:AddCustomWaypoint(posX, posY, desc, m, f, questId)
 				if DugisGuideViewer:IsModuleLoaded("Target") then DoOutOfCombat(DugisGuideViewer.Modules.Target.Frame.Hide, DugisGuideViewer.Modules.Target.Frame) end
 				--DGV:AddRouteWaypointWithNoTrigger(m, f, posX, posY, desc)
 				--DoOutOfCombat(SetUseItemByQID, questId)

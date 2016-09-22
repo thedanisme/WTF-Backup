@@ -1419,6 +1419,8 @@ end
 		end
 		if route.item == 140192 then --Dalaran hearthstone
 			est = est + 10
+		elseif route.item == 50977 then -- DK Deathgate
+			est = est + 15
 		elseif route.item == 141605 then -- flightmaster whistle
 			est = est + 15
 		end		

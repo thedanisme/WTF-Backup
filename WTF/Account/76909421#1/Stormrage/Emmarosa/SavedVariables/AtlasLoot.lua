@@ -21,10 +21,10 @@ AtlasLootCharDB = {
 	["GUI"] = {
 		["classFilter"] = true,
 		["selected"] = {
-			"AtlasLoot_Legion", -- [1]
-			"TheEmeraldNightmare", -- [2]
-			6, -- [3]
-			3, -- [4]
+			"AtlasLoot_WorldEvents", -- [1]
+			"Brewfest", -- [2]
+			nil, -- [3]
+			1, -- [4]
 			0, -- [5]
 		},
 		["point"] = {

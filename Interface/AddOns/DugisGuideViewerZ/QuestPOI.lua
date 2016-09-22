@@ -67,12 +67,13 @@ function QuestPOI:Initialize()
 			end 
 			return
 		end
-	
+		local waypoint = DGV.Modules.DugisArrow:getFinalWaypoint()
+		
 		if not DGV:GetDB(DGV_WAYPOINTSON) or 
 		DGV.chardb.EssentialsMode ~= 1 or  
 		not DugisGuideViewer.GuideOn() or
 		(DGV.Tomtomloaded and TomTom.profile.poi.setClosest == true) or
-		(DGV.Modules.DugisArrow:getNumWaypoints() > 0 and not DGV.Modules.DugisArrow:GetFirstWaypointQuestId()) then
+		(waypoint and not waypoint.questId) then
 			if lastWaypoint then lastWaypoint = nil end
 			return
 		end   

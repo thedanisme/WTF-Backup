@@ -1,8 +1,7 @@
 # BigWigs
 
-## [v10-3-g1614bf9](https://github.com/BigWigsMods/BigWigs/tree/1614bf99ff3bb946855d9aeb86bc8717ddee6a83) (2016-09-21) [](#top)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v10...1614bf99ff3bb946855d9aeb86bc8717ddee6a83)
+## [v10.3-2-g999f2f0](https://github.com/BigWigsMods/BigWigs/tree/999f2f06aff1ca4ea97f370e40135c11008dbb89) (2016-09-21) [](#top)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v10.3...999f2f06aff1ca4ea97f370e40135c11008dbb89)
 
--   Ilgynoth: Throttle Mind Flay messages  
--   Ilgynoth: Fix bars showing up out of combat  
--   BrokenIsles/Nithogg: Fix mob id and Crackling Jolt option  
+-   Xavius: Fix missing option key  
+-   frFR Update (#38)  

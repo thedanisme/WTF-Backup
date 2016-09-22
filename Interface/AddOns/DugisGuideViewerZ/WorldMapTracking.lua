@@ -791,11 +791,12 @@ function WMT:Initialize()
     
 		if not npcId then return end
         
-        
-        
-        if (DugisWaypointTooltip:GetWidth() < 190) then
-            DugisWaypointTooltip:SetWidth(190)
+        if (DugisWaypointTooltip:GetWidth() < 160) then
+            DugisWaypointTooltip:SetWidth(160)
         end
+
+		DugisWaypointTooltip:SetWidth(160) 
+		DugisWaypointTooltipTextLeft1:SetWidth(160)		
         
         local textHeight = DugisWaypointTooltip:GetHeight()
         DugisWaypointTooltip:SetHeight(DugisWaypointTooltip:GetWidth() + textHeight - 15)
@@ -830,6 +831,7 @@ function WMT:Initialize()
     end
 
 	local function point_OnEnter(self, button)
+		local flightMaster = self.args[1] == 5
 		if UIParent:IsVisible() then
 			DugisWaypointTooltip:SetParent(UIParent)
 		else
@@ -849,16 +851,18 @@ function WMT:Initialize()
             texts[1] = "NPC "..npcId
         end
 		
-		if self.name and texts[1] then 
-			texts[1] = "|cffffffff"..self.name.."|r\n"..texts[1]
-		else 
-			--texts[1] = "|cffffffffNot Learned|r\n"..texts[1]
+		if self.name and flightMaster then 
+			texts[1] = "|cffffffff"..self.name.."|r"
+		elseif flightMaster then
+			texts[1] = "|cfff0eb20Flight location not learned|r"
 		end		
         
 		AddTooltips(unpack(texts))
 
-        DugisWaypointTooltip.npcId = npcId
-        DugisWaypointTooltip:updateModel()
+        if not flightMaster then 
+			DugisWaypointTooltip.npcId = npcId
+	        DugisWaypointTooltip:updateModel()
+		end
 
 	end
 
@@ -1068,6 +1072,7 @@ function WMT:Initialize()
 					point.minimapPoint:Hide()
 					point.minimapPoint = nil
 				end
+
 				tinsert(trackingPointPool, tremove(trackingPoints, index))
 				return
 			end

@@ -286,12 +286,12 @@ MacroToolkitDB = {
 				},
 				[123] = {
 					["name"] = "BladeFlurry",
-					["icon"] = "134400",
+					["icon"] = "132350",
 					["body"] = "#showtooltip Blade Flurry\n/cancelaura Blade Flurry\n/use Blade Flurry\n",
 				},
 				[127] = {
 					["name"] = "Riposte",
-					["icon"] = "134400",
+					["icon"] = "132269",
 					["body"] = "#showtooltip Riposte\n/use [nostealth]Riposte\n",
 				},
 				[124] = {
@@ -301,12 +301,12 @@ MacroToolkitDB = {
 				},
 				[128] = {
 					["name"] = "Shadow Blades",
-					["icon"] = "376022",
+					["icon"] = "134400",
 					["body"] = "#showtooltip Shadow Blades\n/use Shadow Blades\n/use 13\n/use 14\n/use Goremaw's Bite\n",
 				},
 				[121] = {
 					["name"] = " ",
-					["icon"] = "134400",
+					["icon"] = "136206",
 					["body"] = "#showtooltip Adrenaline Rush\n/use Adrenaline Rush\n/use Curse of the Dreadblades\n/use 13\n/use 14\n",
 				},
 				[125] = {
@@ -321,7 +321,7 @@ MacroToolkitDB = {
 				},
 				[129] = {
 					["name"] = "SoD/SS",
-					["icon"] = "252272",
+					["icon"] = "134400",
 					["body"] = "#showtooltip Symbols of Death\n/use Symbols of Death\n/use Shadowstrike\n",
 				},
 			},

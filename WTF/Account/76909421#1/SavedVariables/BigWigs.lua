@@ -25,6 +25,8 @@ BigWigs3DB = {
 		},
 		["BigWigs_Plugins_Raid Icons"] = {
 		},
+		["BigWigs_Plugins_Respawn"] = {
+		},
 		["BigWigs_Plugins_Bars"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -40,15 +42,6 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_Super Emphasize"] = {
-			["profiles"] = {
-				["Default"] = {
-					["font"] = "Gotham-Narrow",
-				},
-			},
-		},
-		["BigWigs_Plugins_Respawn"] = {
-		},
 		["BigWigs_Plugins_Pull"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -56,20 +49,14 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_Proximity"] = {
+		["BigWigs_Plugins_Super Emphasize"] = {
 			["profiles"] = {
 				["Default"] = {
-					["width"] = 233.000045776367,
-					["objects"] = {
-						["background"] = false,
-					},
-					["posy"] = 274.488895535469,
-					["posx"] = 1077.33353303141,
-					["lock"] = true,
-					["height"] = 198.999923706055,
-					["font"] = "Friz Quadrata TT",
+					["font"] = "Gotham-Narrow",
 				},
 			},
+		},
+		["BigWigs_Plugins_BossBlock"] = {
 		},
 		["BigWigs_Plugins_Messages"] = {
 			["profiles"] = {
@@ -87,9 +74,22 @@ BigWigs3DB = {
 		},
 		["BigWigs_Plugins_HeroesVoices"] = {
 		},
-		["BigWigs_Plugins_Common Auras"] = {
+		["BigWigs_Plugins_Proximity"] = {
+			["profiles"] = {
+				["Default"] = {
+					["width"] = 233.000045776367,
+					["objects"] = {
+						["background"] = false,
+					},
+					["posy"] = 274.488895535469,
+					["posx"] = 1077.33353303141,
+					["lock"] = true,
+					["height"] = 198.999923706055,
+					["font"] = "Friz Quadrata TT",
+				},
+			},
 		},
-		["BigWigs_Plugins_BossBlock"] = {
+		["BigWigs_Plugins_Common Auras"] = {
 		},
 	},
 	["profileKeys"] = {

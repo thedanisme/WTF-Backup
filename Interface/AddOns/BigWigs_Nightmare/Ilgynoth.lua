@@ -89,7 +89,6 @@ function mod:OnBossEnable()
 	-- Nightmare Ichor
 	self:Log("SPELL_AURA_APPLIED", "Fixate", 210099)
 	self:Log("SPELL_AURA_REMOVED", "FixateRemoved", 210099)
-	self:Log("SPELL_AURA_APPLIED", "TouchOfCorruption", 209469)
 	self:Log("SPELL_AURA_APPLIED_DOSE", "TouchOfCorruption", 209469)
 	self:Log("SPELL_CAST_START", "NightmareExplosion", 209471)
 
@@ -173,9 +172,16 @@ function mod:GroundSlam(args)
 	self:CDBar(args.spellId, 20.5)
 end
 
-function mod:NightmarishFury(args)
-	self:Message(args.spellId, "Urgent")
-	self:Bar(args.spellId, 10)
+do
+	local prev = 0
+	function mod:NightmarishFury(args)
+		local t = GetTime()
+		if t-prev > 1 then
+			prev = t
+			self:Message(args.spellId, "Urgent")
+			self:Bar(args.spellId, 10)
+		end
+	end
 end
 
 -- Nightmare Ichor
@@ -232,9 +238,9 @@ do
 		end
 
 		if self:Me(args.destGUID) then
+			self:TargetBar(args.spellId, 10, args.destName)
 			self:Flash(args.spellId)
 			self:Say(args.spellId)
-			self:TargetBar(args.spellId, args.destName, 10)
 		end
 	end
 end

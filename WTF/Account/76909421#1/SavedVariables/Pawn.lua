@@ -357,6 +357,9 @@ PawnCommon = {
 			["UnenchantedColor"] = "bfb74e",
 			["IconTexturePath"] = "Interface\\Icons\\Ability_Rogue_DeadlyBrew",
 			["PerCharacterOptions"] = {
+				["Emmarosa-Stormrage"] = {
+					["Visible"] = true,
+				},
 			},
 			["ClassID"] = 4,
 			["UpgradesFollowSpecialization"] = true,
@@ -710,6 +713,9 @@ PawnCommon = {
 			["UnenchantedColor"] = "bf3950",
 			["IconTexturePath"] = "Interface\\Icons\\Spell_Deathknight_FrostPresence",
 			["PerCharacterOptions"] = {
+				["Oenta-Stormrage"] = {
+					["Visible"] = true,
+				},
 			},
 			["ClassID"] = 6,
 			["UpgradesFollowSpecialization"] = true,
@@ -730,9 +736,6 @@ PawnCommon = {
 					["Visible"] = true,
 				},
 				["Shhbbyisok-Stormrage"] = {
-					["Visible"] = true,
-				},
-				["Oenta-Stormrage"] = {
 					["Visible"] = true,
 				},
 			},

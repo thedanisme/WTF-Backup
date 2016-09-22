@@ -333,7 +333,7 @@ local function LoadSettings()
 					[DGV_AUTOFLIGHTPATHSELECT]			= { category = "Waypoints",	showOnRightColumn = true,	text = "Auto Select Flight Path",	checked = false,	tooltip = "Automatically select the suggested flight path after opening the flightmaster map",},
 					[DGV_USETAXISYSTEM]			= { category = "Waypoints",	showOnRightColumn = true,	text = "Use Taxi System",	checked = true,	tooltip = "Taxi system will find the fastest route to get to your destination with the use of portals, teleports, vehicles etc. Disabling this option will give you a direct waypoint instead.",},
 					[DGV_AUTOREPAIRGUILD]		= { category = "Other",		text = "Use Guild Bank",    	checked = false,   	tooltip = "Use guild funds when repairing automatically", indent=true,},
-					[DGV_AUTO_QUEST_TRACK] 		= { category = "Questing",	text = "|TInterface\\OptionsFrame\\UI-OptionsFrame-NewFeatureIcon:0:0:0:-1|t Auto Quest Tracking",	checked = true,		tooltip = "Automatically add quest to the Objective Tracker on accept or objective update", module = "Guides", indent=false},
+					[DGV_AUTO_QUEST_TRACK] 		= { category = "Questing",	text = "|TInterface\\OptionsFrame\\UI-OptionsFrame-NewFeatureIcon:0:0:0:-1|tAuto Quest Tracking",	checked = true,		tooltip = "Automatically add quest to the Objective Tracker on accept or objective update", module = "Guides", indent=false},
 					[DGV_GUIDESUGGESTMODE] 		= { category = "Questing",	text = "Guide Suggest Mode",	showOnRightColumn = true, checked = true,		tooltip = "Suggest guides for your player on level up", module = "Guides", indent=false,},
 					[DGV_SMALLFRAMEBORDER] 		= { category = "Borders",	text = "Small Frame Border",	checked = true,		tooltip = "Use the same border that is selected for the large frame", module = "SmallFrame"},
 					[DGV_WATCHFRAMEBORDER] 		= { category = "Borders",	text = "Objective Tracker Frame Border",	checked = true,		tooltip = "Add a border for the Objective Tracker Frame", module = "DugisWatchFrame"},
@@ -376,7 +376,7 @@ local function LoadSettings()
 					[DGV_WATCHLOCALQUEST]			= { category = "Questing",		text = "Auto Track Local Quest", checked = false, tooltip = "Automatically remove non-local (not in current map) quest and track local quest to the objective tracker. This will trigger when you accept a quest or during a zone change event"},
 					[DGV_TARGETBUTTONCUSTOM]	= { category = "Target",	text = "Customize Macro",		checked = false,	tooltip = "Customize Target Macro", module = "Target", indent = true, editBox = "",},
 					[DGV_TARGETTOOLTIP]			= { category = "Target",		text = "Target Button Tooltip", checked = true, tooltip = "Display a tooltip for the target button to display the target name and model", indent = true, module = "Target"},						
-					[DGV_WAYPOINT_PING]			= { category = "Waypoints",		text = "Waypoint Reached Sound", checked = true, tooltip = "Plays a ping sound upon reaching each waypoint", showOnRightColumn = true},													
+					[DGV_WAYPOINT_PING]			= { category = "Waypoints",		text = "|TInterface\\OptionsFrame\\UI-OptionsFrame-NewFeatureIcon:0:0:0:-1|tWaypoint Reached Sound", checked = true, tooltip = "Plays a ping sound upon reaching each waypoint", showOnRightColumn = true},													
 
 					[DGV_GAWINCRITERIACUSTOM] = {category = "Gear Scoring", text = "Loot Suggestion Priority", tooltip = "Determines how gear should be scored, in order of greatest to least importance.", module = "GearAdvisor",
 						options = {
@@ -669,7 +669,7 @@ function DugisGuideViewer:OnInitialize()
 
 		{ value = "Search Locations", 	text = L["Search Locations"], 	icon = nil },
 		{ value = "Questing", 	text = "|TInterface\\OptionsFrame\\UI-OptionsFrame-NewFeatureIcon:0:0:0:-1|t"..L["Questing"], 	icon = nil },
-		{ value = "Waypoints", 	text = L["Waypoints"], icon = nil },
+		{ value = "Waypoints", 	text = "|TInterface\\OptionsFrame\\UI-OptionsFrame-NewFeatureIcon:0:0:0:-1|t"..L["Waypoints"], icon = nil },
 		{ value = "Display", 	text = L["Display"], 	icon = nil },
 		{ value = "Borders", 	text = L["Borders"], 	icon = nil },
 		{ value = "Frames", 	text = L["Frames"], 	icon = nil },
@@ -1677,6 +1677,14 @@ local function GetSettingsCategoryFrame(category, parent)
 		ChkBox:Disable() 
 		ChkBox.Text:SetTextColor(0.5, 0.5, 0.5) 		
 	end	
+	
+	if (DugisGuideViewer.tomtomloaded or DugisGuideViewer.mapsterloaded) and SettingsDB[DGV_REMOVEMAPFOG].category==category  then
+		local ChkBox = _G["DGV.ChkBox"..DGV_REMOVEMAPFOG]		
+
+		ChkBox:SetChecked(false)
+		ChkBox:Disable() 
+		ChkBox.Text:SetTextColor(0.5, 0.5, 0.5) 		
+	end		
 
 	if ((DugisGuideViewer.carboniteloaded and Nx.Quest) or DugisGuideViewer.sexymaploaded or DugisGuideViewer.nuiloaded or DugisGuideViewer.elvuiloaded or DugisGuideViewer.tukuiloaded or DugisGuideViewer.shestakuiloaded) and SettingsDB[DGV_MOVEWATCHFRAME].category==category then
 		DugisGuideViewer:SetDB(false, DGV_MOVEWATCHFRAME)

@@ -3,7 +3,7 @@ function Guide:Initialize()
 	function Guide:Load()DugisGuideViewer:RegisterGuide("|cffffd200Brewfest|r ", "Brewfest Quests & Achievements", nil, "Alliance", nil, "E", "|SG|DugisGuideViewer.SuggestCurrentHolidayPredicate([[Calendar_WinterVeil]])|", function() 
 return [[
 
-R Dun Morogh |N|Travel to {Dun Morogh}, (53.66, 38.60)| |QID|11318| |Z|27
+R Dun Morogh |N|Travel to {Dun Morogh}, (53.66, 38.60)| |QID|11318| |Z|27|
 A Now This is Ram Racing... Almost. |QID|11318| |N|(npc:23558) (53.66, 38.60), {Dun Morogh}| |NPC|23558| |Z|27|
 N Maintain a Trot for 8 seconds |QID|11318.1| |N|Use (item:33306) every 3 secs to Maintain a Trot for 8 seconds, the buff icon should remain green the whole time| |U|33306| |Z|27|
 N Maintain a Canter for 8 seconds |QID|11318.2| |N|Click on (item:33306) rapidly until you reach Canter buff (yellow) then use (item:33306) every 3 secs to Maintain a Canter for 8 seconds| |U|33306| |Z|27|

@@ -1610,7 +1610,7 @@ function MapOverlays:Initialize()
 	local function OverrideMapOverlays()
 		local discoveredOverlayData = {}
 
-		if (not DugisGuideViewer:UserSetting(DGV_REMOVEMAPFOG) or not MOD.GuideOn) and #overlayTextures==0 then
+		if (not DugisGuideViewer:UserSetting(DGV_REMOVEMAPFOG) or DugisGuideViewer.mapsterloaded or not MOD.GuideOn) and #overlayTextures==0 then
 			return
 		end
 
@@ -1712,7 +1712,7 @@ function MapOverlays:Initialize()
 						texture:SetVertexColor(1, 1, 1)
 						texture:SetDrawLayer("ARTWORK")
 						texture:Show()
-					elseif DugisGuideViewer:UserSetting(DGV_REMOVEMAPFOG) and MOD.GuideOn then
+					elseif DugisGuideViewer:UserSetting(DGV_REMOVEMAPFOG) or not DugisGuideViewer.mapsterloaded and MOD.GuideOn then
 						texture:SetVertexColor(.5, .5, .5)
 						texture:SetDrawLayer("BORDER")
 						texture:Show()
@@ -1730,7 +1730,7 @@ function MapOverlays:Initialize()
 
 		wipe(discoveredOverlayData)
 
-		if not DugisGuideViewer:UserSetting(DGV_REMOVEMAPFOG) or not MOD.GuideOn then
+		if not DugisGuideViewer:UserSetting(DGV_REMOVEMAPFOG) or not MOD.GuideOn or DugisGuideViewer.mapsterloaded then
 			wipe(overlayTextures)
 		end
 	end

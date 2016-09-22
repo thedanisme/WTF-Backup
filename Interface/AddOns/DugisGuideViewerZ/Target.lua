@@ -115,7 +115,7 @@ function Target:Initialize()
 		modelFrame:ClearModel()
 		if mv and mv.npcDB and mv.npcDB[npcId] then
 			modelFrame:SetDisplayInfo(mv.npcDB[npcId])
-		else
+		elseif npcId then
 			modelFrame:SetCreature(npcId)
 		end
         

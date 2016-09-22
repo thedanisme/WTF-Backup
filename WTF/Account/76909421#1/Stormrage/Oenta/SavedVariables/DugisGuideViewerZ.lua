@@ -768,25 +768,28 @@ DugisGuideUser = {
 			}, -- [3]
 		},
 	},
+	["NoQuestLogUpdateTrigger"] = true,
 	["PetBattleOn"] = false,
 	["removedQuests"] = {
 	},
-	["LFGWorldLocation"] = "1007:0:2722083185",
-	["toskip"] = {
+	["excludedTrackingPoints"] = {
 	},
+	["PreviewPointx"] = 46.15238904953,
 	["FinalizeWaypoint"] = true,
-	["CharacterGUID"] = "Player-60-0AA1A2F9",
-	["ZenPilgrimageReturnPoint"] = {
-		["y"] = 0.64359974861145,
-		["x"] = 0.415114104747772,
-		["m"] = 1014,
-		["f"] = 10,
+	["toskip"] = {
 	},
 	["QuestState"] = {
 	},
-	["EnableQWStatus"] = true,
-	["excludedTrackingPoints"] = {
+	["CharacterGUID"] = "Player-60-0AA1A2F9",
+	["ZenPilgrimageReturnPoint"] = {
+		["y"] = 0.172547817230225,
+		["x"] = 0.429007112979889,
+		["m"] = 1015,
+		["f"] = 0,
 	},
+	["LFGWorldLocation"] = "1007:0:2722738551",
+	["EnableQWStatus"] = true,
+	["PreviewPointy"] = 16.0056889057159,
 	["turnedinquests"] = {
 	},
 }
@@ -802,6 +805,210 @@ DugisArrowDb = {
 	["arrow_pos_y"] = -34.0000915527344,
 }
 DugisFlightmasterDataTable = {
+	[8] = {
+		[108888] = {
+			["name"] = "Wardens' Redoubt, Azsuna",
+			["m"] = 1015,
+			["f"] = 0,
+			["coord"] = 2070002380,
+		},
+		[110971] = {
+			["name"] = "Illidari Perch, Azsuna",
+			["m"] = 1015,
+			["f"] = 0,
+			["coord"] = 1366980243,
+		},
+		[94973] = {
+			["name"] = "Nesingwary, Highmountain",
+			["m"] = 1024,
+			["f"] = 0,
+			["coord"] = 1727301337,
+		},
+		[88110] = {
+			["name"] = "Illidari Stand, Azsuna",
+			["m"] = 1015,
+			["f"] = 0,
+			["coord"] = 1914794008,
+		},
+		[98966] = {
+			["name"] = "Ironhorn Enclave, Highmountain",
+			["m"] = 1024,
+			["f"] = 0,
+			["coord"] = 2440877756,
+		},
+		[98108] = {
+			["name"] = "Greywatch, Stormheim",
+			["m"] = 1017,
+			["f"] = 0,
+			["coord"] = 3098253628,
+		},
+		[97860] = {
+			["name"] = "Skyhorn, Highmountain",
+			["m"] = 1024,
+			["f"] = 0,
+			["coord"] = 2258400227,
+		},
+		[90556] = {
+			["name"] = "Azurewing Repose, Azsuna",
+			["m"] = 1015,
+			["f"] = 0,
+			["coord"] = 2079410094,
+		},
+		[97868] = {
+			["name"] = "The Witchwood, Highmountain",
+			["m"] = 1024,
+			["f"] = 0,
+			["coord"] = 1647666311,
+		},
+		[112866] = {
+			["name"] = "Shackle's Den, Azsuna",
+			["m"] = 1015,
+			["f"] = 0,
+			["coord"] = 2414122732,
+		},
+		[100459] = {
+			["name"] = "Garden of the Moon, Val'sharah",
+			["m"] = 1018,
+			["f"] = 0,
+			["coord"] = 2436142042,
+		},
+		[90639] = {
+			["name"] = "Challiane's Terrace, Azsuna",
+			["m"] = 1015,
+			["f"] = 0,
+			["coord"] = 1752831794,
+		},
+		[96565] = {
+			["name"] = "Obsidian Overlook, Highmountain",
+			["m"] = 1024,
+			["f"] = 0,
+			["coord"] = 2029967545,
+		},
+		[100550] = {
+			["name"] = "Sylvan Falls, Highmountain",
+			["m"] = 1024,
+			["f"] = 0,
+			["coord"] = 1542957263,
+		},
+		[111327] = {
+			["name"] = "Stormtorn Foothills, Stormheim",
+			["m"] = 1017,
+			["f"] = 0,
+			["coord"] = 2232703223,
+		},
+		[93447] = {
+			["name"] = "Lorlathil, Val'sharah",
+			["m"] = 1018,
+			["f"] = 0,
+			["coord"] = 2361768346,
+		},
+		[98113] = {
+			["name"] = "Lorna's Watch, Stormheim",
+			["m"] = 1017,
+			["f"] = 0,
+			["coord"] = 1607115709,
+		},
+		[98066] = {
+			["name"] = "Shipwreck Cove, Highmountain",
+			["m"] = 1024,
+			["f"] = 0,
+			["coord"] = 1799232164,
+		},
+		[100468] = {
+			["name"] = "Starsong Refuge, Val'sharah",
+			["m"] = 1018,
+			["f"] = 0,
+			["coord"] = 2965013023,
+		},
+		[95688] = {
+			["name"] = "Thunder Totem, Highmountain",
+			["m"] = 1080,
+			["f"] = 0,
+			["coord"] = 1920688989,
+		},
+		[98972] = {
+			["name"] = "Prepfoot, Highmountain",
+			["m"] = 1024,
+			["f"] = 0,
+			["coord"] = 2490583353,
+		},
+		[93940] = {
+			["name"] = "Bradensbrook, Val'sharah",
+			["m"] = 1018,
+			["f"] = 0,
+			["coord"] = 1813616062,
+		},
+		[100559] = {
+			["name"] = "Stonehoof Watch, Highmountain",
+			["m"] = 1024,
+			["f"] = 0,
+			["coord"] = 2544674483,
+		},
+		[98114] = {
+			["name"] = "Skyfire Triage Camp, Stormheim",
+			["m"] = 1017,
+			["f"] = 0,
+			["coord"] = 1443856804,
+		},
+		[97870] = {
+			["name"] = "Felbane Camp, Highmountain",
+			["m"] = 1024,
+			["f"] = 0,
+			["coord"] = 1285317815,
+		},
+		[111675] = {
+			["name"] = "Meredil, Suramar",
+			["m"] = 1033,
+			["f"] = 0,
+			["coord"] = 1474854536,
+		},
+		[111624] = {
+			["name"] = "Felblaze Ingress, Azsuna",
+			["m"] = 1015,
+			["f"] = 0,
+			["coord"] = 2741258455,
+		},
+		[93465] = {
+			["m"] = 1021,
+			["direct"] = "111420",
+			["coord"] = 1130645975,
+			["f"] = 2,
+		},
+		[98161] = {
+			["name"] = "Valdisdall, Stormheim",
+			["m"] = 1017,
+			["f"] = 0,
+			["coord"] = 2606531108,
+		},
+		[111420] = {
+			["name"] = "Hafr Fjall, Stormheim",
+			["m"] = 1017,
+			["f"] = 0,
+			["coord"] = 2387468240,
+		},
+		[114666] = {
+			["name"] = "Irongrove Retreat, Suramar",
+			["m"] = 1033,
+			["f"] = 0,
+			["coord"] = 1095979364,
+		},
+		[114837] = {
+			["name"] = "Gloaming Reef, Val'sharah",
+			["m"] = 1018,
+			["f"] = 0,
+			["coord"] = 1115138655,
+		},
+		[96813] = {
+			"111675:114666:100550:94973:97868", -- [1]
+			"111675:114666:100550:94973:97868:98066", -- [2]
+			"111323:93465", -- [3]
+			["name"] = "Dalaran",
+			["m"] = 1014,
+			["direct"] = "112866:111675:111624:111420",
+			["f"] = 10,
+			["coord"] = 3012264314,
+		},
+	},
 }
 DugisNPCFrameDB = {
 }
@@ -878,17 +1085,17 @@ DugisCharacterCache = {
 			12022.29, -- [1]
 			1615, -- [2]
 		},
-		["CalculateScore|cffffffff|Hitem:139680::130216::::::110:250::14:2:3385:3382:::|h[]|h|r1false110INVTYPE_WRISTnil1"] = {
-			6374.43, -- [1]
-			827, -- [2]
+		["CalculateScore|cff0070dd|Hitem:134223::::::::110:250::28:3:3395:1492:3339:::|h[Coralplate Chestguard]|h|r1false110INVTYPE_CHESTnil1"] = {
+			14111.94, -- [1]
+			1615, -- [2]
 		},
 		["CalculateScore|cff0070dd|Hitem:134322::130216::::::110:250::26:5:1825:1808:605:1472:1675:::|h[Drained Mana Crystal]|h|r1false110INVTYPE_TRINKETnil1"] = {
 			3232.36, -- [1]
 			0, -- [2]
 		},
-		["CalculateScore|cff0070dd|Hitem:134223::::::::110:250::28:3:3395:1492:3339:::|h[Coralplate Chestguard]|h|r1false110INVTYPE_CHESTnil1"] = {
-			14111.94, -- [1]
-			1615, -- [2]
+		["CalculateScore|cffffffff|Hitem:139680::130216::::::110:250::14:2:3385:3382:::|h[]|h|r1false110INVTYPE_WRISTnil1"] = {
+			6374.43, -- [1]
+			827, -- [2]
 		},
 		["CalculateScore|cffffffff|Hitem:136350::::::::110:250::11::::|h[Brumdysla, Hammer of Vrorsk]|h|r1false11016nil1"] = {
 			-3, -- [1]

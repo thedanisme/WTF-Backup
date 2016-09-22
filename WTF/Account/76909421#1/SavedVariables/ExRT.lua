@@ -436,6 +436,9 @@ VExRT = {
 				"^1877^14^1474428780^481^1^24^844.95^Wwechampcena", -- [150]
 				"^1864^14^1474429672^190^0^23^842.57^Redhavok", -- [151]
 				"^1864^14^1474430185^348^0^24^843.89^Mapledk", -- [152]
+				"^1822^2^1474490850^105^1^5^836.89^", -- [153]
+				"^1823^2^1474491268^93^1^5^840.04^", -- [154]
+				"^1824^2^1474491676^255^1^5^840.04^Donalddaytwo", -- [155]
 			},
 			["Shaneequa"] = {
 			},
@@ -817,6 +820,18 @@ VExRT = {
 			"3221044Gavrey1474429301", -- [48]
 			"9221044Zellerina1474429342", -- [49]
 			"!9139248Zellerina1474429342:4:1807:1808:1477:3336", -- [50]
+			"1227124Sciloff-Proudmoore1474470611", -- [51]
+			"C227124Alody-Elune1474470612", -- [52]
+			"2227124Holyheals-Farstriders1474470612", -- [53]
+			"!C141418Alody-Elune1474470612:1:1472", -- [54]
+			"5227124Monluck-Lightbringer1474470612", -- [55]
+			"C227124Crowstiel-Darkspear1474470613", -- [56]
+			"8227124Pyronix1474470613", -- [57]
+			"7227124Shocktopus-Skywall1474470613", -- [58]
+			"!7141420Shocktopus-Skywall1474470613:2:1477:3336", -- [59]
+			"8227124Unknown1474470616", -- [60]
+			"8227124Bnorus-DarkIron1474470619", -- [61]
+			"B227124Roosta-Thunderlord1474470625", -- [62]
 		},
 	},
 	["ExCD2"] = {
@@ -824,54 +839,109 @@ VExRT = {
 		},
 		["gnGUIDs"] = {
 			["Datqtree-Durotan"] = 105,
-			["Fantamagori-Nemesis"] = 260,
+			["Roosta-Thunderlord"] = 102,
+			["Hatespark"] = 63,
+			["Zulino"] = 255,
+			["Mayhemm-Arathor"] = 577,
+			["Everec-Ner'zhul"] = 259,
+			["Vitarus-Moonrunner"] = 267,
+			["Healux-Sargeras"] = 257,
+			["Nyssar-ArgentDawn"] = 577,
+			["Gavrey"] = 254,
+			["Yarthsa-Whisperwind"] = 63,
+			["Rëvoltz-Nemesis"] = 267,
+			["Zellerina"] = 267,
+			["Eazymfkne"] = 105,
+			["Wwechampcena"] = 577,
+			["Arikash"] = 577,
+			["Qyzil"] = 256,
+			["Alprazølam-Baelgun"] = 259,
+			["Chombbi-Ragnaros"] = 263,
+			["Ohsohype-Uldum"] = 260,
+			["Pyronix"] = 63,
+			["Malversion"] = 268,
+			["Talmobok"] = 262,
+			["Snedegar-KhazModan"] = 71,
+			["Holyheals-Farstriders"] = 65,
+			["Toomanyprocs"] = 65,
+			["Yuai-Alleria"] = 263,
+			["Spoder"] = 577,
+			["Oenta"] = 251,
+			["Cirsphe-Durotan"] = 269,
+			["Aeilora"] = 105,
+			["Nuter-Durotan"] = 266,
+			["ßadkarma"] = 253,
+			["Chozenone"] = 259,
+			["Kornarc"] = 254,
+			["Garmor-Darkspear"] = 253,
+			["Wargate"] = 266,
+			["Therealtroyg-Darkspear"] = 71,
+			["Mezalini"] = 260,
+			["Xêna-Shandris"] = 269,
+			["Bloodsail-Azuremyst"] = 64,
+			["Selenabromez"] = 104,
+			["Rhodium-Nathrezim"] = 264,
+			["Caninow-Goldrinn"] = 105,
+			["Wickedtokes-Sen'jin"] = 267,
 			["Clemmy-Shu'halo"] = 71,
 			["Mapledk"] = 252,
 			["Redhavok"] = 66,
 			["Khloroshue"] = 252,
-			["Mayhemm-Arathor"] = 577,
-			["Everec-Ner'zhul"] = 259,
+			["Gaffgrion-MoonGuard"] = 577,
+			["Monluck-Lightbringer"] = 258,
+			["Absolutepain"] = 254,
+			["Alody-Elune"] = 577,
+			["Winonah-Ysera"] = 254,
 			["Imerei"] = 267,
-			["Gavrey"] = 254,
-			["Yarthsa-Whisperwind"] = 63,
-			["Doterup-Kel'Thuzad"] = 267,
-			["Zellerina"] = 267,
+			["Thabeef-Dawnbringer"] = 577,
+			["Vanndamm-Elune"] = 70,
+			["Giganticwood"] = 257,
+			["Hemilgan-Darkspear"] = 577,
+			["Mcswaggerson-Durotan"] = 71,
+			["Sciloff-Proudmoore"] = 71,
+			["Bnorus-DarkIron"] = 63,
 			["Doublezed"] = 263,
-			["Wwechampcena"] = 577,
-			["Arikash"] = 577,
 			["Odums"] = 252,
-			["Alprazølam-Baelgun"] = 259,
+			["Jackìro"] = 260,
+			["Tresdor-SilverHand"] = 265,
+			["Ayese"] = 257,
+			["Narutofoxlov-ArgentDawn"] = 254,
+			["Krázed"] = 251,
+			["Rurî"] = 105,
+			["Deore-AeriePeak"] = 264,
+			["Yasharala-Korgath"] = 577,
 			["Zalenthor"] = 264,
-			["Malversion"] = 268,
-			["Talmobok"] = 262,
-			["Snedegar-KhazModan"] = 71,
+			["Johal-Staghelm"] = 71,
+			["Btcrazy-Nazgrel"] = 267,
+			["Elanari"] = 105,
+			["Kattrika"] = 254,
 			["Cajooal"] = 72,
-			["Toomanyprocs"] = 65,
-			["Zulino"] = 255,
-			["Caninow-Goldrinn"] = 105,
+			["Doughzer-EmeraldDream"] = 71,
+			["Pinjali"] = 64,
+			["Doterup-Kel'Thuzad"] = 267,
 			["Tunerlife"] = 260,
 			["Novaunit-Darkspear"] = 264,
-			["Qyzil"] = 256,
-			["Aeilora"] = 105,
+			["Crowstiel-Darkspear"] = 577,
+			["Fantamagori-Nemesis"] = 260,
 			["Drxhor"] = 105,
-			["Nuter-Durotan"] = 266,
-			["Mcswaggerson-Durotan"] = 71,
+			["Rexiss-Eitrigg"] = 103,
+			["Ringolo-Kel'Thuzad"] = 102,
 			["Wipemyface-Winterhoof"] = 254,
-			["ßadkarma"] = 253,
-			["Jackìro"] = 260,
-			["Daemonarrow"] = 254,
-			["Chozenone"] = 259,
+			["Reaperwithin-Doomhammer"] = 254,
+			["Mentalsport-Proudmoore"] = 257,
+			["Shocktopus-Skywall"] = 263,
+			["Donalddaytwo"] = 254,
 			["Eskrima-Deathwing"] = 254,
-			["Rurî"] = 105,
-			["Hemilgan-Darkspear"] = 577,
+			["Zhanrocks-Arthas"] = 267,
+			["Delitah-Nemesis"] = 103,
 			["Glockworkz"] = 253,
-			["Kornarc"] = 254,
-			["Wargate"] = 266,
-			["Oenta"] = 250,
-			["Gaffgrion-MoonGuard"] = 577,
-			["Giganticwood"] = 257,
-			["Emmarosa"] = 261,
-			["Tresdor-SilverHand"] = 265,
+			["Mythörian-Tichondrius"] = 105,
+			["Daemonarrow"] = 254,
+			["Bananator-Frostmourne"] = 256,
+			["Dalleise-Proudmoore"] = 102,
+			["Dashtra"] = 581,
+			["Emmarosa"] = 259,
+			["Gosuto-Proudmoore"] = 260,
 		},
 		["NoRaid"] = true,
 		["CDECol"] = {
@@ -1120,12 +1190,12 @@ VExRT = {
 			true, -- [4]
 		},
 		["Strata"] = "HIGH",
+		["DisableOutsideRaid"] = true,
 		["Fix"] = true,
-		["MarksReverse"] = true,
 		["pulltimer"] = 10,
 		["Top"] = 186.000259399414,
 		["Left"] = 1509.49951171875,
-		["DisableOutsideRaid"] = true,
+		["MarksReverse"] = true,
 	},
 	["Profiles"] = {
 	},
@@ -1288,8 +1358,8 @@ VExRT = {
 				1472794275, -- [2]
 			},
 			["Emmarosa-Stormrage"] = {
-				"16:3:1052-1-1:1055-0-1:1054-1-1:1053-0-1:1348-1-1:1067-0-3:1066-3-3:1065-2-4:1064-3-3:1063-1-4:1062-1-4:1061-3-3:1060-3-3:1059-0-3:1058-0-1:1057-1-1:1056-0-1:1385-0-20:128872", -- [1]
-				1474430188, -- [2]
+				"11:4:346-1-1:347-0-1:337-0-1:335-0-1:1276-1-1:334-0-1:333-0-1:332-1-1:331-0-3:330-3-3:329-1-4:328-3-3:327-0-3:326-0-3:325-1-4:324-0-3:323-3-3:1384-0-20:128870", -- [1]
+				1474491679, -- [2]
 			},
 			["Gavrey-Stormrage"] = {
 				"19:4:307-1-1:322-0-1:321-1-1:311-1-1:1337-1-1:320-0-3:319-1-4:318-3-4:317-3-3:316-3-3:315-3-3:314-4-4:313-0-3:312-0-3:310-0-1:309-1-1:308-1-1:1369-0-20:128826", -- [1]
