@@ -1491,7 +1491,7 @@ function Guides:Initialize()
 			DGV:RemoveAllWaypoints()
 			
 			if DGV:ReturnTag("PPOS", guideIndex) then
-				if WorldMapFrame:IsShown() then HideUIPanel(WorldMapFrame) end
+				if DGV.Modules.MapPreview:IsAnimating() then HideUIPanel(WorldMapFrame) end
 
 				local x, y
 				mapID, mapFloor, x, y = DGV:GetPlayerPosition()
@@ -1511,7 +1511,7 @@ function Guides:Initialize()
 				return
 			elseif DGV:ReturnTag("POI", guideIndex) and qid and LuaUtils:DugiGetQuestWorldMapAreaID(qid) > 0 then 
 
-				if WorldMapFrame:IsShown() then HideUIPanel(WorldMapFrame) end
+				if DGV.Modules.MapPreview:IsAnimating() then HideUIPanel(WorldMapFrame) end
 				local m, f = LuaUtils:DugiGetQuestWorldMapAreaID(qid)
 				if m then LuaUtils:DugiSetMapByID(m) end --this is needed otherwise QuestPOIGetIconInfo returns nil for POI not in current map.
 				local _, posX, posY, objective = QuestPOIGetIconInfo(qid)
@@ -1806,13 +1806,13 @@ function Guides:Initialize()
 				end	
 							
 			
-				if strmatch(DGV.actions[DGU.CurrentQuestIndex], "[RFH]") and strmatch(DGV.actions[DGU.CurrentQuestIndex + 1], "[ATBhUf]") then  
+				if strmatch(DGV.actions[DGU.CurrentQuestIndex], "[RFH]") and strmatch(DGV.actions[DGU.CurrentQuestIndex + 1], "[ATBhUf]") and not DGV:ReturnTag("SID", DGU.CurrentQuestIndex) then  
 					if control <= #visualRows and strmatch(DGV.actions[control], "[ATBhUf]") then
 						return control
 					end
 				end
 	
-				if strmatch(DGV.actions[DGU.CurrentQuestIndex], "[RFH]") and strmatch(DGV.actions[DGU.CurrentQuestIndex + 1], "[CNK]") then  
+				if strmatch(DGV.actions[DGU.CurrentQuestIndex], "[RFH]") and strmatch(DGV.actions[DGU.CurrentQuestIndex + 1], "[CNK]") and not DGV:ReturnTag("SID", DGU.CurrentQuestIndex) then  
 					if control <= #visualRows and strmatch(DGV.actions[control], "[CNKBU]") and not DGV:ReturnTag("MD", DGU.CurrentQuestIndex) and not DGV:ReturnTag("MD", control) and not DGV:ReturnTag("AYG", control) then
 						return control
 					elseif control <= #visualRows and DGV:ReturnTag("U", control) and not strmatch(DGV.actions[control], "[RFH]") and not DGV:ReturnTag("MD", DGU.CurrentQuestIndex) and not DGV:ReturnTag("MD", control) then
@@ -1820,19 +1820,19 @@ function Guides:Initialize()
 					end
 				end			
 	
-				if strmatch(DGV.actions[DGU.CurrentQuestIndex], "[BhUf]") and strmatch(DGV.actions[DGU.CurrentQuestIndex + 1], "[AT]") then  
+				if strmatch(DGV.actions[DGU.CurrentQuestIndex], "[BhUf]") and strmatch(DGV.actions[DGU.CurrentQuestIndex + 1], "[AT]") and not DGV:ReturnTag("SID", DGU.CurrentQuestIndex) then  
 					if control <= #visualRows and strmatch(DGV.actions[control], "[ATBhUf]") then
 						return control
 					end
 				end
 	
-				if strmatch(DGV.actions[DGU.CurrentQuestIndex], "[AT]") or (strmatch(DGV.actions[DGU.NextQuestIndex], "[AT]") and DGV:ReturnTag("AYG", DGU.CurrentQuestIndex)) then  
+				if strmatch(DGV.actions[DGU.CurrentQuestIndex], "[AT]") or (strmatch(DGV.actions[DGU.NextQuestIndex], "[AT]") and DGV:ReturnTag("AYG", DGU.CurrentQuestIndex)) and not DGV:ReturnTag("SID", DGU.CurrentQuestIndex) then  
 					if control <= #visualRows and strmatch(DGV.actions[control], "[ATBhUf]") then
 						return control
 					end
 				end
 				
-				if strmatch(DGV.actions[DGU.CurrentQuestIndex], "[CNK]") and not DGV:ReturnTag("AYG", DGU.CurrentQuestIndex) then   
+				if strmatch(DGV.actions[DGU.CurrentQuestIndex], "[CNK]") and not DGV:ReturnTag("AYG", DGU.CurrentQuestIndex) and not DGV:ReturnTag("SID", DGU.CurrentQuestIndex) then   
 					if control <= #visualRows and strmatch(DGV.actions[control], "[CNKB]") and not DGV:ReturnTag("MD", DGU.CurrentQuestIndex) and not DGV:ReturnTag("MD", control) then
 						return control
 					elseif control <= #visualRows and DGV:ReturnTag("U", control) and not strmatch(DGV.actions[control], "[RFHU]") and not DGV:ReturnTag("MD", DGU.CurrentQuestIndex) and not DGV:ReturnTag("MD", control) then
@@ -1929,23 +1929,23 @@ function Guides:Initialize()
 		end
 	end	
 	
-	function DGV:havelootitem(qid)
+	function DGV:havelootitem(indx)
 		local havel
-		local lootitem, lootqty 	= DGV:ReturnTag("L", qid)
+		local lootitem, lootqty 	= DGV:ReturnTag("L", indx)
 		if lootitem and (GetItemCount(lootitem) >= lootqty) then havel = true else havel = false end
 		return havel
 	end
 	
-	function DGV:havecurrencyitem(qid)
+	function DGV:havecurrencyitem(indx)
 		local havec
-		local curitem, curqty 	= DGV:ReturnTag("CUR", qid)
+		local curitem, curqty 	= DGV:ReturnTag("CUR", indx)
 		if curitem and (select(2, GetCurrencyInfo(curitem)) >= curqty) then havec = true else havec = false end
 		return havec
 	end	
 
-	function DGV:haveuseitem(qid)
+	function DGV:haveuseitem(indx)
 		local haveu
-		local useitem 				= DGV:ReturnTag("U", qid)
+		local useitem 				= DGV:ReturnTag("U", indx)
 		local uinbag 				= DGV:InBag(useitem)
 		if (useitem and uinbag) then haveu = true else haveu = false end 
 		return haveu
@@ -2009,12 +2009,12 @@ function Guides:Initialize()
 		elseif hasprof and not DGV:HasProfession(hasprof) then
 			return true
 		elseif optional and inmap then 
-			return false
-		elseif optional and tidInlog then
 			return false							
 		elseif optional and not inlog then
 			--DebugPrint("SKIP: optional and not in log.")
 			return true	
+		elseif optional and tidInlog then
+			return false			
 		--elseif optional and ((action =="A" and useitem and not haveuse) or (lootitem and not haveloot)) then
 		elseif optional and (action =="A" and useitem and not haveuse) then
 			--DebugPrint("SKIP: not enough loot or no use item")
@@ -2686,8 +2686,10 @@ function Guides:Initialize()
 		
 		if logIndx then _, _, _, _, _, qComplete, _, _ = GetQuestLogTitle(logIndx) end
 		
-		if qComplete == 1 or self:QuestPartComplete(guideIndex) or (needsLoot and self:IsCompleteLootQO("QLU", nil, guideIndex)) or (not isDaily and self:HasQuestBeenTurnedIn(qid)) 
-			 or self:ProfessionCompletedAtGuideIndex(guideIndex) or self:CheckForLocation(guideIndex) or self:AchieveCompleteFromGuideIndex(guideIndex) or self:CheckForHearth(guideIndex) then QuestComplete = true else QuestComplete = nil end
+		if qComplete == 1 or self:QuestPartComplete(guideIndex) or 
+		--(needsLoot and self:IsCompleteLootQO("QLU", nil, guideIndex)) or 
+		(not isDaily and self:HasQuestBeenTurnedIn(qid)) or
+		self:ProfessionCompletedAtGuideIndex(guideIndex) or self:CheckForLocation(guideIndex) or self:AchieveCompleteFromGuideIndex(guideIndex) or self:CheckForHearth(guideIndex) then QuestComplete = true else QuestComplete = nil end
 		
 		if (action == "A" and logIndx) or (QuestComplete and action ~= "T") or (QuestComplete and action == "T" and not logIndx) or questState == "C" or (oid1 and EvaluateOID(oid1)) or (oid2 and EvaluateOID(oid2)) or (oid3 and EvaluateOID(oid3)) or (oid4 and EvaluateOID(oid4)) or (ayg and EvaluateAYG(ayg)) then--and strmatch(action, "[NFfRBbh]") and not questPart and not needsLoot) then 
 			QuestComplete = true
@@ -3140,6 +3142,7 @@ function Guides:Initialize()
 		if (DGV:ReturnTag("AC", i)) then isAchievementpart = true end
 		if (DGV:ReturnTag("L", i)) then isLoot = true end
 		if (DGV:ReturnTag("U", i)) then isUse = true end
+		if (DGV:ReturnTag("SID", i)) then isQpart = true end		
 		
 		if isTooHigh and objectiveType == "A" then
 			button.tooHighTexture = self.ARTWORK_PATH.."accept_g.tga"	
@@ -4666,7 +4669,9 @@ function Guides:Initialize()
 				
 				if logIndx then _, _, _, _, _, qComplete, _, _ = GetQuestLogTitle(logIndx) end
 				
-				if qComplete == 1 or self:QuestPartComplete(guideIndex) or (needsLoot and self:IsCompleteLootQO("QLU", nil, guideIndex)) or (not isDaily and self:HasQuestBeenTurnedIn(qid)) 
+				if qComplete == 1 or self:QuestPartComplete(guideIndex) or 
+				--(needsLoot and self:IsCompleteLootQO("QLU", nil, guideIndex)) or 
+				(not isDaily and self:HasQuestBeenTurnedIn(qid)) 
 					 or self:ProfessionCompletedAtGuideIndex(guideIndex) or self:CheckForLocation(guideIndex) or self:AchieveCompleteFromGuideIndex(guideIndex) or self:CheckForHearth(guideIndex) then QuestComplete = true else QuestComplete = nil end
 								
 				if (action == "A" and logIndx) or (QuestComplete and action ~= "T") or (QuestComplete and action == "T" and not logIndx) or (ayg and EvaluateAYG(ayg)) or (questState == "C" and strmatch(action, "[NFfRBbh]") and not questPart and not needsLoot) or (reqlvl and reqlvl <= playerLevel and not action == "f") or (oid1 and EvaluateOID(oid1)) or (oid2 and EvaluateOID(oid2)) or (oid3 and EvaluateOID(oid3)) or (oid4 and EvaluateOID(oid4)) or (tid and EvaluateTID(tid)) or (buff and EvaluateBUFF(buff)) then  												
@@ -4818,19 +4823,24 @@ function Guides:Initialize()
 		local LOOT_PUSHED_REGEX = gsub(LOOT_ITEM_PUSHED_SELF, "%%s", "(.+)") --"You receive loot: %s."
 		function DGV:CHAT_MSG_LOOT(event, msg)			
 			if CurrentTitle ~= nil then
-				local guideIndex, itemid
-				local itemlink = string.match(msg, LOOT_SELF_REGEX) or string.match(msg, LOOT_PUSHED_REGEX)
+				local itemid
+				local guideIndex = DGU.CurrentQuestIndex
+				--local itemlink = string.match(msg, LOOT_SELF_REGEX) or string.match(msg, LOOT_PUSHED_REGEX)
 				
-				if itemlink then itemid = string.match(itemlink, "item:(%d+):")	end
+				--if itemlink then itemid = string.match(itemlink, "item:(%d+):")	end
 				
-				for guideIndex = 1, #visualRows do
+				--[[for guideIndex = 1, #visualRows do
 					if DGV:ReturnTag("L", guideIndex) then 
 						if DGV:IsCompleteLootQO("CMSG", itemid, guideIndex) then 
 							DGV:SetChkToComplete(guideIndex) 
 							DGV:MoveToNextQuest()
 						end
 					end 
-				end 
+				end]]
+				if DGV:ReturnTag("L", guideIndex) and DGV:havelootitem(guideIndex) == true then 
+					DGV:SetChkToComplete(guideIndex) 
+					DGV:MoveToNextQuest()
+				end 				
 			end
 		end
 		

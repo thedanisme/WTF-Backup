@@ -1,8 +1,8 @@
 
 --------------------------------------------------------------------------------
 -- TODO List:
--- - p1 proximity range: 5?
 -- - TouchOfCorruption doesnt stack on normal. Do we need warnings for that?
+-- - SummonNightmareHorror cd
 
 --------------------------------------------------------------------------------
 -- Module Declaration
@@ -18,7 +18,9 @@ mod.respawnTime = 30
 -- Locals
 --
 
+local mobCollector = {}
 local fixateOnMe = nil
+local insidePhase = 1
 local deathglareMarked = {} -- save GUIDs of marked mobs
 local deathglareMarks  = { [6] = true, [5] = true, [4] = true, [3] = true } -- available marks to use
 
@@ -30,6 +32,12 @@ local L = mod:GetLocale()
 if L then
 	L.nightmare_horror = -13188 -- Nightmare Horror
 	L.nightmare_horror_icon = 209387 -- Seeping Corruption icon
+
+	L.corruptor_tentacle = - -13191
+	L.corruptor_tentacle_icon = 208929 -- Spew Corruption icon
+
+	L.deathglare_tentacle = -13190
+	L.deathglare_tentacle_icon = 208697 -- Mind Flay icon
 
 	L.custom_off_deathglare_marker = "Deathglare Tentacle marker"
 	L.custom_off_deathglare_marker_desc = "Mark Deathglare Tentacles with {rt6}{rt5}{rt4}{rt3}, requires promoted or leader.\n|cFFFF0000Only 1 person in the raid should have this enabled to prevent marking conflicts.|r\n|cFFADFF2FTIP: If the raid has chosen you to turn this on, having nameplates enabled or quickly mousing over the spears is the fastest way to mark them.|r"
@@ -44,7 +52,7 @@ function mod:GetOptions()
 	return {
 		--[[ Stage One ]]--
 		-- Dominator Tentacle
-		208689, -- Ground Slam
+		{208689, "SAY", "FLASH"}, -- Ground Slam
 		{215234, "TANK"}, -- Nightmarish Fury
 
 		-- Nightmare Ichor
@@ -64,8 +72,9 @@ function mod:GetOptions()
 		"custom_off_deathglare_marker",
 
 		--[[ Stage Two ]]--
-		{209915, "COUNTDOWN"}, -- Stuff of Nightmares
-		-- 210781, -- Dark Reconstitution // using Stuff of Nightmares as P2 bar
+		209915, -- Stuff of Nightmares
+		{210781, "COUNTDOWN"}, -- Dark Reconstitution
+		223121, -- Final Torpor
 		{215128, "SAY", "FLASH", "PROXIMITY"}, -- Cursed Blood
 
 		"berserk",
@@ -74,6 +83,7 @@ function mod:GetOptions()
 		[210099] = -13186, -- Nightmare Ichor
 		["nightmare_horror"] = -13188, -- Nightmare Horror (this looks like shit)
 		[208929] = -13191, -- Corruptor Tentacle
+		[208697] = -13190, -- Deathglare Tentacle
 		[209915] = -13192, -- Stage Two
 		["berserk"] = "general",
 	}
@@ -98,24 +108,28 @@ function mod:OnBossEnable()
 	self:Log("SPELL_AURA_APPLIED_DOSE", "EyeOfFate", 210984)
 
 	-- Corruptor Tentacle
-	self:Log("SPELL_AURA_APPLIED", "SpewCorruption", 208929)
+	self:Log("SPELL_CAST_START", "CorruptorTentacleSpawn", 208929) -- They start casting Spew Corruption instantly
+	self:Log("SPELL_CAST_SUCCESS", "SpewCorruption", 208929)
 
 	-- Deathglare Tentacle
-	self:Log("SPELL_CAST_START", "MindFlay", 208697)
+	self:Log("SPELL_CAST_START", "MindFlay", 208697) -- Also used for spawn messages
 	self:Death("DeathglareDeath", 105322)
 
 	--[[ Stage Two ]]--
 	self:Log("SPELL_AURA_APPLIED", "StuffOfNightmares", 209915)
 	self:Log("SPELL_AURA_REMOVED", "StuffOfNightmaresRemoved", 209915)
 	self:Log("SPELL_CAST_START", "DarkReconstitution", 210781)
+	self:Log("SPELL_CAST_START", "FinalTorpor", 223121)
 	self:Log("SPELL_AURA_APPLIED", "CursedBlood", 215128)
 	self:Log("SPELL_AURA_REMOVED", "CursedBloodRemoved", 215128)
 end
 
 function mod:OnEngage()
+	wipe(mobCollector)
 	fixateOnMe = nil
+	insidePhase = 1
 	self:CDBar(208689, 11.5) -- Ground Slam
-	self:Bar("nightmare_horror", 69, L.nightmare_horror, L.nightmare_horror_icon) -- Summon Nightmare Horror
+	self:Bar("nightmare_horror", 85, L.nightmare_horror, L.nightmare_horror_icon) -- Summon Nightmare Horror
 
 	wipe(deathglareMarked)
 	if self:GetOption("custom_off_deathglare_marker") then
@@ -168,7 +182,7 @@ function mod:RAID_BOSS_WHISPER(_, msg, sender)
 end
 
 function mod:GroundSlam(args)
-	-- XXX Do we want a message with the target(s)? They only have 2s to react, personal warning is in RAID_BOSS_WHISPER
+	-- Personal warning is in RAID_BOSS_WHISPER above
 	self:CDBar(args.spellId, 20.5)
 end
 
@@ -205,16 +219,21 @@ function mod:TouchOfCorruption(args)
 	end
 end
 
-function mod:NightmareExplosion(args)
-	if fixateOnMe then -- Explosion has a small radius, you could only get hit if you are fixated and near the Eye
-		self:Message(args.spellId, "Important", nil, CL.casting:format(args.spellName))
+do
+	local prev = 0
+	function mod:NightmareExplosion(args)
+		local t = GetTime()
+		if fixateOnMe and t-prev > 3 then -- Explosion has a small radius, you could only get hit if you are fixated and near the Eye
+			prev = t
+			self:Message(args.spellId, "Important", nil, CL.casting:format(args.spellName))
+		end
 	end
 end
 
 -- Nightmare Horror
 function mod:SummonNightmareHorror(args)
 	self:Message("nightmare_horror", "Important", "Info", CL.spawned:format(self:SpellName(L.nightmare_horror)), L.nightmare_horror_icon)
-	self:Bar("nightmare_horror", 220, L.nightmare_horror, L.nightmare_horror_icon) -- Summon Nightmare Horror
+	self:Bar("nightmare_horror", 220, L.nightmare_horror, L.nightmare_horror_icon) -- Summon Nightmare Horror < TODO beta timer, need live data
 	if self:Tank() or self:Healer() then
 		self:CDBar(210984, 10) -- Deathglare
 	end
@@ -230,11 +249,25 @@ end
 
 -- Corruptor Tentacle
 do
+	local prev = 0
+	function mod:CorruptorTentacleSpawn(args)
+		if not mobCollector[args.sourceGUID] then
+			mobCollector[args.sourceGUID] = true
+			local t = GetTime()
+			if t-prev > 2 then
+				prev = t
+				self:Message(args.spellId, "Neutral", "Info", CL.spawned:format(L.corruptor_tentacle), L.corruptor_tentacle_icon)
+			end
+		end
+	end
+end
+
+do
 	local list = mod:NewTargetList()
 	function mod:SpewCorruption(args)
 		list[#list+1] = args.destName
 		if #list == 1 then
-			self:ScheduleTimer("TargetMessage", 0.5, args.spellId, list, "Urgent", "Alert")
+			self:ScheduleTimer("TargetMessage", 0.3, args.spellId, list, "Urgent", "Alert")
 		end
 
 		if self:Me(args.destGUID) then
@@ -246,9 +279,21 @@ do
 end
 
 -- Deathglare Tentacle
-function mod:MindFlay(args)
-	if self:Interrupter(args.sourceGUID) then -- avoid spam
-		self:Message(args.spellId, "Attention", "Info", CL.casting:format(args.spellName))
+do
+	local prev = 0
+	function mod:MindFlay(args)
+		if not mobCollector[args.sourceGUID] then
+			mobCollector[args.sourceGUID] = true
+			local t = GetTime()
+			if t-prev > 2 then
+				prev = t
+				self:Message(args.spellId, "Neutral", "Info", CL.spawned:format(L.deathglare_tentacle), L.deathglare_tentacle_icon)
+			end
+		end
+
+		if self:Interrupter(args.sourceGUID) then -- avoid spam
+			self:Message(args.spellId, "Attention", "Info", CL.casting:format(args.spellName))
+		end
 	end
 end
 
@@ -258,16 +303,32 @@ function mod:StuffOfNightmares(args)
 		self:Message(args.spellId, "Neutral", "Info")
 		self:CDBar(208689, 11.5) -- Ground Slam
 		self:Bar("nightmare_horror", 99, L.nightmare_horror, L.nightmare_horror_icon) -- Summon Nightmare Horror
+		insidePhase = insidePhase + 1
 	end
 end
 
 function mod:StuffOfNightmaresRemoved(args)
 	self:Message(args.spellId, "Neutral", "Info", CL.removed:format(args.spellName))
-	self:Bar(args.spellId, 60) -- 60s Intermission
+
+	self:StopBar(L.nightmare_horror)
+
+	-- The boss casts the "Intermission ending" spell after 10s in the phase, but
+	-- we want the bars as soon as the phase starts. This requires hard coding the
+	-- spell ids.
+	-- Intermission 1: Dark Reconstitution (210781), 50+10s (heroic)
+	-- Intermission 2: FinalTorpor (223121), 90+10s (heroic)
+	-- In mod:DarkReconstitution() and mod:FinalTorpor() we overwrite the bars
+	-- started here, just to make sure. It's just me being paranoid.
+	local intermissionSpellId = insidePhase == 1 and 210781 or 223121
+	self:Bar(intermissionSpellId, insidePhase == 1 and 60 or 100, CL.cast:format(self:SpellName(intermissionSpellId)))
 end
 
 function mod:DarkReconstitution(args)
-	self:Bar(209915, 50) -- cast after 10s in phase, so only fine tuning StuffOfNightmares bar
+	self:Bar(args.spellId, 50, CL.cast:format(args.spellName)) -- cast after 10s in phase, overwriting bar started in mod:StuffOfNightmaresRemoved()
+end
+
+function mod:FinalTorpor(args)
+	self:Bar(args.spellId, 90, CL.cast:format(args.spellName)) -- cast after 10s in phase, overwriting bar started in mod:StuffOfNightmaresRemoved()
 end
 
 do

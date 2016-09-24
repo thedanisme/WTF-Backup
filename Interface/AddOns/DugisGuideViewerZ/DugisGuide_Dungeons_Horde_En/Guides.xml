@@ -91,5 +91,7 @@
 	<Script file="..\DugisGuide_Dungeon_Legion_En\110_Black_Rook_Hold.lua"/>	
 	<Script file="..\DugisGuide_Dungeon_Legion_En\110_Maw_of_Souls.lua"/>
 	<Script file="..\DugisGuide_Dungeon_Legion_En\110_Vault_of_the_Wardens.lua"/>	
+	<Script file="..\DugisGuide_Dungeon_Legion_En\110_The_Arcway.lua"/>	
+	<Script file="..\DugisGuide_Dungeon_Legion_En\110_Court_of_Stars.lua"/>			
 	
 </Ui>

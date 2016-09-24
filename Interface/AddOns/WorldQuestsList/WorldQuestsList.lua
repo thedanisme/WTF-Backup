@@ -1,4 +1,4 @@
-local VERSION = 19
+local VERSION = 20
 
 --[[
 Special icons for rares, pvp or pet battle quests in list
@@ -37,6 +37,11 @@ Artifact weapon color for all artifact power items
 Minor notification for artifact power items that can be earned after reaching next artifact knowledge level
 Dungeon icon for dungeons world quests
 Added options for scale, anchor and arrow
+
+Added tooltip with date for timeleft
+Enigma helper disabled ("/enigmahelper" still works)
+Added "Total AP" text
+Minor fixes
 ]]
 
 local charKey = (UnitName'player' or "").."-"..(GetRealmName() or ""):gsub(" ","")
@@ -50,6 +55,8 @@ local LOCALE =
 		knowledgeTooltip = "** Можно выполнить после повышения уровня знаний вашего артефакта",
 		disableArrow = "Отключить стрелку",
 		anchor = "Привязка",
+		totalap = "Всего силы артефакта: %d",
+		totalapdisable = 'Отключить сумму силы артефакта',
 	} or
 	locale == "deDE" and {
 		gear = "Ausrüstung",
@@ -58,6 +65,8 @@ local LOCALE =
 		knowledgeTooltip = "** Can be completed after reaching next artifact knowledge level",
 		disableArrow = "Disable arrow",
 		anchor = "Anchor",
+		totalap = "Total Artifact Power: %d",
+		totalapdisable = 'Disable "Total AP"',
 	} or
 	locale == "frFR" and {
 		gear = "Équipement",
@@ -66,6 +75,8 @@ local LOCALE =
 		knowledgeTooltip = "** Can be completed after reaching next artifact knowledge level",
 		disableArrow = "Disable arrow",
 		anchor = "Anchor",
+		totalap = "Total Artifact Power: %d",
+		totalapdisable = 'Disable "Total AP"',
 	} or
 	(locale == "esES" or locale == "esMX") and {
 		gear = "Equipo",
@@ -74,6 +85,8 @@ local LOCALE =
 		knowledgeTooltip = "** Can be completed after reaching next artifact knowledge level",
 		disableArrow = "Disable arrow",
 		anchor = "Anchor",
+		totalap = "Total Artifact Power: %d",
+		totalapdisable = 'Disable "Total AP"',
 	} or	
 	locale == "itIT" and {
 		gear = "Equipaggiamento",
@@ -82,6 +95,8 @@ local LOCALE =
 		knowledgeTooltip = "** Can be completed after reaching next artifact knowledge level",
 		disableArrow = "Disable arrow",
 		anchor = "Anchor",
+		totalap = "Total Artifact Power: %d",
+		totalapdisable = 'Disable "Total AP"',
 	} or
 	locale == "ptBR" and {
 		gear = "Equipamento",
@@ -90,6 +105,8 @@ local LOCALE =
 		knowledgeTooltip = "** Can be completed after reaching next artifact knowledge level",
 		disableArrow = "Disable arrow",
 		anchor = "Anchor",
+		totalap = "Total Artifact Power: %d",
+		totalapdisable = 'Disable "Total AP"',
 	} or
 	locale == "koKR" and {
 		gear = "Gear",
@@ -98,6 +115,8 @@ local LOCALE =
 		knowledgeTooltip = "** Can be completed after reaching next artifact knowledge level",
 		disableArrow = "Disable arrow",
 		anchor = "Anchor",
+		totalap = "Total Artifact Power: %d",
+		totalapdisable = 'Disable "Total AP"',
 	} or
 	(locale == "zhCN" or locale == "zhTW") and {
 		gear = "装备",
@@ -106,6 +125,8 @@ local LOCALE =
 		knowledgeTooltip = "** Can be completed after reaching next artifact knowledge level",
 		disableArrow = "Disable arrow",
 		anchor = "Anchor",
+		totalap = "Total Artifact Power: %d",
+		totalapdisable = 'Disable "Total AP"',
 	} or	
 	{
 		gear = "Gear",
@@ -114,6 +135,8 @@ local LOCALE =
 		knowledgeTooltip = "** Can be completed after reaching next artifact knowledge level",
 		disableArrow = "Disable arrow",
 		anchor = "Anchor",
+		totalap = "Total Artifact Power: %d",
+		totalapdisable = 'Disable "Total AP"',
 	}
 
 local filters = {
@@ -212,6 +235,12 @@ WorldQuestList.mapD:SetTexCoord(171/512,203/512,373/512,405/512)
 WorldQuestList.mapD:SetPoint("CENTER",WorldQuestList.mapC)
 WorldQuestList.mapD:Hide()
 
+WorldQuestList.TotalAP = WorldQuestList:CreateFontString(nil,"ARTWORK","GameFontWhite")
+WorldQuestList.TotalAP:SetPoint("TOPLEFT",WorldQuestList,"BOTTOMLEFT",5,-4)
+do
+	local a1,a2 = WorldQuestList.TotalAP:GetFont()
+	WorldQuestList.TotalAP:SetFont(a1,a2,"OUTLINE")
+end
 local ArtifactRelicSubclass = "Artifact Relic"
 
 WorldQuestList:RegisterEvent('ADDON_LOADED')
@@ -482,7 +511,7 @@ local function WorldQuestList_LineName_OnClick(self,button)
 		end
 		
 		local info = line.data
-		if info and info.zoneMapID and GetCurrentMapAreaID() == 1007 then
+		if info and info.zoneMapID and GetCurrentMapAreaID() == 1007 and not IsShiftKeyDown() then
 			WorldQuestList.mapC:Hide()
 			WorldQuestList.mapD:Hide()
 			SetMapByID(info.zoneMapID)
@@ -524,6 +553,25 @@ local function WorldQuestList_LineZone_OnClick(self,button)
 	elseif button == "RightButton" then
 		WorldQuestList_Line_OnClick(self:GetParent(),"RightButton")
 	end
+end
+
+local function WorldQuestList_Timeleft_OnEnter(self)
+	WorldQuestList_Line_OnEnter(self:GetParent())
+	if self._t then
+		local t = time() + self._t * 60
+		t = floor(t / 60) * 60
+		GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+		local format = "%x %X"
+		if date("%x",t) == date("%x") then
+			format = "%X"
+		end
+		GameTooltip:AddLine(date(format,t))
+		GameTooltip:Show()
+	end
+end
+local function WorldQuestList_Timeleft_OnLeave(self)
+	WorldQuestList_Line_OnLeave(self:GetParent())
+	GameTooltip_Hide()
 end
 
 local NAME_WIDTH = 135
@@ -593,6 +641,11 @@ local function WorldQuestList_CreateLine(i)
 	line.name.f:SetScript("OnLeave",WorldQuestList_LineName_OnLeave)
 	line.name.f:SetScript("OnClick",WorldQuestList_LineName_OnClick)
 	line.name.f:RegisterForClicks("LeftButtonDown","RightButtonUp")
+	
+	line.timeleft.f = CreateFrame("Frame",nil,line)
+	line.timeleft.f:SetAllPoints(line.timeleft)
+	line.timeleft.f:SetScript("OnEnter",WorldQuestList_Timeleft_OnEnter)
+	line.timeleft.f:SetScript("OnLeave",WorldQuestList_Timeleft_OnLeave)
 	
 	line.hl = line:CreateTexture(nil, "BACKGROUND")
 	line.hl:SetPoint("TOPLEFT", 0, -1)
@@ -887,6 +940,14 @@ WorldQuestList.optionsDropDown.Button:SetScript("OnClick",function(self)
 			end
 			info.checked = function() return VWQL.Scale == 0.7 end
 			UIDropDownMenu_AddButton(info, level)			
+			
+			info.text = "0.6"
+			info.func = function(_, arg1, _, value)
+				VWQL.Scale = 0.6
+				UpdateScale()
+			end
+			info.checked = function() return VWQL.Scale == 0.6 end
+			UIDropDownMenu_AddButton(info, level)		
 		elseif level == 2 and UIDROPDOWNMENU_MENU_VALUE == 2 then
 			info.notCheckable = false
 			info.isTitle = false
@@ -1119,6 +1180,7 @@ local TableQuestsViewed = {}
 local TableQuestsViewed_Time = {}
 
 function WorldQuestList_Update()
+	WorldQuestList.TotalAP:SetText("")
 	if UnitLevel'player' < 110 then
 		WorldQuestList.sortDropDown:Hide()
 		WorldQuestList.filterDropDown:Hide()
@@ -1193,6 +1255,9 @@ function WorldQuestList_Update()
 			if nextResearch < 0 then
 				nextResearch = nil
 			end
+			if shipmentsReady and shipmentsReady > 0 then
+				nextResearch = 0
+			end
 			break
 		end
 	end
@@ -1216,6 +1281,7 @@ function WorldQuestList_Update()
 	end
 	
 	local result = {}
+	local totalAP = 0
 
 	local taskIconIndex = 1
 	local totalQuestsNumber = 0
@@ -1373,10 +1439,11 @@ function WorldQuestList_Update()
 										rewardSort = ilvl
 									end
 								elseif text and rewardType == 20 and text:find("^"..ITEM_SPELL_TRIGGER_ONUSE) then
-									local ap = tonumber((text:match("%d+[,%d]*") or "?"):gsub(",",""),nil)
+									local ap = tonumber((text:match("%d+[,%d%.]*") or "?"):gsub(",",""):gsub("%.",""),nil)
 									if ap then
 										reward = reward:gsub(":0|t ",":0|t ["..ap.."] ")
 										rewardSort = ap
+										totalAP = totalAP + ap
 									end
 								elseif text and text:find(ITEM_BIND_ON_EQUIP) then
 									isBoeItem = true
@@ -1546,6 +1613,7 @@ function WorldQuestList_Update()
 		
 		line.zone:SetText(data.zone)
 		line.timeleft:SetText(data.timeleft)
+		line.timeleft.f._t = data.time
 		
 		line.questID = data.questID
 		line.numObjectives = data.numObjectives
@@ -1590,6 +1658,10 @@ function WorldQuestList_Update()
 		WorldQuestList.b:SetAlpha(WorldQuestList.b.A or 1)
 		WorldQuestList.backdrop:SetAlpha(1)
 		ViewAllButton:Hide()
+	end
+	
+	if totalAP > 0 and not VWQL.DisableTotalAP then
+		WorldQuestList.TotalAP:SetFormattedText(LOCALE.totalap,totalAP)
 	end
 	
 	if totalQuestsNumber == 0 then
@@ -1891,7 +1963,7 @@ end)
 
 
 local KirinTorHelper = CreateFrame'Frame'
-KirinTorHelper:RegisterEvent('QUEST_ACCEPTED')
+--KirinTorHelper:RegisterEvent('QUEST_ACCEPTED')
 KirinTorHelper:RegisterEvent('QUEST_REMOVED')
 KirinTorHelper:SetScript("OnEvent",function(self,event,arg1,arg2, hideCaster,sourceGUID,sourceName,sourceFlags,sourceFlags2,destGUID,destName,destFlags,destFlags2,spellId)
 	if event == 'QUEST_ACCEPTED' then
@@ -1933,6 +2005,7 @@ C_Timer.After(5,function()
 			S:HandleButton(ViewAllButton, true)
 			S:HandleDropDownBox(WorldQuestList.sortDropDown)
 			S:HandleDropDownBox(WorldQuestList.filterDropDown)
+			S:HandleDropDownBox(WorldQuestList.optionsDropDown)
 			
 			WorldQuestList.backdrop:SetBackdrop({})
 			DEV_CreateBorder(WorldQuestList.backdrop,2)

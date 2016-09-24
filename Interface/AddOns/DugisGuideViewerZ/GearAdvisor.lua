@@ -19,6 +19,17 @@ local BeginAutoroutine, InterruptAutoroutine, YieldAutoroutine, tPool, DoOutOfCo
 	DGV.BeginAutoroutine, DGV.InterruptAutoroutine, DGV.YieldAutoroutine, DGV.tPool, DGV.DoOutOfCombat, DGV.GetRunningAutoroutine
 local firstTimeload = true
 
+local function Repaint(tooltip)
+    tooltip:Show()
+    local tipTextLeft = tooltip:GetName().."TextLeft"
+    for i = 2, tooltip:NumLines() do
+        local fontString = _G[tipTextLeft..i]
+        _, relativeTo, _, xOfs, _ = fontString:GetPoint(0)
+        --fontString:ClearAllPoints()
+        --fontString:SetPoint("TOPLEFT", relativeTo, "BOTTOMLEFT", xOfs, -2)
+    end
+end
+
 DugisGuideViewer.defaultLevelingSpec = {
     ["DEATHKNIGHT"] = {["index"] = 1, ["orderIndex"] = 1},
     ["MONK"] = {["index"] = 3, ["orderIndex"] = 2},
@@ -2161,7 +2172,7 @@ function GA:Initialize()
 		end
 	end
 
-	local function GetCurrentBestInSlot(uniqueInventorySlot, spec, pvp, level, skip, enforceArmorSpecSubclass, uncapped, ignoreLevelRequirement, itemMustWin)
+	local function GetCurrentBestInSlot(uniqueInventorySlot, spec, pvp, level, skip, enforceArmorSpecSubclass, uncapped, ignoreLevelRequirement, itemMustWin, threading)
 		level = level or UnitLevel("player")
 		spec = spec or GetSpecialization()
 		local armorSpecSubclass =  itemMustWin and GetArmorSpecSubclass(GetScoringInfo(spec, pvp))
@@ -2176,6 +2187,13 @@ function GA:Initialize()
 		itemInvariant.skip = skip
 		for control,iteratedItemLink in ItemIterator,itemInvariant do
 			local reqLevel, itemClass, itemSubclass, itemEquipSlot
+            
+            if threading then
+                for k = 1, 100 do
+                    coroutine.yield()
+                end
+            end
+            
 			if not ItemIsBanned(iteratedItemLink, control) then
 				local score, armorSpecStatValue
 				reqLevel, _, _, _, itemEquipSlot, _, _, itemClass, itemSubclass = select(5, GetItemInfo(iteratedItemLink))
@@ -2583,6 +2601,8 @@ function GA:Initialize()
 		--if IsQuestRewardLootRollOrEJItem(link) then
 			local uniqueInventorySlot = GetDefaultUniqueInventorySlot(select(9, GetItemInfo(link)))
 			if uniqueInventorySlot ~= "INVTYPE_TRINKET" or DGV:UserSetting(DGV_SUGGESTTRINKET) then
+        
+            LuaUtils:CreateThread("StandardTooltipAdorner", function()
 				local currentWinningItem, currentWinningScore, currentAltWinner, currentAltScore = GetCurrentBestInSlot(uniqueInventorySlot, criterion.specNum, criterion.pvp, nil, ITEM_ITERATOR_SKIP_ALL_EXTERNAL)
 				if not currentWinningItem or currentWinningScore==0 or score==0 then return end
 				local upgrade, upgradeOver, upgradeOverAlt
@@ -2599,8 +2619,10 @@ function GA:Initialize()
 
 					tooltip:AddLine(L["|TInterface\\AddOns\\DugisGuideViewerZ\\Artwork\\UpgradeArrow:0|t|cff1eff00+%d%%|r upgrade over %s"]:format(upgrade, upgradeOver)) --need fixing
 				end
-			end
-		--end
+
+                Repaint(tooltip)                    
+            end)
+        end
 	end
 
 	local function CoinRewardAdorner(criterion, link, rewardFrame)
@@ -2743,17 +2765,6 @@ function GA:Initialize()
 
 	function GA:IterateWinCriteria()
 		return WinCriteriaIterator, DugisGuideViewer.chardb[DGV_GAWINCRITERIACUSTOM].options
-	end
-
-	local function Repaint(tooltip)
-		tooltip:Show()
-		local tipTextLeft = tooltip:GetName().."TextLeft"
-		for i = 2, tooltip:NumLines() do
-			local fontString = _G[tipTextLeft..i]
-			_, relativeTo, _, xOfs, _ = fontString:GetPoint(0)
-			--fontString:ClearAllPoints()
-			--fontString:SetPoint("TOPLEFT", relativeTo, "BOTTOMLEFT", xOfs, -2)
-		end
 	end
 
 	local function ItemIsInBag(link)
@@ -3008,11 +3019,11 @@ function GA:Initialize()
 			end
 		end
 
-		local function GetItemForTable(uniqueInventorySlot, spec, pvp, enforceArmorSpecSubclass, uncapped)
+		local function GetItemForTable(uniqueInventorySlot, spec, pvp, enforceArmorSpecSubclass, uncapped, threading)
 			local sfo, option, pfo = SpecFromOption(DGV:UserSetting(DGV_GASMARTSETTARGET))
 			spec = spec or sfo
 			pvp = pvp or pfo
-			local winner, winScore, altWinner, altScore, armorSpecStatValue = GetCurrentBestInSlot(uniqueInventorySlot, spec, pvp, nil, ITEM_ITERATOR_SKIP_ALL_EXTERNAL, enforceArmorSpecSubclass, uncapped)
+			local winner, winScore, altWinner, altScore, armorSpecStatValue = GetCurrentBestInSlot(uniqueInventorySlot, spec, pvp, nil, ITEM_ITERATOR_SKIP_ALL_EXTERNAL, enforceArmorSpecSubclass, uncapped, nil, nil, threading)
 			return winner, altWinner, armorSpecStatValue, (winScore or 0)+(altScore or 0)
 		end
 
@@ -3043,7 +3054,7 @@ function GA:Initialize()
 --DGV:DebugFormat("GetSpecDataTable", "dataTable", tostring(dataTable))
 			dataTable.ArmorSpecStatTotal , dataTable.ScoreTotal = 0,0
 			for unique,inv1,inv2 in NextUniqueInventorySlot do
-				local winner, altWinner, armorSpecStatValue, score = GetItemForTable(unique, spec, pvp, enforceArmorSpecSubclass, uncapped)
+				local winner, altWinner, armorSpecStatValue, score = GetItemForTable(unique, spec, pvp, enforceArmorSpecSubclass, uncapped, true)
 				dataTable.ArmorSpecStatTotal = dataTable.ArmorSpecStatTotal + (armorSpecStatValue or 0)
 				dataTable.ScoreTotal = dataTable.ScoreTotal + score
 				dataTable[inv1] = winner

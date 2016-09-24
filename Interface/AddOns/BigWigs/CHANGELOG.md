@@ -1,7 +1,10 @@
 # BigWigs
 
-## [v10.3-2-g999f2f0](https://github.com/BigWigsMods/BigWigs/tree/999f2f06aff1ca4ea97f370e40135c11008dbb89) (2016-09-21) [](#top)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v10.3...999f2f06aff1ca4ea97f370e40135c11008dbb89)
+## [v11.2-5-g9253499](https://github.com/BigWigsMods/BigWigs/tree/92534996b6a519d21bc46f3353d950a22b824633) (2016-09-23) [](#top)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v11.2...92534996b6a519d21bc46f3353d950a22b824633)
 
--   Xavius: Fix missing option key  
--   frFR Update (#38)  
+-   esES update. (#46)  
+-   Cenarius: Fix Nightmare Brambles  
+-   bump DBM version  
+-   Nightmare/Cenarius: Fix brambles error.  
+-   Nightmare: Update locale files, closes #44  

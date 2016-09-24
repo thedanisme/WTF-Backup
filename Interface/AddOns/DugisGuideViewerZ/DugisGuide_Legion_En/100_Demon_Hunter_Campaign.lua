@@ -273,7 +273,7 @@ A Light's Charge |QID|44153| |N|(npc:90417) in {The Violet Citadel} (28.46, 48.2
 C Light's Charge |QID|44153| |N|Place Light's Heart in your Order Hall| |POI|
 T Light's Charge |QID|44153| |N|Class Order Hall| |POI|
 
-N Level 103 Required |N|You need to be at least level 102 to continue with the class campaign quest line| |PL|103|
+N Level 103 Required |N|You need to be at least level 103 to continue with the class campaign quest line| |PL|103|
 
 A The Arcane Way |QID|42593| |N|(npc:98632) in {The Fel Hammer} (59.84, 49.63)| |Z|1052 1| |NPC|98632|
 

@@ -347,7 +347,7 @@ T Maritime Law |QID|37654| |N|(npc:106881) in {Queen's Reprisal} (64.27, 56.08)|
 A The Captain's Foot Locker |QID|37659| |N|(npc:106881) in {Queen's Reprisal} (64.27, 56.08)| |Z|1015 0| |NPC|106881|
 T The Captain's Foot Locker |QID|37659| |N|Captain's Foot Locker in {Queen's Reprisal} (65.65, 56.89)| |Z|1015 0|
 A Fate of the Queen's Reprisal |QID|40794| |N|Captain's Foot Locker in {Queen's Reprisal} (65.65, 56.89)| |Z|1015 0| |FAC|Alliance|
-A Fate of the Queen's Reprisal |QID|42244| |N|Captain's Foot Locker in {Queen's Reprisal} (65.65, 56.89)| |Z|1015 0| |FAC|Alliance|
+A Fate of the Queen's Reprisal |QID|42244| |N|Captain's Foot Locker in {Queen's Reprisal} (65.65, 56.89)| |Z|1015 0| |FAC|Horde|
 
 R Olivian Veil |QID|42238| |N|Travel to the {Olivian Veil} (61.71, 51.11)| |Z|1015 0|
 T Missing Demon |QID|42238| |N|(npc:91166) in the {Olivian Veil} (61.71, 51.11)| |Z|1015 0| |NPC|91166|

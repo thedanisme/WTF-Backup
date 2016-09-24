@@ -3127,7 +3127,6 @@ end
 
 function DugisGuideViewer:TurnOn()
 	if DugisGuideViewer:GuideOn() then return end
-	if WorldMapFrame:IsShown() then HideUIPanel(WorldMapFrame) end
 	print("|cff11ff11" .. "Dugi Guides On" )
 	if not DugisGuideViewer:IsModuleRegistered("Guides") then
 		DugisGuideViewer.chardb.EssentialsMode = 1

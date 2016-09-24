@@ -109,7 +109,7 @@ A Do The Thing! |QID|42396| |N|(npc:107302) in {Sundered Shoals}, he wanders aro
 N (item:(item:137383) |QID|42396.1| |N|Find and collect (item:137383) from the ground (15.94,54.82)| |Z|1033 0|
 T Do The Thing! |QID|42396| |N|(npc:107302) in {Sundered Shoals}, he wanders around the area (15.89,55.00)| |Z|1033 0| |NPC|107302|
 A Mrgls of Endearment |QID|42688| |N|(npc:107302) in {Sundered Shoals}, he wanders around the area (15.89,55.00)| |Z|1033 0| |NPC|107302|
-K (npc:109803) |QID|42688.1| |N|Kill (npc:109803) and collect 4 (item:107302) in {Sundered Shoals} (14.99,54.75)| |Z|1033 0| |NPC|109803|
+K (npc:109803) |QID|42688.1| |N|Kill (npc:109803) and collect a (item:138241), (item:138238), (item:138240) and (item:138239) in {Sundered Shoals} <br/><br/>Note: the drop rate is very very low. You can skip all of (npc:107302)'s and (npc:108389)'s quests safely if you don't want to complete it. (14.99,54.75)| |Z|1033 0| |NPC|109803|
 N (npc:107302) |QID|42688.2| |N|Speak to (npc:107302) to show the fine sands in {Sundered Shoals} (15.21,52.38)| |Z|1033 0| |NPC|107302|
 T Mrgls of Endearment |QID|42688| |N|(npc:107302) in {Sundered Shoals}, he wanders around the area (15.89,55.00)| |Z|1033 0| |NPC|107302|
 A A Mlrglrmg For Grlmrgl |QID|42728| |N|(npc:107302) in {Sundered Shoals}, he wanders around the area (15.89,55.00)| |Z|1033 0| |NPC|107302|
@@ -935,8 +935,20 @@ T Friends With Benefits |QID|44053| |N|(npc:97140) in {Shal'Aran} (36.87, 46.58)
 A Opening the Arcway |QID|42490| |N|(npc:97140) in {Shal'Aran} (36.87, 46.58)| |Z|1033 0| |NPC|97140| |FS|1859, 17000|
 A Beware the Fury of a Patient Elf |QID|43314| |N|(npc:97140) in {Shal'Aran} (36.87, 46.58)| |Z|1033 0| |NPC|97140| |FS|1859, 17000|
 A Long Buried Knowledge |QID|42491| |N|(npc:103155) in {Shal'Aran} (37.00, 46.24)| |Z|1033 0| |NPC|103155| |FS|1859, 17000|
+N Switch Guide |N|Switch to (guide:"1079(110 Mythic)") to complete (qid:42490) and (qid:42491) quests| |QID|42490| |FS|1859, 17000|
+N Switch Guide |N|Switch to (guide:"1079(110 Mythic)") to complete (qid:42490) and (qid:42491) quests| |QID|42491| |FS|1859, 17000|
+T Opening the Arcway |QID|42490| |N|(npc:97140) in {Shal'Aran} (36.87, 46.58)| |Z|1033 0| |NPC|97140| |FS|1859, 17000|
+T Long Buried Knowledge |QID|42491| |N|(npc:103155) in {Shal'Aran} (37.00, 46.24)| |Z|1033 0| |NPC|103155| |FS|1859, 17000|
+
+N Switch Guide |N|Switch to (guide:"1087(110 Mythic)") to complete (qid:43314) quest| |QID|42491| |FS|1859, 17000|
+T Beware the Fury of a Patient Elf |QID|43314| |N|(npc:97140) in {Shal'Aran} (36.87, 46.58)| |Z|1033 0| |NPC|97140| |FS|1859, 17000|
 
 N Gain Reputation |N|You will need 8000/12000 Honored status with (fac:1859) faction to continue| |OID|43309| 
+C Growing Strong |QID|44562| |N|Reach Revered status with with (fac:1859)|
+T Growing Strong |QID|44562| |N|(npc:107126) in {Shal'Aran} (36.85, 46.54)| |Z|1033 0| |NPC|107126|
+A Redemption for the Fallen |QID|44563| |N|(npc:107126) in {Shal'Aran} (36.85, 46.54)| |Z|1033 0| |NPC|107126|
+C Redemption for the Fallen |QID|44563| |N|Reach Exalted status with with (fac:1859)|
+T Redemption for the Fallen |QID|44563| |N|(npc:107126) in {Shal'Aran} (36.85, 46.54)| |Z|1033 0| |NPC|107126|
 
 --A A World of Quests |QID|43341| |N|Auto quest at level 110|
 --C A World of Quests |QID|43341| |N|Earn at least Friendly reputation with the factions of the Broken Isles.| 

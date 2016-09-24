@@ -28,7 +28,7 @@ N Burn Second Trough |QID|14461.2| |N|Use (item:49539) to set fire to the Second
 N Burn Third Trough |QID|14461.3| |N|Use (item:49539) to set fire to the Third Trough in {The Battleboar Pen}<br/><br/>Tip: lure the (npc:36696) close to the trough to set them on fire and kill them for (qid:14459) (45.25, 89.07)| |U|49539| |OBJ|20001|
 C The Battleboars |QID|14459| |N|Go to the pens to the south and kill 10 (npc:36696) in {The Battleboar Pen} (44.94, 88.64)| |NPC|36696|
 
-R Red Cloud Mesa |QID|14460| |N|Travel to {Red Cloud Mesa}|
+R Red Cloud Mesa |QID|14460| |N|Travel to {Red Cloud Mesa} (46.22, 82.71)|
 T The Battleboars |QID|14459| |N|(npc:36694) (46.22, 82.71) in {Red Cloud Mesa}| |NPC|36694|
 T Feed of Evil |QID|14461| |N|(npc:36694) (46.22, 82.71) in {Red Cloud Mesa}| |NPC|36694|
 A Rite of Honor |QID|14460| |N|(npc:36694) (46.22, 82.71) in {Red Cloud Mesa}| |NPC|36694|

@@ -48529,10 +48529,28 @@ function NPC:Initialize()
 [111046] = "Fleet Admiral Tethys",
 [111160] = "Onslaught Apostate",
 [108610] = "Kathra'natir",
+[109374] = "High Inquisitor Whitemane",
+[104640] = "Ancient Sentry Construct",
+[97030] = "Leygazer",
+[98206] = "General Xakal",
+[98207] = "Nal'tira",
+[98205] = "Corstilax",
+[98203] = "Ivanyr",
+[98208] = "Advisor Vandros",
+[98772] = "Dread Felbat",
+[98759] = "Vicious Manafang",
+[98208] = "Advisor Vandros",
+[104215] = "Patrol Captain Gerdo",
+[104217] = "Talixae Flamewreath",
+[106468] = "Ly'leth Lunastre",
+[107486] = "Chatty Rumormonger",
+[107435] = "Suspicious Noble",
+[108151] = "Gerenth the Vile",
+[104218] = "Advisor Melandrus",
 }
 	end
 
-	function NPC:Unload()
+ 	function NPC:Unload()
 		wipe(DugisNPCsEn)
 	end
 

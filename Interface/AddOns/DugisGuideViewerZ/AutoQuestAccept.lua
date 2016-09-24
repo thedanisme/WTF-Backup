@@ -96,7 +96,7 @@ function AQA:Initialize()
 
 	local function GOSSIP_SHOW()
 		DebugPrint("###GOSSIP_SHOW")
-		if WorldMapFrame:IsShown() then HideUIPanel(WorldMapFrame) end
+		if DGV.Modules.MapPreview:IsAnimating() then HideUIPanel(WorldMapFrame) end
 		if not self:canAutomate() then return end
 		
 		local button
@@ -120,7 +120,7 @@ function AQA:Initialize()
 
 	local function QUEST_DETAIL ()
 		DebugPrint("###QUEST_DETAIL")
-		if WorldMapFrame:IsShown() then HideUIPanel(WorldMapFrame) end
+		if DGV.Modules.MapPreview:IsAnimating() then HideUIPanel(WorldMapFrame) end
 		if not self:canAutomate() then return end
 		if not DugisGuideViewer:UserSetting(DGV_AUTOQUESTACCEPT) then return end		
 		QuestInfoDescriptionText:SetAlphaGradient(0, math.huge)
@@ -133,7 +133,7 @@ function AQA:Initialize()
 
 	local function QUEST_COMPLETE ()
 		DebugPrint("###QUEST_COMPLETE")
-		if WorldMapFrame:IsShown() then HideUIPanel(WorldMapFrame) end
+		if DGV.Modules.MapPreview:IsAnimating() then HideUIPanel(WorldMapFrame) end
 		if not self:canAutomate() then return end
 		if not DugisGuideViewer:UserSetting(DGV_AUTOQUESTTURNIN) then return end
 		if GetNumQuestChoices() <= 1 then
@@ -145,7 +145,7 @@ function AQA:Initialize()
 
 	local function QUEST_GREETING ()
 		DebugPrint("###QUEST_GREETING")
-		if WorldMapFrame:IsShown() then HideUIPanel(WorldMapFrame) end
+		if DGV.Modules.MapPreview:IsAnimating() then HideUIPanel(WorldMapFrame) end
 		if not self:canAutomate() then return end
 		
 		local button

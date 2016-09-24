@@ -33,11 +33,11 @@ do
 		args = {
 			countType = {
 				type = "select",
-				name = "Countdown Type",
+				name = L.countdownType,
 				order = 1,
 				values = {
-					normal = "Normal",
-					emphasized = "Emphasized",
+					normal = L.normal,
+					emphasized = L.emphasized,
 				},
 			},
 			desc1 = {
@@ -48,8 +48,8 @@ do
 			},
 			combatLog = {
 				type = "toggle",
-				name = "Automatic Combat Logging",
-				desc = "Automatically start logging combat when a pull timer is started and end it when the encounter ends.",
+				name = L.combatLog,
+				desc = L.combatLogDesc,
 				order = 2,
 				width = "full",
 			},
@@ -96,7 +96,7 @@ do
 			self:SendMessage("BigWigs_Message", self, nil, L.pulling, "Attention", "Interface\\Icons\\ability_warrior_charge")
 			self:SendMessage("BigWigs_Sound", self, nil, "Alarm")
 		elseif timeLeft > 2 and IsEncounterInProgress() then -- Cancel the pull timer if we ninja pulled
-			startPull(0, COMBAT)
+			self:StartPull(0, COMBAT)
 		elseif timeLeft < 11 then
 			if self.db.profile.countType == "normal" then
 				self:SendMessage("BigWigs_Message", self, nil, L.pullIn:format(timeLeft), "Attention")
@@ -215,4 +215,3 @@ SlashCmdList.BIGWIGSPULL = function(input)
 	end
 end
 SLASH_BIGWIGSPULL1 = "/pull"
-
