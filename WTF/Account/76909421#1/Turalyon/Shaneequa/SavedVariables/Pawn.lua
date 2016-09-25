@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0008,
+	["LastVersion"] = 2.0011,
 	["LastPlayerFullName"] = "Shaneequa-Turalyon",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,

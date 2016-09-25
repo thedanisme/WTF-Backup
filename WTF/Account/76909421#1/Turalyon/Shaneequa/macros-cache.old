@@ -41,11 +41,3 @@ VER 3 0100000000000041 "LB/CL" "INV_Misc_QuestionMark"
 #showtooltip
 /use [nomod:alt]Lightning Bolt;[mod:alt]Chain Lightning
 END
-VER 3 01000000000000BB "ZGVMacro3" "0"
-/target Lupe
-/run ZGV:MRM():CG(10,3)
-END
-VER 3 01000000000000BC "ZGVMacro4" "0"
-/target Loup
-/run ZGV:MRM():CG(10,4)
-END
