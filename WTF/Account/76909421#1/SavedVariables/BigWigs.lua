@@ -17,11 +17,36 @@ BigWigs3DB = {
 		},
 		["BigWigs_Plugins_BossBlock"] = {
 		},
-		["BigWigs_Bosses_Shade of Xavius"] = {
-		},
-		["BigWigs_Bosses_Dresaron"] = {
+		["BigWigs_Bosses_Black Rook Hold Trash"] = {
 		},
 		["BigWigs_Plugins_Sounds"] = {
+		},
+		["BigWigs_Plugins_Statistics"] = {
+		},
+		["BigWigs_Bosses_Smashspite"] = {
+		},
+		["BigWigs_Bosses_Amalgam of Souls"] = {
+		},
+		["BigWigs_Plugins_Colors"] = {
+		},
+		["BigWigs_Plugins_Raid Icons"] = {
+		},
+		["BigWigs_Bosses_Kurtalos Ravencrest"] = {
+		},
+		["BigWigs_Plugins_Bars"] = {
+			["profiles"] = {
+				["Default"] = {
+					["BigWigsAnchor_y"] = 274.488895535469,
+					["emphasizeGrowup"] = true,
+					["BigWigsAnchor_x"] = 465.06672133075,
+					["texture"] = "Melli",
+					["barStyle"] = "ElvUI",
+					["BigWigsAnchor_width"] = 175.999877929688,
+					["BigWigsEmphasizeAnchor_x"] = 952.17849527864,
+					["font"] = "Gotham-Narrow",
+					["BigWigsEmphasizeAnchor_y"] = 359.111054702598,
+				},
+			},
 		},
 		["BigWigs_Plugins_Super Emphasize"] = {
 			["profiles"] = {
@@ -30,33 +55,13 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Bosses_Archdruid Glaidalis"] = {
-		},
-		["BigWigs_Plugins_Statistics"] = {
-		},
-		["BigWigs_Bosses_Warlord Parjesh"] = {
-		},
-		["BigWigs_Bosses_King Deepbeard"] = {
-		},
-		["BigWigs_Bosses_Lady Hatecoil"] = {
-		},
-		["BigWigs_Bosses_Serpentrix"] = {
-		},
-		["BigWigs_Plugins_Colors"] = {
-		},
-		["BigWigs_Plugins_Raid Icons"] = {
-		},
-		["BigWigs_Bosses_Wrath of Azshara"] = {
-		},
-		["BigWigs_Plugins_HeroesVoices"] = {
+		["BigWigs_Bosses_Illysanna Ravencrest"] = {
 		},
 		["BigWigs_Plugins_Common Auras"] = {
 		},
-		["BigWigs_Bosses_Oakheart"] = {
-		},
-		["BigWigs_Plugins_Respawn"] = {
-		},
 		["LibDualSpec-1.0"] = {
+		},
+		["BigWigs_Plugins_HeroesVoices"] = {
 		},
 		["BigWigs_Plugins_Proximity"] = {
 			["profiles"] = {
@@ -73,6 +78,15 @@ BigWigs3DB = {
 				},
 			},
 		},
+		["BigWigs_Plugins_Respawn"] = {
+		},
+		["BigWigs_Plugins_Pull"] = {
+			["profiles"] = {
+				["Default"] = {
+					["countType"] = "normal",
+				},
+			},
+		},
 		["BigWigs_Plugins_Messages"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -84,28 +98,6 @@ BigWigs3DB = {
 					["BWEmphasizeCountdownMessageAnchor_y"] = 364.088897705078,
 					["font"] = "Gotham-Narrow",
 					["fontSize"] = 20,
-				},
-			},
-		},
-		["BigWigs_Plugins_Pull"] = {
-			["profiles"] = {
-				["Default"] = {
-					["countType"] = "normal",
-				},
-			},
-		},
-		["BigWigs_Plugins_Bars"] = {
-			["profiles"] = {
-				["Default"] = {
-					["BigWigsAnchor_y"] = 274.488895535469,
-					["emphasizeGrowup"] = true,
-					["BigWigsAnchor_x"] = 465.06672133075,
-					["texture"] = "Melli",
-					["barStyle"] = "ElvUI",
-					["BigWigsAnchor_width"] = 175.999877929688,
-					["BigWigsEmphasizeAnchor_x"] = 952.17849527864,
-					["font"] = "Gotham-Narrow",
-					["BigWigsEmphasizeAnchor_y"] = 359.111054702598,
 				},
 			},
 		},
