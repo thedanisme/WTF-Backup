@@ -29001,7 +29001,8 @@ function TaxiData:Initialize()
 		[1035] = "1014:10:75.18,47.16:1035:1:58.30,24.88:cls:WARRIOR", --Dalaran <-> Skyhold
 		[1057] = "1014:10:67.13,48.17:1057:0:29.92,51.96:cls:SHAMAN", --Dalaran <-> Maelstrom
 		[1050] = "1014:11:27.90,44.48:1050:0:75.37,38.11:cls:WARLOCK", --Dalaran Underbelly <-> Dreadscar Rift
-		[1040] = "1014:10:39.48,57.31:1040:1:49.80,80.71:cls:PRIEST", --Dalaran <-> Halls of Shadow 
+		[1040] = "1014:10:39.48,57.31:1040:1:49.80,80.71:cls:PRIEST:fac:Alliance", --Dalaran <-> Halls of Shadow 
+		[1040] = "1014:10:63.00,17.70:1040:1:49.80,80.71:cls:PRIEST:fac:Horde", --Dalaran <-> Halls of Shadow 		
 		[1054] = "1014:10:67.22,69.48:1054:1:50.69,83.17",
 		--Legion dungeons
 		[1066] = "1014:10:67.50,69.78:1066:1:50.93,82.09", -- The Violet Hold

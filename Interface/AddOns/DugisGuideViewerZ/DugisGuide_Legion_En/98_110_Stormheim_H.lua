@@ -130,14 +130,14 @@ R Forsaken Foothold |QID|38331| |N|Speak to (npc:93687) for a ride back to {Fors
 
 R Valley of the Sword |QID|38331|  |N|Travel to {Valley of the Sword} (41.30, 36.19) (41.83, 43.06)| |Z|1017 0|
 T The Ancient Trials |QID|38459| |N|(npc:96254) in {Valley of the Sword} (41.83, 43.06)| |Z|1017 0| |NPC|96254|
-A Havi's Test |QID|38331| |N|(npc:96254) in the {Valley of the Sword} (43.13, 49.18)| |Z|1017 0| |NPC|96254|
-N Root Vegetables |QID|38331.1| |N|Add Root Vegetables to the stew pot in the {Valley of the Sword} (42.93, 49.14)| |Z|1017 0|
-N Crabs |QID|38331.2| |N|Add Crabs to the stew pot in the {Valley of the Sword} (42.92, 49.34)| |Z|1017 0|
-N Hearty Grains |QID|38331.3| |N|Add Hearty Grains to the stew pot in the {Valley of the Sword} (43.05, 49.41)| |Z|1017 0|
-T Havi's Test |QID|38331| |N|(npc:96254) in the {Valley of the Sword} (43.13, 49.20)| |Z|1017 0| |NPC|96254|
-A Ahead of the Game |QID|39590| |N|(npc:96254) in the {Valley of the Sword} (43.13, 49.20)| |Z|1017 0| |NPC|96254|
-K (npc:96229) |QID|39595| |N|Kill (npc:96229) in the {Valley of the Sword} and loot the (item:128511) for a quest (42.95, 47.58)| |Z|1017 0| |NPC|96229| |L|128511|
-A Blood and Gold |QID|39595| |N|Kill (npc:96229) in the {Valley of the Sword} and loot the (item:128511) to start this quest (42.95, 47.58)| |Z|1017 0| |NPC|96229|
+A Havi's Test |QID|38331| |N|(npc:96254) in the {Valley of the Sword} (41.83, 43.06)| |Z|1017 0| |NPC|96254|
+N Root Vegetables |QID|38331.1| |N|Add Root Vegetables to the stew pot in the {Valley of the Sword} (41.62,42.88)| |Z|1017 0|
+N Crabs |QID|38331.2| |N|Add Crabs to the stew pot in the {Valley of the Sword} (41.58,42.61)| |Z|1017 0|
+N Hearty Grains |QID|38331.3| |N|Add Hearty Grains to the stew pot in the {Valley of the Sword} (41.83,42.73)| |Z|1017 0|
+T Havi's Test |QID|38331| |N|(npc:96254) in the {Valley of the Sword} (41.84,43.06)| |Z|1017 0| |NPC|96254|
+A Ahead of the Game |QID|39590| |N|(npc:96254) in the {Valley of the Sword} (41.84,43.06)| |Z|1017 0| |NPC|96254|
+K (npc:96229) |QID|39595| |N|Kill (npc:96229) in the {Valley of the Sword} and loot the (item:128511) for a quest (43.05,43.42)| |Z|1017 0| |NPC|96229| |L|128511|
+A Blood and Gold |QID|39595| |N|Kill (npc:96229) in the {Valley of the Sword} and loot the (item:128511) to start this quest (43.05,43.42)| |Z|1017 0| |NPC|96229|
 K (npc:90734) |QID|39590.2| |N|Kill (npc:90734) and collect (item:128509) in the {Valley of the Sword} (42.17, 46.06)| |Z|1017 0| |NPC|90734|
 K (npc:90747 |QID|39590.1| |N|Kill (npc:90747) and collect (item:128508) in the {Valley of the Sword} (44.86, 40.70)| |Z|1017 0| |NPC|90747|
 K (npc:96135) |QID|39590.3| |N|Kill (npc:96135) and collect Felskorn Champion's Head in the {Valley of the Sword} (45.20, 48.29)| |Z|1017 0| |NPC|96135|
@@ -440,7 +440,7 @@ C Paid in Lifeblood |QID|39855| |N|Confront (npc:91387) and leave {Helheim} (34.
 
 T Paid in Lifeblood |QID|39855| |N|(npc:92539) in {Valdisdall} (60.16, 50.81)| |Z|1017 0| |NPC|92539|
 A A Heavy Burden |QID|40078| |N|(npc:92539) in {Valdisdall} (60.16, 50.81)| |Z|1017 0| |NPC|92539|
-C A Heavy Burden |QID|40078| |N|Click on the spear and take the fish from (npc:96254)'s Fish Barrel and skewer it on the spear above the fire in {Valdisdall} (60.47, 51.21)| |Z|1017 0| |NPC|96254|
+C A Heavy Burden |QID|40078| |N|Click on npc:96254)'s Fish Barrel to get a fish and skewer it on the spear above the fire in {Valdisdall}| |Z|1017 0| |NPC|96254| |POI|
 T A Heavy Burden |QID|40078| |N|(npc:92539) in {Valdisdall} (60.11, 50.81)| |Z|1017 0| |NPC|92539|
 A Knocking on Valor's Door |QID|40001| |N|(npc:92539) in {Valdisdall} (60.11, 50.81)| |Z|1017 0| |NPC|92539|
 A The Dark Lady's Bidding |QID|38872| |N|(npc:93624) in {Valdisdall} (59.98, 51.33)| |Z|1017 0| |NPC|93624|

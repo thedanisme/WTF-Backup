@@ -10,7 +10,8 @@ R Stormwind City |N|Travel to {Stormwind City} (60.4, 75.3)| |Z|301| |PM|Inscrip
 N Train Apprentice Inscription |N|(npc:30713) (49.8, 74.1)| |Z|301| |PM|Inscription|75| |NPC|30713|
 B (item:39505) |N|(npc:30730) {Inscription Supplies} (49.8, 74.1)| |L|39505| |Z|301| |P|Inscription 1| |NPC|30730|
 
-N Materials Needed |N|140 (item:39334)| |L|39334 140| |P|Inscription 80|
+N Materials Needed |N|140 (item:39334)<br/><b>36 (item:39151)| |L|39334 140| |P|Inscription 80|
+N Materials Needed |N|140 (item:39334)<br/><b>36 (item:39151)| |L|39151 36| |P|Inscription 80|
 N 1-60 (item:39469) |IN| |N|<b>36 (item:39151)| |P|Inscription 60|
 N 60-75 (item:38682) |IN| |N|<b>15 (item:39469)<br/><b>15 (item:39354)| |P|Inscription 75|
 

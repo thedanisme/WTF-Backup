@@ -5,8 +5,8 @@ return [[
 
 R Frostwall |QID|34566| |N|Travel to {Frostwall} (49.15, 41.46)| |Z|976|
 T News from Talador |QID|36494| |N|(npc:78487) in {Frostwall} (45.62, 43.03)| |Z|976| |O| |NPC|78487|
-A It's a Matter of Strategy |QID|34681| |N|(npc:78487) in {Frostwall} (45.62, 43.03)| |Z|976| |O| |NPC|78487|
-A It's a Matter of Strategy |QID|36953| |N|(npc:78487) in {Frostwall} (45.62, 43.03)| |OID|34681| |Z|976| 
+A It's a Matter of Strategy |QID|34681| |N|(npc:78487) in {Frostwall} (45.62, 43.03)| |Z|976| |PRE|36494| |NPC|78487|
+A It's a Matter of Strategy |QID|36953| |N|Command Board in {Frostwall} (49.3, 41.3)| |OID|34681| |Z|976| 
 F Talador |QID|34566| |N|Speak to (npc:79407) (45.84, 50.97) and fly to {Talador}| |Z|976| |NPC|79407| |V|
 
 R Vol'jin's Pride |QID|34566| |N|Travel to {Vol'jin's Pride} (71.07, 29.73)|

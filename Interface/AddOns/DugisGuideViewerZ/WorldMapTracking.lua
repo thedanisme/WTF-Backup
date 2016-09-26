@@ -831,7 +831,7 @@ function WMT:Initialize()
     end
 
 	local function point_OnEnter(self, button)
-		local flightMaster = self.args[1] == 5
+		local flightMaster = self.args and self.args[1] == 5
 		if UIParent:IsVisible() then
 			DugisWaypointTooltip:SetParent(UIParent)
 		else

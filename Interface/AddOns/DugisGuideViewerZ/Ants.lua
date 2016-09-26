@@ -196,6 +196,7 @@ end)
 
 					if x1 --[[and x1~=x2 and y1~=y2]] then
 						local len = math.sqrt((x1-x2)*(x1-x2)*16/9+(y1-y2)*(y1-y2))
+						if len == 0 then return end 
 						local interval = .025/len
 						local p = remainder*interval
 

@@ -252,7 +252,7 @@ function MP:Initialize()
                     poi:SetAlpha(1)
                 end
 				--DGV:DebugFormat("FadeInMap hide non waypoint pois", "waypoint qid", DGV.DugisArrow.waypoints[1].questId, "id", id)
-				if DugisGuideViewer:GetDB(DGV_MAPPREVIEWPOIS)=="All Tracked Quests" then
+				if DugisGuideViewer:GetDB(DGV_MAPPREVIEWPOIS)=="All Tracked Quests" or poi.worldQuest then
 					if id and not IsQuestWatchedDugi(poi) and parentIsMap then
 						poi:Hide()
                         if poi.worldQuest then

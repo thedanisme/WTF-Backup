@@ -54574,7 +54574,6 @@ guideName2LevelRange["The Nighthold (Heroic)"] = {110,113}
 guideName2LevelRange["The Nighthold (Mythic)"] = {110,113} 
 guideName2LevelRange["The Nighthold (Raid Finder)"] = {110,113} 
 
-
     local englishFaction, localizedFaction = UnitFactionGroup("player")
     local _, _, classID = UnitClass("player")
     local playerLevel = UnitLevel("player")
@@ -54668,6 +54667,20 @@ guideName2LevelRange["The Nighthold (Raid Finder)"] = {110,113}
                     textRange = LuaUtils:matchString(guideTitle, "%([0-9]+-[0-9]+")
                     textRange = textRange:gsub("%(", "")
                     textRange = LuaUtils:trim(textRange)
+                end
+                
+                --Support for "(90+)" format
+                if textRange == "" then
+                    textRange = LuaUtils:matchString(guideTitle, "[0-9]*%+")
+                    textRange = textRange:gsub("%+", "")
+                    textRange = LuaUtils:trim(textRange)
+                    
+                    if textRange ~= "" then
+                        local minL = tonumber(textRange)
+                        if minL then
+                            textRange = textRange.."-"..(minL + 2)
+                        end
+                    end
                 end
                 
                 if textRange and LuaUtils:trim(textRange) ~= "" then

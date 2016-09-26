@@ -5,16 +5,16 @@ return [[
 
 R Orgrimmar |N|Travel to {Orgrimmar} (48.11, 71.14)| |Z|321| |QID|26311|
 A Warchief's Command: Twilight Highlands! |QID|28717| |N|Warchief's Command Board (49.8, 76.6)| |Z|321| |O| |OBJ|10014|
-T Warchief's Command: Twilight Highlands! |QID|28717| |N|(npc:86832) in {Orgrimmar} (48.1, 70.70)| |Z|321| |O| |NPC|86832|
+T Warchief's Command: Twilight Highlands! |QID|28717| |N|(npc:14720) in {Grommash Hold} (48.28, 71.01)| |Z|321| |O| |NPC|14720|
 A Unfamiliar Waters |QID|26311| |N|(npc:42637) in {Orgrimmar} (48.11, 71.14)| |Z|321| |NPC|42637|
-A Machines of War |QID|26293| |N|(npc:86832) in {Orgrimmar} (48.1, 70.70)| |Z|321| |NPC|86832|
+A Machines of War |QID|26293| |N|(npc:14720) in {Grommash Hold} (48.28, 71.01)| |Z|321 1| |NPC|14720|
 C Unfamiliar Waters |QID|26311| |N|Talk to (npc:42638) under the stairs in the bar to get (item:58141). You will be attacked by 3 (npc:42707) when you speak to him. Kill them, then talk to him again for the item (71.09, 50.68)| |Z|321| |NPC|42638, 42707|
 T Machines of War |QID|26293| |N|(npc:42672) in {Orgrimmar} (26.20, 78.87)| |Z|181| |NPC|42672|
 A Weapons of Mass Dysfunction |QID|26294| |N|(npc:42672) in {Orgrimmar} (26.20, 78.87)| |Z|181| |NPC|42672|
 C Weapons of Mass Dysfunction |QID|26294| |N|Inspect all the demolishers until you find a fault, then discipline the chief engineer next to the faulty machine (76.01, 3.16)| |Z|321| |NPC|42673, 42671|
 T Unfamiliar Waters |QID|26311| |N|(npc:42637) in {Orgrimmar} (48.09, 71.09)| |Z|321| |NPC|42637|
-T Weapons of Mass Dysfunction |QID|26294| |N|(npc:86832) in {Orgrimmar} (48.17, 70.69)| |Z|321| |NPC|86832|
-A Where Is My Warfleet? |QID|26324| |N|(npc:86832) in {Orgrimmar} (48.17, 70.68)| |Z|321| |NPC|86832|
+T Weapons of Mass Dysfunction |QID|26294| |N|(npc:14720) in {Grommash Hold} (48.28, 71.01)| |Z|321| |NPC|14720|
+A Where Is My Warfleet? |QID|26324| |N|(npc:14720) in {Grommash Hold} (48.28, 71.01)| |Z|321| |NPC|14720|
 
 R Bilgewater Harbor |QID|26324| |N|Travel to {Bilgewater Harbor} (60.15, 50.40)| |Z|181|
 T Where Is My Warfleet? |QID|26324| |N|(npc:42641) in {Bilgewater Harbor} (60.15, 50.40)| |Z|181| |NPC|42641|
@@ -71,11 +71,11 @@ T Muddied Waters |QID|26784| |N|(npc:44024) in {Dragonmaw Port} (73.82, 53.89)| 
 A The Warchief Will be Pleased |QID|26798| |N|(npc:44024) in {Dragonmaw Port} (73.82, 53.89)| |NPC|44024|
 
 R Orgrimmar |N|Take the portal to {Orgrimmar} (73.82, 53.89)| |QID|26830| |WR|
-T The Warchief Will be Pleased |QID|26798| |N|(npc:86832) in {Orgrimmar} (48.16, 70.56)| |Z|321| |NPC|86832|
-A Traitor's Bait |QID|26830| |N|(npc:86832) in {Orgrimmar} (48.16, 70.56)| |Z|321| |NPC|86832|
+T The Warchief Will be Pleased |QID|26798| |N|(npc:14720) in {Grommash Hold} (48.28, 71.01)| |Z|321| |NPC|14720|
+A Traitor's Bait |QID|26830| |N|(npc:14720) in {Grommash Hold} (48.28, 71.01)| |Z|321| |NPC|14720|
 C Traitor's Bait |QID|26830| |N|Go inside the Zepplin tower in {Orgrimmar} and talk to the (npc:44160) to flush out (npc:44120), then kill him (43.73, 63.68)| |Z|321| |NPC|44160, 44120|
-T Traitor's Bait |QID|26830| |N|(npc:86832) in {Orgrimmar} (48.10, 70.67)| |Z|321| |NPC|86832|
-A Return to the Highlands |QID|26840| |N|(npc:86832) in {Orgrimmar} (48.10, 70.67)| |Z|321| |NPC|86832|
+T Traitor's Bait |QID|26830| |N|(npc:14720) in {Grommash Hold} (48.28, 71.01)| |Z|321| |NPC|14720|
+A Return to the Highlands |QID|26840| |N|(npc:14720) in {Grommash Hold} (48.28, 71.01))| |Z|321| |NPC|14720|
 
 R Twilight Highlands |N|Use the portal by the Earthen Ring to travel to {Twilight Highlands} (50.21, 39.35)| |Z|321| |QID|27583| |WR|
 f Dragonmaw Port |N|Grab the flight path for {Dragonmaw Port} from (npc:47174) (73.81, 52.82)| |QID|27583| |NPC|47174| |PL|84|

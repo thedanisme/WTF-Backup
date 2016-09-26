@@ -120,7 +120,7 @@ T With a Little Help... |QID|25661| |N|(npc:41060) (96.80, 72.39) in {Southsea H
 A Carcass Collection |QID|25672| |N|(npc:41060) (96.80, 72.39) in {Southsea Holdfast}| |NPC|41060|
 
 R Mirage Abyss |N|Travel to {Mirage Abyss} (89.90, 72.75)(78.72, 64.41)| |QID|25672| |U|55121|
-C Carcass Collection |QID|25672.1| |N|Collect 10 (item:55121) Just use your boat to search the surface of the water for floating carcasses (89.90, 72.75) (78.72, 64.41) in {Mirage Abyss}| |NPC|48148| |U|55121|
+C Carcass Collection |QID|25672.1| |N|Collect 10 (item:55226) Just use your boat to search the surface of the water for floating carcasses (89.90, 72.75) (78.72, 64.41) in {Mirage Abyss}| |NPC|48148| |U|55121|
 
 R Southsea Holdfast |N|Travel to {Southsea Holdfast} (90.27, 72.63) (96.81, 72.39)| |QID|25704| |U|55121|
 T Carcass Collection |QID|25672| |N|(npc:41060) (96.81, 72.39) in {Southsea Holdfast}| |NPC|41060|

@@ -346,9 +346,9 @@ A In the House of Light and Shadow |QID|44448| |N|(npc:90417) in {Dalaran} (28.4
 C In the House of Light and Shadow |QID|44448| |N|Take the Tears of Elune to Light's Heart in your Order Hall (58.51,43.40)| |Z|1052 1|
 T In the House of Light and Shadow |QID|44448| |N|(npc:90417) in {Dalaran} (28.49,48.33)|  |Z|1014 10| |NPC|90417| 
 ----
-K (npc:100495) |QID|42787.1| |N|Kill the (npc:100495) in {Highmountain} (54.6, 41.4)| |Z|1024 0| |NPC|100495| |POI|
-K (npc:103223) |QID|42787.2| |N|Kill (npc:103223) in {Suramar} (61.2, 39.6)| |Z|1033 0| |NPC|103223| |POI|
-K (npc:92423) |QID|42787.3| |N|Kill (npc:92423) in {Val'sharah} (38.0, 52.8)| |Z|1018 0| |NPC|92423| |POI|
+K (npc:100495) |QID|42787.1| |N|Kill the (npc:100495) in {Highmountain} (54.6, 41.4)| |Z|1024 0| |NPC|100495|
+K (npc:103223) |QID|42787.2| |N|Kill (npc:103223) in {Suramar} (61.2, 39.6)| |Z|1033 0| |NPC|103223|
+K (npc:92423) |QID|42787.3| |N|Kill (npc:92423) in {Val'sharah} (38.0, 52.8)| |Z|1018 0| |NPC|92423|
 T Deal With It Personally |QID|42787| |N|(npc:108782) in {The Fel Hammer} (57.8, 53.6)| |Z|1052 1| |NPC|98632|
 A Malace in Vrykul Land |QID|42735| |N|(npc:108782) in {The Fel Hammer} (57.8, 53.6)| |Z|1052 1| |NPC|98632|
 C Malace in Vrykul Land |QID|42735| |N|Grab a flight from (npc:28674) and find (npc:108648) in {Stormheim} (66.4, 63.6)| |Z|1017 0| |NPC|108648|
@@ -480,16 +480,16 @@ N Enter the Upper Ramparts of the Courtyard |SID|33169|4| |N|Follow the path to 
 N Activate the Moon Guard Portal |SID|33174|5| |N|Click on Deactivated Moon Guard Portal in each waypoint (44.51,51.22) (40.98,51.48) (43.71,50.93)| |Z|1099 0| |QID|44479|
 K (npc:114137) |SID|33184|6| |N|Use (spell:227154) to kill (npc:114137) to end the invasion (43.09,52.18)| |Z|1099 0| |QID|44479| |NPC|114137|
 
-R Mausoleum |QID|44414| |N|Travel to {Mausoleum} (38.75, 53.07)| |Z|1099 0| 
-A Felspawns of Lothros |QID|44414| |N|(npc:113361) in {Mausoleum} (38.75, 53.07)| |Z|1099 0| |NPC|113361|
-C Felspawns of Lothros |QID|44414| |N|Defeat (npc:113786) in {Mausoleum} (40.63, 53.01)| |Z|1099 0| |NPC|113786|
-T Felspawns of Lothros |QID|44414| |N|(npc:113361) in {Mausoleum} (40.42, 53.01)| |Z|1099 0| |NPC|113361|
-A The Red Axe |QID|44415| |N|(npc:113361) in {Mausoleum} (40.42, 53.01)| |Z|1099 0| |NPC|113361|
-C The Red Axe |QID|44415| |N|Close the Unstable Portals and make your way to (npc:113355) (41.37, 49.89)| |Z|1099 0| |NPC|113355|
-T The Red Axe |QID|44415| |N|(npc:113355) in {Mausoleum} (43.80, 50.40)| |Z|1099 0| |NPC|113355|
-A Hunter of Night |QID|44416| |N|(npc:113355) in {Mausoleum} (43.84, 50.41)| |Z|1099 0| |NPC|113355|
-C Hunter of Night |QID|44416| |N|Defeat (npc:113825) in {Mausoleum} (43.29, 50.45)| |Z|1099 0| |NPC|113825|
-T Hunter of Night |QID|44416| |N|(npc:113355) in {Mausoleum} (41.59, 50.53)| |Z|1099 0| |NPC|113355|
+R Mausoleum |QID|44414| |N|Travel to {Mausoleum} (38.75, 53.07)| |Z|1099 0| |TID|44479|
+A Felspawns of Lothros |QID|44414| |N|(npc:113361) in {Mausoleum} (38.75, 53.07)| |Z|1099 0| |NPC|113361| |TID|44479|
+C Felspawns of Lothros |QID|44414| |N|Defeat (npc:113786) in {Mausoleum} (40.63, 53.01)| |Z|1099 0| |NPC|113786| |TID|44479|
+T Felspawns of Lothros |QID|44414| |N|(npc:113361) in {Mausoleum} (40.42, 53.01)| |Z|1099 0| |NPC|113361| |TID|44479|
+A The Red Axe |QID|44415| |N|(npc:113361) in {Mausoleum} (40.42, 53.01)| |Z|1099 0| |NPC|113361| |TID|44479|
+C The Red Axe |QID|44415| |N|Close the Unstable Portals and make your way to (npc:113355) (41.37, 49.89)| |Z|1099 0| |NPC|113355| |TID|44479|
+T The Red Axe |QID|44415| |N|(npc:113355) in {Mausoleum} (43.80, 50.40)| |Z|1099 0| |NPC|113355| |TID|44479|
+A Hunter of Night |QID|44416| |N|(npc:113355) in {Mausoleum} (43.84, 50.41)| |Z|1099 0| |NPC|113355| |TID|44479|
+C Hunter of Night |QID|44416| |N|Defeat (npc:113825) in {Mausoleum} (43.29, 50.45)| |Z|1099 0| |NPC|113825| |TID|44479|
+T Hunter of Night |QID|44416| |N|(npc:113355) in {Mausoleum} (41.59, 50.53)| |Z|1099 0| |NPC|113355| |TID|44479|
 
 R Raven's Glory |QID|44479| |N|Travel to {Raven's Glory} (42.86, 50.56) (42.97, 48.79)| |Z|1099 0|
 C When Good Men Do Nothing |SID|33186| |N|Enter Raven's Glory and use (spell:227236) to destroy the Colossal Siegebreaker in {Raven's Glory} (42.97, 48.79)| |Z|1099 0| |QID|44479|

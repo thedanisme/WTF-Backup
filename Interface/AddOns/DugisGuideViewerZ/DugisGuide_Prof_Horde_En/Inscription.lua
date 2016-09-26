@@ -11,7 +11,8 @@ N Train Apprentice Inscription |N|(npc:46716) (55.1, 55.9)| |Z|321| |PM|Inscript
 B (item:39505) |N|Moraka (55.1, 55.9)| |L|39505| |Z|321| |NPC|30730| |NPC|46718|
 B (item:39354) |N|(npc:46718)<br/><b>Throughout the leveling process, you will need to buy (item:39354). We won't list anymore steps to buy these.  (55.1, 55.9)| |L|39354 82| |Z|321| |P|Inscription 75| |NPC|46718|
 
-N Materials Needed |N|140 (item:39334)| |L|39334 140| |P|Inscription 80| |Z|11|
+N Materials Needed |N|140 (item:39334)<br/><b>36 (item:39151)| |L|39334 140| |P|Inscription 80|
+N Materials Needed |N|140 (item:39334)<br/><b>36 (item:39151)| |L|39151 36| |P|Inscription 80|
 N Train New Recipes.. |N|as needed from (npc:46716) (55.1, 55.9). Tick this step.| |Z|321| |P|Inscription 75| |NPC|46716|
 N 1-60 (item:39469) |IN| |N|<b>36 (item:39151)| |P|Inscription 60|
 N 60-75 (item:38682) |IN| |N|<b>15 (item:39469)<br/><b>15 (item:39354)| |P|Inscription 75|

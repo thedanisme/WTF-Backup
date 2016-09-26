@@ -123,22 +123,21 @@ N Transponder |QID|38060.2| |N|Defend the Transponder in the {Weeping Bluffs} (3
 T Signal Boost |QID|38060| |N|(npc:90749) in the {Weeping Bluffs} (33.79, 46.10)| |Z|1017 0| |NPC|90749|
 A The Ancient Trials |QID|38210| |N|(npc:97306) in the {Weeping Bluffs} (33.78, 45.91)| |Z|1017 0| |NPC|97306|
 
-R Valley of the Sword |QID|38210| |N|Travel to the {Valley of the Sword} (43.11, 49.20)| |Z|1017 0|
-T The Ancient Trials |QID|38210| |N|(npc:96254) in the {Valley of the Sword} (43.11, 49.20)| |Z|1017 0| |NPC|96254|
-A Havi's Test |QID|38331| |N|(npc:96254) in the {Valley of the Sword} (43.13, 49.18)| |Z|1017 0| |NPC|96254|
-N Root Vegetables |QID|38331.1| |N|Add Root Vegetables to the stew pot in the {Valley of the Sword} (42.93, 49.14)| |Z|1017 0|
-N Crabs |QID|38331.2| |N|Add Crabs to the stew pot in the {Valley of the Sword} (42.92, 49.34)| |Z|1017 0|
-N Hearty Grains |QID|38331.3| |N|Add Hearty Grains to the stew pot in the {Valley of the Sword} (43.05, 49.41)| |Z|1017 0|
-T Havi's Test |QID|38331| |N|(npc:96254) in the {Valley of the Sword} (43.13, 49.20)| |Z|1017 0| |NPC|96254|
-A Ahead of the Game |QID|39590| |N|(npc:96254) in the {Valley of the Sword} (43.13, 49.20)| |Z|1017 0| |NPC|96254|
-K (npc:96229) |QID|39595| |N|Kill (npc:96229) in the {Valley of the Sword} and loot the (item:128511) for a quest (42.95, 47.58)| |Z|1017 0| |NPC|96229| |L|128511|
-A Blood and Gold |QID|39595| |N|Kill (npc:96229) in the {Valley of the Sword} and loot the (item:128511) to start this quest (42.95, 47.58)| |Z|1017 0| |NPC|96229|
+R Valley of the Sword |QID|38331|  |N|Travel to {Valley of the Sword} (41.30, 36.19) (41.83, 43.06)| |Z|1017 0|
+T The Ancient Trials |QID|38459| |N|(npc:96254) in {Valley of the Sword} (41.83, 43.06)| |Z|1017 0| |NPC|96254|
+A Havi's Test |QID|38331| |N|(npc:96254) in the {Valley of the Sword} (41.83, 43.06)| |Z|1017 0| |NPC|96254|
+N Root Vegetables |QID|38331.1| |N|Add Root Vegetables to the stew pot in the {Valley of the Sword} (41.62,42.88)| |Z|1017 0|
+N Crabs |QID|38331.2| |N|Add Crabs to the stew pot in the {Valley of the Sword} (41.58,42.61)| |Z|1017 0|
+N Hearty Grains |QID|38331.3| |N|Add Hearty Grains to the stew pot in the {Valley of the Sword} (41.83,42.73)| |Z|1017 0|
+T Havi's Test |QID|38331| |N|(npc:96254) in the {Valley of the Sword} (41.84,43.06)| |Z|1017 0| |NPC|96254|
+A Ahead of the Game |QID|39590| |N|(npc:96254) in the {Valley of the Sword} (41.84,43.06)| |Z|1017 0| |NPC|96254|
+K (npc:96229) |QID|39595| |N|Kill (npc:96229) in the {Valley of the Sword} and loot the (item:128511) for a quest (43.05,43.42)| |Z|1017 0| |NPC|96229| |L|128511|
+A Blood and Gold |QID|39595| |N|Kill (npc:96229) in the {Valley of the Sword} and loot the (item:128511) to start this quest (43.05,43.42)| |Z|1017 0| |NPC|96229|
 K (npc:90734) |QID|39590.2| |N|Kill (npc:90734) and collect (item:128509) in the {Valley of the Sword} (42.17, 46.06)| |Z|1017 0| |NPC|90734|
-K (npc:90747) |QID|39590.1| |N|Kill (npc:90747) and collect (item:128508) in the {Valley of the Sword} (44.86, 40.70)| |Z|1017 0| |NPC|90747|
+K (npc:90747 |QID|39590.1| |N|Kill (npc:90747) and collect (item:128508) in the {Valley of the Sword} (44.86, 40.70)| |Z|1017 0| |NPC|90747|
 K (npc:96135) |QID|39590.3| |N|Kill (npc:96135) and collect Felskorn Champion's Head in the {Valley of the Sword} (45.20, 48.29)| |Z|1017 0| |NPC|96135|
 C Blood and Gold |QID|39595| |N|Kill (npc:96229), (npc:108283) or (npc:108306) and collect 7 (item:128512) from the {Valley of the Sword} (43.06, 44.04)| |Z|1017 0| |NPC|96229, 108283, 108306| |POI|
 C A Worthy Challenger |QID|38442| |N|Optional: Kill any NPCs and destroy totems in the {Valley of the Sword} to complete this bonus objective (43.67, 45.05)| |Z|1017 0| |PL|110| -- Bonus Objective
---T A Worthy Challenger |QID|38442| |N|Field Turn-In| |Z|1017 0| |PL|110| -- Bonus Objective
 
 R Aggramar's Vault |QID|39590| |N|Travel to {Aggramar's Vault} (46.76, 44.48)| |Z|1017 0|
 T Ahead of the Game |QID|39590| |N|(npc:96175)'s head in {Aggramar's Vault} (46.76, 44.48)| |Z|1017 0| |NPC|96175|
@@ -391,7 +390,7 @@ C Paid in Lifeblood |QID|39855| |N|Confront (npc:91387) and leave {Helheim} (34.
 
 T Paid in Lifeblood |QID|39855| |N|(npc:92539) in {Valdisdall} (60.16, 50.81)| |Z|1017 0| |NPC|92539|
 A A Heavy Burden |QID|40078| |N|(npc:92539) in {Valdisdall} (60.16, 50.81)| |Z|1017 0| |NPC|92539|
-C A Heavy Burden |QID|40078| |N|Click on the spear and take the fish from (npc:96254)'s Fish Barrel and skewer it on the spear above the fire in {Valdisdall} (60.47, 51.21)| |Z|1017 0| |NPC|96254|
+C A Heavy Burden |QID|40078| |N|Click on npc:96254)'s Fish Barrel to get a fish and skewer it on the spear above the fire in {Valdisdall}| |Z|1017 0| |NPC|96254| |POI|
 A To Catch a Banshee |QID|39059| |N|(npc:94346) in {Valdisdall} (60.01, 51.29)| |Z|1017 0| |NPC|94346|
 T A Heavy Burden |QID|40078| |N|(npc:92539) in {Valdisdall} (60.11, 50.81)| |Z|1017 0| |NPC|92539|
 A Knocking on Valor's Door |QID|40001| |N|(npc:92539) in {Valdisdall} (60.11, 50.81)| |Z|1017 0| |NPC|92539|
@@ -504,7 +503,7 @@ R Talonrest  |QID|39786| |N|Travel to {Talonrest} (52.00, 63.76) (53.54, 62.91) 
 T A Stone Cold Gamble |QID|39786| |N|(npc:107674) in {Talonrest} (51.35, 57.30)| |Z|1017 0| |NPC|107674|
 T A Stack of Racks |QID|39792| |N|(npc:107675) in {Talonrest} (51.31, 57.16)| |Z|1017 0| |NPC|107675|
 A Put It All on Red |QID|42483| |N|(npc:107674) in {Talonrest} (51.33, 57.27)| |Z|1017 0| |NPC|107674|
-C Put It All on Red |QID|42483| |N|Kill (npc:107917) and collect (item:138024) in {Citrine Bay}. This quest is hard to solo.| |Z|1017 0| |NPC|107674| |POI|
+C Put It All on Red |QID|42483| |N|Kill (npc:107917) and collect (item:138024) in {Citrine Bay}. This quest is hard to solo.| |Z|1017 0| |NPC|107917| |POI|
 T Put It All on Red |QID|42483| |N|(npc:107674) in {Talonrest} (51.33, 57.27)| |Z|1017 0| |NPC|107674|
 
 N Switch Guide |N|Switch to (guide:"1041(98-110)") to complete (qid:40072)| |QID|40072|

@@ -1,6 +1,6 @@
 local Guide = DugisGuideViewer:RegisterModule("DugisGuide_WoD_Horde_En_92_94_Gorgond")
 function Guide:Initialize()
-	function Guide:Load()DugisGuideViewer:RegisterGuide("|cffffd200Draenor|r ", "949(92-94)#949(92-94)#949(92-94)", "941(94-95)#941(94-95)#941(94-95", "Horde", nil, "L", nil, function()
+	function Guide:Load()DugisGuideViewer:RegisterGuide("|cffffd200Draenor|r ", "949(92-94)#949(92-94)#949(92-94)", "941(94-95)#941(94-95)#941(94-95)", "Horde", nil, "L", nil, function()
 return [[
 
 R Bones of Agurak |QID|34066| |N|Travel to {Bones of Agurak} (83.18, 62.77)| |Z|941|

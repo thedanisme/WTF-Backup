@@ -9,6 +9,11 @@ VER 3 0100000000000002 " TotT(Focus)" "INV_Misc_QuestionMark"
 #showtooltip Tricks of the Trade
 /cast [@focus] Tricks of the Trade
 END
+VER 3 010000000000000B "BladeFlurry" "INV_Misc_QuestionMark"
+#showtooltip Blade Flurry
+/cancelaura Blade Flurry
+/use Blade Flurry
+END
 VER 3 0100000000000008 "Pick Pocket" "INV_Misc_Bag_SatchelofCenarius."
 #showtooltip Pick Pocket
 /use [stealth]Pick Pocket

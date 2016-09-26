@@ -124,14 +124,14 @@ T Rain of Destruction |QID|13798| |N|(npc:33760) (73.31, 59.72) (72.21, 57.63) {
 A All Apologies |QID|13841| |N|(npc:33961) (73.36, 62.11) in {Splintertree Post}| |NPC|33961|
 
 R Orgrimmar |N|Travel to {Orgrimmar} (48.11, 70.51)| |Z|321| |QID|13842| |NPC|12616|
-T All Apologies |QID|13841| |N|(npc:86832) (48.11, 70.51) in {Grommash Hold}| |Z|321| |NPC|86832|
-A Dread Head Redemption |QID|13842| |N|(npc:86832) (48.11, 70.51) in {Grommash Hold}| |Z|321| |NPC|86832|
+T All Apologies |QID|13841| |N|(npc:14720) in {Grommash Hold} (48.28, 71.01)| |Z|321| |NPC|14720|
+A Dread Head Redemption |QID|13842| |N|(npc:14720) in {Grommash Hold} (48.28, 71.01)| |Z|321| |NPC|14720|
 
 R Splintertree Post |N|Travel to {Splintertree Post} (51.16, 63.09) (49.61, 59.26)| |QID|13842.1| |Z|321| |NPC|3310|
 C Dread Head Redemption |QID|13842.2| |N|Speak to (npc:44414) and he will turn hostile. Kill him in {Splintertree Mine} (73.32, 59.72) (72.29, 56.81)| |NPC|44414|
 
 R Orgrimmar |N|Travel to {Orgrimmar} (48.11, 70.51)| |Z|321| |QID|13890| |NPC|12616|
-T Dread Head Redemption |QID|13842| |N|(npc:86832) (48.11, 70.51) in {Grommash Hold}| |Z|321| |NPC|86832|
+T Dread Head Redemption |QID|13842| |N|(npc:14720) in {Grommash Hold} (48.28, 71.01)| |Z|321| |NPC|14720|
 
 R Zoram'gar Outpost |N|Travel to {Zoram'gar Outpost}. Speak to (npc:12616) for a free flight. (73.17, 61.60)| |QID|13890| |NPC|12616|
 f Zoram'gar Outpost |N|{Zoram'gar Outpost} (11.17, 34.42)| |PL|20| |QID|13890| |NPC|11901|
