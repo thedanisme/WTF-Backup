@@ -1,2 +1,3 @@
 David Lynch:
+	- Show Felsoul Hold portal on internal map
 	- Show Falanaar portal inside the temple as well

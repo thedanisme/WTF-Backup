@@ -1678,7 +1678,7 @@ local function GetSettingsCategoryFrame(category, parent)
 		ChkBox.Text:SetTextColor(0.5, 0.5, 0.5) 		
 	end	
 	
-	if (DugisGuideViewer.tomtomloaded or DugisGuideViewer.mapsterloaded) and SettingsDB[DGV_REMOVEMAPFOG].category==category  then
+	if DugisGuideViewer.mapsterloaded and SettingsDB[DGV_REMOVEMAPFOG].category==category  then
 		local ChkBox = _G["DGV.ChkBox"..DGV_REMOVEMAPFOG]		
 
 		ChkBox:SetChecked(false)

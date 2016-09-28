@@ -56,7 +56,8 @@ function QuestPOI:Initialize()
         
 		return false
 	end	
-
+--/run DugisGuideViewer.Modules.QuestPOI:ObjectivesChanged()
+--/dump DugisGuideViewer.Modules.DugisArrow:getFinalWaypoint()
 	function QuestPOI:ObjectivesChanged()
 		if DGV:UserSetting(DGV_SHOWCORPSEARROW) and UnitIsDeadOrGhost("player") then 
 			local desc = L["My Corpse"]
@@ -147,6 +148,7 @@ function QuestPOI:Initialize()
 			--reset = true
 			local title = C_TaskQuest.GetQuestInfoByQuestID(worldQuestID);
 			_, map = C_TaskQuest.GetQuestZoneID(worldQuestID)
+			if GetCurrentMapAreaID() ~= map then return end
 			--LuaUtils:DugiSetMapByID(map)
 			--floor = GetCurrentMapDungeonLevel()
 			local x, y = C_TaskQuest.GetQuestLocation(worldQuestID)
@@ -155,7 +157,7 @@ function QuestPOI:Initialize()
 				title = "|cffffd200"..title.."|r"..L[" (World Quest)"]
 			end
 			
-			if lastWaypoint ~= x and x and title then
+			if x and lastWaypoint ~= x and x > 0 and title then
 				DGV:RemoveAllWaypoints()
 				DGV:AddCustomWaypoint(x, y, title, map, floor, worldQuestID)		
 				lastWaypoint = x

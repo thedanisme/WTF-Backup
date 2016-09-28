@@ -341,7 +341,7 @@ function WMT:Initialize()
 	function DataProviders.Battlemaster:GetNPC(trackingType, location, npc)
 		return npc
 	end
-	
+	--Comment Start for DQE	
 	function DataProviders.Achievement:ProvidesFor(trackingType)
 		return trackingType=="A"
 	end
@@ -468,7 +468,7 @@ function WMT:Initialize()
 				function() return DGV.chardb.RareCreatureTrackingEnabled end,
 				function(value) DGV.chardb.RareCreatureTrackingEnabled = value end
 	end
-	
+	--Comment end for DQE
 	local petJournalLookup = {}
 	--_G["BATTLE_PET_NAME_"..i]
 	function DGV:PopulatePetJournalLookup()
@@ -796,7 +796,7 @@ function WMT:Initialize()
         end
 
 		DugisWaypointTooltip:SetWidth(160) 
-		DugisWaypointTooltipTextLeft1:SetWidth(160)		
+		DugisWaypointTooltipTextLeft1:SetWidth(150)		
         
         local textHeight = DugisWaypointTooltip:GetHeight()
         DugisWaypointTooltip:SetHeight(DugisWaypointTooltip:GetWidth() + textHeight - 15)

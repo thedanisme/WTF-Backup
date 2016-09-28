@@ -128,6 +128,50 @@ A Return to the Grove |QID|38323| |N|(npc:100573) in {The Archdruid's Den} (62.3
 R Moonclaw Vale |QID|39354| |N|Travel to the {Moonclaw Vale} (62.19, 72.50)| |Z|1018 0|
 C Moonclaw Vale |QID|39393| |N|Kill any NPCs and free trapped Druids in the {Moonclaw Vale} (62.19, 72.50)| |Z|1018 0| |PL|110| -- Bonus Objective
 
+R Grizzleweald |TID|42884| |N|Travel to {Grizzleweald} (65.96,76.76) (64.66,74.32) (66.68,77.27)| |Z|1018 0| 
+A All Grell Broke Loose |QID|42883| |N|(npc:109631) in {Grizzleweald} (66.68,77.27)| |Z|1018 0| |NPC|109631|
+A Grassroots Effort |QID|42884| |N|(npc:109631) in {Grizzleweald} (66.68,77.27)| |Z|1018 0| |NPC|109631|
+A Grell to Pay |QID|42865| |N|(npc:109631) in {Grizzleweald} (66.68,77.27)| |Z|1018 0| |NPC|109631|
+A Moist Around the Hedges |QID|42857| |N|Moist Grizzlecomb in {Grizzleweald} (66.82,75.67)| |Z|1018 0|
+N As you go... |AYG|42865| |N|Collect 5 (item:138788) from the ground and kill 8 (npc:109045)| |QID|42857|
+C Grassroots Effort |QID|42884.1| |N|(68.22,74.44) (68.71,73.86) (68.67,73.43) (68.65,72.66) (67.50,72.38)| |Z|1018 0|
+K (npc:109073) |QID|42865.1| |N|Kill (npc:109073) in {Grizzleweald } (68.08,71.62)| |Z|1018 0| |NPC|109073|
+C All Grell Broke Loose |QID|42883.1| |N|Kill 8 (npc:109045) in {Grizzleweald} (67.16,74.83)| |Z|1018 0| |NPC|109045|
+C Moist Around the Hedges |QID|42857.1| |N|Collect 5 (item:138788) in {Grizzleweald} (67.16,74.83)| |Z|1018 0|
+T All Grell Broke Loose |QID|42883| |N|(npc:109631) in {Grizzleweald} (66.68,77.27)| |Z|1018 0| |NPC|109631|
+T Grassroots Effort |QID|42884| |N|(npc:109631) in {Grizzleweald} (66.68,77.27)| |Z|1018 0| |NPC|109631|
+T Grell to Pay |QID|42865| |N|(npc:109631) in {Grizzleweald} (66.68,77.27)| |Z|1018 0| |NPC|109631|
+T Moist Around the Hedges |QID|42857| |N|(npc:109631) in {Grizzleweald} (66.68,77.27)| |Z|1018 0| |NPC|109631|
+
+R Lightsong |QID|42747| |N|Travel to {Lightsong} (65.99,76.81)(64.95,79.87) (63.57,83.01) (59.41,84.12)| |Z|1018 0|
+A Emerald Sisters |QID|42748| |N|(npc:108304) in {Lightsong} (59.41,84.12)| |Z|1018 0| |NPC|108304|
+A Where the Wildkin Are |QID|42747| |N|(npc:108304) in {Lightsong} (59.41,84.12)| |Z|1018 0| |NPC|108304|
+
+R Lostlight Grotto |QID|42747| |N|Travel to {Lostlight Grotto} (60.99,82.69) (59.46,82.03)| |Z|1018 0|
+N (item:138441) |QID|42786| |N|Collect a (item:138441) dropped from any enemies in {Lostlight Grotto} (59.46,82.03)| |Z|1018 0| |L|138441| |OID|42751|
+A Grotesque Remains |QID|42786| |N|Auto accept after looting (item:138441) (59.46,82.03)| |Z|1018 0|
+A Dreamcatcher |QID|42750| |N|(npc:108358) in {Lostlight Grotto} (59.46,82.03)| |Z|1018 0| |NPC|108358|
+N As you go... |AYG|42750| |N|Save 6 (npc:108600) in {Lostlight Grotto}| |QID|42748|
+N Siphon the Shriektalon Totem |QID|42750.1| |N|Click Shriektalon Totem in {Lostlight Grotto} (59.26,81.90)| |Z|1018 0|
+N Siphon the Reaverbeak Totem |QID|42750.3| |N|Click Reaverbeak Totem in {Lostlight Grotto} (59.21,80.43) (59.85,79.29) (61.03,80.70)| |Z|1018 0|
+N Siphon the Fearfeather Totem |QID|42750.2| |N|Click Fearfeather Totem in {Lostlight Grotto} (60.51,79.59)(59.19,80.47) (58.26,81.24) (56.29,81.11)| |Z|1018 0|
+C Emerald Sisters |QID|42748.1| |N|Save 6 (npc:108600) in {Lostlight Grotto} (59.67,81.89)| |Z|1018 0|
+C Where the Wildkin Are |QID|42747.1| |N|N|Kill 10 (npc:108259) or (npc:108675) and 8 (npc:108327) (59.67,81.89)| |Z|1018 0| |NPC|108259, 108675, 108327|
+
+R Lightsong |OID|42751| |N|Travel to {Lightsong} (60.33,81.90) (60.97,82.60)| |Z|1018 0|
+T Emerald Sisters |QID|42748| |N|(npc:108304) in {Lightsong} (59.41,84.12)| |Z|1018 0| |NPC|108304|
+T Where the Wildkin Are |QID|42747| |N|(npc:108304) in {Lightsong} (59.41,84.12)| |Z|1018 0| |NPC|108304|
+T Grotesque Remains |QID|42786| |N|(npc:108304) in {Lightsong} (59.41,84.12)| |Z|1018 0| |NPC|108304|
+T Dreamcatcher |QID|42750| |N|(npc:108304) in {Lightsong} (59.41,84.12)| |Z|1018 0| |NPC|108304|
+A Moon Reaver |QID|42751| |N|(npc:108304) in {Lightsong} (59.41,84.12)| |Z|1018 0| |NPC|108304|
+
+R The Undergorge |QID|42751| |N|Travel to {The Undergorge} (59.46,86.18) (62.01,86.00)| |Z|1018 0| 
+K (npc:108641) |QID|42751.1| |N|Kill (npc:108641) in {The Undergorge}<br/><br/>Make sure you are on the lower floor, you can jump down the floor cracks to go through the cave entrance (59.46,86.18) (62.01,86.00) (60.92,85.09) (59.94,84.41) (60.24,82.65)| |Z|1018 0| |NPC|108641|
+N (npc:108642) |QID|42751.2| |N|Free (npc:108642) in {The Undergorge} (60.40,82.62)| |Z|1018 0| |NPC|108642|
+
+R Lightsong |TID|42751| |N|Travel to {Lightsong} (61.97,87.22) (59.33,83.99)| |Z|1018 0|
+T Moon Reaver |QID|42751| |N|(npc:108887) in {Lightsong} (59.33,83.99)| |Z|1018 0| |NPC|108887|
+
 A Wisp in the Willows |QID|39354| |N|(npc:95202) in {Val'sharah} (54.32, 68.26)| |Z|1018 0| |NPC|95202|
 N Lost Wisp |QID|39354.1| |N|Bond with the lost (npc:97972) in {Val'sharah} (54.30, 68.22)| |Z|1018 0| |NPC|97972|
 C Wisp in the Willows |QID|39354.2| |N|Using the (npc:97972), grow 8 Trees, but watch out for the hungry fish in {The Hidden Pools} (49.31, 66.03)(49.00, 65.39)(48.67, 65.37) (48.10, 65.46)(47.83, 64.81)(47.67, 64.09)(48.02, 62.87)(48.24, 62.69) (48.98, 62.86)(49.03, 63.24) (49.24, 63.64)(49.30, 63.94)| |Z|1018 0|
