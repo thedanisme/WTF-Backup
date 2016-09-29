@@ -5306,11 +5306,11 @@ function Guides:Initialize()
 			DGV.guidelist = nil
 			wipe(DGV.headings)
 			DGV.headings = nil
-            
-            wipe(DGV.headingsL2)
-			DGV.headingsL2 = nil 
-            wipe(DGV.headingsL3)
-			DGV.headingsL3 = nil
+                     
+            wipe(DGV.hedingsL2)
+			DGV.hedingsL2 = nil 
+            wipe(DGV.hedingsL3)
+			DGV.hedingsL3 = nil
 		end
 		
 		--wipe(DGV.queryquests)

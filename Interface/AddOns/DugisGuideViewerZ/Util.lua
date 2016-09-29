@@ -213,7 +213,9 @@ GetCreateTable = function(...)
 end
 DGV.GetCreateTable = GetCreateTable
 
-local THEORETICAL_TIME_LIMIT = 20 --100 seems to work w/o "script too long", but tanks FPS
+DGV.THEORETICAL_TIME_LIMIT = 20 --100 seems to work w/o "script too long", but tanks FPS
+DGV.autoroutineTimeLimitOverride = nil
+
 local function GetTicks()
   return debugprofilestop()
 end
@@ -281,7 +283,14 @@ local function AutoroutinesOnUpdate()
             if autoroutines ~= nil then
                 if #autoroutines>0 then
                     local now = GetTicks()
-                    if (now-startTime)>=THEORETICAL_TIME_LIMIT then
+                    
+                    local timeLimit = DGV.THEORETICAL_TIME_LIMIT
+                    
+                    if DGV.autoroutineTimeLimitOverride then
+                        timeLimit = DGV.autoroutineTimeLimitOverride
+                    end
+                    
+                    if (now-startTime)>=timeLimit then
                         return
                     end
                 else

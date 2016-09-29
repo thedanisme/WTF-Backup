@@ -598,4 +598,5 @@ function MP:Initialize()
 -- 			WorldMapButton:SetScript("OnUpdate", orig_WorldMapButton_OnUpdate)
 -- 		end
 	end
+
 end

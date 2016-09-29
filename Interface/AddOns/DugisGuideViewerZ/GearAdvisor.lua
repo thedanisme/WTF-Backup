@@ -2173,6 +2173,8 @@ function GA:Initialize()
 	end
 
 	local function GetCurrentBestInSlot(uniqueInventorySlot, spec, pvp, level, skip, enforceArmorSpecSubclass, uncapped, ignoreLevelRequirement, itemMustWin, threading)
+        DGV.autoroutineTimeLimitOverride = 7
+    
 		level = level or UnitLevel("player")
 		spec = spec or GetSpecialization()
 		local armorSpecSubclass =  itemMustWin and GetArmorSpecSubclass(GetScoringInfo(spec, pvp))
@@ -2287,10 +2289,14 @@ function GA:Initialize()
 				and twoHandWinner~=itemMustWin
 			then
 				control:Pool()
+                DGV.autoroutineTimeLimitOverride = nil
 				return
 			end
 			YieldAutoroutine()
 		end
+        
+        DGV.autoroutineTimeLimitOverride = nil
+        
 		if uniqueInventorySlot~="INVTYPE_FINGER" and uniqueInventorySlot~="INVTYPE_TRINKET" then
 			altScore = nil
 			altWinner = nil

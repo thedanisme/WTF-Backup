@@ -254,7 +254,7 @@ C An Ample Supply |QID|43375| N|Collect 12 (item:139458) from the supply crates 
 T An Ample Supply |QID|43375| |N|(npc:110686) in {Azsuna} (58.54,37.17)| |Z|1015 0| |NPC|110686|
 T Murloc Mind Control |QID|43374| |N|(npc:112487) in {Azsuna} (58.56,37.11)| |Z|1015 0| |NPC|112487| 
 A Problem Salver |QID|43376| |N|(npc:112487) in {Azsuna} (58.56,37.11)| |Z|1015 0| |NPC|112487| 
-C Problem Salver |QID|43376| |N|Use the (item:139463) on (npc:110818) bodies on the ground (58.56,37.11)| |Z|1015 0| |NPC|110818| |U|139463|
+C Problem Salver |QID|43376| |N|Use the (item:139463) on (npc:110818) bodies on the ground (58.56,37.11)| |Z|1015 0| |NPC|110818| |U|139463| |POI|
 T Problem Salver |QID|43376| |N|(npc:110687) in {Azsuna} (47.11,43.99)| |Z|1015 0| |NPC|110687| 
 A Champion: Yalia Sagewhisper |QID|42137| |N|Speak to (npc:110687) to recruit as a follower in {Azsuna} (47.11,43.99)| |Z|1015 0| |NPC|110687| |E|
 A Champion: Zabra Hexx |QID|42138| |N|Speak to (npc:110686) to recruit as a follower in {Azsuna} (47.18,43.99)| |Z|1015 0| |NPC|110686| |E|

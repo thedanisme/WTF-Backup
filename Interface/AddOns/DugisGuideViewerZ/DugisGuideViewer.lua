@@ -265,6 +265,7 @@ local function LoadSettings()
 	DGV_SHOWTOOLTIP = 201
 	DGV_RECORDSIZE = 202
 	DGV_MAPPREVIEWDURATION = 203
+
 	DGV_SMALLFRAMEFONTSIZE = 204
 	DGV_TARGETBUTTONSCALE = 205
 	DGV_ITEMBUTTONSCALE = 206
@@ -560,7 +561,7 @@ local function LoadSettings()
                     [DGV_TARGETBUTTONSCALE]	    = {	category = "Target",	text = "Target Button Size (%.1f)", checked = 1, module = "Target", tooltip = "Size of the target button." },
 					[DGV_ITEMBUTTONSCALE]	    = {	category = "Questing",	text = "Item Button Size (%.1f)",showOnRightColumn = true, checked = 1, tooltip = "Size of the item button." },
                     [DGV_SHOWQUESTABANDONBUTTON]			= { category = "Questing",	showOnRightColumn = true,	text = "Abandon Quests Button",	checked = true,	tooltip = "Mass abandon quests button in your quest log to automatically abandon all quests by their category or zone",},
-                    [DGV_SUGGESTTRINKET]			= { category = "Gear Set",	showOnRightColumn = true,	text = "Suggest Trinkets",	checked = true,	tooltip = "A trinket is scored by its stats and item level but not the 'use' or special effect which can make the trinket suggestion inaccurate.\n\nUnticking this setting will disable the trinkets suggestion.",},					
+                    [DGV_SUGGESTTRINKET]			= { category = "Gear Set",	showOnRightColumn = true,	text = "Suggest Trinkets",	checked = false,	tooltip = "A trinket is scored by its stats and item level but not the 'use' or special effect which can make the trinket suggestion inaccurate.\n\nUnticking this setting will disable the trinkets suggestion.",},					
                     
                     [DGV_ENABLEDGEARFINDER]			= { category = "Gear Finder",	showOnRightColumn = false,	text = "Enabled Gear Finder",	checked = true,	tooltip = "Gear Finder",},					
                       
@@ -3104,6 +3105,7 @@ function DugisGuideViewer:TurnOnEssentials()
 	if DugisGuideViewer.Modules.Target.Frame then DugisGuideViewer.Modules.Target.Frame:Hide() end
 	if DugisGuideViewer.Modules.ModelViewer.Frame then DugisGuideViewer.Modules.ModelViewer.Frame:Hide() end
 	DugisGuideViewer.Modules.QuestPOI:ObjectivesChangedDelay(3)
+	if DugisGuideViewer_ModelViewer and DugisGuideViewer_ModelViewer:IsShown() then DugisGuideViewer_ModelViewer:Hide() end
 end
 
 function DugisGuideViewer:TurnOff()

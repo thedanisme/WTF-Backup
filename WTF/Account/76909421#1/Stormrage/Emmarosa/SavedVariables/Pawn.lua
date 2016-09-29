@@ -6,6 +6,7 @@ PawnOptions = {
 	["UpgradeTracking"] = false,
 	["LastKeybindingsSet"] = 1,
 }
+PawnMrRobotScaleProviderOptions = nil
 PawnWowheadScaleProviderOptions = {
 	["LastClass"] = "ROGUE",
 	["LastAdded"] = 5,

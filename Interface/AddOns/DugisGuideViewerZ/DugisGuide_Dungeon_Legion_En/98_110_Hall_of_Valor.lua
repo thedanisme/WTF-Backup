@@ -9,7 +9,7 @@ T The Brewmaster |QID|41040| |N|(npc:103049) in the {The High Gate} (48.97,10.85
 A Odyn's Cauldron |QID|41059| |N|(npc:103049) in the {The High Gate} (48.97,10.85)| |Z|1041 2| |NPC|103049| |O| |C|Monk|
 N (item:134005) |QID|41059.1| |N|Collect (item:134005)  in the {Halls of Valor} (41.94,66.38)| |Z|1041 2| |O| |C|Monk|
 K (npc:95833) |SID|28995| |N|Kill (npc:95833) in {Seat of Ascension}<br/><b>(npc:95833) needs to be moved between (npc:97202) and (npc:97219) to reduce her buffs<br/><b>Run to center of the storm during (spell:200901)<br/><b>Avoid the orbs of light during (spell:192307)(53.92, 67.49)(64.15, 84.56)| |Z|1041 2| |NPC|95833|
-N (item:139485) |QID|43377| |N|Collect (item:139485) from (npc:95833) (64.15, 84.56)| |Z|1041 2| |NPC|95833| |C|Priest| |O|
+N (item:139485) |QID|43377.1| |N|Collect (item:139485) from (npc:95833) (64.15, 84.56)| |Z|1041 2| |NPC|95833| |C|Priest| |O|
 K (npc:96647) |QID|42240.1| |N|Kill (npc:96647) in {Fields of the Eternal Hunt}<br/><b>Rare elite NPC only available if the world quest (qid:42240) is available.<br/><b>Don't stand in front of him to avoid (spell:199394) (27.74, 59.48)| |Z|1041 1| |O| |NPC|96647|
 K (npc:95674) |SID|28996| |N|Kill (npc:95674) in {Fields of the Eternal Hunt} (56.91, 63.38)<br/><b>Avoid standing near players with (spell:196497)<br/><b>Stand close together during (spell:196512)<br/><b>Run away from (npc:95674) if you're affect by (spell:196838)| |Z|1041 1| |NPC|95674|
 N (item:139469) |QID|44075.1| |N|Collect (item:139469) from (npc:95674) (56.91, 63.38)| |Z|1041 1| |NPC|95674| |C|Druid| |O|

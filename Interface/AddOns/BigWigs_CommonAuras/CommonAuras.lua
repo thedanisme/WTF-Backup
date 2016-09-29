@@ -523,7 +523,10 @@ function mod:PLAYER_REGEN_DISABLED()
 end
 
 function mod:BigWigs_OnBossWin()
-	self:SendMessage("BigWigs_StopBars", self)
+	local _, zoneType = GetInstanceInfo()
+	if zoneType == "raid" then
+		self:SendMessage("BigWigs_StopBars", self)
+	end
 end
 
 --------------------------------------------------------------------------------
@@ -546,7 +549,7 @@ end)
 do
 	local prev = ""
 	function mod:UNIT_SPELLCAST_SUCCEEDED(_, unit, spellName, _, castGUID, spellId)
-		if spellId == 226234 and castGUID ~= prev then
+		if spellId == 226241 and castGUID ~= prev then
 			prev = castGUID
 			local nick = self:UnitName(unit, true)
 			message(spellId, L.used_cast:format(nick, spellName))

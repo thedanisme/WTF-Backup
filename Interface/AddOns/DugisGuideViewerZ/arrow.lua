@@ -10,7 +10,7 @@ if DugisGuideViewer.carboniteloaded then
 end
 
 local DugisArrow, L = DGV:RegisterModule("DugisArrow"), DugisLocals
-DugisArrowGlobal = DugisArrow
+DugisArrowGlobal = DugisArrow 
 
 DugisArrow.essential = true
 local _
@@ -2055,7 +2055,7 @@ function DugisArrow:Initialize()
 				end
 			end
 		end
-	end
+	end	
 
 	--local orig_WorldMapQuestPOI_OnClick = WorldMapQuestPOI_OnClick
 	function DugisArrow:Load()

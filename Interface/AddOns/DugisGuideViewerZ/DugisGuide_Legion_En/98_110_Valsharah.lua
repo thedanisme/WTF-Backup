@@ -41,7 +41,7 @@ A Archdruid of Lore |N|(npc:94179) in {Lorlathil} (54.37, 73.52)| |Z|1018 0| |NP
 A Archdruid of Lore |QID|38381| |N|(npc:94179) in {Lorlathil} (54.37, 73.52)| |Z|1018 0| |NPC|94179| |O|
 A Archdruid of Lore |QID|44106| |N|(npc:94179) in {Lorlathil} (54.37, 73.52)| |Z|1018 0| |NPC|94179| |O|
 
-R Lunarwing Shallows |N|Travel to {Lunarwing Shallows} (53.75,79.82)| |Z|1018 0|
+R Lunarwing Shallows |QID|40220| |N|Travel to {Lunarwing Shallows} (53.75,79.82)| |Z|1018 0|
 A Thorny Dancing |QID|40220| |N|(npc:93600) in {Lunarwing Shallows} (53.75,79.82)| |Z|1018 0| |NPC|93600|
 A Spread Your Lunarwings and Fly |QID|40221| |N|(npc:93600) in {Lunarwing Shallows} (53.75,79.82)| |Z|1018 0| |NPC|93600|
 
@@ -128,7 +128,7 @@ A Return to the Grove |QID|38323| |N|(npc:100573) in {The Archdruid's Den} (62.3
 R Moonclaw Vale |QID|39354| |N|Travel to the {Moonclaw Vale} (62.19, 72.50)| |Z|1018 0|
 C Moonclaw Vale |QID|39393| |N|Kill any NPCs and free trapped Druids in the {Moonclaw Vale} (62.19, 72.50)| |Z|1018 0| |PL|110| -- Bonus Objective
 
-R Grizzleweald |TID|42884| |N|Travel to {Grizzleweald} (65.96,76.76) (64.66,74.32) (66.68,77.27)| |Z|1018 0| 
+R Grizzleweald |TID|42884| |N|Travel to {Grizzleweald} (64.66,74.32) (65.96,76.76) (66.68,77.27)| |Z|1018 0| 
 A All Grell Broke Loose |QID|42883| |N|(npc:109631) in {Grizzleweald} (66.68,77.27)| |Z|1018 0| |NPC|109631|
 A Grassroots Effort |QID|42884| |N|(npc:109631) in {Grizzleweald} (66.68,77.27)| |Z|1018 0| |NPC|109631|
 A Grell to Pay |QID|42865| |N|(npc:109631) in {Grizzleweald} (66.68,77.27)| |Z|1018 0| |NPC|109631|
