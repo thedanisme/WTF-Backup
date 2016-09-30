@@ -2,21 +2,21 @@
 HandyNotes_SuramarTelemancyDB = {
 	["profileKeys"] = {
 		["Oenta - Stormrage"] = "Oenta - Stormrage",
-		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
 		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
-		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
 		["Shhbbyisok - Stormrage"] = "Shhbbyisok - Stormrage",
+		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
+		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
 	},
 	["profiles"] = {
 		["Oenta - Stormrage"] = {
 		},
-		["Talthalador - Stormrage"] = {
-		},
 		["Shaneequa - Turalyon"] = {
+		},
+		["Shhbbyisok - Stormrage"] = {
 		},
 		["Emmarosa - Stormrage"] = {
 		},
-		["Shhbbyisok - Stormrage"] = {
+		["Talthalador - Stormrage"] = {
 		},
 	},
 }

@@ -1,3 +1,11 @@
+VER 3 0100000000000003 "Dark Command" "INV_Misc_QuestionMark"
+#showtooltip
+/use [@mouseover,harm][]Dark Command
+END
+VER 3 0100000000000004 "Gorefiend" "INV_Misc_QuestionMark"
+#showtooltip
+/use [@player]Gorefiend's Grasp
+END
 VER 3 0100000000000001 "Interrupt" "INV_Misc_QuestionMark"
 #showtooltip
 /use [nomod] Mind Freeze;[mod]Asphyxiate
