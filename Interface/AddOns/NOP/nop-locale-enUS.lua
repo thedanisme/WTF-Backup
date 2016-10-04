@@ -16,9 +16,9 @@ L["No openable items!"] = true
 L["Reset and move button to middle of screen!"] = true
 L["Use: "] = true
 L["Spell:"] = true
-L["|cFFFF00FFPernametly blacklisted items:"] = true
-L["|cFFFF00FFPernament blacklist is empty"] = true
-L["Pernamently Blacklisted:|cFF00FF00"] = true
+L["|cFFFF00FFPermanently blacklisted items:"] = true
+L["|cFFFF00FFPermanent blacklist is empty"] = true
+L["Permanently Blacklisted:|cFF00FF00"] = true
 L["Session Blacklisted:|cFF00FF00"] = true
 L["Temporary Blacklisted:|cFF00FF00"] = true
 L["|cFFFF0000Error loading tooltip for|r "] = true
@@ -37,7 +37,7 @@ L["Create or remove backdrop around button, need reload UI."] = true
 L["Session skip"] = true
 L["Skipping item last until relog."] = true
 L["Clear Blacklist"] = true
-L["Reset pernament blacklist."] = true
+L["Reset Permanent blacklist."] = true
 L["Zone unlock"] = true
 L["Don't zone restrict openable items"] = true
 L["Profession"] = true
@@ -70,7 +70,7 @@ L["Down"] = true
 L["Left"] = true
 L["Right"] = true
 L["Add new row"] = true
-L["Above or bellow last one"] = true
+L["Above or below last one"] = true
 L["Hot-Key"] = true
 L["Key to use for automatic key binding."] = true
 L["Quest"] = true
@@ -82,8 +82,8 @@ L["CONSOLE_USAGE"] = [=[ [reset|skin|lock|clear|list|skip|glow|zone|quest|show]
 reset - will reset button position to middle of screen
 skin  - will toggle skin of button
 lock  - will lock/unlock button in place
-clear - will reset pernament blacklist
-list  - list pernamently blacklisted items
+clear - will reset Permanent blacklist
+list  - list Permanently blacklisted items
 skip  - toggle right click skip temporary or until relog
 glow  - toggle button glow on zone items
 zone  - toggle zone restriction on items

@@ -199,14 +199,14 @@ function NOP:BlacklistReset() -- reset permanent blacklist
   wipe(NOP.T_CHECK)
   self:ItemShowNew()
 end
-function NOP:BlacklistItem(isPernament,itemID) -- right click will add item into blacklist
+function NOP:BlacklistItem(isPermanent,itemID) -- right click will add item into blacklist
   if itemID then
     local name = GetItemInfo(itemID)
-    if isPernament then
+    if isPermanent then
       if not (type(NOP.DB.T_BLACKLIST) == "table") then NOP.DB.T_BLACKLIST = {} end
       NOP.DB.T_BLACKLIST[0] = true
       NOP.DB.T_BLACKLIST[itemID] = true
-      self.printt(private.L["Pernamently Blacklisted:|cFF00FF00"],name or itemID)
+      self.printt(private.L["Permanently Blacklisted:|cFF00FF00"],name or itemID)
     else
       if not (type(NOP.T_BLACKLIST) == "table") then NOP.T_BLACKLIST = {} end
       NOP.T_BLACKLIST[0] = true -- blacklist is defined

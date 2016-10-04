@@ -21,8 +21,8 @@ function NOP:ProfileLoad() -- LUA stored variables load and init
           ["button"] = {"CENTER", nil, "CENTER", 0, 0}, -- Item Button anchor and location
           ["qb"] = {"CENTER", nil, "CENTER", 0, 0}, -- Quest Bar location if not qb_sticky
           ["qb_sticky"] = true, -- Quest Bar is anchored to Item Button
-          ["T_BLACKLIST"] = {}, -- pernament blacklist for items button
-          ["T_BLACKLIST_Q"] = {}, -- pernament blacklist for quest items
+          ["T_BLACKLIST"] = {}, -- Permanent blacklist for items button
+          ["T_BLACKLIST_Q"] = {}, -- Permanent blacklist for quest items
           ["Skip"] = false,
           ["zoneUnlock"] = true,
           ["glowButton"] = true,
@@ -171,7 +171,7 @@ function NOP:OptionsLoad() -- load options for UI config
           blacklist = {
             name = private.L["Clear Blacklist"],
             order = 13,
-            desc = private.L["Reset pernament blacklist."],
+            desc = private.L["Reset Permanent blacklist."],
             type = "execute",
             func = function() NOP:BlacklistReset() end,
           },
@@ -301,7 +301,7 @@ function NOP:OptionsLoad() -- load options for UI config
             order = 6,
             type = "select",
             name = private.L["Add new row"],
-            desc = private.L["Above or bellow last one"],
+            desc = private.L["Above or below last one"],
             values = { [1] = private.L["Up"], [-1] = private.L["Down"] },
             set = function(info,val) NOP.DB["expand"] = val; NOP:QBUpdate(); end,
             get = function(info) return NOP.DB.expand end,

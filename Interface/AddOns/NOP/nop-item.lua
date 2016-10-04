@@ -9,7 +9,7 @@ function NOP:ItemIsBlacklisted(itemID) -- is item blacklisted?
     self.Verbose(format("ItemID(%d) is temporary blacklisted",itemID))
     return true
   else
-    if NOP.DB["T_BLACKLIST"] and NOP.DB.T_BLACKLIST[itemID] then -- pernament blacklist
+    if NOP.DB["T_BLACKLIST"] and NOP.DB.T_BLACKLIST[itemID] then -- Permanent blacklist
       self.Verbose(format("ItemID(%d) is permanently blacklisted",itemID))
       return true
     end

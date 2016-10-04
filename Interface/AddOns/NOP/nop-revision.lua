@@ -4,7 +4,16 @@
 [*]Hook for skinning addons.[/list]
 
 ]]
---[[Revisions: 06.11
+--[[Revisions: 06.14
+
+06.14 30.09.2016
+
+[list][*]Added mailbox send frame to list of windows to dismiss before item use. Only works when scripts are enabled in options and running scripts are enabled in WoW client UI.
+Ancient mana items for +30,+50,+75,+100,+150,+200 and +300 mana gain.
+German localization by Ragnar_F, thx for pointing at some typo errors, "Permanent" is not favorite word I know.[/list]
+
+]]
+--[[Revisions: 06.12
 
 06.12 19.09.2016
 

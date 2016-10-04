@@ -1,4 +1,4 @@
-local VERSION = 20
+local VERSION = 21
 
 --[[
 Special icons for rares, pvp or pet battle quests in list
@@ -41,6 +41,10 @@ Added options for scale, anchor and arrow
 Added tooltip with date for timeleft
 Enigma helper disabled ("/enigmahelper" still works)
 Added "Total AP" text
+Minor fixes
+
+Fixed highlighting faction for emissary quests (You can do Watchers or Kirin-tor quests for zone emissary)
+Added "Total gold & total order resources" text
 Minor fixes
 ]]
 
@@ -139,10 +143,11 @@ local LOCALE =
 		totalapdisable = 'Disable "Total AP"',
 	}
 
+local orderResName = GetCurrencyInfo(1220)
 local filters = {
 	{LOCALE.gear,2^0},
 	{ARTIFACT_POWER,2^1},
-	{GetCurrencyInfo(1220),2^2},
+	{orderResName,2^2},
 	{LOCALE.blood,2^5},
 	{LOCALE.gold,2^3},
 	{OTHER,2^4},
@@ -193,7 +198,7 @@ hooksecurefunc("TaskPOI_OnClick", TaskPOI_OnClick)
 local WorldQuestList_Width = 450+70
 local WorldQuestList_ZoneWidth = 100
 
-local WorldQuestList = CreateFrame("Frame",nil,WorldMapFrame)
+local WorldQuestList = CreateFrame("Frame","WorldQuestsListFrame",WorldMapFrame)
 WorldQuestList:SetPoint("TOPLEFT",WorldMapFrame,"TOPRIGHT",10,-4)
 WorldQuestList:SetSize(550,300)
 
@@ -237,6 +242,7 @@ WorldQuestList.mapD:Hide()
 
 WorldQuestList.TotalAP = WorldQuestList:CreateFontString(nil,"ARTWORK","GameFontWhite")
 WorldQuestList.TotalAP:SetPoint("TOPLEFT",WorldQuestList,"BOTTOMLEFT",5,-4)
+WorldQuestList.TotalAP:SetJustifyH("LEFT")
 do
 	local a1,a2 = WorldQuestList.TotalAP:GetFont()
 	WorldQuestList.TotalAP:SetFont(a1,a2,"OUTLINE")
@@ -1265,7 +1271,10 @@ function WorldQuestList_Update()
 	local bounties = GetQuestBountyInfoForMapID(1007)
 	local bountiesInProgress = {}
 	for _,bountyData in pairs(bounties or {}) do
-		bountiesInProgress[ bountyData.factionID or -999 ] = true
+		local questID = bountyData.questID
+		if questID and not IsQuestComplete(questID) then
+			bountiesInProgress[ questID ] = true
+		end
 	end
 	
 	local numTaskPOIs = 0
@@ -1281,7 +1290,7 @@ function WorldQuestList_Update()
 	end
 	
 	local result = {}
-	local totalAP = 0
+	local totalAP,totalOR,totalG = 0,0,0
 
 	local taskIconIndex = 1
 	local totalQuestsNumber = 0
@@ -1347,8 +1356,13 @@ function WorldQuestList_Update()
 						if ( factionName ) then
 							faction = factionName
 						end
-						if bountiesInProgress[ factionID ] then
-							factionInProgress = true
+						--if bountiesInProgress[ factionID ] then
+						--	factionInProgress = true
+						--end
+						for bountyQuestID,_ in pairs(bountiesInProgress) do
+							if IsQuestCriteriaForBounty(questID, bountyQuestID) then
+								factionInProgress = true
+							end
 						end
 					end
 					
@@ -1372,6 +1386,8 @@ function WorldQuestList_Update()
 								
 								if bit.band(filters[5][2],ActiveFilter) == 0 then 
 									isValidLine = 0 
+								else
+									totalG = totalG + money
 								end
 							end
 						end
@@ -1395,6 +1411,8 @@ function WorldQuestList_Update()
 								rewardSort = numItems or 0
 								if bit.band(filters[3][2],ActiveFilter) == 0 then 
 									isValidLine = 0 
+								else
+									totalOR = totalOR + (numItems or 0)
 								end
 							end
 						end
@@ -1418,6 +1436,7 @@ function WorldQuestList_Update()
 							
 							inspectScantip:SetQuestLogItem("reward", 1, questID)
 							rewardItemLink = select(2,inspectScantip:GetItem())
+							local isApDisabled = nil
 							for j=2, inspectScantip:NumLines() do
 								local tooltipLine = _G[GlobalAddonName.."WorldQuestListInspectScanningTooltipTextLeft"..j]
 								local text = tooltipLine:GetText()
@@ -1426,6 +1445,7 @@ function WorldQuestList_Update()
 									rewardType = 20
 									if bit.band(filters[2][2],ActiveFilter) == 0 then 
 										isValidLine = 0  
+										isApDisabled = true
 									end
 									if BAG_ITEM_QUALITY_COLORS[6] then
 										rewardColor = BAG_ITEM_QUALITY_COLORS[6]
@@ -1439,11 +1459,18 @@ function WorldQuestList_Update()
 										rewardSort = ilvl
 									end
 								elseif text and rewardType == 20 and text:find("^"..ITEM_SPELL_TRIGGER_ONUSE) then
-									local ap = tonumber((text:match("%d+[,%d%.]*") or "?"):gsub(",",""):gsub("%.",""),nil)
+									local ap
+									if locale == "frFR" then
+										ap = tonumber((text:gsub("%p", ""):match("%d[%d%s]+") or "?"):gsub("%s+", ""),nil)
+									else
+										ap = tonumber((text:match("%d+[,%d%.]*") or "?"):gsub(",",""):gsub("%.",""),nil)
+									end
 									if ap then
 										reward = reward:gsub(":0|t ",":0|t ["..ap.."] ")
 										rewardSort = ap
-										totalAP = totalAP + ap
+										if not isApDisabled then
+											totalAP = totalAP + ap
+										end
 									end
 								elseif text and text:find(ITEM_BIND_ON_EQUIP) then
 									isBoeItem = true
@@ -1660,8 +1687,18 @@ function WorldQuestList_Update()
 		ViewAllButton:Hide()
 	end
 	
-	if totalAP > 0 and not VWQL.DisableTotalAP then
-		WorldQuestList.TotalAP:SetFormattedText(LOCALE.totalap,totalAP)
+	if not VWQL.DisableTotalAP then
+		local fString = ""
+		if totalAP > 0 then
+			fString = fString .. (fString ~= "" and "|n" or "") .. format(LOCALE.totalap,totalAP)
+		end
+		if totalOR > 0 then
+			fString = fString .. (fString ~= "" and "|n" or "") .. format("%s: %d",orderResName,totalOR)
+		end
+		if totalG > 0 then
+			fString = fString .. (fString ~= "" and "|n" or "") .. LOCALE.gold..": "..GetCoinTextureString(totalG)
+		end
+		WorldQuestList.TotalAP:SetText(fString)
 	end
 	
 	if totalQuestsNumber == 0 then

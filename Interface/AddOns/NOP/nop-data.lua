@@ -10,6 +10,13 @@ NOP.T_SPELL_HAS = { -- [itemID] = min-count, table to fetch via GetItemSpell(ite
   [138865] = 1, -- Gladiator's Triumph, Grants 50 Artifact Power to your currently equipped Artifact.
   [201826] = 1, -- Toss the fish back into the water, increasing Fishing skill by 5, up to a max of 800.
   [221474] = 1, -- Toss the fish back into the water, granting 50 Artifact Power to your fishing artifact.
+  [129097] = 1, -- 30 Ancient Mana
+  [140243] = 1, -- 50 Ancient Mana
+  [140401] = 1, -- 75 Ancient Mana
+  [140236] = 1, -- 100 Ancient Mana
+  [140240] = 1, -- 150 Ancient Mana
+  [140242] = 1, -- 200 Ancient Mana
+  [140239] = 1, -- 300 Ancient Mana
 }
 NOP.T_SPELL = { -- [spellID] = {min-count,itemID,{"sub-Zone"},{[mapID]=true,[mapID]=true}}, table for opening via spell, used for multiple items with same spell text but spellID can differ
   [168701] = {1,114105,nil,nil}, -- Create a soulbound item appropriate for your loot specialization, Tormented Trinket
@@ -179,7 +186,9 @@ NOP.T_ITEMS = { -- [itemID] = {min-count,{"sub-Zone","sub-Zone",...} | mapID | {
   [140439] = {1,nil,223722}, -- Sunblossom Pollen
 }
 NOP.T_FRAMES = { -- these frames need to be closed before I can use item on button
-  "MerchantFrame", "VoidStorageFrame", -- Blizzard frames
+  "MerchantFrame", 
+  "VoidStorageFrame", 
+  "MailFrame",
 }
 NOP.T_SPELL_FIND = {} -- ["spell"] = min-count,
 NOP.T_RECIPES_FIND = {} --  [itemID] = {min-count,"pattern"} it will be filled with paterns

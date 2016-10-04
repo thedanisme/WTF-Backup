@@ -123,7 +123,7 @@ NOP.slash_handler = function(msg, editbox) -- /nop handler
   end
   if cmd == "list" then
     if (NOP.DB["T_BLACKLIST"] ~= nil and NOP.DB.T_BLACKLIST[0]) or (NOP.DB["T_BLACKLIST_Q"] ~= nil and NOP.DB.T_BLACKLIST_Q[0])then
-      NOP.printt(private.L["|cFFFF00FFPernametly blacklisted items:"])
+      NOP.printt(private.L["|cFFFF00FFPermanently blacklisted items:"])
       for itemID,count in pairs(NOP.DB.T_BLACKLIST) do
         if itemID and itemID > 0 then
           local name = GetItemInfo(itemID)
@@ -146,7 +146,7 @@ NOP.slash_handler = function(msg, editbox) -- /nop handler
         end
       end
     else
-      NOP.printt(private.L["|cFFFF00FFPernament blacklist is empty"])
+      NOP.printt(private.L["|cFFFF00FFPermanent blacklist is empty"])
     end
     return
   end

@@ -127,7 +127,7 @@ function NOP:QBBlacklist(isPermanent,itemID) -- add quest item to blacklist
       if not NOP.DB["T_BLACKLIST_Q"] then NOP.DB.T_BLACKLIST_Q = {} end
       NOP.DB.T_BLACKLIST_Q[0] = true
       NOP.DB.T_BLACKLIST_Q[itemID] = true
-      self.printt(private.L["Pernamently Blacklisted:|cFF00FF00"],name or itemID)
+      self.printt(private.L["Permanently Blacklisted:|cFF00FF00"],name or itemID)
     else
       NOP.T_BLACKLIST_Q[0] = true -- blacklist is defined
       NOP.T_BLACKLIST_Q[itemID] = true
