@@ -213,7 +213,7 @@ GetCreateTable = function(...)
 end
 DGV.GetCreateTable = GetCreateTable
 
-DGV.THEORETICAL_TIME_LIMIT = 20 --100 seems to work w/o "script too long", but tanks FPS
+DGV.THEORETICAL_TIME_LIMIT = 10 --100 seems to work w/o "script too long", but tanks FPS
 DGV.autoroutineTimeLimitOverride = nil
 
 local function GetTicks()

@@ -1,6 +1,63 @@
+2016-10-04  Tercio  <Tercio>
+
+[fa1be015d48e] [tip]
+* classes/container_combatentes.lua, functions/profiles.lua:
+
+- fix for the empty actor name issue.
+- override spellids is now enabled by default.
+
+
+2016-09-29  Tercio  <Tercio>
+
+[2968efe4233e]
+* core/parser.lua, functions/link.lua:
+
+- akaari's soul workaround.
+
+
+2016-09-26  Tercio  <Tercio>
+
+[7cf881bb5482]
+* plugins/Details_EncounterDetails/Details_EncounterDetails.lua, plugins/Details_EncounterDetails/enUS.lua, plugins/Details_EncounterDetails/frames.lua, plugins/Details_EncounterDetails/images/boss_frame_buttons.tga:
+
+- built-in plugins update.
+
+
+2016-09-25  Tercio  <Tercio>
+
+[c547c07cf6b5]
+* Libs/DF/fw.lua, boot.lua, classes/container_historico.lua, core/control.lua, core/gears.lua, core/parser.lua, core/timemachine.lua, functions/spellcache.lua:
+
+- more fixes for dungeon trash being tag as a dungeon boss.
+- more fixes for item level discovery.
+- more spells added to spell customization.
+
+
+2016-09-22  Tercio  <Tercio>
+
+[1db181ae111b]
+* boot.lua, core/gears.lua, functions/slash.lua:
+
+- Fixed the item level calculation when the player is using a main hand and offhand artifact.
+
+
+[a9bff1c58d2b]
+* boot.lua, classes/container_historico.lua, core/control.lua, functions/profiles.lua, gumps/janela_options.lua:
+
+- added auto erase world segments.
+
+
+[825534ef57aa]
+* boot.lua, core/parser.lua, core/plugins_raid.lua, gumps/janela_info.lua:
+
+- Fixed the avoidance tab on the player detail window for Demon Hunters.
+- Added the tag {target} on custom text for the interrupt announcer.
+- Merging Demon Hunter 'Fury of the Illidari' spell when the consolidade option is enabled under Spell Customization.
+
+
 2016-09-17  Tercio  <Tercio>
 
-[2c7a2bc3671a] [tip]
+[2c7a2bc3671a]
 * boot.lua, classes/classe_damage.lua, core/parser.lua, functions/profiles.lua, functions/spellcache.lua, gumps/janela_options.lua:
 
 - removed soul capacitor trinket fix (WoD).
@@ -224,63 +281,5 @@ hotfixes:
 * images/icons.tga, images/spec_icons_normal.blp, images/spec_icons_normal.tga, images/spec_icons_normal_alpha.blp, images/spec_icons_normal_alpha.tga:
 
 - more image conversion, icons now back to 512x512 atlas.
-
-
-2016-08-02  Tercio  <Tercio>
-
-[a848676abe26]
-* Libs/DF/fw.lua, Libs/DF/panel.lua, boot.lua, classes/classe_instancia_include.lua, core/parser.lua, gumps/janela_options.lua, gumps/janela_principal.lua, images/icons.blp, images/icons.tga:
-
-- added outline options for left text.
-
-
-2016-07-30  Tercio  <Tercio>
-
-[43e65e90073a]
-* boot.lua, classes/container_combatentes.lua, functions/playerclass.lua, functions/spells.lua, images/logotipo.blp, images/spec_icons_normal_alpha.blp:
-
-- fix some images with black background.
-- review on DK, Rogue, POaladin spells for class detection.
-- few fixed on spec detection.
-
-
-2016-07-29  Tercio  <Tercio>
-
-[c639decbc67e]
-* Libs/DF/dropdown.lua, Libs/DF/dropdown.xml, Libs/DF/fw.lua, Libs/DF/panel.lua, Libs/LibGroupInSpecT-1.1/LibGroupInSpecT-1.1.lua, Libs/LibItemUpgradeInfo-1.0/Core.lua, Libs/LibItemUpgradeInfo-1.0/LibItemUpgradeInfo-1.0.toc, Libs/LibItemUpgradeInfo-1.0/LibStub/LibStub.toc, Libs/libs.xml, boot.lua, classes/container_combatentes.lua, core/gears.lua, core/parser.lua, core/plugins_statusbar.lua, functions/skins.lua, gumps/janela_options.lua, gumps/janela_principal.lua, images/skins/classic_skin.blp, images/skins/classic_skin.tga, images/skins/classic_skin_v1.blp, images/skins/classic_skin_v1.tga, images/skins/default_skin.blp, images/skins/default_skin.tga, images/skins/elvui.blp, images/skins/elvui.tga, images/skins/elvui_opaque.blp, images/skins/elvui_opaque.tga, images/skins/flat_skin.blp, images/skins/flat_skin.tga, images/skins/overwatch.blp, images/skins/overwatch.tga, images/skins/simplygray_skin.blp, images/skins/simplygray_skin.tga, startup.lua:
-
-- Fixed some issues with spec detection and LibGroupInSpecT-1.1 has need enabled back again.
-- Fixed an issue with micro displays not loading settings after a logon.
-- Another wave of workarounds to prevent the client image cache bug.
-
-
-2016-07-26  Tercio  <Tercio>
-
-[d3d82024f943]
-* Libs/DF/auras.lua, Libs/DF/fw.lua, Libs/DF/load.xml, Libs/DF/normal_bar.lua, Libs/DF/panel.lua, boot.lua, classes/container_historico.lua, core/parser.lua, images/skins/imperial_skin.blp:
-
-- merging more updates from the beta version.
-
-
-2016-07-22  Tercio  <Tercio>
-
-[b2a98d7b0c78]
-* images/options_window.blp:
-
-- missing options background file.
-
-
-[e1af3fbdb3e8]
-* boot.lua, images/spec_icons_normal.blp, images/spec_icons_normal_alpha.blp:
-
-- Trying a workaround for the wow client's texture cache bug which causes FPS drops.
-
-
-2016-07-21  Tercio  <Tercio>
-
-[8bbc9f45cfcc]
-* boot.lua, core/parser.lua:
-
-- Fixed warlock's Soul Effigy.
 
 

@@ -28,7 +28,8 @@ function AQA:Initialize()
 			target ~= 18166 and
 			target ~= 87391 and
 			target ~= 88570 and			
-			target ~= 20235
+			target ~= 20235 and
+			target ~= 111243			
 			then
 			if DGV:IsModuleLoaded("Guides") and DugisGuideViewer:UserSetting(DGV_AUTOQUESTACCEPTALL) and questId then
 				local index = DGV:GetGuideIndexByQID(questId, "T") or DGV:GetGuideIndexByQID(questId, "A")

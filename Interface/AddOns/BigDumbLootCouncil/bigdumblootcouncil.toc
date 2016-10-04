@@ -1,0 +1,14 @@
+## Interface: 70000
+## Title: |cffA02C2FBig|r Dumb Loot Council
+## Version: 1.4
+## DefaultState: Enabled
+## LoadOnDemand: 0
+## SavedVariables: bdlc_config
+
+init.lua
+functions.lua
+versions.lua
+loot_council.lua
+frames.lua
+core.lua
+config.lua

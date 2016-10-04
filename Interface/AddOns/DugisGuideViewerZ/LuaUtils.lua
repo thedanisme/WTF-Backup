@@ -79,7 +79,13 @@ end
 function LuaUtils:loop(times, func, unpackResults)
     local results = {}
     for i = 1, times do
-      results[i] = func(i)
+      local result = func(i)
+      
+      if result == "break" then
+        break
+      end
+      
+      results[i] = result
     end 
     if unpackResults ~= true then
         return results

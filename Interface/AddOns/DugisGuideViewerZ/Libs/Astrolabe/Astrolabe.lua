@@ -306,6 +306,7 @@ function Astrolabe:TranslateWorldMapPosition( M, F, xPos, yPos, nM, nF )
 			if ( (M==0 or WorldMapSize[0][S]) and (nM==0 or WorldMapSize[0][nS]) ) then
 				mapData = WorldMapSize[M];
 				xPos, yPos = getSystemPosition(M, mapData, F, xPos, yPos);
+				if not xPos then return end
 				if ( M ~= 0 ) then
 					-- translate up to world map if we aren't there already
 					local cont = WorldMapSize[0][S];

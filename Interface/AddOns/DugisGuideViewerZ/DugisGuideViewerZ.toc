@@ -1,7 +1,7 @@
 ## Interface: 70000
-## Title: DugiGuidesViewer |cffffffff8.110|r
+## Title: DugiGuidesViewer |cffffffff8.112|r
 ## Notes: In-Game Guide Viewer. Copyright 2010-2016 UltimateWoWGuide.com
-## Version: 8.110
+## Version: 8.112
 ## X-Website: http://www.ultimatewowguide.com/
 ## X-Email: support@ultimatewowguide.com
 ## X-Category: Quest
@@ -95,6 +95,7 @@ AutoQuestLoot.lua
 PetJournal.lua
 Achievements.lua
 LFG.lua
+GearAdvisorData.lua
 GearAdvisor.lua
 Record.lua
 WorldMapTrackingCollection.lua

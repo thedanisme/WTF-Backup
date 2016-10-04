@@ -759,10 +759,53 @@ function GA:Initialize()
 			return bonus, ratingPerBonus
 		end
 
+
+    --{[itemId1] = {[class1]=true, [class2]=true}, [itemId2] = {[class3]=true, [class4]=true}}
+    GA.itemId2allowedClasses = {}
+    
+    --{[itemId1] = {[spec1]=true, [spec2]=true}, [itemId2] = {[spec3]=true, [spec4]=true}}
+    GA.itemId2allowedSpecs = {}
+    
+    local lines_ = LuaUtils:split(DGV.GearAdvisorItemsFiltering , "\n") 
+
+    LuaUtils:foreach(lines_, function(line)
+        line = line .. " "
+    
+        if line ~= "" then
+            local cells = LuaUtils:split(line , ",") 
+            local cellsAmount = #cells
+            
+            local class = LuaUtils:trim(cells[1])
+            class = string.gsub(class, "\"", "")
+            local spec = LuaUtils:trim(cells[cellsAmount])
+            spec = string.gsub(spec, "\"", "")
+            
+            for i = 2, cellsAmount - 1 do
+                local itemId = LuaUtils:trim(cells[i])
+                itemId = string.gsub(itemId, "\"", "")
+                itemId = tonumber(itemId)
+                
+                if class ~= "" then
+                    if not GA.itemId2allowedClasses[itemId] then
+                        GA.itemId2allowedClasses[itemId] = {}
+                    end
+                    GA.itemId2allowedClasses[itemId][class] = true
+                end
+                
+                if spec ~= "" then
+                    spec = tonumber(spec)
+                    if not GA.itemId2allowedSpecs[itemId] then
+                        GA.itemId2allowedSpecs[itemId] = {}
+                    end
+                    GA.itemId2allowedSpecs[itemId][spec] = true
+                end
+            end
+        end
+    end)
+
     -- [classIdentifier][specializationIndex] = {specializationId, }
     GA.classIdentifier2SpecializationsMap = {}
-
-
+    
     LuaUtils:loop(600, function(specId)
 
 		local switchId = specId
@@ -1621,6 +1664,26 @@ function GA:Initialize()
 			return true
 		end
 	end
+    
+    GA.playerClass = select(2,UnitClass("player"))
+    GA.playerSpec = GetSpecialization_dugis()
+    
+    local function canBePassedItem(itemLink)
+        local itemId = DGV:GetItemIdFromLink(itemLink)
+        if GA.itemId2allowedClasses[itemId] then
+            if not GA.itemId2allowedClasses[itemId][GA.playerClass] then
+                return false
+            end
+        end
+        
+        if GA.itemId2allowedSpecs[itemId] then
+            if not GA.itemId2allowedSpecs[itemId][GA.playerSpec] then
+                return false
+            end
+        end        
+        
+        return true
+    end
 
 	--GetContainerItemLink(container, slot)
 	--BACKPACK_CONTAINER: Backpack (0)
@@ -1675,7 +1738,9 @@ function GA:Initialize()
 						control.player = slot<=EQUIPPED_LAST
 						control.bank = not control.player
 						control.bags = false
-						return control, itemLink
+                        if canBePassedItem(itemLink) then
+                            return control, itemLink
+                        end
 					end
 				else
 					control.player = nil
@@ -1702,7 +1767,9 @@ function GA:Initialize()
 							and itemEquipSlot~=""
 							and not ItemWasFirst(control, itemLink)
 						then
-							return control, itemLink
+                            if canBePassedItem(itemLink) then
+                                return control, itemLink
+                            end
 						end
 					end
 				else
@@ -1748,7 +1815,9 @@ function GA:Initialize()
 							and itemFrame.name:GetText()==itemName
 							and not ItemWasFirst(control, itemLink)
 						then
-							return control, itemLink
+                            if canBePassedItem(itemLink) then
+                                return control, itemLink
+                            end
 						end
 					elseif func == GetNumQuestRewards then
 						control.func = GetNumQuestChoices
@@ -1781,7 +1850,10 @@ function GA:Initialize()
 					if lootFrame and lootFrame:IsShown() then
 						local itemLink = func(lootFrame.rollID)
 						if itemLink and not ItemWasFirst(control, itemLink) then
-							return control, func(lootFrame.rollID)
+                            local control_, link_ = control, func(lootFrame.rollID)
+                            if canBePassedItem(link_) then
+                                return control_, link_
+                            end
 						end
 					end
 				end
@@ -1800,7 +1872,9 @@ function GA:Initialize()
 					if slot<=numLoot then
 						local name, icon, slot, armorType, itemID, link, encounterID = func(slot)
 						if link and not ItemWasFirst(control, link) then
-							return control, link
+                            if canBePassedItem(link) then
+                                return control, link
+                            end
 						end
 					end
 				end
@@ -1816,7 +1890,9 @@ function GA:Initialize()
 					control.slot = slot
 					local link = func(slot)
 					if link and not ItemWasFirst(control, link) then
-						return control, link
+                        if canBePassedItem(link) then
+                            return control, link
+                        end
 					end
 				end
 				control.func = GetLootSlotLink
@@ -2173,7 +2249,7 @@ function GA:Initialize()
 	end
 
 	local function GetCurrentBestInSlot(uniqueInventorySlot, spec, pvp, level, skip, enforceArmorSpecSubclass, uncapped, ignoreLevelRequirement, itemMustWin, threading)
-        DGV.autoroutineTimeLimitOverride = 7
+        DGV.autoroutineTimeLimitOverride = 10
     
 		level = level or UnitLevel("player")
 		spec = spec or GetSpecialization()
@@ -2915,7 +2991,7 @@ function GA:Initialize()
 			return orig_GetNumEquipmentSets()+add
 		end
 
-		local function IsInOtherSlot(itemId, slot)
+		local function IsInOtherSlot(itemLink, slot)
 			local otherSlot
 			if slot==INVSLOT_TRINKET1 then
 				otherSlot = INVSLOT_TRINKET2
@@ -2928,7 +3004,7 @@ function GA:Initialize()
 			else return
 			end
 			local link = GetInventoryItemLink("player", otherSlot)
-			return link and DGV:GetItemIdFromLink(link)==itemId
+			return link and link==itemLink
 		end
 
 		local function SmartSetIsEquipped(cachedOnly)
@@ -2939,12 +3015,10 @@ function GA:Initialize()
 			end
 			for slot,link in nextValidSlot, true do
 				local setLink = equipmentSetDataTable[slot]
-				local setId = equipmentSetIdTable[slot]
-				local id = link and DGV:GetItemIdFromLink(link)
 				if
 					setLink and
-					(not link or setId~=id) and
-					not IsInOtherSlot(setId, slot)
+					(not link or setLink ~= link) and
+					not IsInOtherSlot(setLink, slot)
 				then
 					return false
 				end
@@ -3240,9 +3314,7 @@ function GA:Initialize()
 			for slot,itemLink in next,equipmentSetDataTable,equipmentSetDataTable[continueFromSlot] and continueFromSlot do
 				if type(slot)=="number" then
 					local currentItemLink = GetInventoryItemLink("player", slot)
-					local currentItemId = currentItemLink and DGV:GetItemIdFromLink(currentItemLink)
-					local id = itemLink and DGV:GetItemIdFromLink(itemLink)
-					if itemLink and id~=currentItemId and not IsInOtherSlot(id, slot) then
+					if itemLink and itemLink~=currentItemLink and not IsInOtherSlot(itemLink, slot) then
 						diff:Insert(slot)
 					end
 				end
@@ -3471,9 +3543,14 @@ function GA:Initialize()
 		end
 		smartSetReaction = RegisterFunctionReaction("EquipmentManager_EquipSet", SmartSetPredicate, GA.AutoEquipSmartSet, true)
 		if AutoEquipEnabled() then 
-			LuaUtils:Delay(60, function()
+			 if firstTimeload then 
+				LuaUtils:Delay(30, function()
+					QueueInvocation(GA.AutoEquipSmartSet)
+					firstTimeload = nil
+				end)
+			else 
 				QueueInvocation(GA.AutoEquipSmartSet)
-			end)
+			end
 		end
 
 		local function HideRewardGuidance()

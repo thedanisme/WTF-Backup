@@ -240,9 +240,9 @@ end
 
 local CurrentMap
 
-hooksecurefunc("TaskPOI_OnClick", function(self)
-    onPOIClick(self)
-end)
+--hooksecurefunc("TaskPOI_OnClick", function(self) --not needed already triggered with hooksecurefunc "WorldMap_SetupWorldQuestButton"
+--    onPOIClick(self)
+--end)
 
 hooksecurefunc("QuestPOIButton_OnClick", function(self)
     onPOIClick(self)
@@ -271,6 +271,38 @@ hooksecurefunc("WorldMap_SetupWorldQuestButton", function(button, worldQuestType
                 onPOIClick(self)
             end
         end)
+    end
+    
+    --Support for WorldQuestTracker
+    if WorldQuestTrackerWorldMapPOI then
+        LuaUtils:foreach({WorldMapPOIFrame:GetChildren()}, function(poi)
+            if not poi.wasHoockedByDugi then
+                if poi.worldQuest and poi.timeBlipRed then
+                    poi:HookScript("OnClick", function(self)
+                        onPOIClick(self)
+                    end)
+                end
+
+                poi.wasHoockedByDugi = true
+            end
+        end)
+        
+        LuaUtils:loop(10000, function(index) 
+            local rowName = "WorldQuestTracker_Tracker"..index
+            local row = _G[rowName]
+            if row then 
+                if not row.wasHoockedByDugi then
+                    row.IconButton:HookScript("OnClick", function(self)
+                        onPOIClick(self:GetParent())
+                    end)
+                    
+                    row.wasHoockedByDugi = true
+                end
+            else
+                return "break"
+            end
+        end)
+        
     end
     
     button.alreadyHooked = true

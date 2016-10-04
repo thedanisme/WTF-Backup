@@ -5,10 +5,12 @@ return [[
 
 R Frostwall |QID|34653| |N|Travel to {Frostwall} (45.78, 42.73)| |Z|976 0|
 T News from Spires of Arak |QID|35537| |N|(npc:78487) in {Frostwall} (45.78, 42.73)| |Z|976| |NPC|78487| |O|
-A Arakkoa Exodus |QID|34653| |N|(npc:78487) in {Frostwall} (45.78, 42.73)| |Z|976| |NPC|78487|
+A Arakkoa Exodus |QID|34653| |N|(npc:78487) in {Frostwall} (45.78, 42.73)| |Z|976| |NPC|78487| |PRE|35537| |OID|36951|
+A Arakkoa Exodus |QID|36951| |N|Command Board in {Frostwall} (49.3, 41.3)| |Z|976| |OID|34653|
 
 F Spires of Arak |QID|34655| |N|Speak to (npc:79407) and fly to {Spires of Arak} (45.8, 50.6)| |Z|976| |NPC|79539|
-T Arakkoa Exodus |QID|34653| |N|(npc:79539) in {Terokkar Pass} (37.86, 18.02)| |NPC|79539|
+T Arakkoa Exodus |QID|34653| |N|(npc:79539) in {Terokkar Pass} (37.86, 18.02)| |NPC|79539| |PRE|35537| |OID|36951|
+T Arakkoa Exodus |QID|36951| |N|Command Board in {Frostwall} (49.3, 41.3)| |Z|976| |OID|34653|
 A The Shadows of Skettis |QID|34655| |N|(npc:79539) in {Terokkar Pass} (37.88, 18.06)| |NPC|79539|
 
 R Skettis |QID|34655| |N|Travel to {Skettis} (43.64, 12.95)|

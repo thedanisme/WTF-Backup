@@ -665,6 +665,7 @@ function DugisGuideViewer:OnInitialize()
 	self:RegisterEvent("PET_BATTLE_OPENING_START")
 	self:RegisterEvent("QUEST_WATCH_LIST_CHANGED")
 	self:RegisterEvent("GARRISON_MISSION_NPC_OPENED")
+	self:RegisterEvent("ACTIVE_TALENT_GROUP_CHANGED")
 	
 	CATEGORY_TREE = { 
 
@@ -3431,6 +3432,13 @@ function DugisGuideViewer:GARRISON_MISSION_NPC_OPENED( )
 	if DugisGuideViewer:IsModuleRegistered("FollowerDataModule") then
 	    FollowerJournalParentShowEvent()
 	end
+end
+
+function DugisGuideViewer:ACTIVE_TALENT_GROUP_CHANGED( )
+    if GetSpecialization_dugis then
+        self.Modules.GearAdvisor.playerClass = select(2,UnitClass("player"))
+        self.Modules.GearAdvisor.playerSpec = GetSpecialization_dugis()
+    end
 end
 
 function DugisGuideViewer:PLAYER_LOGOUT( )

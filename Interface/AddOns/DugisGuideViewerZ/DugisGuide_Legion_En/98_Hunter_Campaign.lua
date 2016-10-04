@@ -61,8 +61,8 @@ N Titanstrike |QID|42185.2| |N|Wield Titanstrike at the {Temple of Storms} (33.3
 C Odyssey's End |SID|30094|6| |N|Ride (npc:106854) to return to Dalaran at the {Temple of Storms} (33.70, 58.24)| |Z|495 0| |NPC|106854| |PRE|41541| |QID|42185| |V|
 
 T Never Hunt Alone |QID|42185| |N|(npc:106879) in {Krasus' Landing} (69.56, 43.21)| |Z|1014 10| |NPC|106879| |PRE|41541|
-A Hunter to Hunter |QID|41009| |N|(npc:106879) in {Krasus' Landing} (69.56, 43.21)| |Z|1014 10| |NPC|106879| |PRE|41541|
-T Hunter to Hunter |QID|41009| |N|(npc:102478) in {The Hunter's Reach} (59.80, 52.97)| |Z|1014 10| |NPC|102478| |PRE|41541|
+A Hunter to Hunter |QID|41009| |N|(npc:106879) in {Krasus' Landing} (69.56, 43.21)| |Z|1014 10| |NPC|106879| |PRE|41541| |OID|40952|
+T Hunter to Hunter |QID|41009| |N|(npc:102478) in {The Hunter's Reach} (59.80, 52.97)| |Z|1014 10| |NPC|102478| |PRE|41541| |OID|40952|
 
 -- Hunter Beast Mastery Gun Quests End (Titanstrike)
 
@@ -127,8 +127,8 @@ C A Bow of Legend |SID|29364|8| |N|Collect (item:128826) in {Niskara} (71.43, 73
 
 R Dalaran |TID|40419.5| |N|Talk to (npc:100397) and leave {Niskara} (70.98, 72.45)| |Z|1047 0| |NPC|100397| |PRE|41540|
 T Rescue Mission |QID|40419| |N|(npc:102570) in {Krasus' Landing} (65.99, 46.24)| |Z|1014 10| |NPC|102570| |PRE|41540|
-A Hunter to Hunter |QID|40952| |N|(npc:102570) in {Krasus' Landing} (65.99, 46.24)| |Z|1014 10| |NPC|102570| |PRE|41540|
-T Hunter to Hunter |QID|40952| |N|(npc:102478) in {The Hunter's Reach} (59.90, 53.11)| |Z|1014 10| |NPC|102478| |PRE|41540|
+A Hunter to Hunter |QID|40952| |N|(npc:102570) in {Krasus' Landing} (65.99, 46.24)| |Z|1014 10| |NPC|102570| |PRE|41540| |OID|41009|
+T Hunter to Hunter |QID|40952| |N|(npc:102478) in {The Hunter's Reach} (59.90, 53.11)| |Z|1014 10| |NPC|102478| |PRE|41540| |OID|41009|
 
 -- Hunter Marksmanship Bow Quests End (Thas'dorah, Legacy of the Windrunners)
 
@@ -253,8 +253,8 @@ A Calling Hilaire Home |QID|42389| |N|in {Trueshot Lodge} (43.32, 26.19)| |Z|107
 A Recruiting Rexxar |QID|42390| |N|(npc:107317) in {Trueshot Lodge} (43.32, 26.19)| |Z|1072 0| |NPC|107317|
 T Recruiting Rexxar |QID|42390| |N|(npc:107425) in {Cliff's Edge} (36.72, 35.41)| |Z|1024 0| |NPC|107425|
 A Survival Skills |QID|43335| |N|(npc:107425) in {Cliff's Edge} (36.72, 35.41)| |Z|1024 0| |NPC|107425|
-K (npc:107503) |QID|43335.1| |N|Kill a (npc:107503) to collect (item:137612) in {Cliff's Edge} (36.24, 37.33)| |Z|1024 0| |NPC|107503|
-N (item:137609) |QID|43335.2| |N|Click on tree to collect (item:137609) in {Cliff's Edge} (35.90, 38.49)| |Z|1024 0|
+K (npc:107503) |QID|43335.1| |N|Kill a (npc:107503) to collect (item:137612) iiff'sn {Cliff's Edge} (36.24, 37.33)| |Z|1024 0| |NPC|107503|
+N (item:137609) |QID|43335.2| |N|Click on tree to collect (item:137609) in {Cl Edge} (35.90, 38.49)| |Z|1024 0|
 N Light the Campfire |QID|43335.3| |N|Click on campfire to light it in {Cliff's Edge} (36.69, 35.55)| |Z|1024 0|
 N Cook the Raw Meat |QID|43335.4| |N|Click on campfire to cook the (item:137612) in {Cliff's Edge} (36.69, 35.55)| |Z|1024 0|
 T Survival Skills |QID|43335| |N|(npc:107425) in {Cliff's Edge} (36.72, 35.43)| |Z|1024 0| |NPC|107425|
