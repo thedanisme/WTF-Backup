@@ -2,24 +2,24 @@
 DejaCharacterStatsDBPC = {
 	["dcsdefaults"] = {
 		["dejacharacterstatsSelectStatsChecked"] = {
-			["SelectStatsSetChecked"] = true,
+			["SelectStatsSetChecked"] = false,
 		},
 		["dejacharacterstatsSelectedStats"] = {
 			["DODGE"] = false,
 			["DURABILITY"] = true,
 			["SPELLPOWER"] = false,
+			["ALTERNATEMANA"] = false,
 			["FOCUS_REGEN"] = false,
-			["MANAREGEN"] = false,
 			["MOVESPEED"] = true,
 			["ATTACK_ATTACKSPEED"] = false,
 			["VERSATILITY"] = true,
+			["MANAREGEN"] = false,
 			["POWER"] = true,
 			["INTELLECT"] = true,
-			["ALTERNATEMANA"] = false,
 			["ATTACK_AP"] = false,
-			["ARMOR"] = true,
-			["HEALTH"] = true,
 			["STAMINA"] = true,
+			["HEALTH"] = true,
+			["ARMOR"] = true,
 			["CRITCHANCE"] = true,
 			["RUNE_REGEN"] = false,
 			["STRENGTH"] = true,
@@ -38,7 +38,7 @@ DejaCharacterStatsDBPC = {
 			["ShowAllStatsSetChecked"] = false,
 		},
 		["dejacharacterstatsScrollbarMax"] = {
-			["DCS_ScrollbarMax"] = 142,
+			["DCS_ScrollbarMax"] = 34,
 		},
 	},
 }

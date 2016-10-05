@@ -2,7 +2,7 @@
 DejaCharacterStatsDBPC = {
 	["dcsdefaults"] = {
 		["dejacharacterstatsSelectStatsChecked"] = {
-			["SelectStatsSetChecked"] = true,
+			["SelectStatsSetChecked"] = false,
 		},
 		["dejacharacterstatsSelectedStats"] = {
 			["DODGE"] = false,
@@ -38,7 +38,7 @@ DejaCharacterStatsDBPC = {
 			["ShowAllStatsSetChecked"] = false,
 		},
 		["dejacharacterstatsScrollbarMax"] = {
-			["DCS_ScrollbarMax"] = 142,
+			["DCS_ScrollbarMax"] = 34,
 		},
 	},
 }

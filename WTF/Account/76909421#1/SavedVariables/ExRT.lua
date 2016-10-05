@@ -936,6 +936,7 @@ VExRT = {
 		},
 		["gnGUIDs"] = {
 			["Thornsen-Duskwood"] = 73,
+			["Whyfy"] = 66,
 			["Hatespark"] = 63,
 			["Vîllaîn-Kel'Thuzad"] = 250,
 			["Docelus"] = 73,
@@ -1322,7 +1323,7 @@ VExRT = {
 		["Timer"] = 0.1,
 		["IconMiniMapHide"] = true,
 		["Version"] = 3780,
-		["PreVersion"] = 3765,
+		["PreVersion"] = 3780,
 	},
 	["BossWatcher"] = {
 		["optionsDamageGraph"] = true,
@@ -1344,12 +1345,12 @@ VExRT = {
 			true, -- [4]
 		},
 		["Strata"] = "HIGH",
+		["MarksReverse"] = true,
 		["DisableOutsideRaid"] = true,
-		["Fix"] = true,
 		["pulltimer"] = 10,
 		["Top"] = 186.000259399414,
 		["Left"] = 1509.49951171875,
-		["MarksReverse"] = true,
+		["Fix"] = true,
 	},
 	["Profiles"] = {
 	},

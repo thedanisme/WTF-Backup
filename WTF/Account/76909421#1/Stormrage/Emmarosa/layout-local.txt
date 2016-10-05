@@ -25,8 +25,8 @@ FrameLevel: 6
 Anchor: CENTER
 X: 0
 Y: 0
-W: 698
-H: 354
+W: 898
+H: 504
 Frame: DugisSecureQuestButton
 FrameLevel: 1
 Anchor: CENTER
@@ -41,6 +41,13 @@ X: 0
 Y: 35
 W: 26
 H: 26
+Frame: DugisArrowFrame
+FrameLevel: 1
+Anchor: RIGHT
+X: -171
+Y: -213
+W: 72
+H: 54
 Frame: PawnUIFrame
 FrameLevel: 1
 Anchor: CENTER
@@ -55,10 +62,3 @@ X: -455
 Y: -4
 W: 56
 H: 42
-Frame: DugisArrowFrame
-FrameLevel: 1
-Anchor: RIGHT
-X: -171
-Y: -213
-W: 72
-H: 54

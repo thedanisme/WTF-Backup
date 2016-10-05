@@ -2,18 +2,21 @@
 HandyNotesDB = {
 	["profileKeys"] = {
 		["Oenta - Stormrage"] = "Oenta - Stormrage",
+		["Whyfy - Stormrage"] = "Whyfy - Stormrage",
 		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
 		["Druidann - Stormrage"] = "Druidann - Stormrage",
 		["Yanlery - Stormrage"] = "Yanlery - Stormrage",
 		["Titte - Turalyon"] = "Titte - Turalyon",
-		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
+		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
 		["Shhbbyisok - Stormrage"] = "Shhbbyisok - Stormrage",
-		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
+		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
 		["Dosnutz - Stormrage"] = "Dosnutz - Stormrage",
 	},
 	["profiles"] = {
 		["Oenta - Stormrage"] = {
+		},
+		["Whyfy - Stormrage"] = {
 		},
 		["Shaneequa - Turalyon"] = {
 		},
@@ -23,13 +26,13 @@ HandyNotesDB = {
 		},
 		["Titte - Turalyon"] = {
 		},
-		["Emmarosa - Stormrage"] = {
+		["Talthalador - Stormrage"] = {
 		},
 		["Danoh - Stormrage"] = {
 		},
 		["Shhbbyisok - Stormrage"] = {
 		},
-		["Talthalador - Stormrage"] = {
+		["Emmarosa - Stormrage"] = {
 		},
 		["Dosnutz - Stormrage"] = {
 		},
@@ -38,18 +41,21 @@ HandyNotesDB = {
 HandyNotes_HandyNotesDB = {
 	["profileKeys"] = {
 		["Oenta - Stormrage"] = "Oenta - Stormrage",
+		["Whyfy - Stormrage"] = "Whyfy - Stormrage",
 		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
 		["Druidann - Stormrage"] = "Druidann - Stormrage",
 		["Yanlery - Stormrage"] = "Yanlery - Stormrage",
 		["Titte - Turalyon"] = "Titte - Turalyon",
-		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
+		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
 		["Shhbbyisok - Stormrage"] = "Shhbbyisok - Stormrage",
-		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
+		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
 		["Dosnutz - Stormrage"] = "Dosnutz - Stormrage",
 	},
 	["profiles"] = {
 		["Oenta - Stormrage"] = {
+		},
+		["Whyfy - Stormrage"] = {
 		},
 		["Shaneequa - Turalyon"] = {
 		},
@@ -59,13 +65,13 @@ HandyNotes_HandyNotesDB = {
 		},
 		["Titte - Turalyon"] = {
 		},
-		["Emmarosa - Stormrage"] = {
+		["Talthalador - Stormrage"] = {
 		},
 		["Danoh - Stormrage"] = {
 		},
 		["Shhbbyisok - Stormrage"] = {
 		},
-		["Talthalador - Stormrage"] = {
+		["Emmarosa - Stormrage"] = {
 		},
 		["Dosnutz - Stormrage"] = {
 		},
