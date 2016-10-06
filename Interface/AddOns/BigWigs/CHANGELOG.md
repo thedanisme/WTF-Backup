@@ -1,7 +1,10 @@
 # BigWigs
 
-## [v15.1-2-gbfd4454](https://github.com/BigWigsMods/BigWigs/tree/bfd4454f443a90aa042afef7f683329881168df7) (2016-10-04) [](#top)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v15.1...bfd4454f443a90aa042afef7f683329881168df7)
+## [v15.1-5-gdaccb67](https://github.com/BigWigsMods/BigWigs/tree/daccb67b55ded5c66ca2837d56d15ef96cedd1b6) (2016-10-05) [](#top)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v15.1...daccb67b55ded5c66ca2837d56d15ef96cedd1b6)
 
+-   Add Withered J'im to TOC  
+-   Add Withered J'im module  
+-   Nythendra: Use "Warning" sound for Volitile Rot  
 -   esES update. (#59)  
 -   esES update. (#58)  
