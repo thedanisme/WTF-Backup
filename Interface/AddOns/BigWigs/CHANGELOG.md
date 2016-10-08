@@ -1,8 +1,9 @@
 # BigWigs
 
-## [v16-11-g4826592](https://github.com/BigWigsMods/BigWigs/tree/4826592515e6cc253b0cc7acd8c572efbac55024) (2016-10-07) [](#top)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v16...4826592515e6cc253b0cc7acd8c572efbac55024)
+## [v16.1](https://github.com/BigWigsMods/BigWigs/tree/v16.1) (2016-10-08) [](#top)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v16...v16.1)
 
+-   Ilgynoth: Fix bloods remaining  
 -   esES update. (#68)  
 -   Update ptBR.lua (#67)  
 -   Update ptBR.lua (#66)  

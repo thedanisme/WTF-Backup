@@ -60,5 +60,5 @@ FrameLevel: 1
 Anchor: RIGHT
 X: -171
 Y: -213
-W: 72
-H: 54
+W: 54
+H: 70
