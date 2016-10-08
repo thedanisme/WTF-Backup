@@ -253,8 +253,8 @@ A Calling Hilaire Home |QID|42389| |N|in {Trueshot Lodge} (43.32, 26.19)| |Z|107
 A Recruiting Rexxar |QID|42390| |N|(npc:107317) in {Trueshot Lodge} (43.32, 26.19)| |Z|1072 0| |NPC|107317|
 T Recruiting Rexxar |QID|42390| |N|(npc:107425) in {Cliff's Edge} (36.72, 35.41)| |Z|1024 0| |NPC|107425|
 A Survival Skills |QID|43335| |N|(npc:107425) in {Cliff's Edge} (36.72, 35.41)| |Z|1024 0| |NPC|107425|
-K (npc:107503) |QID|43335.1| |N|Kill a (npc:107503) to collect (item:137612) iiff'sn {Cliff's Edge} (36.24, 37.33)| |Z|1024 0| |NPC|107503|
-N (item:137609) |QID|43335.2| |N|Click on tree to collect (item:137609) in {Cl Edge} (35.90, 38.49)| |Z|1024 0|
+K (npc:107503) |QID|43335.1| |N|Kill a (npc:107503) to collect (item:137612) in {Cliff's Edge} (36.24, 37.33)| |Z|1024 0| |NPC|107503|
+N (item:137609) |QID|43335.2| |N|Click on tree to collect (item:137609) in {Cliff's Edge} (35.90, 38.49)| |Z|1024 0|
 N Light the Campfire |QID|43335.3| |N|Click on campfire to light it in {Cliff's Edge} (36.69, 35.55)| |Z|1024 0|
 N Cook the Raw Meat |QID|43335.4| |N|Click on campfire to cook the (item:137612) in {Cliff's Edge} (36.69, 35.55)| |Z|1024 0|
 T Survival Skills |QID|43335| |N|(npc:107425) in {Cliff's Edge} (36.72, 35.43)| |Z|1024 0| |NPC|107425|

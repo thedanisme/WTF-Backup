@@ -52,7 +52,7 @@ T Light's Charge |QID|44153| |N|Class Order Hall| |POI|
 
 N Level 110 Required |N|You need to be at least level 110 to complete {Suramar} quest line| |PL|110|
 
-A Khadgar's Discovery |N|Auto quest at level 110| |OID|39985, 44555|
+A Khadgar's Discovery |N|Auto quest at level 110<br/><br/>You can also get it from the Adventure Guide frame (press Shift J)| |OID|39985, 44555|
 T Khadgar's Discovery |QID|44555| |N|(npc:90417) in {The Violet Citadel} (28.49, 48.26)| |Z|1014 10| |NPC|90417| |O|
 T Khadgar's Discovery |QID|39985| |N|(npc:90417) in {The Violet Citadel} (28.49, 48.26)| |Z|1014 10| |NPC|90417| |O|
 A Magic Message |QID|39986| |N|(npc:90417) in {The Violet Citadel} (28.49, 48.26)| |Z|1014 10| |NPC|90417|
@@ -947,8 +947,33 @@ N Gain Reputation |N|You will need 8000/12000 Honored status with (fac:1859) fac
 C Growing Strong |QID|44562| |N|Reach Revered status with with (fac:1859)|
 T Growing Strong |QID|44562| |N|(npc:107126) in {Shal'Aran} (36.85, 46.54)| |Z|1033 0| |NPC|107126|
 A Redemption for the Fallen |QID|44563| |N|(npc:107126) in {Shal'Aran} (36.85, 46.54)| |Z|1033 0| |NPC|107126|
+
+A A Growing Crisis |QID|44152| |N|(npc:107126) in {Shal'Aran} (36.53,46.81)| |Z|1033 0| |NPC|107126| |FS|1859, 28000|
+
+R Temple of Fal'adora |N|Use the portal to {Temple of Fal'adora} (35.89,45.56)| |Z|1033 0| |F|1033 32| |FS|1859, 28000|
+T A Growing Crisis |QID|44152| |N|(npc:107126) in {Temple of Fal'adora} (42.33,14.91)| |Z|1033 32| |NPC|107126| |FS|1859, 28000|
+A Fragments of Disaster |QID|43361| |N|(npc:107126) in {Temple of Fal'adora} (42.33,14.91)| |Z|1033 32| |NPC|107126| |FS|1859, 28000|
+A The Shardmaidens |QID|43360| |N|(npc:107126) in {Temple of Fal'adora} (42.33,14.91)| |Z|1033 32| |NPC|107126| |FS|1859, 28000|
+N (item:139340) |QID|43361.1| |N|Collect 5 (item:139340) from the ground in {Temple of Fal'adora} (43.02,30.32) (37.12,46.77)| |Z|1033 32|  |FS|1859, 28000|
+C The Shardmaidens |QID|105554| |QID|43360.1| |N|Kill 6 (npc:105554) in {Temple of Fal'adora} (37.12,46.77)| |Z|1033 32| |NPC|105554| |FS|1859, 28000|
+N Return to the Temple of Fal'adora |QID|43361.2| |N|Return to the Temple of Fal'adora (37.76,43.50) (42.82,30.45) (41.45,15.59)| |Z|1033 32| |FS|1859, 28000|
+T Fragments of Disaster |QID|43361| |N|(npc:112967) in {Temple of Fal'adora} (42.33,14.91)| |Z|1033 32| |NPC|112967| |FS|1859, 28000|
+T The Shardmaidens |QID|43360| |N|(npc:112967) in {Temple of Fal'adora} (42.33,14.91)| |Z|1033 32| |NPC|112967| |FS|1859, 28000|
+A Another Arcan'dor Closes... |QID|44156| |N|(npc:112967) in {Temple of Fal'adora} (42.33,14.91)| |Z|1033 32| |NPC|112967| |FS|1859, 28000|
+
+R Shal'Aran |QID|44156| |N|Use the portal to return to {Shal'Aran} (40.91,13.73)| |Z|1033 32|  |FS|1859, 28000|
+T Another Arcan'dor Closes... |QID|44156| |N|(npc:107126) in {Shal'Aran} (36.53,46.81)| |Z|1033 0| |NPC|107126| |FS|1859, 28000|
+A The Stuff of Dreams |QID|43362| |N|(npc:107126) in {Shal'Aran} (36.53,46.81)| |Z|1033 0| |NPC|107126| |FS|1859, 28000|
+A Branch of the Arcan'dor |QID|40125| |N|(npc:97140) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |FS|1859, 28000|
+T Branch of the Arcan'dor |QID|40125| |N|(npc:97140) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |FS|1859, 28000|
+
+N Gain Reputation |N|You will need 7000/21000 Revered status with (fac:1859) faction to continue| |OID|44152| 
 C Redemption for the Fallen |QID|44563| |N|Reach Exalted status with with (fac:1859)|
 T Redemption for the Fallen |QID|44563| |N|(npc:107126) in {Shal'Aran} (36.85, 46.54)| |Z|1033 0| |NPC|107126|
+
+--A Change of Seasons |QID|43502| |N|
+--A Giving It All We've Got |QID|43562| |N|
+--A Ephemeral Manastorm Projector |QID|43563| |N|
 
 --A A World of Quests |QID|43341| |N|Auto quest at level 110|
 --C A World of Quests |QID|43341| |N|Earn at least Friendly reputation with the factions of the Broken Isles.| 

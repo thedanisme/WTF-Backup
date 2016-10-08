@@ -3,6 +3,10 @@ BigWigs3DB = {
 	["namespaces"] = {
 		["BigWigs_Plugins_Victory"] = {
 		},
+		["LibDualSpec-1.0"] = {
+		},
+		["BigWigs_Plugins_Colors"] = {
+		},
 		["BigWigs_Plugins_Alt Power"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -16,22 +20,6 @@ BigWigs3DB = {
 			},
 		},
 		["BigWigs_Plugins_BossBlock"] = {
-		},
-		["BigWigs_Plugins_Sounds"] = {
-		},
-		["BigWigs_Plugins_Statistics"] = {
-		},
-		["BigWigs_Bosses_Ashgolm"] = {
-		},
-		["LibDualSpec-1.0"] = {
-		},
-		["BigWigs_Plugins_Respawn"] = {
-		},
-		["BigWigs_Plugins_Colors"] = {
-		},
-		["BigWigs_Plugins_Raid Icons"] = {
-		},
-		["BigWigs_Bosses_Vault of the Wardens Trash"] = {
 		},
 		["BigWigs_Plugins_Bars"] = {
 			["profiles"] = {
@@ -48,11 +36,13 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Bosses_Inquisitor Tormentorum"] = {
+		["BigWigs_Plugins_Common Auras"] = {
 		},
 		["BigWigs_Plugins_HeroesVoices"] = {
 		},
-		["BigWigs_Bosses_Tirathon Saltheril"] = {
+		["BigWigs_Plugins_Sounds"] = {
+		},
+		["BigWigs_Plugins_Respawn"] = {
 		},
 		["BigWigs_Plugins_Super Emphasize"] = {
 			["profiles"] = {
@@ -61,9 +51,21 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Bosses_Cordana Felsong"] = {
+		["BigWigs_Plugins_Statistics"] = {
 		},
-		["BigWigs_Plugins_Common Auras"] = {
+		["BigWigs_Plugins_Messages"] = {
+			["profiles"] = {
+				["Default"] = {
+					["BWEmphasizeMessageAnchor_x"] = 607.288990399575,
+					["BWEmphasizeCountdownMessageAnchor_x"] = 834.844725076364,
+					["BWEmphasizeMessageAnchor_y"] = 521.244500468838,
+					["BWMessageAnchor_y"] = 601.599927761818,
+					["BWMessageAnchor_x"] = 612.266768297886,
+					["BWEmphasizeCountdownMessageAnchor_y"] = 364.088897705078,
+					["font"] = "Gotham-Narrow",
+					["fontSize"] = 20,
+				},
+			},
 		},
 		["BigWigs_Plugins_Proximity"] = {
 			["profiles"] = {
@@ -80,8 +82,6 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Bosses_Glazer"] = {
-		},
 		["BigWigs_Plugins_Pull"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -89,19 +89,7 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_Messages"] = {
-			["profiles"] = {
-				["Default"] = {
-					["BWEmphasizeMessageAnchor_x"] = 607.288990399575,
-					["BWEmphasizeCountdownMessageAnchor_x"] = 834.844725076364,
-					["BWEmphasizeMessageAnchor_y"] = 521.244500468838,
-					["BWMessageAnchor_y"] = 601.599927761818,
-					["BWMessageAnchor_x"] = 612.266768297886,
-					["BWEmphasizeCountdownMessageAnchor_y"] = 364.088897705078,
-					["font"] = "Gotham-Narrow",
-					["fontSize"] = 20,
-				},
-			},
+		["BigWigs_Plugins_Raid Icons"] = {
 		},
 	},
 	["global"] = {

@@ -1939,7 +1939,7 @@
 		<Size x="26" y="26"/>
         <Layers>
             <Layer level="ARTWORK">
-                <FontString parentKey="HotKey" inherits="NumberFontNormalSmallGray" justifyH="LEFT" text="RANGE_INDICATOR">
+                <FontString parentKey="HotKey" inherits="NumberFontNormalSmallGray" justifyH="LEFT" text="">
                     <Size x="29" y="10"/>
                     <Anchors>
                         <Anchor point="TOPRIGHT" x="16" y="-2"/>
@@ -1991,6 +1991,19 @@
         </NormalTexture>
         <PushedTexture file="Interface\Buttons\UI-Quickslot-Depress"/>
         <HighlightTexture file="Interface\Buttons\ButtonHilight-Square" alphaMode="ADD"/>     
+	</Button>
+    
+    <Button name="DugisTargetButtonTemplate" inherits="SecureActionButtonTemplate" virtual='true'>
+        <Layers>
+            <Layer level="ARTWORK">
+                <FontString parentKey="HotKey" inherits="NumberFontNormalSmallGray" justifyH="LEFT" text="">
+                    <Size x="29" y="10"/>
+                    <Anchors>
+                        <Anchor point="TOPRIGHT" x="16" y="-2"/>
+                    </Anchors>
+                </FontString>
+            </Layer>
+        </Layers>
 	</Button>
 	
 	<Button name="DugisSecureQuestButton" inherits="DugisSecureQuestButtonTemplate" parent="UIParent">

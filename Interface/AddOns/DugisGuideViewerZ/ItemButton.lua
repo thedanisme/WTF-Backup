@@ -75,7 +75,7 @@ InitFrame(actionFrame, questItemFrame)
 local function UpdateHotKey()
     local key = GetBindingKey("CLICK DugisGuideViewerActionItemFrame:LeftButton") or GetBindingKey("CLICK DugisSecureQuestButton:LeftButton")
     if key then 
-        actionFrame.HotKey:SetText(key)
+        actionFrame.HotKey:SetText(key:sub(1,1))
     else
         actionFrame.HotKey:SetText("")
     end
