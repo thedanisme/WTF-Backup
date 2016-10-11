@@ -257,13 +257,26 @@ local dcsresetcheck = CreateFrame("Button", "DCSResetButton", DejaCharacterStats
 	dcsresetcheck:ClearAllPoints()
 	dcsresetcheck:SetPoint("BOTTOMLEFT", 5, 5)
 	dcsresetcheck:SetScale(1.25)
-	dcsresetcheck:SetWidth(125)
+
+	local LOCALE = GetLocale()
+		--print (LOCALE)
+
+	if (LOCALE == "ptBR" or LOCALE == "frFR" or LOCALE == "deDE") then
+		--print ("ptBR, frFR, deDE = 175")
+		LOCALE = 175
+	else
+		--print ("enUS = 125")
+		LOCALE = 125
+	end
+
+	dcsresetcheck:SetWidth(LOCALE)
+
 	dcsresetcheck:SetHeight(30)
 	_G[dcsresetcheck:GetName() .. "Text"]:SetText(L["Reset to Default"])
 	dcsresetcheck:SetScript("OnClick", function(self, button, down)
  		gdbprivate.gdb.gdbdefaults = gdbprivate.gdbdefaults.gdbdefaults;
 		ReloadUI();
-end)
+	end)
 
 ----------------------------
 -- DCS Functions & Arrays --
@@ -735,14 +748,25 @@ local yAttributes
 for k, v in ipairs(PAPERDOLL_AttributesIndexDefaultStats) do
 	local strreplace = v:gsub("%_", " ")
 	local str = strreplace:gsub("(%a)([%w_']*)", tchelper)
-	if v == "ALTERNATEMANA" then str = "Druid Mana" end
-	if v == "ATTACK_DAMAGE" then str = "Damage" end
-	if v == "ATTACK_AP" then str = "Attack Power" end
-	if v == "ATTACK_ATTACKSPEED" then str = "Attack Speed" end
-	if v == "SPELLPOWER" then str = "Spell Power" end
-	if v == "MANAREGEN" then str = "Mana Regen" end
-	if v == "MOVESPEED" then str = "Movement Speed" end
-	if v == "REPAIRTOTAL" then str = "Repair Total" end
+	if v == "HEALTH" then str = L["Health"] end
+	if v == "POWER" then str = L["Power"] end
+	if v == "ALTERNATEMANA" then str = L["Druid Mana"] end
+	if v == "ARMOR" then str = L["Armor"] end
+	if v == "STRENGTH" then str = L["Strength"] end
+	if v == "AGILITY" then str = L["Agility"] end
+	if v == "INTELLECT" then str = L["Intellect"] end
+	if v == "STAMINA" then str = L["Stamina"] end
+	if v == "ATTACK_DAMAGE" then str = L["Damage"] end
+	if v == "ATTACK_AP" then str = L["Attack Power"] end
+	if v == "ATTACK_ATTACKSPEED" then str = L["Attack Speed"] end
+	if v == "SPELLPOWER" then str = L["Spell Power"] end
+	if v == "MANAREGEN" then str = L["Mana Regen"] end
+	if v == "ENERGY_REGEN" then str = L["Energy Regen"] end
+	if v == "RUNE_REGEN" then str = L["Rune Regen"] end
+	if v == "FOCUS_REGEN" then str = L["Focus Regen"] end
+	if v == "MOVESPEED" then str = L["Movement Speed"] end
+	if v == "DURABILITY" then str = L["Durability"] end
+	if v == "REPAIRTOTAL" then str = L["Repair Total"] end
 
 	if yAttributes == nil then
 		yAttributes = 0
@@ -793,9 +817,16 @@ local yEnhancements
 for k, v in ipairs(PAPERDOLL_EnhancementsIndexDefaultStats) do
 	local strreplace = v:gsub("%_", " ")
 	local str = strreplace:gsub("(%a)([%w_']*)", tchelper)
-	if v == "CRITCHANCE" then str = "Critical Strike" end
-	if v == "LIFESTEAL" then str = "Leech" end
-	
+	if v == "CRITCHANCE" then str = L["Critical Strike"] end
+	if v == "HASTE" then str = L["Haste"] end
+	if v == "VERSATILITY" then str = L["Versatility"] end
+	if v == "MASTERY" then str = L["Mastery"] end
+	if v == "LIFESTEAL" then str = L["Leech"] end
+	if v == "AVOIDANCE" then str = L["Avoidance"] end
+	if v == "DODGE" then str = L["Dodge"] end
+	if v == "PARRY" then str = L["Parry"] end
+	if v == "BLOCK" then str = L["Block"] end
+
 	if yEnhancements == nil then
 		yEnhancements = 0
 	else

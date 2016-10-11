@@ -1,7 +1,7 @@
 
 -- GLOBALS: BADBOY_NOLINK, BADBOY_POPUP, BADBOY_BLACKLIST, BadBoyLog, BNGetNumFriends, BNGetNumFriendGameAccounts, BNGetFriendGameAccountInfo
 -- GLOBALS: CanComplainChat, ChatFrame1, GetRealmName, GetTime, print, REPORT_SPAM_CONFIRMATION, ReportPlayer, StaticPopup_Show, StaticPopup_Resize
--- GLOBALS: UnitInParty, UnitInRaid, CalendarGetDate, SetCVar
+-- GLOBALS: UnitInParty, UnitInRaid, CalendarGetDate, SetCVar, wipe
 local myDebug = false
 
 local reportMsg = "BadBoy: |cff6BB247|Hbadboy|h[Spam blocked, click to report!]|h|r"
@@ -460,6 +460,8 @@ local instantReportList = {
 	"selling.*mount.*pet.*pvp.*purchase", --Selling all rare mounts, TGC pets, all PvP services, and much more! We offer great savings for combo purchases! Pst!
 	"wts.*power.*levell?ing.*loot.*info", --WTS Artifact power and leveling, Mythic/Heroic Dungeons with additional loot,Fast leveling to 110!Write me for info.
 	"wts.*gear.*loot.*levell?ing.*info", --WTS 840+ ilvl gear, Mythic/Heroic Dungeons with additional loot! Fast leveling 100-110 in 9-12 hour! Write me for more info!
+	"wtsmythic.*%d/%d/%d.*key.*write.*info", --WTS Mythic + KEY~/+2/+3/+6/+8/+9/+10 key,write me for info.
+	"wts.*loot.*raid.*hurry.*best.*write", --♥WTS Emerald Nightmare Heroic/Normal with all loot for you! Raids run everyday!♥Hurry get best equipment!♥Write me for info!♥
 	"mythicstore[%.,]com.*skype", --For more details visit https://mythic-store.com , or write in skype: mythic-store
 	"wts.*timelost.*mount.*char", --WTS [Reins of the Time-Lost Proto-Drake] [Reins of the Phosphorescent Stone Drake]{rt1}World MOUNTS{rt6}non-sharing acc{rt4}transfer characters
 	"wts.*mounts.*sale.*skype", --{rt1}{rt3}WTS [Reins of the Spectral Tiger] [Reins of the Swift Spectral Tiger] {rt3}{rt2} cool mounts on sale!! {rt3}pst!!!~~~skype:ah4pgirl
@@ -565,7 +567,8 @@ local instantReportList = {
 	"^wt[bs]mopc?d?key", --{rt1} WTS MoP Key 1x /w me {rt1}
 	"wtsrafmount.*nightwing", --wts  raf mount   [Heart of the Nightwing] w/m
 	"^selling%d+.*gamecard", --Selling 60time gamecard!
-	"legion.*gametime.*day.*iranblizzard", --Legion 140T - Game Time 30Day 35T - 60Day 70Toman - www.iran-blizzard.com
+	--Legion 139Toman Game Time 30Toman Gold har 1k 450Toman Level Up ham Anjam midim |Web: www.iran-blizzard.com  Tel: 000000000000
+	"legion.*gametime.*iranblizzard[%.,]com", --Legion 140T - Game Time 30Day 35T - 60Day 70Toman - www.iran-blizzard.com
 	"%d+day.*gametimecard.*cheap", --{diamond} {diamond} {diamond} {diamond} WTS TWO last 180 days game time card, cheaper! {diamond} {diamond} {diamond} {diamond}
 	"^wts.*website.*paypal.*deliver", --WTS Custom Guild Website + 12 months of maintenance + hosting + seo ($100 paypal of 100kg in game) (1-3 days to deliver custom guild website)
 	"^wts.*prepaid.*wowingamecurrency", --WTS Rchange/Transfer/Prepaid for WoW ingame currency! {rt4}
@@ -645,9 +648,14 @@ local instantReportList = {
 	"gold.*skype.*coldgold88", --WTS [Challenge Warlord: Gold] for more info skype: coldgold88
 	"gold.*skype.*challengego", --WTS [Challenge Warlord: Gold]. Availible right now. We are experienced group!!! Add me on skype: "ChallengeGO"
 	"mythic.*skype.*qreaperbst", --WTS 10/10 Mythic and Heroic all info in skype: qReaper_bst
+	"wts.*coaching.*boost.*skype", --WTS COĄCHING Ąrena Bøøst frøm r1 EU Glâdiâtors in 2s/3s ▬► ŠELFPLĄY (Yøu plây wiTh Prø) ◄▬ ŠKYPĒ: FindGuys
+	"wts.*mythic.*boost.*pvp.*prestige.*price", --WTS Dungeons Mythic/ Mythic+ Chest Boost, EN normal/heroic, PvP PRESTIGE RANKS (we have the lowest prices on the euro-servers)! 
 	"^wtsemeraldnightmarelootraids,heroic/mythicdungeons.*wisp", --WTS Emerald Nightmare lootraids, Heroic/Mythic Dungeons. Wisp!
-	"arena.*boost.*selfplay.*pro.*mythic", --Arena boost 2200/2400/2700, Live stream and selfplay possible, Coaching with pro, Mythic dungeons 10/10, TEN Heroic, /w me !
+	"arena.*boost.*pro.*prestige.*mythic", --Arena boost 1800-2400, play with Pro, leveling, PvP Prestige Farm, Mythic/Mythic+ dungeons, EN (normal) /w
+	--Arena boost 1800/2400/2700, Try selfplay 2k with pro, Prestige Rank, Live stream/selfplay possible, TEN Heroic, /w me !
+	"arena.*boost.*selfplay.*pro.*heroic", --Arena boost 2200/2400/2700, Live stream and selfplay possible, Coaching with pro, Mythic dungeons 10/10, TEN Heroic, /w me !
 	"arena.*help.*pro.*prestige.*mythic", --Arena help 1800-2400, play with Pro, leveling, PvP Prestige Farm, Mythic/Mythic+ dungeons, EN (normal) /w
+	"pvp.*prestige.*mount.*accshare", --▓▓WTS Full PvP Talents 1-50▓Prestige Ranks▓Artiface Power farm▓all 6 vicious mounts[Vicious Saddle]right now,no accshare▓PST
 	"wts.*boost.*amazingprice.*gua?rantee.*only.*info", --Wts The emerald nightmare Heroic boost 7/7 clear for amazing price we gurantee you + 850 item level only today 17:00 server time w me for more infos.
 	"lootcloud.*paypal", --¥Lootcloud,com¥ presents new fresh offers for legion raid Emerald Nightmare and 5 man [dungeons.Paypal] support, livechat, discounts and crazy offers. Get more at our website, [lootcloud.com]
 	"boost.*price.*mmoguard[%.,]com", -- 6 top-rated CM boosting teams, fair prices and 100% protected deals. Get what you desire at [►mmoguard.com◄] ◄◄◄ ████
@@ -655,6 +663,7 @@ local instantReportList = {
 	"wts.*nightmare.*loot.*selfplay.*master", --WTS: ▓▓ THE EMERALD NIGHTMARE 7/7 (Normal) LOOT RUN ▓▓SELFPLAY▓▓ MASTER LOOT▓▓ 
 	"wts.*mythic.*levell?ing.*artifact.*info", --WTS ▓▓ Heroic/Mythic Dungeons ▓ Emerald Nightmare ▓ Power Leveling ▓▓ World Quests  ▓▓ Artifactl ▓ Reputations /W me for more info
 	"wtsemeraldnightmareheroicnormalboosting.*mythicdungeons?boost", --WTS Emerald Nightmare Heroic-Normal boosting, Mythic dungeons boost
+	"wts.*mythic.*loot.*dungeon.*glory.*more.*info", --►►►[WTS] The Emerald Nightmare Mythic/Heroic/Normal with loot, Mythic+ dungeons, Glory of the Legion hero and more!  /w me for info◄◄◄
 	"mmolvl[%.,]c[0o]m.*skype", --For details visit mmo-lvl . c0m or write to skype: geny.k2  or to email: genydocum@gmail.com
 	"mythic.*price.*perfectway[%.,]one", --WTS Dungeons Mythic, Dungeons Heroic in Legion everyday!!! New prices [(Perfectway.one)]
 	"mount.*achiev.*raidboost[%.,]com", --Farewell Draenor! Mounts/Glories/Achievements. Hurry up to all WoD bounties on [Raidboost.com]
@@ -714,6 +723,8 @@ local instantReportList = {
 	"boost.*today.*boomboost[%.,]com", --Boost Arena and HFC Heroic, have spots today, also conquest cap/honor/levelng boom-boost.com!
 	"client.*info.*boomboost[%.,]com", --525+ clients was happy, more info here -> boom-boost.com
 	"pro.*boomboost[%.,]com", --Arena 2000/2400/Glad, Honor Gear, Leveling 90-100. Big cap with glads, Want to play with Pro? boom-boost,сoм
+	"raid.*heroic.*loot.*exping.*fast.*power.*info", --Emerald Raids Heroic/Noraml Masterloot/Personal loot Today , Exping 100-110 (fast 10 hours) Artefacts power, pm me for more info!
+	"contact.*bestboost[%.,]club", --please contact with operator on website »>BESTBOOST.CLUB«<
 	"cheap.*bestboost[%.,]club", --BOOST 100-110 (15-18 hours) very cheap >>>>>[http://bestboost.club]<<<<<<< , OTHER BOOST SERVICE TO
 	"wts.*arena.*rbg.*coaching.*info", --{skull} WTS Arena 2200/2400/2700/glad/r1, Rbg 2200/HotA, 100wins,Big CQ CAPS, Coaching(playing with glad){skull} /w for more info
 	"wingsb{circle}{circle}st.*info", --{skull}WTS Heroic HFC lootrun today 8pm realmtime, 2spots for now, more info wingsb{circle}{circle}st.com {skull}/w for more info
@@ -727,8 +738,7 @@ local instantReportList = {
 	"wts.*heroic.*masterloot.*selfplay.*today.*superprice", --WTS: {rt7}{rt4}{rt4} HELLFIRE CITADEL: 13/13 (HEROIС)! MASTER LOOT, Selfplay! {rt4}{rt4}TODAY 21:00 CET{rt7} SUPER PRICE! Whisper me!{rt7} -- Verified real-money boosters not gold boosters
 	"wts.*heroic.*masterloot.*selfplay.*today.*discount", --WTS: {rt7}{rt4}{rt4} HELLFIRE CITADEL: 13/13 (HEROIС)! MASTER LOOT, Selfplay! {rt4}{rt4}TODAY 21:00 CET{rt7} DISCOUNT for CLOTH and LEATHER! Whisper me!{rt7} -- Verified real-money boosters not gold boosters
 	"niceboost%.c.*welcome", --{rt1}{rt1}NICE-BOOST .C0M{rt1}{rt1} good price {rt1}{rt1} - Cool loot runs {rt1}{rt1}{rt1}{rt1} Heroic/Normal boosts - all included.Welcome to{rt1}{rt1}NICE-B00ST.c0m{rt1}{rt1}
-	--\\\\\\\\\WWW. P V E B O O S T .COM\\\\\\\\\WWW. P V E B O O S T .COM\\\\\\\\\WWW. P V E B O O S T .COM\\\\\\\\\ - HFC HC / MYTHIC / FULL 725+ GEAR!
-	"pveboost[%.,]com.*hfc.*%d", --{rt1} WWW.PVEBOOST.COM <<<< BEST PVE BOOSTING, 169e only for 13/13 HFC HC! 79e for 13/13 normal!
+	"pveboost[%.,]com.*service", --►►► [PVEBOOST.COM] - 100-110 BOOST, MYTHIC AND MYTHIC+ DUNGEONS 10/10, THE EMERALD NIGHTMARE RAID ALL DIFFICULTIES, ARENA BOOST AND OTHER SERVICES [PVEBOOST.COM] ◄◄◄
 	"boostingstore[%.,]com.*gear", --{rt1} V.I.P. BOOSTING AT: www.boostingstore.com - your persoonalny booster willing to do: HFC HC / 710 gear / PvP / CM and more!
 	"prommote[%.,]me.*payment", --dnd Website: Prommote.me ; Skype: mmo-support3 ; E-mail: prommote@gmail.com ; Support work hours: 13:00 - 01:00 CET. Ingame whispers are ignored. Gold is not accepted as payment.
 	-- W w w , Prоmmоtе , Ме —  Вlаckrоck Foundry МL Lооt Runs Аnd  Full Geаr: 6 New Items Minimum,  Tоkens, Wаrfоrgеd Аnd Sоckеtеd Lооt Included !
@@ -752,6 +762,7 @@ local instantReportList = {
 	"mythic.*glories.*mount.*gold.*selfplay", --WTS: HFC Mythic & Heroic mode ▲ GROVE WARDEN ▲ BRF MYTHIC/HC ▼ GLØRIES ▲ MØUNT FÁRM ▼ CHÁLLENGE MODE GOLD ▲ SÉLF PLÁY ▼ AND MORE ON ►/w for more info◄◄
 	"wts.*dungeon.*story.*levell?ing.*info", --►►►[WTS] Heroic & Mythic dungeons, Glory of the Legion hero and Suramar Story progress,reputation and access to Arcway and Court of Stars! Artifact, leveling!  /w me for info◄◄◄
 	"service.*pewpewshop[%.,]pro", --Hello, if you want to know more about our services, please visit our website - PewPewShop.pro  Our live chat support always ready to help you! :)
+	"wts.*fast.*dungeon.*pvp.*emerald.*info", --[WTS] <<Fast 100-110>> | <<New Mythic/Heroic Dungeons>> | <<Full Dungeon Gear>> | <<Full PVP Gear>> || Emerald Nightmare Normal/Heroic/Mythic Raids and more. /W for more info
 	"wts.*character.*dungeon.*pvp.*emerald.*info", --[WTS] <<Character ↑↑ 100-110 ↑↑ lvl>> | <<New Mythic/Heroic Dungeons>> | <<Full Dungeon Gear>> | <<Full PVP Gear>> || Emerald Nightmare Normal/Heroic/Mythic Raids and more. /W for more info
 	"wts.*lift.*dungeon.*pvp.*emerald.*info", --<<Character lift 100-110 lvl>> | <<New Mythic/Heroic Dungeons>> | <<Full Dungeon Gear>> | <<Full PVP Gear>> || Emerald Nightmare Normal/Heroic/Mythic Raids and more. /W for more info
 	"wts.*boost.*dungeon.*pvp.*emerald.*info", --[WTS] <<Character boost 100-110 lvl>> | <<New Mythic/Heroic Dungeons>> | <<Full Dungeon Gear>> | <<Full PVP Gear>> || Emerald Nightmare Normal/Heroic/Mythic Runs and more. /W for more info
@@ -935,6 +946,12 @@ local instantReportList = {
 	"osboosting[%.,]com.*tarifs.*remise", --☼ www.os-boosting.com ☼ Le meilleur du boosting WoW à des tarifs imbattables. Donjons mythique 10/10 - Raids Cauchemar d'Emeraude 7/7 Normal & Héroïque - Métiers 700-800 - Pack 12 Pets TCG - Réputations Legion - Gold   | Code remise 5%: OS5%
 	"wallgaming.*loot.*keystone", --¤ www.WallGaming.com ¤ Raids Cauchemar d'Emeraude HM 7/7 6 loots/+ | Gloire au héros de Legion | Donjons Mythique 10/10 +5keystone | Arène 2c2 3c3 2000 & 2200 | Honneur PvP niveau 50 | Pets & Montures TCG |  N°1 FR
 
+	--[[ German ]]--
+	"besten.*skype.*sarmael.*coaching", --[Melk Trupp]Der Marktführer kanns einfach am Besten, nun sogar als aktueller Blizzconsieger! Melde Dich bei mir im Skype:Sarmael123456 und überzeuge Dich selbst! Ob Arena, Dungeons, Coachings oder Raids-Bei uns bekommst du jede Hilfe, die Du benötigst!
+	--[mmo-prof.com] raffle: Hellfire Citadel (Difficulty level: Mythic) 13/13 including loot. Eligibility requirements to be found on [mmo-prof.com]; Heroic raids, CM GOLD, mounts, PVP and more can be found , too. We're looking forward to your visit!
+	"mmoprof.*loot.*gold", --{rt2} [mmo-prof.com] {rt2} BRF Heroic / Highmaul Heroic , Mystisch Lootruns !! Arena 2,2k - Gladiator .. Jegliche TCG Mounts , Play in a Pro Guild (Helfen euch einer absoluten Top Gilde beizutreten, alles für Gold !! Schau vorbei {rt2} [mmo-prof.com] {rt2}
+	"mythic.*coaching.*mmoprof", --Bieten Smaragdgrüner Alptraum Mythic/Heroic/Normal Lootruns. Mythic + Instanzen 2-10! Item-Level Push. Coaching für dich! Play with a Pro! Oder komm ich deine Traumgilde und erspiele dir mit Profis deine Erfolge! [mmo-prof.de]
+
 	--[[  Advanced URL's/Misc  ]]--
 	"wts.*g[0o]ld.*mount.*price.*feedback", --WTS Your personal g0ld bank, Mounts, Followers, Leveling, Gear farm, Legendary weapons and more! Best conditions, friendly prices and a lot of feedbacks. Whisper me for info
 	"forpvp[%.,]com.*tiger", --WWW.FORPVP.COM .. 100000G==38E'ur.Swift Spectral Tiger=249E'uro .. WWW.FORPVP.COM..Have a good time!
@@ -971,15 +988,9 @@ local instantReportList = {
 	"goldpreise.*server.*skype", --Bieten Top Goldpreise auf allen deutschen Servern! an /w me bei Interesse oder add hambulaa/Skype!!! 55k
 	"gold.*challenge.*achiev.*%$%d+.*sk[py][yp]e", --{rt5}{rt5}spots open for Complete all the Gold dungeon challenge achievements， only $79, lvl522 item $100 each piece ,  raid progress TOT12/12,offer t15set, lvl522 lvl535 weapons,trinket etc,  PST to get more info or add skpye jolinvipservice
 	"fast4gold.*%d+k.*stock", --[Blazefury, Reborn]Feldrakefast4gold,Cô.mWE HAVE 800K in stock and you can receive within 5-10minutes fast4gold,Cô.mE--------------7286
-	"skype.*chefboosting[%.,]com", --{rt6}| WTS RBG Boost|{rt6}, Challenge Mode boost, Power leveling & SoR accounts // Must trusted boosting website in the world, supported by top Twitch Streamers!  contact skype :  chef-xtrem or [www.chefboosting.com]
-	"sellgold.*only%d+euro", --{rt1}Sell GOLD! 10.000 GOLD Only 5 Euro!{rt1}
-	"mia911[%.,]c.*skype", --{rt6}{rt6}{rt6}{rt6}{rt6}{rt6}{rt6}{rt6}{rt6}[www.mia911.cQm]{rt4}{rt4}{rt4}{rt4}{rt4}{rt4}800K G in sotck{rt5}{rt5}10000=8USD{rt5}{rt5}pl add skype;mia9116{rt5}{rt5}mia911.cQm{rt5}{rt5}{RT
-	"game4ok[%.,]c.*livechat", --{rt6}{rt6}{rt6}{rt6}{rt6}{rt6}{rt6}[www.game4ok.cQm]{rt4}{rt4}{rt4}[game4ok.cQm]{rt4}{rt4}800K G in sotck{rt5}{rt5}{rt5}traden in 10minutes{rt5}{[RT5game4ok.cQm]{rt5}{rt5}{rt5} [game4ok.cQm]{rt6}{rt6}{rt6}{rt6}[game4ok.cQm] contact by;Live Chat {rt4}{rt4}{rt4}{rt4}
 	"raidbroker[%.,]com.*skype", --Both Horde/Alliance teams! http://raidbroker.com ~ Jarvis.Dresden on Skype!!
 	"g@ld.*livraison.*exclusiv", --Envie de G@LD pour bien commencer WoD, livraison en moins de 5 min en exclusivité sur ysondre
 	"gold.*price.*http", --Challenge Gold best price!PVE!Leveling Profession !And much more http://wow-warcraft.nethouse.ru/
-	--[mmo-prof.com] raffle: Hellfire Citadel (Difficulty level: Mythic) 13/13 including loot. Eligibility requirements to be found on [mmo-prof.com]; Heroic raids, CM GOLD, mounts, PVP and more can be found , too. We're looking forward to your visit!
-	"mmoprof.*loot.*gold", --{rt2} [mmo-prof.com] {rt2} BRF Heroic / Highmaul Heroic , Mystisch Lootruns !! Arena 2,2k - Gladiator .. Jegliche TCG Mounts , Play in a Pro Guild (Helfen euch einer absoluten Top Gilde beizutreten, alles für Gold !! Schau vorbei {rt2} [mmo-prof.com] {rt2}
 	--{rt1}VERKAUFE GOLD Sehr Billig. Skypename : betz-500{rt1}
 	"verkaufen?gold.*skype", --{rt7}Wir Verkaufen Gold sehr Günstig. Skypename : betz-210{rt7}
 	"welcome.*safe.*paygolds", --100K=29USD,Welcome [towww.paygolds.com]800K in stock,we will finished your order in 10 mins,24/7 online service.fatest,cheapest,safest.please contact [uswww.paygolds.com]
@@ -1010,17 +1021,17 @@ local repTbl = {
 	["¨"]="", ["”"]="", ["“"]="", ["█"]="", ["▓"]="", ["▲"]="", ["◄"]="", ["►"]="", ["▼"]="", ["♥"]="", ["♫"]="", ["●"]="", ["■"]="", ["☼"]="", ["¤"]="", ["↑"]="",
 
 	--This is the replacement table. It serves to deobfuscate words by replacing letters with their English "equivalents".
-	["а"]="a", ["à"]="a", ["á"]="a", ["ä"]="a", ["â"]="a", ["ã"]="a", ["ą"]="a", ["å"]="a", --First letter is Russian "\208\176". Convert > \97
+	["а"]="a", ["à"]="a", ["á"]="a", ["ä"]="a", ["â"]="a", ["ã"]="a", ["å"]="a", ["Ą"]="a", ["ą"]="a", --First letter is Russian "\208\176". Convert > \97. Note: Ą fail with strlower, include both.
 	["с"]="c", ["ç"]="c", --First letter is Russian "\209\129". Convert > \99
 	["е"]="e", ["è"]="e", ["é"]="e", ["ë"]="e", ["ё"]="e", ["ę"]="e", ["ė"]="e", ["ê"]="e", ["Ě"]="e", ["ě"]="e", ["Ē"]="e", ["ē"]="e", ["Έ"]="e", ["έ"]="e", ["Ĕ"]="e", ["ĕ"]="e", --First letter is Russian "\208\181". Convert > \101. Note: Ě, Ē, Έ, Ĕ fail with strlower, include both.
 	["Ğ"]="g", ["ğ"]="g", ["Ĝ"]="g", ["ĝ"]="g", -- Convert > \103. Note: Ğ, Ĝ fail with strlower, include both.
 	["ì"]="i", ["í"]="i", ["ï"]="i", ["î"]="i", ["ĭ"]="i", ["İ"]="i", --Convert > \105
 	["к"]="k", ["ķ"]="k", -- First letter is Russian "\208\186". Convert > \107
-	["Μ"]="m", ["м"]="m",--First letter is capital Greek μ "\206\156". Convert > \109
+	["Μ"]="m", ["м"]="m", -- First letter is capital Greek μ "\206\156". Convert > \109
 	["о"]="o", ["ò"]="o", ["ó"]="o", ["ö"]="o", ["ō"]="o", ["ô"]="o", ["õ"]="o", ["ő"]="o", ["ø"]="o", ["Ǿ"]="o", ["ǿ"]="o", ["Θ"]="o", ["θ"]="o", ["○"]="o", --First letter is Russian "\208\190". Convert > \111. Note: Ǿ, Θ fail with strlower, include both.
 	["р"]="p", --First letter is Russian "\209\128". Convert > \112
 	["Ř"]="r", ["ř"]="r", ["Ŕ"]="r", ["ŕ"]="r", ["Ŗ"]="r", ["ŗ"]="r", --Convert > \114. -- Note: Ř, Ŕ, Ŗ fail with strlower, include both.
-	["Ş"]="s", ["ş"]="s", --Convert > \115. -- Note: Ş fail with strlower, include both.
+	["Ş"]="s", ["ş"]="s", ["Š"]="s", ["š"]="s", --Convert > \115. -- Note: Ş, Š fail with strlower, include both.
 	["ù"]="u", ["ú"]="u", ["ü"]="u", ["û"]="u", --Convert > \117
 	["ý"]="y", ["ÿ"]="y", --Convert > \121
 }
@@ -1088,35 +1099,27 @@ local IsSpam = function(msg)
 end
 
 --[[ Chat Scanning ]]--
-local Ambiguate, gsub, next, type, tremove, prevLineId, result, chatLines, chatPlayers = Ambiguate, gsub, next, type, tremove, 0, nil, {}, {}
+local Ambiguate, gsub, next, type, tremove = Ambiguate, gsub, next, type, tremove
+local blockedLineId, chatLines, chatPlayers = 0, {}, {}
 local spamCollector, prevLink, spamLineId = {}, 0, 0
-local prev = 0
-local filter = function(_, event, msg, player, _, _, _, flag, channelId, channelNum, _, _, lineId, guid)
-	local trimmedPlayer
-	if lineId == prevLineId then
-		return result -- For messages that are registered to more than once chat frame
-	else
-		if type(lineId) ~= "number" then -- Still some addons floating around breaking stuff :-/
-			print("|cFF33FF99BadBoy|r: One of your addons is breaking critical chat data (Line ID) I need to work properly :(")
-			return
-		end
+local eventFunc = function(_, event, msg, player, _, _, _, flag, channelId, channelNum, _, _, lineId, guid)
+	blockedLineId = 0
+	if event == "CHAT_MSG_CHANNEL" and (channelId == 0 or type(channelId) ~= "number") then return end --Only scan official custom channels (gen/trade)
 
-		prevLineId, result = lineId, nil
-		trimmedPlayer = Ambiguate(player, "none")
-		if event == "CHAT_MSG_CHANNEL" and (channelId == 0 or type(channelId) ~= "number") then return end --Only scan official custom channels (gen/trade)
-		if not myDebug and (not CanComplainChat(lineId) or UnitInRaid(trimmedPlayer) or UnitInParty(trimmedPlayer)) then return end --Don't scan ourself/friends/GMs/guildies or raid/party members
-		if flag == "GM" or flag == "DEV" then return end --GM's can't get past the CanComplainChat call but "apparently" someone had a GM reported by the phishing filter which I don't believe, no harm in having this check I guess
-		if event == "CHAT_MSG_WHISPER" then --These scan prevention checks only apply to whispers, it would be too heavy to apply to all chat
-			--RealID support, don't scan people that whisper us via their character instead of RealID
-			--that aren't on our friends list, but are on our RealID list. CanComplainChat should really support this...
-			local _, num = BNGetNumFriends()
-			for i=1, num do
-				local gameAccs = BNGetNumFriendGameAccounts(i)
-				for j=1, gameAccs do
-					local _, rName, rGame, rServer = BNGetFriendGameAccountInfo(i, j)
-					if rName == trimmedPlayer and rGame == "WoW" and rServer == GetRealmName() then
-						return
-					end
+	local trimmedPlayer = Ambiguate(player, "none")
+	if not myDebug and (not CanComplainChat(lineId) or UnitInRaid(trimmedPlayer) or UnitInParty(trimmedPlayer)) then return end --Don't scan ourself/friends/GMs/guildies or raid/party members
+
+	if flag == "GM" or flag == "DEV" then return end --GM's can't get past the CanComplainChat call but "apparently" someone had a GM reported by the phishing filter which I don't believe, no harm in having this check I guess
+	if event == "CHAT_MSG_WHISPER" then --These scan prevention checks only apply to whispers, it would be too heavy to apply to all chat
+		--RealID support, don't scan people that whisper us via their character instead of RealID
+		--that aren't on our friends list, but are on our RealID list. CanComplainChat should really support this...
+		local _, num = BNGetNumFriends()
+		for i=1, num do
+			local gameAccs = BNGetNumFriendGameAccounts(i)
+			for j=1, gameAccs do
+				local _, rName, rGame, rServer = BNGetFriendGameAccountInfo(i, j)
+				if rName == trimmedPlayer and rGame == "WoW" and rServer == GetRealmName() then
+					return
 				end
 			end
 		end
@@ -1130,23 +1133,17 @@ local filter = function(_, event, msg, player, _, _, _, flag, channelId, channel
 	end
 	--End string replacements
 
-	if type(guid) ~= "string" and (GetTime()-prev) > 5 then -- Still some addons floating around breaking stuff :-/
-		prev = GetTime()
-		print("|cFF33FF99BadBoy|r: One of your addons is breaking critical chat data (GUID) I need to work properly :(")
-		return
-	end
-
 	--20 line text buffer, this checks the current line, and blocks it if it's the same as one of the previous 20
 	if event == "CHAT_MSG_CHANNEL" then
 		for i=1, #chatLines do
 			if chatLines[i] == msg and chatPlayers[i] == trimmedPlayer then --If message same as one in previous 20 and from the same person...
-				result = true --...filter!
+				blockedLineId = lineId
 				--
 				if spamCollector[guid] and IsSpam(msg) then -- Reduce the chances of a spam report expiring (line id is too old) by refreshing it
 					spamCollector[guid] = lineId
 				end
 				--
-				return true
+				return
 			end
 			if i == 20 then tremove(chatLines, 1) tremove(chatPlayers, 1) end --Don't let the DB grow larger than 20
 		end
@@ -1177,8 +1174,8 @@ local filter = function(_, event, msg, player, _, _, _, flag, channelId, channel
 				end
 			end
 		end
-		result = true
-		return true
+		blockedLineId = lineId
+		return
 	-- If chat links are enabled, and we have spam, and it's been longer than 100sec since the previous link, and there's been 15 chat entries since the previous link
 	elseif not BADBOY_NOLINK and next(spamCollector) and GetTime() - prevLink > 100 and lineId - spamLineId > 15 then
 		local canReport = false
@@ -1196,6 +1193,11 @@ local filter = function(_, event, msg, player, _, _, _, flag, channelId, channel
 			wipe(spamCollector)
 			ChatFrame1:RemoveMessagesByExtraData(-5678) -- Remove messages from the chat frame with the -5678 signature
 		end
+	end
+end
+local filter = function(_, _, _, _, _, _, _, _, _, _, _, _, lineId)
+	if blockedLineId == lineId then
+		return true
 	end
 end
 
@@ -1220,29 +1222,49 @@ do
 end
 
 --[[ Add Filters ]]--
-ChatFrame_AddMessageEventFilter("CHAT_MSG_CHANNEL", filter)
-ChatFrame_AddMessageEventFilter("CHAT_MSG_YELL", filter)
-ChatFrame_AddMessageEventFilter("CHAT_MSG_SAY", filter)
-ChatFrame_AddMessageEventFilter("CHAT_MSG_WHISPER", filter)
-ChatFrame_AddMessageEventFilter("CHAT_MSG_EMOTE", filter)
-ChatFrame_AddMessageEventFilter("CHAT_MSG_DND", filter)
-ChatFrame_AddMessageEventFilter("CHAT_MSG_AFK", filter)
+do
+	local f = CreateFrame("Frame")
+	f:SetScript("OnEvent", eventFunc)
+	local tbl = {
+		"CHAT_MSG_CHANNEL",
+		"CHAT_MSG_YELL",
+		"CHAT_MSG_SAY",
+		"CHAT_MSG_WHISPER",
+		"CHAT_MSG_EMOTE",
+		"CHAT_MSG_DND",
+		"CHAT_MSG_AFK",
+	}
+	for i = 1, #tbl do
+		local event = tbl[i]
+		f:RegisterEvent(event)
+		ChatFrame_AddMessageEventFilter(event, filter)
+		for i = 1, 10 do
+			local cf = _G[("ChatFrame%d"):format(i)]
+			if cf:IsEventRegistered(event) then
+				cf:UnregisterEvent(event)
+				cf:RegisterEvent(event)
+			end
+		end
+	end
+end
 
 --[[ Blacklist ]]--
 do
 	local f = CreateFrame("Frame")
-	f:RegisterEvent("PLAYER_LOGIN")
-	f:SetScript("OnEvent", function(frame)
-		SetCVar("spamFilter", 1)
+	f:RegisterEvent("ADDON_LOADED")
+	f:SetScript("OnEvent", function(frame, event, addon)
+		if addon == "BadBoy" then
+			SetCVar("spamFilter", 1)
 
-		-- Blacklist DB setup, needed since Blizz nerfed ReportPlayer so hard the block sometimes only lasts a few minutes.
-		local _, _, day = CalendarGetDate()
-		if type(BADBOY_BLACKLIST) ~= "table" or BADBOY_BLACKLIST.dayFromCal ~= day then
-			BADBOY_BLACKLIST = {dayFromCal = day}
+			-- Blacklist DB setup, needed since Blizz nerfed ReportPlayer so hard the block sometimes only lasts a few minutes.
+			local _, _, day = CalendarGetDate()
+			if type(BADBOY_BLACKLIST) ~= "table" or BADBOY_BLACKLIST.dayFromCal ~= day then
+				BADBOY_BLACKLIST = {dayFromCal = day}
+			end
+
+			frame:UnregisterEvent(event)
+			frame:SetScript("OnEvent", nil)
 		end
-
-		frame:UnregisterEvent("PLAYER_LOGIN")
-		frame:SetScript("OnEvent", nil)
 	end)
 end
 

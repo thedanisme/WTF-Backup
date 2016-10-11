@@ -1,5 +1,5 @@
 ## Interface: 70000
-## Version: 7.0.3 r14
+## Version: 7.0.3 r15
 ## Title: DejaCharacterStats
 ## Authors: Dejablue
 ## Notes: Dejablue's improved character stats panel view.

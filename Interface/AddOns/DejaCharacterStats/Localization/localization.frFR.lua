@@ -7,9 +7,14 @@ if LOCALE == "frFR" then
 	-- The EU English game client also
 	-- uses the US English locale code.
 
--- ################################
--- ## Slash Commands ##
--- ################################
+-- #######################################################################################
+-- ##	Français (French) translations provided by Darkcraft92 and Ymvej on Curseforge.	##
+-- ##	Thank you Darkcraft92 and Ymvej!												##
+-- #######################################################################################
+
+-- #######################
+-- ##	Slash Commands 	##
+-- #######################
 
 --	L["/dcstats"] = ""
 --	L["DejaCharacterStats Slash commands (/dcstats):"] = ""
@@ -22,30 +27,30 @@ if LOCALE == "frFR" then
 --	L[" kbytes of memory after garbage collection"] = "" --kilobytes
 --	L["config"] = "" --configuration
 --	L["dumpconfig"] = "" --configuration
---	L["With defaults"] = ""
+	L["With defaults"] = "Avec valeurs par défaut"
 --	L["Direct table"] = ""
 --	L["reset"] = ""
 --	L["perf"] = "" --performance
---	L["Reset to Default"] = ""
+	L["Reset to Default"] = "Réinitialiser par défaut"
 
 -- ################################
 -- ## Global Options Left Column ##
 -- ################################
 
---	L["Equipped/Available"] = "Equipped/Available Checkbox Name"
---	L['Displays Equipped/Available item levels unless equal.'] = "Equipped/Available Checkbox Mouseover Description"
+	L["Equipped/Available"] = "Équipé/Disponible"
+	L['Displays Equipped/Available item levels unless equal.'] = "Afficher niveau d'objet Equipé/Disponible, sauf s'ils sont égaux."
 
---	L["Decimals"] = "Decimals Checkbox Name"
---	L['Displays "Enhancements" category stats to two decimal places.'] = "Decimals Checkbox Mouseover Description"
+	L["Decimals"] = "Décimales"
+	L['Displays "Enhancements" category stats to two decimal places.'] = 'Afficher les statistiques de la catégorie "Améliorations" avec deux décimales.'
 
---	L["Ilvl Decimals"] = "Ilvl Decimals Checkbox Name"
---	L['Displays average item level to two decimal places.'] = "Ilvl Decimals Checkbox Mouseover Description"
+	L["Ilvl Decimals"] = "Decimales pour le niveau d'objet"
+	L['Displays average item level to two decimal places.'] = "Afficher le niveau d'objet moyen avec deux décimales."
 
---	L['Durability '] = "Durability Checkbox Name"
---	L['Displays the average Durability percentage for equipped items in the stat frame.'] = "Durability Checkbox Mouseover Description"
+	L['Durability '] = "Durabilité "
+	L['Displays the average Durability percentage for equipped items in the stat frame.'] = "Afficher le pourcentage de durabilité moyen pour les objets équipés dans le tableau de statistique."
 
---	L['Repair Total '] = "Repair Total Checkbox Name"
---	L['Displays the Repair Total before discounts for equipped items in the stat frame.'] = "Repair Total Checkbox Mouseover Description"
+	L['Repair Total '] = "Réparation Totale"
+	L['Displays the Repair Total before discounts for equipped items in the stat frame.'] = "Afficher le coût total de réparation avant les réductions pour les objets équipés dans le tableau de statistiques."
 
 -- ################################
 
@@ -71,9 +76,9 @@ if LOCALE == "frFR" then
 --	L["Scrollbar"] = "Scrollbar Checkbox Name"
 --	L['Displays the DCS scrollbar.'] = "Scrollbar Checkbox Mouseover Description"
 
--- ################################
--- ## Character Options Right Column ##
--- ################################
+-- #######################################
+-- ##	Character Options Right Column	##
+-- #######################################
 
 --	L["Show All Stats"] = "All Stats Checkbox Name"
 --	L['Checked displays all stats. Unchecked displays relevant stats. Use Shift-scroll to snap to the top or bottom.'] = "All Stats Checkbox Mouseover Description"
@@ -81,18 +86,50 @@ if LOCALE == "frFR" then
 --	L["Select-A-Stat™"]  = "Select-A-Stat™ Checkbox Name" -- Try to use something snappy and silly like a Fallout or 1950's appliance feature.
 --	L['Select which stats to display. Use Shift-scroll to snap to the top or bottom.'] = "Select-A-Stat™ Checkbox Mouseover Description"
 
--- ################################
--- ## Stats ##
--- ################################
+-- ###############################
+-- ##			Stats			##
+-- ###############################
 
---	L["Movement Speed"] = "Movement Speed"
-
---	L["Durability"] = "Durability Stat Name" -- Be sure to include the colon ":" or it will conflict wih the options checkbox.
---	L["Durability %s"] = "Durability stat tooltip white mouseover title. You must use %%s to show %s. " -- ## --> %s MUST be included <-- ## 
+	L["Durability"] = "Durabilité" -- Be sure to include the colon ":" or it will conflict wih the options checkbox.
+	L["Durability %s"] = "Durabilité %s" -- ## --> %s MUST be included <-- ## 
 --	L["Average equipped item durability percentage."] = "Durability stat mouseover tooltip yellow description."
 
 --	L["Repair Total"] = "Repair Tot Stat Name" -- Be sure to include the colon ":" or it will conflict wih the options checkbox.
 --	L["Repair Total %s"] = "Repair Total stat tooltip white mouseover title. You must use %%s to show %s. " -- ## --> %s MUST be included <-- ## 
 --	L["Total equipped item repair cost before discounts."] = "Repair Total stat mouseover tooltip yellow description."
+
+-- ## Attributes ##
+
+	L["Health"] = "Vie"
+	L["Power"] = "Pouvoir"
+	L["Druid Mana"] = "Druide d'mana"
+	L["Armor"] = "Armure"
+	L["Strength"] = "Force"
+	L["Agility"] = "Agilité"
+	L["Intellect"] = "Intelligence"
+	L["Stamina"] = "Endurance"
+	L["Damage"] = "Dégâts"
+	L["Attack Power"] = "Puissance d'attaque"
+	L["Attack Speed"] = "Vitesse d'attaque"
+	L["Spell Power"] = "Puissance des sorts"
+	L["Mana Regen"] = "Régén. mana"
+	L["Energy Regen"] = "Régén. énergie"
+	L["Rune Regen"] = "Vitesse des runes"
+	L["Focus Regen"] = "Régén. focalisation"
+	L["Movement Speed"] = "Vitesse (déplacement)"
+	L["Durability"] = "Durabilité"
+	L["Repair Total"] = "Réparation Totale"
+
+-- ## Enhancements ##
+
+	L["Critical Strike"] = "Coup critique"
+	L["Haste"] = "Hâte"
+	L["Versatility"] = "Polyvalence"
+	L["Mastery"] = "Maîtrise"
+	L["Leech"] = "Ponction"
+	L["Avoidance"] = "Évitement"
+	L["Dodge"] = "Esquive"
+	L["Parry"] = "Parade"
+	L["Block"] = "Blocage"
 
 return end

@@ -85,8 +85,6 @@ if LOCALE == "zhCN" then
 -- ## Stats ##
 -- ################################
 
---	L["Movement Speed"] = "Movement Speed"
-
 --	L["Durability"] = "Durability Stat Name" -- Be sure to include the colon ":" or it will conflict wih the options checkbox.
 --	L["Durability %s"] = "Durability stat tooltip white mouseover title. You must use %%s to show %s. " -- ## --> %s MUST be included <-- ## 
 --	L["Average equipped item durability percentage."] = "Durability stat mouseover tooltip yellow description."
@@ -94,5 +92,39 @@ if LOCALE == "zhCN" then
 --	L["Repair Total"] = "Repair Tot Stat Name" -- Be sure to include the colon ":" or it will conflict wih the options checkbox.
 --	L["Repair Total %s"] = "Repair Total stat tooltip white mouseover title. You must use %%s to show %s. " -- ## --> %s MUST be included <-- ## 
 --	L["Total equipped item repair cost before discounts."] = "Repair Total stat mouseover tooltip yellow description."
+
+-- ## Attributes ##
+
+--	L["Health"] = ""
+--	L["Power"] = ""
+--	L["Druid Mana"] = ""
+--	L["Armor"] = ""
+--	L["Strength"] = ""
+--	L["Agility"] = ""
+--	L["Intellect"] = ""
+--	L["Stamina"] = ""
+--	L["Damage"] = ""
+--	L["Attack Power"] = ""
+--	L["Attack Speed"] = ""
+--	L["Spell Power"] = ""
+--	L["Mana Regen"] = ""
+--	L["Energy Regen"] = ""
+--	L["Rune Regen"] = ""
+--	L["Focus Regen"] = ""
+--	L["Movement Speed"] = ""
+--	L["Durability"] = ""
+--	L["Repair Total"] = ""
+
+-- ## Enhancements ##
+
+--	L["Critical Strike"] = ""
+--	L["Haste"] = ""
+--	L["Versatility"] = ""
+--	L["Mastery"] = ""
+--	L["Leech"] = ""
+--	L["Avoidance"] = ""
+--	L["Dodge"] = ""
+--	L["Parry"] = ""
+--	L["Block"] = ""
 
 return end
