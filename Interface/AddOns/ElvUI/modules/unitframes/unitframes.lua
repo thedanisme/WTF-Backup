@@ -1123,6 +1123,7 @@ end
 
 function UF:PLAYER_ENTERING_WORLD(event)
 	self:Update_AllFrames()
+	self:UnregisterEvent(event)
 end
 
 function UF:UnitFrameThreatIndicator_Initialize(_, unitFrame)
@@ -1184,7 +1185,7 @@ function UF:Initialize()
 	if not ORD then return end
 	ORD.ShowDispelableDebuff = true
 	ORD.FilterDispellableDebuff = true
-	ORD.MatchBySpellName = true
+	ORD.MatchBySpellName = false
 end
 
 function UF:ResetUnitSettings(unit)

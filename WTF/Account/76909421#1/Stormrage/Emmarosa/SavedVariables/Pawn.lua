@@ -1,13 +1,12 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0013,
+	["LastVersion"] = 2.01,
 	["LastPlayerFullName"] = "Emmarosa-Stormrage",
 	["AutoSelectScales"] = false,
 	["UpgradeTracking"] = false,
 	["LastKeybindingsSet"] = 1,
 }
-PawnMrRobotScaleProviderOptions = nil
-PawnWowheadScaleProviderOptions = {
+PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "ROGUE",
-	["LastAdded"] = 5,
+	["LastAdded"] = 1,
 }
