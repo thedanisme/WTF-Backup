@@ -840,6 +840,7 @@ function DugisArrow:Initialize()
 	end	
 
 	function DugisArrow:OnQuestLogChanged()
+		if DugisGuideViewer.wqtloaded then return end
 		local wp = DugisArrow:getFirstWaypoint()
 		if not wp or wp.guideIndex or not wp.questId then return end
 		if QuestMapFrame_IsQuestWorldQuest(wp.questId) and IsWorldQuestWatched(wp.questId) then 
@@ -1255,7 +1256,6 @@ function DugisArrow:Initialize()
 		DugisGuideViewer.Ants:UpdateAntTrail(elapsed-lastElapsed)
 		lastElapsed = elapsed
 		
-		--DugisGuideViewer:UpdateTravelToLocation()
 	end
 
 	function DugisArrow:UPDATE(event, elapsed, ...)
@@ -1274,6 +1274,7 @@ function DugisArrow:Initialize()
 		if not DugisGuideUser.FinalizeWaypoint then
 			DugisArrow:FinalizeWaypointIcon() 
 		end
+		DugisGuideViewer:UpdateTravelToLocation()		
 	end
 
 	function DugisArrow:GetSetting(variable)
@@ -1443,7 +1444,7 @@ function DugisArrow:Initialize()
 			SetWaypointMembers(point, guideIndex, isWTag, questId)
 			return true
 		else
-			QueueAutoroutine("SetSmartWaypoint", SetSmartWaypointRoutine, mapID, mapFloor, x, y, desc, guideIndex, isWTag, questId):OnCompletion(SetQueuedWaypointInfo)
+			BeginAutoroutine("SetSmartWaypoint", SetSmartWaypointRoutine, mapID, mapFloor, x, y, desc, guideIndex, isWTag, questId):OnCompletion(SetQueuedWaypointInfo)
 			return false
 		end
 	end
@@ -2238,7 +2239,7 @@ function DugisArrow:Initialize()
 				end
 			end
 			if recalculationQueue then 
-				QueueAutoroutine("RecalculateRoutes", RecalculateRoutesRoutine)
+				BeginAutoroutine("RecalculateRoutes", RecalculateRoutesRoutine)
 			end
 		end
 		

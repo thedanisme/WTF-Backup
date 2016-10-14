@@ -429,7 +429,7 @@ A Whispers from the Dark |QID|39061| |N|(npc:94318) in {Greywatch} (71.55, 59.81
 f Greywatch |QID|39472| |N|Grab the flight path for {Greywatch} from (npc:98108) (72.15, 59.83)| |Z|1017 0| |NPC|98108|
 
 R Bronzeleaf Thicket |QID|39472| |N|Travel to the {Bronzeleaf Thicket} (72.39, 61.11)| |Z|1017 0|
-A Cut Out the Heart |QID|39472| |N|Click on the forsaken battle plan to accept the quest in the {Bronzeleaf Thicket} (72.39, 61.11)| |Z|1017 0| |NPC|243700|
+A Cut Out the Heart |QID|39472| |N|Click on the forsaken battle plan to accept the quest in the {Bronzeleaf Thicket} (72.39, 61.11)| |Z|1017 0|
 N Western Plague Cache |QID|39060.3| |N|Use the (item:127295) and burn the Western Plague Cache in the {Bronzeleaf Thicket} (72.50, 61.04)| |U|127295| |Z|1017 0|
 N Eastern Plague Cache |QID|39060.2| |N|Use the (item:127295) and burn the Eastern Plague Cache in {Bronzeleaf Thicket} (73.29, 62.94)| |U|127295| |Z|1017 0|
 C Cut Out the Heart |QID|39472| |N|Kill (npc:93987) in the {Bronzeleaf Thicket} (74.98, 62.00)| |Z|1017 0| |NPC|93987|

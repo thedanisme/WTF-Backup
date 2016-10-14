@@ -329,7 +329,7 @@ A Doom and Gloom |QID|41780| |N|(npc:104824) in {Bradensbrook} (39.19,62.64)| |Z
 
 R Dreadroot |QID|41780| |N|Travel to {Dreadroot} (68.15,48.53) (66.69,45.82) (65.64,43.03) (66.32,39.05)| |Z|1018 0| 
 K (npc:97338) |QID|41780.1| |N|Kill (npc:97338) and collect 50 (item:128759) in {Dreadroot}  (66.32,39.05)| |Z|1018 0| |NPC|97338|
-K (npc:128330) |QID|41780.3| |N|Kill (npc:128330) in {Dreadroot} (65.81,40.94) (66.40,45.30) (68.18,48.60) (55.74,56.76) (55.44,51.74) (57.89,46.49) (58.97,47.66)| |Z|1018 0| |NPC|128330|
+K (npc:92383) |QID|41780.3| |N|Kill (npc:92383) and collect (item:128330) in {Dreadroot} (65.81,40.94) (66.40,45.30) (68.18,48.60) (55.74,56.76) (55.44,51.74) (57.89,46.49) (58.97,47.66)| |Z|1018 0| |NPC|92383|
 
 R Moonclaw Vale |QID|41780| |N|Travel to {Moonclaw Vale} (61.06,73.37)| |Z|1018 0|
 N (item:128758) |QID|41780.2| |N|Click on the Spotted Gloomcaps Collect 8 (item:128758) from the ground in {Moonclaw Vale} (61.06,73.37)| |Z|1018 0|

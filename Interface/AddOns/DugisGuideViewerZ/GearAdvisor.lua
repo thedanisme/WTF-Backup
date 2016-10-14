@@ -3330,7 +3330,7 @@ function GA:Initialize()
 
 		local function ContinueEquip(showPrompt, continueFromSlot)
 			if GetRunningAutoroutine("ContinueEquipRoutine") then return end
-			QueueAutoroutine("ContinueEquipRoutine", ContinueEquipRoutine, showPrompt, continueFromSlot)
+			BeginAutoroutine("ContinueEquipRoutine", ContinueEquipRoutine, showPrompt, continueFromSlot)
 		end
 
 		local function ClearCompareLines()
@@ -3639,7 +3639,7 @@ function GA:Initialize()
 			if lastRewardFrameShow~=elapsed then
 				lastRewardFrameShow = elapsed
 				InterruptAutoroutine("EvaluateRewards")
-				QueueAutoroutine("EvaluateRewards", EvaluateRewards)
+				BeginAutoroutine("EvaluateRewards", EvaluateRewards)
 			end
 		end
 		rewardShowReaction = RegisterMemberFunctionReaction(QuestInfoRewardsFrame, "Show", ShouldShowQuestItems):
@@ -3673,7 +3673,7 @@ function GA:Initialize()
 
 		local function EvaluateLootRoll()
 			InterruptAutoroutine("EvaluateLootRollRoutine")
-			QueueAutoroutine("EvaluateLootRollRoutine", EvaluateLootRollRoutine)
+			BeginAutoroutine("EvaluateLootRollRoutine", EvaluateLootRollRoutine)
 		end
 
 		lootRollShowReaction = RegisterFunctionReaction("GroupLootFrame_OpenNewFrame"):WithAction(EvaluateLootRoll)
@@ -3862,7 +3862,7 @@ function GA:Initialize()
 
 		local function EvaluateVendor()
 			InterruptAutoroutine("EvaluateVendor")
-			QueueAutoroutine("EvaluateVendor", EvaluateVendorRoutine)
+			BeginAutoroutine("EvaluateVendor", EvaluateVendorRoutine)
 		end
 
 		vendorUpdateReaction =  RegisterFunctionReaction("MerchantFrame_UpdateMerchantInfo"):WithAction(EvaluateVendor)
@@ -3916,7 +3916,7 @@ function GA:Initialize()
 
 		local function EvaluateLoot()
 			InterruptAutoroutine("EvaluateLoot")
-			QueueAutoroutine("EvaluateLoot", EvaluateLootRoutine)
+			BeginAutoroutine("EvaluateLoot", EvaluateLootRoutine)
 		end
 
 		lootUpdateReaction =  RegisterFunctionReaction("LootFrame_Update"):WithAction(EvaluateLoot)

@@ -55,7 +55,7 @@ function Taxi:Initialize()
 		route.parentRoute = parentRoute
 		route.currentBest = currentBest
 		route.builder = builder
-		return route:BindToAutoroutineLifetime(PoolRoute)
+		return route
 	end
 	
 	local function IsBestEstimate(route, otherRoute, ...)
@@ -357,6 +357,7 @@ function Taxi:Initialize()
 					dataTbl[1], dataTbl[2], m2, f2, x2, y2, m1, f1 or 0, mTrans, fTrans or 0, ...))
 				if #(recursiveResult)==0 then
 					tPool(recursiveResult)
+					recursiveResult = nil
 				else
 					resultX,resultY,_,resultBreadCrumb = select(3,unpack(dataTbl))
 					break
@@ -368,6 +369,7 @@ function Taxi:Initialize()
 				tPool(dataTbl)
 			end
 			tPool(distTable)
+			if not recursiveResult then return end
 			if not resultY or #(recursiveResult)<4 then
 				tPool(recursiveResult)
 				return

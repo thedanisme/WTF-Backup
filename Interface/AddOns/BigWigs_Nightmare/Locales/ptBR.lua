@@ -3,6 +3,8 @@ if not L then return end
 if L then
 	L.forces = "Forças do pesadelo"
 	L.bramblesSay = "Espinheiras perto de %s"
+	--L.custom_off_multiple_breath_bar = "Show multiple Rotten Breath bars"
+	--L.custom_off_multiple_breath_bar_desc = "Per default BigWigs will only show the Rotten Breath bar of one drake. Enable this option if you want to see the timer for each drake."
 end
 
 L = BigWigs:NewBossLocale("Elerethe Renferal", "ptBR")
@@ -25,12 +27,14 @@ if L then
 	L.gelatinizedDecay = "Decomposição Gelatinizada"
 	L.befouler = "Conspurcador Cordismáculo"
 	L.shaman = "Xamã Atroz"
+	--L.custom_on_mark_totem = "Mark the Totems"
+	--L.custom_on_mark_totem_desc = "Mark the Totems with {rt8}{rt7}, requires promoted or leader."
 end
 
 L = BigWigs:NewBossLocale("Ursoc", "ptBR")
 if L then
-	L.custom_off_gaze_assist = "Assistente de Olhar Concentrado"
-	L.custom_off_gaze_assist_desc = "Mostra ícones marcadores de raide nas barras e mensagens para Olhar Concentrado. Usa {rt4} em casts ímpares e {rt6} em casts pares. Requer assistente ou líder."
+	L.custom_on_gaze_assist = "Assistente de Olhar Concentrado"
+	L.custom_on_gaze_assist_desc = "Mostra ícones marcadores de raide nas barras e mensagens para Olhar Concentrado. Usa {rt4} em casts ímpares e {rt6} em casts pares. Requer assistente ou líder."
 end
 
 L = BigWigs:NewBossLocale("Xavius", "ptBR")

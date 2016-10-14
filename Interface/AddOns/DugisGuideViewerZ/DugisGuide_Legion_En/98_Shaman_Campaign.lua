@@ -33,7 +33,7 @@ A The Elements Call... |QID|41335| |N|(npc:96527) in {Storm's Eye Overlook} (35.
 C The Elements Call... |QID|41335| |N|Speak with (npc:96527) and choose the Artifact you wish to pursue in {Storm's Eye Overlook} (35.99, 75.01)| |Z|1056 0| |NPC|96527|
 T The Elements Call... |QID|41335| |N|(npc:96527) in {Storm's Eye Overlook} (35.99, 75.01)| |Z|1056 0| |NPC|96527|
  
- A Accept Quest |N|Accept artifact quest from (npc:96541) in {Storm's Eye Overlook} (34.23, 74.43)| |Z|1056 0| |NPC|96541| |OID|43334, 42931, 43644|
+A Accept Quest |N|Accept artifact quest from (npc:96541) in {Storm's Eye Overlook} (34.23, 74.43)| |Z|1056 0| |NPC|96541| |OID|43334, 42931, 43644|
  
 -- Shaman Elemental Fist Weapon Quests Begin (Fist of Ra-den)
 
@@ -254,8 +254,8 @@ R Silithus |QID|42977| |N|(npc:14347) in {Silithus} (29.62,10.52)| |Z|261 0| |NP
 T Servant of the Windseeker |QID|42977| |N|(npc:14347) in {Silithus} (29.62,10.52)| |Z|261 0| |NPC|14347|
 A Blessed Blade of the Windseeker |QID|43002| |N|(npc:14347) in {Silithus} (29.62,10.52)| |Z|261 0| |NPC|14347|
 
-R Azsuna |N|Travel to {Azsuna} (43.30,44.95)| |Z|1015 0|
-Locate Thunderfury |QID|43002.1| |N|Locate (item:139000) inside the cave (43.30,44.95) (39.70,49.89) (38.51,54.01) (36.32,50.27) (34.61,49.73) (32.73,48.83)| |Z|1015 0|
+R Azsuna |QID|43002| |N|Travel to {Azsuna} (43.30,44.95)| |Z|1015 0|
+N Locate Thunderfury |QID|43002.1| |N|Locate (item:139000) inside the cave (43.30,44.95) (39.70,49.89) (38.51,54.01) (36.32,50.27) (34.61,49.73) (32.73,48.83)| |Z|1015 0|
 N (item:139000) |QID|43002.2| |N|Collect (item:139000) (32.73,48.83)| |Z|1015 0|
 
 R The Maelstrom |QID|44153| |N|Travel to {The Maelstrom} (32.50,32.87)| |Z|1057 0|
@@ -275,7 +275,7 @@ N (npc:104788) |QID|41776.1| |N|Summon (npc:104788) and watch the dialogue (52.0
 T Return of the Windlord |QID|41776| |N|(npc:104788) in {Nimbus Rise} (52.40,79.34)| |Z|1070 1| |NPC|104788|
 A Oath of the Windlord |QID|41901| |N|(npc:104788) in {Nimbus Rise} (52.40,79.34)| |Z|1070 1| |NPC|104788|
 
-R The Heart of Azeroth |QID|42986| |N|Travel to {The Heart of Azeroth} (32.98, 60.39)| |Z|1057 0|
+R The Heart of Azeroth |OID|44465| |N|Travel to {The Heart of Azeroth} (32.98, 60.39)| |Z|1057 0|
 T Oath of the Windlord |QID|41901| |N|(npc:96746) in {The Heart of Azeroth} (32.98, 60.39)| |Z|1057 0| |NPC|96746|
 A Enemies of Air |QID|42986| |N|(npc:96746) in {The Heart of Azeroth} (32.98, 60.39)| |Z|1057 0| |NPC|96746|
 A The Maelstrom Pillar: Air |QID|42996| |N|(npc:96746) in {The Heart of Azeroth} (32.98, 60.39)| |Z|1057 0| |NPC|96746|

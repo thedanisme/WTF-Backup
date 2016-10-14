@@ -92,7 +92,7 @@ C Ancient Mana |QID|44672| |N|Gather from 3 Ancient Mana nodes in {Meredil} (34.
 R Shal'Aran |TID|44672| |N|Travel to {Shal'Aran} (34.91, 47.81)| |Z|1033 0|
 T Ancient Mana |QID|44672| |N|(npc:97140) in {Shal'Aran} (36.58, 46.94)| |Z|1033 0| |NPC|97140|
 T An Old Ally |QID|40012| |N|Enchanted Scroll in {Ambervale} (30.26, 39.61)| |Z|1033 0|
-A Scattered Memories |QID|40326| |N|(npc:245328) in {Ambervale} (30.26, 39.61)| |Z|1033 0| |NPC|245328|
+A Scattered Memories |QID|40326| |N|Enchanted Scroll in {Ambervale} (30.26, 39.61)| |Z|1033 0|
 A A Re-Warding Effort |QID|41149| |N|(npc:109022) in {Ambervale} (30.56, 40.02)| |Z|1033 0| |NPC|109022|
 C A Re-Warding Effort |QID|41149| |N|Activate 4 Arcane Wards and Inspect 6 pages of Kel'danath's Notes in {Ambervale} (29.41, 40.33) (27.92, 38.57) (28.66, 39.06) (27.65, 42.52) (28.14, 44.32) (26.43, 44.45) (25.04, 43.69) (24.97, 44.32) (23.86, 44.86)| |Z|1033 0|
 C Scattered Memories |QID|40326| |N|Inspect 6 pages of Kel'danath's Notes in {Ambervale} (23.86, 44.86) (22.96, 45.51) (22.95, 45.53)| |Z|1033 0|
@@ -291,7 +291,7 @@ C The Hidden City |QID|42228| |N|Follow (npc:107959) through {Falanaar Tunnels} 
 T The Hidden City |QID|42228| |N|Ancient Seed in {Shattered Locus} (35.16, 54.53)| |Z|1033 32|
 A The Valewalker's Burden |QID|42230| |N|Ancient Seed in {Shattered Locus} (35.16, 54.53)| |Z|1033 32|
 C The Valewalker's Burden |QID|42230| |N|Activate the Fal'adora Beacon in {Temple of Fal'adora} (37.17, 46.23) (41.08, 14.19)| |Z|1033 32|
-T The Valewalker's Burden |QID|42230| |N|Ancient Seed Stand in {Shal'Aran} (36.85, 46.47)| |Z|1033 0| |NPC|252083|
+T The Valewalker's Burden |QID|42230| |N|Ancient Seed Stand in {Shal'Aran} (36.85, 46.47)| |Z|1033 0|
 A Seed of Hope |QID|44561| |N|(npc:107126) in {Shal'Aran} (36.85, 46.54)| |Z|1033 0| |NPC|107126|
 A Building an Army |QID|44636| |N|(npc:97140) in {Shal'Aran} (36.88, 46.60)| |Z|1033 0| |NPC|97140|
 C Building an Army |QID|44636| |N|Speak with (npc:97140) when you are ready to lead the withered in their first combat training mission in {Shal'Aran} (36.88, 46.60)| |Z|1033 0| |NPC|97140|
@@ -463,8 +463,8 @@ A Quality of Life |QID|40470| |N|(npc:100331) in {Meredil} (37.80, 61.58)| |Z|10
 N (npc:100185) |QID|40470.1| |N|Follow (npc:100185) in {Meredil} (38.29, 76.45)| |Z|1033 0| |NPC|100185|
 K (npc:100301) |QID|40470.2| |N|Defeat (npc:100301) in {The Fel Breach} (44.40, 38.34)| |Z|1033 23| |NPC|100301|
 
-A Felsoul Teleporter Online! |QID|41575| |N|Unpowered Telemancy Beacon in {The Fel Breach} (53.62, 36.82)| |Z|1033 23| |NPC|252107|
-T Felsoul Teleporter Online! |QID|41575| |N|Unpowered Telemancy Beacon in {The Fel Breach}, you will need some (cur:1155) to activate it (53.62, 36.82)| |Z|1033 23| |NPC|252107|
+A Felsoul Teleporter Online! |QID|41575| |N|Unpowered Telemancy Beacon in {The Fel Breach} (53.62, 36.82)| |Z|1033 23|
+T Felsoul Teleporter Online! |QID|41575| |N|Unpowered Telemancy Beacon in {The Fel Breach}, you will need some (cur:1155) to activate it (53.62, 36.82)| |Z|1033 23|
 
 R Shal'Aran |TID|40470| |N|Travel to {Shal'Aran} (36.77, 46.56)| |Z|1033 0|
 N (npc:97140) |QID|40470.3| |N|Speak to (npc:97140) in {Shal'Aran} (36.77, 46.56)| |Z|1033 0| |NPC|97140|

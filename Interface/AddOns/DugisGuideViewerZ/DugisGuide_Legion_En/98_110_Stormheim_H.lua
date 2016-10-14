@@ -495,7 +495,7 @@ C Drive Back the Tideskorn |QID|39998| |N|Kill demons and destroy the portals in
 R Ranger's Foothold |TID|39154|  |N|Travel to {Ranger's Foothold} (56.74, 66.29)| |Z|1017 0| |NPC|94227|
 T To Skold-Ashil |QID|39154| |N|(npc:94227) in {Ranger's Foothold} (56.74, 66.29)| |Z|1017 0| |NPC|94227|
 A Shielded Secrets |QID|38878| |N|(npc:94227) in {Ranger's Foothold} (56.74, 66.29)| |Z|1017 0| |NPC|94227|
-A Stories of Battle |QID|39405| |N|Click on the scroll in {Skold-Ashil} (58.54, 64.26)| |Z|1017 0| |NPC|251571|
+A Stories of Battle |QID|39405| |N|Click on the scroll in {Skold-Ashil} (58.54, 64.26)| |Z|1017 0|
 C Shielded Secrets |QID|38878| |N|Examine 6 Engraved Vrykul Shields found in each waypoint in {Skold-Ashil} (58.48, 63.69) (61.46, 63.30) (61.30, 61.88) (60.47, 60.05) (62.16, 65.10) (63.38, 64.64)| |Z|1017 0|
 C Stories of Battle |QID|39405| |N|Collect 8 (item:126946) from (npc:94856) in {Skold-Ashil} (58.60, 64.30)| |Z|1017 0| |POI|
 T Stories of Battle |QID|39405| |N|Field turn in|

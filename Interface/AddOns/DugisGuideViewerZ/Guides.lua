@@ -144,7 +144,7 @@ function Guides:Initialize()
         
         PopulateRecentGuides()
         
-        if (not CurrentTitle  or not GetCurrentGuideTypeTabInfo().leftShouldScroll) and self.text ~= "Current Guide" then
+        if DGV:isValidGuide(CurrentTitle) and (not CurrentTitle or not GetCurrentGuideTypeTabInfo().leftShouldScroll) and self.text and self.text ~= "Current Guide" then
             guidesMainScroll.frame:Hide()
         else
             guidesMainScroll.frame:Show()
@@ -2061,7 +2061,7 @@ function Guides:Initialize()
 
 	local function CheckForWaypointLocation(indx)
 		if CurrentTitle ~= nil then 
-			if indx == DGU.CurrentQuestIndex and (DGV.actions[indx] == "R" or DGV.actions[indx] == "H") and not DGV.tags[DGU.CurrentQuestIndex]:match("(|WR|)") then 
+			if indx == DGU.CurrentQuestIndex and DGV.tags[DGU.CurrentQuestIndex]:match("(|REACH|)") then 
 				if DGV.DugisArrow.waypoints and #DGV.DugisArrow.waypoints==1 and 
 					DGV.DugisArrow:getFirstWaypoint()==DGV.DugisArrow:DidPlayerReachWaypoint() then
 					return true
@@ -2183,6 +2183,10 @@ function Guides:Initialize()
 			end
 			visualRows[DGU.CurrentQuestIndex]:SetNormalTexture("Interface\\AddOns\\DugisGuideViewerZ\\Artwork\\highlight.tga")
 		end
+		
+		if DGV:ReturnTag("RESET", DGU.CurrentQuestIndex) then 
+			DGV:ResetButtonOnClick()
+		end			
 		
 	end
 
@@ -5215,6 +5219,10 @@ function Guides:Initialize()
 				if (tags:match("%(item:") or tags:match("%[[^%]]+%]") or tags:match("|T|")) and not tags:match("|U|") then 
 					return true
 				end
+			elseif tag == "RESET" then 
+				if tags:match("|RESET|") then 
+					return true
+				end					
 			elseif tag == "STAGE" then
 				local stage = tags:match("|SID|%d+%|(%d*)|")
 				return stage

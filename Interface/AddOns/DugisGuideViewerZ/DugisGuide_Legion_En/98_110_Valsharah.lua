@@ -134,7 +134,7 @@ A Grassroots Effort |QID|42884| |N|(npc:109631) in {Grizzleweald} (66.68,77.27)|
 A Grell to Pay |QID|42865| |N|(npc:109631) in {Grizzleweald} (66.68,77.27)| |Z|1018 0| |NPC|109631|
 A Moist Around the Hedges |QID|42857| |N|Moist Grizzlecomb in {Grizzleweald} (66.82,75.67)| |Z|1018 0|
 N As you go... |AYG|42865| |N|Collect 5 (item:138788) from the ground and kill 8 (npc:109045)| |QID|42857|
-C Grassroots Effort |QID|42884.1| |N|(68.22,74.44) (68.71,73.86) (68.67,73.43) (68.65,72.66) (67.50,72.38)| |Z|1018 0|
+C Grassroots Effort |QID|42884.1| |N|Use (item:138815) to destroy 5 snarled brambles in Grizzleweald (68.22,74.44) (68.71,73.86) (68.67,73.43) (68.65,72.66) (67.50,72.38)| |Z|1018 0| |U|138815|
 K (npc:109073) |QID|42865.1| |N|Kill (npc:109073) in {Grizzleweald } (68.08,71.62)| |Z|1018 0| |NPC|109073|
 C All Grell Broke Loose |QID|42883.1| |N|Kill 8 (npc:109045) in {Grizzleweald} (67.16,74.83)| |Z|1018 0| |NPC|109045|
 C Moist Around the Hedges |QID|42857.1| |N|Collect 5 (item:138788) in {Grizzleweald} (67.16,74.83)| |Z|1018 0|

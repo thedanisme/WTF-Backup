@@ -323,7 +323,7 @@ R Hrydshal |QID|41039| |N|Travel to {Hrydshal} (45.22, 64.96)| |Z|1017 0|
 N Taste the Sour Storm Brew |QID|41039.2| |N|Click sour storm mead to taste it,  you will need to grapple over the wall in {Hrydshal} (45.22, 64.96) (44.14,65.91)| |Z|1017 0|
 N Taste the Weak Storm Brew |QID|41039.3| |N|Click weak storm mead in {Hrydshal} (45.43,67.86)| |Z|1017 0|
 N Taste the Blazing Storm Brew |QID|41039.4| |N|Click blazing storm brew in {Hrydshal} (45.05,69.36)| |Z|1017 0|
-K (npc:102852) |QID|41039.5| |N|Kill (npc:133995) and collect (item:133995) in {Hrydshal} (44.64,72.35)| |Z|1017 0| |NPC|133995|
+K (npc:102852) |QID|41039.5| |N|Kill (npc:102852) and collect (item:133995) in {Hrydshal} (44.64,72.35)| |Z|1017 0| |NPC|102852|
 T Stolen Knowledge |QID|41039| |N|(npc:102996)  in {Hrydshal}, next to you (44.64,72.35)| |Z|1017 0| |NPC|102996|
 A Freya's Spring |QID|41910| |N|(npc:102996)  in {Hrydshal}, next to you (44.64,72.35)| |Z|1017 0| |NPC|102996|
 A The Brewmaster |QID|41040| |N|(npc:102996)  in {Hrydshal}, next to you (44.64,72.35)| |Z|1017 0| |NPC|102996|

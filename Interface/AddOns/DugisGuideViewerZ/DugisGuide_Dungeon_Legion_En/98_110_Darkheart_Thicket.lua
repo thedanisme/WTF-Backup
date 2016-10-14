@@ -9,7 +9,9 @@ K (npc:103344) |SID|30602| |N|Kill (npc:103344) in {Miasmic Gorge}<br/><b>Avoid 
 N (item:140313) |QID|44076.1| |N|Collect (item:140313) from (npc:103344) (44.18, 48.76)| |Z|1067 0| |C|Druid| |O|
 N (item:138270) |QID|42654.1| |N|Collect (item:138270) from (npc:103344) (44.18, 48.76)| |Z|1067 0| |C|Hunter| |O|
 K (npc:99200) |SID|29274| |N|Kill (npc:99200) in {Tainted Burrow}<br/><b>Avoid disturbing Nightmare Eggs during (spell:199345) (48.62, 36.77) (65.91, 45.08)| |Z|1067 0| |NPC|99200|
+N (item:136578) |SK| |QID|40158.1| |N|Skin (npc:99200) to collect (item:136578)(65.91, 45.08)| |Z|1067 0| |NPC|99200| |O| --Skinning
 K (npc:99192) |SID|29275| |N|Kill (npc:99192) in {Heart of Dread}<br/><b>If affected by (spell:200359) stay away from other players to keep them from being damaged or feared<br/><b>If affected by (spell:200243) stand near other players to remove silence and pacified (62.77, 49.16) (57.48, 57.56) (82.45, 85.73)| |Z|1067 0| |NPC|99192|
+N (item:126940) |QID|38799| |N|Collect (item:126940) from (npc:99192 in {Heart of Dread} (82.45, 85.73)| |Z|1067 0| |NPC|99192| |O| --Mining
 
 C Enter the Nightmare |QID|40567| |N|Kill (npc:99192) in {Heart of Dread} (82.45, 85.73)| |Z|1067 0| |O|
 T Enter the Nightmare |QID|40567| |N|(npc:104921) in {Temple of Elune} (53.69, 55.92)| |Z|1018 0| |NPC|104921| |O|

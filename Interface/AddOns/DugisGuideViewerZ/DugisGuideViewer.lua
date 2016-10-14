@@ -731,6 +731,7 @@ function DugisGuideViewer:initAnts()
 	DugisGuideViewer.outfitterloaded = nil
 	DugisGuideViewer.arkinventoryloaded = nil
 	DugisGuideViewer.zygorloaded = nil
+	DugisGuideViewer.wqtloaded = nil	
 
 	for addon=1, GetNumAddOns() do
 		local name, _, _, enabled = GetAddOnInfo(addon)
@@ -749,7 +750,8 @@ function DugisGuideViewer:initAnts()
 		elseif name == "Outfitter" and loaded then DugisGuideViewer.outfitterloaded = true
 		elseif name == "Wholly" and loaded then DugisGuideViewer.whollyloaded = true
 		elseif name == "ArkInventory" and loaded then DugisGuideViewer.arkinventoryloaded = true 
-		elseif name == "ZygorGuidesViewer" and loaded then DugisGuideViewer.zygorloaded = true end
+		elseif name == "ZygorGuidesViewer" and loaded then DugisGuideViewer.zygorloaded = true
+		elseif name == "WorldQuestTracker" and loaded then DugisGuideViewer.wqtloaded = true end		
 	end
 	
 	--if DugisGuideViewer.tomtomloaded then TomTom.profile.persistence.cleardistance = 0 end

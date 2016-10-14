@@ -247,10 +247,24 @@ T Light's Charge |QID|44153| |N|Class Order Hall| |POI|
 
 N Level 103 Required |N|You need to be at least level 103 to continue with the class campaign quest line| |PL|103|
 
+A Lending a Hand |QID|42385| |N|(npc:107317) in {Trueshot Lodge} (43.32, 26.19)| |Z|1072 0| |NPC|107317|
+
+R Bradensbrook |OID|42388| |N|Travel to {Bradensbrook} (41.70,60.00)| |Z|1018 0|
+T Lending a Hand |QID|42385| |N|(npc:107372) in {Bradensbrook} (41.70,60.00)| |Z|1018 0| |NPC|107372|
+A Assassin Entrapment |QID|42387| |N|(npc:107372) in {Bradensbrook} (41.70,60.00)| |Z|1018 0| |NPC|107372|
+A Rising Troubles |QID|42386| |N|(npc:107372) in {Bradensbrook} (41.70,60.00)| |Z|1018 0| |NPC|107372|
+K (npc:109189) |QID|42387.1| |N|Kill (npc:109189) in {Bradensbrook} (39.56,61.64)| |Z|1018 0| |NPC|109189|
+K (npc:91847) |QID|42387.1| |N|Kill 8 (npc:91847) in {Bradensbrook} (40.82,60.09)| |Z|1018 0| |NPC|91847| |POI|
+T Assassin Entrapment |QID|42387| |N|(npc:107372) in {Bradensbrook} (41.70,60.00)| |Z|1018 0| |NPC|107372|
+T Rising Troubles |QID|42386| |N|(npc:107372) in {Bradensbrook} (41.70,60.00)| |Z|1018 0| |NPC|107372|
 A Urgent Summons |QID|42388| |N|(npc:113325) in {Bradensbrook} (41.71, 59.93)| |Z|1018 0| |NPC|113325|
+
+R Trueshot Lodge |OID|42390| |N|Travel to {Trueshot Lodge} (43.32, 26.19)| |Z|1072 0|
 T Urgent Summons |QID|42388| |N|(npc:107317) in {Trueshot Lodge} (43.32, 26.19)| |Z|1072 0| |NPC|107317|
-A Calling Hilaire Home |QID|42389| |N|in {Trueshot Lodge} (43.32, 26.19)| |Z|1072 0|
+A Calling Hilaire Home |QID|42389| |N|(npc:107317) in {Trueshot Lodge} (43.32, 26.19)| |Z|1072 0|
 A Recruiting Rexxar |QID|42390| |N|(npc:107317) in {Trueshot Lodge} (43.32, 26.19)| |Z|1072 0| |NPC|107317|
+
+R Cliff's Edge |OID|42410| |N|Travel to {Cliff's Edge} (36.72, 35.41)| |Z|1024 0|
 T Recruiting Rexxar |QID|42390| |N|(npc:107425) in {Cliff's Edge} (36.72, 35.41)| |Z|1024 0| |NPC|107425|
 A Survival Skills |QID|43335| |N|(npc:107425) in {Cliff's Edge} (36.72, 35.41)| |Z|1024 0| |NPC|107425|
 K (npc:107503) |QID|43335.1| |N|Kill a (npc:107503) to collect (item:137612) in {Cliff's Edge} (36.24, 37.33)| |Z|1024 0| |NPC|107503|
