@@ -1,12 +1,12 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0011,
+	["LastVersion"] = 2.01,
 	["LastPlayerFullName"] = "Talthalador-Stormrage",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,
 	["LastKeybindingsSet"] = 1,
 }
-PawnWowheadScaleProviderOptions = {
+PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "DEMONHUNTER",
-	["LastAdded"] = 5,
+	["LastAdded"] = 1,
 }

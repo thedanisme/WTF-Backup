@@ -3,6 +3,10 @@ BigWigs3DB = {
 	["namespaces"] = {
 		["BigWigs_Plugins_Victory"] = {
 		},
+		["BigWigs_Plugins_Raid Icons"] = {
+		},
+		["BigWigs_Plugins_Colors"] = {
+		},
 		["BigWigs_Plugins_Alt Power"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -16,29 +20,6 @@ BigWigs3DB = {
 			},
 		},
 		["LibDualSpec-1.0"] = {
-		},
-		["BigWigs_Plugins_Sounds"] = {
-		},
-		["BigWigs_Plugins_Statistics"] = {
-		},
-		["BigWigs_Plugins_Colors"] = {
-		},
-		["BigWigs_Plugins_Raid Icons"] = {
-		},
-		["BigWigs_Plugins_Proximity"] = {
-			["profiles"] = {
-				["Default"] = {
-					["posx"] = 1077.33353303141,
-					["width"] = 233.000045776367,
-					["objects"] = {
-						["background"] = false,
-					},
-					["font"] = "Friz Quadrata TT",
-					["posy"] = 274.488895535469,
-					["lock"] = true,
-					["height"] = 198.999923706055,
-				},
-			},
 		},
 		["BigWigs_Plugins_Bars"] = {
 			["profiles"] = {
@@ -57,6 +38,15 @@ BigWigs3DB = {
 		},
 		["BigWigs_Plugins_Common Auras"] = {
 		},
+		["BigWigs_Plugins_Super Emphasize"] = {
+			["profiles"] = {
+				["Default"] = {
+					["font"] = "Gotham-Narrow",
+				},
+			},
+		},
+		["BigWigs_Plugins_Sounds"] = {
+		},
 		["BigWigs_Plugins_Messages"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -71,9 +61,24 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_Respawn"] = {
+		["BigWigs_Plugins_Proximity"] = {
+			["profiles"] = {
+				["Default"] = {
+					["posx"] = 1077.33353303141,
+					["width"] = 233.000045776367,
+					["objects"] = {
+						["background"] = false,
+					},
+					["font"] = "Friz Quadrata TT",
+					["posy"] = 274.488895535469,
+					["lock"] = true,
+					["height"] = 198.999923706055,
+				},
+			},
 		},
-		["BigWigs_Plugins_HeroesVoices"] = {
+		["BigWigs_Plugins_Statistics"] = {
+		},
+		["BigWigs_Plugins_Respawn"] = {
 		},
 		["BigWigs_Plugins_BossBlock"] = {
 		},
@@ -84,12 +89,7 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_Super Emphasize"] = {
-			["profiles"] = {
-				["Default"] = {
-					["font"] = "Gotham-Narrow",
-				},
-			},
+		["BigWigs_Plugins_HeroesVoices"] = {
 		},
 	},
 	["global"] = {

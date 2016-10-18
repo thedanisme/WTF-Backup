@@ -30,7 +30,7 @@ H: 26
 Frame: DugisArrowFrame
 FrameLevel: 1
 Anchor: RIGHT
-X: -410
-Y: 16
+X: -171
+Y: -213
 W: 80
 H: 60
