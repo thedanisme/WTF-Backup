@@ -89,7 +89,7 @@ function SF:Initialize()
 		local stickyIndex = tonumber(button:GetName():match("DGV_SFRow(%d*)"))
 		local guideIndex = SF.StickyQuests[stickyIndex]
 		DebugPrint("guideIndex="..guideIndex)
-		DGV:MapCurrentObjective(guideIndex)
+		DGV:MapCurrentObjective(guideIndex, true)
 		DGV:SafeSetMapQuestId(DugisGuideViewer.qid[guideIndex]);
 	end
 

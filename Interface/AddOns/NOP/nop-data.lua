@@ -8,8 +8,8 @@ NOP.T_SPELL_HAS = { -- [itemID] = min-count, table to fetch via GetItemSpell(ite
   [113271] = 1, -- Giant Kaliri Egg, Gain xxx Garrison Resources, common for all
   [128316] = 1, -- Bulging Barrel of Oil, Convert to Oil
   [138865] = 1, -- Gladiator's Triumph, Grants 50 Artifact Power to your currently equipped Artifact.
-  [201826] = 1, -- Toss the fish back into the water, increasing Fishing skill by 5, up to a max of 800.
-  [221474] = 1, -- Toss the fish back into the water, granting 50 Artifact Power to your fishing artifact.
+  [139669] = 1, -- Toss the fish back into the water, granting 50 Artifact Power to your fishing artifact.
+  [133742] = 1, -- Toss the fish back into the water, increasing Fishing skill by 5, up to a max of 800.
   [129097] = 1, -- 30 Ancient Mana
   [140243] = 1, -- 50 Ancient Mana
   [140401] = 1, -- 75 Ancient Mana
@@ -24,6 +24,8 @@ NOP.T_SPELL = { -- [spellID] = {min-count,itemID,{"sub-Zone"},{[mapID]=true,[map
   [58165]  = {1,  7973,nil,nil},  -- Open the clam!, Big-Mouth Clam
   [166550] = {1,113355,nil,nil},  -- Flip Card, Card of Omens
   [163769] = {1,116158,nil,{[976]=true,[971]=true}}, -- Toss Fish, Lunarfall Carp, can be used only in garrison shown on button only in garrison.
+  [227189] = {1,140526,nil,nil}, -- Eredar Signet Use: Provides a significant increase to character experience.
+  [225517] = {1,141028,nil,nil}, -- Grimoire of Knowledge, Use: Open your Followers page and use this item to grant 4000 XP directly to a Champion.
 }
 NOP.T_RECIPES = { -- [ItemId] = {min-count, "gsub regex" | tooltip-line-number}, item tooltip template only text to 1st match is compared, that mean all items of same school would be looked up.
   [122219] = {1,"(.+:).*"}, -- Music Roll: Way of the Monk

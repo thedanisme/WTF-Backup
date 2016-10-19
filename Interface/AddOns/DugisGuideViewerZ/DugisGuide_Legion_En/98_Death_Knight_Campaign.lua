@@ -211,7 +211,7 @@ A Champion: Thoras Trollbane |QID|44243| |N|Speak to (npc:113419) to recruit as 
 R Tirisfal Glades |N|Travel to {Tirisfal Glades} (50.99,71.61)| |Z|20 0|
 N (npc:108567) |QID|42708.1| |N|Speak to (npc:108567) in {Tirisfal Glades} (50.99,71.61)| |Z|20 0| |NPC|108567|
 N (npc:108567) |SID|0|2| |N|Follow (npc:108567) and help him fight (43.54,35.70)| |Z|14 0| |NPC|108567| |QID|42708|
-N (npc:108590) |SID|0|3| |N|Click on the prison cage and rescue (npc:108590) (43.53,35.67)| |Z|14 0| |NPC|108590| |QID|42708|
+N (npc:93453) |SID|0|3| |N|Click on the prison cage and rescue (npc:93453) (43.53,35.67)| |Z|14 0| |NPC|93453| |QID|42708|
 
 R Hall of Command |TID|42708| |N|Travel to {Hall of Command} (56.03,30.68)| |Z|1021 2| |NPC|93456|
 T A Personal Request |QID|42708| |N|(npc:93456) in {Hall of Command} (56.03,30.68)| |Z|1021 2| |NPC|93456|

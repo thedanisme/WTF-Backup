@@ -28697,8 +28697,6 @@ function TaxiData:Initialize()
 			":709:0:2418199529:321:1:2153275645:lvl:85:fac:Horde", -- Tol Barad - Orgrimmar
 			":700:0:3159001355:321:1:2153275645:qid:26830:fac:Horde:passlvl:90", -- Twilight Highlands - Orgrimmar 
 			":806:0:1224680418:321:1:2948491323:lvl:85:qid:29690:fac:Horde:passlvl:90", -- Jade Forest > Orgrimmar (req level 85 and QID 29690)
-			":811:2:3161283759:362:0:954018606:fac:Horde", -- Shrine of Two Moons (Vale of Eternal Blossom) > Thunder Bluff 
-			":811:2:3151523164:321:1:2948491323:fac:Horde", -- Shrine of Two Moons (Vale of Eternal Blossom) > Orgrimmar
 			":903:2:3161283759:362:0:954018606:fac:Horde", -- Shrine of Two Moons (Vale of Eternal Blossom) > Thunder Bluff 
 			":903:2:3151523164:321:1:2948491323:fac:Horde", -- Shrine of Two Moons (Vale of Eternal Blossom) > Orgrimmar			
 			":809:0:2084401036:321:1:2948491323:fac:Horde", -- Shrine of the Ox > Orgrimmar
@@ -28741,8 +28739,6 @@ function TaxiData:Initialize()
 			":321:1:2114215292:614:0:2206309382:qid:25924:fac:Horde:passlvl:90", -- Orgrimmar - Vash'jir 
 			":321:1:2036032665:709:0:2395589879:lvl:85:fac:Horde", -- Orgrimmar - Tol Barad
 			":321:1:2157012196:700:0:3162474671:qid:26830:fac:Horde:passlvl:90", -- Orgrimmar - Twilight Highlands 
-			":811:2:3188030255:382:0:3632736717:fac:Horde", -- Shrine of Two Moons (Vale of Eternal Blossom) > Undercity
-			":811:2:3255207587:480:0:2502242627:fac:Horde", -- Shrine of Two Moons (Vale of Eternal Blossom) > Silvermoon 
 			":903:2:3188030255:382:0:3632736717:fac:Horde", -- Shrine of Two Moons (Vale of Eternal Blossom) > Undercity
 			":903:2:3255207587:480:0:2502242627:fac:Horde", -- Shrine of Two Moons (Vale of Eternal Blossom) > Silvermoon 
 			--":465:0:3839328398:19:0:2363198085:lvl:58",--Dark Portal - you can't go back to Azeroth this way anymore in patch 6.0.2
@@ -28762,15 +28758,14 @@ function TaxiData:Initialize()
 			":1048:0:50.27,65.20:26:0:62.48,23.50:cls:DRUID:qid:40645", --Emerald Dreamway > Hinterlands
 			":1048:0:39.81,68.92:34:0:46.59,37.06:cls:DRUID:qid:40645", --Emerald Dreamway > Duskwood	
 			
-			":1014:10:32.67,69.76:23:20:38.63,62.61:cls:PALADIN:fac:Alliance", --Dalaran Legion > Paladin Order Hall
-			":1014:10:61.92,13.49:23:20:39.42,61.46:cls:PALADIN:fac:Horde", --Dalaran Legion > Paladin Order Hall			
+			":1014:10:32.67,69.76:23:20:38.63,62.61:cls:PALADIN:fac:Alliance:qid:38576", --Dalaran Legion > Paladin Order Hall
+			":1014:10:61.92,13.49:23:20:39.42,61.46:cls:PALADIN:fac:Horde:qid:38576", --Dalaran Legion > Paladin Order Hall			
 			":32:21:38.82,64.2:301:0:49.59,86.53:fac:Alliance", --Dalaran Deadwind Pass > Stormwind
 			":301:0:80.25,34.83:32:21:72.60,46.05:qid:40718:fac:Alliance:nqid:44663",--Stormwind > Dalaran Legion
 			":321:2:36.32,71.14:32:21:72.60,46.05:qid:40718:fac:Horde:nqid:44184",--Orgrimmar Cleft of Shadow > Dalaran Legion				
 		}, --Eastern Kingdom
 		{
 			":19:0:2363198085:465:0:3839328398:lvl:58:nqid:36881",--Blasted Lands Dark Portal > Hellfire Peninsula (not available after level 90 or completing qid 36881)			
-			":811:2:2734854841:481:0:2276621818:fac:Horde", -- Shrine of Two Moons (Vale of Eternal Blossom) > Shattrath 
 			":903:2:2734854841:481:0:2276621818:fac:Horde", -- Shrine of Two Moons (Vale of Eternal Blossom) > Shattrath 			
 			":811:4:2938734527:481:0:2276621818:fac:Alliance", -- Shrine of Two Moons (Vale of Eternal Blossom) > Shattrath 
 
@@ -28787,7 +28782,6 @@ function TaxiData:Initialize()
 			":1014:12:35.59,85.21:481:0:53.01,49.21",--Dalaran > Shattrath			
 		}, --Outland
 		{
-			":811:2:2648137077:504:1:2401859529:fac:Horde", -- Shrine of Two Moons (Vale of Eternal Blossom) > Dalaran 
 			":811:4:2660459684:504:1:2401859529:fac:Alliance", -- Shrine of Two Moons (Vale of Eternal Blossom) > Dalaran 
 			":201:0:2164593732:493:0:1729483743:qid:12548",--Scholazar Waygate
 			
@@ -28817,8 +28811,8 @@ function TaxiData:Initialize()
 			":321:2:36.32,71.14:1014:10:60.92,44.73:qid:44184:fac:Horde",--Orgrimmar Cleft of Shadow > Dalaran Legion		
 			":1044:0:52.40,57.17:1014:10:60.92,44.73:cls:MONK", --Monk Order Hall > Dalaran Legion
 			":1068:1:57.31,90.12:1014:10:60.92,44.73:cls:MAGE", --Mage Order Hall > Dalaran Legion
-			":23:20:37.79,63.84:1014:10:33.20,68.89:cls:PALADIN:fac:Alliance", --Paladin Order Hall > Dalaran Legion
-			":23:20:37.79,63.84:1014:10:61.27,14.82:cls:PALADIN:fac:Horde", --Paladin Order Hall > Dalaran Legion
+			":23:20:37.79,63.84:1014:10:33.20,68.89:cls:PALADIN:fac:Alliance:qid:38576", --Paladin Order Hall > Dalaran Legion
+			":23:20:37.79,63.84:1014:10:61.27,14.82:cls:PALADIN:fac:Horde:qid:38576", --Paladin Order Hall > Dalaran Legion
 			":1048:0:45.52,23.93:1077:0:51.60,35.07:cls:DRUID:qid:40645", --Emerald Dreamway > Dreamgrove			
 		}, -- Broken Isles
 		{
@@ -28998,8 +28992,15 @@ function TaxiData:Initialize()
 		[930] = "928:0:63.62,32.25:930:1:31.16,25.92",
 		--Legion Order Halls
 		[1052] = "1014:10:97.96,69.27:1052:1:59.31,91.30:cls:DEMONHUNTER", --Dalaran <-> Mardum
-		[1035] = "1014:10:75.18,47.16:1035:1:58.30,24.88:cls:WARRIOR", --Dalaran <-> Skyhold
+		[1035] = "1014:10:75.18,47.16:1035:1:58.34,24.98:cls:WARRIOR:qid:42815", --Dalaran <-> Skyhold
+		[1035] = "1017:1:60.18,52.23:1035:1:58.34,24.98:cls:WARRIOR:qid:39803",	-- Stormheim: Jump to Skyhold	
+		[1035] = "1015:1:47.58,28.08:1035:1:58.34,24.98:cls:WARRIOR:qid:38443",	-- Azsuna: Jump to Skyhold
+		[1035] = "1018:1:54.71,74.89:1035:1:58.34,24.98:cls:WARRIOR:qid:38384",	-- Val'sharah: Jump to Skyhold
+		[1035] = "1080:1:39.73,42.11:1035:1:58.34,24.98:cls:WARRIOR:qid:38907",	-- Highmountain: Jump to Skyhold
+		[1035] = "1033:1:33.08,48.20:1035:1:58.34,24.98:cls:WARRIOR:qid:42229",	-- Suramar: Jump to Skyhold
 		[1057] = "1014:10:67.13,48.17:1057:0:29.92,51.96:cls:SHAMAN", --Dalaran <-> Maelstrom
+		[1070] = "1057:0:26.71,41.32:1070:1:53.59,16.00:cls:SHAMAN:qid:43002",	-- Portal to Vortex Pinnacle
+		[1071] = "1057:0:31.08,61.02:1071:0:25.02,92.64:cls:SHAMAN:qid:42208",	-- Portal to the Firelands		
 		[1050] = "1014:11:27.90,44.48:1050:0:75.37,38.11:cls:WARLOCK", --Dalaran Underbelly <-> Dreadscar Rift
 		[1040] = "1014:10:39.48,57.31:1040:1:49.80,80.71:cls:PRIEST:fac:Alliance", --Dalaran <-> Halls of Shadow 
 		[1040] = "1014:10:63.00,17.70:1040:1:49.80,80.71:cls:PRIEST:fac:Horde", --Dalaran <-> Halls of Shadow 		
@@ -29013,7 +29014,7 @@ function TaxiData:Initialize()
 		[1041] = "1017:0:72.64,70.52:1041:2:47.71,7.56", -- Hall of Valor
 		[1046] = "1015:0:61.15,41.13:1046:1:47.12,87.89", -- Eye of Azshara
 		[1042] = "1017:0:52.54,45.25:1042:1:47.18,81.20", -- Maw of Souls
-		[1045] = "1018:0:48.07,82.13:1045:1:69.38,77.47", -- Vault of the Wardens
+		[1045] = "1015:0:48.07,82.13:1045:1:69.38,77.47", -- Vault of the Wardens
 		[1087] = "1033:0:50.99,65.59:1087:1:10.20,69.30", -- Court of Stars		
 	}
 	

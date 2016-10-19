@@ -60,7 +60,7 @@ function PLH_CreateOptionsPanel()
 
 	local NotifyGroupLabel = PLH_NotifyGroupCheckbox:CreateFontString(nil, 'ARTWORK', 'GameFontHighlight')
 	NotifyGroupLabel:SetPoint('LEFT', PLH_NotifyGroupCheckbox, 'RIGHT', 0, 0)
-	NotifyGroupLabel:SetText('Notify Group')
+	NotifyGroupLabel:SetText('Notify Group (automatically turned off in LFR)')
 	NotifyGroupLabel:SetWordWrap(true)
 	NotifyGroupLabel:SetJustifyH('LEFT')
 	NotifyGroupLabel:SetWidth(400)

@@ -49,7 +49,7 @@ K (npc:91474) |OID|38862| |N|Kill a (npc:91474) to begin (qid:38862) quest (53.1
 A Thieving Thistleleaf |QID|38862| |N|Kill any Thistleleaf enemies in {Lunarwing Shallows} to begin this quest (53.18,80.28)| |Z|1018 0|
 N As you go... |AYG|40221| |N|Collect 5 (item:129966) in {Lunarwing Shallows}| |QID|38862|
 K (npc:93444) |QID|40220.1| |N|Kill 3 (npc:93444) in {Lunarwing Shallows} (52.00,80.46)(52.35,83.15) (55.92,83.74)| |Z|1018 0| |NPC|93444|
-C Spread Your Lunarwings and Fly |QID|40221.1| |N|Save 8 (npc:93489) in {Lunarwing Shallows} (53.18,80.28)| |Z|1018 0| |NPC|99008|
+C Spread Your Lunarwings and Fly |QID|40221.1| |N|Save 8 (npc:93489) in {Lunarwing Shallows} (53.18,80.28)| |Z|1018 0| |NPC|93489|
 C Thieving Thistleleaf |QID|38862.1| |N||N|Collect 5 (item:129966) from the ground in {Lunarwing Shallows}(53.18,80.28)| |Z|1018|
 T Thorny Dancing |QID|40220| |N|(npc:93600) in {Lunarwing Shallows} (53.75, 79.81)| |Z|1018 0| |NPC|93600|
 T Spread Your Lunarwings and Fly |QID|40221| |N|(npc:93600) in {Lunarwing Shallows} (53.75, 79.81)| |Z|1018 0| |NPC|93600|

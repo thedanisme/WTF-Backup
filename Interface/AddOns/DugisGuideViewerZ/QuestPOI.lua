@@ -275,6 +275,12 @@ hooksecurefunc("WorldMap_SetupWorldQuestButton", function(button, worldQuestType
     
     --Support for WorldQuestTracker
     if WorldQuestTrackerWorldMapPOI then
+		if WQTrackerDB then 
+			if WQTrackerDB.profiles.Default.enable_doubletap and DGV:UserSetting(DGV_MANUALWAYPOINT) then
+				WQTrackerDB.profiles.Default.enable_doubletap = false
+				print("|cff11ff11" .. "Dugi: Disabled WorldQuestTracker's \"Auto World Map\" option, this needs to be off for Dugi waypoint.")
+			end	
+		end	
         LuaUtils:foreach({WorldMapPOIFrame:GetChildren()}, function(poi)
             if not poi.wasHoockedByDugi then
                 if poi.worldQuest and poi.timeBlipRed then

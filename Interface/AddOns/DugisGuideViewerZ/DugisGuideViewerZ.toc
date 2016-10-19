@@ -1,7 +1,7 @@
 ## Interface: 70000
-## Title: DugiGuidesViewer |cffffffff8.117|r
+## Title: DugiGuidesViewer |cffffffff8.121|r
 ## Notes: In-Game Guide Viewer. Copyright 2010-2016 UltimateWoWGuide.com
-## Version: 8.117
+## Version: 8.121
 ## X-Website: http://www.ultimatewowguide.com/
 ## X-Email: support@ultimatewowguide.com
 ## X-Category: Quest
@@ -45,7 +45,6 @@ Localization\NPCs_frFR.lua
 Localization\NPCs_koKR.lua
 Localization\NPCs_ruRU.lua
 Localization\NPCs_zhCN.lua
-Localization\NPCs_zhTW.lua
 Localization\NPCs_ptBR.lua
 Localization\NPCs_itIT.lua
 

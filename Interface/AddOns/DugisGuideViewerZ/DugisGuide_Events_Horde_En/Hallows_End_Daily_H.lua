@@ -31,6 +31,15 @@ R Elwynn Forest |N|Travel to {Elwynn Forest} (43.69, 74.49)| |Z|30|
 C A Time to Break Down |QID|29377| |N|Use the (item:68647) on the Wickerman in front of {Stormwind}. (43.69, 74.51)| |Z|30| |U|68647| |D|
 T A Time to Break Down |QID|29377| |N|(npc:15197) (67.55, 13.32)| |NPC|15197| |Z|382| |D|
 
+N Level 98 Required |N|You need to be at least level 98 to continue the guide and unlocked Legion Dalaran| |OID|44663, 44184|
+A Beware of the Crooked Tree |QID|43259| |N|(npc:109854) in {Dalaran} (47.40,40.55)| |Z|1014 10|
+
+R Val'sharah |QID|43162| |N|Travel to {Val'sharah} (35.01,56.08)| |Z|1018 0| |D|
+T Beware of the Crooked Tree |QID|43259| |N|(npc:109734) in {Val'sharah} {35.01,56.08)| |Z|1018 0|
+A Under the Crooked Tree |QID|43162| |N|(npc:109734) in {Val'sharah} {35.01,56.08)| |Z|1018 0| |D|
+C Under the Crooked Tree |QID|43162| |N|Cick on the  Crocked Tree Cauldron and kill (npc:109825) in {Val'sharah}<br/><br/>You may need a group to kill it (34.80,55.46)| |Z|1018 0| |NPC|109825| |D|
+T Under the Crooked Tree |QID|43162| |N|(npc:109734) in {Val'sharah} {35.01,56.08)| |Z|1018 0| |D|
+
 N Guide Complete
 
 ]]

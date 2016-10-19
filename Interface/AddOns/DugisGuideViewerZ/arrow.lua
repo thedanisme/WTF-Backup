@@ -795,7 +795,7 @@ function DugisArrow:Initialize()
 					desc = "|cffffd200"..desc.."|r"..L[" (World Quest)"]
 				end				
 				_, m = C_TaskQuest.GetQuestZoneID(questId)
-				LuaUtils:DugiSetMapByID(m)
+				if m then LuaUtils:DugiSetMapByID(m) end
 				f = GetCurrentMapDungeonLevel()
                 posX, posY = C_TaskQuest.GetQuestLocation(questId)
             elseif posX then 
@@ -812,7 +812,7 @@ function DugisArrow:Initialize()
 				f = 1
 			end
 			if reset then DugisGuideViewer:RemoveAllWaypoints() end
-			if posX then
+			if posX and posX > 0 then
 				DGV:AddCustomWaypoint(posX, posY, desc, m, f, questId)
 				if DugisGuideViewer:IsModuleLoaded("Target") then DoOutOfCombat(DugisGuideViewer.Modules.Target.Frame.Hide, DugisGuideViewer.Modules.Target.Frame) end
 				--DGV:AddRouteWaypointWithNoTrigger(m, f, posX, posY, desc)
@@ -1256,25 +1256,27 @@ function DugisArrow:Initialize()
 		DugisGuideViewer.Ants:UpdateAntTrail(elapsed-lastElapsed)
 		lastElapsed = elapsed
 		
+		if DugisArrow:getNumWaypoints() > 1 and not (DugisGuideViewer.carboniteloaded and DugisGuideViewer:UserSetting(DGV_CARBONITEARROW)) then
+			if DugisArrow:DidPlayerReachWaypoint() then
+				DugisArrow:SetNextWaypoint()
+				DugisArrow:setArrowTexture( )
+			end
+		end				
+		
 	end
 
 	function DugisArrow:UPDATE(event, elapsed, ...)
 
 		-- Update Arrow		
-		DugisArrow:setArrowTexture( )
 
 		DugisGuideViewer:CheckForFloorChange()
-		DugisGuideViewer:CheckForArrowChange()
-		if DugisArrow:getNumWaypoints() > 1 and not (DugisGuideViewer.carboniteloaded and DugisGuideViewer:UserSetting(DGV_CARBONITEARROW)) then
-			if DugisArrow:DidPlayerReachWaypoint() then
-				DugisArrow:SetNextWaypoint()
-			end
-		end			
+		DugisGuideViewer:CheckForArrowChange()	
 		
 		if not DugisGuideUser.FinalizeWaypoint then
 			DugisArrow:FinalizeWaypointIcon() 
 		end
 		DugisGuideViewer:UpdateTravelToLocation()		
+		DugisArrow:setArrowTexture( )		
 	end
 
 	function DugisArrow:GetSetting(variable)

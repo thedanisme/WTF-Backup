@@ -751,7 +751,15 @@ function DugisGuideViewer:initAnts()
 		elseif name == "Wholly" and loaded then DugisGuideViewer.whollyloaded = true
 		elseif name == "ArkInventory" and loaded then DugisGuideViewer.arkinventoryloaded = true 
 		elseif name == "ZygorGuidesViewer" and loaded then DugisGuideViewer.zygorloaded = true
-		elseif name == "WorldQuestTracker" and loaded then DugisGuideViewer.wqtloaded = true end		
+		elseif name == "WorldQuestTracker" and loaded then 
+			DugisGuideViewer.wqtloaded = true 
+			if WQTrackerDB then 
+				if WQTrackerDB.profiles.Default.enable_doubletap then
+					WQTrackerDB.profiles.Default.enable_doubletap = false
+					print("|cff11ff11" .. "Dugi: Disabled WorldQuestTracker's \"Auto World Map\" option, this needs to be off for Dugi waypoint.")
+				end
+			end
+		end	
 	end
 	
 	--if DugisGuideViewer.tomtomloaded then TomTom.profile.persistence.cleardistance = 0 end
@@ -2423,7 +2431,7 @@ function DugisGuideViewer:QUEST_WATCH_LIST_CHANGED()
 end
 
 function DugisGuideViewer:RefreshQuestWatch()
-	if (self:UserSetting(DGV_ENABLEQW) or self:UserSetting(DGV_AUTO_QUEST_TRACK)) and DugisGuideViewer.chardb.EssentialsMode ~= 1 and DugisGuideViewer:IsModuleLoaded("Guides") and DugisGuideViewer.GuideOn() then
+	if self:UserSetting(DGV_ENABLEQW) and DugisGuideViewer.chardb.EssentialsMode ~= 1 and DugisGuideViewer:IsModuleLoaded("Guides") and DugisGuideViewer.GuideOn() then
 		if AUTO_QUEST_WATCH == "1" then
            -- JU this settings is not available anymore
            -- if InterfaceOptionsObjectivesPanelAutoQuestTracking then

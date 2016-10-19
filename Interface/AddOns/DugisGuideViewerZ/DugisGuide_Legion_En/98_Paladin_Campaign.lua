@@ -151,7 +151,7 @@ T Shrine of the Truthguard |QID|42017| |N|(npc:90259) in {Light's Hope Chapel} (
 A We Meet at Light's Hope |QID|38576| |N|(npc:106834) in {Krasus' Landing} (71.94, 45.21)| |Z|1014 10| |NPC|106834| |PRE|42002, 42231|
 
 R Dalaran Crater |QID|38576.1| |N|Take the {Dalaran} portal to the {Dalaran Crater} in the {Chamber of the Guardian} (29.47, 77.61)| |Z|1014 12| |PRE|42002, 42231|
-R Light's Hope Chapel |QID|38576.2| |N|Fly to {Light's Hope Chapel} (76.85, 52.82)| |Z|23 0| |PRE|42002, 42231|
+R Light's Hope Chapel |QID|38576.2| |N|Fly to {Light's Hope Chapel} (76.85, 52.82)| |Z|23 0| |PRE|42002, 42231| |V|
 R Light's Hope Sanctum |QID|38576.3| |N|Enter {Light's Hope Sanctum} inside {Light's Hope Chapel}. Right click on the floor in the {Light's Hope Chapel} to access it (42.59, 88.59)| |Z|23 20| |PRE|42002, 42231|
 T We Meet at Light's Hope |QID|38576| |N|(npc:100031) in the {Hall of Champions} (63.11, 38.10)| |Z|23 20| |NPC|100031|  |PRE|42002, 42231|
 

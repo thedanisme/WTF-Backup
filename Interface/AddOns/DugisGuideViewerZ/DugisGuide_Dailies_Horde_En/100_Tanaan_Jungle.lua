@@ -1,157 +1,160 @@
-local Guide = DugisGuideViewer:RegisterModule("DugisGuide_WoD_Horde_En_100_Tanaan_Jungle")
+local Guide = DugisGuideViewer:RegisterModule("DugisGuide_WoD_Alliance_En_100_Tanaan_Jungle")
 function Guide:Initialize()
-	function Guide:Load()DugisGuideViewer:RegisterGuide("|cffffd200Draenor|r", "945(100)#945(100)#945(100)", nil, "Horde", nil, "D", nil, function()
+	function Guide:Load()DugisGuideViewer:RegisterGuide("|cffffd200Draenor|r", "945(100)#945(100)#945(100)", nil, "Alliance", nil, "D", nil, function()
 return [[
 
-N (aid:9546) |N|You need tier 3 Garrison to receive the quest. Upgrade your Garrison to tier 3.| |AID|9546|
-A Garrison Campaign: War Council |QID|38567| |N|Auto quest in {Frostwall} after reaching tier 3 Garrison (39.27, 53.14)| |Z|976| |NPC|92400|
-T Garrison Campaign: War Council |QID|38567| |N|(npc:92400) {Frostwall} (39.27, 53.14)| |Z|976| |NPC|92400|
-A We Need a Shipwright |QID|38568| |N|(npc:92400) in {Frostwall} (39.27, 53.14)| |Z|976| |NPC|92400|
+N (aid:9101) |N|You need tier 3 Garrison to receive the quest. Upgrade your Garrison to tier 3.| |AID|9101|
+A Garrison Campaign: War Council |QID|38253| |N|Auto quest in {Lunarfall} after reaching tier 3 Garrison (39.27, 53.14)| |Z|971|
+T Garrison Campaign: War Council |QID|38253| |N|(npc:92219) in {Lunarfall} (31.96, 31.96)| |Z|971| |NPC|92219|
+A We Need a Shipwright |QID|38257| |N|(npc:92219) in {Lunarfall} (31.96, 31.96)| |Z|971| |NPC|92219|
 
-F Iron Docks |TID|38568| |N|Speak to (npc:79407) and request a flight to {Iron Docks} (45.75, 50.63)| |Z|976| |NPC|79407| |V|
-T We Need a Shipwright |QID|38568| |N|(npc:89937) in {Iron Docks} (56.13, 6.65)| |Z|949| |NPC|89937|
-A Derailment |QID|38570| |N|(npc:89937) in {Iron Docks} (56.13, 6.65)| |Z|949| |NPC|89937|
-N (item:122516) |QID|38570.2| |N|Collect (item:122516) from the ground in {Iron Docks} (56.57, 11.62)| |Z|949|
-N (item:122515) |QID|38570.1| |N|Collect (item:122515) from the ground in {Iron Docks} (56.44, 15.14)| |Z|949|
-T Derailment |QID|38570| |N|(npc:92401) in {Iron Docks} (56.75, 17.16)| |Z|949| |NPC|92401|
-A The Train Gang |QID|38571| |N|(npc:92401) in {Iron Docks} (56.75, 17.15)| |Z|949| |NPC|92401|
-N Plant First Explosive |QID|38571.1| |N|Plant First Explosive in {Iron Docks} (56.90, 16.92)| |Z|949|
-N Plant Second Explosive |QID|38571.2| |N|Plant Second Explosive in {Iron Docks} (56.90, 17.13)| |Z|949|
-N Plant Third Explosive |QID|38571.3| |N|Plant Third Explosive in {Iron Docks} (56.90, 17.37)| |Z|949|
-N Blow Open the Train |QID|38571.4| |N|Click on the switch next to (npc:92401) to blow open the train (56.75, 17.20)| |Z|949|
-N Recruit Solog Roark |QID|38571.5| |N|Wait until (npc:91242) is recuited in {Iron Docks} (56.75, 17.20)| |Z|949| |NPC|91242|
-T The Train Gang |QID|38571| |N|(npc:91242) in {Iron Docks} (56.77, 17.23)| |Z|949| |NPC|91242|
-A Hook, Line, and... Sink Him! |QID|38572| |N|(npc:91242) in {Iron Docks} (56.77, 17.23)| |Z|949| |NPC|91242|
-N Grapple to Knar's Bunker |QID|38572.1| |N|Click on the Grapple on the ground to get up to Knar's Bunker in {Iron Docks} (50.65, 16.06)| |Z|949|
-N (item:123867) |QID|38572.2| |N|Kill (npc:92191) and collect (item:123867) in {Iron Docks} (50.62, 17.57)| |Z|949| |NPC|92191|
-T Hook, Line, and... Sink Him! |QID|38572| |N|(npc:91242) in {Iron Docks} (50.61, 16.71)| |Z|949| |NPC|91242|
-A Nothing Remains |QID|38573| |N|(npc:91242) in {Iron Docks} (50.61, 16.71)| |Z|949| |NPC|91242|
+F Iron Docks |TID|38257| |N|Speak to (npc:81103) and request a flight to {Iron Docks} (48.04, 49.81)| |Z|971| |NPC|81103| |V|
+T We Need a Shipwright |QID|38257| |N|(npc:90180) in {Iron Docks} (52.57, 9.85)| |Z|949| |NPC|90180|
+A Derailment |QID|38254| |N|(npc:90180) in {Iron Docks} (52.57, 9.86)| |Z|949| |NPC|90180|
+N (item:122516) |QID|38254.2| |N|Collect (item:122516) from the ground in {Iron Docks} (51.43, 14.31)| |Z|949|
+N (item:122515) |QID|38254.1| |N|Collect (item:122515) from the ground in {Iron Docks} (49.81, 12.70)| |Z|949|
+T Derailment |QID|38254| |N|(npc:90177) in {Iron Docks} (56.75, 17.16)| |Z|949| |NPC|90177|
+A The Train Gang |QID|38255| |N|(npc:90177) in {Iron Docks} (56.75, 17.16)| |Z|949| |NPC|90177|
+N Plant First Explosive |QID|38255.1| |N|Plant First Explosive, in {Iron Docks} (56.89, 16.96)| |Z|949|
+N Plant Second Explosive |QID|38255.2| |N|Plant Second Explosive, in {Iron Docks} (56.90, 17.10)| |Z|949|
+N Plant Third Explosive |QID|38255.3| |N|Plant Third Explosive, in {Iron Docks} (56.90, 17.35)| |Z|949|
+N Blow Open the Train |QID|38255.4| |N|Click on the switch next to (npc:90177) to blow open the train in {Iron Docks} (56.74, 17.22)| |Z|949| |NPC|90177|
+N Recruit Solog Roark |QID|38255.5| |N|Wait until (npc:91242) is recuited in {Iron Docks} (56.74, 17.22)| |Z|949| |NPC|91242|
+T The Train Gang |QID|38255| |N|(npc:91242) in {Iron Docks} (56.74, 17.22)| |Z|949| |NPC|91242|
+A Hook, Line, and... Sink Him! |QID|38256| |N|(npc:91242) in {Iron Docks} (56.74, 17.22)| |Z|949| |NPC|91242|
+N Grapple to Knar's Bunker |QID|38256.1| |N|Click on the Grapple on the ground to get up to Knar's Bunker in {Iron Docks} (50.65, 16.06)| |Z|949|
+N (item:123867) |QID|38256.2| |N|Kill (npc:92191) and collect (item:123867) in {Iron Docks} (50.62, 17.57)| |Z|949| |NPC|92191|
+T Hook, Line, and... Sink Him! |QID|38256| |N|(npc:91242) in {Iron Docks} (50.61, 16.69)| |Z|949| |NPC|91242|
+A Nothing Remains |QID|38258| |N|(npc:91242) in {Iron Docks} (50.61, 16.69)| |Z|949| |NPC|91242|
 
-R Frostwall |TID|38573| |N|Travel to {Frostwall} (39.22, 54.73)| |Z|976| |NPC|92400|
-T Nothing Remains |QID|38573| |N|(npc:92400) in {Frostwall} (39.22, 54.73)| |Z|976| |NPC|92400|
-A All Hands on Deck |QID|38574| |N|(npc:92400) in {Frostwall} (39.22, 54.73)| |Z|976| |NPC|92400|
-T All Hands on Deck |QID|38574| |N|(npc:91242) in {Frostwall Shipyard} (41.47, 69.89)| |Z|941| |NPC|91242|
-A Let's Get To Work |QID|39236| |N|(npc:94789) in {Frostwall Shipyard} (41.55, 72.33)| |Z|941| |NPC|94789|
-T Let's Get To Work |QID|39236| |N|(npc:94429) in {Frostwall Shipyard} (40.72, 70.26)| |Z|941| |NPC|94429|
-A Shipbuilding |QID|39241| |N|(npc:94429) in {Frostwall Shipyard} (40.72, 70.26)| |Z|941| |NPC|94429|
-C Shipbuilding |QID|39241| |N|Learn (item:127268) and destroy the evidence in {Frostwall Shipyard} (40.72, 70.26)| |Z|941|
-T Shipbuilding |QID|39241| |N|(npc:94429) in {Frostwall Shipyard} (40.72, 70.26)| |Z|941| |NPC|94429|
-A Ship Shape |QID|39242| |N|(npc:94429) in {Frostwall Shipyard} (40.72, 70.26)| |Z|941| |NPC|94429|
-N Start construction on a Transport ship |QID|39242.1| |N|Speak to (npc:94429) Start construction on a Transport ship in {Frostwall Shipyard} (40.72, 70.26)| |Z|941|
-N Interact with the Transport ship |QID|39242.2| |N|Click on the Transport ship once construction is complete in {Frostwall Shipyard} (40.46, 69.86)| |Z|941|
-T Ship Shape |QID|39242| |N|(npc:94429) in {Frostwall Shipyard} (40.72, 70.23)| |Z|941| |NPC|94429|
-A The Invasion of Tanaan |QID|37889| |N|(npc:94429) in {Frostwall Shipyard} (40.72, 70.23)| |Z|941| |NPC|94429|
-N Meet with Khadgar |QID|37889.1| |N|Meet with (npc:92213) in {Frostwall Shipyard} (41.00, 72.89)| |Z|941| |NPC|92213|
-N Speak with Draka |QID|37889.2| |N|Speak with (npc:89822) in {Frostwall Shipyard} (40.72, 73.32)| |Z|941| |NPC|89822|
+R Lunarfall |QID|38259| |N|Travel to {Lunarfall} (31.95, 31.97)| |Z|971| |NPC|92219|
+T Nothing Remains |QID|38258| |N|(npc:92219) in {Lunarfall} (31.95, 31.97)| |Z|971| |NPC|92219|
+A All Hands on Deck |QID|38259| |N|(npc:92219) in {Lunarfall} (31.95, 31.97)| |Z|971| |NPC|92219|
 
-T The Invasion of Tanaan |QID|37889| |N|(npc:89822) in {Zeth'Kur} (73.42, 71.12)| |Z|945| |NPC|89822|
-A Obstacle Course |QID|37890| |N|(npc:89822) in {Zeth'Kur} (73.42, 71.14)| |Z|945| |NPC|89822|
-N Find information on the Bleeding Hollow |QID|37890.1| |N|Click on the scroll on the ground Letter from Kilrogg (68.89, 64.87)| |Z|945|
-N Find information on the cultists |QID|37890.2| |N|Click on the book Magril's Journal (73.98, 56.18)| |Z|945|
-T Obstacle Course |QID|37890| |N|(npc:90238) (69.53, 54.17)| |Z|945| |NPC|90238|
-A In, Through, and Beyond! |QID|37934| |N|(npc:90238) (69.53, 54.17)| |Z|945| |NPC|90238|
-N Reach the Fel Defense Cannon |QID|37934.1| |N|Reach the Fel Defense Cannon (63.75, 52.20)| |Z|945|
-N Destroy the Fel Defense Cannon|QID|37934.2| |N|Click on the bomb to destroy the Fel Defense Cannon (64.33, 51.56)| |Z|945|
+T All Hands on Deck |QID|38259| |N|(npc:91242) in {Lunarfall Shipyard} (27.58, 11.88)| |Z|947| |NPC|91242|
+A Let's Get To Work |QID|39082| |N|(npc:93822) in {Lunarfall Shipyard} (27.72, 11.44)| |Z|947| |NPC|93822|
+T Let's Get To Work |QID|39082| |N|(npc:94429) in {Lunarfall Shipyard} (29.82, 10.70)| |Z|947| |NPC|94429|
+A Shipbuilding |QID|39054| |N|(npc:94429) in {Lunarfall Shipyard} (29.77, 10.64)| |Z|947| |NPC|94429|
+C Shipbuilding |QID|39054| |N|Learn (item:127268) and destroy the evidence in {Lunarfall Shipyard} (29.82, 10.70)| |Z|947| |U|127268|
+T Shipbuilding |QID|39054| |N|(npc:94429) in {Lunarfall Shipyard} (29.77, 10.64)| |Z|947| |NPC|94429|
+A Strange Tools |QID|39276| |N|(npc:94429) in {Lunarfall Shipyard} (29.77, 10.62)| |Z|947| |NPC|94429|
+T Strange Tools |QID|39276| |N|(npc:95002) in {Lunarfall Shipyard} (29.81, 10.69)| |Z|947| |NPC|95002|
+A Ship Shape |QID|39055| |N|(npc:94429) in {Lunarfall Shipyard} (29.82, 10.70)| |Z|947| |NPC|94429|
+N Start construction on a Transport ship |QID|39055.1| |N|Speak to (npc:95002) Start construction on a Transport ship in {Lunarfall Shipyard} (29.82, 10.68)| |Z|947| |NPC|95002|
+N Interact with the Transport ship |QID|39055.2| |N|Click on the Transport ship once construction is complete in {Lunarfall Shipyard} (29.96, 10.72)| |Z|947|
+T Ship Shape |QID|39055| |N|(npc:95002) in {Lunarfall Shipyard} (29.81, 10.68)| |Z|947| |NPC|95002|
+A The Invasion of Tanaan |QID|38435| |N|(npc:95002) in {Lunarfall Shipyard} (29.81, 10.68)| |Z|947| |NPC|95002|
+N Meet with Khadgar |QID|38435.1| |N|Meet with (npc:92213) in {Lunarfall Shipyard} (27.64, 10.30)| |Z|947| |NPC|92213|
+N Speak with Yrel |QID|38435.2| |N|Speak with (npc:91923) in {Lunarfall Shipyard} (27.60, 10.18)| |Z|947| |NPC|91923|
 
-N Meet up with Shadow Hunter Mutumba |QID|37934.3| |N|Meet up with (npc:90238) (62.57, 50.87)| |NPC|90238|
-T In, Through, and Beyond! |QID|37934| |N|(npc:90238) (62.57, 50.87)| |NPC|90238|
-A The Assault Base |QID|37935| |N|(npc:90238) (62.57, 50.87)| |NPC|90238|
-N Follow Mutumba |QID|37935.1| |N|Follow (npc:90238) in {Tanaan Jungle} (60.84, 47.17)| |NPC|90238|
-N Plant the flag to build the base |QID|37935.2| |N|Click on the flag to build the base in {Tanaan Jungle} (60.84, 47.17)| 
+T The Invasion of Tanaan |QID|38435| |N|(npc:91913) in {Zeth'Kur} (73.42, 71.13)| |Z|945| |NPC|91913|
+A Obstacle Course |QID|38436| |N|(npc:91913) in {Zeth'Kur} (73.42, 71.11)| |Z|945| |NPC|91913|
+N Find information on the Bleeding Hollow |QID|38436.1| |N|Click on the scroll on the ground Letter from Kilrogg (68.89, 64.87)| |Z|945|
+N Find information on the cultists |QID|38436.2| |N|Click on the book Magril's Journal (73.98, 56.18)| |Z|945|
+T Obstacle Course |QID|38436| |N|(npc:91923) (69.47, 52.97)| |Z|945| |NPC|91923|
+A In, Through, and Beyond! |QID|38444| |N|(npc:91923) (69.47, 52.97)| |Z|945| |NPC|91923|
+N Reach the Fel Defense Cannon |QID|38444.1| |N|Reach the Fel Defense Cannon (63.78, 52.26)| |Z|945|
+N Destroy the Fel Defense Cannon |QID|38444.2| |N|Click on the bomb to destroy the Fel Defense Cannon destroy the Fel Defense Cannon (64.35, 51.69)| |Z|945|
 
-A Unknowable Power |QID|39432| |N|(npc:95424) in {Vol'mar} (60.43, 46.73)| |Z|945| |NPC|95424|
-f Vol'mar |QID|38577| |N|Grab {Vol'mar} flight point from (npc:90550) (60.42, 46.45)| |Z|945| |NPC|90550|
-A Bring the Reinforcements |QID|39315| |N|(npc:90993) in {Vol'mar} (59.94, 47.48)| |Z|945| |NPC|90993|
-C Bring the Reinforcements |QID|39315| |N|Talk to (npc:90993) and choose which reinforcements, this will be your garrison ability for Tanaan. Your choice is not permanent and you change it at any time by talking to (npc:90993) (59.94, 47.48)| |Z|945|
-T Bring the Reinforcements |QID|39315| |N|(npc:90993) in {Vol'mar} (59.94, 47.48)| |Z|945| |NPC|90993|
-A Infrastructure Improvements |QID|38599| |N|(npc:90991) in {Vol'mar} (59.86, 47.51)| |Z|945| |NPC|90991|
-T The Assault Base |QID|37935| |N|(npc:90481) (61.51, 45.84)| |Z|945| |NPC|90481|
-A The Battle for the West |QID|38577| |N|(npc:90481) in {Vol'mar} (61.51, 45.84)| |Z|945| |NPC|90481|
-A Shipyard Report |QID|39423| |N|(npc:90481) in {Vol'mar} (61.52, 45.84)| |Z|945 0| |NPC|90481|
-N Talk to Gargash to fly to the Iron Front |QID|38577.1| |N|Talk to Gargash to fly to {The Iron Front} in {Vol'mar} (60.42, 46.45)| |Z|945|
-F The Iron Front |QID|38577| |N|Talk to Gargash to fly to {The Iron Front} in {Vol'mar} (60.42, 46.45)| |Z|945| |V|
+N Meet up with Exarch Naielle |QID|38444.3| |N|Meet up with (npc:91923) (62.44, 54.22)| |NPC|91923|
+T In, Through, and Beyond! |QID|38444| |N|(npc:91923) in {Tanaan Jungle} (62.44, 54.22)| |NPC|91923|
+A The Assault Base |QID|38445| |N|(npc:91923) in {Tanaan Jungle (62.44, 54.22)}| |NPC|91923|
+N Follow Naielle |QID|38445.1| |N|Follow (npc:91929) in {Tanaan Jungle} (57.57, 59.21)| |NPC|91923|
+N Plant the flag to build the base |QID|38445.2| |N|Plant the flag to build the base, in {Tanaan Jungle} (57.57, 59.21)|
 
---A Battle At The Iron Front |QID|38865| |N|in {The Iron Front} (9.32, 55.91)| |Z|945|
-f The Iron Front |QID|38577| |N|Grab {The Iron Front} flight point from (npc:90552) (9.29, 55.86)| |Z|945| |NPC|90552|
-N Speak with Durotan |QID|38577.2| |N|Speak with (npc:90553) in {The Iron Front} (9.67, 56.20)| |Z|945| |NPC|90553|
-T The Battle for the West |QID|38577| |N|(npc:90553) in {The Iron Front} (9.67, 56.20)| |Z|945| |NPC|90553|
-A Commander in the Field! |QID|38001| |N|(npc:90553) in {The Iron Front} (9.67, 56.20)| |Z|945| |NPC|90553|
+f Lion's Watch |QID|39313| |N|Grab {Lion's Watch} flight point from (npc:90960) (57.52, 58.79)| |NPC|90960|
+A Bring the Reinforcements |QID|39313| |N|(npc:90963) in {Lion's Watch} (58.15, 58.67)| |NPC|90963|
+C Bring the Reinforcements |QID|39313| |N|Talk to (npc:90963) and choose which reinforcements, this will be your garrison ability for Tanaan. Your choice is not permanent and you change it at any time by talking to (npc:90963) (58.15, 58.67)| |NPC|90963|
+T Bring the Reinforcements |QID|39313| |N|(npc:90963) in {Lion's Watch} (58.14, 58.67)| |NPC|90963|
+A Setting the Signal |QID|38603| |N|(npc:92545) in {Lion's Watch} (58.14, 58.57)| |NPC|92545|
+A Unknowable Power |QID|39432| |N|(npc:95424) in {Lion's Watch} (57.97, 59.39)| |NPC|95424|
 
-R Sha'naari Refuge |QID|38001| |N|Travel to {Sha'naari Refuge} (20.90, 59.66) (29.42, 63.03)| |Z|945|
-N Speak with the scout in southwest Tanaan Jungle |QID|38001.1| |N|Speak with the scout (npc:90581) in southwest {Tanaan Jungle} (29.42, 63.03)| |Z|945| |NPC|90581|
-f Sha'naari Refuge |QID|38001| |N|Grab {Sha'naari Refuge} flight point from (npc:92809) (29.55, 63.13)| |Z|945| |NPC|92809|
+T The Assault Base |QID|38445| |N|(npc:90309) in {Lion's Watch} (58.50, 60.33)| |Z|945| |NPC|90309|
+A The Battle for the West |QID|38581| |N|(npc:90309) in {Lion's Watch} (58.50, 60.33)| |Z|945| |NPC|90309|
+A Shipyard Report |QID|39422| |N|(npc:90309) in {Lion's Watch} (58.50, 60.33)| |Z|945| |NPC|90309|
 
-R Aktar's Post |QID|38001| |N|Travel to {Aktar's Post} (27.69, 44.44) (30.43, 42.65) (29.34, 39.88) (25.97, 38.86)| |Z|945|
-N Speak with the scout in northwest Tanaan Jungle |QID|38001.2| |N|Speak with the scout (npc:90563) in northwest {Tanaan Jungle} in {Aktar's Post} (25.97, 38.86)| |Z|945| |NPC|90563|
-f Aktar's Post |QID|38001| |N|Grab {Aktar's Post} flight point from (npc:90560) (26.13, 38.88)| |Z|945| |NPC|90560|
+N Talk to Thann to fly to the Iron Front |QID|38581.1| |N|Talk to (npc:90960) to fly to the Iron Front (57.52, 58.80)| |Z|945|
+F The Iron Front |QID|38581| |N|Talk to (npc:90960) to fly to the Iron Front (57.52, 58.80)| |Z|945| |V|
+f The Iron Front |QID|38446| |N|Grab {The Iron Front} from (npc:91940) (10.02, 53.08)| |Z|945| |NPC|91940|
+N Speak with Maladaar |QID|38581.2| |N|Speak with (npc:91935) in {The Iron Front} (9.85, 53.54)| |Z|945| |NPC|91935|
+T The Battle for the West |QID|38581| |N|(npc:91935) in {The Iron Front} (9.85, 53.55)| |Z|945| |NPC|91935|
+A Commander in the Field! |QID|38446| |N|(npc:91935) in {The Iron Front} (9.85, 53.55)| |Z|945| |NPC|91935|
 
-R Ironmonger's Hold |QID|38001| |N|Travel to {Ironmonger's Hold} (32.13, 48.99)| |Z|945|
-R Ironhold Approach |QID|38001| |N|Use the tunnel to reach {Ironhold Approach} (43.65, 42.37)| |Z|945|
-N Speak with the scout in northeast Tanaan Jungle |QID|38001.3| |N|Speak with the scout (npc:90548) in northeast {Tanaan Jungle} in {Ironhold Approach} (43.65, 42.37)| |Z|945| |NPC|90548|
-f Ironhold Approach |TID|38001| |N|Grab {Ironhold Approach} flight point from (npc:92808) (43.40, 42.24)| |Z|945| |NPC|92808|
-A A Message of Terrible Import |QID|38578| |N|(npc:90584) in {Ironhold Approach} (44.20, 41.55)| |Z|945| |NPC|90584|
+R Sha'naari Refuge |QID|38446| |N|Travel to {Sha'naari Refuge} (29.55, 63.13)| |Z|945|
+f Sha'naari Refuge |QID|38446| |N|Grab {Sha'naari Refuge} flight point (29.55, 63.13)| |Z|945|
+N Speak with the scout in southwest Tanaan Jungle |QID|38446.1| |N|Speak with the scout (npc:91942) in southwest Tanaan Jungle, in {Sha'naari Refuge} (29.64, 63.00)| |Z|945| |NPC|91942|
 
-R Vol'mar |TID|38001| |N|Travel to {Vol'mar} (61.52, 45.83)| |Z|945|
-T Commander in the Field! |QID|38001| |N|(npc:90481) in {Vol'mar} (61.52, 45.83)| |Z|945| |NPC|90481|
---A Garrison Campaign: The Bane of the Bleeding Hollow |QID|38453| |N|(npc:90481) in {Vol'mar} (61.52, 45.80)| |Z|945| |NPC|90481|
+R Aktar's Post |QID|38446| |N|Travel to {Aktar's Post} (27.69, 44.44) (30.43, 42.65) (29.34, 39.88) (25.97, 38.86)| |Z|945|
+f Aktar's Post |QID|38446| |N|Grab {Aktar's Post} flight point from (npc:90560) (26.15, 38.87)| |Z|945| |NPC|90560|
+N Speak with the scout in northwest Tanaan Jungle |QID|38446.2| |N|Speak with the scout in {Aktar's Post} (26.01, 38.88)| |Z|945|
 
--- Bonus quest --A Assault on the Ruins of Kra'nak |QID|38252| |N|in {Vol'mar} (61.46, 45.88)| |Z|945| |D|
-R Vault of the Earth |QID|38578| |N|Travel to {Vault of the Earth} (47.50, 67.45)| |Z|945|
-N Go to the Vault of the Earth |QID|38578.1| |N|Go to the {Vault of the Earth} (47.50, 67.45)| |Z|945|
-f Vault of the Earth |TID|38578| |N|Grab {Vault of the Earth} flight point from (npc:90562) (47.01, 70.23)| |Z|945| |NPC|90562|
-N Speak with Lagar the Wise |QID|38578.2| |N|Speak with (npc:90644) in {Vault of the Earth} (47.25, 70.40)| |Z|945| |NPC|90644|
-T A Message of Terrible Import |QID|38578| |N|(npc:90644) in {Vault of the Earth} (47.28, 70.44)| |Z|945| |NPC|90644|
+R Ironmonger's Hold |QID|38446| |N|Travel to {Ironmonger's Hold} (32.28, 48.96) |Z|945|
+R Ironhold Approach |QID|38446| |N|Travel to {Ironhold Approach}, use the tunnel (43.32, 42.09)| |Z|945|
+N Speak with the scout in northeast Tanaan Jungle |QID|38446.3| |N|Speak with the scout (npc:91968) in northeast Tanaan Jungle, in {Ironhold Approach} (43.32, 42.09)| |Z|945| |NPC|91968|
+f Ironhold Approach |TID|38578| |N|Grab {Ironhold Approach} flight point from (npc:92808) (43.40, 42.22)| |Z|945|
+A A Message of Terrible Import |QID|38578| |N|(npc:90584) in {Ironhold Approach} (44.22, 41.55)| |Z|945| |NPC|90584|
 
-C Infrastructure Improvements |QID|38599| |N|This quest is labeled as a group quest but it can easily be done solo by avoiding the elite NPCs with a mount.<br/><br/>You will get a permanent free transporter from {Vol'Mar} to {Throne of Kil'jaeden} if you complete this quest. Otherwise it is safe to skip this quest.<br/><br/>You can find the beacons for the quests at each of the waypoints (58.76, 33.03) (51.67, 22.53) (52.04, 19.90) (56.67, 20.64) (60.40, 19.65) (63.5, 21.43) (59.70, 26.75)| |Z|945|
+R Lion's Watch |TID|38446| |N|Travel to {Lion's Watch} (58.50, 60.33)| |Z|945| 
+T Commander in the Field! |QID|38446| |N|(npc:90309) in {Lion's Watch} (58.50, 60.33)| |Z|945| |NPC|90309|
 
-T Infrastructure Improvements |QID|38599| |N|(npc:90991) in {Vol'mar} (59.86, 47.51)| |Z|945| |NPC|90991|
+R Vault of the Earth |QID|38578| |N|Travel to {Vault of the Earth} (47.63, 67.58)| |Z|945|
+N Go to the Vault of the Earth |QID|38578.1| |N|Go to the {Vault of the Earth} (47.63, 67.58)| |Z|945|
+f Vault of the Earth |QID|38578| |N|Grab {Vault of the Earth} flight point from (npc:90562) (47.01, 70.24)| |Z|945|
+N Speak with Lagar the Wise |QID|38578.2| |N|Speak with (npc:90644) in {Vault of the Earth} (47.28, 70.39)| |Z|945| |NPC|90644|
+T A Message of Terrible Import |QID|38578| |N|(npc:90644) in {Vault of the Earth} (47.26, 70.43)| |Z|945| |NPC|90644|
 
-R Frostwall Shipyard |QID|39243| |N|Travel to {Frostwall Shipyard} (41.59, 72.32)| |Z|941|
-T Shipyard Report |QID|39423| |N|(npc:94789) in {Frostwall Shipyard} (41.59, 72.32)| |Z|941| |NPC|94789|
-A Naval Commander |QID|39243| |N|(npc:94789) in {Frostwall Shipyard} (41.59, 72.32)| |Z|941| |NPC|94789|
-N Find Rolosh Wavechaser at your Shipyard |QID|39243.1| |N|Find (npc:94789) at your Shipyard in {Frostwall Shipyard} (42.32, 70.90)| |Z|941| |NPC|94789|
-N Start a Naval Mission |QID|39243.2| |N|Use the Naval Fleet Table to start a Naval Mission in {Frostwall Shipyard}<br/><br/>Note: You can earn the resource (cur:1101) for Naval Mission by completing daily or bonus objectives in {Tanaan Jungle} (42.11, 70.92)| |Z|941|
-N Complete a Naval Mission |QID|39243.3| |N|Wait 1 minute until a Naval Mission is complete in {Frostwall Shipyard} (42.06, 70.90)| |Z|941|
-T Naval Commander |QID|39243| |N|(npc:94789) in {Frostwall Shipyard} (42.11, 71.00)| |Z|941| |NPC|94789|
-A Destroying the Competition |QID|39401| |N|(npc:94789) in {Frostwall Shipyard} (42.11, 71.00)| |Z|941| |NPC|94789|
-N Learn Ship Blueprint: Destroyer |QID|39401.1| |N|Learn (item:126900) in {Frostwall Shipyard} (42.11, 71.00)| |Z|941| |U|126900|
-N Build a Destroyer at your Shipyard |QID|39401.2| |N|Speak to (npc:94429) to build a Destroyer at your Shipyard in {Frostwall Shipyard} (40.51, 69.97)| |Z|941| |NPC|94429|
-N Send your Destroyer on a mission |QID|39401.3| |N|Use the fleet table to send your Destroyer on a mission in {Frostwall Shipyard} (42.09, 70.95)| |Z|941|
-T Destroying the Competition |QID|39401| |N|(npc:94789) in {Frostwall Shipyard} (42.10, 71.02)| |Z|941| |NPC|94789|
-A If At First You Fail, Try Again! |QID|39674| |N|(npc:94429) in {Frostwall Shipyard} (42.1,71.0)| |Z|941| |NPC|94429|
-N Build another Destroyer ship |QID|39674.1| |N|Speak to (npc:94429) to build a Destroyer at your Shipyard in {Frostwall Shipyard} (40.51, 69.97)| |Z|941| |NPC|94429|
-N Complete Naval Mission: The Second Time is the Charm |QID|39674.2| |N|Use the fleet table to send your Destroyer on a mission in {Frostwall Shipyard} (42.09, 70.95)| |Z|941|
-T If At First You Fail, Try Again! |QID|39674| |N|(npc:94789) in {Frostwall Shipyard} (42.10, 71.02)| |Z|941| |NPC|94789|
-A Equipping Our Fleet |QID|39675| |N|(npc:94789) in {Frostwall Shipyard} (42.10, 71.02)| |Z|941| |NPC|94789|
-N Find Kronk Rustspark on the docks |QID|39675.1| |N|Speak with (npc:94801) in {Frostwall Shipyard} (41.0,72.5)| |Z|941| |NPC|94801|
-N (item:128274) |QID|39675.2| |N|Collect (item:128274) from the tan scroll on wooden crate (38.4,72.7)| |Z|941| 
-T Equipping Our Fleet |QID|39675| |N|(npc:94801) in {Frostwall Shipyard} (41.0,72.5)| |Z|941| |NPC|94801|
-A True Naval Commander |QID|39676| |N|(npc:94801) in {Frostwall Shipyard} (41.0,72.5)| |Z|941| |NPC|94801|
-N Equip Blast Furnace on a ship |QID|39676.1| |N|Use (item:127882) on your ship (41.0,72.5)| |Z|941| |U|127882|
-N Complete the Naval Blockade Mission: South Sea |QID|39676.2| |N|Use the fleet table to send your ship on Naval Blockade Mission: South Sea (42.09, 70.95)| |Z|941|
-T True Naval Commander |QID|39676| |N|(npc:94789) in {Frostwall Shipyard} (42.10, 71.02)| |Z|941| |NPC|94789|
-A I Sunk Your Battleship |QID|39604| |N|(npc:94789) in {Frostwall Shipyard} (42.10, 71.02)| |Z|941| |NPC|94789|
+C Setting the Signal |QID|38603| |N|This quest is labeled as a group quest but it can easily be done solo by avoiding the elite NPCs with a mount.<br/><br/>You will get a permanent free transporter from {Vol'Mar} to {Throne of Kil'jaeden} if you complete this quest. Otherwise it is safe to skip this quest.<br/><br/>You can find the beacons for the quests at each of the waypoints (58.76, 33.03) (51.67, 22.53) (52.04, 19.90) (56.67, 20.64) (60.40, 19.65) (63.5, 21.43) (59.70, 26.75))| |Z|945|
 
-R Vol'mar |QID|39604| |N|Travel to {Vol'mar} (61.7,45.7)| |Z|945|
-N Find Shadow Hunter Denjai |QID|39604.1| |N|(npc:96014) in {Vol'mar} (61.7,45.7)| |Z|945| |NPC|96014|
-N Vol'jin's Headhunters (Honored) |QID|39604.2| |N|Earn Honored status with (fac:1848). Use the "Tanaan Jungle (Daily)" guide to raise your reputation|
-B (item:127269) |QID|39604.3| |N|Purchase (item:127269) from (npc:96014) in {Vol'mar} (61.7,45.7)| |Z|945| |NPC|96014| |L|127269|
-N Learn Ship Blueprint: Battleship |QID|39604.3| |N|Use (item:127269) to learn it| |U|127269|
-T I Sunk Your Battleship |QID|39604| |N|(npc:96014) in {Vol'mar} (61.7,45.7)| |Z|945| |NPC|96014|
+R Lion's Watch |TID|38603| |N|Travel to {Lion's Watch} (58.14, 58.57)| 
+T Setting the Signal |QID|38603| |N|(npc:92545) in {Lion's Watch} (58.14, 58.57)| |NPC|92545|
 
-R Frostwall Shipyard |QID|39245| |N|Travel to {Frostwall Shipyard} (42.10, 71.02)| |Z|941|
-A Upgrading The Fleet |QID|39245| |N|(npc:94789) in {Frostwall Shipyard} (42.10, 71.02)| |Z|941| |NPC|94789|
-C Upgrading The Fleet |QID|39245| |N|Collect 1000 (cur:824), 1000<g> and complete 15 naval combat missions. (42.10, 71.02)| |Z|941| |NPC|94789|
-T Upgrading The Fleet |QID|39245| |N|(npc:94789) in {Frostwall Shipyard} (42.10, 71.02)| |Z|941| |NPC|94789|
-A Naval Domination |QID|39246| |N|(npc:94789) in {Frostwall Shipyard} (42.10, 71.02)| |Z|941| |NPC|94789|
-C Naval Domination |QID|39246| |N|Collect 2500 (cur:824), 2500<g> and complete 25 naval combat missions. (42.10, 71.02)| |Z|941| |NPC|94789|
-T Naval Domination |QID|39246| |N|(npc:94789) in {Frostwall Shipyard} (42.10, 71.02)| |Z|941| |NPC|94789|
+R Lunarfall Shipyard |QID|39056| |N|Travel to {Lunarfall Shipyard} (28.17, 10.66)| |Z|947|
+T Shipyard Report |QID|39422| |N|(npc:93822) in {Lunarfall Shipyard} (28.17, 10.66)| |Z|947| |NPC|93822|
+A Naval Commander |QID|39056| |N|(npc:93822) in {Lunarfall Shipyard} (28.17, 10.66)| |Z|947| |NPC|93822|
+N Find Merreck Vonder at your Shipyard |QID|39056.1| |N|Find (npc:93822) at {Lunarfall Shipyard} (28.04, 11.52)| |Z|947| |NPC|93822|
+N Start a Naval Mission from the Naval Fleet Table |QID|39056.2| |N|Start a Naval Mission from the Naval Fleet Table in {Lunarfall Shipyard}<br/><br/>Note: You can earn the resource (cur:1101) for Naval Mission by completing daily or bonus objectives in {Tanaan Jungle} (28.17, 11.76)| |Z|947|
+N Complete a Naval Mission |QID|39056.3| |N|Wait 1 minute until a a Naval Mission is complete in {Lunarfall Shipyard} (28.21, 11.68)| |Z|947|
+T Naval Commander |QID|39056| |N|(npc:93822) in {Lunarfall Shipyard} (28.21, 11.68)| |Z|947| |NPC|93822|
+A Destroying the Competition |QID|39404| |N|(npc:93822) in {Lunarfall Shipyard} (28.21, 11.68)| |Z|947| |NPC|93822|
+N Learn Ship Blueprint: Destroyer |QID|39404.1| |N|Learn (item:126900)in {Lunarfall Shipyard} (28.20, 11.70)| |Z|947| |U|126900| 
+N Build a Destroyer at your Shipyard |QID|39404.2| |N|Speak to (npc:95002) and Build a Destroyer at your Shipyard, in {Lunarfall Shipyard} (29.95, 10.77)| |Z|947| |NPC|95002|
+N Send your Destroyer on a mission |QID|39404.3| |N|Send your Destroyer on a mission in {Lunarfall Shipyard} (28.18, 11.70)| |Z|947|
+T Destroying the Competition |QID|39404| |N|(npc:93822) in {Lunarfall Shipyard} (28.20, 11.69)| |Z|947| |NPC|93822|
+
+A If At First You Fail, Try Again! |QID|39655| |N|(npc:93822) in {Lunarfall Shipyard} (28.20, 11.69)| |Z|947| |NPC|93822|
+N Build another Destroyer ship |QID|39655.1| |N|Speak to (npc:95002) to build a Destroyer at your Shipyard in {Lunarfall Shipyard} (28., 11.1)| |Z|947| |NPC|95002|
+N Complete Naval Mission: The Second Time is the Charm |QID|39655.2| |N|Use the fleet table to send your Destroyer on a mission in {Lunarfall Shipyard} (28.8, 11.9)| |Z|947|
+T If At First You Fail, Try Again! |QID|39655| |N|(npc:93822) in {Lunarfall Shipyard} (28.20, 11.69)| |Z|947| |NPC|93822|
+A Equipping Our Fleet |QID|39666| |N|(npc:93822) in {Lunarfall Shipyard} (28.20, 11.69)| |Z|947| |NPC|93822|
+N Find Salty Jorren on the Docks |QID|39666| |N|Speak to (npc:93812) in {Lunarfall Shipyard} (27.9,11.2)| |Z|947| |NPC|93812|
+N (item:128274) |QOD|39666.2| |N|Collect (item:128274) from a scroll on a wooden cart (28.9,9.6)| |Z|947| |L|128274|
+T Equipping Our Fleet |QID|39666| |N|(npc:93812) in {Lunarfall Shipyard} (27.9,11.2)| |Z|947| |NPC|93812|
+A True Naval Commander |QID|39665| |N|(npc:93812) in {Lunarfall Shipyard} (27.9,11.2)| |Z|947| |NPC|93812|
+N Equip Blast Furnace on a ship |QID|39665.1| |N|Use (item:127882) on your ship| |Z|947| |U|127882|
+N Complete the Naval Blockade Mission: South Sea |QID|39665.2| |N|Use the fleet table to send your ship on Naval Blockade Mission: South Sea (28.8,11.9)| |Z|947|
+T True Naval Commander |QID|39665| |N|(npc:93822) in {Lunarfall Shipyard} (28.20, 11.69)| |Z|947| |NPC|93822|
+A I Sunk Your Battleship |QID|39601| |N|(npc:93822) in {Lunarfall Shipyard} (28.20, 11.69)| |Z|947| |NPC|93822|
+
+R Lion's Watch |QID|39601| |N|Travel to {Lion's Watch} (58.4,60.5)| |Z|945|
+N Find Vindicator Krethos |QID|39601.1| |N|(npc:90974) in {Lion's Watch} (58.4,60.5)| |Z|945| |NPC|90974|
+N Hand of the Prophet (Honored) |QID|39601.2| |N|Earn Honored status with (fac:1847). Use the "Tanaan Jungle (Daily)" guide to raise your reputation|
+B (item:127269) |QID|39601.3| |N|Purchase (item:127269) from (npc:90974) in {Lion's Watch} (58.4,60.5)| |Z|945| |NPC|90974| |L|127269|
+N Learn Ship Blueprint: Battleship |QID|39601.3| |N|Use (item:127269) to learn it| |U|127269|
+T I Sunk Your Battleship |QID|39601| |N|(npc:90974) in {Lion's Watch} (58.4,60.5)| |Z|945| |NPC|90974|
+
+R Lunarfall Shipyard |QID|39067| |N|Travel to {Lunarfall Shipyard} (28.20, 11.69)| |Z|947| 
+A Upgrading The Fleet |QID|39067| |N|(npc:93822) in {Lunarfall Shipyard} (28.20, 11.69)| |Z|947| |NPC|93822|
+C Upgrading The Fleet |QID|39067| |N|Collect 1000 (cur:824), 1000<g> and complete 15 naval combat missions. (28.20, 11.69)| |Z|947| |NPC|93822|
+T Upgrading The Fleet |QID|39067| |N|(npc:93822) in {Lunarfall Shipyard} (28.20, 11.69)| |Z|947| |NPC|93822|
+A Naval Domination |QID|39068| |N|(npc:93822) in {Lunarfall Shipyard} (28.20, 11.69)| |Z|947| |NPC|93822|
+C Naval Domination |QID|39068| |N|Collect 2500 (cur:824), 2500<g> and complete 25 naval combat missions. (28.20, 11.69)| |Z|947| |NPC|93822|
+T Naval Domination |QID|39068| |N|(npc:93822) in {Lunarfall Shipyard} (28.20, 11.69)| |Z|947| |NPC|93822|
 
 N Guide Complete
 
 ]]
 end, {image = "tanaanjungle.tga", description = [[This guide unlocks Tanaan Jungle and Garrison Naval Missions. Level 100 character and tier 3 Garrison]]})	end
-	
+
 	function Guide:Unload()
 	end
 end

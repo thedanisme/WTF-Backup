@@ -324,5 +324,6 @@ end
 function NOP:ItemTimer() -- slow backpack recheck
   if self:inCombat() or not (self.spellLoad and self.itemLoad) then return end -- still loading or in combat
   wipe(NOP.T_CHECK) -- lets check all items in bags in slow-mo
+  self:ZoneChanged()
   self:ItemShowNew()
 end

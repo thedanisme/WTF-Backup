@@ -511,7 +511,7 @@ A Bite of the Sashj'tar |QID|40331| |N|(npc:99544) in {Jandvik} (69.05,54.15)| |
 N (item:132371) |QID|40332.1| |N|Collect 6 (item:132371) various shaped pieces of wood on the ground around {Azuregale Bay} (70.76,55.59)| |Z|1033 0|
 
 R Muddledeep Cavern |QID|40320| |N|Travel to {Muddledeep Cavern} (69.93,57.06) (69.33,58.84)| |Z|1033 0|
-N (npc:99562) |QID|40320.1| |N|Rescue (npc:99562) in {Muddledeep Cavern} (69.28,57.80)| |Z|1033 0| |NPC|99607|
+N (npc:99562) |QID|40320.1| |N|Rescue (npc:99562) in {Muddledeep Cavern} (69.28,57.80)| |Z|1033 0| |NPC|99562|
 N (npc:99563) |QID|40320.2| |N|Rescue (npc:99563) in {Muddledeep Cavern} (69.16,58.73) (70.00,60.36) (68.91,59.80)| |Z|1033 0| |NPC|99563|
 N (npc:99564) |QID|40320.3| |N|Rescue (npc:99564) in {Muddledeep Cavern} (69.36,59.40) (68.51,57.48) (68.05,58.43)| |Z|1033 0| |NPC|99564|
 

@@ -4,13 +4,22 @@
 [*]Hook for skinning addons.[/list]
 
 ]]
+--[[Revisions: 06.16
+
+06.16 16.10.2016
+
+[list][*]Added items with Use: Provides a significant increase to character experience spell.
+[*]Added items with Use: Open your Followers page and use this item to grant 4000 XP directly to a Champion.
+[*]Fix for Legion fishing items.[/list]
+
+]]
 --[[Revisions: 06.14
 
-06.14 30.09.2016
+06.14 01.10.2016
 
 [list][*]Added mailbox send frame to list of windows to dismiss before item use. Only works when scripts are enabled in options and running scripts are enabled in WoW client UI.
-Ancient mana items for +30,+50,+75,+100,+150,+200 and +300 mana gain.
-German localization by Ragnar_F, thx for pointing at some typo errors, "Permanent" is not favorite word I know.[/list]
+[*]Ancient mana items for +30,+50,+75,+100,+150,+200 and +300 mana gain.
+[*]German localization by Ragnar_F, thx for pointing at some typo errors, "Permanent" is not my favorite word I know.[/list]
 
 ]]
 --[[Revisions: 06.12
@@ -18,8 +27,8 @@ German localization by Ragnar_F, thx for pointing at some typo errors, "Permanen
 06.12 19.09.2016
 
 [list][*]Long string with multiline is now parsed into multiple strings, and printed. Ticket-fix prevent overflow text out of chat window.
-Fix anchor for UberTooltips.
-Added powers from Legion fish catches[/list]
+[*]Fix anchor for UberTooltips.
+[*]Added powers from Legion fish catches[/list]
 
 ]]
 --[[Revisions: 06.10

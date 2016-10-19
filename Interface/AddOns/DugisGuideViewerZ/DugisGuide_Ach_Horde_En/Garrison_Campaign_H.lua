@@ -169,7 +169,7 @@ A Four Finger Discount |QID|34041| |N|(npc:77928) (80.0,56.2)| |NPC|77928| |Z|94
 N Steal Carbonfrost Flamecore |QID|34041.3| |N|Click on the Carbonfrost Flamecore (85.2,58.1)| |OBJ|228736| |Z|941| |PRE|34034|
 N Steal Blackrock Cog |QID|34041.1| |N|Click on the Blackrock Cog (87.5,55.8)| |OBJ|228733| |Z|941| |PRE|34034|
 N Steal Condensed Geyser Gas |QID|34041.1| |N|Click on the Condensed Geyser Gas (87.3,53.1)| |OBJ|228735| |Z|941| |PRE|34034|
-C Maker's Mark |QID|34040| |N|Inspect 5 (npc:78126) in the {Iron Siegeworks} (87.3,53.1)| |Z|941| |PRE|34034|
+C Maker's Mark |QID|34040| |N|Inspect 5 Siege Parts in the {Iron Siegeworks} (87.3,53.1)| |Z|941| |PRE|34034|
 T Maker's Mark |QID|34040| |N|(npc:78323) (87.3,53.1)| |NPC|78323| |Z|941| |PRE|34034|
 T Four Finger Discount |QID|34041| |N|(npc:78323) (87.3,53.1)| |NPC|78323| |Z|941| |PRE|34034|
 A A Fellow Gearhead |QID|77161| |N|(npc:78323) (87.3,53.1)| |NPC|78323| |Z|941| |PRE|34034|

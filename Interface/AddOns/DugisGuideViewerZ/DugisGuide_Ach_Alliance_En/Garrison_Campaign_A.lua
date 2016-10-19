@@ -275,7 +275,7 @@ T Pesky Podlings |QID|35188| |N|(npc:81499) (49.8,81.4)| |NPC|81499| |Z|947| |PR
 T An Ancient Threat |QID|35190| |N|(npc:81499) (49.8,81.4)| |NPC|81499| |Z|947| |PRE|35185|
 A Facing Demons |QID|35194| |N|(npc:81530) (50.6,82.2)| |NPC|81530| |Z|947| |PRE|35185|
 K (npc:81697) |QID|35194.1| |N|Kill (npc:81697) (45.8,80.6)| |NPC|81697| |Z|947| |PRE|35185|
-N Destroy (npc:88396) |QID|35194.2| |N|Click on (npc:88396) (45.8,80.6) to destroy it| |NPC|88396| |Z|947| |PRE|35185|
+N Destroy Demon Portal |QID|35194.2| |N|Click on Demon Portal (45.8,80.6) to destroy it| |Z|947| |PRE|35185|
 T Facing Demons |QID|35194| |N|Laanda's Scroll (50.6,82.2)| |OBJ|231918| |Z|947| |PRE|35185|
 A Socrethar's Fury |QID|35195| |N|Laanda's Scroll (50.6,82.2)| |OBJ|231918| |Z|947| |PRE|35185|
 C Socrethar's Fury |QID|35195| |N|Confront (npc:82662), listen to the dialogue, and then kill (npc:81858) and collect (item:119127)| |NPC|82662,81858| |Z|947| |PRE|35185|

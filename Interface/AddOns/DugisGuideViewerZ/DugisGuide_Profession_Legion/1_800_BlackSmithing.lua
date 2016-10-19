@@ -5,9 +5,9 @@ return [[
 
 N Level 100 Required |N|You need to be at least level 100 to use this profession guide| |PL|100|
 N Train Blacksmithing |N|Speak to (npc:92183) in {Dalaran} and train Blacksmithing (44.4, 28.8)| |Z|1014 10| |PM|Blacksmithing|75|
-A Strange New Ores |N|(npc:92183) in {Dalaran} (44.4, 28.8)| |Z|1014 10| |NPC|92183|
-C Strange New Ores |N|Collect 10 (item:123918), you will have to purchase this from the Auction or gather with mining profession in Broken Isle| |Z|1014 10|
-T Strange New Ores |N|(npc:92183) in {Dalaran} (44.4, 28.8)| |Z|1014 10| |NPC|92183|
+A Strange New Ores |QID|38499| |N|(npc:92183) in {Dalaran} (44.4, 28.8)| |Z|1014 10| |NPC|92183|
+C Strange New Ores |QID|38499| |N|Collect 10 (item:123918), you will have to purchase this from the Auction or gather with mining profession in Broken Isle| |Z|1014 10|
+T Strange New Ores |QID|38499| |N|(npc:92183) in {Dalaran} (44.4, 28.8)| |Z|1014 10| |NPC|92183|
 A The Properties of Leystone |QID|39681| |N|(npc:92183) in {Dalaran} (44.4, 28.8)| |Z|1014 10| |NPC|92183|
 C The Properties of Leystone |QID|39681| |N|Observe (npc:92183) as he attempts to work with the leystone ore. in {Dalaran} (44.4, 28.8)| |Z|1014 10| |NPC|92183|
 T The Properties of Leystone |QID|39681| |N|(npc:92183) in {Dalaran} (44.4, 28.8)| |Z|1014 10| |NPC|92183|
@@ -188,7 +188,7 @@ T Tribal Knowledge |QID|38533| |N|(npc:92264) in {Nal'ryssa's Encampment} (30, 5
 N Materials List 35-100 |N|<b>342 (item:123918)| |P|Blacksmithing 100| |L|123918 342|
 N 35-100 (spell:182963) |BL| |N|<b>19 (spell:182963)<br/><br/>Save all the items to break them down into (item:136342) later| |P|Blacksmithing 100|
 
-C Uniting the Isles |QID|43341| |N|Complete each leveling zone including Suramar until you rarn at least Friendly reputation with the factions of the Broken Isles to unlock the World Quests| 
+C Uniting the Isles |QID|43341| |N|Complete each leveling zone including Suramar until you earn at least Friendly reputation with the factions of the Broken Isles to unlock the World Quests| 
 N World Quests |N|Open your world map and check every zone for blacksmithing world quests. They are marked with the little anvil blacksmithing icon. The world quests you get are randomly generated, so you might not get one right away and have to wait even a few days until one appears.<br/><br/>Look for:<br/><b>(spell:182971)<br/><b>(spell:182972)<br/><br/>Tick this step to continue|
 
 N Materials List 100 - 552 |N|<b>1356 (item:123918)| |P|Blacksmithing 552| |L|123918 1356|

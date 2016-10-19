@@ -1,0 +1,13 @@
+tag 2.2.1.8
+449460119911b59c351c97e7a573d5723a071cdb
+Benjamin Staneck <staneck@gmail.com>
+2016-10-18 23:26:21 +0200
+
+
+
+--------------------
+
+Infus:
+	- Add Oneths Intuition to the legendary list in the templates
+	- Add Lich King's Apocalypse to the sounds list
+	- Dynamic Group: Fix descending sort

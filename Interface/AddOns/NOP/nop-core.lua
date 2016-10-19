@@ -35,6 +35,7 @@ function NOP:ItemLoad() -- load template item tooltips
     if not NOP.T_RECIPES_FIND[itemID] then -- need fill pattern
       local name = GetItemInfo(itemID)
       if name == nil then -- item has no info on client side yet, let wait for server
+        --self.printt("GetItemInfo(itemID)",itemID)
         retry = true
       else
         self.itemFrame:ClearLines() -- clean tooltip frame
@@ -63,6 +64,7 @@ function NOP:ItemLoad() -- load template item tooltips
             end
           end
         else
+          --self.printt("SetItemByID(itemID)", itemID)
           retry = true -- /run NOP.itemFrame:ClearLines(); NOP.itemFrame:SetItemByID(111972); print(NOP.itemFrame:NumLines())
           self.itemFrame = self:TooltipCreate(private.TOOLTIP_ITEM) -- empty tooltip I just throw out old one. Workaround for bad tooltip frame init damn Blizzard!
           break
@@ -86,6 +88,7 @@ function NOP:SpellLoad() -- load spell patterns
     if data and data[2] then
       local name = GetItemInfo(data[2])
       if name == nil then -- item has no info on client side yet, let wait for server
+        --self.printt("GetItemInfo(data[2])",data[2])
         retry = true
       end
     end
@@ -101,7 +104,6 @@ function NOP:SpellLoad() -- load spell patterns
   wipe(NOP.T_OPEN) -- clear table
   NOP.T_OPEN[ITEM_OPENABLE] = {1,nil} -- standard right click open
   for spellid,data in pairs(NOP.T_SPELL) do
-    local name = GetSpellInfo(spellid)
     self.spellFrame:ClearLines() -- clean tooltip frame
     self.spellFrame:SetSpellByID(spellid) -- Fills the tooltip with information about a spell specified by ID
     local spellName, spellRank, spellID = self.spellFrame:GetSpell() -- Returns information about the spell displayed in the tooltip
@@ -115,6 +117,7 @@ function NOP:SpellLoad() -- load spell patterns
         end -- /run foreach(NOP.T_OPEN,print)
       end
     else
+      --self.printt("SetSpellByID(spellid)",spellid)
       retry = true -- this is problem in tooltip frame! Workaround for bad tooltip frame init damn Blizzard!
       self.spellFrame = self:TooltipCreate(private.TOOLTIP_SPELL)
       break
@@ -130,6 +133,7 @@ function NOP:SpellLoad() -- load spell patterns
     if spell then
       if (string.len(spell) > 0) then NOP.T_SPELL_FIND[spell] = count end
     else
+      --self.printt("GetItemSpell(itemID)",itemID)
       retry = true
     end
   end

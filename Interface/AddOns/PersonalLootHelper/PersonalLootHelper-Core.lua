@@ -1,7 +1,70 @@
 --[[
 
+-----------------------------------------------
+Announce logic psuedocode 
+
+Default isAnnouncer to false
+
+In PerformNotify:
+	If Notify Group
+		If self is group lead
+			isAnnouncer = true
+		Else	
+			Request announce via SendAddonMessage, telling them whether you're the group lead
+			Wait 300ms, queue responses
+			If no response in 300ms
+				isAnnouncer = true
+			else
+				Loop through responses
+				If other addon is already announcer
+					isAnnouncer = false
+				Else
+					If you are character with lowest (!assistant + name) then
+						isAnnouncer = true
+					Else
+						isAnnouncer = false
+
+In AddonMessage listener:
+	If received request to announce:
+		If Notify Group
+			If you are group lead tell other addon you're the announcer
+			If you are announcer
+				If other addon is not group leader, tell other addon you're the announcer
+				Else isAnnouncer = false
+			Else tell other addon your character name
+	
+When you change your options to turn Notify Group off, set isAnnouncer back to false
+When PLH becomes disabled, set isAnnouncer to false	
+-----------------------------------------------	
+	
 Changelog
 
+20161015 - 1.16
+	Public
+		Added ability for players to whisper the roll coordinator with 'trade [item]' in Coordinate Rolls mode to initiate rolls for a specific item; for example, when PLH can't determine their item is tradeable because they have lower ilvl equipped but higher ilvl in their bags
+		Resolved bug where PLH would ignore 'trade' whispers from looters in Coordinate Rolls mode when PLH only found one other group member for whom the item would be an upgrade
+		Resolved bug where PLH would sometimes declare people's rolls as ineligible in Coordinate Rolls mode even though they could equip the item
+		Added support for BNET whispers in Coordinate Rolls mode (note: only works for 'trade' whispers, not 'trade [item]' whispers)
+		Added support for 7.1 trinkets
+	Private
+		In WhisperReceivedEvent, add functionality for 'trade [item]'
+		In PerformNotify, add looted item to whisperedItems array even if only 1 other person can use the item
+		Added 'or groupInfoCache[name] == nil' check for initial class/etc population in UpdateGroupInfoCache
+		Added BNWhisperReceivedEvent and related - note that it won't work when the bnet whisper is 'trade [item]' because bnet whispers strip off the color-coding of the item link
+
+20161015 - 1.15
+	Public
+		Removed group notification from LFR, regardless of whether or not Notify Group is set
+		Set default Notify Mode to "self" instead of "group" for new users
+		Resolved bug where sometimes PLH would tell someone their loot wasn't found after notifying them in Coordinate Rolls mode
+		Resolved bug where sometimes high rolls would be incorrectly ignored in Coordinate Rolls mode
+		
+	Private
+		Added LFR check to PerformNotify
+		Changed value of DEFAULT_NOTIFY_MODE to "self"
+		Added realm checked to sender name in WhisperReceivedEvent
+		Added tonumber in PLH_EndRolls()
+	
 20160921 - 1.14
 	Public
 		Fixed bug that caused options to reset upon login for users who also have the addon Oilvl (or other addons that call the options panel 'okay' behind the scenes) installed
@@ -209,12 +272,8 @@ TODO Refactoring
 			what happens!
 	comments - update to reflect the approach to looping logic; just using outer loop now; no inner retry logic
   
-TOTEST Tests that still need to be run:
-	TOTEST:  Legion relics...need to add them to things that reference inventory slots?
-
 Future enhancement ideas:
 	Add pop up window giving player option to whisper people who can use gear to offer the loot to them
-	add plh trade [item] so user can force rolls (or re-rolls)
 	add ability for people to opt out of receiving whispers when they receive tradeable items
 	if you have addon installed, get a popup to decide what to do vs. a whisper?
 	option for roll timers - auto-finish rolls after [X] seconds or never, timers for roll warnings
@@ -241,7 +300,7 @@ local NOTIFY_MODE_SELF = 1
 local NOTIFY_MODE_GROUP = 2
 local NOTIFY_MODE_COORDINATE_ROLLS = 3
 
-local DEFAULT_NOTIFY_MODE = NOTIFY_MODE_GROUP
+local DEFAULT_NOTIFY_MODE = NOTIFY_MODE_SELF
 local DEFAULT_INCLUDE_BOE = false
 local DEFAULT_MIN_ILVL = 528  -- personal loot was introduced with Siege of Orgrimmar, which started at ilvl 528
 local DEFAULT_MIN_QUALITY = 3  -- Rare
@@ -583,6 +642,16 @@ to easily populate these arrays:
 	to obtain IDs: http://www.wowhead.com/items/armor/trinkets/role:1?filter=166:151;7:1;0:0#0-3+2
 ]]--	
 local TRINKET_AGILITY_DPS = {
+
+	-- 7.1 trinkets
+	140027, -- Ley Spark
+	142164, -- Toe Knee's Promise
+	142160, -- Mrrgria's Favor
+	142167, -- Eye of Command
+	142165, -- Deteriorated Construct Core
+	142159, -- Bloodstained Handkerchief
+	142157, -- Aran's Relaxing Ruby
+
 	137419, -- Chrono Shard
 	133642, -- Horn of Valor
 	141537, -- Thrice-Accursed Compass
@@ -636,6 +705,12 @@ local TRINKET_AGILITY_DPS = {
 }
 
 local TRINKET_INTELLECT_DPS = {
+	-- 7.1 trinkets
+	140031, -- Mana Spark
+	142160, -- Mrrgria's Favor
+	142165, -- Deteriorated Construct Core
+	142157, -- Aran's Relaxing Ruby
+	
 	137419, -- Chrono Shard
 	133642, -- Horn of Valor
 	141482, -- Unstable Arcanocrystal
@@ -677,6 +752,12 @@ local TRINKET_INTELLECT_DPS = {
 }
 
 local TRINKET_STRENGTH_DPS = {
+	-- 7.1 trinkets
+	140035, -- Fluctuating Arc Capacitor
+	142164, -- Toe Knee's Promise
+	142167, -- Eye of Command
+	142159, -- Bloodstained Handkerchief
+	
 	137419, -- Chrono Shard
 	133642, -- Horn of Valor
 	141482, -- Unstable Arcanocrystal
@@ -714,6 +795,14 @@ local TRINKET_STRENGTH_DPS = {
 }
 
 local TRINKET_HEALER = {
+	-- 7.1 trinkets
+	140031, -- Mana Spark
+	142160, -- Mrrgria's Favor
+	142162, -- Fluctuating Energy
+	142158, -- Faith's Crucible
+	142165, -- Deteriorated Construct Core
+	142157, -- Aran's Relaxing Ruby
+	
 	137419, -- Chrono Shard
 	133642, -- Horn of Valor
 	141482, -- Unstable Arcanocrystal
@@ -766,6 +855,13 @@ local TRINKET_HEALER = {
 }
 
 local TRINKET_TANK = {
+	-- 7.1 trinkets
+	140027, -- Ley Spark
+	140035, -- Fluctuating Arc Capacitor
+	142169, -- Raven Eidolon
+	142168, -- Majordomo's Dinner Bell
+	142161, -- Inescapable Dread
+	
 	137419, -- Chrono Shard
 	133642, -- Horn of Valor
 	141482, -- Unstable Arcanocrystal
@@ -814,6 +910,7 @@ local TRINKET_TANK = {
 local addonLoadedFrame
 local lootReceivedEventFrame
 local whisperReceivedEventFrame
+local bnWhisperReceivedEventFrame
 local rollReceivedEventFrame
 local inspectReadyEventFrame
 local rosterUpdatedEventFrame
@@ -1040,6 +1137,7 @@ local function IsEquippableItemForCharacter(item, characterName)
 			local isRelic = IsRelic(item)
 			isEquippableForClass = itemEquipLoc == 'INVTYPE_CLOAK' -- cloaks show up as type=armor, subtype=cloth, but they're equippable by all, so set to true if cloak
 			local i = 1
+			
 			while not isEquippableForClass and ValidGear[i] do
 				if class == ValidGear[i][1] and itemClass == ValidGear[i][2] and itemSubclass == ValidGear[i][3] then
 					isEquippableForClass = true
@@ -1338,12 +1436,16 @@ local function PerformNotify(item, characterName)
 			local names = GetNames(isAnUpgradeForAnyCharacterNames, MAX_NAMES_TO_SHOW)
 
 			if PLH_NOTIFY_MODE == NOTIFY_MODE_GROUP or PLH_NOTIFY_MODE == NOTIFY_MODE_COORDINATE_ROLLS then
-				PLH_SendBroadcast(PLH_GetNameWithoutRealm(characterName) .. ' can trade ' .. item .. ', which is an ilvl upgrade for ' .. names)
+				if not PLH_IsInLFR() then
+					PLH_SendBroadcast(PLH_GetNameWithoutRealm(characterName) .. ' can trade ' .. item .. ', which is an ilvl upgrade for ' .. names)
+				end
 			end
 			if PLH_NOTIFY_MODE == NOTIFY_MODE_COORDINATE_ROLLS and UnitIsGroupLeader('player') then
-				if #isAnUpgradeForAnyCharacterNames > 1 then  -- more than 1 person can use the item
-					PLH_SendWhisper('You can trade ' .. item .. ', which is an ilvl upgrade for ' .. names .. '. Reply \'' .. TRADE_MESSAGE .. '\' to initiate rolls for this item.', characterName)
+				if not PLH_IsInLFR() then
 					whisperedItems[characterName] = item  -- use full name-realm since that what we'll get when we look it up from the whisper
+					if #isAnUpgradeForAnyCharacterNames > 1 then  -- more than 1 person can use the item
+						PLH_SendWhisper('You can trade ' .. item .. ', which is an ilvl upgrade for ' .. names .. '. Reply \'' .. TRADE_MESSAGE .. '\' to initiate rolls for this item.', characterName)
+					end
 				end
 			end
 
@@ -1354,7 +1456,7 @@ local function PerformNotify(item, characterName)
 				PLH_SendAlert(PLH_GetNameWithoutRealm(characterName) .. ' can trade ' .. item .. ', which is an ilvl upgrade for you!')
 				PlaySound('LEVELUP')
 			elseif PLH_NOTIFY_MODE == NOTIFY_MODE_SELF then
-				PLH_SendUserMessage(PLH_GetNameWithoutRealm(characterName) .. ' can trade ' .. item .. ', which is an ilvl upgrade for ' .. names)
+--				PLH_SendUserMessage(PLH_GetNameWithoutRealm(characterName) .. ' can trade ' .. item .. ', which is an ilvl upgrade for ' .. names)
 			end
 		end
 	end
@@ -1487,6 +1589,7 @@ function PLH_EndRolls()
 	local winners = nil
 	local highRoll = 0
 	for name, roll in pairs(currentRolls) do
+		roll = tonumber(roll)
 		if winners == nil or roll > highRoll then
 			winners = { name }
 			highRoll = roll
@@ -1531,33 +1634,67 @@ local function GetItemFromQueueByPlayer(player)
 	return nil
 end
 
-local function WhisperReceivedEvent(self, event, ...)
-	local arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12 = ...
-	local message = arg1
-	local sender = arg2
+local function ProcessWhisper(message, sender)
+	if PLH_NOTIFY_MODE == NOTIFY_MODE_COORDINATE_ROLLS and UnitIsGroupLeader('player') then
+		if not string.find(sender, '-') then
+			sender = PLH_GetUnitNameWithRealm(sender)
+		end
 
-	if string.upper(message) == TRADE_MESSAGE or string.upper(message) == '\'' .. TRADE_MESSAGE .. '\'' then
-		if whisperedItems[sender] ~= nil then
-			local item = whisperedItems[sender]
-			whisperedItems[sender] = nil
-			QueueItem(sender, item)
-			-- if we're still rolling for another item, let the person know their item is queued
-			if currentRollItem ~= nil then
-				PLH_SendWhisper('Thank you! ' .. item .. ' will be rolled for after current rolls are done.', sender)
-			else 
-				AskForRolls()
-			end
-		elseif currentRollOwner == sender then
-			PLH_SendWhisper('Your ' .. currentRollItem .. ' is currently being rolled for', sender)
+		-- if the person whispered 'trade [item]', then add the item to the array so we can process it
+		local _, _, whisperedItem = string.find(message, TRADE_MESSAGE .. '  ' .. '(|.+|r)')
+		if whisperedItem ~= nil then
+			whisperedItems[sender] = whisperedItem
 		else
-			local item = GetItemFromQueueByPlayer(sender)
-			if item then
-				PLH_SendWhisper('Your ' .. item .. ' is already in queue to be rolled for', sender)
+			_, _, whisperedItem = string.find(message, string.lower(TRADE_MESSAGE) .. '  ' .. '(|.+|r)')
+			if whisperedItem ~= nil then
+				whisperedItems[sender] = whisperedItem
+			end
+		end
+		
+		message = string.upper(message)
+		if whisperedItem ~= nil or message == TRADE_MESSAGE or message == '\'' .. TRADE_MESSAGE .. '\'' then
+			if whisperedItems[sender] ~= nil then
+				local item = whisperedItems[sender]
+				whisperedItems[sender] = nil
+				QueueItem(sender, item)
+				-- if we're still rolling for another item, let the person know their item is queued
+				if currentRollItem ~= nil then
+					PLH_SendWhisper('Thank you! ' .. item .. ' will be rolled for after current rolls are done.', sender)
+				else 
+					AskForRolls()
+				end
+			elseif currentRollOwner == sender then
+				PLH_SendWhisper('Your ' .. currentRollItem .. ' is currently being rolled for', sender)
 			else
-				PLH_SendWhisper('No record of which item you looted! Whisper the item link to ' .. UnitName('player') .. ' if you would still like to trade the item.', sender)
+				local item = GetItemFromQueueByPlayer(sender)
+				if item then
+					PLH_SendWhisper('Your ' .. item .. ' is already in queue to be rolled for', sender)
+				else
+					PLH_SendWhisper('No record of which item you looted! Whisper \'trade [item]\' to ' .. UnitName('player') .. ' if you would still like to trade the item.', sender)
+				end
 			end
 		end
 	end
+end
+
+local function WhisperReceivedEvent(self, event, ...)
+	local message, sender = ...
+
+	ProcessWhisper(message, sender)
+end
+
+local function BNWhisperReceivedEvent(self, event, ...)
+	local message = ...
+
+	local bnetIDAccount = select(13, ...)
+	local bnetIDGameAccount = select(6, BNGetFriendInfoByID(bnetIDAccount));
+	local _, sender, _, realmName = BNGetGameAccountInfo(bnetIDGameAccount)
+
+	if realmName ~= nil then
+		sender = sender .. '-' .. realmName
+	end
+	
+	ProcessWhisper(message, sender)
 end
 
 local function RollReceivedEvent(self, event, ...)
@@ -1669,8 +1806,8 @@ local function UpdateGroupInfoCache(unit)
 			end
 		end
 
-		-- If we didn't find any items (ex: when player first starts the game), don't add this person to the cache
-		if updatedItemCount > 0 then
+		-- If we didn't find any items (ex: when player first starts the game), don't add this person to the cache unless it's first time (for class/etc)
+		if updatedItemCount > 0 or groupInfoCache[name] == nil then
 			groupInfoCache[name] = nil  -- remove any existing entry first
 			groupInfoCache[name] = characterDetails
 		end
@@ -1866,6 +2003,7 @@ local function Enable()
 	isEnabled = true
 	lootReceivedEventFrame:RegisterEvent('CHAT_MSG_LOOT')
 	whisperReceivedEventFrame:RegisterEvent('CHAT_MSG_WHISPER')
+	bnWhisperReceivedEventFrame:RegisterEvent('CHAT_MSG_BN_WHISPER')
 	rollReceivedEventFrame:RegisterEvent('CHAT_MSG_SYSTEM')
 	inspectReadyEventFrame:RegisterEvent('INSPECT_READY')
 	combatStatusChangedEventFrame:RegisterEvent('PLAYER_REGEN_DISABLED')   -- player entered combat
@@ -1878,6 +2016,7 @@ local function Disable()
 	isEnabled = false
 	lootReceivedEventFrame:UnregisterAllEvents()
 	whisperReceivedEventFrame:UnregisterAllEvents()
+	bnWhisperReceivedEventFrame:UnregisterAllEvents()
 	rollReceivedEventFrame:UnregisterAllEvents()
 	inspectReadyEventFrame:UnregisterAllEvents()
 	combatStatusChangedEventFrame:UnregisterAllEvents()
@@ -1997,6 +2136,9 @@ local function Initialize(self, event, addonName, ...)
 
 			whisperReceivedEventFrame = CreateFrame('Frame')
 			whisperReceivedEventFrame:SetScript('OnEvent', WhisperReceivedEvent)
+
+			bnWhisperReceivedEventFrame = CreateFrame('Frame')
+			bnWhisperReceivedEventFrame:SetScript('OnEvent', BNWhisperReceivedEvent)
 
 			rollReceivedEventFrame = CreateFrame('Frame')
 			rollReceivedEventFrame:SetScript('OnEvent', RollReceivedEvent)

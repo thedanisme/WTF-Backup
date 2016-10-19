@@ -26,6 +26,15 @@ T "Let the Fires Come!" |QID|12135| |Z|30| |N|Costumed Orphan Matron (42.6,64.4)
 C A Time to Lose |QID|29371| |D| |N|Use the (item:68648) on the Wickerman in the {Ruins of Lordaeron}. (70.55, 15.79)| |U|68648| |Z|382|
 T A Time to Lose |QID|29371| |D| |N|(npc:52064) (32.15, 50.56)| |NPC|52064| |Z|30|
 
+N Level 98 Required |N|You need to be at least level 98 to continue the guide and unlocked Legion Dalaran| |OID|44663, 44184|
+A Beware of the Crooked Tree |QID|43259| |N|(npc:109854) in {Dalaran} (47.40,40.55)| |Z|1014 10|
+
+R Val'sharah |QID|43162| |N|Travel to {Val'sharah} (35.01,56.08)| |Z|1018 0| |D|
+T Beware of the Crooked Tree |QID|43259| |N|(npc:109734) in {Val'sharah} {35.01,56.08)| |Z|1018 0|
+A Under the Crooked Tree |QID|43162| |N|(npc:109734) in {Val'sharah} {35.01,56.08)| |Z|1018 0| |D|
+C Under the Crooked Tree |QID|43162| |N|Cick on the  Crocked Tree Cauldron and kill (npc:109825) in {Val'sharah}<br/><br/>You may need a group to kill it (34.80,55.46)| |Z|1018 0| |NPC|109825| |D|
+T Under the Crooked Tree |QID|43162| |N|(npc:109734) in {Val'sharah} {35.01,56.08)| |Z|1018 0| |D|
+
 N Guide Complete
 
 ]]

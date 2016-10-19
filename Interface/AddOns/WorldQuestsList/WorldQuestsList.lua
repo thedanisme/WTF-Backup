@@ -1,4 +1,4 @@
-local VERSION = 21
+local VERSION = 22
 
 --[[
 Special icons for rares, pvp or pet battle quests in list
@@ -46,6 +46,13 @@ Minor fixes
 Fixed highlighting faction for emissary quests (You can do Watchers or Kirin-tor quests for zone emissary)
 Added "Total gold & total order resources" text
 Minor fixes
+
+Fixed summary while filtered
+Added "Time to Complete" for marked ("**") quests
+Added 7.1 support
+Different color for elite quests
+Some pvp quests shows honor as reward if reward is only gold
+Minor fixes
 ]]
 
 local charKey = (UnitName'player' or "").."-"..(GetRealmName() or ""):gsub(" ","")
@@ -61,6 +68,7 @@ local LOCALE =
 		anchor = "Привязка",
 		totalap = "Всего силы артефакта: %d",
 		totalapdisable = 'Отключить сумму силы артефакта',
+		timeToComplete = "Времени на выполнение: ",
 	} or
 	locale == "deDE" and {
 		gear = "Ausrüstung",
@@ -71,6 +79,7 @@ local LOCALE =
 		anchor = "Anchor",
 		totalap = "Total Artifact Power: %d",
 		totalapdisable = 'Disable "Total AP"',
+		timeToComplete = "Time to complete: ",
 	} or
 	locale == "frFR" and {
 		gear = "Équipement",
@@ -81,6 +90,7 @@ local LOCALE =
 		anchor = "Anchor",
 		totalap = "Total Artifact Power: %d",
 		totalapdisable = 'Disable "Total AP"',
+		timeToComplete = "Time to complete: ",
 	} or
 	(locale == "esES" or locale == "esMX") and {
 		gear = "Equipo",
@@ -91,6 +101,7 @@ local LOCALE =
 		anchor = "Anchor",
 		totalap = "Total Artifact Power: %d",
 		totalapdisable = 'Disable "Total AP"',
+		timeToComplete = "Time to complete: ",
 	} or	
 	locale == "itIT" and {
 		gear = "Equipaggiamento",
@@ -101,6 +112,7 @@ local LOCALE =
 		anchor = "Anchor",
 		totalap = "Total Artifact Power: %d",
 		totalapdisable = 'Disable "Total AP"',
+		timeToComplete = "Time to complete: ",
 	} or
 	locale == "ptBR" and {
 		gear = "Equipamento",
@@ -111,6 +123,7 @@ local LOCALE =
 		anchor = "Anchor",
 		totalap = "Total Artifact Power: %d",
 		totalapdisable = 'Disable "Total AP"',
+		timeToComplete = "Time to complete: ",
 	} or
 	locale == "koKR" and {
 		gear = "Gear",
@@ -121,6 +134,7 @@ local LOCALE =
 		anchor = "Anchor",
 		totalap = "Total Artifact Power: %d",
 		totalapdisable = 'Disable "Total AP"',
+		timeToComplete = "Time to complete: ",
 	} or
 	(locale == "zhCN" or locale == "zhTW") and {
 		gear = "装备",
@@ -131,6 +145,7 @@ local LOCALE =
 		anchor = "Anchor",
 		totalap = "Total Artifact Power: %d",
 		totalapdisable = 'Disable "Total AP"',
+		timeToComplete = "Time to complete: ",
 	} or	
 	{
 		gear = "Gear",
@@ -141,6 +156,7 @@ local LOCALE =
 		anchor = "Anchor",
 		totalap = "Total Artifact Power: %d",
 		totalapdisable = 'Disable "Total AP"',
+		timeToComplete = "Time to complete: ",
 	}
 
 local orderResName = GetCurrencyInfo(1220)
@@ -160,6 +176,8 @@ local ActiveSort = 5
 local WorldMapHideWQLCheck
 local UpdateScale
 local UpdateAnchor
+
+local QuestMapFrame_IsQuestWorldQuest = QuestMapFrame_IsQuestWorldQuest or QuestUtils_IsQuestWorldQuest	--7.1 Support
 
 local function TaskPOI_OnClick(self,button)
 	if not GExRT or VWQL.DisableArrow then
@@ -235,8 +253,7 @@ WorldQuestList.mapC:Hide()
 
 WorldQuestList.mapD = WorldMapButton:CreateTexture(nil,"OVERLAY")
 WorldQuestList.mapD:SetSize(24,24)
-WorldQuestList.mapD:SetTexture(1121272)
-WorldQuestList.mapD:SetTexCoord(171/512,203/512,373/512,405/512)
+WorldQuestList.mapD:SetAtlas("XMarksTheSpot")
 WorldQuestList.mapD:SetPoint("CENTER",WorldQuestList.mapC)
 WorldQuestList.mapD:Hide()
 
@@ -394,6 +411,18 @@ local function WorldQuestList_LineReward_OnEnter(self)
 		if line.reward.artifactKnowlege then
 			local tooltip = GetAdditionalTooltip(2,true)
 			tooltip:AddLine(LOCALE.knowledgeTooltip)
+			if line.reward.timeToComplete then
+				local timeLeftMinutes, timeString = line.reward.timeToComplete
+				if timeLeftMinutes >= 14400 then
+					timeString = ""		--A lot, 10+ days
+				elseif timeLeftMinutes >= 1440 then
+					timeString = format("%d.%02d:%02d",floor(timeLeftMinutes / 1440),floor(timeLeftMinutes / 60) % 24, timeLeftMinutes % 60)
+				else
+					timeString = (timeLeftMinutes >= 60 and (floor(timeLeftMinutes / 60) % 24) or "0")..":"..format("%02d",timeLeftMinutes % 60)
+				end
+			
+				tooltip:AddLine(LOCALE.timeToComplete..timeString)
+			end
 			tooltip:Show()
 		end
 		
@@ -894,6 +923,19 @@ WorldQuestList.optionsDropDown.Button:SetScript("OnClick",function(self)
 			info.value = 2
 			UIDropDownMenu_AddButton(info)
 			
+			info.notCheckable = false
+			info.isTitle = false
+			info.text = LOCALE.totalapdisable
+			info.hasArrow = false
+			info.func = function(_, arg1, _, value)
+				if value then
+					VWQL.DisableTotalAP = nil
+				else
+					VWQL.DisableTotalAP = true
+				end
+			end
+			info.checked = function() return VWQL.DisableTotalAP end
+			UIDropDownMenu_AddButton(info)			
 		elseif level == 2 and UIDROPDOWNMENU_MENU_VALUE == 1 then
 			info.notCheckable = false
 			info.isTitle = false
@@ -1316,6 +1358,8 @@ function WorldQuestList_Update()
 					local rewardItemLink
 					local nameicon = nil
 					local artifactKnowlege
+					local isEliteQuest
+					local timeToComplete
 					
 					local isValidLine = 1
 					
@@ -1330,10 +1374,13 @@ function WorldQuestList_Update()
 						if ActiveFilterType.dung then 
 							isValidLine = 0 
 						end
+						isEliteQuest = true
 					elseif rarity == LE_WORLD_QUEST_QUALITY_RARE then
 						nameicon = -1
+						isEliteQuest = true
 					elseif rarity == LE_WORLD_QUEST_QUALITY_EPIC then
 						nameicon = -2
+						isEliteQuest = true
 					elseif worldQuestType == LE_QUEST_TAG_TYPE_PVP then
 						nameicon = -3
 						if ActiveFilterType.pvp then 
@@ -1366,7 +1413,7 @@ function WorldQuestList_Update()
 						end
 					end
 					
-					if ( GetQuestLogRewardXP(questID) > 0 or GetNumQuestLogRewardCurrencies(questID) > 0 or GetNumQuestLogRewards(questID) > 0 or GetQuestLogRewardMoney(questID) > 0 or GetQuestLogRewardArtifactXP(questID) > 0 ) then
+					if ( GetQuestLogRewardXP(questID) > 0 or GetNumQuestLogRewardCurrencies(questID) > 0 or GetNumQuestLogRewards(questID) > 0 or GetQuestLogRewardMoney(questID) > 0 or GetQuestLogRewardArtifactXP(questID) > 0 or (GetQuestLogRewardHonor and GetQuestLogRewardHonor(questID) > 0) ) then
 						local hasRewardFiltered = false
 						-- xp
 						local xp = GetQuestLogRewardXP(questID)
@@ -1386,7 +1433,8 @@ function WorldQuestList_Update()
 								
 								if bit.band(filters[5][2],ActiveFilter) == 0 then 
 									isValidLine = 0 
-								else
+								end
+								if isValidLine ~= 0 then
 									totalG = totalG + money
 								end
 							end
@@ -1398,6 +1446,15 @@ function WorldQuestList_Update()
 							rewardSort = artifactXP
 							rewardType = 25
 						end
+						
+						-- honor
+						local honorAmount = GetQuestLogRewardHonor and GetQuestLogRewardHonor(questID)
+						if ( honorAmount and honorAmount > 0 ) then
+							reward = BONUS_OBJECTIVE_REWARD_WITH_COUNT_FORMAT:format("Interface\\ICONS\\Achievement_LegionPVPTier4", honorAmount, HONOR)
+							rewardSort = honorAmount
+							rewardType = 32
+						end
+						
 						-- currency		
 						local numQuestCurrencies = GetNumQuestLogRewardCurrencies(questID)
 						for i = 1, numQuestCurrencies do
@@ -1411,7 +1468,8 @@ function WorldQuestList_Update()
 								rewardSort = numItems or 0
 								if bit.band(filters[3][2],ActiveFilter) == 0 then 
 									isValidLine = 0 
-								else
+								end
+								if isValidLine ~= 0 then
 									totalOR = totalOR + (numItems or 0)
 								end
 							end
@@ -1424,7 +1482,7 @@ function WorldQuestList_Update()
 							if name then
 								rewardType = 10
 								rewardItem = true
-								reward = "|T"..icon..":0|t "..name..(numItems and numItems > 1 and " x"..numItems or "")
+								reward = "|T"..icon..":0|t "..(numItems and numItems > 1 and numItems.."x " or "")..name
 							end
 							
 
@@ -1436,7 +1494,6 @@ function WorldQuestList_Update()
 							
 							inspectScantip:SetQuestLogItem("reward", 1, questID)
 							rewardItemLink = select(2,inspectScantip:GetItem())
-							local isApDisabled = nil
 							for j=2, inspectScantip:NumLines() do
 								local tooltipLine = _G[GlobalAddonName.."WorldQuestListInspectScanningTooltipTextLeft"..j]
 								local text = tooltipLine:GetText()
@@ -1445,7 +1502,6 @@ function WorldQuestList_Update()
 									rewardType = 20
 									if bit.band(filters[2][2],ActiveFilter) == 0 then 
 										isValidLine = 0  
-										isApDisabled = true
 									end
 									if BAG_ITEM_QUALITY_COLORS[6] then
 										rewardColor = BAG_ITEM_QUALITY_COLORS[6]
@@ -1468,11 +1524,11 @@ function WorldQuestList_Update()
 									if ap then
 										reward = reward:gsub(":0|t ",":0|t ["..ap.."] ")
 										rewardSort = ap
-										if not isApDisabled then
+										if isValidLine ~= 0 then
 											totalAP = totalAP + ap
 										end
 									end
-								elseif text and text:find(ITEM_BIND_ON_EQUIP) then
+								elseif text and text:find(ITEM_BIND_ON_EQUIP) and j<=4 then
 									isBoeItem = true
 								end 
 							end
@@ -1541,6 +1597,7 @@ function WorldQuestList_Update()
 						timeleft = (color or "")..(timeString or "")
 						
 						if rewardType == 20 and nextResearch and timeLeftMinutes > nextResearch and reward then
+							timeToComplete = timeLeftMinutes - nextResearch + 60
 							reward = reward:gsub("] ","]** ")
 							artifactKnowlege = true
 						end
@@ -1575,6 +1632,8 @@ function WorldQuestList_Update()
 							rewardSort = rewardSort,
 							nameicon = nameicon,
 							artifactKnowlege = artifactKnowlege,
+							isEliteQuest = isEliteQuest,
+							timeToComplete = timeToComplete,
 						})
 					end
 					
@@ -1591,7 +1650,9 @@ function WorldQuestList_Update()
 		local line = WorldQuestList.l[taskIconIndex]
 		
 		line.name:SetText(data.name)
-		if data.isNewQuest then
+		if data.isEliteQuest then
+			line.name:SetTextColor(.2,.5,1)
+		elseif data.isNewQuest then
 			line.name:SetTextColor(.15,.7,1)
 		else
 			line.name:SetTextColor(1,1,1)
@@ -1654,8 +1715,10 @@ function WorldQuestList_Update()
 		
 		if data.artifactKnowlege then
 			line.reward.artifactKnowlege = true
+			line.reward.timeToComplete = data.timeToComplete
 		else
 			line.reward.artifactKnowlege = nil
+			line.reward.timeToComplete = nil
 		end
 		
 		line.rewardLink = data.rewardItemLink
@@ -1857,18 +1920,6 @@ local KirinTorQuests = {
 	[43772]=true,	--S
 	[43767]=true,	--HM
 }
-
---[[
---8x8
-local KirinTorPatt = {
-	[1] = {	[10]=1,[11]=1,[19]=1,[20]=1,[21]=1,[22]=1,[30]=1,[38]=1,[37]=1,[45]=1,[53]=1,[54]=1,[55]=2,},
-	[2] = {	[10]=1,[11]=1,[19]=1,[20]=1,[28]=1,[36]=1,[37]=1,[45]=1,[46]=1,[54]=1,[55]=2,},
-	[3] = {	[10]=1,[18]=1,[26]=1,[27]=1,[28]=1,[29]=1,[30]=1,[31]=1,[39]=1,[47]=1,[55]=2,},
-	[4] = {	[10]=1,[11]=1,[12]=1,[13]=1,[14]=1,[15]=1,[23]=1,[31]=1,[39]=1,[38]=1,[37]=1,[36]=1,[35]=1,[34]=1,[42]=1,[50]=1,[51]=1,[52]=1,[53]=1,[54]=1,[55]=2,},
-	[5] = {	[10]=1,[11]=1,[19]=1,[27]=1,[35]=1,[36]=1,[37]=1,[29]=1,[21]=1,[13]=1,[14]=1,[15]=1,[23]=1,[31]=1,[39]=1,[47]=1,[55]=2,},
-	[6] = {	[10]=1,[18]=1,[26]=1,[34]=1,[42]=1,[43]=1,[44]=1,[45]=1,[37]=1,[29]=1,[21]=1,[13]=1,[14]=1,[15]=1,[23]=1,[31]=1,[39]=1,[47]=1,[55]=2,},
-}
-]]
 
 local KirinTorPatt = {
 	[1] = {	[41]=2,[40]=1,[39]=1,[32]=1,[25]=1,[26]=1,[19]=1,[12]=1,[11]=1,[10]=1,[9]=1,},
@@ -2120,8 +2171,7 @@ FlightMap:SetScript("OnEvent",function (self, event, arg)
 		
 		t2 = f:CreateTexture(nil,"OVERLAY")
 		t2:SetSize(24 * ICON_SCALE,24 * ICON_SCALE)
-		t2:SetTexture(1121272)
-		t2:SetTexCoord(171/512,203/512,373/512,405/512)
+		t2:SetAtlas("XMarksTheSpot")
 		t2:SetPoint("CENTER",t1)
 		t2:Hide()
 		

@@ -93,7 +93,7 @@ function WF:Initialize()
         elseif GetLastWorldQuestBlock() then
             return GetLastWorldQuestBlock()
         else
-			return BONUS_OBJECTIVE_TRACKER_MODULE.lastBlock or ObjectiveTrackerBlocksFrame.currentBlock or (IsAnchoredOn() and DGV.SmallFrame.Frame)
+			return BONUS_OBJECTIVE_TRACKER_MODULE.lastBlock or ObjectiveTrackerBlocksFrame.currentBlock or (IsAnchoredOn() and DGV.SmallFrame.Frame) or ObjectiveTrackerBlocksFrame
 		end
 	end
 	
@@ -190,6 +190,7 @@ function WF:Initialize()
 		
 		if DGV:UserSetting(DGV_MOVEWATCHFRAME) then 
 			local shiftX = 0    
+
 			anchorY = 0
 			--if DurabilityFrame:IsShown() then
 				--anchorY = anchorY + 75
@@ -226,7 +227,7 @@ function WF:Initialize()
 		if DugisGuideViewer:IsModuleRegistered("SmallFrame") then DGV:OnWatchFrameUpdate() end
 
 		local bottomElement = GetBottomElement()
-		if bottomElement then
+		if bottomElement and bottomElement ~= ObjectiveTrackerBlocksFrame then
 			ObjectiveTrackerFrame.HeaderMenu:Show()
         end
 
@@ -278,10 +279,11 @@ function WF:Initialize()
                 if WORLD_QUEST_TRACKER_MODULE and WORLD_QUEST_TRACKER_MODULE.contentsHeight then
                   --  worldQuestTrackerHeight = WORLD_QUEST_TRACKER_MODULE.contentsHeight
                 end
-                
-				WF.WatchBackground:SetPoint("BOTTOM", bottomElement, 0, -20 - worldQuestTrackerHeight)
-				WF.WatchBackground:SetPoint("LEFT", GetLeftElement(), -40, 0)
-				WF.WatchBackground:Show()
+                if bottomElement ~= ObjectiveTrackerBlocksFrame then 
+					WF.WatchBackground:SetPoint("BOTTOM", bottomElement, 0, -20 - worldQuestTrackerHeight)
+					WF.WatchBackground:SetPoint("LEFT", GetLeftElement(), -40, 0)
+					WF.WatchBackground:Show()
+				end
 				if DugisGuideUser.itemHidden and IsAnchoredOn() then 
 					DGV.Modules.SmallFrame.PopulateSmallFrame()					
 					DugisGuideUser.itemHidden = nil

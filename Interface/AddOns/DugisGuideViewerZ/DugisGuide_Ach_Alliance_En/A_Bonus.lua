@@ -24,10 +24,10 @@ K (npc:81246) and (npc:81775) |QID|36480.2| |N|Kill 5 (npc:81246)<br/>20 (npc:81
 N Destroy 15 (npc:85567) |QID|36480.3| |N|Destroy 15 (npc:85567) (44.6,47.0) by walking or riding over them, this will spawn (npc:81775)| |NPC|81775| |Z|949|
 
 R Ruins of the First Bastion |N|Travel to {Ruins of the First Bastion} (50,79)| |AID|9607| |AC|5| |Z|949|
-N As you go... |AYG|35881| |N|Loot 8 (npc:83467). Tick this step.| |NPC|83467| |Z|949|
+N As you go... |AYG|35881| |N|Loot 8 Ancient Jars. Tick this step.| |NPC|83467| |Z|949| |QID|35881|
 K (npc:83452) |QID|35881.3| |N|Kill (npc:83452) in {Ruins of the First Bastion} (52.0,81.2)| |NPC|83452| |Z|949|
 K (npc:83449) or (npc:83450) |QID|35881.1| |N|Kill 20 (npc:83449) or (npc:83450) in {Ruins of the First Bastion} (51.4,80.6)| |NPC|83449,83450| |Z|949|
-N Loot 8 (npc:83467) |QID|35881.2| |N|Loot 8 (npc:83467) in {Ruins of the First Bastion} (51.4,80.6)| |NPC|83467| |Z|949|
+N Ancient Jar |QID|35881.2| |N|Loot 8 Ancient Jars in {Ruins of the First Bastion} (51.4,80.6)| |Z|949|
 
 R The Forgotten Caves |N|Travel to {The Forgotten Caves} (52,79)| |AID|9607| |AC|6| |Z|949|
 N As you go... |AYG|34724| |N|Destroy 15 (npc:76548). Tick this step.| |NPC|76548| |Z|949|

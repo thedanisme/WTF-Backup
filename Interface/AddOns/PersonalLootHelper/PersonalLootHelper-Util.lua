@@ -215,6 +215,10 @@ function PLH_GetUnitGUIDFromFullname(fullname)
 	return guid
 end
 
+function PLH_IsInLFR()
+	return IsInGroup(LE_PARTY_CATEGORY_INSTANCE) and IsInRaid()
+end
+
 local function CanUseRaidWarning()
 	return UnitIsGroupLeader('player') or UnitIsRaidOfficer('player')
 end

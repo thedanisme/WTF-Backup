@@ -463,8 +463,6 @@ and Pawn.</p>
 	<li>A way to choose a spec icon to show on your item tooltips for custom 
 	scales.&nbsp; (Informal polling suggests that no one wants the ability to 
 	use a totally custom icon.)</li>
-	<li>Integration with the WoW 7.1 features that show similar-looking green 
-	arrows</li>
 	<li>I've gotten a bunch of feedback on the way that Pawn makes assumptions 
 	about gems today.&nbsp; I may replace the existing low-level gems option with two 
 	new ones: "assume I won't use gems on anything below this level" (currently 
@@ -484,6 +482,45 @@ and Pawn.</p>
 	that Pawn is incompatible if you are.</li>
 </ul>
 <h2>Updates</h2>
+<h3>Version 2.1.1</h3>
+<ul>
+	<li>Pawn will now take over the new WoW 7.1 feature that puts green arrows 
+	on items in your bags.&nbsp; Normally the feature shows you items that are a 
+	higher item level than what you have equipped.&nbsp; Pawn will change the 
+	feature so that it shows items that are an upgrade to your 
+	currently-equipped gear for any of your active scales.&nbsp; (For example, 
+	if you're in the default Automatic mode, it'll put upgrade arrows next to 
+	items that are better for your current spec, but not for other specs.)<ul>
+		<li>This feature has no effect on the WoW 7.0 live realms.</li>
+		<li>If you don't like this, and would rather go back to the old 
+		behavior, uncheck "Show bag upgrade advisor" on Pawn's Options tab.</li>
+	</ul>
+	</li>
+</ul>
+<h4>Developer features</h4>
+<p>These features are primarily useful for people developing guides and 
+simulators.</p>
+<ul>
+	<li>Pawn scale tags, used with the Import and Export feature on the Scale 
+	tab, can now specify a class and spec, such as "Class=Mage, Spec=1".&nbsp;
+	<ul>
+		<li>The spec number in the scale tag is the order in which it displays 
+		in the UI.&nbsp; (That spec number is also used internally by the game 
+		in a variety of situations.)&nbsp; For example, the specs appear as 
+		Arcane, Fire, Frost in the Mage UI, so Arcane is 1, Fire is 2, and Frost 
+		is 3.</li>
+		<li>When class and spec are included in a scale tag, Pawn will 
+		automatically add the appropriate list of unusable item types to the 
+		scale without having to painstakingly list them all out in the scale tag 
+		(IsPolearm = -10000000, etc.).</li>
+		<li>When scales that have a class and spec associated with them are 
+		exported, the resulting scale tag will be smaller than in previous 
+		versions.&nbsp; Importing those scales into old versions of Pawn will 
+		mostly work okay, but old versions of Pawn will ignore Class and Spec, 
+		so there will be subtle differences.</li>
+	</ul>
+	</li>
+</ul>
 <h3>Version 2.1</h3>
 <ul>
 	<li>Pawn's default stat weights now come from Ask Mr. Robot!&nbsp; The 

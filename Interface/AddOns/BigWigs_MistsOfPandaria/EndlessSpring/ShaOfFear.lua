@@ -298,20 +298,10 @@ function mod:Transitions(unit, spellName, _, _, spellId)
 	end
 end
 
-do
-	local prev = 0
-	function mod:WaterspoutApplied(args)
-		if self:Me(args.destGUID) then
-			self:Message(args.spellId, "Personal", "Info", CL["underyou"]:format(args.spellName))
-			self:Flash(args.spellId)
-		elseif self:Range(args.destName) < 3 then
-			local t = GetTime()
-			if t-prev > 2 then
-				prev = t
-				self:RangeMessage(args.spellId)
-				self:Flash(args.spellId)
-			end
-		end
+function mod:WaterspoutApplied(args)
+	if self:Me(args.destGUID) then
+		self:Message(args.spellId, "Personal", "Info", CL["underyou"]:format(args.spellName))
+		self:Flash(args.spellId)
 	end
 end
 

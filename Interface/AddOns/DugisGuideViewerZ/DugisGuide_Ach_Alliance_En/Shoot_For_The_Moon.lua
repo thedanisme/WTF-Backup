@@ -6,7 +6,7 @@ return [[
 N Read |N|This guide covers the requirements for the (aid:9602). Tick this step.|
 
 R Bloodthorn Cave |N|Travel to {Blodthorn Cave} (23.0,32.8)| |AID|9602| |AC|1| |Z|947|
-N (npc:74249) |QID|34504.2| |N|Collect 20 Mushroom juice from (npc:74249) (23.0,32.8)| |NPC|74249| |Z|947|
+N Mushroom Juice |QID|34504.2| |N|Collect 20 Mushroom juice from the ground (23.0,32.8)| |NPC|74249| |Z|947|
 K 12 (npc:76382) |QID|34504.1| |N|Kill 12 (npc:76382) (23.0,32.8)| |NPC|76382| |Z|947|
 
 R Hills of Valuun |N|Travel to {Hills of Valuun} (64,33)| |AID|9602| |AC|3| |Z|947|

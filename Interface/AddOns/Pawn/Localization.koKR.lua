@@ -390,6 +390,12 @@ Pawn 사용자 설정의 더 자세한 정보는, 애드온에 포함된 help �
 		OptionsAdvisorHeader = "조언가 옵션",
 		OptionsAlignRight = "툴팁 오른쪽 끝으로 수치 정렬",
 		OptionsAlignRightTooltip = "이 옵션을 켜면 Pawn 수치와 향상 정보를 툴팁 왼쪽 대신 오른쪽 끝에 정렬합니다.",
+		OptionsBagUpgradeAdvisor = "Show bag upgrade advisor",
+		OptionsBagUpgradeAdvisorTooltip = [=[Enable this option to have Pawn take over the in-bag upgrade arrows.
+
+If checked, Pawn will find upgrades in your bags and mark items that are an upgrade for any of your active scales with green arrows. 
+
+If unchecked, WoW will mark items with a higher item level than what you're currently wearing, and Pawn will not interfere with the built-in feature.]=],
 		OptionsBlankLine = "값 위에 빈 줄 추가",
 		OptionsBlankLineTooltip = "이 옵션을 켜면 Pawn 값 위에 빈 줄을 추가해 아이템 툴팁을 깔끔하게 정리할 수 있습니다.",
 		OptionsButtonHidden = "숨기기",
