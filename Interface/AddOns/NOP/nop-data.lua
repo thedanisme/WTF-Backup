@@ -2,7 +2,7 @@
 local _
 local ADDON, private = ...
 NOP = LibStub("AceAddon-3.0"):NewAddon(ADDON,"AceConsole-3.0","AceEvent-3.0","AceTimer-3.0") -- load core libs
-NOP.T_SPELL_HAS = { -- [itemID] = min-count, table to fetch via GetItemSpell(itemID) for group of items where spell-name is the same
+NOP.T_SPELL_BY_NAME = { -- [itemID] = min-count, table to fetch via GetItemSpell(itemID) for group of items where spell-name is the same
   [112023] = 1, -- Recipe: Draenic Philosopher's Stone, all learnable, it should replace most items in table T_RECIPES
   [114171] = 1, -- Crate Restored Artifact, common for all
   [113271] = 1, -- Giant Kaliri Egg, Gain xxx Garrison Resources, common for all
@@ -10,6 +10,7 @@ NOP.T_SPELL_HAS = { -- [itemID] = min-count, table to fetch via GetItemSpell(ite
   [138865] = 1, -- Gladiator's Triumph, Grants 50 Artifact Power to your currently equipped Artifact.
   [139669] = 1, -- Toss the fish back into the water, granting 50 Artifact Power to your fishing artifact.
   [133742] = 1, -- Toss the fish back into the water, increasing Fishing skill by 5, up to a max of 800.
+  [139390] = 1, -- Artifact Research Notes, Use: Read to gain new knowledge about your artifact, increasing the rate at which you earn Artifact Power.
   [129097] = 1, -- 30 Ancient Mana
   [140243] = 1, -- 50 Ancient Mana
   [140401] = 1, -- 75 Ancient Mana
@@ -17,15 +18,15 @@ NOP.T_SPELL_HAS = { -- [itemID] = min-count, table to fetch via GetItemSpell(ite
   [140240] = 1, -- 150 Ancient Mana
   [140242] = 1, -- 200 Ancient Mana
   [140239] = 1, -- 300 Ancient Mana
+  [140526] = 1, -- Eredar Signet, Use: Provides a significant increase to character experience.
+  [141028] = 1, -- Grimoire of Knowledge, Use: Open your Followers page and use this item to grant 4000 XP directly to a Champion.
 }
-NOP.T_SPELL = { -- [spellID] = {min-count,itemID,{"sub-Zone"},{[mapID]=true,[mapID]=true}}, table for opening via spell, used for multiple items with same spell text but spellID can differ
+NOP.T_SPELL_BY_USE_TEXT = { -- [spellID] = {min-count,itemID,{"sub-Zone"},{[mapID]=true,[mapID]=true}}, table for opening via spell, used for multiple items with same spell text
   [168701] = {1,114105,nil,nil}, -- Create a soulbound item appropriate for your loot specialization, Tormented Trinket
   [168178] = {1,114116,{private.SALVAGE_YARD},{[976]=true,[971]=true}}, -- Salvage, Bag of Salvaged Goods, can be used only in salvage-yard shown on button only in garrison even if disabled zone-lock
-  [58165]  = {1,  7973,nil,nil},  -- Open the clam!, Big-Mouth Clam
+  [ 58165] = {1,  7973,nil,nil},  -- Open the clam!, Big-Mouth Clam
   [166550] = {1,113355,nil,nil},  -- Flip Card, Card of Omens
   [163769] = {1,116158,nil,{[976]=true,[971]=true}}, -- Toss Fish, Lunarfall Carp, can be used only in garrison shown on button only in garrison.
-  [227189] = {1,140526,nil,nil}, -- Eredar Signet Use: Provides a significant increase to character experience.
-  [225517] = {1,141028,nil,nil}, -- Grimoire of Knowledge, Use: Open your Followers page and use this item to grant 4000 XP directly to a Champion.
 }
 NOP.T_RECIPES = { -- [ItemId] = {min-count, "gsub regex" | tooltip-line-number}, item tooltip template only text to 1st match is compared, that mean all items of same school would be looked up.
   [122219] = {1,"(.+:).*"}, -- Music Roll: Way of the Monk

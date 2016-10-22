@@ -84,9 +84,9 @@ function NOP:SpellLoad() -- load spell patterns
   self.spellLoadRetry = self.spellLoadRetry - 1
   if self.spellLoadRetry < 0 then self.spellLoad = true; return end
   local retry = false
-  for spellid,data in pairs(NOP.T_SPELL) do
+  for spellid, data in pairs(NOP.T_SPELL_BY_USE_TEXT) do -- [spellID] = {min-count,itemID,{"sub-Zone"},{[mapID]=true,[mapID]=true}}
     if data and data[2] then
-      local name = GetItemInfo(data[2])
+      local name = GetItemInfo(data[2]) -- now just cache all items into cache, later will get tooltip for them
       if name == nil then -- item has no info on client side yet, let wait for server
         --self.printt("GetItemInfo(data[2])",data[2])
         retry = true
@@ -103,7 +103,7 @@ function NOP:SpellLoad() -- load spell patterns
   end
   wipe(NOP.T_OPEN) -- clear table
   NOP.T_OPEN[ITEM_OPENABLE] = {1,nil} -- standard right click open
-  for spellid,data in pairs(NOP.T_SPELL) do
+  for spellid,data in pairs(NOP.T_SPELL_BY_USE_TEXT) do -- [spellID] = {min-count,itemID,{"sub-Zone"},{[mapID]=true,[mapID]=true}}
     self.spellFrame:ClearLines() -- clean tooltip frame
     self.spellFrame:SetSpellByID(spellid) -- Fills the tooltip with information about a spell specified by ID
     local spellName, spellRank, spellID = self.spellFrame:GetSpell() -- Returns information about the spell displayed in the tooltip
@@ -128,7 +128,7 @@ function NOP:SpellLoad() -- load spell patterns
     return
   end
   retry = false
-  for itemID,count in pairs(NOP.T_SPELL_HAS) do
+  for itemID,count in pairs(NOP.T_SPELL_BY_NAME) do
     local spell = GetItemSpell(itemID)
     if spell then
       if (string.len(spell) > 0) then NOP.T_SPELL_FIND[spell] = count end

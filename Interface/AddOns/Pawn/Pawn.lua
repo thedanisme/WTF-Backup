@@ -3956,7 +3956,7 @@ function PawnGetScaleTag(ScaleName)
 	local IncludeThis
 	for StatName, Value in pairs(Scale.Values) do
 		local IncludeThis = (Value and Value ~= 0)
-		if IncludeThis and Value == TemplateStats[StatName] then
+		if IncludeThis and TemplateStats and Value == TemplateStats[StatName] then
 			-- If class and spec are included, don't include things that are already in the template.
 			IncludeThis = false
 		end

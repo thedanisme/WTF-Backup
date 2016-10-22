@@ -6,10 +6,10 @@ NewOpenablesProfile = {
 		["Shaneequa - Turalyon"] = "Default",
 		["Druidann - Stormrage"] = "Default",
 		["Danoh - Stormrage"] = "Default",
-		["Talthalador - Stormrage"] = "Default",
+		["Emmarosa - Stormrage"] = "Default",
 		["Yanlery - Stormrage"] = "Default",
 		["Shhbbyisok - Stormrage"] = "Default",
-		["Emmarosa - Stormrage"] = "Default",
+		["Talthalador - Stormrage"] = "Default",
 		["Dosnutz - Stormrage"] = "Default",
 	},
 	["profiles"] = {
@@ -22,8 +22,8 @@ NewOpenablesProfile = {
 						[136924] = true,
 						[140404] = true,
 						[24476] = true,
-						[140590] = true,
 						[140226] = true,
+						[140590] = true,
 					},
 					["button"] = {
 						nil, -- [1]
@@ -37,7 +37,7 @@ NewOpenablesProfile = {
 						"UIParrent", -- [2]
 						"TOPLEFT", -- [3]
 					},
-					["version"] = "|cFFFFFFFF06.16 16.10.2016 use |cFFFF00FF/nop|cFFFFFFFF",
+					["version"] = "|cFFFFFFFF06.18 20.10.2016 use |cFFFF00FF/nop|cFFFFFFFF",
 					["lockButton"] = true,
 				},
 			},

@@ -1,7 +1,6 @@
 # BigWigs
 
-## [v19-2-g778e172](https://github.com/BigWigsMods/BigWigs/tree/778e1727c992068b1bc6230bdf5502b477b468b5) (2016-10-19) [](#top)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v19...778e1727c992068b1bc6230bdf5502b477b468b5)
+## [v19.1-1-g6d031b2](https://github.com/BigWigsMods/BigWigs/tree/6d031b24e4aa6622d29f1cbb2c23949a91e66f4d) (2016-10-21) [](#top)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v19.1...6d031b24e4aa6622d29f1cbb2c23949a91e66f4d)
 
--   Update ptBR.lua (#77)  
--   zhCN/zhTW update. (#76)  
+-   Test out blocking pull timers when not in the same zone as the sender, closes #78  

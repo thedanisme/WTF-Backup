@@ -4,6 +4,14 @@
 [*]Hook for skinning addons.[/list]
 
 ]]
+--[[Revisions: 06.18
+
+06.18 20.10.2016
+
+[list][*]Added items with Read to gain new knowledge about your artifact, increasing the rate at which you earn Artifact Power.
+[*]Change, moved experience items for player and champion into spells by name table[/list]
+
+]]
 --[[Revisions: 06.16
 
 06.16 16.10.2016
