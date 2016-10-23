@@ -1,7 +1,6 @@
 # BigWigs [Mists of Pandaria]
 
-## [v7.0.3](https://github.com/BigWigsMods/BigWigs_MistsOfPandaria/tree/v7.0.3) (2016-10-15) [](#top)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs_MistsOfPandaria/compare/v7.0.2...v7.0.3)
+## [v7.0.3-1-gd3b629e](https://github.com/BigWigsMods/BigWigs_MistsOfPandaria/tree/d3b629eae8f705b158c33ab32b20c0585587b221) (2016-10-22) [](#top)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs_MistsOfPandaria/compare/v7.0.3...d3b629eae8f705b158c33ab32b20c0585587b221)
 
--   cleanup  
--   Remove some range related messages.  
+-   Update comm methods  
