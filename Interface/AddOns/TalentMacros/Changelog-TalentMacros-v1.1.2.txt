@@ -1,0 +1,14 @@
+tag v1.1.2
+603163eb1449380ee2cdeb8b6ecb85fca0030118
+Kyle Buller <bullerk@gmail.com>
+2016-10-25 15:42:45 -0500
+
+Tagging as v1.1.2
+
+
+--------------------
+
+Kyle Buller:
+	- Update TOC for 7.1
+	- Add option to disable the new spell icon animation
+	- Stanzilla proof it.

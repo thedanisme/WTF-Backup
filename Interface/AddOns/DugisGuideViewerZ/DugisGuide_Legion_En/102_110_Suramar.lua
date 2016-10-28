@@ -967,6 +967,10 @@ A The Stuff of Dreams |QID|43362| |N|(npc:107126) in {Shal'Aran} (36.53,46.81)| 
 A Branch of the Arcan'dor |QID|40125| |N|(npc:97140) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |FS|1859, 28000|
 T Branch of the Arcan'dor |QID|40125| |N|(npc:97140) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |FS|1859, 28000|
 
+A The Stuff of Dreams |QID|43362| |N|(npc:107126) in {Shal'Aran} (36.53,46.81)| |Z|1033 0| |NPC|107126| |FS|1859, 28000|
+C The Stuff of Dreams |QID|43362| |N|Enter the Emerald Nightmare Raid and kill (npc:30108) and collect (item:43362)|  |NPC|30108| |FS|1859, 28000|
+T The Stuff of Dreams |QID|43362| |N|(npc:107126) in {Shal'Aran} (36.53,46.81)| |Z|1033 0| |NPC|107126| |FS|1859, 28000|
+
 N Gain Reputation |N|You will need 7000/21000 Revered status with (fac:1859) faction to continue| |OID|44152| 
 C Redemption for the Fallen |QID|44563| |N|Reach Exalted status with with (fac:1859)|
 T Redemption for the Fallen |QID|44563| |N|(npc:107126) in {Shal'Aran} (36.85, 46.54)| |Z|1033 0| |NPC|107126|

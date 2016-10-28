@@ -70,7 +70,7 @@ A Voren'thal the Seer |N|(npc:18166) (54.7, 44.4) in {Shattrath City}| |Z|481| |
 T Voren'thal the Seer |N|(npc:18530) (42.7, 91.5) in {Scryer's Tier}| |Z|481| |QID|10553| |NPC|18530| |REP|934, 5|
 
 h Shattrath City |N|Speak to (npc:19046) and set your hearth to {Shattrath City} (28.2, 49)| |Z|481| |QID|10037| |NPC|19046| |REP|932, 5|
-h Shattrath City |N|Speak to (npc:10037) and set your hearth to {Shattrath City} (52.2, 81.6)| |Z|481| |QID|10037| |NPC|19232| |REP|934, 5|
+h Shattrath City |N|Speak to (npc:19232) and set your hearth to {Shattrath City} on {Scryer's Tier} (56.32, 81.54)| |Z|481| |QID|10037| |NPC|19232| |REP|934, 5|
 A The Outcast's Plight |N|(npc:22429) (46.49, 20.10) in {Shattrath City}| |Z|481| |QID|10917| |NPC|22429|
 
 R Silmyr Lake |N|Travel to {Silmyr Lake} (39.72, 11.26)| |QID|10037|

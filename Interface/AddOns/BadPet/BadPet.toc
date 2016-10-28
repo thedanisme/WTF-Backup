@@ -1,11 +1,11 @@
-## Interface: 70000
+## Interface: 70100
 ## Title: BadPet
 ## Notes: Detects and reports pet taunts in dungeons. Helps pet classes prevent them (/badpet or /bp to configure)
 ## Author: Stephen Nelson
-## Version: v1.0.5
+## Version: v1.0.6
 ## SavedVariables: BadPetDB
 ## OptionalDeps: Ace3, LibDataBroker-1.1, LibQTip-1.0
-## X-Curse-Packaged-Version: v1.0.5
+## X-Curse-Packaged-Version: v1.0.6
 ## X-Curse-Project-Name: BadPet
 ## X-Curse-Project-ID: badpet
 ## X-Curse-Repository-ID: wow/badpet/mainline

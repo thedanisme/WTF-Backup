@@ -1,0 +1,12 @@
+tag v1.0.6
+1eb118e9b92f927fda7eb946e9a3bb183a94f081
+Stephen Nelson <stephen@sfnelson.org>
+2016-10-26 19:33:34 +1300
+
+Update for 7.1
+
+
+--------------------
+
+Stephen Nelson:
+	- update interface version for 7.1

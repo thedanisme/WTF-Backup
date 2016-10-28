@@ -137,8 +137,8 @@ N Stormheim |TID|44700| |N|Switch to (guide:"1017(98-110)#1017(98-110)#1017(98-1
 
 N Level 101 Required |N|You need to be at least level 101 to continue with the class campaign quest line| |PL|101|
 
-A Called to Acherus |QID|44550| |N|(npc:114282) in {Krasus' Landing} (60.85, 44.50)| |Z|1014 10| |NPC|114282|
-T Called to Acherus |QID|44550| |N|(npc:93568) in {Hall of Command} (49.69, 50.61)| |Z|1021 2| |NPC|93568|
+A Called to Acherus |QID|44550| |N|(npc:114282) in {Krasus' Landing} (60.85, 44.50)| |Z|1014 10| |NPC|114282| |OID|43539|
+T Called to Acherus |QID|44550| |N|(npc:93568) in {Hall of Command} (49.69, 50.61)| |Z|1021 2| |NPC|93568| |OID|43539|
 
 A Salanar the Horseman |QID|43539| |N|(npc:93568) in {Hall of Command} (49.69, 50.61)| |Z|1021 2| |NPC|93568|
 C Salanar the Horseman |QID|43539| |N|Complete the "Salanar the Horsemen" mission.<br/><br/>You will need to complete several of these mission to complete the quest| |Z|1021 2| |NPC|93568| |POI|

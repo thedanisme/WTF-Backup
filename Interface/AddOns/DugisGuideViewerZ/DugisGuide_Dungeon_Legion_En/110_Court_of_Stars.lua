@@ -14,6 +14,7 @@ N (npc:107486) |SID|0|1| |N|Speak to (npc:107486), they are 5 of them all around
 K (npc:108151) |SID|0|1| |N|Follow the (npc:107435) to (npc:108151) and kill him to get the key<br/><br/>Tick this step after you get the key (66.36,19.09)| |Z|1087 3| |NPC|108151|
 K (npc:104218) |SID|0|1| |N|Kill (npc:104218) in {The Jeweled Estate}<br/><b>He will cast (spell:209602) on a random player and rush to their location, leaving a copy of himself at that location.<br/><b>These copies cast his abilities when he does, so he becomes more difficult in longer fights, due to these copies.<br/><b>Distance yourself from other players, if possible, to avoid (spell:209602) damaging multiple players at once.<br/><b>Avoid the grey lines on the ground when he casts (spell:209628).<br/><b>Healer: Be ready to big heals if the fight takes a long time, since his abilities increase in damage as the fight progresses. (65.85,78.15)| |Z|1087 3| |NPC|104218|
 N (item:140757) |QID|43314.2| |N|Collect (item:140757) from (npc:43314) in {The Jeweled Estate} (65.85,78.15)| |Z|1087 3| |NPC|104218| |O|
+N (item:133806) |QID|40882.2| |N|Collect (item:133806) from (npc:43314) in {The Jeweled Estate} (65.85,78.15)| |Z|1087 3| |NPC|104218| |O| --Engineering
 
 N Guide Complete
 

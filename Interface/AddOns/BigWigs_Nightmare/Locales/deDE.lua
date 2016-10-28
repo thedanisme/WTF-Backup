@@ -16,7 +16,8 @@ end
 
 L = BigWigs:NewBossLocale("Il'gynoth", "deDE")
 if L then
-	L.blobs_remaining = "%d Blut verbleibend"
+	L.remaining = "Verbleibend"
+	L.missed = "Verpasst"
 end
 
 L = BigWigs:NewBossLocale("Emerald Nightmare Trash", "deDE")

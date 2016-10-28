@@ -452,6 +452,12 @@ A Champion Armaments |QID|44228| |N|(npc:110408), This quest will only be availa
 C Champion Armaments |QID|44228| |N|Speak to (npc:110408) and place a work order for Champion Armament (57.29,52.50)| |Z|1050 0| |NPC|110408|
 T Champion Armaments |QID|44228| |N|(npc:110408), This quest will only be available if you chose to get the "Shadow Pact" class hall upgrade. (57.29,52.50)| |Z|1050 0| |NPC|110408|
 
+A Unleashing our Wrath |QID|44227| |N|(npc:113371) in {Dreadscar Rift} (49.47,24.90)<br/><br/>This quest will only be available if you chose to get the "Unleash Infernal" class hall upgrade.| |Z|1050 0| |NPC|113371|
+N Begin the Ritual |QID|44227.1| |N|Speak to (npc:113371) to begin the ritual (49.47,24.90)| |Z|1050 0| |NPC|113371|
+N Collect the Demonic Phylactery |QID|44227.2| |N|click Enslaving Infernal to Collect the Demonic Phylactery (49.82,24.41)| |Z|1050 0|
+N Use the "Unleash Infernal" on your Map |QID|44227.3| |N|Click any world quest you want to complete instantly and use the "Unleash Infernal" Ability on Your Map|
+T Unleashing our Wrath |QID|44227| |N|(npc:113371) in {Dreadscar Rift} (49.47,24.90)| |Z|1050 0|
+
 N Guide Complete
 
 ]]

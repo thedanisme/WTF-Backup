@@ -1365,7 +1365,7 @@
                     <OnClick>DugisGuideViewer_Close_ButtonClick();</OnClick>
                 </Scripts> 
             </Button>
-			<Frame name="DugisMain">
+			<Frame name="DugisMain"  clipChildren = "true">
 				<Anchors>
 					<Anchor point="TOPLEFT" x="10" y="-12"/>
 					<Anchor point="BOTTOMRIGHT" x="-8" y="8"/>
@@ -1641,17 +1641,17 @@
 						<Size x="350" y="356"/>
 					</Frame>	  
                     
-					<Button name="$parentHomeTab" inherits="TopTabTemplate" text="Home" parentKey="homeTab">
+					<Button name="$parentHomeTab" inherits="TopTabTemplate" frameLevel="100" text="Home" parentKey="homeTab">
 						<Anchors>
 							<Anchor point="BOTTOMLEFT" relativePoint="TOPLEFT" x="20" y="-40"/>
 						</Anchors>
 					</Button>
-					<Button name="$parentCurrentGuideTab" inherits="TopTabTemplate" text="Current Guide" parentKey="currentGuideTab">
+					<Button name="$parentCurrentGuideTab" inherits="TopTabTemplate" frameLevel="101"  text="Current Guide" parentKey="currentGuideTab">
 						<Anchors>
 							<Anchor point="BOTTOMLEFT" relativeTo="$parentHomeTab" relativePoint="BOTTOMRIGHT" x="32" y="0"/>
 						</Anchors>
 					</Button>
-					<CheckButton name="$parentSettingsTab" inherits="UIPanelSquareButton" parentKey="settingsTab">
+					<CheckButton name="$parentSettingsTab" inherits="UIPanelSquareButton" frameLevel="102"  parentKey="settingsTab">
 						<Size x="30" y="30"/>
 						<Anchors>
 							<Anchor point="BOTTOMLEFT" relativeTo="$parentCurrentGuideTab" relativePoint="BOTTOMRIGHT" x="18" y="0"/>
@@ -1791,7 +1791,7 @@
 						</Scripts>
 					</ScrollFrame>
 					
-					<Button name="DugisResetButton" inherits="UIPanelButtonTemplate" text="Reset" hidden="false">
+					<Button name="DugisResetButton" inherits="UIPanelButtonTemplate"  frameLevel="100" text="Reset" hidden="false">
 						<Size>
 							<AbsDimension x="70" y="23"/>
 						</Size>
@@ -1806,7 +1806,7 @@
 							<OnClick>DugisGuideViewer.ResetButtonOnClick()</OnClick>
 						</Scripts> 
 					</Button>
-					<Button name="DugisReloadButton" inherits="UIPanelButtonTemplate" text="Reload" hidden="false">
+					<Button name="DugisReloadButton" inherits="UIPanelButtonTemplate"  frameLevel="101" text="Reload" hidden="false">
 						<Size>
 							<AbsDimension x="70" y="23"/>
 						</Size>

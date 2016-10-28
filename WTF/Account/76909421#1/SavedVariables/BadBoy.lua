@@ -1,6 +1,5 @@
 
-BADBOY_POPUP = true
-BADBOY_NOLINK = nil
 BADBOY_BLACKLIST = {
-	["dayFromCal"] = 0,
+	["dayFromCal"] = 27,
 }
+BADBOY_TOOLTIP = nil

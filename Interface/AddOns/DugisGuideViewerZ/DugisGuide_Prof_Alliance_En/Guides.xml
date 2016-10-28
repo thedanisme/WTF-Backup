@@ -3,13 +3,18 @@
 	<Script file="..\DugisGuide_Profession_Legion\1_800_Alchemy.lua"/>
 	<Script file="..\DugisGuide_Profession_Legion\1_800_BlackSmithing.lua"/>
 	<Script file="..\DugisGuide_Profession_Legion\1_800_Herbalism.lua"/>
-	<Script file="..\DugisGuide_Profession_Legion\Herb_Farm_Legion.lua"/>
+	<Script file="..\DugisGuide_Profession_Legion\1_800_Engineering.lua"/>
+	<Script file="..\DugisGuide_Profession_Legion\1_800_Leatherworking.lua"/>
 	<Script file="..\DugisGuide_Profession_Legion\1_800_Skinning.lua"/>
-	<Script file="..\DugisGuide_Profession_Legion\Skinning_Farm_Legion.lua"/>
 	<Script file="..\DugisGuide_Profession_Legion\1_800_Mining.lua"/>
+	<Script file="..\DugisGuide_Profession_Legion\1_800_Tailoring.lua"/>	
+	<Script file="..\DugisGuide_Profession_Legion\Legion_Enchanting_Quests.lua"/>
+	<Script file="..\DugisGuide_Profession_Legion\700_800_Enchanting.lua"/>
+	<Script file="..\DugisGuide_Profession_Legion\Herb_Farm_Legion.lua"/>
+	<Script file="..\DugisGuide_Profession_Legion\Skinning_Farm_Legion.lua"/>
 	<Script file="..\DugisGuide_Profession_Legion\Mining_Farm_Legion.lua"/>
 	<Script file="..\DugisGuide_Profession_Legion\Mining_Seam.lua"/>
-	
+
 	<Script file="Alchemy_WoD.lua"/>
 	<Script file="Blacksmithing_WoD.lua"/>
 	<Script file="Enchanting_WoD.lua"/>

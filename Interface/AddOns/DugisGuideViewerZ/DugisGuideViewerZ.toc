@@ -1,7 +1,7 @@
-## Interface: 70000
-## Title: DugiGuidesViewer |cffffffff8.121|r
+## Interface: 70100
+## Title: DugiGuidesViewer |cffffffff8.135|r
 ## Notes: In-Game Guide Viewer. Copyright 2010-2016 UltimateWoWGuide.com
-## Version: 8.121
+## Version: 8.135
 ## X-Website: http://www.ultimatewowguide.com/
 ## X-Email: support@ultimatewowguide.com
 ## X-Category: Quest
@@ -61,6 +61,7 @@ ItemButton.lua
 UnlistedQuest.lua
 Chains.lua
 ReqLevel.lua
+NPCJournalFrame\GUIUtils.lua
 arrow.lua
 Ants.lua
 Professions.lua
@@ -100,7 +101,6 @@ Record.lua
 WorldMapTrackingCollection.lua
 
 TomTomEmulation.lua
-NPCJournalFrame\GUIUtils.lua
 NPCJournalFrame\NPCJournalFrameData.lua
 NPCJournalFrame\MountData.lua
 NPCJournalFrame\PetData.lua

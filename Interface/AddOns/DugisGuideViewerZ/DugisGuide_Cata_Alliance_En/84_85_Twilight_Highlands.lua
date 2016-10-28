@@ -5,42 +5,44 @@ return [[
 
 R Stormwind City |N|Travel to {Stormwind City} (62.91, 71.70) in {Trade District}| |Z|301| |QID|26960|
 A Hero's Call: Twilight Highlands! |QID|28716| |N|Hero's Call Board (62.91, 71.70) in {Trade District}| |Z|301| |OBJ|10016|
-T Hero's Call: Twilight Highlands! |QID|28716| |N|(npc:29611) (85.65, 31.83) in {Stormwind Keep}| |Z|301| |NPC|29611|
-A My Son, the Prince |QID|26960| |N|(npc:29611) (85.65, 31.83) in {Stormwind Keep}| |Z|301| |NPC|29611|
-C My Son, the Prince |QID|26960.1| |N|Talk to Prince Anduin in {Stormwind Keep} (85.65, 31.83)| |Z|301| |NPC|1747|
-T My Son, the Prince |QID|26960| |N|(npc:29611) (85.65, 31.83) in {Stormwind Keep}| |Z|301| |NPC|29611|
-A Rallying the Fleet |QID|26975| |N|(npc:29611) (85.65, 31.83) in {Stormwind Keep}| |Z|301| |NPC|29611|
-A Twilight Investigation |QID|26977| |N|(npc:29611) (85.65, 31.83) in {Stormwind Keep}| |Z|301| |NPC|29611|
-T Twilight Investigation |QID|26977| |N|(npc:2439) (85.06, 31.26) in {Stormwind Keep}| |Z|301| |NPC|2439|
-A The Usual Suspects |QID|26997| |N|(npc:2439) (85.06, 31.26) in {Stormwind Keep}| |Z|301| |NPC|2439|
-C The Usual Suspects |QID|26997.1| |N|Interrogate 6 (npc:29152) in {Stormwind Harbor} (29.27, 26.45)| |Z|301| |NPC|29152|
-T The Usual Suspects |QID|26997| |N|(npc:44293) (83.19, 34.83) in {Stormwind Keep}| |Z|301| |NPC|44293|
-C Rallying the Fleet |QID|26975.1| |N|Escort Prince Anduin to the {Stormwind} Docks and talk to (npc:44749). If you get separated, he'll be in the Stormwind throne room in {Stormwind Harbor} (33.28, 39.54)| |Z|301| |NPC|44749|
-T Rallying the Fleet |QID|26975| |N|(npc:44749) (33.28, 39.54) in {Stormwind Harbor}| |Z|301| |NPC|44749|
-A Missing Parts |QID|27038| |N|(npc:44749) (33.28, 39.54) in {Stormwind Harbor}| |Z|301| |NPC|44749|
-A Peasant Problems |QID|27044| |N|(npc:44293) (33.28, 39.54) in {Stormwind Harbor}| |Z|301| |NPC|44293|
-C Missing Parts |QID|27038.1| |N|Collect 5 (item:60757) in {Stormwind Harbor} (34.62, 46.08)| |Z|301| |OBJ|1211|
-T Missing Parts |QID|27038| |N|(npc:44806) (34.63, 37.86) in {Stormwind Harbor}| |Z|301| |NPC|44806|
-A He's Holding Out on Us |QID|27064| |N|(npc:44293) (34.51, 38.00) in {Stormwind Harbor}| |Z|301| |NPC|44293|
-C Peasant Problems |QID|27044.1| |N|Escort Prince Anduin to (npc:44807) in {The Wollerton Stead} (52.13, 5.99)| |Z|301| |NPC|44807|
-T Peasant Problems |QID|27044| |N|(npc:44807) (52.13, 5.99) at {The Wollerton Stead}| |Z|301| |NPC|44807|
-A Unholy Cow |QID|27060| |N|(npc:44807) (52.13, 5.99) at {The Wollerton Stead}| |Z|301| |NPC|44807|
-C Unholy Cow |QID|27060.1| |N|Escort (npc:44293) along the trail of gore from Farmer Wollerton's Stead to the crime scene. Keep Anduin alive. (43.84, 4.29)| |Z|301| |NPC|44293|
-T Unholy Cow |QID|27060| |N|(npc:44293) (43.67, 4.30) in {Stormwind City Outskirts}| |Z|301| |NPC|44293|
-C He's Holding Out on Us |QID|27064.1| |N|Escort Anduin Wrynn to the third floor of {SI:7} Headquarters so he can look through Samuelson's Papers (80.43, 62.15)| |Z|301|
-T He's Holding Out on Us |QID|27064| |N|(npc:44293) (80.43, 62.15) {SI:7}| |Z|301| |NPC|44293|
-A Expert Opinion |QID|28807| |N|(npc:44293) (80.43, 62.15) {SI:7}| |Z|301| |NPC|44293|
-T Expert Opinion |QID|28807| |N|(npc:332) (81.28, 63.21) {SI:7}| |Z|301| |NPC|332|
-A The Old Barracks |QID|27072| |N|(npc:332) (81.28, 63.21) {SI:7}| |Z|301| |NPC|332|
-C The Old Barracks |QID|27072.1| |N|Kill 6 (npc:44814) in {The Old Barracks} (42.58, 56.35)| |Z|301| |NPC|44814|
-T The Old Barracks |QID|27072| |N|(npc:50049) (37.16, 56.32) in {The Old Barracks}| |Z|301| |NPC|50049|
-A Cataclysm in the Catacombs |QID|27092| |N|(npc:50049) (37.16, 56.32) in {The Old Barracks}| |Z|301| |NPC|50049|
-C Cataclysm in the Catacombs |QID|27092.1| |N|Enter the {Cathedral of Light} and go down into the catacombs below. Kill the Black Bishop and disarm the Pile of Explosives nearby (53.11, 51.34) (50.26, 41.44)| |Z|301| |NPC|44816| |OBJ|9278|
-T Cataclysm in the Catacombs |QID|27092| |N|Pile of Explosives (50.33, 42.44) in the {Cathedral of Light}| |Z|301| |OBJ|9278|
-A A Villain Unmasked |QID|27106| |N|Pile of Explosives (50.33, 42.44) in the {Cathedral of Light}| |Z|301| |OBJ|9278|
-C A Villain Unmasked |QID|27106.1| |N|Unmask and kill Major Samuelson in {Stormwind Keep} (85.07, 31.35)| |Z|301| |NPC|45014|
-T A Villain Unmasked |QID|27106| |N|(npc:29611) (85.66, 32.00) in {Stormwind Keep}| |Z|301| |NPC|29611|
-A Twilight Shores (Part 1) |QID|28238| |N|(npc:29611) (85.66, 32.00) in {Stormwind Keep}| |Z|301| |NPC|29611|
+T Hero's Call: Twilight Highlands! |QID|28716| |N|(npc:107574) (85.65, 31.83) in {Stormwind Keep}| |Z|301| |NPC|107574|
+
+--A My Son, the Prince |QID|26960| |N|(npc:29611) (85.65, 31.83) in {Stormwind Keep}| |Z|301| |NPC|29611|
+--C My Son, the Prince |QID|26960.1| |N|Talk to Prince Anduin in {Stormwind Keep} (85.65, 31.83)| |Z|301| |NPC|1747|
+--T My Son, the Prince |QID|26960| |N|(npc:29611) (85.65, 31.83) in {Stormwind Keep}| |Z|301| |NPC|29611|
+--A Rallying the Fleet |QID|26975| |N|(npc:29611) (85.65, 31.83) in {Stormwind Keep}| |Z|301| |NPC|29611|
+--A Twilight Investigation |QID|26977| |N|(npc:29611) (85.65, 31.83) in {Stormwind Keep}| |Z|301| |NPC|29611|
+--T Twilight Investigation |QID|26977| |N|(npc:2439) (85.06, 31.26) in {Stormwind Keep}| |Z|301| |NPC|2439|
+--A The Usual Suspects |QID|26997| |N|(npc:2439) (85.06, 31.26) in {Stormwind Keep}| |Z|301| |NPC|2439|
+--C The Usual Suspects |QID|26997.1| |N|Interrogate 6 (npc:29152) in {Stormwind Harbor} (29.27, 26.45)| |Z|301| |NPC|29152|
+--T The Usual Suspects |QID|26997| |N|(npc:44293) (83.19, 34.83) in {Stormwind Keep}| |Z|301| |NPC|44293|
+--C Rallying the Fleet |QID|26975.1| |N|Escort Prince Anduin to the {Stormwind} Docks and talk to (npc:44749). If you get separated, he'll be in the Stormwind throne room in {Stormwind Harbor} (33.28, 39.54)| |Z|301| |NPC|44749|
+--T Rallying the Fleet |QID|26975| |N|(npc:44749) (33.28, 39.54) in {Stormwind Harbor}| |Z|301| |NPC|44749|
+--A Missing Parts |QID|27038| |N|(npc:44749) (33.28, 39.54) in {Stormwind Harbor}| |Z|301| |NPC|44749|
+--A Peasant Problems |QID|27044| |N|(npc:44293) (33.28, 39.54) in {Stormwind Harbor}| |Z|301| |NPC|44293|
+--C Missing Parts |QID|27038.1| |N|Collect 5 (item:60757) in {Stormwind Harbor} (34.62, 46.08)| |Z|301| |OBJ|1211|
+--T Missing Parts |QID|27038| |N|(npc:44806) (34.63, 37.86) in {Stormwind Harbor}| |Z|301| |NPC|44806|
+--A He's Holding Out on Us |QID|27064| |N|(npc:44293) (34.51, 38.00) in {Stormwind Harbor}| |Z|301| |NPC|44293|
+--C Peasant Problems |QID|27044.1| |N|Escort Prince Anduin to (npc:44807) in {The Wollerton Stead} (52.13, 5.99)| |Z|301| |NPC|44807|
+--T Peasant Problems |QID|27044| |N|(npc:44807) (52.13, 5.99) at {The Wollerton Stead}| |Z|301| |NPC|44807|
+--A Unholy Cow |QID|27060| |N|(npc:44807) (52.13, 5.99) at {The Wollerton Stead}| |Z|301| |NPC|44807|
+--C Unholy Cow |QID|27060.1| |N|Escort (npc:44293) along the trail of gore from Farmer Wollerton's Stead to the crime scene. Keep Anduin alive. (43.84, 4.29)| |Z|301| |NPC|44293|
+--T Unholy Cow |QID|27060| |N|(npc:44293) (43.67, 4.30) in {Stormwind City Outskirts}| |Z|301| |NPC|44293|
+--C He's Holding Out on Us |QID|27064.1| |N|Escort Anduin Wrynn to the third floor of {SI:7} Headquarters so he can look through Samuelson's Papers (80.43, 62.15)| |Z|301|
+--T He's Holding Out on Us |QID|27064| |N|(npc:44293) (80.43, 62.15) {SI:7}| |Z|301| |NPC|44293|
+--A Expert Opinion |QID|28807| |N|(npc:44293) (80.43, 62.15) {SI:7}| |Z|301| |NPC|44293|
+--T Expert Opinion |QID|28807| |N|(npc:332) (81.28, 63.21) {SI:7}| |Z|301| |NPC|332|
+--A The Old Barracks |QID|27072| |N|(npc:332) (81.28, 63.21) {SI:7}| |Z|301| |NPC|332|
+--C The Old Barracks |QID|27072.1| |N|Kill 6 (npc:44814) in {The Old Barracks} (42.58, 56.35)| |Z|301| |NPC|44814|
+--T The Old Barracks |QID|27072| |N|(npc:50049) (37.16, 56.32) in {The Old Barracks}| |Z|301| |NPC|50049|
+--A Cataclysm in the Catacombs |QID|27092| |N|(npc:50049) (37.16, 56.32) in {The Old Barracks}| |Z|301| |NPC|50049|
+--C Cataclysm in the Catacombs |QID|27092.1| |N|Enter the {Cathedral of Light} and go down into the catacombs below. Kill the Black Bishop and disarm the Pile of Explosives nearby (53.11, 51.34) (50.26, 41.44)| |Z|301| |NPC|44816| |OBJ|9278|
+--T Cataclysm in the Catacombs |QID|27092| |N|Pile of Explosives (50.33, 42.44) in the {Cathedral of Light}| |Z|301| |OBJ|9278|
+--A A Villain Unmasked |QID|27106| |N|Pile of Explosives (50.33, 42.44) in the {Cathedral of Light}| |Z|301| |OBJ|9278|
+--C A Villain Unmasked |QID|27106.1| |N|Unmask and kill Major Samuelson in {Stormwind Keep} (85.07, 31.35)| |Z|301| |NPC|45014|
+--T A Villain Unmasked |QID|27106| |N|(npc:29611) (85.66, 32.00) in {Stormwind Keep}| |Z|301| |NPC|29611|
+
+A Twilight Shores (Part 1) |QID|28238| |N|(npc:107574) (85.66, 32.00) in {Stormwind Keep}| |Z|301| |NPC|107574|
 T Twilight Shores (Part 1) |QID|28238| |N|(npc:44806) (26.27, 47.33) in {Stormwind Harbor}| |Z|301| |NPC|44806|
 A Twilight Shores (Part 2) |QID|28832| |N|(npc:44806) (26.27, 47.33) in {Stormwind Harbor}| |Z|301| |NPC|44806|
 

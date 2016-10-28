@@ -39,6 +39,9 @@ When PLH becomes disabled, set isAnnouncer to false
 	
 Changelog
 
+20161025 - 1.17
+	Updated for 7.1
+	
 20161015 - 1.16
 	Public
 		Added ability for players to whisper the roll coordinator with 'trade [item]' in Coordinate Rolls mode to initiate rolls for a specific item; for example, when PLH can't determine their item is tradeable because they have lower ilvl equipped but higher ilvl in their bags

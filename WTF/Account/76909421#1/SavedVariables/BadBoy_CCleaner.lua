@@ -209,4 +209,3 @@ BADBOY_CCLEANER = {
 	"yo momma", -- [207]
 	"your momma", -- [208]
 }
-BADBOY_NOICONS = true

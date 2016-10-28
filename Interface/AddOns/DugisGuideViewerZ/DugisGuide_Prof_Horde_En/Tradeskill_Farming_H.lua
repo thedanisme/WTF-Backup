@@ -505,6 +505,11 @@ N (item:118472) |N|Level 3 Barn required. Obtained by trapping elite Clefthoof, 
 N (item:114931) |IN| |N|Milled from 5 Draenor level herb| --Cerulean Pigment
 N (item:110609) |SK| |N|Skinned from (npc:78278), (npc:81902), or (npc:79398) (62.2,59.6)(68.6,39.0)(82.2,33.0)(89.8,46.2)(88.0,49.0)(75.0,58.6)| |NPC|78278,81902,79398| |Z|950| --Raw Beast Hide
 --Legion
+--Food 
+N (item:124121) |CO| |N|Kill (npc:97809) and collect (item:124121) in {Stormheim}<br/><br/>If you kill them up on the rocks and can't reach them to loot them, kill a crab on the ground nearby to AoE loot them. (80.57,69.32)| |Z|1017 0| |NPC|97809|
+N (item:124119) |CO| |N|Kill (npc:98808) and collect (item:124119) in {Highmountain} (41.38,54.03)| |Z|1024 0| |NPC|98808|
+N (item:124109) |FIS| |N|Fish in the Rapid-Moving river {Highmountain}<br/><br/>The (item:124109) is rare catch, requires fishing (41.84,51.65)| |Z|1024 0|
+N (item:124109) |FIS| |N|Fish in Black Barracuda schools {Suramar}<br/><br/> Follow the beach east from this spot (74.20,49.90)| |Z|1033 0|
 --Stonehide
 N (item:124113) |SK| |N|Skin (npc:107503) or (npc:96146) in {Highmountain} (36.0, 37.7)| |Z|1024 0| |NPC|107503, 96146| |W|
 N (item:124113) |SK| |N|Skin (npc:93095) in {Stormheim} (70.5, 52.4)| |Z|1017 0| |NPC|93095| |W|
@@ -519,9 +524,11 @@ N (item:124115) |SK| |N|Skin (npc:91793) in {Eye of Azshara} (57.0, 37.6)| |Z|10
 N (item:123919) |MI| |N|Mine Felslate deposits in (map:1018) (55.74,56.76) (53.82,50.33) (51.50,50.94) (47.20,54.90) (44.81,58.33) (40.95,58.71) (39.00,58.35) (34.20,54.81) (32.10,56.40) (33.68,61.81) (35.73,62.31) (38.03,65.36) (39.31,64.67) (42.03,63.65) (42.90,64.59) (44.47,63.50) (44.97,64.11) (47.28,67.56) (48.36,68.94) (48.31,71.48) (47.71,72.38) (46.81,76.90) (49.12,78.34) (49.67,83.57) (50.60,84.56) (52.22,87.49) (53.19,88.54) (56.37,89.53) (58.03,89.16) (59.72,86.38) (63.64,89.41) (66.51,87.67) (66.73,84.38) (64.45,82.25) (63.30,83.00) (60.89,80.01) (59.34,79.01) (63.36,75.12) (64.24,73.67) (65.99,76.79) (66.83,75.38) (66.43,72.56) (66.63,70.44) (65.89,66.89) (63.11,65.99) (59.26,64.27) (57.76,64.16) (56.10,58.30)| |Z|1018 0|
 N (item:123918) |MI| |N|Mine Leystone deposits in (map:1018) (55.74,56.76) (53.82,50.33) (51.50,50.94) (47.20,54.90) (44.81,58.33) (40.95,58.71) (39.00,58.35) (34.20,54.81) (32.10,56.40) (33.68,61.81) (35.73,62.31) (38.03,65.36) (39.31,64.67) (42.03,63.65) (42.90,64.59) (44.47,63.50) (44.97,64.11) (47.28,67.56) (48.36,68.94) (48.31,71.48) (47.71,72.38) (46.81,76.90) (49.12,78.34) (49.67,83.57) (50.60,84.56) (52.22,87.49) (53.19,88.54) (56.37,89.53) (58.03,89.16) (59.72,86.38) (63.64,89.41) (66.51,87.67) (66.73,84.38) (64.45,82.25) (63.30,83.00) (60.89,80.01) (59.34,79.01) (63.36,75.12) (64.24,73.67) (65.99,76.79) (66.83,75.38) (66.43,72.56) (66.63,70.44) (65.89,66.89) (63.11,65.99) (59.26,64.27) (57.76,64.16) (56.10,58.30)| |Z|1018 0|
 N (item:124444) |MI| |N|Complete "Brimstone Infernal" world quests at level 110|
+--Shal'dorei Silk
+N (item:124437) |TA| |N|Dropped by any Humanoid npc in Broken Isle<br/><br/>Kill (npc:95753) in {Highmountain} (37.41,46.67) (58.46,41.58)| |Z|1024 31| |NPC|95753|
 
 ]]
-end, {description = [[This guide covers how to aquire various Tradeskill materials 1-700.]]})
+end, {description = [[This guide covers how to aquire various Tradeskill materials 1-800.]]})
 	end
 	
 	function Guide:Unload()

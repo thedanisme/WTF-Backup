@@ -842,6 +842,8 @@ function GUIUtils:SetTreeData(targetTreeFrame, wrapper, treePrefix, nodes, paren
             wrapper = CreateFrame("Frame", treePrefix.."wrapper", targetTreeFrame)
         end
         
+        targetTreeFrame:SetClipsChildren(true)
+        
         targetTreeFrame.wrapper = wrapper
         wrapper:SetParent(targetTreeFrame)
         wrapper:Show()
@@ -1136,10 +1138,10 @@ function TestTree2()
 end
 --/run TestTree3()
 function TestTree3()
-    GUIUtils:SetTreeData(UIParent, nil, "parentFrame", 
+    GUIUtils:SetTreeData(UIParent, nil, "parentFrame1", 
         { 
-           {name="Node1", data={}, isLeaf = true}
-        
+          {name="Category1", data={}, nodes = {{name="Category", data={}, nodes = {{name="L1", isLeaf=true, data={}}}}}} ,
+          {name="Category2", data={}, nodes = {{name="Category", data={}, nodes = {{name="L2", isLeaf=true, data={}}}}}} ,
         }
     )
 end

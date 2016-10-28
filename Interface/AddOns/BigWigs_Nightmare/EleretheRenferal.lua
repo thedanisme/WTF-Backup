@@ -118,6 +118,7 @@ do
 			local guid = UnitGUID(unit)
 			if not players[guid] then
 				players[guid] = true
+				list[#list+1] = self:UnitName(unit)
 				if unit == "player" then
 					self:Flash(key)
 					self:Say(key)
@@ -129,13 +130,11 @@ do
 					self:ScheduleTimer("Say", remaining-2, key, 2, true)
 					self:ScheduleTimer("Say", remaining-1, key, 1, true)
 				else
-					list[#list+1] = self:UnitName(unit)
 					if scheduled then
 						self:CancelTimer(scheduled)
 						scheduled = nil
 					end
-					local count = self:LFR() and key == 210864 and 4 or 2 -- 4 applications of Twisting Shadows on LFR for whatever reason
-					if #list == count then
+					if #list == 2 then
 						self:TargetMessage(key, list, "Urgent", "Warning")
 					else
 						scheduled = self:ScheduleTimer("TargetMessage", 0.5, key, list, "Urgent", "Warning")
@@ -206,7 +205,7 @@ function mod:WebOfPainApplied(args)
 		self:Message(args.spellId, "Personal", "Warning", L.yourLink:format(self:ColorName(args.destName)))
 		local _, _, _, _, _, _, expires = UnitDebuff("player", args.spellName)
 		local remaining = expires-GetTime()
-		self:Bar(args.spellId, remaining, L.yourLinkShort:format(self:ColorName(args.sourceName)))
+		self:Bar(args.spellId, remaining, L.yourLinkShort:format(self:ColorName(args.destName)))
 	elseif not self:CheckOption(args.spellId, "ME_ONLY") then
 		self:Message(args.spellId, "Attention", nil, L.isLinkedWith:format(self:ColorName(args.sourceName), self:ColorName(args.destName)))
 	end

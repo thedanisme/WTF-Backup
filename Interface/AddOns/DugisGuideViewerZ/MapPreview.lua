@@ -129,7 +129,7 @@ function MP:Initialize()
 		end
 		delegate(WorldMapDetailFrame, numDetail+3)
 		delegate(WorldMapBlobFrame, numDetail+4)
-		delegate(WorldMapArchaeologyDigSites, numDetail+5)
+		--delegate(WorldMapArchaeologyDigSites, numDetail+5)
 
 		if unconditional or not DugisGuideViewer:GetDB(DGV_MAPPREVIEWHIDEBORDER) then
 			IterateNonPreviewElements(function(frame, index)
@@ -167,11 +167,11 @@ function MP:Initialize()
 			orig_WorldMapBlobFrameShow = WorldMapBlobFrame.Show
 			--WorldMapFrameSizeUpButton:Disable()
 		end
-		if orig_WorldMapArchaeologyDigSites==nil and WorldMapArchaeologyDigSites then
-			orig_WorldMapArchaeologyDigSites = WorldMapArchaeologyDigSites.Show
-		end
+		--if orig_WorldMapArchaeologyDigSites==nil and WorldMapArchaeologyDigSites then
+			--orig_WorldMapArchaeologyDigSites = WorldMapArchaeologyDigSites.Show
+		--end
 		WorldMapBlobFrame.Show = no_op
-		WorldMapArchaeologyDigSites.Show = no_op
+		--WorldMapArchaeologyDigSites.Show = no_op
 	end
 
 	function MP:ResetCombatHooks()
@@ -179,9 +179,9 @@ function MP:Initialize()
 			WorldMapBlobFrame.Show = orig_WorldMapBlobFrameShow
 			--WorldMapFrameSizeUpButton:Enable()
 		end
-		if orig_WorldMapArchaeologyDigSites~=nil then
-			WorldMapArchaeologyDigSites.Show = orig_WorldMapArchaeologyDigSites
-		end
+		--if orig_WorldMapArchaeologyDigSites~=nil then
+			--WorldMapArchaeologyDigSites.Show = orig_WorldMapArchaeologyDigSites
+		--end
 	end
 
 	--local resetWindowToggle = false
@@ -194,8 +194,9 @@ function MP:Initialize()
 			RestoreNonPreviewElements()
 			WorldMapFrame:SetAlpha(1)
 			WorldMapBlobFrame_OnLoad(WorldMapBlobFrame)
-			WorldMapArchaeologyDigSites:GetScript("OnLoad")(WorldMapArchaeologyDigSites)
-			WorldMapArchaeologyDigSites:SetBorderAlpha(192)
+            --JU 2016-10-17
+		    --WorldMapArchaeologyDigSites:GetScript("OnLoad")(WorldMapArchaeologyDigSites)
+		    --WorldMapArchaeologyDigSites:SetBorderAlpha(192)
 			if MP.WaypointMapPing then MP.WaypointMapPing:Hide() end
 
 			IteratePreviewElements(function(frame, index)
@@ -403,8 +404,6 @@ function MP:Initialize()
 				WorldMapFrame:SetAlpha(.01)
 				WorldMapBlobFrame:SetBorderAlpha(.01)
 				WorldMapBlobFrame:SetFillAlpha(.01)
-				WorldMapArchaeologyDigSites:SetBorderAlpha(.01)
-				WorldMapArchaeologyDigSites:SetFillAlpha(.01)
 				if DGV.DugisArrow.waypoints and #DGV.DugisArrow.waypoints>0 then
 					lastWaypoint = #DGV.DugisArrow.waypoints
 					if not IsWaypointWithinCurrentFloorArea() then
@@ -428,8 +427,6 @@ function MP:Initialize()
 				WorldMapFrame:SetAlpha(progress*0.5)
 				WorldMapBlobFrame:SetBorderAlpha(progress*1*255)
 				WorldMapBlobFrame:SetFillAlpha(progress*1*255)
-				WorldMapArchaeologyDigSites:SetBorderAlpha(progress*0.5*192)
-				WorldMapArchaeologyDigSites:SetFillAlpha(progress*0.5*128)
 			end)
 
 			MP.FadeOutAnimationGroup = WorldMapButton:CreateAnimationGroup()
@@ -439,25 +436,7 @@ function MP:Initialize()
 			MP.WaitAnimation:SetScript("OnPlay", function(self)
 				WorldMapFrame:SetAlpha(1)
 				if not MP.WaypointMapPing then
-					--prevents error on early load
-					if not WorldMapButton:GetLeft() then
-						MP.FadeOutAnimationGroup:Stop()
-						HideUIPanel(WorldMapFrame)
-						return
-					end
-					MP.WaypointMapPing = CreateFrame("Model", nil, WorldMapButton)
-					MP.WaypointMapPing:SetModel([[Interface\MiniMap\Ping\MinimapPing.mdx]])
-					MP.WaypointMapPing:SetWidth(100)
-					MP.WaypointMapPing:SetHeight(100)
-					--MP.WaypointMapPing:SetModelScale(.4)
-					MP.WaypointMapPing:SetPoint("CENTER", WorldMapButton)
-					local scale = UIParent:GetEffectiveScale();
-					local hypotenuse = ( ( GetScreenWidth() * scale ) ^ 2 + ( GetScreenHeight() * scale ) ^ 2 ) ^ 0.5;
-					--DGV:DebugFormat("Debug FadeInMap: create MP.WaypointMapPing","WorldMapDetailFrame:GetLeft()", WorldMapDetailFrame:GetLeft())
-					local coordRight = ( MP.WaypointMapPing:GetRight() - MP.WaypointMapPing:GetLeft() ) / hypotenuse; -- X
-					local coordTop = ( MP.WaypointMapPing:GetTop() - MP.WaypointMapPing:GetBottom() ) / hypotenuse; -- Y
-					MP.WaypointMapPing:SetPosition(coordRight * 0.5 + 0.0075, coordTop * 0.5 + 0.0075, 255)
-					MP.WaypointMapPing:SetSequence(0)
+                    MP:InitializeWaypointMapPing()
 				end
 				--WorldMapFrame_UpdateMap()
 				if MP.IsAnimating and MP:IsAnimating() then
@@ -530,8 +509,6 @@ function MP:Initialize()
 				WorldMapFrame:SetAlpha((1-progress)*mapAlpha)
 				WorldMapBlobFrame:SetBorderAlpha((1-progress)*mapAlpha*192)
 				WorldMapBlobFrame:SetFillAlpha((1-progress)*mapAlpha*128)
-				WorldMapArchaeologyDigSites:SetBorderAlpha((1-progress)*mapAlpha*192)
-				WorldMapArchaeologyDigSites:SetFillAlpha((1-progress)*mapAlpha*128)
 			end)
 		else
 			--WorldMapFrame:Hide()
@@ -556,6 +533,28 @@ function MP:Initialize()
 		end
 		DGV.DugisArrow:DisableMapClicks()
 	end
+    
+    function MP:InitializeWaypointMapPing()
+        --prevents error on early load
+        if not WorldMapButton:GetLeft() then
+            MP.FadeOutAnimationGroup:Stop()
+            HideUIPanel(WorldMapFrame)
+            return
+        end
+        MP.WaypointMapPing = CreateFrame("Model", nil, WorldMapButton)
+        MP.WaypointMapPing:SetModel([[Interface\MiniMap\Ping\MinimapPing.mdx]])
+        MP.WaypointMapPing:SetWidth(100)
+        MP.WaypointMapPing:SetHeight(100)
+        --MP.WaypointMapPing:SetModelScale(.4)
+        MP.WaypointMapPing:SetPoint("CENTER", WorldMapButton)
+        local scale = UIParent:GetEffectiveScale();
+        local hypotenuse = ( ( GetScreenWidth() * scale ) ^ 2 + ( GetScreenHeight() * scale ) ^ 2 ) ^ 0.5;
+        --DGV:DebugFormat("Debug FadeInMap: create MP.WaypointMapPing","WorldMapDetailFrame:GetLeft()", WorldMapDetailFrame:GetLeft())
+        local coordRight = ( MP.WaypointMapPing:GetRight() - MP.WaypointMapPing:GetLeft() ) / hypotenuse; -- X
+        local coordTop = ( MP.WaypointMapPing:GetTop() - MP.WaypointMapPing:GetBottom() ) / hypotenuse; -- Y
+        MP.WaypointMapPing:SetPosition(coordRight * 0.5 + 0.0075, coordTop * 0.5 + 0.0075, 255)
+        MP.WaypointMapPing:SetSequence(0)
+    end
 
 
 	--WorldMapFrame:HookScript("OnHide", function() ResetMapFade() end)
@@ -598,5 +597,4 @@ function MP:Initialize()
 -- 			WorldMapButton:SetScript("OnUpdate", orig_WorldMapButton_OnUpdate)
 -- 		end
 	end
-
 end

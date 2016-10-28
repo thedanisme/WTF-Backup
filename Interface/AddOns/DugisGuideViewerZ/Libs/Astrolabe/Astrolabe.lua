@@ -344,6 +344,10 @@ end
 --*****************************************************************************
 function Astrolabe:GetUnitPosition( unit, noMapChange )
 	local x, y = GetPlayerMapPosition(unit);
+    if x == nil then
+        x, y = 0, 0 
+    end
+    
 	if ( x <= 0 and y <= 0 ) then
 		if ( noMapChange ) then
 			-- no valid position on the current map, and we aren't allowed
@@ -353,6 +357,10 @@ function Astrolabe:GetUnitPosition( unit, noMapChange )
 		local lastMapID, lastFloor = GetCurrentMapAreaID(), GetCurrentMapDungeonLevel();
 		LuaUtils:DugiSetMapToCurrentZone();
 		x, y = GetPlayerMapPosition(unit);
+        if x == nil then
+            x, y = 0, 0 
+        end
+        
 		if ( x <= 0 and y <= 0 ) then
 			-- attempt to zoom out once - logic copied from WorldMapZoomOutButton_OnClick()
 				if ( ZoomOut() ) then
@@ -363,6 +371,10 @@ function Astrolabe:GetUnitPosition( unit, noMapChange )
 					SetMapZoom(WORLDMAP_WORLD_ID);
 				end
 			x, y = GetPlayerMapPosition(unit);
+            if x == nil then
+                x, y = 0, 0 
+            end
+            
 			if ( x <= 0 and y <= 0 ) then
 				-- we are in an instance without a map or otherwise off map
 				return;
@@ -389,6 +401,10 @@ end
 --*****************************************************************************
 function Astrolabe:GetCurrentPlayerPosition()
 	local x, y = GetPlayerMapPosition("player");
+    if x == nil then
+        x, y = 0, 0 
+    end
+    
 	if ( x <= 0 and y <= 0 ) then
 		if ( self.WorldMapVisible ) then
 			-- we know there is a visible world map, so don't cause 
@@ -397,6 +413,10 @@ function Astrolabe:GetCurrentPlayerPosition()
 		end
 		LuaUtils:DugiSetMapToCurrentZone();
 		x, y = GetPlayerMapPosition("player");
+        if x == nil then
+            x, y = 0, 0 
+        end
+        
 		if ( x <= 0 and y <= 0 ) then
 			-- attempt to zoom out once - logic copied from WorldMapZoomOutButton_OnClick()
 				if ( ZoomOut() ) then
@@ -407,6 +427,10 @@ function Astrolabe:GetCurrentPlayerPosition()
 					SetMapZoom(WORLDMAP_WORLD_ID);
 				end
 			x, y = GetPlayerMapPosition("player");
+            if x == nil then
+                x, y = 0, 0 
+            end
+            
 			if ( x <= 0 and y <= 0 ) then
 				-- we are in an instance without a map or otherwise off map
 				return;
@@ -485,7 +509,7 @@ end
 local minimapRotationEnabled = false;
 local minimapShape = false;
 
-local minimapRotationOffset = GetPlayerFacing();
+local minimapRotationOffset = GetPlayerFacing_dugi();
 
 
 local function placeIconOnMinimap( minimap, minimapZoom, mapWidth, mapHeight, icon, dist, xDist, yDist, edgeRangeMultiplier )
@@ -606,7 +630,7 @@ function Astrolabe:PlaceIconOnMinimap( icon, mapID, mapFloor, xPos, yPos )
 	
 	minimapRotationEnabled = GetCVar("rotateMinimap") ~= "0"
 	if ( minimapRotationEnabled ) then
-		minimapRotationOffset = GetPlayerFacing();
+		minimapRotationOffset = GetPlayerFacing_dugi();
 	end
 	
 	-- check Minimap Shape
@@ -715,7 +739,7 @@ do
 				
 				minimapRotationEnabled = GetCVar("rotateMinimap") ~= "0"
 				if ( minimapRotationEnabled ) then
-					minimapRotationOffset = GetPlayerFacing();
+					minimapRotationOffset = GetPlayerFacing_dugi();
 				end
 				
 				-- check current frame rate
@@ -843,7 +867,7 @@ do
 				local Minimap = Astrolabe.Minimap;
 				minimapRotationEnabled = GetCVar("rotateMinimap") ~= "0"
 				if ( minimapRotationEnabled ) then
-					minimapRotationOffset = GetPlayerFacing();
+					minimapRotationOffset = GetPlayerFacing_dugi();
 				end
 				
 				-- check current frame rate

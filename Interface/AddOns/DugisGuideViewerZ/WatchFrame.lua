@@ -86,14 +86,14 @@ function WF:Initialize()
 		if GetNumTrackedAchievements() > 0 then 
 			return ACHIEVEMENT_TRACKER_MODULE.lastBlock or (IsAnchoredOn() and DGV.SmallFrame.Frame)
 		elseif C_Scenario.GetInfo() then 
-            if ObjectiveTrackerBlocksFrame.currentBlock == nil then
+            if ObjectiveTrackerBlocksFrame.QuestHeader.module.lastBlock == nil then
                 return ACHIEVEMENT_TRACKER_MODULE.lastBlock or (IsAnchoredOn() and DGV.SmallFrame.Frame)
             end
-			return ObjectiveTrackerBlocksFrame.currentBlock or (IsAnchoredOn() and DGV.SmallFrame.Frame)
+			return ObjectiveTrackerBlocksFrame.QuestHeader.module.lastBlock or (IsAnchoredOn() and DGV.SmallFrame.Frame)
         elseif GetLastWorldQuestBlock() then
             return GetLastWorldQuestBlock()
         else
-			return BONUS_OBJECTIVE_TRACKER_MODULE.lastBlock or ObjectiveTrackerBlocksFrame.currentBlock or (IsAnchoredOn() and DGV.SmallFrame.Frame) or ObjectiveTrackerBlocksFrame
+			return BONUS_OBJECTIVE_TRACKER_MODULE.lastBlock or ObjectiveTrackerBlocksFrame.QuestHeader.module.lastBlock or (IsAnchoredOn() and DGV.SmallFrame.Frame) or ObjectiveTrackerBlocksFrame
 		end
 	end
 	

@@ -7,6 +7,7 @@ local QuestPOIFrame
 local astrolabe = DongleStub("Astrolabe-1.0-Dugi")
 local lastWaypoint
 local scanning 
+local IsLegionPatch = select(4, GetBuildInfo()) >= 70100
 
 function QuestPOI:Initialize()
 	local L = DugisLocals
@@ -131,9 +132,16 @@ function QuestPOI:Initialize()
 		
 		local worldQuestID
 		
-		if QuestMapFrame_IsQuestWorldQuest(trackedQuestID) then 
-			worldQuestID = trackedQuestID
-			trackedQuestID = nil
+		if IsLegionPatch then 
+			if QuestUtils_IsQuestWorldQuest(trackedQuestID) then 
+				worldQuestID = trackedQuestID
+				trackedQuestID = nil
+			end			
+		else
+			if QuestMapFrame_IsQuestWorldQuest(trackedQuestID) then 
+				worldQuestID = trackedQuestID
+				trackedQuestID = nil
+			end					
 		end
 
 		if trackedQuestID then
@@ -265,9 +273,15 @@ hooksecurefunc("WorldMap_SetupWorldQuestButton", function(button, worldQuestType
     
         button:HookScript("OnClick", function(self)
             if self.questID then
-                if QuestMapFrame_IsQuestWorldQuest(self.questID) then
-                    self.worldQuest = true
-                end
+				if IsLegionPatch then 
+					if QuestUtils_IsQuestWorldQuest(self.questID) then
+						self.worldQuest = true
+					end
+				else
+					if QuestMapFrame_IsQuestWorldQuest(self.questID) then
+						self.worldQuest = true
+					end								
+				end
                 onPOIClick(self)
             end
         end)

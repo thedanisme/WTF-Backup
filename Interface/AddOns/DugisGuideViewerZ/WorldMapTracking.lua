@@ -789,6 +789,10 @@ function WMT:Initialize()
     DugisWaypointTooltip.updateModel = function()
         npcId = DugisWaypointTooltip.npcId
     
+        if DGV:UserSetting(DGV_HIDE_MODELS_IN_WORLDMAP) then
+            return
+        end
+    
 		if not npcId then return end
         
         if (DugisWaypointTooltip:GetWidth() < 160) then

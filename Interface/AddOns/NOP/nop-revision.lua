@@ -4,6 +4,15 @@
 [*]Hook for skinning addons.[/list]
 
 ]]
+--[[Revisions: 06.20
+
+06.20 27.10.2016
+
+[list][*]Added Arcane Tablet of Falanaar.
+[*]Added Legion reputation items. But be warned addon doesn't check actual standing so it will offer items even at exalted standing. It need to blacklist manually or just use session skip.
+[*]Legion patch 7.1 compatible.[/list]
+
+]]
 --[[Revisions: 06.18
 
 06.18 20.10.2016

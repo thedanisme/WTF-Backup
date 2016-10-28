@@ -1,4 +1,4 @@
-## Interface: 70000
+## Interface: 70100
 ## Title: Personal Loot Helper
 ## Version: 1.16
 ## SavedVariables: PLH_NOTIFY_MODE, PLH_INCLUDE_BOE, PLH_MIN_QUALITY, PLH_MIN_ILVL, PLH_DEBUG, PLH_CURRENT_SPEC_ONLY

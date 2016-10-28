@@ -212,9 +212,9 @@ K Demons |QID|44463.2| |N|Kill 5 (npc:100993) in {Stormwind Keep} (86.15, 34.95)
 T Demons Among Them |QID|44463| |N|(npc:100973), in {Stormwind Keep} (85.76, 31.92)| |Z|301 0| |NPC|100973| |FAC|Alliance|
 A A Weapon of the Alliance |QID|44473| |N|(npc:100973) (79.93, 38.71)| |Z|301 0| |NPC|100973| |FAC|Alliance|
 T A Weapon of the Alliance |QID|44473| |N|(npc:101004) in {Lion's Rest} (40.27, 77.76)| |Z|301 0| |NPC|101004| |FAC|Alliance|
-A Protect the Home Front |QID|40661| |N|(npc:101004) in {Lion's Rest} (40.30, 77.79)| |Z|301 0| |NPC|101004| |FAC|Alliance|
-C Protect the Home Front |QID|40661| |N|Open your map to find an active Legion Invasion in Kalimdor or Eastern Kingdoms. Go to the invasion site and stop the demons!| |Z|301 0| |NPC|101004| |FAC|Alliance|
-T Protect the Home Front |QID|40661| |N|(npc:101004) in {Lion's Rest} (40.30, 77.79)| |Z|301 0| |NPC|101004| |FAC|Alliance|
+--A Protect the Home Front |QID|40661| |N|(npc:101004) in {Lion's Rest} (40.30, 77.79)| |Z|301 0| |NPC|101004| |FAC|Alliance|
+--C Protect the Home Front |QID|40661| |N|Open your map to find an active Legion Invasion in Kalimdor or Eastern Kingdoms. Go to the invasion site and stop the demons!| |Z|301 0| |NPC|101004| |FAC|Alliance|
+--T Protect the Home Front |QID|40661| |N|(npc:101004) in {Lion's Rest} (40.30, 77.79)| |Z|301 0| |NPC|101004| |FAC|Alliance|
 
 A Illidari, We Are Leaving |QID|39690| |N|(npc:97978) in {Vault of the Wardens} (85.72, 84.11)| |Z|1032 3| |NPC|97978| |FAC|Horde|
 T Illidari, We Are Leaving |QID|39690| |N|(npc:97978) in {Vault of the Wardens} (85.72, 84.11)| |Z|1032 3| |NPC|97978| |FAC|Horde|
@@ -231,12 +231,11 @@ K Demons|QID|40983.2| |N|Kill 12 Demons in {The Dranosh'ar Blockade} (46.61, 15.
 T Demons Among Them |QID|40983| |N|(npc:101035) in {The Dranosh'ar Blockade} (45.67, 15.95)| |Z|4 0| |NPC|101035| |FAC|Horde|
 A A Weapon of the Horde |QID|41002| |N|(npc:101035) in {The Dranosh'ar Blockade} (45.67, 15.95)| |Z|4 0| |NPC|101035| |FAC|Horde|
 T A Weapon of the Horde |QID|41002| |N|(npc:95234) in {Valley of Strength} (52.63, 56.17)| |Z|321 1| |NPC|95234| |FAC|Horde|
-A Protect the Home Front |QID|44092| |N|(npc:95234) in {Valley of Strength} (52.63, 56.17)| |Z|321 1| |NPC|95234| |FAC|Horde|
-C Protect the Home Front |QID|44092| |N|Open your map to find an active Legion Invasion in Kalimdor or Eastern Kingdoms. Go to the invasion site and stop the demons!| |Z|301 0| |NPC|101004| |FAC|Alliance|
-T Protect the Home Front |QID|44092| |N|(npc:95234) in {Valley of Strength} (52.63, 56.17)| |Z|321 1| |NPC|95234| |FAC|Horde|
+--A Protect the Home Front |QID|44092| |N|(npc:95234) in {Valley of Strength} (52.63, 56.17)| |Z|321 1| |NPC|95234| |FAC|Horde|
+--C Protect the Home Front |QID|44092| |N|Open your map to find an active Legion Invasion in Kalimdor or Eastern Kingdoms. Go to the invasion site and stop the demons!| |Z|301 0| |NPC|101004| |FAC|Alliance|
+--T Protect the Home Front |QID|44092| |N|(npc:95234) in {Valley of Strength} (52.63, 56.17)| |Z|321 1| |NPC|95234| |FAC|Horde|
 
-N Guide Complete 
---|N|Tick to continue to next guide<br/><b>(guide:"Demon Hunter Campaign (100)")|
+N Guide Complete |N|Tick to continue to next guide<br/><b>(guide:"Class Campaign (98-110)")|
 
 ]]
 end, {image = "mardum.tga", description = [[]]})	end

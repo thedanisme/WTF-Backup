@@ -211,6 +211,13 @@ function Taxi:Initialize()
 				pass = pass and select(2, UnitClass("player"))==req
 			elseif reqType=="map" then
 				pass = pass and pm==tonumber(req)
+			elseif reqType=="spell" then
+				local spellName = GetSpellInfo(req)
+				if spellName then 
+					pass = GetSpellBookItemInfo(spellName)
+				else 
+					pass = false
+				end				
 			end
 		end
 		if pass then return ... end
@@ -718,6 +725,7 @@ function Taxi:Initialize()
 	end
 
 	function RouteBuilders.FlightHop:Build(continent, npc1, npc2)
+		if not npc1 or not npc2 then return end	
 		local fullData = TaxiData:GetFullData()
 		local npcTbl1, npcTbl2 = fullData[continent][npc1], fullData[continent][npc2]
 		local npc1x,npc1y = DGV:UnpackXY(npcTbl1.coord)
@@ -1446,7 +1454,7 @@ end
 	end
 	
 	function DGV:UNIT_SPELLCAST_START(event, unit, spellName, spellRank, lineIdCounter, spellId)
-		if unit=="player" and (spellId==126892 or spellId==50977) then
+		if unit=="player" and (spellId==126892 or spellId==50977 or spellId==193753) then
 			if not DugisGuideUser.ZenPilgrimageReturnPoint then DugisGuideUser.ZenPilgrimageReturnPoint = {} end
 			pt = DugisGuideUser.ZenPilgrimageReturnPoint
 			pt.m, pt.f, pt.x, pt.y = DGV:GetPlayerMapPositionDisruptive()
@@ -1468,13 +1476,14 @@ end
 		local currentFloor = GetCurrentMapDungeonLevel()
 		local subzone = GetSubZoneText()
 		local ebonHold = DugisGuideViewer:localize("Acherus: The Ebon Hold", "ZONE")
- 		local inClassHall = subzone == ebonHold or (currentMap == 1021 and (currentFloor == 1 or currentFloor == 2))
+ 		local inClassHall = subzone == ebonHold or (currentMap == 1021 and (currentFloor == 1 or currentFloor == 2)) or currentMap == 1048
 
 		if (class == "MONK" and not UnitBuff("player", GetSpellInfo(126895)))
 			or not DugisGuideUser.ZenPilgrimageReturnPoint 
 			or not DugisGuideUser.ZenPilgrimageReturnPoint.m 
-			or class == "DEATHKNIGHT" and not inClassHall
-			or (class ~= "MONK" and class ~= "DEATHKNIGHT")
+			or (class == "DEATHKNIGHT" and not inClassHall)
+			or (class == "DRUID" and not inClassHall)
+			or (class ~= "MONK" and class ~= "DEATHKNIGHT" and class ~= "DRUID")
 		then return end
 		
 		local route = GetCreateRoute(self, best, parentRoute)
@@ -1485,6 +1494,8 @@ end
 			route.spell = 126895
 		elseif class =="DEATHKNIGHT" then
 			route.spell = 50977
+		elseif class =="DRUID" then
+			route.spell = 193753
 		end
 		
 		route.tail = Taxi:GetBestRoute(route,

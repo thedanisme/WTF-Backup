@@ -7,13 +7,22 @@ function Guide:Initialize()
             local objectData = DGV.NPCJournalFrame:GetBossDataById(item)
             local title = objectData.name
             
-            if objectData.categoryName ==  "Bosses" then
-                objectData.categoryName = GetMapNameByID(tonumber(BossObjects[item].MAPID))
+            --Automatically generated categories
+            if objectData.category ==  "Auto" then
+                objectData.category = GetMapNameByID(tonumber(BossObjects[item].MAPID))
+            end
+            
+            local category
+            
+            if type(objectData.category) == "table" then
+                category = objectData.category
+            else
+                category = "|cffffd200" .. objectData.category .. "|r " 
             end
              
             if not objectData.alternative then
                 DugisGuideViewer:RegisterGuide(
-                "|cffffd200" .. objectData.categoryName .. "|r " 
+                category
                 , "  " .. title  , "" , UnitFactionGroup("Player"), select(2, UnitClass("player")), "Bosses", nil
                 , function() return [[T |QID|0|]] end, {objectId = item})
             end

@@ -1,7 +1,7 @@
-## Interface: 70000
+## Interface: 70100
 ## Title: New |cffffff88Openables|r
 ## Author: PeknaMrcha alias EduardCurse alias Edik
-## Version: 06.18 20.10.2016
+## Version: 06.20 27.10.2016
 ## Notes: Popup Button and keybind for opening or using items in your bags. Adopted idea by Driizt@BB_EU. Quest Button Bar idea and code by Nickenyfiken and ZidayaXis
 ## SavedVariables: NewOpenablesProfile
 

@@ -138,7 +138,7 @@ A I Sunk Your Battleship |QID|39601| |N|(npc:93822) in {Lunarfall Shipyard} (28.
 R Lion's Watch |QID|39601| |N|Travel to {Lion's Watch} (58.4,60.5)| |Z|945|
 N Find Vindicator Krethos |QID|39601.1| |N|(npc:90974) in {Lion's Watch} (58.4,60.5)| |Z|945| |NPC|90974|
 N Hand of the Prophet (Honored) |QID|39601.2| |N|Earn Honored status with (fac:1847). Use the "Tanaan Jungle (Daily)" guide to raise your reputation|
-B (item:127269) |QID|39601.3| |N|Purchase (item:127269) from (npc:90974) in {Lion's Watch} (58.4,60.5)| |Z|945| |NPC|96301| |L|127269|
+B (item:127269) |QID|39601.3| |N|Purchase (item:127269) from (npc:90974) in {Lion's Watch} (58.4,60.5)| |Z|945| |NPC|90974| |L|127269|
 N Learn Ship Blueprint: Battleship |QID|39601.3| |N|Use (item:127269) to learn it| |U|127269|
 T I Sunk Your Battleship |QID|39601| |N|(npc:90974) in {Lion's Watch} (58.4,60.5)| |Z|945| |NPC|90974|
 

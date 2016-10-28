@@ -2049,7 +2049,7 @@ function Guides:Initialize()
 			guideIndex = DGU.CurrentQuestIndex
 		end		
 		
-		if indx == guideIndex and (action == "R" or action == "F" or action == "b" or action == "H") then
+		if indx == guideIndex and (action == "R" or action == "F" or action == "b" or action == "H") and not DGV.tags[DGU.CurrentQuestIndex]:match("(|REACH|)") then
 			local subzonetext = string.trim(GetSubZoneText()) -- returns blank if no subzone
 			local zonetext = GetZoneText() 
 			local quest = self:RemoveParen(self.quests1L[indx])
@@ -2061,7 +2061,7 @@ function Guides:Initialize()
 
 	local function CheckForWaypointLocation(indx)
 		if CurrentTitle ~= nil then 
-			if indx == DGU.CurrentQuestIndex and DGV.tags[DGU.CurrentQuestIndex]:match("(|REACH|)") then 
+			if DGU.CurrentQuestIndex and indx == DGU.CurrentQuestIndex and DGV.tags[DGU.CurrentQuestIndex] and DGV.tags[DGU.CurrentQuestIndex]:match("(|REACH|)") then 
 				if DGV.DugisArrow.waypoints and #DGV.DugisArrow.waypoints==1 and 
 					DGV.DugisArrow:getFirstWaypoint()==DGV.DugisArrow:DidPlayerReachWaypoint() then
 					return true
@@ -3014,7 +3014,7 @@ function Guides:Initialize()
 	end
 
 	function DGV:Tooltip_OnEnter(self, event, ...)
-		
+      
 			local name = self:GetName()
 			local title = _G[self:GetName().."Name"]:GetText()
 			local text = _G[self:GetName().."Desc"]:GetText()
@@ -4072,10 +4072,12 @@ function Guides:Initialize()
         
         --Categories Level 2
         if currentHeadingL2 then
-            local currentL2Node = headerL2Title2Node[currentHeadingL2]
+            local key = currentHeading .. currentHeadingL2
+            
+            local currentL2Node = headerL2Title2Node[key]
             if not currentL2Node then
                 currentL2Node = {name=currentHeadingL2, nodes={}, data={}}
-                headerL2Title2Node[currentHeadingL2] = currentL2Node
+                headerL2Title2Node[key] = currentL2Node
                 currentNode.nodes[#currentNode.nodes + 1] = currentL2Node
             end
             
@@ -4084,10 +4086,12 @@ function Guides:Initialize()
         
         --Categories Level 3
         if currentHeadingL3 then
-            local currentL3Node = headerL3Title2Node[currentHeadingL3]
+            local key = currentHeading .. currentHeadingL2 .. currentHeadingL3
+        
+            local currentL3Node = headerL3Title2Node[key]
             if not currentL3Node then
                 currentL3Node = {name=currentHeadingL3, nodes={}, data={}}
-                headerL3Title2Node[currentHeadingL3] = currentL3Node
+                headerL3Title2Node[key] = currentL3Node
                 currentNode.nodes[#currentNode.nodes + 1] = currentL3Node
             end
             

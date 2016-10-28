@@ -31,8 +31,8 @@ N Find Clue #1 |QID|38213.1| |N|Find Clue #1 in {Ruins of Kra'nak}. It's a scrol
 N Find Clue #2 |QID|38213.2| |N|Find Clue #2 in {Ruins of Kra'nak}. Click on the small shrine. (20.33, 35.90)| |Z|945| |PRE|37687|
 N Find Clue #3 |QID|38213.3| |N|Find Clue #3 in {Ruins of Kra'nak}. Click on the inscribe ruin. (18.79, 39.75)| |Z|945| |PRE|37687|
 N Find Final Clue |QID|38213.4| |N|Find the Tome of Shadows book on the table for the final clue in {Ruins of Kra'nak} (15.65, 45.08)| |Z|945| |PRE|37687|
-T Get a Clue |QID|38213| |N|Tome of Shadows in {Ruins of Kra'nak} (16.09, 44.23)| |Z|945| |NPC|240317| |PRE|37687|
-A Dark Ascension |QID|38223| |N|Tome of Shadows in {Ruins of Kra'nak} (16.09, 44.23)| |Z|945| |NPC|240317| |PRE|37687|
+T Get a Clue |QID|38213| |N|Tome of Shadows in {Ruins of Kra'nak} (16.09, 44.23)| |Z|945| |PRE|37687|
+A Dark Ascension |QID|38223| |N|Tome of Shadows in {Ruins of Kra'nak} (16.09, 44.23)| |Z|945| |PRE|37687|
 N Speak to (npc:91291), |QID|38223.1| |N|Speak to (npc:91291) to start the event in {Ruins of Kra'nak} (16.09, 44.33)| |Z|945| |PRE|37687|
 N Protect (npc:91291) |QID|38223.2| |N|Protect (npc:91291) from the waves of NPCs in {Ruins of Kra'nak} (16.06, 44.77)| |Z|945| |NPC|94467, 94469| |PRE|37687|
 T Dark Ascension |QID|38223| |N|(npc:91291) in {Ruins of Kra'nak} (16.11, 44.38)| |Z|945| |NPC|91291| |PRE|37687|

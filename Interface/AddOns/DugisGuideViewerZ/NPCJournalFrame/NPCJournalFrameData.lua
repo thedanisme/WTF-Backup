@@ -2,7 +2,7 @@ local NPCDataModule = DugisGuideViewer:RegisterModule("NPCDataModule")
 function NPCDataModule:Initialize()
 	DugisGuideViewer:RegisterData("NPCData", function()
 	return [[
-|CAT|(mapid:30)|
+|CAT|(mapid:14)->(mapid:30)| -- Elwynn Forest
 |NPCID|62| |LVL|Level 4| |ABIL|6136,20793,12544| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:30) (47.60, 32.20, 30, "(npc:62)")|
 |NPCID|50916| |LVL|Level 5| |ABIL|32919| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:30) (54.00, 61.00, 30, "(npc:50916)")|
 |NPCID|79| |LVL|Level 6| |ABIL|9128| |NDIS|6147,1913| |ST|No strategy required.<br/><br/>Found in (map:30) (38.60, 83.60, 30, "(npc:79)")|
@@ -15,14 +15,14 @@ function NPCDataModule:Initialize()
 |NPCID|100| |LVL|Level 9| |ABIL| | |NDIS|38513| |ST|No strategy required.<br/><br/>Found in (map:30) (27.60, 88.00, 30, "(npc:100)")|
 |NPCID|471| |LVL|Level 9| |ABIL|11918,12023| |NDIS|6148| |ST|No strategy required.<br/><br/>Found in (map:30) (61.80, 47.80, 30, "(npc:471)")|
 |NPCID|472| |LVL|Level 9| |ABIL|13730,3238| |NDIS|3233| |ST|No strategy required.<br/><br/>Found in (map:30) (68.00, 44.60, 30, "(npc:472)")|
-|CAT|(mapid:27)|
+|CAT|(mapid:14)->(mapid:27)| -- Dun Morogh
 |NPCID|1130| |LVL|Level 8| |ABIL|3130,3147| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:27) (67.80, 59.00, 27, "(npc:1130)")|
 |NPCID|8503| |LVL|Level 4| |ABIL|20793| |NDIS|10553,10554| |ST|No strategy required.<br/><br/>Found in (map:27) (34.20, 41.60, 27, "(npc:8503)")|
 |NPCID|1132| |LVL|Level 5| |ABIL|3150| |NDIS|3224| |ST|No strategy required.<br/><br/>Found in (map:27) (44.60, 38.00, 27, "(npc:1132)")|
 |NPCID|1260| |LVL|Level 6| |ABIL|77808,18501| |NDIS|2546| |ST|No strategy required.<br/><br/>Found in (map:27) (30.40, 48.40, 27, "(npc:1260)")|
 |NPCID|1119| |LVL|Level 9| |ABIL|18501| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:27) (79.40, 50.20, 27, "(npc:1119)")|
 |NPCID|1137| |LVL|Level 7| |ABIL|3129| |NDIS|3008| |ST|No strategy required.<br/><br/>Found in (map:27) (46.40, 47.60, 27, "(npc:1137)")|
-|CAT|(mapid:9)|
+|CAT|(mapid:13)->(mapid:9)| -- Mulgore
 |NPCID|3058| |LVL|Level 6| |ABIL|6268,81140| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:9) (48.20, 67.80, 9, "(npc:3058)")|
 |NPCID|43720| |LVL|Level 4| |ABIL|81691| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:9) (43.00, 89.20, 9, "(npc:43720)")|
 |NPCID|5786| |LVL|Level 5| |ABIL|8599,81705| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:9) (53.60, 71.60, 9, "(npc:5786)")|
@@ -31,13 +31,13 @@ function NPCDataModule:Initialize()
 |NPCID|43613| |LVL|Level 8| |ABIL|79857,79854,79849,79848| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:9) (33.80, 37.00, 9, "(npc:43613)")|
 |NPCID|5807| |LVL|Level 9| |ABIL|75002| |NDIS|17922| |ST|No strategy required.<br/><br/>Found in (map:9) (54.60, 20.80, 9, "(npc:5807)")|
 |NPCID|5785| |LVL|Level 10| |ABIL|81181,81707,32914| |NDIS|4772| |ST|No strategy required.<br/><br/>Found in (map:9) (32.20, 24.40, 9, "(npc:5785)")|
-|CAT|(mapid:4)|
+|CAT|(mapid:13)->(mapid:4)| -- Durotar
 |NPCID|5826| |LVL|Level 6| |ABIL|79927,80117| |NDIS|2555| |ST|No strategy required.<br/><br/>Found in (map:4) (47.20, 49.60, 4, "(npc:5826)")|
 |NPCID|5824| |LVL|Level 7| |ABIL|77558,79733,8599,5280| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:4) (38.60, 53.60, 4, "(npc:5824)")|
 |NPCID|5809| |LVL|Level 8| |ABIL|78894,79726| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:4) (59.60, 58.80, 4, "(npc:5809)")|
 |NPCID|5823| |LVL|Level 9| |ABIL|2649,79840,79607| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:4) (38.60, 47.60, 4, "(npc:5823)")|
 |NPCID|5822| |LVL|Level 10| |ABIL|79934,79933,30842| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:4) (52.60, 08.80, 4, "(npc:5822)")|
-|CAT|(mapid:20)|
+|CAT|(mapid:14)->(mapid:20)| --Tirisfal Glade
 |NPCID|50328| |LVL|Level 5| |ABIL| | |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:161) (61.60, 78.20, 161, "(npc:50328)")|
 |NPCID|1531| |LVL|Level 6| |ABIL|7713| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:20) (53.60, 48.40, 20, "(npc:1531)")|
 |NPCID|1910| |LVL|Level 6| |ABIL|11824| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:20) (35.80, 43.00, 20, "(npc:1910)")|
@@ -53,7 +53,7 @@ function NPCDataModule:Initialize()
 |NPCID|50908| |LVL|Level 9| |ABIL|75002,5781| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:20) (42.80, 28.80, 20, "(npc:50908)")|
 |NPCID|10359| |LVL|Level 10| |ABIL|3583| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:20) (84.60, 49.40, 20, "(npc:10359)")|
 |NPCID|10358| |LVL|Level 11| |ABIL|13901,11975,7068| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:20) (77.00, 59.80, 20, "(npc:10358)")|
-|CAT|(mapid:41)|
+|CAT|(mapid:13)->(mapid:41)| --Teldrassil
 |NPCID|14428| |LVL|Level 7| |ABIL|15971| |NDIS|18611| |ST|No strategy required.<br/><br/>Found in (map:41) (65.60, 51.40, 41, "(npc:14428)")|
 |NPCID|14432| |LVL|Level 7| |ABIL|11976| |NDIS|18610| |ST|No strategy required.<br/><br/>Found in (map:41) (53.00, 44.60, 41, "(npc:14432)")|
 |NPCID|3535| |LVL|Level 8| |ABIL| | |NDIS|5179| |ST|No strategy required.<br/><br/>Found in (map:41) (52.00, 63.80, 41, "(npc:3535)")|
@@ -61,7 +61,7 @@ function NPCDataModule:Initialize()
 |NPCID|14430| |LVL|Level 8| |ABIL|3604| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:41) (59.60, 65.60, 41, "(npc:14430)")|
 |NPCID|2162| |LVL|Level 9| |ABIL|8599| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:41) (47.20, 45.60, 41, "(npc:2162)")|
 |NPCID|14431| |LVL|Level 9| |ABIL|3589| |NDIS|18612| |ST|No strategy required.<br/><br/>Found in (map:41) (37.60, 30.80, 41, "(npc:14431)")|
-|CAT|(mapid:39)|
+|CAT|(mapid:14)->(mapid:39)| --Westfall
 |NPCID|462| |LVL|Level 10| |ABIL|2649,13443| |NDIS|4454| |ST|No strategy required.<br/><br/>Found in (map:39) (57.20, 20.60, 39, "(npc:462)")|
 |NPCID|519| |LVL|Level 10| |ABIL|34828,79892,79831| |NDIS|6180| |ST|No strategy required.<br/><br/>Found in (map:39) (56.60, 10.60, 39, "(npc:519)")|
 |NPCID|1424| |LVL|Level 11| |ABIL|80382,6016| |NDIS|6206| |ST|No strategy required.<br/><br/>Found in (map:39) (46.20, 18.60, 39, "(npc:1424)")|
@@ -69,7 +69,7 @@ function NPCDataModule:Initialize()
 |NPCID|573| |LVL|Level 12| |ABIL|80572,7342| |NDIS|933| |ST|No strategy required.<br/><br/>Found in (map:39) (37.60, 53.00, 39, "(npc:573)")|
 |NPCID|506| |LVL|Level 13| |ABIL|79853,3136| |NDIS|2204| |ST|No strategy required.<br/><br/>Found in (map:39) (65.00, 75.60, 39, "(npc:506)")|
 |NPCID|520| |LVL|Level 14| |ABIL|9080,6016,11976| |NDIS|6179| |ST|No strategy required.<br/><br/>Found in (map:39) (34.80, 85.60, 39, "(npc:520)")|
-|CAT|(mapid:21)|
+|CAT|(mapid:14)->(mapid:21)| --Silverpine Forest
 |NPCID|12431| |LVL|Level 10| |ABIL|8599,75002,13443| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:21) (57.80, 16.80, 21, "(npc:12431)")|
 |NPCID|50330| |LVL|Level 10| |ABIL|83001| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:21) (60.60, 05.40, 21, "(npc:50330)")|
 |NPCID|46981| |LVL|Level 11| |ABIL|28993,3485| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:21) (53.40, 24.80, 21, "(npc:1983)")|
@@ -90,10 +90,10 @@ function NPCDataModule:Initialize()
 |NPCID|45398| |LVL|Level 14| |ABIL|80146,81173,84863| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:35) (35.60, 15.60, 35, "(npc:45398)")|
 |NPCID|45401| |LVL|Level 14| |ABIL|78542,32011,79831| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:35) (45.20, 37.40, 35, "(npc:45401)")|
 |NPCID|2476| |LVL|Level 15| |ABIL|54663,81173,3427| |NDIS|3563| |ST|No strategy required.<br/><br/>Found in (map:35) (53.00, 61.40, 35, "(npc:2476)")|
-|CAT|(mapid:462)|
+|CAT|(mapid:14)->(mapid:462)| --Eversong Woods
 |NPCID|16855| |LVL|Level 10| |ABIL| | |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:462) (69.80, 78.00, 462, "(npc:16855)")|
 |NPCID|16854| |LVL|Level 11| |ABIL| | |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:462) (70.20, 50.60, 462, "(npc:16854)")|
-|CAT|(mapid:35)|
+|CAT|(mapid:14)->(mapid:35)| --Loch Modan
 |NPCID|45369| |LVL|Level 10| |ABIL|37591,13340,80576| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:35) (40.40, 65.00, 35, "(npc:45369)")|
 |NPCID|1399| |LVL|Level 11| |ABIL|79927,13281,39591,84857| |NDIS|2241| |ST|No strategy required.<br/><br/>Found in (map:35) (30.00, 75.60, 35, "(npc:1399)")|
 |NPCID|1398| |LVL|Level 16| |ABIL|82625,80983,8599| |NDIS|1215| |ST|No strategy required.<br/><br/>Found in (map:35) (70.60, 66.00, 35, "(npc:1398)")|
@@ -104,14 +104,14 @@ function NPCDataModule:Initialize()
 |NPCID|45399| |LVL|Level 18| |ABIL|80572,84878,84880| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:35) (72.20, 78.00, 35, "(npc:45399)")|
 |NPCID|14267| |LVL|Level 19| |ABIL|8599,84709| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:35) (73.20, 26.80, 35, "(npc:14267)")|
 |NPCID|45404| |LVL|Level 19| |ABIL|15039,79886,82641| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:35) (50.00, 24.00, 35, "(npc:45404)")|
-|CAT|(mapid:181)|
+|CAT|(mapid:13)->(mapid:181)| --Azshara
 |NPCID|6118| |LVL|Level 12| |ABIL|21007| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:181) (34.60, 71.60, 181, "(npc:6118)")|
 |NPCID|6650| |LVL|Level 13| |ABIL|15284,18812,12057| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:181) (63.20, 79.20, 181, "(npc:6650)")|
 |NPCID|6651| |LVL|Level 15| |ABIL|12747,13584| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:181) (33.00, 32.60, 181, "(npc:6651)")|
 |NPCID|6649| |LVL|Level 17| |ABIL|15495,20299,15547| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:181) (44.00, 59.80, 181, "(npc:6649)")|
 |NPCID|6648| |LVL|Level 18| |ABIL|40505,13445,5708| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:181) (45.00, 27.80, 181, "(npc:6648)")|
 |NPCID|8660| |LVL|Level 19| |ABIL|21549,15797| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:181) (14.00, 50.80, 181, "(npc:8660)")|
-|CAT|(mapid:42)|
+|CAT|(mapid:13)->(mapid:42)| --Darkshore
 |NPCID|7016| |LVL|Level 12| |ABIL|12549,11428,6660| |NDIS|6333| |ST|No strategy required.<br/><br/>Found in (map:42) (48.60, 41.60, 42, "(npc:7016)")|
 |NPCID|2175| |LVL|Level 13| |ABIL|16827,17227,22766| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:42) (41.60, 36.00, 42, "(npc:2175)")|
 |NPCID|2172| |LVL|Level 14| |ABIL|7272,6607| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:42) (40.80, 48.60, 42, "(npc:2172)")|
@@ -121,7 +121,7 @@ function NPCDataModule:Initialize()
 |NPCID|2186| |LVL|Level 19| |ABIL|6016,3391| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:42) (44.60, 83.00, 42, "(npc:2186)")|
 |NPCID|2192| |LVL|Level 19| |ABIL|5915,11969,20793| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:42) (40.00, 83.20, 42, "(npc:2192)")|
 |NPCID|7017| |LVL|Level 19| |ABIL|13586,12057| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:42) (34.20, 83.60, 42, "(npc:7017)")|
-|CAT|(mapid:11)|
+|CAT|(mapid:13)->(mapid:11)| --Northern Barrens
 |NPCID|3270| |LVL|Level 13| |ABIL|75068,39591| |NDIS|4768,4771| |ST|No strategy required.<br/><br/>Found in (map:11) (56.40, 51.60, 11, "(npc:3270)")|
 |NPCID|5865| |LVL|Level 13| |ABIL|8210,93435| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:11) (45.40, 32.80, 11, "(npc:5865)")|
 |NPCID|5837| |LVL|Level 14| |ABIL| | |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:11) (40.00, 45.60, 11, "(npc:5837)")|
@@ -136,7 +136,7 @@ function NPCDataModule:Initialize()
 |NPCID|5830| |LVL|Level 18| |ABIL|6728,6982,6535,93435| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:11) (29.60, 34.60, 11, "(npc:5830)")|
 |NPCID|5835| |LVL|Level 18| |ABIL|7165,9080,6531| |NDIS|2409,4408| |ST|No strategy required.<br/><br/>Found in (map:11) (57.60, 20.40, 11, "(npc:5835)")|
 |NPCID|3295| |LVL|Level 19| |ABIL|7279| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:11) (58.20, 19.50, 11, "(npc:3295)")|
-|CAT|(mapid:36)|
+|CAT|(mapid:14)->(mapid:36)| --Redridge Mountains
 |NPCID|616| |LVL|Level 16| |ABIL|2649,3609,744| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:36) (38.60, 34.00, 36, "(npc:616)")|
 |NPCID|14270| |LVL|Level 16| |ABIL| | |NDIS|6347| |ST|No strategy required.<br/><br/>Found in (map:36) (37.60, 42.60, 36, "(npc:14270)")|
 |NPCID|14271| |LVL|Level 16| |ABIL|8599| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:36) (30.80, 61.60, 36, "(npc:14271)")|
@@ -145,7 +145,7 @@ function NPCDataModule:Initialize()
 |NPCID|52146| |LVL|Level 18| |ABIL|3609,744| |NDIS|4409| |ST|No strategy required.<br/><br/>Found in (map:36) (65.60, 66.20, 36, "(npc:52146)")|
 |NPCID|14269| |LVL|Level 19| |ABIL|32011,39207| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:36) (71.00, 55.00, 36, "(npc:14269)")|
 |NPCID|14273| |LVL|Level 20| |ABIL| | |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:36) (55.60, 51.60, 36, "(npc:14273)")|
-|CAT|(mapid:24)|
+|CAT|(mapid:14)->(mapid:24)| --Hillsbrad Foothills
 |NPCID|47010| |LVL|Level 17| |ABIL|60903,86817| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:24) (31.60, 40.00, 24, "(npc:47010)")|
 |NPCID|50335| |LVL|Level 20| |ABIL|5708| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:24) (47.00, 66.50, 24, "(npc:50335)")|
 |NPCID|50765| |LVL|Level 20| |ABIL|744| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:24) (37.00, 68.00, 24, "(npc:50765)")|
@@ -171,11 +171,11 @@ function NPCDataModule:Initialize()
 |NPCID|2453| |LVL|Level 27| |ABIL|6742,2601,8814| |NDIS|4810,1678,6327| |ST|No strategy required.<br/><br/>Found in (map:24) (49.40, 18.40, 24, "(npc:2453)")|
 |NPCID|2258| |LVL|Level 28| |ABIL|6524,5568| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:24) (60.20, 28.80, 24, "(npc:2258)")|
 |NPCID|50770| |LVL|Level 28| |ABIL|744| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:24) (77.40, 59.00, 24, "(npc:50770)")|
-|CAT|(mapid:476)|
+|CAT|(mapid:13)->(mapid:476)| --Bloodmyst Isle
 |NPCID|22060| |LVL|Level 18| |ABIL|30981,38863,14873,34189| |NDIS|31263,31256,31264| |ST|No strategy required.<br/><br/>Found in (map:476) (35.00, 62.80, 476, "(npc:22060)")|
-|CAT|(mapid:463)|
+|CAT|(mapid:14)->(mapid:463)| --Ghostlands
 |NPCID|22062| |LVL|Level 18| |ABIL|38871,21067,38864| |NDIS|31270,31269,31268| |ST|No strategy required.<br/><br/>Found in (map:463) (34.40, 47.60, 463, "(npc:22062)")|
-|CAT|(mapid:34)|
+|CAT|(mapid:14)->(mapid:34)| --Duskwood
 |NPCID|521| |LVL|Level 20| |ABIL|75002,3150| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:34) (67.80, 28.00, 34, "(npc:521)")|
 |NPCID|45739| |LVL|Level 20| |ABIL|80983,8599,85240| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:34) (90.60, 30.60, 34, "(npc:45739)")|
 |NPCID|574| |LVL|Level 21| |ABIL|82715,85246,87080,12023,13884| |NDIS|4449| |ST|No strategy required.<br/><br/>Found in (map:34) (86.40, 47.40, 34, "(npc:574)")|
@@ -186,7 +186,7 @@ function NPCDataModule:Initialize()
 |NPCID|534| |LVL|Level 24| |ABIL|3427,3604,8715| |NDIS|4477,4476| |ST|No strategy required.<br/><br/>Found in (map:34) (74.00, 78.60, 34, "(npc:534)")|
 |NPCID|45801| |LVL|Level 24| |ABIL|81767,3107,81764| |NDIS|12990| |ST|No strategy required.<br/><br/>Found in (map:34) (27.60, 31.60, 34, "(npc:314)")|
 |NPCID|45811| |LVL|Level 25| |ABIL|6595,78509| |NDIS|7997| |ST|No strategy required.<br/><br/>Found in (map:34) (07.80, 34.20, 34, "(npc:45811)")|
-|CAT|(mapid:40)|
+|CAT|(mapid:14)->(mapid:40)| --Wetlands
 |NPCID|2090| |LVL|Level 20| |ABIL|78521,8599,78508,6268| |NDIS|5749,5750| |ST|No strategy required.<br/><br/>Found in (map:40) (48.00, 74.60, 40, "(npc:2090)")|
 |NPCID|1112| |LVL|Level 21| |ABIL|82715,3358,87080| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:40) (46.80, 63.60, 40, "(npc:1112)")|
 |NPCID|44227| |LVL|Level 21| |ABIL|82745,82742,3288| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:40) (61.60, 57.80, 40, "(npc:44227)")|
@@ -199,7 +199,7 @@ function NPCDataModule:Initialize()
 |NPCID|1140| |LVL|Level 25| |ABIL|3147| |NDIS|6198,4463| |ST|No strategy required.<br/><br/>Found in (map:40) (70.00, 29.60, 40, "(npc:1140)")|
 |NPCID|2108| |LVL|Level 25| |ABIL|79886,82641,79849,79848| |NDIS|6200| |ST|No strategy required.<br/><br/>Found in (map:40) (38.60, 46.20, 40, "(npc:2108)")|
 |NPCID|50964| |LVL|Level 26| |ABIL|82604,48287| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:40) (57.80, 07.40, 40, "(npc:50964)")|
-|CAT|(mapid:43)|
+|CAT|(mapid:13)->(mapid:43)| --Ashenvale
 |NPCID|3736| |LVL|Level 21| |ABIL| | |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:43) (73.60, 73.60, 43, "(npc:3736)")|
 |NPCID|10644| |LVL|Level 21| |ABIL|13443,3604,8715| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:43) (22.80, 34.60, 43, "(npc:10644)")|
 |NPCID|10647| |LVL|Level 21| |ABIL|16570,11969,9053| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:43) (66.50, 56.80, 43, "(npc:10647)")|
@@ -212,7 +212,7 @@ function NPCDataModule:Initialize()
 |NPCID|10640| |LVL|Level 25| |ABIL|6817,6819,6816,12160| |NDIS|4410| |ST|No strategy required.<br/><br/>Found in (map:43) (54.20, 62.40, 43, "(npc:10640)")|
 |NPCID|10642| |LVL|Level 25| |ABIL|6873,78542,78799| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:43) (50.80, 71.00, 43, "(npc:10642)")|
 |NPCID|3773| |LVL|Level 26| |ABIL|35913,37628| |NDIS|13005| |ST|No strategy required.<br/><br/>Found in (map:43) (25.20, 60.40, 43, "(npc:3773)")|
-|CAT|(mapid:81)|
+|CAT|(mapid:13)->(mapid:81)| --Stonetalon Mountains
 |NPCID|50343| |LVL|Level 25| |ABIL| | |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:81) (59.80, 64.00, 81, "(npc:50343)")|
 |NPCID|50825| |LVL|Level 25| |ABIL|75002| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:81) (76.20, 91.00, 81, "(npc:50825)")|
 |NPCID|5932| |LVL|Level 26| |ABIL|16508| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:81) (64.60, 45.20, 81, "(npc:5932)")|
@@ -228,7 +228,7 @@ function NPCDataModule:Initialize()
 |NPCID|50884| |LVL|Level 29| |ABIL|7272,66060| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:81) (44.80, 55.80, 81, "(npc:50884)")|
 |NPCID|50895| |LVL|Level 29| |ABIL|744| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:81) (39.80, 46.20, 81, "(npc:50895)")|
 |NPCID|5930| |LVL|Level 30| |ABIL|184,3356,6725| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:81) (40.60, 71.80, 81, "(npc:5930)")|
-|CAT|(mapid:16)|
+|CAT|(mapid:14)->(mapid:16)| --Arathi Highlands
 |NPCID|2598| |LVL|Level 26| |ABIL|8994,12741,9613| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:16) (19.60, 64.20, 16, "(npc:2598)")|
 |NPCID|2603| |LVL|Level 26| |ABIL|8269| |NDIS|5256| |ST|No strategy required.<br/><br/>Found in (map:16) (24.00, 44.80, 16, "(npc:2603)")|
 |NPCID|2604| |LVL|Level 26| |ABIL|6253| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:16) (48.00, 76.20, 16, "(npc:2604)")|
@@ -247,7 +247,7 @@ function NPCDataModule:Initialize()
 |NPCID|2602| |LVL|Level 29| |ABIL|6742,79886,82641| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:16) (18.80, 31.00, 16, "(npc:2602)")|
 |NPCID|2609| |LVL|Level 29| |ABIL|2601,20823| |NDIS|5743,5742| |ST|No strategy required.<br/><br/>Found in (map:16) (79.60, 29.60, 16, "(npc:2609)")|
 |NPCID|51067| |LVL|Level 29| |ABIL|86570,86571| |NDIS|13024| |ST|No strategy required.<br/><br/>Found in (map:16) (30.60, 62.40, 16, "(npc:51067)")|
-|CAT|(mapid:689)|
+|CAT|(mapid:14)->(mapid:689)|  --Stranglethorn Vale
 |NPCID|14487| |LVL|Level 26| |ABIL|6306| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:689) (43.60, 43.20, 689, "(npc:14487)")|
 |NPCID|14488| |LVL|Level 26| |ABIL|15496| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:689) (46.80, 45.40, 689, "(npc:14488)")|
 |NPCID|11383| |LVL|Level 27| |ABIL|15586,18503,14887| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:689) (67.20, 31.40, 689, "(npc:11383)")|
@@ -255,7 +255,7 @@ function NPCDataModule:Initialize()
 |NPCID|51662| |LVL|Level 28| |ABIL|78542,79831| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:689) (54.60, 31.00, 689, "(npc:51662)")|
 |NPCID|51663| |LVL|Level 28| |ABIL|2649,75002,93435| |NDIS|13057| |ST|No strategy required.<br/><br/>Found in (map:689) (36.80, 28.40, 689, "(npc:51663)")|
 |NPCID|51658| |LVL|Level 29| |ABIL|17173,12471| |NDIS|8494| |ST|No strategy required.<br/><br/>Found in (map:689) (62.80, 74.60, 689, "(npc:51658)")|
-|CAT|(mapid:607)|
+|CAT|(mapid:14)->(mapid:607)| --Southern Barrens
 |NPCID|5834| |LVL|Level 30| |ABIL|13375,6725| |NDIS|4293,6661,4345| |ST|No strategy required.<br/><br/>Found in (map:607) (44.80, 56.20, 607, "(npc:5834)")|
 |NPCID|5829| |LVL|Level 31| |ABIL|3604,7951| |NDIS|6663| |ST|No strategy required.<br/><br/>Found in (map:607) (45.60, 43.60, 607, "(npc:5829)")|
 |NPCID|5863| |LVL|Level 32| |ABIL|79927,80117,75068| |NDIS|1539| |ST|No strategy required.<br/><br/>Found in (map:607) (42.20, 37.60, 607, "(npc:5863)")|
@@ -266,7 +266,7 @@ function NPCDataModule:Initialize()
 |NPCID|5847| |LVL|Level 35| |ABIL|6979,6660| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:607) (47.00, 88.60, 607, "(npc:5847)")|
 |NPCID|5851| |LVL|Level 35| |ABIL|78660,3419,76622| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:607) (49.80, 89.60, 607, "(npc:5851)")|
 |NPCID|5859| |LVL|Level 36| |ABIL|7165,40505,13730,9080| |NDIS|13103| |ST|No strategy required.<br/><br/>Found in (map:607) (43.40, 84.60, 607, "(npc:5859)")|
-|CAT|(mapid:26)|
+|CAT|(mapid:14)->(mapid:26)| --The Hinterlands
 |NPCID|8211| |LVL|Level 30| |ABIL|3264,32901,3604| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:26) (13.60, 53.80, 26, "(npc:8211)")|
 |NPCID|8212| |LVL|Level 31| |ABIL|7279,21062| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:26) (47.80, 43.20, 26, "(npc:8212)")|
 |NPCID|8213| |LVL|Level 31| |ABIL|79840| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:26) (80.60, 56.60, 26, "(npc:8213)")|
@@ -277,20 +277,20 @@ function NPCDataModule:Initialize()
 |NPCID|8218| |LVL|Level 34| |ABIL| | |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:26) (49.80, 66.50, 26, "(npc:8218)")|
 |NPCID|8219| |LVL|Level 34| |ABIL|17228| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:26) (24.80, 65.60, 26, "(npc:8219)")|
 |NPCID|8214| |LVL|Level 35| |ABIL|15495,8806,6660| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:26) (34.60, 55.20, 26, "(npc:8214)")|
-|CAT|(mapid:673)|
+|CAT|(mapid:14)->(mapid:673)| --The Cape of Stranglethorn
 |NPCID|1552| |LVL|Level 31| |ABIL|5106| |NDIS|4478| |ST|No strategy required.<br/><br/>Found in (map:673) (67.60, 25.20, 673, "(npc:1552)")|
 |NPCID|2541| |LVL|Level 31| |ABIL|15496,3583| |NDIS|5029,5028| |ST|No strategy required.<br/><br/>Found in (map:673) (43.60, 49.20, 673, "(npc:2541)")|
 |NPCID|14491| |LVL|Level 33| |ABIL|8599,83012| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:673) (58.60, 47.40, 673, "(npc:14491)")|
 |NPCID|14492| |LVL|Level 34| |ABIL|12097| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:673) (53.20, 27.80, 673, "(npc:14492)")|
 |NPCID|14490| |LVL|Level 44| |ABIL| | |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:673) (42.00, 73.60, 673, "(npc:14490)")|
-|CAT|(mapid:101)|
+|CAT|(mapid:13)->(mapid:101)| --Desolace
 |NPCID|14225| |LVL|Level 31| |ABIL|8599,35913| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:101) (74.60, 12.40, 101, "(npc:14225)")|
 |NPCID|14228| |LVL|Level 31| |ABIL|3150| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:101) (57.60, 09.60, 101, "(npc:14228)")|
 |NPCID|14227| |LVL|Level 32| |ABIL|77503| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:101) (44.00, 42.60, 101, "(npc:14227)")|
 |NPCID|18241| |LVL|Level 32| |ABIL|78744,5424,8599| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:101) (41.80, 19.00, 101, "(npc:18241)")|
 |NPCID|14229| |LVL|Level 33| |ABIL|7947,77921| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:101) (30.80, 18.60, 101, "(npc:14229)")|
 |NPCID|14226| |LVL|Level 34| |ABIL|13730,22859| |NDIS|13137| |ST|No strategy required.<br/><br/>Found in (map:101) (51.20, 84.80, 101, "(npc:14226)")|
-|CAT|(mapid:22)|
+|CAT|(mapid:14)->(mapid:22)| --Western Plaguelands
 |NPCID|1851| |LVL|Level 35| |ABIL|17230,3604| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:22) (63.60, 83.00, 22, "(npc:1851)")|
 |NPCID|50345| |LVL|Level 35| |ABIL|5708| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:22) (32.00, 72.60, 22, "(npc:50345)")|
 |NPCID|50931| |LVL|Level 35| |ABIL|87187,5422| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:22) (66.50, 55.60, 22, "(npc:50931)")|
@@ -310,7 +310,7 @@ function NPCDataModule:Initialize()
 |NPCID|51029| |LVL|Level 38| |ABIL|44477| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:22) (61.60, 72.60, 22, "(npc:51029)")|
 |NPCID|50809| |LVL|Level 39| |ABIL|8139,5708| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:22) (36.00, 52.60, 22, "(npc:50809)")|
 |NPCID|51058| |LVL|Level 39| |ABIL|6016,14539| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:22) (62.40, 35.20, 22, "(npc:51058)")|
-|CAT|(mapid:121)|
+|CAT|(mapid:13)->(mapid:121)| --Feralas
 |NPCID|43488| |LVL|Level 35| |ABIL|80117,77471,77721| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:121) (49.60, 30.60, 121, "(npc:43488)")|
 |NPCID|5345| |LVL|Level 36| |ABIL|49978,8599,5164| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:121) (49.00, 20.60, 121, "(npc:5345)")|
 |NPCID|5349| |LVL|Level 36| |ABIL|15117,12553| |NDIS|13129| |ST|No strategy required.<br/><br/>Found in (map:121) (40.80, 26.00, 121, "(npc:5349)")|
@@ -321,7 +321,7 @@ function NPCDataModule:Initialize()
 |NPCID|5354| |LVL|Level 38| |ABIL|11922,6913| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:121) (72.20, 38.80, 121, "(npc:5354)")|
 |NPCID|5350| |LVL|Level 39| |ABIL|2649,81109,81224,79607| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:121) (73.60, 64.00, 121, "(npc:5350)")|
 |NPCID|5356| |LVL|Level 39| |ABIL|5543| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:121) (85.00, 37.40, 121, "(npc:5356)")|
-|CAT|(mapid:141)|
+|CAT|(mapid:13)->(mapid:141)| --Dustwallow Marsh
 |NPCID|14230| |LVL|Level 36| |ABIL|34828,79892,79831| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:141) (63.00, 07.40, 141, "(npc:14230)")|
 |NPCID|14231| |LVL|Level 36| |ABIL|81146| |NDIS|4416| |ST|No strategy required.<br/><br/>Found in (map:141) (39.60, 19.60, 141, "(npc:14231)")|
 |NPCID|14236| |LVL|Level 36| |ABIL| | |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:141) (56.60, 63.40, 141, "(npc:14236)")|
@@ -342,7 +342,7 @@ function NPCDataModule:Initialize()
 |NPCID|50875| |LVL|Level 39| |ABIL|6268| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:141) (34.00, 70.40, 141, "(npc:50875)")|
 |NPCID|51061| |LVL|Level 39| |ABIL|87395| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:141) (50.20, 84.60, 141, "(npc:51061)")|
 |NPCID|51069| |LVL|Level 39| |ABIL|86572,86570,86571| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:141) (55.80, 85.60, 141, "(npc:51069)")|
-|CAT|(mapid:23)|
+|CAT|(mapid:14)->(mapid:23)| --Eastern Plaguelands
 |NPCID|10827| |LVL|Level 40| |ABIL|13338,17173,12471| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:23) (19.20, 77.80, 23, "(npc:10827)")|
 |NPCID|51027| |LVL|Level 40| |ABIL|44477| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:23) (74.20, 58.80, 23, "(npc:51027)")|
 |NPCID|10817| |LVL|Level 41| |ABIL|15284,15547| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:23) (35.80, 61.80, 23, "(npc:10817)")|
@@ -365,7 +365,7 @@ function NPCDataModule:Initialize()
 |NPCID|50779| |LVL|Level 44| |ABIL|35394| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:23) (39.80, 56.60, 23, "(npc:50779)")|
 |NPCID|50856| |LVL|Level 44| |ABIL|3149,82797| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:23) (39.80, 84.40, 23, "(npc:50856)")|
 |NPCID|10819| |LVL|Level 45| |ABIL|13787,12555,16583,12057| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:23) (35.80, 21.40, 23, "(npc:10819)")|
-|CAT|(mapid:61)|
+|CAT|(mapid:13)->(mapid:61)| --Thousand Needles
 |NPCID|50741| |LVL|Level 40| |ABIL|40504,16790| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:61) (37.60, 56.00, 61, "(npc:50741)")|
 |NPCID|50952| |LVL|Level 40| |ABIL|79174,79176,79175| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:61) (41.60, 38.20, 61, "(npc:50952)")|
 |NPCID|50748| |LVL|Level 41| |ABIL|66954| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:61) (43.80, 40.80, 61, "(npc:50748)")|
@@ -380,7 +380,7 @@ function NPCDataModule:Initialize()
 |NPCID|51008| |LVL|Level 44| |ABIL|79607| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:61) (71.20, 94.80, 61, "(npc:51008)")|
 |NPCID|5935| |LVL|Level 45| |ABIL| | |NDIS|8223| |ST|No strategy required.<br/><br/>Found in (map:61) (61.60, 67.00, 61, "(npc:5935)")|
 |NPCID|5937| |LVL|Level 45| |ABIL|8257| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:61) (06.00, 42.00, 61, "(npc:5937)")|
-|CAT|(mapid:161)|
+|CAT|(mapid:13)->(mapid:161)| --Tanaris
 |NPCID|8200| |LVL|Level 45| |ABIL|7272,79884,10132| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:161) (37.60, 25.80, 161, "(npc:8200)")|
 |NPCID|8207| |LVL|Level 45| |ABIL|16843,11970| |NDIS|8390| |ST|No strategy required.<br/><br/>Found in (map:161) (44.60, 40.60, 161, "(npc:8207)")|
 |NPCID|44722| |LVL|Level 45| |ABIL|75073,77471,77721| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:161) (64.60, 19.80, 161, "(npc:44722)")|
@@ -399,7 +399,7 @@ function NPCDataModule:Initialize()
 |NPCID|44714| |LVL|Level 49| |ABIL|79868,36032,22938,34447,21655,79880| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:161) (57.00, 89.80, 161, "(npc:44714)")|
 |NPCID|44761| |LVL|Level 50| |ABIL|15089,10987,83669,78799| |NDIS|72026| |ST|Save your interrupt or stun abilities for (spell:78799) to prevent knockbacks.<br/><br/>Found in (map:161) (69.60, 50.00, 161, "(npc:44761)")|
 |NPCID|44767| |LVL|Level 50| |ABIL|31458,31464,32914| |NDIS|9295,72030,72027| |ST|No strategy required.<br/><br/>Found in (map:161) (61.00, 50.60, 161, "(npc:44767)")|
-|CAT|(mapid:182)|
+|CAT|(mapid:13)->(mapid:182)| --Felwood
 |NPCID|14339| |LVL|Level 45| |ABIL|75355,3427,3604| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:182) (48.20, 74.60, 182, "(npc:14339)")|
 |NPCID|14340| |LVL|Level 45| |ABIL|11443,13578,9613| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:182) (43.80, 85.80, 182, "(npc:14340)")|
 |NPCID|14342| |LVL|Level 45| |ABIL|13583,13584| |NDIS|16218| |ST|No strategy required.<br/><br/>Found in (map:182) (48.80, 89.00, 182, "(npc:14342)")|
@@ -418,7 +418,7 @@ function NPCDataModule:Initialize()
 |NPCID|7104| |LVL|Level 49| |ABIL|12058,8293| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:182) (57.80, 19.60, 182, "(npc:7104)")|
 |NPCID|50724| |LVL|Level 49| |ABIL|36590| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:182) (60.60, 22.20, 182, "(npc:50724)")|
 |NPCID|51017| |LVL|Level 49| |ABIL|32922,32920| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:182) (52.40, 31.60, 182, "(npc:51017)")|
-|CAT|(mapid:17)|
+|CAT|(mapid:14)->(mapid:17)| --Badlands
 |NPCID|51000| |LVL|Level 45| |ABIL|79687| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:17) (72.00, 27.60, 17, "(npc:51000)")|
 |NPCID|2751| |LVL|Level 46| |ABIL|9576| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:17) (49.00, 25.40, 17, "(npc:2751)")|
 |NPCID|2752| |LVL|Level 46| |ABIL|6524,5568| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:17) (16.00, 29.40, 17, "(npc:2752)")|
@@ -436,7 +436,7 @@ function NPCDataModule:Initialize()
 |NPCID|51007| |LVL|Level 48| |ABIL|79607| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:17) (29.00, 38.40, 17, "(npc:51007)")|
 |NPCID|51021| |LVL|Level 48| |ABIL|39449,32920| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:17) (23.00, 37.20, 17, "(npc:51021)")|
 |NPCID|50728| |LVL|Level 49| |ABIL|13443| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:17) (70.20, 52.80, 17, "(npc:50728)")|
-|CAT|(mapid:28)|
+|CAT|(mapid:14)->(mapid:28)| --Searing Gorge
 |NPCID|8279| |LVL|Level 47| |ABIL| | |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:28) (61.20, 51.40, 28, "(npc:8279)")|
 |NPCID|8280| |LVL|Level 47| |ABIL|13321,7399| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:28) (58.20, 41.80, 28, "(npc:8280)")|
 |NPCID|50946| |LVL|Level 47| |ABIL|44530| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:28) (22.00, 77.80, 28, "(npc:50946)")|
@@ -451,7 +451,7 @@ function NPCDataModule:Initialize()
 |NPCID|51010| |LVL|Level 49| |ABIL|79607| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:28) (35.00, 52.00, 28, "(npc:51010)")|
 |NPCID|51066| |LVL|Level 49| |ABIL|87395| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:28) (25.20, 73.20, 28, "(npc:51066)")|
 |NPCID|8278| |LVL|Level 50| |ABIL|5213| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:28) (48.40, 37.20, 28, "(npc:8278)")|
-|CAT|(mapid:29)|
+|CAT|(mapid:14)->(mapid:29)| --Burning Steppes
 |NPCID|50839| |LVL|Level 49| |ABIL| | |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:29) (18.20, 32.60, 29, "(npc:50839)")|
 |NPCID|8978| |LVL|Level 51| |ABIL|11802,6533,6660| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:29) (43.80, 39.80, 29, "(npc:8978)")|
 |NPCID|9604| |LVL|Level 51| |ABIL|6742,9053,35915,35916| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:29) (64.60, 46.60, 29, "(npc:9604)")|
@@ -470,9 +470,9 @@ function NPCDataModule:Initialize()
 |NPCID|8981| |LVL|Level 53| |ABIL|3391,10966| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:29) (55.00, 43.60, 29, "(npc:8981)")|
 |NPCID|9602| |LVL|Level 53| |ABIL| | |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:29) (68.60, 40.60, 29, "(npc:9602)")|
 |NPCID|50792| |LVL|Level 53| |ABIL| | |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:29) (36.00, 27.20, 29, "(npc:50792)")|
-|CAT|(mapid:301)|
+|CAT|(mapid:14)->(mapid:301)| --Stormwind City
 |NPCID|3581| |LVL|Level 50| |ABIL| | |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:301) (47.60, 58.80, 301, "(npc:3581)")|
-|CAT|(mapid:281)|
+|CAT|(mapid:13)->(mapid:281)| --Winterspring
 |NPCID|50819| |LVL|Level 50| |ABIL|24331| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:281) (52.00, 18.80, 281, "(npc:50819)")|
 |NPCID|50993| |LVL|Level 50| |ABIL|50502| |NDIS|13008| |ST|No strategy required.<br/><br/>Found in (map:281) (35.60, 48.60, 281, "(npc:50993)")|
 |NPCID|10197| |LVL|Level 51| |ABIL|15971,3131,14100| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:281) (24.60, 51.60, 281, "(npc:10197)")|
@@ -490,13 +490,13 @@ function NPCDataModule:Initialize()
 |NPCID|50997| |LVL|Level 54| |ABIL|50502| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:281) (62.40, 24.60, 281, "(npc:50997)")|
 |NPCID|51045| |LVL|Level 54| |ABIL|13321| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:281) (48.00, 59.60, 281, "(npc:51045)")|
 |NPCID|10198| |LVL|Level 55| |ABIL|40504| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:281) (61.20, 83.80, 281, "(npc:10198)")|
-|CAT|(mapid:201)|
+|CAT|(mapid:13)->(mapid:201)| --UnGoro Crater
 |NPCID|6581| |LVL|Level 51| |ABIL|13445| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:201) (61.00, 72.20, 201, "(npc:6581)")|
 |NPCID|6585| |LVL|Level 53| |ABIL|9128,12555,10966| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:201) (63.00, 19.00, 201, "(npc:6585)")|
 |NPCID|6582| |LVL|Level 54| |ABIL|40504,14205,12097| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:201) (48.80, 85.60, 201, "(npc:6582)")|
 |NPCID|6583| |LVL|Level 54| |ABIL|15549,15548| |NDIS|45052| |ST|No strategy required.<br/><br/>Found in (map:201) (32.00, 78.60, 201, "(npc:6583)")|
 |NPCID|6584| |LVL|Level 55| |ABIL|13847,14100,15550,14331| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:201) (29.60, 47.40, 201, "(npc:6584)")|
-|CAT|(mapid:38)|
+|CAT|(mapid:14)->(mapid:38)| --Swamp of Sorrows
 |NPCID|50738| |LVL|Level 52| |ABIL|89905| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:38) (56.20, 55.80, 38, "(npc:50738)")|
 |NPCID|50837| |LVL|Level 52| |ABIL|75002| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:38) (78.00, 26.80, 38, "(npc:50837)")|
 |NPCID|51052| |LVL|Level 52| |ABIL|83920| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:38) (17.00, 47.20, 38, "(npc:51052)")|
@@ -512,7 +512,7 @@ function NPCDataModule:Initialize()
 |NPCID|763| |LVL|Level 55| |ABIL| | |NDIS| | |ST|This NPC will call for help at low health, try to clear the area first before attacking him or lure him far away from the other NPCs.<br/><br/>Found in (map:38) (59.40, 28.20, 38, "(npc:763)")|
 |NPCID|1063| |LVL|Level 55| |ABIL|12533| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:38) (30.80, 46.80, 38, "(npc:1063)")|
 |NPCID|5348| |LVL|Level 55| |ABIL|15114| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:38) (18.00, 69.80, 38, "(npc:5348)")|
-|CAT|(mapid:19)|
+|CAT|(mapid:14)->(mapid:19)| --Blasted Lands
 |NPCID|8299| |LVL|Level 55| |ABIL|37945,84497,84498,66060| |NDIS|8244,10593| |ST|No strategy required.<br/><br/>Found in (map:19) (64.20, 39.60, 19, "(npc:8299)")|
 |NPCID|8301| |LVL|Level 55| |ABIL|79840,21067,79607| |NDIS|8244,10593| |ST|No strategy required.<br/><br/>Found in (map:19) (47.20, 13.40, 19, "(npc:8301)")|
 |NPCID|45257| |LVL|Level 55| |ABIL|79930,79934,84533,77722| |NDIS|10593,8244| |ST|No strategy required.<br/><br/>Found in (map:19) (60.60, 29.80, 19, "(npc:45257)")|
@@ -527,7 +527,7 @@ function NPCDataModule:Initialize()
 |NPCID|45258| |LVL|Level 58| |ABIL|17140,9734,11835| |NDIS|10593,8244| |ST|No strategy required.<br/><br/>Found in (map:19) (60.60, 75.40, 19, "(npc:45258)")|
 |NPCID|45260| |LVL|Level 59| |ABIL|36247,84469| |NDIS|8244,10593| |ST|Make sure to interrupt (spell:84469).<br/><br/>Found in (map:19) (31.00, 70.60, 19, "(npc:45260)")|
 |NPCID|45262| |LVL|Level 60| |ABIL|36255| |NDIS|10593,8244,15743| |ST|No strategy required.<br/><br/>Found in (map:19) (32.40, 44.40, 19, "(npc:45262)")|
-|CAT|(mapid:261)|
+|CAT|(mapid:13)->(mapid:261)| --Silithus
 |NPCID|14474| |LVL|Level 55| |ABIL|21067| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:261) (25.60, 61.20, 261, "(npc:14474)")|
 |NPCID|14478| |LVL|Level 55| |ABIL|15659| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:261) (36.60, 17.80, 261, "(npc:14478)")|
 |NPCID|50737| |LVL|Level 55| |ABIL|7992| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:261) (61.80, 84.40, 261, "(npc:50737)")|
@@ -546,66 +546,66 @@ function NPCDataModule:Initialize()
 |NPCID|50744| |LVL|Level 58| |ABIL|3391,5416| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:261) (54.40, 26.20, 261, "(npc:50744)")|
 |NPCID|50745| |LVL|Level 58| |ABIL|66954| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:261) (42.60, 56.60, 261, "(npc:50745)")|
 |NPCID|50746| |LVL|Level 59| |ABIL|12097| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:261) (62.60, 89.20, 261, "(npc:50746)")|
-|CAT|(mapid:772)|
+|CAT|(mapid:13)->(mapid:772)| --Ahn'Qiraj
 |NPCID|50747| |LVL|Level 59| |ABIL|5568| |NDIS| | |ST|No strategy required.<br/><br/>Found in (map:772) (60.80, 06.60, 772, "(npc:50747)")|
-|CAT|(mapid:465)|
+|CAT|(mapid:466)->(mapid:465)| --Hellfire Peninsula
 |NPCID|18677| |LVL|Level 61| |ABIL|8599,38875,38875,37704| |NDIS|31168,31170,31174,31172| |ST|No strategy required.<br/><br/>Found in (map:465) (55.60, 50.40, 465, "(npc:18677)")|
 |NPCID|18679| |LVL|Level 62| |ABIL|8599,9080| |NDIS|31183,31184,31185,31182| |ST|No strategy required.<br/><br/>Found in (map:465) (65.60, 31.20, 465, "(npc:18679)")|
 |NPCID|18678| |LVL|Level 62| |ABIL|32330| |NDIS|31179,31176,31181,31177| |ST|No strategy required.<br/><br/>Found in (map:465) (30.80, 36.40, 465, "(npc:18678)")|
-|CAT|(mapid:467)|
+|CAT|(mapid:466)->(mapid:467)| --Zangarmarsh
 |NPCID|18680| |LVL|Level 63| |ABIL|35493,32039| |NDIS|31254| |ST|No strategy required.<br/><br/>Found in (map:467) (11.20, 55.60, 467, "(npc:18680)")|
 |NPCID|18681| |LVL|Level 63| |ABIL|33860,11831,20297,39207| |NDIS|31243,31244,31242,31246| |ST|Save interrupt for (spell:39207) spell which will punt you up in the air and take fall damage. <br/><br/>Try to position yourself under a pipe to reduce punt height and take less fall damage.<br/><br/>Found in (map:467) (26.60, 46.60, 467, "(npc:18681)")|
 |NPCID|18682| |LVL|Level 63| |ABIL|34163,35238| |NDIS|31248,31250,31247,31249| |ST|Make sure to keep your interrupt for his (spell:34163) spell.<br/><br/>Found in (map:467) (22.80, 28.40, 467, "(npc:18682)")|
-|CAT|(mapid:478)|
+|CAT|(mapid:466)->(mapid:478)| --Terokkar Forest
 |NPCID|18685| |LVL|Level 64| |ABIL|13787,14034,38391,12471,32711| |NDIS|31228,31227,31231,31229| |ST|No strategy required.<br/><br/>Found in (map:478) (57.20, 65.40, 478, "(npc:18685)")|
 |NPCID|18686| |LVL|Level 64| |ABIL|39212,12493,39210,38401,12471| |NDIS|31235,31232,31236,31233| |ST|Save your interrupts for when he casts (spell:39210).<br/><br/>Found in (map:478) (41.20, 25.80, 478, "(npc:18686)")|
 |NPCID|18689| |LVL|Level 65| |ABIL|38882,38621,39214| |NDIS|31238| |ST|No strategy required.<br/><br/>Found in (map:478) (32.80, 51.40, 478, "(npc:18689)")|
-|CAT|(mapid:477)|
+|CAT|(mapid:466)->(mapid:477)| --Nagrand
 |NPCID|17144| |LVL|Level 65| |ABIL|38887,39215,3604| |NDIS|31191,31188,31192,31189| |ST|No strategy required.<br/><br/>Found in (map:477) (31.00, 51.00, 477, "(npc:17144)")|
 |NPCID|18683| |LVL|Level 68| |ABIL|38204,34331,34333,34334,34336,34335,34338,38051,14034,15497,15498,12167,12471| |NDIS|31197,31195,31199,31199| |ST|This NPC will cast a buff that reduces damage by 75% for specific spell school. <br/><br/>Eg if he cast (spell:34334) then you will need to use a non Frost spell to damage him effectively. <br/><br/>Melee classes don't have to worry about the Damage Reduction buff and interrupt the spell casts.<br/><br/>Found in (map:477) (38.40, 66.60, 477, "(npc:18683)")|
-|CAT|(mapid:475)|
+|CAT|(mapid:466)->(mapid:475)| --Blade's Edge Mountain
 |NPCID|18690| |LVL|Level 68| |ABIL|35238| |NDIS|31161,31159,31160,31162| |ST|This NPC will hit range classes pretty hard, keep him slowed and stay away from it as you DPS.<br/><br/>Found in (map:475) (73.60, 33.40, 475, "(npc:18690)")|
 |NPCID|18692| |LVL|Level 68| |ABIL|38895,9573,14100| |NDIS|31158,31156,31157,31155| |ST|No strategy required.<br/><br/>Found in (map:475) (29.00, 68.80, 475, "(npc:18692)")|
 |NPCID|18693| |LVL|Level 68| |ABIL|37844,12466,12466,15241| |NDIS|31163,31166,31164,31165| |ST|No strategy required.<br/><br/>Found in (map:475) (56.20, 35.00, 475, "(npc:18693)")|
-|CAT|(mapid:473)|
+|CAT|(mapid:466)->(mapid:473)| --Shadowmoon Valley
 |NPCID|18694| |LVL|Level 68| |ABIL|38932,36414,34322| |NDIS|31219,31220,31217,31218| |ST|Interrupt (spell:36414) channelled spell and range class should stay away from melee range to avoid instant fears from (spell:34322)<br/><br/>Found in (map:473) (37.00, 44.40, 473, "(npc:18694)")|
 |NPCID|18696| |LVL|Level 68| |ABIL|12743| |NDIS|31214,31216,31213,31215| |ST|No strategy required.<br/><br/>Found in (map:473) (31.20, 45.40, 473, "(npc:18696)")|
 |NPCID|18695| |LVL|Level 69| |ABIL|38926,38916,38913| |NDIS|31224,31221,31223,31225| |ST|No strategy required.<br/><br/>Found in (map:473) (28.20, 49.80, 473, "(npc:18695)")|
-|CAT|(mapid:479)|
+|CAT|(mapid:466)->(mapid:479)| --Netherstorm
 |NPCID|18698| |LVL|Level 68| |ABIL|33860,35892| |NDIS|31203| |ST|Save your interrupts for (spell:35892)<br/><br/>Found in (map:479) (28.20, 72.20, 479, "(npc:18698)")|
 |NPCID|18697| |LVL|Level 69| |ABIL|38204,38898,36843| |NDIS|31201| |ST|Save your interrupts for (spell:36843)<br/><br/>Found in (map:479) (59.80, 67.00, 479, "(npc:18697)")|
 |NPCID|20932| |LVL|Level 70| |ABIL|15797,21971,38905| |NDIS|31212,31210,31211,31209| |ST|The (spell:38905) buff will reflect your damage and save your interrupts for (spell:21971).<br/><br/>Found in (map:479) (22.80, 80.40, 479, "(npc:20932)")|
-|CAT|(mapid:486)|
+|CAT|(mapid:485)->(mapid:486)| --Borean Tundra
 |NPCID|32358| |LVL|Level 71| |ABIL|60906,6660| |NDIS|44666,44663| |ST|No strategy required.<br/><br/>Found in (map:486) (70.60, 37.80, 486, "(npc:32358)")|
 |NPCID|32361| |LVL|Level 71| |ABIL|57468| |NDIS|44667,44663| |ST|No strategy required.<br/><br/>Found in (map:486) (81.40, 31.40, 486, "(npc:32361)")|
 |NPCID|32357| |LVL|Level 72| |ABIL|60903,50506| |NDIS|44649,44663| |ST|No strategy required.<br/><br/>Found in (map:486) (34.60, 23.60, 486, "(npc:32357)")|
-|CAT|(mapid:491)|
+|CAT|(mapid:485)->(mapid:491)| --Howling Fjord
 |NPCID|32386| |LVL|Level 71| |ABIL| | |NDIS|44670,44663| |ST|No strategy required.<br/><br/>Found in (map:491) (73.60, 61.60, 491, "(npc:32386)")|
 |NPCID|32398| |LVL|Level 71| |ABIL|61115,50169| |NDIS|44668,44663| |ST|No strategy required.<br/><br/>Found in (map:491) (33.20, 80.60, 491, "(npc:32398)")|
-|CAT|(mapid:490)|
+|CAT|(mapid:485)->(mapid:490)| --Grizzly Hills
 |NPCID|32429| |LVL|Level 73| |ABIL|52342| |NDIS|44674,44663| |ST|No strategy required.<br/><br/>Found in (map:490) (28.60, 45.80, 490, "(npc:32429)")|
 |NPCID|32438| |LVL|Level 73| |ABIL|38952,47168,50092| |NDIS|44676,44663| |ST|No strategy required.<br/><br/>Found in (map:490) (67.00, 42.60, 490, "(npc:32438)")|
 |NPCID|32422| |LVL|Level 74| |ABIL|49676,49675| |NDIS|44675,44663| |ST|This NPC is immuned to fear and has high damage, range classes will need to keep their distance.<br/><br/>Found in (map:490) (10.60, 40.00, 490, "(npc:32422)")|
-|CAT|(mapid:488)|
+|CAT|(mapid:485)->(mapid:488)| --Dragonblight
 |NPCID|32400| |LVL|Level 73| |ABIL|57066,50410| |NDIS|44673,44663| |ST|No strategy required.<br/><br/>Found in (map:488) (67.60, 60.00, 488, "(npc:32400)")|
 |NPCID|32409| |LVL|Level 73| |ABIL|58460,48139| |NDIS|44672,44663| |ST|No strategy required.<br/><br/>Found in (map:488) (15.60, 45.60, 488, "(npc:32409)")|
 |NPCID|32417| |LVL|Level 73| |ABIL|35948,35949,50713,48281,48280| |NDIS|44671,44663| |ST|Stay out of the (spell:48281) ability.<br/><br/>Found in (map:488) (71.60, 22.00, 488, "(npc:32417)")|
-|CAT|(mapid:496)|
+|CAT|(mapid:485)->(mapid:496)| --Zul'Drak
 |NPCID|32471| |LVL|Level 75| |ABIL|51334| |NDIS|44686,44663| |ST|Try to steer clear of his (spell:51334) ability. He can knock you back and interrupt your spellcasting.<br/><br/>Found in (map:496) (21.20, 79.80, 496, "(npc:32471)")|
 |NPCID|32475| |LVL|Level 76| |ABIL|36839,28428| |NDIS|44685,44663| |ST|No strategy required.<br/><br/>Found in (map:496) (74.40, 66.60, 496, "(npc:32475)")|
 |NPCID|32447| |LVL|Level 77| |ABIL|55196,54565| |NDIS|44677,44663| |ST|This NPC will hex a lot with (spell:54565). Try to steer clear of his (spell:55196) ability.<br/><br/>Found in (map:496) (20.20, 82.20, 496, "(npc:32447)")|
-|CAT|(mapid:493)|
+|CAT|(mapid:485)->(mapid:493)| --Sholazar Basin
 |NPCID|32481| |LVL|Level 75| |ABIL|49865,51144| |NDIS|44691,44663| |ST|Watch out for his (spell:51144) ability. Either interrupt it or try to get behind that NPC so he doesn't knock you back.<br/><br/>Found in (map:493) (58.20, 64.00, 493, "(npc:32481)")|
 |NPCID|32485| |LVL|Level 75| |ABIL|36140,48137,36629| |NDIS|44683,44663| |ST|No strategy required.<br/><br/>Found in (map:493) (25.80, 48.80, 493, "(npc:32485)")|
 |NPCID|32517| |LVL|Level 76| |ABIL|61186,61184,93435| |NDIS|44663,44688,44687| |ST|No strategy required.<br/><br/>Found in (map:493) (22.60, 70.60, 493, "(npc:32517)")|
-|CAT|(mapid:492)|
+|CAT|(mapid:485)->(mapid:492)| --Icecrown
 |NPCID|32487| |LVL|Level 80| |ABIL|61080,41534| |NDIS|44696,44663| |ST|You will have to watch out for (spell:61080) so you don't get knocked back as the name would suggest. Also, try to avoid (spell:41534) so you don't get stunned.<br/><br/>Found in (map:492) (68.60, 68.60, 492, "(npc:32487)")|
 |NPCID|32495| |LVL|Level 80| |ABIL|60991,57547| |NDIS|44697,44663| |ST|No strategy required.<br/><br/>Found in (map:492) (59.40, 62.00, 492, "(npc:32495)")|
 |NPCID|32501| |LVL|Level 80| |ABIL|60950,60945,60953,60949,60951| |NDIS|44695,44663| |ST|Range class should try to stay away from melee range to reduce damage and avoid standing on (spell:60953)<br/><br/>Found in (map:492) (74.00, 32.00, 492, "(npc:32501)")|
-|CAT|(mapid:495)|
+|CAT|(mapid:485)->(mapid:495)| --The Storm Peaks
 |NPCID|32500| |LVL|Level 80| |ABIL|61110,61103| |NDIS|44663,44681,44708| |ST|You will have to watch out for (spell:61110) so you don't get knocked back.<br/><br/>Found in (map:495) (37.80, 58.60, 495, "(npc:32500)")|
 |NPCID|32630| |LVL|Level 80| |ABIL|47425,51857| |NDIS|44732,44663| |ST|No strategy required.<br/><br/>Found in (map:495) (26.80, 43.60, 495, "(npc:32630)")|
-|CAT|(mapid:806)|
+|CAT|(mapid:862)->(mapid:806)| --The Jade Forest
 |NPCID|50338| |LVL|Level 85| |ABIL|125238,125212,125241| |NDIS|87217,87642,87586,87593,87592,87590,87594,87589,87588,87587,87591,93194| |ST|(spell:125238) - Auto attacks with his wand instead of in melee.<br/>(spell:125212) - Basic spell damage main attack that can be soaked or interrupted.<br/>(spell:125241) - Creates a persistent shadow aoe that is cast on the floor at the players current position at the end of the cast.<br/><br/>Found in (map:806) (44.00, 74.20, 806, "(npc:50338)")|
 |NPCID|50350| |LVL|Level 85| |ABIL|124946,124980,124976| |NDIS|87217,87643,87586,87593,87592,87590,87594,87589,87587,87588,87591,93194| |ST|(spell:124946) - A 180° frontal attack, if you're in melee you can stand behind him, ranged can run away.<br/>(spell:124980) - Summons an add to assist him, has little health and does minor damage, can be killed or cc'd until it disappears.<br/>(spell:124976) - A periodic enrage buff cast on himself increasing damage by 5% and stacking.<br/><br/>Found in (map:806) (42.40, 16.00, 806, "(npc:50350)")|
 |NPCID|50363| |LVL|Level 85| |ABIL|125370,128933,125398,125373| |NDIS|87217,87646,87586,87593,87592,87590,87589,87588,87587,87594,87591,93194| |ST|(spell:125373) is a Mantid's weakest ability. The Mantid gains attack damage and movement speed, and cannot be snared, rooted, or slowed. Be ready to heal or use a defensive cooldown.<br/><br/>(spell:125398) creates a persistent whirlwind that orbits your location when the spell was cast, dealing massive damage if it comes in contact with you. Try to place these in locations you can stay out of for a while, but be ready to deal with multiples as they last long enough for two or three to be active at the same time. <br/><br/>(spell:125370) is a Mantid's most lethal attack, dealing massive damage in a cone in front of the Mantid. The Mantid remains stationary and facing the same direction from the moment he starts to cast the spell, so it can be avoided simply by running through him, but the cast time is very brief and latency can often cause you to take a tick of damage even if you are clearly out of the area of effect.<br/><br/>Stunning the Mantid during the channel will end the spell, but this isn't recommended as the spell is totally harmless and effectively a self-stun if you're not standing in it, and if you are then you're likely to be dead before you can get the stun off.<br/><br/>Found in (map:806) (39.60, 62.60, 806, "(npc:50363)")|
@@ -616,7 +616,7 @@ function NPCDataModule:Initialize()
 |NPCID|51078| |LVL|Level 85| |ABIL|124297,124302,124289| |NDIS|87217,87652,87592,87586,87593,87590,87594,87589,87588,87587,87591,93194| |ST|(spell:124289) - Small aoe stomp for heavy damage, simple to move from.<br/>(spell:124302) - Charges his target if they run more than 20 yards away.<br/>(spell:124297) - Increased damage but slowed movement speed, can be soaked or run from.<br/><br/>Found in (map:806) (52.20, 44.40, 806, "(npc:51078)")|
 |NPCID|69768| |LVL|Level 91| |ABIL|138040,138042,138036,138044,127373,138043| |NDIS|94159,94225,94227,94226,94223,94158| |ST|5.3 million hp and melee attack for ~25,000. Each will spawn with 3 of the 5 buffs below.<br/><br/>(spell:138047) - (spell:138040)<br/>Cast on the current highest threat and fears the target for 8 seconds.<br/>This ability is interrupt-able and should be stopped to prevent tank fears.<br/><br/>(spell:138048) - (spell:138042)<br/>Gains a buff which calls down a rain of meteors for 10 seconds. Each meteor his for ~150k damage when it lands, but fall slowly enough to avoid.<br/>These spawn around the npc's location, so you cannot drag them out of the area of effect.<br/><br/>(spell:138046) - (spell:138036)<br/>Summons around 10 small scarabs with 40k health, these only hit for around 500 so are little more than an annoyance.<br/><br/>(spell:138050) - (spell:138044)<br/>90 degree conal aoe in front of the npc with a short ~20 yard range. <br/>Very simple to move out of and avoid the damage, however hits for 250k damage if you fail to move.(can hit and aggro friendly npc's)<br/><br/>(spell:138049) - (spell:138043)<br/>Summons (npc:69806) at it's location with 4 million hp to assist in combat for 20 seconds before it despawns.<br/>The spirit hits for around 100k, but is incredibly slow and vulnerable to long duration crowd control, so can easily be avoided.<br/><br/>Found in (map:806) (51.00, 16.00, 806, "(npc:69768)")|
 |NPCID|69769| |LVL|Level 92| |ABIL|138040,138042,138036,138044,127373,138043| |NDIS|94159,94226,94225,94227,94223,94158,94229,93194| |ST|21 million hp and melee attack for ~100,000. Each will spawn with 4 of the 5 buffs below.<br/><br/>(spell:138047) - (spell:138040)<br/>Cast on the current highest threat and fears the target for 8 seconds.<br/>This ability is interrupt-able and should be stopped to prevent tank fears.<br/><br/>(spell:138048) - (spell:138042)<br/>Gains a buff which calls down a rain of meteors for 10 seconds. Each meteor his for ~150k damage when it lands, but fall slowly enough to avoid.<br/>These spawn around the npc's location, so you cannot drag them out of the area of effect.<br/><br/>(spell:138046) - (spell:138036)<br/>Summons around 10 small scarabs with 40k health, these only hit for around 500 so are little more than an annoyance.<br/><br/>(spell:138050) - (spell:138044)<br/>90 degree conal aoe in front of the npc with a short ~20 yard range. <br/>Very simple to move out of and avoid the damage, however hits for 250k damage if you fail to move.(can hit and aggro friendly npc's)<br/><br/>(spell:138049) - (spell:138043)<br/>Summons (npc:69806) at it's location with 4 million hp to assist in combat for 20 seconds before it despawns.<br/>The spirit hits for around 100k, but is incredibly slow and vulnerable to long duration crowd control, so can easily be avoided.<br/><br/>Found in (map:806) (52.00, 17.00, 806, "(npc:69769)")|
-|CAT|(mapid:807)|
+|CAT|(mapid:862)->(mapid:807)| --Valley of the Four Winds
 |NPCID|50339| |LVL|Level 86| |ABIL|125238,125212,125241| |NDIS|87217,87595,87597,87602,87599,87600,87598,87596,87601,87603,86569,93194| |ST|(spell:125238) - Auto attacks with his wand instead of in melee.<br/>(spell:125212) - Basic spell damage main attack that can be soaked or interrupted.<br/>(spell:125241) - Creates a persistent shadow aoe that is cast on the floor at the players current position at the end of the cast.<br/><br/>Found in (map:807) (37.00, 25.60, 807, "(npc:50339)")|
 |NPCID|50351| |LVL|Level 86| |ABIL|124946,124980,124976| |NDIS|87217,86572,87601,87595,87597,87602,87599,87600,87598,87596,87603,93194| |ST|(spell:124946) - A 180° frontal attack, if you're in melee you can stand behind him, ranged can run away.<br/>(spell:124980) - Summons an add to assist him, has little health and does minor damage, can be killed or cc'd until it disappears.<br/>(spell:124976) - A periodic enrage buff cast on himself increasing damage by 5% and stacking.<br/><br/>Found in (map:807) (18.80, 77.80, 807, "(npc:50351)")|
 |NPCID|50364| |LVL|Level 86| |ABIL|126015,125403,126014,125372| |NDIS|86576,87217,87595,87597,87602,87599,87600,87598,87596,87601,87603,93194| |ST|(spell:126015) - Creates a tornado where you're standing that whirls around near it's spawn point. Needs to be moved away from otherwise it inflicts (spell:125403).<br/>(spell:126014) - Buffs himself doing more melee damage and preventing kiting, though occasionally he'll stop chasing to cast his other 2 abilities.<br/>(spell:125372) - A brutal conal aoe with a short cast time before it starts. Needs to be run from or stunned to stop.<br/><br/>Found in (map:807) (10.40, 47.00, 807, "(npc:50364)")|
@@ -625,7 +625,7 @@ function NPCDataModule:Initialize()
 |NPCID|50811| |LVL|Level 86| |ABIL|125817,125802,125799| |NDIS|86587,87217,87595,87597,87602,87599,87600,87598,87596,87601,87603,93194| |ST|(spell:125799) - Cannot be interrupted, only stunned / cc'd. Causes (spell:125800) to anyone still in melee. Needs to be run from as soon as they start casting.<br/>(spell:125817) - (2,450% ~300k damage at level 91) Used if you are more than 15 yards away. Run back in after crane kick (do not waste interrupt).<br/>(spell:125802) - Heals the pandaren for 30% of their health. Needs to be interrupted.<br/><br/>Found in (map:807) (88.60, 18.00, 807, "(npc:50811)")|
 |NPCID|50828| |LVL|Level 86| |ABIL|125311,125363,125365| |NDIS|87217,87595,87597,87602,87600,87598,87596,87601,87603,87599,86591,93194| |ST|(spell:116845) - Creates a whirling banana that spins along the ground away from him in a line and then back again causing (spell:125321) to anyone in it's path, move to the side rather than away.<br/>(spell:125365) - Increasing damage on you by up to 11% depending on the elite's level.<br/>(spell:125363) - Causes him to jump around the area dealing damage with (spell:125362) if he lands on you. Will rarely hit you if you're near his start point before he starts jumping.<br/><br/>Found in (map:807) (14.00, 38.50, 807, "(npc:50828)")|
 |NPCID|51059| |LVL|Level 86| |ABIL|124297,124302,124289| |NDIS|86565,87217,87595,87602,87599,87600,87598,87596,87601,87603,87597,93194| |ST|(spell:124289) - Small aoe stomp for heavy damage, simple to move from.<br/>(spell:124302) - Charges his target if they run more than 20 yards away.<br/>(spell:124297) - Increased damage but slowed movement speed, can be soaked or run from.<br/><br/>Found in (map:807) (36.50, 57.60, 807, "(npc:51059)")|
-|CAT|(mapid:857)|
+|CAT|(mapid:862)->(mapid:857)| --Krasarang Wilds
 |NPCID|50331| |LVL|Level 87| |ABIL|124297,124302,124289| |NDIS|87217,90719,87606,87612,87609,87605,87610,87608,87611,87607,87604,93194| |ST|(spell:124289) - Small aoe stomp for heavy damage, simple to move from.<br/>(spell:124302) - Charges his target if they run more than 20 yards away.<br/>(spell:124297) - Increased damage but slowed movement speed, can be soaked or run from.<br/><br/>Found in (map:857) (39.00, 29.00, 857, "(npc:50331)")|
 |NPCID|50340| |LVL|Level 87| |ABIL|125238,125212,125241| |NDIS|87217,90725,87612,87604,87609,87605,87610,87611,87606,87607,87608,93194| |ST|(spell:125238) - Auto attacks with his wand instead of in melee.<br/>(spell:125212) - Basic spell damage main attack that can be soaked or interrupted.<br/>(spell:125241) - Creates a persistent shadow aoe that is cast on the floor at the players current position at the end of the cast.<br/><br/>Found in (map:857) (54.00, 32.00, 857, "(npc:50340)")|
 |NPCID|50352| |LVL|Level 87| |ABIL|124946,124980,124976| |NDIS|87217,90717,87612,87604,87609,87605,87610,87608,87611,87606,87607,93194| |ST|(spell:124946) - A 180° frontal attack, if you're in melee you can stand behind him, ranged can run away.<br/>(spell:124980) - Summons an add to assist him, has little health and does minor damage, can be killed or cc'd until it disappears.<br/>(spell:124976) - A periodic enrage buff cast on himself increasing damage by 5% and stacking.<br/><br/>Found in (map:857) (67.20, 23.00, 857, "(npc:50352)")|
@@ -640,7 +640,7 @@ function NPCDataModule:Initialize()
 |NPCID|68321| |LVL|Level 91| |ABIL|134788,134787,134811,134786| |NDIS|92782,87217,93194| |ST|4.9 million hp - Melee attacks for around 25k per hit.<br/><br/>(spell:134787) / (spell:134811) - Used if you are more than 15 yards away from him, damages you for 40% of your health if he lands on you. Stay close to him, or move as soon as he starts to cast.<br/><br/>(spell:134788) - Casts a rupture line in front of him, small width but a long range and hits you for 60% of your health. Roughly 9 sec cooldown. Run to the side as soon as he starts to cast.<br/><br/>Found in (map:857) (14.80, 57.20, 857, "(npc:68321)")|
 |NPCID|68318| |LVL|Level 91| |ABIL|134788,134787,134811,134786| |NDIS|92782,87217,93194| |ST|4.9 million hp - Melee attacks for around 25k per hit.<br/><br/>(spell:134787) / (spell:134811) - Used if you are more than 15 yards away from him, damages you for 40% of your health if he lands on you. Stay close to him, or move as soon as he starts to cast.<br/><br/>(spell:134788) - Casts a rupture line in front of him, small width but a long range and hits you for 60% of your health. Roughly 9 sec cooldown. Run to the side as soon as he starts to cast.<br/><br/>Found in (map:857) (85.00, 27.60, 857, "(npc:68318)")|
 |NPCID|68322| |LVL|Level 91| |ABIL|134767,134762,134768| |NDIS|92786,87217,93194| |ST|4.5 million hp - Casts Holy Bolt instead of engaging in melee.<br/><br/>(spell:134762) - Basic spell damage main attack that hits for around 20k and needs to be soaked. Don't waste your interrupt.<br/><br/>(spell:134767) - A long range stun that will chain you for 6 seconds, usually followed with (spell:134768) while you are immobile. Keep an interrupt ready to prevent the attack.<br/><br/>(spell:134768) - A large holy aoe placed on the ground beneath you, after 2 seconds it will explode for 60% of your hp.<br/><br/>Found in (map:857) (10.60, 56.80, 857, "(npc:68322)")|
-|CAT|(mapid:809)|
+|CAT|(mapid:862)->(mapid:809)| --Kun-lai Summit
 |NPCID|50332| |LVL|Level 88| |ABIL|124297,124302,124289| |NDIS|87217,87617,87620,87620,87614,87616,87619,87621,87615,86566,87618,93194| |ST|(spell:124289) - Small aoe stomp for heavy damage, simple to move from.<br/>(spell:124302) - Charges his target if they run more than 20 yards away.<br/>(spell:124297) - Increased damage but slowed movement speed, can be soaked or run from.<br/><br/>Found in (map:809) (48.20, 80.80, 809, "(npc:50332)")|
 |NPCID|50341| |LVL|Level 88| |ABIL|125238,125212,125241| |NDIS|86570,87217,87620,87613,87618,87614,87616,87621,87615,87617,87619,93194| |ST|(spell:125238) - Auto attacks with his wand instead of in melee.<br/>(spell:125212) - Basic spell damage main attack that can be soaked or interrupted.<br/>(spell:125241) - Creates a persistent shadow aoe that is cast on the floor at the players current position at the end of the cast.<br/><br/>Found in (map:809) (57.00, 48.00, 809, "(npc:50341)")|
 |NPCID|50354| |LVL|Level 88| |ABIL|124946,124980,124976| |NDIS|87217,86573,87620,87617,87613,87618,87614,87616,87619,87621,87615,93194| |ST|(spell:124946) - A 180° frontal attack, if you're in melee you can stand behind him, ranged can run away.<br/>(spell:124980) - Summons an add to assist him, has little health and does minor damage, can be killed or cc'd until it disappears.<br/>(spell:124976) - A periodic enrage buff cast on himself increasing damage by 5% and stacking.<br/><br/>Found in (map:809) (57.40, 75.20, 809, "(npc:50354)")|
@@ -649,7 +649,7 @@ function NPCDataModule:Initialize()
 |NPCID|50789| |LVL|Level 88| |ABIL|125623,125632,125624| |NDIS|87217,86584,87620,87617,87613,87618,87614,87616,87619,87621,87615,93194| |ST|(spell:125624) - Stacks and does damage over time.<br/>(spell:125632) - Must be hit as soon as he stealths to stop him using (spell:125633).<br/>(spell:125633) - Used when he comes back if you've allowed him to stealth.<br/>(spell:125623) - Used on players attacking him if are more than 20 yards away.<br/><br/>Found in (map:809) (64.00, 14.00, 809, "(npc:50789)")|
 |NPCID|50817| |LVL|Level 88| |ABIL|125817,125802,125799| |NDIS|87217,87616,87620,87617,87613,87618,87614,86588,87619,87621,87615,93194| |ST|(spell:125799) - Cannot be interrupted, only stunned / cc'd. Causes (spell:125800) to anyone still in melee. Needs to be run from as soon as they start casting.<br/>(spell:125817) - (2,450% ~300k damage at level 91) Used if you are more than 15 yards away. Run back in after crane kick (do not waste interrupt).<br/>(spell:125802) - Heals the pandaren for 30% of their health. Needs to be interrupted.<br/><br/>Found in (map:809) (41.00, 42.60, 809, "(npc:50817)")|
 |NPCID|50831| |LVL|Level 88| |ABIL|125311,125363,125365| |NDIS|87217,87614,87620,87617,87618,87616,87619,87621,87615,87613,86592,93194| |ST|(spell:116845) - Creates a whirling banana that spins along the ground away from him in a line and then back again causing (spell:125321) to anyone in it's path, move to the side rather than away.<br/>(spell:125365) - Increasing damage on you by up to 11% depending on the elite's level.<br/>(spell:125363) - Causes him to jump around the area dealing damage with (spell:125362) if he lands on you. Will rarely hit you if you're near his start point before he starts jumping.<br/><br/>Found in (map:809) (46.20, 61.80, 809, "(npc:50831)")|
-|CAT|(mapid:810)|
+|CAT|(mapid:862)->(mapid:810)| --Townlong Steppes
 |NPCID|50333| |LVL|Level 88| |ABIL|124297,130388,124302,36207,124289| |NDIS|87623,87626,87624,87625,87622,87217,87219,93194| |ST|(spell:124289) - Small aoe stomp for heavy damage, simple to move from.<br/>(spell:124302) - Charges his target if they run more than 20 yards away.<br/>(spell:124297) - Increased damage but slowed movement speed, can be soaked or run from.<br/><br/>Found in (map:810) (64.40, 49.60, 810, "(npc:50333)")|
 |NPCID|50344| |LVL|Level 89| |ABIL|125238,125212,125241| |NDIS|87625,87626,87624,87622,87623,87217,87220,93194| |ST|(spell:125238) - Auto attacks with his wand instead of in melee.<br/>(spell:125212) - Basic spell damage main attack that can be soaked or interrupted.<br/>(spell:125241) - Creates a persistent shadow aoe that is cast on the floor at the players current position at the end of the cast.<br/><br/>Found in (map:810) (53.20, 64.40, 810, "(npc:50344)")|
 |NPCID|50355| |LVL|Level 89| |ABIL|124946,124980,124976| |NDIS|87623,87624,87622,87217,87625,87626,87218,93194| |ST|(spell:124946) - A 180° frontal attack, if you're in melee you can stand behind him, ranged can run away.<br/>(spell:124980) - Summons an add to assist him, has little health and does minor damage, can be killed or cc'd until it disappears.<br/>(spell:124976) - A periodic enrage buff cast on himself increasing damage by 5% and stacking.<br/><br/>Found in (map:810) (62.80, 35.00, 810, "(npc:50355)")|
@@ -658,7 +658,7 @@ function NPCDataModule:Initialize()
 |NPCID|50791| |LVL|Level 89| |ABIL|125623,125632,125624| |NDIS|87625,87624,87622,87623,87626,87217,87223,93194| |ST|(spell:125624) - Stacks and does damage over time.<br/>(spell:125632) - Must be hit as soon as he stealths to stop him using (spell:125633).<br/>(spell:125633) - Used when he comes back if you've allowed him to stealth.<br/>(spell:125623) - Used on players attacking him if are more than 20 yards away.<br/><br/>Found in (map:810) (59.30, 85.30, 810, "(npc:50791)")|
 |NPCID|50820| |LVL|Level 89| |ABIL|125817,125802,125799| |NDIS|87625,87623,87626,87624,87217,87622,87224,93194| |ST|(spell:125799) - Cannot be interrupted, only stunned / cc'd. Causes (spell:125800) to anyone still in melee. Needs to be run from as soon as they start casting.<br/>(spell:125817) - (2,450% ~300k damage at level 91) Used if you are more than 15 yards away. Run back in after crane kick (do not waste interrupt).<br/>(spell:125802) - Heals the pandaren for 30% of their health. Needs to be interrupted.<br/><br/>Found in (map:810) (31.80, 62.00, 810, "(npc:50820)")|
 |NPCID|50832| |LVL|Level 89| |ABIL|125311,125363,125365| |NDIS|87625,87623,87626,87624,87622,87217,87225,93194| |ST|(spell:116845) - Creates a whirling banana that spins along the ground away from him in a line and then back again causing (spell:125321) to anyone in it's path, move to the side rather than away.<br/>(spell:125365) - Increasing damage on you by up to 11% depending on the elite's level.<br/>(spell:125363) - Causes him to jump around the area dealing damage with (spell:125362) if he lands on you. Will rarely hit you if you're near his start point before he starts jumping.<br/><br/>Found in (map:810) (67.40, 74.40, 810, "(npc:50832)")|
-|CAT|(mapid:858)|
+|CAT|(mapid:862)->(mapid:858)| --Dread Wastes
 |NPCID|50334| |LVL|Level 90| |ABIL|124297,124302,127373,124289| |NDIS|87217,86567,87632,87627,87634,87630,87629,87628,87635,87631,87633,93194| |ST|(spell:124289) - Small aoe stomp for heavy damage, simple to move from.<br/>(spell:124302) - Charges his target if they run more than 20 yards away.<br/>(spell:124297) - Increased damage but slowed movement speed, can be soaked or run from.<br/><br/>Found in (map:858) (25.20, 27.04, 858, "(npc:50334)")|
 |NPCID|50347| |LVL|Level 90| |ABIL|125212,127373,125241| |NDIS|87217,87635,87630,87629,87632,87631,87627,87634,87628,86564,87633,93194| |ST|(spell:125238) - Auto attacks with his wand instead of in melee.<br/>(spell:125212) - Basic spell damage main attack that can be soaked or interrupted.<br/>(spell:125241) - Creates a persistent shadow aoe that is cast on the floor at the players current position at the end of the cast.<br/><br/>Found in (map:858) (72.00, 37.40, 858, "(npc:50347)")|
 |NPCID|50356| |LVL|Level 90| |ABIL|124946,124980,124976,127373| |NDIS|87217,87630,87631,87635,87629,87632,87627,87634,87628,86574,87633,93194| |ST|(spell:124946) - A 180° frontal attack, if you're in melee you can stand behind him, ranged can run away.<br/>(spell:124980) - Summons an add to assist him, has little health and does minor damage, can be killed or cc'd until it disappears.<br/>(spell:124976) - A periodic enrage buff cast on himself increasing damage by 5% and stacking. <br/><br/>Found in (map:858) (74.40, 22.80, 858, "(npc:50356)")|
@@ -667,7 +667,7 @@ function NPCDataModule:Initialize()
 |NPCID|50805| |LVL|Level 90| |ABIL|125623,127373,125632,125624| |NDIS|86585,87217,87635,87630,87632,87631,87627,87634,87628,87629,87633,93194| |ST|(spell:125624) - Stacks and does damage over time.<br/>(spell:125632) - Must be hit as soon as he stealths to stop him using (spell:125633).<br/>(spell:125633) - Used when he comes back if you've allowed him to stealth.<br/>(spell:125623) - Used on players attacking him if are more than 20 yards away.<br/><br/>Found in (map:858) (41.00, 67.00, 858, "(npc:50805)")|
 |NPCID|50821| |LVL|Level 90| |ABIL|125817,125802,125799,127373| |NDIS|87217,86589,87630,87635,87629,87632,87631,87627,87634,87628,87633,93194| |ST|(spell:125799) - Cannot be interrupted, only stunned / cc'd. Causes (spell:125800) to anyone still in melee. Needs to be run from as soon as they start casting.<br/>(spell:125817) - (2,450% ~300k damage at level 91) Used if you are more than 15 yards away. Run back in after crane kick (do not waste interrupt).<br/>(spell:125802) - Heals the pandaren for 30% of their health. Needs to be interrupted.<br/><br/>Found in (map:858) (34.80, 23.02, 858, "(npc:50821)")|
 |NPCID|50836| |LVL|Level 90| |ABIL|125311,125363,125365,127373| |NDIS|87217,86593,87635,87630,87632,87629,8763187627,87634,87628,87633,93194| |ST|(spell:116845) - Creates a whirling banana that spins along the ground away from him in a line and then back again causing (spell:125321) to anyone in it's path, move to the side rather than away.<br/>(spell:125365) - Increasing damage on you by up to 11% depending on the elite's level.<br/>(spell:125363) - Causes him to jump around the area dealing damage with (spell:125362) if he lands on you. Will rarely hit you if you're near his start point before he starts jumping.<br/><br/>Found in (map:858) (55.40, 63.80, 858, "(npc:50836)")|
-|CAT|(mapid:928)|
+|CAT|(mapid:862)->(mapid:928)| --Isle of Thunder
 |NPCID|69749| |LVL|Level 90| |ABIL|138154,138018,138019,138012| |NDIS|94824,94222| |ST|Casts Lightning Bolt on his target for around 60k damage, and summons 3 Saurok at a time from the nearby cave to attack you. <br/><br/>He will cast (spell:138019) at the Saurok, damaging them, but empowering them to do more melee damage. At this point you need to slow them and kite them to prevent the lightning chaining to you, and to avoid high additional damage from the empowered Saurok.<br/><br/>Found in (map:928) (48.00, 26.00, 928, "(npc:69749)")|
 |NPCID|69767| |LVL|Level 90| |ABIL|138073,138079| |NDIS|94826,94222| |ST|Once engaged, the Ancient Mogu Guardian will buff himself with (spell:138073), causing him to deal aoe nature damage and debuff players making them take 20% increased nature damage.<br/><br/>Cloud / Air tiles on the floor cast (spell:138004) when someone stands on them, this removes all buffs from anyone on the tile. When the Guardian gains (spell:138073), take him to a cloud tile and make him walk over it to remove the buff. After 30 seconds the Guardian will re-cast (spell:138073) of the Thunder King, forcing you to move to a new cloud tile and wipe his buff again.<br/><br/>Dispelling the Guardians buff is simple enough, however when you use the ritual stone only 8 air tiles will spawn with him, and each cloud tile is consumed when used to dispell the Guardian. This results in a four minute soft enrage.<br/><br/>Use the other tiles Fire (spell:138015) and Lightning (spell:138017) to kill him before you run out of dispells.<br/><br/>Found in (map:928) (53.30, 47.90, 928, "(npc:69767)")|
 |NPCID|70080| |LVL|Level 90| |ABIL|138976,139021,138985| |NDIS|94709,94222,| |ST|During the encounter (npc:70080) will cast (spell:138976) in an aoe every 25 seconds. This effect heavily slows the movement speed of any players caught in the winds, and if you fail to move away, (spell:138976) will deal large amounts of nature damage and boost you up in the air, causing you to take extra fall damage when you land.<br/><br/>His second attack is to cast (spell:139021) and summon a (npc:70129) into the fight to attack a player. Once the (npc:70129) arrives it will (spell:97318) the player up, and lift them in the air, dealing 4% of their health in damage every second until you kill it. Once killed you will be released, and again fall to the ground taking additional damage.<br/><br/>Found in (map:928) (68.90, 39.30, 928, "(npc:70080)")|
@@ -688,7 +688,7 @@ function NPCDataModule:Initialize()
 |NPCID|70001| |LVL|Level 92| |ABIL|139260,139262| |NDIS|97268,94221,94222,92426| |ST|Avoid his (spell:139262) by jumping as it hits.<br/><br/>Found in (map:928) (49.40, 25.30, 928, "(npc:70001)")|
 |NPCID|70002| |LVL|Level 92| |ABIL|139269,139275| |NDIS|97268,94221,94222,92426| |ST|You can run out of melee when he empowers his maces with (spell:139269) to avoid heavy damage. If you run too far he'll use (spell:139275).<br/><br/>Found in (map:928) (54.40, 35.60, 928, "(npc:70002)")|
 |NPCID|70003| |LVL|Level 92| |ABIL|138040,138036,138044| |NDIS|97268,94221,94222,92426| |ST|8 million hp and melee attack for ~35,000. Each will spawn with 3 of the 5 buffs below.<br/><br/>(spell:138047) - (spell:138040)<br/>Cast on the current highest threat and fears the target for 8 seconds.<br/>This ability is interrupt-able and should be stopped to prevent tank fears.<br/><br/>(spell:138048) - (spell:138042)<br/>Gains a buff which calls down a rain of meteors for 10 seconds. Each meteor his for ~150k damage when it lands, but fall slowly enough to avoid.<br/>These spawn around the npc's location, so you cannot drag them out of the area of effect.<br/><br/>(spell:138046) - (spell:138036)<br/>Summons around 10 small scarabs with 40k health, these only hit for around 500 so are little more than an annoyance.<br/><br/>(spell:138050) - (spell:138044)<br/>90 degree conal aoe in front of the npc with a short ~20 yard range. <br/>Very simple to move out of and avoid the damage, however hits for 250k damage if you fail to move.(can hit and aggro friendly npc's)<br/><br/>(spell:138049) - (spell:138043)<br/>Summons (npc:69806) at it's location with 4 million hp to assist in combat for 20 seconds before it despawns.<br/>The spirit hits for around 100k, but is incredibly slow and vulnerable to long duration crowd control, so can easily be avoided.<br/><br/>Found in (map:928) (59.30, 35.70, 928, "(npc:14875)")|
-|CAT|(mapid:951)|
+|CAT|(mapid:862)->(mapid:951)| --Timeless Isle
 |NPCID|71864| |LVL|Level 90| |ABIL|147805,144892,147769| |NDIS|102318,102291,102289,104347,102321,102290,102287,102288,102277,102282,102272,102264,102320,102266,102267,102285,102286,102284,102283,102278,102280,102323,102270,102274,102269,102263,102265,102268,102322,102279,102281,102276,102271,102273,102275,104345,103982| |ST|Stay out of (spell:147805) and interrupt (spell:147769).<br/><br/>Found in (map:951) (59.60, 48.80, 951, "(npc:71864)")|
 |NPCID|71919| |LVL|Level 90| |ABIL|147345,147347,144882| |NDIS|104167,102318,102291,102289,104347,102321,102290,102287,102288,102277,102282,102272,102264,102320,102266,102267,102285,102286,102284,102283,102278,102280,102323,102270,102274,102269,102263,102265,102268,102322,102279,102281,102276,102271,102273,102275,104345,103982| |ST|Stun the NPC if you can, when he casts (spell:147347) and interrupt him when he casts (spell:144882)<br/><br/>Found in (map:951) (37.30, 77.60, 951, "(npc:71919)")|
 |NPCID|71920| |LVL|Level 90| |ABIL|147529,147612,147694| |NDIS|100910,100865,100863,100864,104243,102534,104213,104221,104242,87695,90585,87430,95471,87457,87417,104239,104233,104234,104238,102318,102291,102289,104347,102321,102290,102287,102288,102277,102282,102272,102264,102320,102266,102267,102285,102286,102284,102283,102278,102280,102323,102270,102274,102269,102263,102265,102268,102322,102279,102281,102276,102271,102273,102275,104345,103982| |ST|Stun the NPC when he cast (spell:147694) or move behind him or stay away from melee range and don't stand in front of him when he cast (spell:147612). <br/><br/>Move away from (spell:147529) as it will explode after 4 sec. Note that the bomb from (spell:147529) will also deal heavy damage to NPC... try to bring him close to the Bomb then move away before it explode.<br/><br/>Found in (map:951) (39.70, 93.40, 951, "(npc:71920)")|
@@ -722,7 +722,7 @@ function NPCDataModule:Initialize()
 |NPCID|73282| |LVL|Level 91| |ABIL|147896| |NDIS|104159,102318,102291,102289,104347,102321,102290,102287,102288,102277,102282,102272,102264,102320,102266,102267,102285,102286,102284,102283,102278,102280,102323,102270,102274,102269,102263,102265,102268,102322,102279,102281,102276,102271,102273,102275,104345,103982| |ST|No strategy required.<br/><br/>Found in (map:951) (64.50, 27.40, 951, "(npc:73282)")|
 |NPCID|73704| |LVL|Level 91| |ABIL|83622,85253| |NDIS|102318,102291,102289,104347,102321,102290,102287,102288,102277,102282,102272,102264,102320,102266,102267,102285,102286,102284,102283,102278,102280,102323,102270,102274,102269,102263,102265,102268,102322,102279,102281,102276,102271,102273,102275,104345,103982| |ST|Steer clear of (spell:85253).<br/><br/>Found in (map:951) (71.40, 83.10, 951, "(npc:73704)")|
 |NPCID|73666| |LVL|Level 93| |ABIL|148003,147997,148004,148001,147998| |NDIS|86574,102318,102291,102289,104347,102321,102290,102287,102288,102277,102282,102272,102264,102320,102266,102267,102285,102286,102284,102283,102278,102280,102323,102270,102274,102269,102263,102265,102268,102322,102279,102281,102276,102271,102273,102275,104345,103982| |ST|This is the summoned version of Archiereus of Flame by using (item:103684) at the Three-Breeze Terrace (50.20, 22.40, 951, "(npc:73174)").<br/><br/>(item:103684) is available from (npc:73306) (42.8, 54.8, 951, "(npc:73306)") requires honored with (fac:1493), 500 (cur:777).<br/><br/>(spell:148003) - An uninterruptible cast-time AoE that creates a thin fan in front of him that hits you for about 300k, avoiding this is priority number one. <br/>(spell:148004) - summons (npc:73528) with 400k health, this NPC should be killed or it will continue to buff (npc:73174) with (spell:148005)<br/>(spell:148001) - summons (npc:73527) with 39M health. You have to kite it, or it hits you for 100-200k, You will get more than one golem at a time. They can also be stunned.<br/>(spell:147998) - a "rain" mechanic that summons meteors over the a wide area.<br/>(spell:147997) - an interruptible heal.|
-|CAT|(mapid:811)|
+|CAT|(mapid:862)->(mapid:811)|  --Vale of Eternal Blossom
 |NPCID|50336| |LVL|Level 91| |ABIL|124297,124302,124289| |NDIS|87637,87638,87636,87640,87639,87217,86568,93194| |ST|(spell:124289) - Small aoe stomp for heavy damage, simple to move from.<br/>(spell:124302) - Charges his target if they run more than 20 yards away.<br/>(spell:124297) - Increased damage but slowed movement speed, can be soaked or run from.<br/><br/>Found in (map:811) (86.20, 45.20, 811, "(npc:50336)")|
 |NPCID|50349| |LVL|Level 91| |ABIL|125238,125212,125241| |NDIS|87636,87637,87639,87217,87638,86571,87640,93194| |ST|(spell:125238) - Auto attacks with his wand instead of in melee.<br/>(spell:125212) - Basic spell damage main attack that can be soaked or interrupted.<br/>(spell:125241) - Creates a persistent shadow aoe that is cast on the floor at the players current position at the end of the cast.<br/><br/>Found in (map:811) (15.00, 36.00, 811, "(npc:50349)")|
 |NPCID|50359| |LVL|Level 91| |ABIL|124946,124980,124976| |NDIS|86575,87638,87637,87640,87636,87639,87217,93194| |ST|(spell:124946) - A 180° frontal attack, if you're in melee you can stand behind him, ranged can run away.<br/>(spell:124980) - Summons an add to assist him, has little health and does minor damage, can be killed or cc'd until it disappears.<br/>(spell:124976) - A periodic enrage buff cast on himself increasing damage by 5% and stacking.<br/><br/>Found in (map:811) (39.80, 25.00, 811, "(npc:50359)")|
@@ -732,7 +732,7 @@ function NPCDataModule:Initialize()
 |NPCID|50822| |LVL|Level 91| |ABIL|125817,125802,125799| |NDIS|87639,87638,87637,87640,86590,87217,87636,93194| |ST|(spell:125799) - Cannot be interrupted, only stunned / cc'd. Causes (spell:125800) to anyone still in melee. Needs to be run from as soon as they start casting.<br/>(spell:125817) - (2,450% ~300k damage at level 91) Used if you are more than 15 yards away. Run back in after crane kick (do not waste interrupt).<br/>(spell:125802) - Heals the pandaren for 30% of their health. Needs to be interrupted.<br/><br/>Found in (map:811) (42.60, 69.20, 811, "(npc:50822)")|
 |NPCID|50840| |LVL|Level 91| |ABIL|125311,125363,125365,127373| |NDIS|87638,87640,87639,87217,87636,86594,87637,93194| |ST|(spell:116845) - Creates a whirling banana that spins along the ground away from him in a line and then back again causing (spell:125321) to anyone in it's path, move to the side rather than away.<br/>(spell:125365) - Increasing damage on you by up to 11% depending on the elite's level.<br/>(spell:125363) - Causes him to jump around the area dealing damage with (spell:125362) if he lands on you. Will rarely hit you if you're near his start point before he starts jumping.<br/><br/>Found in (map:811) (31.80, 90.20, 811, "(npc:50840)")|
 |NPCID|64403| |LVL|Level 92| |ABIL|125787,126188| |NDIS|90655| |ST|(npc:64403) wanders around (map:811) but it is protected by (spell:126188) preventing anything from attacking it.<br/><br/>You must first remove the (spell:126188) from (npc:64403) by using (item:86546) which it is created from combining 10 (item:86547).<br/><br/>Both (item:86546) and (item:86547) are BoP so you have to collect them yourself. You can collect (item:86547) as a rare drop from any level 90 NPC in (map:811).<br/><br/>Once (npc:64403) is vunerable, it is quite easy to kill because its low HP.<br/><br/>Found in (map:811) (22.40, 16.80, 811, "(npc:64403)")|
-|CAT|(mapid:941)|
+|CAT|(mapid:962)->(mapid:941)| --Frostfire Ridge
 |NPCID|78867| |LVL|Level 90| |ABIL|162319, 162320, 162339, 159356| |NDIS|111476, 118782| |ST|(npc:78867) deals a lot of damage to melee players with (spell:162319) which should be interrupted. Move out of range of (spell:162339) if you can't interrupt it. Found in (map:941) (27.6, 50.0, 941, "(npc:78867)")|
 |NPCID|80242| |LVL|Level 90| |ABIL|151964, 152750| |NDIS|111953| |ST|Strategy not required.<br/><br/>Found in (map:941) (41.2, 68.2, 941, "(npc:80242)")|
 |NPCID|72294| |LVL|Level 90| |ABIL|145693, 145695, 145642| |NDIS|111490| |ST|(npc:72294) will burrow  2 – 3 times during the fight and you will need to attack him before you leave combat otherwise (npc:72294) will despawn and the fight will reset.  There are 3 lava holes that he can come out of so pay attention to the holes, a screen text will tell you which one he will appear at and a small burst of lava will also indicate that he's coming.<br/><br/>Found in (map:941) (40.6, 47.2, 941, "(npc:72294)")|
@@ -779,7 +779,7 @@ function NPCDataModule:Initialize()
 |NPCID|82618| |LVL|Level 101| |ABIL|176570, 171807| |NDIS|119163, 119379 | |ST|Important to save your interrupt for his healing ability which is cast every 20s. <br/><br/>Found in (map:941) (43.6, 8.8, 941, "(npc:82618)")|
 |NPCID|87357| |LVL|Level 101| |ABIL|172683| |NDIS|119416| |ST|Strategy not available yet.<br/><br/>Found in (map:941) (71.2, 29.0, 941, "(npc:87357)")|
 |NPCID|87356| |LVL|Level 101| |ABIL|176237, 176229, 172683| |NDIS|119416| |ST|(npc:87356) can be stunned and rooted. Keep moving to avoid Smash which will damage in a straight line in front of him and Ancient Rune which is a spike that follows your for a few seconds. <br/><br/>Found in (map:941) (70.6, 39.0, 941, "(npc:87356)")|
-|CAT|(mapid:947) - (mapid:962)|
+|CAT|(mapid:962)->(mapid:947)| --Shadowmoon Draenor
 |NPCID|81406| |LVL|Level 90| |ABIL|128075| |NDIS|111666| |ST|Don't stand in front of him when he cast (spell:128075).<br/><br/>Found in (map:947) (29.8, 7.6, 947, "(npc:81406)")|
 |NPCID|77085| |LVL|Level 90| |ABIL|155779, 155825| |NDIS|109075| |ST|Side step (spell:155779) and look out for (spell;155825) void zone.<br/><br/>Found in (map:947) (48.6, 43.6, 947, "(npc:77085)")|
 |NPCID|82268| |LVL|Level 90| |ABIL|165587, 160082| |NDIS|113548| |ST|(npc:82268) will (spell:165587) and cast (spell:160082). You will need to either kill him fast and ignore the minions or AOE down the skeletons minions then focus on  (npc:82268) <br/><br/>Found in (map:947) (40.8, 83.0, 947, "(npc:82268)")|
@@ -818,7 +818,7 @@ function NPCDataModule:Initialize()
 |NPCID|82415| |LVL|Level 92| |ABIL|158056, 167009, 167010, 167012, 158045, 158020, 169790| |NDIS|113543| |ST|Normally (npc:82415) is walking. If you see him running, that means that someone has spooked him and you will be unable to attack him. You need to wait until you see him casually walking, then you either need to sneak up behind him in melee range to attack him, or root in in place so that you can attack him.<br/><br/>Burst him down to below 80% quickly to remove the (spell:169790) debuff, if you don't do that, you'll see "Shinri flees from you!" pop up on your screen and he'll take off running, evading every attack.<br/><br/>Found in (map:947) (61.6, 53.0, 947, "(npc:82415)")|
 |NPCID|86689| |LVL|Level 92| |ABIL|160522, 160323, 160325, 175719, 175720, 160345| |NDIS|118734| |ST|Range players should keep their distance as he deals strong melee attacks.<br/><br/>At low health (npc:86689) will become (spell:160522) and will attacking any npc.<br/><br/>Found in (map:947) (27.6, 43.6, 947, "(npc:86689)")|
 |NPCID|5883| |LVL|Level 93| |ABIL|176065, 158045, 158014, 158024| |NDIS|116773| |ST|(npc:50883) is very rare and hard to find because of 72 hours spawn time and people are costantly looking for him for the 100% chance for mount (item:116773)<br/><br/>Found in (map:947) (45.8, 68.2, 947, "(npc:50883)") (56.2, 52.4, 947, "(npc:50883)") (44.6, 43.8, 947, "(npc:50883)") (39.6, 36.6, 947, "(npc:50883)") (43.0, 31.6, 947, "(npc:50883)") (54.0, 31.2, 947, "(npc:50883)")|
-|CAT|(mapid:949)|
+|CAT|(mapid:962)->(mapid:949)| --Gorgrond
 |NPCID|82085| |LVL|Level 92| |ABIL|174996, 174936, 175031| |NDIS|118222| |ST|(npc:82085) is quite easy to kill, no strategy required.<br/><br/>Found in (map:949) (40.0, 79.0, 949, "(npc:82085)")|
 |NPCID|85907| |LVL|Level 92| |ABIL|175826, 175846, 175810| |NDIS|118232| |ST|As you fight (npc:85907) the (npc:88059) will throw some food pellets..<br/><br/>If you kill the pellet before (npc:85907) eats it, the you get a damage increase buff.<br/><br/>If (npc:85907) eats the pellet before you do, then she gets the damage increase buff.<br/><br/>Found in (map:949) (39.3, 74.6, 949, "(npc:85907)")|
 |NPCID|85250| |LVL|Level 92| |ABIL|170299, 159089, 173826| |NDIS|118221| |ST|Side step (npc:85250) (spell:173826) which cones in front of him<br/><br/>Found in (map:949) (58.4, 68.6, 949, "(npc:85250)")|
@@ -856,7 +856,7 @@ function NPCDataModule:Initialize()
 |NPCID|86574| |LVL|Level 101| |ABIL|173643, 173612, 173615, 173640, 173645| |NDIS|119226| |ST|(npc:86574) will cast a Smoke ability  that causes you to not be able to directly attack/cast spells on him, but AoE's (heal and damage) will still work. <br/><br/>Found in (map:949) (47.8, 31.0, 949, "(npc:86574)")|
 |NPCID|86562| |LVL|Level 101| |ABIL|173434, 173247, 173243| |NDIS|119230| |ST|Strategy not available yet.<br/><br/>Found in (map:949) (49.6, 33.2, 949, "(npc:86562)")|
 |NPCID|50985| |LVL|Level 95| |ABIL|161781| |NDIS|116792| |ST|(npc:50985) is very rare and hard to find because of 72 hours spawn time and people are costantly looking for him for the 100% chance for mount (item:116792)<br/><br/>Found in (map:949) (43.2, 55.5, 949, "(npc:50985)") (42.0, 25.0, 949, "(npc:50985)") (45.4, 47.5, 949, "(npc:50985)") (47.0, 54.1, 949, "(npc:50985)") (43.2, 55.5, 949, "(npc:50985)")|
-|CAT|(mapid:946)|
+|CAT|(mapid:962)->(mapid:946)| --Talador
 |NPCID|77561| |LVL|Level 94| |ABIL|175628, 175653, 175658, 169059, 175650, 175657, 169061, 175645, 175656| |NDIS|119413| |ST|Strategy not available yet.<br/><br/>Found in (map:946) (68.6, 15.6, 946, "(npc:77561)")|
 |NPCID|80471| |LVL|Level 94| |ABIL|164764, 161577, 164758, 162073| |NDIS|116075| |ST|Strategy not available yet.<br/><br/>Found in (map:946) (67.4, 80.6, 946, "(npc:80471)")|
 |NPCID|77719| |LVL|Level 94| |ABIL|173684, 173608| |NDIS|116113| |ST|Once engaged (npc:77719) will spawn 3 (npc:86810). You can avoid them completely by moving away and not agroing them.<br/><br/>Found in (map:946) (33.0, 63.2, 946, "(npc:77719)")|
@@ -900,7 +900,7 @@ function NPCDataModule:Initialize()
 |NPCID|87668| |LVL|Level 102| |ABIL|175212, 175188, 175196, 175174, 175177, 175181| |NDIS|119375, 119170| |ST|You will need a party of five to stand on all the runes  to summon him.<br/><br/>Found in (map:946) (31.4, 47.6, 946, "(npc:87668)")|
 |NPCID|82930| |LVL|Level 102| |ABIL|176359, 176360, 176396, 176440| |NDIS|119393| |ST|Strategy not available yet.<br/><br/>Found in (map:946) (41.2, 42.6, 946, "(npc:82930)")|
 |NPCID|88436| |LVL|Level 102| |ABIL|176676, 176671, 176637, 176636| |NDIS|119383| |ST|Interrupt his (spell:176629) attack and move away from the (spell:176616) which will appear as a cone attack in front of him.<br/><br/>Found in (map:946) (37.6, 42.2, 946, "(npc:88436)")|
-|CAT|(mapid:948)|
+|CAT|(mapid:962)->(mapid:948)| --Spires of Arak
 |NPCID|80614| |LVL|Level 96| |ABIL|165328, 165358, 158087| |NDIS|| |ST|(npc:80614) will cast a whirlwind attack that you need to move out of.<br/><br/>Found in (map:948) (46.8, 23.0, 948, "(npc:80614)")|
 |NPCID|84807| |LVL|Level 96| |ABIL|175147, 175148, 175022, 15576, 175158| |NDIS|118198| |ST|Strategy not available yet.<br/><br/>Found in (map:948) (46.4, 28.6, 948, "(npc:84807)")|
 |NPCID|84890| |LVL|Level 96| |ABIL|161466, 161470, 161533, 161509, 162908| |NDIS|118200| |ST|Strategy not available yet.<br/><br/>Found in (map:948) (54.8, 39.8, 948, "(npc:84890)")|
@@ -931,7 +931,7 @@ function NPCDataModule:Initialize()
 |NPCID|83990| |LVL|Level 100| |ABIL|169108, 168066, 168073, 158573, 158575, 158576| |NDIS|119407| |ST|Strategy not available yet.<br/><br/>Found in (map:948) (51.8, 7.4, 948, "(npc:83990)")|
 |NPCID|85026| |LVL|Level 100| |ABIL|170813, 157355, 170821| |NDIS|119410| |ST|Strategy not available yet.<br/><br/>Found in (map:948) (72.6, 19.6, 948, "(npc:85026)")|
 |NPCID|85037| |LVL|Level 101| |ABIL|172716, 171091, 171057, 171165| |NDIS|120945| |ST|(npc:85037) will cast a DoT effect that will exploded for 20k damage everyone around you. You'll need atleast 3 members with you to summon him since you need to channel the summoning stone to get him to appear. He will summon minions that make him immune to attacks, the minions are small void walkers with 70k hp they don't attack or move they just sit and channel the barrier on Kenos, You need to kill to them remove the shield. You can also use the DoT he puts on you to kill them, this is very convenient when they appear very close to each other.<br/><br/>Found in (map:948) (70.4, 24.2, 948, "(npc:85037)")|
-|CAT|(mapid:950) - (mapid:962)|
+|CAT|(mapid:962)->(mapid:950)| --Nagrand
 |NPCID|82899| |LVL|Level 98| |ABIL|| |NDIS|116832| |ST|In order to summon him, you need to take out the Blademaster Sword that is stuck in the ground. He will periodically summon 3 mirror images with low HP.<br/><br/>Found in (map:950) (84.6, 53.6, 950, "(npc:82899)")|
 |NPCID|82826| |LVL|Level 98| |ABIL|174502, 174504, 174501, 174506| |NDIS|116823| |ST|Strategy not required.<br/><br/>Found in (map:950) (76.6, 64.4, 950, "(npc:82826)")|
 |NPCID|82486| |LVL|Level 98| |ABIL|174895, 174915, 174896, 174908, 174891, 174899| |NDIS|118679| |ST|When (npc:82486) use (spell:174895) he takes 60% less damage for 6 seconds<br/><br/>Found in (map:950) (88.8, 41.2, 950, "(npc:82486)")|
@@ -983,7 +983,7 @@ function NPCDataModule:Initialize()
 |NPCID|98200| |LVL|Level 102| |ABIL|| |NDIS|129218| |ST|Found in (map:950) (23.8, 37.9, 950, "(npc:98200)")| --Guk
 |NPCID|98198| |LVL|Level 102| |ABIL|| |NDIS|129216| |ST|Found in (map:950) (26.2, 34.2, 950, "(npc:98198)")| --Rukdug
 |NPCID|98199| |LVL|Level 102| |ABIL|| |NDIS|129217| |ST|Found in (map:950) (28.5, 30.3, 950, "(npc:98199)")| --Pugg
-|CAT|(mapid:945)|
+|CAT|(mapid:962)->(mapid:945)| --Tanaan Jungle
 |NPCID|91374| |LVL|Level 102| |ABIL|15656, 188470| |NDIS|127336| |ST|Will cast a whirlwind attack (spell:188470) but you can easily avoid it.<br/><br/>Found in (map:945) (17.1,50.8, 945, "(npc:91374)")|
 |NPCID|91093| |LVL|Level 102| |ABIL|175480, 184302| |NDIS|127652| |ST|Avoid the void area from (spell:.175480) and side step (spell:184302)<br/><br/>Found in (map:945) (40.7,69.8, 945, "(npc:91093)")|
 |NPCID|91087| |LVL|Level 102| |ABIL|186820, 184228, 183847| |NDIS|127340| |ST|Side step (spell:184228) attack.<br/><br/>Found in (map:945) (48.4,28.5, 945, "(npc:91087)")|

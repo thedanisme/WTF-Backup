@@ -18,8 +18,16 @@ function Guide:Initialize()
             
             local title = objectData.name .. " ("..objectData.level.."+)"
             
+            local category
+            
+            if type(objectData.category) == "table" then
+                category = objectData.category
+            else
+                category = "|cffffd200" .. objectData.category .. "|r " 
+            end
+            
             DugisGuideViewer:RegisterGuide(
-            "|cffffd200" .. objectData.categoryName .. "|r " 
+            category
             , title .. " " , "" , faction, select(2, UnitClass("player")), "Followers", nil
             , function() return [[T |QID|0|]] end, {objectId = item})
         end) 

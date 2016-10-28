@@ -10,6 +10,18 @@ DugisGuideUser = {
 
 DugisGuideUser.NoQuestLogUpdateTrigger = nil
 
+--Vector
+local function NormalizeVector(x, y)
+    local length = math.sqrt(x * x + y * y)
+    
+    if length == 0 then
+        return 0, 0
+    end 
+    
+    return x / length, y / length
+end
+
+
 function LuaUtils:split(pString, pPattern)
     local Table = {}
     local fpat = "(.-)" .. pPattern
@@ -171,6 +183,67 @@ function IsFrameVisible(frameName)
     return _G[frameName]~= nil and _G[frameName]:IsVisible()
 end
 
+local currentPlayerFacing = 0
+
+function GetPlayerFacing_dugi()
+    local result
+    if GetPlayerFacing then
+        result = GetPlayerFacing()
+    end
+    
+    if not result then
+        result = currentPlayerFacing
+    end
+
+    return result
+end
+
+local lastPlayerPositionX
+local lastPlayerPositionY
+
+local function AngleBetween(_x1, _x2, _y1, _y2)
+    local a = _x1 * _y2 - _x2 * _y1;  
+    local b = _x1 * _x2 + _y1 * _y2;
+
+    return math.atan2(a, b)
+end
+
+local function CalculateCurrentFacing()
+    if not GetPlayerMapPosition then
+        return
+    end
+    local unitX, unitY = GetPlayerMapPosition("player")
+    
+    if not unitX then
+        return
+    end
+    
+    if not lastPlayerPositionX then
+        lastPlayerPositionX, lastPlayerPositionY = unitX, unitY
+        return
+    end
+    
+    local dX = unitX - lastPlayerPositionX
+    local dY = unitY - lastPlayerPositionY
+    
+    dY = -dY
+    
+    --Player didn't move
+    if dX == 0 or dY == 0 then
+        return
+    end
+    
+    dX, dY = NormalizeVector(dX, dY)
+    
+    local angle = AngleBetween(0.0, dX, -1.0, dY) + 3.14159265358
+    
+	--Correction:
+	--angle = angle - (math.sin(angle)*0.2)
+    currentPlayerFacing = angle
+    
+    lastPlayerPositionX, lastPlayerPositionY = unitX, unitY
+end
+
 dugisThreads = {}
 
 -- threadThrottle (if == 1 then one execution per second)
@@ -213,6 +286,9 @@ function LuaUtils:CreateThread(threadName, threadFunction, onEnd, resumeAmountPe
                 end
             end
 		end
+        
+        CalculateCurrentFacing()
+        
 	end) 
 
     dugisThreads[threadName] = coroutine.create(threadFunction)

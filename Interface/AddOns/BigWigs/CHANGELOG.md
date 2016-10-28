@@ -1,7 +1,7 @@
 # BigWigs
 
-## [v19.1-2-ga4a1938](https://github.com/BigWigsMods/BigWigs/tree/a4a1938563df5218a4bb7381041436519cc1b439) (2016-10-21) [](#top)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v19.1...a4a1938563df5218a4bb7381041436519cc1b439)
+## [v21.2-2-gde8214b](https://github.com/BigWigsMods/BigWigs/tree/de8214b8fc705b621649d89b237a6c526a644131) (2016-10-27) [](#top)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v21.2...de8214b8fc705b621649d89b237a6c526a644131)
 
--   Nightmare/Nythendra: Fix normal berserk  
--   Test out blocking pull timers when not in the same zone as the sender, closes #78  
+-   Update deDE.lua (#85)  
+-   Nightmare/EleretheRenferal: Fix WebOfPain bar text.  

@@ -1,6 +1,8 @@
 local ADDON_NAME, TalentMacros = ...
 LibStub("AceAddon-3.0"):NewAddon(TalentMacros, ADDON_NAME, "AceEvent-3.0")
 
+-- luacheck: globals InterfaceOptionsFrame_OpenToCategory IconIntroTracker
+
 local DEFAULT_MACRO = "#showtooltip\n/cast %n"
 local CHECK_TEXTURE = " |T" .. _G.READY_CHECK_READY_TEXTURE .. ":0|t"
 
@@ -28,6 +30,7 @@ local defaults = {
 	profile = {
 		macrotext = {},
 		advanced = true,
+		disablepush = false,
 	},
 }
 
@@ -52,6 +55,17 @@ local function GetOptions()
 				order = 2,
 				width = "full",
 			},
+			disablepush = {
+				type = "toggle",
+				name = "Disable placing new abilities on your bars",
+				get = function() return db.disablepush end,
+				set = function(info, value)
+					db.disablepush = value
+					TalentMacros:UpdateFlyin()
+				end,
+				order = 3,
+				width = "full",
+			},
 			advanced = {
 				type = "toggle",
 				name = "Enable templates for each talent",
@@ -61,13 +75,14 @@ local function GetOptions()
 					db.advanced = value
 					TalentMacros:UpdateMacros()
 				end,
-				order = 3,
+				order = 4,
 				width = "full",
 			},
 			advanced_text = {
 				type = "description",
 				name = "|cffffd200Delete all of the macro text and hit accept to reset to the default text. The icon will be set to the talent icon for passive talents or if there is no #show or #tooltip in the macro text.|r",
 				fontSize = "medium",
+				order = 5,
 				hidden = function() return not db.advanced end,
 			},
 		},
@@ -146,12 +161,21 @@ function TalentMacros:OnInitialize()
 		InterfaceOptionsFrame_OpenToCategory(ADDON_NAME)
 	end
 
-	self:RegisterEvent("PLAYER_TALENT_UPDATE")
+	self:RegisterEvent("PLAYER_TALENT_UPDATE", "UpdateMacros")
 	self:RegisterEvent("PLAYER_LOGOUT")
+	self:UpdateFlyin()
 end
 
 function TalentMacros:Print(...)
 	print("|cff33ff99TalentMacros|r:", ...)
+end
+
+function TalentMacros:UpdateFlyin()
+	if db.disablepush then
+		IconIntroTracker:UnregisterEvent("SPELL_PUSHED_TO_ACTIONBAR")
+	else
+		IconIntroTracker:RegisterEvent("SPELL_PUSHED_TO_ACTIONBAR")
+	end
 end
 
 function TalentMacros:PLAYER_LOGOUT()
@@ -159,11 +183,6 @@ function TalentMacros:PLAYER_LOGOUT()
 	for tier = 1, MAX_TALENT_TIERS do
 		EditMacro(("t%d"):format(tier), nil, "INV_Misc_QuestionMark", "")
 	end
-end
-
-function TalentMacros:PLAYER_TALENT_UPDATE()
-	LibStub("AceConfigRegistry-3.0"):NotifyChange(ADDON_NAME)
-	self:UpdateMacros()
 end
 
 function TalentMacros:PLAYER_REGEN_ENABLED()
@@ -183,7 +202,7 @@ function TalentMacros:UpdateMacros()
 		if available and selected ~= 0 then
 			local id, name, iconTexture = GetTalentInfo(tier, selected, spec)
 			local icon = "INV_Misc_QuestionMark"
-			local default = DEFAULT_MACRO:gsub("%%n", name)
+			local default = DEFAULT_MACRO:gsub("%%n", name or "")
 			local body = db.advanced and db.macrotext[id] or default
 			if (body == default and not GetSpellInfo(name)) or not body:find("#show", nil, true) then
 				icon = iconTexture:lower():gsub("interface\\icons\\", "")
@@ -193,6 +212,7 @@ function TalentMacros:UpdateMacros()
 			EditMacro(("t%d"):format(tier), nil, "INV_Misc_QuestionMark", "")
 		end
 	end
+	LibStub("AceConfigRegistry-3.0"):NotifyChange(ADDON_NAME)
 end
 
 function TalentMacros:CreateMacros()

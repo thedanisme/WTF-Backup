@@ -118,7 +118,7 @@ function NPCJournalFrame:Initialize()
 			NPCInfo.ABIL = NPCObjects[id].ABIL
 			NPCInfo.NDIS = NPCObjects[id].NDIS
 			NPCInfo.CSST = NPCObjects[id].CSST
-            NPCInfo.categoryName = NPCObjects[id].categoryName
+            NPCInfo.category = NPCObjects[id].category
 		end
 		
 		return NPCInfo
@@ -270,7 +270,7 @@ function NPCJournalFrame:Initialize()
 			self:SetInfoForPetData(petDatabaseData.speciesId, petData, petDatabaseData)  
 			petData.guide = petDatabaseData.guide
 			petData.modelId = petDatabaseData.modelId
-			petData.categoryName = petDatabaseData.categoryName
+			petData.category = petDatabaseData.category
 			return petData 
 		end
 
@@ -867,6 +867,13 @@ function NPCJournalFrame:Initialize()
 		return result
 	end
 
+    local function CategoryName2Table(categoryName)
+        local result = LuaUtils:split(categoryName, '->')
+        if #result == 1 then
+            return result[1]
+        end
+        return result
+    end
 
 	-------------------------- DATABASE TRANSFORMATION ---------------------------
 	------- NPC Data -------
@@ -876,13 +883,15 @@ function NPCJournalFrame:Initialize()
 		NPCObjects = {}
 		NPCIds = {}
         
+        local currentCategory = nil
+        
         local lastCategory = "Elites"
 		local j = 1
 		for i, content in ipairs(NPCDataTable) do
             currentCategory = content:match("|CAT|([^|]*)|")
             
             if currentCategory ~= nil then
-                lastCategory = currentCategory
+                lastCategory = CategoryName2Table(NPCJournalFrame:ReplaceMapTags(currentCategory, "mapid", true))
             end
         
             if currentCategory == nil then
@@ -903,7 +912,7 @@ function NPCJournalFrame:Initialize()
                 NPCObjects[NPCID].ST =  LuaUtils:matchString(content, "|ST|([^|]*)|")
                 
                 NPCObjects[NPCID].CSST =  LuaUtils:matchString(content, "|CSST|([^|]*)|")
-                NPCObjects[NPCID].categoryName = NPCJournalFrame:ReplaceMapTags(lastCategory, "mapid", true)
+                NPCObjects[NPCID].category = lastCategory
                 NPCIds[j] = NPCID
                 j = j+1
             end
@@ -927,7 +936,7 @@ function NPCJournalFrame:Initialize()
             currentCategory = content:match("|CAT|([^|]*)|")
             
             if currentCategory ~= nil then
-                lastCategory = currentCategory
+                lastCategory = CategoryName2Table(NPCJournalFrame:ReplaceMapTags(currentCategory, "mapid", true))
             end
             
             if currentCategory == nil then
@@ -937,7 +946,7 @@ function NPCJournalFrame:Initialize()
                 MountObjects[MSID].guide =  LuaUtils:matchString(content, "|GUIDE|([^|]*)|")
                 --MountObjects[MSID].modelId =  LuaUtils:matchString(content, "|DID|([^|]*)|")
                 MountObjects[MSID].faction =  LuaUtils:matchString(content, "|FAC|([^|]*)|")
-                MountObjects[MSID].categoryName = NPCJournalFrame:ReplaceMapTags(lastCategory, "mapid", true)
+                MountObjects[MSID].category = lastCategory
                 MountDataIds[j] = MSID
                 j = j + 1
             end
@@ -967,7 +976,7 @@ function NPCJournalFrame:Initialize()
             currentCategory = content:match("|CAT|([^|]*)|")
             
             if currentCategory ~= nil then
-                lastCategory = currentCategory
+                lastCategory = CategoryName2Table(NPCJournalFrame:ReplaceMapTags(currentCategory, "mapid", true))
             end
             
             if currentCategory == nil then
@@ -977,7 +986,7 @@ function NPCJournalFrame:Initialize()
                 PetObjects[PID].guide =  LuaUtils:matchString(content, "|GUIDE|([^|]*)|")
                 PetObjects[PID].speciesId =  LuaUtils:matchString(content, "|SID|([^|]*)|")
                 PetObjects[PID].faction =  LuaUtils:matchString(content, "|FAC|([^|]*)|")
-                PetObjects[PID].categoryName = NPCJournalFrame:ReplaceMapTags(lastCategory, "mapid", true)
+                PetObjects[PID].category = lastCategory
                 PetDataIds[j] = PID 
                 j = j + 1
             end
@@ -995,14 +1004,15 @@ function NPCJournalFrame:Initialize()
 		
         local i = 1
         
-        local lastCategory = "Bosses"
+        --Auto means "map name"
+        local lastCategory = "Auto"
         
         local j = 1
 		for _, content in ipairs(BossDataTable) do
             currentCategory = content:match("|CAT|([^|]*)|")
             
             if currentCategory ~= nil then
-                lastCategory = currentCategory
+                lastCategory = CategoryName2Table(NPCJournalFrame:ReplaceMapTags(currentCategory, "mapid", true))
             end
         
             if currentCategory == nil then
@@ -1019,7 +1029,7 @@ function NPCJournalFrame:Initialize()
                     BossObjects[BOSSID].HEALText = LuaUtils:matchString(content, "|HEAL|([^|]*)|")
                     BossObjects[BOSSID].TANKText = LuaUtils:matchString(content, "|TANK|([^|]*)|")
                     BossObjects[BOSSID].MAPID =  LuaUtils:matchString(content, "|MAPID|([^|]*)|")
-                    BossObjects[BOSSID].categoryName = NPCJournalFrame:ReplaceMapTags(lastCategory, "mapid", true)
+                    BossObjects[BOSSID].category = lastCategory
                     BossDataIds[j] = BOSSID  
                     if versionIndex > 1 then
                         BossObjects[BOSSID].alternative = true
@@ -1057,7 +1067,7 @@ function NPCJournalFrame:Initialize()
             currentCategory = content:match("|CAT|([^|]*)|")
             
             if currentCategory ~= nil then
-                lastCategory = currentCategory
+                lastCategory = CategoryName2Table(NPCJournalFrame:ReplaceMapTags(currentCategory, "mapid", true))
             end
             
             if currentCategory == nil then
@@ -1065,7 +1075,7 @@ function NPCJournalFrame:Initialize()
                 FollowerObjects[FID] = {}
                 FollowerObjects[FID].guide = LuaUtils:matchString(content, "|GUIDE|([^|]*)|")
                 FollowerObjects[FID].NPCID = LuaUtils:matchString(content, "|NPCID|([^|]*)|")
-                FollowerObjects[FID].categoryName = NPCJournalFrame:ReplaceMapTags(lastCategory, "mapid", true)
+                FollowerObjects[FID].category = lastCategory
                 FollowerDataIds[j] = FID 
                 j = j + 1
             end
@@ -1676,6 +1686,7 @@ function NPCJournalFrame:Initialize()
 		end
 		
 		NPCJournalFrame.OnHyperlinkLeave = function(self, linkData, link, button)
+            linkData = linkData or ""
             local tag = LuaUtils:split(linkData, ':')
 			local tagType = tag[1]
             
@@ -2102,6 +2113,7 @@ function NPCJournalFrame:Initialize()
 				self.guideFrame:SetDisplayInfo(data.modelId)
 			end
 			self.guideTitle:SetText("|cffffffff ".."Mount - Guide".."|r")
+			self.guideTitle:SetWidth(340)
 			self.guideTitleRight:Hide()
 		else
             if isFollower then

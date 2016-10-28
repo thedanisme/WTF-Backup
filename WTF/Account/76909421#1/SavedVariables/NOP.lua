@@ -37,7 +37,7 @@ NewOpenablesProfile = {
 						"UIParrent", -- [2]
 						"TOPLEFT", -- [3]
 					},
-					["version"] = "|cFFFFFFFF06.18 20.10.2016 use |cFFFF00FF/nop|cFFFFFFFF",
+					["version"] = "|cFFFFFFFF06.20 27.10.2016 use |cFFFF00FF/nop|cFFFFFFFF",
 					["lockButton"] = true,
 				},
 			},

@@ -5,6 +5,7 @@ return [[
 
 R Halls of Valor |SID|28994| |N|Travel to {Halls of Valor} (47.67, 44.56)| |Z|1041 2| |F|1041 2| |I|
 K (npc:94960) |SID|28994| |N|Kill (npc:94960) in {The High Gate}<br/><b>Avoid standing near (spell:193235)<br/><b>Watch out for (npc:97068) leaving (spell:193260) (47.67, 44.56)| |Z|1041 2| |NPC|94960|
+N (item:135575) |QID|38974.1| |N|Collect (item:135575) from (npc:94960) (47.67, 44.56)| |Z|1041 2| |NPC|94960|
 T The Brewmaster |QID|41040| |N|(npc:103049) in the {The High Gate} (48.97,10.85)| |Z|1041 2| |NPC|103049| |O| |C|Monk|
 A Odyn's Cauldron |QID|41059| |N|(npc:103049) in the {The High Gate} (48.97,10.85)| |Z|1041 2| |NPC|103049| |O| |C|Monk|
 N (item:134005) |QID|41059.1| |N|Collect (item:134005)  in the {Halls of Valor} (41.94,66.38)| |Z|1041 2| |O| |C|Monk|
@@ -17,6 +18,8 @@ N (item:139469) |QID|44075.1| |N|Collect (item:139469) from (npc:95674) (56.91, 
 K (npc:95675) |SID|28997| |N|Kill (npc:95675) in {Halls of Valor}<br/><b>You will need to challenge the mini bosses before (npc:95675)  will appear<br/><b>All players shouold spread out to reduce the damage of (spell:193659)<br/><b>Someone need to click on the Aegis of Aggramar and protect the party from (spell:202494) attack<br/><b>Tank: Use active mitigation to reduce the attack of (spell:193668) (50.70, 85.77)| |Z|1041 3|
 K (npc:95676) |SID|28998| |N|Defeat (npc:95676) in {Halls of Valor}<br><b>When affected by (spell:197961) look at the floor and run to the matching rune<br/><b>Avoid (spell:221872) and (spell:198088)<br/><b>Run away from (npc:95676) to avoid (spell:198263) (52.81, 84.83)| |Z|1041 3| |NPC|95676|
 N (item:136784) |QID|39348.1| |N|Click on the Spoils chest and collect (item:136784) (51.35,85.60)| |Z|1041 3| |O|
+N (item:129293) |QID|39904.1| |N|Collect (item:129293) from then Spoils of Worthy)(52.81, 84.83)| |Z|1041 3| |O| --Enchanting
+N (item:133802) |QID|40877.1| |N|Collect (item:133802) from the Spoils of Worthy (52.81, 84.83)| |Z|1041 3| |O| --Engineering
 T Securing the Aegis |QID|40072| |N|Aegis of Aggramar in {Halls of Valor} (50.79, 88.18)| |Z|1041 3| |O|
 A The Aegis of Aggramar |QID|43349| |N|Aegis of Aggramar in {Halls of Valor} (50.79, 88.18)| |Z|1041 3| |O|
 

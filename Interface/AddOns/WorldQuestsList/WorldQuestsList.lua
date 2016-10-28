@@ -1,4 +1,4 @@
-local VERSION = 22
+local VERSION = 23
 
 --[[
 Special icons for rares, pvp or pet battle quests in list
@@ -51,8 +51,10 @@ Fixed summary while filtered
 Added "Time to Complete" for marked ("**") quests
 Added 7.1 support
 Different color for elite quests
-Some pvp quests shows honor as reward if reward is only gold
+Some pvp quests shows honor as reward if reward is only gold [filter for them gold as before]
 Minor fixes
+
+7.1 Update
 ]]
 
 local charKey = (UnitName'player' or "").."-"..(GetRealmName() or ""):gsub(" ","")
@@ -527,7 +529,7 @@ local function WorldQuestList_LineName_OnClick(self,button)
 				BonusObjectiveTracker_TrackWorldQuest(line.questID)
 			end
 		end
-
+		
 		if line.data then
 			local Wx,Wy = line.data.Wx,line.data.Wy
 			if (GExRT and not VWQL.DisableArrow) and Wx and Wy then
@@ -544,7 +546,8 @@ local function WorldQuestList_LineName_OnClick(self,button)
 				GExRT.F.Arrow:ShowRunTo(x,y,15,nil,true)
 			end
 		end
-		
+
+
 		local info = line.data
 		if info and info.zoneMapID and GetCurrentMapAreaID() == 1007 and not IsShiftKeyDown() then
 			WorldQuestList.mapC:Hide()
@@ -916,7 +919,7 @@ WorldQuestList.optionsDropDown.Button:SetScript("OnClick",function(self)
 			info.text = UI_SCALE
 			info.value = 1
 			UIDropDownMenu_AddButton(info)
-			
+					
 			info.hasArrow = true
 			info.notCheckable = true
 			info.text = LOCALE.anchor
@@ -1653,7 +1656,8 @@ function WorldQuestList_Update()
 		if data.isEliteQuest then
 			line.name:SetTextColor(.2,.5,1)
 		elseif data.isNewQuest then
-			line.name:SetTextColor(.15,.7,1)
+			--line.name:SetTextColor(.3,.8,1)
+			line.name:SetTextColor(1,1,.7)
 		else
 			line.name:SetTextColor(1,1,1)
 		end

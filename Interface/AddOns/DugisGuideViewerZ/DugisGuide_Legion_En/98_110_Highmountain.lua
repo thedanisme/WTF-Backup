@@ -156,7 +156,7 @@ T Wrathshard |QID|39134| |N|(npc:94561) in {Crystal Fissure} (49.04, 55.21)| |Z|
 T No Time to Talk |QID|39133| |N|(npc:94561) in {Crystal Fissure} (49.04, 55.21)| |Z|1024 0| |NPC|94561|
 N (item:138199) |QID|42622.1| |N|Collect 4 (item:138199) in {Thunder Totem}. They are spread around the village (55.61, 21.90)| |Z|1080 0|
 N Ethel Waterwise |QID|42590.1| |N|Find (npc:107732) in {Thunder Totem} (53.66, 20.63)| |Z|1080 0| |NPC|107732|
-C Moozy's Reunion |QID|42590.2| |N|Reunite (npc:107732) with her family in {The Hammer's Cradle} (46.05, 54.39)| |Z|1080 0| |NPC|107732|
+C Moozy's Reunion |QID|42590.2| |N|Reunite (npc:107732) with her family in {The Hammer's Cradle}<br/><br/>You will need to walk very slowly with her (46.05, 54.39)| |Z|1080 0| |NPC|107732|
 T Moozy's Reunion |QID|42590| |N|(npc:96084) in {The Hammer's Cradle} (45.75, 54.65)| |Z|1080 0| |NPC|96084|
 
 T Ceremonial Drums |QID|42622| |N|(npc:108017) in the {Hall of Chieftains} (59.14, 87.42) (56.04, 77.58)| |Z|1080 6| |NPC|108017|

@@ -28810,7 +28810,13 @@ function TaxiData:Initialize()
 			":301:0:80.25,34.83:1014:10:60.92,44.73:qid:44663:fac:Alliance",--Stormwind > Dalaran Legion
 			":321:2:36.32,71.14:1014:10:60.92,44.73:qid:44184:fac:Horde",--Orgrimmar Cleft of Shadow > Dalaran Legion		
 			":1044:0:52.40,57.17:1014:10:60.92,44.73:cls:MONK", --Monk Order Hall > Dalaran Legion
-			":1068:1:57.31,90.12:1014:10:60.92,44.73:cls:MAGE", --Mage Order Hall > Dalaran Legion
+			
+			":1068:1:57.31,90.12:1014:10:60.92,44.73:cls:MAGE", --Mage Order Hall > Dalaran Legion			
+			":1068:1:55.10,39.97:1015:0:57.91,15.11:spell:223413:cls:MAGE", --Mage Order Hall > Azsuna (Teleporation Nexus)
+			":1068:1:56.64,44.37:1024:0:31.40,63.80:spell:223413:cls:MAGE", --Mage Order Hall > Highmountain (Teleporation Nexus)
+			":1068:1:66.84,46.01:1018:0:51.30,56.10:spell:223413:cls:MAGE", --Mage Order Hall > Val'shara (Teleporation Nexus)
+			":1068:1:67.09,41.96:1017:0:31.34,60.51:spell:223413:cls:MAGE", --Mage Order Hall > Stormheim (Teleporation Nexus)						
+			
 			":23:20:37.79,63.84:1014:10:33.20,68.89:cls:PALADIN:fac:Alliance:qid:38576", --Paladin Order Hall > Dalaran Legion
 			":23:20:37.79,63.84:1014:10:61.27,14.82:cls:PALADIN:fac:Horde:qid:38576", --Paladin Order Hall > Dalaran Legion
 			":1048:0:45.52,23.93:1077:0:51.60,35.07:cls:DRUID:qid:40645", --Emerald Dreamway > Dreamgrove			

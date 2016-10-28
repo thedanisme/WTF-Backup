@@ -6,6 +6,18 @@ DGV.mapdata = mapdata
 local GetCreateTable, InitTable = DGV.GetCreateTable, DGV.InitTable
 local _
 
+function DGV:Waypoint2MapCoordinates(waypoint)
+    local wpx, wpy, wpm, wpf = waypoint.x/100, waypoint.y/100, waypoint.map, waypoint.floor
+    local currentFloor = GetCurrentMapDungeonLevel()
+    if wpf and currentFloor~=wpf then
+        wpx, wpy = DGV:TranslateWorldMapPosition(wpm, wpf, wpx, wpy, wpm, currentFloor)
+    end
+    wpx = wpx * DugisMapOverlayFrame:GetWidth();
+    wpy = -wpy * DugisMapOverlayFrame:GetHeight();
+
+    return wpx, wpy
+end
+
 --/run DGV:ShowMapData(mapId, ...)
 function DGV:ShowMapData(mapId, ...)
 	local tbl = {}
@@ -131,6 +143,10 @@ end
 function DGV:GetPlayerPosition()
 
     local x, y = GetPlayerMapPosition("player")
+    if x == nil then
+        x, y = 0, 0 
+    end
+    
     if x and y and x > 0 and y > 0 then
 	local map, floor = GetCurrentMapAreaID(), GetCurrentMapDungeonLevel();
         floor = floor or self:GetDefaultFloor(map)
@@ -143,6 +159,9 @@ function DGV:GetPlayerPosition()
 
     LuaUtils:DugiSetMapToCurrentZone()
     local x, y = GetPlayerMapPosition("player")
+    if x == nil then
+        x, y = 0, 0 
+    end
 
     if x <= 0 and y <= 0 then
         return

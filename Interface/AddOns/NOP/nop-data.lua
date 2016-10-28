@@ -31,10 +31,10 @@ NOP.T_SPELL_BY_USE_TEXT = { -- [spellID] = {min-count,itemID,{"sub-Zone"},{[mapI
 NOP.T_RECIPES = { -- [ItemId] = {min-count, "gsub regex" | tooltip-line-number}, item tooltip template only text to 1st match is compared, that mean all items of same school would be looked up.
   [122219] = {1,"(.+:).*"}, -- Music Roll: Way of the Monk
   [122594] = {1,"(.+:).*"}, -- Rush Order: Tailoring Emporium
-  [100865] = {1,"(.+:).*"}, -- Plans: Balanced Trillium Ingot and Its Uses
+  [100865] = {1,"(.+:).*"}, -- Plans: Balanced Trillium Ingot and Its Uses, some old recipes has no learning spell
   [118592] = {2,"(.+:).*"}, -- Partial Receipt: Gizmothingies
   [128440] = {1,"(.+:).*"}, -- Contract: Dowser Goodwell
-  [100863] = {1,"(.+:).*"}, -- Pattern: Celestial Cloth and Its Uses, some old recipes has no leraning spell
+  [100863] = {1,"(.+:).*"}, -- Pattern: Celestial Cloth and Its Uses, some old recipes has no learning spell
   [111972] = {1,2}, -- Enchanter's Study, Level 2, 2nd line contains "Garrison Blueprint"
   [128315] = {1,2}, -- Medallion of the Legion, 2nd line contains "Use: Crush the medallion, increasing reputation with the denizens of Draenor by 1,000. (1 Sec Cooldown)"
   [127751] = {1,3}, -- Fel-Touched Pet Supplies, 3rd line Use: Open the bag. (1 Sec Cooldown)
@@ -43,7 +43,7 @@ NOP.T_RECIPES = { -- [ItemId] = {min-count, "gsub regex" | tooltip-line-number},
   [118427] = {1,3}, -- Autographed Hearthstone Card, 3rd line contains "Use: Adds this toy to your toy box."
   [127413] = {1,3}, -- Jeweled Arakkoa Effigy, 3rd line contains "Use: Pry out the eyes of the statue."
 }
-NOP.T_ITEMS = { -- [itemID] = {min-count,{"sub-Zone","sub-Zone",...} | mapID | {mapID,mapID,...},auraID}, table for opening item by use mostly pet supplies 
+NOP.T_ITEMS = { -- [itemID] = {min-count,{"sub-Zone","sub-Zone",...} | mapID | {mapID,mapID,...},auraID}, table for opening/use item by itemID, is no possible to check any common text
    [69838] = {1,nil,nil}, -- Chirping Box
    [89125] = {1,nil,nil}, -- Sack of Pet Supplies
    [16885] = {1,nil,nil}, -- Heavy Junkbox
@@ -187,6 +187,19 @@ NOP.T_ITEMS = { -- [itemID] = {min-count,{"sub-Zone","sub-Zone",...} | mapID | {
   [122605] = {1,nil,nil}, -- Tome of the Stones
   [140397] = {1,nil,223670}, -- G'Hanir's Blossom
   [140439] = {1,nil,223722}, -- Sunblossom Pollen
+  [141870] = {1,nil,nil}, -- Arcane Tablet of Falanaar
+  [141338] = {1,nil,nil}, -- Valarjar Insignia 
+  [141341] = {1,nil,nil}, -- Highmountain Tribe Insignia 
+  [141339] = {1,nil,nil}, -- Dreamweaver Insignia 
+  [141343] = {1,nil,nil}, -- Nightfallen Insignia 
+  [141340] = {1,nil,nil}, -- Court of Farondis Insignia 
+  [141342] = {1,nil,nil}, -- Wardens Insignia 
+  [141987] = {1,nil,nil}, -- Greater Valarjar Insignia 
+  [141990] = {1,nil,nil}, -- Greater Highmountain Tribe Insignia 
+  [141988] = {1,nil,nil}, -- Greater Dreamweaver Insignia 
+  [141992] = {1,nil,nil}, -- Greater Nightfallen Insignia 
+  [141989] = {1,nil,nil}, -- Greater Court of Farondis Insignia 
+  [141991] = {1,nil,nil}, -- Greater Wardens Insignia
 }
 NOP.T_FRAMES = { -- these frames need to be closed before I can use item on button
   "MerchantFrame", 
