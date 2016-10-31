@@ -51,8 +51,8 @@ H: 26
 Frame: DugisArrowFrame
 FrameLevel: 1
 Anchor: RIGHT
-X: -171
-Y: -213
+X: -293
+Y: -83
 W: 80
 H: 60
 Frame: EventTrackerFrame

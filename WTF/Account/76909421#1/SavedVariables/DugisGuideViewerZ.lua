@@ -156,8 +156,8 @@ DugisGuideViewerProfiles = {
 					[58] = {
 						["checked"] = false,
 					},
-					[72] = {
-						["checked"] = true,
+					[103] = {
+						["checked"] = "None",
 					},
 					[112] = {
 						["checked"] = "Expand Down",
@@ -165,8 +165,12 @@ DugisGuideViewerProfiles = {
 					[79] = {
 						["checked"] = false,
 					},
-					[33] = {
-						["checked"] = true,
+					[302] = {
+						["options"] = {
+							false, -- [1]
+							false, -- [2]
+							false, -- [3]
+						},
 					},
 					["SettingsRevision"] = 10,
 					[39] = {
@@ -175,8 +179,8 @@ DugisGuideViewerProfiles = {
 					[36] = {
 						["checked"] = true,
 					},
-					[103] = {
-						["checked"] = "None",
+					[72] = {
+						["checked"] = true,
 					},
 					[74] = {
 						["checked"] = true,
@@ -298,12 +302,8 @@ DugisGuideViewerProfiles = {
 					[57] = {
 						["checked"] = true,
 					},
-					[302] = {
-						["options"] = {
-							false, -- [1]
-							false, -- [2]
-							false, -- [3]
-						},
+					[33] = {
+						["checked"] = true,
 					},
 				},
 			},
@@ -359,34 +359,6 @@ DugisGuideViewerProfiles = {
 					}, -- [24]
 					[58] = {
 						["checked"] = false,
-					},
-					[37] = {
-						["checked"] = true,
-					},
-					[57] = {
-						["checked"] = true,
-					},
-					["EssentialsMode"] = 1,
-					[110] = {
-						["options"] = {
-							"None", -- [1]
-							"Active Talent Specialization", -- [2]
-							"Elemental", -- [3]
-							"Enhancement", -- [4]
-							"Restoration", -- [5]
-						},
-					},
-					[33] = {
-						["checked"] = true,
-					},
-					[108] = {
-						["checked"] = "Standard - Anchored",
-					},
-					[76] = {
-						["checked"] = true,
-					},
-					[36] = {
-						["checked"] = true,
 					},
 					["QuestRecordTable"] = {
 						["framePositions"] = {
@@ -446,6 +418,34 @@ DugisGuideViewerProfiles = {
 							["DugisGuideViewer_TargetFrame"] = {
 							},
 						},
+					},
+					[57] = {
+						["checked"] = true,
+					},
+					["EssentialsMode"] = 1,
+					[110] = {
+						["options"] = {
+							"None", -- [1]
+							"Active Talent Specialization", -- [2]
+							"Elemental", -- [3]
+							"Enhancement", -- [4]
+							"Restoration", -- [5]
+						},
+					},
+					[33] = {
+						["checked"] = true,
+					},
+					[108] = {
+						["checked"] = "Standard - Anchored",
+					},
+					[76] = {
+						["checked"] = true,
+					},
+					[36] = {
+						["checked"] = true,
+					},
+					[103] = {
+						["checked"] = "None",
 					},
 					[74] = {
 						["checked"] = true,
@@ -509,8 +509,8 @@ DugisGuideViewerProfiles = {
 					[112] = {
 						["checked"] = "Expand Down",
 					},
-					[103] = {
-						["checked"] = "None",
+					[37] = {
+						["checked"] = true,
 					},
 				},
 			},
@@ -877,8 +877,8 @@ DugisGuideViewerProfiles = {
 					[112] = {
 						["checked"] = "Expand Down",
 					},
-					[203] = {
-						["checked"] = 0,
+					["ModelViewer"] = {
+						["pos_x"] = false,
 					},
 					["EssentialsMode"] = 1,
 					[69] = {
@@ -900,8 +900,8 @@ DugisGuideViewerProfiles = {
 					[74] = {
 						["checked"] = true,
 					},
-					["ModelViewer"] = {
-						["pos_x"] = false,
+					[203] = {
+						["checked"] = 0,
 					},
 				},
 			},
@@ -1019,12 +1019,12 @@ DugisGuideViewerProfiles = {
 					[42] = {
 						["checked"] = false,
 					},
+					[6] = {
+						["checked"] = true,
+					},
 					["FirstTime"] = false,
 					[203] = {
 						["checked"] = 0,
-					},
-					[6] = {
-						["checked"] = true,
 					},
 					[76] = {
 						["checked"] = true,
@@ -1323,7 +1323,7 @@ DugisGuideViewerProfiles = {
 					[60] = {
 						["checked"] = false,
 					},
-					[37] = {
+					[72] = {
 						["checked"] = true,
 					},
 					[112] = {
@@ -1339,14 +1339,14 @@ DugisGuideViewerProfiles = {
 					[36] = {
 						["checked"] = true,
 					},
-					[72] = {
+					[37] = {
 						["checked"] = true,
 					},
 					[74] = {
 						["checked"] = true,
 					},
-					[39] = {
-						["checked"] = false,
+					[76] = {
+						["checked"] = true,
 					},
 					[40] = {
 						["checked"] = false,
@@ -1367,9 +1367,7 @@ DugisGuideViewerProfiles = {
 					[107] = {
 						["checked"] = "None",
 					},
-					[203] = {
-						["checked"] = 0,
-					},
+					["FirstTime"] = false,
 					[207] = {
 						["checked"] = 1,
 					},
@@ -1442,7 +1440,9 @@ DugisGuideViewerProfiles = {
 					[71] = {
 						["checked"] = true,
 					},
-					["FirstTime"] = false,
+					[203] = {
+						["checked"] = 0,
+					},
 					[75] = {
 						["checked"] = true,
 					},
@@ -1461,8 +1461,8 @@ DugisGuideViewerProfiles = {
 					[57] = {
 						["checked"] = true,
 					},
-					[76] = {
-						["checked"] = true,
+					[39] = {
+						["checked"] = false,
 					},
 				},
 			},
@@ -1743,6 +1743,8 @@ CollectedWorldMapTrackingPoints = {
 			"1:2628760720:8719::M", -- [102]
 			"1:2635248874:15659::F", -- [103]
 			"11:1305627011:1308::M", -- [104]
+			"1:2629088528:8719::M", -- [105]
+			"1:2629285132:8719::M", -- [106]
 		},
 		["garrisonsmvalliance_tier3:0"] = {
 			"12:2168165278:77378::M", -- [1]
