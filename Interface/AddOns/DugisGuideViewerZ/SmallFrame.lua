@@ -923,7 +923,7 @@ function SmallFrame:Initialize()
 			tooltip:SetFrameStrata("TOOLTIP") 
 			tooltip:SetParent(UIParent)
 			SmallFrameTooltipTextLeft1:SetFont(filename, 12)
-			tooltip:SetPadding(5)
+			tooltip:SetPadding(5, 5)
 			tooltip:AddLine(statusFrameTooltipText, 1, 1, 1, 1,true)
 			tooltip:Show()
 

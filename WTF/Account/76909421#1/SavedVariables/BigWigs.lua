@@ -19,7 +19,13 @@ BigWigs3DB = {
 		},
 		["BigWigs_Plugins_Sounds"] = {
 		},
+		["BigWigs_Bosses_Dargrul"] = {
+		},
 		["BigWigs_Plugins_Statistics"] = {
+		},
+		["BigWigs_Bosses_Rokmora"] = {
+		},
+		["BigWigs_Bosses_Naraxas"] = {
 		},
 		["BigWigs_Plugins_Colors"] = {
 		},
@@ -49,9 +55,7 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_Respawn"] = {
-		},
-		["BigWigs_Plugins_Common Auras"] = {
+		["BigWigs_Bosses_Ularogg Cragshaper"] = {
 		},
 		["BigWigs_Plugins_Proximity"] = {
 			["profiles"] = {
@@ -69,6 +73,8 @@ BigWigs3DB = {
 				},
 			},
 		},
+		["BigWigs_Plugins_Common Auras"] = {
+		},
 		["BigWigs_Plugins_Messages"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -82,6 +88,8 @@ BigWigs3DB = {
 					["fontSize"] = 20,
 				},
 			},
+		},
+		["BigWigs_Plugins_Respawn"] = {
 		},
 		["BigWigs_Plugins_HeroesVoices"] = {
 		},

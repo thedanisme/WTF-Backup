@@ -971,13 +971,164 @@ A The Stuff of Dreams |QID|43362| |N|(npc:107126) in {Shal'Aran} (36.53,46.81)| 
 C The Stuff of Dreams |QID|43362| |N|Enter the Emerald Nightmare Raid and kill (npc:30108) and collect (item:43362)|  |NPC|30108| |FS|1859, 28000|
 T The Stuff of Dreams |QID|43362| |N|(npc:107126) in {Shal'Aran} (36.53,46.81)| |Z|1033 0| |NPC|107126| |FS|1859, 28000|
 
+A Change of Seasons |QID|43502| |N|(npc:107126) in {Shal'Aran} (36.53,46.81)| |Z|1033 0| |NPC|107126| |FS|1859, 41000|
+T Change of Seasons |QID|43502| |N|(npc:103155) in {Shal'Aran} (37.00,46.24)| |Z|1033 0| |NPC|103155| |FS|1859, 41000|
+A Giving It All We've Got |QID|43562| |N|(npc:103155) in {Shal'Aran} (37.00,46.24)| |Z|1033 0| |NPC|103155| |FS|1859, 41000|
+C Giving It All We've Got |QID|43562| |N|Speak to (npc:103155) and ask Valtrois to amplify the feed (37.00,46.24)| |Z|1033 0| |NPC|103155| |FS|1859, 41000|
+T Giving It All We've Got |QID|43562| |N|(npc:103155) in {Shal'Aran} (37.00,46.24)| |Z|1033 0| |NPC|103155| |FS|1859, 41000|
+A Ephemeral Manastorm Projector |QID|43563| |N|(npc:103155) in {Shal'Aran} (37.00,46.24)| |Z|1033 0| |NPC|103155| |FS|1859, 41000|
+C Ephemeral Manastorm Projector |QID|43563| |N|Kill (npc:109670) collect 4 (item:139689) in {Suramar City}| |Z|1033 0| |NPC|109670| |FS|1859, 41000| |POI|
+
+R Shal'Aran |TID|43563| |N|Travel to {Shal'Aran} (37.00,46.24)| |Z|1033 0|  |FS|1859, 41000|
+T Ephemeral Manastorm Projector |QID|43563| |N|(npc:103155) in {Shal'Aran} (37.00,46.24)| |Z|1033 0| |NPC|103155| |FS|1859, 41000|
+A Flow Control |QID|43564| |N|(npc:103155) in {Shal'Aran} (37.00,46.24)| |Z|1033 0| |NPC|103155| |FS|1859, 41000|
+C Flow Control |QID|43564| |N|Seal off the Arcway Outlets in Lunastre Lane, The Parade Grounds, and the Midnight Court| |Z|1033 0| |NPC|103155| |FS|1859, 41000| |POI|
+N Lunastre Lane outlet |QID|43564.1| |N|Click on the Lunastre Lane outlet to seal it off (45.7,76.2)| |Z|1033 0| |FS|1859, 41000|
+N Parade Grounds outlet |QID|43564.2| |N|Click on the Parade Grounds outlet to seal it off (49.6,62.6)| |Z|1033 0| |FS|1859, 41000|
+N Midnight Court outlet |QID|43564.3| |N|Click on the Midnight Court outlet to seal it off (59.8,59.3)| |Z|1033 0| |FS|1859, 41000|
+T Flow Control |QID|43564| |N|(npc:103155) in {Shal'Aran} (37.00,46.24)| |Z|1033 0| |NPC|103155| |FS|1859, 41000|
+A Bring Home the Beacon |QID|43565| |N|(npc:98548) in {Shal'Aran} (36.59,46.95)| |Z|1033 0| |NPC|98548| |FS|1859, 41000|
+N Survey Evermoon Commons |QID|43565.1| |N|Use the (item:140257) to survey Evermoon Commons (49.0,75.0)| |Z|1033 0| |FS|1859, 41000|
+N Survey Evermoon Bazaar |QID|43565.2| |N|Use the (item:140257) to survey Evermoon Bazaar (50.0,76.0)| |Z|1033 0| |FS|1859, 41000|
+N Survey Siren's Vigil |QID|43565.3| |N|Use the (item:140257) to survey Siren's Vigil (51.0,83.0)| |Z|1033 0| |FS|1859, 41000|
+
+R Shal'Aran |TID|43565| |N|Travel to {Shal'Aran} (37.00,46.24)| |Z|1033 0|  |FS|1859, 41000|
+T Bring Home the Beacon |QID|43565| |N|(npc:98548) in {Shal'Aran} (36.59, 46.95)| |Z|1033 0| |NPC|98548| |FS|1859, 41000|
+A All In |QID|43567| |N|(npc:103155) in {Shal'Aran} (37.00,46.24)| |Z|1033 0| |NPC|103155| |FS|1859, 41000|
+N Hitting the Books |SID|0|1| |N|Wait for the dialog and you will automatically ported to the Arcway scenario<br/><br/>Kill 3 (npc:113191) in {Forgotten Library}, you should see them as yellow dot on your minimap| |QID|43567| |NPC|113191| |FS|1859, 41000|
+N The Nightflow Conduit |SID|0|2| |N|Walk through the door and turn to your right to reach the door| |QID|43567| |FS|1859, 41000|
+N Knock Knock |SID|0|3| |N|Defend Arluin until the progress bar reach 100%| |QID|43567| |FS|1859, 41000|
+N E.M.P |SID|0|4| |N|Click on the E.M.P in the middle of the room| |QID|43567| |FS|1859, 41000|
+N Weather the Storm |SID|0|5| |N|Kill the waves of enemies until the progress bar reaches 100%, you can stand in the middle of the room inside the shield to be protected from the hostiles npcs| |QID|43567| |FS|1859, 41000|
+N (npc:113062) |QID|43567.2| |N|Check on (npc:113062) body on the ground near Shal'Aran entrance| |NPC|113062| |FS|1859, 41000| |POI|
+N Enter Shal'Aran |QID|43567.3| |N|Go inside {Shal'Aran}| |FS|1859, 41000| |POI|
+T All In |QID|43567| |N|(npc:107126) in {Shal'Aran} (36.4, 46.80)| |Z|1033 0| |NPC|107126| |FS|1859, 41000| |POI|
+A Arcan'dor, Gift of the Ancient Magi |QID|43568| |N|(npc:107126) in {Shal'Aran} (36.4, 46.80)| |Z|1033 0| |NPC|107126| |FS|1859, 41000| |POI|
+N Share Fruit with Oculeth |QID|43568.1| |N|Collect a (item:140315) from hanging plants in {Shal'Aran} and speak to (npc:98548) to give it to him| |NPC|98548| |FS|1859, 41000| |POI|
+N Share Fruit with Valtrois |QID|43568.2| |N|Collect a (item:140315) from hanging plants in {Shal'Aran} and speak to (npc:103155) to give it to him| |NPC|103155| |FS|1859, 41000| |POI|
+N Share Fruit with Thalyssra |QID|43568.2| |N|Collect a (item:140315) from hanging plants in {Shal'Aran} and speak to (npc:97140) to give it to him| |NPC|97140| |FS|1859, 41000| |POI|
+T Arcan'dor, Gift of the Ancient Magi |QID|43568| |N|(npc:112146) in {Shal'Aran} (36.4, 46.80)| |Z|1033 0| |NPC|112146| |FS|1859, 41000| |POI|
+A Arluin's Request |QID|43569| |N|(npc:107598) in {Shal'Aran} (37.4, 46.36)| |Z|1033 0| |NPC|107598| |FS|1859, 41000|
+
+R Terrace of Order |TID|43569| |N|Travel to {Terrace of Order} (48.2, 66.8)| |Z|1033 | |FS|1859, 41000|
+N (npc:110698) |QID|43569.1| |N|Locate (npc:110698) inside a building in {Terrace of Order} (48.2, 66.8)| |Z|1033| |NPC|110698| |FS|1859, 41000|
+N Share Arcan'dor Fruit with Arluelle |QID|43569.2| |N|Speak to (npc:110698) and share as fruit {Terrace of Order} (48.2, 66.8)| |Z|1033| |NPC|110698| |FS|1859, 41000|
+T Arluin's Request |QID|43569| |N|(npc:107598) in {Terrace of Order} (48.2, 66.8)| |Z|1033| |NPC|107598| |FS|1859, 41000|
+--Lockdown
+A One Day at a Time |QID|45260| |N|(npc:97140) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|43502|
+C One Day at a Time |QID|45260| |N|Feed the Fruit of the Arcan'dor to a Suramar Refugee in Shal'Aran| |NPC|97140| |PRE|43502| |POI|
+T One Day at a Time |QID|45260| |N|(npc:97140) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|43502|
+A Silence in the City |QID|38649| |N|(npc:97140) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|43502|
+C Silence in the City |QID|38649| |N|Speak to (npc:98548) in {Shal'Aran} (36.61, 45.10)| |Z|1033 0| |NPC|98548| |PRE|43502|
+T Silence in the City |QID|38649| |N|(npc:98548) in {Shal'Aran} (36.61, 45.10)| |Z|1033 0| |NPC|98548| |PRE|43502|
+A Crackdown |QID|38695| |N|(npc:98548) in {Shal'Aran} (36.61, 45.10)| |Z|1033 0| |NPC|98548| |PRE|43502|
+C Crackdown |QID|38695.1| |N|Allow (npc:98548) to teleport you in {Shal'Aran} (36.49, 44.75)| |Z|1033 0| |NPC|98548| |PRE|43502|
+N (spell:202477) |QID|38695| |N|Use the (spell:202477) ability to disguise yourself| |BUFF|Interface\Icons\INV_Helm_Mask_FittedAlpha_B_01_Nightborne_02| |PRE|43502|
+C Crackdown |QID|38695.2| |N|Click on the Broken Telemancy Beacon| |Z|1033 0| |NPC|98548| |PRE|43502| |POI|
+C Crackdown |QID|38695.3| |N|Search the {Waning Crescent}| |Z|1033 0| |NPC|98548| |PRE|43502| |POI|
+C Crackdown |QID|38695.4| |N|Reunite with (npc:107997) in {The Waning Crescent}| |Z|1033 0| |NPC|107997| |PRE|43502| |POI|
+T Crackdown |QID|38695| |N|(npc:107997) in {The Waning Crescent} (47.9,83.0)| |Z|1033 0| |NPC|98548| |PRE|43502| |POI|
+A Answering Aggression |QID|38692| |N|(npc:107997) in {The Waning Crescent} (47.9,83.0)| |Z|1033 0| |NPC|107997| |PRE|43502|
+A No Reason to Stay |QID|38720| |N|(npc:107997) in {The Waning Crescent} (47.9,83.0)| |Z|1033 0| |NPC|107997| |PRE|43502|
+N Evacuate Master Devlyn |QID|38720.4| |N|Click on Master's vase and to evacuate him (50.3,85.2)| |Z|1033 0| |NPC|114978| |PRE|43502|
+N Evacuate Eneas' Family |QID|38720.1| |N|Speak to (npc:108807) and his two children upstair to evacuate the family (49.1,83.8)| |Z|1033 0| |NPC|108807| |PRE|43502|
+N Evacuate Thorvos and Valanth |QID|38720.2| |N|Speak to (npc:114983) and (npc:114984) and to evacuate them (48.9,81.7)| |Z|1033 0| |NPC|114983, 114984| |PRE|43502|
+N Evacuate Scarleth's Girls |QID|38720.3| |N|Speak to (npc:114985) to evacuate them (47.9,80.3)| |Z|1033 0| |NPC|114985| |PRE|43502|
+C Answering Aggression |QID|38692| |N|Kill any 12 of Elisande's Forces in the Waning Crescent, Starcaller Retreat, and Siren's Vigil| |Z|1033 0| |NPC|98548| |PRE|43502| |POI|
+T Answering Aggression |QID|38692| |N|(npc:107997) in {Siren's Vigil} (49.7,85.4)| |Z|1033 0| |NPC|107997| |PRE|43502|
+T No Reason to Stay |QID|38720| |N|(npc:107997) in {Siren's Vigil} (49.7,85.4)| |Z|1033 0| |NPC|107997| |PRE|43502|
+A Regroup |QID|38694| |N|(npc:107997) in {Siren's Vigil} (49.7,85.4)| |Z|1033 0| |NPC|107997| |PRE|43502|
+C Regroup |QID|38694.1| |N|Follow (npc:107997) to the Gondola in {Siren's Vigil} (51.0,87.0)| |Z|1033 0| |NPC|107997| |PRE|43502|
+C Regroup |QID|38694.2| |N|Ride on Deline's Gondola (52.5,80.4)| |Z|1033 0| |NPC|107997| |PRE|43502|
+C Regroup |QID|38694.3| |N|Use the teleporter to the get to the top of the {Evermoon Terrace} (51.5,79.0)| |Z|1033 0| |PRE|43502|
+T Regroup |QID|38694| |N|(npc:107997) in {Evermoon Terrace} (52.05,79.15)| |Z|1033 0| |NPC|107997| |PRE|43502|
+A Visitor in Shal'Aran |QID|44955| |N|(npc:97140) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|43502|
+N Meet the Stranger |QID|44955.1| |N|Speak to (npc:110698) outside of {Shal'Aran} (35.47,47.95)| |Z|1033 0| |NPC|110698| |PRE|43502|
+N Introduce Artuelle to Thalyssra |QID|44955.2| |N|Speak to (npc:97140) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|110698| |PRE|43502|
+T Visitor in Shal'Aran |QID|44955| |N|(npc:97140) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|43502|
+
+--Missing Persons 
+A Continuing the Cure |QID|45261| |N|(npc:97140) in {Shal'Aran}<br/><br/>This quest is not available until November 1 (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|44955|
+C Continuing the Cure |QID|45261| |N|Use (item:143597) on a (npc:111901) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|111901| |PRE|44955| |U|143597|
+T Continuing the Cure |QID|45261| |N|(npc:97140) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|44955|
+A Disillusioned Defector |QID|44722| |N|(npc:97140) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|44955|
+
+R Evermoon Terrace |TID|44722| |N|Use the portal to travel to {Evermoon Terrace} (36.50, 44.76)| |Z|1033 0|
+T Disillusioned Defector |QID|44722| |N|(npc:107997) in {Evermoon Terrace} (52.05,79.15)| |Z|1033 0| |NPC|107997| |PRE|44955|
+A Missing Persons |QID|44724| |N|(npc:107997) in {Evermoon Terrace} (52.05,79.15)| |Z|1033 0| |NPC|107997| |PRE|44955|
+A More Like Me |QID|44723| |N|(npc:116256) in {Evermoon Terrace} (52.05,79.15)| |Z|1033 0| |NPC|116256| |PRE|44955|
+N (spell:202477) |QID|44724| |N|Use the (spell:202477) ability to disguise yourself| |BUFF|Interface\Icons\INV_Helm_Mask_FittedAlpha_B_01_Nightborne_02|
+C More Like Me |QID|44723| |N|Use the (item:142065) on (npc:114958) to identify 5 Deserters.  in {Evermoon Terrace} (52.05,79.15)| |Z|1033 0| |NPC|114958| |PRE|44955| |U|142065| |POI|
+C Missing Persons |QID|44724| |N|Kill demons in {Astravar Harbor} until you collect (item:142066)| |Z|1033 0| |NPC|107997| |PRE|44955| |POI|
+
+R Evermoon Terrace |TID|44723| |N|Use the teleporter to the get to the top of the  {Evermoon Terrace} (51.5,79.0) (52.05,79.15)| |Z|1033 0| |REACH|
+T Missing Persons |QID|44724| |N|(npc:107997) in {Evermoon Terrace} (52.05,79.15)| |Z|1033 0| |NPC|107997| |PRE|44955|
+T More Like Me |QID|44723| |N|(npc:116256) in {Evermoon Terrace} (52.05,79.15)| |Z|1033 0| |NPC|116256| |PRE|44955|
+A Hostage Situation |QID|44725| |N|(npc:107997) in {Evermoon Terrace} (52.05,79.15)| |Z|1033 0| |NPC|107997| |PRE|44955|
+C Hostage Situation |QID|44725| |N|Go to Astravar Harbor and join a group of (npc:107600) being taken to Felsoul Hold and wait for the cutscene| |Z|1033 0| |NPC|107600| |PRE|44955| |POI|
+
+T Hostage Situation |QID|44725| |N|(npc:107997) in {Felsoul Advance} (24.83, 88.74)| |Z|1033 0| |NPC|107997| |PRE|44955| |POI|
+A In the Business of Souls |QID|44726| |N|(npc:107997) in {Felsoul Advance} (24.83, 88.74)| |Z|1033 0| |NPC|107997| |PRE|44955|
+A Smuggled! |QID|44727| |N|(npc:115002) in {Felsoul Advance} (25.80, 88.58)| |Z|1033 0| |NPC|115002|
+N (npc:115002) |QID|44727.1| |N|Release (npc:115002) in {Felsoul Advance} (25.80, 88.58)| |Z|1033 0| |NPC|115002|
+C Smuggled! |QID|44727.2| |N|Click on the cages in {Felsoul Advance} and release 5 captives (25.80, 88.58)| |Z|1033 0|
+K (npc:114998) |QID|44814| |N|Kill (npc:114998) in {Felsoul Advance} (27.23, 89.65)| |Z|1033 0| |NPC|114998|
+T In the Business of Souls |QID|44726| |N|(npc:107997) in {Felsoul Advance} (24.83, 88.74)| |Z|1033 0| |NPC|107997| |PRE|44955| |POI|
+T Smuggled! |QID|44727| |N|(npc:115002) in {Felsoul Advance} (24.83, 88.74))| |Z|1033 0| |NPC|115002| |POI|
+A Waning Refuge |QID|44814| |N|(npc:107997) in {Felsoul Advance} (24.83, 88.74)| |Z|1033 0| |NPC|107997| |PRE|44955|
+C Waning Refuge |QID|44814| |N|Ride Deline's Gondola {Felsoul Advance} (24.64, 88.99) |Z|1033 0| |V|
+
+T Waning Refuge |QID|44814| |N|(npc:107997) in {Evermoon Terrace}| |Z|1033 0| |NPC|107997| |PRE|44955| |POI|
+
+--Waxing Crescent
+A A Message from Ly'leth |QID|45262| |N|(npc:97140) in {Shal'Aran}<br/><br/>This quest is not available until November 8 (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|44814|
+C A Message from Ly'leth |QID|45262| |N|Use (item:143597) on a (npc:111901) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|111901| |PRE|44814|
+T A Message from Ly'leth |QID|45262| |N|(npc:97140) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|44814|
+A Tavernkeeper's Fate |QID|44742| |N|(npc:97140) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|44814|
+
+R Lunastre Estate |TID|44742| |N|Take the portal to {Lunastre Estate} (36.16, 45.05)| |Z|1033 0| |PRE|44814|
+T Tavernkeeper's Fate |QID|44742| |N|(npc:107632) in {Lunastre Estate}| |Z|1033 0| |NPC|107632| |PRE|44814| |POI| 
+A Essence Triangulation |QID|44752| |N|(npc:97140) in {Lunastre Estate}| |Z|1033 0| |NPC|107632| |PRE|44814|
+C Essence Triangulation |QID|44752| |N|Help Thalyssra collect 3 of Vanthir's Arcane Essences. Click on the Echo of Vanthir npcs| |Z|1033 0| |NPC|107632| |PRE|44814| |POI|
+
+R Evermoon Terrace |TID|44723| |N|Use the teleporter to the get to the top of the  {Evermoon Terrace} (51.5,79.0) (52.05,79.15)| |Z|1033 0| |REACH|
+T Essence Triangulation |QID|44752| |N|(npc:97140) in  {Evermoon Terrace} (52.05,79.15)| |Z|1033 0| |NPC|97140| |PRE|44814|
+A On Public Display |QID|44753| |N|(npc:97140) in  {Evermoon Terrace} (52.05,79.15)| |Z|1033 0| |NPC|97140| |PRE|44814|
+N (npc:97140) |QID|44753.1| |N|Speak to (npc:97140) in  {Evermoon Terrace}, and say "I am ready, Thalyssra"| |Z|1033 0| |NPC|97140| |PRE|44814| |POI|
+C On Public Display |QID|44753.2| |N|Track Vanthir's Location. Wait for the dialog to end| |Z|1033 0| |NPC|97140| |PRE|44814| |POI|
+T On Public Display |QID|44753| |N|(npc:97140) in  {Evermoon Terrace} (52.05,79.15)| |Z|1033 0| |NPC|97140| |PRE|44814|
+A Waxing Crescent |QID|44754| |N|(npc:97140) in  {Evermoon Terrace} (52.05,79.15)| |Z|1033 0| |NPC|97140| |PRE|44814|
+K (npc:115607) |QID|44754.1| |N|Kill (npc:115607) and collect (item:142281) in {Terrace of Order}| |Z|1033 0| |NPC|115607| |PRE|44814| |POI|
+N (npc:107598) |QID|44754.2| |N|Click on the containment field and free (npc:107598) in {Terrace of Order}| |Z|1033 0| |NPC|107598| |PRE|44814| |POI|
+T Waxing Crescent |QID|44754| |N|(npc:107598) in {Terrace of Order}| |Z|1033 0| |NPC|107598| |PRE|44814| |POI|
+A Sign of the Dusk Lily |QID|44756| |N|(npc:107598) in {Terrace of Order}| |Z|1033 0| |NPC|107598| |PRE|44814| |POI|
+C Sign of the Dusk Lily |QID|44756| |N|Click on the Dusk Lily Sigil in {Terrace of Order}| |Z|1033 0| |NPC|107598| |PRE|44814| |POI|
+
+R Shal'Aran |TID|44756| |N|Travel to {Shal'Aran} (36.51,46.75)| |Z|1033 0|
+T Sign of the Dusk Lily |QID|44756| |N|(npc:97140) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|44814|
+
+--An Elven Problem
+--A Eating Before the Meeting |QID|45263| |N|<br/><br/>This quest is not available until November 15| |Z|1033 0| |NPC|| |PRE|44814|
+--A Stabilizing Suramar |QID|45316| |N|| |Z|1033 0| |NPC|| |PRE|44814|
+
+--A Take Me To Your Leader |QID|40391| |N|| |Z|1033 0| |NPC|| |PRE|44814|
+
+--A A Better Future |QID|41916| |N|| |Z|1033 0| |NPC|| |PRE|44814|
+--A Taking a Promenade |QID|44831| |N|| |Z|1033 0| |NPC|| |PRE|44814|
+--A Down to Business |QID|43810| |N|| |Z|1033 0| |NPC|| |PRE|44814|
+
+--A Nullified |QID|44834| |N|| |Z|1033 0| |NPC|| |PRE|44814|
+--A Crystal Clearing |QID|44843| |N|| |Z|1033 0| |NPC|| |PRE|44814|
+--A Powering Down the Portal |QID|44844| |N|| |Z|1033 0| |NPC|| |PRE|44814|
+
+--A Shield, Meet Spell |QID|44842| |N|| |Z|1033 0| |NPC|| |PRE|44814|
+
+--A Break an Arm |QID|44845| |N|| |Z|1033 0| |NPC|| |PRE|44814|
+
 N Gain Reputation |N|You will need 7000/21000 Revered status with (fac:1859) faction to continue| |OID|44152| 
+N Gain Reputation |N|You will need 20000/21000 Revered status with (fac:1859) faction to continue| |OID|43502| 
 C Redemption for the Fallen |QID|44563| |N|Reach Exalted status with with (fac:1859)|
 T Redemption for the Fallen |QID|44563| |N|(npc:107126) in {Shal'Aran} (36.85, 46.54)| |Z|1033 0| |NPC|107126|
-
---A Change of Seasons |QID|43502| |N|
---A Giving It All We've Got |QID|43562| |N|
---A Ephemeral Manastorm Projector |QID|43563| |N|
 
 --A A World of Quests |QID|43341| |N|Auto quest at level 110|
 --C A World of Quests |QID|43341| |N|Earn at least Friendly reputation with the factions of the Broken Isles.| 

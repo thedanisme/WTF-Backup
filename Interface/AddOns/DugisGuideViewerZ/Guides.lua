@@ -162,7 +162,15 @@ function Guides:Initialize()
             if GetCurrentGuideTypeTabInfo() then
                 treeData = GetCurrentGuideTypeTabInfo().treeData
             end
-        end        
+        end   
+
+        if self.text ~= "Recent Guides" and recentGuidesLabel then
+            recentGuidesLabel:Hide()
+        end
+
+        if noGuideLoaded == nil then
+            guidesMainScroll.frame:CreateFontString("noGuideLoaded", "ARTWORK", "GameFontNormalLarge")
+        end
         
         if treeData then
             local wrapper = GUIUtils:SetTreeData(guidesMainScroll.frame, nil, "guideategories", 
@@ -188,11 +196,11 @@ function Guides:Initialize()
                 wrapper:SetPoint("TOPLEFT", DugisMain, "TOPLEFT", 0, 0)
             end
             
+            if recentGuidesLabel == nil then
+                guideategorieswrapper:CreateFontString("recentGuidesLabel", "ARTWORK", "GameFontNormalLarge")
+            end
+            
             if self.text == "Recent Guides" then
-                if recentGuidesLabel == nil then
-                    guideategorieswrapper:CreateFontString("recentGuidesLabel", "ARTWORK", "GameFontNormalLarge")
-                end
-                
                 if #DGV:GetFlatternRecentGuides() > 0 then
                     recentGuidesLabel:Show()
                 else
@@ -206,12 +214,17 @@ function Guides:Initialize()
                 guideategorieswrapper.internalDeltaY = -25
                 guideategorieswrapper:UpdateTreeVisualization()
             end	
+
+            if #treeData == 0 then
+                noGuideLoaded:Show()
+                noGuideLoaded:SetText(L["No Guide Loaded"])
+                noGuideLoaded:SetPoint("TOPLEFT", guidesMainScroll.frame, "TOPLEFT", 3, -5)
+                recentGuidesLabel:SetParent(guidesMainScroll.frame)
+            else
+                noGuideLoaded:Hide()
+            end
         end
         
-        if self.text ~= "Recent Guides" and recentGuidesLabel then
-            recentGuidesLabel:Hide()
-        end
-    
         guidesMainScroll.frame.content = guideategorieswrapper
         guidesMainScroll.frame:SetScrollChild(guideategorieswrapper) 
     
@@ -237,7 +250,20 @@ function Guides:Initialize()
                 DugisPreloadButton:ClearAllPoints()
                 DugisPreloadButton:SetParent(guideategorieswrapper)
                 DugisPreloadButton:SetPoint("TOPLEFT", 250, -10)
-                DugisPreloadButton:Show()
+                
+                if CurrentTitle then
+                    DugisPreloadButton:Show()
+                    guidesMainScroll.scrollBar:Show()
+                else
+                    noGuideLoaded:Show()
+                    noGuideLoaded:SetText(L["No Guide Loaded"])
+                    noGuideLoaded:SetPoint("TOPLEFT", guidesMainScroll.frame, "TOPLEFT", 3, -5)
+                    DugisPreloadButton:Hide()
+                    guideategorieswrapper:Hide()
+                    DugisMainLeftScrollFrame.currentGuideIcon:Hide()
+                    DugisMainLeftScrollFrame.guideType:Hide()
+                    guidesMainScroll.scrollBar:Hide()
+                end
                 
                 guidesMainScroll.scrollBar:SetPoint("TOPLEFT", guidesMainScroll.frame, "TOPLEFT", 354, -11)
             else
@@ -4627,6 +4653,8 @@ function Guides:Initialize()
 			--DugisResetButton:Show()
 			--DGV:SetAllBorders()
 			DugisMainBorder:SetHeight(420)
+            
+            DugisGuideViewer:UpdateCurrentGuideExpanded()
 		end
 		
 		function DGV:CheckForFloorChange()

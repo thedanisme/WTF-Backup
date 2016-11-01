@@ -155,8 +155,8 @@ Postal3DB = {
 		["Emmarosa - Stormrage"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Druidann|Stormrage|Alliance", -- [1]
-					"Lackteight-Turalyon|Stormrage|Alliance", -- [2]
+					"Lackteight-Turalyon|Stormrage|Alliance", -- [1]
+					"Druidann|Stormrage|Alliance", -- [2]
 					"Oenta|Stormrage|Alliance", -- [3]
 					"Shhbbyisok|Stormrage|Alliance", -- [4]
 					"Malversion|Stormrage|Alliance", -- [5]

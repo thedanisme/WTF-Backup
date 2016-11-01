@@ -1,6 +1,6 @@
 local Guide = DugisGuideViewer:RegisterModule("DugisGuide_Profession_Legion_En_1_800_Tailoring")
 function Guide:Initialize()
- function Guide:Load()DugisGuideViewer:RegisterGuide("|cffffd200Legion Leveling|r", "Legion Tailoring (1-800)", nil, nil, nil, "P", nil, function()
+ function Guide:Load()DugisGuideViewer:RegisterGuide("|cffffd200Legion Leveling|r", "Legion Tailoring Questing (1-800)", nil, nil, nil, "P", nil, function()
 return [[
 
 N Level 100 Required |N|You need to be at least level 100 to use this profession guide| |PL|100|

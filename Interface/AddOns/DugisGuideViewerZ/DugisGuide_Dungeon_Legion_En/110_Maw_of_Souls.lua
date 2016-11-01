@@ -8,6 +8,7 @@ K (npc:96756) |SID|29340| |N|Kill (npc:96756) in {Maw of Souls}<br/><b>Be aware 
 N (item:139619) |QID|43586| |N|Collect (item:139619) from (npc:96756) (51.85, 24.73)| |L|139619| |NPC|96756| |O| |C|Warrior|
 
 R The Naglfar |SID|29341| |N|Click on the horn to get transferred to {The Naglfar}<br/><b> (55.75, 23.83)| |Z|1042 1| |F|1042 2|
+N (item:132862) |QID|40560.1| |N|Collect (item:132862) from the Musty crate (68.88,66.13)| |Z|1042 2| |O| --Jewelcrafting
 C Ancient Vrykul Legends |QID|43253.1| |N|Click The Raven's Eye Tablet (55.25,66.39)| |Z|1042 2| |C|Rogue| |O|
 K (npc:96754) |SID|29341| |N|Kill (npc:96754) in {The Naglfar}<br/><b>Interrupt the Shackled Servitor's (spell:194266) when possible<br/><b><br/><b>Avoid the (spell:194216) when it is aimed near you<br/><b>Tank: Move Harbaron to the (npc:98693) so DPS players can cleave<br/>(74.47, 58.60)| |Z|1042 3| |NPC|96754|
 N (item:136819) |QID|39350.1| |N|Click on Crate of Dragur Dust to collect (item:136819)<br/><br/>Only available on heroic or mythic difficulty,(npc:96759) will also drop rank 2 (item:127932) (21.38,56.00)| |Z|1042 3| |O| --Alchemy

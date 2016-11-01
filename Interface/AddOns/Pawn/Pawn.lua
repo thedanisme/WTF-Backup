@@ -7,7 +7,7 @@
 -- Main non-UI code
 ------------------------------------------------------------
 
-PawnVersion = 2.0104
+PawnVersion = 2.0105
 
 -- Pawn requires this version of VgerCore:
 local PawnVgerCoreVersionRequired = 1.09
@@ -27,7 +27,7 @@ PawnPrivateTooltipName = "PawnPrivateTooltip1"
 --	An entry in the Values table is an ordered array in the following format:
 --	{ ScaleName, Value, UnenchantedValue }
 local PawnItemCache = nil
-local PawnItemCacheMaxSize = 50
+local PawnItemCacheMaxSize = 200 -- ...was 50; thanks to bag arrows, this should be greater than the number of possible inventory slots
 
 local PawnScaleTotals = { }
 
@@ -373,10 +373,12 @@ function PawnInitialize()
 			local _, _, _, _, _, _, ItemLink = GetContainerItemInfo(bagID, slot)
 			local Item = PawnGetItemData(ItemLink)
 			if not Item then return nil end
+			--TEMPupgcounter = (TEMPupgcounter or 0) + 1 VgerCore.Message("*** Calling PawnIsItemAnUpgrade " .. TEMPupgcounter) -- ***
 			return PawnIsItemAnUpgrade(Item) ~= nil
 		else
 			return PawnOriginalIsContainerItemAnUpgrade(bagID, slot, ...)
 		end
+		-- FUTURE: Consider hooking ContainerFrameItemButton_UpdateItemUpgradeIcon instead, but then Pawn would need its own "retry when not enough information is available" logic
 	end
 
 	-- We're now effectively initialized.  Just the last steps of scale initialization remain.

@@ -352,7 +352,7 @@ local function LoadSettings()
 					[DGV_DISPLAYMAPCOORDINATES] 	= { category = "Maps",		text = "Map Coordinates",  	checked = true,    	tooltip = "Show Player and Mouse coordinates at the bottom of the map.",},
 					[DGV_WORLDMAPTRACKING] 		= { category = "Maps",		text = "World Map Tracking",  	checked = true,    	tooltip = "Add minimap tracking icons on the world map.",},
 					[DGV_DISPLAYUNCOLLECTEDPETSONLY] 		= { category = "Maps",		text = "Hide Collected Pets",  	checked = true,    	tooltip = "Hide collected pets in world map tracking with Extra Tracking Module", module = "Guides"},
-					[DGV_BLINKMINIMAPICONS] 		= { category = "Maps",		text = "Blink Minimap Resource Nodes",  	checked = false,    	tooltip = "Resource nodes for gathering profession will blink in your minimap to make it easier to notice"},
+					[DGV_BLINKMINIMAPICONS] 		= { category = "Maps",		text = "Blink Minimap Resource Nodes",  	checked = false,    	tooltip = "Resource nodes for gathering profession will blink in your minimap to make it easier to notice", module = "Disabled"},
 					[DGV_HIDE_MODELS_IN_WORLDMAP] 		= { category = "Maps",		text = "Hide Model Preview in World Map",  	checked = false,    	tooltip = "Hide Model Preview in World Map"},
 					[DGV_ENABLEMODELDB]		= { category = "Hide",	text = "Model Database",	checked = true,		tooltip = "Allows model viewer to function", module = "NpcsF"},
 					[DGV_ENABLENPCNAMEDB]		= { category = "Memory",	text = "NPC Name Database",	checked = true,		tooltip = "Provides localized NPC names. Required for target button.", module = "Disabled"},
@@ -2126,9 +2126,9 @@ local function GetSettingsCategoryFrame(category, parent)
 		DGV_MapPreviewSlider:SetValue(DugisGuideViewer:GetDB(DGV_MAPPREVIEWDURATION) or 1)
 	end
 	
-	if SettingsDB[DGV_BLINKMINIMAPICONS].category==category and DugisGuideViewer.zygorloaded then
-		Disable(_G["DGV.ChkBox"..DGV_BLINKMINIMAPICONS])
-	end
+	--if SettingsDB[DGV_BLINKMINIMAPICONS].category==category and DugisGuideViewer.zygorloaded then
+		--Disable(_G["DGV.ChkBox"..DGV_BLINKMINIMAPICONS])
+	--end
 	
 	return frame
 end
@@ -2903,8 +2903,8 @@ function DugisGuideViewer:SettingFrameChkOnClick(box, skip)
 		DugisGuideViewer.Modules.DugisWatchFrame:UpdateWatchFrameMovable()
 	end   
 	
-	if self:UserSetting(DGV_BLINKMINIMAPICONS) and not DugisGuideViewer.zygorloaded then
-		StartMinimapTicker()
+	if self:UserSetting(DGV_BLINKMINIMAPICONS) then
+		--StartMinimapTicker()
 	end 
 	
 	if boxindex == DGV_WATCHLOCALQUEST then

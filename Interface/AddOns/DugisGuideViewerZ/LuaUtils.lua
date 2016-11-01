@@ -503,6 +503,7 @@ function LuaUtils:DugiSetMapByID(mapId)
 end 
 
 function LuaUtils:DugiSetMapToCurrentZone()
+	if not GetPlayerFacing() then return end
 	DugisGuideUser.NoQuestLogUpdateTrigger = true
 	SetMapToCurrentZone()
 end

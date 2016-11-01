@@ -5,7 +5,7 @@ return [[
 
 R Darkheart Thicket |N|Queue or Zone into {Darkheart Thicket} (24.62, 60.55)| |Z|1067 0| |F|1067 0| |I|
 K (npc:96512) |SID|29271| |N|Kill (npc:96512) in {Sanctum of G'Hanir}<br/><b>Avoid being in front of (spell:198376)<br/><b>Tank: Position (npc:96512) so that (spell:198376) does not run over other players.<br/><b>Healers: Quickly heal target with (spell:196376) to above 90% (24.62, 60.55)| |Z|1067 0| |NPC|96512|
-N (item:137211) |QID|| |N|Collect (item:137211) from (npc:96512) (24.62, 60.55)| |Z|1067 0| |NPC|96512| |O| --Enchanting
+N (item:137211) |QID|39882| |N|Collect (item:137211) from (npc:96512) (24.62, 60.55)| |Z|1067 0| |NPC|96512| |O| --Enchanting
 K (npc:103344) |SID|30602| |N|Kill (npc:103344) in {Miasmic Gorge}<br/><b>Avoid being front of (spell:204667)<br/><b>Tank: Face (npc:103344) away from other players for them to avoid (spell:204667) and (spell:204611) will deal a lot of damage<br/><b>Healer: Prepare to heal more during (spell:204611) (34.94, 80.18) (44.18, 48.76)| |Z|1067 0|
 N (item:140313) |QID|44076.1| |N|Collect (item:140313) from (npc:103344) (44.18, 48.76)| |Z|1067 0| |C|Druid| |O|
 N (item:138270) |QID|42654.1| |N|Collect (item:138270) from (npc:103344) (44.18, 48.76)| |Z|1067 0| |C|Hunter| |O|

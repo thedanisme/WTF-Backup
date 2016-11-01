@@ -275,6 +275,9 @@ T Light's Charge |QID|44153| |N|Class Order Hall| |POI|
 
 N Level 103 Required |N|You need to be at least level 103 to continue with the class campaign quest line| |PL|103|
 
+A Leader of the Illidari |QID|42522| |N|(npc:95240) or (npc:95237) in {The Fel Hammer} (58.32, 51.93)| |Z|1052 2| |NPC|95240, 95237|
+T Leader of the Illidari |QID|42522| |N|(npc:95240) or (npc:95237) in {The Fel Hammer} (58.40, 58.28)| |Z|1052 1| |NPC|95240, 95237|
+
 A The Arcane Way |QID|42593| |N|(npc:98632) in {The Fel Hammer} (59.84, 49.63)| |Z|1052 1| |NPC|98632|
 
 R The Violet Citadel |TID|42593| |N|Travel to {The Violet Citadel} (25.93, 51.86)| |Z|1014 10| |NPC|107968|

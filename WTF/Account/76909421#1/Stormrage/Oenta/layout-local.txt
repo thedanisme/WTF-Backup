@@ -69,3 +69,10 @@ X: 348
 Y: 77
 W: 56
 H: 42
+Frame: MacroToolkitFrame
+FrameLevel: 1
+Anchor: TOP
+X: -16
+Y: -105
+W: 648
+H: 424

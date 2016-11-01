@@ -1,0 +1,22 @@
+tag 3.41
+b7d51cec9be68e76bd8ba95e497020e965562f64
+Azilroka <darktemplar9900@yahoo.com>
+2016-10-31 18:29:46 -0500
+
+
+
+--------------------
+
+Azilroka:
+	- 3.41
+	- Remove BagSync
+	- Oops
+	- Hekili & Talent Set Manger by Jason Longwell
+	- API, Auction, Inspect, Quest, Examiner
+	- Issue #413
+Merathilis:
+	- Comment out code in BagSync thats causing errors
+Azilroka:
+	- ACP, Friends, Guild, Skillet, Swatter
+	- Quest & Embed
+	- #411
