@@ -1014,6 +1014,7 @@ R Terrace of Order |TID|43569| |N|Travel to {Terrace of Order} (48.2, 66.8)| |Z|
 N (npc:110698) |QID|43569.1| |N|Locate (npc:110698) inside a building in {Terrace of Order} (48.2, 66.8)| |Z|1033| |NPC|110698| |FS|1859, 41000|
 N Share Arcan'dor Fruit with Arluelle |QID|43569.2| |N|Speak to (npc:110698) and share as fruit {Terrace of Order} (48.2, 66.8)| |Z|1033| |NPC|110698| |FS|1859, 41000|
 T Arluin's Request |QID|43569| |N|(npc:107598) in {Terrace of Order} (48.2, 66.8)| |Z|1033| |NPC|107598| |FS|1859, 41000|
+
 --Lockdown
 A One Day at a Time |QID|45260| |N|(npc:97140) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|43502|
 C One Day at a Time |QID|45260| |N|Feed the Fruit of the Arcan'dor to a Suramar Refugee in Shal'Aran| |NPC|97140| |PRE|43502| |POI|
@@ -1053,15 +1054,15 @@ C Continuing the Cure |QID|45261| |N|Use (item:143597) on a (npc:111901) in {Sha
 T Continuing the Cure |QID|45261| |N|(npc:97140) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|44955|
 A Disillusioned Defector |QID|44722| |N|(npc:97140) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|44955|
 
-R Evermoon Terrace |TID|44722| |N|Use the portal to travel to {Evermoon Terrace} (36.50, 44.76)| |Z|1033 0|
+R Evermoon Terrace |TID|44722| |N|Use the portal to travel to {Evermoon Terrace} (36.50, 44.76)| |Z|1033 0| |PRE|44955|
 T Disillusioned Defector |QID|44722| |N|(npc:107997) in {Evermoon Terrace} (52.05,79.15)| |Z|1033 0| |NPC|107997| |PRE|44955|
 A Missing Persons |QID|44724| |N|(npc:107997) in {Evermoon Terrace} (52.05,79.15)| |Z|1033 0| |NPC|107997| |PRE|44955|
 A More Like Me |QID|44723| |N|(npc:116256) in {Evermoon Terrace} (52.05,79.15)| |Z|1033 0| |NPC|116256| |PRE|44955|
-N (spell:202477) |QID|44724| |N|Use the (spell:202477) ability to disguise yourself| |BUFF|Interface\Icons\INV_Helm_Mask_FittedAlpha_B_01_Nightborne_02|
+N (spell:202477) |QID|44724| |N|Use the (spell:202477) ability to disguise yourself| |BUFF|Interface\Icons\INV_Helm_Mask_FittedAlpha_B_01_Nightborne_02| |PRE|44955|
 C More Like Me |QID|44723| |N|Use the (item:142065) on (npc:114958) to identify 5 Deserters.  in {Evermoon Terrace} (52.05,79.15)| |Z|1033 0| |NPC|114958| |PRE|44955| |U|142065| |POI|
 C Missing Persons |QID|44724| |N|Kill demons in {Astravar Harbor} until you collect (item:142066)| |Z|1033 0| |NPC|107997| |PRE|44955| |POI|
 
-R Evermoon Terrace |TID|44723| |N|Use the teleporter to the get to the top of the  {Evermoon Terrace} (51.5,79.0) (52.05,79.15)| |Z|1033 0| |REACH|
+R Evermoon Terrace |TID|44723| |N|Use the teleporter to the get to the top of the  {Evermoon Terrace} (51.5,79.0) (52.05,79.15)| |Z|1033 0| |REACH| |PRE|44955|
 T Missing Persons |QID|44724| |N|(npc:107997) in {Evermoon Terrace} (52.05,79.15)| |Z|1033 0| |NPC|107997| |PRE|44955|
 T More Like Me |QID|44723| |N|(npc:116256) in {Evermoon Terrace} (52.05,79.15)| |Z|1033 0| |NPC|116256| |PRE|44955|
 A Hostage Situation |QID|44725| |N|(npc:107997) in {Evermoon Terrace} (52.05,79.15)| |Z|1033 0| |NPC|107997| |PRE|44955|
@@ -1069,20 +1070,20 @@ C Hostage Situation |QID|44725| |N|Go to Astravar Harbor and join a group of (np
 
 T Hostage Situation |QID|44725| |N|(npc:107997) in {Felsoul Advance} (24.83, 88.74)| |Z|1033 0| |NPC|107997| |PRE|44955| |POI|
 A In the Business of Souls |QID|44726| |N|(npc:107997) in {Felsoul Advance} (24.83, 88.74)| |Z|1033 0| |NPC|107997| |PRE|44955|
-A Smuggled! |QID|44727| |N|(npc:115002) in {Felsoul Advance} (25.80, 88.58)| |Z|1033 0| |NPC|115002|
-N (npc:115002) |QID|44727.1| |N|Release (npc:115002) in {Felsoul Advance} (25.80, 88.58)| |Z|1033 0| |NPC|115002|
-C Smuggled! |QID|44727.2| |N|Click on the cages in {Felsoul Advance} and release 5 captives (25.80, 88.58)| |Z|1033 0|
-K (npc:114998) |QID|44814| |N|Kill (npc:114998) in {Felsoul Advance} (27.23, 89.65)| |Z|1033 0| |NPC|114998|
+A Smuggled! |QID|44727| |N|(npc:115002) in {Felsoul Advance} (25.80, 88.58)| |Z|1033 0| |NPC|115002| |PRE|44955|
+N (npc:115002) |QID|44727.1| |N|Release (npc:115002) in {Felsoul Advance} (25.80, 88.58)| |Z|1033 0| |NPC|115002| |PRE|44955|
+C Smuggled! |QID|44727.2| |N|Click on the cages in {Felsoul Advance} and release 5 captives (25.80, 88.58)| |Z|1033 0| |PRE|44955|
+K (npc:114998) |QID|44814| |N|Kill (npc:114998) in {Felsoul Advance} (27.23, 89.65)| |Z|1033 0| |NPC|114998| |PRE|44955|
 T In the Business of Souls |QID|44726| |N|(npc:107997) in {Felsoul Advance} (24.83, 88.74)| |Z|1033 0| |NPC|107997| |PRE|44955| |POI|
-T Smuggled! |QID|44727| |N|(npc:115002) in {Felsoul Advance} (24.83, 88.74))| |Z|1033 0| |NPC|115002| |POI|
+T Smuggled! |QID|44727| |N|(npc:115002) in {Felsoul Advance} (24.83, 88.74))| |Z|1033 0| |NPC|115002| |POI| |PRE|44955|
 A Waning Refuge |QID|44814| |N|(npc:107997) in {Felsoul Advance} (24.83, 88.74)| |Z|1033 0| |NPC|107997| |PRE|44955|
-C Waning Refuge |QID|44814| |N|Ride Deline's Gondola {Felsoul Advance} (24.64, 88.99) |Z|1033 0| |V|
+C Waning Refuge |QID|44814| |N|Ride Deline's Gondola {Felsoul Advance} (24.64, 88.99) |Z|1033 0| |V| |PRE|44955|
 
 T Waning Refuge |QID|44814| |N|(npc:107997) in {Evermoon Terrace}| |Z|1033 0| |NPC|107997| |PRE|44955| |POI|
 
 --Waxing Crescent
 A A Message from Ly'leth |QID|45262| |N|(npc:97140) in {Shal'Aran}<br/><br/>This quest is not available until November 8 (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|44814|
-C A Message from Ly'leth |QID|45262| |N|Use (item:143597) on a (npc:111901) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|111901| |PRE|44814|
+C A Message from Ly'leth |QID|45262| |N|Use (item:143597) on a (npc:111901) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|111901| |PRE|44814| |U|143597|
 T A Message from Ly'leth |QID|45262| |N|(npc:97140) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|44814|
 A Tavernkeeper's Fate |QID|44742| |N|(npc:97140) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|44814|
 
@@ -1091,7 +1092,7 @@ T Tavernkeeper's Fate |QID|44742| |N|(npc:107632) in {Lunastre Estate}| |Z|1033 
 A Essence Triangulation |QID|44752| |N|(npc:97140) in {Lunastre Estate}| |Z|1033 0| |NPC|107632| |PRE|44814|
 C Essence Triangulation |QID|44752| |N|Help Thalyssra collect 3 of Vanthir's Arcane Essences. Click on the Echo of Vanthir npcs| |Z|1033 0| |NPC|107632| |PRE|44814| |POI|
 
-R Evermoon Terrace |TID|44723| |N|Use the teleporter to the get to the top of the  {Evermoon Terrace} (51.5,79.0) (52.05,79.15)| |Z|1033 0| |REACH|
+R Evermoon Terrace |TID|44723| |N|Use the teleporter to the get to the top of the  {Evermoon Terrace} (51.5,79.0) (52.05,79.15)| |Z|1033 0| |REACH| |PRE|44814|
 T Essence Triangulation |QID|44752| |N|(npc:97140) in  {Evermoon Terrace} (52.05,79.15)| |Z|1033 0| |NPC|97140| |PRE|44814|
 A On Public Display |QID|44753| |N|(npc:97140) in  {Evermoon Terrace} (52.05,79.15)| |Z|1033 0| |NPC|97140| |PRE|44814|
 N (npc:97140) |QID|44753.1| |N|Speak to (npc:97140) in  {Evermoon Terrace}, and say "I am ready, Thalyssra"| |Z|1033 0| |NPC|97140| |PRE|44814| |POI|
@@ -1104,26 +1105,56 @@ T Waxing Crescent |QID|44754| |N|(npc:107598) in {Terrace of Order}| |Z|1033 0| 
 A Sign of the Dusk Lily |QID|44756| |N|(npc:107598) in {Terrace of Order}| |Z|1033 0| |NPC|107598| |PRE|44814| |POI|
 C Sign of the Dusk Lily |QID|44756| |N|Click on the Dusk Lily Sigil in {Terrace of Order}| |Z|1033 0| |NPC|107598| |PRE|44814| |POI|
 
-R Shal'Aran |TID|44756| |N|Travel to {Shal'Aran} (36.51,46.75)| |Z|1033 0|
+R Shal'Aran |TID|44756| |N|Travel to {Shal'Aran} (36.51,46.75)| |Z|1033 0| |PRE|44814|
 T Sign of the Dusk Lily |QID|44756| |N|(npc:97140) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|44814|
 
 --An Elven Problem
---A Eating Before the Meeting |QID|45263| |N|<br/><br/>This quest is not available until November 15| |Z|1033 0| |NPC|| |PRE|44814|
---A Stabilizing Suramar |QID|45316| |N|| |Z|1033 0| |NPC|| |PRE|44814|
+A Eating Before the Meeting |QID|45263| |N|(npc:97140) in {Shal'Aran}<br/><br/>This quest is not available until November 15 (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|44756|
+A Stabilizing Suramar |QID|45316| |N|(npc:97140) in {Shal'Aran}<br/><br/>This quest is not available until November 15 (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|44756|
+C Eating Before the Meeting |QID|45262| |N|Use (item:143597) on a (npc:111901) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|111901| |PRE|44756| |U|143597|
+T Eating Before the Meeting |QID|45263| |N|(npc:97140) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|44756|
+A Take Me To Your Leader |QID|40391| |N|(npc:97140) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|44756|
 
---A Take Me To Your Leader |QID|40391| |N|| |Z|1033 0| |NPC|| |PRE|44814|
+R Meredil |QID|45056| |N|Travel to {Meredil} (39.50, 51.08)| |Z|1033 0| |PRE|44756|
+A Noressa |QID|45056| |N|(npc:101848) in {Meredil} (39.50, 51.08)| |Z|1033 0| |NPC|101848| |PRE|44756|
+T Take Me To Your Leader |QID|40391| |N|(npc:108089) in {Meredil} (41.68, 51.63)| |Z|1033 0| |NPC|108089| |PRE|44756|
+A A Better Future |QID|41916| |N|(npc:97140) in {Meredil} (41.68, 51.63)| |Z|1033 0| |NPC|97140| |PRE|44756|
+A Down to Business |QID|43810| |N|(npc:104799) in {Meredil} (41.68, 51.63)| |Z|1033 0| |NPC|104799| |PRE|44756|
+A Taking a Promenade |QID|44831| |N|(npc:70360) in {Meredil} (42.90, 51.45)| |Z|1033 0| |NPC|70360| |PRE|44756|
 
---A A Better Future |QID|41916| |N|| |Z|1033 0| |NPC|| |PRE|44814|
---A Taking a Promenade |QID|44831| |N|| |Z|1033 0| |NPC|| |PRE|44814|
---A Down to Business |QID|43810| |N|| |Z|1033 0| |NPC|| |PRE|44814|
+N As you go...  |AYG|44831| |N|Rally on 8 (npc:115279) in {The Grand Promenade}| |NPC|115279| |PRE|44756| |QID|41916|
+N (npc:115521) |QID|44831.1| |N|Find (npc:115521) in {The Grand Promenade} (40.65, 64.49)| |Z|1033 0| |NPC|115521| |PRE|44756|
+A Crystal Clearing |QID|44843| |N|(npc:115521) in {The Grand Promenade} (40.65, 64.49)| |Z|1033 0| |NPC|115521| |PRE|44756|
+A Powering Down the Portal |QID|44844| |N|(npc:115521) in {The Grand Promenade} (40.65, 64.49)| |Z|1033 0| |NPC|115521| |PRE|44756|
+N As you go...  |AYG|44844| |N|Rally on 8 (npc:115279) in {The Grand Promenade}| |NPC|115279| |PRE|44756| |QID|41916|
+K (npc:107217) |QID|44844.1| |N|Kill (npc:107217) in {The Grand Promenade}| |Z|1033 0| |NPC|107217| |PRE|44756| |POI|
+N (npc:111318) |QID|45056| |N|Find (npc:111318) inside the house in {The Grand Promenade}| |Z|1033 0| |NPC|111318| |PRE|44756| |POI|
+C Powering Down the Portal |QID|44844| |N|Click on the green floating crystal to destroy 4 portals in {The Grand Promenade}| |Z|1033 0| |PRE|44756| |POI|
+T Crystal Clearing |QID|44843| |N|(npc:115521) in {The Grand Promenade} (40.65, 64.49)| |Z|1033 0| |NPC|115521| |PRE|44756|
+T Powering Down the Portal |QID|44844| |N|(npc:115521) in {The Grand Promenade} (40.65, 64.49)| |Z|1033 0| |NPC|115521| |PRE|44756|
+C A Better Future |QID|41916| |N|Rally on 8 (npc:115279) in {The Grand Promenade}| |NPC|115279| |POI| |PRE|44756|
+C Down to Business |QID|43810| |N|Kill any 8 Suramar defenders in {The Grand Promenade}| |Z|1033 0| |NPC|104799| |PRE|44756| |POI|
 
---A Nullified |QID|44834| |N|| |Z|1033 0| |NPC|| |PRE|44814|
---A Crystal Clearing |QID|44843| |N|| |Z|1033 0| |NPC|| |PRE|44814|
---A Powering Down the Portal |QID|44844| |N|| |Z|1033 0| |NPC|| |PRE|44814|
+N (npc:115517) |QID|44831.2| |N|Find (npc:115517) in {Suramar City} (46.48, 58.21) |Z|1033 0| |NPC|115517| |PRE|44756|
+A Nullified |QID|44834| |N|(npc:115517) in {Suramar City} (46.48, 58.21) |Z|1033 0| |NPC|115517| |PRE|44756|
+K (npc:99755) |QID|44834.1| |N|Kill (npc:99755) until you find a (item:142244)| |NPC|99755| |POI|  |L|142244| |PRE|44756|
+N (item:142245) |QID|44834.1| |N|Collect (item:142245) from the ground in {The Grand Promenade}| |NPC|99755| |POI| |L|142244| |PRE|44756|
+T Nullified |QID|44834| |N|(npc:115517) in {Suramar City} (46.48, 58.21) |Z|1033 0| |NPC|115517| |PRE|44756|
+A Shield, Meet Spell |QID|44842| |N|(npc:115517) in {Suramar City} (46.48, 58.21) |Z|1033 0| |NPC|115517| |PRE|44756|
+K (npc:116043) |N|Use the (item:142260) to break the shield and kill (npc:116043) in {The Grand Promenade}| |POI| |NPC|116043| |PRE|44756|
+T Shield, Meet Spell |QID|44842| |N|(npc:115517) in {Suramar City} (46.48, 58.21) |Z|1033 0| |NPC|115517| |PRE|44756|
 
---A Shield, Meet Spell |QID|44842| |N|| |Z|1033 0| |NPC|| |PRE|44814|
-
---A Break an Arm |QID|44845| |N|| |Z|1033 0| |NPC|| |PRE|44814|
+R Meredil |N|Travel to {Meredil} (42.90, 51.45)| |Z|1033 0| |PRE|44756|
+T Taking a Promenade |QID|44831| |N|(npc:70360) in {Meredil} (42.90, 51.45)| |Z|1033 0| |NPC|70360| |PRE|44756|
+T Down to Business |QID|43810| |N|(npc:104799) in {Meredil} (41.68, 51.63)| |Z|1033 0| |NPC|104799| |PRE|44756|
+T A Better Future |QID|41916| |N|(npc:97140) in {Meredil} (41.68, 51.63)| |Z|1033 0| |NPC|97140| |PRE|44756|
+A Break an Arm |QID|44845| |N|(npc:97140) in {Meredil} (41.68, 51.63)| |Z|1033 0| |NPC|97140| |PRE|44756|
+T Noressa |QID|45056| |N|(npc:101848) in {Meredil} (39.50, 51.08)| |Z|1033 0| |NPC|101848| |PRE|44756|
+A Break an Arm |QID|44845| |N|(npc:97140) in {Meredil} (41.68, 51.63)| |Z|1033 0| |NPC|97140| |PRE|44756|
+C Break an Arm |QID|44845| |N|Kill (npc:116068), this is a group quest and tough to solo| |NPC|116068| |POI| |PRE|44756|
+T Break an Arm |QID|44845| |N|(npc:97140) in {Meredil} (41.68, 51.63)| |Z|1033 0| |NPC|97140| |PRE|44756|
+C Stabilizing Suramar |QID|45316| |N|Complete 10 World Quests in (map:1033)| |Z|1033 0| |NPC|97140| |PRE|44756|
+T Stabilizing Suramar |QID|45316| |N|(npc:97140) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|44756|
 
 N Gain Reputation |N|You will need 7000/21000 Revered status with (fac:1859) faction to continue| |OID|44152| 
 N Gain Reputation |N|You will need 20000/21000 Revered status with (fac:1859) faction to continue| |OID|43502| 

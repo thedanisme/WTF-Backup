@@ -6257,17 +6257,17 @@ tappend(points["FrostfireRidge:0"],
 	"A:38.4,37.8:9728::Obsidian Petroglyph - Found in the cave:33502",	--Obsidian Petroglyph
 	"A:63.4,14.8:9728::Young Orc Woman - Loot npc:33525",	--Young Orc Woman
 	--battle pets
-	"P:35.2,23.4:541:23-25",	--Fire-Proof Roach
-	"P:45.2,44.2:541:23-25",	--Fire-Proof Roach
-	"P:50.4,59.8:541:23-25",	--Fire-Proof Roach
-	"P:20.6,64.6:1427:23-25",	--Frostfur Rat
-	"P:58.8,30.6:1427:23-25",	--Frostfur Rat
-	"P:62.8,77.2:1427:23-25",	--Frostfur Rat
-	"P:13.8,47.2:1427:23-25",	--Frostfur Rat
-	"P:65.6,16.8:1427:23-25",	--Frostfur Rat
-	"P:51.2,66.5:1427:23-25",	--Frostfur Rat
-	"P:50.6,27.6:1427:23-25",	--Frostfur Rat
-	"P:46.0,52.6:1427:23-25",	--Frostfur Rat
+	"P:35.2,23.4:541:Level 23-25",	--Fire-Proof Roach
+	"P:45.2,44.2:541:Level 23-25",	--Fire-Proof Roach
+	"P:50.4,59.8:541:Level 23-25",	--Fire-Proof Roach
+	"P:20.6,64.6:1427:Level 23-25",	--Frostfur Rat
+	"P:58.8,30.6:1427:Level 23-25",	--Frostfur Rat
+	"P:62.8,77.2:1427:Level 23-25",	--Frostfur Rat
+	"P:13.8,47.2:1427:Level 23-25",	--Frostfur Rat
+	"P:65.6,16.8:1427:Level 23-25",	--Frostfur Rat
+	"P:51.2,66.5:1427:Level 23-25",	--Frostfur Rat
+	"P:50.6,27.6:1427:Level 23-25",	--Frostfur Rat
+	"P:46.0,52.6:1427:Level 23-25",	--Frostfur Rat
 	"P:54.2,59.2:1578:Level 25",	--Battle Pet/Frostshell Pincher
 	"P:55.2,38.0:1578:Level 25",	--Battle Pet/Frostshell Pincher
 	"P:43.4,37.8:1457:Level 25",	--Battle Pet/Icespine Hatchling
@@ -7316,6 +7316,128 @@ tappend(points["TanaanJungle:0"],
 	"P:61.6,91.9:1581:Level 25") --Fen Crab
 
 tappend(points["Azsuna:0"],
+	--Grizzly Squirrel/Critter:
+	"P:36.8,31.4:647:Level 25",
+	"P:39.2,23.8:647:Level 25",
+	"P:40.8,39.0:647:Level 25",
+	"P:41.6,19.0:647:Level 25",
+	"P:47.6,32.8:647:Level 25",
+	"P:50.6,28.4:647:Level 25",
+	"P:52.4,15.8:647:Level 25",
+	"P:57.0,53.0:647:Level 25",
+	"P:59.0,16.8:647:Level 25",
+	--Juvenile Scuttleback/Aquatic:
+	"P:31.2,30.4:1728:Level 25",
+	"P:36.4,16.2:1728:Level 25",
+	"P:41.6,55.2:1728:Level 25",
+	"P:44.6,55.2:1728:Level 25",
+	"P:48.6,50.0:1728:Level 25",
+	"P:49.4,62.6:1728:Level 25",
+	"P:51.8,59.4:1728:Level 25",
+	"P:57.4,57.4:1728:Level 25",
+	"P:59.4,57.2:1728:Level 25",
+	"P:61.0,60.6:1728:Level 25",
+	"P:63.2,59.4:1728:Level 25",
+	"P:63.4,57.2:1728:Level 25",
+	--Olivetail Hare/Critter:
+	"P:37.4,29.8:1729:Level 25",
+	"P:41.2,34.8:1729:Level 25",
+	"P:43.6,35.8:1729:Level 25",
+	"P:48.6,29.8:1729:Level 25",
+	"P:50.2,31.4:1729:Level 25",
+	"P:53.4,15.6:1729:Level 25",
+	"P:56.4,28.2:1729:Level 25",
+	"P:57.6,26.2:1729:Level 25",
+	"P:60.6,34.0:1729:Level 25",
+	"P:61.8,28.0:1729:Level 25",
+	"P:64.8,22.2:1729:Level 25",
+	"P:64.8,37.6:1729:Level 25",
+	"P:66.8,23.4:1729:Level 25",
+	--Grey Moth/Flying:
+	"P:57.0,54.2:464:Level 25",
+	"P:60.8,51.4:464:Level 25",
+	"P:62.8,51.4:464:Level 25",
+	"P:63.8,49.2:464:Level 25",
+	"P:66.2,45.0:464:Level 25",
+	--Felspider/Beast:
+	"P:23.6,47.2:1731:Level 25",
+	"P:26.2,45.8:1731:Level 25",
+	"P:29.6,45.0:1731:Level 25",
+	"P:29.6,56.8:1731:Level 25",
+	"P:30.8,46.6:1731:Level 25",
+	"P:32.2,43.2:1731:Level 25",
+	"P:35.2,45.2:1731:Level 25",
+	"P:36.0,57.6:1731:Level 25",
+	"P:37.6,47.8:1731:Level 25",
+	"P:38.4,59.6:1731:Level 25",
+	"P:39.2,50.0:1731:Level 25",
+	"P:40.4,47.8:1731:Level 25",
+	"P:40.6,58.0:1731:Level 25",
+	--Rapana Whelk/Critter:
+	"P:40.4,62.8:743:Level 25",
+	"P:49.4,45.2:743:Level 25",
+	"P:56.8,57.4:743:Level 25",
+	--Slithering Brownscale/Beast:
+	"P:42.4,72.0:1736:Level 25",
+	"P:46.2,73.6:1736:Level 25",
+	"P:48.8,73.6:1736:Level 25",
+	"P:50.0,75.6:1736:Level 25",
+	"P:62.4,49.2:1736:Level 25",
+	"P:65.4,46.0:1736:Level 25",
+	"P:67.4,48.2:1736:Level 25",
+	--Dusk Spiderling/Beast:
+	"P:40.2,9.8:396:Level 25",
+	"P:49.0,75.4:396:Level 25",
+	"P:49.6,16.6:396:Level 25",
+	--Kelp Scuttler/Aquatic:
+	"P:49.2,36.8:1583:Level 25",
+	"P:50.8,35.4:1583:Level 25",
+	"P:51.4,33.2:1583:Level 25",
+	"P:59.4,42.2:1583:Level 25",
+	"P:60.2,38.4:1583:Level 25",
+	"P:63.2,42.0:1583:Level 25",
+	"P:63.8,39.6:1583:Level 25",
+	"P:65.2,41.4:1583:Level 25",
+	--Albatross Chick/Flying:
+	"P:29.4,35.6:1708:Level 25",
+	"P:35.8,21.2:1708:Level 25",
+	"P:39.4,61.4:1708:Level 25",
+	"P:48.6,63.6:1708:Level 25",
+	--Fledgling Kingfeather/Flying:
+	"P:38.4,24.2:1709:Level 25",
+	"P:44.2,23.4:1709:Level 25",
+	--Fledgling Oliveback/Flying:
+	"P:39.4,29.2:1710:Level 25",
+	"P:43.0,19.0:1710:Level 25",
+	"P:44.8,20.0:1710:Level 25",
+	--Erudite Manafiend/Magic:
+	"P:54.4,17.8:1773:Level 25",
+	"P:56.0,12.4:1773:Level 25",
+	"P:58.4,16.6:1773:Level 25",
+	--Eldritch Manafiend/Magic:
+	"P:54.4,17.8:1774:Level 25",
+	"P:56.6,18.6:1774:Level 25",
+	"P:58.4,16.6:1774:Level 25",
+	--Bandicoon/Critter:
+	"P:49.4,31.8:706:Level 25",
+	--Forest Moth/Flying:
+	"P:40.8,11.6:478:Level 25",
+	"P:44.4,13.8:478:Level 25",
+	"P:49.2,16.2:478:Level 25",
+	"P:66.0,35.8:478:Level 25",
+	--Jumping Spider/Beast:
+	"P:48.4,22.8:699:Level 25",
+	--Coastal Sandpiper/Flying:
+	"P:50.0,41.4:1914:Level 25",
+	"P:55.2,41.6:1914:Level 25",
+	"P:55.4,32.8:1914:Level 25",
+	"P:60.2,38.6:1914:Level 25",
+	"P:61.2,43.8:1914:Level 25",
+	"P:64.6,40.0:1914:Level 25",
+	--Royal Moth/Flying:
+	"P:44.0,40.8:1587:Level 25",
+	"P:46.8,46.6:1587:Level 25",
+	"P:47.0,37.4:1587:Level 25",
 	"A:39.6,50.2:10665:9", --Faronaar
 	"A:60.6,34.9:10665:5", -- The Greenway
 	"A:41.4,39.0:10665:4", -- Llothien Highlands
@@ -7436,6 +7558,88 @@ tappend(points["Azsuna:0"],
 	"R:55.6,70.2:108255:Inside the building\n\nReward (item:141877)\nArtifact Power:")
 
 tappend(points["Valsharah:0"],
+	--Vale Flitter/Flying:
+	"P:43.2,81.4:1737:Level 25",
+	"P:46.8,39.6:1737:Level 25",
+	"P:49.6,40.4:1737:Level 25",
+	"P:51.6,72.0:1737:Level 25",
+	"P:55.0,77.4:1737:Level 25",
+	"P:56.2,85.4:1737:Level 25",
+	"P:58.6,77.4:1737:Level 25",
+	"P:59.8,60.8:1737:Level 25",
+	"P:65.0,72.4:1737:Level 25",
+	"P:68.2,72.4:1737:Level 25",
+	"P:72.6,52.2:1737:Level 25",
+	"P:72.8,50.2:1737:Level 25",
+	--Dusk Spiderling/Beast:
+	"P:37.8,56.4:396:Level 25",
+	"P:38.0,52.0:396:Level 25",
+	--Skunk/Critter:
+	"P:54.0,49.2:397:Level 25",
+	"P:56.8,75.4:397:Level 25",
+	"P:57.8,63.6:397:Level 25",
+	--Shimmering Aquafly/Flying:
+	"P:52.0,80.0:1734:Level 25",
+	"P:54.0,80.0:1734:Level 25",
+	"P:54.0,83.4:1734:Level 25",
+	"P:55.4,85.4:1734:Level 25",
+	--Auburn Ringtail/Critter:
+	"P:42.2,89.4:1738:Level 25",
+	"P:45.6,81.2:1738:Level 25",
+	"P:49.0,70.6:1738:Level 25",
+	"P:50.8,76.8:1738:Level 25",
+	"P:58.8,59.2:1738:Level 25",
+	"P:61.2,72.4:1738:Level 25",
+	"P:63.2,71.4:1738:Level 25",
+	"P:64.4,79.8:1738:Level 25",
+	"P:66.2,82.0:1738:Level 25",
+	--Terror Larva/Beast:
+	"P:55.6,38.8:1735:Level 25",
+	"P:58.0,43.2:1735:Level 25",
+	"P:60.0,51.0:1735:Level 25",
+	"P:60.4,46.6:1735:Level 25",
+	"P:61.0,32.2:1735:Level 25",
+	"P:62.6,38.0:1735:Level 25",
+	"P:63.0,42.2:1735:Level 25",
+	"P:64.8,44.8:1735:Level 25",
+	"P:65.4,50.2:1735:Level 25",
+	"P:67.0,60.4:1735:Level 25",
+	"P:68.0,47.6:1735:Level 25",
+	"P:69.2,53.4:1735:Level 25",
+	--Spring Strider/Aquatic:
+	"P:45.4,70.2:1739:Level 25",
+	"P:48.2,70.0:1739:Level 25",
+	--Elfin Rabbit/Critter:
+	"P:46.8,82.2:479:Level 25",
+	"P:51.4,71.0:479:Level 25",
+	"P:54.4,69.0:479:Level 25",
+	"P:65.2,84.6:479:Level 25",
+	--Bucktooth Flapper/Beast:
+	"P:54.6,48.4:380:Level 25",
+	"P:55.6,50.4:380:Level 25",
+	--Slithering Brownscale/Beast:
+	"P:56.8,79.8:1736:Level 25",
+	"P:59.0,88.6:1736:Level 25",
+	"P:59.6,79.2:1736:Level 25",
+	"P:60.8,82.2:1736:Level 25",
+	--Gleamhoof Fawn/Critter:
+	"P:46.2,80.2:1913:Level 25",
+	"P:49.6,42.4:1913:Level 25",
+	"P:52.0,64.8:1913:Level 25",
+	"P:53.4,69.2:1913:Level 25",
+	"P:55.6,68.8:1913:Level 25",
+	"P:56.4,59.4:1913:Level 25",
+	"P:58.0,65.0:1913:Level 25",
+	"P:59.8,87.2:1913:Level 25",
+	"P:62.0,82.2:1913:Level 25",
+	--Cockroach/Critter:
+	"P:42.2,58.8:393:Level 25",
+	--Kelp Scuttler/Aquatic:
+	"P:42.2,91.2:1583:Level 25",
+	"P:61.0,89.2:1583:Level 25",
+	--Black Rat/Critter:
+	"P:35.0,60.2:398:Level 25",
+	"P:41.4,59.6:398:Level 25",
 	"A:42.4,58.6:10666:6", --Bradensbrook
 	"A:25.5,66.5:10666:2", -- Gloaming Reef
 	"A:54.6,73.0:10666:9", -- Lorlathil
@@ -7537,7 +7741,118 @@ tappend(points["Valsharah:0"],
 	"R: 67.5,45.1:94485:Reward (item:130168)\nToy:39130",
 	"R:49.1,47.5:93679:Marius & Tehd versus a Satyr:44070")
 
+tappend(points["TheDreamgrove:0"], 
+	--Auburn Ringtail/Critter:
+	"P:73.2,85.8:1738:",
+	--Elfin Rabbit/Critter:
+	"P:42.2,40.0:479:",
+	"P:46.0,63.0:479:"
+)	
+
 tappend(points["Highmountain:0"],
+	--Alpine Chipmunk/Critter:
+	"P:38.6,41.2:487:Level 25",
+	"P:49.4,44.2:487:Level 25",
+	"P:51.8,34.2:487:Level 25",
+	--Echo Batling/Flying:
+	"P:39.2,44.2:1761:Level 25",
+	"P:46.4,69.8:1761:Level 25",
+	"P:54.8,41.0:1761:Level 25",
+	--Felspider/Beast:
+	"P:23.4,42.4:1731:Level 25",
+	"P:27.4,41.0:1731:Level 25",
+	"P:30.6,27.6:1731:Level 25",
+	--Spiketail Beaver/Beast:
+	"P:25.6,56.6:1763:Level 25",
+	"P:33.4,64.8:1763:Level 25",
+	"P:39.2,48.4:1763:Level 25",
+	"P:41.6,54.4:1763:Level 25",
+	"P:45.0,66.8:1763:Level 25",
+	"P:51.6,63.8:1763:Level 25",
+	--Rusty Snail/Critter:
+	"P:52.6,80.4:496:Level 25",
+	--Black-Footed Fox Kit/Beast:
+	"P:26.0,61.8:1743:Level 25",
+	"P:35.2,72.4:1743:Level 25",
+	"P:36.8,35.6:1743:Level 25",
+	"P:40.6,15.2:1743:Level 25",
+	"P:48.2,43.8:1743:Level 25",
+	"P:52.2,37.8:1743:Level 25",
+	"P:57.4,63.0:1743:Level 25",
+	--Mist Fox Kit/Beast:
+	"P:26.6,43.6:1744:Level 25",
+	"P:30.6,36.8:1744:Level 25",
+	"P:40.8,35.6:1744:Level 25",
+	"P:45.2,25.8:1744:Level 25",
+	"P:47.8,30.2:1744:Level 25",
+	--Mudshell Conch/Critter:
+	"P:33.4,21.8:1776:Level 25",
+	"P:40.0,12.0:1776:Level 25",
+	"P:45.4,10.6:1776:Level 25",
+	"P:49.2,6.8:1776:Level 25",
+	"P:54.4,14.6:1776:Level 25",
+	--Burrow Spiderling/Beast:
+	"P:37.4,33.2:1726:Level 25",
+	"P:43.2,30.0:1726:Level 25",
+	"P:45.6,71.2:1726:Level 25",
+	"P:46.8,68.4:1726:Level 25",
+	"P:47.8,70.2:1726:Level 25",
+	"P:53.0,75.0:1726:Level 25",
+	--Mountain Cottontail/Critter:
+	"P:40.4,61.8:391:Level 25",
+	"P:43.4,48.6:391:Level 25",
+	"P:53.8,47.6:391:Level 25",
+	"P:56.0,65.0:391:Level 25",
+	--Rocko/Elemental:
+	"P:37.2,57.6:1811:Level 25",
+	--Forest Spiderling/Beast:
+	"P:39.2,37.0:407:Level 25",
+	"P:44.4,30.2:407:Level 25",
+	"P:45.0,34.6:407:Level 25",
+	"P:52.2,29.2:407:Level 25",
+	--Mud Jumper/Aquatic:
+	"P:32.8,65.8:1441:Level 25",
+	"P:39.8,62.8:1441:Level 25",
+	"P:57.2,48.6:1441:Level 25",
+	--Squirrel/Critter:
+	"P:58.6,64.6:379:Level 25",
+	--Coralback Fiddler/Aquatic:
+	"P:33.4,20.6:1775:Level 25",
+	"P:39.4,14.8:1775:Level 25",
+	"P:41.0,10.2:1775:Level 25",
+	"P:45.2,12.0:1775:Level 25",
+	"P:48.8,6.6:1775:Level 25",
+	"P:55.4,17.4:1775:Level 25",
+	"P:59.2,18.0:1775:Level 25",
+	--Swamplighter Firefly/Flying:
+	"P:26.4,37.8:1590:Level 25",
+	"P:29.6,32.4:1590:Level 25",
+	"P:37.8,13.2:1590:Level 25",
+	"P:40.6,10.8:1590:Level 25",
+	--Northern Hawk Owl/Flying:
+	"P:49.2,78.6:1714:Level 25",
+	"P:50.0,70.4:1714:Level 25",
+	"P:52.2,83.2:1714:Level 25",
+	"P:55.0,85.8:1714:Level 25",
+	"P:56.4,69.6:1714:Level 25",
+	"P:58.2,71.0:1714:Level 25",
+	--Long-Eared Owl/Flying:
+	"P:35.0,24.4:1713:Level 25",
+	"P:40.8,14.2:1713:Level 25",
+	"P:47.4,68.4:1713:Level 25",
+	"P:49.6,65.6:1713:Level 25",
+	"P:57.4,57.4:1713:Level 25",
+	"P:58.2,42.0:1713:Level 25",
+	"P:58.6,31.4:1713:Level 25",
+	--Garden Frog/Aquatic:
+	"P:42.6,56.6:569:Level 25",
+	"P:43.0,59.8:569:Level 25",
+	--Hog-Nosed Bat/Flying:
+	"P:46.4,39.4:1762:Level 25",
+	"P:48.4,36.8:1762:Level 25",
+	"P:52.4,33.8:1762:Level 25",
+	"P:53.4,35.6:1762:Level 25",
+	--pets end
 	"A:43.0,33.5:10667:10", --Bloodhunt Highlands
 	"A:56.9,90.0:10667:2", -- Highmountain Summit
 	"A:27.3,54.6:10667:12", -- Nightwatcher's Perch
@@ -7636,6 +7951,115 @@ tappend(points["Highmountain:0"],
 	"R:52.3,51.4:97102:Up the mountain 53.1,55.6\n\nReward (item:131802):39766")
 	
 tappend(points["Stormheim:0"],
+	--Grizzly Squirrel/Critter:
+	"P:33.4,31.4:647:Level 25",
+	"P:38.0,46.0:647:Level 25",
+	"P:41.6,58.4:647:Level 25",
+	"P:42.6,41.4:647:Level 25",
+	"P:45.2,72.0:647:Level 25",
+	"P:48.4,53.0:647:Level 25",
+	--Mountain Skunk/Critter:
+	"P:44.4,31.2:633:Level 25",
+	"P:49.2,36.8:633:Level 25",
+	"P:59.0,32.2:633:Level 25",
+	--Stormstruck Beaver/Elemental:
+	"P:34.0,53.2:1917:Level 25",
+	"P:41.6,60.6:1917:Level 25",
+	"P:46.6,61.2:1917:Level 25",
+	--Rapana Whelk/Critter:
+	"P:55.0,42.4:743:Level 25",
+	--Ironclaw Scuttler/Aquatic:
+	"P:36.8,25.8:1579:Level 25",
+	"P:55.0,70.2:1579:Level 25",
+	"P:58.4,73.2:1579:Level 25",
+	"P:74.6,53.6:1579:Level 25",
+	"P:77.8,56.4:1579:Level 25",
+	--Bucktooth Flapper/Beast:
+	"P:37.2,52.4:380:Level 25",
+	"P:42.0,61.2:380:Level 25",
+	"P:47.8,52.2:380:Level 25",
+	--Slithering Brownscale/Beast:
+	"P:30.4,51.8:1736:Level 25",
+	"P:35.4,40.2:1736:Level 25",
+	"P:37.2,63.0:1736:Level 25",
+	"P:37.4,46.2:1736:Level 25",
+	"P:38.0,66.6:1736:Level 25",
+	"P:38.8,39.0:1736:Level 25",
+	"P:41.4,49.4:1736:Level 25",
+	"P:43.4,71.0:1736:Level 25",
+	"P:44.0,60.0:1736:Level 25",
+	"P:44.8,57.6:1736:Level 25",
+	"P:46.4,66.8:1736:Level 25",
+	"P:49.2,44.2:1736:Level 25",
+	"P:51.0,29.6:1736:Level 25",
+	"P:53.0,30.6:1736:Level 25",
+	"P:58.2,75.8:1736:Level 25",
+	--Kelp Scuttler/Aquatic:
+	"P:53.4,44.2:1583:Level 25",
+	"P:56.4,47.0:1583:Level 25",
+	"P:58.0,44.0:1583:Level 25",
+	--Albatross Chick/Flying:
+	"P:76.0,55.6:1708:Level 25",
+	"P:80.2,65.0:1708:Level 25",
+	--Black-Footed Fox Kit/Beast:
+	"P:49.4,59.4:1743:Level 25",
+	"P:53.0,55.2:1743:Level 25",
+	"P:61.4,52.8:1743:Level 25",
+	"P:63.8,48.2:1743:Level 25",
+	"P:69.6,58.6:1743:Level 25",
+	--Mist Fox Kit/Beast:
+	"P:43.2,21.2:1744:Level 25",
+	"P:46.8,26.4:1744:Level 25",
+	"P:50.0,29.4:1744:Level 25",
+	"P:57.8,30.4:1744:Level 25",
+	"P:59.8,30.4:1744:Level 25",
+	--Rose Taipan/Beast:
+	"P:50.2,57.6:1749:Level 25",
+	"P:53.4,59.0:1749:Level 25",
+	"P:63.2,55.0:1749:Level 25",
+	"P:65.2,55.0:1749:Level 25",
+	"P:66.8,50.8:1749:Level 25",
+	"P:69.2,49.2:1749:Level 25",
+	"P:71.8,50.0:1749:Level 25",
+	"P:75.2,57.2:1749:Level 25",
+	--Tiny Apparition/Undead:
+	"P:54.4,43.0:1750:Level 25",
+	"P:54.8,39.6:1750:Level 25",
+	"P:56.6,43.4:1750:Level 25",
+	--Mud Jumper/Aquatic:
+	"P:34.0,45.6:1441:Level 25",
+	"P:35.8,46.6:1441:Level 25",
+	"P:37.0,24.0:1441:Level 25",
+	"P:43.4,18.4:1441:Level 25",
+	"P:47.8,17.4:1441:Level 25",
+	--Highlands Turkey/Flying:
+	"P:51.2,59.0:645:Level 25",
+	"P:63.2,56.8:645:Level 25",
+	"P:65.6,48.4:645:Level 25",
+	"P:69.0,59.8:645:Level 25",
+	"P:73.6,56.8:645:Level 25",
+	--Long-Eared Owl/Flying:
+	"P:29.6,52.2:1713:Level 25",
+	"P:35.8,45.6:1713:Level 25",
+	"P:41.0,52.2:1713:Level 25",
+	"P:44.0,45.6:1713:Level 25",
+	"P:46.4,58.0:1713:Level 25",
+	--Golden Eaglet/Flying:
+	"P:50.4,60.0:1712:Level 25",
+	"P:61.6,55.2:1712:Level 25",
+	"P:67.0,52.0:1712:Level 25",
+	"P:67.4,46.2:1712:Level 25",
+	"P:73.0,57.4:1712:Level 25",
+	"P:73.2,49.8:1712:Level 25",
+	--Highlands Mouse/Critter:
+	"P:39.0,31.0:550:Level 25",
+	"P:39.4,35.2:550:Level 25",
+	"P:42.6,37.4:550:Level 25",
+	"P:43.2,35.0:550:Level 25",
+	"P:48.0,23.0:550:Level 25",
+	"P:51.0,28.6:550:Level 25",
+	"P:58.8,29.0:550:Level 25",
+	"P:67.8,26.2:550:Level 25",
 	"A:47.2,44.8:10668:9", --Aggrammar's Vault
 	"A:55.6,73.6:10668:2", -- Dreadwake's Landing
 	"A:72.0,60.0:10668:1", -- Greywatch
@@ -7778,6 +8202,57 @@ tappend(points["Stormheim:0"],
 	"R:85.0,49.9:92040:Reward (item:129044)\nMaster Trinket:38461")
 
 tappend(points["Suramar:0"],
+	--Vicious Broodling/Beast:
+	"P:25.4,63.4:1807:Level 25",
+	"P:28.4,72.8:1807:Level 25",
+	"P:29.8,63.4:1807:Level 25",
+	"P:32.4,75.8:1807:Level 25",
+	"P:34.0,73.6:1807:Level 25",
+	--Coastal Sandpiper/Flying:
+	"P:15.8,54.0:1914:Level 25",
+	"P:72.2,59.2:1914:Level 25",
+	"P:73.4,61.2:1914:Level 25",
+	"P:82.0,62.4:1914:Level 25",
+	"P:85.4,63.0:1914:Level 25",
+	"P:86.2,61.0:1914:Level 25",
+	--Ash Viper/Beast:
+	"P:24.4,46.6:425:Level 25",
+	"P:33.4,49.0:425:Level 25",
+	"P:38.8,88.0:425:Level 25",
+	"P:65.2,52.4:425:Level 25",
+	--Violet Firefly/Flying:
+	"P:27.6,16.4:1591:Level 25",
+	"P:30.4,17.8:1591:Level 25",
+	"P:31.6,19.8:1591:Level 25",
+	"P:41.4,39.2:1591:Level 25",
+	--Bandicoon/Critter:
+	"P:29.6,31.8:706:Level 25",
+	--Crystalline Broodling/Beast:
+	"P:17.6,47.6:1809:Level 25",
+	"P:20.0,48.2:1809:Level 25",
+	"P:22.0,36.4:1809:Level 25",
+	"P:22.0,42.8:1809:Level 25",
+	"P:24.2,43.0:1809:Level 25",
+	--Thornclaw Broodling/Beast:
+	"P:25.2,61.6:1810:Level 25",
+	"P:28.4,73.0:1810:Level 25",
+	"P:29.0,60.0:1810:Level 25",
+	"P:30.6,77.8:1810:Level 25",
+	"P:31.8,63.6:1810:Level 25",
+	"P:32.4,76.0:1810:Level 25",
+	"P:34.0,73.4:1810:Level 25",
+	"P:35.4,69.6:1810:Level 25",
+	"P:35.6,79.0:1810:Level 25",
+	"P:37.8,70.4:1810:Level 25",
+	--Flamering Moth/Flying:
+	"P:17.8,43.6:1325:Level 25",
+	"P:22.0,28.2:1325:Level 25",
+	"P:26.8,38.8:1325:Level 25",
+	"P:27.4,21.8:1325:Level 25",
+	"P:32.4,46.4:1325:Level 25",
+	"P:32.6,90.8:1325:Level 25",
+	"P:35.4,43.8:1325:Level 25",
+	"P:64.4,43.4:1325:Level 25",
 	"A:30.4,42.3:10669:11", -- Ambervale
 	"A:19.5,45.2:10669:4", -- Falanaar
 	"A:47.3,50.4:10669:5", -- The Grand Pomenade

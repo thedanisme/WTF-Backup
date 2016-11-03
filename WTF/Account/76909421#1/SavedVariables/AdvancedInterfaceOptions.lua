@@ -13,8 +13,8 @@ AdvancedInterfaceOptionsSaved = {
 		["cameraDistanceMaxZoomFactor"] = 1.90000009536743,
 		["autoQuestProgress"] = "0",
 		["MaxSpellStartRecoveryOffset"] = 80,
-		["autoQuestWatch"] = "1",
-		["nameplateOtherAtBase"] = 0,
 		["advancedWatchFrame"] = "1",
+		["nameplateOtherAtBase"] = 0,
+		["autoQuestWatch"] = "1",
 	},
 }
