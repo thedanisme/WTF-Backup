@@ -510,6 +510,7 @@ N (item:124121) |CO| |N|Kill (npc:97809) and collect (item:124121) in {Stormheim
 N (item:124119) |CO| |N|Kill (npc:98808) and collect (item:124119) in {Highmountain} (41.38,54.03)| |Z|1024 0| |NPC|98808|
 N (item:124109) |FIS| |N|Fish in the Rapid-Moving river {Highmountain}<br/><br/>The (item:124109) is rare catch, requires fishing (41.84,51.65)| |Z|1024 0|
 N (item:124109) |FIS| |N|Fish in Black Barracuda schools {Suramar}<br/><br/> Follow the beach east from this spot (74.20,49.90)| |Z|1033 0|
+N (item:124117) |CO| |N|Kill (npc:104224) and (npc:103805) in {Suramar} (33.0, 33.0)| |Z|1033 0| |NPC|104224, 103805|
 --Stonehide
 N (item:124113) |SK| |N|Skin (npc:107503) or (npc:96146) in {Highmountain} (36.0, 37.7)| |Z|1024 0| |NPC|107503, 96146| |W|
 N (item:124113) |SK| |N|Skin (npc:93095) in {Stormheim} (70.5, 52.4)| |Z|1017 0| |NPC|93095| |W|

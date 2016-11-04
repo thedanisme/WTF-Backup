@@ -1,6 +1,52 @@
+2016-11-04  Tercio  <Tercio>
+
+[e20673658fa2] [tip]
+* Libs/LibItemUpgradeInfo-1.0/Core.lua, Libs/LibItemUpgradeInfo-1.0/LibItemUpgradeInfo-1.0.toc:
+
+- hard added an update for ItemUpgradeInfo library.
+
+
+[b3e22bc9b348]
+* boot.lua:
+
+- ingame changelog update.
+
+
+[8e79d93ddfb8]
+* functions/spells.lua:
+
+- removed consecration from paladin tank spell list.
+
+
+2016-10-27  Tercio  <Tercio>
+
+[aa1906a8b4eb]
+* classes/classe_others.lua:
+
+- fixed Misc data with Ascending sort order.
+
+
+[726784310783]
+* functions/slash.lua:
+
+- fix for the auto hide slash.
+
+
+[629ed67563a8]
+* classes/classe_instancia.lua:
+
+- show when using /de show when auto hide is on.
+
+
+[70d804aefb0a]
+* images/spec_icons_normal.tga, images/spec_icons_normal_alpha.tga:
+
+- combat rogue icons replaced with outlaw icons.
+
+
 2016-10-26  Tercio  <Tercio>
 
-[6e8d1117df4e] [tip]
+[6e8d1117df4e]
 * Details.toc:
 
 - added back the locales removed on the previous version.
@@ -218,68 +264,5 @@ hotfixes:
 - new API: Details:GetPlayerIcon (playername[, segmentobject]) - return the player class or spec icon.
 - bar spacing now can go to -2, down from 0.
 - Tiny Threat now shall correctly use the font set on the options panel after a logon.
-
-
-2016-08-21  Tercio  <Tercio>
-
-[53fc16824eb9]
-* boot.lua, functions/profiles.lua, gumps/janela_info.lua, gumps/janela_options.lua, startup.lua:
-
-- fixed percent issues on player detail window.
-
-
-2016-08-20  Tercio  <Tercio>
-
-[1466aff66d6b]
-* boot.lua:
-
-- Fixing Slash and GBoM on dungeon encounters.
-- Solving problems if somebody enter on a ongoing dungeon and have to detect already applyied buffs.
-- If the buff owner isn't found, try to detect by unitaura query.
-- framework update to v41.
-
-
-2016-08-19  Tercio  <Tercio>
-
-[248556e14041]
-* boot.lua:
-
-- Fixing Slash and GBoM on dungeon encounters.
-- Solving problems if somebody enter on a ongoing dungeon and have to detect already applyied buffs.
-- If the buff owner isn't found, try to detect by unitaura query.
-- framework update to v41.
-
-
-[e525cce84fe3]
-* Libs/DF/colors.lua, Libs/DF/fw.lua, Libs/DF/panel.lua, Libs/DF/textentry.lua, boot.lua, classes/classe_damage.lua, classes/classe_heal.lua, classes/container_combatentes.lua, core/parser.lua, gumps/janela_info.lua:
-
-- Fixing Slash and GBoM on dungeon encounters.
-- Solving problems if somebody enter on a ongoing dungeon and have to detect already applyied buffs.
-- If the buff owner isn't found, try to detect by unitaura query.
-- framework update to v41.
-
-
-2016-08-14  Tercio  <Tercio>
-
-[eac04a6fca0f]
-* boot.lua, plugins/Details_Streamer/Details_Streamer.lua:
-
-- Fix for Monk's Soothing Mist on Streamer Plugin.
-
-
-2016-08-13  Tercio  <Tercio>
-
-[e6656844f137]
-* Libs/DF/cooltip.lua, Libs/DF/fw.lua, boot.lua, classes/classe_instancia.lua, core/control.lua, core/parser.lua, gumps/janela_principal.lua:
-
-- Warlock's Grimoire of Synergy buff uptime fix.
-
-
-2016-08-11  Tercio  <Tercio>
-
-[d0cf8ed6de41]
-* boot.lua, classes/container_combatentes.lua, plugins/Details_Streamer/Details_Streamer.lua:
-
-- fix for Details! Streamer plugin.
 
 

@@ -2,10 +2,14 @@
 
 	<Script file="..\DugisGuide_Profession_Legion\1_800_Alchemy.lua"/>
 	<Script file="..\DugisGuide_Profession_Legion\1_800_BlackSmithing.lua"/>
+	<Script file="..\DugisGuide_Profession_Legion\1_800_Cooking.lua"/>
 	<Script file="..\DugisGuide_Profession_Legion\1_800_Enchanting.lua"/>	
+	<Script file="..\DugisGuide_Profession_Legion\1_800_Engineering.lua"/>
+	<Script file="..\DugisGuide_Profession_Legion\1_800_First_Aid.lua"/>	
+	<Script file="..\DugisGuide_Profession_Legion\1_800_Fishing.lua"/>
 	<Script file="..\DugisGuide_Profession_Legion\1_800_Herbalism.lua"/>
 	<Script file="..\DugisGuide_Profession_Legion\1_800_Inscription.lua"/>	
-	<Script file="..\DugisGuide_Profession_Legion\1_800_Engineering.lua"/>
+	<Script file="..\DugisGuide_Profession_Legion\1_800_Jewelcrafting.lua"/>	
 	<Script file="..\DugisGuide_Profession_Legion\1_800_Leatherworking.lua"/>
 	<Script file="..\DugisGuide_Profession_Legion\1_800_Skinning.lua"/>
 	<Script file="..\DugisGuide_Profession_Legion\1_800_Mining.lua"/>

@@ -1,6 +1,6 @@
 local Guide = DugisGuideViewer:RegisterModule("DugisGuide_Profession_Legion_En_1_800_Jewelcrafting")
 function Guide:Initialize()
- function Guide:Load()DugisGuideViewer:RegisterGuide("|cffffd200Legion Leveling|r", "Legion Jewelcrafting  Questing (1-800)", nil, nil, nil, "P", nil, function()
+ function Guide:Load()DugisGuideViewer:RegisterGuide("|cffffd200Legion Leveling|r", "Legion Jewelcrafting Questing (1-800)", nil, nil, nil, "P", nil, function()
 return [[
 
 N Level 98 Required |N|You need to be at least level 98 to continue the guide| |PL|98|

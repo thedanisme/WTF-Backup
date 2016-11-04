@@ -10,6 +10,8 @@ setmetatable(DugisWorldMapTrackingPoints,
 local tappend = DugisGuideViewer.TableAppend
 local points = DugisWorldMapTrackingPoints
 
+DugisGuideViewer.ExtendedTrackingPointsExists = true
+
 ----- Formatting -----
 -- Rare: "R:location:<NPC ID>:extra note1:<additional location 1>:<additional location 2>",
 -- Pet: "P:location:<Species ID>:extra note1:<additional location 1>:<additional location 2>",

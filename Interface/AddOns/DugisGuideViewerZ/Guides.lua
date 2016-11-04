@@ -1088,7 +1088,9 @@ function Guides:Initialize()
 	local dungeonMatches
 	local function MatchDungeonGuides(currentZone, playerLevel)
 		if not currentZone then
-			currentZone = DGV:GetPlayerMapPositionDisruptive()
+            SetMapToCurrentZone()
+			--currentZone = DGV:GetPlayerMapPositionDisruptive()
+			currentZone = GetCurrentMapAreaID()
 		end
 		if not playerLevel then
 			playerLevel = UnitLevel("player")
@@ -4768,7 +4770,9 @@ function Guides:Initialize()
 		local lastInstanceEntered
 		local function CheckDungeonZoneIn()
 			if IsInInstance() then
-				local currentZone = DGV:GetPlayerMapPositionDisruptive() --required to override MapPreview
+				--local currentZone = DGV:GetPlayerMapPositionDisruptive() --required to override MapPreview
+                SetMapToCurrentZone()
+                currentZone = GetCurrentMapAreaID()
 				if currentZone==lastInstanceEntered then return end --one suggestion per entry
 				lastInstanceEntered = currentZone
 				MatchDungeonGuides(currentZone)

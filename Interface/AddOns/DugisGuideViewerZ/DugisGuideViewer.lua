@@ -239,26 +239,25 @@ local function LoadSettings()
 	DGV_DISPLAYGUIDESPROGRESS = 63	
 	DGV_DISPLAYGUIDESPROGRESSTEXT = 64	
 	DGV_AUTOQUESTITEMLOOT = 65
-	DGV_DISPLAYUNCOLLECTEDPETSONLY = 66
-	DGV_DAILYITEM = 67
-	DGV_BLINKMINIMAPICONS = 68
-    DGV_ENABLEDGEARFINDER = 69
-	DGV_INCLUDE_DUNG_NORMAL = 70
-	DGV_INCLUDE_DUNG_HEROIC = 71
-	DGV_INCLUDE_DUNG_MYTHIC = 72
-	DGV_INCLUDE_DUNG_TIMEWALKING = 73
+	DGV_DAILYITEM = 66
+	DGV_BLINKMINIMAPICONS = 67
+    DGV_ENABLEDGEARFINDER = 68
+	DGV_INCLUDE_DUNG_NORMAL = 69
+	DGV_INCLUDE_DUNG_HEROIC = 70
+	DGV_INCLUDE_DUNG_MYTHIC = 71
+	DGV_INCLUDE_DUNG_TIMEWALKING = 72
     
-	DGV_INCLUDE_RAIDS_RAIDFINDER = 74
-	DGV_INCLUDE_RAIDS_NORMAL = 75
-	DGV_INCLUDE_RAIDS_HEROIC = 76
-	DGV_INCLUDE_RAIDS_MYTHIC = 77
+	DGV_INCLUDE_RAIDS_RAIDFINDER = 73
+	DGV_INCLUDE_RAIDS_NORMAL = 74
+	DGV_INCLUDE_RAIDS_HEROIC = 75
+	DGV_INCLUDE_RAIDS_MYTHIC = 76
     
-    DGV_GEARS_FROM_QUEST_GUIDES = 78
+    DGV_GEARS_FROM_QUEST_GUIDES = 77
 	
-	DGV_AUTO_QUEST_TRACK = 79
-	DGV_WAYPOINT_PING = 80
+	DGV_AUTO_QUEST_TRACK = 78
+	DGV_WAYPOINT_PING = 79
     
-    DGV_HIDE_MODELS_IN_WORLDMAP = 81
+    DGV_HIDE_MODELS_IN_WORLDMAP = 80
     
 
     
@@ -312,7 +311,7 @@ local function LoadSettings()
 					SettingsRevision = 0,
 					WatchFrameSnapped = true,
 					GuideOn = true,
-					sz = 81, --Num check boxes
+					sz = 80, --Num check boxes
 					[DGV_QUESTLEVELON]			= { category = "Other",	text = "Display Quest Level", 	checked = false,	tooltip = "Show the quest level on the large and small frames", module = "Guides"},
 					[DGV_QUESTCOLORON] 		= { category = "Other",	text = "Color Code Quest", 	checked = true,		tooltip = "Color code quest against your character's level", module = "Guides"},
 					[DGV_LOCKSMALLFRAME] 		= { category = "Frames",	text = "Lock Small Frame", 	checked = false,	tooltip = "Lock small frame into place", module = "SmallFrame"},
@@ -351,7 +350,6 @@ local function LoadSettings()
 					--[DGV_AUTOSTICK] 		= { category = "Other",		text = "Auto Stick", 		checked = true,		tooltip = "This feature will automatically add 'as you go...' step into sticky frame",},
 					[DGV_DISPLAYMAPCOORDINATES] 	= { category = "Maps",		text = "Map Coordinates",  	checked = true,    	tooltip = "Show Player and Mouse coordinates at the bottom of the map.",},
 					[DGV_WORLDMAPTRACKING] 		= { category = "Maps",		text = "World Map Tracking",  	checked = true,    	tooltip = "Add minimap tracking icons on the world map.",},
-					[DGV_DISPLAYUNCOLLECTEDPETSONLY] 		= { category = "Maps",		text = "Hide Collected Pets",  	checked = true,    	tooltip = "Hide collected pets in world map tracking with Extra Tracking Module", module = "Guides"},
 					[DGV_BLINKMINIMAPICONS] 		= { category = "Maps",		text = "Blink Minimap Resource Nodes",  	checked = false,    	tooltip = "Resource nodes for gathering profession will blink in your minimap to make it easier to notice", module = "Disabled"},
 					[DGV_HIDE_MODELS_IN_WORLDMAP] 		= { category = "Maps",		text = "Hide Model Preview in World Map",  	checked = false,    	tooltip = "Hide Model Preview in World Map"},
 					[DGV_ENABLEMODELDB]		= { category = "Hide",	text = "Model Database",	checked = true,		tooltip = "Allows model viewer to function", module = "NpcsF"},
@@ -4060,5 +4058,4 @@ if LIB_UIDROPDOWNMENU_MAXLEVELS then
         end
     end
 end
-    
     

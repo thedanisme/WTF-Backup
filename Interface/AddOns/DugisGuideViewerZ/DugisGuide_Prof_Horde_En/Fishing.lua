@@ -27,7 +27,7 @@ R Western Plaguelands |N|Travel to {Western Plaguelands} (50,50)| |Z|22| |P|Fish
 N Fishing 125-225 |FIS| |LOOP| |N|Open waters in {Western Plaguelands} (36.0,71.4)(44.6,76.1)(50.1,70.8)(56.3,73.5)| |Z|22| |P|Fishing 175|
 
 R Undercity |N|Travel to {Undercity} (81.0, 31.2)| |Z|382| |PM|Fishing|300|
-N s Artisan Fishing |N|(npc:4573) (81.0, 31.2)| |Z|382| |PM|Fishing|300|
+N Train Artisan Fishing |N|(npc:4573) (81.0, 31.2)| |Z|382| |PM|Fishing|300|
 
 R Blasted Lands |N|Travel to {Blasted Lands} (41.3, 65.8)| |Z|19| |P|Fishing 300|
 N Fishing 225-300 |FIS| |LOOP| |N|Fish Open Water in Tainted Forest (41.3, 65.8)| |P|Fishing 300| |Z|19|

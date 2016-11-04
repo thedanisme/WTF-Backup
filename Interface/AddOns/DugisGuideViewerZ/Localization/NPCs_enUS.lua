@@ -20946,6 +20946,27 @@ function NPC:Initialize()
 [93525] = "Ainderu Summerleaf",
 [110981] = "Fleshripper Helsquid",
 [96444] = "Violet Hold Guard",
+
+[111901] = "Suramar Refugee",
+[116256] = "Victoire",
+[107600] = "Shal'dorei Civilian",
+[115002] = "Maribeth",
+[114998] = "Aargoss",
+[115607] = "Thoramir",
+
+[115279] = "Shal'dorei Insurgent",
+[116043] = "Arcshaper Thorendis",
+[116068] = "Arm of the Magistrix",
+
+[113371] = "Demonia Pickerin",
+[115338] = "Rebellious Citizen",
+[116256] = "Victoire",
+[107600] = "Shal'dorei Civilian",
+[114998] = "Aargoss",
+[112757] = "Magistrix Vilessa",
+[117155] = "Duskrider Silaryn",
+[103805] = "Sablehorn Doe",
+[93529] = "Olisarra the Kind",
 }
 	end
 
