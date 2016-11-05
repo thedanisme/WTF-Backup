@@ -3550,7 +3550,8 @@ function DugisGuideViewer:Dugi_QUEST_LOG_UPDATE()
 		lastCompletedLogQuests, completedLogQuests = completedLogQuests, lastCompletedLogQuests
 		wipe(completedLogQuests)
 		for i=1,GetNumQuestLogEntries() do
-			local link = GetQuestLink(i)
+            local _, _, _, _, _, _, _, id = GetQuestLogTitle(i)
+			local link = GetQuestLink(id)
 			local qid = link and tonumber(link:match("|Hquest:(%d+):"))
 			if qid then
 				local title, _, _, _, _, questFinished = GetQuestLogTitle(i)

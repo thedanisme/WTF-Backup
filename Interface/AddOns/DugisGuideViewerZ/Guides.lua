@@ -4068,39 +4068,75 @@ function Guides:Initialize()
          return DGV:GetPercentText(nodeData.data.rawTitle, nodeData.data.guideType)
     end
     
-    local headerTitle2Node = {}
-    local headerTitle3Node = {}
+    local guideType2Node = {}
+    local headerL1Title2Node = {}
     local headerL2Title2Node = {}
     local headerL3Title2Node = {}
     tabs[SUGGEST_TAB].treeData = {}  
 
     function BeginAddingGuidesToTreeData(treeDataParent)
         treeDataParent.treeData = {}
-        headerTitle2Node = {}
-        headerTitle3Node = {}
+        guideType2Node = {}
+        headerL1Title2Node = {}
         headerL2Title2Node = {}
         headerL3Title2Node = {}
     end    
     
-    function AddGuideToTreeData(treeData, guideTitle, guideType)
-        local currentNode = nil
-        local currentHeading = DGV.headings[guideTitle]
+    local guideType2GuideTitle = {}
+    
+    LuaUtils:foreach(tabs, function(tab)
+        if tab.guidetype then
+            guideType2GuideTitle[tab.guidetype] = tab.title
+        end
+    end)
+
+    function AddGuideToTreeData(treeData, guideTitle, guideType, guideTypeAsTopCategory)
+        local currentHeadingL1 = DGV.headings[guideTitle]
         local currentHeadingL2 = DGV.hedingsL2[guideTitle]
         local currentHeadingL3 = DGV.hedingsL3[guideTitle]
+        local currentGuideType = guideType
+        local currentNode
         
-        local currentNode = headerTitle2Node[currentHeading]
+        if guideTypeAsTopCategory then
+            currentNode = guideType2Node[guideType]
+        else
+            currentNode = headerL1Title2Node[currentHeadingL1]
+        end 
+        
+        --New node
+        --Categories Level 0
+        if not currentNode and guideTypeAsTopCategory then
+            local key = currentGuideType
+            currentNode = {name=guideType2GuideTitle[currentGuideType], nodes={}, data={}}
+            guideType2Node[key] = currentNode
+            treeData[#treeData + 1] = currentNode
+        end
         
         --New node
         --Categories Level 1
-        if not currentNode then
-            currentNode = {name=currentHeading, nodes={}, data={}}
-            headerTitle2Node[currentHeading] = currentNode
-            treeData[#treeData + 1] = currentNode
+        if not guideTypeAsTopCategory then
+            if not currentNode then
+                local key = currentHeadingL1
+                currentNode = {name=currentHeadingL1, nodes={}, data={}}
+                headerL1Title2Node[key] = currentNode
+                treeData[#treeData + 1] = currentNode
+            end
+        else
+            local key = currentHeadingL1
+            
+            local currentL1Node = headerL1Title2Node[key]
+            if not currentL1Node then
+                currentL1Node = {name=currentHeadingL1, nodes={}, data={}}
+                headerL1Title2Node[key] = currentL1Node
+                currentNode.nodes[#currentNode.nodes + 1] = currentL1Node
+            end
+            
+            currentNode = currentL1Node
         end
         
         --Categories Level 2
         if currentHeadingL2 then
-            local key = currentHeading .. currentHeadingL2
+            local key = currentHeadingL1 .. currentHeadingL2
             
             local currentL2Node = headerL2Title2Node[key]
             if not currentL2Node then
@@ -4114,7 +4150,7 @@ function Guides:Initialize()
         
         --Categories Level 3
         if currentHeadingL3 then
-            local key = currentHeading .. currentHeadingL2 .. currentHeadingL3
+            local key = currentHeadingL1 .. currentHeadingL2 .. currentHeadingL3
         
             local currentL3Node = headerL3Title2Node[key]
             if not currentL3Node then
@@ -4158,7 +4194,7 @@ function Guides:Initialize()
         LuaUtils:foreach(iGuides, function(guide)
             local isStartingZone = (string.match(DGV.headings[guide], "Starting Zones") ~= nil)
             if not isStartingZone or (isStartingZone and string.match(guide, engPlayerRace)) then
-                AddGuideToTreeData(tabs[SUGGEST_TAB].treeData, guide, "I")
+                AddGuideToTreeData(tabs[SUGGEST_TAB].treeData, guide, "I", true)
             end
         end)
         
@@ -4166,7 +4202,7 @@ function Guides:Initialize()
         LuaUtils:foreach(lGuides, function(guide)
             local isStartingZone = (string.match(DGV.headings[guide], "Starting Zones") ~= nil)
             if not isStartingZone or (isStartingZone and string.match(guide, engPlayerRace)) then
-                AddGuideToTreeData(tabs[SUGGEST_TAB].treeData, guide, "L")
+                AddGuideToTreeData(tabs[SUGGEST_TAB].treeData, guide, "L", true)
             end
         end)
 
@@ -4182,7 +4218,7 @@ function Guides:Initialize()
 
                     local isStartingZone = (string.match(DGV.headings[guide], "Starting Zones") ~= nil)
                     if not isStartingZone or (isStartingZone and string.match(guide, engPlayerRace)) then
-                        AddGuideToTreeData(tabs[SUGGEST_TAB].treeData, guide, tabInfo.guidetype)
+                        AddGuideToTreeData(tabs[SUGGEST_TAB].treeData, guide, tabInfo.guidetype, true)
                     end
 				end
 			end
@@ -4468,7 +4504,7 @@ function Guides:Initialize()
 			end
 		end
 
-        local headerTitle2Node = {}
+        local headerL1Title2Node = {}
         tabs[SEARCH_TAB].treeData = {}
         
         local i=1
@@ -4484,12 +4520,12 @@ function Guides:Initialize()
                         local currentNode = nil
                         local currentHeading = DGV.headings[title]
                         
-                        local currentNode = headerTitle2Node[currentHeading]
+                        local currentNode = headerL1Title2Node[currentHeading]
                         
                         --New node
                         if not currentNode then
                             currentNode = {name=currentHeading, nodes={}, data={}}
-                            headerTitle2Node[currentHeading] = currentNode
+                            headerL1Title2Node[currentHeading] = currentNode
                             tabs[SEARCH_TAB].treeData[#tabs[SEARCH_TAB].treeData + 1] = currentNode
                         end
                         

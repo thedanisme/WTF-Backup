@@ -920,7 +920,8 @@ function DugisArrow:Initialize()
 			end
 		end
 		for i=1,GetNumQuestLogEntries() do
-			local link = GetQuestLink(i)
+            local _, _, _, _, _, _, _, id = GetQuestLogTitle(i)
+			local link = GetQuestLink(id)
 			local qid = link and tonumber(link:match("|Hquest:(%d+):"))
 			if qid==wp.questId  then
 				return
@@ -1196,7 +1197,7 @@ function DugisArrow:Initialize()
 
 				if speed > 0 then
 					local eta = math.abs(dist / speed)
-					if eta > 2^52 then
+					if eta > 2^42 then
 						wayframe.status:SetPoint("TOP", wayframe.title, "BOTTOM", -21, 0)
 						wayframe.tta:SetPoint("LEFT", wayframe.status, "RIGHT", 8, 0)
 						tta:SetText("***")
