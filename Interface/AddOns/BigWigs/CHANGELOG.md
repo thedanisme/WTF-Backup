@@ -1,10 +1,6 @@
 # BigWigs
 
-## [v22](https://github.com/BigWigsMods/BigWigs/tree/v22) (2016-11-02) [](#top)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v21.3...v22)
+## [v22-1-g8821847](https://github.com/BigWigsMods/BigWigs/tree/882184761472eb9a9ab92cac86c22a648fb2fe95) (2016-11-04) [](#top)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v22...882184761472eb9a9ab92cac86c22a648fb2fe95)
 
--   bump version  
--   Nightmare/Xavius: Add a "Dream Healers" infobox.  
--   Plugins/AltPower: Shorten title/header by removing the "AltPower:" portion of the text.  
--   Add Flotsam module  
--   Nightmare/Xavius: Add percentage to stage warnings.  
+- Fix some menus  
