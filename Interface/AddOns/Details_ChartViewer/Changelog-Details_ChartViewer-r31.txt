@@ -1,6 +1,14 @@
+2016-11-06  Tercio  <Tercio>
+
+[cac9d000dd75] [tip]
+* Details_ChartViewer.lua:
+
+- when starting a boss encounter, automatically close the panel.
+
+
 2016-10-25  Tercio  <Tercio>
 
-[84aa5ddf1a38] [tip]
+[84aa5ddf1a38]
 * Details_ChartViewer.toc:
 
 - toc update.
@@ -223,13 +231,5 @@ update for 6.0.2
 * Details_ChartViewer.lua, Details_ChartViewer.xml, icon.tga:
 
 Continuing the development.
-
-
-2014-06-11  tercio  <tercio>
-
-[c15288de5265]
-* Details_ChartViewer.lua, Details_ChartViewer.xml:
-
-- Plugin Development.
 
 

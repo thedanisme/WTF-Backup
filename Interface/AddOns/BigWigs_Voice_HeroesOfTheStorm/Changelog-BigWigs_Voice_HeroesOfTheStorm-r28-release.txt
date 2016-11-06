@@ -1,0 +1,251 @@
+------------------------------------------------------------------------
+r28 | nebula169 | 2016-11-06 03:46:26 +0000 (Sun, 06 Nov 2016) | 1 line
+Changed paths:
+   A /tags/r28-release (from /trunk:27)
+
+Tagging as r28-release
+------------------------------------------------------------------------
+r27 | nebula169 | 2016-11-06 03:40:43 +0000 (Sun, 06 Nov 2016) | 1 line
+Changed paths:
+   M /trunk/Core.lua
+   A /trunk/esMX
+   A /trunk/esMX/Adjutant_Countdown1sec00.ogg
+   A /trunk/esMX/Adjutant_Countdown2sec00.ogg
+   A /trunk/esMX/Adjutant_Countdown3sec00.ogg
+   A /trunk/esMX/Adjutant_Countdown4sec00.ogg
+   A /trunk/esMX/Adjutant_Countdown5sec00.ogg
+   A /trunk/esMX/Angel_Countdown1sec00.ogg
+   A /trunk/esMX/Angel_Countdown2sec00.ogg
+   A /trunk/esMX/Angel_Countdown3sec00.ogg
+   A /trunk/esMX/Angel_Countdown4sec00.ogg
+   A /trunk/esMX/Angel_Countdown5sec00.ogg
+   A /trunk/esMX/Arena_Countdown1sec00.ogg
+   A /trunk/esMX/Arena_Countdown2sec00.ogg
+   A /trunk/esMX/Arena_Countdown3sec00.ogg
+   A /trunk/esMX/Arena_Countdown4sec00.ogg
+   A /trunk/esMX/Arena_Countdown5sec00.ogg
+   A /trunk/esMX/Blackheart_Countdown1sec00.ogg
+   A /trunk/esMX/Blackheart_Countdown2sec00.ogg
+   A /trunk/esMX/Blackheart_Countdown3sec00.ogg
+   A /trunk/esMX/Blackheart_Countdown4sec00.ogg
+   A /trunk/esMX/Blackheart_Countdown5sec00.ogg
+   A /trunk/esMX/Demon_Countdown1sec00.ogg
+   A /trunk/esMX/Demon_Countdown2sec00.ogg
+   A /trunk/esMX/Demon_Countdown3sec00.ogg
+   A /trunk/esMX/Demon_Countdown4sec00.ogg
+   A /trunk/esMX/Demon_Countdown5sec00.ogg
+   A /trunk/esMX/GardensDayAnnouncer_Countdown1sec00.ogg
+   A /trunk/esMX/GardensDayAnnouncer_Countdown2sec00.ogg
+   A /trunk/esMX/GardensDayAnnouncer_Countdown3sec00.ogg
+   A /trunk/esMX/GardensDayAnnouncer_Countdown4sec00.ogg
+   A /trunk/esMX/GardensDayAnnouncer_Countdown5sec00.ogg
+   A /trunk/esMX/LadyofThorns_Countdown1sec00.ogg
+   A /trunk/esMX/LadyofThorns_Countdown2sec00.ogg
+   A /trunk/esMX/LadyofThorns_Countdown3sec00.ogg
+   A /trunk/esMX/LadyofThorns_Countdown4sec00.ogg
+   A /trunk/esMX/LadyofThorns_Countdown5sec00.ogg
+   A /trunk/esMX/Necromancer_Countdown1sec00.ogg
+   A /trunk/esMX/Necromancer_Countdown2sec00.ogg
+   A /trunk/esMX/Necromancer_Countdown3sec00.ogg
+   A /trunk/esMX/Necromancer_Countdown4sec00.ogg
+   A /trunk/esMX/Necromancer_Countdown5sec00.ogg
+   A /trunk/esMX/RavenLord_Countdown1sec00.ogg
+   A /trunk/esMX/RavenLord_Countdown2sec00.ogg
+   A /trunk/esMX/RavenLord_Countdown3sec00.ogg
+   A /trunk/esMX/RavenLord_Countdown4sec00.ogg
+   A /trunk/esMX/RavenLord_Countdown5sec00.ogg
+   A /trunk/esMX/SnakeGod_Countdown1sec00.ogg
+   A /trunk/esMX/SnakeGod_Countdown2sec00.ogg
+   A /trunk/esMX/SnakeGod_Countdown3sec00.ogg
+   A /trunk/esMX/SnakeGod_Countdown4sec00.ogg
+   A /trunk/esMX/SnakeGod_Countdown5sec00.ogg
+   A /trunk/esMX/SpiderQueen_Countdown1sec00.ogg
+   A /trunk/esMX/SpiderQueen_Countdown2sec00.ogg
+   A /trunk/esMX/SpiderQueen_Countdown3sec00.ogg
+   A /trunk/esMX/SpiderQueen_Countdown4sec00.ogg
+   A /trunk/esMX/SpiderQueen_Countdown5sec00.ogg
+
+Add esMX (like CN/TW, ES/MX are a bit different)
+------------------------------------------------------------------------
+r26 | nebula169 | 2016-11-06 03:37:00 +0000 (Sun, 06 Nov 2016) | 1 line
+Changed paths:
+   M /trunk/Core.lua
+   A /trunk/deDE/Adjutant_Countdown1sec00.ogg
+   A /trunk/deDE/Adjutant_Countdown2sec00.ogg
+   A /trunk/deDE/Adjutant_Countdown3sec00.ogg
+   A /trunk/deDE/Adjutant_Countdown4sec00.ogg
+   A /trunk/deDE/Adjutant_Countdown5sec00.ogg
+   A /trunk/deDE/Arena_Countdown1sec00.ogg
+   A /trunk/deDE/Arena_Countdown2sec00.ogg
+   A /trunk/deDE/Arena_Countdown3sec00.ogg
+   A /trunk/deDE/Arena_Countdown4sec00.ogg
+   A /trunk/deDE/Arena_Countdown5sec00.ogg
+   A /trunk/deDE/SpiderQueen_Countdown1sec00.ogg
+   A /trunk/deDE/SpiderQueen_Countdown2sec00.ogg
+   A /trunk/deDE/SpiderQueen_Countdown3sec00.ogg
+   A /trunk/deDE/SpiderQueen_Countdown4sec00.ogg
+   A /trunk/deDE/SpiderQueen_Countdown5sec00.ogg
+   A /trunk/enUS/Adjutant_Countdown1sec00.ogg
+   A /trunk/enUS/Adjutant_Countdown2sec00.ogg
+   A /trunk/enUS/Adjutant_Countdown3sec00.ogg
+   A /trunk/enUS/Adjutant_Countdown4sec00.ogg
+   A /trunk/enUS/Adjutant_Countdown5sec00.ogg
+   A /trunk/enUS/Arena_Countdown1sec00.ogg
+   A /trunk/enUS/Arena_Countdown2sec00.ogg
+   A /trunk/enUS/Arena_Countdown3sec00.ogg
+   A /trunk/enUS/Arena_Countdown4sec00.ogg
+   A /trunk/enUS/Arena_Countdown5sec00.ogg
+   A /trunk/enUS/SpiderQueen_Countdown1sec00.ogg
+   A /trunk/enUS/SpiderQueen_Countdown2sec00.ogg
+   A /trunk/enUS/SpiderQueen_Countdown3sec00.ogg
+   A /trunk/enUS/SpiderQueen_Countdown4sec00.ogg
+   A /trunk/enUS/SpiderQueen_Countdown5sec00.ogg
+   A /trunk/esES/Adjutant_Countdown1sec00.ogg
+   A /trunk/esES/Adjutant_Countdown2sec00.ogg
+   A /trunk/esES/Adjutant_Countdown3sec00.ogg
+   A /trunk/esES/Adjutant_Countdown4sec00.ogg
+   A /trunk/esES/Adjutant_Countdown5sec00.ogg
+   A /trunk/esES/Arena_Countdown1sec00.ogg
+   A /trunk/esES/Arena_Countdown2sec00.ogg
+   A /trunk/esES/Arena_Countdown3sec00.ogg
+   A /trunk/esES/Arena_Countdown4sec00.ogg
+   A /trunk/esES/Arena_Countdown5sec00.ogg
+   A /trunk/esES/SpiderQueen_Countdown1sec00.ogg
+   A /trunk/esES/SpiderQueen_Countdown2sec00.ogg
+   A /trunk/esES/SpiderQueen_Countdown3sec00.ogg
+   A /trunk/esES/SpiderQueen_Countdown4sec00.ogg
+   A /trunk/esES/SpiderQueen_Countdown5sec00.ogg
+   A /trunk/frFR/Adjutant_Countdown1sec00.ogg
+   A /trunk/frFR/Adjutant_Countdown2sec00.ogg
+   A /trunk/frFR/Adjutant_Countdown3sec00.ogg
+   A /trunk/frFR/Adjutant_Countdown4sec00.ogg
+   A /trunk/frFR/Adjutant_Countdown5sec00.ogg
+   A /trunk/frFR/Arena_Countdown1sec00.ogg
+   A /trunk/frFR/Arena_Countdown2sec00.ogg
+   A /trunk/frFR/Arena_Countdown3sec00.ogg
+   A /trunk/frFR/Arena_Countdown4sec00.ogg
+   A /trunk/frFR/Arena_Countdown5sec00.ogg
+   A /trunk/frFR/SpiderQueen_Countdown1sec00.ogg
+   A /trunk/frFR/SpiderQueen_Countdown2sec00.ogg
+   A /trunk/frFR/SpiderQueen_Countdown3sec00.ogg
+   A /trunk/frFR/SpiderQueen_Countdown4sec00.ogg
+   A /trunk/frFR/SpiderQueen_Countdown5sec00.ogg
+   A /trunk/itIT/Adjutant_Countdown1sec00.ogg
+   A /trunk/itIT/Adjutant_Countdown2sec00.ogg
+   A /trunk/itIT/Adjutant_Countdown3sec00.ogg
+   A /trunk/itIT/Adjutant_Countdown4sec00.ogg
+   A /trunk/itIT/Adjutant_Countdown5sec00.ogg
+   A /trunk/itIT/Arena_Countdown1sec00.ogg
+   A /trunk/itIT/Arena_Countdown2sec00.ogg
+   A /trunk/itIT/Arena_Countdown3sec00.ogg
+   A /trunk/itIT/Arena_Countdown4sec00.ogg
+   A /trunk/itIT/Arena_Countdown5sec00.ogg
+   A /trunk/itIT/SpiderQueen_Countdown1sec00.ogg
+   A /trunk/itIT/SpiderQueen_Countdown2sec00.ogg
+   A /trunk/itIT/SpiderQueen_Countdown3sec00.ogg
+   A /trunk/itIT/SpiderQueen_Countdown4sec00.ogg
+   A /trunk/itIT/SpiderQueen_Countdown5sec00.ogg
+   A /trunk/koKR/Adjutant_Countdown1sec00.ogg
+   A /trunk/koKR/Adjutant_Countdown2sec00.ogg
+   A /trunk/koKR/Adjutant_Countdown3sec00.ogg
+   A /trunk/koKR/Adjutant_Countdown4sec00.ogg
+   A /trunk/koKR/Adjutant_Countdown5sec00.ogg
+   A /trunk/koKR/Arena_Countdown1sec00.ogg
+   A /trunk/koKR/Arena_Countdown2sec00.ogg
+   A /trunk/koKR/Arena_Countdown3sec00.ogg
+   A /trunk/koKR/Arena_Countdown4sec00.ogg
+   A /trunk/koKR/Arena_Countdown5sec00.ogg
+   A /trunk/koKR/SpiderQueen_Countdown1sec00.ogg
+   A /trunk/koKR/SpiderQueen_Countdown2sec00.ogg
+   A /trunk/koKR/SpiderQueen_Countdown3sec00.ogg
+   A /trunk/koKR/SpiderQueen_Countdown4sec00.ogg
+   A /trunk/koKR/SpiderQueen_Countdown5sec00.ogg
+   A /trunk/ptBR/Adjutant_Countdown1sec00.ogg
+   A /trunk/ptBR/Adjutant_Countdown2sec00.ogg
+   A /trunk/ptBR/Adjutant_Countdown3sec00.ogg
+   A /trunk/ptBR/Adjutant_Countdown4sec00.ogg
+   A /trunk/ptBR/Adjutant_Countdown5sec00.ogg
+   A /trunk/ptBR/Arena_Countdown1sec00.ogg
+   A /trunk/ptBR/Arena_Countdown2sec00.ogg
+   A /trunk/ptBR/Arena_Countdown3sec00.ogg
+   A /trunk/ptBR/Arena_Countdown4sec00.ogg
+   A /trunk/ptBR/Arena_Countdown5sec00.ogg
+   A /trunk/ptBR/SpiderQueen_Countdown1sec00.ogg
+   A /trunk/ptBR/SpiderQueen_Countdown2sec00.ogg
+   A /trunk/ptBR/SpiderQueen_Countdown3sec00.ogg
+   A /trunk/ptBR/SpiderQueen_Countdown4sec00.ogg
+   A /trunk/ptBR/SpiderQueen_Countdown5sec00.ogg
+   A /trunk/ruRU/Adjutant_Countdown1sec00.ogg
+   A /trunk/ruRU/Adjutant_Countdown2sec00.ogg
+   A /trunk/ruRU/Adjutant_Countdown3sec00.ogg
+   A /trunk/ruRU/Adjutant_Countdown4sec00.ogg
+   A /trunk/ruRU/Adjutant_Countdown5sec00.ogg
+   A /trunk/ruRU/Arena_Countdown1sec00.ogg
+   A /trunk/ruRU/Arena_Countdown2sec00.ogg
+   A /trunk/ruRU/Arena_Countdown3sec00.ogg
+   A /trunk/ruRU/Arena_Countdown4sec00.ogg
+   A /trunk/ruRU/Arena_Countdown5sec00.ogg
+   A /trunk/ruRU/SpiderQueen_Countdown1sec00.ogg
+   A /trunk/ruRU/SpiderQueen_Countdown2sec00.ogg
+   A /trunk/ruRU/SpiderQueen_Countdown3sec00.ogg
+   A /trunk/ruRU/SpiderQueen_Countdown4sec00.ogg
+   A /trunk/ruRU/SpiderQueen_Countdown5sec00.ogg
+   A /trunk/zhCN/Adjutant_Countdown1sec00.ogg
+   A /trunk/zhCN/Adjutant_Countdown2sec00.ogg
+   A /trunk/zhCN/Adjutant_Countdown3sec00.ogg
+   A /trunk/zhCN/Adjutant_Countdown4sec00.ogg
+   A /trunk/zhCN/Adjutant_Countdown5sec00.ogg
+   A /trunk/zhCN/Arena_Countdown1sec00.ogg
+   A /trunk/zhCN/Arena_Countdown2sec00.ogg
+   A /trunk/zhCN/Arena_Countdown3sec00.ogg
+   A /trunk/zhCN/Arena_Countdown4sec00.ogg
+   A /trunk/zhCN/Arena_Countdown5sec00.ogg
+   A /trunk/zhCN/SpiderQueen_Countdown1sec00.ogg
+   A /trunk/zhCN/SpiderQueen_Countdown2sec00.ogg
+   A /trunk/zhCN/SpiderQueen_Countdown3sec00.ogg
+   A /trunk/zhCN/SpiderQueen_Countdown4sec00.ogg
+   A /trunk/zhCN/SpiderQueen_Countdown5sec00.ogg
+   A /trunk/zhTW/Adjutant_Countdown1sec00.ogg
+   A /trunk/zhTW/Adjutant_Countdown2sec00.ogg
+   A /trunk/zhTW/Adjutant_Countdown3sec00.ogg
+   A /trunk/zhTW/Adjutant_Countdown4sec00.ogg
+   A /trunk/zhTW/Adjutant_Countdown5sec00.ogg
+   A /trunk/zhTW/Arena_Countdown1sec00.ogg
+   A /trunk/zhTW/Arena_Countdown2sec00.ogg
+   A /trunk/zhTW/Arena_Countdown3sec00.ogg
+   A /trunk/zhTW/Arena_Countdown4sec00.ogg
+   A /trunk/zhTW/Arena_Countdown5sec00.ogg
+   A /trunk/zhTW/SpiderQueen_Countdown1sec00.ogg
+   A /trunk/zhTW/SpiderQueen_Countdown2sec00.ogg
+   A /trunk/zhTW/SpiderQueen_Countdown3sec00.ogg
+   A /trunk/zhTW/SpiderQueen_Countdown4sec00.ogg
+   A /trunk/zhTW/SpiderQueen_Countdown5sec00.ogg
+
+Add Spider Queen, Marine, and Arena countdown voices
+------------------------------------------------------------------------
+r25 | nebula169 | 2016-11-06 03:28:53 +0000 (Sun, 06 Nov 2016) | 1 line
+Changed paths:
+   M /trunk/Core.lua
+
+Fix changing the language
+------------------------------------------------------------------------
+r24 | nebula169 | 2016-11-06 02:34:06 +0000 (Sun, 06 Nov 2016) | 1 line
+Changed paths:
+   M /trunk/BigWigs_Voice_HeroesOfTheStorm.toc
+   M /trunk/Core.lua
+   M /trunk/Locales.lua
+
+Drop AceLocale-3.0 since BigWigs doesn't provide it now
+------------------------------------------------------------------------
+r23 | nebula169 | 2016-11-06 02:30:56 +0000 (Sun, 06 Nov 2016) | 1 line
+Changed paths:
+   M /trunk/BigWigs_Voice_HeroesOfTheStorm.toc
+
+Update TOC for 7.1
+------------------------------------------------------------------------
+r22 | nebula169 | 2016-08-11 00:56:39 +0000 (Thu, 11 Aug 2016) | 1 line
+Changed paths:
+   M /trunk/BigWigs_Voice_HeroesOfTheStorm.toc
+
+Big Wigs -> BigWigs
+------------------------------------------------------------------------

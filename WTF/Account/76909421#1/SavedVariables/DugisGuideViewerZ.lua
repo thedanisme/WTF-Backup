@@ -156,8 +156,12 @@ DugisGuideViewerProfiles = {
 					[58] = {
 						["checked"] = false,
 					},
-					[33] = {
-						["checked"] = true,
+					[302] = {
+						["options"] = {
+							false, -- [1]
+							false, -- [2]
+							false, -- [3]
+						},
 					},
 					[57] = {
 						["checked"] = true,
@@ -171,12 +175,8 @@ DugisGuideViewerProfiles = {
 							"Retribution", -- [5]
 						},
 					},
-					[302] = {
-						["options"] = {
-							false, -- [1]
-							false, -- [2]
-							false, -- [3]
-						},
+					[33] = {
+						["checked"] = true,
 					},
 					[108] = {
 						["checked"] = "Standard - Anchored",
@@ -187,8 +187,8 @@ DugisGuideViewerProfiles = {
 					[36] = {
 						["checked"] = true,
 					},
-					[103] = {
-						["checked"] = "None",
+					[72] = {
+						["checked"] = true,
 					},
 					[74] = {
 						["checked"] = true,
@@ -302,8 +302,8 @@ DugisGuideViewerProfiles = {
 					[112] = {
 						["checked"] = "Expand Down",
 					},
-					[72] = {
-						["checked"] = true,
+					[103] = {
+						["checked"] = "None",
 					},
 				},
 			},
@@ -360,64 +360,8 @@ DugisGuideViewerProfiles = {
 					[58] = {
 						["checked"] = false,
 					},
-					["QuestRecordTable"] = {
-						["framePositions"] = {
-							["DugisMainBorder"] = {
-								["relativeTo"] = "UIParent",
-								["point"] = "CENTER",
-								["relativePoint"] = "CENTER",
-								["yOfs"] = 0,
-								["xOfs"] = 0,
-							},
-							["DugisArrowFrame"] = {
-								["yOfs"] = 59.999885559082,
-								["xOfs"] = 446.000915527344,
-								["point"] = "CENTER",
-								["relativePoint"] = "CENTER",
-							},
-							["DugisGuideViewer_ModelViewer"] = {
-								["relativeTo"] = "DugisWatchBackground",
-								["point"] = "TOPRIGHT",
-								["relativePoint"] = "TOPLEFT",
-								["yOfs"] = 0,
-								["xOfs"] = 0,
-							},
-							["DugisGuideViewer_TargetFrame"] = {
-							},
-							["DugisRecordFrame"] = {
-								["relativeTo"] = "UIParent",
-								["point"] = "CENTER",
-								["relativePoint"] = "CENTER",
-								["yOfs"] = 0,
-								["xOfs"] = 0,
-							},
-							["ObjectiveTrackerFrameHandlerFrame"] = {
-								["relativeTo"] = "UIParent",
-								["point"] = "TOPRIGHT",
-								["relativePoint"] = "TOPRIGHT",
-								["yOfs"] = -230.000015258789,
-								["xOfs"] = -90.0000076293945,
-							},
-							["DugisWatchBackground"] = {
-								["relativeTo"] = "ObjectiveTrackerFrameHandlerFrame",
-								["point"] = "TOPRIGHT",
-								["relativePoint"] = "BOTTOMRIGHT",
-								["yOfs"] = 50,
-								["xOfs"] = 6.99999952316284,
-							},
-							["DugisSmallFrameContainer"] = {
-								["yOfs"] = 0,
-								["xOfs"] = 10,
-								["point"] = "TOPRIGHT",
-								["relativePoint"] = "BOTTOMRIGHT",
-							},
-							["DugisOnOffButton"] = {
-								["yOfs"] = 0,
-								["xOfs"] = -407.000030517578,
-								["point"] = "BOTTOMRIGHT",
-								["relativePoint"] = "BOTTOMRIGHT",
-							},
-						},
+					[103] = {
+						["checked"] = "None",
 					},
 					[112] = {
 						["checked"] = "Expand Down",
@@ -436,8 +380,8 @@ DugisGuideViewerProfiles = {
 					[36] = {
 						["checked"] = true,
 					},
-					[103] = {
-						["checked"] = "None",
+					[37] = {
+						["checked"] = true,
 					},
 					[74] = {
 						["checked"] = true,
@@ -509,8 +453,64 @@ DugisGuideViewerProfiles = {
 					[57] = {
 						["checked"] = true,
 					},
-					[37] = {
-						["checked"] = true,
+					["QuestRecordTable"] = {
+						["framePositions"] = {
+							["DugisMainBorder"] = {
+								["relativeTo"] = "UIParent",
+								["point"] = "CENTER",
+								["relativePoint"] = "CENTER",
+								["yOfs"] = 0,
+								["xOfs"] = 0,
+							},
+							["DugisArrowFrame"] = {
+								["yOfs"] = 59.999885559082,
+								["xOfs"] = 446.000915527344,
+								["point"] = "CENTER",
+								["relativePoint"] = "CENTER",
+							},
+							["DugisGuideViewer_ModelViewer"] = {
+								["relativeTo"] = "DugisWatchBackground",
+								["point"] = "TOPRIGHT",
+								["relativePoint"] = "TOPLEFT",
+								["yOfs"] = 0,
+								["xOfs"] = 0,
+							},
+							["DugisGuideViewer_TargetFrame"] = {
+							},
+							["DugisRecordFrame"] = {
+								["relativeTo"] = "UIParent",
+								["point"] = "CENTER",
+								["relativePoint"] = "CENTER",
+								["yOfs"] = 0,
+								["xOfs"] = 0,
+							},
+							["ObjectiveTrackerFrameHandlerFrame"] = {
+								["relativeTo"] = "UIParent",
+								["point"] = "TOPRIGHT",
+								["relativePoint"] = "TOPRIGHT",
+								["yOfs"] = -230.000015258789,
+								["xOfs"] = -90.0000076293945,
+							},
+							["DugisWatchBackground"] = {
+								["relativeTo"] = "ObjectiveTrackerFrameHandlerFrame",
+								["point"] = "TOPRIGHT",
+								["relativePoint"] = "BOTTOMRIGHT",
+								["yOfs"] = 50,
+								["xOfs"] = 6.99999952316284,
+							},
+							["DugisSmallFrameContainer"] = {
+								["yOfs"] = 0,
+								["xOfs"] = 10,
+								["point"] = "TOPRIGHT",
+								["relativePoint"] = "BOTTOMRIGHT",
+							},
+							["DugisOnOffButton"] = {
+								["yOfs"] = 0,
+								["xOfs"] = -407.000030517578,
+								["point"] = "BOTTOMRIGHT",
+								["relativePoint"] = "BOTTOMRIGHT",
+							},
+						},
 					},
 				},
 			},
@@ -800,24 +800,31 @@ DugisGuideViewerProfiles = {
 					["QuestRecordTable"] = {
 						["framePositions"] = {
 							["DugisMainBorder"] = {
+								["relativeTo"] = "UIParent",
 								["point"] = "CENTER",
 								["relativePoint"] = "CENTER",
-								["yOfs"] = -3.282587567809970e-005,
-								["xOfs"] = -6.565175135619940e-005,
+								["yOfs"] = 0,
+								["xOfs"] = 0,
 							},
 							["DugisArrowFrame"] = {
-								["point"] = "RIGHT",
-								["relativePoint"] = "RIGHT",
-								["yOfs"] = -82.9998626708984,
-								["xOfs"] = -293.000091552734,
-							},
-							["DugisGuideViewer_ModelViewer"] = {
-							},
-							["DugisOnOffButton"] = {
 								["point"] = "BOTTOMRIGHT",
 								["relativePoint"] = "BOTTOMRIGHT",
+								["yOfs"] = 190.999633789063,
+								["xOfs"] = -366.999298095703,
+							},
+							["DugisGuideViewer_ModelViewer"] = {
+								["relativeTo"] = "DugisWatchBackground",
+								["point"] = "TOPRIGHT",
+								["relativePoint"] = "TOPLEFT",
 								["yOfs"] = 0,
-								["xOfs"] = -407.000030517578,
+								["xOfs"] = 0,
+							},
+							["DugisOnOffButton"] = {
+								["relativeTo"] = "DugisArrowFrame",
+								["point"] = "BOTTOM",
+								["relativePoint"] = "TOP",
+								["yOfs"] = 0,
+								["xOfs"] = -19.0000019073486,
 							},
 							["DugisSmallFrameContainer"] = {
 								["point"] = "TOPRIGHT",
@@ -826,10 +833,11 @@ DugisGuideViewerProfiles = {
 								["xOfs"] = 10,
 							},
 							["ObjectiveTrackerFrameHandlerFrame"] = {
-								["yOfs"] = 182.000061035156,
-								["xOfs"] = -55.0000152587891,
-								["point"] = "RIGHT",
-								["relativePoint"] = "RIGHT",
+								["relativeTo"] = "UIParent",
+								["point"] = "TOPRIGHT",
+								["relativePoint"] = "TOPRIGHT",
+								["yOfs"] = -230.000015258789,
+								["xOfs"] = -90.0000076293945,
 							},
 							["DugisWatchBackground"] = {
 								["relativeTo"] = "ObjectiveTrackerFrameHandlerFrame",
@@ -860,9 +868,9 @@ DugisGuideViewerProfiles = {
 						["options"] = {
 							"None", -- [1]
 							"Active Talent Specialization", -- [2]
-							"Assassination", -- [3]
-							"Outlaw", -- [4]
-							"Subtlety", -- [5]
+							"Blood", -- [3]
+							"Frost", -- [4]
+							"Unholy", -- [5]
 						},
 					},
 					["showNotCollectedPets"] = true,
@@ -881,18 +889,18 @@ DugisGuideViewerProfiles = {
 					[112] = {
 						["checked"] = "Expand Down",
 					},
-					[75] = {
-						["checked"] = true,
-					},
 					["showCollectedPets"] = true,
 					["EssentialsMode"] = 1,
-					["GuideOn"] = false,
 					[69] = {
 						["checked"] = false,
+					},
+					[75] = {
+						["checked"] = true,
 					},
 					[203] = {
 						["checked"] = 0,
 					},
+					["FirstTime"] = false,
 					[103] = {
 						["checked"] = "None",
 					},
@@ -981,13 +989,13 @@ DugisGuideViewerProfiles = {
 					[42] = {
 						["checked"] = false,
 					},
+					[203] = {
+						["checked"] = 0,
+					},
 					[6] = {
 						["checked"] = true,
 					},
 					["FirstTime"] = false,
-					[203] = {
-						["checked"] = 0,
-					},
 					[76] = {
 						["checked"] = true,
 					},
@@ -1338,8 +1346,8 @@ DugisGuideViewerProfiles = {
 					[60] = {
 						["checked"] = false,
 					},
-					[39] = {
-						["checked"] = false,
+					[76] = {
+						["checked"] = true,
 					},
 					[57] = {
 						["checked"] = true,
@@ -1362,14 +1370,14 @@ DugisGuideViewerProfiles = {
 					[36] = {
 						["checked"] = true,
 					},
-					[72] = {
+					[37] = {
 						["checked"] = true,
 					},
 					[74] = {
 						["checked"] = true,
 					},
-					[76] = {
-						["checked"] = true,
+					[39] = {
+						["checked"] = false,
 					},
 					[40] = {
 						["checked"] = false,
@@ -1387,10 +1395,10 @@ DugisGuideViewerProfiles = {
 					[43] = {
 						["checked"] = false,
 					},
+					["FirstTime"] = false,
 					[203] = {
 						["checked"] = 0,
 					},
-					["FirstTime"] = false,
 					[207] = {
 						["checked"] = 1,
 					},
@@ -1476,7 +1484,7 @@ DugisGuideViewerProfiles = {
 					[112] = {
 						["checked"] = "Expand Down",
 					},
-					[37] = {
+					[72] = {
 						["checked"] = true,
 					},
 				},

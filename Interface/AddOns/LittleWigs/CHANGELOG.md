@@ -1,6 +1,7 @@
 # LittleWigs
 
-## [v7.1.1-1-gcac1d36](https://github.com/BigWigsMods/LittleWigs/tree/cac1d363f760ef253d29bdb4e25ff69e9b877239) (2016-11-02) [](#top)
-[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v7.1.1...cac1d363f760ef253d29bdb4e25ff69e9b877239)
+## [v7.1.1-2-g9c7eb42](https://github.com/BigWigsMods/LittleWigs/tree/9c7eb42434860bbd4628d63916a51cc831e1decf) (2016-11-06) [](#top)
+[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v7.1.1...9c7eb42434860bbd4628d63916a51cc831e1decf)
 
--   BlackRookHold/Smashspite: Add warning for Hateful Gaze, cleanups.  
+- Add Maiden (#7)  
+- BlackRookHold/Smashspite: Add warning for Hateful Gaze, cleanups.  
