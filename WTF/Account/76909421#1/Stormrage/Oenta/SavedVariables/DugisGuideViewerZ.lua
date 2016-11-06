@@ -768,25 +768,26 @@ DugisGuideUser = {
 			}, -- [3]
 		},
 	},
+	["NoQuestLogUpdateTrigger"] = true,
 	["excludedTrackingPoints"] = {
 	},
 	["removedQuests"] = {
 	},
-	["FinalizeWaypoint"] = true,
+	["LFGWorldLocation"] = "1007:0:2796381086",
+	["PetBattleOn"] = false,
 	["toskip"] = {
 	},
-	["QuestState"] = {
-	},
+	["FinalizeWaypoint"] = true,
 	["CharacterGUID"] = "Player-60-0AA1A2F9",
 	["ZenPilgrimageReturnPoint"] = {
-		["y"] = 0.325969338417053,
-		["x"] = 0.452253103256226,
+		["y"] = 0.593453526496887,
+		["x"] = 0.475926697254181,
 		["m"] = 1014,
 		["f"] = 10,
 	},
-	["LFGWorldLocation"] = "1007:0:1980540422",
+	["QuestState"] = {
+	},
 	["EnableQWStatus"] = true,
-	["PetBattleOn"] = false,
 	["turnedinquests"] = {
 	},
 }
@@ -1012,6 +1013,10 @@ DugisNPCFrameDB = {
 DataExport = nil
 DugisCharacterCache = {
 	["CalculateScore_cache_v10"] = {
+		["CalculateScore|cff0070dd|Hitem:134272::::::::110:250::25:3:1824:1467:1675:::|h[Arcane Defender's Pauldrons]|h|r1false110INVTYPE_SHOULDERnil1"] = {
+			8900.27, -- [1]
+			960, -- [2]
+		},
 		["CalculateScore|cffe6cc80|Hitem:128402:3368:136718:137549:::::110:250:256:9::355:2:1726:1477:2:1726:1477:|h[Maw of the Damned]|h|r1false11016nil1"] = {
 			7529.52, -- [1]
 			1499, -- [2]
@@ -1019,6 +1024,10 @@ DugisCharacterCache = {
 		["CalculateScore|cff1eff00|Hitem:24671::::::-6:2062876709:110:250:512:22::110:::|h[Eldr'naan Jerkin of the Eagle]|h|r1false110INVTYPE_CHESTnil1"] = {
 			223.44, -- [1]
 			37, -- [2]
+		},
+		["CalculateScore|cff0070dd|Hitem:134224::::::::110:250::29:3:3396:1487:1675:::|h[Coralplate Gauntlets]|h|r1false110INVTYPE_HANDnil1"] = {
+			9716.26, -- [1]
+			1157, -- [2]
 		},
 		["CalculateScore|cff9d9d9d|Hitem:25406::::::::110:250:512:22::110:::|h[Broken Longbow]|h|r1false11016nil1"] = {
 			-3, -- [1]
@@ -1034,37 +1043,37 @@ DugisCharacterCache = {
 		["CalculateScore|cffffffff|Hitem:2901::::::::110:250::14::::|h[Mining Pick]|h|r1false11016nil1"] = {
 			-3, -- [1]
 		},
-		["CalculateScore|cffa335ee|Hitem:134185::130216::::::110:250::30:4:3397:1808:1497:3336:::|h[Skoldiir Sabatons]|h|r1false110INVTYPE_FEETnil1"] = {
-			9731.91, -- [1]
-			1269, -- [2]
+		["CalculateScore|cff0070dd|Hitem:137338::::::::110:250::1:4:1826:1808:1462:3339:::|h[Shard of Rokmora]|h|r1false110INVTYPE_TRINKETnil1"] = {
+			1137.66, -- [1]
+			0, -- [2]
 		},
 		["CalculateScore|cff0070dd|Hitem:139680::130216::::::110:250::14:2:3385:3382:::|h[Deathlord's Bracers]|h|r1false110INVTYPE_WRISTnil1"] = {
 			6374.43, -- [1]
 			827, -- [2]
 		},
-		["CalculateScore|cff0070dd|Hitem:134272::::::::110:250::25:3:1824:1467:1675:::|h[Arcane Defender's Pauldrons]|h|r1false110INVTYPE_SHOULDERnil1"] = {
-			8900.27, -- [1]
-			960, -- [2]
+		["CalculateScore|cff9d9d9d|Hitem:25402::::::::110:250:512:22::110:::|h[The Stoppable Force]|h|r1false11016nil1"] = {
+			0, -- [1]
+			0, -- [2]
 		},
 		["CalculateScore|cff0070dd|Hitem:139676::::::::110:250::11:2:3385:3383:::|h[Deathlord's Helm]|h|r1false110INVTYPE_HEADnil1"] = {
 			12024.69, -- [1]
 			1614, -- [2]
 		},
-		["CalculateScore|cff0070dd|Hitem:134224::::::::110:250::29:3:3396:1487:1675:::|h[Coralplate Gauntlets]|h|r1false110INVTYPE_HANDnil1"] = {
-			9716.26, -- [1]
-			1157, -- [2]
+		["CalculateScore|cff0070dd|Hitem:134223::::::::110:250::28:3:3395:1492:3339:::|h[Coralplate Chestguard]|h|r1false110INVTYPE_CHESTnil1"] = {
+			14111.94, -- [1]
+			1615, -- [2]
 		},
 		["CalculateScore|cff0070dd|Hitem:134269::::::::110:250::25:3:1824:1477:3339:::|h[Arcane Defender's Belt]|h|r1false110INVTYPE_WAISTnil1"] = {
 			8475.58, -- [1]
 			1053, -- [2]
 		},
-		["CalculateScore|cff9d9d9d|Hitem:25402::::::::110:250:512:22::110:::|h[The Stoppable Force]|h|r1false11016nil1"] = {
-			0, -- [1]
-			0, -- [2]
+		["CalculateScore|cff1eff00|Hitem:24901::::::-40:115277845:110:250:512:22::110:::|h[Tortured Bracer of the Bandit]|h|r1false110INVTYPE_WRISTnil1"] = {
+			176.52, -- [1]
+			16, -- [2]
 		},
-		["CalculateScore|cff0070dd|Hitem:134223::::::::110:250::28:3:3395:1492:3339:::|h[Coralplate Chestguard]|h|r1false110INVTYPE_CHESTnil1"] = {
-			14111.94, -- [1]
-			1615, -- [2]
+		["CalculateScore|cff1eff00|Hitem:24906::::::-7:504037413:110:250:512:22::110:::|h[Talhide Helmet of the Bear]|h|r1false110INVTYPE_HEADnil1"] = {
+			360.46, -- [1]
+			37, -- [2]
 		},
 		["CalculateScore|cffe6cc80|Hitem:128292::::::::110:250:256:9::111:::|h[Blades of the Fallen Prince]|h|r1false11016nil1"] = {
 			-3, -- [1]
@@ -1073,9 +1082,9 @@ DugisCharacterCache = {
 			4267.1, -- [1]
 			952, -- [2]
 		},
-		["CalculateScore|cff1eff00|Hitem:24901::::::-40:115277845:110:250:512:22::110:::|h[Tortured Bracer of the Bandit]|h|r1false110INVTYPE_WRISTnil1"] = {
-			176.52, -- [1]
-			16, -- [2]
+		["CalculateScore|cff0070dd|Hitem:134404::130216::::::110:250::2:3:1726:1808:1477:::|h[Stole of Malefic Repose]|h|r1false110INVTYPE_CLOAKnil1"] = {
+			6143.09, -- [1]
+			867, -- [2]
 		},
 		["CalculateScore|cffa335ee|Hitem:121284:5294:::::::110:250::36:3:3432:1512:3337:::|h[Nightmare Pendant]|h|r1false110INVTYPE_NECKnil1"] = {
 			5877.68, -- [1]
@@ -1089,9 +1098,9 @@ DugisCharacterCache = {
 			12792.2, -- [1]
 			1773, -- [2]
 		},
-		["CalculateScore|cff1eff00|Hitem:24906::::::-7:504037413:110:250:512:22::110:::|h[Talhide Helmet of the Bear]|h|r1false110INVTYPE_HEADnil1"] = {
-			360.46, -- [1]
-			37, -- [2]
+		["CalculateScore|cff0070dd|Hitem:134322::::::::110:250::30:4:3397:604:1492:1675:::|h[Drained Mana Crystal]|h|r1false110INVTYPE_TRINKETnil1"] = {
+			3187.32, -- [1]
+			0, -- [2]
 		},
 		["CalculateScore|cff0070dd|Hitem:134360::::::::110:250::2:4:1726:43:1487:1675:::|h[Portalguard Shoulders]|h|r1false110INVTYPE_SHOULDERnil1"] = {
 			9521.36, -- [1]
@@ -1101,8 +1110,8 @@ DugisCharacterCache = {
 			9730.61, -- [1]
 			1104, -- [2]
 		},
-		["CalculateScore|cff0070dd|Hitem:134322::::::::110:250::30:4:3397:604:1492:1675:::|h[Drained Mana Crystal]|h|r1false110INVTYPE_TRINKETnil1"] = {
-			3187.32, -- [1]
+		["CalculateScore|cffa335ee|Hitem:137357::::::::110:250::23:3:1727:1502:3336:::|h[Mark of Dargrul]|h|r1false110INVTYPE_TRINKETnil1"] = {
+			1006.56, -- [1]
 			0, -- [2]
 		},
 		["CalculateScore|cff0070dd|Hitem:123891::::::::110:250::13:3:1686:3392:3408:::|h[Leystone Breastplate of the Peerless]|h|r1false110INVTYPE_CHESTnil1"] = {
@@ -1121,9 +1130,9 @@ DugisCharacterCache = {
 			3232.36, -- [1]
 			0, -- [2]
 		},
-		["CalculateScore|cff0070dd|Hitem:134404::130216::::::110:250::2:3:1726:1808:1477:::|h[Stole of Malefic Repose]|h|r1false110INVTYPE_CLOAKnil1"] = {
-			6143.09, -- [1]
-			867, -- [2]
+		["CalculateScore|cffa335ee|Hitem:134185::130216::::::110:250::30:4:3397:1808:1497:3336:::|h[Skoldiir Sabatons]|h|r1false110INVTYPE_FEETnil1"] = {
+			9731.91, -- [1]
+			1269, -- [2]
 		},
 		["CalculateScore|cffffffff|Hitem:136350::::::::110:250::11::::|h[Brumdysla, Hammer of Vrorsk]|h|r1false11016nil1"] = {
 			-3, -- [1]

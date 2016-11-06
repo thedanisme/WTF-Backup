@@ -4,10 +4,10 @@ AtlasLootCharDB = {
 	["GUI"] = {
 		["classFilter"] = true,
 		["selected"] = {
-			"AtlasLoot_Factions", -- [1]
-			"LEGIONFACTIONS", -- [2]
-			6, -- [3]
-			1, -- [4]
+			"AtlasLoot_Legion", -- [1]
+			"Neltharion'sLair", -- [2]
+			3, -- [3]
+			8, -- [4]
 			0, -- [5]
 		},
 		["point"] = {

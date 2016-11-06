@@ -21,6 +21,15 @@ BigWigs3DB = {
 		},
 		["BigWigs_Plugins_Statistics"] = {
 		},
+		["LibDualSpec-1.0"] = {
+		},
+		["BigWigs_Plugins_Pull"] = {
+			["profiles"] = {
+				["Default"] = {
+					["countType"] = "normal",
+				},
+			},
+		},
 		["BigWigs_Plugins_Colors"] = {
 		},
 		["BigWigs_Plugins_Raid Icons"] = {
@@ -42,41 +51,14 @@ BigWigs3DB = {
 				},
 			},
 		},
+		["BigWigs_Plugins_HeroesVoices"] = {
+		},
 		["BigWigs_Plugins_Super Emphasize"] = {
 			["profiles"] = {
 				["Default"] = {
 					["font"] = "Gotham-Narrow",
 				},
 			},
-		},
-		["LibDualSpec-1.0"] = {
-		},
-		["BigWigs_Plugins_Pull"] = {
-			["profiles"] = {
-				["Default"] = {
-					["countType"] = "normal",
-				},
-			},
-		},
-		["BigWigs_Plugins_HeroesVoices"] = {
-		},
-		["BigWigs_Plugins_Messages"] = {
-			["profiles"] = {
-				["Default"] = {
-					["BWEmphasizeMessageAnchor_x"] = 607.288990399575,
-					["BWEmphasizeCountdownMessageAnchor_x"] = 834.844725076364,
-					["BWEmphasizeMessageAnchor_y"] = 521.244500468838,
-					["BWMessageAnchor_y"] = 601.599927761818,
-					["BWMessageAnchor_x"] = 612.266768297886,
-					["BWEmphasizeCountdownMessageAnchor_y"] = 364.088897705078,
-					["font"] = "Gotham-Narrow",
-					["fontSize"] = 20,
-				},
-			},
-		},
-		["BigWigs_Plugins_Respawn"] = {
-		},
-		["BigWigs_Plugins_Common Auras"] = {
 		},
 		["BigWigs_Plugins_Proximity"] = {
 			["profiles"] = {
@@ -93,6 +75,24 @@ BigWigs3DB = {
 					["font"] = "Friz Quadrata TT",
 				},
 			},
+		},
+		["BigWigs_Plugins_Messages"] = {
+			["profiles"] = {
+				["Default"] = {
+					["BWEmphasizeMessageAnchor_x"] = 607.288990399575,
+					["BWEmphasizeCountdownMessageAnchor_x"] = 834.844725076364,
+					["BWEmphasizeMessageAnchor_y"] = 521.244500468838,
+					["BWMessageAnchor_y"] = 601.599927761818,
+					["BWMessageAnchor_x"] = 612.266768297886,
+					["BWEmphasizeCountdownMessageAnchor_y"] = 364.088897705078,
+					["font"] = "Gotham-Narrow",
+					["fontSize"] = 20,
+				},
+			},
+		},
+		["BigWigs_Plugins_Common Auras"] = {
+		},
+		["BigWigs_Plugins_Respawn"] = {
 		},
 	},
 	["profileKeys"] = {

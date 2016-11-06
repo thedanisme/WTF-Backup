@@ -1,8 +1,5 @@
 
 OmniCC4Config = {
-	["groups"] = {
-	},
-	["version"] = "7.0.1",
 	["groupSettings"] = {
 		["base"] = {
 			["styles"] = {
@@ -38,4 +35,7 @@ OmniCC4Config = {
 			["yOff"] = 0,
 		},
 	},
+	["groups"] = {
+	},
+	["version"] = "7.0.1",
 }
