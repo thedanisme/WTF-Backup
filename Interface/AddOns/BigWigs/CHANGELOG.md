@@ -1,13 +1,9 @@
 # BigWigs
 
-## [v22.1](https://github.com/BigWigsMods/BigWigs/tree/v22.1) (2016-11-05) [](#top)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v22...v22.1)
+## [v22.1-4-g8f93597](https://github.com/BigWigsMods/BigWigs/tree/8f93597617e7abd2bc7f410f1684cec9e4cb7ab1) (2016-11-07) [](#top)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v22.1...8f93597617e7abd2bc7f410f1684cec9e4cb7ab1)
 
-- Fix karazhan menu  
-- Plugins/Victory: Change the bw victory message to off by default.  
-- API: Always accept enUS locale so that we build fallback strings  
-- Remove AceLocale  
-- Use our own basic locale implementation.  
-- tweak load order  
-- Fix InfoBox translations.  
-- Fix some menus  
+- zhCN/zhTW update. (#89)  
+- Nightmare/Cenarius: Fix Forces of Nightmare StopBar  
+- Remove old sync compat  
+- Nightmare/Cenarius: Add Unbound Touch, make Rotten Breath a target event.  

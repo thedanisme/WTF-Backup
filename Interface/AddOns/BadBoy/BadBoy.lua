@@ -401,9 +401,6 @@ local instantReportList = {
 	--[[  Misc  ]]--
 	"boost.*levell?ing.*mythic.*skype", --Easy Boost: Character Leveling, Mythic Dungeons Boost, Artifact Weapons and any more. Details in Skype: EasyPVE
 	"wts.*mythic.*boost.*pvp.*prestige.*price", --WTS Dungeons Mythic/ Mythic+ Chest Boost, EN normal/heroic, PvP PRESTIGE RANKS (we have the lowest prices on the euro-servers)!
-	"^wtsemeraldnightmarelootraids,heroic/mythicdungeons.*wisp", --WTS Emerald Nightmare lootraids, Heroic/Mythic Dungeons. Wisp!
-	"arena.*boost.*pro.*prestige.*mythic", --Arena boost 1800-2400, play with Pro, leveling, PvP Prestige Farm, Mythic/Mythic+ dungeons, EN (normal) /w
-	"arena.*help.*pro.*prestige.*mythic", --Arena help 1800-2400, play with Pro, leveling, PvP Prestige Farm, Mythic/Mythic+ dungeons, EN (normal) /w
 	"pvp.*prestige.*mount.*accshare", --▓▓WTS Full PvP Talents 1-50▓Prestige Ranks▓Artiface Power farm▓all 6 vicious mounts[Vicious Saddle]right now,no accshare▓PST
 	"wts.*boost.*amazingprice.*gua?rantee.*only.*info", --Wts The emerald nightmare Heroic boost 7/7 clear for amazing price we gurantee you + 850 item level only today 17:00 server time w me for more infos.
 	"lootcloud.*paypal", --¥Lootcloud,com¥ presents new fresh offers for legion raid Emerald Nightmare and 5 man [dungeons.Paypal] support, livechat, discounts and crazy offers. Get more at our website, [lootcloud.com]
@@ -453,8 +450,6 @@ local instantReportList = {
 	"client.*info.*boomboost[%.,]com", --525+ clients was happy, more info here -> boom-boost.com
 	"pro.*boomboost[%.,]com", --Arena 2000/2400/Glad, Honor Gear, Leveling 90-100. Big cap with glads, Want to play with Pro? boom-boost,сoм
 	"raid.*heroic.*loot.*exping.*fast.*power.*info", --Emerald Raids Heroic/Noraml Masterloot/Personal loot Today , Exping 100-110 (fast 10 hours) Artefacts power, pm me for more info!
-	"contact.*bestboost[%.,]club", --please contact with operator on website »>BESTBOOST.CLUB«<
-	"cheap.*bestboost[%.,]club", --BOOST 100-110 (15-18 hours) very cheap >>>>>[http://bestboost.club]<<<<<<< , OTHER BOOST SERVICE TO
 	"battlechest.*token.*add.*telegram", --BattleChest 40T , Legion 140T , WoW Token 30T ,Tala 400T Har 1000 Ta ADD https://telegram.me/<snip>
 	"wts.*mount.*share.*cheap.*gold", --WTS all rare mounts ,include[Reins of the Time-Lost Proto-Drake]/[Reins of the Grey Riding Camel]},no acc share .also sell Cheaper wow gold !!!!./Pst
 	"selling.*mount.*pet.*pvp.*purchase", --Selling all rare mounts, TGC pets, all PvP services, and much more! We offer great savings for combo purchases! Pst!
@@ -562,6 +557,9 @@ local instantReportList = {
 	"brb2game.*sale", --=>>www.brb2game.com<<=28$=100K 5-15 mins Trade.CODE:USWOW  More L895   Gears for sale! LVL835-870 Classpackage  Hot Sale! /2 =>>www.brb2game.com<<=
 	"^wtsemeraldnightmare.*heroic.*pl.*tonight.*8.*fastrun.*highquality", --WTS EMERALD NIGHTMARE 7/7 Heroic with PL. Raid tonight at 8 pm. Fast run. High quality.
 	"elitegamerboosting[%.,]de.*skype", --Return to Karazhan! Organisiere dir durch und mit uns einen unbeschwerten Ausflug in die neue Instanz - Erfolge, Loot und Mount inklusive! Alle Angebote auf [elite-gamer-boosting.de] | Skype: [real.elite.gamer] | Ab sofort 3% sparen mit dem Code: SIMON
+	"wts.*nightmare.*mythic.*loot.*dungeon.*pvp.*glory", --►►►[WTS] The Emerald Nightmare Mythic/Heroic/Normal with loot, Mythic+ dungeons,► PvP help◄, Glory of the Legion hero & more!◄◄◄
+	"juststarted.*legion.*gearup.*karazhan.*nightmare.*dungeon.*more", --Just Started The Legion ? Need To Gear Up ? Try Our KARAZHAN, EMERALD NIGHTMARE, +DUNGEONS AND MORE runs WTS!
+	"bestboost[%.,]club.*service", --►►► [[BESTBOOST.CLUB]] - 100-110 BOOST, MYTHIC AND MYTHIC+ DUNGEONS 10/10, THE EMERALD NIGHTMARE RAID NORMAL/HEROIC/MYTHIC, RETURN TO KARAZHAN AND OTHER SERVICES [[BESTBOOST.CLUB]] ◄◄◄
 
 	--[[ Chinese ]]--
 	"ok4gold.*skype", --纯手工100-110升级█翡翠英雄团█5M代刷 大秘境2-10层（橙装代刷）█代刷神器点数 解锁神器第三槽█金币20刀=10w█微信ok4gold█QQ或微信549965838█skype；gold4oks█微信ok4gold█v
@@ -641,6 +639,7 @@ local instantReportList = {
 	--▓▓ Der smaragdgrüne Alptraum 7/7 (Heroisch) LOOTRUN▓▓SELFPLAY/PILOTED ▓▓ MASTER LOOT(Plündermeister )▓▓ HEUTE 21:00 CET▓▓ SEHR GÜNSTIG ▓▓ DER BESTE PREIS IN EUROPA ▓▓ /w ▓▓
 	"alptraum.*lootrun.*selfplay.*masterloot.*heute.*gunstig", --WTS: ▓▓ Der smaragdgrüne Alptraum 7/7 (Heroisch) LOOTRUN▓▓SELFPLAY/PILOTED ▓▓ MASTER LOOT(Plündermeister )▓▓ HEUTE 21:00 CET▓▓ SEHR GÜNSTIG ▓▓ /w ▓▓
 	"rocketgaming.*mount.*skype", --RocketGaming die 1.Slots verfügbaren IDs von Emerald Nightmare HC/Myth, auch Nighthold sei der erste mit dem Guldan Mount! Hol dir die ClasshallTruhe der Mythic+ Inis für dein BiS Item, jede ID! Gladi/R1 Titel+Mount! Adde Skype: [christoph.rocket-gaming.]
+	"wts.*alptraum.*mythisch.*boost.*boost.*glory", --WTS Der Smaragdgrüne Alptraum Mythisch/Heroisch/Normal boosting,Karazhan boost, Mythischer Schlüsselstein boost 1-10+lvl, Mythisch dungeons boost, Glory of the Legion Hero
 }
 
 local repTbl = {
@@ -807,8 +806,8 @@ end
 
 do
 	btn = CreateFrame("Frame", nil, ChatFrame1)
-	btn:SetWidth(46)
-	btn:SetHeight(46)
+	btn:SetWidth(50)
+	btn:SetHeight(50)
 	btn:SetPoint("BOTTOMRIGHT", 18, -20)
 	btn:SetFrameStrata("DIALOG")
 	local tx = btn:CreateTexture()
@@ -828,24 +827,12 @@ do
 	scale2:SetToScale(0.2,0.2)
 	scale2:SetDuration(0.4)
 	scale2:SetEndDelay(8)
-	local alpha = animGroup:CreateAnimation("Alpha")
-	alpha:SetOrder(1)
-	alpha:SetDuration(0.4)
-	alpha:SetFromAlpha(1)
-	alpha:SetToAlpha(0.4)
-	local alpha2 = animGroup:CreateAnimation("Alpha")
-	alpha2:SetOrder(2)
-	alpha2:SetDuration(0.4)
-	alpha2:SetFromAlpha(0.4)
-	alpha2:SetToAlpha(1)
-	alpha2:SetEndDelay(8)
 	animGroup:Play()
 	btn:Hide()
 
 	reportFrame = CreateFrame("Button", nil, btn)
 	reportFrame:SetAllPoints(ChatFrame1)
 	reportFrame:SetFrameStrata("DIALOG")
-	reportFrame:RegisterForClicks("LeftButtonUp", "RightButtonUp")
 	local ticker = nil
 	local tickerFunc = function()
 		local canReport = false
@@ -887,7 +874,14 @@ do
 		end
 	end)
 	reportFrame:SetScript("OnClick", function(self, btn)
-		if btn == "LeftButton" then
+		if IsAltKeyDown() then -- Dismiss
+			prevShow = GetTime() -- Refresh throttle so we don't risk showing again straight after reporting
+			self:GetParent():Hide()
+			for k, v in next, spamCollector do
+				spamCollector[k] = nil
+				spamLogger[k] = nil
+			end
+		else -- Report
 			prevShow = GetTime() -- Refresh throttle so we don't risk showing again straight after reporting
 			self:GetParent():Hide()
 
@@ -923,18 +917,12 @@ do
 				-- There's a delay before the event fires
 				C_Timer.After(5, function() CalendarFrame:RegisterEvent("CALENDAR_UPDATE_ERROR") end)
 			end
-		elseif btn == "RightButton" then
-			prevShow = GetTime() -- Refresh throttle so we don't risk showing again straight after reporting
-			self:GetParent():Hide()
-			for k, v in next, spamCollector do
-				spamCollector[k] = nil
-				spamLogger[k] = nil
-			end
 		end
 	end)
 	reportFrame:SetScript("OnEnter", function(self)
 		GameTooltip:SetOwner(self, "ANCHOR_CURSOR")
-		GameTooltip:AddDoubleLine("BadBoy:", L.spamBlocked, 1, 1, 1, 1, 1, 1)
+		GameTooltip:AddLine("BadBoy: ".. L.spamBlocked, 1, 1, 1)
+		GameTooltip:AddLine(L.clickToReport, 1, 1, 1)
 		if next(spamLogger) then
 			GameTooltip:AddLine(" ", 0.5, 0.5, 1)
 			for k, v in next, spamLogger do

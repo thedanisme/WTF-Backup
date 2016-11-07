@@ -18,12 +18,12 @@ do
 	local RELEASE = "RELEASE"
 
 	local releaseType = RELEASE
-	local myGitHash = "79c8bd6" -- The ZIP packager will replace this with the Git hash.
+	local myGitHash = "8f93597" -- The ZIP packager will replace this with the Git hash.
 	local releaseString = ""
-	--[===[@alpha@
+	--@alpha@
 	-- The following code will only be present in alpha ZIPs.
 	releaseType = ALPHA
-	--@end-alpha@]===]
+	--@end-alpha@
 
 	-- If we find "@" then we're running from Git directly.
 	if myGitHash:find("@", nil, true) then
@@ -775,38 +775,10 @@ do
 	end
 end
 
--- Misc
-local function doCommCompat(msg)
-	local bwPrefix, bwMsg = msg:match("^(%u-):(.+)")
-	if bwPrefix then
-		local sync, rest = bwMsg:match("(%S+)%s*(.*)$")
-		if bwPrefix == "V" or bwPrefix == "Q" then
-			local verString, hash = bwMsg:match("^(%d+)%-(.+)$")
-			return ("%s^%s^%s"):format(bwPrefix, verString, hash)
-		else
-			if sync == "BWPull" then
-				return ("P^Pull^%s"):format(rest)
-			elseif sync == "BWBreak" then
-				return ("P^Break^%s"):format(rest)
-			elseif sync == "BWCustomBar" then
-				return ("P^CBar^%s"):format(rest)
-			elseif sync == "BWPower" then
-				return ("P^AltPower^%s"):format(rest)
-			elseif sync == "EnableModule" then
-				return ("B^Enable^%s"):format(rest)
-			elseif sync == "BossEngaged" then
-				return ("B^Engage^%s"):format(rest)
-			end
-		end
-	end
-	return msg
-end
-
 function mod:CHAT_MSG_ADDON(prefix, msg, channel, sender)
 	if channel ~= "RAID" and channel ~= "PARTY" and channel ~= "INSTANCE_CHAT" then
 		return
 	elseif prefix == "BigWigs" then
-		msg = doCommCompat(msg) -- XXX Remove me at some point in the future (Nighthold?)
 		local bwPrefix, bwMsg, extra = strsplit("^", msg)
 		sender = Ambiguate(sender, "none")
 		if bwPrefix == "V" or bwPrefix == "Q" then
