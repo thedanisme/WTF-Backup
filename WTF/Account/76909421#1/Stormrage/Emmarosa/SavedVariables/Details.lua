@@ -13,7 +13,7 @@ _detalhes_database = {
 		["reverse"] = false,
 	},
 	["active_profile"] = "Emmarosa-Stormrage",
-	["last_day"] = "06",
+	["last_day"] = "07",
 	["ignore_nicktag"] = false,
 	["tabela_historico"] = {
 		["tabelas"] = {
@@ -34,16 +34,16 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["classe"] = "ROGUE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 1991794.008571,
 							["spec"] = 259,
 							["dps_started"] = false,
-							["end_time"] = 1478376892,
-							["on_hold"] = false,
+							["total"] = 1991794.008571,
+							["friendlyfire"] = {
+							},
 							["last_event"] = 1478376904,
 							["nome"] = "Emmarosa",
 							["spells"] = {
@@ -71,9 +71,9 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 24999,
-										["successful_casted"] = 0,
 										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["c_min"] = 24999,
 										["n_amt"] = 8,
 										["a_dmg"] = 0,
 										["r_amt"] = 0,
@@ -379,7 +379,7 @@ _detalhes_database = {
 							["damage_taken"] = 80342.008571,
 							["start_time"] = 1478376866,
 							["delay"] = 0,
-							["total"] = 1991794.008571,
+							["end_time"] = 1478376892,
 						}, -- [1]
 					},
 				}, -- [1]
@@ -411,8 +411,6 @@ _detalhes_database = {
 							["fight_component"] = true,
 							["total"] = 28833.006437,
 							["healing_taken"] = 28833.006437,
-							["spec"] = 259,
-							["nome"] = "Emmarosa",
 							["spells"] = {
 								["_ActorTable"] = {
 									[143924] = {
@@ -437,25 +435,27 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["c_min"] = 0,
 										["n_curado"] = 28833,
-										["n_amt"] = 13,
 										["m_healed"] = 0,
+										["n_amt"] = 13,
 										["absorbed"] = 0,
 									},
 								},
 								["tipo"] = 3,
 							},
+							["nome"] = "Emmarosa",
+							["targets_absorbs"] = {
+							},
 							["grupo"] = true,
 							["last_event"] = 1478376884,
 							["heal_enemy"] = {
 							},
-							["targets_absorbs"] = {
-							},
+							["spec"] = 259,
 							["custom"] = 0,
 							["tipo"] = 2,
 							["on_hold"] = false,
 							["start_time"] = 1478376867,
-							["delay"] = 0,
 							["serial"] = "Player-60-0A91880D",
+							["delay"] = 0,
 						}, -- [1]
 					},
 				}, -- [2]
@@ -525,10 +525,10 @@ _detalhes_database = {
 										},
 										["counter"] = 0,
 									},
-									[224189] = {
-										["uptime"] = 26,
-										["activedamt"] = 1,
-										["id"] = 224189,
+									[58984] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = 58984,
 										["actived"] = false,
 										["targets"] = {
 										},
@@ -543,10 +543,10 @@ _detalhes_database = {
 										},
 										["counter"] = 0,
 									},
-									[58984] = {
-										["uptime"] = 0,
-										["activedamt"] = 0,
-										["id"] = 58984,
+									[224189] = {
+										["uptime"] = 26,
+										["activedamt"] = 1,
+										["id"] = 224189,
 										["actived"] = false,
 										["targets"] = {
 										},
@@ -592,12 +592,12 @@ _detalhes_database = {
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["tipo"] = 4,
+							["last_event"] = 1478376892,
 							["nome"] = "Emmarosa",
 							["pets"] = {
 							},
 							["serial"] = "Player-60-0A91880D",
-							["last_event"] = 1478376892,
+							["tipo"] = 4,
 						}, -- [1]
 					},
 				}, -- [4]
@@ -616,7 +616,7 @@ _detalhes_database = {
 				["combat_counter"] = 5904,
 				["playing_solo"] = true,
 				["totals"] = {
-					1991793.827474, -- [1]
+					1991793.78610801, -- [1]
 					28832.98491, -- [2]
 					{
 						0, -- [1]
@@ -627,7 +627,7 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["cooldowns_defensive"] = -0.0187619999999997,
+						["cooldowns_defensive"] = -0.0482750000000012,
 						["dispell"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
@@ -788,16 +788,16 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["classe"] = "ROGUE",
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 1794716.006181,
 							["spec"] = 259,
 							["dps_started"] = false,
 							["total"] = 1794716.006181,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["last_event"] = 1478376858,
 							["nome"] = "Emmarosa",
 							["spells"] = {
@@ -832,6 +832,35 @@ _detalhes_database = {
 										["a_amt"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
+									[1943] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 175352,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Underlight Sentry"] = 175352,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 175352,
+										["c_max"] = 175352,
+										["id"] = 1943,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 175352,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
 									[2818] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
@@ -864,64 +893,35 @@ _detalhes_database = {
 										["a_amt"] = 0,
 										["r_amt"] = 0,
 									},
-									[1943] = {
-										["c_amt"] = 1,
+									[192380] = {
+										["c_amt"] = 8,
 										["b_amt"] = 0,
-										["c_dmg"] = 175352,
+										["c_dmg"] = 196206,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["n_max"] = 17182,
 										["targets"] = {
-											["Underlight Sentry"] = 175352,
+											["Clackbrine Snapper"] = 44229,
+											["Underlight Crusader"] = 110297,
+											["Clackbrine Pincer"] = 55980,
+											["Underlight Sentry"] = 109188,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
+										["n_dmg"] = 123488,
+										["n_min"] = 8314,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 175352,
-										["c_max"] = 175352,
-										["id"] = 1943,
+										["counter"] = 17,
+										["total"] = 319694,
+										["c_max"] = 34364,
+										["id"] = 192380,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["spellschool"] = 8,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["m_amt"] = 0,
-										["c_min"] = 175352,
+										["c_min"] = 16628,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-									[51723] = {
-										["c_amt"] = 10,
-										["b_amt"] = 0,
-										["c_dmg"] = 444915,
-										["g_amt"] = 0,
-										["n_max"] = 24135,
-										["targets"] = {
-											["Clackbrine Snapper"] = 135363,
-											["Underlight Crusader"] = 366217,
-											["Clackbrine Pincer"] = 66109,
-											["Underlight Sentry"] = 246591,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 369365,
-										["n_min"] = 20986,
-										["g_dmg"] = 0,
-										["counter"] = 27,
-										["total"] = 814280,
-										["c_max"] = 48269,
-										["id"] = 51723,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 41973,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 17,
+										["n_amt"] = 9,
 										["a_amt"] = 0,
 										["r_amt"] = 0,
 									},
@@ -986,35 +986,35 @@ _detalhes_database = {
 										["a_amt"] = 0,
 										["r_amt"] = 0,
 									},
-									[192380] = {
-										["c_amt"] = 8,
+									[51723] = {
+										["c_amt"] = 10,
 										["b_amt"] = 0,
-										["c_dmg"] = 196206,
+										["c_dmg"] = 444915,
 										["g_amt"] = 0,
-										["n_max"] = 17182,
+										["n_max"] = 24135,
 										["targets"] = {
-											["Clackbrine Snapper"] = 44229,
-											["Underlight Crusader"] = 110297,
-											["Clackbrine Pincer"] = 55980,
-											["Underlight Sentry"] = 109188,
+											["Clackbrine Snapper"] = 135363,
+											["Underlight Crusader"] = 366217,
+											["Clackbrine Pincer"] = 66109,
+											["Underlight Sentry"] = 246591,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 123488,
-										["n_min"] = 8314,
+										["n_dmg"] = 369365,
+										["n_min"] = 20986,
 										["g_dmg"] = 0,
-										["counter"] = 17,
-										["total"] = 319694,
-										["c_max"] = 34364,
-										["id"] = 192380,
+										["counter"] = 27,
+										["total"] = 814280,
+										["c_max"] = 48269,
+										["id"] = 51723,
 										["r_dmg"] = 0,
-										["spellschool"] = 8,
+										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["m_amt"] = 0,
-										["c_min"] = 16628,
+										["c_min"] = 41973,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 9,
+										["n_amt"] = 17,
 										["a_amt"] = 0,
 										["r_amt"] = 0,
 									},
@@ -1029,7 +1029,7 @@ _detalhes_database = {
 							["damage_taken"] = 36820.006181,
 							["start_time"] = 1478376850,
 							["delay"] = 0,
-							["friendlyfire_total"] = 0,
+							["classe"] = "ROGUE",
 						}, -- [1]
 					},
 				}, -- [1]
@@ -1060,14 +1060,10 @@ _detalhes_database = {
 							["classe"] = "ROGUE",
 							["fight_component"] = true,
 							["end_time"] = 1478376860,
-							["healing_taken"] = 25987.003856,
-							["total"] = 25987.003856,
-							["nome"] = "Emmarosa",
-							["spec"] = 259,
-							["grupo"] = true,
-							["tipo"] = 2,
-							["heal_enemy"] = {
+							["targets_absorbs"] = {
 							},
+							["healing_taken"] = 25987.003856,
+							["nome"] = "Emmarosa",
 							["spells"] = {
 								["_ActorTable"] = {
 									[143924] = {
@@ -1092,20 +1088,24 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["c_min"] = 0,
 										["n_curado"] = 25987,
-										["n_amt"] = 7,
 										["m_healed"] = 0,
+										["n_amt"] = 7,
 										["absorbed"] = 0,
 									},
 								},
 								["tipo"] = 3,
 							},
-							["custom"] = 0,
+							["grupo"] = true,
+							["total"] = 25987.003856,
+							["heal_enemy"] = {
+							},
 							["last_event"] = 1478376858,
+							["custom"] = 0,
+							["tipo"] = 2,
 							["on_hold"] = false,
 							["start_time"] = 1478376851,
 							["delay"] = 0,
-							["targets_absorbs"] = {
-							},
+							["spec"] = 259,
 						}, -- [1]
 					},
 				}, -- [2]
@@ -1245,12 +1245,12 @@ _detalhes_database = {
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["tipo"] = 4,
+							["last_event"] = 1478376860,
 							["nome"] = "Emmarosa",
 							["pets"] = {
 							},
 							["serial"] = "Player-60-0A91880D",
-							["last_event"] = 1478376860,
+							["tipo"] = 4,
 						}, -- [1]
 					},
 				}, -- [4]
@@ -1421,16 +1421,16 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["classe"] = "ROGUE",
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 4418860.004155,
 							["spec"] = 259,
 							["dps_started"] = false,
 							["total"] = 4418860.004155,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["last_event"] = 1478376843,
 							["nome"] = "Emmarosa",
 							["spells"] = {
@@ -1460,9 +1460,9 @@ _detalhes_database = {
 										["b_dmg"] = 21616,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 21616,
-										["successful_casted"] = 0,
 										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["c_min"] = 21616,
 										["n_amt"] = 15,
 										["a_dmg"] = 0,
 										["r_amt"] = 0,
@@ -1749,7 +1749,7 @@ _detalhes_database = {
 							["damage_taken"] = 336719.004155,
 							["start_time"] = 1478376810,
 							["delay"] = 0,
-							["friendlyfire_total"] = 0,
+							["classe"] = "ROGUE",
 						}, -- [1]
 					},
 				}, -- [1]
@@ -1782,8 +1782,6 @@ _detalhes_database = {
 							["fight_component"] = true,
 							["total"] = 62159.005388,
 							["healing_taken"] = 62159.005388,
-							["spec"] = 259,
-							["nome"] = "Emmarosa",
 							["spells"] = {
 								["_ActorTable"] = {
 									[143924] = {
@@ -1809,25 +1807,27 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["c_min"] = 0,
 										["n_curado"] = 62159,
-										["n_amt"] = 23,
 										["m_healed"] = 0,
+										["n_amt"] = 23,
 										["absorbed"] = 0,
 									},
 								},
 								["tipo"] = 3,
 							},
+							["nome"] = "Emmarosa",
+							["targets_absorbs"] = {
+							},
 							["grupo"] = true,
 							["last_event"] = 1478376844,
 							["heal_enemy"] = {
 							},
-							["targets_absorbs"] = {
-							},
+							["spec"] = 259,
 							["custom"] = 0,
 							["tipo"] = 2,
 							["on_hold"] = false,
 							["start_time"] = 1478376810,
-							["delay"] = 0,
 							["serial"] = "Player-60-0A91880D",
+							["delay"] = 0,
 						}, -- [1]
 					},
 				}, -- [2]
@@ -1961,21 +1961,21 @@ _detalhes_database = {
 							["spec"] = 259,
 							["grupo"] = true,
 							["spell_cast"] = {
-								[32645] = 2,
-								[1329] = 4,
 								[51723] = 10,
+								[27576] = 4,
+								[32645] = 2,
 								[703] = 1,
 								[1943] = 4,
-								[27576] = 4,
+								[1329] = 4,
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["tipo"] = 4,
+							["last_event"] = 1478376844,
 							["nome"] = "Emmarosa",
 							["pets"] = {
 							},
 							["serial"] = "Player-60-0A91880D",
-							["last_event"] = 1478376844,
+							["tipo"] = 4,
 						}, -- [1]
 					},
 				}, -- [4]
@@ -2094,16 +2094,16 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["classe"] = "ROGUE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 21881.007204,
 							["spec"] = 259,
 							["dps_started"] = false,
-							["end_time"] = 1478376698,
-							["on_hold"] = false,
+							["total"] = 21881.007204,
+							["friendlyfire"] = {
+							},
 							["last_event"] = 1478376693,
 							["nome"] = "Emmarosa",
 							["spells"] = {
@@ -2148,7 +2148,7 @@ _detalhes_database = {
 							["damage_taken"] = 0.007204,
 							["start_time"] = 1478376693,
 							["delay"] = 0,
-							["total"] = 21881.007204,
+							["end_time"] = 1478376698,
 						}, -- [1]
 					},
 				}, -- [1]
@@ -2173,22 +2173,22 @@ _detalhes_database = {
 							["healing_taken"] = 0.008258,
 							["totalover"] = 316.008258,
 							["total_without_pet"] = 0.008258,
-							["classe"] = "ROGUE",
-							["iniciar_hps"] = false,
 							["heal_enemy_amt"] = 0,
-							["end_time"] = 1478376698,
+							["iniciar_hps"] = false,
+							["classe"] = "ROGUE",
+							["total"] = 0.008258,
 							["delay"] = 0,
 							["targets_absorbs"] = {
 							},
 							["nome"] = "Emmarosa",
 							["spec"] = 259,
 							["grupo"] = true,
-							["total"] = 0.008258,
+							["end_time"] = 1478376698,
 							["heal_enemy"] = {
 							},
-							["tipo"] = 2,
-							["custom"] = 0,
 							["last_event"] = 1478376693,
+							["custom"] = 0,
+							["tipo"] = 2,
 							["on_hold"] = false,
 							["start_time"] = 1478376693,
 							["serial"] = "Player-60-0A91880D",
@@ -2217,8 +2217,8 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["c_min"] = 0,
 										["n_curado"] = 0,
-										["n_amt"] = 1,
 										["m_healed"] = 0,
+										["n_amt"] = 1,
 										["absorbed"] = 0,
 									},
 								},
@@ -2247,8 +2247,8 @@ _detalhes_database = {
 							["nome"] = "Emmarosa",
 							["pets"] = {
 							},
+							["classe"] = "ROGUE",
 							["tipo"] = 4,
-							["last_event"] = 1478376698,
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									[185719] = {
@@ -2327,7 +2327,7 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["serial"] = "Player-60-0A91880D",
-							["classe"] = "ROGUE",
+							["last_event"] = 1478376698,
 						}, -- [1]
 					},
 				}, -- [4]
@@ -2446,16 +2446,16 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["classe"] = "ROGUE",
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 1739408.001313,
 							["spec"] = 259,
 							["dps_started"] = false,
 							["total"] = 1739408.001313,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["last_event"] = 1478376678,
 							["nome"] = "Emmarosa",
 							["spells"] = {
@@ -2483,9 +2483,9 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 28375,
-										["successful_casted"] = 0,
 										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["c_min"] = 28375,
 										["n_amt"] = 4,
 										["a_dmg"] = 0,
 										["r_amt"] = 0,
@@ -2820,7 +2820,7 @@ _detalhes_database = {
 							["damage_taken"] = 62520.001313,
 							["start_time"] = 1478376670,
 							["delay"] = 0,
-							["friendlyfire_total"] = 0,
+							["classe"] = "ROGUE",
 						}, -- [1]
 					},
 				}, -- [1]
@@ -2852,14 +2852,10 @@ _detalhes_database = {
 							["classe"] = "ROGUE",
 							["fight_component"] = true,
 							["end_time"] = 1478376683,
-							["healing_taken"] = 20545.004654,
-							["total"] = 20545.004654,
-							["nome"] = "Emmarosa",
-							["spec"] = 259,
-							["grupo"] = true,
-							["tipo"] = 2,
-							["heal_enemy"] = {
+							["targets_absorbs"] = {
 							},
+							["healing_taken"] = 20545.004654,
+							["nome"] = "Emmarosa",
 							["spells"] = {
 								["_ActorTable"] = {
 									[143924] = {
@@ -2885,20 +2881,24 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["c_min"] = 0,
 										["n_curado"] = 20545,
-										["n_amt"] = 7,
 										["m_healed"] = 0,
+										["n_amt"] = 7,
 										["absorbed"] = 0,
 									},
 								},
 								["tipo"] = 3,
 							},
-							["custom"] = 0,
+							["grupo"] = true,
+							["total"] = 20545.004654,
+							["heal_enemy"] = {
+							},
 							["last_event"] = 1478376679,
+							["custom"] = 0,
+							["tipo"] = 2,
 							["on_hold"] = false,
 							["start_time"] = 1478376671,
 							["delay"] = 0,
-							["targets_absorbs"] = {
-							},
+							["spec"] = 259,
 						}, -- [1]
 					},
 				}, -- [2]
@@ -2974,19 +2974,19 @@ _detalhes_database = {
 										},
 										["counter"] = 0,
 									},
-									[2823] = {
-										["uptime"] = 13,
-										["activedamt"] = 1,
-										["id"] = 2823,
+									[32645] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = 32645,
 										["actived"] = false,
 										["targets"] = {
 										},
 										["counter"] = 0,
 									},
-									[32645] = {
-										["uptime"] = 0,
-										["activedamt"] = 0,
-										["id"] = 32645,
+									[2823] = {
+										["uptime"] = 13,
+										["activedamt"] = 1,
+										["id"] = 2823,
 										["actived"] = false,
 										["targets"] = {
 										},
@@ -3027,31 +3027,31 @@ _detalhes_database = {
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 13,
-							["spec"] = 259,
-							["buff_uptime_targets"] = {
-							},
 							["interrupt_targets"] = {
 								["Forsaken Rector"] = 1,
 							},
+							["interrupt"] = 1.007403,
+							["spec"] = 259,
 							["grupo"] = true,
 							["spell_cast"] = {
-								[27576] = 2,
-								[1766] = 1,
 								[1329] = 2,
+								[1766] = 1,
+								[27576] = 2,
 								[32645] = 1,
 								[192759] = 1,
-								[1943] = 1,
 								[703] = 1,
+								[1943] = 1,
 							},
 							["pets"] = {
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["tipo"] = 4,
-							["nome"] = "Emmarosa",
 							["last_event"] = 1478376683,
+							["nome"] = "Emmarosa",
+							["tipo"] = 4,
 							["serial"] = "Player-60-0A91880D",
-							["interrupt"] = 1.007403,
+							["buff_uptime_targets"] = {
+							},
 						}, -- [1]
 					},
 				}, -- [4]
@@ -3156,7 +3156,7 @@ _detalhes_database = {
 		},
 	},
 	["last_version"] = "v7.1.0.3201",
-	["last_instance_time"] = 1478008844,
+	["last_encounter"] = "Elerethe Renferal",
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
 			["lasttry"] = {
@@ -3164,8 +3164,8 @@ _detalhes_database = {
 			["annouce"] = true,
 			["dpshistory"] = {
 			},
-			["dps"] = 0,
 			["author"] = "Details! Team",
+			["dps"] = 0,
 			["level"] = 1,
 			["enabled"] = true,
 		},
@@ -3214,8 +3214,8 @@ _detalhes_database = {
 		},
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["updatespeed"] = 1,
-			["animate"] = false,
 			["showamount"] = false,
+			["animate"] = false,
 			["useplayercolor"] = false,
 			["useclasscolors"] = false,
 			["author"] = "Details! Team",
@@ -3330,25 +3330,51 @@ _detalhes_database = {
 	["SoloTablesSaved"] = {
 		["Mode"] = 1,
 	},
-	["combat_counter"] = 5907,
-	["character_data"] = {
-		["logons"] = 245,
+	["savedbuffs"] = {
 	},
+	["last_instance_time"] = 1478008844,
 	["tabela_instancias"] = {
 	},
 	["combat_id"] = 47,
 	["savedStyles"] = {
 	},
-	["last_realversion"] = 115,
-	["last_encounter"] = "Elerethe Renferal",
+	["character_data"] = {
+		["logons"] = 247,
+	},
+	["nick_tag_cache"] = {
+		["last_version"] = 8,
+		[177309709] = {
+			"Emmarosa", -- [1]
+			"Interface\\EncounterJournal\\UI-EJ-BOSS-Vanessa VanCleef", -- [2]
+			{
+				0, -- [1]
+				1, -- [2]
+				0, -- [3]
+				1, -- [4]
+			}, -- [3]
+			"Interface\\PetBattles\\Weather-Sandstorm", -- [4]
+			{
+				0.048828125, -- [1]
+				0.947265625, -- [2]
+				1, -- [3]
+				0, -- [4]
+			}, -- [5]
+			{
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			}, -- [6]
+			2, -- [7]
+		},
+		["nextreset"] = 1479304557,
+	},
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
 		["only_first"] = 5,
 		["where"] = 1,
 	},
-	["savedbuffs"] = {
-	},
+	["last_realversion"] = 115,
 	["local_instances_config"] = {
 		{
 			["segment"] = 0,
@@ -3415,33 +3441,7 @@ _detalhes_database = {
 			},
 		}, -- [2]
 	},
-	["nick_tag_cache"] = {
-		["last_version"] = 8,
-		[177309709] = {
-			"Emmarosa", -- [1]
-			"Interface\\EncounterJournal\\UI-EJ-BOSS-Vanessa VanCleef", -- [2]
-			{
-				0, -- [1]
-				1, -- [2]
-				0, -- [3]
-				1, -- [4]
-			}, -- [3]
-			"Interface\\PetBattles\\Weather-Sandstorm", -- [4]
-			{
-				0.048828125, -- [1]
-				0.947265625, -- [2]
-				1, -- [3]
-				0, -- [4]
-			}, -- [5]
-			{
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			}, -- [6]
-			2, -- [7]
-		},
-		["nextreset"] = 1479304557,
-	},
+	["combat_counter"] = 5909,
 	["announce_cooldowns"] = {
 		["enabled"] = false,
 		["ignored_cooldowns"] = {
@@ -3456,5 +3456,6 @@ _detalhes_database = {
 	["last_instance_id"] = 1004,
 	["cached_specs"] = {
 		["Player-60-0A91880D"] = 259,
+		["Player-60-097DB4DC"] = 259,
 	},
 }
