@@ -1,7 +1,7 @@
 # BigWigs
 
-## [v22.3-2-gf079393](https://github.com/BigWigsMods/BigWigs/tree/f0793933c2addf37ee5e1a5c683859e5f5619481) (2016-11-10) [](#top)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v22.3...f0793933c2addf37ee5e1a5c683859e5f5619481)
+## [v22.4-2-gce3644a](https://github.com/BigWigsMods/BigWigs/tree/ce3644acbae9b6aae028c637a93f5681f69268a3) (2016-11-10) [](#top)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v22.4...ce3644acbae9b6aae028c637a93f5681f69268a3)
 
-- Odyn: Fix a lot of timers, add a message when P3 starts, fix add fixate messages and infobox not showing, fix mythic abilities showing in normal / heroic  
-- add timers for Guarm  
+- frFR update (#94)  
+- Helya: Fix option error  
