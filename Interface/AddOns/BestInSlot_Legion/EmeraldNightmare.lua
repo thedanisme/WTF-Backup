@@ -488,3 +488,20 @@ function EmeraldNightmare:OnEnable()
   } 
   self:RegisterMiscItems(EN, misc)
 end
+function EmeraldNightmare:InitializeZoneDetect(ZoneDetect)  
+  self:Print("Hey I'm doing initializing zone detection yo")
+  ZoneDetect:RegisterMapID(1094, EN)
+  
+  ZoneDetect:RegisterNPCID(102672, EN, 1) --Nythemdra
+  ZoneDetect:RegisterNPCID(105393, EN, 2) --Il'gynoth
+  ZoneDetect:RegisterNPCID(106087, EN, 3) --Elerethe
+  ZoneDetect:RegisterNPCID(100497, EN, 4) --Ursoc
+  
+  ZoneDetect:RegisterNPCID(102679, EN, 5) --Ysondre (Dragons of Nightmare)
+  ZoneDetect:RegisterNPCID(102683, EN, 5) --Emeriss (Dragons of Nightmare)
+  ZoneDetect:RegisterNPCID(102682, EN, 5) --Lethon (Dragons of Nightmare)
+  ZoneDetect:RegisterNPCID(102681, EN, 5) --Taerar (Dragons of Nightmare)
+  
+  ZoneDetect:RegisterNPCID(104636, EN, 6) --Cenarius
+  ZoneDetect:RegisterNPCID(103769, EN, 7) --Xavius
+end

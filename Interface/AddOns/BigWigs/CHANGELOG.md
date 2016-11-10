@@ -1,9 +1,7 @@
 # BigWigs
 
-## [v22.1-4-g8f93597](https://github.com/BigWigsMods/BigWigs/tree/8f93597617e7abd2bc7f410f1684cec9e4cb7ab1) (2016-11-07) [](#top)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v22.1...8f93597617e7abd2bc7f410f1684cec9e4cb7ab1)
+## [v22.3-2-gf079393](https://github.com/BigWigsMods/BigWigs/tree/f0793933c2addf37ee5e1a5c683859e5f5619481) (2016-11-10) [](#top)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v22.3...f0793933c2addf37ee5e1a5c683859e5f5619481)
 
-- zhCN/zhTW update. (#89)  
-- Nightmare/Cenarius: Fix Forces of Nightmare StopBar  
-- Remove old sync compat  
-- Nightmare/Cenarius: Add Unbound Touch, make Rotten Breath a target event.  
+- Odyn: Fix a lot of timers, add a message when P3 starts, fix add fixate messages and infobox not showing, fix mythic abilities showing in normal / heroic  
+- add timers for Guarm  

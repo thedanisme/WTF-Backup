@@ -1,4 +1,9 @@
 ==<<color #ffb100>>BestInSlot Changelog<</color>>
+===<<color #ffb100>>Release 7.1.00<</color>>
+<<color #ffb100>>Major additions<</color>>
+* Added Halls of Valor loot
+* The Legion module should once again detect bosses, when enabled. (Including the new Hall of Valor raid)
+
 ===<<color #ffb100>>Release 7.0.13<</color>>
 <<color #ffb100>>Bug fixes<</color>>
 * Fixes an error where Artifacts didn't load properly

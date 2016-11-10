@@ -18,7 +18,7 @@ do
 	local RELEASE = "RELEASE"
 
 	local releaseType = RELEASE
-	local myGitHash = "8f93597" -- The ZIP packager will replace this with the Git hash.
+	local myGitHash = "f079393" -- The ZIP packager will replace this with the Git hash.
 	local releaseString = ""
 	--@alpha@
 	-- The following code will only be present in alpha ZIPs.
@@ -126,7 +126,7 @@ do
 		[-473] = 466, [-465] = 466, -- Outland
 		[-807] = 862, [-809] = 862, [-928] = 862, [-929] = 862, [-951] = 862, -- Pandaria
 		[-948] = 962, [-949] = 962, [-949] = 962, [-945] = 962, -- Draenor
-		[-1015] = 1007, [-1017] = 1007, [-1024] = 1007, -- Broken Isles
+		[-1015] = 1007, [-1017] = 1007, [-1018] = 1007, [-1024] = 1007, -- Broken Isles
 	}
 	public.fakeWorldZones = fakeWorldZones
 	public.zoneTbl = {}

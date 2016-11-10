@@ -5,7 +5,7 @@ local Artifact = BestInSlot:NewModule("Artifacts")
 
 local textureSize = 1024
 local spriteSize = 122
-
+function Artifact:InitializeZoneDetect(ZoneDetect)  end --surpress error
 function Artifact:OnEnable()
   self.relics = {
     ARCANE = {

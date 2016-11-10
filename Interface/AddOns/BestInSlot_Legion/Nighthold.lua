@@ -453,3 +453,18 @@ function Nighthold:OnEnable()
   }
   self:RegisterMiscItems(NH, misc)
 end
+
+function Nighthold:InitializeZoneDetect(ZoneDetect)
+  ZoneDetect:RegisterMapID(1088, NH)
+  
+  ZoneDetect:RegisterNPCID(102263, NH, 1) --Skorpyron
+  ZoneDetect:RegisterNPCID(104415, NH, 2) --Chronomatic Anomaly
+  ZoneDetect:RegisterNPCID(104288, NH, 3) --Trilliax
+  ZoneDetect:RegisterNPCID(107699, NH, 4) --Spellblade Aluriel
+  ZoneDetect:RegisterNPCID(103685, NH, 5) --Tichcondrius
+  ZoneDetect:RegisterNPCID(101002, NH, 6) --Krosus
+  ZoneDetect:RegisterNPCID(104528, NH, 7) --High Botanist Tel'arn
+  ZoneDetect:RegisterNPCID(103758, NH, 8) --Star Augur Etraeus
+  ZoneDetect:RegisterNPCID(110965, NH, 9) --Grand Magistrix Elisande
+  ZoneDetect:RegisterNPCID(105503, NH, 10) --Gul'dan
+end

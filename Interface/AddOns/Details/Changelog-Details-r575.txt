@@ -1,6 +1,14 @@
+2016-11-08  Tercio  <Tercio>
+
+[f7f0813a9f1a] [tip]
+* .pkgmeta, boot.lua, plugins/Details_RaidInfo-TrialOfValor/Details_RaidInfo-TrialOfValor.lua, plugins/Details_RaidInfo-TrialOfValor/Details_RaidInfo-TrialOfValor.toc, plugins/Details_RaidInfo-TrialOfValor/boss_faces.tga, plugins/Details_RaidInfo-TrialOfValor/icon256x128.tga:
+
+- Trials of Valor update.
+
+
 2016-11-04  Tercio  <Tercio>
 
-[e20673658fa2] [tip]
+[e20673658fa2]
 * Libs/LibItemUpgradeInfo-1.0/Core.lua, Libs/LibItemUpgradeInfo-1.0/LibItemUpgradeInfo-1.0.toc:
 
 - hard added an update for ItemUpgradeInfo library.
@@ -253,14 +261,6 @@ hotfixes:
 * boot.lua:
 
 *weakup packpager
-- new API: Details:GetPlayerIcon (playername[, segmentobject]) - return the player class or spec icon.
-- bar spacing now can go to -2, down from 0.
-- Tiny Threat now shall correctly use the font set on the options panel after a logon.
-
-
-[a88a77d94afc]
-* boot.lua, functions/playerclass.lua, gumps/janela_info.lua, gumps/janela_options.lua, plugins/Details_TinyThreat/Details_TinyThreat.lua:
-
 - new API: Details:GetPlayerIcon (playername[, segmentobject]) - return the player class or spec icon.
 - bar spacing now can go to -2, down from 0.
 - Tiny Threat now shall correctly use the font set on the options panel after a logon.

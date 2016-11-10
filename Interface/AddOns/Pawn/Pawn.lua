@@ -7,7 +7,7 @@
 -- Main non-UI code
 ------------------------------------------------------------
 
-PawnVersion = 2.0106
+PawnVersion = 2.0108
 
 -- Pawn requires this version of VgerCore:
 local PawnVgerCoreVersionRequired = 1.09
@@ -565,13 +565,13 @@ function PawnInitializeOptions()
 		-- When upgrading each character to 2.0, turn on the auto-scale option, but just once.
 		PawnOptions.AutoSelectScales = true
 	end
-	if (not PawnCommon.LastVersion) or (PawnCommon.LastVersion < 2.01) then
-		-- The default scales changed in 2.1 when we switched from Wowhead to Ask Mr. Robot, so reset all upgrade data.
-		PawnInvalidateBestItems()
-	end
 	if (not PawnCommon.LastVersion) or (PawnCommon.LastVersion < 2.0101) then
 		-- The new Bag Upgrade Advisor is on by default.
 		PawnCommon.ShowBagUpgradeAdvisor = true
+	end
+	if (not PawnCommon.LastVersion) or (PawnCommon.LastVersion < PawnMrRobotLastUpdatedVersion) then
+		-- If the Ask Mr. Robot scales have been updated since the last time they used Pawn, re-scan gear.
+		PawnInvalidateBestItems()
 	end
 	PawnCommon.LastVersion = PawnVersion
 	PawnOptions.LastVersion = PawnVersion
