@@ -89,7 +89,7 @@ Details_DungeonInfo-Warlords: disabled
 Details_ChartViewer: enabled
 DugisGuideViewerZ: enabled
 EventTracker: enabled
-ExRT: enabled
+ExRT: disabled
 HandyNotes: enabled
 HandyNotes_LegionRaresTreasures: enabled
 HideTalkingHead: enabled
@@ -124,4 +124,3 @@ AddOnSkins: enabled
 ElvUI_Config: enabled
 ElvUI: enabled
 BigDumbLootCouncil: disabled
-ServerHop: disabled
