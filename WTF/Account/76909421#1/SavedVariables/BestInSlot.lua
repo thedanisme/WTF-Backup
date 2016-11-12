@@ -277,7 +277,7 @@ BestInSlotDB = {
 				[6] = 66,
 			},
 		},
-		["Llamama - Stormrage"] = {
+		["Dosnutz - Stormrage"] = {
 			["windowpos"] = {
 				["relativeTo"] = "UIParent",
 				["point"] = "TOPLEFT",
@@ -290,10 +290,10 @@ BestInSlotDB = {
 			},
 			["selected"] = {
 				"WoD", -- [1]
-				60200, -- [2]
-				"HFC", -- [3]
+				60000, -- [2]
+				"HM", -- [3]
 				[5] = 4,
-				[6] = 253,
+				[6] = 63,
 			},
 		},
 		["Brobies - Stormrage"] = {
@@ -979,7 +979,7 @@ BestInSlotDB = {
 				[6] = 577,
 			},
 		},
-		["Dosnutz - Stormrage"] = {
+		["Llamama - Stormrage"] = {
 			["windowpos"] = {
 				["relativeTo"] = "UIParent",
 				["point"] = "TOPLEFT",
@@ -992,10 +992,10 @@ BestInSlotDB = {
 			},
 			["selected"] = {
 				"WoD", -- [1]
-				60000, -- [2]
-				"HM", -- [3]
+				60200, -- [2]
+				"HFC", -- [3]
 				[5] = 4,
-				[6] = 63,
+				[6] = 253,
 			},
 		},
 	},

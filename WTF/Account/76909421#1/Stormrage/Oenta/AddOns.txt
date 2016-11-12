@@ -87,7 +87,7 @@ Details_Streamer: disabled
 Details_RaidInfo-HellfireCitadel: disabled
 Details_DungeonInfo-Warlords: disabled
 Details_ChartViewer: enabled
-DugisGuideViewerZ: enabled
+DugisGuideViewerZ: disabled
 EventTracker: enabled
 ExRT: disabled
 HandyNotes: enabled
@@ -124,3 +124,4 @@ AddOnSkins: enabled
 ElvUI_Config: enabled
 ElvUI: enabled
 BigDumbLootCouncil: disabled
+PersonalLootHelper: enabled

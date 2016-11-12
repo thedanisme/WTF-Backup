@@ -43,9 +43,9 @@ W: 26
 H: 26
 Frame: DugisArrowFrame
 FrameLevel: 1
-Anchor: BOTTOMRIGHT
-X: -367
-Y: 191
+Anchor: RIGHT
+X: -293
+Y: -83
 W: 72
 H: 54
 Frame: PawnUIFrame

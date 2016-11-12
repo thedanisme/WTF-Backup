@@ -21,6 +21,10 @@ BigWigs3DB = {
 		},
 		["BigWigs_Plugins_Statistics"] = {
 		},
+		["BigWigs_Bosses_Ymiron"] = {
+		},
+		["BigWigs_Bosses_Helya"] = {
+		},
 		["BigWigs_Plugins_Colors"] = {
 		},
 		["BigWigs_Plugins_Raid Icons"] = {
@@ -42,14 +46,32 @@ BigWigs3DB = {
 				},
 			},
 		},
+		["BigWigs_Plugins_Respawn"] = {
+		},
 		["BigWigs_Plugins_HeroesVoices"] = {
 		},
 		["LibDualSpec-1.0"] = {
+		},
+		["BigWigs_Bosses_Maw of Souls Trash"] = {
 		},
 		["BigWigs_Plugins_Pull"] = {
 			["profiles"] = {
 				["Default"] = {
 					["countType"] = "normal",
+				},
+			},
+		},
+		["BigWigs_Plugins_Messages"] = {
+			["profiles"] = {
+				["Default"] = {
+					["BWEmphasizeMessageAnchor_x"] = 607.288990399575,
+					["BWEmphasizeCountdownMessageAnchor_x"] = 834.844725076364,
+					["BWEmphasizeMessageAnchor_y"] = 521.244500468838,
+					["BWMessageAnchor_y"] = 601.599927761818,
+					["BWMessageAnchor_x"] = 612.266768297886,
+					["BWEmphasizeCountdownMessageAnchor_y"] = 364.088897705078,
+					["font"] = "Gotham-Narrow",
+					["fontSize"] = 20,
 				},
 			},
 		},
@@ -69,21 +91,7 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_Messages"] = {
-			["profiles"] = {
-				["Default"] = {
-					["BWEmphasizeMessageAnchor_x"] = 607.288990399575,
-					["BWEmphasizeCountdownMessageAnchor_x"] = 834.844725076364,
-					["BWEmphasizeMessageAnchor_y"] = 521.244500468838,
-					["BWMessageAnchor_y"] = 601.599927761818,
-					["BWMessageAnchor_x"] = 612.266768297886,
-					["BWEmphasizeCountdownMessageAnchor_y"] = 364.088897705078,
-					["font"] = "Gotham-Narrow",
-					["fontSize"] = 20,
-				},
-			},
-		},
-		["BigWigs_Plugins_Respawn"] = {
+		["BigWigs_Bosses_Harbaron"] = {
 		},
 		["BigWigs_Plugins_Common Auras"] = {
 		},
