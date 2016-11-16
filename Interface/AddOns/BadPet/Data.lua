@@ -1,5 +1,5 @@
 --------------------------------------------------------------------------------
--- BadPet v1.0.6
+-- BadPet v1.0.7
 -- File:    Data.lua
 -- Author:  Stephen Nelson
 -- License: LICENSE.txt

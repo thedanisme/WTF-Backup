@@ -6,6 +6,10 @@ VER 3 0000000000000147 "ArtWep" "INV_Misc_QuestionMark"
 #showtooltip 16 
 /run if not ArtifactFrame then SocketInventoryItem(16) else if ArtifactFrame:IsShown() then ArtifactFrame:Hide() else SocketInventoryItem(16) end end
 END
+VER 3 000000000000014B "Cache Buy" "INV_MISC_Lockbox_1."
+/run BuyMerchantItem(1,1)
+/use Order Resources Cache
+END
 VER 3 000000000000013C "ClearMark" "INV_Hammer_Unique_Sulfuras"
 /run SetRaidTarget("PLAYER",0)
 END

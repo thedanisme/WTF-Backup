@@ -9,12 +9,10 @@ NOP.T_SPELL_BY_NAME = { -- [itemID] = min-count, table to fetch via GetItemSpell
   [128316] = 1, -- Bulging Barrel of Oil, Convert to Oil
   [138865] = 1, -- Gladiator's Triumph, Grants 50 Artifact Power to your currently equipped Artifact.
   [139669] = 1, -- Toss the fish back into the water, granting 50 Artifact Power to your fishing artifact.
-  [133742] = 1, -- Toss the fish back into the water, increasing Fishing skill by 5, up to a max of 800.
   [139390] = 1, -- Artifact Research Notes, Use: Read to gain new knowledge about your artifact, increasing the rate at which you earn Artifact Power.
-  [129097] = 1, -- 30 Ancient Mana
-  [140243] = 1, -- 50 Ancient Mana
-  [140401] = 1, -- 75 Ancient Mana
-  [140236] = 1, -- 100 Ancient Mana
+  [129097] = 1, -- 30 Ancient Mana, Ancient Mana Gem
+  [140401] = 1, -- 75 Ancient Mana, Blue Or'ligai Egg
+  [140236] = 1, -- 100 Ancient Mana, 
   [140240] = 1, -- 150 Ancient Mana
   [140242] = 1, -- 200 Ancient Mana
   [140239] = 1, -- 300 Ancient Mana
@@ -27,6 +25,14 @@ NOP.T_SPELL_BY_USE_TEXT = { -- [spellID] = {min-count,itemID,{"sub-Zone"},{[mapI
   [ 58165] = {1,  7973,nil,nil},  -- Open the clam!, Big-Mouth Clam
   [166550] = {1,113355,nil,nil},  -- Flip Card, Card of Omens
   [163769] = {1,116158,nil,{[976]=true,[971]=true}}, -- Toss Fish, Lunarfall Carp, can be used only in garrison shown on button only in garrison.
+  [193080] = {1,129097,nil,nil}, -- 30 mana
+  [222333] = {1,139786,nil,nil}, -- 50 mana
+  [223677] = {1,140401,nil,nil}, -- 75 mana
+  [222942] = {1,140236,nil,nil}, -- 100 mana
+  [222947] = {1,140240,nil,nil}, -- 150 mana
+  [222950] = {1,140242,nil,nil}, -- 200 mana
+  [222945] = {1,140239,nil,nil}, -- 300 mana
+
 }
 NOP.T_RECIPES = { -- [ItemId] = {min-count, "gsub regex" | tooltip-line-number}, item tooltip template only text to 1st match is compared, that mean all items of same school would be looked up.
   [122219] = {1,"(.+:).*"}, -- Music Roll: Way of the Monk
@@ -187,6 +193,7 @@ NOP.T_ITEMS = { -- [itemID] = {min-count,{"sub-Zone","sub-Zone",...} | mapID | {
   [122605] = {1,nil,nil}, -- Tome of the Stones
   [140397] = {1,nil,223670}, -- G'Hanir's Blossom
   [140439] = {1,nil,223722}, -- Sunblossom Pollen
+  [140260] = {1,nil,nil}, -- Arcane Remnant of Falanaar
   [141870] = {1,nil,nil}, -- Arcane Tablet of Falanaar
   [141338] = {1,nil,nil}, -- Valarjar Insignia 
   [141341] = {1,nil,nil}, -- Highmountain Tribe Insignia 
@@ -200,6 +207,12 @@ NOP.T_ITEMS = { -- [itemID] = {min-count,{"sub-Zone","sub-Zone",...} | mapID | {
   [141992] = {1,nil,nil}, -- Greater Nightfallen Insignia 
   [141989] = {1,nil,nil}, -- Greater Court of Farondis Insignia 
   [141991] = {1,nil,nil}, -- Greater Wardens Insignia
+  [139010] = {1,nil,nil}, -- Petrified Silkweave
+  [139017] = {1,nil,nil}, -- Soothing Leystone Shard
+  [139376] = {1,nil,nil}, -- Healing Well
+  [136412] = {1,nil,nil}, -- Heavy Armor Set
+  [137207] = {1,nil,nil}, -- Fortified Armor Set
+  [137208] = {1,nil,nil}, -- Indestructible Armor Set
 }
 NOP.T_FRAMES = { -- these frames need to be closed before I can use item on button
   "MerchantFrame", 

@@ -1,7 +1,10 @@
---[[To-Do:
+--[[Revisions: 06.22 15.11.2016
 
-[list][*]Separate size and position for Usable Item and Quest Button bar is done, now need separate movers.
-[*]Hook for skinning addons.[/list]
+[list][*]Fix for some ancient mana items caused by bugged GetItemSpell(itemID) it returns item name instead of spell name, but only for certain Legion items.
+[*]Added support for Blizzard's Auto Quest Tracker module.
+[*]Migrate and cleanup for saved variables in profile.
+[*]Added Arcane Remnant, Healing Well, Soothing Leystone Shard of Falanaar and Petrified Silkweave.
+[*]Added Heavy, Fortified and Indestructible Armor Set hero boost.[/list]
 
 ]]
 --[[Revisions: 06.20
@@ -713,5 +716,11 @@ Original idea behind this come from Driizt@BB_EU
 --[[Known issues:
 
 [list][*]None known.[/list]
+
+]]
+--[[To-Do:
+
+[list][*]Separate size and position for Usable Item and Quest Button bar is done, now need separate movers.
+[*]Hook for skinning addons.[/list]
 
 ]]

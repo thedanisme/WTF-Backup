@@ -138,7 +138,7 @@ function NOP:QBBlacklist(isPermanent,itemID) -- add quest item to blacklist
 end
 function NOP:QBPostClick(bt,mouse) -- click on button, place hotkey if none
   if mouse and (mouse == 'RightButton') then self:QBBlacklist(IsControlKeyDown(),bt.itemID) end
-  if NOP.DB.keyBind and bt.itemID ~= self.AceDB.char.questBarID then
+  if NOP.DB.keyBind and (bt.itemID ~= self.AceDB.char.questBarID) then
     self.AceDB.char.questBarID = bt.itemID
     NOP:QBKeyBind(bt)
   end
@@ -200,7 +200,7 @@ function NOP:QBButtonAdd(i, itemID) -- set new item
     button.questMark:Hide()
   end
   self:QBButtonAnchor(i)
-  if itemID == self.AceDB.char.questBarID then -- rebind hotkey
+  if (itemID == self.AceDB.char.questBarID) then -- rebind hotkey to last used item
     self:QBKeyBind(button,i)
   end
   if not(button:IsShown() or button:IsVisible()) then button:Show() end
@@ -272,4 +272,21 @@ function NOP:QBQuestAccept() -- refresh items on Quest Items Bar when quest is a
   end
   if self.timerQBQuestAccept then return end -- update will come from timer soon
   if NOP.LQI and self.QB and self.QB.refreshBar then NOP.LQI:Scan() end
+end
+function NOP:QBAutoQuest()
+  hooksecurefunc("AutoQuestPopupTracker_AddPopUp", 
+    function(questID, popUpType)
+      if NOP.DB.autoquest and (type(questID) == "number") and (type(popUpType) == "string") and questID then
+        local index = GetQuestLogIndexByID(questID)
+        if index then
+          if (popUpType == "OFFER") then
+            ShowQuestOffer(index)
+          else
+            ShowQuestComplete(index)
+          end
+          AutoQuestPopupTracker_RemovePopUp(questID)
+        end
+      end
+    end
+  )
 end

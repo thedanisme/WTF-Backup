@@ -1,12 +1,12 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0008,
+	["LastVersion"] = 2.0108,
 	["LastPlayerFullName"] = "Druidann-Stormrage",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,
 	["LastKeybindingsSet"] = 1,
 }
-PawnWowheadScaleProviderOptions = {
+PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "DRUID",
-	["LastAdded"] = 5,
+	["LastAdded"] = 1,
 }

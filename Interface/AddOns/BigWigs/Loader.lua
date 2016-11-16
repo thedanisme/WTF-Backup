@@ -7,7 +7,7 @@ local bwFrame = CreateFrame("Frame")
 -- Generate our version variables
 --
 
-local BIGWIGS_VERSION = 22
+local BIGWIGS_VERSION = 23
 local BIGWIGS_RELEASE_STRING = ""
 local versionQueryString, versionResponseString = "Q^%d^%s", "V^%d^%s"
 
@@ -18,12 +18,12 @@ do
 	local RELEASE = "RELEASE"
 
 	local releaseType = RELEASE
-	local myGitHash = "68dd489" -- The ZIP packager will replace this with the Git hash.
+	local myGitHash = "0e967a2" -- The ZIP packager will replace this with the Git hash.
 	local releaseString = ""
-	--@alpha@
+	--[===[@alpha@
 	-- The following code will only be present in alpha ZIPs.
 	releaseType = ALPHA
-	--@end-alpha@
+	--@end-alpha@]===]
 
 	-- If we find "@" then we're running from Git directly.
 	if myGitHash:find("@", nil, true) then

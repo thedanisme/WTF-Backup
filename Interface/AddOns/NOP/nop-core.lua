@@ -86,7 +86,7 @@ function NOP:SpellLoad() -- load spell patterns
   local retry = false
   for spellid, data in pairs(NOP.T_SPELL_BY_USE_TEXT) do -- [spellID] = {min-count,itemID,{"sub-Zone"},{[mapID]=true,[mapID]=true}}
     if data and data[2] then
-      local name = GetItemInfo(data[2]) -- now just cache all items into cache, later will get tooltip for them
+      local name = GetItemInfo(data[2]) -- now just cache all items into cache, later will get tooltip for spells over them
       if name == nil then -- item has no info on client side yet, let wait for server
         --self.printt("GetItemInfo(data[2])",data[2])
         retry = true

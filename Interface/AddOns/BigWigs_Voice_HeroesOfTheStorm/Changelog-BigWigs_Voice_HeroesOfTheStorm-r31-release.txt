@@ -1,9 +1,22 @@
 ------------------------------------------------------------------------
-r28 | nebula169 | 2016-11-06 03:46:26 +0000 (Sun, 06 Nov 2016) | 1 line
+r31 | nebula169 | 2016-11-14 22:23:00 +0000 (Mon, 14 Nov 2016) | 1 line
 Changed paths:
-   A /tags/r28-release (from /trunk:27)
+   A /tags/r31-release (from /trunk:30)
 
-Tagging as r28-release
+Tagging as r31-release
+------------------------------------------------------------------------
+r30 | nebula169 | 2016-11-14 03:56:45 +0000 (Mon, 14 Nov 2016) | 1 line
+Changed paths:
+   M /trunk/BigWigs_Voice_HeroesOfTheStorm.toc
+
+This still needs to be LOD
+------------------------------------------------------------------------
+r29 | nebula169 | 2016-11-12 02:48:49 +0000 (Sat, 12 Nov 2016) | 1 line
+Changed paths:
+   M /trunk/BigWigs_Voice_HeroesOfTheStorm.toc
+   M /trunk/Core.lua
+
+Use BigWigsAPI for registering countdowns
 ------------------------------------------------------------------------
 r27 | nebula169 | 2016-11-06 03:40:43 +0000 (Sun, 06 Nov 2016) | 1 line
 Changed paths:

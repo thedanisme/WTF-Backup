@@ -13,42 +13,46 @@ end
 function NOP:ProfileLoad() -- LUA stored variables load and init
   local defaults = {
     profile = {
-      char = { 
-        settings = {
-          ["iconSize"] = private.DEFAULT_ICON_SIZE, -- default size
-          ["lockButton"] = false, -- unlock
-          ["skinButton"] = false, -- buttons are skinned
-          ["button"] = {"CENTER", nil, "CENTER", 0, 0}, -- Item Button anchor and location
-          ["qb"] = {"CENTER", nil, "CENTER", 0, 0}, -- Quest Bar location if not qb_sticky
-          ["qb_sticky"] = true, -- Quest Bar is anchored to Item Button
-          ["T_BLACKLIST"] = {}, -- Permanent blacklist for items button
-          ["T_BLACKLIST_Q"] = {}, -- Permanent blacklist for quest items
-          ["Skip"] = false,
-          ["zoneUnlock"] = true,
-          ["glowButton"] = true,
-          ["backdrop"] = true,
-          ["profession"] = true,
-          ["verbose"] = false,
-          ["cofeeStacks"] = 1,
-          ["quest"] = false,
-          ["visible"] = false,
-          ["swap"] = false,
-          ["script"] = false,
-          ["slots"] = 10,
-          ["direction"] = "RIGHT",
-          ["keyBind"] = "ALT-Q",
-          ["expand"] = 1,
-          ["spacing"] = 1,
-        },
-      },
+      ["iconSize"] = private.DEFAULT_ICON_SIZE, -- default size
+      ["lockButton"] = false, -- unlock
+      ["skinButton"] = false, -- buttons are skinned
+      ["button"] = {"CENTER", nil, "CENTER", 0, 0}, -- Item Button anchor and location
+      ["qb"] = {"CENTER", nil, "CENTER", 0, 0}, -- Quest Bar location if not qb_sticky
+      ["qb_sticky"] = true, -- Quest Bar is anchored to Item Button
+      ["T_BLACKLIST"] = {}, -- Permanent blacklist for items button
+      ["T_BLACKLIST_Q"] = {}, -- Permanent blacklist for quest items
+      ["Skip"] = false,
+      ["zoneUnlock"] = true,
+      ["glowButton"] = true,
+      ["backdrop"] = true,
+      ["profession"] = true,
+      ["verbose"] = false,
+      ["cofeeStacks"] = 1,
+      ["quest"] = false,
+      ["visible"] = false,
+      ["swap"] = false,
+      ["script"] = false,
+      ["autoquest"] = false,
+      ["slots"] = 10,
+      ["direction"] = "RIGHT",
+      ["keyBind"] = "ALT-Q",
+      ["expand"] = 1,
+      ["spacing"] = 1,
     },
   }
+
   self.AceDB = LibStub("AceDB-3.0"):New("NewOpenablesProfile",defaults,true)
   self.AceDB.RegisterCallback(self, "OnProfileChanged", "ProfileChanged")
   self.AceDB.RegisterCallback(self, "OnProfileCopied",  "ProfileChanged")
   self.AceDB.RegisterCallback(self, "OnProfileReset",   "ProfileChanged")
-  self.DB = self.AceDB.profile.char.settings -- profile
-  self.qbKBItemID = self.AceDB.char.questBarID -- restore last bind itemID
+  if self.AceDB.profile.char then -- one-time migration
+    local dst = self.AceDB.profile -- new location 
+    for key,val in pairs(self.AceDB.profile.char.settings) do
+      dst[key] = val
+    end
+    self.AceDB.profile.char = nil -- remove it from saved variables
+  end
+  self.DB = self.AceDB.profile -- profile
 end
 function NOP:OptionsLoad() -- load options for UI config
   local NewOpenablesOptions = {
@@ -147,7 +151,7 @@ function NOP:OptionsLoad() -- load options for UI config
           },
           swap = {
             name = private.L["Swap"],
-            order = 10,
+            order = 11,
             desc = private.L["Swap location of numbers for count and cooldown timer"],
             type = "toggle",
             width = "full",    
@@ -156,21 +160,30 @@ function NOP:OptionsLoad() -- load options for UI config
           },
           script = {
             name = private.L["Script"],
-            order = 11,
+            order = 12,
             desc = private.L["Let button on use close unwanted windows like NPC trader, bank etc. You need enable custom scripts to run!"],
             type = "toggle",
             width = "full",    
             set = function(info,val) NOP.DB["script"] = val; end,
             get = function(info) return NOP.DB.script end,
           },
+          autoquest = {
+            name = private.L["AutoQuest"],
+            order = 12,
+            desc = private.L["Auto accept or hand out quests from AutoQuestPopupTracker!"],
+            type = "toggle",
+            width = "full",    
+            set = function(info,val) NOP.DB["autoquest"] = val; end,
+            get = function(info) return NOP.DB.autoquest end,
+          },
           header1 = {
             type = "header",
             name = "",
-            order = 12,
+            order = 14,
           },
           blacklist = {
             name = private.L["Clear Blacklist"],
-            order = 13,
+            order = 15,
             desc = private.L["Reset Permanent blacklist."],
             type = "execute",
             func = function() NOP:BlacklistReset() end,

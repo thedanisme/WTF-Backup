@@ -1,0 +1,12 @@
+tag v1.0.7
+da54cb3e7a35888c41f1dbf22319ff77f7ae9336
+Stephen Nelson <stephen@sfnelson.org>
+2016-11-12 23:40:04 +1300
+
+Release v1.0.7
+
+
+--------------------
+
+Stephen Nelson:
+	- Fix #11: not in party spam in LFG instances

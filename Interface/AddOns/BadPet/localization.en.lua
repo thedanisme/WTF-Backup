@@ -1,5 +1,5 @@
 --------------------------------------------------------------------------------
--- BadPet v1.0.6
+-- BadPet v1.0.7
 -- File:    localization.en.lua
 -- Author:  Stephen Nelson
 -- License: LICENSE.txt

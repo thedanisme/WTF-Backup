@@ -1,6 +1,6 @@
 
 -- GLOBALS: BADBOY_BLACKLIST, BADBOY_OPTIONS, BadBoyLog, ChatFrame1, GetTime, print, ReportPlayer, CalendarGetDate, SetCVar
--- GLOBALS: CalendarFrame, GameTooltip, UIErrorsFrame, C_Timer, IsEncounterInProgress, GameTooltip_Hide
+-- GLOBALS: GameTooltip, C_Timer, IsEncounterInProgress, GameTooltip_Hide
 local L
 do
 	local _
@@ -120,7 +120,8 @@ local boostingList = {
 	"secure",
 	"delivery",
 	"store",
-	"prestige",
+	"pri?est[ie]ge",
+	"quality",
 }
 local boostingWhiteList = {
 	"members",
@@ -389,11 +390,6 @@ local instantReportList = {
 	"mythic.*price.*perfectway[%.,]one", --WTS Dungeons Mythic, Dungeons Heroic in Legion everyday!!! New prices [(Perfectway.one)]
 	"mount.*achiev.*raidboost[%.,]com", --Farewell Draenor! Mounts/Glories/Achievements. Hurry up to all WoD bounties on [Raidboost.com]
 	"best.*market.*gamebion", --◄Need help in HFC? We have a best offers on the market from various guilds and teams! For more info visit GAMEBION com►
-	"rbgwin.*skype.*winsrbg", -- --- WTS RBG WINS/CAP. Get it right now! Skype: WinsRBG ---
-	"help.*service.*discount.*specialoffer", --We can help with HFC hc, hfc mythic, all range of service, holidays discounts, special offers and more!
-	"conquest.*service.*gear.*skype", --\\\ WTS Conquest Cap Service. Get your gear right now! Skype: LConce ///
-	"help.*mythic.*selfplay.*share.*booster.*info", -- ---Help you with 10\10 8\10 Mythic Dungeon (PL) or (PL with Trade) Selfplay or Share… 3 hours full run. 845+ Boosters for more info /W---
-	"help.*gear.*selfplay.*share.*booster.*info", -- ---Help you with  itemLVL UP 840+ Gear…for 1 run Selfplay or Share 3 hours full run with 845+ Boosters for more info /W ---
 	"gear.*selfplay.*euro", --8/10 Mythic Dungeon-PL-Selfplay -90 euro 10/10 -PL- Selfplay -110 euro---Full Mythic Gear 840+ items in all slots -Selfplay--160 euro-
 	"skype.*website.*paypal", --Skype [RUSTAM.GARIEV] find me and I can link you website adress  If you can Pay -PayPal- we don't take what advance payment  you can pay in raid passing process
 	"service.*cyberstarlife%.ru", --Best prices and service at http://cyber-starlife.ru/ .PvE,PvP, Achievments,mounts etc with polite and friendly support!
@@ -475,7 +471,7 @@ local instantReportList = {
 	"wts.*le?ve?ll?i?n?g?.*dungeon.*pvp.*emerald.*info", --[WTS] <<Character leveling 100-110 lvl>> | <<New Mythic/Heroic Dungeons>> | <<Full Dungeon Gear>> | <<Full PVP Gear>> || Soon Emerald Nightmare Runs and more. /W for more info.
 	"selling.*rbg.*honor.*mount.*selfplay", --██Selling RBG 1-75wins(honor rank/Priestige),40/75wins mounts [Vicious War Trike] and  [Vicious Warstrider]self play,PST
 	"selling.*mount.*honor.*gear.*accshare.*", --selling 1-75winsEarn mount +honor rank+ priestige/legendary gears 6vicious mount  ;also selling[Vicious War Trike]and[Vicious Saddle]},no acc share .PST
-	"rbg.*artifact.*mount.*accshare", --▓▓WTS RBGs,1-75wins(get HR and artifact power and 6vicious mounts)[Vicious War Trike]and[Vicious Saddle]right now,no accshare▓PST
+	"rbg.*artifact.*mount.*accshar", --▓▓WTS RBGs,1-75wins(get HR and artifact power and 6vicious mounts)[Vicious War Trike]and[Vicious Saddle]right now,no accshare▓PST
 	"heroic.*amazingprice.*strong.*group.*gua?rantee.*drop.*spot", --Wts Emerald nightmare Heroic 7/7 clear for amazing price with strong guide groupe we gurantee you Full heroic loot that drop for your class on tonight 19:00 st only 2 spots ! w me for more infos.
 	--WTS Mythic + KEY~/+2/+3/+6/+8/+9/+10 key,write me for info.
 	"wtsmythic.*key.*%d/%d/%d.*write.*info", --WTS Mythic + KEY~/+2/+3/+6/+8/+9/+10 /Write me for info.
@@ -499,7 +495,7 @@ local instantReportList = {
 	"help.*le?ve?ling.*demonboost[%.,]com", --Helping with lvling 100-110. Emerald Nightmare, Return to Karazhan, Mythic+ dungeons. [Demon-Boost.com]
 	"fast.*leveling.*honor.*в[o0][o0]st", -- ►►►Fastest leveling 100-110 (6-12 hours), 850+ gear, Honor Ranks and MUCH MORE on [RРD-В00SТ,С0М]◄◄◄
 	"^wtsmythickarazhandungeons[,.]*whispme", --WTS Mythić+ & Kârazhan Dungeøns. Whísp me.
-	"^wtskarazhan[,.]mythic.*mythic+dungeon$", --WTS karazhan. mythic and mythic+ dungeon    
+	"^wtskarazhan[,.]mythic.*mythic+dungeon$", --WTS karazhan. mythic and mythic+ dungeon
 	"^wtsboostkarazhan[,.]mythic[,.]mythicdungeon", --WTS boost karazhan. mythic. mythic+ dungeon
 	"^wtskarazhan[,.]mythic[,.]%d+/%d+mythicdungeonboost", --WTS Karazhan,Mythic+,10/10Mythic dungeon boost
 	"^wtsemeraldnightmaremythiclootrun.*mlselfplay.*price.*gold", --WTS EmeraldNightmare Mythic lootrun (ML+selfplay) , price in gold : 4000k
@@ -514,7 +510,7 @@ local instantReportList = {
 	"xperiencedparty.*runs.*walkthrough.*mythic.*glory.*karazhan", --xperienced party 880+ (more than 45 runs) will help you to walkthrough mythic, mythic+, Glory of the Legion Hero, Karazhan.
 	"wh?isp.*skype.*igor.*price", --Wisp in Skype [] for Detal/Prices.
 	"elitistgaming[,.]com.*mount", --Elitist-gaming,com Selling Emerald Nightmare on ALL difficulties, [Ahead of the Curve: Xavius]MYTHIC + dungeons and NIGHTBANE MOUNT, all self play  & more whisper for schedules
-	"instant.*delivery.*purchase.*gold.*extra", --Instant delivery!!Purchase 100k gold get extra 10k or  [Obliterum]*4! 200k get  [Obliterum] *10!! w me 
+	"instant.*delivery.*purchase.*gold.*extra", --Instant delivery!!Purchase 100k gold get extra 10k or  [Obliterum]*4! 200k get  [Obliterum] *10!! w me
 	"promotion.*order.*gold.*coupon.*code", --Halloween Promotion!! Order gold from our site, and u will get  [Obliterum] or 10% gold for free!!! w me get coupon code!Happy Halloween^^!!!
 	"juststarted.*leveling.*twink.*gear.*dungeon.*more", --● Just Started The Legion or leveling a twink ? Need To Gear Up ? Try Our Karazhan, Emerald Nightmare N/HC/M, Dungeons+ Runs and More ●
 	"wts.*saddle.*carry.*hour.*start.*info", --█ [WTS] Vicious saddle. 100 3v3 wins carry just in 3 hours. We can start right now, whisper me for information █
@@ -540,10 +536,12 @@ local instantReportList = {
 	"l[o0][o0]tcl[o0]ud.*b[o0][o0][s5]t", --▲▲▲■■■LFB?>-L00tcl0ud?c0m?-GUILD B005T/-/EN HC 69e/-/Mythic+/-/Trust raids/Karazhan/-/Best offers/ And many more here-?L00tcl0ud?com?   ▲▲▲■■■
 	"wtskara.*fasttimerun.*guarantee.*mount", --WTS KARAZHAN // fast time runs with guaranteed awesome MOUNT! /w me for more info.
 	"wtsarena.*boost.*2%.?200.*2%.?400.*gladiator.*info", --WTS ARENA BOOST // 2.200 // 2.400 // 2.600 // 2.800 // GLADIATOR / /w Me for more info!
-	"wts.*nightmare.*mythic.*master.*personal.*quickraids.*everyday.*write", --««WTS Emerald Nightmare Heroic/Mythic with Master Loot or Personal, Quick Raids everyday! Write me for info»»
-	"b[o0][o0]sthelp.*2%.2.*2%.4.*glad.*coach.*info$", --B0ost! Help 2.2/2.2/2.4, (glad/r1), Coaching from glads, Leveling 100-110 /w me for more info
+	--««WTS Emerald Nightmare Mythic/Heroic/Normal with Master Loot, Quick Raids everyday! Write me for info» 
+	"wts.*nightmare.*mythic.*master.*loot.*quickraids.*everyday.*write", --««WTS Emerald Nightmare Heroic/Mythic with Master Loot or Personal, Quick Raids everyday! Write me for info»»
+	"2.*2%.4.*glad.*le?ve?ling.*100110.*info$", --B00st 2k/2.4+ 3s 2s, (glad/r1), Leveling 100-110, Want to get 2/2.2k+ playing yourself with r1? /w me for more info
+	"2.*2%.4.*glad.*coach.*100110.*info$", --B0ost! Help 2.2/2.2/2.4, (glad/r1), Coaching from glads, Leveling 100-110 /w me for more info
 	--B0ost arena 2.2/2.4/2.7+ (glad, r1), live streams, cant find teammates for push rating? /w me for info
-	"b[o0][o0]starena.*2%.2.*2%.4.*glad.*livestream.*info$", --B0ost arena 2.2/2.4/2.7+ (glad, r1), live streams, Want get 2k or more selfplay? /w me for info
+	"b[o0][o0]starena.*2.*2%.4.*glad.*livestream.*info$", --B0ost arena 2.2/2.4/2.7+ (glad, r1), live streams, Want get 2k or more selfplay? /w me for info
 	"wtsemeraldnightmarelootraids.*heroic.*mythic.*dungeons.*wisp$", --WTS Emerald Nightmare lootraids, Heroic/Mythic Dungeons. Wisp!
 	"wts.*mythic.*boosting.*loot.*keystone.*dungeon.*glory", --WTS EN and Trial of Valor Mythic/Heroic/Normal boosting +loot, Karazhan boost, Mythic Keystone Boost 1-10+lvl, Mythic+ dungeons chests runs,  Mythic dungeons boost, Glory of the Legion Hero
 	"selling.*professional.*team.*mount.*loot", --Selling <<Mythic+>>/<<Karazhan(mount)>>/<<EMERALD NIGHTMARE heroic>> by a professional team! Come get your mount and loot! Going Now pst for detail
@@ -552,6 +550,12 @@ local instantReportList = {
 	--Hello! Offer 2000/2200/2400, (glad/r1), Coaching from glads, Leveling 100-110 /w me for more info
 	"hello.*2200.*glad.*le?ve?ling.*info", --Hello! Offer 2000/2200/2400, (glad/r1), Leveling 100-110, Want to get 2k+ playing yourself? /w me for more info
 	"^karazhanmount.*nightmareruns.*spotsleft.*contact.*details$", --Karazhan mount, Emerald Nightmare runs. Few spots left! Contact for more details
+	"^trial.*karazhanmount.*nightmareruns.*spotsleft.*contact.*details$", --Trial of Valor, Karazhan mount, Emerald Nightmare runs. Few spots left! Contact for more details
+	"wts.*heroic.*raid.*fast.*quality.*discount.*selfplay", --WTS EMERALD NIGHTMARE 7/7 Heroic with PL. Raid right now. Fast run. High [quality.Discount] for selfplay tonight!!!
+	"^wts.*emeraldnightmare.*masterloottoday.*cheapandfast.*whisperme$", --WTS the Emerald Nightmare 7/7 HC Master Loot today,cheap and fast,whisper me
+	"wtsrbg.*wins.*mount.*carry.*reins", --█ █WTS RBG 1-75wins(AP+HR)6Vicious [mount.carry] u right [now.also][Reins of the Long-Forgotten Hippogryph]and[Voidtalon of the Dark Star]█PST
+	"wts.*today.*nightmare.*lootrun.*masterloot.*bestprice", --WTS: |=Today EMERALD NIGHTMARE MYTHIC Lootrun (7/7)||Master Loot|| Best Price!!!
+	"wts.*valor.*lootrun.*mount.*mythic.*glory", --WTS: |=TRIALS OF VALOR N/HC=|=KARAZHAN Lootrun+Mount=|=Mythic+ Dungeons=|=Glory of the Legion Hero=|W/me!!!
 
 	--[[ Chinese ]]--
 	"ok4gold.*skype", --纯手工100-110升级█翡翠英雄团█5M代刷 大秘境2-10层（橙装代刷）█代刷神器点数 解锁神器第三槽█金币20刀=10w█微信ok4gold█QQ或微信549965838█skype；gold4oks█微信ok4gold█v
@@ -561,28 +565,30 @@ local instantReportList = {
 	"100110.*q228102174", --100-110纯手工升级低价热卖，无敌飞机头 ，星光龙热卖1-2周保证拿到，，翡翠梦魇普通包团毕业火热销售中,职业大厅，神器点数，神器解锁三插槽 [，金币大量QQ228102174,微信894580231。skype.raulten1234]
 	"style.*[235]v[235].*%d+usd.*神器点数", --style公会团强力销售荣誉等级50解锁，3v3奖励马鞍，金币26USD包拍卖行手续费=秒发=库存200W 手工任务100-110练级8910层大秘境拿低保2-3层无限刷橙子和神器点数需要的MMMMM
 	"style.*强力销售.*%d+lvl.*100110", --style公会团强力销售825等级英雄5人本毕业840LVL史诗5人本毕业英雄史诗翡翠865 880+装备，手工100-110等级加神器任务和大秘境代打欢迎预定
-	"苏拉玛声望.*欢迎咨询购买", --苏拉玛声望尊敬要塞科技第六层，解锁橙色物品（可以多带一个橙色装备），包含解锁神器第三插槽世界任务大秘境2-3层3箱子无限刷包橙业务，欢迎咨询购买
-	"毕业定制神器.*t3.*就龙坐骑.*低价坐骑", --H，M翡翠梦魇包团加支持自己上号毕业定制 神器维护加绝版坐骑T3黑市代秒各种版本成就龙坐骑，大秘境高层2-3层3箱子无限刷，卡牌坐骑 ，各种最低价坐骑控MM
 	"100110.*苏拉玛任务.*星空龙", --纯手工90-100-110任务升级（任务全做，开启声望）。苏拉玛任务11/8。神器三插槽。荣誉50等级~（送邪气鞍座）。军团6大声望 [~手工金币30刀十万，现货秒发。200MB=10万.星空龙~无敌] 飞机头 1-2CD必出
 	"小母牛热卖金币.*包毕业.*稀有坐骑", --小母牛热卖金币29刀 =10w，人民币169.幽灵虎现货。纯手工等级，各类任务代*练。2-10层大秘境代刷。翡翠梦境H，M包团，包毕业。另有黑市坐骑，星光龙，祖格虎，稀有坐骑，水母，失落角鹰兽等
 	"qq.*17788955341", --特价Six-Feather Fan-,六禽羽扇855/860特价,179RMB=10万,99刀=40万--11层大秘境《刷橙》,翡翠英雄团,KLZ梦魇龙,成就声望另售幽灵虎微信/QQ: 17788955341
 	--小号代练--翡翠英雄本特价大秘镜3箱(橙装代刷),苏拉玛任务，堕落精灵声望，神器点代刷，解锁神器第三插槽,金币169=10万需要微信17788955341
 	"金.*17788955341", --出售[Reins of the Swift Spectral Tiger].,.金币179RMB=10W,899RMB=500K.QQ微信17788955341
 	"qq.*1433535628", --N/H翡翠梦境包团毕业， 大秘境（刷箱子刷橙装 ）， 地下城， 荣誉解锁送神器点数 ，装绑装备和材料以及各种坐骑， 金币和飞行解锁。欢迎咨询QQ:1433535628  skype：forgotmylove
-	"大酋长团队.*q1292706134", --大酋长团队 接大秘境维护1-10层，低层三箱刷橙，团本毕业，等级100-110，需要的加QQQ1292706134
+	--低层三箱刷橙 10层低保，新开11层12层低保 KLZ梦魇坐骑和全通 需要的加Q 1292706134
+	"低层三.*q1292706134", --大酋长团队 接大秘境维护1-10层，低层三箱刷橙，团本毕业，等级100-110，需要的加QQQ1292706134
 	"金币.*sesegold", --特价大小老虎,鸡蛋军马各TCG长期供货,金币169RMB=10万,98-110等级代练,大秘境保底,翡翠梦境H/M包团,5M代刷套餐特价-需要微信sesegold
 	"%d+.*万金.*支付宝", --100人民币=10万金，有30，个人出售，支付宝微信，骗子移步
 	"qq.*2278048179", --特价[Six-Feather Fan]850等级 金币32刀 10万 现货秒发。。大小老虎卡牌坐骑。 十年信誉品牌 欢迎咨询 QQ: 2278048179
 	"金.*778587316", --亲，出售金币,10w29刀，-专业快速代练100-110 纯任务升级**苏拉吗9/11,解锁世界任务，神器三槽，，代练声望，翡翠梦境包团，重返卡拉赞+梦之魇坐骑，pvp邪气鞍座等微信：mia11125 Q778587316
 	"100110.*送坐骑.*tiger", --100-110级纯手工练级------G币28刀十万,现货秒发；荣誉等级(送坐骑），大秘境刷箱子（橙装掉率很高），翡翠梦境团本，大小tiger坐骑有需要的M我
 	"100110.*币.*幽灵虎", --纯手工100-110升级    G币20刀十万    翡翠英雄团 5M代刷 大秘境2-10层（橙装掉率很高） 卡拉赞前置任务代做 卡拉赞副本通关 代刷神器点数 解锁神器第三槽 苏拉码任务8/11  大小幽灵虎，有需要的M
-	"^marine.*人在秒回", --Marine5人本类业务，卡拉赞，5Mx10 大秘境10层低保ilvl880 及大秘境15层幻化解锁-----人在秒回
+	"^marine.*在秒回", --Marine5人本类业务，卡拉赞，5Mx10 大秘境10层低保ilvl880 及大秘境15层幻化解锁-----人在秒回
 	"881.*安全便宜快速.*ip", --881装等双橙大号出售自营AH绿色G，安全便宜快速，非工作室黑G，北美IP交易，买G最重要就是安全！全场最低 要的速M 人在就10分钟！
 	"特价出售黄金.*稀有坐骑", --特价出售黄金，等级代练纯手工，荣誉等级(送坐骑），大秘境刷箱子（橙装掉率很高），翡翠梦境团本，稀有坐骑有需要的MMMMMMM
 	"200万手工金币.*paypal", --→→活动促销200万手工金币2.8刀1万 低价甩~ 买的多还送坐骑 安全 效率 要的老板密→支持淘宝、paypal 多种付款 薄利多销 另售卡牌坐骑 承接各种代练
 	"qq.*153874069", --华哥超低黄金27刀10万安全效率 大小幽灵虎坐骑请咨询 承接各种代练 支持淘宝、paypal 多种付款+微信QQ：153874069
 	"特价出售黄金.*tcg", --特价出售黄金，各种TCG坐骑，都是仓库现货，另售剑灵金币，保证全场最低，承接各种代练，欢迎咨询
 	"练级.*bearwow[,.]com", --承接WOW 100-110练级、大秘境、卡拉赞、世界任务、神器外观、神器第三槽解锁等,纯手工，市场最低价，请登陆网站：w w w.bearwow.c o m
+	"100110.*手工金币.*%d+mb=%d+", --绝对纯手工100-110任务升级（任务全做，开启声望）。苏拉玛任务11/8。神器三插槽。荣誉50等级~（送邪气鞍座）。军团6大声望 ~手工金币26刀十万，现货秒发。170MB=10万
+	"出售特价金.*双11金币大甩卖", --出售特价金  20 for 100K    11.11    11.11 出售特价金  20 for 100K    11.11    11.11    11.11出售特价金  20 for 100K    双11金币大甩卖，需要的M  11.11    11.11 出售特价金 11.11
+	"特价出售金.*稀有坐骑", --特价出售金25for100K，等级代练纯手工，神器点数，荣誉等级(送坐骑），大秘境刷箱子（橙装掉率很高），翡翠梦境团本，稀有坐骑等等业务，需要的mmmmmm
 
 	--[[  Spanish  ]]--
 	"oro.*tutiendawow.*barato", --¿Todavía sin tu prepago actualizada? ¡CÓMPRALA POR ORO EN WWW.TUTIENDAWOW.COM! ¡PRECIOS ANTICRISIS! ¡65KS 60 DÍAS! Visita nuestra web y accede a nuestro CHAT EN VIVO. ENTREGAS INMEDIATAS. MAS BARATO QUE FICHA WOW.
@@ -595,7 +601,7 @@ local instantReportList = {
 
 	--[[ Danish ]]--
 	"^sælgerguldfor%d+", --sælger guld for 170kr pr. 100k (w for andre servere)
-	"^sælgerguld.*mobilepay", --Sælger guld, forgår over mobile pay, 100k - 150 kr
+	"^sælgerg[ou]ld.*mobilepay", --Sælger guld, forgår over mobile pay, 100k - 150 kr
 	"tilbud.*sælger%d+k.*mobilepay", --Dagens tilbud: Sælger 200 K for blot 280 kr - whisper for mere info: Mobilepay & Swipp
 	"^sælgerguld.*skype", --Sælger guld 20k 33kr og 100k til 149kr, skype ...
 	"sælgerlidtguld.*mobilepay", --Hej, jeg sælger lidt guld via. mobilepay. Tilbud : 100k for 150kr , 250k for 350kr - Skriv for mere info. :)
@@ -621,6 +627,8 @@ local instantReportList = {
 	"^guldviaswish", --Guld via swish /w :)
 	"^guld%d+k.*kr.*skype", --Guld 20k til 30kr og 100k til 129kr, skype
 	"^saljerviaswish", --Säljer via swish /w vid Intresse
+	"^gfinnsswish$", --g finns swish
+	"^gfinnsbilligt$", --g finns billigt
 
 	--[[ German ]]--
 	"besten.*skype.*sarmael.*coaching", --[Melk Trupp]Der Marktführer kanns einfach am Besten, nun sogar als aktueller Blizzconsieger! Melde Dich bei mir im Skype:Sarmael123456 und überzeuge Dich selbst! Ob Arena, Dungeons, Coachings oder Raids-Bei uns bekommst du jede Hilfe, die Du benötigst!
@@ -637,7 +645,7 @@ local instantReportList = {
 local repTbl = {
 	--Symbol & space removal
 	["[%*%-%(%)\"!`'_%+#%%%^&;:~{} ]"]="",
-	["¨"]="", ["”"]="", ["“"]="", ["█"]="", ["▓"]="", ["▲"]="", ["◄"]="", ["►"]="", ["▼"]="", ["♥"]="", ["♫"]="", ["●"]="", ["■"]="", ["☼"]="", ["¤"]="", ["☺"]="", ["↑"]="",
+	["¨"]="", ["”"]="", ["“"]="", ["█"]="", ["▓"]="", ["▲"]="", ["◄"]="", ["►"]="", ["▼"]="", ["♥"]="", ["♫"]="", ["●"]="", ["■"]="", ["☼"]="", ["¤"]="", ["☺"]="", ["↑"]="", ["«"]="", ["»"]="",
 
 	--This is the replacement table. It serves to deobfuscate words by replacing letters with their English "equivalents".
 	["а"]="a", ["à"]="a", ["á"]="a", ["ä"]="a", ["â"]="a", ["ã"]="a", ["å"]="a", ["Ą"]="a", ["ą"]="a", --First letter is Russian "\208\176". Convert > \97. Note: Ą fail with strlower, include both.
@@ -878,17 +886,21 @@ do
 			prevShow = GetTime() -- Refresh throttle so we don't risk showing again straight after reporting
 			self:GetParent():Hide()
 
-			local chat = ChatFrame1:IsEventRegistered("CHAT_MSG_SYSTEM")
-			if chat then
-				ChatFrame1:UnregisterEvent("CHAT_MSG_SYSTEM")
+			local systemMsg = {GetFramesRegisteredForEvent("CHAT_MSG_SYSTEM")} -- Don't show the "Complaint Registered" message
+			local infoMsg = {GetFramesRegisteredForEvent("UI_INFO_MESSAGE")} -- Don't show the "Thanks for the report" message
+			local calendarError = {GetFramesRegisteredForEvent("CALENDAR_UPDATE_ERROR")} -- Remove calendar error popup (Blizz bug)
+			local reportSubmit = {GetFramesRegisteredForEvent("PLAYER_REPORT_SUBMITTED")} -- Fix clearing chat that shouldn't be cleared (Blizz bug)
+			for i = 1, #systemMsg do
+				systemMsg[i]:UnregisterEvent("CHAT_MSG_SYSTEM")
 			end
-			local err = UIErrorsFrame:IsEventRegistered("UI_INFO_MESSAGE")
-			if err then
-				UIErrorsFrame:UnregisterEvent("UI_INFO_MESSAGE")
+			for i = 1, #infoMsg do
+				infoMsg[i]:UnregisterEvent("UI_INFO_MESSAGE")
 			end
-			local cal = CalendarFrame and CalendarFrame:IsEventRegistered("CALENDAR_UPDATE_ERROR")
-			if cal then
-				CalendarFrame:UnregisterEvent("CALENDAR_UPDATE_ERROR") -- Remove calendar error popup
+			for i = 1, #calendarError do
+				calendarError[i]:UnregisterEvent("CALENDAR_UPDATE_ERROR")
+			end
+			for i = 1, #reportSubmit do
+				reportSubmit[i]:UnregisterEvent("PLAYER_REPORT_SUBMITTED")
 			end
 
 			for k, v in next, spamCollector do
@@ -900,21 +912,24 @@ do
 				spamLogger[k] = nil
 			end
 
-			if chat then
-				ChatFrame1:RegisterEvent("CHAT_MSG_SYSTEM")
+			for i = 1, #systemMsg do
+				systemMsg[i]:RegisterEvent("CHAT_MSG_SYSTEM")
 			end
-			if err then
-				UIErrorsFrame:RegisterEvent("UI_INFO_MESSAGE")
+			for i = 1, #infoMsg do
+				infoMsg[i]:RegisterEvent("UI_INFO_MESSAGE")
 			end
-			if cal then
+			for i = 1, #calendarError do
 				-- There's a delay before the event fires
-				C_Timer.After(5, function() CalendarFrame:RegisterEvent("CALENDAR_UPDATE_ERROR") end)
+				C_Timer.After(5, function() calendarError[i]:RegisterEvent("CALENDAR_UPDATE_ERROR") end)
+			end
+			for i = 1, #reportSubmit do
+				reportSubmit[i]:RegisterEvent("PLAYER_REPORT_SUBMITTED")
 			end
 		end
 	end)
 	reportFrame:SetScript("OnEnter", function(self)
 		GameTooltip:SetOwner(self, "ANCHOR_CURSOR")
-		GameTooltip:AddLine("BadBoy: ".. L.spamBlocked, 1, 1, 1)
+		GameTooltip:AddLine(L.spamBlocked, 1, 1, 1)
 		GameTooltip:AddLine(L.clickToReport, 1, 1, 1)
 		if next(spamLogger) then
 			GameTooltip:AddLine(" ", 0.5, 0.5, 1)
