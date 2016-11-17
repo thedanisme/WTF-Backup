@@ -211,5 +211,5 @@ DejaCharacterStats: enabled
 Details_RaidInfo-EmeraldNightmare: disabled
 Details_RaidInfo-Nighthold: disabled
 HandyNotes_SuramarTelemancy: enabled
-PersonalLootHelper: disabled
+PersonalLootHelper: enabled
 ElvUI_SLE: enabled

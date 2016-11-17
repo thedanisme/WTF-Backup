@@ -13,13 +13,13 @@ _detalhes_database = {
 		["reverse"] = false,
 	},
 	["active_profile"] = "Emmarosa-Stormrage",
-	["last_day"] = "15",
+	["last_day"] = "16",
 	["ignore_nicktag"] = false,
 	["tabela_historico"] = {
 		["tabelas"] = {
 			{
 				{
-					["combatId"] = 93,
+					["combatId"] = 130,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
@@ -27,44 +27,45 @@ _detalhes_database = {
 							["damage_from"] = {
 							},
 							["targets"] = {
-								["Feltotem Warmonger"] = 902598,
+								["Snowfeather Nest-Keeper"] = 280965,
+								["Young Snowfeather"] = 84946,
 							},
 							["pets"] = {
-								"Vanessa VanCleef <Emmarosa>", -- [1]
 							},
 							["on_hold"] = false,
 							["classe"] = "ROGUE",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 801340.006489,
+							["total_without_pet"] = 365911.004245,
 							["colocacao"] = 1,
 							["friendlyfire"] = {
 							},
 							["dps_started"] = false,
-							["end_time"] = 1479265931,
+							["end_time"] = 1479323035,
 							["friendlyfire_total"] = 0,
-							["spec"] = 259,
+							["spec"] = 260,
 							["nome"] = "Emmarosa",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
-										["c_amt"] = 2,
+										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["c_dmg"] = 54853,
+										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 15419,
+										["n_max"] = 23491,
 										["targets"] = {
-											["Feltotem Warmonger"] = 116737,
+											["Snowfeather Nest-Keeper"] = 23491,
+											["Young Snowfeather"] = 0,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 61884,
-										["n_min"] = 8006,
+										["n_dmg"] = 23491,
+										["n_min"] = 23491,
 										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 116737,
-										["c_max"] = 38427,
-										["MISS"] = 2,
+										["counter"] = 2,
+										["total"] = 23491,
+										["c_max"] = 0,
+										["MISS"] = 1,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -74,85 +75,28 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 5,
+										["n_amt"] = 1,
 										["r_amt"] = 0,
-										["c_min"] = 16426,
+										["c_min"] = 0,
 									}, -- [1]
-									[32645] = {
-										["c_amt"] = 0,
+									[185763] = {
+										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 0,
+										["c_dmg"] = 84946,
 										["g_amt"] = 0,
-										["n_max"] = 286652,
+										["n_max"] = 42473,
 										["targets"] = {
-											["Feltotem Warmonger"] = 286652,
+											["Snowfeather Nest-Keeper"] = 84946,
+											["Young Snowfeather"] = 84946,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 286652,
-										["n_min"] = 286652,
+										["n_dmg"] = 84946,
+										["n_min"] = 42473,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 286652,
-										["c_max"] = 0,
-										["id"] = 32645,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[27576] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 29449,
-										["targets"] = {
-											["Feltotem Warmonger"] = 29449,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 29449,
-										["n_min"] = 29449,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 29449,
-										["c_max"] = 0,
-										["id"] = 27576,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[51723] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 24890,
-										["targets"] = {
-											["Feltotem Warmonger"] = 46640,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 46640,
-										["n_min"] = 21750,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 46640,
-										["c_max"] = 0,
-										["id"] = 51723,
+										["counter"] = 3,
+										["total"] = 169892,
+										["c_max"] = 84946,
+										["id"] = 185763,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
@@ -163,85 +107,27 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
 										["r_amt"] = 0,
-										["c_min"] = 0,
+										["c_min"] = 84946,
 									},
-									[5374] = {
+									[2098] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 52025,
+										["n_max"] = 172528,
 										["targets"] = {
-											["Feltotem Warmonger"] = 52025,
+											["Snowfeather Nest-Keeper"] = 172528,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 52025,
-										["n_min"] = 52025,
+										["n_dmg"] = 172528,
+										["n_min"] = 172528,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 52025,
+										["total"] = 172528,
 										["c_max"] = 0,
-										["id"] = 5374,
+										["id"] = 2098,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[703] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 77581,
-										["g_amt"] = 0,
-										["n_max"] = 47829,
-										["targets"] = {
-											["Feltotem Warmonger"] = 208809,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 131228,
-										["n_min"] = 38790,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 208809,
-										["c_max"] = 77581,
-										["id"] = 703,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 77581,
-									},
-									[191259] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 61028,
-										["targets"] = {
-											["Feltotem Warmonger"] = 61028,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 61028,
-										["n_min"] = 61028,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 61028,
-										["c_max"] = 0,
-										["id"] = 191259,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
@@ -255,154 +141,57 @@ _detalhes_database = {
 								},
 							},
 							["grupo"] = true,
-							["total"] = 902598.006489,
+							["total"] = 365911.004245,
 							["serial"] = "Player-60-0A91880D",
-							["last_dps"] = 90259.8006489,
+							["last_dps"] = 36591.1004245,
 							["custom"] = 0,
-							["last_event"] = 1479265930,
-							["damage_taken"] = 0.006489,
-							["start_time"] = 1479265922,
+							["last_event"] = 1479323033,
+							["damage_taken"] = 0.004245,
+							["start_time"] = 1479323029,
 							["delay"] = 0,
 							["tipo"] = 1,
 						}, -- [1]
-						{
-							["flag_original"] = 8465,
-							["serial"] = "Creature-0-3782-1220-21568-111254-00002BCD59",
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Feltotem Warmonger"] = 101258,
-							},
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 101258.008927,
-							["dps_started"] = false,
-							["total"] = 101258.008927,
-							["classe"] = "PET",
-							["ownerName"] = "Emmarosa",
-							["nome"] = "Vanessa VanCleef <Emmarosa>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 7186,
-										["g_amt"] = 0,
-										["n_max"] = 3593,
-										["targets"] = {
-											["Feltotem Warmonger"] = 19762,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 12576,
-										["n_min"] = 1796,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 19762,
-										["c_max"] = 7186,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["r_amt"] = 0,
-										["c_min"] = 7186,
-									}, -- [1]
-									[221512] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 53333,
-										["g_amt"] = 0,
-										["n_max"] = 28163,
-										["targets"] = {
-											["Feltotem Warmonger"] = 81496,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 28163,
-										["n_min"] = 28163,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 81496,
-										["c_max"] = 53333,
-										["id"] = 221512,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 53333,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["end_time"] = 1479265931,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.008927,
-							["start_time"] = 1479265923,
-							["delay"] = 0,
-							["last_event"] = 1479265929,
-						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 93,
+					["combatId"] = 130,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorb"] = 0.006051,
+							["totalabsorb"] = 0.00679,
 							["last_hps"] = 0,
-							["targets_overheal"] = {
+							["healing_from"] = {
 							},
 							["targets"] = {
-								["Emmarosa"] = 10717,
 							},
-							["last_event"] = 1479265931,
 							["pets"] = {
-								"Vanessa VanCleef <Emmarosa>", -- [1]
 							},
-							["iniciar_hps"] = false,
-							["healing_from"] = {
-								["Emmarosa"] = true,
-							},
-							["classe"] = "ROGUE",
-							["totalover"] = 156.006051,
-							["total_without_pet"] = 10717.006051,
-							["heal_enemy_amt"] = 0,
-							["totalover_without_pet"] = 0.006051,
-							["fight_component"] = true,
-							["end_time"] = 1479265931,
-							["healing_taken"] = 10717.006051,
+							["totalover_without_pet"] = 0.00679,
 							["serial"] = "Player-60-0A91880D",
-							["nome"] = "Emmarosa",
-							["spec"] = 259,
-							["grupo"] = true,
-							["total"] = 10717.006051,
-							["heal_enemy"] = {
+							["healing_taken"] = 0.00679,
+							["totalover"] = 96776.00679,
+							["total_without_pet"] = 0.00679,
+							["targets_overheal"] = {
+								["Emmarosa"] = 96776,
 							},
+							["heal_enemy_amt"] = 0,
+							["iniciar_hps"] = false,
+							["total"] = 0.00679,
+							["classe"] = "ROGUE",
+							["last_event"] = 1479323033,
+							["nome"] = "Emmarosa",
 							["targets_absorbs"] = {
 							},
+							["grupo"] = true,
+							["end_time"] = 1479323035,
+							["heal_enemy"] = {
+							},
+							["spec"] = 260,
 							["custom"] = 0,
 							["tipo"] = 2,
 							["on_hold"] = false,
-							["start_time"] = 1479265922,
+							["start_time"] = 1479323029,
 							["delay"] = 0,
 							["spells"] = {
 								["tipo"] = 3,
@@ -411,1776 +200,15 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
-										},
-										["n_max"] = 5406,
-										["targets"] = {
-											["Emmarosa"] = 10717,
-										},
-										["n_min"] = 210,
-										["counter"] = 8,
-										["overheal"] = 0,
-										["total"] = 10717,
-										["c_max"] = 0,
-										["id"] = 143924,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 10717,
-										["m_healed"] = 0,
-										["n_amt"] = 8,
-										["absorbed"] = 0,
-									},
-								},
-							},
-						}, -- [1]
-						{
-							["flag_original"] = 8465,
-							["totalabsorb"] = 0.005489,
-							["last_hps"] = 0,
-							["healing_from"] = {
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["totalover_without_pet"] = 0.005489,
-							["classe"] = "PET",
-							["healing_taken"] = 0.005489,
-							["totalover"] = 156.005489,
-							["total_without_pet"] = 0.005489,
-							["targets_overheal"] = {
-								["Vanessa VanCleef <Emmarosa>"] = 156,
-							},
-							["last_event"] = 1479265926,
-							["iniciar_hps"] = false,
-							["total"] = 0.005489,
-							["heal_enemy_amt"] = 0,
-							["ownerName"] = "Emmarosa",
-							["nome"] = "Vanessa VanCleef <Emmarosa>",
-							["targets_absorbs"] = {
-							},
-							["end_time"] = 1479265931,
-							["heal_enemy"] = {
-							},
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[143924] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Vanessa VanCleef <Emmarosa>"] = 156,
-										},
-										["n_max"] = 0,
-										["targets"] = {
-											["Vanessa VanCleef <Emmarosa>"] = 0,
-										},
-										["n_min"] = 0,
-										["counter"] = 1,
-										["overheal"] = 156,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 143924,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 0,
-										["m_healed"] = 0,
-										["n_amt"] = 1,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["custom"] = 0,
-							["tipo"] = 2,
-							["on_hold"] = false,
-							["start_time"] = 1479265926,
-							["delay"] = 0,
-							["serial"] = "Creature-0-3782-1220-21568-111254-00002BCD59",
-						}, -- [2]
-					},
-				}, -- [2]
-				{
-					["combatId"] = 93,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 93,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[703] = {
-										["uptime"] = 9,
-										["activedamt"] = 1,
-										["id"] = 703,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[1330] = {
-										["uptime"] = 9,
-										["activedamt"] = 1,
-										["id"] = 1330,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 63,
-							["classe"] = "ROGUE",
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[188741] = {
-										["uptime"] = 9,
-										["activedamt"] = 1,
-										["id"] = 188741,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[3408] = {
-										["uptime"] = 9,
-										["activedamt"] = 1,
-										["id"] = 3408,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[32645] = {
-										["uptime"] = 0,
-										["activedamt"] = 0,
-										["id"] = 32645,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[176151] = {
-										["uptime"] = 9,
-										["activedamt"] = 1,
-										["id"] = 176151,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[200802] = {
-										["uptime"] = 9,
-										["activedamt"] = 1,
-										["id"] = 200802,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[224189] = {
-										["uptime"] = 9,
-										["activedamt"] = 1,
-										["id"] = 224189,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[193641] = {
-										["uptime"] = 0,
-										["activedamt"] = 0,
-										["id"] = 193641,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[224186] = {
-										["uptime"] = 9,
-										["activedamt"] = 1,
-										["id"] = 224186,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[186401] = {
-										["uptime"] = 9,
-										["activedamt"] = 1,
-										["id"] = 186401,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-								},
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 18,
-							["buff_uptime_targets"] = {
-							},
-							["spec"] = 259,
-							["grupo"] = true,
-							["spell_cast"] = {
-								[1329] = 1,
-								[27576] = 1,
-								[51723] = 1,
-								[32645] = 1,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["last_event"] = 1479265931,
-							["nome"] = "Emmarosa",
-							["pets"] = {
-								"Vanessa VanCleef <Emmarosa>", -- [1]
-							},
-							["serial"] = "Player-60-0A91880D",
-							["tipo"] = 4,
-						}, -- [1]
-						{
-							["flag_original"] = 8465,
-							["ownerName"] = "Emmarosa",
-							["nome"] = "Vanessa VanCleef <Emmarosa>",
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["tipo"] = 4,
-							["spell_cast"] = {
-								[221792] = 1,
-								[221512] = 2,
-							},
-							["serial"] = "Creature-0-3782-1220-21568-111254-00002BCD59",
-							["last_event"] = 0,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 93,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Emmarosa"] = true,
-				},
-				["last_events_tables"] = {
-				},
-				["enemy"] = "Feltotem Warmonger",
-				["combat_counter"] = 6046,
-				["playing_solo"] = true,
-				["totals"] = {
-					902597.95218, -- [1]
-					10717, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Emmarosa"] = 10717.006051,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Emmarosa"] = 902598.006489,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 611678.272,
-				["combat_id"] = 93,
-				["instance_type"] = "none",
-				["frags"] = {
-					["Feltotem Warmonger"] = 2,
-				},
-				["data_fim"] = "22:12:12",
-				["data_inicio"] = "22:12:03",
-				["CombatSkillCache"] = {
-				},
-				["totals_grupo"] = {
-					801340, -- [1]
-					10717, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["start_time"] = 611669.582,
-				["contra"] = "Feltotem Warmonger",
-				["TimeData"] = {
-				},
-			}, -- [1]
-			{
-				{
-					["combatId"] = 92,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["damage_from"] = {
-								["Bloodtotem Ancestor"] = true,
-							},
-							["targets"] = {
-								["Feltotem Warmonger"] = 478255,
-								["Bloodtotem Ancestor"] = 70715,
-								["Taurnash the Heretic"] = 5653846,
-							},
-							["pets"] = {
-								"Vanessa VanCleef <Emmarosa>", -- [1]
-							},
-							["total"] = 6202816.005797,
-							["on_hold"] = false,
-							["classe"] = "ROGUE",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 5914476.005797,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1479265910,
-							["friendlyfire_total"] = 0,
-							["spec"] = 259,
-							["nome"] = "Emmarosa",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 10,
-										["b_amt"] = 0,
-										["c_dmg"] = 285633,
-										["g_amt"] = 0,
-										["n_max"] = 26259,
-										["targets"] = {
-											["Taurnash the Heretic"] = 462262,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 176629,
-										["n_min"] = 8035,
-										["g_dmg"] = 0,
-										["counter"] = 23,
-										["total"] = 462262,
-										["c_max"] = 44778,
-										["MISS"] = 2,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 11,
-										["r_amt"] = 0,
-										["c_min"] = 14826,
-									}, -- [1]
-									[191259] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 118002,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Taurnash the Heretic"] = 118002,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 118002,
-										["c_max"] = 118002,
-										["id"] = 191259,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 118002,
-									},
-									[5374] = {
-										["c_amt"] = 4,
-										["b_amt"] = 0,
-										["c_dmg"] = 607275,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Taurnash the Heretic"] = 607275,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 607275,
-										["c_max"] = 181465,
-										["id"] = 5374,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 122692,
-									},
-									[185565] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 70741,
-										["g_amt"] = 0,
-										["n_max"] = 14912,
-										["targets"] = {
-											["Taurnash the Heretic"] = 56714,
-											["Feltotem Warmonger"] = 42728,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 28701,
-										["n_min"] = 13789,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 99442,
-										["c_max"] = 42925,
-										["id"] = 185565,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 27816,
-									},
-									[32645] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 436202,
-										["targets"] = {
-											["Taurnash the Heretic"] = 823582,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 823582,
-										["n_min"] = 387380,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 823582,
-										["c_max"] = 0,
-										["id"] = 32645,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[51723] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 28138,
-										["targets"] = {
-											["Taurnash the Heretic"] = 28138,
-											["Bloodtotem Ancestor"] = 43500,
-											["Feltotem Warmonger"] = 24890,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 96528,
-										["n_min"] = 21750,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 96528,
-										["c_max"] = 0,
-										["id"] = 51723,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 4,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[703] = {
-										["c_amt"] = 3,
-										["b_amt"] = 0,
-										["c_dmg"] = 272610,
-										["g_amt"] = 0,
-										["n_max"] = 64735,
-										["targets"] = {
-											["Taurnash the Heretic"] = 798185,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 525575,
-										["n_min"] = 37528,
-										["g_dmg"] = 0,
-										["counter"] = 14,
-										["total"] = 798185,
-										["c_max"] = 99982,
-										["id"] = 703,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 11,
-										["r_amt"] = 0,
-										["c_min"] = 86314,
-									},
-									[1943] = {
-										["c_amt"] = 4,
-										["b_amt"] = 0,
-										["c_dmg"] = 849277,
-										["g_amt"] = 0,
-										["n_max"] = 137259,
-										["targets"] = {
-											["Taurnash the Heretic"] = 1637688,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 788411,
-										["n_min"] = 75677,
-										["g_dmg"] = 0,
-										["counter"] = 12,
-										["total"] = 1637688,
-										["c_max"] = 274519,
-										["id"] = 1943,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 8,
-										["r_amt"] = 0,
-										["c_min"] = 151354,
-									},
-									[227870] = {
-										["c_amt"] = 4,
-										["b_amt"] = 0,
-										["c_dmg"] = 532240,
-										["g_amt"] = 0,
-										["n_max"] = 87050,
-										["targets"] = {
-											["Taurnash the Heretic"] = 724379,
-											["Feltotem Warmonger"] = 372485,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 564624,
-										["n_min"] = 55530,
-										["g_dmg"] = 0,
-										["counter"] = 12,
-										["total"] = 1096864,
-										["c_max"] = 140157,
-										["id"] = 227870,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 8,
-										["r_amt"] = 0,
-										["c_min"] = 126026,
-									},
-									[27576] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 56236,
-										["g_amt"] = 0,
-										["n_max"] = 47453,
-										["targets"] = {
-											["Taurnash the Heretic"] = 174648,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 118412,
-										["n_min"] = 30823,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 174648,
-										["c_max"] = 56236,
-										["id"] = 27576,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 56236,
-									},
-								},
-							},
-							["grupo"] = true,
-							["serial"] = "Player-60-0A91880D",
-							["last_dps"] = 213890.207096448,
-							["custom"] = 0,
-							["last_event"] = 1479265909,
-							["damage_taken"] = 382969.005797,
-							["start_time"] = 1479265881,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 8465,
-							["serial"] = "Creature-0-3782-1220-21568-111254-00002BCD59",
-							["damage_from"] = {
-								["Bloodtotem Ancestor"] = true,
-							},
-							["targets"] = {
-								["Feltotem Warmonger"] = 38152,
-								["Bloodtotem Ancestor"] = 27215,
-								["Taurnash the Heretic"] = 222973,
-							},
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 288340.003879,
-							["dps_started"] = false,
-							["total"] = 288340.003879,
-							["classe"] = "PET",
-							["ownerName"] = "Emmarosa",
-							["nome"] = "Vanessa VanCleef <Emmarosa>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 8,
-										["b_amt"] = 0,
-										["c_dmg"] = 49667,
-										["g_amt"] = 0,
-										["n_max"] = 3821,
-										["targets"] = {
-											["Taurnash the Heretic"] = 76411,
-											["Feltotem Warmonger"] = 3593,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 30337,
-										["n_min"] = 1796,
-										["g_dmg"] = 0,
-										["counter"] = 23,
-										["total"] = 80004,
-										["c_max"] = 7642,
-										["MISS"] = 3,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 12,
-										["r_amt"] = 0,
-										["c_min"] = 3820,
-									}, -- [1]
-									[221512] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 109088,
-										["g_amt"] = 0,
-										["n_max"] = 30238,
-										["targets"] = {
-											["Feltotem Warmonger"] = 27755,
-											["Taurnash the Heretic"] = 139326,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 57993,
-										["n_min"] = 27755,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 167081,
-										["c_max"] = 54978,
-										["id"] = 221512,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 54110,
-									},
-									[221515] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 27215,
-										["g_amt"] = 0,
-										["n_max"] = 7236,
-										["targets"] = {
-											["Feltotem Warmonger"] = 6804,
-											["Bloodtotem Ancestor"] = 27215,
-											["Taurnash the Heretic"] = 7236,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 14040,
-										["n_min"] = 6804,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 41255,
-										["c_max"] = 13608,
-										["id"] = 221515,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 13607,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["end_time"] = 1479265910,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 19306.003879,
-							["start_time"] = 1479265882,
-							["delay"] = 0,
-							["last_event"] = 1479265906,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 92,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorb"] = 0.004245,
-							["last_hps"] = 0,
-							["healing_from"] = {
-								["Emmarosa"] = true,
-							},
-							["targets"] = {
-								["Emmarosa"] = 45316,
-								["Vanessa VanCleef <Emmarosa>"] = 2563,
-							},
-							["targets_absorbs"] = {
-							},
-							["pets"] = {
-								"Vanessa VanCleef <Emmarosa>", -- [1]
-							},
-							["totalover_without_pet"] = 0.004245,
-							["targets_overheal"] = {
-								["Emmarosa"] = 35750,
-							},
-							["classe"] = "ROGUE",
-							["totalover"] = 36840.004245,
-							["total_without_pet"] = 45316.004245,
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["fight_component"] = true,
-							["total"] = 47879.004245,
-							["healing_taken"] = 45316.004245,
-							["end_time"] = 1479265910,
-							["nome"] = "Emmarosa",
-							["spec"] = 259,
-							["grupo"] = true,
-							["last_event"] = 1479265909,
-							["heal_enemy"] = {
-							},
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[143924] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Emmarosa"] = 35750,
-										},
-										["n_max"] = 7646,
-										["targets"] = {
-											["Emmarosa"] = 45316,
-										},
-										["n_min"] = 621,
-										["counter"] = 23,
-										["overheal"] = 35750,
-										["total"] = 45316,
-										["c_max"] = 0,
-										["id"] = 143924,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 45316,
-										["m_healed"] = 0,
-										["n_amt"] = 23,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["custom"] = 0,
-							["tipo"] = 2,
-							["on_hold"] = false,
-							["start_time"] = 1479265882,
-							["serial"] = "Player-60-0A91880D",
-							["delay"] = 0,
-						}, -- [1]
-						{
-							["flag_original"] = 8465,
-							["totalabsorb"] = 0.003883,
-							["last_hps"] = 0,
-							["healing_from"] = {
-								["Vanessa VanCleef <Emmarosa>"] = true,
-							},
-							["targets"] = {
-								["Vanessa VanCleef <Emmarosa>"] = 2563,
-							},
-							["heal_enemy_amt"] = 0,
-							["pets"] = {
-							},
-							["totalover_without_pet"] = 0.003883,
-							["targets_overheal"] = {
-								["Vanessa VanCleef <Emmarosa>"] = 1090,
-							},
-							["classe"] = "PET",
-							["totalover"] = 1090.003883,
-							["total_without_pet"] = 2563.003883,
-							["iniciar_hps"] = false,
-							["healing_taken"] = 2563.003883,
-							["fight_component"] = true,
-							["total"] = 2563.003883,
-							["serial"] = "Creature-0-3782-1220-21568-111254-00002BCD59",
-							["ownerName"] = "Emmarosa",
-							["nome"] = "Vanessa VanCleef <Emmarosa>",
-							["targets_absorbs"] = {
-							},
-							["end_time"] = 1479265910,
-							["last_event"] = 1479265905,
-							["heal_enemy"] = {
-							},
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[143924] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Vanessa VanCleef <Emmarosa>"] = 1090,
-										},
-										["n_max"] = 1856,
-										["targets"] = {
-											["Vanessa VanCleef <Emmarosa>"] = 2563,
-										},
-										["n_min"] = 707,
-										["counter"] = 5,
-										["overheal"] = 1090,
-										["total"] = 2563,
-										["c_max"] = 0,
-										["id"] = 143924,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 2563,
-										["m_healed"] = 0,
-										["n_amt"] = 5,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["custom"] = 0,
-							["tipo"] = 2,
-							["on_hold"] = false,
-							["start_time"] = 1479265884,
-							["delay"] = 0,
-						}, -- [2]
-					},
-				}, -- [2]
-				{
-					["combatId"] = 92,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 92,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[703] = {
-										["uptime"] = 29,
-										["activedamt"] = 1,
-										["id"] = 703,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[1330] = {
-										["uptime"] = 29,
-										["activedamt"] = 1,
-										["id"] = 1330,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 203,
-							["classe"] = "ROGUE",
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[188741] = {
-										["uptime"] = 29,
-										["activedamt"] = 1,
-										["id"] = 188741,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[3408] = {
-										["uptime"] = 29,
-										["activedamt"] = 1,
-										["id"] = 3408,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[32645] = {
-										["uptime"] = 0,
-										["activedamt"] = 0,
-										["id"] = 32645,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[176151] = {
-										["uptime"] = 29,
-										["activedamt"] = 1,
-										["id"] = 176151,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[200802] = {
-										["uptime"] = 29,
-										["activedamt"] = 1,
-										["id"] = 200802,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[224189] = {
-										["uptime"] = 29,
-										["activedamt"] = 1,
-										["id"] = 224189,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[193641] = {
-										["uptime"] = 0,
-										["activedamt"] = 0,
-										["id"] = 193641,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[224186] = {
-										["uptime"] = 29,
-										["activedamt"] = 1,
-										["id"] = 224186,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[186401] = {
-										["uptime"] = 29,
-										["activedamt"] = 1,
-										["id"] = 186401,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-								},
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 58,
-							["buff_uptime_targets"] = {
-							},
-							["spec"] = 259,
-							["grupo"] = true,
-							["spell_cast"] = {
-								[36554] = 1,
-								[1329] = 4,
-								[185565] = 4,
-								[32645] = 2,
-								[51723] = 1,
-								[27576] = 4,
-								[1766] = 1,
-								[703] = 1,
-								[1943] = 1,
-								[227870] = 12,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["last_event"] = 1479265910,
-							["nome"] = "Emmarosa",
-							["pets"] = {
-								"Vanessa VanCleef <Emmarosa>", -- [1]
-							},
-							["serial"] = "Player-60-0A91880D",
-							["tipo"] = 4,
-						}, -- [1]
-						{
-							["flag_original"] = 8465,
-							["ownerName"] = "Emmarosa",
-							["nome"] = "Vanessa VanCleef <Emmarosa>",
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["fight_component"] = true,
-							["tipo"] = 4,
-							["spell_cast"] = {
-								[221512] = 4,
-								[221792] = 1,
-								[221515] = 1,
-							},
-							["serial"] = "Creature-0-3782-1220-21568-111254-00002BCD59",
-							["last_event"] = 0,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 92,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Emmarosa"] = true,
-				},
-				["last_events_tables"] = {
-				},
-				["enemy"] = "Bloodtotem Ancestor",
-				["combat_counter"] = 6045,
-				["playing_solo"] = true,
-				["totals"] = {
-					6202815.974722, -- [1]
-					47878.995999, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Emmarosa"] = 47879.004245,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Emmarosa"] = 6202816.005797,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 611657.227,
-				["combat_id"] = 92,
-				["instance_type"] = "none",
-				["frags"] = {
-					["Feltotem Warmonger"] = 2,
-					["Taurnash the Heretic"] = 1,
-				},
-				["data_fim"] = "22:11:51",
-				["data_inicio"] = "22:11:22",
-				["CombatSkillCache"] = {
-				},
-				["totals_grupo"] = {
-					5914476, -- [1]
-					45316, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["start_time"] = 611628.987,
-				["contra"] = "Taurnash the Heretic",
-				["TimeData"] = {
-				},
-			}, -- [2]
-			{
-				{
-					["combatId"] = 91,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Lady Raltash"] = 3782102,
-								["Feltotem Warmonger"] = 65250,
-							},
-							["pets"] = {
-								"Vanessa VanCleef <Emmarosa>", -- [1]
-							},
-							["total"] = 3847352.008547,
-							["on_hold"] = false,
-							["classe"] = "ROGUE",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 3595361.008547,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1479265868,
-							["friendlyfire_total"] = 0,
-							["spec"] = 259,
-							["nome"] = "Emmarosa",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 6,
-										["b_amt"] = 0,
-										["c_dmg"] = 198024,
-										["g_amt"] = 0,
-										["n_max"] = 22798,
-										["targets"] = {
-											["Lady Raltash"] = 352969,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 154945,
-										["n_min"] = 8103,
-										["g_dmg"] = 0,
-										["counter"] = 23,
-										["total"] = 352969,
-										["c_max"] = 47612,
-										["MISS"] = 7,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 10,
-										["r_amt"] = 0,
-										["c_min"] = 21232,
-									}, -- [1]
-									[32645] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 340899,
-										["targets"] = {
-											["Lady Raltash"] = 559000,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 559000,
-										["n_min"] = 218101,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 559000,
-										["c_max"] = 0,
-										["id"] = 32645,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[1943] = {
-										["c_amt"] = 5,
-										["b_amt"] = 0,
-										["c_dmg"] = 759192,
-										["g_amt"] = 0,
-										["n_max"] = 87029,
-										["targets"] = {
-											["Lady Raltash"] = 927838,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 168646,
-										["n_min"] = 81617,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 927838,
-										["c_max"] = 174058,
-										["id"] = 1943,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 141943,
-									},
-									[27576] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 80734,
-										["g_amt"] = 0,
-										["n_max"] = 41520,
-										["targets"] = {
-											["Lady Raltash"] = 198929,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 118195,
-										["n_min"] = 35304,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 198929,
-										["c_max"] = 80734,
-										["id"] = 27576,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 80734,
-									},
-									[191259] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 203925,
-										["g_amt"] = 0,
-										["n_max"] = 65700,
-										["targets"] = {
-											["Lady Raltash"] = 269625,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 65700,
-										["n_min"] = 65700,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 269625,
-										["c_max"] = 203925,
-										["id"] = 191259,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 203925,
-									},
-									[51723] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 43500,
-										["g_amt"] = 0,
-										["n_max"] = 24799,
-										["targets"] = {
-											["Lady Raltash"] = 49598,
-											["Feltotem Warmonger"] = 65250,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 71348,
-										["n_min"] = 21750,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 114848,
-										["c_max"] = 43500,
-										["id"] = 51723,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 43500,
-									},
-									[5374] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 82952,
-										["targets"] = {
-											["Lady Raltash"] = 316480,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 316480,
-										["n_min"] = 70569,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 316480,
-										["c_max"] = 0,
-										["id"] = 5374,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 4,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[703] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 64736,
-										["targets"] = {
-											["Lady Raltash"] = 447001,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 447001,
-										["n_min"] = 37528,
-										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 447001,
-										["c_max"] = 0,
-										["id"] = 703,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 9,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[227870] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 111599,
-										["g_amt"] = 0,
-										["n_max"] = 64731,
-										["targets"] = {
-											["Lady Raltash"] = 408671,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 297072,
-										["n_min"] = 55757,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 408671,
-										["c_max"] = 111599,
-										["id"] = 227870,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["r_amt"] = 0,
-										["c_min"] = 111599,
-									},
-								},
-							},
-							["grupo"] = true,
-							["serial"] = "Player-60-0A91880D",
-							["last_dps"] = 183207.238502238,
-							["custom"] = 0,
-							["last_event"] = 1479265867,
-							["damage_taken"] = 0.008547,
-							["start_time"] = 1479265847,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 8465,
-							["serial"] = "Creature-0-3782-1220-21568-111254-00002BCD59",
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Lady Raltash"] = 251991,
-							},
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 251991.001503,
-							["dps_started"] = false,
-							["total"] = 251991.001503,
-							["classe"] = "PET",
-							["ownerName"] = "Emmarosa",
-							["nome"] = "Vanessa VanCleef <Emmarosa>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 6,
-										["b_amt"] = 0,
-										["c_dmg"] = 38206,
-										["g_amt"] = 0,
-										["n_max"] = 3821,
-										["targets"] = {
-											["Lady Raltash"] = 63040,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 24834,
-										["n_min"] = 1910,
-										["g_dmg"] = 0,
-										["counter"] = 21,
-										["total"] = 63040,
-										["c_max"] = 7641,
-										["MISS"] = 5,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 10,
-										["r_amt"] = 0,
-										["c_min"] = 3821,
-									}, -- [1]
-									[221512] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 52663,
-										["g_amt"] = 0,
-										["n_max"] = 29370,
-										["targets"] = {
-											["Lady Raltash"] = 188951,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 136288,
-										["n_min"] = 26042,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 188951,
-										["c_max"] = 52663,
-										["id"] = 221512,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["r_amt"] = 0,
-										["c_min"] = 52663,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["end_time"] = 1479265868,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.001503,
-							["start_time"] = 1479265848,
-							["delay"] = 0,
-							["last_event"] = 1479265867,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 91,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorb"] = 0.005905,
-							["last_hps"] = 0,
-							["targets_overheal"] = {
-								["Emmarosa"] = 48148,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-								"Vanessa VanCleef <Emmarosa>", -- [1]
-							},
-							["totalover_without_pet"] = 0.005905,
-							["spec"] = 259,
-							["classe"] = "ROGUE",
-							["totalover"] = 51793.005905,
-							["total_without_pet"] = 0.005905,
-							["healing_from"] = {
-							},
-							["iniciar_hps"] = false,
-							["healing_taken"] = 0.005905,
-							["end_time"] = 1479265868,
-							["heal_enemy_amt"] = 0,
-							["total"] = 0.005905,
-							["nome"] = "Emmarosa",
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[143924] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Emmarosa"] = 48148,
+											["Emmarosa"] = 96776,
 										},
 										["n_max"] = 0,
 										["targets"] = {
 											["Emmarosa"] = 0,
 										},
 										["n_min"] = 0,
-										["counter"] = 18,
-										["overheal"] = 48148,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 143924,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 0,
-										["m_healed"] = 0,
-										["n_amt"] = 18,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["last_event"] = 1479265868,
-							["heal_enemy"] = {
-							},
-							["targets_absorbs"] = {
-							},
-							["custom"] = 0,
-							["tipo"] = 2,
-							["on_hold"] = false,
-							["start_time"] = 1479265847,
-							["delay"] = 0,
-							["serial"] = "Player-60-0A91880D",
-						}, -- [1]
-						{
-							["flag_original"] = 8465,
-							["totalabsorb"] = 0.004723,
-							["last_hps"] = 0,
-							["healing_from"] = {
-							},
-							["targets"] = {
-							},
-							["healing_taken"] = 0.004723,
-							["pets"] = {
-							},
-							["totalover_without_pet"] = 0.004723,
-							["targets_overheal"] = {
-								["Vanessa VanCleef <Emmarosa>"] = 3645,
-							},
-							["classe"] = "PET",
-							["totalover"] = 3645.004723,
-							["total_without_pet"] = 0.004723,
-							["last_event"] = 1479265868,
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["total"] = 0.004723,
-							["targets_absorbs"] = {
-							},
-							["ownerName"] = "Emmarosa",
-							["nome"] = "Vanessa VanCleef <Emmarosa>",
-							["end_time"] = 1479265868,
-							["heal_enemy"] = {
-							},
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[143924] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Vanessa VanCleef <Emmarosa>"] = 3645,
-										},
-										["n_max"] = 0,
-										["targets"] = {
-											["Vanessa VanCleef <Emmarosa>"] = 0,
-										},
-										["n_min"] = 0,
 										["counter"] = 4,
-										["overheal"] = 3645,
+										["overheal"] = 96776,
 										["total"] = 0,
 										["c_max"] = 0,
 										["id"] = 143924,
@@ -2197,144 +225,60 @@ _detalhes_database = {
 									},
 								},
 							},
-							["custom"] = 0,
-							["tipo"] = 2,
-							["on_hold"] = false,
-							["start_time"] = 1479265852,
-							["delay"] = 0,
-							["serial"] = "Creature-0-3782-1220-21568-111254-00002BCD59",
-						}, -- [2]
+						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 91,
+					["combatId"] = 130,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 91,
+					["combatId"] = 130,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[703] = {
-										["uptime"] = 21,
-										["activedamt"] = 1,
-										["id"] = 703,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[1330] = {
-										["uptime"] = 21,
-										["activedamt"] = 1,
-										["id"] = 1330,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-								},
+							["nome"] = "Emmarosa",
+							["spec"] = 260,
+							["grupo"] = true,
+							["spell_cast"] = {
+								[2098] = 1,
+								[185763] = 2,
+								[139546] = 1,
 							},
-							["buff_uptime"] = 147,
-							["classe"] = "ROGUE",
-							["interrupt_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[1766] = {
-										["id"] = 1766,
-										["interrompeu_oque"] = {
-											[217417] = 1,
-										},
-										["targets"] = {
-											["Lady Raltash"] = 1,
-										},
-										["counter"] = 1,
-									},
-								},
+							["pets"] = {
 							},
+							["buff_uptime_targets"] = {
+							},
+							["buff_uptime"] = 24,
+							["tipo"] = 4,
+							["last_event"] = 1479323035,
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
-									[188741] = {
-										["uptime"] = 21,
+									[193538] = {
+										["uptime"] = 6,
 										["activedamt"] = 1,
-										["id"] = 188741,
+										["id"] = 193538,
 										["actived"] = false,
 										["targets"] = {
 										},
 										["counter"] = 0,
 									},
-									[3408] = {
-										["uptime"] = 21,
-										["activedamt"] = 1,
-										["id"] = 3408,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[32645] = {
+									[13877] = {
+										["actived_at"] = 1479323029,
 										["uptime"] = 0,
-										["activedamt"] = 0,
-										["id"] = 32645,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[176151] = {
-										["uptime"] = 21,
 										["activedamt"] = 1,
-										["id"] = 176151,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[200802] = {
-										["uptime"] = 21,
-										["activedamt"] = 1,
-										["id"] = 200802,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[224189] = {
-										["uptime"] = 21,
-										["activedamt"] = 1,
-										["id"] = 224189,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[193641] = {
-										["uptime"] = 0,
-										["activedamt"] = 0,
-										["id"] = 193641,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[224186] = {
-										["uptime"] = 21,
-										["activedamt"] = 1,
-										["id"] = 224186,
-										["actived"] = false,
+										["id"] = 13877,
+										["actived"] = true,
 										["targets"] = {
 										},
 										["counter"] = 0,
 									},
 									[186401] = {
-										["uptime"] = 21,
+										["uptime"] = 6,
 										["activedamt"] = 1,
 										["id"] = 186401,
 										["actived"] = false,
@@ -2342,59 +286,43 @@ _detalhes_database = {
 										},
 										["counter"] = 0,
 									},
+									[188741] = {
+										["uptime"] = 6,
+										["activedamt"] = 1,
+										["id"] = 188741,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[2983] = {
+										["actived_at"] = 1479323029,
+										["uptime"] = 0,
+										["activedamt"] = 1,
+										["id"] = 2983,
+										["actived"] = true,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[193358] = {
+										["uptime"] = 6,
+										["activedamt"] = 1,
+										["id"] = 193358,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
 								},
 							},
-							["interrompeu_oque"] = {
-								[217417] = 1,
-							},
-							["debuff_uptime"] = 42,
-							["interrupt_targets"] = {
-								["Lady Raltash"] = 1,
-							},
-							["buff_uptime_targets"] = {
-							},
-							["spec"] = 259,
-							["grupo"] = true,
-							["spell_cast"] = {
-								[32645] = 2,
-								[703] = 1,
-								[1766] = 1,
-								[27576] = 4,
-								[227870] = 6,
-								[1329] = 4,
-								[1943] = 1,
-								[51723] = 2,
-							},
-							["interrupt"] = 1.001635,
-							["debuff_uptime_targets"] = {
-							},
-							["last_event"] = 1479265868,
-							["nome"] = "Emmarosa",
-							["pets"] = {
-								"Vanessa VanCleef <Emmarosa>", -- [1]
-							},
 							["serial"] = "Player-60-0A91880D",
-							["tipo"] = 4,
+							["classe"] = "ROGUE",
 						}, -- [1]
-						{
-							["flag_original"] = 8465,
-							["ownerName"] = "Emmarosa",
-							["nome"] = "Vanessa VanCleef <Emmarosa>",
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["tipo"] = 4,
-							["spell_cast"] = {
-								[221792] = 1,
-								[221512] = 6,
-							},
-							["serial"] = "Creature-0-3782-1220-21568-111254-00002BCD59",
-							["last_event"] = 0,
-						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 91,
+					["combatId"] = 130,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -2404,12 +332,12 @@ _detalhes_database = {
 				},
 				["last_events_tables"] = {
 				},
-				["enemy"] = "Lady Raltash",
-				["combat_counter"] = 6044,
+				["enemy"] = "Snowfeather Nest-Keeper",
+				["combat_counter"] = 6096,
 				["playing_solo"] = true,
 				["totals"] = {
-					3847351.978813, -- [1]
-					-0.00577099999645725, -- [2]
+					365910.913819999, -- [1]
+					-0.0292679999838583, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -2421,7 +349,7 @@ _detalhes_database = {
 						["ress"] = 0,
 						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 1,
+						["interrupt"] = 0,
 						["dispell"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
@@ -2443,30 +371,31 @@ _detalhes_database = {
 					},
 					["heal"] = {
 						{
-							["Emmarosa"] = 0.005905,
+							["Emmarosa"] = 64508.015672,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
 					["damage"] = {
 						{
-							["Emmarosa"] = 3847352.008547,
+							["Emmarosa"] = 819200.008526,
 						}, -- [1]
 					},
 				},
-				["end_time"] = 611615.366,
-				["combat_id"] = 91,
+				["end_time"] = 668782.018,
+				["combat_id"] = 130,
 				["instance_type"] = "none",
+				["resincked"] = true,
 				["frags"] = {
-					["Feltotem Warmonger"] = 2,
-					["Lady Raltash"] = 1,
+					["Snowfeather Nest-Keeper"] = 2,
+					["Young Snowfeather"] = 4,
 				},
-				["data_fim"] = "22:11:09",
-				["data_inicio"] = "22:10:48",
+				["data_fim"] = "14:03:55",
+				["data_inicio"] = "14:03:49",
 				["CombatSkillCache"] = {
 				},
 				["totals_grupo"] = {
-					3595361, -- [1]
+					365911, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -2479,71 +408,65 @@ _detalhes_database = {
 						["ress"] = 0,
 						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 1,
+						["interrupt"] = 0,
 						["dispell"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["start_time"] = 611594.708,
-				["contra"] = "Lady Raltash",
+				["start_time"] = 668775.862,
+				["contra"] = "Snowfeather Nest-Keeper",
 				["TimeData"] = {
 				},
-			}, -- [3]
+			}, -- [1]
 			{
 				{
-					["combatId"] = 90,
+					["combatId"] = 129,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["damage_from"] = {
-								["Feltotem Warmonger"] = true,
-								["Nozcha the Twisted"] = true,
 							},
 							["targets"] = {
-								["Feltotem Warmonger"] = 5725174,
-								["Nozcha the Twisted"] = 5221378,
-								["Felspider"] = 19397,
+								["Young Snowfeather"] = 699631,
 							},
 							["pets"] = {
 								"Vanessa VanCleef <Emmarosa>", -- [1]
 							},
-							["total"] = 10965949.003468,
+							["total"] = 699631.006018,
 							["on_hold"] = false,
 							["classe"] = "ROGUE",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 10429848.003468,
+							["total_without_pet"] = 646342.006018,
 							["colocacao"] = 1,
 							["friendlyfire"] = {
 							},
 							["dps_started"] = false,
-							["end_time"] = 1479265798,
+							["end_time"] = 1479323022,
 							["friendlyfire_total"] = 0,
-							["spec"] = 259,
+							["spec"] = 260,
 							["nome"] = "Emmarosa",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
-										["c_amt"] = 8,
+										["c_amt"] = 0,
 										["b_amt"] = 1,
-										["c_dmg"] = 202191,
+										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 31467,
+										["n_max"] = 24479,
 										["targets"] = {
-											["Nozcha the Twisted"] = 370400,
-											["Feltotem Warmonger"] = 87042,
+											["Young Snowfeather"] = 55942,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 255251,
-										["n_min"] = 7040,
+										["n_dmg"] = 55942,
+										["n_min"] = 8376,
 										["g_dmg"] = 0,
-										["counter"] = 32,
-										["total"] = 457442,
-										["c_max"] = 45353,
-										["MISS"] = 7,
+										["counter"] = 3,
+										["total"] = 55942,
+										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -2552,57 +475,28 @@ _detalhes_database = {
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 15196,
-										["n_amt"] = 17,
-										["r_amt"] = 0,
-										["c_min"] = 14915,
-									}, -- [1]
-									[191259] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 65143,
-										["targets"] = {
-											["Nozcha the Twisted"] = 65143,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 65143,
-										["n_min"] = 65143,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 65143,
-										["c_max"] = 0,
-										["id"] = 191259,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
+										["b_dmg"] = 8376,
+										["n_amt"] = 3,
 										["r_amt"] = 0,
 										["c_min"] = 0,
-									},
-									[5374] = {
+									}, -- [1]
+									[2098] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 58437,
+										["n_max"] = 215660,
 										["targets"] = {
-											["Nozcha the Twisted"] = 58437,
+											["Young Snowfeather"] = 215660,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 58437,
-										["n_min"] = 58437,
+										["n_dmg"] = 215660,
+										["n_min"] = 215660,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 58437,
+										["total"] = 215660,
 										["c_max"] = 0,
-										["id"] = 5374,
+										["id"] = 2098,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
@@ -2615,84 +509,25 @@ _detalhes_database = {
 										["r_amt"] = 0,
 										["c_min"] = 0,
 									},
-									[192660] = {
-										["c_amt"] = 5,
-										["b_amt"] = 0,
-										["c_dmg"] = 1227193,
-										["g_amt"] = 0,
-										["n_max"] = 152004,
-										["targets"] = {
-											["Feltotem Warmonger"] = 2865578,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1638385,
-										["n_min"] = 108971,
-										["g_dmg"] = 0,
-										["counter"] = 18,
-										["total"] = 2865578,
-										["c_max"] = 259187,
-										["id"] = 192660,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 13,
-										["r_amt"] = 0,
-										["c_min"] = 217943,
-									},
-									[222062] = {
+									[185763] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 118128,
+										["n_max"] = 42473,
 										["targets"] = {
-											["Nozcha the Twisted"] = 118128,
+											["Young Snowfeather"] = 127419,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 118128,
-										["n_min"] = 118128,
+										["n_dmg"] = 127419,
+										["n_min"] = 42473,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 118128,
+										["counter"] = 3,
+										["total"] = 127419,
 										["c_max"] = 0,
-										["id"] = 222062,
+										["id"] = 185763,
 										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[32645] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 1003264,
-										["g_amt"] = 0,
-										["n_max"] = 501632,
-										["targets"] = {
-											["Nozcha the Twisted"] = 1412342,
-											["Feltotem Warmonger"] = 736852,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1145930,
-										["n_min"] = 235220,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 2149194,
-										["c_max"] = 1003264,
-										["id"] = 32645,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
+										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
@@ -2701,952 +536,23 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
 										["r_amt"] = 0,
-										["c_min"] = 1003264,
-									},
-									[51723] = {
-										["c_amt"] = 21,
-										["b_amt"] = 0,
-										["c_dmg"] = 1219703,
-										["g_amt"] = 0,
-										["n_max"] = 47187,
-										["targets"] = {
-											["Feltotem Warmonger"] = 1636538,
-											["Nozcha the Twisted"] = 480703,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 897538,
-										["n_min"] = 21750,
-										["g_dmg"] = 0,
-										["counter"] = 50,
-										["total"] = 2117241,
-										["c_max"] = 94373,
-										["id"] = 51723,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 29,
-										["r_amt"] = 0,
-										["c_min"] = 43500,
-									},
-									[192760] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 61020,
-										["targets"] = {
-											["Nozcha the Twisted"] = 61020,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 61020,
-										["n_min"] = 61020,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 61020,
-										["c_max"] = 0,
-										["id"] = 192760,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
 										["c_min"] = 0,
-									},
-									[703] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 171962,
-										["g_amt"] = 0,
-										["n_max"] = 64736,
-										["targets"] = {
-											["Nozcha the Twisted"] = 564259,
-											["Feltotem Warmonger"] = 40473,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 432770,
-										["n_min"] = 40473,
-										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 604732,
-										["c_max"] = 88781,
-										["id"] = 703,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 8,
-										["r_amt"] = 0,
-										["c_min"] = 83181,
-									},
-									[192759] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 321685,
-										["g_amt"] = 0,
-										["n_max"] = 141444,
-										["targets"] = {
-											["Nozcha the Twisted"] = 671665,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 349980,
-										["n_min"] = 36976,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 671665,
-										["c_max"] = 228135,
-										["id"] = 192759,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["r_amt"] = 0,
-										["c_min"] = 93550,
-									},
-									[1943] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 326470,
-										["g_amt"] = 0,
-										["n_max"] = 113138,
-										["targets"] = {
-											["Nozcha the Twisted"] = 1069433,
-											["Feltotem Warmonger"] = 163235,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 906198,
-										["n_min"] = 67207,
-										["g_dmg"] = 0,
-										["counter"] = 12,
-										["total"] = 1232668,
-										["c_max"] = 174058,
-										["id"] = 1943,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 10,
-										["r_amt"] = 0,
-										["c_min"] = 152412,
-									},
-									[27576] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 28600,
-										["targets"] = {
-											["Nozcha the Twisted"] = 28600,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 28600,
-										["n_min"] = 28600,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 28600,
-										["c_max"] = 0,
-										["id"] = 27576,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["serial"] = "Player-60-0A91880D",
-							["last_dps"] = 365531.633448933,
-							["custom"] = 0,
-							["last_event"] = 1479265798,
-							["damage_taken"] = 1365161.003468,
-							["start_time"] = 1479265768,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 8465,
-							["serial"] = "Creature-0-3782-1220-21568-111254-00002BCD59",
-							["damage_from"] = {
-								["Feltotem Warmonger"] = true,
-							},
-							["targets"] = {
-								["Feltotem Warmonger"] = 195456,
-								["Nozcha the Twisted"] = 321248,
-								["Felspider"] = 19397,
-							},
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 536101.008778,
-							["dps_started"] = false,
-							["total"] = 536101.008778,
-							["classe"] = "PET",
-							["ownerName"] = "Emmarosa",
-							["nome"] = "Vanessa VanCleef <Emmarosa>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 9,
-										["b_amt"] = 0,
-										["c_dmg"] = 53892,
-										["g_amt"] = 0,
-										["n_max"] = 3593,
-										["targets"] = {
-											["Nozcha the Twisted"] = 71855,
-											["Feltotem Warmonger"] = 21556,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 39519,
-										["n_min"] = 1796,
-										["g_dmg"] = 0,
-										["counter"] = 31,
-										["total"] = 93411,
-										["c_max"] = 7186,
-										["MISS"] = 6,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 16,
-										["r_amt"] = 0,
-										["c_min"] = 3593,
-									}, -- [1]
-									[221515] = {
-										["c_amt"] = 8,
-										["b_amt"] = 0,
-										["c_dmg"] = 114651,
-										["g_amt"] = 0,
-										["n_max"] = 6804,
-										["targets"] = {
-											["Feltotem Warmonger"] = 122471,
-											["Nozcha the Twisted"] = 27215,
-											["Felspider"] = 19397,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 54432,
-										["n_min"] = 6804,
-										["g_dmg"] = 0,
-										["counter"] = 16,
-										["total"] = 169083,
-										["c_max"] = 19397,
-										["id"] = 221515,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 8,
-										["r_amt"] = 0,
-										["c_min"] = 13607,
-									},
-									[221512] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 111021,
-										["g_amt"] = 0,
-										["n_max"] = 29932,
-										["targets"] = {
-											["Nozcha the Twisted"] = 222178,
-											["Feltotem Warmonger"] = 51429,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 162586,
-										["n_min"] = 25034,
-										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 273607,
-										["c_max"] = 59592,
-										["id"] = 221512,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 6,
-										["r_amt"] = 0,
-										["c_min"] = 51429,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["end_time"] = 1479265798,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 330106.008778,
-							["start_time"] = 1479265769,
-							["delay"] = 0,
-							["last_event"] = 1479265797,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 90,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorb"] = 0.003714,
-							["last_hps"] = 0,
-							["healing_from"] = {
-								["Emmarosa"] = true,
-							},
-							["targets"] = {
-								["Emmarosa"] = 677370,
-								["Vanessa VanCleef <Emmarosa>"] = 6813,
-							},
-							["targets_absorbs"] = {
-							},
-							["pets"] = {
-								"Vanessa VanCleef <Emmarosa>", -- [1]
-							},
-							["totalover_without_pet"] = 0.003714,
-							["targets_overheal"] = {
-								["Emmarosa"] = 43927,
-							},
-							["classe"] = "ROGUE",
-							["totalover"] = 43927.003714,
-							["total_without_pet"] = 656917.003714,
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["fight_component"] = true,
-							["total"] = 663730.003714,
-							["healing_taken"] = 656917.003714,
-							["end_time"] = 1479265798,
-							["nome"] = "Emmarosa",
-							["spec"] = 259,
-							["grupo"] = true,
-							["last_event"] = 1479265798,
-							["heal_enemy"] = {
-							},
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[143924] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Emmarosa"] = 23474,
-										},
-										["n_max"] = 25292,
-										["targets"] = {
-											["Emmarosa"] = 123186,
-										},
-										["n_min"] = 264,
-										["counter"] = 25,
-										["overheal"] = 23474,
-										["total"] = 123186,
-										["c_max"] = 0,
-										["id"] = 143924,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 123186,
-										["m_healed"] = 0,
-										["n_amt"] = 25,
-										["absorbed"] = 0,
-									},
-									[185311] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Emmarosa"] = 20453,
-										},
-										["n_max"] = 92364,
-										["targets"] = {
-											["Emmarosa"] = 533731,
-										},
-										["n_min"] = 71911,
-										["counter"] = 6,
-										["overheal"] = 20453,
-										["total"] = 533731,
-										["c_max"] = 0,
-										["id"] = 185311,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 533731,
-										["m_healed"] = 0,
-										["n_amt"] = 6,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["custom"] = 0,
-							["tipo"] = 2,
-							["on_hold"] = false,
-							["start_time"] = 1479265768,
-							["serial"] = "Player-60-0A91880D",
-							["delay"] = 0,
-						}, -- [1]
-						{
-							["flag_original"] = 8465,
-							["totalabsorb"] = 0.004733,
-							["last_hps"] = 0,
-							["healing_from"] = {
-								["Vanessa VanCleef <Emmarosa>"] = true,
-							},
-							["targets"] = {
-								["Vanessa VanCleef <Emmarosa>"] = 6813,
-							},
-							["heal_enemy_amt"] = 0,
-							["pets"] = {
-							},
-							["totalover_without_pet"] = 0.004733,
-							["targets_overheal"] = {
-							},
-							["classe"] = "PET",
-							["totalover"] = 0.004733,
-							["total_without_pet"] = 6813.004733,
-							["iniciar_hps"] = false,
-							["healing_taken"] = 6813.004733,
-							["fight_component"] = true,
-							["total"] = 6813.004733,
-							["serial"] = "Creature-0-3782-1220-21568-111254-00002BCD59",
-							["ownerName"] = "Emmarosa",
-							["nome"] = "Vanessa VanCleef <Emmarosa>",
-							["targets_absorbs"] = {
-							},
-							["end_time"] = 1479265798,
-							["last_event"] = 1479265794,
-							["heal_enemy"] = {
-							},
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[143924] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 1990,
-										["targets"] = {
-											["Vanessa VanCleef <Emmarosa>"] = 6813,
-										},
-										["n_min"] = 683,
-										["counter"] = 5,
-										["overheal"] = 0,
-										["total"] = 6813,
-										["c_max"] = 0,
-										["id"] = 143924,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 6813,
-										["m_healed"] = 0,
-										["n_amt"] = 5,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["custom"] = 0,
-							["tipo"] = 2,
-							["on_hold"] = false,
-							["start_time"] = 1479265773,
-							["delay"] = 0,
-						}, -- [2]
-					},
-				}, -- [2]
-				{
-					["combatId"] = 90,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 90,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[703] = {
-										["uptime"] = 30,
-										["activedamt"] = 1,
-										["id"] = 703,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[1330] = {
-										["uptime"] = 30,
-										["activedamt"] = 1,
-										["id"] = 1330,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-								},
-							},
-							["cooldowns_defensive_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[5277] = {
-										["id"] = 5277,
-										["targets"] = {
-											["Emmarosa"] = 1,
-										},
-										["counter"] = 1,
-									},
-								},
-							},
-							["cooldowns_defensive"] = 1.005475,
-							["buff_uptime"] = 210,
-							["last_cooldown"] = {
-								1479265777.331, -- [1]
-								5277, -- [2]
-							},
-							["classe"] = "ROGUE",
-							["interrupt_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[1766] = {
-										["id"] = 1766,
-										["interrompeu_oque"] = {
-											[217522] = 1,
-										},
-										["targets"] = {
-											["Nozcha the Twisted"] = 1,
-										},
-										["counter"] = 1,
-									},
-								},
-							},
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[188741] = {
-										["uptime"] = 30,
-										["activedamt"] = 1,
-										["id"] = 188741,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[3408] = {
-										["uptime"] = 30,
-										["activedamt"] = 1,
-										["id"] = 3408,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[32645] = {
-										["uptime"] = 0,
-										["activedamt"] = 0,
-										["id"] = 32645,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[176151] = {
-										["uptime"] = 30,
-										["activedamt"] = 1,
-										["id"] = 176151,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[200802] = {
-										["uptime"] = 30,
-										["activedamt"] = 1,
-										["id"] = 200802,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[224189] = {
-										["uptime"] = 30,
-										["activedamt"] = 1,
-										["id"] = 224189,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[193641] = {
-										["uptime"] = 0,
-										["activedamt"] = 0,
-										["id"] = 193641,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[224186] = {
-										["uptime"] = 30,
-										["activedamt"] = 1,
-										["id"] = 224186,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[186401] = {
-										["uptime"] = 30,
-										["activedamt"] = 1,
-										["id"] = 186401,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-								},
-							},
-							["interrompeu_oque"] = {
-								[217522] = 1,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 60,
-							["cooldowns_defensive_targets"] = {
-								["Emmarosa"] = 1,
-							},
-							["interrupt_targets"] = {
-								["Nozcha the Twisted"] = 1,
-							},
-							["buff_uptime_targets"] = {
-							},
-							["spec"] = 259,
-							["grupo"] = true,
-							["spell_cast"] = {
-								[192759] = 1,
-								[1329] = 1,
-								[32645] = 4,
-								[51723] = 11,
-								[703] = 1,
-								[27576] = 1,
-								[1766] = 1,
-								[185311] = 1,
-								[79140] = 1,
-								[1943] = 2,
-								[5277] = 1,
-							},
-							["interrupt"] = 1.00435,
-							["debuff_uptime_targets"] = {
-							},
-							["last_event"] = 1479265798,
-							["nome"] = "Emmarosa",
-							["pets"] = {
-								"Vanessa VanCleef <Emmarosa>", -- [1]
-							},
-							["serial"] = "Player-60-0A91880D",
-							["tipo"] = 4,
-						}, -- [1]
-						{
-							["flag_original"] = 8465,
-							["ownerName"] = "Emmarosa",
-							["nome"] = "Vanessa VanCleef <Emmarosa>",
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["fight_component"] = true,
-							["tipo"] = 4,
-							["spell_cast"] = {
-								[221512] = 8,
-								[221792] = 1,
-								[221515] = 3,
-							},
-							["serial"] = "Creature-0-3782-1220-21568-111254-00002BCD59",
-							["last_event"] = 0,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 90,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Emmarosa"] = true,
-				},
-				["last_events_tables"] = {
-				},
-				["enemy"] = "Nozcha the Twisted",
-				["combat_counter"] = 6043,
-				["playing_solo"] = true,
-				["totals"] = {
-					10965948.97471, -- [1]
-					663730, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 1,
-						["interrupt"] = 1,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Emmarosa"] = 663730.003714,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Emmarosa"] = 10965949.003468,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 611545.895,
-				["combat_id"] = 90,
-				["instance_type"] = "none",
-				["frags"] = {
-					["Felspider"] = 1,
-					["Nozcha the Twisted"] = 1,
-					["Feltotem Warmonger"] = 4,
-				},
-				["data_fim"] = "22:09:59",
-				["data_inicio"] = "22:09:29",
-				["CombatSkillCache"] = {
-				},
-				["totals_grupo"] = {
-					10429848, -- [1]
-					656917, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 1,
-						["interrupt"] = 1,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["start_time"] = 611515.669,
-				["contra"] = "Nozcha the Twisted",
-				["TimeData"] = {
-				},
-			}, -- [4]
-			{
-				{
-					["combatId"] = 89,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["damage_from"] = {
-								["Feltotem Warmonger"] = true,
-							},
-							["targets"] = {
-								["Feltotem Warmonger"] = 1531918,
-							},
-							["pets"] = {
-								"Vanessa VanCleef <Emmarosa>", -- [1]
-							},
-							["total"] = 1531918.006482,
-							["on_hold"] = false,
-							["classe"] = "ROGUE",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 1478196.006482,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1479265761,
-							["friendlyfire_total"] = 0,
-							["spec"] = 259,
-							["nome"] = "Emmarosa",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 48925,
-										["g_amt"] = 0,
-										["n_max"] = 20480,
-										["targets"] = {
-											["Feltotem Warmonger"] = 129024,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 80099,
-										["n_min"] = 6894,
-										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 129024,
-										["c_max"] = 33969,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 6,
-										["r_amt"] = 0,
-										["c_min"] = 14956,
-									}, -- [1]
-									[192660] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 250226,
-										["g_amt"] = 0,
-										["n_max"] = 125113,
-										["targets"] = {
-											["Feltotem Warmonger"] = 375339,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 125113,
-										["n_min"] = 125113,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 375339,
-										["c_max"] = 250226,
-										["id"] = 192660,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 250226,
-									},
-									[1943] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 145918,
-										["g_amt"] = 0,
-										["n_max"] = 65383,
-										["targets"] = {
-											["Feltotem Warmonger"] = 276684,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 130766,
-										["n_min"] = 65383,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 276684,
-										["c_max"] = 145918,
-										["id"] = 1943,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 145918,
 									},
 									[191259] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 71837,
+										["n_max"] = 55975,
 										["targets"] = {
-											["Feltotem Warmonger"] = 71837,
+											["Young Snowfeather"] = 55975,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 71837,
-										["n_min"] = 71837,
+										["n_dmg"] = 55975,
+										["n_min"] = 55975,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 71837,
+										["total"] = 55975,
 										["c_max"] = 0,
 										["id"] = 191259,
 										["r_dmg"] = 0,
@@ -3661,25 +567,25 @@ _detalhes_database = {
 										["r_amt"] = 0,
 										["c_min"] = 0,
 									},
-									[32645] = {
-										["c_amt"] = 0,
+									[86392] = {
+										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 0,
+										["c_dmg"] = 48410,
 										["g_amt"] = 0,
-										["n_max"] = 236555,
+										["n_max"] = 22911,
 										["targets"] = {
-											["Feltotem Warmonger"] = 236555,
+											["Young Snowfeather"] = 71321,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 236555,
-										["n_min"] = 236555,
+										["n_dmg"] = 22911,
+										["n_min"] = 22911,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 236555,
-										["c_max"] = 0,
-										["id"] = 32645,
+										["counter"] = 2,
+										["total"] = 71321,
+										["c_max"] = 48410,
+										["id"] = 86392,
 										["r_dmg"] = 0,
-										["spellschool"] = 8,
+										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
@@ -3688,25 +594,25 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
 										["r_amt"] = 0,
-										["c_min"] = 0,
+										["c_min"] = 48410,
 									},
-									[5374] = {
+									[22482] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 66462,
+										["n_max"] = 75481,
 										["targets"] = {
-											["Feltotem Warmonger"] = 129134,
+											["Young Snowfeather"] = 120025,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 129134,
-										["n_min"] = 62672,
+										["n_dmg"] = 120025,
+										["n_min"] = 2932,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 129134,
+										["counter"] = 6,
+										["total"] = 120025,
 										["c_max"] = 0,
-										["id"] = 5374,
+										["id"] = 22482,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
@@ -3715,65 +621,7 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[703] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 97268,
-										["g_amt"] = 0,
-										["n_max"] = 52659,
-										["targets"] = {
-											["Feltotem Warmonger"] = 194536,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 97268,
-										["n_min"] = 44609,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 194536,
-										["c_max"] = 97268,
-										["id"] = 703,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 97268,
-									},
-									[27576] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 34194,
-										["targets"] = {
-											["Feltotem Warmonger"] = 65087,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 65087,
-										["n_min"] = 30893,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 65087,
-										["c_max"] = 0,
-										["id"] = 27576,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
+										["n_amt"] = 6,
 										["r_amt"] = 0,
 										["c_min"] = 0,
 									},
@@ -3781,21 +629,21 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["serial"] = "Player-60-0A91880D",
-							["last_dps"] = 153191.8006482,
+							["last_dps"] = 69963.1006018,
 							["custom"] = 0,
-							["last_event"] = 1479265761,
-							["damage_taken"] = 92322.006482,
-							["start_time"] = 1479265754,
+							["last_event"] = 1479323021,
+							["damage_taken"] = 0.006018,
+							["start_time"] = 1479323016,
 							["delay"] = 0,
 							["tipo"] = 1,
 						}, -- [1]
 						{
 							["flag_original"] = 8465,
-							["serial"] = "Creature-0-3782-1220-21568-111254-00002BCD59",
+							["serial"] = "Creature-0-3782-1220-21568-111254-00002CACE5",
 							["damage_from"] = {
 							},
 							["targets"] = {
-								["Feltotem Warmonger"] = 53722,
+								["Young Snowfeather"] = 53289,
 							},
 							["pets"] = {
 							},
@@ -3803,9 +651,9 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 53722.005552,
+							["total_without_pet"] = 53289.00739,
 							["dps_started"] = false,
-							["total"] = 53722.005552,
+							["total"] = 53289.00739,
 							["classe"] = "PET",
 							["ownerName"] = "Emmarosa",
 							["nome"] = "Vanessa VanCleef <Emmarosa>",
@@ -3813,21 +661,21 @@ _detalhes_database = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
-										["c_amt"] = 3,
+										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["c_dmg"] = 17964,
+										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 3593,
+										["n_max"] = 5053,
 										["targets"] = {
-											["Feltotem Warmonger"] = 25151,
+											["Young Snowfeather"] = 25262,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 7187,
-										["n_min"] = 1797,
+										["n_dmg"] = 25262,
+										["n_min"] = 2526,
 										["g_dmg"] = 0,
 										["counter"] = 7,
-										["total"] = 25151,
-										["c_max"] = 7186,
+										["total"] = 25262,
+										["c_max"] = 0,
 										["MISS"] = 1,
 										["id"] = 1,
 										["r_dmg"] = 0,
@@ -3838,25 +686,25 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 3,
+										["n_amt"] = 6,
 										["r_amt"] = 0,
-										["c_min"] = 3593,
+										["c_min"] = 0,
 									}, -- [1]
 									[221512] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 28571,
+										["n_max"] = 28027,
 										["targets"] = {
-											["Feltotem Warmonger"] = 28571,
+											["Young Snowfeather"] = 28027,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 28571,
-										["n_min"] = 28571,
+										["n_dmg"] = 28027,
+										["n_min"] = 28027,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 28571,
+										["total"] = 28027,
 										["c_max"] = 0,
 										["id"] = 221512,
 										["r_dmg"] = 0,
@@ -3875,51 +723,52 @@ _detalhes_database = {
 							},
 							["friendlyfire"] = {
 							},
-							["end_time"] = 1479265761,
+							["end_time"] = 1479323022,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 0.005552,
-							["start_time"] = 1479265755,
+							["damage_taken"] = 0.00739,
+							["start_time"] = 1479323017,
 							["delay"] = 0,
-							["last_event"] = 1479265761,
+							["last_event"] = 1479323021,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 89,
+					["combatId"] = 129,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorb"] = 0.00765,
+							["totalabsorb"] = 0.007637,
 							["last_hps"] = 0,
 							["healing_from"] = {
 								["Emmarosa"] = true,
 							},
 							["targets"] = {
-								["Emmarosa"] = 14628,
+								["Emmarosa"] = 130612,
 							},
-							["last_event"] = 1479265761,
+							["last_event"] = 1479323021,
 							["pets"] = {
 								"Vanessa VanCleef <Emmarosa>", -- [1]
 							},
-							["totalover_without_pet"] = 0.00765,
+							["totalover_without_pet"] = 0.007637,
 							["targets_overheal"] = {
+								["Emmarosa"] = 94943,
 							},
 							["heal_enemy_amt"] = 0,
-							["totalover"] = 130.00765,
-							["total_without_pet"] = 14628.00765,
+							["totalover"] = 96948.007637,
+							["total_without_pet"] = 61196.007637,
 							["iniciar_hps"] = false,
 							["classe"] = "ROGUE",
 							["fight_component"] = true,
-							["total"] = 14628.00765,
+							["total"] = 61196.007637,
 							["serial"] = "Player-60-0A91880D",
-							["healing_taken"] = 14628.00765,
+							["healing_taken"] = 61196.007637,
 							["nome"] = "Emmarosa",
-							["spec"] = 259,
+							["spec"] = 260,
 							["grupo"] = true,
-							["end_time"] = 1479265761,
+							["end_time"] = 1479323022,
 							["heal_enemy"] = {
 							},
 							["spells"] = {
@@ -3929,15 +778,16 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
+											["Emmarosa"] = 94943,
 										},
-										["n_max"] = 6430,
+										["n_max"] = 28153,
 										["targets"] = {
-											["Emmarosa"] = 14628,
+											["Emmarosa"] = 61196,
 										},
-										["n_min"] = 100,
-										["counter"] = 6,
-										["overheal"] = 0,
-										["total"] = 14628,
+										["n_min"] = 0,
+										["counter"] = 5,
+										["overheal"] = 94943,
+										["total"] = 61196,
 										["c_max"] = 0,
 										["id"] = 143924,
 										["targets_absorbs"] = {
@@ -3946,9 +796,9 @@ _detalhes_database = {
 										["c_curado"] = 0,
 										["m_amt"] = 0,
 										["c_min"] = 0,
-										["n_curado"] = 14628,
+										["n_curado"] = 61196,
 										["m_healed"] = 0,
-										["n_amt"] = 6,
+										["n_amt"] = 5,
 										["absorbed"] = 0,
 									},
 								},
@@ -3956,38 +806,38 @@ _detalhes_database = {
 							["custom"] = 0,
 							["tipo"] = 2,
 							["on_hold"] = false,
-							["start_time"] = 1479265754,
+							["start_time"] = 1479323016,
 							["delay"] = 0,
 							["targets_absorbs"] = {
 							},
 						}, -- [1]
 						{
 							["flag_original"] = 8465,
-							["totalabsorb"] = 0.006301,
+							["totalabsorb"] = 0.005265,
 							["last_hps"] = 0,
 							["healing_from"] = {
 							},
 							["targets"] = {
 							},
-							["healing_taken"] = 0.006301,
+							["healing_taken"] = 0.005265,
 							["pets"] = {
 							},
-							["totalover_without_pet"] = 0.006301,
+							["totalover_without_pet"] = 0.005265,
 							["targets_overheal"] = {
-								["Vanessa VanCleef <Emmarosa>"] = 130,
+								["Vanessa VanCleef <Emmarosa>"] = 2005,
 							},
 							["classe"] = "PET",
-							["totalover"] = 130.006301,
-							["total_without_pet"] = 0.006301,
-							["last_event"] = 1479265757,
+							["totalover"] = 2005.005265,
+							["total_without_pet"] = 0.005265,
+							["last_event"] = 1479323018,
 							["iniciar_hps"] = false,
 							["heal_enemy_amt"] = 0,
-							["total"] = 0.006301,
+							["total"] = 0.005265,
 							["targets_absorbs"] = {
 							},
 							["ownerName"] = "Emmarosa",
 							["nome"] = "Vanessa VanCleef <Emmarosa>",
-							["end_time"] = 1479265761,
+							["end_time"] = 1479323022,
 							["heal_enemy"] = {
 							},
 							["spells"] = {
@@ -3997,7 +847,7 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
-											["Vanessa VanCleef <Emmarosa>"] = 130,
+											["Vanessa VanCleef <Emmarosa>"] = 2005,
 										},
 										["n_max"] = 0,
 										["targets"] = {
@@ -4005,7 +855,7 @@ _detalhes_database = {
 										},
 										["n_min"] = 0,
 										["counter"] = 1,
-										["overheal"] = 130,
+										["overheal"] = 2005,
 										["total"] = 0,
 										["c_max"] = 0,
 										["id"] = 143924,
@@ -4025,135 +875,64 @@ _detalhes_database = {
 							["custom"] = 0,
 							["tipo"] = 2,
 							["on_hold"] = false,
-							["start_time"] = 1479265757,
+							["start_time"] = 1479323018,
 							["delay"] = 0,
-							["serial"] = "Creature-0-3782-1220-21568-111254-00002BCD59",
+							["serial"] = "Creature-0-3782-1220-21568-111254-00002CACE5",
 						}, -- [2]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 89,
+					["combatId"] = 129,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 89,
+					["combatId"] = 129,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
+							["fight_component"] = true,
 							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[703] = {
-										["uptime"] = 7,
-										["activedamt"] = 1,
-										["id"] = 703,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[1330] = {
-										["uptime"] = 7,
-										["activedamt"] = 1,
-										["id"] = 1330,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[6770] = {
-										["uptime"] = 7,
-										["activedamt"] = 1,
-										["id"] = 6770,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-								},
+							["nome"] = "Emmarosa",
+							["spec"] = 260,
+							["grupo"] = true,
+							["buff_uptime_targets"] = {
 							},
-							["buff_uptime"] = 49,
+							["buff_uptime"] = 30,
+							["pets"] = {
+								"Vanessa VanCleef <Emmarosa>", -- [1]
+							},
+							["spell_cast"] = {
+								[2098] = 1,
+								[185763] = 2,
+								[139546] = 1,
+							},
 							["classe"] = "ROGUE",
+							["tipo"] = 4,
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
-									[188741] = {
-										["uptime"] = 7,
+									[193538] = {
+										["uptime"] = 6,
 										["activedamt"] = 1,
-										["id"] = 188741,
+										["id"] = 193538,
 										["actived"] = false,
 										["targets"] = {
 										},
 										["counter"] = 0,
 									},
-									[3408] = {
-										["uptime"] = 7,
+									[13877] = {
+										["uptime"] = 6,
 										["activedamt"] = 1,
-										["id"] = 3408,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[32645] = {
-										["uptime"] = 0,
-										["activedamt"] = 0,
-										["id"] = 32645,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[176151] = {
-										["uptime"] = 7,
-										["activedamt"] = 1,
-										["id"] = 176151,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[200802] = {
-										["uptime"] = 7,
-										["activedamt"] = 1,
-										["id"] = 200802,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[224189] = {
-										["uptime"] = 7,
-										["activedamt"] = 1,
-										["id"] = 224189,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[193641] = {
-										["uptime"] = 0,
-										["activedamt"] = 0,
-										["id"] = 193641,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[224186] = {
-										["uptime"] = 7,
-										["activedamt"] = 1,
-										["id"] = 224186,
+										["id"] = 13877,
 										["actived"] = false,
 										["targets"] = {
 										},
 										["counter"] = 0,
 									},
 									[186401] = {
-										["uptime"] = 7,
+										["uptime"] = 6,
 										["activedamt"] = 1,
 										["id"] = 186401,
 										["actived"] = false,
@@ -4161,52 +940,28 @@ _detalhes_database = {
 										},
 										["counter"] = 0,
 									},
-								},
-							},
-							["pets"] = {
-								"Vanessa VanCleef <Emmarosa>", -- [1]
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 21,
-							["cc_break"] = 1.003626,
-							["cc_break_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									["DEBUFF"] = {
-										["cc_break_oque"] = {
-											[6770] = 1,
-										},
-										["id"] = "DEBUFF",
-										["cc_break"] = 1,
+									[188741] = {
+										["uptime"] = 6,
+										["activedamt"] = 1,
+										["id"] = 188741,
+										["actived"] = false,
 										["targets"] = {
-											["Feltotem Warmonger"] = 1,
+										},
+										["counter"] = 0,
+									},
+									[193358] = {
+										["uptime"] = 6,
+										["activedamt"] = 1,
+										["id"] = 193358,
+										["actived"] = false,
+										["targets"] = {
 										},
 										["counter"] = 0,
 									},
 								},
 							},
-							["buff_uptime_targets"] = {
-							},
-							["spec"] = 259,
-							["grupo"] = true,
-							["spell_cast"] = {
-								[1329] = 2,
-								[27576] = 2,
-								[1943] = 1,
-								[32645] = 1,
-							},
-							["cc_break_oque"] = {
-								[6770] = 1,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["last_event"] = 1479265761,
-							["nome"] = "Emmarosa",
-							["cc_break_targets"] = {
-								["Feltotem Warmonger"] = 1,
-							},
 							["serial"] = "Player-60-0A91880D",
-							["tipo"] = 4,
+							["last_event"] = 1479323022,
 						}, -- [1]
 						{
 							["flag_original"] = 8465,
@@ -4217,16 +972,15 @@ _detalhes_database = {
 							["classe"] = "PET",
 							["tipo"] = 4,
 							["spell_cast"] = {
-								[221792] = 1,
 								[221512] = 1,
 							},
-							["serial"] = "Creature-0-3782-1220-21568-111254-00002BCD59",
+							["serial"] = "Creature-0-3782-1220-21568-111254-00002CACE5",
 							["last_event"] = 0,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 89,
+					["combatId"] = 129,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -4236,12 +990,12 @@ _detalhes_database = {
 				},
 				["last_events_tables"] = {
 				},
-				["enemy"] = "Feltotem Warmonger",
-				["combat_counter"] = 6042,
+				["enemy"] = "Young Snowfeather",
+				["combat_counter"] = 6095,
 				["playing_solo"] = true,
 				["totals"] = {
-					1531917.974978, -- [1]
-					14627.991683, -- [2]
+					699630.968679, -- [1]
+					61195.964333, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -4255,7 +1009,7 @@ _detalhes_database = {
 						["cooldowns_defensive"] = 0,
 						["interrupt"] = 0,
 						["dispell"] = 0,
-						["cc_break"] = 1,
+						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
@@ -4275,30 +1029,30 @@ _detalhes_database = {
 					},
 					["heal"] = {
 						{
-							["Emmarosa"] = 14628.00765,
+							["Emmarosa"] = 61196.007637,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
 					["damage"] = {
 						{
-							["Emmarosa"] = 1531918.006482,
+							["Emmarosa"] = 699631.006018,
 						}, -- [1]
 					},
 				},
-				["end_time"] = 611508.474,
-				["combat_id"] = 89,
+				["end_time"] = 668769.497,
+				["combat_id"] = 129,
 				["instance_type"] = "none",
 				["frags"] = {
-					["Feltotem Warmonger"] = 1,
+					["Young Snowfeather"] = 5,
 				},
-				["data_fim"] = "22:09:22",
-				["data_inicio"] = "22:09:15",
+				["data_fim"] = "14:03:43",
+				["data_inicio"] = "14:03:36",
 				["CombatSkillCache"] = {
 				},
 				["totals_grupo"] = {
-					1478196, -- [1]
-					14628, -- [2]
+					646342, -- [1]
+					61196, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -4312,19 +1066,2457 @@ _detalhes_database = {
 						["cooldowns_defensive"] = 0,
 						["interrupt"] = 0,
 						["dispell"] = 0,
-						["cc_break"] = 1,
+						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["start_time"] = 611501.834,
-				["contra"] = "Feltotem Warmonger",
+				["start_time"] = 668762.81,
+				["contra"] = "Young Snowfeather",
+				["TimeData"] = {
+				},
+			}, -- [2]
+			{
+				{
+					["combatId"] = 128,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["damage_from"] = {
+								["Snowfeather Nest-Keeper"] = true,
+								["Young Snowfeather"] = true,
+							},
+							["targets"] = {
+								["Snowfeather Nest-Keeper"] = 673893,
+								["Young Snowfeather"] = 522107,
+							},
+							["pets"] = {
+								"Vanessa VanCleef <Emmarosa>", -- [1]
+							},
+							["total"] = 1196000.008971,
+							["on_hold"] = false,
+							["classe"] = "ROGUE",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1096548.008971,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1479323013,
+							["friendlyfire_total"] = 0,
+							["spec"] = 260,
+							["nome"] = "Emmarosa",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 68265,
+										["g_amt"] = 0,
+										["n_max"] = 23536,
+										["targets"] = {
+											["Snowfeather Nest-Keeper"] = 116241,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 47976,
+										["n_min"] = 11256,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 116241,
+										["c_max"] = 44783,
+										["MISS"] = 1,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 23482,
+									}, -- [1]
+									[2098] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 215660,
+										["targets"] = {
+											["Snowfeather Nest-Keeper"] = 215660,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 215660,
+										["n_min"] = 215660,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 215660,
+										["c_max"] = 0,
+										["id"] = 2098,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[193315] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 88130,
+										["targets"] = {
+											["Snowfeather Nest-Keeper"] = 88130,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 88130,
+										["n_min"] = 88130,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 88130,
+										["c_max"] = 0,
+										["id"] = 193315,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[8676] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 98543,
+										["targets"] = {
+											["Snowfeather Nest-Keeper"] = 98543,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 98543,
+										["n_min"] = 98543,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 98543,
+										["c_max"] = 0,
+										["id"] = 8676,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[86392] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 46249,
+										["g_amt"] = 0,
+										["n_max"] = 26454,
+										["targets"] = {
+											["Snowfeather Nest-Keeper"] = 72703,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 26454,
+										["n_min"] = 26454,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 72703,
+										["c_max"] = 46249,
+										["id"] = 86392,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 46249,
+									},
+									[22482] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 75481,
+										["targets"] = {
+											["Young Snowfeather"] = 464699,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 464699,
+										["n_min"] = 3940,
+										["g_dmg"] = 0,
+										["counter"] = 24,
+										["total"] = 464699,
+										["c_max"] = 0,
+										["id"] = 22482,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 24,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[196937] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 40572,
+										["targets"] = {
+											["Snowfeather Nest-Keeper"] = 40572,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 40572,
+										["n_min"] = 40572,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 40572,
+										["c_max"] = 0,
+										["id"] = 196937,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-60-0A91880D",
+							["last_dps"] = 119600.0008971,
+							["custom"] = 0,
+							["last_event"] = 1479323012,
+							["damage_taken"] = 297779.008971,
+							["start_time"] = 1479323007,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["serial"] = "Creature-0-3782-1220-21568-111254-00002CACE5",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Snowfeather Nest-Keeper"] = 42044,
+								["Young Snowfeather"] = 57408,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 99452.0035,
+							["dps_started"] = false,
+							["total"] = 99452.0035,
+							["classe"] = "PET",
+							["ownerName"] = "Emmarosa",
+							["nome"] = "Vanessa VanCleef <Emmarosa>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 5052,
+										["targets"] = {
+											["Snowfeather Nest-Keeper"] = 7578,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 7578,
+										["n_min"] = 2526,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 7578,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									}, -- [1]
+									[221515] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 19136,
+										["g_amt"] = 0,
+										["n_max"] = 9568,
+										["targets"] = {
+											["Snowfeather Nest-Keeper"] = 9568,
+											["Young Snowfeather"] = 57408,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 47840,
+										["n_min"] = 9568,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 66976,
+										["c_max"] = 19136,
+										["id"] = 221515,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["r_amt"] = 0,
+										["c_min"] = 19136,
+									},
+									[221512] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 24898,
+										["targets"] = {
+											["Snowfeather Nest-Keeper"] = 24898,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 24898,
+										["n_min"] = 24898,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 24898,
+										["c_max"] = 0,
+										["id"] = 221512,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1479323013,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.0035,
+							["start_time"] = 1479323010,
+							["delay"] = 0,
+							["last_event"] = 1479323011,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 128,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorb"] = 0.003662,
+							["last_hps"] = 0,
+							["healing_from"] = {
+								["Emmarosa"] = true,
+							},
+							["targets"] = {
+								["Emmarosa"] = 218473,
+							},
+							["last_event"] = 1479323013,
+							["pets"] = {
+								"Vanessa VanCleef <Emmarosa>", -- [1]
+							},
+							["totalover_without_pet"] = 0.003662,
+							["targets_overheal"] = {
+							},
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 26340.003662,
+							["total_without_pet"] = 218473.003662,
+							["iniciar_hps"] = false,
+							["classe"] = "ROGUE",
+							["fight_component"] = true,
+							["total"] = 218473.003662,
+							["serial"] = "Player-60-0A91880D",
+							["healing_taken"] = 218473.003662,
+							["nome"] = "Emmarosa",
+							["spec"] = 260,
+							["grupo"] = true,
+							["end_time"] = 1479323013,
+							["heal_enemy"] = {
+							},
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[143924] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 117097,
+										["targets"] = {
+											["Emmarosa"] = 218473,
+										},
+										["n_min"] = 4144,
+										["counter"] = 5,
+										["overheal"] = 0,
+										["total"] = 218473,
+										["c_max"] = 0,
+										["id"] = 143924,
+										["targets_absorbs"] = {
+										},
+										["m_crit"] = 0,
+										["c_curado"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 218473,
+										["m_healed"] = 0,
+										["n_amt"] = 5,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["start_time"] = 1479323007,
+							["delay"] = 0,
+							["targets_absorbs"] = {
+							},
+						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["totalabsorb"] = 0.007077,
+							["last_hps"] = 0,
+							["healing_from"] = {
+							},
+							["targets"] = {
+							},
+							["healing_taken"] = 0.007077,
+							["pets"] = {
+							},
+							["totalover_without_pet"] = 0.007077,
+							["targets_overheal"] = {
+								["Vanessa VanCleef <Emmarosa>"] = 26340,
+							},
+							["classe"] = "PET",
+							["totalover"] = 26340.007077,
+							["total_without_pet"] = 0.007077,
+							["last_event"] = 1479323013,
+							["iniciar_hps"] = false,
+							["heal_enemy_amt"] = 0,
+							["total"] = 0.007077,
+							["targets_absorbs"] = {
+							},
+							["ownerName"] = "Emmarosa",
+							["nome"] = "Vanessa VanCleef <Emmarosa>",
+							["end_time"] = 1479323013,
+							["heal_enemy"] = {
+							},
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[143924] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Vanessa VanCleef <Emmarosa>"] = 26340,
+										},
+										["n_max"] = 0,
+										["targets"] = {
+											["Vanessa VanCleef <Emmarosa>"] = 0,
+										},
+										["n_min"] = 0,
+										["counter"] = 2,
+										["overheal"] = 26340,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 143924,
+										["targets_absorbs"] = {
+										},
+										["m_crit"] = 0,
+										["c_curado"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 0,
+										["m_healed"] = 0,
+										["n_amt"] = 2,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["start_time"] = 1479323008,
+							["delay"] = 0,
+							["serial"] = "Creature-0-3782-1220-21568-111254-00002CACE5",
+						}, -- [2]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 128,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 128,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["fight_component"] = true,
+							["flag_original"] = 1047,
+							["nome"] = "Emmarosa",
+							["spec"] = 260,
+							["grupo"] = true,
+							["buff_uptime_targets"] = {
+							},
+							["buff_uptime"] = 18,
+							["pets"] = {
+								"Vanessa VanCleef <Emmarosa>", -- [1]
+							},
+							["spell_cast"] = {
+								[2098] = 1,
+								[193315] = 1,
+								[193316] = 1,
+								[137619] = 1,
+								[196937] = 1,
+								[139546] = 2,
+								[8676] = 1,
+							},
+							["classe"] = "ROGUE",
+							["tipo"] = 4,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[193538] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = 193538,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[13877] = {
+										["uptime"] = 6,
+										["activedamt"] = 1,
+										["id"] = 13877,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[186401] = {
+										["uptime"] = 6,
+										["activedamt"] = 1,
+										["id"] = 186401,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[188741] = {
+										["uptime"] = 6,
+										["activedamt"] = 1,
+										["id"] = 188741,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[195627] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = 195627,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[193358] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = 193358,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-60-0A91880D",
+							["last_event"] = 1479323013,
+						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["ownerName"] = "Emmarosa",
+							["nome"] = "Vanessa VanCleef <Emmarosa>",
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["spell_cast"] = {
+								[221515] = 1,
+								[221512] = 1,
+							},
+							["serial"] = "Creature-0-3782-1220-21568-111254-00002CACE5",
+							["last_event"] = 0,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 128,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Emmarosa"] = true,
+				},
+				["last_events_tables"] = {
+				},
+				["enemy"] = "Snowfeather Nest-Keeper",
+				["combat_counter"] = 6094,
+				["playing_solo"] = true,
+				["totals"] = {
+					1195999.956659, -- [1]
+					218472.974034, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Emmarosa"] = 218473.003662,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Emmarosa"] = 1196000.008971,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 668760.097,
+				["combat_id"] = 128,
+				["instance_type"] = "none",
+				["frags"] = {
+					["Snowfeather Nest-Keeper"] = 1,
+					["Young Snowfeather"] = 6,
+				},
+				["data_fim"] = "14:03:33",
+				["data_inicio"] = "14:03:27",
+				["CombatSkillCache"] = {
+				},
+				["totals_grupo"] = {
+					1096548, -- [1]
+					218473, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["start_time"] = 668754.183,
+				["contra"] = "Snowfeather Nest-Keeper",
+				["TimeData"] = {
+				},
+			}, -- [3]
+			{
+				{
+					["combatId"] = 127,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["damage_from"] = {
+								["Young Snowfeather"] = true,
+							},
+							["targets"] = {
+								["Snowfeather Nest-Keeper"] = 2305715,
+								["Young Snowfeather"] = 462991,
+							},
+							["pets"] = {
+								"Vanessa VanCleef <Emmarosa>", -- [1]
+							},
+							["total"] = 2768706.005653,
+							["on_hold"] = false,
+							["classe"] = "ROGUE",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 2748497.005653,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1479322976,
+							["friendlyfire_total"] = 0,
+							["spec"] = 260,
+							["nome"] = "Emmarosa",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 44652,
+										["g_amt"] = 0,
+										["n_max"] = 24015,
+										["targets"] = {
+											["Snowfeather Nest-Keeper"] = 68667,
+											["Young Snowfeather"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 24015,
+										["n_min"] = 24015,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 68667,
+										["c_max"] = 44652,
+										["MISS"] = 2,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 44652,
+									}, -- [1]
+									[202822] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 75667,
+										["targets"] = {
+											["Snowfeather Nest-Keeper"] = 75667,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 75667,
+										["n_min"] = 75667,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 75667,
+										["c_max"] = 0,
+										["id"] = 202822,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[191259] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 110860,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Snowfeather Nest-Keeper"] = 110860,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 110860,
+										["c_max"] = 110860,
+										["id"] = 191259,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 110860,
+									},
+									[8676] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 200761,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Snowfeather Nest-Keeper"] = 200761,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 200761,
+										["c_max"] = 200761,
+										["id"] = 8676,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 200761,
+									},
+									[22482] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 150962,
+										["targets"] = {
+											["Snowfeather Nest-Keeper"] = 150962,
+											["Young Snowfeather"] = 452886,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 603848,
+										["n_min"] = 150962,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 603848,
+										["c_max"] = 0,
+										["id"] = 22482,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[202823] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 37042,
+										["targets"] = {
+											["Snowfeather Nest-Keeper"] = 37042,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 37042,
+										["n_min"] = 37042,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 37042,
+										["c_max"] = 0,
+										["id"] = 202823,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[2098] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 862640,
+										["g_amt"] = 0,
+										["n_max"] = 215660,
+										["targets"] = {
+											["Snowfeather Nest-Keeper"] = 1078300,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 215660,
+										["n_min"] = 215660,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 1078300,
+										["c_max"] = 431320,
+										["id"] = 2098,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 431320,
+									},
+									[86392] = {
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 140318,
+										["g_amt"] = 0,
+										["n_max"] = 22801,
+										["targets"] = {
+											["Snowfeather Nest-Keeper"] = 163119,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 22801,
+										["n_min"] = 22801,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 163119,
+										["c_max"] = 48510,
+										["id"] = 86392,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 44519,
+									},
+									[197834] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 154031,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Snowfeather Nest-Keeper"] = 154031,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 154031,
+										["c_max"] = 154031,
+										["id"] = 197834,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 154031,
+									},
+									[227870] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 89603,
+										["g_amt"] = 0,
+										["n_max"] = 45332,
+										["targets"] = {
+											["Snowfeather Nest-Keeper"] = 178233,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 88630,
+										["n_min"] = 43298,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 178233,
+										["c_max"] = 89603,
+										["id"] = 227870,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 89603,
+									},
+									[193315] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 77969,
+										["targets"] = {
+											["Snowfeather Nest-Keeper"] = 77969,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 77969,
+										["n_min"] = 77969,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 77969,
+										["c_max"] = 0,
+										["id"] = 193315,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-60-0A91880D",
+							["last_dps"] = 276870.6005653,
+							["custom"] = 0,
+							["last_event"] = 1479322975,
+							["damage_taken"] = 87447.005653,
+							["start_time"] = 1479322970,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["serial"] = "Creature-0-3782-1220-21568-111254-00002CACE5",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Snowfeather Nest-Keeper"] = 10104,
+								["Young Snowfeather"] = 10105,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 20209.002164,
+							["dps_started"] = false,
+							["total"] = 20209.002164,
+							["classe"] = "PET",
+							["ownerName"] = "Emmarosa",
+							["nome"] = "Vanessa VanCleef <Emmarosa>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 15157,
+										["g_amt"] = 0,
+										["n_max"] = 5052,
+										["targets"] = {
+											["Snowfeather Nest-Keeper"] = 10104,
+											["Young Snowfeather"] = 10105,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 5052,
+										["n_min"] = 5052,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 20209,
+										["c_max"] = 10105,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 5052,
+									}, -- [1]
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1479322976,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.002164,
+							["start_time"] = 1479322973,
+							["delay"] = 0,
+							["last_event"] = 1479322975,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 127,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorb"] = 0.008232,
+							["last_hps"] = 0,
+							["healing_from"] = {
+								["Emmarosa"] = true,
+							},
+							["targets"] = {
+								["Emmarosa"] = 127975,
+							},
+							["last_event"] = 1479322976,
+							["pets"] = {
+								"Vanessa VanCleef <Emmarosa>", -- [1]
+							},
+							["totalover_without_pet"] = 0.008232,
+							["targets_overheal"] = {
+							},
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 292.008232,
+							["total_without_pet"] = 127975.008232,
+							["iniciar_hps"] = false,
+							["classe"] = "ROGUE",
+							["fight_component"] = true,
+							["total"] = 127975.008232,
+							["serial"] = "Player-60-0A91880D",
+							["healing_taken"] = 127975.008232,
+							["nome"] = "Emmarosa",
+							["spec"] = 260,
+							["grupo"] = true,
+							["end_time"] = 1479322976,
+							["heal_enemy"] = {
+							},
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[143924] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 11273,
+										["targets"] = {
+											["Emmarosa"] = 38191,
+										},
+										["n_min"] = 1631,
+										["counter"] = 5,
+										["overheal"] = 0,
+										["total"] = 38191,
+										["c_max"] = 0,
+										["id"] = 143924,
+										["targets_absorbs"] = {
+										},
+										["m_crit"] = 0,
+										["c_curado"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 38191,
+										["m_healed"] = 0,
+										["n_amt"] = 5,
+										["absorbed"] = 0,
+									},
+									[202824] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 89784,
+										["targets"] = {
+											["Emmarosa"] = 89784,
+										},
+										["n_min"] = 89784,
+										["counter"] = 1,
+										["overheal"] = 0,
+										["total"] = 89784,
+										["c_max"] = 0,
+										["id"] = 202824,
+										["targets_absorbs"] = {
+										},
+										["m_crit"] = 0,
+										["c_curado"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 89784,
+										["m_healed"] = 0,
+										["n_amt"] = 1,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["start_time"] = 1479322971,
+							["delay"] = 0,
+							["targets_absorbs"] = {
+							},
+						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["totalabsorb"] = 0.006927,
+							["last_hps"] = 0,
+							["healing_from"] = {
+							},
+							["targets"] = {
+							},
+							["healing_taken"] = 0.006927,
+							["pets"] = {
+							},
+							["totalover_without_pet"] = 0.006927,
+							["targets_overheal"] = {
+								["Vanessa VanCleef <Emmarosa>"] = 292,
+							},
+							["classe"] = "PET",
+							["totalover"] = 292.006927,
+							["total_without_pet"] = 0.006927,
+							["last_event"] = 1479322976,
+							["iniciar_hps"] = false,
+							["heal_enemy_amt"] = 0,
+							["total"] = 0.006927,
+							["targets_absorbs"] = {
+							},
+							["ownerName"] = "Emmarosa",
+							["nome"] = "Vanessa VanCleef <Emmarosa>",
+							["end_time"] = 1479322976,
+							["heal_enemy"] = {
+							},
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[143924] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Vanessa VanCleef <Emmarosa>"] = 292,
+										},
+										["n_max"] = 0,
+										["targets"] = {
+											["Vanessa VanCleef <Emmarosa>"] = 0,
+										},
+										["n_min"] = 0,
+										["counter"] = 1,
+										["overheal"] = 292,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 143924,
+										["targets_absorbs"] = {
+										},
+										["m_crit"] = 0,
+										["c_curado"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 0,
+										["m_healed"] = 0,
+										["n_amt"] = 1,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["start_time"] = 1479322976,
+							["delay"] = 0,
+							["serial"] = "Creature-0-3782-1220-21568-111254-00002CACE5",
+						}, -- [2]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 127,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 127,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["fight_component"] = true,
+							["flag_original"] = 1047,
+							["nome"] = "Emmarosa",
+							["spec"] = 260,
+							["grupo"] = true,
+							["buff_uptime_targets"] = {
+							},
+							["buff_uptime"] = 36,
+							["pets"] = {
+								"Vanessa VanCleef <Emmarosa>", -- [1]
+							},
+							["spell_cast"] = {
+								[2098] = 3,
+								[193315] = 1,
+								[8676] = 1,
+								[227870] = 4,
+								[139546] = 3,
+								[137619] = 1,
+							},
+							["classe"] = "ROGUE",
+							["tipo"] = 4,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[193538] = {
+										["uptime"] = 6,
+										["activedamt"] = 1,
+										["id"] = 193538,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[193357] = {
+										["uptime"] = 6,
+										["activedamt"] = 1,
+										["id"] = 193357,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[13877] = {
+										["uptime"] = 6,
+										["activedamt"] = 1,
+										["id"] = 13877,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[2983] = {
+										["actived_at"] = 1479322970,
+										["uptime"] = 0,
+										["activedamt"] = 1,
+										["id"] = 2983,
+										["actived"] = true,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[195627] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = 195627,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[188741] = {
+										["uptime"] = 6,
+										["activedamt"] = 1,
+										["id"] = 188741,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[186401] = {
+										["uptime"] = 6,
+										["activedamt"] = 1,
+										["id"] = 186401,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[193356] = {
+										["uptime"] = 6,
+										["activedamt"] = 1,
+										["id"] = 193356,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-60-0A91880D",
+							["last_event"] = 1479322976,
+						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["ownerName"] = "Emmarosa",
+							["nome"] = "Vanessa VanCleef <Emmarosa>",
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["spell_cast"] = {
+								[221792] = 1,
+							},
+							["serial"] = "Creature-0-3782-1220-21568-111254-00002CACE5",
+							["last_event"] = 0,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 127,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Emmarosa"] = true,
+				},
+				["last_events_tables"] = {
+				},
+				["enemy"] = "Young Snowfeather",
+				["combat_counter"] = 6091,
+				["playing_solo"] = true,
+				["totals"] = {
+					2768705.894194, -- [1]
+					127974.989363, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Emmarosa"] = 129205.015693,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Emmarosa"] = 2998145.015929,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 668723.156,
+				["combat_id"] = 127,
+				["instance_type"] = "none",
+				["resincked"] = true,
+				["frags"] = {
+					["Young Snowfeather"] = 3,
+					["Snowfeather Nest-Keeper"] = 3,
+					["Long-Eared Owl"] = 1,
+				},
+				["data_fim"] = "14:02:56",
+				["data_inicio"] = "14:02:51",
+				["CombatSkillCache"] = {
+				},
+				["totals_grupo"] = {
+					2748497, -- [1]
+					127975, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["start_time"] = 668717.474,
+				["contra"] = "Snowfeather Nest-Keeper",
+				["TimeData"] = {
+				},
+			}, -- [4]
+			{
+				{
+					["combatId"] = 126,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["damage_from"] = {
+								["Snowfeather Nest-Keeper"] = true,
+								["Young Snowfeather"] = true,
+							},
+							["targets"] = {
+								["Young Snowfeather"] = 922751,
+								["Snowfeather Nest-Keeper"] = 1341104,
+								["Snowfeather Nest"] = 48683,
+							},
+							["pets"] = {
+								"Vanessa VanCleef <Emmarosa>", -- [1]
+							},
+							["total"] = 2312538.004269,
+							["on_hold"] = false,
+							["classe"] = "ROGUE",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 2187704.004269,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1479322959,
+							["friendlyfire_total"] = 0,
+							["spec"] = 260,
+							["nome"] = "Emmarosa",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 79280,
+										["g_amt"] = 0,
+										["n_max"] = 24600,
+										["targets"] = {
+											["Snowfeather Nest-Keeper"] = 115423,
+											["Young Snowfeather"] = 24600,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 60743,
+										["n_min"] = 13467,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 140023,
+										["c_max"] = 52484,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 26796,
+									}, -- [1]
+									[2098] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 474452,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Snowfeather Nest-Keeper"] = 474452,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 474452,
+										["c_max"] = 474452,
+										["id"] = 2098,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 474452,
+									},
+									[193315] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 151434,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Young Snowfeather"] = 151434,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 151434,
+										["c_max"] = 151434,
+										["id"] = 193315,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 151434,
+									},
+									[8676] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 93758,
+										["targets"] = {
+											["Snowfeather Nest-Keeper"] = 93758,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 93758,
+										["n_min"] = 93758,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 93758,
+										["c_max"] = 0,
+										["id"] = 8676,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[191259] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 51163,
+										["targets"] = {
+											["Snowfeather Nest-Keeper"] = 51163,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 51163,
+										["n_min"] = 51163,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 51163,
+										["c_max"] = 0,
+										["id"] = 191259,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[227870] = {
+										["c_amt"] = 4,
+										["b_amt"] = 0,
+										["c_dmg"] = 376705,
+										["g_amt"] = 0,
+										["n_max"] = 48772,
+										["targets"] = {
+											["Snowfeather Nest-Keeper"] = 429953,
+											["Young Snowfeather"] = 84410,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 137658,
+										["n_min"] = 42797,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 514363,
+										["c_max"] = 98341,
+										["id"] = 227870,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 84410,
+									},
+									[22482] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 166059,
+										["targets"] = {
+											["Young Snowfeather"] = 624036,
+											["Snowfeather Nest"] = 48683,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 672719,
+										["n_min"] = 7932,
+										["g_dmg"] = 0,
+										["counter"] = 13,
+										["total"] = 672719,
+										["c_max"] = 0,
+										["id"] = 22482,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 13,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[196937] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 42325,
+										["targets"] = {
+											["Snowfeather Nest-Keeper"] = 42325,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 42325,
+										["n_min"] = 42325,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 42325,
+										["c_max"] = 0,
+										["id"] = 196937,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[86392] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 24803,
+										["targets"] = {
+											["Snowfeather Nest-Keeper"] = 47467,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 47467,
+										["n_min"] = 22664,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 47467,
+										["c_max"] = 0,
+										["id"] = 86392,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-60-0A91880D",
+							["last_dps"] = 231253.8004269,
+							["custom"] = 0,
+							["last_event"] = 1479322959,
+							["damage_taken"] = 233461.004269,
+							["start_time"] = 1479322953,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["serial"] = "Creature-0-3782-1220-21568-111254-00002CACE5",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Snowfeather Nest-Keeper"] = 86563,
+								["Young Snowfeather"] = 38271,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 124834.001071,
+							["dps_started"] = false,
+							["total"] = 124834.001071,
+							["classe"] = "PET",
+							["ownerName"] = "Emmarosa",
+							["nome"] = "Vanessa VanCleef <Emmarosa>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 25262,
+										["g_amt"] = 0,
+										["n_max"] = 2526,
+										["targets"] = {
+											["Snowfeather Nest-Keeper"] = 27788,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 2526,
+										["n_min"] = 2526,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 27788,
+										["c_max"] = 10105,
+										["MISS"] = 1,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 5052,
+									}, -- [1]
+									[221512] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 58775,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Snowfeather Nest-Keeper"] = 58775,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 58775,
+										["c_max"] = 58775,
+										["id"] = 221512,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 58775,
+									},
+									[221515] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 38271,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Young Snowfeather"] = 38271,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 38271,
+										["c_max"] = 19136,
+										["id"] = 221515,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 19135,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1479322959,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.001071,
+							["start_time"] = 1479322954,
+							["delay"] = 0,
+							["last_event"] = 1479322958,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 126,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorb"] = 0.005056,
+							["last_hps"] = 0,
+							["healing_from"] = {
+								["Emmarosa"] = true,
+							},
+							["targets"] = {
+								["Emmarosa"] = 29354,
+							},
+							["last_event"] = 1479322958,
+							["pets"] = {
+								"Vanessa VanCleef <Emmarosa>", -- [1]
+							},
+							["totalover_without_pet"] = 0.005056,
+							["targets_overheal"] = {
+							},
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 184.005056,
+							["total_without_pet"] = 29354.005056,
+							["iniciar_hps"] = false,
+							["classe"] = "ROGUE",
+							["fight_component"] = true,
+							["total"] = 29354.005056,
+							["serial"] = "Player-60-0A91880D",
+							["healing_taken"] = 29354.005056,
+							["nome"] = "Emmarosa",
+							["spec"] = 260,
+							["grupo"] = true,
+							["end_time"] = 1479322959,
+							["heal_enemy"] = {
+							},
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[143924] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 18734,
+										["targets"] = {
+											["Emmarosa"] = 29354,
+										},
+										["n_min"] = 1421,
+										["counter"] = 5,
+										["overheal"] = 0,
+										["total"] = 29354,
+										["c_max"] = 0,
+										["id"] = 143924,
+										["targets_absorbs"] = {
+										},
+										["m_crit"] = 0,
+										["c_curado"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 29354,
+										["m_healed"] = 0,
+										["n_amt"] = 5,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["start_time"] = 1479322954,
+							["delay"] = 0,
+							["targets_absorbs"] = {
+							},
+						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["totalabsorb"] = 0.0029,
+							["last_hps"] = 0,
+							["healing_from"] = {
+							},
+							["targets"] = {
+							},
+							["healing_taken"] = 0.0029,
+							["pets"] = {
+							},
+							["totalover_without_pet"] = 0.0029,
+							["targets_overheal"] = {
+								["Vanessa VanCleef <Emmarosa>"] = 184,
+							},
+							["classe"] = "PET",
+							["totalover"] = 184.0029,
+							["total_without_pet"] = 0.0029,
+							["last_event"] = 1479322955,
+							["iniciar_hps"] = false,
+							["heal_enemy_amt"] = 0,
+							["total"] = 0.0029,
+							["targets_absorbs"] = {
+							},
+							["ownerName"] = "Emmarosa",
+							["nome"] = "Vanessa VanCleef <Emmarosa>",
+							["end_time"] = 1479322959,
+							["heal_enemy"] = {
+							},
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[143924] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Vanessa VanCleef <Emmarosa>"] = 184,
+										},
+										["n_max"] = 0,
+										["targets"] = {
+											["Vanessa VanCleef <Emmarosa>"] = 0,
+										},
+										["n_min"] = 0,
+										["counter"] = 1,
+										["overheal"] = 184,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 143924,
+										["targets_absorbs"] = {
+										},
+										["m_crit"] = 0,
+										["c_curado"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 0,
+										["m_healed"] = 0,
+										["n_amt"] = 1,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["start_time"] = 1479322955,
+							["delay"] = 0,
+							["serial"] = "Creature-0-3782-1220-21568-111254-00002CACE5",
+						}, -- [2]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 126,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 126,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["fight_component"] = true,
+							["flag_original"] = 1047,
+							["nome"] = "Emmarosa",
+							["spec"] = 260,
+							["grupo"] = true,
+							["buff_uptime_targets"] = {
+							},
+							["buff_uptime"] = 24,
+							["pets"] = {
+								"Vanessa VanCleef <Emmarosa>", -- [1]
+							},
+							["spell_cast"] = {
+								[2098] = 1,
+								[193315] = 1,
+								[193316] = 1,
+								[137619] = 1,
+								[196937] = 1,
+								[8676] = 1,
+								[139546] = 2,
+								[227870] = 7,
+							},
+							["classe"] = "ROGUE",
+							["tipo"] = 4,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[193357] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = 193357,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[13877] = {
+										["uptime"] = 6,
+										["activedamt"] = 1,
+										["id"] = 13877,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[188741] = {
+										["uptime"] = 6,
+										["activedamt"] = 1,
+										["id"] = 188741,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[227869] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = 227869,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[193356] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = 193356,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[193538] = {
+										["uptime"] = 6,
+										["activedamt"] = 1,
+										["id"] = 193538,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[195627] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = 195627,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[202754] = {
+										["actived_at"] = 1479322953,
+										["uptime"] = 0,
+										["activedamt"] = 1,
+										["id"] = 202754,
+										["actived"] = true,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[186401] = {
+										["uptime"] = 6,
+										["activedamt"] = 1,
+										["id"] = 186401,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-60-0A91880D",
+							["last_event"] = 1479322959,
+						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["ownerName"] = "Emmarosa",
+							["nome"] = "Vanessa VanCleef <Emmarosa>",
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["spell_cast"] = {
+								[221512] = 1,
+								[221515] = 1,
+							},
+							["serial"] = "Creature-0-3782-1220-21568-111254-00002CACE5",
+							["last_event"] = 0,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 126,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Emmarosa"] = true,
+				},
+				["last_events_tables"] = {
+				},
+				["enemy"] = "Snowfeather Nest-Keeper",
+				["combat_counter"] = 6090,
+				["playing_solo"] = true,
+				["totals"] = {
+					2312537.956885, -- [1]
+					29353.996433, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Emmarosa"] = 29354.005056,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Emmarosa"] = 2312538.004269,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 668706.49,
+				["combat_id"] = 126,
+				["instance_type"] = "none",
+				["frags"] = {
+					["Coralback Fiddler"] = 1,
+					["Young Snowfeather"] = 4,
+					["Snowfeather Nest-Keeper"] = 1,
+					["Snowfeather Nest"] = 1,
+				},
+				["data_fim"] = "14:02:40",
+				["data_inicio"] = "14:02:34",
+				["CombatSkillCache"] = {
+				},
+				["totals_grupo"] = {
+					2187704, -- [1]
+					29354, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["start_time"] = 668700.613,
+				["contra"] = "Snowfeather Nest-Keeper",
 				["TimeData"] = {
 				},
 			}, -- [5]
 		},
 	},
-	["last_version"] = "v7.1.0.3202",
-	["last_encounter"] = "Elerethe Renferal",
+	["cached_talents"] = {
+		["Player-60-0A91880D"] = {
+			22338, -- [1]
+			21186, -- [2]
+			19239, -- [3]
+			22341, -- [4]
+			22331, -- [5]
+			22343, -- [6]
+			22123, -- [7]
+		},
+		["Player-3721-0A238C0A"] = {
+			22387, -- [1]
+			21655, -- [2]
+			22389, -- [3]
+			22159, -- [4]
+			18576, -- [5]
+			18570, -- [6]
+			18579, -- [7]
+		},
+		["Player-5-0A995C82"] = {
+			18569, -- [1]
+			18570, -- [2]
+			22160, -- [3]
+			18577, -- [4]
+			21704, -- [5]
+			22165, -- [6]
+			22404, -- [7]
+		},
+		["Player-76-090A5121"] = {
+			22279, -- [1]
+			22495, -- [2]
+			19347, -- [3]
+			21998, -- [4]
+			22284, -- [5]
+			22002, -- [6]
+			22274, -- [7]
+		},
+		["Player-60-0A9AB7FE"] = {
+			22512, -- [1]
+			22541, -- [2]
+			22507, -- [3]
+			22543, -- [4]
+			22503, -- [5]
+			22770, -- [6]
+			22511, -- [7]
+		},
+	},
+	["last_version"] = "v7.1.0.3212",
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
 			["lasttry"] = {
@@ -4333,9 +3525,9 @@ _detalhes_database = {
 			["dpshistory"] = {
 			},
 			["enabled"] = true,
-			["dps"] = 0,
-			["level"] = 1,
 			["author"] = "Details! Team",
+			["level"] = 1,
+			["dps"] = 0,
 		},
 		["DETAILS_PLUGIN_DEATH_GRAPHICS"] = {
 			["last_boss"] = false,
@@ -4383,7 +3575,7 @@ _detalhes_database = {
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["updatespeed"] = 1,
 			["enabled"] = true,
-			["animate"] = false,
+			["showamount"] = false,
 			["useplayercolor"] = false,
 			["author"] = "Details! Team",
 			["useclasscolors"] = false,
@@ -4392,7 +3584,7 @@ _detalhes_database = {
 				1, -- [2]
 				1, -- [3]
 			},
-			["showamount"] = false,
+			["animate"] = false,
 		},
 		["DETAILS_PLUGIN_DPS_TUNING"] = {
 			["enabled"] = true,
@@ -4489,216 +3681,26 @@ _detalhes_database = {
 		["channel"] = "SELF",
 	},
 	["character_data"] = {
-		["logons"] = 254,
+		["logons"] = 256,
 	},
-	["savedbuffs"] = {
-	},
-	["last_instance_time"] = 1479264473,
+	["last_realversion"] = 115,
+	["last_encounter"] = "Elerethe Renferal",
 	["tabela_instancias"] = {
 	},
-	["combat_id"] = 93,
+	["combat_id"] = 130,
 	["savedStyles"] = {
 	},
-	["SoloTablesSaved"] = {
-		["Mode"] = 1,
-	},
-	["cached_talents"] = {
-		["Player-105-08AE1213"] = {
-		},
-		["Player-3209-092D0DF8"] = {
-		},
-		["Player-1428-07727A89"] = {
-			19285, -- [1]
-			19279, -- [2]
-			19288, -- [3]
-			19281, -- [4]
-			22090, -- [5]
-			21182, -- [6]
-			21180, -- [7]
-		},
-		["Player-9-0696B797"] = {
-			22456, -- [1]
-			22442, -- [2]
-			22445, -- [3]
-			22465, -- [4]
-			22446, -- [5]
-			22451, -- [6]
-			21631, -- [7]
-		},
-		["Player-1426-076766B7"] = {
-		},
-		["Player-3694-07CF3E75"] = {
-		},
-		["Player-76-091C5008"] = {
-			15760, -- [1]
-			22629, -- [2]
-			22378, -- [3]
-			22488, -- [4]
-			22362, -- [5]
-			22401, -- [6]
-			22801, -- [7]
-		},
-		["Player-120-07C19D7C"] = {
-		},
-		["Player-3725-0A247893"] = {
-			18569, -- [1]
-			18570, -- [2]
-			22367, -- [3]
-			18577, -- [4]
-			21710, -- [5]
-			22165, -- [6]
-			22404, -- [7]
-		},
-		["Player-75-0A760CCB"] = {
-		},
-		["Player-78-05276E96"] = {
-		},
-		["Player-76-092EB3D0"] = {
-		},
-		["Player-9-0A536E0C"] = {
-		},
-		["Player-60-0AD3458C"] = {
-		},
-		["Player-120-06360762"] = {
-		},
-		["Player-60-0033E65F"] = {
-		},
-		["Player-3726-02B102D6"] = {
-		},
-		["Player-60-0A91880D"] = {
-			22338, -- [1]
-			21186, -- [2]
-			19239, -- [3]
-			22341, -- [4]
-			22331, -- [5]
-			22343, -- [6]
-			22123, -- [7]
-		},
-		["Player-11-0A6D158A"] = {
-		},
-		["Player-11-06D19B84"] = {
-		},
-		["Player-120-07A78CE9"] = {
-		},
-		["Player-3208-098498BA"] = {
-		},
-		["Player-3208-07F54B02"] = {
-		},
-		["Player-1168-07BF8C1C"] = {
-		},
-		["Player-76-090BC795"] = {
-		},
-		["Player-70-0A99CF37"] = {
-		},
-		["Player-76-0922684D"] = {
-			22477, -- [1]
-			19280, -- [2]
-			19288, -- [3]
-			22089, -- [4]
-			22041, -- [5]
-			22479, -- [6]
-			21717, -- [7]
-		},
-		["Player-60-0AD68658"] = {
-		},
-		["Player-55-08921E4A"] = {
-		},
-		["Player-60-0A1D2F4B"] = {
-			22344, -- [1]
-			22331, -- [2]
-			22339, -- [3]
-			22123, -- [4]
-			22114, -- [5]
-			22133, -- [6]
-			19239, -- [7]
-		},
-		["Player-116-0365C4EF"] = {
-		},
-		["Player-158-0733FE04"] = {
-			22279, -- [1]
-			22495, -- [2]
-			19347, -- [3]
-			21998, -- [4]
-			22284, -- [5]
-			22002, -- [6]
-			22274, -- [7]
-		},
-		["Player-1427-08DB7C04"] = {
-		},
-		["Player-60-0A776E91"] = {
-		},
-		["Player-162-07D0A8FB"] = {
-		},
-		["Player-3207-078D673D"] = {
-		},
-		["Player-76-08EFA1AC"] = {
-		},
-		["Player-60-0A3B5150"] = {
-		},
-		["Player-153-074172DE"] = {
-		},
-		["Player-106-0558D59F"] = {
-		},
-		["Player-104-08CEB51D"] = {
-		},
-		["Player-5-0A7324E8"] = {
-		},
-		["Player-60-0986E5B3"] = {
-		},
-		["Player-74-0980A59D"] = {
-		},
-		["Player-51-001FEB17"] = {
-		},
-		["Player-76-091CDA38"] = {
-		},
-		["Player-74-0972D1AD"] = {
-		},
-		["Player-5-0A337699"] = {
-		},
-		["Player-3661-06DB0F00"] = {
-		},
-		["Player-76-08123E1C"] = {
-		},
-		["Player-76-056FDECD"] = {
-		},
-		["Player-1428-08AD89B1"] = {
-		},
-		["Player-63-052DFB42"] = {
-		},
-		["Player-120-06E5A138"] = {
-		},
-		["Player-47-0242669C"] = {
-		},
-		["Player-60-086B6731"] = {
-		},
-		["Player-77-08A9E6E3"] = {
-		},
-		["Player-55-087D9EFE"] = {
-		},
-		["Player-1425-088F3727"] = {
-		},
-		["Player-76-05E41EC1"] = {
-		},
-		["Player-1175-09F40986"] = {
-		},
-		["Player-122-05A5FAC5"] = {
-		},
-		["Player-1070-0745D9E9"] = {
-		},
-		["Player-3234-09EC6849"] = {
-		},
-		["Player-96-07952F77"] = {
-		},
-		["Player-47-06A57959"] = {
-		},
-	},
+	["last_instance_time"] = 1479320868,
+	["combat_counter"] = 6097,
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
 		["only_first"] = 5,
 		["where"] = 1,
 	},
-	["last_realversion"] = 115,
+	["SoloTablesSaved"] = {
+		["Mode"] = 1,
+	},
 	["local_instances_config"] = {
 		{
 			["segment"] = 0,
@@ -4765,7 +3767,8 @@ _detalhes_database = {
 			},
 		}, -- [2]
 	},
-	["combat_counter"] = 6046,
+	["savedbuffs"] = {
+	},
 	["announce_cooldowns"] = {
 		["ignored_cooldowns"] = {
 		},
@@ -4798,34 +3801,17 @@ _detalhes_database = {
 			}, -- [6]
 			2, -- [7]
 		},
-		[167333142] = {
-			"Mapledk", -- [1]
-			"Interface\\EncounterJournal\\UI-EJ-BOSS-Default", -- [2]
-			{
-				0, -- [1]
-				1, -- [2]
-				0, -- [3]
-				1, -- [4]
-			}, -- [3]
-			"Interface\\PetBattles\\Weather-Windy", -- [4]
-			{
-				0.9453125, -- [1]
-				0.07421875, -- [2]
-				0.8203125, -- [3]
-				0, -- [4]
-			}, -- [5]
-			{
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			}, -- [6]
-			2, -- [7]
-		},
-		["nextreset"] = 1479304557,
+		["nextreset"] = 1480615478,
 	},
-	["last_instance_id"] = 1456,
+	["last_instance_id"] = 1466,
 	["cached_specs"] = {
+		["Player-60-0A9A2846"] = 577,
+		["Player-60-0999AFC1"] = 251,
+		["Player-60-0A6F8359"] = 70,
+		["Player-60-0A9FF5D3"] = 577,
+		["Player-60-09B114FE"] = 105,
+		["Player-60-067C7C42"] = 258,
 		["Player-60-0A91880D"] = 259,
-		["Player-60-05E9F210"] = 259,
+		["Player-60-097CFDD8"] = 66,
 	},
 }

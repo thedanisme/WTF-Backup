@@ -3,6 +3,8 @@ BigWigs3DB = {
 	["namespaces"] = {
 		["BigWigs_Plugins_Victory"] = {
 		},
+		["BigWigs_Bosses_Hymdall"] = {
+		},
 		["BigWigs_Plugins_Alt Power"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -17,11 +19,21 @@ BigWigs3DB = {
 		},
 		["BigWigs_Plugins_BossBlock"] = {
 		},
+		["BigWigs_Bosses_Odyn"] = {
+		},
 		["BigWigs_Plugins_Sounds"] = {
 		},
 		["BigWigs_Plugins_Statistics"] = {
 		},
-		["BigWigs_Plugins_Colors"] = {
+		["BigWigs_Bosses_God-King Skovald"] = {
+		},
+		["BigWigs_Bosses_Hyrja"] = {
+		},
+		["BigWigs_Bosses_Fenryr"] = {
+		},
+		["BigWigs_Bosses_Halls of Valor Trash"] = {
+		},
+		["BigWigs_Plugins_Common Auras"] = {
 		},
 		["BigWigs_Plugins_Raid Icons"] = {
 		},
@@ -42,14 +54,14 @@ BigWigs3DB = {
 				},
 			},
 		},
+		["BigWigs_Plugins_HeroesVoices"] = {
+		},
 		["BigWigs_Plugins_Super Emphasize"] = {
 			["profiles"] = {
 				["Default"] = {
 					["font"] = "Gotham-Narrow",
 				},
 			},
-		},
-		["BigWigs_Plugins_Common Auras"] = {
 		},
 		["BigWigs_Plugins_Messages"] = {
 			["profiles"] = {
@@ -64,8 +76,6 @@ BigWigs3DB = {
 					["fontSize"] = 20,
 				},
 			},
-		},
-		["BigWigs_Plugins_HeroesVoices"] = {
 		},
 		["BigWigs_Plugins_Proximity"] = {
 			["profiles"] = {
@@ -85,14 +95,16 @@ BigWigs3DB = {
 		},
 		["LibDualSpec-1.0"] = {
 		},
+		["BigWigs_Plugins_Respawn"] = {
+		},
+		["BigWigs_Plugins_Colors"] = {
+		},
 		["BigWigs_Plugins_Pull"] = {
 			["profiles"] = {
 				["Default"] = {
 					["countType"] = "normal",
 				},
 			},
-		},
-		["BigWigs_Plugins_Respawn"] = {
 		},
 	},
 	["global"] = {
@@ -102,11 +114,12 @@ BigWigs3DB = {
 	},
 	["profileKeys"] = {
 		["Oenta - Stormrage"] = "Default",
-		["Druidann - Stormrage"] = "Default",
 		["Whyfy - Stormrage"] = "Default",
+		["Shaneequa - Turalyon"] = "Default",
+		["Druidann - Stormrage"] = "Default",
+		["Jakwez - Stormrage"] = "Default",
 		["Emmarosa - Stormrage"] = "Default",
 		["Shhbbyisok - Stormrage"] = "Default",
-		["Shaneequa - Turalyon"] = "Default",
 		["Talthalador - Stormrage"] = "Default",
 		["Dosnutz - Stormrage"] = "Default",
 	},

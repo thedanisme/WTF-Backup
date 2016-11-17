@@ -14,6 +14,7 @@ TalentMacrosDB = {
 		["Pastaliar - Stormrage"] = "Pastaliar - Stormrage",
 		["Dosnutz - Stormrage"] = "Dosnutz - Stormrage",
 		["Yanlery - Stormrage"] = "Yanlery - Stormrage",
+		["Jakwez - Stormrage"] = "Jakwez - Stormrage",
 		["Retardar - Stormrage"] = "Retardar - Stormrage",
 		["Shhbbyisok - Stormrage"] = "Shhbbyisok - Stormrage",
 		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
@@ -68,6 +69,8 @@ TalentMacrosDB = {
 		["Dosnutz - Stormrage"] = {
 		},
 		["Yanlery - Stormrage"] = {
+		},
+		["Jakwez - Stormrage"] = {
 		},
 		["Retardar - Stormrage"] = {
 		},

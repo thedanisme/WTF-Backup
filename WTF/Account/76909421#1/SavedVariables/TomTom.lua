@@ -10,6 +10,7 @@ TomTomDB = {
 		["Pastaliar - Stormrage"] = "Default",
 		["Dosnutz - Stormrage"] = "Default",
 		["Yanlery - Stormrage"] = "Default",
+		["Jakwez - Stormrage"] = "Default",
 		["Retardar - Stormrage"] = "Default",
 		["Shhbbyisok - Stormrage"] = "Default",
 		["Emmarosa - Stormrage"] = "Default",
@@ -66,6 +67,7 @@ TomTomWaypointsMF = {
 		["Pastaliar - Stormrage"] = "Pastaliar - Stormrage",
 		["Dosnutz - Stormrage"] = "Dosnutz - Stormrage",
 		["Yanlery - Stormrage"] = "Yanlery - Stormrage",
+		["Jakwez - Stormrage"] = "Jakwez - Stormrage",
 		["Retardar - Stormrage"] = "Retardar - Stormrage",
 		["Shhbbyisok - Stormrage"] = "Shhbbyisok - Stormrage",
 		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
@@ -117,6 +119,8 @@ TomTomWaypointsMF = {
 		["Dosnutz - Stormrage"] = {
 		},
 		["Yanlery - Stormrage"] = {
+		},
+		["Jakwez - Stormrage"] = {
 		},
 		["Retardar - Stormrage"] = {
 		},

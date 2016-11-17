@@ -19,23 +19,24 @@ Postal3DB = {
 				"Emmarosa|Stormrage|Alliance|110|ROGUE", -- [14]
 				"Horny|Bloodhoof|Horde|7|SHAMAN", -- [15]
 				"Iphone|Bloodhoof|Horde|1|SHAMAN", -- [16]
-				"Jimbo|Ner'zhul|Alliance|13|DRUID", -- [17]
-				"Knutts|Turalyon|Horde|100|ROGUE", -- [18]
-				"Lackteight|Turalyon|Horde|100|WARLOCK", -- [19]
-				"Oenta|Stormrage|Alliance|110|DEATHKNIGHT", -- [20]
-				"Pryahprism|Turalyon|Horde|91|MAGE", -- [21]
-				"Ranidan|Stormreaver|Horde|100|MAGE", -- [22]
-				"Rosabria|Sargeras|Alliance|62|DRUID", -- [23]
-				"Rotator|Turalyon|Horde|100|WARRIOR", -- [24]
-				"Shamadan|Stormrage|Neutral|1|SHAMAN", -- [25]
-				"Shaneequa|Turalyon|Horde|100|SHAMAN", -- [26]
-				"Skratch|Turalyon|Horde|100|DRUID", -- [27]
-				"Talthalador|Stormrage|Alliance|100|DEMONHUNTER", -- [28]
-				"Titte|Turalyon|Horde|100|DEATHKNIGHT", -- [29]
-				"Titt|Turalyon|Horde|100|DEATHKNIGHT", -- [30]
-				"Ured|Ner'zhul|Alliance|90|DEATHKNIGHT", -- [31]
-				"Whyfy|Stormrage|Alliance|100|PALADIN", -- [32]
-				"Yanlery|Stormrage|Alliance|100|WARRIOR", -- [33]
+				"Jakwez|Stormrage|Alliance|100|SHAMAN", -- [17]
+				"Jimbo|Ner'zhul|Alliance|13|DRUID", -- [18]
+				"Knutts|Turalyon|Horde|100|ROGUE", -- [19]
+				"Lackteight|Turalyon|Horde|100|WARLOCK", -- [20]
+				"Oenta|Stormrage|Alliance|110|DEATHKNIGHT", -- [21]
+				"Pryahprism|Turalyon|Horde|91|MAGE", -- [22]
+				"Ranidan|Stormreaver|Horde|100|MAGE", -- [23]
+				"Rosabria|Sargeras|Alliance|62|DRUID", -- [24]
+				"Rotator|Turalyon|Horde|100|WARRIOR", -- [25]
+				"Shamadan|Stormrage|Neutral|1|SHAMAN", -- [26]
+				"Shaneequa|Turalyon|Horde|100|SHAMAN", -- [27]
+				"Skratch|Turalyon|Horde|100|DRUID", -- [28]
+				"Talthalador|Stormrage|Alliance|100|DEMONHUNTER", -- [29]
+				"Titte|Turalyon|Horde|100|DEATHKNIGHT", -- [30]
+				"Titt|Turalyon|Horde|100|DEATHKNIGHT", -- [31]
+				"Ured|Ner'zhul|Alliance|90|DEATHKNIGHT", -- [32]
+				"Whyfy|Stormrage|Alliance|100|PALADIN", -- [33]
+				"Yanlery|Stormrage|Alliance|100|WARRIOR", -- [34]
 			},
 		},
 	},
@@ -49,6 +50,7 @@ Postal3DB = {
 		["Pastaliar - Stormrage"] = "Pastaliar - Stormrage",
 		["Dosnutz - Stormrage"] = "Dosnutz - Stormrage",
 		["Yanlery - Stormrage"] = "Yanlery - Stormrage",
+		["Jakwez - Stormrage"] = "Jakwez - Stormrage",
 		["Retardar - Stormrage"] = "Retardar - Stormrage",
 		["Shhbbyisok - Stormrage"] = "Shhbbyisok - Stormrage",
 		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
@@ -147,6 +149,8 @@ Postal3DB = {
 					"Arando-Bloodhoof|Stormrage|Alliance", -- [16]
 				},
 			},
+		},
+		["Jakwez - Stormrage"] = {
 		},
 		["Retardar - Stormrage"] = {
 		},

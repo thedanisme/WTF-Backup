@@ -5,6 +5,7 @@ NewOpenablesProfile = {
 		["Whyfy - Stormrage"] = "Default",
 		["Shaneequa - Turalyon"] = "Default",
 		["Druidann - Stormrage"] = "Default",
+		["Jakwez - Stormrage"] = "Default",
 		["Danoh - Stormrage"] = "Default",
 		["Emmarosa - Stormrage"] = "Default",
 		["Yanlery - Stormrage"] = "Default",

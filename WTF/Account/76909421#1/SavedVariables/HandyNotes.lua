@@ -6,6 +6,7 @@ HandyNotesDB = {
 		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
 		["Druidann - Stormrage"] = "Druidann - Stormrage",
 		["Yanlery - Stormrage"] = "Yanlery - Stormrage",
+		["Jakwez - Stormrage"] = "Jakwez - Stormrage",
 		["Titte - Turalyon"] = "Titte - Turalyon",
 		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
@@ -23,6 +24,8 @@ HandyNotesDB = {
 		["Druidann - Stormrage"] = {
 		},
 		["Yanlery - Stormrage"] = {
+		},
+		["Jakwez - Stormrage"] = {
 		},
 		["Titte - Turalyon"] = {
 		},
@@ -45,6 +48,7 @@ HandyNotes_HandyNotesDB = {
 		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
 		["Druidann - Stormrage"] = "Druidann - Stormrage",
 		["Yanlery - Stormrage"] = "Yanlery - Stormrage",
+		["Jakwez - Stormrage"] = "Jakwez - Stormrage",
 		["Titte - Turalyon"] = "Titte - Turalyon",
 		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
@@ -62,6 +66,8 @@ HandyNotes_HandyNotesDB = {
 		["Druidann - Stormrage"] = {
 		},
 		["Yanlery - Stormrage"] = {
+		},
+		["Jakwez - Stormrage"] = {
 		},
 		["Titte - Turalyon"] = {
 		},

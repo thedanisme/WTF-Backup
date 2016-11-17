@@ -1,6 +1,15 @@
+2016-11-09  Tercio  <Tercio>
+
+[53619e0e8218] [tip]
+* boot.lua, classes/classe_damage.lua:
+
+- Fixed Friendly Fire tooltip where it was showing one entry for each spell on each target.
+- Fixed an issue with Auras & Void Zone where wasn't possible to report when the aura has zero damage.
+
+
 2016-11-08  Tercio  <Tercio>
 
-[f7f0813a9f1a] [tip]
+[f7f0813a9f1a]
 * .pkgmeta, boot.lua, plugins/Details_RaidInfo-TrialOfValor/Details_RaidInfo-TrialOfValor.lua, plugins/Details_RaidInfo-TrialOfValor/Details_RaidInfo-TrialOfValor.toc, plugins/Details_RaidInfo-TrialOfValor/boss_faces.tga, plugins/Details_RaidInfo-TrialOfValor/icon256x128.tga:
 
 - Trials of Valor update.
@@ -253,16 +262,5 @@ hotfixes:
 * Libs/DF/cooltip.lua, Libs/DF/fw.lua, Libs/DF/panel.lua, boot.lua, gumps/janela_info.lua:
 
 - framework update to v44.
-
-
-2016-08-27  Tercio  <Tercio>
-
-[8b7281f57699]
-* boot.lua:
-
-*weakup packpager
-- new API: Details:GetPlayerIcon (playername[, segmentobject]) - return the player class or spec icon.
-- bar spacing now can go to -2, down from 0.
-- Tiny Threat now shall correctly use the font set on the options panel after a logon.
 
 

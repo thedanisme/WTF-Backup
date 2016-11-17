@@ -729,6 +729,9 @@ PawnCommon = {
 		["\"MrRobot\":SHAMAN2"] = {
 			["IconTexturePath"] = "Interface\\Icons\\Spell_Shaman_ImprovedStormstrike",
 			["PerCharacterOptions"] = {
+				["Jakwez-Stormrage"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "0070de",
 			["ClassID"] = 7,

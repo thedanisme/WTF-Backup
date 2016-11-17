@@ -2,6 +2,7 @@
 HandyNotes_SuramarTelemancyDB = {
 	["profileKeys"] = {
 		["Oenta - Stormrage"] = "Oenta - Stormrage",
+		["Jakwez - Stormrage"] = "Jakwez - Stormrage",
 		["Whyfy - Stormrage"] = "Whyfy - Stormrage",
 		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
 		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
@@ -11,6 +12,8 @@ HandyNotes_SuramarTelemancyDB = {
 	},
 	["profiles"] = {
 		["Oenta - Stormrage"] = {
+		},
+		["Jakwez - Stormrage"] = {
 		},
 		["Whyfy - Stormrage"] = {
 		},
