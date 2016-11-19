@@ -1,0 +1,17 @@
+Infus:
+	- Sort the event/status/sound/chat dropdown's list
+	By adding a DropDown that automatically sorts the entries. This control is
+	just a normal DropDown with a overriden SetList function. The normal
+	DropDown can already sort, but due to AceConfig always calling SetList
+	with a order parameter set to nil, it never does sort.
+	
+	The SortedDropDown automatically sorts. Add it to a few places where
+	the list is big enough that sorting improves the user experience.
+	- Fix Jitter for circular progress
+	Since 7.1 the rotation isn't visible until the next frame.
+	
+	So delay calling SetTexCoordinates until the next frame too.
+	
+	Ticket-Nr: 782
+	- Add a event trigger for spell charges
+	Allows for triggering on gaining or loosing spell charges.

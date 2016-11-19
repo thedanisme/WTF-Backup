@@ -1,6 +1,7 @@
 local L = BigWigs:NewBossLocale("Odyn-TrialOfValor", "frFR")
 if not L then return end
 if L then
+	--L.yields = "%s yields" -- used when Hymdall and Helya leave the fight in P2: "Hymdall yields"
 	L[227490] = "|cFF800080En haut à droite|r (|T1323037:15:15:0:0:64:64:4:60:4:60|t)" -- Boss_OdunRunes_Purple
 	L[227491] = "|cFFFFA500En bas à droite|r (|T1323039:15:15:0:0:64:64:4:60:4:60|t)" -- Boss_OdunRunes_Orange
 	L[227498] = "|cFFFFFF00En bas à gauche|r (|T1323038:15:15:0:0:64:64:4:60:4:60|t)" -- Boss_OdunRunes_Yellow
@@ -10,9 +11,10 @@ end
 
 L = BigWigs:NewBossLocale("Helya-TrialOfValor", "frFR")
 if L then
-	--L.near = "near" -- |TInterface\\Icons\\inv_misc_monsterhorn_03.blp:20|t A %s emerges near Helya!
-	--L.tentacle_near = "Tentacle NEAR Helya"
-	--L.tentacle_near_desc = "This option can be used to emphasize or hide the messages when a Striking Tentacle spawns near Helya."
-	--L.tentacle_far = "Tentacle FAR from Helya"
-	--L.tentacle_far_desc = "This option can be used to emphasize or hide the messages when a Striking Tentacle spawns far from Helya."
+	L.nearTrigger = "près" -- |TInterface\\Icons\\inv_misc_monsterhorn_03.blp:20|t A %s emerges near Helya! -- Translate this comment with the emote
+	--L.farTrigger = "far" -- |TInterface\\Icons\\inv_misc_monsterhorn_03.blp:20|t A %s emerges far from Helya! -- Translate this comment with the emote
+	L.tentacle_near = "Tentacule PRÈS d'Helya"
+	L.tentacle_near_desc = "Cette option peut être utilisée pour mettre en évidence ou cacher les messages affichés quand un Tentacule frappeur apparaît près d'Helya."
+	L.tentacle_far = "Tentacule LOIN d'Helya"
+	L.tentacle_far_desc = "Cette option peut être utilisée pour mettre en évidence ou cacher les messages affichés quand un Tentacule frappeur apparaît loin d'Helya."
 end

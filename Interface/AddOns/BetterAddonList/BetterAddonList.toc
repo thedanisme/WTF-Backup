@@ -2,9 +2,9 @@
 ## Title: BetterAddonList
 ## Notes: Enhances the default AddOns list.
 ## Author: Neb
-## Version: 1.0.4
+## Version: 1.0.4-1-g07756e4
 ## SavedVariables: BetterAddonListDB
-## X-Curse-Packaged-Version: 1.0.4
+## X-Curse-Packaged-Version: 1.0.4-1-g07756e4
 ## X-Curse-Project-Name: BetterAddonList
 ## X-Curse-Project-ID: betteraddonlist
 ## X-Curse-Repository-ID: wow/betteraddonlist/mainline

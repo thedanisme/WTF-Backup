@@ -1,0 +1,2 @@
+Kyle Buller:
+	- Enable/disable addons using their index
