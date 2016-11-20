@@ -1,5 +1,8 @@
 
 OmniCC4Config = {
+	["groups"] = {
+	},
+	["version"] = "7.1.0",
 	["groupSettings"] = {
 		["base"] = {
 			["styles"] = {
@@ -35,7 +38,4 @@ OmniCC4Config = {
 			["mmSSDuration"] = 0,
 		},
 	},
-	["groups"] = {
-	},
-	["version"] = "7.1.0",
 }

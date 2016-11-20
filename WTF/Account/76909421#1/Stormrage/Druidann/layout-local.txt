@@ -1,4 +1,11 @@
 Version: 1
+Frame: DugisArrowFrame
+FrameLevel: 1
+Anchor: RIGHT
+X: -369
+Y: -116
+W: 80
+H: 60
 Frame: ItemRefTooltip
 FrameLevel: 1
 Anchor: CENTER
@@ -27,10 +34,10 @@ X: 0
 Y: 35
 W: 26
 H: 26
-Frame: DugisArrowFrame
+Frame: TomTomCrazyArrow
 FrameLevel: 1
 Anchor: RIGHT
-X: -293
-Y: -83
-W: 40
-H: 30
+X: -120
+Y: -84
+W: 56
+H: 42

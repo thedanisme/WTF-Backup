@@ -4,7 +4,7 @@ VER 3 0100000000000003 " " "INV_Misc_QuestionMark"
 /use Ancient Portal: Dalaran
 END
 VER 3 0100000000000004 "Fire Test" "Spell_Fire_MoltenBlood."
-/castsequence reset=180 Rune of Power,Scorch,Combustion,Fire Blast,Pyroblast,Fire Blast,Pyroblast,Flame On,Fire Blast,Pyroblast,Fire Blast,Pyroblast,Scorch,Pyroblast,Scorch,Pyroblast,Rune of Power,Scorch,Pyroblast
+/castsequence reset=180 Rune of Power,Time Warp,Scorch,Combustion,Fire Blast,Pyroblast,Fire Blast,Pyroblast,Flame On,Fire Blast,Pyroblast,Fire Blast,Pyroblast,Scorch,Pyroblast,Scorch,Pyroblast,Rune of Power,Scorch,Pyroblast
 END
 VER 3 0100000000000001 "Ice Block" "135841"
 #showtooltip Ice Block

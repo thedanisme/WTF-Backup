@@ -766,14 +766,14 @@ DugisGuideViewerProfiles = {
 		["Oenta - Stormrage"] = "USE THIS",
 		["Whyfy - Stormrage"] = "Whyfy - Stormrage",
 		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
-		["Yanlery - Stormrage"] = "USE THIS",
 		["Danoh - Stormrage"] = "USE THIS",
+		["Yanlery - Stormrage"] = "USE THIS",
 		["Jakwez - Stormrage"] = "Jakwez - Stormrage",
 		["Titte - Turalyon"] = "Titte - Turalyon",
-		["Talthalador - Stormrage"] = "USE THIS",
+		["Emmarosa - Stormrage"] = "USE THIS",
 		["Druidann - Stormrage"] = "USE THIS",
 		["Shhbbyisok - Stormrage"] = "USE THIS",
-		["Emmarosa - Stormrage"] = "USE THIS",
+		["Talthalador - Stormrage"] = "USE THIS",
 		["Dosnutz - Stormrage"] = "Dosnutz - Stormrage",
 	},
 	["profiles"] = {
@@ -802,18 +802,19 @@ DugisGuideViewerProfiles = {
 								["yOfs"] = 0,
 								["xOfs"] = 0,
 							},
-							["DugisOnOffButton"] = {
-								["relativeTo"] = "DugisArrowFrame",
-								["point"] = "BOTTOM",
-								["relativePoint"] = "TOP",
+							["DugisGuideViewer_TargetFrame"] = {
+								["relativeTo"] = "DugisSecureQuestButton",
+								["point"] = "LEFT",
+								["relativePoint"] = "RIGHT",
 								["yOfs"] = 0,
-								["xOfs"] = -19.0000019073486,
+								["xOfs"] = 5,
 							},
-							["DugisSmallFrameContainer"] = {
+							["DugisRecordFrame"] = {
+								["relativeTo"] = "UIParent",
+								["point"] = "CENTER",
+								["relativePoint"] = "CENTER",
 								["yOfs"] = 0,
-								["xOfs"] = 10,
-								["point"] = "TOPRIGHT",
-								["relativePoint"] = "BOTTOMRIGHT",
+								["xOfs"] = 0,
 							},
 							["ObjectiveTrackerFrameHandlerFrame"] = {
 								["relativeTo"] = "UIParent",
@@ -829,19 +830,18 @@ DugisGuideViewerProfiles = {
 								["yOfs"] = 0,
 								["xOfs"] = -48,
 							},
-							["DugisRecordFrame"] = {
-								["relativeTo"] = "UIParent",
-								["point"] = "CENTER",
-								["relativePoint"] = "CENTER",
+							["DugisSmallFrameContainer"] = {
 								["yOfs"] = 0,
-								["xOfs"] = 0,
+								["xOfs"] = 10,
+								["point"] = "TOPRIGHT",
+								["relativePoint"] = "BOTTOMRIGHT",
 							},
-							["DugisGuideViewer_TargetFrame"] = {
-								["relativeTo"] = "DugisSecureQuestButton",
-								["point"] = "LEFT",
-								["relativePoint"] = "RIGHT",
+							["DugisOnOffButton"] = {
+								["relativeTo"] = "DugisArrowFrame",
+								["point"] = "BOTTOM",
+								["relativePoint"] = "TOP",
 								["yOfs"] = 0,
-								["xOfs"] = 5,
+								["xOfs"] = -19.0000019073486,
 							},
 						},
 					},
@@ -912,33 +912,21 @@ DugisGuideViewerProfiles = {
 					[58] = {
 						["checked"] = false,
 					},
+					[72] = {
+						["checked"] = true,
+					},
+					[112] = {
+						["checked"] = "Expand Down",
+					},
+					[79] = {
+						["checked"] = false,
+					},
 					[33] = {
 						["checked"] = true,
 					},
-					[57] = {
-						["checked"] = true,
-					},
-					[110] = {
-						["options"] = {
-							"None", -- [1]
-							"Active Talent Specialization", -- [2]
-							"Holy", -- [3]
-							"Protection", -- [4]
-							"Retribution", -- [5]
-						},
-					},
-					[302] = {
-						["options"] = {
-							false, -- [1]
-							false, -- [2]
-							false, -- [3]
-						},
-					},
-					[108] = {
-						["checked"] = "Standard - Anchored",
-					},
-					[107] = {
-						["checked"] = "None",
+					["SettingsRevision"] = 10,
+					[39] = {
+						["checked"] = false,
 					},
 					[36] = {
 						["checked"] = true,
@@ -949,11 +937,47 @@ DugisGuideViewerProfiles = {
 					[74] = {
 						["checked"] = true,
 					},
-					[39] = {
-						["checked"] = false,
+					[107] = {
+						["checked"] = "None",
 					},
 					[40] = {
 						["checked"] = false,
+					},
+					[37] = {
+						["checked"] = true,
+					},
+					[42] = {
+						["checked"] = false,
+					},
+					[43] = {
+						["checked"] = false,
+					},
+					[76] = {
+						["checked"] = true,
+					},
+					[203] = {
+						["checked"] = 0,
+					},
+					[207] = {
+						["checked"] = 1,
+					},
+					[69] = {
+						["checked"] = false,
+					},
+					[48] = {
+						["checked"] = false,
+					},
+					["ModelViewer"] = {
+						["pos_x"] = false,
+					},
+					[50] = {
+						["checked"] = false,
+					},
+					[51] = {
+						["checked"] = false,
+					},
+					[71] = {
+						["checked"] = true,
 					},
 					["QuestRecordTable"] = {
 						["framePositions"] = {
@@ -976,14 +1000,17 @@ DugisGuideViewerProfiles = {
 								["yOfs"] = 0,
 								["xOfs"] = 0,
 							},
-							["DugisGuideViewer_TargetFrame"] = {
-							},
-							["DugisRecordFrame"] = {
-								["relativeTo"] = "UIParent",
-								["point"] = "CENTER",
-								["relativePoint"] = "CENTER",
+							["DugisOnOffButton"] = {
 								["yOfs"] = 0,
-								["xOfs"] = 0,
+								["xOfs"] = -407.000030517578,
+								["point"] = "BOTTOMRIGHT",
+								["relativePoint"] = "BOTTOMRIGHT",
+							},
+							["DugisSmallFrameContainer"] = {
+								["yOfs"] = 0,
+								["xOfs"] = 10,
+								["point"] = "TOPRIGHT",
+								["relativePoint"] = "BOTTOMRIGHT",
 							},
 							["ObjectiveTrackerFrameHandlerFrame"] = {
 								["yOfs"] = 182.000061035156,
@@ -998,90 +1025,123 @@ DugisGuideViewerProfiles = {
 								["yOfs"] = 50,
 								["xOfs"] = 6.99999952316284,
 							},
-							["DugisSmallFrameContainer"] = {
+							["DugisRecordFrame"] = {
+								["relativeTo"] = "UIParent",
+								["point"] = "CENTER",
+								["relativePoint"] = "CENTER",
 								["yOfs"] = 0,
-								["xOfs"] = 10,
-								["point"] = "TOPRIGHT",
-								["relativePoint"] = "BOTTOMRIGHT",
+								["xOfs"] = 0,
 							},
-							["DugisOnOffButton"] = {
-								["yOfs"] = 0,
-								["xOfs"] = -407.000030517578,
-								["point"] = "BOTTOMRIGHT",
-								["relativePoint"] = "BOTTOMRIGHT",
+							["DugisGuideViewer_TargetFrame"] = {
 							},
 						},
-					},
-					[42] = {
-						["checked"] = false,
-					},
-					[43] = {
-						["checked"] = false,
-					},
-					[76] = {
-						["checked"] = true,
-					},
-					[203] = {
-						["checked"] = 0,
-					},
-					[207] = {
-						["checked"] = 1,
-					},
-					[51] = {
-						["checked"] = false,
-					},
-					[48] = {
-						["checked"] = false,
-					},
-					[50] = {
-						["checked"] = false,
-					},
-					["ModelViewer"] = {
-						["pos_x"] = false,
-					},
-					[69] = {
-						["checked"] = false,
-					},
-					[71] = {
-						["checked"] = true,
-					},
-					[37] = {
-						["checked"] = true,
 					},
 					[75] = {
 						["checked"] = true,
 					},
-					["SettingsRevision"] = 10,
-					[79] = {
-						["checked"] = false,
+					[108] = {
+						["checked"] = "Standard - Anchored",
 					},
-					[112] = {
-						["checked"] = "Expand Down",
+					[110] = {
+						["options"] = {
+							"None", -- [1]
+							"Active Talent Specialization", -- [2]
+							"Holy", -- [3]
+							"Protection", -- [4]
+							"Retribution", -- [5]
+						},
 					},
-					[72] = {
+					[57] = {
 						["checked"] = true,
+					},
+					[302] = {
+						["options"] = {
+							false, -- [1]
+							false, -- [2]
+							false, -- [3]
+						},
 					},
 				},
 			},
 		},
-		["Danoh - Stormrage"] = {
+		["Yanlery - Stormrage"] = {
 			["char"] = {
 				["settings"] = {
 					[110] = {
 						["options"] = {
 							"None", -- [1]
 							"Active Talent Specialization", -- [2]
-							"Beast Mastery", -- [3]
-							"Marksmanship", -- [4]
-							"Survival", -- [5]
+							"Arms", -- [3]
+							"Fury", -- [4]
+							"Protection", -- [5]
 						},
 					},
 					["SettingsRevision"] = 9,
-					["FirstTime"] = false,
 					["QuestRecordTable"] = {
 						["framePositions"] = {
+							["DugisMainBorder"] = {
+								["relativeTo"] = "UIParent",
+								["point"] = "CENTER",
+								["relativePoint"] = "CENTER",
+								["yOfs"] = 0,
+								["xOfs"] = 0,
+							},
+							["DugisArrowFrame"] = {
+								["yOfs"] = 300,
+								["xOfs"] = 0,
+								["point"] = "CENTER",
+								["relativePoint"] = "CENTER",
+							},
+							["DugisGuideViewer_ModelViewer"] = {
+								["relativeTo"] = "DugisWatchBackground",
+								["point"] = "TOPRIGHT",
+								["relativePoint"] = "TOPLEFT",
+								["yOfs"] = 0,
+								["xOfs"] = 0,
+							},
+							["DugisOnOffButton"] = {
+								["yOfs"] = 25.9999313354492,
+								["xOfs"] = -426.999633789063,
+								["point"] = "BOTTOMRIGHT",
+								["relativePoint"] = "BOTTOMRIGHT",
+							},
+							["DugisSmallFrameContainer"] = {
+								["yOfs"] = 0,
+								["xOfs"] = 10,
+								["point"] = "TOPRIGHT",
+								["relativePoint"] = "BOTTOMRIGHT",
+							},
+							["ObjectiveTrackerFrameHandlerFrame"] = {
+								["relativeTo"] = "UIParent",
+								["point"] = "TOPRIGHT",
+								["relativePoint"] = "TOPRIGHT",
+								["yOfs"] = -230.000015258789,
+								["xOfs"] = -90.0000076293945,
+							},
+							["DugisWatchBackground"] = {
+								["relativeTo"] = "MinimapCluster",
+								["point"] = "TOPRIGHT",
+								["relativePoint"] = "BOTTOMRIGHT",
+								["yOfs"] = 0,
+								["xOfs"] = -93,
+							},
+							["DugisRecordFrame"] = {
+								["relativeTo"] = "UIParent",
+								["point"] = "CENTER",
+								["relativePoint"] = "CENTER",
+								["yOfs"] = 0,
+								["xOfs"] = 0,
+							},
+							["DugisGuideViewer_TargetFrame"] = {
+								["relativeTo"] = "DugisSecureQuestButton",
+								["point"] = "LEFT",
+								["relativePoint"] = "RIGHT",
+								["yOfs"] = 0,
+								["xOfs"] = 5,
+							},
 						},
 					},
+					["FirstTime"] = false,
 					["ModelViewer"] = {
 						["pos_x"] = false,
 					},
@@ -1140,87 +1200,13 @@ DugisGuideViewerProfiles = {
 					[58] = {
 						["checked"] = false,
 					},
-					[103] = {
-						["checked"] = "None",
-					},
-					[112] = {
-						["checked"] = "Expand Down",
-					},
-					["EssentialsMode"] = 1,
-					[79] = {
-						["checked"] = false,
-					},
-					[33] = {
-						["checked"] = true,
-					},
-					["SettingsRevision"] = 10,
-					[39] = {
-						["checked"] = false,
-					},
-					[36] = {
-						["checked"] = true,
-					},
 					[37] = {
 						["checked"] = true,
 					},
-					[74] = {
+					[57] = {
 						["checked"] = true,
 					},
-					[76] = {
-						["checked"] = true,
-					},
-					[40] = {
-						["checked"] = false,
-					},
-					[80] = {
-						["checked"] = false,
-					},
-					[42] = {
-						["checked"] = false,
-					},
-					[43] = {
-						["checked"] = false,
-					},
-					[107] = {
-						["checked"] = "None",
-					},
-					[203] = {
-						["checked"] = 0,
-					},
-					[207] = {
-						["checked"] = 1,
-					},
-					[72] = {
-						["checked"] = true,
-					},
-					[48] = {
-						["checked"] = false,
-					},
-					[69] = {
-						["checked"] = false,
-					},
-					["ModelViewer"] = {
-						["pos_x"] = false,
-					},
-					[51] = {
-						["checked"] = false,
-					},
-					[71] = {
-						["checked"] = true,
-					},
-					[302] = {
-						["options"] = {
-							false, -- [1]
-							false, -- [2]
-							false, -- [3]
-						},
-					},
-					[75] = {
-						["checked"] = true,
-					},
-					[108] = {
-						["checked"] = "Standard - Anchored",
-					},
+					["EssentialsMode"] = 1,
 					[110] = {
 						["options"] = {
 							"None", -- [1]
@@ -1230,7 +1216,16 @@ DugisGuideViewerProfiles = {
 							"Restoration", -- [5]
 						},
 					},
-					[57] = {
+					[33] = {
+						["checked"] = true,
+					},
+					[108] = {
+						["checked"] = "Standard - Anchored",
+					},
+					[76] = {
+						["checked"] = true,
+					},
+					[36] = {
 						["checked"] = true,
 					},
 					["QuestRecordTable"] = {
@@ -1255,7 +1250,255 @@ DugisGuideViewerProfiles = {
 								["yOfs"] = 0,
 								["xOfs"] = 0,
 							},
+							["DugisOnOffButton"] = {
+								["yOfs"] = 0,
+								["xOfs"] = -407.000030517578,
+								["point"] = "BOTTOMRIGHT",
+								["relativePoint"] = "BOTTOMRIGHT",
+							},
+							["DugisSmallFrameContainer"] = {
+								["yOfs"] = 0,
+								["xOfs"] = 10,
+								["point"] = "TOPRIGHT",
+								["relativePoint"] = "BOTTOMRIGHT",
+							},
+							["ObjectiveTrackerFrameHandlerFrame"] = {
+								["relativeTo"] = "UIParent",
+								["point"] = "TOPRIGHT",
+								["relativePoint"] = "TOPRIGHT",
+								["yOfs"] = -230.000015258789,
+								["xOfs"] = -90.0000076293945,
+							},
+							["DugisWatchBackground"] = {
+								["relativeTo"] = "ObjectiveTrackerFrameHandlerFrame",
+								["point"] = "TOPRIGHT",
+								["relativePoint"] = "BOTTOMRIGHT",
+								["yOfs"] = 50,
+								["xOfs"] = 6.99999952316284,
+							},
+							["DugisRecordFrame"] = {
+								["relativeTo"] = "UIParent",
+								["point"] = "CENTER",
+								["relativePoint"] = "CENTER",
+								["yOfs"] = 0,
+								["xOfs"] = 0,
+							},
 							["DugisGuideViewer_TargetFrame"] = {
+							},
+						},
+					},
+					[74] = {
+						["checked"] = true,
+					},
+					[39] = {
+						["checked"] = false,
+					},
+					[40] = {
+						["checked"] = false,
+					},
+					[80] = {
+						["checked"] = false,
+					},
+					[42] = {
+						["checked"] = false,
+					},
+					[43] = {
+						["checked"] = false,
+					},
+					[302] = {
+						["options"] = {
+							false, -- [1]
+							false, -- [2]
+							false, -- [3]
+						},
+					},
+					[203] = {
+						["checked"] = 0,
+					},
+					[207] = {
+						["checked"] = 1,
+					},
+					[72] = {
+						["checked"] = true,
+					},
+					[48] = {
+						["checked"] = false,
+					},
+					[51] = {
+						["checked"] = false,
+					},
+					["ModelViewer"] = {
+						["pos_x"] = false,
+					},
+					[69] = {
+						["checked"] = false,
+					},
+					[71] = {
+						["checked"] = true,
+					},
+					[107] = {
+						["checked"] = "None",
+					},
+					[75] = {
+						["checked"] = true,
+					},
+					["SettingsRevision"] = 10,
+					[79] = {
+						["checked"] = false,
+					},
+					[112] = {
+						["checked"] = "Expand Down",
+					},
+					[103] = {
+						["checked"] = "None",
+					},
+				},
+			},
+		},
+		["Emmarosa - Stormrage"] = {
+			["char"] = {
+				["settings"] = {
+					[110] = {
+						["options"] = {
+							"None", -- [1]
+							"Active Talent Specialization", -- [2]
+							"Assassination", -- [3]
+							"Outlaw", -- [4]
+							"Subtlety", -- [5]
+						},
+					},
+					["SettingsRevision"] = 9,
+					["FirstTime"] = false,
+					["QuestRecordTable"] = {
+						["framePositions"] = {
+							["DugisMainBorder"] = {
+								["relativeTo"] = "UIParent",
+								["point"] = "CENTER",
+								["relativePoint"] = "CENTER",
+								["yOfs"] = 0,
+								["xOfs"] = 0,
+							},
+							["DugisArrowFrame"] = {
+								["relativeTo"] = "UIParent",
+								["point"] = "CENTER",
+								["relativePoint"] = "CENTER",
+								["yOfs"] = 300,
+								["xOfs"] = 0,
+							},
+							["DugisGuideViewer_ModelViewer"] = {
+								["relativeTo"] = "DugisWatchBackground",
+								["point"] = "TOPRIGHT",
+								["relativePoint"] = "TOPLEFT",
+								["yOfs"] = 0,
+								["xOfs"] = 0,
+							},
+							["DugisOnOffButton"] = {
+								["yOfs"] = -152.000076293945,
+								["xOfs"] = -150.999954223633,
+								["point"] = "TOPRIGHT",
+								["relativePoint"] = "TOPRIGHT",
+							},
+							["DugisSmallFrameContainer"] = {
+								["yOfs"] = 0,
+								["xOfs"] = 10,
+								["point"] = "TOPRIGHT",
+								["relativePoint"] = "BOTTOMRIGHT",
+							},
+							["ObjectiveTrackerFrameHandlerFrame"] = {
+								["relativeTo"] = "UIParent",
+								["point"] = "TOPRIGHT",
+								["relativePoint"] = "TOPRIGHT",
+								["yOfs"] = -230.000015258789,
+								["xOfs"] = -90.0000076293945,
+							},
+							["DugisWatchBackground"] = {
+								["relativeTo"] = "MinimapCluster",
+								["point"] = "TOPRIGHT",
+								["relativePoint"] = "BOTTOMRIGHT",
+								["yOfs"] = 0,
+								["xOfs"] = -93,
+							},
+							["DugisRecordFrame"] = {
+								["relativeTo"] = "UIParent",
+								["point"] = "CENTER",
+								["relativePoint"] = "CENTER",
+								["yOfs"] = 0,
+								["xOfs"] = 0,
+							},
+							["DugisGuideViewer_TargetFrame"] = {
+								["relativeTo"] = "DugisSecureQuestButton",
+								["point"] = "LEFT",
+								["relativePoint"] = "RIGHT",
+								["yOfs"] = 0,
+								["xOfs"] = 5,
+							},
+						},
+					},
+					["ModelViewer"] = {
+						["pos_x"] = false,
+					},
+				},
+			},
+		},
+		["Jakwez - Stormrage"] = {
+			["char"] = {
+				["settings"] = {
+					nil, -- [1]
+					{
+						["checked"] = true,
+					}, -- [2]
+					{
+						["checked"] = true,
+					}, -- [3]
+					[58] = {
+						["checked"] = false,
+					},
+					[30] = {
+						["checked"] = false,
+					},
+					[31] = {
+						["checked"] = true,
+					},
+					[17] = {
+						["checked"] = false,
+					},
+					[33] = {
+						["checked"] = true,
+					},
+					[35] = {
+						["checked"] = false,
+					},
+					[36] = {
+						["checked"] = true,
+					},
+					["QuestRecordTable"] = {
+						["framePositions"] = {
+							["DugisMainBorder"] = {
+								["relativeTo"] = "UIParent",
+								["point"] = "CENTER",
+								["relativePoint"] = "CENTER",
+								["yOfs"] = 0,
+								["xOfs"] = 0,
+							},
+							["DugisArrowFrame"] = {
+								["yOfs"] = -104.999862670898,
+								["xOfs"] = -320.999114990234,
+								["point"] = "RIGHT",
+								["relativePoint"] = "RIGHT",
+							},
+							["DugisGuideViewer_ModelViewer"] = {
+								["relativeTo"] = "DugisWatchBackground",
+								["point"] = "TOPRIGHT",
+								["relativePoint"] = "TOPLEFT",
+								["yOfs"] = 0,
+								["xOfs"] = 0,
+							},
+							["DugisGuideViewer_TargetFrame"] = {
+								["relativeTo"] = "DugisSecureQuestButton",
+								["point"] = "LEFT",
+								["relativePoint"] = "RIGHT",
+								["yOfs"] = 0,
+								["xOfs"] = 5,
 							},
 							["DugisRecordFrame"] = {
 								["relativeTo"] = "UIParent",
@@ -1285,97 +1528,108 @@ DugisGuideViewerProfiles = {
 								["relativePoint"] = "BOTTOMRIGHT",
 							},
 							["DugisOnOffButton"] = {
-								["yOfs"] = 0,
-								["xOfs"] = -407.000030517578,
+								["yOfs"] = 4.00042390823364,
+								["xOfs"] = -405.999481201172,
 								["point"] = "BOTTOMRIGHT",
 								["relativePoint"] = "BOTTOMRIGHT",
 							},
 						},
 					},
-				},
-			},
-		},
-		["Talthalador - Stormrage"] = {
-			["char"] = {
-				["settings"] = {
-					{
-						["checked"] = true,
-					}, -- [1]
-					{
-						["checked"] = true,
-					}, -- [2]
-					{
-						["checked"] = true,
-					}, -- [3]
-					[58] = {
-						["checked"] = false,
-					},
-					[33] = {
-						["checked"] = true,
-					},
-					[36] = {
-						["checked"] = true,
-					},
-					[19] = {
-						["checked"] = false,
-					},
-					[74] = {
+					[37] = {
 						["checked"] = true,
 					},
 					[20] = {
 						["checked"] = false,
 					},
-					[37] = {
-						["checked"] = true,
-					},
-					[6] = {
-						["checked"] = true,
-					},
-					[45] = {
-						["checked"] = true,
-					},
-					[24] = {
-						["checked"] = false,
-					},
-					["QuestRecordTable"] = {
-						["framePositions"] = {
-						},
-					},
-					[13] = {
-						["checked"] = true,
-					},
-					["ModelViewer"] = {
-						["pos_x"] = false,
-					},
-					[72] = {
-						["checked"] = true,
-					},
-					[71] = {
-						["checked"] = true,
-					},
-					[76] = {
-						["checked"] = true,
-					},
-					[75] = {
-						["checked"] = true,
-					},
-					["SettingsRevision"] = 9,
 					[110] = {
 						["options"] = {
 							"None", -- [1]
 							"Active Talent Specialization", -- [2]
-							"Havoc", -- [3]
-							"Vengeance", -- [4]
+							"Elemental", -- [3]
+							"Enhancement", -- [4]
+							"Restoration", -- [5]
 						},
 					},
+					[77] = {
+						["checked"] = false,
+					},
+					[42] = {
+						["checked"] = false,
+					},
+					[43] = {
+						["checked"] = false,
+					},
+					[203] = {
+						["checked"] = 0,
+					},
+					["showNotCollectedPets"] = true,
+					[68] = {
+						["checked"] = false,
+					},
+					[24] = {
+						["checked"] = false,
+					},
+					[45] = {
+						["checked"] = true,
+					},
+					["petTypeFilters"] = {
+						["Humanoid"] = true,
+						["Elemental"] = true,
+						["Critter"] = true,
+						["Dragon"] = true,
+						["Flying"] = true,
+						["Magical"] = true,
+						["Undead"] = true,
+						["Aquatic"] = true,
+						["Beast"] = true,
+						["Mechanical"] = true,
+					},
+					[13] = {
+						["checked"] = true,
+					},
+					[69] = {
+						["checked"] = false,
+					},
+					["ModelViewer"] = {
+						["pos_x"] = false,
+					},
+					[27] = {
+						["checked"] = false,
+					},
 					["FirstTime"] = false,
-					[302] = {
+					["SettingsRevision"] = 10,
+					["showCollectedPets"] = true,
+					["GA_Blacklist"] = {
+						[138450] = true,
+						[122396] = true,
+						[136586] = true,
+					},
+					[19] = {
+						["checked"] = false,
+					},
+				},
+			},
+		},
+		["Danoh - Stormrage"] = {
+			["char"] = {
+				["settings"] = {
+					[110] = {
 						["options"] = {
-							nil, -- [1]
-							nil, -- [2]
-							nil, -- [3]
-							"Vengeance", -- [4]
+							"None", -- [1]
+							"Active Talent Specialization", -- [2]
+							"Beast Mastery", -- [3]
+							"Marksmanship", -- [4]
+							"Survival", -- [5]
 						},
+					},
+					["SettingsRevision"] = 9,
+					["FirstTime"] = false,
+					["QuestRecordTable"] = {
+						["framePositions"] = {
+						},
+					},
+					["ModelViewer"] = {
+						["pos_x"] = false,
 					},
 				},
 			},
@@ -1400,8 +1654,12 @@ DugisGuideViewerProfiles = {
 						["checked"] = true,
 					}, -- [6]
 					nil, -- [7]
-					nil, -- [8]
-					nil, -- [9]
+					{
+						["checked"] = false,
+					}, -- [8]
+					{
+						["checked"] = false,
+					}, -- [9]
 					nil, -- [10]
 					nil, -- [11]
 					nil, -- [12]
@@ -1460,70 +1718,11 @@ DugisGuideViewerProfiles = {
 					[58] = {
 						["checked"] = false,
 					},
-					[76] = {
-						["checked"] = true,
-					},
 					[108] = {
 						["checked"] = "Standard - Anchored",
 					},
-					["QuestRecordTable"] = {
-						["framePositions"] = {
-							["DugisMainBorder"] = {
-								["relativeTo"] = "UIParent",
-								["point"] = "CENTER",
-								["relativePoint"] = "CENTER",
-								["yOfs"] = 0,
-								["xOfs"] = 0,
-							},
-							["DugisArrowFrame"] = {
-								["point"] = "CENTER",
-								["relativePoint"] = "CENTER",
-								["yOfs"] = 16.0000877380371,
-								["xOfs"] = 400.000183105469,
-							},
-							["DugisGuideViewer_ModelViewer"] = {
-								["relativeTo"] = "DugisWatchBackground",
-								["point"] = "TOPRIGHT",
-								["relativePoint"] = "TOPLEFT",
-								["yOfs"] = 0,
-								["xOfs"] = 0,
-							},
-							["DugisOnOffButton"] = {
-								["point"] = "BOTTOMRIGHT",
-								["relativePoint"] = "BOTTOMRIGHT",
-								["yOfs"] = 1.99993491172791,
-								["xOfs"] = -404,
-							},
-							["DugisSmallFrameContainer"] = {
-								["point"] = "TOPRIGHT",
-								["relativePoint"] = "BOTTOMRIGHT",
-								["yOfs"] = 0,
-								["xOfs"] = 10,
-							},
-							["ObjectiveTrackerFrameHandlerFrame"] = {
-								["relativeTo"] = "UIParent",
-								["point"] = "TOPRIGHT",
-								["relativePoint"] = "TOPRIGHT",
-								["yOfs"] = -230.000015258789,
-								["xOfs"] = -90.0000076293945,
-							},
-							["DugisWatchBackground"] = {
-								["relativeTo"] = "ObjectiveTrackerFrameHandlerFrame",
-								["point"] = "TOPRIGHT",
-								["relativePoint"] = "BOTTOMRIGHT",
-								["yOfs"] = 50,
-								["xOfs"] = 6.99999952316284,
-							},
-							["DugisRecordFrame"] = {
-								["relativeTo"] = "UIParent",
-								["point"] = "CENTER",
-								["relativePoint"] = "CENTER",
-								["yOfs"] = 0,
-								["xOfs"] = 0,
-							},
-							["DugisGuideViewer_TargetFrame"] = {
-							},
-						},
+					[77] = {
+						["checked"] = false,
 					},
 					[302] = {
 						["options"] = {
@@ -1533,16 +1732,17 @@ DugisGuideViewerProfiles = {
 						},
 					},
 					[110] = {
+						["checked"] = "None",
 						["options"] = {
 							"None", -- [1]
 							"Active Talent Specialization", -- [2]
-							"Havoc", -- [3]
-							"Vengeance", -- [4]
+							"Balance", -- [3]
+							"Feral", -- [4]
+							"Guardian", -- [5]
+							"Restoration", -- [6]
 						},
 					},
-					[79] = {
-						["checked"] = false,
-					},
+					["showNotCollectedPets"] = true,
 					["petTypeFilters"] = {
 						["Humanoid"] = true,
 						["Elemental"] = true,
@@ -1551,64 +1751,33 @@ DugisGuideViewerProfiles = {
 						["Flying"] = true,
 						["Magical"] = true,
 						["Undead"] = true,
-						["Mechanical"] = true,
-						["Beast"] = true,
 						["Aquatic"] = true,
+						["Beast"] = true,
+						["Mechanical"] = true,
 					},
 					[112] = {
 						["checked"] = "Expand Down",
 					},
 					["showCollectedPets"] = true,
-					["EssentialsMode"] = 1,
-					[69] = {
+					[68] = {
 						["checked"] = false,
 					},
-					[75] = {
-						["checked"] = true,
+					[100] = {
+						["checked"] = "Easy",
 					},
-					[71] = {
-						["checked"] = true,
-					},
-					["FirstTime"] = false,
-					[103] = {
-						["checked"] = "None",
+					[69] = {
+						["checked"] = false,
 					},
 					[107] = {
 						["checked"] = "None",
 					},
-					[72] = {
-						["checked"] = true,
-					},
-					["showNotCollectedPets"] = true,
-					[207] = {
-						["checked"] = 1,
-					},
-					["SettingsRevision"] = 10,
-					[74] = {
-						["checked"] = true,
-					},
-					["ModelViewer"] = {
-						["pos_x"] = false,
-					},
 					[203] = {
 						["checked"] = 0,
 					},
-				},
-			},
-		},
-		["Yanlery - Stormrage"] = {
-			["char"] = {
-				["settings"] = {
-					[110] = {
-						["options"] = {
-							"None", -- [1]
-							"Active Talent Specialization", -- [2]
-							"Arms", -- [3]
-							"Fury", -- [4]
-							"Protection", -- [5]
-						},
+					["FirstTime"] = false,
+					[207] = {
+						["checked"] = 1,
 					},
-					["SettingsRevision"] = 9,
 					["QuestRecordTable"] = {
 						["framePositions"] = {
 							["DugisMainBorder"] = {
@@ -1619,10 +1788,10 @@ DugisGuideViewerProfiles = {
 								["xOfs"] = 0,
 							},
 							["DugisArrowFrame"] = {
-								["yOfs"] = 300,
-								["xOfs"] = 0,
-								["point"] = "CENTER",
-								["relativePoint"] = "CENTER",
+								["point"] = "RIGHT",
+								["relativePoint"] = "RIGHT",
+								["yOfs"] = -116.000122070313,
+								["xOfs"] = -369.000030517578,
 							},
 							["DugisGuideViewer_ModelViewer"] = {
 								["relativeTo"] = "DugisWatchBackground",
@@ -1632,11 +1801,6 @@ DugisGuideViewerProfiles = {
 								["xOfs"] = 0,
 							},
 							["DugisGuideViewer_TargetFrame"] = {
-								["relativeTo"] = "DugisSecureQuestButton",
-								["point"] = "LEFT",
-								["relativePoint"] = "RIGHT",
-								["yOfs"] = 0,
-								["xOfs"] = 5,
 							},
 							["DugisRecordFrame"] = {
 								["relativeTo"] = "UIParent",
@@ -1644,97 +1808,6 @@ DugisGuideViewerProfiles = {
 								["relativePoint"] = "CENTER",
 								["yOfs"] = 0,
 								["xOfs"] = 0,
-							},
-							["ObjectiveTrackerFrameHandlerFrame"] = {
-								["relativeTo"] = "UIParent",
-								["point"] = "TOPRIGHT",
-								["relativePoint"] = "TOPRIGHT",
-								["yOfs"] = -230.000015258789,
-								["xOfs"] = -90.0000076293945,
-							},
-							["DugisWatchBackground"] = {
-								["relativeTo"] = "MinimapCluster",
-								["point"] = "TOPRIGHT",
-								["relativePoint"] = "BOTTOMRIGHT",
-								["yOfs"] = 0,
-								["xOfs"] = -93,
-							},
-							["DugisSmallFrameContainer"] = {
-								["yOfs"] = 0,
-								["xOfs"] = 10,
-								["point"] = "TOPRIGHT",
-								["relativePoint"] = "BOTTOMRIGHT",
-							},
-							["DugisOnOffButton"] = {
-								["yOfs"] = 25.9999313354492,
-								["xOfs"] = -426.999633789063,
-								["point"] = "BOTTOMRIGHT",
-								["relativePoint"] = "BOTTOMRIGHT",
-							},
-						},
-					},
-					["FirstTime"] = false,
-					["ModelViewer"] = {
-						["pos_x"] = false,
-					},
-				},
-			},
-		},
-		["Jakwez - Stormrage"] = {
-			["char"] = {
-				["settings"] = {
-					nil, -- [1]
-					{
-						["checked"] = true,
-					}, -- [2]
-					{
-						["checked"] = true,
-					}, -- [3]
-					[58] = {
-						["checked"] = false,
-					},
-					[30] = {
-						["checked"] = false,
-					},
-					[31] = {
-						["checked"] = true,
-					},
-					[17] = {
-						["checked"] = false,
-					},
-					["QuestRecordTable"] = {
-						["framePositions"] = {
-							["DugisMainBorder"] = {
-								["relativeTo"] = "UIParent",
-								["point"] = "CENTER",
-								["relativePoint"] = "CENTER",
-								["yOfs"] = 0,
-								["xOfs"] = 0,
-							},
-							["DugisArrowFrame"] = {
-								["yOfs"] = -104.999862670898,
-								["xOfs"] = -320.999114990234,
-								["point"] = "RIGHT",
-								["relativePoint"] = "RIGHT",
-							},
-							["DugisGuideViewer_ModelViewer"] = {
-								["relativeTo"] = "DugisWatchBackground",
-								["point"] = "TOPRIGHT",
-								["relativePoint"] = "TOPLEFT",
-								["yOfs"] = 0,
-								["xOfs"] = 0,
-							},
-							["DugisOnOffButton"] = {
-								["yOfs"] = 4.00042390823364,
-								["xOfs"] = -405.999481201172,
-								["point"] = "BOTTOMRIGHT",
-								["relativePoint"] = "BOTTOMRIGHT",
-							},
-							["DugisSmallFrameContainer"] = {
-								["yOfs"] = 0,
-								["xOfs"] = 10,
-								["point"] = "TOPRIGHT",
-								["relativePoint"] = "BOTTOMRIGHT",
 							},
 							["ObjectiveTrackerFrameHandlerFrame"] = {
 								["relativeTo"] = "UIParent",
@@ -1750,102 +1823,26 @@ DugisGuideViewerProfiles = {
 								["yOfs"] = 50,
 								["xOfs"] = 6.99999952316284,
 							},
-							["DugisRecordFrame"] = {
-								["relativeTo"] = "UIParent",
-								["point"] = "CENTER",
-								["relativePoint"] = "CENTER",
+							["DugisSmallFrameContainer"] = {
+								["point"] = "TOPRIGHT",
+								["relativePoint"] = "BOTTOMRIGHT",
 								["yOfs"] = 0,
-								["xOfs"] = 0,
+								["xOfs"] = 10,
 							},
-							["DugisGuideViewer_TargetFrame"] = {
-								["relativeTo"] = "DugisSecureQuestButton",
-								["point"] = "LEFT",
-								["relativePoint"] = "RIGHT",
-								["yOfs"] = 0,
-								["xOfs"] = 5,
+							["DugisOnOffButton"] = {
+								["point"] = "BOTTOMRIGHT",
+								["relativePoint"] = "BOTTOMRIGHT",
+								["yOfs"] = 1.99993491172791,
+								["xOfs"] = -404,
 							},
 						},
 					},
-					[35] = {
-						["checked"] = false,
-					},
-					[36] = {
-						["checked"] = true,
-					},
-					[19] = {
-						["checked"] = false,
-					},
-					["GA_Blacklist"] = {
-						[138450] = true,
-						[122396] = true,
-						[136586] = true,
-					},
-					[20] = {
-						["checked"] = false,
-					},
-					["showCollectedPets"] = true,
 					["SettingsRevision"] = 10,
-					[42] = {
+					[79] = {
 						["checked"] = false,
-					},
-					[43] = {
-						["checked"] = false,
-					},
-					["FirstTime"] = false,
-					[203] = {
-						["checked"] = 0,
-					},
-					[68] = {
-						["checked"] = false,
-					},
-					[24] = {
-						["checked"] = false,
-					},
-					[13] = {
-						["checked"] = true,
-					},
-					["petTypeFilters"] = {
-						["Humanoid"] = true,
-						["Elemental"] = true,
-						["Critter"] = true,
-						["Dragon"] = true,
-						["Flying"] = true,
-						["Magical"] = true,
-						["Undead"] = true,
-						["Mechanical"] = true,
-						["Beast"] = true,
-						["Aquatic"] = true,
 					},
 					["ModelViewer"] = {
 						["pos_x"] = false,
-					},
-					[69] = {
-						["checked"] = false,
-					},
-					[45] = {
-						["checked"] = true,
-					},
-					[27] = {
-						["checked"] = false,
-					},
-					["showNotCollectedPets"] = true,
-					[77] = {
-						["checked"] = false,
-					},
-					[110] = {
-						["options"] = {
-							"None", -- [1]
-							"Active Talent Specialization", -- [2]
-							"Elemental", -- [3]
-							"Enhancement", -- [4]
-							"Restoration", -- [5]
-						},
-					},
-					[37] = {
-						["checked"] = true,
-					},
-					[33] = {
-						["checked"] = true,
 					},
 				},
 			},
@@ -1867,31 +1864,6 @@ DugisGuideViewerProfiles = {
 					},
 					[44] = {
 						["checked"] = false,
-					},
-				},
-			},
-		},
-		["Druidann - Stormrage"] = {
-			["char"] = {
-				["settings"] = {
-					[110] = {
-						["options"] = {
-							"None", -- [1]
-							"Active Talent Specialization", -- [2]
-							"Balance", -- [3]
-							"Feral", -- [4]
-							"Guardian", -- [5]
-							"Restoration", -- [6]
-						},
-					},
-					["SettingsRevision"] = 9,
-					["FirstTime"] = false,
-					["QuestRecordTable"] = {
-						["framePositions"] = {
-						},
-					},
-					["ModelViewer"] = {
-						["pos_x"] = false,
 					},
 				},
 			},
@@ -1926,66 +1898,6 @@ DugisGuideViewerProfiles = {
 					[20] = {
 						["checked"] = false,
 					},
-					[37] = {
-						["checked"] = true,
-					},
-					[72] = {
-						["checked"] = true,
-					},
-					[42] = {
-						["checked"] = false,
-					},
-					[203] = {
-						["checked"] = 0,
-					},
-					[6] = {
-						["checked"] = true,
-					},
-					["FirstTime"] = false,
-					[76] = {
-						["checked"] = true,
-					},
-					[24] = {
-						["checked"] = false,
-					},
-					[302] = {
-						["options"] = {
-							false, -- [1]
-							false, -- [2]
-							false, -- [3]
-						},
-					},
-					[13] = {
-						["checked"] = true,
-					},
-					["ModelViewer"] = {
-						["pos_x"] = false,
-					},
-					[69] = {
-						["checked"] = false,
-					},
-					[71] = {
-						["checked"] = true,
-					},
-					[107] = {
-						["checked"] = "None",
-					},
-					[75] = {
-						["checked"] = true,
-					},
-					["SettingsRevision"] = 9,
-					[110] = {
-						["options"] = {
-							"None", -- [1]
-							"Active Talent Specialization", -- [2]
-							"Blood", -- [3]
-							"Frost", -- [4]
-							"Unholy", -- [5]
-						},
-					},
-					[112] = {
-						["checked"] = "Expand Down",
-					},
 					["QuestRecordTable"] = {
 						["framePositions"] = {
 							["DugisMainBorder"] = {
@@ -2004,14 +1916,18 @@ DugisGuideViewerProfiles = {
 								["yOfs"] = 0,
 								["xOfs"] = 0,
 							},
-							["DugisGuideViewer_TargetFrame"] = {
+							["DugisOnOffButton"] = {
+								["relativeTo"] = "Minimap",
+								["point"] = "RIGHT",
+								["relativePoint"] = "LEFT",
+								["yOfs"] = 35.0000038146973,
+								["xOfs"] = 13.0000009536743,
 							},
-							["DugisRecordFrame"] = {
-								["relativeTo"] = "UIParent",
-								["point"] = "CENTER",
-								["relativePoint"] = "CENTER",
+							["DugisSmallFrameContainer"] = {
 								["yOfs"] = 0,
-								["xOfs"] = 0,
+								["xOfs"] = 10,
+								["point"] = "TOPRIGHT",
+								["relativePoint"] = "BOTTOMRIGHT",
 							},
 							["ObjectiveTrackerFrameHandlerFrame"] = {
 								["relativeTo"] = "UIParent",
@@ -2027,20 +1943,101 @@ DugisGuideViewerProfiles = {
 								["yOfs"] = 50,
 								["xOfs"] = 6.99999952316284,
 							},
-							["DugisSmallFrameContainer"] = {
+							["DugisRecordFrame"] = {
+								["relativeTo"] = "UIParent",
+								["point"] = "CENTER",
+								["relativePoint"] = "CENTER",
 								["yOfs"] = 0,
-								["xOfs"] = 10,
-								["point"] = "TOPRIGHT",
-								["relativePoint"] = "BOTTOMRIGHT",
+								["xOfs"] = 0,
 							},
-							["DugisOnOffButton"] = {
-								["relativeTo"] = "Minimap",
-								["point"] = "RIGHT",
-								["relativePoint"] = "LEFT",
-								["yOfs"] = 35.0000038146973,
-								["xOfs"] = 13.0000009536743,
+							["DugisGuideViewer_TargetFrame"] = {
 							},
 						},
+					},
+					[72] = {
+						["checked"] = true,
+					},
+					[42] = {
+						["checked"] = false,
+					},
+					["FirstTime"] = false,
+					[203] = {
+						["checked"] = 0,
+					},
+					[6] = {
+						["checked"] = true,
+					},
+					[76] = {
+						["checked"] = true,
+					},
+					[24] = {
+						["checked"] = false,
+					},
+					[107] = {
+						["checked"] = "None",
+					},
+					["ModelViewer"] = {
+						["pos_x"] = false,
+					},
+					[13] = {
+						["checked"] = true,
+					},
+					[69] = {
+						["checked"] = false,
+					},
+					[71] = {
+						["checked"] = true,
+					},
+					[302] = {
+						["options"] = {
+							false, -- [1]
+							false, -- [2]
+							false, -- [3]
+						},
+					},
+					[75] = {
+						["checked"] = true,
+					},
+					["SettingsRevision"] = 9,
+					[110] = {
+						["options"] = {
+							"None", -- [1]
+							"Active Talent Specialization", -- [2]
+							"Blood", -- [3]
+							"Frost", -- [4]
+							"Unholy", -- [5]
+						},
+					},
+					[112] = {
+						["checked"] = "Expand Down",
+					},
+					[37] = {
+						["checked"] = true,
+					},
+				},
+			},
+		},
+		["Druidann - Stormrage"] = {
+			["char"] = {
+				["settings"] = {
+					[110] = {
+						["options"] = {
+							"None", -- [1]
+							"Active Talent Specialization", -- [2]
+							"Balance", -- [3]
+							"Feral", -- [4]
+							"Guardian", -- [5]
+							"Restoration", -- [6]
+						},
+					},
+					["SettingsRevision"] = 9,
+					["FirstTime"] = false,
+					["QuestRecordTable"] = {
+						["framePositions"] = {
+						},
+					},
+					["ModelViewer"] = {
+						["pos_x"] = false,
 					},
 				},
 			},
@@ -2070,17 +2067,19 @@ DugisGuideViewerProfiles = {
 								["yOfs"] = 0,
 								["xOfs"] = 0,
 							},
-							["DugisOnOffButton"] = {
-								["yOfs"] = -176.999954223633,
-								["xOfs"] = -176.000259399414,
-								["point"] = "TOPRIGHT",
-								["relativePoint"] = "TOPRIGHT",
-							},
-							["DugisSmallFrameContainer"] = {
+							["DugisGuideViewer_TargetFrame"] = {
+								["relativeTo"] = "DugisSecureQuestButton",
+								["point"] = "LEFT",
+								["relativePoint"] = "RIGHT",
 								["yOfs"] = 0,
-								["xOfs"] = 10,
-								["point"] = "TOPRIGHT",
-								["relativePoint"] = "BOTTOMRIGHT",
+								["xOfs"] = 5,
+							},
+							["DugisRecordFrame"] = {
+								["relativeTo"] = "UIParent",
+								["point"] = "CENTER",
+								["relativePoint"] = "CENTER",
+								["yOfs"] = 0,
+								["xOfs"] = 0,
 							},
 							["ObjectiveTrackerFrameHandlerFrame"] = {
 								["relativeTo"] = "UIParent",
@@ -2096,19 +2095,17 @@ DugisGuideViewerProfiles = {
 								["yOfs"] = -75.0001220703125,
 								["xOfs"] = -93,
 							},
-							["DugisRecordFrame"] = {
-								["relativeTo"] = "UIParent",
-								["point"] = "CENTER",
-								["relativePoint"] = "CENTER",
+							["DugisSmallFrameContainer"] = {
 								["yOfs"] = 0,
-								["xOfs"] = 0,
+								["xOfs"] = 10,
+								["point"] = "TOPRIGHT",
+								["relativePoint"] = "BOTTOMRIGHT",
 							},
-							["DugisGuideViewer_TargetFrame"] = {
-								["relativeTo"] = "DugisSecureQuestButton",
-								["point"] = "LEFT",
-								["relativePoint"] = "RIGHT",
-								["yOfs"] = 0,
-								["xOfs"] = 5,
+							["DugisOnOffButton"] = {
+								["yOfs"] = -176.999954223633,
+								["xOfs"] = -176.000259399414,
+								["point"] = "TOPRIGHT",
+								["relativePoint"] = "TOPRIGHT",
 							},
 						},
 					},
@@ -2129,87 +2126,87 @@ DugisGuideViewerProfiles = {
 				},
 			},
 		},
-		["Emmarosa - Stormrage"] = {
+		["Talthalador - Stormrage"] = {
 			["char"] = {
 				["settings"] = {
-					[110] = {
+					{
+						["checked"] = true,
+					}, -- [1]
+					{
+						["checked"] = true,
+					}, -- [2]
+					{
+						["checked"] = true,
+					}, -- [3]
+					[58] = {
+						["checked"] = false,
+					},
+					[33] = {
+						["checked"] = true,
+					},
+					[36] = {
+						["checked"] = true,
+					},
+					[19] = {
+						["checked"] = false,
+					},
+					[74] = {
+						["checked"] = true,
+					},
+					[20] = {
+						["checked"] = false,
+					},
+					[302] = {
 						["options"] = {
-							"None", -- [1]
-							"Active Talent Specialization", -- [2]
-							"Assassination", -- [3]
-							"Outlaw", -- [4]
-							"Subtlety", -- [5]
+							nil, -- [1]
+							nil, -- [2]
+							nil, -- [3]
+							"Vengeance", -- [4]
 						},
 					},
-					["SettingsRevision"] = 9,
+					[6] = {
+						["checked"] = true,
+					},
 					["FirstTime"] = false,
+					[24] = {
+						["checked"] = false,
+					},
 					["QuestRecordTable"] = {
 						["framePositions"] = {
-							["DugisMainBorder"] = {
-								["relativeTo"] = "UIParent",
-								["point"] = "CENTER",
-								["relativePoint"] = "CENTER",
-								["yOfs"] = 0,
-								["xOfs"] = 0,
-							},
-							["DugisArrowFrame"] = {
-								["relativeTo"] = "UIParent",
-								["point"] = "CENTER",
-								["relativePoint"] = "CENTER",
-								["yOfs"] = 300,
-								["xOfs"] = 0,
-							},
-							["DugisGuideViewer_ModelViewer"] = {
-								["relativeTo"] = "DugisWatchBackground",
-								["point"] = "TOPRIGHT",
-								["relativePoint"] = "TOPLEFT",
-								["yOfs"] = 0,
-								["xOfs"] = 0,
-							},
-							["DugisGuideViewer_TargetFrame"] = {
-								["relativeTo"] = "DugisSecureQuestButton",
-								["point"] = "LEFT",
-								["relativePoint"] = "RIGHT",
-								["yOfs"] = 0,
-								["xOfs"] = 5,
-							},
-							["DugisRecordFrame"] = {
-								["relativeTo"] = "UIParent",
-								["point"] = "CENTER",
-								["relativePoint"] = "CENTER",
-								["yOfs"] = 0,
-								["xOfs"] = 0,
-							},
-							["ObjectiveTrackerFrameHandlerFrame"] = {
-								["relativeTo"] = "UIParent",
-								["point"] = "TOPRIGHT",
-								["relativePoint"] = "TOPRIGHT",
-								["yOfs"] = -230.000015258789,
-								["xOfs"] = -90.0000076293945,
-							},
-							["DugisWatchBackground"] = {
-								["relativeTo"] = "MinimapCluster",
-								["point"] = "TOPRIGHT",
-								["relativePoint"] = "BOTTOMRIGHT",
-								["yOfs"] = 0,
-								["xOfs"] = -93,
-							},
-							["DugisSmallFrameContainer"] = {
-								["yOfs"] = 0,
-								["xOfs"] = 10,
-								["point"] = "TOPRIGHT",
-								["relativePoint"] = "BOTTOMRIGHT",
-							},
-							["DugisOnOffButton"] = {
-								["yOfs"] = -152.000076293945,
-								["xOfs"] = -150.999954223633,
-								["point"] = "TOPRIGHT",
-								["relativePoint"] = "TOPRIGHT",
-							},
 						},
 					},
 					["ModelViewer"] = {
 						["pos_x"] = false,
+					},
+					[13] = {
+						["checked"] = true,
+					},
+					[72] = {
+						["checked"] = true,
+					},
+					[71] = {
+						["checked"] = true,
+					},
+					[76] = {
+						["checked"] = true,
+					},
+					[75] = {
+						["checked"] = true,
+					},
+					["SettingsRevision"] = 9,
+					[110] = {
+						["options"] = {
+							"None", -- [1]
+							"Active Talent Specialization", -- [2]
+							"Havoc", -- [3]
+							"Vengeance", -- [4]
+						},
+					},
+					[45] = {
+						["checked"] = true,
+					},
+					[37] = {
+						["checked"] = true,
 					},
 				},
 			},
@@ -2264,16 +2261,13 @@ DugisGuideViewerProfiles = {
 					[58] = {
 						["checked"] = false,
 					},
+					[107] = {
+						["checked"] = "None",
+					},
 					[60] = {
 						["checked"] = false,
 					},
-					[39] = {
-						["checked"] = false,
-					},
 					[57] = {
-						["checked"] = true,
-					},
-					[33] = {
 						["checked"] = true,
 					},
 					[110] = {
@@ -2288,40 +2282,8 @@ DugisGuideViewerProfiles = {
 					[108] = {
 						["checked"] = "Standard - Anchored",
 					},
-					[36] = {
+					[33] = {
 						["checked"] = true,
-					},
-					[72] = {
-						["checked"] = true,
-					},
-					[74] = {
-						["checked"] = true,
-					},
-					[76] = {
-						["checked"] = true,
-					},
-					[40] = {
-						["checked"] = false,
-					},
-					[302] = {
-						["options"] = {
-							false, -- [1]
-							false, -- [2]
-							false, -- [3]
-						},
-					},
-					[42] = {
-						["checked"] = false,
-					},
-					[43] = {
-						["checked"] = false,
-					},
-					[203] = {
-						["checked"] = 0,
-					},
-					["FirstTime"] = false,
-					[207] = {
-						["checked"] = 1,
 					},
 					["QuestRecordTable"] = {
 						["framePositions"] = {
@@ -2333,12 +2295,17 @@ DugisGuideViewerProfiles = {
 								["xOfs"] = 0,
 							},
 							["DugisArrowFrame"] = {
-								["yOfs"] = -94.0002212524414,
-								["xOfs"] = -267.998474121094,
-								["point"] = "RIGHT",
-								["relativePoint"] = "RIGHT",
+								["yOfs"] = 300,
+								["xOfs"] = 0,
+								["point"] = "CENTER",
+								["relativePoint"] = "CENTER",
 							},
 							["DugisGuideViewer_ModelViewer"] = {
+								["relativeTo"] = "DugisWatchBackground",
+								["point"] = "TOPRIGHT",
+								["relativePoint"] = "TOPLEFT",
+								["yOfs"] = 0,
+								["xOfs"] = 0,
 							},
 							["DugisGuideViewer_TargetFrame"] = {
 							},
@@ -2370,17 +2337,53 @@ DugisGuideViewerProfiles = {
 								["relativePoint"] = "BOTTOMRIGHT",
 							},
 							["DugisOnOffButton"] = {
-								["yOfs"] = 1.00013875961304,
-								["xOfs"] = -414.000061035156,
-								["point"] = "BOTTOMRIGHT",
-								["relativePoint"] = "BOTTOMRIGHT",
+								["relativeTo"] = "DugisArrowFrame",
+								["point"] = "BOTTOM",
+								["relativePoint"] = "TOP",
+								["yOfs"] = 0,
+								["xOfs"] = -19.0000019073486,
 							},
 						},
+					},
+					[39] = {
+						["checked"] = false,
+					},
+					[36] = {
+						["checked"] = true,
+					},
+					[72] = {
+						["checked"] = true,
+					},
+					[74] = {
+						["checked"] = true,
+					},
+					[76] = {
+						["checked"] = true,
+					},
+					[40] = {
+						["checked"] = false,
+					},
+					["showNotCollectedPets"] = true,
+					[42] = {
+						["checked"] = false,
+					},
+					[43] = {
+						["checked"] = false,
+					},
+					[51] = {
+						["checked"] = false,
+					},
+					["FirstTime"] = false,
+					[207] = {
+						["checked"] = 1,
+					},
+					[37] = {
+						["checked"] = true,
 					},
 					[48] = {
 						["checked"] = false,
 					},
-					[51] = {
+					[79] = {
 						["checked"] = false,
 					},
 					["ModelViewer"] = {
@@ -2392,21 +2395,23 @@ DugisGuideViewerProfiles = {
 					[71] = {
 						["checked"] = true,
 					},
-					[107] = {
-						["checked"] = "None",
+					[203] = {
+						["checked"] = 0,
 					},
 					[75] = {
 						["checked"] = true,
 					},
-					["SettingsRevision"] = 9,
-					[79] = {
-						["checked"] = false,
-					},
+					["SettingsRevision"] = 10,
+					["showCollectedPets"] = true,
 					[112] = {
 						["checked"] = "Expand Down",
 					},
-					[37] = {
-						["checked"] = true,
+					[302] = {
+						["options"] = {
+							false, -- [1]
+							false, -- [2]
+							false, -- [3]
+						},
 					},
 				},
 			},
@@ -2540,6 +2545,7 @@ CollectedWorldMapTrackingPoints = {
 			"2:1806879420:96823::M", -- [76]
 			"2:1798556496:96823::M", -- [77]
 			"2:1833028708:96821::M", -- [78]
+			"2:1836436600:96821::M", -- [79]
 		},
 		["Azsuna:0"] = {
 			"6:2157870879:90086::F", -- [1]
@@ -2548,28 +2554,49 @@ CollectedWorldMapTrackingPoints = {
 			"12:2175500174:109383::M", -- [4]
 			"12:1378384107:110974::M", -- [5]
 		},
-		["AshranAllianceFactionHub:0"] = {
-			"1:2346888457:88522::M", -- [1]
+		["ValhallasWarriorOrderHome:1"] = {
+			"12:2442085643:112392::M", -- [1]
 		},
-		["ThunderTotem:0"] = {
-			"7:1916045730:97852:Thunder Totem:F", -- [1]
-			"12:1828550160:99905::F", -- [2]
-			"11:1846711078:97857::F", -- [3]
-			"12:1770621290:97858::M", -- [4]
-			"12:1774815092:97858::M", -- [5]
-			"12:1760462860:97858::M", -- [6]
-			"11:1817219654:97857::F", -- [7]
+		["Suramar:0"] = {
+			"7:1571125213:97140:Shal'Aran:F", -- [1]
+			"10:1296468120:92265:3100:M", -- [2]
+			"12:1570142270:98548::M", -- [3]
+			"12:3052700931:102660::M", -- [4]
+			"7:1568765976:97140:Shal'Aran:F", -- [5]
+			"7:1570994140:97140:Shal'Aran:F", -- [6]
 		},
-		["Highmountain:0"] = {
-			"12:1645896806:97869::M", -- [1]
-			"12:2365052880:92245::F", -- [2]
-			"12:2363152433:92245::F", -- [3]
-			"12:2363217901:92245::F", -- [4]
-		},
-		["garrisonsmvalliance_tier3:0"] = {
-			"12:2168165278:77378::M", -- [1]
-			"12:2167378408:77378::M", -- [2]
-			"2:2020710461:84857::F", -- [3]
+		["Dalaran70:4"] = {
+			"12:1176460163:105986::F", -- [1]
+			"11:2891416912:103834::F", -- [2]
+			"12:1136286482:105986::F", -- [3]
+			"12:1194416858:105986::F", -- [4]
+			"12:1204443594:105986::F", -- [5]
+			"11:2911929726:103834::F", -- [6]
+			"12:1764648442:35642::M", -- [7]
+			"12:1177574152:105986::F", -- [8]
+			"12:1177443238:105986::F", -- [9]
+			"12:1822582620:35642::M", -- [10]
+			"12:1171807049:105986::F", -- [11]
+			"12:1197103829:105986::F", -- [12]
+			"12:1197103829:105986::F", -- [13]
+			"12:1167416600:105986::F", -- [14]
+			"12:1154308596:105986::F", -- [15]
+			"12:1166170862:105986::F", -- [16]
+			"12:1182554681:105986::F", -- [17]
+			"11:2071937544:103839::M", -- [18]
+			"12:1177705208:105986::F", -- [19]
+			"12:1202215772:105986::F", -- [20]
+			"12:1162631733:105986::F", -- [21]
+			"12:1173642160:105986::F", -- [22]
+			"12:1834186944:35642::M", -- [23]
+			"6:2023261346:105977::M", -- [24]
+			"12:1172462212:105986::F", -- [25]
+			"12:1173511011:105986::F", -- [26]
+			"12:1721002769:35642::M", -- [27]
+			"12:1153849743:105986::F", -- [28]
+			"12:1163615039:105986::F", -- [29]
+			"12:1178491702:105986::F", -- [30]
+			"11:2965801195:103834::F", -- [31]
 		},
 		["StormwindCity:0"] = {
 			"6:2855648426:108056::F", -- [1]
@@ -2687,50 +2714,31 @@ CollectedWorldMapTrackingPoints = {
 			"2:2707342960:43819::F", -- [113]
 			"1:2616636819:8670::M", -- [114]
 			"1:2615915961:8670::M", -- [115]
+			"1:2629481671:8719::M", -- [116]
+			"1:2629481681:8719::M", -- [117]
 		},
-		["Dalaran70:4"] = {
-			"12:1176460163:105986::F", -- [1]
-			"11:2891416912:103834::F", -- [2]
-			"12:1136286482:105986::F", -- [3]
-			"12:1194416858:105986::F", -- [4]
-			"12:1204443594:105986::F", -- [5]
-			"11:2911929726:103834::F", -- [6]
-			"12:1764648442:35642::M", -- [7]
-			"12:1177574152:105986::F", -- [8]
-			"12:1177443238:105986::F", -- [9]
-			"12:1822582620:35642::M", -- [10]
-			"12:1171807049:105986::F", -- [11]
-			"12:1197103829:105986::F", -- [12]
-			"12:1197103829:105986::F", -- [13]
-			"12:1167416600:105986::F", -- [14]
-			"12:1154308596:105986::F", -- [15]
-			"12:1166170862:105986::F", -- [16]
-			"12:1182554681:105986::F", -- [17]
-			"11:2071937544:103839::M", -- [18]
-			"12:1177705208:105986::F", -- [19]
-			"12:1202215772:105986::F", -- [20]
-			"12:1162631733:105986::F", -- [21]
-			"12:1173642160:105986::F", -- [22]
-			"12:1834186944:35642::M", -- [23]
-			"6:2023261346:105977::M", -- [24]
-			"12:1172462212:105986::F", -- [25]
-			"12:1173511011:105986::F", -- [26]
-			"12:1721002769:35642::M", -- [27]
-			"12:1153849743:105986::F", -- [28]
-			"12:1163615039:105986::F", -- [29]
-			"12:1178491702:105986::F", -- [30]
-			"11:2965801195:103834::F", -- [31]
+		["garrisonsmvalliance_tier3:0"] = {
+			"12:2168165278:77378::M", -- [1]
+			"12:2167378408:77378::M", -- [2]
+			"2:2020710461:84857::F", -- [3]
 		},
-		["Suramar:0"] = {
-			"7:1571125213:97140:Shal'Aran:F", -- [1]
-			"10:1296468120:92265:3100:M", -- [2]
-			"12:1570142270:98548::M", -- [3]
-			"12:3052700931:102660::M", -- [4]
-			"7:1568765976:97140:Shal'Aran:F", -- [5]
-			"7:1570994140:97140:Shal'Aran:F", -- [6]
+		["Highmountain:0"] = {
+			"12:1645896806:97869::M", -- [1]
+			"12:2365052880:92245::F", -- [2]
+			"12:2363152433:92245::F", -- [3]
+			"12:2363217901:92245::F", -- [4]
 		},
-		["ValhallasWarriorOrderHome:1"] = {
-			"12:2442085643:112392::M", -- [1]
+		["ThunderTotem:0"] = {
+			"7:1916045730:97852:Thunder Totem:F", -- [1]
+			"12:1828550160:99905::F", -- [2]
+			"11:1846711078:97857::F", -- [3]
+			"12:1770621290:97858::M", -- [4]
+			"12:1774815092:97858::M", -- [5]
+			"12:1760462860:97858::M", -- [6]
+			"11:1817219654:97857::F", -- [7]
+		},
+		["AshranAllianceFactionHub:0"] = {
+			"1:2346888457:88522::M", -- [1]
 		},
 	},
 }
@@ -2836,9 +2844,9 @@ FollowersCache = {
 			["name"] = "Olin Umberhide ",
 			["level"] = 90,
 		},
-		[218] = {
-			["name"] = "Talonpriest Ishaal ",
-			["level"] = 97,
+		[580] = {
+			["name"] = "Pallas ",
+			["level"] = 100,
 		},
 		[153] = {
 			["name"] = "Ka'la ",
@@ -2860,13 +2868,13 @@ FollowersCache = {
 			["name"] = "Millhouse Manastorm ",
 			["level"] = 100,
 		},
-		[170] = {
-			["name"] = "Goldmane the Skinner ",
+		[462] = {
+			["name"] = "Dawnseeker Rukaryx ",
 			["level"] = 100,
 		},
-		[202] = {
-			["name"] = "Nat Pagle ",
-			["level"] = 100,
+		[463] = {
+			["name"] = "Ulna Thresher ",
+			["level"] = 90,
 		},
 		[458] = {
 			["name"] = "Cacklebone ",
@@ -2880,24 +2888,24 @@ FollowersCache = {
 			["name"] = "Professor Felblast ",
 			["level"] = 100,
 		},
-		[465] = {
-			["name"] = "Harrison Jones ",
+		[203] = {
+			["name"] = "Meatball ",
 			["level"] = 100,
 		},
-		[462] = {
-			["name"] = "Dawnseeker Rukaryx ",
+		[170] = {
+			["name"] = "Goldmane the Skinner ",
 			["level"] = 100,
 		},
-		[463] = {
-			["name"] = "Ulna Thresher ",
-			["level"] = 90,
+		[202] = {
+			["name"] = "Nat Pagle ",
+			["level"] = 100,
 		},
 		[171] = {
 			["name"] = "Pleasure-Bot 8000 ",
 			["level"] = 94,
 		},
-		[203] = {
-			["name"] = "Meatball ",
+		[465] = {
+			["name"] = "Harrison Jones ",
 			["level"] = 100,
 		},
 		[466] = {
@@ -2920,13 +2928,13 @@ FollowersCache = {
 			["name"] = "Fen Tao ",
 			["level"] = 90,
 		},
-		[168] = {
-			["name"] = "Ziri'ak ",
-			["level"] = 99,
-		},
 		[154] = {
 			["name"] = "Magister Krelas ",
 			["level"] = 94,
+		},
+		[168] = {
+			["name"] = "Ziri'ak ",
+			["level"] = 99,
 		},
 		[207] = {
 			["name"] = "Aeda Brightdawn ",
@@ -2952,9 +2960,9 @@ FollowersCache = {
 			["name"] = "Leeroy Jenkins ",
 			["level"] = 100,
 		},
-		[580] = {
-			["name"] = "Pallas ",
-			["level"] = 100,
+		[218] = {
+			["name"] = "Talonpriest Ishaal ",
+			["level"] = 97,
 		},
 	},
 	["Alliance"] = {
@@ -3058,9 +3066,9 @@ FollowersCache = {
 			["name"] = "Alexi Barov ",
 			["level"] = 95,
 		},
-		[580] = {
-			["name"] = "Pallas ",
-			["level"] = 100,
+		[153] = {
+			["name"] = "Ka'la ",
+			["level"] = 90,
 		},
 		[218] = {
 			["name"] = "Talonpriest Ishaal ",
@@ -3082,13 +3090,13 @@ FollowersCache = {
 			["name"] = "Millhouse Manastorm ",
 			["level"] = 100,
 		},
-		[462] = {
-			["name"] = "Dawnseeker Rukaryx ",
+		[170] = {
+			["name"] = "Goldmane the Skinner ",
 			["level"] = 100,
 		},
-		[202] = {
-			["name"] = "Nat Pagle ",
-			["level"] = 100,
+		[463] = {
+			["name"] = "Ulna Thresher ",
+			["level"] = 90,
 		},
 		[458] = {
 			["name"] = "Cacklebone ",
@@ -3102,24 +3110,24 @@ FollowersCache = {
 			["name"] = "Professor Felblast ",
 			["level"] = 100,
 		},
-		[203] = {
-			["name"] = "Meatball ",
+		[465] = {
+			["name"] = "Harrison Jones ",
 			["level"] = 100,
 		},
-		[170] = {
-			["name"] = "Goldmane the Skinner ",
+		[462] = {
+			["name"] = "Dawnseeker Rukaryx ",
 			["level"] = 100,
 		},
-		[463] = {
-			["name"] = "Ulna Thresher ",
-			["level"] = 90,
+		[202] = {
+			["name"] = "Nat Pagle ",
+			["level"] = 100,
 		},
 		[171] = {
 			["name"] = "Pleasure-Bot 8000 ",
 			["level"] = 94,
 		},
-		[465] = {
-			["name"] = "Harrison Jones ",
+		[203] = {
+			["name"] = "Meatball ",
 			["level"] = 100,
 		},
 		[466] = {
@@ -3142,13 +3150,13 @@ FollowersCache = {
 			["name"] = "Fen Tao ",
 			["level"] = 90,
 		},
-		[34] = {
-			["name"] = "Olin Umberhide ",
-			["level"] = 90,
-		},
 		[168] = {
 			["name"] = "Ziri'ak ",
 			["level"] = 99,
+		},
+		[34] = {
+			["name"] = "Olin Umberhide ",
+			["level"] = 90,
 		},
 		[207] = {
 			["name"] = "Aeda Brightdawn ",
@@ -3174,9 +3182,9 @@ FollowersCache = {
 			["name"] = "Leeroy Jenkins ",
 			["level"] = 100,
 		},
-		[153] = {
-			["name"] = "Ka'la ",
-			["level"] = 90,
+		[580] = {
+			["name"] = "Pallas ",
+			["level"] = 100,
 		},
 	},
 }

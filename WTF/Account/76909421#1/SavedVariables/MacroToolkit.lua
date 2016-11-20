@@ -176,23 +176,23 @@ MacroToolkitDB = {
 		["Dosnutz - Stormrage"] = {
 			["macros"] = {
 				[121] = {
-					["icon"] = "237508",
 					["name"] = " ",
+					["icon"] = "628677",
 					["body"] = "#showtooltip Ancient Portal: Dalaran\n/s Have you ever met Crusader Jorny?  If not, today's your lucky day!\n/use Ancient Portal: Dalaran\n",
 				},
 				[122] = {
-					["icon"] = "135822",
 					["name"] = "Fire Test",
+					["icon"] = "135822",
 					["body"] = "/castsequence reset=180 Rune of Power,Time Warp,Scorch,Combustion,Fire Blast,Pyroblast,Fire Blast,Pyroblast,Flame On,Fire Blast,Pyroblast,Fire Blast,Pyroblast,Scorch,Pyroblast,Scorch,Pyroblast,Rune of Power,Scorch,Pyroblast\n",
 				},
 				[123] = {
-					["icon"] = "135841",
 					["name"] = "Ice Block",
+					["icon"] = "135841",
 					["body"] = "#showtooltip Ice Block\n/cancelaura Ice Block\n/use Ice Block\n",
 				},
 				[124] = {
-					["icon"] = "134400",
 					["name"] = "Water Jet",
+					["icon"] = "135836",
 					["body"] = "#showtooltip\n/cast Water Jet\n",
 				},
 			},
@@ -308,15 +308,15 @@ MacroToolkitDB = {
 					["icon"] = "134400",
 					["body"] = "#showtooltip Riposte\n/use [nostealth]Riposte\n",
 				},
-				[129] = {
-					["name"] = "Shadow Blades",
-					["icon"] = "134400",
-					["body"] = "#showtooltip Shadow Blades\n/use Shadow Blades\n/use 13\n/use 14\n/use Goremaw's Bite\n",
-				},
 				[121] = {
 					["name"] = " ",
 					["icon"] = "134400",
 					["body"] = "#showtooltip Adrenaline Rush\n/use Adrenaline Rush\n/use Curse of the Dreadblades\n/use 13\n/use 14\n/use 11\n",
+				},
+				[129] = {
+					["name"] = "Shadow Blades",
+					["icon"] = "134400",
+					["body"] = "#showtooltip Shadow Blades\n/use Shadow Blades\n/use 13\n/use 14\n/use Goremaw's Bite\n",
 				},
 				[125] = {
 					["name"] = "Pistol Shot",
@@ -366,9 +366,24 @@ MacroToolkitDB = {
 		["Druidann - Stormrage"] = {
 			["macros"] = {
 				[121] = {
+					["icon"] = "132270",
+					["name"] = "Growl",
+					["body"] = "#showtooltip\n/use [@mouseover,harm,exists][]Growl\n",
+				},
+				[122] = {
+					["icon"] = "136048",
+					["name"] = "Innervate",
+					["body"] = "#showtooltip\n/use [@mouseover,help,exists][]Innervate\n",
+				},
+				[123] = {
 					["icon"] = "136080",
 					["name"] = "Rebirth",
 					["body"] = "#showtooltip\n/use [@mouseover,dead][]Rebirth\n",
+				},
+				[124] = {
+					["icon"] = "135952",
+					["name"] = "RemCorruption",
+					["body"] = "#showtooltip\n/use [@mouseover,help,exists][]Remove Corruption\n",
 				},
 			},
 			["backups"] = {

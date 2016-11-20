@@ -1,4 +1,16 @@
+VER 3 0100000000000004 "Growl" "INV_Misc_QuestionMark"
+#showtooltip
+/use [@mouseover,harm,exists][]Growl
+END
+VER 3 0100000000000002 "Innervate" "INV_Misc_QuestionMark"
+#showtooltip
+/use [@mouseover,help,exists][]Innervate
+END
 VER 3 0100000000000001 "Rebirth" "SPELL_NATURE_REINCARNATION"
 #showtooltip
 /use [@mouseover,dead][]Rebirth
+END
+VER 3 0100000000000003 "RemCorruption" "INV_Misc_QuestionMark"
+#showtooltip
+/use [@mouseover,help,exists][]Remove Corruption
 END

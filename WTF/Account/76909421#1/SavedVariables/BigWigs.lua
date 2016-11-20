@@ -53,21 +53,7 @@ BigWigs3DB = {
 		},
 		["BigWigs_Plugins_Common Auras"] = {
 		},
-		["BigWigs_Plugins_Proximity"] = {
-			["profiles"] = {
-				["Default"] = {
-					["posx"] = 1077.33353303141,
-					["fontSize"] = 20,
-					["width"] = 233.000045776367,
-					["objects"] = {
-						["background"] = false,
-					},
-					["posy"] = 274.488895535469,
-					["lock"] = true,
-					["height"] = 198.999923706055,
-					["font"] = "Friz Quadrata TT",
-				},
-			},
+		["BigWigs_Plugins_Respawn"] = {
 		},
 		["BigWigs_Plugins_Messages"] = {
 			["profiles"] = {
@@ -83,7 +69,21 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_Respawn"] = {
+		["BigWigs_Plugins_Proximity"] = {
+			["profiles"] = {
+				["Default"] = {
+					["posx"] = 1077.33353303141,
+					["fontSize"] = 20,
+					["width"] = 233.000045776367,
+					["objects"] = {
+						["background"] = false,
+					},
+					["posy"] = 274.488895535469,
+					["lock"] = true,
+					["height"] = 198.999923706055,
+					["font"] = "Friz Quadrata TT",
+				},
+			},
 		},
 		["BigWigs_Plugins_Pull"] = {
 			["profiles"] = {

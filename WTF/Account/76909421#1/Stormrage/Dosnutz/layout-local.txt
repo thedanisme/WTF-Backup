@@ -1,9 +1,9 @@
 Version: 1
 Frame: DugisArrowFrame
 FrameLevel: 1
-Anchor: RIGHT
-X: -268
-Y: -94
+Anchor: TOP
+X: 0
+Y: -210
 W: 80
 H: 60
 Frame: ItemRefTooltip

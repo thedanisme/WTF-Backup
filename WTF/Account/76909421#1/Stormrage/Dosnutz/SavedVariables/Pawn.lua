@@ -1,12 +1,12 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0011,
+	["LastVersion"] = 2.0108,
 	["LastPlayerFullName"] = "Dosnutz-Stormrage",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,
 	["LastKeybindingsSet"] = 1,
 }
-PawnWowheadScaleProviderOptions = {
+PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "MAGE",
-	["LastAdded"] = 5,
+	["LastAdded"] = 1,
 }

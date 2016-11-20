@@ -15,7 +15,7 @@ Postal3DB = {
 				"Dalgrens|Bloodhoof|Horde|72|HUNTER", -- [10]
 				"Danoh|Stormrage|Alliance|100|HUNTER", -- [11]
 				"Dosnutz|Stormrage|Alliance|100|MAGE", -- [12]
-				"Druidann|Stormrage|Alliance|105|DRUID", -- [13]
+				"Druidann|Stormrage|Alliance|107|DRUID", -- [13]
 				"Emmarosa|Stormrage|Alliance|110|ROGUE", -- [14]
 				"Horny|Bloodhoof|Horde|7|SHAMAN", -- [15]
 				"Iphone|Bloodhoof|Horde|1|SHAMAN", -- [16]
@@ -395,8 +395,8 @@ Postal3DB = {
 		["Beer - Bloodhoof"] = {
 		},
 		["Talthalador - Stormrage"] = {
-			["OpenSpeed"] = 0.3,
 			["ChatOutput"] = 3,
+			["OpenSpeed"] = 0.3,
 		},
 		["Jimbo - Ner'zhul"] = {
 			["BlackBook"] = {
