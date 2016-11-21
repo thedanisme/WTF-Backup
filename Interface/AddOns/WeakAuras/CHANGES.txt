@@ -1,0 +1,32 @@
+Changes since tag 2.2.2.3
+
+commit e88128df29de644efa2f79e168029e6532af7525
+Author: Benjamin Staneck <staneck@gmail.com>
+Date:   Sun Nov 20 01:32:58 2016 +0100
+
+    curseforge test
+
+commit e88128df29de644efa2f79e168029e6532af7525
+Author: Benjamin Staneck <staneck@gmail.com>
+Date:   Sun Nov 20 01:32:58 2016 +0100
+
+    curseforge test
+
+commit 93c31ac4f8d3ada41a1add495b651e24b8ddd50a
+Author: Benjamin Staneck <staneck@gmail.com>
+Date:   Fri Nov 18 17:22:48 2016 +0100
+
+    test commit to trigger wowace
+
+commit 93c31ac4f8d3ada41a1add495b651e24b8ddd50a
+Author: Benjamin Staneck <staneck@gmail.com>
+Date:   Fri Nov 18 17:22:48 2016 +0100
+
+    test commit to trigger wowace
+
+commit 9bc46e548cf6055cf5c5f2d6fdc8a734eb90d899
+Author: Benjamin Staneck <staneck@gmail.com>
+Date:   Fri Nov 18 01:17:42 2016 +0100
+
+    Test for the CurseForge packager.
+

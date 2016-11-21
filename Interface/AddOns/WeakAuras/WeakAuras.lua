@@ -2354,10 +2354,10 @@ function WeakAuras.UpdateAnimations()
 
       if(anim.loop) then
         WeakAuras.Animate(anim.namespace, anim.data,
-                          anim.type, anim.anim,
-                          anim.region, anim.inverse,
-                          anim.onFinished, anim.loop,
-                          anim.cloneId);
+        anim.type, anim.anim,
+        anim.region, anim.inverse,
+        anim.onFinished, anim.loop,
+        anim.cloneId);
       elseif(anim.onFinished) then
         anim.onFinished();
       end
@@ -2689,7 +2689,6 @@ function WeakAuras.CreateFallbackState(id, triggernum, state)
     state.id = id;
   end
 end
-
 
 function WeakAuras.CanShowNameInfo(data)
   if(data.regionType == "aurabar" or data.regionType == "icon" or data.regionType == "text") then

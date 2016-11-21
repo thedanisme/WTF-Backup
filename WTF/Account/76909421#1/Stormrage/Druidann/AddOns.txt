@@ -101,5 +101,5 @@ Details_RaidInfo-Nighthold: disabled
 Details_RaidInfo-TrialOfValor: disabled
 HandyNotes_SuramarTelemancy: enabled
 NPCScan: enabled
-PersonalLootHelper: disabled
+PersonalLootHelper: enabled
 ElvUI_SLE: enabled
