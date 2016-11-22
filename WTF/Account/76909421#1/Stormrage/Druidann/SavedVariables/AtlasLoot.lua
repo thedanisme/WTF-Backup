@@ -1,6 +1,15 @@
 
 AtlasLootCharDB = {
 	["__addonrevision"] = 4325,
+	["GUI"] = {
+		["selected"] = {
+			"AtlasLoot_MistsofPandaria", -- [1]
+			"MoguShanVaults", -- [2]
+			3, -- [3]
+			7, -- [4]
+			0, -- [5]
+		},
+	},
 	["MiniMapButton"] = {
 		["point"] = {
 			"CENTER", -- [1]

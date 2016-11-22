@@ -79,7 +79,7 @@ Postal3DB = {
 				"Shamadan|Stormrage|Neutral|1|SHAMAN", -- [26]
 				"Shaneequa|Turalyon|Horde|100|SHAMAN", -- [27]
 				"Skratch|Turalyon|Horde|100|DRUID", -- [28]
-				"Talthalador|Stormrage|Alliance|100|DEMONHUNTER", -- [29]
+				"Talthalador|Stormrage|Alliance|101|DEMONHUNTER", -- [29]
 				"Titte|Turalyon|Horde|100|DEATHKNIGHT", -- [30]
 				"Titt|Turalyon|Horde|100|DEATHKNIGHT", -- [31]
 				"Ured|Ner'zhul|Alliance|90|DEATHKNIGHT", -- [32]
@@ -159,8 +159,8 @@ Postal3DB = {
 		["Emmarosa - Stormrage"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Lackteight-Turalyon|Stormrage|Alliance", -- [1]
-					"Druidann|Stormrage|Alliance", -- [2]
+					"Druidann|Stormrage|Alliance", -- [1]
+					"Lackteight-Turalyon|Stormrage|Alliance", -- [2]
 					"Oenta|Stormrage|Alliance", -- [3]
 					"Shhbbyisok|Stormrage|Alliance", -- [4]
 					"Malversion|Stormrage|Alliance", -- [5]
@@ -191,6 +191,11 @@ Postal3DB = {
 		["Talthalador - Stormrage"] = {
 			["ChatOutput"] = 3,
 			["OpenSpeed"] = 0.3,
+			["BlackBook"] = {
+				["recent"] = {
+					"Druidann|Stormrage|Alliance", -- [1]
+				},
+			},
 		},
 		["Callil - Turalyon"] = {
 			["BlackBook"] = {

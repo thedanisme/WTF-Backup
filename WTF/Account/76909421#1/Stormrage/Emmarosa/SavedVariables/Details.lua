@@ -13,14 +13,14 @@ _detalhes_database = {
 		["reverse"] = false,
 	},
 	["active_profile"] = "Emmarosa-Stormrage",
-	["last_day"] = "20",
+	["last_day"] = "21",
 	["ignore_nicktag"] = false,
 	["tabela_historico"] = {
 		["tabelas"] = {
 			{
 				{
-					["combatId"] = 18,
 					["tipo"] = 2,
+					["combatId"] = 18,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -29,24 +29,17 @@ _detalhes_database = {
 							["targets"] = {
 								["Dread-Captain Graham"] = 6331342,
 							},
+							["delay"] = 0,
 							["pets"] = {
 								"Vanessa VanCleef <Emmarosa>", -- [1]
 							},
-							["on_hold"] = false,
+							["custom"] = 0,
+							["tipo"] = 1,
 							["classe"] = "ROGUE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 6178640.005948,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1479671911,
-							["friendlyfire_total"] = 0,
-							["spec"] = 259,
-							["nome"] = "Emmarosa",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 7,
@@ -64,19 +57,19 @@ _detalhes_database = {
 										["counter"] = 13,
 										["total"] = 315803,
 										["c_max"] = 60512,
-										["MISS"] = 1,
+										["c_min"] = 13218,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["r_amt"] = 0,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["b_dmg"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
+										["a_amt"] = 0,
 										["n_amt"] = 5,
-										["r_amt"] = 0,
-										["c_min"] = 13218,
+										["spellschool"] = 1,
+										["MISS"] = 1,
 									}, -- [1]
 									[192759] = {
 										["c_amt"] = 1,
@@ -96,16 +89,16 @@ _detalhes_database = {
 										["c_max"] = 249326,
 										["id"] = 192759,
 										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
+										["c_min"] = 249326,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 249326,
+										["a_dmg"] = 0,
+										["spellschool"] = 8,
 									},
 									[5374] = {
 										["c_amt"] = 1,
@@ -125,16 +118,16 @@ _detalhes_database = {
 										["c_max"] = 102545,
 										["id"] = 5374,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 102545,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 102545,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									[192660] = {
 										["c_amt"] = 2,
@@ -154,16 +147,16 @@ _detalhes_database = {
 										["c_max"] = 313763,
 										["id"] = 192660,
 										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
+										["c_min"] = 274743,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 4,
-										["r_amt"] = 0,
-										["c_min"] = 274743,
+										["a_dmg"] = 0,
+										["spellschool"] = 8,
 									},
 									[222062] = {
 										["c_amt"] = 0,
@@ -183,16 +176,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 222062,
 										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 8,
 									},
 									[32645] = {
 										["c_amt"] = 2,
@@ -212,16 +205,16 @@ _detalhes_database = {
 										["c_max"] = 1178692,
 										["id"] = 32645,
 										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
+										["c_min"] = 435628,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 435628,
+										["a_dmg"] = 0,
+										["spellschool"] = 8,
 									},
 									[192760] = {
 										["c_amt"] = 0,
@@ -241,16 +234,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 192760,
 										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 8,
 									},
 									[703] = {
 										["c_amt"] = 1,
@@ -270,16 +263,16 @@ _detalhes_database = {
 										["c_max"] = 152065,
 										["id"] = 703,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 152065,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 4,
-										["r_amt"] = 0,
-										["c_min"] = 152065,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									[192434] = {
 										["c_amt"] = 3,
@@ -299,16 +292,16 @@ _detalhes_database = {
 										["c_max"] = 34675,
 										["id"] = 192434,
 										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
+										["c_min"] = 32519,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 9,
-										["r_amt"] = 0,
-										["c_min"] = 32519,
+										["a_dmg"] = 0,
+										["spellschool"] = 8,
 									},
 									[1943] = {
 										["c_amt"] = 1,
@@ -328,16 +321,16 @@ _detalhes_database = {
 										["c_max"] = 466935,
 										["id"] = 1943,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 466935,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 466935,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									[27576] = {
 										["c_amt"] = 2,
@@ -357,33 +350,39 @@ _detalhes_database = {
 										["c_max"] = 100290,
 										["id"] = 27576,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 58157,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 58157,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["grupo"] = true,
-							["total"] = 6331342.005948,
-							["serial"] = "Player-60-0A91880D",
-							["last_dps"] = 487026.308149846,
-							["custom"] = 0,
-							["last_event"] = 1479671909,
+							["dps_started"] = false,
+							["end_time"] = 1479671911,
 							["damage_taken"] = 0.005948,
+							["total"] = 6331342.005948,
+							["nome"] = "Emmarosa",
+							["spec"] = 259,
+							["grupo"] = true,
+							["last_dps"] = 487026.308149846,
+							["friendlyfire_total"] = 0,
+							["colocacao"] = 1,
+							["last_event"] = 1479671909,
+							["on_hold"] = false,
 							["start_time"] = 1479671898,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Player-60-0A91880D",
+							["friendlyfire"] = {
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 8465,
-							["serial"] = "Creature-0-3019-1220-28161-111254-000031FF16",
 							["damage_from"] = {
 							},
 							["targets"] = {
@@ -391,18 +390,18 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["on_hold"] = false,
+							["damage_taken"] = 0.006729,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 152702.006729,
+							["last_event"] = 1479671909,
 							["dps_started"] = false,
 							["total"] = 152702.006729,
-							["classe"] = "PET",
+							["delay"] = 0,
 							["ownerName"] = "Emmarosa",
 							["nome"] = "Vanessa VanCleef <Emmarosa>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 4,
@@ -420,19 +419,19 @@ _detalhes_database = {
 										["counter"] = 12,
 										["total"] = 38427,
 										["c_max"] = 7412,
-										["MISS"] = 3,
+										["c_min"] = 3706,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["r_amt"] = 0,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["b_dmg"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
+										["a_amt"] = 0,
 										["n_amt"] = 5,
-										["r_amt"] = 0,
-										["c_min"] = 3706,
+										["spellschool"] = 1,
+										["MISS"] = 3,
 									}, -- [1]
 									[221512] = {
 										["c_amt"] = 1,
@@ -452,18 +451,19 @@ _detalhes_database = {
 										["c_max"] = 58576,
 										["id"] = 221512,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 58576,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 58576,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["friendlyfire"] = {
 							},
@@ -471,16 +471,16 @@ _detalhes_database = {
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 0.006729,
+							["on_hold"] = false,
 							["start_time"] = 1479671899,
-							["delay"] = 0,
-							["last_event"] = 1479671909,
+							["serial"] = "Creature-0-3019-1220-28161-111254-000031FF16",
+							["classe"] = "PET",
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 18,
 					["tipo"] = 3,
+					["combatId"] = 18,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -494,18 +494,18 @@ _detalhes_database = {
 								"Vanessa VanCleef <Emmarosa>", -- [1]
 							},
 							["totalover_without_pet"] = 0.001928,
-							["serial"] = "Player-60-0A91880D",
-							["healing_taken"] = 0.001928,
-							["totalover"] = 88031.001928,
-							["total_without_pet"] = 0.001928,
 							["targets_overheal"] = {
 								["Emmarosa"] = 85847,
 							},
+							["healing_taken"] = 0.001928,
+							["totalover"] = 88031.001928,
+							["total_without_pet"] = 0.001928,
 							["heal_enemy_amt"] = 0,
 							["iniciar_hps"] = false,
-							["total"] = 0.001928,
 							["classe"] = "ROGUE",
-							["last_event"] = 1479671909,
+							["total"] = 0.001928,
+							["delay"] = 0,
+							["spec"] = 259,
 							["nome"] = "Emmarosa",
 							["targets_absorbs"] = {
 							},
@@ -513,14 +513,7 @@ _detalhes_database = {
 							["end_time"] = 1479671911,
 							["heal_enemy"] = {
 							},
-							["spec"] = 259,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["on_hold"] = false,
-							["start_time"] = 1479671898,
-							["delay"] = 0,
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[143924] = {
 										["c_amt"] = 0,
@@ -543,46 +536,47 @@ _detalhes_database = {
 										["m_crit"] = 0,
 										["c_curado"] = 0,
 										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 0,
-										["m_healed"] = 0,
 										["n_amt"] = 10,
+										["m_healed"] = 0,
+										["n_curado"] = 0,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["start_time"] = 1479671898,
+							["serial"] = "Player-60-0A91880D",
+							["last_event"] = 1479671909,
 						}, -- [1]
 						{
 							["flag_original"] = 8465,
 							["totalabsorb"] = 0.003982,
 							["last_hps"] = 0,
-							["healing_from"] = {
+							["targets_overheal"] = {
+								["Vanessa VanCleef <Emmarosa>"] = 2184,
 							},
+							["heal_enemy_amt"] = 0,
 							["targets"] = {
 							},
 							["pets"] = {
 							},
-							["totalover_without_pet"] = 0.003982,
-							["classe"] = "PET",
+							["iniciar_hps"] = false,
+							["healing_from"] = {
+							},
 							["healing_taken"] = 0.003982,
 							["totalover"] = 2184.003982,
 							["total_without_pet"] = 0.003982,
-							["targets_overheal"] = {
-								["Vanessa VanCleef <Emmarosa>"] = 2184,
-							},
-							["last_event"] = 1479671908,
-							["iniciar_hps"] = false,
+							["serial"] = "Creature-0-3019-1220-28161-111254-000031FF16",
+							["totalover_without_pet"] = 0.003982,
 							["total"] = 0.003982,
-							["heal_enemy_amt"] = 0,
+							["end_time"] = 1479671911,
 							["ownerName"] = "Emmarosa",
 							["nome"] = "Vanessa VanCleef <Emmarosa>",
-							["targets_absorbs"] = {
-							},
-							["end_time"] = 1479671911,
-							["heal_enemy"] = {
-							},
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[143924] = {
 										["c_amt"] = 0,
@@ -605,159 +599,165 @@ _detalhes_database = {
 										["m_crit"] = 0,
 										["c_curado"] = 0,
 										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 0,
-										["m_healed"] = 0,
 										["n_amt"] = 2,
+										["m_healed"] = 0,
+										["n_curado"] = 0,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
+							},
+							["classe"] = "PET",
+							["heal_enemy"] = {
+							},
+							["targets_absorbs"] = {
 							},
 							["custom"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 1479671908,
 							["on_hold"] = false,
 							["start_time"] = 1479671903,
 							["delay"] = 0,
-							["serial"] = "Creature-0-3019-1220-28161-111254-000031FF16",
+							["tipo"] = 2,
 						}, -- [2]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 18,
 					["tipo"] = 7,
+					["combatId"] = 18,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 18,
 					["tipo"] = 9,
+					["combatId"] = 18,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[703] = {
 										["uptime"] = 13,
 										["activedamt"] = 1,
 										["id"] = 703,
-										["actived"] = false,
 										["targets"] = {
 										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
 									[1330] = {
 										["uptime"] = 13,
 										["activedamt"] = 1,
 										["id"] = 1330,
-										["actived"] = false,
 										["targets"] = {
 										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 65,
+							["pets"] = {
+								"Vanessa VanCleef <Emmarosa>", -- [1]
+							},
 							["classe"] = "ROGUE",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[192432] = {
 										["uptime"] = 0,
 										["activedamt"] = 0,
 										["id"] = 192432,
-										["actived"] = false,
 										["targets"] = {
 										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
 									[3408] = {
 										["uptime"] = 13,
 										["activedamt"] = 1,
 										["id"] = 3408,
-										["actived"] = false,
 										["targets"] = {
 										},
-										["counter"] = 0,
-									},
-									[193641] = {
-										["uptime"] = 0,
-										["activedamt"] = 0,
-										["id"] = 193641,
 										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[186401] = {
-										["uptime"] = 13,
-										["activedamt"] = 1,
-										["id"] = 186401,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[32645] = {
-										["uptime"] = 0,
-										["activedamt"] = 0,
-										["id"] = 32645,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[200802] = {
-										["uptime"] = 13,
-										["activedamt"] = 1,
-										["id"] = 200802,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[182957] = {
-										["uptime"] = 13,
-										["activedamt"] = 1,
-										["id"] = 182957,
-										["actived"] = false,
-										["targets"] = {
-										},
 										["counter"] = 0,
 									},
 									[176151] = {
 										["uptime"] = 13,
 										["activedamt"] = 1,
 										["id"] = 176151,
-										["actived"] = false,
 										["targets"] = {
 										},
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[186401] = {
+										["uptime"] = 13,
+										["activedamt"] = 1,
+										["id"] = 186401,
+										["targets"] = {
+										},
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[32645] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = 32645,
+										["targets"] = {
+										},
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[193641] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = 193641,
+										["targets"] = {
+										},
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[182957] = {
+										["uptime"] = 13,
+										["activedamt"] = 1,
+										["id"] = 182957,
+										["targets"] = {
+										},
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[200802] = {
+										["uptime"] = 13,
+										["activedamt"] = 1,
+										["id"] = 200802,
+										["targets"] = {
+										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 26,
-							["buff_uptime_targets"] = {
-							},
+							["nome"] = "Emmarosa",
 							["spec"] = 259,
 							["grupo"] = true,
 							["spell_cast"] = {
-								[32645] = 2,
+								[1329] = 4,
 								[27576] = 4,
-								[79140] = 1,
+								[32645] = 2,
 								[192759] = 1,
 								[1943] = 1,
-								[1329] = 4,
+								[79140] = 1,
+							},
+							["tipo"] = 4,
+							["last_event"] = 1479671911,
+							["buff_uptime_targets"] = {
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1479671911,
-							["nome"] = "Emmarosa",
-							["pets"] = {
-								"Vanessa VanCleef <Emmarosa>", -- [1]
-							},
 							["serial"] = "Player-60-0A91880D",
-							["tipo"] = 4,
+							["buff_uptime"] = 65,
 						}, -- [1]
 						{
 							["flag_original"] = 8465,
@@ -765,20 +765,20 @@ _detalhes_database = {
 							["nome"] = "Vanessa VanCleef <Emmarosa>",
 							["pets"] = {
 							},
-							["classe"] = "PET",
-							["tipo"] = 4,
 							["spell_cast"] = {
 								[221792] = 1,
 								[221512] = 3,
 							},
-							["serial"] = "Creature-0-3019-1220-28161-111254-000031FF16",
+							["classe"] = "PET",
 							["last_event"] = 0,
+							["serial"] = "Creature-0-3019-1220-28161-111254-000031FF16",
+							["tipo"] = 4,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 18,
 					["tipo"] = 2,
+					["combatId"] = 18,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -802,15 +802,15 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = -0.00292200000000009,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = -0.00292200000000009,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
 				["player_last_events"] = {
 				},
@@ -822,6 +822,11 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage"] = {
+						{
+							["Emmarosa"] = 6331342.005948,
+						}, -- [1]
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -831,15 +836,12 @@ _detalhes_database = {
 					},
 					["damage_section"] = {
 					},
-					["damage"] = {
-						{
-							["Emmarosa"] = 6331342.005948,
-						}, -- [1]
-					},
 				},
 				["end_time"] = 1017665.78,
 				["combat_id"] = 18,
-				["instance_type"] = "none",
+				["TimeData"] = {
+				},
+				["hasSaved"] = true,
 				["frags"] = {
 					["Dread-Captain Graham"] = 1,
 					["Seaforium Blasting Stick"] = 1,
@@ -861,23 +863,22 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
 				["start_time"] = 1017653.762,
 				["contra"] = "Dread-Captain Graham",
-				["TimeData"] = {
-				},
+				["instance_type"] = "none",
 			}, -- [1]
 			{
 				{
-					["combatId"] = 17,
 					["tipo"] = 2,
+					["combatId"] = 17,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -887,25 +888,21 @@ _detalhes_database = {
 							["targets"] = {
 								["Well-Fed Musken"] = 5214857,
 							},
+							["delay"] = 0,
 							["pets"] = {
 								"Vanessa VanCleef <Emmarosa>", -- [1]
 							},
-							["total"] = 5214857.008051,
-							["on_hold"] = false,
+							["custom"] = 0,
+							["tipo"] = 1,
 							["classe"] = "ROGUE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 5005575.008051,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1479671734,
 							["friendlyfire_total"] = 0,
-							["spec"] = 259,
-							["nome"] = "Emmarosa",
+							["dps_started"] = false,
+							["total"] = 5214857.008051,
+							["damage_taken"] = 754202.008051,
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 3,
@@ -923,19 +920,19 @@ _detalhes_database = {
 										["counter"] = 16,
 										["total"] = 218300,
 										["c_max"] = 54792,
-										["MISS"] = 4,
+										["c_min"] = 17203,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["r_amt"] = 0,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["b_dmg"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
+										["a_amt"] = 0,
 										["n_amt"] = 9,
-										["r_amt"] = 0,
-										["c_min"] = 17203,
+										["spellschool"] = 1,
+										["MISS"] = 4,
 									}, -- [1]
 									[191259] = {
 										["c_amt"] = 0,
@@ -955,16 +952,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 191259,
 										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 4,
 									},
 									[5374] = {
 										["c_amt"] = 2,
@@ -984,16 +981,16 @@ _detalhes_database = {
 										["c_max"] = 146546,
 										["id"] = 5374,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 111835,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 111835,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									[192660] = {
 										["c_amt"] = 3,
@@ -1013,16 +1010,16 @@ _detalhes_database = {
 										["c_max"] = 239132,
 										["id"] = 192660,
 										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
+										["c_min"] = 239132,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 239132,
+										["a_dmg"] = 0,
+										["spellschool"] = 8,
 									},
 									[222062] = {
 										["c_amt"] = 0,
@@ -1042,16 +1039,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 222062,
 										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 75926,
 										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 8,
 									},
 									[32645] = {
 										["c_amt"] = 0,
@@ -1071,16 +1068,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 32645,
 										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 8,
 									},
 									[192760] = {
 										["c_amt"] = 0,
@@ -1100,16 +1097,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 192760,
 										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 8,
 									},
 									[703] = {
 										["c_amt"] = 3,
@@ -1129,16 +1126,16 @@ _detalhes_database = {
 										["c_max"] = 146965,
 										["id"] = 703,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 126093,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 4,
-										["r_amt"] = 0,
-										["c_min"] = 126093,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									[192434] = {
 										["c_amt"] = 3,
@@ -1158,103 +1155,16 @@ _detalhes_database = {
 										["c_max"] = 29344,
 										["id"] = 192434,
 										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
+										["c_min"] = 21893,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 11,
-										["r_amt"] = 0,
-										["c_min"] = 21893,
-									},
-									[1943] = {
-										["c_amt"] = 3,
-										["b_amt"] = 0,
-										["c_dmg"] = 455738,
-										["g_amt"] = 0,
-										["n_max"] = 98788,
-										["targets"] = {
-											["Well-Fed Musken"] = 700232,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 244494,
-										["n_min"] = 59803,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 700232,
-										["c_max"] = 177934,
-										["id"] = 1943,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
 										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 130398,
-									},
-									[192759] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 221714,
-										["g_amt"] = 0,
-										["n_max"] = 57424,
-										["targets"] = {
-											["Well-Fed Musken"] = 399400,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 177686,
-										["n_min"] = 31362,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 399400,
-										["c_max"] = 151438,
-										["id"] = 192759,
-										["r_dmg"] = 0,
 										["spellschool"] = 8,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 4,
-										["r_amt"] = 0,
-										["c_min"] = 70276,
-									},
-									[227870] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 106620,
-										["g_amt"] = 0,
-										["n_max"] = 61064,
-										["targets"] = {
-											["Well-Fed Musken"] = 378275,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 271655,
-										["n_min"] = 48434,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 378275,
-										["c_max"] = 106620,
-										["id"] = 227870,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["r_amt"] = 0,
-										["c_min"] = 106620,
 									},
 									[27576] = {
 										["c_amt"] = 2,
@@ -1274,32 +1184,122 @@ _detalhes_database = {
 										["c_max"] = 81164,
 										["id"] = 27576,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 52450,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									[227870] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 106620,
+										["g_amt"] = 0,
+										["n_max"] = 61064,
+										["targets"] = {
+											["Well-Fed Musken"] = 378275,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 271655,
+										["n_min"] = 48434,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 378275,
+										["c_max"] = 106620,
+										["id"] = 227870,
+										["r_dmg"] = 0,
+										["c_min"] = 106620,
 										["r_amt"] = 0,
-										["c_min"] = 52450,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["a_dmg"] = 0,
+										["spellschool"] = 8,
+									},
+									[1943] = {
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 455738,
+										["g_amt"] = 0,
+										["n_max"] = 98788,
+										["targets"] = {
+											["Well-Fed Musken"] = 700232,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 244494,
+										["n_min"] = 59803,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 700232,
+										["c_max"] = 177934,
+										["id"] = 1943,
+										["r_dmg"] = 0,
+										["c_min"] = 130398,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									[192759] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 221714,
+										["g_amt"] = 0,
+										["n_max"] = 57424,
+										["targets"] = {
+											["Well-Fed Musken"] = 399400,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 177686,
+										["n_min"] = 31362,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 399400,
+										["c_max"] = 151438,
+										["id"] = 192759,
+										["r_dmg"] = 0,
+										["c_min"] = 70276,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["a_dmg"] = 0,
+										["spellschool"] = 8,
 									},
 								},
+								["tipo"] = 2,
 							},
+							["nome"] = "Emmarosa",
+							["spec"] = 259,
 							["grupo"] = true,
-							["serial"] = "Player-60-0A91880D",
 							["last_dps"] = 325928.563003188,
-							["custom"] = 0,
+							["end_time"] = 1479671734,
+							["colocacao"] = 1,
 							["last_event"] = 1479671734,
-							["damage_taken"] = 754202.008051,
+							["on_hold"] = false,
 							["start_time"] = 1479671718,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Player-60-0A91880D",
+							["friendlyfire"] = {
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 8465,
-							["serial"] = "Creature-0-3019-1220-28161-111254-000031FF16",
 							["damage_from"] = {
 								["Well-Fed Musken"] = true,
 							},
@@ -1308,18 +1308,18 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["on_hold"] = false,
+							["damage_taken"] = 14757.003453,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 209282.003453,
+							["last_event"] = 1479671732,
 							["dps_started"] = false,
 							["total"] = 209282.003453,
-							["classe"] = "PET",
+							["delay"] = 0,
 							["ownerName"] = "Emmarosa",
 							["nome"] = "Vanessa VanCleef <Emmarosa>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 7,
@@ -1337,19 +1337,19 @@ _detalhes_database = {
 										["counter"] = 16,
 										["total"] = 64521,
 										["c_max"] = 7170,
-										["MISS"] = 1,
+										["c_min"] = 3585,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["r_amt"] = 0,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["b_dmg"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
+										["a_amt"] = 0,
 										["n_amt"] = 8,
-										["r_amt"] = 0,
-										["c_min"] = 3585,
+										["spellschool"] = 1,
+										["MISS"] = 1,
 									}, -- [1]
 									[221512] = {
 										["c_amt"] = 1,
@@ -1369,18 +1369,19 @@ _detalhes_database = {
 										["c_max"] = 59592,
 										["id"] = 221512,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 59592,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 59592,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["friendlyfire"] = {
 							},
@@ -1388,53 +1389,44 @@ _detalhes_database = {
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 14757.003453,
+							["on_hold"] = false,
 							["start_time"] = 1479671719,
-							["delay"] = 0,
-							["last_event"] = 1479671732,
+							["serial"] = "Creature-0-3019-1220-28161-111254-000031FF16",
+							["classe"] = "PET",
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 17,
 					["tipo"] = 3,
+					["combatId"] = 17,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["totalabsorb"] = 0.005325,
 							["last_hps"] = 0,
-							["healing_from"] = {
-								["Emmarosa"] = true,
+							["targets_overheal"] = {
 							},
 							["targets"] = {
 								["Emmarosa"] = 350136,
 								["Vanessa VanCleef <Emmarosa>"] = 1525,
 							},
-							["targets_absorbs"] = {
-							},
+							["end_time"] = 1479671734,
 							["pets"] = {
 								"Vanessa VanCleef <Emmarosa>", -- [1]
 							},
-							["totalover_without_pet"] = 0.005325,
-							["targets_overheal"] = {
+							["iniciar_hps"] = false,
+							["healing_from"] = {
+								["Emmarosa"] = true,
 							},
-							["classe"] = "ROGUE",
+							["healing_taken"] = 350136.005325,
 							["totalover"] = 797.005325,
 							["total_without_pet"] = 350136.005325,
-							["iniciar_hps"] = false,
+							["totalover_without_pet"] = 0.005325,
 							["heal_enemy_amt"] = 0,
 							["fight_component"] = true,
 							["total"] = 351661.005325,
-							["healing_taken"] = 350136.005325,
-							["end_time"] = 1479671734,
-							["nome"] = "Emmarosa",
-							["spec"] = 259,
-							["grupo"] = true,
-							["last_event"] = 1479671733,
-							["heal_enemy"] = {
-							},
+							["classe"] = "ROGUE",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[143924] = {
 										["c_amt"] = 0,
@@ -1456,10 +1448,10 @@ _detalhes_database = {
 										["m_crit"] = 0,
 										["c_curado"] = 0,
 										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 70092,
-										["m_healed"] = 0,
 										["n_amt"] = 13,
+										["m_healed"] = 0,
+										["n_curado"] = 70092,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 									[185311] = {
@@ -1482,56 +1474,63 @@ _detalhes_database = {
 										["m_crit"] = 0,
 										["c_curado"] = 0,
 										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 280044,
-										["m_healed"] = 0,
 										["n_amt"] = 3,
+										["m_healed"] = 0,
+										["n_curado"] = 280044,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
+							["nome"] = "Emmarosa",
+							["targets_absorbs"] = {
+							},
+							["grupo"] = true,
+							["delay"] = 0,
+							["heal_enemy"] = {
+							},
+							["spec"] = 259,
 							["custom"] = 0,
 							["tipo"] = 2,
 							["on_hold"] = false,
 							["start_time"] = 1479671719,
 							["serial"] = "Player-60-0A91880D",
-							["delay"] = 0,
+							["last_event"] = 1479671733,
 						}, -- [1]
 						{
 							["flag_original"] = 8465,
 							["totalabsorb"] = 0.001066,
 							["last_hps"] = 0,
-							["healing_from"] = {
-								["Vanessa VanCleef <Emmarosa>"] = true,
+							["targets_overheal"] = {
+								["Vanessa VanCleef <Emmarosa>"] = 797,
 							},
 							["targets"] = {
 								["Vanessa VanCleef <Emmarosa>"] = 1525,
 							},
-							["heal_enemy_amt"] = 0,
+							["delay"] = 0,
 							["pets"] = {
 							},
 							["totalover_without_pet"] = 0.001066,
-							["targets_overheal"] = {
-								["Vanessa VanCleef <Emmarosa>"] = 797,
+							["healing_from"] = {
+								["Vanessa VanCleef <Emmarosa>"] = true,
 							},
-							["classe"] = "PET",
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 797.001066,
 							["total_without_pet"] = 1525.001066,
 							["iniciar_hps"] = false,
-							["healing_taken"] = 1525.001066,
 							["fight_component"] = true,
-							["total"] = 1525.001066,
-							["serial"] = "Creature-0-3019-1220-28161-111254-000031FF16",
+							["end_time"] = 1479671734,
+							["healing_taken"] = 1525.001066,
 							["ownerName"] = "Emmarosa",
 							["nome"] = "Vanessa VanCleef <Emmarosa>",
 							["targets_absorbs"] = {
 							},
-							["end_time"] = 1479671734,
-							["last_event"] = 1479671729,
+							["classe"] = "PET",
+							["total"] = 1525.001066,
 							["heal_enemy"] = {
 							},
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[143924] = {
 										["c_amt"] = 0,
@@ -1554,47 +1553,49 @@ _detalhes_database = {
 										["m_crit"] = 0,
 										["c_curado"] = 0,
 										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 1525,
-										["m_healed"] = 0,
 										["n_amt"] = 2,
+										["m_healed"] = 0,
+										["n_curado"] = 1525,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["custom"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 1479671729,
 							["on_hold"] = false,
 							["start_time"] = 1479671724,
-							["delay"] = 0,
+							["serial"] = "Creature-0-3019-1220-28161-111254-000031FF16",
+							["tipo"] = 2,
 						}, -- [2]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 17,
 					["tipo"] = 7,
+					["combatId"] = 17,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 17,
 					["tipo"] = 9,
+					["combatId"] = 17,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[1330] = {
 										["uptime"] = 16,
 										["activedamt"] = 1,
 										["id"] = 1330,
-										["actived"] = false,
 										["targets"] = {
 										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["cooldowns_defensive"] = 1.007777,
 							["buff_uptime"] = 64,
@@ -1607,72 +1608,72 @@ _detalhes_database = {
 								["Emmarosa"] = 1,
 							},
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[192432] = {
 										["uptime"] = 0,
 										["activedamt"] = 0,
 										["id"] = 192432,
-										["actived"] = false,
 										["targets"] = {
 										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
 									[3408] = {
 										["uptime"] = 16,
 										["activedamt"] = 1,
 										["id"] = 3408,
-										["actived"] = false,
 										["targets"] = {
 										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
 									[186401] = {
 										["uptime"] = 16,
 										["activedamt"] = 1,
 										["id"] = 186401,
-										["actived"] = false,
 										["targets"] = {
 										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
 									[32645] = {
 										["uptime"] = 0,
 										["activedamt"] = 0,
 										["id"] = 32645,
-										["actived"] = false,
 										["targets"] = {
 										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
 									[200802] = {
 										["uptime"] = 16,
 										["activedamt"] = 1,
 										["id"] = 200802,
-										["actived"] = false,
 										["targets"] = {
 										},
-										["counter"] = 0,
-									},
-									[185311] = {
-										["uptime"] = 0,
-										["activedamt"] = 0,
-										["id"] = 185311,
 										["actived"] = false,
-										["targets"] = {
-										},
 										["counter"] = 0,
 									},
 									[182957] = {
 										["uptime"] = 16,
 										["activedamt"] = 1,
 										["id"] = 182957,
-										["actived"] = false,
 										["targets"] = {
 										},
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[185311] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = 185311,
+										["targets"] = {
+										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 16,
@@ -1685,14 +1686,20 @@ _detalhes_database = {
 								[1329] = 5,
 								[32645] = 1,
 								[703] = 1,
-								[79140] = 1,
-								[185311] = 1,
-								[1943] = 1,
-								[227870] = 6,
 								[27576] = 5,
+								[185311] = 1,
+								[227870] = 6,
+								[1943] = 1,
+								[79140] = 1,
 							},
+							["tipo"] = 4,
+							["serial"] = "Player-60-0A91880D",
+							["last_event"] = 1479671877,
+							["pets"] = {
+								"Vanessa VanCleef <Emmarosa>", -- [1]
+							},
+							["nome"] = "Emmarosa",
 							["cooldowns_defensive_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[5277] = {
 										["id"] = 5277,
@@ -1702,38 +1709,32 @@ _detalhes_database = {
 										["counter"] = 1,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1479671877,
-							["nome"] = "Emmarosa",
-							["pets"] = {
-								"Vanessa VanCleef <Emmarosa>", -- [1]
-							},
-							["serial"] = "Player-60-0A91880D",
-							["tipo"] = 4,
 						}, -- [1]
 						{
 							["flag_original"] = 8465,
 							["ownerName"] = "Emmarosa",
 							["nome"] = "Vanessa VanCleef <Emmarosa>",
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["fight_component"] = true,
-							["tipo"] = 4,
 							["spell_cast"] = {
 								[221792] = 1,
 								[221512] = 4,
 							},
-							["serial"] = "Creature-0-3019-1220-28161-111254-000031FF16",
+							["pets"] = {
+							},
 							["last_event"] = 0,
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["serial"] = "Creature-0-3019-1220-28161-111254-000031FF16",
+							["fight_component"] = true,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 17,
 					["tipo"] = 2,
+					["combatId"] = 17,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -1757,15 +1758,15 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 1,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 1,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
 				["player_last_events"] = {
 					["Emmarosa"] = {
@@ -1818,6 +1819,11 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage"] = {
+						{
+							["Emmarosa"] = 5701920.01448,
+						}, -- [1]
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -1827,16 +1833,12 @@ _detalhes_database = {
 					},
 					["damage_section"] = {
 					},
-					["damage"] = {
-						{
-							["Emmarosa"] = 5701920.01448,
-						}, -- [1]
-					},
 				},
 				["end_time"] = 1017489.467,
 				["combat_id"] = 17,
 				["instance_type"] = "none",
 				["resincked"] = true,
+				["hasSaved"] = true,
 				["frags"] = {
 					["Well-Fed Musken"] = 1,
 				},
@@ -1856,12 +1858,12 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 1,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 1,
 					}, -- [4]
 				},
 				["start_time"] = 1017473.776,
@@ -1871,8 +1873,8 @@ _detalhes_database = {
 			}, -- [2]
 			{
 				{
-					["combatId"] = 16,
 					["tipo"] = 2,
+					["combatId"] = 16,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -1882,25 +1884,21 @@ _detalhes_database = {
 							["targets"] = {
 								["Felskorn Oathbinder"] = 1529079,
 							},
+							["delay"] = 0,
 							["pets"] = {
 								"Vanessa VanCleef <Emmarosa>", -- [1]
 							},
-							["spec"] = 259,
-							["on_hold"] = false,
+							["custom"] = 0,
+							["tipo"] = 1,
 							["classe"] = "ROGUE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 1492225.006594,
-							["end_time"] = 1479671481,
-							["colocacao"] = 1,
-							["dps_started"] = false,
-							["total"] = 1529079.006594,
-							["friendlyfire"] = {
-							},
 							["friendlyfire_total"] = 0,
-							["nome"] = "Emmarosa",
+							["dps_started"] = false,
+							["end_time"] = 1479671481,
+							["damage_taken"] = 102937.006594,
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 3,
@@ -1918,48 +1916,48 @@ _detalhes_database = {
 										["counter"] = 8,
 										["total"] = 103983,
 										["c_max"] = 27687,
-										["MISS"] = 2,
+										["c_min"] = 13716,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["r_amt"] = 0,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["b_dmg"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
+										["a_amt"] = 0,
 										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 13716,
+										["spellschool"] = 1,
+										["MISS"] = 2,
 									}, -- [1]
-									[32645] = {
-										["c_amt"] = 1,
+									[27576] = {
+										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["c_dmg"] = 599654,
+										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["n_max"] = 27324,
 										["targets"] = {
-											["Felskorn Oathbinder"] = 599654,
+											["Felskorn Oathbinder"] = 52920,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
+										["n_dmg"] = 52920,
+										["n_min"] = 25596,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 599654,
-										["c_max"] = 599654,
-										["id"] = 32645,
+										["counter"] = 2,
+										["total"] = 52920,
+										["c_max"] = 0,
+										["id"] = 27576,
 										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 599654,
+										["n_amt"] = 2,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									[191259] = {
 										["c_amt"] = 1,
@@ -1979,45 +1977,45 @@ _detalhes_database = {
 										["c_max"] = 130989,
 										["id"] = 191259,
 										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["a_dmg"] = 0,
+										["c_min"] = 130989,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 130989,
+										["a_dmg"] = 0,
+										["spellschool"] = 4,
 									},
-									[227870] = {
-										["c_amt"] = 2,
+									[32645] = {
+										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 197687,
+										["c_dmg"] = 599654,
 										["g_amt"] = 0,
-										["n_max"] = 52289,
+										["n_max"] = 0,
 										["targets"] = {
-											["Felskorn Oathbinder"] = 403073,
+											["Felskorn Oathbinder"] = 599654,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 205386,
-										["n_min"] = 50484,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 403073,
-										["c_max"] = 100053,
-										["id"] = 227870,
+										["counter"] = 1,
+										["total"] = 599654,
+										["c_max"] = 599654,
+										["id"] = 32645,
 										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
+										["c_min"] = 599654,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 4,
-										["r_amt"] = 0,
-										["c_min"] = 97634,
+										["n_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 8,
 									},
 									[5374] = {
 										["c_amt"] = 1,
@@ -2037,16 +2035,16 @@ _detalhes_database = {
 										["c_max"] = 116366,
 										["id"] = 5374,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 116366,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 116366,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									[703] = {
 										["c_amt"] = 0,
@@ -2066,61 +2064,64 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 703,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
-									[27576] = {
-										["c_amt"] = 0,
+									[227870] = {
+										["c_amt"] = 2,
 										["b_amt"] = 0,
-										["c_dmg"] = 0,
+										["c_dmg"] = 197687,
 										["g_amt"] = 0,
-										["n_max"] = 27324,
+										["n_max"] = 52289,
 										["targets"] = {
-											["Felskorn Oathbinder"] = 52920,
+											["Felskorn Oathbinder"] = 403073,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 52920,
-										["n_min"] = 25596,
+										["n_dmg"] = 205386,
+										["n_min"] = 50484,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 52920,
-										["c_max"] = 0,
-										["id"] = 27576,
+										["counter"] = 6,
+										["total"] = 403073,
+										["c_max"] = 100053,
+										["id"] = 227870,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 97634,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["n_amt"] = 4,
+										["a_dmg"] = 0,
+										["spellschool"] = 8,
 									},
 								},
+								["tipo"] = 2,
 							},
+							["nome"] = "Emmarosa",
+							["spec"] = 259,
 							["grupo"] = true,
-							["serial"] = "Player-60-0A91880D",
 							["last_dps"] = 152907.9006594,
-							["custom"] = 0,
+							["friendlyfire"] = {
+							},
+							["colocacao"] = 1,
 							["last_event"] = 1479671480,
-							["damage_taken"] = 102937.006594,
+							["on_hold"] = false,
 							["start_time"] = 1479671473,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Player-60-0A91880D",
+							["total"] = 1529079.006594,
 						}, -- [1]
 						{
 							["flag_original"] = 8465,
-							["serial"] = "Creature-0-3019-1220-28161-111254-000031FDA9",
 							["damage_from"] = {
 							},
 							["targets"] = {
@@ -2128,18 +2129,18 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["on_hold"] = false,
+							["damage_taken"] = 0.007325,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 36854.007325,
+							["last_event"] = 1479671479,
 							["dps_started"] = false,
 							["total"] = 36854.007325,
-							["classe"] = "PET",
+							["delay"] = 0,
 							["ownerName"] = "Emmarosa",
 							["nome"] = "Vanessa VanCleef <Emmarosa>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
@@ -2157,19 +2158,19 @@ _detalhes_database = {
 										["counter"] = 4,
 										["total"] = 8963,
 										["c_max"] = 3585,
-										["MISS"] = 1,
+										["c_min"] = 3585,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["r_amt"] = 0,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["b_dmg"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
+										["a_amt"] = 0,
 										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 3585,
+										["spellschool"] = 1,
+										["MISS"] = 1,
 									}, -- [1]
 									[221512] = {
 										["c_amt"] = 0,
@@ -2189,18 +2190,19 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 221512,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["friendlyfire"] = {
 							},
@@ -2208,28 +2210,46 @@ _detalhes_database = {
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 0.007325,
+							["on_hold"] = false,
 							["start_time"] = 1479671477,
-							["delay"] = 0,
-							["last_event"] = 1479671479,
+							["serial"] = "Creature-0-3019-1220-28161-111254-000031FDA9",
+							["classe"] = "PET",
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 16,
 					["tipo"] = 3,
+					["combatId"] = 16,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["totalabsorb"] = 0.002628,
 							["last_hps"] = 0,
-							["targets_overheal"] = {
+							["healing_from"] = {
+								["Emmarosa"] = true,
 							},
 							["targets"] = {
 								["Emmarosa"] = 19710,
 							},
+							["total"] = 19710.002628,
+							["pets"] = {
+								"Vanessa VanCleef <Emmarosa>", -- [1]
+							},
+							["totalover_without_pet"] = 0.002628,
+							["targets_overheal"] = {
+							},
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 534.002628,
+							["total_without_pet"] = 19710.002628,
+							["iniciar_hps"] = false,
+							["classe"] = "ROGUE",
+							["fight_component"] = true,
+							["end_time"] = 1479671481,
+							["healing_taken"] = 19710.002628,
+							["targets_absorbs"] = {
+							},
+							["nome"] = "Emmarosa",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[143924] = {
 										["c_amt"] = 0,
@@ -2251,76 +2271,52 @@ _detalhes_database = {
 										["m_crit"] = 0,
 										["c_curado"] = 0,
 										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 19710,
-										["m_healed"] = 0,
 										["n_amt"] = 7,
+										["m_healed"] = 0,
+										["n_curado"] = 19710,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
-							["pets"] = {
-								"Vanessa VanCleef <Emmarosa>", -- [1]
-							},
-							["iniciar_hps"] = false,
-							["healing_from"] = {
-								["Emmarosa"] = true,
-							},
-							["healing_taken"] = 19710.002628,
-							["totalover"] = 534.002628,
-							["total_without_pet"] = 19710.002628,
-							["totalover_without_pet"] = 0.002628,
-							["classe"] = "ROGUE",
-							["fight_component"] = true,
-							["end_time"] = 1479671481,
-							["last_event"] = 1479671481,
-							["heal_enemy_amt"] = 0,
-							["nome"] = "Emmarosa",
-							["spec"] = 259,
 							["grupo"] = true,
-							["total"] = 19710.002628,
+							["delay"] = 0,
 							["heal_enemy"] = {
 							},
-							["targets_absorbs"] = {
-							},
+							["spec"] = 259,
 							["custom"] = 0,
 							["tipo"] = 2,
 							["on_hold"] = false,
 							["start_time"] = 1479671473,
 							["serial"] = "Player-60-0A91880D",
-							["delay"] = 0,
+							["last_event"] = 1479671481,
 						}, -- [1]
 						{
 							["flag_original"] = 8465,
 							["totalabsorb"] = 0.006344,
 							["last_hps"] = 0,
-							["healing_from"] = {
-							},
-							["targets"] = {
-							},
-							["healing_taken"] = 0.006344,
-							["pets"] = {
-							},
-							["totalover_without_pet"] = 0.006344,
 							["targets_overheal"] = {
 								["Vanessa VanCleef <Emmarosa>"] = 534,
 							},
 							["classe"] = "PET",
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["healing_from"] = {
+							},
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 534.006344,
 							["total_without_pet"] = 0.006344,
-							["last_event"] = 1479671481,
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["serial"] = "Creature-0-3019-1220-28161-111254-000031FDA9",
+							["totalover_without_pet"] = 0.006344,
 							["total"] = 0.006344,
-							["targets_absorbs"] = {
-							},
+							["end_time"] = 1479671481,
 							["ownerName"] = "Emmarosa",
 							["nome"] = "Vanessa VanCleef <Emmarosa>",
-							["end_time"] = 1479671481,
-							["heal_enemy"] = {
-							},
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[143924] = {
 										["c_amt"] = 0,
@@ -2343,110 +2339,116 @@ _detalhes_database = {
 										["m_crit"] = 0,
 										["c_curado"] = 0,
 										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 0,
-										["m_healed"] = 0,
 										["n_amt"] = 1,
+										["m_healed"] = 0,
+										["n_curado"] = 0,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
+							},
+							["healing_taken"] = 0.006344,
+							["heal_enemy"] = {
+							},
+							["targets_absorbs"] = {
 							},
 							["custom"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 1479671481,
 							["on_hold"] = false,
 							["start_time"] = 1479671481,
 							["delay"] = 0,
-							["serial"] = "Creature-0-3019-1220-28161-111254-000031FDA9",
+							["tipo"] = 2,
 						}, -- [2]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 16,
 					["tipo"] = 7,
+					["combatId"] = 16,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 16,
 					["tipo"] = 9,
+					["combatId"] = 16,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["buff_uptime"] = 36,
 							["classe"] = "ROGUE",
 							["interrupt_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[1766] = {
 										["id"] = 1766,
-										["interrompeu_oque"] = {
-											[191192] = 1,
-										},
+										["counter"] = 1,
 										["targets"] = {
 											["Felskorn Oathbinder"] = 1,
 										},
-										["counter"] = 1,
+										["interrompeu_oque"] = {
+											[191192] = 1,
+										},
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[3408] = {
 										["uptime"] = 9,
 										["activedamt"] = 1,
 										["id"] = 3408,
-										["actived"] = false,
 										["targets"] = {
 										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
 									[186401] = {
 										["uptime"] = 9,
 										["activedamt"] = 1,
 										["id"] = 186401,
-										["actived"] = false,
 										["targets"] = {
 										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
 									[32645] = {
 										["uptime"] = 0,
 										["activedamt"] = 0,
 										["id"] = 32645,
-										["actived"] = false,
 										["targets"] = {
 										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
 									[200802] = {
 										["uptime"] = 9,
 										["activedamt"] = 1,
 										["id"] = 200802,
-										["actived"] = false,
 										["targets"] = {
 										},
-										["counter"] = 0,
-									},
-									[193641] = {
-										["uptime"] = 0,
-										["activedamt"] = 0,
-										["id"] = 193641,
 										["actived"] = false,
-										["targets"] = {
-										},
 										["counter"] = 0,
 									},
 									[182957] = {
 										["uptime"] = 9,
 										["activedamt"] = 1,
 										["id"] = 182957,
-										["actived"] = false,
 										["targets"] = {
 										},
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[193641] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = 193641,
+										["targets"] = {
+										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["interrompeu_oque"] = {
 								[191192] = 1,
@@ -2460,21 +2462,21 @@ _detalhes_database = {
 								[1766] = 1,
 								[27576] = 2,
 								[227870] = 6,
-								[32645] = 1,
-								[703] = 1,
 								[1329] = 2,
+								[703] = 1,
+								[32645] = 1,
 							},
-							["interrupt_targets"] = {
-								["Felskorn Oathbinder"] = 1,
-							},
+							["tipo"] = 4,
 							["interrupt"] = 1.005844,
 							["last_event"] = 1479671481,
-							["nome"] = "Emmarosa",
 							["pets"] = {
 								"Vanessa VanCleef <Emmarosa>", -- [1]
 							},
+							["nome"] = "Emmarosa",
 							["serial"] = "Player-60-0A91880D",
-							["tipo"] = 4,
+							["interrupt_targets"] = {
+								["Felskorn Oathbinder"] = 1,
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 8465,
@@ -2482,20 +2484,20 @@ _detalhes_database = {
 							["nome"] = "Vanessa VanCleef <Emmarosa>",
 							["pets"] = {
 							},
-							["classe"] = "PET",
-							["tipo"] = 4,
 							["spell_cast"] = {
 								[221792] = 1,
 								[221512] = 1,
 							},
-							["serial"] = "Creature-0-3019-1220-28161-111254-000031FDA9",
+							["classe"] = "PET",
 							["last_event"] = 0,
+							["serial"] = "Creature-0-3019-1220-28161-111254-000031FDA9",
+							["tipo"] = 4,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 16,
 					["tipo"] = 2,
+					["combatId"] = 16,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -2519,15 +2521,15 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = -0.00456999999999996,
-						["interrupt"] = 1,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 1,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = -0.00456999999999996,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
 				["player_last_events"] = {
 				},
@@ -2539,6 +2541,11 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage"] = {
+						{
+							["Emmarosa"] = 1529079.006594,
+						}, -- [1]
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -2548,15 +2555,12 @@ _detalhes_database = {
 					},
 					["damage_section"] = {
 					},
-					["damage"] = {
-						{
-							["Emmarosa"] = 1529079.006594,
-						}, -- [1]
-					},
 				},
 				["end_time"] = 1017236.625,
 				["combat_id"] = 16,
-				["instance_type"] = "none",
+				["TimeData"] = {
+				},
+				["hasSaved"] = true,
 				["frags"] = {
 					["Felskorn Oathbinder"] = 1,
 				},
@@ -2576,23 +2580,22 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 1,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 1,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
 				["start_time"] = 1017227.823,
 				["contra"] = "Felskorn Oathbinder",
-				["TimeData"] = {
-				},
+				["instance_type"] = "none",
 			}, -- [3]
 			{
 				{
-					["combatId"] = 15,
 					["tipo"] = 2,
+					["combatId"] = 15,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -2602,25 +2605,21 @@ _detalhes_database = {
 							["targets"] = {
 								["Dark Ranger Alina"] = 4991376,
 							},
+							["delay"] = 0,
 							["pets"] = {
 								"Vanessa VanCleef <Emmarosa>", -- [1]
 							},
-							["total"] = 4991376.004795,
-							["on_hold"] = false,
+							["custom"] = 0,
+							["tipo"] = 1,
 							["classe"] = "ROGUE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 4868127.004795,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1479671138,
 							["friendlyfire_total"] = 0,
-							["spec"] = 259,
-							["nome"] = "Emmarosa",
+							["dps_started"] = false,
+							["total"] = 4991376.004795,
+							["damage_taken"] = 36911.004795,
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
@@ -2638,19 +2637,19 @@ _detalhes_database = {
 										["counter"] = 11,
 										["total"] = 192106,
 										["c_max"] = 55350,
-										["MISS"] = 1,
+										["c_min"] = 55350,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["r_amt"] = 0,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["b_dmg"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
+										["a_amt"] = 0,
 										["n_amt"] = 9,
-										["r_amt"] = 0,
-										["c_min"] = 55350,
+										["spellschool"] = 1,
+										["MISS"] = 1,
 									}, -- [1]
 									[192759] = {
 										["c_amt"] = 1,
@@ -2670,16 +2669,16 @@ _detalhes_database = {
 										["c_max"] = 210636,
 										["id"] = 192759,
 										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
+										["c_min"] = 210636,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 210636,
+										["a_dmg"] = 0,
+										["spellschool"] = 8,
 									},
 									[5374] = {
 										["c_amt"] = 1,
@@ -2699,16 +2698,16 @@ _detalhes_database = {
 										["c_max"] = 173018,
 										["id"] = 5374,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 173018,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 173018,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									[222062] = {
 										["c_amt"] = 1,
@@ -2728,16 +2727,16 @@ _detalhes_database = {
 										["c_max"] = 274909,
 										["id"] = 222062,
 										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
+										["c_min"] = 274909,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 274909,
+										["a_dmg"] = 0,
+										["spellschool"] = 8,
 									},
 									[32645] = {
 										["c_amt"] = 1,
@@ -2757,16 +2756,16 @@ _detalhes_database = {
 										["c_max"] = 1281060,
 										["id"] = 32645,
 										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
+										["c_min"] = 1281060,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 1281060,
+										["a_dmg"] = 0,
+										["spellschool"] = 8,
 									},
 									[192760] = {
 										["c_amt"] = 0,
@@ -2786,16 +2785,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 192760,
 										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 8,
 									},
 									[703] = {
 										["c_amt"] = 1,
@@ -2815,16 +2814,16 @@ _detalhes_database = {
 										["c_max"] = 79491,
 										["id"] = 703,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 79491,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 4,
-										["r_amt"] = 0,
-										["c_min"] = 79491,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									[192434] = {
 										["c_amt"] = 3,
@@ -2844,103 +2843,16 @@ _detalhes_database = {
 										["c_max"] = 35188,
 										["id"] = 192434,
 										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
+										["c_min"] = 33000,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 7,
-										["r_amt"] = 0,
-										["c_min"] = 33000,
-									},
-									[191259] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 109222,
-										["targets"] = {
-											["Dark Ranger Alina"] = 109222,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 109222,
-										["n_min"] = 109222,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 109222,
-										["c_max"] = 0,
-										["id"] = 191259,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
 										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[1943] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 128239,
-										["g_amt"] = 0,
-										["n_max"] = 116204,
-										["targets"] = {
-											["Dark Ranger Alina"] = 463066,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 334827,
-										["n_min"] = 105804,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 463066,
-										["c_max"] = 128239,
-										["id"] = 1943,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 128239,
-									},
-									[227870] = {
-										["c_amt"] = 3,
-										["b_amt"] = 0,
-										["c_dmg"] = 507573,
-										["g_amt"] = 0,
-										["n_max"] = 85162,
-										["targets"] = {
-											["Dark Ranger Alina"] = 745223,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 237650,
-										["n_min"] = 70913,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 745223,
-										["c_max"] = 173126,
-										["id"] = 227870,
-										["r_dmg"] = 0,
 										["spellschool"] = 8,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 163979,
 									},
 									[27576] = {
 										["c_amt"] = 2,
@@ -2960,32 +2872,122 @@ _detalhes_database = {
 										["c_max"] = 118204,
 										["id"] = 27576,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 60073,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									[227870] = {
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 507573,
+										["g_amt"] = 0,
+										["n_max"] = 85162,
+										["targets"] = {
+											["Dark Ranger Alina"] = 745223,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 237650,
+										["n_min"] = 70913,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 745223,
+										["c_max"] = 173126,
+										["id"] = 227870,
+										["r_dmg"] = 0,
+										["c_min"] = 163979,
 										["r_amt"] = 0,
-										["c_min"] = 60073,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["a_dmg"] = 0,
+										["spellschool"] = 8,
+									},
+									[1943] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 128239,
+										["g_amt"] = 0,
+										["n_max"] = 116204,
+										["targets"] = {
+											["Dark Ranger Alina"] = 463066,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 334827,
+										["n_min"] = 105804,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 463066,
+										["c_max"] = 128239,
+										["id"] = 1943,
+										["r_dmg"] = 0,
+										["c_min"] = 128239,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									[191259] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 109222,
+										["targets"] = {
+											["Dark Ranger Alina"] = 109222,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 109222,
+										["n_min"] = 109222,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 109222,
+										["c_max"] = 0,
+										["id"] = 191259,
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 4,
 									},
 								},
+								["tipo"] = 2,
 							},
+							["nome"] = "Emmarosa",
+							["spec"] = 259,
 							["grupo"] = true,
-							["serial"] = "Player-60-0A91880D",
 							["last_dps"] = 332758.400319667,
-							["custom"] = 0,
+							["end_time"] = 1479671138,
+							["colocacao"] = 1,
 							["last_event"] = 1479671132,
-							["damage_taken"] = 36911.004795,
+							["on_hold"] = false,
 							["start_time"] = 1479671123,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Player-60-0A91880D",
+							["friendlyfire"] = {
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 8465,
-							["serial"] = "Creature-0-3019-1220-28161-111254-000031FC4C",
 							["damage_from"] = {
 							},
 							["targets"] = {
@@ -2993,18 +2995,18 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["on_hold"] = false,
+							["damage_taken"] = 0.001902,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 123249.001902,
+							["last_event"] = 1479671132,
 							["dps_started"] = false,
 							["total"] = 123249.001902,
-							["classe"] = "PET",
+							["delay"] = 0,
 							["ownerName"] = "Emmarosa",
 							["nome"] = "Vanessa VanCleef <Emmarosa>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 3,
@@ -3024,16 +3026,16 @@ _detalhes_database = {
 										["c_max"] = 7624,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 3812,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 7,
-										["r_amt"] = 0,
-										["c_min"] = 3812,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									}, -- [1]
 									[221512] = {
 										["c_amt"] = 0,
@@ -3053,18 +3055,19 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 221512,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["friendlyfire"] = {
 							},
@@ -3072,16 +3075,16 @@ _detalhes_database = {
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 0.001902,
+							["on_hold"] = false,
 							["start_time"] = 1479671124,
-							["delay"] = 0,
-							["last_event"] = 1479671132,
+							["serial"] = "Creature-0-3019-1220-28161-111254-000031FC4C",
+							["classe"] = "PET",
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 15,
 					["tipo"] = 3,
+					["combatId"] = 15,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -3093,7 +3096,6 @@ _detalhes_database = {
 							},
 							["targets"] = {
 							},
-							["spec"] = 259,
 							["pets"] = {
 								"Vanessa VanCleef <Emmarosa>", -- [1]
 							},
@@ -3104,20 +3106,12 @@ _detalhes_database = {
 							["healing_taken"] = 36911.001323,
 							["totalover"] = 70686.001323,
 							["total_without_pet"] = 0.001323,
-							["heal_enemy_amt"] = 0,
+							["total"] = 0.001323,
 							["iniciar_hps"] = false,
 							["classe"] = "ROGUE",
-							["total"] = 0.001323,
-							["last_event"] = 1479671137,
 							["end_time"] = 1479671138,
-							["nome"] = "Emmarosa",
-							["targets_absorbs"] = {
-							},
-							["grupo"] = true,
-							["heal_enemy"] = {
-							},
+							["heal_enemy_amt"] = 0,
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[143924] = {
 										["c_amt"] = 0,
@@ -3140,52 +3134,55 @@ _detalhes_database = {
 										["m_crit"] = 0,
 										["c_curado"] = 0,
 										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 0,
-										["m_healed"] = 0,
 										["n_amt"] = 9,
+										["m_healed"] = 0,
+										["n_curado"] = 0,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
+							},
+							["nome"] = "Emmarosa",
+							["spec"] = 259,
+							["grupo"] = true,
+							["serial"] = "Player-60-0A91880D",
+							["heal_enemy"] = {
+							},
+							["targets_absorbs"] = {
 							},
 							["custom"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 1479671137,
 							["on_hold"] = false,
 							["start_time"] = 1479671123,
 							["delay"] = 0,
-							["serial"] = "Player-60-0A91880D",
+							["tipo"] = 2,
 						}, -- [1]
 						{
 							["flag_original"] = 8465,
 							["totalabsorb"] = 0.001325,
 							["last_hps"] = 0,
-							["healing_from"] = {
-							},
-							["targets"] = {
-							},
-							["healing_taken"] = 0.001325,
-							["pets"] = {
-							},
-							["totalover_without_pet"] = 0.001325,
 							["targets_overheal"] = {
 								["Vanessa VanCleef <Emmarosa>"] = 1784,
 							},
 							["classe"] = "PET",
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["healing_from"] = {
+							},
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 1784.001325,
 							["total_without_pet"] = 0.001325,
-							["last_event"] = 1479671137,
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["serial"] = "Creature-0-3019-1220-28161-111254-000031FC4C",
+							["totalover_without_pet"] = 0.001325,
 							["total"] = 0.001325,
-							["targets_absorbs"] = {
-							},
+							["end_time"] = 1479671138,
 							["ownerName"] = "Emmarosa",
 							["nome"] = "Vanessa VanCleef <Emmarosa>",
-							["end_time"] = 1479671138,
-							["heal_enemy"] = {
-							},
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[143924] = {
 										["c_amt"] = 0,
@@ -3208,134 +3205,140 @@ _detalhes_database = {
 										["m_crit"] = 0,
 										["c_curado"] = 0,
 										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 0,
-										["m_healed"] = 0,
 										["n_amt"] = 3,
+										["m_healed"] = 0,
+										["n_curado"] = 0,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
+							},
+							["healing_taken"] = 0.001325,
+							["heal_enemy"] = {
+							},
+							["targets_absorbs"] = {
 							},
 							["custom"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 1479671137,
 							["on_hold"] = false,
 							["start_time"] = 1479671127,
 							["delay"] = 0,
-							["serial"] = "Creature-0-3019-1220-28161-111254-000031FC4C",
+							["tipo"] = 2,
 						}, -- [2]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 15,
 					["tipo"] = 7,
+					["combatId"] = 15,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 15,
 					["tipo"] = 9,
+					["combatId"] = 15,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[703] = {
 										["uptime"] = 15,
 										["activedamt"] = 1,
 										["id"] = 703,
-										["actived"] = false,
 										["targets"] = {
 										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
 									[1330] = {
 										["uptime"] = 15,
 										["activedamt"] = 1,
 										["id"] = 1330,
-										["actived"] = false,
 										["targets"] = {
 										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 60,
+							["pets"] = {
+								"Vanessa VanCleef <Emmarosa>", -- [1]
+							},
 							["classe"] = "ROGUE",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[228461] = {
 										["uptime"] = 0,
 										["activedamt"] = 0,
 										["id"] = 228461,
-										["actived"] = false,
 										["targets"] = {
 										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
 									[3408] = {
 										["uptime"] = 15,
 										["activedamt"] = 1,
 										["id"] = 3408,
-										["actived"] = false,
 										["targets"] = {
 										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
 									[186401] = {
 										["uptime"] = 15,
 										["activedamt"] = 1,
 										["id"] = 186401,
-										["actived"] = false,
 										["targets"] = {
 										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
 									[200802] = {
 										["uptime"] = 15,
 										["activedamt"] = 1,
 										["id"] = 200802,
-										["actived"] = false,
 										["targets"] = {
 										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
 									[182957] = {
 										["uptime"] = 15,
 										["activedamt"] = 1,
 										["id"] = 182957,
-										["actived"] = false,
 										["targets"] = {
 										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 30,
-							["buff_uptime_targets"] = {
-							},
+							["nome"] = "Emmarosa",
 							["spec"] = 259,
 							["grupo"] = true,
 							["spell_cast"] = {
 								[228461] = 1,
-								[32645] = 1,
-								[227870] = 6,
-								[27576] = 4,
+								[1329] = 4,
 								[79140] = 1,
+								[27576] = 4,
+								[32645] = 1,
 								[192759] = 1,
 								[1943] = 1,
-								[1329] = 4,
+								[227870] = 6,
+							},
+							["tipo"] = 4,
+							["last_event"] = 1479671138,
+							["buff_uptime_targets"] = {
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1479671138,
-							["nome"] = "Emmarosa",
-							["pets"] = {
-								"Vanessa VanCleef <Emmarosa>", -- [1]
-							},
 							["serial"] = "Player-60-0A91880D",
-							["tipo"] = 4,
+							["buff_uptime"] = 60,
 						}, -- [1]
 						{
 							["flag_original"] = 8465,
@@ -3343,20 +3346,20 @@ _detalhes_database = {
 							["nome"] = "Vanessa VanCleef <Emmarosa>",
 							["pets"] = {
 							},
-							["classe"] = "PET",
-							["tipo"] = 4,
 							["spell_cast"] = {
 								[221792] = 1,
 								[221512] = 3,
 							},
-							["serial"] = "Creature-0-3019-1220-28161-111254-000031FC4C",
+							["classe"] = "PET",
 							["last_event"] = 0,
+							["serial"] = "Creature-0-3019-1220-28161-111254-000031FC4C",
+							["tipo"] = 4,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 15,
 					["tipo"] = 2,
+					["combatId"] = 15,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -3380,15 +3383,15 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = -0.00595499999999993,
-						["interrupt"] = -0.00153399999999992,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = -0.00153399999999992,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = -0.00595499999999993,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
 				["player_last_events"] = {
 				},
@@ -3400,6 +3403,11 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage"] = {
+						{
+							["Emmarosa"] = 4991376.004795,
+						}, -- [1]
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -3409,15 +3417,12 @@ _detalhes_database = {
 					},
 					["damage_section"] = {
 					},
-					["damage"] = {
-						{
-							["Emmarosa"] = 4991376.004795,
-						}, -- [1]
-					},
 				},
 				["end_time"] = 1016893.346,
 				["combat_id"] = 15,
-				["instance_type"] = "none",
+				["TimeData"] = {
+				},
+				["hasSaved"] = true,
 				["frags"] = {
 					["Dark Ranger Alina"] = 1,
 				},
@@ -3437,23 +3442,22 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
 				["start_time"] = 1016878.698,
 				["contra"] = "Dark Ranger Alina",
-				["TimeData"] = {
-				},
+				["instance_type"] = "none",
 			}, -- [4]
 			{
 				{
-					["combatId"] = 14,
 					["tipo"] = 2,
+					["combatId"] = 14,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -3462,25 +3466,21 @@ _detalhes_database = {
 							["targets"] = {
 								["Forsaken Plaguebringer"] = 1019883,
 							},
+							["delay"] = 0,
 							["pets"] = {
 								"Vanessa VanCleef <Emmarosa>", -- [1]
 							},
-							["total"] = 1019883.004536,
-							["on_hold"] = false,
+							["custom"] = 0,
+							["tipo"] = 1,
 							["classe"] = "ROGUE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 929172.004536,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1479671119,
 							["friendlyfire_total"] = 0,
-							["spec"] = 259,
-							["nome"] = "Emmarosa",
+							["dps_started"] = false,
+							["total"] = 1019883.004536,
+							["damage_taken"] = 0.004536,
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 2,
@@ -3499,19 +3499,19 @@ _detalhes_database = {
 										["counter"] = 11,
 										["total"] = 122398,
 										["c_max"] = 17805,
-										["MISS"] = 2,
+										["c_min"] = 15151,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["r_amt"] = 0,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["b_dmg"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
+										["a_amt"] = 0,
 										["n_amt"] = 7,
-										["r_amt"] = 0,
-										["c_min"] = 15151,
+										["spellschool"] = 1,
+										["MISS"] = 2,
 									}, -- [1]
 									[5374] = {
 										["c_amt"] = 0,
@@ -3531,16 +3531,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 5374,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									[27576] = {
 										["c_amt"] = 0,
@@ -3560,16 +3560,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 27576,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									[1943] = {
 										["c_amt"] = 0,
@@ -3589,16 +3589,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1943,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									[703] = {
 										["c_amt"] = 1,
@@ -3618,32 +3618,35 @@ _detalhes_database = {
 										["c_max"] = 69122,
 										["id"] = 703,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 69122,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 69122,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 								},
+								["tipo"] = 2,
 							},
+							["nome"] = "Emmarosa",
+							["spec"] = 259,
 							["grupo"] = true,
-							["serial"] = "Player-60-0A91880D",
 							["last_dps"] = 125725.222453211,
-							["custom"] = 0,
+							["end_time"] = 1479671119,
+							["colocacao"] = 1,
 							["last_event"] = 1479671122,
-							["damage_taken"] = 0.004536,
+							["on_hold"] = false,
 							["start_time"] = 1479671106,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Player-60-0A91880D",
+							["friendlyfire"] = {
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 8465,
-							["serial"] = "Creature-0-3019-1220-28161-111254-000031FC4C",
 							["damage_from"] = {
 								["Forsaken Plaguebringer"] = true,
 							},
@@ -3652,18 +3655,18 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["on_hold"] = false,
+							["damage_taken"] = 7166.006284,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 90711.006284,
+							["last_event"] = 1479671113,
 							["dps_started"] = false,
 							["total"] = 90711.006284,
-							["classe"] = "PET",
+							["delay"] = 0,
 							["ownerName"] = "Emmarosa",
 							["nome"] = "Vanessa VanCleef <Emmarosa>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 5,
@@ -3683,16 +3686,16 @@ _detalhes_database = {
 										["c_max"] = 7384,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 3692,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 3692,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									}, -- [1]
 									[221512] = {
 										["c_amt"] = 0,
@@ -3712,18 +3715,19 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 221512,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["friendlyfire"] = {
 							},
@@ -3731,16 +3735,16 @@ _detalhes_database = {
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 7166.006284,
+							["on_hold"] = false,
 							["start_time"] = 1479671107,
-							["delay"] = 0,
-							["last_event"] = 1479671113,
+							["serial"] = "Creature-0-3019-1220-28161-111254-000031FC4C",
+							["classe"] = "PET",
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 14,
 					["tipo"] = 3,
+					["combatId"] = 14,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -3751,7 +3755,6 @@ _detalhes_database = {
 							["targets"] = {
 								["Vanessa VanCleef <Emmarosa>"] = 722,
 							},
-							["spec"] = 259,
 							["pets"] = {
 								"Vanessa VanCleef <Emmarosa>", -- [1]
 							},
@@ -3762,20 +3765,12 @@ _detalhes_database = {
 							["healing_taken"] = 0.003113,
 							["totalover"] = 14047.003113,
 							["total_without_pet"] = 0.003113,
-							["heal_enemy_amt"] = 0,
+							["total"] = 722.003113,
 							["iniciar_hps"] = false,
 							["classe"] = "ROGUE",
-							["total"] = 722.003113,
-							["last_event"] = 1479671116,
 							["end_time"] = 1479671119,
-							["nome"] = "Emmarosa",
-							["targets_absorbs"] = {
-							},
-							["grupo"] = true,
-							["heal_enemy"] = {
-							},
+							["heal_enemy_amt"] = 0,
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[143924] = {
 										["c_amt"] = 0,
@@ -3798,57 +3793,64 @@ _detalhes_database = {
 										["m_crit"] = 0,
 										["c_curado"] = 0,
 										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 0,
-										["m_healed"] = 0,
 										["n_amt"] = 8,
+										["m_healed"] = 0,
+										["n_curado"] = 0,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
+							},
+							["nome"] = "Emmarosa",
+							["spec"] = 259,
+							["grupo"] = true,
+							["serial"] = "Player-60-0A91880D",
+							["heal_enemy"] = {
+							},
+							["targets_absorbs"] = {
 							},
 							["custom"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 1479671116,
 							["on_hold"] = false,
 							["start_time"] = 1479671106,
 							["delay"] = 0,
-							["serial"] = "Player-60-0A91880D",
+							["tipo"] = 2,
 						}, -- [1]
 						{
 							["flag_original"] = 8465,
 							["totalabsorb"] = 0.002963,
 							["last_hps"] = 0,
-							["healing_from"] = {
-								["Teabelly"] = true,
-								["Vanessa VanCleef <Emmarosa>"] = true,
+							["targets_overheal"] = {
+								["Vanessa VanCleef <Emmarosa>"] = 592,
 							},
 							["targets"] = {
 								["Vanessa VanCleef <Emmarosa>"] = 722,
 							},
-							["heal_enemy_amt"] = 0,
+							["delay"] = 0,
 							["pets"] = {
 							},
 							["totalover_without_pet"] = 0.002963,
-							["targets_overheal"] = {
-								["Vanessa VanCleef <Emmarosa>"] = 592,
+							["healing_from"] = {
+								["Vanessa VanCleef <Emmarosa>"] = true,
+								["Teabelly"] = true,
 							},
-							["classe"] = "PET",
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 592.002963,
 							["total_without_pet"] = 722.002963,
 							["iniciar_hps"] = false,
-							["healing_taken"] = 7166.002963,
 							["fight_component"] = true,
-							["total"] = 722.002963,
-							["serial"] = "Creature-0-3019-1220-28161-111254-000031FC4C",
+							["end_time"] = 1479671119,
+							["healing_taken"] = 7166.002963,
 							["ownerName"] = "Emmarosa",
 							["nome"] = "Vanessa VanCleef <Emmarosa>",
 							["targets_absorbs"] = {
 							},
-							["end_time"] = 1479671119,
-							["last_event"] = 1479671116,
+							["classe"] = "PET",
+							["total"] = 722.002963,
 							["heal_enemy"] = {
 							},
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[143924] = {
 										["c_amt"] = 0,
@@ -3871,103 +3873,106 @@ _detalhes_database = {
 										["m_crit"] = 0,
 										["c_curado"] = 0,
 										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 722,
-										["m_healed"] = 0,
 										["n_amt"] = 2,
+										["m_healed"] = 0,
+										["n_curado"] = 722,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["custom"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 1479671116,
 							["on_hold"] = false,
 							["start_time"] = 1479671111,
-							["delay"] = 0,
+							["serial"] = "Creature-0-3019-1220-28161-111254-000031FC4C",
+							["tipo"] = 2,
 						}, -- [2]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 14,
 					["tipo"] = 7,
+					["combatId"] = 14,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 14,
 					["tipo"] = 9,
+					["combatId"] = 14,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[703] = {
 										["uptime"] = 13,
 										["activedamt"] = 1,
 										["id"] = 703,
-										["actived"] = false,
 										["targets"] = {
 										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
 									[1330] = {
 										["uptime"] = 13,
 										["activedamt"] = 1,
 										["id"] = 1330,
-										["actived"] = false,
 										["targets"] = {
 										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 52,
+							["pets"] = {
+								"Vanessa VanCleef <Emmarosa>", -- [1]
+							},
 							["classe"] = "ROGUE",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
-									[182957] = {
+									[200802] = {
 										["uptime"] = 13,
 										["activedamt"] = 1,
-										["id"] = 182957,
-										["actived"] = false,
+										["id"] = 200802,
 										["targets"] = {
 										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
 									[3408] = {
 										["uptime"] = 13,
 										["activedamt"] = 1,
 										["id"] = 3408,
-										["actived"] = false,
 										["targets"] = {
 										},
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[182957] = {
+										["uptime"] = 13,
+										["activedamt"] = 1,
+										["id"] = 182957,
+										["targets"] = {
+										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
 									[186401] = {
 										["uptime"] = 13,
 										["activedamt"] = 1,
 										["id"] = 186401,
-										["actived"] = false,
 										["targets"] = {
 										},
-										["counter"] = 0,
-									},
-									[200802] = {
-										["uptime"] = 13,
-										["activedamt"] = 1,
-										["id"] = 200802,
 										["actived"] = false,
-										["targets"] = {
-										},
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 26,
-							["buff_uptime_targets"] = {
-							},
+							["nome"] = "Emmarosa",
 							["spec"] = 259,
 							["grupo"] = true,
 							["spell_cast"] = {
@@ -3975,36 +3980,35 @@ _detalhes_database = {
 								[27576] = 3,
 								[1943] = 1,
 							},
+							["tipo"] = 4,
+							["last_event"] = 1479671119,
+							["buff_uptime_targets"] = {
+							},
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1479671119,
-							["nome"] = "Emmarosa",
-							["pets"] = {
-								"Vanessa VanCleef <Emmarosa>", -- [1]
-							},
 							["serial"] = "Player-60-0A91880D",
-							["tipo"] = 4,
+							["buff_uptime"] = 52,
 						}, -- [1]
 						{
 							["flag_original"] = 8465,
 							["ownerName"] = "Emmarosa",
 							["nome"] = "Vanessa VanCleef <Emmarosa>",
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["fight_component"] = true,
-							["tipo"] = 4,
 							["spell_cast"] = {
 								[221512] = 2,
 							},
-							["serial"] = "Creature-0-3019-1220-28161-111254-000031FC4C",
+							["pets"] = {
+							},
 							["last_event"] = 0,
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["serial"] = "Creature-0-3019-1220-28161-111254-000031FC4C",
+							["fight_component"] = true,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 14,
 					["tipo"] = 2,
+					["combatId"] = 14,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -4028,15 +4032,15 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
 				["player_last_events"] = {
 				},
@@ -4048,6 +4052,11 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage"] = {
+						{
+							["Emmarosa"] = 1019883.004536,
+						}, -- [1]
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -4057,15 +4066,12 @@ _detalhes_database = {
 					},
 					["damage_section"] = {
 					},
-					["damage"] = {
-						{
-							["Emmarosa"] = 1019883.004536,
-						}, -- [1]
-					},
 				},
 				["end_time"] = 1016875.074,
 				["combat_id"] = 14,
-				["instance_type"] = "none",
+				["TimeData"] = {
+				},
+				["hasSaved"] = true,
 				["frags"] = {
 					["Forsaken Plaguebringer"] = 1,
 				},
@@ -4085,25 +4091,22 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
 				["start_time"] = 1016861.923,
 				["contra"] = "Forsaken Plaguebringer",
-				["TimeData"] = {
-				},
+				["instance_type"] = "none",
 			}, -- [5]
 		},
 	},
 	["last_version"] = "v7.1.0.3212",
-	["character_data"] = {
-		["logons"] = 264,
-	},
+	["combat_counter"] = 6129,
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
 			["lasttry"] = {
@@ -4111,10 +4114,10 @@ _detalhes_database = {
 			["annouce"] = true,
 			["dpshistory"] = {
 			},
-			["enabled"] = true,
+			["dps"] = 0,
 			["author"] = "Details! Team",
 			["level"] = 1,
-			["dps"] = 0,
+			["enabled"] = true,
 		},
 		["DETAILS_PLUGIN_DEATH_GRAPHICS"] = {
 			["last_boss"] = false,
@@ -4132,15 +4135,15 @@ _detalhes_database = {
 			["max_segments_for_current"] = 2,
 			["max_deaths_for_current"] = 15,
 			["last_player"] = false,
-			["author"] = "Details! Team",
+			["InstalledAt"] = 1470375019,
 			["last_encounter_hash"] = false,
-			["enabled"] = true,
+			["showing_type"] = 4,
 			["timeline_cutoff_time"] = 3,
 			["last_segment"] = false,
 			["last_combat_id"] = 136,
 			["timeline_cutoff_delete_time"] = 3,
-			["showing_type"] = 4,
-			["InstalledAt"] = 1470375019,
+			["enabled"] = true,
+			["author"] = "Details! Team",
 		},
 		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
 			["enabled"] = true,
@@ -4149,11 +4152,11 @@ _detalhes_database = {
 			["max_emote_segments"] = 3,
 			["author"] = "Details! Team",
 			["window_scale"] = 1,
-			["encounter_timers_dbm"] = {
-			},
+			["hide_on_combat"] = false,
 			["show_icon"] = 5,
 			["opened"] = 3,
-			["hide_on_combat"] = false,
+			["encounter_timers_dbm"] = {
+			},
 		},
 		["DETAILS_PLUGIN_LEECH_TRINKET"] = {
 			["enabled"] = true,
@@ -4161,17 +4164,17 @@ _detalhes_database = {
 		},
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["updatespeed"] = 1,
-			["enabled"] = true,
+			["animate"] = false,
 			["showamount"] = false,
 			["useplayercolor"] = false,
-			["author"] = "Details! Team",
 			["useclasscolors"] = false,
+			["author"] = "Details! Team",
 			["playercolor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["animate"] = false,
+			["enabled"] = true,
 		},
 		["DETAILS_PLUGIN_DPS_TUNING"] = {
 			["enabled"] = true,
@@ -4180,17 +4183,44 @@ _detalhes_database = {
 		},
 		["DETAILS_PLUGIN_VANGUARD"] = {
 			["enabled"] = true,
+			["tank_block_texture"] = "Details Serenity",
 			["tank_block_color"] = {
 				0.24705882, -- [1]
 				0.0039215, -- [2]
 				0, -- [3]
 				0.8, -- [4]
 			},
-			["tank_block_texture"] = "Details Serenity",
 			["show_inc_bars"] = false,
 			["author"] = "Details! Team",
 			["first_run"] = false,
 			["tank_block_size"] = 150,
+		},
+		["DETAILS_PLUGIN_TIME_ATTACK"] = {
+			["enabled"] = true,
+			["realm_last_shown"] = 40,
+			["saved_as_anonymous"] = true,
+			["recently_as_anonymous"] = true,
+			["dps"] = 0,
+			["disable_sharing"] = false,
+			["history"] = {
+			},
+			["time"] = 40,
+			["history_lastindex"] = 0,
+			["realm_lastamt"] = 0,
+			["realm_history"] = {
+			},
+			["author"] = "Details! Team",
+		},
+		["DETAILS_PLUGIN_RAIDCHECK"] = {
+			["enabled"] = true,
+			["food_tier1"] = true,
+			["mythic_1_4"] = true,
+			["food_tier2"] = true,
+			["author"] = "Details! Team",
+			["use_report_panel"] = true,
+			["pre_pot_healers"] = false,
+			["pre_pot_tanks"] = false,
+			["food_tier3"] = true,
 		},
 		["DETAILS_PLUGIN_CHART_VIEWER"] = {
 			["enabled"] = true,
@@ -4204,8 +4234,8 @@ _detalhes_database = {
 					["texture"] = "line",
 				}, -- [1]
 				{
-					["iType"] = "raid-DAMAGER",
 					["version"] = "v2.0",
+					["iType"] = "raid-DAMAGER",
 					["options"] = {
 						["iType"] = "raid-DAMAGER",
 						["name"] = "Damager (Same Class)",
@@ -4216,8 +4246,8 @@ _detalhes_database = {
 					["texture"] = "line",
 				}, -- [2]
 				{
-					["iType"] = "raid-HEALER",
 					["version"] = "v2.0",
+					["iType"] = "raid-HEALER",
 					["options"] = {
 						["iType"] = "raid-HEALER",
 						["name"] = "All Healers",
@@ -4230,49 +4260,18 @@ _detalhes_database = {
 				["last_selected"] = 3,
 			},
 			["options"] = {
-				["show_method"] = 4,
 				["auto_create"] = true,
+				["show_method"] = 4,
 				["window_scale"] = 0.649999976158142,
 			},
 		},
-		["DETAILS_PLUGIN_RAIDCHECK"] = {
-			["enabled"] = true,
-			["food_tier1"] = true,
-			["mythic_1_4"] = true,
-			["food_tier2"] = true,
-			["author"] = "Details! Team",
-			["use_report_panel"] = true,
-			["pre_pot_healers"] = false,
-			["pre_pot_tanks"] = false,
-			["food_tier3"] = true,
-		},
-		["DETAILS_PLUGIN_TIME_ATTACK"] = {
-			["enabled"] = true,
-			["realm_last_shown"] = 40,
-			["saved_as_anonymous"] = true,
-			["recently_as_anonymous"] = true,
-			["dps"] = 0,
-			["disable_sharing"] = false,
-			["history"] = {
-			},
-			["time"] = 40,
-			["history_lastindex"] = 0,
-			["author"] = "Details! Team",
-			["realm_history"] = {
-			},
-			["realm_lastamt"] = 0,
-		},
 	},
-	["cached_talents"] = {
-		["Player-60-0A91880D"] = {
-			22338, -- [1]
-			21186, -- [2]
-			22123, -- [3]
-			22341, -- [4]
-			22331, -- [5]
-			22343, -- [6]
-			19239, -- [7]
-		},
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
+	["character_data"] = {
+		["logons"] = 265,
 	},
 	["SoloTablesSaved"] = {
 		["Mode"] = 1,
@@ -4304,22 +4303,21 @@ _detalhes_database = {
 		},
 		["nextreset"] = 1480615478,
 	},
-	["last_realversion"] = 115,
 	["tabela_instancias"] = {
 	},
 	["combat_id"] = 18,
 	["savedStyles"] = {
 	},
+	["last_encounter"] = "Elerethe Renferal",
 	["savedbuffs"] = {
 	},
-	["last_instance_time"] = 1479320868,
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
 		["only_first"] = 5,
 		["where"] = 1,
 	},
-	["combat_counter"] = 6128,
+	["last_instance_time"] = 1479320868,
 	["local_instances_config"] = {
 		{
 			["segment"] = 0,
@@ -4364,10 +4362,10 @@ _detalhes_database = {
 				3, -- [4]
 				1, -- [5]
 			},
-			["isLocked"] = true,
+			["is_open"] = true,
 			["snap"] = {
 			},
-			["is_open"] = true,
+			["isLocked"] = true,
 			["mode"] = 2,
 			["attribute"] = 1,
 			["pos"] = {
@@ -4386,17 +4384,24 @@ _detalhes_database = {
 			},
 		}, -- [2]
 	},
-	["last_encounter"] = "Elerethe Renferal",
+	["last_realversion"] = 115,
 	["announce_cooldowns"] = {
+		["enabled"] = false,
 		["ignored_cooldowns"] = {
 		},
-		["enabled"] = false,
 		["custom"] = "",
 		["channel"] = "RAID",
 	},
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
+	["cached_talents"] = {
+		["Player-60-0A91880D"] = {
+			22338, -- [1]
+			21186, -- [2]
+			19239, -- [3]
+			22341, -- [4]
+			22331, -- [5]
+			22343, -- [6]
+			22123, -- [7]
+		},
 	},
 	["last_instance_id"] = 1466,
 	["cached_specs"] = {

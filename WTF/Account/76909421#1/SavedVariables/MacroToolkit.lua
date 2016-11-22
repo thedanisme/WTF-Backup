@@ -279,59 +279,59 @@ MacroToolkitDB = {
 		["Emmarosa - Stormrage"] = {
 			["macros"] = {
 				[122] = {
-					["icon"] = "236283",
 					["name"] = " TotT(Focus)",
+					["icon"] = "236283",
 					["body"] = "#showtooltip Tricks of the Trade\n/cast [@focus] Tricks of the Trade\n",
 				},
 				[126] = {
-					["icon"] = "132290",
 					["name"] = "Poisons",
+					["icon"] = "132290",
 					["body"] = "#showtooltip\n/castsequence Deadly Poison, Crippling Poison\n",
 				},
 				[123] = {
-					["icon"] = "134400",
 					["name"] = "BladeFlurry",
+					["icon"] = "134400",
 					["body"] = "#showtooltip Blade Flurry\n/cancelaura Blade Flurry\n/use Blade Flurry\n",
 				},
 				[127] = {
-					["icon"] = "1408451",
 					["name"] = "Ring+Vendetta",
+					["icon"] = "1408451",
 					["body"] = "#showtooltip 11\n/use 11\n/use Vendetta\n",
 				},
 				[124] = {
-					["icon"] = "133669",
 					["name"] = "Pick Pocket",
+					["icon"] = "133669",
 					["body"] = "#showtooltip Pick Pocket\n/use [stealth]Pick Pocket\n",
 				},
 				[128] = {
-					["icon"] = "134400",
 					["name"] = "Riposte",
+					["icon"] = "134400",
 					["body"] = "#showtooltip Riposte\n/use [nostealth]Riposte\n",
 				},
-				[131] = {
-					["icon"] = "132320",
-					["name"] = "Stealth/Symbols",
-					["body"] = "#showtooltip Stealth\n/use Stealth\n/use Symbols of Death\n",
+				[129] = {
+					["name"] = "Shadow Blades",
+					["icon"] = "134400",
+					["body"] = "#showtooltip Shadow Blades\n/use Shadow Blades\n/use 13\n/use 14\n/use Goremaw's Bite\n",
 				},
 				[121] = {
-					["icon"] = "134400",
 					["name"] = " ",
+					["icon"] = "134400",
 					["body"] = "#showtooltip Adrenaline Rush\n/use Adrenaline Rush\n/use Curse of the Dreadblades\n/use 13\n/use 14\n/use 11\n",
 				},
 				[125] = {
-					["icon"] = "1035048",
 					["name"] = "Pistol Shot",
+					["icon"] = "1035048",
 					["body"] = "#showtooltip\n/use Pistol Shot\n",
 				},
 				[130] = {
-					["icon"] = "134400",
 					["name"] = "SoD/SS",
+					["icon"] = "134400",
 					["body"] = "#showtooltip Symbols of Death\n/use Symbols of Death\n/use Shadowstrike\n",
 				},
-				[129] = {
-					["icon"] = "134400",
-					["name"] = "Shadow Blades",
-					["body"] = "#showtooltip Shadow Blades\n/use Shadow Blades\n/use 13\n/use 14\n/use Goremaw's Bite\n",
+				[131] = {
+					["name"] = "Stealth/Symbols",
+					["icon"] = "132320",
+					["body"] = "#showtooltip Stealth\n/use Stealth\n/use Symbols of Death\n",
 				},
 			},
 			["backups"] = {
@@ -368,12 +368,17 @@ MacroToolkitDB = {
 				[122] = {
 					["icon"] = "136048",
 					["name"] = "Innervate",
-					["body"] = "#showtooltip\n/use [@mouseover,help,exists][]Innervate\n",
+					["body"] = "#showtooltip\n/use [@focus,help,exists][@mouseover,help,exists][]Innervate\n",
 				},
 				[124] = {
-					["icon"] = "136085",
-					["name"] = "Regrowth",
-					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Regrowth\n",
+					["icon"] = "136080",
+					["name"] = "Rebirth",
+					["body"] = "#showtooltip\n/use [@mouseover,dead][]Rebirth\n",
+				},
+				[126] = {
+					["icon"] = "135952",
+					["name"] = "RemCorruption",
+					["body"] = "#showtooltip\n/use [@mouseover,help,exists][]Remove Corruption\n",
 				},
 				[121] = {
 					["icon"] = "132270",
@@ -381,14 +386,14 @@ MacroToolkitDB = {
 					["body"] = "#showtooltip\n/use [@mouseover,harm,exists][]Growl\n",
 				},
 				[123] = {
-					["icon"] = "136080",
-					["name"] = "Rebirth",
-					["body"] = "#showtooltip\n/use [@mouseover,dead][]Rebirth\n",
+					["icon"] = "134400",
+					["name"] = "Innervate",
+					["body"] = "",
 				},
 				[125] = {
-					["icon"] = "135952",
-					["name"] = "RemCorruption",
-					["body"] = "#showtooltip\n/use [@mouseover,help,exists][]Remove Corruption\n",
+					["icon"] = "136085",
+					["name"] = "Regrowth",
+					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Regrowth\n",
 				},
 			},
 			["backups"] = {
@@ -1307,13 +1312,13 @@ MacroToolkitDB = {
 		["Talthalador - Stormrage"] = {
 			["macros"] = {
 				[121] = {
-					["name"] = " ",
 					["icon"] = "1344654",
+					["name"] = " ",
 					["body"] = "#showtooltip\n/use [@mouseover,harm][]Torment\n",
 				},
 				[122] = {
-					["name"] = "Demonic Hello",
 					["icon"] = "1020342",
+					["name"] = "Demonic Hello",
 					["body"] = "/script SendChatMessage(\"Hey there %t!  Supposedly, we can both understand this.  /nod if you can.\", \"SAY\", 8)\n",
 				},
 			},

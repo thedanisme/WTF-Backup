@@ -21,12 +21,6 @@ BigWigs3DB = {
 		},
 		["BigWigs_Plugins_Statistics"] = {
 		},
-		["BigWigs_Bosses_Lady Hatecoil"] = {
-		},
-		["BigWigs_Bosses_King Deepbeard"] = {
-		},
-		["BigWigs_Bosses_Serpentrix"] = {
-		},
 		["BigWigs_Plugins_Colors"] = {
 		},
 		["BigWigs_Plugins_Raid Icons"] = {
@@ -48,27 +42,12 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Bosses_Wrath of Azshara"] = {
-		},
 		["BigWigs_Plugins_Super Emphasize"] = {
 			["profiles"] = {
 				["Default"] = {
 					["font"] = "Gotham-Narrow",
 				},
 			},
-		},
-		["BigWigs_Bosses_Warlord Parjesh"] = {
-		},
-		["LibDualSpec-1.0"] = {
-		},
-		["BigWigs_Plugins_Pull"] = {
-			["profiles"] = {
-				["Default"] = {
-					["countType"] = "normal",
-				},
-			},
-		},
-		["BigWigs_Plugins_Respawn"] = {
 		},
 		["BigWigs_Plugins_Proximity"] = {
 			["profiles"] = {
@@ -85,6 +64,17 @@ BigWigs3DB = {
 					["font"] = "Friz Quadrata TT",
 				},
 			},
+		},
+		["BigWigs_Plugins_Pull"] = {
+			["profiles"] = {
+				["Default"] = {
+					["countType"] = "normal",
+				},
+			},
+		},
+		["LibDualSpec-1.0"] = {
+		},
+		["BigWigs_Plugins_Respawn"] = {
 		},
 		["BigWigs_Plugins_Messages"] = {
 			["profiles"] = {

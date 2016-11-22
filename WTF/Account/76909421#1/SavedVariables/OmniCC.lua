@@ -1,7 +1,5 @@
 
 OmniCC4Config = {
-	["groups"] = {
-	},
 	["version"] = "7.1.0",
 	["groupSettings"] = {
 		["base"] = {
@@ -37,5 +35,7 @@ OmniCC4Config = {
 			["fontSize"] = 18,
 			["yOff"] = 0,
 		},
+	},
+	["groups"] = {
 	},
 }

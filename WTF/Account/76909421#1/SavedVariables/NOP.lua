@@ -16,14 +16,15 @@ NewOpenablesProfile = {
 	["profiles"] = {
 		["Default"] = {
 			["T_BLACKLIST"] = {
+				[24476] = true,
+				[139890] = true,
+				[136412] = true,
+				[140404] = true,
+				[140226] = true,
+				[140590] = true,
 				[0] = true,
 				[139506] = true,
 				[136924] = true,
-				[140404] = true,
-				[24476] = true,
-				[140590] = true,
-				[140226] = true,
-				[136412] = true,
 			},
 			["button"] = {
 				nil, -- [1]
