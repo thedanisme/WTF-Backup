@@ -2,8 +2,8 @@
 PawnOptions = {
 	["LastVersion"] = 2.0108,
 	["LastPlayerFullName"] = "Druidann-Stormrage",
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
+	["AutoSelectScales"] = false,
+	["UpgradeTracking"] = true,
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

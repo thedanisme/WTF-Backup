@@ -2,11 +2,19 @@
 AtlasLootCharDB = {
 	["__addonrevision"] = 4325,
 	["GUI"] = {
+		["classFilter"] = true,
 		["selected"] = {
-			"AtlasLoot_MistsofPandaria", -- [1]
-			"MoguShanVaults", -- [2]
+			"AtlasLoot_Legion", -- [1]
+			"TheEmeraldNightmare", -- [2]
 			3, -- [3]
-			7, -- [4]
+			1, -- [4]
+			0, -- [5]
+		},
+		["point"] = {
+			"BOTTOMRIGHT", -- [1]
+			nil, -- [2]
+			"BOTTOMRIGHT", -- [3]
+			0, -- [4]
 			0, -- [5]
 		},
 	},

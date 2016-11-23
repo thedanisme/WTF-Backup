@@ -22,8 +22,8 @@ BadBoy: enabled
 BadBoy_CCleaner: enabled
 BadBoy_Guilded: enabled
 BadPet: enabled
-BestInSlot: enabled
-BestInSlot_Legion: enabled
+BestInSlot: disabled
+BestInSlot_Legion: disabled
 BetterAddonList: enabled
 BigWigs_Cataclysm: disabled
 BigWigs_RecordKills: enabled
@@ -57,9 +57,9 @@ Details_Streamer: disabled
 Details_RaidInfo-HellfireCitadel: disabled
 Details_DungeonInfo-Warlords: disabled
 Details_ChartViewer: enabled
-DugisGuideViewerZ: enabled
-EventTracker: enabled
-ExRT: enabled
+DugisGuideViewerZ: disabled
+EventTracker: disabled
+ExRT: disabled
 HandyNotes: enabled
 HandyNotes_LegionRaresTreasures: enabled
 HideTalkingHead: enabled
@@ -81,7 +81,7 @@ SharedMediaAdditionalFonts: enabled
 StrataFix: enabled
 TalentMacros: enabled
 TomTom: enabled
-TransmogTokens: enabled
+TransmogTokens: disabled
 WeakAuras: enabled
 WeakAurasModelPaths: enabled
 WeakAurasOptions: enabled
@@ -93,7 +93,7 @@ ZygorGuidesViewer: disabled
 AddOnSkins: enabled
 ElvUI_Config: enabled
 ElvUI: enabled
-ArtifactSpellLinker: enabled
+ArtifactSpellLinker: disabled
 BigWigs_TrialOfValor: disabled
 DejaCharacterStats: enabled
 Details_RaidInfo-EmeraldNightmare: disabled

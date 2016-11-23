@@ -2,7 +2,11 @@ VER 3 0100000000000004 "Growl" "INV_Misc_QuestionMark"
 #showtooltip
 /use [@mouseover,harm,exists][]Growl
 END
-VER 3 0100000000000006 "Innervate" "INV_Misc_QuestionMark"
+VER 3 0100000000000007 "Incarn" "INV_Misc_QuestionMark"
+#showtooltip
+/use Celestial Alignment
+/use 13
+/use 14
 END
 VER 3 0100000000000002 "Innervate" "INV_Misc_QuestionMark"
 #showtooltip
