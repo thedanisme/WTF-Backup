@@ -17,15 +17,9 @@ BigWigs3DB = {
 		},
 		["LibDualSpec-1.0"] = {
 		},
-		["BigWigs_Bosses_Black Rook Hold Trash"] = {
-		},
 		["BigWigs_Plugins_Sounds"] = {
 		},
 		["BigWigs_Plugins_Statistics"] = {
-		},
-		["BigWigs_Bosses_Smashspite"] = {
-		},
-		["BigWigs_Bosses_Amalgam of Souls"] = {
 		},
 		["BigWigs_Plugins_Colors"] = {
 		},
@@ -48,13 +42,14 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Bosses_Kurtalos Ravencrest"] = {
+		["BigWigs_Plugins_Super Emphasize"] = {
+			["profiles"] = {
+				["Default"] = {
+					["font"] = "Gotham-Narrow",
+				},
+			},
 		},
-		["BigWigs_Plugins_HeroesVoices"] = {
-		},
-		["BigWigs_Bosses_Illysanna Ravencrest"] = {
-		},
-		["BigWigs_Plugins_Respawn"] = {
+		["BigWigs_Plugins_BossBlock"] = {
 		},
 		["BigWigs_Plugins_Pull"] = {
 			["profiles"] = {
@@ -63,7 +58,7 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_BossBlock"] = {
+		["BigWigs_Plugins_Respawn"] = {
 		},
 		["BigWigs_Plugins_Proximity"] = {
 			["profiles"] = {
@@ -97,12 +92,7 @@ BigWigs3DB = {
 		},
 		["BigWigs_Plugins_Common Auras"] = {
 		},
-		["BigWigs_Plugins_Super Emphasize"] = {
-			["profiles"] = {
-				["Default"] = {
-					["font"] = "Gotham-Narrow",
-				},
-			},
+		["BigWigs_Plugins_HeroesVoices"] = {
 		},
 	},
 	["profileKeys"] = {
@@ -119,6 +109,7 @@ BigWigs3DB = {
 	["global"] = {
 		["watchedMovies"] = {
 			["1042:1"] = true,
+			[16] = true,
 		},
 	},
 	["profiles"] = {
@@ -180,6 +171,56 @@ BigWigsStatisticsDB = {
 			},
 			["heroic"] = {
 				["wipes"] = 10,
+			},
+		},
+	},
+	[604] = {
+		[1635] = {
+			["25h"] = {
+				["best"] = 12.6820000000007,
+				["kills"] = 1,
+			},
+		},
+		[1636] = {
+			["25h"] = {
+				["best"] = 154.552,
+				["kills"] = 1,
+			},
+		},
+		[1633] = {
+			["25h"] = {
+				["best"] = 6.23799999999937,
+				["kills"] = 1,
+			},
+		},
+		[1630] = {
+			["25h"] = {
+				["best"] = 5.22099999999955,
+				["kills"] = 1,
+			},
+		},
+		[1634] = {
+			["25h"] = {
+				["best"] = 5.88699999999881,
+				["kills"] = 1,
+			},
+		},
+		[1631] = {
+			["25h"] = {
+				["best"] = 7.54800000000068,
+				["kills"] = 1,
+			},
+		},
+		[1628] = {
+			["25h"] = {
+				["best"] = 3.55500000000029,
+				["kills"] = 1,
+			},
+		},
+		[1629] = {
+			["25h"] = {
+				["best"] = 4.77199999999903,
+				["kills"] = 1,
 			},
 		},
 	},

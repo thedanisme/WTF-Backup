@@ -39,7 +39,7 @@ BigWigs_MistsOfPandaria: disabled
 BigWigs_Options: enabled
 BigWigs_Plugins: enabled
 BigWigs_Nighthold: disabled
-BigWigs_WrathOfTheLichKing: disabled
+BigWigs_WrathOfTheLichKing: enabled
 BigWigs_CommonAuras: enabled
 BossBannerHider: enabled
 Details: enabled
@@ -57,7 +57,7 @@ Details_Streamer: disabled
 Details_RaidInfo-HellfireCitadel: disabled
 Details_DungeonInfo-Warlords: disabled
 Details_ChartViewer: enabled
-DugisGuideViewerZ: disabled
+DugisGuideViewerZ: enabled
 EventTracker: disabled
 ExRT: disabled
 HandyNotes: enabled

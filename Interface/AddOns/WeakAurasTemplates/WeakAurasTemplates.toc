@@ -1,7 +1,7 @@
 ## Interface: 70100
 ## Title: WeakAuras Templates
 ## Author: Infus
-## Version: 2.2.2.3-6-gfb4566e
+## Version: 2.2.2.2-4-g4feada5
 ## Notes: Templates for WeakAuras
 ## X-Category: Interface Enhancements
 ## DefaultState: Enabled

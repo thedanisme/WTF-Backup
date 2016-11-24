@@ -68,7 +68,6 @@ local tempGroup = {
   xOffset = 0,
   yOffset = 0
 };
-
 function WeakAuras.MultipleDisplayTooltipDesc()
   local desc = {{L["Multiple Displays"], L["Temporary Group"]}};
   for index, id in pairs(tempGroup.controlledChildren) do
@@ -79,7 +78,6 @@ function WeakAuras.MultipleDisplayTooltipDesc()
   tinsert(desc, {" ", "|cFF00FFFF"..L["Right-click for more options"]});
   return desc;
 end
-
 function WeakAuras.MultipleDisplayTooltipMenu()
   local menu = {
     {

@@ -55,11 +55,11 @@ RKDatabase = {
 					["Brackenspore"] = {
 						[7] = 86,
 					},
-					["Kargath Bladefist"] = {
-						[7] = 67,
-					},
 					["Ko'ragh"] = {
 						[7] = 54,
+					},
+					["The Butcher"] = {
+						[7] = 57,
 					},
 					["Tectus"] = {
 						[7] = 126,
@@ -67,8 +67,8 @@ RKDatabase = {
 					["Imperator Mar'gok"] = {
 						[7] = 331,
 					},
-					["The Butcher"] = {
-						[7] = 57,
+					["Kargath Bladefist"] = {
+						[7] = 67,
 					},
 					["Twin Ogron"] = {
 						[7] = 108,
