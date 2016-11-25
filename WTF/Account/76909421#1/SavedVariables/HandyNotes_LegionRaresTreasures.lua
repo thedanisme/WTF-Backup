@@ -6,9 +6,9 @@ LegionRaresTreasuresDB = {
 		["Shaneequa - Turalyon"] = "Default",
 		["Druidann - Stormrage"] = "Default",
 		["Jakwez - Stormrage"] = "Default",
-		["Talthalador - Stormrage"] = "Default",
-		["Shhbbyisok - Stormrage"] = "Default",
 		["Emmarosa - Stormrage"] = "Default",
+		["Shhbbyisok - Stormrage"] = "Default",
+		["Talthalador - Stormrage"] = "Default",
 		["Dosnutz - Stormrage"] = "Default",
 	},
 	["profiles"] = {

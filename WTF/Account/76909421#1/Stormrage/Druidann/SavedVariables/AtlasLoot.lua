@@ -4,10 +4,10 @@ AtlasLootCharDB = {
 	["GUI"] = {
 		["classFilter"] = true,
 		["selected"] = {
-			"AtlasLoot_Legion", -- [1]
-			"EyeOfAzshara", -- [2]
-			5, -- [3]
-			8, -- [4]
+			"AtlasLoot_Factions", -- [1]
+			"LEGIONFACTIONS", -- [2]
+			2, -- [3]
+			1, -- [4]
 			0, -- [5]
 		},
 		["point"] = {

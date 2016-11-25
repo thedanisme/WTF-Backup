@@ -7,10 +7,10 @@ NewOpenablesProfile = {
 		["Druidann - Stormrage"] = "Default",
 		["Jakwez - Stormrage"] = "Default",
 		["Danoh - Stormrage"] = "Default",
-		["Talthalador - Stormrage"] = "Default",
+		["Emmarosa - Stormrage"] = "Default",
 		["Yanlery - Stormrage"] = "Default",
 		["Shhbbyisok - Stormrage"] = "Default",
-		["Emmarosa - Stormrage"] = "Default",
+		["Talthalador - Stormrage"] = "Default",
 		["Dosnutz - Stormrage"] = "Default",
 	},
 	["profiles"] = {
@@ -22,9 +22,9 @@ NewOpenablesProfile = {
 				[140404] = true,
 				[140226] = true,
 				[140590] = true,
-				[0] = true,
-				[139506] = true,
 				[136924] = true,
+				[139506] = true,
+				[0] = true,
 			},
 			["button"] = {
 				nil, -- [1]
