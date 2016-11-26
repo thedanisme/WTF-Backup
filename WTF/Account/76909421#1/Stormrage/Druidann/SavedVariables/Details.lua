@@ -13,25 +13,26 @@ _detalhes_database = {
 		["reverse"] = false,
 	},
 	["active_profile"] = "Emmarosa-Stormrage",
-	["last_day"] = "24",
+	["last_day"] = "26",
 	["ignore_nicktag"] = false,
 	["tabela_historico"] = {
 		["tabelas"] = {
 			{
 				{
-					["combatId"] = 4,
+					["combatId"] = 25,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["damage_from"] = {
-								["Black Rook Spectral Officer"] = true,
-								["Lieutenant Desdel Stareye"] = true,
-								["Environment (Falling)"] = true,
+								["Cadraeus"] = true,
+								["Arcane Resonance <Cadraeus>"] = true,
+								["Astrix"] = true,
 							},
 							["targets"] = {
-								["Black Rook Spectral Officer"] = 2933259,
-								["Lieutenant Desdel Stareye"] = 7421053,
+								["Astrix"] = 739678,
+								["Arcane Resonance <Cadraeus>"] = 22942,
+								["Cadraeus"] = 8454079,
 							},
 							["pets"] = {
 								"Broll Bearmantle <Druidann>", -- [1]
@@ -40,64 +41,34 @@ _detalhes_database = {
 							["classe"] = "DRUID",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 9874477.001844,
+							["total_without_pet"] = 8884777.003722,
 							["colocacao"] = 1,
 							["friendlyfire"] = {
 							},
 							["dps_started"] = false,
-							["end_time"] = 1480043595,
+							["end_time"] = 1480142235,
 							["friendlyfire_total"] = 0,
 							["spec"] = 102,
 							["nome"] = "Druidann",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 4927,
-										["targets"] = {
-											["Black Rook Spectral Officer"] = 4927,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 4927,
-										["n_min"] = 4927,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 4927,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									}, -- [1]
 									[164812] = {
-										["c_amt"] = 8,
+										["c_amt"] = 4,
 										["b_amt"] = 0,
-										["c_dmg"] = 331868,
+										["c_dmg"] = 173006,
 										["g_amt"] = 0,
-										["n_max"] = 38432,
+										["n_max"] = 60492,
 										["targets"] = {
-											["Black Rook Spectral Officer"] = 472404,
-											["Lieutenant Desdel Stareye"] = 680076,
+											["Cadraeus"] = 802961,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 820612,
-										["n_min"] = 8997,
+										["n_dmg"] = 629955,
+										["n_min"] = 15683,
 										["g_dmg"] = 0,
-										["counter"] = 50,
-										["total"] = 1152480,
-										["c_max"] = 79170,
+										["counter"] = 24,
+										["total"] = 802961,
+										["c_max"] = 44810,
 										["id"] = 164812,
 										["r_dmg"] = 0,
 										["spellschool"] = 64,
@@ -107,27 +78,26 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 42,
+										["n_amt"] = 20,
 										["r_amt"] = 0,
-										["c_min"] = 19794,
+										["c_min"] = 42345,
 									},
 									[191259] = {
-										["c_amt"] = 2,
+										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["c_dmg"] = 224885,
+										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 78833,
+										["n_max"] = 135935,
 										["targets"] = {
-											["Black Rook Spectral Officer"] = 264394,
-											["Lieutenant Desdel Stareye"] = 231222,
+											["Cadraeus"] = 287069,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 270731,
-										["n_min"] = 39509,
+										["n_dmg"] = 287069,
+										["n_min"] = 72263,
 										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 495616,
-										["c_max"] = 144184,
+										["counter"] = 3,
+										["total"] = 287069,
+										["c_max"] = 0,
 										["id"] = 191259,
 										["r_dmg"] = 0,
 										["spellschool"] = 4,
@@ -137,27 +107,26 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 4,
+										["n_amt"] = 3,
 										["r_amt"] = 0,
-										["c_min"] = 80701,
+										["c_min"] = 0,
 									},
 									[78674] = {
-										["c_amt"] = 0,
+										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 0,
+										["c_dmg"] = 407535,
 										["g_amt"] = 0,
-										["n_max"] = 190426,
+										["n_max"] = 320489,
 										["targets"] = {
-											["Black Rook Spectral Officer"] = 380852,
-											["Lieutenant Desdel Stareye"] = 1316340,
+											["Cadraeus"] = 1935662,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 1697192,
-										["n_min"] = 184879,
+										["n_dmg"] = 1528127,
+										["n_min"] = 192560,
 										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 1697192,
-										["c_max"] = 0,
+										["counter"] = 7,
+										["total"] = 1935662,
+										["c_max"] = 407535,
 										["id"] = 78674,
 										["r_dmg"] = 0,
 										["spellschool"] = 72,
@@ -167,25 +136,25 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 9,
+										["n_amt"] = 6,
 										["r_amt"] = 0,
-										["c_min"] = 0,
+										["c_min"] = 407535,
 									},
 									[202768] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 259863,
+										["n_max"] = 286412,
 										["targets"] = {
-											["Lieutenant Desdel Stareye"] = 259863,
+											["Cadraeus"] = 564482,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 259863,
-										["n_min"] = 259863,
+										["n_dmg"] = 564482,
+										["n_min"] = 278070,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 259863,
+										["counter"] = 2,
+										["total"] = 564482,
 										["c_max"] = 0,
 										["id"] = 202768,
 										["r_dmg"] = 0,
@@ -196,27 +165,26 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 1,
+										["n_amt"] = 2,
 										["r_amt"] = 0,
 										["c_min"] = 0,
 									},
 									[190984] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 192209,
+										["c_dmg"] = 343190,
 										["g_amt"] = 0,
-										["n_max"] = 98988,
+										["n_max"] = 171596,
 										["targets"] = {
-											["Black Rook Spectral Officer"] = 162038,
-											["Lieutenant Desdel Stareye"] = 777485,
+											["Cadraeus"] = 995239,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 747314,
-										["n_min"] = 63050,
+										["n_dmg"] = 652049,
+										["n_min"] = 100097,
 										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 939523,
-										["c_max"] = 192209,
+										["counter"] = 6,
+										["total"] = 995239,
+										["c_max"] = 343190,
 										["id"] = 190984,
 										["r_dmg"] = 0,
 										["spellschool"] = 8,
@@ -226,25 +194,25 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 8,
+										["n_amt"] = 5,
 										["r_amt"] = 0,
-										["c_min"] = 192209,
+										["c_min"] = 343190,
 									},
 									[203001] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 118959,
+										["n_max"] = 200209,
 										["targets"] = {
-											["Lieutenant Desdel Stareye"] = 468906,
+											["Cadraeus"] = 327503,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 468906,
-										["n_min"] = 115494,
+										["n_dmg"] = 327503,
+										["n_min"] = 127294,
 										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 468906,
+										["counter"] = 2,
+										["total"] = 327503,
 										["c_max"] = 0,
 										["id"] = 203001,
 										["r_dmg"] = 0,
@@ -255,27 +223,26 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 4,
+										["n_amt"] = 2,
 										["r_amt"] = 0,
 										["c_min"] = 0,
 									},
 									[194153] = {
-										["c_amt"] = 5,
+										["c_amt"] = 2,
 										["b_amt"] = 0,
-										["c_dmg"] = 1185321,
+										["c_dmg"] = 494841,
 										["g_amt"] = 0,
-										["n_max"] = 140560,
+										["n_max"] = 236564,
 										["targets"] = {
-											["Black Rook Spectral Officer"] = 227481,
-											["Lieutenant Desdel Stareye"] = 1602907,
+											["Cadraeus"] = 1425668,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 645067,
-										["n_min"] = 86921,
+										["n_dmg"] = 930827,
+										["n_min"] = 142135,
 										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 1830388,
-										["c_max"] = 281119,
+										["counter"] = 7,
+										["total"] = 1425668,
+										["c_max"] = 284270,
 										["id"] = 194153,
 										["r_dmg"] = 0,
 										["spellschool"] = 64,
@@ -287,25 +254,26 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["n_amt"] = 5,
 										["r_amt"] = 0,
-										["c_min"] = 60845,
+										["c_min"] = 210571,
 									},
 									[164815] = {
-										["c_amt"] = 7,
+										["c_amt"] = 6,
 										["b_amt"] = 0,
-										["c_dmg"] = 208306,
+										["c_dmg"] = 301139,
 										["g_amt"] = 0,
-										["n_max"] = 32715,
+										["n_max"] = 47259,
 										["targets"] = {
-											["Black Rook Spectral Officer"] = 595440,
-											["Lieutenant Desdel Stareye"] = 610647,
+											["Astrix"] = 183540,
+											["Arcane Resonance <Cadraeus>"] = 22942,
+											["Cadraeus"] = 709615,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 997781,
-										["n_min"] = 7219,
+										["n_dmg"] = 614958,
+										["n_min"] = 16059,
 										["g_dmg"] = 0,
-										["counter"] = 69,
-										["total"] = 1206087,
-										["c_max"] = 63524,
+										["counter"] = 33,
+										["total"] = 916097,
+										["c_max"] = 91766,
 										["id"] = 164815,
 										["r_dmg"] = 0,
 										["spellschool"] = 8,
@@ -315,85 +283,25 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 62,
+										["n_amt"] = 27,
 										["r_amt"] = 0,
-										["c_min"] = 14871,
-									},
-									[202497] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 25899,
-										["g_amt"] = 0,
-										["n_max"] = 13259,
-										["targets"] = {
-											["Black Rook Spectral Officer"] = 23923,
-											["Lieutenant Desdel Stareye"] = 90874,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 88898,
-										["n_min"] = 6095,
-										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 114797,
-										["c_max"] = 25899,
-										["id"] = 202497,
-										["r_dmg"] = 0,
-										["spellschool"] = 72,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 8,
-										["r_amt"] = 0,
-										["c_min"] = 25899,
-									},
-									[202771] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 519725,
-										["g_amt"] = 0,
-										["n_max"] = 535316,
-										["targets"] = {
-											["Black Rook Spectral Officer"] = 519725,
-											["Lieutenant Desdel Stareye"] = 1055041,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1055041,
-										["n_min"] = 519725,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 1574766,
-										["c_max"] = 519725,
-										["id"] = 202771,
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 519725,
+										["c_min"] = 24506,
 									},
 									[202767] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 129932,
+										["n_max"] = 193329,
 										["targets"] = {
-											["Lieutenant Desdel Stareye"] = 129932,
+											["Cadraeus"] = 332365,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 129932,
-										["n_min"] = 129932,
+										["n_dmg"] = 332365,
+										["n_min"] = 139036,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 129932,
+										["counter"] = 2,
+										["total"] = 332365,
 										["c_max"] = 0,
 										["id"] = 202767,
 										["r_dmg"] = 0,
@@ -404,33 +312,90 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[202771] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 556138,
+										["g_amt"] = 0,
+										["n_max"] = 572822,
+										["targets"] = {
+											["Astrix"] = 556138,
+											["Cadraeus"] = 572822,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 572822,
+										["n_min"] = 572822,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 1128960,
+										["c_max"] = 556138,
+										["id"] = 202771,
+										["r_dmg"] = 0,
+										["spellschool"] = 64,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 556138,
+									},
+									[202497] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 20911,
+										["targets"] = {
+											["Cadraeus"] = 168771,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 168771,
+										["n_min"] = 11959,
+										["g_dmg"] = 0,
+										["counter"] = 10,
+										["total"] = 168771,
+										["c_max"] = 0,
+										["id"] = 202497,
+										["r_dmg"] = 0,
+										["spellschool"] = 72,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 10,
 										["r_amt"] = 0,
 										["c_min"] = 0,
 									},
 								},
 							},
 							["grupo"] = true,
-							["total"] = 10354312.001844,
+							["total"] = 9216699.003722,
 							["serial"] = "Player-60-0AAE98B4",
-							["last_dps"] = 139923.135160054,
+							["last_dps"] = 192014.562577542,
 							["custom"] = 0,
-							["last_event"] = 1480043594,
-							["damage_taken"] = 528489.001844,
-							["start_time"] = 1480043521,
+							["last_event"] = 1480142229,
+							["damage_taken"] = 630254.003722,
+							["start_time"] = 1480142187,
 							["delay"] = 0,
 							["tipo"] = 1,
 						}, -- [1]
 						{
 							["flag_original"] = 8465,
-							["serial"] = "Creature-0-3883-1220-2139-109839-000037A58C",
+							["serial"] = "Creature-0-3782-1220-20798-109839-0000392C27",
 							["damage_from"] = {
-								["Black Rook Spectral Officer"] = true,
-								["Lieutenant Desdel Stareye"] = true,
+								["Cadraeus"] = true,
 							},
 							["targets"] = {
-								["Black Rook Spectral Officer"] = 282075,
-								["Lieutenant Desdel Stareye"] = 197760,
+								["Cadraeus"] = 331922,
 							},
 							["pets"] = {
 							},
@@ -438,9 +403,9 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 479835.008463,
+							["total_without_pet"] = 331922.004024,
 							["dps_started"] = false,
-							["total"] = 479835.008463,
+							["total"] = 331922.004024,
 							["classe"] = "PET",
 							["ownerName"] = "Druidann",
 							["nome"] = "Broll Bearmantle <Druidann>",
@@ -448,23 +413,22 @@ _detalhes_database = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
-										["c_amt"] = 9,
+										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 87583,
+										["c_dmg"] = 8816,
 										["g_amt"] = 0,
-										["n_max"] = 8342,
+										["n_max"] = 10578,
 										["targets"] = {
-											["Black Rook Spectral Officer"] = 170081,
-											["Lieutenant Desdel Stareye"] = 128800,
+											["Cadraeus"] = 169233,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 211298,
-										["n_min"] = 2025,
+										["n_dmg"] = 160417,
+										["n_min"] = 3085,
 										["g_dmg"] = 0,
-										["counter"] = 53,
-										["total"] = 298881,
-										["c_max"] = 16683,
-										["MISS"] = 9,
+										["counter"] = 30,
+										["total"] = 169233,
+										["c_max"] = 8816,
+										["MISS"] = 5,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -474,57 +438,26 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 35,
+										["n_amt"] = 24,
 										["r_amt"] = 0,
-										["c_min"] = 4170,
+										["c_min"] = 8816,
 									}, -- [1]
-									[218803] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 24295,
-										["g_amt"] = 0,
-										["n_max"] = 12148,
-										["targets"] = {
-											["Black Rook Spectral Officer"] = 85031,
-											["Lieutenant Desdel Stareye"] = 48591,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 109327,
-										["n_min"] = 12147,
-										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 133622,
-										["c_max"] = 24295,
-										["id"] = 218803,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 9,
-										["r_amt"] = 0,
-										["c_min"] = 24295,
-									},
 									[218797] = {
-										["c_amt"] = 4,
+										["c_amt"] = 7,
 										["b_amt"] = 0,
-										["c_dmg"] = 13049,
+										["c_dmg"] = 28371,
 										["g_amt"] = 0,
-										["n_max"] = 1865,
+										["n_max"] = 2364,
 										["targets"] = {
-											["Black Rook Spectral Officer"] = 26963,
-											["Lieutenant Desdel Stareye"] = 20369,
+											["Cadraeus"] = 61270,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 34283,
-										["n_min"] = 863,
+										["n_dmg"] = 32899,
+										["n_min"] = 1339,
 										["g_dmg"] = 0,
-										["counter"] = 24,
-										["total"] = 47332,
-										["c_max"] = 3729,
+										["counter"] = 25,
+										["total"] = 61270,
+										["c_max"] = 4728,
 										["id"] = 218797,
 										["r_dmg"] = 0,
 										["spellschool"] = 64,
@@ -534,79 +467,134 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 20,
+										["n_amt"] = 18,
 										["r_amt"] = 0,
-										["c_min"] = 1864,
+										["c_min"] = 3940,
+									},
+									[218803] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 51351,
+										["g_amt"] = 0,
+										["n_max"] = 15405,
+										["targets"] = {
+											["Cadraeus"] = 101419,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 50068,
+										["n_min"] = 8987,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 101419,
+										["c_max"] = 25676,
+										["id"] = 218803,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 25675,
 									},
 								},
 							},
 							["friendlyfire"] = {
 							},
-							["end_time"] = 1480043595,
+							["end_time"] = 1480142235,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 487836.008463,
-							["start_time"] = 1480043522,
+							["damage_taken"] = 40962.004024,
+							["start_time"] = 1480142188,
 							["delay"] = 0,
-							["last_event"] = 1480043593,
+							["last_event"] = 1480142228,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 4,
+					["combatId"] = 25,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorb"] = 0.006152,
+							["totalabsorb"] = 0.002434,
 							["last_hps"] = 0,
 							["healing_from"] = {
 								["Druidann"] = true,
 							},
 							["targets"] = {
-								["Druidann"] = 339268,
+								["Druidann"] = 439038,
 							},
-							["targets_overheal"] = {
-								["Druidann"] = 12364,
+							["targets_absorbs"] = {
 							},
 							["pets"] = {
 							},
-							["iniciar_hps"] = false,
-							["targets_absorbs"] = {
+							["totalover_without_pet"] = 0.002434,
+							["targets_overheal"] = {
+								["Druidann"] = 101116,
 							},
 							["classe"] = "DRUID",
-							["totalover"] = 12364.006152,
-							["total_without_pet"] = 326904.006152,
-							["totalover_without_pet"] = 0.006152,
-							["heal_enemy_amt"] = 0,
+							["totalover"] = 101116.002434,
+							["total_without_pet"] = 439038.002434,
+							["end_time"] = 1480142235,
+							["iniciar_hps"] = false,
 							["fight_component"] = true,
-							["total"] = 326904.006152,
-							["healing_taken"] = 326904.006152,
-							["end_time"] = 1480043595,
+							["total"] = 439038.002434,
+							["heal_enemy_amt"] = 0,
+							["last_event"] = 1480142232,
 							["nome"] = "Druidann",
 							["spec"] = 102,
 							["grupo"] = true,
-							["last_event"] = 1480043571,
+							["healing_taken"] = 439038.002434,
 							["heal_enemy"] = {
 							},
 							["spells"] = {
 								["tipo"] = 3,
 								["_ActorTable"] = {
+									[213672] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Druidann"] = 101116,
+										},
+										["n_max"] = 0,
+										["targets"] = {
+											["Druidann"] = 0,
+										},
+										["n_min"] = 0,
+										["counter"] = 1,
+										["overheal"] = 101116,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 213672,
+										["targets_absorbs"] = {
+										},
+										["m_crit"] = 0,
+										["c_curado"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 0,
+										["m_healed"] = 0,
+										["n_amt"] = 1,
+										["absorbed"] = 0,
+									},
 									[145109] = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
-											["Druidann"] = 12364,
 										},
-										["n_max"] = 48467,
+										["n_max"] = 48782,
 										["targets"] = {
-											["Druidann"] = 326904,
+											["Druidann"] = 439038,
 										},
-										["n_min"] = 38562,
-										["counter"] = 7,
-										["overheal"] = 12364,
-										["total"] = 326904,
+										["n_min"] = 48782,
+										["counter"] = 9,
+										["overheal"] = 0,
+										["total"] = 439038,
 										["c_max"] = 0,
 										["id"] = 145109,
 										["targets_absorbs"] = {
@@ -615,9 +603,9 @@ _detalhes_database = {
 										["c_curado"] = 0,
 										["m_amt"] = 0,
 										["c_min"] = 0,
-										["n_curado"] = 326904,
+										["n_curado"] = 439038,
 										["m_healed"] = 0,
-										["n_amt"] = 7,
+										["n_amt"] = 9,
 										["absorbed"] = 0,
 									},
 								},
@@ -625,49 +613,54 @@ _detalhes_database = {
 							["custom"] = 0,
 							["tipo"] = 2,
 							["on_hold"] = false,
-							["start_time"] = 1480043564,
+							["start_time"] = 1480142190,
+							["delay"] = 0,
 							["serial"] = "Player-60-0AAE98B4",
-							["delay"] = 1480043571,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 4,
+					["combatId"] = 25,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 4,
+					["combatId"] = 25,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["cc_break_spells"] = {
+							["debuff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
-									[164815] = {
-										["cc_break_oque"] = {
-											[339] = 1,
-										},
-										["id"] = 164815,
-										["cc_break"] = 1,
+									[218797] = {
+										["uptime"] = 48,
+										["activedamt"] = 1,
+										["id"] = 218797,
+										["actived"] = false,
 										["targets"] = {
-											["Black Rook Spectral Officer"] = 1,
 										},
 										["counter"] = 0,
 									},
 								},
 							},
-							["pets"] = {
-								"Broll Bearmantle <Druidann>", -- [1]
-							},
+							["buff_uptime"] = 288,
 							["classe"] = "DRUID",
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
+									[224772] = {
+										["uptime"] = 48,
+										["activedamt"] = 1,
+										["id"] = 224772,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
 									[225788] = {
-										["uptime"] = 74,
+										["uptime"] = 48,
 										["activedamt"] = 1,
 										["id"] = 225788,
 										["actived"] = false,
@@ -675,18 +668,19 @@ _detalhes_database = {
 										},
 										["counter"] = 0,
 									},
-									[164545] = {
+									[191608] = {
+										["actived_at"] = 1480142187,
 										["uptime"] = 0,
-										["activedamt"] = 0,
-										["id"] = 164545,
-										["actived"] = false,
+										["activedamt"] = 1,
+										["id"] = 191608,
+										["actived"] = true,
 										["targets"] = {
 										},
 										["counter"] = 0,
 									},
 									[164547] = {
-										["uptime"] = 0,
-										["activedamt"] = 0,
+										["uptime"] = 48,
+										["activedamt"] = 1,
 										["id"] = 164547,
 										["actived"] = false,
 										["targets"] = {
@@ -694,7 +688,7 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 									[227723] = {
-										["uptime"] = 74,
+										["uptime"] = 48,
 										["activedamt"] = 1,
 										["id"] = 227723,
 										["actived"] = false,
@@ -702,29 +696,19 @@ _detalhes_database = {
 										},
 										["counter"] = 0,
 									},
-									[191604] = {
-										["actived_at"] = 1480043521,
-										["uptime"] = 0,
+									[164545] = {
+										["uptime"] = 48,
 										["activedamt"] = 1,
-										["id"] = 191604,
-										["actived"] = true,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[24858] = {
-										["uptime"] = 74,
-										["activedamt"] = 1,
-										["id"] = 24858,
+										["id"] = 164545,
 										["actived"] = false,
 										["targets"] = {
 										},
 										["counter"] = 0,
 									},
-									[219159] = {
-										["uptime"] = 74,
+									[24858] = {
+										["uptime"] = 48,
 										["activedamt"] = 1,
-										["id"] = 219159,
+										["id"] = 24858,
 										["actived"] = false,
 										["targets"] = {
 										},
@@ -733,35 +717,32 @@ _detalhes_database = {
 								},
 							},
 							["fight_component"] = true,
-							["buff_uptime"] = 296,
-							["nome"] = "Druidann",
+							["debuff_uptime"] = 48,
+							["buff_uptime_targets"] = {
+							},
 							["spec"] = 102,
 							["grupo"] = true,
 							["spell_cast"] = {
-								[93402] = 4,
-								[78674] = 9,
-								[202768] = 1,
-								[190984] = 9,
-								[194153] = 9,
+								[93402] = 2,
+								[78674] = 7,
+								[202768] = 2,
+								[190984] = 6,
+								[194153] = 7,
+								[61391] = 1,
 								[202767] = 1,
-								[78675] = 1,
-								[202771] = 2,
-								[8921] = 3,
-								[102280] = 1,
-								[24858] = 1,
+								[202771] = 1,
+								[8921] = 2,
+								[102560] = 1,
 							},
-							["cc_break_oque"] = {
-								[339] = 1,
+							["debuff_uptime_targets"] = {
 							},
-							["cc_break"] = 1.00297,
-							["tipo"] = 4,
-							["buff_uptime_targets"] = {
-							},
-							["cc_break_targets"] = {
-								["Black Rook Spectral Officer"] = 1,
+							["last_event"] = 1480142235,
+							["nome"] = "Druidann",
+							["pets"] = {
+								"Broll Bearmantle <Druidann>", -- [1]
 							},
 							["serial"] = "Player-60-0AAE98B4",
-							["last_event"] = 1480043595,
+							["tipo"] = 4,
 						}, -- [1]
 						{
 							["flag_original"] = 8465,
@@ -772,17 +753,16 @@ _detalhes_database = {
 							["classe"] = "PET",
 							["tipo"] = 4,
 							["spell_cast"] = {
-								[218803] = 10,
-								[218796] = 5,
-								[218605] = 1,
+								[218803] = 6,
+								[218796] = 2,
 							},
-							["serial"] = "Creature-0-3883-1220-2139-109839-000037A58C",
+							["serial"] = "Creature-0-3782-1220-20798-109839-0000392C27",
 							["last_event"] = 0,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 4,
+					["combatId"] = 25,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -792,117 +772,12 @@ _detalhes_database = {
 				},
 				["last_events_tables"] = {
 				},
-				["enemy"] = "Black Rook Spectral Officer",
-				["combat_counter"] = 1754,
+				["enemy"] = "Cadraeus",
+				["combat_counter"] = 1782,
 				["playing_solo"] = true,
 				["totals"] = {
-					10354311.810699, -- [1]
-					326903.982872, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = -0.0159649999999998,
-						["dispell"] = 0,
-						["cc_break"] = 1,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-					["Druidann"] = {
-						{
-							true, -- [1]
-							3, -- [2]
-							201585, -- [3]
-							1480045417.503, -- [4]
-							1413975, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [1]
-						{
-						}, -- [2]
-						{
-						}, -- [3]
-						{
-						}, -- [4]
-						{
-						}, -- [5]
-						{
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						{
-						}, -- [9]
-						{
-						}, -- [10]
-						{
-						}, -- [11]
-						{
-						}, -- [12]
-						{
-						}, -- [13]
-						{
-						}, -- [14]
-						{
-						}, -- [15]
-						{
-						}, -- [16]
-						["n"] = 2,
-					},
-				},
-				["frags_need_refresh"] = true,
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Druidann"] = 326904.006152,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Druidann"] = 11867733.006792,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 116561.329,
-				["combat_id"] = 4,
-				["instance_type"] = "none",
-				["resincked"] = true,
-				["frags"] = {
-					["Black Rook Spectral Officer"] = 2,
-					["Lieutenant Desdel Stareye"] = 1,
-					["Sirius Ebonwing"] = 1,
-				},
-				["data_fim"] = "22:13:15",
-				["data_inicio"] = "22:12:01",
-				["CombatSkillCache"] = {
-				},
-				["totals_grupo"] = {
-					9874477, -- [1]
-					326904, -- [2]
+					9216698.938898, -- [1]
+					439037.985332, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -916,62 +791,154 @@ _detalhes_database = {
 						["cooldowns_defensive"] = 0,
 						["interrupt"] = 0,
 						["dispell"] = 0,
-						["cc_break"] = 1,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Druidann"] = 439038.002434,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Druidann"] = 9216699.003722,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 215203.407,
+				["combat_id"] = 25,
+				["instance_type"] = "none",
+				["frags"] = {
+					["Astrix"] = 1,
+					["Nightborne Trapper"] = 1,
+					["Trapper Rodoon"] = 1,
+					["Cadraeus"] = 1,
+					["Arcane Resonance"] = 12,
+				},
+				["data_fim"] = "01:37:15",
+				["data_inicio"] = "01:36:28",
+				["CombatSkillCache"] = {
+				},
+				["totals_grupo"] = {
+					8884777, -- [1]
+					439038, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["start_time"] = 116487.158,
-				["contra"] = "Black Rook Spectral Officer",
+				["start_time"] = 215155.833,
+				["contra"] = "Cadraeus",
 				["TimeData"] = {
 				},
 			}, -- [1]
 			{
 				{
-					["combatId"] = 3,
+					["combatId"] = 24,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1047,
+							["flag_original"] = 1297,
 							["damage_from"] = {
+								["Nightborne Trapper"] = true,
 							},
 							["targets"] = {
-								["Black Rook Spectral Officer"] = 715909,
+								["Nightborne Trapper"] = 1051988,
 							},
 							["pets"] = {
 								"Broll Bearmantle <Druidann>", -- [1]
 							},
+							["total"] = 1051988.001199,
 							["on_hold"] = false,
 							["classe"] = "DRUID",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 632318.007407,
+							["total_without_pet"] = 1015401.001199,
 							["colocacao"] = 1,
 							["friendlyfire"] = {
 							},
 							["dps_started"] = false,
-							["end_time"] = 1480043514,
+							["end_time"] = 1480142156,
 							["friendlyfire_total"] = 0,
 							["spec"] = 102,
 							["nome"] = "Druidann",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
-									[164812] = {
+									[190984] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 39585,
+										["n_max"] = 105923,
 										["targets"] = {
-											["Black Rook Spectral Officer"] = 78596,
+											["Nightborne Trapper"] = 105923,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 78596,
-										["n_min"] = 9897,
+										["n_dmg"] = 105923,
+										["n_min"] = 105923,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 105923,
+										["c_max"] = 0,
+										["id"] = 190984,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[164812] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 43505,
+										["g_amt"] = 0,
+										["n_max"] = 43504,
+										["targets"] = {
+											["Nightborne Trapper"] = 131167,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 87662,
+										["n_min"] = 21753,
 										["g_dmg"] = 0,
 										["counter"] = 4,
-										["total"] = 78596,
-										["c_max"] = 0,
+										["total"] = 131167,
+										["c_max"] = 43505,
 										["id"] = 164812,
 										["r_dmg"] = 0,
 										["spellschool"] = 64,
@@ -981,27 +948,85 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 4,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 43505,
+									},
+									[78674] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 203767,
+										["targets"] = {
+											["Nightborne Trapper"] = 203767,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 203767,
+										["n_min"] = 203767,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 203767,
+										["c_max"] = 0,
+										["id"] = 78674,
+										["r_dmg"] = 0,
+										["spellschool"] = 72,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
 										["r_amt"] = 0,
 										["c_min"] = 0,
 									},
-									[202767] = {
-										["c_amt"] = 1,
+									[164815] = {
+										["c_amt"] = 2,
 										["b_amt"] = 0,
-										["c_dmg"] = 133830,
+										["c_dmg"] = 67978,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["n_max"] = 33987,
 										["targets"] = {
-											["Black Rook Spectral Officer"] = 133830,
+											["Nightborne Trapper"] = 136463,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
+										["n_dmg"] = 68485,
+										["n_min"] = 16994,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 133830,
-										["c_max"] = 133830,
-										["id"] = 202767,
+										["counter"] = 5,
+										["total"] = 136463,
+										["c_max"] = 33989,
+										["id"] = 164815,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 33989,
+									},
+									[194153] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 292054,
+										["g_amt"] = 0,
+										["n_max"] = 146027,
+										["targets"] = {
+											["Nightborne Trapper"] = 438081,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 146027,
+										["n_min"] = 146027,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 438081,
+										["c_max"] = 292054,
+										["id"] = 194153,
 										["r_dmg"] = 0,
 										["spellschool"] = 64,
 										["a_dmg"] = 0,
@@ -1010,29 +1035,551 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 0,
+										["n_amt"] = 1,
 										["r_amt"] = 0,
-										["c_min"] = 133830,
+										["c_min"] = 292054,
 									},
-									[202768] = {
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-60-0AAE98B4",
+							["last_dps"] = 105198.8001199,
+							["custom"] = 0,
+							["last_event"] = 1480142155,
+							["damage_taken"] = 102922.001199,
+							["start_time"] = 1480142148,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["serial"] = "Creature-0-3782-1220-20798-109839-0000392C27",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Nightborne Trapper"] = 36587,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 36587.001803,
+							["dps_started"] = false,
+							["total"] = 36587.001803,
+							["classe"] = "PET",
+							["ownerName"] = "Druidann",
+							["nome"] = "Broll Bearmantle <Druidann>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 259863,
+										["n_max"] = 8815,
 										["targets"] = {
-											["Black Rook Spectral Officer"] = 259863,
+											["Nightborne Trapper"] = 21780,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 259863,
-										["n_min"] = 259863,
+										["n_dmg"] = 21780,
+										["n_min"] = 4407,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 21780,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									}, -- [1]
+									[218803] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 12837,
+										["targets"] = {
+											["Nightborne Trapper"] = 12837,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 12837,
+										["n_min"] = 12837,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 259863,
+										["total"] = 12837,
 										["c_max"] = 0,
-										["id"] = 202768,
+										["id"] = 218803,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[218797] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 1970,
+										["targets"] = {
+											["Nightborne Trapper"] = 1970,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1970,
+										["n_min"] = 1970,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 1970,
+										["c_max"] = 0,
+										["id"] = 218797,
 										["r_dmg"] = 0,
 										["spellschool"] = 64,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1480142156,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.001803,
+							["start_time"] = 1480142153,
+							["delay"] = 0,
+							["last_event"] = 1480142155,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 24,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorb"] = 0.006873,
+							["last_hps"] = 0,
+							["healing_from"] = {
+								["Druidann"] = true,
+							},
+							["targets"] = {
+								["Druidann"] = 48782,
+							},
+							["last_event"] = 1480142152,
+							["pets"] = {
+							},
+							["totalover_without_pet"] = 0.006873,
+							["targets_overheal"] = {
+								["Druidann"] = 16539,
+							},
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 16539.006873,
+							["total_without_pet"] = 32243.006873,
+							["iniciar_hps"] = false,
+							["classe"] = "DRUID",
+							["fight_component"] = true,
+							["total"] = 32243.006873,
+							["serial"] = "Player-60-0AAE98B4",
+							["healing_taken"] = 32243.006873,
+							["nome"] = "Druidann",
+							["spec"] = 102,
+							["grupo"] = true,
+							["end_time"] = 1480142156,
+							["heal_enemy"] = {
+							},
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[145109] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Druidann"] = 16539,
+										},
+										["n_max"] = 32243,
+										["targets"] = {
+											["Druidann"] = 32243,
+										},
+										["n_min"] = 32243,
+										["counter"] = 1,
+										["overheal"] = 16539,
+										["total"] = 32243,
+										["c_max"] = 0,
+										["id"] = 145109,
+										["targets_absorbs"] = {
+										},
+										["m_crit"] = 0,
+										["c_curado"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 32243,
+										["m_healed"] = 0,
+										["n_amt"] = 1,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["start_time"] = 1480142152,
+							["delay"] = 0,
+							["targets_absorbs"] = {
+							},
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 24,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 24,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["fight_component"] = true,
+							["flag_original"] = 1047,
+							["nome"] = "Druidann",
+							["spec"] = 102,
+							["grupo"] = true,
+							["buff_uptime_targets"] = {
+							},
+							["buff_uptime"] = 48,
+							["pets"] = {
+								"Broll Bearmantle <Druidann>", -- [1]
+							},
+							["spell_cast"] = {
+								[190984] = 1,
+								[8921] = 1,
+								[194153] = 2,
+								[78674] = 1,
+							},
+							["classe"] = "DRUID",
+							["tipo"] = 4,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[224772] = {
+										["uptime"] = 8,
+										["activedamt"] = 1,
+										["id"] = 224772,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[225788] = {
+										["uptime"] = 8,
+										["activedamt"] = 1,
+										["id"] = 225788,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[164547] = {
+										["uptime"] = 8,
+										["activedamt"] = 1,
+										["id"] = 164547,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[227723] = {
+										["uptime"] = 8,
+										["activedamt"] = 1,
+										["id"] = 227723,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[191610] = {
+										["actived_at"] = 1480142148,
+										["uptime"] = 0,
+										["activedamt"] = 1,
+										["id"] = 191610,
+										["actived"] = true,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[164545] = {
+										["uptime"] = 8,
+										["activedamt"] = 1,
+										["id"] = 164545,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[24858] = {
+										["uptime"] = 8,
+										["activedamt"] = 1,
+										["id"] = 24858,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-60-0AAE98B4",
+							["last_event"] = 1480142156,
+						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["ownerName"] = "Druidann",
+							["nome"] = "Broll Bearmantle <Druidann>",
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["spell_cast"] = {
+								[218605] = 1,
+								[218796] = 1,
+								[218803] = 1,
+							},
+							["serial"] = "Creature-0-3782-1220-20798-109839-0000392C27",
+							["last_event"] = 0,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 24,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Druidann"] = true,
+				},
+				["last_events_tables"] = {
+				},
+				["enemy"] = "Nightborne Trapper",
+				["combat_counter"] = 1781,
+				["playing_solo"] = true,
+				["totals"] = {
+					1051987.953559, -- [1]
+					32242.990591, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Druidann"] = 32243.006873,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Druidann"] = 1051988.001199,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 215124.859,
+				["combat_id"] = 24,
+				["instance_type"] = "none",
+				["frags"] = {
+					["Nightborne Trapper"] = 1,
+					["Leystone Basilisk"] = 1,
+				},
+				["data_fim"] = "01:35:57",
+				["data_inicio"] = "01:35:48",
+				["CombatSkillCache"] = {
+				},
+				["totals_grupo"] = {
+					1015401, -- [1]
+					32243, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["start_time"] = 215116.568,
+				["contra"] = "Nightborne Trapper",
+				["TimeData"] = {
+				},
+			}, -- [2]
+			{
+				{
+					["combatId"] = 23,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["damage_from"] = {
+								["Nightborne Trapper"] = true,
+							},
+							["targets"] = {
+								["Nightborne Trapper"] = 1084973,
+							},
+							["pets"] = {
+								"Broll Bearmantle <Druidann>", -- [1]
+							},
+							["on_hold"] = false,
+							["classe"] = "DRUID",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1028525.007094,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1480142141,
+							["friendlyfire_total"] = 0,
+							["spec"] = 102,
+							["nome"] = "Druidann",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[190984] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 205676,
+										["g_amt"] = 0,
+										["n_max"] = 105923,
+										["targets"] = {
+											["Nightborne Trapper"] = 311599,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 105923,
+										["n_min"] = 105923,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 311599,
+										["c_max"] = 205676,
+										["id"] = 190984,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 205676,
+									},
+									[164812] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 44811,
+										["g_amt"] = 0,
+										["n_max"] = 43504,
+										["targets"] = {
+											["Nightborne Trapper"] = 132473,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 87662,
+										["n_min"] = 21753,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 132473,
+										["c_max"] = 44811,
+										["id"] = 164812,
+										["r_dmg"] = 0,
+										["spellschool"] = 64,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 44811,
+									},
+									[78674] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 203767,
+										["targets"] = {
+											["Nightborne Trapper"] = 203767,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 203767,
+										["n_min"] = 203767,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 203767,
+										["c_max"] = 0,
+										["id"] = 78674,
+										["r_dmg"] = 0,
+										["spellschool"] = 72,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
@@ -1048,16 +1595,16 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 31762,
+										["n_max"] = 33987,
 										["targets"] = {
-											["Black Rook Spectral Officer"] = 80360,
+											["Nightborne Trapper"] = 102985,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 80360,
-										["n_min"] = 8179,
+										["n_dmg"] = 102985,
+										["n_min"] = 16995,
 										["g_dmg"] = 0,
 										["counter"] = 5,
-										["total"] = 80360,
+										["total"] = 102985,
 										["c_max"] = 0,
 										["id"] = 164815,
 										["r_dmg"] = 0,
@@ -1072,25 +1619,54 @@ _detalhes_database = {
 										["r_amt"] = 0,
 										["c_min"] = 0,
 									},
-									[191259] = {
+									[194153] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 79669,
+										["n_max"] = 150407,
 										["targets"] = {
-											["Black Rook Spectral Officer"] = 79669,
+											["Nightborne Trapper"] = 150407,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 79669,
-										["n_min"] = 79669,
+										["n_dmg"] = 150407,
+										["n_min"] = 150407,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 79669,
+										["total"] = 150407,
 										["c_max"] = 0,
-										["id"] = 191259,
+										["id"] = 194153,
 										["r_dmg"] = 0,
-										["spellschool"] = 4,
+										["spellschool"] = 64,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[203001] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 127294,
+										["targets"] = {
+											["Nightborne Trapper"] = 127294,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 127294,
+										["n_min"] = 127294,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 127294,
+										["c_max"] = 0,
+										["id"] = 203001,
+										["r_dmg"] = 0,
+										["spellschool"] = 64,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
@@ -1104,23 +1680,23 @@ _detalhes_database = {
 								},
 							},
 							["grupo"] = true,
-							["total"] = 715909.007407,
+							["total"] = 1084973.007094,
 							["serial"] = "Player-60-0AAE98B4",
-							["last_dps"] = 71590.9007407,
+							["last_dps"] = 108497.3007094,
 							["custom"] = 0,
-							["last_event"] = 1480043513,
-							["damage_taken"] = 0.007407,
-							["start_time"] = 1480043506,
+							["last_event"] = 1480142141,
+							["damage_taken"] = 76565.007094,
+							["start_time"] = 1480142134,
 							["delay"] = 0,
 							["tipo"] = 1,
 						}, -- [1]
 						{
 							["flag_original"] = 8465,
-							["serial"] = "Creature-0-3883-1220-2139-109839-000037A58C",
+							["serial"] = "Creature-0-3782-1220-20798-109839-0000392C27",
 							["damage_from"] = {
 							},
 							["targets"] = {
-								["Black Rook Spectral Officer"] = 83591,
+								["Nightborne Trapper"] = 56448,
 							},
 							["pets"] = {
 							},
@@ -1128,9 +1704,9 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 83591.001633,
+							["total_without_pet"] = 56448.002492,
 							["dps_started"] = false,
-							["total"] = 83591.001633,
+							["total"] = 56448.002492,
 							["classe"] = "PET",
 							["ownerName"] = "Druidann",
 							["nome"] = "Broll Bearmantle <Druidann>",
@@ -1138,51 +1714,22 @@ _detalhes_database = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
-										["c_amt"] = 1,
+										["c_amt"] = 2,
 										["b_amt"] = 0,
-										["c_dmg"] = 19598,
+										["c_dmg"] = 26447,
 										["g_amt"] = 0,
-										["n_max"] = 8341,
+										["n_max"] = 8815,
 										["targets"] = {
-											["Black Rook Spectral Officer"] = 53016,
+											["Nightborne Trapper"] = 39670,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 33418,
-										["n_min"] = 2086,
+										["n_dmg"] = 13223,
+										["n_min"] = 4408,
 										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 53016,
-										["c_max"] = 19598,
+										["counter"] = 4,
+										["total"] = 39670,
+										["c_max"] = 17631,
 										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 6,
-										["r_amt"] = 0,
-										["c_min"] = 19598,
-									}, -- [1]
-									[218803] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 14699,
-										["targets"] = {
-											["Black Rook Spectral Officer"] = 26846,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 26846,
-										["n_min"] = 12147,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 26846,
-										["c_max"] = 0,
-										["id"] = 218803,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
@@ -1193,23 +1740,23 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
 										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
+										["c_min"] = 8816,
+									}, -- [1]
 									[218797] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 1864,
+										["n_max"] = 1970,
 										["targets"] = {
-											["Black Rook Spectral Officer"] = 3729,
+											["Nightborne Trapper"] = 3940,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 3729,
-										["n_min"] = 932,
+										["n_dmg"] = 3940,
+										["n_min"] = 1970,
 										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 3729,
+										["counter"] = 2,
+										["total"] = 3940,
 										["c_max"] = 0,
 										["id"] = 218797,
 										["r_dmg"] = 0,
@@ -1220,7 +1767,36 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 3,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[218803] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 12838,
+										["targets"] = {
+											["Nightborne Trapper"] = 12838,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 12838,
+										["n_min"] = 12838,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 12838,
+										["c_max"] = 0,
+										["id"] = 218803,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
 										["r_amt"] = 0,
 										["c_min"] = 0,
 									},
@@ -1228,31 +1804,31 @@ _detalhes_database = {
 							},
 							["friendlyfire"] = {
 							},
-							["end_time"] = 1480043514,
+							["end_time"] = 1480142141,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 0.001633,
-							["start_time"] = 1480043506,
+							["damage_taken"] = 0.002492,
+							["start_time"] = 1480142138,
 							["delay"] = 0,
-							["last_event"] = 1480043513,
+							["last_event"] = 1480142141,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 3,
+					["combatId"] = 23,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 3,
+					["combatId"] = 23,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 3,
+					["combatId"] = 23,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
@@ -1262,23 +1838,32 @@ _detalhes_database = {
 							["spec"] = 102,
 							["grupo"] = true,
 							["spell_cast"] = {
-								[78675] = 1,
+								[190984] = 2,
 								[8921] = 1,
-								[202768] = 1,
-								[202767] = 1,
+								[194153] = 1,
+								[78674] = 1,
 							},
-							["buff_uptime"] = 32,
+							["buff_uptime"] = 42,
 							["nome"] = "Druidann",
 							["pets"] = {
 								"Broll Bearmantle <Druidann>", -- [1]
 							},
-							["last_event"] = 1480043514,
+							["last_event"] = 1480142141,
 							["classe"] = "DRUID",
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
+									[224772] = {
+										["uptime"] = 7,
+										["activedamt"] = 1,
+										["id"] = 224772,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
 									[225788] = {
-										["uptime"] = 8,
+										["uptime"] = 7,
 										["activedamt"] = 1,
 										["id"] = 225788,
 										["actived"] = false,
@@ -1286,8 +1871,17 @@ _detalhes_database = {
 										},
 										["counter"] = 0,
 									},
+									[164547] = {
+										["uptime"] = 7,
+										["activedamt"] = 1,
+										["id"] = 164547,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
 									[227723] = {
-										["uptime"] = 8,
+										["uptime"] = 7,
 										["activedamt"] = 1,
 										["id"] = 227723,
 										["actived"] = false,
@@ -1295,29 +1889,29 @@ _detalhes_database = {
 										},
 										["counter"] = 0,
 									},
-									[191604] = {
-										["actived_at"] = 1480043506,
+									[191610] = {
+										["actived_at"] = 1480142134,
 										["uptime"] = 0,
 										["activedamt"] = 1,
-										["id"] = 191604,
+										["id"] = 191610,
 										["actived"] = true,
 										["targets"] = {
 										},
 										["counter"] = 0,
 									},
-									[24858] = {
-										["uptime"] = 8,
+									[164545] = {
+										["uptime"] = 7,
 										["activedamt"] = 1,
-										["id"] = 24858,
+										["id"] = 164545,
 										["actived"] = false,
 										["targets"] = {
 										},
 										["counter"] = 0,
 									},
-									[219159] = {
-										["uptime"] = 8,
+									[24858] = {
+										["uptime"] = 7,
 										["activedamt"] = 1,
-										["id"] = 219159,
+										["id"] = 24858,
 										["actived"] = false,
 										["targets"] = {
 										},
@@ -1339,15 +1933,15 @@ _detalhes_database = {
 							["spell_cast"] = {
 								[218605] = 1,
 								[218796] = 1,
-								[218803] = 2,
+								[218803] = 1,
 							},
-							["serial"] = "Creature-0-3883-1220-2139-109839-000037A58C",
+							["serial"] = "Creature-0-3782-1220-20798-109839-0000392C27",
 							["last_event"] = 0,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 3,
+					["combatId"] = 23,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -1357,12 +1951,12 @@ _detalhes_database = {
 				},
 				["last_events_tables"] = {
 				},
-				["enemy"] = "Black Rook Spectral Officer",
-				["combat_counter"] = 1753,
+				["enemy"] = "Nightborne Trapper",
+				["combat_counter"] = 1780,
 				["playing_solo"] = true,
 				["totals"] = {
-					715908.98949, -- [1]
-					-0.0083429999940563, -- [2]
+					1084972.961388, -- [1]
+					-0.00260700000217184, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -1402,22 +1996,23 @@ _detalhes_database = {
 					},
 					["damage"] = {
 						{
-							["Druidann"] = 715909.007407,
+							["Druidann"] = 1084973.007094,
 						}, -- [1]
 					},
 				},
-				["end_time"] = 116480.359,
-				["combat_id"] = 3,
+				["end_time"] = 215110.186,
+				["combat_id"] = 23,
 				["instance_type"] = "none",
 				["frags"] = {
-					["Black Rook Spectral Officer"] = 1,
+					["Nightborne Trapper"] = 1,
+					["Thicket Hunter"] = 1,
 				},
-				["data_fim"] = "22:11:54",
-				["data_inicio"] = "22:11:46",
+				["data_fim"] = "01:35:42",
+				["data_inicio"] = "01:35:35",
 				["CombatSkillCache"] = {
 				},
 				["totals_grupo"] = {
-					632318, -- [1]
+					1028525, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -1436,262 +2031,58 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["start_time"] = 116472.323,
-				["contra"] = "Black Rook Spectral Officer",
+				["start_time"] = 215102.946,
+				["contra"] = "Nightborne Trapper",
 				["TimeData"] = {
 				},
-			}, -- [2]
+			}, -- [3]
 			{
 				{
-					["combatId"] = 2,
+					["combatId"] = 22,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["damage_from"] = {
-								["Sirius Ebonwing"] = true,
 							},
 							["targets"] = {
-								["Sirius Ebonwing"] = 2081875,
+								["Trapped Thicket Hunter"] = 67976,
+								["Nightborne Trapper"] = 1175528,
 							},
 							["pets"] = {
 								"Broll Bearmantle <Druidann>", -- [1]
 							},
-							["total"] = 2081875.008502,
 							["on_hold"] = false,
 							["classe"] = "DRUID",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 1984524.008502,
+							["total_without_pet"] = 1196047.002369,
 							["colocacao"] = 1,
 							["friendlyfire"] = {
 							},
 							["dps_started"] = false,
-							["end_time"] = 1480043360,
+							["end_time"] = 1480142130,
 							["friendlyfire_total"] = 0,
 							["spec"] = 102,
 							["nome"] = "Druidann",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
-									[164812] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 39586,
-										["g_amt"] = 0,
-										["n_max"] = 38432,
-										["targets"] = {
-											["Sirius Ebonwing"] = 196201,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 156615,
-										["n_min"] = 19217,
-										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 196201,
-										["c_max"] = 39586,
-										["id"] = 164812,
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 7,
-										["r_amt"] = 0,
-										["c_min"] = 39586,
-									},
-									[191259] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 78236,
-										["targets"] = {
-											["Sirius Ebonwing"] = 78236,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 78236,
-										["n_min"] = 78236,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 78236,
-										["c_max"] = 0,
-										["id"] = 191259,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[78674] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 190425,
-										["targets"] = {
-											["Sirius Ebonwing"] = 375304,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 375304,
-										["n_min"] = 184879,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 375304,
-										["c_max"] = 0,
-										["id"] = 78674,
-										["r_dmg"] = 0,
-										["spellschool"] = 72,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[202768] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 267659,
-										["targets"] = {
-											["Sirius Ebonwing"] = 267659,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 267659,
-										["n_min"] = 267659,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 267659,
-										["c_max"] = 0,
-										["id"] = 202768,
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[203001] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 118959,
-										["targets"] = {
-											["Sirius Ebonwing"] = 237918,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 237918,
-										["n_min"] = 118959,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 237918,
-										["c_max"] = 0,
-										["id"] = 203001,
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[164815] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 32716,
-										["g_amt"] = 0,
-										["n_max"] = 31762,
-										["targets"] = {
-											["Sirius Ebonwing"] = 162626,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 129910,
-										["n_min"] = 16358,
-										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 162626,
-										["c_max"] = 32716,
-										["id"] = 164815,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 7,
-										["r_amt"] = 0,
-										["c_min"] = 32716,
-									},
-									[202497] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 13026,
-										["targets"] = {
-											["Sirius Ebonwing"] = 13026,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 13026,
-										["n_min"] = 13026,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 13026,
-										["c_max"] = 0,
-										["id"] = 202497,
-										["r_dmg"] = 0,
-										["spellschool"] = 72,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
 									[202771] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 519724,
+										["n_max"] = 572823,
 										["targets"] = {
-											["Sirius Ebonwing"] = 519724,
+											["Nightborne Trapper"] = 572823,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 519724,
-										["n_min"] = 519724,
+										["n_dmg"] = 572823,
+										["n_min"] = 572823,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 519724,
+										["total"] = 572823,
 										["c_max"] = 0,
 										["id"] = 202771,
 										["r_dmg"] = 0,
@@ -1706,25 +2097,54 @@ _detalhes_database = {
 										["r_amt"] = 0,
 										["c_min"] = 0,
 									},
-									[202767] = {
+									[164812] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 44810,
+										["g_amt"] = 0,
+										["n_max"] = 43504,
+										["targets"] = {
+											["Nightborne Trapper"] = 110719,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 65909,
+										["n_min"] = 22405,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 110719,
+										["c_max"] = 44810,
+										["id"] = 164812,
+										["r_dmg"] = 0,
+										["spellschool"] = 64,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 44810,
+									},
+									[78674] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 133830,
+										["n_max"] = 203767,
 										["targets"] = {
-											["Sirius Ebonwing"] = 133830,
+											["Nightborne Trapper"] = 203767,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 133830,
-										["n_min"] = 133830,
+										["n_dmg"] = 203767,
+										["n_min"] = 203767,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 133830,
+										["total"] = 203767,
 										["c_max"] = 0,
-										["id"] = 202767,
+										["id"] = 78674,
 										["r_dmg"] = 0,
-										["spellschool"] = 64,
+										["spellschool"] = 72,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
@@ -1735,26 +2155,86 @@ _detalhes_database = {
 										["r_amt"] = 0,
 										["c_min"] = 0,
 									},
+									[164815] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 33988,
+										["g_amt"] = 0,
+										["n_max"] = 33987,
+										["targets"] = {
+											["Trapped Thicket Hunter"] = 67976,
+											["Nightborne Trapper"] = 85989,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 119977,
+										["n_min"] = 16994,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 153965,
+										["c_max"] = 33988,
+										["id"] = 164815,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 6,
+										["r_amt"] = 0,
+										["c_min"] = 33988,
+									},
+									[191259] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 154773,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Nightborne Trapper"] = 154773,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 154773,
+										["c_max"] = 154773,
+										["id"] = 191259,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 154773,
+									},
 								},
 							},
 							["grupo"] = true,
+							["total"] = 1243504.002369,
 							["serial"] = "Player-60-0AAE98B4",
-							["last_dps"] = 160144.231423231,
+							["last_dps"] = 124350.4002369,
 							["custom"] = 0,
-							["last_event"] = 1480043359,
-							["damage_taken"] = 177716.008502,
-							["start_time"] = 1480043347,
+							["last_event"] = 1480142130,
+							["damage_taken"] = 0.002369,
+							["start_time"] = 1480142123,
 							["delay"] = 0,
 							["tipo"] = 1,
 						}, -- [1]
 						{
 							["flag_original"] = 8465,
-							["serial"] = "Creature-0-3883-1220-2139-109839-000037A58C",
+							["serial"] = "Creature-0-3782-1220-20798-109839-0000392C27",
 							["damage_from"] = {
-								["Sirius Ebonwing"] = true,
+								["Nightborne Trapper"] = true,
 							},
 							["targets"] = {
-								["Sirius Ebonwing"] = 97351,
+								["Nightborne Trapper"] = 47457,
 							},
 							["pets"] = {
 							},
@@ -1762,9 +2242,9 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 97351.005936,
+							["total_without_pet"] = 47457.00794,
 							["dps_started"] = false,
-							["total"] = 97351.005936,
+							["total"] = 47457.00794,
 							["classe"] = "PET",
 							["ownerName"] = "Druidann",
 							["nome"] = "Broll Bearmantle <Druidann>",
@@ -1772,22 +2252,22 @@ _detalhes_database = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
-										["c_amt"] = 1,
+										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["c_dmg"] = 16682,
+										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 8341,
+										["n_max"] = 8815,
 										["targets"] = {
-											["Sirius Ebonwing"] = 58142,
+											["Nightborne Trapper"] = 21782,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 41460,
-										["n_min"] = 4170,
+										["n_dmg"] = 21782,
+										["n_min"] = 4408,
 										["g_dmg"] = 0,
-										["counter"] = 12,
-										["total"] = 58142,
-										["c_max"] = 16682,
-										["MISS"] = 4,
+										["counter"] = 4,
+										["total"] = 21782,
+										["c_max"] = 0,
+										["MISS"] = 1,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -1797,26 +2277,26 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 7,
+										["n_amt"] = 3,
 										["r_amt"] = 0,
-										["c_min"] = 16682,
+										["c_min"] = 0,
 									}, -- [1]
 									[218803] = {
-										["c_amt"] = 0,
+										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 0,
+										["c_dmg"] = 25675,
 										["g_amt"] = 0,
-										["n_max"] = 12147,
+										["n_max"] = 0,
 										["targets"] = {
-											["Sirius Ebonwing"] = 24294,
+											["Nightborne Trapper"] = 25675,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 24294,
-										["n_min"] = 12147,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 24294,
-										["c_max"] = 0,
+										["counter"] = 1,
+										["total"] = 25675,
+										["c_max"] = 25675,
 										["id"] = 218803,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -1826,166 +2306,73 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 2,
+										["n_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[218797] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 7458,
-										["g_amt"] = 0,
-										["n_max"] = 1865,
-										["targets"] = {
-											["Sirius Ebonwing"] = 14915,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 7457,
-										["n_min"] = 1864,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 14915,
-										["c_max"] = 3729,
-										["id"] = 218797,
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 4,
-										["r_amt"] = 0,
-										["c_min"] = 3729,
+										["c_min"] = 25675,
 									},
 								},
 							},
 							["friendlyfire"] = {
 							},
-							["end_time"] = 1480043360,
+							["end_time"] = 1480142130,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 71563.005936,
-							["start_time"] = 1480043347,
+							["damage_taken"] = 173379.00794,
+							["start_time"] = 1480142126,
 							["delay"] = 0,
-							["last_event"] = 1480043359,
+							["last_event"] = 1480142129,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 2,
+					["combatId"] = 22,
 					["tipo"] = 3,
 					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorb"] = 0.007495,
-							["last_hps"] = 0,
-							["healing_from"] = {
-								["Druidann"] = true,
-							},
-							["targets"] = {
-								["Druidann"] = 48467,
-							},
-							["last_event"] = 1480043356,
-							["pets"] = {
-							},
-							["totalover_without_pet"] = 0.007495,
-							["targets_overheal"] = {
-							},
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 0.007495,
-							["total_without_pet"] = 48467.007495,
-							["iniciar_hps"] = false,
-							["classe"] = "DRUID",
-							["fight_component"] = true,
-							["total"] = 48467.007495,
-							["serial"] = "Player-60-0AAE98B4",
-							["healing_taken"] = 48467.007495,
-							["nome"] = "Druidann",
-							["spec"] = 102,
-							["grupo"] = true,
-							["end_time"] = 1480043360,
-							["heal_enemy"] = {
-							},
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[145109] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 48467,
-										["targets"] = {
-											["Druidann"] = 48467,
-										},
-										["n_min"] = 48467,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 48467,
-										["c_max"] = 0,
-										["id"] = 145109,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 48467,
-										["m_healed"] = 0,
-										["n_amt"] = 1,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["custom"] = 0,
-							["tipo"] = 2,
-							["on_hold"] = false,
-							["start_time"] = 1480043356,
-							["delay"] = 0,
-							["targets_absorbs"] = {
-							},
-						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 2,
+					["combatId"] = 22,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 2,
+					["combatId"] = 22,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
-							["fight_component"] = true,
 							["flag_original"] = 1047,
-							["nome"] = "Druidann",
-							["spec"] = 102,
-							["grupo"] = true,
 							["buff_uptime_targets"] = {
 							},
-							["buff_uptime"] = 78,
-							["pets"] = {
-								"Broll Bearmantle <Druidann>", -- [1]
-							},
+							["spec"] = 102,
+							["grupo"] = true,
 							["spell_cast"] = {
 								[202771] = 1,
 								[8921] = 1,
-								[202767] = 1,
-								[202768] = 1,
-								[78674] = 2,
+								[78674] = 1,
 							},
+							["buff_uptime"] = 42,
+							["nome"] = "Druidann",
+							["pets"] = {
+								"Broll Bearmantle <Druidann>", -- [1]
+							},
+							["last_event"] = 1480142130,
 							["classe"] = "DRUID",
-							["tipo"] = 4,
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
+									[224772] = {
+										["uptime"] = 7,
+										["activedamt"] = 1,
+										["id"] = 224772,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
 									[225788] = {
-										["uptime"] = 13,
+										["uptime"] = 7,
 										["activedamt"] = 1,
 										["id"] = 225788,
 										["actived"] = false,
@@ -1993,18 +2380,8 @@ _detalhes_database = {
 										},
 										["counter"] = 0,
 									},
-									[191608] = {
-										["actived_at"] = 1480043347,
-										["uptime"] = 0,
-										["activedamt"] = 1,
-										["id"] = 191608,
-										["actived"] = true,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
 									[164547] = {
-										["uptime"] = 13,
+										["uptime"] = 7,
 										["activedamt"] = 1,
 										["id"] = 164547,
 										["actived"] = false,
@@ -2013,7 +2390,7 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 									[227723] = {
-										["uptime"] = 13,
+										["uptime"] = 7,
 										["activedamt"] = 1,
 										["id"] = 227723,
 										["actived"] = false,
@@ -2021,8 +2398,18 @@ _detalhes_database = {
 										},
 										["counter"] = 0,
 									},
+									[191610] = {
+										["actived_at"] = 1480142123,
+										["uptime"] = 0,
+										["activedamt"] = 1,
+										["id"] = 191610,
+										["actived"] = true,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
 									[164545] = {
-										["uptime"] = 13,
+										["uptime"] = 7,
 										["activedamt"] = 1,
 										["id"] = 164545,
 										["actived"] = false,
@@ -2031,18 +2418,9 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 									[24858] = {
-										["uptime"] = 13,
+										["uptime"] = 7,
 										["activedamt"] = 1,
 										["id"] = 24858,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[219159] = {
-										["uptime"] = 13,
-										["activedamt"] = 1,
-										["id"] = 219159,
 										["actived"] = false,
 										["targets"] = {
 										},
@@ -2051,7 +2429,7 @@ _detalhes_database = {
 								},
 							},
 							["serial"] = "Player-60-0AAE98B4",
-							["last_event"] = 1480043360,
+							["tipo"] = 4,
 						}, -- [1]
 						{
 							["flag_original"] = 8465,
@@ -2062,17 +2440,16 @@ _detalhes_database = {
 							["classe"] = "PET",
 							["tipo"] = 4,
 							["spell_cast"] = {
-								[218803] = 2,
-								[218796] = 1,
 								[218605] = 1,
+								[218803] = 1,
 							},
-							["serial"] = "Creature-0-3883-1220-2139-109839-000037A58C",
+							["serial"] = "Creature-0-3782-1220-20798-109839-0000392C27",
 							["last_event"] = 0,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 2,
+					["combatId"] = 22,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -2082,12 +2459,12 @@ _detalhes_database = {
 				},
 				["last_events_tables"] = {
 				},
-				["enemy"] = "Sirius Ebonwing",
-				["combat_counter"] = 1752,
+				["enemy"] = "Trapped Thicket Hunter",
+				["combat_counter"] = 1779,
 				["playing_solo"] = true,
 				["totals"] = {
-					2081874.988365, -- [1]
-					48467, -- [2]
+					1243503.96902, -- [1]
+					-0.00719499999831896, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -2121,30 +2498,31 @@ _detalhes_database = {
 					},
 					["heal"] = {
 						{
-							["Druidann"] = 48467.007495,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
 					["damage"] = {
 						{
-							["Druidann"] = 2081875.008502,
+							["Druidann"] = 1243504.002369,
 						}, -- [1]
 					},
 				},
-				["end_time"] = 116325.985,
-				["combat_id"] = 2,
+				["end_time"] = 215098.727,
+				["combat_id"] = 22,
 				["instance_type"] = "none",
 				["frags"] = {
-					["Sirius Ebonwing"] = 1,
+					["Nightborne Exile"] = 1,
+					["Trapped Thicket Hunter"] = 1,
+					["Nightborne Trapper"] = 1,
 				},
-				["data_fim"] = "22:09:20",
-				["data_inicio"] = "22:09:07",
+				["data_fim"] = "01:35:31",
+				["data_inicio"] = "01:35:24",
 				["CombatSkillCache"] = {
 				},
 				["totals_grupo"] = {
-					1984524, -- [1]
-					48467, -- [2]
+					1196047, -- [1]
+					0, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -2162,88 +2540,58 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["start_time"] = 116312.707,
-				["contra"] = "Sirius Ebonwing",
+				["start_time"] = 215092.342,
+				["contra"] = "Nightborne Trapper",
 				["TimeData"] = {
 				},
-			}, -- [3]
+			}, -- [4]
 			{
 				{
-					["combatId"] = 1,
+					["combatId"] = 21,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["damage_from"] = {
-								["Black Rook Spectral Officer"] = true,
+								["Nightborne Trapper"] = true,
 							},
 							["targets"] = {
-								["Black Rook Spectral Officer"] = 1587944,
+								["Nightborne Trapper"] = 1124571,
 							},
 							["pets"] = {
 								"Broll Bearmantle <Druidann>", -- [1]
 							},
-							["total"] = 1587944.006883,
 							["on_hold"] = false,
 							["classe"] = "DRUID",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 1501486.006883,
+							["total_without_pet"] = 1087725.004075,
 							["colocacao"] = 1,
 							["friendlyfire"] = {
 							},
 							["dps_started"] = false,
-							["end_time"] = 1480043331,
+							["end_time"] = 1480142120,
 							["friendlyfire_total"] = 0,
 							["spec"] = 102,
 							["nome"] = "Druidann",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
-									[202771] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 267659,
-										["targets"] = {
-											["Black Rook Spectral Officer"] = 267659,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 267659,
-										["n_min"] = 267659,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 267659,
-										["c_max"] = 0,
-										["id"] = 202771,
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
 									[190984] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 98988,
+										["n_max"] = 105923,
 										["targets"] = {
-											["Black Rook Spectral Officer"] = 195093,
+											["Nightborne Trapper"] = 105923,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 195093,
-										["n_min"] = 96105,
+										["n_dmg"] = 105923,
+										["n_min"] = 105923,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 195093,
+										["counter"] = 1,
+										["total"] = 105923,
 										["c_max"] = 0,
 										["id"] = 190984,
 										["r_dmg"] = 0,
@@ -2254,26 +2602,26 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 2,
+										["n_amt"] = 1,
 										["r_amt"] = 0,
 										["c_min"] = 0,
 									},
 									[164812] = {
-										["c_amt"] = 4,
+										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["c_dmg"] = 156037,
+										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 19794,
+										["n_max"] = 44809,
 										["targets"] = {
-											["Black Rook Spectral Officer"] = 195624,
+											["Nightborne Trapper"] = 112025,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 39587,
-										["n_min"] = 19793,
+										["n_dmg"] = 112025,
+										["n_min"] = 22405,
 										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 195624,
-										["c_max"] = 76864,
+										["counter"] = 4,
+										["total"] = 112025,
+										["c_max"] = 0,
 										["id"] = 164812,
 										["r_dmg"] = 0,
 										["spellschool"] = 64,
@@ -2283,25 +2631,25 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 2,
+										["n_amt"] = 4,
 										["r_amt"] = 0,
-										["c_min"] = 19793,
+										["c_min"] = 0,
 									},
 									[191259] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 75369,
+										["n_max"] = 79307,
 										["targets"] = {
-											["Black Rook Spectral Officer"] = 146127,
+											["Nightborne Trapper"] = 79307,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 146127,
-										["n_min"] = 70758,
+										["n_dmg"] = 79307,
+										["n_min"] = 79307,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 146127,
+										["counter"] = 1,
+										["total"] = 79307,
 										["c_max"] = 0,
 										["id"] = 191259,
 										["r_dmg"] = 0,
@@ -2312,54 +2660,25 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 2,
+										["n_amt"] = 1,
 										["r_amt"] = 0,
 										["c_min"] = 0,
-									},
-									[194153] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 272931,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Black Rook Spectral Officer"] = 272931,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 272931,
-										["c_max"] = 272931,
-										["id"] = 194153,
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 272931,
 									},
 									[164815] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 31762,
+										["n_max"] = 33987,
 										["targets"] = {
-											["Black Rook Spectral Officer"] = 113076,
+											["Nightborne Trapper"] = 86500,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 113076,
-										["n_min"] = 8179,
+										["n_dmg"] = 86500,
+										["n_min"] = 17504,
 										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 113076,
+										["counter"] = 4,
+										["total"] = 86500,
 										["c_max"] = 0,
 										["id"] = 164815,
 										["r_dmg"] = 0,
@@ -2370,29 +2689,29 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 7,
+										["n_amt"] = 4,
 										["r_amt"] = 0,
 										["c_min"] = 0,
 									},
-									[202497] = {
+									[194153] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 13244,
+										["n_max"] = 150408,
 										["targets"] = {
-											["Black Rook Spectral Officer"] = 25338,
+											["Nightborne Trapper"] = 296435,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 25338,
-										["n_min"] = 12094,
+										["n_dmg"] = 296435,
+										["n_min"] = 146027,
 										["g_dmg"] = 0,
 										["counter"] = 2,
-										["total"] = 25338,
+										["total"] = 296435,
 										["c_max"] = 0,
-										["id"] = 202497,
+										["id"] = 194153,
 										["r_dmg"] = 0,
-										["spellschool"] = 72,
+										["spellschool"] = 64,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
@@ -2404,21 +2723,21 @@ _detalhes_database = {
 										["c_min"] = 0,
 									},
 									[78674] = {
-										["c_amt"] = 0,
+										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 0,
+										["c_dmg"] = 407535,
 										["g_amt"] = 0,
-										["n_max"] = 190426,
+										["n_max"] = 0,
 										["targets"] = {
-											["Black Rook Spectral Officer"] = 285638,
+											["Nightborne Trapper"] = 407535,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 285638,
-										["n_min"] = 95212,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 285638,
-										["c_max"] = 0,
+										["counter"] = 1,
+										["total"] = 407535,
+										["c_max"] = 407535,
 										["id"] = 78674,
 										["r_dmg"] = 0,
 										["spellschool"] = 72,
@@ -2428,29 +2747,31 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 2,
+										["n_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
+										["c_min"] = 407535,
 									},
 								},
 							},
 							["grupo"] = true,
+							["total"] = 1124571.004075,
 							["serial"] = "Player-60-0AAE98B4",
-							["last_dps"] = 132328.66724025,
+							["last_dps"] = 112457.1004075,
 							["custom"] = 0,
-							["last_event"] = 1480043330,
-							["damage_taken"] = 185982.006883,
-							["start_time"] = 1480043319,
+							["last_event"] = 1480142119,
+							["damage_taken"] = 71070.004075,
+							["start_time"] = 1480142111,
 							["delay"] = 0,
 							["tipo"] = 1,
 						}, -- [1]
 						{
 							["flag_original"] = 8465,
-							["serial"] = "Creature-0-3883-1220-2139-109839-000037A58C",
+							["serial"] = "Creature-0-3782-1220-20798-109839-0000392C27",
 							["damage_from"] = {
+								["Nightborne Trapper"] = true,
 							},
 							["targets"] = {
-								["Black Rook Spectral Officer"] = 86458,
+								["Nightborne Trapper"] = 36846,
 							},
 							["pets"] = {
 							},
@@ -2458,9 +2779,9 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 86458.008567,
+							["total_without_pet"] = 36846.008679,
 							["dps_started"] = false,
-							["total"] = 86458.008567,
+							["total"] = 36846.008679,
 							["classe"] = "PET",
 							["ownerName"] = "Druidann",
 							["nome"] = "Broll Bearmantle <Druidann>",
@@ -2468,21 +2789,22 @@ _detalhes_database = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
-										["c_amt"] = 2,
+										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["c_dmg"] = 25023,
+										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 8341,
+										["n_max"] = 8816,
 										["targets"] = {
-											["Black Rook Spectral Officer"] = 50046,
+											["Nightborne Trapper"] = 22039,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 25023,
-										["n_min"] = 2085,
+										["n_dmg"] = 22039,
+										["n_min"] = 4408,
 										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 50046,
-										["c_max"] = 16682,
+										["counter"] = 4,
+										["total"] = 22039,
+										["c_max"] = 0,
+										["MISS"] = 1,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -2492,54 +2814,25 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 6,
-										["r_amt"] = 0,
-										["c_min"] = 8341,
-									}, -- [1]
-									[218797] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 7457,
-										["g_amt"] = 0,
-										["n_max"] = 1864,
-										["targets"] = {
-											["Black Rook Spectral Officer"] = 12118,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 4661,
-										["n_min"] = 933,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 12118,
-										["c_max"] = 3729,
-										["id"] = 218797,
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
 										["n_amt"] = 3,
 										["r_amt"] = 0,
-										["c_min"] = 3728,
-									},
+										["c_min"] = 0,
+									}, -- [1]
 									[218803] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 12147,
+										["n_max"] = 12837,
 										["targets"] = {
-											["Black Rook Spectral Officer"] = 24294,
+											["Nightborne Trapper"] = 12837,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 24294,
-										["n_min"] = 12147,
+										["n_dmg"] = 12837,
+										["n_min"] = 12837,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 24294,
+										["counter"] = 1,
+										["total"] = 12837,
 										["c_max"] = 0,
 										["id"] = 218803,
 										["r_dmg"] = 0,
@@ -2550,7 +2843,36 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 2,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[218797] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 1970,
+										["targets"] = {
+											["Nightborne Trapper"] = 1970,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1970,
+										["n_min"] = 1970,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 1970,
+										["c_max"] = 0,
+										["id"] = 218797,
+										["r_dmg"] = 0,
+										["spellschool"] = 64,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
 										["r_amt"] = 0,
 										["c_min"] = 0,
 									},
@@ -2558,51 +2880,30 @@ _detalhes_database = {
 							},
 							["friendlyfire"] = {
 							},
-							["end_time"] = 1480043331,
+							["end_time"] = 1480142120,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 0.008567,
-							["start_time"] = 1480043322,
+							["damage_taken"] = 37096.008679,
+							["start_time"] = 1480142114,
 							["delay"] = 0,
-							["last_event"] = 1480043329,
+							["last_event"] = 1480142118,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 1,
+					["combatId"] = 21,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorb"] = 0.004621,
+							["totalabsorb"] = 0.005078,
 							["last_hps"] = 0,
 							["healing_from"] = {
 								["Druidann"] = true,
 							},
 							["targets"] = {
-								["Druidann"] = 48466,
-							},
-							["last_event"] = 1480043326,
-							["pets"] = {
-							},
-							["totalover_without_pet"] = 0.004621,
-							["targets_overheal"] = {
-							},
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 0.004621,
-							["total_without_pet"] = 48466.004621,
-							["iniciar_hps"] = false,
-							["classe"] = "DRUID",
-							["fight_component"] = true,
-							["total"] = 48466.004621,
-							["serial"] = "Player-60-0AAE98B4",
-							["healing_taken"] = 48466.004621,
-							["nome"] = "Druidann",
-							["spec"] = 102,
-							["grupo"] = true,
-							["end_time"] = 1480043331,
-							["heal_enemy"] = {
+								["Druidann"] = 48782,
 							},
 							["spells"] = {
 								["tipo"] = 3,
@@ -2611,15 +2912,16 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
+											["Druidann"] = 11136,
 										},
-										["n_max"] = 48466,
+										["n_max"] = 37646,
 										["targets"] = {
-											["Druidann"] = 48466,
+											["Druidann"] = 37646,
 										},
-										["n_min"] = 48466,
+										["n_min"] = 37646,
 										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 48466,
+										["overheal"] = 11136,
+										["total"] = 37646,
 										["c_max"] = 0,
 										["id"] = 145109,
 										["targets_absorbs"] = {
@@ -2628,31 +2930,53 @@ _detalhes_database = {
 										["c_curado"] = 0,
 										["m_amt"] = 0,
 										["c_min"] = 0,
-										["n_curado"] = 48466,
+										["n_curado"] = 37646,
 										["m_healed"] = 0,
 										["n_amt"] = 1,
 										["absorbed"] = 0,
 									},
 								},
 							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["targets_overheal"] = {
+								["Druidann"] = 11136,
+							},
+							["healing_taken"] = 37646.005078,
+							["totalover"] = 11136.005078,
+							["total_without_pet"] = 37646.005078,
+							["totalover_without_pet"] = 0.005078,
+							["heal_enemy_amt"] = 0,
+							["fight_component"] = true,
+							["end_time"] = 1480142120,
+							["serial"] = "Player-60-0AAE98B4",
+							["classe"] = "DRUID",
+							["nome"] = "Druidann",
+							["targets_absorbs"] = {
+							},
+							["grupo"] = true,
+							["total"] = 37646.005078,
+							["heal_enemy"] = {
+							},
+							["spec"] = 102,
 							["custom"] = 0,
 							["tipo"] = 2,
 							["on_hold"] = false,
-							["start_time"] = 1480043326,
+							["start_time"] = 1480142117,
 							["delay"] = 0,
-							["targets_absorbs"] = {
-							},
+							["last_event"] = 1480142117,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 1,
+					["combatId"] = 21,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 1,
+					["combatId"] = 21,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
@@ -2663,24 +2987,33 @@ _detalhes_database = {
 							["grupo"] = true,
 							["buff_uptime_targets"] = {
 							},
-							["buff_uptime"] = 60,
+							["buff_uptime"] = 54,
 							["pets"] = {
 								"Broll Bearmantle <Druidann>", -- [1]
 							},
 							["spell_cast"] = {
-								[202771] = 1,
-								[190984] = 2,
+								[190984] = 1,
 								[8921] = 1,
-								[78674] = 2,
+								[93402] = 1,
 								[194153] = 1,
+								[78674] = 1,
 							},
 							["classe"] = "DRUID",
 							["tipo"] = 4,
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
+									[224772] = {
+										["uptime"] = 9,
+										["activedamt"] = 1,
+										["id"] = 224772,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
 									[225788] = {
-										["uptime"] = 12,
+										["uptime"] = 9,
 										["activedamt"] = 1,
 										["id"] = 225788,
 										["actived"] = false,
@@ -2689,7 +3022,7 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 									[191608] = {
-										["actived_at"] = 1480043319,
+										["actived_at"] = 1480142111,
 										["uptime"] = 0,
 										["activedamt"] = 1,
 										["id"] = 191608,
@@ -2699,8 +3032,8 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 									[164547] = {
-										["uptime"] = 0,
-										["activedamt"] = 0,
+										["uptime"] = 9,
+										["activedamt"] = 1,
 										["id"] = 164547,
 										["actived"] = false,
 										["targets"] = {
@@ -2708,7 +3041,7 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 									[227723] = {
-										["uptime"] = 12,
+										["uptime"] = 9,
 										["activedamt"] = 1,
 										["id"] = 227723,
 										["actived"] = false,
@@ -2717,7 +3050,7 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 									[164545] = {
-										["uptime"] = 12,
+										["uptime"] = 9,
 										["activedamt"] = 1,
 										["id"] = 164545,
 										["actived"] = false,
@@ -2726,18 +3059,9 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 									[24858] = {
-										["uptime"] = 12,
+										["uptime"] = 9,
 										["activedamt"] = 1,
 										["id"] = 24858,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[219159] = {
-										["uptime"] = 12,
-										["activedamt"] = 1,
-										["id"] = 219159,
 										["actived"] = false,
 										["targets"] = {
 										},
@@ -2746,7 +3070,7 @@ _detalhes_database = {
 								},
 							},
 							["serial"] = "Player-60-0AAE98B4",
-							["last_event"] = 1480043331,
+							["last_event"] = 1480142120,
 						}, -- [1]
 						{
 							["flag_original"] = 8465,
@@ -2757,17 +3081,17 @@ _detalhes_database = {
 							["classe"] = "PET",
 							["tipo"] = 4,
 							["spell_cast"] = {
-								[218605] = 1,
+								[218803] = 1,
 								[218796] = 1,
-								[218803] = 2,
+								[218605] = 1,
 							},
-							["serial"] = "Creature-0-3883-1220-2139-109839-000037A58C",
+							["serial"] = "Creature-0-3782-1220-20798-109839-0000392C27",
 							["last_event"] = 0,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 1,
+					["combatId"] = 21,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -2777,12 +3101,12 @@ _detalhes_database = {
 				},
 				["last_events_tables"] = {
 				},
-				["enemy"] = "Black Rook Spectral Officer",
-				["combat_counter"] = 1751,
+				["enemy"] = "Nightborne Trapper",
+				["combat_counter"] = 1778,
 				["playing_solo"] = true,
 				["totals"] = {
-					1587943.994236, -- [1]
-					48466, -- [2]
+					1124570.972642, -- [1]
+					37645.988662, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -2816,30 +3140,30 @@ _detalhes_database = {
 					},
 					["heal"] = {
 						{
-							["Druidann"] = 48466.004621,
+							["Druidann"] = 37646.005078,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
 					["damage"] = {
 						{
-							["Druidann"] = 1587944.006883,
+							["Druidann"] = 1124571.004075,
 						}, -- [1]
 					},
 				},
-				["end_time"] = 116296.692,
-				["combat_id"] = 1,
+				["end_time"] = 215088.576,
+				["combat_id"] = 21,
 				["instance_type"] = "none",
 				["frags"] = {
-					["Black Rook Spectral Officer"] = 1,
+					["Nightborne Trapper"] = 1,
 				},
-				["data_fim"] = "22:08:51",
-				["data_inicio"] = "22:08:40",
+				["data_fim"] = "01:35:20",
+				["data_inicio"] = "01:35:12",
 				["CombatSkillCache"] = {
 				},
 				["totals_grupo"] = {
-					1501486, -- [1]
-					48466, -- [2]
+					1087725, -- [1]
+					37646, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -2857,15 +3181,15 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["start_time"] = 116285.619,
-				["contra"] = "Black Rook Spectral Officer",
+				["start_time"] = 215080.057,
+				["contra"] = "Nightborne Trapper",
 				["TimeData"] = {
 				},
-			}, -- [4]
+			}, -- [5]
 		},
 	},
-	["combat_counter"] = 1755,
-	["last_realversion"] = 115,
+	["combat_counter"] = 1782,
+	["last_version"] = "v7.1.0.3212",
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
 			["lasttry"] = {
@@ -2873,10 +3197,10 @@ _detalhes_database = {
 			["annouce"] = true,
 			["dpshistory"] = {
 			},
-			["enabled"] = true,
 			["dps"] = 0,
-			["level"] = 1,
 			["author"] = "Details! Team",
+			["level"] = 1,
+			["enabled"] = true,
 		},
 		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
 			["enabled"] = true,
@@ -2885,11 +3209,11 @@ _detalhes_database = {
 			["max_emote_segments"] = 3,
 			["author"] = "Details! Team",
 			["window_scale"] = 1,
-			["encounter_timers_dbm"] = {
-			},
+			["hide_on_combat"] = false,
 			["show_icon"] = 5,
 			["opened"] = 0,
-			["hide_on_combat"] = false,
+			["encounter_timers_dbm"] = {
+			},
 		},
 		["DETAILS_PLUGIN_LEECH_TRINKET"] = {
 			["enabled"] = true,
@@ -2897,17 +3221,17 @@ _detalhes_database = {
 		},
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["updatespeed"] = 1,
-			["enabled"] = true,
 			["animate"] = false,
+			["showamount"] = false,
 			["useplayercolor"] = false,
-			["author"] = "Details! Team",
 			["useclasscolors"] = false,
+			["author"] = "Details! Team",
 			["playercolor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["showamount"] = false,
+			["enabled"] = true,
 		},
 		["DETAILS_PLUGIN_DPS_TUNING"] = {
 			["enabled"] = true,
@@ -2916,17 +3240,44 @@ _detalhes_database = {
 		},
 		["DETAILS_PLUGIN_VANGUARD"] = {
 			["enabled"] = true,
+			["tank_block_texture"] = "Details Serenity",
 			["tank_block_color"] = {
 				0.24705882, -- [1]
 				0.0039215, -- [2]
 				0, -- [3]
 				0.8, -- [4]
 			},
-			["tank_block_texture"] = "Details Serenity",
 			["show_inc_bars"] = false,
 			["author"] = "Details! Team",
 			["first_run"] = false,
 			["tank_block_size"] = 150,
+		},
+		["DETAILS_PLUGIN_TIME_ATTACK"] = {
+			["enabled"] = true,
+			["realm_last_shown"] = 40,
+			["saved_as_anonymous"] = true,
+			["recently_as_anonymous"] = true,
+			["dps"] = 0,
+			["disable_sharing"] = false,
+			["history"] = {
+			},
+			["time"] = 40,
+			["history_lastindex"] = 0,
+			["realm_lastamt"] = 0,
+			["realm_history"] = {
+			},
+			["author"] = "Details! Team",
+		},
+		["DETAILS_PLUGIN_RAIDCHECK"] = {
+			["enabled"] = true,
+			["food_tier1"] = true,
+			["mythic_1_4"] = true,
+			["food_tier2"] = true,
+			["author"] = "Details! Team",
+			["use_report_panel"] = true,
+			["pre_pot_healers"] = false,
+			["pre_pot_tanks"] = false,
+			["food_tier3"] = true,
 		},
 		["DETAILS_PLUGIN_CHART_VIEWER"] = {
 			["enabled"] = true,
@@ -2940,8 +3291,8 @@ _detalhes_database = {
 					["texture"] = "line",
 				}, -- [1]
 				{
-					["iType"] = "raid-TANK",
 					["version"] = "v2.0",
+					["iType"] = "raid-TANK",
 					["options"] = {
 						["iType"] = "raid-TANK",
 						["name"] = "Tanks Damage Taken",
@@ -2952,8 +3303,8 @@ _detalhes_database = {
 					["texture"] = "line",
 				}, -- [2]
 				{
-					["version"] = "v2.0",
 					["iType"] = "raid-DAMAGER",
+					["version"] = "v2.0",
 					["options"] = {
 						["iType"] = "raid-DAMAGER",
 						["name"] = "Damager (Same Class)",
@@ -2966,49 +3317,20 @@ _detalhes_database = {
 				["last_selected"] = 3,
 			},
 			["options"] = {
-				["show_method"] = 4,
 				["auto_create"] = true,
+				["show_method"] = 4,
 				["window_scale"] = 1,
 			},
 		},
-		["DETAILS_PLUGIN_RAIDCHECK"] = {
-			["enabled"] = true,
-			["food_tier1"] = true,
-			["mythic_1_4"] = true,
-			["food_tier2"] = true,
-			["author"] = "Details! Team",
-			["use_report_panel"] = true,
-			["pre_pot_healers"] = false,
-			["pre_pot_tanks"] = false,
-			["food_tier3"] = true,
-		},
-		["DETAILS_PLUGIN_TIME_ATTACK"] = {
-			["enabled"] = true,
-			["realm_last_shown"] = 40,
-			["saved_as_anonymous"] = true,
-			["recently_as_anonymous"] = true,
-			["dps"] = 0,
-			["disable_sharing"] = false,
-			["history"] = {
-			},
-			["time"] = 40,
-			["history_lastindex"] = 0,
-			["author"] = "Details! Team",
-			["realm_history"] = {
-			},
-			["realm_lastamt"] = 0,
-		},
+	},
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
+	["character_data"] = {
+		["logons"] = 73,
 	},
 	["cached_talents"] = {
-		["Player-1190-02C4B6B1"] = {
-			19166, -- [1]
-			21209, -- [2]
-			19218, -- [3]
-			19232, -- [4]
-			19227, -- [5]
-			19221, -- [6]
-			22014, -- [7]
-		},
 		["Player-60-0AAE98B4"] = {
 			22387, -- [1]
 			21655, -- [2]
@@ -3018,73 +3340,17 @@ _detalhes_database = {
 			18570, -- [6]
 			18577, -- [7]
 		},
-		["Player-3729-0A10782B"] = {
-			19286, -- [1]
-			21695, -- [2]
-			22039, -- [3]
-			22481, -- [4]
-			19295, -- [5]
-			19291, -- [6]
-			22480, -- [7]
-		},
-		["Player-3725-002FE8D5"] = {
-			22590, -- [1]
-			22591, -- [2]
-			22319, -- [3]
-			22485, -- [4]
-			22595, -- [5]
-			22182, -- [6]
-			21811, -- [7]
-		},
-		["Player-3729-09708EDD"] = {
-			18574, -- [1]
-			18570, -- [2]
-			22366, -- [3]
-			18577, -- [4]
-			21704, -- [5]
-			22165, -- [6]
-			21651, -- [7]
-		},
 	},
-	["character_data"] = {
-		["logons"] = 70,
+	["savedbuffs"] = {
+	},
+	["tabela_instancias"] = {
+	},
+	["combat_id"] = 25,
+	["savedStyles"] = {
 	},
 	["last_encounter"] = "Helya",
 	["SoloTablesSaved"] = {
 		["Mode"] = 1,
-	},
-	["tabela_instancias"] = {
-	},
-	["combat_id"] = 4,
-	["savedStyles"] = {
-	},
-	["last_version"] = "v7.1.0.3212",
-	["nick_tag_cache"] = {
-		["last_version"] = 8,
-		[167333142] = {
-			"Mapledk", -- [1]
-			"Interface\\EncounterJournal\\UI-EJ-BOSS-Default", -- [2]
-			{
-				0, -- [1]
-				1, -- [2]
-				0, -- [3]
-				1, -- [4]
-			}, -- [3]
-			"Interface\\PetBattles\\Weather-Windy", -- [4]
-			{
-				0.9453125, -- [1]
-				0.07421875, -- [2]
-				0.8203125, -- [3]
-				0, -- [4]
-			}, -- [5]
-			{
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			}, -- [6]
-			2, -- [7]
-		},
-		["nextreset"] = 1480562435,
 	},
 	["announce_deaths"] = {
 		["enabled"] = false,
@@ -3092,8 +3358,7 @@ _detalhes_database = {
 		["only_first"] = 5,
 		["where"] = 1,
 	},
-	["savedbuffs"] = {
-	},
+	["last_instance_time"] = 1479989480,
 	["local_instances_config"] = {
 		{
 			["segment"] = 0,
@@ -3129,17 +3394,40 @@ _detalhes_database = {
 			},
 		}, -- [1]
 	},
-	["last_instance_time"] = 1479989480,
+	["last_realversion"] = 115,
 	["announce_cooldowns"] = {
+		["enabled"] = false,
 		["ignored_cooldowns"] = {
 		},
-		["enabled"] = false,
 		["custom"] = "",
 		["channel"] = "RAID",
 	},
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
+	["nick_tag_cache"] = {
+		["last_version"] = 8,
+		[167333142] = {
+			"Mapledk", -- [1]
+			"Interface\\EncounterJournal\\UI-EJ-BOSS-Default", -- [2]
+			{
+				0, -- [1]
+				1, -- [2]
+				0, -- [3]
+				1, -- [4]
+			}, -- [3]
+			"Interface\\PetBattles\\Weather-Windy", -- [4]
+			{
+				0.9453125, -- [1]
+				0.07421875, -- [2]
+				0.8203125, -- [3]
+				0, -- [4]
+			}, -- [5]
+			{
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			}, -- [6]
+			2, -- [7]
+		},
+		["nextreset"] = 1480562435,
 	},
 	["last_instance_id"] = 1456,
 	["cached_specs"] = {

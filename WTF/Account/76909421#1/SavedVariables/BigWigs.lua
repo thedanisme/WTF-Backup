@@ -21,6 +21,8 @@ BigWigs3DB = {
 		},
 		["BigWigs_Plugins_Statistics"] = {
 		},
+		["BigWigs_Plugins_HeroesVoices"] = {
+		},
 		["BigWigs_Plugins_Colors"] = {
 		},
 		["BigWigs_Plugins_Raid Icons"] = {
@@ -42,30 +44,12 @@ BigWigs3DB = {
 				},
 			},
 		},
+		["BigWigs_Plugins_Common Auras"] = {
+		},
 		["BigWigs_Plugins_Super Emphasize"] = {
 			["profiles"] = {
 				["Default"] = {
 					["font"] = "Gotham-Narrow",
-				},
-			},
-		},
-		["BigWigs_Plugins_HeroesVoices"] = {
-		},
-		["BigWigs_Plugins_Common Auras"] = {
-		},
-		["BigWigs_Plugins_Respawn"] = {
-		},
-		["BigWigs_Plugins_Messages"] = {
-			["profiles"] = {
-				["Default"] = {
-					["BWEmphasizeMessageAnchor_x"] = 607.288990399575,
-					["BWEmphasizeCountdownMessageAnchor_x"] = 834.844725076364,
-					["BWEmphasizeMessageAnchor_y"] = 521.244500468838,
-					["BWMessageAnchor_y"] = 601.599927761818,
-					["BWMessageAnchor_x"] = 612.266768297886,
-					["BWEmphasizeCountdownMessageAnchor_y"] = 364.088897705078,
-					["font"] = "Gotham-Narrow",
-					["fontSize"] = 20,
 				},
 			},
 		},
@@ -85,6 +69,22 @@ BigWigs3DB = {
 				},
 			},
 		},
+		["BigWigs_Plugins_Messages"] = {
+			["profiles"] = {
+				["Default"] = {
+					["BWEmphasizeMessageAnchor_x"] = 607.288990399575,
+					["BWEmphasizeCountdownMessageAnchor_x"] = 834.844725076364,
+					["BWEmphasizeMessageAnchor_y"] = 521.244500468838,
+					["BWMessageAnchor_y"] = 601.599927761818,
+					["BWMessageAnchor_x"] = 612.266768297886,
+					["BWEmphasizeCountdownMessageAnchor_y"] = 364.088897705078,
+					["font"] = "Gotham-Narrow",
+					["fontSize"] = 20,
+				},
+			},
+		},
+		["BigWigs_Plugins_BossBlock"] = {
+		},
 		["BigWigs_Plugins_Pull"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -92,7 +92,7 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_BossBlock"] = {
+		["BigWigs_Plugins_Respawn"] = {
 		},
 	},
 	["global"] = {
@@ -105,9 +105,12 @@ BigWigs3DB = {
 		["Oenta - Stormrage"] = "Default",
 		["Whyfy - Stormrage"] = "Default",
 		["Shaneequa - Turalyon"] = "Default",
+		["Callil - Stormrage"] = "Default",
 		["Druidann - Stormrage"] = "Default",
 		["Jakwez - Stormrage"] = "Default",
+		["Chucklefunk - Stormrage"] = "Default",
 		["Emmarosa - Stormrage"] = "Default",
+		["Callil - Turalyon"] = "Default",
 		["Shhbbyisok - Stormrage"] = "Default",
 		["Talthalador - Stormrage"] = "Default",
 		["Dosnutz - Stormrage"] = "Default",
@@ -175,15 +178,15 @@ BigWigsStatisticsDB = {
 		},
 	},
 	[604] = {
-		[1636] = {
-			["25h"] = {
-				["best"] = 154.552,
-				["kills"] = 1,
-			},
-		},
 		[1629] = {
 			["25h"] = {
 				["best"] = 4.77199999999903,
+				["kills"] = 1,
+			},
+		},
+		[1636] = {
+			["25h"] = {
+				["best"] = 154.552,
 				["kills"] = 1,
 			},
 		},
@@ -211,15 +214,15 @@ BigWigsStatisticsDB = {
 				["kills"] = 1,
 			},
 		},
-		[1628] = {
-			["25h"] = {
-				["best"] = 3.55500000000029,
-				["kills"] = 1,
-			},
-		},
 		[1635] = {
 			["25h"] = {
 				["best"] = 12.6820000000007,
+				["kills"] = 1,
+			},
+		},
+		[1628] = {
+			["25h"] = {
+				["best"] = 3.55500000000029,
 				["kills"] = 1,
 			},
 		},

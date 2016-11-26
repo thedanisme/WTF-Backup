@@ -1,13 +1,12 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0013,
+	["LastVersion"] = 2.0108,
 	["LastPlayerFullName"] = "Whyfy-Stormrage",
 	["AutoSelectScales"] = false,
 	["UpgradeTracking"] = false,
 	["LastKeybindingsSet"] = 1,
 }
-PawnMrRobotScaleProviderOptions = nil
-PawnWowheadScaleProviderOptions = {
+PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "PALADIN",
-	["LastAdded"] = 5,
+	["LastAdded"] = 1,
 }

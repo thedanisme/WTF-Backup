@@ -14,18 +14,20 @@ RKDatabase = {
 		["Retardar - Stormrage"] = "Default",
 		["Shhbbyisok - Stormrage"] = "Default",
 		["Emmarosa - Stormrage"] = "Default",
+		["Chucklefunk - Stormrage"] = "Default",
 		["Oenta - Stormrage"] = "Default",
+		["Talthalador - Stormrage"] = "Default",
 		["Whyfy - Stormrage"] = "Default",
 		["Priaprisum - Stormreaver"] = "Default",
 		["Pryahprism - Turalyon"] = "Default",
 		["Shaneequa - Turalyon"] = "Default",
+		["Callil - Stormrage"] = "Default",
 		["Druidann - Stormrage"] = "Default",
-		["Talthalador - Stormrage"] = "Default",
 		["Callil - Turalyon"] = "Default",
 		["Brobies - Stormrage"] = "Default",
+		["Bloodcox - Stormrage"] = "Default",
 		["Kateplusnine - Stormrage"] = "Default",
 		["Aranduh - Bloodhoof"] = "Default",
-		["Bloodcox - Stormrage"] = "Default",
 		["Bruhbies - Stormrage"] = "Default",
 		["Rotator - Turalyon"] = "Default",
 		["Llamama - Stormrage"] = "Default",
@@ -55,11 +57,11 @@ RKDatabase = {
 					["Brackenspore"] = {
 						[7] = 86,
 					},
-					["The Butcher"] = {
-						[7] = 57,
-					},
 					["Kargath Bladefist"] = {
 						[7] = 67,
+					},
+					["Ko'ragh"] = {
+						[7] = 54,
 					},
 					["Tectus"] = {
 						[7] = 126,
@@ -67,8 +69,8 @@ RKDatabase = {
 					["Imperator Mar'gok"] = {
 						[7] = 331,
 					},
-					["Ko'ragh"] = {
-						[7] = 54,
+					["The Butcher"] = {
+						[7] = 57,
 					},
 					["Twin Ogron"] = {
 						[7] = 108,

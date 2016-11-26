@@ -113,10 +113,10 @@ MacroToolkitDB = {
 					["name"] = "Spirit Mend",
 					["body"] = "#showtooltip\n/use [@player] Spirit Mend\n",
 				},
-				[129] = {
-					["icon"] = "INV_MISC_QUESTIONMARK",
-					["name"] = "OpenerBM",
-					["body"] = "#showtooltip\n/castsequence reset=combat Cobra Shot, Cobra Shot, Stampede, 14, Bestial Wrath, Kill Command, Barrage\n",
+				[121] = {
+					["icon"] = "ABILITY_IMPALINGBOLT",
+					["name"] = " ",
+					["body"] = "#showtooltip\n/petattack\n/use [@mouseover,exists][@target] Arcane Shot\n",
 				},
 				[125] = {
 					["icon"] = "ABILITY_HUNTER_MISDIRECTION",
@@ -128,10 +128,10 @@ MacroToolkitDB = {
 					["name"] = "OpenerSurv",
 					["body"] = "/castsequence reset=combat 14, A Murder of Crows, Explosive Shot, Black Arrow, Arcane Shot\n",
 				},
-				[121] = {
-					["icon"] = "ABILITY_IMPALINGBOLT",
-					["name"] = " ",
-					["body"] = "#showtooltip\n/petattack\n/use [@mouseover,exists][@target] Arcane Shot\n",
+				[129] = {
+					["icon"] = "INV_MISC_QUESTIONMARK",
+					["name"] = "OpenerBM",
+					["body"] = "#showtooltip\n/castsequence reset=combat Cobra Shot, Cobra Shot, Stampede, 14, Bestial Wrath, Kill Command, Barrage\n",
 				},
 			},
 		},
@@ -250,6 +250,72 @@ MacroToolkitDB = {
 			["backups"] = {
 			},
 		},
+		["Chucklefunk - Stormrage"] = {
+			["macros"] = {
+				[122] = {
+					["icon"] = "135928",
+					["name"] = "Levitate",
+					["body"] = "#showtooltip\n/cancelaura Levitate\n/use Levitate\n",
+				},
+				[126] = {
+					["icon"] = "135936",
+					["name"] = "PS",
+					["body"] = "#showtooltip\n/use [@mouseover,help,nodead]Pain Suppression;[help,nodead]Pain Suppression;Pain Suppression\n",
+				},
+				[132] = {
+					["icon"] = "136202",
+					["name"] = "SM",
+					["body"] = "#showtooltip\n/use [@mouseover,nodead][]Shadow Mend\n",
+				},
+				[123] = {
+					["icon"] = "463835",
+					["name"] = "LoF",
+					["body"] = "#showtooltip\n/use [@mouseover]Leap of Faith\n",
+				},
+				[127] = {
+					["icon"] = "135894",
+					["name"] = "Purify",
+					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Purify\n",
+				},
+				[124] = {
+					["icon"] = "237545",
+					["name"] = "Penance",
+					["body"] = "#showtooltip\n/use [@mouseover,harm,nodead][]Penance\n",
+				},
+				[128] = {
+					["icon"] = "1386546",
+					["name"] = "PW:R",
+					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Power Word: Radiance\n",
+				},
+				[131] = {
+					["icon"] = "571554",
+					["name"] = "SF",
+					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Shining Force\n",
+				},
+				[121] = {
+					["icon"] = "642580",
+					["name"] = "Feather",
+					["body"] = "#showtooltip\n/cast [@player] Angelic Feather\n/stopspelltarget\n",
+				},
+				[125] = {
+					["icon"] = "1538775",
+					["name"] = "Plea",
+					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Plea\n",
+				},
+				[130] = {
+					["icon"] = "135955",
+					["name"] = "Rez",
+					["body"] = "#showtooltip\n/use [@mouseover,dead][]Resurrection\n",
+				},
+				[129] = {
+					["icon"] = "135940",
+					["name"] = "PW:S",
+					["body"] = "#showtooltip\n/use [@mouseover,help,nodead]Power Word: Shield;[help,nodead]Power Word: Shield;Power Word: Shield\n",
+				},
+			},
+			["backups"] = {
+			},
+		},
 		["Shhbbyisok - Stormrage"] = {
 			["macros"] = {
 				[121] = {
@@ -279,59 +345,75 @@ MacroToolkitDB = {
 		["Emmarosa - Stormrage"] = {
 			["macros"] = {
 				[122] = {
-					["icon"] = "236283",
 					["name"] = " TotT(Focus)",
+					["icon"] = "236283",
 					["body"] = "#showtooltip Tricks of the Trade\n/cast [@focus] Tricks of the Trade\n",
 				},
 				[126] = {
-					["icon"] = "132290",
 					["name"] = "Poisons",
+					["icon"] = "132290",
 					["body"] = "#showtooltip\n/castsequence Deadly Poison, Crippling Poison\n",
 				},
 				[123] = {
-					["icon"] = "134400",
 					["name"] = "BladeFlurry",
+					["icon"] = "134400",
 					["body"] = "#showtooltip Blade Flurry\n/cancelaura Blade Flurry\n/use Blade Flurry\n",
 				},
 				[127] = {
-					["icon"] = "1408451",
 					["name"] = "Ring+Vendetta",
+					["icon"] = "1408451",
 					["body"] = "#showtooltip 11\n/use 11\n/use Vendetta\n",
 				},
 				[124] = {
-					["icon"] = "133669",
 					["name"] = "Pick Pocket",
+					["icon"] = "133669",
 					["body"] = "#showtooltip Pick Pocket\n/use [stealth]Pick Pocket\n",
 				},
 				[128] = {
-					["icon"] = "134400",
 					["name"] = "Riposte",
+					["icon"] = "134400",
 					["body"] = "#showtooltip Riposte\n/use [nostealth]Riposte\n",
 				},
-				[131] = {
-					["icon"] = "132320",
-					["name"] = "Stealth/Symbols",
-					["body"] = "#showtooltip Stealth\n/use Stealth\n/use Symbols of Death\n",
-				},
 				[121] = {
-					["icon"] = "134400",
 					["name"] = " ",
+					["icon"] = "134400",
 					["body"] = "#showtooltip Adrenaline Rush\n/use Adrenaline Rush\n/use Curse of the Dreadblades\n/use 13\n/use 14\n/use 11\n",
 				},
+				[129] = {
+					["name"] = "Shadow Blades",
+					["icon"] = "134400",
+					["body"] = "#showtooltip Shadow Blades\n/use Shadow Blades\n/use 13\n/use 14\n/use Goremaw's Bite\n",
+				},
 				[125] = {
-					["icon"] = "1035048",
 					["name"] = "Pistol Shot",
+					["icon"] = "1035048",
 					["body"] = "#showtooltip\n/use Pistol Shot\n",
 				},
 				[130] = {
-					["icon"] = "134400",
 					["name"] = "SoD/SS",
+					["icon"] = "134400",
 					["body"] = "#showtooltip Symbols of Death\n/use Symbols of Death\n/use Shadowstrike\n",
 				},
-				[129] = {
-					["icon"] = "134400",
-					["name"] = "Shadow Blades",
-					["body"] = "#showtooltip Shadow Blades\n/use Shadow Blades\n/use 13\n/use 14\n/use Goremaw's Bite\n",
+				[131] = {
+					["name"] = "Stealth/Symbols",
+					["icon"] = "132320",
+					["body"] = "#showtooltip Stealth\n/use Stealth\n/use Symbols of Death\n",
+				},
+			},
+			["backups"] = {
+			},
+		},
+		["Talthalador - Stormrage"] = {
+			["macros"] = {
+				[121] = {
+					["name"] = " ",
+					["icon"] = "1344654",
+					["body"] = "#showtooltip\n/use [@mouseover,harm][]Torment\n",
+				},
+				[122] = {
+					["name"] = "Demonic Hello",
+					["icon"] = "1020342",
+					["body"] = "/script SendChatMessage(\"Hey there %t!  Supposedly, we can both understand this.  /nod if you can.\", \"SAY\", 8)\n",
 				},
 			},
 			["backups"] = {
@@ -363,123 +445,136 @@ MacroToolkitDB = {
 			["backups"] = {
 			},
 		},
-		["Druidann - Stormrage"] = {
+		["Callil - Stormrage"] = {
 			["macros"] = {
 				[122] = {
-					["icon"] = "136041",
-					["name"] = "Healing Touch",
-					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Healing Touch\n",
+					["name"] = "Levitate",
+					["icon"] = "135928",
+					["body"] = "#showtooltip\n/cancelaura Levitate\n/use Levitate\n",
 				},
 				[126] = {
-					["icon"] = "136085",
-					["name"] = "Regrowth",
-					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Regrowth\n",
+					["name"] = "PS",
+					["icon"] = "135936",
+					["body"] = "#showtooltip\n/use [@mouseover,help,nodead]Pain Suppression;[help,nodead]Pain Suppression;Pain Suppression\n",
+				},
+				[132] = {
+					["name"] = "SM",
+					["icon"] = "136202",
+					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Shadow Mend\n",
 				},
 				[123] = {
-					["icon"] = "571586",
-					["name"] = "Incarn",
-					["body"] = "#showtooltip\n/use Celestial Alignment\n/use 13\n/use 14\n",
+					["name"] = "LoF",
+					["icon"] = "463835",
+					["body"] = "#showtooltip\n/use [@mouseover]Leap of Faith\n",
 				},
 				[127] = {
-					["icon"] = "136081",
-					["name"] = "Rejuv",
-					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Rejuvenation\n",
+					["name"] = "Purify",
+					["icon"] = "135894",
+					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Purify\n",
 				},
 				[124] = {
-					["icon"] = "136048",
-					["name"] = "Innervate",
-					["body"] = "#showtooltip\n/use [@focus,help,exists][@mouseover,help,exists][]Innervate\n",
+					["name"] = "Penance",
+					["icon"] = "237545",
+					["body"] = "#showtooltip\n/use [@mouseover,exists,nodead][]Penance\n",
 				},
 				[128] = {
-					["icon"] = "135952",
-					["name"] = "RemCorruption",
-					["body"] = "#showtooltip\n/use [@mouseover,help,exists][]Remove Corruption\n",
+					["name"] = "PW:R",
+					["icon"] = "1386546",
+					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Power Word: Radiance\n",
 				},
 				[121] = {
-					["icon"] = "132270",
-					["name"] = "Growl",
-					["body"] = "#showtooltip\n/use [@mouseover,harm,exists][]Growl\n",
-				},
-				[125] = {
-					["icon"] = "136080",
-					["name"] = "Rebirth",
-					["body"] = "#showtooltip\n/use [@mouseover,dead][]Rebirth\n",
+					["name"] = "Feather",
+					["icon"] = "642580",
+					["body"] = "#showtooltip\n/cast [@player] Angelic Feather\n/stopspelltarget\n",
 				},
 				[129] = {
-					["icon"] = "134914",
-					["name"] = "Swiftmend",
-					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Swiftmend\n",
+					["name"] = "PW:S",
+					["icon"] = "135940",
+					["body"] = "#showtooltip\n/use [@mouseover,help,nodead]Power Word: Shield;[help,nodead]Power Word: Shield;Power Word: Shield\n",
 				},
-			},
-			["backups"] = {
+				[125] = {
+					["name"] = "Plea",
+					["icon"] = "1538775",
+					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Plea\n",
+				},
+				[130] = {
+					["name"] = "Rez",
+					["icon"] = "135955",
+					["body"] = "#showtooltip\n/use [@mouseover,dead][]Resurrection\n",
+				},
+				[131] = {
+					["name"] = "SF",
+					["icon"] = "571554",
+					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Shining Force\n",
+				},
 			},
 		},
 		["Whyfy - Stormrage"] = {
 			["macros"] = {
 				[122] = {
-					["name"] = "DL",
 					["icon"] = "134400",
+					["name"] = "DL",
 					["body"] = "#showtooltip\n/use [@mouseover,help]Divine Light;[help]Divine Light;Divine Light\n",
 				},
 				[126] = {
-					["name"] = "HL",
 					["icon"] = "134400",
+					["name"] = "HL",
 					["body"] = "#showtooltip\n/use [@mouseover,help]Holy Light;[help]Holy Light;Holy Light\n",
 				},
 				[132] = {
-					["name"] = "Salv",
 					["icon"] = "135967",
+					["name"] = "Salv",
 					["body"] = "#showtooltip\n/use [@mouseover,help]Hand of Salvation;[help]Hand of Salvation;Hand of Salvation\n",
 				},
 				[123] = {
-					["name"] = "DS",
 					["icon"] = "524354",
+					["name"] = "DS",
 					["body"] = "#showtooltip Divine Shield\n/cancelaura Hand of Protection\n/cast Divine Shield\n/cancelaura Divine Shield\n",
 				},
 				[127] = {
-					["name"] = "HoP",
 					["icon"] = "135964",
+					["name"] = "HoP",
 					["body"] = "#showtooltip\n/use [@mouseover,help]Hand of Protection;[help]Hand of Protection;Hand of Protection\n",
 				},
-				[131] = {
-					["name"] = "Sac",
-					["icon"] = "135966",
-					["body"] = "#showtooltip Blessing of Sacrifice\n/use [@mouseover,help]Blessing of Sacrifice;[help]Blessing of Sacrifice;Blessing of Sacrifice\n",
+				[133] = {
+					["icon"] = "135984",
+					["name"] = "Taunt",
+					["body"] = "#showtooltip\n/use [@mouseover,harm][]Hand of Reckoning\n",
 				},
 				[124] = {
-					["name"] = "FoL",
 					["icon"] = "135907",
+					["name"] = "FoL",
 					["body"] = "#showtooltip\n/use [@mouseover,help]Flash of Light;[help]Flash of Light;Flash of Light\n",
 				},
 				[128] = {
-					["name"] = "HR",
 					["icon"] = "134400",
+					["name"] = "HR",
 					["body"] = "#showtooltip\n/use [@mouseover,help]Holy Radiance;[help]Holy Radiance;Holy Radiance\n",
 				},
-				[129] = {
-					["name"] = "HS",
-					["icon"] = "134400",
-					["body"] = "#showtooltip\n/use [@mouseover,help]Holy Shock;[help]Holy Shock;Holy Shock\n",
-				},
 				[121] = {
-					["name"] = "Cleanse Toxins",
 					["icon"] = "135953",
+					["name"] = "Cleanse Toxins",
 					["body"] = "#showtooltip\n/use [@mouseover.help]Cleanse Toxins;[help]Cleanse Toxins;Cleanse Toxins\n",
 				},
+				[129] = {
+					["icon"] = "134400",
+					["name"] = "HS",
+					["body"] = "#showtooltip\n/use [@mouseover,help]Holy Shock;[help]Holy Shock;Holy Shock\n",
+				},
 				[125] = {
-					["name"] = "Freedom",
 					["icon"] = "135968",
+					["name"] = "Freedom",
 					["body"] = "#showtooltip Blessing of Freedom\n/use [@mouseover,help]Blessing of Freedom;[help]Blessing of Freedom;Blessing of Freedom\n",
 				},
 				[130] = {
-					["name"] = "LoH",
 					["icon"] = "135928",
+					["name"] = "LoH",
 					["body"] = "#showtooltip\n/use [@mouseover,help][@target,help][@player][]Lay on Hands\n",
 				},
-				[133] = {
-					["name"] = "Taunt",
-					["icon"] = "135984",
-					["body"] = "#showtooltip\n/use [@mouseover,harm][]Hand of Reckoning\n",
+				[131] = {
+					["icon"] = "135966",
+					["name"] = "Sac",
+					["body"] = "#showtooltip Blessing of Sacrifice\n/use [@mouseover,help]Blessing of Sacrifice;[help]Blessing of Sacrifice;Blessing of Sacrifice\n",
 				},
 			},
 			["backups"] = {
@@ -568,17 +663,52 @@ MacroToolkitDB = {
 			["backups"] = {
 			},
 		},
-		["Talthalador - Stormrage"] = {
+		["Druidann - Stormrage"] = {
 			["macros"] = {
-				[121] = {
-					["name"] = " ",
-					["icon"] = "1344654",
-					["body"] = "#showtooltip\n/use [@mouseover,harm][]Torment\n",
-				},
 				[122] = {
-					["name"] = "Demonic Hello",
-					["icon"] = "1020342",
-					["body"] = "/script SendChatMessage(\"Hey there %t!  Supposedly, we can both understand this.  /nod if you can.\", \"SAY\", 8)\n",
+					["name"] = "Healing Touch",
+					["icon"] = "136041",
+					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Healing Touch\n",
+				},
+				[126] = {
+					["name"] = "Regrowth",
+					["icon"] = "136085",
+					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Regrowth\n",
+				},
+				[123] = {
+					["name"] = "Incarn",
+					["icon"] = "571586",
+					["body"] = "#showtooltip\n/use Celestial Alignment\n/use 13\n/use 14\n",
+				},
+				[127] = {
+					["name"] = "Rejuv",
+					["icon"] = "136081",
+					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Rejuvenation\n",
+				},
+				[124] = {
+					["name"] = "Innervate",
+					["icon"] = "136048",
+					["body"] = "#showtooltip\n/use [@focus,help,exists][@mouseover,help,exists][]Innervate\n",
+				},
+				[128] = {
+					["name"] = "RemCorruption",
+					["icon"] = "135952",
+					["body"] = "#showtooltip\n/use [@mouseover,help,exists][]Remove Corruption\n",
+				},
+				[121] = {
+					["name"] = "Growl",
+					["icon"] = "132270",
+					["body"] = "#showtooltip\n/use [@mouseover,harm,exists][]Growl\n",
+				},
+				[125] = {
+					["name"] = "Rebirth",
+					["icon"] = "136080",
+					["body"] = "#showtooltip\n/use [@mouseover,dead][]Rebirth\n",
+				},
+				[129] = {
+					["name"] = "Swiftmend",
+					["icon"] = "134914",
+					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Swiftmend\n",
 				},
 			},
 			["backups"] = {
@@ -586,90 +716,70 @@ MacroToolkitDB = {
 		},
 		["Callil - Turalyon"] = {
 			["macros"] = {
-				[131] = {
-					["icon"] = "135928",
-					["name"] = " ",
-					["body"] = "#showtooltip\n/cancelaura Levitate\n/use Levitate\n",
-				},
-				[135] = {
-					["icon"] = "134400",
-					["name"] = " ",
-					["body"] = "#showtooltip\n/use [@mouseover,help][help][]Binding Heal\n",
-				},
 				[122] = {
-					["icon"] = "135913",
-					["name"] = " ",
-					["body"] = "#showtooltip\n/use [@mouseover,help]Heal;[help]Heal;Heal\n",
-				},
-				[124] = {
-					["icon"] = "134400",
-					["name"] = " ",
-					["body"] = "#showtooltip\n/use [@mouseover,exists,nodead][]Penance\n",
+					["icon"] = "135907",
+					["name"] = "FH",
+					["body"] = "#showtooltip\n/use [@mouseover,help,nodead]Flash Heal;[help,nodead]Flash Heal;Flash Heal\n",
 				},
 				[126] = {
-					["icon"] = "134400",
-					["name"] = " ",
-					["body"] = "#showtooltip\n/use [@mouseover,help]Pain Suppression;[help]Pain Suppression;Pain Suppression\n",
-				},
-				[128] = {
-					["icon"] = "135907",
-					["name"] = " ",
-					["body"] = "#showtooltip\n/use [@mouseover,help]Flash Heal;[help]Flash Heal;Flash Heal\n",
+					["icon"] = "1538775",
+					["name"] = "Plea",
+					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Plea\n",
 				},
 				[132] = {
-					["icon"] = "134400",
-					["name"] = " ",
-					["body"] = "#showtooltip\n/use [@mouseover,exists,nodead][]Clarity of Will\n",
-				},
-				[136] = {
-					["icon"] = "134400",
-					["name"] = " ",
-					["body"] = "#showtooltip\n/use [@mouseover,help][help][]Guardian Spirit\n",
-				},
-				[129] = {
-					["icon"] = "237563",
-					["name"] = " ",
-					["body"] = "#showtooltip\n/cancelaura Dispersion\n/use Dispersion\n",
-				},
-				[133] = {
-					["icon"] = "134400",
-					["name"] = " ",
-					["body"] = "#showtooltip\n/use [@mouseover,help][help][]Circle of Healing\n",
-				},
-				[137] = {
-					["icon"] = "134400",
-					["name"] = " ",
-					["body"] = "#showtooltip\n/use [@mouseover,help][help][]Holy Word: Chastise\n",
-				},
-				[121] = {
-					["icon"] = "135940",
-					["name"] = " ",
-					["body"] = "#showtooltip\n/use [@mouseover,help]Power Word: Shield;[help]Power Word: Shield;Power Word: Shield\n",
+					["icon"] = "571554",
+					["name"] = "SF",
+					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Shining Force\n",
 				},
 				[123] = {
-					["icon"] = "135894",
-					["name"] = " ",
-					["body"] = "#showtooltip\n/use [@mouseover][]Purify\n",
-				},
-				[125] = {
-					["icon"] = "135943",
-					["name"] = " ",
-					["body"] = "#showtooltip\n/use [@mouseover,help]Prayer of Healing;[help]Prayer of Healing;Prayer of Healing\n",
+					["icon"] = "135928",
+					["name"] = "Levitate",
+					["body"] = "#showtooltip\n/cancelaura Levitate\n/use Levitate\n",
 				},
 				[127] = {
-					["icon"] = "135944",
-					["name"] = " ",
-					["body"] = "#showtooltip\n/use [@mouseover,help]Prayer of Mending;[help]Prayer of Mending;Prayer of Mending\n",
+					["icon"] = "135936",
+					["name"] = "PS",
+					["body"] = "#showtooltip\n/use [@mouseover,help,nodead]Pain Suppression;[help,nodead]Pain Suppression;Pain Suppression\n",
 				},
-				[130] = {
+				[133] = {
+					["icon"] = "136202",
+					["name"] = "SM",
+					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Shadow Mend\n",
+				},
+				[124] = {
 					["icon"] = "463835",
-					["name"] = " ",
+					["name"] = "LoF",
 					["body"] = "#showtooltip\n/use [@mouseover]Leap of Faith\n",
 				},
-				[134] = {
-					["icon"] = "134400",
-					["name"] = " ",
-					["body"] = "#showtooltip\n/use [@mouseover,help][help][]Renew\n",
+				[128] = {
+					["icon"] = "135894",
+					["name"] = "Purify",
+					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Purify\n",
+				},
+				[121] = {
+					["icon"] = "642580",
+					["name"] = "Feather",
+					["body"] = "#showtooltip\n/cast [@player] Angelic Feather\n/stopspelltarget\n",
+				},
+				[129] = {
+					["icon"] = "1386546",
+					["name"] = "PW:R",
+					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Power Word: Radiance\n",
+				},
+				[125] = {
+					["icon"] = "237545",
+					["name"] = "Penance",
+					["body"] = "#showtooltip\n/use [@mouseover,exists,nodead][]Penance\n",
+				},
+				[130] = {
+					["icon"] = "135940",
+					["name"] = "PW:S",
+					["body"] = "#showtooltip\n/use [@mouseover,help,nodead]Power Word: Shield;[help,nodead]Power Word: Shield;Power Word: Shield\n",
+				},
+				[131] = {
+					["icon"] = "135955",
+					["name"] = "Rez",
+					["body"] = "#showtooltip\n/use [@mouseover,dead][]Resurrection\n",
 				},
 			},
 			["backups"] = {
@@ -780,19 +890,6 @@ MacroToolkitDB = {
 				},
 			},
 		},
-		["Kateplusnine - Stormrage"] = {
-			["macros"] = {
-			},
-		},
-		["Priaprisum - Stormreaver"] = {
-			["macros"] = {
-				[121] = {
-					["icon"] = "0",
-					["name"] = "ZGVMacro1",
-					["body"] = "/target Outrunner Alarion\n/run ZGV:MRM():CG(1,1)\n",
-				},
-			},
-		},
 		["Lackteight - Turalyon"] = {
 			["macros"] = {
 				[127] = {
@@ -832,6 +929,19 @@ MacroToolkitDB = {
 				},
 			},
 			["backups"] = {
+			},
+		},
+		["Kateplusnine - Stormrage"] = {
+			["macros"] = {
+			},
+		},
+		["Priaprisum - Stormreaver"] = {
+			["macros"] = {
+				[121] = {
+					["icon"] = "0",
+					["name"] = "ZGVMacro1",
+					["body"] = "/target Outrunner Alarion\n/run ZGV:MRM():CG(1,1)\n",
+				},
 			},
 		},
 		["Bruhbies - Stormrage"] = {
@@ -973,15 +1083,15 @@ MacroToolkitDB = {
 					["name"] = " ",
 					["body"] = "#showtooltip\n/use [@mouseover,help]Flash of Light;[help]Flash of Light;Flash of Light\n",
 				},
-				[123] = {
-					["icon"] = "134400",
-					["name"] = " ",
-					["body"] = "#showtooltip\n/use [@mouseover,help]Hand of Freedom;[help]Hand of Freedom;Hand of Freedom\n",
-				},
 				[133] = {
 					["icon"] = "134400",
 					["name"] = " ",
 					["body"] = "#showtooltip\n/use [@mouseover,help]Hand of Protection;[help]Hand of Protection;Hand of Protection\n",
+				},
+				[123] = {
+					["icon"] = "134400",
+					["name"] = " ",
+					["body"] = "#showtooltip\n/use [@mouseover,help]Hand of Freedom;[help]Hand of Freedom;Hand of Freedom\n",
 				},
 				[127] = {
 					["icon"] = "524354",
@@ -1050,15 +1160,15 @@ MacroToolkitDB = {
 		},
 		["Brewbies - Turalyon"] = {
 			["macros"] = {
-				[122] = {
-					["icon"] = "ABILITY_MONK_PRIDEOFTHETIGER",
-					["name"] = " ",
-					["body"] = "#showtooltip Legacy of the White Tiger\n/use Legacy of the White Tiger\n/cancelaura Hand of Protection\n",
-				},
 				[131] = {
 					["icon"] = "INV_MISC_QUESTIONMARK",
 					["name"] = "Serenity Spam",
 					["body"] = "#showtooltip Serenity\n/use Serenity\n/use Blackout Kick\n/use Purifying Brew\n",
+				},
+				[122] = {
+					["icon"] = "ABILITY_MONK_PRIDEOFTHETIGER",
+					["name"] = " ",
+					["body"] = "#showtooltip Legacy of the White Tiger\n/use Legacy of the White Tiger\n/cancelaura Hand of Protection\n",
 				},
 				[126] = {
 					["icon"] = "ABILITY_MONK_CLASHINGOXCHARGE",
@@ -1075,10 +1185,10 @@ MacroToolkitDB = {
 					["name"] = "ZGVMacro2",
 					["body"] = "/target Master Hight\n/run ZGV:MRM():CG(2,2)\n",
 				},
-				[133] = {
-					["icon"] = "MONK_ABILITY_TRANSCENDENCE",
-					["name"] = "TransferSequence",
-					["body"] = "#showtooltip\n/castsequence Transcendence, Transcendence: Transfer\n",
+				[123] = {
+					["icon"] = "INV_MISC_QUESTIONMARK",
+					["name"] = " ",
+					["body"] = "#showtooltip Brawler's Bottomless Draenic Agility Potion\n/use Brawler's Bottomless Draenic Agility Potion\n/use 14\n",
 				},
 				[127] = {
 					["icon"] = "ABILITY_MONK_FORTIFYINGALE_NEW",
@@ -1125,10 +1235,10 @@ MacroToolkitDB = {
 					["name"] = "Provoke",
 					["body"] = "#showtooltip\n/cast [nomod,@mouseover,harm,exists][nomod] Provoke\n/stopmacro [nomod]\n/target Black Ox Statue\n/cast Provoke\n/targetlasttarget\n",
 				},
-				[123] = {
-					["icon"] = "INV_MISC_QUESTIONMARK",
-					["name"] = " ",
-					["body"] = "#showtooltip Brawler's Bottomless Draenic Agility Potion\n/use Brawler's Bottomless Draenic Agility Potion\n/use 14\n",
+				[133] = {
+					["icon"] = "MONK_ABILITY_TRANSCENDENCE",
+					["name"] = "TransferSequence",
+					["body"] = "#showtooltip\n/castsequence Transcendence, Transcendence: Transfer\n",
 				},
 			},
 			["backups"] = {
@@ -1397,21 +1507,23 @@ MacroToolkitDB = {
 		["Yanlery - Stormrage"] = "Default",
 		["Jakwez - Stormrage"] = "profile",
 		["Retardar - Stormrage"] = "profile",
+		["Chucklefunk - Stormrage"] = "profile",
 		["Shhbbyisok - Stormrage"] = "profile",
 		["Emmarosa - Stormrage"] = "profile",
+		["Talthalador - Stormrage"] = "profile",
 		["Oenta - Stormrage"] = "profile",
-		["Druidann - Stormrage"] = "profile",
+		["Callil - Stormrage"] = "profile",
 		["Whyfy - Stormrage"] = "profile",
 		["Knutts - Turalyon"] = "profile",
 		["Pryahprism - Turalyon"] = "profile",
 		["Shaneequa - Turalyon"] = "profile",
-		["Talthalador - Stormrage"] = "profile",
+		["Druidann - Stormrage"] = "profile",
 		["Callil - Turalyon"] = "profile",
 		["Abegar - Turalyon"] = "profile",
 		["Horny - Bloodhoof"] = "profile",
+		["Lackteight - Turalyon"] = "profile",
 		["Kateplusnine - Stormrage"] = "profile",
 		["Priaprisum - Stormreaver"] = "profile",
-		["Lackteight - Turalyon"] = "profile",
 		["Bruhbies - Stormrage"] = "profile",
 		["Rotator - Turalyon"] = "profile",
 		["Llamama - Stormrage"] = "profile",
@@ -1444,7 +1556,7 @@ MacroToolkitDB = {
 			["visshare"] = false,
 			["visaddslot"] = false,
 			["visaddscript"] = false,
-			["x"] = 665.668518066406,
+			["x"] = 667.668579101563,
 			["viscrest"] = true,
 			["y"] = 540.061950683594,
 			["override"] = true,

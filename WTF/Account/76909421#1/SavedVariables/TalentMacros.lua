@@ -16,21 +16,23 @@ TalentMacrosDB = {
 		["Yanlery - Stormrage"] = "Yanlery - Stormrage",
 		["Jakwez - Stormrage"] = "Jakwez - Stormrage",
 		["Retardar - Stormrage"] = "Retardar - Stormrage",
+		["Chucklefunk - Stormrage"] = "Chucklefunk - Stormrage",
 		["Shhbbyisok - Stormrage"] = "Shhbbyisok - Stormrage",
 		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
+		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
 		["Oenta - Stormrage"] = "Oenta - Stormrage",
-		["Druidann - Stormrage"] = "Druidann - Stormrage",
+		["Callil - Stormrage"] = "Callil - Stormrage",
 		["Whyfy - Stormrage"] = "Whyfy - Stormrage",
 		["Knutts - Turalyon"] = "Knutts - Turalyon",
 		["Pryahprism - Turalyon"] = "Pryahprism - Turalyon",
 		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
-		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
+		["Druidann - Stormrage"] = "Druidann - Stormrage",
 		["Callil - Turalyon"] = "Callil - Turalyon",
 		["Abegar - Turalyon"] = "Abegar - Turalyon",
 		["Horny - Bloodhoof"] = "Horny - Bloodhoof",
+		["Brewbies - Turalyon"] = "Brewbies - Turalyon",
 		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
 		["Priaprisum - Stormreaver"] = "Priaprisum - Stormreaver",
-		["Brewbies - Turalyon"] = "Brewbies - Turalyon",
 		["Bruhbies - Stormrage"] = "Bruhbies - Stormrage",
 		["Rotator - Turalyon"] = "Rotator - Turalyon",
 		["Llamama - Stormrage"] = "Llamama - Stormrage",
@@ -74,13 +76,17 @@ TalentMacrosDB = {
 		},
 		["Retardar - Stormrage"] = {
 		},
+		["Chucklefunk - Stormrage"] = {
+		},
 		["Shhbbyisok - Stormrage"] = {
 		},
 		["Emmarosa - Stormrage"] = {
 		},
+		["Talthalador - Stormrage"] = {
+		},
 		["Oenta - Stormrage"] = {
 		},
-		["Druidann - Stormrage"] = {
+		["Callil - Stormrage"] = {
 		},
 		["Whyfy - Stormrage"] = {
 			["macrotext"] = {
@@ -96,7 +102,7 @@ TalentMacrosDB = {
 		},
 		["Shaneequa - Turalyon"] = {
 		},
-		["Talthalador - Stormrage"] = {
+		["Druidann - Stormrage"] = {
 		},
 		["Callil - Turalyon"] = {
 			["macrotext"] = {
@@ -109,11 +115,11 @@ TalentMacrosDB = {
 		},
 		["Horny - Bloodhoof"] = {
 		},
+		["Brewbies - Turalyon"] = {
+		},
 		["Kateplusnine - Stormrage"] = {
 		},
 		["Priaprisum - Stormreaver"] = {
-		},
-		["Brewbies - Turalyon"] = {
 		},
 		["Bruhbies - Stormrage"] = {
 		},

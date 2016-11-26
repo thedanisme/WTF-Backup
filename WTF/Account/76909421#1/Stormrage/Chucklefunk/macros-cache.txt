@@ -1,0 +1,50 @@
+VER 3 0100000000000016 "Feather" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@player] Angelic Feather
+/stopspelltarget
+END
+VER 3 010000000000000B "Levitate" "SPELL_HOLY_LAYONHANDS"
+#showtooltip
+/cancelaura Levitate
+/use Levitate
+END
+VER 3 010000000000000A "LoF" "PRIEST_SPELL_LEAPOFFAITH_A"
+#showtooltip
+/use [@mouseover]Leap of Faith
+END
+VER 3 0100000000000004 "Penance" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use [@mouseover,harm,nodead][]Penance
+END
+VER 3 0100000000000005 "Plea" "INV_Misc_QuestionMark"
+#showtooltip
+/use [@mouseover,help,nodead][]Plea
+END
+VER 3 0100000000000006 "PS" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use [@mouseover,help,nodead]Pain Suppression;[help,nodead]Pain Suppression;Pain Suppression
+END
+VER 3 0100000000000003 "Purify" "SPELL_HOLY_DISPELMAGIC"
+#showtooltip
+/use [@mouseover,help,nodead][]Purify
+END
+VER 3 0100000000000012 "PW:R" "INV_Misc_QuestionMark"
+#showtooltip
+/use [@mouseover,help,nodead][]Power Word: Radiance
+END
+VER 3 0100000000000001 "PW:S" "SPELL_HOLY_POWERWORDSHIELD"
+#showtooltip
+/use [@mouseover,help,nodead]Power Word: Shield;[help,nodead]Power Word: Shield;Power Word: Shield
+END
+VER 3 0100000000000013 "Rez" "INV_Misc_QuestionMark"
+#showtooltip
+/use [@mouseover,dead][]Resurrection
+END
+VER 3 0100000000000015 "SF" "INV_Misc_QuestionMark"
+#showtooltip
+/use [@mouseover,help,nodead][]Shining Force
+END
+VER 3 0100000000000014 "SM" "INV_Misc_QuestionMark"
+#showtooltip
+/use [@mouseover,nodead][]Shadow Mend
+END

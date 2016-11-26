@@ -1,0 +1,14 @@
+ArtifactSpellLinker: disabled
+BestInSlot: disabled
+BestInSlot_Legion: disabled
+BigWigs_Cataclysm: disabled
+BigWigs_WrathOfTheLichKing: disabled
+Details_DpsTuning: disabled
+Details_EncounterDetails: disabled
+Details_RaidCheck: disabled
+Details_TinyThreat: disabled
+Details_Vanguard: disabled
+ExRT: disabled
+StrataFix: disabled
+TransmogTokens: disabled
+WorldQuestsList: disabled
