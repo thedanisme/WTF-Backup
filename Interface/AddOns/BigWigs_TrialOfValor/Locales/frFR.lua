@@ -9,6 +9,12 @@ if L then
 	L[227500] = "|cFF008000En haut|r (|T1323036:15:15:0:0:64:64:4:60:4:60|t)" -- Boss_OdunRunes_Green
 end
 
+L = BigWigs:NewBossLocale("Guarm-TrialOfValor", "frFR")
+if L then
+	L.lick = "Langue"
+	L.lick_desc = "Affiche les barres des différentes langues."
+end
+
 L = BigWigs:NewBossLocale("Helya-TrialOfValor", "frFR")
 if L then
 	L.nearTrigger = "à proximité" -- |TInterface\\Icons\\inv_misc_monsterhorn_03.blp:20|t Un %s apparaît à proximité de Helya !
@@ -17,4 +23,12 @@ if L then
 	L.tentacle_near_desc = "Cette option peut être utilisée pour mettre en évidence ou cacher les messages affichés quand un Tentacule frappeur apparaît près de Helya."
 	L.tentacle_far = "Tentacule LOIN de Helya"
 	L.tentacle_far_desc = "Cette option peut être utilisée pour mettre en évidence ou cacher les messages affichés quand un Tentacule frappeur apparaît loin de Helya."
+
+	L.orb_melee = "Délai Orbe en mêlée"
+	L.orb_melee_desc = "Affiche le délai des Orbes apparaissant sur les joueurs de mêlée."
+	L.orb_melee_bar = "Orbe en mêlée"
+
+	L.orb_ranged = "Délai Orbe à distance"
+	L.orb_ranged_desc = "Affiche le delai des Orbes apparaissant sur les joueurs à distance."
+	L.orb_ranged_bar = "Orbe à distance"
 end

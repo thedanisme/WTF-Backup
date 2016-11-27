@@ -1,7 +1,7 @@
 
 --------------------------------------------------------------------------------
 -- TODO List:
--- - Figure out how timers work - Breath and Charge could be on some shared cd?
+-- - Lick timers for lfr, normal, hc
 
 --------------------------------------------------------------------------------
 -- Module Declaration
@@ -20,11 +20,26 @@ local breathCounter = 0
 local fangCounter = 0
 local leapCounter = 0
 local foamCount = 1
+local phaseStartTime = 0
+local lickCount = 1
+local lickTimer = {14.1, 22.7, 26.3, 33.7, 43.3, 95.8, 99.4, 106.8, 116.5, 171.9, 175.4, 182.6, 192.6}
+local foamTargets = {}
+
+--------------------------------------------------------------------------------
+-- Localization
+--
+
+local L = mod:GetLocale()
+if L then
+	L.lick = "Lick"
+	L.lick_desc = "Show bars for the different licks." -- For translators: short names of 228248, 228253, 228228
+end
 
 --------------------------------------------------------------------------------
 -- Initialization
 --
 
+local foamMarker = mod:AddMarkerOption(false, "player", 1, -14535, 1, 2, 3)
 function mod:GetOptions()
 	return {
 		--[[ General ]]--
@@ -38,13 +53,15 @@ function mod:GetOptions()
 		227883, -- Roaring Leap
 
 		--[[ Mythic ]]--
+		"lick", -- Lick
 		-14535, -- Volatile Foam
+		foamMarker,
 		{228810, "SAY", "FLASH"}, -- Briney Volatile Foam
 		{228744, "SAY", "FLASH"}, -- Flaming Volatile Foam
 		{228818, "SAY", "FLASH"}, -- Shadowy Volatile Foam
 	},{
 		["berserk"] = "general",
-		[-14535] = "mythic",
+		["lick"] = "mythic",
 	}
 end
 
@@ -74,15 +91,25 @@ function mod:OnEngage()
 	fangCounter = 0
 	leapCounter = 0
 	foamCount = 1
-	if not self:LFR() then -- Probably longer on LFR
-		self:Berserk(self:Mythic() and 244 or 300)
-	end
+	phaseStartTime = GetTime()
+	wipe(foamTargets)
+	self:Berserk(self:Mythic() and 244 or self:LFR() and 420 or 300)
 	self:Bar(227514, 6) -- Flashing Fangs
 	self:Bar(228187, 14.5) -- Guardian's Breath
 	self:Bar(227883, 48.5) -- Roaring Leap
 	self:Bar(227816, 57) -- Headlong Charge
 	if self:Mythic() then
 		self:Bar(-14535, 10.9, CL.count:format(self:SpellName(-14535), foamCount), 228810)
+		self:StartLickTimer(1)
+	end
+end
+
+function mod:OnBossDisable()
+	if self:GetOption(foamMarker) then
+		for _,name in pairs(foamTargets) do
+			SetRaidTarget(name, 0)
+		end
+		wipe(foamTargets)
 	end
 end
 
@@ -145,7 +172,7 @@ end
 function mod:FlashingFangs(args)
 	fangCounter = fangCounter + 1
 	self:Message(args.spellId, "Attention", nil, CL.casting:format(args.spellName))
-	self:CDBar(args.spellId, (fangCounter % 2 == 0 and 52) or 20)
+	self:CDBar(args.spellId, fangCounter == 1 and 23 or fangCounter % 2 == 0 and 52 or 20)
 end
 
 function mod:HeadlongCharge(args)
@@ -175,26 +202,66 @@ function mod:VolatileFoam(args)
 	self:Bar(-14535, t, CL.count:format(self:SpellName(-14535), foamCount), 228810)
 end
 
-function mod:BrineyFoam(args)
-	if self:Me(args.destGUID) then
-		self:Message(args.spellId, "Neutral", "Alarm", CL.you:format(args.spellName))
-		self:Say(args.spellId, ("{rt6} %s {rt6}"):format(args.spellName))
-		self:Flash(args.spellId)
+do
+	local scheduled = nil
+
+	local function wipeFoamTargets()
+		for _,name in pairs(foamTargets) do
+			SetRaidTarget(name, 0)
+		end
+		wipe(foamTargets)
+		scheduled = nil
+	end
+
+	local function markFoam(self, destName)
+		if self:GetOption(foamMarker) then
+			foamTargets[#foamTargets+1] = destName
+			SetRaidTarget(destName, #foamTargets)
+			if not scheduled then
+				scheduled = self:ScheduleTimer(wipeFoamTargets, 10)
+			end
+		end
+	end
+
+	function mod:BrineyFoam(args)
+		markFoam(self, args.destName)
+		if self:Me(args.destGUID) then
+			self:Message(args.spellId, "Neutral", "Alarm", CL.you:format(args.spellName))
+			self:Say(args.spellId, ("{rt6} %s {rt6}"):format(args.spellName))
+			self:Flash(args.spellId)
+		end
+	end
+
+	function mod:FlamingFoam(args)
+		markFoam(self, args.destName)
+		if self:Me(args.destGUID) then
+			self:Message(args.spellId, "Important", "Alert", CL.you:format(args.spellName))
+			self:Say(args.spellId, ("{rt7} %s {rt7}"):format(args.spellName))
+			self:Flash(args.spellId)
+		end
+	end
+
+	function mod:ShadowyFoam(args)
+		markFoam(self, args.destName)
+		if self:Me(args.destGUID) then
+			self:Message(args.spellId, "Attention", "Warning", CL.you:format(args.spellName)) -- purple message would be appropriate
+			self:Say(args.spellId, ("{rt3} %s {rt3}"):format(args.spellName))
+			self:Flash(args.spellId)
+		end
 	end
 end
 
-function mod:FlamingFoam(args)
-	if self:Me(args.destGUID) then
-		self:Message(args.spellId, "Important", "Alert", CL.you:format(args.spellName))
-		self:Say(args.spellId, ("{rt7} %s {rt7}"):format(args.spellName))
-		self:Flash(args.spellId)
+function mod:StartLickTimer(count)
+	local data = self:Mythic() and lickTimer
+	local info = data and data[count]
+	if not info then
+		-- all out of lick data
+		return
 	end
-end
 
-function mod:ShadowyFoam(args)
-	if self:Me(args.destGUID) then
-		self:Message(args.spellId, "Attention", "Warning", CL.you:format(args.spellName)) -- purple message would be appropriate
-		self:Say(args.spellId, ("{rt3} %s {rt3}"):format(args.spellName))
-		self:Flash(args.spellId)
-	end
+	local length = floor(info - (GetTime() - phaseStartTime))
+
+	self:CDBar("lick", length, CL.count:format(L.lick, count), 228253)
+
+	self:ScheduleTimer("StartLickTimer", length, count + 1)
 end

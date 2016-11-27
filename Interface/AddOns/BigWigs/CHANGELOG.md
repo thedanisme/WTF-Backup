@@ -1,11 +1,10 @@
 # BigWigs
 
-## [v24.2](https://github.com/BigWigsMods/BigWigs/tree/v24.2) (2016-11-20) [](#top)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v24.1...v24.2)
+## [v25.1](https://github.com/BigWigsMods/BigWigs/tree/v25.1) (2016-11-25) [](#top)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v25...v25.1)
 
-- add breathCounter to breath timers  
-- Odyn: add timers for normal mode (#105)  
-- Update zhCN/zhTW locale  
-- Guarm: Mythic debuffs and timers  
-- Helya: Add counter to Orbs  
-- Odyn: Fix mythic Expel Light timers  
+- Add Soultakers module  
+- frFR Update (#115)  
+- Plugins/Statistics: Slightly faster health updates.  
+- Plugins/Statistics: Tweak print  
+- zhCN update. (#114)  

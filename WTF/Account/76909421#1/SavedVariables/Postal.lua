@@ -13,7 +13,7 @@ Postal3DB = {
 				"Callil|Stormrage|Alliance|100|PRIEST", -- [8]
 				"Callil|Turalyon|Alliance|100|PRIEST", -- [9]
 				"Callil|Turalyon|Horde|100|PRIEST", -- [10]
-				"Chucklefunk|Stormrage|Alliance|101|PRIEST", -- [11]
+				"Chucklefunk|Stormrage|Alliance|102|PRIEST", -- [11]
 				"Dalgrens|Bloodhoof|Horde|72|HUNTER", -- [12]
 				"Danoh|Stormrage|Alliance|100|HUNTER", -- [13]
 				"Dosnutz|Stormrage|Alliance|100|MAGE", -- [14]

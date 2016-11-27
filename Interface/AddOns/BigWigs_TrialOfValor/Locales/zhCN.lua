@@ -9,6 +9,12 @@ if L then
 	L[227500] = "|cFF008000正上|r (|T1323036:15:15:0:0:64:64:4:60:4:60|t)" -- Boss_OdunRunes_Green
 end
 
+L = BigWigs:NewBossLocale("Guarm-TrialOfValor", "zhCN")
+if L then
+	L.lick = "舔舐" -- For translators: common name of 228248, 228253, 228228
+	L.lick_desc = "显示不同舔舐的计时条。"
+end
+
 L = BigWigs:NewBossLocale("Helya-TrialOfValor", "zhCN")
 if L then
 	L.nearTrigger = "附近" -- |TInterface\\Icons\\inv_misc_monsterhorn_03.blp:20|t一头%s出现在海拉的附近！
@@ -17,4 +23,12 @@ if L then
 	L.tentacle_near_desc = "此选项可用于醒目或隐藏触须打击信息刷新在海拉附近。"
 	L.tentacle_far = "海拉“远处”触须"
 	L.tentacle_far_desc = "此选项可用于醒目或隐藏触须打击信息刷新在海拉远处。"
+
+	L.orb_melee = "宝珠：近战计时器"
+	L.orb_melee_desc = "显示腐化宝珠出现在近战的计时器。"
+	L.orb_melee_bar = "近战宝珠"
+
+	L.orb_ranged = "宝珠：远程计时器"
+	L.orb_ranged_desc = "显示腐化宝珠出现在远程的计时器。"
+	L.orb_ranged_bar = "远程宝珠"
 end

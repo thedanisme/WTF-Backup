@@ -14,7 +14,7 @@ VER 3 010000000000000A "LoF" "PRIEST_SPELL_LEAPOFFAITH_A"
 END
 VER 3 0100000000000004 "Penance" "INV_MISC_QUESTIONMARK"
 #showtooltip
-/use [@mouseover,exists,nodead][]Penance
+/use [@mouseover,harm,nodead][]Penance
 END
 VER 3 0100000000000005 "Plea" "INV_Misc_QuestionMark"
 #showtooltip
@@ -46,5 +46,5 @@ VER 3 0100000000000015 "SF" "INV_Misc_QuestionMark"
 END
 VER 3 0100000000000014 "SM" "INV_Misc_QuestionMark"
 #showtooltip
-/use [@mouseover,help,nodead][]Shadow Mend
+/use [@mouseover,nodead][]Shadow Mend
 END

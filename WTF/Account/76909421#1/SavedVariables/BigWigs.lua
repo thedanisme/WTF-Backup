@@ -23,9 +23,11 @@ BigWigs3DB = {
 		},
 		["BigWigs_Plugins_HeroesVoices"] = {
 		},
-		["BigWigs_Plugins_Colors"] = {
+		["BigWigs_Plugins_Common Auras"] = {
 		},
-		["BigWigs_Plugins_Raid Icons"] = {
+		["BigWigs_Plugins_Respawn"] = {
+		},
+		["BigWigs_Plugins_Colors"] = {
 		},
 		["BigWigs_Plugins_InfoBox"] = {
 		},
@@ -43,8 +45,6 @@ BigWigs3DB = {
 					["font"] = "Gotham-Narrow",
 				},
 			},
-		},
-		["BigWigs_Plugins_Common Auras"] = {
 		},
 		["BigWigs_Plugins_Super Emphasize"] = {
 			["profiles"] = {
@@ -69,6 +69,8 @@ BigWigs3DB = {
 				},
 			},
 		},
+		["BigWigs_Plugins_BossBlock"] = {
+		},
 		["BigWigs_Plugins_Messages"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -83,7 +85,7 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_BossBlock"] = {
+		["BigWigs_Plugins_Raid Icons"] = {
 		},
 		["BigWigs_Plugins_Pull"] = {
 			["profiles"] = {
@@ -91,8 +93,6 @@ BigWigs3DB = {
 					["countType"] = "normal",
 				},
 			},
-		},
-		["BigWigs_Plugins_Respawn"] = {
 		},
 	},
 	["global"] = {

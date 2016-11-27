@@ -253,6 +253,66 @@ PawnCommon = {
 			["PerCharacterOptions"] = {
 				["Druidann-Stormrage"] = {
 					["Visible"] = true,
+					["BestItems"] = {
+						["INVTYPE_HEAD"] = {
+							493.113470240167, -- [1]
+							"item:139726:0:0:0:0:0:0:0:0:102:0:11:2:3386:3382:0:0:0:0:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_FEET"] = {
+							375.987121475809, -- [1]
+							"item:139935:0:0:0:0:0:0:0:0:102:0:27:4:3394:1808:1477:1675:0:0:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_CLOAK"] = {
+							321.991994430908, -- [1]
+							"item:133639:0:0:0:0:0:0:0:0:102:0:23:3:1727:1492:1813:0:0:0:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_FINGER"] = {
+							347.465367211974, -- [1]
+							"item:134490:0:0:0:0:0:0:0:0:102:0:23:3:1727:1492:1813:0:0:0:0:0", -- [2]
+							0, -- [3]
+							333.049077619213, -- [4]
+							"item:137532:0:0:0:0:0:0:0:0:102:0:23:3:1727:1492:1813:0:0:0:0:0", -- [5]
+							0, -- [6]
+						},
+						["INVTYPE_WRIST"] = {
+							307.798120431605, -- [1]
+							"item:134368:0:0:0:0:0:0:0:0:102:0:23:3:1727:1502:1813:0:0:0:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_HAND"] = {
+							410.252001392273, -- [1]
+							"item:134371:0:0:0:0:0:0:0:0:102:0:23:3:1727:1502:1813:0:0:0:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_WAIST"] = {
+							483.980508179603, -- [1]
+							"item:142416:0:0:0:0:0:0:0:0:102:0:4:4:3505:1808:42:1467:0:0:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_NECK"] = {
+							380.224504002785, -- [1]
+							"item:134499:0:0:0:0:0:0:0:0:102:0:23:4:1727:1808:1532:3337:0:0:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_SHOULDER"] = {
+							481.69787678385, -- [1]
+							"item:141445:0:0:0:0:0:0:0:0:102:0:3:2:3466:1472:0:0:0:0:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_LEGS"] = {
+							479.478941872607, -- [1]
+							"item:134238:0:0:0:0:0:0:0:0:102:0:2:3:1726:1487:1675:0:0:0:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_CHEST"] = {
+							528.026801253046, -- [1]
+							"item:139208:0:0:0:0:0:0:0:0:102:0:4:2:3379:1457:0:0:0:0:0:0", -- [2]
+							0, -- [3]
+						},
+					},
 				},
 			},
 		},
@@ -436,23 +496,34 @@ PawnCommon = {
 			["UnenchantedColor"] = "2f95b0",
 			["SpecID"] = 3,
 		},
-		["\"MrRobot\":DEMONHUNTER2"] = {
-			["IconTexturePath"] = "Interface\\Icons\\ability_demonhunter_spectank",
-			["PerCharacterOptions"] = {
-				["Talthalador-Stormrage"] = {
-					["Visible"] = true,
-				},
+		["Priest: Holy"] = {
+			["NormalizationFactor"] = 1,
+			["Values"] = {
+				["IsOffHand"] = -1000000,
+				["IsFist"] = -1000000,
+				["Is2HMace"] = -1000000,
+				["CritRating"] = 0.3,
+				["HasteRating"] = 0.5,
+				["MasteryRating"] = 0.2,
+				["IsCrossbow"] = -1000000,
+				["IsPolearm"] = -1000000,
+				["IsGun"] = -1000000,
+				["Is2HAxe"] = -1000000,
+				["IsBow"] = -1000000,
+				["IsMail"] = -1000000,
+				["IsSword"] = -1000000,
+				["IsLeather"] = -1000000,
+				["IsAxe"] = -1000000,
+				["Intellect"] = 1,
+				["Versatility"] = 0.1,
+				["Is2HSword"] = -1000000,
+				["IsPlate"] = -1000000,
+				["IsShield"] = -1000000,
 			},
-			["Color"] = "a330c9",
-			["LocalizedName"] = "Demon Hunter: Vengeance",
-			["ClassID"] = 12,
-			["DoNotShow1HUpgrades"] = false,
-			["Role"] = "TANK",
-			["DoNotShow2HUpgrades"] = true,
 			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "MrRobot",
-			["UnenchantedColor"] = "7a2496",
-			["SpecID"] = 2,
+			["Color"] = "e0e0e0",
+			["PerCharacterOptions"] = {
+			},
 		},
 		["Assa no class trinket"] = {
 			["NormalizationFactor"] = 1,
@@ -515,21 +586,6 @@ PawnCommon = {
 			["UnenchantedColor"] = "6566b2",
 			["SpecID"] = 2,
 		},
-		["\"MrRobot\":MAGE1"] = {
-			["IconTexturePath"] = "Interface\\Icons\\Spell_Holy_MagicalSentry",
-			["PerCharacterOptions"] = {
-			},
-			["Color"] = "3fc7eb",
-			["LocalizedName"] = "Mage: Arcane",
-			["ClassID"] = 8,
-			["DoNotShow1HUpgrades"] = false,
-			["Role"] = "DAMAGER",
-			["DoNotShow2HUpgrades"] = false,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "MrRobot",
-			["UnenchantedColor"] = "2f95b0",
-			["SpecID"] = 1,
-		},
 		["\"MrRobot\":SHAMAN3"] = {
 			["IconTexturePath"] = "Interface\\Icons\\Spell_Nature_MagicImmunity",
 			["PerCharacterOptions"] = {
@@ -544,6 +600,21 @@ PawnCommon = {
 			["Provider"] = "MrRobot",
 			["UnenchantedColor"] = "0054a6",
 			["SpecID"] = 3,
+		},
+		["\"MrRobot\":MAGE1"] = {
+			["IconTexturePath"] = "Interface\\Icons\\Spell_Holy_MagicalSentry",
+			["PerCharacterOptions"] = {
+			},
+			["Color"] = "3fc7eb",
+			["LocalizedName"] = "Mage: Arcane",
+			["ClassID"] = 8,
+			["DoNotShow1HUpgrades"] = false,
+			["Role"] = "DAMAGER",
+			["DoNotShow2HUpgrades"] = false,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["UnenchantedColor"] = "2f95b0",
+			["SpecID"] = 1,
 		},
 		["\"MrRobot\":PALADIN2"] = {
 			["IconTexturePath"] = "Interface\\Icons\\Ability_Paladin_ShieldoftheTemplar",
@@ -665,34 +736,23 @@ PawnCommon = {
 			["UnenchantedColor"] = "bf3950",
 			["SpecID"] = 2,
 		},
-		["Priest: Holy"] = {
-			["NormalizationFactor"] = 1,
-			["Values"] = {
-				["IsOffHand"] = -1000000,
-				["IsFist"] = -1000000,
-				["Is2HMace"] = -1000000,
-				["CritRating"] = 0.3,
-				["HasteRating"] = 0.5,
-				["MasteryRating"] = 0.2,
-				["IsCrossbow"] = -1000000,
-				["IsPolearm"] = -1000000,
-				["IsGun"] = -1000000,
-				["Is2HAxe"] = -1000000,
-				["IsBow"] = -1000000,
-				["IsMail"] = -1000000,
-				["IsSword"] = -1000000,
-				["IsLeather"] = -1000000,
-				["IsAxe"] = -1000000,
-				["Intellect"] = 1,
-				["Versatility"] = 0.1,
-				["Is2HSword"] = -1000000,
-				["IsPlate"] = -1000000,
-				["IsShield"] = -1000000,
-			},
-			["UpgradesFollowSpecialization"] = true,
-			["Color"] = "e0e0e0",
+		["\"MrRobot\":DEMONHUNTER2"] = {
+			["IconTexturePath"] = "Interface\\Icons\\ability_demonhunter_spectank",
 			["PerCharacterOptions"] = {
+				["Talthalador-Stormrage"] = {
+					["Visible"] = true,
+				},
 			},
+			["Color"] = "a330c9",
+			["LocalizedName"] = "Demon Hunter: Vengeance",
+			["ClassID"] = 12,
+			["DoNotShow1HUpgrades"] = false,
+			["Role"] = "TANK",
+			["DoNotShow2HUpgrades"] = true,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["UnenchantedColor"] = "7a2496",
+			["SpecID"] = 2,
 		},
 		["\"MrRobot\":MAGE2"] = {
 			["IconTexturePath"] = "Interface\\Icons\\Spell_Fire_FireBolt02",

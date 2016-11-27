@@ -19,8 +19,8 @@ _detalhes_database = {
 		["tabelas"] = {
 			{
 				{
-					["combatId"] = 25,
 					["tipo"] = 2,
+					["combatId"] = 25,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -34,24 +34,24 @@ _detalhes_database = {
 								["Arcane Resonance <Cadraeus>"] = 22942,
 								["Cadraeus"] = 8454079,
 							},
+							["serial"] = "Player-60-0AAE98B4",
 							["pets"] = {
 								"Broll Bearmantle <Druidann>", -- [1]
 							},
-							["on_hold"] = false,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["classe"] = "DRUID",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 8884777.003722,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
+							["spec"] = 102,
 							["dps_started"] = false,
 							["end_time"] = 1480142235,
-							["friendlyfire_total"] = 0,
-							["spec"] = 102,
+							["on_hold"] = false,
+							["last_event"] = 1480142229,
 							["nome"] = "Druidann",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[164812] = {
 										["c_amt"] = 4,
@@ -74,13 +74,13 @@ _detalhes_database = {
 										["spellschool"] = 64,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 42345,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 20,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 42345,
 									},
 									[191259] = {
 										["c_amt"] = 0,
@@ -103,13 +103,13 @@ _detalhes_database = {
 										["spellschool"] = 4,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									[78674] = {
 										["c_amt"] = 1,
@@ -132,13 +132,13 @@ _detalhes_database = {
 										["spellschool"] = 72,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 407535,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 6,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 407535,
 									},
 									[202768] = {
 										["c_amt"] = 0,
@@ -161,13 +161,13 @@ _detalhes_database = {
 										["spellschool"] = 64,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									[190984] = {
 										["c_amt"] = 1,
@@ -190,13 +190,13 @@ _detalhes_database = {
 										["spellschool"] = 8,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 343190,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 5,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 343190,
 									},
 									[203001] = {
 										["c_amt"] = 0,
@@ -219,13 +219,13 @@ _detalhes_database = {
 										["spellschool"] = 64,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									[194153] = {
 										["c_amt"] = 2,
@@ -248,13 +248,13 @@ _detalhes_database = {
 										["spellschool"] = 64,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 210571,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 5,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 210571,
 									},
 									[164815] = {
 										["c_amt"] = 6,
@@ -279,13 +279,13 @@ _detalhes_database = {
 										["spellschool"] = 8,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 24506,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 27,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 24506,
 									},
 									[202767] = {
 										["c_amt"] = 0,
@@ -308,13 +308,13 @@ _detalhes_database = {
 										["spellschool"] = 64,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									[202771] = {
 										["c_amt"] = 1,
@@ -338,13 +338,13 @@ _detalhes_database = {
 										["spellschool"] = 64,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 556138,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 556138,
 									},
 									[202497] = {
 										["c_amt"] = 0,
@@ -367,30 +367,29 @@ _detalhes_database = {
 										["spellschool"] = 72,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 10,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["total"] = 9216699.003722,
-							["serial"] = "Player-60-0AAE98B4",
+							["friendlyfire_total"] = 0,
 							["last_dps"] = 192014.562577542,
 							["custom"] = 0,
-							["last_event"] = 1480142229,
+							["tipo"] = 1,
 							["damage_taken"] = 630254.003722,
 							["start_time"] = 1480142187,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["total"] = 9216699.003722,
 						}, -- [1]
 						{
 							["flag_original"] = 8465,
-							["serial"] = "Creature-0-3782-1220-20798-109839-0000392C27",
 							["damage_from"] = {
 								["Cadraeus"] = true,
 							},
@@ -404,13 +403,13 @@ _detalhes_database = {
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 331922.004024,
+							["classe"] = "PET",
 							["dps_started"] = false,
 							["total"] = 331922.004024,
-							["classe"] = "PET",
+							["serial"] = "Creature-0-3782-1220-20798-109839-0000392C27",
 							["ownerName"] = "Druidann",
 							["nome"] = "Broll Bearmantle <Druidann>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
@@ -432,15 +431,15 @@ _detalhes_database = {
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["b_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 24,
-										["r_amt"] = 0,
 										["c_min"] = 8816,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 24,
+										["a_dmg"] = 0,
+										["r_amt"] = 0,
 									}, -- [1]
 									[218797] = {
 										["c_amt"] = 7,
@@ -463,13 +462,13 @@ _detalhes_database = {
 										["spellschool"] = 64,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 3940,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 18,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 3940,
 									},
 									[218803] = {
 										["c_amt"] = 2,
@@ -492,32 +491,33 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 25675,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 4,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 25675,
 									},
 								},
-							},
-							["friendlyfire"] = {
+								["tipo"] = 2,
 							},
 							["end_time"] = 1480142235,
+							["tipo"] = 1,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["tipo"] = 1,
+							["last_event"] = 1480142228,
 							["damage_taken"] = 40962.004024,
 							["start_time"] = 1480142188,
 							["delay"] = 0,
-							["last_event"] = 1480142228,
+							["friendlyfire"] = {
+							},
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 25,
 					["tipo"] = 3,
+					["combatId"] = 25,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -529,8 +529,7 @@ _detalhes_database = {
 							["targets"] = {
 								["Druidann"] = 439038,
 							},
-							["targets_absorbs"] = {
-							},
+							["delay"] = 0,
 							["pets"] = {
 							},
 							["totalover_without_pet"] = 0.002434,
@@ -540,20 +539,14 @@ _detalhes_database = {
 							["classe"] = "DRUID",
 							["totalover"] = 101116.002434,
 							["total_without_pet"] = 439038.002434,
-							["end_time"] = 1480142235,
 							["iniciar_hps"] = false,
+							["heal_enemy_amt"] = 0,
 							["fight_component"] = true,
 							["total"] = 439038.002434,
-							["heal_enemy_amt"] = 0,
-							["last_event"] = 1480142232,
-							["nome"] = "Druidann",
 							["spec"] = 102,
-							["grupo"] = true,
 							["healing_taken"] = 439038.002434,
-							["heal_enemy"] = {
-							},
+							["nome"] = "Druidann",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[213672] = {
 										["c_amt"] = 0,
@@ -578,8 +571,8 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["c_min"] = 0,
 										["n_curado"] = 0,
-										["m_healed"] = 0,
 										["n_amt"] = 1,
+										["m_healed"] = 0,
 										["absorbed"] = 0,
 									},
 									[145109] = {
@@ -604,35 +597,41 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["c_min"] = 0,
 										["n_curado"] = 439038,
-										["m_healed"] = 0,
 										["n_amt"] = 9,
+										["m_healed"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
+							["grupo"] = true,
+							["end_time"] = 1480142235,
+							["heal_enemy"] = {
+							},
+							["last_event"] = 1480142232,
 							["custom"] = 0,
 							["tipo"] = 2,
 							["on_hold"] = false,
 							["start_time"] = 1480142190,
-							["delay"] = 0,
 							["serial"] = "Player-60-0AAE98B4",
+							["targets_absorbs"] = {
+							},
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 25,
 					["tipo"] = 7,
+					["combatId"] = 25,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 25,
 					["tipo"] = 9,
+					["combatId"] = 25,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[218797] = {
 										["uptime"] = 48,
@@ -644,11 +643,11 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 288,
 							["classe"] = "DRUID",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[224772] = {
 										["uptime"] = 48,
@@ -671,9 +670,9 @@ _detalhes_database = {
 									[191608] = {
 										["actived_at"] = 1480142187,
 										["uptime"] = 0,
-										["activedamt"] = 1,
-										["id"] = 191608,
 										["actived"] = true,
+										["id"] = 191608,
+										["activedamt"] = 1,
 										["targets"] = {
 										},
 										["counter"] = 0,
@@ -715,6 +714,7 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 48,
@@ -736,13 +736,13 @@ _detalhes_database = {
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1480142235,
+							["tipo"] = 4,
 							["nome"] = "Druidann",
 							["pets"] = {
 								"Broll Bearmantle <Druidann>", -- [1]
 							},
 							["serial"] = "Player-60-0AAE98B4",
-							["tipo"] = 4,
+							["last_event"] = 1480142235,
 						}, -- [1]
 						{
 							["flag_original"] = 8465,
@@ -750,20 +750,20 @@ _detalhes_database = {
 							["nome"] = "Broll Bearmantle <Druidann>",
 							["pets"] = {
 							},
+							["last_event"] = 0,
 							["classe"] = "PET",
 							["tipo"] = 4,
+							["serial"] = "Creature-0-3782-1220-20798-109839-0000392C27",
 							["spell_cast"] = {
 								[218803] = 6,
 								[218796] = 2,
 							},
-							["serial"] = "Creature-0-3782-1220-20798-109839-0000392C27",
-							["last_event"] = 0,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 25,
 					["tipo"] = 2,
+					["combatId"] = 25,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -776,7 +776,7 @@ _detalhes_database = {
 				["combat_counter"] = 1782,
 				["playing_solo"] = true,
 				["totals"] = {
-					9216698.938898, -- [1]
+					9216698.927736, -- [1]
 					439037.985332, -- [2]
 					{
 						0, -- [1]
@@ -787,10 +787,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -807,14 +807,14 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 							["Druidann"] = 439038.002434,
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -825,6 +825,7 @@ _detalhes_database = {
 				["end_time"] = 215203.407,
 				["combat_id"] = 25,
 				["instance_type"] = "none",
+				["hasSaved"] = true,
 				["frags"] = {
 					["Astrix"] = 1,
 					["Nightborne Trapper"] = 1,
@@ -833,7 +834,7 @@ _detalhes_database = {
 					["Arcane Resonance"] = 12,
 				},
 				["data_fim"] = "01:37:15",
-				["data_inicio"] = "01:36:28",
+				["contra"] = "Cadraeus",
 				["CombatSkillCache"] = {
 				},
 				["totals_grupo"] = {
@@ -848,23 +849,23 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
 				["start_time"] = 215155.833,
-				["contra"] = "Cadraeus",
 				["TimeData"] = {
 				},
+				["data_inicio"] = "01:36:28",
 			}, -- [1]
 			{
 				{
-					["combatId"] = 24,
 					["tipo"] = 2,
+					["combatId"] = 24,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -874,25 +875,24 @@ _detalhes_database = {
 							["targets"] = {
 								["Nightborne Trapper"] = 1051988,
 							},
+							["serial"] = "Player-60-0AAE98B4",
 							["pets"] = {
 								"Broll Bearmantle <Druidann>", -- [1]
 							},
-							["total"] = 1051988.001199,
-							["on_hold"] = false,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["classe"] = "DRUID",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 1015401.001199,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1480142156,
-							["friendlyfire_total"] = 0,
 							["spec"] = 102,
+							["dps_started"] = false,
+							["total"] = 1051988.001199,
+							["on_hold"] = false,
+							["last_event"] = 1480142155,
 							["nome"] = "Druidann",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[190984] = {
 										["c_amt"] = 0,
@@ -915,13 +915,13 @@ _detalhes_database = {
 										["spellschool"] = 8,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									[164812] = {
 										["c_amt"] = 1,
@@ -944,13 +944,13 @@ _detalhes_database = {
 										["spellschool"] = 64,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 43505,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 43505,
 									},
 									[78674] = {
 										["c_amt"] = 0,
@@ -973,13 +973,13 @@ _detalhes_database = {
 										["spellschool"] = 72,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									[164815] = {
 										["c_amt"] = 2,
@@ -1002,13 +1002,13 @@ _detalhes_database = {
 										["spellschool"] = 8,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 33989,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 33989,
 									},
 									[194153] = {
 										["c_amt"] = 1,
@@ -1031,29 +1031,29 @@ _detalhes_database = {
 										["spellschool"] = 64,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 292054,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 292054,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-60-0AAE98B4",
+							["end_time"] = 1480142156,
 							["last_dps"] = 105198.8001199,
 							["custom"] = 0,
-							["last_event"] = 1480142155,
+							["tipo"] = 1,
 							["damage_taken"] = 102922.001199,
 							["start_time"] = 1480142148,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 8465,
-							["serial"] = "Creature-0-3782-1220-20798-109839-0000392C27",
 							["damage_from"] = {
 							},
 							["targets"] = {
@@ -1066,13 +1066,13 @@ _detalhes_database = {
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 36587.001803,
+							["classe"] = "PET",
 							["dps_started"] = false,
 							["total"] = 36587.001803,
-							["classe"] = "PET",
+							["serial"] = "Creature-0-3782-1220-20798-109839-0000392C27",
 							["ownerName"] = "Druidann",
 							["nome"] = "Broll Bearmantle <Druidann>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -1095,13 +1095,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									}, -- [1]
 									[218803] = {
 										["c_amt"] = 0,
@@ -1124,13 +1124,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									[218797] = {
 										["c_amt"] = 0,
@@ -1153,32 +1153,33 @@ _detalhes_database = {
 										["spellschool"] = 64,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
-							},
-							["friendlyfire"] = {
+								["tipo"] = 2,
 							},
 							["end_time"] = 1480142156,
+							["tipo"] = 1,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["tipo"] = 1,
+							["last_event"] = 1480142155,
 							["damage_taken"] = 0.001803,
 							["start_time"] = 1480142153,
 							["delay"] = 0,
-							["last_event"] = 1480142155,
+							["friendlyfire"] = {
+							},
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 24,
 					["tipo"] = 3,
+					["combatId"] = 24,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -1190,30 +1191,29 @@ _detalhes_database = {
 							["targets"] = {
 								["Druidann"] = 48782,
 							},
-							["last_event"] = 1480142152,
+							["serial"] = "Player-60-0AAE98B4",
 							["pets"] = {
 							},
-							["totalover_without_pet"] = 0.006873,
+							["iniciar_hps"] = false,
 							["targets_overheal"] = {
 								["Druidann"] = 16539,
 							},
 							["heal_enemy_amt"] = 0,
 							["totalover"] = 16539.006873,
 							["total_without_pet"] = 32243.006873,
-							["iniciar_hps"] = false,
+							["totalover_without_pet"] = 0.006873,
 							["classe"] = "DRUID",
 							["fight_component"] = true,
-							["total"] = 32243.006873,
-							["serial"] = "Player-60-0AAE98B4",
+							["end_time"] = 1480142156,
 							["healing_taken"] = 32243.006873,
+							["total"] = 32243.006873,
 							["nome"] = "Druidann",
 							["spec"] = 102,
 							["grupo"] = true,
-							["end_time"] = 1480142156,
+							["tipo"] = 2,
 							["heal_enemy"] = {
 							},
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[145109] = {
 										["c_amt"] = 0,
@@ -1238,14 +1238,15 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["c_min"] = 0,
 										["n_curado"] = 32243,
-										["m_healed"] = 0,
 										["n_amt"] = 1,
+										["m_healed"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["custom"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 1480142152,
 							["on_hold"] = false,
 							["start_time"] = 1480142152,
 							["delay"] = 0,
@@ -1255,14 +1256,14 @@ _detalhes_database = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 24,
 					["tipo"] = 7,
+					["combatId"] = 24,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 24,
 					["tipo"] = 9,
+					["combatId"] = 24,
 					["_ActorTable"] = {
 						{
 							["fight_component"] = true,
@@ -1285,7 +1286,6 @@ _detalhes_database = {
 							["classe"] = "DRUID",
 							["tipo"] = 4,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[224772] = {
 										["uptime"] = 8,
@@ -1326,9 +1326,9 @@ _detalhes_database = {
 									[191610] = {
 										["actived_at"] = 1480142148,
 										["uptime"] = 0,
-										["activedamt"] = 1,
-										["id"] = 191610,
 										["actived"] = true,
+										["id"] = 191610,
+										["activedamt"] = 1,
 										["targets"] = {
 										},
 										["counter"] = 0,
@@ -1352,6 +1352,7 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["serial"] = "Player-60-0AAE98B4",
 							["last_event"] = 1480142156,
@@ -1362,21 +1363,21 @@ _detalhes_database = {
 							["nome"] = "Broll Bearmantle <Druidann>",
 							["pets"] = {
 							},
+							["last_event"] = 0,
 							["classe"] = "PET",
 							["tipo"] = 4,
+							["serial"] = "Creature-0-3782-1220-20798-109839-0000392C27",
 							["spell_cast"] = {
 								[218605] = 1,
 								[218796] = 1,
 								[218803] = 1,
 							},
-							["serial"] = "Creature-0-3782-1220-20798-109839-0000392C27",
-							["last_event"] = 0,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 24,
 					["tipo"] = 2,
+					["combatId"] = 24,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -1400,10 +1401,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -1420,14 +1421,14 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 							["Druidann"] = 32243.006873,
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -1438,12 +1439,13 @@ _detalhes_database = {
 				["end_time"] = 215124.859,
 				["combat_id"] = 24,
 				["instance_type"] = "none",
+				["hasSaved"] = true,
 				["frags"] = {
 					["Nightborne Trapper"] = 1,
 					["Leystone Basilisk"] = 1,
 				},
 				["data_fim"] = "01:35:57",
-				["data_inicio"] = "01:35:48",
+				["contra"] = "Nightborne Trapper",
 				["CombatSkillCache"] = {
 				},
 				["totals_grupo"] = {
@@ -1458,23 +1460,23 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
 				["start_time"] = 215116.568,
-				["contra"] = "Nightborne Trapper",
 				["TimeData"] = {
 				},
+				["data_inicio"] = "01:35:48",
 			}, -- [2]
 			{
 				{
-					["combatId"] = 23,
 					["tipo"] = 2,
+					["combatId"] = 23,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -1484,24 +1486,24 @@ _detalhes_database = {
 							["targets"] = {
 								["Nightborne Trapper"] = 1084973,
 							},
+							["serial"] = "Player-60-0AAE98B4",
 							["pets"] = {
 								"Broll Bearmantle <Druidann>", -- [1]
 							},
-							["on_hold"] = false,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["classe"] = "DRUID",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 1028525.007094,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
+							["spec"] = 102,
 							["dps_started"] = false,
 							["end_time"] = 1480142141,
-							["friendlyfire_total"] = 0,
-							["spec"] = 102,
+							["on_hold"] = false,
+							["last_event"] = 1480142141,
 							["nome"] = "Druidann",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[190984] = {
 										["c_amt"] = 1,
@@ -1524,13 +1526,13 @@ _detalhes_database = {
 										["spellschool"] = 8,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 205676,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 205676,
 									},
 									[164812] = {
 										["c_amt"] = 1,
@@ -1553,13 +1555,13 @@ _detalhes_database = {
 										["spellschool"] = 64,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 44811,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 44811,
 									},
 									[78674] = {
 										["c_amt"] = 0,
@@ -1582,13 +1584,13 @@ _detalhes_database = {
 										["spellschool"] = 72,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									[164815] = {
 										["c_amt"] = 0,
@@ -1611,13 +1613,13 @@ _detalhes_database = {
 										["spellschool"] = 8,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 5,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									[194153] = {
 										["c_amt"] = 0,
@@ -1640,13 +1642,13 @@ _detalhes_database = {
 										["spellschool"] = 64,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									[203001] = {
 										["c_amt"] = 0,
@@ -1669,30 +1671,29 @@ _detalhes_database = {
 										["spellschool"] = 64,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["total"] = 1084973.007094,
-							["serial"] = "Player-60-0AAE98B4",
+							["friendlyfire_total"] = 0,
 							["last_dps"] = 108497.3007094,
 							["custom"] = 0,
-							["last_event"] = 1480142141,
+							["tipo"] = 1,
 							["damage_taken"] = 76565.007094,
 							["start_time"] = 1480142134,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["total"] = 1084973.007094,
 						}, -- [1]
 						{
 							["flag_original"] = 8465,
-							["serial"] = "Creature-0-3782-1220-20798-109839-0000392C27",
 							["damage_from"] = {
 							},
 							["targets"] = {
@@ -1705,13 +1706,13 @@ _detalhes_database = {
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 56448.002492,
+							["classe"] = "PET",
 							["dps_started"] = false,
 							["total"] = 56448.002492,
-							["classe"] = "PET",
+							["serial"] = "Creature-0-3782-1220-20798-109839-0000392C27",
 							["ownerName"] = "Druidann",
 							["nome"] = "Broll Bearmantle <Druidann>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 2,
@@ -1734,13 +1735,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 8816,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 8816,
 									}, -- [1]
 									[218797] = {
 										["c_amt"] = 0,
@@ -1763,13 +1764,13 @@ _detalhes_database = {
 										["spellschool"] = 64,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									[218803] = {
 										["c_amt"] = 0,
@@ -1792,44 +1793,45 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
-							},
-							["friendlyfire"] = {
+								["tipo"] = 2,
 							},
 							["end_time"] = 1480142141,
+							["tipo"] = 1,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["tipo"] = 1,
+							["last_event"] = 1480142141,
 							["damage_taken"] = 0.002492,
 							["start_time"] = 1480142138,
 							["delay"] = 0,
-							["last_event"] = 1480142141,
+							["friendlyfire"] = {
+							},
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 23,
 					["tipo"] = 3,
+					["combatId"] = 23,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 23,
 					["tipo"] = 7,
+					["combatId"] = 23,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 23,
 					["tipo"] = 9,
+					["combatId"] = 23,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
@@ -1837,21 +1839,20 @@ _detalhes_database = {
 							},
 							["spec"] = 102,
 							["grupo"] = true,
+							["last_event"] = 1480142141,
+							["pets"] = {
+								"Broll Bearmantle <Druidann>", -- [1]
+							},
+							["nome"] = "Druidann",
+							["buff_uptime"] = 42,
+							["tipo"] = 4,
 							["spell_cast"] = {
 								[190984] = 2,
 								[8921] = 1,
 								[194153] = 1,
 								[78674] = 1,
 							},
-							["buff_uptime"] = 42,
-							["nome"] = "Druidann",
-							["pets"] = {
-								"Broll Bearmantle <Druidann>", -- [1]
-							},
-							["last_event"] = 1480142141,
-							["classe"] = "DRUID",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[224772] = {
 										["uptime"] = 7,
@@ -1892,9 +1893,9 @@ _detalhes_database = {
 									[191610] = {
 										["actived_at"] = 1480142134,
 										["uptime"] = 0,
-										["activedamt"] = 1,
-										["id"] = 191610,
 										["actived"] = true,
+										["id"] = 191610,
+										["activedamt"] = 1,
 										["targets"] = {
 										},
 										["counter"] = 0,
@@ -1918,9 +1919,10 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["serial"] = "Player-60-0AAE98B4",
-							["tipo"] = 4,
+							["classe"] = "DRUID",
 						}, -- [1]
 						{
 							["flag_original"] = 8465,
@@ -1928,21 +1930,21 @@ _detalhes_database = {
 							["nome"] = "Broll Bearmantle <Druidann>",
 							["pets"] = {
 							},
+							["last_event"] = 0,
 							["classe"] = "PET",
 							["tipo"] = 4,
+							["serial"] = "Creature-0-3782-1220-20798-109839-0000392C27",
 							["spell_cast"] = {
 								[218605] = 1,
 								[218796] = 1,
 								[218803] = 1,
 							},
-							["serial"] = "Creature-0-3782-1220-20798-109839-0000392C27",
-							["last_event"] = 0,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 23,
 					["tipo"] = 2,
+					["combatId"] = 23,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -1966,10 +1968,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -1986,13 +1988,13 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -2003,12 +2005,13 @@ _detalhes_database = {
 				["end_time"] = 215110.186,
 				["combat_id"] = 23,
 				["instance_type"] = "none",
+				["hasSaved"] = true,
 				["frags"] = {
 					["Nightborne Trapper"] = 1,
 					["Thicket Hunter"] = 1,
 				},
 				["data_fim"] = "01:35:42",
-				["data_inicio"] = "01:35:35",
+				["contra"] = "Nightborne Trapper",
 				["CombatSkillCache"] = {
 				},
 				["totals_grupo"] = {
@@ -2023,23 +2026,23 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
 				["start_time"] = 215102.946,
-				["contra"] = "Nightborne Trapper",
 				["TimeData"] = {
 				},
+				["data_inicio"] = "01:35:35",
 			}, -- [3]
 			{
 				{
-					["combatId"] = 22,
 					["tipo"] = 2,
+					["combatId"] = 22,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -2049,24 +2052,24 @@ _detalhes_database = {
 								["Trapped Thicket Hunter"] = 67976,
 								["Nightborne Trapper"] = 1175528,
 							},
+							["serial"] = "Player-60-0AAE98B4",
 							["pets"] = {
 								"Broll Bearmantle <Druidann>", -- [1]
 							},
-							["on_hold"] = false,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["classe"] = "DRUID",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 1196047.002369,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
+							["spec"] = 102,
 							["dps_started"] = false,
 							["end_time"] = 1480142130,
-							["friendlyfire_total"] = 0,
-							["spec"] = 102,
+							["on_hold"] = false,
+							["last_event"] = 1480142130,
 							["nome"] = "Druidann",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[202771] = {
 										["c_amt"] = 0,
@@ -2089,13 +2092,13 @@ _detalhes_database = {
 										["spellschool"] = 64,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									[164812] = {
 										["c_amt"] = 1,
@@ -2118,13 +2121,13 @@ _detalhes_database = {
 										["spellschool"] = 64,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 44810,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 44810,
 									},
 									[78674] = {
 										["c_amt"] = 0,
@@ -2147,13 +2150,13 @@ _detalhes_database = {
 										["spellschool"] = 72,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									[164815] = {
 										["c_amt"] = 1,
@@ -2177,13 +2180,13 @@ _detalhes_database = {
 										["spellschool"] = 8,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 33988,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 6,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 33988,
 									},
 									[191259] = {
 										["c_amt"] = 1,
@@ -2206,30 +2209,29 @@ _detalhes_database = {
 										["spellschool"] = 4,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 154773,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 154773,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["total"] = 1243504.002369,
-							["serial"] = "Player-60-0AAE98B4",
+							["friendlyfire_total"] = 0,
 							["last_dps"] = 124350.4002369,
 							["custom"] = 0,
-							["last_event"] = 1480142130,
+							["tipo"] = 1,
 							["damage_taken"] = 0.002369,
 							["start_time"] = 1480142123,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["total"] = 1243504.002369,
 						}, -- [1]
 						{
 							["flag_original"] = 8465,
-							["serial"] = "Creature-0-3782-1220-20798-109839-0000392C27",
 							["damage_from"] = {
 								["Nightborne Trapper"] = true,
 							},
@@ -2243,13 +2245,13 @@ _detalhes_database = {
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 47457.00794,
+							["classe"] = "PET",
 							["dps_started"] = false,
 							["total"] = 47457.00794,
-							["classe"] = "PET",
+							["serial"] = "Creature-0-3782-1220-20798-109839-0000392C27",
 							["ownerName"] = "Druidann",
 							["nome"] = "Broll Bearmantle <Druidann>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -2271,15 +2273,15 @@ _detalhes_database = {
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["b_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 3,
+										["a_dmg"] = 0,
+										["r_amt"] = 0,
 									}, -- [1]
 									[218803] = {
 										["c_amt"] = 1,
@@ -2302,44 +2304,45 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 25675,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 25675,
 									},
 								},
-							},
-							["friendlyfire"] = {
+								["tipo"] = 2,
 							},
 							["end_time"] = 1480142130,
+							["tipo"] = 1,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["tipo"] = 1,
+							["last_event"] = 1480142129,
 							["damage_taken"] = 173379.00794,
 							["start_time"] = 1480142126,
 							["delay"] = 0,
-							["last_event"] = 1480142129,
+							["friendlyfire"] = {
+							},
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 22,
 					["tipo"] = 3,
+					["combatId"] = 22,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 22,
 					["tipo"] = 7,
+					["combatId"] = 22,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 22,
 					["tipo"] = 9,
+					["combatId"] = 22,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
@@ -2347,20 +2350,19 @@ _detalhes_database = {
 							},
 							["spec"] = 102,
 							["grupo"] = true,
+							["last_event"] = 1480142130,
+							["pets"] = {
+								"Broll Bearmantle <Druidann>", -- [1]
+							},
+							["nome"] = "Druidann",
+							["buff_uptime"] = 42,
+							["tipo"] = 4,
 							["spell_cast"] = {
 								[202771] = 1,
 								[8921] = 1,
 								[78674] = 1,
 							},
-							["buff_uptime"] = 42,
-							["nome"] = "Druidann",
-							["pets"] = {
-								"Broll Bearmantle <Druidann>", -- [1]
-							},
-							["last_event"] = 1480142130,
-							["classe"] = "DRUID",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[224772] = {
 										["uptime"] = 7,
@@ -2401,9 +2403,9 @@ _detalhes_database = {
 									[191610] = {
 										["actived_at"] = 1480142123,
 										["uptime"] = 0,
-										["activedamt"] = 1,
-										["id"] = 191610,
 										["actived"] = true,
+										["id"] = 191610,
+										["activedamt"] = 1,
 										["targets"] = {
 										},
 										["counter"] = 0,
@@ -2427,9 +2429,10 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["serial"] = "Player-60-0AAE98B4",
-							["tipo"] = 4,
+							["classe"] = "DRUID",
 						}, -- [1]
 						{
 							["flag_original"] = 8465,
@@ -2437,20 +2440,20 @@ _detalhes_database = {
 							["nome"] = "Broll Bearmantle <Druidann>",
 							["pets"] = {
 							},
+							["last_event"] = 0,
 							["classe"] = "PET",
 							["tipo"] = 4,
+							["serial"] = "Creature-0-3782-1220-20798-109839-0000392C27",
 							["spell_cast"] = {
 								[218605] = 1,
 								[218803] = 1,
 							},
-							["serial"] = "Creature-0-3782-1220-20798-109839-0000392C27",
-							["last_event"] = 0,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 22,
 					["tipo"] = 2,
+					["combatId"] = 22,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -2474,10 +2477,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -2494,13 +2497,13 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -2511,13 +2514,14 @@ _detalhes_database = {
 				["end_time"] = 215098.727,
 				["combat_id"] = 22,
 				["instance_type"] = "none",
+				["hasSaved"] = true,
 				["frags"] = {
 					["Nightborne Exile"] = 1,
 					["Trapped Thicket Hunter"] = 1,
 					["Nightborne Trapper"] = 1,
 				},
 				["data_fim"] = "01:35:31",
-				["data_inicio"] = "01:35:24",
+				["contra"] = "Nightborne Trapper",
 				["CombatSkillCache"] = {
 				},
 				["totals_grupo"] = {
@@ -2532,23 +2536,23 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
 				["start_time"] = 215092.342,
-				["contra"] = "Nightborne Trapper",
 				["TimeData"] = {
 				},
+				["data_inicio"] = "01:35:24",
 			}, -- [4]
 			{
 				{
-					["combatId"] = 21,
 					["tipo"] = 2,
+					["combatId"] = 21,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -2558,24 +2562,24 @@ _detalhes_database = {
 							["targets"] = {
 								["Nightborne Trapper"] = 1124571,
 							},
+							["serial"] = "Player-60-0AAE98B4",
 							["pets"] = {
 								"Broll Bearmantle <Druidann>", -- [1]
 							},
-							["on_hold"] = false,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["classe"] = "DRUID",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 1087725.004075,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
+							["spec"] = 102,
 							["dps_started"] = false,
 							["end_time"] = 1480142120,
-							["friendlyfire_total"] = 0,
-							["spec"] = 102,
+							["on_hold"] = false,
+							["last_event"] = 1480142119,
 							["nome"] = "Druidann",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[190984] = {
 										["c_amt"] = 0,
@@ -2598,13 +2602,13 @@ _detalhes_database = {
 										["spellschool"] = 8,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									[164812] = {
 										["c_amt"] = 0,
@@ -2627,13 +2631,13 @@ _detalhes_database = {
 										["spellschool"] = 64,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 4,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									[191259] = {
 										["c_amt"] = 0,
@@ -2656,13 +2660,13 @@ _detalhes_database = {
 										["spellschool"] = 4,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									[164815] = {
 										["c_amt"] = 0,
@@ -2685,13 +2689,13 @@ _detalhes_database = {
 										["spellschool"] = 8,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 4,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									[194153] = {
 										["c_amt"] = 0,
@@ -2714,13 +2718,13 @@ _detalhes_database = {
 										["spellschool"] = 64,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									[78674] = {
 										["c_amt"] = 1,
@@ -2743,30 +2747,29 @@ _detalhes_database = {
 										["spellschool"] = 72,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 407535,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 407535,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["total"] = 1124571.004075,
-							["serial"] = "Player-60-0AAE98B4",
+							["friendlyfire_total"] = 0,
 							["last_dps"] = 112457.1004075,
 							["custom"] = 0,
-							["last_event"] = 1480142119,
+							["tipo"] = 1,
 							["damage_taken"] = 71070.004075,
 							["start_time"] = 1480142111,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["total"] = 1124571.004075,
 						}, -- [1]
 						{
 							["flag_original"] = 8465,
-							["serial"] = "Creature-0-3782-1220-20798-109839-0000392C27",
 							["damage_from"] = {
 								["Nightborne Trapper"] = true,
 							},
@@ -2780,13 +2783,13 @@ _detalhes_database = {
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 36846.008679,
+							["classe"] = "PET",
 							["dps_started"] = false,
 							["total"] = 36846.008679,
-							["classe"] = "PET",
+							["serial"] = "Creature-0-3782-1220-20798-109839-0000392C27",
 							["ownerName"] = "Druidann",
 							["nome"] = "Broll Bearmantle <Druidann>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -2808,15 +2811,15 @@ _detalhes_database = {
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["b_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 3,
+										["a_dmg"] = 0,
+										["r_amt"] = 0,
 									}, -- [1]
 									[218803] = {
 										["c_amt"] = 0,
@@ -2839,13 +2842,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									[218797] = {
 										["c_amt"] = 0,
@@ -2868,32 +2871,33 @@ _detalhes_database = {
 										["spellschool"] = 64,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
-							},
-							["friendlyfire"] = {
+								["tipo"] = 2,
 							},
 							["end_time"] = 1480142120,
+							["tipo"] = 1,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["tipo"] = 1,
+							["last_event"] = 1480142118,
 							["damage_taken"] = 37096.008679,
 							["start_time"] = 1480142114,
 							["delay"] = 0,
-							["last_event"] = 1480142118,
+							["friendlyfire"] = {
+							},
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 21,
 					["tipo"] = 3,
+					["combatId"] = 21,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -2905,8 +2909,30 @@ _detalhes_database = {
 							["targets"] = {
 								["Druidann"] = 48782,
 							},
+							["total"] = 37646.005078,
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["targets_overheal"] = {
+								["Druidann"] = 11136,
+							},
+							["healing_taken"] = 37646.005078,
+							["totalover"] = 11136.005078,
+							["total_without_pet"] = 37646.005078,
+							["totalover_without_pet"] = 0.005078,
+							["heal_enemy_amt"] = 0,
+							["fight_component"] = true,
+							["end_time"] = 1480142120,
+							["classe"] = "DRUID",
+							["targets_absorbs"] = {
+							},
+							["nome"] = "Druidann",
+							["spec"] = 102,
+							["grupo"] = true,
+							["delay"] = 0,
+							["heal_enemy"] = {
+							},
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[145109] = {
 										["c_amt"] = 0,
@@ -2931,53 +2957,31 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["c_min"] = 0,
 										["n_curado"] = 37646,
-										["m_healed"] = 0,
 										["n_amt"] = 1,
+										["m_healed"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["targets_overheal"] = {
-								["Druidann"] = 11136,
-							},
-							["healing_taken"] = 37646.005078,
-							["totalover"] = 11136.005078,
-							["total_without_pet"] = 37646.005078,
-							["totalover_without_pet"] = 0.005078,
-							["heal_enemy_amt"] = 0,
-							["fight_component"] = true,
-							["end_time"] = 1480142120,
-							["serial"] = "Player-60-0AAE98B4",
-							["classe"] = "DRUID",
-							["nome"] = "Druidann",
-							["targets_absorbs"] = {
-							},
-							["grupo"] = true,
-							["total"] = 37646.005078,
-							["heal_enemy"] = {
-							},
-							["spec"] = 102,
 							["custom"] = 0,
 							["tipo"] = 2,
 							["on_hold"] = false,
 							["start_time"] = 1480142117,
-							["delay"] = 0,
+							["serial"] = "Player-60-0AAE98B4",
 							["last_event"] = 1480142117,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 21,
 					["tipo"] = 7,
+					["combatId"] = 21,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 21,
 					["tipo"] = 9,
+					["combatId"] = 21,
 					["_ActorTable"] = {
 						{
 							["fight_component"] = true,
@@ -3001,7 +3005,6 @@ _detalhes_database = {
 							["classe"] = "DRUID",
 							["tipo"] = 4,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[224772] = {
 										["uptime"] = 9,
@@ -3024,9 +3027,9 @@ _detalhes_database = {
 									[191608] = {
 										["actived_at"] = 1480142111,
 										["uptime"] = 0,
-										["activedamt"] = 1,
-										["id"] = 191608,
 										["actived"] = true,
+										["id"] = 191608,
+										["activedamt"] = 1,
 										["targets"] = {
 										},
 										["counter"] = 0,
@@ -3068,6 +3071,7 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["serial"] = "Player-60-0AAE98B4",
 							["last_event"] = 1480142120,
@@ -3078,21 +3082,21 @@ _detalhes_database = {
 							["nome"] = "Broll Bearmantle <Druidann>",
 							["pets"] = {
 							},
+							["last_event"] = 0,
 							["classe"] = "PET",
 							["tipo"] = 4,
+							["serial"] = "Creature-0-3782-1220-20798-109839-0000392C27",
 							["spell_cast"] = {
 								[218803] = 1,
 								[218796] = 1,
 								[218605] = 1,
 							},
-							["serial"] = "Creature-0-3782-1220-20798-109839-0000392C27",
-							["last_event"] = 0,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 21,
 					["tipo"] = 2,
+					["combatId"] = 21,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -3116,10 +3120,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -3136,14 +3140,14 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 							["Druidann"] = 37646.005078,
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -3154,11 +3158,12 @@ _detalhes_database = {
 				["end_time"] = 215088.576,
 				["combat_id"] = 21,
 				["instance_type"] = "none",
+				["hasSaved"] = true,
 				["frags"] = {
 					["Nightborne Trapper"] = 1,
 				},
 				["data_fim"] = "01:35:20",
-				["data_inicio"] = "01:35:12",
+				["contra"] = "Nightborne Trapper",
 				["CombatSkillCache"] = {
 				},
 				["totals_grupo"] = {
@@ -3173,23 +3178,25 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
 				["start_time"] = 215080.057,
-				["contra"] = "Nightborne Trapper",
 				["TimeData"] = {
 				},
+				["data_inicio"] = "01:35:12",
 			}, -- [5]
 		},
 	},
-	["combat_counter"] = 1782,
-	["last_version"] = "v7.1.0.3212",
+	["combat_counter"] = 1784,
+	["SoloTablesSaved"] = {
+		["Mode"] = 1,
+	},
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
 			["lasttry"] = {
@@ -3197,8 +3204,8 @@ _detalhes_database = {
 			["annouce"] = true,
 			["dpshistory"] = {
 			},
-			["dps"] = 0,
 			["author"] = "Details! Team",
+			["dps"] = 0,
 			["level"] = 1,
 			["enabled"] = true,
 		},
@@ -3221,8 +3228,8 @@ _detalhes_database = {
 		},
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["updatespeed"] = 1,
-			["animate"] = false,
 			["showamount"] = false,
+			["animate"] = false,
 			["useplayercolor"] = false,
 			["useclasscolors"] = false,
 			["author"] = "Details! Team",
@@ -3328,37 +3335,25 @@ _detalhes_database = {
 		["channel"] = "SELF",
 	},
 	["character_data"] = {
-		["logons"] = 73,
+		["logons"] = 75,
 	},
-	["cached_talents"] = {
-		["Player-60-0AAE98B4"] = {
-			22387, -- [1]
-			21655, -- [2]
-			22389, -- [3]
-			22159, -- [4]
-			18579, -- [5]
-			18570, -- [6]
-			18577, -- [7]
-		},
-	},
-	["savedbuffs"] = {
-	},
+	["last_instance_time"] = 1479989480,
+	["last_version"] = "v7.1.0.3212",
 	["tabela_instancias"] = {
 	},
 	["combat_id"] = 25,
 	["savedStyles"] = {
 	},
-	["last_encounter"] = "Helya",
-	["SoloTablesSaved"] = {
-		["Mode"] = 1,
+	["savedbuffs"] = {
 	},
+	["last_realversion"] = 115,
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
 		["only_first"] = 5,
 		["where"] = 1,
 	},
-	["last_instance_time"] = 1479989480,
+	["last_encounter"] = "Helya",
 	["local_instances_config"] = {
 		{
 			["segment"] = 0,
@@ -3394,7 +3389,17 @@ _detalhes_database = {
 			},
 		}, -- [1]
 	},
-	["last_realversion"] = 115,
+	["cached_talents"] = {
+		["Player-60-0AAE98B4"] = {
+			22387, -- [1]
+			21655, -- [2]
+			22389, -- [3]
+			22159, -- [4]
+			18579, -- [5]
+			18570, -- [6]
+			18577, -- [7]
+		},
+	},
 	["announce_cooldowns"] = {
 		["enabled"] = false,
 		["ignored_cooldowns"] = {

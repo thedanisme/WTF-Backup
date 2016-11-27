@@ -1,8 +1,11 @@
 
 --------------------------------------------------------------------------------
 -- TODO List:
--- - Fix/Remove untested mythic funcs:
---   - MistInfusion
+-- Fix/Remove untested mythic funcs:
+-- MistInfusion
+-- (Mythic) Update Lantarn of Darkness initial timer.
+-- (Mythic) Update Fetid Rot timers
+-- (Mythic) If marking Orb targets, in p3 there is double dps
 
 --------------------------------------------------------------------------------
 -- Module Declaration
@@ -19,10 +22,16 @@ mod.respawnTime = 30
 --
 
 local taintMarkerCount = 4
-local orbCount = 1
 local tentaclesUp = 9
 local phase = 1
+local orbCount = 1
+local tentacleCount = 1
+local taintCount = 1
 
+local timers = {
+	["Tentacle Strike"] = {35.4, 4.0, 32.0, 0.0, 35.6, 4.0, 31.3, 4.0, 4.0, 27.2, 4.0}, -- furthest data we have
+	["Orb of Corrosion"] = {6, 13.0, 13.0, 27.3, 10.7, 13.0, 25.0, 13.0, 13.0, 25.0, 13.0, 18.5, 19.5, 13.0, 13.0, 12.0, 12.0, 16.8, 8.2}, -- furthest data we have
+}
 --------------------------------------------------------------------------------
 -- Localization
 --
@@ -37,6 +46,16 @@ if L then
 	L.tentacle_far = "Tentacle FAR from Helya"
 	L.tentacle_far_desc = "This option can be used to emphasize or hide the messages when a Striking Tentacle spawns far from Helya."
 	L.tentacle_far_icon = 228730
+
+	L.orb_melee = "Orb: Melee timer"
+	L.orb_melee_desc = "Show the timer for the Orbs that spawn on Melee."
+	L.orb_melee_icon = 229119
+	L.orb_melee_bar = "Melee Orb"
+
+	L.orb_ranged = "Orb: Ranged timer"
+	L.orb_ranged_desc = "Show the timer for the Orbs that spawn on Ranged."
+	L.orb_ranged_icon = 229119
+	L.orb_ranged_bar = "Ranged Orb"
 
 	L.gripping_tentacle = -14309
 	L.grimelord = -14263
@@ -53,7 +72,10 @@ function mod:GetOptions()
 	return {
 		--[[ Helya ]]--
 		"stages",
+		"berserk",
 		{229119, "SAY", "FLASH"}, -- Orb of Corruption
+		"orb_melee",
+		"orb_ranged",
 		orbMarker,
 		227967, -- Bilewater Breath
 		227992, -- Bilewater Liquefaction
@@ -80,6 +102,9 @@ function mod:GetOptions()
 		228633, -- Give No Quarter
 		{228611, "TANK"}, -- Ghostly Rage
 
+		--[[ Decaying Minion ]]--
+		228127, -- Decay
+
 		--[[ Helarjer Mistcaller ]]--
 		228854, -- Mist Infusion
 
@@ -93,7 +118,7 @@ function mod:GetOptions()
 		[228300] = -14222, -- Stage Two: From the Mists
 		[228390] = -14263, -- Grimelord
 		[228619] = -14278, -- Night Watch Mariner
-		-- -14223, -- Decaying Minion
+		[228127] = -14223, -- Decaying Minion
 		[228854] = -14544, -- Helarjer Mistcaller
 		[230267] = -14224, -- Stage Three: Helheim's Last Stand
 	}
@@ -139,6 +164,11 @@ function mod:OnBossEnable()
 	self:Log("SPELL_CAST_SUCCESS", "GhostlyRage", 228611)
 	self:Death("MarinerDeath", 114809)
 
+	--[[ Decaying Minion ]]--
+	self:Log("SPELL_AURA_APPLIED", "DecayDamage", 228127)
+	self:Log("SPELL_PERIODIC_DAMAGE", "DecayDamage", 228127)
+	self:Log("SPELL_PERIODIC_MISSED", "DecayDamage", 228127)
+
 	--[[ Helarjer Mistcaller ]]--
 	self:Log("SPELL_CAST_START", "MistInfusion", 228854) -- untested
 
@@ -155,13 +185,19 @@ end
 
 function mod:OnEngage()
 	taintMarkerCount = 4
-	orbCount = 1
-	tentaclesUp = 9
+	tentaclesUp = self:Mythic() and 8 or 9
 	phase = 1
-	self:Bar(227967, 12) -- Bilewater Breath
-	self:Bar(228054, 19.5) -- Taint of the Sea
-	self:Bar(229119, 31, CL.count:format(self:SpellName(229119), orbCount)) -- Orb of Corruption
-	self:Bar(228730, 37) -- Tentacle Strike
+	orbCount = 1
+	tentacleCount = 1
+	taintCount = 1
+
+	self:Bar(227967, self:Mythic() and 10.5 or 12) -- Bilewater Breath
+	self:Bar(228054, self:Mythic() and 15.5 or 19.5, CL.count:format(self:SpellName(228054), taintCount)) -- Taint of the Sea
+	self:Bar("orb_ranged", self:Mythic() and 14 or 31, CL.count:format(L.orb_ranged_bar, orbCount), 229119) -- Orb of Corruption
+	self:Bar(228730, self:Mythic() and 35.3 or 36.7, CL.count:format(self:SpellName(228730), tentacleCount)) -- Tentacle Strike
+	if self:Mythic() then
+		self:Berserk(660)
+	end
 end
 
 --------------------------------------------------------------------------------
@@ -172,8 +208,9 @@ function mod:UNIT_SPELLCAST_SUCCEEDED(unit, spellName, _, _, spellId)
 	if spellId == 34098 then -- ClearAllDebuffs
 		phase = 2
 		self:Message("stages", "Neutral", "Long", CL.stage:format(2), false)
-		self:StopBar(CL.count:format(self:SpellName(229119, orbCount))) -- Orb of Corruption
-		self:StopBar(228054) -- Taint of the Sea
+		self:StopBar(CL.count:format(L.orb_ranged_bar, orbCount))
+		self:StopBar(CL.count:format(L.orb_melee_bar, orbCount))
+		self:StopBar(CL.count:format(self:SpellName(228054, taintCount))) -- Taint of the Sea
 		self:StopBar(227967) -- Bilewater Breath
 		if self:BarTimeLeft(CL.cast:format(self:SpellName(227967))) > 0 then -- Breath
 			-- if she transitions while casting the breath she won't spawn the blobs
@@ -192,10 +229,12 @@ function mod:UNIT_SPELLCAST_SUCCEEDED(unit, spellName, _, _, spellId)
 		self:StopBar(228300) -- Fury of the Maw
 		self:StopBar(CL.cast:format(self:SpellName(228300))) -- Cast: Fury of the Maw
 		self:StopBar(CL.adds)
-		self:Bar(230267, 15.5, CL.count:format(self:SpellName(230267), orbCount)) -- Orb of Corrosion
-		self:Bar(228565, 19.5) -- Corrupted Breath
-		self:Bar(228054, 24.5) -- Taint of the Sea
-		self:Bar(167910, 38, self:SpellName(L.mariner)) -- Kvaldir Longboat
+		self:Bar("orb_ranged", self:Mythic() and 6 or 15.5, CL.count:format(L.orb_ranged_bar, orbCount), 230267) -- Orb of Corrosion
+		self:Bar(228565, self:Mythic() and 10 or 19.5) -- Corrupted Breath
+		if not self:Mythic() then -- Taint comes instant in mythic, no need for timer.
+			self:Bar(228054, 24.5) -- Taint of the Sea
+		end
+		self:Bar(167910, self:Mythic() and 44 or 38, self:SpellName(L.mariner)) -- Kvaldir Longboat
 	elseif spellId == 228838 then -- Fetid Rot (Grimelord)
 		self:Bar(193367, 12.2) -- Fetid Rot
 	end
@@ -228,6 +267,9 @@ function mod:UNIT_HEALTH_FREQUENT(unit)
 	local hp = UnitHealth(unit) / UnitHealthMax(unit)*100
 	if phase == 2 then
 		local tentaclesLeft = floor((hp-40)/2.77)
+		if self:Mythic() then
+			tentaclesLeft = floor((hp-45)/2.5)
+		end
 		if tentaclesLeft < tentaclesUp then
 			tentaclesUp = tentaclesLeft
 			if tentaclesLeft >= 0 then
@@ -284,7 +326,11 @@ end
 
 function mod:OrbOfCorruption(args)
 	orbCount = orbCount + 1
-	self:Bar(229119, 28, CL.count:format(args.spellName, orbCount)) -- Orb of Corruption
+	if orbCount % 2 == 0 then
+		self:Bar("orb_melee", self:Mythic() and 24.3 or 28, CL.count:format(L.orb_melee_bar, orbCount), 229119) -- Orb of Corruption
+	else
+		self:Bar("orb_ranged", self:Mythic() and 24.3 or 28, CL.count:format(L.orb_ranged_bar, orbCount), 229119) -- Orb of Corruption
+	end
 end
 
 do
@@ -302,7 +348,7 @@ function mod:BilewaterBreath(args)
 	self:Message(args.spellId, "Important", "Alarm")
 	self:Bar(args.spellId, 3, CL.cast:format(args.spellName))
 	self:Bar(227992, self:Normal() and 25.5 or 20.5, CL.cast:format(self:SpellName(227992))) -- Bilewater Liquefaction
-	self:Bar(args.spellId, 52)
+	self:Bar(args.spellId, self:Mythic() and 42.5 or 52)
 end
 
 function mod:BilewaterRedox(args)
@@ -317,8 +363,9 @@ do
 	function mod:TaintOfTheSea(args)
 		list[#list+1] = args.destName
 		if #list == 1 then
-			self:ScheduleTimer("TargetMessage", 0.1, args.spellId, list, "Attention", "Alert", nil, nil, self:Dispeller("magic"))
-			self:CDBar(args.spellId, phase == 1 and 14.6 or 26)
+			self:ScheduleTimer("TargetMessage", 0.1, args.spellId, list, "Attention", "Alert", CL.count:format(args.spellName, taintCount), nil, self:Dispeller("magic"))
+			taintCount = taintCount + 1
+			self:CDBar(args.spellId, (self:Mythic() and (phase == 1 and 12.1 or 20)) or phase == 1 and 14.6 or 26, CL.count:format(args.spellName, taintCount))
 		end
 
 		if self:GetOption(taintMarker) then
@@ -341,8 +388,9 @@ end
 
 function mod:TentacleStrike(args)
 	-- Message is in RAID_BOSS_EMOTE
-	self:Bar(args.spellId, 6, CL.cast:format(args.spellName))
-	self:Bar(args.spellId, 42)
+	self:Bar(args.spellId, 6, CL.cast:format(CL.count:format(args.spellName, tentacleCount)))
+	tentacleCount = tentacleCount + 1
+	self:Bar(args.spellId, self:Mythic() and timers["Tentacle Strike"][tentacleCount] or 4, CL.count:format(self:SpellName(228730), tentacleCount))
 end
 
 do
@@ -490,21 +538,39 @@ function mod:MarinerDeath(args)
 	self:StopBar(228611) -- Ghostly Rage
 end
 
+--[[ Decaying Minion ]]--
+
+do
+	local prev = 0
+	function mod:DecayDamage(args)
+		local t = GetTime()
+		if self:Me(args.destGUID) and t-prev > 3 then
+			prev = t
+			self:Message(args.spellId, "Personal", "Alert", CL.underyou:format(args.spellName))
+		end
+	end
+end
+
 --[[ Helarjer Mistcaller ]]--
 function mod:MistInfusion(args) -- untested
 	self:Message(args.spellId, "Positive", self:Interrupter(args.sourceGUID) and "Info")
 end
 
 --[[ Stage Three: Helheim's Last Stand ]]--
+
 function mod:OrbOfCorrosion(args)
 	orbCount = orbCount + 1
-	self:Bar(230267, 17, CL.count:format(args.spellName, orbCount)) -- Orb of Corrosion
+	if orbCount % 2 == 0 then
+		self:Bar("orb_melee", self:Mythic() and timers["Orb of Corrosion"][orbCount] or 17.0, CL.count:format(L.orb_melee_bar, orbCount), 230267) -- Orb of Corruption
+	else
+		self:Bar("orb_ranged", self:Mythic() and timers["Orb of Corrosion"][orbCount] or 17.0, CL.count:format(L.orb_ranged_bar, orbCount), 230267) -- Orb of Corruption
+	end
 end
 
 function mod:CorruptedBreath(args)
 	self:Message(args.spellId, "Important", "Alarm")
 	self:Bar(args.spellId, 4.5, CL.cast:format(args.spellName))
-	self:Bar(args.spellId, 47.4)
+	self:Bar(args.spellId, self:Mythic() and 43 or 47)
 end
 
 function mod:DarkHatred(args)

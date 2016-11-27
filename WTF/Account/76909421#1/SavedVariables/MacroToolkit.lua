@@ -265,7 +265,7 @@ MacroToolkitDB = {
 				[132] = {
 					["icon"] = "136202",
 					["name"] = "SM",
-					["body"] = "#showtooltip\n/use [@mouseover,nodead][]Shadow Mend\n",
+					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Shadow Mend\n",
 				},
 				[123] = {
 					["icon"] = "463835",
@@ -345,59 +345,59 @@ MacroToolkitDB = {
 		["Emmarosa - Stormrage"] = {
 			["macros"] = {
 				[122] = {
-					["name"] = " TotT(Focus)",
 					["icon"] = "236283",
+					["name"] = " TotT(Focus)",
 					["body"] = "#showtooltip Tricks of the Trade\n/cast [@focus] Tricks of the Trade\n",
 				},
 				[126] = {
-					["name"] = "Poisons",
 					["icon"] = "132290",
+					["name"] = "Poisons",
 					["body"] = "#showtooltip\n/castsequence Deadly Poison, Crippling Poison\n",
 				},
 				[123] = {
-					["name"] = "BladeFlurry",
 					["icon"] = "134400",
+					["name"] = "BladeFlurry",
 					["body"] = "#showtooltip Blade Flurry\n/cancelaura Blade Flurry\n/use Blade Flurry\n",
 				},
 				[127] = {
-					["name"] = "Ring+Vendetta",
 					["icon"] = "1408451",
+					["name"] = "Ring+Vendetta",
 					["body"] = "#showtooltip 11\n/use 11\n/use Vendetta\n",
 				},
 				[124] = {
-					["name"] = "Pick Pocket",
 					["icon"] = "133669",
+					["name"] = "Pick Pocket",
 					["body"] = "#showtooltip Pick Pocket\n/use [stealth]Pick Pocket\n",
 				},
 				[128] = {
-					["name"] = "Riposte",
 					["icon"] = "134400",
+					["name"] = "Riposte",
 					["body"] = "#showtooltip Riposte\n/use [nostealth]Riposte\n",
 				},
+				[131] = {
+					["icon"] = "132320",
+					["name"] = "Stealth/Symbols",
+					["body"] = "#showtooltip Stealth\n/use Stealth\n/use Symbols of Death\n",
+				},
 				[121] = {
-					["name"] = " ",
 					["icon"] = "134400",
+					["name"] = " ",
 					["body"] = "#showtooltip Adrenaline Rush\n/use Adrenaline Rush\n/use Curse of the Dreadblades\n/use 13\n/use 14\n/use 11\n",
 				},
-				[129] = {
-					["name"] = "Shadow Blades",
-					["icon"] = "134400",
-					["body"] = "#showtooltip Shadow Blades\n/use Shadow Blades\n/use 13\n/use 14\n/use Goremaw's Bite\n",
-				},
 				[125] = {
-					["name"] = "Pistol Shot",
 					["icon"] = "1035048",
+					["name"] = "Pistol Shot",
 					["body"] = "#showtooltip\n/use Pistol Shot\n",
 				},
 				[130] = {
-					["name"] = "SoD/SS",
 					["icon"] = "134400",
+					["name"] = "SoD/SS",
 					["body"] = "#showtooltip Symbols of Death\n/use Symbols of Death\n/use Shadowstrike\n",
 				},
-				[131] = {
-					["name"] = "Stealth/Symbols",
-					["icon"] = "132320",
-					["body"] = "#showtooltip Stealth\n/use Stealth\n/use Symbols of Death\n",
+				[129] = {
+					["icon"] = "134400",
+					["name"] = "Shadow Blades",
+					["body"] = "#showtooltip Shadow Blades\n/use Shadow Blades\n/use 13\n/use 14\n/use Goremaw's Bite\n",
 				},
 			},
 			["backups"] = {
