@@ -28,6 +28,10 @@ VER 3 0100000000000003 "Purify" "SPELL_HOLY_DISPELMAGIC"
 #showtooltip
 /use [@mouseover,help,nodead][]Purify
 END
+VER 3 0100000000000017 "PurifyDisease" "INV_Misc_QuestionMark"
+#showtooltip
+/use [@mouseover,help,nodead][]Purify Disease
+END
 VER 3 0100000000000012 "PW:R" "INV_Misc_QuestionMark"
 #showtooltip
 /use [@mouseover,help,nodead][]Power Word: Radiance

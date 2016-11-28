@@ -1,5 +1,55 @@
 
 Postal3DB = {
+	["profileKeys"] = {
+		["Shamadan - Stormrage"] = "Shamadan - Stormrage",
+		["Callil - Sargeras"] = "Callil - Sargeras",
+		["Aranduh - Bloodhoof"] = "Aranduh - Bloodhoof",
+		["Squelben - Stormrage"] = "Squelben - Stormrage",
+		["Titte - Turalyon"] = "Titte - Turalyon",
+		["Iphone - Bloodhoof"] = "Iphone - Bloodhoof",
+		["Pastaliar - Stormrage"] = "Pastaliar - Stormrage",
+		["Dosnutz - Stormrage"] = "Dosnutz - Stormrage",
+		["Yanlery - Stormrage"] = "Yanlery - Stormrage",
+		["Jakwez - Stormrage"] = "Jakwez - Stormrage",
+		["Chucklefunk - Stormrage"] = "Chucklefunk - Stormrage",
+		["Retardar - Stormrage"] = "Retardar - Stormrage",
+		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
+		["Shhbbyisok - Stormrage"] = "Shhbbyisok - Stormrage",
+		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
+		["Callil - Stormrage"] = "Callil - Stormrage",
+		["Oenta - Stormrage"] = "Oenta - Stormrage",
+		["Druidann - Stormrage"] = "Druidann - Stormrage",
+		["Callil - Turalyon"] = "Callil - Turalyon",
+		["Knutts - Turalyon"] = "Knutts - Turalyon",
+		["Pryahprism - Turalyon"] = "Pryahprism - Turalyon",
+		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
+		["Whyfy - Stormrage"] = "Whyfy - Stormrage",
+		["Ershirley - Stormrage"] = "Ershirley - Stormrage",
+		["Abegar - Turalyon"] = "Abegar - Turalyon",
+		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
+		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
+		["Priaprisum - Stormreaver"] = "Priaprisum - Stormreaver",
+		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
+		["Bruhbies - Stormrage"] = "Bruhbies - Stormrage",
+		["Rotator - Turalyon"] = "Rotator - Turalyon",
+		["Llamama - Stormrage"] = "Llamama - Stormrage",
+		["Barewbies - Stormrage"] = "Barewbies - Stormrage",
+		["Ured - Ner'zhul"] = "Ured - Ner'zhul",
+		["Titt - Turalyon"] = "Titt - Turalyon",
+		["Bloodcox - Stormrage"] = "Bloodcox - Stormrage",
+		["Skratch - Turalyon"] = "Skratch - Turalyon",
+		["Fupa - Stormrage"] = "Fupa - Stormrage",
+		["Ranidan - Stormreaver"] = "Ranidan - Stormreaver",
+		["Horny - Bloodhoof"] = "Horny - Bloodhoof",
+		["Danoh - Stormrage"] = "Danoh - Stormrage",
+		["Brewbies - Turalyon"] = "Brewbies - Turalyon",
+		["Brobies - Stormrage"] = "Brobies - Stormrage",
+		["Edgelordshue - Stormrage"] = "Edgelordshue - Stormrage",
+		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
+		["Beer - Bloodhoof"] = "Beer - Bloodhoof",
+		["Rosabria - Sargeras"] = "Rosabria - Sargeras",
+		["Jimbo - Ner'zhul"] = "Jimbo - Ner'zhul",
+	},
 	["global"] = {
 		["BlackBook"] = {
 			["alts"] = {
@@ -13,7 +63,7 @@ Postal3DB = {
 				"Callil|Stormrage|Alliance|100|PRIEST", -- [8]
 				"Callil|Turalyon|Alliance|100|PRIEST", -- [9]
 				"Callil|Turalyon|Horde|100|PRIEST", -- [10]
-				"Chucklefunk|Stormrage|Alliance|102|PRIEST", -- [11]
+				"Chucklefunk|Stormrage|Alliance|104|PRIEST", -- [11]
 				"Dalgrens|Bloodhoof|Horde|72|HUNTER", -- [12]
 				"Danoh|Stormrage|Alliance|100|HUNTER", -- [13]
 				"Dosnutz|Stormrage|Alliance|100|MAGE", -- [14]
@@ -41,56 +91,6 @@ Postal3DB = {
 				"Yanlery|Stormrage|Alliance|100|WARRIOR", -- [36]
 			},
 		},
-	},
-	["profileKeys"] = {
-		["Shamadan - Stormrage"] = "Shamadan - Stormrage",
-		["Callil - Sargeras"] = "Callil - Sargeras",
-		["Aranduh - Bloodhoof"] = "Aranduh - Bloodhoof",
-		["Squelben - Stormrage"] = "Squelben - Stormrage",
-		["Titte - Turalyon"] = "Titte - Turalyon",
-		["Iphone - Bloodhoof"] = "Iphone - Bloodhoof",
-		["Pastaliar - Stormrage"] = "Pastaliar - Stormrage",
-		["Dosnutz - Stormrage"] = "Dosnutz - Stormrage",
-		["Yanlery - Stormrage"] = "Yanlery - Stormrage",
-		["Jakwez - Stormrage"] = "Jakwez - Stormrage",
-		["Chucklefunk - Stormrage"] = "Chucklefunk - Stormrage",
-		["Retardar - Stormrage"] = "Retardar - Stormrage",
-		["Rosabria - Sargeras"] = "Rosabria - Sargeras",
-		["Shhbbyisok - Stormrage"] = "Shhbbyisok - Stormrage",
-		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
-		["Callil - Stormrage"] = "Callil - Stormrage",
-		["Oenta - Stormrage"] = "Oenta - Stormrage",
-		["Druidann - Stormrage"] = "Druidann - Stormrage",
-		["Callil - Turalyon"] = "Callil - Turalyon",
-		["Knutts - Turalyon"] = "Knutts - Turalyon",
-		["Pryahprism - Turalyon"] = "Pryahprism - Turalyon",
-		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
-		["Whyfy - Stormrage"] = "Whyfy - Stormrage",
-		["Brobies - Stormrage"] = "Brobies - Stormrage",
-		["Abegar - Turalyon"] = "Abegar - Turalyon",
-		["Brewbies - Turalyon"] = "Brewbies - Turalyon",
-		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
-		["Horny - Bloodhoof"] = "Horny - Bloodhoof",
-		["Ranidan - Stormreaver"] = "Ranidan - Stormreaver",
-		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
-		["Rotator - Turalyon"] = "Rotator - Turalyon",
-		["Llamama - Stormrage"] = "Llamama - Stormrage",
-		["Barewbies - Stormrage"] = "Barewbies - Stormrage",
-		["Ured - Ner'zhul"] = "Ured - Ner'zhul",
-		["Titt - Turalyon"] = "Titt - Turalyon",
-		["Fupa - Stormrage"] = "Fupa - Stormrage",
-		["Skratch - Turalyon"] = "Skratch - Turalyon",
-		["Bloodcox - Stormrage"] = "Bloodcox - Stormrage",
-		["Bruhbies - Stormrage"] = "Bruhbies - Stormrage",
-		["Priaprisum - Stormreaver"] = "Priaprisum - Stormreaver",
-		["Danoh - Stormrage"] = "Danoh - Stormrage",
-		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
-		["Ershirley - Stormrage"] = "Ershirley - Stormrage",
-		["Edgelordshue - Stormrage"] = "Edgelordshue - Stormrage",
-		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
-		["Beer - Bloodhoof"] = "Beer - Bloodhoof",
-		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
-		["Jimbo - Ner'zhul"] = "Jimbo - Ner'zhul",
 	},
 	["profiles"] = {
 		["Shamadan - Stormrage"] = {
@@ -160,7 +160,14 @@ Postal3DB = {
 		},
 		["Retardar - Stormrage"] = {
 		},
-		["Rosabria - Sargeras"] = {
+		["Talthalador - Stormrage"] = {
+			["ChatOutput"] = 3,
+			["OpenSpeed"] = 0.3,
+			["BlackBook"] = {
+				["recent"] = {
+					"Druidann|Stormrage|Alliance", -- [1]
+				},
+			},
 		},
 		["Shhbbyisok - Stormrage"] = {
 		},
@@ -254,60 +261,21 @@ Postal3DB = {
 				},
 			},
 		},
-		["Brobies - Stormrage"] = {
-			["BlackBook"] = {
-				["recent"] = {
-					"Emmarosa|Stormrage|Alliance", -- [1]
-					"Talthalador|Stormrage|Alliance", -- [2]
-					"Danoh|Stormrage|Alliance", -- [3]
-					"Mapledk|Stormrage|Alliance", -- [4]
-					"Ranidan-Stormreaver|Stormrage|Alliance", -- [5]
-					"Knutts-Turalyon|Stormrage|Alliance", -- [6]
-					"Llamama|Stormrage|Alliance", -- [7]
-					"Chåotic-Stormrage|Stormrage|Alliance", -- [8]
-					"Whyfy|Stormrage|Alliance", -- [9]
-					"Kratoshue|Stormrage|Alliance", -- [10]
-				},
-			},
+		["Ershirley - Stormrage"] = {
 		},
 		["Abegar - Turalyon"] = {
 		},
-		["Brewbies - Turalyon"] = {
+		["Lackteight - Turalyon"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Yanlery-Stormrage|Turalyon|Horde", -- [1]
-					"Lackteight|Turalyon|Horde", -- [2]
-					"Shaneequa|Turalyon|Horde", -- [3]
-					"Knutts|Turalyon|Horde", -- [4]
-					"Rotator|Turalyon|Horde", -- [5]
-					"Callil|Turalyon|Horde", -- [6]
-					"Arando-Bloodhoof|Turalyon|Horde", -- [7]
-					"Aranduh-Bloodhoof|Turalyon|Horde", -- [8]
-					"Skratch|Turalyon|Horde", -- [9]
-					"Elayna|Turalyon|Horde", -- [10]
-					"Shuenami-Turalyon|Turalyon|Horde", -- [11]
-					"Titt|Turalyon|Horde", -- [12]
-					"Khloroshue|Turalyon|Horde", -- [13]
+					"Brewbies|Turalyon|Horde", -- [1]
+					"Yanlery-Stormrage|Turalyon|Horde", -- [2]
 				},
 			},
 		},
 		["Kateplusnine - Stormrage"] = {
 		},
-		["Horny - Bloodhoof"] = {
-			["BlackBook"] = {
-				["recent"] = {
-					"Dalgrens|Bloodhoof|Horde", -- [1]
-				},
-			},
-		},
-		["Ranidan - Stormreaver"] = {
-			["BlackBook"] = {
-				["recent"] = {
-					"Titte-Turalyon|Stormreaver|Horde", -- [1]
-					"Danoh-Stormrage|Stormreaver|Horde", -- [2]
-					"Knutts-Turalyon|Stormreaver|Horde", -- [3]
-				},
-			},
+		["Priaprisum - Stormreaver"] = {
 		},
 		["Arando - Bloodhoof"] = {
 			["BlackBook"] = {
@@ -316,6 +284,14 @@ Postal3DB = {
 					"Brobies-Stormrage|Bloodhoof|Horde", -- [2]
 					"Noxzemagirl|Bloodhoof|Horde", -- [3]
 					"Callil-Turalyon|Bloodhoof|Horde", -- [4]
+				},
+			},
+		},
+		["Bruhbies - Stormrage"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Yanlery|Stormrage|Alliance", -- [1]
+					"Bloodcox|Stormrage|Alliance", -- [2]
 				},
 			},
 		},
@@ -346,7 +322,7 @@ Postal3DB = {
 				},
 			},
 		},
-		["Fupa - Stormrage"] = {
+		["Bloodcox - Stormrage"] = {
 		},
 		["Skratch - Turalyon"] = {
 			["BlackBook"] = {
@@ -358,17 +334,23 @@ Postal3DB = {
 				},
 			},
 		},
-		["Bloodcox - Stormrage"] = {
+		["Fupa - Stormrage"] = {
 		},
-		["Bruhbies - Stormrage"] = {
+		["Ranidan - Stormreaver"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Yanlery|Stormrage|Alliance", -- [1]
-					"Bloodcox|Stormrage|Alliance", -- [2]
+					"Titte-Turalyon|Stormreaver|Horde", -- [1]
+					"Danoh-Stormrage|Stormreaver|Horde", -- [2]
+					"Knutts-Turalyon|Stormreaver|Horde", -- [3]
 				},
 			},
 		},
-		["Priaprisum - Stormreaver"] = {
+		["Horny - Bloodhoof"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Dalgrens|Bloodhoof|Horde", -- [1]
+				},
+			},
 		},
 		["Danoh - Stormrage"] = {
 			["BlackBook"] = {
@@ -386,15 +368,40 @@ Postal3DB = {
 				},
 			},
 		},
-		["Lackteight - Turalyon"] = {
+		["Brewbies - Turalyon"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Brewbies|Turalyon|Horde", -- [1]
-					"Yanlery-Stormrage|Turalyon|Horde", -- [2]
+					"Yanlery-Stormrage|Turalyon|Horde", -- [1]
+					"Lackteight|Turalyon|Horde", -- [2]
+					"Shaneequa|Turalyon|Horde", -- [3]
+					"Knutts|Turalyon|Horde", -- [4]
+					"Rotator|Turalyon|Horde", -- [5]
+					"Callil|Turalyon|Horde", -- [6]
+					"Arando-Bloodhoof|Turalyon|Horde", -- [7]
+					"Aranduh-Bloodhoof|Turalyon|Horde", -- [8]
+					"Skratch|Turalyon|Horde", -- [9]
+					"Elayna|Turalyon|Horde", -- [10]
+					"Shuenami-Turalyon|Turalyon|Horde", -- [11]
+					"Titt|Turalyon|Horde", -- [12]
+					"Khloroshue|Turalyon|Horde", -- [13]
 				},
 			},
 		},
-		["Ershirley - Stormrage"] = {
+		["Brobies - Stormrage"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Emmarosa|Stormrage|Alliance", -- [1]
+					"Talthalador|Stormrage|Alliance", -- [2]
+					"Danoh|Stormrage|Alliance", -- [3]
+					"Mapledk|Stormrage|Alliance", -- [4]
+					"Ranidan-Stormreaver|Stormrage|Alliance", -- [5]
+					"Knutts-Turalyon|Stormrage|Alliance", -- [6]
+					"Llamama|Stormrage|Alliance", -- [7]
+					"Chåotic-Stormrage|Stormrage|Alliance", -- [8]
+					"Whyfy|Stormrage|Alliance", -- [9]
+					"Kratoshue|Stormrage|Alliance", -- [10]
+				},
+			},
 		},
 		["Edgelordshue - Stormrage"] = {
 		},
@@ -402,14 +409,7 @@ Postal3DB = {
 		},
 		["Beer - Bloodhoof"] = {
 		},
-		["Talthalador - Stormrage"] = {
-			["ChatOutput"] = 3,
-			["BlackBook"] = {
-				["recent"] = {
-					"Druidann|Stormrage|Alliance", -- [1]
-				},
-			},
-			["OpenSpeed"] = 0.3,
+		["Rosabria - Sargeras"] = {
 		},
 		["Jimbo - Ner'zhul"] = {
 			["BlackBook"] = {

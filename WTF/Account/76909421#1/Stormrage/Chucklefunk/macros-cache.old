@@ -46,5 +46,5 @@ VER 3 0100000000000015 "SF" "INV_Misc_QuestionMark"
 END
 VER 3 0100000000000014 "SM" "INV_Misc_QuestionMark"
 #showtooltip
-/use [@mouseover,nodead][]Shadow Mend
+/use [@mouseover,help,nodead][]Shadow Mend
 END
