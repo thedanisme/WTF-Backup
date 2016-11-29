@@ -1,4 +1,11 @@
 Version: 1
+Frame: DugisOnOffButton
+FrameLevel: 1
+Anchor: TOPRIGHT
+X: 0
+Y: -211
+W: 32
+H: 32
 Frame: ItemRefTooltip
 FrameLevel: 1
 Anchor: BOTTOM

@@ -19,255 +19,52 @@ _detalhes_database = {
 		["tabelas"] = {
 			{
 				{
-					["combatId"] = 84,
+					["combatId"] = 183,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["damage_from"] = {
+								["Environment (Falling)"] = true,
 							},
 							["targets"] = {
-								["Yotnar"] = 927483,
+								["Restless Ancestor"] = 278455,
 							},
 							["pets"] = {
-								"Mindbender <Chucklefunk>", -- [1]
 							},
 							["on_hold"] = false,
 							["classe"] = "PRIEST",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 661860.00408,
+							["total_without_pet"] = 278455.005309,
 							["colocacao"] = 1,
 							["friendlyfire"] = {
 							},
 							["dps_started"] = false,
-							["end_time"] = 1480317550,
+							["end_time"] = 1480387054,
 							["friendlyfire_total"] = 0,
 							["spec"] = 258,
 							["nome"] = "Chucklefunk",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
-									[15407] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 14933,
-										["g_amt"] = 0,
-										["n_max"] = 10589,
-										["targets"] = {
-											["Yotnar"] = 68283,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 53350,
-										["n_min"] = 7466,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 68283,
-										["c_max"] = 14933,
-										["id"] = 15407,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 6,
-										["r_amt"] = 0,
-										["c_min"] = 14933,
-									},
-									[228360] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 40723,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Yotnar"] = 40723,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 40723,
-										["c_max"] = 40723,
-										["id"] = 228360,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 40723,
-									},
-									[34914] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 92878,
-										["g_amt"] = 0,
-										["n_max"] = 21108,
-										["targets"] = {
-											["Yotnar"] = 188677,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 95799,
-										["n_min"] = 17861,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 188677,
-										["c_max"] = 50661,
-										["id"] = 34914,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["r_amt"] = 0,
-										["c_min"] = 42217,
-									},
 									[8092] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 44114,
+										["n_max"] = 40878,
 										["targets"] = {
-											["Yotnar"] = 81442,
+											["Restless Ancestor"] = 40878,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 81442,
-										["n_min"] = 37328,
+										["n_dmg"] = 40878,
+										["n_min"] = 40878,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 81442,
+										["counter"] = 1,
+										["total"] = 40878,
 										["c_max"] = 0,
 										["id"] = 8092,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[199911] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 69302,
-										["targets"] = {
-											["Yotnar"] = 69302,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 69302,
-										["n_min"] = 69302,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 69302,
-										["c_max"] = 0,
-										["id"] = 199911,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[205448] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 44530,
-										["targets"] = {
-											["Yotnar"] = 44530,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 44530,
-										["n_min"] = 44530,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 44530,
-										["c_max"] = 0,
-										["id"] = 205448,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[148859] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 7465,
-										["g_amt"] = 0,
-										["n_max"] = 4411,
-										["targets"] = {
-											["Yotnar"] = 11876,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 4411,
-										["n_min"] = 4411,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 11876,
-										["c_max"] = 7465,
-										["id"] = 148859,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 7465,
-									},
-									[228361] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 20361,
-										["targets"] = {
-											["Yotnar"] = 20361,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 20361,
-										["n_min"] = 20361,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 20361,
-										["c_max"] = 0,
-										["id"] = 228361,
 										["r_dmg"] = 0,
 										["spellschool"] = 32,
 										["a_dmg"] = 0,
@@ -281,21 +78,21 @@ _detalhes_database = {
 										["c_min"] = 0,
 									},
 									[589] = {
-										["c_amt"] = 3,
+										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 46353,
+										["c_dmg"] = 18836,
 										["g_amt"] = 0,
-										["n_max"] = 10956,
+										["n_max"] = 9418,
 										["targets"] = {
-											["Yotnar"] = 136666,
+											["Restless Ancestor"] = 75077,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 90313,
-										["n_min"] = 7725,
+										["n_dmg"] = 56241,
+										["n_min"] = 9151,
 										["g_dmg"] = 0,
-										["counter"] = 13,
-										["total"] = 136666,
-										["c_max"] = 15451,
+										["counter"] = 7,
+										["total"] = 75077,
+										["c_max"] = 18836,
 										["id"] = 589,
 										["r_dmg"] = 0,
 										["spellschool"] = 32,
@@ -305,124 +102,123 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 10,
+										["n_amt"] = 6,
 										["r_amt"] = 0,
-										["c_min"] = 15451,
+										["c_min"] = 18836,
 									},
-								},
-							},
-							["grupo"] = true,
-							["total"] = 927483.00408,
-							["serial"] = "Player-60-0ADBB820",
-							["last_dps"] = 51526.83356,
-							["custom"] = 0,
-							["last_event"] = 1480317549,
-							["damage_taken"] = 0.00408,
-							["start_time"] = 1480317532,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 8465,
-							["serial"] = "Creature-0-3782-1220-905-62982-00003BDA5D",
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Yotnar"] = 265623,
-							},
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 265623.002272,
-							["dps_started"] = false,
-							["total"] = 265623.002272,
-							["classe"] = "PET",
-							["ownerName"] = "Chucklefunk",
-							["nome"] = "Mindbender <Chucklefunk>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 2,
+									[34914] = {
+										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 79594,
+										["c_dmg"] = 41084,
 										["g_amt"] = 0,
-										["n_max"] = 21287,
+										["n_max"] = 20542,
 										["targets"] = {
-											["Yotnar"] = 265623,
+											["Restless Ancestor"] = 123252,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 186029,
-										["n_min"] = 18510,
+										["n_dmg"] = 82168,
+										["n_min"] = 20542,
 										["g_dmg"] = 0,
-										["counter"] = 11,
-										["total"] = 265623,
-										["c_max"] = 42574,
-										["id"] = 1,
+										["counter"] = 5,
+										["total"] = 123252,
+										["c_max"] = 41084,
+										["id"] = 34914,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["spellschool"] = 32,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 9,
+										["n_amt"] = 4,
 										["r_amt"] = 0,
-										["c_min"] = 37020,
-									}, -- [1]
+										["c_min"] = 41084,
+									},
+									[15407] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 9812,
+										["targets"] = {
+											["Restless Ancestor"] = 39248,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 39248,
+										["n_min"] = 9812,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 39248,
+										["c_max"] = 0,
+										["id"] = 15407,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
 								},
 							},
-							["friendlyfire"] = {
-							},
-							["end_time"] = 1480317550,
-							["last_dps"] = 0,
+							["grupo"] = true,
+							["total"] = 278455.005309,
+							["serial"] = "Player-60-0ADBB820",
+							["last_dps"] = 27845.5005309,
 							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.002272,
-							["start_time"] = 1480317536,
+							["last_event"] = 1480387054,
+							["damage_taken"] = 32300.005309,
+							["start_time"] = 1480387045,
 							["delay"] = 0,
-							["last_event"] = 1480317548,
-						}, -- [2]
+							["tipo"] = 1,
+						}, -- [1]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 84,
+					["combatId"] = 183,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorb"] = 0.006792,
+							["totalabsorb"] = 0.005066,
 							["last_hps"] = 0,
 							["healing_from"] = {
 							},
 							["targets"] = {
 							},
-							["spec"] = 258,
 							["pets"] = {
 							},
-							["totalover_without_pet"] = 0.006792,
+							["totalover_without_pet"] = 0.005066,
+							["serial"] = "Player-60-0ADBB820",
+							["healing_taken"] = 0.005066,
+							["totalover"] = 61626.005066,
+							["total_without_pet"] = 0.005066,
 							["targets_overheal"] = {
-								["Chucklefunk"] = 94336,
+								["Chucklefunk"] = 61626,
 							},
-							["healing_taken"] = 0.006792,
-							["totalover"] = 94336.006792,
-							["total_without_pet"] = 0.006792,
 							["heal_enemy_amt"] = 0,
 							["iniciar_hps"] = false,
+							["total"] = 0.005066,
 							["classe"] = "PRIEST",
-							["total"] = 0.006792,
-							["last_event"] = 1480317548,
-							["end_time"] = 1480317550,
+							["last_event"] = 1480387054,
 							["nome"] = "Chucklefunk",
 							["targets_absorbs"] = {
 							},
 							["grupo"] = true,
+							["end_time"] = 1480387054,
 							["heal_enemy"] = {
 							},
+							["spec"] = 258,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["start_time"] = 1480387046,
+							["delay"] = 0,
 							["spells"] = {
 								["tipo"] = 3,
 								["_ActorTable"] = {
@@ -430,15 +226,15 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
-											["Chucklefunk"] = 94336,
+											["Chucklefunk"] = 61626,
 										},
 										["n_max"] = 0,
 										["targets"] = {
 											["Chucklefunk"] = 0,
 										},
 										["n_min"] = 0,
-										["counter"] = 7,
-										["overheal"] = 94336,
+										["counter"] = 5,
+										["overheal"] = 61626,
 										["total"] = 0,
 										["c_max"] = 0,
 										["id"] = 34914,
@@ -450,28 +246,22 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["n_curado"] = 0,
 										["m_healed"] = 0,
-										["n_amt"] = 7,
+										["n_amt"] = 5,
 										["absorbed"] = 0,
 									},
 								},
 							},
-							["custom"] = 0,
-							["tipo"] = 2,
-							["on_hold"] = false,
-							["start_time"] = 1480317534,
-							["delay"] = 0,
-							["serial"] = "Player-60-0ADBB820",
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 84,
+					["combatId"] = 183,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 84,
+					["combatId"] = 183,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
@@ -480,7 +270,7 @@ _detalhes_database = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
 									[34914] = {
-										["uptime"] = 18,
+										["uptime"] = 9,
 										["activedamt"] = 1,
 										["id"] = 34914,
 										["actived"] = false,
@@ -490,33 +280,13 @@ _detalhes_database = {
 									},
 								},
 							},
-							["cooldowns_defensive"] = 1.002602,
 							["buff_uptime"] = 36,
-							["last_cooldown"] = {
-								1480317553.827, -- [1]
-								47585, -- [2]
-							},
 							["classe"] = "PRIEST",
-							["interrupt_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[220543] = {
-										["id"] = 220543,
-										["interrompeu_oque"] = {
-											[195765] = 1,
-										},
-										["targets"] = {
-											["Yotnar"] = 1,
-										},
-										["counter"] = 1,
-									},
-								},
-							},
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
 									[176151] = {
-										["uptime"] = 18,
+										["uptime"] = 9,
 										["activedamt"] = 1,
 										["id"] = 176151,
 										["actived"] = false,
@@ -525,26 +295,25 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 									[232698] = {
-										["actived_at"] = 1480317532,
-										["uptime"] = 0,
+										["uptime"] = 9,
 										["activedamt"] = 1,
 										["id"] = 232698,
-										["actived"] = true,
+										["actived"] = false,
 										["targets"] = {
 										},
 										["counter"] = 0,
 									},
-									[194249] = {
-										["uptime"] = 0,
-										["activedamt"] = 0,
-										["id"] = 194249,
+									[197937] = {
+										["uptime"] = 9,
+										["activedamt"] = 1,
+										["id"] = 197937,
 										["actived"] = false,
 										["targets"] = {
 										},
 										["counter"] = 0,
 									},
 									[156779] = {
-										["uptime"] = 18,
+										["uptime"] = 9,
 										["activedamt"] = 1,
 										["id"] = 156779,
 										["actived"] = false,
@@ -552,10 +321,10 @@ _detalhes_database = {
 										},
 										["counter"] = 0,
 									},
-									[123254] = {
+									[202886] = {
 										["uptime"] = 0,
 										["activedamt"] = 0,
-										["id"] = 123254,
+										["id"] = 202886,
 										["actived"] = false,
 										["targets"] = {
 										},
@@ -563,73 +332,27 @@ _detalhes_database = {
 									},
 								},
 							},
-							["interrompeu_oque"] = {
-								[195765] = 1,
-							},
-							["cooldowns_defensive_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[47585] = {
-										["id"] = 47585,
-										["targets"] = {
-											["Chucklefunk"] = 1,
-										},
-										["counter"] = 1,
-									},
-								},
-							},
-							["debuff_uptime"] = 18,
-							["cooldowns_defensive_targets"] = {
-								["Chucklefunk"] = 1,
-							},
-							["interrupt_targets"] = {
-								["Yotnar"] = 1,
-							},
+							["debuff_uptime"] = 9,
 							["buff_uptime_targets"] = {
 							},
 							["spec"] = 258,
 							["grupo"] = true,
 							["spell_cast"] = {
-								[15407] = 3,
-								[147193] = 2,
-								[34914] = 1,
-								[8092] = 2,
-								[199911] = 1,
-								[205448] = 1,
-								[15487] = 1,
-								[589] = 1,
-								[228260] = 1,
-								[200174] = 1,
+								[15407] = 1,
 							},
-							["interrupt"] = 1.008215,
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1480317553,
+							["last_event"] = 1480387054,
 							["nome"] = "Chucklefunk",
 							["pets"] = {
-								"Mindbender <Chucklefunk>", -- [1]
 							},
 							["serial"] = "Player-60-0ADBB820",
 							["tipo"] = 4,
 						}, -- [1]
-						{
-							["flag_original"] = 8465,
-							["ownerName"] = "Chucklefunk",
-							["nome"] = "Mindbender <Chucklefunk>",
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["tipo"] = 4,
-							["spell_cast"] = {
-								[63619] = 3,
-							},
-							["serial"] = "Creature-0-3782-1220-905-62982-00003BDA5D",
-							["last_event"] = 0,
-						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 84,
+					["combatId"] = 183,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -639,12 +362,12 @@ _detalhes_database = {
 				},
 				["last_events_tables"] = {
 				},
-				["enemy"] = "Yotnar",
-				["combat_counter"] = 452,
+				["enemy"] = "Restless Ancestor",
+				["combat_counter"] = 554,
 				["playing_solo"] = true,
 				["totals"] = {
-					927482.894358, -- [1]
-					-0.00767800000176067, -- [2]
+					278454.957128, -- [1]
+					0, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -655,8 +378,8 @@ _detalhes_database = {
 						["buff_uptime"] = 0,
 						["ress"] = 0,
 						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0.998109,
-						["interrupt"] = 1,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
 						["dispell"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
@@ -667,12 +390,16 @@ _detalhes_database = {
 				["player_last_events"] = {
 					["Chucklefunk"] = {
 						{
-							1, -- [1]
-							47585, -- [2]
-							1, -- [3]
-							1480317553.827, -- [4]
-							647820, -- [5]
-							"Chucklefunk", -- [6]
+							true, -- [1]
+							3, -- [2]
+							32300, -- [3]
+							1480387122.685, -- [4]
+							674080, -- [5]
+							"Environment (Falling)", -- [6]
+							nil, -- [7]
+							3, -- [8]
+							false, -- [9]
+							-1, -- [10]
 						}, -- [1]
 						{
 						}, -- [2]
@@ -719,28 +446,28 @@ _detalhes_database = {
 					},
 					["heal"] = {
 						{
-							["Chucklefunk"] = 0.006792,
+							["Chucklefunk"] = 0.005066,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
 					["damage"] = {
 						{
-							["Chucklefunk"] = 927483.00408,
+							["Chucklefunk"] = 278455.005309,
 						}, -- [1]
 					},
 				},
-				["end_time"] = 390518.983,
-				["combat_id"] = 84,
+				["end_time"] = 460027.04,
+				["combat_id"] = 183,
 				["instance_type"] = "none",
 				["frags"] = {
 				},
-				["data_fim"] = "02:19:11",
-				["data_inicio"] = "02:18:52",
+				["data_fim"] = "21:37:35",
+				["data_inicio"] = "21:37:26",
 				["CombatSkillCache"] = {
 				},
 				["totals_grupo"] = {
-					661860, -- [1]
+					278455, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -752,729 +479,65 @@ _detalhes_database = {
 						["buff_uptime"] = 0,
 						["ress"] = 0,
 						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 1,
-						["interrupt"] = 1,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
 						["dispell"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["start_time"] = 390500.078,
-				["contra"] = "Yotnar",
+				["start_time"] = 460018.133,
+				["contra"] = "Restless Ancestor",
 				["TimeData"] = {
 				},
 			}, -- [1]
 			{
 				{
-					["combatId"] = 83,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["total"] = 868183.004366,
-							["damage_from"] = {
-								["Chucklefunk"] = true,
-								["Felskorn Warmonger"] = true,
-							},
-							["targets"] = {
-								["Felskorn Warmonger"] = 868183,
-							},
-							["friendlyfire"] = {
-								["Chucklefunk"] = {
-									["spells"] = {
-										[186439] = 6941,
-									},
-									["total"] = 6941,
-								},
-							},
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["colocacao"] = 1,
-							["classe"] = "PRIEST",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 868183.004366,
-							["friendlyfire_total"] = 6941,
-							["dps_started"] = false,
-							["end_time"] = 1480317465,
-							["on_hold"] = false,
-							["spec"] = 258,
-							["nome"] = "Chucklefunk",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[148859] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 3732,
-										["targets"] = {
-											["Felskorn Warmonger"] = 11196,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 11196,
-										["n_min"] = 3732,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 11196,
-										["c_max"] = 0,
-										["id"] = 148859,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[34914] = {
-										["c_amt"] = 3,
-										["b_amt"] = 0,
-										["c_dmg"] = 107168,
-										["g_amt"] = 0,
-										["n_max"] = 23435,
-										["targets"] = {
-											["Felskorn Warmonger"] = 245011,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 137843,
-										["n_min"] = 17861,
-										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 245011,
-										["c_max"] = 35723,
-										["id"] = 34914,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 7,
-										["r_amt"] = 0,
-										["c_min"] = 35722,
-									},
-									[199911] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 128233,
-										["g_amt"] = 0,
-										["n_max"] = 64117,
-										["targets"] = {
-											["Felskorn Warmonger"] = 192350,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 64117,
-										["n_min"] = 64117,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 192350,
-										["c_max"] = 128233,
-										["id"] = 199911,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 128233,
-									},
-									[589] = {
-										["c_amt"] = 4,
-										["b_amt"] = 0,
-										["c_dmg"] = 61804,
-										["g_amt"] = 0,
-										["n_max"] = 10136,
-										["targets"] = {
-											["Felskorn Warmonger"] = 185633,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 123829,
-										["n_min"] = 7725,
-										["g_dmg"] = 0,
-										["counter"] = 19,
-										["total"] = 185633,
-										["c_max"] = 15451,
-										["id"] = 589,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 15,
-										["r_amt"] = 0,
-										["c_min"] = 15451,
-									},
-									[8092] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 74656,
-										["g_amt"] = 0,
-										["n_max"] = 37328,
-										["targets"] = {
-											["Felskorn Warmonger"] = 111984,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 37328,
-										["n_min"] = 37328,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 111984,
-										["c_max"] = 74656,
-										["id"] = 8092,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 74656,
-									},
-									[15407] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 9797,
-										["targets"] = {
-											["Felskorn Warmonger"] = 122009,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 122009,
-										["n_min"] = 7466,
-										["g_dmg"] = 0,
-										["counter"] = 15,
-										["total"] = 122009,
-										["c_max"] = 0,
-										["id"] = 15407,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 15,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["serial"] = "Player-60-0ADBB820",
-							["last_dps"] = 31006.5358702143,
-							["custom"] = 0,
-							["last_event"] = 1480317464,
-							["damage_taken"] = 277265.004366,
-							["start_time"] = 1480317437,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 83,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorb"] = 0.008945,
-							["last_hps"] = 0,
-							["healing_from"] = {
-								["Chucklefunk"] = true,
-							},
-							["targets"] = {
-								["Chucklefunk"] = 253112,
-							},
-							["targets_absorbs"] = {
-							},
-							["pets"] = {
-							},
-							["totalover_without_pet"] = 0.008945,
-							["targets_overheal"] = {
-								["Chucklefunk"] = 1,
-							},
-							["classe"] = "PRIEST",
-							["totalover"] = 1.008945,
-							["total_without_pet"] = 253112.008945,
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["fight_component"] = true,
-							["total"] = 253112.008945,
-							["healing_taken"] = 253112.008945,
-							["end_time"] = 1480317465,
-							["nome"] = "Chucklefunk",
-							["spec"] = 258,
-							["grupo"] = true,
-							["last_event"] = 1480317465,
-							["heal_enemy"] = {
-							},
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[17] = {
-										["c_amt"] = 1,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Chucklefunk"] = 1,
-										},
-										["n_max"] = 23695,
-										["targets"] = {
-											["Chucklefunk"] = 67868,
-										},
-										["n_min"] = 3470,
-										["counter"] = 6,
-										["overheal"] = 1,
-										["total"] = 67868,
-										["c_max"] = 0,
-										["id"] = 17,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = -1,
-										["m_amt"] = 0,
-										["c_min"] = -1,
-										["n_curado"] = 67869,
-										["m_healed"] = 0,
-										["n_amt"] = 5,
-										["absorbed"] = 0,
-									},
-									[186263] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 69412,
-										["targets"] = {
-											["Chucklefunk"] = 69412,
-										},
-										["n_min"] = 69412,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 69412,
-										["c_max"] = 0,
-										["id"] = 186263,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 69412,
-										["m_healed"] = 0,
-										["n_amt"] = 1,
-										["absorbed"] = 0,
-									},
-									[34914] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 17861,
-										["targets"] = {
-											["Chucklefunk"] = 115831,
-										},
-										["n_min"] = 5047,
-										["counter"] = 10,
-										["overheal"] = 0,
-										["total"] = 115831,
-										["c_max"] = 0,
-										["id"] = 34914,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 115831,
-										["m_healed"] = 0,
-										["n_amt"] = 10,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["custom"] = 0,
-							["tipo"] = 2,
-							["on_hold"] = false,
-							["start_time"] = 1480317443,
-							["serial"] = "Player-60-0ADBB820",
-							["delay"] = 0,
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["combatId"] = 83,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 83,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["dispell"] = 1.008524,
-							["buff_uptime"] = 84,
-							["classe"] = "PRIEST",
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[176151] = {
-										["uptime"] = 28,
-										["activedamt"] = 1,
-										["id"] = 176151,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[232698] = {
-										["uptime"] = 28,
-										["activedamt"] = 1,
-										["id"] = 232698,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[197937] = {
-										["actived_at"] = 1480317437,
-										["uptime"] = 0,
-										["activedamt"] = 1,
-										["id"] = 197937,
-										["actived"] = true,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[123254] = {
-										["uptime"] = 0,
-										["activedamt"] = 0,
-										["id"] = 123254,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[156779] = {
-										["uptime"] = 28,
-										["activedamt"] = 1,
-										["id"] = 156779,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[218845] = {
-										["uptime"] = 0,
-										["activedamt"] = 0,
-										["id"] = 218845,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-								},
-							},
-							["dispell_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[528] = {
-										["dispell"] = 1,
-										["id"] = 528,
-										["dispell_oque"] = {
-											[187656] = 1,
-										},
-										["targets"] = {
-											["Felskorn Warmonger"] = 1,
-										},
-										["counter"] = 0,
-									},
-								},
-							},
-							["fight_component"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["spec"] = 258,
-							["grupo"] = true,
-							["spell_cast"] = {
-								[15407] = 5,
-								[147193] = 3,
-								[528] = 1,
-								[8092] = 2,
-								[199911] = 2,
-								[17] = 1,
-								[589] = 1,
-								[186263] = 1,
-								[34914] = 2,
-							},
-							["dispell_oque"] = {
-								[187656] = 1,
-							},
-							["dispell_targets"] = {
-								["Felskorn Warmonger"] = 1,
-							},
-							["last_event"] = 1480317465,
-							["nome"] = "Chucklefunk",
-							["pets"] = {
-							},
-							["serial"] = "Player-60-0ADBB820",
-							["tipo"] = 4,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 83,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Chucklefunk"] = true,
-				},
-				["last_events_tables"] = {
-				},
-				["enemy"] = "Felskorn Warmonger",
-				["combat_counter"] = 451,
-				["playing_solo"] = true,
-				["totals"] = {
-					868182.959498, -- [1]
-					253112, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 1,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Chucklefunk"] = 253112.008945,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Chucklefunk"] = 868183.004366,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 390433.9,
-				["combat_id"] = 83,
-				["instance_type"] = "none",
-				["frags"] = {
-					["Felskorn Warmonger"] = 1,
-				},
-				["data_fim"] = "02:17:46",
-				["data_inicio"] = "02:17:18",
-				["CombatSkillCache"] = {
-				},
-				["totals_grupo"] = {
-					875124, -- [1]
-					253111, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 1,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["start_time"] = 390406.004,
-				["contra"] = "Felskorn Warmonger",
-				["TimeData"] = {
-				},
-			}, -- [2]
-			{
-				{
-					["combatId"] = 82,
+					["combatId"] = 182,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["damage_from"] = {
-								["Felskorn Warmonger"] = true,
 							},
 							["targets"] = {
-								["Felskorn Warmonger"] = 200386,
+								["Restless Ancestor"] = 398643,
 							},
 							["pets"] = {
 							},
-							["total"] = 200386.008425,
+							["total"] = 398643.007248,
 							["on_hold"] = false,
 							["classe"] = "PRIEST",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 200386.008425,
+							["total_without_pet"] = 398643.007248,
 							["colocacao"] = 1,
 							["friendlyfire"] = {
 							},
 							["dps_started"] = false,
-							["end_time"] = 1480317422,
+							["end_time"] = 1480387032,
 							["friendlyfire_total"] = 0,
 							["spec"] = 258,
 							["nome"] = "Chucklefunk",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
-									[148859] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 4897,
-										["targets"] = {
-											["Felskorn Warmonger"] = 4897,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 4897,
-										["n_min"] = 4897,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 4897,
-										["c_max"] = 0,
-										["id"] = 148859,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[15407] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 9796,
-										["targets"] = {
-											["Felskorn Warmonger"] = 44082,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 44082,
-										["n_min"] = 8163,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 44082,
-										["c_max"] = 0,
-										["id"] = 15407,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[589] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 16894,
-										["g_amt"] = 0,
-										["n_max"] = 8447,
-										["targets"] = {
-											["Felskorn Warmonger"] = 33787,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 16893,
-										["n_min"] = 8446,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 33787,
-										["c_max"] = 16894,
-										["id"] = 589,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 16894,
-									},
 									[8092] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 74656,
+										["c_dmg"] = 81757,
 										["g_amt"] = 0,
 										["n_max"] = 0,
 										["targets"] = {
-											["Felskorn Warmonger"] = 74656,
+											["Restless Ancestor"] = 81757,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 0,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 74656,
-										["c_max"] = 74656,
+										["total"] = 81757,
+										["c_max"] = 81757,
 										["id"] = 8092,
 										["r_dmg"] = 0,
 										["spellschool"] = 32,
@@ -1486,24 +549,53 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 74656,
+										["c_min"] = 81757,
 									},
-									[34914] = {
-										["c_amt"] = 0,
+									[589] = {
+										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 0,
+										["c_dmg"] = 18836,
 										["g_amt"] = 0,
-										["n_max"] = 23435,
+										["n_max"] = 11302,
 										["targets"] = {
-											["Felskorn Warmonger"] = 42964,
+											["Restless Ancestor"] = 86379,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 42964,
-										["n_min"] = 19529,
+										["n_dmg"] = 67543,
+										["n_min"] = 9151,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 42964,
-										["c_max"] = 0,
+										["counter"] = 8,
+										["total"] = 86379,
+										["c_max"] = 18836,
+										["id"] = 589,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 7,
+										["r_amt"] = 0,
+										["c_min"] = 18836,
+									},
+									[34914] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 90385,
+										["g_amt"] = 0,
+										["n_max"] = 20542,
+										["targets"] = {
+											["Restless Ancestor"] = 152011,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 61626,
+										["n_min"] = 20542,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 152011,
+										["c_max"] = 49301,
 										["id"] = 34914,
 										["r_dmg"] = 0,
 										["spellschool"] = 32,
@@ -1513,7 +605,36 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 2,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 41084,
+									},
+									[15407] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 9812,
+										["targets"] = {
+											["Restless Ancestor"] = 78496,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 78496,
+										["n_min"] = 9812,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 78496,
+										["c_max"] = 0,
+										["id"] = 15407,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 8,
 										["r_amt"] = 0,
 										["c_min"] = 0,
 									},
@@ -1521,23 +642,23 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["serial"] = "Player-60-0ADBB820",
-							["last_dps"] = 20038.6008425,
+							["last_dps"] = 36240.2733861818,
 							["custom"] = 0,
-							["last_event"] = 1480317420,
-							["damage_taken"] = 19294.008425,
-							["start_time"] = 1480317416,
+							["last_event"] = 1480387032,
+							["damage_taken"] = 0.007248,
+							["start_time"] = 1480387021,
 							["delay"] = 0,
 							["tipo"] = 1,
 						}, -- [1]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 82,
+					["combatId"] = 182,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorb"] = 0.006374,
+							["totalabsorb"] = 0.001246,
 							["last_hps"] = 0,
 							["healing_from"] = {
 							},
@@ -1546,19 +667,19 @@ _detalhes_database = {
 							["spec"] = 258,
 							["pets"] = {
 							},
-							["totalover_without_pet"] = 0.006374,
+							["totalover_without_pet"] = 0.001246,
 							["targets_overheal"] = {
-								["Chucklefunk"] = 21481,
+								["Chucklefunk"] = 76005,
 							},
-							["healing_taken"] = 0.006374,
-							["totalover"] = 21481.006374,
-							["total_without_pet"] = 0.006374,
+							["healing_taken"] = 0.001246,
+							["totalover"] = 76005.001246,
+							["total_without_pet"] = 0.001246,
 							["heal_enemy_amt"] = 0,
 							["iniciar_hps"] = false,
 							["classe"] = "PRIEST",
-							["total"] = 0.006374,
-							["last_event"] = 1480317420,
-							["end_time"] = 1480317422,
+							["total"] = 0.001246,
+							["last_event"] = 1480387032,
+							["end_time"] = 1480387032,
 							["nome"] = "Chucklefunk",
 							["targets_absorbs"] = {
 							},
@@ -1572,15 +693,15 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
-											["Chucklefunk"] = 21481,
+											["Chucklefunk"] = 76005,
 										},
 										["n_max"] = 0,
 										["targets"] = {
 											["Chucklefunk"] = 0,
 										},
 										["n_min"] = 0,
-										["counter"] = 2,
-										["overheal"] = 21481,
+										["counter"] = 5,
+										["overheal"] = 76005,
 										["total"] = 0,
 										["c_max"] = 0,
 										["id"] = 34914,
@@ -1592,7 +713,7 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["n_curado"] = 0,
 										["m_healed"] = 0,
-										["n_amt"] = 2,
+										["n_amt"] = 5,
 										["absorbed"] = 0,
 									},
 								},
@@ -1600,20 +721,20 @@ _detalhes_database = {
 							["custom"] = 0,
 							["tipo"] = 2,
 							["on_hold"] = false,
-							["start_time"] = 1480317418,
+							["start_time"] = 1480387023,
 							["delay"] = 0,
 							["serial"] = "Player-60-0ADBB820",
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 82,
+					["combatId"] = 182,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 82,
+					["combatId"] = 182,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
@@ -1622,7 +743,7 @@ _detalhes_database = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
 									[34914] = {
-										["uptime"] = 6,
+										["uptime"] = 11,
 										["activedamt"] = 1,
 										["id"] = 34914,
 										["actived"] = false,
@@ -1632,13 +753,13 @@ _detalhes_database = {
 									},
 								},
 							},
-							["buff_uptime"] = 24,
+							["buff_uptime"] = 44,
 							["classe"] = "PRIEST",
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
 									[176151] = {
-										["uptime"] = 6,
+										["uptime"] = 11,
 										["activedamt"] = 1,
 										["id"] = 176151,
 										["actived"] = false,
@@ -1647,7 +768,7 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 									[232698] = {
-										["uptime"] = 6,
+										["uptime"] = 11,
 										["activedamt"] = 1,
 										["id"] = 232698,
 										["actived"] = false,
@@ -1656,7 +777,7 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 									[197937] = {
-										["uptime"] = 6,
+										["uptime"] = 11,
 										["activedamt"] = 1,
 										["id"] = 197937,
 										["actived"] = false,
@@ -1674,7 +795,7 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 									[156779] = {
-										["uptime"] = 6,
+										["uptime"] = 11,
 										["activedamt"] = 1,
 										["id"] = 156779,
 										["actived"] = false,
@@ -1682,30 +803,21 @@ _detalhes_database = {
 										},
 										["counter"] = 0,
 									},
-									[218845] = {
-										["uptime"] = 0,
-										["activedamt"] = 0,
-										["id"] = 218845,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
 								},
 							},
-							["debuff_uptime"] = 6,
+							["debuff_uptime"] = 11,
 							["buff_uptime_targets"] = {
 							},
 							["spec"] = 258,
 							["grupo"] = true,
 							["spell_cast"] = {
-								[147193] = 1,
+								[8092] = 1,
 								[15407] = 2,
-								[589] = 1,
+								[147193] = 1,
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1480317422,
+							["last_event"] = 1480387032,
 							["nome"] = "Chucklefunk",
 							["pets"] = {
 							},
@@ -1715,7 +827,7 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 82,
+					["combatId"] = 182,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -1725,12 +837,12 @@ _detalhes_database = {
 				},
 				["last_events_tables"] = {
 				},
-				["enemy"] = "Felskorn Warmonger",
-				["combat_counter"] = 450,
+				["enemy"] = "Restless Ancestor",
+				["combat_counter"] = 553,
 				["playing_solo"] = true,
 				["totals"] = {
-					200385.973393, -- [1]
-					-0.00166600000011385, -- [2]
+					398642.991695, -- [1]
+					0, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -1751,53 +863,8 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 				},
 				["player_last_events"] = {
-					["Chucklefunk"] = {
-						{
-							true, -- [1]
-							1, -- [2]
-							19294, -- [3]
-							1480317436.17, -- [4]
-							647820, -- [5]
-							"Felskorn Warmonger", -- [6]
-							nil, -- [7]
-							1, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [1]
-						{
-						}, -- [2]
-						{
-						}, -- [3]
-						{
-						}, -- [4]
-						{
-						}, -- [5]
-						{
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						{
-						}, -- [9]
-						{
-						}, -- [10]
-						{
-						}, -- [11]
-						{
-						}, -- [12]
-						{
-						}, -- [13]
-						{
-						}, -- [14]
-						{
-						}, -- [15]
-						{
-						}, -- [16]
-						["n"] = 2,
-					},
 				},
-				["frags_need_refresh"] = true,
+				["frags_need_refresh"] = false,
 				["__call"] = {
 				},
 				["PhaseData"] = {
@@ -1809,29 +876,28 @@ _detalhes_database = {
 					},
 					["heal"] = {
 						{
-							["Chucklefunk"] = 0.006374,
+							["Chucklefunk"] = 0.001246,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
 					["damage"] = {
 						{
-							["Chucklefunk"] = 200386.008425,
+							["Chucklefunk"] = 398643.007248,
 						}, -- [1]
 					},
 				},
-				["end_time"] = 390390.569,
-				["combat_id"] = 82,
+				["end_time"] = 460005.218,
+				["combat_id"] = 182,
 				["instance_type"] = "none",
 				["frags"] = {
-					["Felskorn Warmonger"] = 1,
 				},
-				["data_fim"] = "02:17:02",
-				["data_inicio"] = "02:16:57",
+				["data_fim"] = "21:37:13",
+				["data_inicio"] = "21:37:02",
 				["CombatSkillCache"] = {
 				},
 				["totals_grupo"] = {
-					200386, -- [1]
+					398643, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -1850,37 +916,37 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["start_time"] = 390384.955,
-				["contra"] = "Felskorn Warmonger",
+				["start_time"] = 459994.447,
+				["contra"] = "Restless Ancestor",
 				["TimeData"] = {
 				},
-			}, -- [3]
+			}, -- [2]
 			{
 				{
-					["combatId"] = 81,
+					["combatId"] = 181,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["damage_from"] = {
+								["Restless Ancestor"] = true,
 							},
 							["targets"] = {
-								["Felskorn Raider"] = 346908,
-								["Felskorn Warmonger"] = 35722,
+								["Restless Ancestor"] = 457047,
 							},
 							["pets"] = {
 							},
-							["total"] = 382630.004254,
+							["total"] = 457047.002218,
 							["on_hold"] = false,
 							["classe"] = "PRIEST",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 382630.004254,
+							["total_without_pet"] = 457047.002218,
 							["colocacao"] = 1,
 							["friendlyfire"] = {
 							},
 							["dps_started"] = false,
-							["end_time"] = 1480317416,
+							["end_time"] = 1480387002,
 							["friendlyfire_total"] = 0,
 							["spec"] = 258,
 							["nome"] = "Chucklefunk",
@@ -1892,16 +958,16 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 4081,
+										["n_max"] = 5797,
 										["targets"] = {
-											["Felskorn Raider"] = 4081,
+											["Restless Ancestor"] = 5797,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 4081,
-										["n_min"] = 4081,
+										["n_dmg"] = 5797,
+										["n_min"] = 5797,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 4081,
+										["total"] = 5797,
 										["c_max"] = 0,
 										["id"] = 148859,
 										["r_dmg"] = 0,
@@ -1921,16 +987,16 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 9797,
+										["n_max"] = 13915,
 										["targets"] = {
-											["Felskorn Raider"] = 37552,
+											["Restless Ancestor"] = 55660,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 37552,
-										["n_min"] = 8163,
+										["n_dmg"] = 55660,
+										["n_min"] = 13915,
 										["g_dmg"] = 0,
 										["counter"] = 4,
-										["total"] = 37552,
+										["total"] = 55660,
 										["c_max"] = 0,
 										["id"] = 15407,
 										["r_dmg"] = 0,
@@ -1946,21 +1012,21 @@ _detalhes_database = {
 										["c_min"] = 0,
 									},
 									[34914] = {
-										["c_amt"] = 1,
+										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["c_dmg"] = 35722,
+										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["n_max"] = 29132,
 										["targets"] = {
-											["Felskorn Warmonger"] = 35722,
+											["Restless Ancestor"] = 78432,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
+										["n_dmg"] = 78432,
+										["n_min"] = 24650,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 35722,
-										["c_max"] = 35722,
+										["counter"] = 3,
+										["total"] = 78432,
+										["c_max"] = 0,
 										["id"] = 34914,
 										["r_dmg"] = 0,
 										["spellschool"] = 32,
@@ -1970,26 +1036,26 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 0,
+										["n_amt"] = 3,
 										["r_amt"] = 0,
-										["c_min"] = 35722,
+										["c_min"] = 0,
 									},
 									[589] = {
 										["c_amt"] = 2,
 										["b_amt"] = 0,
-										["c_dmg"] = 33788,
+										["c_dmg"] = 49317,
 										["g_amt"] = 0,
-										["n_max"] = 11061,
+										["n_max"] = 13357,
 										["targets"] = {
-											["Felskorn Raider"] = 192182,
+											["Restless Ancestor"] = 136270,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 158394,
-										["n_min"] = 7725,
+										["n_dmg"] = 86953,
+										["n_min"] = 11302,
 										["g_dmg"] = 0,
-										["counter"] = 19,
-										["total"] = 192182,
-										["c_max"] = 16894,
+										["counter"] = 9,
+										["total"] = 136270,
+										["c_max"] = 26714,
 										["id"] = 589,
 										["r_dmg"] = 0,
 										["spellschool"] = 32,
@@ -1999,25 +1065,25 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 17,
+										["n_amt"] = 7,
 										["r_amt"] = 0,
-										["c_min"] = 16894,
+										["c_min"] = 22603,
 									},
 									[8092] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 48976,
+										["n_max"] = 57973,
 										["targets"] = {
-											["Felskorn Raider"] = 48976,
+											["Restless Ancestor"] = 57973,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 48976,
-										["n_min"] = 48976,
+										["n_dmg"] = 57973,
+										["n_min"] = 57973,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 48976,
+										["total"] = 57973,
 										["c_max"] = 0,
 										["id"] = 8092,
 										["r_dmg"] = 0,
@@ -2032,23 +1098,23 @@ _detalhes_database = {
 										["r_amt"] = 0,
 										["c_min"] = 0,
 									},
-									[199911] = {
-										["c_amt"] = 0,
+									[205448] = {
+										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 0,
+										["c_dmg"] = 122915,
 										["g_amt"] = 0,
-										["n_max"] = 64117,
+										["n_max"] = 0,
 										["targets"] = {
-											["Felskorn Raider"] = 64117,
+											["Restless Ancestor"] = 122915,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 64117,
-										["n_min"] = 64117,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 64117,
-										["c_max"] = 0,
-										["id"] = 199911,
+										["total"] = 122915,
+										["c_max"] = 122915,
+										["id"] = 205448,
 										["r_dmg"] = 0,
 										["spellschool"] = 32,
 										["a_dmg"] = 0,
@@ -2057,65 +1123,135 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 1,
+										["n_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
+										["c_min"] = 122915,
 									},
 								},
 							},
 							["grupo"] = true,
 							["serial"] = "Player-60-0ADBB820",
-							["last_dps"] = 17392.2729206364,
+							["last_dps"] = 41549.7274743636,
 							["custom"] = 0,
-							["last_event"] = 1480317416,
-							["damage_taken"] = 0.004254,
-							["start_time"] = 1480317394,
+							["last_event"] = 1480387001,
+							["damage_taken"] = 72427.002218,
+							["start_time"] = 1480386991,
 							["delay"] = 0,
 							["tipo"] = 1,
 						}, -- [1]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 81,
+					["combatId"] = 181,
 					["tipo"] = 3,
 					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorb"] = 0.002506,
+							["last_hps"] = 0,
+							["healing_from"] = {
+								["Chucklefunk"] = true,
+							},
+							["targets"] = {
+								["Chucklefunk"] = 39216,
+							},
+							["last_event"] = 1480387000,
+							["pets"] = {
+							},
+							["totalover_without_pet"] = 0.002506,
+							["targets_overheal"] = {
+							},
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 0.002506,
+							["total_without_pet"] = 39216.002506,
+							["iniciar_hps"] = false,
+							["classe"] = "PRIEST",
+							["fight_component"] = true,
+							["total"] = 39216.002506,
+							["serial"] = "Player-60-0ADBB820",
+							["healing_taken"] = 39216.002506,
+							["nome"] = "Chucklefunk",
+							["spec"] = 258,
+							["grupo"] = true,
+							["end_time"] = 1480387002,
+							["heal_enemy"] = {
+							},
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[34914] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 14566,
+										["targets"] = {
+											["Chucklefunk"] = 39216,
+										},
+										["n_min"] = 12325,
+										["counter"] = 3,
+										["overheal"] = 0,
+										["total"] = 39216,
+										["c_max"] = 0,
+										["id"] = 34914,
+										["targets_absorbs"] = {
+										},
+										["m_crit"] = 0,
+										["c_curado"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 39216,
+										["m_healed"] = 0,
+										["n_amt"] = 3,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["start_time"] = 1480386996,
+							["delay"] = 0,
+							["targets_absorbs"] = {
+							},
+						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 81,
+					["combatId"] = 181,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 81,
+					["combatId"] = 181,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
+							["fight_component"] = true,
 							["flag_original"] = 1047,
-							["cc_break_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[589] = {
-										["cc_break_oque"] = {
-											[8122] = 1,
-										},
-										["id"] = 589,
-										["cc_break"] = 1,
-										["targets"] = {
-											["Felskorn Raider"] = 1,
-										},
-										["counter"] = 0,
-									},
-								},
+							["nome"] = "Chucklefunk",
+							["spec"] = 258,
+							["grupo"] = true,
+							["buff_uptime_targets"] = {
 							},
-							["buff_uptime"] = 48,
+							["buff_uptime"] = 33,
+							["pets"] = {
+							},
+							["spell_cast"] = {
+								[147193] = 1,
+								[205448] = 1,
+								[15407] = 1,
+								[8092] = 1,
+								[34914] = 1,
+							},
 							["classe"] = "PRIEST",
+							["tipo"] = 4,
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
 									[176151] = {
-										["uptime"] = 12,
+										["uptime"] = 11,
 										["activedamt"] = 1,
 										["id"] = 176151,
 										["actived"] = false,
@@ -2124,34 +1260,35 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 									[232698] = {
-										["uptime"] = 12,
-										["activedamt"] = 1,
+										["uptime"] = 0,
+										["activedamt"] = 0,
 										["id"] = 232698,
 										["actived"] = false,
 										["targets"] = {
 										},
 										["counter"] = 0,
 									},
-									[197937] = {
-										["uptime"] = 12,
-										["activedamt"] = 1,
-										["id"] = 197937,
+									[202886] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = 202886,
 										["actived"] = false,
 										["targets"] = {
 										},
 										["counter"] = 0,
 									},
-									[123254] = {
+									[194249] = {
+										["actived_at"] = 1480386991,
 										["uptime"] = 0,
-										["activedamt"] = 0,
-										["id"] = 123254,
-										["actived"] = false,
+										["activedamt"] = 1,
+										["id"] = 194249,
+										["actived"] = true,
 										["targets"] = {
 										},
 										["counter"] = 0,
 									},
 									[156779] = {
-										["uptime"] = 12,
+										["uptime"] = 11,
 										["activedamt"] = 1,
 										["id"] = 156779,
 										["actived"] = false,
@@ -2159,10 +1296,19 @@ _detalhes_database = {
 										},
 										["counter"] = 0,
 									},
-									[218845] = {
+									[197937] = {
 										["uptime"] = 0,
 										["activedamt"] = 0,
-										["id"] = 218845,
+										["id"] = 197937,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[123254] = {
+										["uptime"] = 11,
+										["activedamt"] = 1,
+										["id"] = 123254,
 										["actived"] = false,
 										["targets"] = {
 										},
@@ -2170,36 +1316,13 @@ _detalhes_database = {
 									},
 								},
 							},
-							["pets"] = {
-							},
-							["buff_uptime_targets"] = {
-							},
-							["spec"] = 258,
-							["grupo"] = true,
-							["spell_cast"] = {
-								[8122] = 1,
-								[147193] = 1,
-								[15407] = 2,
-								[589] = 2,
-								[8092] = 1,
-								[199911] = 1,
-							},
-							["cc_break_oque"] = {
-								[8122] = 1,
-							},
-							["cc_break"] = 1.00819,
-							["last_event"] = 1480317406,
-							["nome"] = "Chucklefunk",
-							["cc_break_targets"] = {
-								["Felskorn Raider"] = 1,
-							},
 							["serial"] = "Player-60-0ADBB820",
-							["tipo"] = 4,
+							["last_event"] = 1480387002,
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 81,
+					["combatId"] = 181,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -2209,12 +1332,12 @@ _detalhes_database = {
 				},
 				["last_events_tables"] = {
 				},
-				["enemy"] = "Felskorn Raider",
-				["combat_counter"] = 449,
+				["enemy"] = "Restless Ancestor",
+				["combat_counter"] = 552,
 				["playing_solo"] = true,
 				["totals"] = {
-					382629.96391, -- [1]
-					0, -- [2]
+					457046.975136, -- [1]
+					39215.992849, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -2228,7 +1351,7 @@ _detalhes_database = {
 						["cooldowns_defensive"] = 0,
 						["interrupt"] = 0,
 						["dispell"] = 0,
-						["cc_break"] = 1,
+						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
@@ -2236,7 +1359,7 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
-				["frags_need_refresh"] = true,
+				["frags_need_refresh"] = false,
 				["__call"] = {
 				},
 				["PhaseData"] = {
@@ -2248,29 +1371,29 @@ _detalhes_database = {
 					},
 					["heal"] = {
 						{
+							["Chucklefunk"] = 39216.002506,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
 					["damage"] = {
 						{
-							["Chucklefunk"] = 346908.004254,
+							["Chucklefunk"] = 457047.002218,
 						}, -- [1]
 					},
 				},
-				["end_time"] = 390374.144,
-				["combat_id"] = 81,
+				["end_time"] = 459974.828,
+				["combat_id"] = 181,
 				["instance_type"] = "none",
 				["frags"] = {
-					["Felskorn Raider"] = 3,
 				},
-				["data_fim"] = "02:16:46",
-				["data_inicio"] = "02:16:34",
+				["data_fim"] = "21:36:43",
+				["data_inicio"] = "21:36:32",
 				["CombatSkillCache"] = {
 				},
 				["totals_grupo"] = {
-					382630, -- [1]
-					0, -- [2]
+					457047, -- [1]
+					39216, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -2284,64 +1407,66 @@ _detalhes_database = {
 						["cooldowns_defensive"] = 0,
 						["interrupt"] = 0,
 						["dispell"] = 0,
-						["cc_break"] = 1,
+						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["start_time"] = 390362.274,
-				["contra"] = "Felskorn Raider",
+				["start_time"] = 459963.853,
+				["contra"] = "Restless Ancestor",
 				["TimeData"] = {
 				},
-			}, -- [4]
+			}, -- [3]
 			{
 				{
-					["combatId"] = 80,
+					["combatId"] = 180,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["damage_from"] = {
+								["Neglected Bones"] = true,
 							},
 							["targets"] = {
-								["Felskorn Runetwister"] = 142302,
-								["Felskorn Raider"] = 283744,
+								["Restless Ancestor"] = 109562,
+								["Neglected Bones"] = 673666,
 							},
 							["pets"] = {
 							},
-							["total"] = 426046.001665,
+							["total"] = 783228.00826,
 							["on_hold"] = false,
 							["classe"] = "PRIEST",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 426046.001665,
+							["total_without_pet"] = 783228.00826,
 							["colocacao"] = 1,
 							["friendlyfire"] = {
 							},
 							["dps_started"] = false,
-							["end_time"] = 1480317382,
+							["end_time"] = 1480386988,
 							["friendlyfire_total"] = 0,
 							["spec"] = 258,
 							["nome"] = "Chucklefunk",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
-									[34914] = {
+									[15407] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 25330,
+										["n_max"] = 11596,
 										["targets"] = {
-											["Felskorn Raider"] = 25330,
+											["Restless Ancestor"] = 68684,
+											["Neglected Bones"] = 57980,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 25330,
-										["n_min"] = 25330,
+										["n_dmg"] = 126664,
+										["n_min"] = 9812,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 25330,
+										["counter"] = 12,
+										["total"] = 126664,
 										["c_max"] = 0,
-										["id"] = 34914,
+										["id"] = 15407,
 										["r_dmg"] = 0,
 										["spellschool"] = 32,
 										["a_dmg"] = 0,
@@ -2350,7 +1475,7 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 1,
+										["n_amt"] = 12,
 										["r_amt"] = 0,
 										["c_min"] = 0,
 									},
@@ -2359,16 +1484,16 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 20362,
+										["n_max"] = 22298,
 										["targets"] = {
-											["Felskorn Runetwister"] = 20362,
+											["Neglected Bones"] = 22298,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 20362,
-										["n_min"] = 20362,
+										["n_dmg"] = 22298,
+										["n_min"] = 22298,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 20362,
+										["total"] = 22298,
 										["c_max"] = 0,
 										["id"] = 228360,
 										["r_dmg"] = 0,
@@ -2383,24 +1508,23 @@ _detalhes_database = {
 										["r_amt"] = 0,
 										["c_min"] = 0,
 									},
-									[589] = {
-										["c_amt"] = 2,
+									[34914] = {
+										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["c_dmg"] = 43824,
+										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 10956,
+										["n_max"] = 29132,
 										["targets"] = {
-											["Felskorn Runetwister"] = 33710,
-											["Felskorn Raider"] = 98603,
+											["Neglected Bones"] = 98228,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 88489,
-										["n_min"] = 7725,
+										["n_dmg"] = 98228,
+										["n_min"] = 20542,
 										["g_dmg"] = 0,
-										["counter"] = 11,
-										["total"] = 132313,
-										["c_max"] = 21912,
-										["id"] = 589,
+										["counter"] = 4,
+										["total"] = 98228,
+										["c_max"] = 0,
+										["id"] = 34914,
 										["r_dmg"] = 0,
 										["spellschool"] = 32,
 										["a_dmg"] = 0,
@@ -2409,27 +1533,27 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 9,
+										["n_amt"] = 4,
 										["r_amt"] = 0,
-										["c_min"] = 21912,
+										["c_min"] = 0,
 									},
 									[8092] = {
-										["c_amt"] = 1,
+										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["c_dmg"] = 88230,
+										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 52938,
+										["n_max"] = 48311,
 										["targets"] = {
-											["Felskorn Runetwister"] = 88230,
-											["Felskorn Raider"] = 52938,
+											["Restless Ancestor"] = 40878,
+											["Neglected Bones"] = 48311,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 52938,
-										["n_min"] = 52938,
+										["n_dmg"] = 89189,
+										["n_min"] = 40878,
 										["g_dmg"] = 0,
 										["counter"] = 2,
-										["total"] = 141168,
-										["c_max"] = 88230,
+										["total"] = 89189,
+										["c_max"] = 0,
 										["id"] = 8092,
 										["r_dmg"] = 0,
 										["spellschool"] = 32,
@@ -2439,26 +1563,55 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 1,
+										["n_amt"] = 2,
 										["r_amt"] = 0,
-										["c_min"] = 88230,
+										["c_min"] = 0,
+									},
+									[199911] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 75894,
+										["targets"] = {
+											["Neglected Bones"] = 151788,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 151788,
+										["n_min"] = 75894,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 151788,
+										["c_max"] = 0,
+										["id"] = 199911,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
 									},
 									[205448] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 106873,
+										["c_dmg"] = 102429,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["n_max"] = 51214,
 										["targets"] = {
-											["Felskorn Raider"] = 106873,
+											["Neglected Bones"] = 153643,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
+										["n_dmg"] = 51214,
+										["n_min"] = 51214,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 106873,
-										["c_max"] = 106873,
+										["counter"] = 2,
+										["total"] = 153643,
+										["c_max"] = 102429,
 										["id"] = 205448,
 										["r_dmg"] = 0,
 										["spellschool"] = 32,
@@ -2468,56 +1621,144 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 0,
+										["n_amt"] = 1,
 										["r_amt"] = 0,
-										["c_min"] = 106873,
+										["c_min"] = 102429,
+									},
+									[148859] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 4831,
+										["targets"] = {
+											["Neglected Bones"] = 4831,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 4831,
+										["n_min"] = 4831,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 4831,
+										["c_max"] = 0,
+										["id"] = 148859,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[228361] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 22298,
+										["targets"] = {
+											["Neglected Bones"] = 22298,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 22298,
+										["n_min"] = 22298,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 22298,
+										["c_max"] = 0,
+										["id"] = 228361,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[589] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 48974,
+										["g_amt"] = 0,
+										["n_max"] = 13357,
+										["targets"] = {
+											["Neglected Bones"] = 114289,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 65315,
+										["n_min"] = 9151,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 114289,
+										["c_max"] = 26713,
+										["id"] = 589,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 6,
+										["r_amt"] = 0,
+										["c_min"] = 22261,
 									},
 								},
 							},
 							["grupo"] = true,
 							["serial"] = "Player-60-0ADBB820",
-							["last_dps"] = 30431.8572617857,
+							["last_dps"] = 35601.2731027273,
 							["custom"] = 0,
-							["last_event"] = 1480317381,
-							["damage_taken"] = 0.001665,
-							["start_time"] = 1480317368,
+							["last_event"] = 1480386988,
+							["damage_taken"] = 161756.00826,
+							["start_time"] = 1480386966,
 							["delay"] = 0,
 							["tipo"] = 1,
 						}, -- [1]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 80,
+					["combatId"] = 180,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorb"] = 0.004247,
+							["totalabsorb"] = 0.002166,
 							["last_hps"] = 0,
 							["healing_from"] = {
+								["Chucklefunk"] = true,
 							},
 							["targets"] = {
+								["Chucklefunk"] = 49113,
 							},
-							["spec"] = 258,
+							["last_event"] = 1480386986,
 							["pets"] = {
 							},
-							["totalover_without_pet"] = 0.004247,
+							["totalover_without_pet"] = 0.002166,
 							["targets_overheal"] = {
-								["Chucklefunk"] = 12665,
 							},
-							["healing_taken"] = 0.004247,
-							["totalover"] = 12665.004247,
-							["total_without_pet"] = 0.004247,
 							["heal_enemy_amt"] = 0,
+							["totalover"] = 0.002166,
+							["total_without_pet"] = 49113.002166,
 							["iniciar_hps"] = false,
 							["classe"] = "PRIEST",
-							["total"] = 0.004247,
-							["last_event"] = 1480317381,
-							["end_time"] = 1480317382,
+							["fight_component"] = true,
+							["total"] = 49113.002166,
+							["serial"] = "Player-60-0ADBB820",
+							["healing_taken"] = 49113.002166,
 							["nome"] = "Chucklefunk",
-							["targets_absorbs"] = {
-							},
+							["spec"] = 258,
 							["grupo"] = true,
+							["end_time"] = 1480386988,
 							["heal_enemy"] = {
 							},
 							["spells"] = {
@@ -2527,16 +1768,15 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
-											["Chucklefunk"] = 12665,
 										},
-										["n_max"] = 0,
+										["n_max"] = 14566,
 										["targets"] = {
-											["Chucklefunk"] = 0,
+											["Chucklefunk"] = 49113,
 										},
-										["n_min"] = 0,
-										["counter"] = 1,
-										["overheal"] = 12665,
-										["total"] = 0,
+										["n_min"] = 10271,
+										["counter"] = 4,
+										["overheal"] = 0,
+										["total"] = 49113,
 										["c_max"] = 0,
 										["id"] = 34914,
 										["targets_absorbs"] = {
@@ -2545,9 +1785,9 @@ _detalhes_database = {
 										["c_curado"] = 0,
 										["m_amt"] = 0,
 										["c_min"] = 0,
-										["n_curado"] = 0,
+										["n_curado"] = 49113,
 										["m_healed"] = 0,
-										["n_amt"] = 1,
+										["n_amt"] = 4,
 										["absorbed"] = 0,
 									},
 								},
@@ -2555,47 +1795,51 @@ _detalhes_database = {
 							["custom"] = 0,
 							["tipo"] = 2,
 							["on_hold"] = false,
-							["start_time"] = 1480317381,
+							["start_time"] = 1480386979,
 							["delay"] = 0,
-							["serial"] = "Player-60-0ADBB820",
+							["targets_absorbs"] = {
+							},
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 80,
+					["combatId"] = 180,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 80,
+					["combatId"] = 180,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
+							["fight_component"] = true,
 							["flag_original"] = 1047,
 							["nome"] = "Chucklefunk",
 							["spec"] = 258,
 							["grupo"] = true,
-							["spell_cast"] = {
-								[228260] = 1,
-								[34914] = 1,
-								[205448] = 1,
-								[589] = 2,
-								[8092] = 2,
-								[147193] = 1,
-							},
-							["pets"] = {
-							},
 							["buff_uptime_targets"] = {
 							},
-							["buff_uptime"] = 28,
+							["buff_uptime"] = 44,
+							["pets"] = {
+							},
+							["spell_cast"] = {
+								[199911] = 2,
+								[205448] = 2,
+								[228260] = 1,
+								[34914] = 1,
+								[147193] = 2,
+								[589] = 1,
+								[8092] = 1,
+								[15407] = 4,
+							},
+							["classe"] = "PRIEST",
 							["tipo"] = 4,
-							["last_event"] = 1480317382,
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
 									[176151] = {
-										["uptime"] = 14,
+										["uptime"] = 22,
 										["activedamt"] = 1,
 										["id"] = 176151,
 										["actived"] = false,
@@ -2604,7 +1848,7 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 									[232698] = {
-										["actived_at"] = 1480317368,
+										["actived_at"] = 1480386966,
 										["uptime"] = 0,
 										["activedamt"] = 1,
 										["id"] = 232698,
@@ -2623,7 +1867,7 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 									[156779] = {
-										["uptime"] = 14,
+										["uptime"] = 22,
 										["activedamt"] = 1,
 										["id"] = 156779,
 										["actived"] = false,
@@ -2643,12 +1887,12 @@ _detalhes_database = {
 								},
 							},
 							["serial"] = "Player-60-0ADBB820",
-							["classe"] = "PRIEST",
+							["last_event"] = 1480386988,
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 80,
+					["combatId"] = 180,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -2658,12 +1902,12 @@ _detalhes_database = {
 				},
 				["last_events_tables"] = {
 				},
-				["enemy"] = "Felskorn Runetwister",
-				["combat_counter"] = 448,
+				["enemy"] = "Neglected Bones",
+				["combat_counter"] = 551,
 				["playing_solo"] = true,
 				["totals"] = {
-					426045.958246, -- [1]
-					-0.0100010000019814, -- [2]
+					783227.95653, -- [1]
+					49112.997518, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -2675,7 +1919,7 @@ _detalhes_database = {
 						["ress"] = 0,
 						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = -0.008243,
+						["interrupt"] = 0,
 						["dispell"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
@@ -2697,30 +1941,404 @@ _detalhes_database = {
 					},
 					["heal"] = {
 						{
-							["Chucklefunk"] = 0.004247,
+							["Chucklefunk"] = 49113.002166,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
 					["damage"] = {
 						{
-							["Chucklefunk"] = 426046.001665,
+							["Chucklefunk"] = 783228.00826,
 						}, -- [1]
 					},
 				},
-				["end_time"] = 390350.259,
-				["combat_id"] = 80,
+				["end_time"] = 459961.047,
+				["combat_id"] = 180,
 				["instance_type"] = "none",
 				["frags"] = {
-					["Felskorn Runetwister"] = 1,
-					["Felskorn Raider"] = 2,
+					["Neglected Bones"] = 1,
 				},
-				["data_fim"] = "02:16:22",
-				["data_inicio"] = "02:16:09",
+				["data_fim"] = "21:36:29",
+				["data_inicio"] = "21:36:07",
 				["CombatSkillCache"] = {
 				},
 				["totals_grupo"] = {
-					426046, -- [1]
+					783228, -- [1]
+					49113, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["start_time"] = 459939.1,
+				["contra"] = "Restless Ancestor",
+				["TimeData"] = {
+				},
+			}, -- [4]
+			{
+				{
+					["combatId"] = 179,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Restless Ancestor"] = 196416,
+							},
+							["pets"] = {
+							},
+							["total"] = 196416.006119,
+							["on_hold"] = false,
+							["classe"] = "PRIEST",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 196416.006119,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1480386958,
+							["friendlyfire_total"] = 0,
+							["spec"] = 258,
+							["nome"] = "Chucklefunk",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[8092] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 40879,
+										["targets"] = {
+											["Restless Ancestor"] = 40879,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 40879,
+										["n_min"] = 40879,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 40879,
+										["c_max"] = 0,
+										["id"] = 8092,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[589] = {
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 56508,
+										["g_amt"] = 0,
+										["n_max"] = 9418,
+										["targets"] = {
+											["Restless Ancestor"] = 93911,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 37403,
+										["n_min"] = 9151,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 93911,
+										["c_max"] = 18836,
+										["id"] = 589,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 18836,
+									},
+									[34914] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 20542,
+										["targets"] = {
+											["Restless Ancestor"] = 61626,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 61626,
+										["n_min"] = 20542,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 61626,
+										["c_max"] = 0,
+										["id"] = 34914,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-60-0ADBB820",
+							["last_dps"] = 19641.6006119,
+							["custom"] = 0,
+							["last_event"] = 1480386958,
+							["damage_taken"] = 0.006119,
+							["start_time"] = 1480386949,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 179,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorb"] = 0.007487,
+							["last_hps"] = 0,
+							["healing_from"] = {
+							},
+							["targets"] = {
+							},
+							["spec"] = 258,
+							["pets"] = {
+							},
+							["totalover_without_pet"] = 0.007487,
+							["targets_overheal"] = {
+								["Chucklefunk"] = 30813,
+							},
+							["healing_taken"] = 0.007487,
+							["totalover"] = 30813.007487,
+							["total_without_pet"] = 0.007487,
+							["heal_enemy_amt"] = 0,
+							["iniciar_hps"] = false,
+							["classe"] = "PRIEST",
+							["total"] = 0.007487,
+							["last_event"] = 1480386958,
+							["end_time"] = 1480386958,
+							["nome"] = "Chucklefunk",
+							["targets_absorbs"] = {
+							},
+							["grupo"] = true,
+							["heal_enemy"] = {
+							},
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[34914] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Chucklefunk"] = 30813,
+										},
+										["n_max"] = 0,
+										["targets"] = {
+											["Chucklefunk"] = 0,
+										},
+										["n_min"] = 0,
+										["counter"] = 3,
+										["overheal"] = 30813,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 34914,
+										["targets_absorbs"] = {
+										},
+										["m_crit"] = 0,
+										["c_curado"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 0,
+										["m_healed"] = 0,
+										["n_amt"] = 3,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["start_time"] = 1480386954,
+							["delay"] = 0,
+							["serial"] = "Player-60-0ADBB820",
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 179,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 179,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["nome"] = "Chucklefunk",
+							["spec"] = 258,
+							["grupo"] = true,
+							["spell_cast"] = {
+								[147193] = 2,
+								[34914] = 1,
+								[8092] = 1,
+							},
+							["pets"] = {
+							},
+							["buff_uptime_targets"] = {
+							},
+							["buff_uptime"] = 27,
+							["tipo"] = 4,
+							["last_event"] = 1480386958,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[202886] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = 202886,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[176151] = {
+										["uptime"] = 9,
+										["activedamt"] = 1,
+										["id"] = 176151,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[156779] = {
+										["uptime"] = 9,
+										["activedamt"] = 1,
+										["id"] = 156779,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[232698] = {
+										["uptime"] = 9,
+										["activedamt"] = 1,
+										["id"] = 232698,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-60-0ADBB820",
+							["classe"] = "PRIEST",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 179,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Chucklefunk"] = true,
+				},
+				["last_events_tables"] = {
+				},
+				["enemy"] = "Restless Ancestor",
+				["combat_counter"] = 550,
+				["playing_solo"] = true,
+				["totals"] = {
+					196415.993545, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = false,
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Chucklefunk"] = 0.007487,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Chucklefunk"] = 196416.006119,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 459931.418,
+				["combat_id"] = 179,
+				["instance_type"] = "none",
+				["frags"] = {
+				},
+				["data_fim"] = "21:35:59",
+				["data_inicio"] = "21:35:50",
+				["CombatSkillCache"] = {
+				},
+				["totals_grupo"] = {
+					196416, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -2739,16 +2357,15 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["start_time"] = 390336.745,
-				["contra"] = "Felskorn Runetwister",
+				["start_time"] = 459922.036,
+				["contra"] = "Restless Ancestor",
 				["TimeData"] = {
 				},
 			}, -- [5]
 		},
 	},
-	["combat_counter"] = 452,
-	["character_data"] = {
-		["logons"] = 23,
+	["combat_counter"] = 554,
+	["savedbuffs"] = {
 	},
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_CHART_VIEWER"] = {
@@ -2807,19 +2424,43 @@ _detalhes_database = {
 			},
 		},
 	},
-	["last_version"] = "v7.1.0.3212",
-	["SoloTablesSaved"] = {
-		["Mode"] = 1,
+	["last_instance_time"] = 1480276736,
+	["character_data"] = {
+		["logons"] = 25,
 	},
 	["nick_tag_cache"] = {
-		["nextreset"] = 1481439202,
 		["last_version"] = 8,
+		[167333142] = {
+			"Mapledk", -- [1]
+			"Interface\\EncounterJournal\\UI-EJ-BOSS-Default", -- [2]
+			{
+				0, -- [1]
+				1, -- [2]
+				0, -- [3]
+				1, -- [4]
+			}, -- [3]
+			"Interface\\PetBattles\\Weather-Windy", -- [4]
+			{
+				0.9453125, -- [1]
+				0.07421875, -- [2]
+				0.8203125, -- [3]
+				0, -- [4]
+			}, -- [5]
+			{
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			}, -- [6]
+			2, -- [7]
+		},
+		["nextreset"] = 1481439202,
 	},
 	["tabela_instancias"] = {
 	},
-	["combat_id"] = 84,
+	["combat_id"] = 183,
 	["savedStyles"] = {
 	},
+	["last_version"] = "v7.1.0.3212",
 	["cached_talents"] = {
 		["Player-60-0ADBB820"] = {
 			21637, -- [1]
@@ -2831,7 +2472,6 @@ _detalhes_database = {
 			19755, -- [7]
 		},
 	},
-	["last_instance_time"] = 1480276736,
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
@@ -2874,7 +2514,8 @@ _detalhes_database = {
 			},
 		}, -- [1]
 	},
-	["savedbuffs"] = {
+	["SoloTablesSaved"] = {
+		["Mode"] = 1,
 	},
 	["announce_cooldowns"] = {
 		["enabled"] = false,
@@ -2889,7 +2530,7 @@ _detalhes_database = {
 	},
 	["last_instance_id"] = 1456,
 	["cached_specs"] = {
-		["Player-60-0AB74850"] = 63,
+		["Player-60-09458DFB"] = 70,
 		["Player-60-0ADBB820"] = 258,
 	},
 }
