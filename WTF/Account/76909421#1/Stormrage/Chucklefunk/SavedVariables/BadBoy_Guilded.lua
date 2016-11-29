@@ -1,2 +1,2 @@
 
-BADBOY_GWHISPER = nil
+BADBOY_GWHISPER = true

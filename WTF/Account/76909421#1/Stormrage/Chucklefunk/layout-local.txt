@@ -10,9 +10,9 @@ Frame: DugisSmallFrameContainer
 FrameLevel: 1
 Anchor: RIGHT
 X: -89
-Y: 195
+Y: 232
 W: 275
-H: 112
+H: 38
 Frame: DugisOnOffButton
 FrameLevel: 1
 Anchor: TOPRIGHT
@@ -48,13 +48,6 @@ X: -297
 Y: 72
 W: 500
 H: 300
-Frame: TomTomCrazyArrow
-FrameLevel: 1
-Anchor: RIGHT
-X: -381
-Y: -8
-W: 56
-H: 42
 Frame: DugisSecureQuestButton
 FrameLevel: 1
 Anchor: BOTTOMRIGHT
@@ -69,3 +62,10 @@ X: -418
 Y: 89
 W: 26
 H: 26
+Frame: TomTomCrazyArrow
+FrameLevel: 1
+Anchor: RIGHT
+X: -381
+Y: -8
+W: 56
+H: 42
