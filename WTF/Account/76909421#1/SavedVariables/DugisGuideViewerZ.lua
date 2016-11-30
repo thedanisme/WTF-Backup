@@ -14,12 +14,12 @@ DugisGuideViewerProfiles = {
 		["Talthalador - Stormrage"] = "USE THIS",
 		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
 		["Yanlery - Stormrage"] = "USE THIS",
-		["Druidann - Stormrage"] = "USE THIS",
 		["Callil - Stormrage"] = "Whyfy - Stormrage",
+		["Druidann - Stormrage"] = "USE THIS",
 		["Jakwez - Stormrage"] = "Jakwez - Stormrage",
-		["Chucklefunk - Stormrage"] = "Chucklefunk - Stormrage",
-		["Danoh - Stormrage"] = "USE THIS",
 		["Titte - Turalyon"] = "Titte - Turalyon",
+		["Danoh - Stormrage"] = "USE THIS",
+		["Chucklefunk - Stormrage"] = "Chucklefunk - Stormrage",
 		["Shhbbyisok - Stormrage"] = "USE THIS",
 		["Emmarosa - Stormrage"] = "USE THIS",
 		["Dosnutz - Stormrage"] = "Dosnutz - Stormrage",
@@ -248,8 +248,8 @@ DugisGuideViewerProfiles = {
 							false, -- [3]
 						},
 					},
-					[107] = {
-						["checked"] = "None",
+					[39] = {
+						["checked"] = false,
 					},
 					["showNotCollectedPets"] = true,
 					[36] = {
@@ -261,8 +261,8 @@ DugisGuideViewerProfiles = {
 					[74] = {
 						["checked"] = true,
 					},
-					[39] = {
-						["checked"] = false,
+					[107] = {
+						["checked"] = "None",
 					},
 					[40] = {
 						["checked"] = false,
@@ -310,13 +310,13 @@ DugisGuideViewerProfiles = {
 						["checked"] = true,
 					},
 					["SettingsRevision"] = 10,
-					[79] = {
-						["checked"] = false,
-					},
+					["showCollectedPets"] = true,
 					[112] = {
 						["checked"] = "Expand Down",
 					},
-					["showCollectedPets"] = true,
+					[79] = {
+						["checked"] = false,
+					},
 				},
 			},
 		},
@@ -577,12 +577,8 @@ DugisGuideViewerProfiles = {
 					[58] = {
 						["checked"] = false,
 					},
-					[302] = {
-						["options"] = {
-							false, -- [1]
-							false, -- [2]
-							false, -- [3]
-						},
+					[33] = {
+						["checked"] = true,
 					},
 					[57] = {
 						["checked"] = true,
@@ -597,8 +593,12 @@ DugisGuideViewerProfiles = {
 							"Shadow", -- [5]
 						},
 					},
-					[33] = {
-						["checked"] = true,
+					[302] = {
+						["options"] = {
+							false, -- [1]
+							false, -- [2]
+							false, -- [3]
+						},
 					},
 					[108] = {
 						["checked"] = "Standard - Anchored",
@@ -687,9 +687,7 @@ DugisGuideViewerProfiles = {
 					[107] = {
 						["checked"] = "None",
 					},
-					[203] = {
-						["checked"] = 0,
-					},
+					["showNotCollectedPets"] = true,
 					[207] = {
 						["checked"] = 1,
 					},
@@ -711,27 +709,29 @@ DugisGuideViewerProfiles = {
 						["Beast"] = true,
 						["Aquatic"] = true,
 					},
-					["ModelViewer"] = {
-						["pos_x"] = false,
+					[50] = {
+						["checked"] = false,
 					},
 					[69] = {
 						["checked"] = false,
 					},
-					[50] = {
-						["checked"] = false,
+					["ModelViewer"] = {
+						["pos_x"] = false,
 					},
-					["showNotCollectedPets"] = true,
+					[203] = {
+						["checked"] = 0,
+					},
 					[103] = {
 						["checked"] = "None",
-					},
-					["SettingsRevision"] = 10,
-					["showCollectedPets"] = true,
-					[112] = {
-						["checked"] = "Expand Down",
 					},
 					[77] = {
 						["checked"] = false,
 					},
+					["showCollectedPets"] = true,
+					[112] = {
+						["checked"] = "Expand Down",
+					},
+					["SettingsRevision"] = 10,
 				},
 			},
 		},
@@ -934,12 +934,8 @@ DugisGuideViewerProfiles = {
 					[58] = {
 						["checked"] = false,
 					},
-					[302] = {
-						["options"] = {
-							false, -- [1]
-							false, -- [2]
-							false, -- [3]
-						},
+					[33] = {
+						["checked"] = true,
 					},
 					[60] = {
 						["checked"] = false,
@@ -949,15 +945,17 @@ DugisGuideViewerProfiles = {
 					},
 					["showCollectedPets"] = true,
 					["SettingsRevision"] = 10,
-					[33] = {
-						["checked"] = true,
+					[302] = {
+						["options"] = {
+							false, -- [1]
+							false, -- [2]
+							false, -- [3]
+						},
 					},
 					[72] = {
 						["checked"] = true,
 					},
-					[203] = {
-						["checked"] = 0,
-					},
+					["FirstTime"] = false,
 					[36] = {
 						["checked"] = true,
 					},
@@ -1030,7 +1028,9 @@ DugisGuideViewerProfiles = {
 					[40] = {
 						["checked"] = false,
 					},
-					["FirstTime"] = false,
+					[203] = {
+						["checked"] = 0,
+					},
 					[42] = {
 						["checked"] = false,
 					},
@@ -1139,15 +1139,19 @@ DugisGuideViewerProfiles = {
 					[58] = {
 						["checked"] = false,
 					},
-					["showCollectedPets"] = true,
-					[112] = {
-						["checked"] = "Expand Down",
-					},
 					[79] = {
 						["checked"] = false,
 					},
-					[33] = {
-						["checked"] = true,
+					[112] = {
+						["checked"] = "Expand Down",
+					},
+					["showCollectedPets"] = true,
+					[302] = {
+						["options"] = {
+							false, -- [1]
+							false, -- [2]
+							false, -- [3]
+						},
 					},
 					["SettingsRevision"] = 10,
 					[68] = {
@@ -1162,25 +1166,25 @@ DugisGuideViewerProfiles = {
 					[103] = {
 						["checked"] = "None",
 					},
-					[107] = {
-						["checked"] = "None",
+					[39] = {
+						["checked"] = false,
 					},
 					[40] = {
 						["checked"] = false,
 					},
-					["showNotCollectedPets"] = true,
+					[203] = {
+						["checked"] = 0,
+					},
 					[42] = {
 						["checked"] = false,
 					},
 					[43] = {
 						["checked"] = false,
 					},
-					[50] = {
-						["checked"] = false,
+					["ModelViewer"] = {
+						["pos_x"] = false,
 					},
-					[203] = {
-						["checked"] = 0,
-					},
+					["showNotCollectedPets"] = true,
 					[207] = {
 						["checked"] = 1,
 					},
@@ -1202,8 +1206,8 @@ DugisGuideViewerProfiles = {
 						["Beast"] = true,
 						["Mechanical"] = true,
 					},
-					["ModelViewer"] = {
-						["pos_x"] = false,
+					[50] = {
+						["checked"] = false,
 					},
 					[51] = {
 						["checked"] = false,
@@ -1268,8 +1272,8 @@ DugisGuideViewerProfiles = {
 							},
 						},
 					},
-					[39] = {
-						["checked"] = false,
+					[107] = {
+						["checked"] = "None",
 					},
 					[108] = {
 						["checked"] = "Standard - Anchored",
@@ -1287,12 +1291,8 @@ DugisGuideViewerProfiles = {
 					[57] = {
 						["checked"] = true,
 					},
-					[302] = {
-						["options"] = {
-							false, -- [1]
-							false, -- [2]
-							false, -- [3]
-						},
+					[33] = {
+						["checked"] = true,
 					},
 				},
 			},
@@ -1518,35 +1518,74 @@ DugisGuideViewerProfiles = {
 					[58] = {
 						["checked"] = false,
 					},
-					[37] = {
-						["checked"] = true,
+					["showCollectedPets"] = true,
+					[79] = {
+						["checked"] = false,
 					},
-					[57] = {
-						["checked"] = true,
-					},
+					["SettingsRevision"] = 10,
 					["EssentialsMode"] = 1,
-					[110] = {
-						["options"] = {
-							"None", -- [1]
-							"Active Talent Specialization", -- [2]
-							"Balance", -- [3]
-							"Feral", -- [4]
-							"Guardian", -- [5]
-							"Restoration", -- [6]
-						},
+					[107] = {
 						["checked"] = "None",
 					},
 					[33] = {
 						["checked"] = true,
 					},
-					[108] = {
-						["checked"] = "Standard - Anchored",
-					},
+					["GuideOn"] = false,
 					[68] = {
 						["checked"] = false,
 					},
 					[36] = {
 						["checked"] = true,
+					},
+					[37] = {
+						["checked"] = true,
+					},
+					[69] = {
+						["checked"] = false,
+					},
+					[39] = {
+						["checked"] = false,
+					},
+					[40] = {
+						["checked"] = false,
+					},
+					["FirstTime"] = false,
+					[42] = {
+						["checked"] = false,
+					},
+					[43] = {
+						["checked"] = false,
+					},
+					[203] = {
+						["checked"] = 0,
+					},
+					["showNotCollectedPets"] = true,
+					[207] = {
+						["checked"] = 1,
+					},
+					[100] = {
+						["checked"] = "Easy",
+					},
+					[48] = {
+						["checked"] = false,
+					},
+					["petTypeFilters"] = {
+						["Humanoid"] = true,
+						["Elemental"] = true,
+						["Critter"] = true,
+						["Dragon"] = true,
+						["Flying"] = true,
+						["Magical"] = true,
+						["Undead"] = true,
+						["Mechanical"] = true,
+						["Beast"] = true,
+						["Aquatic"] = true,
+					},
+					["ModelViewer"] = {
+						["pos_x"] = false,
+					},
+					[51] = {
+						["checked"] = false,
 					},
 					["QuestRecordTable"] = {
 						["framePositions"] = {
@@ -1566,7 +1605,7 @@ DugisGuideViewerProfiles = {
 							["DugisGuideViewer_ModelViewer"] = {
 							},
 							["DugisOnOffButton"] = {
-								["yOfs"] = -211,
+								["yOfs"] = -205.999954223633,
 								["xOfs"] = 0,
 								["point"] = "TOPRIGHT",
 								["relativePoint"] = "TOPRIGHT",
@@ -1602,6 +1641,9 @@ DugisGuideViewerProfiles = {
 							},
 						},
 					},
+					[112] = {
+						["checked"] = "Expand Down",
+					},
 					[302] = {
 						["options"] = {
 							false, -- [1]
@@ -1609,63 +1651,22 @@ DugisGuideViewerProfiles = {
 							false, -- [3]
 						},
 					},
-					[107] = {
+					[108] = {
+						["checked"] = "Standard - Anchored",
+					},
+					[110] = {
 						["checked"] = "None",
+						["options"] = {
+							"None", -- [1]
+							"Active Talent Specialization", -- [2]
+							"Balance", -- [3]
+							"Feral", -- [4]
+							"Guardian", -- [5]
+							"Restoration", -- [6]
+						},
 					},
-					[40] = {
-						["checked"] = false,
-					},
-					[79] = {
-						["checked"] = false,
-					},
-					[42] = {
-						["checked"] = false,
-					},
-					[43] = {
-						["checked"] = false,
-					},
-					[39] = {
-						["checked"] = false,
-					},
-					["FirstTime"] = false,
-					[207] = {
-						["checked"] = 1,
-					},
-					[51] = {
-						["checked"] = false,
-					},
-					[48] = {
-						["checked"] = false,
-					},
-					["petTypeFilters"] = {
-						["Humanoid"] = true,
-						["Elemental"] = true,
-						["Critter"] = true,
-						["Dragon"] = true,
-						["Flying"] = true,
-						["Magical"] = true,
-						["Undead"] = true,
-						["Mechanical"] = true,
-						["Beast"] = true,
-						["Aquatic"] = true,
-					},
-					["ModelViewer"] = {
-						["pos_x"] = false,
-					},
-					[69] = {
-						["checked"] = false,
-					},
-					[100] = {
-						["checked"] = "Easy",
-					},
-					["showNotCollectedPets"] = true,
-					[203] = {
-						["checked"] = 0,
-					},
-					["SettingsRevision"] = 10,
-					["showCollectedPets"] = true,
-					[112] = {
-						["checked"] = "Expand Down",
+					[57] = {
+						["checked"] = true,
 					},
 					[77] = {
 						["checked"] = false,
@@ -1786,15 +1787,6 @@ DugisGuideViewerProfiles = {
 					[17] = {
 						["checked"] = false,
 					},
-					[19] = {
-						["checked"] = false,
-					},
-					[35] = {
-						["checked"] = false,
-					},
-					[36] = {
-						["checked"] = true,
-					},
 					["QuestRecordTable"] = {
 						["framePositions"] = {
 							["DugisMainBorder"] = {
@@ -1859,6 +1851,15 @@ DugisGuideViewerProfiles = {
 							},
 						},
 					},
+					[35] = {
+						["checked"] = false,
+					},
+					[36] = {
+						["checked"] = true,
+					},
+					[19] = {
+						["checked"] = false,
+					},
 					["GA_Blacklist"] = {
 						[138450] = true,
 						[122396] = true,
@@ -1883,8 +1884,8 @@ DugisGuideViewerProfiles = {
 					[24] = {
 						["checked"] = false,
 					},
-					["ModelViewer"] = {
-						["pos_x"] = false,
+					[13] = {
+						["checked"] = true,
 					},
 					["petTypeFilters"] = {
 						["Humanoid"] = true,
@@ -1898,8 +1899,8 @@ DugisGuideViewerProfiles = {
 						["Beast"] = true,
 						["Aquatic"] = true,
 					},
-					[13] = {
-						["checked"] = true,
+					["ModelViewer"] = {
+						["pos_x"] = false,
 					},
 					[69] = {
 						["checked"] = false,
@@ -2217,6 +2218,7 @@ DugisGuideViewerProfiles = {
 					[58] = {
 						["checked"] = false,
 					},
+					["RareCreatureTrackingEnabled"] = true,
 					[107] = {
 						["checked"] = "Sound\\Character\\Orc\\OrcVocalFemale\\OrcFemaleCongratulations01.ogg",
 					},
@@ -2227,6 +2229,7 @@ DugisGuideViewerProfiles = {
 						["checked"] = false,
 					},
 					[110] = {
+						["checked"] = "None",
 						["options"] = {
 							"None", -- [1]
 							"Active Talent Specialization", -- [2]
@@ -2234,7 +2237,6 @@ DugisGuideViewerProfiles = {
 							"Holy", -- [4]
 							"Shadow", -- [5]
 						},
-						["checked"] = "None",
 					},
 					["showNotCollectedPets"] = true,
 					["petTypeFilters"] = {
@@ -2263,10 +2265,8 @@ DugisGuideViewerProfiles = {
 						["checked"] = 0,
 					},
 					["FirstTime"] = false,
+					["AchievementTrackingEnabled"] = true,
 					["SettingsRevision"] = 10,
-					["ModelViewer"] = {
-						["pos_x"] = false,
-					},
 					["QuestRecordTable"] = {
 						["framePositions"] = {
 							["DugisMainBorder"] = {
@@ -2324,10 +2324,13 @@ DugisGuideViewerProfiles = {
 							["DugisOnOffButton"] = {
 								["point"] = "TOPRIGHT",
 								["relativePoint"] = "TOPRIGHT",
-								["yOfs"] = -182.000061035156,
-								["xOfs"] = -155.999725341797,
+								["yOfs"] = -208.999923706055,
+								["xOfs"] = -146.000030517578,
 							},
 						},
+					},
+					["ModelViewer"] = {
+						["pos_x"] = false,
 					},
 				},
 			},
@@ -2476,6 +2479,8 @@ CollectedWorldMapTrackingPoints = {
 			"11:1642031338:93530::F", -- [86]
 			"2:1834470600:96821::M", -- [87]
 			"11:1658808887:93530::F", -- [88]
+			"2:1834470573:96821::M", -- [89]
+			"2:1834470573:96821::M", -- [90]
 		},
 		["Azsuna:0"] = {
 			"6:2157870879:90086::F", -- [1]
@@ -2654,6 +2659,7 @@ CollectedWorldMapTrackingPoints = {
 			"2:2708522655:43819::F", -- [140]
 			"1:2626139453:8719::M", -- [141]
 			"2:2709178009:43819::F", -- [142]
+			"1:2587251233:43841::M", -- [143]
 		},
 		["Dalaran70:4"] = {
 			"12:1176460163:105986::F", -- [1]

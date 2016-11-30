@@ -189,7 +189,7 @@ EventTracker: enabled
 HideTalkingHead: enabled
 MacroToolkitIcons: enabled
 RubyHero: enabled
-BigDumbLootCouncil: disabled
+BigDumbLootCouncil: enabled
 AdiBags: disabled
 AdiBags_BestInSlot: disabled
 AdiBags_Bound: disabled

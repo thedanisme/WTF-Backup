@@ -1,5 +1,67 @@
 Changes since tag 2.2.2.2
 
+commit 06bd1b288c58546ee04522abe421b0eef8aace8a
+Author: Infus <infus@squorn.de>
+Date:   Tue Nov 29 13:46:55 2016 +0100
+
+    Fix debug output error on using new text replacements for actions
+    
+    Ticket-Nr: 801
+
+commit 06bd1b288c58546ee04522abe421b0eef8aace8a
+Author: Infus <infus@squorn.de>
+Date:   Tue Nov 29 13:46:55 2016 +0100
+
+    Fix debug output error on using new text replacements for actions
+    
+    Ticket-Nr: 801
+
+commit be75a3e99eb9d2576ab49437f006327945d79059
+Author: Infus <infus@squorn.de>
+Date:   Sat Nov 26 18:25:47 2016 +0100
+
+    Enable remaining time option also for "Always visible" cooldown triggers
+    
+    That does make some use cases a bit easier, e.g. showing a aura in the
+    last few seconds and hiding it once the ability is on cooldown.
+    
+    Ticket-Nr: Github-127
+
+commit ce2d11de7d8e3af9c054277b009e5cc50df919b6
+Author: Infus <infus@squorn.de>
+Date:   Sat Nov 26 17:56:57 2016 +0100
+
+    Manually increase frame level for various buttons
+    
+    I can't reproduce all issues, but users report issues and
+    those buttons are in a similar position as the texture select
+    button, where I can reproduce the issue.
+    
+    This is a bug in WoW, this might be revertable with 7.2
+
+commit 8adefb48860d4d3971729d66c152cc52cf5602b0
+Author: Benjamin Staneck <staneck@gmail.com>
+Date:   Wed Nov 23 01:58:31 2016 +0100
+
+    remove the space from localization namespace names to comply with the spec
+
+commit 8adefb48860d4d3971729d66c152cc52cf5602b0
+Author: Benjamin Staneck <staneck@gmail.com>
+Date:   Wed Nov 23 01:58:31 2016 +0100
+
+    remove the space from localization namespace names to comply with the spec
+
+commit c6e4338a6b6d0c0bb1b6de44fd61ac5c06eab66f
+Author: Infus <infus@squorn.de>
+Date:   Tue Nov 22 00:37:08 2016 +0100
+
+    Fix Equiment Slot CD trigger
+    
+    Since we only get a event on the cd starting, we need to track this
+    in a similar way as all other cds.
+    
+    Ticket-Nr: 795
+
 commit 4feada5b7df0a3c0932a39ff006d4a45249a6e33
 Author: Infus <infus@squorn.de>
 Date:   Tue Nov 22 00:24:13 2016 +0100
@@ -8,7 +70,23 @@ Date:   Tue Nov 22 00:24:13 2016 +0100
     
     Somehow missed that.
 
+commit aba78420bbfdec7bcd937fcb3cf4d3155394f6d2
+Author: Infus <infus@squorn.de>
+Date:   Tue Nov 22 00:24:13 2016 +0100
+
+    Add Bladestorm to Arms Warriors
+    
+    Somehow missed that.
+
 commit 04e6285b693e1299d54fe349046f77268a2727b2
+Author: Infus <infus@squorn.de>
+Date:   Tue Nov 22 00:23:28 2016 +0100
+
+    DBM Timer Trigger: Use "<" as a default remaining comparison operator
+    
+    That prevents a eror being shown if no operator was selected
+
+commit de3cec89c75418d36e6317c8d411eeae86487e69
 Author: Infus <infus@squorn.de>
 Date:   Tue Nov 22 00:23:28 2016 +0100
 
@@ -32,6 +110,29 @@ Date:   Sun Nov 20 11:52:57 2016 +0100
     hiding.
     
     Ticket-Nr: 793
+
+commit db07ae5582932e3749916fe02543a6a2ebd8083d
+Author: Infus <infus@squorn.de>
+Date:   Sun Nov 20 11:52:57 2016 +0100
+
+    Change many triggers to not automatically hide
+    
+    If there are two triggers with inverse conditions, e.g. a cooldown
+    active + cooldown not active trigger. We ideally want to always have
+    exactly one of those auras active. If we automatically hide the
+    cooldown active trigger on expiration time, this can be a moment
+    before getting the actual event.
+    
+    So for those triggers where we expect a event, disable the automatic
+    hiding.
+    
+    Ticket-Nr: 793
+
+commit 0d6a17720988402a22c1c279c3598d853b2508ce
+Author: Benjamin Staneck <staneck@gmail.com>
+Date:   Sun Nov 20 01:32:58 2016 +0100
+
+    curseforge test
 
 commit e88128df29de644efa2f79e168029e6532af7525
 Author: Benjamin Staneck <staneck@gmail.com>

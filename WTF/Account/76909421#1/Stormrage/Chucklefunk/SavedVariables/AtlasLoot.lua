@@ -1,6 +1,15 @@
 
 AtlasLootCharDB = {
 	["__addonrevision"] = 4325,
+	["GUI"] = {
+		["selected"] = {
+			"AtlasLoot_Factions", -- [1]
+			"LEGIONFACTIONS", -- [2]
+			4, -- [3]
+			1, -- [4]
+			0, -- [5]
+		},
+	},
 	["MiniMapButton"] = {
 		["point"] = {
 			"CENTER", -- [1]

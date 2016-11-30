@@ -149,4 +149,4 @@ RubyHero: enabled
 TransmogTokens: disabled
 WorldQuestTracker: disabled
 WorldQuestsList: disabled
-BigDumbLootCouncil: disabled
+BigDumbLootCouncil: enabled

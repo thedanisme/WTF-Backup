@@ -12,3 +12,4 @@ ExRT: disabled
 StrataFix: disabled
 TransmogTokens: disabled
 WorldQuestsList: disabled
+BigDumbLootCouncil: enabled

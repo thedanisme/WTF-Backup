@@ -153,3 +153,4 @@ HandyNotes_SuramarTelemancy: enabled
 NPCScan: enabled
 PersonalLootHelper: enabled
 ElvUI_SLE: enabled
+BigDumbLootCouncil: enabled

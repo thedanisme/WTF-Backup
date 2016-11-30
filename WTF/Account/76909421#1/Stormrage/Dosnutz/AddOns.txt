@@ -129,7 +129,7 @@ ZygorGuidesViewer: disabled
 AddOnSkins: enabled
 ElvUI_Config: enabled
 ElvUI: enabled
-BigDumbLootCouncil: disabled
+BigDumbLootCouncil: enabled
 AdiBags: disabled
 AdiBags_BestInSlot: disabled
 AdiBags_Bound: disabled
@@ -148,4 +148,3 @@ Details_RaidInfo-EmeraldNightmare: disabled
 Details_RaidInfo-Nighthold: disabled
 HandyNotes_SuramarTelemancy: disabled
 NPCScan: enabled
-ServerHop: disabled

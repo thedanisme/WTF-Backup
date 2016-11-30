@@ -2,6 +2,10 @@ VER 3 0100000000000004 "Growl" "INV_Misc_QuestionMark"
 #showtooltip
 /use [@mouseover,harm,exists][]Growl
 END
+VER 3 010000000000000A "Healing Touch" "INV_Misc_QuestionMark"
+#showtooltip
+/use [@mouseover,help,nodead][]Healing Touch
+END
 VER 3 0100000000000007 "Incarn" "INV_Misc_QuestionMark"
 #showtooltip
 /use Celestial Alignment
@@ -20,7 +24,15 @@ VER 3 0100000000000005 "Regrowth" "INV_Misc_QuestionMark"
 #showtooltip
 /use [@mouseover,help,nodead][]Regrowth
 END
+VER 3 0100000000000008 "Rejuv" "INV_Misc_QuestionMark"
+#showtooltip
+/use [@mouseover,help,nodead][]Rejuvenation
+END
 VER 3 0100000000000003 "RemCorruption" "INV_Misc_QuestionMark"
 #showtooltip
 /use [@mouseover,help,exists][]Remove Corruption
+END
+VER 3 0100000000000009 "Swiftmend" "INV_Misc_QuestionMark"
+#showtooltip
+/use [@mouseover,help,nodead][]Swiftmend
 END

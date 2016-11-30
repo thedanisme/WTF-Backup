@@ -1,10 +1,10 @@
 # BigWigs
 
-## [v25.1](https://github.com/BigWigsMods/BigWigs/tree/v25.1) (2016-11-25) [](#top)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v25...v25.1)
+## [v25.2](https://github.com/BigWigsMods/BigWigs/tree/v25.2) (2016-11-28) [](#top)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v25.1...v25.2)
 
-- Add Soultakers module  
-- frFR Update (#115)  
-- Plugins/Statistics: Slightly faster health updates.  
-- Plugins/Statistics: Tweak print  
-- zhCN update. (#114)  
+- Update deDE.lua (#117)  
+- Plugins/Statistics: Don't print when we have no health data.  
+- TrialOfValor/Odyn: Add say countdown to Shield of Light.  
+- TrialOfValor/Helya: Various timer fixes  
+- Plugins/Statistics: Cancel the health check on win, cleanups.  

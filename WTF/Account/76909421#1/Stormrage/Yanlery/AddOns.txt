@@ -194,11 +194,10 @@ HideTalkingHead: enabled
 MacroToolkitIcons: disabled
 RubyHero: enabled
 TransmogTokens: enabled
-BigDumbLootCouncil: disabled
+BigDumbLootCouncil: enabled
 ConsLegion: disabled
 DugisGuideViewerZ: enabled
 HandyNotes_LegionRaresTreasures: enabled
 MacroBank: disabled
 NOP: enabled
 WorldQuestTracker: disabled
-WorldQuestsList: enabled

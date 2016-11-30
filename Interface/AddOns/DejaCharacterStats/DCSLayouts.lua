@@ -51,16 +51,16 @@ local StatScrollFrame = CreateFrame("ScrollFrame", nil, CharacterFrameInsetRight
 	CharacterStatsPane.EnhancementsCategory.Background:SetHeight(28)
 
 	
-	for k, v in pairs(DCS_TableData.StatData) do
-		if (not v.frame) then
-			if (v.category) then
-				v.frame = CreateFrame("FRAME", nil, StatFrame, "CharacterStatFrameCategoryTemplate")
-			else
-				v.frame = CreateFrame("FRAME", nil, StatFrame, "CharacterStatFrameTemplate")
-			end
+for k, v in pairs(DCS_TableData.StatData) do
+	if (not v.frame) then
+		if (v.category) then
+			v.frame = CreateFrame("FRAME", nil, StatFrame, "CharacterStatFrameCategoryTemplate")
+		else
+			v.frame = CreateFrame("FRAME", nil, StatFrame, "CharacterStatFrameTemplate")
 		end
-		v.frame.statKey = k
 	end
+	v.frame.statKey = k
+end
 
 local DefaultData = DCS_TableData:MergeTable({
     { statKey = "ItemLevelFrame" },
@@ -75,11 +75,12 @@ local DefaultData = DCS_TableData:MergeTable({
         { statKey = "STAMINA" },
         { statKey = "ATTACK_DAMAGE" },
         { statKey = "ATTACK_AP" },
-        { statKey = "ATTACK_ATTACKSPEED" },
+        { statKey = "DCS_ATTACK_ATTACKSPEED" },
+		{ statKey = "WEAPON_DPS" },
         { statKey = "SPELLPOWER" },
         { statKey = "MANAREGEN" },
         { statKey = "ENERGY_REGEN" },
-        { statKey = "RUNE_REGEN" },
+        { statKey = "DCS_RUNEREGEN" },
         { statKey = "FOCUS_REGEN" },		
         { statKey = "MOVESPEED" },
         { statKey = "GCD" },
@@ -162,6 +163,48 @@ local function ShowCharacterStats(unit)
 	end
 end
 
+local function DCS_Table_Relevant()
+	local uniqueKey = UnitName("player") .. ":" .. GetRealmName() .. ":" .. GetSpecialization()
+	--print(uniqueKey)
+	--print("Select only relevant stats")
+	ShownData = DCS_TableData:CopyTable(DefaultData)
+	local spec = GetSpecialization();
+	local role = GetSpecializationRole(spec)
+	local primaryStat = select(7, GetSpecializationInfo(spec, nil, nil, nil, UnitSex("player")));
+    for _, v in ipairs(ShownData) do
+		--print (v.statKey, " ", v.hidden)
+		if v.statKey == 0 then v.hidden = true end
+		if primaryStat ~= LE_UNIT_STAT_STRENGTH then
+			if v.statKey == "STRENGTH" then v.hidden = true end
+			if v.statKey == "DCS_RUNEREGEN" then v.hidden = true end
+		end
+		if primaryStat ~= LE_UNIT_STAT_AGILITY then
+			if v.statKey == "AGILITY" then v.hidden = true end
+			if v.statKey == "ENERGY_REGEN" then v.hidden = true end
+		end
+		if primaryStat ~= LE_UNIT_STAT_INTELLECT then
+			if v.statKey == "INTELLECT" then v.hidden = true end
+			if v.statKey == "SPELLPOWER" then v.hidden = true end
+			if v.statKey == "MANAREGEN" then v.hidden = true end
+		end
+		if primaryStat == LE_UNIT_STAT_INTELLECT  then
+		--if role ~= "TANK" and role ~="DAMAGER" then -- is this check even needed?
+			if v.statKey == "ATTACK_DAMAGE" then v.hidden = true end
+			if v.statKey == "ATTACK_AP" then v.hidden = true end
+			if v.statKey == "DCS_ATTACK_ATTACKSPEED" then v.hidden = true end
+		--end
+		end
+		if role ~= "TANK" then
+			if v.statKey == "DODGE" then v.hidden = true end
+			if v.statKey == "PARRY" then v.hidden = true end
+			if v.statKey == "BLOCK" then v.hidden = true end
+		end
+	end
+	ShownData.uniqueKey = uniqueKey
+	DCS_ClassSpecDB[uniqueKey] = ShownData
+	ShowCharacterStats("player")
+end
+
 local DCS_TALENT_UPDATE_Frame = CreateFrame("Frame", nil, UIParent)
 	DCS_TALENT_UPDATE_Frame:RegisterEvent("PLAYER_TALENT_UPDATE")
 	DCS_TALENT_UPDATE_Frame:SetScript("OnEvent", function(self, event, ...)
@@ -174,9 +217,7 @@ local DCS_TALENT_UPDATE_Frame = CreateFrame("Frame", nil, UIParent)
 			end
 		else
 			--print("Set default initialization")
-			ShownData = DCS_TableData:CopyTable(DefaultData)
-			ShownData.uniqueKey = uniqueKey
-			DCS_ClassSpecDB[uniqueKey] = ShownData
+			DCS_Table_Relevant()
 		end
 		ShowCharacterStats("player")
 	end)
@@ -301,6 +342,31 @@ hooksecurefunc("PaperDollFrame_SetSidebar", function(self, index)
 	end
 end)
 
+local DCS_TableRelevantStats = CreateFrame("Button", "DCS_TableRelevantStats", CharacterFrameInsetRight, "UIPanelButtonTemplate")
+	DCS_TableRelevantStats:ClearAllPoints()
+	DCS_TableRelevantStats:SetPoint("BOTTOMRIGHT", -130,-36)
+	DCS_TableRelevantStats:SetScale(0.80)
+	DCS_TableRelevantStats:Hide()
+
+--local LOCALE = GetLocale()
+--print (LOCALE)
+	--if (LOCALE == "ptBR" or LOCALE == "frFR" or LOCALE == "deDE") then
+		--print ("ptBR, frFR, deDE = 175")
+	--LOCALE = 175
+	--else
+	--print ("enUS = 125")
+	--LOCALE = 125
+	--end
+	--LOCALE = 175
+	--DCS_TableRelevantStats:SetWidth(LOCALE)
+
+	DCS_TableRelevantStats:SetWidth(125)
+	DCS_TableRelevantStats:SetHeight(30)
+	_G[DCS_TableRelevantStats:GetName() .. "Text"]:SetText(L["Relevant Stats"])
+	DCS_TableRelevantStats:SetScript("OnClick", function(self, button, down)
+	DCS_Table_Relevant()
+end)
+
 
 ------------------------
 -- Reset Stats Button --
@@ -312,17 +378,17 @@ local DCS_TableResetCheck = CreateFrame("Button", "DCS_TableResetButton", Charac
 	DCS_TableResetCheck:SetScale(0.80)
 	DCS_TableResetCheck:Hide()
 
-local LOCALE = GetLocale()
+--local LOCALE = GetLocale()
 --print (LOCALE)
-	if (LOCALE == "ptBR" or LOCALE == "frFR" or LOCALE == "deDE") then
-	--print ("ptBR, frFR, deDE = 175")
-	LOCALE = 175
-	else
+	--if (LOCALE == "ptBR" or LOCALE == "frFR" or LOCALE == "deDE") then
+		--print ("ptBR, frFR, deDE = 175")
+	--LOCALE = 175
+	--else
 	--print ("enUS = 125")
-	LOCALE = 125
-	end
-
-	DCS_TableResetCheck:SetWidth(LOCALE)
+	--LOCALE = 125
+	--end
+	--DCS_TableResetCheck:SetWidth(LOCALE)
+	DCS_TableResetCheck:SetWidth(125)
 	DCS_TableResetCheck:SetHeight(30)
 	_G[DCS_TableResetCheck:GetName() .. "Text"]:SetText(L["Reset Stats"])
 	DCS_TableResetCheck:SetScript("OnClick", function(self, button, down)
@@ -333,11 +399,11 @@ end)
 ------------------------
 -- Config Mode Toggle --
 ------------------------
-local DCS_ConfigtooltipText = 'Unlock DCS'
+local DCS_ConfigtooltipText = L["Unlock DCS"]
 
 local DCS_configButton = CreateFrame("Button", nil, PaperDollSidebarTab1)
-	DCS_configButton:SetSize(22, 22)
-	DCS_configButton:SetPoint("BOTTOMLEFT", PaperDollSidebarTab1, "BOTTOMLEFT", -1, -4)
+	DCS_configButton:SetSize(32, 32)
+	DCS_configButton:SetPoint("BOTTOMLEFT", PaperDollSidebarTab1, "BOTTOMLEFT", 96, 34)
 	DCS_configButton:SetNormalTexture("Interface\\Buttons\\LockButton-Locked-Up")
 	DCS_configButton:SetPushedTexture("Interface\\Buttons\\LockButton-Unlocked-Down")
 	DCS_configButton:SetHighlightTexture("Interface\\Buttons\\UI-Common-MouseHilight", "ADD")
@@ -359,20 +425,26 @@ local function DCS_configButton_OnLeave(self)
 		configMode = not configMode
 		if (configMode) then
 			self:SetNormalTexture("Interface\\Buttons\\LockButton-Unlocked-Up")
-			DCS_ConfigtooltipText = 'Lock DCS' --Creates a tooltip on mouseover.
+			DCS_ConfigtooltipText = L["Lock DCS"] --Creates a tooltip on mouseover.
 			DCS_TableResetCheck:Show()
+			DCS_TableRelevantStats:Show()
 		else
 			self:SetNormalTexture("Interface\\Buttons\\LockButton-Locked-Up")
-			DCS_ConfigtooltipText = 'Unlock DCS' --Creates a tooltip on mouseover.
+			DCS_ConfigtooltipText = L["Unlock DCS"] --Creates a tooltip on mouseover.
 			DCS_TableResetCheck:Hide()
+			DCS_TableRelevantStats:Hide()
 		end
 		ShowCharacterStats("player")
 		DCS_configButton_OnEnter()
 	end)
 
-PaperDollFrame:HookScript("OnHide", function(self)
+CharacterFrameInsetRight:HookScript("OnHide", function(self)
 	configMode = false
-	DCS_ConfigtooltipText = 'Unlock DCS'
+	DCS_TableResetCheck:Hide()
+	DCS_TableRelevantStats:Hide()
+	DCS_configButton:SetNormalTexture("Interface\\Buttons\\LockButton-Locked-Up")
+	DCS_ConfigtooltipText = L["Unlock DCS"]
+	ShowCharacterStats("player")
 end)
 
 
@@ -386,7 +458,7 @@ local DCS_ScrollbarCheck = CreateFrame("CheckButton", "DCS_ScrollbarCheck", Deja
 	DCS_ScrollbarCheck:SetPoint("LEFT", 25, -175)
 	DCS_ScrollbarCheck:SetScale(1.25)
 	DCS_ScrollbarCheck.tooltipText = 'Displays the DCS scrollbar.' --Creates a tooltip on mouseover.
-	_G[DCS_ScrollbarCheck:GetName() .. "Text"]:SetText("Scrollbar")
+	_G[DCS_ScrollbarCheck:GetName() .. "Text"]:SetText(L["Scrollbar"])
 	
 	DCS_ScrollbarCheck:SetScript("OnEvent", function(self, event, arg1)
 		if event == "PLAYER_LOGIN" then
@@ -414,24 +486,3 @@ local DCS_ScrollbarCheck = CreateFrame("CheckButton", "DCS_ScrollbarCheck", Deja
 		end		
         ShowCharacterStats("player")
 	end)
-
-function PaperDollFrame_SetAttackSpeed(statFrame, unit)
-	local meleeHaste = GetMeleeHaste();
-	local speed, offhandSpeed = UnitAttackSpeed(unit);
-
-	local displaySpeed = format("%.2f", speed);
-	if ( offhandSpeed ) then
-		offhandSpeed = format("%.2f", offhandSpeed);
-	end
-	if ( offhandSpeed ) then
-		displaySpeed =  BreakUpLargeNumbers(displaySpeed).." / ".. offhandSpeed;
-	else
-		displaySpeed =  BreakUpLargeNumbers(displaySpeed);
-	end
-	PaperDollFrame_SetLabelAndText(statFrame, WEAPON_SPEED, displaySpeed, false, speed);
-
-	statFrame.tooltip = HIGHLIGHT_FONT_COLOR_CODE..format(PAPERDOLLFRAME_TOOLTIP_FORMAT, ATTACK_SPEED).." "..displaySpeed..FONT_COLOR_CODE_CLOSE;
-	statFrame.tooltip2 = format(STAT_ATTACK_SPEED_BASE_TOOLTIP, BreakUpLargeNumbers(meleeHaste));
-
-	statFrame:Show();
-end

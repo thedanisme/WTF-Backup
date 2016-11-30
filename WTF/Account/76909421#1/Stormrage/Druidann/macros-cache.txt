@@ -1,3 +1,7 @@
+VER 3 010000000000000B "FoE" "Ability_Druid_Dreamstate."
+#showtooltip
+/use [@cursor]Fury of Elune
+END
 VER 3 0100000000000004 "Growl" "INV_Misc_QuestionMark"
 #showtooltip
 /use [@mouseover,harm,exists][]Growl
@@ -35,4 +39,8 @@ END
 VER 3 0100000000000009 "Swiftmend" "INV_Misc_QuestionMark"
 #showtooltip
 /use [@mouseover,help,nodead][]Swiftmend
+END
+VER 3 010000000000000C "Treants" "INV_Misc_QuestionMark"
+#showtooltip
+/use [@cursor]Force of Nature
 END

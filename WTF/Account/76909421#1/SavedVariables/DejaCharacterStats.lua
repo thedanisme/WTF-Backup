@@ -22,8 +22,8 @@ DejaCharacterStatsDB = {
 		["dejacharacterstatsShowDuraTextureChecked"] = {
 			["ShowDuraTextureSetChecked"] = false,
 		},
-		["dejacharacterstatsExpandButtonChecked"] = {
-			["ExpandButtonSetChecked"] = true,
+		["dejacharacterstatsScrollbarChecked"] = {
+			["ScrollbarSetChecked"] = false,
 		},
 		["dejacharacterstatsShowDuraChecked"] = {
 			["ShowDuraSetChecked"] = false,
@@ -34,8 +34,8 @@ DejaCharacterStatsDB = {
 		["dejacharacterstatsRepairTotalStatChecked"] = {
 			["RepairTotalStatSetChecked"] = true,
 		},
-		["dejacharacterstatsScrollbarChecked"] = {
-			["ScrollbarSetChecked"] = false,
+		["dejacharacterstatsExpandButtonChecked"] = {
+			["ExpandButtonSetChecked"] = true,
 		},
 	},
 }
@@ -58,12 +58,15 @@ DCS_ClassSpecDB = {
 		}, -- [5]
 		{
 			["statKey"] = "ARMOR",
+			["hidden"] = true,
 		}, -- [6]
 		{
 			["statKey"] = "STRENGTH",
+			["hidden"] = true,
 		}, -- [7]
 		{
 			["statKey"] = "AGILITY",
+			["hidden"] = true,
 		}, -- [8]
 		{
 			["statKey"] = "INTELLECT",
@@ -73,71 +76,86 @@ DCS_ClassSpecDB = {
 		}, -- [10]
 		{
 			["statKey"] = "ATTACK_DAMAGE",
+			["hidden"] = true,
 		}, -- [11]
 		{
 			["statKey"] = "ATTACK_AP",
+			["hidden"] = true,
 		}, -- [12]
 		{
-			["statKey"] = "ATTACK_ATTACKSPEED",
+			["statKey"] = "SPELLPOWER",
 		}, -- [13]
 		{
-			["statKey"] = "SPELLPOWER",
+			["statKey"] = "MANAREGEN",
+			["hidden"] = true,
 		}, -- [14]
 		{
-			["statKey"] = "MANAREGEN",
+			["statKey"] = "ENERGY_REGEN",
+			["hidden"] = true,
 		}, -- [15]
 		{
-			["statKey"] = "ENERGY_REGEN",
+			["statKey"] = "FOCUS_REGEN",
 		}, -- [16]
 		{
-			["statKey"] = "RUNE_REGEN",
+			["statKey"] = "MOVESPEED",
 		}, -- [17]
 		{
-			["statKey"] = "FOCUS_REGEN",
+			["statKey"] = "GCD",
+			["hidden"] = true,
 		}, -- [18]
 		{
-			["statKey"] = "MOVESPEED",
+			["statKey"] = "REPAIR_COST",
 		}, -- [19]
 		{
-			["statKey"] = "GCD",
+			["statKey"] = "EnhancementsCategory",
 		}, -- [20]
 		{
-			["statKey"] = "REPAIR_COST",
+			["statKey"] = "CRITCHANCE",
 		}, -- [21]
 		{
-			["statKey"] = "EnhancementsCategory",
+			["statKey"] = "HASTE",
 		}, -- [22]
 		{
-			["statKey"] = "CRITCHANCE",
+			["statKey"] = "VERSATILITY",
 		}, -- [23]
 		{
-			["statKey"] = "HASTE",
+			["statKey"] = "MASTERY",
 		}, -- [24]
 		{
-			["statKey"] = "VERSATILITY",
+			["statKey"] = "LIFESTEAL",
+			["hidden"] = true,
 		}, -- [25]
 		{
-			["statKey"] = "MASTERY",
+			["statKey"] = "AVOIDANCE",
+			["hidden"] = true,
 		}, -- [26]
 		{
-			["statKey"] = "LIFESTEAL",
+			["statKey"] = "DODGE",
+			["hidden"] = true,
 		}, -- [27]
 		{
-			["statKey"] = "AVOIDANCE",
+			["statKey"] = "PARRY",
+			["hidden"] = true,
 		}, -- [28]
 		{
-			["statKey"] = "DODGE",
-		}, -- [29]
-		{
-			["statKey"] = "PARRY",
-		}, -- [30]
-		{
 			["statKey"] = "BLOCK",
-		}, -- [31]
+			["hidden"] = true,
+		}, -- [29]
 		{
 			["statKey"] = "ITEMLEVEL",
 			["hidden"] = true,
+		}, -- [30]
+		{
+			["statKey"] = "WEAPON_DPS",
+			["hidden"] = true,
+		}, -- [31]
+		{
+			["statKey"] = "DCS_ATTACK_ATTACKSPEED",
+			["hidden"] = true,
 		}, -- [32]
+		{
+			["statKey"] = "DCS_RUNEREGEN",
+		}, -- [33]
 		["uniqueKey"] = "Druidann:Stormrage:1",
 	},
 	["Chucklefunk:Stormrage:1"] = {
@@ -178,66 +196,69 @@ DCS_ClassSpecDB = {
 			["statKey"] = "ATTACK_AP",
 		}, -- [12]
 		{
-			["statKey"] = "ATTACK_ATTACKSPEED",
+			["statKey"] = "SPELLPOWER",
 		}, -- [13]
 		{
-			["statKey"] = "SPELLPOWER",
+			["statKey"] = "MANAREGEN",
 		}, -- [14]
 		{
-			["statKey"] = "MANAREGEN",
+			["statKey"] = "ENERGY_REGEN",
 		}, -- [15]
 		{
-			["statKey"] = "ENERGY_REGEN",
+			["statKey"] = "FOCUS_REGEN",
 		}, -- [16]
 		{
-			["statKey"] = "RUNE_REGEN",
+			["statKey"] = "MOVESPEED",
 		}, -- [17]
 		{
-			["statKey"] = "FOCUS_REGEN",
+			["statKey"] = "GCD",
 		}, -- [18]
 		{
-			["statKey"] = "MOVESPEED",
+			["statKey"] = "REPAIR_COST",
 		}, -- [19]
 		{
-			["statKey"] = "GCD",
+			["statKey"] = "EnhancementsCategory",
 		}, -- [20]
 		{
-			["statKey"] = "REPAIR_COST",
+			["statKey"] = "CRITCHANCE",
 		}, -- [21]
 		{
-			["statKey"] = "EnhancementsCategory",
+			["statKey"] = "HASTE",
 		}, -- [22]
 		{
-			["statKey"] = "CRITCHANCE",
+			["statKey"] = "VERSATILITY",
 		}, -- [23]
 		{
-			["statKey"] = "HASTE",
+			["statKey"] = "MASTERY",
 		}, -- [24]
 		{
-			["statKey"] = "VERSATILITY",
+			["statKey"] = "LIFESTEAL",
 		}, -- [25]
 		{
-			["statKey"] = "MASTERY",
+			["statKey"] = "AVOIDANCE",
 		}, -- [26]
 		{
-			["statKey"] = "LIFESTEAL",
+			["statKey"] = "DODGE",
 		}, -- [27]
 		{
-			["statKey"] = "AVOIDANCE",
+			["statKey"] = "PARRY",
 		}, -- [28]
 		{
-			["statKey"] = "DODGE",
-		}, -- [29]
-		{
-			["statKey"] = "PARRY",
-		}, -- [30]
-		{
 			["statKey"] = "BLOCK",
-		}, -- [31]
+		}, -- [29]
 		{
 			["statKey"] = "ITEMLEVEL",
 			["hidden"] = true,
+		}, -- [30]
+		{
+			["statKey"] = "WEAPON_DPS",
+		}, -- [31]
+		{
+			["statKey"] = "DCS_ATTACK_ATTACKSPEED",
 		}, -- [32]
+		{
+			["statKey"] = "DCS_RUNEREGEN",
+		}, -- [33]
 		["uniqueKey"] = "Chucklefunk:Stormrage:1",
 	},
 	["Oenta:Stormrage:1"] = {
@@ -458,6 +479,7 @@ DCS_ClassSpecDB = {
 		}, -- [5]
 		{
 			["statKey"] = "ARMOR",
+			["hidden"] = true,
 		}, -- [6]
 		{
 			["statKey"] = "STRENGTH",
@@ -475,78 +497,85 @@ DCS_ClassSpecDB = {
 		}, -- [10]
 		{
 			["statKey"] = "ATTACK_DAMAGE",
+			["hidden"] = true,
 		}, -- [11]
 		{
 			["statKey"] = "ATTACK_AP",
 			["hidden"] = true,
 		}, -- [12]
 		{
-			["statKey"] = "ATTACK_ATTACKSPEED",
-			["hidden"] = true,
+			["statKey"] = "SPELLPOWER",
 		}, -- [13]
 		{
-			["statKey"] = "SPELLPOWER",
-		}, -- [14]
-		{
 			["statKey"] = "MANAREGEN",
-		}, -- [15]
+			["hidden"] = true,
+		}, -- [14]
 		{
 			["statKey"] = "ENERGY_REGEN",
 			["hidden"] = true,
-		}, -- [16]
-		{
-			["statKey"] = "RUNE_REGEN",
-			["hidden"] = true,
-		}, -- [17]
+		}, -- [15]
 		{
 			["statKey"] = "FOCUS_REGEN",
-		}, -- [18]
+		}, -- [16]
 		{
 			["statKey"] = "MOVESPEED",
-		}, -- [19]
+		}, -- [17]
 		{
 			["statKey"] = "GCD",
-		}, -- [20]
+		}, -- [18]
 		{
 			["statKey"] = "REPAIR_COST",
-		}, -- [21]
+		}, -- [19]
 		{
 			["statKey"] = "EnhancementsCategory",
-		}, -- [22]
+		}, -- [20]
 		{
 			["statKey"] = "CRITCHANCE",
-		}, -- [23]
+		}, -- [21]
 		{
 			["statKey"] = "HASTE",
-		}, -- [24]
+		}, -- [22]
 		{
 			["statKey"] = "VERSATILITY",
-		}, -- [25]
+		}, -- [23]
 		{
 			["statKey"] = "MASTERY",
-		}, -- [26]
+		}, -- [24]
 		{
 			["statKey"] = "LIFESTEAL",
-		}, -- [27]
+			["hidden"] = true,
+		}, -- [25]
 		{
 			["statKey"] = "AVOIDANCE",
 			["hidden"] = true,
-		}, -- [28]
+		}, -- [26]
 		{
 			["statKey"] = "DODGE",
-		}, -- [29]
+			["hidden"] = true,
+		}, -- [27]
 		{
 			["statKey"] = "PARRY",
 			["hidden"] = true,
-		}, -- [30]
+		}, -- [28]
 		{
 			["statKey"] = "BLOCK",
 			["hidden"] = true,
-		}, -- [31]
+		}, -- [29]
 		{
 			["statKey"] = "ITEMLEVEL",
 			["hidden"] = true,
+		}, -- [30]
+		{
+			["statKey"] = "WEAPON_DPS",
+			["hidden"] = true,
+		}, -- [31]
+		{
+			["statKey"] = "DCS_ATTACK_ATTACKSPEED",
+			["hidden"] = true,
 		}, -- [32]
+		{
+			["statKey"] = "DCS_RUNEREGEN",
+		}, -- [33]
 		["uniqueKey"] = "Chucklefunk:Stormrage:3",
 	},
 }

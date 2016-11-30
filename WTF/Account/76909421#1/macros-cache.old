@@ -1,3 +1,7 @@
+VER 3 000000000000014C " " "INV_Misc_QuestionMark"
+#showtooltip 
+/use [@mouseover,talent:7/1,nodead,help]Beacon of light;[@mouseover,talent:7/2,nodead,help]Beacon of Light;[@mouseover,talent:7/3,nodead,help]Beacon of Virtue
+END
 VER 3 000000000000013D " " "INV_Misc_QuestionMark"
 #showtooltip
 /use 12
@@ -12,13 +16,6 @@ VER 3 000000000000014B "Cache Buy" "INV_MISC_Lockbox_1."
 END
 VER 3 000000000000013C "ClearMark" "INV_Hammer_Unique_Sulfuras"
 /run SetRaidTarget("PLAYER",0)
-END
-VER 3 000000000000013E "CRATES" "INV_Crate_01."
-#showtooltip
-/use Big Crate of Salvage
-/use Large Crate of Salvage
-/use Bag of Salvaged Goods
-/use Sack of Salvaged Goods
 END
 VER 3 00000000000000DA "DisbandEvrything" "INV_valkierpet"
 /run for i=1,GetNumGroupMembers()do if UnitName("raid"..i)~=UnitName("player")then UninviteUnit("raid"..i,"reason")end end LeaveParty()

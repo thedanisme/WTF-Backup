@@ -123,5 +123,5 @@ ZygorGuidesViewer: disabled
 AddOnSkins: enabled
 ElvUI_Config: enabled
 ElvUI: enabled
-BigDumbLootCouncil: disabled
+BigDumbLootCouncil: enabled
 PersonalLootHelper: enabled
