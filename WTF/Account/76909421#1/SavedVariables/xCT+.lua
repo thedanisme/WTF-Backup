@@ -956,12 +956,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[196278] = {
+					[105421] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "PALADIN",
+						["desc"] = 0,
 					},
 					[199054] = {
 						["enabled"] = true,
@@ -970,12 +970,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[195256] = {
+					[196278] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "SHAMAN",
-						["desc"] = 263,
+						["interval"] = 0.5,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[104318] = {
 						["enabled"] = true,
@@ -1908,12 +1908,12 @@ xCTSavedDB = {
 						["class"] = "ROGUE",
 						["desc"] = 260,
 					},
-					[113780] = {
+					[218617] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "ROGUE",
-						["desc"] = 259,
+						["interval"] = 1.5,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[173010] = {
 						["enabled"] = true,
@@ -1929,12 +1929,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[218617] = {
+					[201754] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[194153] = {
 						["enabled"] = true,
@@ -1992,12 +1992,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[213771] = {
+					[118000] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DRUID",
-						["desc"] = 104,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[210833] = {
 						["enabled"] = true,
@@ -2013,12 +2013,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[211727] = {
+					[213771] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "DRUID",
+						["desc"] = 104,
 					},
 					[211088] = {
 						["enabled"] = true,
@@ -2041,19 +2041,19 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[88263] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 66,
-					},
 					[206930] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
 						["class"] = "DEATHKNIGHT",
 						["desc"] = 250,
+					},
+					[980] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 2.5,
+						["class"] = "WARLOCK",
+						["desc"] = 265,
 					},
 					[211545] = {
 						["enabled"] = true,
@@ -2111,12 +2111,12 @@ xCTSavedDB = {
 						["class"] = "WARRIOR",
 						["desc"] = 72,
 					},
-					[184256] = {
+					[120361] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
-						["desc"] = "Discordant Chorus",
+						["interval"] = 1.5,
+						["class"] = "HUNTER",
+						["desc"] = 0,
 					},
 					[183042] = {
 						["enabled"] = true,
@@ -2132,19 +2132,19 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 255,
 					},
-					[120361] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "HUNTER",
-						["desc"] = 0,
-					},
 					[153596] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "MAGE",
 						["desc"] = 64,
+					},
+					[184256] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 2.5,
+						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
+						["desc"] = "Discordant Chorus",
 					},
 					[198756] = {
 						["enabled"] = true,
@@ -2384,12 +2384,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Damage",
 					},
-					[980] = {
+					[88263] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "WARLOCK",
-						["desc"] = 265,
+						["interval"] = 0.5,
+						["class"] = "PALADIN",
+						["desc"] = 66,
 					},
 					[212621] = {
 						["enabled"] = true,
@@ -2405,12 +2405,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Nature Healing (Monks, Druids)",
 					},
-					[118000] = {
+					[211727] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[81751] = {
 						["enabled"] = true,
@@ -2461,12 +2461,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[201754] = {
+					[113780] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["class"] = "ROGUE",
+						["desc"] = 259,
 					},
 					[13812] = {
 						["enabled"] = true,
@@ -2895,12 +2895,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[105421] = {
+					[195256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 0,
+						["interval"] = 1.5,
+						["class"] = "SHAMAN",
+						["desc"] = 263,
 					},
 					[132467] = {
 						["enabled"] = true,
@@ -3732,11 +3732,12 @@ xCTSavedDB = {
 						["prep"] = 0,
 						["interval"] = 6,
 					},
-					[13812] = {
+					[159238] = {
 						["enabled"] = true,
-						["class"] = "HUNTER",
 						["prep"] = 0,
-						["interval"] = 3,
+						["interval"] = 3.5,
+						["class"] = "ITEM",
+						["desc"] = "Shattered Hand (Weapon Enchant)",
 					},
 					[118253] = {
 						["enabled"] = true,
@@ -3768,11 +3769,12 @@ xCTSavedDB = {
 						["prep"] = 0,
 						["interval"] = 4,
 					},
-					[3674] = {
+					[164603] = {
 						["enabled"] = true,
-						["class"] = "HUNTER",
 						["prep"] = 0,
-						["interval"] = 4,
+						["interval"] = 3.5,
+						["class"] = "ITEM",
+						["desc"] = "Shredder",
 					},
 					[86678] = {
 						["enabled"] = true,
@@ -3845,9 +3847,9 @@ xCTSavedDB = {
 						["class"] = "ITEM",
 						["desc"] = "Nature Healing (Monks, Druids)",
 					},
-					[115310] = {
+					[13812] = {
 						["enabled"] = true,
-						["class"] = "MONK",
+						["class"] = "HUNTER",
 						["prep"] = 0,
 						["interval"] = 3,
 					},
@@ -3882,12 +3884,12 @@ xCTSavedDB = {
 						["class"] = "ITEM",
 						["desc"] = "Aeda (Follower)",
 					},
-					[164603] = {
+					[146061] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 3.5,
+						["interval"] = 5,
 						["class"] = "ITEM",
-						["desc"] = "Shredder",
+						["desc"] = "Physical Damage (Melee)",
 					},
 					[148135] = {
 						["enabled"] = true,
@@ -3920,12 +3922,11 @@ xCTSavedDB = {
 						["prep"] = 0,
 						["interval"] = 4.5,
 					},
-					[159238] = {
+					[115310] = {
 						["enabled"] = true,
+						["class"] = "MONK",
 						["prep"] = 0,
-						["interval"] = 3.5,
-						["class"] = "ITEM",
-						["desc"] = "Shattered Hand (Weapon Enchant)",
+						["interval"] = 3,
 					},
 					[124081] = {
 						["enabled"] = true,
@@ -4425,12 +4426,11 @@ xCTSavedDB = {
 						["prep"] = 0,
 						["interval"] = 3,
 					},
-					[146061] = {
+					[3674] = {
 						["enabled"] = true,
+						["class"] = "HUNTER",
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "ITEM",
-						["desc"] = "Physical Damage (Melee)",
+						["interval"] = 4,
 					},
 					[113656] = {
 						["enabled"] = true,
@@ -5981,12 +5981,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[195256] = {
+					[196278] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "SHAMAN",
-						["desc"] = 263,
+						["interval"] = 0.5,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[199054] = {
 						["enabled"] = true,
@@ -5995,12 +5995,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[105421] = {
+					[195256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 0,
+						["interval"] = 1.5,
+						["class"] = "SHAMAN",
+						["desc"] = 263,
 					},
 					[104318] = {
 						["enabled"] = true,
@@ -6933,12 +6933,12 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 255,
 					},
-					[201754] = {
+					[113780] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["class"] = "ROGUE",
+						["desc"] = 259,
 					},
 					[173010] = {
 						["enabled"] = true,
@@ -6954,12 +6954,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[113780] = {
+					[218617] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "ROGUE",
-						["desc"] = 259,
+						["interval"] = 1.5,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[194153] = {
 						["enabled"] = true,
@@ -7017,12 +7017,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[211727] = {
+					[213771] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "DRUID",
+						["desc"] = 104,
 					},
 					[7922] = {
 						["enabled"] = true,
@@ -7038,12 +7038,12 @@ xCTSavedDB = {
 						["class"] = "DEMONHUNTER",
 						["desc"] = 577,
 					},
-					[118000] = {
+					[211727] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[212621] = {
 						["enabled"] = true,
@@ -7066,19 +7066,19 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Nature Healing (Monks, Druids)",
 					},
-					[980] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "WARLOCK",
-						["desc"] = 265,
-					},
 					[88263] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
 						["class"] = "PALADIN",
 						["desc"] = 66,
+					},
+					[206930] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 0.5,
+						["class"] = "DEATHKNIGHT",
+						["desc"] = 250,
 					},
 					[211545] = {
 						["enabled"] = true,
@@ -7164,12 +7164,12 @@ xCTSavedDB = {
 						["class"] = "DRUID",
 						["desc"] = 105,
 					},
-					[184256] = {
+					[120361] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
-						["desc"] = "Discordant Chorus",
+						["interval"] = 1.5,
+						["class"] = "HUNTER",
+						["desc"] = 0,
 					},
 					[70890] = {
 						["enabled"] = true,
@@ -7367,19 +7367,19 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Healing (Priests, Paladins)",
 					},
+					[184256] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 2.5,
+						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
+						["desc"] = "Discordant Chorus",
+					},
 					[153596] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "MAGE",
 						["desc"] = 64,
-					},
-					[120361] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "HUNTER",
-						["desc"] = 0,
 					},
 					[184707] = {
 						["enabled"] = true,
@@ -7409,12 +7409,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Damage",
 					},
-					[206930] = {
+					[980] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "DEATHKNIGHT",
-						["desc"] = 250,
+						["interval"] = 2.5,
+						["class"] = "WARLOCK",
+						["desc"] = 265,
 					},
 					[84721] = {
 						["enabled"] = true,
@@ -7430,12 +7430,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 62,
 					},
-					[213771] = {
+					[118000] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DRUID",
-						["desc"] = 104,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[81751] = {
 						["enabled"] = true,
@@ -7486,12 +7486,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[218617] = {
+					[201754] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[22482] = {
 						["enabled"] = true,
@@ -7920,12 +7920,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[196278] = {
+					[105421] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "PALADIN",
+						["desc"] = 0,
 					},
 					[132467] = {
 						["enabled"] = true,
@@ -9602,12 +9602,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[196278] = {
+					[105421] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "PALADIN",
+						["desc"] = 0,
 					},
 					[199054] = {
 						["enabled"] = true,
@@ -9616,12 +9616,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[195256] = {
+					[196278] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "SHAMAN",
-						["desc"] = 263,
+						["interval"] = 0.5,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[104318] = {
 						["enabled"] = true,
@@ -10554,12 +10554,12 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 255,
 					},
-					[113780] = {
+					[218617] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "ROGUE",
-						["desc"] = 259,
+						["interval"] = 1.5,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[173010] = {
 						["enabled"] = true,
@@ -10575,12 +10575,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[218617] = {
+					[201754] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[194153] = {
 						["enabled"] = true,
@@ -10638,12 +10638,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[213771] = {
+					[118000] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DRUID",
-						["desc"] = 104,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[7922] = {
 						["enabled"] = true,
@@ -10659,12 +10659,12 @@ xCTSavedDB = {
 						["class"] = "DEMONHUNTER",
 						["desc"] = 577,
 					},
-					[211727] = {
+					[213771] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "DRUID",
+						["desc"] = 104,
 					},
 					[212621] = {
 						["enabled"] = true,
@@ -10687,19 +10687,19 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Nature Healing (Monks, Druids)",
 					},
-					[88263] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 66,
-					},
 					[206930] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
 						["class"] = "DEATHKNIGHT",
 						["desc"] = 250,
+					},
+					[980] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 2.5,
+						["class"] = "WARLOCK",
+						["desc"] = 265,
 					},
 					[211545] = {
 						["enabled"] = true,
@@ -10785,12 +10785,12 @@ xCTSavedDB = {
 						["class"] = "DRUID",
 						["desc"] = 105,
 					},
-					[120361] = {
+					[153596] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "HUNTER",
-						["desc"] = 0,
+						["interval"] = 2.5,
+						["class"] = "MAGE",
+						["desc"] = 64,
 					},
 					[70890] = {
 						["enabled"] = true,
@@ -10988,19 +10988,19 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Healing (Priests, Paladins)",
 					},
+					[120361] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 1.5,
+						["class"] = "HUNTER",
+						["desc"] = 0,
+					},
 					[184256] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
 						["desc"] = "Discordant Chorus",
-					},
-					[153596] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "MAGE",
-						["desc"] = 64,
 					},
 					[184707] = {
 						["enabled"] = true,
@@ -11030,12 +11030,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Damage",
 					},
-					[980] = {
+					[88263] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "WARLOCK",
-						["desc"] = 265,
+						["interval"] = 0.5,
+						["class"] = "PALADIN",
+						["desc"] = 66,
 					},
 					[84721] = {
 						["enabled"] = true,
@@ -11051,12 +11051,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 62,
 					},
-					[118000] = {
+					[211727] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[81751] = {
 						["enabled"] = true,
@@ -11107,12 +11107,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[201754] = {
+					[113780] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["class"] = "ROGUE",
+						["desc"] = 259,
 					},
 					[22482] = {
 						["enabled"] = true,
@@ -11541,12 +11541,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[105421] = {
+					[195256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 0,
+						["interval"] = 1.5,
+						["class"] = "SHAMAN",
+						["desc"] = 263,
 					},
 					[132467] = {
 						["enabled"] = true,
@@ -13881,11 +13881,11 @@ xCTSavedDB = {
 						0.65, -- [3]
 					},
 				},
-				["8"] = {
+				["24"] = {
 					["color"] = {
-						0.4, -- [1]
-						1, -- [2]
-						0.4, -- [3]
+						0.35, -- [1]
+						0.65, -- [2]
+						0.65, -- [3]
 					},
 				},
 				["68"] = {
@@ -13909,11 +13909,11 @@ xCTSavedDB = {
 						1, -- [3]
 					},
 				},
-				["124"] = {
+				["8"] = {
 					["color"] = {
-						0.69, -- [1]
-						0.58, -- [2]
-						0.65, -- [3]
+						0.4, -- [1]
+						1, -- [2]
+						0.4, -- [3]
 					},
 				},
 				["3"] = {
@@ -13965,10 +13965,10 @@ xCTSavedDB = {
 						0.7, -- [3]
 					},
 				},
-				["24"] = {
+				["124"] = {
 					["color"] = {
-						0.35, -- [1]
-						0.65, -- [2]
+						0.69, -- [1]
+						0.58, -- [2]
 						0.65, -- [3]
 					},
 				},
@@ -14626,10 +14626,10 @@ xCTSavedDB = {
 						0.65, -- [3]
 					},
 				},
-				["24"] = {
+				["124"] = {
 					["color"] = {
-						0.35, -- [1]
-						0.65, -- [2]
+						0.69, -- [1]
+						0.58, -- [2]
 						0.65, -- [3]
 					},
 				},
@@ -14654,11 +14654,11 @@ xCTSavedDB = {
 						1, -- [3]
 					},
 				},
-				["8"] = {
+				["24"] = {
 					["color"] = {
-						0.4, -- [1]
-						1, -- [2]
-						0.4, -- [3]
+						0.35, -- [1]
+						0.65, -- [2]
+						0.65, -- [3]
 					},
 				},
 				["3"] = {
@@ -14710,11 +14710,11 @@ xCTSavedDB = {
 						0.7, -- [3]
 					},
 				},
-				["124"] = {
+				["8"] = {
 					["color"] = {
-						0.69, -- [1]
-						0.58, -- [2]
-						0.65, -- [3]
+						0.4, -- [1]
+						1, -- [2]
+						0.4, -- [3]
 					},
 				},
 				["16"] = {
@@ -14764,9 +14764,6 @@ xCTSavedDB = {
 			["spells"] = {
 				["formatGroups"] = false,
 				["formatAbbreviate"] = true,
-			},
-			["frameSettings"] = {
-				["clearLeavingCombat"] = true,
 			},
 			["frames"] = {
 				["general"] = {
@@ -15057,8 +15054,8 @@ xCTSavedDB = {
 						},
 					},
 					["Height"] = 150,
-					["X"] = -419,
 					["Width"] = 150,
+					["X"] = -419,
 					["names"] = {
 						["PLAYER"] = {
 							["nameType"] = 0,
@@ -15321,7 +15318,6 @@ xCTSavedDB = {
 						},
 					},
 					["Height"] = 150,
-					["X"] = -418,
 					["names"] = {
 						["PLAYER"] = {
 							["nameType"] = 0,
@@ -15330,8 +15326,12 @@ xCTSavedDB = {
 							["nameType"] = 0,
 						},
 					},
+					["X"] = -418,
 					["Width"] = 150,
 				},
+			},
+			["frameSettings"] = {
+				["clearLeavingCombat"] = true,
 			},
 		},
 		["Jakwez - Stormrage"] = {
@@ -16844,19 +16844,19 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 253,
 					},
+					[146069] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Physical Damage (Hunters)",
+					},
 					[205345] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "MAGE",
 						["desc"] = 63,
-					},
-					[191037] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 2,
-						["class"] = "DRUID",
-						["desc"] = 102,
 					},
 					[208899] = {
 						["enabled"] = true,
@@ -17096,12 +17096,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 66,
 					},
-					[217207] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[198483] = {
 						["enabled"] = true,
@@ -17341,12 +17341,12 @@ xCTSavedDB = {
 						["class"] = "ROGUE",
 						["desc"] = 260,
 					},
-					[218617] = {
+					[201754] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[173010] = {
 						["enabled"] = true,
@@ -17362,12 +17362,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[201754] = {
+					[113780] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["class"] = "ROGUE",
+						["desc"] = 259,
 					},
 					[194153] = {
 						["enabled"] = true,
@@ -17425,12 +17425,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[118000] = {
+					[211727] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[210833] = {
 						["enabled"] = true,
@@ -17446,12 +17446,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[213771] = {
+					[118000] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DRUID",
-						["desc"] = 104,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[211088] = {
 						["enabled"] = true,
@@ -17474,19 +17474,19 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[206930] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "DEATHKNIGHT",
-						["desc"] = 250,
-					},
 					[980] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "WARLOCK",
 						["desc"] = 265,
+					},
+					[88263] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 0.5,
+						["class"] = "PALADIN",
+						["desc"] = 66,
 					},
 					[211545] = {
 						["enabled"] = true,
@@ -17544,12 +17544,12 @@ xCTSavedDB = {
 						["class"] = "WARRIOR",
 						["desc"] = 72,
 					},
-					[120361] = {
+					[153596] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "HUNTER",
-						["desc"] = 0,
+						["interval"] = 2.5,
+						["class"] = "MAGE",
+						["desc"] = 64,
 					},
 					[183042] = {
 						["enabled"] = true,
@@ -17565,19 +17565,19 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 255,
 					},
-					[153596] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "MAGE",
-						["desc"] = 64,
-					},
 					[184256] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
 						["desc"] = "Discordant Chorus",
+					},
+					[120361] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 1.5,
+						["class"] = "HUNTER",
+						["desc"] = 0,
 					},
 					[198756] = {
 						["enabled"] = true,
@@ -17817,12 +17817,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Damage",
 					},
-					[88263] = {
+					[206930] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 66,
+						["class"] = "DEATHKNIGHT",
+						["desc"] = 250,
 					},
 					[212621] = {
 						["enabled"] = true,
@@ -17838,12 +17838,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Nature Healing (Monks, Druids)",
 					},
-					[211727] = {
+					[213771] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "DRUID",
+						["desc"] = 104,
 					},
 					[81751] = {
 						["enabled"] = true,
@@ -17894,12 +17894,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[113780] = {
+					[218617] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "ROGUE",
-						["desc"] = 259,
+						["interval"] = 1.5,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[13812] = {
 						["enabled"] = true,
@@ -18055,12 +18055,12 @@ xCTSavedDB = {
 						["class"] = "WARLOCK",
 						["desc"] = 267,
 					},
-					[201877] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[190780] = {
 						["enabled"] = true,
@@ -18069,12 +18069,12 @@ xCTSavedDB = {
 						["class"] = "DEATHKNIGHT",
 						["desc"] = 251,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[207771] = {
 						["enabled"] = true,
@@ -18146,12 +18146,12 @@ xCTSavedDB = {
 						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
 						["desc"] = "Flaming Bolas (Q: Bolas Bastion)",
 					},
-					[146069] = {
+					[191037] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Physical Damage (Hunters)",
+						["interval"] = 2,
+						["class"] = "DRUID",
+						["desc"] = 102,
 					},
 					[53652] = {
 						["enabled"] = true,
@@ -20463,12 +20463,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[105421] = {
+					[195256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 0,
+						["interval"] = 1.5,
+						["class"] = "SHAMAN",
+						["desc"] = 263,
 					},
 					[199054] = {
 						["enabled"] = true,
@@ -20477,12 +20477,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[196278] = {
+					[105421] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "PALADIN",
+						["desc"] = 0,
 					},
 					[104318] = {
 						["enabled"] = true,
@@ -21415,12 +21415,12 @@ xCTSavedDB = {
 						["class"] = "ROGUE",
 						["desc"] = 260,
 					},
-					[218617] = {
+					[201754] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[173010] = {
 						["enabled"] = true,
@@ -21436,12 +21436,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[201754] = {
+					[113780] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["class"] = "ROGUE",
+						["desc"] = 259,
 					},
 					[194153] = {
 						["enabled"] = true,
@@ -21499,12 +21499,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[118000] = {
+					[211727] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[210833] = {
 						["enabled"] = true,
@@ -21520,12 +21520,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[213771] = {
+					[118000] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DRUID",
-						["desc"] = 104,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[84721] = {
 						["enabled"] = true,
@@ -21548,19 +21548,19 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 62,
 					},
-					[206930] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "DEATHKNIGHT",
-						["desc"] = 250,
-					},
 					[980] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "WARLOCK",
 						["desc"] = 265,
+					},
+					[88263] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 0.5,
+						["class"] = "PALADIN",
+						["desc"] = 66,
 					},
 					[211545] = {
 						["enabled"] = true,
@@ -21618,12 +21618,12 @@ xCTSavedDB = {
 						["class"] = "WARRIOR",
 						["desc"] = 72,
 					},
-					[120361] = {
+					[153596] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "HUNTER",
-						["desc"] = 0,
+						["interval"] = 2.5,
+						["class"] = "MAGE",
+						["desc"] = 64,
 					},
 					[183042] = {
 						["enabled"] = true,
@@ -21639,19 +21639,19 @@ xCTSavedDB = {
 						["class"] = "DEATHKNIGHT",
 						["desc"] = 250,
 					},
-					[153596] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "MAGE",
-						["desc"] = 64,
-					},
 					[184256] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
 						["desc"] = "Discordant Chorus",
+					},
+					[120361] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 1.5,
+						["class"] = "HUNTER",
+						["desc"] = 0,
 					},
 					[198756] = {
 						["enabled"] = true,
@@ -21891,12 +21891,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Damage",
 					},
-					[88263] = {
+					[206930] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 66,
+						["class"] = "DEATHKNIGHT",
+						["desc"] = 250,
 					},
 					[148235] = {
 						["enabled"] = true,
@@ -21912,12 +21912,12 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 254,
 					},
-					[211727] = {
+					[213771] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "DRUID",
+						["desc"] = 104,
 					},
 					[81751] = {
 						["enabled"] = true,
@@ -21968,12 +21968,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[113780] = {
+					[218617] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "ROGUE",
-						["desc"] = 259,
+						["interval"] = 1.5,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[13812] = {
 						["enabled"] = true,
@@ -22402,12 +22402,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[195256] = {
+					[196278] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "SHAMAN",
-						["desc"] = 263,
+						["interval"] = 0.5,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[132467] = {
 						["enabled"] = true,
@@ -23409,12 +23409,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[105421] = {
+					[195256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 0,
+						["interval"] = 1.5,
+						["class"] = "SHAMAN",
+						["desc"] = 263,
 					},
 					[199054] = {
 						["enabled"] = true,
@@ -23423,12 +23423,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[196278] = {
+					[105421] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "PALADIN",
+						["desc"] = 0,
 					},
 					[104318] = {
 						["enabled"] = true,
@@ -24361,12 +24361,12 @@ xCTSavedDB = {
 						["class"] = "ROGUE",
 						["desc"] = 260,
 					},
-					[218617] = {
+					[201754] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[173010] = {
 						["enabled"] = true,
@@ -24382,12 +24382,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[201754] = {
+					[113780] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["class"] = "ROGUE",
+						["desc"] = 259,
 					},
 					[194153] = {
 						["enabled"] = true,
@@ -24445,12 +24445,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[118000] = {
+					[211727] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[210833] = {
 						["enabled"] = true,
@@ -24466,12 +24466,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[213771] = {
+					[118000] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DRUID",
-						["desc"] = 104,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[211088] = {
 						["enabled"] = true,
@@ -24494,19 +24494,19 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[206930] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "DEATHKNIGHT",
-						["desc"] = 250,
-					},
 					[980] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "WARLOCK",
 						["desc"] = 265,
+					},
+					[88263] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 0.5,
+						["class"] = "PALADIN",
+						["desc"] = 66,
 					},
 					[211545] = {
 						["enabled"] = true,
@@ -24564,12 +24564,12 @@ xCTSavedDB = {
 						["class"] = "WARRIOR",
 						["desc"] = 72,
 					},
-					[120361] = {
+					[153596] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "HUNTER",
-						["desc"] = 0,
+						["interval"] = 2.5,
+						["class"] = "MAGE",
+						["desc"] = 64,
 					},
 					[183042] = {
 						["enabled"] = true,
@@ -24585,19 +24585,19 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 255,
 					},
-					[153596] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "MAGE",
-						["desc"] = 64,
-					},
 					[184256] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
 						["desc"] = "Discordant Chorus",
+					},
+					[120361] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 1.5,
+						["class"] = "HUNTER",
+						["desc"] = 0,
 					},
 					[198756] = {
 						["enabled"] = true,
@@ -24837,12 +24837,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Damage",
 					},
-					[88263] = {
+					[206930] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 66,
+						["class"] = "DEATHKNIGHT",
+						["desc"] = 250,
 					},
 					[212621] = {
 						["enabled"] = true,
@@ -24858,12 +24858,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Nature Healing (Monks, Druids)",
 					},
-					[211727] = {
+					[213771] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "DRUID",
+						["desc"] = 104,
 					},
 					[81751] = {
 						["enabled"] = true,
@@ -24914,12 +24914,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[113780] = {
+					[218617] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "ROGUE",
-						["desc"] = 259,
+						["interval"] = 1.5,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[13812] = {
 						["enabled"] = true,
@@ -25348,12 +25348,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[195256] = {
+					[196278] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "SHAMAN",
-						["desc"] = 263,
+						["interval"] = 0.5,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[132467] = {
 						["enabled"] = true,
@@ -26072,11 +26072,11 @@ xCTSavedDB = {
 						0.65, -- [3]
 					},
 				},
-				["124"] = {
+				["8"] = {
 					["color"] = {
-						0.69, -- [1]
-						0.58, -- [2]
-						0.65, -- [3]
+						0.4, -- [1]
+						1, -- [2]
+						0.4, -- [3]
 					},
 				},
 				["68"] = {
@@ -26100,10 +26100,10 @@ xCTSavedDB = {
 						1, -- [3]
 					},
 				},
-				["24"] = {
+				["124"] = {
 					["color"] = {
-						0.35, -- [1]
-						0.65, -- [2]
+						0.69, -- [1]
+						0.58, -- [2]
 						0.65, -- [3]
 					},
 				},
@@ -26156,11 +26156,11 @@ xCTSavedDB = {
 						0.7, -- [3]
 					},
 				},
-				["8"] = {
+				["24"] = {
 					["color"] = {
-						0.4, -- [1]
-						1, -- [2]
-						0.4, -- [3]
+						0.35, -- [1]
+						0.65, -- [2]
+						0.65, -- [3]
 					},
 				},
 				["16"] = {
@@ -26754,12 +26754,12 @@ xCTSavedDB = {
 						},
 					},
 					["Height"] = 150,
+					["X"] = -418,
 					["names"] = {
 						["NPC"] = {
 							["nameType"] = 0,
 						},
 					},
-					["X"] = -418,
 					["Width"] = 150,
 				},
 			},
@@ -26860,10 +26860,10 @@ xCTSavedDB = {
 						0.65, -- [3]
 					},
 				},
-				["24"] = {
+				["124"] = {
 					["color"] = {
-						0.35, -- [1]
-						0.65, -- [2]
+						0.69, -- [1]
+						0.58, -- [2]
 						0.65, -- [3]
 					},
 				},
@@ -26888,11 +26888,11 @@ xCTSavedDB = {
 						1, -- [3]
 					},
 				},
-				["8"] = {
+				["24"] = {
 					["color"] = {
-						0.4, -- [1]
-						1, -- [2]
-						0.4, -- [3]
+						0.35, -- [1]
+						0.65, -- [2]
+						0.65, -- [3]
 					},
 				},
 				["3"] = {
@@ -26944,11 +26944,11 @@ xCTSavedDB = {
 						0.7, -- [3]
 					},
 				},
-				["124"] = {
+				["8"] = {
 					["color"] = {
-						0.69, -- [1]
-						0.58, -- [2]
-						0.65, -- [3]
+						0.4, -- [1]
+						1, -- [2]
+						0.4, -- [3]
 					},
 				},
 				["16"] = {
@@ -30236,12 +30236,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[195256] = {
+					[196278] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "SHAMAN",
-						["desc"] = 263,
+						["interval"] = 0.5,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[199054] = {
 						["enabled"] = true,
@@ -30250,12 +30250,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[105421] = {
+					[195256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 0,
+						["interval"] = 1.5,
+						["class"] = "SHAMAN",
+						["desc"] = 263,
 					},
 					[104318] = {
 						["enabled"] = true,
@@ -31188,12 +31188,12 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 255,
 					},
-					[201754] = {
+					[113780] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["class"] = "ROGUE",
+						["desc"] = 259,
 					},
 					[173010] = {
 						["enabled"] = true,
@@ -31209,12 +31209,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[113780] = {
+					[218617] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "ROGUE",
-						["desc"] = 259,
+						["interval"] = 1.5,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[194153] = {
 						["enabled"] = true,
@@ -31272,12 +31272,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[211727] = {
+					[213771] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "DRUID",
+						["desc"] = 104,
 					},
 					[7922] = {
 						["enabled"] = true,
@@ -31293,12 +31293,12 @@ xCTSavedDB = {
 						["class"] = "DEMONHUNTER",
 						["desc"] = 577,
 					},
-					[118000] = {
+					[211727] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[148235] = {
 						["enabled"] = true,
@@ -31321,19 +31321,19 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 254,
 					},
-					[980] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "WARLOCK",
-						["desc"] = 265,
-					},
 					[88263] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
 						["class"] = "PALADIN",
 						["desc"] = 66,
+					},
+					[206930] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 0.5,
+						["class"] = "DEATHKNIGHT",
+						["desc"] = 250,
 					},
 					[211545] = {
 						["enabled"] = true,
@@ -31419,12 +31419,12 @@ xCTSavedDB = {
 						["class"] = "DRUID",
 						["desc"] = 105,
 					},
-					[184256] = {
+					[120361] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
-						["desc"] = "Discordant Chorus",
+						["interval"] = 1.5,
+						["class"] = "HUNTER",
+						["desc"] = 0,
 					},
 					[70890] = {
 						["enabled"] = true,
@@ -31622,19 +31622,19 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Healing (Priests, Paladins)",
 					},
+					[184256] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 2.5,
+						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
+						["desc"] = "Discordant Chorus",
+					},
 					[153596] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "MAGE",
 						["desc"] = 64,
-					},
-					[120361] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "HUNTER",
-						["desc"] = 0,
 					},
 					[184707] = {
 						["enabled"] = true,
@@ -31664,12 +31664,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Damage",
 					},
-					[206930] = {
+					[980] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "DEATHKNIGHT",
-						["desc"] = 250,
+						["interval"] = 2.5,
+						["class"] = "WARLOCK",
+						["desc"] = 265,
 					},
 					[211088] = {
 						["enabled"] = true,
@@ -31685,12 +31685,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[213771] = {
+					[118000] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DRUID",
-						["desc"] = 104,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[81751] = {
 						["enabled"] = true,
@@ -31741,12 +31741,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[218617] = {
+					[201754] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[22482] = {
 						["enabled"] = true,
@@ -32175,12 +32175,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[196278] = {
+					[105421] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "PALADIN",
+						["desc"] = 0,
 					},
 					[132467] = {
 						["enabled"] = true,
@@ -33726,12 +33726,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[196278] = {
+					[105421] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "PALADIN",
+						["desc"] = 0,
 					},
 					[199054] = {
 						["enabled"] = true,
@@ -33740,12 +33740,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[195256] = {
+					[196278] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "SHAMAN",
-						["desc"] = 263,
+						["interval"] = 0.5,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[104318] = {
 						["enabled"] = true,
@@ -34678,12 +34678,12 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 255,
 					},
-					[113780] = {
+					[218617] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "ROGUE",
-						["desc"] = 259,
+						["interval"] = 1.5,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[173010] = {
 						["enabled"] = true,
@@ -34699,12 +34699,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[218617] = {
+					[201754] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[194153] = {
 						["enabled"] = true,
@@ -34762,12 +34762,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[213771] = {
+					[118000] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DRUID",
-						["desc"] = 104,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[7922] = {
 						["enabled"] = true,
@@ -34783,12 +34783,12 @@ xCTSavedDB = {
 						["class"] = "DEMONHUNTER",
 						["desc"] = 577,
 					},
-					[211727] = {
+					[213771] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "DRUID",
+						["desc"] = 104,
 					},
 					[212621] = {
 						["enabled"] = true,
@@ -34811,19 +34811,19 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Nature Healing (Monks, Druids)",
 					},
-					[88263] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 66,
-					},
 					[206930] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
 						["class"] = "DEATHKNIGHT",
 						["desc"] = 250,
+					},
+					[980] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 2.5,
+						["class"] = "WARLOCK",
+						["desc"] = 265,
 					},
 					[211545] = {
 						["enabled"] = true,
@@ -34909,12 +34909,12 @@ xCTSavedDB = {
 						["class"] = "DRUID",
 						["desc"] = 105,
 					},
-					[120361] = {
+					[153596] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "HUNTER",
-						["desc"] = 0,
+						["interval"] = 2.5,
+						["class"] = "MAGE",
+						["desc"] = 64,
 					},
 					[70890] = {
 						["enabled"] = true,
@@ -35112,19 +35112,19 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Healing (Priests, Paladins)",
 					},
+					[120361] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 1.5,
+						["class"] = "HUNTER",
+						["desc"] = 0,
+					},
 					[184256] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
 						["desc"] = "Discordant Chorus",
-					},
-					[153596] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "MAGE",
-						["desc"] = 64,
 					},
 					[184707] = {
 						["enabled"] = true,
@@ -35154,12 +35154,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Damage",
 					},
-					[980] = {
+					[88263] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "WARLOCK",
-						["desc"] = 265,
+						["interval"] = 0.5,
+						["class"] = "PALADIN",
+						["desc"] = 66,
 					},
 					[84721] = {
 						["enabled"] = true,
@@ -35175,12 +35175,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 62,
 					},
-					[118000] = {
+					[211727] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[81751] = {
 						["enabled"] = true,
@@ -35231,12 +35231,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[201754] = {
+					[113780] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["class"] = "ROGUE",
+						["desc"] = 259,
 					},
 					[22482] = {
 						["enabled"] = true,
@@ -35665,12 +35665,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[105421] = {
+					[195256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 0,
+						["interval"] = 1.5,
+						["class"] = "SHAMAN",
+						["desc"] = 263,
 					},
 					[132467] = {
 						["enabled"] = true,
@@ -37217,12 +37217,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[196278] = {
+					[105421] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "PALADIN",
+						["desc"] = 0,
 					},
 					[199054] = {
 						["enabled"] = true,
@@ -37231,12 +37231,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[195256] = {
+					[196278] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "SHAMAN",
-						["desc"] = 263,
+						["interval"] = 0.5,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[104318] = {
 						["enabled"] = true,
@@ -38169,12 +38169,12 @@ xCTSavedDB = {
 						["class"] = "ROGUE",
 						["desc"] = 260,
 					},
-					[113780] = {
+					[218617] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "ROGUE",
-						["desc"] = 259,
+						["interval"] = 1.5,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[173010] = {
 						["enabled"] = true,
@@ -38190,12 +38190,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[218617] = {
+					[201754] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[194153] = {
 						["enabled"] = true,
@@ -38253,12 +38253,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[213771] = {
+					[118000] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DRUID",
-						["desc"] = 104,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[210833] = {
 						["enabled"] = true,
@@ -38274,12 +38274,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[211727] = {
+					[213771] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "DRUID",
+						["desc"] = 104,
 					},
 					[211088] = {
 						["enabled"] = true,
@@ -38302,19 +38302,19 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[88263] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 66,
-					},
 					[206930] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
 						["class"] = "DEATHKNIGHT",
 						["desc"] = 250,
+					},
+					[980] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 2.5,
+						["class"] = "WARLOCK",
+						["desc"] = 265,
 					},
 					[211545] = {
 						["enabled"] = true,
@@ -38372,12 +38372,12 @@ xCTSavedDB = {
 						["class"] = "WARRIOR",
 						["desc"] = 72,
 					},
-					[184256] = {
+					[120361] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
-						["desc"] = "Discordant Chorus",
+						["interval"] = 1.5,
+						["class"] = "HUNTER",
+						["desc"] = 0,
 					},
 					[183042] = {
 						["enabled"] = true,
@@ -38393,19 +38393,19 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 255,
 					},
-					[120361] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "HUNTER",
-						["desc"] = 0,
-					},
 					[153596] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "MAGE",
 						["desc"] = 64,
+					},
+					[184256] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 2.5,
+						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
+						["desc"] = "Discordant Chorus",
 					},
 					[198756] = {
 						["enabled"] = true,
@@ -38645,12 +38645,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Damage",
 					},
-					[980] = {
+					[88263] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "WARLOCK",
-						["desc"] = 265,
+						["interval"] = 0.5,
+						["class"] = "PALADIN",
+						["desc"] = 66,
 					},
 					[212621] = {
 						["enabled"] = true,
@@ -38666,12 +38666,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Nature Healing (Monks, Druids)",
 					},
-					[118000] = {
+					[211727] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[81751] = {
 						["enabled"] = true,
@@ -38722,12 +38722,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[201754] = {
+					[113780] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["class"] = "ROGUE",
+						["desc"] = 259,
 					},
 					[13812] = {
 						["enabled"] = true,
@@ -39156,12 +39156,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[105421] = {
+					[195256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 0,
+						["interval"] = 1.5,
+						["class"] = "SHAMAN",
+						["desc"] = 263,
 					},
 					[132467] = {
 						["enabled"] = true,
@@ -40318,7 +40318,7 @@ xCTSavedDB = {
 				},
 				["critical"] = {
 					["Y"] = -14,
-					["X"] = 458,
+					["font"] = "Friz Quadrata TT",
 					["colors"] = {
 						["genericDamageCritical"] = {
 							["color"] = {
@@ -40339,11 +40339,11 @@ xCTSavedDB = {
 							},
 						},
 					},
-					["font"] = "Friz Quadrata TT",
+					["X"] = 458,
 				},
 				["procs"] = {
 					["Y"] = -510,
-					["X"] = -10,
+					["font"] = "Friz Quadrata TT",
 					["colors"] = {
 						["spellReactive"] = {
 							["color"] = {
@@ -40361,7 +40361,7 @@ xCTSavedDB = {
 						},
 					},
 					["Height"] = 60,
-					["font"] = "Friz Quadrata TT",
+					["X"] = -10,
 				},
 				["loot"] = {
 					["Width"] = 400,
@@ -40485,36 +40485,36 @@ xCTSavedDB = {
 							},
 						},
 						["damageTakenCritical"] = {
+							["enabled"] = true,
 							["color"] = {
 								1, -- [1]
 								0, -- [2]
 								0, -- [3]
 							},
-							["enabled"] = true,
 						},
 						["spellDamageTaken"] = {
+							["enabled"] = true,
 							["color"] = {
 								0.75, -- [1]
 								0.3, -- [2]
 								0.85, -- [3]
 							},
-							["enabled"] = true,
 						},
 						["spellDamageTakenCritical"] = {
+							["enabled"] = true,
 							["color"] = {
 								1, -- [1]
 								0, -- [2]
 								1, -- [3]
 							},
-							["enabled"] = true,
 						},
 						["damageTaken"] = {
+							["enabled"] = true,
 							["color"] = {
 								0.75, -- [1]
 								0.1, -- [2]
 								0.1, -- [3]
 							},
-							["enabled"] = true,
 						},
 						["missTypesTakenPartial"] = {
 							["colors"] = {
@@ -40638,11 +40638,11 @@ xCTSavedDB = {
 						0.65, -- [3]
 					},
 				},
-				["8"] = {
+				["24"] = {
 					["color"] = {
-						0.4, -- [1]
-						1, -- [2]
-						0.4, -- [3]
+						0.35, -- [1]
+						0.65, -- [2]
+						0.65, -- [3]
 					},
 				},
 				["68"] = {
@@ -40666,11 +40666,11 @@ xCTSavedDB = {
 						1, -- [3]
 					},
 				},
-				["124"] = {
+				["8"] = {
 					["color"] = {
-						0.69, -- [1]
-						0.58, -- [2]
-						0.65, -- [3]
+						0.4, -- [1]
+						1, -- [2]
+						0.4, -- [3]
 					},
 				},
 				["3"] = {
@@ -40722,10 +40722,10 @@ xCTSavedDB = {
 						0.7, -- [3]
 					},
 				},
-				["24"] = {
+				["124"] = {
 					["color"] = {
-						0.35, -- [1]
-						0.65, -- [2]
+						0.69, -- [1]
+						0.58, -- [2]
 						0.65, -- [3]
 					},
 				},
@@ -40844,12 +40844,11 @@ xCTSavedDB = {
 						["prep"] = 0,
 						["enabled"] = true,
 					},
-					[146157] = {
+					[13812] = {
 						["enabled"] = true,
+						["class"] = "HUNTER",
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "ITEM",
-						["desc"] = "Holy Damage",
+						["interval"] = 3,
 					},
 					[118253] = {
 						["enabled"] = true,
@@ -40958,11 +40957,12 @@ xCTSavedDB = {
 						["class"] = "ITEM",
 						["desc"] = "Nature Healing (Monks, Druids)",
 					},
-					[115310] = {
+					[146157] = {
 						["enabled"] = true,
-						["class"] = "MONK",
 						["prep"] = 0,
-						["interval"] = 3,
+						["interval"] = 0.5,
+						["class"] = "ITEM",
+						["desc"] = "Holy Damage",
 					},
 					[96172] = {
 						["enabled"] = true,
@@ -41033,9 +41033,9 @@ xCTSavedDB = {
 						["prep"] = 0,
 						["interval"] = 4.5,
 					},
-					[13812] = {
+					[115310] = {
 						["enabled"] = true,
-						["class"] = "HUNTER",
+						["class"] = "MONK",
 						["prep"] = 0,
 						["interval"] = 3,
 					},
@@ -43358,12 +43358,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[195256] = {
+					[196278] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "SHAMAN",
-						["desc"] = 263,
+						["interval"] = 0.5,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[199054] = {
 						["enabled"] = true,
@@ -43372,12 +43372,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[105421] = {
+					[195256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 0,
+						["interval"] = 1.5,
+						["class"] = "SHAMAN",
+						["desc"] = 263,
 					},
 					[104318] = {
 						["enabled"] = true,
@@ -44310,12 +44310,12 @@ xCTSavedDB = {
 						["class"] = "ROGUE",
 						["desc"] = 260,
 					},
-					[201754] = {
+					[113780] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["class"] = "ROGUE",
+						["desc"] = 259,
 					},
 					[173010] = {
 						["enabled"] = true,
@@ -44331,12 +44331,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[113780] = {
+					[218617] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "ROGUE",
-						["desc"] = 259,
+						["interval"] = 1.5,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[194153] = {
 						["enabled"] = true,
@@ -44394,12 +44394,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[211727] = {
+					[213771] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "DRUID",
+						["desc"] = 104,
 					},
 					[210833] = {
 						["enabled"] = true,
@@ -44415,12 +44415,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[118000] = {
+					[211727] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[84721] = {
 						["enabled"] = true,
@@ -44443,19 +44443,19 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 62,
 					},
-					[980] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "WARLOCK",
-						["desc"] = 265,
-					},
 					[88263] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
 						["class"] = "PALADIN",
 						["desc"] = 66,
+					},
+					[206930] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 0.5,
+						["class"] = "DEATHKNIGHT",
+						["desc"] = 250,
 					},
 					[211545] = {
 						["enabled"] = true,
@@ -44513,12 +44513,12 @@ xCTSavedDB = {
 						["class"] = "WARRIOR",
 						["desc"] = 72,
 					},
-					[153596] = {
+					[184256] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
-						["class"] = "MAGE",
-						["desc"] = 64,
+						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
+						["desc"] = "Discordant Chorus",
 					},
 					[183042] = {
 						["enabled"] = true,
@@ -44534,19 +44534,19 @@ xCTSavedDB = {
 						["class"] = "DEATHKNIGHT",
 						["desc"] = 250,
 					},
-					[184256] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
-						["desc"] = "Discordant Chorus",
-					},
 					[120361] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 1.5,
 						["class"] = "HUNTER",
 						["desc"] = 0,
+					},
+					[153596] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 2.5,
+						["class"] = "MAGE",
+						["desc"] = 64,
 					},
 					[198756] = {
 						["enabled"] = true,
@@ -44786,12 +44786,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Damage",
 					},
-					[206930] = {
+					[980] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "DEATHKNIGHT",
-						["desc"] = 250,
+						["interval"] = 2.5,
+						["class"] = "WARLOCK",
+						["desc"] = 265,
 					},
 					[148235] = {
 						["enabled"] = true,
@@ -44807,12 +44807,12 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 254,
 					},
-					[213771] = {
+					[118000] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DRUID",
-						["desc"] = 104,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[81751] = {
 						["enabled"] = true,
@@ -44863,12 +44863,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[218617] = {
+					[201754] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[13812] = {
 						["enabled"] = true,
@@ -45297,12 +45297,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[196278] = {
+					[105421] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "PALADIN",
+						["desc"] = 0,
 					},
 					[132467] = {
 						["enabled"] = true,
@@ -46059,10 +46059,10 @@ xCTSavedDB = {
 						0.65, -- [3]
 					},
 				},
-				["24"] = {
+				["124"] = {
 					["color"] = {
-						0.35, -- [1]
-						0.65, -- [2]
+						0.69, -- [1]
+						0.58, -- [2]
 						0.65, -- [3]
 					},
 				},
@@ -46087,11 +46087,11 @@ xCTSavedDB = {
 						1, -- [3]
 					},
 				},
-				["8"] = {
+				["24"] = {
 					["color"] = {
-						0.4, -- [1]
-						1, -- [2]
-						0.4, -- [3]
+						0.35, -- [1]
+						0.65, -- [2]
+						0.65, -- [3]
 					},
 				},
 				["3"] = {
@@ -46143,11 +46143,11 @@ xCTSavedDB = {
 						0.7, -- [3]
 					},
 				},
-				["124"] = {
+				["8"] = {
 					["color"] = {
-						0.69, -- [1]
-						0.58, -- [2]
-						0.65, -- [3]
+						0.4, -- [1]
+						1, -- [2]
+						0.4, -- [3]
 					},
 				},
 				["16"] = {
@@ -47497,12 +47497,12 @@ xCTSavedDB = {
 						["class"] = "ITEM",
 						["desc"] = "Shredder",
 					},
-					[146157] = {
+					[159238] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
+						["interval"] = 3.5,
 						["class"] = "ITEM",
-						["desc"] = "Holy Damage",
+						["desc"] = "Shattered Hand (Weapon Enchant)",
 					},
 					[132467] = {
 						["enabled"] = true,
@@ -47534,11 +47534,12 @@ xCTSavedDB = {
 						["prep"] = 0,
 						["interval"] = 0.5,
 					},
-					[115310] = {
+					[146157] = {
 						["enabled"] = true,
-						["class"] = "MONK",
 						["prep"] = 0,
-						["interval"] = 3,
+						["interval"] = 0.5,
+						["class"] = "ITEM",
+						["desc"] = "Holy Damage",
 					},
 					[86678] = {
 						["enabled"] = true,
@@ -47687,12 +47688,11 @@ xCTSavedDB = {
 						["prep"] = 0,
 						["interval"] = 4.5,
 					},
-					[159238] = {
+					[115310] = {
 						["enabled"] = true,
+						["class"] = "MONK",
 						["prep"] = 0,
-						["interval"] = 3.5,
-						["class"] = "ITEM",
-						["desc"] = "Shattered Hand (Weapon Enchant)",
+						["interval"] = 3,
 					},
 					[124081] = {
 						["enabled"] = true,
@@ -49296,12 +49296,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[105421] = {
+					[195256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 0,
+						["interval"] = 1.5,
+						["class"] = "SHAMAN",
+						["desc"] = 263,
 					},
 					[199054] = {
 						["enabled"] = true,
@@ -49310,12 +49310,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[196278] = {
+					[105421] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "PALADIN",
+						["desc"] = 0,
 					},
 					[104318] = {
 						["enabled"] = true,
@@ -50248,12 +50248,12 @@ xCTSavedDB = {
 						["class"] = "ROGUE",
 						["desc"] = 260,
 					},
-					[218617] = {
+					[201754] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[173010] = {
 						["enabled"] = true,
@@ -50269,12 +50269,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[201754] = {
+					[113780] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["class"] = "ROGUE",
+						["desc"] = 259,
 					},
 					[194153] = {
 						["enabled"] = true,
@@ -50332,12 +50332,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[118000] = {
+					[211727] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[210833] = {
 						["enabled"] = true,
@@ -50353,12 +50353,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[213771] = {
+					[118000] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DRUID",
-						["desc"] = 104,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[84721] = {
 						["enabled"] = true,
@@ -50381,19 +50381,19 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 62,
 					},
-					[206930] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "DEATHKNIGHT",
-						["desc"] = 250,
-					},
 					[980] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "WARLOCK",
 						["desc"] = 265,
+					},
+					[88263] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 0.5,
+						["class"] = "PALADIN",
+						["desc"] = 66,
 					},
 					[211545] = {
 						["enabled"] = true,
@@ -50451,12 +50451,12 @@ xCTSavedDB = {
 						["class"] = "WARRIOR",
 						["desc"] = 72,
 					},
-					[120361] = {
+					[153596] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "HUNTER",
-						["desc"] = 0,
+						["interval"] = 2.5,
+						["class"] = "MAGE",
+						["desc"] = 64,
 					},
 					[183042] = {
 						["enabled"] = true,
@@ -50472,19 +50472,19 @@ xCTSavedDB = {
 						["class"] = "DEATHKNIGHT",
 						["desc"] = 250,
 					},
-					[153596] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "MAGE",
-						["desc"] = 64,
-					},
 					[184256] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
 						["desc"] = "Discordant Chorus",
+					},
+					[120361] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 1.5,
+						["class"] = "HUNTER",
+						["desc"] = 0,
 					},
 					[198756] = {
 						["enabled"] = true,
@@ -50724,12 +50724,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Damage",
 					},
-					[88263] = {
+					[206930] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 66,
+						["class"] = "DEATHKNIGHT",
+						["desc"] = 250,
 					},
 					[148235] = {
 						["enabled"] = true,
@@ -50745,12 +50745,12 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 254,
 					},
-					[211727] = {
+					[213771] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "DRUID",
+						["desc"] = 104,
 					},
 					[81751] = {
 						["enabled"] = true,
@@ -50801,12 +50801,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[113780] = {
+					[218617] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "ROGUE",
-						["desc"] = 259,
+						["interval"] = 1.5,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[13812] = {
 						["enabled"] = true,
@@ -51235,12 +51235,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[195256] = {
+					[196278] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "SHAMAN",
-						["desc"] = 263,
+						["interval"] = 0.5,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[132467] = {
 						["enabled"] = true,
@@ -52825,12 +52825,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[195256] = {
+					[196278] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "SHAMAN",
-						["desc"] = 263,
+						["interval"] = 0.5,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[199054] = {
 						["enabled"] = true,
@@ -52839,12 +52839,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[105421] = {
+					[195256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 0,
+						["interval"] = 1.5,
+						["class"] = "SHAMAN",
+						["desc"] = 263,
 					},
 					[104318] = {
 						["enabled"] = true,
@@ -53777,12 +53777,12 @@ xCTSavedDB = {
 						["class"] = "ROGUE",
 						["desc"] = 260,
 					},
-					[201754] = {
+					[113780] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["class"] = "ROGUE",
+						["desc"] = 259,
 					},
 					[173010] = {
 						["enabled"] = true,
@@ -53798,12 +53798,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[113780] = {
+					[218617] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "ROGUE",
-						["desc"] = 259,
+						["interval"] = 1.5,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[194153] = {
 						["enabled"] = true,
@@ -53861,12 +53861,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[211727] = {
+					[213771] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "DRUID",
+						["desc"] = 104,
 					},
 					[210833] = {
 						["enabled"] = true,
@@ -53882,12 +53882,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[118000] = {
+					[211727] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[211088] = {
 						["enabled"] = true,
@@ -53910,19 +53910,19 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[980] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "WARLOCK",
-						["desc"] = 265,
-					},
 					[88263] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
 						["class"] = "PALADIN",
 						["desc"] = 66,
+					},
+					[206930] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 0.5,
+						["class"] = "DEATHKNIGHT",
+						["desc"] = 250,
 					},
 					[211545] = {
 						["enabled"] = true,
@@ -53980,12 +53980,12 @@ xCTSavedDB = {
 						["class"] = "WARRIOR",
 						["desc"] = 72,
 					},
-					[153596] = {
+					[184256] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
-						["class"] = "MAGE",
-						["desc"] = 64,
+						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
+						["desc"] = "Discordant Chorus",
 					},
 					[183042] = {
 						["enabled"] = true,
@@ -54001,19 +54001,19 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 255,
 					},
-					[184256] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
-						["desc"] = "Discordant Chorus",
-					},
 					[120361] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 1.5,
 						["class"] = "HUNTER",
 						["desc"] = 0,
+					},
+					[153596] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 2.5,
+						["class"] = "MAGE",
+						["desc"] = 64,
 					},
 					[198756] = {
 						["enabled"] = true,
@@ -54253,12 +54253,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Damage",
 					},
-					[206930] = {
+					[980] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "DEATHKNIGHT",
-						["desc"] = 250,
+						["interval"] = 2.5,
+						["class"] = "WARLOCK",
+						["desc"] = 265,
 					},
 					[212621] = {
 						["enabled"] = true,
@@ -54274,12 +54274,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Nature Healing (Monks, Druids)",
 					},
-					[213771] = {
+					[118000] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DRUID",
-						["desc"] = 104,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[81751] = {
 						["enabled"] = true,
@@ -54330,12 +54330,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[218617] = {
+					[201754] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[13812] = {
 						["enabled"] = true,
@@ -54764,12 +54764,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[196278] = {
+					[105421] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "PALADIN",
+						["desc"] = 0,
 					},
 					[132467] = {
 						["enabled"] = true,
@@ -56618,12 +56618,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[196278] = {
+					[105421] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "PALADIN",
+						["desc"] = 0,
 					},
 					[199054] = {
 						["enabled"] = true,
@@ -56632,12 +56632,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[195256] = {
+					[196278] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "SHAMAN",
-						["desc"] = 263,
+						["interval"] = 0.5,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[104318] = {
 						["enabled"] = true,
@@ -57570,12 +57570,12 @@ xCTSavedDB = {
 						["class"] = "ROGUE",
 						["desc"] = 260,
 					},
-					[113780] = {
+					[218617] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "ROGUE",
-						["desc"] = 259,
+						["interval"] = 1.5,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[173010] = {
 						["enabled"] = true,
@@ -57591,12 +57591,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[218617] = {
+					[201754] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[194153] = {
 						["enabled"] = true,
@@ -57654,12 +57654,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[213771] = {
+					[118000] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DRUID",
-						["desc"] = 104,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[210833] = {
 						["enabled"] = true,
@@ -57675,12 +57675,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[211727] = {
+					[213771] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "DRUID",
+						["desc"] = 104,
 					},
 					[84721] = {
 						["enabled"] = true,
@@ -57703,19 +57703,19 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 62,
 					},
-					[88263] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 66,
-					},
 					[206930] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
 						["class"] = "DEATHKNIGHT",
 						["desc"] = 250,
+					},
+					[980] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 2.5,
+						["class"] = "WARLOCK",
+						["desc"] = 265,
 					},
 					[211545] = {
 						["enabled"] = true,
@@ -57773,12 +57773,12 @@ xCTSavedDB = {
 						["class"] = "WARRIOR",
 						["desc"] = 72,
 					},
-					[184256] = {
+					[120361] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
-						["desc"] = "Discordant Chorus",
+						["interval"] = 1.5,
+						["class"] = "HUNTER",
+						["desc"] = 0,
 					},
 					[183042] = {
 						["enabled"] = true,
@@ -57794,19 +57794,19 @@ xCTSavedDB = {
 						["class"] = "DEATHKNIGHT",
 						["desc"] = 250,
 					},
-					[120361] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "HUNTER",
-						["desc"] = 0,
-					},
 					[153596] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "MAGE",
 						["desc"] = 64,
+					},
+					[184256] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 2.5,
+						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
+						["desc"] = "Discordant Chorus",
 					},
 					[198756] = {
 						["enabled"] = true,
@@ -58046,12 +58046,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Damage",
 					},
-					[980] = {
+					[88263] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "WARLOCK",
-						["desc"] = 265,
+						["interval"] = 0.5,
+						["class"] = "PALADIN",
+						["desc"] = 66,
 					},
 					[148235] = {
 						["enabled"] = true,
@@ -58067,12 +58067,12 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 254,
 					},
-					[118000] = {
+					[211727] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[81751] = {
 						["enabled"] = true,
@@ -58123,12 +58123,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[201754] = {
+					[113780] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["class"] = "ROGUE",
+						["desc"] = 259,
 					},
 					[13812] = {
 						["enabled"] = true,
@@ -58557,12 +58557,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[105421] = {
+					[195256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 0,
+						["interval"] = 1.5,
+						["class"] = "SHAMAN",
+						["desc"] = 263,
 					},
 					[132467] = {
 						["enabled"] = true,
@@ -59319,11 +59319,11 @@ xCTSavedDB = {
 						0.65, -- [3]
 					},
 				},
-				["8"] = {
+				["24"] = {
 					["color"] = {
-						0.4, -- [1]
-						1, -- [2]
-						0.4, -- [3]
+						0.35, -- [1]
+						0.65, -- [2]
+						0.65, -- [3]
 					},
 				},
 				["68"] = {
@@ -59347,11 +59347,11 @@ xCTSavedDB = {
 						1, -- [3]
 					},
 				},
-				["124"] = {
+				["8"] = {
 					["color"] = {
-						0.69, -- [1]
-						0.58, -- [2]
-						0.65, -- [3]
+						0.4, -- [1]
+						1, -- [2]
+						0.4, -- [3]
 					},
 				},
 				["3"] = {
@@ -59403,10 +59403,10 @@ xCTSavedDB = {
 						0.7, -- [3]
 					},
 				},
-				["24"] = {
+				["124"] = {
 					["color"] = {
-						0.35, -- [1]
-						0.65, -- [2]
+						0.69, -- [1]
+						0.58, -- [2]
 						0.65, -- [3]
 					},
 				},
@@ -60690,12 +60690,11 @@ xCTSavedDB = {
 						["prep"] = 0,
 						["interval"] = 3,
 					},
-					[159238] = {
+					[155158] = {
 						["enabled"] = true,
+						["class"] = "MAGE",
 						["prep"] = 0,
-						["interval"] = 3.5,
-						["class"] = "ITEM",
-						["desc"] = "Shattered Hand (Weapon Enchant)",
+						["interval"] = 4.5,
 					},
 					[153596] = {
 						["enabled"] = true,
@@ -60717,11 +60716,12 @@ xCTSavedDB = {
 						["class"] = "ITEM",
 						["desc"] = "Shredder",
 					},
-					[132463] = {
+					[159238] = {
 						["enabled"] = true,
-						["class"] = "MONK",
 						["prep"] = 0,
-						["interval"] = 3,
+						["interval"] = 3.5,
+						["class"] = "ITEM",
+						["desc"] = "Shattered Hand (Weapon Enchant)",
 					},
 					[101423] = {
 						["enabled"] = true,
@@ -60748,11 +60748,11 @@ xCTSavedDB = {
 						["prep"] = 0,
 						["interval"] = 3,
 					},
-					[155158] = {
+					[132463] = {
 						["enabled"] = true,
-						["class"] = "MAGE",
+						["class"] = "MONK",
 						["prep"] = 0,
-						["interval"] = 4.5,
+						["interval"] = 3,
 					},
 					[117993] = {
 						["enabled"] = true,
@@ -61736,11 +61736,11 @@ xCTSavedDB = {
 						0.65, -- [3]
 					},
 				},
-				["124"] = {
+				["8"] = {
 					["color"] = {
-						0.69, -- [1]
-						0.58, -- [2]
-						0.65, -- [3]
+						0.4, -- [1]
+						1, -- [2]
+						0.4, -- [3]
 					},
 				},
 				["68"] = {
@@ -61764,10 +61764,10 @@ xCTSavedDB = {
 						1, -- [3]
 					},
 				},
-				["24"] = {
+				["124"] = {
 					["color"] = {
-						0.35, -- [1]
-						0.65, -- [2]
+						0.69, -- [1]
+						0.58, -- [2]
 						0.65, -- [3]
 					},
 				},
@@ -61820,11 +61820,11 @@ xCTSavedDB = {
 						0.7, -- [3]
 					},
 				},
-				["8"] = {
+				["24"] = {
 					["color"] = {
-						0.4, -- [1]
-						1, -- [2]
-						0.4, -- [3]
+						0.35, -- [1]
+						0.65, -- [2]
+						0.65, -- [3]
 					},
 				},
 				["16"] = {
@@ -63441,12 +63441,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[105421] = {
+					[195256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 0,
+						["interval"] = 1.5,
+						["class"] = "SHAMAN",
+						["desc"] = 263,
 					},
 					[199054] = {
 						["enabled"] = true,
@@ -63455,12 +63455,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[196278] = {
+					[105421] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "PALADIN",
+						["desc"] = 0,
 					},
 					[104318] = {
 						["enabled"] = true,
@@ -64393,12 +64393,12 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 255,
 					},
-					[218617] = {
+					[201754] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[173010] = {
 						["enabled"] = true,
@@ -64414,12 +64414,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[201754] = {
+					[113780] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["class"] = "ROGUE",
+						["desc"] = 259,
 					},
 					[194153] = {
 						["enabled"] = true,
@@ -64477,12 +64477,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[118000] = {
+					[211727] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[7922] = {
 						["enabled"] = true,
@@ -64498,12 +64498,12 @@ xCTSavedDB = {
 						["class"] = "DEMONHUNTER",
 						["desc"] = 577,
 					},
-					[213771] = {
+					[118000] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DRUID",
-						["desc"] = 104,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[148235] = {
 						["enabled"] = true,
@@ -64526,19 +64526,19 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 254,
 					},
-					[206930] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "DEATHKNIGHT",
-						["desc"] = 250,
-					},
 					[980] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "WARLOCK",
 						["desc"] = 265,
+					},
+					[88263] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 0.5,
+						["class"] = "PALADIN",
+						["desc"] = 66,
 					},
 					[211545] = {
 						["enabled"] = true,
@@ -64624,12 +64624,12 @@ xCTSavedDB = {
 						["class"] = "DRUID",
 						["desc"] = 105,
 					},
-					[153596] = {
+					[184256] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
-						["class"] = "MAGE",
-						["desc"] = 64,
+						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
+						["desc"] = "Discordant Chorus",
 					},
 					[70890] = {
 						["enabled"] = true,
@@ -64827,19 +64827,19 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Healing (Priests, Paladins)",
 					},
+					[153596] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 2.5,
+						["class"] = "MAGE",
+						["desc"] = 64,
+					},
 					[120361] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 1.5,
 						["class"] = "HUNTER",
 						["desc"] = 0,
-					},
-					[184256] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
-						["desc"] = "Discordant Chorus",
 					},
 					[184707] = {
 						["enabled"] = true,
@@ -64869,12 +64869,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Damage",
 					},
-					[88263] = {
+					[206930] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 66,
+						["class"] = "DEATHKNIGHT",
+						["desc"] = 250,
 					},
 					[211088] = {
 						["enabled"] = true,
@@ -64890,12 +64890,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[211727] = {
+					[213771] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "DRUID",
+						["desc"] = 104,
 					},
 					[81751] = {
 						["enabled"] = true,
@@ -64946,12 +64946,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[113780] = {
+					[218617] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "ROGUE",
-						["desc"] = 259,
+						["interval"] = 1.5,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[22482] = {
 						["enabled"] = true,
@@ -65380,12 +65380,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[195256] = {
+					[196278] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "SHAMAN",
-						["desc"] = 263,
+						["interval"] = 0.5,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[132467] = {
 						["enabled"] = true,
@@ -66142,11 +66142,11 @@ xCTSavedDB = {
 						0.65, -- [3]
 					},
 				},
-				["8"] = {
+				["24"] = {
 					["color"] = {
-						0.4, -- [1]
-						1, -- [2]
-						0.4, -- [3]
+						0.35, -- [1]
+						0.65, -- [2]
+						0.65, -- [3]
 					},
 				},
 				["68"] = {
@@ -66170,11 +66170,11 @@ xCTSavedDB = {
 						1, -- [3]
 					},
 				},
-				["124"] = {
+				["8"] = {
 					["color"] = {
-						0.69, -- [1]
-						0.58, -- [2]
-						0.65, -- [3]
+						0.4, -- [1]
+						1, -- [2]
+						0.4, -- [3]
 					},
 				},
 				["3"] = {
@@ -66226,10 +66226,10 @@ xCTSavedDB = {
 						0.7, -- [3]
 					},
 				},
-				["24"] = {
+				["124"] = {
 					["color"] = {
-						0.35, -- [1]
-						0.65, -- [2]
+						0.69, -- [1]
+						0.58, -- [2]
 						0.65, -- [3]
 					},
 				},
@@ -67714,12 +67714,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[196278] = {
+					[105421] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "PALADIN",
+						["desc"] = 0,
 					},
 					[199054] = {
 						["enabled"] = true,
@@ -67728,12 +67728,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[195256] = {
+					[196278] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "SHAMAN",
-						["desc"] = 263,
+						["interval"] = 0.5,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[104318] = {
 						["enabled"] = true,
@@ -68666,12 +68666,12 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 255,
 					},
-					[113780] = {
+					[218617] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "ROGUE",
-						["desc"] = 259,
+						["interval"] = 1.5,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[173010] = {
 						["enabled"] = true,
@@ -68687,12 +68687,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[218617] = {
+					[201754] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[194153] = {
 						["enabled"] = true,
@@ -68750,12 +68750,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[213771] = {
+					[118000] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DRUID",
-						["desc"] = 104,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[7922] = {
 						["enabled"] = true,
@@ -68771,12 +68771,12 @@ xCTSavedDB = {
 						["class"] = "DEMONHUNTER",
 						["desc"] = 577,
 					},
-					[211727] = {
+					[213771] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "DRUID",
+						["desc"] = 104,
 					},
 					[148235] = {
 						["enabled"] = true,
@@ -68799,19 +68799,19 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 254,
 					},
-					[88263] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 66,
-					},
 					[206930] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
 						["class"] = "DEATHKNIGHT",
 						["desc"] = 250,
+					},
+					[980] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 2.5,
+						["class"] = "WARLOCK",
+						["desc"] = 265,
 					},
 					[211545] = {
 						["enabled"] = true,
@@ -68897,12 +68897,12 @@ xCTSavedDB = {
 						["class"] = "DRUID",
 						["desc"] = 105,
 					},
-					[120361] = {
+					[153596] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "HUNTER",
-						["desc"] = 0,
+						["interval"] = 2.5,
+						["class"] = "MAGE",
+						["desc"] = 64,
 					},
 					[70890] = {
 						["enabled"] = true,
@@ -69100,19 +69100,19 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Healing (Priests, Paladins)",
 					},
+					[120361] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 1.5,
+						["class"] = "HUNTER",
+						["desc"] = 0,
+					},
 					[184256] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
 						["desc"] = "Discordant Chorus",
-					},
-					[153596] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "MAGE",
-						["desc"] = 64,
 					},
 					[184707] = {
 						["enabled"] = true,
@@ -69142,12 +69142,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Damage",
 					},
-					[980] = {
+					[88263] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "WARLOCK",
-						["desc"] = 265,
+						["interval"] = 0.5,
+						["class"] = "PALADIN",
+						["desc"] = 66,
 					},
 					[211088] = {
 						["enabled"] = true,
@@ -69163,12 +69163,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[118000] = {
+					[211727] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[81751] = {
 						["enabled"] = true,
@@ -69219,12 +69219,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[201754] = {
+					[113780] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["class"] = "ROGUE",
+						["desc"] = 259,
 					},
 					[22482] = {
 						["enabled"] = true,
@@ -69653,12 +69653,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[105421] = {
+					[195256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 0,
+						["interval"] = 1.5,
+						["class"] = "SHAMAN",
+						["desc"] = 263,
 					},
 					[132467] = {
 						["enabled"] = true,
@@ -71337,12 +71337,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[105421] = {
+					[195256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 0,
+						["interval"] = 1.5,
+						["class"] = "SHAMAN",
+						["desc"] = 263,
 					},
 					[199054] = {
 						["enabled"] = true,
@@ -71351,12 +71351,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[196278] = {
+					[105421] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "PALADIN",
+						["desc"] = 0,
 					},
 					[104318] = {
 						["enabled"] = true,
@@ -72289,12 +72289,12 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 255,
 					},
-					[218617] = {
+					[201754] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[173010] = {
 						["enabled"] = true,
@@ -72310,12 +72310,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[201754] = {
+					[113780] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["class"] = "ROGUE",
+						["desc"] = 259,
 					},
 					[194153] = {
 						["enabled"] = true,
@@ -72373,12 +72373,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[118000] = {
+					[211727] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[7922] = {
 						["enabled"] = true,
@@ -72394,12 +72394,12 @@ xCTSavedDB = {
 						["class"] = "DEMONHUNTER",
 						["desc"] = 577,
 					},
-					[213771] = {
+					[118000] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DRUID",
-						["desc"] = 104,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[212621] = {
 						["enabled"] = true,
@@ -72422,19 +72422,19 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Nature Healing (Monks, Druids)",
 					},
-					[206930] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "DEATHKNIGHT",
-						["desc"] = 250,
-					},
 					[980] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "WARLOCK",
 						["desc"] = 265,
+					},
+					[88263] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 0.5,
+						["class"] = "PALADIN",
+						["desc"] = 66,
 					},
 					[211545] = {
 						["enabled"] = true,
@@ -72520,12 +72520,12 @@ xCTSavedDB = {
 						["class"] = "DRUID",
 						["desc"] = 105,
 					},
-					[153596] = {
+					[184256] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
-						["class"] = "MAGE",
-						["desc"] = 64,
+						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
+						["desc"] = "Discordant Chorus",
 					},
 					[70890] = {
 						["enabled"] = true,
@@ -72723,19 +72723,19 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Healing (Priests, Paladins)",
 					},
+					[153596] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 2.5,
+						["class"] = "MAGE",
+						["desc"] = 64,
+					},
 					[120361] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 1.5,
 						["class"] = "HUNTER",
 						["desc"] = 0,
-					},
-					[184256] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
-						["desc"] = "Discordant Chorus",
 					},
 					[184707] = {
 						["enabled"] = true,
@@ -72765,12 +72765,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Damage",
 					},
-					[88263] = {
+					[206930] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 66,
+						["class"] = "DEATHKNIGHT",
+						["desc"] = 250,
 					},
 					[84721] = {
 						["enabled"] = true,
@@ -72786,12 +72786,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 62,
 					},
-					[211727] = {
+					[213771] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "DRUID",
+						["desc"] = 104,
 					},
 					[81751] = {
 						["enabled"] = true,
@@ -72842,12 +72842,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[113780] = {
+					[218617] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "ROGUE",
-						["desc"] = 259,
+						["interval"] = 1.5,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[22482] = {
 						["enabled"] = true,
@@ -73276,12 +73276,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[195256] = {
+					[196278] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "SHAMAN",
-						["desc"] = 263,
+						["interval"] = 0.5,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[132467] = {
 						["enabled"] = true,
@@ -74865,12 +74865,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[105421] = {
+					[195256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 0,
+						["interval"] = 1.5,
+						["class"] = "SHAMAN",
+						["desc"] = 263,
 					},
 					[199054] = {
 						["enabled"] = true,
@@ -74879,12 +74879,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[196278] = {
+					[105421] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "PALADIN",
+						["desc"] = 0,
 					},
 					[104318] = {
 						["enabled"] = true,
@@ -75817,12 +75817,12 @@ xCTSavedDB = {
 						["class"] = "ROGUE",
 						["desc"] = 260,
 					},
-					[218617] = {
+					[201754] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[173010] = {
 						["enabled"] = true,
@@ -75838,12 +75838,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[201754] = {
+					[113780] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["class"] = "ROGUE",
+						["desc"] = 259,
 					},
 					[194153] = {
 						["enabled"] = true,
@@ -75901,12 +75901,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[118000] = {
+					[211727] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[210833] = {
 						["enabled"] = true,
@@ -75922,12 +75922,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[213771] = {
+					[118000] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DRUID",
-						["desc"] = 104,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[84721] = {
 						["enabled"] = true,
@@ -75950,19 +75950,19 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 62,
 					},
-					[206930] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "DEATHKNIGHT",
-						["desc"] = 250,
-					},
 					[980] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "WARLOCK",
 						["desc"] = 265,
+					},
+					[88263] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 0.5,
+						["class"] = "PALADIN",
+						["desc"] = 66,
 					},
 					[211545] = {
 						["enabled"] = true,
@@ -76020,12 +76020,12 @@ xCTSavedDB = {
 						["class"] = "WARRIOR",
 						["desc"] = 72,
 					},
-					[120361] = {
+					[153596] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "HUNTER",
-						["desc"] = 0,
+						["interval"] = 2.5,
+						["class"] = "MAGE",
+						["desc"] = 64,
 					},
 					[183042] = {
 						["enabled"] = true,
@@ -76041,19 +76041,19 @@ xCTSavedDB = {
 						["class"] = "DEATHKNIGHT",
 						["desc"] = 250,
 					},
-					[153596] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "MAGE",
-						["desc"] = 64,
-					},
 					[184256] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
 						["desc"] = "Discordant Chorus",
+					},
+					[120361] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 1.5,
+						["class"] = "HUNTER",
+						["desc"] = 0,
 					},
 					[198756] = {
 						["enabled"] = true,
@@ -76293,12 +76293,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Damage",
 					},
-					[88263] = {
+					[206930] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 66,
+						["class"] = "DEATHKNIGHT",
+						["desc"] = 250,
 					},
 					[148235] = {
 						["enabled"] = true,
@@ -76314,12 +76314,12 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 254,
 					},
-					[211727] = {
+					[213771] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "DRUID",
+						["desc"] = 104,
 					},
 					[81751] = {
 						["enabled"] = true,
@@ -76370,12 +76370,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[113780] = {
+					[218617] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "ROGUE",
-						["desc"] = 259,
+						["interval"] = 1.5,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[13812] = {
 						["enabled"] = true,
@@ -76804,12 +76804,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[195256] = {
+					[196278] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "SHAMAN",
-						["desc"] = 263,
+						["interval"] = 0.5,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[132467] = {
 						["enabled"] = true,
@@ -78355,12 +78355,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[195256] = {
+					[196278] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "SHAMAN",
-						["desc"] = 263,
+						["interval"] = 0.5,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[199054] = {
 						["enabled"] = true,
@@ -78369,12 +78369,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[105421] = {
+					[195256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 0,
+						["interval"] = 1.5,
+						["class"] = "SHAMAN",
+						["desc"] = 263,
 					},
 					[104318] = {
 						["enabled"] = true,
@@ -79307,12 +79307,12 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 255,
 					},
-					[201754] = {
+					[113780] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["class"] = "ROGUE",
+						["desc"] = 259,
 					},
 					[173010] = {
 						["enabled"] = true,
@@ -79328,12 +79328,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[113780] = {
+					[218617] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "ROGUE",
-						["desc"] = 259,
+						["interval"] = 1.5,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[194153] = {
 						["enabled"] = true,
@@ -79391,12 +79391,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[211727] = {
+					[213771] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "DRUID",
+						["desc"] = 104,
 					},
 					[7922] = {
 						["enabled"] = true,
@@ -79412,12 +79412,12 @@ xCTSavedDB = {
 						["class"] = "DEMONHUNTER",
 						["desc"] = 577,
 					},
-					[118000] = {
+					[211727] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[212621] = {
 						["enabled"] = true,
@@ -79440,19 +79440,19 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Nature Healing (Monks, Druids)",
 					},
-					[980] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "WARLOCK",
-						["desc"] = 265,
-					},
 					[88263] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
 						["class"] = "PALADIN",
 						["desc"] = 66,
+					},
+					[206930] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 0.5,
+						["class"] = "DEATHKNIGHT",
+						["desc"] = 250,
 					},
 					[211545] = {
 						["enabled"] = true,
@@ -79538,12 +79538,12 @@ xCTSavedDB = {
 						["class"] = "DRUID",
 						["desc"] = 105,
 					},
-					[184256] = {
+					[120361] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
-						["desc"] = "Discordant Chorus",
+						["interval"] = 1.5,
+						["class"] = "HUNTER",
+						["desc"] = 0,
 					},
 					[70890] = {
 						["enabled"] = true,
@@ -79741,19 +79741,19 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Healing (Priests, Paladins)",
 					},
+					[184256] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 2.5,
+						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
+						["desc"] = "Discordant Chorus",
+					},
 					[153596] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "MAGE",
 						["desc"] = 64,
-					},
-					[120361] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "HUNTER",
-						["desc"] = 0,
 					},
 					[184707] = {
 						["enabled"] = true,
@@ -79783,12 +79783,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Damage",
 					},
-					[206930] = {
+					[980] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "DEATHKNIGHT",
-						["desc"] = 250,
+						["interval"] = 2.5,
+						["class"] = "WARLOCK",
+						["desc"] = 265,
 					},
 					[84721] = {
 						["enabled"] = true,
@@ -79804,12 +79804,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 62,
 					},
-					[213771] = {
+					[118000] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DRUID",
-						["desc"] = 104,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[81751] = {
 						["enabled"] = true,
@@ -79860,12 +79860,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[218617] = {
+					[201754] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[22482] = {
 						["enabled"] = true,
@@ -80294,12 +80294,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[196278] = {
+					[105421] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "PALADIN",
+						["desc"] = 0,
 					},
 					[132467] = {
 						["enabled"] = true,
@@ -81976,12 +81976,12 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 64,
 					},
-					[196278] = {
+					[105421] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "PALADIN",
+						["desc"] = 0,
 					},
 					[199054] = {
 						["enabled"] = true,
@@ -81990,12 +81990,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[195256] = {
+					[196278] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "SHAMAN",
-						["desc"] = 263,
+						["interval"] = 0.5,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[104318] = {
 						["enabled"] = true,
@@ -82928,12 +82928,12 @@ xCTSavedDB = {
 						["class"] = "ROGUE",
 						["desc"] = 260,
 					},
-					[113780] = {
+					[218617] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "ROGUE",
-						["desc"] = 259,
+						["interval"] = 1.5,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[173010] = {
 						["enabled"] = true,
@@ -82949,12 +82949,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[218617] = {
+					[201754] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[194153] = {
 						["enabled"] = true,
@@ -83012,12 +83012,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 70,
 					},
-					[213771] = {
+					[118000] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "DRUID",
-						["desc"] = 104,
+						["class"] = "WARRIOR",
+						["desc"] = 72,
 					},
 					[210833] = {
 						["enabled"] = true,
@@ -83033,12 +83033,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[211727] = {
+					[213771] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARLOCK",
-						["desc"] = 266,
+						["class"] = "DRUID",
+						["desc"] = 104,
 					},
 					[84721] = {
 						["enabled"] = true,
@@ -83061,19 +83061,19 @@ xCTSavedDB = {
 						["class"] = "MAGE",
 						["desc"] = 62,
 					},
-					[88263] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 66,
-					},
 					[206930] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
 						["class"] = "DEATHKNIGHT",
 						["desc"] = 250,
+					},
+					[980] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 2.5,
+						["class"] = "WARLOCK",
+						["desc"] = 265,
 					},
 					[211545] = {
 						["enabled"] = true,
@@ -83131,12 +83131,12 @@ xCTSavedDB = {
 						["class"] = "WARRIOR",
 						["desc"] = 72,
 					},
-					[184256] = {
+					[120361] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
-						["desc"] = "Discordant Chorus",
+						["interval"] = 1.5,
+						["class"] = "HUNTER",
+						["desc"] = 0,
 					},
 					[183042] = {
 						["enabled"] = true,
@@ -83152,19 +83152,19 @@ xCTSavedDB = {
 						["class"] = "DEATHKNIGHT",
 						["desc"] = 250,
 					},
-					[120361] = {
-						["enabled"] = true,
-						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "HUNTER",
-						["desc"] = 0,
-					},
 					[153596] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 2.5,
 						["class"] = "MAGE",
 						["desc"] = 64,
+					},
+					[184256] = {
+						["enabled"] = true,
+						["prep"] = 0,
+						["interval"] = 2.5,
+						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Items)|r",
+						["desc"] = "Discordant Chorus",
 					},
 					[198756] = {
 						["enabled"] = true,
@@ -83404,12 +83404,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Damage",
 					},
-					[980] = {
+					[88263] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 2.5,
-						["class"] = "WARLOCK",
-						["desc"] = 265,
+						["interval"] = 0.5,
+						["class"] = "PALADIN",
+						["desc"] = 66,
 					},
 					[148235] = {
 						["enabled"] = true,
@@ -83425,12 +83425,12 @@ xCTSavedDB = {
 						["class"] = "HUNTER",
 						["desc"] = 254,
 					},
-					[118000] = {
+					[211727] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "WARRIOR",
-						["desc"] = 72,
+						["class"] = "WARLOCK",
+						["desc"] = 266,
 					},
 					[81751] = {
 						["enabled"] = true,
@@ -83481,12 +83481,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[201754] = {
+					[113780] = {
 						["enabled"] = true,
 						["prep"] = 0,
 						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["class"] = "ROGUE",
+						["desc"] = 259,
 					},
 					[13812] = {
 						["enabled"] = true,
@@ -83915,12 +83915,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[105421] = {
+					[195256] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "PALADIN",
-						["desc"] = 0,
+						["interval"] = 1.5,
+						["class"] = "SHAMAN",
+						["desc"] = 263,
 					},
 					[132467] = {
 						["enabled"] = true,

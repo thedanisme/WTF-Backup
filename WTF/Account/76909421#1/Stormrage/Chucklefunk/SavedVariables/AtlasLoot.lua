@@ -2,12 +2,18 @@
 AtlasLootCharDB = {
 	["__addonrevision"] = 4325,
 	["GUI"] = {
+		["classFilter"] = true,
 		["selected"] = {
-			"AtlasLoot_Factions", -- [1]
-			"LEGIONFACTIONS", -- [2]
-			4, -- [3]
+			"AtlasLoot_Legion", -- [1]
+			"MawOfSouls", -- [2]
+			2, -- [3]
 			1, -- [4]
 			0, -- [5]
+		},
+		["point"] = {
+			[3] = "CENTER",
+			[4] = 125.000213623047,
+			[5] = 20.9999942779541,
 		},
 	},
 	["MiniMapButton"] = {

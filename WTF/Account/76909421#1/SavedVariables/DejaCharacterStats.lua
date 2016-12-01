@@ -179,6 +179,120 @@ DCS_ClassSpecDB = {
 		}, -- [6]
 		{
 			["statKey"] = "STRENGTH",
+			["hidden"] = true,
+		}, -- [7]
+		{
+			["statKey"] = "AGILITY",
+			["hidden"] = true,
+		}, -- [8]
+		{
+			["statKey"] = "INTELLECT",
+		}, -- [9]
+		{
+			["statKey"] = "STAMINA",
+		}, -- [10]
+		{
+			["statKey"] = "ATTACK_DAMAGE",
+			["hidden"] = true,
+		}, -- [11]
+		{
+			["statKey"] = "ATTACK_AP",
+			["hidden"] = true,
+		}, -- [12]
+		{
+			["statKey"] = "DCS_ATTACK_ATTACKSPEED",
+			["hidden"] = true,
+		}, -- [13]
+		{
+			["statKey"] = "WEAPON_DPS",
+			["hidden"] = true,
+		}, -- [14]
+		{
+			["statKey"] = "SPELLPOWER",
+		}, -- [15]
+		{
+			["statKey"] = "MANAREGEN",
+		}, -- [16]
+		{
+			["statKey"] = "ENERGY_REGEN",
+			["hidden"] = true,
+		}, -- [17]
+		{
+			["statKey"] = "DCS_RUNEREGEN",
+			["hidden"] = true,
+		}, -- [18]
+		{
+			["statKey"] = "FOCUS_REGEN",
+		}, -- [19]
+		{
+			["statKey"] = "MOVESPEED",
+		}, -- [20]
+		{
+			["statKey"] = "GCD",
+		}, -- [21]
+		{
+			["statKey"] = "REPAIR_COST",
+		}, -- [22]
+		{
+			["statKey"] = "EnhancementsCategory",
+		}, -- [23]
+		{
+			["statKey"] = "CRITCHANCE",
+		}, -- [24]
+		{
+			["statKey"] = "HASTE",
+		}, -- [25]
+		{
+			["statKey"] = "VERSATILITY",
+		}, -- [26]
+		{
+			["statKey"] = "MASTERY",
+		}, -- [27]
+		{
+			["statKey"] = "LIFESTEAL",
+		}, -- [28]
+		{
+			["statKey"] = "AVOIDANCE",
+		}, -- [29]
+		{
+			["statKey"] = "DODGE",
+			["hidden"] = true,
+		}, -- [30]
+		{
+			["statKey"] = "PARRY",
+			["hidden"] = true,
+		}, -- [31]
+		{
+			["statKey"] = "BLOCK",
+			["hidden"] = true,
+		}, -- [32]
+		{
+			["statKey"] = "ITEMLEVEL",
+			["hidden"] = true,
+		}, -- [33]
+		["uniqueKey"] = "Chucklefunk:Stormrage:1",
+	},
+	["Oenta:Stormrage:1"] = {
+		{
+			["statKey"] = "ItemLevelFrame",
+		}, -- [1]
+		{
+			["statKey"] = "AttributesCategory",
+		}, -- [2]
+		{
+			["statKey"] = "HEALTH",
+		}, -- [3]
+		{
+			["statKey"] = "POWER",
+		}, -- [4]
+		{
+			["statKey"] = "ALTERNATEMANA",
+		}, -- [5]
+		{
+			["statKey"] = "ARMOR",
+		}, -- [6]
+		{
+			["statKey"] = "STRENGTH",
 		}, -- [7]
 		{
 			["statKey"] = "AGILITY",
@@ -259,106 +373,6 @@ DCS_ClassSpecDB = {
 		{
 			["statKey"] = "DCS_RUNEREGEN",
 		}, -- [33]
-		["uniqueKey"] = "Chucklefunk:Stormrage:1",
-	},
-	["Oenta:Stormrage:1"] = {
-		{
-			["statKey"] = "ItemLevelFrame",
-		}, -- [1]
-		{
-			["statKey"] = "AttributesCategory",
-		}, -- [2]
-		{
-			["statKey"] = "HEALTH",
-		}, -- [3]
-		{
-			["statKey"] = "POWER",
-		}, -- [4]
-		{
-			["statKey"] = "ALTERNATEMANA",
-		}, -- [5]
-		{
-			["statKey"] = "ARMOR",
-		}, -- [6]
-		{
-			["statKey"] = "STRENGTH",
-		}, -- [7]
-		{
-			["statKey"] = "AGILITY",
-		}, -- [8]
-		{
-			["statKey"] = "INTELLECT",
-		}, -- [9]
-		{
-			["statKey"] = "STAMINA",
-		}, -- [10]
-		{
-			["statKey"] = "ATTACK_DAMAGE",
-		}, -- [11]
-		{
-			["statKey"] = "ATTACK_AP",
-		}, -- [12]
-		{
-			["statKey"] = "ATTACK_ATTACKSPEED",
-		}, -- [13]
-		{
-			["statKey"] = "SPELLPOWER",
-		}, -- [14]
-		{
-			["statKey"] = "MANAREGEN",
-		}, -- [15]
-		{
-			["statKey"] = "ENERGY_REGEN",
-		}, -- [16]
-		{
-			["statKey"] = "RUNE_REGEN",
-		}, -- [17]
-		{
-			["statKey"] = "FOCUS_REGEN",
-		}, -- [18]
-		{
-			["statKey"] = "MOVESPEED",
-		}, -- [19]
-		{
-			["statKey"] = "GCD",
-		}, -- [20]
-		{
-			["statKey"] = "REPAIR_COST",
-		}, -- [21]
-		{
-			["statKey"] = "EnhancementsCategory",
-		}, -- [22]
-		{
-			["statKey"] = "CRITCHANCE",
-		}, -- [23]
-		{
-			["statKey"] = "HASTE",
-		}, -- [24]
-		{
-			["statKey"] = "VERSATILITY",
-		}, -- [25]
-		{
-			["statKey"] = "MASTERY",
-		}, -- [26]
-		{
-			["statKey"] = "LIFESTEAL",
-		}, -- [27]
-		{
-			["statKey"] = "AVOIDANCE",
-		}, -- [28]
-		{
-			["statKey"] = "DODGE",
-		}, -- [29]
-		{
-			["statKey"] = "PARRY",
-		}, -- [30]
-		{
-			["statKey"] = "BLOCK",
-		}, -- [31]
-		{
-			["statKey"] = "ITEMLEVEL",
-			["hidden"] = true,
-		}, -- [32]
 		["uniqueKey"] = "Oenta:Stormrage:1",
 	},
 	["Emmarosa:Stormrage:1"] = {
@@ -399,66 +413,69 @@ DCS_ClassSpecDB = {
 			["statKey"] = "ATTACK_AP",
 		}, -- [12]
 		{
-			["statKey"] = "ATTACK_ATTACKSPEED",
+			["statKey"] = "SPELLPOWER",
 		}, -- [13]
 		{
-			["statKey"] = "SPELLPOWER",
+			["statKey"] = "MANAREGEN",
 		}, -- [14]
 		{
-			["statKey"] = "MANAREGEN",
+			["statKey"] = "ENERGY_REGEN",
 		}, -- [15]
 		{
-			["statKey"] = "ENERGY_REGEN",
+			["statKey"] = "FOCUS_REGEN",
 		}, -- [16]
 		{
-			["statKey"] = "RUNE_REGEN",
+			["statKey"] = "MOVESPEED",
 		}, -- [17]
 		{
-			["statKey"] = "FOCUS_REGEN",
+			["statKey"] = "GCD",
 		}, -- [18]
 		{
-			["statKey"] = "MOVESPEED",
+			["statKey"] = "REPAIR_COST",
 		}, -- [19]
 		{
-			["statKey"] = "GCD",
+			["statKey"] = "EnhancementsCategory",
 		}, -- [20]
 		{
-			["statKey"] = "REPAIR_COST",
+			["statKey"] = "CRITCHANCE",
 		}, -- [21]
 		{
-			["statKey"] = "EnhancementsCategory",
+			["statKey"] = "HASTE",
 		}, -- [22]
 		{
-			["statKey"] = "CRITCHANCE",
+			["statKey"] = "VERSATILITY",
 		}, -- [23]
 		{
-			["statKey"] = "HASTE",
+			["statKey"] = "MASTERY",
 		}, -- [24]
 		{
-			["statKey"] = "VERSATILITY",
+			["statKey"] = "LIFESTEAL",
 		}, -- [25]
 		{
-			["statKey"] = "MASTERY",
+			["statKey"] = "AVOIDANCE",
 		}, -- [26]
 		{
-			["statKey"] = "LIFESTEAL",
+			["statKey"] = "DODGE",
 		}, -- [27]
 		{
-			["statKey"] = "AVOIDANCE",
+			["statKey"] = "PARRY",
 		}, -- [28]
 		{
-			["statKey"] = "DODGE",
-		}, -- [29]
-		{
-			["statKey"] = "PARRY",
-		}, -- [30]
-		{
 			["statKey"] = "BLOCK",
-		}, -- [31]
+		}, -- [29]
 		{
 			["statKey"] = "ITEMLEVEL",
 			["hidden"] = true,
+		}, -- [30]
+		{
+			["statKey"] = "WEAPON_DPS",
+		}, -- [31]
+		{
+			["statKey"] = "DCS_ATTACK_ATTACKSPEED",
 		}, -- [32]
+		{
+			["statKey"] = "DCS_RUNEREGEN",
+		}, -- [33]
 		["uniqueKey"] = "Emmarosa:Stormrage:1",
 	},
 	["Chucklefunk:Stormrage:3"] = {

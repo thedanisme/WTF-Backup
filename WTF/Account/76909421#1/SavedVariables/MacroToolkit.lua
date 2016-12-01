@@ -258,12 +258,12 @@ MacroToolkitDB = {
 					["body"] = "#showtooltip\n/cancelaura Levitate\n/use Levitate\n",
 				},
 				[126] = {
-					["icon"] = "134400",
+					["icon"] = "135936",
 					["name"] = "PS",
 					["body"] = "#showtooltip\n/use [@mouseover,help,nodead]Pain Suppression;[help,nodead]Pain Suppression;Pain Suppression\n",
 				},
 				[132] = {
-					["icon"] = "134400",
+					["icon"] = "571554",
 					["name"] = "SF",
 					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Shining Force\n",
 				},
@@ -283,12 +283,12 @@ MacroToolkitDB = {
 					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Shadow Mend\n",
 				},
 				[124] = {
-					["icon"] = "134400",
+					["icon"] = "237545",
 					["name"] = "Penance",
 					["body"] = "#showtooltip\n/use [@mouseover,harm,nodead][]Penance\n",
 				},
 				[128] = {
-					["icon"] = "135935",
+					["icon"] = "134400",
 					["name"] = "PurifyDisease",
 					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Purify Disease\n",
 				},
@@ -298,12 +298,12 @@ MacroToolkitDB = {
 					["body"] = "#showtooltip\n/use [@mouseover,dead][]Resurrection\n",
 				},
 				[121] = {
-					["icon"] = "134400",
+					["icon"] = "642580",
 					["name"] = "Feather",
 					["body"] = "#showtooltip\n/cast [@player] Angelic Feather\n/stopspelltarget\n",
 				},
 				[125] = {
-					["icon"] = "134400",
+					["icon"] = "1538775",
 					["name"] = "Plea",
 					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Plea\n",
 				},
@@ -313,7 +313,7 @@ MacroToolkitDB = {
 					["body"] = "#showtooltip\n/use [@mouseover,help,nodead]Power Word: Shield;[help,nodead]Power Word: Shield;Power Word: Shield\n",
 				},
 				[129] = {
-					["icon"] = "134400",
+					["icon"] = "1386546",
 					["name"] = "PW:R",
 					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Power Word: Radiance\n",
 				},
@@ -384,10 +384,10 @@ MacroToolkitDB = {
 					["name"] = "Stealth/Symbols",
 					["body"] = "#showtooltip Stealth\n/use Stealth\n/use Symbols of Death\n",
 				},
-				[121] = {
+				[129] = {
 					["icon"] = "134400",
-					["name"] = " ",
-					["body"] = "#showtooltip Adrenaline Rush\n/use Adrenaline Rush\n/use Curse of the Dreadblades\n/use 13\n/use 14\n/use 11\n",
+					["name"] = "Shadow Blades",
+					["body"] = "#showtooltip Shadow Blades\n/use Shadow Blades\n/use 13\n/use 14\n/use Goremaw's Bite\n",
 				},
 				[125] = {
 					["icon"] = "1035048",
@@ -399,10 +399,10 @@ MacroToolkitDB = {
 					["name"] = "SoD/SS",
 					["body"] = "#showtooltip Symbols of Death\n/use Symbols of Death\n/use Shadowstrike\n",
 				},
-				[129] = {
+				[121] = {
 					["icon"] = "134400",
-					["name"] = "Shadow Blades",
-					["body"] = "#showtooltip Shadow Blades\n/use Shadow Blades\n/use 13\n/use 14\n/use Goremaw's Bite\n",
+					["name"] = " ",
+					["body"] = "#showtooltip Adrenaline Rush\n/use Adrenaline Rush\n/use Curse of the Dreadblades\n/use 13\n/use 14\n/use 11\n",
 				},
 			},
 			["backups"] = {
@@ -671,49 +671,59 @@ MacroToolkitDB = {
 		["Druidann - Stormrage"] = {
 			["macros"] = {
 				[122] = {
-					["name"] = "Healing Touch",
-					["icon"] = "134400",
-					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Healing Touch\n",
-				},
-				[126] = {
-					["name"] = "Regrowth",
-					["icon"] = "136085",
-					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Regrowth\n",
-				},
-				[123] = {
-					["name"] = "Incarn",
-					["icon"] = "571586",
-					["body"] = "#showtooltip\n/use Celestial Alignment\n/use 13\n/use 14\n",
-				},
-				[127] = {
-					["name"] = "Rejuv",
-					["icon"] = "134400",
-					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Rejuvenation\n",
-				},
-				[124] = {
-					["name"] = "Innervate",
-					["icon"] = "136048",
-					["body"] = "#showtooltip\n/use [@focus,help,exists][@mouseover,help,exists][]Innervate\n",
-				},
-				[128] = {
-					["name"] = "RemCorruption",
-					["icon"] = "135952",
-					["body"] = "#showtooltip\n/use [@mouseover,help,exists][]Remove Corruption\n",
-				},
-				[121] = {
 					["name"] = "Growl",
 					["icon"] = "132270",
 					["body"] = "#showtooltip\n/use [@mouseover,harm,exists][]Growl\n",
 				},
-				[125] = {
+				[126] = {
 					["name"] = "Rebirth",
 					["icon"] = "136080",
 					["body"] = "#showtooltip\n/use [@mouseover,dead][]Rebirth\n",
 				},
+				[123] = {
+					["name"] = "Healing Touch",
+					["icon"] = "136041",
+					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Healing Touch\n",
+				},
+				[127] = {
+					["name"] = "Regrowth",
+					["icon"] = "136085",
+					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Regrowth\n",
+				},
+				[124] = {
+					["name"] = "Incarn",
+					["icon"] = "571586",
+					["body"] = "#showtooltip\n/use Celestial Alignment\n/use 13\n/use 14\n",
+				},
+				[128] = {
+					["name"] = "Rejuv",
+					["icon"] = "136081",
+					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Rejuvenation\n",
+				},
+				[121] = {
+					["name"] = "FoE",
+					["icon"] = "132123",
+					["body"] = "#showtooltip\n/use [@cursor]Fury of Elune\n",
+				},
 				[129] = {
+					["name"] = "RemCorruption",
+					["icon"] = "135952",
+					["body"] = "#showtooltip\n/use [@mouseover,help,exists][]Remove Corruption\n",
+				},
+				[125] = {
+					["name"] = "Innervate",
+					["icon"] = "136048",
+					["body"] = "#showtooltip\n/use [@focus,help,exists][@mouseover,help,exists][]Innervate\n",
+				},
+				[130] = {
 					["name"] = "Swiftmend",
-					["icon"] = "134400",
+					["icon"] = "134914",
 					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Swiftmend\n",
+				},
+				[131] = {
+					["name"] = "Treants",
+					["icon"] = "132129",
+					["body"] = "#showtooltip\n/use [@cursor]Force of Nature\n",
 				},
 			},
 			["backups"] = {
