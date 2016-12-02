@@ -115,7 +115,7 @@ BadBoy: enabled
 BadBoy_CCleaner: enabled
 BadBoy_Guilded: enabled
 BadPet: enabled
-BestInSlot: enabled
+BestInSlot: disabled
 BestInSlot_WarlordsOfDraenorLFR: enabled
 BestInSlot_WarlordsOfDraenor: enabled
 BetterAddonList: enabled
@@ -124,7 +124,7 @@ FarmHud: disabled
 HandyNotes_FieldPhotographer: enabled
 HandyNotes_AzerothsTopTunes: disabled
 Pawn: enabled
-StrataFix: enabled
+StrataFix: disabled
 +Wowhead_Looter: disabled
 CLC_DK: enabled
 CompactRunes: enabled
@@ -142,7 +142,7 @@ Altoholic_Search: disabled
 Altoholic_Summary: disabled
 AngryAssignments: disabled
 AtlasLoot_Legion: enabled
-BestInSlot_Legion: enabled
+BestInSlot_Legion: disabled
 BigWigs_Nightmare: disabled
 BigWigs_Nighthold: disabled
 BossBannerHider: enabled
@@ -175,12 +175,12 @@ Details_CalcLeech: enabled
 Details_DmgRank: disabled
 Details_DpsTuning: disabled
 Details_EncounterDetails: enabled
-Details_RaidCheck: enabled
+Details_RaidCheck: disabled
 Details_DataStorage: enabled
 Details_TimeAttack: disabled
 Details_TinyThreat: disabled
 Details_Vanguard: disabled
-Details_3DModelsPaths: disabled
+Details_3DModelsPaths: enabled
 Details_Streamer: disabled
 Details_RaidInfo-HellfireCitadel: disabled
 Details_DungeonInfo-Warlords: disabled
@@ -189,7 +189,7 @@ EventTracker: enabled
 HideTalkingHead: enabled
 MacroToolkitIcons: enabled
 RubyHero: enabled
-BigDumbLootCouncil: enabled
+BigDumbLootCouncil: disabled
 AdiBags: disabled
 AdiBags_BestInSlot: disabled
 AdiBags_Bound: disabled
@@ -204,7 +204,7 @@ HandyNotes_LegionRaresTreasures: enabled
 NOP: enabled
 WorldQuestsList: enabled
 ServerHop: disabled
-ArtifactSpellLinker: enabled
+ArtifactSpellLinker: disabled
 BigWigs_TrialOfValor: disabled
 NPCScan: enabled
 DejaCharacterStats: enabled
@@ -213,3 +213,6 @@ Details_RaidInfo-Nighthold: disabled
 HandyNotes_SuramarTelemancy: enabled
 PersonalLootHelper: enabled
 ElvUI_SLE: enabled
+Details_RaidInfo-TrialOfValor: disabled
+GarrisonMissionManager: disabled
+!YouArentInAPartyFix: disabled

@@ -1,10 +1,16 @@
 # BigWigs
 
-## [v25.2](https://github.com/BigWigsMods/BigWigs/tree/v25.2) (2016-11-28) [](#top)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v25.1...v25.2)
+## [v26](https://github.com/BigWigsMods/BigWigs/tree/v26) (2016-12-02) [](#top)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v25.2...v26)
 
-- Update deDE.lua (#117)  
-- Plugins/Statistics: Don't print when we have no health data.  
-- TrialOfValor/Odyn: Add say countdown to Shield of Light.  
-- TrialOfValor/Helya: Various timer fixes  
-- Plugins/Statistics: Cancel the health check on win, cleanups.  
+- bump version  
+- Nightmare/Ilgynoth: Change Cursed Blood sound when on you.  
+- Always play Frost Lick sound for magic dispellers (#125)  
+- TrialOfValor/Odyn: Add icon to Stormforged Spear (#119)  
+- Fix a minor typo in Helya module (#124)  
+- Update zhCN.lua (#122)  
+- Fix filename  
+- Plugins/Statistics: Another fix for the health timer not cancelling (on short wipes).  
+- Update ruRU.lua (#121)  
+- TrialOfValor/Helya: Fix tentacle message sometimes showing the same count in separate tentacles.  
+- TrialOfValor/Helya: Shorten the say messages, requires some localization.  

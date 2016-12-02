@@ -1,4 +1,4 @@
-local VERSION = 23
+local VERSION = 24
 
 --[[
 Special icons for rares, pvp or pet battle quests in list
@@ -55,6 +55,9 @@ Some pvp quests shows honor as reward if reward is only gold [filter for them go
 Minor fixes
 
 7.1 Update
+
+New option "Ignore filter for bounty quests"
+Minor fixes
 ]]
 
 local charKey = (UnitName'player' or "").."-"..(GetRealmName() or ""):gsub(" ","")
@@ -71,6 +74,7 @@ local LOCALE =
 		totalap = "Всего силы артефакта: %d",
 		totalapdisable = 'Отключить сумму силы артефакта',
 		timeToComplete = "Времени на выполнение: ",
+		bountyIgnoreFilter = "Игнорировать фильтр для заданий посланника",
 	} or
 	locale == "deDE" and {
 		gear = "Ausrüstung",
@@ -82,6 +86,7 @@ local LOCALE =
 		totalap = "Total Artifact Power: %d",
 		totalapdisable = 'Disable "Total AP"',
 		timeToComplete = "Time to complete: ",
+		bountyIgnoreFilter = "Ignore filter for bounty quests",
 	} or
 	locale == "frFR" and {
 		gear = "Équipement",
@@ -93,6 +98,7 @@ local LOCALE =
 		totalap = "Total Artifact Power: %d",
 		totalapdisable = 'Disable "Total AP"',
 		timeToComplete = "Time to complete: ",
+		bountyIgnoreFilter = "Ignore filter for bounty quests",
 	} or
 	(locale == "esES" or locale == "esMX") and {
 		gear = "Equipo",
@@ -104,6 +110,7 @@ local LOCALE =
 		totalap = "Total Artifact Power: %d",
 		totalapdisable = 'Disable "Total AP"',
 		timeToComplete = "Time to complete: ",
+		bountyIgnoreFilter = "Ignore filter for bounty quests",
 	} or	
 	locale == "itIT" and {
 		gear = "Equipaggiamento",
@@ -115,6 +122,7 @@ local LOCALE =
 		totalap = "Total Artifact Power: %d",
 		totalapdisable = 'Disable "Total AP"',
 		timeToComplete = "Time to complete: ",
+		bountyIgnoreFilter = "Ignore filter for bounty quests",
 	} or
 	locale == "ptBR" and {
 		gear = "Equipamento",
@@ -126,6 +134,7 @@ local LOCALE =
 		totalap = "Total Artifact Power: %d",
 		totalapdisable = 'Disable "Total AP"',
 		timeToComplete = "Time to complete: ",
+		bountyIgnoreFilter = "Ignore filter for bounty quests",
 	} or
 	locale == "koKR" and {
 		gear = "Gear",
@@ -137,6 +146,7 @@ local LOCALE =
 		totalap = "Total Artifact Power: %d",
 		totalapdisable = 'Disable "Total AP"',
 		timeToComplete = "Time to complete: ",
+		bountyIgnoreFilter = "Ignore filter for bounty quests",
 	} or
 	(locale == "zhCN" or locale == "zhTW") and {
 		gear = "装备",
@@ -148,6 +158,7 @@ local LOCALE =
 		totalap = "Total Artifact Power: %d",
 		totalapdisable = 'Disable "Total AP"',
 		timeToComplete = "Time to complete: ",
+		bountyIgnoreFilter = "Ignore filter for bounty quests",
 	} or	
 	{
 		gear = "Gear",
@@ -159,6 +170,7 @@ local LOCALE =
 		totalap = "Total Artifact Power: %d",
 		totalapdisable = 'Disable "Total AP"',
 		timeToComplete = "Time to complete: ",
+		bountyIgnoreFilter = "Ignore filter for bounty quests",
 	}
 
 local orderResName = GetCurrencyInfo(1220)
@@ -262,6 +274,8 @@ WorldQuestList.mapD:Hide()
 WorldQuestList.TotalAP = WorldQuestList:CreateFontString(nil,"ARTWORK","GameFontWhite")
 WorldQuestList.TotalAP:SetPoint("TOPLEFT",WorldQuestList,"BOTTOMLEFT",5,-4)
 WorldQuestList.TotalAP:SetJustifyH("LEFT")
+WorldQuestList.TotalAP:SetJustifyV("TOP")
+WorldQuestList.TotalAP:SetSize(1000,1000)
 do
 	local a1,a2 = WorldQuestList.TotalAP:GetFont()
 	WorldQuestList.TotalAP:SetFont(a1,a2,"OUTLINE")
@@ -403,15 +417,17 @@ local function WorldQuestList_LineReward_OnEnter(self)
 		GameTooltip:SetQuestLogItem("reward", 1, line.reward.ID)
 		GameTooltip:Show()
 		
+		local additional = 2
 		if line.reward.IDs then
 			for i=2,line.reward.IDs do
-				local tooltip = GetAdditionalTooltip(i)
+				local tooltip = GetAdditionalTooltip(additional)
 				tooltip:SetQuestLogItem("reward", i, line.reward.ID)
 				tooltip:Show()
+				additional = additional + 1
 			end
 		end
 		if line.reward.artifactKnowlege then
-			local tooltip = GetAdditionalTooltip(2,true)
+			local tooltip = GetAdditionalTooltip(additional,true)
 			tooltip:AddLine(LOCALE.knowledgeTooltip)
 			if line.reward.timeToComplete then
 				local timeLeftMinutes, timeString = line.reward.timeToComplete
@@ -426,10 +442,28 @@ local function WorldQuestList_LineReward_OnEnter(self)
 				tooltip:AddLine(LOCALE.timeToComplete..timeString)
 			end
 			tooltip:Show()
+			additional = additional + 1
+		end
+		if line.reward:IsTruncated() then
+			local text = line.reward:GetText()
+			if text and text ~= "" then
+				local tooltip = GetAdditionalTooltip(additional,true)
+				tooltip:AddLine(text)
+				tooltip:Show()
+				additional = additional + 1
+			end
 		end
 		
 		self:RegisterEvent('MODIFIER_STATE_CHANGED')
+	elseif line.reward:IsTruncated() then
+		local text = line.reward:GetText()
+		if text and text ~= "" then
+			GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+			GameTooltip:AddLine(text)
+			GameTooltip:Show()
+		end
 	end
+
 	WorldQuestList_Line_OnEnter(line)
 end
 local function WorldQuestList_LineReward_OnLeave(self)
@@ -848,7 +882,29 @@ WorldQuestList.filterDropDown.Button:SetScript("OnClick",function(self)
 		info.arg1 = "pet"
 		info.func = SetFilterType
 		info.checked = function() return not ActiveFilterType.pet end
-		UIDropDownMenu_AddButton(info)			
+		UIDropDownMenu_AddButton(info)
+
+		info.text = OTHER
+		info.isTitle = true
+		info.hasArrow = false
+		info.notCheckable = true
+		UIDropDownMenu_AddButton(info)	
+		
+		info.isTitle = false
+		info.disabled = false
+		info.notCheckable = false
+		info.text = LOCALE.bountyIgnoreFilter
+		info.hasArrow = false
+		info.func = function (_, _, _, value)
+			if value then
+				VWQL[charKey].bountyIgnoreFilter = nil
+			else
+				VWQL[charKey].bountyIgnoreFilter = true
+			end
+			WorldQuestList_Update()
+		end
+		info.checked = function() return VWQL[charKey].bountyIgnoreFilter end
+		UIDropDownMenu_AddButton(info)	
 	end)
 	ToggleDropDownMenu(nil, nil, self:GetParent())
 	PlaySound("igMainMenuOptionCheckBoxOn")
@@ -1364,6 +1420,8 @@ function WorldQuestList_Update()
 					local isEliteQuest
 					local timeToComplete
 					
+					local professionFix
+					
 					local isValidLine = 1
 					
 					local title, factionID = C_TaskQuest.GetQuestInfoByQuestID(questID)
@@ -1396,8 +1454,11 @@ function WorldQuestList_Update()
 						end
 					elseif worldQuestType == LE_QUEST_TAG_TYPE_PROFESSION then
 						nameicon = -5
-						if ActiveFilterType.prof then 
+						if ActiveFilterType.prof or not tradeskillLineIndex then 
 							isValidLine = 0 
+							if not tradeskillLineIndex then
+								professionFix = true
+							end
 						end
 					end
 					
@@ -1450,13 +1511,6 @@ function WorldQuestList_Update()
 							rewardType = 25
 						end
 						
-						-- honor
-						local honorAmount = GetQuestLogRewardHonor and GetQuestLogRewardHonor(questID)
-						if ( honorAmount and honorAmount > 0 ) then
-							reward = BONUS_OBJECTIVE_REWARD_WITH_COUNT_FORMAT:format("Interface\\ICONS\\Achievement_LegionPVPTier4", honorAmount, HONOR)
-							rewardSort = honorAmount
-							rewardType = 32
-						end
 						
 						-- currency		
 						local numQuestCurrencies = GetNumQuestLogRewardCurrencies(questID)
@@ -1566,6 +1620,18 @@ function WorldQuestList_Update()
 							
 						end
 						
+						-- honor
+						local honorAmount = GetQuestLogRewardHonor and GetQuestLogRewardHonor(questID)
+						if ( honorAmount and honorAmount > 0 ) then
+							if reward ~= "" then
+								reward = reward .. ", "
+							else
+								rewardSort = honorAmount
+								rewardType = 32
+							end
+							reward = reward .. BONUS_OBJECTIVE_REWARD_WITH_COUNT_FORMAT:format("Interface\\ICONS\\Achievement_LegionPVPTier4", honorAmount, HONOR)
+						end
+						
 						if not hasRewardFiltered then
 							rewardType = 60
 							if bit.band(filters[6][2],ActiveFilter) == 0 then 
@@ -1608,6 +1674,10 @@ function WorldQuestList_Update()
 						if timeLeftMinutes == 0 then
 							isValidLine = 0
 						end
+					end
+					
+					if VWQL[charKey].bountyIgnoreFilter and factionInProgress and not professionFix then
+						isValidLine = 1
 					end
 					
 					if isValidLine == 1 then

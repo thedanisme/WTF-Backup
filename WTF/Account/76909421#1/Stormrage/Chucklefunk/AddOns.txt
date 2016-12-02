@@ -64,7 +64,7 @@ Details_RaidInfo-EmeraldNightmare: disabled
 Details_RaidInfo-Nighthold: disabled
 Details_RaidInfo-TrialOfValor: disabled
 Details_ChartViewer: enabled
-DugisGuideViewerZ: enabled
+DugisGuideViewerZ: disabled
 EventTracker: enabled
 HandyNotes: enabled
 HandyNotes_LegionRaresTreasures: enabled

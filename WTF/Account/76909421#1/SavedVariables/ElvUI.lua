@@ -37,10 +37,10 @@ ElvDB = {
 		},
 		["Stormrage"] = {
 			["Callil"] = 7996316,
-			["Chucklefunk"] = 181376611,
+			["Chucklefunk"] = 553796823,
 			["Oenta"] = 113469352,
-			["Emmarosa"] = 21448318,
-			["Druidann"] = 1240668528,
+			["Emmarosa"] = 46080723,
+			["Druidann"] = 985089136,
 		},
 	},
 	["namespaces"] = {
@@ -378,14 +378,14 @@ ElvDB = {
 			},
 			["hideTutorial"] = true,
 			["chat"] = {
-				["tabFont"] = "Gotham-Narrow",
+				["panelBackdrop"] = "HIDEBOTH",
 				["fontSize"] = 11,
 				["tabFontOutline"] = "OUTLINE",
 				["keywordSound"] = "Whisper Alert",
-				["timeStampFormat"] = "%H:%M ",
+				["tabFont"] = "Gotham-Narrow",
 				["keywords"] = "%MYNAME%,Dan,weakaura,weakauras",
 				["tabFontSize"] = 11,
-				["panelBackdrop"] = "HIDEBOTH",
+				["timeStampFormat"] = "%H:%M ",
 				["editboxhistory"] = 20,
 				["font"] = "Gotham-Narrow",
 				["throttleInterval"] = 10,
@@ -600,6 +600,14 @@ ElvDB = {
 							["enable"] = false,
 						},
 					},
+					["pet"] = {
+						["height"] = 26,
+						["power"] = {
+							["enable"] = false,
+						},
+						["colorOverride"] = "FORCE_ON",
+						["width"] = 200,
+					},
 					["target"] = {
 						["combobar"] = {
 							["height"] = 3,
@@ -666,14 +674,6 @@ ElvDB = {
 						["aurabar"] = {
 							["enable"] = false,
 						},
-					},
-					["pet"] = {
-						["height"] = 26,
-						["power"] = {
-							["enable"] = false,
-						},
-						["colorOverride"] = "FORCE_ON",
-						["width"] = 200,
 					},
 					["targettarget"] = {
 						["debuffs"] = {
@@ -767,13 +767,13 @@ ElvDB = {
 						},
 						["colorOverride"] = "FORCE_ON",
 						["growthDirection"] = "RIGHT_UP",
-						["verticalSpacing"] = 1,
 						["health"] = {
 							["text_format"] = "[healthcolor]",
 						},
 						["name"] = {
 							["text_format"] = "[name:veryshort]",
 						},
+						["verticalSpacing"] = 1,
 						["height"] = 38,
 						["buffs"] = {
 							["sizeOverride"] = 22,
@@ -850,8 +850,8 @@ ElvDB = {
 					["RightChatDataPanel"] = {
 						["middle"] = "Durability",
 					},
-					["TopMiniPanel"] = "Dugi",
 					["BottomMiniPanel"] = "ElvUI Config",
+					["TopMiniPanel"] = "Dugi",
 					["BottomLeftMiniPanel"] = "Time",
 					["DP_1"] = {
 						["right"] = "Combat/Arena Time",
@@ -873,8 +873,8 @@ ElvDB = {
 			},
 			["actionbar"] = {
 				["bar3"] = {
-					["backdrop"] = true,
 					["showGrid"] = false,
+					["backdrop"] = true,
 					["buttons"] = 12,
 					["buttonspacing"] = 1,
 					["buttonsPerRow"] = 12,
@@ -888,24 +888,24 @@ ElvDB = {
 				},
 				["bar2"] = {
 					["enabled"] = true,
-					["visibility"] = "[vehicleui] hide; [overridebar] hide; [petbattle] hide;  show",
 					["buttonspacing"] = 1,
 					["showGrid"] = false,
+					["visibility"] = "[vehicleui] hide; [overridebar] hide; [petbattle] hide;  show",
 					["backdropSpacing"] = 1,
 					["backdrop"] = true,
 				},
 				["bar1"] = {
+					["showGrid"] = false,
+					["buttonspacing"] = 1,
+					["backdropSpacing"] = 1,
+					["backdrop"] = true,
 					["paging"] = {
 						["ROGUE"] = "[form:0] 1; [form:1] 7; [form:2] 7;",
 					},
-					["buttonspacing"] = 1,
-					["showGrid"] = false,
-					["backdropSpacing"] = 1,
-					["backdrop"] = true,
 				},
 				["bar5"] = {
-					["buttonsize"] = 36,
 					["showGrid"] = false,
+					["buttonsize"] = 36,
 					["buttons"] = 12,
 					["buttonspacing"] = 1,
 					["backdrop"] = true,
@@ -1024,21 +1024,21 @@ ElvDB = {
 			["databars"] = {
 				["artifact"] = {
 					["textFormat"] = "CURMAX",
+					["width"] = 395,
 					["hideInVehicle"] = true,
 					["orientation"] = "HORIZONTAL",
-					["height"] = 20,
 					["hideInCombat"] = true,
 					["textSize"] = 15,
-					["width"] = 395,
+					["height"] = 20,
 				},
 				["reputation"] = {
 					["textFormat"] = "CURPERC",
-					["hideInVehicle"] = true,
 					["enable"] = true,
-					["orientation"] = "HORIZONTAL",
-					["hideInCombat"] = true,
-					["height"] = 20,
 					["width"] = 395,
+					["hideInVehicle"] = true,
+					["height"] = 20,
+					["hideInCombat"] = true,
+					["orientation"] = "HORIZONTAL",
 				},
 				["experience"] = {
 					["enable"] = false,
@@ -1082,29 +1082,38 @@ ElvDB = {
 						},
 					},
 				},
-				["threat"] = {
-					["enable"] = false,
-				},
 				["Armory"] = {
+					["Inspect"] = {
+						["Enchant"] = {
+							["Font"] = "Friz Quadrata TT",
+						},
+						["Backdrop"] = {
+							["SelectedBG"] = "Alliance-bliz",
+						},
+						["Level"] = {
+							["Font"] = "Friz Quadrata TT",
+							["ShowUpgradeLevel"] = true,
+						},
+					},
 					["Character"] = {
 						["Durability"] = {
 							["Display"] = "DamagedOnly",
 							["Font"] = "Gotham-Narrow",
 							["FontSize"] = 10,
 						},
-						["Gem"] = {
-							["SocketSize"] = 12,
-						},
-						["Level"] = {
-							["Font"] = "Gotham-Narrow",
-							["FontSize"] = 11,
-						},
 						["Backdrop"] = {
 							["SelectedBG"] = "Alliance-text",
+						},
+						["Gem"] = {
+							["SocketSize"] = 12,
 						},
 						["Enchant"] = {
 							["FontSize"] = 10,
 							["Font"] = "Gotham-Narrow",
+						},
+						["Level"] = {
+							["Font"] = "Gotham-Narrow",
+							["FontSize"] = 11,
 						},
 					},
 				},
@@ -1114,25 +1123,12 @@ ElvDB = {
 						["width"] = 390,
 					},
 				},
-				["minimap"] = {
-					["instance"] = {
-						["enable"] = true,
-						["font"] = "Roboto-BoldCondensed",
+				["chat"] = {
+					["guildmaster"] = true,
+					["tab"] = {
+						["style"] = "ARROWDOWN",
 					},
-					["mapicons"] = {
-						["skinmail"] = true,
-						["skindungeon"] = true,
-					},
-					["enable"] = true,
-				},
-				["raidmarkers"] = {
-					["enable"] = false,
-				},
-				["orderhall"] = {
-					["autoOrder"] = {
-						["enable"] = true,
-						["autoEquip"] = true,
-					},
+					["dpsSpam"] = true,
 				},
 				["loot"] = {
 					["enable"] = true,
@@ -1140,59 +1136,138 @@ ElvDB = {
 						["autogreed"] = true,
 					},
 				},
+				["threat"] = {
+					["enable"] = false,
+				},
+				["minimap"] = {
+					["instance"] = {
+						["enable"] = true,
+						["font"] = "Roboto-BoldCondensed",
+					},
+					["mapicons"] = {
+						["skindungeon"] = true,
+						["skinmail"] = true,
+					},
+					["enable"] = true,
+				},
 				["garrison"] = {
 					["autoWar"] = true,
 					["autoOrder"] = true,
 					["autoShip"] = true,
 				},
-				["nameplates"] = {
-					["targetcount"] = true,
+				["orderhall"] = {
+					["autoOrder"] = {
+						["enable"] = true,
+						["autoEquip"] = true,
+					},
 				},
 				["datatexts"] = {
 					["chathandle"] = false,
 				},
+				["bags"] = {
+					["artifactPower"] = {
+						["fonts"] = {
+							["font"] = "Friz Quadrata TT",
+						},
+						["color"] = {
+							["r"] = 0,
+							["g"] = 1,
+							["b"] = 1,
+						},
+						["enable"] = true,
+					},
+				},
+				["nameplates"] = {
+					["targetcount"] = true,
+				},
+				["raidmarkers"] = {
+					["enable"] = false,
+				},
 				["raidmanager"] = {
 					["roles"] = true,
-				},
-				["chat"] = {
-					["guildmaster"] = true,
-					["dpsSpam"] = true,
 				},
 			},
 			["bags"] = {
 				["countFontSize"] = 11,
-				["countFont"] = "Friz Quadrata TT",
 				["itemLevelFont"] = "Friz Quadrata TT",
 				["itemLevelThreshold"] = 805,
 				["ignoreItems"] = "",
 				["itemLevelFontSize"] = 11,
-				["itemLevelFontOutline"] = "OUTLINE",
 				["junkIcon"] = true,
+				["countFont"] = "Friz Quadrata TT",
 				["countFontOutline"] = "OUTLINE",
 				["bankWidth"] = 400,
+				["itemLevelFontOutline"] = "OUTLINE",
 				["bagWidth"] = 400,
 			},
 			["hideTutorial"] = true,
 			["chat"] = {
-				["panelWidth"] = 400,
-				["fontSize"] = 11,
 				["tabFontOutline"] = "OUTLINE",
 				["keywordSound"] = "Whisper Alert",
-				["timeStampFormat"] = "%H:%M ",
-				["keywords"] = "%MYNAME%,Dan,weakaura,weakauras",
-				["tabFontSize"] = 11,
 				["tabFont"] = "Friz Quadrata TT",
 				["editboxhistory"] = 20,
-				["font"] = "Friz Quadrata TT",
-				["throttleInterval"] = 10,
 				["fontOutline"] = "OUTLINE",
+				["throttleInterval"] = 10,
+				["font"] = "Friz Quadrata TT",
+				["tapFontSize"] = 11,
+				["panelWidth"] = 400,
+				["fontSize"] = 11,
+				["tabFontSize"] = 11,
 				["editBoxPosition"] = "ABOVE_CHAT",
 				["panelWidthRight"] = 400,
-				["tapFontSize"] = 11,
 				["panelBackdrop"] = "HIDEBOTH",
+				["timeStampFormat"] = "%H:%M ",
+				["keywords"] = "%MYNAME%,Dan,weakaura,weakauras",
 			},
 			["layoutSet"] = "dpsMelee",
 			["bagSortIgnoreItemsReset"] = true,
+			["general"] = {
+				["totems"] = {
+					["enable"] = false,
+				},
+				["fontSize"] = 11,
+				["interruptAnnounce"] = "SAY",
+				["autoAcceptInvite"] = true,
+				["autoRepair"] = "PLAYER",
+				["minimap"] = {
+					["icons"] = {
+						["mail"] = {
+							["position"] = "RIGHT",
+						},
+						["classHall"] = {
+							["xOffset"] = -3,
+							["yOffset"] = -45,
+						},
+						["vehicleLeave"] = {
+							["yOffset"] = 20,
+						},
+					},
+				},
+				["health_backdrop"] = {
+				},
+				["bottomPanel"] = false,
+				["numberPrefixStyle"] = "ENGLISH",
+				["loginmessage"] = false,
+				["threat"] = {
+					["position"] = "LEFTCHAT",
+				},
+				["vendorGrays"] = true,
+				["bordercolor"] = {
+					["b"] = 0.31,
+					["g"] = 0.31,
+					["r"] = 0.31,
+				},
+				["font"] = "Friz Quadrata TT",
+				["topPanel"] = false,
+				["valuecolor"] = {
+					["b"] = 0.41,
+					["g"] = 0.96,
+					["r"] = 1,
+				},
+				["talkingHeadFrameScale"] = 0.5,
+				["RAGE"] = {
+				},
+			},
 			["movers"] = {
 				["DP_6_Mover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,313,516",
 				["ElvUF_FocusCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,309,157",
@@ -1242,68 +1317,36 @@ ElvDB = {
 			},
 			["gridSize"] = 4,
 			["tooltip"] = {
-				["itemCount"] = "BOTH",
+				["headerFontSize"] = 11,
+				["fontOutline"] = "OUTLINE",
 				["healthBar"] = {
-					["height"] = 10,
 					["font"] = "Friz Quadrata TT",
+					["height"] = 10,
 					["fontSize"] = 12,
 				},
-				["headerFontSize"] = 11,
 				["textFontSize"] = 11,
 				["font"] = "Friz Quadrata TT",
-				["cursorAnchor"] = true,
-				["fontOutline"] = "OUTLINE",
+				["itemCount"] = "BOTH",
 				["fontSize"] = 11,
 				["smallTextFontSize"] = 11,
 			},
-			["general"] = {
-				["totems"] = {
-					["enable"] = false,
-				},
-				["fontSize"] = 11,
-				["interruptAnnounce"] = "SAY",
-				["autoAcceptInvite"] = true,
-				["autoRepair"] = "PLAYER",
-				["minimap"] = {
-					["icons"] = {
-						["mail"] = {
-							["position"] = "RIGHT",
-						},
-						["classHall"] = {
-							["xOffset"] = -3,
-							["yOffset"] = -45,
-						},
-						["vehicleLeave"] = {
-							["yOffset"] = 20,
-						},
-					},
-				},
-				["health_backdrop"] = {
-				},
-				["bottomPanel"] = false,
-				["numberPrefixStyle"] = "ENGLISH",
-				["loginmessage"] = false,
-				["threat"] = {
-					["position"] = "LEFTCHAT",
-				},
-				["vendorGrays"] = true,
-				["bordercolor"] = {
-					["b"] = 0.31,
-					["g"] = 0.31,
-					["r"] = 0.31,
-				},
-				["font"] = "Friz Quadrata TT",
-				["topPanel"] = false,
-				["valuecolor"] = {
-					["b"] = 0.41,
-					["g"] = 0.96,
-					["r"] = 1,
-				},
-				["talkingHeadFrameScale"] = 0.5,
-				["RAGE"] = {
-				},
-			},
 			["bossAuraFiltersConverted"] = true,
+			["auras"] = {
+				["fontSize"] = 11,
+				["font"] = "Friz Quadrata TT",
+				["fontOutline"] = "OUTLINE",
+				["consolidatedBuffs"] = {
+					["fontOutline"] = "OUTLINE",
+					["font"] = "Expressway",
+				},
+				["buffs"] = {
+					["horizontalSpacing"] = 1,
+				},
+				["debuffs"] = {
+					["horizontalSpacing"] = 1,
+				},
+				["wrapAfter"] = 10,
+			},
 			["CustomTweaks"] = {
 				["PowerBarTexture"] = {
 					["powerstatusbar"] = "ElvUI Blank",
@@ -1410,92 +1453,92 @@ ElvDB = {
 			["datatexts"] = {
 				["minimapPanels"] = false,
 				["fontSize"] = 11,
-				["minimapBottom"] = true,
 				["goldFormat"] = "SMART",
 				["panelTransparency"] = true,
 				["time24"] = true,
 				["panels"] = {
 					["LeftMiniPanel"] = "",
-					["RightMiniPanel"] = "",
 					["RightChatDataPanel"] = {
 						["middle"] = "Durability",
 					},
-					["BottomMiniPanel"] = "ElvUI Config",
-					["DP_1"] = {
-						["right"] = "Combat/Arena Time",
-						["left"] = "System",
-						["middle"] = "Time",
-					},
-					["TopMiniPanel"] = "Dugi",
-					["BottomLeftMiniPanel"] = "Time",
 					["LeftChatDataPanel"] = {
 						["right"] = "Guild",
 						["left"] = "Bags",
 						["middle"] = "Call to Arms",
 					},
+					["RightMiniPanel"] = "",
+					["BottomLeftMiniPanel"] = "Time",
+					["DP_1"] = {
+						["right"] = "Combat/Arena Time",
+						["left"] = "System",
+						["middle"] = "Time",
+					},
+					["BottomMiniPanel"] = "ElvUI Config",
+					["TopMiniPanel"] = "Dugi",
 				},
-				["font"] = "Friz Quadrata TT",
 				["fontOutline"] = "OUTLINE",
 				["noCombatClick"] = true,
+				["minimapBottom"] = true,
 				["minimapBottomRight"] = true,
 				["minimapBottomLeft"] = true,
+				["font"] = "Friz Quadrata TT",
 				["noCombatHover"] = true,
 			},
 			["actionbar"] = {
 				["bar3"] = {
-					["mouseover"] = true,
+					["buttonspacing"] = 1,
 					["backdropSpacing"] = 1,
 					["buttons"] = 12,
+					["mouseover"] = true,
+					["backdrop"] = true,
 					["showGrid"] = false,
 					["buttonsPerRow"] = 12,
-					["backdrop"] = true,
+				},
+				["fontOutline"] = "OUTLINE",
+				["bar4"] = {
 					["buttonspacing"] = 1,
+					["backdropSpacing"] = 1,
+					["mouseover"] = true,
+					["showGrid"] = false,
+					["buttonsPerRow"] = 6,
+				},
+				["keyDown"] = false,
+				["bar2"] = {
+					["buttonspacing"] = 1,
+					["backdropSpacing"] = 1,
+					["enabled"] = true,
+					["backdrop"] = true,
+					["showGrid"] = false,
+					["visibility"] = "[vehicleui] hide; [overridebar] hide; [petbattle] hide;  show",
+				},
+				["bar1"] = {
+					["buttonspacing"] = 1,
+					["backdropSpacing"] = 1,
+					["backdrop"] = true,
+					["showGrid"] = false,
+					["paging"] = {
+						["ROGUE"] = "[form:0] 1; [form:1] 7; [form:2] 7;",
+					},
+				},
+				["bar5"] = {
+					["buttonspacing"] = 1,
+					["backdropSpacing"] = 1,
+					["buttons"] = 12,
+					["mouseover"] = true,
+					["backdrop"] = true,
+					["showGrid"] = false,
+					["buttonsize"] = 36,
 				},
 				["bar6"] = {
 					["buttonspacing"] = 1,
 					["backdropSpacing"] = 1,
 					["showGrid"] = false,
 				},
-				["bar2"] = {
-					["enabled"] = true,
-					["backdrop"] = true,
-					["buttonspacing"] = 1,
-					["backdropSpacing"] = 1,
-					["visibility"] = "[vehicleui] hide; [overridebar] hide; [petbattle] hide;  show",
-					["showGrid"] = false,
-				},
-				["bar1"] = {
-					["backdrop"] = true,
-					["paging"] = {
-						["ROGUE"] = "[form:0] 1; [form:1] 7; [form:2] 7;",
-					},
-					["showGrid"] = false,
-					["backdropSpacing"] = 1,
-					["buttonspacing"] = 1,
-				},
-				["bar5"] = {
-					["mouseover"] = true,
-					["backdropSpacing"] = 1,
-					["buttons"] = 12,
-					["showGrid"] = false,
-					["backdrop"] = true,
-					["buttonsize"] = 36,
-					["buttonspacing"] = 1,
-				},
 				["font"] = "Friz Quadrata TT",
-				["bar4"] = {
-					["mouseover"] = true,
-					["showGrid"] = false,
-					["buttonsPerRow"] = 6,
-					["backdropSpacing"] = 1,
-					["buttonspacing"] = 1,
-				},
-				["fontOutline"] = "OUTLINE",
-				["keyDown"] = false,
 				["stanceBar"] = {
 					["enabled"] = false,
-					["backdropSpacing"] = 1,
 					["buttonspacing"] = 1,
+					["backdropSpacing"] = 1,
 				},
 				["barPet"] = {
 					["buttonspacing"] = 1,
@@ -1507,14 +1550,24 @@ ElvDB = {
 			},
 			["nameplates"] = {
 				["fontSize"] = 11,
-				["fontOutline"] = "OUTLINE",
-				["clampToScreen"] = true,
 				["statusbar"] = "Melli",
-				["font"] = "Friz Quadrata TT",
+				["fontOutline"] = "OUTLINE",
+				["castNoInterruptColor"] = {
+					["r"] = 1,
+					["g"] = 0.0392156862745098,
+					["b"] = 0,
+				},
+				["castColor"] = {
+					["r"] = 0.0117647058823529,
+					["g"] = 1,
+				},
 				["units"] = {
 					["ENEMY_NPC"] = {
 						["healthbar"] = {
 							["height"] = 15,
+						},
+						["eliteIcon"] = {
+							["enable"] = true,
 						},
 					},
 					["HEALER"] = {
@@ -1533,37 +1586,309 @@ ElvDB = {
 						},
 					},
 				},
-			},
-			["auras"] = {
-				["fontSize"] = 11,
 				["font"] = "Friz Quadrata TT",
-				["fontOutline"] = "OUTLINE",
-				["consolidatedBuffs"] = {
-					["fontOutline"] = "OUTLINE",
-					["font"] = "Expressway",
+				["classbar"] = {
+					["enable"] = false,
 				},
-				["buffs"] = {
-					["horizontalSpacing"] = 1,
-				},
-				["debuffs"] = {
-					["horizontalSpacing"] = 1,
-				},
-				["wrapAfter"] = 10,
+				["clampToScreen"] = true,
 			},
 			["unitframe"] = {
 				["targetOnMouseDown"] = true,
 				["fontSize"] = 11,
-				["colors"] = {
-					["healthclass"] = true,
-					["health_backdrop"] = {
-						["b"] = 0,
-						["g"] = 0,
-						["r"] = 0,
+				["smoothbars"] = true,
+				["font"] = "Friz Quadrata TT",
+				["units"] = {
+					["tank"] = {
+						["targetsGroup"] = {
+							["enable"] = false,
+						},
+						["enable"] = false,
+						["verticalSpacing"] = 20,
 					},
+					["bodyguard"] = {
+						["enable"] = false,
+					},
+					["boss"] = {
+						["debuffs"] = {
+							["yOffset"] = -12,
+							["anchorPoint"] = "RIGHT",
+							["numrows"] = 1,
+							["perrow"] = 4,
+							["xOffset"] = 2,
+						},
+						["spacing"] = 33,
+						["castbar"] = {
+							["width"] = 150,
+							["height"] = 15,
+						},
+						["name"] = {
+							["position"] = "TOPLEFT",
+							["text_format"] = "[name:medium]",
+							["yOffset"] = 16,
+						},
+						["width"] = 150,
+						["health"] = {
+							["text_format"] = "[health:current-percent]",
+						},
+						["power"] = {
+							["text_format"] = "[power:current]",
+							["height"] = 5,
+						},
+						["height"] = 35,
+						["buffs"] = {
+							["xOffset"] = 2,
+							["yOffset"] = 12,
+							["anchorPoint"] = "RIGHT",
+							["perrow"] = 4,
+						},
+					},
+					["raid40"] = {
+						["horizontalSpacing"] = 1,
+						["roleIcon"] = {
+							["enable"] = true,
+							["damager"] = false,
+						},
+						["rdebuffs"] = {
+							["font"] = "Friz Quadrata TT",
+						},
+						["verticalSpacing"] = 1,
+					},
+					["focus"] = {
+						["colorOverride"] = "FORCE_ON",
+						["power"] = {
+							["height"] = 5,
+						},
+						["castbar"] = {
+							["enable"] = false,
+						},
+						["width"] = 200,
+						["name"] = {
+							["text_format"] = "[name]",
+						},
+						["height"] = 26,
+					},
+					["target"] = {
+						["combobar"] = {
+							["enable"] = false,
+							["height"] = 3,
+							["detachFromFrame"] = true,
+						},
+						["debuffs"] = {
+							["useWhitelist"] = {
+								["friendly"] = true,
+							},
+							["yOffset"] = 42,
+							["noDuration"] = {
+								["friendly"] = true,
+							},
+							["playerOnly"] = {
+								["enemy"] = false,
+							},
+							["attachTo"] = "FRAME",
+							["onlyDispellable"] = {
+								["friendly"] = true,
+							},
+						},
+						["colorOverride"] = "FORCE_ON",
+						["health"] = {
+							["position"] = "LEFT",
+							["xOffset"] = 0,
+							["text_format"] = "[health:current-percent]",
+						},
+						["aurabar"] = {
+							["enable"] = false,
+						},
+						["GPSArrow"] = {
+							["enable"] = true,
+							["onMouseOver"] = false,
+						},
+						["width"] = 200,
+						["infoPanel"] = {
+							["transparent"] = true,
+						},
+						["name"] = {
+							["position"] = "LEFT",
+							["text_format"] = "[name]",
+							["yOffset"] = 29,
+						},
+						["castbar"] = {
+							["width"] = 200,
+							["iconXOffset"] = -11,
+							["height"] = 34,
+							["format"] = "CURRENTMAX",
+							["latency"] = true,
+						},
+						["height"] = 46,
+						["buffs"] = {
+							["noConsolidated"] = {
+								["friendly"] = true,
+							},
+							["yOffset"] = 15,
+							["useFilter"] = "TurtleBuffs",
+						},
+						["power"] = {
+							["xOffset"] = 0,
+							["text_format"] = "",
+							["width"] = "inset",
+							["position"] = "RIGHT",
+							["height"] = 7,
+							["hideonnpc"] = false,
+						},
+					},
+					["raid"] = {
+						["horizontalSpacing"] = 1,
+						["debuffs"] = {
+							["perrow"] = 1,
+							["sizeOverride"] = 16,
+						},
+						["rdebuffs"] = {
+							["fontSize"] = 12,
+							["xOffset"] = 29,
+							["yOffset"] = 6,
+							["font"] = "Friz Quadrata TT",
+							["fontOutline"] = "OUTLINE",
+							["size"] = 20,
+						},
+						["colorOverride"] = "FORCE_ON",
+						["growthDirection"] = "RIGHT_UP",
+						["health"] = {
+							["text_format"] = "[healthcolor]",
+						},
+						["buffs"] = {
+							["sizeOverride"] = 22,
+						},
+						["roleIcon"] = {
+							["xOffset"] = 0,
+							["damager"] = false,
+							["yOffset"] = 0,
+							["size"] = 16,
+						},
+						["power"] = {
+							["height"] = 5,
+						},
+						["healPrediction"] = true,
+						["width"] = 82,
+						["name"] = {
+							["position"] = "BOTTOMLEFT",
+							["text_format"] = "[name:veryshort]",
+						},
+						["height"] = 40,
+						["verticalSpacing"] = 1,
+					},
+					["pet"] = {
+						["colorOverride"] = "FORCE_ON",
+						["width"] = 200,
+						["power"] = {
+							["enable"] = false,
+						},
+						["height"] = 26,
+					},
+					["player"] = {
+						["debuffs"] = {
+							["fontSize"] = 14,
+							["enable"] = false,
+							["anchorPoint"] = "TOPRIGHT",
+							["perrow"] = 5,
+							["sizeOverride"] = 0,
+						},
+						["colorOverride"] = "FORCE_ON",
+						["castbar"] = {
+							["spark"] = false,
+							["insideInfoPanel"] = false,
+							["width"] = 200,
+							["height"] = 20,
+							["format"] = "CURRENTMAX",
+							["latency"] = false,
+						},
+						["classbar"] = {
+							["enable"] = false,
+						},
+						["aurabar"] = {
+							["enable"] = false,
+						},
+						["power"] = {
+							["text_format"] = "",
+							["enable"] = false,
+						},
+						["width"] = 200,
+						["health"] = {
+							["position"] = "RIGHT",
+							["xOffset"] = 0,
+							["text_format"] = "[health:current-percent]",
+						},
+						["height"] = 46,
+					},
+					["party"] = {
+						["debuffs"] = {
+							["sizeOverride"] = 30,
+							["xOffset"] = 1,
+							["perrow"] = 5,
+						},
+						["healPrediction"] = true,
+						["name"] = {
+							["text_format"] = "[name:medium] [difficultycolor][smartlevel]",
+						},
+						["height"] = 40,
+						["buffs"] = {
+							["sizeOverride"] = 22,
+						},
+						["rdebuffs"] = {
+							["font"] = "Friz Quadrata TT",
+						},
+						["roleIcon"] = {
+							["xOffset"] = 1,
+							["damager"] = false,
+							["position"] = "RIGHT",
+							["yOffset"] = 8,
+							["size"] = 20,
+						},
+						["power"] = {
+							["text_format"] = "",
+						},
+						["width"] = 150,
+						["colorOverride"] = "FORCE_ON",
+					},
+					["arena"] = {
+						["castbar"] = {
+							["width"] = 200,
+						},
+						["width"] = 200,
+					},
+					["assist"] = {
+						["targetsGroup"] = {
+							["enable"] = false,
+						},
+						["enable"] = false,
+					},
+					["targettarget"] = {
+						["debuffs"] = {
+							["enable"] = false,
+						},
+						["power"] = {
+							["height"] = 5,
+						},
+						["colorOverride"] = "FORCE_ON",
+						["width"] = 200,
+						["name"] = {
+							["text_format"] = "[name:medium]",
+						},
+						["height"] = 26,
+					},
+				},
+				["statusbar"] = "Melli",
+				["colors"] = {
 					["auraBarBuff"] = {
 						["b"] = 0.45,
 						["g"] = 0.83,
 						["r"] = 0.67,
+					},
+					["colorhealthbyvalue"] = false,
+					["healthclass"] = true,
+					["useDeadBackdrop"] = true,
+					["health_backdrop_dead"] = {
+						["b"] = 0,
+						["g"] = 0,
+						["r"] = 0,
 					},
 					["power"] = {
 						["RAGE"] = {
@@ -1577,296 +1902,13 @@ ElvDB = {
 						["g"] = 1,
 						["r"] = 1,
 					},
-					["useDeadBackdrop"] = true,
-					["colorhealthbyvalue"] = false,
-					["health_backdrop_dead"] = {
+					["health_backdrop"] = {
 						["b"] = 0,
 						["g"] = 0,
 						["r"] = 0,
 					},
 				},
 				["fontOutline"] = "OUTLINE",
-				["statusbar"] = "Melli",
-				["font"] = "Friz Quadrata TT",
-				["smoothbars"] = true,
-				["units"] = {
-					["tank"] = {
-						["enable"] = false,
-						["targetsGroup"] = {
-							["enable"] = false,
-						},
-						["verticalSpacing"] = 20,
-					},
-					["player"] = {
-						["debuffs"] = {
-							["anchorPoint"] = "TOPRIGHT",
-							["fontSize"] = 14,
-							["enable"] = false,
-							["sizeOverride"] = 0,
-							["perrow"] = 5,
-						},
-						["castbar"] = {
-							["spark"] = false,
-							["insideInfoPanel"] = false,
-							["height"] = 20,
-							["format"] = "CURRENTMAX",
-							["width"] = 200,
-							["latency"] = false,
-						},
-						["colorOverride"] = "FORCE_ON",
-						["width"] = 200,
-						["health"] = {
-							["xOffset"] = 0,
-							["text_format"] = "[health:current-percent]",
-							["position"] = "RIGHT",
-						},
-						["height"] = 46,
-						["power"] = {
-							["text_format"] = "",
-							["enable"] = false,
-						},
-						["classbar"] = {
-							["enable"] = false,
-						},
-						["aurabar"] = {
-							["enable"] = false,
-						},
-					},
-					["party"] = {
-						["roleIcon"] = {
-							["position"] = "RIGHT",
-							["xOffset"] = 1,
-							["damager"] = false,
-							["yOffset"] = 8,
-							["size"] = 20,
-						},
-						["debuffs"] = {
-							["xOffset"] = 1,
-							["sizeOverride"] = 30,
-							["perrow"] = 5,
-						},
-						["power"] = {
-							["text_format"] = "",
-						},
-						["healPrediction"] = true,
-						["colorOverride"] = "FORCE_ON",
-						["width"] = 150,
-						["name"] = {
-							["text_format"] = "[name:medium] [difficultycolor][smartlevel]",
-						},
-						["height"] = 40,
-						["buffs"] = {
-							["sizeOverride"] = 22,
-						},
-						["rdebuffs"] = {
-							["font"] = "Friz Quadrata TT",
-						},
-					},
-					["targettarget"] = {
-						["debuffs"] = {
-							["enable"] = false,
-						},
-						["name"] = {
-							["text_format"] = "[name:medium]",
-						},
-						["power"] = {
-							["height"] = 5,
-						},
-						["height"] = 26,
-						["colorOverride"] = "FORCE_ON",
-						["width"] = 200,
-					},
-					["raid"] = {
-						["horizontalSpacing"] = 1,
-						["debuffs"] = {
-							["perrow"] = 1,
-							["sizeOverride"] = 16,
-						},
-						["power"] = {
-							["height"] = 5,
-						},
-						["rdebuffs"] = {
-							["fontSize"] = 12,
-							["fontOutline"] = "OUTLINE",
-							["xOffset"] = 29,
-							["yOffset"] = 6,
-							["font"] = "Friz Quadrata TT",
-							["size"] = 20,
-						},
-						["colorOverride"] = "FORCE_ON",
-						["growthDirection"] = "RIGHT_UP",
-						["roleIcon"] = {
-							["xOffset"] = 0,
-							["damager"] = false,
-							["yOffset"] = 0,
-							["size"] = 16,
-						},
-						["healPrediction"] = true,
-						["health"] = {
-							["text_format"] = "[healthcolor]",
-						},
-						["buffs"] = {
-							["sizeOverride"] = 22,
-						},
-						["height"] = 40,
-						["verticalSpacing"] = 1,
-						["name"] = {
-							["text_format"] = "[name:veryshort]",
-							["position"] = "BOTTOMLEFT",
-						},
-						["width"] = 82,
-					},
-					["bodyguard"] = {
-						["enable"] = false,
-					},
-					["boss"] = {
-						["debuffs"] = {
-							["anchorPoint"] = "RIGHT",
-							["xOffset"] = 2,
-							["yOffset"] = -12,
-							["numrows"] = 1,
-							["perrow"] = 4,
-						},
-						["castbar"] = {
-							["height"] = 15,
-							["width"] = 150,
-						},
-						["width"] = 150,
-						["name"] = {
-							["position"] = "TOPLEFT",
-							["text_format"] = "[name:medium]",
-							["yOffset"] = 16,
-						},
-						["spacing"] = 33,
-						["height"] = 35,
-						["buffs"] = {
-							["xOffset"] = 2,
-							["yOffset"] = 12,
-							["anchorPoint"] = "RIGHT",
-							["perrow"] = 4,
-						},
-						["health"] = {
-							["text_format"] = "[health:current-percent]",
-						},
-						["power"] = {
-							["text_format"] = "[power:current]",
-							["height"] = 5,
-						},
-					},
-					["raid40"] = {
-						["horizontalSpacing"] = 1,
-						["rdebuffs"] = {
-							["font"] = "Friz Quadrata TT",
-						},
-						["roleIcon"] = {
-							["enable"] = true,
-							["damager"] = false,
-						},
-						["verticalSpacing"] = 1,
-					},
-					["focus"] = {
-						["name"] = {
-							["text_format"] = "[name]",
-						},
-						["power"] = {
-							["height"] = 5,
-						},
-						["height"] = 26,
-						["castbar"] = {
-							["enable"] = false,
-						},
-						["colorOverride"] = "FORCE_ON",
-						["width"] = 200,
-					},
-					["assist"] = {
-						["enable"] = false,
-						["targetsGroup"] = {
-							["enable"] = false,
-						},
-					},
-					["arena"] = {
-						["castbar"] = {
-							["width"] = 200,
-						},
-						["width"] = 200,
-					},
-					["target"] = {
-						["combobar"] = {
-							["enable"] = false,
-							["height"] = 3,
-							["detachFromFrame"] = true,
-						},
-						["debuffs"] = {
-							["attachTo"] = "FRAME",
-							["onlyDispellable"] = {
-								["friendly"] = true,
-							},
-							["useWhitelist"] = {
-								["friendly"] = true,
-							},
-							["noDuration"] = {
-								["friendly"] = true,
-							},
-							["playerOnly"] = {
-								["enemy"] = false,
-							},
-							["yOffset"] = 42,
-						},
-						["GPSArrow"] = {
-							["enable"] = true,
-							["onMouseOver"] = false,
-						},
-						["colorOverride"] = "FORCE_ON",
-						["width"] = 200,
-						["infoPanel"] = {
-							["transparent"] = true,
-						},
-						["power"] = {
-							["xOffset"] = 0,
-							["position"] = "RIGHT",
-							["height"] = 7,
-							["hideonnpc"] = false,
-							["text_format"] = "",
-							["width"] = "inset",
-						},
-						["health"] = {
-							["xOffset"] = 0,
-							["text_format"] = "[health:current-percent]",
-							["position"] = "LEFT",
-						},
-						["name"] = {
-							["position"] = "LEFT",
-							["text_format"] = "[name]",
-							["yOffset"] = 29,
-						},
-						["height"] = 46,
-						["buffs"] = {
-							["noConsolidated"] = {
-								["friendly"] = true,
-							},
-							["yOffset"] = 15,
-							["useFilter"] = "TurtleBuffs",
-						},
-						["castbar"] = {
-							["iconXOffset"] = -11,
-							["height"] = 34,
-							["format"] = "CURRENTMAX",
-							["width"] = 200,
-							["latency"] = true,
-						},
-						["aurabar"] = {
-							["enable"] = false,
-						},
-					},
-					["pet"] = {
-						["height"] = 26,
-						["width"] = 200,
-						["colorOverride"] = "FORCE_ON",
-						["power"] = {
-							["enable"] = false,
-						},
-					},
-				},
 			},
 			["lowresolutionset"] = true,
 		},
@@ -5237,21 +5279,21 @@ ElvDB = {
 			["databars"] = {
 				["artifact"] = {
 					["textFormat"] = "CURMAX",
-					["width"] = 395,
 					["hideInVehicle"] = true,
+					["orientation"] = "HORIZONTAL",
 					["height"] = 20,
 					["hideInCombat"] = true,
 					["textSize"] = 15,
-					["orientation"] = "HORIZONTAL",
+					["width"] = 395,
 				},
 				["reputation"] = {
 					["textFormat"] = "CURPERC",
-					["enable"] = true,
-					["width"] = 395,
 					["hideInVehicle"] = true,
-					["height"] = 20,
-					["hideInCombat"] = true,
+					["enable"] = true,
 					["orientation"] = "HORIZONTAL",
+					["hideInCombat"] = true,
+					["height"] = 20,
+					["width"] = 395,
 				},
 				["experience"] = {
 					["enable"] = false,
@@ -5262,10 +5304,8 @@ ElvDB = {
 			},
 			["currentTutorial"] = 1,
 			["sle"] = {
-				["misc"] = {
-					["threat"] = {
-						["enable"] = true,
-					},
+				["raidmarkers"] = {
+					["enable"] = false,
 				},
 				["media"] = {
 					["fonts"] = {
@@ -5295,26 +5335,29 @@ ElvDB = {
 						},
 					},
 				},
+				["threat"] = {
+					["enable"] = false,
+				},
 				["Armory"] = {
 					["Character"] = {
-						["Durability"] = {
-							["Display"] = "DamagedOnly",
-							["Font"] = "Gotham-Narrow",
-							["FontSize"] = 10,
-						},
-						["Backdrop"] = {
-							["SelectedBG"] = "Alliance-text",
-						},
-						["Gem"] = {
-							["SocketSize"] = 12,
-						},
 						["Enchant"] = {
 							["Font"] = "Gotham-Narrow",
 							["FontSize"] = 10,
 						},
+						["Gem"] = {
+							["SocketSize"] = 12,
+						},
 						["Level"] = {
 							["FontSize"] = 11,
 							["Font"] = "Gotham-Narrow",
+						},
+						["Backdrop"] = {
+							["SelectedBG"] = "Alliance-text",
+						},
+						["Durability"] = {
+							["Display"] = "DamagedOnly",
+							["Font"] = "Gotham-Narrow",
+							["FontSize"] = 10,
 						},
 					},
 				},
@@ -5328,30 +5371,10 @@ ElvDB = {
 					["guildmaster"] = true,
 					["dpsSpam"] = true,
 				},
-				["loot"] = {
-					["enable"] = true,
-					["autoroll"] = {
-						["autogreed"] = true,
-					},
-				},
-				["threat"] = {
-					["enable"] = false,
-				},
-				["minimap"] = {
-					["instance"] = {
+				["misc"] = {
+					["threat"] = {
 						["enable"] = true,
-						["font"] = "Roboto-BoldCondensed",
 					},
-					["mapicons"] = {
-						["skindungeon"] = true,
-						["skinmail"] = true,
-					},
-					["enable"] = true,
-				},
-				["garrison"] = {
-					["autoWar"] = true,
-					["autoOrder"] = true,
-					["autoShip"] = true,
 				},
 				["orderhall"] = {
 					["autoOrder"] = {
@@ -5359,53 +5382,151 @@ ElvDB = {
 						["autoEquip"] = true,
 					},
 				},
-				["datatexts"] = {
-					["chathandle"] = false,
+				["loot"] = {
+					["enable"] = true,
+					["autoroll"] = {
+						["autogreed"] = true,
+					},
+				},
+				["garrison"] = {
+					["autoWar"] = true,
+					["autoOrder"] = true,
+					["autoShip"] = true,
 				},
 				["nameplates"] = {
 					["targetcount"] = true,
 				},
-				["raidmarkers"] = {
-					["enable"] = false,
+				["datatexts"] = {
+					["chathandle"] = false,
 				},
 				["raidmanager"] = {
 					["roles"] = true,
 				},
+				["minimap"] = {
+					["enable"] = true,
+					["mapicons"] = {
+						["skinmail"] = true,
+						["skindungeon"] = true,
+					},
+					["instance"] = {
+						["enable"] = true,
+						["font"] = "Roboto-BoldCondensed",
+					},
+				},
 			},
 			["bags"] = {
 				["countFontSize"] = 11,
+				["countFont"] = "Friz Quadrata TT",
 				["itemLevelFont"] = "Friz Quadrata TT",
 				["itemLevelThreshold"] = 805,
 				["ignoreItems"] = "",
 				["itemLevelFontSize"] = 11,
+				["itemLevelFontOutline"] = "OUTLINE",
 				["bagWidth"] = 400,
-				["countFont"] = "Friz Quadrata TT",
 				["countFontOutline"] = "OUTLINE",
 				["bankWidth"] = 400,
-				["itemLevelFontOutline"] = "OUTLINE",
 				["junkIcon"] = true,
 			},
 			["hideTutorial"] = true,
 			["chat"] = {
+				["panelWidth"] = 400,
+				["fontSize"] = 11,
 				["tabFontOutline"] = "OUTLINE",
 				["keywordSound"] = "Whisper Alert",
 				["tabFont"] = "Friz Quadrata TT",
-				["editboxhistory"] = 20,
-				["fontOutline"] = "OUTLINE",
-				["throttleInterval"] = 10,
-				["font"] = "Friz Quadrata TT",
-				["tapFontSize"] = 11,
-				["panelWidth"] = 400,
-				["fontSize"] = 11,
+				["keywords"] = "%MYNAME%,Dan,weakaura,weakauras",
 				["tabFontSize"] = 11,
+				["timeStampFormat"] = "%H:%M ",
+				["editboxhistory"] = 20,
+				["font"] = "Friz Quadrata TT",
+				["throttleInterval"] = 10,
+				["fontOutline"] = "OUTLINE",
 				["editBoxPosition"] = "ABOVE_CHAT",
 				["panelWidthRight"] = 400,
+				["tapFontSize"] = 11,
 				["panelBackdrop"] = "HIDEBOTH",
-				["timeStampFormat"] = "%H:%M ",
-				["keywords"] = "%MYNAME%,Dan,weakaura,weakauras",
 			},
 			["layoutSet"] = "dpsMelee",
 			["bagSortIgnoreItemsReset"] = true,
+			["movers"] = {
+				["DP_6_Mover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,313,516",
+				["ElvUF_FocusCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,309,157",
+				["PetAB"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,524,205",
+				["ElvUF_RaidMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,65,263",
+				["DP_4_Mover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,313,516",
+				["BuffsMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-184,-4",
+				["BossButton"] = "TOPLEFT,ElvUIParent,TOPLEFT,513,-508",
+				["SLE_Dashboard_Mover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,313,516",
+				["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,736",
+				["ElvUF_FocusMover"] = "BOTTOM,ElvUIParent,BOTTOM,309,125",
+				["ElvUF_TargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,228,318",
+				["DebuffsMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-183,-150",
+				["ElvUF_TargetTargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,228,291",
+				["DP_2_Mover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,313,516",
+				["LeftChatMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,4",
+				["ElvUF_Raid40Mover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,75,486",
+				["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,329,263",
+				["ElvAB_2"] = "BOTTOM,ElvUIParent,BOTTOM,0,57",
+				["ElvAB_1"] = "BOTTOM,ElvUIParent,BOTTOM,0,89",
+				["Bottom_Panel_Mover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,407,516",
+				["ElvUF_PetMover"] = "BOTTOM,ElvUIParent,BOTTOM,-325,248",
+				["TalkingHeadFrameMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,4,-4",
+				["ElvAB_4"] = "BOTTOM,ElvUIParent,BOTTOM,-299,56",
+				["ElvAB_5"] = "BOTTOM,ElvUIParent,BOTTOM,312,48",
+				["AltPowerBarMover"] = "TOP,ElvUIParent,TOP,0,-20",
+				["ElvAB_3"] = "BOTTOM,ElvUIParent,BOTTOM,0,23",
+				["DP_5_Mover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,313,516",
+				["ArtifactBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,126",
+				["ConsolidatedBuffsMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-4,-4",
+				["ElvUF_PlayerCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-229,298",
+				["ObjectiveFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-64,-226",
+				["BNETMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,185",
+				["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,761,162",
+				["ElvUF_TargetCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,228,251",
+				["ReputationBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,4",
+				["ArenaHeaderMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-48,372",
+				["TooltipMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-4,248",
+				["Top_Center_Mover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,313,538",
+				["BossHeaderMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,50,-210",
+				["ElvUF_PlayerMover"] = "BOTTOM,ElvUIParent,BOTTOM,-229,318",
+				["DP_3_Mover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,313,538",
+				["RightChatMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-4,4",
+				["DP_1_Mover"] = "BOTTOM,ElvUIParent,BOTTOM,0,4",
+				["ComboBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,438",
+				["MinimapMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-4,-4",
+			},
+			["gridSize"] = 4,
+			["tooltip"] = {
+				["textFontSize"] = 11,
+				["font"] = "Friz Quadrata TT",
+				["healthBar"] = {
+					["height"] = 10,
+					["fontSize"] = 12,
+					["font"] = "Friz Quadrata TT",
+				},
+				["fontOutline"] = "OUTLINE",
+				["headerFontSize"] = 11,
+				["itemCount"] = "BOTH",
+				["fontSize"] = 11,
+				["smallTextFontSize"] = 11,
+			},
+			["bossAuraFiltersConverted"] = true,
+			["auras"] = {
+				["debuffs"] = {
+					["horizontalSpacing"] = 1,
+				},
+				["font"] = "Friz Quadrata TT",
+				["fontOutline"] = "OUTLINE",
+				["consolidatedBuffs"] = {
+					["font"] = "Expressway",
+					["fontOutline"] = "OUTLINE",
+				},
+				["buffs"] = {
+					["horizontalSpacing"] = 1,
+				},
+				["fontSize"] = 11,
+				["wrapAfter"] = 10,
+			},
 			["CustomTweaks"] = {
 				["CastbarText"] = {
 					["Player"] = {
@@ -5509,497 +5630,89 @@ ElvDB = {
 					["powerstatusbar"] = "ElvUI Blank",
 				},
 			},
-			["movers"] = {
-				["DP_6_Mover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,313,516",
-				["ElvUF_FocusCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,309,157",
-				["PetAB"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,524,205",
-				["ElvUF_RaidMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,65,263",
-				["DP_4_Mover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,313,516",
-				["BuffsMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-184,-4",
-				["BossButton"] = "TOPLEFT,ElvUIParent,TOPLEFT,513,-508",
-				["SLE_Dashboard_Mover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,313,516",
-				["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,736",
-				["ElvUF_FocusMover"] = "BOTTOM,ElvUIParent,BOTTOM,309,125",
-				["ElvUF_TargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,228,318",
-				["DebuffsMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-183,-150",
-				["ElvUF_TargetTargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,228,291",
-				["DP_2_Mover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,313,516",
-				["LeftChatMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,4",
-				["ElvUF_Raid40Mover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,75,486",
-				["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,329,263",
-				["ElvAB_2"] = "BOTTOM,ElvUIParent,BOTTOM,0,57",
-				["ElvAB_1"] = "BOTTOM,ElvUIParent,BOTTOM,0,89",
-				["Bottom_Panel_Mover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,407,516",
-				["ElvUF_PetMover"] = "BOTTOM,ElvUIParent,BOTTOM,-325,248",
-				["TalkingHeadFrameMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,4,-4",
-				["ElvAB_4"] = "BOTTOM,ElvUIParent,BOTTOM,-299,56",
-				["ElvAB_5"] = "BOTTOM,ElvUIParent,BOTTOM,312,48",
-				["AltPowerBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,481,425",
-				["ElvAB_3"] = "BOTTOM,ElvUIParent,BOTTOM,0,23",
-				["DP_5_Mover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,313,516",
-				["ArtifactBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,126",
-				["ConsolidatedBuffsMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-4,-4",
-				["ElvUF_PlayerCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-229,298",
-				["ObjectiveFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-64,-226",
-				["BNETMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,185",
-				["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,761,162",
-				["ElvUF_TargetCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,228,251",
-				["ReputationBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,4",
-				["ArenaHeaderMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-48,372",
-				["TooltipMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-36,304",
-				["Top_Center_Mover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,313,538",
-				["BossHeaderMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,50,-210",
-				["ElvUF_PlayerMover"] = "BOTTOM,ElvUIParent,BOTTOM,-229,318",
-				["DP_3_Mover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,313,538",
-				["RightChatMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-4,4",
-				["DP_1_Mover"] = "BOTTOM,ElvUIParent,BOTTOM,0,4",
-				["ComboBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,438",
-				["MinimapMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-4,-4",
-			},
-			["gridSize"] = 4,
-			["tooltip"] = {
-				["itemCount"] = "BOTH",
-				["headerFontSize"] = 11,
-				["cursorAnchor"] = true,
-				["fontOutline"] = "OUTLINE",
-				["healthBar"] = {
-					["font"] = "Friz Quadrata TT",
-					["height"] = 10,
-					["fontSize"] = 12,
-				},
-				["textFontSize"] = 11,
-				["font"] = "Friz Quadrata TT",
-				["fontSize"] = 11,
-				["visibility"] = {
-					["combat"] = true,
-				},
-				["smallTextFontSize"] = 11,
-			},
-			["bossAuraFiltersConverted"] = true,
-			["auras"] = {
-				["fontSize"] = 11,
-				["font"] = "Friz Quadrata TT",
-				["fontOutline"] = "OUTLINE",
-				["consolidatedBuffs"] = {
-					["font"] = "Expressway",
-					["fontOutline"] = "OUTLINE",
-				},
-				["buffs"] = {
-					["horizontalSpacing"] = 1,
-				},
-				["debuffs"] = {
-					["horizontalSpacing"] = 1,
-				},
-				["wrapAfter"] = 10,
-			},
-			["unitframe"] = {
-				["targetOnMouseDown"] = true,
-				["fontSize"] = 11,
-				["smoothbars"] = true,
-				["statusbar"] = "Melli",
-				["units"] = {
-					["tank"] = {
-						["targetsGroup"] = {
-							["enable"] = false,
-						},
-						["enable"] = false,
-						["verticalSpacing"] = 20,
-					},
-					["bodyguard"] = {
-						["enable"] = false,
-					},
-					["boss"] = {
-						["debuffs"] = {
-							["yOffset"] = -12,
-							["anchorPoint"] = "RIGHT",
-							["numrows"] = 1,
-							["perrow"] = 4,
-							["xOffset"] = 2,
-						},
-						["spacing"] = 33,
-						["castbar"] = {
-							["width"] = 150,
-							["height"] = 15,
-						},
-						["name"] = {
-							["position"] = "TOPLEFT",
-							["text_format"] = "[name:medium]",
-							["yOffset"] = 16,
-						},
-						["width"] = 150,
-						["health"] = {
-							["text_format"] = "[health:current-percent]",
-						},
-						["power"] = {
-							["text_format"] = "[power:current]",
-							["height"] = 5,
-						},
-						["height"] = 35,
-						["buffs"] = {
-							["xOffset"] = 2,
-							["yOffset"] = 12,
-							["anchorPoint"] = "RIGHT",
-							["perrow"] = 4,
-						},
-					},
-					["raid40"] = {
-						["horizontalSpacing"] = 1,
-						["roleIcon"] = {
-							["enable"] = true,
-							["damager"] = false,
-						},
-						["rdebuffs"] = {
-							["font"] = "Friz Quadrata TT",
-						},
-						["verticalSpacing"] = 1,
-					},
-					["focus"] = {
-						["colorOverride"] = "FORCE_ON",
-						["power"] = {
-							["height"] = 5,
-						},
-						["castbar"] = {
-							["enable"] = false,
-						},
-						["width"] = 200,
-						["name"] = {
-							["text_format"] = "[name]",
-						},
-						["height"] = 26,
-					},
-					["target"] = {
-						["combobar"] = {
-							["enable"] = false,
-							["height"] = 3,
-							["detachFromFrame"] = true,
-						},
-						["debuffs"] = {
-							["useWhitelist"] = {
-								["friendly"] = true,
-							},
-							["yOffset"] = 42,
-							["noDuration"] = {
-								["friendly"] = true,
-							},
-							["playerOnly"] = {
-								["enemy"] = false,
-							},
-							["attachTo"] = "FRAME",
-							["onlyDispellable"] = {
-								["friendly"] = true,
-							},
-						},
-						["colorOverride"] = "FORCE_ON",
-						["health"] = {
-							["position"] = "LEFT",
-							["xOffset"] = 0,
-							["text_format"] = "[health:current-percent]",
-						},
-						["aurabar"] = {
-							["enable"] = false,
-						},
-						["GPSArrow"] = {
-							["enable"] = true,
-							["onMouseOver"] = false,
-						},
-						["width"] = 200,
-						["infoPanel"] = {
-							["transparent"] = true,
-						},
-						["name"] = {
-							["position"] = "LEFT",
-							["text_format"] = "[name]",
-							["yOffset"] = 29,
-						},
-						["castbar"] = {
-							["width"] = 200,
-							["iconXOffset"] = -11,
-							["height"] = 34,
-							["format"] = "CURRENTMAX",
-							["latency"] = true,
-						},
-						["height"] = 46,
-						["buffs"] = {
-							["noConsolidated"] = {
-								["friendly"] = true,
-							},
-							["yOffset"] = 15,
-							["useFilter"] = "TurtleBuffs",
-						},
-						["power"] = {
-							["xOffset"] = 0,
-							["text_format"] = "",
-							["width"] = "inset",
-							["position"] = "RIGHT",
-							["height"] = 7,
-							["hideonnpc"] = false,
-						},
-					},
-					["raid"] = {
-						["horizontalSpacing"] = 1,
-						["debuffs"] = {
-							["perrow"] = 1,
-							["sizeOverride"] = 16,
-						},
-						["rdebuffs"] = {
-							["fontSize"] = 12,
-							["xOffset"] = 29,
-							["yOffset"] = 6,
-							["font"] = "Friz Quadrata TT",
-							["fontOutline"] = "OUTLINE",
-							["size"] = 20,
-						},
-						["colorOverride"] = "FORCE_ON",
-						["growthDirection"] = "RIGHT_UP",
-						["verticalSpacing"] = 1,
-						["name"] = {
-							["position"] = "BOTTOMLEFT",
-							["text_format"] = "[name:veryshort]",
-						},
-						["roleIcon"] = {
-							["xOffset"] = 0,
-							["yOffset"] = 0,
-							["damager"] = false,
-							["size"] = 16,
-						},
-						["power"] = {
-							["height"] = 5,
-						},
-						["healPrediction"] = true,
-						["width"] = 82,
-						["health"] = {
-							["text_format"] = "[healthcolor]",
-						},
-						["height"] = 40,
-						["buffs"] = {
-							["sizeOverride"] = 22,
-						},
-					},
-					["targettarget"] = {
-						["debuffs"] = {
-							["enable"] = false,
-						},
-						["power"] = {
-							["height"] = 5,
-						},
-						["colorOverride"] = "FORCE_ON",
-						["width"] = 200,
-						["name"] = {
-							["text_format"] = "[name:medium]",
-						},
-						["height"] = 26,
-					},
-					["player"] = {
-						["debuffs"] = {
-							["fontSize"] = 14,
-							["enable"] = false,
-							["anchorPoint"] = "TOPRIGHT",
-							["perrow"] = 5,
-							["sizeOverride"] = 0,
-						},
-						["colorOverride"] = "FORCE_ON",
-						["castbar"] = {
-							["spark"] = false,
-							["insideInfoPanel"] = false,
-							["width"] = 200,
-							["height"] = 20,
-							["format"] = "CURRENTMAX",
-							["latency"] = false,
-						},
-						["classbar"] = {
-							["enable"] = false,
-						},
-						["aurabar"] = {
-							["enable"] = false,
-						},
-						["power"] = {
-							["text_format"] = "",
-							["enable"] = false,
-						},
-						["width"] = 200,
-						["health"] = {
-							["position"] = "RIGHT",
-							["xOffset"] = 0,
-							["text_format"] = "[health:current-percent]",
-						},
-						["height"] = 46,
-					},
-					["party"] = {
-						["debuffs"] = {
-							["sizeOverride"] = 30,
-							["xOffset"] = 1,
-							["perrow"] = 5,
-						},
-						["healPrediction"] = true,
-						["name"] = {
-							["text_format"] = "[name:medium] [difficultycolor][smartlevel]",
-						},
-						["height"] = 40,
-						["buffs"] = {
-							["useWhitelist"] = true,
-							["enable"] = true,
-							["anchorPoint"] = "RIGHT",
-							["onlyDispellable"] = true,
-							["perrow"] = 1,
-							["useFilter"] = "Atonement",
-							["sizeOverride"] = 22,
-							["xOffset"] = -25,
-						},
-						["rdebuffs"] = {
-							["font"] = "Friz Quadrata TT",
-						},
-						["roleIcon"] = {
-							["xOffset"] = 1,
-							["yOffset"] = 8,
-							["position"] = "RIGHT",
-							["damager"] = false,
-							["size"] = 20,
-						},
-						["power"] = {
-							["text_format"] = "",
-						},
-						["width"] = 150,
-						["colorOverride"] = "FORCE_ON",
-					},
-					["arena"] = {
-						["castbar"] = {
-							["width"] = 200,
-						},
-						["width"] = 200,
-					},
-					["pet"] = {
-						["colorOverride"] = "FORCE_ON",
-						["width"] = 200,
-						["power"] = {
-							["enable"] = false,
-						},
-						["height"] = 26,
-					},
-					["assist"] = {
-						["targetsGroup"] = {
-							["enable"] = false,
-						},
-						["enable"] = false,
-					},
-				},
-				["font"] = "Friz Quadrata TT",
-				["colors"] = {
-					["auraBarBuff"] = {
-						["r"] = 0.67,
-						["g"] = 0.83,
-						["b"] = 0.45,
-					},
-					["colorhealthbyvalue"] = false,
-					["healthclass"] = true,
-					["useDeadBackdrop"] = true,
-					["health_backdrop_dead"] = {
-						["r"] = 0,
-						["g"] = 0,
-						["b"] = 0,
-					},
-					["power"] = {
-						["RAGE"] = {
-							["r"] = 1,
-							["g"] = 0,
-							["b"] = 0,
-						},
-					},
-					["castColor"] = {
-						["r"] = 1,
-						["g"] = 1,
-						["b"] = 1,
-					},
-					["health_backdrop"] = {
-						["r"] = 0,
-						["g"] = 0,
-						["b"] = 0,
-					},
-				},
-				["fontOutline"] = "OUTLINE",
-			},
 			["datatexts"] = {
 				["minimapPanels"] = false,
-				["fontSize"] = 11,
+				["noCombatHover"] = true,
+				["minimapBottom"] = true,
 				["goldFormat"] = "SMART",
 				["panelTransparency"] = true,
 				["time24"] = true,
 				["panels"] = {
 					["LeftMiniPanel"] = "",
+					["RightMiniPanel"] = "",
 					["RightChatDataPanel"] = {
 						["middle"] = "Durability",
 					},
-					["LeftChatDataPanel"] = {
-						["right"] = "Guild",
-						["left"] = "Bags",
-						["middle"] = "Call to Arms",
-					},
-					["RightMiniPanel"] = "",
-					["BottomLeftMiniPanel"] = "Time",
+					["BottomMiniPanel"] = "ElvUI Config",
 					["DP_1"] = {
 						["right"] = "Combat/Arena Time",
 						["left"] = "System",
 						["middle"] = "Time",
 					},
-					["BottomMiniPanel"] = "ElvUI Config",
 					["TopMiniPanel"] = "Dugi",
+					["BottomLeftMiniPanel"] = "Time",
+					["LeftChatDataPanel"] = {
+						["right"] = "Guild",
+						["left"] = "Bags",
+						["middle"] = "Call to Arms",
+					},
 				},
-				["fontOutline"] = "OUTLINE",
-				["noCombatClick"] = true,
-				["minimapBottom"] = true,
-				["minimapBottomRight"] = true,
-				["minimapBottomLeft"] = true,
 				["font"] = "Friz Quadrata TT",
-				["noCombatHover"] = true,
+				["fontOutline"] = "OUTLINE",
+				["minimapBottomLeft"] = true,
+				["minimapBottomRight"] = true,
+				["noCombatClick"] = true,
+				["fontSize"] = 11,
 			},
 			["actionbar"] = {
 				["bar3"] = {
-					["buttonspacing"] = 1,
 					["backdropSpacing"] = 1,
-					["buttons"] = 12,
 					["backdrop"] = true,
-					["mouseover"] = true,
-					["showGrid"] = false,
+					["buttons"] = 12,
+					["buttonspacing"] = 1,
 					["buttonsPerRow"] = 12,
-				},
-				["fontOutline"] = "OUTLINE",
-				["backdropSpacingConverted"] = true,
-				["keyDown"] = false,
-				["bar2"] = {
-					["buttonspacing"] = 1,
-					["backdropSpacing"] = 1,
-					["enabled"] = true,
-					["backdrop"] = true,
-					["showGrid"] = false,
-					["visibility"] = "[vehicleui] hide; [overridebar] hide; [petbattle] hide;  show",
-				},
-				["bar1"] = {
-					["buttonspacing"] = 1,
-					["backdropSpacing"] = 1,
-					["backdrop"] = true,
-					["showGrid"] = false,
-					["paging"] = {
-						["ROGUE"] = "[form:0] 1; [form:1] 7; [form:2] 7;",
-					},
-				},
-				["bar5"] = {
-					["buttonspacing"] = 1,
-					["backdropSpacing"] = 1,
-					["buttons"] = 12,
-					["backdrop"] = true,
 					["mouseover"] = true,
 					["showGrid"] = false,
-					["buttonsize"] = 36,
 				},
 				["bar6"] = {
 					["buttonspacing"] = 1,
 					["backdropSpacing"] = 1,
 					["showGrid"] = false,
 				},
+				["bar2"] = {
+					["enabled"] = true,
+					["backdropSpacing"] = 1,
+					["showGrid"] = false,
+					["backdrop"] = true,
+					["visibility"] = "[vehicleui] hide; [overridebar] hide; [petbattle] hide;  show",
+					["buttonspacing"] = 1,
+				},
+				["bar1"] = {
+					["showGrid"] = false,
+					["paging"] = {
+						["ROGUE"] = "[form:0] 1; [form:1] 7; [form:2] 7;",
+					},
+					["backdrop"] = true,
+					["backdropSpacing"] = 1,
+					["buttonspacing"] = 1,
+				},
+				["bar5"] = {
+					["backdropSpacing"] = 1,
+					["backdrop"] = true,
+					["buttons"] = 12,
+					["buttonspacing"] = 1,
+					["buttonsize"] = 36,
+					["mouseover"] = true,
+					["showGrid"] = false,
+				},
 				["font"] = "Friz Quadrata TT",
+				["backdropSpacingConverted"] = true,
+				["fontOutline"] = "OUTLINE",
+				["keyDown"] = false,
 				["stanceBar"] = {
 					["enabled"] = false,
-					["buttonspacing"] = 1,
 					["backdropSpacing"] = 1,
+					["buttonspacing"] = 1,
 				},
 				["barPet"] = {
 					["buttonspacing"] = 1,
@@ -6008,21 +5721,30 @@ ElvDB = {
 					["buttonsize"] = 20,
 				},
 				["bar4"] = {
-					["buttonspacing"] = 1,
 					["backdropSpacing"] = 1,
+					["buttonspacing"] = 1,
+					["buttonsPerRow"] = 6,
 					["mouseover"] = true,
 					["showGrid"] = false,
-					["buttonsPerRow"] = 6,
 				},
 			},
 			["nameplates"] = {
 				["fontSize"] = 11,
-				["statusbar"] = "Melli",
 				["fontOutline"] = "OUTLINE",
+				["clampToScreen"] = true,
+				["statusbar"] = "Melli",
+				["font"] = "Friz Quadrata TT",
 				["units"] = {
 					["ENEMY_NPC"] = {
 						["healthbar"] = {
 							["height"] = 15,
+						},
+					},
+					["ENEMY_PLAYER"] = {
+						["healthbar"] = {
+							["text"] = {
+								["enable"] = true,
+							},
 						},
 					},
 					["HEALER"] = {
@@ -6033,16 +5755,7 @@ ElvDB = {
 							},
 						},
 					},
-					["ENEMY_PLAYER"] = {
-						["healthbar"] = {
-							["text"] = {
-								["enable"] = true,
-							},
-						},
-					},
 				},
-				["font"] = "Friz Quadrata TT",
-				["clampToScreen"] = true,
 			},
 			["general"] = {
 				["totems"] = {
@@ -6089,6 +5802,331 @@ ElvDB = {
 					["b"] = 0.99,
 				},
 				["RAGE"] = {
+				},
+			},
+			["unitframe"] = {
+				["targetOnMouseDown"] = true,
+				["fontSize"] = 11,
+				["colors"] = {
+					["healthclass"] = true,
+					["health_backdrop"] = {
+						["r"] = 0,
+						["g"] = 0,
+						["b"] = 0,
+					},
+					["auraBarBuff"] = {
+						["r"] = 0.67,
+						["g"] = 0.83,
+						["b"] = 0.45,
+					},
+					["power"] = {
+						["RAGE"] = {
+							["r"] = 1,
+							["g"] = 0,
+							["b"] = 0,
+						},
+					},
+					["castColor"] = {
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
+					["useDeadBackdrop"] = true,
+					["colorhealthbyvalue"] = false,
+					["health_backdrop_dead"] = {
+						["r"] = 0,
+						["g"] = 0,
+						["b"] = 0,
+					},
+				},
+				["fontOutline"] = "OUTLINE",
+				["statusbar"] = "Melli",
+				["smoothbars"] = true,
+				["font"] = "Friz Quadrata TT",
+				["units"] = {
+					["tank"] = {
+						["enable"] = false,
+						["verticalSpacing"] = 20,
+						["targetsGroup"] = {
+							["enable"] = false,
+						},
+					},
+					["player"] = {
+						["debuffs"] = {
+							["anchorPoint"] = "TOPRIGHT",
+							["fontSize"] = 14,
+							["enable"] = false,
+							["sizeOverride"] = 0,
+							["perrow"] = 5,
+						},
+						["castbar"] = {
+							["spark"] = false,
+							["insideInfoPanel"] = false,
+							["height"] = 20,
+							["format"] = "CURRENTMAX",
+							["width"] = 200,
+							["latency"] = false,
+						},
+						["colorOverride"] = "FORCE_ON",
+						["width"] = 200,
+						["health"] = {
+							["xOffset"] = 0,
+							["text_format"] = "[health:current-percent]",
+							["position"] = "RIGHT",
+						},
+						["height"] = 46,
+						["power"] = {
+							["text_format"] = "",
+							["enable"] = false,
+						},
+						["classbar"] = {
+							["enable"] = false,
+						},
+						["aurabar"] = {
+							["enable"] = false,
+						},
+					},
+					["boss"] = {
+						["debuffs"] = {
+							["anchorPoint"] = "RIGHT",
+							["xOffset"] = 2,
+							["yOffset"] = -12,
+							["numrows"] = 1,
+							["perrow"] = 4,
+						},
+						["power"] = {
+							["text_format"] = "[power:current]",
+							["height"] = 5,
+						},
+						["width"] = 150,
+						["name"] = {
+							["position"] = "TOPLEFT",
+							["text_format"] = "[name:medium]",
+							["yOffset"] = 16,
+						},
+						["spacing"] = 33,
+						["height"] = 35,
+						["buffs"] = {
+							["xOffset"] = 2,
+							["yOffset"] = 12,
+							["anchorPoint"] = "RIGHT",
+							["perrow"] = 4,
+						},
+						["health"] = {
+							["text_format"] = "[health:current-percent]",
+						},
+						["castbar"] = {
+							["height"] = 15,
+							["width"] = 150,
+						},
+					},
+					["pet"] = {
+						["height"] = 26,
+						["width"] = 200,
+						["colorOverride"] = "FORCE_ON",
+						["power"] = {
+							["enable"] = false,
+						},
+					},
+					["raid"] = {
+						["horizontalSpacing"] = 1,
+						["debuffs"] = {
+							["perrow"] = 1,
+							["sizeOverride"] = 16,
+						},
+						["power"] = {
+							["height"] = 5,
+						},
+						["rdebuffs"] = {
+							["fontSize"] = 12,
+							["fontOutline"] = "OUTLINE",
+							["xOffset"] = 29,
+							["yOffset"] = 6,
+							["font"] = "Friz Quadrata TT",
+							["size"] = 20,
+						},
+						["colorOverride"] = "FORCE_ON",
+						["growthDirection"] = "RIGHT_UP",
+						["roleIcon"] = {
+							["xOffset"] = 0,
+							["damager"] = false,
+							["yOffset"] = 0,
+							["size"] = 16,
+						},
+						["healPrediction"] = true,
+						["health"] = {
+							["text_format"] = "[healthcolor]",
+						},
+						["verticalSpacing"] = 1,
+						["height"] = 40,
+						["buffs"] = {
+							["sizeOverride"] = 22,
+						},
+						["name"] = {
+							["text_format"] = "[name:veryshort]",
+							["position"] = "BOTTOMLEFT",
+						},
+						["width"] = 82,
+					},
+					["bodyguard"] = {
+						["enable"] = false,
+					},
+					["party"] = {
+						["roleIcon"] = {
+							["position"] = "RIGHT",
+							["xOffset"] = 1,
+							["damager"] = false,
+							["yOffset"] = 8,
+							["size"] = 20,
+						},
+						["debuffs"] = {
+							["xOffset"] = 1,
+							["sizeOverride"] = 30,
+							["perrow"] = 5,
+						},
+						["power"] = {
+							["text_format"] = "",
+						},
+						["healPrediction"] = true,
+						["colorOverride"] = "FORCE_ON",
+						["width"] = 150,
+						["name"] = {
+							["text_format"] = "[name:medium] [difficultycolor][smartlevel]",
+						},
+						["height"] = 40,
+						["buffs"] = {
+							["anchorPoint"] = "RIGHT",
+							["sizeOverride"] = 22,
+							["onlyDispellable"] = true,
+							["useWhitelist"] = true,
+							["enable"] = true,
+							["xOffset"] = -25,
+							["useFilter"] = "Atonement",
+							["perrow"] = 1,
+						},
+						["rdebuffs"] = {
+							["font"] = "Friz Quadrata TT",
+						},
+					},
+					["raid40"] = {
+						["horizontalSpacing"] = 1,
+						["rdebuffs"] = {
+							["font"] = "Friz Quadrata TT",
+						},
+						["roleIcon"] = {
+							["enable"] = true,
+							["damager"] = false,
+						},
+						["verticalSpacing"] = 1,
+					},
+					["focus"] = {
+						["name"] = {
+							["text_format"] = "[name]",
+						},
+						["power"] = {
+							["height"] = 5,
+						},
+						["height"] = 26,
+						["castbar"] = {
+							["enable"] = false,
+						},
+						["colorOverride"] = "FORCE_ON",
+						["width"] = 200,
+					},
+					["target"] = {
+						["combobar"] = {
+							["enable"] = false,
+							["height"] = 3,
+							["detachFromFrame"] = true,
+						},
+						["debuffs"] = {
+							["attachTo"] = "FRAME",
+							["onlyDispellable"] = {
+								["friendly"] = true,
+							},
+							["useWhitelist"] = {
+								["friendly"] = true,
+							},
+							["noDuration"] = {
+								["friendly"] = true,
+							},
+							["playerOnly"] = {
+								["enemy"] = false,
+							},
+							["yOffset"] = 42,
+						},
+						["castbar"] = {
+							["iconXOffset"] = -11,
+							["height"] = 34,
+							["format"] = "CURRENTMAX",
+							["width"] = 200,
+							["latency"] = true,
+						},
+						["colorOverride"] = "FORCE_ON",
+						["width"] = 200,
+						["infoPanel"] = {
+							["transparent"] = true,
+						},
+						["power"] = {
+							["xOffset"] = 0,
+							["position"] = "RIGHT",
+							["height"] = 7,
+							["hideonnpc"] = false,
+							["text_format"] = "",
+							["width"] = "inset",
+						},
+						["health"] = {
+							["xOffset"] = 0,
+							["text_format"] = "[health:current-percent]",
+							["position"] = "LEFT",
+						},
+						["name"] = {
+							["position"] = "LEFT",
+							["text_format"] = "[name]",
+							["yOffset"] = 29,
+						},
+						["height"] = 46,
+						["buffs"] = {
+							["noConsolidated"] = {
+								["friendly"] = true,
+							},
+							["yOffset"] = 15,
+							["useFilter"] = "TurtleBuffs",
+						},
+						["GPSArrow"] = {
+							["enable"] = true,
+							["onMouseOver"] = false,
+						},
+						["aurabar"] = {
+							["enable"] = false,
+						},
+					},
+					["arena"] = {
+						["castbar"] = {
+							["width"] = 200,
+						},
+						["width"] = 200,
+					},
+					["assist"] = {
+						["enable"] = false,
+						["targetsGroup"] = {
+							["enable"] = false,
+						},
+					},
+					["targettarget"] = {
+						["debuffs"] = {
+							["enable"] = false,
+						},
+						["name"] = {
+							["text_format"] = "[name:medium]",
+						},
+						["power"] = {
+							["height"] = 5,
+						},
+						["height"] = 26,
+						["colorOverride"] = "FORCE_ON",
+						["width"] = 200,
+					},
 				},
 			},
 			["lowresolutionset"] = true,
@@ -10702,8 +10740,8 @@ ElvDB = {
 				["artifact"] = {
 					["textFormat"] = "CURMAX",
 					["hideInVehicle"] = true,
-					["orientation"] = "HORIZONTAL",
 					["height"] = 20,
+					["orientation"] = "HORIZONTAL",
 					["hideInCombat"] = true,
 					["textSize"] = 15,
 					["width"] = 395,
@@ -10711,8 +10749,8 @@ ElvDB = {
 				["reputation"] = {
 					["textFormat"] = "CURPERC",
 					["hideInVehicle"] = true,
-					["orientation"] = "HORIZONTAL",
 					["enable"] = true,
+					["orientation"] = "HORIZONTAL",
 					["hideInCombat"] = true,
 					["height"] = 20,
 					["width"] = 395,
@@ -10726,10 +10764,8 @@ ElvDB = {
 			},
 			["currentTutorial"] = 1,
 			["sle"] = {
-				["misc"] = {
-					["threat"] = {
-						["enable"] = true,
-					},
+				["raidmarkers"] = {
+					["enable"] = false,
 				},
 				["media"] = {
 					["fonts"] = {
@@ -10759,23 +10795,14 @@ ElvDB = {
 						},
 					},
 				},
-				["minimap"] = {
-					["instance"] = {
-						["enable"] = true,
-						["font"] = "Roboto-BoldCondensed",
-					},
-					["mapicons"] = {
-						["skinmail"] = true,
-						["skindungeon"] = true,
-					},
-					["enable"] = true,
+				["threat"] = {
+					["enable"] = false,
 				},
 				["Armory"] = {
 					["Character"] = {
-						["Durability"] = {
-							["Display"] = "DamagedOnly",
-							["Font"] = "Gotham-Narrow",
+						["Enchant"] = {
 							["FontSize"] = 10,
+							["Font"] = "Gotham-Narrow",
 						},
 						["Gem"] = {
 							["SocketSize"] = 12,
@@ -10787,9 +10814,10 @@ ElvDB = {
 						["Backdrop"] = {
 							["SelectedBG"] = "Alliance-text",
 						},
-						["Enchant"] = {
-							["FontSize"] = 10,
+						["Durability"] = {
+							["Display"] = "DamagedOnly",
 							["Font"] = "Gotham-Narrow",
+							["FontSize"] = 10,
 						},
 					},
 				},
@@ -10799,12 +10827,21 @@ ElvDB = {
 						["width"] = 390,
 					},
 				},
-				["chat"] = {
-					["dpsSpam"] = true,
-					["guildmaster"] = true,
+				["minimap"] = {
+					["enable"] = true,
+					["mapicons"] = {
+						["skinmail"] = true,
+						["skindungeon"] = true,
+					},
+					["instance"] = {
+						["enable"] = true,
+						["font"] = "Roboto-BoldCondensed",
+					},
 				},
-				["raidmarkers"] = {
-					["enable"] = false,
+				["misc"] = {
+					["threat"] = {
+						["enable"] = true,
+					},
 				},
 				["orderhall"] = {
 					["autoOrder"] = {
@@ -10818,22 +10855,23 @@ ElvDB = {
 						["autogreed"] = true,
 					},
 				},
-				["datatexts"] = {
-					["chathandle"] = false,
-				},
-				["nameplates"] = {
-					["targetcount"] = true,
-				},
 				["garrison"] = {
 					["autoWar"] = true,
 					["autoOrder"] = true,
 					["autoShip"] = true,
 				},
+				["nameplates"] = {
+					["targetcount"] = true,
+				},
+				["datatexts"] = {
+					["chathandle"] = false,
+				},
 				["raidmanager"] = {
 					["roles"] = true,
 				},
-				["threat"] = {
-					["enable"] = false,
+				["chat"] = {
+					["guildmaster"] = true,
+					["dpsSpam"] = true,
 				},
 			},
 			["bags"] = {
@@ -10845,13 +10883,15 @@ ElvDB = {
 				["itemLevelFontSize"] = 11,
 				["itemLevelFontOutline"] = "OUTLINE",
 				["junkIcon"] = true,
-				["bankWidth"] = 400,
 				["countFontOutline"] = "OUTLINE",
+				["bankWidth"] = 400,
 				["bagWidth"] = 400,
 			},
 			["hideTutorial"] = true,
 			["auras"] = {
-				["fontSize"] = 11,
+				["debuffs"] = {
+					["horizontalSpacing"] = 1,
+				},
 				["font"] = "Friz Quadrata TT",
 				["fontOutline"] = "OUTLINE",
 				["consolidatedBuffs"] = {
@@ -10861,9 +10901,7 @@ ElvDB = {
 				["buffs"] = {
 					["horizontalSpacing"] = 1,
 				},
-				["debuffs"] = {
-					["horizontalSpacing"] = 1,
-				},
+				["fontSize"] = 11,
 				["wrapAfter"] = 10,
 			},
 			["layoutSet"] = "dpsMelee",
@@ -10905,7 +10943,7 @@ ElvDB = {
 				["ElvUF_TargetCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,228,251",
 				["ReputationBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,4",
 				["ArenaHeaderMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-48,372",
-				["TooltipMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-36,304",
+				["TooltipMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-4,252",
 				["Top_Center_Mover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,313,538",
 				["BossHeaderMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,50,-210",
 				["ElvUF_PlayerMover"] = "BOTTOM,ElvUIParent,BOTTOM,-229,318",
@@ -10917,29 +10955,75 @@ ElvDB = {
 			},
 			["gridSize"] = 4,
 			["tooltip"] = {
-				["itemCount"] = "BOTH",
-				["healthBar"] = {
-					["height"] = 10,
-					["font"] = "Friz Quadrata TT",
-					["fontSize"] = 12,
-				},
-				["headerFontSize"] = 11,
 				["textFontSize"] = 11,
 				["font"] = "Friz Quadrata TT",
-				["cursorAnchor"] = true,
+				["healthBar"] = {
+					["height"] = 10,
+					["fontSize"] = 12,
+					["font"] = "Friz Quadrata TT",
+				},
 				["fontOutline"] = "OUTLINE",
+				["headerFontSize"] = 11,
 				["fontSize"] = 11,
+				["itemCount"] = "BOTH",
 				["smallTextFontSize"] = 11,
 			},
+			["general"] = {
+				["totems"] = {
+					["enable"] = false,
+				},
+				["fontSize"] = 11,
+				["interruptAnnounce"] = "SAY",
+				["autoAcceptInvite"] = true,
+				["autoRepair"] = "PLAYER",
+				["minimap"] = {
+					["icons"] = {
+						["mail"] = {
+							["position"] = "RIGHT",
+						},
+						["classHall"] = {
+							["xOffset"] = -3,
+							["yOffset"] = -45,
+						},
+						["vehicleLeave"] = {
+							["yOffset"] = 20,
+						},
+					},
+				},
+				["health_backdrop"] = {
+				},
+				["bottomPanel"] = false,
+				["valuecolor"] = {
+					["b"] = 0.04,
+					["g"] = 0.49,
+					["r"] = 1,
+				},
+				["loginmessage"] = false,
+				["threat"] = {
+					["position"] = "LEFTCHAT",
+				},
+				["talkingHeadFrameScale"] = 0.5,
+				["bordercolor"] = {
+					["b"] = 0.31,
+					["g"] = 0.31,
+					["r"] = 0.31,
+				},
+				["font"] = "Friz Quadrata TT",
+				["numberPrefixStyle"] = "ENGLISH",
+				["topPanel"] = false,
+				["vendorGrays"] = true,
+				["RAGE"] = {
+				},
+			},
 			["chat"] = {
-				["panelBackdrop"] = "HIDEBOTH",
+				["panelWidth"] = 400,
 				["fontSize"] = 11,
 				["tabFontOutline"] = "OUTLINE",
 				["keywordSound"] = "Whisper Alert",
-				["timeStampFormat"] = "%H:%M ",
+				["tabFont"] = "Friz Quadrata TT",
 				["keywords"] = "%MYNAME%,Dan,weakaura,weakauras",
 				["tabFontSize"] = 11,
-				["tabFont"] = "Friz Quadrata TT",
+				["timeStampFormat"] = "%H:%M ",
 				["editboxhistory"] = 20,
 				["font"] = "Friz Quadrata TT",
 				["throttleInterval"] = 10,
@@ -10947,7 +11031,453 @@ ElvDB = {
 				["editBoxPosition"] = "ABOVE_CHAT",
 				["panelWidthRight"] = 400,
 				["tapFontSize"] = 11,
-				["panelWidth"] = 400,
+				["panelBackdrop"] = "HIDEBOTH",
+			},
+			["unitframe"] = {
+				["targetOnMouseDown"] = true,
+				["fontSize"] = 11,
+				["colors"] = {
+					["healthclass"] = true,
+					["health_backdrop"] = {
+						["r"] = 0,
+						["g"] = 0,
+						["b"] = 0,
+					},
+					["auraBarBuff"] = {
+						["b"] = 0.45,
+						["g"] = 0.83,
+						["r"] = 0.67,
+					},
+					["power"] = {
+						["RAGE"] = {
+							["r"] = 1,
+							["g"] = 0,
+							["b"] = 0,
+						},
+					},
+					["castColor"] = {
+						["b"] = 1,
+						["g"] = 1,
+						["r"] = 1,
+					},
+					["useDeadBackdrop"] = true,
+					["colorhealthbyvalue"] = false,
+					["health_backdrop_dead"] = {
+						["b"] = 0,
+						["g"] = 0,
+						["r"] = 0,
+					},
+				},
+				["fontOutline"] = "OUTLINE",
+				["smoothbars"] = true,
+				["statusbar"] = "Melli",
+				["font"] = "Friz Quadrata TT",
+				["units"] = {
+					["tank"] = {
+						["enable"] = false,
+						["verticalSpacing"] = 20,
+						["targetsGroup"] = {
+							["enable"] = false,
+						},
+					},
+					["pet"] = {
+						["height"] = 26,
+						["width"] = 200,
+						["colorOverride"] = "FORCE_ON",
+						["power"] = {
+							["enable"] = false,
+						},
+					},
+					["party"] = {
+						["roleIcon"] = {
+							["position"] = "RIGHT",
+							["xOffset"] = 1,
+							["yOffset"] = 8,
+							["damager"] = false,
+							["size"] = 20,
+						},
+						["debuffs"] = {
+							["xOffset"] = 1,
+							["sizeOverride"] = 30,
+							["perrow"] = 5,
+						},
+						["power"] = {
+							["text_format"] = "",
+						},
+						["healPrediction"] = true,
+						["colorOverride"] = "FORCE_ON",
+						["width"] = 150,
+						["name"] = {
+							["text_format"] = "[name:medium] [difficultycolor][smartlevel]",
+						},
+						["height"] = 40,
+						["buffs"] = {
+							["sizeOverride"] = 22,
+						},
+						["rdebuffs"] = {
+							["font"] = "Friz Quadrata TT",
+						},
+					},
+					["targettarget"] = {
+						["debuffs"] = {
+							["enable"] = false,
+						},
+						["name"] = {
+							["text_format"] = "[name:medium]",
+						},
+						["power"] = {
+							["height"] = 5,
+						},
+						["height"] = 26,
+						["colorOverride"] = "FORCE_ON",
+						["width"] = 200,
+					},
+					["raid"] = {
+						["horizontalSpacing"] = 1,
+						["debuffs"] = {
+							["perrow"] = 1,
+							["sizeOverride"] = 16,
+						},
+						["power"] = {
+							["height"] = 5,
+						},
+						["rdebuffs"] = {
+							["fontSize"] = 12,
+							["fontOutline"] = "OUTLINE",
+							["xOffset"] = 29,
+							["yOffset"] = 6,
+							["font"] = "Friz Quadrata TT",
+							["size"] = 20,
+						},
+						["colorOverride"] = "FORCE_ON",
+						["growthDirection"] = "RIGHT_UP",
+						["roleIcon"] = {
+							["xOffset"] = 0,
+							["damager"] = false,
+							["yOffset"] = 0,
+							["size"] = 16,
+						},
+						["healPrediction"] = true,
+						["name"] = {
+							["position"] = "BOTTOMLEFT",
+							["text_format"] = "[name:short]",
+							["yOffset"] = 1,
+						},
+						["buffs"] = {
+							["sizeOverride"] = 22,
+						},
+						["height"] = 40,
+						["verticalSpacing"] = 1,
+						["health"] = {
+							["text_format"] = "[healthcolor]",
+						},
+						["width"] = 82,
+					},
+					["bodyguard"] = {
+						["enable"] = false,
+					},
+					["player"] = {
+						["debuffs"] = {
+							["anchorPoint"] = "TOPRIGHT",
+							["fontSize"] = 14,
+							["enable"] = false,
+							["sizeOverride"] = 0,
+							["perrow"] = 5,
+						},
+						["castbar"] = {
+							["spark"] = false,
+							["insideInfoPanel"] = false,
+							["height"] = 20,
+							["format"] = "CURRENTMAX",
+							["width"] = 200,
+							["latency"] = false,
+						},
+						["colorOverride"] = "FORCE_ON",
+						["width"] = 200,
+						["health"] = {
+							["xOffset"] = 0,
+							["text_format"] = "[health:current-percent]",
+							["position"] = "RIGHT",
+						},
+						["height"] = 46,
+						["power"] = {
+							["text_format"] = "",
+							["enable"] = false,
+						},
+						["classbar"] = {
+							["enable"] = false,
+						},
+						["aurabar"] = {
+							["enable"] = false,
+						},
+					},
+					["raid40"] = {
+						["horizontalSpacing"] = 1,
+						["rdebuffs"] = {
+							["font"] = "Friz Quadrata TT",
+						},
+						["roleIcon"] = {
+							["enable"] = true,
+							["damager"] = false,
+						},
+						["verticalSpacing"] = 1,
+					},
+					["focus"] = {
+						["name"] = {
+							["text_format"] = "[name]",
+						},
+						["power"] = {
+							["height"] = 5,
+						},
+						["height"] = 26,
+						["castbar"] = {
+							["enable"] = false,
+						},
+						["colorOverride"] = "FORCE_ON",
+						["width"] = 200,
+					},
+					["target"] = {
+						["combobar"] = {
+							["height"] = 3,
+							["detachFromFrame"] = true,
+							["enable"] = false,
+						},
+						["debuffs"] = {
+							["attachTo"] = "FRAME",
+							["onlyDispellable"] = {
+								["friendly"] = true,
+							},
+							["useWhitelist"] = {
+								["friendly"] = true,
+							},
+							["noDuration"] = {
+								["friendly"] = true,
+							},
+							["playerOnly"] = {
+								["enemy"] = false,
+							},
+							["yOffset"] = 42,
+						},
+						["castbar"] = {
+							["iconXOffset"] = -11,
+							["height"] = 34,
+							["format"] = "CURRENTMAX",
+							["width"] = 200,
+							["latency"] = true,
+						},
+						["colorOverride"] = "FORCE_ON",
+						["width"] = 200,
+						["infoPanel"] = {
+							["transparent"] = true,
+						},
+						["power"] = {
+							["xOffset"] = 0,
+							["position"] = "RIGHT",
+							["height"] = 7,
+							["hideonnpc"] = false,
+							["text_format"] = "",
+							["width"] = "inset",
+						},
+						["health"] = {
+							["xOffset"] = 0,
+							["text_format"] = "[health:current-percent]",
+							["position"] = "LEFT",
+						},
+						["name"] = {
+							["position"] = "LEFT",
+							["text_format"] = "[name]",
+							["yOffset"] = 29,
+						},
+						["height"] = 46,
+						["buffs"] = {
+							["noConsolidated"] = {
+								["friendly"] = true,
+							},
+							["yOffset"] = 15,
+							["useFilter"] = "TurtleBuffs",
+						},
+						["GPSArrow"] = {
+							["enable"] = true,
+							["onMouseOver"] = false,
+						},
+						["aurabar"] = {
+							["enable"] = false,
+						},
+					},
+					["arena"] = {
+						["castbar"] = {
+							["width"] = 200,
+						},
+						["width"] = 200,
+					},
+					["assist"] = {
+						["enable"] = false,
+						["targetsGroup"] = {
+							["enable"] = false,
+						},
+					},
+					["boss"] = {
+						["debuffs"] = {
+							["anchorPoint"] = "RIGHT",
+							["xOffset"] = 2,
+							["yOffset"] = -12,
+							["numrows"] = 1,
+							["perrow"] = 4,
+						},
+						["power"] = {
+							["text_format"] = "[power:current]",
+							["height"] = 5,
+						},
+						["width"] = 150,
+						["health"] = {
+							["text_format"] = "[health:current-percent]",
+						},
+						["spacing"] = 33,
+						["height"] = 35,
+						["buffs"] = {
+							["xOffset"] = 2,
+							["yOffset"] = 12,
+							["anchorPoint"] = "RIGHT",
+							["perrow"] = 4,
+						},
+						["name"] = {
+							["position"] = "TOPLEFT",
+							["text_format"] = "[name:medium]",
+							["yOffset"] = 16,
+						},
+						["castbar"] = {
+							["height"] = 15,
+							["width"] = 150,
+						},
+					},
+				},
+			},
+			["datatexts"] = {
+				["minimapPanels"] = false,
+				["noCombatHover"] = true,
+				["minimapBottom"] = true,
+				["goldFormat"] = "SMART",
+				["panelTransparency"] = true,
+				["time24"] = true,
+				["panels"] = {
+					["LeftMiniPanel"] = "",
+					["RightMiniPanel"] = "",
+					["RightChatDataPanel"] = {
+						["middle"] = "Durability",
+					},
+					["BottomMiniPanel"] = "ElvUI Config",
+					["BottomLeftMiniPanel"] = "Time",
+					["DP_1"] = {
+						["right"] = "Combat/Arena Time",
+						["left"] = "System",
+						["middle"] = "Time",
+					},
+					["TopMiniPanel"] = "Dugi",
+					["LeftChatDataPanel"] = {
+						["right"] = "Guild",
+						["left"] = "Bags",
+						["middle"] = "Call to Arms",
+					},
+				},
+				["font"] = "Friz Quadrata TT",
+				["fontOutline"] = "OUTLINE",
+				["minimapBottomLeft"] = true,
+				["minimapBottomRight"] = true,
+				["noCombatClick"] = true,
+				["fontSize"] = 11,
+			},
+			["actionbar"] = {
+				["bar3"] = {
+					["mouseover"] = true,
+					["backdropSpacing"] = 1,
+					["buttons"] = 12,
+					["showGrid"] = false,
+					["buttonsPerRow"] = 12,
+					["backdrop"] = true,
+					["buttonspacing"] = 1,
+				},
+				["bar6"] = {
+					["buttonspacing"] = 1,
+					["backdropSpacing"] = 1,
+					["showGrid"] = false,
+				},
+				["bar2"] = {
+					["enabled"] = true,
+					["backdrop"] = true,
+					["buttonspacing"] = 1,
+					["backdropSpacing"] = 1,
+					["visibility"] = "[vehicleui] hide; [overridebar] hide; [petbattle] hide;  show",
+					["showGrid"] = false,
+				},
+				["bar1"] = {
+					["buttonspacing"] = 1,
+					["showGrid"] = false,
+					["backdrop"] = true,
+					["backdropSpacing"] = 1,
+					["paging"] = {
+						["ROGUE"] = "[form:0] 1; [form:1] 7; [form:2] 7;",
+					},
+				},
+				["bar5"] = {
+					["mouseover"] = true,
+					["backdropSpacing"] = 1,
+					["buttons"] = 12,
+					["showGrid"] = false,
+					["buttonsize"] = 36,
+					["backdrop"] = true,
+					["buttonspacing"] = 1,
+				},
+				["font"] = "Friz Quadrata TT",
+				["bar4"] = {
+					["mouseover"] = true,
+					["showGrid"] = false,
+					["buttonsPerRow"] = 6,
+					["backdropSpacing"] = 1,
+					["buttonspacing"] = 1,
+				},
+				["fontOutline"] = "OUTLINE",
+				["keyDown"] = false,
+				["stanceBar"] = {
+					["enabled"] = false,
+					["backdropSpacing"] = 1,
+					["buttonspacing"] = 1,
+				},
+				["barPet"] = {
+					["buttonspacing"] = 1,
+					["buttonsPerRow"] = 10,
+					["backdropSpacing"] = 1,
+					["buttonsize"] = 20,
+				},
+				["backdropSpacingConverted"] = true,
+			},
+			["nameplates"] = {
+				["fontSize"] = 11,
+				["fontOutline"] = "OUTLINE",
+				["clampToScreen"] = true,
+				["statusbar"] = "Melli",
+				["font"] = "Friz Quadrata TT",
+				["units"] = {
+					["ENEMY_NPC"] = {
+						["healthbar"] = {
+							["height"] = 15,
+						},
+					},
+					["ENEMY_PLAYER"] = {
+						["healthbar"] = {
+							["text"] = {
+								["enable"] = true,
+							},
+						},
+					},
+					["HEALER"] = {
+						["healthbar"] = {
+							["text"] = {
+								["enable"] = true,
+								["format"] = "CURRENT_PERCENT",
+							},
+						},
+					},
+				},
 			},
 			["bossAuraFiltersConverted"] = true,
 			["CustomTweaks"] = {
@@ -11051,499 +11581,6 @@ ElvDB = {
 				},
 				["PowerBarTexture"] = {
 					["powerstatusbar"] = "ElvUI Blank",
-				},
-			},
-			["datatexts"] = {
-				["minimapPanels"] = false,
-				["fontSize"] = 11,
-				["minimapBottom"] = true,
-				["goldFormat"] = "SMART",
-				["panelTransparency"] = true,
-				["time24"] = true,
-				["panels"] = {
-					["LeftMiniPanel"] = "",
-					["RightMiniPanel"] = "",
-					["RightChatDataPanel"] = {
-						["middle"] = "Durability",
-					},
-					["BottomMiniPanel"] = "ElvUI Config",
-					["BottomLeftMiniPanel"] = "Time",
-					["DP_1"] = {
-						["right"] = "Combat/Arena Time",
-						["left"] = "System",
-						["middle"] = "Time",
-					},
-					["TopMiniPanel"] = "Dugi",
-					["LeftChatDataPanel"] = {
-						["right"] = "Guild",
-						["left"] = "Bags",
-						["middle"] = "Call to Arms",
-					},
-				},
-				["font"] = "Friz Quadrata TT",
-				["fontOutline"] = "OUTLINE",
-				["noCombatHover"] = true,
-				["minimapBottomLeft"] = true,
-				["minimapBottomRight"] = true,
-				["noCombatClick"] = true,
-			},
-			["actionbar"] = {
-				["bar3"] = {
-					["buttonspacing"] = 1,
-					["mouseover"] = true,
-					["buttons"] = 12,
-					["showGrid"] = false,
-					["buttonsPerRow"] = 12,
-					["backdrop"] = true,
-					["backdropSpacing"] = 1,
-				},
-				["bar6"] = {
-					["buttonspacing"] = 1,
-					["backdropSpacing"] = 1,
-					["showGrid"] = false,
-				},
-				["bar2"] = {
-					["enabled"] = true,
-					["showGrid"] = false,
-					["buttonspacing"] = 1,
-					["visibility"] = "[vehicleui] hide; [overridebar] hide; [petbattle] hide;  show",
-					["backdrop"] = true,
-					["backdropSpacing"] = 1,
-				},
-				["bar1"] = {
-					["buttonspacing"] = 1,
-					["paging"] = {
-						["ROGUE"] = "[form:0] 1; [form:1] 7; [form:2] 7;",
-					},
-					["backdropSpacing"] = 1,
-					["backdrop"] = true,
-					["showGrid"] = false,
-				},
-				["bar5"] = {
-					["buttonspacing"] = 1,
-					["buttonsize"] = 36,
-					["buttons"] = 12,
-					["showGrid"] = false,
-					["mouseover"] = true,
-					["backdrop"] = true,
-					["backdropSpacing"] = 1,
-				},
-				["font"] = "Friz Quadrata TT",
-				["bar4"] = {
-					["buttonspacing"] = 1,
-					["showGrid"] = false,
-					["buttonsPerRow"] = 6,
-					["mouseover"] = true,
-					["backdropSpacing"] = 1,
-				},
-				["fontOutline"] = "OUTLINE",
-				["keyDown"] = false,
-				["stanceBar"] = {
-					["enabled"] = false,
-					["backdropSpacing"] = 1,
-					["buttonspacing"] = 1,
-				},
-				["barPet"] = {
-					["buttonspacing"] = 1,
-					["buttonsPerRow"] = 10,
-					["backdropSpacing"] = 1,
-					["buttonsize"] = 20,
-				},
-				["backdropSpacingConverted"] = true,
-			},
-			["nameplates"] = {
-				["fontSize"] = 11,
-				["fontOutline"] = "OUTLINE",
-				["clampToScreen"] = true,
-				["font"] = "Friz Quadrata TT",
-				["statusbar"] = "Melli",
-				["units"] = {
-					["ENEMY_NPC"] = {
-						["healthbar"] = {
-							["height"] = 15,
-						},
-					},
-					["HEALER"] = {
-						["healthbar"] = {
-							["text"] = {
-								["enable"] = true,
-								["format"] = "CURRENT_PERCENT",
-							},
-						},
-					},
-					["ENEMY_PLAYER"] = {
-						["healthbar"] = {
-							["text"] = {
-								["enable"] = true,
-							},
-						},
-					},
-				},
-			},
-			["unitframe"] = {
-				["targetOnMouseDown"] = true,
-				["fontSize"] = 11,
-				["colors"] = {
-					["health_backdrop_dead"] = {
-						["b"] = 0,
-						["g"] = 0,
-						["r"] = 0,
-					},
-					["health_backdrop"] = {
-						["r"] = 0,
-						["g"] = 0,
-						["b"] = 0,
-					},
-					["auraBarBuff"] = {
-						["b"] = 0.45,
-						["g"] = 0.83,
-						["r"] = 0.67,
-					},
-					["power"] = {
-						["RAGE"] = {
-							["r"] = 1,
-							["g"] = 0,
-							["b"] = 0,
-						},
-					},
-					["castColor"] = {
-						["b"] = 1,
-						["g"] = 1,
-						["r"] = 1,
-					},
-					["useDeadBackdrop"] = true,
-					["colorhealthbyvalue"] = false,
-					["healthclass"] = true,
-				},
-				["fontOutline"] = "OUTLINE",
-				["statusbar"] = "Melli",
-				["font"] = "Friz Quadrata TT",
-				["smoothbars"] = true,
-				["units"] = {
-					["tank"] = {
-						["enable"] = false,
-						["targetsGroup"] = {
-							["enable"] = false,
-						},
-						["verticalSpacing"] = 20,
-					},
-					["pet"] = {
-						["height"] = 26,
-						["power"] = {
-							["enable"] = false,
-						},
-						["colorOverride"] = "FORCE_ON",
-						["width"] = 200,
-					},
-					["assist"] = {
-						["enable"] = false,
-						["targetsGroup"] = {
-							["enable"] = false,
-						},
-					},
-					["targettarget"] = {
-						["debuffs"] = {
-							["enable"] = false,
-						},
-						["name"] = {
-							["text_format"] = "[name:medium]",
-						},
-						["power"] = {
-							["height"] = 5,
-						},
-						["height"] = 26,
-						["colorOverride"] = "FORCE_ON",
-						["width"] = 200,
-					},
-					["arena"] = {
-						["width"] = 200,
-						["castbar"] = {
-							["width"] = 200,
-						},
-					},
-					["bodyguard"] = {
-						["enable"] = false,
-					},
-					["player"] = {
-						["debuffs"] = {
-							["anchorPoint"] = "TOPRIGHT",
-							["fontSize"] = 14,
-							["enable"] = false,
-							["sizeOverride"] = 0,
-							["perrow"] = 5,
-						},
-						["castbar"] = {
-							["spark"] = false,
-							["insideInfoPanel"] = false,
-							["height"] = 20,
-							["format"] = "CURRENTMAX",
-							["latency"] = false,
-							["width"] = 200,
-						},
-						["colorOverride"] = "FORCE_ON",
-						["width"] = 200,
-						["health"] = {
-							["xOffset"] = 0,
-							["text_format"] = "[health:current-percent]",
-							["position"] = "RIGHT",
-						},
-						["height"] = 46,
-						["power"] = {
-							["text_format"] = "",
-							["enable"] = false,
-						},
-						["classbar"] = {
-							["enable"] = false,
-						},
-						["aurabar"] = {
-							["enable"] = false,
-						},
-					},
-					["raid40"] = {
-						["horizontalSpacing"] = 1,
-						["rdebuffs"] = {
-							["font"] = "Friz Quadrata TT",
-						},
-						["verticalSpacing"] = 1,
-						["roleIcon"] = {
-							["enable"] = true,
-							["damager"] = false,
-						},
-					},
-					["focus"] = {
-						["name"] = {
-							["text_format"] = "[name]",
-						},
-						["power"] = {
-							["height"] = 5,
-						},
-						["height"] = 26,
-						["castbar"] = {
-							["enable"] = false,
-						},
-						["colorOverride"] = "FORCE_ON",
-						["width"] = 200,
-					},
-					["target"] = {
-						["combobar"] = {
-							["height"] = 3,
-							["detachFromFrame"] = true,
-							["enable"] = false,
-						},
-						["debuffs"] = {
-							["attachTo"] = "FRAME",
-							["onlyDispellable"] = {
-								["friendly"] = true,
-							},
-							["useWhitelist"] = {
-								["friendly"] = true,
-							},
-							["noDuration"] = {
-								["friendly"] = true,
-							},
-							["playerOnly"] = {
-								["enemy"] = false,
-							},
-							["yOffset"] = 42,
-						},
-						["GPSArrow"] = {
-							["enable"] = true,
-							["onMouseOver"] = false,
-						},
-						["colorOverride"] = "FORCE_ON",
-						["width"] = 200,
-						["infoPanel"] = {
-							["transparent"] = true,
-						},
-						["power"] = {
-							["height"] = 7,
-							["position"] = "RIGHT",
-							["xOffset"] = 0,
-							["hideonnpc"] = false,
-							["text_format"] = "",
-							["width"] = "inset",
-						},
-						["health"] = {
-							["xOffset"] = 0,
-							["text_format"] = "[health:current-percent]",
-							["position"] = "LEFT",
-						},
-						["castbar"] = {
-							["iconXOffset"] = -11,
-							["height"] = 34,
-							["format"] = "CURRENTMAX",
-							["latency"] = true,
-							["width"] = 200,
-						},
-						["height"] = 46,
-						["buffs"] = {
-							["noConsolidated"] = {
-								["friendly"] = true,
-							},
-							["useFilter"] = "TurtleBuffs",
-							["yOffset"] = 15,
-						},
-						["name"] = {
-							["yOffset"] = 29,
-							["text_format"] = "[name]",
-							["position"] = "LEFT",
-						},
-						["aurabar"] = {
-							["enable"] = false,
-						},
-					},
-					["raid"] = {
-						["horizontalSpacing"] = 1,
-						["debuffs"] = {
-							["sizeOverride"] = 16,
-							["perrow"] = 1,
-						},
-						["power"] = {
-							["height"] = 5,
-						},
-						["rdebuffs"] = {
-							["fontSize"] = 12,
-							["fontOutline"] = "OUTLINE",
-							["xOffset"] = 29,
-							["size"] = 20,
-							["font"] = "Friz Quadrata TT",
-							["yOffset"] = 6,
-						},
-						["colorOverride"] = "FORCE_ON",
-						["growthDirection"] = "RIGHT_UP",
-						["width"] = 82,
-						["name"] = {
-							["yOffset"] = 1,
-							["text_format"] = "[name:short]",
-							["position"] = "BOTTOMLEFT",
-						},
-						["health"] = {
-							["text_format"] = "[healthcolor]",
-						},
-						["buffs"] = {
-							["sizeOverride"] = 22,
-						},
-						["height"] = 40,
-						["verticalSpacing"] = 1,
-						["healPrediction"] = true,
-						["roleIcon"] = {
-							["xOffset"] = 0,
-							["size"] = 16,
-							["yOffset"] = 0,
-							["damager"] = false,
-						},
-					},
-					["party"] = {
-						["roleIcon"] = {
-							["position"] = "RIGHT",
-							["xOffset"] = 1,
-							["size"] = 20,
-							["damager"] = false,
-							["yOffset"] = 8,
-						},
-						["debuffs"] = {
-							["xOffset"] = 1,
-							["sizeOverride"] = 30,
-							["perrow"] = 5,
-						},
-						["power"] = {
-							["text_format"] = "",
-						},
-						["healPrediction"] = true,
-						["colorOverride"] = "FORCE_ON",
-						["width"] = 150,
-						["name"] = {
-							["text_format"] = "[name:medium] [difficultycolor][smartlevel]",
-						},
-						["height"] = 40,
-						["buffs"] = {
-							["sizeOverride"] = 22,
-						},
-						["rdebuffs"] = {
-							["font"] = "Friz Quadrata TT",
-						},
-					},
-					["boss"] = {
-						["debuffs"] = {
-							["anchorPoint"] = "RIGHT",
-							["xOffset"] = 2,
-							["perrow"] = 4,
-							["numrows"] = 1,
-							["yOffset"] = -12,
-						},
-						["castbar"] = {
-							["height"] = 15,
-							["width"] = 150,
-						},
-						["width"] = 150,
-						["health"] = {
-							["text_format"] = "[health:current-percent]",
-						},
-						["spacing"] = 33,
-						["height"] = 35,
-						["buffs"] = {
-							["xOffset"] = 2,
-							["perrow"] = 4,
-							["anchorPoint"] = "RIGHT",
-							["yOffset"] = 12,
-						},
-						["power"] = {
-							["text_format"] = "[power:current]",
-							["height"] = 5,
-						},
-						["name"] = {
-							["yOffset"] = 16,
-							["text_format"] = "[name:medium]",
-							["position"] = "TOPLEFT",
-						},
-					},
-				},
-			},
-			["general"] = {
-				["totems"] = {
-					["enable"] = false,
-				},
-				["fontSize"] = 11,
-				["interruptAnnounce"] = "SAY",
-				["autoAcceptInvite"] = true,
-				["autoRepair"] = "PLAYER",
-				["minimap"] = {
-					["icons"] = {
-						["mail"] = {
-							["position"] = "RIGHT",
-						},
-						["classHall"] = {
-							["xOffset"] = -3,
-							["yOffset"] = -45,
-						},
-						["vehicleLeave"] = {
-							["yOffset"] = 20,
-						},
-					},
-				},
-				["health_backdrop"] = {
-				},
-				["bottomPanel"] = false,
-				["valuecolor"] = {
-					["b"] = 0.04,
-					["g"] = 0.49,
-					["r"] = 1,
-				},
-				["loginmessage"] = false,
-				["threat"] = {
-					["position"] = "LEFTCHAT",
-				},
-				["talkingHeadFrameScale"] = 0.5,
-				["bordercolor"] = {
-					["b"] = 0.31,
-					["g"] = 0.31,
-					["r"] = 0.31,
-				},
-				["font"] = "Friz Quadrata TT",
-				["numberPrefixStyle"] = "ENGLISH",
-				["topPanel"] = false,
-				["vendorGrays"] = true,
-				["RAGE"] = {
 				},
 			},
 			["lowresolutionset"] = true,
@@ -17161,13 +17198,12 @@ ElvPrivateDB = {
 			["install_complete"] = "8.25",
 		},
 		["Chucklefunk - Stormrage"] = {
+			["general"] = {
+				["dmgfont"] = "Friz Quadrata TT",
+			},
 			["sle"] = {
 				["module"] = {
 					["screensaver"] = true,
-				},
-				["characterGoldsSorting"] = {
-					["Stormrage"] = {
-					},
 				},
 				["professions"] = {
 					["fishing"] = {
@@ -17177,10 +17213,11 @@ ElvPrivateDB = {
 						["style"] = "SMALL",
 					},
 				},
+				["characterGoldsSorting"] = {
+					["Stormrage"] = {
+					},
+				},
 				["install_complete"] = "3.16",
-			},
-			["general"] = {
-				["dmgfont"] = "Friz Quadrata TT",
 			},
 			["cooldown"] = {
 				["enable"] = false,
@@ -17204,13 +17241,13 @@ ElvPrivateDB = {
 		["Emmarosa - Stormrage"] = {
 			["general"] = {
 				["chatBubbleFontSize"] = 12,
-				["normTex"] = "Melli",
+				["namefont"] = "Gotham-Narrow",
 				["minimap"] = {
 					["hideCalendar"] = false,
 				},
 				["dmgfont"] = "Gotham-Narrow",
+				["normTex"] = "Melli",
 				["chatBubbleFont"] = "Gotham-Narrow",
-				["namefont"] = "Gotham-Narrow",
 				["glossTex"] = "Melli Dark",
 			},
 			["addonskins"] = {
@@ -17222,14 +17259,17 @@ ElvPrivateDB = {
 					["blizzmove"] = false,
 					["screensaver"] = true,
 				},
+				["characterGoldsSorting"] = {
+					["Stormrage"] = {
+					},
+				},
 				["skins"] = {
 					["objectiveTracker"] = {
 						["texture"] = "Melli",
 					},
 				},
-				["characterGoldsSorting"] = {
-					["Stormrage"] = {
-					},
+				["vehicle"] = {
+					["enable"] = true,
 				},
 				["install_complete"] = "3.14",
 			},

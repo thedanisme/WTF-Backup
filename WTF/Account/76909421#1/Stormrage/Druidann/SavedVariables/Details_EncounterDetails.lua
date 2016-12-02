@@ -1,5 +1,748 @@
 
 EncounterDetailsDB = {
+	["emotes"] = {
+		{
+			{
+				8.16500000000815, -- [1]
+				"|TInterface\\Icons\\INV_Misc_Horn_03:20|t Hymdall begins to blow the |cFFFF0404|Hspell:228012|h[Horn of Valor]|h|r!", -- [2]
+				"Hymdall", -- [3]
+				1, -- [4]
+			}, -- [1]
+			{
+				8.16500000000815, -- [1]
+				"Only cowards fear the call of battle!", -- [2]
+				"Hymdall", -- [3]
+				7, -- [4]
+			}, -- [2]
+			{
+				24.1460000000079, -- [1]
+				"Fall in line!", -- [2]
+				"Hyrja", -- [3]
+				7, -- [4]
+			}, -- [3]
+			{
+				24.1460000000079, -- [1]
+				"|TInterface\\Icons\\ABILITY_PRIEST_FLASHOFLIGHT.BLP:20|t Hyrja targets |cFFFF0000Wargate|r with |cFFFF0404|Hspell:228162|h[Shield of Light]|h|r!", -- [2]
+				"Hyrja", -- [3]
+				1, -- [4]
+			}, -- [4]
+			{
+				35.1169999999984, -- [1]
+				"|TInterface\\Icons\\INV_Misc_Horn_03:20|t Hymdall begins to blow the |cFFFF0404|Hspell:228012|h[Horn of Valor]|h|r!", -- [2]
+				"Hymdall", -- [3]
+				1, -- [4]
+			}, -- [5]
+			{
+				35.1169999999984, -- [1]
+				"Only cowards fear the call of battle!", -- [2]
+				"Hymdall", -- [3]
+				7, -- [4]
+			}, -- [6]
+			{
+				40.1520000000019, -- [1]
+				"|TInterface\\Icons\\ability_bossfelmagnaron_rune.blp:20|t Odyn begins to |cFFFF0404|Hspell:227503|h[Draw Power]|h|r from the runes!", -- [2]
+				"Odyn", -- [3]
+				2, -- [4]
+			}, -- [7]
+			{
+				40.1520000000019, -- [1]
+				"Runebearers! Feed me power!", -- [2]
+				"Odyn", -- [3]
+				7, -- [4]
+			}, -- [8]
+			{
+				56.1199999999954, -- [1]
+				"Stand together--or die alone!", -- [2]
+				"Hyrja", -- [3]
+				7, -- [4]
+			}, -- [9]
+			{
+				56.1199999999954, -- [1]
+				"|TInterface\\Icons\\ABILITY_PRIEST_FLASHOFLIGHT.BLP:20|t Hyrja targets |cFFFF0000Svalynn|r with |cFFFF0404|Hspell:228162|h[Shield of Light]|h|r!", -- [2]
+				"Hyrja", -- [3]
+				1, -- [4]
+			}, -- [10]
+			{
+				70.143000000011, -- [1]
+				"Behold the power granted me by the titans!", -- [2]
+				"Odyn", -- [3]
+				7, -- [4]
+			}, -- [11]
+			{
+				78.1969999999856, -- [1]
+				"|TInterface\\Icons\\INV_Misc_Horn_03:20|t Hymdall begins to blow the |cFFFF0404|Hspell:228012|h[Horn of Valor]|h|r!", -- [2]
+				"Hymdall", -- [3]
+				1, -- [4]
+			}, -- [12]
+			{
+				78.1969999999856, -- [1]
+				"Only cowards fear the call of battle!", -- [2]
+				"Hymdall", -- [3]
+				7, -- [4]
+			}, -- [13]
+			{
+				94.1460000000079, -- [1]
+				"Stand together--or die alone!", -- [2]
+				"Hyrja", -- [3]
+				7, -- [4]
+			}, -- [14]
+			{
+				94.1460000000079, -- [1]
+				"|TInterface\\Icons\\ABILITY_PRIEST_FLASHOFLIGHT.BLP:20|t Hyrja targets |cFFFF0000Druidann|r with |cFFFF0404|Hspell:228162|h[Shield of Light]|h|r!", -- [2]
+				"Hyrja", -- [3]
+				1, -- [4]
+			}, -- [15]
+			{
+				105.174999999988, -- [1]
+				"|TInterface\\Icons\\INV_Misc_Horn_03:20|t Hymdall begins to blow the |cFFFF0404|Hspell:228012|h[Horn of Valor]|h|r!", -- [2]
+				"Hymdall", -- [3]
+				1, -- [4]
+			}, -- [16]
+			{
+				105.174999999988, -- [1]
+				"Only cowards fear the call of battle!", -- [2]
+				"Hymdall", -- [3]
+				7, -- [4]
+			}, -- [17]
+			{
+				110.162000000011, -- [1]
+				"|TInterface\\Icons\\ability_bossfelmagnaron_rune.blp:20|t Odyn begins to |cFFFF0404|Hspell:227503|h[Draw Power]|h|r from the runes!", -- [2]
+				"Odyn", -- [3]
+				2, -- [4]
+			}, -- [18]
+			{
+				110.162000000011, -- [1]
+				"Runebearers! Feed me power!", -- [2]
+				"Odyn", -- [3]
+				7, -- [4]
+			}, -- [19]
+			{
+				126.154999999999, -- [1]
+				"Stand together--or die alone!", -- [2]
+				"Hyrja", -- [3]
+				7, -- [4]
+			}, -- [20]
+			{
+				126.154999999999, -- [1]
+				"|TInterface\\Icons\\ABILITY_PRIEST_FLASHOFLIGHT.BLP:20|t Hyrja targets |cFFFF0000Daemonarrow|r with |cFFFF0404|Hspell:228162|h[Shield of Light]|h|r!", -- [2]
+				"Hyrja", -- [3]
+				1, -- [4]
+			}, -- [21]
+			{
+				140.176000000007, -- [1]
+				"Can you withstand a keeper's might?", -- [2]
+				"Odyn", -- [3]
+				7, -- [4]
+			}, -- [22]
+			{
+				148.149999999994, -- [1]
+				"|TInterface\\Icons\\INV_Misc_Horn_03:20|t Hymdall begins to blow the |cFFFF0404|Hspell:228012|h[Horn of Valor]|h|r!", -- [2]
+				"Hymdall", -- [3]
+				1, -- [4]
+			}, -- [23]
+			{
+				148.149999999994, -- [1]
+				"Only cowards fear the call of battle!", -- [2]
+				"Hymdall", -- [3]
+				7, -- [4]
+			}, -- [24]
+			{
+				153.52900000001, -- [1]
+				"Well done... so far! But I will judge for myself whether you are worthy!", -- [2]
+				"Odyn", -- [3]
+				7, -- [4]
+			}, -- [25]
+			{
+				176.252000000008, -- [1]
+				"|cFFFF0000Hyrja|r leaps back into battle!", -- [2]
+				"Hyrja", -- [3]
+				1, -- [4]
+			}, -- [26]
+			{
+				177.780999999988, -- [1]
+				"Helya won't be as gentle as I!", -- [2]
+				"Hyrja", -- [3]
+				7, -- [4]
+			}, -- [27]
+			{
+				185.097000000009, -- [1]
+				"Unworthy!", -- [2]
+				"Hyrja", -- [3]
+				7, -- [4]
+			}, -- [28]
+			{
+				185.918999999994, -- [1]
+				"Stand together--or die alone!", -- [2]
+				"Hyrja", -- [3]
+				7, -- [4]
+			}, -- [29]
+			{
+				185.918999999994, -- [1]
+				"|TInterface\\Icons\\ABILITY_PRIEST_FLASHOFLIGHT.BLP:20|t Hyrja targets |cFFFF0000Chozenone|r with |cFFFF0404|Hspell:228162|h[Shield of Light]|h|r!", -- [2]
+				"Hyrja", -- [3]
+				1, -- [4]
+			}, -- [30]
+			{
+				202.858999999997, -- [1]
+				"|TInterface\\Icons\\ability_bossfelmagnaron_rune.blp:20|t Odyn begins to |cFFFF0404|Hspell:227503|h[Draw Power]|h|r from the runes!", -- [2]
+				"Odyn", -- [3]
+				2, -- [4]
+			}, -- [31]
+			{
+				202.858999999997, -- [1]
+				"Valarjar! Prepare the runes! These heroes need testing...", -- [2]
+				"Odyn", -- [3]
+				7, -- [4]
+			}, -- [32]
+			{
+				218.921999999991, -- [1]
+				"Disappointing!", -- [2]
+				"Odyn", -- [3]
+				7, -- [4]
+			}, -- [33]
+			{
+				232.874000000011, -- [1]
+				"Can you withstand a keeper's might?", -- [2]
+				"Odyn", -- [3]
+				7, -- [4]
+			}, -- [34]
+			{
+				245.878999999986, -- [1]
+				"|cFFFF0404Hymdall|r! leaps back into battle!", -- [2]
+				"Hymdall", -- [3]
+				1, -- [4]
+			}, -- [35]
+			{
+				245.878999999986, -- [1]
+				"Is there truly valor in your hearts?", -- [2]
+				"Hymdall", -- [3]
+				7, -- [4]
+			}, -- [36]
+			{
+				255.986000000004, -- [1]
+				"|TInterface\\Icons\\INV_Misc_Horn_03:20|t Hymdall begins to blow the |cFFFF0404|Hspell:228012|h[Horn of Valor]|h|r!", -- [2]
+				"Hymdall", -- [3]
+				1, -- [4]
+			}, -- [37]
+			{
+				255.986000000004, -- [1]
+				"Only cowards fear the call of battle!", -- [2]
+				"Hymdall", -- [3]
+				7, -- [4]
+			}, -- [38]
+			{
+				272.910000000004, -- [1]
+				"Runebearers! Feed me power!", -- [2]
+				"Odyn", -- [3]
+				7, -- [4]
+			}, -- [39]
+			{
+				288.959000000003, -- [1]
+				"Disappointing!", -- [2]
+				"Odyn", -- [3]
+				7, -- [4]
+			}, -- [40]
+			{
+				300.598999999987, -- [1]
+				"Get back up! FIGHT!", -- [2]
+				"Odyn", -- [3]
+				7, -- [4]
+			}, -- [41]
+			{
+				302.888000000006, -- [1]
+				"Can you withstand a keeper's might?", -- [2]
+				"Odyn", -- [3]
+				7, -- [4]
+			}, -- [42]
+			["boss"] = "Odyn",
+		}, -- [1]
+		{
+			{
+				2.36300000001211, -- [1]
+				"My blessings to you.", -- [2]
+				"Vision of Ysera", -- [3]
+				5, -- [4]
+			}, -- [1]
+			{
+				7.83600000001025, -- [1]
+				"|TInterface\\Icons\\INV_Misc_Horn_03:20|t Hymdall begins to blow the |cFFFF0404|Hspell:228012|h[Horn of Valor]|h|r!", -- [2]
+				"Hymdall", -- [3]
+				1, -- [4]
+			}, -- [2]
+			{
+				7.83600000001025, -- [1]
+				"Only cowards fear the call of battle!", -- [2]
+				"Hymdall", -- [3]
+				7, -- [4]
+			}, -- [3]
+			{
+				23.8289999999979, -- [1]
+				"Stand together--or die alone!", -- [2]
+				"Hyrja", -- [3]
+				7, -- [4]
+			}, -- [4]
+			{
+				23.8289999999979, -- [1]
+				"|TInterface\\Icons\\ABILITY_PRIEST_FLASHOFLIGHT.BLP:20|t Hyrja targets |cFFFF0000Wargate|r with |cFFFF0404|Hspell:228162|h[Shield of Light]|h|r!", -- [2]
+				"Hyrja", -- [3]
+				1, -- [4]
+			}, -- [5]
+			{
+				34.8189999999886, -- [1]
+				"|TInterface\\Icons\\INV_Misc_Horn_03:20|t Hymdall begins to blow the |cFFFF0404|Hspell:228012|h[Horn of Valor]|h|r!", -- [2]
+				"Hymdall", -- [3]
+				1, -- [4]
+			}, -- [6]
+			{
+				34.8189999999886, -- [1]
+				"Only cowards fear the call of battle!", -- [2]
+				"Hymdall", -- [3]
+				7, -- [4]
+			}, -- [7]
+			{
+				39.8289999999979, -- [1]
+				"|TInterface\\Icons\\ability_bossfelmagnaron_rune.blp:20|t Odyn begins to |cFFFF0404|Hspell:227503|h[Draw Power]|h|r from the runes!", -- [2]
+				"Odyn", -- [3]
+				2, -- [4]
+			}, -- [8]
+			{
+				39.8289999999979, -- [1]
+				"Runebearers! Feed me power!", -- [2]
+				"Odyn", -- [3]
+				7, -- [4]
+			}, -- [9]
+			{
+				55.8239999999933, -- [1]
+				"Stand together--or die alone!", -- [2]
+				"Hyrja", -- [3]
+				7, -- [4]
+			}, -- [10]
+			{
+				55.8239999999933, -- [1]
+				"|TInterface\\Icons\\ABILITY_PRIEST_FLASHOFLIGHT.BLP:20|t Hyrja targets |cFFFF0000Zellerina|r with |cFFFF0404|Hspell:228162|h[Shield of Light]|h|r!", -- [2]
+				"Hyrja", -- [3]
+				1, -- [4]
+			}, -- [11]
+			{
+				69.8379999999888, -- [1]
+				"Can you withstand a keeper's might?", -- [2]
+				"Odyn", -- [3]
+				7, -- [4]
+			}, -- [12]
+			{
+				77.8420000000042, -- [1]
+				"|TInterface\\Icons\\INV_Misc_Horn_03:20|t Hymdall begins to blow the |cFFFF0404|Hspell:228012|h[Horn of Valor]|h|r!", -- [2]
+				"Hymdall", -- [3]
+				1, -- [4]
+			}, -- [13]
+			{
+				77.8420000000042, -- [1]
+				"Only cowards fear the call of battle!", -- [2]
+				"Hymdall", -- [3]
+				7, -- [4]
+			}, -- [14]
+			{
+				93.8420000000042, -- [1]
+				"Stand together--or die alone!", -- [2]
+				"Hyrja", -- [3]
+				7, -- [4]
+			}, -- [15]
+			{
+				93.8420000000042, -- [1]
+				"|TInterface\\Icons\\ABILITY_PRIEST_FLASHOFLIGHT.BLP:20|t Hyrja targets |cFFFF0000Daemonarrow|r with |cFFFF0404|Hspell:228162|h[Shield of Light]|h|r!", -- [2]
+				"Hyrja", -- [3]
+				1, -- [4]
+			}, -- [16]
+			{
+				104.834000000003, -- [1]
+				"|TInterface\\Icons\\INV_Misc_Horn_03:20|t Hymdall begins to blow the |cFFFF0404|Hspell:228012|h[Horn of Valor]|h|r!", -- [2]
+				"Hymdall", -- [3]
+				1, -- [4]
+			}, -- [17]
+			{
+				104.834000000003, -- [1]
+				"Only cowards fear the call of battle!", -- [2]
+				"Hymdall", -- [3]
+				7, -- [4]
+			}, -- [18]
+			{
+				109.823000000004, -- [1]
+				"|TInterface\\Icons\\ability_bossfelmagnaron_rune.blp:20|t Odyn begins to |cFFFF0404|Hspell:227503|h[Draw Power]|h|r from the runes!", -- [2]
+				"Odyn", -- [3]
+				2, -- [4]
+			}, -- [19]
+			{
+				109.823000000004, -- [1]
+				"Runebearers! Feed me power!", -- [2]
+				"Odyn", -- [3]
+				7, -- [4]
+			}, -- [20]
+			{
+				125.820000000007, -- [1]
+				"Fall in line!", -- [2]
+				"Hyrja", -- [3]
+				7, -- [4]
+			}, -- [21]
+			{
+				125.820000000007, -- [1]
+				"|TInterface\\Icons\\ABILITY_PRIEST_FLASHOFLIGHT.BLP:20|t Hyrja targets |cFFFF0000Creseweiss|r with |cFFFF0404|Hspell:228162|h[Shield of Light]|h|r!", -- [2]
+				"Hyrja", -- [3]
+				1, -- [4]
+			}, -- [22]
+			{
+				139.853000000003, -- [1]
+				"Behold the power granted me by the titans!", -- [2]
+				"Odyn", -- [3]
+				7, -- [4]
+			}, -- [23]
+			{
+				147.84599999999, -- [1]
+				"|TInterface\\Icons\\INV_Misc_Horn_03:20|t Hymdall begins to blow the |cFFFF0404|Hspell:228012|h[Horn of Valor]|h|r!", -- [2]
+				"Hymdall", -- [3]
+				1, -- [4]
+			}, -- [24]
+			{
+				147.84599999999, -- [1]
+				"Only cowards fear the call of battle!", -- [2]
+				"Hymdall", -- [3]
+				7, -- [4]
+			}, -- [25]
+			{
+				163.869999999995, -- [1]
+				"Stand together--or die alone!", -- [2]
+				"Hyrja", -- [3]
+				7, -- [4]
+			}, -- [26]
+			{
+				163.869999999995, -- [1]
+				"|TInterface\\Icons\\ABILITY_PRIEST_FLASHOFLIGHT.BLP:20|t Hyrja targets |cFFFF0000Creseweiss|r with |cFFFF0404|Hspell:228162|h[Shield of Light]|h|r!", -- [2]
+				"Hyrja", -- [3]
+				1, -- [4]
+			}, -- [27]
+			{
+				174.872000000003, -- [1]
+				"|TInterface\\Icons\\INV_Misc_Horn_03:20|t Hymdall begins to blow the |cFFFF0404|Hspell:228012|h[Horn of Valor]|h|r!", -- [2]
+				"Hymdall", -- [3]
+				1, -- [4]
+			}, -- [28]
+			{
+				174.872000000003, -- [1]
+				"Only cowards fear the call of battle!", -- [2]
+				"Hymdall", -- [3]
+				7, -- [4]
+			}, -- [29]
+			{
+				179.905999999988, -- [1]
+				"Valarjar! Prepare the runes! These heroes need testing...", -- [2]
+				"Odyn", -- [3]
+				7, -- [4]
+			}, -- [30]
+			{
+				190.719000000012, -- [1]
+				"Unworthy!", -- [2]
+				"Hyrja", -- [3]
+				7, -- [4]
+			}, -- [31]
+			{
+				195.883000000002, -- [1]
+				"Fall in line!", -- [2]
+				"Hyrja", -- [3]
+				7, -- [4]
+			}, -- [32]
+			{
+				195.883000000002, -- [1]
+				"|TInterface\\Icons\\ABILITY_PRIEST_FLASHOFLIGHT.BLP:20|t Hyrja targets |cFFFF0000Svalynn|r with |cFFFF0404|Hspell:228162|h[Shield of Light]|h|r!", -- [2]
+				"Hyrja", -- [3]
+				1, -- [4]
+			}, -- [33]
+			{
+				200.640000000014, -- [1]
+				"Weak--as expected!", -- [2]
+				"Hymdall", -- [3]
+				7, -- [4]
+			}, -- [34]
+			{
+				202.315999999992, -- [1]
+				"Unworthy!", -- [2]
+				"Hyrja", -- [3]
+				7, -- [4]
+			}, -- [35]
+			["boss"] = "Odyn",
+		}, -- [2]
+		{
+			{
+				0.1, -- [1]
+				"I will be the judge now.", -- [2]
+				"Hymdall", -- [3]
+				7, -- [4]
+			}, -- [1]
+			{
+				8.0679999999993, -- [1]
+				"|TInterface\\Icons\\INV_Misc_Horn_03:20|t Hymdall begins to blow the |cFFFF0404|Hspell:228012|h[Horn of Valor]|h|r!", -- [2]
+				"Hymdall", -- [3]
+				1, -- [4]
+			}, -- [2]
+			{
+				8.0679999999993, -- [1]
+				"Only cowards fear the call of battle!", -- [2]
+				"Hymdall", -- [3]
+				7, -- [4]
+			}, -- [3]
+			{
+				24.25, -- [1]
+				"Fall in line!", -- [2]
+				"Hyrja", -- [3]
+				7, -- [4]
+			}, -- [4]
+			{
+				24.25, -- [1]
+				"|TInterface\\Icons\\ABILITY_PRIEST_FLASHOFLIGHT.BLP:20|t Hyrja targets |cFFFF0000Toomanyprocs|r with |cFFFF0404|Hspell:228162|h[Shield of Light]|h|r!", -- [2]
+				"Hyrja", -- [3]
+				1, -- [4]
+			}, -- [5]
+			{
+				35.2289999999921, -- [1]
+				"|TInterface\\Icons\\INV_Misc_Horn_03:20|t Hymdall begins to blow the |cFFFF0404|Hspell:228012|h[Horn of Valor]|h|r!", -- [2]
+				"Hymdall", -- [3]
+				1, -- [4]
+			}, -- [6]
+			{
+				35.2289999999921, -- [1]
+				"Only cowards fear the call of battle!", -- [2]
+				"Hymdall", -- [3]
+				7, -- [4]
+			}, -- [7]
+			{
+				40.2410000000091, -- [1]
+				"|TInterface\\Icons\\ability_bossfelmagnaron_rune.blp:20|t Odyn begins to |cFFFF0404|Hspell:227503|h[Draw Power]|h|r from the runes!", -- [2]
+				"Odyn", -- [3]
+				2, -- [4]
+			}, -- [8]
+			{
+				40.2410000000091, -- [1]
+				"Runebearers! Feed me power!", -- [2]
+				"Odyn", -- [3]
+				7, -- [4]
+			}, -- [9]
+			{
+				56.25, -- [1]
+				"Fall in line!", -- [2]
+				"Hyrja", -- [3]
+				7, -- [4]
+			}, -- [10]
+			{
+				56.25, -- [1]
+				"|TInterface\\Icons\\ABILITY_PRIEST_FLASHOFLIGHT.BLP:20|t Hyrja targets |cFFFF0000Daemonarrow|r with |cFFFF0404|Hspell:228162|h[Shield of Light]|h|r!", -- [2]
+				"Hyrja", -- [3]
+				1, -- [4]
+			}, -- [11]
+			{
+				70.2429999999877, -- [1]
+				"Behold the power granted me by the titans!", -- [2]
+				"Odyn", -- [3]
+				7, -- [4]
+			}, -- [12]
+			{
+				78.2119999999995, -- [1]
+				"|TInterface\\Icons\\INV_Misc_Horn_03:20|t Hymdall begins to blow the |cFFFF0404|Hspell:228012|h[Horn of Valor]|h|r!", -- [2]
+				"Hymdall", -- [3]
+				1, -- [4]
+			}, -- [13]
+			{
+				78.2119999999995, -- [1]
+				"Only cowards fear the call of battle!", -- [2]
+				"Hymdall", -- [3]
+				7, -- [4]
+			}, -- [14]
+			{
+				94.2309999999998, -- [1]
+				"Fall in line!", -- [2]
+				"Hyrja", -- [3]
+				7, -- [4]
+			}, -- [15]
+			{
+				94.2309999999998, -- [1]
+				"|TInterface\\Icons\\ABILITY_PRIEST_FLASHOFLIGHT.BLP:20|t Hyrja targets |cFFFF0000Daemonarrow|r with |cFFFF0404|Hspell:228162|h[Shield of Light]|h|r!", -- [2]
+				"Hyrja", -- [3]
+				1, -- [4]
+			}, -- [16]
+			{
+				105.233000000007, -- [1]
+				"|TInterface\\Icons\\INV_Misc_Horn_03:20|t Hymdall begins to blow the |cFFFF0404|Hspell:228012|h[Horn of Valor]|h|r!", -- [2]
+				"Hymdall", -- [3]
+				1, -- [4]
+			}, -- [17]
+			{
+				105.233000000007, -- [1]
+				"Only cowards fear the call of battle!", -- [2]
+				"Hymdall", -- [3]
+				7, -- [4]
+			}, -- [18]
+			{
+				110.245999999985, -- [1]
+				"|TInterface\\Icons\\ability_bossfelmagnaron_rune.blp:20|t Odyn begins to |cFFFF0404|Hspell:227503|h[Draw Power]|h|r from the runes!", -- [2]
+				"Odyn", -- [3]
+				2, -- [4]
+			}, -- [19]
+			{
+				110.245999999985, -- [1]
+				"Runebearers! Feed me power!", -- [2]
+				"Odyn", -- [3]
+				7, -- [4]
+			}, -- [20]
+			{
+				120.127999999997, -- [1]
+				"That one was too soft!", -- [2]
+				"Hymdall", -- [3]
+				7, -- [4]
+			}, -- [21]
+			{
+				126.239999999991, -- [1]
+				"Stand together--or die alone!", -- [2]
+				"Hyrja", -- [3]
+				7, -- [4]
+			}, -- [22]
+			{
+				126.239999999991, -- [1]
+				"|TInterface\\Icons\\ABILITY_PRIEST_FLASHOFLIGHT.BLP:20|t Hyrja targets |cFFFF0000Toomanyprocs|r with |cFFFF0404|Hspell:228162|h[Shield of Light]|h|r!", -- [2]
+				"Hyrja", -- [3]
+				1, -- [4]
+			}, -- [23]
+			{
+				140.255000000005, -- [1]
+				"Can you withstand a keeper's might?", -- [2]
+				"Odyn", -- [3]
+				7, -- [4]
+			}, -- [24]
+			{
+				148.280999999988, -- [1]
+				"|TInterface\\Icons\\INV_Misc_Horn_03:20|t Hymdall begins to blow the |cFFFF0404|Hspell:228012|h[Horn of Valor]|h|r!", -- [2]
+				"Hymdall", -- [3]
+				1, -- [4]
+			}, -- [25]
+			{
+				148.280999999988, -- [1]
+				"Only cowards fear the call of battle!", -- [2]
+				"Hymdall", -- [3]
+				7, -- [4]
+			}, -- [26]
+			{
+				164.283999999985, -- [1]
+				"Fall in line!", -- [2]
+				"Hyrja", -- [3]
+				7, -- [4]
+			}, -- [27]
+			{
+				164.283999999985, -- [1]
+				"|TInterface\\Icons\\ABILITY_PRIEST_FLASHOFLIGHT.BLP:20|t Hyrja targets |cFFFF0000Doublezed|r with |cFFFF0404|Hspell:228162|h[Shield of Light]|h|r!", -- [2]
+				"Hyrja", -- [3]
+				1, -- [4]
+			}, -- [28]
+			{
+				175.239999999991, -- [1]
+				"|TInterface\\Icons\\INV_Misc_Horn_03:20|t Hymdall begins to blow the |cFFFF0404|Hspell:228012|h[Horn of Valor]|h|r!", -- [2]
+				"Hymdall", -- [3]
+				1, -- [4]
+			}, -- [29]
+			{
+				175.239999999991, -- [1]
+				"Only cowards fear the call of battle!", -- [2]
+				"Hymdall", -- [3]
+				7, -- [4]
+			}, -- [30]
+			{
+				176.662000000011, -- [1]
+				"Well done... so far! But I will judge for myself whether you are worthy!", -- [2]
+				"Odyn", -- [3]
+				7, -- [4]
+			}, -- [31]
+			{
+				200.157999999996, -- [1]
+				"|cFFFF0000Hyrja|r leaps back into battle!", -- [2]
+				"Hyrja", -- [3]
+				1, -- [4]
+			}, -- [32]
+			{
+				201.639999999985, -- [1]
+				"Helya won't be as gentle as I!", -- [2]
+				"Hyrja", -- [3]
+				7, -- [4]
+			}, -- [33]
+			{
+				210.207999999984, -- [1]
+				"Stand together--or die alone!", -- [2]
+				"Hyrja", -- [3]
+				7, -- [4]
+			}, -- [34]
+			{
+				210.207999999984, -- [1]
+				"|TInterface\\Icons\\ABILITY_PRIEST_FLASHOFLIGHT.BLP:20|t Hyrja targets |cFFFF0000Kareshue|r with |cFFFF0404|Hspell:228162|h[Shield of Light]|h|r!", -- [2]
+				"Hyrja", -- [3]
+				1, -- [4]
+			}, -- [35]
+			{
+				218.810999999987, -- [1]
+				"Get back up! FIGHT!", -- [2]
+				"Odyn", -- [3]
+				7, -- [4]
+			}, -- [36]
+			{
+				226.78899999999, -- [1]
+				"|TInterface\\Icons\\ability_bossfelmagnaron_rune.blp:20|t Odyn begins to |cFFFF0404|Hspell:227503|h[Draw Power]|h|r from the runes!", -- [2]
+				"Odyn", -- [3]
+				2, -- [4]
+			}, -- [37]
+			{
+				226.78899999999, -- [1]
+				"Runebearers! Feed me power!", -- [2]
+				"Odyn", -- [3]
+				7, -- [4]
+			}, -- [38]
+			{
+				256.820000000007, -- [1]
+				"Behold the power granted me by the titans!", -- [2]
+				"Odyn", -- [3]
+				7, -- [4]
+			}, -- [39]
+			{
+				260.383999999991, -- [1]
+				"Get back up! FIGHT!", -- [2]
+				"Odyn", -- [3]
+				7, -- [4]
+			}, -- [40]
+			{
+				269.483000000007, -- [1]
+				"|cFFFF0404Hymdall|r! leaps back into battle!", -- [2]
+				"Hymdall", -- [3]
+				1, -- [4]
+			}, -- [41]
+			{
+				269.483000000007, -- [1]
+				"Is there truly valor in your hearts?", -- [2]
+				"Hymdall", -- [3]
+				7, -- [4]
+			}, -- [42]
+			{
+				272.821999999986, -- [1]
+				"Get back up! FIGHT!", -- [2]
+				"Odyn", -- [3]
+				7, -- [4]
+			}, -- [43]
+			{
+				276.549999999988, -- [1]
+				"That one was too soft!", -- [2]
+				"Hymdall", -- [3]
+				7, -- [4]
+			}, -- [44]
+			{
+				276.573000000004, -- [1]
+				"Have I misjudged them? I pray not...", -- [2]
+				"Odyn", -- [3]
+				7, -- [4]
+			}, -- [45]
+			["boss"] = "Odyn",
+		}, -- [3]
+	},
 	["encounter_spells"] = {
 		[228127] = {
 			["school"] = 8,
@@ -394,8 +1137,8 @@ EncounterDetailsDB = {
 		[98021] = {
 			["school"] = 8,
 			["token"] = {
-				["SPELL_HEAL"] = true,
 				["SPELL_DAMAGE"] = true,
+				["SPELL_HEAL"] = true,
 			},
 			["source"] = "Spirit Link Totem",
 		},
@@ -832,8 +1575,8 @@ EncounterDetailsDB = {
 		[201298] = {
 			["school"] = 32,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_START"] = true,
+				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_HEAL"] = true,
 			},
@@ -1623,6 +2366,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Seacursed Slaver",
 		},
+		[227666] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Guarm",
+		},
 		[218587] = {
 			["school"] = 8,
 			["token"] = {
@@ -2138,6 +2889,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Shivermaw",
 		},
+		[215279] = {
+			["school"] = 124,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Chaos Tear",
+		},
 		[204154] = {
 			["school"] = 32,
 			["type"] = "BUFF",
@@ -2432,6 +3190,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Ebon Champion",
 		},
+		[232808] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Guarm",
+		},
 		[199177] = {
 			["school"] = 1,
 			["token"] = {
@@ -2446,6 +3211,13 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Slabhide",
+		},
+		[232809] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Guarm",
 		},
 		[199178] = {
 			["school"] = 1,
@@ -2498,6 +3270,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Molten Charskin",
 		},
+		[232811] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Guarm",
+		},
 		[196111] = {
 			["school"] = 1,
 			["type"] = "DEBUFF",
@@ -2517,6 +3296,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Shivermaw",
 		},
+		[205741] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Xavius",
+		},
 		[211073] = {
 			["school"] = 32,
 			["token"] = {
@@ -2533,6 +3319,17 @@ EncounterDetailsDB = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
 			["source"] = "Lethon",
+		},
+		[228519] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Grimelord",
 		},
 		[201227] = {
 			["school"] = 16,
@@ -2577,12 +3374,27 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Ozruk",
 		},
+		[228803] = {
+			["school"] = 16,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Helya",
+		},
 		[191765] = {
 			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Tirathon Saltheril",
+		},
+		[227990] = {
+			["school"] = 16,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Bilewater Slime",
 		},
 		[199182] = {
 			["school"] = 1,
@@ -2617,6 +3429,64 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Fenryr",
 		},
+		[228730] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Unknown",
+		},
+		[232810] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Guarm",
+		},
+		[227660] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Guarm",
+		},
+		[227673] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Guarm",
+		},
+		[195561] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Cove Seagull",
+		},
+		[197495] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Hatecoil Shellbreaker",
+		},
+		[194112] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "God-King Skovald",
+		},
 		[197521] = {
 			["school"] = 4,
 			["type"] = "DEBUFF",
@@ -2634,15 +3504,11 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Elerethe Renferal",
 		},
-		[76100] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[79249] = {
+			["school"] = 32,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Commander Ulthok",
 		},
 		[191767] = {
 			["school"] = 1,
@@ -2651,15 +3517,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Tirathon Saltheril",
 		},
-		[192706] = {
-			["school"] = 64,
-			["type"] = "DEBUFF",
+		[188114] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Wrath of Azshara",
+			["source"] = "Rokmora",
 		},
 		[214529] = {
 			["school"] = 1,
@@ -2672,13 +3537,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Cenarius",
 		},
-		[201273] = {
-			["school"] = 32,
+		[1604] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_HEAL"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Bloodtainted Fury",
+			["source"] = "Deep Murloc Invader",
 		},
 		[194325] = {
 			["school"] = 32,
@@ -2688,23 +3553,24 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Harbaron",
 		},
-		[198752] = {
-			["school"] = 1,
+		[78859] = {
+			["school"] = 64,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Seacursed Slaver",
+			["source"] = "Ozruk",
 		},
-		[227233] = {
-			["school"] = 32,
+		[92265] = {
+			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Helya",
+			["source"] = "Slabhide",
 		},
 		[213123] = {
 			["school"] = 1,
@@ -2720,14 +3586,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Guarm",
 		},
-		[198495] = {
-			["school"] = 16,
+		[79345] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Helya",
+			["source"] = "High Priestess Azil",
 		},
 		[200208] = {
 			["school"] = 16,
@@ -2738,32 +3604,26 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Seacursed Soulkeeper",
 		},
-		[196947] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[83608] = {
+			["school"] = 32,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Helya",
+			["source"] = "Blight of Ozumat",
 		},
-		[83672] = {
+		[193088] = {
 			["school"] = 1,
-			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Ozumat",
-		},
-		[208689] = {
-			["school"] = 8,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Dominator Tentacle",
+			["source"] = "King Deepbeard",
+		},
+		[198401] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Archdruid Glaidalis",
 		},
 		[80467] = {
 			["school"] = 1,
@@ -2774,13 +3634,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Ozruk",
 		},
-		[206387] = {
+		[83672] = {
 			["school"] = 1,
-			["type"] = "DEBUFF",
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Unknown",
+			["source"] = "Ozumat",
 		},
 		[83926] = {
 			["school"] = 32,
@@ -2799,12 +3660,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Amalgam of Souls",
 		},
-		[194375] = {
-			["school"] = 32,
+		[195094] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Druidann",
+			["source"] = "Hatecoil Warrior",
 		},
 		[59611] = {
 			["school"] = 1,
@@ -2824,14 +3685,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Harbaron",
 		},
-		[194266] = {
-			["school"] = 32,
+		[76363] = {
+			["school"] = 40,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Shackled Servitor",
+			["source"] = "Unstable Corruption",
 		},
 		[200721] = {
 			["school"] = 8,
@@ -2840,13 +3699,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Dargrul",
 		},
-		[194668] = {
-			["school"] = 32,
+		[202098] = {
+			["school"] = 16,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Harbaron",
+			["source"] = "Helya",
 		},
 		[197117] = {
 			["school"] = 8,
@@ -2859,12 +3717,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Piercing Tentacle",
 		},
-		[232798] = {
-			["school"] = 16,
+		[197952] = {
+			["school"] = 1,
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Guarm",
+			["source"] = "Destructor Tentacle",
 		},
 		[83971] = {
 			["school"] = 32,
@@ -2891,14 +3749,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Mindflayer Kaahrj",
 		},
-		[197251] = {
+		[193235] = {
 			["school"] = 1,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Cordana Felsong",
+			["source"] = "Hymdall",
 		},
 		[217090] = {
 			["school"] = 4,
@@ -2922,49 +3779,44 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 		},
-		[70541] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "The Lich King",
-		},
-		[209288] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "Inconceivable Horror",
-		},
-		[76026] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-			},
-			["source"] = "Commander Ulthok",
-		},
-		[91375] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-		},
-		[80564] = {
+		[76001] = {
 			["school"] = 8,
-			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Lady Naz'jar",
+		},
+		[205549] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Naraxas",
+		},
+		[230990] = {
+			["school"] = 2,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Odyn",
+		},
+		[195031] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Seacursed Soulkeeper",
+		},
+		[200723] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Dargrul",
 		},
 		[228344] = {
 			["school"] = 1,
@@ -2974,14 +3826,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Guarm",
 		},
-		[197262] = {
+		[193051] = {
 			["school"] = 16,
-			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Helya",
+			["source"] = "King Deepbeard",
 		},
 		[224508] = {
 			["school"] = 32,
@@ -3043,6 +3893,26 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Helya",
 		},
+		[193597] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Lady Hatecoil",
+		},
+		[198388] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Ursoc",
+		},
 		[210099] = {
 			["school"] = 32,
 			["type"] = "DEBUFF",
@@ -3052,22 +3922,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Unknown",
 		},
-		[193473] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Void Tendril",
-		},
-		[196666] = {
-			["school"] = 16,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Tidal Wave",
-		},
 		[195473] = {
 			["school"] = 8,
 			["token"] = {
@@ -3076,15 +3930,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Gritslime Snail",
 		},
-		[203646] = {
-			["school"] = 40,
-			["type"] = "DEBUFF",
+		[217987] = {
+			["school"] = 32,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Corrupted Vermin",
+			["source"] = "Lurking Terror",
 		},
 		[198551] = {
 			["school"] = 32,
@@ -3103,21 +3954,21 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Lady Hatecoil",
 		},
-		[30153] = {
-			["school"] = 1,
+		[215288] = {
+			["school"] = 8,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Felguard",
-		},
-		[197365] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Wrath of Azshara",
+			["source"] = "Elerethe Renferal",
+		},
+		[198006] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Ursoc",
 		},
 		[199063] = {
 			["school"] = 8,
@@ -3148,15 +3999,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Olmyr the Enlightened",
 		},
-		[209158] = {
+		[210781] = {
 			["school"] = 32,
-			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Xavius",
+			["source"] = "Il'gynoth",
 		},
 		[217989] = {
 			["school"] = 32,
@@ -3174,13 +4023,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Odyn",
 		},
-		[193093] = {
-			["school"] = 1,
+		[192018] = {
+			["school"] = 2,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "King Deepbeard",
+			["source"] = "Hyrja",
 		},
 		[203028] = {
 			["school"] = 40,
@@ -3215,15 +4065,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Nythendra",
 		},
-		[206651] = {
-			["school"] = 32,
+		[197943] = {
+			["school"] = 1,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Xavius",
+			["source"] = "Ursoc",
 		},
 		[217990] = {
 			["school"] = 1,
@@ -3255,13 +4105,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Blightshard Skitter",
 		},
-		[227903] = {
-			["school"] = 32,
+		[201581] = {
+			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Helya",
+			["source"] = "Millificent Manastorm",
 		},
 		[199193] = {
 			["school"] = 1,
@@ -3273,13 +4125,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Dantalionax",
 		},
-		[228633] = {
-			["school"] = 64,
+		[206651] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Night Watch Mariner",
+			["source"] = "Xavius",
 		},
 		[192288] = {
 			["school"] = 2,
@@ -3326,14 +4180,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Nightmare Image",
 		},
-		[222037] = {
-			["school"] = 32,
+		[196157] = {
+			["school"] = 4,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Elerethe Renferal",
+			["source"] = "Shadowmoon Technician",
 		},
 		[201240] = {
 			["school"] = 1,
@@ -3374,13 +4227,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Avatar of Vengeance",
 		},
-		[192517] = {
+		[75998] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Ash'Golm",
+			["source"] = "Naz'jar Honor Guard",
 		},
 		[192801] = {
 			["school"] = 16,
@@ -3433,6 +4287,21 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Naz'jar Tempest Witch",
 		},
+		[205870] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Lethon",
+		},
+		[197558] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Fenryr",
+		},
 		[203787] = {
 			["school"] = 8,
 			["type"] = "DEBUFF",
@@ -3441,20 +4310,6 @@ EncounterDetailsDB = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
 			["source"] = "Emeriss",
-		},
-		[197333] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Cordana Felsong",
-		},
-		[193594] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Ymiron, the Fallen King",
 		},
 		[227712] = {
 			["school"] = 2,
@@ -3470,13 +4325,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Twisted Sister",
 		},
-		[228248] = {
-			["school"] = 16,
+		[204463] = {
+			["school"] = 40,
 			["type"] = "DEBUFF",
 			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Guarm",
+			["source"] = "Nythendra",
 		},
 		[229119] = {
 			["school"] = 32,
@@ -3486,19 +4342,20 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Orb of Corruption",
 		},
-		[192675] = {
-			["school"] = 64,
+		[195034] = {
+			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Mystic Tornado",
+			["source"] = "Glazer",
 		},
-		[193210] = {
-			["school"] = 4,
+		[211368] = {
+			["school"] = 32,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Ash'Golm",
+			["source"] = "Twisted Sister",
 		},
 		[193698] = {
 			["school"] = 64,
@@ -3518,22 +4375,20 @@ EncounterDetailsDB = {
 			},
 			["source"] = "God-King Skovald",
 		},
-		[198108] = {
-			["school"] = 1,
+		[192133] = {
+			["school"] = 8,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Ursoc",
+			["source"] = "Hyrja",
 		},
-		[193977] = {
-			["school"] = 16,
+		[70952] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Ymiron, the Fallen King",
+			["source"] = "Prince Valanar",
 		},
 		[80801] = {
 			["school"] = 4,
@@ -3566,16 +4421,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Dargrul",
 		},
-		[193668] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[228247] = {
+			["school"] = 16,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "God-King Skovald",
+			["source"] = "Guarm",
 		},
 		[193827] = {
 			["school"] = 4,
@@ -3603,14 +4454,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Helya",
 		},
-		[196534] = {
+		[82858] = {
 			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Destructor Tentacle",
+			["source"] = "High Priestess Azil",
 		},
 		[193443] = {
 			["school"] = 1,
@@ -3620,19 +4472,23 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Glazer",
 		},
-		[194232] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Harbaron",
-		},
-		[196610] = {
+		[201432] = {
 			["school"] = 1,
-			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Millificent Manastorm",
+		},
+		[201226] = {
+			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
+			["source"] = "Bloodtainted Fury",
 		},
 		[192131] = {
 			["school"] = 1,
@@ -3645,14 +4501,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Warlord Parjesh",
 		},
-		[193209] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
+		[203827] = {
+			["school"] = 8,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Ash'Golm",
+			["source"] = "Unknown",
 		},
 		[70444] = {
 			["school"] = 4,
@@ -3660,13 +4516,13 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 		},
-		[70460] = {
+		[227967] = {
 			["school"] = 16,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Frost Freeze Trap",
+			["source"] = "Helya",
 		},
 		[193055] = {
 			["school"] = 16,
@@ -3677,12 +4533,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Call the Seas",
 		},
-		[227883] = {
+		[201392] = {
 			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Guarm",
+			["source"] = "Millificent Manastorm",
 		},
 		[228227] = {
 			["school"] = 4,
@@ -3691,22 +4548,19 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Guarm",
 		},
-		[228055] = {
-			["school"] = 16,
-			["type"] = "DEBUFF",
+		[227833] = {
+			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Helya",
 		},
-		[194231] = {
-			["school"] = 32,
+		[227883] = {
+			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Harbaron",
+			["source"] = "Guarm",
 		},
 		[228611] = {
 			["school"] = 1,
@@ -3726,11 +4580,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Cordana Felsong",
 		},
-		[213936] = {
+		[210879] = {
 			["school"] = 32,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
+			["source"] = "Fel Lord Betrug",
 		},
 		[227972] = {
 			["school"] = 16,
@@ -3739,12 +4597,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Helya",
 		},
-		[199457] = {
-			["school"] = 32,
+		[202310] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Harbaron",
+			["source"] = "Millificent Manastorm",
 		},
 		[228228] = {
 			["school"] = 4,
@@ -3756,37 +4617,40 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Guarm",
 		},
-		[227930] = {
-			["school"] = 32,
+		[228054] = {
+			["school"] = 16,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
 			["source"] = "Helya",
 		},
-		[69679] = {
-			["school"] = 1,
+		[228171] = {
+			["school"] = 2,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_HEAL"] = true,
 			},
-			["source"] = "Kor'kron Rocketeer",
+			["source"] = "Hyrja",
 		},
-		[202680] = {
+		[201495] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Serpentrix",
+			["source"] = "Congealed Goo",
 		},
-		[201120] = {
-			["school"] = 32,
+		[201119] = {
+			["school"] = 16,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Mindflayer Kaahrj",
+			["source"] = "Helya",
 		},
 		[15615] = {
 			["school"] = 1,
@@ -3811,21 +4675,21 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Corruption Horror",
 		},
-		[201491] = {
-			["school"] = 8,
-			["type"] = "DEBUFF",
+		[70109] = {
+			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Millificent Manastorm",
+			["source"] = "Sindragosa",
 		},
-		[205741] = {
+		[201120] = {
 			["school"] = 32,
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Xavius",
+			["source"] = "Mindflayer Kaahrj",
 		},
 		[225416] = {
 			["school"] = 1,
@@ -3850,14 +4714,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Corruption Horror",
 		},
-		[201495] = {
+		[228932] = {
 			["school"] = 1,
-			["type"] = "BUFF",
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Congealed Goo",
+			["source"] = "Odyn",
 		},
 		[227974] = {
 			["school"] = 2,
@@ -3867,13 +4731,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Odyn",
 		},
-		[194216] = {
-			["school"] = 64,
+		[215443] = {
+			["school"] = 8,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Harbaron",
+			["source"] = "Elerethe Renferal",
 		},
 		[204574] = {
 			["school"] = 1,
@@ -3883,21 +4747,20 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Oakheart",
 		},
-		[198820] = {
-			["school"] = 32,
+		[194216] = {
+			["school"] = 64,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Latosius",
+			["source"] = "Harbaron",
 		},
-		[191946] = {
+		[217234] = {
 			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Warlord Parjesh",
+			["source"] = "Ularogg Cragshaper",
 		},
 		[71405] = {
 			["school"] = 32,
@@ -3906,13 +4769,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Prince Keleseth",
 		},
-		[215443] = {
-			["school"] = 8,
+		[201121] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Elerethe Renferal",
+			["source"] = "Mindflayer Kaahrj",
 		},
 		[205341] = {
 			["school"] = 8,
@@ -3947,28 +4810,34 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Cordana Felsong",
 		},
-		[228932] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Odyn",
-		},
-		[217234] = {
-			["school"] = 1,
+		[198820] = {
+			["school"] = 32,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Ularogg Cragshaper",
+			["source"] = "Latosius",
 		},
-		[228053] = {
-			["school"] = 16,
+		[197797] = {
+			["school"] = 64,
+			["type"] = "BUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Helya",
+			["source"] = "Unknown",
+		},
+		[203552] = {
+			["school"] = 40,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Nythendra",
 		},
 		[227720] = {
 			["school"] = 48,
@@ -4010,13 +4879,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Ularogg Cragshaper",
 		},
-		[204100] = {
-			["school"] = 1,
+		[197506] = {
+			["school"] = 4,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Taerar",
+			["source"] = "Creeping Doom",
 		},
 		[202913] = {
 			["school"] = 1,
@@ -4026,13 +4895,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Tirathon Saltheril",
 		},
-		[197506] = {
-			["school"] = 4,
+		[193717] = {
+			["school"] = 64,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Creeping Doom",
+			["source"] = "Lady Hatecoil",
 		},
 		[227721] = {
 			["school"] = 36,
@@ -4049,12 +4918,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Hyrja",
 		},
-		[201379] = {
-			["school"] = 1,
+		[194218] = {
+			["school"] = 64,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Shivermaw",
+			["source"] = "Harbaron",
 		},
 		[92122] = {
 			["school"] = 8,
@@ -4072,22 +4941,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Odyn",
 		},
-		[191900] = {
+		[201379] = {
 			["school"] = 1,
-			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Warlord Parjesh",
-		},
-		[67767] = {
-			["school"] = 16,
-			["token"] = {
-				["SPELL_PERIODIC_DAMAGE"] = true,
-			},
-			["source"] = "Ebon Champion",
+			["source"] = "Shivermaw",
 		},
 		[202019] = {
 			["school"] = 32,
@@ -4098,21 +4957,30 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Dantalionax",
 		},
-		[199567] = {
-			["school"] = 32,
+		[227594] = {
+			["school"] = 2,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_CAST_START"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Valarjar Runebearer",
+		},
+		[200904] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Inquisitor Tormentorum",
+		},
+		[225419] = {
+			["school"] = 1,
+			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Unknown",
-		},
-		[227992] = {
-			["school"] = 16,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Helya",
+			["source"] = "Felguard Annihilator",
 		},
 		[201380] = {
 			["school"] = 16,
@@ -4123,20 +4991,23 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Shivermaw",
 		},
-		[195254] = {
-			["school"] = 1,
+		[194956] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Amalgam of Souls",
 		},
-		[198719] = {
+		[201272] = {
 			["school"] = 1,
-			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
+			["source"] = "Bloodtainted Fury",
 		},
 		[206879] = {
 			["school"] = 4,
@@ -4170,13 +5041,27 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Guarm",
 		},
-		[193682] = {
-			["school"] = 16,
+		[200551] = {
+			["school"] = 8,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Lady Hatecoil",
+			["source"] = "Dargrul",
+		},
+		[203690] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+		},
+		[198077] = {
+			["school"] = 2,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Odyn",
 		},
 		[204151] = {
 			["school"] = 1,
@@ -4188,41 +5073,24 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Tirathon Saltheril",
 		},
-		[198077] = {
-			["school"] = 2,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "Odyn",
-		},
-		[193460] = {
-			["school"] = 32,
+		[68981] = {
+			["school"] = 16,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Ymiron, the Fallen King",
+			["source"] = "The Lich King",
 		},
-		[86881] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
+		[227597] = {
+			["school"] = 2,
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Corborus",
-		},
-		[198408] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-			},
-			["source"] = "Archdruid Glaidalis",
+			["source"] = "Valarjar Runebearer",
 		},
 		[227596] = {
 			["school"] = 2,
@@ -4275,32 +5143,29 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Illysanna Ravencrest",
 		},
-		[192053] = {
-			["school"] = 8,
+		[86881] = {
+			["school"] = 1,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Warlord Parjesh",
+			["source"] = "Corborus",
 		},
-		[205300] = {
-			["school"] = 32,
+		[199337] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Essence of Corruption",
+			["source"] = "Bear Trap",
 		},
-		[227597] = {
-			["school"] = 2,
-			["type"] = "BUFF",
+		[203045] = {
+			["school"] = 40,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Valarjar Runebearer",
 		},
 		[198058] = {
 			["school"] = 2,
@@ -4318,29 +5183,29 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Mindflayer Kaahrj",
 		},
-		[199337] = {
+		[80807] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Slabhide",
+		},
+		[199389] = {
 			["school"] = 1,
 			["token"] = {
-				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Bear Trap",
+			["source"] = "Dresaron",
 		},
-		[193686] = {
-			["school"] = 1,
+		[214625] = {
+			["school"] = 4,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "God-King Skovald",
-		},
-		[203770] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Defiled Druid Spirit",
 		},
 		[196496] = {
 			["school"] = 1,
@@ -4366,6 +5231,7 @@ EncounterDetailsDB = {
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Valarjar Runebearer",
 		},
@@ -4402,12 +5268,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Naraxas",
 		},
-		[197165] = {
-			["school"] = 1,
+		[202919] = {
+			["school"] = 4,
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Wrath of Azshara",
+			["source"] = "Tirathon Saltheril",
 		},
 		[208929] = {
 			["school"] = 32,
@@ -4420,28 +5286,27 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Unknown",
 		},
-		[202919] = {
-			["school"] = 4,
+		[193712] = {
+			["school"] = 64,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Tirathon Saltheril",
-		},
-		[201598] = {
-			["school"] = 8,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Festerface",
+			["source"] = "Lady Hatecoil",
 		},
-		[226194] = {
+		[197165] = {
 			["school"] = 1,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Xavius",
+			["source"] = "Wrath of Azshara",
+		},
+		[55078] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_PERIODIC_DAMAGE"] = true,
+			},
+			["source"] = "Rune Weapon",
 		},
 		[192050] = {
 			["school"] = 8,
@@ -4450,6 +5315,74 @@ EncounterDetailsDB = {
 				["SPELL_CAST_START"] = true,
 			},
 			["source"] = "Serpentrix",
+		},
+		[213790] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Twisting Shadows",
+		},
+		[229255] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Odyn",
+		},
+		[192307] = {
+			["school"] = 2,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Hyrja",
+		},
+		[198564] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Ularogg Cragshaper",
+		},
+		[191823] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Tirathon Saltheril",
+		},
+		[197064] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+		},
+		[210337] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+		},
+		[191284] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Hymdall",
+		},
+		[193171] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Quake",
 		},
 		[197422] = {
 			["school"] = 1,
@@ -4470,74 +5403,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "King Deepbeard",
 		},
-		[213790] = {
-			["school"] = 8,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Twisting Shadows",
-		},
-		[193171] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Quake",
-		},
-		[191284] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Hymdall",
-		},
-		[197064] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-		},
-		[210337] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-		},
-		[191823] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "Tirathon Saltheril",
-		},
-		[198564] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "Ularogg Cragshaper",
-		},
-		[192307] = {
-			["school"] = 2,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Hyrja",
-		},
-		[55078] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_PERIODIC_DAMAGE"] = true,
-			},
-			["source"] = "Rune Weapon",
-		},
 		[203816] = {
 			["school"] = 1,
 			["type"] = "BUFF",
@@ -4546,12 +5411,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Decaying Minion",
 		},
-		[229255] = {
-			["school"] = 8,
+		[226194] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Odyn",
+			["source"] = "Xavius",
 		},
 		[228300] = {
 			["school"] = 16,
@@ -4562,13 +5427,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Helya",
 		},
-		[193712] = {
-			["school"] = 64,
+		[201598] = {
+			["school"] = 8,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Lady Hatecoil",
+			["source"] = "Festerface",
 		},
 		[209443] = {
 			["school"] = 1,
@@ -4614,40 +5480,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Unknown",
 		},
-		[214625] = {
-			["school"] = 4,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-			},
-		},
-		[199389] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "Dresaron",
-		},
-		[80807] = {
-			["school"] = 8,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Slabhide",
-		},
-		[68981] = {
-			["school"] = 16,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "The Lich King",
-		},
 		[192048] = {
 			["school"] = 2,
 			["type"] = "DEBUFF",
@@ -4655,19 +5487,59 @@ EncounterDetailsDB = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
 		},
-		[203045] = {
-			["school"] = 40,
+		[203770] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Defiled Druid Spirit",
+		},
+		[193686] = {
+			["school"] = 1,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
+			["source"] = "God-King Skovald",
 		},
-		[203690] = {
+		[192053] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+			},
+			["source"] = "Warlord Parjesh",
+		},
+		[205300] = {
 			["school"] = 32,
 			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
+			["source"] = "Essence of Corruption",
+		},
+		[198408] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+			},
+			["source"] = "Archdruid Glaidalis",
+		},
+		[193460] = {
+			["school"] = 32,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Ymiron, the Fallen King",
 		},
 		[196657] = {
 			["school"] = 32,
@@ -4684,13 +5556,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Lady Hatecoil",
 		},
-		[200551] = {
-			["school"] = 8,
+		[193682] = {
+			["school"] = 16,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Dargrul",
+			["source"] = "Lady Hatecoil",
 		},
 		[210340] = {
 			["school"] = 1,
@@ -4709,56 +5581,53 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Shade of Xavius",
 		},
-		[201272] = {
+		[198719] = {
 			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Bloodtainted Fury",
-		},
-		[194956] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Amalgam of Souls",
-		},
-		[225419] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Felguard Annihilator",
-		},
-		[200904] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Inquisitor Tormentorum",
-		},
-		[193717] = {
-			["school"] = 64,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "Lady Hatecoil",
-		},
-		[227594] = {
-			["school"] = 2,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+			},
+		},
+		[195254] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Amalgam of Souls",
+		},
+		[227992] = {
+			["school"] = 16,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Helya",
+		},
+		[199567] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Unknown",
+		},
+		[67767] = {
+			["school"] = 16,
+			["token"] = {
+				["SPELL_PERIODIC_DAMAGE"] = true,
+			},
+			["source"] = "Ebon Champion",
+		},
+		[191900] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Valarjar Runebearer",
+			["source"] = "Warlord Parjesh",
 		},
 		[200111] = {
 			["school"] = 4,
@@ -4767,40 +5636,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Shade of Xavius",
 		},
-		[194218] = {
-			["school"] = 64,
+		[204100] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Harbaron",
-		},
-		[203552] = {
-			["school"] = 40,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Nythendra",
-		},
-		[79340] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "High Priestess Azil",
-		},
-		[197797] = {
-			["school"] = 64,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Unknown",
+			["source"] = "Taerar",
 		},
 		[212886] = {
 			["school"] = 32,
@@ -4811,6 +5653,28 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Nightmare Horror",
 		},
+		[79340] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "High Priestess Azil",
+		},
+		[228053] = {
+			["school"] = 16,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Helya",
+		},
+		[69679] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Kor'kron Rocketeer",
+		},
 		[198833] = {
 			["school"] = 32,
 			["token"] = {
@@ -4820,13 +5684,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Latosius",
 		},
-		[201121] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
+		[191946] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Mindflayer Kaahrj",
+			["source"] = "Warlord Parjesh",
 		},
 		[210342] = {
 			["school"] = 32,
@@ -4835,14 +5699,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Cenarius",
 		},
-		[70109] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[199457] = {
+			["school"] = 32,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Sindragosa",
+			["source"] = "Harbaron",
 		},
 		[199345] = {
 			["school"] = 1,
@@ -4862,13 +5724,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Nightmare Image",
 		},
-		[228171] = {
-			["school"] = 2,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "Hyrja",
-		},
 		[228174] = {
 			["school"] = 1,
 			["type"] = "BUFF",
@@ -4877,34 +5732,37 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Guarm",
 		},
-		[228054] = {
-			["school"] = 16,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-			},
-			["source"] = "Helya",
-		},
-		[202310] = {
+		[201491] = {
 			["school"] = 8,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Millificent Manastorm",
 		},
-		[210879] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
+		[202680] = {
+			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Fel Lord Betrug",
+			["source"] = "Serpentrix",
+		},
+		[227930] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Helya",
+		},
+		[213936] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
 		},
 		[68983] = {
 			["school"] = 16,
@@ -4913,20 +5771,22 @@ EncounterDetailsDB = {
 			},
 			["source"] = "The Lich King",
 		},
-		[201392] = {
-			["school"] = 1,
+		[194231] = {
+			["school"] = 32,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Millificent Manastorm",
+			["source"] = "Harbaron",
 		},
-		[227833] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[228055] = {
+			["school"] = 16,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
+			["source"] = "Helya",
 		},
 		[197556] = {
 			["school"] = 1,
@@ -4943,49 +5803,44 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Blight of Ozumat",
 		},
-		[227967] = {
+		[70460] = {
 			["school"] = 16,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Helya",
+			["source"] = "Frost Freeze Trap",
 		},
-		[203827] = {
-			["school"] = 8,
+		[193209] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_START"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Unknown",
+			["source"] = "Ash'Golm",
 		},
 		[227735] = {
 			["school"] = 20,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Guarm",
 		},
-		[201226] = {
+		[196610] = {
 			["school"] = 1,
-			["type"] = "BUFF",
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Bloodtainted Fury",
 		},
-		[82858] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[194232] = {
+			["school"] = 32,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "High Priestess Azil",
+			["source"] = "Harbaron",
 		},
 		[197429] = {
 			["school"] = 1,
@@ -4995,12 +5850,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Illysanna Ravencrest",
 		},
-		[228247] = {
-			["school"] = 16,
+		[196534] = {
+			["school"] = 1,
 			["token"] = {
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Guarm",
+			["source"] = "Destructor Tentacle",
 		},
 		[210984] = {
 			["school"] = 32,
@@ -5012,13 +5869,16 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Nightmare Horror",
 		},
-		[201432] = {
+		[193668] = {
 			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Millificent Manastorm",
+			["source"] = "God-King Skovald",
 		},
 		[228631] = {
 			["school"] = 64,
@@ -5027,59 +5887,58 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Night Watch Mariner",
 		},
-		[211368] = {
-			["school"] = 32,
+		[193977] = {
+			["school"] = 16,
 			["token"] = {
 				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Twisted Sister",
+			["source"] = "Ymiron, the Fallen King",
 		},
-		[192133] = {
-			["school"] = 8,
+		[192675] = {
+			["school"] = 64,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Mystic Tornado",
+		},
+		[193210] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Ash'Golm",
+		},
+		[198108] = {
+			["school"] = 1,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Hyrja",
+			["source"] = "Ursoc",
 		},
-		[204463] = {
-			["school"] = 40,
+		[228248] = {
+			["school"] = 16,
 			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Nythendra",
+			["source"] = "Guarm",
 		},
-		[195034] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Glazer",
-		},
-		[197558] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "Fenryr",
-		},
-		[205870] = {
+		[193594] = {
 			["school"] = 32,
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Lethon",
+			["source"] = "Ymiron, the Fallen King",
 		},
-		[70952] = {
+		[197333] = {
 			["school"] = 1,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Prince Valanar",
+			["source"] = "Cordana Felsong",
 		},
 		[197942] = {
 			["school"] = 1,
@@ -5097,14 +5956,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Cenarius",
 		},
-		[75998] = {
+		[192517] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Naz'jar Honor Guard",
+			["source"] = "Ash'Golm",
 		},
 		[193211] = {
 			["school"] = 32,
@@ -5123,13 +5981,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Ember",
 		},
-		[196157] = {
-			["school"] = 4,
+		[222037] = {
+			["school"] = 32,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Shadowmoon Technician",
+			["source"] = "Elerethe Renferal",
 		},
 		[197687] = {
 			["school"] = 1,
@@ -5147,25 +6006,21 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Destructor Tentacle",
 		},
-		[197943] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
+		[228633] = {
+			["school"] = 64,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Ursoc",
-		},
-		[201581] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Millificent Manastorm",
+			["source"] = "Night Watch Mariner",
+		},
+		[227903] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Helya",
 		},
 		[211498] = {
 			["school"] = 32,
@@ -5192,14 +6047,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Dominator Tentacle",
 		},
-		[192018] = {
-			["school"] = 2,
+		[193093] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Hyrja",
+			["source"] = "King Deepbeard",
 		},
 		[196665] = {
 			["school"] = 64,
@@ -5208,14 +6062,6 @@ EncounterDetailsDB = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
 			["source"] = "Mystic Tornado",
-		},
-		[210781] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "Il'gynoth",
 		},
 		[200289] = {
 			["school"] = 1,
@@ -5227,21 +6073,31 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Shade of Xavius",
 		},
-		[198006] = {
-			["school"] = 1,
+		[209158] = {
+			["school"] = 32,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Ursoc",
-		},
-		[215288] = {
-			["school"] = 8,
-			["token"] = {
+				["SPELL_PERIODIC_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Elerethe Renferal",
+			["source"] = "Xavius",
+		},
+		[197365] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Wrath of Azshara",
+		},
+		[30153] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Felguard",
 		},
 		[201397] = {
 			["school"] = 16,
@@ -5250,12 +6106,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Seacursed Soulkeeper",
 		},
-		[217987] = {
-			["school"] = 32,
+		[203646] = {
+			["school"] = 40,
+			["type"] = "DEBUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Lurking Terror",
+			["source"] = "Corrupted Vermin",
 		},
 		[228251] = {
 			["school"] = 32,
@@ -5264,25 +6123,21 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Guarm",
 		},
-		[193597] = {
-			["school"] = 8,
+		[196666] = {
+			["school"] = 16,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Lady Hatecoil",
+			["source"] = "Tidal Wave",
 		},
-		[198388] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[193473] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Ursoc",
+			["source"] = "Void Tendril",
 		},
 		[202037] = {
 			["school"] = 16,
@@ -5308,59 +6163,67 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Shadowmoon Technician",
 		},
-		[193051] = {
+		[197262] = {
 			["school"] = 16,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "King Deepbeard",
+			["source"] = "Helya",
 		},
-		[195031] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[80564] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+			},
+			["source"] = "Lady Naz'jar",
+		},
+		[91375] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+		},
+		[76026] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Seacursed Soulkeeper",
+			["source"] = "Commander Ulthok",
 		},
-		[200723] = {
-			["school"] = 8,
+		[209288] = {
+			["school"] = 32,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Dargrul",
-		},
-		[230990] = {
-			["school"] = 2,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Odyn",
-		},
-		[205549] = {
-			["school"] = 8,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Naraxas",
+			["source"] = "Inconceivable Horror",
 		},
-		[76001] = {
-			["school"] = 8,
+		[70541] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Lady Naz'jar",
+			["source"] = "The Lich King",
 		},
-		[193235] = {
+		[197251] = {
 			["school"] = 1,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Hymdall",
+			["source"] = "Cordana Felsong",
 		},
 		[196156] = {
 			["school"] = 1,
@@ -5376,12 +6239,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Geyser",
 		},
-		[197952] = {
-			["school"] = 1,
+		[232798] = {
+			["school"] = 16,
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Destructor Tentacle",
+			["source"] = "Guarm",
 		},
 		[228253] = {
 			["school"] = 32,
@@ -5391,27 +6254,29 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Guarm",
 		},
-		[202098] = {
-			["school"] = 16,
+		[194668] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Harbaron",
+		},
+		[194266] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Shackled Servitor",
+		},
+		[194375] = {
+			["school"] = 32,
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Helya",
-		},
-		[76363] = {
-			["school"] = 40,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Unstable Corruption",
-		},
-		[1604] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Deep Murloc Invader",
+			["source"] = "Druidann",
 		},
 		[193983] = {
 			["school"] = 2,
@@ -5421,12 +6286,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "God-King Skovald",
 		},
-		[193088] = {
+		[206387] = {
 			["school"] = 1,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "King Deepbeard",
+			["source"] = "Unknown",
 		},
 		[227998] = {
 			["school"] = 16,
@@ -5437,14 +6303,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Helya",
 		},
-		[79345] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
+		[208689] = {
+			["school"] = 8,
 			["token"] = {
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "High Priestess Azil",
+			["source"] = "Dominator Tentacle",
 		},
 		[221093] = {
 			["school"] = 4,
@@ -5456,21 +6322,61 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Unknown",
 		},
-		[83608] = {
-			["school"] = 32,
+		[196947] = {
+			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Blight of Ozumat",
+			["source"] = "Helya",
 		},
-		[198401] = {
+		[198495] = {
+			["school"] = 16,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Helya",
+		},
+		[227233] = {
+			["school"] = 32,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Helya",
+		},
+		[198752] = {
 			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Archdruid Glaidalis",
+			["source"] = "Seacursed Slaver",
 		},
-		[92265] = {
+		[201273] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+				["SPELL_HEAL"] = true,
+			},
+			["source"] = "Bloodtainted Fury",
+		},
+		[192706] = {
+			["school"] = 64,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Wrath of Azshara",
+		},
+		[76100] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
@@ -5478,41 +6384,7 @@ EncounterDetailsDB = {
 				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Slabhide",
+			["source"] = "Commander Ulthok",
 		},
-		[78859] = {
-			["school"] = 64,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-			},
-			["source"] = "Ozruk",
-		},
-		[194112] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "God-King Skovald",
-		},
-		[188114] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Rokmora",
-		},
-		[79249] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-		},
-	},
-	["emotes"] = {
 	},
 }

@@ -9,7 +9,9 @@ local _, gdbprivate = ...
 	gdbprivate.gdbdefaults.gdbdefaults.dejacharacterstatsScrollbarChecked = {
 		ScrollbarSetChecked = false,
 	}
-
+	gdbprivate.gdbdefaults.gdbdefaults.dejacharacterstatsClassBackgroundChecked = {
+		ClassBackgroundChecked = true,
+	}
 local StatScrollFrame = CreateFrame("ScrollFrame", nil, CharacterFrameInsetRight, "UIPanelScrollFrameTemplate")
 	StatScrollFrame:ClearAllPoints()
 	StatScrollFrame:SetPoint("TOPLEFT", CharacterFrameInsetRight, "TOPLEFT", 5, -6)
@@ -20,7 +22,7 @@ local StatScrollFrame = CreateFrame("ScrollFrame", nil, CharacterFrameInsetRight
 	StatScrollFrame.ScrollBar:Hide()
 	
 	StatScrollFrame:HookScript("OnScrollRangeChanged", function(self, xrange, yrange)
-		local checked = gdbprivate.gdb.gdbdefaults.dejacharacterstatsScrollbarChecked
+		local checked = gdbprivate.gdb.gdbdefaults.dejacharacterstatsClassBackgroundChecked
 		if checked.ScrollbarSetChecked == true then
 			self.ScrollBar:SetShown(floor(yrange) ~= 0)
 		elseif not checked.ScrollbarSetChecked == true then
@@ -44,13 +46,12 @@ local StatScrollFrame = CreateFrame("ScrollFrame", nil, CharacterFrameInsetRight
 	CharacterStatsPane.AttributesCategory:SetHeight(28)
 	CharacterStatsPane.AttributesCategory.Background:SetHeight(28)
 
-	CharacterStatsPane.ClassBackground:SetParent(StatFrame)
+	CharacterStatsPane.ClassBackground:SetParent(StatScrollFrame)
 
 	CharacterStatsPane.EnhancementsCategory:SetParent(StatFrame)
 	CharacterStatsPane.EnhancementsCategory:SetHeight(28)
 	CharacterStatsPane.EnhancementsCategory.Background:SetHeight(28)
 
-	
 for k, v in pairs(DCS_TableData.StatData) do
 	if (not v.frame) then
 		if (v.category) then
@@ -84,17 +85,18 @@ local DefaultData = DCS_TableData:MergeTable({
         { statKey = "FOCUS_REGEN" },		
         { statKey = "MOVESPEED" },
         { statKey = "GCD" },
+		{ statKey = "DURABILITY_STAT" },
         { statKey = "REPAIR_COST" },
     { statKey = "EnhancementsCategory" },
-        { statKey = "CRITCHANCE" },
-        { statKey = "HASTE" },
-        { statKey = "VERSATILITY" },
-        { statKey = "MASTERY" },
-        { statKey = "LIFESTEAL" },
-        { statKey = "AVOIDANCE" },
-        { statKey = "DODGE" },
-        { statKey = "PARRY" },
-        { statKey = "BLOCK" },
+        { statKey = "CRITCHANCE", hideAt = 0 },
+        { statKey = "HASTE", hideAt = 0 },
+        { statKey = "VERSATILITY", hideAt = 0 },
+        { statKey = "MASTERY", hideAt = 0 },
+        { statKey = "LIFESTEAL", hideAt = 0 },
+        { statKey = "AVOIDANCE", hideAt = 0 },
+        { statKey = "DODGE", hideAt = 0 },
+        { statKey = "PARRY", hideAt = 0 },
+        { statKey = "BLOCK", hideAt = 0 },
         { statKey = "ITEMLEVEL", hidden = true },
 })
 
@@ -127,11 +129,23 @@ local function ShowCharacterStats(unit)
         stat = DCS_TableData.StatData[v.statKey]
         stat.updateFunc(stat.frame, unit)
         if (configMode) then
+			if v.hideAt then
+				local hide = false -- the value can change during playing session, se needs to reset each time it's accessed
+				if v.hideAt == stat.frame.numericValue then
+					hide = true
+				end
+				if not v.hidden then -- if player doesn't want to see non-zero stat then let it remain so
+					v.hidden = hide
+				end
+			end
             stat.frame:Show()
             stat.frame.checkButton:Show()
             stat.frame.checkButton:SetChecked(not v.hidden)
             if (v.hidden) then
                 stat.frame:SetAlpha(0.32)
+			end
+			if (not v.hidden) then
+                stat.frame:SetAlpha(1)
 			end
         elseif (v.hidden) then
             stat.frame:Hide()
@@ -148,7 +162,7 @@ local function ShowCharacterStats(unit)
                 count = count + 1
             end
 			if not (configMode) then
-				stat.frame:SetAlpha(1.00)
+				stat.frame:SetAlpha(1)
 			end
             height = height + stat.frame:GetHeight()
         end
@@ -342,6 +356,11 @@ hooksecurefunc("PaperDollFrame_SetSidebar", function(self, index)
 	end
 end)
 
+
+------------------------
+-- Relevant Stats Button --
+------------------------
+
 local DCS_TableRelevantStats = CreateFrame("Button", "DCS_TableRelevantStats", CharacterFrameInsetRight, "UIPanelButtonTemplate")
 	DCS_TableRelevantStats:ClearAllPoints()
 	DCS_TableRelevantStats:SetPoint("BOTTOMRIGHT", -130,-36)
@@ -364,8 +383,8 @@ local DCS_TableRelevantStats = CreateFrame("Button", "DCS_TableRelevantStats", C
 	DCS_TableRelevantStats:SetHeight(30)
 	_G[DCS_TableRelevantStats:GetName() .. "Text"]:SetText(L["Relevant Stats"])
 	DCS_TableRelevantStats:SetScript("OnClick", function(self, button, down)
-	DCS_Table_Relevant()
-end)
+		DCS_Table_Relevant()
+	end)
 
 
 ------------------------
@@ -392,8 +411,8 @@ local DCS_TableResetCheck = CreateFrame("Button", "DCS_TableResetButton", Charac
 	DCS_TableResetCheck:SetHeight(30)
 	_G[DCS_TableResetCheck:GetName() .. "Text"]:SetText(L["Reset Stats"])
 	DCS_TableResetCheck:SetScript("OnClick", function(self, button, down)
-	DCS_Table_Reset()
-end)
+		DCS_Table_Reset()
+	end)
 
 
 ------------------------
@@ -421,7 +440,64 @@ local function DCS_configButton_OnLeave(self)
 	DCS_configButton:SetScript("OnEnter", DCS_configButton_OnEnter)
 	DCS_configButton:SetScript("OnLeave", DCS_configButton_OnLeave)
 
+local function configButtonOnClose()
+	StatScrollFrame:SetVerticalScroll(0)
+	configMode = false
+	DCS_TableResetCheck:Hide()
+	DCS_TableRelevantStats:Hide()
+	DCS_configButton:SetNormalTexture("Interface\\Buttons\\LockButton-Locked-Up")
+	DCS_InterfaceOptConfigButton:SetNormalTexture("Interface\\Buttons\\LockButton-Locked-Up")
+	DCS_ConfigtooltipText = L["Unlock DCS"]
+	ShowCharacterStats("player")
+end
+	
+CharacterFrameInsetRight:HookScript("OnHide", function(self)
+	configButtonOnClose()
+end)
+
 	DCS_configButton:SetScript("OnMouseUp", function(self, button, up)
+		configMode = not configMode
+		if (configMode) then
+			self:SetNormalTexture("Interface\\Buttons\\LockButton-Unlocked-Up")
+			DCS_ConfigtooltipText = L["Lock DCS"] --Creates a tooltip on mouseover.
+			DCS_TableResetCheck:Show()
+			DCS_TableRelevantStats:Show()
+		else
+			configButtonOnClose()
+		end
+		ShowCharacterStats("player")
+		DCS_configButton_OnEnter()
+	end)
+
+	
+------------------------------------------
+-- Interface Options Config Mode Toggle --
+------------------------------------------
+
+local DCS_InterfaceOptConfigButton = CreateFrame("Button", "DCS_InterfaceOptConfigButton", DejaCharacterStatsPanel)
+	DCS_InterfaceOptConfigButton:RegisterEvent("PLAYER_LOGIN")
+	DCS_InterfaceOptConfigButton:ClearAllPoints()
+	DCS_InterfaceOptConfigButton:SetPoint("TOPRIGHT", 0, 29)
+	DCS_InterfaceOptConfigButton:SetSize(36, 36)
+	DCS_InterfaceOptConfigButton:SetScale(1.25)
+	DCS_InterfaceOptConfigButton:SetNormalTexture("Interface\\Buttons\\LockButton-Locked-Up")
+	DCS_InterfaceOptConfigButton:SetPushedTexture("Interface\\Buttons\\LockButton-Unlocked-Down")
+	DCS_InterfaceOptConfigButton:SetHighlightTexture("Interface\\Buttons\\UI-Common-MouseHilight", "ADD")
+	
+local function DCS_InterfaceOptConfigButton_OnEnter(self)
+	GameTooltip:SetOwner(DCS_InterfaceOptConfigButton, "ANCHOR_RIGHT");
+	GameTooltip:SetText(DCS_ConfigtooltipText, 1, 1, 1, 1, true)
+	GameTooltip:Show()
+end
+
+local function DCS_InterfaceOptConfigButton_OnLeave(self)
+	GameTooltip_Hide()
+ end
+ 
+	DCS_InterfaceOptConfigButton:SetScript("OnEnter", DCS_InterfaceOptConfigButton_OnEnter)
+	DCS_InterfaceOptConfigButton:SetScript("OnLeave", DCS_InterfaceOptConfigButton_OnLeave)
+
+	DCS_InterfaceOptConfigButton:SetScript("OnMouseUp", function(self, button, up)
 		configMode = not configMode
 		if (configMode) then
 			self:SetNormalTexture("Interface\\Buttons\\LockButton-Unlocked-Up")
@@ -435,17 +511,8 @@ local function DCS_configButton_OnLeave(self)
 			DCS_TableRelevantStats:Hide()
 		end
 		ShowCharacterStats("player")
-		DCS_configButton_OnEnter()
+		DCS_InterfaceOptConfigButton_OnEnter()
 	end)
-
-CharacterFrameInsetRight:HookScript("OnHide", function(self)
-	configMode = false
-	DCS_TableResetCheck:Hide()
-	DCS_TableRelevantStats:Hide()
-	DCS_configButton:SetNormalTexture("Interface\\Buttons\\LockButton-Locked-Up")
-	DCS_ConfigtooltipText = L["Unlock DCS"]
-	ShowCharacterStats("player")
-end)
 
 
 ---------------------
@@ -457,7 +524,7 @@ local DCS_ScrollbarCheck = CreateFrame("CheckButton", "DCS_ScrollbarCheck", Deja
 	DCS_ScrollbarCheck:ClearAllPoints()
 	DCS_ScrollbarCheck:SetPoint("LEFT", 25, -175)
 	DCS_ScrollbarCheck:SetScale(1.25)
-	DCS_ScrollbarCheck.tooltipText = 'Displays the DCS scrollbar.' --Creates a tooltip on mouseover.
+	DCS_ScrollbarCheck.tooltipText = L["Displays the DCS scrollbar."] --Creates a tooltip on mouseover.
 	_G[DCS_ScrollbarCheck:GetName() .. "Text"]:SetText(L["Scrollbar"])
 	
 	DCS_ScrollbarCheck:SetScript("OnEvent", function(self, event, arg1)
@@ -473,6 +540,7 @@ local DCS_ScrollbarCheck = CreateFrame("CheckButton", "DCS_ScrollbarCheck", Deja
 			end
 		end
 		DCS_ScrollbarCheck:UnregisterAllEvents();
+        ShowCharacterStats("player")
 	end)
 
 	DCS_ScrollbarCheck:SetScript("OnClick", function(self,event,arg1) 
@@ -486,3 +554,87 @@ local DCS_ScrollbarCheck = CreateFrame("CheckButton", "DCS_ScrollbarCheck", Deja
 		end		
         ShowCharacterStats("player")
 	end)
+
+
+----------------------------
+-- Class Background Check --
+----------------------------
+
+local DCS_ClassBackgroundCheck = CreateFrame("CheckButton", "DCS_ClassBackgroundCheck", DejaCharacterStatsPanel, "InterfaceOptionsCheckButtonTemplate")
+	DCS_ClassBackgroundCheck:RegisterEvent("PLAYER_LOGIN")
+	DCS_ClassBackgroundCheck:ClearAllPoints()
+	DCS_ClassBackgroundCheck:SetPoint("TOPLEFT", 25, -120)
+	DCS_ClassBackgroundCheck:SetScale(1.25)
+	DCS_ClassBackgroundCheck.tooltipText = L["Displays the class crest background."] --Creates a tooltip on mouseover.
+	_G[DCS_ClassBackgroundCheck:GetName() .. "Text"]:SetText(L["Class Crest Background"])
+	
+	DCS_ClassBackgroundCheck:SetScript("OnEvent", function(self, event, arg1)
+		if event == "PLAYER_LOGIN" then
+		local checked = gdbprivate.gdb.gdbdefaults.dejacharacterstatsClassBackgroundChecked
+			self:SetChecked(checked.ClassBackgroundChecked)
+			if self:GetChecked(true) then
+				CharacterStatsPane.ClassBackground:Show() 
+				gdbprivate.gdb.gdbdefaults.dejacharacterstatsClassBackgroundChecked.ClassBackgroundChecked = true
+			else
+				CharacterStatsPane.ClassBackground:Hide() 
+				gdbprivate.gdb.gdbdefaults.dejacharacterstatsClassBackgroundChecked.ClassBackgroundChecked = false
+			end
+		end
+		DCS_ClassBackgroundCheck:UnregisterAllEvents();
+	end)
+
+	DCS_ClassBackgroundCheck:SetScript("OnClick", function(self,event,arg1) 
+		local checked = gdbprivate.gdb.gdbdefaults.dejacharacterstatsClassBackgroundChecked
+		if self:GetChecked(true) then
+			CharacterStatsPane.ClassBackground:Show() 
+			gdbprivate.gdb.gdbdefaults.dejacharacterstatsClassBackgroundChecked.ClassBackgroundChecked = true
+		else
+			CharacterStatsPane.ClassBackground:Hide() 
+			gdbprivate.gdb.gdbdefaults.dejacharacterstatsClassBackgroundChecked.ClassBackgroundChecked = false
+		end		
+        ShowCharacterStats("player")
+	end)
+	
+	
+InterfaceOptionsFrame:HookScript("OnShow", function(self)
+	StatScrollFrame:SetParent(DejaCharacterStatsPanel)
+	StatScrollFrame:ClearAllPoints()
+	StatScrollFrame:SetPoint("TOPLEFT", DejaCharacterStatsPanel, "TOPLEFT", 380, -6)
+	StatScrollFrame:SetPoint("BOTTOMRIGHT", DejaCharacterStatsPanel, "BOTTOMRIGHT", -50, 3)
+	
+	DCS_TableRelevantStats:SetParent(StatScrollFrame)
+	DCS_TableRelevantStats:ClearAllPoints()
+	DCS_TableRelevantStats:SetPoint("BOTTOMLEFT", -6, 0)
+
+	DCS_TableResetCheck:SetParent(StatScrollFrame)
+	DCS_TableResetCheck:ClearAllPoints()
+	DCS_TableResetCheck:SetPoint("BOTTOMRIGHT", 6, 0)
+
+	CharacterStatsPane.ClassBackground:SetParent(DejaCharacterStatsPanel)
+	CharacterStatsPane.ClassBackground:ClearAllPoints()
+	CharacterStatsPane.ClassBackground:SetPoint("TOPLEFT", DejaCharacterStatsPanel, "TOPLEFT", 380, -6)
+	
+	ShowCharacterStats("player")
+end)
+
+InterfaceOptionsFrame:HookScript("OnHide", function(self)
+	StatScrollFrame:SetParent(CharacterFrameInsetRight)
+	StatScrollFrame:ClearAllPoints()
+	StatScrollFrame:SetPoint("TOPLEFT", CharacterFrameInsetRight, "TOPLEFT", 5, -6)
+	StatScrollFrame:SetPoint("BOTTOMRIGHT", CharacterFrameInsetRight, "BOTTOMRIGHT", 0, 3)
+
+	DCS_TableRelevantStats:SetParent(CharacterFrameInsetRight)
+	DCS_TableRelevantStats:ClearAllPoints()
+	DCS_TableRelevantStats:SetPoint("BOTTOMRIGHT", -130,-36)
+
+	DCS_TableResetCheck:SetParent(CharacterFrameInsetRight)
+	DCS_TableResetCheck:ClearAllPoints()
+	DCS_TableResetCheck:SetPoint("BOTTOMRIGHT", 5, -36)
+
+	CharacterStatsPane.ClassBackground:SetParent(StatScrollFrame)
+	CharacterStatsPane.ClassBackground:ClearAllPoints()
+	CharacterStatsPane.ClassBackground:SetPoint("TOP", StatScrollFrame, "TOP", -2.50, 3)
+	
+	configButtonOnClose()
+	ShowCharacterStats("player")
+end)

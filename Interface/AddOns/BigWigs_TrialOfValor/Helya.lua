@@ -26,6 +26,7 @@ local tentaclesUp = 9
 local phase = 1
 local orbCount = 1
 local tentacleCount = 1
+local tentacleMsgCount = 1
 local taintCount = 1
 
 local timers = {
@@ -60,6 +61,9 @@ if L then
 	L.gripping_tentacle = -14309
 	L.grimelord = -14263
 	L.mariner = -14278
+
+	L.orb_say = "Orb"
+	L.taint_say = "Taint"
 end
 
 --------------------------------------------------------------------------------
@@ -189,6 +193,7 @@ function mod:OnEngage()
 	phase = 1
 	orbCount = 1
 	tentacleCount = 1
+	tentacleMsgCount = 1
 	taintCount = 1
 
 	self:CDBar(227967, self:Mythic() and 10.5 or self:Heroic() and 12 or 13.3) -- Bilewater Breath
@@ -210,7 +215,7 @@ function mod:UNIT_SPELLCAST_SUCCEEDED(unit, spellName, _, _, spellId)
 		self:Message("stages", "Neutral", "Long", CL.stage:format(2), false)
 		self:StopBar(CL.count:format(L.orb_ranged_bar, orbCount))
 		self:StopBar(CL.count:format(L.orb_melee_bar, orbCount))
-		self:StopBar(CL.count:format(self:SpellName(228054, taintCount))) -- Taint of the Sea
+		self:StopBar(CL.count:format(self:SpellName(228054), taintCount)) -- Taint of the Sea
 		self:StopBar(227967) -- Bilewater Breath
 		if self:BarTimeLeft(CL.cast:format(self:SpellName(227967))) > 0 then -- Breath
 			-- if she transitions while casting the breath she won't spawn the blobs
@@ -242,12 +247,15 @@ end
 
 function mod:RAID_BOSS_EMOTE(event, msg, npcname)
 	if msg:find(L.nearTrigger) then
-		self:Message("tentacle_near", "Urgent", "Long", CL.count:format(L.tentacle_near, tentacleCount-1), 228730)
+		self:Message("tentacle_near", "Urgent", "Long", CL.count:format(L.tentacle_near, tentacleMsgCount), 228730)
+		tentacleMsgCount = tentacleMsgCount + 1
 	elseif msg:find(L.farTrigger) then
-		self:Message("tentacle_far", "Urgent", "Long", CL.count:format(L.tentacle_far, tentacleCount-1), 228730)
+		self:Message("tentacle_far", "Urgent", "Long", CL.count:format(L.tentacle_far, tentacleMsgCount), 228730)
+		tentacleMsgCount = tentacleMsgCount + 1
 	elseif msg:find("inv_misc_monsterhorn_03", nil, true) then -- Fallback for no locale
 		msg = msg:gsub("|T[^|]+|t", "")
-		self:Message(228730, "Urgent", "Long", msg:format(npcname), 228730)
+		self:Message(228730, "Urgent", "Long", CL.count:format(msg:format(npcname), tentacleMsgCount), 228730)
+		tentacleMsgCount = tentacleMsgCount + 1
 		BigWigs:Print("Missing translation for tentacle strike.") -- XXX temp
 	end
 end
@@ -255,11 +263,11 @@ end
 function mod:RAID_BOSS_WHISPER(event, msg)
 	if msg:find("227920") then -- P1 Orb of Corruption
 		self:Message(229119, "Personal", "Warning", CL.you:format(self:SpellName(229119))) -- Orb of Corruption
-		self:Say(229119)
+		self:Say(229119, L.orb_say)
 		self:Flash(229119)
 	elseif msg:find("228058") then -- P2 Orb of Corrosion
 		self:Message(230267, "Personal", "Warning", CL.you:format(self:SpellName(230267))) -- Orb of Corrosion
-		self:Say(230267)
+		self:Say(230267, L.orb_say)
 		self:Flash(230267)
 	end
 end
@@ -376,7 +384,7 @@ do
 	function mod:TaintOfTheSeaRemoved(args)
 		if self:Me(args.destGUID) then
 			self:Message(args.spellId, "Personal", "Warning", CL.underyou:format(args.spellName))
-			self:Say(args.spellId)
+			self:Say(args.spellId, L.taint_say)
 		end
 		if self:GetOption(taintMarker) then
 			SetRaidTarget(args.destName, 0)

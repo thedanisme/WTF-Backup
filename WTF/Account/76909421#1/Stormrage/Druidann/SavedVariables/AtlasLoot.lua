@@ -4,8 +4,8 @@ AtlasLootCharDB = {
 	["GUI"] = {
 		["classFilter"] = true,
 		["selected"] = {
-			"AtlasLoot_Collections", -- [1]
-			"TIMEWALKINGEVENT", -- [2]
+			"AtlasLoot_Legion", -- [1]
+			"TrialOfValor", -- [2]
 			nil, -- [3]
 			1, -- [4]
 			0, -- [5]

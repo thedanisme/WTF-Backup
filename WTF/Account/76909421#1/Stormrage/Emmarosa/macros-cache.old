@@ -4,6 +4,7 @@ VER 3 0100000000000007 " " "INV_Misc_QuestionMark"
 /use Curse of the Dreadblades
 /use 13
 /use 14
+/use 11
 END
 VER 3 0100000000000002 " TotT(Focus)" "INV_Misc_QuestionMark"
 #showtooltip Tricks of the Trade
@@ -25,6 +26,11 @@ END
 VER 3 0100000000000004 "Poisons" "INV_Misc_QuestionMark"
 #showtooltip
 /castsequence Deadly Poison, Crippling Poison
+END
+VER 3 010000000000000C "Ring+Vendetta" "INV_Misc_QuestionMark"
+#showtooltip 11
+/use 11
+/use Vendetta
 END
 VER 3 0100000000000006 "Riposte" "INV_Misc_QuestionMark"
 #showtooltip Riposte

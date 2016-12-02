@@ -1,5 +1,6 @@
 local ADDON_NAME, namespace = ... 	--localization
 local L = namespace.L 				--localization
+local name,addon = ...
 
 local _, private = ...
 local _, gdbprivate = ...
@@ -275,7 +276,7 @@ DCS_TableData.StatData.WEAPON_DPS = {
 		white_dps = white_dps*(1 + GetCritChance()/100)/misses_etc --assumes crits do twice as damage
 		white_dps = format("%.2f", white_dps)
 		PaperDollFrame_SetLabelAndText(statFrame, L["Weapon DPS"], white_dps, false, white_dps)
-		statFrame.tooltip = HIGHLIGHT_FONT_COLOR_CODE..format(PAPERDOLLFRAME_TOOLTIP_FORMAT, format(L["Weapon DPS %s"], main_oh_dps));
+		statFrame.tooltip = HIGHLIGHT_FONT_COLOR_CODE..format(PAPERDOLLFRAME_TOOLTIP_FORMAT, format(L["Weapon DPS"], main_oh_dps)).." "..format("%s", main_oh_dps)..FONT_COLOR_CODE_CLOSE;
 		statFrame.tooltip2 = (tooltip2);
 	end
 }
@@ -304,7 +305,7 @@ DCS_TableData.StatData.GCD = {
 			end
 		end
 		PaperDollFrame_SetLabelAndText(statFrame, L["Global Cooldown"], format("%.2fs",gcd), false, gcd)
-		statFrame.tooltip = HIGHLIGHT_FONT_COLOR_CODE..format(PAPERDOLLFRAME_TOOLTIP_FORMAT, format(L["Global Cooldown %.2fs"], gcd));
+		statFrame.tooltip = HIGHLIGHT_FONT_COLOR_CODE..format(PAPERDOLLFRAME_TOOLTIP_FORMAT, format(L["Global Cooldown"], gcd)).." "..format("%.2fs", gcd)..FONT_COLOR_CODE_CLOSE;
 		statFrame.tooltip2 = (L["General global cooldown for casters. Individual spells, set bonuses, talents, etc. not considered. Not suitable for melee. Improvements coming Soon(TM)."]);
 	end
 }
@@ -347,8 +348,28 @@ DCS_TableData.StatData.REPAIR_COST = {
 		-- PaperDollFrame_SetLabelAndText(statFrame, label, text, isPercentage, numericValue) -- Formatting
 
 		PaperDollFrame_SetLabelAndText(statFrame, (L["Repair Total"]), totalRepairCost, false, displayRepairTotal);
-	
-		statFrame.tooltip = HIGHLIGHT_FONT_COLOR_CODE..format(PAPERDOLLFRAME_TOOLTIP_FORMAT, format(L["Repair Total %s"], totalRepairCost));
+		statFrame.tooltip = HIGHLIGHT_FONT_COLOR_CODE..format(PAPERDOLLFRAME_TOOLTIP_FORMAT, format(L["Repair Total"], totalRepairCost)).." "..format("%s", totalRepairCost)..FONT_COLOR_CODE_CLOSE;
 		statFrame.tooltip2 = (L["Total equipped item repair cost before discounts."]);
     end
+}
+
+DCS_TableData.StatData.DURABILITY_STAT = {
+    updateFunc = function(statFrame, unit)
+		DCS_Mean_DurabilityCalc()
+		--print(addon.duraMean)
+		
+		if ( unit ~= "player" ) then
+			statFrame:Hide();
+			return;
+		end
+
+		local displayDura = format("%.2f%%", addon.duraMean);
+
+		PaperDollFrame_SetLabelAndText(statFrame, (L["Durability"]), displayDura, false, addon.duraMean);
+		statFrame.tooltip = HIGHLIGHT_FONT_COLOR_CODE..format(PAPERDOLLFRAME_TOOLTIP_FORMAT, format(L["Durability %s"], displayDura));
+		statFrame.tooltip2 = (L["Average equipped item durability percentage."]);
+
+		local duraFinite = 0
+		statFrame:Show();
+	end
 }

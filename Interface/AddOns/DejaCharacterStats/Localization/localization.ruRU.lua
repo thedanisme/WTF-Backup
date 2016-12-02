@@ -40,7 +40,7 @@ if LOCALE == "ruRU" then
 	L['Displays Equipped/Available item levels unless equal.'] = "Отображает уровень Надетых/Доступных предметов, если значения не равны."
 
 	L["Decimals"] = "Десятичные числа"
-	L['Displays "Enhancements" category stats to two decimal places.'] = 'Отображает "Усиления" характеристики персонажа используя десятичные числа.'
+	L['Displays "Enhancements" category stats to two decimal places.'] = 'Отображает "расширенные" характеристики персонажа используя десятичные числа.'
 
 	L["Ilvl Decimals"] = "Десятичные числа для ilvl"
 	L['Displays average item level to two decimal places.'] = "Отображает средний уровень предметов используя десятичные числа."
@@ -140,11 +140,13 @@ if LOCALE == "ruRU" then
 	L["Item Level 1 Decimal Place"] = "Уровень предметов с десятичными"
 	L["Displays average item level to one decimal place."] = "Отображать средний уровень предметов используя одно число после точки."
 	L["Item Level 2 Decimal Places"] = "Уровень предметов с сотыми"
-	L["Displays average item level to two decimal place."] = "Отображать средний уровень предметов используя два числа после точки."
+	L["Displays average item level to two decimal places."] = "Отображать средний уровень предметов используя два числа после точки."
 	L["Main Hand"] = "Правая рука"
 	L["/Off Hand"] = "/Левая рука"
-	L[" weapon auto attack (white) DPS."] = 'Автоматическая атака оружием. "Белый" урон.'
+	L[" weapon auto attack (white) DPS."] = ' Автоматическая атака оружием. "Белый" урон.'
 	L["Weapon DPS"] = "Урон оружия"
 	L["Weapon DPS %s"] = "Урон оружия %s"
-	
+--	L["Class Crest Background"] = ""
+--	L["Displays the class crest background."] = ""
+
 return end

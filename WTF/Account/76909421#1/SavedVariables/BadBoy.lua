@@ -1,7 +1,6 @@
 
 BADBOY_BLACKLIST = {
-	["Player-60-0ADD3D77"] = true,
-	["dayFromCal"] = 1,
+	["dayFromCal"] = 2,
 }
 BADBOY_OPTIONS = {
 }
