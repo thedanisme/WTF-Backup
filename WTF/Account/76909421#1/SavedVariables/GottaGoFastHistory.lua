@@ -1,11 +1,7 @@
 
-LegionRaresTreasuresDB = {
+GottaGoFastHistoryDB = {
 	["profileKeys"] = {
 		["Emmarosa - Stormrage"] = "Default",
 		["Chucklefunk - Stormrage"] = "Default",
-	},
-	["profiles"] = {
-		["Default"] = {
-		},
 	},
 }

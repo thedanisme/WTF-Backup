@@ -23,8 +23,8 @@ AtlasLootCharDB = {
 		["selected"] = {
 			"AtlasLoot_Legion", -- [1]
 			"MawOfSouls", -- [2]
-			3, -- [3]
-			8, -- [4]
+			nil, -- [3]
+			6, -- [4]
 			0, -- [5]
 		},
 		["point"] = {

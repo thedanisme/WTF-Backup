@@ -214,5 +214,5 @@ HandyNotes_SuramarTelemancy: enabled
 PersonalLootHelper: enabled
 ElvUI_SLE: enabled
 Details_RaidInfo-TrialOfValor: disabled
-GarrisonMissionManager: disabled
+GarrisonMissionManager: enabled
 !YouArentInAPartyFix: disabled

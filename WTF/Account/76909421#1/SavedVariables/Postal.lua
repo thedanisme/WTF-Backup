@@ -72,7 +72,7 @@ Postal3DB = {
 		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
 		["Horny - Bloodhoof"] = "Horny - Bloodhoof",
 		["Ranidan - Stormreaver"] = "Ranidan - Stormreaver",
-		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
+		["Bruhbies - Stormrage"] = "Bruhbies - Stormrage",
 		["Rotator - Turalyon"] = "Rotator - Turalyon",
 		["Llamama - Stormrage"] = "Llamama - Stormrage",
 		["Barewbies - Stormrage"] = "Barewbies - Stormrage",
@@ -81,7 +81,7 @@ Postal3DB = {
 		["Fupa - Stormrage"] = "Fupa - Stormrage",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
 		["Bloodcox - Stormrage"] = "Bloodcox - Stormrage",
-		["Bruhbies - Stormrage"] = "Bruhbies - Stormrage",
+		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
 		["Priaprisum - Stormreaver"] = "Priaprisum - Stormreaver",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
 		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
@@ -157,6 +157,11 @@ Postal3DB = {
 		["Jakwez - Stormrage"] = {
 		},
 		["Chucklefunk - Stormrage"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Emmarosa|Stormrage|Alliance", -- [1]
+				},
+			},
 		},
 		["Retardar - Stormrage"] = {
 		},
@@ -314,13 +319,11 @@ Postal3DB = {
 				},
 			},
 		},
-		["Arando - Bloodhoof"] = {
+		["Bruhbies - Stormrage"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Aranduh|Bloodhoof|Horde", -- [1]
-					"Brobies-Stormrage|Bloodhoof|Horde", -- [2]
-					"Noxzemagirl|Bloodhoof|Horde", -- [3]
-					"Callil-Turalyon|Bloodhoof|Horde", -- [4]
+					"Yanlery|Stormrage|Alliance", -- [1]
+					"Bloodcox|Stormrage|Alliance", -- [2]
 				},
 			},
 		},
@@ -365,11 +368,13 @@ Postal3DB = {
 		},
 		["Bloodcox - Stormrage"] = {
 		},
-		["Bruhbies - Stormrage"] = {
+		["Arando - Bloodhoof"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Yanlery|Stormrage|Alliance", -- [1]
-					"Bloodcox|Stormrage|Alliance", -- [2]
+					"Aranduh|Bloodhoof|Horde", -- [1]
+					"Brobies-Stormrage|Bloodhoof|Horde", -- [2]
+					"Noxzemagirl|Bloodhoof|Horde", -- [3]
+					"Callil-Turalyon|Bloodhoof|Horde", -- [4]
 				},
 			},
 		},
