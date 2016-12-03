@@ -1,6 +1,7 @@
 # LittleWigs
 
-## [v7.1.2-1-g509ed71](https://github.com/BigWigsMods/LittleWigs/tree/509ed71cd3a93a16c0ca85b3f29a96ce98b696b4) (2016-12-01) [](#top)
-[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v7.1.2...509ed71cd3a93a16c0ca85b3f29a96ce98b696b4)
+## [v7.1.2-2-g570b540](https://github.com/BigWigsMods/LittleWigs/tree/570b5409419d2529afbc2c06647305f76f84fc80) (2016-12-03) [](#top)
+[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v7.1.2...570b5409419d2529afbc2c06647305f76f84fc80)
 
+- Karazhan/MaidenOfVirtue: Compensate for the lack of a boss unit.  
 - WoD/UpperBlackrockSpire/Zaela: Tweak  
