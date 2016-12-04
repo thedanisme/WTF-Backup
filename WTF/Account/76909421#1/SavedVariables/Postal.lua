@@ -72,7 +72,7 @@ Postal3DB = {
 		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
 		["Horny - Bloodhoof"] = "Horny - Bloodhoof",
 		["Ranidan - Stormreaver"] = "Ranidan - Stormreaver",
-		["Bruhbies - Stormrage"] = "Bruhbies - Stormrage",
+		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
 		["Rotator - Turalyon"] = "Rotator - Turalyon",
 		["Llamama - Stormrage"] = "Llamama - Stormrage",
 		["Barewbies - Stormrage"] = "Barewbies - Stormrage",
@@ -81,7 +81,7 @@ Postal3DB = {
 		["Fupa - Stormrage"] = "Fupa - Stormrage",
 		["Skratch - Turalyon"] = "Skratch - Turalyon",
 		["Bloodcox - Stormrage"] = "Bloodcox - Stormrage",
-		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
+		["Bruhbies - Stormrage"] = "Bruhbies - Stormrage",
 		["Priaprisum - Stormreaver"] = "Priaprisum - Stormreaver",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
 		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
@@ -319,11 +319,13 @@ Postal3DB = {
 				},
 			},
 		},
-		["Bruhbies - Stormrage"] = {
+		["Arando - Bloodhoof"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Yanlery|Stormrage|Alliance", -- [1]
-					"Bloodcox|Stormrage|Alliance", -- [2]
+					"Aranduh|Bloodhoof|Horde", -- [1]
+					"Brobies-Stormrage|Bloodhoof|Horde", -- [2]
+					"Noxzemagirl|Bloodhoof|Horde", -- [3]
+					"Callil-Turalyon|Bloodhoof|Horde", -- [4]
 				},
 			},
 		},
@@ -368,13 +370,11 @@ Postal3DB = {
 		},
 		["Bloodcox - Stormrage"] = {
 		},
-		["Arando - Bloodhoof"] = {
+		["Bruhbies - Stormrage"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Aranduh|Bloodhoof|Horde", -- [1]
-					"Brobies-Stormrage|Bloodhoof|Horde", -- [2]
-					"Noxzemagirl|Bloodhoof|Horde", -- [3]
-					"Callil-Turalyon|Bloodhoof|Horde", -- [4]
+					"Yanlery|Stormrage|Alliance", -- [1]
+					"Bloodcox|Stormrage|Alliance", -- [2]
 				},
 			},
 		},

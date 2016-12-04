@@ -4,10 +4,11 @@ HandyNotes_SuramarTelemancyDB = {
 		["Oenta - Stormrage"] = "Oenta - Stormrage",
 		["Whyfy - Stormrage"] = "Whyfy - Stormrage",
 		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
+		["Callil - Turalyon"] = "Callil - Turalyon",
 		["Druidann - Stormrage"] = "Druidann - Stormrage",
 		["Jakwez - Stormrage"] = "Jakwez - Stormrage",
 		["Chucklefunk - Stormrage"] = "Chucklefunk - Stormrage",
-		["Callil - Turalyon"] = "Callil - Turalyon",
+		["Brobies - Stormrage"] = "Brobies - Stormrage",
 		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
 		["Shhbbyisok - Stormrage"] = "Shhbbyisok - Stormrage",
 		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
@@ -20,13 +21,15 @@ HandyNotes_SuramarTelemancyDB = {
 		},
 		["Shaneequa - Turalyon"] = {
 		},
+		["Callil - Turalyon"] = {
+		},
 		["Druidann - Stormrage"] = {
 		},
 		["Jakwez - Stormrage"] = {
 		},
 		["Chucklefunk - Stormrage"] = {
 		},
-		["Callil - Turalyon"] = {
+		["Brobies - Stormrage"] = {
 		},
 		["Emmarosa - Stormrage"] = {
 		},

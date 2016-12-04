@@ -1,7 +1,0 @@
-
-AdvancedInterfaceOptionsSaved = {
-	["CharVars"] = {
-	},
-	["AccountVars"] = {
-	},
-}

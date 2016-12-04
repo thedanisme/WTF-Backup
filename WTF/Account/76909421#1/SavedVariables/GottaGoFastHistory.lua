@@ -1,7 +1,8 @@
 
 GottaGoFastHistoryDB = {
 	["profileKeys"] = {
-		["Emmarosa - Stormrage"] = "Default",
 		["Chucklefunk - Stormrage"] = "Default",
+		["Emmarosa - Stormrage"] = "Default",
+		["Brobies - Stormrage"] = "Default",
 	},
 }

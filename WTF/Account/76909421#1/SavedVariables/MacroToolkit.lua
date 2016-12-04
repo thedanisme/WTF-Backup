@@ -113,10 +113,10 @@ MacroToolkitDB = {
 					["name"] = "Spirit Mend",
 					["body"] = "#showtooltip\n/use [@player] Spirit Mend\n",
 				},
-				[129] = {
-					["icon"] = "INV_MISC_QUESTIONMARK",
-					["name"] = "OpenerBM",
-					["body"] = "#showtooltip\n/castsequence reset=combat Cobra Shot, Cobra Shot, Stampede, 14, Bestial Wrath, Kill Command, Barrage\n",
+				[121] = {
+					["icon"] = "ABILITY_IMPALINGBOLT",
+					["name"] = " ",
+					["body"] = "#showtooltip\n/petattack\n/use [@mouseover,exists][@target] Arcane Shot\n",
 				},
 				[125] = {
 					["icon"] = "ABILITY_HUNTER_MISDIRECTION",
@@ -128,10 +128,10 @@ MacroToolkitDB = {
 					["name"] = "OpenerSurv",
 					["body"] = "/castsequence reset=combat 14, A Murder of Crows, Explosive Shot, Black Arrow, Arcane Shot\n",
 				},
-				[121] = {
-					["icon"] = "ABILITY_IMPALINGBOLT",
-					["name"] = " ",
-					["body"] = "#showtooltip\n/petattack\n/use [@mouseover,exists][@target] Arcane Shot\n",
+				[129] = {
+					["icon"] = "INV_MISC_QUESTIONMARK",
+					["name"] = "OpenerBM",
+					["body"] = "#showtooltip\n/castsequence reset=combat Cobra Shot, Cobra Shot, Stampede, 14, Bestial Wrath, Kill Command, Barrage\n",
 				},
 			},
 		},
@@ -492,15 +492,15 @@ MacroToolkitDB = {
 					["icon"] = "1386546",
 					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Power Word: Radiance\n",
 				},
-				[129] = {
-					["name"] = "PW:S",
-					["icon"] = "135940",
-					["body"] = "#showtooltip\n/use [@mouseover,help,nodead]Power Word: Shield;[help,nodead]Power Word: Shield;Power Word: Shield\n",
-				},
 				[121] = {
 					["name"] = "Feather",
 					["icon"] = "642580",
 					["body"] = "#showtooltip\n/cast [@player] Angelic Feather\n/stopspelltarget\n",
+				},
+				[129] = {
+					["name"] = "PW:S",
+					["icon"] = "135940",
+					["body"] = "#showtooltip\n/use [@mouseover,help,nodead]Power Word: Shield;[help,nodead]Power Word: Shield;Power Word: Shield\n",
 				},
 				[125] = {
 					["name"] = "Plea",
@@ -710,10 +710,10 @@ MacroToolkitDB = {
 					["name"] = "Treants",
 					["body"] = "#showtooltip\n/use [@cursor]Force of Nature\n",
 				},
-				[121] = {
-					["icon"] = "132123",
-					["name"] = "FoE",
-					["body"] = "#showtooltip\n/use [@cursor]Fury of Elune\n",
+				[129] = {
+					["icon"] = "135952",
+					["name"] = "RemCorruption",
+					["body"] = "#showtooltip\n/use [@mouseover,help,exists][]Remove Corruption\n",
 				},
 				[125] = {
 					["icon"] = "136048",
@@ -725,10 +725,10 @@ MacroToolkitDB = {
 					["name"] = "Swiftmend",
 					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Swiftmend\n",
 				},
-				[129] = {
-					["icon"] = "135952",
-					["name"] = "RemCorruption",
-					["body"] = "#showtooltip\n/use [@mouseover,help,exists][]Remove Corruption\n",
+				[121] = {
+					["icon"] = "132123",
+					["name"] = "FoE",
+					["body"] = "#showtooltip\n/use [@cursor]Fury of Elune\n",
 				},
 			},
 			["backups"] = {
@@ -1103,15 +1103,15 @@ MacroToolkitDB = {
 					["name"] = " ",
 					["body"] = "#showtooltip\n/use [@mouseover,help]Flash of Light;[help]Flash of Light;Flash of Light\n",
 				},
-				[123] = {
-					["icon"] = "134400",
-					["name"] = " ",
-					["body"] = "#showtooltip\n/use [@mouseover,help]Hand of Freedom;[help]Hand of Freedom;Hand of Freedom\n",
-				},
 				[133] = {
 					["icon"] = "134400",
 					["name"] = " ",
 					["body"] = "#showtooltip\n/use [@mouseover,help]Hand of Protection;[help]Hand of Protection;Hand of Protection\n",
+				},
+				[123] = {
+					["icon"] = "134400",
+					["name"] = " ",
+					["body"] = "#showtooltip\n/use [@mouseover,help]Hand of Freedom;[help]Hand of Freedom;Hand of Freedom\n",
 				},
 				[127] = {
 					["icon"] = "524354",
@@ -1180,15 +1180,15 @@ MacroToolkitDB = {
 		},
 		["Brewbies - Turalyon"] = {
 			["macros"] = {
-				[122] = {
-					["icon"] = "ABILITY_MONK_PRIDEOFTHETIGER",
-					["name"] = " ",
-					["body"] = "#showtooltip Legacy of the White Tiger\n/use Legacy of the White Tiger\n/cancelaura Hand of Protection\n",
-				},
 				[131] = {
 					["icon"] = "INV_MISC_QUESTIONMARK",
 					["name"] = "Serenity Spam",
 					["body"] = "#showtooltip Serenity\n/use Serenity\n/use Blackout Kick\n/use Purifying Brew\n",
+				},
+				[122] = {
+					["icon"] = "ABILITY_MONK_PRIDEOFTHETIGER",
+					["name"] = " ",
+					["body"] = "#showtooltip Legacy of the White Tiger\n/use Legacy of the White Tiger\n/cancelaura Hand of Protection\n",
 				},
 				[126] = {
 					["icon"] = "ABILITY_MONK_CLASHINGOXCHARGE",
@@ -1205,10 +1205,10 @@ MacroToolkitDB = {
 					["name"] = "ZGVMacro2",
 					["body"] = "/target Master Hight\n/run ZGV:MRM():CG(2,2)\n",
 				},
-				[133] = {
-					["icon"] = "MONK_ABILITY_TRANSCENDENCE",
-					["name"] = "TransferSequence",
-					["body"] = "#showtooltip\n/castsequence Transcendence, Transcendence: Transfer\n",
+				[123] = {
+					["icon"] = "INV_MISC_QUESTIONMARK",
+					["name"] = " ",
+					["body"] = "#showtooltip Brawler's Bottomless Draenic Agility Potion\n/use Brawler's Bottomless Draenic Agility Potion\n/use 14\n",
 				},
 				[127] = {
 					["icon"] = "ABILITY_MONK_FORTIFYINGALE_NEW",
@@ -1255,10 +1255,10 @@ MacroToolkitDB = {
 					["name"] = "Provoke",
 					["body"] = "#showtooltip\n/cast [nomod,@mouseover,harm,exists][nomod] Provoke\n/stopmacro [nomod]\n/target Black Ox Statue\n/cast Provoke\n/targetlasttarget\n",
 				},
-				[123] = {
-					["icon"] = "INV_MISC_QUESTIONMARK",
-					["name"] = " ",
-					["body"] = "#showtooltip Brawler's Bottomless Draenic Agility Potion\n/use Brawler's Bottomless Draenic Agility Potion\n/use 14\n",
+				[133] = {
+					["icon"] = "MONK_ABILITY_TRANSCENDENCE",
+					["name"] = "TransferSequence",
+					["body"] = "#showtooltip\n/castsequence Transcendence, Transcendence: Transfer\n",
 				},
 			},
 			["backups"] = {
@@ -1402,69 +1402,69 @@ MacroToolkitDB = {
 		["Brobies - Stormrage"] = {
 			["macros"] = {
 				[122] = {
+					["icon"] = "967531",
 					["name"] = " ",
-					["icon"] = "134400",
-					["body"] = "#showtooltip Legacy of the White Tiger\n/use Legacy of the White Tiger\n/cancelaura Hand of Protection\n",
+					["body"] = "#showtooltip Brawler's Bottomless Draenic Agility Potion\n/use Brawler's Bottomless Draenic Agility Potion\n/use 14\n",
 				},
 				[126] = {
-					["name"] = "Guard/cancel BOP",
 					["icon"] = "134400",
+					["name"] = "Guard/cancel BOP",
 					["body"] = "#showtooltip\n/cancelaura Hand of Protection\n/use Guard\n",
 				},
 				[132] = {
-					["name"] = "Trinket",
 					["icon"] = "133209",
+					["name"] = "Trinket",
 					["body"] = "#showtooltip\n/use 14\n",
 				},
 				[123] = {
-					["name"] = " Detox",
 					["icon"] = "460692",
+					["name"] = " Detox",
 					["body"] = "#showtooltip\n/use [@mouseover,exists,help][@player][]Detox\n",
 				},
 				[127] = {
-					["name"] = "Jab/Cancel BoP",
 					["icon"] = "134400",
+					["name"] = "Jab/Cancel BoP",
 					["body"] = "#showtooltip\n/cancelaura Hand of Protection\n/cancelaura Misdirection\n/run SetRaidTarget(\"PLAYER\",0)\n/use Jab\n",
 				},
-				[131] = {
-					["name"] = "TransferSequence",
-					["icon"] = "627608",
-					["body"] = "#showtooltip\n/castsequence Transcendence, Transcendence: Transfer\n",
+				[133] = {
+					["icon"] = "613397",
+					["name"] = "ZS Focus",
+					["body"] = "#showtooltip\n/use [@focus,mod][]Zen Sphere\n",
 				},
 				[124] = {
-					["name"] = "Despawn Ox",
 					["icon"] = "628134",
+					["name"] = "Despawn Ox",
 					["body"] = "/click TotemFrameTotem1 RightButton\n",
 				},
 				[128] = {
-					["name"] = "Provoke",
 					["icon"] = "620830",
+					["name"] = "Provoke",
 					["body"] = "#showtooltip\n/cast [nomod,@mouseover,harm,exists][nomod] Provoke\n/stopmacro [nomod]\n/target Black Ox Statue\n/cast Provoke\n/targetlasttarget\n",
 				},
-				[129] = {
-					["name"] = "Serenity Spam",
+				[121] = {
 					["icon"] = "134400",
+					["name"] = " ",
+					["body"] = "#showtooltip Legacy of the White Tiger\n/use Legacy of the White Tiger\n/cancelaura Hand of Protection\n",
+				},
+				[129] = {
+					["icon"] = "134400",
+					["name"] = "Serenity Spam",
 					["body"] = "#showtooltip Serenity\n/use Serenity\n/use Blackout Kick\n/use Purifying Brew\n",
 				},
-				[121] = {
-					["name"] = " ",
-					["icon"] = "134400",
-					["body"] = "#showtooltip Brawler's Bottomless Draenic Agility Potion\n/use Brawler's Bottomless Draenic Agility Potion\n/use 14\n",
-				},
 				[125] = {
-					["name"] = "Fort Brew",
 					["icon"] = "615341",
+					["name"] = "Fort Brew",
 					["body"] = "#showtooltip\n/use Fortifying Brew\n/use 14\n",
 				},
 				[130] = {
-					["name"] = "Tiger's Lust",
 					["icon"] = "134400",
+					["name"] = "Tiger's Lust",
 					["body"] = "#showtooltip\n/cast [@mouseover,help][@target,help][@player]Tiger's Lust\n",
 				},
-				[133] = {
-					["name"] = "ZS Focus",
-					["icon"] = "613397",
-					["body"] = "#showtooltip\n/use [@focus,mod][]Zen Sphere\n",
+				[131] = {
+					["icon"] = "627608",
+					["name"] = "TransferSequence",
+					["body"] = "#showtooltip\n/castsequence Transcendence, Transcendence: Transfer\n",
 				},
 			},
 			["backups"] = {
