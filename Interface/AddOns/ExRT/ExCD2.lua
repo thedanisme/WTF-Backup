@@ -9408,17 +9408,29 @@ local function ScanArtifactData()
 	end
 end
 
-local function UpdateArtifactData()
-	if not C_ArtifactUI.GetEquippedArtifactInfo() then
-		return
-	end
-	local isArtifactFrameShown = ArtifactFrame and ArtifactFrame:IsShown()
-	if not isArtifactFrameShown then
-		SocketInventoryItem(16)
-	end
-	ScanArtifactData()
-	if not isArtifactFrameShown then
-		C_ArtifactUI.Clear()
+local UpdateArtifactData
+do
+	local ReregTimer
+	function UpdateArtifactData()
+		if not C_ArtifactUI.GetEquippedArtifactInfo() then
+			return
+		end
+		UIParent:UnregisterEvent("ARTIFACT_UPDATE")
+		ReregTimer = C_Timer.NewTimer(.1,function()
+			UIParent:RegisterEvent("ARTIFACT_UPDATE")
+		end)
+		local isArtifactFrameShown = ArtifactFrame and ArtifactFrame:IsShown()
+		if not isArtifactFrameShown then
+			SocketInventoryItem(16)
+		end
+		ScanArtifactData()
+		if not isArtifactFrameShown then
+			C_ArtifactUI.Clear()
+		end
+		if ReregTimer then
+			ReregTimer:Cancel()
+		end
+		UIParent:RegisterEvent("ARTIFACT_UPDATE")
 	end
 end
 
@@ -9435,6 +9447,7 @@ do
 end
 
 local artifactUIfixTimer
+local artifactUIfixTimerFirstLoad
 local function artifactUI_CheckMajorFrames(self)
 	if (not WorldMapFrame or not WorldMapFrame:IsVisible()) and (not PlayerTalentFrame or not PlayerTalentFrame:IsVisible()) and (not OrderHallMissionFrame or not OrderHallMissionFrame:IsVisible()) then
 		if artifactUIfixTimer then
@@ -9443,13 +9456,29 @@ local function artifactUI_CheckMajorFrames(self)
 		if self then
 			self:Cancel()
 		end
-		
-		UIParent:UnregisterEvent("ARTIFACT_UPDATE")
-		C_Timer.After(.1,function()
-			UIParent:RegisterEvent("ARTIFACT_UPDATE")
-		end)
-		
+		ExRT.F.dprint('Check aftifact traits')
+		local allAUframes = nil
+		if self.firstLoad then
+			allAUframes = {GetFramesRegisteredForEvent("ARTIFACT_UPDATE")}
+			for i=1,#allAUframes do
+				allAUframes[i]:UnregisterEvent("ARTIFACT_UPDATE")
+			end
+			artifactUIfixTimerFirstLoad = C_Timer.NewTimer(.1,function()
+				for i=1,#allAUframes do
+					allAUframes[i]:RegisterEvent("ARTIFACT_UPDATE")
+				end
+			end)
+		end
+			
 		UpdateArtifactData()
+		
+		if self.firstLoad then
+			artifactUIfixTimerFirstLoad:Cancel()
+			for i=1,#allAUframes do
+				allAUframes[i]:RegisterEvent("ARTIFACT_UPDATE")
+			end
+			ExRT.F.dprint('firstload done',#allAUframes)
+		end
 		return true
 	end
 end
@@ -9459,6 +9488,7 @@ artifactUIfix:RegisterEvent('LOADING_SCREEN_DISABLED')
 artifactUIfix:SetScript("OnEvent",function(self)
 	C_Timer.NewTimer(9,function()
 		artifactUIfixTimer = C_Timer.NewTicker(1,artifactUI_CheckMajorFrames)
+		artifactUIfixTimer.firstLoad = true
 		moduleInspect:RegisterEvents('ARTIFACT_XP_UPDATE')
 	end)
 	self:UnregisterAllEvents()

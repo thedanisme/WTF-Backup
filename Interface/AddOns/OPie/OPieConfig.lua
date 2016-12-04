@@ -163,6 +163,12 @@ do -- ext.config.bind
 		self:SetScript("OnKeyDown", SetBind); self:SetScript("OnHide", Deactivate);
 		if unbindMap[self:GetParent()] then unbindMap[self:GetParent()]:Enable(); end
 	end
+	local function OnWheel(self, delta)
+		local aw = self:GetParent().AllowWheelBinding
+		if activeCaptureButton == self and aw and (type(aw) ~= "function" or aw(self)) then
+			SetBind(self, delta > 0 and "MOUSEWHEELUP" or "MOUSEWHEELDOWN")
+		end
+	end
 	local function UnbindClick(self)
 		if activeCaptureButton and unbindMap[activeCaptureButton:GetParent()] == self then
 			local p, button = activeCaptureButton:GetParent(), activeCaptureButton;
@@ -209,18 +215,25 @@ do -- ext.config.bind
 		end
 	end
 	function config.createBindingButton(parent)
-		local btn = CreateFrame("Button", nil, parent, "UIPanelButtonTemplate");
-		btn:SetSize(120, 22); btn:RegisterForClicks("AnyUp"); btn:SetScript("OnClick", OnClick);
-		btn:SetText(" "); btn:GetFontString():SetMaxLines(1);
-		btn.IsCapturingBinding, btn.SetBindingText = IsCapturingBinding, SetBindingText
-		btn.ToggleAlternateEditor = ToggleAlternateEditor
-		return btn, unbindMap[parent];
+		local btn = CreateFrame("Button", nil, parent, "UIPanelButtonTemplate")
+		btn:SetSize(120, 22)
+		btn:RegisterForClicks("AnyUp")
+		btn:SetScript("OnClick", OnClick)
+		btn:SetScript("OnMouseWheel", OnWheel)
+		btn:EnableMouseWheel(true)
+		btn:SetText(" ")
+		btn:GetFontString():SetMaxLines(1)
+		btn.IsCapturingBinding, btn.SetBindingText, btn.ToggleAlternateEditor =
+			IsCapturingBinding, SetBindingText, ToggleAlternateEditor
+		return btn, unbindMap[parent]
 	end
 	function config.createUnbindButton(parent)
 		local btn = CreateFrame("Button", nil, parent, "UIPanelButtonTemplate");
-		btn:Disable(); btn:SetSize(140, 22); unbindMap[parent] = btn;
-		btn:SetScript("OnClick", UnbindClick);
-		return btn;
+		btn:Disable()
+		btn:SetSize(140, 22)
+		unbindMap[parent] = btn
+		btn:SetScript("OnClick", UnbindClick)
+		return btn
 	end
 end
 do -- ext.config.undo

@@ -1,6 +1,6 @@
 local _, T = ...
 if T.SkipLocalActionBook then return end
-local KR, EV = assert(T.ActionBook:compatible("Kindred", 1,7), "A compatible version of Kindred is required"), T.Evie
+local KR, EV = assert(T.ActionBook:compatible("Kindred", 1,12), "A compatible version of Kindred is required"), T.Evie
 local playerClassLocal, playerClass = UnitClass("player")
 
 local safequote do
@@ -213,15 +213,11 @@ do -- glyph:(defunct)
 	KR:SetStateConditionalValue("glyph", "")
 end
 do -- level:floor
-	local ls = [=[--
-		local n = tonumber((...))
-		return n and n <= %d
-	]=]
 	local function sync()
-		KR:SetSecureExecConditional("level", ls:format(UnitLevel("player") or 0))
+		KR:SetThresholdConditionalValue("level", UnitLevel("player") or 0)
 	end
 	sync()
-	EV.RegisterEvent("PLAYER_LEVEL_UP", sync)
+	EV.PLAYER_LEVEL_UP = sync
 end
 do -- horde/alliance
 	local function sync()
@@ -270,7 +266,13 @@ do -- ready:spell name/spell id/item name/item id
 		for i=1,#at do
 			local rc = at[i]
 			local cdS, cdL, _cdA = GetSpellCooldown(rc)
-			if cdL == nil then cdS, cdL, _cdA = GetItemCooldown(rc) end
+			if cdL == nil then
+				local _, iid = GetItemInfo(rc)
+				iid = tonumber((iid or rc):match("item:(%d+)"))
+				if iid then
+					cdS, cdL, _cdA = GetItemCooldown(iid)
+				end
+			end
 			if cdL == 0 or (cdS and cdL and (cdS + cdL) <= gcE) then
 				return true
 			end
@@ -350,6 +352,49 @@ do -- combo:count
 end
 do -- race:token
 	KR:SetStateConditionalValue("race", (select(2,UnitRace("player"))))
+end
+do -- professions
+	local ct, ot, map = {}, {}, {
+		[197]="tail", [165]="lw", [164]="bs",
+		[171]="alch", [202]="engi", [333]="ench", [744]="jc", [773]="scri",
+		[20219]="nomeng", [20222]="gobeng",
+	}
+	local function syncInner(id, ...)
+		if id then
+			local _1, _2, cur, _cap, ns, sofs, skid, _bonus, specIdx, _ = GetProfessionInfo(id)
+			local et, sid = GetSpellBookItemInfo(ns == 2 and sofs and specIdx > -1 and sofs+2 or 0, "spell")
+			local e1, e2 = map[skid], map[et == "SPELL" and sid or nil]
+			if e1 then ct[e1] = cur end
+			if e2 then ct[e2] = cur end
+		end
+		if select("#", ...) > 0 then
+			return syncInner(...)
+		end
+	end
+	local function sync()
+		ct, ot = ot, ct
+		for k in pairs(ct) do ct[k] = nil end
+		syncInner(GetProfessions())
+		for k,v in pairs(ct) do
+			if ot[k] ~= v then
+				KR:SetThresholdConditionalValue(k, v)
+				ot[k] = v
+			end
+		end
+		for k,v in pairs(ot) do
+			if ct[k] ~= v then
+				KR:SetThresholdConditionalValue(k, false)
+				ot[k] = nil
+			end
+		end
+	end
+	for k, v in pairs(map) do
+		KR:SetThresholdConditionalValue(v, false)
+	end
+	for alias, real in ("tailoring:tail leatherworking:lw alchemy:alch engineering:engi enchanting:ench jewelcrafting:jc blacksmithing:bs inscription:scri"):gmatch("(%a+):(%a+)") do
+		KR:SetAliasConditional(alias, real)
+	end
+	EV.PLAYER_LOGIN, EV.CHAT_MSG_SKILL = sync, sync
 end
 if playerClass == "HUNTER" then -- pet:stable id; havepet:stable id
 	local pt, noPendingSync = {}, true

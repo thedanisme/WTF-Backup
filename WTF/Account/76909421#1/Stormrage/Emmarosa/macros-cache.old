@@ -55,3 +55,8 @@ VER 3 010000000000000A "Stealth/Symbols" "INV_Misc_QuestionMark"
 /use Stealth
 /use Symbols of Death
 END
+VER 3 010000000000000D "VanRup" "INV_Misc_QuestionMark"
+#showtooltip Vanish
+/use Vanish
+/use Rupture
+END

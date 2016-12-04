@@ -1,6 +1,6 @@
-local versionMajor, versionRev, L, ADDON, T, ORI = 3, 88, newproxy(true), ...
+local versionMajor, versionRev, L, ADDON, T, ORI = 3, 89, newproxy(true), ...
 local api, OR_Rings, OR_ModifierLockState, TL, EV, OR_LoadedState = {ext={ActionBook=T.ActionBook},lang=L}, {}, nil, T.L, T.Evie, 1
-local defaultConfig = {ClickActivation=false, IndicationOffsetX=0, IndicationOffsetY=0, RingAtMouse=false, RingScale=1, ClickPriority=true, CenterAction=false, MouseBucket=1, NoClose=false, SliceBinding=false, SliceBindingString="1 2 3 4 5 6 7 8 9 0", SelectedSliceBind="", PrimaryButton="BUTTON4", SecondaryButton="BUTTON5", OpenNestedRingButton="BUTTON3", ScrollNestedRingUpButton="", ScrollNestedRingDownButton="", UseDefaultBindings=true}
+local defaultConfig = {ClickActivation=false, IndicationOffsetX=0, IndicationOffsetY=0, RingAtMouse=false, RingScale=1, ClickPriority=true, CenterAction=false, MouseBucket=1, NoClose=false, NoCloseOnSlice=false, SliceBinding=false, SliceBindingString="1 2 3 4 5 6 7 8 9 0", SelectedSliceBind="", PrimaryButton="BUTTON4", SecondaryButton="BUTTON5", OpenNestedRingButton="BUTTON3", ScrollNestedRingUpButton="", ScrollNestedRingDownButton="", UseDefaultBindings=true}
 local configRoot, configInstance, activeProfile, PersistentStorageInfo, optionValidators, optionsMeta = {}, nil, nil, {}, {}, {__index=defaultConfig}
 local charId, internalFreeId = ("%s-%s"):format(GetRealmName(), UnitName("player")), 420
 
@@ -250,7 +250,7 @@ do -- Click dispatcher
 			elseif activeRing and button:match("slice(%d+)") then
 				local b = tonumber(button:match("slice(%d+)"))
 				if openCollection and openCollection[b] and not down then
-					return control:RunFor(self, ORL_PerformSliceAction, b)
+					return control:RunFor(self, ORL_PerformSliceAction, b, activeRing.NoCloseOnSlice)
 				end
 			elseif button:match("Button%d+") then
 				-- The click-capturing overlay captures all mouse clicks, including those used in proper bindings
@@ -413,12 +413,12 @@ local function OR_SyncRing(name, actionId, newprops)
 		local data = ORL_RingData[internalId] or newtable()
 		ORL_KnownCollections[actionId], ORL_RingData[internalId], ORL_RingDataN[ringName], data.action, data.name, data.id = internalId, data, data, actionId, ringName, internalId
 		data.name, data.ofs, data.ofsx, data.ofsy, data.ofsRad = ringName, "%s", %d, %d, %f
-		data.CenterAction, data.ClickActivation, data.ClickPriority, data.NoClose, data.scale, data.bucket = %s, %s, %s, %s, %f, %d
+		data.CenterAction, data.ClickActivation, data.ClickPriority, data.NoClose, data.NoCloseOnSlice, data.scale, data.bucket = %s, %s, %s, %s, %s, %f, %d
 		data.SliceBinding, data.SelectedSliceBind, data.OpprotunisticCA = %s, %s, %s
 		%s
 	]], safequote(name), props.internalID, props.action,
 		OR_GetRingOption(name, "RingAtMouse") and "$cursor" or "$screen", OR_GetRingOption(name, "IndicationOffsetX"), -OR_GetRingOption(name, "IndicationOffsetY"), props.offset,
-		tostringf(OR_GetRingOption(name, "CenterAction")), tostringf(OR_GetRingOption(name, "ClickActivation")), tostringf(OR_GetRingOption(name, "ClickPriority")), tostringf(OR_GetRingOption(name, "NoClose")), math.max(0.1, (OR_GetRingOption(name, "RingScale"))), (OR_GetRingOption(name, "MouseBucket")),
+		tostringf(OR_GetRingOption(name, "CenterAction")), tostringf(OR_GetRingOption(name, "ClickActivation")), tostringf(OR_GetRingOption(name, "ClickPriority")), tostringf(OR_GetRingOption(name, "NoClose")), tostringf(OR_GetRingOption(name, "NoCloseOnSlice")), math.max(0.1, (OR_GetRingOption(name, "RingScale"))), (OR_GetRingOption(name, "MouseBucket")),
 		sliceBindTable, safequote(OR_GetRingOption(name, "SelectedSliceBind") or ""), tostringf(props.opportunisticCA),
 		props.fcBlock or "")
 	OR_SyncRingBinding(name, props)

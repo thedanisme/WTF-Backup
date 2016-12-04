@@ -48,32 +48,10 @@ END
 VER 3 0000000000000137 "Pull Timer" "Spell_Fire_FelFlameBolt"
 /pull 10
 END
-VER 3 0000000000000140 "QuickMacro" "1487016"
-/click StaticPopup1Button1
-/click VoidStorageTransferButton
-END
 VER 3 000000000000014A "RandomPath" "ACHIEVEMENT_GUILDPERK_MOUNTUP"
 /run C_MountJournal.SummonByID(0)
 /use Path of Frost
 END
 VER 3 0000000000000148 "RandomPet" "INV_Pet_Achievement_CatchUncommonPet."
 /run q=C_PetJournal;v={q.GetNumPets()}r=random(v[2])p={q.GetPetInfoByIndex(r)}q.SummonPetByGUID(p[1])SendChatMessage("spins the Wheel O' Pets! The wheel stops on "..p[8].."!","emote");
-END
-VER 3 0000000000000131 "t1" "INV_Misc_QuestionMark"
-END
-VER 3 000000000000012E "t2" "INV_Misc_QuestionMark"
-END
-VER 3 0000000000000132 "t3" "INV_Misc_QuestionMark"
-END
-VER 3 0000000000000133 "t4" "INV_Misc_QuestionMark"
-END
-VER 3 000000000000012A "t5" "INV_Misc_QuestionMark"
-END
-VER 3 000000000000012B "t6" "INV_Misc_QuestionMark"
-END
-VER 3 0000000000000134 "t7" "INV_Misc_QuestionMark"
-END
-VER 3 000000000000012F "trinkets" "Spell_Fire_EnchantWeapon"
-/use 13
-/use 14
 END

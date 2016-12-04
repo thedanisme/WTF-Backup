@@ -1,5 +1,5 @@
 local RingKeeper, _, T = {}, ...
-local RK_RingDesc, RK_CollectionIDs, RK_Version, RK_Rev, EV, SV = {}, {}, 2, 44, T.Evie
+local RK_RingDesc, RK_CollectionIDs, RK_Version, RK_Rev, EV, SV = {}, {}, 2, 45, T.Evie
 local unlocked, queue, RK_DeletedRings, RK_FlagStore, sharedCollection = false, {}, {}, {}, {}
 
 local function assert(condition, text, level, ...)
@@ -7,24 +7,25 @@ local function assert(condition, text, level, ...)
 end
 
 local AB = assert(T.ActionBook:compatible(2,14), "A compatible version of ActionBook is required")
+local RW = assert(T.ActionBook:compatible("Rewire", 1,8), "A compatible version of Rewire is required")
 local ORI = OneRingLib.ext.OPieUI
 local CLASS, NAME, FULLNAME
 
 local RK_ParseMacro, RK_QuantizeMacro do -- +RingKeeper:SetMountPreference(groundSpellID, airSpellID)
-	local castAlias = {[SLASH_CAST1]=1,[SLASH_CAST2]=1,[SLASH_CAST3]=1,[SLASH_CAST4]=1,[SLASH_USE1]=1,[SLASH_USE2]=1,["#show"]=1,["#showtooltip"]=1,["#rkrequire"]=0,[SLASH_CASTSEQUENCE1]=2,[SLASH_CASTSEQUENCE2]=2,[SLASH_CASTRANDOM1]=3,[SLASH_CASTRANDOM2]=3}
+	local castAlias = {[SLASH_CAST1]=1,[SLASH_CAST2]=1,[SLASH_CAST3]=1,[SLASH_CAST4]=1,[SLASH_USE1]=1,[SLASH_USE2]=1,["#show"]=1,["#showtooltip"]=1,[SLASH_CASTSEQUENCE1]=2,[SLASH_CASTSEQUENCE2]=2,[SLASH_CASTRANDOM1]=3,[SLASH_CASTRANDOM2]=3}
 	local function replaceSpellID(sidlist, prefix)
 		for id in sidlist:gmatch("%d+") do
 			local sname = GetSpellInfo(tonumber(id))
-			if sname and GetSpellInfo(sname) then
+			if sname and (GetSpellInfo(sname) or RW:GetCastEscapeAction(sname)) then
 				return prefix .. sname
 			end
 		end
 	end
 	local replaceMountTag do
-		local skip, gmSid, gmPref, fmSid, fmPref = {[44153]=1, [44151]=1, [61451]=1, [75596]=1, [61309]=1,}
+		local skip, gmSid, gmPref, fmSid, fmPref = {[44153]=1, [44151]=1, [61451]=1, [75596]=1, [61309]=1, [169952]=1, [171844]=1, [213339]=1,}
 		local function IsKnownSpell(sid)
 			local sn, sr = GetSpellInfo(sid or 0)
-			return GetSpellInfo(sn, sr) ~= nil and sid
+			return GetSpellInfo(sn, sr) ~= nil and sid or (RW:GetCastEscapeAction(sn) and sid)
 		end
 		local function findMount(prefSID, mtype)
 			local myFactionId, nc, cs = UnitFactionGroup("player") == "Horde" and 0 or 1, 0
@@ -132,6 +133,7 @@ local RK_ParseMacro, RK_QuantizeMacro do -- +RingKeeper:SetMountPreference(groun
 		function prepareQuantizer(reuse)
 			if reuse and next(spells) then return end
 			wipe(spells)
+			spells[GetSpellInfo(150544):lower()] = 150544
 			local idm = C_MountJournal.GetMountIDs()
 			local gmi = C_MountJournal.GetMountInfoByID
 			for i=1, #idm do
@@ -172,9 +174,8 @@ local RK_ParseMacro, RK_QuantizeMacro do -- +RingKeeper:SetMountPreference(groun
 		end
 	end
 	function RK_ParseMacro(macro)
-		if type(macro) == "string" and (macro:match("{{spell:[%d/]+}}") or macro:match("{{mount:ground}}") or macro:match("#rkrequire")) then
+		if type(macro) == "string" and (macro:match("{{spell:[%d/]+}}") or macro:match("{{mount:%a+}}") ) then
 			macro = ("\n" .. macro):gsub("(\n([#/]%S+) ?)([^\n]*)", parseLine)
-			if macro:match("[\n\r]#rkrequire%s*[\n\r]") then return ""; end
 		end
 		return macro
 	end
@@ -406,7 +407,7 @@ local function RK_SerializeDescription(props)
 	dropUnderscoreKeys(props)
 	return props
 end
-local function RK_SoftSyncAll()
+function EV.PLAYER_REGEN_DISABLED()
 	for k,v in pairs(RK_RingDesc) do
 		securecall(RK_SyncRing, k)
 	end
@@ -583,5 +584,4 @@ function RingKeeper:QuantizeMacro(macrotext)
 end
 
 SV, OneRingLib.ext.RingKeeper = OneRingLib:RegisterPVar("RingKeeper", SV, svInitializer), RingKeeper
-EV.RegisterEvent("PLAYER_REGEN_DISABLED", RK_SoftSyncAll)
 AB:AddObserver("internal.collection.preopen", abPreOpen)

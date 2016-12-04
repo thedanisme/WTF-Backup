@@ -19,7 +19,7 @@ TalentMacrosDB = {
 		["Chucklefunk - Stormrage"] = "Chucklefunk - Stormrage",
 		["Shhbbyisok - Stormrage"] = "Shhbbyisok - Stormrage",
 		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
-		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
+		["Brobies - Stormrage"] = "Brobies - Stormrage",
 		["Oenta - Stormrage"] = "Oenta - Stormrage",
 		["Callil - Stormrage"] = "Callil - Stormrage",
 		["Whyfy - Stormrage"] = "Whyfy - Stormrage",
@@ -29,28 +29,28 @@ TalentMacrosDB = {
 		["Druidann - Stormrage"] = "Druidann - Stormrage",
 		["Callil - Turalyon"] = "Callil - Turalyon",
 		["Abegar - Turalyon"] = "Abegar - Turalyon",
-		["Horny - Bloodhoof"] = "Horny - Bloodhoof",
-		["Brewbies - Turalyon"] = "Brewbies - Turalyon",
+		["Ershirley - Stormrage"] = "Ershirley - Stormrage",
+		["Bloodcox - Stormrage"] = "Bloodcox - Stormrage",
 		["Kateplusnine - Stormrage"] = "Kateplusnine - Stormrage",
-		["Priaprisum - Stormreaver"] = "Priaprisum - Stormreaver",
+		["Fupa - Stormrage"] = "Fupa - Stormrage",
 		["Bruhbies - Stormrage"] = "Bruhbies - Stormrage",
 		["Rotator - Turalyon"] = "Rotator - Turalyon",
 		["Llamama - Stormrage"] = "Llamama - Stormrage",
 		["Barewbies - Stormrage"] = "Barewbies - Stormrage",
-		["Ranidan - Stormreaver"] = "Ranidan - Stormreaver",
-		["Titt - Turalyon"] = "Titt - Turalyon",
-		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
-		["Skratch - Turalyon"] = "Skratch - Turalyon",
-		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
 		["Rosabria - Sargeras"] = "Rosabria - Sargeras",
-		["Fupa - Stormrage"] = "Fupa - Stormrage",
+		["Titt - Turalyon"] = "Titt - Turalyon",
+		["Arando - Bloodhoof"] = "Arando - Bloodhoof",
+		["Skratch - Turalyon"] = "Skratch - Turalyon",
+		["Lackteight - Turalyon"] = "Lackteight - Turalyon",
+		["Ranidan - Stormreaver"] = "Ranidan - Stormreaver",
+		["Priaprisum - Stormreaver"] = "Priaprisum - Stormreaver",
 		["Danoh - Stormrage"] = "Danoh - Stormrage",
-		["Bloodcox - Stormrage"] = "Bloodcox - Stormrage",
-		["Ershirley - Stormrage"] = "Ershirley - Stormrage",
+		["Brewbies - Turalyon"] = "Brewbies - Turalyon",
+		["Horny - Bloodhoof"] = "Horny - Bloodhoof",
 		["Edgelordshue - Stormrage"] = "Edgelordshue - Stormrage",
 		["Dalgrens - Bloodhoof"] = "Dalgrens - Bloodhoof",
 		["Beer - Bloodhoof"] = "Beer - Bloodhoof",
-		["Brobies - Stormrage"] = "Brobies - Stormrage",
+		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
 		["Jimbo - Ner'zhul"] = "Jimbo - Ner'zhul",
 	},
 	["profiles"] = {
@@ -82,7 +82,11 @@ TalentMacrosDB = {
 		},
 		["Emmarosa - Stormrage"] = {
 		},
-		["Talthalador - Stormrage"] = {
+		["Brobies - Stormrage"] = {
+			["macrotext"] = {
+				[19818] = "#showtooltip\n/cast [@mouseover,help,exists][@target,help,exists][@player]Tiger's Lust",
+				[19820] = "#showtooltip\n/cast [@player]Zen Sphere",
+			},
 		},
 		["Oenta - Stormrage"] = {
 		},
@@ -113,13 +117,13 @@ TalentMacrosDB = {
 		},
 		["Abegar - Turalyon"] = {
 		},
-		["Horny - Bloodhoof"] = {
+		["Ershirley - Stormrage"] = {
 		},
-		["Brewbies - Turalyon"] = {
+		["Bloodcox - Stormrage"] = {
 		},
 		["Kateplusnine - Stormrage"] = {
 		},
-		["Priaprisum - Stormreaver"] = {
+		["Fupa - Stormrage"] = {
 		},
 		["Bruhbies - Stormrage"] = {
 		},
@@ -129,28 +133,28 @@ TalentMacrosDB = {
 		},
 		["Barewbies - Stormrage"] = {
 		},
-		["Ranidan - Stormreaver"] = {
+		["Rosabria - Sargeras"] = {
 		},
 		["Titt - Turalyon"] = {
 		},
-		["Lackteight - Turalyon"] = {
+		["Arando - Bloodhoof"] = {
 		},
 		["Skratch - Turalyon"] = {
 		},
-		["Arando - Bloodhoof"] = {
+		["Lackteight - Turalyon"] = {
 		},
-		["Rosabria - Sargeras"] = {
+		["Ranidan - Stormreaver"] = {
 		},
-		["Fupa - Stormrage"] = {
+		["Priaprisum - Stormreaver"] = {
 		},
 		["Danoh - Stormrage"] = {
 			["macrotext"] = {
 				[19362] = "#showtooltip stampede\n/startattack\n/cancelaura hand of protection\n/petattack\n/use stampede\n/petattack\n/petattack\n/petattack\n/petattack\n/petattack\n/petattack\n/petattack\n/petattack\n/petattack\n/petattack\n/petattack\n/petattack\n/petattack",
 			},
 		},
-		["Bloodcox - Stormrage"] = {
+		["Brewbies - Turalyon"] = {
 		},
-		["Ershirley - Stormrage"] = {
+		["Horny - Bloodhoof"] = {
 		},
 		["Edgelordshue - Stormrage"] = {
 		},
@@ -158,11 +162,7 @@ TalentMacrosDB = {
 		},
 		["Beer - Bloodhoof"] = {
 		},
-		["Brobies - Stormrage"] = {
-			["macrotext"] = {
-				[19818] = "#showtooltip\n/cast [@mouseover,help,exists][@target,help,exists][@player]Tiger's Lust",
-				[19820] = "#showtooltip\n/cast [@player]Zen Sphere",
-			},
+		["Talthalador - Stormrage"] = {
 		},
 		["Jimbo - Ner'zhul"] = {
 		},

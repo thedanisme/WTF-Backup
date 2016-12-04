@@ -111,7 +111,7 @@ local actionCallbacks, core, coreEnv = {}, CreateFrame("FRAME", nil, nil, "Secur
 	]=])
 	coreEnv = GetManagedEnvironment(core)
 end
-core:SetAttribute("GetCollectionContent", [[-- AB:GetCollectionContent
+core:SetAttribute("GetCollectionContent", [[-- AB:GetCollectionContent(slot)
 	local i, ret, root, col, idx, aid = 1, "", tonumber((...)) or 0
 	wipe(outCount)
 	colStack[i], idxStack[i] = root, 1
@@ -138,7 +138,7 @@ core:SetAttribute("GetCollectionContent", [[-- AB:GetCollectionContent
 	until i == 0
 	return ret, metadata["openAction-" .. root]
 ]])
-core:SetAttribute("UseAction", [[-- AB:UseAction
+core:SetAttribute("UseAction", [[-- AB:UseAction(slot)
 	local at = actInfo[...]
 	if at == "icall" then
 		return self:CallMethod("icall", ...) or ""

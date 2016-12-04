@@ -1,4 +1,4 @@
-local api, MAJ, REV, execQueue, _, T = {}, 1, 11, {}, ...
+local api, MAJ, REV, execQueue, _, T = {}, 1, 13, {}, ...
 if T.ActionBook then return end
 
 local function assert(condition, err, ...)
@@ -110,12 +110,26 @@ core:Execute([==[-- Kindred.Init
 					else
 						local cres, ctype = false, cndType[name]
 						if ctype == "state" then
-							local cval, cs = nil, cndState[name]
+							local cs, cval = cndState[name]
 							if argp == nil then
 								cval = cs and cs["*"] or false
 							elseif cs then
 								for k=1,#argp do
 									if cs[argp[k]] then
+										cval = true
+										break
+									end
+								end
+							end
+							cres = (not not cval) == goal
+						elseif ctype == "gt" then
+							local cs, cval = cndState[name]
+							if argp == nil then
+								cval = not not cs
+							elseif cs then
+								for k=1,#argp do
+									local n = tonumber(argp[k])
+									if n and n <= cs then
 										cval = true
 										break
 									end
@@ -267,6 +281,17 @@ core:SetAttribute("RegisterStateDriver", [=[-- Kindred:RegisterStateDriver(*fram
 ]=])
 core:SetAttribute("EvaluateCmdOptions", [=[-- Kindred:EvaluateCmdOptions("options")
 	return SecureCmdOptionParse(owner:Run(OptionConstruct, ...))
+]=])
+core:SetAttribute("UpdateThresholdConditional", [=[-- Kindred:UpdateThresholdConditional("name", value or false)
+	local name, new = ...
+	if type(name) ~= "string" or (new ~= false and type(new) ~= "number") then
+		return owner:CallMethod("throw", 'Syntax: ("UpdateThresholdConditional", "name", value or false)')
+	end
+	local ch = cndDrivers[name] and (cndType[name] ~= "gt" or cndState[name] ~= new)
+	cndType[name], cndState[name] = "gt", new
+	if ch then
+		owner:Run(RefreshDrivers, name)
+	end
 ]=])
 core:SetAttribute("UpdateStateConditional", [=[-- Kindred:UpdateStateConditional("name", "addSet", "remSet")
 	local name, new, kill = ...
@@ -434,8 +459,12 @@ function api:ClearConditional(name)
 end
 function api:SetStateConditionalValue(name, value)
 	if type(value) == "boolean" then value = value and "*" or "" end
-	assert(type(value) == 'string', 'Syntax: Kindred:SetStateConditionalValue("name", "value")')
+	assert(type(name) == 'string' and type(value) == 'string', 'Syntax: Kindred:SetStateConditionalValue("name", "value")')
 	core:DeferExecute(([[owner:RunAttribute("UpdateStateConditional", %s, %s, "*")]]):format(safequote(name), safequote(value or "")), name)
+end
+function api:SetThresholdConditionalValue(name, value)
+	assert(type(name) == 'string' and (value == false or type(value) == 'number'), 'Syntax: Kindred:SetThresholdConditionalValue("name", value or false)')
+	core:DeferExecute(([[owner:RunAttribute("UpdateThresholdConditional", %s, %s)]]):format(safequote(name), value or "false"), name)
 end
 function api:SetSecureExecConditional(name, snippet)
 	assert(type(name) == "string" and type(snippet) == "string", 'Syntax: Kindred:SetSecureExecConditional("name", "snippet")')

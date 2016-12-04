@@ -124,13 +124,18 @@ end
 AB:AugmentCategory("Mounts", function(_, add)
 	if GetSpellInfo(150544) then add("spell", 150544) end
 	local myFactionId = UnitFactionGroup("player") == "Horde" and 0 or 1
-	local idm = C_MountJournal.GetMountIDs()
+	local idm, i2, i2n = C_MountJournal.GetMountIDs(), {}, {}
 	for i=1, #idm do
-		local _1, sid, _3, _4, _5, _6, _7, factionLocked, factionId, hide, have = C_MountJournal.GetMountInfoByID(idm and idm[i] or i)
+		local mid = idm[i]
+		local name, sid, _3, _4, _5, _6, _7, factionLocked, factionId, hide, have = C_MountJournal.GetMountInfoByID(mid)
 		local sname = GetSpellInfo(sid)
-		if have and not hide and (not factionLocked or factionId == myFactionId) and GetSpellInfo(sname) ~= nil then
-			add("spell", sid)
+		if have and not hide and (not factionLocked or factionId == myFactionId) and (GetSpellInfo(sname) ~= nil or (T.ABdodgyMounts and T.ABdodgyMounts[mid])) then
+			i2[#i2+1], i2n[sid] = sid, name
 		end
+	end
+	table.sort(i2, function(a,b) return i2n[a] < i2n[b] end)
+	for i=1,#i2 do
+		add("spell", i2[i])
 	end
 end)
 local function icmp(a,b)

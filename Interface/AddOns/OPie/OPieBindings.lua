@@ -11,9 +11,10 @@ local lBinding = frame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
 	lBinding:SetPoint("TOPLEFT", 16, -125)
 	lRing:SetPoint("LEFT", lBinding, "LEFT", 215, 0)
 	lBinding:SetWidth(180)
+local bindZone = CreateFrame("Frame", nil, frame)
 local bindLines = {} do
 	local function onMacroClick(self)
-		frame.showMacroPopup(self:GetParent():GetID())
+		bindZone.showMacroPopup(self:GetParent():GetID())
 	end
 	local function onEnter(self)
 		if self.tooltipTitle then
@@ -25,7 +26,7 @@ local bindLines = {} do
 		end
 	end
 	for i=1,19 do
-		local bind = config.createBindingButton(frame)
+		local bind = config.createBindingButton(bindZone)
 		local label = bind:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
 		bind:SetPoint("TOPLEFT", lBinding, "BOTTOMLEFT", 0, 16-20*i)
 		bind.macro = CreateFrame("BUTTON", nil, bind, "UIPanelButtonTemplate")
@@ -48,7 +49,7 @@ local btnUp = CreateFrame("Button", nil, frame, "UIPanelScrollUpButtonTemplate")
 	btnUp:SetPoint("RIGHT", btnUnbind, "LEFT", -10)
 local btnDown = CreateFrame("Button", nil, frame, "UIPanelScrollDownButtonTemplate")
 	btnDown:SetPoint("LEFT", btnUnbind, "RIGHT", 10)
-local cap = CreateFrame("Frame", nil, frame)
+local cap = bindZone
 	cap:SetPoint("TOP", OBC_Profile, "BOTTOM", 0, 0)
 	cap:SetPoint("LEFT", 5, 0)
 	cap:SetPoint("RIGHT", -10, 0)
@@ -120,7 +121,7 @@ function ringBindings:altClick() -- self is the binding button
 	self:ToggleAlternateEditor(OneRingLib:GetRingBinding(ringBindings.map[self:GetID()]))
 end
 
-local sysBindings = {count=5, name=L"Other Bindings", caption=L"Action",
+local sysBindings = {count=5, name=L"Other Bindings", caption=L"Action", allowWheel=function(s) return s:GetID() > 3 end,
 	options={"PrimaryButton", "SecondaryButton", "OpenNestedRingButton", "ScrollNestedRingUpButton", "ScrollNestedRingDownButton"},
 	optionNames={L"Primary default binding button", L"Secondary default binding button", L"Open nested ring", L"Scroll nested ring (up)", L"Scroll nested ring (down)"}}
 function sysBindings:get(id)
@@ -229,15 +230,15 @@ local function updatePanelContent()
 	btnDown:SetEnabled(#bindLines + currentBase < m)
 	btnUp:SetEnabled(currentBase > 0)
 	lRing:SetText(currentOwner.caption)
-	frame.OnBindingAltClick = currentOwner.altClick
+	bindZone.OnBindingAltClick = currentOwner.altClick
 	UIDropDownMenu_SetText(bindSet, currentOwner.name .. (currentOwner.nameSuffix or ""))
 end
-function frame.SetBinding(buttonOrId, binding)
+function bindZone.SetBinding(buttonOrId, binding)
 	local id = type(buttonOrId) == "number" and buttonOrId or buttonOrId:GetID()
 	currentOwner:set(id, binding)
 	updatePanelContent()
 end
-function frame.showMacroPopup(id)
+function bindZone.showMacroPopup(id)
 	return currentOwner:arrow(id)
 end
 local function scroll(self)
@@ -258,7 +259,7 @@ function bindSet:initialize(level, menuList)
 	end
 end
 function bindSet:set(owner, scope)
-	currentOwner, currentBase = owner, 0
+	currentOwner, currentBase, bindZone.AllowWheelBinding = owner, 0, owner and owner.allowWheel
 	if owner.refresh then owner:refresh(scope) end
 	updatePanelContent()
 	CloseDropDownMenus()

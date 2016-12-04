@@ -1,6 +1,6 @@
-local api, MAJ, REV, _, T = {}, 1, 7, ...
+local api, MAJ, REV, _, T = {}, 1, 8, ...
 if T.ActionBook then return end
-local KR = assert(T.Kindred:compatible(1,8), "A compatible version of Kindred is required.")
+local AB, KR = nil, assert(T.Kindred:compatible(1,8), "A compatible version of Kindred is required.")
 
 local function assert(condition, err, ...)
 	return (not condition) and error(tostring(err):format(...), 3) or condition
@@ -50,6 +50,7 @@ local core, coreEnv = CreateFrame("FRAME", nil, nil, "SecureHandlerBaseTemplate"
 		macros, commandInfo, commandHandler, commandAlias = newtable(), newtable(), newtable(), newtable()
 		MACRO_TOKEN, metaCommands, transferTokens = newtable(nil, nil, nil, "MACRO_TOKEN"), newtable(), newtable()
 		metaCommands.mute, metaCommands.unmute, metaCommands.mutenext, metaCommands.parse = 1, 1, 1, 1
+		castEscapes = newtable()
 		for _, k in pairs(self:GetChildList(newtable())) do
 			idle[k], numIdle = 1, numIdle + 1
 			k:SetAttribute("type", "macro")
@@ -60,6 +61,13 @@ end
 core:SetAttribute("RunSlashCmd", [=[-- Rewire:Internal_RunSlashCmd
 	local slash, v, target = ...
 	if not v then
+	elseif slash == "/cast" or slash == "/use" then
+		local oid = v and castEscapes[v:lower()]
+		if oid then
+			return AB:RunAttribute("UseAction", oid, target)
+		elseif v then
+			return (target and (slash .. " [@" .. target .. "] ") or (slash .. " ")) .. v
+		end
 	elseif slash == "/stopmacro" then
 		repeat
 			local r = table.remove(execQueue)
@@ -135,7 +143,7 @@ core:SetAttribute("RunMacro", [=[-- Rewire:RunMacro
 			end
 		end
 	end
-	
+
 	if ns < #execQueue and numIdle > 0 then
 		local m = "\n/click " .. next(idle):GetName()
 		local n = math.min(math.floor(1000/#m), math.ceil(#execQueue*1.25 + numActive*1.3^numActive))
@@ -325,7 +333,75 @@ local setCommandHinter, getMacroHint, getCommandHint, getCommandHintRaw do
 	end
 end
 
+local function init()
+	for k, v in pairs(_G) do
+		local k = type(k) == "string" and k:match("^SLASH_(.*)1$")
+		if k and IsSecureCmd(v) then
+			api:ImportSlashCmd(k, true, false)
+		end
+	end
+	for k in ("DISMOUNT LEAVEVEHICLE SET_TITLE USE_TALENT_SPEC TARGET_MARKER"):gmatch("%S+") do
+		api:ImportSlashCmd(k, true, false)
+	end
+	for m in ("#mute #unmute #mutenext #parse"):gmatch("%S+") do
+		api:RegisterCommand(m, true, false, core)
+	end
+	api:RegisterCommand("/stopmacro", true, false, core)
+	api:AddCommandAliases("/stopmacro", getAliases("SLASH_STOPMACRO", 1))
+	api:SetCommandHint("/stopmacro", math.huge, function(_, _, clause)
+		return clause and "stop" or nil
+	end)
+	api:SetCommandHint(SLASH_CLICK1, math.huge, function(...)
+		local _, _, clause = ...
+		local name = clause and clause:match("%S+")
+		return getCommandHintRaw(name and ("/click " .. name), ...)
+	end)
+	setCommandType("/use", 1+2, core)
+	setCommandType("/cast", 1+2, core)
+	api:AddCommandAliases("/cast", getAliases("SLASH_CAST", 1))
+	api:AddCommandAliases("/use", getAliases("SLASH_USE", 1))
+	setCommandType(SLASH_USERANDOM1, 1+2+4)
+	api:AddCommandAliases(SLASH_USERANDOM1, getAliases("SLASH_CASTRANDOM", 1))
+	setCommandType(SLASH_CASTSEQUENCE1, 1+2+4+8)
+	api:RegisterCommand("/runmacro", true, false, core)
+	api:SetCommandHint("/runmacro", math.huge, function(_slash, _, ...)
+		local f = namedMacros[...]
+		if f then return f(...) end
+	end)
+
+	AB = assert(T.ActionBook:compatible(2, 18), "A compatible version of ActionBook is required.")
+	core:SetFrameRef("ActionBook", AB:seclib())
+	core:Execute([[AB = self:GetFrameRef('ActionBook')]])
+end
+local caEscapeCache, cuHints = {}, {} do
+	setmetatable(caEscapeCache, {__index=function(t, k)
+		if k then
+			local v = coreEnv.castEscapes[k:lower()] or false
+			t[k] = v
+			return v
+		end
+	end})
+	local function mixHint(slash, _, clause, target, ...)
+		local ca = caEscapeCache[clause]
+		if ca then
+			return true, AB:GetSlotInfo(ca)
+		else
+			local hint = cuHints[slash]
+			if hint then
+				return hint(slash, _, clause, target, ...)
+			end
+		end
+	end
+	setCommandHinter("/use", 100, mixHint)
+	setCommandHinter("/cast", 100, mixHint)
+end
+
+
 function api:compatible(cmaj, crev)
+	if init then
+		init()
+		init = nil
+	end
 	return (cmaj == MAJ and crev <= REV) and api or nil, MAJ, REV
 end
 function api:seclib()
@@ -355,12 +431,16 @@ function api:ImportSlashCmd(key, isConditional, allowVars, priority, hint)
 		api:AddCommandAliases(getAliases("SLASH_" .. key, 1))
 	end
 	if primary and hint then
-		setCommandHinter(primary, priority, hint)
+		self:SetCommandHint(primary, priority, hint)
 	end
 end
 function api:SetCommandHint(slash, priority, hint)
 	assert(type(slash) == "string" and (hint == nil or type(hint) == "function" and type(priority) == "number"), 'Syntax: Rewire:SetCommandHint("/slash", priority, hintFunc)')
-	setCommandHinter(slash, priority, hint)
+	if slash ~= "/use" and slash ~= "/cast" then
+		setCommandHinter(slash, priority, hint)
+	else
+		cuHints[slash] = hint
+	end
 end
 function api:SetClickHint(buttonName, priority, hint)
 	assert(type(buttonName) == "string" and (hint == nil or type(hint) == "function" and type(priority) == "number"), 'Syntax: Rewire:SetClickHint("buttonName", priority, hintFunc)')
@@ -393,41 +473,14 @@ end
 function api:GetCommandAction(slash, args, target, modState)
 	return getCommandHint(nil, slash, args, modState, target)
 end
-
-do
-	for k, v in pairs(_G) do
-		local k = type(k) == "string" and k:match("^SLASH_(.*)1$")
-		if k and IsSecureCmd(v) then
-			api:ImportSlashCmd(k, true, false)
-		end
-	end
-	for k in ("DISMOUNT LEAVEVEHICLE SET_TITLE USE_TALENT_SPEC TARGET_MARKER"):gmatch("%S+") do
-		api:ImportSlashCmd(k, true, false)
-	end
-	for m in ("#mute #unmute #mutenext #parse"):gmatch("%S+") do
-		api:RegisterCommand(m, true, false, core)
-	end
-	api:RegisterCommand("/stopmacro", true, false, core)
-	api:AddCommandAliases("/stopmacro", getAliases("SLASH_STOPMACRO", 1))
-	api:SetCommandHint("/stopmacro", math.huge, function(_, _, clause)
-		return clause and "stop" or nil
-	end)
-	api:SetCommandHint(SLASH_CLICK1, math.huge, function(...)
-		local _, _, clause = ...
-		local name = clause and clause:match("%S+")
-		return getCommandHintRaw(name and ("/click " .. name), ...)
-	end)
-	setCommandType("/use", 1+2)
-	api:AddCommandAliases("/use", getAliases("SLASH_CAST", 1))
-	api:AddCommandAliases("/use", getAliases("SLASH_USE", 1))
-	setCommandType(SLASH_USERANDOM1, 1+2+4)
-	api:AddCommandAliases(SLASH_USERANDOM1, getAliases("SLASH_CASTRANDOM", 1))
-	setCommandType(SLASH_CASTSEQUENCE1, 1+2+4+8)
-	api:RegisterCommand("/runmacro", true, false, core)
-	api:SetCommandHint("/runmacro", math.huge, function(_slash, _, ...)
-		local f = namedMacros[...]
-		if f then return f(...) end
-	end)
+function api:SetCastEscapeAction(castArg, action)
+	assert(type(castArg) == "string" and (type(action) == "number" and action % 1 == 0 or action == nil), 'Syntax: Rewire:SetCastEscapeAction("castAction", abActionID or nil)')
+	assert(not InCombatLockdown(), 'Combat lockdown in effect')
+	core:Execute(([[castEscapes[%q] = %s]]):format(castArg:lower(), action or "nil"))
+	wipe(caEscapeCache)
+end
+function api:GetCastEscapeAction(castArg)
+	return coreEnv.castEscapes[castArg and castArg:lower()]
 end
 
 T.Rewire = {compatible=api.compatible}

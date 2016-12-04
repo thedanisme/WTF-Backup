@@ -1,9 +1,9 @@
 
 LegionRaresTreasuresDB = {
 	["profileKeys"] = {
-		["Emmarosa - Stormrage"] = "Default",
-		["Brobies - Stormrage"] = "Default",
+		["Oenta - Stormrage"] = "Default",
 		["Chucklefunk - Stormrage"] = "Default",
+		["Emmarosa - Stormrage"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

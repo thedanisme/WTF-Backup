@@ -1,9 +1,9 @@
 local Evie, easy, next, securecall, _, T = {}, newproxy(true), next, securecall, ...
 local frame, listeners, locked, easy_mt = CreateFrame("FRAME"), {}, {}, getmetatable(easy)
 
-local function Register(event, func)
+local function Register(event, func, depth)
 	if type(event) ~= "string" or type(func) ~= "function" then
-		error('Syntax: RegisterEvent("event", handlerFunction)', 2)
+		error('Syntax: RegisterEvent("event", handlerFunction)', type(depth) == "number" and depth or 2)
 	end
 	local lock = locked[event]
 	if lock == true then
@@ -52,7 +52,7 @@ function Evie.RaiseEvent(event, ...)
 	return Raise(nil, event, ...)
 end
 function easy_mt:__newindex(e, f)
-	Register(e, f)
+	Register(e, f, 3)
 end
 
 frame:SetScript("OnEvent", Raise)

@@ -25,7 +25,7 @@ VER 3 0100000000000005 "Pistol Shot" "Ability_IronMaidens_IronShot."
 END
 VER 3 0100000000000004 "Poisons" "INV_Misc_QuestionMark"
 #showtooltip
-/castsequence Agonizing Poison, Crippling Poison
+/castsequence Deadly Poison, Crippling Poison
 END
 VER 3 010000000000000C "Ring+Vendetta" "INV_Misc_QuestionMark"
 #showtooltip 11

@@ -21,7 +21,7 @@ R:SetRing("DruidUtility", {
 R:SetRing("DruidFeral", {
 	{id=106951, _u="k"}, -- berserk
 	{id="/cast [noform:bear] {{spell:5217}}; {{spell:22842}}", _u="e"}, -- frenzied / tiger's fury
-	{id="/cast [mod] {{spell:1850}}; [form:bear] {{spell:77761}}; {{spell:77764}}", _u="r"}, -- dash / stampeding roar
+	{id="/cast [mod][nospec:2/3] {{spell:1850}}; [form:bear] {{spell:77761}}; {{spell:77764}}", _u="r"}, -- dash / stampeding roar
 	{id=106839, _u="s"}, -- skull bash
 	{id=22812, _u="b"}, -- barkskin
 	{id=61336, _u="i"}, -- survival instincts
@@ -256,5 +256,5 @@ R:SetRing("SpecMenu", {
 	{"item", 140192, _u="d"},
 	{"item", 6948, _u="h"},
 	{"toy", 64488, _u="i"},
-	name=L"Specialiations and Travel", hotkey="ALT-H", _u="OPCTA"
+	name=L"Specializations and Travel", hotkey="ALT-H", _u="OPCTA"
 })

@@ -3,17 +3,15 @@ CurrentTitle = nil
 CurrentZone = nil
 DugisGuideUser = {
 	["PetBattleOn"] = false,
-	["showLeftMenuForCurrentGuide"] = true,
+	["CustomReset"] = true,
 	["toskip"] = {
 	},
 	["CharacterGUID"] = "Player-60-0A91880D",
 	["ObjectiveTrackerFrameHandlerFrame_yOfs"] = -231.000091552734,
-	["CurrentMapVersions"] = {
-		["Hyjal"] = "Hyjal_terrain1",
-		["BlastedLands"] = "BlastedLands_terrain1",
-	},
+	["showLeftMenuForCurrentGuide"] = true,
 	["EnableQWStatus"] = true,
-	["ObjectiveTrackerFrameHandlerFrame_xOfs"] = -51.0001182556152,
+	["removedQuests"] = {
+	},
 	["turnedinquests"] = {
 	},
 	["userCustomWeights_v2"] = {
@@ -782,11 +780,302 @@ DugisGuideUser = {
 			}, -- [3]
 		},
 	},
-	["PlayerLevel"] = 110,
-	["excludedTrackingPoints"] = {
+	["ObjectiveTrackerFrameHandlerFrame_xOfs"] = -51.0001182556152,
+	["macrosData"] = {
+		["warrior"] = {
+		},
+		["demonhunter"] = {
+			{
+				["data"] = {
+					["macroCode"] = "code31",
+					["macroDescription"] = "description31",
+				},
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro31",
+			}, -- [1]
+			{
+				["data"] = {
+					["macroCode"] = "code32",
+					["macroDescription"] = "description32",
+				},
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro32",
+			}, -- [2]
+			{
+				["data"] = {
+					["macroCode"] = "code33",
+					["macroDescription"] = "description33",
+				},
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro33",
+			}, -- [3]
+		},
+		["general"] = {
+			{
+				["data"] = {
+					["macroCode"] = "code1",
+					["macroDescription"] = "description1",
+				},
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro1",
+			}, -- [1]
+			{
+				["data"] = {
+					["macroCode"] = "code2",
+					["macroDescription"] = "description2",
+				},
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro2",
+			}, -- [2]
+			{
+				["data"] = {
+					["macroCode"] = "code3",
+					["macroDescription"] = "description3",
+				},
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro3",
+			}, -- [3]
+			{
+				["data"] = {
+					["macroCode"] = "code4",
+					["macroDescription"] = "description4",
+				},
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro4",
+			}, -- [4]
+			{
+				["data"] = {
+					["macroCode"] = "code5",
+					["macroDescription"] = "description5",
+				},
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro5",
+			}, -- [5]
+			{
+				["data"] = {
+					["macroCode"] = "code6",
+					["macroDescription"] = "description6",
+				},
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro6",
+			}, -- [6]
+			{
+				["data"] = {
+					["macroCode"] = "code7",
+					["macroDescription"] = "description7",
+				},
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro7",
+			}, -- [7]
+			{
+				["data"] = {
+					["macroCode"] = "code1",
+					["macroDescription"] = "description1",
+				},
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro1",
+			}, -- [8]
+			{
+				["data"] = {
+					["macroCode"] = "code2",
+					["macroDescription"] = "description2",
+				},
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro2",
+			}, -- [9]
+		},
+		["monk"] = {
+			{
+				["data"] = {
+					["macroCode"] = "code11",
+					["macroDescription"] = "description11",
+				},
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro11",
+			}, -- [1]
+			{
+				["data"] = {
+					["macroCode"] = "code12",
+					["macroDescription"] = "description12",
+				},
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro12",
+			}, -- [2]
+			{
+				["data"] = {
+					["macroCode"] = "code13",
+					["macroDescription"] = "description13",
+				},
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro13",
+			}, -- [3]
+			{
+				["data"] = {
+					["macroCode"] = "code14",
+					["macroDescription"] = "description13",
+				},
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro14",
+			}, -- [4]
+			{
+				["data"] = {
+					["macroCode"] = "code15",
+					["macroDescription"] = "description13",
+				},
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro15",
+			}, -- [5]
+		},
+		["rogue"] = {
+		},
+		["mage"] = {
+			{
+				["data"] = {
+					["macroCode"] = "code61",
+					["macroDescription"] = "description61",
+				},
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro61",
+			}, -- [1]
+			{
+				["data"] = {
+					["macroCode"] = "code62",
+					["macroDescription"] = "description62",
+				},
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro62",
+			}, -- [2]
+			{
+				["data"] = {
+					["macroCode"] = "code63",
+					["macroDescription"] = "description63",
+				},
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro63",
+			}, -- [3]
+		},
+		["druid"] = {
+			{
+				["data"] = {
+					["macroCode"] = "code41",
+					["macroDescription"] = "description41",
+				},
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro41",
+			}, -- [1]
+			{
+				["data"] = {
+					["macroCode"] = "code42",
+					["macroDescription"] = "description42",
+				},
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro42",
+			}, -- [2]
+			{
+				["data"] = {
+					["macroCode"] = "code43",
+					["macroDescription"] = "description43",
+				},
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro43",
+			}, -- [3]
+		},
+		["deathknight"] = {
+			{
+				["data"] = {
+					["macroCode"] = "code21",
+					["macroDescription"] = "description21",
+				},
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro21",
+			}, -- [1]
+			{
+				["data"] = {
+					["macroCode"] = "code22",
+					["macroDescription"] = "description22",
+				},
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro22",
+			}, -- [2]
+			{
+				["data"] = {
+					["macroCode"] = "code23",
+					["macroDescription"] = "description23",
+				},
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro23",
+			}, -- [3]
+		},
+		["warlock"] = {
+		},
+		["priest"] = {
+		},
+		["hunter"] = {
+			{
+				["data"] = {
+					["macroCode"] = "code51",
+					["macroDescription"] = "description51",
+				},
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro51",
+			}, -- [1]
+			{
+				["data"] = {
+					["macroCode"] = "code52",
+					["macroDescription"] = "description52",
+				},
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro52",
+			}, -- [2]
+			{
+				["data"] = {
+					["macroCode"] = "code53",
+					["macroDescription"] = "description53",
+				},
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro53",
+			}, -- [3]
+		},
+		["shaman"] = {
+		},
+		["paladin"] = {
+			{
+				["data"] = {
+					["macroCode"] = "code81",
+					["macroDescription"] = "description81",
+				},
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro81",
+			}, -- [1]
+			{
+				["data"] = {
+					["macroCode"] = "code82",
+					["macroDescription"] = "description82",
+				},
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro82",
+			}, -- [2]
+			{
+				["data"] = {
+					["macroCode"] = "code83",
+					["macroDescription"] = "description83",
+				},
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro83",
+			}, -- [3]
+		},
 	},
 	["ObjectiveTrackerFrameHandlerFrame_point"] = "TOPRIGHT",
 	["ObjectiveTrackerFrameHandlerFrame_relativePoint"] = "TOPRIGHT",
+	["LFGWorldLocation"] = "1033:0:2161159678",
+	["NextQuestIndex"] = 1,
+	["ModelDataOn"] = false,
+	["subCategoriesExpanded"] = {
+		["|cffffd200Legion|r"] = true,
+		["|cffffd200Vendor Supply Run|r "] = false,
+		["Daily Guides"] = false,
+		["Leveling Guides"] = true,
+	},
 	["QuestState"] = {
 		["1024(98-110)#1024(98-110)#1024(98-110):235"] = "U",
 		["Class Campaign (98-110):39"] = "C",
@@ -3639,330 +3928,713 @@ DugisGuideUser = {
 		["1033(102-110)#1033(102-110)#1033(102-110):687"] = "C",
 		["1033(102-110)#1033(102-110)#1033(102-110):1052"] = "U",
 	},
-	["macrosData"] = {
-		["warrior"] = {
-		},
-		["demonhunter"] = {
-			{
-				["data"] = {
-					["macroCode"] = "code31",
-					["macroDescription"] = "description31",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro31",
-			}, -- [1]
-			{
-				["data"] = {
-					["macroCode"] = "code32",
-					["macroDescription"] = "description32",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro32",
-			}, -- [2]
-			{
-				["data"] = {
-					["macroCode"] = "code33",
-					["macroDescription"] = "description33",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro33",
-			}, -- [3]
-		},
-		["general"] = {
-			{
-				["data"] = {
-					["macroCode"] = "code1",
-					["macroDescription"] = "description1",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro1",
-			}, -- [1]
-			{
-				["data"] = {
-					["macroCode"] = "code2",
-					["macroDescription"] = "description2",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro2",
-			}, -- [2]
-			{
-				["data"] = {
-					["macroCode"] = "code3",
-					["macroDescription"] = "description3",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro3",
-			}, -- [3]
-			{
-				["data"] = {
-					["macroCode"] = "code4",
-					["macroDescription"] = "description4",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro4",
-			}, -- [4]
-			{
-				["data"] = {
-					["macroCode"] = "code5",
-					["macroDescription"] = "description5",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro5",
-			}, -- [5]
-			{
-				["data"] = {
-					["macroCode"] = "code6",
-					["macroDescription"] = "description6",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro6",
-			}, -- [6]
-			{
-				["data"] = {
-					["macroCode"] = "code7",
-					["macroDescription"] = "description7",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro7",
-			}, -- [7]
-			{
-				["data"] = {
-					["macroCode"] = "code1",
-					["macroDescription"] = "description1",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro1",
-			}, -- [8]
-			{
-				["data"] = {
-					["macroCode"] = "code2",
-					["macroDescription"] = "description2",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro2",
-			}, -- [9]
-		},
-		["monk"] = {
-			{
-				["data"] = {
-					["macroCode"] = "code11",
-					["macroDescription"] = "description11",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro11",
-			}, -- [1]
-			{
-				["data"] = {
-					["macroCode"] = "code12",
-					["macroDescription"] = "description12",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro12",
-			}, -- [2]
-			{
-				["data"] = {
-					["macroCode"] = "code13",
-					["macroDescription"] = "description13",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro13",
-			}, -- [3]
-			{
-				["data"] = {
-					["macroCode"] = "code14",
-					["macroDescription"] = "description13",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro14",
-			}, -- [4]
-			{
-				["data"] = {
-					["macroCode"] = "code15",
-					["macroDescription"] = "description13",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro15",
-			}, -- [5]
-		},
-		["rogue"] = {
-		},
-		["mage"] = {
-			{
-				["data"] = {
-					["macroCode"] = "code61",
-					["macroDescription"] = "description61",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro61",
-			}, -- [1]
-			{
-				["data"] = {
-					["macroCode"] = "code62",
-					["macroDescription"] = "description62",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro62",
-			}, -- [2]
-			{
-				["data"] = {
-					["macroCode"] = "code63",
-					["macroDescription"] = "description63",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro63",
-			}, -- [3]
-		},
-		["druid"] = {
-			{
-				["data"] = {
-					["macroCode"] = "code41",
-					["macroDescription"] = "description41",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro41",
-			}, -- [1]
-			{
-				["data"] = {
-					["macroCode"] = "code42",
-					["macroDescription"] = "description42",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro42",
-			}, -- [2]
-			{
-				["data"] = {
-					["macroCode"] = "code43",
-					["macroDescription"] = "description43",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro43",
-			}, -- [3]
-		},
-		["deathknight"] = {
-			{
-				["data"] = {
-					["macroCode"] = "code21",
-					["macroDescription"] = "description21",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro21",
-			}, -- [1]
-			{
-				["data"] = {
-					["macroCode"] = "code22",
-					["macroDescription"] = "description22",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro22",
-			}, -- [2]
-			{
-				["data"] = {
-					["macroCode"] = "code23",
-					["macroDescription"] = "description23",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro23",
-			}, -- [3]
-		},
-		["warlock"] = {
-		},
-		["priest"] = {
-		},
-		["hunter"] = {
-			{
-				["data"] = {
-					["macroCode"] = "code51",
-					["macroDescription"] = "description51",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro51",
-			}, -- [1]
-			{
-				["data"] = {
-					["macroCode"] = "code52",
-					["macroDescription"] = "description52",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro52",
-			}, -- [2]
-			{
-				["data"] = {
-					["macroCode"] = "code53",
-					["macroDescription"] = "description53",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro53",
-			}, -- [3]
-		},
-		["shaman"] = {
-		},
-		["paladin"] = {
-			{
-				["data"] = {
-					["macroCode"] = "code81",
-					["macroDescription"] = "description81",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro81",
-			}, -- [1]
-			{
-				["data"] = {
-					["macroCode"] = "code82",
-					["macroDescription"] = "description82",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro82",
-			}, -- [2]
-			{
-				["data"] = {
-					["macroCode"] = "code83",
-					["macroDescription"] = "description83",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro83",
-			}, -- [3]
-		},
+	["PlayerLevel"] = 110,
+	["FinalizeWaypoint"] = true,
+	["excludedTrackingPoints"] = {
 	},
-	["ModelDataOn"] = false,
-	["subCategoriesExpanded"] = {
-		["|cffffd200Legion|r"] = true,
-		["|cffffd200Vendor Supply Run|r "] = false,
-		["Daily Guides"] = false,
-		["Leveling Guides"] = true,
+	["CurrentMapVersions"] = {
+		["Hyjal"] = "Hyjal_terrain1",
+		["BlastedLands"] = "BlastedLands_terrain1",
+	},
+	["shownObjectives"] = {
 	},
 	["RecentGuides"] = {
 		["Categories"] = {
 			"Others", -- [1]
 		},
 		["LastIndices"] = {
-			["Others"] = 4,
+			["Others"] = 1,
 		},
 		["Guides"] = {
 			["Others"] = {
 			},
 		},
 	},
-	["removedQuests"] = {
-	},
-	["FinalizeWaypoint"] = true,
-	["NextQuestIndex"] = 1,
-	["CustomReset"] = true,
-	["shownObjectives"] = {
-	},
-	["LFGWorldLocation"] = "301:0:2317275923",
 }
 DugisGuideViewerDB = nil
 DugisArrowDb = {
 	["arrow_textsize"] = 1.1,
 	["arrow_size"] = 0.9,
-	["point"] = "CENTER",
+	["point"] = "RIGHT",
 	["arrow"] = true,
 	["arrow_locked"] = false,
-	["arrow_pos_x"] = 457.999908447266,
-	["arrow_pos_y"] = -30.0000267028809,
-	["relativePoint"] = "CENTER",
+	["arrow_pos_x"] = -411.000335693359,
+	["arrow_pos_y"] = 32.0000076293945,
+	["relativePoint"] = "RIGHT",
 }
 DugisFlightmasterDataTable = {
+	{
+		[4321] = {
+			["m"] = 141,
+			["coord"] = 2897314579,
+			["name"] = "Theramore, Dustwallow Marsh",
+			["f"] = 0,
+		},
+		[12578] = {
+			["m"] = 182,
+			["coord"] = 2601533646,
+			["name"] = "Talonbranch Glade, Felwood",
+			["f"] = 0,
+		},
+		[35556] = {
+			["m"] = 101,
+			["coord"] = 3034731573,
+			["name"] = "Thunk's Abode, Desolace",
+			["f"] = 0,
+		},
+		[39212] = {
+			["m"] = 607,
+			["coord"] = 2849601694,
+			["name"] = "Northwatch Hold, Southern Barrens",
+			["f"] = 0,
+		},
+		[35562] = {
+			["m"] = 101,
+			["coord"] = 1676035339,
+			["name"] = "Ethel Rethor, Desolace",
+			["f"] = 0,
+		},
+		[40358] = {
+			["m"] = 141,
+			["coord"] = 1841543491,
+			["name"] = "Mudsprocket, Dustwallow Marsh",
+			["f"] = 0,
+		},
+		[40553] = {
+			["m"] = 41,
+			["coord"] = 2381611283,
+			["name"] = "Dolanaar, Teldrassil",
+			["f"] = 0,
+		},
+		[35137] = {
+			["m"] = 81,
+			["coord"] = 2525465343,
+			["name"] = "Windshear Hold, Stonetalon Mountains",
+			["f"] = 0,
+		},
+		[43079] = {
+			["m"] = 182,
+			["coord"] = 1899863695,
+			["name"] = "Wildheart Point, Felwood",
+			["f"] = 0,
+		},
+		[39175] = {
+			["m"] = 201,
+			["coord"] = 1890412270,
+			["name"] = "Mossy Pile, Un'Goro Crater",
+			["f"] = 0,
+		},
+		[11138] = {
+			["m"] = 281,
+			["coord"] = 2619374768,
+			["name"] = "Everlook, Winterspring",
+			["f"] = 0,
+		},
+		[11800] = {
+			["overridePlayerData"] = true,
+			["coord"] = 1897034694,
+			["requirements"] = "cls:DRUID",
+			["direct"] = "3838",
+			["m"] = 241,
+			["f"] = 0,
+		},
+		[3841] = {
+			["m"] = 42,
+			["coord"] = 2221157712,
+			["name"] = "Lor'danel, Darkshore",
+			["f"] = 0,
+		},
+		[7823] = {
+			["m"] = 161,
+			["coord"] = 2206747479,
+			["name"] = "Gadgetzan, Tanaris",
+			["f"] = 0,
+		},
+		[40827] = {
+			["m"] = 161,
+			["coord"] = 1720960606,
+			["name"] = "Gunstan's Dig, Tanaris",
+			["f"] = 0,
+		},
+		[40768] = {
+			["m"] = 61,
+			["coord"] = 3397040136,
+			["name"] = "Fizzle & Pozzik's Speedbarge, Thousand Needles",
+			["f"] = 0,
+		},
+		[17554] = {
+			["m"] = 476,
+			["coord"] = 2474412618,
+			["name"] = "Blood Watch, Bloodmyst Isle",
+			["f"] = 0,
+		},
+		[6706] = {
+			["m"] = 101,
+			["coord"] = 2777553590,
+			["name"] = "Nijel's Point, Desolace",
+			["f"] = 0,
+		},
+		[4407] = {
+			["m"] = 81,
+			["coord"] = 1721061838,
+			["name"] = "Thal'darah Overlook, Stonetalon Mountains",
+			["f"] = 0,
+		},
+		[43991] = {
+			["m"] = 464,
+			["coord"] = 2131721733,
+			["name"] = "Azure Watch, Azuremyst Isle",
+			["f"] = 0,
+		},
+		[15177] = {
+			["m"] = 261,
+			["coord"] = 2340246550,
+			["name"] = "Cenarion Hold, Silithus",
+			["f"] = 0,
+		},
+		[39211] = {
+			["m"] = 607,
+			["coord"] = 2111810979,
+			["name"] = "Fort Triumph, Southern Barrens",
+			["f"] = 0,
+		},
+		[4267] = {
+			["m"] = 43,
+			["coord"] = 1479899854,
+			["name"] = "Astranaar, Ashenvale",
+			["f"] = 0,
+		},
+		[48273] = {
+			["m"] = 720,
+			["coord"] = 958375506,
+			["name"] = "Schnottz's Landing, Uldum",
+			["f"] = 0,
+		},
+		[48275] = {
+			["m"] = 720,
+			["coord"] = 2416334315,
+			["name"] = "Ramkahen, Uldum",
+			["f"] = 0,
+		},
+		[48274] = {
+			["m"] = 720,
+			["coord"] = 1144395128,
+			["name"] = "Oasis of Vir'sar, Uldum",
+			["f"] = 0,
+		},
+		[35138] = {
+			["m"] = 81,
+			["coord"] = 1375116843,
+			["name"] = "Farwatcher's Glen, Stonetalon Mountains",
+			["f"] = 0,
+		},
+		[10897] = {
+			["m"] = 241,
+			["coord"] = 2059906089,
+			["name"] = "Moonglade",
+			["f"] = 0,
+		},
+		[41214] = {
+			["m"] = 161,
+			["coord"] = 2397215501,
+			["name"] = "Bootlegger Outpost, Tanaris",
+			["f"] = 0,
+		},
+		[40552] = {
+			["m"] = 381,
+			["coord"] = 1577352082,
+			["name"] = "Darnassus, Teldrassil",
+			["f"] = 0,
+		},
+		[35136] = {
+			["m"] = 81,
+			["coord"] = 3045379603,
+			["name"] = "Northwatch Expedition Base Camp, Stonetalon Mountains",
+			["f"] = 0,
+		},
+		[40367] = {
+			["m"] = 121,
+			["coord"] = 3317141842,
+			["name"] = "Shadebough, Feralas",
+			["f"] = 0,
+		},
+		[10583] = {
+			["m"] = 201,
+			["coord"] = 2406196287,
+			["name"] = "Marshal's Stand, Un'Goro Crater",
+			["f"] = 0,
+		},
+		[34378] = {
+			["m"] = 43,
+			["coord"] = 1505998935,
+			["name"] = "Stardust Spire, Ashenvale",
+			["f"] = 0,
+		},
+		[22931] = {
+			["m"] = 182,
+			["coord"] = 2212089544,
+			["name"] = "Emerald Sanctuary, Felwood",
+			["f"] = 0,
+		},
+		[41383] = {
+			["m"] = 121,
+			["coord"] = 2010280972,
+			["name"] = "Feathermoon, Feralas",
+			["f"] = 0,
+		},
+		[41861] = {
+			["m"] = 606,
+			["coord"] = 2671195984,
+			["name"] = "Nordrassil, Hyjal",
+			["f"] = 0,
+		},
+		[41240] = {
+			["m"] = 81,
+			["coord"] = 2087224263,
+			["name"] = "Mirkfallon Post, Stonetalon Mountains",
+			["f"] = 0,
+		},
+		[22935] = {
+			["m"] = 43,
+			["coord"] = 3651301222,
+			["name"] = "Forest Song, Ashenvale",
+			["f"] = 0,
+		},
+		[41580] = {
+			["m"] = 121,
+			["coord"] = 2449377782,
+			["name"] = "Tower of Estulan, Feralas",
+			["f"] = 0,
+		},
+		[16227] = {
+			["m"] = 11,
+			["coord"] = 2971382974,
+			["f"] = 0,
+		},
+		[17555] = {
+			["m"] = 471,
+			["coord"] = 2335858094,
+			["name"] = "The Exodar",
+			["f"] = 0,
+		},
+		[39210] = {
+			["m"] = 607,
+			["coord"] = 1673731057,
+			["name"] = "Honor's Stand, Southern Barrens",
+			["f"] = 0,
+		},
+		[33253] = {
+			["m"] = 42,
+			["coord"] = 1906164010,
+			["name"] = "Grove of the Ancients, Darkshore",
+			["f"] = 0,
+		},
+		[34374] = {
+			["m"] = 43,
+			["coord"] = 778908870,
+			["name"] = "Blackfathom Camp, Ashenvale",
+			["f"] = 0,
+		},
+		[35481] = {
+			["m"] = 101,
+			["coord"] = 1581823822,
+			["name"] = "Thargad's Camp, Desolace",
+			["f"] = 0,
+		},
+		[3838] = {
+			["m"] = 41,
+			["coord"] = 2377769595,
+			["name"] = "Rut'theran Village, Teldrassil",
+			["f"] = 0,
+		},
+		[40966] = {
+			["m"] = 121,
+			["coord"] = 2156735114,
+			["name"] = "Dreamer's Rest, Feralas",
+			["f"] = 0,
+		},
+		[43073] = {
+			["m"] = 182,
+			["coord"] = 1872382313,
+			["name"] = "Whisperwind Grove, Felwood",
+			["f"] = 0,
+		},
+		[35478] = {
+			["m"] = 101,
+			["coord"] = 2479390535,
+			["name"] = "Karnum's Glade, Desolace",
+			["f"] = 0,
+		},
+	}, -- [1]
+	{
+		[1573] = {
+			["m"] = 341,
+			["coord"] = 2408610454,
+			["name"] = "Ironforge, Dun Morogh",
+			["f"] = 0,
+		},
+		[2941] = {
+			["m"] = 28,
+			["coord"] = 1628065415,
+			["name"] = "Thorium Point, Searing Gorge",
+			["f"] = 0,
+		},
+		[28621] = {
+			["m"] = 23,
+			["coord"] = 2202482249,
+			["name"] = "Northpass Tower, Eastern Plaguelands",
+			["f"] = 0,
+		},
+		[43000] = {
+			["m"] = 30,
+			["coord"] = 3517032934,
+			["name"] = "Eastvale Logging Camp, Elwynn",
+			["f"] = 0,
+		},
+		[43697] = {
+			["m"] = 34,
+			["coord"] = 903385328,
+			["name"] = "Raven Hill, Duskwood",
+			["f"] = 0,
+		},
+		[43701] = {
+			["m"] = 27,
+			["coord"] = 2308277967,
+			["name"] = "Kharanos, Dun Morogh",
+			["f"] = 0,
+		},
+		[41325] = {
+			["m"] = 40,
+			["coord"] = 2146709339,
+			["name"] = "Dun Modr, Wetlands",
+			["f"] = 0,
+		},
+		[47154] = {
+			["m"] = 700,
+			["coord"] = 2083407912,
+			["name"] = "Thundermar, Twilight Highlands",
+			["f"] = 0,
+		},
+		[24851] = {
+			["m"] = 463,
+			["coord"] = 3207244762,
+			["name"] = "Zul'Aman, Ghostlands",
+			["f"] = 0,
+		},
+		[12617] = {
+			["m"] = 23,
+			["coord"] = 3256191130,
+			["name"] = "Light's Hope Chapel, Eastern Plaguelands",
+			["f"] = 0,
+		},
+		[46006] = {
+			["m"] = 22,
+			["coord"] = 1696641517,
+			["name"] = "Andorhal, Western Plaguelands",
+			["f"] = 0,
+		},
+		[41321] = {
+			["m"] = 40,
+			["coord"] = 2442507858,
+			["name"] = "Slabchisel's Survey, Wetlands",
+			["f"] = 0,
+		},
+		[44410] = {
+			["m"] = 17,
+			["coord"] = 935302067,
+			["name"] = "Dragon's Mouth, Badlands",
+			["f"] = 0,
+		},
+		[48318] = {
+			["m"] = 29,
+			["coord"] = 760383217,
+			["name"] = "Flamestar Post, Burning Steppes",
+			["f"] = 0,
+		},
+		[42406] = {
+			["m"] = 39,
+			["coord"] = 2138517532,
+			["name"] = "Furlbrow's Pumpkin Farm, Westfall",
+			["f"] = 0,
+		},
+		[931] = {
+			["m"] = 36,
+			["coord"] = 1262455122,
+			["name"] = "Lakeshire, Redridge",
+			["f"] = 0,
+		},
+		[26560] = {
+			["m"] = 499,
+			["coord"] = 2074296428,
+			["name"] = "Shattered Sun Staging Area",
+			["f"] = 0,
+		},
+		[44231] = {
+			["m"] = 23,
+			["coord"] = 2262993245,
+			["name"] = "Light's Shield Tower, Eastern Plaguelands",
+			["f"] = 0,
+		},
+		[44233] = {
+			["m"] = 23,
+			["coord"] = 794904155,
+			["name"] = "Plaguewood Tower, Eastern Plaguelands",
+			["f"] = 0,
+		},
+		[42426] = {
+			["m"] = 39,
+			["coord"] = 1808572937,
+			["name"] = "Moonbrook, Westfall",
+			["f"] = 0,
+		},
+		[47147] = {
+			["m"] = 700,
+			["coord"] = 2593428401,
+			["name"] = "Firebeard's Patrol, Twilight Highlands",
+			["f"] = 0,
+		},
+		[43042] = {
+			["m"] = 37,
+			["coord"] = 2261166479,
+			["name"] = "Fort Livingston, Stranglethorn",
+			["f"] = 0,
+		},
+		[12596] = {
+			["m"] = 22,
+			["coord"] = 1844631931,
+			["name"] = "Chillwind Camp, Western Plaguelands",
+			["f"] = 0,
+		},
+		[42983] = {
+			["m"] = 30,
+			["coord"] = 1794614601,
+			["name"] = "Goldshire, Elwynn",
+			["f"] = 0,
+		},
+		[2409] = {
+			["m"] = 34,
+			["coord"] = 3332534684,
+			["name"] = "Darkshire, Duskwood",
+			["f"] = 0,
+		},
+		[1571] = {
+			["m"] = 40,
+			["coord"] = 403085392,
+			["name"] = "Menethil Harbor, Wetlands",
+			["f"] = 0,
+		},
+		[2299] = {
+			["m"] = 29,
+			["coord"] = 3098191905,
+			["name"] = "Morgan's Vigil, Burning Steppes",
+			["f"] = 0,
+		},
+		[37888] = {
+			["m"] = 23,
+			["coord"] = 433629294,
+			["name"] = "Thondroril River, Eastern Plaguelands",
+			["f"] = 0,
+		},
+		[43371] = {
+			["m"] = 36,
+			["coord"] = 2270268245,
+			["name"] = "Camp Everstill, Redridge",
+			["f"] = 0,
+		},
+		[47155] = {
+			["m"] = 700,
+			["coord"] = 2436441814,
+			["name"] = "Kirthaven, Twilight Highlands",
+			["f"] = 0,
+		},
+		[2835] = {
+			["m"] = 16,
+			["coord"] = 1714518353,
+			["name"] = "Refuge Pointe, Arathi",
+			["f"] = 0,
+		},
+		[44230] = {
+			["m"] = 23,
+			["coord"] = 2644406368,
+			["name"] = "Eastwall Tower, Eastern Plaguelands",
+			["f"] = 0,
+		},
+		[46011] = {
+			["m"] = 22,
+			["coord"] = 2169931305,
+			["name"] = "The Menders' Stead, Western Plaguelands",
+			["f"] = 0,
+		},
+		[2859] = {
+			"43045:2409:931:2299:44410:44409:1572", -- [1]
+			"43045:2409:931:2299:44410:44409:1572:2835", -- [2]
+			"43045:2409:931:2299:44410:44409:1572:2835:8018", -- [3]
+			"352:1573:26560:24851", -- [4]
+			"43045:2409:931:2299:44410:44409:1572:41321:41322:41323", -- [5]
+			"43045:2409:931:2299:44410:44409:1572:41321:41322", -- [6]
+			"43045:2409:931:2299:44410:44409:1572:41321:41322:41325", -- [7]
+			"43045:2409:931:2299:44410:44409:1572:41321", -- [8]
+			"43045:XY-2376609509:43087", -- [9]
+			"43045:2409:931:43371:43072:43086", -- [10]
+			"43045:2409:931:2299:44410:44409:1572:2835:43570", -- [11]
+			"43045:2409:931:2299:44410:44409:1572:43702", -- [12]
+			"43045:2409:931:2299:44410:44409:1572:47119", -- [13]
+			"43045:2409:931:2299:44410:44409:1572:47119:47147:47118", -- [14]
+			"43045:2409:931:2299:44410:44409:1572:47119:47147", -- [15]
+			"43045:2409:931:2299:44410:44409:1572:47119:47147:47154", -- [16]
+			"43045:2409:931:2299:44410:44409:1572:47119:47155", -- [17]
+			"43045:XY-2376609509", -- [18]
+			["m"] = 673,
+			["coord"] = 1789705814,
+			["direct"] = "352:523:2409:43045:43043",
+			["f"] = 0,
+		},
+		[43570] = {
+			["m"] = 26,
+			["coord"] = 2822796066,
+			["name"] = "Stormfeather Outpost, The Hinterlands",
+			["f"] = 0,
+		},
+		[43702] = {
+			["m"] = 27,
+			["coord"] = 3258354468,
+			["name"] = "Gol'Bolar Quarry, Dun Morogh",
+			["f"] = 0,
+		},
+		[43072] = {
+			["m"] = 36,
+			["coord"] = 3344345212,
+			["name"] = "Shalewind Canyon, Redridge",
+			["f"] = 0,
+		},
+		[41322] = {
+			["m"] = 40,
+			["coord"] = 2418961311,
+			["name"] = "Greenwarden's Grove, Wetlands",
+			["f"] = 0,
+		},
+		[47927] = {
+			["m"] = 28,
+			["coord"] = 1758834705,
+			["name"] = "Iron Summit, Searing Gorge",
+			["f"] = 0,
+		},
+		[8018] = {
+			["m"] = 26,
+			["coord"] = 477197820,
+			["name"] = "Aerie Peak, The Hinterlands",
+			["f"] = 0,
+		},
+		[47118] = {
+			["m"] = 700,
+			["coord"] = 1883476664,
+			["name"] = "Victor's Point, Twilight Highlands",
+			["f"] = 0,
+		},
+		[1572] = {
+			["m"] = 35,
+			["coord"] = 1457816072,
+			["name"] = "Thelsamar, Loch Modan",
+			["f"] = 0,
+		},
+		[44407] = {
+			["m"] = 17,
+			["coord"] = 2759547441,
+			["name"] = "Fuselight, Badlands",
+			["f"] = 0,
+		},
+		[43086] = {
+			["m"] = 38,
+			["coord"] = 3098287836,
+			["name"] = "Bogpaddle, Swamp of Sorrows",
+			["f"] = 0,
+		},
+		[43088] = {
+			["m"] = 38,
+			["coord"] = 1320573246,
+			["name"] = "The Harborage, Swamp of Sorrows",
+			["f"] = 0,
+		},
+		[44409] = {
+			["m"] = 17,
+			["coord"] = 2096651414,
+			["name"] = "Dustwind Dig, Badlands",
+			["f"] = 0,
+		},
+		[48321] = {
+			["m"] = 29,
+			["coord"] = 1982491478,
+			["name"] = "Chiselgrip, Burning Steppes",
+			["f"] = 0,
+		},
+		[47875] = {
+			["m"] = 22,
+			["coord"] = 1914908429,
+			["name"] = "Hearthglen, Western Plaguelands",
+			["f"] = 0,
+		},
+		[41332] = {
+			["m"] = 35,
+			["coord"] = 3518538834,
+			["name"] = "Farstrider Lodge, Loch Modan",
+			["f"] = 0,
+		},
+		[44232] = {
+			["m"] = 23,
+			["coord"] = 1497804314,
+			["name"] = "Crown Guard Tower, Eastern Plaguelands",
+			["f"] = 0,
+		},
+		[47119] = {
+			["m"] = 700,
+			["coord"] = 3506423082,
+			["name"] = "Highbank, Twilight Highlands",
+			["f"] = 0,
+		},
+		[43087] = {
+			["m"] = 38,
+			["coord"] = 3005571614,
+			["name"] = "Marshtide Watch, Swamp of Sorrows",
+			["f"] = 0,
+		},
+		[523] = {
+			["m"] = 39,
+			["coord"] = 2432532065,
+			["name"] = "Sentinel Hill, Westfall",
+			["f"] = 0,
+		},
+		[43043] = {
+			["m"] = 673,
+			["coord"] = 2390452617,
+			["name"] = "Explorers' League Digsite, Stranglethorn",
+			["f"] = 0,
+		},
+		[43045] = {
+			["m"] = 37,
+			["coord"] = 2053775016,
+			["name"] = "Rebel Camp, Stranglethorn Vale",
+			["f"] = 0,
+		},
+		[352] = {
+			"2941:1572:2835:8018", -- [1]
+			"1573:26560:24851", -- [2]
+			"2941:1572:47119:47147:47118", -- [3]
+			"2941:1572:47119:47147:47154", -- [4]
+			"2941:1572:47119:47155", -- [5]
+			"42983:2409:XY-2376609509", -- [6]
+			["name"] = "Stormwind, Elwynn",
+			["direct"] = "523:931:1573:2409:2859:2299:2941:43045:42983:42406",
+			["coord"] = 3048585708,
+			["m"] = 301,
+			["f"] = 0,
+		},
+		[41323] = {
+			["m"] = 40,
+			["coord"] = 1661625304,
+			["name"] = "Whelgar's Retreat, Wetlands",
+			["f"] = 0,
+		},
+	}, -- [2]
 	[8] = {
 		[108888] = {
 			"112866:111624:111675:114718:98113:98161", -- [1]
@@ -3990,15 +4662,15 @@ DugisFlightmasterDataTable = {
 			"88110:90556:111675:114718:98113:98161:111314", -- [7]
 			"88110:90556:111675:114718:111420", -- [8]
 			"88110:90556:111675:114718", -- [9]
-			["name"] = "Illidari Perch, Azsuna",
 			["m"] = 1015,
 			["f"] = 0,
+			["name"] = "Illidari Perch, Azsuna",
 			["coord"] = 1366980243,
 		},
 		[94973] = {
-			["name"] = "Nesingwary, Highmountain",
 			["m"] = 1024,
 			["f"] = 0,
+			["name"] = "Nesingwary, Highmountain",
 			["coord"] = 1727301337,
 		},
 		[88110] = {
@@ -4011,9 +4683,9 @@ DugisFlightmasterDataTable = {
 			"90556:111675:114718:98113:98161:111314", -- [7]
 			"90556:111675:114718:111420", -- [8]
 			"90556:111675:114718", -- [9]
-			["name"] = "Illidari Stand, Azsuna",
 			["m"] = 1015,
 			["coord"] = 1914794008,
+			["name"] = "Illidari Stand, Azsuna",
 			["f"] = 0,
 		},
 		[98966] = {
@@ -4033,9 +4705,9 @@ DugisFlightmasterDataTable = {
 			"98161:98113:114718:111675:90556:88110:110971", -- [7]
 			"98161:98113:114718", -- [8]
 			"98161:98113:114718:111675:114666", -- [9]
-			["name"] = "Greywatch, Stormheim",
 			["m"] = 1017,
 			["f"] = 0,
+			["name"] = "Greywatch, Stormheim",
 			["coord"] = 3098253628,
 		},
 		[97860] = {
@@ -4056,9 +4728,9 @@ DugisFlightmasterDataTable = {
 			"111675:114718:98113:98161:111314", -- [7]
 			"111675:114718:111420", -- [8]
 			"111675:114718", -- [9]
-			["name"] = "Azurewing Repose, Azsuna",
 			["m"] = 1015,
 			["coord"] = 2079410094,
+			["name"] = "Azurewing Repose, Azsuna",
 			["f"] = 0,
 		},
 		[97868] = {
@@ -4095,9 +4767,9 @@ DugisFlightmasterDataTable = {
 			"111624:111675:114718:98113:98161:111314", -- [7]
 			"111624:111675:114718:111420", -- [8]
 			"111624:111675:114718", -- [9]
-			["name"] = "Shackle's Den, Azsuna",
 			["m"] = 1015,
 			["coord"] = 2414122732,
+			["name"] = "Shackle's Den, Azsuna",
 			["f"] = 0,
 		},
 		[100459] = {
@@ -4120,26 +4792,25 @@ DugisFlightmasterDataTable = {
 			"XY-1932153259:98113:98114:100559:97860:98972", -- [6]
 			"XY-1932153259:98113:98114:100559", -- [7]
 			"XY-1932153259:98113:111327", -- [8]
-			["name"] = "Dalaran",
-			["direct"] = "112866:111675:111624:111420:112926:XY-1932153259",
-			["coord"] = 3012264314,
 			["m"] = 1014,
+			["coord"] = 3012264314,
+			["direct"] = "112866:111675:111624:111420:112926:XY-1932153259",
 			["f"] = 10,
 		},
 		[96565] = {
 			"100550:94973:97868", -- [1]
 			"100550:94973:97868:98066", -- [2]
-			["name"] = "Obsidian Overlook, Highmountain",
 			["m"] = 1024,
 			["coord"] = 2029967545,
+			["name"] = "Obsidian Overlook, Highmountain",
 			["f"] = 0,
 		},
 		[100550] = {
 			"94973:97868", -- [1]
 			"94973:97868:98066", -- [2]
-			["name"] = "Sylvan Falls, Highmountain",
 			["m"] = 1024,
 			["f"] = 0,
+			["name"] = "Sylvan Falls, Highmountain",
 			["coord"] = 1542957263,
 		},
 		[114666] = {
@@ -4150,9 +4821,9 @@ DugisFlightmasterDataTable = {
 			"100550:94973:97868:98066", -- [5]
 			"111675:114718:111420", -- [6]
 			"111675:114718", -- [7]
-			["name"] = "Irongrove Retreat, Suramar",
 			["m"] = 1033,
 			["f"] = 0,
+			["name"] = "Irongrove Retreat, Suramar",
 			["coord"] = 1095979364,
 		},
 		[93447] = {
@@ -4163,15 +4834,15 @@ DugisFlightmasterDataTable = {
 			"100459:100468:100550:94973:97868:98066", -- [5]
 			"114666:111675:114718:111420", -- [6]
 			"114666:111675:114718", -- [7]
-			["name"] = "Lorlathil, Val'sharah",
 			["m"] = 1018,
 			["coord"] = 2361768346,
+			["name"] = "Lorlathil, Val'sharah",
 			["f"] = 0,
 		},
 		[98113] = {
-			["name"] = "Lorna's Watch, Stormheim",
 			["m"] = 1017,
 			["coord"] = 1607115709,
+			["name"] = "Lorna's Watch, Stormheim",
 			["f"] = 0,
 		},
 		[112926] = {
@@ -4191,26 +4862,26 @@ DugisFlightmasterDataTable = {
 		},
 		[98066] = {
 			"97860:100559:98114:98113:114718", -- [1]
-			["name"] = "Shipwreck Cove, Highmountain",
 			["m"] = 1024,
 			["coord"] = 1799232164,
+			["name"] = "Shipwreck Cove, Highmountain",
 			["f"] = 0,
 		},
 		[100468] = {
 			"100550:94973:97868", -- [1]
 			"100550:94973:97868:98066", -- [2]
-			["name"] = "Starsong Refuge, Val'sharah",
 			["m"] = 1018,
 			["f"] = 0,
+			["name"] = "Starsong Refuge, Val'sharah",
 			["coord"] = 2965013023,
 		},
 		[95688] = {
-			"100559:98114:98113:XY-1932153259", -- [1]
+			"100559:98114:98113:114718", -- [1]
 			["name"] = "Thunder Totem, Highmountain",
 			["m"] = 1080,
-			["coord"] = 1920688989,
-			["direct"] = "97860:97868:97870:96565:98966:94973:100550:100559",
 			["f"] = 0,
+			["direct"] = "97860:97868:97870:96565:98966:94973:100550:100559",
+			["coord"] = 1920688989,
 		},
 		[114718] = {
 			["m"] = 1033,
@@ -4219,31 +4890,29 @@ DugisFlightmasterDataTable = {
 			["f"] = 0,
 		},
 		[98972] = {
-			"111327:98113:XY-1932153259:96813", -- [1]
-			"111327:98113:XY-1932153259:96813:112926", -- [2]
-			"111327:98113:XY-1932153259", -- [3]
 			["m"] = 1024,
-			["coord"] = 2490583353,
 			["f"] = 0,
+			["name"] = "Prepfoot, Highmountain",
+			["coord"] = 2490583353,
 		},
 		[93940] = {
 			"100459:100468:100550:94973:97868", -- [1]
 			"100459:100468:100550:94973:97868:98066", -- [2]
 			"100459:114666:111675:114718:111420", -- [3]
 			"100459:114666:111675:114718", -- [4]
-			["name"] = "Bradensbrook, Val'sharah",
 			["m"] = 1018,
 			["coord"] = 1813616062,
+			["name"] = "Bradensbrook, Val'sharah",
 			["f"] = 0,
 		},
 		[100559] = {
-			"98114:98113:XY-1932153259:96813", -- [1]
-			"98114:98113:XY-1932153259:96813:112926", -- [2]
-			"98114:98113:XY-1932153259", -- [3]
-			["name"] = "Stonehoof Watch, Highmountain",
+			"98114:98113:114718:96813", -- [1]
+			"98114:98113:114718:96813:112926", -- [2]
+			"98114:98113:114718", -- [3]
 			["m"] = 1024,
-			["coord"] = 2544674483,
 			["f"] = 0,
+			["name"] = "Stonehoof Watch, Highmountain",
+			["coord"] = 2544674483,
 		},
 		[98114] = {
 			"98113:114718:111675:90556", -- [1]
@@ -4256,19 +4925,19 @@ DugisFlightmasterDataTable = {
 			"98113:114718:111675:90556:88110:110971", -- [8]
 			"98113:114718:96813:112926", -- [9]
 			"98113:114718", -- [10]
-			["name"] = "Skyfire Triage Camp, Stormheim",
 			["m"] = 1017,
 			["coord"] = 1443856804,
+			["name"] = "Skyfire Triage Camp, Stormheim",
 			["f"] = 0,
 		},
 		[97870] = {
-			"100550:96565:XY-1932153259:111420", -- [1]
-			"100550:96565:XY-1932153259", -- [2]
+			"100550:96565:114718:111420", -- [1]
+			"100550:96565:114718", -- [2]
 			["name"] = "Felbane Camp, Highmountain",
 			["direct"] = "95688:97868:98066:94973:100550",
-			["coord"] = 1285317815,
-			["m"] = 1024,
 			["f"] = 0,
+			["m"] = 1024,
+			["coord"] = 1285317815,
 		},
 		[111675] = {
 			"114718:98113:98161", -- [1]
@@ -4288,16 +4957,16 @@ DugisFlightmasterDataTable = {
 		[111624] = {
 			"114666:100550:94973:97868", -- [1]
 			"114666:100550:94973:97868:98066", -- [2]
-			["name"] = "Felblaze Ingress, Azsuna",
 			["m"] = 1015,
 			["coord"] = 2741258455,
+			["name"] = "Felblaze Ingress, Azsuna",
 			["f"] = 0,
 		},
 		[111314] = {
 			"97860:94973:97870", -- [1]
-			["name"] = "Shield's Rest, Stormheim",
 			["m"] = 1017,
 			["f"] = 0,
+			["name"] = "Shield's Rest, Stormheim",
 			["coord"] = 3860798298,
 		},
 		[114837] = {
@@ -4305,9 +4974,9 @@ DugisFlightmasterDataTable = {
 			"93940:100459:100468:100550:94973:97868:98066", -- [2]
 			"93940:100459:114666:111675:114718:111420", -- [3]
 			"93940:100459:114666:111675:114718", -- [4]
-			["name"] = "Gloaming Reef, Val'sharah",
 			["m"] = 1018,
 			["f"] = 0,
+			["name"] = "Gloaming Reef, Val'sharah",
 			["coord"] = 1115138655,
 		},
 		[111420] = {
@@ -4331,9 +5000,9 @@ DugisFlightmasterDataTable = {
 			["coord"] = 2387468240,
 		},
 		[111327] = {
-			["name"] = "Stormtorn Foothills, Stormheim",
 			["m"] = 1017,
 			["coord"] = 2232703223,
+			["name"] = "Stormtorn Foothills, Stormheim",
 			["f"] = 0,
 		},
 		[90639] = {
@@ -4346,9 +5015,9 @@ DugisFlightmasterDataTable = {
 			"111675:114718:98113:98161:111314", -- [7]
 			"111675:114718:111420", -- [8]
 			"111675:114718", -- [9]
-			["name"] = "Challiane's Terrace, Azsuna",
 			["m"] = 1015,
 			["f"] = 0,
+			["name"] = "Challiane's Terrace, Azsuna",
 			["coord"] = 1752831794,
 		},
 		[98161] = {
@@ -4365,360 +5034,10 @@ DugisFlightmasterDataTable = {
 			"98113:114718:96813:112926", -- [11]
 			"98113:114718", -- [12]
 			"98113:114718:111675:114666", -- [13]
-			["name"] = "Valdisdall, Stormheim",
 			["m"] = 1017,
 			["coord"] = 2606531108,
+			["name"] = "Valdisdall, Stormheim",
 			["f"] = 0,
-		},
-	},
-	[2] = {
-		[1573] = {
-			["name"] = "Ironforge, Dun Morogh",
-			["m"] = 341,
-			["f"] = 0,
-			["coord"] = 2408610454,
-		},
-		[2941] = {
-			["name"] = "Thorium Point, Searing Gorge",
-			["m"] = 28,
-			["f"] = 0,
-			["coord"] = 1628065415,
-		},
-		[28621] = {
-			["name"] = "Northpass Tower, Eastern Plaguelands",
-			["m"] = 23,
-			["f"] = 0,
-			["coord"] = 2202482249,
-		},
-		[43000] = {
-			["name"] = "Eastvale Logging Camp, Elwynn",
-			["m"] = 30,
-			["f"] = 0,
-			["coord"] = 3517032934,
-		},
-		[43697] = {
-			["name"] = "Raven Hill, Duskwood",
-			["m"] = 34,
-			["f"] = 0,
-			["coord"] = 903385328,
-		},
-		[43701] = {
-			["name"] = "Kharanos, Dun Morogh",
-			["m"] = 27,
-			["f"] = 0,
-			["coord"] = 2308277967,
-		},
-		[2835] = {
-			["name"] = "Refuge Pointe, Arathi",
-			["m"] = 16,
-			["f"] = 0,
-			["coord"] = 1714518353,
-		},
-		[44410] = {
-			["name"] = "Dragon's Mouth, Badlands",
-			["m"] = 17,
-			["f"] = 0,
-			["coord"] = 935302067,
-		},
-		[24851] = {
-			["name"] = "Zul'Aman, Ghostlands",
-			["m"] = 463,
-			["f"] = 0,
-			["coord"] = 3207244762,
-		},
-		[12617] = {
-			["name"] = "Light's Hope Chapel, Eastern Plaguelands",
-			["m"] = 23,
-			["f"] = 0,
-			["coord"] = 3256191130,
-		},
-		[43045] = {
-			["name"] = "Rebel Camp, Stranglethorn Vale",
-			["m"] = 37,
-			["f"] = 0,
-			["coord"] = 2053775016,
-		},
-		[41321] = {
-			["name"] = "Slabchisel's Survey, Wetlands",
-			["m"] = 40,
-			["f"] = 0,
-			["coord"] = 2442507858,
-		},
-		[41323] = {
-			["name"] = "Whelgar's Retreat, Wetlands",
-			["m"] = 40,
-			["f"] = 0,
-			["coord"] = 1661625304,
-		},
-		[48318] = {
-			["name"] = "Flamestar Post, Burning Steppes",
-			["m"] = 29,
-			["f"] = 0,
-			["coord"] = 760383217,
-		},
-		[47154] = {
-			["name"] = "Thundermar, Twilight Highlands",
-			["m"] = 700,
-			["f"] = 0,
-			["coord"] = 2083407912,
-		},
-		[931] = {
-			["name"] = "Lakeshire, Redridge",
-			["m"] = 36,
-			["f"] = 0,
-			["coord"] = 1262455122,
-		},
-		[26560] = {
-			["name"] = "Shattered Sun Staging Area",
-			["m"] = 499,
-			["f"] = 0,
-			["coord"] = 2074296428,
-		},
-		[44231] = {
-			["name"] = "Light's Shield Tower, Eastern Plaguelands",
-			["m"] = 23,
-			["f"] = 0,
-			["coord"] = 2262993245,
-		},
-		[44233] = {
-			["name"] = "Plaguewood Tower, Eastern Plaguelands",
-			["m"] = 23,
-			["f"] = 0,
-			["coord"] = 794904155,
-		},
-		[42406] = {
-			["name"] = "Furlbrow's Pumpkin Farm, Westfall",
-			["m"] = 39,
-			["f"] = 0,
-			["coord"] = 2138517532,
-		},
-		[523] = {
-			["name"] = "Sentinel Hill, Westfall",
-			["m"] = 39,
-			["f"] = 0,
-			["coord"] = 2432532065,
-		},
-		[43042] = {
-			["name"] = "Fort Livingston, Stranglethorn",
-			["m"] = 37,
-			["f"] = 0,
-			["coord"] = 2261166479,
-		},
-		[43087] = {
-			["name"] = "Marshtide Watch, Swamp of Sorrows",
-			["m"] = 38,
-			["f"] = 0,
-			["coord"] = 3005571614,
-		},
-		[42983] = {
-			["name"] = "Goldshire, Elwynn",
-			["m"] = 30,
-			["f"] = 0,
-			["coord"] = 1794614601,
-		},
-		[2409] = {
-			["name"] = "Darkshire, Duskwood",
-			["m"] = 34,
-			["f"] = 0,
-			["coord"] = 3332534684,
-		},
-		[1571] = {
-			["name"] = "Menethil Harbor, Wetlands",
-			["m"] = 40,
-			["f"] = 0,
-			["coord"] = 403085392,
-		},
-		[2299] = {
-			["name"] = "Morgan's Vigil, Burning Steppes",
-			["m"] = 29,
-			["f"] = 0,
-			["coord"] = 3098191905,
-		},
-		[37888] = {
-			["name"] = "Thondroril River, Eastern Plaguelands",
-			["m"] = 23,
-			["f"] = 0,
-			["coord"] = 433629294,
-		},
-		[43371] = {
-			["name"] = "Camp Everstill, Redridge",
-			["m"] = 36,
-			["f"] = 0,
-			["coord"] = 2270268245,
-		},
-		[47119] = {
-			["name"] = "Highbank, Twilight Highlands",
-			["m"] = 700,
-			["f"] = 0,
-			["coord"] = 3506423082,
-		},
-		[47155] = {
-			["name"] = "Kirthaven, Twilight Highlands",
-			["m"] = 700,
-			["f"] = 0,
-			["coord"] = 2436441814,
-		},
-		[41332] = {
-			["name"] = "Farstrider Lodge, Loch Modan",
-			["m"] = 35,
-			["f"] = 0,
-			["coord"] = 3518538834,
-		},
-		[43086] = {
-			["name"] = "Bogpaddle, Swamp of Sorrows",
-			["m"] = 38,
-			["f"] = 0,
-			["coord"] = 3098287836,
-		},
-		[2859] = {
-			["name"] = "Booty Bay, Stranglethorn",
-			["m"] = 673,
-			["f"] = 0,
-			["coord"] = 1789705814,
-		},
-		[47875] = {
-			["name"] = "Hearthglen, Western Plaguelands",
-			["m"] = 22,
-			["f"] = 0,
-			["coord"] = 1914908429,
-		},
-		[43570] = {
-			["name"] = "Stormfeather Outpost, The Hinterlands",
-			["m"] = 26,
-			["f"] = 0,
-			["coord"] = 2822796066,
-		},
-		[43072] = {
-			["name"] = "Shalewind Canyon, Redridge",
-			["m"] = 36,
-			["f"] = 0,
-			["coord"] = 3344345212,
-		},
-		[44409] = {
-			["name"] = "Dustwind Dig, Badlands",
-			["m"] = 17,
-			["f"] = 0,
-			["coord"] = 2096651414,
-		},
-		[47927] = {
-			["name"] = "Iron Summit, Searing Gorge",
-			["m"] = 28,
-			["f"] = 0,
-			["coord"] = 1758834705,
-		},
-		[8018] = {
-			["name"] = "Aerie Peak, The Hinterlands",
-			["m"] = 26,
-			["f"] = 0,
-			["coord"] = 477197820,
-		},
-		[41322] = {
-			["name"] = "Greenwarden's Grove, Wetlands",
-			["m"] = 40,
-			["f"] = 0,
-			["coord"] = 2418961311,
-		},
-		[1572] = {
-			["name"] = "Thelsamar, Loch Modan",
-			["m"] = 35,
-			["f"] = 0,
-			["coord"] = 1457816072,
-		},
-		[44407] = {
-			["name"] = "Fuselight, Badlands",
-			["m"] = 17,
-			["f"] = 0,
-			["coord"] = 2759547441,
-		},
-		[47118] = {
-			["name"] = "Victor's Point, Twilight Highlands",
-			["m"] = 700,
-			["f"] = 0,
-			["coord"] = 1883476664,
-		},
-		[43088] = {
-			["name"] = "The Harborage, Swamp of Sorrows",
-			["m"] = 38,
-			["f"] = 0,
-			["coord"] = 1320573246,
-		},
-		[43702] = {
-			["name"] = "Gol'Bolar Quarry, Dun Morogh",
-			["m"] = 27,
-			["f"] = 0,
-			["coord"] = 3258354468,
-		},
-		[48321] = {
-			["name"] = "Chiselgrip, Burning Steppes",
-			["m"] = 29,
-			["f"] = 0,
-			["coord"] = 1982491478,
-		},
-		[46011] = {
-			["name"] = "The Menders' Stead, Western Plaguelands",
-			["m"] = 22,
-			["f"] = 0,
-			["coord"] = 2169931305,
-		},
-		[44230] = {
-			["name"] = "Eastwall Tower, Eastern Plaguelands",
-			["m"] = 23,
-			["f"] = 0,
-			["coord"] = 2644406368,
-		},
-		[44232] = {
-			["name"] = "Crown Guard Tower, Eastern Plaguelands",
-			["m"] = 23,
-			["f"] = 0,
-			["coord"] = 1497804314,
-		},
-		[12596] = {
-			["name"] = "Chillwind Camp, Western Plaguelands",
-			["m"] = 22,
-			["f"] = 0,
-			["coord"] = 1844631931,
-		},
-		[47147] = {
-			["name"] = "Firebeard's Patrol, Twilight Highlands",
-			["m"] = 700,
-			["f"] = 0,
-			["coord"] = 2593428401,
-		},
-		[42426] = {
-			["name"] = "Moonbrook, Westfall",
-			["m"] = 39,
-			["f"] = 0,
-			["coord"] = 1808572937,
-		},
-		[43043] = {
-			["name"] = "Explorers' League Digsite, Stranglethorn",
-			["m"] = 673,
-			["f"] = 0,
-			["coord"] = 2390452617,
-		},
-		[46006] = {
-			["name"] = "Andorhal, Western Plaguelands",
-			["m"] = 22,
-			["f"] = 0,
-			["coord"] = 1696641517,
-		},
-		[352] = {
-			"2941:1572:2835:8018", -- [1]
-			"1573:26560:24851", -- [2]
-			"2941:1572:47119:47147:47118", -- [3]
-			"2941:1572:47119:47147:47154", -- [4]
-			"2941:1572:47119:47155", -- [5]
-			"42983:2409:XY-2376609509", -- [6]
-			["m"] = 301,
-			["f"] = 0,
-			["direct"] = "523:931:1573:2409:2859:2299:2941:43045:42983:42406",
-			["coord"] = 3048585708,
-		},
-		[41325] = {
-			["name"] = "Dun Modr, Wetlands",
-			["m"] = 40,
-			["f"] = 0,
-			["coord"] = 2146709339,
 		},
 	},
 }
@@ -4846,6 +5165,10 @@ DugisCharacterCache = {
 		["CalculateScore|cff0070dd|Hitem:134532:5426:::::::110:261::1:3:1826:1467:3339:::|h[Band of Fused Coral]|h|r3false110INVTYPE_FINGERnil1"] = {
 			8930, -- [1]
 			0, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:134429::::::::110:260::16:3:3413:1502:1813:::|h[Grove Darkener's Treads]|h|r2false110INVTYPE_FEETnil1"] = {
+			19681.27, -- [1]
+			973, -- [2]
 		},
 		["CalculateScore|cff0070dd|Hitem:137357::::::::110:260:512:17:1:1795:105:::|h[Mark of Dargrul]|h|r2false110INVTYPE_TRINKETnil1"] = {
 			3162.2, -- [1]
@@ -5011,10 +5334,6 @@ DugisCharacterCache = {
 			29256.6, -- [1]
 			826, -- [2]
 		},
-		["CalculateScore|cff0070dd|Hitem:134442::::::::110:259::2:2:1726:1477:::|h[Tooled Rivermoor Boots]|h|r1false110INVTYPE_FEETnil1"] = {
-			13344.98, -- [1]
-			771, -- [2]
-		},
 		["CalculateScore|cff0070dd|Hitem:129079::::::::110:259:512::1:1794:110:::|h[Bile-Resistant Boots]|h|r1false110INVTYPE_FEETnil1"] = {
 			10940.34, -- [1]
 			531, -- [2]
@@ -5041,10 +5360,6 @@ DugisCharacterCache = {
 		["CalculateScore|cff0070dd|Hitem:134239::::::::110:259::2:3:1726:1492:3339:::|h[Brinewashed Leather Grips]|h|r1false110INVTYPE_HANDnil1"] = {
 			15657.42, -- [1]
 			807, -- [2]
-		},
-		["CalculateScore|cff1eff00|Hitem:121189::::::::110:259:512::2:1812:1707:110:::|h[Smolderhide Waistband of the Aurora]|h|r1false110INVTYPE_WAISTnil1"] = {
-			9457.76, -- [1]
-			507, -- [2]
 		},
 		["CalculateScore|cffa335ee|Hitem:130230:5426:130217::::::110:259::13:4:3367:689:600:669:::|h[Maelstrom Band of the Harmonious]|h|r1false110INVTYPE_FINGERnil1"] = {
 			13220.13, -- [1]
@@ -5078,8 +5393,24 @@ DugisCharacterCache = {
 			31851.06, -- [1]
 			758, -- [2]
 		},
+		["CalculateScore|cff1eff00|Hitem:55287::::::-121:1567686679:110:260:512:22::110:::|h[Bladefist Axe of the Landslide]|h|r2false11016nil1"] = {
+			271.467, -- [1]
+			0, -- [2]
+		},
+		["CalculateScore|cff1eff00|Hitem:55648::::::-40:143589430:110:260:512:22::110:::|h[Ravenholdt Jerkin of the Bandit]|h|r2false110INVTYPE_CHESTnil1"] = {
+			556.92, -- [1]
+			28, -- [2]
+		},
 		["CalculateScore|cffa335ee|Hitem:117355::::::::110:259::1:1:3493:::|h[The Horseman's Horrific Hood]|h|r1false110INVTYPE_HEADnil1"] = {
 			-3, -- [1]
+		},
+		["CalculateScore|cffe6cc80|Hitem:128476::133764:136689:::::110:261:256:9::69:3:1726:1482:3339::|h[Fangs of the Devourer]|h|r3false11016nil1"] = {
+			34334.46, -- [1]
+			826, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:137539::::::::110:260::23:3:1727:1492:1813:::|h[Faulty Countermeasure]|h|r2false110INVTYPE_TRINKETnil1"] = {
+			5854.96, -- [1]
+			0, -- [2]
 		},
 		["CalculateScore|cffffffff|Hitem:139745::::::::110:259::14:2:3385:3384:::|h[]|h|r1false110INVTYPE_WAISTnil1"] = {
 			16842.98, -- [1]
@@ -5089,17 +5420,28 @@ DugisCharacterCache = {
 			13336.89, -- [1]
 			665, -- [2]
 		},
+		["CalculateScore|cff0070dd|Hitem:55260::::::::110:260:512:22::110:::|h[Alpheus Legguards]|h|r2false110INVTYPE_LEGSnil1"] = {
+			-3, -- [1]
+		},
 		["CalculateScore|cffa335ee|Hitem:121310::::::::110:259::30:4:3397:607:1497:3336:::|h[Nightmare Thorn]|h|r1false110INVTYPE_TRINKETnil1"] = {
 			18738.04, -- [1]
 			1073, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:134526:5427:130219::::::110:260::35:4:3410:1808:1502:3336:::|h[Gnawed Thumb Ring]|h|r2false110INVTYPE_FINGERnil1"] = {
+			14387.68, -- [1]
+			0, -- [2]
 		},
 		["CalculateScore|cffa335ee|Hitem:141429::130217::::::110:260::3:3:1808:3466:1472:::|h[Wax-Sealed Leather Bracers]|h|r2false110INVTYPE_WRISTnil1"] = {
 			16032.88, -- [1]
 			801, -- [2]
 		},
-		["CalculateScore|cffa335ee|Hitem:134195::::::::110:259::36:3:3432:1497:1674:::|h[Biornskin Gloves]|h|r1false110INVTYPE_HANDnil1"] = {
-			17109.04, -- [1]
-			846, -- [2]
+		["CalculateScore|cffa335ee|Hitem:134195::130219::::::110:260::35:4:3410:1808:1512:3336:::|h[Biornskin Gloves]|h|r2false110INVTYPE_HANDnil1"] = {
+			20420.09, -- [1]
+			973, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:141429::130219::::::110:260::3:3:1808:3466:1472:::|h[Wax-Sealed Leather Bracers]|h|r2false110INVTYPE_WRISTnil1"] = {
+			16307.88, -- [1]
+			801, -- [2]
 		},
 		["CalculateScore|cff1eff00|Hitem:121006::::::::110:261:512::2:1812:1683:110:::|h[Rhut'van Pauldrons of the Peerless]|h|r3false110INVTYPE_SHOULDERnil1"] = {
 			-3, -- [1]
@@ -5116,29 +5458,29 @@ DugisCharacterCache = {
 			13232.86, -- [1]
 			665, -- [2]
 		},
-		["CalculateScore|cff1eff00|Hitem:121189::::::::110:259:512::2:1812:1688:110:::|h[Smolderhide Waistband of the Peerless]|h|r1false110INVTYPE_WAISTnil1"] = {
-			10836.58, -- [1]
-			507, -- [2]
+		["CalculateScore|cff0070dd|Hitem:139113::::::::110:261::29:4:3396:607:1487:1675:::|h[An'she's Token of Guile]|h|r3false110INVTYPE_TRINKETnil1"] = {
+			15975.35, -- [1]
+			977, -- [2]
 		},
 		["CalculateScore|cffa335ee|Hitem:134526:5429:130222::::::110:259::35:4:3410:1808:1502:3336:::|h[Gnawed Thumb Ring]|h|r1false110INVTYPE_FINGERnil1"] = {
 			15323.24, -- [1]
 			0, -- [2]
 		},
-		["CalculateScore|cff9d9d9d|Hitem:121393::::::::110:259::2::::|h[Vexing Armada]|h|r1false110INVTYPE_LEGSnil1"] = {
-			0, -- [1]
-			0, -- [2]
+		["CalculateScore|cffa335ee|Hitem:134241::::::::110:260::37:3:3473:1502:1674:::|h[Brinewashed Leather Vest]|h|r2false110INVTYPE_CHESTnil1"] = {
+			24350.41, -- [1]
+			1182, -- [2]
 		},
 		["CalculateScore|cffa335ee|Hitem:134239::::::::110:259::23:3:1727:1502:1813:::|h[Brinewashed Leather Grips]|h|r1false110INVTYPE_HANDnil1"] = {
 			16848.11, -- [1]
 			886, -- [2]
 		},
-		["CalculateScore|cff1eff00|Hitem:121180::::::::110:259:512::2:1812:605:110:::|h[Mark of Lore]|h|r1false110INVTYPE_TRINKETnil1"] = {
-			4089.48, -- [1]
+		["CalculateScore|cffa335ee|Hitem:141547:5439:::::::110:259::3:2:3466:1472:::|h[Choker of Dreamthorns]|h|r1false110INVTYPE_NECKnil1"] = {
+			10111.09, -- [1]
 			0, -- [2]
 		},
-		["CalculateScore|cff0070dd|Hitem:137537::::::::110:261::2:2:1726:1477:::|h[Tirathon's Betrayal]|h|r3false110INVTYPE_TRINKETnil1"] = {
-			11059.64, -- [1]
-			977, -- [2]
+		["CalculateScore|cffa335ee|Hitem:141538:5432:130219::::::110:259::3:5:41:1808:3466:1477:3336:::|h[Giant's Handkerchief]|h|r1false110INVTYPE_CLOAKnil1"] = {
+			18950.18, -- [1]
+			989, -- [2]
 		},
 		["CalculateScore|cff0070dd|Hitem:134491:5321:130217::::::110:259::2:3:1726:1808:1477:::|h[Understone Gorget]|h|r1false110INVTYPE_NECKnil1"] = {
 			13219.12, -- [1]
@@ -5147,13 +5489,13 @@ DugisCharacterCache = {
 		["CalculateScore|cff1eff00|Hitem:121266::::::::110:259:512::2:1812:1698:110:::|h[Warpwind Spaulders of the Feverflare]|h|r1false110INVTYPE_SHOULDERnil1"] = {
 			-3, -- [1]
 		},
-		["CalculateScore|cffe6cc80|Hitem:128476::133764:136689:::::110:261:256:9::69:3:1726:1482:3339::|h[Fangs of the Devourer]|h|r3false11016nil1"] = {
-			34334.46, -- [1]
-			826, -- [2]
+		["CalculateScore|cffa335ee|Hitem:134282::::::::110:259::36:4:3432:1808:1507:3336:::|h[Swordsinger's Leggings]|h|r1false110INVTYPE_LEGSnil1"] = {
+			22029.28, -- [1]
+			1238, -- [2]
 		},
-		["CalculateScore|cffa335ee|Hitem:141538:5432:130219::::::110:259::3:5:41:1808:3466:1477:3336:::|h[Giant's Handkerchief]|h|r1false110INVTYPE_CLOAKnil1"] = {
-			18950.18, -- [1]
-			989, -- [2]
+		["CalculateScore|cffffffff|Hitem:74918::::::::110:259::14::::|h[Problem Solving Pendant]|h|r1false110INVTYPE_NECKnil1"] = {
+			0, -- [1]
+			0, -- [2]
 		},
 		["CalculateScore|cffa335ee|Hitem:139236:5426:::::::110:261::3:2:1807:1472:::|h[Grubby Silver Ring]|h|r3false110INVTYPE_FINGERnil1"] = {
 			11346.29, -- [1]
@@ -5167,9 +5509,9 @@ DugisCharacterCache = {
 			17424.91, -- [1]
 			771, -- [2]
 		},
-		["CalculateScore|cffa335ee|Hitem:134282::::::::110:259::36:4:3432:1808:1507:3336:::|h[Swordsinger's Leggings]|h|r1false110INVTYPE_LEGSnil1"] = {
-			22029.28, -- [1]
-			1238, -- [2]
+		["CalculateScore|cffa335ee|Hitem:134199::::::::110:259::16:3:3410:1512:3336:::|h[Biornskin Belt]|h|r1false110INVTYPE_WAISTnil1"] = {
+			18942.42, -- [1]
+			973, -- [2]
 		},
 		["CalculateScore|cffffffff|Hitem:74918::::::::110:260::14::::|h[Problem Solving Pendant]|h|r2false110INVTYPE_NECKnil1"] = {
 			0, -- [1]
@@ -5183,8 +5525,8 @@ DugisCharacterCache = {
 			12536.15, -- [1]
 			670, -- [2]
 		},
-		["CalculateScore|cffa335ee|Hitem:141547:5439:::::::110:259::3:2:3466:1472:::|h[Choker of Dreamthorns]|h|r1false110INVTYPE_NECKnil1"] = {
-			10111.09, -- [1]
+		["CalculateScore|cffa335ee|Hitem:141547:5439:::::::110:260::3:2:3466:1472:::|h[Choker of Dreamthorns]|h|r2false110INVTYPE_NECKnil1"] = {
+			12221.51, -- [1]
 			0, -- [2]
 		},
 		["CalculateScore|cff1eff00|Hitem:121186::::::::110:259:512::2:1812:1718:110:::|h[Smolderhide Hood of the Decimator]|h|r1false110INVTYPE_HEADnil1"] = {
@@ -5195,31 +5537,31 @@ DugisCharacterCache = {
 			39551.64, -- [1]
 			1164, -- [2]
 		},
-		["CalculateScore|cffa335ee|Hitem:134199::::::::110:259::16:3:3410:1512:3336:::|h[Biornskin Belt]|h|r1false110INVTYPE_WAISTnil1"] = {
-			18942.42, -- [1]
+		["CalculateScore|cffa335ee|Hitem:134195::130222::::::110:259::35:4:3410:1808:1512:3336:::|h[Biornskin Gloves]|h|r1false110INVTYPE_HANDnil1"] = {
+			20006.1, -- [1]
 			973, -- [2]
-		},
-		["CalculateScore|cff0070dd|Hitem:139113::::::::110:261::29:4:3396:607:1487:1675:::|h[An'she's Token of Guile]|h|r3false110INVTYPE_TRINKETnil1"] = {
-			15975.35, -- [1]
-			977, -- [2]
-		},
-		["CalculateScore|cff9d9d9d|Hitem:121388::::::::110:261::::::|h[Unseen Bindings]|h|r3false110INVTYPE_WRISTnil1"] = {
-			-3, -- [1]
-		},
-		["CalculateScore|cff1eff00|Hitem:129239::::::::110:260:512:11:1:768:109:::|h[Bloodbeard's Seal]|h|r2false110INVTYPE_FINGERnil1"] = {
-			8216.67, -- [1]
-			0, -- [2]
 		},
 		["CalculateScore|cffa335ee|Hitem:141538:5432:130222::::::110:259::3:5:41:1808:3466:1477:3336:::|h[Giant's Handkerchief]|h|r1false110INVTYPE_CLOAKnil1"] = {
 			18746.18, -- [1]
 			989, -- [2]
 		},
-		["CalculateScore|cffa335ee|Hitem:134195::130222::::::110:259::35:4:3410:1808:1512:3336:::|h[Biornskin Gloves]|h|r1false110INVTYPE_HANDnil1"] = {
-			20006.1, -- [1]
+		["CalculateScore|cff9d9d9d|Hitem:121388::::::::110:261::::::|h[Unseen Bindings]|h|r3false110INVTYPE_WRISTnil1"] = {
+			-3, -- [1]
+		},
+		["CalculateScore|cff1eff00|Hitem:121272::::::::110:261:512::2:1812:1687:110:::|h[Moonfall Robe of the Peerless]|h|r3false110INVTYPE_CHESTnil1"] = {
+			6035.9, -- [1]
+			0, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:134195::130217::::::110:259::35:4:3410:1808:1512:3336:::|h[Biornskin Gloves]|h|r1false110INVTYPE_HANDnil1"] = {
+			19685.1, -- [1]
 			973, -- [2]
 		},
-		["CalculateScore|cff9d9d9d|Hitem:121398::::::::110:259::::::|h[Realm of Companions]|h|r1false110INVTYPE_SHOULDERnil1"] = {
-			0, -- [1]
+		["CalculateScore|cffa335ee|Hitem:134154:5442:::::::110:259::23:3:1727:1502:1813:::|h[Steelgazer Hide Mantle]|h|r1false110INVTYPE_SHOULDERnil1"] = {
+			15153.47, -- [1]
+			886, -- [2]
+		},
+		["CalculateScore|cff0070dd|Hitem:131797::::::::110:261:512::1:1794:110:::|h[Swamprock Salvage Band]|h|r3false110INVTYPE_FINGERnil1"] = {
+			9031.2, -- [1]
 			0, -- [2]
 		},
 		["CalculateScore|cffffffff|Hitem:14341::::::::110:259::::::|h[Rune Thread]|h|r1false110nilnil1"] = {
@@ -5229,21 +5571,21 @@ DugisCharacterCache = {
 			3464.87, -- [1]
 			0, -- [2]
 		},
-		["CalculateScore|cff0070dd|Hitem:131797::::::::110:261:512::1:1794:110:::|h[Swamprock Salvage Band]|h|r3false110INVTYPE_FINGERnil1"] = {
-			9031.2, -- [1]
-			0, -- [2]
+		["CalculateScore|cffe6cc80|Hitem:128872::139254:136778:141258::::110:260:256:9:1:742:698:2:1807:1472:3:1727:1492:1813:3:3474:1512:3336|h[The Dreadblades]|h|r2false11016nil1"] = {
+			136623.98, -- [1]
+			4498, -- [2]
 		},
-		["CalculateScore|cffa335ee|Hitem:141492:5429:130247::::::110:259::3:3:1808:1477:3336:::|h[Dingy Suramar Mercantile Signet]|h|r1false110INVTYPE_FINGERnil1"] = {
-			17944.79, -- [1]
-			200, -- [2]
+		["CalculateScore|cffa335ee|Hitem:139063::::::::110:259::36:3:3432:1502:3336:::|h[Dreamwalker's Pendant]|h|r1false110INVTYPE_NECKnil1"] = {
+			7367.07, -- [1]
+			0, -- [2]
 		},
 		["CalculateScore|cff0070dd|Hitem:137532::::::::110:261::1:2:1826:1457:::|h[Seal of Saltheril]|h|r3false110INVTYPE_FINGERnil1"] = {
 			8951.25, -- [1]
 			0, -- [2]
 		},
-		["CalculateScore|cffffffff|Hitem:74918::::::::110:259::14::::|h[Problem Solving Pendant]|h|r1false110INVTYPE_NECKnil1"] = {
-			0, -- [1]
-			0, -- [2]
+		["CalculateScore|cffa335ee|Hitem:141492:5429:130247::::::110:259::3:3:1808:1477:3336:::|h[Dingy Suramar Mercantile Signet]|h|r1false110INVTYPE_FINGERnil1"] = {
+			17944.79, -- [1]
+			200, -- [2]
 		},
 		["CalculateScore|cff0070dd|Hitem:129997::::::::110:261::11::::|h[Valor-Bound Legwraps]|h|r3false110INVTYPE_LEGSnil1"] = {
 			14934.98, -- [1]
@@ -5264,33 +5606,33 @@ DugisCharacterCache = {
 			34137.92, -- [1]
 			1164, -- [2]
 		},
-		["CalculateScore|cffa335ee|Hitem:139063::::::::110:259::36:3:3432:1502:3336:::|h[Dreamwalker's Pendant]|h|r1false110INVTYPE_NECKnil1"] = {
-			7367.07, -- [1]
+		["CalculateScore|cffa335ee|Hitem:134195::130219::::::110:259::35:4:3410:1808:1512:3336:::|h[Biornskin Gloves]|h|r1false110INVTYPE_HANDnil1"] = {
+			20210.1, -- [1]
+			973, -- [2]
+		},
+		["CalculateScore|cff0070dd|Hitem:134238::130217::::::110:260::30:4:3397:1808:1492:1675:::|h[Brinewashed Leather Pants]|h|r2false110INVTYPE_LEGSnil1"] = {
+			23364.36, -- [1]
+			1077, -- [2]
+		},
+		["CalculateScore|cff0070dd|Hitem:134491:5321:130217::::::110:260::2:3:1726:1808:1477:::|h[Understone Gorget]|h|r2false110INVTYPE_NECKnil1"] = {
+			12423.92, -- [1]
 			0, -- [2]
-		},
-		["CalculateScore|cffe6cc80|Hitem:128476::141277:136689:141277::::110:260:256:9:1:743:77:3:3432:1497:1674::3:3397:1492:1675|h[Fangs of the Devourer]|h|r2false11016nil1"] = {
-			40211.86, -- [1]
-			1186, -- [2]
-		},
-		["CalculateScore|cff0070dd|Hitem:128885::::::::110:261::13:5:596:600:689:1690:3408:::|h[Dreadleather Footpads of the Fireflash]|h|r3false110INVTYPE_FEETnil1"] = {
-			12579.49, -- [1]
-			702, -- [2]
 		},
 		["CalculateScore|cff1eff00|Hitem:121078::::::::110:260:512::2:1812:1707:110:::|h[Icepine Shoulders of the Aurora]|h|r2false110INVTYPE_SHOULDERnil1"] = {
 			11125.89, -- [1]
 			507, -- [2]
 		},
-		["CalculateScore|cffe6cc80|Hitem:128872::139254:137543:141270::::110:260:256:9:1:742:698:2:1807:1472:2:1726:1477:3:3397:1497:3336|h[The Dreadblades]|h|r2false11016nil1"] = {
-			44071.84, -- [1]
-			1314, -- [2]
-		},
-		["CalculateScore|cff1eff00|Hitem:121235::::::::110:259:512::2:1812:604:110:::|h[Sashj'tar Brooch]|h|r1false110INVTYPE_TRINKETnil1"] = {
-			2115.47, -- [1]
+		["CalculateScore|cffa335ee|Hitem:134191::::::::110:259::42:3:3474:1507:1674:::|h[Rough-Hammered Silver Ring]|h|r1false110INVTYPE_FINGERnil1"] = {
+			13064.6, -- [1]
 			0, -- [2]
 		},
-		["CalculateScore|cffa335ee|Hitem:134195::130217::::::110:260::35:4:3410:1808:1512:3336:::|h[Biornskin Gloves]|h|r2false110INVTYPE_HANDnil1"] = {
-			20145.09, -- [1]
-			973, -- [2]
+		["CalculateScore|cff0070dd|Hitem:128885::::::::110:261::13:5:596:600:689:1690:3408:::|h[Dreadleather Footpads of the Fireflash]|h|r3false110INVTYPE_FEETnil1"] = {
+			12579.49, -- [1]
+			702, -- [2]
+		},
+		["CalculateScore|cffe6cc80|Hitem:128872::139254:137543:141258::::110:260:256:9:1:742:698:2:1807:1472:2:1726:1477:3:3474:1512:3336|h[The Dreadblades]|h|r2false11016nil1"] = {
+			129753.86, -- [1]
+			4254, -- [2]
 		},
 		["CalculateScore|cff00ccff|Hitem:128318::::::::110:260::::::|h[Touch of the Void]|h|r2false110INVTYPE_TRINKETnil1"] = {
 			885.78, -- [1]
@@ -5304,47 +5646,57 @@ DugisCharacterCache = {
 			9486.97, -- [1]
 			526, -- [2]
 		},
-		["CalculateScore|cff9d9d9d|Hitem:121333::::::::110:261::2::::|h[Poorly Weighted Blackjack]|h|r3false11016nil1"] = {
-			164.7399, -- [1]
+		["CalculateScore|cff1eff00|Hitem:121235::::::::110:259:512::2:1812:604:110:::|h[Sashj'tar Brooch]|h|r1false110INVTYPE_TRINKETnil1"] = {
+			2115.47, -- [1]
 			0, -- [2]
 		},
 		["CalculateScore|cffe6cc80|Hitem:128870::143694:141262:143682::::110:259:256:9:1:741:611:3:3473:1502:1674:3:3432:1507:3336:3:3474:1507:1674|h[The Kingslayers]|h|r1false11016nil1"] = {
 			112788.14, -- [1]
 			4414, -- [2]
 		},
-		["CalculateScore|cff9d9d9d|Hitem:62072::::::::110:259:512:22::110:::|h[Robble's Wobbly Staff]|h|r1false11016nil1"] = {
-			-3, -- [1]
-		},
-		["CalculateScore|cffa335ee|Hitem:134154:5442:::::::110:259::23:3:1727:1502:1813:::|h[Steelgazer Hide Mantle]|h|r1false110INVTYPE_SHOULDERnil1"] = {
-			15153.47, -- [1]
-			886, -- [2]
-		},
 		["CalculateScore|cffe6cc80|Hitem:128872::136718:137543:141270::::110:260:256:9:1:742:698:3:1726:1487:3339:2:1726:1477:3:3397:1497:3336|h[The Dreadblades]|h|r2false11016nil1"] = {
 			42637.02, -- [1]
 			1266, -- [2]
-		},
-		["CalculateScore|cffffffff|Hitem:39354::::::::110:259::::::|h[Light Parchment]|h|r1false110nilnil1"] = {
-			-2, -- [1]
-		},
-		["CalculateScore|cffa335ee|Hitem:134197::::::::110:259::36:3:3432:1497:1674:::|h[Biornskin Vest]|h|r1false110INVTYPE_CHESTnil1"] = {
-			22768.24, -- [1]
-			1128, -- [2]
-		},
-		["CalculateScore|cffa335ee|Hitem:134195::::::::110:261::36:3:3432:1497:1674:::|h[Biornskin Gloves]|h|r3false110INVTYPE_HANDnil1"] = {
-			15352.42, -- [1]
-			846, -- [2]
-		},
-		["CalculateScore|cff0070dd|Hitem:137539::::::::110:260::1:3:1826:1462:3339:::|h[Faulty Countermeasure]|h|r2false110INVTYPE_TRINKETnil1"] = {
-			5229.04, -- [1]
-			0, -- [2]
 		},
 		["CalculateScore|cff0070dd|Hitem:134192::::::::110:261::25:3:1824:1472:3339:::|h[Biornskin Bracer]|h|r3false110INVTYPE_WRISTnil1"] = {
 			9640.31, -- [1]
 			503, -- [2]
 		},
+		["CalculateScore|cff0070dd|Hitem:134443:5444:130218::::::110:261::1:3:1826:1808:1457:::|h[Gravelworn Handguards]|h|r3false110INVTYPE_HANDnil1"] = {
+			12199.35, -- [1]
+			640, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:134195::::::::110:261::36:3:3432:1497:1674:::|h[Biornskin Gloves]|h|r3false110INVTYPE_HANDnil1"] = {
+			15352.42, -- [1]
+			846, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:134195::::::::110:259::36:3:3432:1497:1674:::|h[Biornskin Gloves]|h|r1false110INVTYPE_HANDnil1"] = {
+			17109.04, -- [1]
+			846, -- [2]
+		},
+		["CalculateScore|cff1eff00|Hitem:121074::::::::110:260:512::2:1812:1702:110:::|h[Icepine Britches of the Feverflare]|h|r2false110INVTYPE_LEGSnil1"] = {
+			14794.99, -- [1]
+			676, -- [2]
+		},
+		["CalculateScore|cff0070dd|Hitem:137539::::::::110:260::1:3:1826:1462:3339:::|h[Faulty Countermeasure]|h|r2false110INVTYPE_TRINKETnil1"] = {
+			5229.04, -- [1]
+			0, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:137311:5439:::::::110:260::23:4:1727:42:1492:1813:::|h[Chain of the Green Flight]|h|r2false110INVTYPE_NECKnil1"] = {
+			11745.7, -- [1]
+			0, -- [2]
+		},
 		["CalculateScore|cffa335ee|Hitem:134405::::::::110:261::23:3:1727:1492:1813:::|h[Cloak of Fading Echoes]|h|r3false110INVTYPE_CLOAKnil1"] = {
 			11295.55, -- [1]
 			665, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:134197::::::::110:259::36:3:3432:1497:1674:::|h[Biornskin Vest]|h|r1false110INVTYPE_CHESTnil1"] = {
+			22768.24, -- [1]
+			1128, -- [2]
+		},
+		["CalculateScore|cffffffff|Hitem:139739::::::::110:261::11:2:3386:3383:::|h[]|h|r3false110INVTYPE_CHESTnil1"] = {
+			18278.69, -- [1]
+			1077, -- [2]
 		},
 		["CalculateScore|cffe6cc80|Hitem:128476::141277:136689:141277::::110:259:256:9:1:743:77:3:3432:1497:1674::3:3397:1492:1675|h[Fangs of the Devourer]|h|r1false11016nil1"] = {
 			34689.32, -- [1]
@@ -5354,45 +5706,35 @@ DugisCharacterCache = {
 			15659.47, -- [1]
 			886, -- [2]
 		},
-		["CalculateScore|cffa335ee|Hitem:141492:5426:130247::::::110:260::3:3:1808:1477:3336:::|h[Dingy Suramar Mercantile Signet]|h|r2false110INVTYPE_FINGERnil1"] = {
-			16673.39, -- [1]
-			200, -- [2]
-		},
-		["CalculateScore|cff1eff00|Hitem:121493::::::::110:259:512:11:1:664:110:::|h[Liastrin's Wine Taster]|h|r1false110INVTYPE_TRINKETnil1"] = {
-			12727.26, -- [1]
-			637, -- [2]
-		},
 		["CalculateScore|cff0070dd|Hitem:139739::::::::110:259::11:2:3386:3383:::|h[Chestguard of the Uncrowned]|h|r1false110INVTYPE_CHESTnil1"] = {
 			18836.17, -- [1]
 			1077, -- [2]
-		},
-		["CalculateScore|cff1eff00|Hitem:121021::::::::110:260:512::2:1812:1683:110:::|h[Llothien Hood of the Peerless]|h|r2false110INVTYPE_HEADnil1"] = {
-			14952.38, -- [1]
-			676, -- [2]
-		},
-		["CalculateScore|cff0070dd|Hitem:134443:5444:130218::::::110:261::1:3:1826:1808:1457:::|h[Gravelworn Handguards]|h|r3false110INVTYPE_HANDnil1"] = {
-			12199.35, -- [1]
-			640, -- [2]
-		},
-		["CalculateScore|cff1eff00|Hitem:121165::::::::110:260:512::2:1812:1706:110:::|h[Hrydshal Wristwraps of the Aurora]|h|r2false110INVTYPE_WRISTnil1"] = {
-			3221.94, -- [1]
-			0, -- [2]
-		},
-		["CalculateScore|cff9d9d9d|Hitem:1782::::::::110:259::::::|h[Cross-Stitched Cloak]|h|r1false110INVTYPE_CLOAKnil1"] = {
-			0, -- [1]
-			0, -- [2]
-		},
-		["CalculateScore|cff1eff00|Hitem:121074::::::::110:260:512::2:1812:1702:110:::|h[Icepine Britches of the Feverflare]|h|r2false110INVTYPE_LEGSnil1"] = {
-			14794.99, -- [1]
-			676, -- [2]
 		},
 		["CalculateScore|cff0070dd|Hitem:137510::130222::::::110:261::2:3:1726:1808:1477:::|h[Charskin Mantle]|h|r3false110INVTYPE_SHOULDERnil1"] = {
 			14973.72, -- [1]
 			771, -- [2]
 		},
-		["CalculateScore|cffffffff|Hitem:139739::::::::110:261::11:2:3386:3383:::|h[]|h|r3false110INVTYPE_CHESTnil1"] = {
-			18278.69, -- [1]
-			1077, -- [2]
+		["CalculateScore|cffffffff|Hitem:37606::::::::110:259::::::|h[Penny Pouch]|h|r1false110INVTYPE_BAGnil1"] = {
+			-2, -- [1]
+		},
+		["CalculateScore|cff1eff00|Hitem:121021::::::::110:260:512::2:1812:1683:110:::|h[Llothien Hood of the Peerless]|h|r2false110INVTYPE_HEADnil1"] = {
+			14952.38, -- [1]
+			676, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:134195::::::::110:260::36:3:3432:1497:1674:::|h[Biornskin Gloves]|h|r2false110INVTYPE_HANDnil1"] = {
+			17395.48, -- [1]
+			846, -- [2]
+		},
+		["CalculateScore|cff9d9d9d|Hitem:121398::::::::110:259::::::|h[Realm of Companions]|h|r1false110INVTYPE_SHOULDERnil1"] = {
+			0, -- [1]
+			0, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:134154::::::::110:261::23:3:1727:1502:1813:::|h[Steelgazer Hide Mantle]|h|r3false110INVTYPE_SHOULDERnil1"] = {
+			14915.41, -- [1]
+			886, -- [2]
+		},
+		["CalculateScore|cffffffff|Hitem:39354::::::::110:259::::::|h[Light Parchment]|h|r1false110nilnil1"] = {
+			-2, -- [1]
 		},
 		["CalculateScore|cffffffff|Hitem:39505::::::::110:259::::::|h[Virtuoso Inking Set]|h|r1false110nilnil1"] = {
 			-2, -- [1]
@@ -5413,35 +5755,35 @@ DugisCharacterCache = {
 			11426.45, -- [1]
 			0, -- [2]
 		},
-		["CalculateScore|cffa335ee|Hitem:117361::::::::110:259::1:1:1800:::|h[Bitterest Balebrew Charm]|h|r1false110INVTYPE_TRINKETnil1"] = {
-			0, -- [1]
-			0, -- [2]
+		["CalculateScore|cff0070dd|Hitem:134330::::::::110:261::29:3:3396:1492:3339:::|h[Mana-Saber Hide Shoulders]|h|r3false110INVTYPE_SHOULDERnil1"] = {
+			15386.44, -- [1]
+			807, -- [2]
 		},
 		["CalculateScore|cffa335ee|Hitem:134154::::::::110:260::23:3:1727:1502:1813:::|h[Steelgazer Hide Mantle]|h|r2false110INVTYPE_SHOULDERnil1"] = {
 			17834.79, -- [1]
 			886, -- [2]
 		},
-		["CalculateScore|cff0070dd|Hitem:134330::::::::110:261::29:3:3396:1492:3339:::|h[Mana-Saber Hide Shoulders]|h|r3false110INVTYPE_SHOULDERnil1"] = {
-			15386.44, -- [1]
+		["CalculateScore|cff0070dd|Hitem:134330::::::::110:260::29:3:3396:1492:3339:::|h[Mana-Saber Hide Shoulders]|h|r2false110INVTYPE_SHOULDERnil1"] = {
+			16812.85, -- [1]
 			807, -- [2]
 		},
 		["CalculateScore|cff1eff00|Hitem:121165::::::::110:261:512::2:1812:1706:110:::|h[Hrydshal Wristwraps of the Aurora]|h|r3false110INVTYPE_WRISTnil1"] = {
 			2629.18, -- [1]
 			0, -- [2]
 		},
-		["CalculateScore|cffa335ee|Hitem:134154::::::::110:261::23:3:1727:1502:1813:::|h[Steelgazer Hide Mantle]|h|r3false110INVTYPE_SHOULDERnil1"] = {
-			14915.41, -- [1]
-			886, -- [2]
+		["CalculateScore|cff0070dd|Hitem:128449::::::::110:260::14::::|h[Saberstalkers Tabard]|h|r2false110INVTYPE_TABARDnil1"] = {
+			0, -- [1]
+			0, -- [2]
 		},
-		["CalculateScore|cffffffff|Hitem:37606::::::::110:259::::::|h[Penny Pouch]|h|r1false110INVTYPE_BAGnil1"] = {
-			-2, -- [1]
+		["CalculateScore|cffa335ee|Hitem:117361::::::::110:259::1:1:1800:::|h[Bitterest Balebrew Charm]|h|r1false110INVTYPE_TRINKETnil1"] = {
+			0, -- [1]
+			0, -- [2]
 		},
 		["CalculateScore|cff1eff00|Hitem:121112::::::::110:259:512::2:1812:1716:110:::|h[Valarsmidd Gauntlets of the Harmonious]|h|r1false110INVTYPE_HANDnil1"] = {
 			-3, -- [1]
 		},
-		["CalculateScore|cffa335ee|Hitem:134203::130218::::::110:259::30:5:3397:1808:605:1497:3336:::|h[Three-Toed Rabbit Foot]|h|r1false110INVTYPE_TRINKETnil1"] = {
-			19400.5, -- [1]
-			1073, -- [2]
+		["CalculateScore|cff0070dd|Hitem:45991::::::::110:259::1::::|h[Bone Fishing Pole]|h|r1false11016nil1"] = {
+			-3, -- [1]
 		},
 		["CalculateScore|cffa335ee|Hitem:121012::::::::110:260::30:4:3397:1689:1627:3336:::|h[Azurewing Defender's Drape of the Peerless]|h|r2false110INVTYPE_CLOAKnil1"] = {
 			13104.11, -- [1]
@@ -5459,9 +5801,21 @@ DugisCharacterCache = {
 			23219.02, -- [1]
 			1128, -- [2]
 		},
+		["CalculateScore|cffa335ee|Hitem:134203::130218::::::110:259::30:5:3397:1808:605:1497:3336:::|h[Three-Toed Rabbit Foot]|h|r1false110INVTYPE_TRINKETnil1"] = {
+			19400.5, -- [1]
+			1073, -- [2]
+		},
+		["CalculateScore|cff1eff00|Hitem:121493::::::::110:259:512:11:1:664:110:::|h[Liastrin's Wine Taster]|h|r1false110INVTYPE_TRINKETnil1"] = {
+			12727.26, -- [1]
+			637, -- [2]
+		},
 		["CalculateScore|cffa335ee|Hitem:134429::::::::110:259::23:3:1727:1492:1813:::|h[Grove Darkener's Treads]|h|r1false110INVTYPE_FEETnil1"] = {
 			16850.54, -- [1]
 			886, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:134238::::::::110:259::42:3:3474:1507:1674:::|h[Brinewashed Leather Pants]|h|r1false110INVTYPE_LEGSnil1"] = {
+			23310.76, -- [1]
+			1238, -- [2]
 		},
 		["CalculateScore|cff0070dd|Hitem:134443::130218::::::110:260::1:3:1826:1808:1457:::|h[Gravelworn Handguards]|h|r2false110INVTYPE_HANDnil1"] = {
 			14615.84, -- [1]
@@ -5475,45 +5829,32 @@ DugisCharacterCache = {
 			13997.84, -- [1]
 			640, -- [2]
 		},
-		["CalculateScore|cff0070dd|Hitem:139743::::::::110:259::14:2:3386:3383:::|h[Leggings of the Uncrowned]|h|r1false110INVTYPE_LEGSnil1"] = {
-			21891.3, -- [1]
-			1077, -- [2]
-		},
-		["CalculateScore|cff0070dd|Hitem:134454::::::::110:260::1:2:1826:1457:::|h[Spaulders of Unstable Experiments]|h|r2false110INVTYPE_SHOULDERnil1"] = {
-			13842.89, -- [1]
-			640, -- [2]
-		},
-		["CalculateScore|cffa335ee|Hitem:143902::::::::110:260::1:1:3493:::|h[Wicked Witch's Signet]|h|r2false110INVTYPE_FINGERnil1"] = {
-			10880.52, -- [1]
-			0, -- [2]
-		},
 		["CalculateScore|cff0070dd|Hitem:129997::::::::110:260::11::::|h[Valor-Bound Legwraps]|h|r2false110INVTYPE_LEGSnil1"] = {
 			17659.01, -- [1]
 			814, -- [2]
 		},
-		["CalculateScore|cffe6cc80|Hitem:128476::141277:141291:::::110:260:256:9::67:3:3394:1482:3339:3:1812:1442:1809:|h[Fangs of the Devourer]|h|r2false11016nil1"] = {
-			27182.92, -- [1]
-			758, -- [2]
+		["CalculateScore|cff1eff00|Hitem:121095::::::::110:259:512::2:1812:1703:110:::|h[Hillstride Belt of the Feverflare]|h|r1false110INVTYPE_WAISTnil1"] = {
+			-3, -- [1]
 		},
 		["CalculateScore|cffe6cc80|Hitem:128870::143694:141262:136718::::110:259:256:9:1:741:611:3:3473:1502:1674:3:3432:1507:3336:3:1726:1487:3336|h[The Kingslayers]|h|r1false11016nil1"] = {
 			107110.02, -- [1]
 			4174, -- [2]
 		},
-		["CalculateScore|cffe6cc80|Hitem:128479::::::::110:261:256:::67:::|h[Fangs of the Devourer]|h|r3false11017nil1"] = {
-			4615.4974, -- [1]
-			219, -- [2]
+		["CalculateScore|cffa335ee|Hitem:141585::::::::110:259::26:1:1497:::|h[Six-Feather Fan]|h|r1false110INVTYPE_TRINKETnil1"] = {
+			13154.98, -- [1]
+			1073, -- [2]
 		},
-		["CalculateScore|cffa335ee|Hitem:134238::::::::110:259::42:3:3474:1507:1674:::|h[Brinewashed Leather Pants]|h|r1false110INVTYPE_LEGSnil1"] = {
-			23310.76, -- [1]
+		["CalculateScore|cffa335ee|Hitem:134238::::::::110:260::42:3:3474:1507:1674:::|h[Brinewashed Leather Pants]|h|r2false110INVTYPE_LEGSnil1"] = {
+			25291.84, -- [1]
 			1238, -- [2]
 		},
 		["CalculateScore|cff0070dd|Hitem:133617::::::::110:260::1:3:1826:1462:3339:::|h[Cruel Vice Grips]|h|r2false110INVTYPE_HANDnil1"] = {
 			14503.86, -- [1]
 			670, -- [2]
 		},
-		["CalculateScore|cff1eff00|Hitem:121053::::::::110:260:512::2:1812:1692:110:::|h[Temporal Scholar's Sandals of the Fireflash]|h|r2false110INVTYPE_FEETnil1"] = {
-			4213.15, -- [1]
-			0, -- [2]
+		["CalculateScore|cff0070dd|Hitem:136975::::::::110:259::2:2:1726:1477:::|h[Hunger of the Pack]|h|r1false110INVTYPE_TRINKETnil1"] = {
+			18532.3, -- [1]
+			977, -- [2]
 		},
 		["CalculateScore|cff0070dd|Hitem:137510:5442:130222::::::110:261::2:3:1726:1808:1477:::|h[Charskin Mantle]|h|r3false110INVTYPE_SHOULDERnil1"] = {
 			14973.72, -- [1]
@@ -5527,82 +5868,81 @@ DugisCharacterCache = {
 			6191.44, -- [1]
 			0, -- [2]
 		},
-		["CalculateScore|cff0070dd|Hitem:136975::::::::110:259::2:2:1726:1477:::|h[Hunger of the Pack]|h|r1false110INVTYPE_TRINKETnil1"] = {
-			18532.3, -- [1]
-			977, -- [2]
+		["CalculateScore|cffa335ee|Hitem:139073::::::::110:259::36:3:3432:1497:1674:::|h[Tranquil Bough Cinch]|h|r1false110INVTYPE_WAISTnil1"] = {
+			14348.49, -- [1]
+			846, -- [2]
 		},
-		["CalculateScore|cff0070dd|Hitem:134492:5295:130217::::::110:259::2:4:1726:1808:1482:3339:::|h[Hatecoil Commander's Amulet]|h|r1false110INVTYPE_NECKnil1"] = {
-			8579.74, -- [1]
+		["CalculateScore|cffe6cc80|Hitem:128479::::::::110:261:256:::67:::|h[Fangs of the Devourer]|h|r3false11017nil1"] = {
+			4615.4974, -- [1]
+			219, -- [2]
+		},
+		["CalculateScore|cff1eff00|Hitem:121053::::::::110:260:512::2:1812:1692:110:::|h[Temporal Scholar's Sandals of the Fireflash]|h|r2false110INVTYPE_FEETnil1"] = {
+			4213.15, -- [1]
 			0, -- [2]
-		},
-		["CalculateScore|cffa335ee|Hitem:121292::::::::110:260::36:3:3432:1512:3337:::|h[Dreadhide Bracers]|h|r2false110INVTYPE_WRISTnil1"] = {
-			14386.16, -- [1]
-			729, -- [2]
 		},
 		["CalculateScore|cff1eff00|Hitem:121048::::::::110:260:512::2:1812:1688:110:::|h[Temporal Scholar's Cord of the Peerless]|h|r2false110INVTYPE_WAISTnil1"] = {
 			4479.12, -- [1]
 			0, -- [2]
 		},
+		["CalculateScore|cff0070dd|Hitem:139743::::::::110:261::14:2:3386:3383:::|h[Leggings of the Uncrowned]|h|r3false110INVTYPE_LEGSnil1"] = {
+			19100.43, -- [1]
+			1077, -- [2]
+		},
 		["CalculateScore|cffa335ee|Hitem:134405:5432:::::::110:261::23:3:1727:1492:1813:::|h[Cloak of Fading Echoes]|h|r3false110INVTYPE_CLOAKnil1"] = {
 			12993.55, -- [1]
 			815, -- [2]
 		},
-		["CalculateScore|cff0070dd|Hitem:134455::::::::110:261::1:2:1826:1457:::|h[Sinister Ashfall Cord]|h|r3false110INVTYPE_WAISTnil1"] = {
-			12359.6, -- [1]
-			640, -- [2]
-		},
-		["CalculateScore|cff1eff00|Hitem:121095::::::::110:259:512::2:1812:1703:110:::|h[Hillstride Belt of the Feverflare]|h|r1false110INVTYPE_WAISTnil1"] = {
+		["CalculateScore|cff9d9d9d|Hitem:121384::::::::110:260::::::|h[Elemental Bindings]|h|r2false110INVTYPE_WRISTnil1"] = {
 			-3, -- [1]
 		},
 		["CalculateScore|cff9d9d9d|Hitem:121338::::::::110:259::::::|h[Bent-Blade Axe]|h|r1false11016nil1"] = {
 			-3, -- [1]
 		},
-		["CalculateScore|cff0070dd|Hitem:128885::::::::110:260::13:5:596:600:689:1690:3408:::|h[Dreadleather Footpads of the Fireflash]|h|r2false110INVTYPE_FEETnil1"] = {
-			14827.17, -- [1]
-			702, -- [2]
+		["CalculateScore|cff0070dd|Hitem:134197::::::::110:260::1:3:1826:1472:3339:::|h[Biornskin Vest]|h|r2false110INVTYPE_CHESTnil1"] = {
+			19352, -- [1]
+			894, -- [2]
 		},
 		["CalculateScore|cff0070dd|Hitem:134492:5295:130217::::::110:261::2:4:1726:1808:1482:3339:::|h[Hatecoil Commander's Amulet]|h|r3false110INVTYPE_NECKnil1"] = {
 			10772.6, -- [1]
 			0, -- [2]
 		},
-		["CalculateScore|cff9d9d9d|Hitem:121348::::::::110:260::::::|h[Sunbleached Wristwraps]|h|r2false110INVTYPE_WRISTnil1"] = {
-			0, -- [1]
+		["CalculateScore|cff1eff00|Hitem:121215::::::::110:260:512::2:1812:1693:110:::|h[Crescent Vale Handwraps of the Fireflash]|h|r2false110INVTYPE_HANDnil1"] = {
+			4175.43, -- [1]
 			0, -- [2]
 		},
-		["CalculateScore|cff0070dd|Hitem:33820::::::::110:259::1::::|h[Weather-Beaten Fishing Hat]|h|r1false110INVTYPE_HEADnil1"] = {
-			18.99, -- [1]
-			0, -- [2]
+		["CalculateScore|cff0070dd|Hitem:134455::::::::110:261::1:2:1826:1457:::|h[Sinister Ashfall Cord]|h|r3false110INVTYPE_WAISTnil1"] = {
+			12359.6, -- [1]
+			640, -- [2]
 		},
 		["CalculateScore|cff1eff00|Hitem:121659::::::::110:260:512:11:1:767:110:::|h[Drogstitch Footwraps]|h|r2false110INVTYPE_FEETnil1"] = {
 			10505.51, -- [1]
 			484, -- [2]
 		},
-		["CalculateScore|cffa335ee|Hitem:139073::::::::110:259::36:3:3432:1497:1674:::|h[Tranquil Bough Cinch]|h|r1false110INVTYPE_WAISTnil1"] = {
-			14348.49, -- [1]
-			846, -- [2]
+		["CalculateScore|cff0070dd|Hitem:139111::::::::110:261::26:3:1825:1472:1675:::|h[Rivermane Cord]|h|r3false110INVTYPE_WAISTnil1"] = {
+			11821.75, -- [1]
+			670, -- [2]
 		},
 		["CalculateScore|cff0070dd|Hitem:139739::::::::110:260::11:2:3386:3383:::|h[Chestguard of the Uncrowned]|h|r2false110INVTYPE_CHESTnil1"] = {
 			21749.86, -- [1]
 			1077, -- [2]
 		},
-		["CalculateScore|cffe6cc80|Hitem:128870::141291:141288:136683::::110:259:256:9:1:741:235:3:1812:1442:1809:3:1812:1442:1809:|h[The Kingslayers]|h|r1false11016nil1"] = {
-			27771.24, -- [1]
-			914, -- [2]
+		["CalculateScore|cff0070dd|Hitem:128885::::::::110:260::13:5:596:600:689:1690:3408:::|h[Dreadleather Footpads of the Fireflash]|h|r2false110INVTYPE_FEETnil1"] = {
+			14827.17, -- [1]
+			702, -- [2]
 		},
 		["CalculateScore|cff0070dd|Hitem:128877::::::::110:260::13:3:1705:3392:3408:::|h[Warhide Footpads of the Aurora]|h|r2false110INVTYPE_FEETnil1"] = {
 			9585.46, -- [1]
 			441, -- [2]
 		},
-		["CalculateScore|cff1eff00|Hitem:121215::::::::110:261:512::2:1812:1693:110:::|h[Crescent Vale Handwraps of the Fireflash]|h|r3false110INVTYPE_HANDnil1"] = {
-			3504.8, -- [1]
-			0, -- [2]
+		["CalculateScore|cff9d9d9d|Hitem:121361::::::::110:260::::::|h[Rust-Encrusted Coif]|h|r2false110INVTYPE_HEADnil1"] = {
+			-3, -- [1]
 		},
 		["CalculateScore|cff1eff00|Hitem:121171::::::::110:259:512::2:1812:1693:110:::|h[Kal'delar Pauldrons of the Fireflash]|h|r1false110INVTYPE_SHOULDERnil1"] = {
 			-3, -- [1]
 		},
-		["CalculateScore|cffe6cc80|Hitem:134552::::::::110:260:256:::698:::|h[The Dreadblades]|h|r2false11017nil1"] = {
-			6055.963, -- [1]
-			219, -- [2]
+		["CalculateScore|cffe6cc80|Hitem:128870::141291:141288:136683::::110:259:256:9:1:741:235:3:1812:1442:1809:3:1812:1442:1809:|h[The Kingslayers]|h|r1false11016nil1"] = {
+			27771.24, -- [1]
+			914, -- [2]
 		},
 		["CalculateScore|cffe6cc80|Hitem:128870::143694:141262:136718::::110:259:256:9:1:741:235:3:3473:1502:1674:3:3432:1507:3336:3:1726:1487:3336|h[The Kingslayers]|h|r1false11016nil1"] = {
 			107110.02, -- [1]
@@ -5612,43 +5952,44 @@ DugisCharacterCache = {
 			13607.27, -- [1]
 			729, -- [2]
 		},
-		["CalculateScore|cffe6cc80|Hitem:128476::141289:141291:::::110:260:256:9::67:3:1812:1442:1809:3:1812:1442:1809:|h[Fangs of the Devourer]|h|r2false11016nil1"] = {
-			24859.06, -- [1]
-			684, -- [2]
+		["CalculateScore|cffe6cc80|Hitem:128872::132846:137359:::::110:261:256:9::695:3:1793:1615:1809:2:1826:1457:|h[The Dreadblades]|h|r3false11016nil1"] = {
+			31851.06, -- [1]
+			758, -- [2]
 		},
 		["CalculateScore|cff9d9d9d|Hitem:121347::::::::110:260::::::|h[Rust-Encrusted Wristguards]|h|r2false110INVTYPE_WRISTnil1"] = {
 			-3, -- [1]
 		},
-		["CalculateScore|cffe6cc80|Hitem:128870::141273:141288:136683::::110:261:256:9:1:741:229:3:1825:1472:1675:3:1812:1442:1809:|h[The Kingslayers]|h|r3false11016nil1"] = {
-			40179.22, -- [1]
-			984, -- [2]
+		["CalculateScore|cff1eff00|Hitem:121215::::::::110:261:512::2:1812:1693:110:::|h[Crescent Vale Handwraps of the Fireflash]|h|r3false110INVTYPE_HANDnil1"] = {
+			3504.8, -- [1]
+			0, -- [2]
 		},
 		["CalculateScore|cff1eff00|Hitem:121563::::::::110:261:512:11:1:664:109:::|h[Soulflayer's Collar of Bones]|h|r3false110INVTYPE_NECKnil1"] = {
 			6596.15, -- [1]
 			0, -- [2]
 		},
-		["CalculateScore|cffffffff|Hitem:139739::::::::110:259::11:2:3386:3383:::|h[]|h|r1false110INVTYPE_CHESTnil1"] = {
-			18836.17, -- [1]
-			1077, -- [2]
-		},
-		["CalculateScore|cffffffff|Hitem:139739::::::::110:260::11:2:3386:3383:::|h[]|h|r2false110INVTYPE_CHESTnil1"] = {
-			21749.86, -- [1]
-			1077, -- [2]
+		["CalculateScore|cffe6cc80|Hitem:134552::::::::110:260:256:::698:::|h[The Dreadblades]|h|r2false11017nil1"] = {
+			6055.963, -- [1]
+			219, -- [2]
 		},
 		["CalculateScore|cffa335ee|Hitem:139236::::::::110:261::3:2:1807:1472:::|h[Grubby Silver Ring]|h|r3false110INVTYPE_FINGERnil1"] = {
 			10477.79, -- [1]
 			0, -- [2]
 		},
+		["CalculateScore|cff0070dd|Hitem:121804::::::::110:261::11::::|h[Cloak of the Everliving Keeper]|h|r3false110INVTYPE_CLOAKnil1"] = {
+			8742.06, -- [1]
+			458, -- [2]
+		},
 		["CalculateScore|cffe6cc80|Hitem:128872::132846:132815:::::110:260:256:9::695:3:1793:1615:1809:3:664:1581:1809:|h[The Dreadblades]|h|r2false11016nil1"] = {
 			24616.86, -- [1]
 			678, -- [2]
 		},
-		["CalculateScore|cff0070dd|Hitem:134532::::::::110:261::1:3:1826:1467:3339:::|h[Band of Fused Coral]|h|r3false110INVTYPE_FINGERnil1"] = {
-			8061.5, -- [1]
+		["CalculateScore|cff1eff00|Hitem:121106::::::::110:260:512::2:1812:1708:110:::|h[Hagfeather Leggings of the Aurora]|h|r2false110INVTYPE_LEGSnil1"] = {
+			5879.24, -- [1]
 			0, -- [2]
 		},
-		["CalculateScore|cff9d9d9d|Hitem:121361::::::::110:260::::::|h[Rust-Encrusted Coif]|h|r2false110INVTYPE_HEADnil1"] = {
-			-3, -- [1]
+		["CalculateScore|cff0070dd|Hitem:133621::::::::110:260::2:2:1726:1477:::|h[Adorned Guardian's Bracers]|h|r2false110INVTYPE_WRISTnil1"] = {
+			11949.97, -- [1]
+			578, -- [2]
 		},
 		["CalculateScore|cff1eff00|Hitem:121563::::::::110:260:512:11:1:664:109:::|h[Soulflayer's Collar of Bones]|h|r2false110INVTYPE_NECKnil1"] = {
 			7820.51, -- [1]
@@ -5658,29 +5999,29 @@ DugisCharacterCache = {
 			17485.69, -- [1]
 			929, -- [2]
 		},
-		["CalculateScore|cffa335ee|Hitem:141538:5432:130217::::::110:260::3:5:41:1808:3466:1477:3336:::|h[Giant's Handkerchief]|h|r2false110INVTYPE_CLOAKnil1"] = {
-			19028.29, -- [1]
+		["CalculateScore|cffa335ee|Hitem:141538:5432:130219::::::110:260::3:5:41:1808:3466:1477:3336:::|h[Giant's Handkerchief]|h|r2false110INVTYPE_CLOAKnil1"] = {
+			19303.29, -- [1]
 			989, -- [2]
 		},
-		["CalculateScore|cffa335ee|Hitem:139101::::::::110:259::36:3:3432:1502:3336:::|h[An'she's Pendant]|h|r1false110INVTYPE_NECKnil1"] = {
-			8504.59, -- [1]
-			0, -- [2]
+		["CalculateScore|cff0070dd|Hitem:136776::::::::110:260::2:2:1726:1477:::|h[Bjorn's Hunting Strap]|h|r2false110INVTYPE_WAISTnil1"] = {
+			16180.59, -- [1]
+			771, -- [2]
 		},
 		["CalculateScore|cffa335ee|Hitem:121310::::::::110:260::30:4:3397:607:1497:3336:::|h[Nightmare Thorn]|h|r2false110INVTYPE_TRINKETnil1"] = {
 			20546.47, -- [1]
 			1073, -- [2]
 		},
-		["CalculateScore|cff0070dd|Hitem:133621::::::::110:260::2:2:1726:1477:::|h[Adorned Guardian's Bracers]|h|r2false110INVTYPE_WRISTnil1"] = {
-			11949.97, -- [1]
-			578, -- [2]
-		},
-		["CalculateScore|cff0070dd|Hitem:128879::::::::110:259::13:3:1714:3392:3408:::|h[Warhide Mask of the Harmonious]|h|r1false110INVTYPE_HEADnil1"] = {
-			7632.99, -- [1]
-			369, -- [2]
-		},
-		["CalculateScore|cff9d9d9d|Hitem:121358::::::::110:261::::::|h[Sunbleached Handwraps]|h|r3false110INVTYPE_HANDnil1"] = {
-			0, -- [1]
+		["CalculateScore|cffa335ee|Hitem:139101::::::::110:259::36:3:3432:1502:3336:::|h[An'she's Pendant]|h|r1false110INVTYPE_NECKnil1"] = {
+			8504.59, -- [1]
 			0, -- [2]
+		},
+		["CalculateScore|cffe6cc80|Hitem:128872::136718:137543:141270::::110:260:256:9:1:742:698:3:1726:1487:3339:2:1726:1477:3:3396:1487:1675|h[The Dreadblades]|h|r2false11016nil1"] = {
+			41589.48, -- [1]
+			1232, -- [2]
+		},
+		["CalculateScore|cff0070dd|Hitem:134291::::::::110:260::28:4:3395:603:1482:1675:::|h[Nightborne's Hunting Horn]|h|r2false110INVTYPE_TRINKETnil1"] = {
+			17911.89, -- [1]
+			933, -- [2]
 		},
 		["CalculateScore|cff0070dd|Hitem:128883::::::::110:261::13:3:1682:3392:3408:::|h[Warhide Bindings of the Quickblade]|h|r3false110INVTYPE_WRISTnil1"] = {
 			7552.92, -- [1]
@@ -5690,8 +6031,8 @@ DugisCharacterCache = {
 			16302.83, -- [1]
 			807, -- [2]
 		},
-		["CalculateScore|cff0070dd|Hitem:134291::::::::110:260::28:4:3395:603:1482:1675:::|h[Nightborne's Hunting Horn]|h|r2false110INVTYPE_TRINKETnil1"] = {
-			17911.89, -- [1]
+		["CalculateScore|cff0070dd|Hitem:134291::::::::110:261::28:4:3395:603:1482:1675:::|h[Nightborne's Hunting Horn]|h|r3false110INVTYPE_TRINKETnil1"] = {
+			15273.66, -- [1]
 			933, -- [2]
 		},
 		["CalculateScore|cff0070dd|Hitem:134406::::::::110:259::2:3:1726:41:1477:::|h[Mainsail Cloak]|h|r1false110INVTYPE_CLOAKnil1"] = {
@@ -5702,8 +6043,8 @@ DugisCharacterCache = {
 			16080.82, -- [1]
 			886, -- [2]
 		},
-		["CalculateScore|cff0070dd|Hitem:134492::130222::::::110:260::2:4:1726:1808:1482:3339:::|h[Hatecoil Commander's Amulet]|h|r2false110INVTYPE_NECKnil1"] = {
-			12236.84, -- [1]
+		["CalculateScore|cff0070dd|Hitem:33820::::::::110:259::1::::|h[Weather-Beaten Fishing Hat]|h|r1false110INVTYPE_HEADnil1"] = {
+			18.99, -- [1]
 			0, -- [2]
 		},
 		["CalculateScore|cff1eff00|Hitem:121040::::::::110:260:512::2:1812:1692:110:::|h[Faronaar Chain Belt of the Fireflash]|h|r2false110INVTYPE_WAISTnil1"] = {
@@ -5713,48 +6054,48 @@ DugisCharacterCache = {
 			4670.98, -- [1]
 			0, -- [2]
 		},
-		["CalculateScore|cff0070dd|Hitem:133221::::::::110:259:512:22:1:615:110:::|h[Helm of Numberless Shadows]|h|r1false110INVTYPE_HEADnil1"] = {
-			17656.3, -- [1]
-			981, -- [2]
-		},
-		["CalculateScore|cff0070dd|Hitem:121804::::::::110:261::11::::|h[Cloak of the Everliving Keeper]|h|r3false110INVTYPE_CLOAKnil1"] = {
-			8742.06, -- [1]
-			458, -- [2]
-		},
-		["CalculateScore|cff0070dd|Hitem:134532::::::::110:260::1:3:1826:1467:3339:::|h[Band of Fused Coral]|h|r2false110INVTYPE_FINGERnil1"] = {
-			9749.7, -- [1]
+		["CalculateScore|cff0070dd|Hitem:134532:5426:::::::110:260::1:3:1826:1467:3339:::|h[Band of Fused Coral]|h|r2false110INVTYPE_FINGERnil1"] = {
+			10804.2, -- [1]
 			0, -- [2]
 		},
-		["CalculateScore|cffe6cc80|Hitem:128870::141291::::::110:260:256:9:1:741:230:3:1812:3126:1809::|h[The Kingslayers]|h|r2false11016nil1"] = {
-			16790.627, -- [1]
-			462, -- [2]
+		["CalculateScore|cff0070dd|Hitem:128879::::::::110:259::13:3:1714:3392:3408:::|h[Warhide Mask of the Harmonious]|h|r1false110INVTYPE_HEADnil1"] = {
+			7632.99, -- [1]
+			369, -- [2]
 		},
-		["CalculateScore|cff0070dd|Hitem:45991::::::::110:260::1::::|h[Bone Fishing Pole]|h|r2false11016nil1"] = {
+		["CalculateScore|cffa335ee|Hitem:134530::::::::110:260::23:3:1727:1492:1813:::|h[Loop of Vitriolic Intent]|h|r2false110INVTYPE_FINGERnil1"] = {
+			10838.81, -- [1]
+			0, -- [2]
+		},
+		["CalculateScore|cff0070dd|Hitem:134492::130222::::::110:260::2:4:1726:1808:1482:3339:::|h[Hatecoil Commander's Amulet]|h|r2false110INVTYPE_NECKnil1"] = {
+			12236.84, -- [1]
+			0, -- [2]
+		},
+		["CalculateScore|cff0070dd|Hitem:45991::::::::110:261::1::::|h[Bone Fishing Pole]|h|r3false11016nil1"] = {
 			-3, -- [1]
 		},
 		["CalculateScore|cff1eff00|Hitem:121109::::::::110:259:512::2:1812:1680:110:::|h[Hagfeather Shoulderpads of the Quickblade]|h|r1false110INVTYPE_SHOULDERnil1"] = {
 			4674.46, -- [1]
 			0, -- [2]
 		},
-		["CalculateScore|cff1eff00|Hitem:121125::::::::110:260:512::2:1812:604:110:::|h[Rune-Etched Bark]|h|r2false110INVTYPE_TRINKETnil1"] = {
-			3774.41, -- [1]
+		["CalculateScore|cff0070dd|Hitem:134532::::::::110:260::1:3:1826:1467:3339:::|h[Band of Fused Coral]|h|r2false110INVTYPE_FINGERnil1"] = {
+			9749.7, -- [1]
 			0, -- [2]
 		},
 		["CalculateScore|cffe6cc80|Hitem:128872::136718:137543:142064::::110:260:256:9:1:742:698:3:1726:1487:3339:2:1726:1477:|h[The Dreadblades]|h|r2false11016nil1"] = {
 			41589.48, -- [1]
 			1232, -- [2]
 		},
-		["CalculateScore|cff0070dd|Hitem:136776::::::::110:260::2:2:1726:1477:::|h[Bjorn's Hunting Strap]|h|r2false110INVTYPE_WAISTnil1"] = {
-			16180.59, -- [1]
-			771, -- [2]
+		["CalculateScore|cffa335ee|Hitem:141538:5432:130217::::::110:260::3:5:41:1808:3466:1477:3336:::|h[Giant's Handkerchief]|h|r2false110INVTYPE_CLOAKnil1"] = {
+			19028.29, -- [1]
+			989, -- [2]
 		},
-		["CalculateScore|cffe6cc80|Hitem:128872::136718:137543:141270::::110:260:256:9:1:742:698:3:1726:1487:3339:2:1726:1477:3:3396:1487:1675|h[The Dreadblades]|h|r2false11016nil1"] = {
-			41589.48, -- [1]
-			1232, -- [2]
+		["CalculateScore|cffe6cc80|Hitem:128870::141291::::::110:260:256:9:1:741:230:3:1812:3126:1809::|h[The Kingslayers]|h|r2false11016nil1"] = {
+			16790.627, -- [1]
+			462, -- [2]
 		},
-		["CalculateScore|cff9d9d9d|Hitem:121398::::::::110:260::::::|h[Realm of Companions]|h|r2false110INVTYPE_SHOULDERnil1"] = {
-			0, -- [1]
-			0, -- [2]
+		["CalculateScore|cff0070dd|Hitem:134159::::::::110:261::30:4:3397:603:1492:1675:::|h[Rocksunder Lucky Statue]|h|r3false110INVTYPE_TRINKETnil1"] = {
+			16467.61, -- [1]
+			1023, -- [2]
 		},
 		["CalculateScore|cff1eff00|Hitem:121041::::::::110:260:512::2:1812:1687:110:::|h[Faronaar Chain Bracers of the Peerless]|h|r2false110INVTYPE_WRISTnil1"] = {
 			-3, -- [1]
@@ -5762,6 +6103,26 @@ DugisCharacterCache = {
 		["CalculateScore|cffa335ee|Hitem:139334::::::::110:259::3:2:1807:1472:::|h[Nature's Call]|h|r1false110INVTYPE_TRINKETnil1"] = {
 			5384.7, -- [1]
 			0, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:139745::::::::110:259::14:2:3385:3384:::|h[Belt of the Uncrowned]|h|r1false110INVTYPE_WAISTnil1"] = {
+			16842.98, -- [1]
+			886, -- [2]
+		},
+		["CalculateScore|cff9d9d9d|Hitem:121368::::::::110:260::1::::|h[Sunbleached Shirt]|h|r2false110INVTYPE_CHESTnil1"] = {
+			0, -- [1]
+			0, -- [2]
+		},
+		["CalculateScore|cff0070dd|Hitem:121739::::::::110:260::::::|h[Felinus Manus]|h|r2false110INVTYPE_HANDnil1"] = {
+			13137.68, -- [1]
+			611, -- [2]
+		},
+		["CalculateScore|cff0070dd|Hitem:134532::::::::110:261::1:3:1826:1467:3339:::|h[Band of Fused Coral]|h|r3false110INVTYPE_FINGERnil1"] = {
+			8061.5, -- [1]
+			0, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:134286:5882:::::::110:259::29:3:3396:1512:3337:::|h[Swordsinger's Shoulders]|h|r1false110INVTYPE_SHOULDERnil1"] = {
+			17185.08, -- [1]
+			973, -- [2]
 		},
 		["CalculateScore|cffe6cc80|Hitem:128476::141277:136689:141277::::110:261:256:9:1:743:77:3:3432:1497:1674::3:3397:1492:1675|h[Fangs of the Devourer]|h|r3false11016nil1"] = {
 			47536.78, -- [1]
@@ -5771,78 +6132,58 @@ DugisCharacterCache = {
 			30941.96, -- [1]
 			880, -- [2]
 		},
-		["CalculateScore|cff0070dd|Hitem:121739::::::::110:260::::::|h[Felinus Manus]|h|r2false110INVTYPE_HANDnil1"] = {
-			13137.68, -- [1]
-			611, -- [2]
-		},
 		["CalculateScore|cff0070dd|Hitem:139113::::::::110:260::25:4:1824:604:1467:1675:::|h[An'she's Token of Guile]|h|r2false110INVTYPE_TRINKETnil1"] = {
 			15468.63, -- [1]
 			811, -- [2]
 		},
-		["CalculateScore|cffa335ee|Hitem:134286:5882:::::::110:259::29:3:3396:1512:3337:::|h[Swordsinger's Shoulders]|h|r1false110INVTYPE_SHOULDERnil1"] = {
-			17185.08, -- [1]
-			973, -- [2]
+		["CalculateScore|cffe6cc80|Hitem:128476::::::::110:261:256:9::69:::|h[Fangs of the Devourer]|h|r3false11016nil1"] = {
+			18582.6684, -- [1]
+			438, -- [2]
 		},
-		["CalculateScore|cffa335ee|Hitem:134151::::::::110:259::30:3:3397:1507:3337:::|h[Steelgazer Hide Gloves]|h|r1false110INVTYPE_HANDnil1"] = {
-			15505.54, -- [1]
-			929, -- [2]
+		["CalculateScore|cff0070dd|Hitem:121739::::::::110:261::::::|h[Felinus Manus]|h|r3false110INVTYPE_HANDnil1"] = {
+			11050.07, -- [1]
+			611, -- [2]
 		},
-		["CalculateScore|cff00ccff|Hitem:133597::::::::110:260::::::|h[Infallible Tracking Charm]|h|r2false110INVTYPE_TRINKETnil1"] = {
-			11899.3, -- [1]
-			890, -- [2]
-		},
-		["CalculateScore|cffa335ee|Hitem:134335::::::::110:261::36:4:3432:603:1497:1674:::|h[Mana Crystal Shard]|h|r3false110INVTYPE_TRINKETnil1"] = {
-			17129.66, -- [1]
-			1073, -- [2]
+		["CalculateScore|cff0070dd|Hitem:139952::::::::110:260::::::|h[Salt-Tide Jailor's Tunic]|h|r2false110INVTYPE_CHESTnil1"] = {
+			18016.7, -- [1]
+			814, -- [2]
 		},
 		["CalculateScore|cffa335ee|Hitem:134429::::::::110:259::16:3:3413:1502:1813:::|h[Grove Darkener's Treads]|h|r1false110INVTYPE_FEETnil1"] = {
 			18152.12, -- [1]
 			973, -- [2]
 		},
-		["CalculateScore|cff00ccff|Hitem:133597::::::::110:261::::::|h[Infallible Tracking Charm]|h|r3false110INVTYPE_TRINKETnil1"] = {
-			10074.8, -- [1]
-			890, -- [2]
-		},
-		["CalculateScore|cff0070dd|Hitem:134159::::::::110:261::30:4:3397:603:1492:1675:::|h[Rocksunder Lucky Statue]|h|r3false110INVTYPE_TRINKETnil1"] = {
-			16467.61, -- [1]
-			1023, -- [2]
-		},
-		["CalculateScore|cffa335ee|Hitem:139745::::::::110:259::14:2:3385:3384:::|h[Belt of the Uncrowned]|h|r1false110INVTYPE_WAISTnil1"] = {
-			16842.98, -- [1]
-			886, -- [2]
-		},
-		["CalculateScore|cff9d9d9d|Hitem:121350::::::::110:260::::::|h[Rust-Encrusted Leggings]|h|r2false110INVTYPE_LEGSnil1"] = {
-			-3, -- [1]
+		["CalculateScore|cffa335ee|Hitem:141429::130219::::::110:259::3:3:1808:3466:1472:::|h[Wax-Sealed Leather Bracers]|h|r1false110INVTYPE_WRISTnil1"] = {
+			14454.27, -- [1]
+			801, -- [2]
 		},
 		["CalculateScore|cffe6cc80|Hitem:128870::137549:141262:136718::::110:259:256:9:1:741:611:2:1726:1477:3:3432:1507:3336:3:1726:1487:3336|h[The Kingslayers]|h|r1false11016nil1"] = {
 			37644.34, -- [1]
 			1304, -- [2]
 		},
-		["CalculateScore|cffa335ee|Hitem:134530::::::::110:260::23:3:1727:1492:1813:::|h[Loop of Vitriolic Intent]|h|r2false110INVTYPE_FINGERnil1"] = {
-			10838.81, -- [1]
-			0, -- [2]
+		["CalculateScore|cff1eff00|Hitem:121173::::::::110:260:512::2:1812:1699:110:::|h[Kal'delar Vambraces of the Feverflare]|h|r2false110INVTYPE_WRISTnil1"] = {
+			-3, -- [1]
 		},
 		["CalculateScore|cff0070dd|Hitem:128891::::::::110:260::13:5:596:600:689:1710:3408:::|h[Dreadleather Bindings of the Aurora]|h|r2false110INVTYPE_WRISTnil1"] = {
 			11340.63, -- [1]
 			526, -- [2]
 		},
-		["CalculateScore|cffe6cc80|Hitem:128872::139254:137543:141270::::110:261:256:9:1:742:698:2:1807:1472:2:1726:1477:3:3397:1497:3336|h[The Dreadblades]|h|r3false11016nil1"] = {
-			52192.66, -- [1]
-			1314, -- [2]
+		["CalculateScore|cff00ccff|Hitem:133597::::::::110:261::::::|h[Infallible Tracking Charm]|h|r3false110INVTYPE_TRINKETnil1"] = {
+			10074.8, -- [1]
+			890, -- [2]
 		},
-		["CalculateScore|cff1eff00|Hitem:121173::::::::110:261:512::2:1812:1699:110:::|h[Kal'delar Vambraces of the Feverflare]|h|r3false110INVTYPE_WRISTnil1"] = {
+		["CalculateScore|cff9d9d9d|Hitem:121350::::::::110:260::::::|h[Rust-Encrusted Leggings]|h|r2false110INVTYPE_LEGSnil1"] = {
 			-3, -- [1]
 		},
-		["CalculateScore|cffa335ee|Hitem:121310::::::::110:261::30:4:3397:607:1497:3336:::|h[Nightmare Thorn]|h|r3false110INVTYPE_TRINKETnil1"] = {
-			17253.14, -- [1]
-			1073, -- [2]
+		["CalculateScore|cff1eff00|Hitem:121051::::::::110:261:512::2:1812:1693:110:::|h[Temporal Scholar's Leggings of the Fireflash]|h|r3false110INVTYPE_LEGSnil1"] = {
+			4680, -- [1]
+			0, -- [2]
 		},
 		["CalculateScore|cff1eff00|Hitem:121106::::::::110:261:512::2:1812:1698:110:::|h[Hagfeather Leggings of the Feverflare]|h|r3false110INVTYPE_LEGSnil1"] = {
 			5153, -- [1]
 			0, -- [2]
 		},
-		["CalculateScore|cff0070dd|Hitem:137532::::::::110:260::1:2:1826:1457:::|h[Seal of Saltheril]|h|r2false110INVTYPE_FINGERnil1"] = {
-			9582.45, -- [1]
+		["CalculateScore|cffa335ee|Hitem:139063::::::::110:259::36:3:3432:1497:1674:::|h[Dreamwalker's Pendant]|h|r1false110INVTYPE_NECKnil1"] = {
+			7237.45, -- [1]
 			0, -- [2]
 		},
 		["CalculateScore|cff1eff00|Hitem:121004::::::::110:259:512::2:1812:1691:110:::|h[Rhut'van Helm of the Fireflash]|h|r1false110INVTYPE_HEADnil1"] = {
@@ -5863,12 +6204,13 @@ DugisCharacterCache = {
 			19638.6858, -- [1]
 			462, -- [2]
 		},
-		["CalculateScore|cff1eff00|Hitem:94036::::::-43:2120089661:110:261::9::::|h[Forgotten Peacekeeper Leggings of the Soldier]|h|r3false110INVTYPE_LEGSnil1"] = {
-			-3, -- [1]
-		},
 		["CalculateScore|cffe6cc80|Hitem:128872::132846:133086:::::110:260:256:9::695:3:1793:1615:1809:3:767:1597:1809:|h[The Dreadblades]|h|r2false11016nil1"] = {
 			25501.92, -- [1]
 			704, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:134405:5432:::::::110:259::23:3:1727:1492:1813:::|h[Cloak of Fading Echoes]|h|r1false110INVTYPE_CLOAKnil1"] = {
+			14333.58, -- [1]
+			815, -- [2]
 		},
 		["CalculateScore|cff9d9d9d|Hitem:121352::::::::110:261::2::::|h[Weatherworn Pants]|h|r3false110INVTYPE_LEGSnil1"] = {
 			0, -- [1]
@@ -5885,9 +6227,8 @@ DugisCharacterCache = {
 			22180.92, -- [1]
 			1353, -- [2]
 		},
-		["CalculateScore|cff0070dd|Hitem:136977::::::::110:261::2:2:1726:1477:::|h[Shadowfeather Shawl]|h|r3false110INVTYPE_CLOAKnil1"] = {
-			9923.96, -- [1]
-			578, -- [2]
+		["CalculateScore|cffe6cc80|Hitem:128872::139254:137543:141270::::110:259:256:9:1:742:698:2:1807:1472:2:1726:1477:3:3397:1497:3336|h[The Dreadblades]|h|r1false11016nil1"] = {
+			-3, -- [1]
 		},
 		["CalculateScore|cffa335ee|Hitem:134286:5442:::::::110:259::29:3:3396:1512:3337:::|h[Swordsinger's Shoulders]|h|r1false110INVTYPE_SHOULDERnil1"] = {
 			17185.08, -- [1]
@@ -5897,12 +6238,12 @@ DugisCharacterCache = {
 			18532.3, -- [1]
 			977, -- [2]
 		},
-		["CalculateScore|cffe6cc80|Hitem:128872::139254:137543:141270::::110:259:256:9:1:742:698:2:1807:1472:2:1726:1477:3:3397:1497:3336|h[The Dreadblades]|h|r1false11016nil1"] = {
+		["CalculateScore|cff1eff00|Hitem:121173::::::::110:261:512::2:1812:1699:110:::|h[Kal'delar Vambraces of the Feverflare]|h|r3false110INVTYPE_WRISTnil1"] = {
 			-3, -- [1]
 		},
-		["CalculateScore|cffa335ee|Hitem:141429::130219::::::110:259::3:3:1808:3466:1472:::|h[Wax-Sealed Leather Bracers]|h|r1false110INVTYPE_WRISTnil1"] = {
-			14454.27, -- [1]
-			801, -- [2]
+		["CalculateScore|cffa335ee|Hitem:121310::::::::110:261::30:4:3397:607:1497:3336:::|h[Nightmare Thorn]|h|r3false110INVTYPE_TRINKETnil1"] = {
+			17253.14, -- [1]
+			1073, -- [2]
 		},
 		["CalculateScore|cff1eff00|Hitem:121107::::::::110:261:512::2:1812:1687:110:::|h[Hagfeather Robe of the Peerless]|h|r3false110INVTYPE_CHESTnil1"] = {
 			6035.9, -- [1]
@@ -5916,25 +6257,24 @@ DugisCharacterCache = {
 			19818.19, -- [1]
 			1077, -- [2]
 		},
-		["CalculateScore|cffa335ee|Hitem:139063::::::::110:259::36:3:3432:1497:1674:::|h[Dreamwalker's Pendant]|h|r1false110INVTYPE_NECKnil1"] = {
-			7237.45, -- [1]
-			0, -- [2]
+		["CalculateScore|cffa335ee|Hitem:141537::::::::110:260::3:2:3466:1472:::|h[Thrice-Accursed Compass]|h|r2false110INVTYPE_TRINKETnil1"] = {
+			24236.59, -- [1]
+			1353, -- [2]
 		},
 		["CalculateScore|cffe6cc80|Hitem:128476::141289:141291:::::110:261:256:9::70:3:1812:1442:1809:3:1812:1442:1809:|h[Fangs of the Devourer]|h|r3false11016nil1"] = {
 			29074.18, -- [1]
 			684, -- [2]
 		},
-		["CalculateScore|cffe6cc80|Hitem:128476::141277:141291:::::110:261:256:9::67:3:1824:1477:3339:3:1812:1442:1809:|h[Fangs of the Devourer]|h|r3false11016nil1"] = {
-			31338.04, -- [1]
-			744, -- [2]
+		["CalculateScore|cff0070dd|Hitem:129075::::::::110:260:512::1:1794:110:::|h[Ragemaw's Hide]|h|r2false110INVTYPE_CLOAKnil1"] = {
+			8567.65, -- [1]
+			398, -- [2]
 		},
-		["CalculateScore|cff0070dd|Hitem:139952::::::::110:260::::::|h[Salt-Tide Jailor's Tunic]|h|r2false110INVTYPE_CHESTnil1"] = {
-			18016.7, -- [1]
-			814, -- [2]
+		["CalculateScore|cffe6cc80|Hitem:128872::139254:137543:141270::::110:261:256:9:1:742:698:2:1807:1472:2:1726:1477:3:3397:1497:3336|h[The Dreadblades]|h|r3false11016nil1"] = {
+			52192.66, -- [1]
+			1314, -- [2]
 		},
-		["CalculateScore|cff0070dd|Hitem:134199::::::::110:260::2:3:1726:1492:3339:::|h[Biornskin Belt]|h|r2false110INVTYPE_WAISTnil1"] = {
-			16777.43, -- [1]
-			807, -- [2]
+		["CalculateScore|cff1eff00|Hitem:94036::::::-43:2120089661:110:261::9::::|h[Forgotten Peacekeeper Leggings of the Soldier]|h|r3false110INVTYPE_LEGSnil1"] = {
+			-3, -- [1]
 		},
 		["CalculateScore|cff0070dd|Hitem:133616::::::::110:259::2:3:1726:1482:3339:::|h[Legwraps of Unworthy Souls]|h|r1false110INVTYPE_LEGSnil1"] = {
 			19527.55, -- [1]
@@ -5944,9 +6284,9 @@ DugisCharacterCache = {
 			13929.27, -- [1]
 			801, -- [2]
 		},
-		["CalculateScore|cffa335ee|Hitem:134405:5432:::::::110:259::23:3:1727:1492:1813:::|h[Cloak of Fading Echoes]|h|r1false110INVTYPE_CLOAKnil1"] = {
-			14333.58, -- [1]
-			815, -- [2]
+		["CalculateScore|cff0070dd|Hitem:137532::::::::110:260::1:2:1826:1457:::|h[Seal of Saltheril]|h|r2false110INVTYPE_FINGERnil1"] = {
+			9582.45, -- [1]
+			0, -- [2]
 		},
 		["CalculateScore|cff0070dd|Hitem:137531::::::::110:261::1:2:1826:1457:::|h[Cloak of Enthralling Darkness]|h|r3false110INVTYPE_CLOAKnil1"] = {
 			8557.7, -- [1]
@@ -5956,27 +6296,29 @@ DugisCharacterCache = {
 			3930.73, -- [1]
 			0, -- [2]
 		},
-		["CalculateScore|cff0070dd|Hitem:129075::::::::110:260:512::1:1794:110:::|h[Ragemaw's Hide]|h|r2false110INVTYPE_CLOAKnil1"] = {
-			8567.65, -- [1]
-			398, -- [2]
+		["CalculateScore|cff0070dd|Hitem:134199::::::::110:260::2:3:1726:1492:3339:::|h[Biornskin Belt]|h|r2false110INVTYPE_WAISTnil1"] = {
+			16777.43, -- [1]
+			807, -- [2]
 		},
-		["CalculateScore|cff1eff00|Hitem:121173::::::::110:260:512::2:1812:1699:110:::|h[Kal'delar Vambraces of the Feverflare]|h|r2false110INVTYPE_WRISTnil1"] = {
-			-3, -- [1]
+		["CalculateScore|cff0070dd|Hitem:136977::::::::110:261::2:2:1726:1477:::|h[Shadowfeather Shawl]|h|r3false110INVTYPE_CLOAKnil1"] = {
+			9923.96, -- [1]
+			578, -- [2]
 		},
-		["CalculateScore|cff0070dd|Hitem:121739::::::::110:261::::::|h[Felinus Manus]|h|r3false110INVTYPE_HANDnil1"] = {
-			11050.07, -- [1]
-			611, -- [2]
+		["CalculateScore|cffe6cc80|Hitem:128476::141277:141291:::::110:261:256:9::67:3:1824:1477:3339:3:1812:1442:1809:|h[Fangs of the Devourer]|h|r3false11016nil1"] = {
+			31338.04, -- [1]
+			744, -- [2]
 		},
-		["CalculateScore|cffa335ee|Hitem:139334::::::::110:261::3:2:1807:1472:::|h[Nature's Call]|h|r3false110INVTYPE_TRINKETnil1"] = {
-			5549, -- [1]
+		["CalculateScore|cffa335ee|Hitem:134151::::::::110:259::30:3:3397:1507:3337:::|h[Steelgazer Hide Gloves]|h|r1false110INVTYPE_HANDnil1"] = {
+			15505.54, -- [1]
+			929, -- [2]
+		},
+		["CalculateScore|cff0070dd|Hitem:137535::::::::110:260::2:3:1726:1487:3339:::|h[Lavadrip Pendant]|h|r2false110INVTYPE_NECKnil1"] = {
+			11061.05, -- [1]
 			0, -- [2]
 		},
-		["CalculateScore|cff1eff00|Hitem:55486::::::-36:541065239:110:259:512:22::110:::|h[Blackwolf Wand of the Sorcerer]|h|r1false11016nil1"] = {
-			-3, -- [1]
-		},
-		["CalculateScore|cffe6cc80|Hitem:128872::132846:137359:::::110:260:256:9::695:3:1793:1615:1809:2:1826:1457:|h[The Dreadblades]|h|r2false11016nil1"] = {
-			27182.92, -- [1]
-			758, -- [2]
+		["CalculateScore|cffa335ee|Hitem:134335::::::::110:261::36:4:3432:603:1497:1674:::|h[Mana Crystal Shard]|h|r3false110INVTYPE_TRINKETnil1"] = {
+			17129.66, -- [1]
+			1073, -- [2]
 		},
 		["CalculateScore|cffa335ee|Hitem:139745::::::::110:260::14:2:3385:3384:::|h[Belt of the Uncrowned]|h|r2false110INVTYPE_WAISTnil1"] = {
 			18272.72, -- [1]
@@ -5986,9 +6328,28 @@ DugisCharacterCache = {
 			7548.35, -- [1]
 			0, -- [2]
 		},
-		["CalculateScore|cffe6cc80|Hitem:128476::::::::110:261:256:9::69:::|h[Fangs of the Devourer]|h|r3false11016nil1"] = {
-			18582.6684, -- [1]
-			438, -- [2]
+		["CalculateScore|cff00ccff|Hitem:133597::::::::110:260::::::|h[Infallible Tracking Charm]|h|r2false110INVTYPE_TRINKETnil1"] = {
+			11899.3, -- [1]
+			890, -- [2]
+		},
+		["CalculateScore|cffe6cc80|Hitem:128872::132846:137359:::::110:260:256:9::695:3:1793:1615:1809:2:1826:1457:|h[The Dreadblades]|h|r2false11016nil1"] = {
+			27182.92, -- [1]
+			758, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:139334::::::::110:261::3:2:1807:1472:::|h[Nature's Call]|h|r3false110INVTYPE_TRINKETnil1"] = {
+			5549, -- [1]
+			0, -- [2]
+		},
+		["CalculateScore|cff0070dd|Hitem:45991::::::::110:260::1::::|h[Bone Fishing Pole]|h|r2false11016nil1"] = {
+			-3, -- [1]
+		},
+		["CalculateScore|cffa335ee|Hitem:134197::::::::110:260::36:3:3432:1497:1674:::|h[Biornskin Vest]|h|r2false110INVTYPE_CHESTnil1"] = {
+			23204.8, -- [1]
+			1128, -- [2]
+		},
+		["CalculateScore|cff9d9d9d|Hitem:121358::::::::110:261::::::|h[Sunbleached Handwraps]|h|r3false110INVTYPE_HANDnil1"] = {
+			0, -- [1]
+			0, -- [2]
 		},
 		["CalculateScore|cffa335ee|Hitem:134203::130218::::::110:260::30:5:3397:1808:605:1497:3336:::|h[Three-Toed Rabbit Foot]|h|r2false110INVTYPE_TRINKETnil1"] = {
 			20925.41, -- [1]
@@ -5997,25 +6358,6 @@ DugisCharacterCache = {
 		["CalculateScore|cffe6cc80|Hitem:128479::::::::110:261:256:::77:::|h[Fangs of the Devourer]|h|r3false11017nil1"] = {
 			4615.4974, -- [1]
 			219, -- [2]
-		},
-		["CalculateScore|cff0070dd|Hitem:45991::::::::110:261::1::::|h[Bone Fishing Pole]|h|r3false11016nil1"] = {
-			-3, -- [1]
-		},
-		["CalculateScore|cffa335ee|Hitem:134197::::::::110:260::36:3:3432:1497:1674:::|h[Biornskin Vest]|h|r2false110INVTYPE_CHESTnil1"] = {
-			23204.8, -- [1]
-			1128, -- [2]
-		},
-		["CalculateScore|cff0070dd|Hitem:136975::::::::110:260::2:2:1726:1477:::|h[Hunger of the Pack]|h|r2false110INVTYPE_TRINKETnil1"] = {
-			18597.97, -- [1]
-			977, -- [2]
-		},
-		["CalculateScore|cff0070dd|Hitem:134532:5426:::::::110:260::1:3:1826:1467:3339:::|h[Band of Fused Coral]|h|r2false110INVTYPE_FINGERnil1"] = {
-			10804.2, -- [1]
-			0, -- [2]
-		},
-		["CalculateScore|cff0070dd|Hitem:137535::::::::110:260::2:3:1726:1487:3339:::|h[Lavadrip Pendant]|h|r2false110INVTYPE_NECKnil1"] = {
-			11061.05, -- [1]
-			0, -- [2]
 		},
 		["CalculateScore|cffa335ee|Hitem:139068::::::::110:259::37:3:3473:1507:3336:::|h[Tranquil Bough Pants]|h|r1false110INVTYPE_LEGSnil1"] = {
 			20515.99, -- [1]
@@ -6032,52 +6374,52 @@ DugisCharacterCache = {
 			8096.6, -- [1]
 			380, -- [2]
 		},
-		["CalculateScore|cffe6cc80|Hitem:128872::132846:137359:::::110:261:256:9::695:3:1793:1615:1809:2:1826:1457:|h[The Dreadblades]|h|r3false11016nil1"] = {
-			31851.06, -- [1]
-			758, -- [2]
+		["CalculateScore|cffa335ee|Hitem:134237::::::::110:260::33:3:3411:1507:1813:::|h[Brinewashed Leather Boots]|h|r2false110INVTYPE_FEETnil1"] = {
+			18956.68, -- [1]
+			929, -- [2]
 		},
-		["CalculateScore|cff0070dd|Hitem:134291::::::::110:261::28:4:3395:603:1482:1675:::|h[Nightborne's Hunting Horn]|h|r3false110INVTYPE_TRINKETnil1"] = {
-			15273.66, -- [1]
-			933, -- [2]
+		["CalculateScore|cff9d9d9d|Hitem:121348::::::::110:260::::::|h[Sunbleached Wristwraps]|h|r2false110INVTYPE_WRISTnil1"] = {
+			0, -- [1]
+			0, -- [2]
 		},
 		["CalculateScore|cff0070dd|Hitem:136977::::::::110:260::2:2:1726:1477:::|h[Shadowfeather Shawl]|h|r2false110INVTYPE_CLOAKnil1"] = {
 			11881.02, -- [1]
 			578, -- [2]
 		},
-		["CalculateScore|cffa335ee|Hitem:134237::::::::110:260::33:3:3411:1507:1813:::|h[Brinewashed Leather Boots]|h|r2false110INVTYPE_FEETnil1"] = {
-			18956.68, -- [1]
-			929, -- [2]
-		},
-		["CalculateScore|cff0070dd|Hitem:139111::::::::110:261::26:3:1825:1472:1675:::|h[Rivermane Cord]|h|r3false110INVTYPE_WAISTnil1"] = {
-			11821.75, -- [1]
-			670, -- [2]
-		},
-		["CalculateScore|cff9d9d9d|Hitem:121368::::::::110:260::1::::|h[Sunbleached Shirt]|h|r2false110INVTYPE_CHESTnil1"] = {
+		["CalculateScore|cff9d9d9d|Hitem:121398::::::::110:260::::::|h[Realm of Companions]|h|r2false110INVTYPE_SHOULDERnil1"] = {
 			0, -- [1]
+			0, -- [2]
+		},
+		["CalculateScore|cff0070dd|Hitem:136975::::::::110:260::2:2:1726:1477:::|h[Hunger of the Pack]|h|r2false110INVTYPE_TRINKETnil1"] = {
+			18597.97, -- [1]
+			977, -- [2]
+		},
+		["CalculateScore|cff1eff00|Hitem:121125::::::::110:260:512::2:1812:604:110:::|h[Rune-Etched Bark]|h|r2false110INVTYPE_TRINKETnil1"] = {
+			3774.41, -- [1]
 			0, -- [2]
 		},
 		["CalculateScore|cff1eff00|Hitem:121042::::::::110:260:512::2:1812:1702:110:::|h[Faronaar Chain Gauntlets of the Feverflare]|h|r2false110INVTYPE_HANDnil1"] = {
 			-3, -- [1]
 		},
-		["CalculateScore|cff0070dd|Hitem:134197::::::::110:260::1:3:1826:1472:3339:::|h[Biornskin Vest]|h|r2false110INVTYPE_CHESTnil1"] = {
-			19352, -- [1]
-			894, -- [2]
+		["CalculateScore|cff0070dd|Hitem:134238::130217::::::110:259::30:4:3397:1808:1492:1675:::|h[Brinewashed Leather Pants]|h|r1false110INVTYPE_LEGSnil1"] = {
+			21525.51, -- [1]
+			1077, -- [2]
 		},
 		["CalculateScore|cffe6cc80|Hitem:128872::136718:137543:::::110:261:256:9::695:3:1726:1487:3339:2:1726:1477:|h[The Dreadblades]|h|r3false11016nil1"] = {
 			36368.82, -- [1]
 			880, -- [2]
 		},
-		["CalculateScore|cff1eff00|Hitem:121106::::::::110:260:512::2:1812:1708:110:::|h[Hagfeather Leggings of the Aurora]|h|r2false110INVTYPE_LEGSnil1"] = {
-			5879.24, -- [1]
-			0, -- [2]
+		["CalculateScore|cff0070dd|Hitem:137537::::::::110:261::2:2:1726:1477:::|h[Tirathon's Betrayal]|h|r3false110INVTYPE_TRINKETnil1"] = {
+			11059.64, -- [1]
+			977, -- [2]
 		},
 		["CalculateScore|cffe6cc80|Hitem:128870::141291::::::110:260:256:9::230:3:1812:3126:1809::|h[The Kingslayers]|h|r2false11016nil1"] = {
 			16790.627, -- [1]
 			462, -- [2]
 		},
-		["CalculateScore|cff0070dd|Hitem:133366::::::::110:259:512:22:1:615:110:::|h[Fractured Earthstone Necklace]|h|r1false110INVTYPE_NECKnil1"] = {
-			11382.25, -- [1]
-			552, -- [2]
+		["CalculateScore|cff0070dd|Hitem:139743::::::::110:259::14:2:3386:3383:::|h[Leggings of the Uncrowned]|h|r1false110INVTYPE_LEGSnil1"] = {
+			21891.3, -- [1]
+			1077, -- [2]
 		},
 		["CalculateScore|cff9d9d9d|Hitem:121339::::::::110:260::2::::|h[Kvalidir Skinning Knife]|h|r2false11016nil1"] = {
 			-3, -- [1]
@@ -6089,36 +6431,53 @@ DugisCharacterCache = {
 		["CalculateScore|cff1eff00|Hitem:121046::::::::110:259:512::2:1812:1692:110:::|h[Faronaar Chain Spaulders of the Fireflash]|h|r1false110INVTYPE_SHOULDERnil1"] = {
 			-3, -- [1]
 		},
-		["CalculateScore|cffa335ee|Hitem:134199::::::::110:259::30:3:3397:1502:3336:::|h[Biornskin Belt]|h|r1false110INVTYPE_WAISTnil1"] = {
-			17610.56, -- [1]
-			886, -- [2]
+		["CalculateScore|cffa335ee|Hitem:121292::::::::110:260::36:3:3432:1512:3337:::|h[Dreadhide Bracers]|h|r2false110INVTYPE_WRISTnil1"] = {
+			14386.16, -- [1]
+			729, -- [2]
 		},
-		["CalculateScore|cff9d9d9d|Hitem:121384::::::::110:260::::::|h[Elemental Bindings]|h|r2false110INVTYPE_WRISTnil1"] = {
-			-3, -- [1]
+		["CalculateScore|cff0070dd|Hitem:134492:5295:130217::::::110:259::2:4:1726:1808:1482:3339:::|h[Hatecoil Commander's Amulet]|h|r1false110INVTYPE_NECKnil1"] = {
+			8579.74, -- [1]
+			0, -- [2]
 		},
-		["CalculateScore|cff0070dd|Hitem:134373::::::::110:260::2:3:1726:1487:1675:::|h[Felbat Leather Vest]|h|r2false110INVTYPE_CHESTnil1"] = {
-			21691.46, -- [1]
-			1028, -- [2]
+		["CalculateScore|cffffffff|Hitem:139739::::::::110:260::11:2:3386:3383:::|h[]|h|r2false110INVTYPE_CHESTnil1"] = {
+			21749.86, -- [1]
+			1077, -- [2]
 		},
 		["CalculateScore|cff9d9d9d|Hitem:121414::::::::110:259::::::|h[The Dreamweaver's Ignorance]|h|r1false110INVTYPE_FEETnil1"] = {
 			0, -- [1]
 			0, -- [2]
 		},
-		["CalculateScore|cffa335ee|Hitem:134335::::::::110:259::36:4:3432:603:1497:1674:::|h[Mana Crystal Shard]|h|r1false110INVTYPE_TRINKETnil1"] = {
-			19964.02, -- [1]
-			1073, -- [2]
+		["CalculateScore|cffffffff|Hitem:139739::::::::110:259::11:2:3386:3383:::|h[]|h|r1false110INVTYPE_CHESTnil1"] = {
+			18836.17, -- [1]
+			1077, -- [2]
 		},
-		["CalculateScore|cff1eff00|Hitem:121215::::::::110:260:512::2:1812:1693:110:::|h[Crescent Vale Handwraps of the Fireflash]|h|r2false110INVTYPE_HANDnil1"] = {
-			4175.43, -- [1]
-			0, -- [2]
+		["CalculateScore|cffe6cc80|Hitem:128476::141289:141291:::::110:260:256:9::67:3:1812:1442:1809:3:1812:1442:1809:|h[Fangs of the Devourer]|h|r2false11016nil1"] = {
+			24859.06, -- [1]
+			684, -- [2]
 		},
 		["CalculateScore|cffa335ee|Hitem:134286:5442:::::::110:260::29:3:3396:1512:3337:::|h[Swordsinger's Shoulders]|h|r2false110INVTYPE_SHOULDERnil1"] = {
 			19300.99, -- [1]
 			973, -- [2]
 		},
-		["CalculateScore|cff0070dd|Hitem:139743::::::::110:261::14:2:3386:3383:::|h[Leggings of the Uncrowned]|h|r3false110INVTYPE_LEGSnil1"] = {
-			19100.43, -- [1]
-			1077, -- [2]
+		["CalculateScore|cffa335ee|Hitem:134199::::::::110:259::30:3:3397:1502:3336:::|h[Biornskin Belt]|h|r1false110INVTYPE_WAISTnil1"] = {
+			17610.56, -- [1]
+			886, -- [2]
+		},
+		["CalculateScore|cff0070dd|Hitem:134373::::::::110:260::2:3:1726:1487:1675:::|h[Felbat Leather Vest]|h|r2false110INVTYPE_CHESTnil1"] = {
+			21691.46, -- [1]
+			1028, -- [2]
+		},
+		["CalculateScore|cffe6cc80|Hitem:128870::141273:141288:136683::::110:261:256:9:1:741:229:3:1825:1472:1675:3:1812:1442:1809:|h[The Kingslayers]|h|r3false11016nil1"] = {
+			40179.22, -- [1]
+			984, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:134335::::::::110:259::36:4:3432:603:1497:1674:::|h[Mana Crystal Shard]|h|r1false110INVTYPE_TRINKETnil1"] = {
+			19964.02, -- [1]
+			1073, -- [2]
+		},
+		["CalculateScore|cff0070dd|Hitem:137510::::::::110:260::2:3:1726:1808:1477:::|h[Charskin Mantle]|h|r2false110INVTYPE_SHOULDERnil1"] = {
+			16419.91, -- [1]
+			771, -- [2]
 		},
 		["CalculateScore|cff0070dd|Hitem:130230:5426:130222::::::110:260::13:4:3367:689:600:597:::|h[Maelstrom Band of the Harmonious]|h|r2false110INVTYPE_FINGERnil1"] = {
 			14110.96, -- [1]
@@ -6127,22 +6486,6 @@ DugisCharacterCache = {
 		["CalculateScore|cffa335ee|Hitem:134154::::::::110:259::23:3:1727:1502:1813:::|h[Steelgazer Hide Mantle]|h|r1false110INVTYPE_SHOULDERnil1"] = {
 			15153.47, -- [1]
 			886, -- [2]
-		},
-		["CalculateScore|cff0070dd|Hitem:134238::130217::::::110:259::30:4:3397:1808:1492:1675:::|h[Brinewashed Leather Pants]|h|r1false110INVTYPE_LEGSnil1"] = {
-			21525.51, -- [1]
-			1077, -- [2]
-		},
-		["CalculateScore|cff0070dd|Hitem:137510::::::::110:260::2:3:1726:1808:1477:::|h[Charskin Mantle]|h|r2false110INVTYPE_SHOULDERnil1"] = {
-			16419.91, -- [1]
-			771, -- [2]
-		},
-		["CalculateScore|cffa335ee|Hitem:141585::::::::110:259::26:1:1497:::|h[Six-Feather Fan]|h|r1false110INVTYPE_TRINKETnil1"] = {
-			13154.98, -- [1]
-			1073, -- [2]
-		},
-		["CalculateScore|cffffffff|Hitem:141322::::::::110:259::::::|h[Shiny Silver Necklace]|h|r1false110INVTYPE_NECKnil1"] = {
-			0, -- [1]
-			0, -- [2]
 		},
 		["CalculateScore|cffa335ee|Hitem:134203::::::::110:260::30:5:3397:1808:605:1497:3336:::|h[Three-Toed Rabbit Foot]|h|r2false110INVTYPE_TRINKETnil1"] = {
 			20255.41, -- [1]
@@ -6156,27 +6499,28 @@ DugisCharacterCache = {
 			14314.83, -- [1]
 			645, -- [2]
 		},
+		["CalculateScore|cffa335ee|Hitem:141492:5426:130247::::::110:260::3:3:1808:1477:3336:::|h[Dingy Suramar Mercantile Signet]|h|r2false110INVTYPE_FINGERnil1"] = {
+			16673.39, -- [1]
+			200, -- [2]
+		},
+		["CalculateScore|cffffffff|Hitem:141322::::::::110:259::::::|h[Shiny Silver Necklace]|h|r1false110INVTYPE_NECKnil1"] = {
+			0, -- [1]
+			0, -- [2]
+		},
+		["CalculateScore|cffe6cc80|Hitem:128476::141277:141291:::::110:260:256:9::67:3:3394:1482:3339:3:1812:1442:1809:|h[Fangs of the Devourer]|h|r2false11016nil1"] = {
+			27182.92, -- [1]
+			758, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:143902::::::::110:260::1:1:3493:::|h[Wicked Witch's Signet]|h|r2false110INVTYPE_FINGERnil1"] = {
+			10880.52, -- [1]
+			0, -- [2]
+		},
+		["CalculateScore|cff0070dd|Hitem:134454::::::::110:260::1:2:1826:1457:::|h[Spaulders of Unstable Experiments]|h|r2false110INVTYPE_SHOULDERnil1"] = {
+			13842.89, -- [1]
+			640, -- [2]
+		},
 		["CalculateScore|cff1eff00|Hitem:121045::::::::110:261:512::2:1812:1692:110:::|h[Faronaar Chain Legguards of the Fireflash]|h|r3false110INVTYPE_LEGSnil1"] = {
 			-3, -- [1]
-		},
-		["CalculateScore|cff0070dd|Hitem:134330::::::::110:260::29:3:3396:1492:3339:::|h[Mana-Saber Hide Shoulders]|h|r2false110INVTYPE_SHOULDERnil1"] = {
-			16812.85, -- [1]
-			807, -- [2]
-		},
-		["CalculateScore|cffa335ee|Hitem:134195::::::::110:260::36:3:3432:1497:1674:::|h[Biornskin Gloves]|h|r2false110INVTYPE_HANDnil1"] = {
-			17395.48, -- [1]
-			846, -- [2]
-		},
-		["CalculateScore|cff0070dd|Hitem:45991::::::::110:259::1::::|h[Bone Fishing Pole]|h|r1false11016nil1"] = {
-			-3, -- [1]
-		},
-		["CalculateScore|cffa335ee|Hitem:130230:5426:130217::::::110:261::13:4:3367:689:600:669:::|h[Maelstrom Band of the Harmonious]|h|r3false110INVTYPE_FINGERnil1"] = {
-			12975.69, -- [1]
-			0, -- [2]
-		},
-		["CalculateScore|cffa335ee|Hitem:134526:5426:130217::::::110:260::35:4:3410:1808:1502:3336:::|h[Gnawed Thumb Ring]|h|r2false110INVTYPE_FINGERnil1"] = {
-			13863.18, -- [1]
-			0, -- [2]
 		},
 		["CalculateScore|cffffffff|Hitem:37606::::::::110:260::::::|h[Penny Pouch]|h|r2false110INVTYPE_BAGnil1"] = {
 			-2, -- [1]
@@ -6185,12 +6529,13 @@ DugisCharacterCache = {
 			13705.39, -- [1]
 			807, -- [2]
 		},
-		["CalculateScore|cff0070dd|Hitem:129206::::::::110:260:512::1:1794:110:::|h[Andvari's Gift]|h|r2false110INVTYPE_FINGERnil1"] = {
-			8741.24, -- [1]
+		["CalculateScore|cffa335ee|Hitem:130230:5426:130217::::::110:261::13:4:3367:689:600:669:::|h[Maelstrom Band of the Harmonious]|h|r3false110INVTYPE_FINGERnil1"] = {
+			12975.69, -- [1]
 			0, -- [2]
 		},
-		["CalculateScore|cff9d9d9d|Hitem:121405::::::::110:260::::::|h[Damaged Berserker's Plate Helm]|h|r2false110INVTYPE_HEADnil1"] = {
-			-3, -- [1]
+		["CalculateScore|cffa335ee|Hitem:134526:5426:130217::::::110:260::35:4:3410:1808:1502:3336:::|h[Gnawed Thumb Ring]|h|r2false110INVTYPE_FINGERnil1"] = {
+			13863.18, -- [1]
+			0, -- [2]
 		},
 		["CalculateScore|cffe6cc80|Hitem:128870::141273:141262:136718::::110:259:256:9:1:741:611:3:1825:1472:1675:3:3432:1507:3336:3:1726:1487:3336|h[The Kingslayers]|h|r1false11016nil1"] = {
 			36430.42, -- [1]
@@ -6204,9 +6549,8 @@ DugisCharacterCache = {
 			13512.07, -- [1]
 			676, -- [2]
 		},
-		["CalculateScore|cffa335ee|Hitem:139109::::::::110:259::36:3:3432:1497:1674:::|h[Rivermane Robe]|h|r1false110INVTYPE_CHESTnil1"] = {
-			20152.87, -- [1]
-			1128, -- [2]
+		["CalculateScore|cff9d9d9d|Hitem:121405::::::::110:260::::::|h[Damaged Berserker's Plate Helm]|h|r2false110INVTYPE_HEADnil1"] = {
+			-3, -- [1]
 		},
 		["CalculateScore|cff1eff00|Hitem:121099::::::::110:260:512::2:1812:1714:110:::|h[Hillstride Helm of the Harmonious]|h|r2false110INVTYPE_HEADnil1"] = {
 			-3, -- [1]
@@ -6215,45 +6559,45 @@ DugisCharacterCache = {
 			14615.84, -- [1]
 			640, -- [2]
 		},
-		["CalculateScore|cff0070dd|Hitem:134491:5321:130217::::::110:260::2:3:1726:1808:1477:::|h[Understone Gorget]|h|r2false110INVTYPE_NECKnil1"] = {
-			12423.92, -- [1]
+		["CalculateScore|cff0070dd|Hitem:129206::::::::110:260:512::1:1794:110:::|h[Andvari's Gift]|h|r2false110INVTYPE_FINGERnil1"] = {
+			8741.24, -- [1]
+			0, -- [2]
+		},
+		["CalculateScore|cff1eff00|Hitem:121165::::::::110:260:512::2:1812:1706:110:::|h[Hrydshal Wristwraps of the Aurora]|h|r2false110INVTYPE_WRISTnil1"] = {
+			3221.94, -- [1]
+			0, -- [2]
+		},
+		["CalculateScore|cffe6cc80|Hitem:128476::141277:136689:141277::::110:259:256:9:1:743:891:3:3432:1497:1674::3:3397:1492:1675|h[Fangs of the Devourer]|h|r1false11016nil1"] = {
+			34689.32, -- [1]
+			1186, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:134195::130217::::::110:260::35:4:3410:1808:1512:3336:::|h[Biornskin Gloves]|h|r2false110INVTYPE_HANDnil1"] = {
+			20145.09, -- [1]
+			973, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:141492:5427:130247::::::110:260::3:3:1808:1477:3336:::|h[Dingy Suramar Mercantile Signet]|h|r2false110INVTYPE_FINGERnil1"] = {
+			16922.89, -- [1]
+			200, -- [2]
+		},
+		["CalculateScore|cff0070dd|Hitem:135907::::::::110:259::7:2:3427:1467:::|h[Vindictive Combatant's Necklace]|h|r1false110INVTYPE_NECKnil1"] = {
+			10803.34, -- [1]
 			0, -- [2]
 		},
 		["CalculateScore|cffa335ee|Hitem:134240::::::::110:260::23:3:1727:1502:1813:::|h[Brinewashed Leather Cowl]|h|r2false110INVTYPE_HEADnil1"] = {
 			24361.53, -- [1]
 			1182, -- [2]
 		},
-		["CalculateScore|cffe6cc80|Hitem:128476::141277:136689:141277::::110:259:256:9:1:743:891:3:3432:1497:1674::3:3397:1492:1675|h[Fangs of the Devourer]|h|r1false11016nil1"] = {
-			34689.32, -- [1]
-			1186, -- [2]
-		},
-		["CalculateScore|cff0070dd|Hitem:134238::130217::::::110:260::30:4:3397:1808:1492:1675:::|h[Brinewashed Leather Pants]|h|r2false110INVTYPE_LEGSnil1"] = {
-			23364.36, -- [1]
-			1077, -- [2]
-		},
-		["CalculateScore|cffa335ee|Hitem:134195::130217::::::110:259::35:4:3410:1808:1512:3336:::|h[Biornskin Gloves]|h|r1false110INVTYPE_HANDnil1"] = {
-			19685.1, -- [1]
-			973, -- [2]
-		},
-		["CalculateScore|cff0070dd|Hitem:135907::::::::110:259::7:2:3427:1467:::|h[Vindictive Combatant's Necklace]|h|r1false110INVTYPE_NECKnil1"] = {
-			10803.34, -- [1]
-			0, -- [2]
-		},
-		["CalculateScore|cffa335ee|Hitem:141585::::::::110:260::26:1:1497:::|h[Six-Feather Fan]|h|r2false110INVTYPE_TRINKETnil1"] = {
-			14346.01, -- [1]
-			1073, -- [2]
-		},
-		["CalculateScore|cffe6cc80|Hitem:128872::139254:137543:141258::::110:260:256:9:1:742:698:2:1807:1472:2:1726:1477:3:3474:1512:3336|h[The Dreadblades]|h|r2false11016nil1"] = {
-			129753.86, -- [1]
-			4254, -- [2]
+		["CalculateScore|cffe6cc80|Hitem:128872::139254:137543:141270::::110:260:256:9:1:742:698:2:1807:1472:2:1726:1477:3:3397:1497:3336|h[The Dreadblades]|h|r2false11016nil1"] = {
+			44071.84, -- [1]
+			1314, -- [2]
 		},
 		["CalculateScore|cff1eff00|Hitem:121220::::::::110:259:512::2:1812:1709:110:::|h[Crescent Vale Wristwraps of the Aurora]|h|r1false110INVTYPE_WRISTnil1"] = {
 			2652.74, -- [1]
 			0, -- [2]
 		},
-		["CalculateScore|cff1eff00|Hitem:121272::::::::110:261:512::2:1812:1687:110:::|h[Moonfall Robe of the Peerless]|h|r3false110INVTYPE_CHESTnil1"] = {
-			6035.9, -- [1]
-			0, -- [2]
+		["CalculateScore|cffe6cc80|Hitem:128476::141277:136689:141277::::110:260:256:9:1:743:77:3:3432:1497:1674::3:3397:1492:1675|h[Fangs of the Devourer]|h|r2false11016nil1"] = {
+			40211.86, -- [1]
+			1186, -- [2]
 		},
 		["CalculateScore|cffa335ee|Hitem:134154:5442:::::::110:261::23:3:1727:1502:1813:::|h[Steelgazer Hide Mantle]|h|r3false110INVTYPE_SHOULDERnil1"] = {
 			14915.41, -- [1]
@@ -6263,24 +6607,36 @@ DugisCharacterCache = {
 			18064.56, -- [1]
 			886, -- [2]
 		},
-		["CalculateScore|cffa335ee|Hitem:134191::::::::110:259::42:3:3474:1507:1674:::|h[Rough-Hammered Silver Ring]|h|r1false110INVTYPE_FINGERnil1"] = {
-			13064.6, -- [1]
-			0, -- [2]
+		["CalculateScore|cffa335ee|Hitem:141585::::::::110:260::26:1:1497:::|h[Six-Feather Fan]|h|r2false110INVTYPE_TRINKETnil1"] = {
+			14346.01, -- [1]
+			1073, -- [2]
 		},
 		["CalculateScore|cff0070dd|Hitem:130132::::::::110:260:512::1:1794:110:::|h[Bracers of Earthbound Flight]|h|r2false110INVTYPE_WRISTnil1"] = {
 			8633.86, -- [1]
 			398, -- [2]
 		},
-		["CalculateScore|cffa335ee|Hitem:136741::::::::110:259::36:4:3432:1808:1502:3336:::|h[Shadow Stalker Gloves]|h|r1false110INVTYPE_HANDnil1"] = {
-			17205.46, -- [1]
-			886, -- [2]
+		["CalculateScore|cff1eff00|Hitem:129239::::::::110:260:512:11:1:768:109:::|h[Bloodbeard's Seal]|h|r2false110INVTYPE_FINGERnil1"] = {
+			8216.67, -- [1]
+			0, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:134199::::::::110:260::16:3:3410:1512:3336:::|h[Biornskin Belt]|h|r2false110INVTYPE_WAISTnil1"] = {
+			19471.69, -- [1]
+			973, -- [2]
+		},
+		["CalculateScore|cff9d9d9d|Hitem:121354::::::::110:259::::::|h[Rust-Encrusted Spaulders]|h|r1false110INVTYPE_SHOULDERnil1"] = {
+			-3, -- [1]
+		},
+		["CalculateScore|cff9d9d9d|Hitem:121333::::::::110:261::2::::|h[Poorly Weighted Blackjack]|h|r3false11016nil1"] = {
+			164.7399, -- [1]
+			0, -- [2]
 		},
 		["CalculateScore|cffa335ee|Hitem:134526:5427:130219::::::110:259::35:4:3410:1808:1502:3336:::|h[Gnawed Thumb Ring]|h|r1false110INVTYPE_FINGERnil1"] = {
 			15799.24, -- [1]
 			0, -- [2]
 		},
-		["CalculateScore|cff9d9d9d|Hitem:121354::::::::110:259::::::|h[Rust-Encrusted Spaulders]|h|r1false110INVTYPE_SHOULDERnil1"] = {
-			-3, -- [1]
+		["CalculateScore|cffa335ee|Hitem:136741::::::::110:259::36:4:3432:1808:1502:3336:::|h[Shadow Stalker Gloves]|h|r1false110INVTYPE_HANDnil1"] = {
+			17205.46, -- [1]
+			886, -- [2]
 		},
 		["CalculateScore|cff1eff00|Hitem:121015::::::::110:259:512::2:1812:603:110:::|h[Academy Faculty Pin]|h|r1false110INVTYPE_TRINKETnil1"] = {
 			4963.96, -- [1]
@@ -6289,9 +6645,9 @@ DugisCharacterCache = {
 		["CalculateScore|cff9d9d9d|Hitem:121409::::::::110:259::::::|h[Time-Corroded Breastplate]|h|r1false110INVTYPE_CHESTnil1"] = {
 			-3, -- [1]
 		},
-		["CalculateScore|cffa335ee|Hitem:137311:5439:::::::110:259::23:4:1727:42:1492:1813:::|h[Chain of the Green Flight]|h|r1false110INVTYPE_NECKnil1"] = {
-			11999.28, -- [1]
-			0, -- [2]
+		["CalculateScore|cff0070dd|Hitem:139113::::::::110:261::25:4:1824:604:1467:1675:::|h[An'she's Token of Guile]|h|r3false110INVTYPE_TRINKETnil1"] = {
+			12923.52, -- [1]
+			811, -- [2]
 		},
 		["CalculateScore|cff9d9d9d|Hitem:121376::::::::110:259::::::|h[Azsharan Queensguard Blade]|h|r1false11016nil1"] = {
 			-3, -- [1]
@@ -6300,21 +6656,9 @@ DugisCharacterCache = {
 			0, -- [1]
 			0, -- [2]
 		},
-		["CalculateScore|cff0070dd|Hitem:139113::::::::110:261::25:4:1824:604:1467:1675:::|h[An'she's Token of Guile]|h|r3false110INVTYPE_TRINKETnil1"] = {
-			12923.52, -- [1]
-			811, -- [2]
-		},
-		["CalculateScore|cffa335ee|Hitem:134195::130219::::::110:259::35:4:3410:1808:1512:3336:::|h[Biornskin Gloves]|h|r1false110INVTYPE_HANDnil1"] = {
-			20210.1, -- [1]
-			973, -- [2]
-		},
-		["CalculateScore|cff1eff00|Hitem:121103::::::::110:259:512::2:1812:1683:110:::|h[Hagfeather Cord of the Peerless]|h|r1false110INVTYPE_WAISTnil1"] = {
-			4948.52, -- [1]
+		["CalculateScore|cffa335ee|Hitem:137311:5439:::::::110:259::23:4:1727:42:1492:1813:::|h[Chain of the Green Flight]|h|r1false110INVTYPE_NECKnil1"] = {
+			11999.28, -- [1]
 			0, -- [2]
-		},
-		["CalculateScore|cffa335ee|Hitem:141492:5427:130247::::::110:259::3:3:1808:1477:3336:::|h[Dingy Suramar Mercantile Signet]|h|r1false110INVTYPE_FINGERnil1"] = {
-			18216.79, -- [1]
-			200, -- [2]
 		},
 		["CalculateScore|cffa335ee|Hitem:137539::::::::110:259::23:3:1727:1492:1813:::|h[Faulty Countermeasure]|h|r1false110INVTYPE_TRINKETnil1"] = {
 			6932.56, -- [1]
@@ -6324,9 +6668,9 @@ DugisCharacterCache = {
 			29256.6, -- [1]
 			826, -- [2]
 		},
-		["CalculateScore|cff1eff00|Hitem:121051::::::::110:261:512::2:1812:1693:110:::|h[Temporal Scholar's Leggings of the Fireflash]|h|r3false110INVTYPE_LEGSnil1"] = {
-			4680, -- [1]
-			0, -- [2]
+		["CalculateScore|cffa335ee|Hitem:141492:5427:130247::::::110:259::3:3:1808:1477:3336:::|h[Dingy Suramar Mercantile Signet]|h|r1false110INVTYPE_FINGERnil1"] = {
+			18216.79, -- [1]
+			200, -- [2]
 		},
 		["CalculateScore|cff9d9d9d|Hitem:121411::::::::110:259::::::|h[Waterlogged Leather Jerkin]|h|r1false110INVTYPE_CHESTnil1"] = {
 			0, -- [1]
