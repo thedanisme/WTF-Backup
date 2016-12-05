@@ -1,10 +1,10 @@
-VER 3 000000000000013D " " "INV_Misc_QuestionMark"
-#showtooltip
-/use 12
-END
 VER 3 000000000000014C " " "INV_Misc_QuestionMark"
 #showtooltip 
 /use [@mouseover,talent:7/1,nodead,help]Beacon of light;[@mouseover,talent:7/2,nodead,help]Beacon of Light;[@mouseover,talent:7/3,nodead,help]Beacon of Virtue
+END
+VER 3 000000000000013D " " "INV_Misc_QuestionMark"
+#showtooltip
+/use 12
 END
 VER 3 0000000000000147 "ArtWep" "INV_Misc_QuestionMark"
 #showtooltip 16 
@@ -54,4 +54,18 @@ VER 3 000000000000014A "RandomPath" "ACHIEVEMENT_GUILDPERK_MOUNTUP"
 END
 VER 3 0000000000000148 "RandomPet" "INV_Pet_Achievement_CatchUncommonPet."
 /run q=C_PetJournal;v={q.GetNumPets()}r=random(v[2])p={q.GetPetInfoByIndex(r)}q.SummonPetByGUID(p[1])SendChatMessage("spins the Wheel O' Pets! The wheel stops on "..p[8].."!","emote");
+END
+VER 3 000000000000014D "t1" "INV_Misc_QuestionMark"
+END
+VER 3 000000000000014E "t2" "INV_Misc_QuestionMark"
+END
+VER 3 000000000000014F "t3" "INV_Misc_QuestionMark"
+END
+VER 3 0000000000000150 "t4" "INV_Misc_QuestionMark"
+END
+VER 3 0000000000000151 "t5" "INV_Misc_QuestionMark"
+END
+VER 3 0000000000000152 "t6" "INV_Misc_QuestionMark"
+END
+VER 3 0000000000000153 "t7" "INV_Misc_QuestionMark"
 END

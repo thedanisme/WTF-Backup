@@ -5,14 +5,14 @@ AtlasLootCharDB = {
 		["classFilter"] = true,
 		["selected"] = {
 			"AtlasLoot_Legion", -- [1]
-			"VaultOfTheWardens", -- [2]
-			nil, -- [3]
-			8, -- [4]
+			"Neltharion'sLair", -- [2]
+			4, -- [3]
+			10, -- [4]
 			0, -- [5]
 		},
 		["point"] = {
 			[3] = "CENTER",
-			[4] = -0.999941825866699,
+			[4] = 41.0001068115234,
 			[5] = -3.282587567809970e-005,
 		},
 	},

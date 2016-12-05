@@ -195,7 +195,7 @@ AdiBags_BestInSlot: disabled
 AdiBags_Bound: disabled
 AdiBags_Legion: disabled
 AdiBags_Config: disabled
-DugisGuideViewerZ: enabled
+DugisGuideViewerZ: disabled
 BigWigs_BrokenIsles: enabled
 ConsLegion: disabled
 MacroBank: disabled
@@ -215,4 +215,3 @@ PersonalLootHelper: enabled
 ElvUI_SLE: enabled
 Details_RaidInfo-TrialOfValor: disabled
 GarrisonMissionManager: enabled
-!YouArentInAPartyFix: disabled

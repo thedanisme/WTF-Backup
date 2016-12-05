@@ -4,6 +4,8 @@ CurrentZone = nil
 DugisGuideUser = {
 	["PetBattleOn"] = false,
 	["showLeftMenuForCurrentGuide"] = true,
+	["toskip"] = {
+	},
 	["CharacterGUID"] = "Player-60-0AA1A2F9",
 	["ZenPilgrimageReturnPoint"] = {
 		["y"] = 0.440341353416443,
@@ -12,7 +14,6 @@ DugisGuideUser = {
 		["f"] = 0,
 	},
 	["EnableQWStatus"] = true,
-	["PreviewPointy"] = 32.38,
 	["turnedinquests"] = {
 	},
 	["NextQuestIndex"] = 1,
@@ -309,18 +310,15 @@ DugisGuideUser = {
 		["Class Campaign (98-110):242"] = "C",
 		["Class Campaign (98-110):19"] = "C",
 	},
+	["removedQuests"] = {
+	},
 	["CurrentMapVersions"] = {
 		["Hyjal"] = "Hyjal_terrain1",
 	},
-	["removedQuests"] = {
-	},
-	["LFGWorldLocation"] = "1021:1:1861052739",
-	["PreviewPointx"] = 51.78,
 	["ModelDataOn"] = false,
 	["subCategoriesExpanded"] = {
 	},
-	["toskip"] = {
-	},
+	["LFGWorldLocation"] = "1021:1:1861052739",
 	["userCustomWeights_v2"] = {
 		["HUNTER"] = {
 			{
@@ -1125,57 +1123,57 @@ DugisArrowDb = {
 DugisFlightmasterDataTable = {
 	[8] = {
 		[108888] = {
-			["name"] = "Wardens' Redoubt, Azsuna",
 			["m"] = 1015,
 			["f"] = 0,
+			["name"] = "Wardens' Redoubt, Azsuna",
 			["coord"] = 2070002380,
 		},
 		[110971] = {
-			["name"] = "Illidari Perch, Azsuna",
 			["m"] = 1015,
 			["f"] = 0,
+			["name"] = "Illidari Perch, Azsuna",
 			["coord"] = 1366980243,
 		},
 		[94973] = {
-			["name"] = "Nesingwary, Highmountain",
 			["m"] = 1024,
 			["f"] = 0,
+			["name"] = "Nesingwary, Highmountain",
 			["coord"] = 1727301337,
 		},
 		[88110] = {
-			["name"] = "Illidari Stand, Azsuna",
 			["m"] = 1015,
 			["f"] = 0,
+			["name"] = "Illidari Stand, Azsuna",
 			["coord"] = 1914794008,
 		},
 		[98966] = {
-			["name"] = "Ironhorn Enclave, Highmountain",
 			["m"] = 1024,
 			["f"] = 0,
+			["name"] = "Ironhorn Enclave, Highmountain",
 			["coord"] = 2440877756,
 		},
 		[98108] = {
-			["name"] = "Greywatch, Stormheim",
 			["m"] = 1017,
 			["f"] = 0,
+			["name"] = "Greywatch, Stormheim",
 			["coord"] = 3098253628,
 		},
 		[97860] = {
-			["name"] = "Skyhorn, Highmountain",
 			["m"] = 1024,
 			["f"] = 0,
+			["name"] = "Skyhorn, Highmountain",
 			["coord"] = 2258400227,
 		},
 		[90556] = {
-			["name"] = "Azurewing Repose, Azsuna",
 			["m"] = 1015,
 			["f"] = 0,
+			["name"] = "Azurewing Repose, Azsuna",
 			["coord"] = 2079410094,
 		},
 		[97868] = {
-			["name"] = "The Witchwood, Highmountain",
 			["m"] = 1024,
 			["f"] = 0,
+			["name"] = "The Witchwood, Highmountain",
 			["coord"] = 1647666311,
 		},
 		[112866] = {
@@ -1205,64 +1203,64 @@ DugisFlightmasterDataTable = {
 			["f"] = 0,
 		},
 		[90639] = {
-			["name"] = "Challiane's Terrace, Azsuna",
 			["m"] = 1015,
 			["f"] = 0,
+			["name"] = "Challiane's Terrace, Azsuna",
 			["coord"] = 1752831794,
 		},
 		[96565] = {
-			["name"] = "Obsidian Overlook, Highmountain",
 			["m"] = 1024,
 			["f"] = 0,
+			["name"] = "Obsidian Overlook, Highmountain",
 			["coord"] = 2029967545,
 		},
 		[100550] = {
-			["name"] = "Sylvan Falls, Highmountain",
 			["m"] = 1024,
 			["f"] = 0,
+			["name"] = "Sylvan Falls, Highmountain",
 			["coord"] = 1542957263,
 		},
 		[111327] = {
-			["name"] = "Stormtorn Foothills, Stormheim",
 			["m"] = 1017,
 			["f"] = 0,
+			["name"] = "Stormtorn Foothills, Stormheim",
 			["coord"] = 2232703223,
 		},
 		[93447] = {
-			["name"] = "Lorlathil, Val'sharah",
 			["m"] = 1018,
 			["f"] = 0,
+			["name"] = "Lorlathil, Val'sharah",
 			["coord"] = 2361768346,
 		},
 		[98113] = {
-			["name"] = "Lorna's Watch, Stormheim",
 			["m"] = 1017,
 			["f"] = 0,
+			["name"] = "Lorna's Watch, Stormheim",
 			["coord"] = 1607115709,
 		},
 		[98066] = {
 			"98972:111327:98161:111420:93465", -- [1]
-			["name"] = "Shipwreck Cove, Highmountain",
 			["m"] = 1024,
 			["coord"] = 1799232164,
+			["name"] = "Shipwreck Cove, Highmountain",
 			["f"] = 0,
 		},
 		[100468] = {
-			["name"] = "Starsong Refuge, Val'sharah",
 			["m"] = 1018,
 			["f"] = 0,
+			["name"] = "Starsong Refuge, Val'sharah",
 			["coord"] = 2965013023,
 		},
 		[95688] = {
-			["name"] = "Thunder Totem, Highmountain",
 			["m"] = 1080,
 			["f"] = 0,
+			["name"] = "Thunder Totem, Highmountain",
 			["coord"] = 1920688989,
 		},
 		[98972] = {
-			["name"] = "Prepfoot, Highmountain",
 			["m"] = 1024,
 			["f"] = 0,
+			["name"] = "Prepfoot, Highmountain",
 			["coord"] = 2490583353,
 		},
 		[93940] = {
@@ -1275,15 +1273,15 @@ DugisFlightmasterDataTable = {
 			["coord"] = 1813616062,
 		},
 		[100559] = {
-			["name"] = "Stonehoof Watch, Highmountain",
 			["m"] = 1024,
 			["f"] = 0,
+			["name"] = "Stonehoof Watch, Highmountain",
 			["coord"] = 2544674483,
 		},
 		[98114] = {
-			["name"] = "Skyfire Triage Camp, Stormheim",
 			["m"] = 1017,
 			["f"] = 0,
+			["name"] = "Skyfire Triage Camp, Stormheim",
 			["coord"] = 1443856804,
 		},
 		[97870] = {
@@ -1296,15 +1294,15 @@ DugisFlightmasterDataTable = {
 			["f"] = 0,
 		},
 		[111675] = {
-			["name"] = "Meredil, Suramar",
 			["m"] = 1033,
 			["f"] = 0,
+			["name"] = "Meredil, Suramar",
 			["coord"] = 1474854536,
 		},
 		[111624] = {
-			["name"] = "Felblaze Ingress, Azsuna",
 			["m"] = 1015,
 			["f"] = 0,
+			["name"] = "Felblaze Ingress, Azsuna",
 			["coord"] = 2741258455,
 		},
 		[93465] = {
@@ -1315,27 +1313,27 @@ DugisFlightmasterDataTable = {
 			["f"] = 2,
 		},
 		[98161] = {
-			["name"] = "Valdisdall, Stormheim",
 			["m"] = 1017,
 			["f"] = 0,
+			["name"] = "Valdisdall, Stormheim",
 			["coord"] = 2606531108,
 		},
 		[111420] = {
-			["name"] = "Hafr Fjall, Stormheim",
 			["m"] = 1017,
 			["f"] = 0,
+			["name"] = "Hafr Fjall, Stormheim",
 			["coord"] = 2387468240,
 		},
 		[114666] = {
-			["name"] = "Irongrove Retreat, Suramar",
 			["m"] = 1033,
 			["f"] = 0,
+			["name"] = "Irongrove Retreat, Suramar",
 			["coord"] = 1095979364,
 		},
 		[114837] = {
-			["name"] = "Gloaming Reef, Val'sharah",
 			["m"] = 1018,
 			["f"] = 0,
+			["name"] = "Gloaming Reef, Val'sharah",
 			["coord"] = 1115138655,
 		},
 		[96813] = {
@@ -1459,48 +1457,46 @@ DugisCharacterCache = {
 			6374.43, -- [1]
 			827, -- [2]
 		},
-		["CalculateScoreitem:134533:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
-			7409.36, -- [1]
+		["CalculateScoreitem:134537:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
+			6112.01, -- [1]
 			997, -- [2]
 		},
-		["CalculateScoreitem:134532:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
-			5989.3, -- [1]
+		["CalculateScoreitem:134525:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
+			5320.24, -- [1]
 			997, -- [2]
 		},
 		["CalculateScoreitem:140913:::::::::::6:2:3445:34071false110INVTYPE_CHESTnil1"] = {
 			21351.2, -- [1]
 			3100, -- [2]
 		},
-		["CalculateScoreitem:134537:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
-			6112.01, -- [1]
-			997, -- [2]
+		["CalculateScoreitem:140818:::::::::::6:2:3445:34071false110nilnil1"] = {
+			-2, -- [1]
 		},
 		["CalculateScoreitem:141547:::::::::::6:1:34071false110INVTYPE_NECKnil1"] = {
 			7676.3, -- [1]
 			1201, -- [2]
 		},
-		["CalculateScoreitem:134525:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
-			5320.24, -- [1]
+		["CalculateScoreitem:134489:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
+			5834.26, -- [1]
 			997, -- [2]
 		},
 		["CalculateScoreitem:137361:::::::::::23:2:1727:34071false110INVTYPE_WAISTnil1"] = {
 			10150.88, -- [1]
 			1329, -- [2]
 		},
-		["CalculateScoreitem:141546:::::::::::6:1:34071false110INVTYPE_FINGERnil1"] = {
-			6458.87, -- [1]
-			1201, -- [2]
-		},
-		["CalculateScoreitem:140818:::::::::::6:2:3445:34071false110nilnil1"] = {
+		["CalculateScoreitem:140833:::::::::::6:2:3445:34071false110nilnil1"] = {
 			-2, -- [1]
 		},
-		["CalculateScoreitem:134489:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
-			5834.26, -- [1]
+		["CalculateScoreitem:134526:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
+			5664.78, -- [1]
 			997, -- [2]
 		},
-		["CalculateScoreitem:141534:::::::::::6:1:34071false110INVTYPE_FINGERnil1"] = {
-			6735.73, -- [1]
-			1201, -- [2]
+		["CalculateScoreitem:134534:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
+			6706.4, -- [1]
+			997, -- [2]
+		},
+		["CalculateScoreitem:140820:::::::::::6:2:3445:34071false110nilnil1"] = {
+			-2, -- [1]
 		},
 		["CalculateScoreitem:141413:::::::::::5:1:34071false110INVTYPE_CHESTnil1"] = {
 			15470.48, -- [1]
@@ -1510,20 +1506,19 @@ DugisCharacterCache = {
 			16160.98, -- [1]
 			2136, -- [2]
 		},
-		["CalculateScoreitem:140891:::::::::::6:2:3445:34071false110INVTYPE_FEETnil1"] = {
-			14827.82, -- [1]
-			2326, -- [2]
+		["CalculateScoreitem:140823:::::::::::6:2:3445:34071false110nilnil1"] = {
+			-2, -- [1]
 		},
 		["CalculateScoreitem:137524:::::::::::23:2:1727:34071false110INVTYPE_SHOULDERnil1"] = {
 			10802.38, -- [1]
 			1329, -- [2]
 		},
-		["CalculateScoreitem:134527:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
-			7518.05, -- [1]
+		["CalculateScoreitem:137438:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
+			5422.18, -- [1]
 			997, -- [2]
 		},
-		["CalculateScoreitem:134526:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
-			5664.78, -- [1]
+		["CalculateScoreitem:137432:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
+			6179.13, -- [1]
 			997, -- [2]
 		},
 		["CalculateScore|cffa335ee|Hitem:141481::::::::110:250::3:4:42:3466:1482:3336:::|h[Chestplate of Blackened Emeralds]|h|r1false110INVTYPE_CHESTnil1"] = {
@@ -1538,20 +1533,20 @@ DugisCharacterCache = {
 			5686.58, -- [1]
 			1094, -- [2]
 		},
-		["CalculateScoreitem:134540:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
-			6782.15, -- [1]
-			997, -- [2]
+		["CalculateScoreitem:140898:::::::::::5:2:3444:34071false110INVTYPE_NECKnil1"] = {
+			7663.96, -- [1]
+			1516, -- [2]
 		},
 		["CalculateScoreitem:138220:::::::::::3:2:1807:34071false110INVTYPE_FINGERnil1"] = {
 			7207.3, -- [1]
 			1094, -- [2]
 		},
-		["CalculateScoreitem:134493:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
-			8090.73, -- [1]
-			997, -- [2]
+		["CalculateScoreitem:141546:::::::::::3:1:34071false110INVTYPE_FINGERnil1"] = {
+			6458.87, -- [1]
+			1201, -- [2]
 		},
-		["CalculateScoreitem:137438:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
-			5422.18, -- [1]
+		["CalculateScoreitem:134487:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
+			6820.15, -- [1]
 			997, -- [2]
 		},
 		["CalculateScoreitem:140897:::::::::::3:2:3443:34071false110INVTYPE_FINGERnil1"] = {
@@ -1562,13 +1557,13 @@ DugisCharacterCache = {
 			7466.55, -- [1]
 			997, -- [2]
 		},
-		["CalculateScoreitem:134529:::::::::::23:2:1727:34071false110INVTYPE_NECKnil1"] = {
-			7282.18, -- [1]
-			997, -- [2]
-		},
-		["CalculateScoreitem:141544:::::::::::5:1:34071false110INVTYPE_FINGERnil1"] = {
-			7503.75, -- [1]
+		["CalculateScoreitem:141533:::::::::::3:1:34071false110INVTYPE_FINGERnil1"] = {
+			6588.16, -- [1]
 			1201, -- [2]
+		},
+		["CalculateScoreitem:133633:::::::::::23:2:1727:34071false110INVTYPE_NECKnil1"] = {
+			6820.15, -- [1]
+			997, -- [2]
 		},
 		["CalculateScoreitem:141459:::::::::::3:1:34071false110INVTYPE_HEADnil1"] = {
 			13993.93, -- [1]
@@ -1578,69 +1573,25 @@ DugisCharacterCache = {
 			8900.27, -- [1]
 			960, -- [2]
 		},
-		["CalculateScoreitem:137432:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
-			6179.13, -- [1]
-			997, -- [2]
+		["CalculateScoreitem:141545:::::::::::3:1:34071false110INVTYPE_FINGERnil1"] = {
+			8571.14, -- [1]
+			1201, -- [2]
 		},
-		["CalculateScoreitem:140898:::::::::::5:2:3444:34071false110INVTYPE_NECKnil1"] = {
-			7663.96, -- [1]
-			1516, -- [2]
+		["CalculateScoreitem:140894:::::::::::3:2:3443:34071false110INVTYPE_NECKnil1"] = {
+			8146.1, -- [1]
+			1319, -- [2]
 		},
 		["CalculateScoreitem:140895:::::::::::5:2:3444:34071false110INVTYPE_FINGERnil1"] = {
 			7338.55, -- [1]
 			1516, -- [2]
 		},
-		["CalculateScoreitem:139237:::::::::::3:2:1807:34071false110INVTYPE_FINGERnil1"] = {
-			7128.55, -- [1]
-			1094, -- [2]
+		["CalculateScoreitem:134531:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
+			5405.89, -- [1]
+			997, -- [2]
 		},
 		["CalculateScoreitem:141441:::::::::::5:1:34071false110INVTYPE_HANDnil1"] = {
 			11823.88, -- [1]
 			1601, -- [2]
-		},
-		["CalculateScoreitem:141492:::::::::::6:1:34071false110INVTYPE_FINGERnil1"] = {
-			6675.86, -- [1]
-			1201, -- [2]
-		},
-		["CalculateScoreitem:133634:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
-			6759.25, -- [1]
-			997, -- [2]
-		},
-		["CalculateScoreitem:141541:::::::::::6:1:34071false110INVTYPE_CLOAKnil1"] = {
-			6827.23, -- [1]
-			1201, -- [2]
-		},
-		["CalculateScoreitem:134487:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
-			6820.15, -- [1]
-			997, -- [2]
-		},
-		["CalculateScoreitem:141539:::::::::::5:1:34071false110INVTYPE_CLOAKnil1"] = {
-			7158.99, -- [1]
-			1201, -- [2]
-		},
-		["CalculateScoreitem:141544:::::::::::6:1:34071false110INVTYPE_FINGERnil1"] = {
-			7503.75, -- [1]
-			1201, -- [2]
-		},
-		["CalculateScoreitem:141546:::::::::::5:1:34071false110INVTYPE_FINGERnil1"] = {
-			6458.87, -- [1]
-			1201, -- [2]
-		},
-		["CalculateScoreitem:141545:::::::::::3:1:34071false110INVTYPE_FINGERnil1"] = {
-			8571.14, -- [1]
-			1201, -- [2]
-		},
-		["CalculateScoreitem:141533:::::::::::3:1:34071false110INVTYPE_FINGERnil1"] = {
-			6588.16, -- [1]
-			1201, -- [2]
-		},
-		["CalculateScoreitem:139332:::::::::::5:2:1805:34071false110INVTYPE_NECKnil1"] = {
-			6296.98, -- [1]
-			1258, -- [2]
-		},
-		["CalculateScoreitem:134531:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
-			5405.89, -- [1]
-			997, -- [2]
 		},
 		["CalculateScoreitem:134490:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
 			7214.8, -- [1]
@@ -1650,33 +1601,75 @@ DugisCharacterCache = {
 			6735.73, -- [1]
 			1201, -- [2]
 		},
+		["CalculateScoreitem:141541:::::::::::6:1:34071false110INVTYPE_CLOAKnil1"] = {
+			6827.23, -- [1]
+			1201, -- [2]
+		},
 		["CalculateScoreitem:141533:::::::::::5:1:34071false110INVTYPE_FINGERnil1"] = {
 			6588.16, -- [1]
 			1201, -- [2]
 		},
-		["CalculateScoreitem:139234:::::::::::5:2:1805:34071false110INVTYPE_FEETnil1"] = {
-			12150.01, -- [1]
-			1678, -- [2]
-		},
-		["CalculateScoreitem:141473:::::::::::5:1:34071false110INVTYPE_NECKnil1"] = {
-			8458.87, -- [1]
+		["CalculateScoreitem:141539:::::::::::5:1:34071false110INVTYPE_CLOAKnil1"] = {
+			7158.99, -- [1]
 			1201, -- [2]
 		},
-		["CalculateScoreitem:139238:::::::::::3:2:1807:34071false110INVTYPE_FINGERnil1"] = {
-			5633.54, -- [1]
-			1094, -- [2]
+		["CalculateScoreitem:140884:::::::::::5:2:3444:34071false110INVTYPE_FEETnil1"] = {
+			13776.1, -- [1]
+			2022, -- [2]
 		},
 		["CalculateScoreitem:140895:::::::::::3:2:3443:34071false110INVTYPE_FINGERnil1"] = {
 			6620.46, -- [1]
 			1319, -- [2]
 		},
-		["CalculateScoreitem:141486:::::::::::3:1:34071false110INVTYPE_FINGERnil1"] = {
+		["CalculateScoreitem:140891:::::::::::3:2:3443:34071false110INVTYPE_FEETnil1"] = {
+			12230.75, -- [1]
+			1758, -- [2]
+		},
+		["CalculateScoreitem:141547:::::::::::3:1:34071false110INVTYPE_NECKnil1"] = {
+			7676.3, -- [1]
+			1201, -- [2]
+		},
+		["CalculateScoreitem:139332:::::::::::5:2:1805:34071false110INVTYPE_NECKnil1"] = {
+			6296.98, -- [1]
+			1258, -- [2]
+		},
+		["CalculateScoreitem:137533:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
+			7674.61, -- [1]
+			997, -- [2]
+		},
+		["CalculateScoreitem:141437:::::::::::5:1:34071false110INVTYPE_FEETnil1"] = {
+			11731.47, -- [1]
+			1601, -- [2]
+		},
+		["CalculateScoreitem:140821:::::::::::6:2:3445:34071false110nilnil1"] = {
+			-2, -- [1]
+		},
+		["CalculateScoreitem:140836:::::::::::6:2:3445:34071false110nilnil1"] = {
+			-2, -- [1]
+		},
+		["CalculateScoreitem:141486:::::::::::5:1:34071false110INVTYPE_FINGERnil1"] = {
 			5978.26, -- [1]
 			1201, -- [2]
 		},
-		["CalculateScoreitem:141492:::::::::::3:1:34071false110INVTYPE_FINGERnil1"] = {
-			6675.86, -- [1]
-			1201, -- [2]
+		["CalculateScoreitem:141459:::::::::::6:1:34071false110INVTYPE_HEADnil1"] = {
+			13993.93, -- [1]
+			2136, -- [2]
+		},
+		["CalculateScoreitem:139238:::::::::::3:2:1807:34071false110INVTYPE_FINGERnil1"] = {
+			5633.54, -- [1]
+			1094, -- [2]
+		},
+		["CalculateScoreitem:140882:::::::::::3:2:3443:34071false110INVTYPE_LEGSnil1"] = {
+			16387.03, -- [1]
+			2345, -- [2]
+		},
+		["CalculateScoreitem:137526:::::::::::23:2:1727:34071false110INVTYPE_HEADnil1"] = {
+			12770.52, -- [1]
+			1772, -- [2]
+		},
+		["CalculateScoreitem:137529:::::::::::23:2:1727:34071false110INVTYPE_FEETnil1"] = {
+			10065.83, -- [1]
+			1329, -- [2]
 		},
 		["CalculateScoreitem:133767:::::::::::23:2:1727:34071false110INVTYPE_NECKnil1"] = {
 			5371.18, -- [1]
@@ -1686,39 +1679,41 @@ DugisCharacterCache = {
 			5710.04, -- [1]
 			997, -- [2]
 		},
-		["CalculateScoreitem:141547:::::::::::3:1:34071false110INVTYPE_NECKnil1"] = {
-			7676.3, -- [1]
-			1201, -- [2]
+		["CalculateScore|cff0070dd|Hitem:134183::::::::110:250::2:3:1726:1492:3339:::|h[Skoldiir Legguards]|h|r1false110INVTYPE_LEGSnil1"] = {
+			12022.29, -- [1]
+			1615, -- [2]
 		},
-		["CalculateScoreitem:133629:::::::::::23:2:1727:34071false110INVTYPE_HEADnil1"] = {
-			12419.63, -- [1]
-			1772, -- [2]
+		["CalculateScoreitem:138358:::::::::::5:2:3444:34071false110INVTYPE_LEGSnil1"] = {
+			17810.59, -- [1]
+			2696, -- [2]
 		},
-		["CalculateScoreitem:141533:::::::::::6:1:34071false110INVTYPE_FINGERnil1"] = {
-			6588.16, -- [1]
-			1201, -- [2]
+		["CalculateScoreitem:134141:::::::::::23:2:1727:34071false110INVTYPE_FEETnil1"] = {
+			10723.45, -- [1]
+			1329, -- [2]
 		},
-		["CalculateScoreitem:134528:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
-			5216.14, -- [1]
-			997, -- [2]
-		},
-		["CalculateScoreitem:141476:::::::::::3:1:34071false110INVTYPE_HANDnil1"] = {
-			11142.98, -- [1]
-			1601, -- [2]
-		},
-		["CalculateScoreitem:141437:::::::::::5:1:34071false110INVTYPE_FEETnil1"] = {
+		["CalculateScoreitem:141437:::::::::::6:1:34071false110INVTYPE_FEETnil1"] = {
 			11731.47, -- [1]
 			1601, -- [2]
 		},
-		["CalculateScoreitem:140821:::::::::::6:2:3445:34071false110nilnil1"] = {
-			-2, -- [1]
+		["CalculateScoreitem:137525:::::::::::23:2:1727:34071false110INVTYPE_HANDnil1"] = {
+			10587.72, -- [1]
+			1329, -- [2]
+		},
+		["CalculateScoreitem:138361:::::::::::6:2:3445:34071false110INVTYPE_SHOULDERnil1"] = {
+			14982.84, -- [1]
+			2326, -- [2]
+		},
+		["CalculateScoreitem:137334:::::::::::23:2:1727:34071false110INVTYPE_FEETnil1"] = {
+			10679.31, -- [1]
+			1329, -- [2]
 		},
 		["CalculateScore|cff1eff00|Hitem:24671::::::-6:2062876709:110:250:512:22::110:::|h[Eldr'naan Jerkin of the Eagle]|h|r1false110INVTYPE_CHESTnil1"] = {
 			223.44, -- [1]
 			37, -- [2]
 		},
-		["CalculateScoreitem:140836:::::::::::6:2:3445:34071false110nilnil1"] = {
-			-2, -- [1]
+		["CalculateScoreitem:134514:::::::::::23:2:1727:34071false110INVTYPE_LEGSnil1"] = {
+			13087.9, -- [1]
+			1773, -- [2]
 		},
 		["CalculateScoreitem:138355:::::::::::5:2:3444:34071false110INVTYPE_HEADnil1"] = {
 			16671.36, -- [1]
@@ -1736,25 +1731,25 @@ DugisCharacterCache = {
 			12158.17, -- [1]
 			1758, -- [2]
 		},
-		["CalculateScoreitem:141545:::::::::::5:1:34071false110INVTYPE_FINGERnil1"] = {
-			8571.14, -- [1]
-			1201, -- [2]
+		["CalculateScore|cff0070dd|Hitem:134223::::::::110:250::28:3:3395:1492:3339:::|h[Coralplate Chestguard]|h|r1false110INVTYPE_CHESTnil1"] = {
+			14111.94, -- [1]
+			1615, -- [2]
 		},
 		["CalculateScoreitem:133765:::::::::::23:2:1727:34071false110INVTYPE_CLOAKnil1"] = {
 			6649.13, -- [1]
 			997, -- [2]
 		},
-		["CalculateScoreitem:138364:::::::::::3:2:3443:34071false110INVTYPE_CLOAKnil1"] = {
-			7713.51, -- [1]
-			1319, -- [2]
+		["CalculateScoreitem:133630:::::::::::23:2:1727:34071false110INVTYPE_LEGSnil1"] = {
+			12767.42, -- [1]
+			1772, -- [2]
 		},
 		["CalculateScoreitem:140880:::::::::::6:2:3445:34071false110INVTYPE_WAISTnil1"] = {
 			14948.87, -- [1]
 			2326, -- [2]
 		},
-		["CalculateScoreitem:134524:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
-			6212.14, -- [1]
-			997, -- [2]
+		["CalculateScoreitem:137528:::::::::::23:2:1727:34071false110INVTYPE_LEGSnil1"] = {
+			12698.46, -- [1]
+			1772, -- [2]
 		},
 		["CalculateScoreitem:140808:::::::::::6:2:3445:34071false110INVTYPE_TRINKETnil1"] = {
 			2360.4, -- [1]
@@ -1764,29 +1759,29 @@ DugisCharacterCache = {
 			9642.42, -- [1]
 			1329, -- [2]
 		},
-		["CalculateScoreitem:136772:::::::::::23:2:1727:34071false110INVTYPE_FEETnil1"] = {
-			10409.15, -- [1]
+		["CalculateScoreitem:134529:::::::::::23:2:1727:34071false110INVTYPE_NECKnil1"] = {
+			7282.18, -- [1]
+			997, -- [2]
+		},
+		["CalculateScoreitem:137436:::::::::::23:2:1727:34071false110INVTYPE_WAISTnil1"] = {
+			9802.73, -- [1]
 			1329, -- [2]
 		},
-		["CalculateScoreitem:134523:::::::::::23:2:1727:34071false110INVTYPE_FEETnil1"] = {
-			10472.55, -- [1]
-			1329, -- [2]
-		},
-		["CalculateScoreitem:134508:::::::::::23:2:1727:34071false110INVTYPE_HANDnil1"] = {
-			9854.12, -- [1]
-			1329, -- [2]
+		["CalculateScoreitem:139332:::::::::::6:2:1806:34071false110INVTYPE_NECKnil1"] = {
+			6990.8, -- [1]
+			1448, -- [2]
 		},
 		["CalculateScoreitem:139237:::::::::::5:2:1805:34071false110INVTYPE_FINGERnil1"] = {
 			7820.25, -- [1]
 			1258, -- [2]
 		},
-		["CalculateScoreitem:140891:::::::::::3:2:3443:34071false110INVTYPE_FEETnil1"] = {
-			12230.75, -- [1]
-			1758, -- [2]
+		["CalculateScoreitem:141547:::::::::::5:1:34071false110INVTYPE_NECKnil1"] = {
+			7676.3, -- [1]
+			1201, -- [2]
 		},
-		["CalculateScoreitem:134516:::::::::::23:2:1727:34071false110INVTYPE_LEGSnil1"] = {
-			14125.34, -- [1]
-			1773, -- [2]
+		["CalculateScoreitem:141438:::::::::::3:1:34071false110INVTYPE_NECKnil1"] = {
+			6476.98, -- [1]
+			1201, -- [2]
 		},
 		["CalculateScoreitem:138352:::::::::::6:2:3445:34071false110INVTYPE_HANDnil1"] = {
 			14379.34, -- [1]
@@ -1800,25 +1795,25 @@ DugisCharacterCache = {
 			9449.03, -- [1]
 			1329, -- [2]
 		},
-		["CalculateScoreitem:137533:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
-			7674.61, -- [1]
-			997, -- [2]
+		["CalculateScoreitem:137342:::::::::::23:2:1727:34071false110INVTYPE_LEGSnil1"] = {
+			13658.64, -- [1]
+			1773, -- [2]
 		},
-		["CalculateScoreitem:138361:::::::::::6:2:3445:34071false110INVTYPE_SHOULDERnil1"] = {
-			14982.84, -- [1]
-			2326, -- [2]
+		["CalculateScoreitem:138361:::::::::::3:2:3443:34071false110INVTYPE_SHOULDERnil1"] = {
+			12385.05, -- [1]
+			1758, -- [2]
 		},
 		["CalculateScoreitem:141542:::::::::::3:1:34071false110INVTYPE_CLOAKnil1"] = {
 			6855.91, -- [1]
 			1201, -- [2]
 		},
-		["CalculateScoreitem:137526:::::::::::23:2:1727:34071false110INVTYPE_HEADnil1"] = {
-			12770.52, -- [1]
-			1772, -- [2]
+		["CalculateScoreitem:138361:::::::::::5:2:3444:34071false110INVTYPE_SHOULDERnil1"] = {
+			13602.55, -- [1]
+			2022, -- [2]
 		},
-		["CalculateScoreitem:138364:::::::::::6:2:3445:34071false110INVTYPE_CLOAKnil1"] = {
-			9617.06, -- [1]
-			1744, -- [2]
+		["CalculateScoreitem:138364:::::::::::3:2:3443:34071false110INVTYPE_CLOAKnil1"] = {
+			7713.51, -- [1]
+			1319, -- [2]
 		},
 		["CalculateScore|cff0070dd|Hitem:134322::130216::::::110:250::26:5:1825:1808:605:1472:1675:::|h[Drained Mana Crystal]|h|r1false110INVTYPE_TRINKETnil1"] = {
 			3232.36, -- [1]
@@ -1828,88 +1823,87 @@ DugisCharacterCache = {
 			5934.83, -- [1]
 			997, -- [2]
 		},
-		["CalculateScoreitem:137529:::::::::::23:2:1727:34071false110INVTYPE_FEETnil1"] = {
-			10065.83, -- [1]
-			1329, -- [2]
+		["CalculateScoreitem:139240:::::::::::23:2:1727:34071false110INVTYPE_LEGSnil1"] = {
+			13214.72, -- [1]
+			1773, -- [2]
 		},
-		["CalculateScoreitem:134519:::::::::::23:2:1727:34071false110INVTYPE_HANDnil1"] = {
-			9416.16, -- [1]
-			1329, -- [2]
+		["CalculateScoreitem:141492:::::::::::5:1:34071false110INVTYPE_FINGERnil1"] = {
+			6675.86, -- [1]
+			1201, -- [2]
 		},
 		["CalculateScoreitem:140912:::::::::::6:2:3445:34071false110INVTYPE_WAISTnil1"] = {
 			13891.48, -- [1]
 			2326, -- [2]
 		},
-		["CalculateScoreitem:140909:::::::::::6:2:3445:34071false110INVTYPE_CLOAKnil1"] = {
-			9791.12, -- [1]
-			1744, -- [2]
+		["CalculateScoreitem:133629:::::::::::23:2:1727:34071false110INVTYPE_HEADnil1"] = {
+			12419.63, -- [1]
+			1772, -- [2]
 		},
-		["CalculateScoreitem:134507:::::::::::23:2:1727:34071false110INVTYPE_FEETnil1"] = {
-			10857.72, -- [1]
+		["CalculateScoreitem:137429:::::::::::23:2:1727:34071false110INVTYPE_HANDnil1"] = {
+			9737.69, -- [1]
 			1329, -- [2]
-		},
-		["CalculateScoreitem:141437:::::::::::3:1:34071false110INVTYPE_FEETnil1"] = {
-			11731.47, -- [1]
-			1601, -- [2]
-		},
-		["CalculateScoreitem:134141:::::::::::23:2:1727:34071false110INVTYPE_FEETnil1"] = {
-			10723.45, -- [1]
-			1329, -- [2]
-		},
-		["CalculateScoreitem:141437:::::::::::6:1:34071false110INVTYPE_FEETnil1"] = {
-			11731.47, -- [1]
-			1601, -- [2]
-		},
-		["CalculateScoreitem:139225:::::::::::3:2:1807:34071false110INVTYPE_HANDnil1"] = {
-			10728.65, -- [1]
-			1459, -- [2]
 		},
 		["CalculateScoreitem:140904:::::::::::3:2:3443:34071false110INVTYPE_FEETnil1"] = {
 			12459.48, -- [1]
 			1758, -- [2]
 		},
-		["CalculateScoreitem:141486:::::::::::5:1:34071false110INVTYPE_FINGERnil1"] = {
-			5978.26, -- [1]
-			1201, -- [2]
+		["CalculateScoreitem:140893:::::::::::6:2:3445:34071false110INVTYPE_WRISTnil1"] = {
+			10234.66, -- [1]
+			1744, -- [2]
 		},
-		["CalculateScoreitem:134488:::::::::::23:2:1727:34071false110INVTYPE_NECKnil1"] = {
-			6445.52, -- [1]
+		["CalculateScoreitem:134519:::::::::::23:2:1727:34071false110INVTYPE_HANDnil1"] = {
+			9416.16, -- [1]
+			1329, -- [2]
+		},
+		["CalculateScoreitem:138218:::::::::::5:2:1805:34071false110INVTYPE_WRISTnil1"] = {
+			8720.92, -- [1]
+			1258, -- [2]
+		},
+		["CalculateScoreitem:140880:::::::::::3:2:3443:34071false110INVTYPE_WAISTnil1"] = {
+			12309.34, -- [1]
+			1758, -- [2]
+		},
+		["CalculateScoreitem:140837:::::::::::6:2:3445:34071false110nilnil1"] = {
+			-2, -- [1]
+		},
+		["CalculateScoreitem:137487:::::::::::23:2:1727:34071false110INVTYPE_NECKnil1"] = {
+			7935.2, -- [1]
 			997, -- [2]
 		},
 		["CalculateScoreitem:138216:::::::::::3:2:1807:34071false110INVTYPE_CHESTnil1"] = {
 			14087.41, -- [1]
 			1945, -- [2]
 		},
-		["CalculateScoreitem:139241:::::::::::23:2:1727:34071false110INVTYPE_FEETnil1"] = {
-			10010.45, -- [1]
-			1329, -- [2]
+		["CalculateScoreitem:141486:::::::::::6:1:34071false110INVTYPE_FINGERnil1"] = {
+			5978.26, -- [1]
+			1201, -- [2]
 		},
-		["CalculateScoreitem:137334:::::::::::23:2:1727:34071false110INVTYPE_FEETnil1"] = {
-			10679.31, -- [1]
-			1329, -- [2]
+		["CalculateScoreitem:141441:::::::::::6:1:34071false110INVTYPE_HANDnil1"] = {
+			11823.88, -- [1]
+			1601, -- [2]
 		},
-		["CalculateScoreitem:140882:::::::::::3:2:3443:34071false110INVTYPE_LEGSnil1"] = {
-			16387.03, -- [1]
-			2345, -- [2]
+		["CalculateScoreitem:140894:::::::::::6:2:3445:34071false110INVTYPE_NECKnil1"] = {
+			9862.5, -- [1]
+			1744, -- [2]
 		},
-		["CalculateScoreitem:139239:::::::::::6:2:1806:34071false110INVTYPE_NECKnil1"] = {
-			8646.55, -- [1]
-			1448, -- [2]
+		["CalculateScoreitem:140894:::::::::::5:2:3444:34071false110INVTYPE_NECKnil1"] = {
+			8951.75, -- [1]
+			1516, -- [2]
 		},
 		["CalculateScore|cffe6cc80|Hitem:128292::::::::110:250:256:9::111:::|h[Blades of the Fallen Prince]|h|r1false11016nil1"] = {
 			-3, -- [1]
 		},
-		["CalculateScoreitem:133630:::::::::::23:2:1727:34071false110INVTYPE_LEGSnil1"] = {
-			12767.42, -- [1]
-			1772, -- [2]
+		["CalculateScoreitem:138364:::::::::::5:2:3444:34071false110INVTYPE_CLOAKnil1"] = {
+			8596.42, -- [1]
+			1516, -- [2]
 		},
 		["CalculateScore|cff0070dd|Hitem:134404::130216::::::110:250::2:3:1726:1808:1477:::|h[Stole of Malefic Repose]|h|r1false110INVTYPE_CLOAKnil1"] = {
 			6143.09, -- [1]
 			867, -- [2]
 		},
-		["CalculateScoreitem:137528:::::::::::23:2:1727:34071false110INVTYPE_LEGSnil1"] = {
-			12698.46, -- [1]
-			1772, -- [2]
+		["CalculateScoreitem:140900:::::::::::5:2:3444:34071false110INVTYPE_NECKnil1"] = {
+			8802.25, -- [1]
+			1516, -- [2]
 		},
 		["CalculateScore|cffa335ee|Hitem:139102::130216::::::110:250::30:5:3397:1808:603:1502:3336:::|h[An'she's Invigoring Charm]|h|r1false110INVTYPE_TRINKETnil1"] = {
 			2684.66, -- [1]
@@ -1919,13 +1913,13 @@ DugisCharacterCache = {
 			8004.6, -- [1]
 			1319, -- [2]
 		},
-		["CalculateScoreitem:140900:::::::::::5:2:3444:34071false110INVTYPE_NECKnil1"] = {
-			8802.25, -- [1]
-			1516, -- [2]
+		["CalculateScoreitem:140883:::::::::::5:2:3444:34071false110INVTYPE_SHOULDERnil1"] = {
+			13431.31, -- [1]
+			2022, -- [2]
 		},
-		["CalculateScoreitem:141426:::::::::::6:1:34071false110INVTYPE_SHOULDERnil1"] = {
-			11668.99, -- [1]
-			1601, -- [2]
+		["CalculateScoreitem:140892:::::::::::5:2:3444:34071false110INVTYPE_WAISTnil1"] = {
+			12397.69, -- [1]
+			2022, -- [2]
 		},
 		["CalculateScoreitem:134135:::::::::::23:2:1727:34071false110INVTYPE_CHESTnil1"] = {
 			14791.16, -- [1]
@@ -1939,37 +1933,37 @@ DugisCharacterCache = {
 			8602.55, -- [1]
 			1448, -- [2]
 		},
-		["CalculateScoreitem:137436:::::::::::23:2:1727:34071false110INVTYPE_WAISTnil1"] = {
-			9802.73, -- [1]
-			1329, -- [2]
+		["CalculateScoreitem:139225:::::::::::5:2:1805:34071false110INVTYPE_HANDnil1"] = {
+			11764.95, -- [1]
+			1678, -- [2]
 		},
 		["CalculateScoreitem:134269:::::::::::23:2:1727:34071false110INVTYPE_WAISTnil1"] = {
 			9842.98, -- [1]
 			1329, -- [2]
 		},
-		["CalculateScoreitem:139225:::::::::::5:2:1805:34071false110INVTYPE_HANDnil1"] = {
-			11764.95, -- [1]
-			1678, -- [2]
+		["CalculateScoreitem:139231:::::::::::3:2:1807:34071false110INVTYPE_HEADnil1"] = {
+			13328.37, -- [1]
+			1945, -- [2]
 		},
-		["CalculateScoreitem:138358:::::::::::5:2:3444:34071false110INVTYPE_LEGSnil1"] = {
-			17810.59, -- [1]
-			2696, -- [2]
+		["CalculateScoreitem:140912:::::::::::5:2:3444:34071false110INVTYPE_WAISTnil1"] = {
+			12551.17, -- [1]
+			2022, -- [2]
 		},
-		["CalculateScoreitem:139230:::::::::::5:2:1805:34071false110INVTYPE_LEGSnil1"] = {
-			15923.62, -- [1]
-			2237, -- [2]
+		["CalculateScoreitem:139283:::::::::::23:2:1727:34071false110INVTYPE_WRISTnil1"] = {
+			7654.54, -- [1]
+			997, -- [2]
 		},
 		["CalculateScoreitem:138349:::::::::::3:2:3443:34071false110INVTYPE_CHESTnil1"] = {
 			17053.64, -- [1]
 			2345, -- [2]
 		},
-		["CalculateScoreitem:137342:::::::::::23:2:1727:34071false110INVTYPE_LEGSnil1"] = {
-			13658.64, -- [1]
-			1773, -- [2]
+		["CalculateScoreitem:139229:::::::::::6:2:1806:34071false110INVTYPE_HEADnil1"] = {
+			17169.07, -- [1]
+			2573, -- [2]
 		},
-		["CalculateScoreitem:139240:::::::::::23:2:1727:34071false110INVTYPE_LEGSnil1"] = {
-			13214.72, -- [1]
-			1773, -- [2]
+		["CalculateScoreitem:139239:::::::::::6:2:1806:34071false110INVTYPE_NECKnil1"] = {
+			8646.55, -- [1]
+			1448, -- [2]
 		},
 		["CalculateScoreitem:138358:::::::::::6:2:3445:34071false110INVTYPE_LEGSnil1"] = {
 			19645.13, -- [1]
@@ -1978,29 +1972,29 @@ DugisCharacterCache = {
 		["CalculateScore|cff9d9d9d|Hitem:25406::::::::110:250:512:22::110:::|h[Broken Longbow]|h|r1false11016nil1"] = {
 			-3, -- [1]
 		},
-		["CalculateScoreitem:141492:::::::::::5:1:34071false110INVTYPE_FINGERnil1"] = {
-			6675.86, -- [1]
+		["CalculateScoreitem:141488:::::::::::3:1:34071false110INVTYPE_FINGERnil1"] = {
+			8199.14, -- [1]
 			1201, -- [2]
 		},
 		["CalculateScoreitem:136770:::::::::::23:2:1727:34071false110INVTYPE_CLOAKnil1"] = {
 			6224.89, -- [1]
 			997, -- [2]
 		},
-		["CalculateScoreitem:134514:::::::::::23:2:1727:34071false110INVTYPE_LEGSnil1"] = {
-			13087.9, -- [1]
-			1773, -- [2]
+		["CalculateScoreitem:140878:::::::::::3:2:3443:34071false110INVTYPE_WRISTnil1"] = {
+			8660.22, -- [1]
+			1319, -- [2]
 		},
-		["CalculateScoreitem:139226:::::::::::3:2:1807:34071false110INVTYPE_HANDnil1"] = {
-			9928.07, -- [1]
+		["CalculateScoreitem:139225:::::::::::3:2:1807:34071false110INVTYPE_HANDnil1"] = {
+			10728.65, -- [1]
 			1459, -- [2]
 		},
-		["CalculateScoreitem:140883:::::::::::3:2:3443:34071false110INVTYPE_SHOULDERnil1"] = {
-			12223.63, -- [1]
-			1758, -- [2]
+		["CalculateScoreitem:139229:::::::::::5:2:1805:34071false110INVTYPE_HEADnil1"] = {
+			15601.56, -- [1]
+			2237, -- [2]
 		},
-		["CalculateScoreitem:141425:::::::::::6:1:34071false110INVTYPE_LEGSnil1"] = {
-			15121.28, -- [1]
-			2136, -- [2]
+		["CalculateScoreitem:140796:::::::::::6:2:3445:34071false110INVTYPE_TRINKETnil1"] = {
+			1213.92, -- [1]
+			0, -- [2]
 		},
 		["CalculateScoreitem:133639:::::::::::23:2:1727:34071false110INVTYPE_CLOAKnil1"] = {
 			5893.82, -- [1]
@@ -2010,17 +2004,16 @@ DugisCharacterCache = {
 			13022.01, -- [1]
 			2022, -- [2]
 		},
-		["CalculateScoreitem:139234:::::::::::3:2:1807:34071false110INVTYPE_FEETnil1"] = {
-			11095.98, -- [1]
-			1459, -- [2]
+		["CalculateScoreitem:140831:::::::::::6:2:3445:34071false110nilnil1"] = {
+			-2, -- [1]
 		},
-		["CalculateScoreitem:141425:::::::::::3:1:34071false110INVTYPE_LEGSnil1"] = {
-			15121.28, -- [1]
-			2136, -- [2]
+		["CalculateScoreitem:139235:::::::::::5:2:1805:34071false110INVTYPE_WRISTnil1"] = {
+			8110.25, -- [1]
+			1258, -- [2]
 		},
-		["CalculateScoreitem:137429:::::::::::23:2:1727:34071false110INVTYPE_HANDnil1"] = {
-			9737.69, -- [1]
-			1329, -- [2]
+		["CalculateScoreitem:140790:::::::::::6:2:3445:34071false110INVTYPE_TRINKETnil1"] = {
+			2633.1, -- [1]
+			0, -- [2]
 		},
 		["CalculateScoreitem:140906:::::::::::5:2:3444:34071false110INVTYPE_FINGERnil1"] = {
 			8250.41, -- [1]
@@ -2042,21 +2035,21 @@ DugisCharacterCache = {
 			10217.8, -- [1]
 			1329, -- [2]
 		},
-		["CalculateScoreitem:138355:::::::::::3:2:3443:34071false110INVTYPE_HEADnil1"] = {
-			15110.92, -- [1]
-			2345, -- [2]
+		["CalculateScoreitem:140883:::::::::::3:2:3443:34071false110INVTYPE_SHOULDERnil1"] = {
+			12223.63, -- [1]
+			1758, -- [2]
 		},
 		["CalculateScoreitem:121276:::::::::::23:2:1727:34071false110INVTYPE_CHESTnil1"] = {
 			13276.42, -- [1]
 			1773, -- [2]
 		},
-		["CalculateScoreitem:140893:::::::::::6:2:3445:34071false110INVTYPE_WRISTnil1"] = {
-			10234.66, -- [1]
-			1744, -- [2]
+		["CalculateScoreitem:140892:::::::::::3:2:3443:34071false110INVTYPE_WAISTnil1"] = {
+			11219.97, -- [1]
+			1758, -- [2]
 		},
-		["CalculateScoreitem:139234:::::::::::6:2:1806:34071false110INVTYPE_FEETnil1"] = {
-			13335.07, -- [1]
-			1930, -- [2]
+		["CalculateScoreitem:139234:::::::::::3:2:1807:34071false110INVTYPE_FEETnil1"] = {
+			11095.98, -- [1]
+			1459, -- [2]
 		},
 		["CalculateScore|cffa335ee|Hitem:137357::::::::110:250::23:3:1727:1502:3336:::|h[Mark of Dargrul]|h|r1false110INVTYPE_TRINKETnil1"] = {
 			1006.56, -- [1]
@@ -2070,48 +2063,49 @@ DugisCharacterCache = {
 			6565.08, -- [1]
 			1201, -- [2]
 		},
-		["CalculateScoreitem:139233:::::::::::6:2:1806:34071false110INVTYPE_SHOULDERnil1"] = {
-			13505.31, -- [1]
-			1930, -- [2]
+		["CalculateScoreitem:139239:::::::::::3:2:1807:34071false110INVTYPE_NECKnil1"] = {
+			7168.05, -- [1]
+			1094, -- [2]
 		},
-		["CalculateScoreitem:140884:::::::::::3:2:3443:34071false110INVTYPE_FEETnil1"] = {
-			12536.38, -- [1]
-			1758, -- [2]
+		["CalculateScoreitem:138218:::::::::::6:2:1806:34071false110INVTYPE_WRISTnil1"] = {
+			9595.86, -- [1]
+			1447, -- [2]
 		},
-		["CalculateScoreitem:134517:::::::::::23:2:1727:34071false110INVTYPE_SHOULDERnil1"] = {
-			10404.73, -- [1]
-			1329, -- [2]
+		["CalculateScoreitem:134506:::::::::::23:2:1727:34071false110INVTYPE_LEGSnil1"] = {
+			13752.89, -- [1]
+			1773, -- [2]
 		},
 		["CalculateScoreitem:141538:::::::::::5:1:34071false110INVTYPE_CLOAKnil1"] = {
 			6565.08, -- [1]
 			1201, -- [2]
 		},
-		["CalculateScoreitem:140880:::::::::::3:2:3443:34071false110INVTYPE_WAISTnil1"] = {
-			12309.34, -- [1]
-			1758, -- [2]
-		},
-		["CalculateScoreitem:140837:::::::::::6:2:3445:34071false110nilnil1"] = {
-			-2, -- [1]
+		["CalculateScoreitem:134516:::::::::::23:2:1727:34071false110INVTYPE_LEGSnil1"] = {
+			14125.34, -- [1]
+			1773, -- [2]
 		},
 		["CalculateScoreitem:139231:::::::::::6:2:1806:34071false110INVTYPE_HEADnil1"] = {
 			16169.84, -- [1]
 			2573, -- [2]
 		},
-		["CalculateScoreitem:141441:::::::::::6:1:34071false110INVTYPE_HANDnil1"] = {
-			11823.88, -- [1]
-			1601, -- [2]
+		["CalculateScoreitem:139230:::::::::::6:2:1806:34071false110INVTYPE_LEGSnil1"] = {
+			17498.37, -- [1]
+			2573, -- [2]
+		},
+		["CalculateScoreitem:140893:::::::::::3:2:3443:34071false110INVTYPE_WRISTnil1"] = {
+			8363.18, -- [1]
+			1319, -- [2]
 		},
 		["CalculateScoreitem:134405:::::::::::23:2:1727:34071false110INVTYPE_CLOAKnil1"] = {
 			5647.04, -- [1]
 			997, -- [2]
 		},
-		["CalculateScoreitem:139227:::::::::::6:2:1806:34071false110INVTYPE_WAISTnil1"] = {
-			12060.38, -- [1]
-			1930, -- [2]
+		["CalculateScoreitem:140912:::::::::::3:2:3443:34071false110INVTYPE_WAISTnil1"] = {
+			11363.48, -- [1]
+			1758, -- [2]
 		},
-		["CalculateScoreitem:139228:::::::::::5:2:1805:34071false110INVTYPE_WAISTnil1"] = {
-			10748.93, -- [1]
-			1678, -- [2]
+		["CalculateScoreitem:140893:::::::::::5:2:3444:34071false110INVTYPE_WRISTnil1"] = {
+			9239.99, -- [1]
+			1516, -- [2]
 		},
 		["CalculateScoreitem:134412:::::::::::23:2:1727:34071false110INVTYPE_CLOAKnil1"] = {
 			5710.04, -- [1]
@@ -2125,16 +2119,16 @@ DugisCharacterCache = {
 			9927.85, -- [1]
 			1744, -- [2]
 		},
-		["CalculateScoreitem:139227:::::::::::5:2:1805:34071false110INVTYPE_WAISTnil1"] = {
-			10929.75, -- [1]
-			1678, -- [2]
+		["CalculateScoreitem:134180:::::::::::23:2:1727:34071false110INVTYPE_HANDnil1"] = {
+			9391.84, -- [1]
+			1329, -- [2]
 		},
-		["CalculateScoreitem:140880:::::::::::5:2:3444:34071false110INVTYPE_WAISTnil1"] = {
-			13548.78, -- [1]
-			2022, -- [2]
+		["CalculateScoreitem:139235:::::::::::3:2:1807:34071false110INVTYPE_WRISTnil1"] = {
+			7364.97, -- [1]
+			1094, -- [2]
 		},
-		["CalculateScoreitem:138364:::::::::::5:2:3444:34071false110INVTYPE_CLOAKnil1"] = {
-			8596.42, -- [1]
+		["CalculateScoreitem:140909:::::::::::5:2:3444:34071false110INVTYPE_CLOAKnil1"] = {
+			8760.81, -- [1]
 			1516, -- [2]
 		},
 		["CalculateScoreitem:134510:::::::::::23:2:1727:34071false110INVTYPE_SHOULDERnil1"] = {
@@ -2145,13 +2139,13 @@ DugisCharacterCache = {
 			16194.64, -- [1]
 			2345, -- [2]
 		},
-		["CalculateScoreitem:140883:::::::::::5:2:3444:34071false110INVTYPE_SHOULDERnil1"] = {
-			13431.31, -- [1]
-			2022, -- [2]
+		["CalculateScoreitem:134517:::::::::::23:2:1727:34071false110INVTYPE_SHOULDERnil1"] = {
+			10404.73, -- [1]
+			1329, -- [2]
 		},
-		["CalculateScoreitem:139228:::::::::::3:2:1807:34071false110INVTYPE_WAISTnil1"] = {
-			9756.84, -- [1]
-			1459, -- [2]
+		["CalculateScoreitem:139233:::::::::::5:2:1805:34071false110INVTYPE_SHOULDERnil1"] = {
+			12315.17, -- [1]
+			1678, -- [2]
 		},
 		["CalculateScoreitem:136977:::::::::::23:2:1727:34071false110INVTYPE_CLOAKnil1"] = {
 			6379.12, -- [1]
@@ -2165,57 +2159,57 @@ DugisCharacterCache = {
 			12673.72, -- [1]
 			1773, -- [2]
 		},
-		["CalculateScoreitem:139231:::::::::::3:2:1807:34071false110INVTYPE_HEADnil1"] = {
-			13328.37, -- [1]
+		["CalculateScoreitem:139230:::::::::::3:2:1807:34071false110INVTYPE_LEGSnil1"] = {
+			14528.91, -- [1]
 			1945, -- [2]
-		},
-		["CalculateScoreitem:140912:::::::::::5:2:3444:34071false110INVTYPE_WAISTnil1"] = {
-			12551.17, -- [1]
-			2022, -- [2]
-		},
-		["CalculateScoreitem:140896:::::::::::3:2:3443:34071false110INVTYPE_FINGERnil1"] = {
-			8046.85, -- [1]
-			1319, -- [2]
-		},
-		["CalculateScoreitem:134498:::::::::::23:2:1727:34071false110INVTYPE_NECKnil1"] = {
-			6630.65, -- [1]
-			997, -- [2]
-		},
-		["CalculateScoreitem:141439:::::::::::6:1:34071false110INVTYPE_WRISTnil1"] = {
-			7902.96, -- [1]
-			1201, -- [2]
-		},
-		["CalculateScoreitem:138218:::::::::::5:2:1805:34071false110INVTYPE_WRISTnil1"] = {
-			8720.92, -- [1]
-			1258, -- [2]
 		},
 		["CalculateScoreitem:140910:::::::::::5:2:3444:34071false110INVTYPE_CLOAKnil1"] = {
 			7883.95, -- [1]
 			1516, -- [2]
 		},
-		["CalculateScoreitem:139229:::::::::::6:2:1806:34071false110INVTYPE_HEADnil1"] = {
-			17169.07, -- [1]
-			2573, -- [2]
+		["CalculateScoreitem:140896:::::::::::3:2:3443:34071false110INVTYPE_FINGERnil1"] = {
+			8046.85, -- [1]
+			1319, -- [2]
+		},
+		["CalculateScoreitem:139233:::::::::::6:2:1806:34071false110INVTYPE_SHOULDERnil1"] = {
+			13505.31, -- [1]
+			1930, -- [2]
+		},
+		["CalculateScoreitem:141439:::::::::::6:1:34071false110INVTYPE_WRISTnil1"] = {
+			7902.96, -- [1]
+			1201, -- [2]
+		},
+		["CalculateScoreitem:137311:::::::::::23:2:1727:34071false110INVTYPE_NECKnil1"] = {
+			6241.55, -- [1]
+			997, -- [2]
+		},
+		["CalculateScoreitem:140902:::::::::::5:2:3444:34071false110INVTYPE_WRISTnil1"] = {
+			10339.79, -- [1]
+			1516, -- [2]
+		},
+		["CalculateScoreitem:139234:::::::::::6:2:1806:34071false110INVTYPE_FEETnil1"] = {
+			13335.07, -- [1]
+			1930, -- [2]
 		},
 		["CalculateScoreitem:134267:::::::::::23:2:1727:34071false110INVTYPE_CHESTnil1"] = {
 			14409.05, -- [1]
 			1773, -- [2]
 		},
-		["CalculateScoreitem:134506:::::::::::23:2:1727:34071false110INVTYPE_LEGSnil1"] = {
-			13752.89, -- [1]
+		["CalculateScoreitem:141476:::::::::::3:1:34071false110INVTYPE_HANDnil1"] = {
+			11142.98, -- [1]
+			1601, -- [2]
+		},
+		["CalculateScoreitem:134511:::::::::::23:2:1727:34071false110INVTYPE_HEADnil1"] = {
+			13438.31, -- [1]
 			1773, -- [2]
 		},
-		["CalculateScoreitem:141439:::::::::::3:1:34071false110INVTYPE_WRISTnil1"] = {
-			7902.96, -- [1]
+		["CalculateScoreitem:141473:::::::::::3:1:34071false110INVTYPE_NECKnil1"] = {
+			8458.87, -- [1]
 			1201, -- [2]
 		},
-		["CalculateScoreitem:140855:::::::::::5:2:3444:34071false110INVTYPE_CLOAKnil1"] = {
-			8482.05, -- [1]
-			1516, -- [2]
-		},
-		["CalculateScoreitem:134362:::::::::::23:2:1727:34071false110INVTYPE_WRISTnil1"] = {
-			7307.24, -- [1]
-			997, -- [2]
+		["CalculateScoreitem:141473:::::::::::5:1:34071false110INVTYPE_NECKnil1"] = {
+			8458.87, -- [1]
+			1201, -- [2]
 		},
 		["CalculateScore|cffe6cc80|Hitem:128402:3368:136718:137549:::::110:250:256:9::355:2:1726:1477:2:1726:1477:|h[Maw of the Damned]|h|r1false11016nil1"] = {
 			7529.52, -- [1]
@@ -2225,13 +2219,13 @@ DugisCharacterCache = {
 			15470.48, -- [1]
 			2136, -- [2]
 		},
-		["CalculateScoreitem:134518:::::::::::23:2:1727:34071false110INVTYPE_SHOULDERnil1"] = {
-			10344.35, -- [1]
-			1329, -- [2]
+		["CalculateScoreitem:141540:::::::::::6:1:34071false110INVTYPE_CLOAKnil1"] = {
+			7509.62, -- [1]
+			1201, -- [2]
 		},
-		["CalculateScoreitem:140894:::::::::::6:2:3445:34071false110INVTYPE_NECKnil1"] = {
-			9862.5, -- [1]
-			1744, -- [2]
+		["CalculateScoreitem:140882:::::::::::6:2:3445:34071false110INVTYPE_LEGSnil1"] = {
+			19861.16, -- [1]
+			3100, -- [2]
 		},
 		["CalculateScoreitem:140902:::::::::::3:2:3443:34071false110INVTYPE_WRISTnil1"] = {
 			9406.98, -- [1]
@@ -2241,181 +2235,109 @@ DugisCharacterCache = {
 			10742.13, -- [1]
 			1329, -- [2]
 		},
-		["CalculateScoreitem:134520:::::::::::23:2:1727:34071false110INVTYPE_WRISTnil1"] = {
-			7215.19, -- [1]
-			997, -- [2]
+		["CalculateScoreitem:139228:::::::::::6:2:1806:34071false110INVTYPE_WAISTnil1"] = {
+			11868.49, -- [1]
+			1930, -- [2]
 		},
 		["CalculateScoreitem:138221:::::::::::5:2:1805:34071false110INVTYPE_CLOAKnil1"] = {
 			7089.8, -- [1]
 			1258, -- [2]
 		},
-		["CalculateScoreitem:141506:::::::::::5:1:34071false110INVTYPE_NECKnil1"] = {
-			6389.02, -- [1]
-			1201, -- [2]
+		["CalculateScoreitem:139095:::::::::::23:2:1727:34071false110INVTYPE_WAISTnil1"] = {
+			9306.16, -- [1]
+			1329, -- [2]
 		},
 		["CalculateScoreitem:140907:::::::::::5:2:3444:34071false110INVTYPE_HANDnil1"] = {
 			13379.91, -- [1]
 			2022, -- [2]
 		},
-		["CalculateScoreitem:140796:::::::::::6:2:3445:34071false110INVTYPE_TRINKETnil1"] = {
-			1213.92, -- [1]
-			0, -- [2]
+		["CalculateScoreitem:138216:::::::::::5:2:1805:34071false110INVTYPE_CHESTnil1"] = {
+			15441.76, -- [1]
+			2237, -- [2]
 		},
 		["CalculateScoreitem:140879:::::::::::6:2:3445:34071false110INVTYPE_HANDnil1"] = {
 			14793.29, -- [1]
 			2326, -- [2]
 		},
-		["CalculateScoreitem:139235:::::::::::5:2:1805:34071false110INVTYPE_WRISTnil1"] = {
-			8110.25, -- [1]
-			1258, -- [2]
+		["CalculateScoreitem:140877:::::::::::3:2:3443:34071false110INVTYPE_CHESTnil1"] = {
+			17546.85, -- [1]
+			2345, -- [2]
 		},
 		["CalculateScoreitem:140910:::::::::::3:2:3443:34071false110INVTYPE_CLOAKnil1"] = {
 			7039.14, -- [1]
 			1319, -- [2]
 		},
-		["CalculateScoreitem:134512:::::::::::23:2:1727:34071false110INVTYPE_HEADnil1"] = {
-			14262.14, -- [1]
+		["CalculateScoreitem:134515:::::::::::23:2:1727:34071false110INVTYPE_LEGSnil1"] = {
+			14662.28, -- [1]
 			1773, -- [2]
 		},
 		["CalculateScoreitem:134505:::::::::::23:2:1727:34071false110INVTYPE_FEETnil1"] = {
 			9680.99, -- [1]
 			1329, -- [2]
 		},
-		["CalculateScoreitem:138218:::::::::::6:2:1806:34071false110INVTYPE_WRISTnil1"] = {
-			9595.86, -- [1]
-			1447, -- [2]
-		},
-		["CalculateScoreitem:134404:::::::::::23:2:1727:34071false110INVTYPE_CLOAKnil1"] = {
-			6574.23, -- [1]
-			997, -- [2]
-		},
-		["CalculateScoreitem:139283:::::::::::23:2:1727:34071false110INVTYPE_WRISTnil1"] = {
-			7654.54, -- [1]
-			997, -- [2]
-		},
-		["CalculateScoreitem:134522:::::::::::23:2:1727:34071false110INVTYPE_WRISTnil1"] = {
-			7710.32, -- [1]
-			997, -- [2]
-		},
-		["CalculateScoreitem:141473:::::::::::6:1:34071false110INVTYPE_NECKnil1"] = {
-			8458.87, -- [1]
-			1201, -- [2]
-		},
-		["CalculateScoreitem:140878:::::::::::3:2:3443:34071false110INVTYPE_WRISTnil1"] = {
-			8660.22, -- [1]
-			1319, -- [2]
-		},
-		["CalculateScoreitem:134502:::::::::::23:2:1727:34071false110INVTYPE_WRISTnil1"] = {
-			7457.98, -- [1]
-			997, -- [2]
-		},
-		["CalculateScoreitem:141426:::::::::::3:1:34071false110INVTYPE_SHOULDERnil1"] = {
-			11668.99, -- [1]
-			1601, -- [2]
-		},
-		["CalculateScore|cffa335ee|Hitem:137337::::::::110:250::23:4:1727:41:1492:1813:::|h[Deepfurrow Bracers]|h|r1false110INVTYPE_WRISTnil1"] = {
-			8283.28, -- [1]
-			997, -- [2]
-		},
-		["CalculateScoreitem:140893:::::::::::5:2:3444:34071false110INVTYPE_WRISTnil1"] = {
-			9239.99, -- [1]
-			1516, -- [2]
-		},
-		["CalculateScoreitem:139235:::::::::::3:2:1807:34071false110INVTYPE_WRISTnil1"] = {
-			7364.97, -- [1]
-			1094, -- [2]
-		},
-		["CalculateScoreitem:140878:::::::::::5:2:3444:34071false110INVTYPE_WRISTnil1"] = {
-			9554.19, -- [1]
-			1516, -- [2]
-		},
-		["CalculateScoreitem:139233:::::::::::5:2:1805:34071false110INVTYPE_SHOULDERnil1"] = {
-			12315.17, -- [1]
-			1678, -- [2]
-		},
-		["CalculateScoreitem:139248:::::::::::6:2:1806:34071false110INVTYPE_CLOAKnil1"] = {
-			7882.25, -- [1]
-			1448, -- [2]
-		},
-		["CalculateScoreitem:141506:::::::::::3:1:34071false110INVTYPE_NECKnil1"] = {
-			6389.02, -- [1]
-			1201, -- [2]
-		},
-		["CalculateScoreitem:140902:::::::::::5:2:3444:34071false110INVTYPE_WRISTnil1"] = {
-			10339.79, -- [1]
-			1516, -- [2]
-		},
-		["CalculateScoreitem:140893:::::::::::3:2:3443:34071false110INVTYPE_WRISTnil1"] = {
-			8363.18, -- [1]
-			1319, -- [2]
-		},
-		["CalculateScoreitem:139235:::::::::::6:2:1806:34071false110INVTYPE_WRISTnil1"] = {
-			8951.23, -- [1]
-			1447, -- [2]
-		},
-		["CalculateScoreitem:140896:::::::::::6:2:3445:34071false110INVTYPE_FINGERnil1"] = {
-			9751.75, -- [1]
-			1744, -- [2]
-		},
-		["CalculateScoreitem:141540:::::::::::6:1:34071false110INVTYPE_CLOAKnil1"] = {
-			7509.62, -- [1]
-			1201, -- [2]
-		},
-		["CalculateScoreitem:139228:::::::::::6:2:1806:34071false110INVTYPE_WAISTnil1"] = {
-			11868.49, -- [1]
-			1930, -- [2]
-		},
-		["CalculateScoreitem:138216:::::::::::5:2:1805:34071false110INVTYPE_CHESTnil1"] = {
-			15441.76, -- [1]
-			2237, -- [2]
-		},
-		["CalculateScoreitem:140877:::::::::::3:2:3443:34071false110INVTYPE_CHESTnil1"] = {
-			17546.85, -- [1]
-			2345, -- [2]
-		},
 		["CalculateScoreitem:137457:::::::::::23:2:1727:34071false110INVTYPE_CHESTnil1"] = {
 			13843.88, -- [1]
 			1773, -- [2]
+		},
+		["CalculateScoreitem:141476:::::::::::5:1:34071false110INVTYPE_HANDnil1"] = {
+			11142.98, -- [1]
+			1601, -- [2]
+		},
+		["CalculateScoreitem:139233:::::::::::3:2:1807:34071false110INVTYPE_SHOULDERnil1"] = {
+			11261.02, -- [1]
+			1459, -- [2]
+		},
+		["CalculateScoreitem:141506:::::::::::6:1:34071false110INVTYPE_NECKnil1"] = {
+			6389.02, -- [1]
+			1201, -- [2]
+		},
+		["CalculateScoreitem:141426:::::::::::6:1:34071false110INVTYPE_SHOULDERnil1"] = {
+			11668.99, -- [1]
+			1601, -- [2]
 		},
 		["CalculateScoreitem:140877:::::::::::5:2:3444:34071false110INVTYPE_CHESTnil1"] = {
 			19227.63, -- [1]
 			2696, -- [2]
 		},
-		["CalculateScoreitem:140895:::::::::::6:2:3445:34071false110INVTYPE_FINGERnil1"] = {
-			8155.89, -- [1]
-			1744, -- [2]
-		},
 		["CalculateScoreitem:134223:::::::::::23:2:1727:34071false110INVTYPE_CHESTnil1"] = {
 			14930.94, -- [1]
 			1773, -- [2]
+		},
+		["CalculateScoreitem:141426:::::::::::3:1:34071false110INVTYPE_SHOULDERnil1"] = {
+			11668.99, -- [1]
+			1601, -- [2]
+		},
+		["CalculateScoreitem:141439:::::::::::3:1:34071false110INVTYPE_WRISTnil1"] = {
+			7902.96, -- [1]
+			1201, -- [2]
 		},
 		["CalculateScoreitem:134356:::::::::::23:2:1727:34071false110INVTYPE_HANDnil1"] = {
 			9763.21, -- [1]
 			1329, -- [2]
 		},
-		["CalculateScoreitem:138220:::::::::::6:2:1806:34071false110INVTYPE_FINGERnil1"] = {
-			8692.9, -- [1]
-			1448, -- [2]
-		},
-		["CalculateScoreitem:140906:::::::::::6:2:3445:34071false110INVTYPE_FINGERnil1"] = {
-			9122.17, -- [1]
-			1744, -- [2]
+		["CalculateScoreitem:139227:::::::::::6:2:1806:34071false110INVTYPE_WAISTnil1"] = {
+			12060.38, -- [1]
+			1930, -- [2]
 		},
 		["CalculateScoreitem:134530:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
 			6643.15, -- [1]
 			997, -- [2]
 		},
+		["CalculateScoreitem:139232:::::::::::6:2:1806:34071false110INVTYPE_SHOULDERnil1"] = {
+			13157.91, -- [1]
+			1930, -- [2]
+		},
+		["CalculateScoreitem:139248:::::::::::6:2:1806:34071false110INVTYPE_CLOAKnil1"] = {
+			7882.25, -- [1]
+			1448, -- [2]
+		},
+		["CalculateScoreitem:141506:::::::::::5:1:34071false110INVTYPE_NECKnil1"] = {
+			6389.02, -- [1]
+			1201, -- [2]
+		},
 		["CalculateScoreitem:140882:::::::::::5:2:3444:34071false110INVTYPE_LEGSnil1"] = {
 			18018.88, -- [1]
 			2696, -- [2]
-		},
-		["CalculateScore|cff0070dd|Hitem:127213::::::::110:250:512:22:2:615:656:110:::|h[Adamantine Chain of the Unbroken]|h|r1false110INVTYPE_NECKnil1"] = {
-			4267.1, -- [1]
-			952, -- [2]
-		},
-		["CalculateScoreitem:137483:::::::::::23:2:1727:34071false110INVTYPE_CLOAKnil1"] = {
-			5673.56, -- [1]
-			997, -- [2]
 		},
 		["CalculateScoreitem:141425:::::::::::5:1:34071false110INVTYPE_LEGSnil1"] = {
 			15121.28, -- [1]
@@ -2425,9 +2347,81 @@ DugisCharacterCache = {
 			5405.89, -- [1]
 			997, -- [2]
 		},
-		["CalculateScoreitem:140806:::::::::::6:2:3445:34071false110INVTYPE_TRINKETnil1"] = {
-			2633.1, -- [1]
-			0, -- [2]
+		["CalculateScoreitem:141424:::::::::::5:1:34071false110INVTYPE_HEADnil1"] = {
+			14201.17, -- [1]
+			2136, -- [2]
+		},
+		["CalculateScoreitem:140855:::::::::::5:2:3444:34071false110INVTYPE_CLOAKnil1"] = {
+			8482.05, -- [1]
+			1516, -- [2]
+		},
+		["CalculateScoreitem:139227:::::::::::5:2:1805:34071false110INVTYPE_WAISTnil1"] = {
+			10929.75, -- [1]
+			1678, -- [2]
+		},
+		["CalculateScoreitem:140896:::::::::::6:2:3445:34071false110INVTYPE_FINGERnil1"] = {
+			9751.75, -- [1]
+			1744, -- [2]
+		},
+		["CalculateScoreitem:134533:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
+			7409.36, -- [1]
+			997, -- [2]
+		},
+		["CalculateScoreitem:137536:::::::::::23:2:1727:34071false110INVTYPE_NECKnil1"] = {
+			5888.38, -- [1]
+			997, -- [2]
+		},
+		["CalculateScoreitem:141425:::::::::::6:1:34071false110INVTYPE_LEGSnil1"] = {
+			15121.28, -- [1]
+			2136, -- [2]
+		},
+		["CalculateScoreitem:140895:::::::::::6:2:3445:34071false110INVTYPE_FINGERnil1"] = {
+			8155.89, -- [1]
+			1744, -- [2]
+		},
+		["CalculateScoreitem:134498:::::::::::23:2:1727:34071false110INVTYPE_NECKnil1"] = {
+			6630.65, -- [1]
+			997, -- [2]
+		},
+		["CalculateScoreitem:137527:::::::::::23:2:1727:34071false110INVTYPE_CHESTnil1"] = {
+			14291.75, -- [1]
+			1772, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:134185::130216::::::110:250::30:4:3397:1808:1497:3336:::|h[Skoldiir Sabatons]|h|r1false110INVTYPE_FEETnil1"] = {
+			9731.91, -- [1]
+			1269, -- [2]
+		},
+		["CalculateScoreitem:140906:::::::::::6:2:3445:34071false110INVTYPE_FINGERnil1"] = {
+			9122.17, -- [1]
+			1744, -- [2]
+		},
+		["CalculateScoreitem:134532:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
+			5989.3, -- [1]
+			997, -- [2]
+		},
+		["CalculateScoreitem:133634:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
+			6759.25, -- [1]
+			997, -- [2]
+		},
+		["CalculateScore|cff0070dd|Hitem:127213::::::::110:250:512:22:2:615:656:110:::|h[Adamantine Chain of the Unbroken]|h|r1false110INVTYPE_NECKnil1"] = {
+			4267.1, -- [1]
+			952, -- [2]
+		},
+		["CalculateScoreitem:137483:::::::::::23:2:1727:34071false110INVTYPE_CLOAKnil1"] = {
+			5673.56, -- [1]
+			997, -- [2]
+		},
+		["CalculateScoreitem:141425:::::::::::3:1:34071false110INVTYPE_LEGSnil1"] = {
+			15121.28, -- [1]
+			2136, -- [2]
+		},
+		["CalculateScoreitem:134492:::::::::::23:2:1727:34071false110INVTYPE_NECKnil1"] = {
+			6681.15, -- [1]
+			997, -- [2]
+		},
+		["CalculateScoreitem:139224:::::::::::6:2:1806:34071false110INVTYPE_CHESTnil1"] = {
+			18855.15, -- [1]
+			2573, -- [2]
 		},
 		["CalculateScoreitem:133638:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
 			5986.09, -- [1]
@@ -2437,18 +2431,6 @@ DugisCharacterCache = {
 			9521.36, -- [1]
 			1157, -- [2]
 		},
-		["CalculateScoreitem:137536:::::::::::23:2:1727:34071false110INVTYPE_NECKnil1"] = {
-			5888.38, -- [1]
-			997, -- [2]
-		},
-		["CalculateScoreitem:137527:::::::::::23:2:1727:34071false110INVTYPE_CHESTnil1"] = {
-			14291.75, -- [1]
-			1772, -- [2]
-		},
-		["CalculateScoreitem:139224:::::::::::6:2:1806:34071false110INVTYPE_CHESTnil1"] = {
-			18855.15, -- [1]
-			2573, -- [2]
-		},
 		["CalculateScoreitem:134501:::::::::::23:2:1727:34071false110INVTYPE_CHESTnil1"] = {
 			14045.36, -- [1]
 			1773, -- [2]
@@ -2456,10 +2438,6 @@ DugisCharacterCache = {
 		["CalculateScoreitem:138216:::::::::::6:2:1806:34071false110INVTYPE_CHESTnil1"] = {
 			16964.85, -- [1]
 			2573, -- [2]
-		},
-		["CalculateScoreitem:134358:::::::::::23:2:1727:34071false110INVTYPE_HEADnil1"] = {
-			12792.2, -- [1]
-			1773, -- [2]
 		},
 		["CalculateScoreitem:138349:::::::::::5:2:3444:34071false110INVTYPE_CHESTnil1"] = {
 			18707.96, -- [1]
@@ -2469,33 +2447,45 @@ DugisCharacterCache = {
 			13003.01, -- [1]
 			1773, -- [2]
 		},
-		["CalculateScoreitem:137451:::::::::::23:2:1727:34071false110INVTYPE_HEADnil1"] = {
-			13959.39, -- [1]
-			1773, -- [2]
-		},
 		["CalculateScoreitem:140913:::::::::::3:2:3443:34071false110INVTYPE_CHESTnil1"] = {
 			17752.2, -- [1]
 			2345, -- [2]
+		},
+		["CalculateScoreitem:137458:::::::::::23:2:1727:34071false110INVTYPE_NECKnil1"] = {
+			7778.64, -- [1]
+			997, -- [2]
+		},
+		["CalculateScoreitem:134503:::::::::::23:2:1727:34071false110INVTYPE_CHESTnil1"] = {
+			13687.42, -- [1]
+			1773, -- [2]
+		},
+		["CalculateScore|cffa335ee|Hitem:134517::::::::110:250::23:3:1727:1497:3336:::|h[Tremorguard Pauldrons]|h|r1false110INVTYPE_SHOULDERnil1"] = {
+			10715.84, -- [1]
+			1393, -- [2]
+		},
+		["CalculateScoreitem:139058:::::::::::23:2:1727:34071false110INVTYPE_HEADnil1"] = {
+			13348.56, -- [1]
+			1773, -- [2]
+		},
+		["CalculateScoreitem:141546:::::::::::6:1:34071false110INVTYPE_FINGERnil1"] = {
+			6458.87, -- [1]
+			1201, -- [2]
 		},
 		["CalculateScoreitem:137322:::::::::::23:2:1727:34071false110INVTYPE_SHOULDERnil1"] = {
 			10483.29, -- [1]
 			1329, -- [2]
 		},
-		["CalculateScoreitem:139225:::::::::::6:2:1806:34071false110INVTYPE_HANDnil1"] = {
-			12939.27, -- [1]
+		["CalculateScoreitem:139226:::::::::::6:2:1806:34071false110INVTYPE_HANDnil1"] = {
+			12044.86, -- [1]
 			1930, -- [2]
 		},
-		["CalculateScoreitem:141534:::::::::::3:1:34071false110INVTYPE_FINGERnil1"] = {
+		["CalculateScoreitem:141534:::::::::::6:1:34071false110INVTYPE_FINGERnil1"] = {
 			6735.73, -- [1]
 			1201, -- [2]
 		},
-		["CalculateScoreitem:141545:::::::::::6:1:34071false110INVTYPE_FINGERnil1"] = {
-			8571.14, -- [1]
+		["CalculateScoreitem:141544:::::::::::5:1:34071false110INVTYPE_FINGERnil1"] = {
+			7503.75, -- [1]
 			1201, -- [2]
-		},
-		["CalculateScoreitem:134503:::::::::::23:2:1727:34071false110INVTYPE_CHESTnil1"] = {
-			13687.42, -- [1]
-			1773, -- [2]
 		},
 		["CalculateScoreitem:136976:::::::::::23:2:1727:34071false110INVTYPE_CHESTnil1"] = {
 			14418.15, -- [1]
@@ -2505,13 +2495,13 @@ DugisCharacterCache = {
 			19444.42, -- [1]
 			2696, -- [2]
 		},
-		["CalculateScore|cff0070dd|Hitem:139680::130216::::::110:250::14:2:3385:3382:::|h[Deathlord's Bracers]|h|r1false110INVTYPE_WRISTnil1"] = {
-			6374.43, -- [1]
-			827, -- [2]
-		},
 		["CalculateScoreitem:137437:::::::::::23:2:1727:34071false110INVTYPE_CHESTnil1"] = {
 			13386.58, -- [1]
 			1773, -- [2]
+		},
+		["CalculateScore|cff0070dd|Hitem:139680::130216::::::110:250::14:2:3385:3382:::|h[Deathlord's Bracers]|h|r1false110INVTYPE_WRISTnil1"] = {
+			6374.43, -- [1]
+			827, -- [2]
 		},
 		["CalculateScoreitem:134360:::::::::::23:2:1727:34071false110INVTYPE_SHOULDERnil1"] = {
 			10375.19, -- [1]
@@ -2520,6 +2510,10 @@ DugisCharacterCache = {
 		["CalculateScoreitem:139229:::::::::::3:2:1807:34071false110INVTYPE_HEADnil1"] = {
 			14221.33, -- [1]
 			1945, -- [2]
+		},
+		["CalculateScoreitem:134518:::::::::::23:2:1727:34071false110INVTYPE_SHOULDERnil1"] = {
+			10344.35, -- [1]
+			1329, -- [2]
 		},
 		["CalculateScoreitem:136773:::::::::::23:2:1727:34071false110INVTYPE_WAISTnil1"] = {
 			9059.32, -- [1]
@@ -2557,16 +2551,16 @@ DugisCharacterCache = {
 			11986.77, -- [1]
 			1678, -- [2]
 		},
-		["CalculateScoreitem:141544:::::::::::3:1:34071false110INVTYPE_FINGERnil1"] = {
-			7503.75, -- [1]
+		["CalculateScoreitem:141546:::::::::::5:1:34071false110INVTYPE_FINGERnil1"] = {
+			6458.87, -- [1]
 			1201, -- [2]
 		},
 		["CalculateScoreitem:137337:::::::::::23:2:1727:34071false110INVTYPE_WRISTnil1"] = {
 			6901.6, -- [1]
 			997, -- [2]
 		},
-		["CalculateScoreitem:139226:::::::::::6:2:1806:34071false110INVTYPE_HANDnil1"] = {
-			12044.86, -- [1]
+		["CalculateScoreitem:139225:::::::::::6:2:1806:34071false110INVTYPE_HANDnil1"] = {
+			12939.27, -- [1]
 			1930, -- [2]
 		},
 		["CalculateScoreitem:137530:::::::::::23:2:1727:34071false110INVTYPE_CLOAKnil1"] = {
@@ -2577,6 +2571,26 @@ DugisCharacterCache = {
 			12192.17, -- [1]
 			1758, -- [2]
 		},
+		["CalculateScoreitem:141544:::::::::::3:1:34071false110INVTYPE_FINGERnil1"] = {
+			7503.75, -- [1]
+			1201, -- [2]
+		},
+		["CalculateScoreitem:137451:::::::::::23:2:1727:34071false110INVTYPE_HEADnil1"] = {
+			13959.39, -- [1]
+			1773, -- [2]
+		},
+		["CalculateScoreitem:141545:::::::::::6:1:34071false110INVTYPE_FINGERnil1"] = {
+			8571.14, -- [1]
+			1201, -- [2]
+		},
+		["CalculateScoreitem:134358:::::::::::23:2:1727:34071false110INVTYPE_HEADnil1"] = {
+			12792.2, -- [1]
+			1773, -- [2]
+		},
+		["CalculateScoreitem:141534:::::::::::3:1:34071false110INVTYPE_FINGERnil1"] = {
+			6735.73, -- [1]
+			1201, -- [2]
+		},
 		["CalculateScoreitem:141413:::::::::::6:1:34071false110INVTYPE_CHESTnil1"] = {
 			15470.48, -- [1]
 			2136, -- [2]
@@ -2585,29 +2599,69 @@ DugisCharacterCache = {
 			13106.78, -- [1]
 			1773, -- [2]
 		},
+		["CalculateScoreitem:133637:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
+			5977.54, -- [1]
+			997, -- [2]
+		},
 		["CalculateScoreitem:140883:::::::::::6:2:3445:34071false110INVTYPE_SHOULDERnil1"] = {
 			14801.26, -- [1]
 			2326, -- [2]
+		},
+		["CalculateScoreitem:134491:::::::::::23:2:1727:34071false110INVTYPE_NECKnil1"] = {
+			6095.92, -- [1]
+			997, -- [2]
+		},
+		["CalculateScoreitem:141424:::::::::::3:1:34071false110INVTYPE_HEADnil1"] = {
+			14201.17, -- [1]
+			2136, -- [2]
 		},
 		["CalculateScoreitem:141448:::::::::::6:1:34071false110INVTYPE_CLOAKnil1"] = {
 			7118.24, -- [1]
 			1201, -- [2]
 		},
+		["CalculateScoreitem:134540:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
+			6782.15, -- [1]
+			997, -- [2]
+		},
+		["CalculateScoreitem:140855:::::::::::6:2:3445:34071false110INVTYPE_CLOAKnil1"] = {
+			9497.36, -- [1]
+			1744, -- [2]
+		},
+		["CalculateScoreitem:133679:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
+			5598.93, -- [1]
+			997, -- [2]
+		},
 		["CalculateScoreitem:138221:::::::::::3:2:1807:34071false110INVTYPE_CLOAKnil1"] = {
 			6352.58, -- [1]
 			1094, -- [2]
+		},
+		["CalculateScoreitem:134499:::::::::::23:2:1727:34071false110INVTYPE_NECKnil1"] = {
+			8090.73, -- [1]
+			997, -- [2]
+		},
+		["CalculateScoreitem:141424:::::::::::6:1:34071false110INVTYPE_HEADnil1"] = {
+			14201.17, -- [1]
+			2136, -- [2]
 		},
 		["CalculateScoreitem:140904:::::::::::6:2:3445:34071false110INVTYPE_FEETnil1"] = {
 			15083.06, -- [1]
 			2326, -- [2]
 		},
-		["CalculateScoreitem:141424:::::::::::5:1:34071false110INVTYPE_HEADnil1"] = {
-			14201.17, -- [1]
-			2136, -- [2]
-		},
-		["CalculateScoreitem:133637:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
-			5977.54, -- [1]
+		["CalculateScoreitem:134527:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
+			7518.05, -- [1]
 			997, -- [2]
+		},
+		["CalculateScoreitem:139228:::::::::::3:2:1807:34071false110INVTYPE_WAISTnil1"] = {
+			9756.84, -- [1]
+			1459, -- [2]
+		},
+		["CalculateScoreitem:140855:::::::::::3:2:3443:34071false110INVTYPE_CLOAKnil1"] = {
+			7606.54, -- [1]
+			1319, -- [2]
+		},
+		["CalculateScoreitem:139238:::::::::::5:2:1805:34071false110INVTYPE_FINGERnil1"] = {
+			6240.88, -- [1]
+			1258, -- [2]
 		},
 		["CalculateScoreitem:140881:::::::::::6:2:3445:34071false110INVTYPE_HEADnil1"] = {
 			19529.24, -- [1]
@@ -2617,143 +2671,84 @@ DugisCharacterCache = {
 			5598.93, -- [1]
 			997, -- [2]
 		},
-		["CalculateScoreitem:141424:::::::::::3:1:34071false110INVTYPE_HEADnil1"] = {
-			14201.17, -- [1]
-			2136, -- [2]
-		},
 		["CalculateScoreitem:140832:::::::::::6:2:3445:34071false110nilnil1"] = {
 			-2, -- [1]
-		},
-		["CalculateScoreitem:134542:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
-			5680.24, -- [1]
-			997, -- [2]
-		},
-		["CalculateScore|cffa335ee|Hitem:134185::130216::::::110:250::30:4:3397:1808:1497:3336:::|h[Skoldiir Sabatons]|h|r1false110INVTYPE_FEETnil1"] = {
-			9731.91, -- [1]
-			1269, -- [2]
-		},
-		["CalculateScoreitem:139056:::::::::::23:2:1727:34071false110INVTYPE_HANDnil1"] = {
-			10089.57, -- [1]
-			1329, -- [2]
-		},
-		["CalculateScoreitem:133679:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
-			5598.93, -- [1]
-			997, -- [2]
-		},
-		["CalculateScoreitem:139232:::::::::::3:2:1807:34071false110INVTYPE_SHOULDERnil1"] = {
-			10953.46, -- [1]
-			1459, -- [2]
-		},
-		["CalculateScoreitem:139224:::::::::::5:2:1805:34071false110INVTYPE_CHESTnil1"] = {
-			17229.2, -- [1]
-			2237, -- [2]
-		},
-		["CalculateScoreitem:141424:::::::::::6:1:34071false110INVTYPE_HEADnil1"] = {
-			14201.17, -- [1]
-			2136, -- [2]
-		},
-		["CalculateScoreitem:137445:::::::::::23:2:1727:34071false110INVTYPE_HEADnil1"] = {
-			12386.68, -- [1]
-			1773, -- [2]
-		},
-		["CalculateScoreitem:139095:::::::::::23:2:1727:34071false110INVTYPE_WAISTnil1"] = {
-			9306.16, -- [1]
-			1329, -- [2]
-		},
-		["CalculateScoreitem:137532:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
-			6668.65, -- [1]
-			997, -- [2]
-		},
-		["CalculateScoreitem:139238:::::::::::5:2:1805:34071false110INVTYPE_FINGERnil1"] = {
-			6240.88, -- [1]
-			1258, -- [2]
-		},
-		["CalculateScoreitem:140855:::::::::::6:2:3445:34071false110INVTYPE_CLOAKnil1"] = {
-			9497.36, -- [1]
-			1744, -- [2]
-		},
-		["CalculateScoreitem:140855:::::::::::3:2:3443:34071false110INVTYPE_CLOAKnil1"] = {
-			7606.54, -- [1]
-			1319, -- [2]
-		},
-		["CalculateScoreitem:134511:::::::::::23:2:1727:34071false110INVTYPE_HEADnil1"] = {
-			13438.31, -- [1]
-			1773, -- [2]
 		},
 		["CalculateScoreitem:139248:::::::::::3:2:1807:34071false110INVTYPE_CLOAKnil1"] = {
 			6309.34, -- [1]
 			1094, -- [2]
 		},
-		["CalculateScoreitem:138218:::::::::::3:2:1807:34071false110INVTYPE_WRISTnil1"] = {
-			7944.22, -- [1]
-			1094, -- [2]
+		["CalculateScoreitem:139228:::::::::::5:2:1805:34071false110INVTYPE_WAISTnil1"] = {
+			10748.93, -- [1]
+			1678, -- [2]
 		},
-		["CalculateScoreitem:140790:::::::::::6:2:3445:34071false110INVTYPE_TRINKETnil1"] = {
+		["CalculateScoreitem:134542:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
+			5680.24, -- [1]
+			997, -- [2]
+		},
+		["CalculateScoreitem:140806:::::::::::6:2:3445:34071false110INVTYPE_TRINKETnil1"] = {
 			2633.1, -- [1]
 			0, -- [2]
 		},
-		["CalculateScoreitem:140909:::::::::::5:2:3444:34071false110INVTYPE_CLOAKnil1"] = {
-			8760.81, -- [1]
-			1516, -- [2]
+		["CalculateScoreitem:139056:::::::::::23:2:1727:34071false110INVTYPE_HANDnil1"] = {
+			10089.57, -- [1]
+			1329, -- [2]
 		},
-		["CalculateScoreitem:140909:::::::::::3:2:3443:34071false110INVTYPE_CLOAKnil1"] = {
-			7870.04, -- [1]
-			1319, -- [2]
-		},
-		["CalculateScoreitem:139227:::::::::::3:2:1807:34071false110INVTYPE_WAISTnil1"] = {
-			9928.38, -- [1]
+		["CalculateScoreitem:139232:::::::::::3:2:1807:34071false110INVTYPE_SHOULDERnil1"] = {
+			10953.46, -- [1]
 			1459, -- [2]
 		},
-		["CalculateScoreitem:141473:::::::::::3:1:34071false110INVTYPE_NECKnil1"] = {
+		["CalculateScoreitem:141473:::::::::::6:1:34071false110INVTYPE_NECKnil1"] = {
 			8458.87, -- [1]
 			1201, -- [2]
+		},
+		["CalculateScoreitem:139224:::::::::::5:2:1805:34071false110INVTYPE_CHESTnil1"] = {
+			17229.2, -- [1]
+			2237, -- [2]
+		},
+		["CalculateScoreitem:141506:::::::::::3:1:34071false110INVTYPE_NECKnil1"] = {
+			6389.02, -- [1]
+			1201, -- [2]
+		},
+		["CalculateScore|cff0070dd|Hitem:132898::::::::110:250:512::1:1794:110:::|h[Sabatons of the Endless Vigil]|h|r1false110INVTYPE_FEETnil1"] = {
+			7591.28, -- [1]
+			797, -- [2]
 		},
 		["CalculateScoreitem:139248:::::::::::5:2:1805:34071false110INVTYPE_CLOAKnil1"] = {
 			7042.29, -- [1]
 			1258, -- [2]
 		},
-		["CalculateScoreitem:140912:::::::::::3:2:3443:34071false110INVTYPE_WAISTnil1"] = {
-			11363.48, -- [1]
-			1758, -- [2]
-		},
-		["CalculateScoreitem:141476:::::::::::5:1:34071false110INVTYPE_HANDnil1"] = {
-			11142.98, -- [1]
-			1601, -- [2]
-		},
-		["CalculateScore|cffa335ee|Hitem:134137::::::::110:250::36:3:3432:1497:1674:::|h[Rockbound Girdle]|h|r1false110INVTYPE_WAISTnil1"] = {
-			9901.75, -- [1]
-			1269, -- [2]
-		},
 		["CalculateScoreitem:140910:::::::::::6:2:3445:34071false110INVTYPE_CLOAKnil1"] = {
 			8862.68, -- [1]
 			1744, -- [2]
-		},
-		["CalculateScoreitem:137482:::::::::::23:2:1727:34071false110INVTYPE_FEETnil1"] = {
-			9763.61, -- [1]
-			1329, -- [2]
-		},
-		["CalculateScoreitem:141506:::::::::::6:1:34071false110INVTYPE_NECKnil1"] = {
-			6389.02, -- [1]
-			1201, -- [2]
-		},
-		["CalculateScoreitem:134179:::::::::::23:2:1727:34071false110INVTYPE_CHESTnil1"] = {
-			13503.33, -- [1]
-			1773, -- [2]
 		},
 		["CalculateScoreitem:138220:::::::::::5:2:1805:34071false110INVTYPE_FINGERnil1"] = {
 			7905.85, -- [1]
 			1258, -- [2]
 		},
+		["CalculateScoreitem:137445:::::::::::23:2:1727:34071false110INVTYPE_HEADnil1"] = {
+			12386.68, -- [1]
+			1773, -- [2]
+		},
+		["CalculateScoreitem:134179:::::::::::23:2:1727:34071false110INVTYPE_CHESTnil1"] = {
+			13503.33, -- [1]
+			1773, -- [2]
+		},
+		["CalculateScoreitem:137532:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
+			6668.65, -- [1]
+			997, -- [2]
+		},
 		["CalculateScoreitem:140902:::::::::::6:2:3445:34071false110INVTYPE_WRISTnil1"] = {
 			11400.01, -- [1]
 			1744, -- [2]
 		},
-		["CalculateScoreitem:140831:::::::::::6:2:3445:34071false110nilnil1"] = {
-			-2, -- [1]
+		["CalculateScore|cffa335ee|Hitem:137337::::::::110:250::23:4:1727:41:1492:1813:::|h[Deepfurrow Bracers]|h|r1false110INVTYPE_WRISTnil1"] = {
+			8283.28, -- [1]
+			997, -- [2]
 		},
-		["CalculateScoreitem:139229:::::::::::5:2:1805:34071false110INVTYPE_HEADnil1"] = {
-			15601.56, -- [1]
-			2237, -- [2]
+		["CalculateScoreitem:138220:::::::::::6:2:1806:34071false110INVTYPE_FINGERnil1"] = {
+			8692.9, -- [1]
+			1448, -- [2]
 		},
 		["CalculateScoreitem:133632:::::::::::23:2:1727:34071false110INVTYPE_WRISTnil1"] = {
 			7404.98, -- [1]
@@ -2763,16 +2758,16 @@ DugisCharacterCache = {
 			10527.54, -- [1]
 			1329, -- [2]
 		},
-		["CalculateScoreitem:134513:::::::::::23:2:1727:34071false110INVTYPE_HEADnil1"] = {
-			13377.81, -- [1]
-			1773, -- [2]
+		["CalculateScoreitem:141476:::::::::::6:1:34071false110INVTYPE_HANDnil1"] = {
+			11142.98, -- [1]
+			1601, -- [2]
 		},
 		["CalculateScore|cff1eff00|Hitem:36525::::::-45:1098055700:110:250:512:22::110:::|h[Craggy Machete of the Champion]|h|r1false11016nil1"] = {
 			-3, -- [1]
 		},
-		["CalculateScoreitem:140789:::::::::::6:2:3445:34071false110INVTYPE_TRINKETnil1"] = {
-			5502, -- [1]
-			1965, -- [2]
+		["CalculateScoreitem:134504:::::::::::23:2:1727:34071false110INVTYPE_FEETnil1"] = {
+			10424.4, -- [1]
+			1329, -- [2]
 		},
 		["CalculateScore|cffa335ee|Hitem:134315::::::::110:250::37:3:3473:1522:3337:::|h[Ley-Scarred Greaves]|h|r1false110INVTYPE_LEGSnil1"] = {
 			15158.11, -- [1]
@@ -2790,61 +2785,61 @@ DugisCharacterCache = {
 			7482.79, -- [1]
 			1319, -- [2]
 		},
-		["CalculateScoreitem:139226:::::::::::5:2:1805:34071false110INVTYPE_HANDnil1"] = {
-			10919.65, -- [1]
-			1678, -- [2]
-		},
-		["CalculateScore|cff0070dd|Hitem:132898::::::::110:250:512::1:1794:110:::|h[Sabatons of the Endless Vigil]|h|r1false110INVTYPE_FEETnil1"] = {
-			7591.28, -- [1]
-			797, -- [2]
-		},
-		["CalculateScoreitem:141541:::::::::::3:1:34071false110INVTYPE_CLOAKnil1"] = {
-			6827.23, -- [1]
-			1201, -- [2]
-		},
-		["CalculateScoreitem:134504:::::::::::23:2:1727:34071false110INVTYPE_FEETnil1"] = {
-			10424.4, -- [1]
-			1329, -- [2]
-		},
-		["CalculateScoreitem:137417:::::::::::23:2:1727:34071false110INVTYPE_FEETnil1"] = {
-			9706.42, -- [1]
-			1329, -- [2]
-		},
-		["CalculateScoreitem:140894:::::::::::5:2:3444:34071false110INVTYPE_NECKnil1"] = {
-			8951.75, -- [1]
-			1516, -- [2]
+		["CalculateScoreitem:138218:::::::::::3:2:1807:34071false110INVTYPE_WRISTnil1"] = {
+			7944.22, -- [1]
+			1094, -- [2]
 		},
 		["CalculateScoreitem:138221:::::::::::6:2:1806:34071false110INVTYPE_CLOAKnil1"] = {
 			7931.1, -- [1]
 			1448, -- [2]
 		},
+		["CalculateScoreitem:141541:::::::::::3:1:34071false110INVTYPE_CLOAKnil1"] = {
+			6827.23, -- [1]
+			1201, -- [2]
+		},
+		["CalculateScoreitem:140899:::::::::::6:2:3445:34071false110INVTYPE_NECKnil1"] = {
+			8477.2, -- [1]
+			1744, -- [2]
+		},
+		["CalculateScoreitem:140909:::::::::::3:2:3443:34071false110INVTYPE_CLOAKnil1"] = {
+			7870.04, -- [1]
+			1319, -- [2]
+		},
+		["CalculateScoreitem:139227:::::::::::3:2:1807:34071false110INVTYPE_WAISTnil1"] = {
+			9928.38, -- [1]
+			1459, -- [2]
+		},
+		["CalculateScoreitem:139235:::::::::::6:2:1806:34071false110INVTYPE_WRISTnil1"] = {
+			8951.23, -- [1]
+			1447, -- [2]
+		},
 		["CalculateScoreitem:141542:::::::::::5:1:34071false110INVTYPE_CLOAKnil1"] = {
 			6855.91, -- [1]
 			1201, -- [2]
 		},
-		["CalculateScoreitem:140884:::::::::::6:2:3445:34071false110INVTYPE_FEETnil1"] = {
-			15173.91, -- [1]
-			2326, -- [2]
+		["CalculateScore|cffa335ee|Hitem:134137::::::::110:250::36:3:3432:1497:1674:::|h[Rockbound Girdle]|h|r1false110INVTYPE_WAISTnil1"] = {
+			9901.75, -- [1]
+			1269, -- [2]
 		},
 		["CalculateScoreitem:134184:::::::::::23:2:1727:34071false110INVTYPE_SHOULDERnil1"] = {
 			10098.47, -- [1]
 			1329, -- [2]
 		},
-		["CalculateScoreitem:141438:::::::::::6:1:34071false110INVTYPE_NECKnil1"] = {
-			6476.98, -- [1]
-			1201, -- [2]
+		["CalculateScoreitem:134507:::::::::::23:2:1727:34071false110INVTYPE_FEETnil1"] = {
+			10857.72, -- [1]
+			1329, -- [2]
 		},
 		["CalculateScoreitem:141442:::::::::::3:1:34071false110INVTYPE_WAISTnil1"] = {
 			11656.06, -- [1]
 			1601, -- [2]
 		},
-		["CalculateScoreitem:134230:::::::::::23:2:1727:34071false110INVTYPE_WRISTnil1"] = {
-			7770.19, -- [1]
+		["CalculateScoreitem:137418:::::::::::23:2:1727:34071false110INVTYPE_NECKnil1"] = {
+			5920.24, -- [1]
 			997, -- [2]
 		},
-		["CalculateScoreitem:139232:::::::::::6:2:1806:34071false110INVTYPE_SHOULDERnil1"] = {
-			13157.91, -- [1]
-			1930, -- [2]
+		["CalculateScoreitem:140878:::::::::::5:2:3444:34071false110INVTYPE_WRISTnil1"] = {
+			9554.19, -- [1]
+			1516, -- [2]
 		},
 		["CalculateScore|cffffffff|Hitem:136350::::::::110:250::11::::|h[Brumdysla, Hammer of Vrorsk]|h|r1false11016nil1"] = {
 			-3, -- [1]
@@ -2857,9 +2852,9 @@ DugisCharacterCache = {
 			6180.64, -- [1]
 			997, -- [2]
 		},
-		["CalculateScoreitem:140877:::::::::::6:2:3445:34071false110INVTYPE_CHESTnil1"] = {
-			21124.32, -- [1]
-			3100, -- [2]
+		["CalculateScoreitem:138355:::::::::::3:2:3443:34071false110INVTYPE_HEADnil1"] = {
+			15110.92, -- [1]
+			2345, -- [2]
 		},
 		["CalculateScoreitem:140896:::::::::::5:2:3444:34071false110INVTYPE_FINGERnil1"] = {
 			8847.25, -- [1]
@@ -2869,49 +2864,153 @@ DugisCharacterCache = {
 			7509.62, -- [1]
 			1201, -- [2]
 		},
-		["CalculateScoreitem:141426:::::::::::5:1:34071false110INVTYPE_SHOULDERnil1"] = {
-			11668.99, -- [1]
-			1601, -- [2]
+		["CalculateScoreitem:140891:::::::::::6:2:3445:34071false110INVTYPE_FEETnil1"] = {
+			14827.82, -- [1]
+			2326, -- [2]
 		},
 		["CalculateScore|cff0070dd|Hitem:134191::::::::110:250::30:3:3397:1492:1675:::|h[Rough-Hammered Silver Ring]|h|r1false110INVTYPE_FINGERnil1"] = {
 			5123.32, -- [1]
 			908, -- [2]
 		},
-		["CalculateScoreitem:139058:::::::::::23:2:1727:34071false110INVTYPE_HEADnil1"] = {
-			13348.56, -- [1]
-			1773, -- [2]
+		["CalculateScoreitem:134362:::::::::::23:2:1727:34071false110INVTYPE_WRISTnil1"] = {
+			7307.24, -- [1]
+			997, -- [2]
 		},
 		["CalculateScore|cff0070dd|Hitem:134224::::::::110:250::29:3:3396:1487:1675:::|h[Coralplate Gauntlets]|h|r1false110INVTYPE_HANDnil1"] = {
 			9716.26, -- [1]
 			1157, -- [2]
 		},
-		["CalculateScoreitem:140892:::::::::::5:2:3444:34071false110INVTYPE_WAISTnil1"] = {
-			12397.69, -- [1]
-			2022, -- [2]
+		["CalculateScoreitem:134502:::::::::::23:2:1727:34071false110INVTYPE_WRISTnil1"] = {
+			7457.98, -- [1]
+			997, -- [2]
 		},
 		["CalculateScoreitem:138355:::::::::::6:2:3445:34071false110INVTYPE_HEADnil1"] = {
 			18442.6, -- [1]
 			3100, -- [2]
 		},
-		["CalculateScoreitem:138361:::::::::::5:2:3444:34071false110INVTYPE_SHOULDERnil1"] = {
-			13602.55, -- [1]
-			2022, -- [2]
+		["CalculateScoreitem:134513:::::::::::23:2:1727:34071false110INVTYPE_HEADnil1"] = {
+			13377.81, -- [1]
+			1773, -- [2]
 		},
-		["CalculateScoreitem:139233:::::::::::3:2:1807:34071false110INVTYPE_SHOULDERnil1"] = {
-			11261.02, -- [1]
-			1459, -- [2]
+		["CalculateScoreitem:134522:::::::::::23:2:1727:34071false110INVTYPE_WRISTnil1"] = {
+			7710.32, -- [1]
+			997, -- [2]
 		},
 		["CalculateScoreitem:138349:::::::::::6:2:3445:34071false110INVTYPE_CHESTnil1"] = {
 			20572.71, -- [1]
 			3100, -- [2]
 		},
-		["CalculateScoreitem:141438:::::::::::3:1:34071false110INVTYPE_NECKnil1"] = {
+		["CalculateScoreitem:140789:::::::::::6:2:3445:34071false110INVTYPE_TRINKETnil1"] = {
+			5502, -- [1]
+			1965, -- [2]
+		},
+		["CalculateScoreitem:137482:::::::::::23:2:1727:34071false110INVTYPE_FEETnil1"] = {
+			9763.61, -- [1]
+			1329, -- [2]
+		},
+		["CalculateScoreitem:134404:::::::::::23:2:1727:34071false110INVTYPE_CLOAKnil1"] = {
+			6574.23, -- [1]
+			997, -- [2]
+		},
+		["CalculateScoreitem:139226:::::::::::5:2:1805:34071false110INVTYPE_HANDnil1"] = {
+			10919.65, -- [1]
+			1678, -- [2]
+		},
+		["CalculateScore|cff1eff00|Hitem:24901::::::-40:115277845:110:250:512:22::110:::|h[Tortured Bracer of the Bandit]|h|r1false110INVTYPE_WRISTnil1"] = {
+			176.52, -- [1]
+			16, -- [2]
+		},
+		["CalculateScoreitem:134512:::::::::::23:2:1727:34071false110INVTYPE_HEADnil1"] = {
+			14262.14, -- [1]
+			1773, -- [2]
+		},
+		["CalculateScoreitem:137417:::::::::::23:2:1727:34071false110INVTYPE_FEETnil1"] = {
+			9706.42, -- [1]
+			1329, -- [2]
+		},
+		["CalculateScoreitem:134520:::::::::::23:2:1727:34071false110INVTYPE_WRISTnil1"] = {
+			7215.19, -- [1]
+			997, -- [2]
+		},
+		["CalculateScoreitem:139226:::::::::::3:2:1807:34071false110INVTYPE_HANDnil1"] = {
+			9928.07, -- [1]
+			1459, -- [2]
+		},
+		["CalculateScoreitem:137499:::::::::::23:2:1727:34071false110INVTYPE_WAISTnil1"] = {
+			9599.1, -- [1]
+			1329, -- [2]
+		},
+		["CalculateScoreitem:141486:::::::::::3:1:34071false110INVTYPE_FINGERnil1"] = {
+			5978.26, -- [1]
+			1201, -- [2]
+		},
+		["CalculateScoreitem:140884:::::::::::6:2:3445:34071false110INVTYPE_FEETnil1"] = {
+			15173.91, -- [1]
+			2326, -- [2]
+		},
+		["CalculateScoreitem:134183:::::::::::23:2:1727:34071false110INVTYPE_LEGSnil1"] = {
+			12770.22, -- [1]
+			1773, -- [2]
+		},
+		["CalculateScoreitem:141438:::::::::::6:1:34071false110INVTYPE_NECKnil1"] = {
 			6476.98, -- [1]
 			1201, -- [2]
 		},
-		["CalculateScoreitem:141547:::::::::::5:1:34071false110INVTYPE_NECKnil1"] = {
-			7676.3, -- [1]
+		["CalculateScore|cff0070dd|Hitem:134269::::::::110:250::25:3:1824:1477:3339:::|h[Arcane Defender's Belt]|h|r1false110INVTYPE_WAISTnil1"] = {
+			8475.58, -- [1]
+			1053, -- [2]
+		},
+		["CalculateScoreitem:141543:::::::::::5:1:34071false110INVTYPE_CLOAKnil1"] = {
+			6805.07, -- [1]
 			1201, -- [2]
+		},
+		["CalculateScoreitem:134230:::::::::::23:2:1727:34071false110INVTYPE_WRISTnil1"] = {
+			7770.19, -- [1]
+			997, -- [2]
+		},
+		["CalculateScoreitem:140892:::::::::::6:2:3445:34071false110INVTYPE_WAISTnil1"] = {
+			13730.19, -- [1]
+			2326, -- [2]
+		},
+		["CalculateScoreitem:140877:::::::::::6:2:3445:34071false110INVTYPE_CHESTnil1"] = {
+			21124.32, -- [1]
+			3100, -- [2]
+		},
+		["CalculateScoreitem:141426:::::::::::5:1:34071false110INVTYPE_SHOULDERnil1"] = {
+			11668.99, -- [1]
+			1601, -- [2]
+		},
+		["CalculateScoreitem:134523:::::::::::23:2:1727:34071false110INVTYPE_FEETnil1"] = {
+			10472.55, -- [1]
+			1329, -- [2]
+		},
+		["CalculateScoreitem:140880:::::::::::5:2:3444:34071false110INVTYPE_WAISTnil1"] = {
+			13548.78, -- [1]
+			2022, -- [2]
+		},
+		["CalculateScoreitem:141492:::::::::::6:1:34071false110INVTYPE_FINGERnil1"] = {
+			6675.86, -- [1]
+			1201, -- [2]
+		},
+		["CalculateScore|cff0070dd|Hitem:134487::::::::110:250::2:3:1726:1487:3339:::|h[Arch-Druid's Tainted Seal]|h|r1false110INVTYPE_FINGERnil1"] = {
+			6623.55, -- [1]
+			952, -- [2]
+		},
+		["CalculateScoreitem:134182:::::::::::23:2:1727:34071false110INVTYPE_HEADnil1"] = {
+			12455.64, -- [1]
+			1773, -- [2]
+		},
+		["CalculateScoreitem:139236:::::::::::6:2:1806:34071false110INVTYPE_FINGERnil1"] = {
+			8296.72, -- [1]
+			1448, -- [2]
+		},
+		["CalculateScoreitem:140884:::::::::::3:2:3443:34071false110INVTYPE_FEETnil1"] = {
+			12536.38, -- [1]
+			1758, -- [2]
+		},
+		["CalculateScoreitem:134508:::::::::::23:2:1727:34071false110INVTYPE_HANDnil1"] = {
+			9854.12, -- [1]
+			1329, -- [2]
 		},
 		["CalculateScoreitem:140881:::::::::::3:2:3443:34071false110INVTYPE_HEADnil1"] = {
 			16080.22, -- [1]
@@ -2920,136 +3019,32 @@ DugisCharacterCache = {
 		["CalculateScoreitem:140822:::::::::::6:2:3445:34071false110nilnil1"] = {
 			-2, -- [1]
 		},
-		["CalculateScore|cff1eff00|Hitem:24901::::::-40:115277845:110:250:512:22::110:::|h[Tortured Bracer of the Bandit]|h|r1false110INVTYPE_WRISTnil1"] = {
-			176.52, -- [1]
-			16, -- [2]
+		["CalculateScoreitem:140878:::::::::::6:2:3445:34071false110INVTYPE_WRISTnil1"] = {
+			10568.38, -- [1]
+			1744, -- [2]
 		},
-		["CalculateScoreitem:140892:::::::::::3:2:3443:34071false110INVTYPE_WAISTnil1"] = {
-			11219.97, -- [1]
-			1758, -- [2]
+		["CalculateScoreitem:138828:::::::::::6:1:34071false110nilnil1"] = {
+			-2, -- [1]
 		},
 		["CalculateScoreitem:134539:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
 			7778.64, -- [1]
 			997, -- [2]
 		},
-		["CalculateScoreitem:140892:::::::::::6:2:3445:34071false110INVTYPE_WAISTnil1"] = {
-			13730.19, -- [1]
+		["CalculateScoreitem:140907:::::::::::6:2:3445:34071false110INVTYPE_HANDnil1"] = {
+			14755.29, -- [1]
 			2326, -- [2]
 		},
 		["CalculateScore|cffa335ee|Hitem:121284:5294:::::::110:250::36:3:3432:1512:3337:::|h[Nightmare Pendant]|h|r1false110INVTYPE_NECKnil1"] = {
 			5877.68, -- [1]
 			1094, -- [2]
 		},
-		["CalculateScoreitem:137499:::::::::::23:2:1727:34071false110INVTYPE_WAISTnil1"] = {
-			9599.1, -- [1]
-			1329, -- [2]
-		},
-		["CalculateScoreitem:138361:::::::::::3:2:3443:34071false110INVTYPE_SHOULDERnil1"] = {
-			12385.05, -- [1]
-			1758, -- [2]
-		},
-		["CalculateScoreitem:139230:::::::::::6:2:1806:34071false110INVTYPE_LEGSnil1"] = {
-			17498.37, -- [1]
-			2573, -- [2]
-		},
-		["CalculateScoreitem:137487:::::::::::23:2:1727:34071false110INVTYPE_NECKnil1"] = {
-			7935.2, -- [1]
-			997, -- [2]
-		},
-		["CalculateScore|cffa335ee|Hitem:134517::::::::110:250::23:3:1727:1497:3336:::|h[Tremorguard Pauldrons]|h|r1false110INVTYPE_SHOULDERnil1"] = {
-			10715.84, -- [1]
-			1393, -- [2]
-		},
-		["CalculateScoreitem:139230:::::::::::3:2:1807:34071false110INVTYPE_LEGSnil1"] = {
-			14528.91, -- [1]
-			1945, -- [2]
-		},
-		["CalculateScoreitem:141543:::::::::::5:1:34071false110INVTYPE_CLOAKnil1"] = {
-			6805.07, -- [1]
-			1201, -- [2]
-		},
-		["CalculateScore|cff0070dd|Hitem:134183::::::::110:250::2:3:1726:1492:3339:::|h[Skoldiir Legguards]|h|r1false110INVTYPE_LEGSnil1"] = {
-			12022.29, -- [1]
-			1615, -- [2]
-		},
-		["CalculateScoreitem:141488:::::::::::6:1:34071false110INVTYPE_FINGERnil1"] = {
-			8199.14, -- [1]
-			1201, -- [2]
-		},
-		["CalculateScoreitem:134183:::::::::::23:2:1727:34071false110INVTYPE_LEGSnil1"] = {
-			12770.22, -- [1]
-			1773, -- [2]
-		},
-		["CalculateScoreitem:134268:::::::::::23:2:1727:34071false110INVTYPE_HANDnil1"] = {
-			10157.97, -- [1]
-			1329, -- [2]
-		},
-		["CalculateScoreitem:138828:::::::::::6:1:34071false110nilnil1"] = {
-			-2, -- [1]
-		},
-		["CalculateScore|cff0070dd|Hitem:134269::::::::110:250::25:3:1824:1477:3339:::|h[Arcane Defender's Belt]|h|r1false110INVTYPE_WAISTnil1"] = {
-			8475.58, -- [1]
-			1053, -- [2]
-		},
-		["CalculateScoreitem:141459:::::::::::6:1:34071false110INVTYPE_HEADnil1"] = {
-			13993.93, -- [1]
-			2136, -- [2]
-		},
-		["CalculateScore|cff0070dd|Hitem:134487::::::::110:250::2:3:1726:1487:3339:::|h[Arch-Druid's Tainted Seal]|h|r1false110INVTYPE_FINGERnil1"] = {
-			6623.55, -- [1]
-			952, -- [2]
-		},
-		["CalculateScoreitem:140899:::::::::::6:2:3445:34071false110INVTYPE_NECKnil1"] = {
-			8477.2, -- [1]
+		["CalculateScoreitem:138364:::::::::::6:2:3445:34071false110INVTYPE_CLOAKnil1"] = {
+			9617.06, -- [1]
 			1744, -- [2]
 		},
-		["CalculateScoreitem:139236:::::::::::6:2:1806:34071false110INVTYPE_FINGERnil1"] = {
-			8296.72, -- [1]
-			1448, -- [2]
-		},
-		["CalculateScoreitem:134492:::::::::::23:2:1727:34071false110INVTYPE_NECKnil1"] = {
-			6681.15, -- [1]
+		["CalculateScoreitem:134488:::::::::::23:2:1727:34071false110INVTYPE_NECKnil1"] = {
+			6445.52, -- [1]
 			997, -- [2]
-		},
-		["CalculateScoreitem:139332:::::::::::6:2:1806:34071false110INVTYPE_NECKnil1"] = {
-			6990.8, -- [1]
-			1448, -- [2]
-		},
-		["CalculateScoreitem:141476:::::::::::6:1:34071false110INVTYPE_HANDnil1"] = {
-			11142.98, -- [1]
-			1601, -- [2]
-		},
-		["CalculateScoreitem:134515:::::::::::23:2:1727:34071false110INVTYPE_LEGSnil1"] = {
-			14662.28, -- [1]
-			1773, -- [2]
-		},
-		["CalculateScoreitem:140878:::::::::::6:2:3445:34071false110INVTYPE_WRISTnil1"] = {
-			10568.38, -- [1]
-			1744, -- [2]
-		},
-		["CalculateScoreitem:137525:::::::::::23:2:1727:34071false110INVTYPE_HANDnil1"] = {
-			10587.72, -- [1]
-			1329, -- [2]
-		},
-		["CalculateScoreitem:140882:::::::::::6:2:3445:34071false110INVTYPE_LEGSnil1"] = {
-			19861.16, -- [1]
-			3100, -- [2]
-		},
-		["CalculateScoreitem:140907:::::::::::6:2:3445:34071false110INVTYPE_HANDnil1"] = {
-			14755.29, -- [1]
-			2326, -- [2]
-		},
-		["CalculateScoreitem:134182:::::::::::23:2:1727:34071false110INVTYPE_HEADnil1"] = {
-			12455.64, -- [1]
-			1773, -- [2]
-		},
-		["CalculateScoreitem:137311:::::::::::23:2:1727:34071false110INVTYPE_NECKnil1"] = {
-			6241.55, -- [1]
-			997, -- [2]
-		},
-		["CalculateScoreitem:134509:::::::::::23:2:1727:34071false110INVTYPE_HANDnil1"] = {
-			10165.32, -- [1]
-			1329, -- [2]
 		},
 		["CalculateScore|cffa335ee|Hitem:133765::::::::110:250::23:3:1727:1492:1813:::|h[Cape of Valarjar Courage]|h|r1false110INVTYPE_CLOAKnil1"] = {
 			6649.13, -- [1]
@@ -3059,12 +3054,12 @@ DugisCharacterCache = {
 			13399.38, -- [1]
 			1773, -- [2]
 		},
-		["CalculateScoreitem:140899:::::::::::5:2:3444:34071false110INVTYPE_NECKnil1"] = {
-			7644.43, -- [1]
-			1516, -- [2]
+		["CalculateScoreitem:139230:::::::::::5:2:1805:34071false110INVTYPE_LEGSnil1"] = {
+			15923.62, -- [1]
+			2237, -- [2]
 		},
-		["CalculateScoreitem:134180:::::::::::23:2:1727:34071false110INVTYPE_HANDnil1"] = {
-			9391.84, -- [1]
+		["CalculateScoreitem:134509:::::::::::23:2:1727:34071false110INVTYPE_HANDnil1"] = {
+			10165.32, -- [1]
 			1329, -- [2]
 		},
 		["CalculateScoreitem:141481:::::::::::5:1:34071false110INVTYPE_CHESTnil1"] = {
@@ -3075,17 +3070,17 @@ DugisCharacterCache = {
 			9013.85, -- [1]
 			1516, -- [2]
 		},
-		["CalculateScoreitem:137461:::::::::::23:2:1727:34071false110INVTYPE_NECKnil1"] = {
-			5216.14, -- [1]
-			997, -- [2]
+		["CalculateScoreitem:140807:::::::::::6:2:3445:34071false110INVTYPE_TRINKETnil1"] = {
+			2641.4, -- [1]
+			0, -- [2]
 		},
-		["CalculateScore|cff0070dd|Hitem:134223::::::::110:250::28:3:3395:1492:3339:::|h[Coralplate Chestguard]|h|r1false110INVTYPE_CHESTnil1"] = {
-			14111.94, -- [1]
-			1615, -- [2]
+		["CalculateScoreitem:141488:::::::::::6:1:34071false110INVTYPE_FINGERnil1"] = {
+			8199.14, -- [1]
+			1201, -- [2]
 		},
-		["CalculateScoreitem:140884:::::::::::5:2:3444:34071false110INVTYPE_FEETnil1"] = {
-			13776.1, -- [1]
-			2022, -- [2]
+		["CalculateScoreitem:134268:::::::::::23:2:1727:34071false110INVTYPE_HANDnil1"] = {
+			10157.97, -- [1]
+			1329, -- [2]
 		},
 		["CalculateScore|cffa335ee|Hitem:134186::::::::110:250::23:4:1727:43:1512:3336:::|h[Skoldiir Bracers]|h|r1false110INVTYPE_WRISTnil1"] = {
 			7436.97, -- [1]
@@ -3095,57 +3090,57 @@ DugisCharacterCache = {
 			11656.06, -- [1]
 			1601, -- [2]
 		},
-		["CalculateScoreitem:134491:::::::::::23:2:1727:34071false110INVTYPE_NECKnil1"] = {
-			6095.92, -- [1]
+		["CalculateScoreitem:139241:::::::::::23:2:1727:34071false110INVTYPE_FEETnil1"] = {
+			10010.45, -- [1]
+			1329, -- [2]
+		},
+		["CalculateScoreitem:141437:::::::::::3:1:34071false110INVTYPE_FEETnil1"] = {
+			11731.47, -- [1]
+			1601, -- [2]
+		},
+		["CalculateScoreitem:140909:::::::::::6:2:3445:34071false110INVTYPE_CLOAKnil1"] = {
+			9791.12, -- [1]
+			1744, -- [2]
+		},
+		["CalculateScoreitem:137461:::::::::::23:2:1727:34071false110INVTYPE_NECKnil1"] = {
+			5216.14, -- [1]
 			997, -- [2]
 		},
-		["CalculateScoreitem:140807:::::::::::6:2:3445:34071false110INVTYPE_TRINKETnil1"] = {
-			2641.4, -- [1]
-			0, -- [2]
-		},
-		["CalculateScoreitem:134499:::::::::::23:2:1727:34071false110INVTYPE_NECKnil1"] = {
-			8090.73, -- [1]
-			997, -- [2]
-		},
-		["CalculateScoreitem:140894:::::::::::3:2:3443:34071false110INVTYPE_NECKnil1"] = {
-			8146.1, -- [1]
-			1319, -- [2]
-		},
-		["CalculateScoreitem:137458:::::::::::23:2:1727:34071false110INVTYPE_NECKnil1"] = {
-			7778.64, -- [1]
-			997, -- [2]
+		["CalculateScoreitem:136772:::::::::::23:2:1727:34071false110INVTYPE_FEETnil1"] = {
+			10409.15, -- [1]
+			1329, -- [2]
 		},
 		["CalculateScoreitem:139238:::::::::::6:2:1806:34071false110INVTYPE_FINGERnil1"] = {
 			6930.62, -- [1]
 			1448, -- [2]
 		},
-		["CalculateScoreitem:141488:::::::::::5:1:34071false110INVTYPE_FINGERnil1"] = {
-			8199.14, -- [1]
-			1201, -- [2]
+		["CalculateScoreitem:140899:::::::::::5:2:3444:34071false110INVTYPE_NECKnil1"] = {
+			7644.43, -- [1]
+			1516, -- [2]
 		},
-		["CalculateScoreitem:133633:::::::::::23:2:1727:34071false110INVTYPE_NECKnil1"] = {
-			6820.15, -- [1]
+		["CalculateScoreitem:134524:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
+			6212.14, -- [1]
 			997, -- [2]
 		},
-		["CalculateScoreitem:137535:::::::::::23:2:1727:34071false110INVTYPE_NECKnil1"] = {
-			6769.65, -- [1]
+		["CalculateScoreitem:141545:::::::::::5:1:34071false110INVTYPE_FINGERnil1"] = {
+			8571.14, -- [1]
+			1201, -- [2]
+		},
+		["CalculateScoreitem:141492:::::::::::3:1:34071false110INVTYPE_FINGERnil1"] = {
+			6675.86, -- [1]
+			1201, -- [2]
+		},
+		["CalculateScoreitem:134528:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
+			5216.14, -- [1]
 			997, -- [2]
-		},
-		["CalculateScoreitem:141488:::::::::::3:1:34071false110INVTYPE_FINGERnil1"] = {
-			8199.14, -- [1]
-			1201, -- [2]
-		},
-		["CalculateScoreitem:141546:::::::::::3:1:34071false110INVTYPE_FINGERnil1"] = {
-			6458.87, -- [1]
-			1201, -- [2]
 		},
 		["CalculateScoreitem:141441:::::::::::3:1:34071false110INVTYPE_HANDnil1"] = {
 			11823.88, -- [1]
 			1601, -- [2]
 		},
-		["CalculateScoreitem:139239:::::::::::5:2:1805:34071false110INVTYPE_NECKnil1"] = {
-			7862, -- [1]
-			1258, -- [2]
+		["CalculateScoreitem:141533:::::::::::6:1:34071false110INVTYPE_FINGERnil1"] = {
+			6588.16, -- [1]
+			1201, -- [2]
 		},
 		["CalculateScoreitem:138352:::::::::::3:2:3443:34071false110INVTYPE_HANDnil1"] = {
 			11821.52, -- [1]
@@ -3155,46 +3150,49 @@ DugisCharacterCache = {
 			7532.28, -- [1]
 			1258, -- [2]
 		},
-		["CalculateScoreitem:141486:::::::::::6:1:34071false110INVTYPE_FINGERnil1"] = {
-			5978.26, -- [1]
-			1201, -- [2]
+		["CalculateScoreitem:139234:::::::::::5:2:1805:34071false110INVTYPE_FEETnil1"] = {
+			12150.01, -- [1]
+			1678, -- [2]
 		},
-		["CalculateScoreitem:139239:::::::::::3:2:1807:34071false110INVTYPE_NECKnil1"] = {
-			7168.05, -- [1]
-			1094, -- [2]
+		["CalculateScoreitem:141488:::::::::::5:1:34071false110INVTYPE_FINGERnil1"] = {
+			8199.14, -- [1]
+			1201, -- [2]
 		},
 		["CalculateScoreitem:134521:::::::::::23:2:1727:34071false110INVTYPE_SHOULDERnil1"] = {
 			10073.07, -- [1]
 			1329, -- [2]
 		},
-		["CalculateScoreitem:137418:::::::::::23:2:1727:34071false110INVTYPE_NECKnil1"] = {
-			5920.24, -- [1]
+		["CalculateScoreitem:137535:::::::::::23:2:1727:34071false110INVTYPE_NECKnil1"] = {
+			6769.65, -- [1]
 			997, -- [2]
 		},
 		["CalculateScoreitem:141459:::::::::::5:1:34071false110INVTYPE_HEADnil1"] = {
 			13993.93, -- [1]
 			2136, -- [2]
 		},
-		["CalculateScoreitem:140823:::::::::::6:2:3445:34071false110nilnil1"] = {
-			-2, -- [1]
+		["CalculateScoreitem:141544:::::::::::6:1:34071false110INVTYPE_FINGERnil1"] = {
+			7503.75, -- [1]
+			1201, -- [2]
 		},
 		["CalculateScoreitem:140881:::::::::::5:2:3444:34071false110INVTYPE_HEADnil1"] = {
 			17695.99, -- [1]
 			2696, -- [2]
 		},
-		["CalculateScoreitem:140820:::::::::::6:2:3445:34071false110nilnil1"] = {
-			-2, -- [1]
+		["CalculateScoreitem:139239:::::::::::5:2:1805:34071false110INVTYPE_NECKnil1"] = {
+			7862, -- [1]
+			1258, -- [2]
 		},
-		["CalculateScoreitem:134534:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
-			6706.4, -- [1]
-			997, -- [2]
+		["CalculateScoreitem:139237:::::::::::3:2:1807:34071false110INVTYPE_FINGERnil1"] = {
+			7128.55, -- [1]
+			1094, -- [2]
 		},
 		["CalculateScore|cff0070dd|Hitem:134322::::::::110:250::30:4:3397:604:1492:1675:::|h[Drained Mana Crystal]|h|r1false110INVTYPE_TRINKETnil1"] = {
 			3187.32, -- [1]
 			0, -- [2]
 		},
-		["CalculateScoreitem:140833:::::::::::6:2:3445:34071false110nilnil1"] = {
-			-2, -- [1]
+		["CalculateScoreitem:134493:::::::::::23:2:1727:34071false110INVTYPE_FINGERnil1"] = {
+			8090.73, -- [1]
+			997, -- [2]
 		},
 		["CalculateScore|cffa335ee|Hitem:134358::::::::110:250::23:4:1727:42:1502:1813:::|h[Portalguard Helm]|h|r1false110INVTYPE_HEADnil1"] = {
 			12792.2, -- [1]

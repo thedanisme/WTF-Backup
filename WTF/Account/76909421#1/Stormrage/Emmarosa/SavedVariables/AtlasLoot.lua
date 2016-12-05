@@ -22,8 +22,8 @@ AtlasLootCharDB = {
 		["classFilter"] = true,
 		["selected"] = {
 			"AtlasLoot_Legion", -- [1]
-			"VaultOfTheWardens", -- [2]
-			2, -- [3]
+			"HallsOfValor", -- [2]
+			3, -- [3]
 			8, -- [4]
 			0, -- [5]
 		},

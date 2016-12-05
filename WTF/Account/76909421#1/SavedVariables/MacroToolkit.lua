@@ -389,10 +389,10 @@ MacroToolkitDB = {
 					["name"] = "Stealth/Symbols",
 					["body"] = "#showtooltip Stealth\n/use Stealth\n/use Symbols of Death\n",
 				},
-				[129] = {
+				[121] = {
 					["icon"] = "134400",
-					["name"] = "Shadow Blades",
-					["body"] = "#showtooltip Shadow Blades\n/use Shadow Blades\n/use 13\n/use 14\n/use Goremaw's Bite\n",
+					["name"] = " ",
+					["body"] = "#showtooltip Adrenaline Rush\n/use Adrenaline Rush\n/use Curse of the Dreadblades\n/use 13\n/use 14\n/use 11\n",
 				},
 				[125] = {
 					["icon"] = "1035048",
@@ -404,10 +404,10 @@ MacroToolkitDB = {
 					["name"] = "SoD/SS",
 					["body"] = "#showtooltip Symbols of Death\n/use Symbols of Death\n/use Shadowstrike\n",
 				},
-				[121] = {
+				[129] = {
 					["icon"] = "134400",
-					["name"] = " ",
-					["body"] = "#showtooltip Adrenaline Rush\n/use Adrenaline Rush\n/use Curse of the Dreadblades\n/use 13\n/use 14\n/use 11\n",
+					["name"] = "Shadow Blades",
+					["body"] = "#showtooltip Shadow Blades\n/use Shadow Blades\n/use 13\n/use 14\n/use Goremaw's Bite\n",
 				},
 			},
 			["backups"] = {
