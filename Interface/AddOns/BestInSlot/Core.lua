@@ -19,10 +19,10 @@ BestInSlot.defaultModuleState = false
 BestInSlot.options.DEBUG = false
 BestInSlot.Author = ("%s%s @ %s"):format("|c"..RAID_CLASS_COLORS.SHAMAN.colorStr, "Feng".."|r",ConvertRGBtoColorString(PLAYER_FACTION_COLORS[0]).."Moonglade|r")
 --@non-debug@ 
-BestInSlot.version = 421 
+BestInSlot.version = 427 
 --@end-non-debug@
 BestInSlot.AlphaVersion = not (GetAddOnMetadata("BestInSlot", "Version"):find("Release") and true or false)
-
+--@end-do-not-package@
 local slashCommands = {}
 local defaults = {
   char = {
@@ -296,7 +296,7 @@ function BestInSlot:RegisterRaidInstance(raidTier, unlocalizedName, description,
   local localizedExpansion = data.raidTiers[raidTier].expansion
   if not data.expansions[localizedExpansion] then error("The expansion "..localizedExpansion.." has not been registered yet!") end
   if not data.raidTiers[raidTier] then error("The raid tier "..raidTier.." has not been registered yet") end
-  if data.instances[unlocalizedName] then error("This raid instance has allready been registered!") end
+  if data.instances[unlocalizedName] then error("This raid instance has already been registered!") end
   data.instances[unlocalizedName] = setmetatable({expansion = localizedExpansion, raidTier = raidTier, description = description}, instanceDefaultIndexMetatable)
   if args then
     for k,v in pairs(args) do
@@ -419,17 +419,26 @@ function BestInSlot:RegisterBossLoot(unlocalizedInstanceName, lootTable, bossNam
       if not itemid then self.console:AddError("ItemTable didn't provide id", itemid) end
     end
     local item = itemData[itemid]
-    if item then --The item already existed
+    if item and not item.customitem then --The item already existed
       if not item.multiplesources then 
         item.multiplesources = {}
-        item.multiplesources[item.dungeon] = {}
-        item.multiplesources[item.dungeon][item.bossid] = true
-      else
-        item.multiplesources[unlocalizedInstanceName] = item.multiplesources[unlocalizedInstanceName] or {}
-        item.multiplesources[unlocalizedInstanceName][bossId] = true
+        if item.bossid and item.dungeon then
+          item.multiplesources[item.dungeon] = {}
+          item.multiplesources[item.dungeon][item.bossid] = true
+        else
+          self:Print(item)
+          self:Print(self.unsafeIDs)
+        end
       end
+      item.multiplesources[unlocalizedInstanceName] = item.multiplesources[unlocalizedInstanceName] or {}
+      item.multiplesources[unlocalizedInstanceName][bossId] = true
       bossLootTable[itemid] = item
     else
+      if item and item.customitem then
+        self:Print("You have added a custom item that is being registered as a module. This is being removed from your custom items.", true)
+        self:Print("Removing: "..item.link, true)
+        self:UnregisterCustomItem(itemid)
+      end
       local _, link, _, _, _, _, _, _, equipSlot = GetItemInfo(itemid)
       if not link then self.unsafeIDs[itemid] = true end
       bossLootTable[itemid] = {
@@ -589,7 +598,7 @@ end
 
 function BestInSlot:GetItemInfoFromLink(itemlink)
   local _,itemid, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specId, upgradeId, instanceDifficultyID, numBonusId, bonusId1, bonusId2, upgradeVal = (":"):split(itemlink)
-  return tonumber(itemid), tonumber(instanceDifficultyID)
+  return tonumber(itemid), tonumber(instanceDifficultyID), bonusId1, bonusId2
 end
 
 --- Checks if the player has an item in their bags, or an item similar to it (warforged version for example)
@@ -719,12 +728,12 @@ BestInSlot:RegisterSlashCmd("help", (L["%s - this dialog"]):format("/bis help"),
       tremove(orderedList, i + 1)
     end
   end
-  print(BestInSlot.colorHighlight..("-"):rep(5)..BestInSlot.colorNormal.."BestInSlot "..L["commands"]..BestInSlot.colorHighlight..("-"):rep(5).."|r")
+  DEFAULT_CHAT_FRAME:AddMessage(printString)(BestInSlot.colorHighlight..("-"):rep(5)..BestInSlot.colorNormal.."BestInSlot "..L["commands"]..BestInSlot.colorHighlight..("-"):rep(5).."|r")
   BestInSlot:Print(("%s: %s (%s)"):format(GAME_VERSION_LABEL, GetAddOnMetadata("BestInSlot", "Version"), BestInSlot.version))
   for i=1,#orderedList do
     BestInSlot:Print(slashCommands[orderedList[i]].descr, true)
   end
-  print(BestInSlot.colorHighlight..("-"):rep(36).."|r")
+  DEFAULT_CHAT_FRAME:AddMessage(printString)(BestInSlot.colorHighlight..("-"):rep(36).."|r")
 end)
 
 BestInSlot:RegisterSlashCmd("debug", (L["%s - enable/disable debug messages"]):format("/bis debug"), function()
@@ -1118,6 +1127,7 @@ end
 
 function BestInSlot:UnregisterCustomItem(itemid)
   local item = itemData[itemid]
+  self:Print(item)
   if not item or not item.customitem then return end
   local dungeon = item.dungeon
   local raidtier = self:GetRaidTiers(self.INSTANCE, dungeon)
@@ -1357,7 +1367,7 @@ local function helperGetBestInSlotItems(raidTier, difficulty, specialization, sl
   end
   if raidTier >= 70000 and raidTier < 80000 and BestInSlot.Artifacts then
     local relics = { BestInSlot.Artifacts:GetBestInSlotRelics(raidTier, difficulty, specialization) }
-    for i=1,#relics do
+    for i=1,3 do
       if relics[i] then
         requiredItems[29 + i] = {item = relics[i], obtained = BestInSlot:HasItem(relics[i], difficulty, true) or false}
         slotInfo[29 + i] = 29 + i
@@ -1860,3 +1870,4 @@ end
 function BestInSlot:GetPlayerInfo()
   return {race = select(2, UnitRace("player")), sex = UnitSex("player") - 2, name = UnitName("player"), class  = select(2, UnitClass("player"))}
 end
+--@end-do-not-package@

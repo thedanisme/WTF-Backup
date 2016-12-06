@@ -385,7 +385,7 @@ function CustomItems:Draw(container, dungeon)
   container:SetUserData("stage", stageDropdown)
   
   local dungeonDropdown = AceGUI:Create("Dropdown")
-  dungeonDropdown:SetLabel(L["Select the dungeon that you would like to add this item to."])
+  dungeonDropdown:SetLabel(L["Select the instance that you would like to add this item to."])
   local raidTiers = self:GetRaidTiers()
   dungeonDropdown:SetList({})
   for _,raidtier in pairs(raidTiers) do

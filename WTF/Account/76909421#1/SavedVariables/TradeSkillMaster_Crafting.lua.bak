@@ -1,0 +1,78 @@
+
+TradeSkillMaster_CraftingDB = {
+	["f@Horde - Kazzak@gathering"] = {
+		["selectedSources"] = {
+		},
+		["availableMats"] = {
+		},
+		["shortItems"] = {
+		},
+		["sessionOptions"] = {
+		},
+		["selectedSourceStatus"] = {
+		},
+		["destroyingMats"] = {
+		},
+		["professions"] = {
+		},
+		["neededMats"] = {
+		},
+		["gatheredMats"] = false,
+		["extraMats"] = {
+		},
+	},
+	["_scopeKeys"] = {
+		["char"] = {
+			"Janitabank - Kazzak", -- [1]
+		},
+		["realm"] = {
+			"Kazzak", -- [1]
+		},
+		["profile"] = {
+			"Default", -- [1]
+		},
+		["factionrealm"] = {
+			"Horde - Kazzak", -- [1]
+		},
+	},
+	["f@Horde - Kazzak@disableCheckBox"] = false,
+	["g@ @priceColumn"] = 1,
+	["f@Horde - Kazzak@ignoreAlts"] = false,
+	["g@ @questSmartCrafting"] = true,
+	["_hash"] = 15983053,
+	["g@ @frameQueueOpen"] = false,
+	["f@Horde - Kazzak@ignoreIntermediate"] = false,
+	["g@ @defaultCraftPriceMethod"] = "first(dbminbuyout, dbmarket)",
+	["g@ @ignoreGuilds"] = {
+	},
+	["f@Horde - Kazzak@mats"] = {
+	},
+	["_currentProfile"] = {
+		["Janitabank - Kazzak"] = "Default",
+	},
+	["f@Horde - Kazzak@queueStatus"] = {
+		["collapsed"] = {
+		},
+	},
+	["g@ @ignoreCDCraftCost"] = true,
+	["f@Horde - Kazzak@buyAH"] = false,
+	["g@ @showingDefaultFrame"] = false,
+	["g@ @ignoreCharacters"] = {
+	},
+	["f@Horde - Kazzak@playerProfessions"] = {
+	},
+	["f@Horde - Kazzak@ignoreDECheckBox"] = false,
+	["f@Horde - Kazzak@professionScanCache"] = {
+	},
+	["f@Horde - Kazzak@evenStacks"] = false,
+	["g@ @queueSort"] = 1,
+	["g@ @helpPlatesShown"] = {
+		["gatheringFrame"] = true,
+	},
+	["f@Horde - Kazzak@crafts"] = {
+	},
+	["g@ @defaultMatCostMethod"] = "min(dbmarket, crafting, vendorbuy, convert(dbmarket))",
+	["f@Horde - Kazzak@inkTrade"] = false,
+	["_version"] = 7,
+	["g@ @profitPercent"] = 0.07,
+}

@@ -8,9 +8,9 @@ function TrialOfValor:OnEnable()
   self:RegisterRaidTier("Legion", 70005, trialOfValorName, PLAYER_DIFFICULTY1, PLAYER_DIFFICULTY2, PLAYER_DIFFICULTY6)
   self:RegisterRaidInstance(70005, ToV, trialOfValorName, {
     bonusids = {
-      [1] = {1807, 3407},
-      [2] = {1805, 3407},
-      [3] = {1806, 3407},
+      [1] = {3467, 3407},
+      [2] = {3468, 3407},
+      [3] = {3469, 3407},
     }
   })
   --------------------------------------------------

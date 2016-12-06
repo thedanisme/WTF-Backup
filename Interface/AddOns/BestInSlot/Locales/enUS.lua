@@ -105,7 +105,7 @@ L["Shows interactive tutorials on how to efficiently use %s"] = true
 L["Tutorials have been reset."] = true
 
 --RaidTier Frame
-L["It looks like this dungeon does not drop any of your BestInSlot items."] = true
+L["It looks like this instance does not drop any of your BestInSlot items."] = true
 L["It could also be that you haven't set the BestInSlot for this raid tier yet"] = true
 L["You can use the BiS Manager on the left to set your BestInSlot"] = true
 
@@ -129,6 +129,7 @@ L["Select all"] = true
 L["Deselect all"] = true
 L["Class filter"] = true
 L["Token filter"] = true
+L["Armor filter"] = true
 L["Show obtained items"] = true
 L["Show Guild BiS lists"] = true
 L["Not enough data to filter"] = true
@@ -218,7 +219,7 @@ L["Failed to add item because of the following reasons:"] = true
 L["The minimum item level of custom items is %d!"] = true
 L["You cannot add items of type: %s!"] = true
 L["Warlords crafted options:"] = true
-L["Select the dungeon that you would like to add this item to."] = true
+L["Select the instance that you would like to add this item to."] = true
 L["Successfully added %s to the custom items of %s!"] = true
 L["Add a custom item"] = true
 L["Pick a previously created custom item"] = true

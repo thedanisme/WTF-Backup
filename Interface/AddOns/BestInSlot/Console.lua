@@ -41,17 +41,17 @@ function BestInSlot.Print(module, str, overrideDebug, second)
         else
           printString = ("%s%s: %s..%s..|r"):format(colorHighlight, name, normalColor, (str):sub(1,maxSize-textFormatSize))
         end
-        print(printString)
+        DEFAULT_CHAT_FRAME:AddMessage(printString)
         module:Print((str):sub(maxSize - textFormatSize), overrideDebug, true)
       else
         if second then
-          print(("%s%s: %s..%s|r"):format(colorHighlight, name, normalColor, str))
+          DEFAULT_CHAT_FRAME:AddMessage(("%s%s: %s..%s|r"):format(colorHighlight, name, normalColor, str))
         else
-          print(("%s%s: %s%s|r"):format(colorHighlight, name, normalColor, str))
+          DEFAULT_CHAT_FRAME:AddMessage(("%s%s: %s%s|r"):format(colorHighlight, name, normalColor, str))
         end
       end
     else
-      print(("%s%s: %sDump of %s:|r"):format(BestInSlot.colorHighlight, name, BestInSlot.colorNormal, type(str)))
+      DEFAULT_CHAT_FRAME:AddMessage(("%s%s: %sDump of %s:|r"):format(BestInSlot.colorHighlight, name, BestInSlot.colorNormal, type(str)))
       DevTools_Dump(str)
     end
   end

@@ -1,0 +1,41 @@
+
+TradeSkillMaster_MailingDB = {
+	["g@ @sendDelay"] = 0.5,
+	["g@ @sendItemsIndividually"] = false,
+	["c@Janitabank - Kazzak@goldMailTarget"] = "",
+	["_scopeKeys"] = {
+		["char"] = {
+			"Janitabank - Kazzak", -- [1]
+		},
+		["realm"] = {
+			"Kazzak", -- [1]
+		},
+		["profile"] = {
+			"Default", -- [1]
+		},
+		["factionrealm"] = {
+			"Horde - Kazzak", -- [1]
+		},
+	},
+	["g@ @helpPlatesShown"] = {
+	},
+	["f@Horde - Kazzak@deMailTarget"] = "",
+	["_hash"] = 3711258,
+	["g@ @inboxMessages"] = true,
+	["g@ @defaultMailTab"] = true,
+	["_currentProfile"] = {
+		["Janitabank - Kazzak"] = "Default",
+	},
+	["g@ @resendDelay"] = 1,
+	["g@ @defaultPage"] = 1,
+	["c@Janitabank - Kazzak@goldKeepAmount"] = 1000000,
+	["g@ @openMailSound"] = "TSM_NO_SOUND",
+	["g@ @displayMoneyCollected"] = true,
+	["g@ @keepMailSpace"] = 1,
+	["g@ @deleteEmptyNPCMail"] = false,
+	["g@ @sendMessages"] = true,
+	["g@ @showReloadBtn"] = true,
+	["g@ @deMaxQuality"] = 3,
+	["_version"] = 1,
+	["g@ @autoCheck"] = true,
+}

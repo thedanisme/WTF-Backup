@@ -85,6 +85,7 @@ function EmeraldNightmare:OnEnable()
     139219, --Black Venom Sabatons
     139322, --Cocoon of Enforced Solitude
     139323, --Twisting Wind
+    137008, --Stormfury Diamond
   }
   self:RegisterBossLoot(EN, lootTable, bossName)
 
@@ -488,8 +489,7 @@ function EmeraldNightmare:OnEnable()
   } 
   self:RegisterMiscItems(EN, misc)
 end
-function EmeraldNightmare:InitializeZoneDetect(ZoneDetect)  
-  self:Print("Hey I'm doing initializing zone detection yo")
+function EmeraldNightmare:InitializeZoneDetect(ZoneDetect)
   ZoneDetect:RegisterMapID(1094, EN)
   
   ZoneDetect:RegisterNPCID(102672, EN, 1) --Nythemdra

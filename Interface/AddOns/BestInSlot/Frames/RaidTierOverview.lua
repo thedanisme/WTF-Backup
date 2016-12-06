@@ -210,7 +210,7 @@ function Overview:UpdateContent()
       if selectedRaidTier >= 70000 and selectedRaidTier < 80000 and self.Artifacts then
         local artifactBis = {self.Artifacts:GetBestInSlotRelics(selectedRaidTier, selectedDifficulty, specId)}
         local formattedList = {}
-        for i=1,#artifactBis do
+        for i=1,3 do
           formattedList[29 + i] = {item = artifactBis[i]}
         end
         for i=1,3 do
@@ -230,7 +230,7 @@ function Overview:UpdateContent()
     label:SetFullWidth(true)
     label:SetFont(GameFontNormalSmall:GetFont(), 14, nil)
     label:SetText(
-      "\n"..L["It looks like this dungeon does not drop any of your BestInSlot items."].."\n"..
+      "\n"..L["It looks like this instance does not drop any of your BestInSlot items."].."\n"..
       "\n"..L["It could also be that you haven't set the BestInSlot for this raid tier yet"].."\n"..
       "\n"..L["You can use the BiS Manager on the left to set your BestInSlot"]
     )

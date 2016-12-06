@@ -16,7 +16,7 @@ RKDatabase = {
 		["Emmarosa - Stormrage"] = "Default",
 		["Chucklefunk - Stormrage"] = "Default",
 		["Oenta - Stormrage"] = "Default",
-		["Horny - Bloodhoof"] = "Default",
+		["Talthalador - Stormrage"] = "Default",
 		["Whyfy - Stormrage"] = "Default",
 		["Priaprisum - Stormreaver"] = "Default",
 		["Pryahprism - Turalyon"] = "Default",
@@ -24,44 +24,44 @@ RKDatabase = {
 		["Callil - Stormrage"] = "Default",
 		["Druidann - Stormrage"] = "Default",
 		["Callil - Turalyon"] = "Default",
-		["Ershirley - Stormrage"] = "Default",
-		["Brewbies - Turalyon"] = "Default",
+		["Brobies - Stormrage"] = "Default",
+		["Bloodcox - Stormrage"] = "Default",
 		["Kateplusnine - Stormrage"] = "Default",
-		["Rosabria - Sargeras"] = "Default",
+		["Aranduh - Bloodhoof"] = "Default",
 		["Bruhbies - Stormrage"] = "Default",
 		["Rotator - Turalyon"] = "Default",
 		["Llamama - Stormrage"] = "Default",
 		["Barewbies - Stormrage"] = "Default",
-		["Fupa - Stormrage"] = "Default",
-		["Titt - Turalyon"] = "Default",
-		["Arando - Bloodhoof"] = "Default",
-		["Skratch - Turalyon"] = "Default",
-		["Lackteight - Turalyon"] = "Default",
 		["Knutts - Turalyon"] = "Default",
-		["Aranduh - Bloodhoof"] = "Default",
+		["Titt - Turalyon"] = "Default",
+		["Lackteight - Turalyon"] = "Default",
+		["Skratch - Turalyon"] = "Default",
+		["Arando - Bloodhoof"] = "Default",
+		["Fupa - Stormrage"] = "Default",
+		["Rosabria - Sargeras"] = "Default",
 		["Danoh - Stormrage"] = "Default",
-		["Bloodcox - Stormrage"] = "Default",
-		["Brobies - Stormrage"] = "Default",
+		["Brewbies - Turalyon"] = "Default",
+		["Ershirley - Stormrage"] = "Default",
 		["Edgelordshue - Stormrage"] = "Default",
 		["Dalgrens - Bloodhoof"] = "Default",
 		["Beer - Bloodhoof"] = "Default",
-		["Talthalador - Stormrage"] = "Default",
+		["Horny - Bloodhoof"] = "Default",
 		["Jimbo - Ner'zhul"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["firstLoad"] = false,
-			["prevDiffShown"] = 15,
+			["diffShown"] = 15,
 			["recordTimes"] = {
 				["Highmaul"] = {
 					["Brackenspore"] = {
 						[7] = 86,
 					},
+					["Kargath Bladefist"] = {
+						[7] = 67,
+					},
 					["Ko'ragh"] = {
 						[7] = 54,
-					},
-					["The Butcher"] = {
-						[7] = 57,
 					},
 					["Tectus"] = {
 						[7] = 126,
@@ -69,8 +69,8 @@ RKDatabase = {
 					["Imperator Mar'gok"] = {
 						[7] = 331,
 					},
-					["Kargath Bladefist"] = {
-						[7] = 67,
+					["The Butcher"] = {
+						[7] = 57,
 					},
 					["Twin Ogron"] = {
 						[7] = 108,
@@ -93,24 +93,24 @@ RKDatabase = {
 					["Hans'gar and Franzok"] = {
 						[7] = 136,
 					},
-					["The Blast Furnace"] = {
-						[7] = 265,
-						[14] = 518,
+					["Kromog"] = {
+						[7] = 140,
 					},
 					["Beastlord Darmac"] = {
 						[7] = 182,
 						[14] = 305,
 					},
-					["Blackhand"] = {
-						[7] = 151,
-						[14] = 294,
-					},
 					["The Iron Maidens"] = {
 						[7] = 246,
 						[14] = 445,
 					},
-					["Kromog"] = {
-						[7] = 140,
+					["Blackhand"] = {
+						[7] = 151,
+						[14] = 294,
+					},
+					["The Blast Furnace"] = {
+						[7] = 265,
+						[14] = 518,
 					},
 				},
 				["Hellfire Citadel"] = {
@@ -154,34 +154,34 @@ RKDatabase = {
 						[15] = 215,
 						[7] = 236,
 					},
-					["Archimonde"] = {
-						[14] = 175,
-						[7] = 283,
-						[15] = 235,
-					},
-					["Tyrant Velhari"] = {
-						[14] = 130,
-						[15] = 233,
-						[7] = 232,
-					},
-					["Hellfire Assault"] = {
-						[14] = 270,
-						[7] = 253,
-						[15] = 338,
+					["Kormrok"] = {
+						[14] = 86,
+						[7] = 100,
+						[15] = 124,
 					},
 					["Shadow-Lord Iskar"] = {
 						[14] = 212,
 						[15] = 338,
 						[7] = 311,
 					},
-					["Kormrok"] = {
-						[14] = 86,
-						[7] = 100,
-						[15] = 124,
+					["Hellfire Assault"] = {
+						[14] = 270,
+						[7] = 253,
+						[15] = 338,
+					},
+					["Tyrant Velhari"] = {
+						[14] = 130,
+						[15] = 233,
+						[7] = 232,
+					},
+					["Archimonde"] = {
+						[14] = 175,
+						[7] = 283,
+						[15] = 235,
 					},
 				},
 			},
-			["diffShown"] = 15,
+			["prevDiffShown"] = 15,
 		},
 	},
 }

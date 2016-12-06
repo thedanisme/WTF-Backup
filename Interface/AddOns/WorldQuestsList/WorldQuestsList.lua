@@ -1,4 +1,4 @@
-local VERSION = 24
+local VERSION = 26
 
 --[[
 Special icons for rares, pvp or pet battle quests in list
@@ -58,6 +58,8 @@ Minor fixes
 
 New option "Ignore filter for bounty quests"
 Minor fixes
+
+Last client update (not addon) broke something with world quests (updating info too frequently). I added 5 second limit for updating (so may need time for update rewards after login), dropdowns will closing every 5 sec too. Sorry for the inconvenience, it'll not be too long until I write real solution
 ]]
 
 local charKey = (UnitName'player' or "").."-"..(GetRealmName() or ""):gsub(" ","")
@@ -193,6 +195,12 @@ local UpdateAnchor
 
 local QuestMapFrame_IsQuestWorldQuest = QuestMapFrame_IsQuestWorldQuest or QuestUtils_IsQuestWorldQuest	--7.1 Support
 
+local WorldQuestList_Update_PrevZone = nil
+local WorldQuestList_Update_PrevTime = 0
+local WorldQuestList_Update_PrevCounter = 0
+
+local ELib = {}
+
 local function TaskPOI_OnClick(self,button)
 	if not GExRT or VWQL.DisableArrow then
 		return
@@ -239,7 +247,9 @@ WorldQuestList:SetScript("OnHide",function(self)
 		self:SetParent(WorldMapFrame)
 		UpdateAnchor()
 	end
+	WorldQuestList_Update_PrevZone = nil
 end)
+
 
 WorldQuestList.b = WorldQuestList:CreateTexture(nil,"BACKGROUND")
 WorldQuestList.b:SetAllPoints()
@@ -751,10 +761,15 @@ WorldQuestList.sortDropDown = CreateFrame("Frame", "WorldQuestListSortDropDown",
 WorldQuestList.sortDropDown:SetPoint("BOTTOMRIGHT",WorldQuestList,"TOPRIGHT",15-120,0)
 WorldQuestList.sortDropDown.Text:SetText(RAID_FRAME_SORT_LABEL:gsub(" ([^ ]+)$",""), nil)
 UIDropDownMenu_SetWidth(WorldQuestList.sortDropDown, 100)
+WorldQuestList.sortDropDown.Button.Width = 150
+WorldQuestList.sortDropDown.Button.isButton = true
+WorldQuestList.sortDropDown:SetScript("OnHide",function () ELib.ScrollDropDown.Close() end)
 
 local function SetSort(_, arg1)
 	ActiveSort = arg1
 	VWQL.Sort = ActiveSort
+	ELib.ScrollDropDown.Close()
+	WorldQuestList_Update_PrevZone = nil
 	WorldQuestList_Update()
 end
 
@@ -766,152 +781,147 @@ local TableSortNames = {
 	REWARDS,
 }
 
-WorldQuestList.sortDropDown.Button:SetScript("OnClick",function(self)
-	UIDropDownMenu_Initialize(WorldQuestList.sortDropDown, function(self, level, menuList)
-		local info = UIDropDownMenu_CreateInfo()
-		
-		info.notCheckable = false
-		
-		for i=1,#TableSortNames do
-			info.text = TableSortNames[i]
-			info.menuList = i
-			info.hasArrow = false
-			info.arg1 = i
-			info.func = SetSort
-			info.checked = function() return ActiveSort == i end
-			UIDropDownMenu_AddButton(info)
+do
+	local list = {}
+	WorldQuestList.sortDropDown.Button.List = list
+	for i=1,#TableSortNames do
+		list[i] = {
+			text = TableSortNames[i],
+			radio = true,
+			arg1 = i,
+			func = SetSort,
+		}
+	end
+	function WorldQuestList.sortDropDown.Button:additionalToggle()
+		for i=1,#self.List do
+			self.List[i].checkState = ActiveSort == i
 		end
-	end)
-	ToggleDropDownMenu(nil, nil, self:GetParent())
-	PlaySound("igMainMenuOptionCheckBoxOn")
-	self:SetScript("OnClick",function(self)
-		ToggleDropDownMenu(nil, nil, self:GetParent())
-		PlaySound("igMainMenuOptionCheckBoxOn")	
-	end)
+	end
+end
+
+
+WorldQuestList.sortDropDown.Button:SetScript("OnClick",function(self)
+	ELib.ScrollDropDown.ClickButton(self)
 end)
 
 WorldQuestList.filterDropDown = CreateFrame("Frame", "WorldQuestListFilterDropDown", WorldQuestList, "UIDropDownMenuTemplate")
 WorldQuestList.filterDropDown:SetPoint("BOTTOMRIGHT",WorldQuestList,"TOPRIGHT",15,0)
 WorldQuestList.filterDropDown.Text:SetText(FILTERS)
 UIDropDownMenu_SetWidth(WorldQuestList.filterDropDown, 100)
+WorldQuestList.filterDropDown.Button.Width = 220
+WorldQuestList.filterDropDown.Button.isButton = true
+WorldQuestList.filterDropDown:SetScript("OnHide",function () ELib.ScrollDropDown.Close() end)
 
-local function SetFilter(_, arg1, _, value)
-	if value then
+local function SetFilter(_, arg1)
+	if bit.band(filters[arg1][2],ActiveFilter) > 0 then
 		ActiveFilter = bit.bxor(ActiveFilter,filters[arg1][2])
 	else
 		ActiveFilter = bit.bor(ActiveFilter,filters[arg1][2])
 	end
 	VWQL[charKey].Filter = ActiveFilter
+	ELib.ScrollDropDown.UpdateChecks()
+	WorldQuestList_Update_PrevZone = nil
 	WorldQuestList_Update()
 end
 
-local function SetFilterType(_, arg1, _, value)
-	if value then
-		ActiveFilterType[arg1] = true
-	else
-		ActiveFilterType[arg1] = nil
-	end
+local function SetFilterType(_, arg1)
+	ActiveFilterType[arg1] = not ActiveFilterType[arg1]
+	ELib.ScrollDropDown.UpdateChecks()
+	WorldQuestList_Update_PrevZone = nil
 	WorldQuestList_Update()
+end
+
+do
+	local list = {}
+	WorldQuestList.filterDropDown.Button.List = list
+
+	list[#list+1] = {
+		text = CHECK_ALL,
+		func = function()
+			ActiveFilter = 2 ^ #filters - 1
+			VWQL[charKey].Filter = ActiveFilter
+			ELib.ScrollDropDown.Close()
+			WorldQuestList_Update_PrevZone = nil
+			WorldQuestList_Update()
+		end,
+	}
+	list[#list+1] = {
+		text = UNCHECK_ALL,
+		func = function()
+			ActiveFilter = 0
+			VWQL[charKey].Filter = ActiveFilter
+			ELib.ScrollDropDown.Close()
+			WorldQuestList_Update_PrevZone = nil
+			WorldQuestList_Update()
+		end,
+	}
+	for i=1,#filters do
+		list[#list+1] = {
+			text = filters[i][1],
+			func = SetFilter,
+			arg1 = i,
+			checkable = true,
+		}
+	end
+	list[#list+1] = {
+		text = TYPE,
+		isTitle = true,
+	}
+	list[#list+1] = {
+		text = PVP,
+		func = SetFilterType,
+		arg1 = "pvp",
+		checkable = true,
+	}
+	list[#list+1] = {
+		text = DUNGEONS,
+		func = SetFilterType,
+		arg1 = "dung",
+		checkable = true,
+	}
+	list[#list+1] = {
+		text = TRADE_SKILLS,
+		func = SetFilterType,
+		arg1 = "prof",
+		checkable = true,
+	}
+	list[#list+1] = {
+		text = PET_BATTLE_PVP_QUEUE,
+		func = SetFilterType,
+		arg1 = "pet",
+		checkable = true,
+	}
+	list[#list+1] = {
+		text = OTHER,
+		isTitle = true,
+	}
+	list[#list+1] = {
+		text = LOCALE.bountyIgnoreFilter,
+		func = function()
+			VWQL[charKey].bountyIgnoreFilter = not VWQL[charKey].bountyIgnoreFilter
+			ELib.ScrollDropDown.UpdateChecks()
+			WorldQuestList_Update_PrevZone = nil
+			WorldQuestList_Update()
+		end,
+		arg1 = "!ignoreFilter",
+		checkable = true,
+	}
+	
+	function WorldQuestList.filterDropDown.Button:additionalToggle()
+		for i=1,#self.List do
+			if self.List[i].func == SetFilter then
+				self.List[i].checkState = bit.band(filters[ self.List[i].arg1 ][2],ActiveFilter) > 0
+			elseif self.List[i].func == SetFilterType then
+				self.List[i].checkState = not ActiveFilterType[ self.List[i].arg1 ]
+			elseif self.List[i].arg1 == "!ignoreFilter" then
+				self.List[i].checkState = VWQL[charKey].bountyIgnoreFilter
+			end
+		end
+	end	
 end
 
 WorldQuestList.filterDropDown.Button:SetScript("OnClick",function(self)
-	UIDropDownMenu_Initialize(WorldQuestList.filterDropDown, function(self, level, menuList)
-		local info = UIDropDownMenu_CreateInfo()
-		
-		info.notCheckable = true
-	
-		info.text = CHECK_ALL
-		info.func = function()
-			ActiveFilter = 2 ^ #filters - 1
-			VWQL[charKey].Filter = ActiveFilter
-			WorldQuestList_Update()
-		end
-		UIDropDownMenu_AddButton(info, level)
-		
-		info.text = UNCHECK_ALL
-		info.func = function()
-			ActiveFilter = 0
-			VWQL[charKey].Filter = ActiveFilter
-			WorldQuestList_Update()
-		end
-		UIDropDownMenu_AddButton(info, level)
-		
-		info.notCheckable = false
-		
-		if (level or 1) == 1 then
-			for i=1,#filters do
-				info.text = filters[i][1]
-				info.menuList = i
-				info.hasArrow = false
-				info.arg1 = i
-				info.func = SetFilter
-				info.checked = function() return bit.band(filters[i][2],ActiveFilter) > 0 end
-				UIDropDownMenu_AddButton(info)
-			end
-		end
-		
-		info.text = TYPE
-		info.isTitle = true
-		info.hasArrow = false
-		info.notCheckable = true
-		UIDropDownMenu_AddButton(info)
-		
-		info.isTitle = false
-		info.disabled = false
-		info.notCheckable = false
-		info.text = PVP
-		info.hasArrow = false
-		info.arg1 = "pvp"
-		info.func = SetFilterType
-		info.checked = function() return not ActiveFilterType.pvp end
-		UIDropDownMenu_AddButton(info)
-		
-		info.text = DUNGEONS
-		info.arg1 = "dung"
-		info.func = SetFilterType
-		info.checked = function() return not ActiveFilterType.dung end
-		UIDropDownMenu_AddButton(info)		
-		
-		info.text = TRADE_SKILLS
-		info.arg1 = "prof"
-		info.func = SetFilterType
-		info.checked = function() return not ActiveFilterType.prof end
-		UIDropDownMenu_AddButton(info)		
-		
-		info.text = PET_BATTLE_PVP_QUEUE
-		info.arg1 = "pet"
-		info.func = SetFilterType
-		info.checked = function() return not ActiveFilterType.pet end
-		UIDropDownMenu_AddButton(info)
-
-		info.text = OTHER
-		info.isTitle = true
-		info.hasArrow = false
-		info.notCheckable = true
-		UIDropDownMenu_AddButton(info)	
-		
-		info.isTitle = false
-		info.disabled = false
-		info.notCheckable = false
-		info.text = LOCALE.bountyIgnoreFilter
-		info.hasArrow = false
-		info.func = function (_, _, _, value)
-			if value then
-				VWQL[charKey].bountyIgnoreFilter = nil
-			else
-				VWQL[charKey].bountyIgnoreFilter = true
-			end
-			WorldQuestList_Update()
-		end
-		info.checked = function() return VWQL[charKey].bountyIgnoreFilter end
-		UIDropDownMenu_AddButton(info)	
-	end)
-	ToggleDropDownMenu(nil, nil, self:GetParent())
-	PlaySound("igMainMenuOptionCheckBoxOn")
-	self:SetScript("OnClick",function(self)
-		ToggleDropDownMenu(nil, nil, self:GetParent())
-		PlaySound("igMainMenuOptionCheckBoxOn")	
-	end)
+	ELib.ScrollDropDown.ClickButton(self)
 end)
 
 function UpdateScale()
@@ -949,143 +959,157 @@ WorldQuestList.optionsDropDown = CreateFrame("Frame", "WorldQuestListOptionsDrop
 WorldQuestList.optionsDropDown:SetPoint("BOTTOMRIGHT",WorldQuestList,"TOPRIGHT",15-120*2,0)
 WorldQuestList.optionsDropDown.Text:SetText(GAMEOPTIONS_MENU)
 UIDropDownMenu_SetWidth(WorldQuestList.optionsDropDown, 100)
+WorldQuestList.optionsDropDown.Button.Width = 220
+WorldQuestList.optionsDropDown.Button.isButton = true
+WorldQuestList.optionsDropDown:SetScript("OnHide",function () ELib.ScrollDropDown.Close() end)
 
-WorldQuestList.optionsDropDown.Button:SetScript("OnClick",function(self)
-	UIDropDownMenu_Initialize(WorldQuestList.optionsDropDown, function(self, level, menuList)
-		local info = UIDropDownMenu_CreateInfo()
-		
-		if level == 1 then
-			info.notCheckable = false
-			info.isTitle = false
-			info.disabled = false
-			info.text = LOCALE.disableArrow
-			info.hasArrow = false
-			info.func = function(_, arg1, _, value)
-				if value then
-					VWQL.DisableArrow = nil
-				else
-					VWQL.DisableArrow = true
-				end
-			end
-			info.checked = function() return VWQL.DisableArrow end
-			UIDropDownMenu_AddButton(info)
-			
-			info.hasArrow = true
-			info.notCheckable = true
-			info.text = UI_SCALE
-			info.value = 1
-			UIDropDownMenu_AddButton(info)
-					
-			info.hasArrow = true
-			info.notCheckable = true
-			info.text = LOCALE.anchor
-			info.value = 2
-			UIDropDownMenu_AddButton(info)
-			
-			info.notCheckable = false
-			info.isTitle = false
-			info.text = LOCALE.totalapdisable
-			info.hasArrow = false
-			info.func = function(_, arg1, _, value)
-				if value then
-					VWQL.DisableTotalAP = nil
-				else
-					VWQL.DisableTotalAP = true
-				end
-			end
-			info.checked = function() return VWQL.DisableTotalAP end
-			UIDropDownMenu_AddButton(info)			
-		elseif level == 2 and UIDROPDOWNMENU_MENU_VALUE == 1 then
-			info.notCheckable = false
-			info.isTitle = false
-			info.disabled = false
-			info.text = "1.25"
-			info.hasArrow = false
-			info.func = function(_, arg1, _, value)
+do
+	local list = {}
+	WorldQuestList.optionsDropDown.Button.List = list
+
+	list[#list+1] = {
+		text = LOCALE.disableArrow,
+		func = function()
+			VWQL.DisableArrow = not VWQL.DisableArrow
+			ELib.ScrollDropDown.Close()
+			WorldQuestList_Update_PrevZone = nil
+			WorldQuestList_Update()
+		end,
+		checkable = true,
+	}
+	list[#list+1] = {
+		text = LOCALE.totalapdisable,
+		func = function()
+			VWQL.DisableTotalAP = not VWQL.DisableTotalAP
+			ELib.ScrollDropDown.Close()
+			WorldQuestList_Update_PrevZone = nil
+			WorldQuestList_Update()
+		end,
+		checkable = true,
+	}
+	
+	local scaleSubMenu = {
+		{
+			text = "1.25",
+			func = function()
 				VWQL.Scale = 1.25
+				ELib.ScrollDropDown.Close()
 				UpdateScale()
-			end
-			info.checked = function() return VWQL.Scale == 1.25 end
-			UIDropDownMenu_AddButton(info, level)
-			
-			info.text = "1.1"
-			info.func = function(_, arg1, _, value)
+			end,
+			radio = true,
+		},
+		{
+			text = "1.1",
+			func = function()
 				VWQL.Scale = 1.1
+				ELib.ScrollDropDown.Close()
 				UpdateScale()
-			end
-			info.checked = function() return VWQL.Scale == 1.1 end
-			UIDropDownMenu_AddButton(info, level)			
-
-			info.text = "1.0"
-			info.func = function(_, arg1, _, value)
+			end,
+			radio = true,
+		},
+		{
+			text = "1.0",
+			func = function()
 				VWQL.Scale = nil
+				ELib.ScrollDropDown.Close()
 				UpdateScale()
-			end
-			info.checked = function() return not VWQL.Scale end
-			UIDropDownMenu_AddButton(info, level)	
-			
-			info.text = "0.9"
-			info.func = function(_, arg1, _, value)
+			end,
+			radio = true,
+		},
+		{
+			text = "0.90",
+			func = function()
 				VWQL.Scale = 0.9
+				ELib.ScrollDropDown.Close()
 				UpdateScale()
-			end
-			info.checked = function() return VWQL.Scale == 0.9 end
-			UIDropDownMenu_AddButton(info, level)	
-			
-			info.text = "0.8"
-			info.func = function(_, arg1, _, value)
+			end,
+			radio = true,
+		},
+		{
+			text = "0.80",
+			func = function()
 				VWQL.Scale = 0.8
+				ELib.ScrollDropDown.Close()
 				UpdateScale()
-			end
-			info.checked = function() return VWQL.Scale == 0.8 end
-			UIDropDownMenu_AddButton(info, level)	
-			
-			info.text = "0.7"
-			info.func = function(_, arg1, _, value)
+			end,
+			radio = true,
+		},
+		{
+			text = "0.70",
+			func = function()
 				VWQL.Scale = 0.7
+				ELib.ScrollDropDown.Close()
 				UpdateScale()
-			end
-			info.checked = function() return VWQL.Scale == 0.7 end
-			UIDropDownMenu_AddButton(info, level)			
-			
-			info.text = "0.6"
-			info.func = function(_, arg1, _, value)
+			end,
+			radio = true,
+		},
+		{
+			text = "0.60",
+			func = function()
 				VWQL.Scale = 0.6
+				ELib.ScrollDropDown.Close()
 				UpdateScale()
-			end
-			info.checked = function() return VWQL.Scale == 0.6 end
-			UIDropDownMenu_AddButton(info, level)		
-		elseif level == 2 and UIDROPDOWNMENU_MENU_VALUE == 2 then
-			info.notCheckable = false
-			info.isTitle = false
-			info.disabled = false
-			info.text = "1"
-			info.hasArrow = false
-			info.func = function(_, arg1, _, value)
+			end,
+			radio = true,
+		},
+	}
+	
+	list[#list+1] = {
+		text = UI_SCALE,
+		subMenu = scaleSubMenu,
+		padding = 16,
+	}
+
+
+	local anchorSubMenu = {
+		{
+			text = "1",
+			func = function()
 				VWQL.Anchor = nil
 				UpdateAnchor()
-				CloseDropDownMenus()
-			end
-			info.checked = function() return not VWQL.Anchor end
-			UIDropDownMenu_AddButton(info, level)
-			
-			info.text = "2"
-			info.func = function(_, arg1, _, value)
+				ELib.ScrollDropDown.Close()
+			end,
+			radio = true,
+		},
+		{
+			text = "2",
+			func = function()
 				VWQL.Anchor = 1
 				UpdateAnchor()
-				CloseDropDownMenus()
-			end
-			info.checked = function() return VWQL.Anchor == 1 end
-			UIDropDownMenu_AddButton(info, level)	
-		end
+				ELib.ScrollDropDown.Close()
+			end,
+			radio = true,	
+		},
+	}
+
+	list[#list+1] = {
+		text = LOCALE.anchor,
+		subMenu = anchorSubMenu,
+		padding = 16,
+	}
 		
-	end)
-	ToggleDropDownMenu(nil, nil, self:GetParent())
-	PlaySound("igMainMenuOptionCheckBoxOn")
-	self:SetScript("OnClick",function(self)
-		ToggleDropDownMenu(nil, nil, self:GetParent())
-		PlaySound("igMainMenuOptionCheckBoxOn")	
-	end)
+	function WorldQuestList.optionsDropDown.Button:additionalToggle()
+		for i=1,#self.List do
+			if self.List[i].text == LOCALE.disableArrow then
+				self.List[i].checkState = VWQL.DisableArrow
+			elseif self.List[i].text == LOCALE.totalapdisable then	
+				self.List[i].checkState = VWQL.DisableTotalAP
+			end
+		end
+		anchorSubMenu[1].checkState = not VWQL.Anchor
+		anchorSubMenu[2].checkState = VWQL.Anchor == 1
+		scaleSubMenu[1].checkState = VWQL.Scale == 1.25
+		scaleSubMenu[2].checkState = VWQL.Scale == 1.1
+		scaleSubMenu[3].checkState = not VWQL.Scale
+		scaleSubMenu[4].checkState = VWQL.Scale == 0.9
+		scaleSubMenu[5].checkState = VWQL.Scale == 0.8
+		scaleSubMenu[6].checkState = VWQL.Scale == 0.7
+		scaleSubMenu[7].checkState = VWQL.Scale == 0.6
+	end	
+end
+
+WorldQuestList.optionsDropDown.Button:SetScript("OnClick",function(self)
+	ELib.ScrollDropDown.ClickButton(self)
 end)
 
 
@@ -1287,6 +1311,14 @@ local TableQuestsViewed = {}
 local TableQuestsViewed_Time = {}
 
 function WorldQuestList_Update()
+	if not WorldQuestList:IsVisible() then
+		return
+	end
+
+	WorldQuestList_Update_Timer = nil
+	
+	local mapAreaID = GetCurrentMapAreaID()
+
 	WorldQuestList.TotalAP:SetText("")
 	if UnitLevel'player' < 110 then
 		WorldQuestList.sortDropDown:Hide()
@@ -1299,10 +1331,6 @@ function WorldQuestList_Update()
 		WorldQuestList.filterDropDown:Show()
 		WorldQuestList.optionsDropDown:Show()	
 	end
-
-	WorldQuestList_Update_Timer = nil
-	
-	local mapAreaID = GetCurrentMapAreaID()
 	local taskInfo
 	local zoneName
 	
@@ -1849,12 +1877,22 @@ function WorldQuestList_Update()
 	end
 end
 
-hooksecurefunc("WorldMap_UpdateQuestBonusObjectives", function ()
-	if WorldQuestList_Update_Timer then
-		WorldQuestList_Update_Timer:Cancel()
+local UpdateTicker = nil
+C_Timer.NewTicker(2,function()
+	if UpdateTicker then
+		UpdateTicker = nil
+		WorldQuestList_Update()
 	end
-	WorldQuestList_Update()
-	WorldQuestList_Update_Timer = C_Timer.NewTimer(.5,WorldQuestList_Update)
+end)
+
+local prevZone
+hooksecurefunc("WorldMap_UpdateQuestBonusObjectives", function ()
+	local currZone = GetCurrentMapAreaID()
+	if currZone ~= prevZone then
+		WorldQuestList_Update()
+	end
+	prevZone = currZone
+	UpdateTicker = true
 end)
 
 local UpdateDB_Sch = nil
@@ -1931,6 +1969,7 @@ SlashCmdList["WQLSlash"] = function()
 	SetMapByID(1007)
 	WorldQuestList_Update()
 	C_Timer.NewTimer(.5,WorldQuestList_Update)
+	C_Timer.NewTimer(1.5,WorldQuestList_Update)
 	WorldQuestList:Show()
 end
 SLASH_WQLSlash1 = "/wql"
@@ -2252,3 +2291,623 @@ FlightMap:SetScript("OnEvent",function (self, event, arg)
 		self:UnregisterAllEvents()
 	end
 end)
+
+
+
+do
+	local Templates = {}
+	function ELib:Template(name,parent)
+		if not Templates[name] then
+			return
+		end
+		local obj = Templates[name](nil,parent)
+		--obj:SetParent(parent or UIParent)
+		return obj
+	end
+	function Templates:Border(self,cR,cG,cB,cA,size,offsetX,offsetY)
+		offsetX = offsetX or 0
+		offsetY = offsetY or 0
+	
+		self.BorderTop = self:CreateTexture(nil,"BACKGROUND")
+		self.BorderTop:SetColorTexture(cR,cG,cB,cA)
+		self.BorderTop:SetPoint("TOPLEFT",-size-offsetX,size+offsetY)
+		self.BorderTop:SetPoint("BOTTOMRIGHT",self,"TOPRIGHT",size+offsetX,offsetY)
+
+		self.BorderLeft = self:CreateTexture(nil,"BACKGROUND")
+		self.BorderLeft:SetColorTexture(cR,cG,cB,cA)
+		self.BorderLeft:SetPoint("TOPLEFT",-size-offsetX,offsetY)
+		self.BorderLeft:SetPoint("BOTTOMRIGHT",self,"BOTTOMLEFT",-offsetX,-offsetY)
+
+		self.BorderBottom = self:CreateTexture(nil,"BACKGROUND")
+		self.BorderBottom:SetColorTexture(cR,cG,cB,cA)
+		self.BorderBottom:SetPoint("BOTTOMLEFT",-size-offsetX,-size-offsetY)
+		self.BorderBottom:SetPoint("TOPRIGHT",self,"BOTTOMRIGHT",size+offsetX,-offsetY)
+
+		self.BorderRight = self:CreateTexture(nil,"BACKGROUND")
+		self.BorderRight:SetColorTexture(cR,cG,cB,cA)
+		self.BorderRight:SetPoint("BOTTOMRIGHT",size+offsetX,offsetY)
+		self.BorderRight:SetPoint("TOPLEFT",self,"TOPRIGHT",offsetX,-offsetY)
+	end
+	function ELib:Shadow(parent,size,edgeSize)
+		local self = CreateFrame("Frame",nil,parent)
+		self:SetPoint("LEFT",-size,0)
+		self:SetPoint("RIGHT",size,0)
+		self:SetPoint("TOP",0,size)
+		self:SetPoint("BOTTOM",0,-size)
+		self:SetBackdrop({edgeFile="Interface/AddOns/WorldQuestsList/shadow",edgeSize=edgeSize or 28,insets={left=size,right=size,top=size,bottom=size}})
+		self:SetBackdropBorderColor(0,0,0,.45)
+	
+		return self
+	end	
+	do
+		local function OnEnter(self, motion)
+			UIDropDownMenu_StopCounting(self, motion)
+		end
+		local function OnLeave(self, motion)
+			UIDropDownMenu_StartCounting(self, motion)
+		end
+		local function OnClick(self)
+			self:Hide()
+		end
+		local function OnShow(self)
+			self:SetFrameLevel(1000)
+			if self.OnShow then
+				self:OnShow()
+			end
+		end
+		local function OnHide(self)
+			UIDropDownMenu_StopCounting(self)
+		end
+		local function OnUpdate(self, elapsed)
+			ELib.ScrollDropDown.Update(self, elapsed)
+		end
+		function Templates:ExRTDropDownListTemplate(parent)
+			local self = CreateFrame("Button",nil,parent)
+			self:SetFrameStrata("TOOLTIP")
+			self:EnableMouse(true)
+			self:Hide()
+			
+			self.Backdrop = CreateFrame("Frame",nil,self)
+			self.Backdrop:SetAllPoints()
+			self.Backdrop:SetBackdrop({
+				bgFile="Interface\\DialogFrame\\UI-DialogBox-Background-Dark",
+				edgeFile="Interface\\DialogFrame\\UI-DialogBox-Border",
+				tile = true,
+				insets = {
+					left = 11,
+					right = 12,
+					top = 11,
+					bottom = 9,
+				},
+				tileSize = 32,
+				edgeSize = 32,
+			})
+			
+			self:SetScript("OnEnter",OnEnter)
+			self:SetScript("OnLeave",OnLeave)
+			self:SetScript("OnClick",OnClick)
+			self:SetScript("OnShow",OnShow)
+			self:SetScript("OnHide",OnHide)
+			self:SetScript("OnUpdate",OnUpdate)
+			return self
+		end	
+		function Templates:ExRTDropDownListModernTemplate(parent)
+			local self = CreateFrame("Button",nil,parent)
+			self:SetFrameStrata("TOOLTIP")
+			self:EnableMouse(true)
+			self:Hide()
+			
+			Templates:Border(self,0,0,0,1,1)
+			
+			self.Background = self:CreateTexture(nil,"BACKGROUND")
+			self.Background:SetColorTexture(0,0,0,.9)
+			self.Background:SetPoint("TOPLEFT")
+			self.Background:SetPoint("BOTTOMRIGHT")
+			
+			self:SetScript("OnEnter",OnEnter)
+			self:SetScript("OnLeave",OnLeave)
+			self:SetScript("OnClick",OnClick)
+			self:SetScript("OnShow",OnShow)
+			self:SetScript("OnHide",OnHide)
+			self:SetScript("OnUpdate",OnUpdate)
+			return self
+		end
+	end	
+	do
+		local function OnEnter(self)
+			self.Highlight:Show()
+			UIDropDownMenu_StopCounting(self:GetParent())
+			if ( self.tooltipTitle ) then
+				if ( self.tooltipOnButton ) then
+					GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+					GameTooltip:AddLine(self.tooltipTitle, 1.0, 1.0, 1.0)
+					GameTooltip:AddLine(self.tooltipText)
+					GameTooltip:Show()
+				else
+					GameTooltip_AddNewbieTip(self, self.tooltipTitle, 1.0, 1.0, 1.0, self.tooltipText, true)
+				end
+			end
+			if ( self.NormalText:IsTruncated() ) then
+				GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+				GameTooltip:AddLine(self.NormalText:GetText())
+				GameTooltip:Show()
+			end
+			ELib.ScrollDropDown.OnButtonEnter(self)
+		end
+		local function OnLeave(self)
+			self.Highlight:Hide()
+			UIDropDownMenu_StartCounting(self:GetParent())
+			GameTooltip:Hide()
+			ELib.ScrollDropDown.OnButtonLeave(self)
+		end
+		local function OnClick(self)
+			ELib.ScrollDropDown.OnClick(self, button, down)
+		end
+		local function OnLoad(self)
+			self:SetFrameLevel(self:GetParent():GetFrameLevel()+2)
+		end
+		function Templates:ExRTDropDownMenuButtonTemplate(parent)
+			local self = CreateFrame("Button",nil,parent)
+			self:SetSize(100,16)
+			
+			self.Highlight = self:CreateTexture(nil,"BACKGROUND")
+			self.Highlight:SetTexture("Interface\\QuestFrame\\UI-QuestTitleHighlight")
+			self.Highlight:SetAllPoints()
+			self.Highlight:SetBlendMode("ADD")
+			self.Highlight:Hide()
+			
+			self.Texture = self:CreateTexture(nil,"BACKGROUND",nil,-8)
+			self.Texture:Hide()
+			self.Texture:SetAllPoints()
+			
+			self.Icon = self:CreateTexture(nil,"ARTWORK")
+			self.Icon:SetSize(16,16)
+			self.Icon:SetPoint("LEFT")
+			self.Icon:Hide()
+			
+			self.Arrow = self:CreateTexture(nil,"ARTWORK")
+			self.Arrow:SetTexture("Interface\\ChatFrame\\ChatFrameExpandArrow")
+			self.Arrow:SetSize(16,16)
+			self.Arrow:SetPoint("RIGHT")
+			self.Arrow:Hide()
+			
+			self.NormalText = self:CreateFontString()
+			self.NormalText:SetPoint("LEFT")
+			
+			self:SetFontString(self.NormalText)
+			
+			self:SetNormalFontObject("GameFontHighlightSmallLeft")
+			self:SetHighlightFontObject("GameFontHighlightSmallLeft")
+			self:SetDisabledFontObject("GameFontDisableSmallLeft")
+	
+			self:SetPushedTextOffset(1,-1)
+			
+			self:SetScript("OnEnter",OnEnter)
+			self:SetScript("OnLeave",OnLeave)
+			self:SetScript("OnClick",OnClick)
+			self:SetScript("OnLoad",OnLoad)
+			return self
+		end
+	end	
+	function Templates:ExRTCheckButtonModernTemplate(parent)
+		local self = CreateFrame("CheckButton",nil,parent)
+		self:SetSize(20,20)
+		
+		self.text = self:CreateFontString(nil,"ARTWORK","GameFontNormalSmall")
+		self.text:SetPoint("TOPLEFT",self,"TOPRIGHT",4,0)
+		self.text:SetPoint("BOTTOMLEFT",self,"BOTTOMRIGHT",4,0)
+		self.text:SetJustifyV("MIDDLE")
+		
+		self:SetFontString(self.text)
+		
+		Templates:Border(self,0.24,0.25,0.3,1,1)
+		
+		self.Texture = self:CreateTexture(nil,"BACKGROUND")
+		self.Texture:SetColorTexture(0,0,0,.3)
+		self.Texture:SetPoint("TOPLEFT")
+		self.Texture:SetPoint("BOTTOMRIGHT")
+		
+		self.CheckedTexture = self:CreateTexture()
+		self.CheckedTexture:SetTexture("Interface\\Buttons\\UI-CheckBox-Check")
+		self.CheckedTexture:SetPoint("TOPLEFT",-4,4)
+		self.CheckedTexture:SetPoint("BOTTOMRIGHT",4,-4)
+		self:SetCheckedTexture(self.CheckedTexture)
+		
+		self.PushedTexture = self:CreateTexture()
+		self.PushedTexture:SetTexture("Interface\\Buttons\\UI-CheckBox-Check")
+		self.PushedTexture:SetPoint("TOPLEFT",-4,4)
+		self.PushedTexture:SetPoint("BOTTOMRIGHT",4,-4)
+		self.PushedTexture:SetVertexColor(0.8,0.8,0.8,0.5)
+		self.PushedTexture:SetDesaturated(true)
+		self:SetPushedTexture(self.PushedTexture)
+	
+		self.DisabledTexture = self:CreateTexture()
+		self.DisabledTexture:SetTexture("Interface\\Buttons\\UI-CheckBox-Check-Disabled")
+		self.DisabledTexture:SetPoint("TOPLEFT",-4,4)
+		self.DisabledTexture:SetPoint("BOTTOMRIGHT",4,-4)
+		self:SetDisabledTexture(self.DisabledTexture)
+			
+		self.HighlightTexture = self:CreateTexture()
+		self.HighlightTexture:SetColorTexture(1,1,1,.3)
+		self.HighlightTexture:SetPoint("TOPLEFT")
+		self.HighlightTexture:SetPoint("BOTTOMRIGHT")
+		self:SetHighlightTexture(self.HighlightTexture)
+				
+		return self
+	end
+	function Templates:ExRTRadioButtonModernTemplate(parent)
+		local self = CreateFrame("CheckButton",nil,parent)
+		self:SetSize(16,16)
+		
+		self.text = self:CreateFontString(nil,"BACKGROUND","GameFontNormalSmall")
+		self.text:SetPoint("LEFT",self,"RIGHT",5,0)
+		
+		self:SetFontString(self.text)
+		
+		self.NormalTexture = self:CreateTexture()
+		self.NormalTexture:SetTexture("Interface\\Addons\\WorldQuestsList\\radioModern")
+		self.NormalTexture:SetAllPoints()
+		self.NormalTexture:SetTexCoord(0,0.25,0,1)
+		self:SetNormalTexture(self.PushedTexture)
+	
+		self.HighlightTexture = self:CreateTexture()
+		self.HighlightTexture:SetTexture("Interface\\Addons\\WorldQuestsList\\radioModern")
+		self.HighlightTexture:SetAllPoints()
+		self.HighlightTexture:SetTexCoord(0.5,0.75,0,1)
+		self:SetHighlightTexture(self.HighlightTexture)
+		
+		self.CheckedTexture = self:CreateTexture()
+		self.CheckedTexture:SetTexture("Interface\\Addons\\WorldQuestsList\\radioModern")
+		self.CheckedTexture:SetAllPoints()
+		self.CheckedTexture:SetTexCoord(0.25,0.5,0,1)
+		self:SetCheckedTexture(self.CheckedTexture)
+				
+		return self
+	end
+	
+	
+	ELib.ScrollDropDown = {}
+	ELib.ScrollDropDown.List = {}
+	local ScrollDropDown_Modern = {}
+	
+	for i=1,2 do
+		ScrollDropDown_Modern[i] = ELib:Template("ExRTDropDownListModernTemplate",UIParent)
+		_G["WQL_ExRTDropDownListModern"..i] = ScrollDropDown_Modern[i]
+		ScrollDropDown_Modern[i]:SetClampedToScreen(true)
+		ScrollDropDown_Modern[i].border = ELib:Shadow(ScrollDropDown_Modern[i],20)
+		ScrollDropDown_Modern[i].Buttons = {}
+		ScrollDropDown_Modern[i].MaxLines = 0
+		ScrollDropDown_Modern[i].isModern = true
+		do
+			ScrollDropDown_Modern[i].Animation = CreateFrame("Frame",nil,ScrollDropDown_Modern[i])
+			ScrollDropDown_Modern[i].Animation:SetSize(1,1)
+			ScrollDropDown_Modern[i].Animation:SetPoint("CENTER")
+			ScrollDropDown_Modern[i].Animation.P = 0
+			ScrollDropDown_Modern[i].Animation.parent = ScrollDropDown_Modern[i]
+			ScrollDropDown_Modern[i].Animation:SetScript("OnUpdate",function(self,elapsed)
+				self.P = self.P + elapsed
+				local P = self.P
+				if P > 2.5 then
+					P = P % 2.5
+					self.P = P
+				end
+				local color = P <= 1 and P / 2 or P <= 1.5 and 0.5 or (2.5 - P)/2
+				local parent = self.parent
+				parent.BorderTop:SetColorTexture(color,color,color,1)
+				parent.BorderLeft:SetColorTexture(color,color,color,1)
+				parent.BorderBottom:SetColorTexture(color,color,color,1)
+				parent.BorderRight:SetColorTexture(color,color,color,1)
+			end)
+		end
+	end
+		
+	ELib.ScrollDropDown.DropDownList = ScrollDropDown_Modern
+	
+	do
+		local function CheckButtonClick(self)
+			local parent = self:GetParent()
+			self:GetParent():GetParent().List[parent.id].checkState = self:GetChecked()
+			if parent.checkFunc then
+				parent.checkFunc(parent,self:GetChecked())
+			end
+		end
+		local function CheckButtonOnEnter(self)
+			UIDropDownMenu_StopCounting(self:GetParent():GetParent())
+		end
+		local function CheckButtonOnLeave(self)
+			UIDropDownMenu_StartCounting(self:GetParent():GetParent())
+		end
+		function ELib.ScrollDropDown.CreateButton(i,level)
+			level = level or 1
+			local dropDown = ELib.ScrollDropDown.DropDownList[level]
+			if dropDown.Buttons[i] then
+				return
+			end
+			dropDown.Buttons[i] = ELib:Template("ExRTDropDownMenuButtonTemplate",dropDown)
+			dropDown.Buttons[i]:SetPoint("TOPLEFT",8,-8 - (i-1) * 16)
+			dropDown.Buttons[i].NormalText:SetMaxLines(1) 
+			
+			dropDown.Buttons[i].checkButton = ELib:Template("ExRTCheckButtonModernTemplate",dropDown.Buttons[i])
+			dropDown.Buttons[i].checkButton:SetPoint("LEFT",1,0)
+			dropDown.Buttons[i].checkButton:SetSize(12,12)
+			
+			dropDown.Buttons[i].radioButton = ELib:Template("ExRTRadioButtonModernTemplate",dropDown.Buttons[i])
+			dropDown.Buttons[i].radioButton:SetPoint("LEFT",1,0)
+			dropDown.Buttons[i].radioButton:SetSize(12,12)
+			dropDown.Buttons[i].radioButton:EnableMouse(false)
+
+			dropDown.Buttons[i].checkButton:SetScript("OnClick",CheckButtonClick)
+			dropDown.Buttons[i].checkButton:SetScript("OnEnter",CheckButtonOnEnter)
+			dropDown.Buttons[i].checkButton:SetScript("OnLeave",CheckButtonOnLeave)
+			dropDown.Buttons[i].checkButton:Hide()
+			dropDown.Buttons[i].radioButton:Hide()
+			
+			dropDown.Buttons[i].Level = level
+		end
+	end
+	
+	local function ScrollDropDown_DefaultCheckFunc(self)
+		self:Click()
+	end
+	
+	function ELib.ScrollDropDown.ClickButton(self)
+		if ELib.ScrollDropDown.DropDownList[1]:IsShown() then
+			ELib:DropDownClose()
+			return
+		end
+		local dropDown = nil
+		if self.isButton then
+			dropDown = self
+		else
+			dropDown = self:GetParent()
+		end
+		ELib.ScrollDropDown.ToggleDropDownMenu(dropDown)
+		PlaySound("igMainMenuOptionCheckBoxOn")
+	end
+	
+	function ELib.ScrollDropDown:Reload(level)
+		for j=1,#ELib.ScrollDropDown.DropDownList do
+			if ELib.ScrollDropDown.DropDownList[j]:IsShown() or level == j then
+				local val = ELib.ScrollDropDown.DropDownList[j].Position
+				local count = #ELib.ScrollDropDown.DropDownList[j].List
+				local now = 0
+				for i=val,count do
+					local data = ELib.ScrollDropDown.DropDownList[j].List[i]
+					
+					if not data.isHidden then
+						now = now + 1
+						local button = ELib.ScrollDropDown.DropDownList[j].Buttons[now]
+						local text = button.NormalText
+						local icon = button.Icon
+						local paddingLeft = data.padding or 0
+						
+						if data.icon then
+							icon:SetTexture(data.icon)
+							paddingLeft = paddingLeft + 18
+							icon:Show()
+						else
+							icon:Hide()
+						end
+						
+						button:SetNormalFontObject(GameFontHighlightSmallLeft)
+						button:SetHighlightFontObject(GameFontHighlightSmallLeft)
+						
+						if data.colorCode then
+							text:SetText( data.colorCode .. (data.text or "") .. "|r" )
+						else
+							text:SetText( data.text or "" )
+						end
+						
+						text:ClearAllPoints()
+						if data.checkable or data.radio then
+							text:SetPoint("LEFT", paddingLeft + 16, 0)
+						else
+							text:SetPoint("LEFT", paddingLeft, 0)
+						end
+						text:SetPoint("RIGHT", button, "RIGHT", 0, 0)
+						text:SetJustifyH(data.justifyH or "LEFT")
+						
+						if data.checkable then
+							button.checkButton:SetChecked(data.checkState)
+							button.checkButton:Show()
+						else
+							button.checkButton:Hide()
+						end
+						if data.radio then
+							button.radioButton:SetChecked(data.checkState)
+							button.radioButton:Show()
+						else
+							button.radioButton:Hide()
+						end
+						
+						local texture = button.Texture
+						if data.texture then
+							texture:SetTexture(data.texture)
+							texture:Show()
+						else
+							texture:Hide()
+						end
+						
+						if data.subMenu then
+							button.Arrow:Show()
+						else
+							button.Arrow:Hide()
+						end
+						
+						if data.isTitle then
+							button:SetEnabled(false)
+						else
+							button:SetEnabled(true)
+						end
+						
+						button.id = i
+						button.arg1 = data.arg1
+						button.arg2 = data.arg2
+						button.arg3 = data.arg3
+						button.arg4 = data.arg4
+						button.func = data.func
+						button.hoverFunc = data.hoverFunc
+						button.leaveFunc = data.leaveFunc
+						button.hoverArg = data.hoverArg
+						button.checkFunc = data.checkFunc
+						
+						if not data.checkFunc then
+							button.checkFunc = ScrollDropDown_DefaultCheckFunc
+						end
+						
+						button.subMenu = data.subMenu
+						button.Lines = data.Lines --Max lines for second level
+						
+						button.data = data
+					
+						button:Show()
+						
+						if now >= ELib.ScrollDropDown.DropDownList[j].LinesNow then
+							break
+						end
+					end
+				end
+				for i=(now+1),ELib.ScrollDropDown.DropDownList[j].MaxLines do
+					ELib.ScrollDropDown.DropDownList[j].Buttons[i]:Hide()
+				end
+			end
+		end
+	end
+	
+	function ELib.ScrollDropDown.UpdateChecks()
+		local parent = ELib.ScrollDropDown.DropDownList[1].parent
+		if parent.additionalToggle then
+			parent.additionalToggle(parent)
+		end
+		for j=1,#ELib.ScrollDropDown.DropDownList do
+			for i=1,#ELib.ScrollDropDown.DropDownList[j].Buttons do
+				local button = ELib.ScrollDropDown.DropDownList[j].Buttons[i]
+				if button:IsShown() and button.data then
+					button.checkButton:SetChecked(button.data.checkState)
+				end
+			end
+		end
+	end
+
+	function ELib.ScrollDropDown.Update(self, elapsed)
+		if ( not self.showTimer or not self.isCounting ) then
+			return
+		elseif ( self.showTimer < 0 ) then
+			self:Hide()
+			self.showTimer = nil
+			self.isCounting = nil
+		else
+			self.showTimer = self.showTimer - elapsed
+		end
+	end
+	
+	function ELib.ScrollDropDown.OnClick(self, button, down)
+		local func = self.func
+		if func then
+			func(self, self.arg1, self.arg2, self.arg3, self.arg4)
+		end
+	end
+	function ELib.ScrollDropDown.OnButtonEnter(self)
+		local func = self.hoverFunc
+		if func then
+			func(self,self.hoverArg)
+		end
+		ELib.ScrollDropDown:CloseSecondLevel(self.Level)
+		if self.subMenu then
+			ELib.ScrollDropDown.ToggleDropDownMenu(self,2)
+		end
+	end
+	function ELib.ScrollDropDown.OnButtonLeave(self)
+		local func = self.leaveFunc
+		if func then
+			func(self)
+		end
+	end
+	
+	function ELib.ScrollDropDown.ToggleDropDownMenu(self,level)
+		level = level or 1
+		if self.ToggleUpadte then
+			self:ToggleUpadte()
+		end
+		
+		if level == 1 then
+			ELib.ScrollDropDown.DropDownList = ScrollDropDown_Modern
+		end
+		for i=level+1,#ELib.ScrollDropDown.DropDownList do
+			ELib.ScrollDropDown.DropDownList[i]:Hide()
+		end
+		local dropDown = ELib.ScrollDropDown.DropDownList[level]
+	
+		local dropDownWidth = self.Width
+		if level > 1 then
+			local parent = ELib.ScrollDropDown.DropDownList[1].parent
+			dropDownWidth = parent.Width
+		end
+	
+	
+		dropDown.List = self.subMenu or self.List
+		
+		local count = #dropDown.List
+		
+		local maxLinesNow = self.Lines or count
+		
+		for i=(dropDown.MaxLines+1),maxLinesNow do
+			ELib.ScrollDropDown.CreateButton(i,level)
+		end
+		dropDown.MaxLines = max(dropDown.MaxLines,maxLinesNow)
+		
+		for i=1,maxLinesNow do
+			dropDown.Buttons[i]:SetSize(dropDownWidth - 16,16)
+		end
+		dropDown.Position = 1
+		dropDown.LinesNow = maxLinesNow
+		if self.additionalToggle then
+			self.additionalToggle(self)
+		end
+		dropDown:SetPoint("TOPRIGHT",self,"BOTTOMRIGHT",-16,0)
+		dropDown:SetSize(dropDownWidth,16 + 16 * maxLinesNow)
+		dropDown:ClearAllPoints()
+		if level > 1 then
+			dropDown:SetPoint("TOPLEFT",self,"TOPRIGHT",12,8)
+		else
+			local toggleX = self.toggleX or -16
+			local toggleY = self.toggleY or 0
+			dropDown:SetPoint("TOPRIGHT",self,"BOTTOMRIGHT",toggleX,toggleY)
+		end
+		
+		dropDown.parent = self
+		
+		dropDown:Show()
+		dropDown:SetFrameLevel(0)
+		
+		ELib.ScrollDropDown:Reload()
+	end
+	
+	function ELib.ScrollDropDown.CreateInfo(self,info)
+		if info then
+			self.List[#self.List + 1] = info
+		end
+		self.List[#self.List + 1] = {}
+		return self.List[#self.List]
+	end
+	
+	function ELib.ScrollDropDown.ClearData(self)
+		table.wipe(self.List)
+		return self.List
+	end
+	
+	function ELib.ScrollDropDown.Close()
+		ELib.ScrollDropDown.DropDownList[1]:Hide()
+		ELib.ScrollDropDown:CloseSecondLevel()
+	end
+	function ELib.ScrollDropDown:CloseSecondLevel(level)
+		level = level or 1
+		for i=(level+1),#ELib.ScrollDropDown.DropDownList do
+			ELib.ScrollDropDown.DropDownList[i]:Hide()
+		end
+	end
+	ELib.DropDownClose = ELib.ScrollDropDown.Close
+	
+	---> End Scroll Drop Down
+
+end

@@ -2,12 +2,8 @@
 ## Title: Best In Slot [|cffff975bLegion|r]
 ## Notes: Warlords of Draenor Module for BestInSlot
 ## Author: Feng @ Moonglade-EU
-## Version: Release 7.1.01
+## Version: r427
 ## Dependencies: BestInSlot
-## X-Curse-Packaged-Version: Release 7.1.01
-## X-Curse-Project-Name: BestInSlot
-## X-Curse-Project-ID: bestinslot
-## X-Curse-Repository-ID: wow/bestinslot/mainline
 
 EmeraldNightmare.lua
 Nighthold.lua

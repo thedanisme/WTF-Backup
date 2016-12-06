@@ -2,7 +2,7 @@
 PawnOptions = {
 	["LastVersion"] = 2.0108,
 	["LastPlayerFullName"] = "Oenta-Stormrage",
-	["AutoSelectScales"] = true,
+	["AutoSelectScales"] = false,
 	["UpgradeTracking"] = false,
 	["LastKeybindingsSet"] = 1,
 }

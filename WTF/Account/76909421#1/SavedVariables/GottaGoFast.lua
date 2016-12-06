@@ -2,8 +2,9 @@
 GottaGoFastDB = {
 	["profileKeys"] = {
 		["Oenta - Stormrage"] = "Default",
-		["Chucklefunk - Stormrage"] = "Default",
+		["Druidann - Stormrage"] = "Default",
 		["Emmarosa - Stormrage"] = "Default",
+		["Chucklefunk - Stormrage"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

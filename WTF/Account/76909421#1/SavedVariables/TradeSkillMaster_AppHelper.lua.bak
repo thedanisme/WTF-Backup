@@ -1,0 +1,25 @@
+
+TradeSkillMaster_AppHelperDB = {
+	["blackMarket"] = {
+	},
+	["region"] = "EU",
+	["shoppingMaxPrices"] = {
+	},
+	["wowToken"] = {
+		["EU"] = {
+			["key"] = 223391,
+			["data"] = 101662,
+			["updateTime"] = 1480938366,
+		},
+	},
+	["analytics"] = {
+		["data"] = {
+			"[\"TradeSkillMaster\",\"GROUP_OPTIONS_OPEN\",\"v3.6.20\",\"\",1480937905]", -- [1]
+			"[\"TradeSkillMaster\",\"GROUP_OPTIONS_OPEN\",\"v3.6.20\",\"\",1480937910]", -- [2]
+			"[\"TradeSkillMaster\",\"GROUP_OPTIONS_OPEN\",\"v3.6.20\",\"\",1480937929]", -- [3]
+			"[\"TradeSkillMaster\",\"GROUP_OPTIONS_OPEN\",\"v3.6.20\",\"\",1480938350]", -- [4]
+			"[\"TradeSkillMaster\",\"GROUP_OPTIONS_OPEN\",\"v3.6.20\",\"\",1480938358]", -- [5]
+		},
+		["updateTime"] = 1480938358,
+	},
+}

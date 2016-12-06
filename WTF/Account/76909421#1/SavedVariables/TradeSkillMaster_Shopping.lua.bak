@@ -1,0 +1,37 @@
+
+TradeSkillMaster_ShoppingDB = {
+	["g@ @savedSearches"] = {
+	},
+	["g@ @maxDeSearchPercent"] = 0.6,
+	["_hash"] = 1861581,
+	["g@ @postBidPercent"] = 0.94,
+	["_scopeKeys"] = {
+		["char"] = {
+			"Janitabank - Kazzak", -- [1]
+		},
+		["realm"] = {
+			"Kazzak", -- [1]
+		},
+		["profile"] = {
+			"Default", -- [1]
+		},
+		["factionrealm"] = {
+			"Horde - Kazzak", -- [1]
+		},
+	},
+	["g@ @helpPlatesShown"] = {
+		["auction"] = true,
+	},
+	["g@ @postUndercut"] = "1c",
+	["g@ @minDeSearchLvl"] = 1,
+	["g@ @sniperVendorPrice"] = true,
+	["g@ @sniperSound"] = "TSM_CASH_REGISTER",
+	["g@ @marketValueSource"] = "dbmarket",
+	["g@ @maxDeSearchLvl"] = 735,
+	["g@ @sniperCustomPrice"] = "0c",
+	["g@ @normalPostPrice"] = "250% dbmarket",
+	["_version"] = 3,
+	["_currentProfile"] = {
+		["Janitabank - Kazzak"] = "Default",
+	},
+}

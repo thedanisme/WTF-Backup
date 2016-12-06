@@ -1,0 +1,49 @@
+
+TradeSkillMaster_AccountingDB = {
+	["g@ @timeFormat"] = "eudate",
+	["r@Kazzak@csvExpense"] = "type,amount,destination,player,time",
+	["_scopeKeys"] = {
+		["char"] = {
+			"Janitabank - Kazzak", -- [1]
+		},
+		["realm"] = {
+			"Kazzak", -- [1]
+		},
+		["profile"] = {
+			"Default", -- [1]
+		},
+		["factionrealm"] = {
+			"Horde - Kazzak", -- [1]
+		},
+	},
+	["g@ @displayGreys"] = true,
+	["r@Kazzak@goldGraphTimeframe"] = 30,
+	["_hash"] = 16545233,
+	["r@Kazzak@goldGraphCharacter"] = "Janitabank",
+	["r@Kazzak@smartBuyPrice"] = false,
+	["r@Kazzak@csvCancelled"] = "itemString,stackSize,quantity,player,time",
+	["g@ @autoTrackTrades"] = true,
+	["_currentProfile"] = {
+		["Janitabank - Kazzak"] = "Default",
+	},
+	["g@ @itemStrings"] = {
+	},
+	["r@Kazzak@goldLog"] = {
+		["Janitabank"] = "startMinute,endMinute,copper\n24682284,24682343,0",
+	},
+	["g@ @priceFormat"] = "avg",
+	["r@Kazzak@saveTimeCancels"] = "",
+	["r@Kazzak@saveTimeBuys"] = "",
+	["g@ @trackTrades"] = true,
+	["g@ @displayTransfers"] = true,
+	["g@ @mvSource"] = "DBMarket",
+	["r@Kazzak@saveTimeExpires"] = "",
+	["r@Kazzak@csvIncome"] = "type,amount,source,player,time",
+	["r@Kazzak@csvExpired"] = "itemString,stackSize,quantity,player,time",
+	["r@Kazzak@csvSales"] = "itemString,stackSize,quantity,price,buyer,player,time,source",
+	["r@Kazzak@csvBuys"] = "itemString,stackSize,quantity,price,seller,player,time,source",
+	["r@Kazzak@trimmed"] = {
+	},
+	["_version"] = 2,
+	["r@Kazzak@saveTimeSales"] = "",
+}

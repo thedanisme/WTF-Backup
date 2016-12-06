@@ -2,13 +2,23 @@
 GottaGoFastHistoryDB = {
 	["profileKeys"] = {
 		["Oenta - Stormrage"] = "Default",
-		["Chucklefunk - Stormrage"] = "Default",
+		["Druidann - Stormrage"] = "Default",
 		["Emmarosa - Stormrage"] = "Default",
+		["Chucklefunk - Stormrage"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["History"] = {
 				[1458] = {
+					["objectives"] = {
+						"Rokmora", -- [1]
+						"Ularogg Cragshaper", -- [2]
+						"Naraxas", -- [3]
+						"Dargrul", -- [4]
+						"Enemy Forces", -- [5]
+					},
+					["zoneID"] = 1458,
+					["name"] = "Neltharion's Lair",
 					["runs"] = {
 						{
 							["corrupt"] = false,
@@ -21,8 +31,17 @@ GottaGoFastHistoryDB = {
 								["day"] = 4,
 								["month"] = 12,
 								["hours"] = 3,
-								["mins"] = 18,
 								["year"] = 2016,
+								["mins"] = 18,
+							},
+							["level"] = 2,
+							["startTime"] = 26229.506,
+							["objectiveTimes"] = {
+								"05:29.680", -- [1]
+								"14:46.001", -- [2]
+								"20:43.241", -- [3]
+								"27:15.909", -- [4]
+								"24:36.524", -- [5]
 							},
 							["players"] = {
 								{
@@ -51,25 +70,7 @@ GottaGoFastHistoryDB = {
 									["role"] = "DAMAGER",
 								}, -- [5]
 							},
-							["startTime"] = 26229.506,
-							["objectiveTimes"] = {
-								"05:29.680", -- [1]
-								"14:46.001", -- [2]
-								"20:43.241", -- [3]
-								"27:15.909", -- [4]
-								"24:36.524", -- [5]
-							},
-							["level"] = 2,
 						}, -- [1]
-					},
-					["name"] = "Neltharion's Lair",
-					["zoneID"] = 1458,
-					["objectives"] = {
-						"Rokmora", -- [1]
-						"Ularogg Cragshaper", -- [2]
-						"Naraxas", -- [3]
-						"Dargrul", -- [4]
-						"Enemy Forces", -- [5]
 					},
 				},
 			},

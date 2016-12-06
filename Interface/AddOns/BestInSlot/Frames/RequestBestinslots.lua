@@ -1,6 +1,7 @@
 --lua
 local unpack, select, type, pairs, tostring, wipe, tinsert, tsort
 =     unpack, select, type, pairs, tostring, wipe, table.insert, table.sort
+local BabbleInventory = LibStub("LibBabble-Inventory-3.0"):GetLookupTable()
 -- WoW API
 local UnitName, GetGuildInfo, IsInGuild
 =     UnitName, GetGuildInfo, IsInGuild
@@ -25,6 +26,12 @@ local classTokens = {
   VANQUISHER = {"ROGUE", "DEATHKNIGHT", "MAGE", "DRUID"},
   PROTECTOR = {"WARRIOR", "HUNTER", "SHAMAN", "MONK"},
   CONQUEROR = {"PALADIN", "PRIEST", "WARLOCK", "DEMONHUNTER"},
+}
+local armorClasses = {
+  [BabbleInventory.Cloth] = {"MAGE", "PRIES", "WARLOCK"},
+  [BabbleInventory.Leather] = {"ROGUE", "DEMONHUNTER", "DRUID", "MONK"},
+  [BabbleInventory.Mail] = {"HUNTER", "SHAMAN"},
+  [BabbleInventory.Plate] = {"DEATHKNIGHT", "WARRIOR", "PALADIN"}
 }
 local guildName
 ---
@@ -314,6 +321,23 @@ function RequestBiS:ApplyNewFilter()
   end
 end
 
+function RequestBiS:CheckArmorDisable()
+  for i,armorType in pairs({BabbleInventory.Cloth, BabbleInventory.Leather, BabbleInventory.Mail, BabbleInventory.Plate}) do
+    local armorSelector = dropdownFilter:GetUserData("Armor"..i)
+    if armorSelector then
+      local enabled = false
+      for i=1,#armorClasses[armorType] do
+        local class = armorClasses[armorType][i]
+        local classSelector = dropdownFilter:GetUserData(class)
+        if classSelector and classSelector:GetValue() then
+          enabled = true
+          break
+        end
+      end
+      armorSelector:SetValue(enabled)
+    end
+  end
+end
 
 ---Verifies the token filter menu with what is actually in the filter table
 function RequestBiS:CheckTokenDisable()
@@ -362,7 +386,7 @@ end
 
 ---Verifies the guild ranks filter menu with what is actually in the filter table
 function RequestBiS:CheckGuildRankDisable(recursive)
-  recursive = recursive or true
+  recursive = recursive or (recursive == nil and true)
   for i=1,GuildControlGetNumRanks() do
     local guildWidget = dropdownFilter:GetUserData("GuildRank"..i)
     if guildWidget then 
@@ -414,6 +438,7 @@ function RequestBiS:VerifyCheckBoxes()
   self:CheckGuildRankDisable(false)
   self:CheckClassDisable(false)
   self:CheckTokenDisable(false)
+  self:CheckArmorDisable(false)
 end
 
 --- Simply (un)ticks all the options in the filter
@@ -528,6 +553,13 @@ function RequestBiS:SetGuildFilter(guildRank, value, ignoreApply)
   self:CheckPlayerDisable()
 end
 
+function RequestBiS:SetArmorFilter(armorType, value)
+  for i=1,#armorClasses[armorType] do
+    self:SetClassFilter(armorClasses[armorType][i], value, #armorClasses[armorType] < i)
+  end
+  self:CheckClassDisable()
+end
+
 
 local function onClassSelect(widget, _, value)
   local class = widget:GetUserData("class")
@@ -579,6 +611,10 @@ local function onGuildRankSelect(widget, _, value)
   RequestBiS:SetGuildFilter(guildRankId, value)
 end
 
+local function onArmorSelect(widget, _, value)
+  local armorType = widget:GetUserData("type")
+  RequestBiS:SetArmorFilter(armorType, value)
+end
 function RequestBiS:GetDropdownSeperator()
   local seperator = AceGUI:Create("Dropdown-Item-Separator")
   seperator.SetValue = emptySetValue
@@ -634,13 +670,6 @@ function RequestBiS:MakeStandardOptions(submenu)
   submenu:AddItem(showObtained)
   showObtained:SetValue(showObtainedItems)
   
-  --[[
-  local showCache = AceGUI:Create("Dropdown-Item-Toggle")
-  showCache:SetText(L["Show Guild BiS lists"])
-  showCache:SetCallback("OnValueChanged", showCacheOnValue)
-  submenu:AddItem(showCache)
-  showCache:SetValue(showCached)
-  ]]
   submenu:AddItem(self:GetDropdownSeperator())
   
   --Add the class Menu
@@ -699,6 +728,23 @@ function RequestBiS:MakeStandardOptions(submenu)
   end
   tokenMenu:SetMenu(tokenSubMenu)
   submenu:AddItem(tokenMenu)
+  
+  --Adds the armor filter
+  local armorMenu = AceGUI:Create("Dropdown-Item-Menu")
+  armorMenu:SetText(L["Armor filter"])
+  armorMenu.SetValue = emptySetValue
+  local armorSubMenu = AceGUI:Create("Dropdown-Pullout")
+  armorSubMenu.SetValue = emptySetValue
+  for i,armorType in pairs({BabbleInventory.Cloth, BabbleInventory.Leather, BabbleInventory.Mail, BabbleInventory.Plate}) do
+    local armorToggle = AceGUI:Create("Dropdown-Item-Toggle")
+    armorToggle:SetText(armorType)
+    armorToggle:SetUserData("type", armorType)
+    armorToggle:SetCallback("OnValueChanged", onArmorSelect)
+    armorSubMenu:AddItem(armorToggle)
+    dropdownFilter:SetUserData("Armor"..i, armorToggle)
+  end
+  armorMenu:SetMenu(armorSubMenu)
+  submenu:AddItem(armorMenu)
   
   --Adds the guild filter
   if responseContainer:GetUserData("channel") == "GUILD" or not responseContainer:GetUserData("channel") then -- if the guild window is shown

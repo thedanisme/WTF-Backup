@@ -1,0 +1,25 @@
+
+TradeSkillMaster_WarehousingDB = {
+	["f@Horde - Kazzak@BagState"] = {
+	},
+	["_hash"] = 185553,
+	["g@ @ShowLogData"] = false,
+	["_scopeKeys"] = {
+		["char"] = {
+			"Janitabank - Kazzak", -- [1]
+		},
+		["realm"] = {
+			"Kazzak", -- [1]
+		},
+		["profile"] = {
+			"Default", -- [1]
+		},
+		["factionrealm"] = {
+			"Horde - Kazzak", -- [1]
+		},
+	},
+	["_version"] = 1,
+	["_currentProfile"] = {
+		["Janitabank - Kazzak"] = "Default",
+	},
+}
