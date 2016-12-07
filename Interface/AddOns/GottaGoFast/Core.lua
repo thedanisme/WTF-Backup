@@ -26,6 +26,7 @@ function GottaGoFast:OnEnable()
     self:RegisterEvent("SCENARIO_POI_UPDATE");
     self:RegisterEvent("WORLD_STATE_TIMER_START");
     self:RegisterEvent("UPDATE_MOUSEOVER_UNIT");
+    self:RegisterEvent("GOSSIP_SHOW");
     self:RegisterChatCommand("ggf", "ChatCommand");
     self:RegisterChatCommand("GottaGoFast", "ChatCommand");
     self:RegisterComm("GottaGoFast", "ChatComm");
@@ -125,6 +126,12 @@ function GottaGoFast:UPDATE_MOUSEOVER_UNIT()
         GameTooltip:AppendText(appendString);
       end
     end
+  end
+end
+
+function GottaGoFast:GOSSIP_SHOW()
+  if (ggf.inCM == true and ggf.CurrentCM ~= nil and next(ggf.CurrentCM) ~= nil) then
+    GottaGoFast.HandleGossip();
   end
 end
 

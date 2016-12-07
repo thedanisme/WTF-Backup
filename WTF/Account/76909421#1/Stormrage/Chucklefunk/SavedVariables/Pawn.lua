@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0108,
+	["LastVersion"] = 2.0109,
 	["LastPlayerFullName"] = "Chucklefunk-Stormrage",
 	["AutoSelectScales"] = false,
 	["UpgradeTracking"] = false,

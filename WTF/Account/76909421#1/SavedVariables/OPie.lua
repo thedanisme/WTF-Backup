@@ -10,9 +10,9 @@ OneRing_Config = {
 			["RingAtMouse"] = true,
 			["Bindings"] = {
 				["LoneWolf"] = "ALT-4",
-				["WorldMarkers"] = "ALT-2",
-				["RaidSymbols"] = false,
 				["Utility"] = "ALT-R",
+				["RaidSymbols"] = false,
+				["WorldMarkers"] = "ALT-2",
 			},
 			["ShowCooldowns"] = true,
 			["HideStanceBar"] = true,
@@ -100,6 +100,7 @@ OneRing_Config = {
 					["sliceToken"] = "ABue2C/V=/ee",
 				}, -- [5]
 				{
+					["show"] = "[spec:261/260/259] hide;",
 					["sliceToken"] = "ABue2Vb=3Oy",
 					["id"] = 195097,
 				}, -- [6]
@@ -115,24 +116,24 @@ OneRing_Config = {
 				}, -- [8]
 				{
 					"item", -- [1]
-					133557, -- [2]
-					["sliceToken"] = "ABue2C/V=/wN",
+					118922, -- [2]
+					["sliceToken"] = "ABue2C/V=/wM",
 				}, -- [9]
+				{
+					"item", -- [1]
+					133570, -- [2]
+					["sliceToken"] = "ABue2VZFuIy",
+				}, -- [10]
 				{
 					"item", -- [1]
 					140587, -- [2]
 					["show"] = "[nocombat]",
 					["sliceToken"] = "ABue2C/V=/wB",
-				}, -- [10]
+				}, -- [11]
 				{
 					"item", -- [1]
 					141446, -- [2]
 					["sliceToken"] = "ABue2C/V=/w/",
-				}, -- [11]
-				{
-					"item", -- [1]
-					118922, -- [2]
-					["sliceToken"] = "ABue2C/V=/wM",
 				}, -- [12]
 				{
 					["show"] = "[spec:252/251/250] hide;",
@@ -149,9 +150,14 @@ OneRing_Config = {
 					["sliceToken"] = "ABue2C/V=/eo",
 					["id"] = 8679,
 				}, -- [15]
-				["name"] = "Utility",
-				["save"] = true,
+				{
+					["show"] = "[spec:261/260] hide;",
+					["sliceToken"] = "ABue2VZFuI4",
+					["id"] = 200802,
+				}, -- [16]
 				["hotkey"] = "ALT-R",
+				["save"] = true,
+				["name"] = "Utility",
 			},
 		},
 	},

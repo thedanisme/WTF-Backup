@@ -31,11 +31,7 @@ local utf8 = {
 }
 
 local xCP = LibStub and LibStub("xCombatParser-1.0", true)
-local LPS = LibStub and LibStub("LibPlayerSpells-1.0", true)
-
-if not xCP or not LPS then print("Something went wrong when xCT+ tried to load. Please resintall and inform the author.") end
-
-
+if not xCP then print("Something went wrong when xCT+ tried to load. Please resintall and inform the author.") end
 
 
 --[=====================================================[
@@ -2174,10 +2170,13 @@ local CombatEventHandlers = {
 		-- Keep track of spells that go by
 		if args.spellId and TrackSpells() then x.spellCache.damage[args.spellId] = true end
 
+
 		if IsDamageFiltered(args.spellId or false) then return end
 
 		-- Check for resists
 		if ShowResistances() then
+			if FilterIncomingDamage(args.amount + (args.resisted or 0) + (args.blocked or 0) + (args.absorbed or 0)) then return end
+
 			local resistedAmount, resistType, color
 
 			-- Check for resists (full and partials)
@@ -2203,6 +2202,8 @@ local CombatEventHandlers = {
 					message = resistType	-- TODO: Add an option to still see how much was reisted on a full resist
 				end
 			end
+		else
+			if FilterIncomingDamage(args.amount) then return end
 		end
 
 		-- If this is not a resist, then lets format it as normal

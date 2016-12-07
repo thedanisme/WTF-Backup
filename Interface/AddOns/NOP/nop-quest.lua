@@ -53,7 +53,6 @@ end
 function NOP:QBButton(i, p) -- create new quest bar button
   if p.buttons and p.buttons[i] then
     local bt = p.buttons[i]
-    -- self:QBButtonSize(bt)
     return bt
   end
   local name = private.QB_NAME..i
@@ -68,10 +67,10 @@ function NOP:QBButton(i, p) -- create new quest bar button
   bt.icon:SetAllPoints()
   bt.cooldown = CreateFrame("Cooldown", name.."Cooldown", bt, "CooldownFrameTemplate")
   bt.cooldown:SetAllPoints()
-  bt.cooldown:SetHideCountdownNumbers(true) -- hide text
-  bt.timer = bt:CreateFontString(name.."Timer", 'OVERLAY', private.ICON_TEXT)
-  bt.timer:ClearAllPoints()
-  bt.timer:SetPoint('BOTTOMLEFT',bt,'BOTTOMLEFT', 2, 2)
+  --bt.cooldown:SetHideCountdownNumbers(true) -- hide text
+  --bt.timer = bt:CreateFontString(name.."Timer", 'OVERLAY', private.ICON_TEXT)
+  --bt.timer:ClearAllPoints()
+  --bt.timer:SetPoint('BOTTOMLEFT',bt,'BOTTOMLEFT', 2, 2)
   bt.hotkey = bt:CreateFontString(name.."HotKey", "OVERLAY", private.ICON_TEXT)
   bt.hotkey:SetWidth(bt:GetWidth()-1)
   bt.hotkey:ClearAllPoints()
@@ -90,7 +89,7 @@ function NOP:QBButton(i, p) -- create new quest bar button
   bt.normal = bt:CreateTexture(name.."NormalTexture", nil)
   bt.normal:Hide() -- hide overlay
   bt.normal:SetAlpha(0) -- kill transparency
-  self:ButtonStore(bt,name) -- save props for skining
+  self:ButtonStore(bt)
   self:ButtonSkin(bt,NOP.DB.skinButton)
   p.buttons[i] = bt -- store button ref to anchor frame
   return bt -- return button
@@ -103,7 +102,6 @@ function NOP:QBOnEnter(bt) -- build and show tooltip
     GameTooltip:SetOwner(bt, "ANCHOR_RIGHT")
   end
   GameTooltip:SetHyperlink(bt:GetAttribute("item1")) -- fill up tooltip
-
   local text = NOP.LQI.questItemText[bt.itemID] -- fetch quest
   if text then
     text = private.L["Quest"] .. ": " .. NOP.LQI.questItemText[bt.itemID]
@@ -290,3 +288,5 @@ function NOP:QBAutoQuest()
     end
   )
 end
+-- /dump (NOP.QB.buttons[1]).isSkinned
+-- /dump NOP:ButtonSkin(NOP.QB.buttons[1])

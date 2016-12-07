@@ -169,7 +169,7 @@ Redprints: enabled
 TransmogTokens: enabled
 BestInSlot_PvP: disabled
 BestInSlot_WoDDungeons: enabled
-BigWigs_Achievements: disabled
+BigWigs_Achievements: enabled
 Details: enabled
 Details_CalcLeech: enabled
 Details_DmgRank: disabled
@@ -195,7 +195,7 @@ AdiBags_BestInSlot: disabled
 AdiBags_Bound: disabled
 AdiBags_Legion: disabled
 AdiBags_Config: disabled
-DugisGuideViewerZ: disabled
+DugisGuideViewerZ: enabled
 BigWigs_BrokenIsles: enabled
 ConsLegion: disabled
 MacroBank: disabled
@@ -215,3 +215,18 @@ PersonalLootHelper: enabled
 ElvUI_SLE: enabled
 Details_RaidInfo-TrialOfValor: disabled
 GarrisonMissionManager: enabled
+BestInSlot_LegionDungeons: disabled
+GottaGoFast: enabled
+GottaGoFastHistory: enabled
+!YouArentInAPartyFix: enabled
+TradeSkillMaster: disabled
+TradeSkillMaster_Accounting: disabled
+TradeSkillMaster_AppHelper: disabled
+TradeSkillMaster_AuctionDB: disabled
+TradeSkillMaster_Auctioning: disabled
+TradeSkillMaster_Crafting: disabled
+TradeSkillMaster_Destroying: disabled
+TradeSkillMaster_Mailing: disabled
+TradeSkillMaster_Shopping: disabled
+TradeSkillMaster_Vendoring: disabled
+TradeSkillMaster_Warehousing: disabled

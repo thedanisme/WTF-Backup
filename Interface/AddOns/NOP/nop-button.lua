@@ -24,7 +24,13 @@ local function SetInside(obj, anchor, xOffset, yOffset)
 end
 function NOP:ButtonSkin(button,skin) -- skin or restore button look
   if not (button and button.b_icon) then return end
+  if self.masque then -- let Masque do its job
+    if button.isSkinned == nil then self.masque:AddButton(button) end
+    button.isSkinned = true
+    return
+  end
   if skin then
+    if button.isSkinned then return end
     local ht = button:CreateTexture(nil,"OVERLAY")
     if ht.SetTexture then 
       ht:SetColorTexture(0.3, 0.3, 0.3, 0.5)
@@ -39,13 +45,13 @@ function NOP:ButtonSkin(button,skin) -- skin or restore button look
     if pt.SetInside then pt:SetInside() else SetInside(pt) end
     button.pt = pt
     button:SetPushedTexture(pt)
-    if button.cd then
-      if button.cd.ClearAllPoints then button.cd:ClearAllPoints() end
-      if button.cd.SetInside then button.cd:SetInside() else SetInside(button.cd) end
-      if button.cd.SetDrawEdge then button.cd:SetDrawEdge(false) end
-      if button.cd.SetDrawBling then button.cd:SetDrawBling(false) end
-      if button.cd.SetDrawSwipe then button.cd:SetDrawSwipe(false) end
-      if button.cd.SetSwipeColor then button.cd:SetSwipeColor(0, 0, 0, 0) end
+    if button.cooldown then
+      -- if button.cooldown.ClearAllPoints then button.cooldown:ClearAllPoints() end
+      -- if button.cooldown.SetInside then button.cooldown:SetInside() else SetInside(button.cooldown) end
+      if button.cooldown.SetDrawEdge then button.cooldown:SetDrawEdge(false) end
+      if button.cooldown.SetDrawBling then button.cooldown:SetDrawBling(false) end
+      if button.cooldown.SetDrawSwipe then button.cooldown:SetDrawSwipe(false) end
+      if button.cooldown.SetSwipeColor then button.cooldown:SetSwipeColor(0, 0, 0, 0) end
     end
     button.icon:SetTexCoord(0.08,0.92,0.08,0.92) -- cut out icon border
     if button.icon.SetInside then button.icon:SetInside() else SetInside(button.icon) end
@@ -56,23 +62,28 @@ function NOP:ButtonSkin(button,skin) -- skin or restore button look
     button.count:SetPoint("BOTTOMRIGHT", 1, -1)
     button.hotkey:ClearAllPoints()
     button.hotkey:SetPoint("TOPRIGHT", 1, -2)
+    button.isSkinned = true -- skin only once
   else
-    button.icon:SetTexCoord(unpack(button.b_icon))
-    button.normal:SetTexture(button.b_texture)
-    button.normal:SetAlpha(button.b_alpha)
+    if (button.isSkinned == nil) then return end -- nothing to restore is not skinned
+    if button.b_icon then button.icon:SetTexCoord(unpack(button.b_icon)) end
+    if button.b_texture then button.normal:SetTexture(button.b_texture) end
+    if button.b_alpha then button.normal:SetAlpha(button.b_alpha) end
     button.normal:Show()
     button.count:ClearAllPoints()
-    button.count:SetPoint(unpack(button.b_count))
+    if button.b_count then button.count:SetPoint(unpack(button.b_count)) end
     button.hotkey:ClearAllPoints()
-    button.hotkey:SetPoint(unpack(button.b_hotkey))
+    if button.b_hotkey then button.hotkey:SetPoint(unpack(button.b_hotkey)) end
     if button.b_htexture then button:SetHighlightTexture(button.b_htexture) end
     if button.b_ptexture then button:SetPushedTexture(button.b_ptexture) end
-    if button.cd and button.cd.SetDrawEdge then 
-      button.cd:SetDrawEdge(button.b_draw)
-      button.cd:SetDrawBling(button.b_draw)
-      button.cd:SetDrawSwipe(button.b_draw)
-      button.cd:SetSwipeColor(0.1, 0.1, 0.1, .8)
+    if button.cooldown and button.cooldown.SetDrawEdge then 
+      if button.b_draw then 
+        button.cooldown:SetDrawEdge(button.b_draw)
+        button.cooldown:SetDrawBling(button.b_draw)
+        button.cooldown:SetDrawSwipe(button.b_draw)
+      end
+      button.cooldown:SetSwipeColor(0.1, 0.1, 0.1, .8)
     end
+    button.isSkinned = nil
   end
 end
 function NOP:ButtonOnEnter(button) -- show tooltip
@@ -185,20 +196,23 @@ function NOP:ButtonMove() -- move button from UI config
   self.BF:SetPoint(self.DB.button[1] or "CENTER", UIParent, self.DB.button[3] or "CENTER", self.DB.button[4] or 0, self.DB.button[5] or 0)
   self:ButtonSave()
 end
-function NOP:ButtonStore(button,name) -- save default properties
+function NOP:ButtonStore(button) -- save default properties
+  local name = button and button:GetName()
+  if not name then return end
   button.icon   = _G[name .. "Icon"]
   button.hotkey = _G[name .. "HotKey"]
   button.count  = _G[name .. "Count"]
   button.normal = _G[name .. "NormalTexture"]
-  button.cd     = _G[name .. "Cooldown"]
-  button.b_icon     = {button.icon:GetTexCoord()} -- save actual values
-  button.b_texture  = button.normal:GetTexture() -- save original texture
-  button.b_alpha    = button.normal:GetAlpha() -- save original value
-  button.b_count    = {button.count:GetPoint()} -- save points
-  button.b_hotkey   = {button.hotkey:GetPoint()} -- save points
-  button.b_htexture = button.GetHighlightTexture and button:GetHighlightTexture() or nil
-  button.b_ptexture = button.GetPushedTexture and button:GetPushedTexture() or nil
-  button.b_draw     = button.cd and button.cd.GetDrawEdge and button.cd:GetDrawEdge() or false
+  if self.masque == nil then
+    button.b_icon     = {button.icon:GetTexCoord()} -- save actual values
+    button.b_texture  = button.normal:GetTexture() -- save original texture
+    button.b_alpha    = button.normal:GetAlpha() -- save original value
+    button.b_count    = {button.count:GetPoint()} -- save points
+    button.b_hotkey   = {button.hotkey:GetPoint()} -- save points
+    button.b_htexture = button.GetHighlightTexture and button:GetHighlightTexture() or nil
+    button.b_ptexture = button.GetPushedTexture and button:GetPushedTexture() or nil
+    button.b_draw     = button.cooldown and button.cooldown.GetDrawEdge and button.cooldown:GetDrawEdge() or false
+  end
 end
 function NOP:ButtonLoadTimer() -- create button, restore his position
   if self:inCombat() then self:ScheduleTimer("ButtonLoadTimer", private.TIMER_IDLE); return; end
@@ -224,31 +238,30 @@ function NOP:ButtonLoad() -- create button, restore his position
     self:ButtonSize() -- set or restore size
     self:ButtonMove() -- set or restore position
     local bt = self.BF
-    if bt:IsVisible() or bt:IsShown() then bt:Hide() end
-    bt.timer = bt:CreateFontString(private.BUTTON_FRAME.."Timer", 'OVERLAY', private.ICON_TEXT)
-    bt.cooldown:SetHideCountdownNumbers(true) -- hide Blizzard's cooldown text
-    self:ButtonBackdrop(bt)
+    -- if bt:IsVisible() or bt:IsShown() then bt:Hide() end
+    -- bt.timer = bt:CreateFontString(private.BUTTON_FRAME.."Timer", 'OVERLAY', private.ICON_TEXT)
+    -- bt.cooldown:SetHideCountdownNumbers(true) -- hide Blizzard's cooldown text
+    self:ButtonBackdrop(bt) -- create backdrop around button if enabled
     bt:RegisterForDrag("LeftButton") -- ALT-LEFT-MOUSE for drag
     bt:RegisterForClicks("AnyUp") -- act on key release 
-    bt:SetAttribute("type1", "macro") -- "type1" Unmodified left click.
-    bt:SetAttribute("macrotext1", private.MACRO_INACTIVE) -- clear macro for safety!
+    -- bt:SetAttribute("type1", "macro") -- "type1" Unmodified left click.
+    -- bt:SetAttribute("macrotext1", private.MACRO_INACTIVE) -- clear macro for safety!
     bt:SetScript("OnEnter",     function(self) NOP:ButtonOnEnter(self) end)
     bt:SetScript("OnLeave",     function(self) NOP:ButtonOnLeave(self) end)
     bt:SetScript("PreClick",    function(self,button) NOP:ButtonPreClick(button) end)
     bt:SetScript("PostClick",   function(self,button) NOP:ButtonPostClick(button) end)
     bt:SetScript("OnDragStart", function(self) NOP:ButtonOnDragStart(self) end)
     bt:SetScript("OnDragStop",  function(self) NOP:ButtonOnDragStop(self) end)
-    self:ButtonStore(bt,private.BUTTON_FRAME)
     bt.icon:SetTexture(private.DEFAULT_ICON)
+    self:ButtonStore(bt)
     bt:EnableMouse(true)
     bt:SetMovable(true)
-    if NOP.DB.skinButton then self:ButtonSkin(bt, NOP.DB.skinButton) end
   else
     self:ButtonSize() -- set or restore size
     self:ButtonMove() -- set or restore position
-    self:ButtonSkin(self.BF, NOP.DB.skinButton) -- reuse button but skin or restore original state
   end
   self:ButtonSwap(NOP.DB.swap)
+  self:ButtonSkin(self.BF, NOP.DB.skinButton)
 end
 function NOP:ButtonSwap(swap) -- swap count and timer text sides on button
   local bt = self.BF
@@ -258,13 +271,13 @@ function NOP:ButtonSwap(swap) -- swap count and timer text sides on button
   if swap then
     bt.count:ClearAllPoints()
     bt.count:SetPoint('BOTTOMLEFT',bt,'BOTTOMLEFT', 1, -1)
-    bt.timer:ClearAllPoints()
-    bt.timer:SetPoint("BOTTOMRIGHT",bt,"BOTTOMRIGHT", 1, -1)
+    -- bt.timer:ClearAllPoints()
+    -- bt.timer:SetPoint("BOTTOMRIGHT",bt,"BOTTOMRIGHT", 1, -1)
   else
     bt.count:ClearAllPoints()
     bt.count:SetPoint("BOTTOMRIGHT",bt,"BOTTOMRIGHT", 1, -1)
-    bt.timer:ClearAllPoints()
-    bt.timer:SetPoint('BOTTOMLEFT',bt,'BOTTOMLEFT', 1, -1)
+    -- bt.timer:ClearAllPoints()
+    -- bt.timer:SetPoint('BOTTOMLEFT',bt,'BOTTOMLEFT', 1, -1)
   end
 end
 function NOP:ButtonCount(count) -- update counter on button
@@ -278,7 +291,9 @@ function NOP:ButtonShow() -- display button
     return
   end
   self.timerButtonShow = nil
-  local bt = self.BF; self:ButtonCount(bt.itemCount); bt.icon:SetTexture(bt.itemTexture or private.DEFAULT_ICON); bt:SetAttribute("macrotext1", bt.mtext);
+  local bt = self.BF; self:ButtonCount(bt.itemCount); bt.icon:SetTexture(bt.itemTexture or private.DEFAULT_ICON)
+  bt:SetAttribute("type1", "macro") -- "type1" Unmodified left click.
+  bt:SetAttribute("macrotext1", bt.mtext);
   if not (bt:IsVisible() or bt:IsShown()) then bt:Show() end
   if NOP.DB.glowButton then
     if self.priorityItem and self.priorityItem == bt.itemID then
@@ -300,7 +315,8 @@ function NOP:ButtonHide() -- hide button
   end
   if self.timerButtonHide then return end
   local bt = self.BF; bt.itemCount = 0; bt.bagID = nil; bt.itemID = nil; bt.mtext = private.MACRO_INACTIVE; bt.itemTexture = nil -- reset to defaults
-  bt.icon:SetTexture(private.DEFAULT_ICON); bt:SetAttribute("macrotext1", private.MACRO_INACTIVE); self:ButtonCount(bt.itemCount); self.ActionButton_HideOverlayGlow(bt)
+  bt.icon:SetTexture(private.DEFAULT_ICON); 
+  bt:SetAttribute("macrotext1", private.MACRO_INACTIVE); self:ButtonCount(bt.itemCount); self.ActionButton_HideOverlayGlow(bt)
   if NOP.DB.visible then  -- show fake button, instead hide.
     if not (bt:IsShown() or bt:IsVisible()) then bt:Show() end
   else

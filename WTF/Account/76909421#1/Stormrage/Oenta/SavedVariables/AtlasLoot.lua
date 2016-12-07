@@ -5,16 +5,16 @@ AtlasLootCharDB = {
 		["classFilter"] = true,
 		["selected"] = {
 			"AtlasLoot_Legion", -- [1]
-			"TheEmeraldNightmare", -- [2]
-			7, -- [3]
-			3, -- [4]
+			"HallsOfValor", -- [2]
+			5, -- [3]
+			8, -- [4]
 			0, -- [5]
 		},
 		["point"] = {
 			"RIGHT", -- [1]
 			nil, -- [2]
 			"RIGHT", -- [3]
-			-197.999893188477, -- [4]
+			-198.999908447266, -- [4]
 			43.0000267028809, -- [5]
 		},
 	},

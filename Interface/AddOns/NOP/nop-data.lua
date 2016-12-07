@@ -25,6 +25,7 @@ NOP.T_SPELL_BY_USE_TEXT = { -- [spellID] = {min-count,itemID,{"sub-Zone"},{[mapI
   [ 58165] = {1,  7973,nil,nil},  -- Open the clam!, Big-Mouth Clam
   [166550] = {1,113355,nil,nil},  -- Flip Card, Card of Omens
   [163769] = {1,116158,nil,{[976]=true,[971]=true}}, -- Toss Fish, Lunarfall Carp, can be used only in garrison shown on button only in garrison.
+  [233232] = {1,143748,nil,nil}, -- 25 mana
   [193080] = {1,129097,nil,nil}, -- 30 mana
   [222333] = {1,139786,nil,nil}, -- 50 mana
   [223677] = {1,140401,nil,nil}, -- 75 mana
@@ -195,17 +196,22 @@ NOP.T_ITEMS = { -- [itemID] = {min-count,{"sub-Zone","sub-Zone",...} | mapID | {
   [140439] = {1,nil,223722}, -- Sunblossom Pollen
   [140260] = {1,nil,nil}, -- Arcane Remnant of Falanaar
   [141870] = {1,nil,nil}, -- Arcane Tablet of Falanaar
-  [141338] = {1,nil,nil}, -- Valarjar Insignia 
-  [141341] = {1,nil,nil}, -- Highmountain Tribe Insignia 
-  [141339] = {1,nil,nil}, -- Dreamweaver Insignia 
-  [141343] = {1,nil,nil}, -- Nightfallen Insignia 
-  [141340] = {1,nil,nil}, -- Court of Farondis Insignia 
-  [141342] = {1,nil,nil}, -- Wardens Insignia 
-  [141987] = {1,nil,nil}, -- Greater Valarjar Insignia 
-  [141990] = {1,nil,nil}, -- Greater Highmountain Tribe Insignia 
-  [141988] = {1,nil,nil}, -- Greater Dreamweaver Insignia 
-  [141992] = {1,nil,nil}, -- Greater Nightfallen Insignia 
+  [139023] = {1,nil,nil}, -- Court of Farondis Insignia 
+  [139021] = {1,nil,nil}, -- Dreamweaver Insignia 
+  [139024] = {1,nil,nil}, -- Highmountain Tribe Insignia 
+  [139026] = {1,nil,nil}, -- Nightfallen Insignia 
+  [139020] = {1,nil,nil}, -- Valarjar Insignia 
+  [141340] = {1,nil,nil}, -- Court of Farondis Insignia BoA
+  [141339] = {1,nil,nil}, -- Dreamweaver Insignia BoA
+  [141341] = {1,nil,nil}, -- Highmountain Tribe Insignia BoA
+  [141343] = {1,nil,nil}, -- Nightfallen Insignia BoA
+  [141338] = {1,nil,nil}, -- Valarjar Insignia BoA
+  [141342] = {1,nil,nil}, -- Wardens Insignia BoA
   [141989] = {1,nil,nil}, -- Greater Court of Farondis Insignia 
+  [141988] = {1,nil,nil}, -- Greater Dreamweaver Insignia 
+  [141990] = {1,nil,nil}, -- Greater Highmountain Tribe Insignia 
+  [141992] = {1,nil,nil}, -- Greater Nightfallen Insignia 
+  [141987] = {1,nil,nil}, -- Greater Valarjar Insignia 
   [141991] = {1,nil,nil}, -- Greater Wardens Insignia
   [139010] = {1,nil,nil}, -- Petrified Silkweave
   [139017] = {1,nil,nil}, -- Soothing Leystone Shard
@@ -213,6 +219,14 @@ NOP.T_ITEMS = { -- [itemID] = {min-count,{"sub-Zone","sub-Zone",...} | mapID | {
   [136412] = {1,nil,nil}, -- Heavy Armor Set
   [137207] = {1,nil,nil}, -- Fortified Armor Set
   [137208] = {1,nil,nil}, -- Indestructible Armor Set
+  [142156] = {1,nil,nil}, -- Order Resources Cache
+  [140451] = {1,nil,nil}, -- Spellmask of Azsylla
+  [140329] = {1,nil,nil}, -- Infinite Stone
+  [139027] = {1,nil,nil}, -- Lenses of Spellseer Dellian
+  [139011] = {1,nil,nil}, -- Berserking Helm of Ondry'el
+  [142447] = {1,nil,nil}, -- Torn Sack of Pet Supplies
+  [142156] = {1,nil,nil}, -- Order Resources Cache
+
 }
 NOP.T_FRAMES = { -- these frames need to be closed before I can use item on button
   "MerchantFrame", 

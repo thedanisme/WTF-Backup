@@ -330,3 +330,19 @@ function GottaGoFast.SetTimerTooltip(info, value)
     GottaGoFastTimerFrame:SetScript("OnLeave", nil);
   end
 end
+
+function GottaGoFast.GetAutoDialog(info)
+  return GottaGoFast.db.profile.AutoDialog;
+end
+
+function GottaGoFast.SetAutoDialog(info, value)
+  GottaGoFast.db.profile.AutoDialog = value;
+end
+
+function GottaGoFast.GetSpyHelper(info)
+  return GottaGoFast.db.profile.SpyHelper;
+end
+
+function GottaGoFast.SetSpyHelper(info, value)
+  GottaGoFast.db.profile.SpyHelper = value;
+end

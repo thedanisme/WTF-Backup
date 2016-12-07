@@ -1,4 +1,25 @@
---[[Revisions: 06.22 15.11.2016
+-- Revisions:
+--[[<p>06.28 07.12.2016</p>
+<ul>
+<li>Added Order Resources Cache.</li>
+<li>Fix own skinning of quest bar buttons.</li>
+</ul>
+]]
+--[[<p>06.26 06.12.2016</p>
+<ul>
+<li>Added Torn Sack of Pet Supplies.</li>
+<li>Bags are rechecked every 10 seconds instead 60 seconds to clean-up stuck items on button.It should fix problem with LUA where EVENTS simply aren't fired by UI.</li>
+<li>Support for Masque addon. If Masque is installed then Skin Button state in toggle section of configuration is ignored. Still need testing and feedback</li>
+</ul>
+]]
+--[[06.24 27.11.2016
+
+[list][*]Added Order Resources Cache, Spellmask of Azsylla, Infinite Stone, Lenses of Spellseer Dellian and Berserking Helm of Ondry'el.
+[*]Added +25 ancient mana items.
+[*]Added no BoA Legion insignias giving +250 reputation and fixed non BoA variants.[/list]
+
+]]
+--[[06.22 15.11.2016
 
 [list][*]Fix for some ancient mana items caused by bugged GetItemSpell(itemID) it returns item name instead of spell name, but only for certain Legion items.
 [*]Added support for Blizzard's Auto Quest Tracker module.

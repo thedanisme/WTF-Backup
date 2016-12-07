@@ -2,10 +2,6 @@ VER 3 000000000000013D " " "INV_Misc_QuestionMark"
 #showtooltip
 /use 12
 END
-VER 3 000000000000014C " " "INV_Misc_QuestionMark"
-#showtooltip 
-/use [@mouseover,talent:7/1,nodead,help]Beacon of light;[@mouseover,talent:7/2,nodead,help]Beacon of Light;[@mouseover,talent:7/3,nodead,help]Beacon of Virtue
-END
 VER 3 0000000000000147 "ArtWep" "INV_Misc_QuestionMark"
 #showtooltip 16 
 /run if not ArtifactFrame then SocketInventoryItem(16) else if ArtifactFrame:IsShown() then ArtifactFrame:Hide() else SocketInventoryItem(16) end end
@@ -68,4 +64,7 @@ END
 VER 3 0000000000000152 "t6" "INV_Misc_QuestionMark"
 END
 VER 3 0000000000000153 "t7" "INV_Misc_QuestionMark"
+END
+VER 3 0000000000000154 "TSMPOST" "133785"
+/click TSMAuctioningPostButton
 END

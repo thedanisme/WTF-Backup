@@ -53,10 +53,12 @@ function NOP:PLAYER_LOGIN() -- player entering game
     self.printt("|cFFFF0000" .. private.NOP_TITLE .. " " .. private.NOP_VERSION)
     NOP.DB["version"] = private.NOP_VERSION
   end
-  self.spellLoadRetry = private.LOAD_RETRY -- limit number of retries
-  self:SpellLoad() -- create spell patterns
-  self.itemLoadRetry = private.LOAD_RETRY -- limit number of retries
-  self:ItemLoad() -- create item patterns
+  local Masque = LibStub("Masque", true)
+  self.masque = Masque and Masque:Group(ADDON) -- when user has installed Masque addon, then skinnig is done by Masque
+  self:ButtonLoad() -- create button
+  self:QBAnchor() -- create quest bar
+  self.spellLoadRetry = private.LOAD_RETRY; self:SpellLoad() -- create spell patterns
+  self.itemLoadRetry = private.LOAD_RETRY; self:ItemLoad() -- create item patterns
   self:PickLockUpdate() -- picklock skills
   local key = GetBindingKey("CLICK " .. private.BUTTON_FRAME .. ":LeftButton")
   if self.BF.hotkey then self.BF.hotkey:SetText(self:ButtonHotKey(key)) end
@@ -78,7 +80,9 @@ function NOP:ACTIONBAR_UPDATE_COOLDOWN() -- update cooldowns on quest bar and it
   if not self.QB or (not NOP.DB.quest and self.qbHidden) then return end -- quest bar is disabled or none and hidden nothing to do
   for _, bt in ipairs(self.QB.buttons) do -- quest bar buttons text cooldowns
     if bt:IsShown() and bt.cooldown and bt.itemID then 
-      local startTime, duration, enable = GetItemCooldown(bt.itemID)
+      local start, duration, enable = GetItemCooldown(bt.itemID)
+      CooldownFrame_Set(bt.cooldown, start, duration, enable)
+      --[[
       bt.expiration = startTime + duration - GetTime()
       bt.nextupdate = 0
       if (startTime > 0) and (duration > 0) then
@@ -88,11 +92,14 @@ function NOP:ACTIONBAR_UPDATE_COOLDOWN() -- update cooldowns on quest bar and it
         bt.timer:SetText(nil)
       end
       if not NOP.DB.skinButton and (duration > 0) then CooldownFrame_Set(bt.cooldown,  startTime, duration, enable, true) end -- place swipe if not skinned
+      ]]
     end
   end
   local bt = self.BF -- item button
   if not (bt.cooldown and bt.itemID and bt:IsShown()) then return end -- nothing there to use
-  local startTime, duration, enable = GetItemCooldown(bt.itemID)
+  local start, duration, enable = GetItemCooldown(bt.itemID)
+  CooldownFrame_Set(bt.cooldown, start, duration, enable)
+  --[[
   bt.expiration = startTime + duration - GetTime()
   bt.nextupdate = 0
   if (startTime > 0) and (duration > 0) then
@@ -102,6 +109,7 @@ function NOP:ACTIONBAR_UPDATE_COOLDOWN() -- update cooldowns on quest bar and it
     bt.timer:SetText(nil)
   end
   if not NOP.DB.skinButton and (duration > 0) then CooldownFrame_Set(bt.cooldown,  startTime, duration, enable, true) end -- place swipe if not skinned
+  ]]
 end
 function NOP:SPELLCAST(event,unitID) -- if click on item produce cast then is time to update it after end of cast
   if self.itemClick and (unitID == private.UNITID_PLAYER) then

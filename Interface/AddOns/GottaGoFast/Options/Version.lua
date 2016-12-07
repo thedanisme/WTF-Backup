@@ -24,6 +24,10 @@ function GottaGoFast.VersionCheck()
   elseif (lastVersion < 25400) then
     ggf:Print("Version 2.5.4");
     ggf:Print("Safer Data Syncing, Mob Count Fixed On Reload")
+  elseif (lastVersion < 25500) then
+    ggf:Print("Version 2.5.5");
+    ggf:Print("New Options Sub Menu Added!")
+    ggf:Print("Court Of Star Spy Helper & Dialog Auto Confirm Added! Disabled By Default");
   end
   ggf.SetVersion(nil, version);
 end

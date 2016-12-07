@@ -40,6 +40,8 @@ function GottaGoFast.InitOptions()
       History = {},
       DebugMode = false,
       Version = 0,
+      AutoDialog = false,
+      SpyHelper = false,
     },
   }
   local options = {
@@ -358,6 +360,28 @@ function GottaGoFast.InitOptions()
             get = GottaGoFast.GetDeathColor,
             set = GottaGoFast.SetDeathColor,
           },
+        },
+      },
+      dungeons = {
+        name = "Dungeon Features",
+        type = "group",
+        args = {
+          AutoDialog = {
+            order = 1,
+            type = "toggle",
+            name = "Auto Dialog",
+            desc = "Automatically Accepts Dialog Boxes In M+, Warning This Applies To All CoS Items",
+            get = GottaGoFast.GetAutoDialog,
+            set = GottaGoFast.SetAutoDialog,
+          },
+          SpyHelper = {
+            order = 2,
+            type = "toggle",
+            name = "CoS Spy Helper",
+            desc = "Prints Text About Spy Automatically During Mini-Game",
+            get = GottaGoFast.GetSpyHelper,
+            set = GottaGoFast.SetSpyHelper,
+          }
         },
       },
     },

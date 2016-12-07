@@ -14,8 +14,6 @@ function NOP:OnInitialize() -- app initialize
   self.scanFrame = self:TooltipCreate(private.TOOLTIP_SCAN)
   self.itemFrame = self:TooltipCreate(private.TOOLTIP_ITEM)
   self.spellFrame = self:TooltipCreate(private.TOOLTIP_SPELL) -- /run NOP.spellFrame = NOP:TooltipCreate("NOP_TOOLTIP_SPELL")
-  self:ButtonLoad() -- create button
-  self:QBAnchor() -- create quest bar
 end
 function NOP:TooltipCreate(name) -- create tooltip frame
   local frame
