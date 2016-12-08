@@ -23,9 +23,9 @@ local function SetInside(obj, anchor, xOffset, yOffset)
   obj:SetPoint('BOTTOMRIGHT', anchor, 'BOTTOMRIGHT', -xOffset, yOffset)
 end
 function NOP:ButtonSkin(button,skin) -- skin or restore button look
-  if not (button and button.b_icon) then return end
+  if not button then return end
   if self.masque then -- let Masque do its job
-    if button.isSkinned == nil then self.masque:AddButton(button) end
+    if button.isSkinned == nil then self.masque:AddButton(button); self.masque:ReSkin() end
     button.isSkinned = true
     return
   end

@@ -4,17 +4,17 @@ HandyNotesDB = {
 		["Oenta - Stormrage"] = "Oenta - Stormrage",
 		["Whyfy - Stormrage"] = "Whyfy - Stormrage",
 		["Callil - Turalyon"] = "Callil - Turalyon",
-		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
+		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
 		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
-		["Callil - Stormrage"] = "Callil - Stormrage",
-		["Chucklefunk - Stormrage"] = "Chucklefunk - Stormrage",
 		["Yanlery - Stormrage"] = "Yanlery - Stormrage",
+		["Callil - Stormrage"] = "Callil - Stormrage",
+		["Danoh - Stormrage"] = "Danoh - Stormrage",
 		["Jakwez - Stormrage"] = "Jakwez - Stormrage",
 		["Titte - Turalyon"] = "Titte - Turalyon",
 		["Druidann - Stormrage"] = "Druidann - Stormrage",
-		["Danoh - Stormrage"] = "Danoh - Stormrage",
+		["Chucklefunk - Stormrage"] = "Chucklefunk - Stormrage",
 		["Shhbbyisok - Stormrage"] = "Shhbbyisok - Stormrage",
-		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
+		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
 		["Dosnutz - Stormrage"] = "Dosnutz - Stormrage",
 	},
 	["profiles"] = {
@@ -24,15 +24,15 @@ HandyNotesDB = {
 		},
 		["Callil - Turalyon"] = {
 		},
-		["Emmarosa - Stormrage"] = {
+		["Talthalador - Stormrage"] = {
 		},
 		["Shaneequa - Turalyon"] = {
 		},
+		["Yanlery - Stormrage"] = {
+		},
 		["Callil - Stormrage"] = {
 		},
-		["Chucklefunk - Stormrage"] = {
-		},
-		["Yanlery - Stormrage"] = {
+		["Danoh - Stormrage"] = {
 		},
 		["Jakwez - Stormrage"] = {
 		},
@@ -40,11 +40,11 @@ HandyNotesDB = {
 		},
 		["Druidann - Stormrage"] = {
 		},
-		["Danoh - Stormrage"] = {
+		["Chucklefunk - Stormrage"] = {
 		},
 		["Shhbbyisok - Stormrage"] = {
 		},
-		["Talthalador - Stormrage"] = {
+		["Emmarosa - Stormrage"] = {
 		},
 		["Dosnutz - Stormrage"] = {
 		},
@@ -55,17 +55,17 @@ HandyNotes_HandyNotesDB = {
 		["Oenta - Stormrage"] = "Oenta - Stormrage",
 		["Whyfy - Stormrage"] = "Whyfy - Stormrage",
 		["Callil - Turalyon"] = "Callil - Turalyon",
-		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
+		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
 		["Shaneequa - Turalyon"] = "Shaneequa - Turalyon",
-		["Callil - Stormrage"] = "Callil - Stormrage",
-		["Chucklefunk - Stormrage"] = "Chucklefunk - Stormrage",
 		["Yanlery - Stormrage"] = "Yanlery - Stormrage",
+		["Callil - Stormrage"] = "Callil - Stormrage",
+		["Danoh - Stormrage"] = "Danoh - Stormrage",
 		["Jakwez - Stormrage"] = "Jakwez - Stormrage",
 		["Titte - Turalyon"] = "Titte - Turalyon",
 		["Druidann - Stormrage"] = "Druidann - Stormrage",
-		["Danoh - Stormrage"] = "Danoh - Stormrage",
+		["Chucklefunk - Stormrage"] = "Chucklefunk - Stormrage",
 		["Shhbbyisok - Stormrage"] = "Shhbbyisok - Stormrage",
-		["Talthalador - Stormrage"] = "Talthalador - Stormrage",
+		["Emmarosa - Stormrage"] = "Emmarosa - Stormrage",
 		["Dosnutz - Stormrage"] = "Dosnutz - Stormrage",
 	},
 	["profiles"] = {
@@ -75,15 +75,15 @@ HandyNotes_HandyNotesDB = {
 		},
 		["Callil - Turalyon"] = {
 		},
-		["Emmarosa - Stormrage"] = {
+		["Talthalador - Stormrage"] = {
 		},
 		["Shaneequa - Turalyon"] = {
 		},
+		["Yanlery - Stormrage"] = {
+		},
 		["Callil - Stormrage"] = {
 		},
-		["Chucklefunk - Stormrage"] = {
-		},
-		["Yanlery - Stormrage"] = {
+		["Danoh - Stormrage"] = {
 		},
 		["Jakwez - Stormrage"] = {
 		},
@@ -91,11 +91,11 @@ HandyNotes_HandyNotesDB = {
 		},
 		["Druidann - Stormrage"] = {
 		},
-		["Danoh - Stormrage"] = {
+		["Chucklefunk - Stormrage"] = {
 		},
 		["Shhbbyisok - Stormrage"] = {
 		},
-		["Talthalador - Stormrage"] = {
+		["Emmarosa - Stormrage"] = {
 		},
 		["Dosnutz - Stormrage"] = {
 		},

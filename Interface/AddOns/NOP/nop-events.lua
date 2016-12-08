@@ -53,8 +53,6 @@ function NOP:PLAYER_LOGIN() -- player entering game
     self.printt("|cFFFF0000" .. private.NOP_TITLE .. " " .. private.NOP_VERSION)
     NOP.DB["version"] = private.NOP_VERSION
   end
-  local Masque = LibStub("Masque", true)
-  self.masque = Masque and Masque:Group(ADDON) -- when user has installed Masque addon, then skinnig is done by Masque
   self:ButtonLoad() -- create button
   self:QBAnchor() -- create quest bar
   self.spellLoadRetry = private.LOAD_RETRY; self:SpellLoad() -- create spell patterns

@@ -10,9 +10,9 @@ OneRing_Config = {
 			["RingAtMouse"] = true,
 			["Bindings"] = {
 				["LoneWolf"] = "ALT-4",
-				["Utility"] = "ALT-R",
-				["RaidSymbols"] = false,
 				["WorldMarkers"] = "ALT-2",
+				["RaidSymbols"] = false,
+				["Utility"] = "ALT-R",
 			},
 			["ShowCooldowns"] = true,
 			["HideStanceBar"] = true,
@@ -68,10 +68,10 @@ OneRing_Config = {
 					["id"] = 982,
 					["sliceToken"] = "ABueiymANBe",
 				}, -- [11]
-				["hotkey"] = "ALT-4",
-				["save"] = true,
-				["limit"] = "Danoh-Stormrage",
 				["name"] = "Lone Wolf",
+				["save"] = true,
+				["hotkey"] = "ALT-4",
+				["limit"] = "Danoh-Stormrage",
 			},
 			["OPieFlagStore"] = {
 				["FlushedDefaultColors"] = true,
@@ -91,13 +91,13 @@ OneRing_Config = {
 					["id"] = 195128,
 				}, -- [3]
 				{
-					["show"] = "[spec:252/251/250] hide;",
 					["sliceToken"] = "ABue2C/V=/er",
 					["id"] = 51005,
+					["show"] = "[spec:252/251/250] hide;",
 				}, -- [4]
 				{
-					["id"] = 195127,
 					["sliceToken"] = "ABue2C/V=/ee",
+					["id"] = 195127,
 				}, -- [5]
 				{
 					["show"] = "[spec:261/260/259] hide;",
@@ -105,59 +105,63 @@ OneRing_Config = {
 					["id"] = 195097,
 				}, -- [6]
 				{
-					["show"] = "[spec:252/251/250] hide;",
+					["id"] = 156606,
+					["sliceToken"] = "ABue2/EvAHr",
+				}, -- [7]
+				{
 					["sliceToken"] = "ABue2C/V=/ew",
 					["id"] = 195115,
-				}, -- [7]
+					["show"] = "[spec:252/251/250] hide;",
+				}, -- [8]
 				{
 					"item", -- [1]
 					127848, -- [2]
 					["sliceToken"] = "ABue2C/V=/eq",
-				}, -- [8]
+				}, -- [9]
 				{
 					"item", -- [1]
 					118922, -- [2]
 					["sliceToken"] = "ABue2C/V=/wM",
-				}, -- [9]
+				}, -- [10]
 				{
 					"item", -- [1]
 					133570, -- [2]
 					["sliceToken"] = "ABue2VZFuIy",
-				}, -- [10]
+				}, -- [11]
 				{
 					"item", -- [1]
 					140587, -- [2]
-					["show"] = "[nocombat]",
 					["sliceToken"] = "ABue2C/V=/wB",
-				}, -- [11]
+					["show"] = "[nocombat]",
+				}, -- [12]
 				{
 					"item", -- [1]
 					141446, -- [2]
 					["sliceToken"] = "ABue2C/V=/w/",
-				}, -- [12]
-				{
-					["show"] = "[spec:252/251/250] hide;",
-					["sliceToken"] = "ABue2C/V=/ea",
-					["id"] = 2823,
 				}, -- [13]
 				{
+					["sliceToken"] = "ABue2C/V=/ea",
+					["id"] = 2823,
 					["show"] = "[spec:252/251/250] hide;",
-					["sliceToken"] = "ABue2C/V=/ep",
-					["id"] = 3408,
 				}, -- [14]
 				{
-					["show"] = "[spec:252/250/251] hide;",
-					["sliceToken"] = "ABue2C/V=/eo",
-					["id"] = 8679,
+					["sliceToken"] = "ABue2C/V=/ep",
+					["id"] = 3408,
+					["show"] = "[spec:252/251/250] hide;",
 				}, -- [15]
 				{
-					["show"] = "[spec:261/260] hide;",
+					["sliceToken"] = "ABue2C/V=/eo",
+					["id"] = 8679,
+					["show"] = "[spec:252/250/251] hide;",
+				}, -- [16]
+				{
 					["sliceToken"] = "ABue2VZFuI4",
 					["id"] = 200802,
-				}, -- [16]
-				["hotkey"] = "ALT-R",
-				["save"] = true,
+					["show"] = "[spec:261/260] hide;",
+				}, -- [17]
 				["name"] = "Utility",
+				["save"] = true,
+				["hotkey"] = "ALT-R",
 			},
 		},
 	},

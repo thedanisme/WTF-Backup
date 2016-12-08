@@ -33,6 +33,7 @@ VER 3 010000000000000C "Ring+Vendetta" "INV_Misc_QuestionMark"
 /use 14
 /use 13
 /use Vendetta
+/use Shadow Blades
 END
 VER 3 0100000000000006 "Riposte" "INV_Misc_QuestionMark"
 #showtooltip Riposte

@@ -56,39 +56,39 @@ function NOP:QBButton(i, p) -- create new quest bar button
     return bt
   end
   local name = private.QB_NAME..i
-  local bt = CreateFrame("Button", name, p, "SecureActionButtonTemplate")
+  local bt = CreateFrame("Button", name, p, "SecureActionButtonTemplate, ActionButtonTemplate") -- old type"SecureActionButtonTemplate")
   self:QBButtonSize(bt)
   self:ButtonBackdrop(bt)
   bt:RegisterForClicks("AnyUp") -- act on key release 
   bt:SetScript("OnEnter",  function(self) NOP:QBOnEnter(self) end)
   bt:SetScript("OnLeave",  function(self) NOP:QBOnLeave(self) end)
   bt:SetScript("PostClick",function(self,mouse) NOP:QBPostClick(self,mouse) end)
-  bt.icon = bt:CreateTexture(name.."Icon","BORDER")
-  bt.icon:SetAllPoints()
-  bt.cooldown = CreateFrame("Cooldown", name.."Cooldown", bt, "CooldownFrameTemplate")
-  bt.cooldown:SetAllPoints()
+  -- bt.icon = bt:CreateTexture(name.."Icon","BORDER")
+  -- bt.icon:SetAllPoints()
+  -- bt.cooldown = CreateFrame("Cooldown", name.."Cooldown", bt, "CooldownFrameTemplate")
+  -- bt.cooldown:SetAllPoints()
   --bt.cooldown:SetHideCountdownNumbers(true) -- hide text
   --bt.timer = bt:CreateFontString(name.."Timer", 'OVERLAY', private.ICON_TEXT)
   --bt.timer:ClearAllPoints()
   --bt.timer:SetPoint('BOTTOMLEFT',bt,'BOTTOMLEFT', 2, 2)
-  bt.hotkey = bt:CreateFontString(name.."HotKey", "OVERLAY", private.ICON_TEXT)
-  bt.hotkey:SetWidth(bt:GetWidth()-1)
-  bt.hotkey:ClearAllPoints()
-  bt.hotkey:SetPoint("TOPRIGHT", bt, "TOPRIGHT", 0, 0)
-  bt.hotkey:SetJustifyH("RIGHT")
-  bt.count = bt:CreateFontString(name.."Count", "OVERLAY", private.ICON_TEXT)
-  bt.count:ClearAllPoints()
-  bt.count:SetPoint("BOTTOMRIGHT", bt.icon, -1, 1)
-  bt.flash = bt:CreateTexture(name.."Flash", "OVERLAY")
-  bt.flash:Hide()
+  -- bt.hotkey = bt:CreateFontString(name.."HotKey", "OVERLAY", private.ICON_TEXT)
+  -- bt.hotkey:SetWidth(bt:GetWidth()-1)
+  -- bt.hotkey:ClearAllPoints()
+  -- bt.hotkey:SetPoint("TOPRIGHT", bt, "TOPRIGHT", 0, 0)
+  -- bt.hotkey:SetJustifyH("RIGHT")
+  -- bt.count = bt:CreateFontString(name.."Count", "OVERLAY", private.ICON_TEXT)
+  -- bt.count:ClearAllPoints()
+  -- bt.count:SetPoint("BOTTOMRIGHT", bt.icon, -1, 1)
+  -- bt.flash = bt:CreateTexture(name.."Flash", "OVERLAY")
+  -- bt.flash:Hide()
   bt.questMark = bt:CreateTexture(name.."Quest", "OVERLAY")
   bt.questMark:SetTexture(private.QUEST_ICON);
   bt.questMark:SetTexCoord(0.125, 0.250, 0.125, 0.250);
   bt.questMark:SetAllPoints()
   bt.questMark:Hide()
-  bt.normal = bt:CreateTexture(name.."NormalTexture", nil)
-  bt.normal:Hide() -- hide overlay
-  bt.normal:SetAlpha(0) -- kill transparency
+  -- bt.normal = bt:CreateTexture(name.."NormalTexture", nil)
+  -- bt.normal:Hide() -- hide overlay
+  -- bt.normal:SetAlpha(0) -- kill transparency
   self:ButtonStore(bt)
   self:ButtonSkin(bt,NOP.DB.skinButton)
   p.buttons[i] = bt -- store button ref to anchor frame

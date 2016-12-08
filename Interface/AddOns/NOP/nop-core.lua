@@ -15,6 +15,10 @@ function NOP:OnInitialize() -- app initialize
   self.itemFrame = self:TooltipCreate(private.TOOLTIP_ITEM)
   self.spellFrame = self:TooltipCreate(private.TOOLTIP_SPELL) -- /run NOP.spellFrame = NOP:TooltipCreate("NOP_TOOLTIP_SPELL")
 end
+function NOP:OnEnable()
+  local Masque = LibStub("Masque", true)
+  self.masque = Masque and Masque:Group(ADDON) -- when user has installed Masque addon, then skinnig is done by Masque
+end
 function NOP:TooltipCreate(name) -- create tooltip frame
   local frame
   if _G[name] and _G[name].SetOwner then -- test if frame exist, workaround for broken tooltip, no need create new tooltip frame, reuse old one

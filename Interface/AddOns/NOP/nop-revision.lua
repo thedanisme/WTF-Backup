@@ -1,4 +1,11 @@
 -- Revisions:
+--[[<p>07.00 07.12.2016</p>
+<ul>
+<li>Fix Masque support. Masque group is created in OnEnable(), and buttons on PLAYER_LOGIN event and later.</li>
+<li>Quest buttons and Item button now have identical "SecureActionButtonTemplate, ActionButtonTemplate" frame class.</li>
+<li>New mayor release.</li>
+</ul>
+]]
 --[[<p>06.28 07.12.2016</p>
 <ul>
 <li>Added Order Resources Cache.</li>

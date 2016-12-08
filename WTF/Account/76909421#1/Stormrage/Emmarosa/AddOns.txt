@@ -230,3 +230,4 @@ TradeSkillMaster_Mailing: disabled
 TradeSkillMaster_Shopping: disabled
 TradeSkillMaster_Vendoring: disabled
 TradeSkillMaster_Warehousing: disabled
+Simulationcraft: enabled
