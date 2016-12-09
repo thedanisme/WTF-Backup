@@ -20,6 +20,25 @@ local plugin_version = "v2.5"
 
 local function CreatePluginFrames (data)
 
+	ChartViewerWindowFrame:SetBackdrop (_detalhes.PluginDefaults and _detalhes.PluginDefaults.Backdrop or {bgFile = "Interface\\Tooltips\\UI-Tooltip-Background", tile = true, tileSize = 16,
+	edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize = 1,
+	insets = {left = 1, right = 1, top = 1, bottom = 1}})
+	ChartViewerWindowFrame:SetBackdropColor (unpack (_detalhes.PluginDefaults and _detalhes.PluginDefaults.BackdropColor or {0, 0, 0, .6}))
+	ChartViewerWindowFrame:SetBackdropBorderColor (unpack (_detalhes.PluginDefaults and _detalhes.PluginDefaults.BackdropBorderColor or {0, 0, 0, 1}))
+
+	local c = CreateFrame ("Button", nil, ChartViewerWindowFrame, "UIPanelCloseButton")
+	c:SetWidth (32)
+	c:SetHeight (32)
+	c:SetPoint ("TOPRIGHT", ChartViewerWindowFrame, "TOPRIGHT", -3, -8)
+	c:SetFrameLevel (ChartViewerWindowFrame:GetFrameLevel()+1)
+	c:GetNormalTexture():SetDesaturated (true)
+	c:SetAlpha (0.5)
+	
+	
+	local title = _detalhes.gump:NewLabel (ChartViewerWindowFrame, nil, "$parentTitle", nil, "Chart Viewer", nil, 20, "yellow")
+	title:SetPoint (12, -13)
+	_detalhes.gump:SetFontOutline (title, true)
+
 	function ChartViewer:OnDetailsEvent (event)
 
 		if (event == "HIDE") then
@@ -148,9 +167,9 @@ function ChartViewer:CheckFor_CreateNewTabForCombat()
 
 	end
 end
-
+		
 ----------> Tabs
-	
+		
 	--new tab
 		ChartViewer.tab_prototype = {name = "New Tab", segment_type = 1, data = "", texture = "line", version = "v2.0"}
 		
@@ -481,6 +500,10 @@ end
 				edgeFile = "Interface\\DialogFrame\\UI-DialogBox-gold-Border", tile = true, tileSize = 16, edgeSize = 5,
 				insets = {left = 1, right = 1, top = 0, bottom = 1},})
 		
+		--
+
+		--
+		
 		local g = chart_panel
 		
 		g:Reset()
@@ -532,7 +555,7 @@ end
 			local boss_id = combat.is_boss and combat.is_boss.id
 			
 			if (capture_name:find ("MULTICHARTS~") and tab_type == 1 and elapsed_time > 12) then --current
-				-- várias charts setadas no valor
+				-- vï¿½rias charts setadas no valor
 				local charts = {}
 				for key in capture_name:gsub ("MULTICHARTS~", ""):gmatch ("[^%~]+") do 
 					charts [key] = true
@@ -558,7 +581,7 @@ end
 			
 			elseif (capture_name:find ("PRESET_") and tab_type == 1 and elapsed_time > 12) then --current
 			
-				-- é um preset e precisa pegar todos os presets registrados no combate desse tipo
+				-- ï¿½ um preset e precisa pegar todos os presets registrados no combate desse tipo
 				local i = 1
 				for name, t in pairs (combat.TimeData) do
 					if (name:find (capture_name) and t.max_value and t.max_value > 0) then
@@ -825,7 +848,7 @@ local create_add_tab_button = function()
 	button:SetTextColor (1, 0.93, 0.74)
 	--button:SetIcon ([[Interface\Buttons\UI-OptionsButton]], 14, 14, nil, {0, 1, 0, 1}, nil, 3)
 	button:SetIcon ([[Interface\PaperDollInfoFrame\Character-Plus]], 14, 14, nil, {0, 1, 0, 1}, nil, 3)
-	button:SetPoint ("topright", ChartViewerWindowFrame, "topright", -10, -45)
+	button:SetPoint ("topright", ChartViewerWindowFrame, "topright", -30, -45)
 	
 	ChartViewer.NewTabButton = button
 	

@@ -1,11 +1,4 @@
 Version: 1
-Frame: TomTomCrazyArrow
-FrameLevel: 1
-Anchor: RIGHT
-X: -386
-Y: -101
-W: 56
-H: 42
 Frame: ItemRefTooltip
 FrameLevel: 1
 Anchor: CENTER
@@ -50,9 +43,9 @@ W: 26
 H: 26
 Frame: DugisArrowFrame
 FrameLevel: 1
-Anchor: RIGHT
-X: -456
-Y: 238
+Anchor: CENTER
+X: 400
+Y: 16
 W: 80
 H: 60
 Frame: EventTrackerFrame
@@ -62,3 +55,10 @@ X: -83
 Y: 108
 W: 700
 H: 410
+Frame: TomTomCrazyArrow
+FrameLevel: 1
+Anchor: RIGHT
+X: -386
+Y: -101
+W: 56
+H: 42

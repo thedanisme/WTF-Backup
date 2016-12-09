@@ -1537,12 +1537,12 @@ xCTSavedDB = {
 						["class"] = "MONK",
 						["desc"] = 269,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -1621,12 +1621,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[156287] = {
 						["enabled"] = true,
@@ -1663,12 +1663,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -2615,12 +2615,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[227681] = {
 						["enabled"] = true,
@@ -6562,12 +6562,12 @@ xCTSavedDB = {
 						["class"] = "WARRIOR",
 						["desc"] = 72,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -6597,12 +6597,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[227681] = {
 						["enabled"] = true,
@@ -6646,12 +6646,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[146067] = {
 						["enabled"] = true,
@@ -6688,12 +6688,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -10183,12 +10183,12 @@ xCTSavedDB = {
 						["class"] = "WARRIOR",
 						["desc"] = 72,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -10218,12 +10218,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[227681] = {
 						["enabled"] = true,
@@ -10267,12 +10267,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[146067] = {
 						["enabled"] = true,
@@ -10309,12 +10309,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -21044,12 +21044,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Healing (Priest, Paladin)",
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -21128,12 +21128,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[156287] = {
 						["enabled"] = true,
@@ -21170,12 +21170,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 66,
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -22122,12 +22122,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[185779] = {
 						["enabled"] = true,
@@ -23990,12 +23990,12 @@ xCTSavedDB = {
 						["class"] = "MONK",
 						["desc"] = 269,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -24074,12 +24074,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[156287] = {
 						["enabled"] = true,
@@ -24116,12 +24116,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -25068,12 +25068,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[227681] = {
 						["enabled"] = true,
@@ -25980,569 +25980,6 @@ xCTSavedDB = {
 			["dbVersion"] = "4.2.3",
 		},
 		["Oenta - Stormrage"] = {
-			["spells"] = {
-				["formatGroups"] = false,
-				["formatAbbreviate"] = true,
-			},
-			["frames"] = {
-				["general"] = {
-					["font"] = "Friz Quadrata TT",
-					["enabledFrame"] = false,
-					["colors"] = {
-						["dispells"] = {
-							["colors"] = {
-								["dispellBuffs"] = {
-									["color"] = {
-										0, -- [1]
-										1, -- [2]
-										0.5, -- [3]
-									},
-								},
-								["dispellStolen"] = {
-									["color"] = {
-										0.31, -- [1]
-										0.71, -- [2]
-										1, -- [3]
-									},
-								},
-								["dispellDebuffs"] = {
-									["color"] = {
-										1, -- [1]
-										0, -- [2]
-										0.5, -- [3]
-									},
-								},
-							},
-						},
-						["lowResources"] = {
-							["colors"] = {
-								["lowResourcesMana"] = {
-									["color"] = {
-										1, -- [1]
-										0.1, -- [2]
-										0.1, -- [3]
-									},
-								},
-								["lowResourcesHealth"] = {
-									["color"] = {
-										1, -- [1]
-										0.1, -- [2]
-										0.1, -- [3]
-									},
-								},
-							},
-						},
-						["combat"] = {
-							["colors"] = {
-								["combatLeaving"] = {
-									["color"] = {
-										0.1, -- [1]
-										1, -- [2]
-										0.1, -- [3]
-									},
-								},
-								["combatEntering"] = {
-									["color"] = {
-										1, -- [1]
-										0.1, -- [2]
-										0.1, -- [3]
-									},
-								},
-							},
-						},
-						["interrupts"] = {
-							["color"] = {
-								1, -- [1]
-								0.5, -- [2]
-								0, -- [3]
-							},
-						},
-						["reputation"] = {
-							["colors"] = {
-								["reputationGain"] = {
-									["color"] = {
-										0.1, -- [1]
-										0.1, -- [2]
-										1, -- [3]
-									},
-								},
-								["reputationLoss"] = {
-									["color"] = {
-										1, -- [1]
-										0.1, -- [2]
-										0.1, -- [3]
-									},
-								},
-							},
-						},
-						["killingBlow"] = {
-							["color"] = {
-								0.2, -- [1]
-								1, -- [2]
-								0.2, -- [3]
-							},
-						},
-						["honorGains"] = {
-							["color"] = {
-								0.1, -- [1]
-								0.1, -- [2]
-								1, -- [3]
-							},
-						},
-						["auras"] = {
-							["colors"] = {
-								["debuffsGained"] = {
-									["color"] = {
-										1, -- [1]
-										0.1, -- [2]
-										0.1, -- [3]
-									},
-								},
-								["buffsGained"] = {
-									["color"] = {
-										1, -- [1]
-										0.5, -- [2]
-										0.5, -- [3]
-									},
-								},
-								["buffsFaded"] = {
-									["color"] = {
-										0.5, -- [1]
-										0.5, -- [2]
-										0.5, -- [3]
-									},
-								},
-								["debuffsFaded"] = {
-									["color"] = {
-										0.5, -- [1]
-										0.5, -- [2]
-										0.5, -- [3]
-									},
-								},
-							},
-						},
-					},
-				},
-				["power"] = {
-					["font"] = "Friz Quadrata TT",
-					["enabledFrame"] = false,
-					["colors"] = {
-						["color_SOUL_SHARDS"] = {
-							["color"] = {
-								0.5, -- [1]
-								0.32, -- [2]
-								0.55, -- [3]
-							},
-						},
-						["color_ALTERNATE_POWER"] = {
-							["color"] = {
-							},
-						},
-						["color_HOLY_POWER"] = {
-							["color"] = {
-								0.95, -- [1]
-								0.9, -- [2]
-								0.6, -- [3]
-							},
-						},
-						["color_MANA"] = {
-							["color"] = {
-								0, -- [1]
-								0, -- [2]
-								1, -- [3]
-							},
-						},
-						["color_LUNAR_POWER"] = {
-							["color"] = {
-								0.3, -- [1]
-								0.52, -- [2]
-								0.9, -- [3]
-							},
-						},
-						["color_FOCUS"] = {
-							["color"] = {
-								1, -- [1]
-								0.5, -- [2]
-								0.25, -- [3]
-							},
-						},
-						["color_FURY"] = {
-							["color"] = {
-							},
-						},
-						["color_CHI"] = {
-							["color"] = {
-								0.71, -- [1]
-								1, -- [2]
-								0.92, -- [3]
-							},
-						},
-						["color_ENERGY"] = {
-							["color"] = {
-								1, -- [1]
-								1, -- [2]
-								0, -- [3]
-							},
-						},
-						["color_ARCANE_CHARGES"] = {
-							["color"] = {
-								0.1, -- [1]
-								0.1, -- [2]
-								0.98, -- [3]
-							},
-						},
-						["color_RAGE"] = {
-							["color"] = {
-								1, -- [1]
-								0, -- [2]
-								0, -- [3]
-							},
-						},
-						["color_INSANITY"] = {
-							["color"] = {
-								0.4, -- [1]
-								0, -- [2]
-								0.8, -- [3]
-							},
-						},
-						["color_RUNIC_POWER"] = {
-							["color"] = {
-								0, -- [1]
-								0.82, -- [2]
-								1, -- [3]
-							},
-						},
-						["color_PAIN"] = {
-							["color"] = {
-							},
-						},
-						["color_RUNES"] = {
-							["color"] = {
-								0.5, -- [1]
-								0.5, -- [2]
-								0.5, -- [3]
-							},
-						},
-						["color_MAELSTROM"] = {
-							["color"] = {
-								0, -- [1]
-								0.5, -- [2]
-								1, -- [3]
-							},
-						},
-					},
-				},
-				["healing"] = {
-					["alpha"] = 50,
-					["Width"] = 150,
-					["Y"] = -93,
-					["font"] = "Friz Quadrata TT",
-					["colors"] = {
-						["healingTakenCritical"] = {
-							["color"] = {
-								0.1, -- [1]
-								1, -- [2]
-								0.1, -- [3]
-							},
-						},
-						["healingTaken"] = {
-							["color"] = {
-								0.1, -- [1]
-								0.75, -- [2]
-								0.1, -- [3]
-							},
-						},
-						["healingTakenPeriodic"] = {
-							["color"] = {
-								0.1, -- [1]
-								0.5, -- [2]
-								0.1, -- [3]
-							},
-						},
-						["shieldTaken"] = {
-							["color"] = {
-								0.6, -- [1]
-								0.65, -- [2]
-								1, -- [3]
-							},
-						},
-						["healingTakenPeriodicCritical"] = {
-							["color"] = {
-								0.1, -- [1]
-								0.5, -- [2]
-								0.1, -- [3]
-							},
-						},
-					},
-					["Height"] = 150,
-					["X"] = -419,
-				},
-				["outgoing"] = {
-					["Width"] = 150,
-					["font"] = "Friz Quadrata TT",
-					["alpha"] = 50,
-					["Y"] = -202,
-					["X"] = 405,
-					["colors"] = {
-						["healingSpells"] = {
-							["colors"] = {
-								["healingOutPeriodic"] = {
-									["color"] = {
-										0.1, -- [1]
-										0.5, -- [2]
-										0.1, -- [3]
-									},
-								},
-								["shieldOut"] = {
-									["color"] = {
-										0.6, -- [1]
-										0.65, -- [2]
-										1, -- [3]
-									},
-								},
-								["healingOut"] = {
-									["color"] = {
-										0.1, -- [1]
-										0.75, -- [2]
-										0.1, -- [3]
-									},
-								},
-							},
-						},
-						["misstypesOut"] = {
-							["color"] = {
-								0.5, -- [1]
-								0.5, -- [2]
-								0.5, -- [3]
-							},
-						},
-						["genericDamage"] = {
-							["color"] = {
-								1, -- [1]
-								0.82, -- [2]
-								0, -- [3]
-							},
-						},
-					},
-					["Height"] = 250,
-				},
-				["critical"] = {
-					["Width"] = 150,
-					["Y"] = -7,
-					["font"] = "Friz Quadrata TT",
-					["colors"] = {
-						["genericDamageCritical"] = {
-							["color"] = {
-								1, -- [1]
-								1, -- [2]
-								0, -- [3]
-							},
-						},
-						["healingSpells"] = {
-							["colors"] = {
-								["healingOutCritical"] = {
-									["color"] = {
-										0.1, -- [1]
-										1, -- [2]
-										0.1, -- [3]
-									},
-								},
-							},
-						},
-					},
-					["alpha"] = 50,
-					["X"] = 553,
-				},
-				["procs"] = {
-					["alpha"] = 50,
-					["Y"] = 287,
-					["font"] = "Friz Quadrata TT",
-					["colors"] = {
-						["spellReactive"] = {
-							["color"] = {
-								1, -- [1]
-								0.82, -- [2]
-								0, -- [3]
-							},
-						},
-						["spellProc"] = {
-							["color"] = {
-								1, -- [1]
-								0.82, -- [2]
-								0, -- [3]
-							},
-						},
-					},
-				},
-				["loot"] = {
-					["font"] = "Friz Quadrata TT",
-					["alpha"] = 50,
-					["Y"] = 476,
-				},
-				["class"] = {
-					["font"] = "Friz Quadrata TT",
-					["colors"] = {
-						["comboPoints"] = {
-							["color"] = {
-								1, -- [1]
-								0.82, -- [2]
-								0, -- [3]
-							},
-						},
-						["comboPointsMax"] = {
-							["color"] = {
-								0, -- [1]
-								0.82, -- [2]
-								1, -- [3]
-							},
-						},
-					},
-					["enabledFrame"] = false,
-				},
-				["damage"] = {
-					["Width"] = 150,
-					["font"] = "Friz Quadrata TT",
-					["names"] = {
-						["NPC"] = {
-							["nameType"] = 0,
-						},
-					},
-					["alpha"] = 50,
-					["Y"] = -251,
-					["X"] = -418,
-					["colors"] = {
-						["missTypesTaken"] = {
-							["colors"] = {
-								["missTypeBlock"] = {
-									["color"] = {
-										0.5, -- [1]
-										0.5, -- [2]
-										0.5, -- [3]
-									},
-								},
-								["missTypeMiss"] = {
-									["color"] = {
-										0.5, -- [1]
-										0.5, -- [2]
-										0.5, -- [3]
-									},
-								},
-								["missTypeImmune"] = {
-									["color"] = {
-										0.5, -- [1]
-										0.5, -- [2]
-										0.5, -- [3]
-									},
-								},
-								["missTypeReflect"] = {
-									["color"] = {
-										0.5, -- [1]
-										0.5, -- [2]
-										0.5, -- [3]
-									},
-								},
-								["missTypeParry"] = {
-									["color"] = {
-										0.5, -- [1]
-										0.5, -- [2]
-										0.5, -- [3]
-									},
-								},
-								["missTypeEvade"] = {
-									["color"] = {
-										0.5, -- [1]
-										0.5, -- [2]
-										0.5, -- [3]
-									},
-								},
-								["missTypeResist"] = {
-									["color"] = {
-										0.5, -- [1]
-										0.5, -- [2]
-										0.5, -- [3]
-									},
-								},
-								["missTypeAbsorb"] = {
-									["color"] = {
-										0.5, -- [1]
-										0.5, -- [2]
-										0.5, -- [3]
-									},
-								},
-								["missTypeDeflect"] = {
-									["color"] = {
-										0.5, -- [1]
-										0.5, -- [2]
-										0.5, -- [3]
-									},
-								},
-								["missTypeDodge"] = {
-									["color"] = {
-										0.5, -- [1]
-										0.5, -- [2]
-										0.5, -- [3]
-									},
-								},
-							},
-						},
-						["damageTakenCritical"] = {
-							["color"] = {
-								1, -- [1]
-								0.1, -- [2]
-								0.1, -- [3]
-							},
-						},
-						["spellDamageTaken"] = {
-							["color"] = {
-								0.75, -- [1]
-								0.3, -- [2]
-								0.85, -- [3]
-							},
-						},
-						["spellDamageTakenCritical"] = {
-							["color"] = {
-								0.75, -- [1]
-								0.3, -- [2]
-								0.85, -- [3]
-							},
-						},
-						["damageTaken"] = {
-							["color"] = {
-								0.75, -- [1]
-								0.1, -- [2]
-								0.1, -- [3]
-							},
-						},
-						["missTypesTakenPartial"] = {
-							["colors"] = {
-								["missTypeBlockPartial"] = {
-									["color"] = {
-										0.75, -- [1]
-										0.5, -- [2]
-										0.5, -- [3]
-									},
-								},
-								["missTypeResistPartial"] = {
-									["color"] = {
-										0.75, -- [1]
-										0.5, -- [2]
-										0.5, -- [3]
-									},
-								},
-								["missTypeAbsorbPartial"] = {
-									["color"] = {
-										0.75, -- [1]
-										0.5, -- [2]
-										0.5, -- [3]
-									},
-								},
-							},
-						},
-					},
-					["Height"] = 150,
-				},
-			},
-			["dbVersion"] = "4.3.0 Beta 9",
 			["SpellColors"] = {
 				["10"] = {
 					["color"] = {
@@ -26767,6 +26204,569 @@ xCTSavedDB = {
 						0.7, -- [2]
 						1, -- [3]
 					},
+				},
+			},
+			["dbVersion"] = "4.3.0 Beta 9",
+			["spells"] = {
+				["formatGroups"] = false,
+				["formatAbbreviate"] = true,
+			},
+			["frames"] = {
+				["general"] = {
+					["font"] = "Friz Quadrata TT",
+					["colors"] = {
+						["dispells"] = {
+							["colors"] = {
+								["dispellBuffs"] = {
+									["color"] = {
+										0, -- [1]
+										1, -- [2]
+										0.5, -- [3]
+									},
+								},
+								["dispellStolen"] = {
+									["color"] = {
+										0.31, -- [1]
+										0.71, -- [2]
+										1, -- [3]
+									},
+								},
+								["dispellDebuffs"] = {
+									["color"] = {
+										1, -- [1]
+										0, -- [2]
+										0.5, -- [3]
+									},
+								},
+							},
+						},
+						["lowResources"] = {
+							["colors"] = {
+								["lowResourcesMana"] = {
+									["color"] = {
+										1, -- [1]
+										0.1, -- [2]
+										0.1, -- [3]
+									},
+								},
+								["lowResourcesHealth"] = {
+									["color"] = {
+										1, -- [1]
+										0.1, -- [2]
+										0.1, -- [3]
+									},
+								},
+							},
+						},
+						["combat"] = {
+							["colors"] = {
+								["combatLeaving"] = {
+									["color"] = {
+										0.1, -- [1]
+										1, -- [2]
+										0.1, -- [3]
+									},
+								},
+								["combatEntering"] = {
+									["color"] = {
+										1, -- [1]
+										0.1, -- [2]
+										0.1, -- [3]
+									},
+								},
+							},
+						},
+						["interrupts"] = {
+							["color"] = {
+								1, -- [1]
+								0.5, -- [2]
+								0, -- [3]
+							},
+						},
+						["reputation"] = {
+							["colors"] = {
+								["reputationGain"] = {
+									["color"] = {
+										0.1, -- [1]
+										0.1, -- [2]
+										1, -- [3]
+									},
+								},
+								["reputationLoss"] = {
+									["color"] = {
+										1, -- [1]
+										0.1, -- [2]
+										0.1, -- [3]
+									},
+								},
+							},
+						},
+						["killingBlow"] = {
+							["color"] = {
+								0.2, -- [1]
+								1, -- [2]
+								0.2, -- [3]
+							},
+						},
+						["honorGains"] = {
+							["color"] = {
+								0.1, -- [1]
+								0.1, -- [2]
+								1, -- [3]
+							},
+						},
+						["auras"] = {
+							["colors"] = {
+								["debuffsGained"] = {
+									["color"] = {
+										1, -- [1]
+										0.1, -- [2]
+										0.1, -- [3]
+									},
+								},
+								["buffsGained"] = {
+									["color"] = {
+										1, -- [1]
+										0.5, -- [2]
+										0.5, -- [3]
+									},
+								},
+								["buffsFaded"] = {
+									["color"] = {
+										0.5, -- [1]
+										0.5, -- [2]
+										0.5, -- [3]
+									},
+								},
+								["debuffsFaded"] = {
+									["color"] = {
+										0.5, -- [1]
+										0.5, -- [2]
+										0.5, -- [3]
+									},
+								},
+							},
+						},
+					},
+					["enabledFrame"] = false,
+				},
+				["power"] = {
+					["font"] = "Friz Quadrata TT",
+					["colors"] = {
+						["color_SOUL_SHARDS"] = {
+							["color"] = {
+								0.5, -- [1]
+								0.32, -- [2]
+								0.55, -- [3]
+							},
+						},
+						["color_ALTERNATE_POWER"] = {
+							["color"] = {
+							},
+						},
+						["color_HOLY_POWER"] = {
+							["color"] = {
+								0.95, -- [1]
+								0.9, -- [2]
+								0.6, -- [3]
+							},
+						},
+						["color_MANA"] = {
+							["color"] = {
+								0, -- [1]
+								0, -- [2]
+								1, -- [3]
+							},
+						},
+						["color_LUNAR_POWER"] = {
+							["color"] = {
+								0.3, -- [1]
+								0.52, -- [2]
+								0.9, -- [3]
+							},
+						},
+						["color_FOCUS"] = {
+							["color"] = {
+								1, -- [1]
+								0.5, -- [2]
+								0.25, -- [3]
+							},
+						},
+						["color_FURY"] = {
+							["color"] = {
+							},
+						},
+						["color_CHI"] = {
+							["color"] = {
+								0.71, -- [1]
+								1, -- [2]
+								0.92, -- [3]
+							},
+						},
+						["color_ENERGY"] = {
+							["color"] = {
+								1, -- [1]
+								1, -- [2]
+								0, -- [3]
+							},
+						},
+						["color_ARCANE_CHARGES"] = {
+							["color"] = {
+								0.1, -- [1]
+								0.1, -- [2]
+								0.98, -- [3]
+							},
+						},
+						["color_RAGE"] = {
+							["color"] = {
+								1, -- [1]
+								0, -- [2]
+								0, -- [3]
+							},
+						},
+						["color_INSANITY"] = {
+							["color"] = {
+								0.4, -- [1]
+								0, -- [2]
+								0.8, -- [3]
+							},
+						},
+						["color_RUNIC_POWER"] = {
+							["color"] = {
+								0, -- [1]
+								0.82, -- [2]
+								1, -- [3]
+							},
+						},
+						["color_PAIN"] = {
+							["color"] = {
+							},
+						},
+						["color_RUNES"] = {
+							["color"] = {
+								0.5, -- [1]
+								0.5, -- [2]
+								0.5, -- [3]
+							},
+						},
+						["color_MAELSTROM"] = {
+							["color"] = {
+								0, -- [1]
+								0.5, -- [2]
+								1, -- [3]
+							},
+						},
+					},
+					["enabledFrame"] = false,
+				},
+				["healing"] = {
+					["Y"] = -93,
+					["font"] = "Friz Quadrata TT",
+					["colors"] = {
+						["healingTakenCritical"] = {
+							["color"] = {
+								0.1, -- [1]
+								1, -- [2]
+								0.1, -- [3]
+							},
+						},
+						["healingTaken"] = {
+							["color"] = {
+								0.1, -- [1]
+								0.75, -- [2]
+								0.1, -- [3]
+							},
+						},
+						["healingTakenPeriodic"] = {
+							["color"] = {
+								0.1, -- [1]
+								0.5, -- [2]
+								0.1, -- [3]
+							},
+						},
+						["shieldTaken"] = {
+							["color"] = {
+								0.6, -- [1]
+								0.65, -- [2]
+								1, -- [3]
+							},
+						},
+						["healingTakenPeriodicCritical"] = {
+							["color"] = {
+								0.1, -- [1]
+								0.5, -- [2]
+								0.1, -- [3]
+							},
+						},
+					},
+					["Height"] = 150,
+					["X"] = -419,
+					["alpha"] = 50,
+					["Width"] = 150,
+				},
+				["outgoing"] = {
+					["Y"] = -206,
+					["font"] = "Friz Quadrata TT",
+					["colors"] = {
+						["healingSpells"] = {
+							["colors"] = {
+								["healingOutPeriodic"] = {
+									["color"] = {
+										0.1, -- [1]
+										0.5, -- [2]
+										0.1, -- [3]
+									},
+								},
+								["shieldOut"] = {
+									["color"] = {
+										0.6, -- [1]
+										0.65, -- [2]
+										1, -- [3]
+									},
+								},
+								["healingOut"] = {
+									["color"] = {
+										0.1, -- [1]
+										0.75, -- [2]
+										0.1, -- [3]
+									},
+								},
+							},
+						},
+						["misstypesOut"] = {
+							["color"] = {
+								0.5, -- [1]
+								0.5, -- [2]
+								0.5, -- [3]
+							},
+						},
+						["genericDamage"] = {
+							["color"] = {
+								1, -- [1]
+								0.82, -- [2]
+								0, -- [3]
+							},
+						},
+					},
+					["Height"] = 250,
+					["X"] = 492,
+					["alpha"] = 50,
+					["Width"] = 150,
+				},
+				["critical"] = {
+					["Y"] = -7,
+					["font"] = "Friz Quadrata TT",
+					["colors"] = {
+						["genericDamageCritical"] = {
+							["color"] = {
+								1, -- [1]
+								1, -- [2]
+								0, -- [3]
+							},
+						},
+						["healingSpells"] = {
+							["colors"] = {
+								["healingOutCritical"] = {
+									["color"] = {
+										0.1, -- [1]
+										1, -- [2]
+										0.1, -- [3]
+									},
+								},
+							},
+						},
+					},
+					["X"] = 553,
+					["alpha"] = 50,
+					["Width"] = 150,
+				},
+				["procs"] = {
+					["Y"] = 287,
+					["font"] = "Friz Quadrata TT",
+					["alpha"] = 50,
+					["colors"] = {
+						["spellReactive"] = {
+							["color"] = {
+								1, -- [1]
+								0.82, -- [2]
+								0, -- [3]
+							},
+						},
+						["spellProc"] = {
+							["color"] = {
+								1, -- [1]
+								0.82, -- [2]
+								0, -- [3]
+							},
+						},
+					},
+				},
+				["loot"] = {
+					["Y"] = 476,
+					["font"] = "Friz Quadrata TT",
+					["alpha"] = 50,
+				},
+				["class"] = {
+					["font"] = "Friz Quadrata TT",
+					["colors"] = {
+						["comboPoints"] = {
+							["color"] = {
+								1, -- [1]
+								0.82, -- [2]
+								0, -- [3]
+							},
+						},
+						["comboPointsMax"] = {
+							["color"] = {
+								0, -- [1]
+								0.82, -- [2]
+								1, -- [3]
+							},
+						},
+					},
+					["enabledFrame"] = false,
+				},
+				["damage"] = {
+					["Y"] = -251,
+					["font"] = "Friz Quadrata TT",
+					["colors"] = {
+						["missTypesTaken"] = {
+							["colors"] = {
+								["missTypeBlock"] = {
+									["color"] = {
+										0.5, -- [1]
+										0.5, -- [2]
+										0.5, -- [3]
+									},
+								},
+								["missTypeMiss"] = {
+									["color"] = {
+										0.5, -- [1]
+										0.5, -- [2]
+										0.5, -- [3]
+									},
+								},
+								["missTypeImmune"] = {
+									["color"] = {
+										0.5, -- [1]
+										0.5, -- [2]
+										0.5, -- [3]
+									},
+								},
+								["missTypeReflect"] = {
+									["color"] = {
+										0.5, -- [1]
+										0.5, -- [2]
+										0.5, -- [3]
+									},
+								},
+								["missTypeParry"] = {
+									["color"] = {
+										0.5, -- [1]
+										0.5, -- [2]
+										0.5, -- [3]
+									},
+								},
+								["missTypeEvade"] = {
+									["color"] = {
+										0.5, -- [1]
+										0.5, -- [2]
+										0.5, -- [3]
+									},
+								},
+								["missTypeResist"] = {
+									["color"] = {
+										0.5, -- [1]
+										0.5, -- [2]
+										0.5, -- [3]
+									},
+								},
+								["missTypeAbsorb"] = {
+									["color"] = {
+										0.5, -- [1]
+										0.5, -- [2]
+										0.5, -- [3]
+									},
+								},
+								["missTypeDeflect"] = {
+									["color"] = {
+										0.5, -- [1]
+										0.5, -- [2]
+										0.5, -- [3]
+									},
+								},
+								["missTypeDodge"] = {
+									["color"] = {
+										0.5, -- [1]
+										0.5, -- [2]
+										0.5, -- [3]
+									},
+								},
+							},
+						},
+						["damageTakenCritical"] = {
+							["color"] = {
+								1, -- [1]
+								0.1, -- [2]
+								0.1, -- [3]
+							},
+						},
+						["spellDamageTaken"] = {
+							["color"] = {
+								0.75, -- [1]
+								0.3, -- [2]
+								0.85, -- [3]
+							},
+						},
+						["spellDamageTakenCritical"] = {
+							["color"] = {
+								0.75, -- [1]
+								0.3, -- [2]
+								0.85, -- [3]
+							},
+						},
+						["damageTaken"] = {
+							["color"] = {
+								0.75, -- [1]
+								0.1, -- [2]
+								0.1, -- [3]
+							},
+						},
+						["missTypesTakenPartial"] = {
+							["colors"] = {
+								["missTypeBlockPartial"] = {
+									["color"] = {
+										0.75, -- [1]
+										0.5, -- [2]
+										0.5, -- [3]
+									},
+								},
+								["missTypeResistPartial"] = {
+									["color"] = {
+										0.75, -- [1]
+										0.5, -- [2]
+										0.5, -- [3]
+									},
+								},
+								["missTypeAbsorbPartial"] = {
+									["color"] = {
+										0.75, -- [1]
+										0.5, -- [2]
+										0.5, -- [3]
+									},
+								},
+							},
+						},
+					},
+					["X"] = -418,
+					["Height"] = 150,
+					["names"] = {
+						["NPC"] = {
+							["nameType"] = 0,
+						},
+					},
+					["alpha"] = 50,
+					["Width"] = 150,
 				},
 			},
 			["frameSettings"] = {
@@ -30823,12 +30823,12 @@ xCTSavedDB = {
 						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Bodyguards)|r",
 						["desc"] = "Bodyguard: Vivianne",
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -30858,12 +30858,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[185779] = {
 						["enabled"] = true,
@@ -30907,12 +30907,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[146067] = {
 						["enabled"] = true,
@@ -30949,12 +30949,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 66,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -34313,12 +34313,12 @@ xCTSavedDB = {
 						["class"] = "WARRIOR",
 						["desc"] = 72,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -34348,12 +34348,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[227681] = {
 						["enabled"] = true,
@@ -34397,12 +34397,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[146067] = {
 						["enabled"] = true,
@@ -34439,12 +34439,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -37804,12 +37804,12 @@ xCTSavedDB = {
 						["class"] = "MONK",
 						["desc"] = 269,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -37888,12 +37888,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[156287] = {
 						["enabled"] = true,
@@ -37930,12 +37930,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -38882,12 +38882,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[227681] = {
 						["enabled"] = true,
@@ -39964,6 +39964,594 @@ xCTSavedDB = {
 			["dbVersion"] = "4.2.3",
 		},
 		["Chucklefunk - Stormrage"] = {
+			["spells"] = {
+				["formatGroups"] = false,
+				["formatAbbreviate"] = true,
+				["mergeDontMergeCriticals"] = false,
+				["mergeCriticalsByThemselves"] = true,
+			},
+			["frames"] = {
+				["general"] = {
+					["showPartyKills"] = false,
+					["showDebuffs"] = false,
+					["font"] = "Friz Quadrata TT",
+					["showBuffs"] = false,
+					["Y"] = 298,
+					["X"] = 3,
+					["colors"] = {
+						["auras"] = {
+							["colors"] = {
+								["debuffsGained"] = {
+									["color"] = {
+										1, -- [1]
+										0.1, -- [2]
+										0.1, -- [3]
+									},
+								},
+								["buffsGained"] = {
+									["color"] = {
+										1, -- [1]
+										0.5, -- [2]
+										0.5, -- [3]
+									},
+								},
+								["buffsFaded"] = {
+									["color"] = {
+										0.5, -- [1]
+										0.5, -- [2]
+										0.5, -- [3]
+									},
+								},
+								["debuffsFaded"] = {
+									["color"] = {
+										0.5, -- [1]
+										0.5, -- [2]
+										0.5, -- [3]
+									},
+								},
+							},
+						},
+						["killingBlow"] = {
+							["color"] = {
+								0.2, -- [1]
+								1, -- [2]
+								0.2, -- [3]
+							},
+						},
+						["combat"] = {
+							["colors"] = {
+								["combatLeaving"] = {
+									["color"] = {
+										0.1, -- [1]
+										1, -- [2]
+										0.1, -- [3]
+									},
+								},
+								["combatEntering"] = {
+									["color"] = {
+										1, -- [1]
+										0.1, -- [2]
+										0.1, -- [3]
+									},
+								},
+							},
+						},
+						["interrupts"] = {
+							["color"] = {
+								1, -- [1]
+								0.5, -- [2]
+								0, -- [3]
+							},
+						},
+						["reputation"] = {
+							["colors"] = {
+								["reputationGain"] = {
+									["color"] = {
+										0.1, -- [1]
+										0.1, -- [2]
+										1, -- [3]
+									},
+								},
+								["reputationLoss"] = {
+									["color"] = {
+										1, -- [1]
+										0.1, -- [2]
+										0.1, -- [3]
+									},
+								},
+							},
+						},
+						["lowResources"] = {
+							["colors"] = {
+								["lowResourcesMana"] = {
+									["color"] = {
+										1, -- [1]
+										0.1, -- [2]
+										0.1, -- [3]
+									},
+								},
+								["lowResourcesHealth"] = {
+									["color"] = {
+										1, -- [1]
+										0.1, -- [2]
+										0.1, -- [3]
+									},
+								},
+							},
+						},
+						["honorGains"] = {
+							["color"] = {
+								0.1, -- [1]
+								0.1, -- [2]
+								1, -- [3]
+							},
+						},
+						["dispells"] = {
+							["colors"] = {
+								["dispellBuffs"] = {
+									["color"] = {
+										0, -- [1]
+										1, -- [2]
+										0.5, -- [3]
+									},
+								},
+								["dispellStolen"] = {
+									["color"] = {
+										0.31, -- [1]
+										0.71, -- [2]
+										1, -- [3]
+									},
+								},
+								["dispellDebuffs"] = {
+									["color"] = {
+										1, -- [1]
+										0, -- [2]
+										0.5, -- [3]
+									},
+								},
+							},
+						},
+					},
+				},
+				["power"] = {
+					["font"] = "Friz Quadrata TT",
+					["enabledFrame"] = false,
+					["colors"] = {
+						["color_SOUL_SHARDS"] = {
+							["color"] = {
+								0.5, -- [1]
+								0.32, -- [2]
+								0.55, -- [3]
+							},
+						},
+						["color_MAELSTROM"] = {
+							["color"] = {
+								0, -- [1]
+								0.5, -- [2]
+								1, -- [3]
+							},
+						},
+						["color_HOLY_POWER"] = {
+							["color"] = {
+								0.95, -- [1]
+								0.9, -- [2]
+								0.6, -- [3]
+							},
+						},
+						["color_MANA"] = {
+							["color"] = {
+								0, -- [1]
+								0, -- [2]
+								1, -- [3]
+							},
+						},
+						["color_LUNAR_POWER"] = {
+							["color"] = {
+								0.3, -- [1]
+								0.52, -- [2]
+								0.9, -- [3]
+							},
+						},
+						["color_FOCUS"] = {
+							["color"] = {
+								1, -- [1]
+								0.5, -- [2]
+								0.25, -- [3]
+							},
+						},
+						["color_FURY"] = {
+							["color"] = {
+							},
+						},
+						["color_CHI"] = {
+							["color"] = {
+								0.71, -- [1]
+								1, -- [2]
+								0.92, -- [3]
+							},
+						},
+						["color_RUNES"] = {
+							["color"] = {
+								0.5, -- [1]
+								0.5, -- [2]
+								0.5, -- [3]
+							},
+						},
+						["color_ARCANE_CHARGES"] = {
+							["color"] = {
+								0.1, -- [1]
+								0.1, -- [2]
+								0.98, -- [3]
+							},
+						},
+						["color_RAGE"] = {
+							["color"] = {
+								1, -- [1]
+								0, -- [2]
+								0, -- [3]
+							},
+						},
+						["color_INSANITY"] = {
+							["color"] = {
+								0.4, -- [1]
+								0, -- [2]
+								0.8, -- [3]
+							},
+						},
+						["color_RUNIC_POWER"] = {
+							["color"] = {
+								0, -- [1]
+								0.82, -- [2]
+								1, -- [3]
+							},
+						},
+						["color_PAIN"] = {
+							["color"] = {
+							},
+						},
+						["color_ENERGY"] = {
+							["color"] = {
+								1, -- [1]
+								1, -- [2]
+								0, -- [3]
+							},
+						},
+						["color_ALTERNATE_POWER"] = {
+							["color"] = {
+							},
+						},
+					},
+				},
+				["healing"] = {
+					["names"] = {
+						["PLAYER"] = {
+							["nameType"] = 0,
+						},
+						["NPC"] = {
+							["nameType"] = 0,
+						},
+					},
+					["Width"] = 150,
+					["Y"] = -94,
+					["font"] = "Friz Quadrata TT",
+					["colors"] = {
+						["healingTakenCritical"] = {
+							["color"] = {
+								0.1, -- [1]
+								1, -- [2]
+								0.1, -- [3]
+							},
+						},
+						["healingTaken"] = {
+							["color"] = {
+								0.1, -- [1]
+								0.75, -- [2]
+								0.1, -- [3]
+							},
+						},
+						["healingTakenPeriodic"] = {
+							["color"] = {
+								0.1, -- [1]
+								0.5, -- [2]
+								0.1, -- [3]
+							},
+						},
+						["shieldTaken"] = {
+							["color"] = {
+								0.6, -- [1]
+								0.65, -- [2]
+								1, -- [3]
+							},
+						},
+						["healingTakenPeriodicCritical"] = {
+							["color"] = {
+								0.1, -- [1]
+								0.5, -- [2]
+								0.1, -- [3]
+							},
+						},
+					},
+					["Height"] = 150,
+					["X"] = -404,
+				},
+				["outgoing"] = {
+					["Width"] = 150,
+					["font"] = "Friz Quadrata TT",
+					["Y"] = -206,
+					["X"] = 405,
+					["colors"] = {
+						["healingSpells"] = {
+							["colors"] = {
+								["healingOut"] = {
+									["color"] = {
+										0.1, -- [1]
+										0.75, -- [2]
+										0.1, -- [3]
+									},
+								},
+								["shieldOut"] = {
+									["color"] = {
+										0.6, -- [1]
+										0.65, -- [2]
+										1, -- [3]
+									},
+								},
+								["healingOutPeriodic"] = {
+									["color"] = {
+										0.1, -- [1]
+										0.5, -- [2]
+										0.1, -- [3]
+									},
+								},
+							},
+						},
+						["genericDamage"] = {
+							["color"] = {
+								1, -- [1]
+								0.82, -- [2]
+								0, -- [3]
+							},
+						},
+						["misstypesOut"] = {
+							["color"] = {
+								0.5, -- [1]
+								0.5, -- [2]
+								0.5, -- [3]
+							},
+						},
+					},
+					["Height"] = 240,
+				},
+				["critical"] = {
+					["Y"] = -14,
+					["font"] = "Friz Quadrata TT",
+					["colors"] = {
+						["genericDamageCritical"] = {
+							["color"] = {
+								1, -- [1]
+								1, -- [2]
+								0, -- [3]
+							},
+						},
+						["healingSpells"] = {
+							["colors"] = {
+								["healingOutCritical"] = {
+									["color"] = {
+										0.1, -- [1]
+										1, -- [2]
+										0.1, -- [3]
+									},
+								},
+							},
+						},
+					},
+					["X"] = 458,
+				},
+				["procs"] = {
+					["Y"] = -510,
+					["font"] = "Friz Quadrata TT",
+					["colors"] = {
+						["spellReactive"] = {
+							["color"] = {
+								1, -- [1]
+								0.82, -- [2]
+								0, -- [3]
+							},
+						},
+						["spellProc"] = {
+							["color"] = {
+								1, -- [1]
+								0.82, -- [2]
+								0, -- [3]
+							},
+						},
+					},
+					["Height"] = 60,
+					["X"] = -10,
+				},
+				["loot"] = {
+					["Width"] = 400,
+					["font"] = "Friz Quadrata TT",
+					["Y"] = 463,
+					["X"] = 7,
+					["Height"] = 150,
+				},
+				["class"] = {
+					["font"] = "Friz Quadrata TT",
+					["colors"] = {
+						["comboPoints"] = {
+							["color"] = {
+								1, -- [1]
+								0.82, -- [2]
+								0, -- [3]
+							},
+						},
+						["comboPointsMax"] = {
+							["color"] = {
+								0, -- [1]
+								0.82, -- [2]
+								1, -- [3]
+							},
+						},
+					},
+					["enabledFrame"] = false,
+				},
+				["damage"] = {
+					["Width"] = 150,
+					["font"] = "Friz Quadrata TT",
+					["fontSize"] = 16,
+					["iconsEnabledAutoAttack"] = false,
+					["names"] = {
+						["PLAYER"] = {
+							["nameType"] = 0,
+						},
+						["NPC"] = {
+							["nameType"] = 0,
+						},
+						["ENVIRONMENT"] = {
+							["nameType"] = 3,
+						},
+					},
+					["iconsEnabled"] = false,
+					["Y"] = -249,
+					["X"] = -404,
+					["colors"] = {
+						["missTypesTaken"] = {
+							["colors"] = {
+								["missTypeBlock"] = {
+									["color"] = {
+										0.5, -- [1]
+										0.5, -- [2]
+										0.5, -- [3]
+									},
+								},
+								["missTypeMiss"] = {
+									["color"] = {
+										0.5, -- [1]
+										0.5, -- [2]
+										0.5, -- [3]
+									},
+								},
+								["missTypeDeflect"] = {
+									["color"] = {
+										0.5, -- [1]
+										0.5, -- [2]
+										0.5, -- [3]
+									},
+								},
+								["missTypeDodge"] = {
+									["color"] = {
+										0.5, -- [1]
+										0.5, -- [2]
+										0.5, -- [3]
+									},
+								},
+								["missTypeParry"] = {
+									["color"] = {
+										0.5, -- [1]
+										0.5, -- [2]
+										0.5, -- [3]
+									},
+								},
+								["missTypeResist"] = {
+									["color"] = {
+										0.5, -- [1]
+										0.5, -- [2]
+										0.5, -- [3]
+									},
+								},
+								["missTypeEvade"] = {
+									["color"] = {
+										0.5, -- [1]
+										0.5, -- [2]
+										0.5, -- [3]
+									},
+								},
+								["missTypeAbsorb"] = {
+									["color"] = {
+										0.5, -- [1]
+										0.5, -- [2]
+										0.5, -- [3]
+									},
+								},
+								["missTypeReflect"] = {
+									["color"] = {
+										0.5, -- [1]
+										0.5, -- [2]
+										0.5, -- [3]
+									},
+								},
+								["missTypeImmune"] = {
+									["color"] = {
+										0.5, -- [1]
+										0.5, -- [2]
+										0.5, -- [3]
+									},
+								},
+							},
+						},
+						["damageTakenCritical"] = {
+							["enabled"] = true,
+							["color"] = {
+								1, -- [1]
+								0, -- [2]
+								0, -- [3]
+							},
+						},
+						["spellDamageTaken"] = {
+							["enabled"] = true,
+							["color"] = {
+								0.75, -- [1]
+								0.3, -- [2]
+								0.85, -- [3]
+							},
+						},
+						["spellDamageTakenCritical"] = {
+							["enabled"] = true,
+							["color"] = {
+								1, -- [1]
+								0, -- [2]
+								1, -- [3]
+							},
+						},
+						["damageTaken"] = {
+							["enabled"] = true,
+							["color"] = {
+								0.75, -- [1]
+								0.1, -- [2]
+								0.1, -- [3]
+							},
+						},
+						["missTypesTakenPartial"] = {
+							["colors"] = {
+								["missTypeBlockPartial"] = {
+									["color"] = {
+										0.75, -- [1]
+										0.5, -- [2]
+										0.5, -- [3]
+									},
+								},
+								["missTypeResistPartial"] = {
+									["color"] = {
+										0.75, -- [1]
+										0.5, -- [2]
+										0.5, -- [3]
+									},
+								},
+								["missTypeAbsorbPartial"] = {
+									["color"] = {
+										0.75, -- [1]
+										0.5, -- [2]
+										0.5, -- [3]
+									},
+								},
+							},
+						},
+					},
+					["Height"] = 150,
+				},
+			},
+			["dbVersion"] = "4.3.0 Beta 9",
 			["SpellColors"] = {
 				["32"] = {
 					["color"] = {
@@ -40190,594 +40778,6 @@ xCTSavedDB = {
 					},
 				},
 			},
-			["spells"] = {
-				["mergeDontMergeCriticals"] = false,
-				["formatAbbreviate"] = true,
-				["formatGroups"] = false,
-				["mergeCriticalsByThemselves"] = true,
-			},
-			["frames"] = {
-				["general"] = {
-					["Y"] = 298,
-					["showPartyKills"] = false,
-					["colors"] = {
-						["auras"] = {
-							["colors"] = {
-								["debuffsGained"] = {
-									["color"] = {
-										1, -- [1]
-										0.1, -- [2]
-										0.1, -- [3]
-									},
-								},
-								["buffsGained"] = {
-									["color"] = {
-										1, -- [1]
-										0.5, -- [2]
-										0.5, -- [3]
-									},
-								},
-								["buffsFaded"] = {
-									["color"] = {
-										0.5, -- [1]
-										0.5, -- [2]
-										0.5, -- [3]
-									},
-								},
-								["debuffsFaded"] = {
-									["color"] = {
-										0.5, -- [1]
-										0.5, -- [2]
-										0.5, -- [3]
-									},
-								},
-							},
-						},
-						["killingBlow"] = {
-							["color"] = {
-								0.2, -- [1]
-								1, -- [2]
-								0.2, -- [3]
-							},
-						},
-						["combat"] = {
-							["colors"] = {
-								["combatLeaving"] = {
-									["color"] = {
-										0.1, -- [1]
-										1, -- [2]
-										0.1, -- [3]
-									},
-								},
-								["combatEntering"] = {
-									["color"] = {
-										1, -- [1]
-										0.1, -- [2]
-										0.1, -- [3]
-									},
-								},
-							},
-						},
-						["interrupts"] = {
-							["color"] = {
-								1, -- [1]
-								0.5, -- [2]
-								0, -- [3]
-							},
-						},
-						["reputation"] = {
-							["colors"] = {
-								["reputationGain"] = {
-									["color"] = {
-										0.1, -- [1]
-										0.1, -- [2]
-										1, -- [3]
-									},
-								},
-								["reputationLoss"] = {
-									["color"] = {
-										1, -- [1]
-										0.1, -- [2]
-										0.1, -- [3]
-									},
-								},
-							},
-						},
-						["lowResources"] = {
-							["colors"] = {
-								["lowResourcesMana"] = {
-									["color"] = {
-										1, -- [1]
-										0.1, -- [2]
-										0.1, -- [3]
-									},
-								},
-								["lowResourcesHealth"] = {
-									["color"] = {
-										1, -- [1]
-										0.1, -- [2]
-										0.1, -- [3]
-									},
-								},
-							},
-						},
-						["honorGains"] = {
-							["color"] = {
-								0.1, -- [1]
-								0.1, -- [2]
-								1, -- [3]
-							},
-						},
-						["dispells"] = {
-							["colors"] = {
-								["dispellBuffs"] = {
-									["color"] = {
-										0, -- [1]
-										1, -- [2]
-										0.5, -- [3]
-									},
-								},
-								["dispellStolen"] = {
-									["color"] = {
-										0.31, -- [1]
-										0.71, -- [2]
-										1, -- [3]
-									},
-								},
-								["dispellDebuffs"] = {
-									["color"] = {
-										1, -- [1]
-										0, -- [2]
-										0.5, -- [3]
-									},
-								},
-							},
-						},
-					},
-					["X"] = 3,
-					["showDebuffs"] = false,
-					["showBuffs"] = false,
-					["font"] = "Friz Quadrata TT",
-				},
-				["power"] = {
-					["font"] = "Friz Quadrata TT",
-					["colors"] = {
-						["color_SOUL_SHARDS"] = {
-							["color"] = {
-								0.5, -- [1]
-								0.32, -- [2]
-								0.55, -- [3]
-							},
-						},
-						["color_MAELSTROM"] = {
-							["color"] = {
-								0, -- [1]
-								0.5, -- [2]
-								1, -- [3]
-							},
-						},
-						["color_HOLY_POWER"] = {
-							["color"] = {
-								0.95, -- [1]
-								0.9, -- [2]
-								0.6, -- [3]
-							},
-						},
-						["color_MANA"] = {
-							["color"] = {
-								0, -- [1]
-								0, -- [2]
-								1, -- [3]
-							},
-						},
-						["color_LUNAR_POWER"] = {
-							["color"] = {
-								0.3, -- [1]
-								0.52, -- [2]
-								0.9, -- [3]
-							},
-						},
-						["color_FOCUS"] = {
-							["color"] = {
-								1, -- [1]
-								0.5, -- [2]
-								0.25, -- [3]
-							},
-						},
-						["color_FURY"] = {
-							["color"] = {
-							},
-						},
-						["color_CHI"] = {
-							["color"] = {
-								0.71, -- [1]
-								1, -- [2]
-								0.92, -- [3]
-							},
-						},
-						["color_RUNES"] = {
-							["color"] = {
-								0.5, -- [1]
-								0.5, -- [2]
-								0.5, -- [3]
-							},
-						},
-						["color_ARCANE_CHARGES"] = {
-							["color"] = {
-								0.1, -- [1]
-								0.1, -- [2]
-								0.98, -- [3]
-							},
-						},
-						["color_RAGE"] = {
-							["color"] = {
-								1, -- [1]
-								0, -- [2]
-								0, -- [3]
-							},
-						},
-						["color_INSANITY"] = {
-							["color"] = {
-								0.4, -- [1]
-								0, -- [2]
-								0.8, -- [3]
-							},
-						},
-						["color_RUNIC_POWER"] = {
-							["color"] = {
-								0, -- [1]
-								0.82, -- [2]
-								1, -- [3]
-							},
-						},
-						["color_PAIN"] = {
-							["color"] = {
-							},
-						},
-						["color_ENERGY"] = {
-							["color"] = {
-								1, -- [1]
-								1, -- [2]
-								0, -- [3]
-							},
-						},
-						["color_ALTERNATE_POWER"] = {
-							["color"] = {
-							},
-						},
-					},
-					["enabledFrame"] = false,
-				},
-				["healing"] = {
-					["Y"] = -94,
-					["font"] = "Friz Quadrata TT",
-					["colors"] = {
-						["healingTakenCritical"] = {
-							["color"] = {
-								0.1, -- [1]
-								1, -- [2]
-								0.1, -- [3]
-							},
-						},
-						["healingTaken"] = {
-							["color"] = {
-								0.1, -- [1]
-								0.75, -- [2]
-								0.1, -- [3]
-							},
-						},
-						["healingTakenPeriodic"] = {
-							["color"] = {
-								0.1, -- [1]
-								0.5, -- [2]
-								0.1, -- [3]
-							},
-						},
-						["shieldTaken"] = {
-							["color"] = {
-								0.6, -- [1]
-								0.65, -- [2]
-								1, -- [3]
-							},
-						},
-						["healingTakenPeriodicCritical"] = {
-							["color"] = {
-								0.1, -- [1]
-								0.5, -- [2]
-								0.1, -- [3]
-							},
-						},
-					},
-					["Height"] = 150,
-					["Width"] = 150,
-					["X"] = -404,
-					["names"] = {
-						["PLAYER"] = {
-							["nameType"] = 0,
-						},
-						["NPC"] = {
-							["nameType"] = 0,
-						},
-					},
-				},
-				["outgoing"] = {
-					["Y"] = -206,
-					["font"] = "Friz Quadrata TT",
-					["colors"] = {
-						["healingSpells"] = {
-							["colors"] = {
-								["healingOut"] = {
-									["color"] = {
-										0.1, -- [1]
-										0.75, -- [2]
-										0.1, -- [3]
-									},
-								},
-								["shieldOut"] = {
-									["color"] = {
-										0.6, -- [1]
-										0.65, -- [2]
-										1, -- [3]
-									},
-								},
-								["healingOutPeriodic"] = {
-									["color"] = {
-										0.1, -- [1]
-										0.5, -- [2]
-										0.1, -- [3]
-									},
-								},
-							},
-						},
-						["genericDamage"] = {
-							["color"] = {
-								1, -- [1]
-								0.82, -- [2]
-								0, -- [3]
-							},
-						},
-						["misstypesOut"] = {
-							["color"] = {
-								0.5, -- [1]
-								0.5, -- [2]
-								0.5, -- [3]
-							},
-						},
-					},
-					["Height"] = 240,
-					["X"] = 405,
-					["Width"] = 150,
-				},
-				["critical"] = {
-					["Y"] = -14,
-					["font"] = "Friz Quadrata TT",
-					["colors"] = {
-						["genericDamageCritical"] = {
-							["color"] = {
-								1, -- [1]
-								1, -- [2]
-								0, -- [3]
-							},
-						},
-						["healingSpells"] = {
-							["colors"] = {
-								["healingOutCritical"] = {
-									["color"] = {
-										0.1, -- [1]
-										1, -- [2]
-										0.1, -- [3]
-									},
-								},
-							},
-						},
-					},
-					["X"] = 458,
-				},
-				["procs"] = {
-					["Y"] = -510,
-					["font"] = "Friz Quadrata TT",
-					["colors"] = {
-						["spellReactive"] = {
-							["color"] = {
-								1, -- [1]
-								0.82, -- [2]
-								0, -- [3]
-							},
-						},
-						["spellProc"] = {
-							["color"] = {
-								1, -- [1]
-								0.82, -- [2]
-								0, -- [3]
-							},
-						},
-					},
-					["Height"] = 60,
-					["X"] = -10,
-				},
-				["loot"] = {
-					["Y"] = 463,
-					["font"] = "Friz Quadrata TT",
-					["Height"] = 150,
-					["X"] = 7,
-					["Width"] = 400,
-				},
-				["class"] = {
-					["font"] = "Friz Quadrata TT",
-					["colors"] = {
-						["comboPoints"] = {
-							["color"] = {
-								1, -- [1]
-								0.82, -- [2]
-								0, -- [3]
-							},
-						},
-						["comboPointsMax"] = {
-							["color"] = {
-								0, -- [1]
-								0.82, -- [2]
-								1, -- [3]
-							},
-						},
-					},
-					["enabledFrame"] = false,
-				},
-				["damage"] = {
-					["fontSize"] = 16,
-					["iconsEnabled"] = false,
-					["iconsEnabledAutoAttack"] = false,
-					["Width"] = 150,
-					["Y"] = -249,
-					["font"] = "Friz Quadrata TT",
-					["colors"] = {
-						["missTypesTaken"] = {
-							["colors"] = {
-								["missTypeBlock"] = {
-									["color"] = {
-										0.5, -- [1]
-										0.5, -- [2]
-										0.5, -- [3]
-									},
-								},
-								["missTypeMiss"] = {
-									["color"] = {
-										0.5, -- [1]
-										0.5, -- [2]
-										0.5, -- [3]
-									},
-								},
-								["missTypeDeflect"] = {
-									["color"] = {
-										0.5, -- [1]
-										0.5, -- [2]
-										0.5, -- [3]
-									},
-								},
-								["missTypeDodge"] = {
-									["color"] = {
-										0.5, -- [1]
-										0.5, -- [2]
-										0.5, -- [3]
-									},
-								},
-								["missTypeParry"] = {
-									["color"] = {
-										0.5, -- [1]
-										0.5, -- [2]
-										0.5, -- [3]
-									},
-								},
-								["missTypeResist"] = {
-									["color"] = {
-										0.5, -- [1]
-										0.5, -- [2]
-										0.5, -- [3]
-									},
-								},
-								["missTypeEvade"] = {
-									["color"] = {
-										0.5, -- [1]
-										0.5, -- [2]
-										0.5, -- [3]
-									},
-								},
-								["missTypeAbsorb"] = {
-									["color"] = {
-										0.5, -- [1]
-										0.5, -- [2]
-										0.5, -- [3]
-									},
-								},
-								["missTypeReflect"] = {
-									["color"] = {
-										0.5, -- [1]
-										0.5, -- [2]
-										0.5, -- [3]
-									},
-								},
-								["missTypeImmune"] = {
-									["color"] = {
-										0.5, -- [1]
-										0.5, -- [2]
-										0.5, -- [3]
-									},
-								},
-							},
-						},
-						["damageTakenCritical"] = {
-							["enabled"] = true,
-							["color"] = {
-								1, -- [1]
-								0, -- [2]
-								0, -- [3]
-							},
-						},
-						["spellDamageTaken"] = {
-							["enabled"] = true,
-							["color"] = {
-								0.75, -- [1]
-								0.3, -- [2]
-								0.85, -- [3]
-							},
-						},
-						["spellDamageTakenCritical"] = {
-							["enabled"] = true,
-							["color"] = {
-								1, -- [1]
-								0, -- [2]
-								1, -- [3]
-							},
-						},
-						["damageTaken"] = {
-							["enabled"] = true,
-							["color"] = {
-								0.75, -- [1]
-								0.1, -- [2]
-								0.1, -- [3]
-							},
-						},
-						["missTypesTakenPartial"] = {
-							["colors"] = {
-								["missTypeBlockPartial"] = {
-									["color"] = {
-										0.75, -- [1]
-										0.5, -- [2]
-										0.5, -- [3]
-									},
-								},
-								["missTypeResistPartial"] = {
-									["color"] = {
-										0.75, -- [1]
-										0.5, -- [2]
-										0.5, -- [3]
-									},
-								},
-								["missTypeAbsorbPartial"] = {
-									["color"] = {
-										0.75, -- [1]
-										0.5, -- [2]
-										0.5, -- [3]
-									},
-								},
-							},
-						},
-					},
-					["Height"] = 150,
-					["X"] = -404,
-					["names"] = {
-						["PLAYER"] = {
-							["nameType"] = 0,
-						},
-						["ENVIRONMENT"] = {
-							["nameType"] = 3,
-						},
-						["NPC"] = {
-							["nameType"] = 0,
-						},
-					},
-				},
-			},
-			["dbVersion"] = "4.3.0 Beta 9",
 		},
 		["Llamama - Stormrage"] = {
 			["spells"] = {
@@ -40887,12 +40887,11 @@ xCTSavedDB = {
 						["prep"] = 0,
 						["interval"] = 4,
 					},
-					[146061] = {
+					[3674] = {
 						["enabled"] = true,
+						["class"] = "HUNTER",
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "ITEM",
-						["desc"] = "Physical Damage (Melee)",
+						["interval"] = 4,
 					},
 					[86678] = {
 						["enabled"] = true,
@@ -41002,12 +41001,11 @@ xCTSavedDB = {
 						["class"] = "ITEM",
 						["desc"] = "Aeda (Follower)",
 					},
-					[164603] = {
+					[119072] = {
 						["enabled"] = true,
+						["class"] = "PALADIN",
 						["prep"] = 0,
-						["interval"] = 3.5,
-						["class"] = "ITEM",
-						["desc"] = "Shredder",
+						["interval"] = 0.5,
 					},
 					[148135] = {
 						["enabled"] = true,
@@ -41544,11 +41542,12 @@ xCTSavedDB = {
 						["prep"] = 0,
 						["interval"] = 3,
 					},
-					[119072] = {
+					[164603] = {
 						["enabled"] = true,
-						["class"] = "PALADIN",
 						["prep"] = 0,
-						["interval"] = 0.5,
+						["interval"] = 3.5,
+						["class"] = "ITEM",
+						["desc"] = "Shredder",
 					},
 					[113656] = {
 						["enabled"] = true,
@@ -41588,11 +41587,12 @@ xCTSavedDB = {
 						["class"] = "ITEM",
 						["desc"] = "Legedary Cloak for Healers",
 					},
-					[3674] = {
+					[146061] = {
 						["enabled"] = true,
-						["class"] = "HUNTER",
 						["prep"] = 0,
-						["interval"] = 4,
+						["interval"] = 5,
+						["class"] = "ITEM",
+						["desc"] = "Physical Damage (Melee)",
 					},
 				},
 				["items"] = {
@@ -43945,12 +43945,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Healing (Priest, Paladin)",
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -44029,12 +44029,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[156287] = {
 						["enabled"] = true,
@@ -44071,12 +44071,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 66,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -45023,12 +45023,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[185779] = {
 						["enabled"] = true,
@@ -49883,12 +49883,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Healing (Priest, Paladin)",
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -49967,12 +49967,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[156287] = {
 						["enabled"] = true,
@@ -50009,12 +50009,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 66,
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -50961,12 +50961,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[185779] = {
 						["enabled"] = true,
@@ -53412,12 +53412,12 @@ xCTSavedDB = {
 						["class"] = "MONK",
 						["desc"] = 269,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -53496,12 +53496,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[156287] = {
 						["enabled"] = true,
@@ -53538,12 +53538,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -54490,12 +54490,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[227681] = {
 						["enabled"] = true,
@@ -57205,12 +57205,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Healing (Priest, Paladin)",
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -57289,12 +57289,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[156287] = {
 						["enabled"] = true,
@@ -57331,12 +57331,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 66,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -58283,12 +58283,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[185779] = {
 						["enabled"] = true,
@@ -64085,12 +64085,12 @@ xCTSavedDB = {
 						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Bodyguards)|r",
 						["desc"] = "Bodyguard: Vivianne",
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -64120,12 +64120,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[185779] = {
 						["enabled"] = true,
@@ -64169,12 +64169,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[146067] = {
 						["enabled"] = true,
@@ -64211,12 +64211,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 66,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -68358,12 +68358,12 @@ xCTSavedDB = {
 						["class"] = "|cffA32C12Warlords of Draenor|r™ |cff798BDD(Bodyguards)|r",
 						["desc"] = "Bodyguard: Vivianne",
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -68393,12 +68393,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[185779] = {
 						["enabled"] = true,
@@ -68442,12 +68442,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[146067] = {
 						["enabled"] = true,
@@ -68484,12 +68484,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 66,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -71981,12 +71981,12 @@ xCTSavedDB = {
 						["class"] = "WARRIOR",
 						["desc"] = 72,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -72016,12 +72016,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[227681] = {
 						["enabled"] = true,
@@ -72065,12 +72065,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[146067] = {
 						["enabled"] = true,
@@ -72107,12 +72107,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -75509,12 +75509,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Healing (Priest, Paladin)",
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -75593,12 +75593,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[156287] = {
 						["enabled"] = true,
@@ -75635,12 +75635,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 66,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -76587,12 +76587,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[185779] = {
 						["enabled"] = true,
@@ -78999,12 +78999,12 @@ xCTSavedDB = {
 						["class"] = "WARRIOR",
 						["desc"] = 72,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -79034,12 +79034,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 258,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[227681] = {
 						["enabled"] = true,
@@ -79083,12 +79083,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[146067] = {
 						["enabled"] = true,
@@ -79125,12 +79125,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 263,
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -82620,12 +82620,12 @@ xCTSavedDB = {
 						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
 						["desc"] = "Holy Healing (Priest, Paladin)",
 					},
-					[162530] = {
+					[201877] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 1.5,
-						["class"] = "MONK",
-						["desc"] = 270,
+						["interval"] = 0.5,
+						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
+						["desc"] = "Revil Cost (Holy Nova)",
 					},
 					[2818] = {
 						["enabled"] = true,
@@ -82704,12 +82704,12 @@ xCTSavedDB = {
 						["class"] = "SHAMAN",
 						["desc"] = 262,
 					},
-					[146178] = {
+					[217207] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 5,
-						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
-						["desc"] = "Nature Healing (Druid, Monk)",
+						["interval"] = 0.5,
+						["class"] = "HUNTER",
+						["desc"] = 253,
 					},
 					[156287] = {
 						["enabled"] = true,
@@ -82746,12 +82746,12 @@ xCTSavedDB = {
 						["class"] = "PALADIN",
 						["desc"] = 66,
 					},
-					[201877] = {
+					[162530] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "|cff93BE3DLegion|r™ |cff798BDD(World Zones)|r",
-						["desc"] = "Revil Cost (Holy Nova)",
+						["interval"] = 1.5,
+						["class"] = "MONK",
+						["desc"] = 270,
 					},
 					[194466] = {
 						["enabled"] = true,
@@ -83698,12 +83698,12 @@ xCTSavedDB = {
 						["class"] = "PRIEST",
 						["desc"] = 257,
 					},
-					[217207] = {
+					[146178] = {
 						["enabled"] = true,
 						["prep"] = 0,
-						["interval"] = 0.5,
-						["class"] = "HUNTER",
-						["desc"] = 253,
+						["interval"] = 5,
+						["class"] = "|cffF1A864Mists of Pandaria|r™ |cff798BDD(Trinkets)|r",
+						["desc"] = "Nature Healing (Druid, Monk)",
 					},
 					[185779] = {
 						["enabled"] = true,

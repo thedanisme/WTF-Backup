@@ -91,9 +91,9 @@ OneRing_Config = {
 					["id"] = 195128,
 				}, -- [3]
 				{
+					["show"] = "[spec:252/251/250] hide;",
 					["sliceToken"] = "ABue2C/V=/er",
 					["id"] = 51005,
-					["show"] = "[spec:252/251/250] hide;",
 				}, -- [4]
 				{
 					["sliceToken"] = "ABue2C/V=/ee",
@@ -109,9 +109,9 @@ OneRing_Config = {
 					["sliceToken"] = "ABue2/EvAHr",
 				}, -- [7]
 				{
+					["show"] = "[spec:252/251/250] hide;",
 					["sliceToken"] = "ABue2C/V=/ew",
 					["id"] = 195115,
-					["show"] = "[spec:252/251/250] hide;",
 				}, -- [8]
 				{
 					"item", -- [1]
@@ -131,8 +131,8 @@ OneRing_Config = {
 				{
 					"item", -- [1]
 					140587, -- [2]
-					["sliceToken"] = "ABue2C/V=/wB",
 					["show"] = "[nocombat]",
+					["sliceToken"] = "ABue2C/V=/wB",
 				}, -- [12]
 				{
 					"item", -- [1]
@@ -140,24 +140,24 @@ OneRing_Config = {
 					["sliceToken"] = "ABue2C/V=/w/",
 				}, -- [13]
 				{
+					["show"] = "[spec:252/251/250] hide;",
 					["sliceToken"] = "ABue2C/V=/ea",
 					["id"] = 2823,
-					["show"] = "[spec:252/251/250] hide;",
 				}, -- [14]
 				{
+					["show"] = "[spec:252/251/250] hide;",
 					["sliceToken"] = "ABue2C/V=/ep",
 					["id"] = 3408,
-					["show"] = "[spec:252/251/250] hide;",
 				}, -- [15]
 				{
+					["show"] = "[spec:252/250/251] hide;",
 					["sliceToken"] = "ABue2C/V=/eo",
 					["id"] = 8679,
-					["show"] = "[spec:252/250/251] hide;",
 				}, -- [16]
 				{
+					["show"] = "[spec:261/260] hide;",
 					["sliceToken"] = "ABue2VZFuI4",
 					["id"] = 200802,
-					["show"] = "[spec:261/260] hide;",
 				}, -- [17]
 				["name"] = "Utility",
 				["save"] = true,

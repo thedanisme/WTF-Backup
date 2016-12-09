@@ -253,69 +253,69 @@ MacroToolkitDB = {
 		["Chucklefunk - Stormrage"] = {
 			["macros"] = {
 				[122] = {
-					["name"] = "Levitate",
 					["icon"] = "135928",
+					["name"] = "Levitate",
 					["body"] = "#showtooltip\n/cancelaura Levitate\n/use Levitate\n",
 				},
 				[126] = {
-					["name"] = "PS",
 					["icon"] = "135936",
+					["name"] = "PS",
 					["body"] = "#showtooltip\n/use [@mouseover,help,nodead]Pain Suppression;[help,nodead]Pain Suppression;Pain Suppression\n",
 				},
 				[132] = {
-					["name"] = "SF",
 					["icon"] = "571554",
+					["name"] = "SF",
 					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Shining Force\n",
 				},
 				[123] = {
-					["name"] = "LoF",
 					["icon"] = "463835",
+					["name"] = "LoF",
 					["body"] = "#showtooltip\n/use [@mouseover]Leap of Faith\n",
 				},
 				[127] = {
-					["name"] = "Purify",
 					["icon"] = "135894",
+					["name"] = "Purify",
 					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Purify\n",
 				},
-				[131] = {
-					["name"] = "Rez",
-					["icon"] = "135955",
-					["body"] = "#showtooltip\n/use [@mouseover,dead][]Resurrection\n",
+				[133] = {
+					["icon"] = "136202",
+					["name"] = "SM",
+					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Shadow Mend\n",
 				},
 				[124] = {
-					["name"] = "Penance",
 					["icon"] = "237545",
+					["name"] = "Penance",
 					["body"] = "#showtooltip\n/use [@mouseover,harm,nodead][]Penance\n",
 				},
 				[128] = {
-					["name"] = "PurifyDisease",
 					["icon"] = "134400",
+					["name"] = "PurifyDisease",
 					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Purify Disease\n",
 				},
-				[129] = {
-					["name"] = "PW:R",
-					["icon"] = "1386546",
-					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Power Word: Radiance\n",
+				[131] = {
+					["icon"] = "135955",
+					["name"] = "Rez",
+					["body"] = "#showtooltip\n/use [@mouseover,dead][]Resurrection\n",
 				},
 				[121] = {
-					["name"] = "Feather",
 					["icon"] = "642580",
+					["name"] = "Feather",
 					["body"] = "#showtooltip\n/cast [@player] Angelic Feather\n/stopspelltarget\n",
 				},
 				[125] = {
-					["name"] = "Plea",
 					["icon"] = "1538775",
+					["name"] = "Plea",
 					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Plea\n",
 				},
 				[130] = {
-					["name"] = "PW:S",
 					["icon"] = "135940",
+					["name"] = "PW:S",
 					["body"] = "#showtooltip\n/use [@mouseover,help,nodead]Power Word: Shield;[help,nodead]Power Word: Shield;Power Word: Shield\n",
 				},
-				[133] = {
-					["name"] = "SM",
-					["icon"] = "136202",
-					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Shadow Mend\n",
+				[129] = {
+					["icon"] = "1386546",
+					["name"] = "PW:R",
+					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Power Word: Radiance\n",
 				},
 			},
 			["backups"] = {
@@ -350,64 +350,64 @@ MacroToolkitDB = {
 		["Emmarosa - Stormrage"] = {
 			["macros"] = {
 				[122] = {
-					["icon"] = "236283",
 					["name"] = " TotT(Focus)",
+					["icon"] = "236283",
 					["body"] = "#showtooltip Tricks of the Trade\n/cast [@focus] Tricks of the Trade\n",
 				},
 				[126] = {
-					["icon"] = "134400",
 					["name"] = "Poisons",
+					["icon"] = "132290",
 					["body"] = "#showtooltip\n/castsequence Deadly Poison, Crippling Poison\n",
 				},
 				[132] = {
-					["icon"] = "132331",
 					["name"] = "VanRup",
+					["icon"] = "132331",
 					["body"] = "#showtooltip Vanish\n/use Vanish\n/use Rupture\n",
 				},
 				[123] = {
-					["icon"] = "134400",
 					["name"] = "BladeFlurry",
+					["icon"] = "134400",
 					["body"] = "#showtooltip Blade Flurry\n/cancelaura Blade Flurry\n/use Blade Flurry\n",
 				},
 				[127] = {
-					["icon"] = "1408451",
 					["name"] = "Ring+Vendetta",
+					["icon"] = "1408451",
 					["body"] = "#showtooltip 11\n/use 11\n/use 14\n/use 13\n/use Vendetta\n/use Shadow Blades\n",
 				},
 				[124] = {
-					["icon"] = "133669",
 					["name"] = "Pick Pocket",
+					["icon"] = "133669",
 					["body"] = "#showtooltip Pick Pocket\n/use [stealth]Pick Pocket\n",
 				},
 				[128] = {
-					["icon"] = "134400",
 					["name"] = "Riposte",
+					["icon"] = "134400",
 					["body"] = "#showtooltip Riposte\n/use [nostealth]Riposte\n",
 				},
-				[131] = {
-					["icon"] = "132320",
-					["name"] = "Stealth/Symbols",
-					["body"] = "#showtooltip Stealth\n/use Stealth\n/use Symbols of Death\n",
+				[129] = {
+					["name"] = "Shadow Blades",
+					["icon"] = "134400",
+					["body"] = "#showtooltip Shadow Blades\n/use Shadow Blades\n/use 13\n/use 14\n/use Goremaw's Bite\n",
 				},
 				[121] = {
-					["icon"] = "134400",
 					["name"] = " ",
+					["icon"] = "134400",
 					["body"] = "#showtooltip Adrenaline Rush\n/use Adrenaline Rush\n/use Curse of the Dreadblades\n/use 13\n/use 14\n/use 11\n",
 				},
 				[125] = {
-					["icon"] = "1035048",
 					["name"] = "Pistol Shot",
+					["icon"] = "1035048",
 					["body"] = "#showtooltip\n/use Pistol Shot\n",
 				},
 				[130] = {
-					["icon"] = "252272",
 					["name"] = "SoD/SS",
+					["icon"] = "134400",
 					["body"] = "#showtooltip Symbols of Death\n/use Symbols of Death\n/use Shadowstrike\n",
 				},
-				[129] = {
-					["icon"] = "376022",
-					["name"] = "Shadow Blades",
-					["body"] = "#showtooltip Shadow Blades\n/use Shadow Blades\n/use 13\n/use 14\n/use Goremaw's Bite\n",
+				[131] = {
+					["name"] = "Stealth/Symbols",
+					["icon"] = "132320",
+					["body"] = "#showtooltip Stealth\n/use Stealth\n/use Symbols of Death\n",
 				},
 			},
 			["backups"] = {
@@ -432,28 +432,28 @@ MacroToolkitDB = {
 		["Oenta - Stormrage"] = {
 			["macros"] = {
 				[122] = {
-					["icon"] = "134400",
 					["name"] = "DND",
+					["icon"] = "134400",
 					["body"] = "#showtooltip Death and Decay\n/use [@player]Death and Decay\n",
 				},
 				[124] = {
-					["icon"] = "237527",
 					["name"] = "Interrupt",
+					["icon"] = "237527",
 					["body"] = "#showtooltip\n/use [nomod] Mind Freeze;[mod]Asphyxiate\n",
 				},
 				[121] = {
-					["icon"] = "136088",
 					["name"] = "Dark Command",
+					["icon"] = "136088",
 					["body"] = "#showtooltip\n/use [@mouseover,harm][]Dark Command\n",
 				},
 				[123] = {
-					["icon"] = "134400",
 					["name"] = "Gorefiend",
+					["icon"] = "134400",
 					["body"] = "#showtooltip\n/use [@player]Gorefiend's Grasp\n",
 				},
 				[125] = {
-					["icon"] = "136143",
 					["name"] = "Raise Ally",
+					["icon"] = "136143",
 					["body"] = "#showtooltip\n/use [@mouseover,dead][]Raise Ally\n",
 				},
 			},

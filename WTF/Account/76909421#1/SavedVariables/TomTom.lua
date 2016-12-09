@@ -140,18 +140,10 @@ TomTomWaypointsMF = {
 					["arrivaldistance"] = 15,
 					["callbacks"] = {
 						["distance"] = {
-							[10] = nil --[[ skipped inline function ]],
-							[15] = nil --[[ skipped inline function ]],
-						},
-						["world"] = {
-							["onclick"] = nil --[[ skipped inline function ]],
-							["tooltip_update"] = nil --[[ skipped inline function ]],
-							["tooltip_show"] = nil --[[ skipped inline function ]],
 						},
 						["minimap"] = {
-							["onclick"] = nil --[[ skipped inline function ]],
-							["tooltip_update"] = nil --[[ skipped inline function ]],
-							["tooltip_show"] = nil --[[ skipped inline function ]],
+						},
+						["world"] = {
 						},
 					},
 					["persistent"] = true,
@@ -166,29 +158,6 @@ TomTomWaypointsMF = {
 			},
 		},
 		["Oenta - Stormrage"] = {
-			[1018] = {
-				["1018:0:670000000:740000000:FARM"] = {
-					1018, -- [1]
-					0, -- [2]
-					0.67, -- [3]
-					0.74, -- [4]
-					["minimap"] = true,
-					["cleardistance"] = 10,
-					["title"] = "FARM",
-					["arrivaldistance"] = 15,
-					["callbacks"] = {
-						["distance"] = {
-						},
-						["world"] = {
-						},
-						["minimap"] = {
-						},
-					},
-					["crazy"] = true,
-					["persistent"] = true,
-					["world"] = true,
-				},
-			},
 		},
 		["Whyfy - Stormrage"] = {
 		},
