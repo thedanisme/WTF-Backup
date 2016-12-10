@@ -2,7 +2,7 @@
 ## Title: Best In Slot
 ## Notes: Keep track of your, your raid member, and your guilds Best in Slot list!
 ## Author: Feng @ Moonglade-EU
-## Version: r427
+## Version: r431
 ## SavedVariables: BestInSlotDB
 
 Libs\Libs.xml

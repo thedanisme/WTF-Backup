@@ -253,69 +253,69 @@ MacroToolkitDB = {
 		["Chucklefunk - Stormrage"] = {
 			["macros"] = {
 				[122] = {
-					["icon"] = "135928",
 					["name"] = "Levitate",
+					["icon"] = "135928",
 					["body"] = "#showtooltip\n/cancelaura Levitate\n/use Levitate\n",
 				},
 				[126] = {
-					["icon"] = "135936",
 					["name"] = "PS",
+					["icon"] = "135936",
 					["body"] = "#showtooltip\n/use [@mouseover,help,nodead]Pain Suppression;[help,nodead]Pain Suppression;Pain Suppression\n",
 				},
 				[132] = {
-					["icon"] = "571554",
 					["name"] = "SF",
+					["icon"] = "571554",
 					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Shining Force\n",
 				},
 				[123] = {
-					["icon"] = "463835",
 					["name"] = "LoF",
+					["icon"] = "463835",
 					["body"] = "#showtooltip\n/use [@mouseover]Leap of Faith\n",
 				},
 				[127] = {
-					["icon"] = "135894",
 					["name"] = "Purify",
+					["icon"] = "135894",
 					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Purify\n",
 				},
-				[133] = {
-					["icon"] = "136202",
-					["name"] = "SM",
-					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Shadow Mend\n",
+				[129] = {
+					["name"] = "PW:R",
+					["icon"] = "1386546",
+					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Power Word: Radiance\n",
 				},
 				[124] = {
-					["icon"] = "237545",
 					["name"] = "Penance",
+					["icon"] = "237545",
 					["body"] = "#showtooltip\n/use [@mouseover,harm,nodead][]Penance\n",
 				},
 				[128] = {
-					["icon"] = "134400",
 					["name"] = "PurifyDisease",
+					["icon"] = "134400",
 					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Purify Disease\n",
 				},
 				[131] = {
-					["icon"] = "135955",
 					["name"] = "Rez",
+					["icon"] = "135955",
 					["body"] = "#showtooltip\n/use [@mouseover,dead][]Resurrection\n",
 				},
 				[121] = {
-					["icon"] = "642580",
 					["name"] = "Feather",
+					["icon"] = "642580",
 					["body"] = "#showtooltip\n/cast [@player] Angelic Feather\n/stopspelltarget\n",
 				},
 				[125] = {
-					["icon"] = "1538775",
 					["name"] = "Plea",
+					["icon"] = "1538775",
 					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Plea\n",
 				},
 				[130] = {
-					["icon"] = "135940",
 					["name"] = "PW:S",
+					["icon"] = "135940",
 					["body"] = "#showtooltip\n/use [@mouseover,help,nodead]Power Word: Shield;[help,nodead]Power Word: Shield;Power Word: Shield\n",
 				},
-				[129] = {
-					["icon"] = "1386546",
-					["name"] = "PW:R",
-					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Power Word: Radiance\n",
+				[133] = {
+					["name"] = "SM",
+					["icon"] = "136202",
+					["body"] = "#showtooltip\n/use [@mouseover,help,nodead][]Shadow Mend\n",
 				},
 			},
 			["backups"] = {
@@ -350,64 +350,64 @@ MacroToolkitDB = {
 		["Emmarosa - Stormrage"] = {
 			["macros"] = {
 				[122] = {
-					["name"] = " TotT(Focus)",
 					["icon"] = "236283",
+					["name"] = " TotT(Focus)",
 					["body"] = "#showtooltip Tricks of the Trade\n/cast [@focus] Tricks of the Trade\n",
 				},
 				[126] = {
-					["name"] = "Poisons",
 					["icon"] = "132290",
+					["name"] = "Poisons",
 					["body"] = "#showtooltip\n/castsequence Deadly Poison, Crippling Poison\n",
 				},
 				[132] = {
-					["name"] = "VanRup",
 					["icon"] = "132331",
+					["name"] = "VanRup",
 					["body"] = "#showtooltip Vanish\n/use Vanish\n/use Rupture\n",
 				},
 				[123] = {
-					["name"] = "BladeFlurry",
 					["icon"] = "134400",
+					["name"] = "BladeFlurry",
 					["body"] = "#showtooltip Blade Flurry\n/cancelaura Blade Flurry\n/use Blade Flurry\n",
 				},
 				[127] = {
-					["name"] = "Ring+Vendetta",
 					["icon"] = "1408451",
+					["name"] = "Ring+Vendetta",
 					["body"] = "#showtooltip 11\n/use 11\n/use 14\n/use 13\n/use Vendetta\n/use Shadow Blades\n",
 				},
 				[124] = {
-					["name"] = "Pick Pocket",
 					["icon"] = "133669",
+					["name"] = "Pick Pocket",
 					["body"] = "#showtooltip Pick Pocket\n/use [stealth]Pick Pocket\n",
 				},
 				[128] = {
-					["name"] = "Riposte",
 					["icon"] = "134400",
+					["name"] = "Riposte",
 					["body"] = "#showtooltip Riposte\n/use [nostealth]Riposte\n",
 				},
+				[131] = {
+					["icon"] = "132320",
+					["name"] = "Stealth/Symbols",
+					["body"] = "#showtooltip Stealth\n/use Stealth\n/use Symbols of Death\n",
+				},
 				[129] = {
-					["name"] = "Shadow Blades",
 					["icon"] = "134400",
+					["name"] = "Shadow Blades",
 					["body"] = "#showtooltip Shadow Blades\n/use Shadow Blades\n/use 13\n/use 14\n/use Goremaw's Bite\n",
 				},
-				[121] = {
-					["name"] = " ",
-					["icon"] = "134400",
-					["body"] = "#showtooltip Adrenaline Rush\n/use Adrenaline Rush\n/use Curse of the Dreadblades\n/use 13\n/use 14\n/use 11\n",
-				},
 				[125] = {
-					["name"] = "Pistol Shot",
 					["icon"] = "1035048",
+					["name"] = "Pistol Shot",
 					["body"] = "#showtooltip\n/use Pistol Shot\n",
 				},
 				[130] = {
-					["name"] = "SoD/SS",
 					["icon"] = "134400",
+					["name"] = "SoD/SS",
 					["body"] = "#showtooltip Symbols of Death\n/use Symbols of Death\n/use Shadowstrike\n",
 				},
-				[131] = {
-					["name"] = "Stealth/Symbols",
-					["icon"] = "132320",
-					["body"] = "#showtooltip Stealth\n/use Stealth\n/use Symbols of Death\n",
+				[121] = {
+					["icon"] = "134400",
+					["name"] = " ",
+					["body"] = "#showtooltip Adrenaline Rush\n/use Adrenaline Rush\n/use Curse of the Dreadblades\n/use 13\n/use 14\n/use 11\n",
 				},
 			},
 			["backups"] = {
@@ -527,29 +527,29 @@ MacroToolkitDB = {
 		["Whyfy - Stormrage"] = {
 			["macros"] = {
 				[122] = {
+					["icon"] = "135953",
+					["name"] = "Cleanse Toxins",
+					["body"] = "#showtooltip\n/use [@mouseover,help]Cleanse Toxins;[help]Cleanse Toxins;Cleanse Toxins\n",
+				},
+				[126] = {
+					["icon"] = "135968",
+					["name"] = "Freedom",
+					["body"] = "#showtooltip Blessing of Freedom\n/use [@mouseover,help]Blessing of Freedom;[help]Blessing of Freedom;Blessing of Freedom\n",
+				},
+				[132] = {
+					["icon"] = "134400",
+					["name"] = "Sac",
+					["body"] = "#showtooltip Blessing of Sacrifice\n/use [@mouseover,help]Blessing of Sacrifice;[help]Blessing of Sacrifice;Blessing of Sacrifice\n",
+				},
+				[123] = {
 					["icon"] = "134400",
 					["name"] = "DL",
 					["body"] = "#showtooltip\n/use [@mouseover,help]Divine Light;[help]Divine Light;Divine Light\n",
 				},
-				[126] = {
+				[127] = {
 					["icon"] = "134400",
 					["name"] = "HL",
 					["body"] = "#showtooltip\n/use [@mouseover,help]Holy Light;[help]Holy Light;Holy Light\n",
-				},
-				[132] = {
-					["icon"] = "135967",
-					["name"] = "Salv",
-					["body"] = "#showtooltip\n/use [@mouseover,help]Hand of Salvation;[help]Hand of Salvation;Hand of Salvation\n",
-				},
-				[123] = {
-					["icon"] = "524354",
-					["name"] = "DS",
-					["body"] = "#showtooltip Divine Shield\n/cancelaura Hand of Protection\n/cast Divine Shield\n/cancelaura Divine Shield\n",
-				},
-				[127] = {
-					["icon"] = "135964",
-					["name"] = "HoP",
-					["body"] = "#showtooltip\n/use [@mouseover,help]Hand of Protection;[help]Hand of Protection;Hand of Protection\n",
 				},
 				[133] = {
 					["icon"] = "135984",
@@ -557,39 +557,39 @@ MacroToolkitDB = {
 					["body"] = "#showtooltip\n/use [@mouseover,harm][]Hand of Reckoning\n",
 				},
 				[124] = {
-					["icon"] = "135907",
-					["name"] = "FoL",
-					["body"] = "#showtooltip\n/use [@mouseover,help]Flash of Light;[help]Flash of Light;Flash of Light\n",
+					["icon"] = "524354",
+					["name"] = "DS",
+					["body"] = "#showtooltip Divine Shield\n/cancelaura Blessing of Protection\n/cast Divine Shield\n/cancelaura Divine Shield\n",
 				},
 				[128] = {
-					["icon"] = "134400",
-					["name"] = "HR",
-					["body"] = "#showtooltip\n/use [@mouseover,help]Holy Radiance;[help]Holy Radiance;Holy Radiance\n",
+					["icon"] = "135964",
+					["name"] = "HoP",
+					["body"] = "#showtooltip\n/use [@mouseover,help]Blessing of Protection;[help]Blessing of Protection;Blessing of Protection\n",
 				},
-				[121] = {
-					["icon"] = "135953",
-					["name"] = "Cleanse Toxins",
-					["body"] = "#showtooltip\n/use [@mouseover.help]Cleanse Toxins;[help]Cleanse Toxins;Cleanse Toxins\n",
-				},
-				[129] = {
-					["icon"] = "134400",
-					["name"] = "HS",
-					["body"] = "#showtooltip\n/use [@mouseover,help]Holy Shock;[help]Holy Shock;Holy Shock\n",
-				},
-				[125] = {
-					["icon"] = "135968",
-					["name"] = "Freedom",
-					["body"] = "#showtooltip Blessing of Freedom\n/use [@mouseover,help]Blessing of Freedom;[help]Blessing of Freedom;Blessing of Freedom\n",
-				},
-				[130] = {
+				[131] = {
 					["icon"] = "135928",
 					["name"] = "LoH",
 					["body"] = "#showtooltip\n/use [@mouseover,help][@target,help][@player][]Lay on Hands\n",
 				},
-				[131] = {
-					["icon"] = "135966",
-					["name"] = "Sac",
-					["body"] = "#showtooltip Blessing of Sacrifice\n/use [@mouseover,help]Blessing of Sacrifice;[help]Blessing of Sacrifice;Blessing of Sacrifice\n",
+				[121] = {
+					["icon"] = "135875",
+					["name"] = "AW/Judge",
+					["body"] = "#showtooltip Avenging Wrath\n/use Judgment\n/use Avenging Wrath\n",
+				},
+				[125] = {
+					["icon"] = "135907",
+					["name"] = "FoL",
+					["body"] = "#showtooltip\n/use [@mouseover,help]Flash of Light;[help]Flash of Light;Flash of Light\n",
+				},
+				[130] = {
+					["icon"] = "134400",
+					["name"] = "HS",
+					["body"] = "#showtooltip\n/use [@mouseover,help]Holy Shock;[help]Holy Shock;Holy Shock\n",
+				},
+				[129] = {
+					["icon"] = "134400",
+					["name"] = "HR",
+					["body"] = "#showtooltip\n/use [@mouseover,help]Holy Radiance;[help]Holy Radiance;Holy Radiance\n",
 				},
 			},
 			["backups"] = {
@@ -1581,9 +1581,9 @@ MacroToolkitDB = {
 			["visshare"] = false,
 			["visaddslot"] = false,
 			["visaddscript"] = false,
-			["x"] = 1148.66870117188,
+			["x"] = 783.669006347656,
 			["viscrest"] = true,
-			["y"] = 99.0619277954102,
+			["y"] = 380.061950683594,
 			["override"] = true,
 			["viserrors"] = false,
 			["viscustom"] = false,

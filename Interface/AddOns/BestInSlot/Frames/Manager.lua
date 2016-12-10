@@ -508,7 +508,7 @@ function Manager:PopulateSlots(slotContainer)
       button:SetDisabled(false)
     end
     if type(itemid) == "number" and self:GetItem(itemid) then --Has a valid itemid value in the database
-      local item = self:GetItem(itemid)
+      local item = self:GetItem(itemid, difficulty)
       if slotId == 16 then
         local subclass = select(7, GetItemInfo(itemid))
         if item.equipSlot == "INVTYPE_2HWEAPON" or item.equipSlot == "INVTYPE_RANGED" or (item.equipSlot == "INVTYPE_RANGEDRIGHT" and subclass ~= BabbleInventory.Wands) then
@@ -611,12 +611,7 @@ local function dropdownRaidtierOnValueChanged(_,_,value)
     Manager:HideItemList(dropdownRaidtierOnValueChanged, _, _, value)
     return
   end
-  local difficulties = Manager:GetDifficulties(Manager.RAIDTIER, value)
-  dropdownImport:SetList(difficulties)
-  local selecDifficulty = Manager:GetSelected(Manager.DIFFICULTY)
-  dropdownImport:SetItemDisabled(selecDifficulty, true)
-  dropdownImport:SetItemDisabled(4, true)
-  dropdownImport:SetDisabled(value < 59999 or #difficulties < 2 or selecDifficulty == 4)
+  Manager:SetImportDropdownData(dropdownImport)
   Manager:PopulateSlots(slotContainer)
 end
 
@@ -625,12 +620,7 @@ local function dropdownDifficultyOnValueChanged(dropdown,_,value)
     Manager:HideItemList(dropdownDifficultyOnValueChanged, _,_,value)
     return
   end
-  dropdownImport:SetList(dropdown.list)
-  dropdownImport:SetItemDisabled(Manager:GetSelected(Manager.DIFFICULTY), false)
-  dropdownImport:SetItemDisabled(4, true)
-  dropdownImport:SetItemDisabled(value, true)
-  dropdownImport:SetValue(nil)
-  dropdownImport:SetDisabled(value == 4)
+  Manager:SetImportDropdownData(dropdownImport)
   Manager:PopulateSlots(slotContainer)
   Manager:ShowTutorial(frameName, 4)
 end
@@ -644,8 +634,42 @@ local function dropdownSpecializationOnValueChanged(_,_,value)
 end
 
 local function dropdownImport_OnValueChanged(_,_,value)
-  local popup = StaticPopup_Show("BESTINSLOT_CONFIRMIMPORT", Manager:GetDescription(Manager.DIFFICULTY, Manager:GetSelected(Manager.RAIDTIER), value))
+  local popup
+  if tonumber(value) then
+    popup = StaticPopup_Show("BESTINSLOT_CONFIRMIMPORT", Manager:GetDescription(Manager.DIFFICULTY, Manager:GetSelected(Manager.RAIDTIER), value))
+  else
+    popup = StaticPopup_Show("BESTINSLOT_CONFIRMCHARIMPORT", value)
+  end
   popup:SetFrameStrata("TOOLTIP")
+end
+
+function Manager:SetImportDropdownData(dropdown)
+  local selecDifficulty = self:GetSelected(self.DIFFICULTY)
+  local selectedRaidTier = self:GetSelected(self.RAIDTIER)
+  local selectedSpecialization = self:GetSelected(self.SPECIALIZATION)
+  local list = self:GetDifficulties(self.RAIDTIER, selectedRaidTier)
+  dropdownImport:SetList(list)
+  dropdown:SetValue(nil)
+  dropdown:SetItemDisabled(selecDifficulty, true)
+  dropdown:SetItemDisabled(4, true)
+  dropdown:SetDisabled(self:GetSelected(self.RAIDTIER) < 59999 or #dropdown.list < 2 or selecDifficulty == 4)
+  dropdown:AddItem("spacer", "")
+  dropdown:SetItemDisabled("spacer", true)
+  local firstChar = true
+  local thisChar = self.db:GetCurrentProfile()
+  for id, profile in pairs(self.db:GetProfiles()) do
+    local charDb = BestInSlotDB.char[profile]
+    if charDb and profile ~= thisChar and charDb[selectedRaidTier] and charDb[selectedRaidTier][selecDifficulty] and charDb[selectedRaidTier][selecDifficulty][selectedSpecialization] then
+      if firstChar then
+        firstChar = false
+      end
+      dropdown:AddItem(profile, profile)
+    end
+  end
+  if firstChar then
+    dropdown:AddItem("no_alt", L["No other characters to import"])
+    dropdown:SetItemDisabled("no_alt", true)
+  end
 end
 
 function Manager:Draw(container)
@@ -672,16 +696,15 @@ function Manager:Draw(container)
   container:AddChild(slotContainer)
   dropdownImport = AceGUI:Create("Dropdown")
   dropdownImport:SetList(dropdownDifficulty.list)
-  dropdownImport:SetLabel(L["Import from other difficulty"])
+  dropdownImport:SetLabel(L["Import from other difficulty/character"])
   dropdownImport:SetPoint("BOTTOMRIGHT", container.frame, "BOTTOMRIGHT", -78, 0)
-  dropdownImport:SetValue(nil)
-  local selecDifficulty = self:GetSelected(self.DIFFICULTY)
-  dropdownImport:SetItemDisabled(selecDifficulty, true)
-  dropdownImport:SetItemDisabled(4, true)
   dropdownImport:SetCallback("OnValueChanged", dropdownImport_OnValueChanged)
-  dropdownImport:SetDisabled(self:GetSelected(self.RAIDTIER) < 59999 or #dropdownImport.list < 2 or selecDifficulty == 4)
+  
+  self:SetImportDropdownData(dropdownImport)
+  
   container:AddChild(dropdownImport)
   container:SetUserData("importButton", dropdownImport)
+  
   self:PopulateSlots(slotContainer)
   slotContainer:DoLayout()
 end
@@ -706,7 +729,18 @@ function Manager:DoImport()
     self:SetItemBestInSlot(raidTier, difficulty, list, slotInfo[i], itemInfo.item)
   end
   self:PopulateSlots(slotContainer)
-  dropdownImport:SetValue(nil)
+end
+
+function Manager:DoCopyChar()
+    local selectedChar = dropdownImport:GetValue()
+    local selectedInfo = Manager:GetSelected()
+    local otherCharList = BestInSlotDB.char[selectedChar][selectedInfo.raidtier][selectedInfo.difficulty][selectedInfo.specialization]
+    for i, iteminfo in pairs(otherCharList) do
+      self:Print(i .. ": "..iteminfo)
+      self:SetItemBestInSlot(selectedInfo.raidtier, selectedInfo.difficulty, selectedInfo.specialization, i, iteminfo)
+    end
+    --if charDb and profile ~= thisChar and charDb[selectedRaidTier] and charDb[selectedRaidTier][selecDifficulty] and charDb[selectedRaidTier][selecDifficulty][selectedSpecialization] then
+    self:PopulateSlots(slotContainer)
 end
 
 Manager:RegisterTutorials(frameName,{
@@ -716,9 +750,17 @@ Manager:RegisterTutorials(frameName,{
   [4] = {text = L["When you've set a difficulty before, you can easily import a previously set list."], onRequest = true, xOffset = 0, yOffset = 0, container="content", element="importButton", DownArrow = true},
   [5] = {text = L["When selecting rings or trinkets, you can see both items at once."], text2 = L["Use left-click to (de)select the left one, and right-click to select the right one"], xOffset = -200, yOffset = -50, container = "content", element = "selectedItem", onRequest = true, UpArrow = true},
 })
-
+local function cancel()
+ dropdownImport:SetValue(nil)
+end
 local function doImport()
   Manager:DoImport()
+  cancel()
+end
+
+local function copyChar()
+  Manager:DoCopyChar()
+  cancel()
 end
 
 StaticPopupDialogs["BESTINSLOT_CONFIRMIMPORT"] = {
@@ -726,11 +768,20 @@ StaticPopupDialogs["BESTINSLOT_CONFIRMIMPORT"] = {
   button1 = YES,
   button2 = NO,
   OnAccept = doImport,
-  OnCancel = function()
-    dropdownImport:SetValue(nil)
-  end,
+  OnCancel = cancel,
   whileDead = true,
   hideOnEscape = true,
   preferredIndex = 3,
   exclusive = 1,
+}
+StaticPopupDialogs["BESTINSLOT_CONFIRMCHARIMPORT"] = {
+  text = L["Are you sure you want to import the list from %s? This will override your old BiS list!"],
+  button1 = YES,
+  button2 = NO,
+  OnAccept = copyChar,
+  OnCancel = cancel,
+  whileDead = true,
+  hideOnEscape = true,
+  preferredIndex = 3,
+  exclusive = 1
 }

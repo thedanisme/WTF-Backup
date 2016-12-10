@@ -2,7 +2,7 @@
 ## Title: Best In Slot [|cffff975bLegion Dungeons|r]
 ## Notes: Legion Dungeons Module for BestInSlot
 ## Author: Argathom @ Moonglade-EU
-## Version: r427
+## Version: r431
 ## Dependencies: BestInSlot
 
 BestInSlot_LegionDungeons.lua

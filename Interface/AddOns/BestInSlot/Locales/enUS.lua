@@ -60,11 +60,13 @@ L["After selecting an item, hovering over a different item will popup a compare 
 L["%s manager"] = true
 L["Use left-click to (de)select the left one, and right-click to select the right one"] = true
 L["Are you sure you want to import the %s difficulty? This will override your old BiS list!"] = true
-L["Import from other difficulty"] = true
+L["Are you sure you want to import the list from %s? This will override your old BiS list!"] = true
+L["Import from other difficulty/character"] = true
 L["Add lower raid tiers"] = true
 L["Only show this raid tier"] = true
 L["Only show items for specialization"] = true
 L["Show all items"] = true
+L["No other characters to import"] = true
 
 --Options Frame
 L["Debug messages"] = true

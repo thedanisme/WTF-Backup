@@ -37,7 +37,7 @@ Postal3DB = {
 				"Titte|Turalyon|Horde|100|DEATHKNIGHT", -- [32]
 				"Titt|Turalyon|Horde|100|DEATHKNIGHT", -- [33]
 				"Ured|Ner'zhul|Alliance|90|DEATHKNIGHT", -- [34]
-				"Whyfy|Stormrage|Alliance|100|PALADIN", -- [35]
+				"Whyfy|Stormrage|Alliance|101|PALADIN", -- [35]
 				"Yanlery|Stormrage|Alliance|100|WARRIOR", -- [36]
 			},
 		},

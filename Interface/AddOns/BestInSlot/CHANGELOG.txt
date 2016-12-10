@@ -1,4 +1,11 @@
 #BestInSlot Changelog
+##Release 7.1.03
+##Major additions
+* You can now import BiS lists from other characters of the same class and spec, provided they made one
+
+##Bug fixes 
+* Display issues in the BiS Manager should be fixed
+
 ##Release 7.1.02
 ###Major additions
 * The RequestBiS section now has a filter for armor types.

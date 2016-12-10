@@ -96,8 +96,8 @@ OneRing_Config = {
 					["id"] = 51005,
 				}, -- [4]
 				{
-					["sliceToken"] = "ABue2C/V=/ee",
 					["id"] = 195127,
+					["sliceToken"] = "ABue2C/V=/ee",
 				}, -- [5]
 				{
 					["show"] = "[spec:261/260/259] hide;",

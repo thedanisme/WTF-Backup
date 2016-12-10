@@ -13,7 +13,7 @@ _detalhes_database = {
 		["reverse"] = false,
 	},
 	["active_profile"] = "Emmarosa-Stormrage",
-	["last_day"] = "09",
+	["last_day"] = "10",
 	["ignore_nicktag"] = false,
 	["tabela_historico"] = {
 		["tabelas"] = {
@@ -29,15 +29,22 @@ _detalhes_database = {
 							["targets"] = {
 								["Bound Void Wraith"] = 277455,
 							},
-							["delay"] = 0,
+							["serial"] = "Player-60-0ADBB820",
 							["pets"] = {
 							},
-							["custom"] = 0,
+							["colocacao"] = 1,
+							["on_hold"] = false,
 							["classe"] = "PRIEST",
-							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 277455.008336,
+							["spec"] = 256,
+							["dps_started"] = false,
+							["total"] = 277455.008336,
+							["friendlyfire"] = {
+							},
+							["tipo"] = 1,
+							["nome"] = "Chucklefunk",
 							["spells"] = {
 								["_ActorTable"] = {
 									[47666] = {
@@ -58,36 +65,29 @@ _detalhes_database = {
 										["c_max"] = 110982,
 										["id"] = 47666,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
+										["spellschool"] = 2,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 110982,
 										["m_amt"] = 0,
+										["c_min"] = 110982,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
-										["a_dmg"] = 0,
-										["spellschool"] = 2,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["dps_started"] = false,
-							["total"] = 277455.008336,
-							["damage_taken"] = 0.008336,
-							["last_event"] = 1481065783,
-							["nome"] = "Chucklefunk",
-							["spec"] = 256,
 							["grupo"] = true,
-							["last_dps"] = 27745.5008336,
 							["end_time"] = 1481065790,
-							["colocacao"] = 1,
-							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
+							["last_dps"] = 27745.5008336,
+							["custom"] = 0,
+							["last_event"] = 1481065783,
+							["damage_taken"] = 0.008336,
 							["start_time"] = 1481065782,
-							["serial"] = "Player-60-0ADBB820",
-							["on_hold"] = false,
+							["delay"] = 0,
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 					},
 				}, -- [1]
@@ -112,19 +112,11 @@ _detalhes_database = {
 							["healing_taken"] = 0.004263,
 							["totalover"] = 383994.004263,
 							["total_without_pet"] = 0.004263,
-							["total"] = 0.004263,
-							["iniciar_hps"] = false,
 							["heal_enemy_amt"] = 0,
-							["end_time"] = 1481065790,
-							["delay"] = 0,
+							["iniciar_hps"] = false,
 							["classe"] = "PRIEST",
-							["nome"] = "Chucklefunk",
-							["targets_absorbs"] = {
-							},
-							["grupo"] = true,
-							["spec"] = 256,
-							["heal_enemy"] = {
-							},
+							["end_time"] = 1481065790,
+							["serial"] = "Player-60-0ADBB820",
 							["spells"] = {
 								["_ActorTable"] = {
 									[143924] = {
@@ -148,10 +140,10 @@ _detalhes_database = {
 										["m_crit"] = 0,
 										["c_curado"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 0,
 										["m_healed"] = 0,
 										["n_amt"] = 3,
-										["n_curado"] = 0,
-										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 									[186263] = {
@@ -175,21 +167,29 @@ _detalhes_database = {
 										["m_crit"] = 0,
 										["c_curado"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 0,
 										["m_healed"] = 0,
 										["n_amt"] = 0,
-										["n_curado"] = 0,
-										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 								},
 								["tipo"] = 3,
 							},
+							["nome"] = "Chucklefunk",
+							["targets_absorbs"] = {
+							},
+							["grupo"] = true,
+							["total"] = 0.004263,
+							["heal_enemy"] = {
+							},
+							["tipo"] = 2,
 							["custom"] = 0,
 							["last_event"] = 1481065788,
 							["on_hold"] = false,
 							["start_time"] = 1481065782,
-							["serial"] = "Player-60-0ADBB820",
-							["tipo"] = 2,
+							["delay"] = 0,
+							["spec"] = 256,
 						}, -- [1]
 					},
 				}, -- [2]
@@ -205,64 +205,64 @@ _detalhes_database = {
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["nome"] = "Chucklefunk",
+							["buff_uptime_targets"] = {
+							},
 							["spec"] = 256,
 							["grupo"] = true,
-							["classe"] = "PRIEST",
+							["tipo"] = 4,
+							["buff_uptime"] = 16,
+							["nome"] = "Chucklefunk",
 							["spell_cast"] = {
 								[47666] = 2,
 								[186263] = 1,
 							},
-							["buff_uptime_targets"] = {
-							},
+							["classe"] = "PRIEST",
 							["pets"] = {
 							},
-							["last_event"] = 1481065790,
-							["buff_uptime"] = 16,
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									[186403] = {
 										["uptime"] = 8,
 										["activedamt"] = 1,
 										["id"] = 186403,
+										["actived"] = false,
 										["targets"] = {
 										},
-										["actived"] = false,
 										["counter"] = 0,
 									},
 									[176151] = {
 										["uptime"] = 8,
 										["activedamt"] = 1,
 										["id"] = 176151,
+										["actived"] = false,
 										["targets"] = {
 										},
-										["actived"] = false,
 										["counter"] = 0,
 									},
 									[194384] = {
 										["uptime"] = 0,
 										["activedamt"] = 0,
 										["id"] = 194384,
+										["actived"] = false,
 										["targets"] = {
 										},
-										["actived"] = false,
 										["counter"] = 0,
 									},
 									[191619] = {
-										["counter"] = 0,
+										["actived_at"] = 1481065782,
 										["uptime"] = 0,
-										["targets"] = {
-										},
+										["actived"] = true,
 										["id"] = 191619,
 										["activedamt"] = 1,
-										["actived"] = true,
-										["actived_at"] = 1481065782,
+										["targets"] = {
+										},
+										["counter"] = 0,
 									},
 								},
 								["tipo"] = 9,
 							},
 							["serial"] = "Player-60-0ADBB820",
-							["tipo"] = 4,
+							["last_event"] = 1481065790,
 						}, -- [1]
 					},
 				}, -- [4]
@@ -281,7 +281,7 @@ _detalhes_database = {
 				["combat_counter"] = 1361,
 				["playing_solo"] = true,
 				["totals"] = {
-					277454.945384001, -- [1]
+					277454.924786002, -- [1]
 					-0.006824, -- [2]
 					{
 						0, -- [1]
@@ -292,15 +292,15 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
-					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
 				},
 				["player_last_events"] = {
 				},
@@ -312,10 +312,7 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage"] = {
-						{
-							["Chucklefunk"] = 277455.008336,
-						}, -- [1]
+					["damage_section"] = {
 					},
 					["heal_section"] = {
 					},
@@ -324,7 +321,10 @@ _detalhes_database = {
 							["Chucklefunk"] = 0.004263,
 						}, -- [1]
 					},
-					["damage_section"] = {
+					["damage"] = {
+						{
+							["Chucklefunk"] = 277455.008336,
+						}, -- [1]
 					},
 				},
 				["end_time"] = 76198.328,
@@ -349,12 +349,12 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
 				},
 				["start_time"] = 76190.445,
@@ -374,15 +374,22 @@ _detalhes_database = {
 							["targets"] = {
 								["Bound Void Wraith"] = 221964,
 							},
-							["delay"] = 0,
+							["serial"] = "Player-60-0ADBB820",
 							["pets"] = {
 							},
-							["custom"] = 0,
-							["total"] = 221964.002643,
+							["colocacao"] = 1,
+							["on_hold"] = false,
 							["classe"] = "PRIEST",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 221964.002643,
+							["spec"] = 256,
+							["dps_started"] = false,
+							["total"] = 221964.002643,
+							["friendlyfire"] = {
+							},
+							["last_event"] = 1481065687,
+							["nome"] = "Chucklefunk",
 							["spells"] = {
 								["_ActorTable"] = {
 									[47666] = {
@@ -403,36 +410,29 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 47666,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
+										["spellschool"] = 2,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 4,
-										["a_dmg"] = 0,
-										["spellschool"] = 2,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["dps_started"] = false,
-							["end_time"] = 1481065692,
-							["damage_taken"] = 0.002643,
-							["tipo"] = 1,
-							["nome"] = "Chucklefunk",
-							["spec"] = 256,
 							["grupo"] = true,
-							["last_dps"] = 22196.4002643,
 							["friendlyfire_total"] = 0,
-							["colocacao"] = 1,
-							["last_event"] = 1481065687,
-							["friendlyfire"] = {
-							},
+							["last_dps"] = 22196.4002643,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.002643,
 							["start_time"] = 1481065685,
-							["serial"] = "Player-60-0ADBB820",
-							["on_hold"] = false,
+							["delay"] = 0,
+							["end_time"] = 1481065692,
 						}, -- [1]
 					},
 				}, -- [1]
@@ -457,15 +457,25 @@ _detalhes_database = {
 							["healing_taken"] = 0.007523,
 							["totalover"] = 3686.007523,
 							["total_without_pet"] = 0.007523,
-							["end_time"] = 1481065692,
-							["iniciar_hps"] = false,
 							["heal_enemy_amt"] = 0,
-							["total"] = 0.007523,
-							["serial"] = "Player-60-0ADBB820",
+							["iniciar_hps"] = false,
 							["classe"] = "PRIEST",
+							["total"] = 0.007523,
+							["delay"] = 0,
+							["targets_absorbs"] = {
+							},
 							["nome"] = "Chucklefunk",
 							["spec"] = 256,
 							["grupo"] = true,
+							["end_time"] = 1481065692,
+							["heal_enemy"] = {
+							},
+							["last_event"] = 1481065688,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["start_time"] = 1481065685,
+							["serial"] = "Player-60-0ADBB820",
 							["spells"] = {
 								["_ActorTable"] = {
 									[143924] = {
@@ -489,25 +499,15 @@ _detalhes_database = {
 										["m_crit"] = 0,
 										["c_curado"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 0,
 										["m_healed"] = 0,
 										["n_amt"] = 3,
-										["n_curado"] = 0,
-										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 								},
 								["tipo"] = 3,
 							},
-							["heal_enemy"] = {
-							},
-							["targets_absorbs"] = {
-							},
-							["custom"] = 0,
-							["tipo"] = 2,
-							["on_hold"] = false,
-							["start_time"] = 1481065685,
-							["delay"] = 0,
-							["last_event"] = 1481065688,
 						}, -- [1]
 					},
 				}, -- [2]
@@ -523,54 +523,54 @@ _detalhes_database = {
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["nome"] = "Chucklefunk",
+							["buff_uptime_targets"] = {
+							},
 							["spec"] = 256,
 							["grupo"] = true,
-							["classe"] = "PRIEST",
+							["tipo"] = 4,
+							["buff_uptime"] = 14,
+							["nome"] = "Chucklefunk",
 							["spell_cast"] = {
 								[47666] = 3,
 							},
-							["buff_uptime_targets"] = {
-							},
+							["classe"] = "PRIEST",
 							["pets"] = {
 							},
-							["last_event"] = 1481065692,
-							["buff_uptime"] = 14,
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									[186403] = {
 										["uptime"] = 7,
 										["activedamt"] = 1,
 										["id"] = 186403,
+										["actived"] = false,
 										["targets"] = {
 										},
-										["actived"] = false,
 										["counter"] = 0,
 									},
 									[176151] = {
 										["uptime"] = 7,
 										["activedamt"] = 1,
 										["id"] = 176151,
+										["actived"] = false,
 										["targets"] = {
 										},
-										["actived"] = false,
 										["counter"] = 0,
 									},
 									[191619] = {
-										["counter"] = 0,
+										["actived_at"] = 1481065685,
 										["uptime"] = 0,
-										["targets"] = {
-										},
+										["actived"] = true,
 										["id"] = 191619,
 										["activedamt"] = 1,
-										["actived"] = true,
-										["actived_at"] = 1481065685,
+										["targets"] = {
+										},
+										["counter"] = 0,
 									},
 								},
 								["tipo"] = 9,
 							},
 							["serial"] = "Player-60-0ADBB820",
-							["tipo"] = 4,
+							["last_event"] = 1481065692,
 						}, -- [1]
 					},
 				}, -- [4]
@@ -600,15 +600,15 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
-					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
 				},
 				["player_last_events"] = {
 				},
@@ -620,10 +620,7 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage"] = {
-						{
-							["Chucklefunk"] = 221964.002643,
-						}, -- [1]
+					["damage_section"] = {
 					},
 					["heal_section"] = {
 					},
@@ -632,7 +629,10 @@ _detalhes_database = {
 							["Chucklefunk"] = 0.007523,
 						}, -- [1]
 					},
-					["damage_section"] = {
+					["damage"] = {
+						{
+							["Chucklefunk"] = 221964.002643,
+						}, -- [1]
 					},
 				},
 				["end_time"] = 76101.205,
@@ -657,12 +657,12 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
 				},
 				["start_time"] = 76093.966,
@@ -682,22 +682,15 @@ _detalhes_database = {
 							["targets"] = {
 								["Sister Might"] = 463239,
 							},
-							["serial"] = "Player-60-0ADBB820",
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
+							["custom"] = 0,
+							["classe"] = "PRIEST",
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 463239.008357,
-							["spec"] = 256,
-							["dps_started"] = false,
-							["total"] = 463239.008357,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["nome"] = "Chucklefunk",
 							["spells"] = {
 								["_ActorTable"] = {
 									[47666] = {
@@ -718,16 +711,16 @@ _detalhes_database = {
 										["c_max"] = 110982,
 										["id"] = 47666,
 										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 110982,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 2,
 									},
 									[585] = {
 										["c_amt"] = 0,
@@ -747,29 +740,36 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 585,
 										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 2,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["grupo"] = true,
-							["end_time"] = 1480721679,
-							["last_dps"] = 46323.9008357,
-							["custom"] = 0,
-							["last_event"] = 1480721678,
+							["dps_started"] = false,
+							["total"] = 463239.008357,
 							["damage_taken"] = 0.008357,
+							["last_event"] = 1480721678,
+							["nome"] = "Chucklefunk",
+							["spec"] = 256,
+							["grupo"] = true,
+							["last_dps"] = 46323.9008357,
+							["end_time"] = 1480721679,
+							["colocacao"] = 1,
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1480721673,
-							["delay"] = 0,
-							["classe"] = "PRIEST",
+							["serial"] = "Player-60-0ADBB820",
+							["on_hold"] = false,
 						}, -- [1]
 					},
 				}, -- [1]
@@ -781,34 +781,28 @@ _detalhes_database = {
 							["flag_original"] = 1297,
 							["totalabsorb"] = 0.006647,
 							["last_hps"] = 30933.1006647,
-							["healing_from"] = {
+							["targets_overheal"] = {
+								["Chucklefunk"] = 11331,
 							},
 							["targets"] = {
 								["Sarelais"] = 309331,
 							},
-							["tipo"] = 2,
+							["last_event"] = 1480721678,
 							["pets"] = {
 							},
 							["totalover_without_pet"] = 0.006647,
-							["targets_overheal"] = {
-								["Chucklefunk"] = 11331,
+							["healing_from"] = {
 							},
-							["heal_enemy_amt"] = 0,
+							["classe"] = "PRIEST",
 							["totalover"] = 11331.006647,
 							["total_without_pet"] = 309331.006647,
 							["iniciar_hps"] = false,
 							["healing_taken"] = 0.006647,
-							["classe"] = "PRIEST",
-							["total"] = 309331.006647,
-							["spec"] = 256,
+							["heal_enemy_amt"] = 0,
 							["end_time"] = 1480721679,
+							["custom"] = 0,
+							["total"] = 309331.006647,
 							["nome"] = "Chucklefunk",
-							["targets_absorbs"] = {
-							},
-							["grupo"] = true,
-							["delay"] = 0,
-							["heal_enemy"] = {
-							},
 							["spells"] = {
 								["_ActorTable"] = {
 									[208771] = {
@@ -831,10 +825,10 @@ _detalhes_database = {
 										["m_crit"] = 0,
 										["c_curado"] = 0,
 										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 90405,
-										["n_amt"] = 2,
 										["m_healed"] = 0,
+										["n_amt"] = 2,
+										["n_curado"] = 90405,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 									[81751] = {
@@ -857,10 +851,10 @@ _detalhes_database = {
 										["m_crit"] = 0,
 										["c_curado"] = 0,
 										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 114026,
-										["n_amt"] = 4,
 										["m_healed"] = 0,
+										["n_amt"] = 4,
+										["n_curado"] = 114026,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 									[143924] = {
@@ -884,10 +878,10 @@ _detalhes_database = {
 										["m_crit"] = 0,
 										["c_curado"] = 0,
 										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 0,
-										["n_amt"] = 5,
 										["m_healed"] = 0,
+										["n_amt"] = 5,
+										["n_curado"] = 0,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 									[94472] = {
@@ -910,21 +904,27 @@ _detalhes_database = {
 										["m_crit"] = 0,
 										["c_curado"] = 104900,
 										["m_amt"] = 0,
-										["c_min"] = 52450,
-										["n_curado"] = 0,
-										["n_amt"] = 0,
 										["m_healed"] = 0,
+										["n_amt"] = 0,
+										["n_curado"] = 0,
+										["c_min"] = 52450,
 										["absorbed"] = 0,
 									},
 								},
 								["tipo"] = 3,
 							},
+							["grupo"] = true,
+							["serial"] = "Player-60-0ADBB820",
+							["heal_enemy"] = {
+							},
+							["spec"] = 256,
 							["colocacao"] = 1,
-							["last_event"] = 1480721678,
+							["tipo"] = 2,
 							["on_hold"] = false,
 							["start_time"] = 1480721673,
-							["serial"] = "Player-60-0ADBB820",
-							["custom"] = 0,
+							["delay"] = 0,
+							["targets_absorbs"] = {
+							},
 						}, -- [1]
 					},
 				}, -- [2]
@@ -940,46 +940,46 @@ _detalhes_database = {
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["buff_uptime_targets"] = {
-							},
+							["nome"] = "Chucklefunk",
 							["spec"] = 256,
 							["grupo"] = true,
-							["classe"] = "PRIEST",
+							["tipo"] = 4,
+							["buff_uptime"] = 6,
+							["buff_uptime_targets"] = {
+							},
 							["spell_cast"] = {
 								[47666] = 3,
 								[585] = 2,
 							},
-							["nome"] = "Chucklefunk",
+							["classe"] = "PRIEST",
 							["pets"] = {
 							},
-							["last_event"] = 1480721679,
-							["buff_uptime"] = 6,
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									[176151] = {
 										["uptime"] = 6,
 										["activedamt"] = 1,
 										["id"] = 176151,
-										["actived"] = false,
 										["targets"] = {
 										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
 									[191618] = {
-										["actived_at"] = 1480721673,
+										["counter"] = 0,
 										["uptime"] = 0,
-										["actived"] = true,
-										["id"] = 191618,
-										["activedamt"] = 1,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["id"] = 191618,
+										["activedamt"] = 1,
+										["actived"] = true,
+										["actived_at"] = 1480721673,
 									},
 								},
 								["tipo"] = 9,
 							},
 							["serial"] = "Player-60-0ADBB820",
-							["tipo"] = 4,
+							["last_event"] = 1480721679,
 						}, -- [1]
 					},
 				}, -- [4]
@@ -1009,15 +1009,15 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["cooldowns_defensive"] = -0.00977300000000003,
-						["dispell"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
 						["interrupt"] = -0.00844500000000004,
 						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = -0.00977300000000003,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
 				["player_last_events"] = {
 				},
@@ -1029,7 +1029,10 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage_section"] = {
+					["damage"] = {
+						{
+							["Chucklefunk"] = 463239.008357,
+						}, -- [1]
 					},
 					["heal_section"] = {
 					},
@@ -1038,10 +1041,7 @@ _detalhes_database = {
 							["Chucklefunk"] = 309331.006647,
 						}, -- [1]
 					},
-					["damage"] = {
-						{
-							["Chucklefunk"] = 463239.008357,
-						}, -- [1]
+					["damage_section"] = {
 					},
 				},
 				["end_time"] = 49621.757,
@@ -1067,12 +1067,12 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
 				["start_time"] = 49615.757,
@@ -1082,10 +1082,9 @@ _detalhes_database = {
 			}, -- [3]
 		},
 	},
-	["combat_counter"] = 1364,
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
+	["combat_counter"] = 1365,
+	["character_data"] = {
+		["logons"] = 47,
 	},
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
@@ -1095,11 +1094,11 @@ _detalhes_database = {
 			["max_emote_segments"] = 3,
 			["author"] = "Details! Team",
 			["window_scale"] = 1,
-			["encounter_timers_dbm"] = {
-			},
+			["hide_on_combat"] = false,
 			["show_icon"] = 5,
 			["opened"] = 0,
-			["hide_on_combat"] = false,
+			["encounter_timers_dbm"] = {
+			},
 		},
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
 			["lasttry"] = {
@@ -1107,10 +1106,10 @@ _detalhes_database = {
 			["annouce"] = true,
 			["dpshistory"] = {
 			},
-			["enabled"] = true,
+			["dps"] = 0,
 			["author"] = "Details! Team",
 			["level"] = 1,
-			["dps"] = 0,
+			["enabled"] = true,
 		},
 		["DETAILS_PLUGIN_CHART_VIEWER"] = {
 			["enabled"] = true,
@@ -1124,8 +1123,8 @@ _detalhes_database = {
 					["texture"] = "line",
 				}, -- [1]
 				{
-					["version"] = "v2.0",
 					["iType"] = "raid-HEALER",
+					["version"] = "v2.0",
 					["options"] = {
 						["iType"] = "raid-HEALER",
 						["name"] = "Raid Healing Done",
@@ -1136,8 +1135,8 @@ _detalhes_database = {
 					["texture"] = "line",
 				}, -- [2]
 				{
-					["version"] = "v2.0",
 					["iType"] = "raid-HEALER",
+					["version"] = "v2.0",
 					["options"] = {
 						["iType"] = "raid-HEALER",
 						["name"] = "Healing (Same Class)",
@@ -1148,8 +1147,8 @@ _detalhes_database = {
 					["texture"] = "line",
 				}, -- [3]
 				{
-					["version"] = "v2.0",
 					["iType"] = "raid-HEALER",
+					["version"] = "v2.0",
 					["options"] = {
 						["iType"] = "raid-HEALER",
 						["name"] = "All Healers",
@@ -1160,8 +1159,8 @@ _detalhes_database = {
 					["texture"] = "line",
 				}, -- [4]
 				{
-					["iType"] = "raid-DAMAGER",
 					["version"] = "v2.0",
+					["iType"] = "raid-DAMAGER",
 					["options"] = {
 						["iType"] = "raid-DAMAGER",
 						["name"] = "Damager (Same Class)",
@@ -1174,15 +1173,47 @@ _detalhes_database = {
 				["last_selected"] = 5,
 			},
 			["options"] = {
-				["show_method"] = 4,
 				["auto_create"] = true,
+				["show_method"] = 4,
 				["window_scale"] = 1,
 			},
 		},
 	},
-	["last_version"] = "v7.1.0.3222",
+	["last_version"] = "v7.1.0.3229",
 	["SoloTablesSaved"] = {
 		["Mode"] = 1,
+	},
+	["nick_tag_cache"] = {
+		["last_version"] = 8,
+		[167333142] = {
+			"Mapledk", -- [1]
+			"Interface\\EncounterJournal\\UI-EJ-BOSS-Default", -- [2]
+			{
+				0, -- [1]
+				1, -- [2]
+				0, -- [3]
+				1, -- [4]
+			}, -- [3]
+			"Interface\\PetBattles\\Weather-Windy", -- [4]
+			{
+				0.9453125, -- [1]
+				0.07421875, -- [2]
+				0.8203125, -- [3]
+				0, -- [4]
+			}, -- [5]
+			{
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			}, -- [6]
+			2, -- [7]
+		},
+		["nextreset"] = 1481439202,
+	},
+	["tabela_instancias"] = {
+	},
+	["combat_id"] = 3,
+	["savedStyles"] = {
 	},
 	["cached_talents"] = {
 		["Player-60-0ADBB820"] = {
@@ -1195,16 +1226,7 @@ _detalhes_database = {
 			22315, -- [7]
 		},
 	},
-	["tabela_instancias"] = {
-	},
-	["combat_id"] = 3,
-	["savedStyles"] = {
-	},
-	["savedbuffs"] = {
-	},
-	["character_data"] = {
-		["logons"] = 46,
-	},
+	["last_instance_time"] = 1480637431,
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
@@ -1282,47 +1304,22 @@ _detalhes_database = {
 			},
 		}, -- [2]
 	},
-	["last_instance_time"] = 1480637431,
+	["savedbuffs"] = {
+	},
 	["announce_cooldowns"] = {
+		["enabled"] = false,
 		["ignored_cooldowns"] = {
 		},
-		["enabled"] = false,
 		["custom"] = "",
 		["channel"] = "RAID",
 	},
-	["nick_tag_cache"] = {
-		["last_version"] = 8,
-		[167333142] = {
-			"Mapledk", -- [1]
-			"Interface\\EncounterJournal\\UI-EJ-BOSS-Default", -- [2]
-			{
-				0, -- [1]
-				1, -- [2]
-				0, -- [3]
-				1, -- [4]
-			}, -- [3]
-			"Interface\\PetBattles\\Weather-Windy", -- [4]
-			{
-				0.9453125, -- [1]
-				0.07421875, -- [2]
-				0.8203125, -- [3]
-				0, -- [4]
-			}, -- [5]
-			{
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			}, -- [6]
-			2, -- [7]
-		},
-		["nextreset"] = 1481439202,
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
 	},
 	["last_instance_id"] = 1458,
 	["cached_specs"] = {
-		["Player-60-0ADE8813"] = 256,
-		["Player-60-0680705B"] = 258,
-		["Player-60-0AD28B6B"] = 258,
+		["Player-60-0AD0FD00"] = 258,
 		["Player-60-0ADBB820"] = 256,
-		["Player-60-09E0E614"] = 258,
 	},
 }

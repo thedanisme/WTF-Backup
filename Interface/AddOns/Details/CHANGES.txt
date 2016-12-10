@@ -1,5 +1,11 @@
-changeset:   577:1941266a4bf1
+changeset:   578:f1969f8c8f6d
 tag:         tip
+user:        Tercio
+date:        Fri Dec 09 15:28:39 2016 -0200
+summary:     - when a window is locked, resize grips shouldn't be enabled messing with bar mouse over.
+
+
+changeset:   577:1941266a4bf1
 user:        Tercio
 date:        Mon Nov 28 16:28:05 2016 -0200
 summary:     - Added Unstable Affliction to common spells with the same name.
@@ -597,11 +603,5 @@ changeset:   478:7d81cfb9bcd8
 user:        Tercioo
 date:        Sat Jan 09 23:17:55 2016 -0200
 summary:     - Fix for the weakauras creator for DBM and BidWigs Timers.
-
-
-changeset:   477:5c82b4c668a5
-user:        Tercioo
-date:        Sat Jan 09 15:03:01 2016 -0200
-summary:     class not found test
 
 

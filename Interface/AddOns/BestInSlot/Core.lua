@@ -19,7 +19,7 @@ BestInSlot.defaultModuleState = false
 BestInSlot.options.DEBUG = false
 BestInSlot.Author = ("%s%s @ %s"):format("|c"..RAID_CLASS_COLORS.SHAMAN.colorStr, "Feng".."|r",ConvertRGBtoColorString(PLAYER_FACTION_COLORS[0]).."Moonglade|r")
 --@non-debug@ 
-BestInSlot.version = 427 
+BestInSlot.version = 431 
 --@end-non-debug@
 BestInSlot.AlphaVersion = not (GetAddOnMetadata("BestInSlot", "Version"):find("Release") and true or false)
 --@end-do-not-package@
