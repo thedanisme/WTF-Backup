@@ -3,8 +3,6 @@ BigWigs3DB = {
 	["namespaces"] = {
 		["BigWigs_Plugins_Victory"] = {
 		},
-		["BigWigs_Bosses_Hymdall"] = {
-		},
 		["BigWigs_Plugins_Alt Power"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -19,25 +17,9 @@ BigWigs3DB = {
 		},
 		["BigWigs_Plugins_BossBlock"] = {
 		},
-		["BigWigs_Bosses_Odyn"] = {
-		},
 		["BigWigs_Plugins_Sounds"] = {
 		},
-		["BigWigs_Bosses_God-King Skovald"] = {
-		},
 		["BigWigs_Plugins_Statistics"] = {
-		},
-		["BigWigs_Bosses_Lady Hatecoil"] = {
-		},
-		["BigWigs_Bosses_Hyrja"] = {
-		},
-		["BigWigs_Bosses_Halls of Valor Trash"] = {
-		},
-		["BigWigs_Bosses_Fenryr"] = {
-		},
-		["BigWigs_Bosses_King Deepbeard"] = {
-		},
-		["BigWigs_Bosses_Serpentrix"] = {
 		},
 		["BigWigs_Plugins_Colors"] = {
 		},
@@ -62,11 +44,11 @@ BigWigs3DB = {
 					},
 					["emphasizeGrowup"] = true,
 					["BigWigsAnchor_x"] = 435.911078263653,
+					["interceptKey"] = "SHIFT",
 					["MiddleButton"] = {
 						["remove"] = false,
 						["emphasize"] = true,
 					},
-					["interceptKey"] = "SHIFT",
 					["texture"] = "Melli",
 					["interceptMouse"] = true,
 					["BigWigsEmphasizeAnchor_x"] = 952.17849527864,
@@ -77,7 +59,7 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Bosses_Wrath of Azshara"] = {
+		["BigWigs_Plugins_HeroesVoices"] = {
 		},
 		["BigWigs_Plugins_Super Emphasize"] = {
 			["profiles"] = {
@@ -86,14 +68,24 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Bosses_Warlord Parjesh"] = {
-		},
-		["LibDualSpec-1.0"] = {
-		},
 		["BigWigs_Plugins_Pull"] = {
 			["profiles"] = {
 				["Default"] = {
 					["countType"] = "normal",
+				},
+			},
+		},
+		["BigWigs_Plugins_Messages"] = {
+			["profiles"] = {
+				["Default"] = {
+					["BWEmphasizeMessageAnchor_x"] = 607.288990399575,
+					["BWEmphasizeCountdownMessageAnchor_x"] = 834.844725076364,
+					["BWEmphasizeMessageAnchor_y"] = 521.244500468838,
+					["BWMessageAnchor_y"] = 601.599927761818,
+					["BWMessageAnchor_x"] = 612.266768297886,
+					["BWEmphasizeCountdownMessageAnchor_y"] = 364.088897705078,
+					["font"] = "Gotham-Narrow",
+					["fontSize"] = 20,
 				},
 			},
 		},
@@ -116,23 +108,9 @@ BigWigs3DB = {
 		},
 		["BigWigs_Plugins_Respawn"] = {
 		},
-		["BigWigs_Plugins_Messages"] = {
-			["profiles"] = {
-				["Default"] = {
-					["BWEmphasizeMessageAnchor_x"] = 607.288990399575,
-					["BWEmphasizeCountdownMessageAnchor_x"] = 834.844725076364,
-					["BWEmphasizeMessageAnchor_y"] = 521.244500468838,
-					["BWMessageAnchor_y"] = 601.599927761818,
-					["BWMessageAnchor_x"] = 612.266768297886,
-					["BWEmphasizeCountdownMessageAnchor_y"] = 364.088897705078,
-					["font"] = "Gotham-Narrow",
-					["fontSize"] = 20,
-				},
-			},
-		},
 		["BigWigs_Plugins_Common Auras"] = {
 		},
-		["BigWigs_Plugins_HeroesVoices"] = {
+		["LibDualSpec-1.0"] = {
 		},
 	},
 	["global"] = {
@@ -181,15 +159,15 @@ BigWigsStatisticsDB = {
 		},
 	},
 	[604] = {
-		[1636] = {
-			["25h"] = {
-				["best"] = 154.552,
-				["kills"] = 1,
-			},
-		},
 		[1629] = {
 			["25h"] = {
 				["best"] = 4.77199999999903,
+				["kills"] = 1,
+			},
+		},
+		[1636] = {
+			["25h"] = {
+				["best"] = 154.552,
 				["kills"] = 1,
 			},
 		},
@@ -217,15 +195,15 @@ BigWigsStatisticsDB = {
 				["kills"] = 1,
 			},
 		},
-		[1628] = {
-			["25h"] = {
-				["best"] = 3.55500000000029,
-				["kills"] = 1,
-			},
-		},
 		[1635] = {
 			["25h"] = {
 				["best"] = 12.6820000000007,
+				["kills"] = 1,
+			},
+		},
+		[1628] = {
+			["25h"] = {
+				["best"] = 3.55500000000029,
 				["kills"] = 1,
 			},
 		},

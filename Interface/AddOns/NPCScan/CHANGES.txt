@@ -1,10 +1,28 @@
-tag 3be68a128be3ebc187d744e81f71fefba5f65986 7.1.0.3
+tag d28f7b88bc4dc9ed52d1449be382eb64fd134799 7.1.0.4
 Author:	James D. Callahan III <jcallahan@curse.com>
-Date:	Fri Dec 9 21:22:42 2016 -0600
+Date:	Sun Dec 11 00:31:01 2016 -0600
 
-commit abf29baaec110a065a7085548065981a43399b0b
+commit 30dba3a675f29bbbf641fef5606035b3adaddfc1
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Fri Dec 9 21:22:20 2016 -0600
+Date:   Sun Dec 11 00:30:31 2016 -0600
 
-    Additions and updates for NPCs and their quests.
+    Add questID for 22 NPCs.
+
+commit 4023615fba168cfd19a60aaf3ec525eaddde9809
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Sun Dec 11 00:29:49 2016 -0600
+
+    Add attribution for missing members of ΓÇ£Worgen StalkersΓÇ¥ and ΓÇ£Forsaken DeathsquadΓÇ¥
+
+commit c7d717b6a1da7c50f5808e5628a4a84bfe9e777f
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Sun Dec 11 00:24:25 2016 -0600
+
+    Add Withered JΓÇÖim.
+
+commit c7c5e3d03541cb2869b52c4b9f4e7b9f6dd2790d
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Fri Dec 9 22:18:06 2016 -0600
+
+    Show the vignette name in parenthesis if different from the NPC name, since this is typically what shows in the default UIΓÇÖs Achievement listing.
 

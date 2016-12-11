@@ -1,0 +1,10 @@
+
+RelicInspectorDB = {
+	["profileKeys"] = {
+		["Whyfy - Stormrage"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}

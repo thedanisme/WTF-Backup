@@ -2,10 +2,19 @@ VER 3 0100000000000013 "AW/Judge" "INV_Misc_QuestionMark"
 #showtooltip Avenging Wrath
 /use Judgment
 /use Avenging Wrath
+/use Holy Avenger
+END
+VER 3 0100000000000017 "Bestow Faith" "INV_Misc_QuestionMark"
+#showtooltip
+/use [@mouseover,help]Bestow Faith;[help]Bestow Faith;Bestow Faith
 END
 VER 3 0100000000000010 "Cleanse Toxins" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /use [@mouseover,help]Cleanse Toxins;[help]Cleanse Toxins;Cleanse Toxins
+END
+VER 3 0100000000000014 "CleanseHoly" "INV_Misc_QuestionMark"
+#showtooltip
+/use [@mouseover,help]Cleanse;[help]Cleanse;Cleanse
 END
 VER 3 0100000000000002 "DL" "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -45,8 +54,18 @@ VER 3 0100000000000005 "LoH" "SPELL_HOLY_LAYONHANDS"
 #showtooltip
 /use [@mouseover,help][@target,help][@player][]Lay on Hands
 END
+VER 3 0100000000000016 "LotM" "INV_Misc_QuestionMark"
+#showtooltip
+/use [@mouseover,help]Light of the Martyr;[help]Light of the Martyr;Light of the Martyr
+END
+VER 3 0100000000000015 "Mountage" "Ability_Mount_AlliancePVPMount."
+#showtooltip
+/dismount [mounted]
+/stopmacro [mounted]
+/use [noflyable,nomounted]Summon Charger;[nomounted,flyable]Drake of the East Wind
+END
 VER 3 0100000000000011 "Sac" "INV_MISC_QUESTIONMARK"
-#showtooltip Blessing of Sacrifice
+#showtooltip
 /use [@mouseover,help]Blessing of Sacrifice;[help]Blessing of Sacrifice;Blessing of Sacrifice
 END
 VER 3 0100000000000003 "Taunt" "INV_MISC_QUESTIONMARK"

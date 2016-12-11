@@ -2,6 +2,7 @@ VER 3 0100000000000013 "AW/Judge" "INV_Misc_QuestionMark"
 #showtooltip Avenging Wrath
 /use Judgment
 /use Avenging Wrath
+/use Holy Avenger
 END
 VER 3 0100000000000017 "Bestow Faith" "INV_Misc_QuestionMark"
 #showtooltip
@@ -21,7 +22,6 @@ VER 3 0100000000000002 "DL" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0100000000000009 "DS" "SPELL_HOLY_DIVINESHIELD"
 #showtooltip Divine Shield
-/cancelaura Blessing of Protection
 /cast Divine Shield
 /cancelaura Divine Shield
 END
@@ -60,6 +60,7 @@ END
 VER 3 0100000000000015 "Mountage" "Ability_Mount_AlliancePVPMount."
 #showtooltip
 /dismount [mounted]
+/stopmacro [mounted]
 /use [noflyable,nomounted]Summon Charger;[nomounted,flyable]Drake of the East Wind
 END
 VER 3 0100000000000011 "Sac" "INV_MISC_QUESTIONMARK"

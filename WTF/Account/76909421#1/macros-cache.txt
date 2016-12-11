@@ -13,9 +13,6 @@ END
 VER 3 000000000000013C "ClearMark" "INV_Hammer_Unique_Sulfuras"
 /run SetRaidTarget("PLAYER",0)
 END
-VER 3 00000000000000DA "DisbandEvrything" "INV_valkierpet"
-/run for i=1,GetNumGroupMembers()do if UnitName("raid"..i)~=UnitName("player")then UninviteUnit("raid"..i,"reason")end end LeaveParty()
-END
 VER 3 000000000000011F "focus" "Ability_Creature_Cursed_01."
 /focus [@mouseover]
 END
@@ -38,9 +35,6 @@ VER 3 0000000000000144 "Mage food" "Ability_Mage_ConjureFoodRank9."
 /use Conjured Mana Fritter
 /use Conjured Mana Pudding
 END
-VER 3 000000000000013F "MountSellers" "Spell_Beastmaster_clefthoof"
-/2 Have 2 accounts or maybe a good friend and don't want to pay for the Mushan Beast mount?  This is how you get it yourself:  http://pastebin.com/h5ip1Duq
-END
 VER 3 0000000000000137 "Pull Timer" "Spell_Fire_FelFlameBolt"
 /pull 10
 END
@@ -48,8 +42,11 @@ VER 3 000000000000014A "RandomPath" "ACHIEVEMENT_GUILDPERK_MOUNTUP"
 /run C_MountJournal.SummonByID(0)
 /use Path of Frost
 END
-VER 3 0000000000000148 "RandomPet" "INV_Pet_Achievement_CatchUncommonPet."
-/run q=C_PetJournal;v={q.GetNumPets()}r=random(v[2])p={q.GetPetInfoByIndex(r)}q.SummonPetByGUID(p[1])SendChatMessage("spins the Wheel O' Pets! The wheel stops on "..p[8].."!","emote");
+VER 3 0000000000000158 "SaveHoly" "Spell_Holy_Chastise."
+/run SaveEquipmentSet("H")
+END
+VER 3 0000000000000157 "SaveRet" "INV_Sword_2H_AshbringerCorrupt."
+/run SaveEquipmentSet("Ret")
 END
 VER 3 000000000000014D "t1" "INV_Misc_QuestionMark"
 END

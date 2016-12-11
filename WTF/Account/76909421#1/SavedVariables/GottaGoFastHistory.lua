@@ -55,7 +55,7 @@ GottaGoFastHistoryDB = {
 									["role"] = "DAMAGER",
 								}, -- [5]
 							},
-							["startTime"] = 26229.506,
+							["level"] = 2,
 							["objectiveTimes"] = {
 								"05:29.680", -- [1]
 								"14:46.001", -- [2]
@@ -63,7 +63,7 @@ GottaGoFastHistoryDB = {
 								"27:15.909", -- [4]
 								"24:36.524", -- [5]
 							},
-							["level"] = 2,
+							["startTime"] = 26229.506,
 						}, -- [1]
 					},
 					["name"] = "Neltharion's Lair",
@@ -100,8 +100,8 @@ GottaGoFastHistoryDB = {
 								["year"] = 2016,
 								["mins"] = 22,
 							},
-							["startTime"] = 65519.061,
 							["level"] = 2,
+							["startTime"] = 65519.061,
 							["objectiveTimes"] = {
 								"02:02.965", -- [1]
 								"06:26.705", -- [2]
@@ -177,14 +177,14 @@ GottaGoFastHistoryDB = {
 									["role"] = "DAMAGER",
 								}, -- [5]
 							},
-							["level"] = 2,
+							["startTime"] = 67718.069,
 							["objectiveTimes"] = {
 								"02:24.822", -- [1]
 								"06:17.309", -- [2]
 								"11:57.104", -- [3]
 								"09:03.638", -- [4]
 							},
-							["startTime"] = 67718.069,
+							["level"] = 2,
 						}, -- [2]
 					},
 				},
@@ -231,7 +231,7 @@ GottaGoFastHistoryDB = {
 									["role"] = "DAMAGER",
 								}, -- [5]
 							},
-							["startTime"] = 38412.588,
+							["level"] = 2,
 							["objectiveTimes"] = {
 								"05:21.478", -- [1]
 								"10:45.833", -- [2]
@@ -239,7 +239,7 @@ GottaGoFastHistoryDB = {
 								"18:14.339", -- [4]
 								"16:49.175", -- [5]
 							},
-							["level"] = 2,
+							["startTime"] = 38412.588,
 						}, -- [1]
 					},
 					["name"] = "Darkheart Thicket",
@@ -278,8 +278,8 @@ GottaGoFastHistoryDB = {
 								["year"] = 2016,
 								["mins"] = 14,
 							},
-							["startTime"] = 99139.574,
 							["level"] = 2,
+							["startTime"] = 99139.574,
 							["objectiveTimes"] = {
 								"06:37.557", -- [1]
 								"16:03.852", -- [2]

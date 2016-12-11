@@ -1,11 +1,11 @@
 
 bdlc_config = {
-	["lc_rank"] = "4: Officer Alt",
 	["council_min_rank"] = 2,
+	["lc_rank"] = "4: Officer Alt",
 	["custom_qn"] = {
 		["2p"] = true,
-		["4p"] = true,
 		["BiS"] = true,
+		["4p"] = true,
 		["SUCK A DICK"] = true,
 	},
 	["custom_council"] = {

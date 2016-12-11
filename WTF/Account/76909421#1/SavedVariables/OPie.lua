@@ -159,6 +159,21 @@ OneRing_Config = {
 					["sliceToken"] = "ABue2VZFuI4",
 					["id"] = 200802,
 				}, -- [17]
+				{
+					["sliceToken"] = "ABue2Nu/uxE",
+					["id"] = 203528,
+					["show"] = "[spec:66/65] hide;[nocombat]",
+				}, -- [18]
+				{
+					["sliceToken"] = "ABue2Nu/uxW",
+					["id"] = 203538,
+					["show"] = "[spec:66/65] hide;[nocombat]",
+				}, -- [19]
+				{
+					["sliceToken"] = "ABue2Nu/uxQ",
+					["id"] = 203539,
+					["show"] = "[spec:66/65] hide;[nocombat]",
+				}, -- [20]
 				["name"] = "Utility",
 				["save"] = true,
 				["hotkey"] = "ALT-R",

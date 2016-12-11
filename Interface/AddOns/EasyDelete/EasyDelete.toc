@@ -1,0 +1,5 @@
+## Interface: 70000
+## Title: Lerith's easy delete
+## Notes: This AddOn makes it easy to delete valueable items
+## Author: Lerith
+EasyDelete.lua
